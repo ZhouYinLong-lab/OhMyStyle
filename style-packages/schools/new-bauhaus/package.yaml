@@ -1,0 +1,17 @@
+id: new-bauhaus
+name: 新包豪斯
+kind: school
+domain: design
+version: 0.1.0
+summary: Independent New Bauhaus style package focused on 基础几何、实验构成、材料感与形式功能统一; it
+  requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

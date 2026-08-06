@@ -1,0 +1,11 @@
+canonical_name: 木刻版画
+entity_type: technique
+period_or_scope: 跨时期技法
+region_or_context: international
+primary_medium: printmaking
+subject_matter:
+- 刻痕、木纹、黑白块面与有限套色
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

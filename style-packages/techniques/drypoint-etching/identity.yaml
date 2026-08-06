@@ -1,0 +1,11 @@
+canonical_name: 干刻版画
+entity_type: technique
+period_or_scope: 跨时期技法
+region_or_context: international
+primary_medium: printmaking
+subject_matter:
+- 毛刺线、交叉排线、天鹅绒黑与纸白
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

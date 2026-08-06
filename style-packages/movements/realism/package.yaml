@@ -1,0 +1,17 @@
+id: realism
+name: 现实主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: Independent Realism style package focused on 普通劳动、直接观察、非理想化人物与土色重量; it requires
+  new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

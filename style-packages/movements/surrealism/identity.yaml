@@ -1,0 +1,11 @@
+canonical_name: 超现实主义
+entity_type: movement
+period_or_scope: 20世纪
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 梦境逻辑、日常错位、清晰质感与非理性连接
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

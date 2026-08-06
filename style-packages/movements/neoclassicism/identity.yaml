@@ -1,0 +1,11 @@
+canonical_name: 新古典主义
+entity_type: movement
+period_or_scope: 18至19世纪
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 清晰轮廓、古典建筑、平衡几何与雕塑式人体
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

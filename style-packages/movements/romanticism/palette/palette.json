@@ -1,0 +1,20 @@
+{
+  "name": "浪漫主义",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#465D72",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#B7864B",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#6B6E59",
+      "role": "package palette"
+    }
+  ]
+}

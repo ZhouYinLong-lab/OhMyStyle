@@ -1,0 +1,17 @@
+id: post-impressionism
+name: 后印象主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: Independent Post-Impressionism style package focused on 结构化色块、主观色彩、稳定形体与可见笔触;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

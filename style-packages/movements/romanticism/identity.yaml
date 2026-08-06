@@ -1,0 +1,11 @@
+canonical_name: 浪漫主义
+entity_type: movement
+period_or_scope: 19世纪
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 崇高景观、天气、情绪尺度与暖冷光线
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

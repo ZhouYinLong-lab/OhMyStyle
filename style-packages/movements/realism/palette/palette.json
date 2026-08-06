@@ -1,0 +1,20 @@
+{
+  "name": "现实主义",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#6A5B45",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#7A795C",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#8E7864",
+      "role": "package palette"
+    }
+  ]
+}

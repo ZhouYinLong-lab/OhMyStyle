@@ -1,0 +1,20 @@
+{
+  "name": "水彩画",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#7EA1B2",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#7B9C76",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#C39A67",
+      "role": "package palette"
+    }
+  ]
+}

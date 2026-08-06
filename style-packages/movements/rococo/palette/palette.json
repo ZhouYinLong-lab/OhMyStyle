@@ -1,0 +1,20 @@
+{
+  "name": "洛可可",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#E2B7B6",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#A9BED0",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#E0C27B",
+      "role": "package palette"
+    }
+  ]
+}

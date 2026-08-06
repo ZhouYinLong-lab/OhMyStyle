@@ -1,0 +1,17 @@
+package_id: art-nouveau
+package_version: 0.1.0
+invariants:
+- id: signature
+  weight: 3
+  test: 鞭梢曲线、植物形态、平面装饰与柔和珠宝色
+- id: new_arrangement
+  weight: 3
+  test: The subject and composition are not a recognizable reconstruction.
+- id: material_readability
+  weight: 2
+  test: The requested medium or capture behavior remains visible.
+rejections:
+- copied_named_work
+- global_generic_filter
+- unreadable_subject
+minimum_score: 8

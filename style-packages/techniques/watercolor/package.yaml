@@ -1,0 +1,17 @@
+id: watercolor
+name: 水彩画
+kind: technique
+domain: painting
+version: 0.1.0
+summary: Independent Watercolor style package focused on 透明水洗、纸白、颗粒感与软硬边交替; it requires
+  new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,20 @@
+{
+  "name": "装饰艺术",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#1D2227",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#D0B37A",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#26735F",
+      "role": "package palette"
+    }
+  ]
+}

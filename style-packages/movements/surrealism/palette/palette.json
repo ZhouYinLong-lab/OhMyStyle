@@ -1,0 +1,20 @@
+{
+  "name": "超现实主义",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#D0B68D",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#607D89",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#C16C5A",
+      "role": "package palette"
+    }
+  ]
+}

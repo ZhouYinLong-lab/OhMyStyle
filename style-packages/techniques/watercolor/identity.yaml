@@ -1,0 +1,11 @@
+canonical_name: 水彩画
+entity_type: technique
+period_or_scope: 跨时期技法
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 透明水洗、纸白、颗粒感与软硬边交替
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

@@ -1,0 +1,11 @@
+canonical_name: 表现主义
+entity_type: movement
+period_or_scope: 20世纪初
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 情绪变形、尖锐轮廓、强烈色彩与心理空间
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

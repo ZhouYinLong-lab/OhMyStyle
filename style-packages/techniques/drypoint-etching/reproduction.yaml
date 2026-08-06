@@ -1,0 +1,13 @@
+medium: printmaking
+process:
+- define subject and composition first
+- apply the package signature as observable decisions
+- check color, material, texture, and edge behavior
+- reject copied or generic results
+technical_direction:
+  contrast: package-dependent
+  saturation: package-dependent
+  detail_density: hierarchical
+  aspect_ratio: 16:9 representative; user subject may vary
+safety_note: Use observable style traits only; do not recreate a named work or exact
+  motif arrangement.

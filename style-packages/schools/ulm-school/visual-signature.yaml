@@ -1,0 +1,26 @@
+medium: graphic
+signature: 功能主义、系统化网格、信息清晰与中性材料
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#E6E4DC'
+  - '#747878'
+  - '#D27B40'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 功能主义、系统化网格、信息清晰与中性材料
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

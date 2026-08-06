@@ -1,0 +1,11 @@
+canonical_name: 新包豪斯
+entity_type: school
+period_or_scope: 20世纪
+region_or_context: international
+primary_medium: graphic
+subject_matter:
+- 基础几何、实验构成、材料感与形式功能统一
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style
