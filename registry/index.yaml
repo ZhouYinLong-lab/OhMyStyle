@@ -2,7 +2,7 @@ schema_version: 1.0.0
 generated_by: tools/build-registry.py
 packages:
 - resource_id: anna-ancher
-  name: Anna Ancher
+  name: 安娜·安彻
   kind: artist
   domain: painting
   package_path: style-packages/artists/anna-ancher
@@ -19,7 +19,7 @@ packages:
   rejected_example_count: 0
   benchmark: false
 - resource_id: claude-monet
-  name: Claude Monet
+  name: 克劳德·莫奈
   kind: artist
   domain: painting
   package_path: style-packages/artists/claude-monet
@@ -36,7 +36,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: diego-velazquez
-  name: Diego Velázquez
+  name: 迭戈·委拉斯开兹
   kind: artist
   domain: painting
   package_path: style-packages/artists/diego-velazquez
@@ -53,7 +53,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: edvard-munch
-  name: Edvard Munch
+  name: 爱德华·蒙克
   kind: artist
   domain: painting
   package_path: style-packages/artists/edvard-munch
@@ -70,7 +70,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: georges-seurat
-  name: Georges Seurat
+  name: 乔治·修拉
   kind: artist
   domain: painting
   package_path: style-packages/artists/georges-seurat
@@ -87,7 +87,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: jmw-turner
-  name: J. M. W. Turner
+  name: 约瑟夫·马洛德·威廉·透纳
   kind: artist
   domain: painting
   package_path: style-packages/artists/jmw-turner
@@ -104,7 +104,7 @@ packages:
   rejected_example_count: 1
   benchmark: true
 - resource_id: johannes-vermeer
-  name: Johannes Vermeer
+  name: 约翰内斯·维米尔
   kind: artist
   domain: painting
   package_path: style-packages/artists/johannes-vermeer
@@ -121,7 +121,7 @@ packages:
   rejected_example_count: 1
   benchmark: true
 - resource_id: paul-cezanne
-  name: Paul Cézanne
+  name: 保罗·塞尚
   kind: artist
   domain: painting
   package_path: style-packages/artists/paul-cezanne
@@ -138,7 +138,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: paul-gauguin
-  name: Paul Gauguin
+  name: 保罗·高更
   kind: artist
   domain: painting
   package_path: style-packages/artists/paul-gauguin
@@ -155,7 +155,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: rembrandt
-  name: Rembrandt van Rijn
+  name: 伦勃朗·范·莱因
   kind: artist
   domain: painting
   package_path: style-packages/artists/rembrandt
@@ -172,7 +172,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: vincent-van-gogh
-  name: Vincent van Gogh
+  name: 文森特·梵高
   kind: artist
   domain: painting
   package_path: style-packages/artists/vincent-van-gogh
@@ -189,7 +189,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: wassily-kandinsky
-  name: Wassily Kandinsky
+  name: 瓦西里·康定斯基
   kind: artist
   domain: painting
   package_path: style-packages/artists/wassily-kandinsky
@@ -205,8 +205,42 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: cinematic-pixel-adventure
+  name: 电影化像素冒险美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/cinematic-pixel-adventure
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: isometric-pixel-tactics
+  name: 等距像素策略美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/isometric-pixel-tactics
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: rpg-maker-pixel-art
-  name: RPG Maker Pixel Art
+  name: 角色扮演游戏像素美术
   kind: game_art
   domain: game_art
   package_path: style-packages/game-art/rpg-maker-pixel-art
@@ -223,7 +257,7 @@ packages:
   rejected_example_count: 0
   benchmark: true
 - resource_id: zx-spectrum-attribute-pixel
-  name: ZX Spectrum Attribute Pixel Art
+  name: 属性受限像素美术
   kind: game_art
   domain: game_art
   package_path: style-packages/game-art/zx-spectrum-attribute-pixel
@@ -240,7 +274,7 @@ packages:
   rejected_example_count: 0
   benchmark: false
 - resource_id: greek-archaic-period
-  name: Greek Archaic Period
+  name: 古希腊古风时期
   kind: movement
   domain: hybrid
   package_path: style-packages/movements/greek-archaic-period
@@ -257,7 +291,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: greek-classical-period
-  name: Greek Classical Period
+  name: 古希腊古典时期
   kind: movement
   domain: hybrid
   package_path: style-packages/movements/greek-classical-period
@@ -274,7 +308,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: greek-geometric-period
-  name: Greek Geometric Period
+  name: 古希腊几何时期
   kind: movement
   domain: hybrid
   package_path: style-packages/movements/greek-geometric-period
@@ -291,7 +325,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: greek-hellenistic-period
-  name: Greek Hellenistic Period
+  name: 古希腊化时期
   kind: movement
   domain: hybrid
   package_path: style-packages/movements/greek-hellenistic-period
@@ -308,7 +342,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: italian-high-renaissance-raphaelesque
-  name: Italian High Renaissance
+  name: 意大利文艺复兴盛期
   kind: movement
   domain: painting
   package_path: style-packages/movements/italian-high-renaissance-raphaelesque
@@ -325,7 +359,7 @@ packages:
   rejected_example_count: 0
   benchmark: false
 - resource_id: neue-sachlichkeit
-  name: Neue Sachlichkeit / New Objectivity
+  name: 新即物主义
   kind: movement
   domain: hybrid
   package_path: style-packages/movements/neue-sachlichkeit
@@ -342,7 +376,7 @@ packages:
   rejected_example_count: 0
   benchmark: false
 - resource_id: alfred-stieglitz
-  name: Alfred Stieglitz
+  name: 阿尔弗雷德·斯蒂格利茨
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/alfred-stieglitz
@@ -359,7 +393,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: eadweard-muybridge
-  name: Eadweard Muybridge
+  name: 埃德沃德·迈布里奇
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/eadweard-muybridge
@@ -376,7 +410,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: etienne-jules-marey
-  name: Étienne-Jules Marey
+  name: 艾蒂安-朱尔·马雷
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/etienne-jules-marey
@@ -393,7 +427,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: eugene-atget
-  name: Eugène Atget
+  name: 欧仁·阿杰
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/eugene-atget
@@ -410,7 +444,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: julia-margaret-cameron
-  name: Julia Margaret Cameron
+  name: 朱莉娅·玛格丽特·卡梅隆
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/julia-margaret-cameron
@@ -427,7 +461,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: lewis-hine
-  name: Lewis Hine
+  name: 刘易斯·海因
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/lewis-hine
@@ -444,7 +478,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: masahisa-fukase
-  name: Masahisa Fukase
+  name: 深濑昌久
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/masahisa-fukase
@@ -461,7 +495,7 @@ packages:
   rejected_example_count: 0
   benchmark: false
 - resource_id: nadar
-  name: Nadar
+  name: 纳达尔
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/nadar
@@ -478,7 +512,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: roger-fenton
-  name: Roger Fenton
+  name: 罗杰·芬顿
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/roger-fenton
@@ -494,8 +528,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: hard-light-color-blocking
+  name: 硬光色块摄影
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/hard-light-color-blocking
+  maturity: L3
+  focus_dimensions:
+  - composition
+  - lighting
+  - palette
+  - surface
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: high-chroma-color-pairing
-  name: High-Chroma Color Pairing
+  name: 高纯度撞色
   kind: preset
   domain: hybrid
   package_path: style-packages/presets/high-chroma-color-pairing
@@ -509,8 +558,57 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: muted-documentary-color
+  name: 低饱和纪实色彩
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/muted-documentary-color
+  maturity: L3
+  focus_dimensions:
+  - composition
+  - lighting
+  - palette
+  - surface
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: bauhaus
+  name: 包豪斯
+  kind: school
+  domain: design
+  package_path: style-packages/schools/bauhaus
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: de-stijl
+  name: 荷兰风格派
+  kind: school
+  domain: design
+  package_path: style-packages/schools/de-stijl
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: new-topographics
-  name: New Topographics
+  name: 新地形学
   kind: school
   domain: photography
   package_path: style-packages/schools/new-topographics
@@ -526,8 +624,24 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: cyanotype
+  name: 氰版印相
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/cyanotype
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: gum-bichromate
-  name: Gum Bichromate Printing
+  name: 重铬酸盐胶印
   kind: technique
   domain: printmaking
   package_path: style-packages/techniques/gum-bichromate
@@ -542,3 +656,19 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: screen-printing
+  name: 丝网印刷
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/screen-printing
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true

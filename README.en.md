@@ -15,70 +15,70 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/anna-ancher/README.en.md"><img src="style-packages/artists/anna-ancher/gallery-16x9.jpg" width="230" alt="Anna Ancher representative image"></a><br>
+<a href="style-packages/artists/anna-ancher/README.md"><img src="style-packages/artists/anna-ancher/gallery-16x9.jpg" width="230" alt="Anna Ancher representative image"></a><br>
 <strong>Anna Ancher</strong><br>
-<a href="style-packages/artists/anna-ancher/README.en.md">Open README</a>
+<a href="style-packages/artists/anna-ancher/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/claude-monet/README.en.md"><img src="style-packages/artists/claude-monet/gallery-16x9.jpg" width="230" alt="Claude Monet representative image"></a><br>
+<a href="style-packages/artists/claude-monet/README.md"><img src="style-packages/artists/claude-monet/gallery-16x9.jpg" width="230" alt="Claude Monet representative image"></a><br>
 <strong>Claude Monet</strong><br>
-<a href="style-packages/artists/claude-monet/README.en.md">Open README</a>
+<a href="style-packages/artists/claude-monet/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/diego-velazquez/README.en.md"><img src="style-packages/artists/diego-velazquez/gallery-16x9.jpg" width="230" alt="Diego Velázquez representative image"></a><br>
+<a href="style-packages/artists/diego-velazquez/README.md"><img src="style-packages/artists/diego-velazquez/gallery-16x9.jpg" width="230" alt="Diego Velázquez representative image"></a><br>
 <strong>Diego Velázquez</strong><br>
-<a href="style-packages/artists/diego-velazquez/README.en.md">Open README</a>
+<a href="style-packages/artists/diego-velazquez/README.md">Open README</a>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/edvard-munch/README.en.md"><img src="style-packages/artists/edvard-munch/gallery-16x9.jpg" width="230" alt="Edvard Munch representative image"></a><br>
+<a href="style-packages/artists/edvard-munch/README.md"><img src="style-packages/artists/edvard-munch/gallery-16x9.jpg" width="230" alt="Edvard Munch representative image"></a><br>
 <strong>Edvard Munch</strong><br>
-<a href="style-packages/artists/edvard-munch/README.en.md">Open README</a>
+<a href="style-packages/artists/edvard-munch/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/georges-seurat/README.en.md"><img src="style-packages/artists/georges-seurat/gallery-16x9.jpg" width="230" alt="Georges Seurat representative image"></a><br>
+<a href="style-packages/artists/georges-seurat/README.md"><img src="style-packages/artists/georges-seurat/gallery-16x9.jpg" width="230" alt="Georges Seurat representative image"></a><br>
 <strong>Georges Seurat</strong><br>
-<a href="style-packages/artists/georges-seurat/README.en.md">Open README</a>
+<a href="style-packages/artists/georges-seurat/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/jmw-turner/README.en.md"><img src="style-packages/artists/jmw-turner/gallery-16x9.jpg" width="230" alt="J. M. W. Turner representative image"></a><br>
+<a href="style-packages/artists/jmw-turner/README.md"><img src="style-packages/artists/jmw-turner/gallery-16x9.jpg" width="230" alt="J. M. W. Turner representative image"></a><br>
 <strong>J. M. W. Turner</strong><br>
-<a href="style-packages/artists/jmw-turner/README.en.md">Open README</a>
+<a href="style-packages/artists/jmw-turner/README.md">Open README</a>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/johannes-vermeer/README.en.md"><img src="style-packages/artists/johannes-vermeer/gallery-16x9.jpg" width="230" alt="Johannes Vermeer representative image"></a><br>
+<a href="style-packages/artists/johannes-vermeer/README.md"><img src="style-packages/artists/johannes-vermeer/gallery-16x9.jpg" width="230" alt="Johannes Vermeer representative image"></a><br>
 <strong>Johannes Vermeer</strong><br>
-<a href="style-packages/artists/johannes-vermeer/README.en.md">Open README</a>
+<a href="style-packages/artists/johannes-vermeer/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/paul-cezanne/README.en.md"><img src="style-packages/artists/paul-cezanne/gallery-16x9.jpg" width="230" alt="Paul Cézanne representative image"></a><br>
+<a href="style-packages/artists/paul-cezanne/README.md"><img src="style-packages/artists/paul-cezanne/gallery-16x9.jpg" width="230" alt="Paul Cézanne representative image"></a><br>
 <strong>Paul Cézanne</strong><br>
-<a href="style-packages/artists/paul-cezanne/README.en.md">Open README</a>
+<a href="style-packages/artists/paul-cezanne/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/paul-gauguin/README.en.md"><img src="style-packages/artists/paul-gauguin/gallery-16x9.jpg" width="230" alt="Paul Gauguin representative image"></a><br>
+<a href="style-packages/artists/paul-gauguin/README.md"><img src="style-packages/artists/paul-gauguin/gallery-16x9.jpg" width="230" alt="Paul Gauguin representative image"></a><br>
 <strong>Paul Gauguin</strong><br>
-<a href="style-packages/artists/paul-gauguin/README.en.md">Open README</a>
+<a href="style-packages/artists/paul-gauguin/README.md">Open README</a>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/rembrandt/README.en.md"><img src="style-packages/artists/rembrandt/gallery-16x9.jpg" width="230" alt="Rembrandt van Rijn representative image"></a><br>
+<a href="style-packages/artists/rembrandt/README.md"><img src="style-packages/artists/rembrandt/gallery-16x9.jpg" width="230" alt="Rembrandt van Rijn representative image"></a><br>
 <strong>Rembrandt van Rijn</strong><br>
-<a href="style-packages/artists/rembrandt/README.en.md">Open README</a>
+<a href="style-packages/artists/rembrandt/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/vincent-van-gogh/README.en.md"><img src="style-packages/artists/vincent-van-gogh/gallery-16x9.jpg" width="230" alt="Vincent van Gogh representative image"></a><br>
+<a href="style-packages/artists/vincent-van-gogh/README.md"><img src="style-packages/artists/vincent-van-gogh/gallery-16x9.jpg" width="230" alt="Vincent van Gogh representative image"></a><br>
 <strong>Vincent van Gogh</strong><br>
-<a href="style-packages/artists/vincent-van-gogh/README.en.md">Open README</a>
+<a href="style-packages/artists/vincent-van-gogh/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/artists/wassily-kandinsky/README.en.md"><img src="style-packages/artists/wassily-kandinsky/gallery-16x9.jpg" width="230" alt="Wassily Kandinsky representative image"></a><br>
+<a href="style-packages/artists/wassily-kandinsky/README.md"><img src="style-packages/artists/wassily-kandinsky/gallery-16x9.jpg" width="230" alt="Wassily Kandinsky representative image"></a><br>
 <strong>Wassily Kandinsky</strong><br>
-<a href="style-packages/artists/wassily-kandinsky/README.en.md">Open README</a>
+<a href="style-packages/artists/wassily-kandinsky/README.md">Open README</a>
 </td>
 </tr>
 </table>
@@ -145,53 +145,53 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/photographers/alfred-stieglitz/README.en.md"><img src="style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg" width="230" alt="Alfred Stieglitz representative image"></a><br>
+<a href="style-packages/photographers/alfred-stieglitz/README.md"><img src="style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg" width="230" alt="Alfred Stieglitz representative image"></a><br>
 <strong>Alfred Stieglitz</strong><br>
-<a href="style-packages/photographers/alfred-stieglitz/README.en.md">Open README</a>
+<a href="style-packages/photographers/alfred-stieglitz/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/photographers/eadweard-muybridge/README.en.md"><img src="style-packages/photographers/eadweard-muybridge/gallery-16x9.jpg" width="230" alt="Eadweard Muybridge representative image"></a><br>
+<a href="style-packages/photographers/eadweard-muybridge/README.md"><img src="style-packages/photographers/eadweard-muybridge/gallery-16x9.jpg" width="230" alt="Eadweard Muybridge representative image"></a><br>
 <strong>Eadweard Muybridge</strong><br>
-<a href="style-packages/photographers/eadweard-muybridge/README.en.md">Open README</a>
+<a href="style-packages/photographers/eadweard-muybridge/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/photographers/etienne-jules-marey/README.en.md"><img src="style-packages/photographers/etienne-jules-marey/gallery-16x9.jpg" width="230" alt="Étienne-Jules Marey representative image"></a><br>
+<a href="style-packages/photographers/etienne-jules-marey/README.md"><img src="style-packages/photographers/etienne-jules-marey/gallery-16x9.jpg" width="230" alt="Étienne-Jules Marey representative image"></a><br>
 <strong>Étienne-Jules Marey</strong><br>
-<a href="style-packages/photographers/etienne-jules-marey/README.en.md">Open README</a>
+<a href="style-packages/photographers/etienne-jules-marey/README.md">Open README</a>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/photographers/eugene-atget/README.en.md"><img src="style-packages/photographers/eugene-atget/gallery-16x9.jpg" width="230" alt="Eugène Atget representative image"></a><br>
+<a href="style-packages/photographers/eugene-atget/README.md"><img src="style-packages/photographers/eugene-atget/gallery-16x9.jpg" width="230" alt="Eugène Atget representative image"></a><br>
 <strong>Eugène Atget</strong><br>
-<a href="style-packages/photographers/eugene-atget/README.en.md">Open README</a>
+<a href="style-packages/photographers/eugene-atget/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/photographers/julia-margaret-cameron/README.en.md"><img src="style-packages/photographers/julia-margaret-cameron/gallery-16x9.jpg" width="230" alt="Julia Margaret Cameron representative image"></a><br>
+<a href="style-packages/photographers/julia-margaret-cameron/README.md"><img src="style-packages/photographers/julia-margaret-cameron/gallery-16x9.jpg" width="230" alt="Julia Margaret Cameron representative image"></a><br>
 <strong>Julia Margaret Cameron</strong><br>
-<a href="style-packages/photographers/julia-margaret-cameron/README.en.md">Open README</a>
+<a href="style-packages/photographers/julia-margaret-cameron/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/photographers/lewis-hine/README.en.md"><img src="style-packages/photographers/lewis-hine/gallery-16x9.jpg" width="230" alt="Lewis Hine representative image"></a><br>
+<a href="style-packages/photographers/lewis-hine/README.md"><img src="style-packages/photographers/lewis-hine/gallery-16x9.jpg" width="230" alt="Lewis Hine representative image"></a><br>
 <strong>Lewis Hine</strong><br>
-<a href="style-packages/photographers/lewis-hine/README.en.md">Open README</a>
+<a href="style-packages/photographers/lewis-hine/README.md">Open README</a>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/photographers/masahisa-fukase/README.en.md"><img src="style-packages/photographers/masahisa-fukase/gallery-16x9.jpg" width="230" alt="Masahisa Fukase representative image"></a><br>
+<a href="style-packages/photographers/masahisa-fukase/README.md"><img src="style-packages/photographers/masahisa-fukase/gallery-16x9.jpg" width="230" alt="Masahisa Fukase representative image"></a><br>
 <strong>Masahisa Fukase</strong><br>
-<a href="style-packages/photographers/masahisa-fukase/README.en.md">Open README</a>
+<a href="style-packages/photographers/masahisa-fukase/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/photographers/nadar/README.en.md"><img src="style-packages/photographers/nadar/gallery-16x9.jpg" width="230" alt="Nadar representative image"></a><br>
+<a href="style-packages/photographers/nadar/README.md"><img src="style-packages/photographers/nadar/gallery-16x9.jpg" width="230" alt="Nadar representative image"></a><br>
 <strong>Nadar</strong><br>
-<a href="style-packages/photographers/nadar/README.en.md">Open README</a>
+<a href="style-packages/photographers/nadar/README.md">Open README</a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="style-packages/photographers/roger-fenton/README.en.md"><img src="style-packages/photographers/roger-fenton/gallery-16x9.jpg" width="230" alt="Roger Fenton representative image"></a><br>
+<a href="style-packages/photographers/roger-fenton/README.md"><img src="style-packages/photographers/roger-fenton/gallery-16x9.jpg" width="230" alt="Roger Fenton representative image"></a><br>
 <strong>Roger Fenton</strong><br>
-<a href="style-packages/photographers/roger-fenton/README.en.md">Open README</a>
+<a href="style-packages/photographers/roger-fenton/README.md">Open README</a>
 </td>
 </tr>
 </table>
