@@ -1,0 +1,13 @@
+id: zx-spectrum-attribute-pixel
+entity_type: historical_game_art_type
+name: ZX Spectrum Attribute Pixel Art
+period: 1982-1990s_and_modern_revival
+domain: game_art
+technical_basis:
+  resolution: 256x192
+  attribute_grid: 32x24
+  colors_per_attribute_block: 2
+  visible_palette: 15
+sources:
+  - https://rk.nvg.ntnu.no/sinclair/computers/zxspectrum/spec_technical.htm
+  - https://en.wikipedia.org/wiki/ZX_Spectrum

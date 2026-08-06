@@ -1,0 +1,9 @@
+Create a native-resolution 256x192 game-art screen showing {SUBJECT} in
+{LOCATION}. Use true chunky pixel art with hard one-pixel stair steps, no
+anti-aliasing, no smooth gradients, and a maximum of two colors in every 8x8
+attribute cell. Use a small saturated hardware-like palette, strong black or
+dark negative space, clear gameplay silhouettes, a readable ground/platform
+band, clustered cells for objects, sparse intentional dithering, and a tiny
+amount of controlled color clash where it helps the period-specific character.
+The screen should be legible at native size and only then enlarged with nearest
+neighbor. No game title, logo, copyrighted character, or readable text.

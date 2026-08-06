@@ -1,0 +1,26 @@
+canvas:
+  native_resolution: 256x192
+  upscale: nearest_neighbor_only
+  grid: 32x24_attribute_cells
+palette:
+  visible_colors: 15
+  attribute_rule: maximum_two_colors_per_8x8_cell
+  brightness: normal_or_bright_mode
+forms:
+  - chunky_silhouette
+  - one_pixel_stair_steps
+  - high_contrast_sprite_against_background
+  - readable_iconography
+composition:
+  - gameplay_first_legibility
+  - strong_horizontal_ground_or_platform
+  - clustered_cells_for_objects
+  - deliberate_empty_border_or_ui_band
+texture:
+  - hard_pixel_edges
+  - sparse_dither
+  - controlled_attribute_clash
+invariants:
+  - no_smooth_antialiasing
+  - two_color_cell_logic_remains_visible
+  - silhouette_is_readable_at_native_size

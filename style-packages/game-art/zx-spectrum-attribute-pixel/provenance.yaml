@@ -1,0 +1,14 @@
+package_id: zx-spectrum-attribute-pixel
+package_version: 0.1.0
+curation_status: technical_demo
+source_policy: Technical references are link-only; no copyrighted game art is redistributed.
+sources:
+  - url: https://rk.nvg.ntnu.no/sinclair/computers/zxspectrum/spec_technical.htm
+    authority: Planet Sinclair
+    supports: native resolution and hardware graphics constraints
+    accessed: 2026-08-06
+  - url: https://en.wikipedia.org/wiki/ZX_Spectrum
+    authority: Wikipedia contributors
+    supports: attribute clash and palette overview
+    accessed: 2026-08-06
+attribution: This package describes a historical hardware-constrained game-art type; it is not affiliated with Sinclair or any game publisher.

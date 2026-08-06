@@ -1,0 +1,3 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+planet-sinclair-spec,,ZX Spectrum technical data,Planet Sinclair,,https://rk.nvg.ntnu.no/sinclair/computers/zxspectrum/spec_technical.htm,link_only,Planet Sinclair,primary,Technical reference for graphics constraints; no game screenshot bundled.
+zx-spectrum-wiki,,ZX Spectrum hardware and graphics overview,Wikipedia contributors,,https://en.wikipedia.org/wiki/ZX_Spectrum,CC BY-SA 4.0,Wikipedia contributors,secondary,Technical cross-check; no image bundled.

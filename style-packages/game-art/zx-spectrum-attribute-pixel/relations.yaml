@@ -1,0 +1,11 @@
+related_contexts:
+  - 8_bit_home_computer_graphics
+  - loading_screen_illustration
+  - constrained_pixel_animation
+  - attribute_clash
+related_hardware:
+  - sinclair-zx-spectrum
+not_equivalent_to:
+  - generic_retro_game_art
+  - nes_pixel_art
+  - modern_pixel_art_with_unlimited_colors

@@ -188,9 +188,11 @@ def validate_package(package: Path, schema: dict[str, Any], errors: Errors) -> N
     validate_sources(package, errors)
     validate_provenance(package, style, errors)
 
+    # Only reference images need external source/license rows. Generated
+    # examples are package outputs and carry generation metadata sidecars.
     image_files = [
         path
-        for root in (package / "references", package / "examples")
+        for root in (package / "references",)
         if root.exists()
         for path in root.rglob("*")
         if path.is_file() and path.suffix.lower() in IMAGE_SUFFIXES

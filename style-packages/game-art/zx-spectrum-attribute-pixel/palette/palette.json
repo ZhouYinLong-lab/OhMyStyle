@@ -1,0 +1,14 @@
+{
+  "name": "ZX Attribute Core Palette",
+  "colors": [
+    {"name": "Black", "hex": "#000000", "role": "background"},
+    {"name": "Blue", "hex": "#0000D7", "role": "cool_shadow"},
+    {"name": "Red", "hex": "#D70000", "role": "danger"},
+    {"name": "Magenta", "hex": "#D700D7", "role": "rare_accent"},
+    {"name": "Green", "hex": "#00D700", "role": "vegetation"},
+    {"name": "Cyan", "hex": "#00D7D7", "role": "sky_or_water"},
+    {"name": "Yellow", "hex": "#D7D700", "role": "light"},
+    {"name": "White", "hex": "#D7D7D7", "role": "high_contrast_detail"}
+  ],
+  "note": "The full hardware palette includes normal and bright variants; this file shows the core swatches used for the demo."
+}

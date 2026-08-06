@@ -8,8 +8,8 @@
   "properties": {
     "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "name": {"type": "string", "minLength": 1},
-    "kind": {"type": "string", "enum": ["artist", "photographer", "movement", "school", "technique", "preset"]},
-    "domain": {"type": "string", "enum": ["painting", "photography", "printmaking", "design", "hybrid"]},
+    "kind": {"type": "string", "enum": ["artist", "photographer", "movement", "school", "technique", "preset", "game_art"]},
+    "domain": {"type": "string", "enum": ["painting", "photography", "printmaking", "design", "game_art", "hybrid"]},
     "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
     "summary": {"type": "string", "minLength": 30},
     "entity": {"type": "string", "minLength": 1},

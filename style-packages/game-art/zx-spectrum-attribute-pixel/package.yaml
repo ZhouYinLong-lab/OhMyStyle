@@ -1,0 +1,20 @@
+id: zx-spectrum-attribute-pixel
+name: ZX Spectrum Attribute Pixel Art
+kind: game_art
+domain: game_art
+version: 0.1.0
+entity: catalog/game-art/zx-spectrum-attribute-pixel/entity.yaml
+summary: >-
+  A constrained 8-bit game-art direction defined by chunky pixel silhouettes,
+  hard two-color attribute blocks, a saturated 15-color hardware palette,
+  deliberate color clash management, and readable gameplay-first composition.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

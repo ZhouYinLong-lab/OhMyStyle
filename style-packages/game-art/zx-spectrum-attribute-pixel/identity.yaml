@@ -1,0 +1,18 @@
+canonical_name: ZX Spectrum Attribute Pixel Art
+entity_type: historical_game_art_type
+origin: Sinclair ZX Spectrum graphics constraints
+period: 1980s_home_computer_game_art
+domain: game_art
+scope:
+  use_cases:
+    - loading_screen
+    - adventure_scene
+    - arcade_gameplay_screen
+    - inventory_or_map_panel
+  exclusions:
+    - modern_smooth_pixel_art
+    - unlimited_palette_pixel_art
+    - anti_aliased_vector_art
+sources:
+  - https://rk.nvg.ntnu.no/sinclair/computers/zxspectrum/spec_technical.htm
+  - https://en.wikipedia.org/wiki/ZX_Spectrum

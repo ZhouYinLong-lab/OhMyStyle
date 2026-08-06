@@ -1,0 +1,19 @@
+invariants:
+  - id: native_pixel_logic
+    weight: 3
+    test: The image reads as hard-edged pixel art at a small native resolution.
+  - id: attribute_cells
+    weight: 3
+    test: Color changes visibly respect or deliberately negotiate 8x8 cell logic.
+  - id: palette_constraint
+    weight: 2
+    test: The image uses a compact saturated palette rather than continuous color.
+  - id: gameplay_legibility
+    weight: 2
+    test: Player, ground, danger, and navigable space remain readable.
+rejections:
+  - smooth_modern_pixel_art
+  - unlimited_palette
+  - anti_aliased_edges
+  - copyrighted_character_or_logo
+minimum_score: 8
