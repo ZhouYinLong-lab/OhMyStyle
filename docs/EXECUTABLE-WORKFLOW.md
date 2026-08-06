@@ -114,7 +114,7 @@ still require explicit approval before entering a package directory.
 An adapter should accept the compiled JSON and preserve four things:
 
 1. the exact subject;
-2. the compiled color assignment;
+2. the compiled palette assignment, when the package defines one, plus its visual signature;
 3. the selected reference images and their declared usage;
 4. the negative prompt and hard constraints.
 
@@ -122,6 +122,13 @@ The adapter may shorten or reorder language for a provider, but it must not
 silently remove a hard constraint. Provider-specific API calls are intentionally
 not part of the baseline tools so the repository remains usable with strong,
 weak, local, and hosted models.
+
+The compiler is package-agnostic: a package may define palette pairs, or it
+may define only its own visual signature and process. Pair instructions are
+added only when the selected package actually contains a pair. Package prompt
+variables are supplied explicitly with repeatable `--var KEY=VALUE` arguments;
+the compiler reports any unresolved placeholders instead of guessing a genre,
+medium, subject type, or composition.
 
 ## Automatic masks
 

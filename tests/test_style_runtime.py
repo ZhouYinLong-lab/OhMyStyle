@@ -92,6 +92,15 @@ class StyleRuntimeTests(unittest.TestCase):
         self.assertIn("SUBJECT:", job["prompt"])
         self.assertTrue(job["reference_images"][0]["absolute_path"].endswith("palette-01-cobalt-yellow.webp"))
 
+    def test_compiler_is_generic_across_non_pair_style_packages(self) -> None:
+        packages = sorted((ROOT / "style-packages").glob("*/*/package.yaml"))
+        self.assertEqual(len(packages), 12)
+        for package in packages:
+            job = compile_job(package.parent, "a quiet study of the requested subject", profile="weak")
+            self.assertEqual(job["model"]["adapter"], "provider-neutral")
+            self.assertNotIn("flower arrangement", job["prompt"].lower())
+            self.assertNotIn("blue-orange", job["prompt"].lower())
+
     def test_evaluator_detects_pair_and_luminance_failure(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             image_path = Path(directory) / "same-luminance-test.png"

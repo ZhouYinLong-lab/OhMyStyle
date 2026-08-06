@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -62,10 +63,12 @@ def manifest_records(runtime: dict[str, Any]) -> list[dict[str, str]]:
         return [dict(row) for row in csv.DictReader(handle)]
 
 
-def choose_pair(runtime: dict[str, Any], pair_id: str | None = None) -> dict[str, Any]:
+def choose_pair(runtime: dict[str, Any], pair_id: str | None = None) -> dict[str, Any] | None:
     pairs = runtime["palette"].get("pairs", [])
     if not pairs:
-        raise ValueError("Palette has no pairs")
+        if pair_id is not None:
+            raise ValueError("This Style Package does not define palette pairs; omit --pair")
+        return None
     if pair_id is None:
         return pairs[0]
     for pair in pairs:
@@ -76,14 +79,17 @@ def choose_pair(runtime: dict[str, Any], pair_id: str | None = None) -> dict[str
 
 
 def select_references(
-    runtime: dict[str, Any], pair: dict[str, Any], reference_set: str = "palette"
+    runtime: dict[str, Any], pair: dict[str, Any] | None, reference_set: str = "palette"
 ) -> list[dict[str, str]]:
     rows = {row.get("asset_id", ""): row for row in manifest_records(runtime)}
     selected: list[dict[str, str]] = []
-    selected_ids = set(str(item) for item in pair.get("reference_asset_ids", []))
+    selected_ids = set(str(item) for item in (pair or {}).get("reference_asset_ids", []))
 
     if reference_set in {"palette", "all"}:
-        selected.extend(rows[asset_id] for asset_id in selected_ids if asset_id in rows)
+        if selected_ids:
+            selected.extend(rows[asset_id] for asset_id in selected_ids if asset_id in rows)
+        else:
+            selected.extend(row for row in rows.values() if row.get("role") == "details")
     if reference_set in {"primary", "all"}:
         selected.extend(row for row in rows.values() if row.get("role") == "primary")
     if reference_set == "details":
@@ -125,19 +131,23 @@ def pair_line(pair: dict[str, Any]) -> str:
 def compile_prompt(
     runtime: dict[str, Any],
     subject: str,
-    pair: dict[str, Any],
+    pair: dict[str, Any] | None,
     profile: str = "generic",
+    variables: dict[str, str] | None = None,
 ) -> tuple[str, str]:
-    base = runtime["base_prompt"].replace("[SUBJECT]", subject)
+    template_values = {"SUBJECT": subject, **(variables or {})}
+    base = runtime["base_prompt"]
+    for key, value in template_values.items():
+        base = base.replace(f"[{key}]", value).replace(f"{{{key}}}", value)
     negative = runtime["negative_prompt"]
-    exact = pair_line(pair)
+    exact = pair_line(pair) if pair else "Follow the package-defined visual signature, process, materials, and constraints exactly."
     if profile == "weak":
         prompt = "\n".join(
             [
                 f"SUBJECT: {subject}",
-                "STYLE TASK: Follow the color assignment exactly; do not reinterpret the subject as a flower arrangement.",
+                "STYLE TASK: Follow the declared package specification exactly; do not substitute an unrequested subject, medium, process, or visual motif.",
                 exact,
-                "MUST: keep the dominant and counter colors separate; preserve the specified background; use only restrained neutral support colors.",
+                "MUST: preserve all declared visual relationships, hierarchy, materials, lighting, perspective, and background behavior.",
                 "MUST: keep the requested material, lighting, perspective, and object count; no extra decorative objects.",
                 "MUST: use natural material detail without a global color filter.",
             ]
@@ -154,12 +164,14 @@ def compile_job(
     profile: str = "generic",
     reference_set: str = "palette",
     model: str = "provider-neutral",
+    variables: dict[str, str] | None = None,
 ) -> dict[str, Any]:
     runtime = load_package(package_path)
     package = runtime["package"]
     pair = choose_pair(runtime, pair_id)
     references = select_references(runtime, pair, reference_set)
-    prompt, negative = compile_prompt(runtime, subject, pair, profile)
+    prompt, negative = compile_prompt(runtime, subject, pair, profile, variables=variables)
+    unresolved = sorted(set(re.findall(r"(?:\[[A-Z][A-Z0-9_]*\]|\{[A-Z][A-Z0-9_]*\})", prompt)))
     return {
         "schema_version": "0.1.0",
         "job_type": "style_render",
@@ -176,6 +188,8 @@ def compile_job(
         "reference_images": references,
         "prompt": prompt,
         "negative_prompt": negative,
+        "template_variables": {"SUBJECT": subject, **(variables or {})},
+        "unresolved_placeholders": unresolved,
         "constraints": {
             "area_ratio": runtime["reproduction"].get("area_ratio", {}),
             "profiles": runtime["evaluation"].get("profiles", {}),

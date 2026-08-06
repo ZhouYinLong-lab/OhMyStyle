@@ -17,6 +17,7 @@ def main() -> None:
     parser.add_argument("--pair", dest="pair_id", help="Palette pair id")
     parser.add_argument("--profile", choices=("generic", "weak"), default="generic")
     parser.add_argument("--model", default="provider-neutral")
+    parser.add_argument("--var", action="append", default=[], metavar="KEY=VALUE", help="Fill a package prompt variable; repeatable")
     parser.add_argument(
         "--references",
         choices=("palette", "details", "primary", "all"),
@@ -24,6 +25,12 @@ def main() -> None:
     )
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
+    variables = {}
+    for assignment in args.var:
+        if "=" not in assignment:
+            parser.error(f"--var must use KEY=VALUE: {assignment}")
+        key, value = assignment.split("=", 1)
+        variables[key.strip()] = value
     job = compile_job(
         args.package,
         args.subject,
@@ -31,6 +38,7 @@ def main() -> None:
         profile=args.profile,
         reference_set=args.references,
         model=args.model,
+        variables=variables,
     )
     rendered = json.dumps(job, ensure_ascii=False, indent=2) + "\n"
     if args.output:
