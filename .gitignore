@@ -7,3 +7,6 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .DS_Store
+
+# Generated candidates are local review artifacts until explicitly approved.
+style-packages/**/examples/generated/*.png
