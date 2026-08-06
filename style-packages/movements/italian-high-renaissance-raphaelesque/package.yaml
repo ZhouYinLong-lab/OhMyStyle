@@ -1,0 +1,20 @@
+id: italian-high-renaissance-raphaelesque
+name: High Renaissance Classical Fresco
+kind: movement
+domain: painting
+version: 0.1.0
+entity: catalog/movements/italian-high-renaissance/entity.yaml
+summary: >-
+  A monumental Italian Renaissance fresco language combining classical
+  architecture, one-point perspective, balanced figure groups, lucid anatomy,
+  restrained gestures, and humanist intellectual subject matter.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

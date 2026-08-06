@@ -1,0 +1,23 @@
+base_prompt_mode: anonymous_visual_signature
+subject_direction:
+  - choose an unnamed gathering of teachers, students, or thinkers discussing one idea
+  - place two central figures beneath the vanishing point without naming them
+  - make each secondary group perform a distinct intellectual action
+  - keep the scene humane, calm, and socially legible
+architecture:
+  - monumental symmetrical interior
+  - coffered barrel vault and repeated arches
+  - distant daylight opening aligned to the central axis
+  - broad staircase or platform separating figure groups
+medium:
+  support: large wall fresco
+  mark: matte mineral pigment absorbed into plaster, subtle giornata variation
+  finish: aged but luminous plaster surface
+camera_or_view:
+  - frontal wall elevation
+  - centered architectural view
+  - enough distance to read the total composition and enough detail to inspect gestures
+negative_constraints:
+  - no exact historical composition
+  - no named philosophers, artist, or copied figures
+  - no modern text, logo, watermark, or cinematic lens effects

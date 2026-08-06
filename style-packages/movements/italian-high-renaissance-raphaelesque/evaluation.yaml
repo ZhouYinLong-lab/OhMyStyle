@@ -1,0 +1,23 @@
+package_id: italian-high-renaissance-raphaelesque
+invariants:
+  - id: architectural_perspective
+    weight: 3
+    test: A central vanishing point organizes vault, arches, columns, and floor.
+  - id: compositional_equilibrium
+    weight: 3
+    test: Left and right groups balance around a clear central axis.
+  - id: intellectual_gesture
+    weight: 2
+    test: Gestures and props communicate discussion, teaching, reading, or measurement.
+  - id: fresco_material
+    weight: 2
+    test: The image reads as mineral pigment integrated into aged plaster.
+  - id: high_renaissance_calm
+    weight: 2
+    test: The scene is lucid and monumental rather than chaotic or theatrical.
+rejections:
+  - exact replica of The School of Athens
+  - generic Greek temple fantasy
+  - baroque action composition
+  - modern classroom scene
+minimum_score: 9

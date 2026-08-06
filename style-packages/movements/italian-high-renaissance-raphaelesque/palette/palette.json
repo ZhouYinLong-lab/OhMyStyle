@@ -1,0 +1,11 @@
+{
+  "name": "Roman Fresco and Mineral Drapery",
+  "colors": [
+    {"name": "Aged Plaster", "hex": "#D5C3A0", "role": "architectural_ground"},
+    {"name": "Ultramarine Cloth", "hex": "#3E5874", "role": "heroic_drapery"},
+    {"name": "Fresco Red", "hex": "#994B3F", "role": "counter_accent"},
+    {"name": "Roman Ochre", "hex": "#A77A43", "role": "stone_and_cloth"},
+    {"name": "Olive Mineral", "hex": "#72755C", "role": "secondary_drapery"},
+    {"name": "Architectural Shadow", "hex": "#403A35", "role": "depth_and_coffer"}
+  ]
+}

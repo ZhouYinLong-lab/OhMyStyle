@@ -1,0 +1,17 @@
+id: italian-high-renaissance
+name: Italian High Renaissance
+entity_type: art_movement
+region: Central Italy, especially Rome and Florence
+period: c. 1490-1527
+representative_anchors:
+  - Raphael, The School of Athens
+  - Raphael's Rooms, Room of the Segnatura
+visual_system:
+  - monumental fresco
+  - one-point architectural perspective
+  - balanced groups of figures
+  - classical architecture and humanist subject matter
+source_policy: Historical works remain link-only unless reproduction rights are verified.
+sources:
+  - https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html
+  - https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/stanza-della-segnatura.html
