@@ -1,0 +1,8 @@
+sample_id: italian-high-renaissance-anonymous-v1
+status: approved_for_demo
+generated_at: 2026-08-06
+generator: OpenAI built-in image generation
+prompt_mode: movement_prompt_with_manual_subject
+prompt_file: ../../prompts/base.txt
+rights: generated_sample_not_historical_reference
+review_notes: Approved by user after checking idealized proportions, contrapposto, connected gestures, clear color, and non-School-of-Athens composition.
