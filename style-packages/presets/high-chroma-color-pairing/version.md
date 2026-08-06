@@ -3,5 +3,6 @@
 - Initial package for a subject-neutral high-chroma paired-color preset.
 - Added seven palette pairs transcribed from user-supplied reference cards.
 - Added anonymous prompt, negative prompt, reproduction rules, and evaluation gates.
-- Recorded the two user-provided Bilibili links as `link_only` sources.
-- No reference screenshot or generated image is redistributed in this version.
+- Added six compressed floral reference screenshots and seven compressed palette-card screenshots supplied by the user.
+- Recorded the two user-provided Bilibili links and local asset paths in the reference manifest.
+- No generated image is included in this version.
