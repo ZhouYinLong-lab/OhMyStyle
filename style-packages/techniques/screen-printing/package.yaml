@@ -1,0 +1,19 @@
+{
+  "id": "screen-printing",
+  "name": "丝网印刷",
+  "kind": "technique",
+  "domain": "printmaking",
+  "version": "0.1.0",
+  "summary": "Builds screen-print results from opaque ink layers, limited separations, registration shifts, paper grain, and deliberate reduction for posters, packaging, illustration, and graphic marks.",
+  "files": {
+    "identity": "identity.yaml",
+    "visual_signature": "visual-signature.yaml",
+    "reproduction": "reproduction.yaml",
+    "relations": "relations.yaml",
+    "palette": "palette/palette.json",
+    "prompts": "prompts",
+    "evaluation": "evaluation.yaml",
+    "references": "references/manifest.csv",
+    "provenance": "provenance.yaml"
+  }
+}

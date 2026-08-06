@@ -1,0 +1,14 @@
+package_id: bauhaus
+package_version: 0.1.0
+curation_status: independent_demo_with_public_reference_links
+source_policy: Public pages are used to research observable traits. No source artwork or commercial screenshot is bundled. The included representative image and accepted example are newly generated anonymous scenes.
+sources:
+  - url: https://www.bauhaus.de/en/das-bauhaus/
+    authority: 包豪斯德绍官方历史介绍
+    supports: 用于确认包豪斯的历史定位与跨媒介教学背景。
+    accessed: 2026-08-07
+  - url: https://www.moma.org/collection/?q=bauhaus
+    authority: MoMA 包豪斯收藏检索
+    supports: 用于观察几何、功能与媒介关系的公开作品资料。
+    accessed: 2026-08-07
+attribution: This independent package describes observable traits associated with Bauhaus; it is not affiliated with any referenced institution, artist, studio, or rights holder.

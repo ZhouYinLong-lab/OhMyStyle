@@ -1,0 +1,19 @@
+{
+  "id": "bauhaus",
+  "name": "包豪斯",
+  "kind": "school",
+  "domain": "design",
+  "version": "0.1.0",
+  "summary": "Emphasizes geometric order, basic forms, primary-color relationships, functional structure, and negative space across graphic, spatial, product, and abstract compositions without copying a specific design.",
+  "files": {
+    "identity": "identity.yaml",
+    "visual_signature": "visual-signature.yaml",
+    "reproduction": "reproduction.yaml",
+    "relations": "relations.yaml",
+    "palette": "palette/palette.json",
+    "prompts": "prompts",
+    "evaluation": "evaluation.yaml",
+    "references": "references/manifest.csv",
+    "provenance": "provenance.yaml"
+  }
+}

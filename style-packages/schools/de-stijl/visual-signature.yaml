@@ -1,0 +1,17 @@
+medium:
+  name: school
+  visible_evidence:
+    - medium_or_process_marks_are_consistent
+    - edges_and_surfaces_follow_the_selected_medium
+composition:
+  priorities:
+    - visual_hierarchy
+    - negative_space
+    - subject_independent_style_transfer
+style_signature:
+  - Builds clarity through horizontal-vertical relations, rectangular color fields, black structural lines, and asymmetrical balance, treating composition as a system rather than a few colored shapes.
+  - avoid_generic_filters; make medium, structure, palette, and lighting jointly visible
+  - narrative_is_optional
+invariants:
+  - the result is an original new scene, not a copy of a source work
+  - no unrequested text, logo, trademark, or named character

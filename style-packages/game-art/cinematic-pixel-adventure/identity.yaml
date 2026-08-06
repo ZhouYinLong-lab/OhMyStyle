@@ -1,0 +1,22 @@
+canonical_name: 电影化像素冒险美术
+entity_type: game_art_style_package
+origin: independent_style_package
+period: historical_or_contemporary_practice
+domain: game_art
+scope:
+  use_cases:
+    - portrait
+    - still_life
+    - architecture_or_environment
+    - minimal_composition
+    - fuzzy_brief_compilation
+  exclusions:
+    - copying_a_specific_work
+    - copying_a_named_character_or_logo
+sources:
+  - https://store.steampowered.com/app/206440/To_the_Moon/
+  - https://store.steampowered.com/app/1182620/Impostor_Factory/
+rendering:
+  model: subject_independent_visual_style
+  scene_logic: preserve_medium_composition_palette_lighting_and_texture_relationships
+  output_behavior: support_new_subjects_without_copying_source_compositions

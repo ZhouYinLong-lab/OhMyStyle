@@ -1,0 +1,22 @@
+canonical_name: 硬光色块摄影
+entity_type: preset_style_package
+origin: independent_style_package
+period: historical_or_contemporary_practice
+domain: photography
+scope:
+  use_cases:
+    - portrait
+    - still_life
+    - architecture_or_environment
+    - minimal_composition
+    - fuzzy_brief_compilation
+  exclusions:
+    - copying_a_specific_work
+    - copying_a_named_character_or_logo
+sources:
+  - https://www.moma.org/collection/
+  - https://github.com/ZhouYinLong-lab/OhMyStyle
+rendering:
+  model: subject_independent_visual_style
+  scene_logic: preserve_medium_composition_palette_lighting_and_texture_relationships
+  output_behavior: support_new_subjects_without_copying_source_compositions

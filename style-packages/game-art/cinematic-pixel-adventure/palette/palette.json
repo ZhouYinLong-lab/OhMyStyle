@@ -1,0 +1,36 @@
+{
+  "name": "cinematic-pixel-adventure",
+  "usage": "controlled relationship among dominant, support, shadow, and accent colors",
+  "colors": [
+    {
+      "name": "color_0",
+      "hex": "#202943",
+      "role": "冷色环境"
+    },
+    {
+      "name": "color_1",
+      "hex": "#756C94",
+      "role": "远景与空气"
+    },
+    {
+      "name": "color_2",
+      "hex": "#3F665E",
+      "role": "植被与阴影"
+    },
+    {
+      "name": "color_3",
+      "hex": "#96613D",
+      "role": "道路与建筑"
+    },
+    {
+      "name": "color_4",
+      "hex": "#E2A04C",
+      "role": "灯光焦点"
+    },
+    {
+      "name": "color_5",
+      "hex": "#DED5BC",
+      "role": "天空与高光"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "isometric-pixel-tactics",
+  "name": "等距像素策略美术",
+  "kind": "game_art",
+  "domain": "game_art",
+  "version": "0.1.0",
+  "summary": "Organizes scenes through isometric grids, compact units, layered tiles, and clear tactical light-dark grouping, with readable paths and height changes rather than copied game interfaces.",
+  "files": {
+    "identity": "identity.yaml",
+    "visual_signature": "visual-signature.yaml",
+    "reproduction": "reproduction.yaml",
+    "relations": "relations.yaml",
+    "palette": "palette/palette.json",
+    "prompts": "prompts",
+    "evaluation": "evaluation.yaml",
+    "references": "references/manifest.csv",
+    "provenance": "provenance.yaml"
+  }
+}

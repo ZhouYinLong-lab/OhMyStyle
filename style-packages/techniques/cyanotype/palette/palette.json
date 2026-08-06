@@ -1,0 +1,31 @@
+{
+  "name": "cyanotype",
+  "usage": "controlled relationship among dominant, support, shadow, and accent colors",
+  "colors": [
+    {
+      "name": "color_0",
+      "hex": "#123A63",
+      "role": "深色影像"
+    },
+    {
+      "name": "color_1",
+      "hex": "#2B5B82",
+      "role": "中间调"
+    },
+    {
+      "name": "color_2",
+      "hex": "#7FA6B9",
+      "role": "稀释层"
+    },
+    {
+      "name": "color_3",
+      "hex": "#F1EAD8",
+      "role": "未曝光区域"
+    },
+    {
+      "name": "color_4",
+      "hex": "#D3C5A5",
+      "role": "手工纸基底"
+    }
+  ]
+}

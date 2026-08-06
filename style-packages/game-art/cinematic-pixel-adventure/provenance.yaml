@@ -1,0 +1,14 @@
+package_id: cinematic-pixel-adventure
+package_version: 0.1.0
+curation_status: independent_demo_with_public_reference_links
+source_policy: Public pages are used to research observable traits. No source artwork or commercial screenshot is bundled. The included representative image and accepted example are newly generated anonymous scenes.
+sources:
+  - url: https://store.steampowered.com/app/206440/To_the_Moon/
+    authority: 《To the Moon》官方商店页面
+    supports: 用于观察低分辨率冒险游戏中的像素环境、天空与暖冷光线关系。
+    accessed: 2026-08-07
+  - url: https://store.steampowered.com/app/1182620/Impostor_Factory/
+    authority: 《Impostor Factory》官方商店页面
+    supports: 用于观察独立像素冒险游戏中的环境层次与精灵尺度。
+    accessed: 2026-08-07
+attribution: This independent package describes observable traits associated with Cinematic Pixel Adventure Art; it is not affiliated with any referenced institution, artist, studio, or rights holder.

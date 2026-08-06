@@ -1,0 +1,13 @@
+medium: technique_style_direction
+technical:
+  base_canvas: 1280x720_or_provider_equivalent
+  output: preserve_clear_edges_and_medium_evidence
+  palette: declared_style_palette_with_controlled_variation
+construction:
+  - translate the user subject into the style medium and structural rules
+  - establish composition before small detail
+  - inspect against the generic five-task suite
+avoid:
+  - generic_global_filter
+  - copied_source_composition
+  - readable_text_or_branding

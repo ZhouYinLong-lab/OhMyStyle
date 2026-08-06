@@ -1,0 +1,14 @@
+package_id: isometric-pixel-tactics
+package_version: 0.1.0
+curation_status: independent_demo_with_public_reference_links
+source_policy: Public pages are used to research observable traits. No source artwork or commercial screenshot is bundled. The included representative image and accepted example are newly generated anonymous scenes.
+sources:
+  - url: https://opengameart.org/
+    authority: OpenGameArt 像素美术资源
+    supports: 用于观察像素地块、单位与等距构成的常见制作方法。
+    accessed: 2026-08-07
+  - url: https://www.gdcvault.com/
+    authority: GDC 公开开发演讲索引
+    supports: 用于观察游戏空间可读性与视觉分层。
+    accessed: 2026-08-07
+attribution: This independent package describes observable traits associated with Isometric Pixel Tactics Art; it is not affiliated with any referenced institution, artist, studio, or rights holder.
