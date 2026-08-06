@@ -1,76 +1,35 @@
 # RPG Maker Pixel Art + Turner Atmosphere
 
-![RPG Maker Pixel Art + Turner Atmosphere representative example](../../game-art/rpg-maker-pixel-art/examples/accepted/anonymous-v1.png)
+[English](README.en.md)
 
+![RPG Maker Pixel Art + Turner Atmosphere 示例](gallery-16x9.jpg)
 
-> **分类 / Category:** [交叉风格配方 / Cross-style recipes]
-> **类型 / Type:** 交叉风格配方 / cross-style recipe
-> **包路径 / Package path:** `style-packages/composites/rpg-maker-x-turner`
+## 这是什么
 
-## 简介（中文）
+交叉风格不是独立的艺术家、摄影师或流派，而是一种把多个风格包按角色组合的功能。它只在明确的区域、媒介、光线或色彩职责上复用基础包的规则，避免把多个名称简单拼接成一个模糊风格。
 
-这是一个独立的交叉风格配方「RPG Maker Pixel Art + Turner Atmosphere」。它只引用已有风格包，并通过角色、权重和约束定义组合关系，不复制基础包的文字或参考资源。
+## 组合模式
 
-核心观察点：Demonstrate role-separated medium and lighting composition.
+当前模式：`stack`
 
-## Overview (English)
+- `game-art/rpg-maker-pixel-art`：medium，Keep raster medium and sprite edges authoritative.
+- `artists/jmw-turner`：lighting，Borrow atmospheric light logic without replacing pixel geometry.
 
-This is an independent cross-style recipe, “RPG Maker Pixel Art + Turner Atmosphere”. It references existing packages and defines their roles, weights, and constraints without copying their text or reference assets.
+## 使用机制
 
-Key observations: Demonstrate role-separated medium and lighting composition.
+- `stack`：不同基础包负责不同维度，例如像素包负责媒介和边缘，绘画包负责天空或光线。
+- `blend`：按权重融合相同维度的规则，同时保留主要结构。
+- `contrast`：将基础包分配到不同区域，避免颜色、材质或笔触互相污染。
 
-## 来源与版权（中文）
+约束见 `composite.yaml`。生成示例：
 
-参考资料只用于研究和风格拆解。外部作品的版权、商标、截图和平台页面仍归原权利人所有；本包不代表与相关艺术家、摄影师、游戏或机构存在合作关系。生成示例是新的匿名场景，不是原作者作品。
+![交叉风格示例](examples/generated/anonymous-v1.png)
 
-来源链接：
+## 只使用此包
 
-- No external source is redistributed; see the package provenance file.
+1. 下载本目录，阅读 `identity.yaml`、`visual-signature.yaml` 和 `reproduction.yaml`。
+2. 打开 `prompts/base.txt`，把主题替换为你自己的内容；负面约束见 `prompts/negative.txt`。
+3. 选择一种执行方式：直接复制 Prompt 到生图平台；配置自己的 API Key 后提交编译任务；或将 Prompt、参考清单和调色板导入本地模型与 ComfyUI。
+4. 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
 
-具体权利边界请先阅读 `provenance.yaml` (if present) 和仓库根目录的 [`NOTICE`](../../../NOTICE)。
-
-## Sources and rights (English)
-
-References are used for research and visual analysis. Copyright, trademarks, screenshots, and source pages remain with their respective rights holders. This package is independent and does not imply endorsement or affiliation. Generated examples are anonymous new scenes, not works by the referenced creator.
-
-Source links:
-
-- No external source is redistributed; see the package provenance file.
-
-Read `provenance.yaml` (if present) when present and the repository [`NOTICE`](../../../NOTICE) before redistributing anything.
-
-## 只使用此包 / Use only this package
-
-### 方式一：下载风格包，复制生成 Prompt
-
-下载本目录，打开 `style-packages/composites/rpg-maker-x-turner/prompts/base.txt`，替换变量后复制。 把包内变量替换为你的主题，再将生成的 Prompt 复制到任意支持文字生图的平台。参考图、负面约束和可选参数见同目录文件。
-
-Download this directory. Open `style-packages/composites/rpg-maker-x-turner/prompts/base.txt`, fill in its variables, and paste the result. Fill in the variables and paste the resulting Prompt into an image model. Reference roles, negative constraints, and optional parameters are kept beside the package.
-
-### 方式二：配置 API Key，一键生成
-
-OhMyStyle 不托管用户密钥。配置你选择的模型提供商 API Key 后，编译器只生成 provider-neutral 任务；再由你选择的 API 适配器提交，仓库不保存密钥。
-
-```bash
-python tools/compile-style.py style-packages/composites/rpg-maker-x-turner --subject "你的主题" --profile weak --output tmp/rpg-maker-x-turner-job.json
-```
-
-The compiler emits a provider-neutral job; your chosen API adapter submits it. The repository never stores your key. Keep API keys outside the repository and let your chosen adapter submit the job to the model.
-
-### 方式三：本地模型 + ComfyUI 工作流
-
-将 `prompts/`、`references/`、`palette/` 和生成的 job 导入本地模型工作流；模型权重由用户自行安装。 像素、遮罩或构图约束优先使用包内的 reproduction 与 workflow 文件。
-
-Import `prompts/`, `references/`, `palette/`, and the compiled job into a local workflow; users install their own model weights. Use the package reproduction and workflow files when available. Model weights are not bundled; ComfyUI runs the models installed by the user.
-
-## 包内文件 / Package files
-
-- [composite.yaml](composite.yaml)
-- [`game-art/rpg-maker-pixel-art`](../../game-art/rpg-maker-pixel-art/README.md) — role: `medium`
-- [`artists/jmw-turner`](../../artists/jmw-turner/README.md) — role: `lighting`
-
-## 免责声明 / Disclaimer
-
-风格包描述的是可观察的媒介、构图、色彩、光线和表面决策，不保证任何模型得到完全相同的输出，也不鼓励复制受保护作品的具体构图、人物、文字或标志。
-
-The package describes observable decisions in medium, composition, color, light, and surface. It does not guarantee identical output and does not authorize copying protected compositions, characters, text, or marks.
+模型权重、API Key 和生成图片由使用者自行管理；本仓库不托管在线生图服务。

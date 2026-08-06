@@ -1,15 +1,15 @@
-# 原创预设 / Original presets
+# 原创预设
 
-本目录收录 1 个独立风格包。每个小单元都有代表图、名称和双语 README；点击 README 可查看来源、版权边界和三种使用方式。
+[English](README.en.md)
 
-This directory contains 1 independent style packages. Each package has a representative image, a bilingual README, provenance notes, and three usage modes.
+本目录收录 1 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
 
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
-<a href="high-chroma-color-pairing/README.md">No preview<br>暂无代表图</a><br>
+<a href="high-chroma-color-pairing/README.md"><img src="high-chroma-color-pairing/gallery-16x9.jpg" width="230" alt="High-Chroma Color Pairing representative image"></a><br>
 <strong>High-Chroma Color Pairing</strong><br>
-<a href="high-chroma-color-pairing/README.md">打开 README / Open README</a>
+<a href="high-chroma-color-pairing/README.md">打开 README</a>
 </td>
 <td width="33%"></td>
 <td width="33%"></td>
