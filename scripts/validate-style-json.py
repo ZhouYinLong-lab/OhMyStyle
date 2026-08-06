@@ -106,7 +106,8 @@ MIN_LIST_LENGTHS = {
     "avoid": 3,
 }
 
-EXPECTED_STYLE_FILES = {"style.json", "preview-16x9.jpg", "preview-9x16.jpg"}
+REQUIRED_STYLE_FILES = {"style.json", "preview-16x9.jpg", "preview-9x16.jpg"}
+OPTIONAL_STYLE_FILES = {"README.md"}
 PLACEHOLDER_RE = re.compile(r"\{([A-Z0-9_]+)\}")
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
@@ -300,10 +301,12 @@ def validate_style_file(style_json: Path, errors: ErrorCollector) -> None:
 
 def validate_style_folder(folder: Path, errors: ErrorCollector) -> None:
     files = {path.name for path in folder.iterdir() if path.is_file() and not path.name.startswith(".")}
-    if files != EXPECTED_STYLE_FILES:
-        errors.add(
-            f"{folder}: expected exactly {sorted(EXPECTED_STYLE_FILES)}, found {sorted(files)}"
-        )
+    missing = REQUIRED_STYLE_FILES - files
+    unexpected = files - REQUIRED_STYLE_FILES - OPTIONAL_STYLE_FILES
+    if missing:
+        errors.add(f"{folder}: missing required files {sorted(missing)}")
+    if unexpected:
+        errors.add(f"{folder}: unexpected files {sorted(unexpected)}")
     validate_style_file(folder / "style.json", errors.prefixed(str(folder / "style.json")))
 
 
