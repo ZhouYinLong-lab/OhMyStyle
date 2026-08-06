@@ -1,0 +1,19 @@
+canonical_name: Paul Gauguin
+entity_type: artist
+life: 1848-1903
+region: France / Polynesia
+primary_medium: oil_painting
+scope:
+  subjects:
+    - figures in symbolic or everyday scenes
+    - landscape compressed into color zones
+    - plants, animals, and ritual gestures
+    - decorative contour and broad flat passages
+  period_focus: mature historical practice
+  exclusions:
+    - copied famous composition
+    - generic style filter
+    - unmotivated decorative effects
+subject_matter:
+  - visual behavior is extracted from multiple original works
+  - the generated scene must remain a new subject and arrangement

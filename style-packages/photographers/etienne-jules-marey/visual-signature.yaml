@@ -1,0 +1,25 @@
+composition:
+  - isolate one movement on a dark or neutral technical ground
+  - overlap phases or traces so the body becomes a diagram of time
+  - keep camera, scale, and lighting stable enough to compare positions
+color:
+  - black, warm gray, paper white, and restrained sepia
+  - bright body traces contrast against a dark instrument-like field
+light:
+  quality: controlled_scientific_exposure
+  behavior:
+    - light prioritizes silhouette, limbs, and trajectory
+    - the subject may appear as repeated exposure or line trace
+    - background detail is minimized to preserve measurement
+surface:
+  brushwork: none_chronophotographic_plate
+  mark_logic:
+    - preserve analytical overlap and temporal sequence
+    - use fine traces, not motion blur or painterly smear
+    - retain plate imperfections only as historical evidence
+  finish: scientific_historical_motion_record
+invariants:
+  - movement is analyzed as a temporal trace
+  - the body and trajectory remain legible
+  - the field is technical and controlled
+  - the new sequence must not reproduce a known study

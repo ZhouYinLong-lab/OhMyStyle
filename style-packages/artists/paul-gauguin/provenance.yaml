@@ -1,0 +1,14 @@
+package_id: paul-gauguin
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
+sources:
+  - url: https://commons.wikimedia.org/wiki/File:La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg
+    authority: Wikimedia Commons
+    supports: primary public-domain reference image and work attribution
+    accessed: 2026-08-06
+  - url: https://commons.wikimedia.org/wiki/File:Gauguin_-_Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F_%281897-98%29.jpg
+    authority: Wikimedia Commons
+    supports: secondary public-domain reference image and work attribution
+    accessed: 2026-08-06
+attribution: Historical works remain attributed to Paul Gauguin and their source institutions. This independent package claims no affiliation.

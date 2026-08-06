@@ -1,0 +1,18 @@
+id: paul-gauguin
+name: Paul Gauguin
+kind: artist
+domain: painting
+version: 0.1.0
+entity: catalog/persons/artists/paul-gauguin/entity.yaml
+summary: >-
+  A Synthetist painting profile built from flattened color fields, strong contour design, symbolic non-natural color, compressed spatial layers, and decorative rhythm.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

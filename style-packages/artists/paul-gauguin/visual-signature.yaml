@@ -1,0 +1,25 @@
+composition:
+  - flatten the scene into overlapping color zones rather than continuous realism
+  - use a strong diagonal, tree, branch, or body group to divide the field
+  - arrange figures as symbolic pauses inside a decorative rhythm
+color:
+  - saturated vermilion, ochre, deep blue, green, violet, and cream
+  - color may be non-natural but must be internally assigned and repeated
+light:
+  quality: symbolic_flat_painted_light
+  behavior:
+    - volume is reduced in favor of silhouette, contour, and color relation
+    - shadows may be colored zones rather than modeled darkness
+    - depth is compressed but layered
+surface:
+  brushwork: broad_flat_passages_with_visible_canvas
+  mark_logic:
+    - contour lines carry separation and rhythm
+    - large areas remain intentionally unmodulated
+    - texture supports the painted object instead of photorealistic material
+  finish: decorative_synthetist_oil_surface
+invariants:
+  - color and contour carry symbolic weight
+  - depth is compressed into readable layers
+  - non-natural color is systematic rather than random
+  - the new scene must not reproduce a named painting

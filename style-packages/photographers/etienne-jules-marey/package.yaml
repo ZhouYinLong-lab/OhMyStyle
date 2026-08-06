@@ -1,0 +1,18 @@
+id: etienne-jules-marey
+name: Étienne-Jules Marey
+kind: photographer
+domain: photography
+version: 0.1.0
+entity: catalog/persons/photographers/etienne-jules-marey/entity.yaml
+summary: >-
+  A chronophotography profile built from analytical motion traces, dark technical grounds, repeated body phases, and instrument-like evidence rather than contact-sheet narrative.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

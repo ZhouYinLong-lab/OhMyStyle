@@ -1,0 +1,25 @@
+composition:
+  - establish a dark architectural field with a clear human focal group or sitter
+  - use gaze, stance, doorway, mirror, or canvas edge to create spatial exchange
+  - let the arrangement feel observed rather than diagrammed
+color:
+  - umber, charcoal, gray, muted red, blue-black, and warm flesh notes
+  - reserve bright whites and reds for focal cloth or face accents
+light:
+  quality: selective_baroque_directional_light
+  behavior:
+    - faces, hands, and white fabric emerge from a dark field
+    - the background remains active but subordinate
+    - transitions alternate between exact detail and broad loose paint
+surface:
+  brushwork: controlled_oil_with_lost_edges_and_broad_passages
+  mark_logic:
+    - sharpen eyes, hands, and material edges only where narrative attention needs them
+    - let garments, walls, and distant figures resolve through economical strokes
+    - preserve painterly variation without random texture
+  finish: deep_tonal_oil_surface_with_lively_edge_control
+invariants:
+  - spatial depth is carried by darkness, doorway, gaze, and overlap
+  - the subject has social presence without melodrama
+  - detail density is selective rather than uniform
+  - the new scene must not reproduce a known court composition

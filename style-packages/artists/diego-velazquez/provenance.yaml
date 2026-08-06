@@ -1,0 +1,14 @@
+package_id: diego-velazquez
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
+sources:
+  - url: https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Las_Meninas.jpg
+    authority: Wikimedia Commons
+    supports: primary public-domain reference image and work attribution
+    accessed: 2026-08-06
+  - url: https://commons.wikimedia.org/wiki/File:Retrato_de_Juan_Pareja
+    authority: Wikimedia Commons
+    supports: secondary public-domain reference image and work attribution
+    accessed: 2026-08-06
+attribution: Historical works remain attributed to Diego Velázquez and their source institutions. This independent package claims no affiliation.

@@ -1,0 +1,19 @@
+canonical_name: Georges Seurat
+entity_type: artist
+life: 1859-1891
+region: France
+primary_medium: oil_painting
+scope:
+  subjects:
+    - riverbanks, parks, and leisure scenes
+    - figures held in measured profile or frontal poses
+    - water, grass, trees, parasols, and architecture
+    - optical color mixing through small adjacent marks
+  period_focus: mature historical practice
+  exclusions:
+    - copied famous composition
+    - generic style filter
+    - unmotivated decorative effects
+subject_matter:
+  - visual behavior is extracted from multiple original works
+  - the generated scene must remain a new subject and arrangement

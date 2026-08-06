@@ -1,0 +1,18 @@
+package_id: georges-seurat
+package_version: 0.1.0
+medium: oil_painting
+materials:
+  support: historical_record_or_canvas
+  pigment_direction: restrained_source_observed_palette
+  finish: observable_surface_and_optical_behavior
+process:
+  - establish banded space and measured figure positions
+  - choose a limited complementary color system
+  - apply consistent small marks by material and light family
+  - check viewing-distance color mixture and silhouette clarity
+technical_direction:
+  contrast: controlled_by_subject_and_medium
+  saturation: source_observed_not_global
+  perspective: consistent_with_package_signature
+  detail_density: focal_detail_with_structural_sparsity
+safety_note: Use observable traits only; do not recreate a named work, sitter, plate, object, or exact arrangement.

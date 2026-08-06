@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-see%20license%20files-lightgrey)](LICENSE-OHMYSTYLE.md)
-[![Executable packages](https://img.shields.io/badge/executable%20packages-26-6C63FF)](docs/DEMO-PACKAGES.md)
+[![Executable packages](https://img.shields.io/badge/executable%20packages-31-6C63FF)](docs/DEMO-PACKAGES.md)
 [![Legacy catalog](https://img.shields.io/badge/legacy%20style.json%20catalog-110-5B8C5A)](docs/CATALOG.md)
 
 OhMyStyle is an independent, model-agnostic toolkit for building reproducible
@@ -94,6 +94,9 @@ Reference manifests record provenance and rights status separately.
 | <img src="style-packages/artists/rembrandt/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Rembrandt package example"> | [Rembrandt](style-packages/artists/rembrandt/) | Warm dark ground, selective illumination, open shadow, tactile material focus |
 | <img src="style-packages/artists/vincent-van-gogh/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Vincent van Gogh package example"> | [Vincent van Gogh](style-packages/artists/vincent-van-gogh/) | Directional impasto, complementary color pressure, expressive contour rhythm |
 | <img src="style-packages/artists/wassily-kandinsky/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Wassily Kandinsky package example"> | [Wassily Kandinsky](style-packages/artists/wassily-kandinsky/) | Abstract geometry, line rhythm, color weight, asymmetrical painted balance |
+| <img src="style-packages/artists/diego-velazquez/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Diego Velázquez package example"> | [Diego Velázquez](style-packages/artists/diego-velazquez/) | Selective baroque light, dark architectural field, social gaze, lost edges |
+| <img src="style-packages/artists/georges-seurat/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Georges Seurat package example"> | [Georges Seurat](style-packages/artists/georges-seurat/) | Optical color units, measured silhouettes, horizontal bands, still public rhythm |
+| <img src="style-packages/artists/paul-gauguin/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Paul Gauguin package example"> | [Paul Gauguin](style-packages/artists/paul-gauguin/) | Symbolic color fields, dark contour, compressed layers, decorative flatness |
 
 ### Photographers
 
@@ -106,6 +109,8 @@ Reference manifests record provenance and rights status separately.
 | <img src="style-packages/photographers/julia-margaret-cameron/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Julia Margaret Cameron package example"> | [Julia Margaret Cameron](style-packages/photographers/julia-margaret-cameron/) | Soft wet-plate focus, intimate pose, tonal atmosphere, expressive face |
 | <img src="style-packages/photographers/lewis-hine/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Lewis Hine package example"> | [Lewis Hine](style-packages/photographers/lewis-hine/) | Social evidence, direct context, human-machine scale, dignified observation |
 | <img src="style-packages/photographers/nadar/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Nadar package example"> | [Nadar](style-packages/photographers/nadar/) | Sculptural studio pose, plain ground, soft directional light, early print tone |
+| <img src="style-packages/photographers/roger-fenton/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Roger Fenton package example"> | [Roger Fenton](style-packages/photographers/roger-fenton/) | Restrained field documentary, aftermath evidence, deliberate terrain composition |
+| <img src="style-packages/photographers/etienne-jules-marey/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Étienne-Jules Marey package example"> | [Étienne-Jules Marey](style-packages/photographers/etienne-jules-marey/) | Chronophotographic sequence, analytical traces, fixed ground, motion as evidence |
 
 ### Movements and schools
 

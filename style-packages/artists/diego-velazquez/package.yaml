@@ -1,0 +1,18 @@
+id: diego-velazquez
+name: Diego Velázquez
+kind: artist
+domain: painting
+version: 0.1.0
+entity: catalog/persons/artists/diego-velazquez/entity.yaml
+summary: >-
+  A court and portrait painting profile built from controlled dark space, selective illumination, precise faces and fabrics, and lively broad passages that dissolve at the edges.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,18 @@
+package_id: diego-velazquez
+package_version: 0.1.0
+medium: oil_painting
+materials:
+  support: historical_record_or_canvas
+  pigment_direction: restrained_source_observed_palette
+  finish: observable_surface_and_optical_behavior
+process:
+  - establish dark architecture and figure placement
+  - set one selective light path across face, hands, or cloth
+  - paint focal features with precision and surrounding forms with broad economical passages
+  - balance social relationships without copying a historical scene
+technical_direction:
+  contrast: controlled_by_subject_and_medium
+  saturation: source_observed_not_global
+  perspective: consistent_with_package_signature
+  detail_density: focal_detail_with_structural_sparsity
+safety_note: Use observable traits only; do not recreate a named work, sitter, plate, object, or exact arrangement.

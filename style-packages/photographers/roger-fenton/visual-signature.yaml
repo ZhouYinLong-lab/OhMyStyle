@@ -1,0 +1,25 @@
+composition:
+  - use a deliberate road, ridge, tent line, or camp arrangement to organize the field
+  - place human figures as scale and evidence rather than dramatic heroes
+  - leave enough empty terrain for the event's aftermath or context
+color:
+  - monochrome silver-gray with restrained warm paper bias
+  - skies and ground retain separate tonal texture
+light:
+  quality: open_field_daylight
+  behavior:
+    - exposure is even enough to read terrain, cloth, and equipment
+    - contrast is controlled, with no cinematic crushed blacks
+    - atmosphere comes from weather and distance, not filters
+surface:
+  brushwork: none_historical_print_emulsion
+  mark_logic:
+    - preserve plate/paper irregularity without decorative fake grain
+    - keep documentary details legible but not hyper-sharp
+    - favor material evidence over spectacle
+  finish: restrained_historical_documentary_print
+invariants:
+  - place and material evidence are central
+  - human presence is dignified and observational
+  - tonal range remains restrained and readable
+  - the new scene must not recreate a named war photograph

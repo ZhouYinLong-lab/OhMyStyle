@@ -14,6 +14,9 @@ direction:
 | Artist | [Rembrandt](../style-packages/artists/rembrandt/) | Warm dark ground, selective illumination, open shadow, tactile material focus |
 | Artist | [Vincent van Gogh](../style-packages/artists/vincent-van-gogh/) | Directional impasto, complementary color pressure, expressive contour rhythm |
 | Artist | [Wassily Kandinsky](../style-packages/artists/wassily-kandinsky/) | Abstract geometry, line rhythm, color weight, asymmetrical painted balance |
+| Artist | [Diego Velázquez](../style-packages/artists/diego-velazquez/) | Selective baroque light, dark architectural field, social gaze, lost edges |
+| Artist | [Georges Seurat](../style-packages/artists/georges-seurat/) | Optical color units, measured silhouettes, horizontal bands, still public rhythm |
+| Artist | [Paul Gauguin](../style-packages/artists/paul-gauguin/) | Symbolic color fields, dark contour, compressed layers, decorative flatness |
 | Photographer | [Masahisa Fukase](../style-packages/photographers/masahisa-fukase/) | Serial autobiography, intimacy, recurring motifs, psychological distance |
 | Photographer | [Alfred Stieglitz](../style-packages/photographers/alfred-stieglitz/) | Authored geometry, layered planes, crop, weather, photogravure tonal structure |
 | Photographer | [Eadweard Muybridge](../style-packages/photographers/eadweard-muybridge/) | Fixed camera, sequential phases, measurement grid, motion as evidence |
@@ -21,6 +24,8 @@ direction:
 | Photographer | [Julia Margaret Cameron](../style-packages/photographers/julia-margaret-cameron/) | Soft wet-plate focus, intimate pose, tonal atmosphere, expressive face |
 | Photographer | [Lewis Hine](../style-packages/photographers/lewis-hine/) | Social evidence, direct context, human-machine scale, dignified observation |
 | Photographer | [Nadar](../style-packages/photographers/nadar/) | Sculptural studio pose, plain ground, soft directional light, early print tone |
+| Photographer | [Roger Fenton](../style-packages/photographers/roger-fenton/) | Restrained field documentary, aftermath evidence, deliberate terrain composition |
+| Photographer | [Étienne-Jules Marey](../style-packages/photographers/etienne-jules-marey/) | Chronophotographic sequence, analytical traces, fixed ground, motion as evidence |
 | Movement | [Neue Sachlichkeit](../style-packages/movements/neue-sachlichkeit/) | Matter-of-fact realism, social typology, precise surfaces |
 | Movement | [Italian High Renaissance](../style-packages/movements/italian-high-renaissance-raphaelesque/) | Drawing, proportion, clear space, calm narrative action, controlled color |
 | School / exhibition network | [New Topographics](../style-packages/schools/new-topographics/) | Clear-eyed views of human-altered landscape |

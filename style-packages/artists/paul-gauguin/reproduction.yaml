@@ -1,0 +1,18 @@
+package_id: paul-gauguin
+package_version: 0.1.0
+medium: oil_painting
+materials:
+  support: historical_record_or_canvas
+  pigment_direction: restrained_source_observed_palette
+  finish: observable_surface_and_optical_behavior
+process:
+  - reduce the subject to large silhouette and color zones
+  - draw the main contour rhythm before surface texture
+  - assign repeated symbolic color families to figures, ground, and foliage
+  - compress depth while keeping overlaps readable
+technical_direction:
+  contrast: controlled_by_subject_and_medium
+  saturation: source_observed_not_global
+  perspective: consistent_with_package_signature
+  detail_density: focal_detail_with_structural_sparsity
+safety_note: Use observable traits only; do not recreate a named work, sitter, plate, object, or exact arrangement.

@@ -1,0 +1,18 @@
+id: roger-fenton
+name: Roger Fenton
+kind: photographer
+domain: photography
+version: 0.1.0
+entity: catalog/persons/photographers/roger-fenton/entity.yaml
+summary: >-
+  A nineteenth-century documentary photography profile built from deliberate field composition, restrained tonal range, material evidence, and dignified human or landscape observation.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,18 @@
+id: georges-seurat
+name: Georges Seurat
+kind: artist
+domain: painting
+version: 0.1.0
+entity: catalog/persons/artists/georges-seurat/entity.yaml
+summary: >-
+  A Neo-Impressionist painting profile built from disciplined optical color units, stable silhouettes, measured park-like space, and calm repeated social poses.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

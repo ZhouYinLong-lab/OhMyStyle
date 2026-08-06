@@ -1,0 +1,25 @@
+composition:
+  - organize the scene with stable horizontal bands and deliberate figure spacing
+  - use repeated poses, umbrellas, trees, or shoreline markers to create rhythm
+  - keep silhouettes calm and readable while surfaces vibrate optically
+color:
+  - blue, green, yellow, orange, red, and violet held as adjacent marks
+  - shadows are colored and often built from complementary neighbors
+light:
+  quality: even_outdoor_daylight
+  behavior:
+    - light is distributed across the scene rather than concentrated as drama
+    - distance is clarified through scale, spacing, and color density
+    - no photographic blur or atmospheric wash replaces the marks
+surface:
+  brushwork: disciplined_small_optical_units
+  mark_logic:
+    - keep mark size and direction coherent inside each material area
+    - let neighboring colors mix at viewing distance
+    - preserve edges through silhouette and value grouping
+  finish: systematic_painted_surface_with_visible_units
+invariants:
+  - optical color units are organized, not random noise
+  - social and spatial rhythm is measured
+  - silhouettes remain calm and legible
+  - the new scene must not reproduce a known park or river composition

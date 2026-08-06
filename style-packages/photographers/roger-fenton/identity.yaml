@@ -1,0 +1,19 @@
+canonical_name: Roger Fenton
+entity_type: photographer
+life: 1819-1869
+region: United Kingdom
+primary_medium: salted_paper_and_wet_collodion_print
+scope:
+  subjects:
+    - Crimean War landscapes and camps
+    - soldiers and camp life
+    - roads, tents, terrain, and equipment
+    - formal documentary observation without spectacle
+  period_focus: mature historical practice
+  exclusions:
+    - copied famous composition
+    - generic style filter
+    - unmotivated decorative effects
+subject_matter:
+  - visual behavior is extracted from multiple original works
+  - the generated scene must remain a new subject and arrangement
