@@ -1,0 +1,33 @@
+color_system:
+  primary_rule: one_decisive_high_chroma_pair_plus_one_neutral_counter-ground
+  pair_families:
+    - blue_yellow
+    - teal_pink
+    - orange_navy
+    - turquoise_cream
+    - red_pale_warm
+    - brown_beige
+    - deep_blue_mist
+  saturation: high_for_the_pair; restrained_for_supporting_colors
+  hue_distance: clearly_separated; complementary_or_strong_warm_cool_relation
+  value_structure: use_a_light_or_deep_neutral_to_keep_the_pair_legible
+composition:
+  - color_masses_establish_hierarchy_before_texture
+  - dominant_mass_occupies_more_area_than_counter_mass
+  - counter_mass_is_intentional_and_easy_to_locate
+  - keep_open_negative_space_around_the_main_color_event
+  - avoid_equal_saturation_on_every_object
+subject_behavior:
+  - subject_may_be_flower_still_life_object_portrait_landscape_or_abstract_form
+  - content_remains_secondary_to_the_color_relationship
+  - silhouette_and_material_must_remain_readable
+surface_and_light:
+  - controlled_studio_or_even_daylight
+  - matte_or_naturally_textured_surfaces_preferred
+  - clean_edges_with_local_material_detail
+  - avoid_glossy_cgi_reflections_and_global_vintage_wash
+invariants:
+  - the_selected_pair_survives_downsampling
+  - primary_and_counter_colors_are_not_muddy
+  - background_supports_rather_than_competes_with_the_pair
+  - the_image_is_not_forced_into_a_flower_only_template

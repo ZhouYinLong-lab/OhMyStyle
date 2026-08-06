@@ -21,3 +21,4 @@ entities:
     - zx-spectrum-attribute-pixel
   presets:
     - quiet-documentary
+    - high-chroma-color-pairing

@@ -1,0 +1,12 @@
+id: high-chroma-color-pairing
+entity_type: visual_preset
+name: High-Chroma Color Pairing
+domain: hybrid
+scope: subject-neutral color direction for images and designed compositions
+technical_basis:
+  pair_selection: complementary_or_warm_cool_contrast
+  area_hierarchy: dominant_mass_counter_mass_accent
+  background: pale_or_deep_neutral_counter-ground
+sources:
+  - https://www.bilibili.com/video/BV1acjF68E6N/
+  - https://www.bilibili.com/video/BV1qe4y1d71z

@@ -1,0 +1,39 @@
+selection_order:
+  - choose_one_color_pair_from_palette/palette.json
+  - choose_a_subject_without_changing_the_pair
+  - assign_dominant_counter_and_neutral_roles
+  - set_background_value_before_adding_texture
+  - check_the_pair_at_thumbnail_size
+area_ratio:
+  dominant_color: 55-75_percent
+  counter_color: 15-30_percent
+  neutral_or_unaccented_support: 15-30_percent
+  small_accent: less_than_15_percent
+pair_modes:
+  complementary:
+    examples:
+      - cobalt_and_warm_yellow
+      - teal_and_pink
+      - orange_and_midnight_blue
+  warm_cool:
+    examples:
+      - red_and_pale_warm
+      - orange_and_turquoise
+  deep_light:
+    examples:
+      - brown_and_beige
+      - deep_blue_and_mist
+background_choices:
+  light:
+    - warm_white
+    - pale_cream
+    - mist_gray
+  dark:
+    - midnight_blue
+    - deep_brown
+    - blue_black
+reproduction_notes:
+  - Do not add a global color grade after choosing the pair.
+  - Keep secondary hues subordinate instead of introducing a rainbow.
+  - For photography, use neutral white balance and let objects carry the color.
+  - For painting or illustration, reserve the highest chroma for the pair.

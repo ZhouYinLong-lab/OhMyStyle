@@ -1,0 +1,30 @@
+package_id: high-chroma-color-pairing
+package_version: 0.1.0
+curation_status: palette_reference_demo
+source_policy: >-
+  User-supplied palette references are recorded as link-only sources. The
+  screenshots are not redistributed, and no generated preview is included
+  until explicitly approved.
+sources:
+  - url: https://www.bilibili.com/video/BV1acjF68E6N/?spm_id_from=333.1387.favlist.content.click&vd_source=dc8a446ed48dbc0e71281a3db9654692
+    authority: User-provided source link
+    supports: color-pair reference set
+    accessed: 2026-08-06
+    retrieval_status: link_only_page_not_fetched_in_current_environment
+  - url: https://www.bilibili.com/video/BV1qe4y1d71z?spm_id_from=333.788.recommend_more_video.1&trackid=web_related_0.router-related-2589621-cb5r7.1785986300627.4&vd_source=dc8a446ed48dbc0e71281a3db9654692
+    authority: User-provided source link
+    supports: color-pair reference set
+    accessed: 2026-08-06
+    retrieval_status: link_only_page_not_fetched_in_current_environment
+attribution: >-
+  The palette values were transcribed from user-supplied screenshots. This
+  repository does not claim ownership of the source videos or their imagery.
+related_contexts:
+  - color_blocking
+  - complementary_color
+  - editorial_still_life
+  - contemporary_floral_styling
+not_equivalent_to:
+  - named_artist_style
+  - historical_movement
+  - rainbow_palette

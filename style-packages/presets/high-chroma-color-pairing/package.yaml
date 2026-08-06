@@ -1,0 +1,20 @@
+id: high-chroma-color-pairing
+name: High-Chroma Color Pairing
+kind: preset
+domain: hybrid
+version: 0.1.0
+entity: catalog/presets/high-chroma-color-pairing/entity.yaml
+summary: >-
+  A subject-neutral color-direction preset built from decisive high-chroma
+  pairings, pale or deep counter-grounds, controlled area ratios, and clear
+  material separation rather than an artist-specific appearance.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

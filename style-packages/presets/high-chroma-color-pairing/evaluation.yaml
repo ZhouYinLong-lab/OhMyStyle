@@ -1,0 +1,29 @@
+minimum_score: 8
+dimensions:
+  pair_legibility:
+    weight: 3
+    pass: The chosen two-color relationship is immediately readable at thumbnail size.
+    fail: The pair is diluted by unrelated hues or a muddy global grade.
+  area_hierarchy:
+    weight: 2
+    pass: Dominant, counter, neutral, and accent roles are visibly different.
+    fail: Every object has equal visual weight or equal saturation.
+  background_counterbalance:
+    weight: 2
+    pass: The light or deep ground gives the pair clean separation.
+    fail: The background competes with or contaminates the pair.
+  subject_neutrality:
+    weight: 1
+    pass: The rule works without forcing flowers, a vase, or a specific object.
+    fail: The result is only a copy of the reference subject arrangement.
+  surface_control:
+    weight: 2
+    pass: Material detail remains local and the image avoids glossy synthetic finish.
+    fail: Texture, bloom, or reflections replace the color structure.
+rejections:
+  - rainbow_palette
+  - unstructured_neon
+  - muddy_filter
+  - equal_saturation_everywhere
+  - flower_only_template
+  - copied_reference_composition
