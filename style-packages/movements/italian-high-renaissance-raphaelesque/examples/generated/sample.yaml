@@ -1,8 +1,0 @@
-sample_id: italian-high-renaissance-raphaelesque-anonymous-v1
-status: pending_human_review
-generated_at: 2026-08-06
-generator: OpenAI built-in image generation
-prompt_mode: anonymous_visual_signature
-prompt_file: ../../prompts/base.txt
-rights: generated_sample_not_historical_reference
-review_notes: Deliberately tests a non-architectural small narrative with landscape depth, proportion, calm gestures, and mineral panel color.
