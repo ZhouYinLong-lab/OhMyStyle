@@ -1,0 +1,17 @@
+base_prompt_mode: anonymous_visual_signature
+subject_direction:
+  - choose a civic or funerary procession with one clear action
+  - arrange figures and animals into two or three horizontal bands
+  - include a small number of readable geometric symbols
+medium:
+  support: hand-shaped terracotta vessel or flat clay panel
+  mark: dark slip, incised contour, repeated painted motif
+  finish: dry matte surface with slight firing variation
+camera_or_view:
+  - frontal elevation
+  - no cinematic lens effects
+  - keep the whole object or panel visible
+negative_constraints:
+  - no named historical artifact
+  - no modern typography or logo
+  - no glossy digital rendering

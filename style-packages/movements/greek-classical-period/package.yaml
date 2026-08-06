@@ -1,0 +1,20 @@
+id: greek-classical-period
+name: Greek Classical Period
+kind: movement
+domain: hybrid
+version: 0.1.0
+entity: catalog/periods/ancient-greek/entity.yaml
+summary: >-
+  A measured Greek visual language of balanced composition, clear naturalistic
+  bodies, calm agency, articulated drapery, and a disciplined relationship
+  between movement, proportion, and civic ideals.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

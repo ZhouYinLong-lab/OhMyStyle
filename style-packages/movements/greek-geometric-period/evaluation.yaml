@@ -1,0 +1,19 @@
+package_id: greek-geometric-period
+invariants:
+  - id: register_order
+    weight: 3
+    test: Narrative is organized into intentional horizontal bands.
+  - id: sign_like_figures
+    weight: 3
+    test: Bodies and animals are angular, compact, and readable as signs.
+  - id: fired_clay_material
+    weight: 2
+    test: Terracotta support and dark slip remain visible.
+  - id: motif_discipline
+    weight: 2
+    test: Repeated motifs separate or structure the scene rather than decorate randomly.
+rejections:
+  - deep cinematic perspective
+  - generic modern geometric poster
+  - copied named artifact
+minimum_score: 7

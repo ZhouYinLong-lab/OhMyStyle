@@ -1,0 +1,10 @@
+{
+  "name": "Black Figure and Clay",
+  "colors": [
+    {"name": "Attic Clay", "hex": "#B65D3B", "role": "ground"},
+    {"name": "Carbon Black", "hex": "#1A1815", "role": "figure_field"},
+    {"name": "Chalk Cream", "hex": "#E8D8B9", "role": "reserved_highlight"},
+    {"name": "Muted Red", "hex": "#7E332B", "role": "accent"},
+    {"name": "Smoke Brown", "hex": "#4C3329", "role": "contour"}
+  ]
+}

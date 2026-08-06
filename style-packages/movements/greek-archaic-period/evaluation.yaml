@@ -1,0 +1,19 @@
+package_id: greek-archaic-period
+invariants:
+  - id: contour_narrative
+    weight: 3
+    test: Figures and action are readable through firm contour and overlap.
+  - id: ceramic_support
+    weight: 2
+    test: Clay body, slip, and firing remain visually present.
+  - id: ornamented_field
+    weight: 2
+    test: Borders and filler marks organize the scene without random clutter.
+  - id: transitional_naturalism
+    weight: 2
+    test: Anatomy is more observed than a pure sign system but remains patterned.
+rejections:
+  - cinematic fantasy illustration
+  - empty modern composition
+  - copied named artifact
+minimum_score: 7

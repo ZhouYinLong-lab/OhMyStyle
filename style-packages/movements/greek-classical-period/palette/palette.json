@@ -1,0 +1,10 @@
+{
+  "name": "Mineral Marble and Bronze",
+  "colors": [
+    {"name": "Warm Marble", "hex": "#D6C5A9", "role": "body_ground"},
+    {"name": "Bronze Brown", "hex": "#73543C", "role": "metal_shadow"},
+    {"name": "Mineral Blue", "hex": "#496A72", "role": "paint_trace"},
+    {"name": "Earth Red", "hex": "#944E3D", "role": "paint_trace"},
+    {"name": "Deep Crevice", "hex": "#302A25", "role": "modeling_shadow"}
+  ]
+}

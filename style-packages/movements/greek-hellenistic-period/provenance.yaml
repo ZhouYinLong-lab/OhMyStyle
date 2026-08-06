@@ -1,0 +1,10 @@
+package_id: greek-hellenistic-period
+package_version: 0.1.0
+curation_status: research_scaffold
+source_policy: External works are link-only unless reproduction rights are explicitly verified.
+sources:
+  - url: https://www.metmuseum.org/toah/hd/haht/hd_haht.htm
+    authority: The Metropolitan Museum of Art
+    supports: period chronology, cross-cultural exchange, and Hellenistic visual context
+    accessed: 2026-08-06
+attribution: Historical period description; no museum or artist endorsement is claimed.

@@ -1,0 +1,17 @@
+base_prompt_mode: anonymous_visual_signature
+subject_direction:
+  - choose an adult figure in a civic, athletic, or mythic but unnamed action
+  - show one calm weight shift and one deliberate gesture
+  - use a simple plinth, courtyard, or architectural ground line
+medium:
+  support: marble or bronze figure with traces of restrained pigment
+  mark: modeled volume, crisp silhouette, gravity-following drapery
+  finish: softly weathered but structurally clear surface
+camera_or_view:
+  - eye-level museum or courtyard view
+  - full figure visible
+  - even directional light that reveals volume
+negative_constraints:
+  - no named sculpture or artist
+  - no monochrome whitewash assumption
+  - no dramatic movie lighting

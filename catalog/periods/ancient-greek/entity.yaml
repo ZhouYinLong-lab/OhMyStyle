@@ -1,0 +1,16 @@
+id: ancient-greek
+name: Ancient Greek Art
+entity_type: historical_period_family
+region: Aegean and Mediterranean Greek world
+period: c. 900-31 BCE
+children:
+  - greek-geometric-period
+  - greek-archaic-period
+  - greek-classical-period
+  - greek-hellenistic-period
+source_policy: Historical context only; external artworks remain link-only unless rights are verified.
+sources:
+  - https://www.metmuseum.org/toah/hd/grge/hd_grge.htm
+  - https://www.metmuseum.org/toah/hd/argk/hd_argk.htm
+  - https://www.metmuseum.org/toah/hd/tacg/hd_tacg.htm
+  - https://www.metmuseum.org/toah/hd/haht/hd_haht.htm

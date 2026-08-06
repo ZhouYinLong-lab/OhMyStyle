@@ -1,0 +1,20 @@
+package_id: greek-hellenistic-period
+invariants:
+  - id: embodied_pathos
+    weight: 3
+    test: Emotion is communicated through posture, contact, and resistance.
+  - id: active_space
+    weight: 3
+    test: Diagonal movement, torsion, and foreshortening make space active.
+  - id: varied_presence
+    weight: 2
+    test: Bodies show meaningful differences of age, condition, or social position.
+  - id: material_credibility
+    weight: 2
+    test: Stone, bronze, tessera, or terracotta surface remains believable.
+rejections:
+  - superhero spectacle
+  - gore shortcut
+  - flat neoclassical calm
+  - copied famous group
+minimum_score: 7

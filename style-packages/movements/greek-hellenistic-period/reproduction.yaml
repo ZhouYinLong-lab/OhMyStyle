@@ -1,0 +1,17 @@
+base_prompt_mode: anonymous_visual_signature
+subject_direction:
+  - choose an unnamed moment of struggle, grief, rescue, or public spectacle
+  - give two or three bodies different ages, poses, or social positions
+  - make one diagonal force and one counterforce visible
+medium:
+  support: marble or bronze sculptural group, or a stone-and-tessera surface
+  mark: modeled torsion, stretched drapery, contact shadows, selective polish
+  finish: museum-visible material with wear concentrated on exposed edges
+camera_or_view:
+  - three-quarter view close enough to feel bodily pressure
+  - allow foreshortening but keep anatomy readable
+  - directional light reveals both polished planes and dark recesses
+negative_constraints:
+  - no named sculpture or artist
+  - no gore spectacle
+  - no modern fantasy armor or film-poster effects

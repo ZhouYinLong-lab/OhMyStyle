@@ -1,0 +1,19 @@
+package_id: greek-classical-period
+invariants:
+  - id: proportioned_body
+    weight: 3
+    test: Anatomy is naturalistic, coherent, and measured rather than superheroic.
+  - id: balanced_action
+    weight: 3
+    test: Weight shift and gesture are clear without theatrical exaggeration.
+  - id: material_truth
+    weight: 2
+    test: Marble, bronze, or pigment traces remain materially credible.
+  - id: lucid_space
+    weight: 2
+    test: Figure-ground relation and negative space are easy to read.
+rejections:
+  - white-marble-only cliché
+  - baroque turbulence
+  - copied canonical statue
+minimum_score: 7

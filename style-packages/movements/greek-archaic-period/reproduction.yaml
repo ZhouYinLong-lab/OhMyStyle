@@ -1,0 +1,17 @@
+base_prompt_mode: anonymous_visual_signature
+subject_direction:
+  - choose one procession, contest, or encounter without naming its myth
+  - use profile faces, patterned hair, and overlapping limbs
+  - place the action inside a vessel-like field with border bands
+medium:
+  support: painted clay vessel or shallow ceramic panel
+  mark: dark slip with incised details and reserved clay highlights
+  finish: kiln-fired, matte-to-satin ceramic surface
+camera_or_view:
+  - museum-style frontal view
+  - even illumination
+  - object centered with full silhouette visible
+negative_constraints:
+  - no named artifact or exact myth composition
+  - no modern lettering
+  - no cinematic depth of field

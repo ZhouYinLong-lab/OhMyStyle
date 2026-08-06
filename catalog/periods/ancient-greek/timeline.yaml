@@ -1,0 +1,18 @@
+period_family: ancient-greek
+sequence:
+  - id: greek-geometric-period
+    label: Geometric period
+    dates: c. 900-700 BCE
+    transition: ordered pattern, registers, funerary and civic signs
+  - id: greek-archaic-period
+    label: Archaic period
+    dates: c. 700-480 BCE
+    transition: patterned figures become more naturalistic; expanded narrative pottery
+  - id: greek-classical-period
+    label: Classical period
+    dates: c. 480-323 BCE
+    transition: balance, clarity, naturalistic bodies, measured action
+  - id: greek-hellenistic-period
+    label: Hellenistic period
+    dates: c. 323-31 BCE
+    transition: theatrical movement, pathos, varied bodies, cross-cultural exchange

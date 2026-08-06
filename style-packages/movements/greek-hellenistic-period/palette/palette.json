@@ -1,0 +1,11 @@
+{
+  "name": "Polished Stone and Mineral Chroma",
+  "colors": [
+    {"name": "Travertine Light", "hex": "#CDBB9B", "role": "lit_stone"},
+    {"name": "Patinated Bronze", "hex": "#526358", "role": "metal_midtone"},
+    {"name": "Royal Red", "hex": "#8D3D35", "role": "drapery_accent"},
+    {"name": "Aegean Blue", "hex": "#3D6670", "role": "surface_accent"},
+    {"name": "Cavity Black", "hex": "#262321", "role": "deep_shadow"},
+    {"name": "Mineral Ochre", "hex": "#AA7B3D", "role": "mosaic_accent"}
+  ]
+}

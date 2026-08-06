@@ -1,0 +1,9 @@
+{
+  "name": "Fired Clay Register",
+  "colors": [
+    {"name": "Terracotta", "hex": "#A85A3B", "role": "ground"},
+    {"name": "Slip Black", "hex": "#171817", "role": "figure_and_pattern"},
+    {"name": "Kiln Cream", "hex": "#E3C89B", "role": "highlight"},
+    {"name": "Ash Brown", "hex": "#6E3B2D", "role": "secondary_mark"}
+  ]
+}
