@@ -10,6 +10,8 @@ from typing import Any
 
 import yaml
 
+from safe_yaml import safe_load
+
 
 DIMENSIONS = {
     "mood": ("visual_identity", "mood"),
@@ -24,7 +26,7 @@ DIMENSIONS = {
 def load_style(path: Path) -> dict[str, Any]:
     package = path / "style.yaml" if path.is_dir() else path
     with package.open(encoding="utf-8") as handle:
-        data = yaml.safe_load(handle)
+        data = safe_load(handle)
     if not isinstance(data, dict):
         raise SystemExit(f"Not a YAML object: {package}")
     return data

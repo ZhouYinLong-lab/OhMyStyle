@@ -12,6 +12,7 @@ import yaml
 from jsonschema import Draft202012Validator
 
 from render_metrics import _lstar, hex_to_rgb
+from safe_yaml import safe_load
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,7 +21,7 @@ SCHEMA = ROOT / "schema/render-task.schema.json"
 
 def load_task(path: Path) -> dict[str, Any]:
     with path.open(encoding="utf-8") as handle:
-        task = yaml.safe_load(handle)
+        task = safe_load(handle)
     if not isinstance(task, dict):
         raise ValueError(f"Task must be a YAML object: {path}")
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))

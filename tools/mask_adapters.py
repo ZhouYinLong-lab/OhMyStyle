@@ -13,6 +13,7 @@ from typing import Any, Mapping
 from PIL import Image, ImageChops, ImageFilter, ImageOps
 
 from color_science import rgb_to_lab
+from image_limits import ensure_working_size
 from render_metrics import hex_to_rgb
 
 
@@ -48,9 +49,13 @@ class MaskAdapterError(ValueError):
     pass
 
 
-def _data(image: Image.Image) -> list[Any]:
+def _pixel_data(image: Image.Image):
     getter = getattr(image, "get_flattened_data", None)
-    return list(getter()) if getter else list(image.getdata())
+    return getter() if getter else image.getdata()
+
+
+def _count_active(image: Image.Image, threshold: int = 128) -> int:
+    return sum(value >= threshold for value in _pixel_data(image))
 
 
 def _sha256(path: Path) -> str:
@@ -82,15 +87,27 @@ class FileSegmentationAdapter:
         payload = json.loads(manifest_path.read_text(encoding="utf-8"))
         if not isinstance(payload, dict) or not isinstance(payload.get("classes"), dict):
             raise MaskAdapterError("Segmentation manifest must contain an object field: classes")
-        if payload.get("image_sha256") and payload["image_sha256"] != _sha256(image_path):
+        image_sha256 = payload.get("image_sha256")
+        if not isinstance(image_sha256, str) or not image_sha256.strip():
+            raise MaskAdapterError("Segmentation manifest must contain image_sha256 for same-image binding")
+        if image_sha256 != _sha256(image_path):
             raise MaskAdapterError("Segmentation manifest image_sha256 does not match the input image")
         with Image.open(image_path) as source:
             size = ImageOps.exif_transpose(source).size
+        ensure_working_size(size, "segmentation image")
+        manifest_root = manifest_path.resolve().parent
         self._masks: dict[str, Image.Image] = {}
         for class_name, raw_path in payload["classes"].items():
             if not isinstance(class_name, str) or not isinstance(raw_path, str):
                 raise MaskAdapterError("Manifest classes must map strings to mask paths")
-            self._masks[class_name] = _load_mask((manifest_path.parent / raw_path).resolve(), size)
+            if Path(raw_path).is_absolute():
+                raise MaskAdapterError(f"Manifest mask path must be relative: {raw_path!r}")
+            candidate = (manifest_root / raw_path).resolve()
+            try:
+                candidate.relative_to(manifest_root)
+            except ValueError as exc:
+                raise MaskAdapterError(f"Manifest mask path escapes manifest directory: {raw_path!r}") from exc
+            self._masks[class_name] = _load_mask(candidate, size)
 
     @property
     def classes(self) -> tuple[str, ...]:
@@ -155,32 +172,36 @@ def _border_connected(mask: Image.Image) -> Image.Image:
             if 0 <= nx < width and 0 <= ny < height:
                 stack.append((nx, ny))
     result = Image.new("L", mask.size, 0)
-    result.putdata([255 if (x, y) in visited else 0 for y in range(height) for x in range(width)])
+    result.putdata(bytearray(255 if (x, y) in visited else 0 for y in range(height) for x in range(width)))
     return result
 
 
 def _specular_candidates(image: Image.Image) -> Image.Image:
-    labs = [rgb_to_lab(pixel) for pixel in _data(image)]
     mask = Image.new("L", image.size, 0)
-    values = [255 if lightness >= 78 and math.hypot(a, b) <= 60 else 0 for lightness, a, b in labs]
-    mask.putdata(values)
+    mask.putdata(bytearray(
+        255 if lightness >= 78 and math.hypot(a, b) <= 60 else 0
+        for lightness, a, b in (rgb_to_lab(pixel) for pixel in _pixel_data(image))
+    ))
     return mask.filter(ImageFilter.MaxFilter(3))
 
 
 def segment_by_color(request: MaskRequest, protected_masks: Mapping[str, Image.Image] | None = None) -> MaskResult:
     """Intersect Lab color seeds with protected semantic masks and safety gates."""
     with Image.open(request.image_path) as source:
-        image = ImageOps.exif_transpose(source).convert("RGB")
+        oriented = ImageOps.exif_transpose(source)
+        ensure_working_size(oriented.size, "mask image")
+        image = oriented.convert("RGB")
     target_lab = rgb_to_lab(hex_to_rgb(request.target_hex))
-    labs = [rgb_to_lab(pixel) for pixel in _data(image)]
     specular = _specular_candidates(image)
-    candidates = []
-    for lab in labs:
-        distance = _lab_distance(lab, target_lab)
-        in_lstar = request.lstar_tolerance is None or abs(lab[0] - target_lab[0]) <= request.lstar_tolerance
-        candidates.append(255 if distance <= request.lab_radius and in_lstar else 0)
     initial = Image.new("L", image.size)
-    initial.putdata(candidates)
+    def candidate_values():
+        for pixel in _pixel_data(image):
+            lab = rgb_to_lab(pixel)
+            distance = _lab_distance(lab, target_lab)
+            in_lstar = request.lstar_tolerance is None or abs(lab[0] - target_lab[0]) <= request.lstar_tolerance
+            yield 255 if distance <= request.lab_radius and in_lstar else 0
+
+    initial.putdata(bytearray(candidate_values()))
 
     protected = Image.new("L", image.size, 0)
     missing_protected: list[str] = []
@@ -199,17 +220,21 @@ def segment_by_color(request: MaskRequest, protected_masks: Mapping[str, Image.I
     safe = safe.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.MaxFilter(3))
     safe = _remove_small_components(safe, request.min_component_area)
 
-    active = sum(value >= 128 for value in _data(safe))
-    initial_count = sum(value >= 128 for value in _data(initial))
-    protected_count = sum(value >= 128 for value in _data(protected_overlap))
-    specular_count = sum(value >= 128 for value in _data(excluded_specular))
+    active = _count_active(safe)
+    initial_count = _count_active(initial)
+    protected_count = _count_active(protected_overlap)
+    specular_count = _count_active(excluded_specular)
     total = image.width * image.height
     coverage = active / total if total else 0
     protected_ratio = protected_count / initial_count if initial_count else 0
     specular_ratio = specular_count / initial_count if initial_count else 0
     reasons: list[str] = []
-    if missing_protected and request.safety_profile == "person":
+    if request.safety_profile == "person" and not request.protected_classes:
+        reasons.append("person safety profile requires protected_classes")
+    if missing_protected:
         reasons.append(f"missing protected semantic masks: {', '.join(missing_protected)}")
+    if request.safety_profile == "reflective" and not request.exclude_specular:
+        reasons.append("reflective safety profile requires exclude_specular=true")
     if coverage < request.min_coverage:
         reasons.append(f"active mask coverage {coverage:.4f} is below {request.min_coverage:.4f}")
     if coverage > request.max_coverage:
@@ -241,7 +266,7 @@ def segment_by_color(request: MaskRequest, protected_masks: Mapping[str, Image.I
             "protected_overlap_ratio": round(protected_ratio, 6),
             "excluded_specular_pixels": specular_count,
             "excluded_specular_ratio": round(specular_ratio, 6),
-            "reflection_candidates": sum(value >= 128 for value in _data(specular)),
+            "reflection_candidates": _count_active(specular),
         },
         provenance={
             "adapter": "color-threshold-lab",

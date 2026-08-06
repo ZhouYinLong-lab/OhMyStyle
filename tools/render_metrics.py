@@ -89,6 +89,23 @@ def _percentage_range(value: Any) -> tuple[float, float] | None:
     return float(match.group(1)) / 100.0, float(match.group(2)) / 100.0
 
 
+def _profile_data(runtime: dict[str, Any], profile: str) -> dict[str, Any]:
+    profiles = runtime["evaluation"].get("profiles", {})
+    if not isinstance(profiles, dict):
+        raise ValueError("evaluation.profiles must be an object")
+    if profiles:
+        if profile not in profiles:
+            available = ", ".join(sorted(str(name) for name in profiles))
+            raise ValueError(f"Unknown evaluation profile {profile!r}; available: {available}")
+        selected = profiles[profile]
+        if not isinstance(selected, dict):
+            raise ValueError(f"Evaluation profile {profile!r} must be an object")
+        return selected
+    if profile != "default":
+        raise ValueError(f"Unknown evaluation profile {profile!r}; this package only supports 'default'")
+    return {}
+
+
 def evaluate_image(
     package_path: Path,
     image_path: Path,
@@ -104,81 +121,108 @@ def evaluate_image(
         raise ValueError("dominant_rgb and counter_rgb must be supplied together")
     if dominant_rgb is None:
         pair = choose_pair(runtime, pair_id)
-        dominant = tuple(pair["dominant"]["rgb"])
-        counter = tuple(pair["counter"]["rgb"])
+        dominant = tuple(pair["dominant"]["rgb"]) if pair else None
+        counter = tuple(pair["counter"]["rgb"]) if pair else None
     else:
         pair = {"id": "custom", "dominant": {"rgb": list(dominant_rgb)}, "counter": {"rgb": list(counter_rgb)}}
         dominant = dominant_rgb
         counter = counter_rgb
     with Image.open(image_path) as opened:
-        image = ImageOps.exif_transpose(opened).convert("RGB")
+        image = ImageOps.exif_transpose(opened)
+        original_size = image.size
+        image.thumbnail((2048, 2048), Image.Resampling.BILINEAR)
+        image = image.convert("RGB")
         pixels = _pixels(image)
         mean_edge_delta, global_luma_std = _edge_delta(image)
 
-    dominant_pixels: list[tuple[int, int, int]] = []
-    counter_pixels: list[tuple[int, int, int]] = []
-    unassigned_high_chroma = 0
-    for pixel in pixels:
-        dominant_distance = _distance(pixel, dominant)
-        counter_distance = _distance(pixel, counter)
-        if min(dominant_distance, counter_distance) <= color_threshold:
-            if dominant_distance <= counter_distance:
-                dominant_pixels.append(pixel)
-            else:
-                counter_pixels.append(pixel)
-        elif _saturation(pixel) >= 0.48:
-            unassigned_high_chroma += 1
+    dominant_share: float | None = None
+    counter_share: float | None = None
+    pair_coverage: float | None = None
+    dominant_luma: float | None = None
+    counter_luma: float | None = None
+    luminance_delta: float | None = None
+    dominant_lstar: float | None = None
+    counter_lstar: float | None = None
+    lstar_delta: float | None = None
+    unassigned_high_chroma: int | None = None
+    if dominant is not None and counter is not None:
+        dominant_pixels: list[tuple[int, int, int]] = []
+        counter_pixels: list[tuple[int, int, int]] = []
+        unassigned_high_chroma = 0
+        for pixel in pixels:
+            dominant_distance = _distance(pixel, dominant)
+            counter_distance = _distance(pixel, counter)
+            if min(dominant_distance, counter_distance) <= color_threshold:
+                if dominant_distance <= counter_distance:
+                    dominant_pixels.append(pixel)
+                else:
+                    counter_pixels.append(pixel)
+            elif _saturation(pixel) >= 0.48:
+                unassigned_high_chroma += 1
 
-    total = max(len(pixels), 1)
-    dominant_share = len(dominant_pixels) / total
-    counter_share = len(counter_pixels) / total
-    pair_coverage = dominant_share + counter_share
-    dominant_luma = sum(_luminance(pixel) for pixel in dominant_pixels) / max(len(dominant_pixels), 1)
-    counter_luma = sum(_luminance(pixel) for pixel in counter_pixels) / max(len(counter_pixels), 1)
-    luminance_delta = abs(dominant_luma - counter_luma) if dominant_pixels and counter_pixels else 1.0
-    dominant_lstar = sum(_lstar(pixel) for pixel in dominant_pixels) / max(len(dominant_pixels), 1)
-    counter_lstar = sum(_lstar(pixel) for pixel in counter_pixels) / max(len(counter_pixels), 1)
-    lstar_delta = abs(dominant_lstar - counter_lstar) if dominant_pixels and counter_pixels else 100.0
+        total = max(len(pixels), 1)
+        dominant_share = len(dominant_pixels) / total
+        counter_share = len(counter_pixels) / total
+        pair_coverage = dominant_share + counter_share
+        dominant_luma = sum(_luminance(pixel) for pixel in dominant_pixels) / max(len(dominant_pixels), 1)
+        counter_luma = sum(_luminance(pixel) for pixel in counter_pixels) / max(len(counter_pixels), 1)
+        luminance_delta = abs(dominant_luma - counter_luma) if dominant_pixels and counter_pixels else 1.0
+        dominant_lstar = sum(_lstar(pixel) for pixel in dominant_pixels) / max(len(dominant_pixels), 1)
+        counter_lstar = sum(_lstar(pixel) for pixel in counter_pixels) / max(len(counter_pixels), 1)
+        lstar_delta = abs(dominant_lstar - counter_lstar) if dominant_pixels and counter_pixels else 100.0
 
-    profile_data = runtime["evaluation"].get("profiles", {}).get(profile, {})
+    profile_data = _profile_data(runtime, profile)
     lstar_limit = max_lstar_delta if max_lstar_delta is not None else profile_data.get("max_lstar_delta")
     area_rules = runtime["reproduction"].get("area_ratio", {})
     dominant_range = _percentage_range(area_rules.get("dominant_color", ""))
     counter_range = _percentage_range(area_rules.get("counter_color", ""))
     area_ratio_pass = True
-    if profile_data.get("enforce_area_ratio") and dominant_range and counter_range:
+    if pair and profile_data.get("enforce_area_ratio") and dominant_range and counter_range:
         area_ratio_pass = (
             dominant_range[0] <= dominant_share <= dominant_range[1]
             and counter_range[0] <= counter_share <= counter_range[1]
         )
-    checks = {
-        "pair_coverage": {
-            "value": round(pair_coverage, 4),
-            "minimum": profile_data.get("min_pair_coverage", 0.0),
-            "pass": pair_coverage >= float(profile_data.get("min_pair_coverage", 0.0)),
-        },
-        "unassigned_high_chroma": {
-            "value": round(unassigned_high_chroma / total, 4),
-            "maximum": profile_data.get("max_unassigned_high_chroma", 1.0),
-            "pass": unassigned_high_chroma / total <= float(profile_data.get("max_unassigned_high_chroma", 1.0)),
-        },
+    if pair:
+        total = max(len(pixels), 1)
+        checks = {
+            "pair_coverage": {
+                "value": round(pair_coverage or 0.0, 4),
+                "minimum": profile_data.get("min_pair_coverage", 0.0),
+                "pass": (pair_coverage or 0.0) >= float(profile_data.get("min_pair_coverage", 0.0)),
+            },
+            "unassigned_high_chroma": {
+                "value": round((unassigned_high_chroma or 0) / total, 4),
+                "maximum": profile_data.get("max_unassigned_high_chroma", 1.0),
+                "pass": (unassigned_high_chroma or 0) / total <= float(profile_data.get("max_unassigned_high_chroma", 1.0)),
+            },
+        }
+    else:
+        checks = {
+            "pair_coverage": {"value": None, "minimum": None, "pass": True, "applicable": False},
+            "unassigned_high_chroma": {"value": None, "maximum": None, "pass": True, "applicable": False},
+        }
+    checks.update({
         "area_ratio": {
-            "dominant_share": round(dominant_share, 4),
-            "counter_share": round(counter_share, 4),
+            "dominant_share": round(dominant_share, 4) if dominant_share is not None else None,
+            "counter_share": round(counter_share, 4) if counter_share is not None else None,
             "dominant_range": dominant_range,
             "counter_range": counter_range,
             "pass": area_ratio_pass,
+            "applicable": bool(pair and dominant_range and counter_range),
         },
         "luminance_delta": {
-            "value": round(luminance_delta, 4),
-            "maximum": profile_data.get("max_luminance_delta"),
-            "pass": profile_data.get("max_luminance_delta") is None
-            or luminance_delta <= float(profile_data["max_luminance_delta"]),
+            "value": round(luminance_delta, 4) if luminance_delta is not None else None,
+            "maximum": profile_data.get("max_luminance_delta") if pair else None,
+            "pass": True if not pair else profile_data.get("max_luminance_delta") is None
+            or (luminance_delta is not None and luminance_delta <= float(profile_data["max_luminance_delta"])),
+            "applicable": bool(pair),
         },
         "lstar_delta": {
-            "value": round(lstar_delta, 4),
-            "maximum": lstar_limit,
-            "pass": lstar_limit is None or lstar_delta <= float(lstar_limit),
+            "value": round(lstar_delta, 4) if lstar_delta is not None else None,
+            "maximum": lstar_limit if pair else None,
+            "pass": True if not pair else lstar_limit is None
+            or (lstar_delta is not None and lstar_delta <= float(lstar_limit)),
+            "applicable": bool(pair),
         },
         "mean_edge_delta": {
             "value": round(mean_edge_delta, 4),
@@ -186,26 +230,26 @@ def evaluate_image(
             "pass": profile_data.get("max_mean_edge_delta") is None
             or mean_edge_delta <= float(profile_data["max_mean_edge_delta"]),
         },
-    }
+    })
     return {
         "image": str(image_path.resolve()),
         "package": runtime["package"].get("id"),
-        "pair": pair["id"],
+        "pair": pair["id"] if pair else None,
         "profile": profile,
-        "image_size": list(image.size),
+        "image_size": list(original_size),
         "metrics": {
-            "dominant_share": round(dominant_share, 4),
-            "counter_share": round(counter_share, 4),
-            "pair_coverage": round(pair_coverage, 4),
-            "dominant_luminance": round(dominant_luma, 4),
-            "counter_luminance": round(counter_luma, 4),
-            "luminance_delta": round(luminance_delta, 4),
-            "dominant_lstar": round(dominant_lstar, 4),
-            "counter_lstar": round(counter_lstar, 4),
-            "lstar_delta": round(lstar_delta, 4),
+            "dominant_share": round(dominant_share, 4) if dominant_share is not None else None,
+            "counter_share": round(counter_share, 4) if counter_share is not None else None,
+            "pair_coverage": round(pair_coverage, 4) if pair_coverage is not None else None,
+            "dominant_luminance": round(dominant_luma, 4) if dominant_luma is not None else None,
+            "counter_luminance": round(counter_luma, 4) if counter_luma is not None else None,
+            "luminance_delta": round(luminance_delta, 4) if luminance_delta is not None else None,
+            "dominant_lstar": round(dominant_lstar, 4) if dominant_lstar is not None else None,
+            "counter_lstar": round(counter_lstar, 4) if counter_lstar is not None else None,
+            "lstar_delta": round(lstar_delta, 4) if lstar_delta is not None else None,
             "mean_edge_delta": round(mean_edge_delta, 4),
             "global_luminance_std": round(global_luma_std, 4),
-            "unassigned_high_chroma": round(unassigned_high_chroma / total, 4),
+            "unassigned_high_chroma": round((unassigned_high_chroma or 0) / max(len(pixels), 1), 4) if pair else None,
         },
         "checks": checks,
         "status": "pass" if all(item["pass"] for item in checks.values()) else "fail",

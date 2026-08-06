@@ -8,15 +8,32 @@ import re
 from pathlib import Path
 from typing import Any
 
-import yaml
+from safe_yaml import safe_load
 
 
 def load_yaml(path: Path) -> dict[str, Any]:
     with path.open(encoding="utf-8") as handle:
-        data = yaml.safe_load(handle)
+        data = safe_load(handle)
     if not isinstance(data, dict):
         raise ValueError(f"Expected a YAML object: {path}")
     return data
+
+
+def safe_package_file(root: Path, relative: str, *, label: str = "package file") -> Path:
+    """Resolve a package-relative file without allowing traversal or symlinks out."""
+    if not isinstance(relative, str) or not relative.strip():
+        raise ValueError(f"{label} must be a non-empty relative path")
+    if Path(relative).is_absolute():
+        raise ValueError(f"{label} must be relative: {relative!r}")
+    package_root = root.resolve()
+    candidate = (package_root / relative).resolve()
+    try:
+        candidate.relative_to(package_root)
+    except ValueError as exc:
+        raise ValueError(f"{label} escapes package root: {relative!r}") from exc
+    if not candidate.is_file():
+        raise FileNotFoundError(f"{label} does not exist: {candidate}")
+    return candidate
 
 
 def resolve_package(path: Path) -> Path:
@@ -30,12 +47,14 @@ def resolve_package(path: Path) -> Path:
 
 def load_package(path: Path) -> dict[str, Any]:
     root = resolve_package(path)
-    package = load_yaml(root / "package.yaml")
+    package = load_yaml(safe_package_file(root, "package.yaml", label="package manifest"))
     files = package.get("files", {})
+    if not isinstance(files, dict):
+        raise ValueError("package.files must be an object")
 
     def file_from(key: str, fallback: str) -> Path:
         relative = str(files.get(key, fallback))
-        return root / relative
+        return safe_package_file(root, relative, label=f"package files.{key}")
 
     palette_path = file_from("palette", "palette/palette.json")
     with palette_path.open(encoding="utf-8") as handle:
@@ -50,17 +69,26 @@ def load_package(path: Path) -> dict[str, Any]:
         "evaluation": load_yaml(file_from("evaluation", "evaluation.yaml")),
         "provenance": load_yaml(file_from("provenance", "provenance.yaml")),
         "palette": palette,
-        "base_prompt": (root / "prompts/base.txt").read_text(encoding="utf-8").strip(),
-        "negative_prompt": (root / "prompts/negative.txt").read_text(encoding="utf-8").strip(),
+        "base_prompt": safe_package_file(root, "prompts/base.txt", label="base prompt").read_text(encoding="utf-8").strip(),
+        "negative_prompt": safe_package_file(root, "prompts/negative.txt", label="negative prompt").read_text(encoding="utf-8").strip(),
     }
 
 
 def manifest_records(runtime: dict[str, Any]) -> list[dict[str, str]]:
     import csv
 
-    manifest = runtime["root"] / "references/manifest.csv"
+    manifest = safe_package_file(runtime["root"], "references/manifest.csv", label="reference manifest")
     with manifest.open(encoding="utf-8", newline="") as handle:
-        return [dict(row) for row in csv.DictReader(handle)]
+        rows = [dict(row) for row in csv.DictReader(handle)]
+    seen: set[str] = set()
+    for row in rows:
+        asset_id = row.get("asset_id", "").strip()
+        if not asset_id:
+            raise ValueError("Reference manifest contains a row without asset_id")
+        if asset_id in seen:
+            raise ValueError(f"Reference manifest contains duplicate asset_id: {asset_id}")
+        seen.add(asset_id)
+    return rows
 
 
 def choose_pair(runtime: dict[str, Any], pair_id: str | None = None) -> dict[str, Any] | None:
@@ -83,7 +111,13 @@ def select_references(
 ) -> list[dict[str, str]]:
     rows = {row.get("asset_id", ""): row for row in manifest_records(runtime)}
     selected: list[dict[str, str]] = []
-    selected_ids = set(str(item) for item in (pair or {}).get("reference_asset_ids", []))
+    raw_selected_ids = (pair or {}).get("reference_asset_ids", [])
+    if not isinstance(raw_selected_ids, list):
+        raise ValueError("reference_asset_ids must be a list")
+    selected_ids = set(str(item) for item in raw_selected_ids)
+    unknown_ids = sorted(selected_ids - set(rows))
+    if unknown_ids:
+        raise ValueError("Palette pair references unknown asset_id(s): " + ", ".join(unknown_ids))
 
     if reference_set in {"palette", "all"}:
         if selected_ids:
@@ -101,9 +135,7 @@ def select_references(
         relative = row.get("local_path", "").strip()
         if not relative or relative in seen:
             continue
-        asset = runtime["root"] / relative
-        if not asset.is_file():
-            raise FileNotFoundError(f"Manifest asset does not exist: {asset}")
+        asset = safe_package_file(runtime["root"], relative, label=f"manifest asset {row.get('asset_id', '')}")
         seen.add(relative)
         result.append(
             {
@@ -145,6 +177,8 @@ def compile_prompt(
         prompt = "\n".join(
             [
                 f"SUBJECT: {subject}",
+                "PACKAGE BASE PROMPT:",
+                base,
                 "STYLE TASK: Follow the declared package specification exactly; do not substitute an unrequested subject, medium, process, or visual motif.",
                 exact,
                 "MUST: preserve all declared visual relationships, hierarchy, materials, lighting, perspective, and background behavior.",

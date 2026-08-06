@@ -10,6 +10,8 @@ from typing import Any
 
 import yaml
 
+from safe_yaml import safe_load
+
 
 IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".tif", ".tiff"}
 
@@ -29,7 +31,7 @@ def count_images(path: Path) -> int:
 
 def load_package(path: Path, repo_root: Path) -> dict[str, Any]:
     with (path / "style.yaml").open(encoding="utf-8") as handle:
-        style = yaml.safe_load(handle)
+        style = safe_load(handle)
     identity = style.get("visual_identity", {})
     return {
         "id": style["id"],

@@ -12,6 +12,7 @@ from typing import Any
 
 try:
     import yaml
+    from safe_yaml import safe_load
     from jsonschema import Draft202012Validator
 except ImportError as exc:  # pragma: no cover - exercised in clean environments
     print(
@@ -66,7 +67,7 @@ class Errors:
 def load_yaml(path: Path, errors: Errors) -> Any:
     try:
         with path.open("r", encoding="utf-8") as handle:
-            return yaml.safe_load(handle)
+            return safe_load(handle)
     except (OSError, yaml.YAMLError) as exc:
         errors.add(f"{path}: invalid YAML or unreadable file: {exc}")
         return None

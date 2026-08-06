@@ -5,6 +5,7 @@ import tempfile
 import unittest
 import importlib.util
 import hashlib
+import io
 import json
 from pathlib import Path
 
@@ -29,7 +30,9 @@ _recolor_module = importlib.util.module_from_spec(_recolor_spec)
 _recolor_spec.loader.exec_module(_recolor_module)
 rgb_to_lab = _recolor_module.rgb_to_lab
 lab_to_rgb = _recolor_module.lab_to_rgb
-from style_runtime import compile_job  # noqa: E402
+from style_runtime import compile_job, load_package, manifest_records, select_references  # noqa: E402
+from safe_yaml import safe_load  # noqa: E402
+from image_limits import ensure_working_size  # noqa: E402
 
 
 PACKAGE = ROOT / "style-packages/presets/high-chroma-color-pairing"
@@ -101,6 +104,28 @@ class StyleRuntimeTests(unittest.TestCase):
             self.assertNotIn("flower arrangement", job["prompt"].lower())
             self.assertNotIn("blue-orange", job["prompt"].lower())
 
+    def test_weak_profile_preserves_package_base_prompt(self) -> None:
+        runtime = load_package(ROOT / "style-packages/artists/anna-ancher")
+        job = compile_job(ROOT / "style-packages/artists/anna-ancher", "a quiet kitchen", profile="weak")
+        self.assertIn("Create a quiet oil painting of a quiet kitchen", job["prompt"])
+        self.assertIn("ordinary, unperformed body language", job["prompt"])
+
+    def test_non_pair_package_evaluation_is_supported(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            image_path = Path(directory) / "render.png"
+            Image.new("RGB", (32, 32), (120, 120, 120)).save(image_path)
+            result = evaluate_image(ROOT / "style-packages/artists/anna-ancher", image_path)
+        self.assertIsNone(result["pair"])
+        self.assertIsNone(result["metrics"]["pair_coverage"])
+        self.assertEqual(result["status"], "pass")
+
+    def test_unknown_evaluation_profile_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            image_path = Path(directory) / "render.png"
+            Image.new("RGB", (32, 32), (120, 120, 120)).save(image_path)
+            with self.assertRaises(ValueError):
+                evaluate_image(PACKAGE, image_path, profile="typo")
+
     def test_evaluator_detects_pair_and_luminance_failure(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             image_path = Path(directory) / "same-luminance-test.png"
@@ -141,6 +166,22 @@ class StyleRuntimeTests(unittest.TestCase):
             )
         self.assertEqual(result.status, "rejected")
         self.assertIn("missing protected semantic masks", result.reasons[0])
+
+    def test_generic_adapter_requires_declared_protected_masks(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            image_path = Path(directory) / "render.png"
+            Image.new("RGB", (64, 64), (0, 112, 252)).save(image_path)
+            result = segment_by_color(
+                MaskRequest(
+                    image_path=image_path,
+                    target_hex="#0070FC",
+                    safety_profile="generic",
+                    protected_classes=("skin",),
+                    min_component_area=4,
+                )
+            )
+        self.assertEqual(result.status, "rejected")
+        self.assertTrue(any(reason.startswith("missing protected semantic masks") for reason in result.reasons))
 
     def test_person_adapter_excludes_protected_overlap(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -218,6 +259,59 @@ class StyleRuntimeTests(unittest.TestCase):
             manifest.write_text(json.dumps({"image_sha256": "wrong", "classes": {"skin": "skin.png"}}), encoding="utf-8")
             with self.assertRaises(MaskAdapterError):
                 FileSegmentationAdapter(manifest, image_path)
+
+    def test_manifest_requires_hash_and_rejects_path_traversal(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / "package"
+            root.mkdir()
+            outside = Path(directory) / "outside.png"
+            Image.new("L", (8, 8), 0).save(outside)
+            image_path = root / "render.png"
+            Image.new("RGB", (8, 8), (0, 0, 0)).save(image_path)
+            manifest = root / "manifest.json"
+            manifest.write_text(json.dumps({"classes": {"skin": "../outside.png"}}), encoding="utf-8")
+            with self.assertRaises(MaskAdapterError):
+                FileSegmentationAdapter(manifest, image_path)
+
+            manifest.write_text(
+                json.dumps({
+                    "image_sha256": hashlib.sha256(image_path.read_bytes()).hexdigest(),
+                    "classes": {"skin": "../outside.png"},
+                }),
+                encoding="utf-8",
+            )
+            with self.assertRaises(MaskAdapterError):
+                FileSegmentationAdapter(manifest, image_path)
+
+    def test_duplicate_yaml_keys_are_rejected(self) -> None:
+        with self.assertRaises(Exception):
+            safe_load(io.StringIO("masking:\n  required: true\n  required: false\n"))
+
+    def test_manifest_duplicates_and_unknown_references_are_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "references").mkdir()
+            manifest = root / "references/manifest.csv"
+            manifest.write_text(
+                "asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes\n"
+                "same,,One,Creator,2020,https://example.com,CC0,Creator,details,\n"
+                "same,,Two,Creator,2021,https://example.com,CC0,Creator,details,\n",
+                encoding="utf-8",
+            )
+            with self.assertRaises(ValueError):
+                manifest_records({"root": root})
+
+            manifest.write_text(
+                "asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes\n"
+                "known,,One,Creator,2020,https://example.com,CC0,Creator,details,\n",
+                encoding="utf-8",
+            )
+            with self.assertRaises(ValueError):
+                select_references({"root": root}, {"reference_asset_ids": ["unknown"]})
+
+    def test_image_processing_limit_rejects_unsafe_input_size(self) -> None:
+        with self.assertRaises(ValueError):
+            ensure_working_size((10_000, 10_000), "test image")
 
 
 if __name__ == "__main__":
