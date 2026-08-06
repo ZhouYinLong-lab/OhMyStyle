@@ -1,0 +1,69 @@
+# Style Package Specification
+
+OhMyStyle stores a style as a reproducible package rather than as a prompt and
+some images. A package separates four responsibilities:
+
+1. `style.yaml` defines the visual identity and machine-readable constraints.
+2. References and examples show what the style is, including accepted and
+   rejected results.
+3. Technique and prompt files describe how to reproduce the style.
+4. Provenance and license files explain where every inherited or external asset
+   came from and whether it can be redistributed.
+
+## Package layout
+
+```text
+styles/<style-id>/
+├── README.md
+├── style.yaml
+├── references/
+│   ├── primary/
+│   ├── secondary/
+│   └── details/
+├── palette/
+│   ├── palette.json
+│   └── swatches.png                 # optional; only when licensed
+├── composition/
+│   ├── composition.md
+│   └── diagrams/
+├── technique/
+│   ├── materials.md
+│   ├── process.md
+│   └── parameters.yaml
+├── prompts/
+│   ├── base.txt
+│   ├── variations.txt
+│   └── negative.txt
+├── examples/
+│   ├── successful/
+│   └── rejected/
+├── metadata/
+│   ├── sources.csv
+│   └── license.md
+├── provenance.yaml
+└── version.md
+```
+
+The reference implementation is `styles/quiet-documentary/`. It intentionally
+contains no unverified reference or example images. A package may add images
+only after their source, creator, license, attribution, and redistribution
+status have been recorded in `metadata/sources.csv` and `provenance.yaml`.
+
+## Compatibility with the original collection
+
+The existing `styles/*/style.json` folders remain supported as the legacy
+AI-Visual-Prompt-Cookbook format. They are not silently converted because the
+new package format has a different purpose and adds provenance, technical
+parameters, and evaluation evidence. New packages should use `style.yaml` and
+the schema in [`schema/style.schema.json`](../schema/style.schema.json).
+
+## Versioning
+
+Package versions use `MAJOR.MINOR.PATCH`:
+
+- major: the definition or interpretation changes materially;
+- minor: new dimensions, examples, or compatible metadata are added;
+- patch: wording, ranges, or source metadata are corrected.
+
+Use `tools/validate.py` before publishing and `tools/build-gallery.py` to
+produce a machine-readable package index.

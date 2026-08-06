@@ -1,0 +1,31 @@
+capture:
+  focal_length_mm:
+    preferred: 50
+    acceptable: [35, 50]
+  aperture:
+    preferred: "f/4"
+    acceptable: ["f/2.8", "f/4", "f/5.6"]
+  shutter_style: natural_motion
+  iso_style: moderate_grain
+  white_balance_k:
+    preferred: 5200
+    range: [4600, 5800]
+  exposure_bias_ev:
+    preferred: -0.2
+    range: [-0.5, 0.2]
+
+grading:
+  exposure: -0.2
+  contrast: -15
+  highlights: -25
+  shadows: 12
+  saturation: -18
+  sharpening: restrained
+  grain:
+    amount: 15
+    size: 22
+    roughness: 40
+
+interpretation: >-
+  These values are reproducibility anchors and should be adapted to the scene,
+  sensor, lens, and lighting conditions rather than copied mechanically.

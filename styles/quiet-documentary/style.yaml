@@ -1,0 +1,85 @@
+id: quiet-documentary
+name: Quiet Documentary
+version: 0.1.0
+type: photography
+
+summary: >-
+  A low-saturation documentary photography direction using soft available
+  light, observational distance, restrained framing, and modest grain to make
+  ordinary interiors, people, and objects feel present rather than staged.
+
+visual_identity:
+  mood:
+    - quiet
+    - introspective
+    - natural
+    - restrained
+  color:
+    saturation: low
+    contrast: low_to_moderate
+    temperature: slightly_cool
+    dominant_colors:
+      - "#B8B3A8"
+      - "#737875"
+      - "#D7D2C8"
+      - "#4D5351"
+  lighting:
+    source: natural_available_light
+    quality: soft_diffused
+    direction:
+      - side_light
+      - window_light
+    avoid:
+      - hard_flash
+      - dramatic_rim_light
+  composition:
+    framing:
+      - medium_shot
+      - environmental_portrait
+      - quiet_still_life
+    principles:
+      - negative_space
+      - asymmetry
+      - observational_distance
+    camera_angle:
+      - eye_level
+      - slightly_high
+  texture:
+    sharpness: moderate
+    grain: subtle_film_grain
+    surface: natural_and_unretouched
+
+technical:
+  parameters_file: technique/parameters.yaml
+  lens_equivalent_mm:
+    preferred: [35, 50]
+    acceptable: [28, 85]
+  aperture:
+    preferred: ["f/2.8", "f/4", "f/5.6"]
+  depth_of_field: moderate
+  exposure: slightly_underexposed
+  reproducibility_note: >-
+    These values describe a useful direction, not fixed requirements for every
+    image. Preserve the visual relationships when the subject or camera changes.
+
+avoid:
+  - oversaturation
+  - excessive_hdr
+  - plastic_skin
+  - extreme_bokeh
+  - centered_commercial_composition
+  - hard_on_camera_flash
+
+files:
+  readme: README.md
+  style: style.yaml
+  references: references
+  palette: palette/palette.json
+  composition: composition/composition.md
+  technique: technique
+  prompts: prompts
+  accepted_examples: examples/successful
+  rejected_examples: examples/rejected
+  provenance: provenance.yaml
+  sources: metadata/sources.csv
+  version: version.md

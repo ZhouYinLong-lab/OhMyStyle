@@ -309,7 +309,13 @@ def validate_style_folder(folder: Path, errors: ErrorCollector) -> None:
 
 def iter_style_folders(path: Path) -> list[Path]:
     if (path / "styles").is_dir():
-        return sorted(child for child in (path / "styles").iterdir() if child.is_dir())
+        # Style Packages use style.yaml and may coexist with legacy style.json
+        # folders under styles/. Keep this validator scoped to the legacy format.
+        return sorted(
+            child
+            for child in (path / "styles").iterdir()
+            if child.is_dir() and (child / "style.json").is_file()
+        )
     if (path / "style.json").exists():
         return [path]
     raise SystemExit(f"No styles directory or style.json found at {path}")

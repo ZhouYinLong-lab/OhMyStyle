@@ -1,0 +1,14 @@
+Create a {ASPECT_RATIO} photograph in the Quiet Documentary style.
+
+Subject: {SUBJECT}
+Action or state: {SUBJECT_ACTION}
+Location: {LOCATION}
+Background elements: {BACKGROUND_ELEMENTS}
+Wardrobe or material direction: {WARDROBE_STYLE}
+
+Use soft available light, slightly cool low-saturation neutrals, low to moderate
+contrast, eye-level or slightly high camera position, a 35–50 mm equivalent
+viewpoint, moderate depth of field, asymmetrical framing, and one deliberate
+area of negative space. Preserve natural skin, surface texture, believable
+shadows, and ordinary environmental details. The result should feel observed,
+quiet, and unforced rather than staged as a commercial campaign.

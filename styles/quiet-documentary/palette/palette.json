@@ -1,0 +1,31 @@
+{
+  "name": "Quiet Documentary Neutrals",
+  "version": "0.1.0",
+  "colors": [
+    {
+      "name": "Warm Stone",
+      "hex": "#B8B3A8",
+      "role": "highlight"
+    },
+    {
+      "name": "Dusty Sage",
+      "hex": "#737875",
+      "role": "mid-tone"
+    },
+    {
+      "name": "Paper Light",
+      "hex": "#D7D2C8",
+      "role": "negative-space"
+    },
+    {
+      "name": "Window Shadow",
+      "hex": "#4D5351",
+      "role": "shadow"
+    }
+  ],
+  "usage": {
+    "saturation": "Keep colors muted and let one naturally occurring accent remain visible.",
+    "contrast": "Protect shadow detail; avoid clipping either end of the tonal range.",
+    "temperature": "Bias neutrals slightly cool while retaining believable skin and wood tones."
+  }
+}

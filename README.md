@@ -199,6 +199,22 @@ Validate the library with:
 python3 scripts/validate-style-json.py .
 ```
 
+## Reproducible Style Packages
+
+For photography, painting, and other visual systems that need references,
+technical parameters, provenance, and evaluation evidence, use the expanded
+[Style Package specification](docs/STYLE-PACKAGE-SPEC.md). The first package is
+[Quiet Documentary](styles/quiet-documentary/README.md).
+
+```bash
+python3 tools/validate.py
+python3 tools/build-gallery.py --output docs/style-packages.json
+python3 tools/compare-style.py styles/quiet-documentary styles/quiet-documentary
+```
+
+The existing `style.json` collection remains supported as the legacy prompt
+format. The two formats can coexist while packages are added and reviewed.
+
 
 ## All Styles
 

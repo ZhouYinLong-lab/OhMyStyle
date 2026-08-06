@@ -1,0 +1,4 @@
+path,kind,title,creator,source_url,license,attribution,notes
+references/primary/README.md,documentation,Package reference policy,OhMyStyle,,MIT,OhMyStyle,No external reference image is bundled.
+examples/successful/README.md,documentation,Accepted example policy,OhMyStyle,,MIT,OhMyStyle,No example image is bundled.
+examples/rejected/README.md,documentation,Rejected example policy,OhMyStyle,,MIT,OhMyStyle,No example image is bundled.

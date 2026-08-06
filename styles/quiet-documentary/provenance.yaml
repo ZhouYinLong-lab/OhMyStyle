@@ -1,0 +1,35 @@
+package_id: quiet-documentary
+package_version: 0.1.0
+curation_status: initial_metadata_only
+
+derived_from: []
+
+scope:
+  authored_material: >-
+    The package definition, writing, palette, prompts, and acceptance criteria
+    in this directory were authored for OhMyStyle.
+  external_material: >-
+    No external raster reference or example image is included in this initial
+    package.
+
+assets:
+  - path: style.yaml
+    role: style_definition
+    source: OhMyStyle
+    license: repository_license
+    attribution: OhMyStyle maintainers
+  - path: palette/palette.json
+    role: palette_definition
+    source: OhMyStyle
+    license: repository_license
+    attribution: OhMyStyle maintainers
+  - path: prompts
+    role: reproduction_prompts
+    source: OhMyStyle
+    license: repository_license
+    attribution: OhMyStyle maintainers
+
+review:
+  reviewed_at: 2026-08-06
+  reviewer: OhMyStyle maintainers
+  next_review: Add provenance rows before committing any external asset.

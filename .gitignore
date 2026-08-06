@@ -1,0 +1,9 @@
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+
+# Local tooling and editor state
+.venv/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
