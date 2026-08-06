@@ -30,7 +30,38 @@
     },
     "constraints": {
       "type": "object",
-      "additionalProperties": true
+      "additionalProperties": true,
+      "properties": {
+        "masking": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "required": {"type": "boolean"},
+            "strategy": {"type": "string", "enum": ["color_threshold", "color_threshold_plus_protected_classes"]},
+            "adapter": {"type": "string"},
+            "targets": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["id", "target_hex", "role", "safety_profile"],
+                "properties": {
+                  "id": {"type": "string"},
+                  "target_hex": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+                  "role": {"type": "string", "enum": ["subject", "background", "product"]},
+                  "safety_profile": {"type": "string", "enum": ["generic", "person", "reflective"]},
+                  "protected_classes": {"type": "array", "items": {"type": "string"}},
+                  "lab_radius": {"type": "number", "exclusiveMinimum": 0},
+                  "lstar_tolerance": {"type": "number", "minimum": 0},
+                  "exclude_specular": {"type": "boolean"},
+                  "min_component_area": {"type": "integer", "minimum": 1}
+                }
+              }
+            },
+            "fail_closed": {"type": "boolean"}
+          }
+        }
+      }
     }
   }
 }

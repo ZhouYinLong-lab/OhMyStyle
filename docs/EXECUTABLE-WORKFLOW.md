@@ -122,3 +122,14 @@ The adapter may shorten or reorder language for a provider, but it must not
 silently remove a hard constraint. Provider-specific API calls are intentionally
 not part of the baseline tools so the repository remains usable with strong,
 weak, local, and hosted models.
+
+## Automatic masks
+
+Tasks that declare `constraints.masking.required: true` are forced into the
+deterministic postprocess path. A provider-specific segmentation model exports
+same-image semantic masks through the manifest contract documented in
+`docs/MASK-ADAPTERS.md`; `tools/mask-from-color.py` then intersects those masks
+with the target CIELAB color. Person tasks protect skin, face, hair, eyes,
+lips, hands, jewelry, and glasses. Reflective-product tasks remove highlight
+candidates and keep a separate reflection mask. Missing classes, hash mismatch,
+unsafe overlap, or insufficient material coverage fail closed before recolor.

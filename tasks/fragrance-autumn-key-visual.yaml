@@ -32,3 +32,18 @@ constraints:
     no_cyberpunk: true
   print_texture:
     max_strength: 0.03
+  masking:
+    required: true
+    strategy: color_threshold_plus_protected_classes
+    adapter: file-segmentation-manifest
+    fail_closed: true
+    targets:
+      - id: perfume-bottle
+        target_hex: "#FF770F"
+        role: product
+        safety_profile: reflective
+        protected_classes: [skin, hands, label, cap]
+        lab_radius: 30
+        lstar_tolerance: 24
+        exclude_specular: true
+        min_component_area: 32

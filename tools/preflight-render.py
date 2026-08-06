@@ -52,6 +52,8 @@ def build_plan(task: dict[str, Any]) -> dict[str, Any]:
     hard_luminance = max_delta is not None
     crop_targets = task.get("output", {}).get("target_aspects", [])
     crop_safe = bool(task.get("output", {}).get("safe_zone")) or len(crop_targets) > 1
+    masking = constraints.get("masking", {})
+    masking_targets = masking.get("targets", []) if isinstance(masking, dict) else []
 
     warnings: list[str] = []
     color_values = list(colors.values())
@@ -64,13 +66,23 @@ def build_plan(task: dict[str, Any]) -> dict[str, Any]:
         actual_delta = abs(color_values[0]["lstar"] - color_values[1]["lstar"])
         if actual_delta > float(max_delta):
             warnings.append(f"declared colors differ by L*={actual_delta:.3f}, above max_delta={max_delta}")
+    if masking.get("required"):
+        for target in masking_targets:
+            profile = target.get("safety_profile")
+            protected = target.get("protected_classes", [])
+            if profile == "person" and not protected:
+                warnings.append(f"mask target {target.get('id', '<unnamed>')} uses person safety_profile without protected_classes")
+            if profile == "reflective" and target.get("exclude_specular") is not True:
+                warnings.append(f"mask target {target.get('id', '<unnamed>')} must set exclude_specular=true for reflective materials")
 
-    needs_deterministic = exact_colors or uniform_background or hard_luminance
+    requires_masking = bool(masking.get("required"))
+    needs_deterministic = exact_colors or uniform_background or hard_luminance or requires_masking
     if needs_deterministic:
         strategy = "hybrid_model_plus_deterministic_postprocess"
         model_only_allowed = False
         postprocess = [
-            "obtain_or_generate_subject_and_background_masks",
+            "run the declared model adapter to export same-image semantic masks",
+            "run tools/mask-from-color.py with the target Lab color and protected classes",
             "apply_exact_background_fill where uniformity is required",
             "run tools/recolor-lab.py on each constrained region with an explicit mask",
             "run evaluate-render.py before human review",
@@ -89,6 +101,10 @@ def build_plan(task: dict[str, Any]) -> dict[str, Any]:
         hard_requirements.append("Measure border-to-center background variance; reject gradients and vignettes.")
     if crop_safe:
         hard_requirements.append("Keep all critical objects inside the declared safe zone for every target aspect.")
+    if masking.get("required"):
+        hard_requirements.append("Do not recolor until the model-mask manifest hash matches the render and all protected classes are present.")
+        if masking.get("fail_closed", True):
+            hard_requirements.append("Reject masks with protected-region overlap, unsafe reflection loss, or insufficient active coverage.")
 
     return {
         "schema_version": "0.1.0",
@@ -100,6 +116,15 @@ def build_plan(task: dict[str, Any]) -> dict[str, Any]:
         "model_only_allowed": model_only_allowed,
         "hard_requirements": hard_requirements,
         "postprocess": postprocess,
+        "masking": {
+            "required": bool(masking.get("required", needs_deterministic)),
+            "strategy": masking.get("strategy", "color_threshold_plus_protected_classes" if needs_deterministic else "color_threshold"),
+            "adapter": masking.get("adapter", "file-segmentation-manifest"),
+            "fail_closed": bool(masking.get("fail_closed", True)),
+            "targets": masking_targets,
+            "protected_classes": sorted({name for target in masking_targets for name in target.get("protected_classes", [])}),
+            "status": "adapter_manifest_required" if masking_targets else ("required_for_deterministic_postprocess" if needs_deterministic else "optional"),
+        },
         "warnings": warnings,
         "status": "blocked_until_resolved" if warnings else "ready_for_generation",
         "references": task.get("references", {"mode": "none"}),

@@ -30,3 +30,18 @@ constraints:
   generation:
     no_rim_light: true
     no_global_color_grade: true
+  masking:
+    required: true
+    strategy: color_threshold_plus_protected_classes
+    adapter: file-segmentation-manifest
+    fail_closed: true
+    targets:
+      - id: shirt
+        target_hex: "#0070FC"
+        role: subject
+        safety_profile: person
+        protected_classes: [skin, face, hair, eyes, lips, hands, jewelry, glasses]
+        lab_radius: 26
+        lstar_tolerance: 18
+        exclude_specular: true
+        min_component_area: 128
