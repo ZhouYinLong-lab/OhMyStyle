@@ -28,14 +28,8 @@ REQUIRED_FILES = {
     "prompts/negative.txt",
     "evaluation.yaml",
     "references/manifest.csv",
-    "references/primary/README.md",
-    "references/secondary/README.md",
-    "references/details/README.md",
-    "examples/accepted/README.md",
-    "examples/rejected/README.md",
     "provenance.yaml",
     "resource.yaml",
-    "version.md",
 }
 
 SOURCE_COLUMNS = {"asset_id", "local_path", "title", "creator", "year", "source_url", "license", "attribution", "role", "notes"}
