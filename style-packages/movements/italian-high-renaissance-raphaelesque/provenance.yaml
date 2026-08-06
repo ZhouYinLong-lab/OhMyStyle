@@ -1,14 +1,14 @@
 package_id: italian-high-renaissance-raphaelesque
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: research_scaffold
 source_policy: External works are link-only unless reproduction rights are explicitly verified.
 sources:
   - url: https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html
     authority: Vatican Museums
-    supports: subject, architecture, figures, location, and Raphael attribution
+    supports: work identity, subject, architecture, figures, location, and Raphael attribution
     accessed: 2026-08-06
   - url: https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/stanza-della-segnatura.html
     authority: Vatican Museums
     supports: Room of the Segnatura chronology and High Renaissance context
     accessed: 2026-08-06
-attribution: Historical movement and work description; no museum or artist endorsement is claimed.
+attribution: The movement package is a structured interpretation; the cited fresco is a work-level reference, not a package template.

@@ -9,6 +9,8 @@ entities:
   movements:
     - neue-sachlichkeit
     - italian-high-renaissance-raphaelesque
+  works:
+    - raphael-school-of-athens
   periods:
     - ancient-greek
   schools:

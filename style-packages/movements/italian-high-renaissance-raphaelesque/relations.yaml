@@ -2,20 +2,19 @@ related_movements:
   - early-italian-renaissance
   - italian-mannerism
   - baroque_classicism
-related_systems:
+related_practices:
+  - disegno
+  - cartoon preparation
+  - fresco painting
   - humanist allegory
-  - architectural perspective
-  - monumental fresco
-  - classical antiquity revival
-representative_anchor:
-  title: The School of Athens
-  artist: Raphael
-  location: Room of the Segnatura, Vatican Museums
-  date: 1508-1511
+work_level_reference:
+  id: raphael-school-of-athens
+  relation: representative case of a monumental intellectual fresco
+  not_definition: Its architecture and figure arrangement are not package invariants.
 transition_notes:
-  - later Mannerism stretches proportion and destabilizes balance
-  - Baroque expands movement, theatrical light, and emotional pressure
+  - Mannerism often stretches proportion and unsettles the calm balance.
+  - Baroque increases movement, theatrical light, and emotional pressure.
 not_equivalent_to:
   - ancient Greek art itself
   - generic neoclassicism
-  - fantasy temple concept art
+  - a replica of The School of Athens

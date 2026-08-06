@@ -1,0 +1,11 @@
+id: raphael-school-of-athens
+name: The School of Athens
+entity_type: artwork
+artist: Raphael
+date: 1508-1511
+medium: fresco
+location: Stanza della Segnatura, Vatican Museums
+movement: italian-high-renaissance
+role: work_level_reference_anchor
+scope_note: This record describes one work and must not be used as a fixed composition template for the whole movement.
+source: https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html

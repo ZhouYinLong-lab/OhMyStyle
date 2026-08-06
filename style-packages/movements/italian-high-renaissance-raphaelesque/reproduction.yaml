@@ -1,23 +1,23 @@
 base_prompt_mode: anonymous_visual_signature
 subject_direction:
-  - choose an unnamed gathering of teachers, students, or thinkers discussing one idea
-  - place two central figures beneath the vanishing point without naming them
-  - make each secondary group perform a distinct intellectual action
-  - keep the scene humane, calm, and socially legible
-architecture:
-  - monumental symmetrical interior
-  - coffered barrel vault and repeated arches
-  - distant daylight opening aligned to the central axis
-  - broad staircase or platform separating figure groups
+  - choose one subject: portrait, devotional scene, myth, civic allegory, landscape, or domestic narrative
+  - let the subject decide whether the image needs one figure, a small group, or a crowd
+  - give each figure a readable action and a stable physical relationship to the others
+drawing:
+  - begin from proportion and weight, not surface effects
+  - use calm gestures and drapery that follows the body
+space:
+  - use overlapping forms and receding planes first
+  - add architecture only when it belongs to the subject
+  - use one-point perspective only when the scene calls for it
 medium:
-  support: large wall fresco
-  mark: matte mineral pigment absorbed into plaster, subtle giornata variation
-  finish: aged but luminous plaster surface
-camera_or_view:
-  - frontal wall elevation
-  - centered architectural view
-  - enough distance to read the total composition and enough detail to inspect gestures
+  support: fresco, tempera panel, or preparatory drawing
+  mark: clear underdrawing, thin layered color, restrained plaster or gesso variation
+  finish: matte, luminous, and materially quiet
+color_and_light:
+  - use warm earths, muted blues, reds, greens, and pale stone
+  - keep shadows open enough to read anatomy and expression
 negative_constraints:
-  - no exact historical composition
-  - no named philosophers, artist, or copied figures
-  - no modern text, logo, watermark, or cinematic lens effects
+  - do not reuse the arrangement of The School of Athens
+  - do not insert a mandatory classical hall or central pair
+  - no modern text, logo, watermark, glossy CGI, or cinematic lens effects

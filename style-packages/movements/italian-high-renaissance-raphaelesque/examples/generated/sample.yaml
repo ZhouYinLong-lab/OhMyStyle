@@ -5,4 +5,4 @@ generator: OpenAI built-in image generation
 prompt_mode: anonymous_visual_signature
 prompt_file: ../../prompts/base.txt
 rights: generated_sample_not_historical_reference
-review_notes: Compare one-point perspective, group equilibrium, intellectual gestures, and fresco materiality.
+review_notes: Deliberately tests a non-architectural small narrative with landscape depth, proportion, calm gestures, and mineral panel color.

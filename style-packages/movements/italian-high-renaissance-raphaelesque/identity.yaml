@@ -1,22 +1,28 @@
-canonical_name: Italian High Renaissance / Raphaelesque classical fresco
+canonical_name: Italian High Renaissance
 aliases:
   - High Renaissance classicism
-  - Raphael's Roman fresco language
-  - School of Athens visual system
-period: c. 1508-1511 for the Room of the Segnatura anchor
-region: Rome, Papal States
-entity_type: art_movement_anchor
+  - central Italian Renaissance painting
+period: c. 1490-1527
+region: Florence, Rome, and central Italy
+entity_type: art_movement
 mediums:
-  - buon fresco
+  - fresco
+  - panel painting
   - preparatory cartoon
-  - architectural illusionism
+  - drawing
 historical_context:
-  - papal patronage
+  - papal and court patronage
   - humanist education
   - renewed study of classical antiquity
-  - Roman monumental architecture
+  - workshop practice based on drawing and cartoons
 subject_matter:
-  - philosophy and rational inquiry
-  - assembled thinkers and teachers
-  - geometry, astronomy, rhetoric, and ethics
-  - civic-intellectual community
+  - sacred narrative
+  - portraiture
+  - mythological narrative
+  - civic and intellectual allegory
+  - landscape and domestic observation
+work_level_reference:
+  title: The School of Athens
+  artist: Raphael
+  date: 1508-1511
+  role: one representative fresco, not a movement definition

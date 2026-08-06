@@ -1,23 +1,24 @@
 package_id: italian-high-renaissance-raphaelesque
 invariants:
-  - id: architectural_perspective
+  - id: drawing_and_proportion
     weight: 3
-    test: A central vanishing point organizes vault, arches, columns, and floor.
-  - id: compositional_equilibrium
+    test: Figures have stable anatomy, weight, joints, and deliberate contours.
+  - id: subject_driven_composition
     weight: 3
-    test: Left and right groups balance around a clear central axis.
-  - id: intellectual_gesture
+    test: Arrangement follows the chosen subject instead of a repeated famous layout.
+  - id: coherent_space
     weight: 2
-    test: Gestures and props communicate discussion, teaching, reading, or measurement.
-  - id: fresco_material
+    test: Depth is consistent through overlap, receding planes, or appropriate perspective.
+  - id: open_modeling
     weight: 2
-    test: The image reads as mineral pigment integrated into aged plaster.
-  - id: high_renaissance_calm
+    test: Light describes volume without black theatrical shadow.
+  - id: painted_material
     weight: 2
-    test: The scene is lucid and monumental rather than chaotic or theatrical.
+    test: Color and surface read as fresco, tempera, or drawing rather than CGI.
 rejections:
-  - exact replica of The School of Athens
-  - generic Greek temple fantasy
-  - baroque action composition
-  - modern classroom scene
+  - School of Athens replica or near-replica
+  - forced symmetrical hall
+  - forced central pair
+  - generic ancient-world fantasy
+  - baroque or cinematic drama
 minimum_score: 9

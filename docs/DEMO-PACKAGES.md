@@ -8,7 +8,7 @@ direction:
 | Artist | [Anna Ancher](../style-packages/artists/anna-ancher/) | Northern light, domestic interiors, restrained color planes |
 | Photographer | [Masahisa Fukase](../style-packages/photographers/masahisa-fukase/) | Serial autobiography, intimacy, recurring motifs, psychological distance |
 | Movement | [Neue Sachlichkeit](../style-packages/movements/neue-sachlichkeit/) | Matter-of-fact realism, social typology, precise surfaces |
-| Movement anchor | [High Renaissance Classical Fresco](../style-packages/movements/italian-high-renaissance-raphaelesque/) | Raphael-associated classical architecture, balanced groups, humanist fresco |
+| Movement | [Italian High Renaissance](../style-packages/movements/italian-high-renaissance-raphaelesque/) | Drawing, proportion, clear space, calm narrative action, controlled color |
 | School / exhibition network | [New Topographics](../style-packages/schools/new-topographics/) | Clear-eyed views of human-altered landscape |
 | Technique | [Gum Bichromate](../style-packages/techniques/gum-bichromate/) | Pigment, paper, contact exposure, layered hand control |
 | Game art | [ZX Spectrum Attribute Pixel Art](../style-packages/game-art/zx-spectrum-attribute-pixel/) | 256×192 raster, 8×8 attribute cells, compact palette, controlled color clash |

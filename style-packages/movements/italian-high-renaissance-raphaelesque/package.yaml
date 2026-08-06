@@ -1,13 +1,13 @@
 id: italian-high-renaissance-raphaelesque
-name: High Renaissance Classical Fresco
+name: Italian High Renaissance
 kind: movement
 domain: painting
-version: 0.1.0
+version: 0.2.0
 entity: catalog/movements/italian-high-renaissance/entity.yaml
 summary: >-
-  A monumental Italian Renaissance fresco language combining classical
-  architecture, one-point perspective, balanced figure groups, lucid anatomy,
-  restrained gestures, and humanist intellectual subject matter.
+  A sixteenth-century Italian painting system built on careful drawing,
+  proportioned figures, coherent space, calm narrative action, and controlled
+  color; Raphael's School of Athens is one reference case, not a template.
 files:
   identity: identity.yaml
   visual_signature: visual-signature.yaml

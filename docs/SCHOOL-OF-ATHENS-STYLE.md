@@ -1,13 +1,22 @@
-# The School of Athens style anchor
+# The School of Athens as a reference anchor
 
-The repository treats Raphael's *The School of Athens* as a work-level anchor
-inside the broader Italian High Renaissance, not as a standalone historical
-movement named “School of Athens.” Its reusable signature is the combination
-of monumental fresco, one-point architectural perspective, balanced groups,
-lucid idealized anatomy, meaningful gestures, and humanist intellectual subject
-matter.
+*The School of Athens* is a work by Raphael, painted in the Room of the
+Segnatura between 1508 and 1511. It is a useful reference for the Italian High
+Renaissance package, but its exact hall, central pair, staircase, and gathering
+of philosophers belong to this work's composition.
 
-The package intentionally does not ask a generator to reproduce Raphael's
-exact arrangement, portraits, or wall painting. It tests the underlying visual
-logic with an unnamed gathering and records the original work as a link-only
-reference.
+The movement package therefore extracts only portable properties:
+
+- careful drawing and proportion;
+- clear physical relationships between figures;
+- readable depth and receding planes;
+- open modeling and controlled mineral color;
+- calm, intelligible narrative action.
+
+It does not require every output to contain a classical hall, one-point
+perspective, two famous philosophers, or an intellectual crowd. Those are
+optional features for a separate work-specific or composition-specific preset.
+
+The original work is recorded at
+`catalog/works/raphael-school-of-athens/entity.yaml` and remains link-only in
+the references manifest.

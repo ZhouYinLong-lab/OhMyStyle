@@ -1,10 +1,11 @@
-# High Renaissance Classical Fresco — demo package
+# Italian High Renaissance — movement package
 
-This package describes the visual system associated with Raphael's monumental
-philosophical frescoes, especially the architecture, equilibrium, humanist
-subject matter, and calm interaction visible in *The School of Athens*.
+This package describes a movement-level visual grammar. It is not a synonym
+for *The School of Athens* and it does not require a grand hall, a central
+pair, a philosopher assembly, or one fixed perspective scheme.
 
-It is not a prompt to copy the original fresco, reproduce its exact figures,
-or imitate a living artist. The reference manifest is link-only, while the
-generated sample uses an anonymous visual signature and remains pending human
-review.
+The Vatican fresco is kept as a work-level reference in
+`catalog/works/raphael-school-of-athens/`. The package can also describe a
+portrait, devotional scene, mythological narrative, landscape setting, or
+smaller domestic arrangement when the same drawing, proportion, spatial
+clarity, and controlled color are present.

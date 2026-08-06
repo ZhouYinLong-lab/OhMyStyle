@@ -1,3 +1,4 @@
-# Version 0.1.0
+# Version 0.2.0
 
-Initial research scaffold for anonymous reproduction tests.
+Separated the High Renaissance movement grammar from the composition of The
+School of Athens. The famous fresco remains a reference anchor only.
