@@ -1,57 +1,131 @@
-# Contributing to AI Visual Prompt Cookbook
+# Contributing to OhMyStyle
 
-## How to Submit a New Style
+Thank you for contributing to OhMyStyle. The repository contains two related
+but separately maintained systems:
 
-1. Fork the repository and create a new branch.
-2. Add a new directory under `styles/<slug>/`.
-3. Add exactly one `style.json` file and two preview images.
-4. Run the validation command.
-5. Open a pull request with a short description of the visual system and sample use cases.
+- `style-packages/` contains executable, provenance-aware style packages for
+  reproducing artists, photographers, movements, schools, techniques,
+  presets, and game-art directions.
+- `styles/` contains the inherited `style.json` gallery retained for
+  compatibility with the original project. It is a legacy catalog, not a
+  claim that OhMyStyle authored every inherited description or preview.
 
-## Style Slug Naming
+Please read [LICENSE](LICENSE), [LICENSE-OHMYSTYLE.md](LICENSE-OHMYSTYLE.md),
+and [NOTICE](NOTICE) before adding or redistributing material.
 
-- Use lowercase English kebab-case.
-- Keep the slug descriptive and no longer than 60 characters.
-- Prefer concrete style words over generic labels.
-- Match the folder name, `style_slug`, and copy-prompt filename.
+## Before opening a change
 
-## style.json Requirements
+- Record where every external reference came from in `provenance.yaml` or the
+  relevant manifest.
+- Prefer a source link and descriptive metadata when image redistribution
+  rights are not clear. Do not commit a downloaded artwork merely because it
+  is easy to find online.
+- Do not add copyrighted artworks, screenshots, watermarked images, private
+  prompts, brand assets, or dataset material without a documented right to
+  redistribute it.
+- Generated examples must be marked as generated and must not be presented as
+  works by the referenced artist or photographer.
+- Do not turn a living artist's or photographer's name into an exact imitation
+  claim. Describe observable, non-exclusive characteristics and use the
+  package's scope and attribution fields.
+- Keep inherited material's original notices. Do not replace or remove the
+  original copyright and license files.
 
-Each public style must include these fields:
+## Executable style packages
 
-- `prompt_template`
-- `environment_variables`
-- `examples`
-- `style_fidelity_anchors`
-- `source_content_to_avoid`
-- `negative_prompt`
+New reproducible packages belong under the most specific domain directory:
 
-The template should preserve the reusable visual system while requiring new subject matter, text, and scene values.
-
-## Preview Image Requirements
-
-- Filenames must be exactly `preview-16x9.jpg` and `preview-9x16.jpg`.
-- Recommended minimum resolution: 1280x720 for 16:9 and 720x1280 for 9:16.
-- Use JPG format, preferably under 1MB and always under 5MB.
-- Avoid visible watermarks, platform UI, QR codes, account handles, or brand-owned marks.
-
-## Validation
-
-Run this command from the repository root before submitting:
-
-```bash
-python3 scripts/validate-style-json.py .
+```text
+style-packages/<domain>/<slug>/
+├── package.yaml
+├── identity.yaml
+├── visual-signature.yaml
+├── reproduction.yaml
+├── relations.yaml
+├── palette/palette.json
+├── prompts/base.txt
+├── prompts/negative.txt
+├── evaluation.yaml
+├── references/manifest.csv
+├── provenance.yaml
+└── examples/generated/anonymous-v1.png
 ```
 
-## What Not to Include
+The package schema currently supports `artist`, `photographer`, `movement`,
+`school`, `technique`, `preset`, and `game_art`. A package should make the
+following independently reviewable:
 
-Do not include original reference images, watermarks, platform identifiers, QR codes, account information, private prompts, or unauthorized brand assets.
+- identity, scope, aliases, and exclusions;
+- observable visual signatures rather than vague adjectives alone;
+- composition, material, lighting, color, and reproduction guidance;
+- negative constraints and evaluation criteria;
+- reference-image provenance, rights status, and attribution;
+- anonymous generated examples that demonstrate the package without claiming
+  to be an original work by the referenced person or movement.
 
-## PR Checklist
+Validate a package set with:
 
-- [ ] The new folder is under `styles/<slug>/`.
-- [ ] The folder contains only `style.json`, `preview-16x9.jpg`, and `preview-9x16.jpg`.
-- [ ] The slug is lowercase kebab-case and no longer than 60 characters.
-- [ ] The preview images are JPGs and meet the naming requirements.
-- [ ] `python3 scripts/validate-style-json.py .` passes.
-- [ ] No source references, watermarks, QR codes, account handles, or unauthorized brand assets are included.
+```powershell
+python tools/validate-package.py style-packages
+```
+
+Do not hard-code one visual style, palette, artist, photographer, or model
+into the runtime. The compiler, mask adapters, preflight checks, and
+evaluation tools must remain reusable across packages.
+
+## Legacy `style.json` entries
+
+If you are extending the inherited gallery, add or update one entry under:
+
+```text
+styles/<slug>/
+├── style.json
+├── README.md
+└── preview.*
+```
+
+Keep the existing field conventions and run:
+
+```powershell
+python scripts/validate-style-json.py
+```
+
+For new work, prefer `style-packages/` so provenance, reproduction guidance,
+evaluation, and rights boundaries are explicit. Do not silently convert an
+inherited entry into a new license or attribution statement.
+
+## Engineering changes
+
+Changes to tools, schemas, adapters, or evaluators should include tests for
+the behavior they change. In particular:
+
+- keep model and style selection outside generic runtime logic;
+- test deterministic preflight and failure reporting;
+- test mask dimensions, image hashes, protected-region handling, and
+  reflective-material safety gates;
+- test color/luminance evaluation without assuming a particular palette;
+- document any dependency, model, or hardware assumptions.
+
+Run the full local checks before submitting:
+
+```powershell
+python -m unittest discover -s tests -v
+python tools/validate-package.py style-packages
+python tools/validate.py
+python scripts/validate-style-json.py
+git diff --check
+```
+
+## Pull request checklist
+
+- [ ] The change is scoped to the correct package or engineering layer.
+- [ ] External references have source URLs and rights/provenance metadata.
+- [ ] No unlicensed artwork, screenshot, logo, or private material was added.
+- [ ] Generated images are labeled as generated and are not misattributed.
+- [ ] The implementation remains model-agnostic and style-agnostic.
+- [ ] Relevant validators and tests pass.
+- [ ] Documentation and examples match the current schema.
+- [ ] License and attribution notices were preserved.
+
+If you are unsure whether an asset can be redistributed, open an issue with a
+link and a description of the intended use instead of committing the asset.

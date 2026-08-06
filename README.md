@@ -1,7 +1,7 @@
 # OhMyStyle
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-see%20LICENSE%20%26%20NOTICE-lightgrey)](LICENSE)
+[![License](https://img.shields.io/badge/license-see%20license%20files-lightgrey)](LICENSE-OHMYSTYLE.md)
 [![Executable packages](https://img.shields.io/badge/executable%20packages-12-6C63FF)](docs/DEMO-PACKAGES.md)
 [![Legacy catalog](https://img.shields.io/badge/legacy%20style.json%20catalog-110-5B8C5A)](docs/CATALOG.md)
 
@@ -1038,7 +1038,9 @@ OhMyStyle/
 ├── docs/                       # Workflow, package notes, catalog, provenance guidance
 ├── assets/                     # Legacy catalog preview assets
 ├── NOTICE                      # Attribution and inherited licensing boundaries
-├── LICENSE                     # Preserved applicable license text
+├── LICENSE                     # Preserved inherited license text
+├── LICENSE-OHMYSTYLE.md        # License for OhMyStyle additions
+├── CONTRIBUTING.md             # Contribution, provenance, and validation rules
 └── README.md
 ```
 
@@ -1088,6 +1090,7 @@ credited in [NOTICE](NOTICE).
 
 The applicable license and attribution boundaries differ between inherited
 code, legacy prompt content, preview assets, external references, and new
-package material. Read [LICENSE](LICENSE) and [NOTICE](NOTICE) before copying
-or redistributing any part of the repository. Do not infer artwork rights from
-the presence of a link or an image in the catalog.
+package material. Read [LICENSE](LICENSE),
+[LICENSE-OHMYSTYLE.md](LICENSE-OHMYSTYLE.md), and [NOTICE](NOTICE) before
+copying or redistributing any part of the repository. Do not infer artwork
+rights from the presence of a link or an image in the catalog.

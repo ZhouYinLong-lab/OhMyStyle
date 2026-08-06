@@ -11,6 +11,9 @@ This repository is maintained independently. It is not a GitHub fork and is
 not affiliated with, endorsed by, or maintained by the original author.
 
 The original MIT copyright and license notice is preserved in `LICENSE`.
+Original OhMyStyle additions are separately described in
+`LICENSE-OHMYSTYLE.md`; that file does not relicense inherited material,
+external references, user-supplied screenshots, or generated images.
 The original project README describes the material's licensing scope as:
 
 - code, scripts, and documentation: MIT License;
@@ -20,4 +23,5 @@ The original project README describes the material's licensing scope as:
 
 When redistributing inherited material, retain the applicable copyright,
 license, and attribution notices. New material added to this repository must
-include its own provenance and license information where applicable.
+include its own provenance and license information where applicable. A package
+provenance record is not a license grant for external works it cites.
