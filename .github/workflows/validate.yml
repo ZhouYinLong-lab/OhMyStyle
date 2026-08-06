@@ -30,6 +30,9 @@ jobs:
       - name: Validate core resource contracts and registry
         run: python3 tools/validate-resources.py style-packages
 
+      - name: Validate unified visual-style benchmarks
+        run: python3 tools/validate-benchmarks.py style-packages
+
       - name: Validate cross-style composite recipes
         run: python3 tools/validate-composite.py style-packages/composites
 

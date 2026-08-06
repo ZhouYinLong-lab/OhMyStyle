@@ -21,6 +21,7 @@ artifacts:
   prompt: prompts/base.txt
   accepted_examples: examples/accepted
   rejected_examples: examples/rejected
+  benchmark: benchmark/benchmark.yaml
 evidence:
   reference_backed: true
   accepted_example: true

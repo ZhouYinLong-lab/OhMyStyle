@@ -53,6 +53,8 @@ def validate(style_root: Path) -> list[str]:
             errors.append(f"{resource_path}: resource_id must match package.yaml id and folder")
         if data.get("maturity") == "L3" and not data.get("evidence", {}).get("accepted_example"):
             errors.append(f"{resource_path}: L3 requires an accepted example")
+        if data.get("maturity") == "L4" and "benchmark" not in data.get("artifacts", {}):
+            errors.append(f"{resource_path}: L4 requires a benchmark artifact")
         for artifact_name, relative in data.get("artifacts", {}).items():
             try:
                 artifact = safe_path(package, relative)

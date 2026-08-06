@@ -1,0 +1,63 @@
+# Copy this file for a rendered run. This is a review input template, not a result.
+run_id: replace-with-run-id
+reviewer: human-or-vision-reviewer
+notes: Record concrete observations; do not collapse AI artifacts into a single unexplained label.
+tasks:
+  portrait:
+    scores:
+      style_recognition: 0
+      object_completion: 0
+      prompt_adherence: 0
+      color_fidelity: 0
+      material_correctness: 0
+      composition_stability: 0
+      ai_trace_control: 0
+    artifact_findings:
+      anatomy: []
+      geometry: []
+      lighting: []
+      material: []
+      typography: []
+      repetition: []
+      texture: []
+      composition: []
+  still-life:
+    scores:
+      style_recognition: 0
+      object_completion: 0
+      prompt_adherence: 0
+      color_fidelity: 0
+      material_correctness: 0
+      composition_stability: 0
+      ai_trace_control: 0
+    artifact_findings: {}
+  architecture-environment:
+    scores:
+      style_recognition: 0
+      object_completion: 0
+      prompt_adherence: 0
+      color_fidelity: 0
+      material_correctness: 0
+      composition_stability: 0
+      ai_trace_control: 0
+    artifact_findings: {}
+  minimal-composition:
+    scores:
+      style_recognition: 0
+      object_completion: 0
+      prompt_adherence: 0
+      color_fidelity: 0
+      material_correctness: 0
+      composition_stability: 0
+      ai_trace_control: 0
+    artifact_findings: {}
+  fuzzy-brief:
+    scores:
+      style_recognition: 0
+      object_completion: 0
+      prompt_adherence: 0
+      color_fidelity: 0
+      material_correctness: 0
+      composition_stability: 0
+      ai_trace_control: 0
+    artifact_findings: {}

@@ -1,0 +1,11 @@
+id: benchmark-portrait
+subject: an adult person in a neutral three-quarter standing portrait, head to waist, simple unbranded clothing
+brief: Make a quiet, non-performative portrait with natural posture and no recognizable person. The visual style must control the medium, surface, light, and edge behavior; do not add a narrative scene.
+output:
+  aspect_ratio: "4:5"
+  target_aspects: ["4:5"]
+  safe_zone: [0.08, 0.08, 0.92, 0.92]
+constraints:
+  object_count: 1
+  no_text: true
+  no_logos: true

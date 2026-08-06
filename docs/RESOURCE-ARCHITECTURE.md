@@ -44,6 +44,12 @@ required for a style to be valid.
 The current registry intentionally distinguishes L2 packages from L3 packages
 instead of claiming that every demo has already passed human evaluation.
 
+Packages that opt into the unified suite add `benchmark/benchmark.yaml` as a
+resource artifact. The shared suite contains five content-neutral task shapes;
+the package supplies the style, while the task supplies the subject and
+constraints. This makes results comparable without forcing every style to
+paint the same narrative scene.
+
 ## Resource dimensions
 
 Dimensions are orthogonal to subject and narrative. Current dimensions include
@@ -72,7 +78,9 @@ flowchart TD
     D --> F[Provider-neutral compiler job]
     F --> G[Model adapter]
     G --> H[Accepted / rejected evidence]
-    H --> I[Maturity upgrade]
-    I --> E
+    H --> I[Benchmark score report]
+    I --> J[Cross-model aggregation]
+    J --> K[Maturity upgrade]
+    K --> E
     T[Independent render task] --> F
 ```

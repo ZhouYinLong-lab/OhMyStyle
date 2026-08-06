@@ -17,6 +17,7 @@ packages:
   reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: claude-monet
   name: Claude Monet
   kind: artist
@@ -33,6 +34,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: diego-velazquez
   name: Diego Velázquez
   kind: artist
@@ -49,6 +51,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: edvard-munch
   name: Edvard Munch
   kind: artist
@@ -65,6 +68,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: georges-seurat
   name: Georges Seurat
   kind: artist
@@ -81,6 +85,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: jmw-turner
   name: J. M. W. Turner
   kind: artist
@@ -97,6 +102,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: true
 - resource_id: johannes-vermeer
   name: Johannes Vermeer
   kind: artist
@@ -113,6 +119,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: true
 - resource_id: paul-cezanne
   name: Paul Cézanne
   kind: artist
@@ -129,6 +136,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: paul-gauguin
   name: Paul Gauguin
   kind: artist
@@ -145,6 +153,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: rembrandt
   name: Rembrandt van Rijn
   kind: artist
@@ -161,6 +170,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: vincent-van-gogh
   name: Vincent van Gogh
   kind: artist
@@ -177,6 +187,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: wassily-kandinsky
   name: Wassily Kandinsky
   kind: artist
@@ -193,6 +204,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: rpg-maker-pixel-art
   name: RPG Maker Pixel Art
   kind: game_art
@@ -209,6 +221,7 @@ packages:
   reference_count: 4
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: true
 - resource_id: zx-spectrum-attribute-pixel
   name: ZX Spectrum Attribute Pixel Art
   kind: game_art
@@ -225,6 +238,7 @@ packages:
   reference_count: 2
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: greek-archaic-period
   name: Greek Archaic Period
   kind: movement
@@ -241,6 +255,7 @@ packages:
   reference_count: 5
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: greek-classical-period
   name: Greek Classical Period
   kind: movement
@@ -257,6 +272,7 @@ packages:
   reference_count: 5
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: greek-geometric-period
   name: Greek Geometric Period
   kind: movement
@@ -273,6 +289,7 @@ packages:
   reference_count: 5
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: greek-hellenistic-period
   name: Greek Hellenistic Period
   kind: movement
@@ -289,6 +306,7 @@ packages:
   reference_count: 5
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: italian-high-renaissance-raphaelesque
   name: Italian High Renaissance
   kind: movement
@@ -305,6 +323,7 @@ packages:
   reference_count: 6
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: neue-sachlichkeit
   name: Neue Sachlichkeit / New Objectivity
   kind: movement
@@ -321,6 +340,7 @@ packages:
   reference_count: 2
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: alfred-stieglitz
   name: Alfred Stieglitz
   kind: photographer
@@ -337,6 +357,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: eadweard-muybridge
   name: Eadweard Muybridge
   kind: photographer
@@ -353,6 +374,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: etienne-jules-marey
   name: Étienne-Jules Marey
   kind: photographer
@@ -369,6 +391,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: eugene-atget
   name: Eugène Atget
   kind: photographer
@@ -385,6 +408,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: julia-margaret-cameron
   name: Julia Margaret Cameron
   kind: photographer
@@ -401,6 +425,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: lewis-hine
   name: Lewis Hine
   kind: photographer
@@ -417,6 +442,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: masahisa-fukase
   name: Masahisa Fukase
   kind: photographer
@@ -433,6 +459,7 @@ packages:
   reference_count: 2
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: nadar
   name: Nadar
   kind: photographer
@@ -449,6 +476,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: roger-fenton
   name: Roger Fenton
   kind: photographer
@@ -465,6 +493,7 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
+  benchmark: false
 - resource_id: high-chroma-color-pairing
   name: High-Chroma Color Pairing
   kind: preset
@@ -479,6 +508,7 @@ packages:
   reference_count: 13
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: new-topographics
   name: New Topographics
   kind: school
@@ -495,6 +525,7 @@ packages:
   reference_count: 2
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false
 - resource_id: gum-bichromate
   name: Gum Bichromate Printing
   kind: technique
@@ -510,3 +541,4 @@ packages:
   reference_count: 2
   accepted_example_count: 0
   rejected_example_count: 0
+  benchmark: false

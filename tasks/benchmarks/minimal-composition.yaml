@@ -1,0 +1,12 @@
+id: benchmark-minimal-composition
+subject: three simple geometric forms arranged on an empty ground plane with a quiet background
+brief: Use generous negative space and a deliberate hierarchy. The style must be visible through composition, color, surface, light, and edge decisions rather than through extra objects or narrative.
+output:
+  aspect_ratio: "4:5"
+  target_aspects: ["4:5"]
+  safe_zone: [0.1, 0.1, 0.9, 0.9]
+constraints:
+  object_count: 3
+  no_text: true
+  no_logos: true
+  no_extra_objects: true

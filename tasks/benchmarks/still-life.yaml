@@ -1,0 +1,11 @@
+id: benchmark-still-life
+subject: a simple still life with one ceramic vessel, one folded cloth, and three pieces of fruit on a plain surface
+brief: Keep the object inventory fixed and readable. Use the target style to determine material behavior, light, color organization, and surface treatment without adding decorative props.
+output:
+  aspect_ratio: "3:2"
+  target_aspects: ["3:2"]
+  safe_zone: [0.06, 0.08, 0.94, 0.92]
+constraints:
+  object_count: 5
+  no_text: true
+  no_logos: true

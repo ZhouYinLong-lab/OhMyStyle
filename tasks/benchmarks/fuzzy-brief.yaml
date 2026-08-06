@@ -1,0 +1,11 @@
+id: benchmark-fuzzy-brief
+subject: an original editorial image about a place that is still warm from summer but has begun to empty out
+brief: The place could be a coastal town or a nearly closed public space. It is late afternoon without obvious golden-hour light. The air is clean after rain, there is wind and some empty space, and one ordinary object hints that the place used to be busier. Keep the person, if any, natural and unperformed. Use one scene-derived accent color, avoid cyberpunk, avoid melodrama, avoid visible text and brands, and leave calm negative space. Compile this ambiguous request through the target style without forcing a particular narrative structure.
+output:
+  aspect_ratio: "3:2"
+  target_aspects: ["3:2", "4:5"]
+  safe_zone: [0.06, 0.08, 0.94, 0.92]
+constraints:
+  no_text: true
+  no_logos: true
+  crop_safe: true

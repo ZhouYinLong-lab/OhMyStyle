@@ -1,0 +1,46 @@
+schema_version: 1.0.0
+scale:
+  min: 0
+  max: 5
+  anchors:
+    0: absent, contradictory, or unusable
+    1: weak evidence with major failures
+    2: partial evidence with repeated failures
+    3: usable evidence with visible compromises
+    4: strong evidence with minor compromises
+    5: clear, stable, and convincing evidence
+task_metrics:
+  - id: style_recognition
+    weight: 0.20
+    question: Can a blind reviewer identify the target visual system from observable decisions rather than subject matter?
+  - id: object_completion
+    weight: 0.10
+    question: Are the requested people, objects, and structures complete and coherent?
+  - id: prompt_adherence
+    weight: 0.15
+    question: Did the result follow explicit content, exclusion, and format constraints?
+  - id: color_fidelity
+    weight: 0.10
+    question: Are color relationships, area roles, and measurable color constraints respected?
+  - id: material_correctness
+    weight: 0.10
+    question: Do surfaces and materials behave according to the target style and medium?
+  - id: composition_stability
+    weight: 0.15
+    question: Are hierarchy, spatial relationships, negative space, and crop safety coherent?
+  - id: ai_trace_control
+    weight: 0.20
+    question: Are anatomy, geometry, shadows, repetition, text, texture, and edges free of conspicuous synthetic artifacts?
+aggregate_metrics:
+  - id: cross_model_stability
+    weight: 1.0
+    question: Does the package preserve its measurable and human-recognizable signature across models and seeds?
+artifact_categories:
+  - anatomy
+  - geometry
+  - lighting
+  - material
+  - typography
+  - repetition
+  - texture
+  - composition

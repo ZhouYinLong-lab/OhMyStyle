@@ -14,7 +14,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["resource_id", "name", "kind", "domain", "package_path", "maturity", "focus_dimensions", "reference_count", "accepted_example_count", "rejected_example_count"],
+        "required": ["resource_id", "name", "kind", "domain", "package_path", "maturity", "focus_dimensions", "reference_count", "accepted_example_count", "rejected_example_count", "benchmark"],
         "properties": {
           "resource_id": {"type": "string"},
           "name": {"type": "string"},
@@ -25,7 +25,8 @@
           "focus_dimensions": {"type": "array", "items": {"type": "string"}},
           "reference_count": {"type": "integer", "minimum": 0},
           "accepted_example_count": {"type": "integer", "minimum": 0},
-          "rejected_example_count": {"type": "integer", "minimum": 0}
+          "rejected_example_count": {"type": "integer", "minimum": 0},
+          "benchmark": {"type": "boolean"}
         }
       }
     }

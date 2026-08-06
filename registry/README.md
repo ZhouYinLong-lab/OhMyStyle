@@ -20,9 +20,11 @@ The registry adds discovery metadata and evidence counts. Do not edit
 python tools/scaffold-resource-manifests.py style-packages
 python tools/build-registry.py
 python tools/validate-resources.py style-packages
+python tools/validate-benchmarks.py style-packages
 ```
 
 `L2` means reference-backed and executable. `L3` additionally has an accepted
-generated example. `L4` is reserved for a package with evaluated
-interoperability across providers or adapters. A package can be useful before
-it reaches L4; the maturity field makes that limitation visible.
+generated example. `L4` is reserved for a package with a validated five-task
+benchmark and evaluated interoperability across providers or adapters. A
+package can be useful before it reaches L4; the maturity field makes that
+limitation visible.

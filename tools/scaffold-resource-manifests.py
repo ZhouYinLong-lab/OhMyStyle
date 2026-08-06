@@ -32,6 +32,20 @@ def image_count(directory: Path) -> int:
 def build_manifest(package: Path) -> dict:
     package_data = load_yaml(package / "package.yaml")
     accepted = image_count(package / "examples" / "accepted")
+    artifacts = {
+        "package": "package.yaml",
+        "identity": "identity.yaml",
+        "visual_signature": "visual-signature.yaml",
+        "reproduction": "reproduction.yaml",
+        "evaluation": "evaluation.yaml",
+        "references": "references/manifest.csv",
+        "provenance": "provenance.yaml",
+        "prompt": "prompts/base.txt",
+        "accepted_examples": "examples/accepted",
+        "rejected_examples": "examples/rejected",
+    }
+    if (package / "benchmark" / "benchmark.yaml").is_file():
+        artifacts["benchmark"] = "benchmark/benchmark.yaml"
     return {
         "schema_version": "1.0.0",
         "resource_id": package_data["id"],
@@ -39,18 +53,7 @@ def build_manifest(package: Path) -> dict:
         "maturity": "L3" if accepted else "L2",
         "task_independent": True,
         "focus_dimensions": DIMENSIONS[package_data["kind"]],
-        "artifacts": {
-            "package": "package.yaml",
-            "identity": "identity.yaml",
-            "visual_signature": "visual-signature.yaml",
-            "reproduction": "reproduction.yaml",
-            "evaluation": "evaluation.yaml",
-            "references": "references/manifest.csv",
-            "provenance": "provenance.yaml",
-            "prompt": "prompts/base.txt",
-            "accepted_examples": "examples/accepted",
-            "rejected_examples": "examples/rejected",
-        },
+        "artifacts": artifacts,
         "evidence": {
             "reference_backed": True,
             "accepted_example": bool(accepted),

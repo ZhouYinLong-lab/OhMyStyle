@@ -1,0 +1,11 @@
+id: benchmark-architecture-environment
+subject: a modest public building at the edge of a small town, with a road, open ground, and a few distant trees
+brief: Show a believable built environment with clear spatial depth. The target style must determine how architecture, atmosphere, surface, and human alteration are represented; avoid a travel-poster mood.
+output:
+  aspect_ratio: "3:2"
+  target_aspects: ["3:2"]
+  safe_zone: [0.04, 0.08, 0.96, 0.92]
+constraints:
+  no_text: true
+  no_logos: true
+  no_identifiable_landmark: true

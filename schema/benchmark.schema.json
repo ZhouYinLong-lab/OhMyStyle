@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/benchmark.schema.json",
+  "title": "OhMyStyle Style Benchmark Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "benchmark_id", "package", "package_version", "suite", "rubric", "tasks"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "benchmark_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "package": {"type": "string", "minLength": 1},
+    "package_version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+    "suite": {"type": "string", "const": "visual-style-core-v1"},
+    "rubric": {"type": "string", "minLength": 1},
+    "maturity_target": {"type": "string", "enum": ["L3", "L4", "L5"]},
+    "minimum_overall_score": {"type": "number", "minimum": 0, "maximum": 5},
+    "minimum_task_score": {"type": "number", "minimum": 0, "maximum": 5},
+    "tasks": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kind", "task"],
+        "properties": {
+          "id": {"type": "string", "enum": ["portrait", "still-life", "architecture-environment", "minimal-composition", "fuzzy-brief"]},
+          "kind": {"type": "string", "enum": ["portrait", "still_life", "architecture_environment", "minimal_composition", "fuzzy_brief"]},
+          "task": {"type": "string", "minLength": 1},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

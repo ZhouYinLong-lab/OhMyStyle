@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/benchmark-run.schema.json",
+  "title": "OhMyStyle Benchmark Run Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "benchmark_id", "package", "model", "status", "tasks"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "benchmark_id": {"type": "string", "minLength": 1},
+    "package": {"type": "object", "required": ["id", "version"], "additionalProperties": false, "properties": {"id": {"type": "string"}, "version": {"type": "string"}}},
+    "model": {"type": "object", "required": ["name", "profile"], "additionalProperties": false, "properties": {"name": {"type": "string"}, "profile": {"type": "string"}}},
+    "status": {"type": "string", "enum": ["awaiting_render", "rendered", "scored", "failed"]},
+    "tasks": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["task_id", "kind", "task_path", "job"],
+        "properties": {
+          "task_id": {"type": "string"},
+          "kind": {"type": "string"},
+          "task_path": {"type": "string"},
+          "image": {"type": ["string", "null"]},
+          "job": {"type": "object"}
+        }
+      }
+    }
+  }
+}

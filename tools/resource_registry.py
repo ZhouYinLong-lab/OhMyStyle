@@ -61,6 +61,7 @@ def build_registry(style_root: Path) -> dict[str, Any]:
                 "reference_count": _reference_count(package),
                 "accepted_example_count": _asset_count(package / "examples" / "accepted"),
                 "rejected_example_count": _asset_count(package / "examples" / "rejected"),
+                "benchmark": (package / "benchmark" / "benchmark.yaml").is_file(),
             }
         )
     return {"schema_version": "1.0.0", "generated_by": "tools/build-registry.py", "packages": entries}

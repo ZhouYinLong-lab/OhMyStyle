@@ -64,6 +64,55 @@ the same level of human evaluation.
 Read the complete [core resource architecture](docs/RESOURCE-ARCHITECTURE.md)
 and [registry guide](registry/README.md).
 
+## Unified visual-style benchmark
+
+The fixed suite in [`tasks/benchmarks/`](tasks/benchmarks/) tests every style
+that opts into benchmark maturity with the same five tasks: portrait,
+still-life, architecture/environment, minimal composition, and fuzzy brief.
+The pilot benchmark is attached to Turner, Vermeer, and RPG Maker Pixel Art.
+
+The benchmark separates eight observable dimensions instead of reporting an
+unexplained “AI rate”: style recognition, object completion, Prompt adherence,
+color fidelity, material correctness, composition stability, AI-trace control,
+and cross-model stability. The first seven are scored per task; cross-model
+stability is calculated only after reports from multiple models and is marked
+as a transparent proxy until human review confirms it.
+
+Compile a provider-neutral five-task run:
+
+```bash
+python tools/run-benchmark.py \
+  style-packages/artists/jmw-turner/benchmark \
+  --model provider-model-name \
+  --profile weak \
+  --output tmp/turner-run.json
+```
+
+After generation, attach a structured review file and score it:
+
+```bash
+copy tasks/benchmarks/score-template.yaml tmp/turner-scores.yaml
+python tools/score-benchmark.py \
+  tmp/turner-run.json \
+  tmp/turner-scores.yaml \
+  --output tmp/turner-report.json
+```
+
+Aggregate reports from at least two models:
+
+```bash
+python tools/aggregate-benchmark.py \
+  tmp/turner-model-a-report.json \
+  tmp/turner-model-b-report.json \
+  --output tmp/turner-cross-model.json
+```
+
+`L4` is reserved for a package with a validated benchmark artifact and
+cross-provider evidence. The tooling never claims that a single detector can
+objectively measure “AI-ness”; it records concrete artifact categories such as
+anatomy, geometry, lighting, material, typography, repetition, texture, and
+composition.
+
 ## Getting Started
 
 ### Installation
@@ -1156,7 +1205,8 @@ OhMyStyle/
 ├── registry/                   # Generated discovery index for core resources
 ├── styles/                     # Legacy style.json catalog
 ├── schema/                     # Package and render-task schemas
-├── tasks/                      # Strict and fuzzy render task examples
+├── tasks/                      # Strict, fuzzy, and fixed benchmark tasks
+│   └── benchmarks/             # Shared five-task visual-style benchmark suite
 ├── tools/                      # Compiler, preflight, masks, metrics, validators
 ├── docs/                       # Workflow, package notes, catalog, provenance guidance
 ├── assets/                     # Legacy catalog preview assets
@@ -1175,6 +1225,7 @@ Run the checks before publishing a package or changing the runtime:
 python -m unittest discover -s tests -v
 python tools/validate-package.py style-packages
 python tools/validate-resources.py style-packages
+python tools/validate-benchmarks.py style-packages
 python tools/validate-composite.py style-packages/composites
 python tools/validate.py
 python scripts/validate-style-json.py

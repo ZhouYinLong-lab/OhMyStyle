@@ -44,7 +44,8 @@
         "provenance": {"type": "string", "minLength": 1},
         "prompt": {"type": "string", "minLength": 1},
         "accepted_examples": {"type": "string", "minLength": 1},
-        "rejected_examples": {"type": "string", "minLength": 1}
+        "rejected_examples": {"type": "string", "minLength": 1},
+        "benchmark": {"type": "string", "minLength": 1}
       }
     },
     "evidence": {

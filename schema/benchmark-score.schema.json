@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/benchmark-score.schema.json",
+  "title": "OhMyStyle Benchmark Score Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "package", "model", "status", "tasks", "overall_score", "thresholds"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "run_id": {"type": "string"},
+    "benchmark_id": {"type": "string"},
+    "package": {"type": "string"},
+    "model": {"type": "string"},
+    "status": {"type": "string", "enum": ["pass", "fail", "incomplete"]},
+    "tasks": {"type": "array", "minItems": 5, "items": {"type": "object", "required": ["task_id", "score", "scores", "artifact_findings"], "additionalProperties": false, "properties": {"task_id": {"type": "string"}, "score": {"type": "number", "minimum": 0, "maximum": 5}, "scores": {"type": "object"}, "artifact_findings": {"type": "object"}}}},
+    "overall_score": {"type": "number", "minimum": 0, "maximum": 5},
+    "thresholds": {"type": "object", "required": ["minimum_overall_score", "minimum_task_score"], "additionalProperties": false, "properties": {"minimum_overall_score": {"type": "number"}, "minimum_task_score": {"type": "number"}}},
+    "reviewer": {"type": "string"},
+    "notes": {"type": "string"}
+  }
+}
