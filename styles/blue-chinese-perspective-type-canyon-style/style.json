@@ -1,0 +1,173 @@
+{
+  "style_name": "Blue Chinese Perspective Type Canyon Style",
+  "style_slug": "blue-chinese-perspective-type-canyon-style",
+  "style_version": "1.0.0",
+  "style_summary": "A Chinese typographic poster system built from an extreme one-point perspective corridor: a saturated blue central trapezoid plane carries stacked oversized white Chinese display type, while black side walls are packed with warped white and pale gray Chinese support copy.",
+  "environment_variables": {
+    "SUBJECT": "main subject",
+    "SUBJECT_ACTION": "main action",
+    "PRODUCT_OR_PROP": "object, product, or prop",
+    "LOCATION": "environment or setting",
+    "BACKGROUND_ELEMENTS": "secondary scene details",
+    "MAIN_TEXT": "main headline or graphic text",
+    "SECONDARY_TEXT": "small repeated supporting text",
+    "ACCENT_SYMBOL": "separator or decorative symbol",
+    "WARDROBE_STYLE": "styling direction",
+    "STYLE_FIDELITY_ANCHORS": "observable style traits that must remain visible",
+    "SOURCE_CONTENT_TO_AVOID": "literal source content that generated samples must not recreate",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Extreme one-point perspective corridor, as if the viewer is standing inside a narrow vertical advertising alley",
+    "Central saturated blue trapezoid plane runs from the foreground toward the vanishing point and occupies the strongest visual hierarchy",
+    "Black left and right walls converge inward and carry dense skewed white or pale gray Chinese typography",
+    "Huge white Chinese display glyphs or numerals dominate the foreground, cropped by the image edges",
+    "Typography is stretched, condensed, bold, commercial, and spatially warped by perspective rather than laid flat",
+    "Palette stays restricted to saturated blue, deep black, white, and light gray with almost no other colors",
+    "Flat 3D poster rendering with hard-edged planes, clean vector-like surfaces, and minimal material detail",
+    "No photographic people or realistic products; the visual event is created by Chinese text, panels, scale, and perspective",
+    "Dense poster pressure: very little calm negative space, many oversized Chinese words and numbers competing at different depths",
+    "Center text stacks vertically along the blue plane, with the largest glyph or number closest to the viewer",
+    "Side-wall text is partially cut off by the frame, distorted by angle, and readable only in fragments",
+    "Lighting is simple and graphic, with subtle gray shading on white letters but no atmospheric realism"
+  ],
+  "source_content_to_avoid": [
+    "Do not recreate the original bargain sale premise, limited-time clearance premise, or exact shopping promotion",
+    "Do not use the original price, the original large hour count, or the original satisfaction guarantee wording",
+    "Do not reuse the original Chinese headline, original English side-wall phrases, original store-like naming, or exact dates",
+    "Do not copy the exact top price block, exact center character stack, exact side wall text arrangement, or identical text order",
+    "Do not include real brand marks, platform logos, QR codes, watermarks, usernames, or creator signatures",
+    "Do not generate a red central plane; the center plane must be saturated blue",
+    "Do not make the samples about the same product package, same sale event, or same countdown story"
+  ],
+  "visual_deconstruction": {
+    "composition_logic": "The image is built as a Chinese typographic tunnel. The central plane is a saturated blue tapered rectangle in one-point perspective; the side planes are black walls angled toward a narrow vanishing point. Cropped Chinese letterforms at the edges increase the sense of scale.",
+    "subject_placement": "The subject is mostly typographic. The biggest Chinese glyph or numeric element sits near the lower foreground, while the headline and smaller supporting blocks recede upward along the blue center plane.",
+    "camera_perspective": "Low, close, wide-angle one-point perspective with converging vertical side walls and a compressed vanishing area near the upper center.",
+    "typographic_behavior": "Bold Chinese display glyphs, heavy geometric numerals, and compact Chinese support copy are treated as architecture. Type is skewed, stacked, cropped, and repeated.",
+    "surface_behavior": "Planes are clean and flat, but white letters carry light gray shading or beveled tonal variation that makes them read as flat 3D signage.",
+    "mood": "Urgent, loud, compressed, retail-advertising energy with a blue central sign corridor instead of the source red corridor."
+  },
+  "composition": {
+    "primary_structure": "A central saturated blue trapezoid or vertical runway creates the main path from bottom foreground to top vanishing point.",
+    "secondary_structure": "Black side walls fill the left and right thirds and converge toward the top center, carrying dense distorted Chinese supporting type.",
+    "foreground_scale": "At least one huge white Chinese word, number, or block glyph should be cropped by the bottom or side edge.",
+    "depth_rules": "Elements must shrink rapidly toward the vanishing point. Side text should look attached to wall planes, not floating.",
+    "cropping_rules": "Large edge-cropped Chinese characters are required on both side walls and optional on the central blue plane."
+  },
+  "typography": {
+    "type_style": "Ultra-bold Chinese display type, heavy geometric numerals, blocky sans-serif glyphs, and small compressed Chinese support copy.",
+    "layout": "Stack the main Chinese headline vertically or in compact blocks on the blue plane; pack side walls with angled repetitions and fragments.",
+    "weight": "Use very heavy weights for primary Chinese words and numbers; secondary text may be thinner but still condensed and graphic.",
+    "distortion": "Perspective warp is mandatory. Letters should stretch, taper, and crop according to their wall plane.",
+    "readability": "Exact text accuracy is less important than the feeling of loud Chinese commercial typography; use clear headline fragments where possible."
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "saturated electric blue",
+      "near-black charcoal",
+      "clean white",
+      "pale gray"
+    ],
+    "proportions": "Blue should dominate the center plane, black should dominate the side walls, and white/gray Chinese typography should cover most visible surfaces.",
+    "contrast": "High contrast only. Avoid mid-color palettes and decorative gradients.",
+    "accents": "No extra accent colors unless the case absolutely requires one, and then only as a tiny mark."
+  },
+  "image_treatment": {
+    "rendering_mode": "Crisp flat 3D typographic poster render, vector-like planes, hard edges, subtle tonal shading on white Chinese letters.",
+    "texture": "Mostly smooth digital poster finish, with optional faint print softness or slight edge anti-aliasing.",
+    "lighting": "Simple frontal or overhead graphic lighting, no realistic shadows except mild plane shading.",
+    "finish": "Sharp, high-contrast, poster-ready raster output with no photo grain, no realistic environment, and no hand-drawn texture."
+  },
+  "design_rules": [
+    "Always preserve the blue central perspective plane and black typographic side walls",
+    "Always use oversized white or pale gray Chinese type as the main visual material",
+    "Keep the camera inside the corridor, close to the foreground, with a strong top-center vanishing point",
+    "Use dense supporting Chinese typography on both sides so the image feels loud and compressed",
+    "Change the event topic and text content for each case while keeping the same spatial grammar",
+    "Use numeric emphasis in at least some cases, but avoid the original price and original hour-count story"
+  ],
+  "do": [
+    "Use a narrow Chinese type canyon with strong one-point perspective",
+    "Use a huge foreground Chinese word, number, or glyph on the blue central plane",
+    "Use warped Chinese side-wall text fragments that are cropped by the frame",
+    "Use only blue, black, white, and gray",
+    "Make the poster feel urgent, compressed, and typographically overloaded"
+  ],
+  "avoid": [
+    "Avoid realistic people, realistic products, interior decor, shop shelves, or photographic scenes",
+    "Avoid red center panels, pastel colors, gradients, neon multicolor palettes, beige paper, or multicolor illustration",
+    "Avoid flat front-facing flyer layouts without depth",
+    "Avoid thin elegant type, serif editorial typography, or casual handwriting",
+    "Avoid copying the original bargain-sale text, price, dates, or countdown premise",
+    "Avoid logos, watermarks, QR codes, UI chrome, or platform marks"
+  ],
+  "prompt_template": "Create a raster image in the Blue Chinese Perspective Type Canyon Style. Subject: {SUBJECT}. Action or event: {SUBJECT_ACTION}. Product or prop reference: {PRODUCT_OR_PROP}. Location or setting: {LOCATION}. Background elements: {BACKGROUND_ELEMENTS}. Main Chinese graphic text to suggest: {MAIN_TEXT}. Secondary repeated Chinese text fragments to suggest: {SECONDARY_TEXT}. Accent symbol: {ACCENT_SYMBOL}. Wardrobe or styling direction: {WARDROBE_STYLE}. Aspect ratio: {ASPECT_RATIO}. Preserve these style fidelity anchors: {STYLE_FIDELITY_ANCHORS}. Avoid this source content: {SOURCE_CONTENT_TO_AVOID}. Build the composition as an extreme one-point perspective Chinese typographic corridor: a saturated electric blue central trapezoid plane recedes toward the upper-center vanishing point, with black left and right walls covered in skewed white and pale gray Chinese type fragments. Use huge cropped white Chinese block glyphs or numerals in the foreground, stacked central Chinese headline type on the blue plane, and dense warped side-wall support copy. Keep the palette strictly blue, black, white, and gray. Use clean flat 3D poster rendering, hard-edged vector-like planes, mild gray shading on white Chinese letters, very high contrast, no realistic people, no photographic products, no extra colors, no logos, no watermark. The image should feel like a loud compressed advertising tunnel made entirely from Chinese typography and perspective.",
+  "negative_prompt": "Do not recreate the reference sale poster, original price, original hour count, original Chinese headline, original English phrases, original dates, original side-wall wording, exact layout order, same bargain event, red central plane, logos, brand marks, QR codes, watermarks, usernames, UI screenshots, realistic shop aisles, realistic products, human portraits, pastel palette, multicolor neon palette, beige paper poster, low-density minimalist layout, flat front-facing flyer, serif editorial typography, thin handwriting, collage, photo realism, hand-drawn illustration, SVG, vector-only mockup, HTML layout, or canvas screenshot.",
+  "examples": [
+    {
+      "case_name": "synth-service-desk",
+      "values": {
+        "SUBJECT": "把合成器维修通知变成中文排版通道",
+        "SUBJECT_ACTION": "用高压图形文字宣布维修窗口开放，不使用产品摄影",
+        "PRODUCT_OR_PROP": "抽象波形条、插孔符号、电缆分隔线用白色平面图形呈现",
+        "LOCATION": "虚构地下电子维修走廊",
+        "BACKGROUND_ELEMENTS": "黑色侧板填满倾斜编号、波形词、维修代码和大块白色中文碎片",
+        "MAIN_TEXT": "调音检修",
+        "SECONDARY_TEXT": "信号 / 维修台 / 音量测试 / 接线",
+        "ACCENT_SYMBOL": "!!",
+        "WARDROBE_STYLE": "无人物服装，纯工业中文标识",
+        "STYLE_FIDELITY_ANCHORS": "蓝色跑道面，黑色收束墙，巨大前景中文，中心堆叠标题，密集侧墙文字，硬边平面海报渲染",
+        "SOURCE_CONTENT_TO_AVOID": "不出现促销文案，不出现原价格，不出现原四小时强调，不出现原标题字形"
+      }
+    },
+    {
+      "case_name": "midnight-soup-window",
+      "values": {
+        "SUBJECT": "只用巨大中文文字和数字构成的深夜汤面窗口公告",
+        "SUBJECT_ACTION": "宣布凌晨开档，但不出现人物或真实食物照片",
+        "PRODUCT_OR_PROP": "抽象蒸汽符号、碗形圆弧和箭头融入中文排版",
+        "LOCATION": "虚构的窄巷夜食广告通道",
+        "BACKGROUND_ELEMENTS": "黑色侧墙塞满倾斜菜单碎片、时间码、箭头和浅灰中文小字",
+        "MAIN_TEXT": "凌晨开档",
+        "SECONDARY_TEXT": "热汤 / 夜面 / 末班车 / 三点见",
+        "ACCENT_SYMBOL": ">>>",
+        "WARDROBE_STYLE": "无人物服装，纯中文标识系统",
+        "STYLE_FIDELITY_ANCHORS": "蓝色中心梯形，黑色文字墙，巨大白色前景中文，密集扭曲侧墙小字，硬边平面3D海报",
+        "SOURCE_CONTENT_TO_AVOID": "不出现促销包邮，不出现原价钱，不出现原四小时承诺，不出现原始满意文案"
+      }
+    },
+    {
+      "case_name": "city-night-run",
+      "values": {
+        "SUBJECT": "用中文巨字搭建的城市夜跑报名海报",
+        "SUBJECT_ACTION": "召集城市路线报名，但不画跑者",
+        "PRODUCT_OR_PROP": "赛道箭头、公里标、检查点符号作为中文排版元素",
+        "LOCATION": "由广告板组成的压缩城市地下通道",
+        "BACKGROUND_ELEMENTS": "侧墙布满路线碎片、公里标记、计时码和被裁切的白色中文大字",
+        "MAIN_TEXT": "夜跑报名",
+        "SECONDARY_TEXT": "起点 / 检查点 / 城市路线 / 号码布",
+        "ACCENT_SYMBOL": "#",
+        "WARDROBE_STYLE": "无人物服装，纯运动标识能量",
+        "STYLE_FIDELITY_ANCHORS": "一点透视通道，饱和蓝色中心面，黑色侧墙，白灰中文粗体，巨大前景数字或汉字裁切",
+        "SOURCE_CONTENT_TO_AVOID": "不出现购物促销，不出现原价格，不出现原限时短语，不复制原侧墙词"
+      }
+    },
+    {
+      "case_name": "ferry-blue-gate",
+      "values": {
+        "SUBJECT": "把渡轮登船公告转化为压迫感中文文字通道",
+        "SUBJECT_ACTION": "用巨大时间和路线中文宣布开航窗口",
+        "PRODUCT_OR_PROP": "平面箭头、码头标记、波纹分隔线作为中文排版装饰",
+        "LOCATION": "由黑色和蓝色信息牌构成的抽象候船通道",
+        "BACKGROUND_ELEMENTS": "侧墙加载倾斜站台号、路线缩写、开航碎片和白色时刻表块",
+        "MAIN_TEXT": "即刻登船",
+        "SECONDARY_TEXT": "码头 / 东闸 / 末班船 / 航线",
+        "ACCENT_SYMBOL": "//",
+        "WARDROBE_STYLE": "无人物服装，纯交通公告标识",
+        "STYLE_FIDELITY_ANCHORS": "窄迫一点透视海报通道，蓝色中心面，黑色侧墙，巨大白色前景中文，压缩灰色辅助字，无额外颜色",
+        "SOURCE_CONTENT_TO_AVOID": "不出现原店铺式促销主题，不出现原价格，不出现原限时承诺，不复制墙面短语"
+      }
+    }
+  ]
+}

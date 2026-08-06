@@ -1,0 +1,157 @@
+{
+  "style_name": "Metro Doodle Snapshot Diary",
+  "style_slug": "metro-doodle-snapshot-diary-style",
+  "style_version": "1.0.0",
+  "style_summary": "A handheld urban transit photo-collage style combining realistic crowded metro, bus, tram, or station snapshots with expressive marker-like cartoon doodles, oversized foreground gestures, white handwritten diary notes, and saturated comic face overlays.",
+  "environment_variables": {
+    "SUBJECT": "main person, group, object, or scene focus",
+    "SUBJECT_ACTION": "what the subject is doing",
+    "PRODUCT_OR_PROP": "object, ticket, transit card, phone, bag, food, or symbolic foreground doodle prop",
+    "LOCATION": "dense public urban transit or city location such as metro, bus, tram, platform, station gate, market, convenience store, or escalator",
+    "BACKGROUND_ELEMENTS": "realistic crowd, signage, rails, doors, lights, posters, floor markings, reflections, grime, compression, and phone-photo details",
+    "MAIN_TEXT": "main handwritten diary title",
+    "SECONDARY_TEXT": "small handwritten date, route, mood note, or supporting annotation",
+    "ACCENT_SYMBOL": "separator or decorative symbol such as underline, arrow, sparkle, circle, or route mark",
+    "WARDROBE_STYLE": "casual streetwear, backpacks, hoodies, caps, work jackets, sneakers, practical city clothes",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Preserve the core visual identity: A handheld urban transit photo-collage style combining realistic crowded metro, bus, tram, or station snapshots with expressive marker-like cartoon doodles, oversized foreground gestures, white handwritten diary notes, and saturated comic face overlays.",
+    "Use BACKGROUND_ELEMENTS to control secondary scene details, textures, signage, props, and environmental cues.",
+    "Use a realistic candid phone-photo as the base layer.",
+    "The scene should feel like a real public transit or dense city moment: visible doors, rails, signs, floor markings, lights, scuffed surfaces, reflections, crowd density, practical clothing, and imperfect handheld framing.",
+    "Draw playful comic-marker doodles directly on top of the photo.",
+    "Place loose white handwritten diary text in natural negative space, usually near the upper-left.",
+    "Avoid watermarks, usernames, platform logos, creator IDs, app marks, QR codes, clean vector-only illustration, fully illustrated backgrounds, polished ad layout, empty transit scenes, luxury lighting, perfect symmetry, branded mascots, identifiable celebrities, and tiny unreadable text.",
+    "Keep the same visual genre, density level, and rendering mode across new subjects."
+  ],
+  "source_content_to_avoid": [
+    "watermark",
+    "username",
+    "creator ID",
+    "platform logo",
+    "app mark",
+    "QR code",
+    "clean vector poster",
+    "fully illustrated background",
+    "polished advertising layout",
+    "luxury fashion shoot",
+    "empty train",
+    "sterile studio"
+  ],
+  "visual_deconstruction": {
+    "style_category": "A handheld urban transit photo-collage style combining realistic crowded metro, bus, tram, or station snapshots with expressive marker-like cartoon doodles, oversized foreground gestures, white handwritten diary notes, and saturated comic face overlays.",
+    "composition_logic": "A reusable poster/image system where the subject, prop, location, text, and accent variables change while the layout grammar remains fixed.",
+    "subject_treatment": "The subject is driven by SUBJECT and SUBJECT_ACTION, with wardrobe or visual treatment supplied by WARDROBE_STYLE.",
+    "background_system": "LOCATION and BACKGROUND_ELEMENTS provide the scene, texture, spatial cues, and secondary details without changing the style family.",
+    "type_and_graphics": "MAIN_TEXT, SECONDARY_TEXT, and ACCENT_SYMBOL control readable text, microcopy, stickers, marks, arrows, bursts, or other graphic accents.",
+    "content_boundary": "The negative prompt and source_content_to_avoid list prevent direct recreation of source subjects, marks, brands, watermarks, and story premises."
+  },
+  "image_treatment": {
+    "rendering_mode": "photographic collage",
+    "finish": "finished AI-image prompt output, not a wireframe, SVG, HTML mockup, or raw storyboard note",
+    "texture": "preserve the material, paper, grain, marker, photographic, or print texture described by the style summary and prompt_template",
+    "lighting": "keep the lighting behavior implied by the reference style rather than replacing it with a generic cinematic look"
+  },
+  "composition": {
+    "layout": "Keep the subject hierarchy, crop behavior, framing, and density described by the prompt_template.",
+    "subject": "Use SUBJECT and SUBJECT_ACTION as the primary visual anchor, scaled and positioned according to the style identity.",
+    "scene": "Use LOCATION and BACKGROUND_ELEMENTS for setting detail without changing the visual genre.",
+    "text": "Place MAIN_TEXT and SECONDARY_TEXT as designed graphic elements, not as long paragraphs."
+  },
+  "typography": {
+    "main_text": "MAIN_TEXT should be short, legible, and visually integrated with the poster or image system.",
+    "secondary_text": "SECONDARY_TEXT should read as small caption, label, route note, slogan, or microcopy.",
+    "style": "Match the typography behavior described by the style summary and prompt_template, including scale, distortion, texture, and placement."
+  },
+  "color_palette": {
+    "palette_behavior": "Use the dominant colors, contrast rhythm, and accent-color logic implied by the style summary.",
+    "background": "Keep the background color family consistent with the reference style.",
+    "accents": "Use ACCENT_SYMBOL and graphic marks to carry small high-contrast color moments."
+  },
+  "design_rules": [
+    "Use PRODUCT_OR_PROP as the foreground prop, product cue, or hand-held object.",
+    "Use LOCATION to define the setting while keeping the style-specific crop and atmosphere.",
+    "Use BACKGROUND_ELEMENTS to control secondary scene details, textures, signage, props, and environmental cues.",
+    "Use MAIN_TEXT as the main handwritten diary text.",
+    "Use SECONDARY_TEXT as the small handwritten note, route label, or microcopy.",
+    "Use a realistic candid phone-photo as the base layer.",
+    "The scene should feel like a real public transit or dense city moment: visible doors, rails, signs, floor markings, lights, scuffed surfaces, reflections, crowd density, practical clothing, and imperfect handheld framing."
+  ],
+  "do": [
+    "Replace subjects, props, locations, text, and story details through examples.values.",
+    "Keep prompt_template placeholders declared in environment_variables.",
+    "Preserve the style_fidelity_anchors when adapting the JSON to a new image request.",
+    "Use short, readable text values for MAIN_TEXT and SECONDARY_TEXT."
+  ],
+  "avoid": [
+    "watermark",
+    "username",
+    "creator ID",
+    "platform logo",
+    "app mark",
+    "QR code",
+    "clean vector poster",
+    "fully illustrated background"
+  ],
+  "prompt_template": "Create a {ASPECT_RATIO} image in the \"Metro Doodle Snapshot Diary\" style.\n\nSubject: {SUBJECT}.\nSubject action: {SUBJECT_ACTION}.\nForeground prop or product: {PRODUCT_OR_PROP}.\nLocation: {LOCATION}.\nBackground elements: {BACKGROUND_ELEMENTS}.\nMain handwritten text: \"{MAIN_TEXT}\".\nSecondary handwritten text: \"{SECONDARY_TEXT}\".\nAccent symbol: {ACCENT_SYMBOL}.\nWardrobe style: {WARDROBE_STYLE}.\n\nUse a realistic candid phone-photo as the base layer. The scene should feel like a real public transit or dense city moment: visible doors, rails, signs, floor markings, lights, scuffed surfaces, reflections, crowd density, practical clothing, and imperfect handheld framing.\n\nDraw playful comic-marker doodles directly on top of the photo. Add saturated cartoon face overlays to selected people, thick black sketch outlines, red cheeks, exaggerated noses, messy hair, small sparks, arrows, underlines, and rough marker fill. Add one oversized illustrated foreground hand, ticket, transit card, phone, bag, food item, or gesture that overlaps the lower frame.\n\nPlace loose white handwritten diary text in natural negative space, usually near the upper-left. Keep the text personal, uneven, and marker-like. The final image should feel like a real city snapshot that someone humorously annotated afterward.\n\nAvoid watermarks, usernames, platform logos, creator IDs, app marks, QR codes, clean vector-only illustration, fully illustrated backgrounds, polished ad layout, empty transit scenes, luxury lighting, perfect symmetry, branded mascots, identifiable celebrities, and tiny unreadable text.",
+  "negative_prompt": "watermark, username, creator ID, platform logo, app mark, QR code, clean vector poster, fully illustrated background, polished advertising layout, luxury fashion shoot, empty train, sterile studio, perfect symmetry, glossy mascot illustration, identifiable celebrity, real public figure, tiny unreadable text",
+  "examples": [
+    {
+      "case_name": "Shanghai Metro Crew",
+      "values": {
+        "SUBJECT": "a packed group of young commuters and friends",
+        "SUBJECT_ACTION": "standing shoulder to shoulder inside a subway train doorway",
+        "PRODUCT_OR_PROP": "a giant hot-pink illustrated thumbs-up hand entering from the lower-left",
+        "LOCATION": "crowded Shanghai metro platform and train doorway",
+        "BACKGROUND_ELEMENTS": "Line 9-style station signage, metal train doors, fluorescent car lighting, handrails, platform gap warning strip, crowd, reflections, and phone-camera grain",
+        "MAIN_TEXT": "Shanghai Line 9",
+        "SECONDARY_TEXT": "day 11",
+        "ACCENT_SYMBOL": "underlines, route circle, and small spark marks",
+        "WARDROBE_STYLE": "casual streetwear, hoodies, backpacks, jackets, caps, tote bags, sneakers"
+      }
+    },
+    {
+      "case_name": "Night Bus Friends",
+      "values": {
+        "SUBJECT": "friends and late-night commuters",
+        "SUBJECT_ACTION": "squeezing through a city bus door after work",
+        "PRODUCT_OR_PROP": "a large red cartoon peace-sign hand holding a small bus ticket",
+        "LOCATION": "late-night city bus entrance",
+        "BACKGROUND_ELEMENTS": "yellow grab poles, bus door frame, route sign, rain-specked windows, dim interior lights, reflective pavement, and phone-camera noise",
+        "MAIN_TEXT": "Night Bus",
+        "SECONDARY_TEXT": "last ride / still awake",
+        "ACCENT_SYMBOL": "circled route number, underlines, and sleepy spark marks",
+        "WARDROBE_STYLE": "hoodies, caps, canvas bags, office jackets, sneakers, practical city layers"
+      }
+    },
+    {
+      "case_name": "Airport Train Rush",
+      "values": {
+        "SUBJECT": "travelers with suitcases and backpacks",
+        "SUBJECT_ACTION": "packing into an airport express train doorway",
+        "PRODUCT_OR_PROP": "an oversized pink cartoon hand pointing at a luggage pile",
+        "LOCATION": "airport express train doorway",
+        "BACKGROUND_ELEMENTS": "stainless steel doors, bright train interior, route signage, suitcase clutter, backpack straps, handrails, and phone-photo texture",
+        "MAIN_TEXT": "Airport Express",
+        "SECONDARY_TEXT": "gate soon / don't miss it",
+        "ACCENT_SYMBOL": "arrows, urgency marks, and small stars",
+        "WARDROBE_STYLE": "travel jackets, caps, backpacks, rolling luggage, sneakers, comfortable layers"
+      }
+    },
+    {
+      "case_name": "Market Tram Stop",
+      "values": {
+        "SUBJECT": "vendors, students, and shoppers",
+        "SUBJECT_ACTION": "waiting near an old tram entrance with bags and snacks",
+        "PRODUCT_OR_PROP": "a large coral-pink cartoon hand holding a transit card close to the lens",
+        "LOCATION": "old tram stop beside a busy market street",
+        "BACKGROUND_ELEMENTS": "tram doorway, market signs, snack bags, street platform edge, old vehicle paint, soft daylight, crowd density, and casual phone snapshot texture",
+        "MAIN_TEXT": "Market Loop",
+        "SECONDARY_TEXT": "tiny adventure",
+        "ACCENT_SYMBOL": "route circle, arrow marks, and hand-drawn stamp",
+        "WARDROBE_STYLE": "practical city layers, tote bags, hoodies, caps, plaid pants, sneakers"
+      }
+    }
+  ]
+}

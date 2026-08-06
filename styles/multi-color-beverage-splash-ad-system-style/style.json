@@ -1,0 +1,197 @@
+{
+  "style_name": "Multi-Color Beverage Splash Ad System Style",
+  "style_slug": "multi-color-beverage-splash-ad-system-style",
+  "style_version": "2.1",
+  "style_summary": "A reusable beverage launch advertising system with four color-varied templates, built from giant white 3D typography, a diagonal hero drink pack, frozen liquid motion, dense launch-ad copy, and polished commercial product lighting.",
+  "environment_variables": {
+    "SUBJECT": "main subject",
+    "SUBJECT_ACTION": "main action",
+    "PRODUCT_OR_PROP": "object, product, or prop",
+    "LOCATION": "environment or setting",
+    "BACKGROUND_ELEMENTS": "secondary scene details",
+    "MAIN_TEXT": "main headline or graphic text",
+    "SECONDARY_TEXT": "small supporting text or microcopy",
+    "ACCENT_SYMBOL": "separator or decorative symbol",
+    "WARDROBE_STYLE": "styling direction",
+    "STYLE_FIDELITY_ANCHORS": "observable style traits that must remain visible",
+    "SOURCE_CONTENT_TO_AVOID": "literal source content that generated samples must not recreate",
+    "ASPECT_RATIO": "9:16 or 16:9",
+    "PRODUCT_CATEGORY": "beverage category",
+    "DELIVERY_FORMAT": "retail or media deliverable",
+    "PRIMARY_COLOR": "dominant drink-category color",
+    "SECONDARY_COLOR": "supporting drink-category color"
+  },
+  "style_fidelity_anchors": [
+    "Each case uses one strong drink-category color system rather than a generic rainbow palette.",
+    "Large white extruded block letters remain the main background architecture.",
+    "The drink pack is the single close-up hero object, angled diagonally and cropped with impact.",
+    "Splash, foam, ice, bubbles, or condensation are frozen in high-speed product-ad lighting.",
+    "Typography is bold, condensed, italic, mostly white, and stacked into tight ad-copy blocks.",
+    "The image feels like beverage launch material rather than a lifestyle photo or generic product render.",
+    "Retail or media delivery context is visible through format cues without cluttered scene realism.",
+    "Layout density stays high, with little empty space and strong product hierarchy.",
+    "The largest type reads as dimensional set construction rather than flat poster text.",
+    "Every sample changes product category, palette, headline, and delivery context while preserving the same visual grammar."
+  ],
+  "source_content_to_avoid": [
+    "Do not use Sprite, Coca-Cola, the original Korean text, or copied brand/logotype styling.",
+    "Do not recreate the exact green can, lemon-lime soft drink premise, 355ml label, or Z/E/R/O block-letter arrangement.",
+    "Do not use the exact source slogan, NEW burst, legal microcopy, watermark, or brand signature marks.",
+    "Do not imply an existing real beverage brand; use fictional clean packaging only.",
+    "Low-sugar or zero-sugar claims are allowed only as generic fictional beverage copy, not copied source branding."
+  ],
+  "visual_deconstruction": {
+    "composition_logic": "A strong beverage-category color fills the field, giant white extruded letters create dimensional advertising architecture, and one drink pack bursts diagonally forward through frozen liquid motion.",
+    "subject_placement": "The drink pack sits near the center third, cropped large, tilted diagonally, and layered between foreground splash and background type.",
+    "camera_perspective": "Close commercial product-ad perspective with slight wide-angle energy, high depth, and strong retail-impact scale.",
+    "typography_behavior": "Huge white condensed italic letters act as physical stage pieces while headline text stays stacked, short, and channel-readable.",
+    "color_behavior": "The source's monochrome green discipline becomes a controlled per-template palette, with white 3D type as the constant visual anchor.",
+    "delivery_behavior": "9:16 favors store posters, fridge stickers, and Xiaohongshu covers; 16:9 favors subway lightboxes, brand KV, and retail display backdrops."
+  },
+  "composition": {
+    "layout": "Dense beverage launch layout with a single diagonal drink pack, massive dimensional background type, and foreground splash crossing the frame.",
+    "hierarchy": "Template color first, white type architecture second, hero drink pack third, splash motion fourth, delivery-context cues fifth.",
+    "cropping": "Close crop with product, letters, and splash occasionally pushing beyond the edge.",
+    "negative_space": "Minimal empty space; readability comes from color discipline, large shapes, and one dominant product."
+  },
+  "typography": {
+    "primary": "Huge white extruded block letters, bold condensed sans-serif, italic or slanted, with color-matched side shadows.",
+    "headline": "Short fictional beverage launch copy in heavy condensed italic white type, stacked and angled.",
+    "secondary": "Compact supporting copy, such as low sugar, ice brew, sparkling, recharge, or fresh tea, with no legal copy.",
+    "placement": "Headlines wrap around the hero pack or sit in top-left and lower-right blocks, tilted to reinforce the diagonal product axis."
+  },
+  "color_palette": {
+    "template_1": [
+      "lemon yellow",
+      "tea amber",
+      "white",
+      "tiny fresh green accent"
+    ],
+    "template_2": [
+      "ice cyan",
+      "clear blue",
+      "silver",
+      "white",
+      "tiny lime accent"
+    ],
+    "template_3": [
+      "electric orange",
+      "cobalt blue",
+      "white",
+      "tiny neon yellow accent"
+    ],
+    "template_4": [
+      "mocha brown",
+      "cream white",
+      "cold teal",
+      "silver",
+      "tiny amber accent"
+    ],
+    "palette_behavior": "Use the case's primary and secondary colors as the dominant field and shadows, while keeping white 3D type and transparent liquid effects consistent."
+  },
+  "image_treatment": {
+    "rendering_mode": "Photoreal commercial beverage packaging and studio retouching combined with graphic 3D typography.",
+    "lighting": "High-speed flash feel, hard glossy highlights, crisp shadows, and cold beverage-surface contrast.",
+    "surface": "Condensation, frost, bubbles, ice, foam, coffee swirl, or tea splash should make the drink feel cold and tactile.",
+    "effects": "Transparent liquid sheets, droplets, ice pieces, bubbles, foam, or mist should cross both foreground and background depth layers."
+  },
+  "design_rules": [
+    "Use one fictional beverage product only in each generated sample.",
+    "Make the white 3D typography large enough to act as physical retail-ad architecture.",
+    "Keep the drink pack diagonal, glossy, cold, and close-up.",
+    "Change the color palette intentionally by beverage category across the four templates.",
+    "Make the delivery format visible through composition, crop, display cues, or lightbox framing.",
+    "Use condensed italic white headline text and keep the copy short enough for retail media.",
+    "Preserve commercial polish and avoid handmade collage, flat vector, or lifestyle photography."
+  ],
+  "do": [
+    "Use beverage categories such as lemon tea, sparkling water, carbonated drinks, energy drinks, iced coffee, sports drinks, and low or zero sugar drinks.",
+    "Make four templates visibly different in color while keeping the same 3D type and splash logic.",
+    "Treat 9:16 and 16:9 as delivery adaptations of one campaign idea.",
+    "Keep product packaging fictional, clean, and commercially plausible.",
+    "Preserve the high-impact launch-ad feeling of the reference."
+  ],
+  "avoid": [
+    "Do not reuse the original green Sprite-like can or exact soda story.",
+    "Do not use real brand names, existing logos, Korean source text, or watermarks.",
+    "Do not make ordinary packshot images without giant dimensional type.",
+    "Do not make over-detailed retail environments that bury the drink.",
+    "Do not treat color variation as random gradients instead of drink-category palettes."
+  ],
+  "prompt_template": "Create a {ASPECT_RATIO} beverage launch advertisement in the Multi-Color Beverage Splash Ad System style for {PRODUCT_CATEGORY} and {DELIVERY_FORMAT}. Preserve these style anchors: one strong drink-category color system; giant white extruded block-letter architecture behind the product; one large diagonal fictional beverage pack cropped close near center; frozen splash, foam, ice, bubbles, condensation, or liquid sheets across the foreground; bold condensed italic white stacked headline typography; polished studio beverage lighting with crisp highlights; dense retail-ad layout with strong product hierarchy; delivery-context cues that stay secondary to the hero drink. Use {PRIMARY_COLOR} as the dominant field and {SECONDARY_COLOR} for shadows, side planes, liquid tint, or packaging accents. Replace all source content. Do not use Sprite, Coca-Cola, copied Korean text, copied Z/E/R/O layout, original green can, existing beverage logo, real brand name, watermark, QR code, legal microcopy, or exact source slogan. New content: {SUBJECT} is {SUBJECT_ACTION} with {PRODUCT_OR_PROP} in {LOCATION}. Background details: {BACKGROUND_ELEMENTS}. Main headline text: {MAIN_TEXT}. Secondary supporting text: {SECONDARY_TEXT}. Accent symbol: {ACCENT_SYMBOL}. Styling direction: {WARDROBE_STYLE}. Adapt the composition to {ASPECT_RATIO}: 9:16 should feel usable as a vertical store poster, fridge sticker, or Xiaohongshu cover; 16:9 should feel usable as a subway lightbox, brand launch KV, or supermarket display backdrop. Use photoreal commercial beverage retouching, transparent frozen liquid motion, glossy cold surfaces, crisp contrast, and a fresh kinetic launch-ad mood.",
+  "negative_prompt": "Sprite, Coca-Cola, real brand logo, copied Korean text, copied Z E R O layout, exact source composition, original green soda can, 355ml label, existing beverage trademark, watermark, QR code, platform UI, creator signature, legal microcopy, flat vector art, scrapbook collage, manga panel, lifestyle photo, ordinary packshot, messy supermarket aisle, many small products, unreadable tiny packaging claims, low-resolution render",
+  "examples": [
+    {
+      "case_name": "lemon-tea-store-poster",
+      "values": {
+        "PRODUCT_CATEGORY": "low-sugar lemon tea",
+        "DELIVERY_FORMAT": "offline store poster and launch KV adaptation",
+        "PRIMARY_COLOR": "sunny lemon yellow",
+        "SECONDARY_COLOR": "tea amber with clean white",
+        "SUBJECT": "a fictional bottled low-sugar lemon tea",
+        "SUBJECT_ACTION": "bursting diagonally through tea splash, lemon mist, and ice shards",
+        "PRODUCT_OR_PROP": "a clear bottle with amber tea liquid, lemon-yellow label bands, and a tiny green freshness seal",
+        "LOCATION": "a clean retail poster studio space",
+        "BACKGROUND_ELEMENTS": "giant white extruded letters spelling ZEST as abstract 3D blocks, amber side shadows, lemon slices as splash accents",
+        "MAIN_TEXT": "LEMON ZEST",
+        "SECONDARY_TEXT": "low sugar / fresh tea / ice cold",
+        "ACCENT_SYMBOL": "tiny green leaf seal",
+        "WARDROBE_STYLE": "no people, bright bottled-tea product styling"
+      }
+    },
+    {
+      "case_name": "zero-sparkling-cooler-sticker",
+      "values": {
+        "PRODUCT_CATEGORY": "zero-sugar sparkling water",
+        "DELIVERY_FORMAT": "fridge-door sticker and cold-shelf promotion",
+        "PRIMARY_COLOR": "ice cyan",
+        "SECONDARY_COLOR": "clear blue silver",
+        "SUBJECT": "a fictional zero-sugar sparkling water can",
+        "SUBJECT_ACTION": "punching forward through carbonation bubbles, frost, and clear water spray",
+        "PRODUCT_OR_PROP": "a slim silver can with cyan glassy bands and a small lime accent dot",
+        "LOCATION": "a chilled glass-door cooler advertising surface",
+        "BACKGROUND_ELEMENTS": "oversized white 3D letters spelling BUBBLE as cropped blocks, frost halos, cold glass reflections",
+        "MAIN_TEXT": "ZERO BUBBLE",
+        "SECONDARY_TEXT": "0 sugar / sharp fizz / cold rush",
+        "ACCENT_SYMBOL": "tiny lime dot",
+        "WARDROBE_STYLE": "no people, clean zero-sugar sparkling drink styling"
+      }
+    },
+    {
+      "case_name": "energy-sports-display-stack",
+      "values": {
+        "PRODUCT_CATEGORY": "energy and sports drink",
+        "DELIVERY_FORMAT": "supermarket display-stack key visual",
+        "PRIMARY_COLOR": "electric orange",
+        "SECONDARY_COLOR": "cobalt blue",
+        "SUBJECT": "a fictional energy sports drink bottle",
+        "SUBJECT_ACTION": "charging upward through electrolyte splash, ice fragments, and speed streak droplets",
+        "PRODUCT_OR_PROP": "a tall orange sports bottle with cobalt blue cap, white label stripe, and neon yellow charge tab",
+        "LOCATION": "a simplified supermarket display backdrop",
+        "BACKGROUND_ELEMENTS": "massive white extruded letters spelling CHARGE as retail display blocks, blue side shadows, subtle stacked-display plinths",
+        "MAIN_TEXT": "CHARGE UP",
+        "SECONDARY_TEXT": "electrolyte / fast refresh / active day",
+        "ACCENT_SYMBOL": "neon yellow lightning tab",
+        "WARDROBE_STYLE": "no athlete model, pure performance beverage product styling"
+      }
+    },
+    {
+      "case_name": "iced-coffee-lightbox-kv",
+      "values": {
+        "PRODUCT_CATEGORY": "iced coffee",
+        "DELIVERY_FORMAT": "subway lightbox, Xiaohongshu new-product cover, and brand launch KV",
+        "PRIMARY_COLOR": "mocha brown",
+        "SECONDARY_COLOR": "cream white with cold teal",
+        "SUBJECT": "a fictional iced coffee cup",
+        "SUBJECT_ACTION": "tilting diagonally through coffee swirl, crushed ice, and creamy foam arcs",
+        "PRODUCT_OR_PROP": "a clear iced coffee cup with mocha liquid, cream foam cap, teal label band, and silver straw",
+        "LOCATION": "a glossy backlit media-poster studio space",
+        "BACKGROUND_ELEMENTS": "giant white extruded letters spelling BREW as cropped lightbox forms, cream side shadows, cold teal glow",
+        "MAIN_TEXT": "ICE BREW",
+        "SECONDARY_TEXT": "cold coffee / creamy hit / light sweet",
+        "ACCENT_SYMBOL": "tiny amber bean dot",
+        "WARDROBE_STYLE": "no people, premium iced-coffee launch styling"
+      }
+    }
+  ]
+}

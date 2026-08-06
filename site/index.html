@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Visual Prompt Cookbook</title>
+    <meta name="description" content="Browse 90+ plug-and-play visual prompt styles for AI image generation. Copy a style.json, replace the variables, keep the visual system.">
+    <link rel="canonical" href="https://vigozhao.github.io/AI-Visual-Prompt-Cookbook/site/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI Visual Prompt Cookbook">
+    <meta property="og:title" content="AI Visual Prompt Cookbook — plug-and-play styles for AI image generation">
+    <meta property="og:description" content="Browse 90+ reusable visual prompt styles. Copy a style.json, replace the variables, keep the visual system.">
+    <meta property="og:url" content="https://vigozhao.github.io/AI-Visual-Prompt-Cookbook/site/">
+    <meta property="og:image" content="https://vigozhao.github.io/AI-Visual-Prompt-Cookbook/assets/og-card.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Visual Prompt Cookbook — plug-and-play styles for AI image generation">
+    <meta name="twitter:description" content="Browse 90+ reusable visual prompt styles. Copy a style.json, replace the variables, keep the visual system.">
+    <meta name="twitter:image" content="https://vigozhao.github.io/AI-Visual-Prompt-Cookbook/assets/og-card.jpg">
+    <meta name="twitter:site" content="@VigoCreativeAI">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./favicon-180.png">
+    <link rel="icon" href="./favicon-32.png" type="image/png" sizes="32x32">
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem("cookbook-theme") || "dark";
+      } catch {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css?v=lamp-pull-18">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="app-header">
+        <div class="lamp-glow" aria-hidden="true"></div>
+        <svg class="lamp-fixture" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path
+            class="shade-body"
+            d="M 22 0 L 38 0 L 50 28 L 10 28 Z"
+            stroke="rgba(163, 230, 53, 0.4)"
+            stroke-width="0.5"
+          />
+          <ellipse class="shade-opening" cx="30" cy="28" rx="20" ry="3" />
+          <defs>
+            <linearGradient id="shadeGradientDark" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2a2520" />
+              <stop offset="100%" stop-color="#4a3d28" />
+            </linearGradient>
+            <linearGradient id="shadeGradientLight" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f5efe0" />
+              <stop offset="100%" stop-color="#d9d0bc" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <button class="lamp-pull" id="themePullSwitch" type="button" aria-label="Toggle theme">
+          <span class="lamp-pull__cord" aria-hidden="true"></span>
+          <span class="lamp-pull__bead" aria-hidden="true"></span>
+        </button>
+        <div class="hero-copy">
+          <p class="eyebrow">AI Visual Prompt Cookbook</p>
+          <h1>Reusable Visual Prompt Systems</h1>
+          <p class="hero-lede">
+            Browse 66 reusable image prompt styles with previews, copy-ready prompts, and source JSON.
+          </p>
+          <p class="byline">
+            Curated by <a href="https://x.com/VigoCreativeAI">Vigo Zhao</a>, an AI-native
+            visual systems builder focused on reusable prompt design and image workflow patterns.
+          </p>
+        </div>
+        <div class="hero-side">
+          <nav class="header-actions" aria-label="Primary links">
+            <a href="../README.md">README</a>
+            <a href="../docs/CATALOG.md">Catalog</a>
+            <a href="#curator">About</a>
+            <a href="https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook">GitHub</a>
+          </nav>
+          <section class="creator-card" aria-label="Curator">
+            <img class="creator-avatar" src="assets/vigo-avatar.jpg" alt="Vigo Zhao portrait">
+            <div>
+              <p class="creator-label">Curator</p>
+              <h2>Vigo Zhao</h2>
+              <p>Qwen Ambassador · Designer × AI Engineer · AI visual workflow builder</p>
+              <div class="creator-links">
+                <a href="https://x.com/VigoCreativeAI">@VigoCreativeAI</a>
+                <a href="https://github.com/VigoZhao">GitHub</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <section class="control-bar" aria-label="Style filters">
+        <label class="search-box">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="doodle, product, travel, manga...">
+        </label>
+        <div class="category-strip" id="categoryStrip"></div>
+      </section>
+
+      <section class="status-row" aria-live="polite">
+        <strong id="resultCount">0 styles</strong>
+        <span id="activeFilter">All categories</span>
+      </section>
+
+      <section class="featured-section" aria-labelledby="featuredTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Latest drop</p>
+          <h2 id="featuredTitle">Featured Styles</h2>
+        </div>
+        <div class="featured-grid" id="featuredGrid"></div>
+      </section>
+
+      <section aria-labelledby="galleryTitle">
+        <div class="section-heading gallery-heading">
+          <p class="eyebrow">Full library</p>
+          <h2 id="galleryTitle">All Styles</h2>
+        </div>
+        <div class="style-grid" id="styleGrid"></div>
+        <p class="empty-state" id="emptyState" hidden>No matching styles.</p>
+      </section>
+
+      <section class="curator-section" id="curator" aria-labelledby="curatorTitle">
+        <div>
+          <p class="eyebrow">About the curator</p>
+          <h2 id="curatorTitle">Designed and maintained by Vigo Zhao</h2>
+        </div>
+        <p>
+          This cookbook is a living collection of AI-native visual prompt systems: each style is
+          distilled into structured JSON, paired with previews, and kept reusable across subjects,
+          formats, and image workflows.
+        </p>
+        <div class="curator-actions">
+          <a href="https://x.com/VigoCreativeAI">Follow on X</a>
+          <a href="https://github.com/VigoZhao">View GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="detail-panel" id="detailPanel" aria-hidden="true">
+      <div class="detail-scrim" data-close-detail></div>
+      <section class="detail-sheet" aria-label="Style details">
+        <button class="close-button" type="button" data-close-detail aria-label="Close details">×</button>
+        <div id="detailContent"></div>
+      </section>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="styles-data.js?v=styles-66"></script>
+    <script src="app.js?v=lamp-pull-18"></script>
+  </body>
+</html>

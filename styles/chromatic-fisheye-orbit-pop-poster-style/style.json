@@ -1,0 +1,159 @@
+{
+  "style_name": "Chromatic Fisheye Orbit Pop Poster Style",
+  "style_slug": "chromatic-fisheye-orbit-pop-poster-style",
+  "style_version": "2026.05.18",
+  "style_summary": "A high-key pop poster system built from extreme fisheye photography, a convex glass-dome center, oversized orbiting typography, hot red-magenta-orange letter fills, aqua chromatic light arcs, and light analog print texture.",
+  "environment_variables": {
+    "SUBJECT": "main person, duo, small crew, performer, maker, athlete, courier, scientist, chef, or product model",
+    "SUBJECT_ACTION": "leaning over a fisheye lens, crouching inside a circular dome, looking down toward camera, reaching across frame, presenting a prop, or sitting in a compressed lens bubble",
+    "PRODUCT_OR_PROP": "featured object, tool, instrument, product, bag, scooter, plant module, cooler, synth, sports gear, or food item",
+    "LOCATION": "clean studio, greenhouse lab, indoor market, sports court, workshop, museum atrium, transit hall, or bright exhibition space",
+    "BACKGROUND_ELEMENTS": "white negative space, circular glass distortion, cyan light streaks, faint radial smears, cropped typography fragments, small caption block, prism reflections, or color bleed",
+    "MAIN_TEXT": "short headline or event title, usually 1 to 3 words, set as huge warped orbiting type",
+    "SECONDARY_TEXT": "small date line, venue note, issue code, route note, product edition, or editorial caption",
+    "ACCENT_SYMBOL": "thin cyan arc, prism slash, small sparkle, curved underline, tiny divider, or chrome-like lens glint",
+    "WARDROBE_STYLE": "saturated fashion layers, translucent jacket, glossy sportswear, feathered texture, oversized pants, clean utility uniform, or color-blocked editorial styling",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Preserve the core visual identity: A high-key pop poster system built from extreme fisheye photography, a convex glass-dome center, oversized orbiting typography, hot red-magenta-orange letter fills, aqua chromatic light arcs, and light analog print texture.",
+    "Photography: build a finished high-key pop culture poster, not a sketch.",
+    "Use an extreme fisheye or convex glass-dome viewpoint from below, with the subject centered inside a circular lens bubble.",
+    "Keep people, props, hair, fabric, and hands photographic and realistic while allowing wide-angle edge distortion.",
+    "Layout: keep the surrounding field mostly warm off-white and pale grey so the graphic system has open space.",
+    "Hold the subject in a central circular dome and let the composition feel off-axis, kinetic, and orbiting without cluttering the center.",
+    "Typography: set MAIN_TEXT as huge heavy display typography warped around the circular lens.",
+    "Crop the headline at multiple frame edges and fill the letters with hot vermilion, orange, red, and fluorescent magenta ink texture.",
+    "Graphic system: include ACCENT_SYMBOL, aqua/cyan light arcs, prism smears, faint chromatic aberration, radial motion blur near the rim, subtle analog grain, screenprint speckle, and slight color bleed.",
+    "Avoid: watermarks, usernames, creator IDs, QR codes, platform logos, app interface marks, copied reference people, copied event text, copied venue text, copied exact pose, exact YOASOBI text, exact anniversary wording, long paragraph text, tiny crowded text, flat vector substitutes, SVG look, HTML mockup, canvas drawing, corporate minimalist poster, muted beige-only palette, dark nightclub scene, cyberpunk darkness, luxury studio calm, fake brand logos, distorted unreadable faces, extra limbs, and misshapen hands."
+  ],
+  "source_content_to_avoid": [
+    "watermark",
+    "username",
+    "creator ID",
+    "QR code",
+    "platform logo",
+    "app interface",
+    "copied reference person",
+    "copied reference event text",
+    "copied venue",
+    "copied exact pose",
+    "exact YOASOBI text",
+    "exact anniversary wording"
+  ],
+  "visual_deconstruction": {
+    "style_category": "A high-key pop poster system built from extreme fisheye photography, a convex glass-dome center, oversized orbiting typography, hot red-magenta-orange letter fills, aqua chromatic light arcs, and light analog print texture.",
+    "composition_logic": "A reusable poster/image system where the subject, prop, location, text, and accent variables change while the layout grammar remains fixed.",
+    "subject_treatment": "The subject is driven by SUBJECT and SUBJECT_ACTION, with wardrobe or visual treatment supplied by WARDROBE_STYLE.",
+    "background_system": "LOCATION and BACKGROUND_ELEMENTS provide the scene, texture, spatial cues, and secondary details without changing the style family.",
+    "type_and_graphics": "MAIN_TEXT, SECONDARY_TEXT, and ACCENT_SYMBOL control readable text, microcopy, stickers, marks, arrows, bursts, or other graphic accents.",
+    "content_boundary": "The negative prompt and source_content_to_avoid list prevent direct recreation of source subjects, marks, brands, watermarks, and story premises."
+  },
+  "image_treatment": {
+    "rendering_mode": "print-textured poster illustration/collage",
+    "finish": "finished AI-image prompt output, not a wireframe, SVG, HTML mockup, or raw storyboard note",
+    "texture": "preserve the material, paper, grain, marker, photographic, or print texture described by the style summary and prompt_template",
+    "lighting": "keep the lighting behavior implied by the reference style rather than replacing it with a generic cinematic look"
+  },
+  "composition": {
+    "layout": "Keep the subject hierarchy, crop behavior, framing, and density described by the prompt_template.",
+    "subject": "Use SUBJECT and SUBJECT_ACTION as the primary visual anchor, scaled and positioned according to the style identity.",
+    "scene": "Use LOCATION and BACKGROUND_ELEMENTS for setting detail without changing the visual genre.",
+    "text": "Place MAIN_TEXT and SECONDARY_TEXT as designed graphic elements, not as long paragraphs."
+  },
+  "typography": {
+    "main_text": "MAIN_TEXT should be short, legible, and visually integrated with the poster or image system.",
+    "secondary_text": "SECONDARY_TEXT should read as small caption, label, route note, slogan, or microcopy.",
+    "style": "Match the typography behavior described by the style summary and prompt_template, including scale, distortion, texture, and placement."
+  },
+  "color_palette": {
+    "palette_behavior": "Use the dominant colors, contrast rhythm, and accent-color logic implied by the style summary.",
+    "background": "Keep the background color family consistent with the reference style.",
+    "accents": "Use ACCENT_SYMBOL and graphic marks to carry small high-contrast color moments."
+  },
+  "design_rules": [
+    "Include PRODUCT_OR_PROP as a clear foreground object or visual anchor.",
+    "Use WARDROBE_STYLE for clothing, styling, surface treatment, and character details.",
+    "Photography: build a finished high-key pop culture poster, not a sketch.",
+    "Use an extreme fisheye or convex glass-dome viewpoint from below, with the subject centered inside a circular lens bubble.",
+    "Keep people, props, hair, fabric, and hands photographic and realistic while allowing wide-angle edge distortion.",
+    "Layout: keep the surrounding field mostly warm off-white and pale grey so the graphic system has open space.",
+    "Hold the subject in a central circular dome and let the composition feel off-axis, kinetic, and orbiting without cluttering the center."
+  ],
+  "do": [
+    "Replace subjects, props, locations, text, and story details through examples.values.",
+    "Keep prompt_template placeholders declared in environment_variables.",
+    "Preserve the style_fidelity_anchors when adapting the JSON to a new image request.",
+    "Use short, readable text values for MAIN_TEXT and SECONDARY_TEXT."
+  ],
+  "avoid": [
+    "watermark",
+    "username",
+    "creator ID",
+    "QR code",
+    "platform logo",
+    "app interface",
+    "copied reference person",
+    "copied reference event text"
+  ],
+  "prompt_template": "Create an image in chromatic-fisheye-orbit-pop-poster-style.\n\nAspect ratio: {ASPECT_RATIO}.\n\nScene: {SUBJECT} {SUBJECT_ACTION}, featuring {PRODUCT_OR_PROP}, in {LOCATION}. Include {BACKGROUND_ELEMENTS}. Style the subject with {WARDROBE_STYLE}.\n\nPhotography: build a finished high-key pop culture poster, not a sketch. Use an extreme fisheye or convex glass-dome viewpoint from below, with the subject centered inside a circular lens bubble. Keep people, props, hair, fabric, and hands photographic and realistic while allowing wide-angle edge distortion.\n\nLayout: keep the surrounding field mostly warm off-white and pale grey so the graphic system has open space. Hold the subject in a central circular dome and let the composition feel off-axis, kinetic, and orbiting without cluttering the center.\n\nTypography: set \"{MAIN_TEXT}\" as huge heavy display typography warped around the circular lens. Crop the headline at multiple frame edges and fill the letters with hot vermilion, orange, red, and fluorescent magenta ink texture. Add \"{SECONDARY_TEXT}\" only as a small red editorial caption block in a quiet corner.\n\nGraphic system: include {ACCENT_SYMBOL}, aqua/cyan light arcs, prism smears, faint chromatic aberration, radial motion blur near the rim, subtle analog grain, screenprint speckle, and slight color bleed. The result should feel like a contemporary music, fashion, or culture campaign viewed through a warped circular lens.\n\nAvoid: watermarks, usernames, creator IDs, QR codes, platform logos, app interface marks, copied reference people, copied event text, copied venue text, copied exact pose, exact YOASOBI text, exact anniversary wording, long paragraph text, tiny crowded text, flat vector substitutes, SVG look, HTML mockup, canvas drawing, corporate minimalist poster, muted beige-only palette, dark nightclub scene, cyberpunk darkness, luxury studio calm, fake brand logos, distorted unreadable faces, extra limbs, and misshapen hands.",
+  "negative_prompt": "watermark, username, creator ID, QR code, platform logo, app interface, copied reference person, copied reference event text, copied venue, copied exact pose, exact YOASOBI text, exact anniversary wording, long paragraph text, tiny crowded text, flat vector substitute, SVG look, HTML mockup, canvas drawing, corporate minimalist poster, muted beige-only palette, dark nightclub scene, cyberpunk darkness, luxury studio calm, fake brand logo, distorted unreadable faces, extra limbs, misshapen hands",
+  "examples": [
+    {
+      "case_name": "Lunar Plant Lab",
+      "values": {
+        "SUBJECT": "two adult greenhouse researchers",
+        "SUBJECT_ACTION": "leaning over a fisheye lens and presenting a seed capsule",
+        "PRODUCT_OR_PROP": "clear seed capsule and tiny grow light",
+        "LOCATION": "bright white plant lab",
+        "BACKGROUND_ELEMENTS": "central convex glass-dome distortion, warm off-white negative space, aqua cyan light arcs, prism smears, and subtle screenprint grain",
+        "MAIN_TEXT": "BLOOM LOOP",
+        "SECONDARY_TEXT": "greenhouse trial / 07.18",
+        "ACCENT_SYMBOL": "thin aqua cyan orbit arc",
+        "WARDROBE_STYLE": "translucent pink and mint utility jackets, oversized soft pants, clean gloves, and realistic photographic faces"
+      }
+    },
+    {
+      "case_name": "Glass Scooter Market",
+      "values": {
+        "SUBJECT": "adult courier",
+        "SUBJECT_ACTION": "leaning toward the lens while parking a compact scooter",
+        "PRODUCT_OR_PROP": "compact silver electric scooter",
+        "LOCATION": "bright glass-roof market",
+        "BACKGROUND_ELEMENTS": "pale market shapes inside the circular dome, cropped orbiting type, aqua cyan arcs, prism glints, and screenprint speckle",
+        "MAIN_TEXT": "ZIP MKT",
+        "SECONDARY_TEXT": "fresh route / bay 04",
+        "ACCENT_SYMBOL": "chrome-like lens glint",
+        "WARDROBE_STYLE": "glossy coral and white sportswear with gloves and realistic photographic fabric"
+      }
+    },
+    {
+      "case_name": "Ice Cream Relay",
+      "values": {
+        "SUBJECT": "two adult relay runners",
+        "SUBJECT_ACTION": "leaning over the lens with a chrome cooler",
+        "PRODUCT_OR_PROP": "chrome cooler filled with colorful ice cream cups",
+        "LOCATION": "bright indoor track",
+        "BACKGROUND_ELEMENTS": "warm off-white field, faint track details, huge orbiting headline type, cyan refraction arcs, prism glints, and color bleed",
+        "MAIN_TEXT": "SWEET RUN",
+        "SECONDARY_TEXT": "lap note / chilled pace",
+        "ACCENT_SYMBOL": "tiny sparkle accent",
+        "WARDROBE_STYLE": "playful strawberry-pink and white training outfits with realistic fabric and faces"
+      }
+    },
+    {
+      "case_name": "Signal Ring Workshop",
+      "values": {
+        "SUBJECT": "electronic musician and sound technician",
+        "SUBJECT_ACTION": "adjusting a compact modular synthesizer",
+        "PRODUCT_OR_PROP": "modular synth and glowing patch cables",
+        "LOCATION": "clean white synth workshop",
+        "BACKGROUND_ELEMENTS": "convex glass-dome photo bubble, aqua audio-wave arcs, prism reflections, chromatic aberration, analog grain, and warm off-white negative space",
+        "MAIN_TEXT": "SIGNAL RING",
+        "SECONDARY_TEXT": "studio patch / take 12",
+        "ACCENT_SYMBOL": "aqua cyan audio-wave arc",
+        "WARDROBE_STYLE": "saturated magenta sleeves, aqua gloves, black utility pants, and realistic photographic skin, hair, cables, and knobs"
+      }
+    }
+  ]
+}

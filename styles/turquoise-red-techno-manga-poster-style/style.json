@@ -1,0 +1,157 @@
+{
+  "style_name": "Turquoise Red Techno Manga Poster Style",
+  "style_slug": "turquoise-red-techno-manga-poster-style",
+  "style_version": "2026.05.19",
+  "style_summary": "A retro techno-manga poster system with a cream paper ground, huge red display lettering, turquoise technical clothing or hardware, dense mechanical linework, annotation panels, cel-shaded figure drawing, and slightly faded printed texture.",
+  "environment_variables": {
+    "SUBJECT": "main illustrated subject, such as a technician, courier, repair worker, field researcher, designer, or compact service robot",
+    "SUBJECT_ACTION": "clear action or pose that is not riding a motorcycle, such as calibrating, carrying, repairing, waiting, documenting, or balancing a device",
+    "PRODUCT_OR_PROP": "new technical prop, device, kit, machine, container, tool, module, backpack, drone, instrument, or field apparatus",
+    "LOCATION": "implied poster setting or environment, such as transit depot, greenhouse lab, harbor workshop, rooftop weather station, compact studio, or spaceport service bay",
+    "BACKGROUND_ELEMENTS": "oversized headline, cream negative space, technical callout panel, tiny labels, gauges, diagram boxes, accent bars, serial marks, and small interface fragments",
+    "MAIN_TEXT": "new oversized display headline, never copied from the reference",
+    "SECONDARY_TEXT": "small fictional labels, serial marks, diagram notes, and decorative micro text",
+    "ACCENT_SYMBOL": "small lightning mark, dot, bar, circle seal, arrow, star, serial badge, or diagram icon",
+    "WARDROBE_STYLE": "oversized turquoise jacket, workwear layers, gloves, boots, field vest, protective eyewear, scarf, or technical uniform details",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Preserve the core visual identity: A retro techno-manga poster system with a cream paper ground, huge red display lettering, turquoise technical clothing or hardware, dense mechanical linework, annotation panels, cel-shaded figure drawing, and slightly faded printed texture.",
+    "Place a huge saturated red-orange custom display headline across the upper third or upper half, behind and around the subject.",
+    "The headline may use kana-inspired geometric rhythm or condensed block lettering, but it must use new text only.",
+    "Make turquoise or teal the dominant clothing, casing, or equipment color; balance it with warm gray machinery, black ink, and red-orange accent parts.",
+    "Keep the perspective mostly flat and poster-like, with compact technical drawing depth only inside the prop or apparatus.",
+    "Finish as a slightly faded printed manga poster with grain, subtle halftone, mild scan softness, roughened ink edges, and small off-register imperfections.",
+    "Use new subjects, new scene details, new props/products, and new text.",
+    "Keep the same visual genre, density level, and rendering mode across new subjects."
+  ],
+  "source_content_to_avoid": [
+    "motorcycle",
+    "motorbike",
+    "bike wheel",
+    "motorcycle engine",
+    "license plate",
+    "original rider pose",
+    "exact source character",
+    "copied Japanese headline",
+    "copied signature",
+    "watermark",
+    "username",
+    "creator ID"
+  ],
+  "visual_deconstruction": {
+    "style_category": "A retro techno-manga poster system with a cream paper ground, huge red display lettering, turquoise technical clothing or hardware, dense mechanical linework, annotation panels, cel-shaded figure drawing, and slightly faded printed texture.",
+    "composition_logic": "A reusable poster/image system where the subject, prop, location, text, and accent variables change while the layout grammar remains fixed.",
+    "subject_treatment": "The subject is driven by SUBJECT and SUBJECT_ACTION, with wardrobe or visual treatment supplied by WARDROBE_STYLE.",
+    "background_system": "LOCATION and BACKGROUND_ELEMENTS provide the scene, texture, spatial cues, and secondary details without changing the style family.",
+    "type_and_graphics": "MAIN_TEXT, SECONDARY_TEXT, and ACCENT_SYMBOL control readable text, microcopy, stickers, marks, arrows, bursts, or other graphic accents.",
+    "content_boundary": "The negative prompt and source_content_to_avoid list prevent direct recreation of source subjects, marks, brands, watermarks, and story premises."
+  },
+  "image_treatment": {
+    "rendering_mode": "print-textured poster illustration/collage",
+    "finish": "finished AI-image prompt output, not a wireframe, SVG, HTML mockup, or raw storyboard note",
+    "texture": "preserve the material, paper, grain, marker, photographic, or print texture described by the style summary and prompt_template",
+    "lighting": "keep the lighting behavior implied by the reference style rather than replacing it with a generic cinematic look"
+  },
+  "composition": {
+    "layout": "Keep the subject hierarchy, crop behavior, framing, and density described by the prompt_template.",
+    "subject": "Use SUBJECT and SUBJECT_ACTION as the primary visual anchor, scaled and positioned according to the style identity.",
+    "scene": "Use LOCATION and BACKGROUND_ELEMENTS for setting detail without changing the visual genre.",
+    "text": "Place MAIN_TEXT and SECONDARY_TEXT as designed graphic elements, not as long paragraphs."
+  },
+  "typography": {
+    "main_text": "MAIN_TEXT should be short, legible, and visually integrated with the poster or image system.",
+    "secondary_text": "SECONDARY_TEXT should read as small caption, label, route note, slogan, or microcopy.",
+    "style": "Match the typography behavior described by the style summary and prompt_template, including scale, distortion, texture, and placement."
+  },
+  "color_palette": {
+    "palette_behavior": "Use the dominant colors, contrast rhythm, and accent-color logic implied by the style summary.",
+    "background": "Keep the background color family consistent with the reference style.",
+    "accents": "Use ACCENT_SYMBOL and graphic marks to carry small high-contrast color moments."
+  },
+  "design_rules": [
+    "Place a huge saturated red-orange custom display headline across the upper third or upper half, behind and around the subject.",
+    "The headline may use kana-inspired geometric rhythm or condensed block lettering, but it must use new text only.",
+    "Make one large manga-style subject the anchor, occupying roughly 50 to 75 percent of the frame, with flat cel shading, heavy dark outer contours, and fine interior detail.",
+    "Make turquoise or teal the dominant clothing, casing, or equipment color; balance it with warm gray machinery, black ink, and red-orange accent parts.",
+    "Add dense technical detail clusters: cables, straps, bolts, vents, panels, gauges, small labels, diagram boxes, and serial tags.",
+    "Add thin tan or brown-gray annotation boxes, tiny fictional micro text, capsule labels, small seals, arrows, and simple accent symbols in the cream space.",
+    "Keep the perspective mostly flat and poster-like, with compact technical drawing depth only inside the prop or apparatus."
+  ],
+  "do": [
+    "Replace subjects, props, locations, text, and story details through examples.values.",
+    "Keep prompt_template placeholders declared in environment_variables.",
+    "Preserve the style_fidelity_anchors when adapting the JSON to a new image request.",
+    "Use short, readable text values for MAIN_TEXT and SECONDARY_TEXT."
+  ],
+  "avoid": [
+    "motorcycle",
+    "motorbike",
+    "bike wheel",
+    "motorcycle engine",
+    "license plate",
+    "original rider pose",
+    "exact source character",
+    "copied Japanese headline"
+  ],
+  "prompt_template": "Create a {ASPECT_RATIO} image in the \"Turquoise Red Techno Manga Poster Style\".\n\nSubject: {SUBJECT}\nAction: {SUBJECT_ACTION}\nProp/Product: {PRODUCT_OR_PROP}\nLocation: {LOCATION}\nBackground: {BACKGROUND_ELEMENTS}\nMain text: {MAIN_TEXT}\nSecondary text: {SECONDARY_TEXT}\nAccent symbol: {ACCENT_SYMBOL}\nWardrobe/styling: {WARDROBE_STYLE}\nStyle fidelity anchors: cream off-white poster background, huge red-orange block headline, turquoise main mass, large manga-style subject, flat cel shading, dense mechanical linework, annotation boxes, limited retro print palette, faded screenprint grain.\nSource content to avoid: motorcycle rider, motorbike wheel or engine, source character, source pose, copied Japanese headline, signature, watermark, app UI, platform icon, QR code, or direct source-image variant.\n\nApply these style rules:\n- Use a cream off-white printed poster background with slightly aged paper grain and a few sparse negative-space fields.\n- Place a huge saturated red-orange custom display headline across the upper third or upper half, behind and around the subject. The headline may use kana-inspired geometric rhythm or condensed block lettering, but it must use new text only.\n- Make one large manga-style subject the anchor, occupying roughly 50 to 75 percent of the frame, with flat cel shading, heavy dark outer contours, and fine interior detail.\n- Make turquoise or teal the dominant clothing, casing, or equipment color; balance it with warm gray machinery, black ink, and red-orange accent parts.\n- Add dense technical detail clusters: cables, straps, bolts, vents, panels, gauges, small labels, diagram boxes, and serial tags.\n- Add thin tan or brown-gray annotation boxes, tiny fictional micro text, capsule labels, small seals, arrows, and simple accent symbols in the cream space.\n- Keep the perspective mostly flat and poster-like, with compact technical drawing depth only inside the prop or apparatus.\n- Finish as a slightly faded printed manga poster with grain, subtle halftone, mild scan softness, roughened ink edges, and small off-register imperfections.\n\nAvoid:\n- motorcycle, motorbike, bike wheel, motorcycle engine, license plate, original rider pose, exact source character, copied Japanese headline, copied signature, watermark, username, creator ID, app UI, back button icon, platform logo, QR code, photorealistic render, glossy 3D, clean vector art, cinematic background, deep perspective city, generic anime screenshot, low detail, plain white background, perfect typography.\n\nImportant content rule: match the reference style first, then change the source content. Use new subjects, new scene details, new props/products, and new text. Do not recreate the original motorcycle rider, original vehicle, original pose, original headline, or any watermark/UI/signature material.",
+  "negative_prompt": "motorcycle, motorbike, bike wheel, motorcycle engine, license plate, original rider pose, exact source character, copied Japanese headline, copied signature, watermark, username, creator ID, app UI, back button icon, platform logo, QR code, photorealistic render, glossy 3D, clean vector art, cinematic background, deep perspective city, generic anime screenshot, low detail, plain white background, perfect typography",
+  "examples": [
+    {
+      "case_name": "Weather Kit Courier",
+      "values": {
+        "SUBJECT": "compact weather-station courier in an oversized turquoise utility coat",
+        "SUBJECT_ACTION": "calibrating a portable rooftop weather kit while balancing a folded tripod case",
+        "PRODUCT_OR_PROP": "portable weather station with gauges, cables, sensor mast, warm gray panels, red-orange seals, straps, and tiny serial labels",
+        "LOCATION": "rooftop service platform implied through technical labels, not a realistic skyline",
+        "BACKGROUND_ELEMENTS": "cream off-white printed paper, huge red-orange custom block headline, one thin tan annotation panel, small gauges, diagram boxes, and fictional technical labels",
+        "MAIN_TEXT": "SKYSHIFT",
+        "SECONDARY_TEXT": "LOW WIND / UNIT 07 / SENSOR LOG",
+        "ACCENT_SYMBOL": "small lightning badge",
+        "WARDROBE_STYLE": "teal workwear coat, gloves, utility belt, chunky boots, and protective neck scarf"
+      }
+    },
+    {
+      "case_name": "Greenhouse Repair Android",
+      "values": {
+        "SUBJECT": "compact greenhouse repair android with a simple friendly face panel and teal shell",
+        "SUBJECT_ACTION": "replacing a nutrient cartridge in a botanical lab module",
+        "PRODUCT_OR_PROP": "transparent seedling cassette, hose cluster, small pump, repair tray, warm gray brackets, red-orange clips, bolts, and tiny labels",
+        "LOCATION": "greenhouse service bay implied by diagram boxes and small fictional plant icons, not a realistic room",
+        "BACKGROUND_ELEMENTS": "cream off-white printed poster paper, huge red-orange headline, thin tan annotation panel, tiny fictional labels, small gauge marks, and capsule tabs",
+        "MAIN_TEXT": "LEAF NODE",
+        "SECONDARY_TEXT": "PH 6.2 / GROW KIT / MODULE C",
+        "ACCENT_SYMBOL": "leaf-shaped serial seal",
+        "WARDROBE_STYLE": "teal service shell, soft black joints, tiny utility pouch, and protective gloves"
+      }
+    },
+    {
+      "case_name": "Archive Scanner Mechanic",
+      "values": {
+        "SUBJECT": "archive scanner mechanic in a teal work jacket and dark gloves",
+        "SUBJECT_ACTION": "feeding a fragile film strip into a portable scan console",
+        "PRODUCT_OR_PROP": "chunky scan console with small reels, vents, straps, red safety tabs, cable loops, warm gray casing, bolts, and tiny serial labels",
+        "LOCATION": "archive workshop implied by document panels and technical notes on cream paper, not a realistic room",
+        "BACKGROUND_ELEMENTS": "huge red-orange headline, cream off-white printed paper, thin tan callout frame, registration marks, small diagram boxes, and fictional labels",
+        "MAIN_TEXT": "SCAN ROOM",
+        "SECONDARY_TEXT": "FRAME 12 / DUST OFF / INDEX 44",
+        "ACCENT_SYMBOL": "red circle registration mark",
+        "WARDROBE_STYLE": "teal work jacket, layered shirt, dark gloves, utility apron, and compact pouch"
+      }
+    },
+    {
+      "case_name": "Harbor Signal Designer",
+      "values": {
+        "SUBJECT": "harbor signal designer wearing a turquoise field vest and protective scarf",
+        "SUBJECT_ACTION": "assembling a compact floating beacon on a work mat",
+        "PRODUCT_OR_PROP": "beacon module with antenna fins, rubber seals, rope loops, small lamps, warm gray casing, red-orange fasteners, straps, vents, bolts, and labels",
+        "LOCATION": "harbor workshop implied only by small technical labels and diagram marks on cream paper, not a scenic waterfront",
+        "BACKGROUND_ELEMENTS": "cream off-white printed poster paper, huge red-orange headline, tan annotation panels, fictional micro labels, capsule tags, arrows, serial marks, and small diagram boxes",
+        "MAIN_TEXT": "TIDE MARK",
+        "SECONDARY_TEXT": "BEACON A5 / SAFE LINE / CHECK",
+        "ACCENT_SYMBOL": "starburst signal dot",
+        "WARDROBE_STYLE": "teal field vest, layered work shirt, dark gloves, compact tool pouch, and sturdy boots"
+      }
+    }
+  ]
+}

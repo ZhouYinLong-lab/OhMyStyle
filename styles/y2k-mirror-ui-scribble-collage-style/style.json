@@ -1,0 +1,159 @@
+{
+  "style_name": "Y2K Mirror UI Scribble Collage Style",
+  "style_slug": "y2k-mirror-ui-scribble-collage-style",
+  "style_version": "1.0.0",
+  "style_summary": "A gritty Y2K photomontage style that combines wide-angle flash photography, floating desktop-like interface fragments, thick electric-blue marker outlines, hand-drawn graffiti lettering, and dense analog noise into a chaotic personal-screen collage.",
+  "environment_variables": {
+    "SUBJECT": "new central person, object, or activity anchor",
+    "SUBJECT_ACTION": "changed action or pose for the central subject",
+    "PRODUCT_OR_PROP": "new prop or product-like object that drives the story",
+    "LOCATION": "changed interior or urban environment",
+    "BACKGROUND_ELEMENTS": "supporting collage objects, panels, UI fragments, and texture details",
+    "MAIN_TEXT": "large expressive handwritten headline text",
+    "SECONDARY_TEXT": "small UI microcopy or sticker text",
+    "ACCENT_SYMBOL": "simple drawn symbol, cursor mark, slash, star, or verification glyph",
+    "WARDROBE_STYLE": "subject styling, fabric, accessories, and color behavior",
+    "STYLE_FIDELITY_ANCHORS": "observable non-content style traits that must remain visible",
+    "SOURCE_CONTENT_TO_AVOID": "literal source content, names, system marks, and story details to avoid",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "A wide-angle flash-photo base layer with exaggerated close foreground scale and compressed room depth.",
+    "Very high visible grain, digital noise, sharpened edges, and slightly dirty scan texture across the whole image.",
+    "A dense collage layout where photo fragments, translucent UI windows, pop-up cards, and small panels float over the scene.",
+    "One thick electric-blue hand-drawn outline or route line wraps around the main subject or cuts through the composition.",
+    "Large white graffiti-like handwritten headline lettering sits near an upper corner, irregular and brushy rather than typographic.",
+    "Small desktop or mobile interface fragments use simplified generic UI chrome, rounded white panels, pale gray shadows, and blue action accents.",
+    "The palette is mostly gray, white, black, and skin or object neutrals, interrupted by saturated cobalt/electric blue accents.",
+    "Photo cutouts have rough edges, slight mismatched scale, and snapshot-collage logic rather than clean editorial placement.",
+    "The scene feels personal, improvised, noisy, and screen-native, like a late-2000s desktop diary pasted over a flash photograph.",
+    "Lighting is harsh and direct with blown highlights, mirror-like reflections, and metallic or tiled surfaces catching glare."
+  ],
+  "source_content_to_avoid": [
+    "Do not recreate a young man taking a phone mirror selfie in a bathroom or elevator-like room.",
+    "Do not use the exact phone, toothbrush, striped shirt, headset, AirDrop card, Finder folder window, dock, or puzzle captcha layout.",
+    "Do not copy the original handwritten names, studio signature, January calendar, app icons, brand marks, or operating-system logos.",
+    "Do not reproduce the same blue outline silhouette path, same character pose, same mirror crop, or same right-side stacked panels.",
+    "Do not create a recognizable real person, celebrity, username, watermark, QR code, or platform-specific logo."
+  ],
+  "visual_deconstruction": {
+    "composition_logic": "A primary flash-photo snapshot fills the page, then multiple secondary image panels and fake interface cards are layered on top as if captured from a messy personal computer screen. The hierarchy is intentionally overloaded: a large subject, one loud scribble headline, one blue drawn contour, and several small UI interruptions.",
+    "subject_placement": "The subject is cropped close with wide-angle distortion, often leaning toward the viewer or crossing the lower and center zones. Secondary cutouts sit on one side or in corners, never as clean balanced modules.",
+    "camera_perspective": "Use fisheye or phone wide-angle perspective with one object or body part exaggerated in the foreground, hard flash, reflective surfaces, and casual off-axis framing.",
+    "surface_texture": "The entire artwork should feel printed, rescanned, and compressed: salt-and-pepper noise, sharp halos, grainy shadows, and imperfect cutout seams.",
+    "ui_layering": "Generic desktop-like and mobile-like UI fragments float above the photo: tiny window chrome, simple folders, alert cards, verify panels, and small image thumbnails, all simplified and unbranded."
+  },
+  "composition": {
+    "density": "High density with few quiet areas; use overlays and fragments but keep one dominant subject readable.",
+    "grid": "No formal grid. Elements are manually stacked, offset, and slightly misaligned like a screen collage.",
+    "depth": "Photographic depth comes from wide-angle perspective, while graphic elements sit flat on top like pasted stickers.",
+    "cropping": "Use abrupt crops, clipped limbs or objects, and partial interface windows at the edges.",
+    "aspect_ratio_behavior": "For 9:16, stack the main subject vertically with UI panels above and beside it. For 16:9, spread the subject across one side and let UI panels and scribble typography occupy the opposite side."
+  },
+  "typography": {
+    "headline": "Large white hand-drawn graffiti script, irregular stroke width, messy baseline, layered loops, and quick marker energy.",
+    "microcopy": "Small generic UI text in simple sans-serif, black or blue on white rounded panels, always secondary to the scribble headline.",
+    "placement": "Headline belongs near the top or upper side and can overlap noisy backgrounds. UI text belongs inside cards, labels, buttons, or tiny panels.",
+    "restrictions": "Do not use real app names, platform labels, usernames, creator signatures, or copied source wording."
+  },
+  "color_palette": {
+    "base": "Grainy grayscale, off-white, black, cool silver, and neutral photographic tones dominate.",
+    "accent": "Saturated electric blue or cobalt blue is the signature accent, used for thick marker outlines, action buttons, selected states, and small objects.",
+    "secondary": "Small warm skin, fabric, or object tones may appear but should remain subordinate to the gray-white-blue system.",
+    "contrast": "Use high contrast, blown highlights, gritty darks, and blue accents that feel digitally punched up."
+  },
+  "photographic_direction": {
+    "rendering": "Photographic collage, not illustration. Use real-looking flash snapshots with intentionally rough digital treatment.",
+    "lens": "Wide-angle phone lens, casual close-distance framing, edge distortion, and mirror or reflective-surface behavior when appropriate to the new scene.",
+    "lighting": "Direct flash, overhead fluorescent glare, harsh reflections, and visible blown highlights.",
+    "post_processing": "Heavy grain, sharpened compression, scan noise, slight chromatic roughness, and sticker-like overlay edges."
+  },
+  "design_rules": [
+    "Keep the image in a photo-collage genre with real photographic texture, not clean vector, anime, 3D, or editorial poster rendering.",
+    "Always include at least one large white hand-drawn headline and one thick electric-blue drawn contour or path.",
+    "Use several generic unbranded UI overlays, but keep them simplified and fictional.",
+    "Make the main subject and action different from the reference while preserving the messy Y2K desktop-diary mood.",
+    "Let overlays feel manually pasted and slightly chaotic, with visible noise unifying all layers.",
+    "Keep cobalt blue as the dominant accent, not a full blue monochrome palette."
+  ],
+  "do": [
+    "Use gritty flash photography, wide-angle distortion, rough cutout layering, and dense screen-collage construction.",
+    "Use fictional UI panels with generic labels, tiny thumbnails, simplified alerts, and blue action states.",
+    "Use hand-drawn white graffiti lettering and electric-blue marker outlines as recurring graphic anchors.",
+    "Change the subject, setting, props, text, and story premise for every case."
+  ],
+  "avoid": [
+    "Avoid exact mobile or desktop operating-system chrome, app icons, brand marks, watermarks, QR codes, usernames, or creator signatures.",
+    "Avoid recreating a bathroom mirror selfie, a phone covering the face, a toothbrush, a striped shirt, or the original right-side UI stack.",
+    "Avoid clean minimal layouts, low-noise photography, polished fashion editorials, flat vector graphics, or glossy 3D scenes.",
+    "Avoid legible copied text from the reference image or any real names visible in the reference."
+  ],
+  "prompt_template": "Create a {ASPECT_RATIO} gritty Y2K flash-photo UI collage in the Y2K Mirror UI Scribble Collage Style. New content: {SUBJECT} is {SUBJECT_ACTION} with {PRODUCT_OR_PROP} in {LOCATION}. Supporting scene and collage details: {BACKGROUND_ELEMENTS}. Wardrobe and styling: {WARDROBE_STYLE}. Use a real photographic wide-angle phone-camera base with hard flash, blown highlights, reflective surfaces, heavy grain, sharpened digital noise, rough scan texture, and casual off-axis cropping. Layer fictional, unbranded desktop/mobile-like UI fragments over the photo: translucent rounded panels, tiny image thumbnails, simplified alert cards, small blue action buttons, and generic microcopy reading {SECONDARY_TEXT}. Add a large irregular white hand-drawn graffiti headline reading {MAIN_TEXT}, plus a thick electric-blue marker outline or path wrapping the subject, and include the accent symbol {ACCENT_SYMBOL} as a small drawn/sticker mark. Preserve these style anchors: {STYLE_FIDELITY_ANCHORS}. Change the content and avoid these source details: {SOURCE_CONTENT_TO_AVOID}. No real logos, no real app icons, no watermark, no QR code, no copied names, no recognizable celebrity, no exact source layout.",
+  "negative_prompt": "clean vector poster, anime, glossy 3D render, polished fashion editorial, minimal corporate UI, low noise, smooth studio lighting, exact operating system interface, real app logos, real brand marks, QR code, username, watermark, copied source text, bathroom mirror selfie, phone covering face, toothbrush, striped shirt, headset, AirDrop, Finder, desktop dock, captcha puzzle, recognizable real person",
+  "examples": [
+    {
+      "case_name": "laundromat-synth-repair",
+      "values": {
+        "SUBJECT": "a night-shift electronics repair student",
+        "SUBJECT_ACTION": "kneeling beside an open portable synthesizer on a laundromat floor",
+        "PRODUCT_OR_PROP": "a cobalt-blue soldering pen and scattered translucent keys",
+        "LOCATION": "a cramped fluorescent laundromat with stainless washer doors",
+        "BACKGROUND_ELEMENTS": "washer reflections, taped receipts, tiny fictional repair-ticket windows, thumbnail strips of circuit boards, one cropped flash-photo inset",
+        "MAIN_TEXT": "NOISE FIX",
+        "SECONDARY_TEXT": "select clean signal",
+        "ACCENT_SYMBOL": "///",
+        "WARDROBE_STYLE": "oversized charcoal hoodie, silver chain, blue latex fingertip covers, worn black cargo pants",
+        "STYLE_FIDELITY_ANCHORS": "wide-angle flash snapshot, harsh reflective glare, heavy scan grain, dense pasted UI windows, large white graffiti headline, thick electric-blue marker outline, gray-white-black palette with cobalt accents",
+        "SOURCE_CONTENT_TO_AVOID": "no bathroom mirror selfie, no phone covering face, no toothbrush, no striped shirt, no AirDrop or Finder window, no app dock, no copied names"
+      }
+    },
+    {
+      "case_name": "greenhouse-cassette-archive",
+      "values": {
+        "SUBJECT": "an archivist in a city greenhouse",
+        "SUBJECT_ACTION": "holding a clear cassette tape up to a fogged glass wall",
+        "PRODUCT_OR_PROP": "a blue-labeled cassette case and a handheld scanner",
+        "LOCATION": "a humid greenhouse corridor with metal shelves and condensation",
+        "BACKGROUND_ELEMENTS": "leaf silhouettes, water beads, fictional catalog pop-ups, tiny plant-photo thumbnails, cropped scan-card overlays",
+        "MAIN_TEXT": "FOUND TAPE",
+        "SECONDARY_TEXT": "verify specimen",
+        "ACCENT_SYMBOL": "*",
+        "WARDROBE_STYLE": "white work jacket over black tee, clear safety glasses, blue rubber wristband",
+        "STYLE_FIDELITY_ANCHORS": "flash-photo collage base, noisy grayscale surface, electric-blue route line, white handwritten graffiti text, floating generic UI cards, rough cutout photo panels, blown highlights",
+        "SOURCE_CONTENT_TO_AVOID": "no original selfie pose, no bathroom tiles, no phone mirror shot, no toothbrush, no platform logos, no exact right-side panel arrangement"
+      }
+    },
+    {
+      "case_name": "parking-garage-noodle-run",
+      "values": {
+        "SUBJECT": "a bicycle courier under a parking garage light",
+        "SUBJECT_ACTION": "balancing a steaming noodle carrier while checking a crumpled paper map",
+        "PRODUCT_OR_PROP": "a blue insulated delivery pouch and taped noodle receipts",
+        "LOCATION": "an underground parking garage with concrete pillars and reflective puddles",
+        "BACKGROUND_ELEMENTS": "painted arrows on concrete, fake route-request popups, small order thumbnails, cropped puddle reflection inset, sticker-like blue selection tabs",
+        "MAIN_TEXT": "HOT ROUTE",
+        "SECONDARY_TEXT": "match the shortcut",
+        "ACCENT_SYMBOL": "↻",
+        "WARDROBE_STYLE": "black windbreaker, reflective strap, fingerless gloves, scuffed sneakers with blue laces",
+        "STYLE_FIDELITY_ANCHORS": "wide phone-lens distortion, hard flash glare, heavy digital grain, rough screen collage, large white hand lettering, cobalt-blue marker contour, generic UI overlays",
+        "SOURCE_CONTENT_TO_AVOID": "no young man bathroom selfie, no phone in foreground, no headset, no striped shirt, no AirDrop alert, no Finder folder labels, no copied signature"
+      }
+    },
+    {
+      "case_name": "ceramic-studio-glaze-test",
+      "values": {
+        "SUBJECT": "a ceramic artist at a messy glaze table",
+        "SUBJECT_ACTION": "tilting a wet cobalt-glazed cup toward a small inspection lamp",
+        "PRODUCT_OR_PROP": "a blue glaze bottle, test tiles, and a cracked magnifier",
+        "LOCATION": "a compact ceramic studio with metal sink, shelves, and splattered worktop",
+        "BACKGROUND_ELEMENTS": "glaze splashes, handwritten kiln notes, fictional approval dialog cards, tiny tile thumbnail grid, one cropped reflection in a steel sink",
+        "MAIN_TEXT": "BLUE TEST",
+        "SECONDARY_TEXT": "approve sample",
+        "ACCENT_SYMBOL": "✓",
+        "WARDROBE_STYLE": "paint-stained white apron, black long sleeve, silver rings, blue tape wrapped around one finger",
+        "STYLE_FIDELITY_ANCHORS": "real flash-photo texture, close wide-angle crop, dirty scan grain, white graffiti headline, electric-blue hand-drawn outline, stacked unbranded UI fragments, gray-white-black base with cobalt pops",
+        "SOURCE_CONTENT_TO_AVOID": "no mirror selfie, no smartphone as main prop, no toothbrush, no striped shirt, no exact source UI cards, no real operating-system marks"
+      }
+    }
+  ]
+}

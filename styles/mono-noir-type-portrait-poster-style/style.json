@@ -1,0 +1,169 @@
+{
+  "style_name": "Mono Noir Type Portrait Poster Style",
+  "style_slug": "mono-noir-type-portrait-poster-style",
+  "style_version": "2026.05.24",
+  "style_summary": "A stark black-and-white editorial poster system pairing a close, high-contrast photographic portrait with oversized lowercase neo-grotesk typography. One headline word is reversed into a clean white rectangular label while the remaining words sit as heavy white type over a charcoal background.",
+  "environment_variables": {
+    "SUBJECT": "main person, performer, worker, athlete, maker, or character who anchors the poster",
+    "SUBJECT_ACTION": "quiet pose, intense gaze, paused task, reflective moment, or restrained movement",
+    "PRODUCT_OR_PROP": "object, tool, instrument, notebook, glove, cup, helmet, camera, or no prop",
+    "LOCATION": "dim studio, late-night workspace, rehearsal room, tunnel, library corner, workshop, or minimal interior",
+    "BACKGROUND_ELEMENTS": "soft charcoal gradient, blurred wall texture, deep negative space, faint window falloff, or subtle studio shadow",
+    "MAIN_TEXT": "three-line lowercase headline with short words and a final period",
+    "SECONDARY_TEXT": "tiny optional supporting microcopy, date, or section label",
+    "ACCENT_SYMBOL": "minimal dot, short rule, small plus, or no visible accent",
+    "WARDROBE_STYLE": "dark plain clothing, structured jacket, workwear, athletic layer, or simple editorial styling",
+    "STYLE_FIDELITY_ANCHORS": "black-and-white photographic portrait, deep charcoal background, large left-weighted lowercase typography, first headline word as black type inside a white rectangular label, remaining headline lines in white, extreme contrast, sparse negative space, close crop, shallow depth of field, serious editorial mood",
+    "SOURCE_CONTENT_TO_AVOID": "do not recreate the original young woman with short black bangs and freckles, the phrase discipline beats procrastination, the exact same face crop, the exact same text line breaks, any watermark, logo, username, brand mark, or motivational story premise",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Strict black-and-white monochrome with no color tint, sepia, duotone accent, or gradient color.",
+    "One large photographic human subject, usually cropped close, with the face or upper body carrying the emotional weight.",
+    "Deep charcoal-to-black background with soft falloff and large negative space for typography.",
+    "Oversized lowercase bold neo-grotesk headline, left aligned, with tight leading and strong optical weight.",
+    "The first headline word appears as black type inside a crisp white rectangular label.",
+    "Remaining headline words appear in white directly on the dark photographic field.",
+    "Portrait has high contrast, visible skin texture or fabric texture, shallow depth of field, and strong shadow modeling.",
+    "Composition is sparse and editorial: typography and portrait are the only dominant elements.",
+    "Subject placement is asymmetric, commonly right weighted for 16:9 and center-right or lower-right for 9:16.",
+    "Mood is severe, quiet, disciplined, intimate, and magazine-poster-like rather than decorative."
+  ],
+  "source_content_to_avoid": [
+    "The exact phrase \"discipline beats procrastination.\" and any close paraphrase using the same three-part motivational premise.",
+    "The same young woman, short black bob with blunt bangs, freckled close-up, or near-identical facial identity.",
+    "The exact source crop with a face occupying the right half and the same eye-level framing.",
+    "Any exact line break or text hierarchy that reproduces the source wording.",
+    "Watermarks, creator signatures, usernames, platform UI, QR codes, brand marks, or logo-like marks.",
+    "A generic motivational poster that loses the photographic editorial severity."
+  ],
+  "visual_deconstruction": {
+    "overall_style_category": "monochrome editorial portrait poster, high-contrast photographic type poster, noir motivational magazine graphic",
+    "composition_logic": "A heavy typographic block sits in open dark space while a close photographic portrait occupies the opposing side. The design relies on a simple two-mass hierarchy: text first, face second, with no decorative clutter.",
+    "subject_placement": "The subject is cropped large and intimate. In wide compositions the subject leans to the right side with the headline on the left; in vertical compositions the subject remains close and the headline stacks in the upper-left or mid-left field.",
+    "camera_perspective": "Close portrait or half-body editorial photography, eye-level or slightly low, shallow depth of field, lens compression, soft background blur.",
+    "texture": "Fine skin, fabric, hair, and photographic grain are visible, but the layout surface stays clean and minimal.",
+    "mood": "Quiet pressure, focus, resolve, restraint, late-night work, and monochrome editorial seriousness."
+  },
+  "composition": {
+    "layout": "Use a sparse two-zone composition: oversized left-aligned headline block and one close portrait subject. Keep strong negative space around the type and avoid adding extra panels, stickers, price labels, or illustration effects.",
+    "aspect_ratio_behavior": "For 16:9, preserve a landscape poster with the subject on the right and the text block on the left. For 9:16, stack the headline in the upper-left or middle-left while the subject is cropped tall and close on the right or lower-right.",
+    "subject_scale": "The subject should feel close enough for facial detail, hair texture, fabric texture, or hand detail to matter, but should not copy the reference identity or exact crop.",
+    "depth": "Use photographic depth: sharp subject features against a soft charcoal background."
+  },
+  "typography": {
+    "font_style": "Very bold lowercase neo-grotesk sans-serif, similar in spirit to Helvetica/Arial Black/Neue Haas grotesk but not tied to a named brand font.",
+    "case_and_spacing": "Lowercase headline words, tight leading, no italic, no outline, no decorative lettering, no handwriting.",
+    "label_treatment": "First headline word is black type placed inside a clean white rectangular label with minimal padding and square corners.",
+    "placement": "Headline is left aligned and large enough to dominate the poster. Do not let text cover the subject's key facial features.",
+    "text_amount": "Use three short lines and a final period when possible. Secondary microcopy is optional and tiny."
+  },
+  "color_palette": {
+    "paper_white": "#F4F4F0",
+    "pure_black": "#050505",
+    "deep_charcoal": "#151519",
+    "mid_gray_skin": "#A8A8A2",
+    "shadow_gray": "#3C3C40"
+  },
+  "photographic_direction": {
+    "lighting": "Directional noir studio light with strong falloff, bright facial highlights, deep shadows, and a dark background.",
+    "contrast": "High contrast black-and-white treatment with crisp type edges and photographic tonal range.",
+    "lens_and_focus": "Close editorial lens feel, shallow depth of field, visible texture, no glamour retouching.",
+    "finish": "Clean digital poster finish with subtle photographic grain only; typography must remain sharp and flat."
+  },
+  "design_rules": [
+    "Keep the entire image monochrome: black, white, charcoal, and natural gray tonal range only.",
+    "Use one dominant human subject and one dominant headline block.",
+    "Place the first headline word inside a white rectangular label; use white type for the rest of the headline.",
+    "Preserve large negative space so the typography feels architectural and heavy.",
+    "Keep props secondary and simple; the poster should not become a busy lifestyle scene.",
+    "Use realistic photographic lighting, texture, and depth rather than illustration, vector, collage, or 3D rendering.",
+    "Change the subject, setting, action, and headline text for every sample.",
+    "Avoid any watermark-like identity system or social platform interface."
+  ],
+  "do": [
+    "Use close black-and-white editorial photography.",
+    "Make the type oversized, lowercase, bold, and left aligned.",
+    "Use a white rectangular label behind the first headline word.",
+    "Keep the mood quiet, severe, focused, and intimate.",
+    "Use deep shadows and soft background blur.",
+    "Create new subjects, scenes, props, and slogans."
+  ],
+  "avoid": [
+    "Do not recreate the uploaded portrait, face, haircut, freckles, exact crop, or expression.",
+    "Do not use the phrase \"discipline beats procrastination.\" or close variants.",
+    "Do not add color, neon accents, sepia, beige paper, gradient orbs, stickers, halftone comic texture, or ransom-note collage.",
+    "Do not use decorative typefaces, handwriting, serif display type, outlines, glow, drop shadows, or curved text.",
+    "Do not create an illustration, vector poster, anime image, 3D render, or UI mockup.",
+    "Do not add logos, watermarks, usernames, QR codes, platform marks, or brand names.",
+    "Do not overcrowd the frame with many props, signs, captions, or background objects."
+  ],
+  "prompt_template": "Create a {ASPECT_RATIO} monochrome editorial poster in the Mono Noir Type Portrait Poster Style. Style fidelity lock: {STYLE_FIDELITY_ANCHORS}. Source content to avoid: {SOURCE_CONTENT_TO_AVOID}. Scene: {SUBJECT} {SUBJECT_ACTION} with {PRODUCT_OR_PROP} in {LOCATION}. Background elements: {BACKGROUND_ELEMENTS}. Wardrobe and styling: {WARDROBE_STYLE}. Composition: one large high-contrast black-and-white photographic subject, close crop, deep charcoal background, sparse negative space, shallow depth of field, serious noir editorial mood. If the aspect ratio is 16:9, make a landscape poster with the subject weighted to the right side and the headline block on the left. If the aspect ratio is 9:16, make a vertical poster with the headline stacked in the upper-left or middle-left field and the subject cropped large on the right or lower-right. Typography: render the exact readable lowercase headline text \"{MAIN_TEXT}\" as three short left-aligned lines with tight leading; put the first headline word as black type inside a crisp white rectangular label, then set the remaining lines in heavy white type directly on the dark background. Add \"{SECONDARY_TEXT}\" only as tiny unobtrusive white microcopy if it fits. Use {ACCENT_SYMBOL} only as a minimal typographic mark. Keep type sharp, flat, square-cornered, and massive. Photo treatment: realistic black-and-white studio photography, strong shadow falloff, visible facial or fabric texture, subtle grain, no color, no illustration, no collage, no extra panels, no logos, no watermark.",
+  "negative_prompt": "color image, sepia, beige paper, neon, duotone color accent, gradient orb, decorative stickers, collage, ransom note typography, comic halftone, illustration, vector art, anime, 3D render, glossy advertising product shot, UI screenshot, social media frame, watermark, username, logo, QR code, brand mark, exact copied face, short black blunt bangs, freckled young woman close-up, discipline beats procrastination, motivational quote duplicate, handwritten type, serif headline, outlined text, glowing text, curved text, long paragraph, cluttered background, many props, bright happy lifestyle lighting",
+  "examples": [
+    {
+      "case_name": "after-hours-architect",
+      "values": {
+        "SUBJECT": "a tired architect with silver hair",
+        "SUBJECT_ACTION": "studying a folded blueprint in a late-night pause",
+        "PRODUCT_OR_PROP": "a rolled plan tube and a pencil held low",
+        "LOCATION": "a dim concrete studio after midnight",
+        "BACKGROUND_ELEMENTS": "soft charcoal wall gradient, blurred drafting table edge, deep empty space",
+        "MAIN_TEXT": "focus\noutlasts\nnoise.",
+        "SECONDARY_TEXT": "studio log 02:14",
+        "ACCENT_SYMBOL": "a tiny white plus",
+        "WARDROBE_STYLE": "dark work jacket over a plain black shirt",
+        "STYLE_FIDELITY_ANCHORS": "black-and-white photographic portrait, deep charcoal background, giant lowercase left-aligned headline, first word in a white label, remaining words in white, high contrast, sparse negative space, close crop",
+        "SOURCE_CONTENT_TO_AVOID": "no young woman with blunt bangs, no freckles close-up, no discipline beats procrastination text, no copied face or exact source crop"
+      }
+    },
+    {
+      "case_name": "tunnel-runner-reset",
+      "values": {
+        "SUBJECT": "a night runner catching breath",
+        "SUBJECT_ACTION": "leaning against a tunnel wall after sprint intervals",
+        "PRODUCT_OR_PROP": "dark running gloves and a matte stopwatch",
+        "LOCATION": "an empty underpass with one distant overhead light",
+        "BACKGROUND_ELEMENTS": "blurred tunnel concrete, heavy black corners, soft gray light falloff",
+        "MAIN_TEXT": "grit\nclears\nexcuses.",
+        "SECONDARY_TEXT": "interval set 07",
+        "ACCENT_SYMBOL": "a short white rule",
+        "WARDROBE_STYLE": "black technical running layer with no visible logos",
+        "STYLE_FIDELITY_ANCHORS": "monochrome noir photo, large cropped subject, left-side heavy lowercase type, white label behind first word, white remaining words, deep shadows, minimal background",
+        "SOURCE_CONTENT_TO_AVOID": "no original portrait subject, no bob haircut with bangs, no source slogan, no brand logos, no same right-half face crop"
+      }
+    },
+    {
+      "case_name": "ceramist-slow-craft",
+      "values": {
+        "SUBJECT": "a focused ceramic artist",
+        "SUBJECT_ACTION": "holding a wet clay bowl near chest height",
+        "PRODUCT_OR_PROP": "a simple unfired clay bowl and damp hands",
+        "LOCATION": "a shadowed pottery studio",
+        "BACKGROUND_ELEMENTS": "blurred shelves, charcoal wall, soft dust-like grain, open dark space",
+        "MAIN_TEXT": "craft\nrejects\nshortcuts.",
+        "SECONDARY_TEXT": "kiln room note",
+        "ACCENT_SYMBOL": "a minimal dot",
+        "WARDROBE_STYLE": "dark apron over a black long-sleeve shirt",
+        "STYLE_FIDELITY_ANCHORS": "black-and-white editorial portrait, strong shadows, close subject crop, oversized lowercase headline, white rectangular label for first word, sparse poster layout",
+        "SOURCE_CONTENT_TO_AVOID": "no copied young woman face, no short blunt bangs, no discipline beats procrastination, no identical text layout, no watermark"
+      }
+    },
+    {
+      "case_name": "library-chess-clarity",
+      "values": {
+        "SUBJECT": "an older chess player",
+        "SUBJECT_ACTION": "resting one hand beside a single chess knight",
+        "PRODUCT_OR_PROP": "one matte black chess knight",
+        "LOCATION": "a quiet library corner before closing",
+        "BACKGROUND_ELEMENTS": "out-of-focus shelves, dark window reflection, broad charcoal negative space",
+        "MAIN_TEXT": "clarity\nwins\nthe room.",
+        "SECONDARY_TEXT": "table 12",
+        "ACCENT_SYMBOL": "no visible accent",
+        "WARDROBE_STYLE": "plain dark turtleneck and worn wool coat",
+        "STYLE_FIDELITY_ANCHORS": "strict monochrome photo poster, close human subject, deep black background, giant bold lowercase type, first word black on white label, rest white, restrained editorial mood",
+        "SOURCE_CONTENT_TO_AVOID": "no original face, no freckles and bangs, no source text or motivational premise, no logo, no direct duplicate of the reference composition"
+      }
+    }
+  ]
+}

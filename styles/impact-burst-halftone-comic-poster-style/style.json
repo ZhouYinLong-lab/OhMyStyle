@@ -1,0 +1,157 @@
+{
+  "style_name": "Impact Burst Halftone Comic Poster Style",
+  "style_slug": "impact-burst-halftone-comic-poster-style",
+  "style_version": "2026.05.12",
+  "style_summary": "A loud retro comic poster system built from thick black ink, flat high-saturation colors, oversized impact typography, exaggerated illustrated subjects, diagonal props, speech bursts, smoke puffs, halftone dots, and distressed screen-print grain.",
+  "environment_variables": {
+    "SUBJECT": "main illustrated subject",
+    "SUBJECT_ACTION": "main chaotic action or reaction",
+    "PRODUCT_OR_PROP": "oversized object, product, tool, weapon, camera, device, or prop",
+    "LOCATION": "flat poster setting or symbolic backdrop",
+    "BACKGROUND_ELEMENTS": "speech bursts, smoke puffs, starbursts, cyan blocks, yellow corner shapes, impact marks",
+    "MAIN_TEXT": "short comic headline, e.g. ZAP!, CRASH!, BANG!, WHAM!",
+    "SECONDARY_TEXT": "tiny impact caption or small supporting word",
+    "ACCENT_SYMBOL": "sparkle, starburst, lightning slash, jagged separator, small smoke puff",
+    "WARDROBE_STYLE": "simple flat-color wardrobe or stylized body treatment",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Preserve the core visual identity: A loud retro comic poster system built from thick black ink, flat high-saturation colors, oversized impact typography, exaggerated illustrated subjects, diagonal props, speech bursts, smoke puffs, halftone dots, and distressed screen-print grain.",
+    "Layout: use a bold cropped comic-poster composition.",
+    "Place the main subject large in the lower two-thirds and let the oversized prop cut diagonally across the body or foreground.",
+    "Style: thick uneven black contour lines, flat hot-orange and aged-cream character shapes, saturated cyan backdrop, lemon-yellow speech-burst corner, muted olive prop color, small gray accent, distressed screen-print texture, halftone dots, paper grain, rough ink edges, and slight print misregistration.",
+    "Avoid: watermark, username, creator ID, platform logo, QR code, app UI, artist signature, copied reference character, copied exact pose, copied exact text, brand logos, licensed characters, photorealism, 3D, glossy gradients, soft airbrush shading, clean vector polish, crowded paragraphs, and muted corporate design.",
+    "Keep the same visual genre, density level, and rendering mode across new subjects.",
+    "Preserve the original balance between main subject, typography, decorative marks, and background texture.",
+    "Use the variables to change content while keeping the style system stable."
+  ],
+  "source_content_to_avoid": [
+    "watermark",
+    "username",
+    "creator ID",
+    "platform logo",
+    "QR code",
+    "app UI",
+    "artist signature",
+    "copied reference character",
+    "copied exact pose",
+    "copied exact text",
+    "brand logo",
+    "licensed character"
+  ],
+  "visual_deconstruction": {
+    "style_category": "A loud retro comic poster system built from thick black ink, flat high-saturation colors, oversized impact typography, exaggerated illustrated subjects, diagonal props, speech bursts, smoke puffs, halftone dots, and distressed screen-print grain.",
+    "composition_logic": "A reusable poster/image system where the subject, prop, location, text, and accent variables change while the layout grammar remains fixed.",
+    "subject_treatment": "The subject is driven by SUBJECT and SUBJECT_ACTION, with wardrobe or visual treatment supplied by WARDROBE_STYLE.",
+    "background_system": "LOCATION and BACKGROUND_ELEMENTS provide the scene, texture, spatial cues, and secondary details without changing the style family.",
+    "type_and_graphics": "MAIN_TEXT, SECONDARY_TEXT, and ACCENT_SYMBOL control readable text, microcopy, stickers, marks, arrows, bursts, or other graphic accents.",
+    "content_boundary": "The negative prompt and source_content_to_avoid list prevent direct recreation of source subjects, marks, brands, watermarks, and story premises."
+  },
+  "image_treatment": {
+    "rendering_mode": "print-textured poster illustration/collage",
+    "finish": "finished AI-image prompt output, not a wireframe, SVG, HTML mockup, or raw storyboard note",
+    "texture": "preserve the material, paper, grain, marker, photographic, or print texture described by the style summary and prompt_template",
+    "lighting": "keep the lighting behavior implied by the reference style rather than replacing it with a generic cinematic look"
+  },
+  "composition": {
+    "layout": "Keep the subject hierarchy, crop behavior, framing, and density described by the prompt_template.",
+    "subject": "Use SUBJECT and SUBJECT_ACTION as the primary visual anchor, scaled and positioned according to the style identity.",
+    "scene": "Use LOCATION and BACKGROUND_ELEMENTS for setting detail without changing the visual genre.",
+    "text": "Place MAIN_TEXT and SECONDARY_TEXT as designed graphic elements, not as long paragraphs."
+  },
+  "typography": {
+    "main_text": "MAIN_TEXT should be short, legible, and visually integrated with the poster or image system.",
+    "secondary_text": "SECONDARY_TEXT should read as small caption, label, route note, slogan, or microcopy.",
+    "style": "Match the typography behavior described by the style summary and prompt_template, including scale, distortion, texture, and placement."
+  },
+  "color_palette": {
+    "palette_behavior": "Use the dominant colors, contrast rhythm, and accent-color logic implied by the style summary.",
+    "background": "Keep the background color family consistent with the reference style.",
+    "accents": "Use ACCENT_SYMBOL and graphic marks to carry small high-contrast color moments."
+  },
+  "design_rules": [
+    "Include PRODUCT_OR_PROP as a clear foreground object or visual anchor.",
+    "Use WARDROBE_STYLE for clothing, styling, surface treatment, and character details.",
+    "Layout: use a bold cropped comic-poster composition.",
+    "Put a huge condensed cream block-letter headline reading MAIN_TEXT across the upper band, with SECONDARY_TEXT as tiny impact microcopy if it stays clean.",
+    "Place the main subject large in the lower two-thirds and let the oversized prop cut diagonally across the body or foreground.",
+    "Add ACCENT_SYMBOL as a graphic impact mark.",
+    "Style: thick uneven black contour lines, flat hot-orange and aged-cream character shapes, saturated cyan backdrop, lemon-yellow speech-burst corner, muted olive prop color, small gray accent, distressed screen-print texture, halftone dots, paper grain, rough ink edges, and slight print misregistration."
+  ],
+  "do": [
+    "Replace subjects, props, locations, text, and story details through examples.values.",
+    "Keep prompt_template placeholders declared in environment_variables.",
+    "Preserve the style_fidelity_anchors when adapting the JSON to a new image request.",
+    "Use short, readable text values for MAIN_TEXT and SECONDARY_TEXT."
+  ],
+  "avoid": [
+    "watermark",
+    "username",
+    "creator ID",
+    "platform logo",
+    "QR code",
+    "app UI",
+    "artist signature",
+    "copied reference character"
+  ],
+  "prompt_template": "Create an image in impact-burst-halftone-comic-poster-style. Aspect ratio: {ASPECT_RATIO}. Scene: {SUBJECT} {SUBJECT_ACTION}, interacting with {PRODUCT_OR_PROP}, in {LOCATION}. Include {BACKGROUND_ELEMENTS}. Style the subject with {WARDROBE_STYLE}. Layout: use a bold cropped comic-poster composition. Put a huge condensed cream block-letter headline reading \"{MAIN_TEXT}\" across the upper band, with \"{SECONDARY_TEXT}\" as tiny impact microcopy if it stays clean. Place the main subject large in the lower two-thirds and let the oversized prop cut diagonally across the body or foreground. Add {ACCENT_SYMBOL} as a graphic impact mark. Style: thick uneven black contour lines, flat hot-orange and aged-cream character shapes, saturated cyan backdrop, lemon-yellow speech-burst corner, muted olive prop color, small gray accent, distressed screen-print texture, halftone dots, paper grain, rough ink edges, and slight print misregistration. Avoid: watermark, username, creator ID, platform logo, QR code, app UI, artist signature, copied reference character, copied exact pose, copied exact text, brand logos, licensed characters, photorealism, 3D, glossy gradients, soft airbrush shading, clean vector polish, crowded paragraphs, and muted corporate design.",
+  "negative_prompt": "watermark, username, creator ID, platform logo, QR code, app UI, artist signature, copied reference character, copied exact pose, copied exact text, brand logo, licensed character, photorealism, realistic portrait, 3D render, glossy gradient, airbrush shading, polished vector logo, corporate minimal poster, soft pastel palette, long paragraphs, crowded typography, clean digital texture, no grain",
+  "examples": [
+    {
+      "case_name": "Raygun Static",
+      "values": {
+        "SUBJECT": "a manic orange-and-cream comic inventor with spiky black hair",
+        "SUBJECT_ACTION": "grinning in shock while testing a sputtering device",
+        "PRODUCT_OR_PROP": "oversized muted-olive retro ray camera with a huge black lens",
+        "LOCATION": "flat cyan poster window under a black impact field",
+        "BACKGROUND_ELEMENTS": "yellow jagged corner speech burst, off-white smoke puffs, small sparkle marks, rough paper speckles",
+        "MAIN_TEXT": "ZAP!",
+        "SECONDARY_TEXT": "STATIC",
+        "ACCENT_SYMBOL": "white four-point sparkle and tiny lightning slash",
+        "WARDROBE_STYLE": "flat orange jacket, cream negative-space highlights, black ink hair and eyebrows"
+      }
+    },
+    {
+      "case_name": "Skateboard Crash",
+      "values": {
+        "SUBJECT": "a wide-eyed punk skater drawn in hot orange and aged cream",
+        "SUBJECT_ACTION": "falling backward in a frozen impact pose",
+        "PRODUCT_OR_PROP": "oversized olive skateboard wheel and deck crossing the foreground",
+        "LOCATION": "flat cyan street-poster backdrop",
+        "BACKGROUND_ELEMENTS": "black upper field, yellow burst, smoke puffs, white star impacts, gritty halftone",
+        "MAIN_TEXT": "CRASH!",
+        "SECONDARY_TEXT": "IMPACT",
+        "ACCENT_SYMBOL": "jagged wheel-speed slash",
+        "WARDROBE_STYLE": "orange torn jacket, cream highlights, black hair silhouette, chunky comic shoes"
+      }
+    },
+    {
+      "case_name": "Soda Overload",
+      "values": {
+        "SUBJECT": "a comic cashier with a huge toothy grin",
+        "SUBJECT_ACTION": "getting blasted by a fizzy spray",
+        "PRODUCT_OR_PROP": "oversized olive soda siphon with a black circular nozzle",
+        "LOCATION": "flat convenience-store poster abstraction",
+        "BACKGROUND_ELEMENTS": "cyan rectangle, yellow fizz burst, cream bubbles, black top banner, print speckles",
+        "MAIN_TEXT": "POP!",
+        "SECONDARY_TEXT": "FIZZ",
+        "ACCENT_SYMBOL": "cream bubble cluster",
+        "WARDROBE_STYLE": "orange apron shape, cream shirt blocks, black eyebrow marks"
+      }
+    },
+    {
+      "case_name": "Drum Hit",
+      "values": {
+        "SUBJECT": "an orange-and-cream garage drummer with wild black hair",
+        "SUBJECT_ACTION": "leaning into a huge cymbal strike",
+        "PRODUCT_OR_PROP": "oversized muted-olive kick drum and black circular drum head",
+        "LOCATION": "flat gig-poster stage abstraction",
+        "BACKGROUND_ELEMENTS": "cyan stage block, yellow sound burst, smoke puffs, white sparkles, distressed black field",
+        "MAIN_TEXT": "BANG!",
+        "SECONDARY_TEXT": "LOUD",
+        "ACCENT_SYMBOL": "white starburst and broken sound rings",
+        "WARDROBE_STYLE": "flat orange vest, cream arms, black graphic hair, chunky ink outlines"
+      }
+    }
+  ]
+}

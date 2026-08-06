@@ -1,0 +1,181 @@
+{
+  "style_name": "Bold Block Mascot Poster Style",
+  "style_slug": "bold-block-mascot-poster-style",
+  "style_version": "2026.05.24",
+  "style_summary": "A dense flat poster system built from giant black display type, chunky white mascot figures, thick cartoon outlines, tilted cyan or mint color panels, compact badges, tiny red accents, and a clean off-white print surface.",
+  "environment_variables": {
+    "SUBJECT": "main rounded mascot, figure, product, object, or visual subject",
+    "SUBJECT_ACTION": "main action, gesture, presentation, or interaction",
+    "PRODUCT_OR_PROP": "simplified prop, object, product, icon, card, or graphic device",
+    "LOCATION": "flat poster setting, abstract environment, or editorial surface",
+    "BACKGROUND_ELEMENTS": "secondary panels, labels, tabs, grids, microtype, or simple scene blocks",
+    "MAIN_TEXT": "main headline or graphic display text",
+    "SECONDARY_TEXT": "small supporting label, microcopy, or index text",
+    "ACCENT_SYMBOL": "small red stamp, check, alert mark, badge, speech bubble, or simple symbol",
+    "WARDROBE_STYLE": "styling direction for mascot body, figure treatment, or visible human elements",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Poster-first composition with an oversized black headline occupying the top band, side band, or dominant title block.",
+    "High layout density with very little empty space, while all shapes remain simple, flat, and readable.",
+    "One or two rounded white mascot-like figures or simplified graphic subjects drawn with very thick black outlines and minimal facial marks.",
+    "One large tilted cyan, teal, mint, or lemon color panel crossing the middle of the frame as the main graphic mass.",
+    "Secondary green, red, black, or pale color blocks sit behind the subject and are edged by heavy black strokes.",
+    "Hard flat fills, no painterly shading, no realistic lighting, and only light paper-like texture.",
+    "Ultra-heavy geometric block lettering with compressed spacing, mixed large and small type scales, and strong cropping.",
+    "A small badge, stamp, speech bubble, warning mark, or editorial label acts as a graphic accent, never as a real logo.",
+    "Bold rounded black linework creates a sticker, comic poster, and screenprint feeling.",
+    "Palette stays mostly off-white, black, cyan or mint, with one small red accent or related high-contrast punctuation color.",
+    "Foreground subject overlaps the headline or color panel, creating a layered flat print-collage hierarchy.",
+    "Clean social-poster finish with slight screenprint compression, not glossy product advertising."
+  ],
+  "source_content_to_avoid": [
+    "The exact white cloud-like reference character with the I+I face and raised arm.",
+    "The reclining figure hidden under the cyan blanket or canopy from the source image.",
+    "Coffee, coffee cups, coffee icons, or a no-coffee story premise.",
+    "The original design-company or design-studio headline and source speech-bubble wording.",
+    "OFFF Course logo, course badges, platform marks, creator IDs, watermarks, QR codes, app screenshots, or UI windows.",
+    "The exact vertical side signature strip, bottom slogan, and source layout story.",
+    "Any direct copy of the source mascot anatomy, pose, prop positions, typography wording, or composition."
+  ],
+  "visual_deconstruction": {
+    "style_category": "flat editorial mascot poster, comic-sticker poster system, bold portfolio cover graphic",
+    "composition_logic": "The image is built from flat layers: off-white paper, giant black type, a backing panel, one diagonal color slab, a simplified foreground mascot or subject, then one small accent mark. The typography works as architecture rather than captioning.",
+    "subject_placement": "The main subject is large and cropped near the lower edge or lower corner. It overlaps the diagonal panel or headline and reads as a sticker-like graphic object instead of a detailed illustration.",
+    "camera_perspective": "Orthographic flat poster perspective with graphic diagonal movement. Avoid natural camera depth, realistic space, or cinematic lighting.",
+    "typography_behavior": "Ultra-black display lettering uses huge scale, tight spacing, stacked words, vertical title blocks, cropped edges, and compact side labels. Text is short and graphic.",
+    "color_behavior": "The base is off-white and deep black. Cyan, mint, lemon, teal, or related bright panels form the major graphic mass. Red is a small editorial punctuation mark or card accent.",
+    "graphic_elements": "Speech bubbles, badges, stamps, prohibition symbols, thick borders, portfolio cards, tab strips, side indexes, flat grids, and microtype blocks create density.",
+    "texture_finish": "Flat raster illustration with vector-like hard fills, subtle paper grain, compressed screenprint edges, and thick uniform linework.",
+    "mood": "Playful, blunt, design-culture adjacent, editorial, portfolio-ready, slightly sarcastic, and poster-like rather than narrative or realistic."
+  },
+  "image_treatment": {
+    "rendering": "flat vector-like raster illustration with thick cartoon linework and screenprint poster texture",
+    "line_quality": "uniform heavy black strokes with rounded corners, blunt joins, and sticker-like silhouettes",
+    "lighting": "no naturalistic lighting; contrast comes from flat color, black type, and hard-edged shape overlap",
+    "texture": "subtle off-white paper grain and slightly compressed poster edges, never dirty grunge or glossy gradients"
+  },
+  "composition": {
+    "primary_structure": "giant black title block, one diagonal color slab, secondary backing panel, foreground mascot or graphic subject, small badge or label accent",
+    "layout_density": "dense but readable, with large simple shapes replacing detailed scenery",
+    "layering": "background paper, huge typography, backing panel, diagonal slab, subject, badge or bubble, small side type",
+    "aspect_ratio_rules": {
+      "9:16": "stack the headline in a tall top or side band, keep the mascot or subject large in the lower half, and run the diagonal panel corner to corner",
+      "16:9": "place the headline as a massive left, top-left, or vertical title block, stretch the diagonal panel across the center, and anchor the subject to one lower corner"
+    }
+  },
+  "typography": {
+    "headline": "ultra-heavy geometric black display type, very large, tight spacing, blocky proportions, sometimes stacked, vertical, cropped, or interlocked",
+    "secondary": "small bold sans-serif labels, compact side strips, project index text, stamps, or repeated microtype",
+    "text_quantity": "use a few large words and a few small labels; do not create long paragraphs",
+    "placement": "headline must be integrated into the composition as a structural graphic block, not floated as a caption",
+    "legibility": "prefer short invented English or Chinese headline text; avoid real brands, source slogans, or platform UI"
+  },
+  "color_palette": {
+    "base": [
+      "off-white paper",
+      "deep black"
+    ],
+    "main_panel": [
+      "bright cyan",
+      "soft teal",
+      "mint green",
+      "lemon yellow"
+    ],
+    "secondary_panel": [
+      "pale green",
+      "portfolio red",
+      "cobalt blue",
+      "soft magenta"
+    ],
+    "accent": [
+      "alert red",
+      "small cobalt badge",
+      "single high-contrast stamp color"
+    ],
+    "proportions": "black and off-white carry most of the image; cyan, mint, lemon, or teal form the major graphic masses; red or a related accent stays small and decisive"
+  },
+  "design_rules": [
+    "Keep the image poster-flat and graphic; do not add realistic depth, cast shadows, or natural camera lighting.",
+    "Let the largest typography feel almost too big for the frame.",
+    "Use one primary diagonal color slab or one dominant tilted panel; do not multiply panels into a noisy abstract background.",
+    "Use one foreground mascot, figure, product, or portfolio subject with simple shapes and heavy black outline.",
+    "Add at most one speech bubble, badge, stamp, red card cluster, or prohibition-style symbol as the main accent.",
+    "Make the story new while preserving the same giant type, diagonal slab, flat color, thick outline, and screenprint grammar.",
+    "For portfolio covers, keep the Chinese title bold and graphic, with project cards and index labels behaving as poster elements rather than UI."
+  ],
+  "do": [
+    "Use oversized black display type as a structural element.",
+    "Use off-white paper, cyan or mint panels, lemon or green slabs, and a tiny red accent.",
+    "Use simple rounded mascot bodies, portfolio icons, or graphic subjects with minimal facial marks and thick outlines.",
+    "Use thick black borders, flat screenprint color, compact labels, and short editorial text.",
+    "Keep props iconic and simplified, with strong silhouette readability."
+  ],
+  "avoid": [
+    "Do not use coffee, coffee cups, design-company wording, course logos, watermarks, platform marks, app screenshots, or QR codes.",
+    "Do not copy the same white cloud-like mascot, reclining hidden figure, raised-arm pose, source headline, or source speech bubble.",
+    "Do not turn the style into a realistic product ad, glossy 3D render, anime frame, painterly illustration, or detailed comic page.",
+    "Do not add dense background scenery, price labels, long paragraph text, official brand marks, or UI overlays.",
+    "Do not use glossy gradients, photographic lighting, soft airbrush shading, or realistic material rendering."
+  ],
+  "prompt_template": "Create a {ASPECT_RATIO} image in the \"Bold Block Mascot Poster Style\" visual style.\n\nSubject: {SUBJECT}\nAction: {SUBJECT_ACTION}\nProp/Product: {PRODUCT_OR_PROP}\nLocation: {LOCATION}\nBackground: {BACKGROUND_ELEMENTS}\nMain text: {MAIN_TEXT}\nSecondary text: {SECONDARY_TEXT}\nAccent symbol: {ACCENT_SYMBOL}\nWardrobe/styling: {WARDROBE_STYLE}\n\nApply these style rules:\n- Dense flat editorial poster composition with oversized ultra-heavy black display typography as a structural block.\n- A single large tilted cyan, mint, teal, or lemon panel crosses the center, backed by a secondary inset shape or project-card block.\n- One chunky rounded white mascot-like subject or simplified graphic object with thick uniform black outline, minimal face marks, and sticker anatomy.\n- Off-white paper base, black linework, cyan/mint/lemon panels, and one small red or high-contrast accent only.\n- Flat raster illustration with screenprint sharpness, subtle paper grain, hard fills, and no realistic light or depth.\n- Add one compact speech bubble, stamp, badge, red card cluster, or editorial label accent, but never a real logo.\n- Use short graphic typography only; headline text can be English or Chinese, but it must behave as a poster shape.\n\nImportant content rule: match the extracted style first, then change the source content. Use new subjects, new scene details, new props, and new text while preserving the style fidelity anchors. Avoid coffee themes, source slogans, course identities, watermarks, UI screenshots, real brand marks, exact source mascot anatomy, realistic 3D rendering, glossy product photography, anime scenes, painterly detail, long paragraphs, and cluttered background scenery.",
+  "negative_prompt": "coffee, coffee cup, no coffee icon, design company, design studio, course logo, OFFF, watermark, username, social media watermark, QR code, app screenshot, UI window, exact reference mascot, reclining hidden figure, realistic 3D render, anime scene, glossy product photography, painterly illustration, complex background detail, tiny paragraphs, brand logo, platform UI, official logo",
+  "examples": [
+    {
+      "case_name": "Design Portfolio Lemon Cover",
+      "values": {
+        "SUBJECT": "rounded white portfolio mascot holding a flat red project card, with minimal vertical eyes and a thick black sticker outline",
+        "SUBJECT_ACTION": "leaning into a lemon yellow diagonal title panel while presenting the portfolio cards",
+        "PRODUCT_OR_PROP": "stack of simplified red portfolio cards, small project index tabs, and a black outlined folder icon",
+        "LOCATION": "flat off-white design portfolio cover surface",
+        "BACKGROUND_ELEMENTS": "vertical black title block, lemon panel, red project cards, compact side labels, and tiny grid marks",
+        "MAIN_TEXT": "设计作品集",
+        "SECONDARY_TEXT": "PORTFOLIO, CASE STUDY, VISUAL SYSTEM",
+        "ACCENT_SYMBOL": "small red stamp and check mark",
+        "WARDROBE_STYLE": "clean white sticker mascot body with heavy black outline and no realistic clothing detail"
+      }
+    },
+    {
+      "case_name": "Archive Keycard Poster",
+      "values": {
+        "SUBJECT": "rounded white archive courier mascot with two tiny vertical eyes and a square satchel",
+        "SUBJECT_ACTION": "dropping an oversized red keycard into a flat scanner slot",
+        "PRODUCT_OR_PROP": "red keycard and simplified scanner tray",
+        "LOCATION": "paper-flat record archive counter",
+        "BACKGROUND_ELEMENTS": "mint green file tabs, diagonal cyan sheet, one black side label strip, and compact microtype",
+        "MAIN_TEXT": "SCAN NOW",
+        "SECONDARY_TEXT": "ARCHIVE RUN",
+        "ACCENT_SYMBOL": "red check stamp",
+        "WARDROBE_STYLE": "sticker-like white body with thick black outline and no clothing detail"
+      }
+    },
+    {
+      "case_name": "Library Zine Launch",
+      "values": {
+        "SUBJECT": "rounded white zine librarian mascot with a rectangular face opening and two short arms",
+        "SUBJECT_ACTION": "sliding a small red booklet across a checkout desk",
+        "PRODUCT_OR_PROP": "red mini zine and flat library stamp",
+        "LOCATION": "abstract library checkout station",
+        "BACKGROUND_ELEMENTS": "mint green shelf block, cyan diagonal poster sheet, black vertical microtype strip, and compact labels",
+        "MAIN_TEXT": "ZINE OUT",
+        "SECONDARY_TEXT": "READ LATER",
+        "ACCENT_SYMBOL": "red borrowed stamp",
+        "WARDROBE_STYLE": "simple white sticker body with heavy black outline and no realistic fabric"
+      }
+    },
+    {
+      "case_name": "Greenhouse Device Check",
+      "values": {
+        "SUBJECT": "rounded white greenhouse technician mascot with a small square face and stubby legs",
+        "SUBJECT_ACTION": "pointing at a red sensor puck clipped to a leaf-shaped panel",
+        "PRODUCT_OR_PROP": "red sensor puck and simplified plant monitor card",
+        "LOCATION": "flat greenhouse worktable",
+        "BACKGROUND_ELEMENTS": "mint green leaf panels, cyan diagonal sunshade sheet, black side microtype, and project-card labels",
+        "MAIN_TEXT": "PLANT OK",
+        "SECONDARY_TEXT": "CHECK POINT",
+        "ACCENT_SYMBOL": "red no-wilt stamp",
+        "WARDROBE_STYLE": "clean sticker-like white body with heavy black outline and minimal face"
+      }
+    }
+  ]
+}

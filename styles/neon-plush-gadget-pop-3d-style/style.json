@@ -1,0 +1,189 @@
+{
+  "style_name": "Neon Plush Gadget Pop 3D Style",
+  "style_slug": "neon-plush-gadget-pop-3d-style",
+  "style_version": "1.0.0",
+  "style_summary": "A glossy toy-advertising 3D style built from acid lime studio backdrops, oversized fuzzy plush mascots, chunky tech props, soft textile surfaces, translucent plastic accessories, checkerboard cards, sticker-like icons, hot-pink burst graphics, and bright commercial lighting.",
+  "environment_variables": {
+    "SUBJECT": "main plush mascot, fuzzy object, or toy-like character",
+    "SUBJECT_ACTION": "simple staged action or pose",
+    "PRODUCT_OR_PROP": "chunky gadget, toy product, accessory, snack object, or display prop",
+    "LOCATION": "minimal neon studio set, shelf, counter, or toy display environment",
+    "BACKGROUND_ELEMENTS": "burst shapes, checkerboards, floating icons, stickers, soft blobs, secondary toy props, or graphic rays",
+    "MAIN_TEXT": "short display-card headline or product-style word",
+    "SECONDARY_TEXT": "tiny supporting copy on stickers, tags, labels, or cards",
+    "ACCENT_SYMBOL": "small pop icon, spark, flower, checker tile, smile mark, or radiating doodle",
+    "WARDROBE_STYLE": "surface styling, plush treatment, small accessories, straps, charms, or toy trims",
+    "STYLE_FIDELITY_ANCHORS": "observable style traits that must remain visible",
+    "SOURCE_CONTENT_TO_AVOID": "literal source content that generated samples must not recreate",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Acid lime or neon yellow-green studio background dominates the frame, with a soft gradient glow rather than realistic scenery.",
+    "A single oversized plush mascot or fuzzy toy object fills the lower center, cropped close enough to feel tactile and collectible.",
+    "Surfaces mix fuzzy knitted fabric, soft fleece, glossy molded plastic, translucent jelly material, chrome accents, and rubbery toy parts.",
+    "The main prop is a chunky toy-like gadget or product object sitting on or hugging the plush subject.",
+    "Palette uses electric lime as the base with cyan, sky blue, hot pink, lavender, yellow, white, chrome gray, and small black details.",
+    "Composition is dense but playful: big central toy mass, foreground shelf edge, floating side props, and graphic stickers arranged around it.",
+    "Graphic elements include hot-pink burst marks, checkerboard panels, lightning or starburst shapes, flower buttons, smiley icons, tags, and tiny labels.",
+    "Lighting is high-key commercial studio lighting with glossy highlights, soft bloom, gentle shadows, and polished 3D rendering.",
+    "Camera is close-up front three-quarter product view, slightly low or eye-level, making the toy object feel large and collectible.",
+    "Text appears as display-card lettering, sticker labels, hang tags, or tiny product microcopy, not as long paragraphs.",
+    "Mood is hyper-bright Y2K toy pop, cute tech accessory culture, tactile, premium, synthetic, and energetic.",
+    "Keep forms rounded, pillowy, inflated, and soft even when the subject is a gadget or product."
+  ],
+  "source_content_to_avoid": [
+    "Do not recreate a green dragon, dinosaur, monster head, or the same blue snout with nostrils.",
+    "Do not place a camera on top of the subject or use a camera as the central product prop.",
+    "Do not copy the VIP card, the word VIP, membership wording, unlock/pro/features copy, or any close substitute.",
+    "Do not copy the same FILLTER tag, barcode spray can, flower button, pink basketball, exact checkerboard card, or the same object cluster.",
+    "Do not reuse the same face layout with two black oval eyes, yellow eye rings, green brows, and purple cord whiskers.",
+    "Do not use the same hot-pink lightning burst behind a camera card in the same position.",
+    "Do not include logos, watermarks, QR codes, creator marks, usernames, app marks, or brand identifiers.",
+    "Do not preserve the original story premise of a plush creature wearing a camera with a VIP subscription display."
+  ],
+  "visual_deconstruction": {
+    "overall_style_category": "hyper-saturated 3D toy product render, plush mascot advertising still, Y2K gadget-pop studio composition",
+    "composition_and_layout": "large plush subject fills the lower center on a clean shelf; a chunky prop sits above or against it; floating toy props and graphic burst marks orbit the subject; bright negative space remains in the neon background",
+    "subject_placement": "subject is cropped close at the bottom with oversized rounded features reaching toward the viewer; the prop often sits near the upper center and becomes the visual crown",
+    "camera_angle_or_perspective": "front-facing to three-quarter product photography angle, slightly low and close, with shallow spatial depth and soft commercial shadows",
+    "typography_style": "large simple display-card lettering, condensed product-card words, small tag microcopy, sticker labels, and tiny tech-card text",
+    "color_palette_behavior": "electric lime background acts as the base field; cyan and blue make soft plush counterforms; hot pink adds graphic shock accents; chrome gray and translucent plastic add gadget shine",
+    "graphic_elements": "checkerboard panels, pixel blocks, radiating doodle bursts, lightning/starburst silhouettes, charm tags, flower buttons, smiley balls, capsules, rings, cords, and floating jelly objects",
+    "texture_and_finish": "visible plush knit texture, fuzzy soft edges, glossy plastic reflections, jelly translucency, chrome highlights, subtle bloom, and clean high-resolution 3D polish",
+    "lighting": "bright high-key studio light with soft shadows under objects, specular highlights on plastic and chrome, gentle glow on neon colors",
+    "mood": "playful, tactile, collectible, synthetic, cute-tech, energetic, maximal but clean"
+  },
+  "composition": {
+    "primary_structure": [
+      "Use a neon lime or yellow-green studio background with subtle glow and no detailed real-world scenery.",
+      "Place one oversized plush mascot or fuzzy toy object in the lower center as the main visual mass.",
+      "Add one chunky gadget or product prop above, in front of, or nestled into the plush subject.",
+      "Use a clean white or pale shelf edge along the bottom when the scene needs grounding.",
+      "Surround the subject with a few floating side props and toy accessories without making a realistic room.",
+      "Add hot-pink burst marks, checkerboard panels, sticker labels, or graphic rays behind or beside the prop.",
+      "Use cyan or blue plush counterforms against the lime base to keep the soft-toy color rhythm.",
+      "Keep the subject large and tactile, with foreground features or props pushing toward the viewer.",
+      "Balance maximal toy detail with clear central hierarchy: subject first, prop second, graphics third."
+    ],
+    "vertical_9x16": "Stack the product prop near the upper third and let the plush subject occupy the lower half to two-thirds, with floating accents in the open neon field.",
+    "horizontal_16x9": "Spread the plush subject across the lower center or lower right, place the prop as a central crown or side anchor, and let burst graphics and floating props fill the lateral space."
+  },
+  "typography": {
+    "headline": "short display-card or sticker headline in bold simple block lettering, usually white, black, lime, or hot-pink against a dark or checkerboard insert",
+    "secondary_text": "tiny product microcopy on labels, tags, tabs, and stickers; it should remain decorative and sparse",
+    "text_orientation": "text can sit on a small screen, card, tag, sticker, capsule, or hanging label rather than directly on the background",
+    "text_behavior": "letters should feel like toy packaging or gadget UI graphics, crisp and integrated into 3D props; avoid paragraphs and brand marks"
+  },
+  "color_palette": {
+    "acid_lime_background": "#D9FF2A",
+    "electric_green_plush": "#58F31D",
+    "cyan_plush": "#73E7FF",
+    "sky_blue_shadow": "#45BDF5",
+    "hot_pink_graphic": "#FF2BAA",
+    "bubblegum_pink": "#FF7BC8",
+    "sun_yellow": "#FFE95C",
+    "chrome_gray": "#9AA58C",
+    "soft_black_detail": "#111613",
+    "clean_white": "#F6FFF0"
+  },
+  "image_treatment": {
+    "rendering_mode": "high-resolution polished 3D product render with toy-advertising finish",
+    "surface_texture": "plush knit fibers, fuzzy fleece, rubbery matte plastic, glossy molded plastic, translucent jelly props, and chrome highlights",
+    "lighting": "high-key studio lighting, soft bloom, bright specular highlights, and clean grounding shadows",
+    "depth": "shallow product-stage depth with close foreground scale; not flat vector and not photorealistic documentary",
+    "detail_density": "medium-high toy detail around a clear central subject, with no realistic environmental clutter"
+  },
+  "design_rules": [
+    "Style fidelity depends on acid lime background, plush/fuzzy main subject, toy gadget prop, bright Y2K graphics, and polished 3D lighting appearing together.",
+    "Use rounded, inflated, soft, collectible shapes even for gadgets and product props.",
+    "Keep the scene staged like a toy product still, not a real room or lifestyle photo.",
+    "Use hot pink and checkerboard accents as graphic shocks around the subject.",
+    "Include at least one tactile fabric surface and one glossy or translucent synthetic surface.",
+    "Make text part of a prop, screen, label, tag, or sticker rather than a plain poster caption.",
+    "Preserve close product-view scale and foreground shelf grounding when possible.",
+    "Change the character, prop, display text, and story premise completely from the source."
+  ],
+  "do": [
+    "Use acid lime or neon yellow-green as the dominant background field.",
+    "Use oversized plush, fuzzy, knitted, or fleece surfaces with visible tactile texture.",
+    "Use chunky toy-like gadgets, translucent accessories, chrome rings, and rubber details.",
+    "Use hot-pink bursts, checkerboards, sticker icons, tags, charms, and graphic doodle marks.",
+    "Use high-key commercial studio lighting with soft bloom and glossy highlights.",
+    "Keep text short, punchy, and embedded into toy packaging or prop surfaces."
+  ],
+  "avoid": [
+    "green dragon, dinosaur, monster head, blue snout with nostrils, camera-on-head, VIP display, membership card, FILLTER tag, barcode spray can, flower button, pink basketball, copied object cluster",
+    "watermark, username, creator ID, platform logo, QR code, signature, brand logo, app logo, real product logo",
+    "flat vector art, hand-drawn poster, realistic animal portrait, documentary photo, cinematic dark lighting, muted palette",
+    "detailed real room, natural landscape, busy retail shelf, long paragraphs of readable copy, corporate UI screens",
+    "sharp anatomical realism, hard mechanical sci-fi, gritty texture, horror mood, luxury minimalism"
+  ],
+  "prompt_template": "Create a {ASPECT_RATIO} finished raster image in the \"Neon Plush Gadget Pop 3D Style\". Subject: {SUBJECT}. Action: {SUBJECT_ACTION}. Prop/Product: {PRODUCT_OR_PROP}. Location: {LOCATION}. Background elements: {BACKGROUND_ELEMENTS}. Main text: {MAIN_TEXT}. Secondary text: {SECONDARY_TEXT}. Accent symbol: {ACCENT_SYMBOL}. Wardrobe/styling: {WARDROBE_STYLE}. Style fidelity anchors: {STYLE_FIDELITY_ANCHORS}. Source content to avoid: {SOURCE_CONTENT_TO_AVOID}. Apply these style rules: acid lime or neon yellow-green studio background, oversized fuzzy plush main subject, rounded inflated toy shapes, visible knit or fleece texture, chunky gadget or product prop, glossy molded plastic, translucent jelly details, chrome highlights, hot-pink burst graphics, checkerboard cards, sticker labels, tiny tags, playful Y2K icon grammar, foreground shelf edge when useful, high-key commercial studio lighting, soft bloom, polished 3D product-render finish, close front three-quarter product perspective, tactile collectible mood. Important content rule: preserve the style anchors first, then change the original content completely with new subject, prop, display text, colors within the palette, and story premise. Avoid: watermark, username, creator ID, platform logo, QR code, signature, brand mark, app mark, copied source text, VIP, membership card, camera-on-head, green dragon, dinosaur, monster head, blue snout, FILLTER tag, barcode spray can, copied flower button, copied pink basketball, exact checkerboard card, flat vector art, dark cinematic realism, natural landscape, detailed real room, long readable paragraphs, corporate interface.",
+  "negative_prompt": "watermark, username, creator ID, platform logo, QR code, signature, brand logo, app mark, copied source text, VIP, membership card, unlock features text, camera on head, camera as central prop, green dragon, dinosaur, monster head, blue snout with nostrils, same black oval eyes with yellow rings, purple cord whiskers, FILLTER tag, barcode spray can, copied flower button, pink basketball, same object cluster, recognizable licensed character, identifiable person, flat vector illustration, hand-drawn poster, dark cinematic lighting, muted colors, photorealistic room, natural scenery, retail shelf clutter, long paragraphs, corporate UI, gritty realism, horror mood",
+  "examples": [
+    {
+      "case_name": "bubble-tea-rocket-kiosk",
+      "values": {
+        "SUBJECT": "a round mint-green plush moon-bunny kiosk with cyan floppy ear cushions and tiny black bead eyes",
+        "SUBJECT_ACTION": "leaning forward as if presenting a new drink launch",
+        "PRODUCT_OR_PROP": "an oversized translucent bubble-tea rocket capsule with chrome straw ring and jelly fins",
+        "LOCATION": "minimal neon studio counter with a pale speckled shelf edge",
+        "BACKGROUND_ELEMENTS": "hot-pink starburst behind the capsule, lime checkerboard mini card, floating tapioca spheres, tiny smile sticker, and cyan soft blobs",
+        "MAIN_TEXT": "BOBA GO",
+        "SECONDARY_TEXT": "fresh orbit / sweet fuel",
+        "ACCENT_SYMBOL": "radiating pink sparkle",
+        "WARDROBE_STYLE": "plush mint knit body, cyan fleece ears, small white hang tag, lavender cord charm, and rubbery green buttons",
+        "STYLE_FIDELITY_ANCHORS": "acid lime studio background, oversized fuzzy plush subject, chunky translucent gadget prop, checkerboard card, hot-pink burst graphic, floating toy accessories, high-key glossy 3D lighting, close product perspective",
+        "SOURCE_CONTENT_TO_AVOID": "no dragon, no dinosaur, no camera, no VIP card, no membership copy, no blue snout, no FILLTER tag, no barcode can"
+      }
+    },
+    {
+      "case_name": "cassette-snail-music-lab",
+      "values": {
+        "SUBJECT": "a soft lime plush snail mascot with a sky-blue spiral shell pillow and tiny glossy black eyes",
+        "SUBJECT_ACTION": "curling around a toy music gadget on the counter",
+        "PRODUCT_OR_PROP": "a chunky chrome-and-jelly cassette player with a small dark display screen and rubber knobs",
+        "LOCATION": "minimal neon toy music lab on a clean white shelf",
+        "BACKGROUND_ELEMENTS": "pink checker lightning shape, floating flower-shaped sound icons, transparent plastic rings, tiny yellow capsule, and a small hanging tag",
+        "MAIN_TEXT": "TAPE POP",
+        "SECONDARY_TEXT": "slow mix / play soft",
+        "ACCENT_SYMBOL": "tiny checker flower",
+        "WARDROBE_STYLE": "fuzzy lime knit body, cyan fleece shell, lavender cable loop, small sticker badge, and glossy green button trims",
+        "STYLE_FIDELITY_ANCHORS": "neon lime backdrop, plush tactile mascot, toy gadget crown, glossy plastic and chrome, hot-pink graphic burst, checkerboard accent, floating jelly props, bright studio render",
+        "SOURCE_CONTENT_TO_AVOID": "no camera-on-head, no VIP text, no monster head, no dragon face, no purple whiskers, no copied flower button, no spray can"
+      }
+    },
+    {
+      "case_name": "melon-sneaker-charge-station",
+      "values": {
+        "SUBJECT": "a fuzzy electric-green melon star mascot with soft cyan puff arms and black oval button eyes",
+        "SUBJECT_ACTION": "hugging a collectible sneaker-shaped charger",
+        "PRODUCT_OR_PROP": "an oversized translucent sneaker battery dock with chrome charging port and jelly laces",
+        "LOCATION": "minimal neon product pedestal with a pale speckled ledge",
+        "BACKGROUND_ELEMENTS": "hot-pink radial doodles, lime-and-white checker tag, floating yellow star chips, small blue rubber ring, and soft plush puffs",
+        "MAIN_TEXT": "KICK CHARGE",
+        "SECONDARY_TEXT": "plug happy / power soft",
+        "ACCENT_SYMBOL": "small pink flower burst",
+        "WARDROBE_STYLE": "lime fuzzy body, cyan knitted arms, tiny rubber badge, white hang strap, and lavender cord accent",
+        "STYLE_FIDELITY_ANCHORS": "acid green studio glow, close plush subject scale, chunky toy product prop, tactile knit fibers, translucent jelly plastic, chrome detail, sticker-like graphics, high-key glossy toy advertising",
+        "SOURCE_CONTENT_TO_AVOID": "no VIP display, no camera, no dragon or dinosaur head, no blue nostril snout, no FILLTER label, no barcode can, no copied object arrangement"
+      }
+    },
+    {
+      "case_name": "jelly-alarm-cloud-dock",
+      "values": {
+        "SUBJECT": "a pillowy lime cloud mascot with cyan cushion cheeks, tiny sleepy black eyes, and yellow plush rays",
+        "SUBJECT_ACTION": "resting under a playful wake-up gadget display",
+        "PRODUCT_OR_PROP": "a rounded translucent jelly alarm dock with chrome rim, rubber button, and small dark screen",
+        "LOCATION": "minimal neon morning studio setup on a clean white shelf",
+        "BACKGROUND_ELEMENTS": "pink pixel checker burst, floating silver ring charm, tiny smile ball, lavender cable loop, and soft blue cushion shapes",
+        "MAIN_TEXT": "WAKE POP",
+        "SECONDARY_TEXT": "soft alarm / bright start",
+        "ACCENT_SYMBOL": "tiny pink radiating sun",
+        "WARDROBE_STYLE": "fuzzy lime plush cloud, cyan fleece cheeks, yellow soft-ray trims, green rubber charm, and small white product tag",
+        "STYLE_FIDELITY_ANCHORS": "neon yellow-green background, oversized tactile plush form, gadget display prop, checkerboard and hot-pink burst marks, floating accessories, glossy plastic plus fuzzy textile contrast, bright polished 3D product lighting",
+        "SOURCE_CONTENT_TO_AVOID": "no green monster head, no camera prop, no VIP or subscription card, no blue snout, no same face anatomy, no FILLTER tag, no barcode spray can"
+      }
+    }
+  ]
+}

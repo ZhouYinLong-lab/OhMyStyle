@@ -1,0 +1,157 @@
+{
+  "style_name": "Blue Bubble Fisheye Action Poster Style",
+  "style_slug": "blue-bubble-fisheye-action-poster-style",
+  "style_version": "2026.05.17",
+  "style_summary": "A crisp white youth-culture action poster style with a rectangular fisheye photograph, oversized rounded royal-blue display typography, frame-breaking foreground scale, small blue editorial captions, and one red hand-drawn annotation circle.",
+  "environment_variables": {
+    "SUBJECT": "adult action subject, performer, courier, maker, athlete, rider, dancer, chef, technician, or product model",
+    "SUBJECT_ACTION": "lunging toward the lens, reaching across the frame, jumping over the camera, presenting a prop, balancing in motion, or landing in a dramatic wide-angle pose",
+    "PRODUCT_OR_PROP": "featured object, shoe, bag, tool, instrument, food item, plant crate, wearable, device, or product detail that can be emphasized by perspective",
+    "LOCATION": "sunny urban roof, bright plaza, skateable concrete space, clean market aisle, public court, workshop, studio patio, transit deck, or open daylight environment",
+    "BACKGROUND_ELEMENTS": "blue sky, motion-blurred edges, white poster margin, rectangular photo crop, oversized blue bubble headline, small editorial text blocks, non-scannable stripe code, and red hand-drawn circle annotation",
+    "MAIN_TEXT": "short rounded headline, 1 to 2 words, set as huge blue bubble lettering cropped behind or above the photo",
+    "SECONDARY_TEXT": "small two-line editorial caption or slogan in blue, placed near the lower margin",
+    "ACCENT_SYMBOL": "red hand-drawn circle, thin underline, tiny blue divider, or non-scannable stripe block",
+    "WARDROBE_STYLE": "casual streetwear, sport utility layers, shorts, sneakers, sunglasses, cap, apron, technical vest, or color-blocked everyday clothing",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Preserve the core visual identity: A crisp white youth-culture action poster style with a rectangular fisheye photograph, oversized rounded royal-blue display typography, frame-breaking foreground scale, small blue editorial captions, and one red hand-drawn annotation circle.",
+    "Photography: use an extreme low-angle fisheye or action-camera lens, very close to the foreground object, with barrel distortion, edge stretching, motion blur near the edges, bright daylight, blue sky or open high-key light, crisp highlights, realistic skin, fabric, product surfaces, and believable anatomy.",
+    "Layout: build a clean white editorial poster canvas with a central rectangular action photo.",
+    "Let one foreground hand, foot, prop, or product detail become huge and optionally break past the photo rectangle into the white margin.",
+    "Keep the poster layer flat, precise, and uncluttered.",
+    "Typography: set MAIN_TEXT as massive rounded royal-blue bubble lettering cropped behind or above the photo block.",
+    "Use a rough red marker circle to highlight one product or movement detail.",
+    "Avoid: watermarks, usernames, creator IDs, platform logos, app interface marks, QR codes, scannable barcodes, copied reference people, copied poses, copied text, recognizable logos, brand-owned product marks, long paragraphs, cluttered collage, dark cyberpunk lighting, luxury minimalism, flat vector substitutes, SVG or HTML mockup looks, distorted faces, extra limbs, extra fingers, malformed hands, and unreadable main headline."
+  ],
+  "source_content_to_avoid": [
+    "watermark",
+    "username",
+    "creator ID",
+    "platform logo",
+    "app interface",
+    "QR code",
+    "scannable barcode",
+    "copied PUNK text",
+    "copied reference slogan",
+    "copied creator credit",
+    "copied skateboarder",
+    "exact original pose"
+  ],
+  "visual_deconstruction": {
+    "style_category": "A crisp white youth-culture action poster style with a rectangular fisheye photograph, oversized rounded royal-blue display typography, frame-breaking foreground scale, small blue editorial captions, and one red hand-drawn annotation circle.",
+    "composition_logic": "A reusable poster/image system where the subject, prop, location, text, and accent variables change while the layout grammar remains fixed.",
+    "subject_treatment": "The subject is driven by SUBJECT and SUBJECT_ACTION, with wardrobe or visual treatment supplied by WARDROBE_STYLE.",
+    "background_system": "LOCATION and BACKGROUND_ELEMENTS provide the scene, texture, spatial cues, and secondary details without changing the style family.",
+    "type_and_graphics": "MAIN_TEXT, SECONDARY_TEXT, and ACCENT_SYMBOL control readable text, microcopy, stickers, marks, arrows, bursts, or other graphic accents.",
+    "content_boundary": "The negative prompt and source_content_to_avoid list prevent direct recreation of source subjects, marks, brands, watermarks, and story premises."
+  },
+  "image_treatment": {
+    "rendering_mode": "photographic collage",
+    "finish": "finished AI-image prompt output, not a wireframe, SVG, HTML mockup, or raw storyboard note",
+    "texture": "preserve the material, paper, grain, marker, photographic, or print texture described by the style summary and prompt_template",
+    "lighting": "keep the lighting behavior implied by the reference style rather than replacing it with a generic cinematic look"
+  },
+  "composition": {
+    "layout": "Keep the subject hierarchy, crop behavior, framing, and density described by the prompt_template.",
+    "subject": "Use SUBJECT and SUBJECT_ACTION as the primary visual anchor, scaled and positioned according to the style identity.",
+    "scene": "Use LOCATION and BACKGROUND_ELEMENTS for setting detail without changing the visual genre.",
+    "text": "Place MAIN_TEXT and SECONDARY_TEXT as designed graphic elements, not as long paragraphs."
+  },
+  "typography": {
+    "main_text": "MAIN_TEXT should be short, legible, and visually integrated with the poster or image system.",
+    "secondary_text": "SECONDARY_TEXT should read as small caption, label, route note, slogan, or microcopy.",
+    "style": "Match the typography behavior described by the style summary and prompt_template, including scale, distortion, texture, and placement."
+  },
+  "color_palette": {
+    "palette_behavior": "Use the dominant colors, contrast rhythm, and accent-color logic implied by the style summary.",
+    "background": "Keep the background color family consistent with the reference style.",
+    "accents": "Use ACCENT_SYMBOL and graphic marks to carry small high-contrast color moments."
+  },
+  "design_rules": [
+    "Include PRODUCT_OR_PROP as a clear foreground object or visual anchor.",
+    "Use WARDROBE_STYLE for clothing, styling, surface treatment, and character details.",
+    "Photography: use an extreme low-angle fisheye or action-camera lens, very close to the foreground object, with barrel distortion, edge stretching, motion blur near the edges, bright daylight, blue sky or open high-key light, crisp highlights, realistic skin, fabric, product surfaces, and believable anatomy.",
+    "Layout: build a clean white editorial poster canvas with a central rectangular action photo.",
+    "Let one foreground hand, foot, prop, or product detail become huge and optionally break past the photo rectangle into the white margin.",
+    "Keep the poster layer flat, precise, and uncluttered.",
+    "Typography: set MAIN_TEXT as massive rounded royal-blue bubble lettering cropped behind or above the photo block."
+  ],
+  "do": [
+    "Replace subjects, props, locations, text, and story details through examples.values.",
+    "Keep prompt_template placeholders declared in environment_variables.",
+    "Preserve the style_fidelity_anchors when adapting the JSON to a new image request.",
+    "Use short, readable text values for MAIN_TEXT and SECONDARY_TEXT."
+  ],
+  "avoid": [
+    "watermark",
+    "username",
+    "creator ID",
+    "platform logo",
+    "app interface",
+    "QR code",
+    "scannable barcode",
+    "copied PUNK text"
+  ],
+  "prompt_template": "Create an image in blue-bubble-fisheye-action-poster-style.\n\nAspect ratio: {ASPECT_RATIO}.\n\nScene: {SUBJECT} {SUBJECT_ACTION}, featuring {PRODUCT_OR_PROP}, in {LOCATION}. Include {BACKGROUND_ELEMENTS}. Style the subject with {WARDROBE_STYLE}.\n\nPhotography: use an extreme low-angle fisheye or action-camera lens, very close to the foreground object, with barrel distortion, edge stretching, motion blur near the edges, bright daylight, blue sky or open high-key light, crisp highlights, realistic skin, fabric, product surfaces, and believable anatomy.\n\nLayout: build a clean white editorial poster canvas with a central rectangular action photo. Let one foreground hand, foot, prop, or product detail become huge and optionally break past the photo rectangle into the white margin. Keep the poster layer flat, precise, and uncluttered.\n\nTypography: set \"{MAIN_TEXT}\" as massive rounded royal-blue bubble lettering cropped behind or above the photo block. Keep supporting text small, geometric, and blue. Add \"{SECONDARY_TEXT}\" only as compact editorial microcopy in the bottom margin.\n\nGraphic system: include {ACCENT_SYMBOL}, a small non-scannable stripe block, and balanced lower-margin caption groups. Use a rough red marker circle to highlight one product or movement detail.\n\nAvoid: watermarks, usernames, creator IDs, platform logos, app interface marks, QR codes, scannable barcodes, copied reference people, copied poses, copied text, recognizable logos, brand-owned product marks, long paragraphs, cluttered collage, dark cyberpunk lighting, luxury minimalism, flat vector substitutes, SVG or HTML mockup looks, distorted faces, extra limbs, extra fingers, malformed hands, and unreadable main headline.",
+  "negative_prompt": "watermark, username, creator ID, platform logo, app interface, QR code, scannable barcode, copied PUNK text, copied reference slogan, copied creator credit, copied skateboarder, exact original pose, exact shoe brand mark, recognizable logo, long paragraph text, cluttered collage, dark cyberpunk scene, luxury beige editorial, flat vector substitute, SVG look, HTML mockup, canvas drawing, distorted face, extra limbs, extra fingers, malformed hands, unreadable main headline",
+  "examples": [
+    {
+      "case_name": "Rooftop Plant Delivery",
+      "values": {
+        "SUBJECT": "adult rooftop courier",
+        "SUBJECT_ACTION": "lunging toward a low fisheye camera while lowering a small plant crate",
+        "PRODUCT_OR_PROP": "translucent green plant delivery crate, circled in rough red marker",
+        "LOCATION": "sunny urban rooftop garden with pale concrete and blue sky",
+        "BACKGROUND_ELEMENTS": "motion-blurred roof edge, white poster border, central photo rectangle, oversized blue bubble headline behind the image, tiny bottom captions, and compact non-scannable stripe block",
+        "MAIN_TEXT": "GROW FAST",
+        "SECONDARY_TEXT": "fresh route / roof level",
+        "ACCENT_SYMBOL": "red hand-drawn oval around the plant crate",
+        "WARDROBE_STYLE": "olive utility vest, light shorts, white socks, clean black sneakers with no logo"
+      }
+    },
+    {
+      "case_name": "Solar Field Runner",
+      "values": {
+        "SUBJECT": "adult solar field runner",
+        "SUBJECT_ACTION": "vaulting over a low camera while checking a handheld sensor",
+        "PRODUCT_OR_PROP": "small chrome sunlight sensor on the runner's wrist, circled with rough red marker",
+        "LOCATION": "bright solar test lane with pale panels and a clear blue sky",
+        "BACKGROUND_ELEMENTS": "rectangular photo crop, lens-warped panels, radial motion blur, white poster margin, huge rounded blue headline peeking from behind the photo, tiny blue bottom copy, and compact non-scannable stripe block",
+        "MAIN_TEXT": "SUN RUSH",
+        "SECONDARY_TEXT": "bright test / lane 02",
+        "ACCENT_SYMBOL": "red hand-drawn circle around the wrist sensor",
+        "WARDROBE_STYLE": "cobalt windbreaker, black running shorts, reflective sunglasses, white low-profile shoes with no logo"
+      }
+    },
+    {
+      "case_name": "Gelato Counter Flip",
+      "values": {
+        "SUBJECT": "adult gelato maker",
+        "SUBJECT_ACTION": "leaning over the counter toward the lens while flipping a metal scoop",
+        "PRODUCT_OR_PROP": "shiny gelato scoop and pastel cup, with the scoop circled in rough red marker",
+        "LOCATION": "bright open-air gelato counter with sky-blue awning and white tile",
+        "BACKGROUND_ELEMENTS": "photo rectangle, fisheye counter distortion, motion-blurred pastel cups at edges, white poster border, oversized blue rounded headline cropped behind the image, small blue bottom captions, and compact non-scannable stripe block",
+        "MAIN_TEXT": "COLD MOVE",
+        "SECONDARY_TEXT": "soft serve / counter jump",
+        "ACCENT_SYMBOL": "red hand-drawn circle around the flying scoop",
+        "WARDROBE_STYLE": "white apron, navy tee, pale cap, casual black-and-white shoes with no brand mark"
+      }
+    },
+    {
+      "case_name": "Transit Bag Launch",
+      "values": {
+        "SUBJECT": "adult commuter dancer",
+        "SUBJECT_ACTION": "jumping over a low fisheye camera while swinging a modular shoulder bag forward",
+        "PRODUCT_OR_PROP": "small silver buckle on the modular bag, circled in rough red marker",
+        "LOCATION": "sunlit transit plaza with concrete steps, glass canopy, and bright sky",
+        "BACKGROUND_ELEMENTS": "rectangular photo block, motion-blurred plaza edges, white poster border, giant rounded blue headline hidden partly behind the photo, small blue lower captions, and compact non-scannable stripe block",
+        "MAIN_TEXT": "CITY JUMP",
+        "SECONDARY_TEXT": "platform note / move light",
+        "ACCENT_SYMBOL": "red hand-drawn oval around the bag buckle",
+        "WARDROBE_STYLE": "green shirt, denim shorts, black beanie, sunglasses, clean black shoes with no logo"
+      }
+    }
+  ]
+}

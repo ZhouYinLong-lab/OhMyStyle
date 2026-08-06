@@ -1,0 +1,188 @@
+{
+  "style_name": "Electric Blue Silhouette Product Launch Style",
+  "style_slug": "electric-blue-silhouette-product-launch-style",
+  "style_version": "1.0.0",
+  "style_summary": "A sparse premium consumer-tech launch poster style built from black negative space, a centered product silhouette, electric-blue rim lighting, a glowing horizontal platform, soft reflection, giant cropped blue background typography, and clean white announcement copy.",
+  "environment_variables": {
+    "SUBJECT": "main product, object, or technology category",
+    "SUBJECT_ACTION": "how the object is staged or presented",
+    "PRODUCT_OR_PROP": "specific object, product, or prop shape",
+    "LOCATION": "minimal stage, tabletop, or void-like setting",
+    "BACKGROUND_ELEMENTS": "secondary atmospheric details and background type behavior",
+    "MAIN_TEXT": "main headline or giant background word",
+    "SECONDARY_TEXT": "small launch copy or supporting text",
+    "ACCENT_SYMBOL": "tiny status light, separator, or minimal decorative mark",
+    "WARDROBE_STYLE": "styling direction for any visible human or tactile element",
+    "STYLE_FIDELITY_ANCHORS": "observable style traits that must remain visible",
+    "SOURCE_CONTENT_TO_AVOID": "literal source content that generated samples must not recreate",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Nearly black upper field with large areas of empty space.",
+    "Single product hero centered on the vertical axis or slightly below center.",
+    "Product remains mostly black, readable through electric-blue rim light and one tiny white status highlight.",
+    "Strong horizontal electric-blue platform or horizon line divides stage and foreground.",
+    "Blue glow spreads across the floor with a soft reflection or shadow directly under the product.",
+    "Giant cropped blue sans-serif background word sits behind the product and is partially hidden by it.",
+    "Bottom launch typography uses clean white geometric sans-serif text with strong scale contrast.",
+    "Color palette stays almost entirely black, navy, electric blue, and white.",
+    "Lighting is low-key, cool, glossy, and atmospheric, with no warm commercial accents.",
+    "Composition remains sparse, symmetrical, and teaser-like rather than crowded with feature labels.",
+    "Edges are soft and cinematic, with mild bloom and haze around the blue light.",
+    "The image feels like a premium consumer-electronics product announcement."
+  ],
+  "source_content_to_avoid": [
+    "Redmi, AirDots, Pro, or any real product name, logo, brand mark, watermark, carousel overlay, or platform UI.",
+    "Wireless earbuds, an earbud charging case, or the exact black rounded case silhouette from the reference.",
+    "The exact large background word, original Chinese headline, original date/time line, and original launch copy.",
+    "Top-right brand placement copied from the reference.",
+    "The same object scale, same product shape, same status light placement, or same announcement wording.",
+    "Any Xiaohongshu, social-app controls, page counter, arrows, dots, QR codes, usernames, or creator marks."
+  ],
+  "visual_deconstruction": {
+    "style_category": "minimal dark consumer-electronics launch poster, blue silhouette product teaser, premium social product announcement",
+    "composition_logic": "A single hero object sits in front of a giant cropped blue background word on a black stage. A bright blue horizontal light plane creates the tabletop, reflection, and visual anchor while sparse white text sits below.",
+    "subject_placement": "Main product occupies about 18 to 32 percent of the frame, centered and mostly silhouetted, with reflection extending downward into the blue foreground.",
+    "camera_perspective": "Straight-on low-to-mid product view with slight heroic scale and no busy environmental depth.",
+    "typography_behavior": "Huge background word in blue, cropped by frame edges and partially hidden by the product; clean white geometric sans-serif launch copy below with strong scale contrast.",
+    "color_palette_behavior": "Dominantly black and navy with electric-blue glow and white text. No warm accent palette; the only tiny accent may be a white status light.",
+    "graphic_elements": "Giant cropped word, horizontal blue light plane, soft reflection, tiny status dot, simple lower text stack.",
+    "texture_finish": "Glossy consumer-tech surface treatment, dark plastic or glass, soft bloom, subtle haze, smooth gradient falloff.",
+    "lighting": "Low-key black stage with blue rim light from the floor and sides, bright horizontal cyan-blue edge, soft reflection and deep shadows.",
+    "mood": "Quiet, premium, suspenseful, product-launch teaser with strong cool-light atmosphere."
+  },
+  "composition": {
+    "layout_density": "low",
+    "negative_space": "large black upper field and uncluttered side margins",
+    "product_scale": "single centered product hero, usually 18-32 percent of frame area",
+    "type_layering": "giant cropped blue word behind product; white launch text below or along lower edge",
+    "stage_system": "electric-blue horizontal platform line with foreground glow and reflection",
+    "aspect_ratio_rules": {
+      "9:16": "vertical social poster with black top space, huge cropped blue word behind the object, centered silhouette on the blue platform, main white headline in the lower third, small support line near the bottom",
+      "16:9": "wide launch banner with the same centered silhouette and blue horizon line, giant cropped word stretched across the background, compact white launch copy along the lower center or lower corners"
+    }
+  },
+  "typography": {
+    "background_headline": "huge geometric sans-serif, blue gradient, cropped by the frame, partially hidden behind the product",
+    "main_copy": "clean white geometric sans-serif, large and centered or lower aligned, simple product-launch wording",
+    "secondary_copy": "small white or pale blue-gray sans-serif, widely spaced and minimal",
+    "text_usage": "Use invented generic launch text only. Avoid real brands, source names, source Chinese headline, source date, and the exact word Pro.",
+    "legibility": "Primary white copy should be readable; the giant blue background word may be partly cropped and atmospheric."
+  },
+  "color_palette": {
+    "primary": [
+      "pure black",
+      "blue-black",
+      "deep navy"
+    ],
+    "secondary": [
+      "electric blue",
+      "cyan-blue glow",
+      "steel blue"
+    ],
+    "accent": [
+      "tiny white status LED",
+      "pale blue-white text"
+    ],
+    "proportions": "70 percent black, 25 percent electric-blue glow and background type, 5 percent white typography and highlight"
+  },
+  "image_treatment": {
+    "rendering_mode": "cinematic product-render look with premium consumer-electronics materials",
+    "surface_quality": "mostly hidden glossy plastic, glass, metal, rubber, or fabric edges revealed through blue rim lighting",
+    "post_processing": "soft blue bloom, subtle haze, deep contrast, reflection on glowing floor, smooth gradient falloff",
+    "texture": "clean digital finish with faint noise, no paper grain, no halftone, no handmade marks"
+  },
+  "design_rules": [
+    "Keep the scene sparse and centered around one product silhouette.",
+    "Use the blue horizontal platform as the strongest structural light source.",
+    "Let the product stay mostly black, with only edges and a tiny highlight visible.",
+    "Make the giant background word blue, oversized, cropped, and secondary to the product.",
+    "Use lower white type as simple launch copy, not feature-card UI.",
+    "Change product category, text, brand identity, and silhouette in every sample.",
+    "Do not add app overlays, watermarks, badges, price stickers, or many objects."
+  ],
+  "do": [
+    "Preserve black negative space, electric-blue glow, and silhouette-first product treatment.",
+    "Use a single centered brandless product with cool rim light and floor reflection.",
+    "Use big blue cropped typography behind the product.",
+    "Use clean white launch copy in the lower section.",
+    "Keep the mood minimal, premium, and suspenseful.",
+    "Use consumer-tech objects that are not wireless earbuds or charging cases."
+  ],
+  "avoid": [
+    "Do not show Redmi, AirDots, Pro, real logos, app UI, watermarks, usernames, QR codes, or carousel controls.",
+    "Do not generate wireless earbuds or an earbud charging case.",
+    "Do not copy the source Chinese headline, source date, launch copy, or top-right brand placement.",
+    "Do not add feature-card clutter, price stickers, warm badges, lifestyle backgrounds, or many objects.",
+    "Do not turn the style into a bright ecommerce product photo, flat vector poster, or comic illustration.",
+    "Do not overexpose the product; the silhouette and blue rim light are the style."
+  ],
+  "prompt_template": "Create a {ASPECT_RATIO} premium dark consumer-tech launch poster in an electric-blue silhouette style. Feature {SUBJECT} {SUBJECT_ACTION}, with {PRODUCT_OR_PROP} staged in {LOCATION}. Add {BACKGROUND_ELEMENTS}. Preserve these style anchors: {STYLE_FIDELITY_ANCHORS}. Avoid this source content: {SOURCE_CONTENT_TO_AVOID}. Composition: one centered brandless product silhouette, large black negative space, a glowing electric-blue horizontal platform, blue floor reflection beneath the object, giant cropped blue geometric sans-serif background typography reading \"{MAIN_TEXT}\" behind the product, clean white lower launch copy using \"{SECONDARY_TEXT}\", and a tiny minimal accent mark or status light \"{ACCENT_SYMBOL}\". Lighting: low-key black stage, cyan-blue rim light, glossy edge highlights, soft bloom, haze, deep shadows, no warm accents. Typography: sparse, premium, clean geometric sans-serif, no real logos. Wardrobe or human styling if present: {WARDROBE_STYLE}. Keep the layout minimal, symmetrical, cinematic, and teaser-like rather than dense or feature-heavy.",
+  "negative_prompt": "No Redmi, no AirDots, no Pro wordmark, no wireless earbuds, no earbud charging case, no real brand logos, no copied product silhouette, no copied Chinese headline, no copied date or launch wording, no top-right brand mark, no platform UI, no carousel arrows, no page counter, no social app dots, no watermark, no QR code, no username, no price sticker, no feature cards, no warm badges, no orange or gold accent system, no bright catalog lighting, no lifestyle background, no flat vector art, no comic illustration, no dense multi-object scene, no cluttered HUD interface.",
+  "examples": [
+    {
+      "case_name": "smart-ring-launch",
+      "values": {
+        "SUBJECT": "a brandless smart ring in a small vertical charging dock",
+        "SUBJECT_ACTION": "standing upright like a quiet wearable-tech hero",
+        "PRODUCT_OR_PROP": "a slim circular smart ring held by a narrow matte pedestal, not a rounded earbud case",
+        "LOCATION": "a black void studio with a luminous blue tabletop",
+        "BACKGROUND_ELEMENTS": "a giant cropped blue word, faint blue haze, and a smooth reflective foreground",
+        "MAIN_TEXT": "EDGE",
+        "SECONDARY_TEXT": "Smart Ring 01 / midnight sensor launch",
+        "ACCENT_SYMBOL": "single tiny white LED dot",
+        "WARDROBE_STYLE": "no visible human body or wardrobe",
+        "STYLE_FIDELITY_ANCHORS": "black negative space, central product silhouette, electric-blue rim light, glowing horizontal platform, blue reflection, giant cropped blue type, clean white lower copy, minimal premium launch mood",
+        "SOURCE_CONTENT_TO_AVOID": "no Redmi, no AirDots, no Pro, no wireless earbuds, no charging case, no Chinese source headline, no carousel UI, no watermark"
+      }
+    },
+    {
+      "case_name": "pocket-translator-launch",
+      "values": {
+        "SUBJECT": "a brandless pocket language translator device",
+        "SUBJECT_ACTION": "standing vertically in silhouette on a glowing platform",
+        "PRODUCT_OR_PROP": "a thin rounded rectangular handheld translator with a dark glass front and subtle side button",
+        "LOCATION": "a black launch stage with blue light rising from the floor",
+        "BACKGROUND_ELEMENTS": "oversized cropped blue typography, soft navy haze, and a faint mirror reflection",
+        "MAIN_TEXT": "SIGNAL",
+        "SECONDARY_TEXT": "Pocket Voice Link / global listening mode",
+        "ACCENT_SYMBOL": "small white microphone indicator",
+        "WARDROBE_STYLE": "no person, no hands, pure product stage",
+        "STYLE_FIDELITY_ANCHORS": "large empty black field, centered dark product, electric-blue edge glow, blue platform line, soft reflection, huge background word, lower white sans-serif announcement text",
+        "SOURCE_CONTENT_TO_AVOID": "no Redmi, no AirDots, no Pro, no earbuds, no earbud case, no original Chinese text, no app arrows, no brand logo"
+      }
+    },
+    {
+      "case_name": "mini-projector-launch",
+      "values": {
+        "SUBJECT": "a brandless compact mini projector",
+        "SUBJECT_ACTION": "resting as a dark cube-like silhouette with its lens barely catching blue light",
+        "PRODUCT_OR_PROP": "a small rounded projector cube with one circular lens and a flat top",
+        "LOCATION": "a minimal black product theater with a bright blue horizon line",
+        "BACKGROUND_ELEMENTS": "deep blue oversized cropped lettering, a low fog glow, and a subtle floor reflection",
+        "MAIN_TEXT": "BEAM",
+        "SECONDARY_TEXT": "Portable Cinema Core / quiet night preview",
+        "ACCENT_SYMBOL": "pinpoint white standby light",
+        "WARDROBE_STYLE": "no human styling; product only",
+        "STYLE_FIDELITY_ANCHORS": "minimal black stage, centered product silhouette, cool blue rim light, glowing platform, reflective blue foreground, giant cropped blue text, sparse white launch copy",
+        "SOURCE_CONTENT_TO_AVOID": "no Redmi, no AirDots, no Pro, no wireless audio case, no exact source copy, no top-right brand, no carousel overlay"
+      }
+    },
+    {
+      "case_name": "desk-lamp-launch",
+      "values": {
+        "SUBJECT": "a brandless foldable desk lamp",
+        "SUBJECT_ACTION": "leaning forward as a sculptural silhouette over the blue stage",
+        "PRODUCT_OR_PROP": "a compact hinged lamp with a thin vertical stem and small rounded light bar",
+        "LOCATION": "a black studio tabletop lit only by electric-blue glow",
+        "BACKGROUND_ELEMENTS": "a giant soft blue word cropped behind the lamp, blue haze, and a calm glossy reflection",
+        "MAIN_TEXT": "LUMA",
+        "SECONDARY_TEXT": "Desk Light System / focus night edition",
+        "ACCENT_SYMBOL": "single white power dot",
+        "WARDROBE_STYLE": "no visible person or wardrobe",
+        "STYLE_FIDELITY_ANCHORS": "black negative space, one centered product silhouette, electric-blue rim lighting, horizontal glowing platform, reflection, giant cropped blue typography, clean white lower product text",
+        "SOURCE_CONTENT_TO_AVOID": "no Redmi, no AirDots, no Pro, no earbuds, no charging case, no Chinese launch headline, no social UI, no watermark"
+      }
+    }
+  ]
+}

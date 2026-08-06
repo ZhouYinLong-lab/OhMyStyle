@@ -1,0 +1,177 @@
+{
+  "style_name": "Luxury Perspective Checkerboard Editorial",
+  "style_slug": "luxury-perspective-checkerboard-editorial",
+  "style_version": "1.0.0",
+  "style_summary": "A high-fashion editorial poster style with low-angle luxury photography, sharp red-and-white checkerboard perspective planes, generous white space, oversized custom script typography, and restrained emerald or teal accents. It evokes international luxury maison advertising without copying any real brand mark, campaign, model, product, or exact layout.",
+  "environment_variables": {
+    "SUBJECT": "main model, product, or luxury subject",
+    "SUBJECT_ACTION": "main pose, movement, or product presentation",
+    "PRODUCT_OR_PROP": "luxury object, accessory, or hero prop",
+    "LOCATION": "minimal studio, runway, gallery, atelier, salon, or abstract luxury set",
+    "BACKGROUND_ELEMENTS": "checkerboard planes, white space, small accent marks, and secondary spatial details",
+    "MAIN_TEXT": "invented large script word used as a graphic field",
+    "SECONDARY_TEXT": "small uppercase editorial maison-style text",
+    "ACCENT_SYMBOL": "single restrained decorative mark such as a dot, diamond, or small line",
+    "WARDROBE_STYLE": "tailored black, sculptural, polished, or premium styling direction",
+    "STYLE_FIDELITY_ANCHORS": "observable style traits that must remain visible",
+    "SOURCE_CONTENT_TO_AVOID": "literal source content that generated samples must not recreate",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "style_fidelity_anchors": [
+    "Low-angle luxury editorial photography with a monumental subject scale.",
+    "Red-and-white checkerboard or tiled graphic plane in extreme perspective.",
+    "Large white negative space as the primary background field.",
+    "One oversized custom script word spanning behind the subject.",
+    "Small centered serif maison-style wordmark area near the upper field.",
+    "Black tailored wardrobe or premium product silhouette with glossy highlights.",
+    "Emerald or deep teal accent on shoes, accessories, props, or graphic dots.",
+    "Clean cutout-like subject edges against a bright studio field.",
+    "Strong depth from floor or ceiling geometry, balanced by flat poster typography.",
+    "Minimal copy with no price tags, retail badges, or crowded object clusters.",
+    "High-fashion magazine lighting with crisp contrast and polished material finish.",
+    "Slight surreal scale tension between real subject, product, and graphic typography."
+  ],
+  "source_content_to_avoid": [
+    "Do not use Gucci, its logo, monogram, exact script word, or any real luxury brand mark.",
+    "Do not recreate the same woman, face, pose, black dress, handbag, or green pointed heels.",
+    "Do not duplicate the exact red checkerboard floor-and-ceiling arrangement from the source.",
+    "Do not use a black dress plus chain handbag as the central product story.",
+    "Do not copy the exact source camera crop, diagonal body silhouette, or advertising premise.",
+    "Do not include watermarks, creator IDs, QR codes, platform marks, or social media UI."
+  ],
+  "visual_deconstruction": {
+    "composition_logic": "A sparse studio-white poster field is interrupted by one dramatic perspective checkerboard plane and one monumental low-angle subject. The subject overlaps an enormous script word that behaves like environmental architecture.",
+    "subject_placement": "The subject or hero object sits near the middle or lower field, often tilted diagonally and cropped large enough to feel iconic.",
+    "camera_perspective": "Low camera position with wide-angle upward emphasis, making bodies, shoes, products, or plinths feel elongated and theatrical.",
+    "typography_behavior": "Two-tier typography: a tiny refined uppercase text lockup near the top and a huge smooth script word behind the subject.",
+    "graphic_elements": "Clean checkerboard geometry, rare accent dots or diamonds, and hard-edged perspective surfaces.",
+    "lighting_and_texture": "Bright controlled studio lighting, crisp shadows, glossy material highlights, and clean photographic realism without grunge."
+  },
+  "composition": [
+    "Use one dominant subject or product and one dominant oversized script word.",
+    "Place checkerboard geometry in one or two perspective planes such as floor, ceiling, runway, plinth, or wall.",
+    "Keep the main background mostly white with generous margin and controlled emptiness.",
+    "Let the subject interrupt and partially cover the script typography.",
+    "Use diagonal movement or a low viewpoint to make the subject feel monumental.",
+    "Reserve the upper field for a small elegant uppercase text lockup."
+  ],
+  "typography": {
+    "large_script": "One sweeping custom script word, smooth and confident, scaled as a background graphic rather than ordinary readable copy.",
+    "small_wordmark": "A restrained uppercase serif or editorial text line, black, letterspaced, centered or slightly offset near the top.",
+    "copy_density": "Very sparse. No paragraphs, prices, feature labels, badges, or social captions.",
+    "brand_safety": "Use invented words only; never use real luxury names, monograms, or trademark-like marks."
+  },
+  "color_palette": {
+    "dominant": [
+      "studio white",
+      "signal red",
+      "deep black"
+    ],
+    "accents": [
+      "emerald green",
+      "deep teal",
+      "limited polished gold"
+    ],
+    "supporting": [
+      "soft shadow gray",
+      "subtle skin or material tones"
+    ],
+    "behavior": "White carries the layout, red defines spatial rhythm, black anchors fashion or product mass, and emerald or teal appears as a controlled luxury accent."
+  },
+  "photographic_direction": {
+    "rendering_mode": "Polished luxury fashion and product editorial photography integrated with bold poster graphics.",
+    "lighting": "Crisp studio lighting, bright exposure, controlled shadows, glossy material highlights.",
+    "lens": "Low-angle wide editorial perspective with clean subject separation.",
+    "finish": "High-resolution photographic realism with clean poster composition, not illustration or collage."
+  },
+  "design_rules": [
+    "Preserve low-angle monumentality and the large-scale script background in every sample.",
+    "Use checkerboard geometry as a spatial device, not as a decorative all-over pattern.",
+    "Keep copy sparse and invented so the image feels like a luxury campaign rather than a retail ad.",
+    "Treat emerald or teal as an accent, not a dominant wash.",
+    "Change the subject, product, text, scene details, and story premise for every generated case.",
+    "Avoid any real brand logo, monogram, product likeness, or recognizable campaign identity."
+  ],
+  "do": [
+    "Use invented maison names and abstract script words.",
+    "Build cases around fragrance, watches, luggage, eyewear, couture, or jewelry.",
+    "Keep the visual sparse, architectural, and premium.",
+    "Let the model or object overlap the oversized script word.",
+    "Use high-fashion posture, polished materials, and refined studio lighting."
+  ],
+  "avoid": [
+    "Real brand names, logos, slogans, monograms, watermarks, QR codes, or creator IDs.",
+    "The source model, face, pose, black dress, chain handbag, or green pointed heels.",
+    "Dense product clusters, price labels, stickers, or bargain retail typography.",
+    "Streetwear zine, comic, vector, flat illustration, or generic catalog photography.",
+    "Beige-only palettes, purple gradients, heavy grunge texture, or social media UI."
+  ],
+  "prompt_template": "Create a polished international luxury editorial poster in the Luxury Perspective Checkerboard Editorial style. Subject: {SUBJECT}. Action or presentation: {SUBJECT_ACTION}. Hero product or prop: {PRODUCT_OR_PROP}. Location: {LOCATION}. Background elements: {BACKGROUND_ELEMENTS}. Wardrobe and styling: {WARDROBE_STYLE}. Typography: place the invented large script word \"{MAIN_TEXT}\" as an oversized sweeping background graphic behind the subject, and place the small uppercase editorial text \"{SECONDARY_TEXT}\" near the upper field; add the restrained accent symbol \"{ACCENT_SYMBOL}\" only once. Preserve these style fidelity anchors: {STYLE_FIDELITY_ANCHORS}. Avoid this source content: {SOURCE_CONTENT_TO_AVOID}. Use a low-angle high-fashion photographic camera, crisp studio lighting, generous white space, a red-and-white checkerboard perspective plane, deep black structure, emerald or teal accent details, clean cutout subject edges, glossy premium material highlights, and sparse typography. Do not use any real brand logos, real fashion house names, monograms, watermarks, QR codes, social media UI, price labels, or copied campaign identities. Aspect ratio: {ASPECT_RATIO}.",
+  "negative_prompt": "Gucci, real luxury brand logos, real monograms, trademarked slogans, copied campaign marks, exact source model, exact source pose, black dress with chain handbag, green pointed heels, duplicated floor-and-ceiling checkerboard layout, watermarks, creator IDs, QR codes, social media UI, price tags, retail badges, dense captions, crowded product clusters, bargain sale design, grunge zine collage, comic illustration, flat vector art, low-resolution output, blurry subject, distorted anatomy, broken hands, illegible fake logo clutter, excessive text.",
+  "examples": [
+    {
+      "case_name": "couture-fragrance-runway",
+      "values": {
+        "SUBJECT": "a poised couture model in a sculptural black satin coat beside an oversized crystal perfume bottle",
+        "SUBJECT_ACTION": "stepping forward on a red-and-white checkerboard runway while one hand hovers near the bottle",
+        "PRODUCT_OR_PROP": "faceted emerald perfume bottle with minimal gold cap and no visible logo",
+        "LOCATION": "white studio runway set with a single checkerboard floor plane receding toward the camera",
+        "BACKGROUND_ELEMENTS": "large white void, red checkerboard perspective floor, one small emerald dot in the upper right",
+        "MAIN_TEXT": "VELA",
+        "SECONDARY_TEXT": "MAISON NOVA",
+        "ACCENT_SYMBOL": "emerald dot",
+        "WARDROBE_STYLE": "black satin couture coat, polished emerald gloves, clean high-fashion silhouette",
+        "STYLE_FIDELITY_ANCHORS": "low-angle luxury editorial photography, monumental subject scale, red-and-white checkerboard perspective plane, large white negative space, oversized custom script word, small uppercase serif wordmark, black wardrobe, emerald accent, crisp studio lighting",
+        "SOURCE_CONTENT_TO_AVOID": "no Gucci, no source model, no black dress with chain handbag, no green pointed heels, no duplicated source pose or exact floor-and-ceiling checkerboard"
+      }
+    },
+    {
+      "case_name": "sculptural-timepiece-gallery",
+      "values": {
+        "SUBJECT": "an androgynous model wearing a sharp black tailored suit and an oversized sculptural wristwatch",
+        "SUBJECT_ACTION": "leaning over a glossy plinth so the watch faces the low camera",
+        "PRODUCT_OR_PROP": "teal-dial luxury wristwatch with polished steel case and no logo",
+        "LOCATION": "minimal white gallery with a checkerboard ceiling strip and glossy plinth",
+        "BACKGROUND_ELEMENTS": "red-and-white checkerboard ceiling band, white void, clean shadow under the plinth",
+        "MAIN_TEXT": "ORA",
+        "SECONDARY_TEXT": "ATELIER VEGA",
+        "ACCENT_SYMBOL": "small black diamond",
+        "WARDROBE_STYLE": "razor-sharp black suit, white shirt, teal watch detail, refined gallery styling",
+        "STYLE_FIDELITY_ANCHORS": "low-angle luxury editorial photography, monumental subject scale, red-and-white checkerboard perspective plane, large white negative space, oversized custom script word, small uppercase serif wordmark, deep black structure, teal accent, crisp glossy material highlights",
+        "SOURCE_CONTENT_TO_AVOID": "no Gucci, no source model, no chain handbag, no green heels, no black dress, no exact diagonal walking pose or source typography"
+      }
+    },
+    {
+      "case_name": "travel-trunk-atelier",
+      "values": {
+        "SUBJECT": "a luxury travel trunk and a model in a black wool cape",
+        "SUBJECT_ACTION": "the model pulls the trunk forward across a checkerboard atelier floor from a dramatic low angle",
+        "PRODUCT_OR_PROP": "structured black leather travel trunk with emerald handle and anonymous brass hardware",
+        "LOCATION": "bright white atelier set with a red-and-white tiled floor and open ceiling space",
+        "BACKGROUND_ELEMENTS": "receding checkerboard floor, white seamless wall, one teal line accent near the script",
+        "MAIN_TEXT": "ARDEN",
+        "SECONDARY_TEXT": "HOUSE OF VALE",
+        "ACCENT_SYMBOL": "thin teal line",
+        "WARDROBE_STYLE": "black wool cape, tailored trousers, polished leather gloves, restrained luxury travel styling",
+        "STYLE_FIDELITY_ANCHORS": "low-angle luxury editorial photography, monumental product scale, red-and-white checkerboard perspective plane, large white negative space, oversized custom script word, small uppercase serif wordmark, black silhouette, emerald or teal accent, clean cutout edges",
+        "SOURCE_CONTENT_TO_AVOID": "no Gucci, no source handbag, no chain strap, no green pointed heels, no source woman or exact pose, no real luggage brand marks"
+      }
+    },
+    {
+      "case_name": "jewelry-eyewear-salon",
+      "values": {
+        "SUBJECT": "a close full-body fashion figure wearing black architectural tailoring with oversized sunglasses and jewelry",
+        "SUBJECT_ACTION": "turning sideways on a white salon platform while lifting one hand toward the sunglasses",
+        "PRODUCT_OR_PROP": "emerald enamel cuff bracelet and black angular sunglasses with no logo",
+        "LOCATION": "minimal white salon set with a red-and-white checkerboard wall plane slanting behind",
+        "BACKGROUND_ELEMENTS": "tilted checkerboard wall, white floor, single emerald accent mark beside the lettering",
+        "MAIN_TEXT": "SILQ",
+        "SECONDARY_TEXT": "STUDIO LUXE",
+        "ACCENT_SYMBOL": "small emerald diamond",
+        "WARDROBE_STYLE": "black architectural tailoring, glossy sunglasses, emerald enamel jewelry, elegant editorial pose",
+        "STYLE_FIDELITY_ANCHORS": "low-angle luxury editorial photography, monumental subject scale, red-and-white checkerboard perspective plane, large white negative space, oversized custom script word, small uppercase serif wordmark, black wardrobe, emerald accent, crisp contrast",
+        "SOURCE_CONTENT_TO_AVOID": "no Gucci, no source model, no handbag, no black dress, no green pointed heels, no exact walking diagonal body silhouette"
+      }
+    }
+  ]
+}

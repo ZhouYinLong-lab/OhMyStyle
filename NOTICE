@@ -1,0 +1,23 @@
+# Attribution and licensing notice
+
+This project was initially based on the repository structure, documentation,
+schemas, scripts, and style collection from:
+
+- Original project: `VigoZhao/AI-Visual-Prompt-Cookbook`
+- Original author: VigoZhao / `@VigoCreativeAI`
+- Original repository: https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook
+
+This repository is maintained independently. It is not a GitHub fork and is
+not affiliated with, endorsed by, or maintained by the original author.
+
+The original MIT copyright and license notice is preserved in `LICENSE`.
+The original project README describes the material's licensing scope as:
+
+- code, scripts, and documentation: MIT License;
+- `style.json` prompt content: CC BY 4.0, with attribution to
+  `@VigoCreativeAI`;
+- preview images: visual references only.
+
+When redistributing inherited material, retain the applicable copyright,
+license, and attribution notices. New material added to this repository must
+include its own provenance and license information where applicable.
