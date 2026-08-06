@@ -1,0 +1,11 @@
+id: paul-gauguin
+entity_type: artist
+name: Paul Gauguin
+package: style-packages/artists/paul-gauguin
+summary: >-
+  Synthetist painting profile built from flattened color fields, strong contour
+  design, symbolic non-natural color, compressed spatial layers, and decorative
+  rhythm.
+sources:
+  - https://commons.wikimedia.org/wiki/File:La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg
+  - https://commons.wikimedia.org/wiki/File:Gauguin_-_Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F_%281897-98%29.jpg

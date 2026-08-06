@@ -1,0 +1,10 @@
+id: claude-monet
+entity_type: artist
+name: Claude Monet
+package: style-packages/artists/claude-monet
+summary: >-
+  Landscape painting profile focused on transient light, atmospheric color,
+  broken touches, and changing appearances of ordinary motifs.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg
+  - https://www.nga.gov/artworks/52186-argenteuil

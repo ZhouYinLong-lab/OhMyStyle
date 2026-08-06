@@ -1,0 +1,10 @@
+id: georges-seurat
+entity_type: artist
+name: Georges Seurat
+package: style-packages/artists/georges-seurat
+summary: >-
+  Neo-Impressionist painting profile built from disciplined optical color units,
+  stable silhouettes, measured park-like space, and repeated social poses.
+sources:
+  - https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte
+  - https://commons.wikimedia.org/wiki/File:Baigneurs_a_Asnieres.jpg

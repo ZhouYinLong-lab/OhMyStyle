@@ -1,0 +1,11 @@
+id: wassily-kandinsky
+entity_type: artist
+name: Wassily Kandinsky
+package: style-packages/artists/wassily-kandinsky
+summary: >-
+  Abstract painting profile built from geometric and lyrical marks, measured
+  color tensions, layered planes, and compositional balance without narrative
+  illustration.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Wassily_Kandinsky_Composition_VIII.jpg
+  - https://commons.wikimedia.org/wiki/File:Kandinsky_-_Jaune_Rouge_Bleu.jpg

@@ -1,0 +1,11 @@
+id: rpg-maker-pixel-art
+entity_type: game_art
+name: RPG Maker Pixel Art
+package: style-packages/game-art/rpg-maker-pixel-art
+summary: >-
+  2D tile-based pixel-game direction built from compact sprites, crisp
+  nearest-neighbor edges, layered environments, restrained palettes, and
+  warm-cool lighting.
+sources:
+  - https://store.steampowered.com/app/206440/To_the_Moon/
+  - https://store.steampowered.com/app/1182620/Impostor_Factory/

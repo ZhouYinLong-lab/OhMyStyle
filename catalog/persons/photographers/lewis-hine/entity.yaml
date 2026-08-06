@@ -1,0 +1,11 @@
+id: lewis-hine
+entity_type: photographer
+name: Lewis Hine
+package: style-packages/photographers/lewis-hine
+summary: >-
+  Social documentary photography profile focused on human dignity, evidentiary
+  framing, industrial scale, direct tonal description, and worker-institution
+  relationships.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Lewis_Hine_Power_house_mechanic_working_on_steam_pump.jpg
+  - https://www.loc.gov/item/ncl2004001462/PP/

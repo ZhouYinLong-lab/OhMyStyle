@@ -1,0 +1,10 @@
+id: nadar
+entity_type: photographer
+name: Nadar
+package: style-packages/photographers/nadar
+summary: >-
+  Early studio portrait photography profile built from sculptural pose, plain
+  tonal ground, directional soft light, and psychologically alert expression.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Sarah_Bernhardt
+  - https://commons.wikimedia.org/wiki/File:Autoportrait_de_Félix_Nadar_-_edit.jpg

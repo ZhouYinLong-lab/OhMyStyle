@@ -4,11 +4,32 @@ description: >-
   and presets represented by independent Style Packages.
 entities:
   persons:
-    - anna-ancher
-    - masahisa-fukase
+    artists:
+      - anna-ancher
+      - claude-monet
+      - diego-velazquez
+      - edvard-munch
+      - georges-seurat
+      - jmw-turner
+      - johannes-vermeer
+      - paul-cezanne
+      - paul-gauguin
+      - rembrandt
+      - vincent-van-gogh
+      - wassily-kandinsky
+    photographers:
+      - alfred-stieglitz
+      - eadweard-muybridge
+      - etienne-jules-marey
+      - eugene-atget
+      - julia-margaret-cameron
+      - lewis-hine
+      - masahisa-fukase
+      - nadar
+      - roger-fenton
   movements:
     - neue-sachlichkeit
-    - italian-high-renaissance-raphaelesque
+    - italian-high-renaissance
   works:
     - raphael-school-of-athens
   periods:
@@ -18,6 +39,7 @@ entities:
   techniques:
     - gum-bichromate
   game_art:
+    - rpg-maker-pixel-art
     - zx-spectrum-attribute-pixel
   presets:
     - quiet-documentary

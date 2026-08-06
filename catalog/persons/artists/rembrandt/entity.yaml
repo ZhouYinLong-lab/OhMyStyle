@@ -1,0 +1,11 @@
+id: rembrandt
+entity_type: artist
+name: Rembrandt van Rijn
+package: style-packages/artists/rembrandt
+summary: >-
+  Baroque painting profile focused on directional light, psychological presence,
+  warm dark grounds, layered flesh and cloth, and selective tactile paint.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_Google_Art_Project.jpg
+  - https://commons.wikimedia.org/wiki/File:Andromeda,_Rembrandt_van_Rijn,_1630-1631,_Mauritshuis,_The_Hague.jpg
+  - https://www.rijksmuseum.nl/en/collection/object/Isaac-and-Rebecca-Known-as-The-Jewish-Bride--019c1265e6dbf108d4587ab2b7c02c66

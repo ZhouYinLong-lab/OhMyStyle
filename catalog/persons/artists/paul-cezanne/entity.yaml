@@ -1,0 +1,11 @@
+id: paul-cezanne
+entity_type: artist
+name: Paul Cézanne
+package: style-packages/artists/paul-cezanne
+summary: >-
+  Painting profile built from constructive color planes, compressed perspective,
+  repeated directional brush marks, and solid objects with subtly disagreeing
+  viewpoints.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_La_bouteille_de_menthe_poivr%C3%A9e_(National_Gallery_of_Art).jpg
+  - https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Mont_Sainte-Victoire_and_the_Viaduct_of_the_Arc_River_Valley_(Metropolitan_Museum_of_Art).jpg

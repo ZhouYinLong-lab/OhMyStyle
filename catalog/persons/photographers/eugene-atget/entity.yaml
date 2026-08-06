@@ -1,0 +1,11 @@
+id: eugene-atget
+entity_type: photographer
+name: Eugène Atget
+package: style-packages/photographers/eugene-atget
+summary: >-
+  Documentary urban photography profile built from frontal observation, quiet
+  architectural geometry, restrained monochrome tonality, and evidentiary stillness.
+sources:
+  - https://artmuseum.princeton.edu/art/collections/objects/11597
+  - https://artmuseum.princeton.edu/art/collections/objects/23885
+  - https://www.si.edu/object/photographic-history-collection-eugene-atget%3Anmah_1322709

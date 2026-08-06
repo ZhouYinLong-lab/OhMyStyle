@@ -1,0 +1,10 @@
+id: johannes-vermeer
+entity_type: artist
+name: Johannes Vermeer
+package: style-packages/artists/johannes-vermeer
+summary: >-
+  Interior and cityscape painting profile built from controlled side light,
+  quiet geometry, measured domestic detail, and soft optical transitions.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg
+  - https://commons.wikimedia.org/wiki/File:View_of_Delft

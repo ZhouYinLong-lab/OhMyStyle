@@ -1,0 +1,12 @@
+id: vincent-van-gogh
+entity_type: artist
+name: Vincent van Gogh
+package: style-packages/artists/vincent-van-gogh
+summary: >-
+  Post-Impressionist painting profile built from directional strokes, high-chroma
+  complementary color, thick material paint, and expressive motion in sky,
+  vegetation, and ground.
+sources:
+  - https://commons.wikimedia.org/wiki/File:VanGogh-starry_night.jpg
+  - https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Olive_Trees_-_Google_Art_Project.jpg
+  - https://www.moma.org/collection/works/79802?artist_id=2206&page=1&sov_referrer=artist
