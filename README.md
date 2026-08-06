@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-see%20license%20files-lightgrey)](LICENSE-OHMYSTYLE.md)
-[![Executable packages](https://img.shields.io/badge/executable%20packages-31-6C63FF)](docs/DEMO-PACKAGES.md)
+[![Executable packages](https://img.shields.io/badge/executable%20packages-32-6C63FF)](docs/DEMO-PACKAGES.md)
 [![Legacy catalog](https://img.shields.io/badge/legacy%20style.json%20catalog-110-5B8C5A)](docs/CATALOG.md)
 
 OhMyStyle is an independent, model-agnostic toolkit for building reproducible
@@ -135,6 +135,7 @@ Reference manifests record provenance and rights status separately.
 | Preview | Package | Focus |
 | --- | --- | --- |
 | <img src="style-packages/game-art/zx-spectrum-attribute-pixel/examples/generated/anonymous-v1.png" width="180" alt="Anonymous ZX Spectrum package example"> | [ZX Spectrum Attribute Pixel Art](style-packages/game-art/zx-spectrum-attribute-pixel/) | 256×192 raster, 8×8 attribute cells, compact palette, color clash |
+| <img src="style-packages/game-art/rpg-maker-pixel-art/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous RPG Maker Pixel Art package example"> | [RPG Maker Pixel Art](style-packages/game-art/rpg-maker-pixel-art/) | Tile-based 2D scenes, compact sprites, nearest-neighbor edges, layered environments, warm-cool lighting |
 
 ### Original presets
 

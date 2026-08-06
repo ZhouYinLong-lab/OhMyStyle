@@ -1,0 +1,14 @@
+package_id: rpg-maker-pixel-art
+package_version: 0.1.0
+curation_status: reference_images_inspected_link_only
+source_policy: Commercial game screenshots were obtained and inspected locally for analysis only. They are not bundled or redistributed. The package contains independently authored prompts and generated scenes and claims no affiliation with the rights holders.
+sources:
+  - url: https://store.steampowered.com/app/206440/To_the_Moon/
+    authority: Steam store page and Freebird Games
+    supports: title developer metadata and official screenshot source
+    accessed: 2026-08-06
+  - url: https://store.steampowered.com/app/1182620/Impostor_Factory/
+    authority: Steam store page and Freebird Games
+    supports: title developer metadata and official screenshot source
+    accessed: 2026-08-06
+attribution: To the Moon and Impostor Factory are commercial works by Freebird Games. This independent style package describes observable production traits and is not endorsed by or affiliated with Freebird Games.

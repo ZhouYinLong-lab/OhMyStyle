@@ -1,0 +1,17 @@
+related_movements:
+  - pixel_art
+  - jrpg_environment_art
+  - indie_rpg_game_art
+related_concepts:
+  - tile_based_worldbuilding
+  - sprite_scale
+  - warm_cool_game_lighting
+  - authored_low_resolution_detail
+reference_examples:
+  - to_the_moon
+  - impostor_factory
+not_equivalent_to:
+  - generic_pixelation_filter
+  - zx_spectrum_attribute_pixel_art
+  - copied_freebird_games_screenshot
+  - generic_unmodified_rpg_maker_asset_pack

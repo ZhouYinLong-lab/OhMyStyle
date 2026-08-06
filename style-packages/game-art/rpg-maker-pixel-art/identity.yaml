@@ -1,0 +1,24 @@
+canonical_name: RPG Maker Pixel Art
+entity_type: 2d_pixel_game_art_type
+origin: tile_based_indie_rpg_production
+period: late_2000s_to_2020s_indie_game_art
+domain: game_art
+scope:
+  use_cases:
+    - exploration_scene
+    - dialogue_scene
+    - puzzle_or_interaction_screen
+    - combat_or_encounter_scene
+    - title_or_transition_screen
+  exclusions:
+    - generic_8_bit_hardware_replica
+    - modern_smooth_pixel_art
+    - photorealistic_background
+    - character_or_scene_copying
+sources:
+  - https://store.steampowered.com/app/206440/To_the_Moon/
+  - https://store.steampowered.com/app/1182620/Impostor_Factory/
+rendering:
+  model: low_resolution_pixel_art_with_nearest_neighbor_scaling
+  scene_logic: tile_based_2d_space_with_sprite_characters
+  output_behavior: readable_at_logical_resolution_and_clean_when_upscaled

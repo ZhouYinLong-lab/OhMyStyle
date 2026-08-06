@@ -31,6 +31,7 @@ direction:
 | School / exhibition network | [New Topographics](../style-packages/schools/new-topographics/) | Clear-eyed views of human-altered landscape |
 | Technique | [Gum Bichromate](../style-packages/techniques/gum-bichromate/) | Pigment, paper, contact exposure, layered hand control |
 | Game art | [ZX Spectrum Attribute Pixel Art](../style-packages/game-art/zx-spectrum-attribute-pixel/) | 256×192 raster, 8×8 attribute cells, compact palette, controlled color clash |
+| Game art | [RPG Maker Pixel Art](../style-packages/game-art/rpg-maker-pixel-art/) | Tile-based 2D scenes, compact sprites, nearest-neighbor edges, layered environments, optional warm-cool lighting |
 | Preset | [Quiet Documentary](../styles/quiet-documentary/) | Original available-light photography preset |
 | Preset | [High-Chroma Color Pairing](../style-packages/presets/high-chroma-color-pairing/) | Subject-neutral 撞色 system with high-chroma pairs, counter-grounds, and area-ratio checks |
 

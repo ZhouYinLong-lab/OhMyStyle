@@ -1,8 +1,9 @@
 asset: anonymous-v1.png
-status: pending_human_review
+status: accepted_human_review
 prompt_source: prompts/base.txt
 negative_source: prompts/negative.txt
-review: awaiting_user_review
+review: approved_by_user
+reviewed_at: 2026-08-06
 generator: OpenAI built-in image generation
 prompt_mode: anonymous_visual_signature
 subject: an unfamiliar evening meeting between a mapmaker and a messenger in a dim civic room

@@ -1,0 +1,21 @@
+id: rpg-maker-pixel-art
+name: RPG Maker Pixel Art
+kind: game_art
+domain: game_art
+version: 0.1.0
+entity: catalog/game-art/rpg-maker-pixel-art/entity.yaml
+summary: >-
+  A 2D tile-based pixel-game direction built from compact sprites, crisp
+  nearest-neighbor edges, layered environments, restrained palettes, and
+  warm-cool lighting. It supports exploration, dialogue, puzzle, combat,
+  menu, and transition scenes without requiring a particular subject.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

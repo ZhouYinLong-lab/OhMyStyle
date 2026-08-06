@@ -1,0 +1,18 @@
+{
+  "name": "rpg-maker-pixel-art",
+  "usage": "restrained scene palette with optional warm-cool lighting contrast",
+  "colors": [
+    {"name": "deep_night", "hex": "#11182B", "role": "outer_shadow_and_night_sky"},
+    {"name": "ink_navy", "hex": "#202A48", "role": "sprite_contour_and_dark_architecture"},
+    {"name": "twilight_blue", "hex": "#536A9C", "role": "distant_sky_and_cool_planes"},
+    {"name": "dusty_lavender", "hex": "#8B80A8", "role": "night_accents_and_haze"},
+    {"name": "muted_teal", "hex": "#527C78", "role": "foliage_water_and_shadowed_material"},
+    {"name": "deep_grass", "hex": "#304B3F", "role": "ground_and_vegetation"},
+    {"name": "warm_amber", "hex": "#E4A24C", "role": "window_light_and_focal_object"},
+    {"name": "ochre_wood", "hex": "#A86E3C", "role": "wood_floor_and_furniture"},
+    {"name": "muted_rose", "hex": "#B65F68", "role": "clothing_and_scene_accent"},
+    {"name": "soft_cream", "hex": "#E7D8B8", "role": "paper_light_and_sprite_highlight"},
+    {"name": "skin_mid", "hex": "#B47A5B", "role": "small_sprite_skin_cluster"},
+    {"name": "moon_silver", "hex": "#B9C7D8", "role": "moon_or_cool_specular_pixel"}
+  ]
+}

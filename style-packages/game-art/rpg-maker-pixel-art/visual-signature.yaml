@@ -1,0 +1,37 @@
+composition:
+  - build a readable tile-based room or landscape with a clear walkable plane
+  - keep sprites small enough for the environment to carry compositional weight
+  - use doors, windows, paths, railings, horizon lines, or furniture as guide lines
+  - reserve negative space when the scene needs calm or visual separation
+  - establish the largest spatial masses before adding small props
+palette:
+  - deep navy, blue-violet, muted teal, dusty lavender, warm amber, ochre, muted rose
+  - keep most surfaces in a restrained family and reserve bright accents for focal objects
+  - use warm-cool opposition as an optional lighting and spatial device
+pixel_language:
+  - compact sprite clusters with dark readable outer contours
+  - stepped diagonals and selective one-pixel highlights
+  - layered background planes with different detail densities
+  - pixel texture that follows material or atmosphere rather than random noise
+lighting:
+  - warm pools of interior or sunset light against cool dusk or night surroundings
+  - haze and reflection expressed as deliberate pixel clusters or stepped bands
+  - no smooth bloom; important forms retain visible pixel edges
+  - shadows remain shaped and readable instead of becoming uniform black
+character_sprites:
+  - small readable silhouettes with a few high-value face hair and clothing pixels
+  - side or three-quarter orientation with a restrained pose language
+  - consistent scale between characters and tile geometry
+environment:
+  - wood floors, wallpaper, grass, water, roads, railings, windows, and skies built from tile logic
+  - props clarify place, interaction, or visual rhythm without crowding the frame
+  - distant backgrounds may become broad painterly pixel masses while foregrounds stay crisp
+optional_variants:
+  - open_outdoor: open horizon, water, meadow, bridge, road, or large sky area
+  - enclosed_interior: top-down or cutaway room, furniture geometry, shadow pools, and controlled occlusion
+  - uncanny_detail: optional unusual object or spatial interruption for mystery or comedy
+invariants:
+  - the image is authored pixel art rather than a smooth image with a pixel filter
+  - sprite scale and environment geometry remain coherent
+  - the scene remains legible without readable text or interface elements
+  - a new scene must not reproduce a known game screenshot or named character

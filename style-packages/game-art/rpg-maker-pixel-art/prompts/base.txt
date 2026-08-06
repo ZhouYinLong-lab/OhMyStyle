@@ -1,0 +1,12 @@
+Use case: stylized-concept
+Asset type: anonymous 2D pixel-game scene
+Primary request: Create an original scene in this 2D tile-based pixel-game direction. It may show exploration, dialogue, puzzle, combat, a title transition, a room, a landscape, or a quiet environmental composition. Do not reproduce any known game screenshot, named character, map, dialogue box, logo, or user interface.
+Scene/backdrop: Choose a simple readable tile-based room or landscape with a walkable plane, a few meaningful props, and two or three atmospheric background layers. The subject matter is open; do not force a story or emotional narrative.
+Subject: Use small readable sprites, objects, or environmental forms at a consistent tile scale. Characters are optional and must not become oversized portraits.
+Style/medium: authored low-resolution pixel art with crisp nearest-neighbor edges, compact clusters, stepped diagonals, controlled dark contours, and layered tile-based background masses.
+Composition/framing: Use a clear establishing view with strong horizon or architectural guide lines, practical negative space, and one optional focal object or light anchor.
+Lighting/mood: Select neutral, warm, cool, or warm-cool lighting according to the scene. Express haze and reflection through stepped pixel bands instead of smooth gradients or bloom.
+Color palette: Deep navy, ink blue, twilight blue, dusty lavender, muted teal, deep grass, warm amber, ochre wood, muted rose, soft cream, and small moon-silver highlights; adapt the palette without requiring every color.
+Materials/textures: Tile-consistent wood, wallpaper, grass, water, road, railings, sky, stone, or metal. Detail density decreases with distance. Texture follows material and atmosphere; it is never random noise.
+Constraints: Preserve coherent sprite-to-tile scale; keep the image legible at logical resolution; keep the scene free of readable text and interface elements; use the optional open outdoor, enclosed interior, or uncanny detail variant only when suitable.
+Avoid: smooth photographic rendering, anti-aliasing, glossy 3D assets, cyberpunk neon, excessive particles, oversized heads, copied game screens, named characters, dialogue boxes, logos, readable text, UI panels, watermarks.

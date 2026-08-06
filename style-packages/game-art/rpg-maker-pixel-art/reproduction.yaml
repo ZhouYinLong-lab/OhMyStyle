@@ -1,0 +1,22 @@
+medium: 2d_rpg_pixel_game_art
+technical:
+  base_canvas: 320x180_or_480x270_logical_scene
+  upscale: nearest_neighbor_only
+  contour: hard_pixel_edges_with_selective_dark_outline
+  palette: restrained_warm_cool_scene_palette
+  depth: tile_plane_plus_two_or_three_background_layers
+construction:
+  - block the walkable plane and largest light-dark masses first
+  - place sprites and interactive objects using one consistent tile scale
+  - add props for location clarity composition or gameplay readability
+  - use stepped palette bands for sky water shadow and interior light
+  - check the scene at logical resolution before display upscale
+  - choose an optional open outdoor enclosed interior or uncanny detail variant
+avoid:
+  - anti_aliasing
+  - smooth_photographic_gradient
+  - excessive_particle_effects
+  - generic_neon_cyberpunk_lighting
+  - oversized_character_portrait
+  - readable_text_or_branding
+  - copied_game_ui_or_known_scene

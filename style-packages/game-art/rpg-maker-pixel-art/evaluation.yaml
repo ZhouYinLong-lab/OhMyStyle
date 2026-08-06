@@ -1,0 +1,24 @@
+profiles:
+  generic:
+    required:
+      - pixel_edges_are_authored_not_blurred
+      - sprite_scale_matches_environment_when_sprites_are_present
+      - tile_based_ground_or_architecture_is_readable
+      - palette_and_lighting_are_intentionally_limited
+      - no_named_game_or_copied_screenshot
+    reject_if:
+      - photorealistic_surface_detail_dominates
+      - text_logo_or_ui_is_present
+      - pixelation_is_only_a_post_process_filter
+  open_outdoor:
+    required:
+      - readable_ground_plane_or_horizon
+      - layered_environmental_depth
+  enclosed_interior:
+    required:
+      - clear_room_geometry
+      - readable_occlusion_and_furniture_scale
+  uncanny_detail:
+    required:
+      - ordinary_space_remains_legible
+      - unusual_detail_is_limited_and_compositionally_integrated
