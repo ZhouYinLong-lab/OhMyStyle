@@ -1,0 +1,30 @@
+id: rpg-maker-x-turner
+name: RPG Maker Pixel Art + Turner Atmosphere
+version: 0.1.0
+mode: stack
+bases:
+  - package: game-art/rpg-maker-pixel-art
+    role: medium
+    weight: 0.6
+    capabilities:
+      - hard_pixel_edges
+      - tile_based_scene
+      - nearest_neighbor_scaling
+    notes: Keep raster medium and sprite edges authoritative.
+  - package: artists/jmw-turner
+    role: lighting
+    weight: 0.4
+    capabilities:
+      - weather_atmosphere
+      - luminous_sky
+      - lost_and_found_edges
+    notes: Borrow atmospheric light logic without replacing pixel geometry.
+constraints:
+  must:
+    - keep pixel-grid geometry and nearest-neighbor edge behavior
+    - use atmospheric light only as a palette and depth signal
+  avoid:
+    - smooth painterly brush texture
+    - photorealistic rendering
+provenance:
+  purpose: Demonstrate role-separated medium and lighting composition.

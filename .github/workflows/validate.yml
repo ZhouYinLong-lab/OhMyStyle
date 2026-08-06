@@ -17,6 +17,9 @@ jobs:
       - name: Validate executable style packages
         run: python3 tools/validate-package.py style-packages
 
+      - name: Validate cross-style composite recipes
+        run: python3 tools/validate-composite.py style-packages/composites
+
       - name: Validate compatibility style package
         run: python3 tools/validate.py
 

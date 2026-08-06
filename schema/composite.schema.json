@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/composite.schema.json",
+  "title": "OhMyStyle Composite Style Recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "version", "bases"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+    "mode": {"type": "string", "enum": ["auto", "stack", "blend", "contrast"]},
+    "auto": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "hints": {"type": "array", "items": {"type": "string"}},
+        "default_mode": {"type": "string", "enum": ["stack", "blend", "contrast"]}
+      }
+    },
+    "bases": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["package", "role"],
+        "properties": {
+          "package": {"type": "string", "minLength": 1},
+          "role": {"type": "string", "enum": ["medium", "composition", "lighting", "palette", "surface", "texture", "subject", "layout"]},
+          "weight": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+          "zone": {"type": "string", "minLength": 1},
+          "priority": {"type": "integer"},
+          "capabilities": {"type": "array", "items": {"type": "string"}},
+          "incompatibilities": {"type": "array", "items": {"type": "string"}},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "overrides": {"type": "object"},
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "must": {"type": "array", "items": {"type": "string"}},
+        "avoid": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "conflicts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "policy": {"type": "string", "enum": ["fail", "warn", "resolve"]},
+        "resolutions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "provenance": {"type": "object"}
+  }
+}

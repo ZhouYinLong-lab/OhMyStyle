@@ -1,0 +1,30 @@
+id: vermeer-x-monet
+name: Vermeer Light + Monet Color
+version: 0.1.0
+mode: blend
+bases:
+  - package: artists/johannes-vermeer
+    role: palette
+    weight: 0.55
+    capabilities:
+      - controlled_side_light
+      - quiet_geometry
+      - material_transitions
+    notes: Preserve calm interior light and readable object structure.
+  - package: artists/claude-monet
+    role: palette
+    weight: 0.45
+    capabilities:
+      - broken_color
+      - transient_outdoor_light
+      - soft_distant_edges
+    notes: Contribute chromatic temperature variation without flattening form.
+constraints:
+  must:
+    - retain a coherent light direction
+    - blend color behavior without merging the two artists into a name-only label
+  avoid:
+    - generic impressionist blur
+    - uncontrolled global color grading
+provenance:
+  purpose: Demonstrate weighted blending of two palette and light signatures.

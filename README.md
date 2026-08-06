@@ -75,6 +75,83 @@ Workflow](docs/EXECUTABLE-WORKFLOW.md). Automatic semantic-mask adapters and
 safe color segmentation are documented in [Mask
 Adapters](docs/MASK-ADAPTERS.md).
 
+## Cross-style composites
+
+OhMyStyle keeps each artist, photographer, movement, technique, game-art
+direction, and preset as an independent executable package. When a prompt
+needs more than one style dimension, use a data-only recipe under
+[`style-packages/composites/`](style-packages/composites/). The recipe points
+to existing packages and adds the relationship between them; it does not
+copy their text or reference assets.
+
+Three modes are supported:
+
+- `stack`: assign different bases to different roles, such as `medium`,
+  `lighting`, `composition`, or `texture`. Each role stays authoritative in
+  its own dimension.
+- `blend`: combine compatible bases within a shared dimension using normalized
+  `weight` values. This is appropriate for two palette or lighting signatures.
+- `contrast`: assign bases to explicit `zone` values such as `foreground` and
+  `background`, preventing medium, surface, or palette rules from leaking
+  across the whole image.
+
+If the user does not choose a mode, the compiler infers it from the recipe and
+brief: multiple zones select `contrast`; repeated roles or blend hints select
+`blend`; otherwise it selects `stack` (or `auto.default_mode` when provided).
+The inference is generic and does not contain branches for any particular
+artist, photographer, game, palette, or prompt case.
+
+```mermaid
+flowchart TD
+    A[User brief] --> B{Mode specified?}
+    B -->|stack / blend / contrast| C[Use explicit mode]
+    B -->|omitted| D[Infer from zones roles hints]
+    C --> E[Load referenced base packages]
+    D --> E
+    E --> F[Check capabilities and conflicts]
+    F -->|fail| G[Stop and report resolution needed]
+    F -->|warn or resolve| H[Compile each base prompt]
+    H --> I{Selected mode}
+    I -->|stack| J[Role-separated layering]
+    I -->|blend| K[Weighted same-dimension merge]
+    I -->|contrast| L[Zone-bounded style assignment]
+    J --> M[Provider-neutral composite job]
+    K --> M
+    L --> M
+```
+
+Example recipes:
+
+```bash
+python tools/compile-composite.py \
+  style-packages/composites/rpg-maker-x-turner \
+  --subject "a small harbor at dawn" \
+  --profile weak
+
+python tools/compile-composite.py \
+  style-packages/composites/vermeer-x-monet \
+  --subject "a vase beside a rain-streaked window" \
+  --profile weak
+
+python tools/compile-composite.py \
+  style-packages/composites/rpg-maker-x-gauguin \
+  --subject "a village path with a foreground character" \
+  --profile weak
+```
+
+Validate all composite recipes and their referenced packages with:
+
+```bash
+python tools/validate-composite.py style-packages/composites
+```
+
+The recipe fields are intentionally explicit: `bases[].package`, `role`,
+`weight`, `zone`, `capabilities`, and `incompatibilities` define composition;
+`overrides` and `constraints` define the final authority; `conflicts.policy`
+chooses whether a declared conflict fails, warns, or records a resolution.
+See [the composite recipe guide](style-packages/composites/README.md) and the
+[composite schema](schema/composite.schema.json) for the complete contract.
+
 ## Executable style package gallery
 
 These are the current structured packages. The linked `anonymous-v1.png`
@@ -1050,7 +1127,8 @@ OhMyStyle/
 │   ├── schools/
 │   ├── techniques/
 │   ├── game-art/
-│   └── presets/
+│   ├── presets/
+│   └── composites/             # Data-only multi-style recipes
 ├── styles/                     # Legacy style.json catalog
 ├── schema/                     # Package and render-task schemas
 ├── tasks/                      # Strict and fuzzy render task examples
@@ -1071,6 +1149,7 @@ Run the checks before publishing a package or changing the runtime:
 ```bash
 python -m unittest discover -s tests -v
 python tools/validate-package.py style-packages
+python tools/validate-composite.py style-packages/composites
 python tools/validate.py
 python scripts/validate-style-json.py
 git diff --check

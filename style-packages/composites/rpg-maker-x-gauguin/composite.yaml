@@ -1,0 +1,32 @@
+id: rpg-maker-x-gauguin
+name: RPG Maker Foreground + Gauguin Background
+version: 0.1.0
+mode: contrast
+bases:
+  - package: game-art/rpg-maker-pixel-art
+    role: medium
+    zone: foreground
+    weight: 0.6
+    capabilities:
+      - hard_pixel_edges
+      - tile_based_scene
+    notes: Foreground sprites, props, and collision-readable forms.
+  - package: artists/paul-gauguin
+    role: palette
+    zone: background
+    weight: 0.4
+    capabilities:
+      - symbolic_color_fields
+      - decorative_contour
+    notes: Broad background color fields and compressed spatial layers.
+constraints:
+  must:
+    - keep foreground pixel edges crisp
+    - keep background color fields broad and spatially separate
+  avoid:
+    - applying oil-paint texture to sprites
+    - allowing background palette rules to recolor foreground objects
+conflicts:
+  policy: warn
+provenance:
+  purpose: Demonstrate zone-bounded contrast between medium and palette.
