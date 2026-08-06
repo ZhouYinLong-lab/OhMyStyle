@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/resource.schema.json",
+  "title": "OhMyStyle Core Style Resource Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "resource_id",
+    "resource_type",
+    "maturity",
+    "task_independent",
+    "focus_dimensions",
+    "artifacts",
+    "evidence",
+    "rights"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "resource_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "resource_type": {"type": "string", "const": "visual_style"},
+    "maturity": {"type": "string", "enum": ["L0", "L1", "L2", "L3", "L4"]},
+    "task_independent": {"type": "boolean", "const": true},
+    "focus_dimensions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["medium", "process", "camera", "composition", "lighting", "palette", "surface", "texture", "depth", "subject_treatment", "layout"]
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["package", "identity", "visual_signature", "reproduction", "evaluation", "references", "provenance", "prompt", "accepted_examples", "rejected_examples"],
+      "properties": {
+        "package": {"type": "string", "minLength": 1},
+        "identity": {"type": "string", "minLength": 1},
+        "visual_signature": {"type": "string", "minLength": 1},
+        "reproduction": {"type": "string", "minLength": 1},
+        "evaluation": {"type": "string", "minLength": 1},
+        "references": {"type": "string", "minLength": 1},
+        "provenance": {"type": "string", "minLength": 1},
+        "prompt": {"type": "string", "minLength": 1},
+        "accepted_examples": {"type": "string", "minLength": 1},
+        "rejected_examples": {"type": "string", "minLength": 1}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reference_backed", "accepted_example", "rejected_examples_optional"],
+      "properties": {
+        "reference_backed": {"type": "boolean"},
+        "accepted_example": {"type": "boolean"},
+        "rejected_examples_optional": {"type": "boolean"}
+      }
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reference_policy", "generated_demo_policy"],
+      "properties": {
+        "reference_policy": {"type": "string", "minLength": 1},
+        "generated_demo_policy": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

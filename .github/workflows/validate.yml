@@ -27,6 +27,9 @@ jobs:
       - name: Validate executable style packages
         run: python3 tools/validate-package.py style-packages
 
+      - name: Validate core resource contracts and registry
+        run: python3 tools/validate-resources.py style-packages
+
       - name: Validate cross-style composite recipes
         run: python3 tools/validate-composite.py style-packages/composites
 

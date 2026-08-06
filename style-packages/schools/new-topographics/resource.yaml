@@ -1,0 +1,32 @@
+schema_version: 1.0.0
+resource_id: new-topographics
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+- medium
+- composition
+- lighting
+- palette
+- surface
+- texture
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each reference manifest row governs source, license, attribution,
+    and redistribution status.
+  generated_demo_policy: Generated demonstrations are anonymous new scenes and are
+    not source artworks.

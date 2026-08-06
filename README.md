@@ -40,6 +40,30 @@ The runtime is not an image model, a training dataset, or a promise of exact
 replication of any artist's work. It translates observable visual decisions
 into reusable instructions and makes uncertainty visible.
 
+## Core resource architecture
+
+The repository's primary asset is an evidence-backed visual-style resource,
+not a standalone prompt or a subject-specific image. Every structured package
+has a local `resource.yaml` contract that declares its maturity, task
+independence, visual dimensions, canonical artifacts, evidence requirements,
+and reference rights policy. The package's `package.yaml`, visual signature,
+reproduction rules, prompts, references, provenance, evaluation, and examples
+remain the implementation artifacts.
+
+Render tasks under [`tasks/`](tasks/) are intentionally separate. A task may
+specify a subject, story, aspect ratio, or measurable constraint; a style
+resource must not require any particular narrative or subject.
+
+The registry in [`registry/index.yaml`](registry/index.yaml) is generated from
+the 32 local resource manifests. Maturity is explicit: `L2` means
+reference-backed and executable, `L3` adds an accepted generated example, and
+`L4` is reserved for tested interoperability across providers or adapters.
+This prevents the catalog from claiming that every package has already passed
+the same level of human evaluation.
+
+Read the complete [core resource architecture](docs/RESOURCE-ARCHITECTURE.md)
+and [registry guide](registry/README.md).
+
 ## Getting Started
 
 ### Installation
@@ -1129,6 +1153,7 @@ OhMyStyle/
 │   ├── game-art/
 │   ├── presets/
 │   └── composites/             # Data-only multi-style recipes
+├── registry/                   # Generated discovery index for core resources
 ├── styles/                     # Legacy style.json catalog
 ├── schema/                     # Package and render-task schemas
 ├── tasks/                      # Strict and fuzzy render task examples
@@ -1149,6 +1174,7 @@ Run the checks before publishing a package or changing the runtime:
 ```bash
 python -m unittest discover -s tests -v
 python tools/validate-package.py style-packages
+python tools/validate-resources.py style-packages
 python tools/validate-composite.py style-packages/composites
 python tools/validate.py
 python scripts/validate-style-json.py

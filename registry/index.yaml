@@ -1,0 +1,512 @@
+schema_version: 1.0.0
+generated_by: tools/build-registry.py
+packages:
+- resource_id: anna-ancher
+  name: Anna Ancher
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/anna-ancher
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: claude-monet
+  name: Claude Monet
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/claude-monet
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: diego-velazquez
+  name: Diego Velázquez
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/diego-velazquez
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: edvard-munch
+  name: Edvard Munch
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/edvard-munch
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: georges-seurat
+  name: Georges Seurat
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/georges-seurat
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: jmw-turner
+  name: J. M. W. Turner
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/jmw-turner
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: johannes-vermeer
+  name: Johannes Vermeer
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/johannes-vermeer
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: paul-cezanne
+  name: Paul Cézanne
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/paul-cezanne
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: paul-gauguin
+  name: Paul Gauguin
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/paul-gauguin
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: rembrandt
+  name: Rembrandt van Rijn
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/rembrandt
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: vincent-van-gogh
+  name: Vincent van Gogh
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/vincent-van-gogh
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: wassily-kandinsky
+  name: Wassily Kandinsky
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/wassily-kandinsky
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: rpg-maker-pixel-art
+  name: RPG Maker Pixel Art
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/rpg-maker-pixel-art
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 4
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: zx-spectrum-attribute-pixel
+  name: ZX Spectrum Attribute Pixel Art
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/zx-spectrum-attribute-pixel
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: greek-archaic-period
+  name: Greek Archaic Period
+  kind: movement
+  domain: hybrid
+  package_path: style-packages/movements/greek-archaic-period
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 5
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: greek-classical-period
+  name: Greek Classical Period
+  kind: movement
+  domain: hybrid
+  package_path: style-packages/movements/greek-classical-period
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 5
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: greek-geometric-period
+  name: Greek Geometric Period
+  kind: movement
+  domain: hybrid
+  package_path: style-packages/movements/greek-geometric-period
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 5
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: greek-hellenistic-period
+  name: Greek Hellenistic Period
+  kind: movement
+  domain: hybrid
+  package_path: style-packages/movements/greek-hellenistic-period
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 5
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: italian-high-renaissance-raphaelesque
+  name: Italian High Renaissance
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/italian-high-renaissance-raphaelesque
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 6
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: neue-sachlichkeit
+  name: Neue Sachlichkeit / New Objectivity
+  kind: movement
+  domain: hybrid
+  package_path: style-packages/movements/neue-sachlichkeit
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: alfred-stieglitz
+  name: Alfred Stieglitz
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/alfred-stieglitz
+  maturity: L3
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: eadweard-muybridge
+  name: Eadweard Muybridge
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/eadweard-muybridge
+  maturity: L3
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: etienne-jules-marey
+  name: Étienne-Jules Marey
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/etienne-jules-marey
+  maturity: L3
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: eugene-atget
+  name: Eugène Atget
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/eugene-atget
+  maturity: L3
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: julia-margaret-cameron
+  name: Julia Margaret Cameron
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/julia-margaret-cameron
+  maturity: L3
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: lewis-hine
+  name: Lewis Hine
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/lewis-hine
+  maturity: L3
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: masahisa-fukase
+  name: Masahisa Fukase
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/masahisa-fukase
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: nadar
+  name: Nadar
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/nadar
+  maturity: L3
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: roger-fenton
+  name: Roger Fenton
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/roger-fenton
+  maturity: L3
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+- resource_id: high-chroma-color-pairing
+  name: High-Chroma Color Pairing
+  kind: preset
+  domain: hybrid
+  package_path: style-packages/presets/high-chroma-color-pairing
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - lighting
+  - palette
+  - surface
+  reference_count: 13
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: new-topographics
+  name: New Topographics
+  kind: school
+  domain: photography
+  package_path: style-packages/schools/new-topographics
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+- resource_id: gum-bichromate
+  name: Gum Bichromate Printing
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/gum-bichromate
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0

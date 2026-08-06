@@ -34,6 +34,7 @@ REQUIRED_FILES = {
     "examples/accepted/README.md",
     "examples/rejected/README.md",
     "provenance.yaml",
+    "resource.yaml",
     "version.md",
 }
 
