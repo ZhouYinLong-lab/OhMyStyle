@@ -107,7 +107,7 @@ MIN_LIST_LENGTHS = {
 }
 
 REQUIRED_STYLE_FILES = {"style.json", "preview-16x9.jpg", "preview-9x16.jpg"}
-OPTIONAL_STYLE_FILES = {"README.md"}
+OPTIONAL_STYLE_FILES = {"README.md", "README.en.md"}
 PLACEHOLDER_RE = re.compile(r"\{([A-Z0-9_]+)\}")
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
