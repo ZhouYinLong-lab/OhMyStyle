@@ -1,0 +1,11 @@
+canonical_name: 森山大道
+entity_type: photographer
+period_or_scope: 日本战后摄影
+region_or_context: international
+primary_medium: photography
+subject_matter:
+- 高反差街景、粗颗粒、倾斜取景与都市碎片
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

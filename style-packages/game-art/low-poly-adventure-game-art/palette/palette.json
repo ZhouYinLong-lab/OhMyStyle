@@ -1,0 +1,20 @@
+{
+  "name": "低多边形冒险游戏美术",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#4A8B8A",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#B38B58",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#D36A55",
+      "role": "package palette"
+    }
+  ]
+}

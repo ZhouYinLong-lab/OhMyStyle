@@ -1,0 +1,11 @@
+canonical_name: 粉彩胶片人像
+entity_type: preset
+period_or_scope: 摄影预设
+region_or_context: international
+primary_medium: photography
+subject_matter:
+- 自然窗光、粉彩服饰、柔和肤色与细腻胶片颗粒
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

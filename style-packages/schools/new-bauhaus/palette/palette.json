@@ -1,0 +1,20 @@
+{
+  "name": "新包豪斯",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#D13A32",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#2F6381",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#D8A72E",
+      "role": "package palette"
+    }
+  ]
+}

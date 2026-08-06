@@ -1,0 +1,11 @@
+canonical_name: 欧仁·德拉克罗瓦
+entity_type: artist
+period_or_scope: 浪漫主义
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 对角线运动、暖冷冲突、饱和色与自由笔触
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

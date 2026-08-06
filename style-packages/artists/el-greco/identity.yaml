@@ -1,0 +1,11 @@
+canonical_name: 埃尔·格列柯
+entity_type: artist
+period_or_scope: 晚期文艺复兴
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 拉长形体、垂直升腾、冷色灵光与压缩空间
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

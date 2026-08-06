@@ -1,0 +1,20 @@
+{
+  "name": "俯视角16位冒险美术",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#D06A3A",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#53646C",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#8C8449",
+      "role": "package palette"
+    }
+  ]
+}

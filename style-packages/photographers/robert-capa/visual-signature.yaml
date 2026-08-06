@@ -1,0 +1,26 @@
+medium: photography
+signature: 近距离纪实、手持动态、人物情绪与不完美胶片
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#30302E'
+  - '#777169'
+  - '#C9C1B2'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 近距离纪实、手持动态、人物情绪与不完美胶片
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

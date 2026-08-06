@@ -1,0 +1,17 @@
+id: robert-capa
+name: 罗伯特·卡帕
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: Independent Robert Capa style package focused on 近距离纪实、手持动态、人物情绪与不完美胶片; it
+  requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

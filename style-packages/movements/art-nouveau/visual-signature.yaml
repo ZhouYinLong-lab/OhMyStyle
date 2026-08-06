@@ -1,0 +1,26 @@
+medium: graphic
+signature: 鞭梢曲线、植物形态、平面装饰与柔和珠宝色
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#6E876D'
+  - '#B18662'
+  - '#D4A55F'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 鞭梢曲线、植物形态、平面装饰与柔和珠宝色
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

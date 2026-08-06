@@ -1,0 +1,13 @@
+package_id: pastel-film-portrait
+research_basis:
+- title: Pastel Film Portrait
+  creator: Anonymous photographic study
+  period: 摄影预设
+  source_url: https://www.loc.gov/photos/
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.

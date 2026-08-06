@@ -1,0 +1,17 @@
+package_id: william-eggleston
+package_version: 0.1.0
+invariants:
+- id: signature
+  weight: 3
+  test: 日常彩色、饱和小物、普通地点与染料转印质感
+- id: new_arrangement
+  weight: 3
+  test: The subject and composition are not a recognizable reconstruction.
+- id: material_readability
+  weight: 2
+  test: The requested medium or capture behavior remains visible.
+rejections:
+- copied_named_work
+- global_generic_filter
+- unreadable_subject
+minimum_score: 8

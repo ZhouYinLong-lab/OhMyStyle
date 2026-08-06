@@ -1,0 +1,26 @@
+medium: photography
+signature: 社会纪实、直接人物关系、天气纹理与克制灰阶
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#4F4E49'
+  - '#8C8371'
+  - '#B2A591'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 社会纪实、直接人物关系、天气纹理与克制灰阶
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

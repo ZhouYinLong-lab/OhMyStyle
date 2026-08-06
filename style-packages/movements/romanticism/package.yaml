@@ -1,0 +1,17 @@
+id: romanticism
+name: 浪漫主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: Independent Romanticism style package focused on 崇高景观、天气、情绪尺度与暖冷光线; it requires
+  new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

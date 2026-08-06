@@ -1,0 +1,11 @@
+canonical_name: 油画
+entity_type: technique
+period_or_scope: 跨时期技法
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 分层油膜、可见笔触、透明罩染与体积塑造
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

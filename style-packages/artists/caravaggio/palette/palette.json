@@ -1,0 +1,20 @@
+{
+  "name": "卡拉瓦乔",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#8B3327",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#6A4A2C",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#171717",
+      "role": "package palette"
+    }
+  ]
+}

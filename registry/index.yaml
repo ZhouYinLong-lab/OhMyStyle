@@ -18,6 +18,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: caravaggio
+  name: 卡拉瓦乔
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/caravaggio
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: claude-monet
   name: 克劳德·莫奈
   kind: artist
@@ -52,6 +69,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: edgar-degas
+  name: 埃德加·德加
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/edgar-degas
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: edvard-munch
   name: 爱德华·蒙克
   kind: artist
@@ -69,6 +103,57 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: el-greco
+  name: 埃尔·格列柯
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/el-greco
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: eugene-delacroix
+  name: 欧仁·德拉克罗瓦
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/eugene-delacroix
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: francisco-goya
+  name: 弗朗西斯科·戈雅
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/francisco-goya
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: georges-seurat
   name: 乔治·修拉
   kind: artist
@@ -86,6 +171,57 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: grant-wood
+  name: 格兰特·伍德
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/grant-wood
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: gustave-courbet
+  name: 古斯塔夫·库尔贝
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/gustave-courbet
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: henri-matisse
+  name: 亨利·马蒂斯
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/henri-matisse
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: jmw-turner
   name: 约瑟夫·马洛德·威廉·透纳
   kind: artist
@@ -103,6 +239,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: true
+- resource_id: joan-miro
+  name: 胡安·米罗
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/joan-miro
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: johannes-vermeer
   name: 约翰内斯·维米尔
   kind: artist
@@ -119,6 +272,57 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 1
+  benchmark: true
+- resource_id: leonardo-da-vinci
+  name: 莱昂纳多·达·芬奇
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/leonardo-da-vinci
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: michelangelo-buonarroti
+  name: 米开朗基罗
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/michelangelo-buonarroti
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: pablo-picasso
+  name: 巴勃罗·毕加索
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/pablo-picasso
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
   benchmark: true
 - resource_id: paul-cezanne
   name: 保罗·塞尚
@@ -154,6 +358,57 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: pierre-auguste-renoir
+  name: 皮埃尔-奥古斯特·雷诺阿
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/pierre-auguste-renoir
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: pieter-bruegel-the-elder
+  name: 老彼得·勃鲁盖尔
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/pieter-bruegel-the-elder
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: raphael-sanzio
+  name: 拉斐尔
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/raphael-sanzio
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: rembrandt
   name: 伦勃朗·范·莱因
   kind: artist
@@ -239,6 +494,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: low-poly-adventure-game-art
+  name: 低多边形冒险游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/low-poly-adventure-game-art
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: rpg-maker-pixel-art
   name: 角色扮演游戏像素美术
   kind: game_art
@@ -253,6 +525,40 @@ packages:
   - texture
   - layout
   reference_count: 4
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: side-scrolling-platformer-pixel
+  name: 横版平台跳跃像素美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/side-scrolling-platformer-pixel
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: top-down-16-bit-adventure
+  name: 俯视角16位冒险美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/top-down-16-bit-adventure
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
@@ -273,6 +579,91 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: art-nouveau
+  name: 新艺术运动
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/art-nouveau
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: baroque
+  name: 巴洛克
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/baroque
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: cubism
+  name: 立体主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/cubism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: expressionism
+  name: 表现主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/expressionism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: futurism
+  name: 未来主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/futurism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: greek-archaic-period
   name: 古希腊古风时期
   kind: movement
@@ -341,6 +732,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: impressionism
+  name: 印象主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/impressionism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: italian-high-renaissance-raphaelesque
   name: 意大利文艺复兴盛期
   kind: movement
@@ -358,6 +766,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: false
+- resource_id: neoclassicism
+  name: 新古典主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/neoclassicism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: neue-sachlichkeit
   name: 新即物主义
   kind: movement
@@ -375,6 +800,91 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: post-impressionism
+  name: 后印象主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/post-impressionism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: realism
+  name: 现实主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/realism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: rococo
+  name: 洛可可
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/rococo
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: romanticism
+  name: 浪漫主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/romanticism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: surrealism
+  name: 超现实主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/surrealism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: alfred-stieglitz
   name: 阿尔弗雷德·斯蒂格利茨
   kind: photographer
@@ -392,6 +902,74 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: ansel-adams
+  name: 安塞尔·亚当斯
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/ansel-adams
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: daido-moriyama
+  name: 森山大道
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/daido-moriyama
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: diane-arbus
+  name: 黛安·阿勃丝
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/diane-arbus
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: dorothea-lange
+  name: 多萝西娅·兰格
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/dorothea-lange
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: eadweard-muybridge
   name: 埃德沃德·迈布里奇
   kind: photographer
@@ -443,6 +1021,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: henri-cartier-bresson
+  name: 亨利·卡蒂埃-布列松
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/henri-cartier-bresson
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: julia-margaret-cameron
   name: 朱莉娅·玛格丽特·卡梅隆
   kind: photographer
@@ -511,6 +1106,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: robert-capa
+  name: 罗伯特·卡帕
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/robert-capa
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: roger-fenton
   name: 罗杰·芬顿
   kind: photographer
@@ -528,6 +1140,40 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: walker-evans
+  name: 沃克·埃文斯
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/walker-evans
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: william-eggleston
+  name: 威廉·埃格尔斯顿
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/william-eggleston
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: hard-light-color-blocking
   name: 硬光色块摄影
   kind: preset
@@ -558,6 +1204,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: monochrome-silver-gelatin
+  name: 银盐黑白纪实
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/monochrome-silver-gelatin
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: muted-documentary-color
   name: 低饱和纪实色彩
   kind: preset
@@ -570,6 +1233,74 @@ packages:
   - palette
   - surface
   reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: natural-window-light
+  name: 自然窗光
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/natural-window-light
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: nocturnal-blue-hour
+  name: 夜色蓝调
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/nocturnal-blue-hour
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: pastel-film-portrait
+  name: 粉彩胶片人像
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/pastel-film-portrait
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: art-deco
+  name: 装饰艺术
+  kind: school
+  domain: design
+  package_path: style-packages/schools/art-deco
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
@@ -607,6 +1338,40 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: international-typographic-style
+  name: 国际主义版式风格
+  kind: school
+  domain: design
+  package_path: style-packages/schools/international-typographic-style
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: new-bauhaus
+  name: 新包豪斯
+  kind: school
+  domain: design
+  package_path: style-packages/schools/new-bauhaus
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: new-topographics
   name: 新地形学
   kind: school
@@ -624,6 +1389,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: ulm-school
+  name: 乌尔姆设计学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/ulm-school
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: cyanotype
   name: 氰版印相
   kind: technique
@@ -637,6 +1419,23 @@ packages:
   - surface
   - texture
   reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: drypoint-etching
+  name: 干刻版画
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/drypoint-etching
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
@@ -656,6 +1455,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: oil-painting
+  name: 油画
+  kind: technique
+  domain: painting
+  package_path: style-packages/techniques/oil-painting
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: screen-printing
   name: 丝网印刷
   kind: technique
@@ -669,6 +1485,40 @@ packages:
   - surface
   - texture
   reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: watercolor
+  name: 水彩画
+  kind: technique
+  domain: painting
+  package_path: style-packages/techniques/watercolor
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: woodcut
+  name: 木刻版画
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/woodcut
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true

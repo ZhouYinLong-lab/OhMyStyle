@@ -1,0 +1,17 @@
+id: gustave-courbet
+name: 古斯塔夫·库尔贝
+kind: artist
+domain: painting
+version: 0.1.0
+summary: Independent Gustave Courbet style package focused on 厚重物质感、未理想化人物、土色现实与坚实地面;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

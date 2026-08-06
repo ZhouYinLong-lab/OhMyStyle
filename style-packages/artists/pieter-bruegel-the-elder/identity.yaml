@@ -1,0 +1,11 @@
+canonical_name: 老彼得·勃鲁盖尔
+entity_type: artist
+period_or_scope: 北方文艺复兴
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 高视点全景、微小群像、季节劳动与乡土地景
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

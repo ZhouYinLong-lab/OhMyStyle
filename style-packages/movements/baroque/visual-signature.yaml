@@ -1,0 +1,26 @@
+medium: painting
+signature: 戏剧光线、对角线运动、深暗背景与材质丰富度
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#7D2E27'
+  - '#A8793E'
+  - '#1E1A18'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 戏剧光线、对角线运动、深暗背景与材质丰富度
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

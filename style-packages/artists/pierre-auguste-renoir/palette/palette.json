@@ -1,0 +1,20 @@
+{
+  "name": "皮埃尔-奥古斯特·雷诺阿",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#D29D8F",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#7895A3",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#75855C",
+      "role": "package palette"
+    }
+  ]
+}

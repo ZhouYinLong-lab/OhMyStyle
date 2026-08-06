@@ -1,0 +1,26 @@
+medium: painting
+signature: 分层油膜、可见笔触、透明罩染与体积塑造
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#9C5F3E'
+  - '#6C7A62'
+  - '#D0A36D'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 分层油膜、可见笔触、透明罩染与体积塑造
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

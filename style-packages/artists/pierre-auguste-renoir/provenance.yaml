@@ -1,0 +1,13 @@
+package_id: pierre-auguste-renoir
+research_basis:
+- title: Pierre-Auguste Renoir
+  creator: Pierre-Auguste Renoir
+  period: 印象主义
+  source_url: https://commons.wikimedia.org/w/index.php?search=Pierre-Auguste+Renoir&title=Special:MediaSearch&type=image
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.

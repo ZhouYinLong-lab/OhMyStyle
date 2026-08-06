@@ -1,0 +1,20 @@
+{
+  "name": "老彼得·勃鲁盖尔",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#7C7850",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#B18D54",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#526A70",
+      "role": "package palette"
+    }
+  ]
+}

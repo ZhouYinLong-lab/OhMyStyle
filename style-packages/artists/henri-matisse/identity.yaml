@@ -1,0 +1,11 @@
+canonical_name: 亨利·马蒂斯
+entity_type: artist
+period_or_scope: 现代主义
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 平面色块、装饰性空间、简化轮廓与大胆色彩
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

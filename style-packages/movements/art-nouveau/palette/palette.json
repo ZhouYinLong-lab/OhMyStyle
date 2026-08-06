@@ -1,0 +1,20 @@
+{
+  "name": "新艺术运动",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#6E876D",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#B18662",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#D4A55F",
+      "role": "package palette"
+    }
+  ]
+}

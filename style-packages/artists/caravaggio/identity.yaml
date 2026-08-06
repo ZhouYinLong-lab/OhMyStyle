@@ -1,0 +1,11 @@
+canonical_name: 卡拉瓦乔
+entity_type: artist
+period_or_scope: 巴洛克早期
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 明暗对照、单一光源、普通人物与戏剧性空间
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

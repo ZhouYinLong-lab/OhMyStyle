@@ -1,0 +1,17 @@
+id: eugene-delacroix
+name: 欧仁·德拉克罗瓦
+kind: artist
+domain: painting
+version: 0.1.0
+summary: Independent Eugène Delacroix style package focused on 对角线运动、暖冷冲突、饱和色与自由笔触;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

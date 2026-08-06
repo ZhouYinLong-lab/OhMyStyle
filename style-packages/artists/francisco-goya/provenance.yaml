@@ -1,0 +1,13 @@
+package_id: francisco-goya
+research_basis:
+- title: Francisco Goya
+  creator: Francisco Goya
+  period: 浪漫主义前夜
+  source_url: https://commons.wikimedia.org/w/index.php?search=Francisco+Goya&title=Special:MediaSearch&type=image
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.

@@ -1,0 +1,17 @@
+id: ansel-adams
+name: 安塞尔·亚当斯
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: Independent Ansel Adams style package focused on 大画幅风景、区域曝光、丰富灰阶与清晰自然细节;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

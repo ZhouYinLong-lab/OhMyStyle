@@ -1,0 +1,20 @@
+{
+  "name": "亨利·卡蒂埃-布列松",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#262727",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#777671",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#D6D0C4",
+      "role": "package palette"
+    }
+  ]
+}

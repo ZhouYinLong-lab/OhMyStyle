@@ -1,0 +1,20 @@
+{
+  "name": "亨利·马蒂斯",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#C83F35",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#2F5B86",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#72834D",
+      "role": "package palette"
+    }
+  ]
+}

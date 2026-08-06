@@ -1,0 +1,26 @@
+medium: painting
+signature: 崇高景观、天气、情绪尺度与暖冷光线
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#465D72'
+  - '#B7864B'
+  - '#6B6E59'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 崇高景观、天气、情绪尺度与暖冷光线
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

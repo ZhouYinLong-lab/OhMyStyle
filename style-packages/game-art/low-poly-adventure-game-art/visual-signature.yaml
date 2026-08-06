@@ -1,0 +1,26 @@
+medium: game
+signature: 低多边形面、简化材质、清晰光照与可探索空间
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#4A8B8A'
+  - '#B38B58'
+  - '#D36A55'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 低多边形面、简化材质、清晰光照与可探索空间
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

@@ -1,0 +1,17 @@
+id: monochrome-silver-gelatin
+name: 银盐黑白纪实
+kind: preset
+domain: photography
+version: 0.1.0
+summary: Independent Monochrome Silver Gelatin style package focused on 银盐灰阶、暗房反差、湿地细节与中性纪实;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

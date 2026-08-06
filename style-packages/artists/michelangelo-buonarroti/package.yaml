@@ -1,0 +1,17 @@
+id: michelangelo-buonarroti
+name: 米开朗基罗
+kind: artist
+domain: painting
+version: 0.1.0
+summary: Independent Michelangelo Buonarroti style package focused on 纪念性人体、雕塑式体积、复杂透视与强轮廓;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

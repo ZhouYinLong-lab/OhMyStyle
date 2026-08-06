@@ -1,0 +1,26 @@
+medium: painting
+signature: 梦境逻辑、日常错位、清晰质感与非理性连接
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#D0B68D'
+  - '#607D89'
+  - '#C16C5A'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 梦境逻辑、日常错位、清晰质感与非理性连接
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

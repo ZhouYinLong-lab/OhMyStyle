@@ -1,0 +1,17 @@
+package_id: ansel-adams
+package_version: 0.1.0
+invariants:
+- id: signature
+  weight: 3
+  test: 大画幅风景、区域曝光、丰富灰阶与清晰自然细节
+- id: new_arrangement
+  weight: 3
+  test: The subject and composition are not a recognizable reconstruction.
+- id: material_readability
+  weight: 2
+  test: The requested medium or capture behavior remains visible.
+rejections:
+- copied_named_work
+- global_generic_filter
+- unreadable_subject
+minimum_score: 8

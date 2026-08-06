@@ -1,0 +1,11 @@
+canonical_name: 黛安·阿勃丝
+entity_type: photographer
+period_or_scope: 20世纪肖像摄影
+region_or_context: international
+primary_medium: photography
+subject_matter:
+- 正面肖像、尴尬静止、普通人的异常感与中画幅灰阶
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

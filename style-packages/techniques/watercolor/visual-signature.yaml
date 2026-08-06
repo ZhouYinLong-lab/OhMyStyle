@@ -1,0 +1,26 @@
+medium: painting
+signature: 透明水洗、纸白、颗粒感与软硬边交替
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#7EA1B2'
+  - '#7B9C76'
+  - '#C39A67'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 透明水洗、纸白、颗粒感与软硬边交替
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

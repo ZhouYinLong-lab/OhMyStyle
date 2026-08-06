@@ -1,0 +1,20 @@
+{
+  "name": "罗伯特·卡帕",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#30302E",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#777169",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#C9C1B2",
+      "role": "package palette"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+canonical_name: 洛可可
+entity_type: movement
+period_or_scope: 18世纪
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 轻盈花园、粉彩、非对称姿态与精致装饰
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

@@ -1,0 +1,26 @@
+medium: painting
+signature: 明亮户外光、柔和肤色、破碎色点与社交氛围
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#D29D8F'
+  - '#7895A3'
+  - '#75855C'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 明亮户外光、柔和肤色、破碎色点与社交氛围
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

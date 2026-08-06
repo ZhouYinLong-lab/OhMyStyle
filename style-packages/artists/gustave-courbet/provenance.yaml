@@ -1,0 +1,13 @@
+package_id: gustave-courbet
+research_basis:
+- title: Gustave Courbet
+  creator: Gustave Courbet
+  period: 现实主义
+  source_url: https://commons.wikimedia.org/w/index.php?search=Gustave+Courbet&title=Special:MediaSearch&type=image
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.

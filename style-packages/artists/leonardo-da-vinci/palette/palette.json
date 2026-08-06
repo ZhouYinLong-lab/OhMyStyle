@@ -1,0 +1,20 @@
+{
+  "name": "莱昂纳多·达·芬奇",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#5D6657",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#A98A62",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#6D7F90",
+      "role": "package palette"
+    }
+  ]
+}

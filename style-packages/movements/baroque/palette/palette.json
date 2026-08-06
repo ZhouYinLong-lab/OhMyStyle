@@ -1,0 +1,20 @@
+{
+  "name": "巴洛克",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#7D2E27",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#A8793E",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#1E1A18",
+      "role": "package palette"
+    }
+  ]
+}

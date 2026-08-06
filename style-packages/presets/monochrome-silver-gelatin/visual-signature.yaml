@@ -1,0 +1,26 @@
+medium: photography
+signature: 银盐灰阶、暗房反差、湿地细节与中性纪实
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#202426'
+  - '#777875'
+  - '#D4D1C9'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 银盐灰阶、暗房反差、湿地细节与中性纪实
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

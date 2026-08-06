@@ -1,0 +1,20 @@
+{
+  "name": "沃克·埃文斯",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#1E2020",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#77736B",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#D0CBC1",
+      "role": "package palette"
+    }
+  ]
+}

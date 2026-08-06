@@ -1,0 +1,17 @@
+id: impressionism
+name: 印象主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: Independent Impressionism style package focused on 瞬时光、破碎笔触、反射色与户外空气; it
+  requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

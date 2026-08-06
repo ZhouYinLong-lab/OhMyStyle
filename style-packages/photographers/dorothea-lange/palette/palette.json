@@ -1,0 +1,20 @@
+{
+  "name": "多萝西娅·兰格",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#4F4E49",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#8C8371",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#B2A591",
+      "role": "package palette"
+    }
+  ]
+}

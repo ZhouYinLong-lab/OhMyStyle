@@ -1,0 +1,17 @@
+id: walker-evans
+name: 沃克·埃文斯
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: Independent Walker Evans style package focused on 正面建筑、美国日常、几何秩序与深灰层次; it
+  requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

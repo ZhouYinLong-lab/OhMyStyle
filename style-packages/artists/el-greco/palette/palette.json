@@ -1,0 +1,20 @@
+{
+  "name": "埃尔·格列柯",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#4A5876",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#6E577D",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#B26D42",
+      "role": "package palette"
+    }
+  ]
+}

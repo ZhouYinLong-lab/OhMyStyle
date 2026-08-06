@@ -1,0 +1,26 @@
+medium: photography
+signature: 正面肖像、尴尬静止、普通人的异常感与中画幅灰阶
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#282827'
+  - '#77746B'
+  - '#CCC7BD'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 正面肖像、尴尬静止、普通人的异常感与中画幅灰阶
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

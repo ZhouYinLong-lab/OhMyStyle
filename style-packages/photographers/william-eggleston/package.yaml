@@ -1,0 +1,17 @@
+id: william-eggleston
+name: 威廉·埃格尔斯顿
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: Independent William Eggleston style package focused on 日常彩色、饱和小物、普通地点与染料转印质感;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

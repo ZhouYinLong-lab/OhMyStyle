@@ -1,0 +1,11 @@
+canonical_name: 沃克·埃文斯
+entity_type: photographer
+period_or_scope: 20世纪纪实摄影
+region_or_context: international
+primary_medium: photography
+subject_matter:
+- 正面建筑、美国日常、几何秩序与深灰层次
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

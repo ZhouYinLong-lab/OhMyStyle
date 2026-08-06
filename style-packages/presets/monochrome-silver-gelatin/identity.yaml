@@ -1,0 +1,11 @@
+canonical_name: 银盐黑白纪实
+entity_type: preset
+period_or_scope: 摄影预设
+region_or_context: international
+primary_medium: photography
+subject_matter:
+- 银盐灰阶、暗房反差、湿地细节与中性纪实
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

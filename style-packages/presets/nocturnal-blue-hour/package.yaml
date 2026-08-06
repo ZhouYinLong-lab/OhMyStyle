@@ -1,0 +1,17 @@
+id: nocturnal-blue-hour
+name: 夜色蓝调
+kind: preset
+domain: photography
+version: 0.1.0
+summary: Independent Nocturnal Blue Hour style package focused on 蓝调时刻、湿地反光、低照度细节与克制人工光;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

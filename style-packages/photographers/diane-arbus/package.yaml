@@ -1,0 +1,17 @@
+id: diane-arbus
+name: 黛安·阿勃丝
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: Independent Diane Arbus style package focused on 正面肖像、尴尬静止、普通人的异常感与中画幅灰阶;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

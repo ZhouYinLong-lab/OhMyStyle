@@ -1,0 +1,26 @@
+medium: painting
+signature: 高视点全景、微小群像、季节劳动与乡土地景
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#7C7850'
+  - '#B18D54'
+  - '#526A70'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 高视点全景、微小群像、季节劳动与乡土地景
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

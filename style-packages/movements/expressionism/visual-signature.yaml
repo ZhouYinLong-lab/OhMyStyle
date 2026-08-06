@@ -1,0 +1,26 @@
+medium: painting
+signature: 情绪变形、尖锐轮廓、强烈色彩与心理空间
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#C5A52F'
+  - '#315C7B'
+  - '#982F2D'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 情绪变形、尖锐轮廓、强烈色彩与心理空间
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

@@ -1,0 +1,13 @@
+package_id: art-deco
+research_basis:
+- title: Art Deco
+  creator: Various designers
+  period: 20世纪20至30年代
+  source_url: https://commons.wikimedia.org/w/index.php?search=Art+Deco+design&title=Special:MediaSearch&type=image
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.

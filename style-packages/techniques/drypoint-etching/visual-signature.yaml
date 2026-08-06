@@ -1,0 +1,26 @@
+medium: printmaking
+signature: 毛刺线、交叉排线、天鹅绒黑与纸白
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#202124'
+  - '#8E8A80'
+  - '#E9E2D5'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 毛刺线、交叉排线、天鹅绒黑与纸白
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

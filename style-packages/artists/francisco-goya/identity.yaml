@@ -1,0 +1,11 @@
+canonical_name: 弗朗西斯科·戈雅
+entity_type: artist
+period_or_scope: 浪漫主义前夜
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 心理张力、暗色现实、粗粝笔触与不安静默
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

@@ -1,0 +1,20 @@
+{
+  "name": "木刻版画",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#1D1D1A",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#E3D7BE",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#A74732",
+      "role": "package palette"
+    }
+  ]
+}

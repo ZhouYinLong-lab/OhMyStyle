@@ -1,0 +1,11 @@
+canonical_name: 莱昂纳多·达·芬奇
+entity_type: artist
+period_or_scope: 文艺复兴盛期
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 晕涂、观察性解剖、空气透视与自然研究
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

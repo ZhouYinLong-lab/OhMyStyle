@@ -1,0 +1,26 @@
+medium: painting
+signature: 分析性平面、多视点、结构化静物与几何重组
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#A98D61'
+  - '#5C7180'
+  - '#313438'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 分析性平面、多视点、结构化静物与几何重组
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

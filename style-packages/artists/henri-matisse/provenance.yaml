@@ -1,0 +1,13 @@
+package_id: henri-matisse
+research_basis:
+- title: Henri Matisse
+  creator: Henri Matisse
+  period: 现代主义
+  source_url: https://commons.wikimedia.org/w/index.php?search=Henri+Matisse&title=Special:MediaSearch&type=image
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.
