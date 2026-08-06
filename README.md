@@ -1,1272 +1,983 @@
 # OhMyStyle
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-see%20license%20files-lightgrey)](LICENSE-OHMYSTYLE.md)
-[![Executable packages](https://img.shields.io/badge/executable%20packages-32-6C63FF)](docs/DEMO-PACKAGES.md)
-[![Legacy catalog](https://img.shields.io/badge/legacy%20style.json%20catalog-110-5B8C5A)](docs/CATALOG.md)
+[![Style packages](https://img.shields.io/badge/style%20packages-35-6C63FF)](style-packages/)
+[![Inherited catalog](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![License](https://img.shields.io/badge/license-see%20provenance-lightgrey)](LICENSE-OHMYSTYLE.md)
 
-OhMyStyle is an independent, model-agnostic toolkit for building reproducible
-visual-style packages for image generation.
+## 一句话定位 / One-line positioning
 
-It organizes visual knowledge into executable packages for artists,
-photographers, schools, movements, techniques, game-art systems, and original
-presets. Each package can describe its visual signature, process, references,
-provenance, prompt constraints, evaluation rules, and anonymous generated
-examples.
+OhMyStyle 是一个大而全、可移植的视觉风格预设包集合：把艺术家、摄影师、艺术流派、工艺、游戏美术、原创预设与交叉配方整理成可下载、可编译、可交给不同生图模型执行的独立风格包。
 
-The repository is designed for both strong and weak image models. A model may
-interpret the scene, but the package and runtime keep the style requirements,
-references, safety rules, and evaluation steps explicit.
+OhMyStyle is a broad, portable collection of visual-style preset packages. It turns artists, photographers, movements, techniques, game-art directions, original presets, and cross-style recipes into downloadable packages that can be compiled for different image models.
 
-## Overview
+本仓库不提供统一的在线生图服务，也不要求用户把图片上传到本项目。模型算力由用户选择：复制 Prompt 到任意平台、配置自己的 API Key，或使用本地模型与 ComfyUI。
 
-```text
-Style Package
-    ↓
-Preflight task
-    ↓
-Provider-neutral prompt job
-    ↓
-Model / provider adapter
-    ↓
-Generated image
-    ↓
-Mask + deterministic postprocess when required
-    ↓
-Metrics + human review
-```
+The repository is not a hosted image-generation service. Users choose the compute layer: paste the Prompt into any platform, configure their own API key, or run a local model with ComfyUI.
 
-The runtime is not an image model, a training dataset, or a promise of exact
-replication of any artist's work. It translates observable visual decisions
-into reusable instructions and makes uncertainty visible.
+## 快速使用 / Quick use
 
-## Core resource architecture
+1. 在下面的大分类中找到一个小风格包。
+2. 点击代表性图片或“打开 README”。
+3. 下载该包，选择 Prompt-only、API 或本地模型方式。
+4. 只把包内的风格约束用于你的新主题，不复制参考作品的具体构图、人物、文字或标志。
 
-The repository's primary asset is an evidence-backed visual-style resource,
-not a standalone prompt or a subject-specific image. Every structured package
-has a local `resource.yaml` contract that declares its maturity, task
-independence, visual dimensions, canonical artifacts, evidence requirements,
-and reference rights policy. The package's `package.yaml`, visual signature,
-reproduction rules, prompts, references, provenance, evaluation, and examples
-remain the implementation artifacts.
+1. Find a package in a category below.
+2. Click its representative image or README link.
+3. Download the package and choose Prompt-only, API, or local-model usage.
+4. Apply the package to a new subject; do not copy a reference work's exact composition, people, text, or marks.
 
-Render tasks under [`tasks/`](tasks/) are intentionally separate. A task may
-specify a subject, story, aspect ratio, or measurable constraint; a style
-resource must not require any particular narrative or subject.
+## 使用入口 / User entry points
 
-The registry in [`registry/index.yaml`](registry/index.yaml) is generated from
-the 32 local resource manifests. Maturity is explicit: `L2` means
-reference-backed and executable, `L3` adds an accepted generated example, and
-`L4` is reserved for tested interoperability across providers or adapters.
-This prevents the catalog from claiming that every package has already passed
-the same level of human evaluation.
+### 复制 Prompt / Prompt-only
 
-Read the complete [core resource architecture](docs/RESOURCE-ARCHITECTURE.md)
-and [registry guide](registry/README.md).
+打开包内的 `prompts/base.txt`，或对继承的轻量预设打开 `style.json`，替换变量后复制到目标生图平台。
 
-## Unified visual-style benchmark
+Open `prompts/base.txt`, or `style.json` for an inherited preset, replace its variables, and paste the result into your preferred image model.
 
-The fixed suite in [`tasks/benchmarks/`](tasks/benchmarks/) tests every style
-that opts into benchmark maturity with the same five tasks: portrait,
-still-life, architecture/environment, minimal composition, and fuzzy brief.
-The pilot benchmark is attached to Turner, Vermeer, and RPG Maker Pixel Art.
+### 配置 API Key / Bring your own API key
 
-The benchmark separates eight observable dimensions instead of reporting an
-unexplained “AI rate”: style recognition, object completion, Prompt adherence,
-color fidelity, material correctness, composition stability, AI-trace control,
-and cross-model stability. The first seven are scored per task; cross-model
-stability is calculated only after reports from multiple models and is marked
-as a transparent proxy until human review confirms it.
-
-Compile a provider-neutral five-task run:
+仓库只生成 provider-neutral 任务，不保存密钥：
 
 ```bash
-python tools/run-benchmark.py \
-  style-packages/artists/jmw-turner/benchmark \
-  --model provider-model-name \
-  --profile weak \
-  --output tmp/turner-run.json
+python tools/compile-style.py style-packages/artists/jmw-turner \
+  --subject "雨后的港口" --profile weak --output tmp/turner-job.json
 ```
 
-After generation, attach a structured review file and score it:
+Keep the API key in your local environment or secret manager, then submit the compiled job through your chosen provider adapter.
 
-```bash
-copy tasks/benchmarks/score-template.yaml tmp/turner-scores.yaml
-python tools/score-benchmark.py \
-  tmp/turner-run.json \
-  tmp/turner-scores.yaml \
-  --output tmp/turner-report.json
-```
+### 本地模型 + ComfyUI / Local model + ComfyUI
 
-Aggregate reports from at least two models:
+下载风格包的 Prompt、参考图清单、调色板和 reproduction 约束，导入本地工作流。仓库不捆绑模型权重，图片默认留在用户本机。
 
-```bash
-python tools/aggregate-benchmark.py \
-  tmp/turner-model-a-report.json \
-  tmp/turner-model-b-report.json \
-  --output tmp/turner-cross-model.json
-```
+Download the package Prompt, reference manifest, palette, and reproduction constraints into a local workflow. Model weights are not bundled, and generated images can remain on the user's machine.
 
-`L4` is reserved for a package with a validated benchmark artifact and
-cross-provider evidence. The tooling never claims that a single detector can
-objectively measure “AI-ness”; it records concrete artifact categories such as
-anatomy, geometry, lighting, material, typography, repetition, texture, and
-composition.
+## 风格包画廊 / Style package gallery
 
-## Getting Started
+每个小单元统一为：**上方代表图 → 中间名称 → 下方 README 链接**。代表图是包内生成示例或继承预设的预览图，不自动等同于参考原作。
 
-### Installation
+Each unit follows one layout: **representative image → package name → README link**. A representative image is a generated example or inherited preview; it is not automatically the referenced artwork.
 
-Install the local validation and runtime dependencies:
-
-```bash
-git clone https://github.com/ZhouYinLong-lab/OhMyStyle.git
-cd OhMyStyle
-python -m pip install -r requirements-dev.txt
-```
-
-Compile a package into a provider-neutral job:
-
-```bash
-python tools/compile-style.py \
-  style-packages/schools/new-topographics \
-  --subject "a quiet coastal public pool after summer" \
-  --profile weak \
-  --var LOCATION="a small coastal town" \
-  --var BACKGROUND_ELEMENTS="closed pool equipment and empty deck chairs" \
-  --output tmp/new-topographics-job.json
-```
-
-For a strict task, run preflight before generation:
-
-```bash
-python tools/preflight-render.py tasks/same-luminance-portrait.yaml
-```
-
-The complete workflow is documented in [Executable Style Package
-Workflow](docs/EXECUTABLE-WORKFLOW.md). Automatic semantic-mask adapters and
-safe color segmentation are documented in [Mask
-Adapters](docs/MASK-ADAPTERS.md).
-
-## Cross-style composites
-
-OhMyStyle keeps each artist, photographer, movement, technique, game-art
-direction, and preset as an independent executable package. When a prompt
-needs more than one style dimension, use a data-only recipe under
-[`style-packages/composites/`](style-packages/composites/). The recipe points
-to existing packages and adds the relationship between them; it does not
-copy their text or reference assets.
-
-Three modes are supported:
-
-- `stack`: assign different bases to different roles, such as `medium`,
-  `lighting`, `composition`, or `texture`. Each role stays authoritative in
-  its own dimension.
-- `blend`: combine compatible bases within a shared dimension using normalized
-  `weight` values. This is appropriate for two palette or lighting signatures.
-- `contrast`: assign bases to explicit `zone` values such as `foreground` and
-  `background`, preventing medium, surface, or palette rules from leaking
-  across the whole image.
-
-If the user does not choose a mode, the compiler infers it from the recipe and
-brief: multiple zones select `contrast`; repeated roles or blend hints select
-`blend`; otherwise it selects `stack` (or `auto.default_mode` when provided).
-The inference is generic and does not contain branches for any particular
-artist, photographer, game, palette, or prompt case.
-
-```mermaid
-flowchart TD
-    A[User brief] --> B{Mode specified?}
-    B -->|stack / blend / contrast| C[Use explicit mode]
-    B -->|omitted| D[Infer from zones roles hints]
-    C --> E[Load referenced base packages]
-    D --> E
-    E --> F[Check capabilities and conflicts]
-    F -->|fail| G[Stop and report resolution needed]
-    F -->|warn or resolve| H[Compile each base prompt]
-    H --> I{Selected mode}
-    I -->|stack| J[Role-separated layering]
-    I -->|blend| K[Weighted same-dimension merge]
-    I -->|contrast| L[Zone-bounded style assignment]
-    J --> M[Provider-neutral composite job]
-    K --> M
-    L --> M
-```
-
-Example recipes:
-
-```bash
-python tools/compile-composite.py \
-  style-packages/composites/rpg-maker-x-turner \
-  --subject "a small harbor at dawn" \
-  --profile weak
-
-python tools/compile-composite.py \
-  style-packages/composites/vermeer-x-monet \
-  --subject "a vase beside a rain-streaked window" \
-  --profile weak
-
-python tools/compile-composite.py \
-  style-packages/composites/rpg-maker-x-gauguin \
-  --subject "a village path with a foreground character" \
-  --profile weak
-```
-
-Validate all composite recipes and their referenced packages with:
-
-```bash
-python tools/validate-composite.py style-packages/composites
-```
-
-The recipe fields are intentionally explicit: `bases[].package`, `role`,
-`weight`, `zone`, `capabilities`, and `incompatibilities` define composition;
-`overrides` and `constraints` define the final authority; `conflicts.policy`
-chooses whether a declared conflict fails, warns, or records a resolution.
-See [the composite recipe guide](style-packages/composites/README.md) and the
-[composite schema](schema/composite.schema.json) for the complete contract.
-
-## Executable style package gallery
-
-These are the current structured packages. The linked `anonymous-v1.png`
-files are generated demonstrations of package behavior, not source artworks.
-Reference manifests record provenance and rights status separately.
-
-### Artists
-
-| Preview | Package | Focus |
-| --- | --- | --- |
-| <img src="style-packages/artists/anna-ancher/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Anna Ancher package example"> | [Anna Ancher](style-packages/artists/anna-ancher/) | Northern daylight, domestic interiors, working figures, restrained color planes |
-| <img src="style-packages/artists/claude-monet/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Claude Monet package example"> | [Claude Monet](style-packages/artists/claude-monet/) | Transient outdoor light, broken adjacent color, weather, soft distant edges |
-| <img src="style-packages/artists/edvard-munch/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Edvard Munch package example"> | [Edvard Munch](style-packages/artists/edvard-munch/) | Emotional color, compressed space, undulating contour, psychological atmosphere |
-| <img src="style-packages/artists/jmw-turner/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous J. M. W. Turner package example"> | [J. M. W. Turner](style-packages/artists/jmw-turner/) | Dissolving weather, luminous atmosphere, diagonal motion, lost-and-found edges |
-| <img src="style-packages/artists/johannes-vermeer/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Johannes Vermeer package example"> | [Johannes Vermeer](style-packages/artists/johannes-vermeer/) | Controlled side light, quiet geometry, domestic action, material transitions |
-| <img src="style-packages/artists/paul-cezanne/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Paul Cézanne package example"> | [Paul Cézanne](style-packages/artists/paul-cezanne/) | Constructive color planes, multiple-viewpoint tension, structural brush marks |
-| <img src="style-packages/artists/rembrandt/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Rembrandt package example"> | [Rembrandt](style-packages/artists/rembrandt/) | Warm dark ground, selective illumination, open shadow, tactile material focus |
-| <img src="style-packages/artists/vincent-van-gogh/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Vincent van Gogh package example"> | [Vincent van Gogh](style-packages/artists/vincent-van-gogh/) | Directional impasto, complementary color pressure, expressive contour rhythm |
-| <img src="style-packages/artists/wassily-kandinsky/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Wassily Kandinsky package example"> | [Wassily Kandinsky](style-packages/artists/wassily-kandinsky/) | Abstract geometry, line rhythm, color weight, asymmetrical painted balance |
-| <img src="style-packages/artists/diego-velazquez/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Diego Velázquez package example"> | [Diego Velázquez](style-packages/artists/diego-velazquez/) | Selective baroque light, dark architectural field, social gaze, lost edges |
-| <img src="style-packages/artists/georges-seurat/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Georges Seurat package example"> | [Georges Seurat](style-packages/artists/georges-seurat/) | Optical color units, measured silhouettes, horizontal bands, still public rhythm |
-| <img src="style-packages/artists/paul-gauguin/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Paul Gauguin package example"> | [Paul Gauguin](style-packages/artists/paul-gauguin/) | Symbolic color fields, dark contour, compressed layers, decorative flatness |
-
-### Photographers
-
-| Preview | Package | Focus |
-| --- | --- | --- |
-| <img src="style-packages/photographers/masahisa-fukase/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Masahisa Fukase package example"> | [Masahisa Fukase](style-packages/photographers/masahisa-fukase/) | Serial observation, intimacy, recurring motifs, psychological distance |
-| <img src="style-packages/photographers/alfred-stieglitz/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Alfred Stieglitz package example"> | [Alfred Stieglitz](style-packages/photographers/alfred-stieglitz/) | Authored geometry, layered planes, crop, weather, photogravure tonal structure |
-| <img src="style-packages/photographers/eadweard-muybridge/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Eadweard Muybridge package example"> | [Eadweard Muybridge](style-packages/photographers/eadweard-muybridge/) | Fixed camera, sequential phases, measurement grid, motion as evidence |
-| <img src="style-packages/photographers/eugene-atget/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Eugène Atget package example"> | [Eugène Atget](style-packages/photographers/eugene-atget/) | Neutral urban record, frontal space, quiet absence, archival tonal restraint |
-| <img src="style-packages/photographers/julia-margaret-cameron/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Julia Margaret Cameron package example"> | [Julia Margaret Cameron](style-packages/photographers/julia-margaret-cameron/) | Soft wet-plate focus, intimate pose, tonal atmosphere, expressive face |
-| <img src="style-packages/photographers/lewis-hine/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Lewis Hine package example"> | [Lewis Hine](style-packages/photographers/lewis-hine/) | Social evidence, direct context, human-machine scale, dignified observation |
-| <img src="style-packages/photographers/nadar/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Nadar package example"> | [Nadar](style-packages/photographers/nadar/) | Sculptural studio pose, plain ground, soft directional light, early print tone |
-| <img src="style-packages/photographers/roger-fenton/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Roger Fenton package example"> | [Roger Fenton](style-packages/photographers/roger-fenton/) | Restrained field documentary, aftermath evidence, deliberate terrain composition |
-| <img src="style-packages/photographers/etienne-jules-marey/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Étienne-Jules Marey package example"> | [Étienne-Jules Marey](style-packages/photographers/etienne-jules-marey/) | Chronophotographic sequence, analytical traces, fixed ground, motion as evidence |
-
-### Movements and schools
-
-| Preview | Package | Focus |
-| --- | --- | --- |
-| <img src="style-packages/movements/greek-geometric-period/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Greek Geometric package example"> | [Greek Geometric Period](style-packages/movements/greek-geometric-period/) | Registers, angular signs, terracotta, repeated motifs |
-| <img src="style-packages/movements/greek-archaic-period/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Greek Archaic package example"> | [Greek Archaic Period](style-packages/movements/greek-archaic-period/) | Contour narrative, ceramic fields, patterned naturalism |
-| <img src="style-packages/movements/greek-classical-period/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Greek Classical package example"> | [Greek Classical Period](style-packages/movements/greek-classical-period/) | Proportion, balance, measured weight shift, lucid space |
-| <img src="style-packages/movements/greek-hellenistic-period/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Greek Hellenistic package example"> | [Greek Hellenistic Period](style-packages/movements/greek-hellenistic-period/) | Torsion, diagonal force, pathos, varied bodies |
-| <img src="style-packages/movements/italian-high-renaissance-raphaelesque/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Italian High Renaissance package example"> | [Italian High Renaissance](style-packages/movements/italian-high-renaissance-raphaelesque/) | Drawing, proportion, clear space, calm narrative action |
-| <img src="style-packages/movements/neue-sachlichkeit/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Neue Sachlichkeit package example"> | [Neue Sachlichkeit](style-packages/movements/neue-sachlichkeit/) | Matter-of-fact realism, social typology, precise surfaces |
-| <img src="style-packages/schools/new-topographics/examples/generated/anonymous-v1.png" width="180" alt="Anonymous New Topographics package example"> | [New Topographics](style-packages/schools/new-topographics/) | Human-altered terrain, neutral description, documentary order |
-
-### Techniques
-
-| Preview | Package | Focus |
-| --- | --- | --- |
-| <img src="style-packages/techniques/gum-bichromate/examples/generated/anonymous-v1.png" width="180" alt="Anonymous gum bichromate package example"> | [Gum Bichromate](style-packages/techniques/gum-bichromate/) | Pigment, paper, contact exposure, layered hand control |
-
-### Game art
-
-| Preview | Package | Focus |
-| --- | --- | --- |
-| <img src="style-packages/game-art/zx-spectrum-attribute-pixel/examples/generated/anonymous-v1.png" width="180" alt="Anonymous ZX Spectrum package example"> | [ZX Spectrum Attribute Pixel Art](style-packages/game-art/zx-spectrum-attribute-pixel/) | 256×192 raster, 8×8 attribute cells, compact palette, color clash |
-| <img src="style-packages/game-art/rpg-maker-pixel-art/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous RPG Maker Pixel Art package example"> | [RPG Maker Pixel Art](style-packages/game-art/rpg-maker-pixel-art/) | Tile-based 2D scenes, compact sprites, nearest-neighbor edges, layered environments, warm-cool lighting |
-
-### Original presets
-
-| Preview | Package | Focus |
-| --- | --- | --- |
-| <img src="styles/quiet-documentary/preview-16x9.jpg" width="180" alt="Quiet Documentary preset preview"> | [Quiet Documentary](styles/quiet-documentary/) | Independent available-light photography preset |
-| — | [High-Chroma Color Pairing](style-packages/presets/high-chroma-color-pairing/) | Subject-neutral color-pair system with area-ratio and luminance checks |
-
-## Reference, provenance, and rights
-
-Reference images are not automatically treated as style templates or training
-assets. A package must state the role of each reference and record its source,
-license, attribution, and usage boundary in its manifest or provenance file.
-
-The repository prefers:
-
-- link-only references when redistribution rights are not established;
-- anonymous generated examples for demonstrating package behavior;
-- observable visual descriptions instead of copying a named work's exact
-  composition, characters, text, or signature;
-- explicit separation between historical reference material and new package
-  content.
-
-Do not upload an artwork, screenshot, watermark, platform interface, private
-prompt, brand asset, or source image unless the repository records a valid
-right to redistribute it.
-
-## Legacy style.json catalog
-
-The original `styles/` directory remains available as a separate legacy
-catalog of 110 lightweight `style.json` entries. It is not the same data model
-as the executable packages above.
-
-Browse the legacy catalog by broad direction:
-
-- [Photo and Doodle](docs/CATALOG.md) — snapshots, lifestyle scenes, and hand-drawn overlays
-- [Zine and Collage](docs/CATALOG.md) — editorial, music, and cut-paper systems
-- [Type Posters](docs/CATALOG.md) — headline-led poster compositions
-- [Travel and City](docs/CATALOG.md) — roadside, urban, and destination treatments
-- [Editorial and Minimal](docs/CATALOG.md) — quieter structured layouts
-
-The full descriptions and file links are in [docs/CATALOG.md](docs/CATALOG.md).
-Legacy entries retain their inherited folder structure and licensing scope.
-
-## All Styles
-
-Browse all 110 styles below.
-
-This table is retained as the inherited legacy gallery; it is not a claim that
-OhMyStyle authored every legacy description or preview. The complete legacy
-library and file links are also available in [docs/CATALOG.md](docs/CATALOG.md);
-see [NOTICE](NOTICE) for the applicable attribution and licensing boundaries.
-
-<!-- HTML table used for rich image+link cells -->
+### 艺术家 / Artists
 
 <table>
 <tr>
-<td width="33%" valign="top">
-<a id="cobalt-torn-didone-portrait-editorial-style"></a>
-<a href="styles/cobalt-torn-didone-portrait-editorial-style"><img src="assets/thumbs/cobalt-torn-didone-portrait-editorial-style-16x9.jpg" alt="Cobalt Torn Didone Portrait Editorial preview"></a>
-<p><strong><a href="styles/cobalt-torn-didone-portrait-editorial-style">Cobalt Torn Didone Portrait Editorial</a></strong><br>
-<em>Sparse fashion-editorial posters with a warm paper field, a centered halftone portrait, monumental cobalt Didone type, and an irregular torn-paper reveal.</em><br>
-<a href="styles/cobalt-torn-didone-portrait-editorial-style/style.json">style.json</a> · <a href="docs/copy-prompts/cobalt-torn-didone-portrait-editorial-style.md">prompt</a> · <a href="styles/cobalt-torn-didone-portrait-editorial-style/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/anna-ancher/README.md"><img src="style-packages/artists/anna-ancher/examples/generated/anonymous-v1.png" width="230" alt="Anna Ancher representative image"></a><br>
+<strong>Anna Ancher</strong><br>
+<a href="style-packages/artists/anna-ancher/README.md">打开 README / Open README</a>
 </td>
-<td width="33%" valign="top">
-<a id="foreshortened-gradient-impact-ad-style"></a>
-<a href="styles/foreshortened-gradient-impact-ad-style"><img src="assets/thumbs/foreshortened-gradient-impact-ad-style-16x9.jpg" alt="Foreshortened Gradient Impact Ad Style preview"></a>
-<p><strong><a href="styles/foreshortened-gradient-impact-ad-style">Foreshortened Gradient Impact Ad Style</a></strong><br>
-<em>Kinetic worm's-eye ad posters with a monumental foreground product, a receding figure, giant edge-cropped diagonal neo-grotesk type, and a dark-to-luminous gradient field.</em><br>
-<a href="styles/foreshortened-gradient-impact-ad-style/style.json">style.json</a> · <a href="docs/copy-prompts/foreshortened-gradient-impact-ad-style.md">prompt</a> · <a href="styles/foreshortened-gradient-impact-ad-style/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/claude-monet/README.md"><img src="style-packages/artists/claude-monet/examples/accepted/anonymous-v1.png" width="230" alt="Claude Monet representative image"></a><br>
+<strong>Claude Monet</strong><br>
+<a href="style-packages/artists/claude-monet/README.md">打开 README / Open README</a>
 </td>
-<td width="33%" valign="top">
-<a id="vermilion-photocopy-tension-editorial"></a>
-<a href="styles/vermilion-photocopy-tension-editorial"><img src="assets/thumbs/vermilion-photocopy-tension-editorial-16x9.jpg" alt="Vermilion Photocopy Tension Editorial preview"></a>
-<p><strong><a href="styles/vermilion-photocopy-tension-editorial">Vermilion Photocopy Tension Editorial</a></strong><br>
-<em>Confrontational posters built from one monumentally cropped near-binary photocopy photograph, a vertical condensed headline rail, compact annotations, and a single vermilion ink layer of sharp shards and edge-born organic forms.</em><br>
-<a href="styles/vermilion-photocopy-tension-editorial/style.json">style.json</a> · <a href="docs/copy-prompts/vermilion-photocopy-tension-editorial.md">prompt</a> · <a href="styles/vermilion-photocopy-tension-editorial/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/diego-velazquez/README.md"><img src="style-packages/artists/diego-velazquez/examples/accepted/anonymous-v1.png" width="230" alt="Diego Velázquez representative image"></a><br>
+<strong>Diego Velázquez</strong><br>
+<a href="style-packages/artists/diego-velazquez/README.md">打开 README / Open README</a>
 </td>
 </tr>
 <tr>
-<td width="33%" valign="top">
-<a id="cobalt-xerox-script-editorial-poster-style"></a>
-<a href="styles/cobalt-xerox-script-editorial-poster-style"><img src="assets/thumbs/cobalt-xerox-script-editorial-poster-style-16x9.jpg" alt="Cobalt Xerox Script Editorial Poster preview"></a>
-<p><strong><a href="styles/cobalt-xerox-script-editorial-poster-style">Cobalt Xerox Script Editorial Poster</a></strong><br>
-<em>Compressed cobalt posters where fragmented grotesk headlines, two enormous repeated outline-script words, an ambiguous macro halftone photo, a dark flat Xerox cutout, and dense microcopy collide edge to edge.</em><br>
-<a href="styles/cobalt-xerox-script-editorial-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/cobalt-xerox-script-editorial-poster-style.md">prompt</a> · <a href="styles/cobalt-xerox-script-editorial-poster-style/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/edvard-munch/README.md"><img src="style-packages/artists/edvard-munch/examples/accepted/anonymous-v1.png" width="230" alt="Edvard Munch representative image"></a><br>
+<strong>Edvard Munch</strong><br>
+<a href="style-packages/artists/edvard-munch/README.md">打开 README / Open README</a>
 </td>
-<td width="33%" valign="top">
-<a id="coral-window-megatype-motion-poster-style"></a>
-<a href="styles/coral-window-megatype-motion-poster-style"><img src="assets/thumbs/coral-window-megatype-motion-poster-style-16x9.jpg" alt="Coral Window Megatype Motion Poster preview"></a>
-<p><strong><a href="styles/coral-window-megatype-motion-poster-style">Coral Window Megatype Motion Poster</a></strong><br>
-<em>Tactile motion posters built from a coral-red paper field, one pale-blue photographic window, colossal black condensed type crossing the image boundary, a single action subject, sparse micro labels, and one bold direction symbol.</em><br>
-<a href="styles/coral-window-megatype-motion-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/coral-window-megatype-motion-poster-style.md">prompt</a> · <a href="styles/coral-window-megatype-motion-poster-style/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/georges-seurat/README.md"><img src="style-packages/artists/georges-seurat/examples/accepted/anonymous-v1.png" width="230" alt="Georges Seurat representative image"></a><br>
+<strong>Georges Seurat</strong><br>
+<a href="style-packages/artists/georges-seurat/README.md">打开 README / Open README</a>
 </td>
-<td width="33%" valign="top">
-<a id="cobalt-megatype-roadside-travel-editorial-style"></a>
-<a href="styles/cobalt-megatype-roadside-travel-editorial-style"><img src="assets/thumbs/cobalt-megatype-roadside-travel-editorial-style-16x9.jpg" alt="Cobalt Megatype Roadside Travel Editorial preview"></a>
-<p><strong><a href="styles/cobalt-megatype-roadside-travel-editorial-style">Cobalt Megatype Roadside Travel Editorial</a></strong><br>
-<em>Nostalgic roadside-travel posters combining cropped cobalt megatype, sparse locator graphics, warm straight-on architectural photography, cream uncoated paper, and one loose hand-painted word across the dark foreground.</em><br>
-<a href="styles/cobalt-megatype-roadside-travel-editorial-style/style.json">style.json</a> · <a href="docs/copy-prompts/cobalt-megatype-roadside-travel-editorial-style.md">prompt</a> · <a href="styles/cobalt-megatype-roadside-travel-editorial-style/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/jmw-turner/README.md"><img src="style-packages/artists/jmw-turner/examples/accepted/anonymous-v1.png" width="230" alt="J. M. W. Turner representative image"></a><br>
+<strong>J. M. W. Turner</strong><br>
+<a href="style-packages/artists/jmw-turner/README.md">打开 README / Open README</a>
 </td>
 </tr>
 <tr>
-<td width="33%" valign="top">
-<a id="surreal-megatype-dossier-collage"></a>
-<a href="styles/surreal-megatype-dossier-collage"><img src="assets/thumbs/surreal-megatype-dossier-collage-16x9.jpg" alt="Surreal Megatype Dossier Collage preview"></a>
-<p><strong><a href="styles/surreal-megatype-dossier-collage">Surreal Megatype Dossier Collage</a></strong><br>
-<em>Dense neo-editorial posters layering monumental white typography behind a centered surreal photographic cutout, framed by technical microcopy, ruled panels, celestial symbols, and coarse vintage grain on black.</em><br>
-<a href="styles/surreal-megatype-dossier-collage/style.json">style.json</a> · <a href="docs/copy-prompts/surreal-megatype-dossier-collage.md">prompt</a> · <a href="styles/surreal-megatype-dossier-collage/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/johannes-vermeer/README.md"><img src="style-packages/artists/johannes-vermeer/examples/accepted/anonymous-v1.png" width="230" alt="Johannes Vermeer representative image"></a><br>
+<strong>Johannes Vermeer</strong><br>
+<a href="style-packages/artists/johannes-vermeer/README.md">打开 README / Open README</a>
 </td>
-<td width="33%" valign="top">
-<a id="urban-photo-ink-beast-collage-style"></a>
-<a href="styles/urban-photo-ink-beast-collage-style"><img src="assets/thumbs/urban-photo-ink-beast-collage-style-16x9.jpg" alt="Urban Photo Ink Beast Collage Style preview"></a>
-<p><strong><a href="styles/urban-photo-ink-beast-collage-style">Urban Photo Ink Beast Collage Style</a></strong><br>
-<em>Surreal collage posters layering monumental flat-ink beasts and tiny figures over faded archival city photography, with cut-paper masses, hand-drawn contours, and sparse bright accents.</em><br>
-<a href="styles/urban-photo-ink-beast-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/urban-photo-ink-beast-collage-style.md">prompt</a> · <a href="styles/urban-photo-ink-beast-collage-style/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/paul-cezanne/README.md"><img src="style-packages/artists/paul-cezanne/examples/accepted/anonymous-v1.png" width="230" alt="Paul Cézanne representative image"></a><br>
+<strong>Paul Cézanne</strong><br>
+<a href="style-packages/artists/paul-cezanne/README.md">打开 README / Open README</a>
 </td>
-<td width="33%" valign="top">
-<a id="prismatic-glass-animal-weekend-editorial"></a>
-<a href="styles/prismatic-glass-animal-weekend-editorial"><img src="assets/thumbs/prismatic-glass-animal-weekend-editorial-16x9.jpg" alt="Prismatic Glass Animal Weekend Editorial preview"></a>
-<p><strong><a href="styles/prismatic-glass-animal-weekend-editorial">Prismatic Glass Animal Weekend Editorial</a></strong><br>
-<em>Sparse black posters built around one oversized translucent glass animal with smoky depth, liquid-chrome edges, rainbow refractions, and futuristic micro-editorial weekend copy.</em><br>
-<a href="styles/prismatic-glass-animal-weekend-editorial/style.json">style.json</a> · <a href="docs/copy-prompts/prismatic-glass-animal-weekend-editorial.md">prompt</a> · <a href="styles/prismatic-glass-animal-weekend-editorial/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/paul-gauguin/README.md"><img src="style-packages/artists/paul-gauguin/examples/accepted/anonymous-v1.png" width="230" alt="Paul Gauguin representative image"></a><br>
+<strong>Paul Gauguin</strong><br>
+<a href="style-packages/artists/paul-gauguin/README.md">打开 README / Open README</a>
 </td>
 </tr>
 <tr>
-<td width="33%" valign="top">
-<a id="sun-faded-scenic-editorial-poster"></a>
-<a href="styles/sun-faded-scenic-editorial-poster"><img src="assets/thumbs/sun-faded-scenic-editorial-poster-16x9.jpg" alt="Sun-Faded Scenic Editorial Poster preview"></a>
-<p><strong><a href="styles/sun-faded-scenic-editorial-poster">Sun-Faded Scenic Editorial Poster</a></strong><br>
-<em>Nostalgic scenic travel posters with enormous warm-ivory condensed headlines, a flowing tangerine script accent, tiny magazine microcopy, and sun-faded analog film grain.</em><br>
-<a href="styles/sun-faded-scenic-editorial-poster/style.json">style.json</a> · <a href="docs/copy-prompts/sun-faded-scenic-editorial-poster.md">prompt</a> · <a href="styles/sun-faded-scenic-editorial-poster/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="cyan-grain-macro-megatype-poster-style"></a>
-<a href="styles/cyan-grain-macro-megatype-poster-style"><img src="assets/thumbs/cyan-grain-macro-megatype-poster-style-16x9.jpg" alt="Cyan Grain Macro Megatype Poster preview"></a>
-<p><strong><a href="styles/cyan-grain-macro-megatype-poster-style">Cyan Grain Macro Megatype Poster</a></strong><br>
-<em>Sparse experimental posters built from one radically enlarged macro photograph, a saturated cyan field, monumental interlocking white letterforms, and tactile analog print grain.</em><br>
-<a href="styles/cyan-grain-macro-megatype-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/cyan-grain-macro-megatype-poster-style.md">prompt</a> · <a href="styles/cyan-grain-macro-megatype-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="retro-future-chrome-portrait-dossier"></a>
-<a href="styles/retro-future-chrome-portrait-dossier"><img src="assets/thumbs/retro-future-chrome-portrait-dossier-16x9.jpg" alt="Retro Future Chrome Portrait Dossier preview"></a>
-<p><strong><a href="styles/retro-future-chrome-portrait-dossier">Retro Future Chrome Portrait Dossier</a></strong><br>
-<em>Retro-futurist editorial portrait posters with a technical dossier sidebar, an edge-cropped posterized face, liquid-chrome interruptions, optical diagrams, and coarse halftone print grain.</em><br>
-<a href="styles/retro-future-chrome-portrait-dossier/style.json">style.json</a> · <a href="docs/copy-prompts/retro-future-chrome-portrait-dossier.md">prompt</a> · <a href="styles/retro-future-chrome-portrait-dossier/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="pink-anime-motorcycle-spec-poster-style"></a>
-<a href="styles/pink-anime-motorcycle-spec-poster-style"><img src="assets/thumbs/pink-anime-motorcycle-spec-poster-style-16x9.jpg" alt="Pink Anime Motorcycle Spec Poster Style preview"></a>
-<p><strong><a href="styles/pink-anime-motorcycle-spec-poster-style">Pink Anime Motorcycle Spec Poster Style</a></strong><br>
-<em>Anime motorsport dossier posters pairing an original rider with a hero motorcycle, oversized italic model codes, a cream-and-magenta editorial grid, and a compact spec card.</em><br>
-<a href="styles/pink-anime-motorcycle-spec-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/pink-anime-motorcycle-spec-poster-style.md">prompt</a> · <a href="styles/pink-anime-motorcycle-spec-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="xerox-neon-editorial-collage-style"></a>
-<a href="styles/xerox-neon-editorial-collage-style"><img src="assets/thumbs/xerox-neon-editorial-collage-style-16x9.jpg" alt="Xerox Neon Editorial Collage preview"></a>
-<p><strong><a href="styles/xerox-neon-editorial-collage-style">Xerox Neon Editorial Collage</a></strong><br>
-<em>Photocopied editorial collage posters with a distressed black headline, a halftone photo cutout, cyan-green misregistration, fluorescent paint swashes, and marker scribbles.</em><br>
-<a href="styles/xerox-neon-editorial-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/xerox-neon-editorial-collage-style.md">prompt</a> · <a href="styles/xerox-neon-editorial-collage-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="crimson-ink-manga-dossier"></a>
-<a href="styles/crimson-ink-manga-dossier"><img src="assets/thumbs/crimson-ink-manga-dossier-16x9.jpg" alt="Crimson Ink Manga Dossier preview"></a>
-<p><strong><a href="styles/crimson-ink-manga-dossier">Crimson Ink Manga Dossier</a></strong><br>
-<em>High-density manga dossier posters with a foreshortened hero, distressed condensed headlines, newspaper sidebars, and a crimson-black-paper palette.</em><br>
-<a href="styles/crimson-ink-manga-dossier/style.json">style.json</a> · <a href="docs/copy-prompts/crimson-ink-manga-dossier.md">prompt</a> · <a href="styles/crimson-ink-manga-dossier/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="lime-loop-megatype-action-poster-style"></a>
-<a href="styles/lime-loop-megatype-action-poster-style"><img src="assets/thumbs/lime-loop-megatype-action-poster-style-16x9.jpg" alt="Lime Loop Megatype Action Poster preview"></a>
-<p><strong><a href="styles/lime-loop-megatype-action-poster-style">Lime Loop Megatype Action Poster</a></strong><br>
-<em>Studio action posters with an overhead subject, stacked dark-green megatype, a fluorescent-lime motion loop, and clean white space.</em><br>
-<a href="styles/lime-loop-megatype-action-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/lime-loop-megatype-action-poster-style.md">prompt</a> · <a href="styles/lime-loop-megatype-action-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="yellow-graffiti-fisheye-manga-street-poster-style"></a>
-<a href="styles/yellow-graffiti-fisheye-manga-street-poster-style"><img src="assets/thumbs/yellow-graffiti-fisheye-manga-street-poster-style-16x9.jpg" alt="Yellow Graffiti Fisheye Manga Street Poster Style preview"></a>
-<p><strong><a href="styles/yellow-graffiti-fisheye-manga-street-poster-style">Yellow Graffiti Fisheye Manga Street Poster Style</a></strong><br>
-<em>Fisheye street posters mixing manga ink cutouts, sprayed yellow graffiti type, pavement tag texture, and anxious character energy.</em><br>
-<a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/yellow-graffiti-fisheye-manga-street-poster-style.md">prompt</a> · <a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="red-yellow-product-trophy-collage-style"></a>
-<a href="styles/red-yellow-product-trophy-collage-style"><img src="assets/thumbs/red-yellow-product-trophy-collage-style-16x9.jpg" alt="Red Yellow Product Trophy Collage Style preview"></a>
-<p><strong><a href="styles/red-yellow-product-trophy-collage-style">Red Yellow Product Trophy Collage Style</a></strong><br>
-<em>Fast-food billboard collages with red-and-yellow blocks, glossy cutout products, and a trophy silhouette built from product objects.</em><br>
-<a href="styles/red-yellow-product-trophy-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/red-yellow-product-trophy-collage-style.md">prompt</a> · <a href="styles/red-yellow-product-trophy-collage-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="manga-dossier-blueprint-poster"></a>
-<a href="styles/manga-dossier-blueprint-poster"><img src="assets/thumbs/manga-dossier-blueprint-poster-16x9.jpg" alt="Manga Dossier Blueprint Poster preview"></a>
-<p><strong><a href="styles/manga-dossier-blueprint-poster">Manga Dossier Blueprint Poster</a></strong><br>
-<em>Manga dossier posters with cream margins, grayscale ink portraits, cobalt-blue technical panels, and editorial annotation rails.</em><br>
-<a href="styles/manga-dossier-blueprint-poster/style.json">style.json</a> · <a href="docs/copy-prompts/manga-dossier-blueprint-poster.md">prompt</a> · <a href="styles/manga-dossier-blueprint-poster/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="red-black-manga-tabloid-poster-style"></a>
-<a href="styles/red-black-manga-tabloid-poster-style"><img src="assets/thumbs/red-black-manga-tabloid-poster-style-16x9.jpg" alt="Red Black Manga Tabloid Poster Style preview"></a>
-<p><strong><a href="styles/red-black-manga-tabloid-poster-style">Red Black Manga Tabloid Poster Style</a></strong><br>
-<em>Dense red-black manga tabloids with cropped ink characters, editorial metadata blocks, halftone shading, and photocopy paper texture.</em><br>
-<a href="styles/red-black-manga-tabloid-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/red-black-manga-tabloid-poster-style.md">prompt</a> · <a href="styles/red-black-manga-tabloid-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="ice-cyan-megatype-action-poster-style"></a>
-<a href="styles/ice-cyan-megatype-action-poster-style"><img src="assets/thumbs/ice-cyan-megatype-action-poster-style-16x9.jpg" alt="Ice Cyan Megatype Action Poster Style preview"></a>
-<p><strong><a href="styles/ice-cyan-megatype-action-poster-style">Ice Cyan Megatype Action Poster Style</a></strong><br>
-<em>Ice-white action posters with oversized cyan megatype, ghost text layers, a cutout action photo, and chartreuse motion blur.</em><br>
-<a href="styles/ice-cyan-megatype-action-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/ice-cyan-megatype-action-poster-style.md">prompt</a> · <a href="styles/ice-cyan-megatype-action-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="scarlet-megatype-action-collage-style"></a>
-<a href="styles/scarlet-megatype-action-collage-style"><img src="assets/thumbs/scarlet-megatype-action-collage-style-16x9.jpg" alt="Scarlet Megatype Action Collage Style preview"></a>
-<p><strong><a href="styles/scarlet-megatype-action-collage-style">Scarlet Megatype Action Collage Style</a></strong><br>
-<em>Scarlet action key-art with diagonal block megatype, layered cutout subjects, hard graphic shadows, and controlled print grain.</em><br>
-<a href="styles/scarlet-megatype-action-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/scarlet-megatype-action-collage-style.md">prompt</a> · <a href="styles/scarlet-megatype-action-collage-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="jagged-red-street-photo-event-poster-style"></a>
-<a href="styles/jagged-red-street-photo-event-poster-style"><img src="assets/thumbs/jagged-red-street-photo-event-poster-style-16x9.jpg" alt="Jagged Red Street Photo Event Poster Style preview"></a>
-<p><strong><a href="styles/jagged-red-street-photo-event-poster-style">Jagged Red Street Photo Event Poster Style</a></strong><br>
-<em>High-impact street posters with black-and-white photo cores, jagged red-and-black display type, thick white gutters, and three-color print energy.</em><br>
-<a href="styles/jagged-red-street-photo-event-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/jagged-red-street-photo-event-poster-style.md">prompt</a> · <a href="styles/jagged-red-street-photo-event-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="neon-stadium-3d-hero-type-poster-style"></a>
-<a href="styles/neon-stadium-3d-hero-type-poster-style"><img src="assets/thumbs/neon-stadium-3d-hero-type-poster-style-16x9.jpg" alt="Neon Stadium 3D Hero Type Poster Style preview"></a>
-<p><strong><a href="styles/neon-stadium-3d-hero-type-poster-style">Neon Stadium 3D Hero Type Poster Style</a></strong><br>
-<em>Hyper-saturated 3D stadium posters with toy-like heroes, cropped condensed type, lime-and-purple fields, and motion-blurred debris.</em><br>
-<a href="styles/neon-stadium-3d-hero-type-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/neon-stadium-3d-hero-type-poster-style.md">prompt</a> · <a href="styles/neon-stadium-3d-hero-type-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="dusk-cyan-layered-type-poster-style"></a>
-<a href="styles/dusk-cyan-layered-type-poster-style"><img src="assets/thumbs/dusk-cyan-layered-type-poster-style-16x9.jpg" alt="Dusk Cyan Layered Type Poster Style preview"></a>
-<p><strong><a href="styles/dusk-cyan-layered-type-poster-style">Dusk Cyan Layered Type Poster Style</a></strong><br>
-<em>Full-bleed dusk photo posters with navy silhouettes, oversized cyan-and-white type, script swashes, and crisp vector icons.</em><br>
-<a href="styles/dusk-cyan-layered-type-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/dusk-cyan-layered-type-poster-style.md">prompt</a> · <a href="styles/dusk-cyan-layered-type-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="electric-blue-cutout-manga-poster-style"></a>
-<a href="styles/electric-blue-cutout-manga-poster-style"><img src="assets/thumbs/electric-blue-cutout-manga-poster-style-16x9.jpg" alt="Electric Blue Cutout Manga Poster Style preview"></a>
-<p><strong><a href="styles/electric-blue-cutout-manga-poster-style">Electric Blue Cutout Manga Poster Style</a></strong><br>
-<em>Electric-blue manga posters with white cutout geometry, rounded modular type, orange microtype, and a cel-shaded subject in exaggerated perspective.</em><br>
-<a href="styles/electric-blue-cutout-manga-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/electric-blue-cutout-manga-poster-style.md">prompt</a> · <a href="styles/electric-blue-cutout-manga-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="y2k-streetwear-sticker-collage-style"></a>
-<a href="styles/y2k-streetwear-sticker-collage-style"><img src="assets/thumbs/y2k-streetwear-sticker-collage-style-16x9.jpg" alt="Y2K Streetwear Sticker Collage Style preview"></a>
-<p><strong><a href="styles/y2k-streetwear-sticker-collage-style">Y2K Streetwear Sticker Collage Style</a></strong><br>
-<em>Dense Y2K street collages with cutout subjects, sticker props, comic typography, and saturated yellow-blue-green accents.</em><br>
-<a href="styles/y2k-streetwear-sticker-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/y2k-streetwear-sticker-collage-style.md">prompt</a> · <a href="styles/y2k-streetwear-sticker-collage-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="cream-smoke-city-manga-poster-style"></a>
-<a href="styles/cream-smoke-city-manga-poster-style"><img src="assets/thumbs/cream-smoke-city-manga-poster-style-16x9.jpg" alt="Cream Smoke City Manga Poster Style preview"></a>
-<p><strong><a href="styles/cream-smoke-city-manga-poster-style">Cream Smoke City Manga Poster Style</a></strong><br>
-<em>Manga ink city scenes with cream cloud masses, sparse teal frames, peach accents, and precise miniature urban architecture.</em><br>
-<a href="styles/cream-smoke-city-manga-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/cream-smoke-city-manga-poster-style.md">prompt</a> · <a href="styles/cream-smoke-city-manga-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="red-yellow-grunge-skate-cover-style"></a>
-<a href="styles/red-yellow-grunge-skate-cover-style"><img src="assets/thumbs/red-yellow-grunge-skate-cover-style-16x9.jpg" alt="Red Yellow Grunge Skate Cover Style preview"></a>
-<p><strong><a href="styles/red-yellow-grunge-skate-cover-style">Red Yellow Grunge Skate Cover Style</a></strong><br>
-<em>Raw red-and-yellow action-culture covers with flash-lit cutouts, warped headline type, boxed callouts, and analog print grit.</em><br>
-<a href="styles/red-yellow-grunge-skate-cover-style/style.json">style.json</a> · <a href="docs/copy-prompts/red-yellow-grunge-skate-cover-style.md">prompt</a> · <a href="styles/red-yellow-grunge-skate-cover-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="monochrome-xerox-sports-dossier"></a>
-<a href="styles/monochrome-xerox-sports-dossier"><img src="assets/thumbs/monochrome-xerox-sports-dossier-16x9.jpg" alt="Monochrome Xerox Sports Dossier preview"></a>
-<p><strong><a href="styles/monochrome-xerox-sports-dossier">Monochrome Xerox Sports Dossier</a></strong><br>
-<em>Black-and-white xerox sports dossiers with cropped subjects, inset photo panels, distressed condensed type, and press-kit grain.</em><br>
-<a href="styles/monochrome-xerox-sports-dossier/style.json">style.json</a> · <a href="docs/copy-prompts/monochrome-xerox-sports-dossier.md">prompt</a> · <a href="styles/monochrome-xerox-sports-dossier/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="liquid-chrome-clearance-poster-style"></a>
-<a href="styles/liquid-chrome-clearance-poster-style"><img src="assets/thumbs/liquid-chrome-clearance-poster-style-16x9.jpg" alt="Liquid Chrome Clearance Poster Style preview"></a>
-<p><strong><a href="styles/liquid-chrome-clearance-poster-style">Liquid Chrome Clearance Poster Style</a></strong><br>
-<em>High-impact clearance posters with glossy liquid-chrome 3D type, acid-lime gradients, sale-interface microcopy, and barcode-style retail panels.</em><br>
-<a href="styles/liquid-chrome-clearance-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/liquid-chrome-clearance-poster-style.md">prompt</a> · <a href="styles/liquid-chrome-clearance-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="hot-ink-comic-poster"></a>
-<a href="styles/hot-ink-comic-poster"><img src="assets/thumbs/hot-ink-comic-poster-16x9.jpg" alt="Hot Ink Comic Poster preview"></a>
-<p><strong><a href="styles/hot-ink-comic-poster">Hot Ink Comic Poster</a></strong><br>
-<em>Loud underground comic flyers with mustard fields, coral cutouts, heavy marker outlines, hand-lettered bubble type, and dense comic symbols.</em><br>
-<a href="styles/hot-ink-comic-poster/style.json">style.json</a> · <a href="docs/copy-prompts/hot-ink-comic-poster.md">prompt</a> · <a href="styles/hot-ink-comic-poster/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="kinetic-editorial-photo-collage-style"></a>
-<a href="styles/kinetic-editorial-photo-collage-style"><img src="assets/thumbs/kinetic-editorial-photo-collage-style-16x9.jpg" alt="Kinetic Editorial Photo Collage preview"></a>
-<p><strong><a href="styles/kinetic-editorial-photo-collage-style">Kinetic Editorial Photo Collage</a></strong><br>
-<em>High-energy action posters built from staggered photo tiles, a cutout motion subject, bold black condensed type, loose ink speed marks, and sparse line-art scaffolding.</em><br>
-<a href="styles/kinetic-editorial-photo-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/kinetic-editorial-photo-collage-style.md">prompt</a> · <a href="styles/kinetic-editorial-photo-collage-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="sunlit-coastal-product-blitz"></a>
-<a href="styles/sunlit-coastal-product-blitz"><img src="assets/thumbs/sunlit-coastal-product-blitz-16x9.jpg" alt="Sunlit Coastal Product Blitz preview"></a>
-<p><strong><a href="styles/sunlit-coastal-product-blitz">Sunlit Coastal Product Blitz</a></strong><br>
-<em>Sunlit photoreal coastal product ads with tropical botanicals, ocean-blue depth, distressed white brush type, dense label blocks, curved callouts, and gold seal badges.</em><br>
-<a href="styles/sunlit-coastal-product-blitz/style.json">style.json</a> · <a href="docs/copy-prompts/sunlit-coastal-product-blitz.md">prompt</a> · <a href="styles/sunlit-coastal-product-blitz/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="monochrome-grid-sneaker-tech-spec"></a>
-<a href="styles/monochrome-grid-sneaker-tech-spec"><img src="assets/thumbs/monochrome-grid-sneaker-tech-spec-16x9.jpg" alt="Monochrome Grid Sneaker Tech Spec preview"></a>
-<p><strong><a href="styles/monochrome-grid-sneaker-tech-spec">Monochrome Grid Sneaker Tech Spec</a></strong><br>
-<em>Black-and-white footwear tech-spec posters with an oversized sneaker hero, engineering grid, evidence panels, macro callouts, pixelated uppercase type, and coarse halftone print.</em><br>
-<a href="styles/monochrome-grid-sneaker-tech-spec/style.json">style.json</a> · <a href="docs/copy-prompts/monochrome-grid-sneaker-tech-spec.md">prompt</a> · <a href="styles/monochrome-grid-sneaker-tech-spec/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="sky-blue-lucky-tag-doodle-poster-style"></a>
-<a href="styles/sky-blue-lucky-tag-doodle-poster-style"><img src="assets/thumbs/sky-blue-lucky-tag-doodle-poster-style-16x9.jpg" alt="Sky Blue Lucky Tag Doodle Poster Style preview"></a>
-<p><strong><a href="styles/sky-blue-lucky-tag-doodle-poster-style">Sky Blue Lucky Tag Doodle Poster Style</a></strong><br>
-<em>Sky-blue doodle posters with chunky white type, a hanging lucky-tag plaque, thick black outlines, and one big playful mascot.</em><br>
-<a href="styles/sky-blue-lucky-tag-doodle-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/sky-blue-lucky-tag-doodle-poster-style.md">prompt</a> · <a href="styles/sky-blue-lucky-tag-doodle-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="neon-type-photo-scribble-poster"></a>
-<a href="styles/neon-type-photo-scribble-poster"><img src="assets/thumbs/neon-type-photo-scribble-poster-16x9.jpg" alt="Neon Type Photo Scribble Poster preview"></a>
-<p><strong><a href="styles/neon-type-photo-scribble-poster">Neon Type Photo Scribble Poster</a></strong><br>
-<em>Neon event posters with huge condensed type, documentary photo crops, and raw white scribble gestures.</em><br>
-<a href="styles/neon-type-photo-scribble-poster/style.json">style.json</a> · <a href="docs/copy-prompts/neon-type-photo-scribble-poster.md">prompt</a> · <a href="styles/neon-type-photo-scribble-poster/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="loose-scribble-riso-print-style"></a>
-<a href="styles/loose-scribble-riso-print-style"><img src="assets/thumbs/loose-scribble-riso-print-style-16x9.jpg" alt="Loose Scribble Riso Print Style preview"></a>
-<p><strong><a href="styles/loose-scribble-riso-print-style">Loose Scribble Riso Print Style</a></strong><br>
-<em>Sparse riso posters with wavering contours, overprint accents, handwritten margins, and visible paper grain.</em><br>
-<a href="styles/loose-scribble-riso-print-style/style.json">style.json</a> · <a href="docs/copy-prompts/loose-scribble-riso-print-style.md">prompt</a> · <a href="styles/loose-scribble-riso-print-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="jade-glyph-grocer-collage-poster-style"></a>
-<a href="styles/jade-glyph-grocer-collage-poster-style"><img src="assets/thumbs/jade-glyph-grocer-collage-poster-style-16x9.jpg" alt="Jade Glyph Grocer Collage Poster Style preview"></a>
-<p><strong><a href="styles/jade-glyph-grocer-collage-poster-style">Jade Glyph Grocer Collage Poster Style</a></strong><br>
-<em>Cream grocer posters with jade glyphs, vegetable silhouettes, and glossy produce-photo centerpieces.</em><br>
-<a href="styles/jade-glyph-grocer-collage-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/jade-glyph-grocer-collage-poster-style.md">prompt</a> · <a href="styles/jade-glyph-grocer-collage-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="scarlet-court-photo-type-poster-style"></a>
-<a href="styles/scarlet-court-photo-type-poster-style"><img src="assets/thumbs/scarlet-court-photo-type-poster-style-16x9.jpg" alt="Scarlet Court Photo Type Poster preview"></a>
-<p><strong><a href="styles/scarlet-court-photo-type-poster-style">Scarlet Court Photo Type Poster</a></strong><br>
-<em>Scarlet action posters with blue sports panels, cutout athletes, cream typography, and gritty print texture.</em><br>
-<a href="styles/scarlet-court-photo-type-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/scarlet-court-photo-type-poster-style.md">prompt</a> · <a href="styles/scarlet-court-photo-type-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="sunlit-kinetic-block-type-photo-poster-style"></a>
-<a href="styles/sunlit-kinetic-block-type-photo-poster-style"><img src="assets/thumbs/sunlit-kinetic-block-type-photo-poster-style-16x9.jpg" alt="Sunlit Kinetic Block Type Photo Poster preview"></a>
-<p><strong><a href="styles/sunlit-kinetic-block-type-photo-poster-style">Sunlit Kinetic Block Type Photo Poster</a></strong><br>
-<em>Sunlit sports editorials with oversized cream block type, diagonal photo crops, and bright sky fields.</em><br>
-<a href="styles/sunlit-kinetic-block-type-photo-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/sunlit-kinetic-block-type-photo-poster-style.md">prompt</a> · <a href="styles/sunlit-kinetic-block-type-photo-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="scarlet-block-cutout-doodle-book-cover-style"></a>
-<a href="styles/scarlet-block-cutout-doodle-book-cover-style"><img src="assets/thumbs/scarlet-block-cutout-doodle-book-cover-style-16x9.jpg" alt="Scarlet Block Cutout Doodle Book Cover Style preview"></a>
-<p><strong><a href="styles/scarlet-block-cutout-doodle-book-cover-style">Scarlet Block Cutout Doodle Book Cover Style</a></strong><br>
-<em>Literary white-paper covers with scarlet letterforms, central cutout objects, marker contours, and asymmetrical space.</em><br>
-<a href="styles/scarlet-block-cutout-doodle-book-cover-style/style.json">style.json</a> · <a href="docs/copy-prompts/scarlet-block-cutout-doodle-book-cover-style.md">prompt</a> · <a href="styles/scarlet-block-cutout-doodle-book-cover-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="halftone-assemblage-metaphor-psa-poster-style"></a>
-<a href="styles/halftone-assemblage-metaphor-psa-poster-style"><img src="assets/thumbs/halftone-assemblage-metaphor-psa-poster-style-16x9.jpg" alt="Halftone Assemblage Metaphor PSA Poster Style preview"></a>
-<p><strong><a href="styles/halftone-assemblage-metaphor-psa-poster-style">Halftone Assemblage Metaphor PSA Poster Style</a></strong><br>
-<em>Retro PSA posters where everyday materials form symbolic halftone silhouettes on aged paper.</em><br>
-<a href="styles/halftone-assemblage-metaphor-psa-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/halftone-assemblage-metaphor-psa-poster-style.md">prompt</a> · <a href="styles/halftone-assemblage-metaphor-psa-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="school-grid-paper-cutout-poster"></a>
-<a href="styles/school-grid-paper-cutout-poster"><img src="assets/thumbs/school-grid-paper-cutout-poster-16x9.jpg" alt="School Grid Paper Cutout Poster preview"></a>
-<p><strong><a href="styles/school-grid-paper-cutout-poster">School Grid Paper Cutout Poster</a></strong><br>
-<em>Nostalgic grid-paper posters with torn-paper cutout objects, handwritten notes, and soft shadows.</em><br>
-<a href="styles/school-grid-paper-cutout-poster/style.json">style.json</a> · <a href="docs/copy-prompts/school-grid-paper-cutout-poster.md">prompt</a> · <a href="styles/school-grid-paper-cutout-poster/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="naive-marker-quote-card-style"></a>
-<a href="styles/naive-marker-quote-card-style"><img src="assets/thumbs/naive-marker-quote-card-style-16x9.jpg" alt="Naive Marker Quote Card Style preview"></a>
-<p><strong><a href="styles/naive-marker-quote-card-style">Naive Marker Quote Card Style</a></strong><br>
-<em>Absurd quote-card posters with crude marker outlines, pastel panels, blue lettering, and object gags.</em><br>
-<a href="styles/naive-marker-quote-card-style/style.json">style.json</a> · <a href="docs/copy-prompts/naive-marker-quote-card-style.md">prompt</a> · <a href="styles/naive-marker-quote-card-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="sky-blue-home-life-doodle-poster-style"></a>
-<a href="styles/sky-blue-home-life-doodle-poster-style"><img src="assets/thumbs/sky-blue-home-life-doodle-poster-style-16x9.jpg" alt="Sky Blue Home Life Doodle Poster Style preview"></a>
-<p><strong><a href="styles/sky-blue-home-life-doodle-poster-style">Sky Blue Home Life Doodle Poster Style</a></strong><br>
-<em>Sky-blue home-life posters with house insets, giant black lettering, badges, and marker doodle scenes.</em><br>
-<a href="styles/sky-blue-home-life-doodle-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/sky-blue-home-life-doodle-poster-style.md">prompt</a> · <a href="styles/sky-blue-home-life-doodle-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="playful-marker-grounding-poster-style"></a>
-<a href="styles/playful-marker-grounding-poster-style"><img src="assets/thumbs/playful-marker-grounding-poster-style-16x9.jpg" alt="Playful Marker Grounding Poster Style preview"></a>
-<p><strong><a href="styles/playful-marker-grounding-poster-style">Playful Marker Grounding Poster Style</a></strong><br>
-<em>Playful grounding posters with cream margins, marker blocks, uneven keylines, big lettering, and mascot figures.</em><br>
-<a href="styles/playful-marker-grounding-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/playful-marker-grounding-poster-style.md">prompt</a> · <a href="styles/playful-marker-grounding-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="rough-marker-monster-poster-style"></a>
-<a href="styles/rough-marker-monster-poster-style"><img src="assets/thumbs/rough-marker-monster-poster-style-16x9.jpg" alt="Rough Marker Monster Poster Style preview"></a>
-<p><strong><a href="styles/rough-marker-monster-poster-style">Rough Marker Monster Poster Style</a></strong><br>
-<em>Naive monster posters with thick marker outlines, crayon fills, cream paper, and chunky handmade type.</em><br>
-<a href="styles/rough-marker-monster-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/rough-marker-monster-poster-style.md">prompt</a> · <a href="styles/rough-marker-monster-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="cyan-red-shockwave-type-poster-style"></a>
-<a href="styles/cyan-red-shockwave-type-poster-style"><img src="assets/thumbs/cyan-red-shockwave-type-poster-style-16x9.jpg" alt="Cyan Red Shockwave Type Poster Style preview"></a>
-<p><strong><a href="styles/cyan-red-shockwave-type-poster-style">Cyan Red Shockwave Type Poster Style</a></strong><br>
-<em>Cyan-red impact posters with giant block type, jagged shockwaves, yellow accents, and rotated microcopy.</em><br>
-<a href="styles/cyan-red-shockwave-type-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/cyan-red-shockwave-type-poster-style.md">prompt</a> · <a href="styles/cyan-red-shockwave-type-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="fantasy-scribble-mascot-poster-style"></a>
-<a href="styles/fantasy-scribble-mascot-poster-style"><img src="assets/thumbs/fantasy-scribble-mascot-poster-style-16x9.jpg" alt="Fantasy Scribble Mascot Poster Style preview"></a>
-<p><strong><a href="styles/fantasy-scribble-mascot-poster-style">Fantasy Scribble Mascot Poster Style</a></strong><br>
-<em>Naive fantasy mascot posters with neon marker fills, huge wobbly type, and dense scribbles.</em><br>
-<a href="styles/fantasy-scribble-mascot-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/fantasy-scribble-mascot-poster-style.md">prompt</a> · <a href="styles/fantasy-scribble-mascot-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="crayon-catalog-doodle-poster-style"></a>
-<a href="styles/crayon-catalog-doodle-poster-style"><img src="assets/thumbs/crayon-catalog-doodle-poster-style-16x9.jpg" alt="Crayon Catalog Doodle Poster Style preview"></a>
-<p><strong><a href="styles/crayon-catalog-doodle-poster-style">Crayon Catalog Doodle Poster Style</a></strong><br>
-<em>Sparse crayon catalog posters with red handmade headlines, simple doodles, and folded paper texture.</em><br>
-<a href="styles/crayon-catalog-doodle-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/crayon-catalog-doodle-poster-style.md">prompt</a> · <a href="styles/crayon-catalog-doodle-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="blue-halftone-ransom-zine-poster-style"></a>
-<a href="styles/blue-halftone-ransom-zine-poster-style"><img src="assets/thumbs/blue-halftone-ransom-zine-poster-style-16x9.jpg" alt="Blue Halftone Ransom Zine Poster Style preview"></a>
-<p><strong><a href="styles/blue-halftone-ransom-zine-poster-style">Blue Halftone Ransom Zine Poster Style</a></strong><br>
-<em>Cobalt ransom-zine posters with torn scraps, halftone cutouts, and marker lettering.</em><br>
-<a href="styles/blue-halftone-ransom-zine-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/blue-halftone-ransom-zine-poster-style.md">prompt</a> · <a href="styles/blue-halftone-ransom-zine-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="market-brush-produce-poster-style"></a>
-<a href="styles/market-brush-produce-poster-style"><img src="assets/thumbs/market-brush-produce-poster-style-16x9.jpg" alt="Market Brush Produce Poster Style preview"></a>
-<p><strong><a href="styles/market-brush-produce-poster-style">Market Brush Produce Poster Style</a></strong><br>
-<em>Farmers-market produce posters with giant glossy crops, rough brush type, and ivory paper space.</em><br>
-<a href="styles/market-brush-produce-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/market-brush-produce-poster-style.md">prompt</a> · <a href="styles/market-brush-produce-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="folded-newspaper-product-ad-style"></a>
-<a href="styles/folded-newspaper-product-ad-style"><img src="assets/thumbs/folded-newspaper-product-ad-style-16x9.jpg" alt="Folded Newspaper Product Ad Style preview"></a>
-<p><strong><a href="styles/folded-newspaper-product-ad-style">Folded Newspaper Product Ad Style</a></strong><br>
-<em>Folded newspaper advertorials with oversized product cutouts, dense columns, stamps, and antique-gold type.</em><br>
-<a href="styles/folded-newspaper-product-ad-style/style.json">style.json</a> · <a href="docs/copy-prompts/folded-newspaper-product-ad-style.md">prompt</a> · <a href="styles/folded-newspaper-product-ad-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="sunlit-supermodel-nameplate-editorial"></a>
-<a href="styles/sunlit-supermodel-nameplate-editorial"><img src="assets/thumbs/sunlit-supermodel-nameplate-editorial-16x9.jpg" alt="Sunlit Supermodel Nameplate Editorial preview"></a>
-<p><strong><a href="styles/sunlit-supermodel-nameplate-editorial">Sunlit Supermodel Nameplate Editorial</a></strong><br>
-<em>Sunlit supermodel editorials with outdoor texture, nameplate details, and clean lower-third type.</em><br>
-<a href="styles/sunlit-supermodel-nameplate-editorial/style.json">style.json</a> · <a href="docs/copy-prompts/sunlit-supermodel-nameplate-editorial.md">prompt</a> · <a href="styles/sunlit-supermodel-nameplate-editorial/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="black-cutout-food-card-ad-style"></a>
-<a href="styles/black-cutout-food-card-ad-style"><img src="assets/thumbs/black-cutout-food-card-ad-style-16x9.jpg" alt="Black Cutout Food Card Ad preview"></a>
-<p><strong><a href="styles/black-cutout-food-card-ad-style">Black Cutout Food Card Ad</a></strong><br>
-<em>Black food-card ads with brush lettering, cutout photography, and street-snack print texture.</em><br>
-<a href="styles/black-cutout-food-card-ad-style/style.json">style.json</a> · <a href="docs/copy-prompts/black-cutout-food-card-ad-style.md">prompt</a> · <a href="styles/black-cutout-food-card-ad-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="kinetic-geometric-doodle-cutouts"></a>
-<a href="styles/kinetic-geometric-doodle-cutouts"><img src="assets/thumbs/kinetic-geometric-doodle-cutouts-16x9.jpg" alt="Kinetic Geometric Doodle Cutouts preview"></a>
-<p><strong><a href="styles/kinetic-geometric-doodle-cutouts">Kinetic Geometric Doodle Cutouts</a></strong><br>
-<em>Playful geometric doodle cutouts with flat color pieces, loose lines, and paper grain.</em><br>
-<a href="styles/kinetic-geometric-doodle-cutouts/style.json">style.json</a> · <a href="docs/copy-prompts/kinetic-geometric-doodle-cutouts.md">prompt</a> · <a href="styles/kinetic-geometric-doodle-cutouts/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="quiet-luxury-furniture-nameplate-poster-style"></a>
-<a href="styles/quiet-luxury-furniture-nameplate-poster-style"><img src="assets/thumbs/quiet-luxury-furniture-nameplate-poster-style-16x9.jpg" alt="Quiet Luxury Furniture Nameplate Poster Style preview"></a>
-<p><strong><a href="styles/quiet-luxury-furniture-nameplate-poster-style">Quiet Luxury Furniture Nameplate Poster Style</a></strong><br>
-<em>Quiet luxury furniture nameplates with forest-green type, catalog chips, and warm studio restraint.</em><br>
-<a href="styles/quiet-luxury-furniture-nameplate-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/quiet-luxury-furniture-nameplate-poster-style.md">prompt</a> · <a href="styles/quiet-luxury-furniture-nameplate-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="kinetic-luxury-street-fashion-cover-style"></a>
-<a href="styles/kinetic-luxury-street-fashion-cover-style"><img src="assets/thumbs/kinetic-luxury-street-fashion-cover-style-16x9.jpg" alt="Kinetic Luxury Street Fashion Cover Style preview"></a>
-<p><strong><a href="styles/kinetic-luxury-street-fashion-cover-style">Kinetic Luxury Street Fashion Cover Style</a></strong><br>
-<em>Street-fashion cover editorials with motion-blurred architecture, luxury garments, and wide-spaced serif type.</em><br>
-<a href="styles/kinetic-luxury-street-fashion-cover-style/style.json">style.json</a> · <a href="docs/copy-prompts/kinetic-luxury-street-fashion-cover-style.md">prompt</a> · <a href="styles/kinetic-luxury-street-fashion-cover-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="sunlit-architectural-fashion-editorial"></a>
-<a href="styles/sunlit-architectural-fashion-editorial"><img src="assets/thumbs/sunlit-architectural-fashion-editorial-16x9.jpg" alt="Sunlit Architectural Fashion Editorial preview"></a>
-<p><strong><a href="styles/sunlit-architectural-fashion-editorial">Sunlit Architectural Fashion Editorial</a></strong><br>
-<em>Sunlit fashion editorials with low-angle architecture, warm stone, and elongated silhouettes.</em><br>
-<a href="styles/sunlit-architectural-fashion-editorial/style.json">style.json</a> · <a href="docs/copy-prompts/sunlit-architectural-fashion-editorial.md">prompt</a> · <a href="styles/sunlit-architectural-fashion-editorial/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="multi-color-beverage-splash-ad-system-style"></a>
-<a href="styles/multi-color-beverage-splash-ad-system-style"><img src="assets/thumbs/multi-color-beverage-splash-ad-system-style-16x9.jpg" alt="Multi-Color Beverage Splash Ad System Style preview"></a>
-<p><strong><a href="styles/multi-color-beverage-splash-ad-system-style">Multi-Color Beverage Splash Ad System Style</a></strong><br>
-<em>Color-varied beverage launch ads with giant white 3D type and frozen splash motion.</em><br>
-<a href="styles/multi-color-beverage-splash-ad-system-style/style.json">style.json</a> · <a href="docs/copy-prompts/multi-color-beverage-splash-ad-system-style.md">prompt</a> · <a href="styles/multi-color-beverage-splash-ad-system-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="yellow-black-manga-food-zine-ad-style"></a>
-<a href="styles/yellow-black-manga-food-zine-ad-style"><img src="assets/thumbs/yellow-black-manga-food-zine-ad-style-16x9.jpg" alt="Yellow Black Manga Food Zine Ad Style preview"></a>
-<p><strong><a href="styles/yellow-black-manga-food-zine-ad-style">Yellow Black Manga Food Zine Ad Style</a></strong><br>
-<em>Black-yellow manga food zine ads with warped type and glossy hero objects.</em><br>
-<a href="styles/yellow-black-manga-food-zine-ad-style/style.json">style.json</a> · <a href="docs/copy-prompts/yellow-black-manga-food-zine-ad-style.md">prompt</a> · <a href="styles/yellow-black-manga-food-zine-ad-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="neon-outdoor-diary-longform-collage-style"></a>
-<a href="styles/neon-outdoor-diary-longform-collage-style"><img src="assets/thumbs/neon-outdoor-diary-longform-collage-style-16x9.jpg" alt="Neon Outdoor Diary Longform Collage Style preview"></a>
-<p><strong><a href="styles/neon-outdoor-diary-longform-collage-style">Neon Outdoor Diary Longform Collage Style</a></strong><br>
-<em>Longform outdoor diary collages with acid-green type and torn field-note panels.</em><br>
-<a href="styles/neon-outdoor-diary-longform-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/neon-outdoor-diary-longform-collage-style.md">prompt</a> · <a href="styles/neon-outdoor-diary-longform-collage-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="acid-lime-3d-streetwear-type-poster-style"></a>
-<a href="styles/acid-lime-3d-streetwear-type-poster-style"><img src="assets/thumbs/acid-lime-3d-streetwear-type-poster-style-16x9.jpg" alt="Acid Lime 3D Streetwear Type Poster Style preview"></a>
-<p><strong><a href="styles/acid-lime-3d-streetwear-type-poster-style">Acid Lime 3D Streetwear Type Poster Style</a></strong><br>
-<em>Glossy C4D streetwear campaigns with black block type and acid-lime accents.</em><br>
-<a href="styles/acid-lime-3d-streetwear-type-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/acid-lime-3d-streetwear-type-poster-style.md">prompt</a> · <a href="styles/acid-lime-3d-streetwear-type-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="electric-blue-silhouette-product-launch-style"></a>
-<a href="styles/electric-blue-silhouette-product-launch-style"><img src="assets/thumbs/electric-blue-silhouette-product-launch-style-16x9.jpg" alt="Electric Blue Silhouette Product Launch Style preview"></a>
-<p><strong><a href="styles/electric-blue-silhouette-product-launch-style">Electric Blue Silhouette Product Launch Style</a></strong><br>
-<em>Premium black-and-blue product launches with glowing silhouettes and cropped type.</em><br>
-<a href="styles/electric-blue-silhouette-product-launch-style/style.json">style.json</a> · <a href="docs/copy-prompts/electric-blue-silhouette-product-launch-style.md">prompt</a> · <a href="styles/electric-blue-silhouette-product-launch-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="luxury-perspective-checkerboard-editorial"></a>
-<a href="styles/luxury-perspective-checkerboard-editorial"><img src="assets/thumbs/luxury-perspective-checkerboard-editorial-16x9.jpg" alt="Luxury Perspective Checkerboard Editorial preview"></a>
-<p><strong><a href="styles/luxury-perspective-checkerboard-editorial">Luxury Perspective Checkerboard Editorial</a></strong><br>
-<em>Luxury editorials with checkerboard perspective, script typography, and polished white space.</em><br>
-<a href="styles/luxury-perspective-checkerboard-editorial/style.json">style.json</a> · <a href="docs/copy-prompts/luxury-perspective-checkerboard-editorial.md">prompt</a> · <a href="styles/luxury-perspective-checkerboard-editorial/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="sunny-3d-avatar-campaign-style"></a>
-<a href="styles/sunny-3d-avatar-campaign-style"><img src="assets/thumbs/sunny-3d-avatar-campaign-style-16x9.jpg" alt="Sunny 3D Avatar Campaign Style preview"></a>
-<p><strong><a href="styles/sunny-3d-avatar-campaign-style">Sunny 3D Avatar Campaign Style</a></strong><br>
-<em>Sunny campaign 3D avatars with blue skies, bold type, and neon motion marks.</em><br>
-<a href="styles/sunny-3d-avatar-campaign-style/style.json">style.json</a> · <a href="docs/copy-prompts/sunny-3d-avatar-campaign-style.md">prompt</a> · <a href="styles/sunny-3d-avatar-campaign-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="y2k-mirror-ui-scribble-collage-style"></a>
-<a href="styles/y2k-mirror-ui-scribble-collage-style"><img src="assets/thumbs/y2k-mirror-ui-scribble-collage-style-16x9.jpg" alt="Y2K Mirror UI Scribble Collage Style preview"></a>
-<p><strong><a href="styles/y2k-mirror-ui-scribble-collage-style">Y2K Mirror UI Scribble Collage Style</a></strong><br>
-<em>Flash-photo Y2K collages with mirror UI panels and electric-blue scribbles.</em><br>
-<a href="styles/y2k-mirror-ui-scribble-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/y2k-mirror-ui-scribble-collage-style.md">prompt</a> · <a href="styles/y2k-mirror-ui-scribble-collage-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="neon-plush-gadget-pop-3d-style"></a>
-<a href="styles/neon-plush-gadget-pop-3d-style"><img src="assets/thumbs/neon-plush-gadget-pop-3d-style-16x9.jpg" alt="Neon Plush Gadget Pop 3D Style preview"></a>
-<p><strong><a href="styles/neon-plush-gadget-pop-3d-style">Neon Plush Gadget Pop 3D Style</a></strong><br>
-<em>Neon toy-product 3D renders with plush mascots and chunky gadget props.</em><br>
-<a href="styles/neon-plush-gadget-pop-3d-style/style.json">style.json</a> · <a href="docs/copy-prompts/neon-plush-gadget-pop-3d-style.md">prompt</a> · <a href="styles/neon-plush-gadget-pop-3d-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="blue-lime-kinetic-comic-type-poster-style"></a>
-<a href="styles/blue-lime-kinetic-comic-type-poster-style"><img src="assets/thumbs/blue-lime-kinetic-comic-type-poster-style-16x9.jpg" alt="Blue Lime Kinetic Comic Type Poster Style preview"></a>
-<p><strong><a href="styles/blue-lime-kinetic-comic-type-poster-style">Blue Lime Kinetic Comic Type Poster Style</a></strong><br>
-<em>Electric-blue comic posters with lime speech panels and massive black type.</em><br>
-<a href="styles/blue-lime-kinetic-comic-type-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/blue-lime-kinetic-comic-type-poster-style.md">prompt</a> · <a href="styles/blue-lime-kinetic-comic-type-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="blue-chinese-perspective-type-canyon-style"></a>
-<a href="styles/blue-chinese-perspective-type-canyon-style"><img src="assets/thumbs/blue-chinese-perspective-type-canyon-style-16x9.jpg" alt="Blue Chinese Perspective Type Canyon Style preview"></a>
-<p><strong><a href="styles/blue-chinese-perspective-type-canyon-style">Blue Chinese Perspective Type Canyon Style</a></strong><br>
-<em>Blue perspective corridors with stacked Chinese display type.</em><br>
-<a href="styles/blue-chinese-perspective-type-canyon-style/style.json">style.json</a> · <a href="docs/copy-prompts/blue-chinese-perspective-type-canyon-style.md">prompt</a> · <a href="styles/blue-chinese-perspective-type-canyon-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="rough-ink-music-doodle-poster-style"></a>
-<a href="styles/rough-ink-music-doodle-poster-style"><img src="assets/thumbs/rough-ink-music-doodle-poster-style-16x9.jpg" alt="Rough Ink Music Doodle Poster Style preview"></a>
-<p><strong><a href="styles/rough-ink-music-doodle-poster-style">Rough Ink Music Doodle Poster Style</a></strong><br>
-<em>Hand-inked music posters with brush lettering and playful doodles.</em><br>
-<a href="styles/rough-ink-music-doodle-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/rough-ink-music-doodle-poster-style.md">prompt</a> · <a href="styles/rough-ink-music-doodle-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="mono-noir-type-portrait-poster-style"></a>
-<a href="styles/mono-noir-type-portrait-poster-style"><img src="assets/thumbs/mono-noir-type-portrait-poster-style-16x9.jpg" alt="Mono Noir Type Portrait Poster Style preview"></a>
-<p><strong><a href="styles/mono-noir-type-portrait-poster-style">Mono Noir Type Portrait Poster Style</a></strong><br>
-<em>Black-and-white editorial portraits with massive lowercase type.</em><br>
-<a href="styles/mono-noir-type-portrait-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/mono-noir-type-portrait-poster-style.md">prompt</a> · <a href="styles/mono-noir-type-portrait-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="bold-block-mascot-poster-style"></a>
-<a href="styles/bold-block-mascot-poster-style"><img src="assets/thumbs/bold-block-mascot-poster-style-16x9.jpg" alt="Bold Block Mascot Poster Style preview"></a>
-<p><strong><a href="styles/bold-block-mascot-poster-style">Bold Block Mascot Poster Style</a></strong><br>
-<em>Flat mascot posters with chunky block type and sticker figures.</em><br>
-<a href="styles/bold-block-mascot-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/bold-block-mascot-poster-style.md">prompt</a> · <a href="styles/bold-block-mascot-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="blue-hud-macro-product-poster"></a>
-<a href="styles/blue-hud-macro-product-poster"><img src="assets/thumbs/blue-hud-macro-product-poster-16x9.jpg" alt="Blue HUD Macro Creator Tech Poster preview"></a>
-<p><strong><a href="styles/blue-hud-macro-product-poster">Blue HUD Macro Creator Tech Poster</a></strong><br>
-<em>Glossy macro product posters with blue HUD launch graphics.</em><br>
-<a href="styles/blue-hud-macro-product-poster/style.json">style.json</a> · <a href="docs/copy-prompts/blue-hud-macro-product-poster.md">prompt</a> · <a href="styles/blue-hud-macro-product-poster/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="warm-fisheye-product-impact-ad-style"></a>
-<a href="styles/warm-fisheye-product-impact-ad-style"><img src="assets/thumbs/warm-fisheye-product-impact-ad-style-16x9.jpg" alt="Warm Fisheye Product Impact Ad Style preview"></a>
-<p><strong><a href="styles/warm-fisheye-product-impact-ad-style">Warm Fisheye Product Impact Ad Style</a></strong><br>
-<em>Warm fisheye product ads with bold Chinese social-commerce type.</em><br>
-<a href="styles/warm-fisheye-product-impact-ad-style/style.json">style.json</a> · <a href="docs/copy-prompts/warm-fisheye-product-impact-ad-style.md">prompt</a> · <a href="styles/warm-fisheye-product-impact-ad-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="olive-scribble-sports-poster-style"></a>
-<a href="styles/olive-scribble-sports-poster-style"><img src="assets/thumbs/olive-scribble-sports-poster-style-16x9.jpg" alt="Olive Scribble Sports Poster Style preview"></a>
-<p><strong><a href="styles/olive-scribble-sports-poster-style">Olive Scribble Sports Poster Style</a></strong><br>
-<em>Handmade sports posters with olive blocks and kinetic scribbles.</em><br>
-<a href="styles/olive-scribble-sports-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/olive-scribble-sports-poster-style.md">prompt</a> · <a href="styles/olive-scribble-sports-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="bold-anime-reaction-thumbnail-style"></a>
-<a href="styles/bold-anime-reaction-thumbnail-style"><img src="assets/thumbs/bold-anime-reaction-thumbnail-style-16x9.jpg" alt="Bold Anime Reaction Thumbnail Style preview"></a>
-<p><strong><a href="styles/bold-anime-reaction-thumbnail-style">Bold Anime Reaction Thumbnail Style</a></strong><br>
-<em>High-impact anime thumbnails with bold yellow reaction typography.</em><br>
-<a href="styles/bold-anime-reaction-thumbnail-style/style.json">style.json</a> · <a href="docs/copy-prompts/bold-anime-reaction-thumbnail-style.md">prompt</a> · <a href="styles/bold-anime-reaction-thumbnail-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="turquoise-red-techno-manga-poster-style"></a>
-<a href="styles/turquoise-red-techno-manga-poster-style"><img src="assets/thumbs/turquoise-red-techno-manga-poster-style-16x9.jpg" alt="Turquoise Red Techno Manga Poster Style preview"></a>
-<p><strong><a href="styles/turquoise-red-techno-manga-poster-style">Turquoise Red Techno Manga Poster Style</a></strong><br>
-<em>Retro techno-manga posters with turquoise hardware and red lettering.</em><br>
-<a href="styles/turquoise-red-techno-manga-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/turquoise-red-techno-manga-poster-style.md">prompt</a> · <a href="styles/turquoise-red-techno-manga-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="chromatic-fisheye-orbit-pop-poster-style"></a>
-<a href="styles/chromatic-fisheye-orbit-pop-poster-style"><img src="assets/thumbs/chromatic-fisheye-orbit-pop-poster-style-16x9.jpg" alt="Chromatic Fisheye Orbit Pop Poster Style preview"></a>
-<p><strong><a href="styles/chromatic-fisheye-orbit-pop-poster-style">Chromatic Fisheye Orbit Pop Poster Style</a></strong><br>
-<em>Pop fisheye posters with orbiting type and chromatic arcs.</em><br>
-<a href="styles/chromatic-fisheye-orbit-pop-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/chromatic-fisheye-orbit-pop-poster-style.md">prompt</a> · <a href="styles/chromatic-fisheye-orbit-pop-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="naive-marker-psa-poster-style"></a>
-<a href="styles/naive-marker-psa-poster-style"><img src="assets/thumbs/naive-marker-psa-poster-style-16x9.jpg" alt="Naive Marker PSA Poster Style preview"></a>
-<p><strong><a href="styles/naive-marker-psa-poster-style">Naive Marker PSA Poster Style</a></strong><br>
-<em>Friendly civic PSA posters with naive marker drawings.</em><br>
-<a href="styles/naive-marker-psa-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/naive-marker-psa-poster-style.md">prompt</a> · <a href="styles/naive-marker-psa-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="blue-bubble-fisheye-action-poster-style"></a>
-<a href="styles/blue-bubble-fisheye-action-poster-style"><img src="assets/thumbs/blue-bubble-fisheye-action-poster-style-16x9.jpg" alt="Blue Bubble Fisheye Action Poster Style preview"></a>
-<p><strong><a href="styles/blue-bubble-fisheye-action-poster-style">Blue Bubble Fisheye Action Poster Style</a></strong><br>
-<em>Youth action posters with blue bubble type and fisheye photos.</em><br>
-<a href="styles/blue-bubble-fisheye-action-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/blue-bubble-fisheye-action-poster-style.md">prompt</a> · <a href="styles/blue-bubble-fisheye-action-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="cozy-bedroom-doodle-companion-snapshot-style"></a>
-<a href="styles/cozy-bedroom-doodle-companion-snapshot-style"><img src="assets/thumbs/cozy-bedroom-doodle-companion-snapshot-style-16x9.jpg" alt="Cozy Bedroom Doodle Companion Snapshot Style preview"></a>
-<p><strong><a href="styles/cozy-bedroom-doodle-companion-snapshot-style">Cozy Bedroom Doodle Companion Snapshot Style</a></strong><br>
-<em>Low-light bedroom snapshots with quiet doodle companion energy.</em><br>
-<a href="styles/cozy-bedroom-doodle-companion-snapshot-style/style.json">style.json</a> · <a href="docs/copy-prompts/cozy-bedroom-doodle-companion-snapshot-style.md">prompt</a> · <a href="styles/cozy-bedroom-doodle-companion-snapshot-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="surreal-fish-doodle-landmark-photo-collage-style"></a>
-<a href="styles/surreal-fish-doodle-landmark-photo-collage-style"><img src="assets/thumbs/surreal-fish-doodle-landmark-photo-collage-style-16x9.jpg" alt="Surreal Fish Doodle Landmark Photo Collage Style preview"></a>
-<p><strong><a href="styles/surreal-fish-doodle-landmark-photo-collage-style">Surreal Fish Doodle Landmark Photo Collage Style</a></strong><br>
-<em>Landmark travel photos remixed with folk-art fish doodles.</em><br>
-<a href="styles/surreal-fish-doodle-landmark-photo-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/surreal-fish-doodle-landmark-photo-collage-style.md">prompt</a> · <a href="styles/surreal-fish-doodle-landmark-photo-collage-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="plush-comic-toy-product-poster-style"></a>
-<a href="styles/plush-comic-toy-product-poster-style"><img src="assets/thumbs/plush-comic-toy-product-poster-style-16x9.jpg" alt="Plush Comic Toy Product Poster Style preview"></a>
-<p><strong><a href="styles/plush-comic-toy-product-poster-style">Plush Comic Toy Product Poster Style</a></strong><br>
-<em>Toy-product posters with fuzzy plush heroes and comic typography.</em><br>
-<a href="styles/plush-comic-toy-product-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/plush-comic-toy-product-poster-style.md">prompt</a> · <a href="styles/plush-comic-toy-product-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="rough-animation-pet-sketch-storyboard-style"></a>
-<a href="styles/rough-animation-pet-sketch-storyboard-style"><img src="assets/thumbs/rough-animation-pet-sketch-storyboard-style-16x9.jpg" alt="Rough Animation Pet Sketch Storyboard Style preview"></a>
-<p><strong><a href="styles/rough-animation-pet-sketch-storyboard-style">Rough Animation Pet Sketch Storyboard Style</a></strong><br>
-<em>Loose pet-comedy storyboard frames with warm sketch texture.</em><br>
-<a href="styles/rough-animation-pet-sketch-storyboard-style/style.json">style.json</a> · <a href="docs/copy-prompts/rough-animation-pet-sketch-storyboard-style.md">prompt</a> · <a href="styles/rough-animation-pet-sketch-storyboard-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="tri-color-hardcut-portrait-poster-style"></a>
-<a href="styles/tri-color-hardcut-portrait-poster-style"><img src="assets/thumbs/tri-color-hardcut-portrait-poster-style-16x9.jpg" alt="Tri Color Hardcut Portrait Poster Style preview"></a>
-<p><strong><a href="styles/tri-color-hardcut-portrait-poster-style">Tri Color Hardcut Portrait Poster Style</a></strong><br>
-<em>Three-color portrait posters built from hard-edged cutout planes.</em><br>
-<a href="styles/tri-color-hardcut-portrait-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/tri-color-hardcut-portrait-poster-style.md">prompt</a> · <a href="styles/tri-color-hardcut-portrait-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="clean-triptych-travel-vlog-thumbnail-style"></a>
-<a href="styles/clean-triptych-travel-vlog-thumbnail-style"><img src="assets/thumbs/clean-triptych-travel-vlog-thumbnail-style-16x9.jpg" alt="Clean Triptych Travel Vlog Thumbnail Style preview"></a>
-<p><strong><a href="styles/clean-triptych-travel-vlog-thumbnail-style">Clean Triptych Travel Vlog Thumbnail Style</a></strong><br>
-<em>Clean travel thumbnails with three photo panels and soft notes.</em><br>
-<a href="styles/clean-triptych-travel-vlog-thumbnail-style/style.json">style.json</a> · <a href="docs/copy-prompts/clean-triptych-travel-vlog-thumbnail-style.md">prompt</a> · <a href="styles/clean-triptych-travel-vlog-thumbnail-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="playful-mascot-doodle-snapshot-style"></a>
-<a href="styles/playful-mascot-doodle-snapshot-style"><img src="assets/thumbs/playful-mascot-doodle-snapshot-style-16x9.jpg" alt="Playful Mascot Doodle Snapshot Style preview"></a>
-<p><strong><a href="styles/playful-mascot-doodle-snapshot-style">Playful Mascot Doodle Snapshot Style</a></strong><br>
-<em>Real-life snapshots layered with mascot stickers and doodles.</em><br>
-<a href="styles/playful-mascot-doodle-snapshot-style/style.json">style.json</a> · <a href="docs/copy-prompts/playful-mascot-doodle-snapshot-style.md">prompt</a> · <a href="styles/playful-mascot-doodle-snapshot-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="teenage-skate-scribble-screenprint-poster-style"></a>
-<a href="styles/teenage-skate-scribble-screenprint-poster-style"><img src="assets/thumbs/teenage-skate-scribble-screenprint-poster-style-16x9.jpg" alt="Teenage Skate Scribble Screenprint Poster Style preview"></a>
-<p><strong><a href="styles/teenage-skate-scribble-screenprint-poster-style">Teenage Skate Scribble Screenprint Poster Style</a></strong><br>
-<em>Retro skate posters with scribbled borders and screenprint grit.</em><br>
-<a href="styles/teenage-skate-scribble-screenprint-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/teenage-skate-scribble-screenprint-poster-style.md">prompt</a> · <a href="styles/teenage-skate-scribble-screenprint-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="impact-burst-halftone-comic-poster-style"></a>
-<a href="styles/impact-burst-halftone-comic-poster-style"><img src="assets/thumbs/impact-burst-halftone-comic-poster-style-16x9.jpg" alt="Impact Burst Halftone Comic Poster Style preview"></a>
-<p><strong><a href="styles/impact-burst-halftone-comic-poster-style">Impact Burst Halftone Comic Poster Style</a></strong><br>
-<em>Loud comic posters with impact type and halftone bursts.</em><br>
-<a href="styles/impact-burst-halftone-comic-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/impact-burst-halftone-comic-poster-style.md">prompt</a> · <a href="styles/impact-burst-halftone-comic-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="sunburst-fisheye-bubble-type-poster-style"></a>
-<a href="styles/sunburst-fisheye-bubble-type-poster-style"><img src="assets/thumbs/sunburst-fisheye-bubble-type-poster-style-16x9.jpg" alt="Sunburst Fisheye Bubble Type Poster Style preview"></a>
-<p><strong><a href="styles/sunburst-fisheye-bubble-type-poster-style">Sunburst Fisheye Bubble Type Poster Style</a></strong><br>
-<em>Summer fisheye posters with sunny bubble typography.</em><br>
-<a href="styles/sunburst-fisheye-bubble-type-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/sunburst-fisheye-bubble-type-poster-style.md">prompt</a> · <a href="styles/sunburst-fisheye-bubble-type-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="backseat-transit-doodle-letter-poster-style"></a>
-<a href="styles/backseat-transit-doodle-letter-poster-style"><img src="assets/thumbs/backseat-transit-doodle-letter-poster-style-16x9.jpg" alt="Backseat Transit Doodle Letter Poster Style preview"></a>
-<p><strong><a href="styles/backseat-transit-doodle-letter-poster-style">Backseat Transit Doodle Letter Poster Style</a></strong><br>
-<em>Transit photos turned into energetic hand-lettered travel posters.</em><br>
-<a href="styles/backseat-transit-doodle-letter-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/backseat-transit-doodle-letter-poster-style.md">prompt</a> · <a href="styles/backseat-transit-doodle-letter-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="analog-sticker-diary-portrait-poster-style"></a>
-<a href="styles/analog-sticker-diary-portrait-poster-style"><img src="assets/thumbs/analog-sticker-diary-portrait-poster-style-16x9.jpg" alt="Analog Sticker Diary Portrait Poster Style preview"></a>
-<p><strong><a href="styles/analog-sticker-diary-portrait-poster-style">Analog Sticker Diary Portrait Poster Style</a></strong><br>
-<em>Nostalgic diary portraits with stickers and distressed lettering.</em><br>
-<a href="styles/analog-sticker-diary-portrait-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/analog-sticker-diary-portrait-poster-style.md">prompt</a> · <a href="styles/analog-sticker-diary-portrait-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="folded-diamond-perspective-type-poster-style"></a>
-<a href="styles/folded-diamond-perspective-type-poster-style"><img src="assets/thumbs/folded-diamond-perspective-type-poster-style-16x9.jpg" alt="Folded Diamond Perspective Type Poster Style preview"></a>
-<p><strong><a href="styles/folded-diamond-perspective-type-poster-style">Folded Diamond Perspective Type Poster Style</a></strong><br>
-<em>Minimal diamond-aperture posters with folded perspective typography.</em><br>
-<a href="styles/folded-diamond-perspective-type-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/folded-diamond-perspective-type-poster-style.md">prompt</a> · <a href="styles/folded-diamond-perspective-type-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="gothic-cat-doodle-photo-collage-style"></a>
-<a href="styles/gothic-cat-doodle-photo-collage-style"><img src="assets/thumbs/gothic-cat-doodle-photo-collage-style-16x9.jpg" alt="Gothic Cat Doodle Photo Collage Style preview"></a>
-<p><strong><a href="styles/gothic-cat-doodle-photo-collage-style">Gothic Cat Doodle Photo Collage Style</a></strong><br>
-<em>Dramatic architecture photos with playful cartoon creature overlays.</em><br>
-<a href="styles/gothic-cat-doodle-photo-collage-style/style.json">style.json</a> · <a href="docs/copy-prompts/gothic-cat-doodle-photo-collage-style.md">prompt</a> · <a href="styles/gothic-cat-doodle-photo-collage-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="k-pop-apocalypse-ransom-zine-style"></a>
-<a href="styles/k-pop-apocalypse-ransom-zine-style"><img src="assets/thumbs/k-pop-apocalypse-ransom-zine-style-16x9.jpg" alt="K-Pop Apocalypse Ransom Zine Style preview"></a>
-<p><strong><a href="styles/k-pop-apocalypse-ransom-zine-style">K-Pop Apocalypse Ransom Zine Style</a></strong><br>
-<em>Maximal K-pop zines with ransom type and sticker blocks.</em><br>
-<a href="styles/k-pop-apocalypse-ransom-zine-style/style.json">style.json</a> · <a href="docs/copy-prompts/k-pop-apocalypse-ransom-zine-style.md">prompt</a> · <a href="styles/k-pop-apocalypse-ransom-zine-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="metro-doodle-snapshot-diary-style"></a>
-<a href="styles/metro-doodle-snapshot-diary-style"><img src="assets/thumbs/metro-doodle-snapshot-diary-style-16x9.jpg" alt="Metro Doodle Snapshot Diary preview"></a>
-<p><strong><a href="styles/metro-doodle-snapshot-diary-style">Metro Doodle Snapshot Diary</a></strong><br>
-<em>Crowded transit snapshots layered with marker doodles and oversized comic faces.</em><br>
-<a href="styles/metro-doodle-snapshot-diary-style/style.json">style.json</a> · <a href="docs/copy-prompts/metro-doodle-snapshot-diary-style.md">prompt</a> · <a href="styles/metro-doodle-snapshot-diary-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="mountain-trail-monster-doodle-poster-style"></a>
-<a href="styles/mountain-trail-monster-doodle-poster-style"><img src="assets/thumbs/mountain-trail-monster-doodle-poster-style-16x9.jpg" alt="Mountain Trail Monster Doodle Poster Style preview"></a>
-<p><strong><a href="styles/mountain-trail-monster-doodle-poster-style">Mountain Trail Monster Doodle Poster Style</a></strong><br>
-<em>Outdoor hiking photos remixed with monster companions and annotations.</em><br>
-<a href="styles/mountain-trail-monster-doodle-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/mountain-trail-monster-doodle-poster-style.md">prompt</a> · <a href="styles/mountain-trail-monster-doodle-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="neon-doodle-gallery-snapshot-style"></a>
-<a href="styles/neon-doodle-gallery-snapshot-style"><img src="assets/thumbs/neon-doodle-gallery-snapshot-style-16x9.jpg" alt="Neon Doodle Gallery Snapshot preview"></a>
-<p><strong><a href="styles/neon-doodle-gallery-snapshot-style">Neon Doodle Gallery Snapshot</a></strong><br>
-<em>Phone photos covered in hot neon diary doodles.</em><br>
-<a href="styles/neon-doodle-gallery-snapshot-style/style.json">style.json</a> · <a href="docs/copy-prompts/neon-doodle-gallery-snapshot-style.md">prompt</a> · <a href="styles/neon-doodle-gallery-snapshot-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="neon-kinetic-typographic-poster-style"></a>
-<a href="styles/neon-kinetic-typographic-poster-style"><img src="assets/thumbs/neon-kinetic-typographic-poster-style-16x9.jpg" alt="Neon Kinetic Typographic Poster preview"></a>
-<p><strong><a href="styles/neon-kinetic-typographic-poster-style">Neon Kinetic Typographic Poster</a></strong><br>
-<em>Outdoor editorial posters with warped neon kinetic typography.</em><br>
-<a href="styles/neon-kinetic-typographic-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/neon-kinetic-typographic-poster-style.md">prompt</a> · <a href="styles/neon-kinetic-typographic-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="orange-brush-mascot-action-poster-style"></a>
-<a href="styles/orange-brush-mascot-action-poster-style"><img src="assets/thumbs/orange-brush-mascot-action-poster-style-16x9.jpg" alt="Orange Brush Mascot Action Poster Style preview"></a>
-<p><strong><a href="styles/orange-brush-mascot-action-poster-style">Orange Brush Mascot Action Poster Style</a></strong><br>
-<em>Sparse mascot illustrations with orange brush texture and print grain.</em><br>
-<a href="styles/orange-brush-mascot-action-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/orange-brush-mascot-action-poster-style.md">prompt</a> · <a href="styles/orange-brush-mascot-action-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="photo-illustration-overlay-poster-style"></a>
-<a href="styles/photo-illustration-overlay-poster-style"><img src="assets/thumbs/photo-illustration-overlay-poster-style-16x9.jpg" alt="Photo Illustration Overlay Poster preview"></a>
-<p><strong><a href="styles/photo-illustration-overlay-poster-style">Photo Illustration Overlay Poster</a></strong><br>
-<em>City photos composited with saturated 2D character overlays.</em><br>
-<a href="styles/photo-illustration-overlay-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/photo-illustration-overlay-poster-style.md">prompt</a> · <a href="styles/photo-illustration-overlay-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="plush-city-festival-mobile-poster-style"></a>
-<a href="styles/plush-city-festival-mobile-poster-style"><img src="assets/thumbs/plush-city-festival-mobile-poster-style-16x9.jpg" alt="Plush City Festival Mobile Poster preview"></a>
-<p><strong><a href="styles/plush-city-festival-mobile-poster-style">Plush City Festival Mobile Poster</a></strong><br>
-<em>Mobile city-event posters with fuzzy mascots and app-card framing.</em><br>
-<a href="styles/plush-city-festival-mobile-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/plush-city-festival-mobile-poster-style.md">prompt</a> · <a href="styles/plush-city-festival-mobile-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="pop-bubble-letter-photo-poster-style"></a>
-<a href="styles/pop-bubble-letter-photo-poster-style"><img src="assets/thumbs/pop-bubble-letter-photo-poster-style-16x9.jpg" alt="Pop Bubble Letter Photo Poster Style preview"></a>
-<p><strong><a href="styles/pop-bubble-letter-photo-poster-style">Pop Bubble Letter Photo Poster Style</a></strong><br>
-<em>Fashion photo posters framed by candy-colored bubble letters.</em><br>
-<a href="styles/pop-bubble-letter-photo-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/pop-bubble-letter-photo-poster-style.md">prompt</a> · <a href="styles/pop-bubble-letter-photo-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="soft-analog-future-editorial-poster-style"></a>
-<a href="styles/soft-analog-future-editorial-poster-style"><img src="assets/thumbs/soft-analog-future-editorial-poster-style-16x9.jpg" alt="Soft Analog Future Editorial Poster preview"></a>
-<p><strong><a href="styles/soft-analog-future-editorial-poster-style">Soft Analog Future Editorial Poster</a></strong><br>
-<em>Quiet analog-future editorials with grids and retro technology.</em><br>
-<a href="styles/soft-analog-future-editorial-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/soft-analog-future-editorial-poster-style.md">prompt</a> · <a href="styles/soft-analog-future-editorial-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="subway-doodle-photo-hybrid-style"></a>
-<a href="styles/subway-doodle-photo-hybrid-style"><img src="assets/thumbs/subway-doodle-photo-hybrid-style-16x9.jpg" alt="Subway Doodle Photo Hybrid preview"></a>
-<p><strong><a href="styles/subway-doodle-photo-hybrid-style">Subway Doodle Photo Hybrid</a></strong><br>
-<em>Subway photos overlaid with social-media-style cartoon doodles and handwritten notes.</em><br>
-<a href="styles/subway-doodle-photo-hybrid-style/style.json">style.json</a> · <a href="docs/copy-prompts/subway-doodle-photo-hybrid-style.md">prompt</a> · <a href="styles/subway-doodle-photo-hybrid-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="tokyo-kawaii-travel-collage-poster-style"></a>
-<a href="styles/tokyo-kawaii-travel-collage-poster-style"><img src="assets/thumbs/tokyo-kawaii-travel-collage-poster-style-16x9.jpg" alt="Tokyo Kawaii Travel Collage Poster preview"></a>
-<p><strong><a href="styles/tokyo-kawaii-travel-collage-poster-style">Tokyo Kawaii Travel Collage Poster</a></strong><br>
-<em>Maximal Tokyo travel collages with manga bubbles and stickers.</em><br>
-<a href="styles/tokyo-kawaii-travel-collage-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/tokyo-kawaii-travel-collage-poster-style.md">prompt</a> · <a href="styles/tokyo-kawaii-travel-collage-poster-style/preview-9x16.jpg">9:16</a></p>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<a id="urban-transit-doodle-diary-style"></a>
-<a href="styles/urban-transit-doodle-diary-style"><img src="assets/thumbs/urban-transit-doodle-diary-style-16x9.jpg" alt="Urban Transit Doodle Diary Style preview"></a>
-<p><strong><a href="styles/urban-transit-doodle-diary-style">Urban Transit Doodle Diary Style</a></strong><br>
-<em>Public-space photos remixed with bold foreground gestures and travel diary notes.</em><br>
-<a href="styles/urban-transit-doodle-diary-style/style.json">style.json</a> · <a href="docs/copy-prompts/urban-transit-doodle-diary-style.md">prompt</a> · <a href="styles/urban-transit-doodle-diary-style/preview-9x16.jpg">9:16</a></p>
-</td>
-<td width="33%" valign="top">
-<a id="y2k-grunge-hiphop-cutout-poster-style"></a>
-<a href="styles/y2k-grunge-hiphop-cutout-poster-style"><img src="assets/thumbs/y2k-grunge-hiphop-cutout-poster-style-16x9.jpg" alt="Y2K Grunge Hip-Hop Cutout Poster Style preview"></a>
-<p><strong><a href="styles/y2k-grunge-hiphop-cutout-poster-style">Y2K Grunge Hip-Hop Cutout Poster Style</a></strong><br>
-<em>Y2K hip-hop collage posters with acid type and photocopy grit.</em><br>
-<a href="styles/y2k-grunge-hiphop-cutout-poster-style/style.json">style.json</a> · <a href="docs/copy-prompts/y2k-grunge-hiphop-cutout-poster-style.md">prompt</a> · <a href="styles/y2k-grunge-hiphop-cutout-poster-style/preview-9x16.jpg">9:16</a></p>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/rembrandt/README.md"><img src="style-packages/artists/rembrandt/examples/accepted/anonymous-v1.png" width="230" alt="Rembrandt van Rijn representative image"></a><br>
+<strong>Rembrandt van Rijn</strong><br>
+<a href="style-packages/artists/rembrandt/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/vincent-van-gogh/README.md"><img src="style-packages/artists/vincent-van-gogh/examples/accepted/anonymous-v1.png" width="230" alt="Vincent van Gogh representative image"></a><br>
+<strong>Vincent van Gogh</strong><br>
+<a href="style-packages/artists/vincent-van-gogh/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/artists/wassily-kandinsky/README.md"><img src="style-packages/artists/wassily-kandinsky/examples/accepted/anonymous-v1.png" width="230" alt="Wassily Kandinsky representative image"></a><br>
+<strong>Wassily Kandinsky</strong><br>
+<a href="style-packages/artists/wassily-kandinsky/README.md">打开 README / Open README</a>
 </td>
 </tr>
 </table>
+### 交叉风格配方 / Cross-style recipes
 
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/composites/rpg-maker-x-gauguin/README.md"><img src="style-packages/game-art/rpg-maker-pixel-art/examples/accepted/anonymous-v1.png" width="230" alt="RPG Maker Foreground + Gauguin Background representative image"></a><br>
+<strong>RPG Maker Foreground + Gauguin Background</strong><br>
+<a href="style-packages/composites/rpg-maker-x-gauguin/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/composites/rpg-maker-x-turner/README.md"><img src="style-packages/game-art/rpg-maker-pixel-art/examples/accepted/anonymous-v1.png" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere representative image"></a><br>
+<strong>RPG Maker Pixel Art + Turner Atmosphere</strong><br>
+<a href="style-packages/composites/rpg-maker-x-turner/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/composites/vermeer-x-monet/README.md"><img src="style-packages/artists/johannes-vermeer/examples/accepted/anonymous-v1.png" width="230" alt="Vermeer Light + Monet Color representative image"></a><br>
+<strong>Vermeer Light + Monet Color</strong><br>
+<a href="style-packages/composites/vermeer-x-monet/README.md">打开 README / Open README</a>
+</td>
+</tr>
+</table>
+### 游戏美术 / Game art
 
-## Repository structure
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/game-art/rpg-maker-pixel-art/README.md"><img src="style-packages/game-art/rpg-maker-pixel-art/examples/accepted/anonymous-v1.png" width="230" alt="RPG Maker Pixel Art representative image"></a><br>
+<strong>RPG Maker Pixel Art</strong><br>
+<a href="style-packages/game-art/rpg-maker-pixel-art/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/game-art/zx-spectrum-attribute-pixel/README.md"><img src="style-packages/game-art/zx-spectrum-attribute-pixel/examples/generated/anonymous-v1.png" width="230" alt="ZX Spectrum Attribute Pixel Art representative image"></a><br>
+<strong>ZX Spectrum Attribute Pixel Art</strong><br>
+<a href="style-packages/game-art/zx-spectrum-attribute-pixel/README.md">打开 README / Open README</a>
+</td>
+<td width="33%"></td>
+</tr>
+</table>
+### 艺术流派与历史时期 / Movements and periods
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/movements/greek-archaic-period/README.md"><img src="style-packages/movements/greek-archaic-period/examples/generated/anonymous-v1.png" width="230" alt="Greek Archaic Period representative image"></a><br>
+<strong>Greek Archaic Period</strong><br>
+<a href="style-packages/movements/greek-archaic-period/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/movements/greek-classical-period/README.md"><img src="style-packages/movements/greek-classical-period/examples/generated/anonymous-v1.png" width="230" alt="Greek Classical Period representative image"></a><br>
+<strong>Greek Classical Period</strong><br>
+<a href="style-packages/movements/greek-classical-period/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/movements/greek-geometric-period/README.md"><img src="style-packages/movements/greek-geometric-period/examples/generated/anonymous-v1.png" width="230" alt="Greek Geometric Period representative image"></a><br>
+<strong>Greek Geometric Period</strong><br>
+<a href="style-packages/movements/greek-geometric-period/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/movements/greek-hellenistic-period/README.md"><img src="style-packages/movements/greek-hellenistic-period/examples/generated/anonymous-v1.png" width="230" alt="Greek Hellenistic Period representative image"></a><br>
+<strong>Greek Hellenistic Period</strong><br>
+<a href="style-packages/movements/greek-hellenistic-period/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/movements/italian-high-renaissance-raphaelesque/README.md"><img src="style-packages/movements/italian-high-renaissance-raphaelesque/examples/generated/anonymous-v1.png" width="230" alt="Italian High Renaissance representative image"></a><br>
+<strong>Italian High Renaissance</strong><br>
+<a href="style-packages/movements/italian-high-renaissance-raphaelesque/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/movements/neue-sachlichkeit/README.md"><img src="style-packages/movements/neue-sachlichkeit/examples/generated/anonymous-v1.png" width="230" alt="Neue Sachlichkeit / New Objectivity representative image"></a><br>
+<strong>Neue Sachlichkeit / New Objectivity</strong><br>
+<a href="style-packages/movements/neue-sachlichkeit/README.md">打开 README / Open README</a>
+</td>
+</tr>
+</table>
+### 摄影师 / Photographers
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/photographers/alfred-stieglitz/README.md"><img src="style-packages/photographers/alfred-stieglitz/examples/accepted/anonymous-v1.png" width="230" alt="Alfred Stieglitz representative image"></a><br>
+<strong>Alfred Stieglitz</strong><br>
+<a href="style-packages/photographers/alfred-stieglitz/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/photographers/eadweard-muybridge/README.md"><img src="style-packages/photographers/eadweard-muybridge/examples/accepted/anonymous-v1.png" width="230" alt="Eadweard Muybridge representative image"></a><br>
+<strong>Eadweard Muybridge</strong><br>
+<a href="style-packages/photographers/eadweard-muybridge/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/photographers/etienne-jules-marey/README.md"><img src="style-packages/photographers/etienne-jules-marey/examples/accepted/anonymous-v1.png" width="230" alt="Étienne-Jules Marey representative image"></a><br>
+<strong>Étienne-Jules Marey</strong><br>
+<a href="style-packages/photographers/etienne-jules-marey/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/photographers/eugene-atget/README.md"><img src="style-packages/photographers/eugene-atget/examples/accepted/anonymous-v1.png" width="230" alt="Eugène Atget representative image"></a><br>
+<strong>Eugène Atget</strong><br>
+<a href="style-packages/photographers/eugene-atget/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/photographers/julia-margaret-cameron/README.md"><img src="style-packages/photographers/julia-margaret-cameron/examples/accepted/anonymous-v1.png" width="230" alt="Julia Margaret Cameron representative image"></a><br>
+<strong>Julia Margaret Cameron</strong><br>
+<a href="style-packages/photographers/julia-margaret-cameron/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/photographers/lewis-hine/README.md"><img src="style-packages/photographers/lewis-hine/examples/accepted/anonymous-v1.png" width="230" alt="Lewis Hine representative image"></a><br>
+<strong>Lewis Hine</strong><br>
+<a href="style-packages/photographers/lewis-hine/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/photographers/masahisa-fukase/README.md"><img src="style-packages/photographers/masahisa-fukase/examples/generated/anonymous-v1.png" width="230" alt="Masahisa Fukase representative image"></a><br>
+<strong>Masahisa Fukase</strong><br>
+<a href="style-packages/photographers/masahisa-fukase/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/photographers/nadar/README.md"><img src="style-packages/photographers/nadar/examples/accepted/anonymous-v1.png" width="230" alt="Nadar representative image"></a><br>
+<strong>Nadar</strong><br>
+<a href="style-packages/photographers/nadar/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/photographers/roger-fenton/README.md"><img src="style-packages/photographers/roger-fenton/examples/accepted/anonymous-v1.png" width="230" alt="Roger Fenton representative image"></a><br>
+<strong>Roger Fenton</strong><br>
+<a href="style-packages/photographers/roger-fenton/README.md">打开 README / Open README</a>
+</td>
+</tr>
+</table>
+### 原创预设 / Original presets
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/presets/high-chroma-color-pairing/README.md">No preview<br>暂无代表图</a><br>
+<strong>High-Chroma Color Pairing</strong><br>
+<a href="style-packages/presets/high-chroma-color-pairing/README.md">打开 README / Open README</a>
+</td>
+<td width="33%"></td>
+<td width="33%"></td>
+</tr>
+</table>
+### 艺术与摄影学校 / Schools
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/schools/new-topographics/README.md"><img src="style-packages/schools/new-topographics/examples/generated/anonymous-v1.png" width="230" alt="New Topographics representative image"></a><br>
+<strong>New Topographics</strong><br>
+<a href="style-packages/schools/new-topographics/README.md">打开 README / Open README</a>
+</td>
+<td width="33%"></td>
+<td width="33%"></td>
+</tr>
+</table>
+### 工艺与媒介 / Techniques and media
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="style-packages/techniques/gum-bichromate/README.md"><img src="style-packages/techniques/gum-bichromate/examples/generated/anonymous-v1.png" width="230" alt="Gum Bichromate Printing representative image"></a><br>
+<strong>Gum Bichromate Printing</strong><br>
+<a href="style-packages/techniques/gum-bichromate/README.md">打开 README / Open README</a>
+</td>
+<td width="33%"></td>
+<td width="33%"></td>
+</tr>
+</table>
+### 海报、字体与编辑设计 / Posters, type, and editorial design
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-chinese-perspective-type-canyon-style/README.md"><img src="styles/blue-chinese-perspective-type-canyon-style/preview-16x9.jpg" width="230" alt="Blue Chinese Perspective Type Canyon Style representative image"></a><br>
+<strong>Blue Chinese Perspective Type Canyon Style</strong><br>
+<a href="styles/blue-chinese-perspective-type-canyon-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/bold-block-mascot-poster-style/README.md"><img src="styles/bold-block-mascot-poster-style/preview-16x9.jpg" width="230" alt="Bold Block Mascot Poster Style representative image"></a><br>
+<strong>Bold Block Mascot Poster Style</strong><br>
+<a href="styles/bold-block-mascot-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/halftone-assemblage-metaphor-psa-poster-style/README.md"><img src="styles/halftone-assemblage-metaphor-psa-poster-style/preview-16x9.jpg" width="230" alt="Halftone Assemblage Metaphor PSA Poster Style representative image"></a><br>
+<strong>Halftone Assemblage Metaphor PSA Poster Style</strong><br>
+<a href="styles/halftone-assemblage-metaphor-psa-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/orange-brush-mascot-action-poster-style/README.md"><img src="styles/orange-brush-mascot-action-poster-style/preview-16x9.jpg" width="230" alt="Orange Brush Mascot Action Poster Style representative image"></a><br>
+<strong>Orange Brush Mascot Action Poster Style</strong><br>
+<a href="styles/orange-brush-mascot-action-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%"></td>
+<td width="33%"></td>
+</tr>
+</table>
+### 拼贴、涂鸦与漫画 / Collage, doodle, and comic
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/acid-lime-3d-streetwear-type-poster-style/README.md"><img src="styles/acid-lime-3d-streetwear-type-poster-style/preview-16x9.jpg" width="230" alt="Acid Lime 3D Streetwear Type Poster Style representative image"></a><br>
+<strong>Acid Lime 3D Streetwear Type Poster Style</strong><br>
+<a href="styles/acid-lime-3d-streetwear-type-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-lime-kinetic-comic-type-poster-style/README.md"><img src="styles/blue-lime-kinetic-comic-type-poster-style/preview-16x9.jpg" width="230" alt="Blue Lime Kinetic Comic Type Poster Style representative image"></a><br>
+<strong>Blue Lime Kinetic Comic Type Poster Style</strong><br>
+<a href="styles/blue-lime-kinetic-comic-type-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/bold-anime-reaction-thumbnail-style/README.md"><img src="styles/bold-anime-reaction-thumbnail-style/preview-16x9.jpg" width="230" alt="Bold Anime Reaction Thumbnail Style representative image"></a><br>
+<strong>Bold Anime Reaction Thumbnail Style</strong><br>
+<a href="styles/bold-anime-reaction-thumbnail-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/crayon-catalog-doodle-poster-style/README.md"><img src="styles/crayon-catalog-doodle-poster-style/preview-16x9.jpg" width="230" alt="Crayon Catalog Doodle Poster Style representative image"></a><br>
+<strong>Crayon Catalog Doodle Poster Style</strong><br>
+<a href="styles/crayon-catalog-doodle-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cream-smoke-city-manga-poster-style/README.md"><img src="styles/cream-smoke-city-manga-poster-style/preview-16x9.jpg" width="230" alt="Cream Smoke City Manga Poster Style representative image"></a><br>
+<strong>Cream Smoke City Manga Poster Style</strong><br>
+<a href="styles/cream-smoke-city-manga-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/electric-blue-cutout-manga-poster-style/README.md"><img src="styles/electric-blue-cutout-manga-poster-style/preview-16x9.jpg" width="230" alt="Electric Blue Cutout Manga Poster Style representative image"></a><br>
+<strong>Electric Blue Cutout Manga Poster Style</strong><br>
+<a href="styles/electric-blue-cutout-manga-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/fantasy-scribble-mascot-poster-style/README.md"><img src="styles/fantasy-scribble-mascot-poster-style/preview-16x9.jpg" width="230" alt="Fantasy Scribble Mascot Poster Style representative image"></a><br>
+<strong>Fantasy Scribble Mascot Poster Style</strong><br>
+<a href="styles/fantasy-scribble-mascot-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/hot-ink-comic-poster/README.md"><img src="styles/hot-ink-comic-poster/preview-16x9.jpg" width="230" alt="Hot Ink Comic Poster representative image"></a><br>
+<strong>Hot Ink Comic Poster</strong><br>
+<a href="styles/hot-ink-comic-poster/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/impact-burst-halftone-comic-poster-style/README.md"><img src="styles/impact-burst-halftone-comic-poster-style/preview-16x9.jpg" width="230" alt="Impact Burst Halftone Comic Poster Style representative image"></a><br>
+<strong>Impact Burst Halftone Comic Poster Style</strong><br>
+<a href="styles/impact-burst-halftone-comic-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/kinetic-geometric-doodle-cutouts/README.md"><img src="styles/kinetic-geometric-doodle-cutouts/preview-16x9.jpg" width="230" alt="Kinetic Geometric Doodle Cutouts representative image"></a><br>
+<strong>Kinetic Geometric Doodle Cutouts</strong><br>
+<a href="styles/kinetic-geometric-doodle-cutouts/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/loose-scribble-riso-print-style/README.md"><img src="styles/loose-scribble-riso-print-style/preview-16x9.jpg" width="230" alt="Loose Scribble Riso Print Style representative image"></a><br>
+<strong>Loose Scribble Riso Print Style</strong><br>
+<a href="styles/loose-scribble-riso-print-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/naive-marker-psa-poster-style/README.md"><img src="styles/naive-marker-psa-poster-style/preview-16x9.jpg" width="230" alt="Naive Marker PSA Poster Style representative image"></a><br>
+<strong>Naive Marker PSA Poster Style</strong><br>
+<a href="styles/naive-marker-psa-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/naive-marker-quote-card-style/README.md"><img src="styles/naive-marker-quote-card-style/preview-16x9.jpg" width="230" alt="Naive Marker Quote Card Style representative image"></a><br>
+<strong>Naive Marker Quote Card Style</strong><br>
+<a href="styles/naive-marker-quote-card-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/playful-marker-grounding-poster-style/README.md"><img src="styles/playful-marker-grounding-poster-style/preview-16x9.jpg" width="230" alt="Playful Marker Grounding Poster Style representative image"></a><br>
+<strong>Playful Marker Grounding Poster Style</strong><br>
+<a href="styles/playful-marker-grounding-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/plush-comic-toy-product-poster-style/README.md"><img src="styles/plush-comic-toy-product-poster-style/preview-16x9.jpg" width="230" alt="Plush Comic Toy Product Poster Style representative image"></a><br>
+<strong>Plush Comic Toy Product Poster Style</strong><br>
+<a href="styles/plush-comic-toy-product-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/red-yellow-product-trophy-collage-style/README.md"><img src="styles/red-yellow-product-trophy-collage-style/preview-16x9.jpg" width="230" alt="Red Yellow Product Trophy Collage Style representative image"></a><br>
+<strong>Red Yellow Product Trophy Collage Style</strong><br>
+<a href="styles/red-yellow-product-trophy-collage-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/rough-animation-pet-sketch-storyboard-style/README.md"><img src="styles/rough-animation-pet-sketch-storyboard-style/preview-16x9.jpg" width="230" alt="Rough Animation Pet Sketch Storyboard Style representative image"></a><br>
+<strong>Rough Animation Pet Sketch Storyboard Style</strong><br>
+<a href="styles/rough-animation-pet-sketch-storyboard-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/rough-ink-music-doodle-poster-style/README.md"><img src="styles/rough-ink-music-doodle-poster-style/preview-16x9.jpg" width="230" alt="Rough Ink Music Doodle Poster Style representative image"></a><br>
+<strong>Rough Ink Music Doodle Poster Style</strong><br>
+<a href="styles/rough-ink-music-doodle-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/rough-marker-monster-poster-style/README.md"><img src="styles/rough-marker-monster-poster-style/preview-16x9.jpg" width="230" alt="Rough Marker Monster Poster Style representative image"></a><br>
+<strong>Rough Marker Monster Poster Style</strong><br>
+<a href="styles/rough-marker-monster-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sky-blue-home-life-doodle-poster-style/README.md"><img src="styles/sky-blue-home-life-doodle-poster-style/preview-16x9.jpg" width="230" alt="Sky Blue Home Life Doodle Poster Style representative image"></a><br>
+<strong>Sky Blue Home Life Doodle Poster Style</strong><br>
+<a href="styles/sky-blue-home-life-doodle-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sky-blue-lucky-tag-doodle-poster-style/README.md"><img src="styles/sky-blue-lucky-tag-doodle-poster-style/preview-16x9.jpg" width="230" alt="Sky Blue Lucky Tag Doodle Poster Style representative image"></a><br>
+<strong>Sky Blue Lucky Tag Doodle Poster Style</strong><br>
+<a href="styles/sky-blue-lucky-tag-doodle-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/teenage-skate-scribble-screenprint-poster-style/README.md"><img src="styles/teenage-skate-scribble-screenprint-poster-style/preview-16x9.jpg" width="230" alt="Teenage Skate Scribble Screenprint Poster Style representative image"></a><br>
+<strong>Teenage Skate Scribble Screenprint Poster Style</strong><br>
+<a href="styles/teenage-skate-scribble-screenprint-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/turquoise-red-techno-manga-poster-style/README.md"><img src="styles/turquoise-red-techno-manga-poster-style/preview-16x9.jpg" width="230" alt="Turquoise Red Techno Manga Poster Style representative image"></a><br>
+<strong>Turquoise Red Techno Manga Poster Style</strong><br>
+<a href="styles/turquoise-red-techno-manga-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%"></td>
+</tr>
+</table>
+### 摄影、旅行与生活方式 / Photography, travel, and lifestyle
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/analog-sticker-diary-portrait-poster-style/README.md"><img src="styles/analog-sticker-diary-portrait-poster-style/preview-16x9.jpg" width="230" alt="Analog Sticker Diary Portrait Poster Style representative image"></a><br>
+<strong>Analog Sticker Diary Portrait Poster Style</strong><br>
+<a href="styles/analog-sticker-diary-portrait-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/backseat-transit-doodle-letter-poster-style/README.md"><img src="styles/backseat-transit-doodle-letter-poster-style/preview-16x9.jpg" width="230" alt="Backseat Transit Doodle Letter Poster Style representative image"></a><br>
+<strong>Backseat Transit Doodle Letter Poster Style</strong><br>
+<a href="styles/backseat-transit-doodle-letter-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/black-cutout-food-card-ad-style/README.md"><img src="styles/black-cutout-food-card-ad-style/preview-16x9.jpg" width="230" alt="Black Cutout Food Card Ad representative image"></a><br>
+<strong>Black Cutout Food Card Ad</strong><br>
+<a href="styles/black-cutout-food-card-ad-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-bubble-fisheye-action-poster-style/README.md"><img src="styles/blue-bubble-fisheye-action-poster-style/preview-16x9.jpg" width="230" alt="Blue Bubble Fisheye Action Poster Style representative image"></a><br>
+<strong>Blue Bubble Fisheye Action Poster Style</strong><br>
+<a href="styles/blue-bubble-fisheye-action-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-halftone-ransom-zine-poster-style/README.md"><img src="styles/blue-halftone-ransom-zine-poster-style/preview-16x9.jpg" width="230" alt="Blue Halftone Ransom Zine Poster Style representative image"></a><br>
+<strong>Blue Halftone Ransom Zine Poster Style</strong><br>
+<a href="styles/blue-halftone-ransom-zine-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/chromatic-fisheye-orbit-pop-poster-style/README.md"><img src="styles/chromatic-fisheye-orbit-pop-poster-style/preview-16x9.jpg" width="230" alt="Chromatic Fisheye Orbit Pop Poster Style representative image"></a><br>
+<strong>Chromatic Fisheye Orbit Pop Poster Style</strong><br>
+<a href="styles/chromatic-fisheye-orbit-pop-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/clean-triptych-travel-vlog-thumbnail-style/README.md"><img src="styles/clean-triptych-travel-vlog-thumbnail-style/preview-16x9.jpg" width="230" alt="Clean Triptych Travel Vlog Thumbnail Style representative image"></a><br>
+<strong>Clean Triptych Travel Vlog Thumbnail Style</strong><br>
+<a href="styles/clean-triptych-travel-vlog-thumbnail-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cobalt-megatype-roadside-travel-editorial-style/README.md"><img src="styles/cobalt-megatype-roadside-travel-editorial-style/preview-16x9.jpg" width="230" alt="Cobalt Megatype Roadside Travel Editorial representative image"></a><br>
+<strong>Cobalt Megatype Roadside Travel Editorial</strong><br>
+<a href="styles/cobalt-megatype-roadside-travel-editorial-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cobalt-torn-didone-portrait-editorial-style/README.md"><img src="styles/cobalt-torn-didone-portrait-editorial-style/preview-16x9.jpg" width="230" alt="Cobalt Torn Didone Portrait Editorial representative image"></a><br>
+<strong>Cobalt Torn Didone Portrait Editorial</strong><br>
+<a href="styles/cobalt-torn-didone-portrait-editorial-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/cobalt-xerox-script-editorial-poster-style/README.md"><img src="styles/cobalt-xerox-script-editorial-poster-style/preview-16x9.jpg" width="230" alt="Cobalt Xerox Script Editorial Poster representative image"></a><br>
+<strong>Cobalt Xerox Script Editorial Poster</strong><br>
+<a href="styles/cobalt-xerox-script-editorial-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/coral-window-megatype-motion-poster-style/README.md"><img src="styles/coral-window-megatype-motion-poster-style/preview-16x9.jpg" width="230" alt="Coral Window Megatype Motion Poster representative image"></a><br>
+<strong>Coral Window Megatype Motion Poster</strong><br>
+<a href="styles/coral-window-megatype-motion-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cozy-bedroom-doodle-companion-snapshot-style/README.md"><img src="styles/cozy-bedroom-doodle-companion-snapshot-style/preview-16x9.jpg" width="230" alt="Cozy Bedroom Doodle Companion Snapshot Style representative image"></a><br>
+<strong>Cozy Bedroom Doodle Companion Snapshot Style</strong><br>
+<a href="styles/cozy-bedroom-doodle-companion-snapshot-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/crimson-ink-manga-dossier/README.md"><img src="styles/crimson-ink-manga-dossier/preview-16x9.jpg" width="230" alt="Crimson Ink Manga Dossier representative image"></a><br>
+<strong>Crimson Ink Manga Dossier</strong><br>
+<a href="styles/crimson-ink-manga-dossier/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cyan-grain-macro-megatype-poster-style/README.md"><img src="styles/cyan-grain-macro-megatype-poster-style/preview-16x9.jpg" width="230" alt="Cyan Grain Macro Megatype Poster representative image"></a><br>
+<strong>Cyan Grain Macro Megatype Poster</strong><br>
+<a href="styles/cyan-grain-macro-megatype-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cyan-red-shockwave-type-poster-style/README.md"><img src="styles/cyan-red-shockwave-type-poster-style/preview-16x9.jpg" width="230" alt="Cyan Red Shockwave Type Poster Style representative image"></a><br>
+<strong>Cyan Red Shockwave Type Poster Style</strong><br>
+<a href="styles/cyan-red-shockwave-type-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/dusk-cyan-layered-type-poster-style/README.md"><img src="styles/dusk-cyan-layered-type-poster-style/preview-16x9.jpg" width="230" alt="Dusk Cyan Layered Type Poster Style representative image"></a><br>
+<strong>Dusk Cyan Layered Type Poster Style</strong><br>
+<a href="styles/dusk-cyan-layered-type-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/folded-diamond-perspective-type-poster-style/README.md"><img src="styles/folded-diamond-perspective-type-poster-style/preview-16x9.jpg" width="230" alt="Folded Diamond Perspective Type Poster Style representative image"></a><br>
+<strong>Folded Diamond Perspective Type Poster Style</strong><br>
+<a href="styles/folded-diamond-perspective-type-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/folded-newspaper-product-ad-style/README.md"><img src="styles/folded-newspaper-product-ad-style/preview-16x9.jpg" width="230" alt="Folded Newspaper Product Ad Style representative image"></a><br>
+<strong>Folded Newspaper Product Ad Style</strong><br>
+<a href="styles/folded-newspaper-product-ad-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/foreshortened-gradient-impact-ad-style/README.md"><img src="styles/foreshortened-gradient-impact-ad-style/preview-16x9.jpg" width="230" alt="Foreshortened Gradient Impact Ad Style representative image"></a><br>
+<strong>Foreshortened Gradient Impact Ad Style</strong><br>
+<a href="styles/foreshortened-gradient-impact-ad-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/gothic-cat-doodle-photo-collage-style/README.md"><img src="styles/gothic-cat-doodle-photo-collage-style/preview-16x9.jpg" width="230" alt="Gothic Cat Doodle Photo Collage Style representative image"></a><br>
+<strong>Gothic Cat Doodle Photo Collage Style</strong><br>
+<a href="styles/gothic-cat-doodle-photo-collage-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/ice-cyan-megatype-action-poster-style/README.md"><img src="styles/ice-cyan-megatype-action-poster-style/preview-16x9.jpg" width="230" alt="Ice Cyan Megatype Action Poster Style representative image"></a><br>
+<strong>Ice Cyan Megatype Action Poster Style</strong><br>
+<a href="styles/ice-cyan-megatype-action-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/jade-glyph-grocer-collage-poster-style/README.md"><img src="styles/jade-glyph-grocer-collage-poster-style/preview-16x9.jpg" width="230" alt="Jade Glyph Grocer Collage Poster Style representative image"></a><br>
+<strong>Jade Glyph Grocer Collage Poster Style</strong><br>
+<a href="styles/jade-glyph-grocer-collage-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/jagged-red-street-photo-event-poster-style/README.md"><img src="styles/jagged-red-street-photo-event-poster-style/preview-16x9.jpg" width="230" alt="Jagged Red Street Photo Event Poster Style representative image"></a><br>
+<strong>Jagged Red Street Photo Event Poster Style</strong><br>
+<a href="styles/jagged-red-street-photo-event-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/k-pop-apocalypse-ransom-zine-style/README.md"><img src="styles/k-pop-apocalypse-ransom-zine-style/preview-16x9.jpg" width="230" alt="K-Pop Apocalypse Ransom Zine Style representative image"></a><br>
+<strong>K-Pop Apocalypse Ransom Zine Style</strong><br>
+<a href="styles/k-pop-apocalypse-ransom-zine-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/kinetic-editorial-photo-collage-style/README.md"><img src="styles/kinetic-editorial-photo-collage-style/preview-16x9.jpg" width="230" alt="Kinetic Editorial Photo Collage representative image"></a><br>
+<strong>Kinetic Editorial Photo Collage</strong><br>
+<a href="styles/kinetic-editorial-photo-collage-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/kinetic-luxury-street-fashion-cover-style/README.md"><img src="styles/kinetic-luxury-street-fashion-cover-style/preview-16x9.jpg" width="230" alt="Kinetic Luxury Street Fashion Cover Style representative image"></a><br>
+<strong>Kinetic Luxury Street Fashion Cover Style</strong><br>
+<a href="styles/kinetic-luxury-street-fashion-cover-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/lime-loop-megatype-action-poster-style/README.md"><img src="styles/lime-loop-megatype-action-poster-style/preview-16x9.jpg" width="230" alt="Lime Loop Megatype Action Poster representative image"></a><br>
+<strong>Lime Loop Megatype Action Poster</strong><br>
+<a href="styles/lime-loop-megatype-action-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/liquid-chrome-clearance-poster-style/README.md"><img src="styles/liquid-chrome-clearance-poster-style/preview-16x9.jpg" width="230" alt="Liquid Chrome Clearance Poster Style representative image"></a><br>
+<strong>Liquid Chrome Clearance Poster Style</strong><br>
+<a href="styles/liquid-chrome-clearance-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/luxury-perspective-checkerboard-editorial/README.md"><img src="styles/luxury-perspective-checkerboard-editorial/preview-16x9.jpg" width="230" alt="Luxury Perspective Checkerboard Editorial representative image"></a><br>
+<strong>Luxury Perspective Checkerboard Editorial</strong><br>
+<a href="styles/luxury-perspective-checkerboard-editorial/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/manga-dossier-blueprint-poster/README.md"><img src="styles/manga-dossier-blueprint-poster/preview-16x9.jpg" width="230" alt="Manga Dossier Blueprint Poster representative image"></a><br>
+<strong>Manga Dossier Blueprint Poster</strong><br>
+<a href="styles/manga-dossier-blueprint-poster/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/market-brush-produce-poster-style/README.md"><img src="styles/market-brush-produce-poster-style/preview-16x9.jpg" width="230" alt="Market Brush Produce Poster Style representative image"></a><br>
+<strong>Market Brush Produce Poster Style</strong><br>
+<a href="styles/market-brush-produce-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/metro-doodle-snapshot-diary-style/README.md"><img src="styles/metro-doodle-snapshot-diary-style/preview-16x9.jpg" width="230" alt="Metro Doodle Snapshot Diary representative image"></a><br>
+<strong>Metro Doodle Snapshot Diary</strong><br>
+<a href="styles/metro-doodle-snapshot-diary-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/mono-noir-type-portrait-poster-style/README.md"><img src="styles/mono-noir-type-portrait-poster-style/preview-16x9.jpg" width="230" alt="Mono Noir Type Portrait Poster Style representative image"></a><br>
+<strong>Mono Noir Type Portrait Poster Style</strong><br>
+<a href="styles/mono-noir-type-portrait-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/monochrome-xerox-sports-dossier/README.md"><img src="styles/monochrome-xerox-sports-dossier/preview-16x9.jpg" width="230" alt="Monochrome Xerox Sports Dossier representative image"></a><br>
+<strong>Monochrome Xerox Sports Dossier</strong><br>
+<a href="styles/monochrome-xerox-sports-dossier/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/mountain-trail-monster-doodle-poster-style/README.md"><img src="styles/mountain-trail-monster-doodle-poster-style/preview-16x9.jpg" width="230" alt="Mountain Trail Monster Doodle Poster Style representative image"></a><br>
+<strong>Mountain Trail Monster Doodle Poster Style</strong><br>
+<a href="styles/mountain-trail-monster-doodle-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-doodle-gallery-snapshot-style/README.md"><img src="styles/neon-doodle-gallery-snapshot-style/preview-16x9.jpg" width="230" alt="Neon Doodle Gallery Snapshot representative image"></a><br>
+<strong>Neon Doodle Gallery Snapshot</strong><br>
+<a href="styles/neon-doodle-gallery-snapshot-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-kinetic-typographic-poster-style/README.md"><img src="styles/neon-kinetic-typographic-poster-style/preview-16x9.jpg" width="230" alt="Neon Kinetic Typographic Poster representative image"></a><br>
+<strong>Neon Kinetic Typographic Poster</strong><br>
+<a href="styles/neon-kinetic-typographic-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-outdoor-diary-longform-collage-style/README.md"><img src="styles/neon-outdoor-diary-longform-collage-style/preview-16x9.jpg" width="230" alt="Neon Outdoor Diary Longform Collage Style representative image"></a><br>
+<strong>Neon Outdoor Diary Longform Collage Style</strong><br>
+<a href="styles/neon-outdoor-diary-longform-collage-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-type-photo-scribble-poster/README.md"><img src="styles/neon-type-photo-scribble-poster/preview-16x9.jpg" width="230" alt="Neon Type Photo Scribble Poster representative image"></a><br>
+<strong>Neon Type Photo Scribble Poster</strong><br>
+<a href="styles/neon-type-photo-scribble-poster/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/olive-scribble-sports-poster-style/README.md"><img src="styles/olive-scribble-sports-poster-style/preview-16x9.jpg" width="230" alt="Olive Scribble Sports Poster Style representative image"></a><br>
+<strong>Olive Scribble Sports Poster Style</strong><br>
+<a href="styles/olive-scribble-sports-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/photo-illustration-overlay-poster-style/README.md"><img src="styles/photo-illustration-overlay-poster-style/preview-16x9.jpg" width="230" alt="Photo Illustration Overlay Poster representative image"></a><br>
+<strong>Photo Illustration Overlay Poster</strong><br>
+<a href="styles/photo-illustration-overlay-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/pink-anime-motorcycle-spec-poster-style/README.md"><img src="styles/pink-anime-motorcycle-spec-poster-style/preview-16x9.jpg" width="230" alt="Pink Anime Motorcycle Spec Poster Style representative image"></a><br>
+<strong>Pink Anime Motorcycle Spec Poster Style</strong><br>
+<a href="styles/pink-anime-motorcycle-spec-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/playful-mascot-doodle-snapshot-style/README.md"><img src="styles/playful-mascot-doodle-snapshot-style/preview-16x9.jpg" width="230" alt="Playful Mascot Doodle Snapshot Style representative image"></a><br>
+<strong>Playful Mascot Doodle Snapshot Style</strong><br>
+<a href="styles/playful-mascot-doodle-snapshot-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/pop-bubble-letter-photo-poster-style/README.md"><img src="styles/pop-bubble-letter-photo-poster-style/preview-16x9.jpg" width="230" alt="Pop Bubble Letter Photo Poster Style representative image"></a><br>
+<strong>Pop Bubble Letter Photo Poster Style</strong><br>
+<a href="styles/pop-bubble-letter-photo-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/prismatic-glass-animal-weekend-editorial/README.md"><img src="styles/prismatic-glass-animal-weekend-editorial/preview-16x9.jpg" width="230" alt="Prismatic Glass Animal Weekend Editorial representative image"></a><br>
+<strong>Prismatic Glass Animal Weekend Editorial</strong><br>
+<a href="styles/prismatic-glass-animal-weekend-editorial/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/quiet-luxury-furniture-nameplate-poster-style/README.md"><img src="styles/quiet-luxury-furniture-nameplate-poster-style/preview-16x9.jpg" width="230" alt="Quiet Luxury Furniture Nameplate Poster Style representative image"></a><br>
+<strong>Quiet Luxury Furniture Nameplate Poster Style</strong><br>
+<a href="styles/quiet-luxury-furniture-nameplate-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/red-black-manga-tabloid-poster-style/README.md"><img src="styles/red-black-manga-tabloid-poster-style/preview-16x9.jpg" width="230" alt="Red Black Manga Tabloid Poster Style representative image"></a><br>
+<strong>Red Black Manga Tabloid Poster Style</strong><br>
+<a href="styles/red-black-manga-tabloid-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/red-yellow-grunge-skate-cover-style/README.md"><img src="styles/red-yellow-grunge-skate-cover-style/preview-16x9.jpg" width="230" alt="Red Yellow Grunge Skate Cover Style representative image"></a><br>
+<strong>Red Yellow Grunge Skate Cover Style</strong><br>
+<a href="styles/red-yellow-grunge-skate-cover-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/retro-future-chrome-portrait-dossier/README.md"><img src="styles/retro-future-chrome-portrait-dossier/preview-16x9.jpg" width="230" alt="Retro Future Chrome Portrait Dossier representative image"></a><br>
+<strong>Retro Future Chrome Portrait Dossier</strong><br>
+<a href="styles/retro-future-chrome-portrait-dossier/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/scarlet-block-cutout-doodle-book-cover-style/README.md"><img src="styles/scarlet-block-cutout-doodle-book-cover-style/preview-16x9.jpg" width="230" alt="Scarlet Block Cutout Doodle Book Cover Style representative image"></a><br>
+<strong>Scarlet Block Cutout Doodle Book Cover Style</strong><br>
+<a href="styles/scarlet-block-cutout-doodle-book-cover-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/scarlet-court-photo-type-poster-style/README.md"><img src="styles/scarlet-court-photo-type-poster-style/preview-16x9.jpg" width="230" alt="Scarlet Court Photo Type Poster representative image"></a><br>
+<strong>Scarlet Court Photo Type Poster</strong><br>
+<a href="styles/scarlet-court-photo-type-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/scarlet-megatype-action-collage-style/README.md"><img src="styles/scarlet-megatype-action-collage-style/preview-16x9.jpg" width="230" alt="Scarlet Megatype Action Collage Style representative image"></a><br>
+<strong>Scarlet Megatype Action Collage Style</strong><br>
+<a href="styles/scarlet-megatype-action-collage-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/school-grid-paper-cutout-poster/README.md"><img src="styles/school-grid-paper-cutout-poster/preview-16x9.jpg" width="230" alt="School Grid Paper Cutout Poster representative image"></a><br>
+<strong>School Grid Paper Cutout Poster</strong><br>
+<a href="styles/school-grid-paper-cutout-poster/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/soft-analog-future-editorial-poster-style/README.md"><img src="styles/soft-analog-future-editorial-poster-style/preview-16x9.jpg" width="230" alt="Soft Analog Future Editorial Poster representative image"></a><br>
+<strong>Soft Analog Future Editorial Poster</strong><br>
+<a href="styles/soft-analog-future-editorial-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/subway-doodle-photo-hybrid-style/README.md"><img src="styles/subway-doodle-photo-hybrid-style/preview-16x9.jpg" width="230" alt="Subway Doodle Photo Hybrid representative image"></a><br>
+<strong>Subway Doodle Photo Hybrid</strong><br>
+<a href="styles/subway-doodle-photo-hybrid-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sun-faded-scenic-editorial-poster/README.md"><img src="styles/sun-faded-scenic-editorial-poster/preview-16x9.jpg" width="230" alt="Sun-Faded Scenic Editorial Poster representative image"></a><br>
+<strong>Sun-Faded Scenic Editorial Poster</strong><br>
+<a href="styles/sun-faded-scenic-editorial-poster/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunburst-fisheye-bubble-type-poster-style/README.md"><img src="styles/sunburst-fisheye-bubble-type-poster-style/preview-16x9.jpg" width="230" alt="Sunburst Fisheye Bubble Type Poster Style representative image"></a><br>
+<strong>Sunburst Fisheye Bubble Type Poster Style</strong><br>
+<a href="styles/sunburst-fisheye-bubble-type-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunlit-architectural-fashion-editorial/README.md"><img src="styles/sunlit-architectural-fashion-editorial/preview-16x9.jpg" width="230" alt="Sunlit Architectural Fashion Editorial representative image"></a><br>
+<strong>Sunlit Architectural Fashion Editorial</strong><br>
+<a href="styles/sunlit-architectural-fashion-editorial/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunlit-coastal-product-blitz/README.md"><img src="styles/sunlit-coastal-product-blitz/preview-16x9.jpg" width="230" alt="Sunlit Coastal Product Blitz representative image"></a><br>
+<strong>Sunlit Coastal Product Blitz</strong><br>
+<a href="styles/sunlit-coastal-product-blitz/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunlit-kinetic-block-type-photo-poster-style/README.md"><img src="styles/sunlit-kinetic-block-type-photo-poster-style/preview-16x9.jpg" width="230" alt="Sunlit Kinetic Block Type Photo Poster representative image"></a><br>
+<strong>Sunlit Kinetic Block Type Photo Poster</strong><br>
+<a href="styles/sunlit-kinetic-block-type-photo-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunlit-supermodel-nameplate-editorial/README.md"><img src="styles/sunlit-supermodel-nameplate-editorial/preview-16x9.jpg" width="230" alt="Sunlit Supermodel Nameplate Editorial representative image"></a><br>
+<strong>Sunlit Supermodel Nameplate Editorial</strong><br>
+<a href="styles/sunlit-supermodel-nameplate-editorial/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/surreal-fish-doodle-landmark-photo-collage-style/README.md"><img src="styles/surreal-fish-doodle-landmark-photo-collage-style/preview-16x9.jpg" width="230" alt="Surreal Fish Doodle Landmark Photo Collage Style representative image"></a><br>
+<strong>Surreal Fish Doodle Landmark Photo Collage Style</strong><br>
+<a href="styles/surreal-fish-doodle-landmark-photo-collage-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/surreal-megatype-dossier-collage/README.md"><img src="styles/surreal-megatype-dossier-collage/preview-16x9.jpg" width="230" alt="Surreal Megatype Dossier Collage representative image"></a><br>
+<strong>Surreal Megatype Dossier Collage</strong><br>
+<a href="styles/surreal-megatype-dossier-collage/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/tokyo-kawaii-travel-collage-poster-style/README.md"><img src="styles/tokyo-kawaii-travel-collage-poster-style/preview-16x9.jpg" width="230" alt="Tokyo Kawaii Travel Collage Poster representative image"></a><br>
+<strong>Tokyo Kawaii Travel Collage Poster</strong><br>
+<a href="styles/tokyo-kawaii-travel-collage-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/tri-color-hardcut-portrait-poster-style/README.md"><img src="styles/tri-color-hardcut-portrait-poster-style/preview-16x9.jpg" width="230" alt="Tri Color Hardcut Portrait Poster Style representative image"></a><br>
+<strong>Tri Color Hardcut Portrait Poster Style</strong><br>
+<a href="styles/tri-color-hardcut-portrait-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/urban-photo-ink-beast-collage-style/README.md"><img src="styles/urban-photo-ink-beast-collage-style/preview-16x9.jpg" width="230" alt="Urban Photo Ink Beast Collage Style representative image"></a><br>
+<strong>Urban Photo Ink Beast Collage Style</strong><br>
+<a href="styles/urban-photo-ink-beast-collage-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/urban-transit-doodle-diary-style/README.md"><img src="styles/urban-transit-doodle-diary-style/preview-16x9.jpg" width="230" alt="Urban Transit Doodle Diary Style representative image"></a><br>
+<strong>Urban Transit Doodle Diary Style</strong><br>
+<a href="styles/urban-transit-doodle-diary-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/vermilion-photocopy-tension-editorial/README.md"><img src="styles/vermilion-photocopy-tension-editorial/preview-16x9.jpg" width="230" alt="Vermilion Photocopy Tension Editorial representative image"></a><br>
+<strong>Vermilion Photocopy Tension Editorial</strong><br>
+<a href="styles/vermilion-photocopy-tension-editorial/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/warm-fisheye-product-impact-ad-style/README.md"><img src="styles/warm-fisheye-product-impact-ad-style/preview-16x9.jpg" width="230" alt="Warm Fisheye Product Impact Ad Style representative image"></a><br>
+<strong>Warm Fisheye Product Impact Ad Style</strong><br>
+<a href="styles/warm-fisheye-product-impact-ad-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/xerox-neon-editorial-collage-style/README.md"><img src="styles/xerox-neon-editorial-collage-style/preview-16x9.jpg" width="230" alt="Xerox Neon Editorial Collage representative image"></a><br>
+<strong>Xerox Neon Editorial Collage</strong><br>
+<a href="styles/xerox-neon-editorial-collage-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/y2k-grunge-hiphop-cutout-poster-style/README.md"><img src="styles/y2k-grunge-hiphop-cutout-poster-style/preview-16x9.jpg" width="230" alt="Y2K Grunge Hip-Hop Cutout Poster Style representative image"></a><br>
+<strong>Y2K Grunge Hip-Hop Cutout Poster Style</strong><br>
+<a href="styles/y2k-grunge-hiphop-cutout-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/y2k-mirror-ui-scribble-collage-style/README.md"><img src="styles/y2k-mirror-ui-scribble-collage-style/preview-16x9.jpg" width="230" alt="Y2K Mirror UI Scribble Collage Style representative image"></a><br>
+<strong>Y2K Mirror UI Scribble Collage Style</strong><br>
+<a href="styles/y2k-mirror-ui-scribble-collage-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/y2k-streetwear-sticker-collage-style/README.md"><img src="styles/y2k-streetwear-sticker-collage-style/preview-16x9.jpg" width="230" alt="Y2K Streetwear Sticker Collage Style representative image"></a><br>
+<strong>Y2K Streetwear Sticker Collage Style</strong><br>
+<a href="styles/y2k-streetwear-sticker-collage-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/yellow-black-manga-food-zine-ad-style/README.md"><img src="styles/yellow-black-manga-food-zine-ad-style/preview-16x9.jpg" width="230" alt="Yellow Black Manga Food Zine Ad Style representative image"></a><br>
+<strong>Yellow Black Manga Food Zine Ad Style</strong><br>
+<a href="styles/yellow-black-manga-food-zine-ad-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.md"><img src="styles/yellow-graffiti-fisheye-manga-street-poster-style/preview-16x9.jpg" width="230" alt="Yellow Graffiti Fisheye Manga Street Poster Style representative image"></a><br>
+<strong>Yellow Graffiti Fisheye Manga Street Poster Style</strong><br>
+<a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+</table>
+### 产品、材质与 3D / Product, material, and 3D
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-hud-macro-product-poster/README.md"><img src="styles/blue-hud-macro-product-poster/preview-16x9.jpg" width="230" alt="Blue HUD Macro Creator Tech Poster representative image"></a><br>
+<strong>Blue HUD Macro Creator Tech Poster</strong><br>
+<a href="styles/blue-hud-macro-product-poster/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/electric-blue-silhouette-product-launch-style/README.md"><img src="styles/electric-blue-silhouette-product-launch-style/preview-16x9.jpg" width="230" alt="Electric Blue Silhouette Product Launch Style representative image"></a><br>
+<strong>Electric Blue Silhouette Product Launch Style</strong><br>
+<a href="styles/electric-blue-silhouette-product-launch-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/monochrome-grid-sneaker-tech-spec/README.md"><img src="styles/monochrome-grid-sneaker-tech-spec/preview-16x9.jpg" width="230" alt="Monochrome Grid Sneaker Tech Spec representative image"></a><br>
+<strong>Monochrome Grid Sneaker Tech Spec</strong><br>
+<a href="styles/monochrome-grid-sneaker-tech-spec/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/multi-color-beverage-splash-ad-system-style/README.md"><img src="styles/multi-color-beverage-splash-ad-system-style/preview-16x9.jpg" width="230" alt="Multi-Color Beverage Splash Ad System Style representative image"></a><br>
+<strong>Multi-Color Beverage Splash Ad System Style</strong><br>
+<a href="styles/multi-color-beverage-splash-ad-system-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-plush-gadget-pop-3d-style/README.md"><img src="styles/neon-plush-gadget-pop-3d-style/preview-16x9.jpg" width="230" alt="Neon Plush Gadget Pop 3D Style representative image"></a><br>
+<strong>Neon Plush Gadget Pop 3D Style</strong><br>
+<a href="styles/neon-plush-gadget-pop-3d-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-stadium-3d-hero-type-poster-style/README.md"><img src="styles/neon-stadium-3d-hero-type-poster-style/preview-16x9.jpg" width="230" alt="Neon Stadium 3D Hero Type Poster Style representative image"></a><br>
+<strong>Neon Stadium 3D Hero Type Poster Style</strong><br>
+<a href="styles/neon-stadium-3d-hero-type-poster-style/README.md">打开 README / Open README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/plush-city-festival-mobile-poster-style/README.md"><img src="styles/plush-city-festival-mobile-poster-style/preview-16x9.jpg" width="230" alt="Plush City Festival Mobile Poster representative image"></a><br>
+<strong>Plush City Festival Mobile Poster</strong><br>
+<a href="styles/plush-city-festival-mobile-poster-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunny-3d-avatar-campaign-style/README.md"><img src="styles/sunny-3d-avatar-campaign-style/preview-16x9.jpg" width="230" alt="Sunny 3D Avatar Campaign Style representative image"></a><br>
+<strong>Sunny 3D Avatar Campaign Style</strong><br>
+<a href="styles/sunny-3d-avatar-campaign-style/README.md">打开 README / Open README</a>
+</td>
+<td width="33%"></td>
+</tr>
+</table>
+
+## 包结构 / Package structure
 
 ```text
-OhMyStyle/
-├── style-packages/             # Executable packages by domain and direction
-│   ├── artists/
-│   ├── photographers/
-│   ├── movements/
-│   ├── schools/
-│   ├── techniques/
-│   ├── game-art/
-│   ├── presets/
-│   └── composites/             # Data-only multi-style recipes
-├── registry/                   # Generated discovery index for core resources
-├── styles/                     # Legacy style.json catalog
-├── schema/                     # Package and render-task schemas
-├── tasks/                      # Strict, fuzzy, and fixed benchmark tasks
-│   └── benchmarks/             # Shared five-task visual-style benchmark suite
-├── tools/                      # Compiler, preflight, masks, metrics, validators
-├── docs/                       # Workflow, package notes, catalog, provenance guidance
-├── assets/                     # Legacy catalog preview assets
-├── NOTICE                      # Attribution and inherited licensing boundaries
-├── LICENSE                     # Preserved inherited license text
-├── LICENSE-OHMYSTYLE.md        # License for OhMyStyle additions
-├── CONTRIBUTING.md             # Contribution, provenance, and validation rules
-└── README.md
+style-packages/<category>/<package>/
+├── README.md                 # 中文优先的双语入口 / bilingual entry point
+├── package.yaml              # package contract
+├── prompts/                  # base and negative prompts
+├── references/               # provenance-aware reference manifest
+├── examples/                 # anonymous generated examples
+├── reproduction.yaml         # observable reproduction rules
+└── provenance.yaml           # source and rights boundary
 ```
 
-## Validation
+继承的 110 个轻量预设仍在 `styles/` 中，每个目录现在也有自己的 README；它们保留原始归属和兼容结构，不被重新包装成 OhMyStyle 原创。
 
-Run the checks before publishing a package or changing the runtime:
+The inherited 110 lightweight presets remain under `styles/`. Each directory now has its own README while retaining the original attribution and compatibility structure.
+
+## 来源、版权与责任 / Provenance and rights
+
+请先阅读 [NOTICE](NOTICE)、[LICENSE](LICENSE)、[LICENSE-OHMYSTYLE.md](LICENSE-OHMYSTYLE.md) 和具体包的 `provenance.yaml`。外部作品、游戏截图、摄影作品、商标、平台页面和用户上传内容不因出现在仓库中就获得新的授权。无法确认再分发权利的素材应使用链接和文字描述，不应下载进仓库。
+
+Read [NOTICE](NOTICE), [LICENSE](LICENSE), [LICENSE-OHMYSTYLE.md](LICENSE-OHMYSTYLE.md), and each package's `provenance.yaml`. External artworks, game screenshots, photographs, trademarks, source pages, and user uploads do not receive a new license merely by being referenced here. When redistribution rights are unclear, keep a link and description instead of bundling the asset.
+
+## 开发与贡献 / Development and contribution
 
 ```bash
-python -m unittest discover -s tests -v
 python tools/validate-package.py style-packages
-python tools/validate-resources.py style-packages
-python tools/validate-benchmarks.py style-packages
-python tools/validate-composite.py style-packages/composites
-python tools/validate.py
 python scripts/validate-style-json.py
+python tools/validate.py
+python tools/generate-style-readmes.py --check
 git diff --check
 ```
 
-## Reporting Issues
-
-Please open an issue with the affected package or tool, the exact command,
-the model/provider adapter involved, and a minimal reproducible example. Do
-not attach copyrighted source artwork or private prompts unless you have the
-right to redistribute them.
-
-## Contributing
-
-For a new executable package, start with [Demo Package
-Set](docs/DEMO-PACKAGES.md), provide a complete provenance record, and keep
-reference rights explicit. For a legacy `style.json` entry, follow
-[CONTRIBUTING.md](CONTRIBUTING.md) and its folder-level validation rules.
-
-Please do not present a package as an exact reproduction of a living artist's
-or photographer's work. Describe observable techniques, compositional habits,
-materials, lighting, and context, and keep new content independently authored.
-
-## Acknowledgements
-
-The runtime uses Python, Pillow, PyYAML, JSON Schema validation, and GitHub as
-its open tooling foundation. Historical context and reference provenance are
-recorded per package; acknowledgements do not transfer ownership of external
-artworks or imply endorsement by their creators or institutions.
-
-## Project origin and licensing
-
-OhMyStyle is independently maintained and is not a GitHub fork. It began from
-the repository structure and selected materials of the original [AI Visual
-Prompt Cookbook](https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook), which is
-credited in [NOTICE](NOTICE).
-
-The applicable license and attribution boundaries differ between inherited
-code, legacy prompt content, preview assets, external references, and new
-package material. Read [LICENSE](LICENSE),
-[LICENSE-OHMYSTYLE.md](LICENSE-OHMYSTYLE.md), and [NOTICE](NOTICE) before
-copying or redistributing any part of the repository. Do not infer artwork
-rights from the presence of a link or an image in the catalog.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for provenance, licensing, package, and validation requirements.

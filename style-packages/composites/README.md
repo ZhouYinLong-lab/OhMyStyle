@@ -1,35 +1,25 @@
-# Cross-style composite recipes
+# 交叉风格配方 / Cross-style recipes
 
-Each folder in this directory is a small, data-only recipe that references
-existing executable style packages. It does not copy their prompts or assets.
-The normal package runtime remains independent from this layer; a composite is
-compiled only when the user explicitly requests several style bases together.
+本目录收录 3 个独立风格包。每个小单元都有代表图、名称和双语 README；点击 README 可查看来源、版权边界和三种使用方式。
 
-## Three modes
+This directory contains 3 independent style packages. Each package has a representative image, a bilingual README, provenance notes, and three usage modes.
 
-- `stack`: assign each base a different role, such as `medium`, `lighting`, or
-  `composition`. Each role remains authoritative in its own dimension.
-- `blend`: merge compatible bases within a shared dimension using normalized
-  `weight` values. This is useful for two palette or two lighting signatures.
-- `contrast`: assign each base to an explicit `zone`, such as `foreground` and
-  `background`. Zone boundaries prevent a medium or surface rule from leaking
-  across the whole image.
-
-When `mode` is omitted, the runtime infers it in this order: explicit zones
-become `contrast`; repeated roles or blend hints become `blend`; otherwise the
-recipe defaults to `stack`. `auto.default_mode` can provide a deliberate
-fallback, while `auto.hints` can make the intent explicit.
-
-## Recipe fields
-
-`bases[].package` is a relative path under `style-packages/`. `role` describes
-the style dimension being contributed. `weight` is used by `blend` and is
-normalized at compile time. `zone` is required by `contrast`. `capabilities`
-and `incompatibilities` provide machine-readable conflict checks. `overrides`,
-`constraints.must`, `constraints.avoid`, and `conflicts.policy` make the final
-composition auditable instead of silently concatenating prompts.
-
-The compiler accepts `fail`, `warn`, or `resolve` conflict policies. A `fail`
-policy stops before prompt generation; `warn` records the conflict in the
-compiled job; `resolve` records the requested resolution rules for a future
-provider adapter. No style-specific branch is hard-coded in the runtime.
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="rpg-maker-x-gauguin/README.md"><img src="../game-art/rpg-maker-pixel-art/examples/accepted/anonymous-v1.png" width="230" alt="RPG Maker Foreground + Gauguin Background representative image"></a><br>
+<strong>RPG Maker Foreground + Gauguin Background</strong><br>
+<a href="rpg-maker-x-gauguin/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="rpg-maker-x-turner/README.md"><img src="../game-art/rpg-maker-pixel-art/examples/accepted/anonymous-v1.png" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere representative image"></a><br>
+<strong>RPG Maker Pixel Art + Turner Atmosphere</strong><br>
+<a href="rpg-maker-x-turner/README.md">打开 README / Open README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="vermeer-x-monet/README.md"><img src="../artists/johannes-vermeer/examples/accepted/anonymous-v1.png" width="230" alt="Vermeer Light + Monet Color representative image"></a><br>
+<strong>Vermeer Light + Monet Color</strong><br>
+<a href="vermeer-x-monet/README.md">打开 README / Open README</a>
+</td>
+</tr>
+</table>

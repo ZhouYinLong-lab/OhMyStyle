@@ -66,14 +66,18 @@ jobs:
           done
           exit $fail
 
-      - name: Check style folders contain exactly the three public files
+      - name: Check style folders contain the required public files
         run: |
           fail=0
           for d in styles/*/; do
             if [ ! -f "$d/style.json" ]; then
               continue
             fi
-            files=$(ls "$d" | grep -v '^\.DS_Store$' | sort | tr '\n' ' ')
+            # README.md is the package entry point; the legacy validator still
+            # requires the original three public assets below.
+            files=$(find "$d" -maxdepth 1 -type f -printf '%f\n' \
+              | grep -v -E '^(README\.md|\.DS_Store)$' \
+              | sort | tr '\n' ' ')
             if [ "$files" != "preview-16x9.jpg preview-9x16.jpg style.json " ]; then
               echo "::error::$d has unexpected contents: $files"
               fail=1
