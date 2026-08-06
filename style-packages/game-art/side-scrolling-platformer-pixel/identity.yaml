@@ -1,0 +1,11 @@
+canonical_name: 横版平台跳跃像素美术
+entity_type: game-art
+period_or_scope: 游戏美术类型
+region_or_context: international
+primary_medium: game
+subject_matter:
+- 横向层次、平台可读性、像素簇与背景视差
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

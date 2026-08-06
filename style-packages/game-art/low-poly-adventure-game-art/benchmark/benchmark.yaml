@@ -1,0 +1,8 @@
+package_id: low-poly-adventure-game-art
+representative_image: ../gallery-16x9.jpg
+fixed_tests:
+  - portrait_or_figure
+  - still_life_or_object
+  - architecture_or_environment
+  - minimal_composition
+  - ambiguous_brief_compilation

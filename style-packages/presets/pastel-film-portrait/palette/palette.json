@@ -1,0 +1,20 @@
+{
+  "name": "粉彩胶片人像",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#D6B2AA",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#A8B9C2",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#E3D6C0",
+      "role": "package palette"
+    }
+  ]
+}

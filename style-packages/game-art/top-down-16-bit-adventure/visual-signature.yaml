@@ -1,0 +1,26 @@
+medium: game
+signature: 16位色块、俯视网格、可读地形与有限调色板
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#D06A3A'
+  - '#53646C'
+  - '#8C8449'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 16位色块、俯视网格、可读地形与有限调色板
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

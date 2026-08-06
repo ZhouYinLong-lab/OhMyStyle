@@ -1,0 +1,17 @@
+id: natural-window-light
+name: 自然窗光
+kind: preset
+domain: photography
+version: 0.1.0
+summary: Independent Natural Window Light style package focused on 大窗软光、自然阴影、低饱和材质与真实镜头表现;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

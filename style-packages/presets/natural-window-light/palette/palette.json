@@ -1,0 +1,20 @@
+{
+  "name": "自然窗光",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#D7D1C4",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#9DA79B",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#B48A6A",
+      "role": "package palette"
+    }
+  ]
+}

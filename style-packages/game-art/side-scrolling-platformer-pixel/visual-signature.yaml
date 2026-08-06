@@ -1,0 +1,26 @@
+medium: game
+signature: 横向层次、平台可读性、像素簇与背景视差
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#3B6F74'
+  - '#D48A3C'
+  - '#24333C'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 横向层次、平台可读性、像素簇与背景视差
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

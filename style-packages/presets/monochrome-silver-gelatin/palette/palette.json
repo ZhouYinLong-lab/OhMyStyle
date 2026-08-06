@@ -1,0 +1,20 @@
+{
+  "name": "银盐黑白纪实",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#202426",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#777875",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#D4D1C9",
+      "role": "package palette"
+    }
+  ]
+}

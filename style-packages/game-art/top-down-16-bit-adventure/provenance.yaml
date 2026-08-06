@@ -1,0 +1,13 @@
+package_id: top-down-16-bit-adventure
+research_basis:
+- title: Top-down 16-bit Adventure Game Art
+  creator: Anonymous game-art study
+  period: 游戏美术类型
+  source_url: https://opengameart.org/
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.

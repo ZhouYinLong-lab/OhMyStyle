@@ -1,0 +1,11 @@
+canonical_name: 低多边形冒险游戏美术
+entity_type: game-art
+period_or_scope: 游戏美术类型
+region_or_context: international
+primary_medium: game
+subject_matter:
+- 低多边形面、简化材质、清晰光照与可探索空间
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style
