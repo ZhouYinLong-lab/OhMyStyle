@@ -49,4 +49,5 @@ evaluate measurable constraints before a sample is accepted.
 - [x] Add reference selection and run manifest.
 - [x] Add deterministic render evaluator.
 - [x] Add tests and documentation.
-- [ ] Validate, commit, and push.
+- [x] Add CIELAB custom-color checks after reviewing the equal-lightness portrait.
+- [ ] Validate, commit, and push the iteration.

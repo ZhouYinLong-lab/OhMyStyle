@@ -10,7 +10,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
-from render_metrics import evaluate_image  # noqa: E402
+from render_metrics import evaluate_image, hex_to_rgb  # noqa: E402
 from style_runtime import compile_job  # noqa: E402
 
 
@@ -18,6 +18,10 @@ PACKAGE = ROOT / "style-packages/presets/high-chroma-color-pairing"
 
 
 class StyleRuntimeTests(unittest.TestCase):
+    def test_custom_hex_colors_are_supported(self) -> None:
+        self.assertEqual(hex_to_rgb("#0070FC"), (0, 112, 252))
+        self.assertEqual(hex_to_rgb("C85400"), (200, 84, 0))
+
     def test_compiler_selects_palette_reference_and_explicit_pair(self) -> None:
         job = compile_job(
             PACKAGE,
@@ -53,7 +57,7 @@ class StyleRuntimeTests(unittest.TestCase):
             )
         self.assertGreater(result["metrics"]["pair_coverage"], 0.80)
         self.assertEqual(result["status"], "fail")
-        self.assertFalse(result["checks"]["luminance_delta"]["pass"])
+        self.assertFalse(result["checks"]["lstar_delta"]["pass"])
         self.assertTrue(result["checks"]["area_ratio"]["pass"])
 
 

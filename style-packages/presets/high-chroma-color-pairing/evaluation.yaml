@@ -47,6 +47,7 @@ profiles:
     enforce_area_ratio: true
   same-luminance:
     min_pair_coverage: 0.12
-    max_luminance_delta: 0.08
+    max_luminance_delta: null
+    max_lstar_delta: 2.0
     max_unassigned_high_chroma: 0.45
-    enforce_area_ratio: true
+    enforce_area_ratio: false

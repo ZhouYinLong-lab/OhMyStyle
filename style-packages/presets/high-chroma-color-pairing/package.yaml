@@ -2,7 +2,7 @@ id: high-chroma-color-pairing
 name: High-Chroma Color Pairing
 kind: preset
 domain: hybrid
-version: 0.1.0
+version: 0.2.0
 entity: catalog/presets/high-chroma-color-pairing/entity.yaml
 summary: >-
   A subject-neutral color-direction preset built from decisive high-chroma

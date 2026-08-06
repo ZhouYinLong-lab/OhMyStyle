@@ -59,6 +59,23 @@ The package currently has explicit profiles for `default`, `flat-poster`, and
 `same-luminance`. This prevents a visually attractive but technically invalid
 render from being treated as a successful reproduction.
 
+For a task with colors that are not part of the package palette, use explicit
+HEX overrides and a CIELAB threshold:
+
+```bash
+python tools/evaluate-render.py \
+  style-packages/presets/high-chroma-color-pairing \
+  path/to/portrait.png \
+  --profile same-luminance \
+  --dominant-hex 0070FC \
+  --counter-hex C85400 \
+  --max-lstar-delta 2
+```
+
+The evaluator reports both normalized luminance and CIELAB `L*`; the latter is
+the gate to use for equal-lightness tests. A visually improved render can still
+remain rejected when the measured `L*` difference is too large.
+
 ## 3. Record a run
 
 ```bash

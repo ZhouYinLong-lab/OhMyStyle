@@ -17,6 +17,31 @@ def _luminance(rgb: tuple[int, int, int]) -> float:
     return (0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]) / 255.0
 
 
+def _srgb_to_linear(value: int) -> float:
+    value /= 255.0
+    return value / 12.92 if value <= 0.04045 else ((value + 0.055) / 1.055) ** 2.4
+
+
+def _lstar(rgb: tuple[int, int, int]) -> float:
+    """Approximate CIE L* using sRGB/D65 relative XYZ."""
+    red, green, blue = (_srgb_to_linear(channel) for channel in rgb)
+    y = 0.2126 * red + 0.7152 * green + 0.0722 * blue
+    epsilon = 216 / 24389
+    kappa = 24389 / 27
+    fy = y ** (1 / 3) if y > epsilon else (kappa * y + 16) / 116
+    return 116 * fy - 16
+
+
+def hex_to_rgb(value: str) -> tuple[int, int, int]:
+    value = value.strip().lstrip("#")
+    if len(value) != 6:
+        raise ValueError(f"Expected a six-digit HEX color, got {value!r}")
+    try:
+        return tuple(int(value[index : index + 2], 16) for index in (0, 2, 4))  # type: ignore[return-value]
+    except ValueError as exc:
+        raise ValueError(f"Invalid HEX color: {value!r}") from exc
+
+
 def _distance(left: tuple[int, int, int], right: tuple[int, int, int]) -> float:
     return math.sqrt(sum((a - b) ** 2 for a, b in zip(left, right))) / 441.673
 
@@ -70,11 +95,21 @@ def evaluate_image(
     pair_id: str | None = None,
     profile: str = "default",
     color_threshold: float = 0.28,
+    dominant_rgb: tuple[int, int, int] | None = None,
+    counter_rgb: tuple[int, int, int] | None = None,
+    max_lstar_delta: float | None = None,
 ) -> dict[str, Any]:
     runtime = load_package(package_path)
-    pair = choose_pair(runtime, pair_id)
-    dominant = tuple(pair["dominant"]["rgb"])
-    counter = tuple(pair["counter"]["rgb"])
+    if (dominant_rgb is None) != (counter_rgb is None):
+        raise ValueError("dominant_rgb and counter_rgb must be supplied together")
+    if dominant_rgb is None:
+        pair = choose_pair(runtime, pair_id)
+        dominant = tuple(pair["dominant"]["rgb"])
+        counter = tuple(pair["counter"]["rgb"])
+    else:
+        pair = {"id": "custom", "dominant": {"rgb": list(dominant_rgb)}, "counter": {"rgb": list(counter_rgb)}}
+        dominant = dominant_rgb
+        counter = counter_rgb
     with Image.open(image_path) as opened:
         image = ImageOps.exif_transpose(opened).convert("RGB")
         pixels = _pixels(image)
@@ -101,8 +136,12 @@ def evaluate_image(
     dominant_luma = sum(_luminance(pixel) for pixel in dominant_pixels) / max(len(dominant_pixels), 1)
     counter_luma = sum(_luminance(pixel) for pixel in counter_pixels) / max(len(counter_pixels), 1)
     luminance_delta = abs(dominant_luma - counter_luma) if dominant_pixels and counter_pixels else 1.0
+    dominant_lstar = sum(_lstar(pixel) for pixel in dominant_pixels) / max(len(dominant_pixels), 1)
+    counter_lstar = sum(_lstar(pixel) for pixel in counter_pixels) / max(len(counter_pixels), 1)
+    lstar_delta = abs(dominant_lstar - counter_lstar) if dominant_pixels and counter_pixels else 100.0
 
     profile_data = runtime["evaluation"].get("profiles", {}).get(profile, {})
+    lstar_limit = max_lstar_delta if max_lstar_delta is not None else profile_data.get("max_lstar_delta")
     area_rules = runtime["reproduction"].get("area_ratio", {})
     dominant_range = _percentage_range(area_rules.get("dominant_color", ""))
     counter_range = _percentage_range(area_rules.get("counter_color", ""))
@@ -136,6 +175,11 @@ def evaluate_image(
             "pass": profile_data.get("max_luminance_delta") is None
             or luminance_delta <= float(profile_data["max_luminance_delta"]),
         },
+        "lstar_delta": {
+            "value": round(lstar_delta, 4),
+            "maximum": lstar_limit,
+            "pass": lstar_limit is None or lstar_delta <= float(lstar_limit),
+        },
         "mean_edge_delta": {
             "value": round(mean_edge_delta, 4),
             "maximum": profile_data.get("max_mean_edge_delta"),
@@ -156,6 +200,9 @@ def evaluate_image(
             "dominant_luminance": round(dominant_luma, 4),
             "counter_luminance": round(counter_luma, 4),
             "luminance_delta": round(luminance_delta, 4),
+            "dominant_lstar": round(dominant_lstar, 4),
+            "counter_lstar": round(counter_lstar, 4),
+            "lstar_delta": round(lstar_delta, 4),
             "mean_edge_delta": round(mean_edge_delta, 4),
             "global_luminance_std": round(global_luma_std, 4),
             "unassigned_high_chroma": round(unassigned_high_chroma / total, 4),
