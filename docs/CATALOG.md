@@ -10,10 +10,9 @@ gallery. Each preset also has its own bilingual entry point.
 ## Why this file is short / 为什么这里不再复制全文
 
 This file is a stable navigation entry rather than a second hand-maintained
-110-item catalog. The generated gallery is produced by
-[`tools/generate-style-readmes.py`](../tools/generate-style-readmes.py), so
-names, thumbnails, and links have one source of truth.
+110-item catalog. The gallery is maintained as static Markdown so the
+published links and representative images remain reviewable in pull requests.
 
 这里不再重复维护 110 个条目的完整描述，避免根 README、分类 README、`docs` 索引
-三处内容漂移。画廊由 [`tools/generate-style-readmes.py`](../tools/generate-style-readmes.py)
-生成，名称、缩略图和跳转链接只有一个生成来源。
+三处内容漂移。画廊使用静态 Markdown 维护，名称、缩略图和跳转链接可以在 Pull Request
+中直接审阅。
