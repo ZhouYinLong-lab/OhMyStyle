@@ -82,6 +82,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </td>
 </tr>
 </table>
+
 ### 游戏美术
 
 <table>
@@ -99,6 +100,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%"></td>
 </tr>
 </table>
+
 ### 艺术流派与历史时期
 
 <table>
@@ -137,6 +139,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </td>
 </tr>
 </table>
+
 ### 摄影师
 
 <table>
@@ -192,6 +195,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </td>
 </tr>
 </table>
+
 ### 原创预设
 
 <table>
@@ -205,6 +209,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%"></td>
 </tr>
 </table>
+
 ### 艺术与摄影学校
 
 <table>
@@ -218,6 +223,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%"></td>
 </tr>
 </table>
+
 ### 工艺与媒介
 
 <table>
@@ -231,6 +237,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%"></td>
 </tr>
 </table>
+
 
 ### 继承的 110 个轻量预设
 
@@ -251,6 +258,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/composites/vermeer-x-monet/README.md"><img src="style-packages/composites/vermeer-x-monet/examples/generated/anonymous-v1.png" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>维米尔光线 + 莫奈色彩</strong></td>
 </tr>
 </table>
+
 
 ## 来源与版权
 

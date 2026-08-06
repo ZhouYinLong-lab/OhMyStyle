@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A sixteenth-century Italian painting system built on careful drawing, proportioned figures, coherent space, calm narrative action, and controlled color; Raphael's School of Athens is one reference case, not a template.
+以严谨素描、匀称人体、连贯空间、从容的叙事动作和受控色彩建立盛期意大利绘画秩序；《雅典学院》只是参考案例，不是固定构图模板。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

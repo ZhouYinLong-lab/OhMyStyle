@@ -6,7 +6,7 @@
 
 ## 简介
 
-A full-bleed dusk-photo poster system with dark navy silhouettes, oversized cyan and white typography, a huge cropped bottom word, script-like swashes, tiny editorial microcopy, and clean vector icon overlays.
+把暮色照片铺满画面，用深海军蓝剪影、青白大字、底部裁切的大词、手写式飘带和干净的矢量图标叠出完整海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

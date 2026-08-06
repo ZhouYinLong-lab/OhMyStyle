@@ -6,7 +6,7 @@
 
 ## 简介
 
-A nostalgic analog diary-collage portrait system with a large side-profile illustrated subject, cream graph-paper background, sticker-like personal objects, distressed orange hand lettering, and heavy scanned print texture.
+把侧脸插画人物、奶油色方格纸、贴纸般的私人小物、磨损的橙色手写字和扫描印刷纹理组合成一张带有个人日记气质的模拟拼贴肖像。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

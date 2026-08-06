@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-energy action-poster system built from staggered photographic tiles on white space, a cutout motion subject, bold black condensed type, loose ink speed marks, and sparse line-art urban scaffolding.
+以多张被裁切、错位和重叠的编辑照片为主体，加入大字、彩色块面、箭头、注释和轻微印刷偏移，形成具有运动方向的杂志拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

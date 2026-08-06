@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A chronophotography profile built from analytical motion traces, dark technical grounds, repeated body phases, and instrument-like evidence rather than contact-sheet narrative.
+以分析运动轨迹、深色技术背景、重复的人体阶段和仪器般的证据感构成连续摄影，不把画面处理成普通的接触印样故事板。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

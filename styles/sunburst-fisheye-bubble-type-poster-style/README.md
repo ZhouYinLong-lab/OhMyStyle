@@ -6,7 +6,7 @@
 
 ## 简介
 
-An ultra-low-angle fisheye summer lifestyle poster style with a close photographic subject, saturated cobalt sky, huge arched lemon-yellow bubble typography, warm orange type shading, Y2K accessories, and heavy analog grain.
+以极低机位鱼眼夏日照片、饱和钴蓝天空、拱形柠檬黄泡泡字、暖橙字面阴影、Y2K 配件和明显模拟颗粒制造活泼的生活方式海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

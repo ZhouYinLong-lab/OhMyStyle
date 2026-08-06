@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A transitional Greek visual language where patterned figures become more naturalistic, narrative pottery expands, and black-figure or red-figure contrast organizes bodies, animals, ornament, and mythic action.
+表现希腊视觉从图案化人物走向自然观察的过渡：用叙事性陶器画面、黑绘或红绘的强对比，组织人物、动物、装饰和神话动作。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

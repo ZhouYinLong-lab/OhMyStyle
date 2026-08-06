@@ -6,7 +6,7 @@
 
 ## 简介
 
-A naive flat poster system with a full sky-blue field, a rough house-shaped white inset, giant uneven black hand-lettering, small badge labels, and simple thick-outlined cartoon home-life scenes drawn like marker doodles.
+以整面天蓝底、房屋形白色内框、巨大不均匀黑色手写字、小徽章和粗轮廓卡通家庭场景，组成稚拙平面的居家生活海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

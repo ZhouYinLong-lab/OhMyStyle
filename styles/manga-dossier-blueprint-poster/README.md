@@ -6,7 +6,7 @@
 
 ## 简介
 
-A distressed manga character-dossier poster system with cream paper margins, oversized condensed typography, grayscale ink hero portraits, cobalt-blue technical panels, cyan kinetic effects, small inset frames, catalog labels, and editorial annotation rails.
+把漫画人物、工程蓝图、网格、标注线、材料分解小图和蓝白单色印刷组合成技术档案式海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

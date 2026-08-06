@@ -6,7 +6,7 @@
 
 ## 简介
 
-A dense neo-editorial poster system that layers monumental white filled and outlined typography behind a centered surreal photographic cutout sculpture, then frames it with technical microcopy, serial numbers, ruled panels, small warning labels, celestial symbols, and coarse vintage print grain on a deep black field.
+让巨大白色填充与描边字位于中央超现实照片剪裁雕塑之后，再用技术小字、序列号、分栏、警示标签、星体符号和粗旧印刷颗粒框住深黑画面。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

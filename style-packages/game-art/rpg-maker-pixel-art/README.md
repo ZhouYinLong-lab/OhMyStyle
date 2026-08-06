@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A 2D tile-based pixel-game direction built from compact sprites, crisp nearest-neighbor edges, layered environments, restrained palettes, and warm-cool lighting. It supports exploration, dialogue, puzzle, combat, menu, and transition scenes without requiring a particular subject.
+以紧凑的角色精灵、清晰的最近邻像素边缘、分层环境、克制的色板和冷暖照明构成 2D 瓦片式游戏画面，可适配探索、对话、解谜、战斗、菜单和转场。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

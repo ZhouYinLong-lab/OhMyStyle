@@ -6,7 +6,7 @@
 
 ## 简介
 
-A dense motorsport dossier poster system that pairs one original anime rider with one hero motorcycle. Each poster combines a glossy three-quarter product view, a full-body cel-shaded character, oversized italic model-code typography, a pale cream and hot-magenta editorial grid, a monochrome halftone character echo, a three-panel detail strip, and a compact technical specification card. The series keeps one visual grammar while changing the motorcycle, rider styling, accent color, text, and performance details in every case.
+以原创动漫骑手和主角摩托车为一组，每张同时呈现三分之四产品视角、全身赛璐璐人物、斜体型号字、奶油与热洋红编辑网格、黑白半调回声、细节条和技术规格卡。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

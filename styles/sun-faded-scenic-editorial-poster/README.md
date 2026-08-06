@@ -6,7 +6,7 @@
 
 ## 简介
 
-A nostalgic scenic editorial poster system that combines enormous warm-ivory condensed headlines, one flowing tangerine script accent, tiny travel-magazine microcopy, and a low-angle analog photograph beneath a broad cyan sky with sun-faded film grain.
+以巨大的暖象牙色窄体标题、一笔流动的橘色手写字、旅行杂志小字和低机位模拟照片为主体，照片置于宽阔青天下并带有晒褪的胶片颗粒。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A dense Japanese-manga-inspired food and product zine advertisement style with black ink linework, yellow advertising blocks, cream paper fields, dramatic cropped character panels, glossy illustrated hero objects, giant warped display typography, small Chinese editorial copy, and rough print texture.
+以黑色墨线、黄色广告块、奶油纸面、戏剧化裁切人物、亮面插画产品、扭曲展示字、少量中文编辑小字和粗糙印刷纹理，模拟日式漫画食品 zine 广告。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

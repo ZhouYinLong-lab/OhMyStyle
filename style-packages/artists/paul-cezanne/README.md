@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A painting profile built from constructive color planes, compressed perspective, repeated directional brush marks, and objects that remain solid while viewpoints subtly disagree.
+以结构性的色面、被压缩的透视、反复而有方向的笔触和略有分歧的观察视角塑造物体；物体保持坚实，但空间不追求机械准确。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

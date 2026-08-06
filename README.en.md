@@ -82,6 +82,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </td>
 </tr>
 </table>
+
 ### Game art
 
 <table>
@@ -99,6 +100,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%"></td>
 </tr>
 </table>
+
 ### Movements and periods
 
 <table>
@@ -137,6 +139,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </td>
 </tr>
 </table>
+
 ### Photographers
 
 <table>
@@ -192,6 +195,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </td>
 </tr>
 </table>
+
 ### Original presets
 
 <table>
@@ -205,6 +209,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%"></td>
 </tr>
 </table>
+
 ### Schools
 
 <table>
@@ -218,6 +223,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%"></td>
 </tr>
 </table>
+
 ### Techniques and media
 
 <table>
@@ -231,6 +237,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%"></td>
 </tr>
 </table>
+
 
 ### Inherited 110 lightweight presets
 
@@ -251,6 +258,7 @@ Available modes: `stack` (role-separated stacking), `blend` (weighted blending),
 <td width="33%" valign="top" align="center"><a href="style-packages/composites/vermeer-x-monet/README.en.md"><img src="style-packages/composites/vermeer-x-monet/examples/generated/anonymous-v1.png" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>Vermeer light + Monet color</strong></td>
 </tr>
 </table>
+
 
 ## Provenance and rights
 

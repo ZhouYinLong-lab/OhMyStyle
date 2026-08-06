@@ -6,7 +6,7 @@
 
 ## 简介
 
-A candid low-light home photo style with a large flat 2D cushion-doll companion composited into the lower foreground, creating a quiet late-night creative diary mood with warm room texture, screen glow, and tiny handwritten doodle marks.
+以低照度居家照片为底，在下方叠加一只扁平二维靠垫玩偶伙伴，再加入暖色房间纹理、屏幕光和细小手写涂鸦，营造深夜创作日记感。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

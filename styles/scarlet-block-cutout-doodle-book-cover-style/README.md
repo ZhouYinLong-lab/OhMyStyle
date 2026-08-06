@@ -6,7 +6,7 @@
 
 ## 简介
 
-A stark literary cover system built from a white paper field, oversized scarlet serif letterforms, one central photoreal cutout object, rough black marker contour drawing, small bookish serif typography, and strong asymmetrical negative space.
+以白纸、巨大猩红衬线字、一个写实剪裁物体、粗黑马克笔轮廓、小型书籍衬线字和强烈不对称留白构成文学书封。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

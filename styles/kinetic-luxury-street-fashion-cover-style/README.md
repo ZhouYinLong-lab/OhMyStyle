@@ -6,7 +6,7 @@
 
 ## 简介
 
-A premium street-fashion magazine cover style built from side-profile walking photography, horizontal motion-blurred architecture, one dominant luxury garment, wind-shaped hair, restrained urban neutrals, and oversized wide-spaced serif cover typography. It preserves the kinetic editorial grammar of the reference while changing the model identity, wardrobe, prop, headline, and story details.
+以低机位街头时装照片、奢华留白、硬朗大字、克制的金属或深色点缀和精细编辑小字构成具有速度感的高级杂志封面。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

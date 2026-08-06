@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse premium consumer-tech launch poster style built from black negative space, a centered product silhouette, electric-blue rim lighting, a glowing horizontal platform, soft reflection, giant cropped blue background typography, and clean white announcement copy.
+以黑色负空间、中央产品剪影、电蓝轮廓光、发光横台、柔和反射、裁切式蓝色背景字和简洁白色发布文案制造高级科技产品发布视觉。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

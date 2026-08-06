@@ -6,7 +6,7 @@
 
 ## 简介
 
-A folded broadsheet product advertisement style built from dense bilingual newspaper typography, worn off-white paper, black and antique-gold display headlines, stamped label graphics, one red editorial sidebar tab, and a huge photorealistic hero product overlapping the page foreground.
+模拟折叠大报广告：密集双语报纸字、旧白纸、黑与古金色标题、盖章标签、红色编辑侧签，以及一件压过页面前景的写实主产品。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

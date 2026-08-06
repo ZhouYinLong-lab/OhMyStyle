@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A Synthetist painting profile built from flattened color fields, strong contour design, symbolic non-natural color, compressed spatial layers, and decorative rhythm.
+以平展色块、强烈轮廓、非自然的象征性色彩、压缩的空间层次和装饰性节奏构成画面，优先保持形与色的整体关系。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

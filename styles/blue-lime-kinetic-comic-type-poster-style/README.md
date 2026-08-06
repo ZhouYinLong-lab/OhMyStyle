@@ -6,7 +6,7 @@
 
 ## 简介
 
-A loud flat comic-poster system built from electric-blue grid paper, oversized neon-lime speech-panel geometry, heavy black block typography, sharp yellow back plates, radial action marks, and gritty print texture. The style feels like a kinetic street flyer where the headline is the main subject.
+以电蓝色方格纸、霓虹酸橙绿对话框、黑色粗体字、锐利黄色衬板、放射状动作线和粗糙印刷纹理，做出像街头传单一样喧闹的平面漫画海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

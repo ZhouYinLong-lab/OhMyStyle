@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse East Asian grocer-poster system built from warm cream paper, oversized jade-green hand-cut glyphs, pale vegetable silhouette clouds, tiny editorial headers, and one glossy produce-photo centerpiece layered over the typography.
+以玉绿色底、蔬果剪纸、手写中文标签、仿旧纸张和少量红黄印章式点缀，组成像街区杂货铺招贴一样的平面拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

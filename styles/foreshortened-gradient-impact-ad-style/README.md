@@ -6,7 +6,7 @@
 
 ## 简介
 
-A premium kinetic advertising system built around a worm's-eye ultra-wide photograph, one monumental foreground product or prop, a dynamic human figure receding behind it, giant edge-cropped diagonal neo-grotesk typography, restrained technical microcopy, and a near-black-to-luminous-color gradient field. The finish is sparse but forceful: commercial photocompositing, selective blur, soft bloom, rim light, and layered type create speed and depth without visual clutter.
+以虫眼超广角、巨大的前景产品或道具、后退的人物、裁切式斜向 neo-grotesk 大字和近黑到亮色的渐变场制造速度感；商业合成、选择性模糊、柔和泛光和轮廓光共同增加纵深。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

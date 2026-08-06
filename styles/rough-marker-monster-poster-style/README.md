@@ -6,7 +6,7 @@
 
 ## 简介
 
-A naive children's poster system built from thick black marker outlines, rough crayon-pastel color fills, cream paper grain, oversized goofy creature forms, and chunky hand-lettered black text.
+以粗黑马克笔轮廓、蜡笔粉彩色块、奶油纸纹理、夸张笨拙的怪物形体和厚重手写黑字，模拟儿童海报的直接感。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A premium furniture editorial poster system with a warm off-white studio field, oversized deep forest-green display typography behind one realistic hero furniture object, sparse catalog microcopy, thin rules, outlined catalog chips, and a dark green rounded bottom information bar.
+以暖米白摄影棚、深森林绿大字、真实家具主物、稀疏目录小字、细线、轮廓标签和深绿圆角信息条，塑造安静而昂贵的家具编辑海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

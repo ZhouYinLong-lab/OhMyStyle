@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A northern interior-painting profile centered on changing daylight, quiet domestic tasks, simplified forms, and color relationships that make light the subject rather than a decorative effect.
+以北欧室内生活为核心：让变化中的日光、安静的家务动作和简化的人物形体共同成为画面内容，色彩关系服务于光线本身，而不是把光当作装饰效果。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

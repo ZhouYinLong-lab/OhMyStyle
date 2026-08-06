@@ -6,7 +6,7 @@
 
 ## 简介
 
-A hyper-saturated 3D event-poster style with toy-like heroic figures, extreme low-angle action, enormous cropped condensed typography, neon lime and purple color fields, orange-red graphic slashes, stadium light bloom, foreground motion blur, debris, and clean high-resolution tactile surfaces.
+用玩具般的英雄人物、极端低机位、巨大裁切窄体字、霓虹黄绿与紫色块面、橙红斜切线、体育场泛光、运动模糊和碎屑制造高饱和 3D 赛事海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

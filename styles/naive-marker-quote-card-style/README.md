@@ -6,7 +6,7 @@
 
 ## 简介
 
-A tall, hand-drawn absurdist quote-card poster system with crude black marker outlines, pale pastel panels, blocky blue lettering, off-kilter label tabs, and a simple central object-character gag rendered as flat naive illustration.
+以粗黑马克笔线、浅粉彩面板、块状蓝字、歪斜标签和一个把普通物件拟人化的中心笑点，构成高挑而荒诞的手绘语录卡。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

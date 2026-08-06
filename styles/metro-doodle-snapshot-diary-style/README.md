@@ -6,7 +6,7 @@
 
 ## 简介
 
-A handheld urban transit photo-collage style combining realistic crowded metro, bus, tram, or station snapshots with expressive marker-like cartoon doodles, oversized foreground gestures, white handwritten diary notes, and saturated comic face overlays.
+把拥挤地铁、公交、电车或车站的真实抓拍，与马克笔式卡通涂鸦、前景手势、白色旅行手记和饱和漫画表情叠在一起。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

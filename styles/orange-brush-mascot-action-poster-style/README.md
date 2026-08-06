@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse orange-white-black flat illustration system with a white mascot figure, oversized prop, rough black dry-brush linework, orange cheek circles, and screen-printed paper grain.
+以橙、白、黑三色为主，安排白色吉祥物、夸张道具、粗黑干刷线条和橙色腮红圆点，再用丝网纸张颗粒保留手工感。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

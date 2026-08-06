@@ -6,7 +6,7 @@
 
 ## 简介
 
-A fast-food billboard inspired product collage system with saturated red and yellow poster blocks, oversized condensed typography, glossy cutout products, and a central world-champion trophy silhouette assembled from representative unbranded product objects.
+借鉴快餐广告牌的红黄块面、超大窄体字和亮面剪裁产品，把多个无品牌产品对象组装成中央冠军奖杯般的视觉符号。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

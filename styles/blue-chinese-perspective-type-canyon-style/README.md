@@ -6,7 +6,7 @@
 
 ## 简介
 
-A Chinese typographic poster system built from an extreme one-point perspective corridor: a saturated blue central trapezoid plane carries stacked oversized white Chinese display type, while black side walls are packed with warped white and pale gray Chinese support copy.
+把极端一点透视的走廊变成版式骨架：饱和蓝色中央梯形承载层叠的白色中文大字，黑色侧墙填入变形的白灰色辅助文字。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

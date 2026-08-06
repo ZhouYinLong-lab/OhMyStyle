@@ -6,7 +6,7 @@
 
 ## 简介
 
-A black-and-white footwear product analysis poster system with an oversized sneaker hero, pale engineering grid, top-strip evidence panels, macro material callouts, thin technical connector lines, pixelated uppercase typography, and coarse halftone print texture.
+以黑白球鞋主图、浅色工程网格、顶部证据条、材料微距标注、细连接线、像素化大写字和粗半调印刷纹理构成产品分析海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

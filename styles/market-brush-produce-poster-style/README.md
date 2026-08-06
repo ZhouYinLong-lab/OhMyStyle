@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse fresh-market poster system with a warm ivory paper field, one oversized glossy produce hero, a smaller echo product, violent black hand-cut brush typography, thin editorial header text, and tiny bottom seal-like captions.
+以市场蔬果、粗刷大字、暖色纸张、价格式小标签和略带手工瑕疵的剪贴块面构成热闹但易读的农产品海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

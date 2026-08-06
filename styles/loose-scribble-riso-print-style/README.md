@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse handmade riso or screenprint poster style with one large simplified subject, wavering black contour drawing, rough off-white paper, flat blue and coral-red overprint accents, handwritten margin text, and visible print grain.
+用宽松手写字、错位套印、有限色板、纸张纹理和简单插图模拟低保真 risograph 印刷，让不精确成为画面的手工特征。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

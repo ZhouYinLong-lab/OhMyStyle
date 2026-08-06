@@ -6,7 +6,7 @@
 
 ## 简介
 
-A realistic passenger-seat transport photo transformed into a high-energy travel poster with a central rear-view subject, electric yellow silhouette halo, oversized yellow-orange hand-drawn letters, comic rays, purple music marks, sticker icons, and cyan-white cloud swooshes.
+以乘客座位上的真实交通照片为底，叠加中央后视人物、亮黄色剪影光圈、黄橙手绘大字、漫画放射线、紫色音乐符号和青白色云形涂鸦，形成高能量旅行海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

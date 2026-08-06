@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A Victorian portrait photography profile built from close psychological presence, soft-focus wet-process optics, dark tonal fields, and sculptural facial light without impersonating a named sitter or copying a known portrait.
+以近距离的心理存在、湿版工艺带来的柔焦、深色影调和雕塑般的面部光线塑造肖像，不冒充具体模特，也不复制已知肖像。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

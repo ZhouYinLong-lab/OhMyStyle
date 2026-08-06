@@ -6,7 +6,7 @@
 
 ## 简介
 
-A clean travel-vlog thumbnail system built from three vertical photographic panels, oversized lowercase white destination type, small italic travel annotations, sparse hand-drawn marks, and a soft phone-camera editorial finish.
+用三块竖向照片、超大的白色小写目的地字、少量斜体旅行注记、稀疏手绘线条和柔和手机摄影质感，组成干净的旅行 vlog 缩略图。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

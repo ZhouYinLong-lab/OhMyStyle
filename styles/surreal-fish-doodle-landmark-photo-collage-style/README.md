@@ -6,7 +6,7 @@
 
 ## 简介
 
-A bright travel-photo collage style that overlays giant flat 2D cartoon travelers, fantastical folk-art fish, black marker loops, splash marks, and comic starbursts onto realistic landmark photography.
+在真实地标照片上叠加巨大的扁平旅行人物、民间艺术感鱼形、黑色马克笔圈线、泼洒痕和漫画星爆，形成明亮的旅行照片拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

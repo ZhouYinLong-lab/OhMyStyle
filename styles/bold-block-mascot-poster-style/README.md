@@ -6,7 +6,7 @@
 
 ## 简介
 
-A dense flat poster system built from giant black display type, chunky white mascot figures, thick cartoon outlines, tilted cyan or mint color panels, compact badges, tiny red accents, and a clean off-white print surface.
+用巨大的黑色展示字、厚实的白色吉祥物、粗卡通轮廓、倾斜的青色或薄荷色面板、紧凑徽章和少量红色点缀，铺在干净的米白纸面上。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

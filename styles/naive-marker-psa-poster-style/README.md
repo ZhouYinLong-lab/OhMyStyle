@@ -6,7 +6,7 @@
 
 ## 简介
 
-A friendly hand-drawn public-service poster style built from chunky irregular marker outlines, oversized blue-bordered speech-panel typography, simplified cartoon people, flattened civic props, pastel paper backgrounds, warning-sign motifs, and intentionally naive perspective.
+用粗糙不规则马克笔轮廓、蓝边对话框文字、简化人物、扁平公共道具、粉彩纸面和警示符号，保持有意稚拙的透视和清晰的公益层级。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

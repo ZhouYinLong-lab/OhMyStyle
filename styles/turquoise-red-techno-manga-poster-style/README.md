@@ -6,7 +6,7 @@
 
 ## 简介
 
-A retro techno-manga poster system with a cream paper ground, huge red display lettering, turquoise technical clothing or hardware, dense mechanical linework, annotation panels, cel-shaded figure drawing, and slightly faded printed texture.
+以奶油纸、巨大红色展示字、青绿色技术服装或硬件、密集机械线稿、注释面板、赛璐璐人物和略微褪色的印刷纹理组成复古科技漫画海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

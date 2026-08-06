@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A series-driven photographic profile built from intimate autobiography, recurring motifs, unstable distance, dense black-and-white atmosphere, and the tension between private memory and staged observation.
+以系列化观看、亲密的自传性、反复出现的意象、不稳定的距离和浓重的黑白氛围制造私人记忆与摆拍观察之间的张力。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

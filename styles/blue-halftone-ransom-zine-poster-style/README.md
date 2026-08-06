@@ -6,7 +6,7 @@
 
 ## 简介
 
-A rough cobalt-blue ransom-zine poster system built from torn white paper scraps, black photocopied halftone subject cutouts, marker-like handwritten words, crumpled paper texture, and sparse noisy micro captions.
+以钴蓝色底、撕裂的白纸碎片、黑色复印半调人物剪影、马克笔式手写字、皱纸纹理和稀疏噪点小字构成粗粝的勒索信式 zine 海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

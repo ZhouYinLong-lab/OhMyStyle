@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse black editorial-poster system built around one oversized translucent animal sculpture with smoky glass depth, liquid-chrome edges, and restrained rainbow refractions, framed by futuristic typographic micro-editorial content about small weekend rituals.
+以黑色编辑底、巨大的半透明动物雕塑、烟雾般玻璃深度、液态铬边缘和克制的彩虹折射为核心，配合关于周末小仪式的未来感编辑小字。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

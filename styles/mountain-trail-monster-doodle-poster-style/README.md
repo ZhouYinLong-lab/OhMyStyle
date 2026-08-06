@@ -6,7 +6,7 @@
 
 ## 简介
 
-A candid outdoor hiking photograph remixed with a flat hand-drawn monster companion, oversized Spanish comic lettering, and loose sketch annotations, creating a playful adventure-poster collage.
+把户外徒步照片与扁平手绘怪物伙伴、夸张西语漫画字和松散素描注记结合，形成轻松的冒险海报拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

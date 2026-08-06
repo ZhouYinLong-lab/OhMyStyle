@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A reference-backed expressionist painting profile focused on psychological color, contour that carries bodily tension, compressed space, and recurring organic or architectural rhythms without copying an iconic image.
+用心理色彩、承载身体张力的轮廓、压缩的空间和反复出现的有机或建筑节奏表达情绪；重点是视觉心理，不复制任何标志性构图。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

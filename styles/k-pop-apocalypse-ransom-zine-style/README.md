@@ -6,7 +6,7 @@
 
 ## 简介
 
-A maximalist K-pop fashion zine collage style built from a central portrait cutout, crumpled monochrome paper texture, skewed ransom-note typography, loud sticker blocks, saturated lime/blue/red accents, and a bold bottom masthead band.
+把 K-pop 视觉中的人物剪影、末日式高对比配色、撕裂纸张、复印噪点、巨大标题和警示小字压缩成一本粗粝的 ransom zine。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

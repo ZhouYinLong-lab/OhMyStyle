@@ -6,7 +6,7 @@
 
 ## 简介
 
-A realistic city photograph with an oversized, high-saturation, flat 2D cartoon figure composited on top, plus hand-drawn stars, sparks, arrows, and comic marks.
+以真实城市照片为基础，叠加一个高饱和扁平二维卡通人物，再加入手绘星星、火花、箭头和漫画记号，让照片与插画故意产生层次差。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

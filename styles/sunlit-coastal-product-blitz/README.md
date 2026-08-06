@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-density photoreal coastal product advertising style built from sunlit tabletop hero products, tropical foreground botanicals, blue ocean depth, oversized distressed white brush typography, compact bilingual-style label blocks, curved callouts, and shiny gold seal badges.
+以阳光桌面上的主产品、热带植物前景、蓝色海洋纵深、磨损白色刷字、双语式标签块、弧形标注和亮金印章构成高密度海岸产品广告。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

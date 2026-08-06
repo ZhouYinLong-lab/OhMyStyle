@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-impact editorial poster system combining an oversized distressed black headline, one monochrome halftone photo cutout, electric cyan and green registration shadows, horizontal fluorescent paint swashes, loose marker scribbles, and a pale photocopied paper field.
+以磨损黑色大标题、单张黑白半调照片剪影、电青和绿色套印偏移、横向荧光颜料刷痕、松散马克笔涂鸦和浅色复印纸组成编辑拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

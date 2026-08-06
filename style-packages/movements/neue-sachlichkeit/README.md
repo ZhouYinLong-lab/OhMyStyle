@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A Weimar-era visual language of matter-of-fact realism, hard-edged observation, social typology, and unsentimental attention to bodies, interiors, labor, and the consequences of modern life.
+以魏玛时期的冷静写实为基础，强调硬边观察、社会类型、身体与室内空间、劳动痕迹以及现代生活后果，不用煽情或美化来替代事实感。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

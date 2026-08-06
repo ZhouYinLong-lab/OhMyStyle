@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A hand-controlled pigment-printing process using sensitized gum arabic and pigment, contact exposure, washing, and optional layered color passes to create broad tones, soft detail, and visibly material photographic surfaces.
+以手工控制的树胶重铬酸盐颜料印相为基础，通过感光树胶、接触曝光、水洗和可叠加的色层，形成宽厚影调、柔和细节与明显的照片材料表面。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

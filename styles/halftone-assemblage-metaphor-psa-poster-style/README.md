@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse retro PSA poster system where one visible class of material is arranged into a different recognizable symbolic silhouette, printed as a muted blue-green halftone object on aged cream paper with compact red-and-navy campaign typography.
+把一种材料重新排列成另一种可识别的象征轮廓，以陈旧奶油纸上的低饱和蓝绿色半调对象配合紧凑的红蓝公益标题，形成简洁的隐喻海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

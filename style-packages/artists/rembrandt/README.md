@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A reference-backed baroque painting profile focused on directional light, psychological presence, warm dark grounds, layered flesh and cloth, and selective tactile paint rather than a generic brown filter.
+以方向明确的光线、具有心理存在感的人物、温暖的深色底子、分层的皮肤与布料和局部可触的厚薄笔触建立质感，而不是套用棕色滤镜。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A loose animation development sketch style for comic pet scenes, built from warm beige paper, red-brown construction lines, scratchy dark burgundy contours, semi-transparent color wash, simple room props, and exaggerated animal expressions.
+以暖米色纸张、红棕构造线、粗糙深酒红轮廓、半透明色洗、简单室内道具和夸张动物表情，模拟漫画宠物场景的动画开发草图。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

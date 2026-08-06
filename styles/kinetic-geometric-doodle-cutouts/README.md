@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse, playful illustration system where a character or object is assembled from oversized flat geometric color pieces, loose black doodle lines, paper grain, and buoyant off-center motion on a warm cream background.
+用鲜艳几何色块、手绘轮廓、剪纸人物、动作线和不规则字形构成一张充满运动感的平面涂鸦海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

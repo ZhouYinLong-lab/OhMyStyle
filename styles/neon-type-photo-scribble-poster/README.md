@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-impact event poster system built from a toxic neon color field, huge black condensed typography, a centered documentary photo crop, and a raw white spray-marker gesture that cuts across the middle of the composition.
+以毒性霓虹色场、巨大黑色窄体字、中央纪实照片裁切和一笔横穿画面的白色喷漆马克笔动作构成高冲击活动海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

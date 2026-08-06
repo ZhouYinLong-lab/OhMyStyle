@@ -6,7 +6,7 @@
 
 ## 简介
 
-A confrontational editorial poster system built from one monumentally cropped black-and-white photograph, near-binary photocopy contrast, dense analog grain, an oversized vertical condensed headline, compact annotation blocks, and a single vermilion ink layer that cuts across the image as urgent shards and edge-born organic forms.
+以被巨大裁切的黑白照片、近二值复印对比、密集模拟颗粒、竖向窄体标题、注释块和一层穿过画面的朱红墨迹制造紧张的编辑海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

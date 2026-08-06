@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A constrained 8-bit game-art direction defined by chunky pixel silhouettes, hard two-color attribute blocks, a saturated 15-color hardware palette, deliberate color clash management, and readable gameplay-first composition.
+以粗颗粒像素剪影、硬朗的双颜色块、受限的 15 色硬件色板和明确的色彩冲突管理为核心，优先保证游戏画面在低分辨率下仍然可读。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-impact action poster system built from a saturated scarlet field, oversized diagonal block typography, layered photographic cutout subjects, hard graphic shadows, compact editorial text blocks, and controlled print grain. It feels like a premium campaign key art poster for speed, pressure, and team momentum without preserving the original sports team, logo, phrase, or exact scene.
+以猩红色场、斜向块状大字、层叠照片剪影、硬图形阴影、紧凑编辑文字和受控颗粒建立速度与压力感，同时不保留原球队、标志、口号或具体场景。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A subject-neutral color-direction preset built from decisive high-chroma pairings, pale or deep counter-grounds, controlled area ratios, and clear material separation rather than an artist-specific appearance.
+这是一个不绑定主体的色彩方向预设：用明确的高纯度互补配色、浅色或深色反底、受控的面积比例和清晰的材质区分组织画面，不模拟某位艺术家的外观。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

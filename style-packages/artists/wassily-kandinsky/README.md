@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-An abstract painting profile built from geometric and lyrical marks, measured color tensions, layered planes, and compositional balance without narrative illustration.
+以几何形、抒情线条、相互牵制的色彩、层叠平面和整体构图平衡构成抽象画面，不把抽象语言强行解释成叙事插图。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A clean three-color hardcut portrait poster style using flat teal background fields, coral-red subject planes, and near-black silhouettes or shadows, with all detail reduced into large hard-edged vector-like cutouts.
+只用扁平青绿色背景、珊瑚红人物色面和近黑剪影或阴影，把肖像细节压缩成边缘明确的大块矢量式形体。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

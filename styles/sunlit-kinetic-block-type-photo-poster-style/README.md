@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-energy editorial sports and lifestyle poster style built from full-bleed sunlit photography, oversized cream condensed block typography, diagonal subject crops, compact microcopy clusters, and vivid blue-sky color fields.
+以铺满画面的阳光照片、超大奶油色窄体块字、斜向人物裁切、紧凑小字群和明亮蓝天色块组成高能量体育与生活方式海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

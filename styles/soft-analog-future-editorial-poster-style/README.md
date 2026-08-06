@@ -6,7 +6,7 @@
 
 ## 简介
 
-A quiet analog-future editorial poster style using warm cream paper, oversized black neo-grotesk typography, strict grid rules, retro technology still life, pale-blue translucent interface panels, botanical foreground accents, and tiny bilingual information design.
+以暖奶油纸、黑色 neo-grotesk 大字、严格网格、复古科技静物、浅蓝半透明界面、植物前景和细小双语信息设计融合模拟未来感。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

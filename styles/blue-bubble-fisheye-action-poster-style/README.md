@@ -6,7 +6,7 @@
 
 ## 简介
 
-A crisp white youth-culture action poster style with a rectangular fisheye photograph, oversized rounded royal-blue display typography, frame-breaking foreground scale, small blue editorial captions, and one red hand-drawn annotation circle.
+以白色留白、矩形鱼眼照片、圆润的宝蓝色大字、冲出画框的前景尺度、蓝色编辑小字和一笔红色手绘圈构成青年文化动作海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

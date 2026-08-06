@@ -6,7 +6,7 @@
 
 ## 简介
 
-A black-background food promotion style built around one irregular cream paper card, oversized hand-brushed Chinese lettering, clipped food photography, small price medallions, warm red/yellow accents, and a handmade street-snack print texture.
+用黑色底、单张不规则奶油色纸卡、粗笔刷中文标题、剪裁食物照片、小型价格徽章和红黄暖色点缀，模拟手工街头小吃广告的印刷质感。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A Y2K grunge hip-hop magazine collage poster style built from oversized photo cutouts, acid yellow retro typography, rough black-and-white wall textures, dense editorial footer panels, and photocopied print noise.
+以大幅照片剪裁、酸黄复古字、粗糙黑白墙面纹理、密集编辑页脚和复印噪点构成 Y2K grunge 嘻哈杂志拼贴海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

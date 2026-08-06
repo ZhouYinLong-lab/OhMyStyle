@@ -6,7 +6,7 @@
 
 ## 简介
 
-A rough hand-inked poster style built from oversized dark green-black brush lettering, pale blush paper, hot pink secondary type, naive mascot drawings, teal and pink flat fills, sharp yellow burst marks, scattered music-note doodles, and scanned risograph-like print texture.
+以深绿黑刷字、浅腮红纸、热粉辅助字、稚拙吉祥物、青粉色平涂、锐利黄色爆发线、音乐符号和 risograph 扫描纹理组成粗墨海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

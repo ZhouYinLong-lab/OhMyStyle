@@ -6,7 +6,7 @@
 
 ## 简介
 
-A reusable beverage launch advertising system with four color-varied templates, built from giant white 3D typography, a diagonal hero drink pack, frozen liquid motion, dense launch-ad copy, and polished commercial product lighting.
+以四套可变色模板、巨大的白色 3D 字、斜置饮料包装、冻结的液体运动、密集上市文案和精致商业灯光建立饮料发布广告系统。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

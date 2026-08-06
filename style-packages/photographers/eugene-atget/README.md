@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A documentary urban photography profile built from frontal observation, quiet architectural geometry, restrained monochrome tonality, and the evidentiary stillness of a large-format street record.
+以正面观察、安静的建筑几何、克制的单色影调和大画幅街头记录的证据感描写城市，让空旷与细节共同保留现场性。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

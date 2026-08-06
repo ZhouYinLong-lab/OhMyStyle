@@ -6,7 +6,7 @@
 
 ## 简介
 
-A surreal editorial collage system that layers monumental flat-ink beasts and tiny theatrical figures over softly faded archival city photography, using black-and-white cut-paper masses, unruly hand-drawn contour work, and sparse cobalt, vermilion, lemon, and blush accents.
+把巨大扁平墨色野兽和微小戏剧人物叠到褪色的档案城市照片上，以黑白剪纸块、失控手绘轮廓和少量钴蓝、朱红、柠檬与腮红色点缀构成超现实编辑拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

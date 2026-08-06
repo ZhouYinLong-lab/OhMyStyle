@@ -6,7 +6,7 @@
 
 ## 简介
 
-A gritty Y2K photomontage style that combines wide-angle flash photography, floating desktop-like interface fragments, thick electric-blue marker outlines, hand-drawn graffiti lettering, and dense analog noise into a chaotic personal-screen collage.
+以广角闪光摄影、漂浮的桌面界面碎片、电蓝马克笔描边、手绘涂鸦字和密集模拟噪声组成混乱的个人屏幕拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse fashion-editorial poster system built from a warm paper field, one centered halftone portrait or sculptural subject, monumental cobalt Didone typography, an irregular horizontal torn-paper reveal, and restrained calligraphic and catalog-like corner notes.
+以暖纸色背景、中央半调肖像或雕塑、巨大的钴蓝 Didone 字体、不规则横向撕纸窗口，以及克制的书法和目录式角注建立时装编辑版式。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 
