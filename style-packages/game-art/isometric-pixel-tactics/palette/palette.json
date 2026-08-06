@@ -1,0 +1,36 @@
+{
+  "name": "isometric-pixel-tactics",
+  "usage": "controlled relationship among dominant, support, shadow, and accent colors",
+  "colors": [
+    {
+      "name": "color_0",
+      "hex": "#182235",
+      "role": "轮廓与深阴影"
+    },
+    {
+      "name": "color_1",
+      "hex": "#52657A",
+      "role": "地块与远景"
+    },
+    {
+      "name": "color_2",
+      "hex": "#63724A",
+      "role": "植被与地面"
+    },
+    {
+      "name": "color_3",
+      "hex": "#B17A45",
+      "role": "道路与建筑"
+    },
+    {
+      "name": "color_4",
+      "hex": "#A34F45",
+      "role": "战术焦点"
+    },
+    {
+      "name": "color_5",
+      "hex": "#D9C9A5",
+      "role": "单位高光"
+    }
+  ]
+}

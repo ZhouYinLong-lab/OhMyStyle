@@ -1,0 +1,17 @@
+medium:
+  name: game_art
+  visible_evidence:
+    - medium_or_process_marks_are_consistent
+    - edges_and_surfaces_follow_the_selected_medium
+composition:
+  priorities:
+    - visual_hierarchy
+    - negative_space
+    - subject_independent_style_transfer
+style_signature:
+  - Organizes scenes through isometric grids, compact units, layered tiles, and clear tactical light-dark grouping, with readable paths and height changes rather than copied game interfaces.
+  - avoid_generic_filters; make medium, structure, palette, and lighting jointly visible
+  - narrative_is_optional
+invariants:
+  - the result is an original new scene, not a copy of a source work
+  - no unrequested text, logo, trademark, or named character

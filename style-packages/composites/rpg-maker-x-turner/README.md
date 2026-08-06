@@ -1,8 +1,8 @@
-# RPG Maker Pixel Art + Turner Atmosphere
+# 角色扮演游戏像素美术 + Turner Atmosphere
 
 [English](README.en.md)
 
-![RPG Maker Pixel Art + Turner Atmosphere 示例](gallery-16x9.jpg)
+![角色扮演游戏像素美术 + Turner Atmosphere 示例](gallery-16x9.jpg)
 
 ## 这是什么
 

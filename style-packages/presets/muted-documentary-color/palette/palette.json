@@ -1,0 +1,36 @@
+{
+  "name": "muted-documentary-color",
+  "usage": "controlled relationship among dominant, support, shadow, and accent colors",
+  "colors": [
+    {
+      "name": "color_0",
+      "hex": "#50565A",
+      "role": "阴影与道路"
+    },
+    {
+      "name": "color_1",
+      "hex": "#73828A",
+      "role": "空气与远景"
+    },
+    {
+      "name": "color_2",
+      "hex": "#9B6256",
+      "role": "低纯度焦点"
+    },
+    {
+      "name": "color_3",
+      "hex": "#6F7960",
+      "role": "植物与表面"
+    },
+    {
+      "name": "color_4",
+      "hex": "#D7D2C7",
+      "role": "高光"
+    },
+    {
+      "name": "color_5",
+      "hex": "#A98772",
+      "role": "自然肤色"
+    }
+  ]
+}

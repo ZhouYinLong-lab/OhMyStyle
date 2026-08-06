@@ -1,0 +1,14 @@
+package_id: screen-printing
+package_version: 0.1.0
+curation_status: independent_demo_with_public_reference_links
+source_policy: Public pages are used to research observable traits. No source artwork or commercial screenshot is bundled. The included representative image and accepted example are newly generated anonymous scenes.
+sources:
+  - url: https://www.moma.org/collection/terms/screenprint
+    authority: MoMA 丝网印刷术语
+    supports: 用于确认丝网印刷的工艺术语与视觉特征。
+    accessed: 2026-08-07
+  - url: https://www.vam.ac.uk/articles/printmaking
+    authority: 维多利亚与阿尔伯特博物馆版画资源
+    supports: 用于参考版画分色、油墨与纸张关系。
+    accessed: 2026-08-07
+attribution: This independent package describes observable traits associated with Screen Printing; it is not affiliated with any referenced institution, artist, studio, or rights holder.

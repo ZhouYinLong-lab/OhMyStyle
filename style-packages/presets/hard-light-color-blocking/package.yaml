@@ -1,0 +1,19 @@
+{
+  "id": "hard-light-color-blocking",
+  "name": "硬光色块摄影",
+  "kind": "preset",
+  "domain": "photography",
+  "version": "0.1.0",
+  "summary": "Organizes images through hard directional light, clear shadows, separated color planes, and material differences without pretending to be the style of a particular photographer or subject.",
+  "files": {
+    "identity": "identity.yaml",
+    "visual_signature": "visual-signature.yaml",
+    "reproduction": "reproduction.yaml",
+    "relations": "relations.yaml",
+    "palette": "palette/palette.json",
+    "prompts": "prompts",
+    "evaluation": "evaluation.yaml",
+    "references": "references/manifest.csv",
+    "provenance": "provenance.yaml"
+  }
+}

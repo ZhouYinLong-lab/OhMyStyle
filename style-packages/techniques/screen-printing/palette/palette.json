@@ -1,0 +1,36 @@
+{
+  "name": "screen-printing",
+  "usage": "controlled relationship among dominant, support, shadow, and accent colors",
+  "colors": [
+    {
+      "name": "color_0",
+      "hex": "#F0E8D4",
+      "role": "纸张"
+    },
+    {
+      "name": "color_1",
+      "hex": "#172A42",
+      "role": "主轮廓"
+    },
+    {
+      "name": "color_2",
+      "hex": "#B7483B",
+      "role": "主色层"
+    },
+    {
+      "name": "color_3",
+      "hex": "#D4A83B",
+      "role": "辅助色层"
+    },
+    {
+      "name": "color_4",
+      "hex": "#3E827D",
+      "role": "辅助色层"
+    },
+    {
+      "name": "color_5",
+      "hex": "#202020",
+      "role": "结构"
+    }
+  ]
+}

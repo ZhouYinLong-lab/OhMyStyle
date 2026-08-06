@@ -14,7 +14,7 @@ from resource_registry import build_registry, discover_packages, load_yaml
 class ResourceArchitectureTests(unittest.TestCase):
     def test_every_structured_package_has_resource_contract(self):
         packages = discover_packages(ROOT / "style-packages")
-        self.assertEqual(len(packages), 32)
+        self.assertGreaterEqual(len(packages), 32)
         for package in packages:
             resource = load_yaml(package / "resource.yaml")
             package_data = load_yaml(package / "package.yaml")
@@ -32,8 +32,9 @@ class ResourceArchitectureTests(unittest.TestCase):
         registry = load_yaml(ROOT / "registry/index.yaml")
         generated = build_registry(ROOT / "style-packages")
         self.assertEqual(registry, generated)
-        self.assertEqual(len(registry["packages"]), 32)
-        self.assertEqual(len({entry["resource_id"] for entry in registry["packages"]}), 32)
+        package_count = len(discover_packages(ROOT / "style-packages"))
+        self.assertEqual(len(registry["packages"]), package_count)
+        self.assertEqual(len({entry["resource_id"] for entry in registry["packages"]}), package_count)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,14 @@
+package_id: cyanotype
+package_version: 0.1.0
+curation_status: independent_demo_with_public_reference_links
+source_policy: Public pages are used to research observable traits. No source artwork or commercial screenshot is bundled. The included representative image and accepted example are newly generated anonymous scenes.
+sources:
+  - url: https://www.vam.ac.uk/articles/cyanotype
+    authority: 维多利亚与阿尔伯特博物馆氰版印相介绍
+    supports: 用于确认氰版印相的材料与历史背景。
+    accessed: 2026-08-07
+  - url: https://www.getty.edu/conservation/
+    authority: 盖蒂保护研究所资料
+    supports: 用于参考蓝色铁盐影像的保存与材料特征。
+    accessed: 2026-08-07
+attribution: This independent package describes observable traits associated with Cyanotype; it is not affiliated with any referenced institution, artist, studio, or rights holder.

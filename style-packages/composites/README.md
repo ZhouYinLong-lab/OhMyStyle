@@ -19,7 +19,7 @@
 <table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="rpg-maker-x-gauguin/README.md"><img src="rpg-maker-x-gauguin/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Foreground + Gauguin Background example"></a><br><strong>RPG Maker Foreground + Gauguin Background</strong><br><a href="rpg-maker-x-gauguin/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="rpg-maker-x-turner/README.md"><img src="rpg-maker-x-turner/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere example"></a><br><strong>RPG Maker Pixel Art + Turner Atmosphere</strong><br><a href="rpg-maker-x-turner/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="rpg-maker-x-turner/README.md"><img src="rpg-maker-x-turner/examples/generated/anonymous-v1.png" width="230" alt="角色扮演游戏像素美术 + Turner Atmosphere example"></a><br><strong>角色扮演游戏像素美术 + Turner Atmosphere</strong><br><a href="rpg-maker-x-turner/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="vermeer-x-monet/README.md"><img src="vermeer-x-monet/examples/generated/anonymous-v1.png" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>Vermeer Light + Monet Color</strong><br><a href="vermeer-x-monet/README.md">打开 README</a></td>
 </tr>
 </table>

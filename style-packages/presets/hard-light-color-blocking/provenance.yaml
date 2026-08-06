@@ -1,0 +1,14 @@
+package_id: hard-light-color-blocking
+package_version: 0.1.0
+curation_status: independent_demo_with_public_reference_links
+source_policy: Public pages are used to research observable traits. No source artwork or commercial screenshot is bundled. The included representative image and accepted example are newly generated anonymous scenes.
+sources:
+  - url: https://www.moma.org/collection/
+    authority: MoMA 现代摄影收藏
+    supports: 用于观察静物摄影中的光线、表面与物体关系。
+    accessed: 2026-08-07
+  - url: https://github.com/ZhouYinLong-lab/OhMyStyle
+    authority: OhMyStyle 原创预设实践
+    supports: 本包为独立整理的原创预设，不指向单一作者。
+    accessed: 2026-08-07
+attribution: This independent package describes observable traits associated with Hard-Light Color Blocking; it is not affiliated with any referenced institution, artist, studio, or rights holder.

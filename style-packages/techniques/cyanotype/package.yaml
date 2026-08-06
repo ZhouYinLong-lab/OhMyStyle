@@ -1,0 +1,19 @@
+{
+  "id": "cyanotype",
+  "name": "氰版印相",
+  "kind": "technique",
+  "domain": "printmaking",
+  "version": "0.1.0",
+  "summary": "Describes cyanotype results through Prussian-blue values, contact-print silhouettes, paper irregularity, and photochemical traces, focusing on process rather than a single artist’s personal style.",
+  "files": {
+    "identity": "identity.yaml",
+    "visual_signature": "visual-signature.yaml",
+    "reproduction": "reproduction.yaml",
+    "relations": "relations.yaml",
+    "palette": "palette/palette.json",
+    "prompts": "prompts",
+    "evaluation": "evaluation.yaml",
+    "references": "references/manifest.csv",
+    "provenance": "provenance.yaml"
+  }
+}
