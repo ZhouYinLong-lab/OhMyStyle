@@ -1,0 +1,19 @@
+canonical_name: Vincent van Gogh
+entity_type: artist
+life: 1853-1890
+region: Netherlands; France
+primary_medium: oil_painting
+scope:
+  subjects:
+    - rural landscape
+    - night sky
+    - trees and fields
+    - intimate still life
+  period_focus: mature painted work
+  exclusions:
+    - copied famous composition
+    - generic digital oil filter
+subject_matter:
+  - ordinary landscape made emotionally active by paint direction
+  - vegetation with individually legible rhythm
+  - sky or ground acting as a moving field rather than a flat backdrop

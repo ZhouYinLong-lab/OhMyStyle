@@ -1,0 +1,10 @@
+{
+  "name":"observed pictorial monochrome palette",
+  "colors":[
+    {"id":"ink_black","hex":"#292522","role":"dense_structure"},
+    {"id":"smoke_brown","hex":"#5C5047","role":"weather_and_mid_shadow"},
+    {"id":"warm_gray","hex":"#90857A","role":"layered_air"},
+    {"id":"paper_tan","hex":"#C9B9A6","role":"print_highlight"}
+  ],
+  "rules":["Use tone to organize planes.","Keep crop and geometry decisive.","Do not add a decorative sepia wash."]
+}

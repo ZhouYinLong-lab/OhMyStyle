@@ -1,0 +1,18 @@
+composition:
+  - construct the frame from intersecting planes, rails, ropes, steps, trunks, or crowd bands
+  - use asymmetry and cropped structure to make the frame feel authored
+  - create depth through overlapping flat zones rather than cinematic bokeh
+color:
+  - restrained monochrome or warm photogravure brown
+  - tonal contrast and atmospheric value carry more weight than color
+light:
+  quality: weather_and_print_sensitive
+  behavior: [fog_or_rain_as_plane, selective_highlight, dense_foreground_structure]
+surface:
+  capture: pictorial_print_or_photogravure_impression
+  rendering: [soft_but_structured_detail, paper_or_ink_tonal_range, deliberate_crop]
+invariants:
+  - geometry and tonal design are intentional
+  - the image feels authored rather than merely documented
+  - historical print character follows composition, not the reverse
+  - do not reproduce a known photograph's arrangement

@@ -1,0 +1,16 @@
+medium: oil_painting
+materials:
+  support: canvas_or_panel
+  pigment_direction: cool_air_colors_with_local_warm_light
+  finish: thin_to_moderate_visible_oil_touches
+process:
+  - block the scene by light temperature before object detail
+  - use adjacent marks to describe atmosphere and reflected light
+  - preserve broken edges in distance while keeping the main motif legible
+  - avoid thick directional impasto as the dominant mark system
+technical_direction:
+  contrast: low_to_moderate
+  saturation: restrained_to_moderate
+  perspective: ordinary_outdoor_view
+  detail_density: distributed_color_notes
+safety_note: Use observable light and mark behavior only; do not recreate a named work or exact motif arrangement.

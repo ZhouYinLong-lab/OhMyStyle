@@ -1,0 +1,20 @@
+canonical_name: Julia Margaret Cameron
+entity_type: photographer
+life: 1815-1879
+region: United Kingdom; Ceylon
+primary_medium: wet_collodion_and_albumen_portrait_photography
+scope:
+  subjects:
+    - close portrait
+    - literary and artistic sitters
+    - allegorical or staged figure studies
+    - children and family subjects
+  period_focus: 1860s-1870s portrait practice
+  exclusions:
+    - modern beauty retouching
+    - sharp commercial headshot
+    - named-sitter impersonation
+subject_matter:
+  - face as psychological presence
+  - quiet gaze and concentrated stillness
+  - period dress and symbolic restraint

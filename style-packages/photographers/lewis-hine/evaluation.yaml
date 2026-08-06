@@ -1,0 +1,17 @@
+package_id: lewis-hine
+package_version: 0.1.0
+invariants:
+  - id: contextual_evidence
+    weight: 3
+    test: Work or institutional environment provides concrete evidence.
+  - id: human_agency
+    weight: 3
+    test: The person retains dignity and is not reduced to spectacle.
+  - id: scale_relationship
+    weight: 2
+    test: Body, tool, machine, luggage, or building scale is legible.
+  - id: original_arrangement
+    weight: 3
+    test: The image is not a recognizable reconstruction.
+rejections: [vintage_filter, poverty_porn, heroic_advertising, copied_named_photo]
+minimum_score: 8

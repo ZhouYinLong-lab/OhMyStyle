@@ -1,0 +1,14 @@
+package_id: julia-margaret-cameron
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Original historical photographs are bundled from The Metropolitan Museum of Art Open Access collection; the generated example is an anonymous new sitter.
+sources:
+  - url: https://www.metmuseum.org/art/collection/search/269434
+    authority: The Metropolitan Museum of Art
+    supports: primary visual reference, object identity, carbon-print process, and public-domain/Open Access status
+    accessed: 2026-08-06
+  - url: https://www.metmuseum.org/art/collection/search/268697
+    authority: The Metropolitan Museum of Art
+    supports: secondary visual reference, object identity, portrait treatment, and public-domain/Open Access status
+    accessed: 2026-08-06
+attribution: Historical photographs remain attributed to Julia Margaret Cameron and The Metropolitan Museum of Art. This package is independent and claims no affiliation.

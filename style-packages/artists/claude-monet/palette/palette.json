@@ -1,0 +1,11 @@
+{
+  "name": "observed transient daylight palette",
+  "colors": [
+    {"id":"winter_blue","hex":"#A7B9C8","role":"air_and_snow"},
+    {"id":"lavender_gray","hex":"#B2AFC2","role":"reflected_cool_light"},
+    {"id":"pale_cream","hex":"#E7DFCB","role":"open_light"},
+    {"id":"soft_green","hex":"#7E9271","role":"vegetation"},
+    {"id":"muted_warm","hex":"#B88C69","role":"local_warm_accent"}
+  ],
+  "rules":["Use adjacent local color notes.","Keep shadows open and chromatic.","Do not apply a global pastel wash."]
+}

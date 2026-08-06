@@ -1,0 +1,14 @@
+package_id: lewis-hine
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Historical works are bundled from public-domain reproductions and Library of Congress no-known-restrictions records; the generated example is an anonymous new scene.
+sources:
+  - url: https://commons.wikimedia.org/wiki/File:Lewis_Hine_Power_house_mechanic_working_on_steam_pump.jpg
+    authority: Wikimedia Commons
+    supports: primary visual reference; public-domain reproduction
+    accessed: 2026-08-06
+  - url: https://www.loc.gov/item/ncl2004001462/PP/
+    authority: Library of Congress
+    supports: secondary documentary context and rights advisory
+    accessed: 2026-08-06
+attribution: Historical photographs remain attributed to Lewis Hine and their source institutions. This package is independent and claims no affiliation.

@@ -1,0 +1,15 @@
+{
+  "name": "observed archival monochrome palette",
+  "colors": [
+    {"id": "deep_charcoal", "hex": "#242321", "role": "structural_shadow"},
+    {"id": "warm_black", "hex": "#403B35", "role": "cloth_and_deep_detail"},
+    {"id": "stone_gray", "hex": "#70685C", "role": "architecture_and_paving"},
+    {"id": "faded_silver", "hex": "#A79A87", "role": "midtones_and_print_fade"},
+    {"id": "paper_cream", "hex": "#D6CDBE", "role": "highlight_and_paper_bias"}
+  ],
+  "rules": [
+    "Prefer a restrained monochrome range with visible midtones.",
+    "Warmth may come from the historical print response, not from a color filter.",
+    "Do not add modern color grading or decorative film grain."
+  ]
+}

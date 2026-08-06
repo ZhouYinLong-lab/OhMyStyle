@@ -97,7 +97,7 @@ class StyleRuntimeTests(unittest.TestCase):
 
     def test_compiler_is_generic_across_non_pair_style_packages(self) -> None:
         packages = sorted((ROOT / "style-packages").glob("*/*/package.yaml"))
-        self.assertEqual(len(packages), 12)
+        self.assertGreaterEqual(len(packages), 12)
         for package in packages:
             job = compile_job(package.parent, "a quiet study of the requested subject", profile="weak")
             self.assertEqual(job["model"]["adapter"], "provider-neutral")

@@ -1,0 +1,20 @@
+package_id: julia-margaret-cameron
+package_version: 0.1.0
+invariants:
+  - id: psychological_presence
+    weight: 3
+    test: The anonymous sitter has concentrated, contemplative presence rather than a commercial pose.
+  - id: selective_soft_focus
+    weight: 3
+    test: Softness behaves like historical optics and preserves localized facial legibility.
+  - id: period_tonality
+    weight: 2
+    test: Warm monochrome, dark background, and open shadow detail feel process-specific.
+  - id: original_sitter
+    weight: 3
+    test: The portrait does not imitate a named sitter or known composition.
+rejections:
+  - modern_beauty_filter
+  - global_gaussian_blur
+  - copied_named_portrait
+minimum_score: 8

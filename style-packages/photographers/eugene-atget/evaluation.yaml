@@ -1,0 +1,20 @@
+package_id: eugene-atget
+package_version: 0.1.0
+invariants:
+  - id: place_over_performance
+    weight: 3
+    test: The image reads as an observed place, not a staged portrait or advertisement.
+  - id: architectural_geometry
+    weight: 2
+    test: Streets, façades, paving, or objects provide a stable measured structure.
+  - id: archival_tonality
+    weight: 3
+    test: Restrained monochrome tonality preserves broad midtones and shadow detail.
+  - id: original_arrangement
+    weight: 3
+    test: Subject and composition are not a recognizable reconstruction.
+rejections:
+  - cinematic_color_grade
+  - tourist_postcard
+  - copied_named_photo
+minimum_score: 8

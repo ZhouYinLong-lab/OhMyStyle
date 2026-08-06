@@ -1,0 +1,10 @@
+canonical_name: Edvard Munch
+entity_type: artist
+life: 1863-1944
+region: Norway
+primary_medium: painting_and_printmaking
+scope:
+  subjects: [psychological figure, intimacy, anxiety, landscape as emotion]
+  period_focus: mature symbolist and expressionist practice
+  exclusions: [decorative_fauvist_color_only, copied_scream_composition, photorealism]
+subject_matter: [inner state, memory, desire, isolation, bodily unease]

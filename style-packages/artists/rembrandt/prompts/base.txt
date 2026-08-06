@@ -1,0 +1,9 @@
+Create an original oil painting of {SUBJECT} in {LOCATION}. Establish a warm
+umber ground and one dominant directional light path through a large dark field.
+Let the light reveal the psychological presence of the face, hands, or central
+gesture, while deep shadows retain warm structure and material detail. Use warm
+black, umber, muted red, ochre gold, and restrained old ivory. Model skin with
+continuous transitions; model cloth, wood, and metal with selective loaded paint
+and broken highlights. Keep the composition asymmetrical, intimate, and quiet.
+The result must be a new scene, not a brown filter, generic movie chiaroscuro, or
+reconstruction of any named painting.

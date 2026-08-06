@@ -1,0 +1,17 @@
+package_id: claude-monet
+package_version: 0.1.0
+invariants:
+  - id: transient_light
+    weight: 3
+    test: Light temperature and reflected air organize the image.
+  - id: broken_color
+    weight: 3
+    test: Adjacent color touches replace uniform fills and heavy outlines.
+  - id: selective_atmosphere
+    weight: 2
+    test: Distant edges dissolve while the motif remains readable.
+  - id: original_arrangement
+    weight: 3
+    test: The scene is not a recognizable reconstruction.
+rejections: [global_pastel_filter, heavy_impasto, copied_named_work]
+minimum_score: 8

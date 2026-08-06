@@ -1,0 +1,10 @@
+{
+  "name":"observed social documentary monochrome palette",
+  "colors":[
+    {"id":"deep_machine","hex":"#191919","role":"industrial_shadow"},
+    {"id":"charcoal","hex":"#444444","role":"cloth_and_mid_shadow"},
+    {"id":"steel_gray","hex":"#858585","role":"metal_and_wall"},
+    {"id":"paper_white","hex":"#E0E0DC","role":"institutional_light"}
+  ],
+  "rules":["Value separates material and social context.","Keep midtones descriptive.","Do not use nostalgic sepia to soften the subject."]
+}

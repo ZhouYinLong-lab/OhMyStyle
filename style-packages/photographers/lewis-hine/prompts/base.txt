@@ -1,0 +1,10 @@
+Create an original social documentary photograph of {SUBJECT} in {LOCATION}.
+Show the person as an agent in a real work, migration, or institutional setting,
+not as a fashion model. Use tools, machinery, luggage, walls, windows, or
+architecture to establish social context and scale. Compose with clear geometry
+and direct observation, allowing a frontal or three-quarter view without theatrical
+expression. Render in neutral black-and-white with readable midtones: skin,
+metal, cloth, concrete, and paper should separate through value and texture.
+Keep the image evidentiary, humane, and materially specific. Avoid sentimental
+blur, poverty spectacle, heroic advertising, and a decorative vintage filter.
+Make a new scene and arrangement.

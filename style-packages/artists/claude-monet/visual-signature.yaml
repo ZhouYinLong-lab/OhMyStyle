@@ -1,0 +1,19 @@
+composition:
+  - ordinary motif observed at eye level with a stable horizon or receding path
+  - large atmospheric field and open breathing space
+  - forms assembled from color touches instead of dark outlines
+color:
+  - broken blue, lavender, pale green, cream, and muted warm accents
+  - local color changes with light and air; no uniform palette overlay
+light:
+  quality: transient_outdoor_daylight
+  behavior: [color_in_shadows, reflected_sky_light, soft_edges_in_distance]
+surface:
+  brushwork: short_broken_visible_touches
+  mark_logic: [small adjacent color notes, horizontal water marks, foliage clusters]
+  finish: luminous_open_oil_surface
+invariants:
+  - changing light is more important than dramatic gesture
+  - edges dissolve selectively into air
+  - color is optically adjacent rather than globally filtered
+  - new subject and arrangement are mandatory

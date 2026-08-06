@@ -1,0 +1,26 @@
+composition:
+  - use a close head-and-shoulders or tight three-quarter portrait
+  - make the face a sculptural central presence while allowing hair and cloth to merge into the dark field
+  - keep the background plain, soft, and subordinate
+  - favor a calm, contemplative expression over a polished smile
+color:
+  - near-monochrome sepia, umber, charcoal, and warm cream
+  - skin highlights are gentle and integrated, never porcelain-white
+  - background remains a deep warm neutral
+light:
+  quality: broad_victorian_portrait_light
+  behavior:
+    - one dominant soft facial modeling direction
+    - forehead, nose, cheek, and beard or hair transition as continuous tonal planes
+    - no modern rim light or beauty retouching
+surface:
+  capture: wet_collodion_or_albumen_process_impression
+  rendering:
+    - deliberate soft focus with localized facial legibility
+    - halo-like tonal transitions at hair and cloth edges
+    - subtle emulsion/paper irregularity, never digital blur everywhere
+invariants:
+  - psychological presence outranks cosmetic perfection
+  - softness is optical and selective, not a global beauty filter
+  - the sitter remains anonymous and newly imagined
+  - the portrait remains materially period-specific

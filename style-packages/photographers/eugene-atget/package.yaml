@@ -1,0 +1,20 @@
+id: eugene-atget
+name: Eugène Atget
+kind: photographer
+domain: photography
+version: 0.1.0
+entity: catalog/persons/photographers/eugene-atget/entity.yaml
+summary: >-
+  A documentary urban photography profile built from frontal observation,
+  quiet architectural geometry, restrained monochrome tonality, and the
+  evidentiary stillness of a large-format street record.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

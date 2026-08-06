@@ -1,0 +1,10 @@
+canonical_name: Claude Monet
+entity_type: artist
+life: 1840-1926
+region: France
+primary_medium: oil_painting
+scope:
+  subjects: [ordinary landscape, water, snow, trees, garden, atmosphere]
+  period_focus: impressionist landscape practice
+  exclusions: [heavy_contour_expression, generic_soft_focus_filter, copied_scene]
+subject_matter: [changing weather, reflected light, repeated motif under different conditions]

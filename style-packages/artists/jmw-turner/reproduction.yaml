@@ -1,0 +1,17 @@
+medium: oil_painting
+materials:
+  support: canvas
+  pigment_direction: cool_atmospheric_blues_and_grays_with_amber_light
+  finish: thin_veils_over_more_substantial_structural_passages
+process:
+  - place the broad atmospheric field before detailed objects
+  - set a diagonal movement line through the scene
+  - layer transparent and opaque passages to vary distance
+  - soften selected edges by dragging paint rather than blurring pixels
+  - reserve the highest contrast for the narrative focal event
+technical_direction:
+  contrast: low_to_moderate_with_local_focal_peak
+  saturation: restrained_to_moderate
+  perspective: atmospheric_depth
+  detail_density: sparse_in_air_dense_at_focal_event
+safety_note: Use observable atmospheric and material traits only; do not recreate a named artwork, exact vessel, railway, or arrangement.

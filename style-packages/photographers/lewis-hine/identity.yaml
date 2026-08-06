@@ -1,0 +1,10 @@
+canonical_name: Lewis Hine
+entity_type: photographer
+life: 1874-1940
+region: United States
+primary_medium: social_documentary_photography
+scope:
+  subjects: [labor, immigration, children at work, industrial machinery, public institutions]
+  period_focus: 1900s-1930s reform and industrial documentation
+  exclusions: [fashion_pose, anonymous_vintage_aesthetic, poverty_porn]
+subject_matter: [work, labor conditions, migration, dignity, evidence]

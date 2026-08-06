@@ -1,0 +1,18 @@
+medium: documentary_photography
+capture:
+  camera: large_format_view_camera_impression
+  viewpoint: patient_eye_level_observation
+  lens_behavior: normal_to_mildly_wide_without_modern_distortion
+  focus: broad_scene_legibility_with_historical_softness
+process:
+  - compose around the place's geometry before adding a person
+  - retain ordinary imperfections in paving, walls, windows, and objects
+  - use a restrained silver or warm monochrome print response
+  - preserve midtone information and avoid crushed blacks
+  - add only subtle period-process irregularity after the scene is coherent
+technical_direction:
+  contrast: low_to_moderate
+  saturation: monochrome_or_near_monochrome
+  perspective: squared_documentary
+  detail_density: moderate_structural_detail
+safety_note: Use documentary visual traits only; do not recreate a specific historical photograph or identifiable private person.

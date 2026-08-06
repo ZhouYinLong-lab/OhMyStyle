@@ -1,0 +1,14 @@
+package_id: edvard-munch
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Historical works are bundled from public-domain reproductions; the generated example is an anonymous new scene.
+sources:
+  - url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg
+    authority: Wikimedia Commons
+    supports: primary visual reference; public-domain reproduction
+    accessed: 2026-08-06
+  - url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Madonna_(1894-1895).jpg
+    authority: Wikimedia Commons
+    supports: secondary visual reference; public-domain reproduction
+    accessed: 2026-08-06
+attribution: Historical works remain attributed to Edvard Munch and their source institutions. This package is independent and claims no affiliation.

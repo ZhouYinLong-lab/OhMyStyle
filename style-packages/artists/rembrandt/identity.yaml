@@ -1,0 +1,10 @@
+canonical_name: Rembrandt van Rijn
+entity_type: artist
+life: 1606-1669
+region: Dutch Republic
+primary_medium: oil_painting
+scope:
+  subjects: [portrait, biblical narrative, intimate figures, material-rich cloth]
+  period_focus: mature baroque painting
+  exclusions: [uniform_sepia_filter, theatrical_black_background_without_form, copied_scene]
+subject_matter: [human interiority, gesture, face and hands as narrative anchors]

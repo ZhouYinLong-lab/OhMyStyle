@@ -1,0 +1,17 @@
+medium: oil_painting
+materials:
+  support: canvas_or_wood_panel
+  pigment_direction: saturated_cool_blues_against_warm_yellows_with_earth_anchors
+  finish: thick_visible_layers
+process:
+  - block large color masses before small marks
+  - assign a direction to every mark family according to the surface or motion
+  - keep highlights as loaded paint rather than airbrushed glow
+  - vary stroke length and curvature across sky, vegetation, and ground
+  - retain irregularity without adding digital noise
+technical_direction:
+  contrast: moderate_to_high
+  saturation: high_but_localized
+  perspective: readable_landscape_space
+  detail_density: mark_dense_in_focal_areas
+safety_note: Use only observable visual traits; do not recreate a named artwork, exact scene, or signature.

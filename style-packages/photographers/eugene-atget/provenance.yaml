@@ -1,0 +1,18 @@
+package_id: eugene-atget
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Original historical photographs are bundled from a museum collection that marks the images public domain; the generated example is an anonymous new scene.
+sources:
+  - url: https://artmuseum.princeton.edu/art/collections/objects/11597
+    authority: Princeton University Art Museum
+    supports: primary visual reference, object identity, medium, and public-domain download permission
+    accessed: 2026-08-06
+  - url: https://artmuseum.princeton.edu/art/collections/objects/23885
+    authority: Princeton University Art Museum
+    supports: secondary visual reference, object identity, medium, and public-domain download permission
+    accessed: 2026-08-06
+  - url: https://www.si.edu/object/photographic-history-collection-eugene-atget%3Anmah_1322709
+    authority: Smithsonian Institution
+    supports: documentary practice and camera-context research
+    accessed: 2026-08-06
+attribution: Historical photographs remain attributed to Eugène Atget and Princeton University Art Museum. This package is independent and claims no affiliation.

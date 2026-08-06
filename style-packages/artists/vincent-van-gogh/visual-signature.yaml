@@ -1,0 +1,27 @@
+composition:
+  - organize the scene with a readable foreground, middle distance, and luminous sky or background field
+  - use a strong dark vertical or diagonal anchor against a lighter active field when the subject supports it
+  - preserve a clear focal mass while allowing surrounding marks to circulate around it
+color:
+  - saturated ultramarine and blue-violet passages
+  - lemon, cadmium, and ochre yellow used as luminous counterweights
+  - olive and blue-green vegetation
+  - restrained umber or near-black anchors
+light:
+  quality: painted_luminous_contrast
+  behavior:
+    - light is carried by adjacent color rather than photorealistic shading
+    - warm points sit inside cool fields
+    - shadows remain chromatic and materially painted
+surface:
+  brushwork: thick_visible_directional_impasto
+  mark_logic:
+    - short curved strokes for sky and foliage
+    - longer slanted strokes for terrain and fields
+    - contour-following marks that reinforce form without outlining every object
+  finish: tactile_oil_surface_with_visible_paint_load
+invariants:
+  - marks must have directional rhythm rather than random texture
+  - complementary color contrast must be structural, not a global filter
+  - forms remain readable beneath expressive paint
+  - the generated scene must not reproduce a known work's arrangement

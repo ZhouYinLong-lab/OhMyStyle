@@ -1,0 +1,17 @@
+medium: social_documentary_photography
+capture:
+  camera: early_plate_or_film_camera_impression
+  viewpoint: direct_observational
+  lens_behavior: normal_perspective_with_clear_context
+  focus: person_and_work_environment_legible
+process:
+  - identify the social fact before styling the frame
+  - place tools, machinery, luggage, or architecture in relation to the body
+  - keep tonal response descriptive and midtones open
+  - avoid sentimental blur, heroic overstatement, and modern editorial polish
+technical_direction:
+  contrast: moderate
+  saturation: monochrome_or_neutral
+  perspective: documentary_contextual
+  detail_density: person_and_environment_balanced
+safety_note: Use documentary structure only; do not recreate a named photograph or exploit a vulnerable person.

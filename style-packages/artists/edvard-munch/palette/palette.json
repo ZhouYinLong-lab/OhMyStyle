@@ -1,0 +1,11 @@
+{
+  "name":"observed psychological color palette",
+  "colors":[
+    {"id":"rust_red","hex":"#A84A35","role":"alarm_and_heat"},
+    {"id":"acid_ochre","hex":"#C8943B","role":"sickly_light"},
+    {"id":"deep_blue","hex":"#263D68","role":"water_and_void"},
+    {"id":"green_black","hex":"#263A35","role":"enclosing_mass"},
+    {"id":"dirty_flesh","hex":"#B58F79","role":"unstable_body_color"}
+  ],
+  "rules":["Tie non-natural color to emotion.","Let color bands and contour carry tension.","Avoid cheerful decorative saturation."]
+}

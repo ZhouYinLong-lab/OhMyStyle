@@ -1,0 +1,19 @@
+canonical_name: J. M. W. Turner
+entity_type: artist
+life: 1775-1851
+region: United Kingdom
+primary_medium: oil_painting
+scope:
+  subjects:
+    - weather-driven landscape
+    - sea and river scenes
+    - steam, smoke, and atmospheric motion
+    - ships, bridges, and distant structures
+  period_focus: mature atmospheric landscape work
+  exclusions:
+    - generic fog overlay
+    - copied famous composition
+subject_matter:
+  - human technology reduced into a moving atmospheric event
+  - light and weather competing with solid form
+  - distant structures that remain legible but partially dissolved

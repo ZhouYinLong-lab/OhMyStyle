@@ -1,0 +1,11 @@
+{
+  "name":"observed warm dark baroque palette",
+  "colors":[
+    {"id":"warm_black","hex":"#211B18","role":"ground_and_deep_shadow"},
+    {"id":"umber","hex":"#4C3327","role":"dark_flesh_and_wood"},
+    {"id":"muted_red","hex":"#7A3E2E","role":"cloth_and_warm_accent"},
+    {"id":"ochre_gold","hex":"#B07B3C","role":"light_on_fabric_and_skin"},
+    {"id":"old_ivory","hex":"#D8C4A5","role":"face_hands_and_highlight"}
+  ],
+  "rules":["Keep warm structure in shadows.","Localize the highest contrast.","Do not reduce the image to a brown tint."]
+}

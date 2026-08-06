@@ -1,0 +1,18 @@
+package_id: rembrandt
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Historical works are bundled from public-domain reproductions; the generated example is an anonymous new scene.
+sources:
+  - url: https://commons.wikimedia.org/wiki/File:Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_Google_Art_Project.jpg
+    authority: Wikimedia Commons
+    supports: primary visual reference; public-domain reproduction
+    accessed: 2026-08-06
+  - url: https://commons.wikimedia.org/wiki/File:Andromeda,_Rembrandt_van_Rijn,_1630-1631,_Mauritshuis,_The_Hague.jpg
+    authority: Wikimedia Commons
+    supports: secondary visual reference; public-domain reproduction
+    accessed: 2026-08-06
+  - url: https://www.rijksmuseum.nl/en/collection/object/Isaac-and-Rebecca-Known-as-The-Jewish-Bride--019c1265e6dbf108d4587ab2b7c02c66
+    authority: Rijksmuseum
+    supports: public-domain status and material context for Rembrandt's oil painting
+    accessed: 2026-08-06
+attribution: Historical works remain attributed to Rembrandt van Rijn and their source institutions. This package is independent and claims no affiliation.

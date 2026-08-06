@@ -1,0 +1,17 @@
+package_id: edvard-munch
+package_version: 0.1.0
+invariants:
+  - id: psychological_color
+    weight: 3
+    test: Non-natural color communicates an inner state rather than decoration.
+  - id: rhythmic_contour
+    weight: 3
+    test: Figure and environment share intentional undulating or enclosing line.
+  - id: compressed_space
+    weight: 2
+    test: Space is simplified or tilted while remaining purposeful.
+  - id: original_arrangement
+    weight: 3
+    test: The scene is not a recognizable reconstruction.
+rejections: [decorative_saturation, random_distortion, copied_iconic_pose]
+minimum_score: 8

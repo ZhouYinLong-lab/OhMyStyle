@@ -1,0 +1,20 @@
+id: vincent-van-gogh
+name: Vincent van Gogh
+kind: artist
+domain: painting
+version: 0.1.0
+entity: catalog/persons/artists/vincent-van-gogh/entity.yaml
+summary: >-
+  A post-impressionist painting profile built from observed directional strokes,
+  high-chroma complementary color, thick material paint, and expressive motion
+  in sky, vegetation, and ground without copying a named composition.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

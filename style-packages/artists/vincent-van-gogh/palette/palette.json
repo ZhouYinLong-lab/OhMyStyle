@@ -1,0 +1,16 @@
+{
+  "name": "observed cool-warm oil palette",
+  "colors": [
+    {"id": "deep_blue_violet", "hex": "#2D316F", "role": "night_field_and_shadow"},
+    {"id": "ultramarine", "hex": "#3159A6", "role": "sky_and_cool_light"},
+    {"id": "olive_green", "hex": "#657044", "role": "vegetation"},
+    {"id": "luminous_yellow", "hex": "#F2C94C", "role": "stars_and_warm_light"},
+    {"id": "ochre", "hex": "#C98A32", "role": "earth_and_secondary_warmth"},
+    {"id": "umber_anchor", "hex": "#242126", "role": "dark_structure"}
+  ],
+  "rules": [
+    "Use warm yellow as an active counterpoint inside a cool field.",
+    "Keep black-like anchors chromatic and visibly painted.",
+    "Do not apply the palette as a uniform color overlay."
+  ]
+}

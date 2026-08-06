@@ -1,0 +1,10 @@
+canonical_name: Alfred Stieglitz
+entity_type: photographer
+life: 1864-1946
+region: United States
+primary_medium: photogravure_and_pictorial_photography
+scope:
+  subjects: [urban modernity, weather, crowds, formal object studies, portrait]
+  period_focus: late nineteenth to early twentieth century modernist transition
+  exclusions: [neutral_snapshot, decorative_sepia_filter, generic_street_photo]
+subject_matter: [migration, city atmosphere, social space, geometry as meaning]

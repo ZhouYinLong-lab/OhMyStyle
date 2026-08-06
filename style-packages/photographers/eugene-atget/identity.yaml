@@ -1,0 +1,20 @@
+canonical_name: Eugène Atget
+entity_type: photographer
+life: 1857-1927
+region: France
+primary_medium: gelatin_silver_and_early_documentary_photography
+scope:
+  subjects:
+    - streets and passages
+    - façades and architectural details
+    - parks and urban edges
+    - workers, carts, and ordinary public life
+  period_focus: Paris and environs, late nineteenth to early twentieth century
+  exclusions:
+    - modern cinematic street photography
+    - editorial fashion posing
+    - romanticized tourist postcard
+subject_matter:
+  - overlooked urban evidence
+  - ordinary structures with measured geometry
+  - figures treated as part of a place rather than celebrity subjects

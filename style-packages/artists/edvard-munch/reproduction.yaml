@@ -1,0 +1,16 @@
+medium: oil_painting
+materials:
+  support: canvas_or_panel
+  pigment_direction: rust_red_ochre_blue_green_black_and_dirty_flesh
+  finish: uneven_visible_oil_layers
+process:
+  - decide the emotional temperature before literal local color
+  - let contour and background rhythm echo the figure's state
+  - compress perspective and simplify detail into symbolic masses
+  - retain roughness and uneven paint without turning it into random grunge
+technical_direction:
+  contrast: moderate_to_high
+  saturation: emotionally_selective
+  perspective: compressed_or_tilted
+  detail_density: focal_figure_and_rhythm_dense
+safety_note: Use psychological color and line behavior only; do not recreate a named artwork or iconic pose.

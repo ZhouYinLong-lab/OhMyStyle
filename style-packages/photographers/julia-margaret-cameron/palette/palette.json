@@ -1,0 +1,15 @@
+{
+  "name": "observed warm monochrome portrait palette",
+  "colors": [
+    {"id": "deep_umber", "hex": "#1C1C1B", "role": "background_and_deep_cloth"},
+    {"id": "warm_charcoal", "hex": "#4A433F", "role": "hair_and_shadow"},
+    {"id": "sepia_midtone", "hex": "#81736A", "role": "skin_and_period_fabric"},
+    {"id": "warm_silver", "hex": "#B9A69B", "role": "facial_modeling"},
+    {"id": "paper_cream", "hex": "#E1D5C9", "role": "print_highlight_and_border"}
+  ],
+  "rules": [
+    "Keep the portrait warm monochrome rather than a modern orange filter.",
+    "Reserve the lightest tone for restrained facial or paper highlights.",
+    "Preserve open detail in dark hair and cloth."
+  ]
+}

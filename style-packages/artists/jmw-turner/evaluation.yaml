@@ -1,0 +1,20 @@
+package_id: jmw-turner
+package_version: 0.1.0
+invariants:
+  - id: atmospheric_depth
+    weight: 3
+    test: Distant forms lose contrast and edge certainty through layered air.
+  - id: diagonal_movement
+    weight: 2
+    test: A readable diagonal vector organizes the scene.
+  - id: luminous_weather
+    weight: 3
+    test: Warm light and cool atmosphere interact through paint, not digital glow.
+  - id: original_arrangement
+    weight: 3
+    test: Subject and composition are not a recognizable reconstruction.
+rejections:
+  - generic_fog_filter
+  - neon_bloom
+  - copied_named_work
+minimum_score: 8

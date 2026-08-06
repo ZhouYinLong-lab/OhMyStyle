@@ -1,0 +1,26 @@
+composition:
+  - use an eye-level or slightly elevated view with frontal, near-frontal, or carefully squared geometry
+  - allow streets, façades, carts, windows, and paving to occupy most of the frame
+  - keep human activity secondary to the record of place unless the scene naturally demands otherwise
+  - preserve a modest amount of empty space and visual patience
+color:
+  - neutral black, charcoal, brown-gray, and faded silver
+  - warm paper or aged-print undertone only when caused by the process
+  - no selective color or modern teal-orange grade
+light:
+  quality: available_daylight_or_soft_overcast_record
+  behavior:
+    - broad tonal transitions
+    - readable midtones in stone and pavement
+    - shadows hold detail instead of becoming cinematic black
+surface:
+  capture: large_format_view_camera_feel
+  rendering:
+    - moderate edge softness consistent with historical optics and print
+    - restrained movement blur only when the event supports it
+    - subtle paper or emulsion irregularity, never decorative grain overload
+invariants:
+  - the image must feel observed rather than staged
+  - geometry and material evidence remain more important than spectacle
+  - monochrome tonality stays restrained and physically plausible
+  - no invented modern cinematic treatment

@@ -1,0 +1,16 @@
+{
+  "name": "observed atmospheric oil palette",
+  "colors": [
+    {"id": "storm_blue", "hex": "#53677B", "role": "cool_air_and_distance"},
+    {"id": "pearl_gray", "hex": "#B8C4C7", "role": "rain_and_luminous_sky"},
+    {"id": "amber_light", "hex": "#C77735", "role": "warm_atmospheric_event"},
+    {"id": "pale_cream", "hex": "#E5D6B6", "role": "integrated_highlight"},
+    {"id": "deep_structure", "hex": "#303B4A", "role": "ship_track_or_land_anchor"},
+    {"id": "smoke_umber", "hex": "#6E5847", "role": "vapor_and_warm_shadow"}
+  ],
+  "rules": [
+    "Keep warm light inside a larger cool atmospheric field.",
+    "Reduce distant contrast and saturation without flattening the image.",
+    "Do not replace layered paint with a uniform fog or bloom filter."
+  ]
+}

@@ -1,0 +1,7 @@
+asset: anonymous-v1.png
+status: accepted_human_review
+generator: OpenAI built-in image generation
+prompt_mode: anonymous_visual_signature
+subject: a quiet Paris service passage with stacked chairs and one distant figure
+review: approved_by_user
+reviewed_at: 2026-08-06

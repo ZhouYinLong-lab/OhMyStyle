@@ -1,0 +1,16 @@
+medium: oil_painting
+materials:
+  support: canvas_or_wood_panel
+  pigment_direction: warm_umber_ground_with_ochre_red_and_cream_light
+  finish: layered_glaze_and_loaded_focal_paint
+process:
+  - establish a warm dark ground and light path first
+  - model face and hands with continuous tonal transitions
+  - vary fabric with thick and thin marks according to material
+  - keep shadow detail open instead of clipping to black
+technical_direction:
+  contrast: high_localized
+  saturation: restrained_warm
+  perspective: intimate_figure_space
+  detail_density: concentrated_on_face_hands_material
+safety_note: Use observable light and paint behavior only; do not recreate a named work or sitter.

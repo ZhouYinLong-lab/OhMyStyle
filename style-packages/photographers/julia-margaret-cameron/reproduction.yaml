@@ -1,0 +1,18 @@
+medium: nineteenth_century_portrait_photography
+capture:
+  camera: period_plate_camera_impression
+  viewpoint: close_eye_level_portrait
+  lens_behavior: soft_focus_historical_optics
+  focus: face_legible_with_graceful_edge_falloff
+process:
+  - establish a dark neutral field before placing the face
+  - shape the face with broad soft light and continuous tonal transitions
+  - keep cloth and hair period-appropriate and subordinate
+  - allow slight exposure and emulsion irregularity
+  - avoid modern sharpening, pore retouching, and cosmetic symmetry
+technical_direction:
+  contrast: moderate_with_deep_but_open_background
+  saturation: monochrome_warm
+  perspective: intimate_portrait
+  detail_density: concentrated_at_face
+safety_note: Use period photographic traits only; do not imitate a named sitter or reproduce a known portrait arrangement.

@@ -1,0 +1,14 @@
+package_id: claude-monet
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Historical works are bundled only from public-domain reproductions; the generated example is an anonymous new scene.
+sources:
+  - url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg
+    authority: Wikimedia Commons
+    supports: primary visual reference; public-domain reproduction
+    accessed: 2026-08-06
+  - url: https://www.nga.gov/artworks/52186-argenteuil
+    authority: National Gallery of Art
+    supports: secondary Open Access visual and material context
+    accessed: 2026-08-06
+attribution: Historical works remain attributed to Claude Monet and their source institutions. This package is independent and claims no affiliation.

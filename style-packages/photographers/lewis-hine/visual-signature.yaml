@@ -1,0 +1,19 @@
+composition:
+  - place a person in a legible work or institutional environment
+  - use machinery, walls, luggage, tools, or architecture to establish scale and social context
+  - allow direct frontal or three-quarter observation without fashion posing
+  - use clear geometry and enough detail for evidence, not atmospheric mystery
+color:
+  - neutral black-and-white or restrained archival monochrome
+  - skin, metal, cloth, and concrete differentiated through value and texture
+light:
+  quality: direct_documentary_or_available_institutional_light
+  behavior: [clear_form_modeling, readable_midtones, controlled_highlights]
+surface:
+  capture: early_documentary_plate_or_film_record
+  rendering: [sharp_structural_detail, modest_print_irregularity, honest_tonal_response]
+invariants:
+  - the person has agency and dignity
+  - the environment provides evidence rather than decoration
+  - scale relationships between body, work, and institution are legible
+  - no invented melodrama or copied historical scene

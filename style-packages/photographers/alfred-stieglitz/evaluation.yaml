@@ -1,0 +1,17 @@
+package_id: alfred-stieglitz
+package_version: 0.1.0
+invariants:
+  - id: authored_geometry
+    weight: 3
+    test: Intersecting planes and an intentional crop create the main structure.
+  - id: layered_tonality
+    weight: 3
+    test: Weather or social density produces distinct tonal planes.
+  - id: print_as_medium
+    weight: 2
+    test: Historical print response supports the composition rather than masking it.
+  - id: original_arrangement
+    weight: 3
+    test: The image is not a recognizable reconstruction.
+rejections: [sepia_preset, neutral_snapshot, modern_bokeh, copied_named_photo]
+minimum_score: 8

@@ -1,0 +1,20 @@
+id: jmw-turner
+name: J. M. W. Turner
+kind: artist
+domain: painting
+version: 0.1.0
+entity: catalog/persons/artists/jmw-turner/entity.yaml
+summary: >-
+  An atmospheric landscape painting profile built from dissolving edges,
+  vaporous layered paint, luminous weather, and directional spatial movement
+  without reproducing a named marine or railway composition.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

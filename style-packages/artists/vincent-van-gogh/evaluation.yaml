@@ -1,0 +1,20 @@
+package_id: vincent-van-gogh
+package_version: 0.1.0
+invariants:
+  - id: directional_marks
+    weight: 3
+    test: Brush marks follow surface or motion and are not random decoration.
+  - id: cool_warm_structure
+    weight: 3
+    test: Cool blue-violet fields and warm yellow accents organize the image.
+  - id: tactile_oil_surface
+    weight: 2
+    test: Paint load and stroke edges remain visibly material.
+  - id: original_arrangement
+    weight: 3
+    test: Subject and composition are not a recognizable reconstruction.
+rejections:
+  - smooth_ai_paint_filter
+  - global_color_overlay
+  - copied_named_work
+minimum_score: 8
