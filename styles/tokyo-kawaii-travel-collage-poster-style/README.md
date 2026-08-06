@@ -6,7 +6,7 @@
 
 ## 简介
 
-A maximalist Japanese city-travel collage style with bold destination typography, cute sticker elements, manga speech bubbles, cutout fashion photography, halftone urban backgrounds, and scrapbook editorial layout.
+以大胆目的地字、可爱贴纸、漫画对话框、剪裁时装照片、半调城市背景和剪贴簿式编辑布局，构成信息密度很高的日本城市旅行拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

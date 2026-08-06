@@ -6,7 +6,7 @@
 
 ## 简介
 
-A reusable illustrated poster style built from saturated electric-blue fields, sharp white cutout geometry, oversized rounded modular typography, warm orange microtype, and one cel-shaded manga subject with a large foreground prop in exaggerated perspective.
+以饱和电蓝色面、锐利白色剪纸几何、圆润模块化大字、暖橙小字和一个带夸张前景道具的赛璐璐漫画人物组成可复用海报系统。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

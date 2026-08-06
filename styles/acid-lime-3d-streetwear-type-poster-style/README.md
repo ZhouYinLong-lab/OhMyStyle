@@ -6,7 +6,7 @@
 
 ## 简介
 
-A glossy C4D streetwear campaign poster system built from pale studio space, oversized black block typography, acid-lime marker strokes, sticker badges, fashion-tool props, low wide-angle character staging, and clean synthetic product lighting.
+以浅色摄影棚、超大黑色粗体字、酸橙绿马克笔笔触、贴纸徽章和时装道具为核心，配合低机位广角人物与干净的合成灯光，形成明亮的 C4D 街头服装广告感。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

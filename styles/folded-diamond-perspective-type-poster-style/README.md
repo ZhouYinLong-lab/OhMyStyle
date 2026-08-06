@@ -6,7 +6,7 @@
 
 ## 简介
 
-A bold minimalist editorial poster style using low-angle hero photography inside a diamond aperture, folded tan paper or canvas planes, and oversized white perspective typography printed across the lower surface.
+把低机位英雄照片放入菱形开口，再铺上折叠的棕色纸或帆布平面，并让巨大的白色透视字沿下方表面印出，形成大胆克制的编辑海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

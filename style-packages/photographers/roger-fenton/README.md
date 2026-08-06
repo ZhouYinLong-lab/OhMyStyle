@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A nineteenth-century documentary photography profile built from deliberate field composition, restrained tonal range, material evidence, and dignified human or landscape observation.
+以经过安排的现场构图、克制的影调范围、可见的物质证据和有尊严的人物或风景观察建立十九世纪纪实摄影质感。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

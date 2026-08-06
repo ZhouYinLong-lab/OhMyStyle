@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A reference-backed modernist photography profile focused on deliberate formal structure, layered planes, tonal weather, and the photograph as an authored composition rather than a neutral record or a sepia preset.
+以经过设计的形式结构、层层推进的平面、带有天气感的影调和作者意识组织现代主义摄影；照片不是中性的记录，也不是简单的棕褐色预设。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

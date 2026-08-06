@@ -6,7 +6,7 @@
 
 ## 简介
 
-A dense black, white, and scarlet manga tabloid poster system with oversized condensed type, cropped ink characters, editorial metadata blocks, halftone shading, red spot-color shock graphics, and folded photocopy paper texture.
+以黑、白、猩红三色、巨大窄体字、裁切墨线人物、编辑元数据、半调阴影、红色点色冲击图形和折叠复印纸纹理构成漫画小报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

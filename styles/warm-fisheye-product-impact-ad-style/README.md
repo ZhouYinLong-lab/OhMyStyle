@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-impact product advertising style built from ultra-wide close-up photography, a tunnel of textured foreground pieces, oversized angled white Chinese display type, warm amber-brown contrast, tiny top navigation labels, product-pack callouts, and compressed social-banner density. It feels like a loud commercial thumbnail shot from inside a pile of snack-like objects, with the product and subject rushing toward the viewer.
+以超广角近景、由有纹理前景物组成的隧道、倾斜白色中文大字、暖琥珀棕对比、顶部导航小字和产品标注，模拟从零食堆中冲向观众的商业缩略图。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

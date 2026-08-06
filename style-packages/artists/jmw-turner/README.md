@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-An atmospheric landscape painting profile built from dissolving edges, vaporous layered paint, luminous weather, and directional spatial movement without reproducing a named marine or railway composition.
+以边缘溶解、层层叠加的雾化颜料、发光天气和有方向的空间运动表现空气与光，不复刻具体海景或铁路构图。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

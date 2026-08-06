@@ -6,7 +6,7 @@
 
 ## 简介
 
-A kinetic flat editorial illustration style built from off-white paper, large olive-green poster blocks, oversized action figures, rough black ink contours, red marker motion arcs, yellow-green dry-brush swaths, sparse debris, and handmade screenprint texture.
+以米白纸、橄榄绿大色块、夸张动作人物、粗黑墨线、红色运动弧线、黄绿色干刷痕迹、少量碎屑和丝网印刷纹理组成平面体育海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

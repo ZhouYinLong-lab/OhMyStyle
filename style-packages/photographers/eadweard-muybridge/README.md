@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A motion-study photography profile built from repeatable camera geometry, neutral staging, sequential phases, and evidence-first observation of movement.
+以可重复的机位几何、近乎中性的场景、连续动作阶段和证据优先的观察方式研究运动，让每一帧都像实验记录。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

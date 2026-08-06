@@ -6,7 +6,7 @@
 
 ## 简介
 
-A stark black-and-white editorial poster system pairing a close, high-contrast photographic portrait with oversized lowercase neo-grotesk typography. One headline word is reversed into a clean white rectangular label while the remaining words sit as heavy white type over a charcoal background.
+以高对比黑白近景肖像搭配巨大的小写 neo-grotesk 字体，其中一个标题词反白放入干净白色标签，其余文字压在炭黑背景上。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

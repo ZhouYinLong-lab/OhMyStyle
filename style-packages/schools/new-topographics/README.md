@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A landscape-photography school profile built around clear-eyed views of human-altered terrain, restrained composition, neutral description, and the tension between documentary evidence and aesthetic order.
+以清醒地观看被人类改造的地形为核心，保持克制构图、中性描述和文献证据感，同时让纪实记录与审美秩序之间的张力自然存在。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

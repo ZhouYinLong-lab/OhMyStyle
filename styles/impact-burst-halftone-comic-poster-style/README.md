@@ -6,7 +6,7 @@
 
 ## 简介
 
-A loud retro comic poster system built from thick black ink, flat high-saturation colors, oversized impact typography, exaggerated illustrated subjects, diagonal props, speech bursts, smoke puffs, halftone dots, and distressed screen-print grain.
+用放射冲击形、半调阴影、裁切人物、粗黑轮廓、黄色爆发线和红蓝点色制造直接、快速、像印刷漫画封面一样有冲击力的版面。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

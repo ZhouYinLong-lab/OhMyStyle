@@ -6,7 +6,7 @@
 
 ## 简介
 
-A punchy photo-and-illustration poster style built around a central low-angle fashion portrait framed by oversized flat bubble-letter shapes, saturated candy colors, thick black outlines, oval highlights, and crisp sparkle marks.
+以低机位时装肖像为中心，用扁平泡泡字形、糖果色、粗黑轮廓、椭圆高光和清脆闪光符号把照片与插画拼成流行海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

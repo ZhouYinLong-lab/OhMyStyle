@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-An early studio portrait photography profile built from sculptural pose, plain tonal ground, directional soft light, and psychologically alert expression.
+以早期摄影棚肖像的雕塑式姿态、朴素影调背景、方向明确的柔光和具有心理警觉的表情塑造人物。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

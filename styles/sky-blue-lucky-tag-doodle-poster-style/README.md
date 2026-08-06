@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse flat doodle-poster system built around a saturated sky-blue field, chunky white headline type, an off-white hanging lucky-tag plaque, thick uneven black outlines, bright toy colors, and one large simplified mascot or prop crossing the tag like a playful charm illustration.
+以饱和天蓝底、厚重白色标题、米白色悬挂签牌、粗黑不均轮廓、明亮玩具色和一只穿过签牌的简化吉祥物或道具构成平面涂鸦。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

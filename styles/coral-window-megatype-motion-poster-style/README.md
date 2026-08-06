@@ -6,7 +6,7 @@
 
 ## 简介
 
-A tactile editorial motion-poster system built from a coral-red paper field, one cool pale-blue photographic window, colossal black condensed typography that crosses the image boundary, a single isolated action subject, sparse micro-editorial labels, and a bold geometric direction symbol.
+以珊瑚红纸面、冷淡的浅蓝照片窗口、跨越图像边界的巨大黑色窄体字、孤立动作人物、编辑小标签和几何方向符号制造触感强烈的动作海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

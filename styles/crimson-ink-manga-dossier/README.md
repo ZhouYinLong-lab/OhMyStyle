@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-density manga editorial dossier poster built from one dramatically foreshortened illustrated hero, oversized distressed condensed headlines, modular newspaper sidebars, monochrome comic insets, and a strict crimson-black-warm-paper palette.
+以一个强烈透视的漫画英雄为中心，叠加磨损窄体标题、模块化报纸侧栏、黑白漫画插图，并严格控制深红、黑色与暖纸色的组合。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

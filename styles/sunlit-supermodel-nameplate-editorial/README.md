@@ -6,7 +6,7 @@
 
 ## 简介
 
-A warm analog fashion editorial poster style combining an outdoor supermodel photograph, lush foreground texture, a small material nameplate detail, and clean white lower-third title/caption typography.
+以户外超模照片、丰富的植物前景、一个小型材质铭牌细节和干净的白色下三分之一标题与说明，形成温暖的模拟时装编辑海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

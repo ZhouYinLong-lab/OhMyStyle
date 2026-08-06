@@ -6,7 +6,7 @@
 
 ## 简介
 
-A retro-futurist editorial portrait system built from an asymmetric technical dossier sidebar, an edge-cropped posterized face, liquid-chrome interruptions, modular grid lines, optical diagrams, and coarse halftone print grain in midnight indigo, warm cream, hot magenta, cobalt, and coral.
+以不对称技术档案侧栏、裁切并海报化的面孔、液态铬干扰、模块网格、光学图表和粗半调颗粒，组合午夜靛蓝、暖奶油、洋红、钴蓝与珊瑚色。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

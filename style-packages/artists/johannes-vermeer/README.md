@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-An interior and cityscape painting profile built from controlled side light, quiet geometry, measured domestic detail, and soft optical transitions.
+用受控的侧光、安静的几何关系、克制的室内细节和柔和的光学过渡组织空间，让日常场景呈现清晰而安静的体积感。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

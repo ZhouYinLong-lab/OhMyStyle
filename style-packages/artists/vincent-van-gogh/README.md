@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A post-impressionist painting profile built from observed directional strokes, high-chroma complementary color, thick material paint, and expressive motion in sky, vegetation, and ground without copying a named composition.
+以有方向的旋转笔触、高纯度互补色、厚重的颜料质感和天空、植物、地面中的运动感组织画面，保留观察对象的结构，不复制具体作品。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

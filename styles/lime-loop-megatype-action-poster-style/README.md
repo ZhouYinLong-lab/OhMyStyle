@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-energy studio action-poster system combining an overhead wide-angle photographic subject, enormous stacked dark-green display type, a continuous fluorescent-lime motion loop, clean white negative space, and crisp commercial lighting.
+以酸橙绿循环线条、超大窄体字、动作照片、深色底和少量暖色标记构成强节奏的编辑动作海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

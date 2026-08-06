@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A reference-backed landscape painting profile focused on transient light, atmospheric color, broken touches, and the changing appearance of ordinary motifs rather than heavy contour or expressive impasto.
+围绕转瞬即逝的光线与空气色彩组织画面，用松散而可见的笔触捕捉普通景物在不同时间里的变化，避免厚重轮廓和过度强调的笔触表演。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

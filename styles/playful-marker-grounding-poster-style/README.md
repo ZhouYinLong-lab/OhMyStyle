@@ -6,7 +6,7 @@
 
 ## 简介
 
-A naive hand-drawn poster style built from cream paper margins, loose marker-scribble color blocks, thick uneven keylines, oversized casual lettering, and simple mascot-like figures arranged with clear public-service poster hierarchy.
+以奶油纸边、松散马克笔色块、粗细不均的描边、随意大字和简单吉祥物人物，建立层级清楚、带公共服务海报气质的手绘版面。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

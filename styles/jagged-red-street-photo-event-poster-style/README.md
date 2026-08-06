@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-impact street event poster system combining a black-and-white documentary photo core, oversized jagged red and black display lettering, thick white sticker-like gutters, and sparse three-color print energy.
+以粗糙红色块、倾斜街头照片、撕裂边缘、黑色窄体字和白色小标签构成现场活动海报，保留拍摄瞬间的速度与不整齐感。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

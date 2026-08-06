@@ -6,7 +6,7 @@
 
 ## 简介
 
-A black-and-white photocopied editorial collage system with oversized cropped subjects, overlapping inset photo panels, huge distressed condensed type, micro dossier labels, paper grain, halftone, scratches, and a sparse sports-press-kit mood.
+以黑白复印拼贴、裁切运动人物、重叠照片插图、磨损窄体字、档案小标签、纸张颗粒和半调划痕模拟体育 press kit。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

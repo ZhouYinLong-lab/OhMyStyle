@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-fashion editorial poster style with low-angle luxury photography, sharp red-and-white checkerboard perspective planes, generous white space, oversized custom script typography, and restrained emerald or teal accents. It evokes international luxury maison advertising without copying any real brand mark, campaign, model, product, or exact layout.
+以棋盘格透视地面、精确的奢侈品陈列、克制的黑白或深色字体和宽阔留白建立冷静的高级编辑空间。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

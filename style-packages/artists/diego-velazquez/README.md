@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A court and portrait painting profile built from controlled dark space, selective illumination, precise faces and fabrics, and lively broad passages that dissolve at the edges.
+以宫廷肖像和人物画的克制秩序为基础：深色空间中只保留必要的光，准确处理脸部与织物，并让宽松的笔触在轮廓边缘自然消散。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

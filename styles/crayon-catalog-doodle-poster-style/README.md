@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse product-catalog poster system rendered like a child's wax-crayon drawing on folded white paper: huge rough red headline letters, simple green and warm-color doodle subjects, tiny black catalog captions, and lots of quiet blank space.
+像折叠白纸上的儿童蜡笔目录：粗糙红色大标题、绿色与暖色手绘对象、细小黑色目录说明和充足留白共同组成稚拙而克制的产品海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse nostalgic poster system built from warm classroom grid paper, hand-drawn vertical notebook writing, and one large centered torn-paper collage object photographed with shallow real-paper shadows.
+以温暖的教室方格纸、手绘竖向笔记字和一件带浅层纸张阴影的中央撕纸拼贴物，形成稀疏而怀旧的海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

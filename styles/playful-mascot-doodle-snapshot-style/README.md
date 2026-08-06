@@ -6,7 +6,7 @@
 
 ## 简介
 
-A casual real-life social photo transformed into a playful poster by layering original cartoon mascot stickers, hand-drawn outlines, ribbon headline panels, sparkles, spirals, and sketchy decorative marks over the photographic scene.
+把真实生活照片变成轻松海报，在场景上叠加原创卡通贴纸、手绘轮廓、丝带标题、闪光、螺旋和草图装饰。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

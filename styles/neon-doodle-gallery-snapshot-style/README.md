@@ -6,7 +6,7 @@
 
 ## 简介
 
-A candid phone-photo style layered with chaotic neon digital marker doodles: hot-pink and cyan subject outlines, yellow monster spikes, rough handwritten captions, stars, paw prints, spiderweb corners, scribble bars, halos, plants, and student diary energy.
+以手机抓拍为底，叠加混乱的霓虹数字马克笔：粉青人物轮廓、黄色怪物尖刺、手写注释、星星、爪印、蜘蛛网、光环和学生日记般的随手感。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A late Greek visual language of energetic diagonals, torsion, emotional intensity, varied bodies, theatrical space, and contact between Greek and eastern Mediterranean traditions after the Macedonian expansion.
+用强烈斜线、扭转姿态、情绪张力、多样化人体和戏剧化空间表现希腊化时期的能量，同时保留希腊与东地中海文化交流的痕迹。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

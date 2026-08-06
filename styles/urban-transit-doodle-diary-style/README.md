@@ -6,7 +6,7 @@
 
 ## 简介
 
-A raw urban snapshot treated like a personal visual diary, combining real public-space photography with bold hand-drawn comic overlays, handwritten travel notes, saturated cartoon faces, and a large foreground gesture.
+把真实公共空间抓拍当作个人视觉日记，加入大胆手绘漫画覆盖、旅行手记、饱和卡通脸和一只占据前景的大手势。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

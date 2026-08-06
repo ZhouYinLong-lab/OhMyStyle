@@ -6,7 +6,7 @@
 
 ## 简介
 
-A flat illustrated poster system built from a saturated cyan field, oversized red block typography, lemon-yellow human accents, white jagged shockwaves, thick red keylines, and compact rotated microcopy. It feels like a loud regional travel poster crossed with manga impact graphics and screenprinted street signage.
+以青色底、超大红色块字、柠檬黄人物点缀、白色锯齿冲击波、粗红描边和旋转小字，制造介于地区旅行海报、漫画冲击图形与丝网招贴之间的平面效果。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

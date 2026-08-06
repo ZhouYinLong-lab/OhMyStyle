@@ -6,7 +6,7 @@
 
 ## 简介
 
-A loud toy-product poster style built around one fuzzy plush product hero, retro cream poster paper, a cyan circular backdrop, oversized slanted comic typography, thick black shadows, doodle annotations, sticker labels, lightning graphics, and dense campaign microcopy.
+围绕一件毛绒玩具产品，加入复古奶油海报纸、青色圆形背景、倾斜漫画字、厚黑阴影、涂鸦注记、贴纸标签、闪电图形和密集推广小字。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

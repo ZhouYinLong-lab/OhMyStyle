@@ -6,7 +6,7 @@
 
 ## 简介
 
-A nostalgic roadside-travel editorial poster system that combines cropped cobalt megatype, sparse locator graphics, warm straight-on architectural photography, cream uncoated paper, and one loose hand-painted word across the dark foreground.
+把钴蓝色大字、稀疏定位图形、正面暖色建筑照片、奶油色未涂布纸和一笔横跨暗色前景的手绘词语组合成怀旧公路旅行编辑海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

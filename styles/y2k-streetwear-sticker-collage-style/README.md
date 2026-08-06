@@ -6,7 +6,7 @@
 
 ## 简介
 
-A dense Y2K street-photo collage style with oversized cutout subjects, sticker props, loud comic typography, speech bubbles, saturated yellow-blue-green accents, and controlled high-contrast social-poster texture.
+以街头照片剪裁人物、贴纸道具、漫画大字、对话框、黄蓝绿高饱和点缀和受控高对比社交海报纹理构成密集的 Y2K 街头拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

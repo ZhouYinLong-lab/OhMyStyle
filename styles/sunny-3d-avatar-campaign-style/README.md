@@ -6,7 +6,7 @@
 
 ## 简介
 
-A bright social campaign poster style built from glossy toy-like 3D avatars, saturated blue-sky outdoor lighting, exaggerated wide-angle perspective, oversized slanted headline typography, and neon hand-drawn motion marks.
+以亮面玩具般的 3D 角色、饱和蓝天户外光、夸张广角透视、倾斜的大标题和霓虹手绘运动线，构成社交媒体宣传海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

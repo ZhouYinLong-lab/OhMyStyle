@@ -6,7 +6,7 @@
 
 ## 简介
 
-A raw hand-drawn fantasy poster system with oversized uneven lettering, neon marker mascot shapes, thick black outlines, loose scribble decorations, and dense childlike collage energy on a white paper field.
+用不规则大字、霓虹马克笔吉祥物、粗黑轮廓、松散涂鸦装饰和密集的儿童式拼贴能量，铺在白纸上形成原始手绘幻想海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

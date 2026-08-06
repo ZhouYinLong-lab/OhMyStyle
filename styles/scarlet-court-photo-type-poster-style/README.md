@@ -6,7 +6,7 @@
 
 ## 简介
 
-A saturated action-ad poster style built from a flat scarlet field, a hard-edged blue photographic sports panel, one cutout subject crossing between those zones, oversized warm-cream display typography, vertical side microcopy, and gritty printed-poster texture.
+以平涂猩红底、硬边蓝色体育照片、跨越两块区域的剪裁人物、暖奶油大字、竖向侧边小字和粗粝印刷纹理构成动作广告。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

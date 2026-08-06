@@ -6,7 +6,7 @@
 
 ## 简介
 
-A compressed, confrontational cobalt editorial poster system in which fragmented grotesk headlines, two enormous repeated outline-script words, an ambiguous macro halftone photograph, a dark flat Xerox cutout, and dense microcopy collide across nearly the entire page.
+让碎裂的 grotesk 标题、两组巨大重复的描边手写词、含混的宏观半调照片、深色复印剪影和密集小字在钴蓝版面中彼此碰撞。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

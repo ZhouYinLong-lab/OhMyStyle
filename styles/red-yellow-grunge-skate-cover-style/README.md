@@ -6,7 +6,7 @@
 
 ## 简介
 
-A raw underground action-culture magazine cover style with oversized warped red-and-yellow headline type, flash-lit photographic cutouts, dark tilted street or venue backgrounds, dense boxed callouts, and coarse analog print degradation.
+以扭曲的红黄标题、闪光灯拍摄的剪影、倾斜的街头或场地背景、密集框选注释和粗糙模拟印刷损耗，做出地下滑板杂志封面。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

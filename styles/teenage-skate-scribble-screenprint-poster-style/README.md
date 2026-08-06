@@ -6,7 +6,7 @@
 
 ## 简介
 
-A retro skate zine poster style with a distorted central skateboarder cutout, cream paper field, loose red hand-lettered border typography, rough duotone screen-print texture, and a limited navy-gray-green-ochre palette.
+以变形滑板人物剪影、奶油纸、松散红色手写边框字、粗糙双色丝网印刷纹理和藏蓝灰绿赭色限色板，组成复古滑板 zine 海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

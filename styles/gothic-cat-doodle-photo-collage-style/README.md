@@ -6,7 +6,7 @@
 
 ## 简介
 
-A playful photo-illustration collage style combining dramatic real architectural photography with oversized flat cartoon creature overlays, bubbly hand-drawn headline lettering, and loose marker doodles.
+把戏剧化真实建筑照片与扁平卡通生物覆盖层结合，再加入泡泡手写标题和松散马克笔涂鸦，形成俏皮又略带哥特气息的照片插画拼贴。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

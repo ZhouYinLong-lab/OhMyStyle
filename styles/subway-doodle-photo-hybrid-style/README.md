@@ -6,7 +6,7 @@
 
 ## 简介
 
-A phone-shot urban transit poster style combining documentary subway or street transport photography with expressive hand-drawn cartoon overlays, doodled character faces, oversized foreground gestures, handwritten notes, and social media screenshot texture.
+以手机拍摄的地铁或街头交通照片为底，叠加富有表现力的卡通涂鸦、涂鸦脸、夸张前景手势、手写笔记和社交媒体截图纹理。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A glossy toy-advertising 3D style built from acid lime studio backdrops, oversized fuzzy plush mascots, chunky tech props, soft textile surfaces, translucent plastic accessories, checkerboard cards, sticker-like icons, hot-pink burst graphics, and bright commercial lighting.
+以酸橙绿摄影棚、毛绒吉祥物、厚重科技道具、柔软织物、半透明塑料配件、棋盘卡片、贴纸图标和粉色爆发图形，形成明亮的 3D 玩具广告。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

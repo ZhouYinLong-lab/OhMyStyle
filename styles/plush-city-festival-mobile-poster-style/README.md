@@ -6,7 +6,7 @@
 
 ## 简介
 
-A bright mobile event poster style combining real city landmarks, soft fuzzy mascot characters, rounded app-card UI framing, bold white festival typography, date/location text, and friendly tourism-campaign energy.
+以真实城市地标、柔软毛绒吉祥物、圆角应用卡片框架、白色节日标题、日期地点文字和友好的旅游宣传气质组成移动端活动海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

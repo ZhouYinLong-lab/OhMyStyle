@@ -6,7 +6,7 @@
 
 ## 简介
 
-A sparse experimental editorial poster system built from one radically enlarged macro photograph, a saturated cyan field, monumental white geometric letterforms that interlock with the subject, wide white margins, compact technical metadata, and tactile analog print grain.
+以一张被极度放大的宏观照片、饱和青色底、与主体互锁的巨大白色几何字、宽阔白边、技术信息和触感模拟颗粒构成实验性编辑海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

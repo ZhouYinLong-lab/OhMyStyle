@@ -6,7 +6,7 @@
 
 ## 简介
 
-A dramatic outdoor editorial poster style combining low-angle lifestyle photography, oversized warped neon typography, film grain, and high-energy youth-culture campaign design.
+把低机位生活方式照片、扭曲霓虹大字、胶片颗粒和高能量青年文化广告语言组合成一张户外编辑动作海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

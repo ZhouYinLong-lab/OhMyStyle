@@ -6,7 +6,7 @@
 
 ## 简介
 
-A tall mobile-first outdoor diary poster system with a charcoal black canvas, documentary action-photo cutouts, acid green kinetic headlines, ripped paper panels, hand-drawn arrows, sticker labels, numbered sections, and dense social-note pacing.
+以炭黑画布、纪实动作照片剪影、酸绿动势标题、撕纸面板、手绘箭头、贴纸标签、编号区块和密集社交笔记组成移动端长幅日记海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

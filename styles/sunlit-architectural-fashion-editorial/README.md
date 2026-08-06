@@ -6,7 +6,7 @@
 
 ## 简介
 
-A polished outdoor high-fashion editorial photography style built from low-angle architectural framing, hard Mediterranean daylight, warm stone neutrals, elongated model silhouettes, restrained luxury styling, and fine graphic lines from wires, railings, shadows, or facade geometry. It recreates the premium fashion-campaign feeling without copying the original models, wardrobe, plaza, prop placement, or poses.
+以低机位建筑取景、强烈地中海日光、暖石色中性调、拉长的人物轮廓、克制的奢华造型，以及电线、栏杆、阴影或立面几何细线构成户外高时装编辑照。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

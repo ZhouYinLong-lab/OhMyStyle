@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A reference-backed social documentary photography profile focused on human dignity, evidentiary framing, industrial scale, direct tonal description, and the relationship between worker, object, and institution.
+以社会纪实摄影的尊严感、证据式取景、工业尺度、直接的影调描述和劳动者、物件、制度之间的关系建立画面。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

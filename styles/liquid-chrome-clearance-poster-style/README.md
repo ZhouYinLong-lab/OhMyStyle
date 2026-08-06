@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-impact commercial poster system built around glossy liquid-chrome 3D typography, extreme editorial crop, acid-lime to mint gradients, black condensed sale-interface typography, micro technical markings, barcode-like metadata, and a dense grid of retail control panels.
+以液态铬金属质感、强烈的清仓式大标题、冷色背景、亮色贴纸标签和轻微复印磨损，营造夸张但仍然清晰的商业海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

@@ -6,7 +6,7 @@
 
 ## 简介
 
-A kinetic editorial action poster style built from an ice-white canvas, oversized deep-cyan condensed typography, pale gray ghost text layers, a central cutout action photograph, neon chartreuse motion blurs, small barcode and registration marks, and sparse magazine-style microcopy.
+以冰白画布、深青窄体大字、浅灰幽灵字层、中央剪影动作照片、荧光黄绿运动模糊、条码注册线和少量杂志小字建立动感编辑海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

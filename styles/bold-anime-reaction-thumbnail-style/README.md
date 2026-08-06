@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-impact anime web-thumbnail system with oversized reaction characters, bold yellow headline typography, hard black shadows, split-screen framing, a smaller glowing action insert, and clean cel-shaded illustration.
+以夸张反应角色、醒目的黄色标题、硬朗黑色阴影、分屏取景、小型发光动作插图和干净赛璐璐上色，形成高冲击力动漫网页缩略图。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

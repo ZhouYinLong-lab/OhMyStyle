@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-key pop poster system built from extreme fisheye photography, a convex glass-dome center, oversized orbiting typography, hot red-magenta-orange letter fills, aqua chromatic light arcs, and light analog print texture.
+以极端鱼眼摄影、凸起的玻璃穹顶中心、环绕式大字、红紫橙高热度字色、水绿色色散弧线和轻微模拟印刷纹理制造高亮流行海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

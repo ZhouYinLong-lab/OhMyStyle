@@ -6,7 +6,7 @@
 
 ## 简介
 
-A hybrid street-poster system combining a cool fisheye urban photo base, a large manga ink cutout subject, oversized sprayed yellow graffiti type, compact white caption hits, pavement tag texture, and soft anxious character emotion.
+把冷色鱼眼城市照片、大幅漫画墨线人物、喷涂黄色涂鸦字、白色短注释、路面标签纹理和略带焦虑的角色情绪拼成街头海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

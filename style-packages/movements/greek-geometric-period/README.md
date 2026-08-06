@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-An early Greek visual system built from ordered registers, angular bodies, repeated signs, funerary procession, and a tightly controlled terracotta, black, and cream material language.
+以有序的横向带状分区、棱角化人体、重复符号和葬礼行列建立早期希腊视觉系统，并保持陶土、黑色与奶油色的材料感。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A Neo-Impressionist painting profile built from disciplined optical color units, stable silhouettes, measured park-like space, and calm repeated social poses.
+以受控的光学色点、稳定的剪影、经过测量的公园式空间和安静重复的人物姿态建立画面秩序，让色彩混合发生在观看者的视觉中。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

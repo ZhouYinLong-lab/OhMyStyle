@@ -6,7 +6,7 @@
 
 ## 简介
 
-A vertical and horizontal illustration system built from fine manga ink contour lines, huge cream-toned organic cloud masses, sparse teal framing shapes, peach skin or object accents, and precise miniature urban architecture rendered with clean paper space.
+以细密漫画墨线、巨大的奶油色有机烟云、稀疏青绿色框架、桃色皮肤或物件点缀和精确的微型城市建筑建立留白充足的插画系统。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

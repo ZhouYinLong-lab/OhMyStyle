@@ -6,7 +6,7 @@
 
 ## 简介
 
-A loud flat comic flyer style built from a mustard-yellow field, coral-red cutout figures, heavy irregular black marker outlines, hand-lettered bubble type, scribbled microcopy, and dense comic symbols. It feels like an underground club poster or xeroxed street handbill, but the reusable system changes the subject, text, props, and story completely.
+以芥末黄底、珊瑚红剪纸人物、粗黑不规则马克笔轮廓、手写泡泡字、涂鸦小字和密集漫画符号，做出地下俱乐部传单般的平面漫画海报。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 

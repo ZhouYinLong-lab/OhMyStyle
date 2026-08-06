@@ -14,7 +14,7 @@
 
 ## 风格重点
 
-A measured Greek visual language of balanced composition, clear naturalistic bodies, calm agency, articulated drapery, and a disciplined relationship between movement, proportion, and civic ideals.
+强调均衡构图、清晰而自然的人体、从容的动作、经过组织的衣褶，以及运动、比例和城邦理想之间的秩序关系。
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 

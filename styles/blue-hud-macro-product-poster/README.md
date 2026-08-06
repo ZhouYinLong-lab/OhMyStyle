@@ -6,7 +6,7 @@
 
 ## 简介
 
-A high-density blue creator-tech advertisement style built around macro 3D hardware heroes, oversized ribbed gloves, electric-blue HUD panels, massive condensed typography, glossy glass cards, and one warm gold performance badge.
+以宏观视角的 3D 硬件、夸张的罗纹手套、电蓝色 HUD 面板、巨大的窄体字、玻璃质感信息卡和一枚暖金色性能徽章，组成高密度创作者科技广告。
 
 这是继承自 `AI-Visual-Prompt-Cookbook` 的兼容预设。本仓库保留原始归属、文件结构和许可证边界。
 
