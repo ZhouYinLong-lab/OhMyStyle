@@ -76,6 +76,22 @@ The evaluator reports both normalized luminance and CIELAB `L*`; the latter is
 the gate to use for equal-lightness tests. A visually improved render can still
 remain rejected when the measured `L*` difference is too large.
 
+For hard-color tasks, the preflight plan may require deterministic correction
+after a mask is available:
+
+```bash
+python tools/recolor-lab.py input.png output.png \
+  --mask shirt-mask.png \
+  --target-hex 0070FC \
+  --texture-strength 0.12
+```
+
+The tool changes only the masked region, locks its hue/chroma to the target,
+and keeps low-amplitude texture around the target L*. Background regions can be
+processed with `--texture-strength 0` for a uniform fill. A mask must be
+explicit; automatic recoloring without a region boundary is unsafe for faces,
+hair, skin, and reflective materials.
+
 ## 3. Record a run
 
 ```bash

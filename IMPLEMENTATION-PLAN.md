@@ -50,4 +50,5 @@ evaluate measurable constraints before a sample is accepted.
 - [x] Add deterministic render evaluator.
 - [x] Add tests and documentation.
 - [x] Add CIELAB custom-color checks after reviewing the equal-lightness portrait.
+- [x] Add preflight strategy selection and deterministic masked Lab recoloring.
 - [x] Validate, commit, and push the iteration.

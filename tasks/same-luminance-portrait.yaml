@@ -1,0 +1,32 @@
+id: same-luminance-portrait
+package: style-packages/presets/high-chroma-color-pairing
+subject: >-
+  A front-facing adult fashion model from head to waist, hair tied behind the
+  head, wearing one plain long-sleeve blue shirt in a uniform studio portrait.
+brief: >-
+  A strict 4:5 color-engineering test where blue and orange separate by hue,
+  not by exposure or lightness.
+references:
+  mode: none
+output:
+  aspect_ratio: "4:5"
+  target_aspects:
+    - "4:5"
+  safe_zone: [0.08, 0.92, 0.04, 0.96]
+constraints:
+  colors:
+    shirt: "#0070FC"
+    background: "#C85400"
+  luminance:
+    space: CIELAB
+    target_lstar: 50.24
+    max_delta: 2
+  background:
+    uniform: true
+    no_cast_shadow: true
+  subject:
+    hair_must_not_cover_clothing: true
+    no_accessories: true
+  generation:
+    no_rim_light: true
+    no_global_color_grade: true

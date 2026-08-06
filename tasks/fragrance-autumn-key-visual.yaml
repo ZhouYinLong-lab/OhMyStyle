@@ -1,0 +1,34 @@
+id: fragrance-autumn-key-visual
+package: style-packages/presets/high-chroma-color-pairing
+subject: >-
+  A young adult at the edge of a wet urban wasteland with distant buildings,
+  a refined perfume bottle, and an understated fashion coat.
+brief: >-
+  An independent fragrance brand autumn key visual: quiet, clean post-rain air,
+  cool blue-gray space against restrained burnt orange, editorial rather than
+  ordinary e-commerce advertising.
+references:
+  package: style-packages/presets/high-chroma-color-pairing
+  mode: palette
+output:
+  aspect_ratio: "3:2"
+  target_aspects:
+    - "3:2"
+    - "4:5"
+  safe_zone: [0.2, 0.8, 0.1, 0.9]
+constraints:
+  composition:
+    critical_objects_inside_safe_zone: true
+    title_safe_zone: [0.08, 0.48, 0.08, 0.32]
+  product:
+    must_be_visible: true
+    max_height_fraction: 0.08
+    material: real_transparent_glass_with_subtle_reflection
+  subject:
+    posture: observed_not_posed
+    clothing_detail: visible_structural_design_and_material
+  atmosphere:
+    post_rain: true
+    no_cyberpunk: true
+  print_texture:
+    max_strength: 0.03

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/render-task.schema.json",
+  "title": "OhMyStyle Render Task",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "subject", "output", "constraints"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "package": {"type": "string"},
+    "subject": {"type": "string", "minLength": 1},
+    "brief": {"type": "string"},
+    "references": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "package": {"type": "string"},
+        "mode": {"type": "string", "enum": ["none", "palette", "primary", "all"]}
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["aspect_ratio"],
+      "properties": {
+        "aspect_ratio": {"type": "string"},
+        "target_aspects": {"type": "array", "items": {"type": "string"}},
+        "safe_zone": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}}
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}
