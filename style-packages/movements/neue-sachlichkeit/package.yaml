@@ -1,0 +1,20 @@
+id: neue-sachlichkeit
+name: Neue Sachlichkeit / New Objectivity
+kind: movement
+domain: hybrid
+version: 0.1.0
+entity: catalog/movements/neue-sachlichkeit/entity.yaml
+summary: >-
+  A Weimar-era visual language of matter-of-fact realism, hard-edged
+  observation, social typology, and unsentimental attention to bodies,
+  interiors, labor, and the consequences of modern life.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

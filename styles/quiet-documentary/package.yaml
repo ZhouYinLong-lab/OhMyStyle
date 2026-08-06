@@ -1,0 +1,19 @@
+id: quiet-documentary
+name: Quiet Documentary
+kind: preset
+domain: photography
+version: 0.1.0
+entity: styles/quiet-documentary/style.yaml
+summary: >-
+  An original reproducible photography preset using soft available light,
+  observational distance, low saturation, restrained framing, and modest grain.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

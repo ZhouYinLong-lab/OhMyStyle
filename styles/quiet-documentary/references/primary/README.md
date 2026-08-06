@@ -1,7 +1,4 @@
 # Primary references
 
-Primary references should be the five to twenty images that best express the
-style. Prefer creator-authorized or openly licensed files. Use semantic names
-and record each file in `metadata/sources.csv`.
-
-No image is bundled in the initial package.
+This original preset currently has no external reference images. Add only
+creator-authorized or openly licensed photographs with manifest entries.

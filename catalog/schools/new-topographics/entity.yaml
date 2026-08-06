@@ -1,0 +1,11 @@
+id: new-topographics
+entity_type: photographic_school
+name: New Topographics
+period: 1975-
+region: United States_and_European_photography_context
+mediums:
+  - landscape_photography
+  - documentary_photography
+character: clear_eyed_views_of_man_altered_landscape
+sources:
+  - https://collections.eastman.org/exhibitions/6489/new-topographics-nature-as-artifice

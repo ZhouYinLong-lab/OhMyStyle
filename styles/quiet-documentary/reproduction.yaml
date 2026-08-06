@@ -1,0 +1,11 @@
+medium: photography
+technical_direction:
+  focal_length_mm: [35, 50]
+  aperture: ["f/2.8", "f/4", "f/5.6"]
+  white_balance_k: [4600, 5800]
+  exposure_bias_ev: [-0.5, 0.2]
+processing:
+  contrast: low_to_moderate
+  saturation: restrained
+  grain: subtle
+interpretation: Values are directional anchors, not fixed capture requirements.

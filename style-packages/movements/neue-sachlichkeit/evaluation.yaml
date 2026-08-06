@@ -1,0 +1,19 @@
+invariants:
+  - id: social_specificity
+    weight: 3
+    test: Objects and setting provide concrete social or material information.
+  - id: descriptive_edges
+    weight: 2
+    test: Edges and surfaces are observed rather than dissolved into mood.
+  - id: unsentimental_tone
+    weight: 2
+    test: The scene avoids romantic nostalgia and commercial glamour.
+  - id: historical_distance
+    weight: 2
+    test: The result is informed by the movement without copying a named work.
+rejections:
+  - generic_dark_vintage
+  - decorative_expressionism
+  - costume_pastiche
+  - copied_historical_portrait
+minimum_score: 7

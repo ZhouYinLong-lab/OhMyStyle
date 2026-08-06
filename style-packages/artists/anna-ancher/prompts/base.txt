@@ -1,0 +1,8 @@
+Create a quiet oil painting of {SUBJECT} in {LOCATION}. Show {SUBJECT_ACTION} with
+ordinary, unperformed body language. Use a side window as the main light source:
+broad northern daylight, soft falloff, color carried through the shadows, and a
+visible patch of light on a wall, floor, cloth, or table. Build the image from
+large simplified planes of chalk cream, dusty blue, muted ochre, deep umber, and
+one restrained warm accent. Keep the camera-like viewpoint at ordinary eye
+level, leave calm negative space, and preserve selected visible brush decisions.
+The scene should feel domestic, observed, and materially quiet.

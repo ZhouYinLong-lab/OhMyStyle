@@ -1,0 +1,18 @@
+canonical_name: Masahisa Fukase
+entity_type: photographer
+life: 1934-2012
+region: Japan
+primary_medium: photographic_series_and_photobooks
+scope:
+  subjects:
+    - intimate domestic life
+    - self and family
+    - recurring animals or objects
+    - urban and peripheral spaces
+  period_focus: postwar series practice
+  exclusions:
+    - commercial_lifestyle_polish
+    - generic_dark_moody_filter
+sources:
+  - https://asia-archive.si.edu/exhibition/fukase-masahisa/
+  - https://www.moma.org/artists/2023-masahisa-fukase

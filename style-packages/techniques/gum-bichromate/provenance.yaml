@@ -1,0 +1,14 @@
+package_id: gum-bichromate
+package_version: 0.1.0
+curation_status: research_scaffold
+source_policy: Technical pages are link-only; no copyrighted image or chemical recipe is redistributed.
+safety_review: This package is descriptive and not a laboratory protocol.
+sources:
+  - url: https://www.eastman.org/photographic-processes-video-series-glossary
+    authority: George Eastman Museum
+    supports: gum bichromate materials and process summary
+    accessed: 2026-08-06
+  - url: https://www.modernamuseet.se/stockholm/en/exhibitions/art-photography-1900/photographic-processes-and-materials/
+    authority: Moderna Museet
+    supports: historical process dating and comparison
+    accessed: 2026-08-06

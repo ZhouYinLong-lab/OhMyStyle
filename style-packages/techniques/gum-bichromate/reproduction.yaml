@@ -1,0 +1,19 @@
+process_summary:
+  - coat paper with sensitized pigmented gum arabic
+  - expose in contact with a negative
+  - wash away unexposed gum
+  - repeat with registration when layered color is intended
+observable_parameters:
+  paper: matte_and_fibrous
+  pigment: opaque_to_translucent_watercolor_like_layer
+  detail: broad_and_selective
+  registration: deliberate_imperfection
+  contrast: moderate_with_soft_highlight_transition
+digital_emulation:
+  - use paper tooth and pigment pooling
+  - vary edge softness by region
+  - introduce layer misregistration only slightly
+  - avoid uniform procedural noise
+safety:
+  - dichromate compounds require controlled handling and disposal
+  - do not infer a laboratory recipe from this package

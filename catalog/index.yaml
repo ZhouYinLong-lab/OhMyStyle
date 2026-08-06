@@ -1,0 +1,16 @@
+version: 0.1.0
+description: >-
+  A factual index of artists, photographers, movements, schools, techniques,
+  and presets represented by independent Style Packages.
+entities:
+  persons:
+    - anna-ancher
+    - masahisa-fukase
+  movements:
+    - neue-sachlichkeit
+  schools:
+    - new-topographics
+  techniques:
+    - gum-bichromate
+  presets:
+    - quiet-documentary

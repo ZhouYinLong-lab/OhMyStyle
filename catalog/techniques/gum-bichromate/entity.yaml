@@ -1,0 +1,12 @@
+id: gum-bichromate
+entity_type: photographic_process
+name: Gum Bichromate Printing
+period: 1850s-
+mediums:
+  - pigment_print
+  - gum_arabic
+  - dichromate
+character: layered_pigment_print_with_brush_and_water_control
+sources:
+  - https://www.eastman.org/photographic-processes-video-series-glossary
+  - https://www.modernamuseet.se/stockholm/en/exhibitions/art-photography-1900/photographic-processes-and-materials/

@@ -1,0 +1,19 @@
+invariants:
+  - id: material_print
+    weight: 3
+    test: Paper and pigment behavior are visible as part of the image object.
+  - id: broad_tone
+    weight: 2
+    test: Tonal structure is broad with selective rather than universal detail.
+  - id: hand_control
+    weight: 2
+    test: Edge and pigment variation looks controlled and region-specific.
+  - id: layered_color
+    weight: 2
+    test: Any multiple color passes show restrained, plausible misregistration.
+rejections:
+  - generic_watercolor_filter
+  - uniform_noise_overlay
+  - glossy_digital_finish
+  - unsafe_chemical_instruction
+minimum_score: 7

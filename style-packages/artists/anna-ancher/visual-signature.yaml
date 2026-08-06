@@ -1,0 +1,28 @@
+subject_matter:
+  - modest domestic activity
+  - quiet interior corners
+  - figure absorbed in a task
+composition:
+  - light enters from a side window
+  - subject is offset rather than theatrically centered
+  - large simplified planes support the focal light
+color:
+  - chalky cream
+  - muted ochre
+  - dusty blue
+  - warm red accent
+  - restrained green
+light:
+  quality: northern_daylight
+  behavior:
+    - broad_soft_falloff
+    - light_pattern_on_wall_or_floor
+    - shadow_as_color_not_black_void
+surface:
+  brushwork: visible_but_controlled
+  edges: soft_in_secondary_areas
+  finish: matte_oil_surface
+invariants:
+  - light is a compositional subject
+  - domestic scale remains believable
+  - color relationships stay quiet and intentional

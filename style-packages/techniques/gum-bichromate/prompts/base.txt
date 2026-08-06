@@ -1,0 +1,7 @@
+Render {SUBJECT} as a handmade pigment print on matte fibrous paper. Build the
+image from broad tonal masses and selective soft detail, with pigment pooling,
+subtle brush-controlled edges, and a restrained limited palette. Let some paper
+remain visible. If color is used, treat it as one or two imperfectly registered
+passes rather than a clean digital gradient. The result should feel like a
+physical photographic object with controlled hand variation, not a watercolor
+filter, paper texture overlay, or uniform noise effect.

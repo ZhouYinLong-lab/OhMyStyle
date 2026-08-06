@@ -1,0 +1,19 @@
+invariants:
+  - id: sequence_logic
+    weight: 3
+    test: Three images share a motif or situation but are not redundant copies.
+  - id: intimate_distance
+    weight: 2
+    test: The camera feels personally involved without becoming commercial.
+  - id: shadow_information
+    weight: 2
+    test: Blacks are deep while some tonal information remains.
+  - id: ambiguity
+    weight: 2
+    test: The image leaves emotional or narrative space unresolved.
+rejections:
+  - single_iconic_poster_frame
+  - glossy_noir_filter
+  - identifiable_real_person_without_consent
+  - copied_named_work
+minimum_score: 7

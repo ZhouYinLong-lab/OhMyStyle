@@ -1,0 +1,8 @@
+Create a three-frame photographic sequence about {SUBJECT} in {LOCATION}. The
+subject is observed through {BACKGROUND_ELEMENTS}; it should be partly hidden,
+repeated, or encountered at different distances across the sequence. Use a
+handheld normal-to-moderate-telephoto viewpoint, available ambient light, deep
+but detailed shadows, visible film grain, imperfect timing, and an emotionally
+ambiguous relationship between photographer and subject. Let one frame be
+nearly unreadable and another unexpectedly intimate. The sequence should feel
+like a private record, not a fashion campaign or horror poster.

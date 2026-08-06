@@ -1,0 +1,14 @@
+package_id: new-topographics
+package_version: 0.1.0
+curation_status: research_scaffold
+source_policy: Museum pages are external references only; no exhibition image is redistributed.
+sources:
+  - url: https://collections.eastman.org/exhibitions/6489/new-topographics-nature-as-artifice
+    authority: George Eastman Museum
+    supports: 1975 exhibition and emergence of a new landscape approach
+    accessed: 2026-08-06
+  - url: https://www.eastman.org/new-topographics-tour-organized-george-eastman-house-and-center-creative-photography-begins-june-13
+    authority: George Eastman Museum
+    supports: movement influence and exhibition history
+    accessed: 2026-08-06
+attribution: Historical photographic school/exhibition description; no institutional endorsement is claimed.

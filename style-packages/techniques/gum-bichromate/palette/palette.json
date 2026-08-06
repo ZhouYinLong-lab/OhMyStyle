@@ -1,0 +1,10 @@
+{
+  "name": "Pigment Print Layer Set",
+  "colors": [
+    {"name": "Paper White", "hex": "#E7E0D2", "role": "unprinted_paper"},
+    {"name": "Warm Sepia", "hex": "#876B52", "role": "single_pass"},
+    {"name": "Prussian Blue", "hex": "#3D5964", "role": "cool_pass"},
+    {"name": "Earth Green", "hex": "#6D745D", "role": "secondary_pass"},
+    {"name": "Carbon Black", "hex": "#242321", "role": "deep_tone"}
+  ]
+}

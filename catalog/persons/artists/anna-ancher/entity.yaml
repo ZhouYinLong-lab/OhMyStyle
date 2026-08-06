@@ -1,0 +1,15 @@
+id: anna-ancher
+entity_type: artist
+name: Anna Ancher
+life: 1859-1935
+region: Denmark
+mediums:
+  - painting
+  - oil_on_canvas
+themes:
+  - light
+  - color
+  - domestic_interior
+  - landscape
+sources:
+  - https://www.smk.dk/en/artist_profile/anna-ancher/

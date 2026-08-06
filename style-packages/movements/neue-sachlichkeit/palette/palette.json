@@ -1,0 +1,10 @@
+{
+  "name": "Weimar Matter-of-Fact",
+  "colors": [
+    {"name": "Paper Gray", "hex": "#C5C0B4", "role": "ground"},
+    {"name": "Industrial Green", "hex": "#66716B", "role": "cool_midtone"},
+    {"name": "Dried Ochre", "hex": "#9A7A4C", "role": "earth_accent"},
+    {"name": "Flesh Rose", "hex": "#A77970", "role": "human_detail"},
+    {"name": "Coal", "hex": "#252727", "role": "contour_and_shadow"}
+  ]
+}

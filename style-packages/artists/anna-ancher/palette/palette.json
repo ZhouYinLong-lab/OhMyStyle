@@ -1,0 +1,10 @@
+{
+  "name": "Northern Interior Light",
+  "colors": [
+    {"name": "Chalk Cream", "hex": "#D9D0BC", "role": "lit_plane"},
+    {"name": "Dusty Blue", "hex": "#768A8B", "role": "cool_structure"},
+    {"name": "Muted Ochre", "hex": "#A9824E", "role": "warm_midtone"},
+    {"name": "Deep Umber", "hex": "#55443A", "role": "shadow"},
+    {"name": "Quiet Red", "hex": "#995C4B", "role": "small_accent"}
+  ]
+}

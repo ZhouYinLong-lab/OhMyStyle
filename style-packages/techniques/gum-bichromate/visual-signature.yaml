@@ -1,0 +1,20 @@
+surface:
+  - matte_paper_tooth
+  - pigment_sitting_in_or_on_paper
+  - visible_brush_or_wash_variation
+tone:
+  - broad_tonal_masses
+  - soft_detail
+  - local_hand_control
+  - imperfect_registration
+color:
+  default: monochrome_or_limited_palette
+  layered_option: multiple_pigment_passes
+edges:
+  - brushed_or_softened
+  - selective_detail
+  - uneven_transition
+invariants:
+  - image reads as a material print rather than a clean screen image
+  - tonal structure remains broad and tactile
+  - hand variation is controlled, not random noise

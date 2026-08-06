@@ -1,0 +1,15 @@
+invariants:
+  - id: available_light
+    weight: 3
+    test: Light has a believable natural or practical source.
+  - id: negative_space
+    weight: 2
+    test: At least one calm region supports the subject.
+  - id: muted_surface
+    weight: 2
+    test: Color and texture remain natural rather than glossy.
+rejections:
+  - hard_flash
+  - plastic_skin
+  - commercial_centering
+minimum_score: 5

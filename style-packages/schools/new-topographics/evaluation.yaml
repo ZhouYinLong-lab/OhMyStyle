@@ -1,0 +1,19 @@
+invariants:
+  - id: alteration_visible
+    weight: 3
+    test: Human intervention is visibly part of the landscape.
+  - id: neutral_description
+    weight: 2
+    test: The camera describes rather than celebrates or condemns through effects.
+  - id: spatial_order
+    weight: 2
+    test: Horizon, geometry, and repeated structures are legible.
+  - id: low_spectacle
+    weight: 2
+    test: Light and color avoid postcard drama.
+rejections:
+  - picturesque_wilderness
+  - dystopian_cliche
+  - real_estate_polish
+  - privacy_violation
+minimum_score: 7

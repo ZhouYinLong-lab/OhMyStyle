@@ -1,0 +1,17 @@
+canonical_name: Anna Ancher
+entity_type: artist
+life: 1859-1935
+region: Denmark
+primary_medium: oil_painting
+scope:
+  subjects:
+    - domestic interiors
+    - working figures
+    - still life
+    - coastal landscape
+  period_focus: mature work
+  exclusions:
+    - grand_historical_scene
+    - theatrical_studio_lighting
+sources:
+  - https://www.smk.dk/en/artist_profile/anna-ancher/

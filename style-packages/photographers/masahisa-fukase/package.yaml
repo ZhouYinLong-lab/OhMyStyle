@@ -1,0 +1,20 @@
+id: masahisa-fukase
+name: Masahisa Fukase
+kind: photographer
+domain: photography
+version: 0.1.0
+entity: catalog/persons/photographers/masahisa-fukase/entity.yaml
+summary: >-
+  A series-driven photographic profile built from intimate autobiography,
+  recurring motifs, unstable distance, dense black-and-white atmosphere, and
+  the tension between private memory and staged observation.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

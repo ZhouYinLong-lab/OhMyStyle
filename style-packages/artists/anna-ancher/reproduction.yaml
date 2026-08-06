@@ -1,0 +1,17 @@
+medium: oil_painting
+materials:
+  support: primed_canvas_or_panel
+  pigment_direction: muted_earths_with_cool_blue_and_warm_red_accents
+  finish: thin_to_moderate_oil_layers
+process:
+  - begin with large light and shadow masses
+  - establish the window direction before details
+  - simplify furniture and clothing into color planes
+  - preserve selected visible brush decisions
+  - soften non-focal edges without airbrushing the whole image
+technical_direction:
+  contrast: low_to_moderate
+  saturation: restrained
+  perspective: ordinary_eye_level
+  detail_density: moderate
+safety_note: Do not imitate a specific copyrighted painting or reproduce its exact arrangement.

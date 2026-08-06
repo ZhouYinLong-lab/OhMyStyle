@@ -1,0 +1,10 @@
+{
+  "name": "Obsidian Sequence",
+  "colors": [
+    {"name": "Silver Gray", "hex": "#A7A9A6", "role": "mid_highlight"},
+    {"name": "Paper Gray", "hex": "#D5D2C9", "role": "open_tone"},
+    {"name": "Smoke Gray", "hex": "#555A58", "role": "mid_tone"},
+    {"name": "Obsidian", "hex": "#111315", "role": "deep_shadow"},
+    {"name": "Muted Signal Red", "hex": "#8E4B46", "role": "rare_color_accent"}
+  ]
+}

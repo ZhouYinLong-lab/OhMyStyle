@@ -1,0 +1,20 @@
+id: gum-bichromate
+name: Gum Bichromate Printing
+kind: technique
+domain: printmaking
+version: 0.1.0
+entity: catalog/techniques/gum-bichromate/entity.yaml
+summary: >-
+  A hand-controlled pigment-printing process using sensitized gum arabic and
+  pigment, contact exposure, washing, and optional layered color passes to
+  create broad tones, soft detail, and visibly material photographic surfaces.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,14 @@
+package_id: masahisa-fukase
+package_version: 0.1.0
+curation_status: research_scaffold
+source_policy: Museum and archive links are metadata references only; no copyrighted work is redistributed.
+sources:
+  - url: https://asia-archive.si.edu/exhibition/fukase-masahisa/
+    authority: Smithsonian National Museum of Asian Art
+    supports: biography, series, photobook, and work context
+    accessed: 2026-08-06
+  - url: https://www.moma.org/artists/2023-masahisa-fukase
+    authority: The Museum of Modern Art
+    supports: artist record and exhibition history
+    accessed: 2026-08-06
+attribution: Masahisa Fukase is the subject of this descriptive research package; no affiliation is claimed.

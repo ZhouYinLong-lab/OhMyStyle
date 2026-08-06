@@ -1,0 +1,12 @@
+canonical_name: Gum Bichromate Printing
+entity_type: photographic_print_process
+period: developed_in_the_1850s_and_used_widely_later_in_the_19th_century
+medium: pigment_print
+materials:
+  - paper
+  - gum_arabic
+  - pigment
+  - dichromate_sensitizer
+sources:
+  - https://www.eastman.org/photographic-processes-video-series-glossary
+  - https://www.modernamuseet.se/stockholm/en/exhibitions/art-photography-1900/photographic-processes-and-materials/

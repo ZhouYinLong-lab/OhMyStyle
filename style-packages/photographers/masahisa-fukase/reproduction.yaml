@@ -1,0 +1,17 @@
+medium: analog_or_simulated_film_photography
+capture:
+  lens_direction: normal_to_moderate_telephoto
+  distance: close_but_not_commercial
+  viewpoint: handheld_observer
+  depth_of_field: moderate_or_unpredictable
+processing:
+  contrast: medium_high_with_shadow_detail
+  grain: visible_but_not_decorative
+  blacks: deep_without_total_clipping
+  sequencing: create_three_to_six_related_frames
+process:
+  - choose a personal but non-identifying recurring motif
+  - vary distance or timing across a small sequence
+  - allow ambiguity and imperfect visibility
+  - keep the emotional reading open rather than explaining the scene
+safety_note: Do not generate a real person's likeness or copy a named photograph.

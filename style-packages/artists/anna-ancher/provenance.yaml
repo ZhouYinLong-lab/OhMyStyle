@@ -1,0 +1,10 @@
+package_id: anna-ancher
+package_version: 0.1.0
+curation_status: research_scaffold
+source_policy: External images are link-only until their redistribution rights are verified.
+sources:
+  - url: https://www.smk.dk/en/artist_profile/anna-ancher/
+    authority: Statens Museum for Kunst
+    supports: artist identity, themes of light, color, landscape, simplicity, and religion
+    accessed: 2026-08-06
+attribution: Anna Ancher is the subject of this descriptive research package; no affiliation is claimed.

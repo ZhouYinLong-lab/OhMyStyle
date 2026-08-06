@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/package.schema.json",
+  "title": "OhMyStyle Demo Package",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "kind", "domain", "version", "summary", "files"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 1},
+    "kind": {"type": "string", "enum": ["artist", "photographer", "movement", "school", "technique", "preset"]},
+    "domain": {"type": "string", "enum": ["painting", "photography", "printmaking", "design", "hybrid"]},
+    "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+    "summary": {"type": "string", "minLength": 30},
+    "entity": {"type": "string", "minLength": 1},
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity", "visual_signature", "reproduction", "relations", "palette", "prompts", "evaluation", "references", "provenance"],
+      "properties": {
+        "identity": {"type": "string"},
+        "visual_signature": {"type": "string"},
+        "reproduction": {"type": "string"},
+        "relations": {"type": "string"},
+        "palette": {"type": "string"},
+        "prompts": {"type": "string"},
+        "evaluation": {"type": "string"},
+        "references": {"type": "string"},
+        "provenance": {"type": "string"}
+      }
+    }
+  }
+}

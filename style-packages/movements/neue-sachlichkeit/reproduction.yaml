@@ -1,0 +1,19 @@
+mediums:
+  painting:
+    surface: smooth_or_thinly_built
+    drawing: precise_contour_and_material_detail
+  photography:
+    viewpoint: frontal_or_fixed
+    sharpness: high_description
+    processing: restrained
+subject_direction:
+  - choose an ordinary social type without caricaturing a real person
+  - include objects that reveal labor, class, or institutional context
+  - keep the setting legible and materially specific
+  - allow discomfort to come from observation, not horror effects
+avoid:
+  - romanticized_vintage_filter
+  - generic_expressionist_brushwork
+  - fantasy_surrealism_without_context
+  - retro_costume_pastiche
+safety_note: Do not reproduce a historical work or use a living person as a target for ridicule.

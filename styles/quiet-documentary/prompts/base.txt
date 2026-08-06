@@ -1,4 +1,4 @@
-Create a {ASPECT_RATIO} photograph in the Quiet Documentary style.
+Create a {ASPECT_RATIO} photograph using a restrained documentary direction.
 
 Subject: {SUBJECT}
 Action or state: {SUBJECT_ACTION}

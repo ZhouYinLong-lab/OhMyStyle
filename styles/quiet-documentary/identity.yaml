@@ -1,0 +1,14 @@
+canonical_name: Quiet Documentary
+entity_type: original_preset
+origin: OhMyStyle
+domain: photography
+scope:
+  subjects:
+    - ordinary interiors
+    - daily life
+    - still life
+    - neighborhood observation
+  exclusions:
+    - hard_flash
+    - commercial_studio_gloss
+    - extreme_bokeh

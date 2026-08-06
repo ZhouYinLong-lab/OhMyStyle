@@ -1,0 +1,18 @@
+invariants:
+  - id: window_light_is_structural
+    weight: 3
+    test: The main light direction is legible and shapes the composition.
+  - id: domestic_scale
+    weight: 2
+    test: The setting feels like an ordinary interior rather than a stage.
+  - id: restrained_color
+    weight: 2
+    test: Muted color relationships carry the image without neon saturation.
+  - id: simplified_planes
+    weight: 2
+    test: Secondary objects are simplified into readable planes and edges.
+rejections:
+  - spotlight_or_rim_light
+  - glossy_digital_finish
+  - copied_composition
+minimum_score: 7
