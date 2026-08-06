@@ -6,7 +6,21 @@ direction:
 | Direction | Demo | Primary focus |
 | --- | --- | --- |
 | Artist | [Anna Ancher](../style-packages/artists/anna-ancher/) | Northern light, domestic interiors, restrained color planes |
+| Artist | [Claude Monet](../style-packages/artists/claude-monet/) | Transient outdoor light, broken adjacent color, weather, soft distant edges |
+| Artist | [Edvard Munch](../style-packages/artists/edvard-munch/) | Emotional color, compressed space, undulating contour, psychological atmosphere |
+| Artist | [J. M. W. Turner](../style-packages/artists/jmw-turner/) | Dissolving weather, luminous atmosphere, diagonal motion, lost-and-found edges |
+| Artist | [Johannes Vermeer](../style-packages/artists/johannes-vermeer/) | Controlled side light, quiet geometry, domestic action, material transitions |
+| Artist | [Paul Cézanne](../style-packages/artists/paul-cezanne/) | Constructive color planes, multiple-viewpoint tension, structural brush marks |
+| Artist | [Rembrandt](../style-packages/artists/rembrandt/) | Warm dark ground, selective illumination, open shadow, tactile material focus |
+| Artist | [Vincent van Gogh](../style-packages/artists/vincent-van-gogh/) | Directional impasto, complementary color pressure, expressive contour rhythm |
+| Artist | [Wassily Kandinsky](../style-packages/artists/wassily-kandinsky/) | Abstract geometry, line rhythm, color weight, asymmetrical painted balance |
 | Photographer | [Masahisa Fukase](../style-packages/photographers/masahisa-fukase/) | Serial autobiography, intimacy, recurring motifs, psychological distance |
+| Photographer | [Alfred Stieglitz](../style-packages/photographers/alfred-stieglitz/) | Authored geometry, layered planes, crop, weather, photogravure tonal structure |
+| Photographer | [Eadweard Muybridge](../style-packages/photographers/eadweard-muybridge/) | Fixed camera, sequential phases, measurement grid, motion as evidence |
+| Photographer | [Eugène Atget](../style-packages/photographers/eugene-atget/) | Neutral urban record, frontal space, quiet absence, archival tonal restraint |
+| Photographer | [Julia Margaret Cameron](../style-packages/photographers/julia-margaret-cameron/) | Soft wet-plate focus, intimate pose, tonal atmosphere, expressive face |
+| Photographer | [Lewis Hine](../style-packages/photographers/lewis-hine/) | Social evidence, direct context, human-machine scale, dignified observation |
+| Photographer | [Nadar](../style-packages/photographers/nadar/) | Sculptural studio pose, plain ground, soft directional light, early print tone |
 | Movement | [Neue Sachlichkeit](../style-packages/movements/neue-sachlichkeit/) | Matter-of-fact realism, social typology, precise surfaces |
 | Movement | [Italian High Renaissance](../style-packages/movements/italian-high-renaissance-raphaelesque/) | Drawing, proportion, clear space, calm narrative action, controlled color |
 | School / exhibition network | [New Topographics](../style-packages/schools/new-topographics/) | Clear-eyed views of human-altered landscape |

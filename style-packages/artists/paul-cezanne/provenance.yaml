@@ -1,0 +1,14 @@
+package_id: paul-cezanne
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
+sources:
+  - url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_La_bouteille_de_menthe_poivr%C3%A9e_(National_Gallery_of_Art).jpg
+    authority: Wikimedia Commons
+    supports: primary public-domain reference image and work attribution
+    accessed: 2026-08-06
+  - url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Mont_Sainte-Victoire_and_the_Viaduct_of_the_Arc_River_Valley_(Metropolitan_Museum_of_Art).jpg
+    authority: Wikimedia Commons
+    supports: secondary public-domain reference image and work attribution
+    accessed: 2026-08-06
+attribution: Historical works remain attributed to Paul Cézanne and their source institutions. This independent package claims no affiliation.

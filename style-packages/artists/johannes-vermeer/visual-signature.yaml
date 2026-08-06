@@ -1,0 +1,25 @@
+composition:
+  - use stable interior geometry with one quiet human action
+  - place the strongest window direction off-center and leave calm wall space
+  - use a few ordinary objects as spatial and tonal anchors
+color:
+  - restrained lead white, ochre, umber, muted red, and ultramarine
+  - local color remains legible under a unified warm daylight field
+light:
+  quality: controlled_side_daylight
+  behavior:
+    - light turns faces, cloth, ceramic, and bread through gradual transitions
+    - shadows stay open enough to preserve material information
+    - highlights are small and optical, never digital glow
+surface:
+  brushwork: smooth_layered_oil_with_selective_soft_edges
+  mark_logic:
+    - reserve crispness for focal contours and small reflective accents
+    - soften wall, glass, and fabric transitions without blur
+    - describe texture through value changes before decorative detail
+  finish: quiet_oil_surface_with_subtle_optical_variation
+invariants:
+  - the scene has readable light direction and stable architecture
+  - the subject performs an ordinary, untheatrical action
+  - a few objects establish scale, period, and material
+  - the new scene must not reproduce a known arrangement

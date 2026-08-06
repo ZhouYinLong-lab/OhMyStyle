@@ -1,0 +1,24 @@
+composition:
+  - organize the field through a hierarchy of circles, lines, arcs, grids, and planes
+  - balance dense clusters against open breathing areas
+  - create directional movement without a literal scene or copied diagram
+color:
+  - ivory or pale mineral ground with black, red, blue, yellow, green, and violet
+  - use contrast as a compositional weight, not as a decorative rainbow
+light:
+  quality: internal_painted_flatness
+  behavior:
+    - depth is implied by overlap, scale, and value rather than realistic illumination
+    - selected shapes may carry halos or softened edges only when painted into the ground
+surface:
+  brushwork: varied_flat_and_translucent_oil_passages
+  mark_logic:
+    - combine precise geometric edges with hand-painted variation
+    - use thin lines as structural counterpoint to heavy shapes
+    - preserve the material ground beneath the geometry
+  finish: tactile_abstract_paint_surface
+invariants:
+  - form and color carry the meaning without a depicted story
+  - compositional weight is deliberate and asymmetrical
+  - line, circle, and plane families interact across the whole field
+  - the new arrangement must not copy a known painting

@@ -1,0 +1,20 @@
+package_id: wassily-kandinsky
+package_version: 0.1.0
+invariants:
+  - id: signature_primary
+    weight: 3
+    test: The output demonstrates the package's primary observable structural behavior.
+  - id: medium_consistency
+    weight: 2
+    test: Surface, light, and detail behavior remain consistent with the stated medium.
+  - id: original_arrangement
+    weight: 3
+    test: The subject and composition are not a recognizable reconstruction.
+  - id: no_generic_filter
+    weight: 2
+    test: The result is not explained by a global filter alone.
+rejections:
+  - copied_named_work
+  - generic_style_filter
+  - contradictory_medium_behavior
+minimum_score: 8

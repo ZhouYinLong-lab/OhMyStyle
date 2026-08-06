@@ -1,0 +1,8 @@
+asset: anonymous-v1.png
+status: accepted_human_review
+generator: OpenAI built-in image generation
+prompt_mode: anonymous_visual_signature
+prompt_source: prompts/base.txt
+subject: an anonymous adult bookbinder seated in a plain studio, looking slightly beyond the camera
+review: approved_by_user
+reviewed_at: 2026-08-06

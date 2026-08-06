@@ -1,0 +1,25 @@
+composition:
+  - treat the frame or plate as a measurement field, not a cinematic scene
+  - show repeated phases on a stable baseline or grid
+  - keep subject orientation and camera geometry consistent across phases
+color:
+  - neutral paper, charcoal, gray-brown emulsion, and sparse structural lines
+  - avoid expressive color grading
+light:
+  quality: even_technical_daylight
+  behavior:
+    - illumination stays sufficiently stable for comparing phases
+    - motion is communicated by changed pose, not motion blur
+    - background and scale markers remain legible
+surface:
+  brushwork: none_collotype_plate_texture
+  mark_logic:
+    - preserve plate borders, spacing, and registration when useful
+    - retain technical imperfections as evidence, not decoration
+    - prioritize silhouette and joint position over atmosphere
+  finish: historical_motion_study_print
+invariants:
+  - the sequence has a repeatable viewpoint and interval logic
+  - movement is decomposed into observable phases
+  - the background is neutral and measurement-friendly
+  - the new sequence must not reproduce a known plate

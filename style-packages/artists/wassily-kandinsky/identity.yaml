@@ -1,0 +1,19 @@
+canonical_name: Wassily Kandinsky
+entity_type: artist
+life: 1866-1944
+region: Russia / Germany / France
+primary_medium: oil_painting
+scope:
+  subjects:
+    - nonrepresentational color and form
+    - circles, arcs, diagonals, grids, and irregular planes
+    - rhythm between sparse and dense areas
+    - flat painted ground with tactile variation
+  period_focus: mature historical practice
+  exclusions:
+    - copied famous composition
+    - generic style filter
+    - unmotivated decorative effects
+subject_matter:
+  - visual behavior is extracted from multiple original works
+  - the generated scene must remain a new subject and arrangement

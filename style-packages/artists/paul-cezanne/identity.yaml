@@ -1,0 +1,19 @@
+canonical_name: Paul Cézanne
+entity_type: artist
+life: 1839-1906
+region: France
+primary_medium: oil_painting
+scope:
+  subjects:
+    - still life with fruit, bottles, cloth, and tables
+    - Provençal landscape
+    - mountains, trees, and built structures
+    - ordinary objects treated as structural masses
+  period_focus: mature historical practice
+  exclusions:
+    - copied famous composition
+    - generic style filter
+    - unmotivated decorative effects
+subject_matter:
+  - visual behavior is extracted from multiple original works
+  - the generated scene must remain a new subject and arrangement

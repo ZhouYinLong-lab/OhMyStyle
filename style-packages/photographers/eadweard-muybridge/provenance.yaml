@@ -1,0 +1,14 @@
+package_id: eadweard-muybridge
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
+sources:
+  - url: https://commons.wikimedia.org/wiki/File:Animal_Locomotion._An_Electro-Photographic_Investigation_of_Consecutive_Phases_of_Animal_Movements._Commenced_1872_-_Completed_1885._Volume_IX%2C_Horses_MET_DP275235.jpg
+    authority: Wikimedia Commons
+    supports: primary public-domain reference image and work attribution
+    accessed: 2026-08-06
+  - url: https://commons.wikimedia.org/wiki/File:Animal_Locomotion._An_Electro-Photographic_Investigation_of_Consecutive_Phases_of_Animal_Movements._Commenced_1872_-_Completed_1885._Volume_IV%2C_Women_%28Nude%29_MET_DT6807.jpg
+    authority: Wikimedia Commons
+    supports: secondary public-domain reference image and work attribution
+    accessed: 2026-08-06
+attribution: Historical works remain attributed to Eadweard Muybridge and their source institutions. This independent package claims no affiliation.

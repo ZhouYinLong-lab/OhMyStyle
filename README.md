@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-see%20license%20files-lightgrey)](LICENSE-OHMYSTYLE.md)
-[![Executable packages](https://img.shields.io/badge/executable%20packages-12-6C63FF)](docs/DEMO-PACKAGES.md)
+[![Executable packages](https://img.shields.io/badge/executable%20packages-26-6C63FF)](docs/DEMO-PACKAGES.md)
 [![Legacy catalog](https://img.shields.io/badge/legacy%20style.json%20catalog-110-5B8C5A)](docs/CATALOG.md)
 
 OhMyStyle is an independent, model-agnostic toolkit for building reproducible
@@ -86,12 +86,26 @@ Reference manifests record provenance and rights status separately.
 | Preview | Package | Focus |
 | --- | --- | --- |
 | <img src="style-packages/artists/anna-ancher/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Anna Ancher package example"> | [Anna Ancher](style-packages/artists/anna-ancher/) | Northern daylight, domestic interiors, working figures, restrained color planes |
+| <img src="style-packages/artists/claude-monet/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Claude Monet package example"> | [Claude Monet](style-packages/artists/claude-monet/) | Transient outdoor light, broken adjacent color, weather, soft distant edges |
+| <img src="style-packages/artists/edvard-munch/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Edvard Munch package example"> | [Edvard Munch](style-packages/artists/edvard-munch/) | Emotional color, compressed space, undulating contour, psychological atmosphere |
+| <img src="style-packages/artists/jmw-turner/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous J. M. W. Turner package example"> | [J. M. W. Turner](style-packages/artists/jmw-turner/) | Dissolving weather, luminous atmosphere, diagonal motion, lost-and-found edges |
+| <img src="style-packages/artists/johannes-vermeer/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Johannes Vermeer package example"> | [Johannes Vermeer](style-packages/artists/johannes-vermeer/) | Controlled side light, quiet geometry, domestic action, material transitions |
+| <img src="style-packages/artists/paul-cezanne/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Paul Cézanne package example"> | [Paul Cézanne](style-packages/artists/paul-cezanne/) | Constructive color planes, multiple-viewpoint tension, structural brush marks |
+| <img src="style-packages/artists/rembrandt/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Rembrandt package example"> | [Rembrandt](style-packages/artists/rembrandt/) | Warm dark ground, selective illumination, open shadow, tactile material focus |
+| <img src="style-packages/artists/vincent-van-gogh/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Vincent van Gogh package example"> | [Vincent van Gogh](style-packages/artists/vincent-van-gogh/) | Directional impasto, complementary color pressure, expressive contour rhythm |
+| <img src="style-packages/artists/wassily-kandinsky/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Wassily Kandinsky package example"> | [Wassily Kandinsky](style-packages/artists/wassily-kandinsky/) | Abstract geometry, line rhythm, color weight, asymmetrical painted balance |
 
 ### Photographers
 
 | Preview | Package | Focus |
 | --- | --- | --- |
 | <img src="style-packages/photographers/masahisa-fukase/examples/generated/anonymous-v1.png" width="180" alt="Anonymous Masahisa Fukase package example"> | [Masahisa Fukase](style-packages/photographers/masahisa-fukase/) | Serial observation, intimacy, recurring motifs, psychological distance |
+| <img src="style-packages/photographers/alfred-stieglitz/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Alfred Stieglitz package example"> | [Alfred Stieglitz](style-packages/photographers/alfred-stieglitz/) | Authored geometry, layered planes, crop, weather, photogravure tonal structure |
+| <img src="style-packages/photographers/eadweard-muybridge/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Eadweard Muybridge package example"> | [Eadweard Muybridge](style-packages/photographers/eadweard-muybridge/) | Fixed camera, sequential phases, measurement grid, motion as evidence |
+| <img src="style-packages/photographers/eugene-atget/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Eugène Atget package example"> | [Eugène Atget](style-packages/photographers/eugene-atget/) | Neutral urban record, frontal space, quiet absence, archival tonal restraint |
+| <img src="style-packages/photographers/julia-margaret-cameron/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Julia Margaret Cameron package example"> | [Julia Margaret Cameron](style-packages/photographers/julia-margaret-cameron/) | Soft wet-plate focus, intimate pose, tonal atmosphere, expressive face |
+| <img src="style-packages/photographers/lewis-hine/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Lewis Hine package example"> | [Lewis Hine](style-packages/photographers/lewis-hine/) | Social evidence, direct context, human-machine scale, dignified observation |
+| <img src="style-packages/photographers/nadar/examples/accepted/anonymous-v1.png" width="180" alt="Anonymous Nadar package example"> | [Nadar](style-packages/photographers/nadar/) | Sculptural studio pose, plain ground, soft directional light, early print tone |
 
 ### Movements and schools
 

@@ -1,0 +1,25 @@
+composition:
+  - use a single sitter with a sculptural three-quarter or profile pose
+  - leave controlled breathing room around head, shoulders, and hands
+  - let the body axis and gaze create the main diagonal
+color:
+  - monochrome silver-gray or warm sepia with restrained tonal range
+  - background stays subordinate and untextured
+light:
+  quality: large_soft_studio_daylight
+  behavior:
+    - face and hands receive the clearest modeling
+    - clothing falls into broad, legible folds
+    - shadows remain gentle but directional
+surface:
+  brushwork: none_photographic_emulsion_and_print_tone
+  mark_logic:
+    - preserve fine facial structure without modern digital sharpness
+    - retain slight tonal bloom from historical optics and printing
+    - keep texture in paper, emulsion, and cloth rather than added film grain
+  finish: controlled_historical_portrait_print
+invariants:
+  - pose communicates character without theatrical action
+  - background and props remain minimal
+  - facial and fabric detail are soft, not smeared
+  - the new sitter and pose must not reproduce a named portrait

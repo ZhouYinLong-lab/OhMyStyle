@@ -1,0 +1,19 @@
+canonical_name: Eadweard Muybridge
+entity_type: photographer
+life: 1830-1904
+region: United Kingdom / United States
+primary_medium: collotype_and_chronophotographic_plate
+scope:
+  subjects:
+    - animal locomotion
+    - human motion studies
+    - repeated frames and phase comparison
+    - plain measured backgrounds and plates
+  period_focus: mature historical practice
+  exclusions:
+    - copied famous composition
+    - generic style filter
+    - unmotivated decorative effects
+subject_matter:
+  - visual behavior is extracted from multiple original works
+  - the generated scene must remain a new subject and arrangement

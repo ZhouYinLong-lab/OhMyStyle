@@ -1,0 +1,25 @@
+composition:
+  - build the scene from interlocking planes rather than one photographic viewpoint
+  - let table edges, cloth folds, trunks, and hills create a slow structural rhythm
+  - keep objects stable but allow slight shifts in axis, overlap, or perspective
+color:
+  - blue-green, muted ochre, vermilion, cream, and gray-violet
+  - warm and cool notes alternate inside the same object
+light:
+  quality: diffuse_constructive_daylight
+  behavior:
+    - volume is built by adjacent color patches more than by smooth shading
+    - shadows remain colored and materially attached
+    - highlights are integrated into the plane structure
+surface:
+  brushwork: short_directional_constructive_passages
+  mark_logic:
+    - repeat strokes along planes, contours, folds, or terrain
+    - keep brush direction visible without random impasto
+    - use a few firmer accents to lock the object network
+  finish: tactile_oil_surface_with_structural_color
+invariants:
+  - form is constructed by color relationships
+  - perspective may be slightly unstable but remains intelligible
+  - every major object contributes to a balanced mass network
+  - the new scene must not reproduce a known arrangement

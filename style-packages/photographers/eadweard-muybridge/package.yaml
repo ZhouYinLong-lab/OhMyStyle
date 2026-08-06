@@ -1,0 +1,18 @@
+id: eadweard-muybridge
+name: Eadweard Muybridge
+kind: photographer
+domain: photography
+version: 0.1.0
+entity: catalog/persons/photographers/eadweard-muybridge/entity.yaml
+summary: >-
+  A motion-study photography profile built from repeatable camera geometry, neutral staging, sequential phases, and evidence-first observation of movement.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

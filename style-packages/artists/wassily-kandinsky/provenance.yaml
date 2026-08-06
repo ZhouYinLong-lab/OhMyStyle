@@ -1,0 +1,14 @@
+package_id: wassily-kandinsky
+package_version: 0.1.0
+curation_status: reference_images_verified
+source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
+sources:
+  - url: https://commons.wikimedia.org/wiki/File:Wassily_Kandinsky_Composition_VIII.jpg
+    authority: Wikimedia Commons
+    supports: primary public-domain reference image and work attribution
+    accessed: 2026-08-06
+  - url: https://commons.wikimedia.org/wiki/File:Kandinsky_-_Jaune_Rouge_Bleu.jpg
+    authority: Wikimedia Commons
+    supports: secondary public-domain reference image and work attribution
+    accessed: 2026-08-06
+attribution: Historical works remain attributed to Wassily Kandinsky and their source institutions. This independent package claims no affiliation.
