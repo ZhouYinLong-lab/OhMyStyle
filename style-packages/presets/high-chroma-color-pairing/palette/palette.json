@@ -8,7 +8,8 @@
       "mode": "complementary_value_contrast",
       "dominant": {"name": "克莱因蓝", "hex": "#002EA6", "rgb": [0, 46, 166]},
       "counter": {"name": "松花黄", "hex": "#FFE76F", "rgb": [255, 231, 111]},
-      "recommended_ratio": "65:25:10"
+      "recommended_ratio": "65:25:10",
+      "reference_asset_ids": ["palette-reference-01"]
     },
     {
       "id": "teal-rose-pink",
@@ -16,7 +17,8 @@
       "mode": "complementary_warm_cool",
       "dominant": {"name": "马尔斯绿", "hex": "#01847F", "rgb": [1, 132, 127]},
       "counter": {"name": "玫瑰粉", "hex": "#F9D2E4", "rgb": [249, 210, 228]},
-      "recommended_ratio": "60:25:15"
+      "recommended_ratio": "60:25:15",
+      "reference_asset_ids": ["palette-reference-02"]
     },
     {
       "id": "orange-midnight",
@@ -24,7 +26,8 @@
       "mode": "complementary_value_contrast",
       "dominant": {"name": "爱马仕橙", "hex": "#FF770F", "rgb": [255, 119, 15]},
       "counter": {"name": "深蓝色", "hex": "#000026", "rgb": [0, 0, 38]},
-      "recommended_ratio": "55:30:15"
+      "recommended_ratio": "55:30:15",
+      "reference_asset_ids": ["palette-reference-03"]
     },
     {
       "id": "turquoise-cream",
@@ -32,7 +35,8 @@
       "mode": "soft_complementary_light",
       "dominant": {"name": "蒂芙尼蓝", "hex": "#81D8CF", "rgb": [129, 216, 207]},
       "counter": {"name": "奶酪色", "hex": "#F8F5D6", "rgb": [248, 245, 214]},
-      "recommended_ratio": "55:30:15"
+      "recommended_ratio": "55:30:15",
+      "reference_asset_ids": ["palette-reference-04"]
     },
     {
       "id": "red-pale-warm",
@@ -40,7 +44,8 @@
       "mode": "warm_saturation_contrast",
       "dominant": {"name": "中国红", "hex": "#FF0000", "rgb": [255, 0, 0]},
       "counter": {"name": "淡黄色", "hex": "#FAEAD3", "rgb": [250, 234, 211]},
-      "recommended_ratio": "45:40:15"
+      "recommended_ratio": "45:40:15",
+      "reference_asset_ids": ["palette-reference-05"]
     },
     {
       "id": "brown-beige",
@@ -48,7 +53,8 @@
       "mode": "deep_light_neutral",
       "dominant": {"name": "凡戴克棕", "hex": "#492D22", "rgb": [73, 45, 34]},
       "counter": {"name": "浅卡其色", "hex": "#D8C7B5", "rgb": [216, 199, 181]},
-      "recommended_ratio": "50:35:15"
+      "recommended_ratio": "50:35:15",
+      "reference_asset_ids": ["palette-reference-06"]
     },
     {
       "id": "deep-blue-mist",
@@ -56,7 +62,8 @@
       "mode": "deep_light_neutral",
       "dominant": {"name": "普鲁士蓝", "hex": "#003153", "rgb": [0, 49, 83]},
       "counter": {"name": "雾灰色", "hex": "#E5DDD7", "rgb": [229, 221, 215]},
-      "recommended_ratio": "55:30:15"
+      "recommended_ratio": "55:30:15",
+      "reference_asset_ids": ["palette-reference-07"]
     }
   ]
 }

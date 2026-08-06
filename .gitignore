@@ -10,3 +10,6 @@ __pycache__/
 
 # Generated candidates are local review artifacts until explicitly approved.
 style-packages/**/examples/generated/*.png
+
+# Local generation jobs and evaluation output are never committed by default.
+runs/

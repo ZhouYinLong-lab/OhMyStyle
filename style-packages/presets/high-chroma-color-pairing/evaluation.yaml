@@ -1,4 +1,12 @@
 minimum_score: 8
+human_review_dimensions:
+  - color_binding
+  - area_hierarchy
+  - luminance_control
+  - flatness_or_gradient_control
+  - surface_material_fidelity
+  - spatial_and_light_physics
+  - subject_neutrality
 dimensions:
   pair_legibility:
     weight: 3
@@ -27,3 +35,18 @@ rejections:
   - equal_saturation_everywhere
   - flower_only_template
   - copied_reference_composition
+profiles:
+  default:
+    min_pair_coverage: 0.12
+    max_unassigned_high_chroma: 0.55
+    enforce_area_ratio: true
+  flat-poster:
+    min_pair_coverage: 0.12
+    max_mean_edge_delta: 0.09
+    max_luminance_delta: 0.12
+    enforce_area_ratio: true
+  same-luminance:
+    min_pair_coverage: 0.12
+    max_luminance_delta: 0.08
+    max_unassigned_high_chroma: 0.45
+    enforce_area_ratio: true

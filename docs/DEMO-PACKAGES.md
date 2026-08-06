@@ -15,6 +15,10 @@ direction:
 | Preset | [Quiet Documentary](../styles/quiet-documentary/) | Original available-light photography preset |
 | Preset | [High-Chroma Color Pairing](../style-packages/presets/high-chroma-color-pairing/) | Subject-neutral 撞色 system with high-chroma pairs, counter-grounds, and area-ratio checks |
 
+The executable workflow for compiling generation jobs, selecting declared
+references, evaluating renders, and recording local runs is documented in the
+[Executable Style Package Workflow](EXECUTABLE-WORKFLOW.md).
+
 ## Ancient Greek chronology
 
 The Ancient Greek direction is split into four period packages so that
