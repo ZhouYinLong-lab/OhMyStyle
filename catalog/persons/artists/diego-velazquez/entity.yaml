@@ -1,0 +1,11 @@
+id: diego-velazquez
+entity_type: artist
+name: Diego Velázquez
+package: style-packages/artists/diego-velazquez
+summary: >-
+  Court and portrait painting profile built from controlled dark space,
+  selective illumination, precise faces and fabrics, and broad edge-dissolving
+  passages.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Las_Meninas.jpg
+  - https://commons.wikimedia.org/wiki/File:Retrato_de_Juan_Pareja

@@ -1,0 +1,10 @@
+id: julia-margaret-cameron
+entity_type: photographer
+name: Julia Margaret Cameron
+package: style-packages/photographers/julia-margaret-cameron
+summary: >-
+  Victorian portrait photography profile built from close psychological presence,
+  soft-focus wet-process optics, dark tonal fields, and sculptural facial light.
+sources:
+  - https://www.metmuseum.org/art/collection/search/269434
+  - https://www.metmuseum.org/art/collection/search/268697

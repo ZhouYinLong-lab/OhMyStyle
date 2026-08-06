@@ -1,0 +1,10 @@
+id: roger-fenton
+entity_type: photographer
+name: Roger Fenton
+package: style-packages/photographers/roger-fenton
+summary: >-
+  Nineteenth-century documentary photography profile built from deliberate field
+  composition, restrained tonal range, material evidence, and dignified observation.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Roger_Fenton_-_Shadow_of_the_Valley_of_Death.jpg
+  - https://commons.wikimedia.org/wiki/File:Crimean_war_soldier.jpg

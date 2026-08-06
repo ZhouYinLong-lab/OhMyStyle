@@ -1,0 +1,10 @@
+id: etienne-jules-marey
+entity_type: photographer
+name: Étienne-Jules Marey
+package: style-packages/photographers/etienne-jules-marey
+summary: >-
+  Chronophotography profile built from analytical motion traces, dark technical
+  grounds, repeated body phases, and instrument-like evidence.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Marey-_Man_walking
+  - https://commons.wikimedia.org/wiki/File:%C3%89tienne-Jules_Marey_-_Movements_in_Pole_Vaulting_-_Google_Art_Project.jpg

@@ -1,0 +1,10 @@
+id: eadweard-muybridge
+entity_type: photographer
+name: Eadweard Muybridge
+package: style-packages/photographers/eadweard-muybridge
+summary: >-
+  Motion-study photography profile built from repeatable camera geometry, neutral
+  staging, sequential phases, and evidence-first observation of movement.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Animal_Locomotion._An_Electro-Photographic_Investigation_of_Consecutive_Phases_of_Animal_Movements._Commenced_1872_-_Completed_1885._Volume_IX%2C_Horses_MET_DP275235.jpg
+  - https://commons.wikimedia.org/wiki/File:Animal_Locomotion._An_Electro-Photographic_Investigation_of_Consecutive_Phases_of_Animal_Movements._Commenced_1872_-_Completed_1885._Volume_IV%2C_Women_%28Nude%29_MET_DT6807.jpg

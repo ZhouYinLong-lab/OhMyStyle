@@ -1,0 +1,10 @@
+id: alfred-stieglitz
+entity_type: photographer
+name: Alfred Stieglitz
+package: style-packages/photographers/alfred-stieglitz
+summary: >-
+  Modernist photography profile focused on deliberate formal structure, layered
+  planes, tonal weather, and the photograph as an authored composition.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Alfred_Stieglitz_-_The_Steerage_-_Google_Art_Project,_from_Getty.jpg
+  - https://www.metmuseum.org/art/collection/search/267836

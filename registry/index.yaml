@@ -33,7 +33,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: diego-velazquez
   name: Diego Velázquez
@@ -50,7 +50,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: edvard-munch
   name: Edvard Munch
@@ -67,7 +67,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: georges-seurat
   name: Georges Seurat
@@ -84,7 +84,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: jmw-turner
   name: J. M. W. Turner
@@ -101,7 +101,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: true
 - resource_id: johannes-vermeer
   name: Johannes Vermeer
@@ -118,7 +118,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: true
 - resource_id: paul-cezanne
   name: Paul Cézanne
@@ -135,7 +135,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: paul-gauguin
   name: Paul Gauguin
@@ -152,7 +152,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: rembrandt
   name: Rembrandt van Rijn
@@ -169,7 +169,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: vincent-van-gogh
   name: Vincent van Gogh
@@ -186,7 +186,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: wassily-kandinsky
   name: Wassily Kandinsky
@@ -203,7 +203,7 @@ packages:
   - texture
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: rpg-maker-pixel-art
   name: RPG Maker Pixel Art
@@ -253,8 +253,8 @@ packages:
   - surface
   - texture
   reference_count: 5
-  accepted_example_count: 0
-  rejected_example_count: 0
+  accepted_example_count: 1
+  rejected_example_count: 1
   benchmark: false
 - resource_id: greek-classical-period
   name: Greek Classical Period
@@ -270,8 +270,8 @@ packages:
   - surface
   - texture
   reference_count: 5
-  accepted_example_count: 0
-  rejected_example_count: 0
+  accepted_example_count: 1
+  rejected_example_count: 1
   benchmark: false
 - resource_id: greek-geometric-period
   name: Greek Geometric Period
@@ -287,8 +287,8 @@ packages:
   - surface
   - texture
   reference_count: 5
-  accepted_example_count: 0
-  rejected_example_count: 0
+  accepted_example_count: 1
+  rejected_example_count: 1
   benchmark: false
 - resource_id: greek-hellenistic-period
   name: Greek Hellenistic Period
@@ -304,8 +304,8 @@ packages:
   - surface
   - texture
   reference_count: 5
-  accepted_example_count: 0
-  rejected_example_count: 0
+  accepted_example_count: 1
+  rejected_example_count: 1
   benchmark: false
 - resource_id: italian-high-renaissance-raphaelesque
   name: Italian High Renaissance
@@ -321,7 +321,7 @@ packages:
   - surface
   - texture
   reference_count: 6
-  accepted_example_count: 0
+  accepted_example_count: 1
   rejected_example_count: 0
   benchmark: false
 - resource_id: neue-sachlichkeit
@@ -356,7 +356,7 @@ packages:
   - subject_treatment
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: eadweard-muybridge
   name: Eadweard Muybridge
@@ -373,7 +373,7 @@ packages:
   - subject_treatment
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: etienne-jules-marey
   name: Étienne-Jules Marey
@@ -390,7 +390,7 @@ packages:
   - subject_treatment
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: eugene-atget
   name: Eugène Atget
@@ -407,7 +407,7 @@ packages:
   - subject_treatment
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: julia-margaret-cameron
   name: Julia Margaret Cameron
@@ -424,7 +424,7 @@ packages:
   - subject_treatment
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: lewis-hine
   name: Lewis Hine
@@ -441,7 +441,7 @@ packages:
   - subject_treatment
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: masahisa-fukase
   name: Masahisa Fukase
@@ -475,7 +475,7 @@ packages:
   - subject_treatment
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: roger-fenton
   name: Roger Fenton
@@ -492,7 +492,7 @@ packages:
   - subject_treatment
   reference_count: 2
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: false
 - resource_id: high-chroma-color-pairing
   name: High-Chroma Color Pairing

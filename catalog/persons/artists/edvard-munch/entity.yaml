@@ -1,0 +1,10 @@
+id: edvard-munch
+entity_type: artist
+name: Edvard Munch
+package: style-packages/artists/edvard-munch
+summary: >-
+  Expressionist painting profile focused on psychological color, tension-carrying
+  contour, compressed space, and recurring organic or architectural rhythms.
+sources:
+  - https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg
+  - https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Madonna_(1894-1895).jpg
