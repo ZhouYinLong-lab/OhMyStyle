@@ -1,0 +1,20 @@
+{
+  "name": "米开朗基罗",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#9A806C",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#C2A890",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#4E5A61",
+      "role": "package palette"
+    }
+  ]
+}

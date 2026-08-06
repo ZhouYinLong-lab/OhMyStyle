@@ -1,0 +1,26 @@
+medium: painting
+signature: 纪念性人体、雕塑式体积、复杂透视与强轮廓
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#9A806C'
+  - '#C2A890'
+  - '#4E5A61'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 纪念性人体、雕塑式体积、复杂透视与强轮廓
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

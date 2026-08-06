@@ -1,0 +1,11 @@
+canonical_name: 埃德加·德加
+entity_type: artist
+period_or_scope: 印象主义
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 裁切视角、高机位、非对称构图与舞者动作
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

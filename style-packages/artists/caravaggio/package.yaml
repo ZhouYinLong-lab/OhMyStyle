@@ -1,0 +1,17 @@
+id: caravaggio
+name: 卡拉瓦乔
+kind: artist
+domain: painting
+version: 0.1.0
+summary: Independent Caravaggio style package focused on 明暗对照、单一光源、普通人物与戏剧性空间; it
+  requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

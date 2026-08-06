@@ -1,0 +1,17 @@
+id: leonardo-da-vinci
+name: 莱昂纳多·达·芬奇
+kind: artist
+domain: painting
+version: 0.1.0
+summary: Independent Leonardo da Vinci style package focused on 晕涂、观察性解剖、空气透视与自然研究;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,13 @@
+package_id: edgar-degas
+research_basis:
+- title: Edgar Degas
+  creator: Edgar Degas
+  period: 印象主义
+  source_url: https://commons.wikimedia.org/w/index.php?search=Edgar+Degas&title=Special:MediaSearch&type=image
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.

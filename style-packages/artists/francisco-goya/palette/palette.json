@@ -1,0 +1,20 @@
+{
+  "name": "弗朗西斯科·戈雅",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#302B28",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#67574A",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#9A876E",
+      "role": "package palette"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "格兰特·伍德",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#6C7653",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#657A91",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#8B694B",
+      "role": "package palette"
+    }
+  ]
+}

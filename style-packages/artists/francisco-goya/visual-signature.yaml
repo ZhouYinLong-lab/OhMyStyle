@@ -1,0 +1,26 @@
+medium: painting
+signature: 心理张力、暗色现实、粗粝笔触与不安静默
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#302B28'
+  - '#67574A'
+  - '#9A876E'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 心理张力、暗色现实、粗粝笔触与不安静默
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

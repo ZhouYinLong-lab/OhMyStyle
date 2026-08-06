@@ -1,0 +1,11 @@
+canonical_name: 古斯塔夫·库尔贝
+entity_type: artist
+period_or_scope: 现实主义
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 厚重物质感、未理想化人物、土色现实与坚实地面
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

@@ -1,0 +1,20 @@
+{
+  "name": "古斯塔夫·库尔贝",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#6E5C40",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#4E5B4A",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#8F765B",
+      "role": "package palette"
+    }
+  ]
+}

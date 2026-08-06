@@ -1,0 +1,26 @@
+medium: photography
+signature: 日常彩色、饱和小物、普通地点与染料转印质感
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#C43B2B'
+  - '#2B7F91'
+  - '#D4A53B'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 日常彩色、饱和小物、普通地点与染料转印质感
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

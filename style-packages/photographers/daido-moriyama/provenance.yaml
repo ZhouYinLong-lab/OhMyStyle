@@ -1,0 +1,13 @@
+package_id: daido-moriyama
+research_basis:
+- title: Daido Moriyama
+  creator: Daido Moriyama
+  period: 日本战后摄影
+  source_url: https://commons.wikimedia.org/w/index.php?search=Daido+Moriyama&title=Special:MediaSearch&type=image
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.

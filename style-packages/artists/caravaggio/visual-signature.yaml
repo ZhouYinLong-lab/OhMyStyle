@@ -1,0 +1,26 @@
+medium: painting
+signature: 明暗对照、单一光源、普通人物与戏剧性空间
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#8B3327'
+  - '#6A4A2C'
+  - '#171717'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 明暗对照、单一光源、普通人物与戏剧性空间
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

@@ -1,0 +1,20 @@
+{
+  "name": "拉斐尔",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#A84D45",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#486A89",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#A9965B",
+      "role": "package palette"
+    }
+  ]
+}

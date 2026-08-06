@@ -1,0 +1,20 @@
+{
+  "name": "威廉·埃格尔斯顿",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#C43B2B",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#2B7F91",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#D4A53B",
+      "role": "package palette"
+    }
+  ]
+}

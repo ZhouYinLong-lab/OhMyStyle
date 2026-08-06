@@ -1,0 +1,20 @@
+{
+  "name": "欧仁·德拉克罗瓦",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#B94732",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#355A79",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#B58B42",
+      "role": "package palette"
+    }
+  ]
+}

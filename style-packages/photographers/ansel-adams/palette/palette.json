@@ -1,0 +1,20 @@
+{
+  "name": "安塞尔·亚当斯",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#17191A",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#6E7475",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#E1DED2",
+      "role": "package palette"
+    }
+  ]
+}

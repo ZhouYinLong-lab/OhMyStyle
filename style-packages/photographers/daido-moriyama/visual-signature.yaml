@@ -1,0 +1,26 @@
+medium: photography
+signature: 高反差街景、粗颗粒、倾斜取景与都市碎片
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#111416'
+  - '#666C6A'
+  - '#D1CBC0'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 高反差街景、粗颗粒、倾斜取景与都市碎片
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

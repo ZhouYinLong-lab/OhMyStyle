@@ -1,0 +1,11 @@
+canonical_name: 拉斐尔
+entity_type: artist
+period_or_scope: 文艺复兴盛期
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 理想化人体、平衡群像、清晰轮廓与古典秩序
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

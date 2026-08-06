@@ -1,0 +1,11 @@
+canonical_name: 格兰特·伍德
+entity_type: artist
+period_or_scope: 美国地域主义
+region_or_context: international
+primary_medium: painting
+subject_matter:
+- 乡土几何、清晰垂直形、冷静中西部色调与细密描绘
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style

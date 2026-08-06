@@ -1,0 +1,13 @@
+package_id: joan-miro
+research_basis:
+- title: Joan Miró
+  creator: Joan Miró
+  period: 超现实主义
+  source_url: https://commons.wikimedia.org/w/index.php?search=Joan+Mir%C3%B3&title=Special:MediaSearch&type=image
+  role: style research
+generated_assets:
+- path: gallery-16x9.jpg
+  description: New anonymous representative image
+  rights: Generated demonstration; not a source artwork
+redistribution: Do not redistribute external source works unless their rights are
+  independently verified. Preserve this attribution and package license.

@@ -1,0 +1,26 @@
+medium: painting
+signature: 厚重物质感、未理想化人物、土色现实与坚实地面
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#6E5C40'
+  - '#4E5B4A'
+  - '#8F765B'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 厚重物质感、未理想化人物、土色现实与坚实地面
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

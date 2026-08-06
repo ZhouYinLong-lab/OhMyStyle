@@ -1,0 +1,26 @@
+medium: painting
+signature: 晕涂、观察性解剖、空气透视与自然研究
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#5D6657'
+  - '#A98A62'
+  - '#6D7F90'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 晕涂、观察性解剖、空气透视与自然研究
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability

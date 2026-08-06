@@ -1,0 +1,20 @@
+{
+  "name": "黛安·阿勃丝",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#282827",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#77746B",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#CCC7BD",
+      "role": "package palette"
+    }
+  ]
+}

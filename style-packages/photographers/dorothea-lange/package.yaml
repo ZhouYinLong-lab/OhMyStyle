@@ -1,0 +1,17 @@
+id: dorothea-lange
+name: 多萝西娅·兰格
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: Independent Dorothea Lange style package focused on 社会纪实、直接人物关系、天气纹理与克制灰阶;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

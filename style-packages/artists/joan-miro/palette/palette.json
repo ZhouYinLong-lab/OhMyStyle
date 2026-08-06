@@ -1,0 +1,20 @@
+{
+  "name": "胡安·米罗",
+  "colors": [
+    {
+      "name": "色彩1",
+      "hex": "#D23E32",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩2",
+      "hex": "#E0A82F",
+      "role": "package palette"
+    },
+    {
+      "name": "色彩3",
+      "hex": "#2C5D83",
+      "role": "package palette"
+    }
+  ]
+}

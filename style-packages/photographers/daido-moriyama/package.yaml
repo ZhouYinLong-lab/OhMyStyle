@@ -1,0 +1,17 @@
+id: daido-moriyama
+name: 森山大道
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: Independent Daido Moriyama style package focused on 高反差街景、粗颗粒、倾斜取景与都市碎片;
+  it requires new subjects and arrangements.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

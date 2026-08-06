@@ -1,0 +1,11 @@
+canonical_name: 多萝西娅·兰格
+entity_type: photographer
+period_or_scope: 20世纪纪实摄影
+region_or_context: international
+primary_medium: photography
+subject_matter:
+- 社会纪实、直接人物关系、天气纹理与克制灰阶
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style
