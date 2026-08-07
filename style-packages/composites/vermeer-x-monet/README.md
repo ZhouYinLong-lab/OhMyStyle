@@ -27,9 +27,42 @@
 
 ## 只使用此包
 
-1. 下载本目录，阅读 `identity.yaml`、`visual-signature.yaml` 和 `reproduction.yaml`。
-2. 打开 `prompts/base.txt`，把主题替换为你自己的内容；负面约束见 `prompts/negative.txt`。
-3. 选择一种执行方式：直接复制 Prompt 到生图平台；配置自己的 API Key 后提交编译任务；或将 Prompt、参考清单和调色板导入本地模型与 ComfyUI。
-4. 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+本交叉包引用 `composite.yaml` 中列出的基础风格包；使用时请同时下载本目录和这些基础包。
 
-模型权重、API Key 和生成图片由使用者自行管理；本仓库不托管在线生图服务。
+### 方式一：交给具备生图能力的 Agent
+
+把本目录和 `bases` 中列出的基础风格包一起提供给 Agent。让 Agent 先读取 `composite.yaml`、各基础包的 `README.md`、`visual-signature.yaml`、`reproduction.yaml`、`prompts/base.txt` 和 `prompts/negative.txt`，再把你的主题编译为本交叉包对应的模式。
+
+必须保留：
+
+- 基础包承担的角色；
+- `zone` 区域分配；
+- 权重；
+- `constraints.must` 和 `constraints.avoid`；
+- 不同风格之间的边界。
+
+### 方式二：编译后复制 Prompt
+
+在仓库根目录运行：
+
+```bash
+python tools/compile-composite.py \
+  style-packages/composites/vermeer-x-monet \
+  --subject "把这里替换为你的主题" \
+  --mode auto \
+  --profile generic
+```
+
+把输出 JSON 中的 `prompt` 和 `negative_prompt` 复制到你使用的生图平台。`--mode auto` 会使用组合包声明的模式；也可以显式指定 `stack`、`blend` 或 `contrast`。
+
+### 方式三：配置 API Key 后提交生成任务
+
+使用自己的生图平台或 API 客户端，将编译结果中的 Prompt、负面约束、主题变量和参考资源提交给模型。OhMyStyle 只负责风格包和任务编译，不托管 API Key，也不提供在线生图服务。
+
+### 方式四：本地模型 + ComfyUI
+
+将编译后的 Prompt 和负面 Prompt 导入本地模型或 ComfyUI，并同时提供基础风格包的参考图、调色板和结构约束。对于 `contrast`，如果模型执行不稳定，可以在 ComfyUI 中手动增加区域 mask；交叉包本身不会自动生成 mask。
+
+参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+模型权重、API Key 和生成图片由使用者自行管理。
