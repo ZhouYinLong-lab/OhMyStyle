@@ -18,8 +18,8 @@ Choose the base packages first, then open the cross-style package's `composite.y
 
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="rpg-maker-x-gauguin/README.en.md"><img src="rpg-maker-x-gauguin/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Foreground + Gauguin Background example"></a><br><strong>RPG Maker Foreground + Gauguin Background</strong><br><a href="rpg-maker-x-gauguin/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="rpg-maker-x-turner/README.en.md"><img src="rpg-maker-x-turner/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere example"></a><br><strong>RPG Maker Pixel Art + Turner Atmosphere</strong><br><a href="rpg-maker-x-turner/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="vermeer-x-monet/README.en.md"><img src="vermeer-x-monet/examples/generated/anonymous-v1.png" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>Vermeer Light + Monet Color</strong><br><a href="vermeer-x-monet/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="rpg-maker-x-gauguin/README.en.md"><img src="rpg-maker-x-gauguin/gallery-16x9.jpg" width="230" alt="RPG Maker Foreground + Gauguin Background example"></a><br><strong>RPG Maker Foreground + Gauguin Background</strong><br><a href="rpg-maker-x-gauguin/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="rpg-maker-x-turner/README.en.md"><img src="rpg-maker-x-turner/gallery-16x9.jpg" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere example"></a><br><strong>RPG Maker Pixel Art + Turner Atmosphere</strong><br><a href="rpg-maker-x-turner/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="vermeer-x-monet/README.en.md"><img src="vermeer-x-monet/gallery-16x9.jpg" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>Vermeer Light + Monet Color</strong><br><a href="vermeer-x-monet/README.en.md">Open README</a></td>
 </tr>
 </table>

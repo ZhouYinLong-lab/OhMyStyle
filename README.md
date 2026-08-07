@@ -212,9 +212,637 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 
 ### 继承的 110 个轻量预设
 
-原始 110 个 `style.json` 预设保留在 [`styles/`](styles/) 中，使用相同的 16:9 画廊形式。
+原始 110 个 `style.json` 预设保留在 [`styles/`](styles/) 中，下面直接展示全部预设。
 
-[打开 110 个继承预设画廊](styles/README.md)
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/acid-lime-3d-streetwear-type-poster-style/README.md"><img src="styles/acid-lime-3d-streetwear-type-poster-style/preview-16x9.jpg" width="230" alt="Acid Lime 3D Streetwear Type Poster Style代表图"></a><br>
+<strong>Acid Lime 3D Streetwear Type Poster Style</strong><br>
+<a href="styles/acid-lime-3d-streetwear-type-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/analog-sticker-diary-portrait-poster-style/README.md"><img src="styles/analog-sticker-diary-portrait-poster-style/preview-16x9.jpg" width="230" alt="Analog Sticker Diary Portrait Poster Style代表图"></a><br>
+<strong>Analog Sticker Diary Portrait Poster Style</strong><br>
+<a href="styles/analog-sticker-diary-portrait-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/backseat-transit-doodle-letter-poster-style/README.md"><img src="styles/backseat-transit-doodle-letter-poster-style/preview-16x9.jpg" width="230" alt="Backseat Transit Doodle Letter Poster Style代表图"></a><br>
+<strong>Backseat Transit Doodle Letter Poster Style</strong><br>
+<a href="styles/backseat-transit-doodle-letter-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/black-cutout-food-card-ad-style/README.md"><img src="styles/black-cutout-food-card-ad-style/preview-16x9.jpg" width="230" alt="Black Cutout Food Card Ad代表图"></a><br>
+<strong>Black Cutout Food Card Ad</strong><br>
+<a href="styles/black-cutout-food-card-ad-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-bubble-fisheye-action-poster-style/README.md"><img src="styles/blue-bubble-fisheye-action-poster-style/preview-16x9.jpg" width="230" alt="Blue Bubble Fisheye Action Poster Style代表图"></a><br>
+<strong>Blue Bubble Fisheye Action Poster Style</strong><br>
+<a href="styles/blue-bubble-fisheye-action-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-chinese-perspective-type-canyon-style/README.md"><img src="styles/blue-chinese-perspective-type-canyon-style/preview-16x9.jpg" width="230" alt="Blue Chinese Perspective Type Canyon Style代表图"></a><br>
+<strong>Blue Chinese Perspective Type Canyon Style</strong><br>
+<a href="styles/blue-chinese-perspective-type-canyon-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-halftone-ransom-zine-poster-style/README.md"><img src="styles/blue-halftone-ransom-zine-poster-style/preview-16x9.jpg" width="230" alt="Blue Halftone Ransom Zine Poster Style代表图"></a><br>
+<strong>Blue Halftone Ransom Zine Poster Style</strong><br>
+<a href="styles/blue-halftone-ransom-zine-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-hud-macro-product-poster/README.md"><img src="styles/blue-hud-macro-product-poster/preview-16x9.jpg" width="230" alt="Blue HUD Macro Creator Tech Poster代表图"></a><br>
+<strong>Blue HUD Macro Creator Tech Poster</strong><br>
+<a href="styles/blue-hud-macro-product-poster/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/blue-lime-kinetic-comic-type-poster-style/README.md"><img src="styles/blue-lime-kinetic-comic-type-poster-style/preview-16x9.jpg" width="230" alt="Blue Lime Kinetic Comic Type Poster Style代表图"></a><br>
+<strong>Blue Lime Kinetic Comic Type Poster Style</strong><br>
+<a href="styles/blue-lime-kinetic-comic-type-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/bold-anime-reaction-thumbnail-style/README.md"><img src="styles/bold-anime-reaction-thumbnail-style/preview-16x9.jpg" width="230" alt="Bold Anime Reaction Thumbnail Style代表图"></a><br>
+<strong>Bold Anime Reaction Thumbnail Style</strong><br>
+<a href="styles/bold-anime-reaction-thumbnail-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/bold-block-mascot-poster-style/README.md"><img src="styles/bold-block-mascot-poster-style/preview-16x9.jpg" width="230" alt="Bold Block Mascot Poster Style代表图"></a><br>
+<strong>Bold Block Mascot Poster Style</strong><br>
+<a href="styles/bold-block-mascot-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/chromatic-fisheye-orbit-pop-poster-style/README.md"><img src="styles/chromatic-fisheye-orbit-pop-poster-style/preview-16x9.jpg" width="230" alt="Chromatic Fisheye Orbit Pop Poster Style代表图"></a><br>
+<strong>Chromatic Fisheye Orbit Pop Poster Style</strong><br>
+<a href="styles/chromatic-fisheye-orbit-pop-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/clean-triptych-travel-vlog-thumbnail-style/README.md"><img src="styles/clean-triptych-travel-vlog-thumbnail-style/preview-16x9.jpg" width="230" alt="Clean Triptych Travel Vlog Thumbnail Style代表图"></a><br>
+<strong>Clean Triptych Travel Vlog Thumbnail Style</strong><br>
+<a href="styles/clean-triptych-travel-vlog-thumbnail-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cobalt-megatype-roadside-travel-editorial-style/README.md"><img src="styles/cobalt-megatype-roadside-travel-editorial-style/preview-16x9.jpg" width="230" alt="Cobalt Megatype Roadside Travel Editorial代表图"></a><br>
+<strong>Cobalt Megatype Roadside Travel Editorial</strong><br>
+<a href="styles/cobalt-megatype-roadside-travel-editorial-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cobalt-torn-didone-portrait-editorial-style/README.md"><img src="styles/cobalt-torn-didone-portrait-editorial-style/preview-16x9.jpg" width="230" alt="Cobalt Torn Didone Portrait Editorial代表图"></a><br>
+<strong>Cobalt Torn Didone Portrait Editorial</strong><br>
+<a href="styles/cobalt-torn-didone-portrait-editorial-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/cobalt-xerox-script-editorial-poster-style/README.md"><img src="styles/cobalt-xerox-script-editorial-poster-style/preview-16x9.jpg" width="230" alt="Cobalt Xerox Script Editorial Poster代表图"></a><br>
+<strong>Cobalt Xerox Script Editorial Poster</strong><br>
+<a href="styles/cobalt-xerox-script-editorial-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/coral-window-megatype-motion-poster-style/README.md"><img src="styles/coral-window-megatype-motion-poster-style/preview-16x9.jpg" width="230" alt="Coral Window Megatype Motion Poster代表图"></a><br>
+<strong>Coral Window Megatype Motion Poster</strong><br>
+<a href="styles/coral-window-megatype-motion-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cozy-bedroom-doodle-companion-snapshot-style/README.md"><img src="styles/cozy-bedroom-doodle-companion-snapshot-style/preview-16x9.jpg" width="230" alt="Cozy Bedroom Doodle Companion Snapshot Style代表图"></a><br>
+<strong>Cozy Bedroom Doodle Companion Snapshot Style</strong><br>
+<a href="styles/cozy-bedroom-doodle-companion-snapshot-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/crayon-catalog-doodle-poster-style/README.md"><img src="styles/crayon-catalog-doodle-poster-style/preview-16x9.jpg" width="230" alt="Crayon Catalog Doodle Poster Style代表图"></a><br>
+<strong>Crayon Catalog Doodle Poster Style</strong><br>
+<a href="styles/crayon-catalog-doodle-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cream-smoke-city-manga-poster-style/README.md"><img src="styles/cream-smoke-city-manga-poster-style/preview-16x9.jpg" width="230" alt="Cream Smoke City Manga Poster Style代表图"></a><br>
+<strong>Cream Smoke City Manga Poster Style</strong><br>
+<a href="styles/cream-smoke-city-manga-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/crimson-ink-manga-dossier/README.md"><img src="styles/crimson-ink-manga-dossier/preview-16x9.jpg" width="230" alt="Crimson Ink Manga Dossier代表图"></a><br>
+<strong>Crimson Ink Manga Dossier</strong><br>
+<a href="styles/crimson-ink-manga-dossier/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/cyan-grain-macro-megatype-poster-style/README.md"><img src="styles/cyan-grain-macro-megatype-poster-style/preview-16x9.jpg" width="230" alt="Cyan Grain Macro Megatype Poster代表图"></a><br>
+<strong>Cyan Grain Macro Megatype Poster</strong><br>
+<a href="styles/cyan-grain-macro-megatype-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/cyan-red-shockwave-type-poster-style/README.md"><img src="styles/cyan-red-shockwave-type-poster-style/preview-16x9.jpg" width="230" alt="Cyan Red Shockwave Type Poster Style代表图"></a><br>
+<strong>Cyan Red Shockwave Type Poster Style</strong><br>
+<a href="styles/cyan-red-shockwave-type-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/dusk-cyan-layered-type-poster-style/README.md"><img src="styles/dusk-cyan-layered-type-poster-style/preview-16x9.jpg" width="230" alt="Dusk Cyan Layered Type Poster Style代表图"></a><br>
+<strong>Dusk Cyan Layered Type Poster Style</strong><br>
+<a href="styles/dusk-cyan-layered-type-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/electric-blue-cutout-manga-poster-style/README.md"><img src="styles/electric-blue-cutout-manga-poster-style/preview-16x9.jpg" width="230" alt="Electric Blue Cutout Manga Poster Style代表图"></a><br>
+<strong>Electric Blue Cutout Manga Poster Style</strong><br>
+<a href="styles/electric-blue-cutout-manga-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/electric-blue-silhouette-product-launch-style/README.md"><img src="styles/electric-blue-silhouette-product-launch-style/preview-16x9.jpg" width="230" alt="Electric Blue Silhouette Product Launch Style代表图"></a><br>
+<strong>Electric Blue Silhouette Product Launch Style</strong><br>
+<a href="styles/electric-blue-silhouette-product-launch-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/fantasy-scribble-mascot-poster-style/README.md"><img src="styles/fantasy-scribble-mascot-poster-style/preview-16x9.jpg" width="230" alt="Fantasy Scribble Mascot Poster Style代表图"></a><br>
+<strong>Fantasy Scribble Mascot Poster Style</strong><br>
+<a href="styles/fantasy-scribble-mascot-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/folded-diamond-perspective-type-poster-style/README.md"><img src="styles/folded-diamond-perspective-type-poster-style/preview-16x9.jpg" width="230" alt="Folded Diamond Perspective Type Poster Style代表图"></a><br>
+<strong>Folded Diamond Perspective Type Poster Style</strong><br>
+<a href="styles/folded-diamond-perspective-type-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/folded-newspaper-product-ad-style/README.md"><img src="styles/folded-newspaper-product-ad-style/preview-16x9.jpg" width="230" alt="Folded Newspaper Product Ad Style代表图"></a><br>
+<strong>Folded Newspaper Product Ad Style</strong><br>
+<a href="styles/folded-newspaper-product-ad-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/foreshortened-gradient-impact-ad-style/README.md"><img src="styles/foreshortened-gradient-impact-ad-style/preview-16x9.jpg" width="230" alt="Foreshortened Gradient Impact Ad Style代表图"></a><br>
+<strong>Foreshortened Gradient Impact Ad Style</strong><br>
+<a href="styles/foreshortened-gradient-impact-ad-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/gothic-cat-doodle-photo-collage-style/README.md"><img src="styles/gothic-cat-doodle-photo-collage-style/preview-16x9.jpg" width="230" alt="Gothic Cat Doodle Photo Collage Style代表图"></a><br>
+<strong>Gothic Cat Doodle Photo Collage Style</strong><br>
+<a href="styles/gothic-cat-doodle-photo-collage-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/halftone-assemblage-metaphor-psa-poster-style/README.md"><img src="styles/halftone-assemblage-metaphor-psa-poster-style/preview-16x9.jpg" width="230" alt="Halftone Assemblage Metaphor PSA Poster Style代表图"></a><br>
+<strong>Halftone Assemblage Metaphor PSA Poster Style</strong><br>
+<a href="styles/halftone-assemblage-metaphor-psa-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/hot-ink-comic-poster/README.md"><img src="styles/hot-ink-comic-poster/preview-16x9.jpg" width="230" alt="Hot Ink Comic Poster代表图"></a><br>
+<strong>Hot Ink Comic Poster</strong><br>
+<a href="styles/hot-ink-comic-poster/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/ice-cyan-megatype-action-poster-style/README.md"><img src="styles/ice-cyan-megatype-action-poster-style/preview-16x9.jpg" width="230" alt="Ice Cyan Megatype Action Poster Style代表图"></a><br>
+<strong>Ice Cyan Megatype Action Poster Style</strong><br>
+<a href="styles/ice-cyan-megatype-action-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/impact-burst-halftone-comic-poster-style/README.md"><img src="styles/impact-burst-halftone-comic-poster-style/preview-16x9.jpg" width="230" alt="Impact Burst Halftone Comic Poster Style代表图"></a><br>
+<strong>Impact Burst Halftone Comic Poster Style</strong><br>
+<a href="styles/impact-burst-halftone-comic-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/jade-glyph-grocer-collage-poster-style/README.md"><img src="styles/jade-glyph-grocer-collage-poster-style/preview-16x9.jpg" width="230" alt="Jade Glyph Grocer Collage Poster Style代表图"></a><br>
+<strong>Jade Glyph Grocer Collage Poster Style</strong><br>
+<a href="styles/jade-glyph-grocer-collage-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/jagged-red-street-photo-event-poster-style/README.md"><img src="styles/jagged-red-street-photo-event-poster-style/preview-16x9.jpg" width="230" alt="Jagged Red Street Photo Event Poster Style代表图"></a><br>
+<strong>Jagged Red Street Photo Event Poster Style</strong><br>
+<a href="styles/jagged-red-street-photo-event-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/k-pop-apocalypse-ransom-zine-style/README.md"><img src="styles/k-pop-apocalypse-ransom-zine-style/preview-16x9.jpg" width="230" alt="K-Pop Apocalypse Ransom Zine Style代表图"></a><br>
+<strong>K-Pop Apocalypse Ransom Zine Style</strong><br>
+<a href="styles/k-pop-apocalypse-ransom-zine-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/kinetic-editorial-photo-collage-style/README.md"><img src="styles/kinetic-editorial-photo-collage-style/preview-16x9.jpg" width="230" alt="Kinetic Editorial Photo Collage代表图"></a><br>
+<strong>Kinetic Editorial Photo Collage</strong><br>
+<a href="styles/kinetic-editorial-photo-collage-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/kinetic-geometric-doodle-cutouts/README.md"><img src="styles/kinetic-geometric-doodle-cutouts/preview-16x9.jpg" width="230" alt="Kinetic Geometric Doodle Cutouts代表图"></a><br>
+<strong>Kinetic Geometric Doodle Cutouts</strong><br>
+<a href="styles/kinetic-geometric-doodle-cutouts/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/kinetic-luxury-street-fashion-cover-style/README.md"><img src="styles/kinetic-luxury-street-fashion-cover-style/preview-16x9.jpg" width="230" alt="Kinetic Luxury Street Fashion Cover Style代表图"></a><br>
+<strong>Kinetic Luxury Street Fashion Cover Style</strong><br>
+<a href="styles/kinetic-luxury-street-fashion-cover-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/lime-loop-megatype-action-poster-style/README.md"><img src="styles/lime-loop-megatype-action-poster-style/preview-16x9.jpg" width="230" alt="Lime Loop Megatype Action Poster代表图"></a><br>
+<strong>Lime Loop Megatype Action Poster</strong><br>
+<a href="styles/lime-loop-megatype-action-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/liquid-chrome-clearance-poster-style/README.md"><img src="styles/liquid-chrome-clearance-poster-style/preview-16x9.jpg" width="230" alt="Liquid Chrome Clearance Poster Style代表图"></a><br>
+<strong>Liquid Chrome Clearance Poster Style</strong><br>
+<a href="styles/liquid-chrome-clearance-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/loose-scribble-riso-print-style/README.md"><img src="styles/loose-scribble-riso-print-style/preview-16x9.jpg" width="230" alt="Loose Scribble Riso Print Style代表图"></a><br>
+<strong>Loose Scribble Riso Print Style</strong><br>
+<a href="styles/loose-scribble-riso-print-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/luxury-perspective-checkerboard-editorial/README.md"><img src="styles/luxury-perspective-checkerboard-editorial/preview-16x9.jpg" width="230" alt="Luxury Perspective Checkerboard Editorial代表图"></a><br>
+<strong>Luxury Perspective Checkerboard Editorial</strong><br>
+<a href="styles/luxury-perspective-checkerboard-editorial/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/manga-dossier-blueprint-poster/README.md"><img src="styles/manga-dossier-blueprint-poster/preview-16x9.jpg" width="230" alt="Manga Dossier Blueprint Poster代表图"></a><br>
+<strong>Manga Dossier Blueprint Poster</strong><br>
+<a href="styles/manga-dossier-blueprint-poster/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/market-brush-produce-poster-style/README.md"><img src="styles/market-brush-produce-poster-style/preview-16x9.jpg" width="230" alt="Market Brush Produce Poster Style代表图"></a><br>
+<strong>Market Brush Produce Poster Style</strong><br>
+<a href="styles/market-brush-produce-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/metro-doodle-snapshot-diary-style/README.md"><img src="styles/metro-doodle-snapshot-diary-style/preview-16x9.jpg" width="230" alt="Metro Doodle Snapshot Diary代表图"></a><br>
+<strong>Metro Doodle Snapshot Diary</strong><br>
+<a href="styles/metro-doodle-snapshot-diary-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/mono-noir-type-portrait-poster-style/README.md"><img src="styles/mono-noir-type-portrait-poster-style/preview-16x9.jpg" width="230" alt="Mono Noir Type Portrait Poster Style代表图"></a><br>
+<strong>Mono Noir Type Portrait Poster Style</strong><br>
+<a href="styles/mono-noir-type-portrait-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/monochrome-grid-sneaker-tech-spec/README.md"><img src="styles/monochrome-grid-sneaker-tech-spec/preview-16x9.jpg" width="230" alt="Monochrome Grid Sneaker Tech Spec代表图"></a><br>
+<strong>Monochrome Grid Sneaker Tech Spec</strong><br>
+<a href="styles/monochrome-grid-sneaker-tech-spec/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/monochrome-xerox-sports-dossier/README.md"><img src="styles/monochrome-xerox-sports-dossier/preview-16x9.jpg" width="230" alt="Monochrome Xerox Sports Dossier代表图"></a><br>
+<strong>Monochrome Xerox Sports Dossier</strong><br>
+<a href="styles/monochrome-xerox-sports-dossier/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/mountain-trail-monster-doodle-poster-style/README.md"><img src="styles/mountain-trail-monster-doodle-poster-style/preview-16x9.jpg" width="230" alt="Mountain Trail Monster Doodle Poster Style代表图"></a><br>
+<strong>Mountain Trail Monster Doodle Poster Style</strong><br>
+<a href="styles/mountain-trail-monster-doodle-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/multi-color-beverage-splash-ad-system-style/README.md"><img src="styles/multi-color-beverage-splash-ad-system-style/preview-16x9.jpg" width="230" alt="Multi-Color Beverage Splash Ad System Style代表图"></a><br>
+<strong>Multi-Color Beverage Splash Ad System Style</strong><br>
+<a href="styles/multi-color-beverage-splash-ad-system-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/naive-marker-psa-poster-style/README.md"><img src="styles/naive-marker-psa-poster-style/preview-16x9.jpg" width="230" alt="Naive Marker PSA Poster Style代表图"></a><br>
+<strong>Naive Marker PSA Poster Style</strong><br>
+<a href="styles/naive-marker-psa-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/naive-marker-quote-card-style/README.md"><img src="styles/naive-marker-quote-card-style/preview-16x9.jpg" width="230" alt="Naive Marker Quote Card Style代表图"></a><br>
+<strong>Naive Marker Quote Card Style</strong><br>
+<a href="styles/naive-marker-quote-card-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-doodle-gallery-snapshot-style/README.md"><img src="styles/neon-doodle-gallery-snapshot-style/preview-16x9.jpg" width="230" alt="Neon Doodle Gallery Snapshot代表图"></a><br>
+<strong>Neon Doodle Gallery Snapshot</strong><br>
+<a href="styles/neon-doodle-gallery-snapshot-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-kinetic-typographic-poster-style/README.md"><img src="styles/neon-kinetic-typographic-poster-style/preview-16x9.jpg" width="230" alt="Neon Kinetic Typographic Poster代表图"></a><br>
+<strong>Neon Kinetic Typographic Poster</strong><br>
+<a href="styles/neon-kinetic-typographic-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-outdoor-diary-longform-collage-style/README.md"><img src="styles/neon-outdoor-diary-longform-collage-style/preview-16x9.jpg" width="230" alt="Neon Outdoor Diary Longform Collage Style代表图"></a><br>
+<strong>Neon Outdoor Diary Longform Collage Style</strong><br>
+<a href="styles/neon-outdoor-diary-longform-collage-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-plush-gadget-pop-3d-style/README.md"><img src="styles/neon-plush-gadget-pop-3d-style/preview-16x9.jpg" width="230" alt="Neon Plush Gadget Pop 3D Style代表图"></a><br>
+<strong>Neon Plush Gadget Pop 3D Style</strong><br>
+<a href="styles/neon-plush-gadget-pop-3d-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-stadium-3d-hero-type-poster-style/README.md"><img src="styles/neon-stadium-3d-hero-type-poster-style/preview-16x9.jpg" width="230" alt="Neon Stadium 3D Hero Type Poster Style代表图"></a><br>
+<strong>Neon Stadium 3D Hero Type Poster Style</strong><br>
+<a href="styles/neon-stadium-3d-hero-type-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/neon-type-photo-scribble-poster/README.md"><img src="styles/neon-type-photo-scribble-poster/preview-16x9.jpg" width="230" alt="Neon Type Photo Scribble Poster代表图"></a><br>
+<strong>Neon Type Photo Scribble Poster</strong><br>
+<a href="styles/neon-type-photo-scribble-poster/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/olive-scribble-sports-poster-style/README.md"><img src="styles/olive-scribble-sports-poster-style/preview-16x9.jpg" width="230" alt="Olive Scribble Sports Poster Style代表图"></a><br>
+<strong>Olive Scribble Sports Poster Style</strong><br>
+<a href="styles/olive-scribble-sports-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/orange-brush-mascot-action-poster-style/README.md"><img src="styles/orange-brush-mascot-action-poster-style/preview-16x9.jpg" width="230" alt="Orange Brush Mascot Action Poster Style代表图"></a><br>
+<strong>Orange Brush Mascot Action Poster Style</strong><br>
+<a href="styles/orange-brush-mascot-action-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/photo-illustration-overlay-poster-style/README.md"><img src="styles/photo-illustration-overlay-poster-style/preview-16x9.jpg" width="230" alt="Photo Illustration Overlay Poster代表图"></a><br>
+<strong>Photo Illustration Overlay Poster</strong><br>
+<a href="styles/photo-illustration-overlay-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/pink-anime-motorcycle-spec-poster-style/README.md"><img src="styles/pink-anime-motorcycle-spec-poster-style/preview-16x9.jpg" width="230" alt="Pink Anime Motorcycle Spec Poster Style代表图"></a><br>
+<strong>Pink Anime Motorcycle Spec Poster Style</strong><br>
+<a href="styles/pink-anime-motorcycle-spec-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/playful-marker-grounding-poster-style/README.md"><img src="styles/playful-marker-grounding-poster-style/preview-16x9.jpg" width="230" alt="Playful Marker Grounding Poster Style代表图"></a><br>
+<strong>Playful Marker Grounding Poster Style</strong><br>
+<a href="styles/playful-marker-grounding-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/playful-mascot-doodle-snapshot-style/README.md"><img src="styles/playful-mascot-doodle-snapshot-style/preview-16x9.jpg" width="230" alt="Playful Mascot Doodle Snapshot Style代表图"></a><br>
+<strong>Playful Mascot Doodle Snapshot Style</strong><br>
+<a href="styles/playful-mascot-doodle-snapshot-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/plush-city-festival-mobile-poster-style/README.md"><img src="styles/plush-city-festival-mobile-poster-style/preview-16x9.jpg" width="230" alt="Plush City Festival Mobile Poster代表图"></a><br>
+<strong>Plush City Festival Mobile Poster</strong><br>
+<a href="styles/plush-city-festival-mobile-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/plush-comic-toy-product-poster-style/README.md"><img src="styles/plush-comic-toy-product-poster-style/preview-16x9.jpg" width="230" alt="Plush Comic Toy Product Poster Style代表图"></a><br>
+<strong>Plush Comic Toy Product Poster Style</strong><br>
+<a href="styles/plush-comic-toy-product-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/pop-bubble-letter-photo-poster-style/README.md"><img src="styles/pop-bubble-letter-photo-poster-style/preview-16x9.jpg" width="230" alt="Pop Bubble Letter Photo Poster Style代表图"></a><br>
+<strong>Pop Bubble Letter Photo Poster Style</strong><br>
+<a href="styles/pop-bubble-letter-photo-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/prismatic-glass-animal-weekend-editorial/README.md"><img src="styles/prismatic-glass-animal-weekend-editorial/preview-16x9.jpg" width="230" alt="Prismatic Glass Animal Weekend Editorial代表图"></a><br>
+<strong>Prismatic Glass Animal Weekend Editorial</strong><br>
+<a href="styles/prismatic-glass-animal-weekend-editorial/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/quiet-luxury-furniture-nameplate-poster-style/README.md"><img src="styles/quiet-luxury-furniture-nameplate-poster-style/preview-16x9.jpg" width="230" alt="Quiet Luxury Furniture Nameplate Poster Style代表图"></a><br>
+<strong>Quiet Luxury Furniture Nameplate Poster Style</strong><br>
+<a href="styles/quiet-luxury-furniture-nameplate-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/red-black-manga-tabloid-poster-style/README.md"><img src="styles/red-black-manga-tabloid-poster-style/preview-16x9.jpg" width="230" alt="Red Black Manga Tabloid Poster Style代表图"></a><br>
+<strong>Red Black Manga Tabloid Poster Style</strong><br>
+<a href="styles/red-black-manga-tabloid-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/red-yellow-grunge-skate-cover-style/README.md"><img src="styles/red-yellow-grunge-skate-cover-style/preview-16x9.jpg" width="230" alt="Red Yellow Grunge Skate Cover Style代表图"></a><br>
+<strong>Red Yellow Grunge Skate Cover Style</strong><br>
+<a href="styles/red-yellow-grunge-skate-cover-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/red-yellow-product-trophy-collage-style/README.md"><img src="styles/red-yellow-product-trophy-collage-style/preview-16x9.jpg" width="230" alt="Red Yellow Product Trophy Collage Style代表图"></a><br>
+<strong>Red Yellow Product Trophy Collage Style</strong><br>
+<a href="styles/red-yellow-product-trophy-collage-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/retro-future-chrome-portrait-dossier/README.md"><img src="styles/retro-future-chrome-portrait-dossier/preview-16x9.jpg" width="230" alt="Retro Future Chrome Portrait Dossier代表图"></a><br>
+<strong>Retro Future Chrome Portrait Dossier</strong><br>
+<a href="styles/retro-future-chrome-portrait-dossier/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/rough-animation-pet-sketch-storyboard-style/README.md"><img src="styles/rough-animation-pet-sketch-storyboard-style/preview-16x9.jpg" width="230" alt="Rough Animation Pet Sketch Storyboard Style代表图"></a><br>
+<strong>Rough Animation Pet Sketch Storyboard Style</strong><br>
+<a href="styles/rough-animation-pet-sketch-storyboard-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/rough-ink-music-doodle-poster-style/README.md"><img src="styles/rough-ink-music-doodle-poster-style/preview-16x9.jpg" width="230" alt="Rough Ink Music Doodle Poster Style代表图"></a><br>
+<strong>Rough Ink Music Doodle Poster Style</strong><br>
+<a href="styles/rough-ink-music-doodle-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/rough-marker-monster-poster-style/README.md"><img src="styles/rough-marker-monster-poster-style/preview-16x9.jpg" width="230" alt="Rough Marker Monster Poster Style代表图"></a><br>
+<strong>Rough Marker Monster Poster Style</strong><br>
+<a href="styles/rough-marker-monster-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/scarlet-block-cutout-doodle-book-cover-style/README.md"><img src="styles/scarlet-block-cutout-doodle-book-cover-style/preview-16x9.jpg" width="230" alt="Scarlet Block Cutout Doodle Book Cover Style代表图"></a><br>
+<strong>Scarlet Block Cutout Doodle Book Cover Style</strong><br>
+<a href="styles/scarlet-block-cutout-doodle-book-cover-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/scarlet-court-photo-type-poster-style/README.md"><img src="styles/scarlet-court-photo-type-poster-style/preview-16x9.jpg" width="230" alt="Scarlet Court Photo Type Poster代表图"></a><br>
+<strong>Scarlet Court Photo Type Poster</strong><br>
+<a href="styles/scarlet-court-photo-type-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/scarlet-megatype-action-collage-style/README.md"><img src="styles/scarlet-megatype-action-collage-style/preview-16x9.jpg" width="230" alt="Scarlet Megatype Action Collage Style代表图"></a><br>
+<strong>Scarlet Megatype Action Collage Style</strong><br>
+<a href="styles/scarlet-megatype-action-collage-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/school-grid-paper-cutout-poster/README.md"><img src="styles/school-grid-paper-cutout-poster/preview-16x9.jpg" width="230" alt="School Grid Paper Cutout Poster代表图"></a><br>
+<strong>School Grid Paper Cutout Poster</strong><br>
+<a href="styles/school-grid-paper-cutout-poster/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sky-blue-home-life-doodle-poster-style/README.md"><img src="styles/sky-blue-home-life-doodle-poster-style/preview-16x9.jpg" width="230" alt="Sky Blue Home Life Doodle Poster Style代表图"></a><br>
+<strong>Sky Blue Home Life Doodle Poster Style</strong><br>
+<a href="styles/sky-blue-home-life-doodle-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/sky-blue-lucky-tag-doodle-poster-style/README.md"><img src="styles/sky-blue-lucky-tag-doodle-poster-style/preview-16x9.jpg" width="230" alt="Sky Blue Lucky Tag Doodle Poster Style代表图"></a><br>
+<strong>Sky Blue Lucky Tag Doodle Poster Style</strong><br>
+<a href="styles/sky-blue-lucky-tag-doodle-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/soft-analog-future-editorial-poster-style/README.md"><img src="styles/soft-analog-future-editorial-poster-style/preview-16x9.jpg" width="230" alt="Soft Analog Future Editorial Poster代表图"></a><br>
+<strong>Soft Analog Future Editorial Poster</strong><br>
+<a href="styles/soft-analog-future-editorial-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/subway-doodle-photo-hybrid-style/README.md"><img src="styles/subway-doodle-photo-hybrid-style/preview-16x9.jpg" width="230" alt="Subway Doodle Photo Hybrid代表图"></a><br>
+<strong>Subway Doodle Photo Hybrid</strong><br>
+<a href="styles/subway-doodle-photo-hybrid-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/sun-faded-scenic-editorial-poster/README.md"><img src="styles/sun-faded-scenic-editorial-poster/preview-16x9.jpg" width="230" alt="Sun-Faded Scenic Editorial Poster代表图"></a><br>
+<strong>Sun-Faded Scenic Editorial Poster</strong><br>
+<a href="styles/sun-faded-scenic-editorial-poster/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunburst-fisheye-bubble-type-poster-style/README.md"><img src="styles/sunburst-fisheye-bubble-type-poster-style/preview-16x9.jpg" width="230" alt="Sunburst Fisheye Bubble Type Poster Style代表图"></a><br>
+<strong>Sunburst Fisheye Bubble Type Poster Style</strong><br>
+<a href="styles/sunburst-fisheye-bubble-type-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunlit-architectural-fashion-editorial/README.md"><img src="styles/sunlit-architectural-fashion-editorial/preview-16x9.jpg" width="230" alt="Sunlit Architectural Fashion Editorial代表图"></a><br>
+<strong>Sunlit Architectural Fashion Editorial</strong><br>
+<a href="styles/sunlit-architectural-fashion-editorial/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunlit-coastal-product-blitz/README.md"><img src="styles/sunlit-coastal-product-blitz/preview-16x9.jpg" width="230" alt="Sunlit Coastal Product Blitz代表图"></a><br>
+<strong>Sunlit Coastal Product Blitz</strong><br>
+<a href="styles/sunlit-coastal-product-blitz/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunlit-kinetic-block-type-photo-poster-style/README.md"><img src="styles/sunlit-kinetic-block-type-photo-poster-style/preview-16x9.jpg" width="230" alt="Sunlit Kinetic Block Type Photo Poster代表图"></a><br>
+<strong>Sunlit Kinetic Block Type Photo Poster</strong><br>
+<a href="styles/sunlit-kinetic-block-type-photo-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunlit-supermodel-nameplate-editorial/README.md"><img src="styles/sunlit-supermodel-nameplate-editorial/preview-16x9.jpg" width="230" alt="Sunlit Supermodel Nameplate Editorial代表图"></a><br>
+<strong>Sunlit Supermodel Nameplate Editorial</strong><br>
+<a href="styles/sunlit-supermodel-nameplate-editorial/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/sunny-3d-avatar-campaign-style/README.md"><img src="styles/sunny-3d-avatar-campaign-style/preview-16x9.jpg" width="230" alt="Sunny 3D Avatar Campaign Style代表图"></a><br>
+<strong>Sunny 3D Avatar Campaign Style</strong><br>
+<a href="styles/sunny-3d-avatar-campaign-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/surreal-fish-doodle-landmark-photo-collage-style/README.md"><img src="styles/surreal-fish-doodle-landmark-photo-collage-style/preview-16x9.jpg" width="230" alt="Surreal Fish Doodle Landmark Photo Collage Style代表图"></a><br>
+<strong>Surreal Fish Doodle Landmark Photo Collage Style</strong><br>
+<a href="styles/surreal-fish-doodle-landmark-photo-collage-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/surreal-megatype-dossier-collage/README.md"><img src="styles/surreal-megatype-dossier-collage/preview-16x9.jpg" width="230" alt="Surreal Megatype Dossier Collage代表图"></a><br>
+<strong>Surreal Megatype Dossier Collage</strong><br>
+<a href="styles/surreal-megatype-dossier-collage/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/teenage-skate-scribble-screenprint-poster-style/README.md"><img src="styles/teenage-skate-scribble-screenprint-poster-style/preview-16x9.jpg" width="230" alt="Teenage Skate Scribble Screenprint Poster Style代表图"></a><br>
+<strong>Teenage Skate Scribble Screenprint Poster Style</strong><br>
+<a href="styles/teenage-skate-scribble-screenprint-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/tokyo-kawaii-travel-collage-poster-style/README.md"><img src="styles/tokyo-kawaii-travel-collage-poster-style/preview-16x9.jpg" width="230" alt="Tokyo Kawaii Travel Collage Poster代表图"></a><br>
+<strong>Tokyo Kawaii Travel Collage Poster</strong><br>
+<a href="styles/tokyo-kawaii-travel-collage-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/tri-color-hardcut-portrait-poster-style/README.md"><img src="styles/tri-color-hardcut-portrait-poster-style/preview-16x9.jpg" width="230" alt="Tri Color Hardcut Portrait Poster Style代表图"></a><br>
+<strong>Tri Color Hardcut Portrait Poster Style</strong><br>
+<a href="styles/tri-color-hardcut-portrait-poster-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/turquoise-red-techno-manga-poster-style/README.md"><img src="styles/turquoise-red-techno-manga-poster-style/preview-16x9.jpg" width="230" alt="Turquoise Red Techno Manga Poster Style代表图"></a><br>
+<strong>Turquoise Red Techno Manga Poster Style</strong><br>
+<a href="styles/turquoise-red-techno-manga-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/urban-photo-ink-beast-collage-style/README.md"><img src="styles/urban-photo-ink-beast-collage-style/preview-16x9.jpg" width="230" alt="Urban Photo Ink Beast Collage Style代表图"></a><br>
+<strong>Urban Photo Ink Beast Collage Style</strong><br>
+<a href="styles/urban-photo-ink-beast-collage-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/urban-transit-doodle-diary-style/README.md"><img src="styles/urban-transit-doodle-diary-style/preview-16x9.jpg" width="230" alt="Urban Transit Doodle Diary Style代表图"></a><br>
+<strong>Urban Transit Doodle Diary Style</strong><br>
+<a href="styles/urban-transit-doodle-diary-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/vermilion-photocopy-tension-editorial/README.md"><img src="styles/vermilion-photocopy-tension-editorial/preview-16x9.jpg" width="230" alt="Vermilion Photocopy Tension Editorial代表图"></a><br>
+<strong>Vermilion Photocopy Tension Editorial</strong><br>
+<a href="styles/vermilion-photocopy-tension-editorial/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/warm-fisheye-product-impact-ad-style/README.md"><img src="styles/warm-fisheye-product-impact-ad-style/preview-16x9.jpg" width="230" alt="Warm Fisheye Product Impact Ad Style代表图"></a><br>
+<strong>Warm Fisheye Product Impact Ad Style</strong><br>
+<a href="styles/warm-fisheye-product-impact-ad-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/xerox-neon-editorial-collage-style/README.md"><img src="styles/xerox-neon-editorial-collage-style/preview-16x9.jpg" width="230" alt="Xerox Neon Editorial Collage代表图"></a><br>
+<strong>Xerox Neon Editorial Collage</strong><br>
+<a href="styles/xerox-neon-editorial-collage-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/y2k-grunge-hiphop-cutout-poster-style/README.md"><img src="styles/y2k-grunge-hiphop-cutout-poster-style/preview-16x9.jpg" width="230" alt="Y2K Grunge Hip-Hop Cutout Poster Style代表图"></a><br>
+<strong>Y2K Grunge Hip-Hop Cutout Poster Style</strong><br>
+<a href="styles/y2k-grunge-hiphop-cutout-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/y2k-mirror-ui-scribble-collage-style/README.md"><img src="styles/y2k-mirror-ui-scribble-collage-style/preview-16x9.jpg" width="230" alt="Y2K Mirror UI Scribble Collage Style代表图"></a><br>
+<strong>Y2K Mirror UI Scribble Collage Style</strong><br>
+<a href="styles/y2k-mirror-ui-scribble-collage-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/y2k-streetwear-sticker-collage-style/README.md"><img src="styles/y2k-streetwear-sticker-collage-style/preview-16x9.jpg" width="230" alt="Y2K Streetwear Sticker Collage Style代表图"></a><br>
+<strong>Y2K Streetwear Sticker Collage Style</strong><br>
+<a href="styles/y2k-streetwear-sticker-collage-style/README.md">打开 README</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<a href="styles/yellow-black-manga-food-zine-ad-style/README.md"><img src="styles/yellow-black-manga-food-zine-ad-style/preview-16x9.jpg" width="230" alt="Yellow Black Manga Food Zine Ad Style代表图"></a><br>
+<strong>Yellow Black Manga Food Zine Ad Style</strong><br>
+<a href="styles/yellow-black-manga-food-zine-ad-style/README.md">打开 README</a>
+</td>
+<td width="33%" valign="top" align="center">
+<a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.md"><img src="styles/yellow-graffiti-fisheye-manga-street-poster-style/preview-16x9.jpg" width="230" alt="Yellow Graffiti Fisheye Manga Street Poster Style代表图"></a><br>
+<strong>Yellow Graffiti Fisheye Manga Street Poster Style</strong><br>
+<a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.md">打开 README</a>
+</td>
+<td width="33%"></td>
+</tr>
+</table>
+
+[打开独立预设目录](styles/)
 
 ## 交叉风格功能
 
@@ -224,9 +852,9 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-gauguin/README.md"><img src="style-packages/composites/rpg-maker-x-gauguin/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Foreground + Gauguin Background example"></a><br><strong>像素前景 + 高更背景</strong></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-turner/README.md"><img src="style-packages/composites/rpg-maker-x-turner/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere example"></a><br><strong>日系 RPG 像素 + 透纳天空</strong></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/composites/vermeer-x-monet/README.md"><img src="style-packages/composites/vermeer-x-monet/examples/generated/anonymous-v1.png" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>维米尔光线 + 莫奈色彩</strong></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-gauguin/README.md"><img src="style-packages/composites/rpg-maker-x-gauguin/gallery-16x9.jpg" width="230" alt="RPG Maker Foreground + Gauguin Background example"></a><br><strong>像素前景 + 高更背景</strong></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-turner/README.md"><img src="style-packages/composites/rpg-maker-x-turner/gallery-16x9.jpg" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere example"></a><br><strong>日系 RPG 像素 + 透纳天空</strong></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/composites/vermeer-x-monet/README.md"><img src="style-packages/composites/vermeer-x-monet/gallery-16x9.jpg" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>维米尔光线 + 莫奈色彩</strong></td>
 </tr>
 </table>
 
