@@ -1,0 +1,16 @@
+id: hi-fi-rush-rhythm-comic
+name: 节奏漫画卡通渲染游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以厚重轮廓、平面高饱和色、工业舞台、重复节拍形状和夸张动作组织轻快的漫画式三维游戏画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

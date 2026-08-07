@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 对角线、圆形平台和重复机械结构制造节拍
+- 动作主体有夸张但清楚的重心
+- 前景道具形成漫画式框景
+- 深蓝、明黄、正红、黑和少量冷白组成纯净色组
+- 颜色以平面块出现
+- 高亮色用于结构和动作焦点
+- 三维模型结合卡通渲染
+- 厚重但干净的轮廓线
+- 局部手绘图形标记
+- 主光清楚且不产生写实复杂反射
+- 阴影呈图形化分区
+- 彩色光只在局部设备或屏幕附近
+- 金属、橡胶、涂漆和混凝土有清晰但简化的区别
+- 避免塑料感全局统一
+- 纹理稀疏且服从图形设计
+- 重复结构具有节奏而非复制粘贴
+- 轮廓、色块和动作优先
+- 画面可读而不依赖文字
+- 不得复制具体角色、乐器、标志或舞台
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.
