@@ -1,0 +1,15 @@
+medium: hand-painted 2D luminous forest game illustration
+materials:
+- 透明色层
+- 手绘树皮和叶片笔触
+- 柔和空气雾
+- 局部发光色面
+- 水面反射
+process:
+- 先确定平台路径和大根系
+- 再建立深色前景和明亮远景
+- 加入少量发光植物
+- 最后以空气层和边缘控制景深
+technical_direction: 保持手绘二维层次与空间可玩性；避免写实照片、硬质三维塑料和无来源强光晕。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

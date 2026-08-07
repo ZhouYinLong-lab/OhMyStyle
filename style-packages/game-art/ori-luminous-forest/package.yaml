@@ -1,0 +1,16 @@
+id: ori-luminous-forest
+name: 荧光森林手绘游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以手绘二维森林、流动根系、发光叶片、柔和空气层和清晰小型主体组织梦幻但可游玩的平台冒险空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,23 @@
+canonical_name: 荧光森林手绘游戏美术
+entity_type: luminous_hand_painted_game_art_direction
+origin: luminous_hand_painted_platform_game_art
+period: 2020s
+domain: game_art
+scope:
+  use_cases:
+  - forest_stream
+  - giant_root
+  - glowing_cave
+  - moonlit_platform
+  exclusions:
+  - named_spirit_character
+  - photorealistic_forest
+  - hard_plastic_3d
+  - excessive_bloom
+  - copied_world_layout
+sources:
+- https://www.orithegame.com/
+rendering:
+  model: hand-painted 2D luminous forest game illustration
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
