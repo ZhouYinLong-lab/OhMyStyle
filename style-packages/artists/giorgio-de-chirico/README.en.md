@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Giorgio de Chirico representative](gallery-16x9.svg)
+![Giorgio de Chirico representative](gallery-16x9.jpg)
 
 > **Category:** artist
 > **Domain:** painting
