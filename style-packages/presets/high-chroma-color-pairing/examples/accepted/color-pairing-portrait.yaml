@@ -1,0 +1,8 @@
+asset: color-pairing-portrait.png
+status: accepted_by_user
+source: user-provided approved conversation asset
+prompt_mode: subject_neutral_high_chroma_color_pairing
+subject: half-length fashion portrait with a saturated blue top against a saturated orange background
+aspect_ratio: 4:5
+dimensions: 1122x1402
+review: explicitly approved for package README display

@@ -18,6 +18,14 @@ A subject-neutral color-direction preset built from decisive high-chroma pairing
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rules.
 
+## Full Generated Example
+
+The example below preserves the complete portrait image and is not cropped like the horizontal gallery thumbnail. The `gallery-16x9.jpg` image above is only used for category-gallery display; this image shows the full color relationship between the person, clothing, and background.
+
+<p align="center">
+  <img src="examples/accepted/color-pairing-portrait.png" width="560" alt="High-Chroma Color Pairing full portrait example">
+</p>
+
 ## Reference sources
 
 - [https://www.bilibili.com/video/BV1acjF68E6N/?spm_id_from=333.1387.favlist.content.click&vd_source=dc8a446ed48dbc0e71281a3db9654692](https://www.bilibili.com/video/BV1acjF68E6N/?spm_id_from=333.1387.favlist.content.click&vd_source=dc8a446ed48dbc0e71281a3db9654692)
