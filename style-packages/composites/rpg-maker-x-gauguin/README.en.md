@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-![RPG Maker Foreground + Gauguin Background example](gallery-16x9.jpg)
+![RPG Maker Foreground + Gauguin Background example](examples/generated/anonymous-v1.png)
 
 ## What this is
 

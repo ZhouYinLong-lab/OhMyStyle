@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-![角色扮演游戏像素美术 + Turner Atmosphere 示例](gallery-16x9.jpg)
+![角色扮演游戏像素美术 + Turner Atmosphere 示例](examples/generated/anonymous-v1.png)
 
 ## 这是什么
 

@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-![RPG Maker Pixel Art + Turner Atmosphere example](gallery-16x9.jpg)
+![RPG Maker Pixel Art + Turner Atmosphere example](examples/generated/anonymous-v1.png)
 
 ## What this is
 
