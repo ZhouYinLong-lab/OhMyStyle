@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Agnes Martin representative](gallery-16x9.svg)
+![Agnes Martin representative](gallery-16x9.jpg)
 
 > **Category:** artist
 > **Domain:** painting
