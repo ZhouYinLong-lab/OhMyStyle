@@ -1,0 +1,31 @@
+{
+  "name": "elden-ring-dark-fantasy",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "charcoal",
+      "hex": "#202933",
+      "role": "deep_rock"
+    },
+    {
+      "name": "slate",
+      "hex": "#566875",
+      "role": "mist_and_stone"
+    },
+    {
+      "name": "deadgold",
+      "hex": "#A88D52",
+      "role": "sparse_vegetation"
+    },
+    {
+      "name": "umber",
+      "hex": "#56463B",
+      "role": "earth_and_metal"
+    },
+    {
+      "name": "ember",
+      "hex": "#C37B3F",
+      "role": "distant_fire"
+    }
+  ]
+}

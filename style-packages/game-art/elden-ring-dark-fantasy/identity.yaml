@@ -1,0 +1,23 @@
+canonical_name: 暗黑神话幻想游戏美术
+entity_type: dark_fantasy_game_art_direction
+origin: dark_mythic_fantasy_environment_design
+period: 2020s
+domain: game_art
+scope:
+  use_cases:
+  - ruined_bridge
+  - ancient_citadel
+  - misty_valley
+  - sacred_tree
+  exclusions:
+  - copied_boss
+  - recognizable_weapon
+  - gore
+  - generic_high_fantasy_gloss
+  - excessive_particles
+sources:
+- https://www.bandainamcoent.com/games/elden-ring
+rendering:
+  model: dark mythic 3D fantasy environment with painterly atmosphere
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
