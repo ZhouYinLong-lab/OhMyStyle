@@ -1,0 +1,31 @@
+{
+  "name": "cyberpunk-night-city",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "midnight",
+      "hex": "#101A24",
+      "role": "deep_city"
+    },
+    {
+      "name": "cyan",
+      "hex": "#28A6B8",
+      "role": "local_cool_light"
+    },
+    {
+      "name": "magenta",
+      "hex": "#B23A76",
+      "role": "local_warm_light"
+    },
+    {
+      "name": "amber",
+      "hex": "#D78B3B",
+      "role": "practical_light"
+    },
+    {
+      "name": "steel",
+      "hex": "#60747B",
+      "role": "wet_neutral"
+    }
+  ]
+}

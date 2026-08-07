@@ -1,0 +1,15 @@
+medium: cinematic 3D cybercity environment with physically motivated local lighting
+materials:
+- 湿混凝土
+- 旧金属
+- 玻璃反射
+- 塑料和涂层
+- 雨水与薄雾
+process:
+- 先建立建筑密度和街道层级
+- 再放置少量彩色光源
+- 用湿地面连接光与空间
+- 最后削减无来源的发光元素
+technical_direction: 保持透视和材质真实；避免可读文字、品牌标志、过度镜头光晕和全局青橙。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.
