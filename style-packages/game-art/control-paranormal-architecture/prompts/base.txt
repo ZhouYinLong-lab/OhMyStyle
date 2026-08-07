@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 强透视走廊、门框和天井建立秩序
+- 异常只改变一个空间关系
+- 小人物或普通物件用于测量尺度
+- 混凝土灰、暗木棕、深黑、机构红和荧光白组成严格色组
+- 红色是局部标记而非全局滤镜
+- 异常可有微弱冷色但不发光泛滥
+- 写实三维建筑
+- 图形化构图和克制超现实
+- 材质细节服从空间几何
+- 荧光灯和侧向机构光形成硬朗明暗
+- 红色表面有有限反射
+- 深处保持可读而不纯黑
+- 浇筑混凝土、深色木材、金属文件柜和红色织物可区分
+- 表面老化有规律
+- 纹理集中在近景边缘和材料接缝
+- 墙面不覆盖随机脏污
+- 空间秩序先于异常
+- 异常必须局部、清楚、可描述
+- 不得复制具体机构标志和关卡结构
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.
