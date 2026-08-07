@@ -245,7 +245,7 @@ packages:
       technical: "保持远近层次；不要让发光、景深和颗粒遮蔽主体结构。"
     palette: [{name: deep_teal, hex: "#264C52", role: forest_depth}, {name: violet, hex: "#655A7C", role: shadow_atmosphere}, {name: amber, hex: "#D9A45C", role: magic_light}, {name: cream, hex: "#EDE1B8", role: luminous_detail}, {name: moss, hex: "#6E8764", role: foliage}]
   - id: stylized-pbr-sci-fi-game-art
-    name: 风格化PBR科幻游戏美术
+    name: 风格化物理渲染科幻游戏美术
     name_en: Stylized PBR Science-Fiction Game Art
     kind: game_art
     domain: game_art
