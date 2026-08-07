@@ -23,7 +23,7 @@
 
 约束见 `composite.yaml`。生成示例：
 
-![交叉风格示例](gallery-16x9.jpg)
+<img src="examples/generated/anonymous-v1.png" width="420" alt="交叉风格示例">
 
 ## 只使用此包
 
