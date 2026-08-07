@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Silhouette Light-and-Shadow Platformer Game Art representative](gallery-16x9.svg)
+![Silhouette Light-and-Shadow Platformer Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

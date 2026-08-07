@@ -80,6 +80,31 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%"></td>
 <td width="33%"></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cel-shaded-nature-game-art/README.md"><img src="style-packages/game-art/cel-shaded-nature-game-art/gallery-16x9.jpg" width="230" alt="卡通渲染自然冒险游戏美术代表图"></a><br><strong>卡通渲染自然冒险游戏美术</strong><br><a href="style-packages/game-art/cel-shaded-nature-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-inked-animation-game-art/README.md"><img src="style-packages/game-art/hand-inked-animation-game-art/gallery-16x9.jpg" width="230" alt="手绘墨线动画游戏美术代表图"></a><br><strong>手绘墨线动画游戏美术</strong><br><a href="style-packages/game-art/hand-inked-animation-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/watercolor-storybook-game-art/README.md"><img src="style-packages/game-art/watercolor-storybook-game-art/gallery-16x9.jpg" width="230" alt="水彩绘本冒险游戏美术代表图"></a><br><strong>水彩绘本冒险游戏美术</strong><br><a href="style-packages/game-art/watercolor-storybook-game-art/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/papercraft-diorama-game-art/README.md"><img src="style-packages/game-art/papercraft-diorama-game-art/gallery-16x9.jpg" width="230" alt="纸艺立体书游戏美术代表图"></a><br><strong>纸艺立体书游戏美术</strong><br><a href="style-packages/game-art/papercraft-diorama-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/voxel-world-game-art/README.md"><img src="style-packages/game-art/voxel-world-game-art/gallery-16x9.jpg" width="230" alt="体素世界游戏美术代表图"></a><br><strong>体素世界游戏美术</strong><br><a href="style-packages/game-art/voxel-world-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stylized-low-poly-world/README.md"><img src="style-packages/game-art/stylized-low-poly-world/gallery-16x9.jpg" width="230" alt="风格化低多边形世界游戏美术代表图"></a><br><strong>风格化低多边形世界游戏美术</strong><br><a href="style-packages/game-art/stylized-low-poly-world/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/impossible-architecture-game-art/README.md"><img src="style-packages/game-art/impossible-architecture-game-art/gallery-16x9.jpg" width="230" alt="等距幻觉建筑游戏美术代表图"></a><br><strong>等距幻觉建筑游戏美术</strong><br><a href="style-packages/game-art/impossible-architecture-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/comic-halftone-game-art/README.md"><img src="style-packages/game-art/comic-halftone-game-art/gallery-16x9.jpg" width="230" alt="漫画网点叙事游戏美术代表图"></a><br><strong>漫画网点叙事游戏美术</strong><br><a href="style-packages/game-art/comic-halftone-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/painterly-3d-fantasy-game-art/README.md"><img src="style-packages/game-art/painterly-3d-fantasy-game-art/gallery-16x9.jpg" width="230" alt="手绘质感三维幻想游戏美术代表图"></a><br><strong>手绘质感三维幻想游戏美术</strong><br><a href="style-packages/game-art/painterly-3d-fantasy-game-art/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.md"><img src="style-packages/game-art/stylized-pbr-sci-fi-game-art/gallery-16x9.jpg" width="230" alt="风格化物理渲染科幻游戏美术代表图"></a><br><strong>风格化物理渲染科幻游戏美术</strong><br><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/flat-design-puzzle-game-art/README.md"><img src="style-packages/game-art/flat-design-puzzle-game-art/gallery-16x9.jpg" width="230" alt="平面设计解谜游戏美术代表图"></a><br><strong>平面设计解谜游戏美术</strong><br><a href="style-packages/game-art/flat-design-puzzle-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/miniature-diorama-game-art/README.md"><img src="style-packages/game-art/miniature-diorama-game-art/gallery-16x9.jpg" width="230" alt="微缩模型场景游戏美术代表图"></a><br><strong>微缩模型场景游戏美术</strong><br><a href="style-packages/game-art/miniature-diorama-game-art/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/silhouette-platformer-game-art/README.md"><img src="style-packages/game-art/silhouette-platformer-game-art/gallery-16x9.jpg" width="230" alt="剪影光影平台游戏美术代表图"></a><br><strong>剪影光影平台游戏美术</strong><br><a href="style-packages/game-art/silhouette-platformer-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/neon-noir-3d-game-art/README.md"><img src="style-packages/game-art/neon-noir-3d-game-art/gallery-16x9.jpg" width="230" alt="霓虹黑色三维游戏美术代表图"></a><br><strong>霓虹黑色三维游戏美术</strong><br><a href="style-packages/game-art/neon-noir-3d-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stop-motion-clay-game-art/README.md"><img src="style-packages/game-art/stop-motion-clay-game-art/gallery-16x9.jpg" width="230" alt="黏土定格游戏美术代表图"></a><br><strong>黏土定格游戏美术</strong><br><a href="style-packages/game-art/stop-motion-clay-game-art/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 艺术流派与历史时期
