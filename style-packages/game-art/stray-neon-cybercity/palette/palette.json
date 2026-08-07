@@ -1,0 +1,31 @@
+{
+  "name": "stray-neon-cybercity",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "wetteal",
+      "hex": "#1C6268",
+      "role": "cool_wet_surface"
+    },
+    {
+      "name": "plum",
+      "hex": "#4A2C55",
+      "role": "distant_light"
+    },
+    {
+      "name": "rust",
+      "hex": "#9B4B3F",
+      "role": "worn_structure"
+    },
+    {
+      "name": "amber",
+      "hex": "#C58A43",
+      "role": "window_light"
+    },
+    {
+      "name": "brown",
+      "hex": "#2B2626",
+      "role": "deep_alley"
+    }
+  ]
+}
