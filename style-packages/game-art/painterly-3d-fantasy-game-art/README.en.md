@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Painterly 3D Fantasy Game Art representative](gallery-16x9.svg)
+![Painterly 3D Fantasy Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art
