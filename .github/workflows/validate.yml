@@ -73,10 +73,10 @@ jobs:
             if [ ! -f "$d/style.json" ]; then
               continue
             fi
-            # README.md is the package entry point; the legacy validator still
-            # requires the original three public assets below.
+            # Both bilingual README files are package documentation; the legacy
+            # validator still requires the original three public assets below.
             files=$(find "$d" -maxdepth 1 -type f -printf '%f\n' \
-              | grep -v -E '^(README\.md|\.DS_Store)$' \
+              | grep -v -E '^(README(\.en)?\.md|\.DS_Store)$' \
               | sort | tr '\n' ' ')
             if [ "$files" != "preview-16x9.jpg preview-9x16.jpg style.json " ]; then
               echo "::error::$d has unexpected contents: $files"

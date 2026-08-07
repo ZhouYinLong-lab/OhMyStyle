@@ -21,7 +21,7 @@ artifacts:
   rejected_examples: examples/rejected
 evidence:
   reference_backed: true
-  accepted_example: false
+  accepted_example: true
   rejected_examples_optional: true
 rights:
   reference_policy: Each reference manifest row governs source, license, attribution,
