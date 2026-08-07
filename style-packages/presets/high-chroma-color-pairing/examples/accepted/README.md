@@ -1,3 +1,3 @@
 # Accepted examples
 
-用于放置通过评估的匿名生成样例或人工创作样例。当前仅完成规则和调色板初始化，尚未上传生成图；加入图片前需要明确批准，并附带 `sample.yaml`、提示词、模型和许可说明。
+用于放置通过评估并获得明确批准的匿名生成样例或人工创作样例。当前样例为 `color-pairing-portrait.png`，其元数据见同目录下的 `color-pairing-portrait.yaml`。

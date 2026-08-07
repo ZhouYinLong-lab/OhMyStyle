@@ -18,6 +18,14 @@
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 
+## 完整生成示例
+
+下面的示例保留完整的竖版画面，不使用横版画廊缩略图的裁切方式。顶部的 `gallery-16x9.jpg` 仅用于分类画廊展示；这张图用于观察人物、服装与背景之间的完整撞色关系。
+
+<p align="center">
+  <img src="examples/accepted/color-pairing-portrait.png" width="560" alt="高纯度撞色完整竖版生成示例">
+</p>
+
 ## 参考来源
 
 - [https://www.bilibili.com/video/BV1acjF68E6N/?spm_id_from=333.1387.favlist.content.click&vd_source=dc8a446ed48dbc0e71281a3db9654692](https://www.bilibili.com/video/BV1acjF68E6N/?spm_id_from=333.1387.favlist.content.click&vd_source=dc8a446ed48dbc0e71281a3db9654692)

@@ -1619,14 +1619,14 @@ packages:
   kind: preset
   domain: hybrid
   package_path: style-packages/presets/high-chroma-color-pairing
-  maturity: L2
+  maturity: L3
   focus_dimensions:
   - composition
   - lighting
   - palette
   - surface
   reference_count: 13
-  accepted_example_count: 0
+  accepted_example_count: 1
   rejected_example_count: 0
   benchmark: false
 - resource_id: monochrome-silver-gelatin
