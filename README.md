@@ -60,6 +60,21 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/leonardo-da-vinci/README.md"><img src="style-packages/artists/leonardo-da-vinci/gallery-16x9.jpg" width="230" alt="莱昂纳多·达·芬奇代表图"></a><br><strong>莱昂纳多·达·芬奇</strong><br><a href="style-packages/artists/leonardo-da-vinci/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/diego-velazquez/README.md"><img src="style-packages/artists/diego-velazquez/gallery-16x9.jpg" width="230" alt="迭戈·委拉斯开兹代表图"></a><br><strong>迭戈·委拉斯开兹</strong><br><a href="style-packages/artists/diego-velazquez/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/hilma-af-klint/README.md"><img src="style-packages/artists/hilma-af-klint/gallery-16x9.jpg" width="230" alt="希尔玛·艾夫·克林特代表图"></a><br><strong>希尔玛·艾夫·克林特</strong><br><a href="style-packages/artists/hilma-af-klint/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/leonora-carrington/README.md"><img src="style-packages/artists/leonora-carrington/gallery-16x9.jpg" width="230" alt="莱昂诺拉·卡林顿代表图"></a><br><strong>莱昂诺拉·卡林顿</strong><br><a href="style-packages/artists/leonora-carrington/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/tamara-de-lempicka/README.md"><img src="style-packages/artists/tamara-de-lempicka/gallery-16x9.jpg" width="230" alt="塔玛拉·德·兰佩卡代表图"></a><br><strong>塔玛拉·德·兰佩卡</strong><br><a href="style-packages/artists/tamara-de-lempicka/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-de-chirico/README.md"><img src="style-packages/artists/giorgio-de-chirico/gallery-16x9.jpg" width="230" alt="乔治·德·基里科代表图"></a><br><strong>乔治·德·基里科</strong><br><a href="style-packages/artists/giorgio-de-chirico/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/agnes-martin/README.md"><img src="style-packages/artists/agnes-martin/gallery-16x9.jpg" width="230" alt="艾格尼丝·马丁代表图"></a><br><strong>艾格尼丝·马丁</strong><br><a href="style-packages/artists/agnes-martin/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/edward-hopper/README.md"><img src="style-packages/artists/edward-hopper/gallery-16x9.jpg" width="230" alt="爱德华·霍普代表图"></a><br><strong>爱德华·霍普</strong><br><a href="style-packages/artists/edward-hopper/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/ivan-aivazovsky/README.md"><img src="style-packages/artists/ivan-aivazovsky/gallery-16x9.jpg" width="230" alt="伊万·艾瓦佐夫斯基代表图"></a><br><strong>伊万·艾瓦佐夫斯基</strong><br><a href="style-packages/artists/ivan-aivazovsky/README.md">打开 README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
+</tr>
 </table>
 
 ### 游戏美术
@@ -174,6 +189,11 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/alfred-stieglitz/README.md"><img src="style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg" width="230" alt="阿尔弗雷德·斯蒂格利茨代表图"></a><br><strong>阿尔弗雷德·斯蒂格利茨</strong><br><a href="style-packages/photographers/alfred-stieglitz/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/diane-arbus/README.md"><img src="style-packages/photographers/diane-arbus/gallery-16x9.jpg" width="230" alt="黛安·阿勃丝代表图"></a><br><strong>黛安·阿勃丝</strong><br><a href="style-packages/photographers/diane-arbus/README.md">打开 README</a></td>
 <td width="33%"></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/saul-leiter/README.md"><img src="style-packages/photographers/saul-leiter/gallery-16x9.jpg" width="230" alt="索尔·雷特代表图"></a><br><strong>索尔·雷特</strong><br><a href="style-packages/photographers/saul-leiter/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/vivian-maier/README.md"><img src="style-packages/photographers/vivian-maier/gallery-16x9.jpg" width="230" alt="维维安·迈尔代表图"></a><br><strong>维维安·迈尔</strong><br><a href="style-packages/photographers/vivian-maier/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/rinko-kawauchi/README.md"><img src="style-packages/photographers/rinko-kawauchi/gallery-16x9.jpg" width="230" alt="川内伦子代表图"></a><br><strong>川内伦子</strong><br><a href="style-packages/photographers/rinko-kawauchi/README.md">打开 README</a></td>
 </tr>
 </table>
 

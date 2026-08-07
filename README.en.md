@@ -60,6 +60,21 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/leonardo-da-vinci/README.en.md"><img src="style-packages/artists/leonardo-da-vinci/gallery-16x9.jpg" width="230" alt="Leonardo da Vinci representative image"></a><br><strong>Leonardo da Vinci</strong><br><a href="style-packages/artists/leonardo-da-vinci/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/diego-velazquez/README.en.md"><img src="style-packages/artists/diego-velazquez/gallery-16x9.jpg" width="230" alt="Diego Velázquez representative image"></a><br><strong>Diego Velázquez</strong><br><a href="style-packages/artists/diego-velazquez/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/hilma-af-klint/README.en.md"><img src="style-packages/artists/hilma-af-klint/gallery-16x9.jpg" width="230" alt="Hilma af Klint representative image"></a><br><strong>Hilma af Klint</strong><br><a href="style-packages/artists/hilma-af-klint/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/leonora-carrington/README.en.md"><img src="style-packages/artists/leonora-carrington/gallery-16x9.jpg" width="230" alt="Leonora Carrington representative image"></a><br><strong>Leonora Carrington</strong><br><a href="style-packages/artists/leonora-carrington/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/tamara-de-lempicka/README.en.md"><img src="style-packages/artists/tamara-de-lempicka/gallery-16x9.jpg" width="230" alt="Tamara de Lempicka representative image"></a><br><strong>Tamara de Lempicka</strong><br><a href="style-packages/artists/tamara-de-lempicka/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-de-chirico/README.en.md"><img src="style-packages/artists/giorgio-de-chirico/gallery-16x9.jpg" width="230" alt="Giorgio de Chirico representative image"></a><br><strong>Giorgio de Chirico</strong><br><a href="style-packages/artists/giorgio-de-chirico/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/agnes-martin/README.en.md"><img src="style-packages/artists/agnes-martin/gallery-16x9.jpg" width="230" alt="Agnes Martin representative image"></a><br><strong>Agnes Martin</strong><br><a href="style-packages/artists/agnes-martin/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/edward-hopper/README.en.md"><img src="style-packages/artists/edward-hopper/gallery-16x9.jpg" width="230" alt="Edward Hopper representative image"></a><br><strong>Edward Hopper</strong><br><a href="style-packages/artists/edward-hopper/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/ivan-aivazovsky/README.en.md"><img src="style-packages/artists/ivan-aivazovsky/gallery-16x9.jpg" width="230" alt="Ivan Aivazovsky representative image"></a><br><strong>Ivan Aivazovsky</strong><br><a href="style-packages/artists/ivan-aivazovsky/README.en.md">Open README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
+</tr>
 </table>
 
 ### Game art
@@ -174,6 +189,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/alfred-stieglitz/README.en.md"><img src="style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg" width="230" alt="Alfred Stieglitz representative image"></a><br><strong>Alfred Stieglitz</strong><br><a href="style-packages/photographers/alfred-stieglitz/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/diane-arbus/README.en.md"><img src="style-packages/photographers/diane-arbus/gallery-16x9.jpg" width="230" alt="Diane Arbus representative image"></a><br><strong>Diane Arbus</strong><br><a href="style-packages/photographers/diane-arbus/README.en.md">Open README</a></td>
 <td width="33%"></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/saul-leiter/README.en.md"><img src="style-packages/photographers/saul-leiter/gallery-16x9.jpg" width="230" alt="Saul Leiter representative image"></a><br><strong>Saul Leiter</strong><br><a href="style-packages/photographers/saul-leiter/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/vivian-maier/README.en.md"><img src="style-packages/photographers/vivian-maier/gallery-16x9.jpg" width="230" alt="Vivian Maier representative image"></a><br><strong>Vivian Maier</strong><br><a href="style-packages/photographers/vivian-maier/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/rinko-kawauchi/README.en.md"><img src="style-packages/photographers/rinko-kawauchi/gallery-16x9.jpg" width="230" alt="Rinko Kawauchi representative image"></a><br><strong>Rinko Kawauchi</strong><br><a href="style-packages/photographers/rinko-kawauchi/README.en.md">Open README</a></td>
 </tr>
 </table>
 
