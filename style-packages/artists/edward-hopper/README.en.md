@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Edward Hopper representative](gallery-16x9.svg)
+![Edward Hopper representative](gallery-16x9.jpg)
 
 > **Category:** artist
 > **Domain:** painting

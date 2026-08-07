@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-![爱德华·霍普 代表图](gallery-16x9.svg)
+![爱德华·霍普 代表图](gallery-16x9.jpg)
 
 > **分类：** 艺术家
 > **媒介领域：** 绘画
