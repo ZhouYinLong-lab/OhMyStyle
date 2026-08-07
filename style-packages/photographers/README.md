@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-本目录收录 17 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
+本目录收录 20 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
 
 <table>
 <tr>
@@ -35,4 +35,12 @@
 <td width="33%" valign="top" align="center"><a href="diane-arbus/README.md"><img src="diane-arbus/gallery-16x9.jpg" width="230" alt="黛安·阿勃丝代表图"></a><br><strong>黛安·阿勃丝</strong><br><a href="diane-arbus/README.md">打开 README</a></td>
 <td width="33%"></td>
 </tr>
+</table>
+
+## 本批新增
+
+这些包使用版权安全的抽象色板卡作为临时代表图，获得授权或完成独立生图审核后可替换。
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="saul-leiter/README.md"><img src="saul-leiter/gallery-16x9.svg" width="230" alt="索尔·雷特 representative image"></a><br><strong>索尔·雷特</strong><br><a href="saul-leiter/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="vivian-maier/README.md"><img src="vivian-maier/gallery-16x9.svg" width="230" alt="维维安·迈尔 representative image"></a><br><strong>维维安·迈尔</strong><br><a href="vivian-maier/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="rinko-kawauchi/README.md"><img src="rinko-kawauchi/gallery-16x9.svg" width="230" alt="川内伦子 representative image"></a><br><strong>川内伦子</strong><br><a href="rinko-kawauchi/README.md">打开 README</a></td></tr>
 </table>

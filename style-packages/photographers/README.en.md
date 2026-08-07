@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-This directory contains 17 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
+This directory contains 20 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
 
 <table>
 <tr>
@@ -35,4 +35,12 @@ This directory contains 17 independent style packages. Each card uses a horizont
 <td width="33%" valign="top" align="center"><a href="diane-arbus/README.en.md"><img src="diane-arbus/gallery-16x9.jpg" width="230" alt="Diane Arbus representative image"></a><br><strong>Diane Arbus</strong><br><a href="diane-arbus/README.en.md">Open README</a></td>
 <td width="33%"></td>
 </tr>
+</table>
+
+## Added in this batch
+
+These packages use rights-safe abstract palette cards temporarily; replace them after an authorized or independently generated representative image is reviewed.
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="saul-leiter/README.en.md"><img src="saul-leiter/gallery-16x9.svg" width="230" alt="Saul Leiter representative image"></a><br><strong>Saul Leiter</strong><br><a href="saul-leiter/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="vivian-maier/README.en.md"><img src="vivian-maier/gallery-16x9.svg" width="230" alt="Vivian Maier representative image"></a><br><strong>Vivian Maier</strong><br><a href="vivian-maier/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="rinko-kawauchi/README.en.md"><img src="rinko-kawauchi/gallery-16x9.svg" width="230" alt="Rinko Kawauchi representative image"></a><br><strong>Rinko Kawauchi</strong><br><a href="rinko-kawauchi/README.en.md">Open README</a></td></tr>
 </table>

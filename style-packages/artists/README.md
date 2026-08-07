@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-本目录收录 27 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
+本目录收录 34 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
 
 <table>
 <tr>
@@ -50,4 +50,14 @@
 <td width="33%" valign="top" align="center"><a href="leonardo-da-vinci/README.md"><img src="leonardo-da-vinci/gallery-16x9.jpg" width="230" alt="莱昂纳多·达·芬奇代表图"></a><br><strong>莱昂纳多·达·芬奇</strong><br><a href="leonardo-da-vinci/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="diego-velazquez/README.md"><img src="diego-velazquez/gallery-16x9.jpg" width="230" alt="迭戈·委拉斯开兹代表图"></a><br><strong>迭戈·委拉斯开兹</strong><br><a href="diego-velazquez/README.md">打开 README</a></td>
 </tr>
+</table>
+
+## 本批新增
+
+这些包使用版权安全的抽象色板卡作为临时代表图，获得授权或完成独立生图审核后可替换。
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="hilma-af-klint/README.md"><img src="hilma-af-klint/gallery-16x9.svg" width="230" alt="希尔玛·艾夫·克林特 representative image"></a><br><strong>希尔玛·艾夫·克林特</strong><br><a href="hilma-af-klint/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="leonora-carrington/README.md"><img src="leonora-carrington/gallery-16x9.svg" width="230" alt="莱昂诺拉·卡林顿 representative image"></a><br><strong>莱昂诺拉·卡林顿</strong><br><a href="leonora-carrington/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="tamara-de-lempicka/README.md"><img src="tamara-de-lempicka/gallery-16x9.svg" width="230" alt="塔玛拉·德·兰佩卡 representative image"></a><br><strong>塔玛拉·德·兰佩卡</strong><br><a href="tamara-de-lempicka/README.md">打开 README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="giorgio-de-chirico/README.md"><img src="giorgio-de-chirico/gallery-16x9.svg" width="230" alt="乔治·德·基里科 representative image"></a><br><strong>乔治·德·基里科</strong><br><a href="giorgio-de-chirico/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="agnes-martin/README.md"><img src="agnes-martin/gallery-16x9.svg" width="230" alt="艾格尼丝·马丁 representative image"></a><br><strong>艾格尼丝·马丁</strong><br><a href="agnes-martin/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="edward-hopper/README.md"><img src="edward-hopper/gallery-16x9.svg" width="230" alt="爱德华·霍普 representative image"></a><br><strong>爱德华·霍普</strong><br><a href="edward-hopper/README.md">打开 README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="ivan-aivazovsky/README.md"><img src="ivan-aivazovsky/gallery-16x9.svg" width="230" alt="伊万·艾瓦佐夫斯基 representative image"></a><br><strong>伊万·艾瓦佐夫斯基</strong><br><a href="ivan-aivazovsky/README.md">打开 README</a></td><td width="33%"></td><td width="33%"></td></tr>
 </table>

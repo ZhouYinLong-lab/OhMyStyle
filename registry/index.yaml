@@ -1,6 +1,23 @@
 schema_version: 1.0.0
 generated_by: tools/build-registry.py
 packages:
+- resource_id: agnes-martin
+  name: 艾格尼丝·马丁
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/agnes-martin
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: anna-ancher
   name: 安娜·安彻
   kind: artist
@@ -103,6 +120,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: edward-hopper
+  name: 爱德华·霍普
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/edward-hopper
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: el-greco
   name: 埃尔·格列柯
   kind: artist
@@ -171,6 +205,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: giorgio-de-chirico
+  name: 乔治·德·基里科
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/giorgio-de-chirico
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: grant-wood
   name: 格兰特·伍德
   kind: artist
@@ -220,6 +271,40 @@ packages:
   - layout
   reference_count: 1
   accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: hilma-af-klint
+  name: 希尔玛·艾夫·克林特
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/hilma-af-klint
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: ivan-aivazovsky
+  name: 伊万·艾瓦佐夫斯基
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/ivan-aivazovsky
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
 - resource_id: jmw-turner
@@ -288,6 +373,23 @@ packages:
   - layout
   reference_count: 1
   accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: leonora-carrington
+  name: 莱昂诺拉·卡林顿
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/leonora-carrington
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
 - resource_id: michelangelo-buonarroti
@@ -426,6 +528,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: tamara-de-lempicka
+  name: 塔玛拉·德·兰佩卡
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/tamara-de-lempicka
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: vincent-van-gogh
   name: 文森特·梵高
   kind: artist
@@ -460,6 +579,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: cel-shaded-nature-game-art
+  name: 卡通渲染自然冒险游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/cel-shaded-nature-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: cinematic-pixel-adventure
   name: 电影化像素冒险美术
   kind: game_art
@@ -475,6 +611,74 @@ packages:
   - layout
   reference_count: 2
   accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: comic-halftone-game-art
+  name: 漫画网点叙事游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/comic-halftone-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: flat-design-puzzle-game-art
+  name: 平面设计解谜游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/flat-design-puzzle-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: hand-inked-animation-game-art
+  name: 手绘墨线动画游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/hand-inked-animation-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: impossible-architecture-game-art
+  name: 等距幻觉建筑游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/impossible-architecture-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
 - resource_id: isometric-pixel-tactics
@@ -511,6 +715,74 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: miniature-diorama-game-art
+  name: 微缩模型场景游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/miniature-diorama-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: neon-noir-3d-game-art
+  name: 霓虹黑色三维游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/neon-noir-3d-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: painterly-3d-fantasy-game-art
+  name: 手绘质感三维幻想游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/painterly-3d-fantasy-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: papercraft-diorama-game-art
+  name: 纸艺立体书游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/papercraft-diorama-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: rpg-maker-pixel-art
   name: 角色扮演游戏像素美术
   kind: game_art
@@ -545,6 +817,74 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: silhouette-platformer-game-art
+  name: 剪影光影平台游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/silhouette-platformer-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: stop-motion-clay-game-art
+  name: 黏土定格游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/stop-motion-clay-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: stylized-low-poly-world
+  name: 风格化低多边形世界游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/stylized-low-poly-world
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: stylized-pbr-sci-fi-game-art
+  name: 风格化PBR科幻游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/stylized-pbr-sci-fi-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: top-down-16-bit-adventure
   name: 俯视角16位冒险美术
   kind: game_art
@@ -560,6 +900,40 @@ packages:
   - layout
   reference_count: 1
   accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: voxel-world-game-art
+  name: 体素世界游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/voxel-world-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: watercolor-storybook-game-art
+  name: 水彩绘本冒险游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/watercolor-storybook-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
 - resource_id: zx-spectrum-attribute-pixel
@@ -1106,6 +1480,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: rinko-kawauchi
+  name: 川内伦子
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/rinko-kawauchi
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: robert-capa
   name: 罗伯特·卡帕
   kind: photographer
@@ -1140,6 +1531,40 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: saul-leiter
+  name: 索尔·雷特
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/saul-leiter
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: vivian-maier
+  name: 维维安·迈尔
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/vivian-maier
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: walker-evans
   name: 沃克·埃文斯
   kind: photographer

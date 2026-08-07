@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-本目录收录 7 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
+本目录收录 22 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
 
 <table>
 <tr>
@@ -20,4 +20,16 @@
 <td width="33%"></td>
 <td width="33%"></td>
 </tr>
+</table>
+
+## 本批新增
+
+这些包使用版权安全的抽象色板卡作为临时代表图，获得授权或完成独立生图审核后可替换。
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="cel-shaded-nature-game-art/README.md"><img src="cel-shaded-nature-game-art/gallery-16x9.svg" width="230" alt="卡通渲染自然冒险游戏美术 representative image"></a><br><strong>卡通渲染自然冒险游戏美术</strong><br><a href="cel-shaded-nature-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="hand-inked-animation-game-art/README.md"><img src="hand-inked-animation-game-art/gallery-16x9.svg" width="230" alt="手绘墨线动画游戏美术 representative image"></a><br><strong>手绘墨线动画游戏美术</strong><br><a href="hand-inked-animation-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="watercolor-storybook-game-art/README.md"><img src="watercolor-storybook-game-art/gallery-16x9.svg" width="230" alt="水彩绘本冒险游戏美术 representative image"></a><br><strong>水彩绘本冒险游戏美术</strong><br><a href="watercolor-storybook-game-art/README.md">打开 README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="papercraft-diorama-game-art/README.md"><img src="papercraft-diorama-game-art/gallery-16x9.svg" width="230" alt="纸艺立体书游戏美术 representative image"></a><br><strong>纸艺立体书游戏美术</strong><br><a href="papercraft-diorama-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="voxel-world-game-art/README.md"><img src="voxel-world-game-art/gallery-16x9.svg" width="230" alt="体素世界游戏美术 representative image"></a><br><strong>体素世界游戏美术</strong><br><a href="voxel-world-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="stylized-low-poly-world/README.md"><img src="stylized-low-poly-world/gallery-16x9.svg" width="230" alt="风格化低多边形世界游戏美术 representative image"></a><br><strong>风格化低多边形世界游戏美术</strong><br><a href="stylized-low-poly-world/README.md">打开 README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="impossible-architecture-game-art/README.md"><img src="impossible-architecture-game-art/gallery-16x9.svg" width="230" alt="等距幻觉建筑游戏美术 representative image"></a><br><strong>等距幻觉建筑游戏美术</strong><br><a href="impossible-architecture-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="comic-halftone-game-art/README.md"><img src="comic-halftone-game-art/gallery-16x9.svg" width="230" alt="漫画网点叙事游戏美术 representative image"></a><br><strong>漫画网点叙事游戏美术</strong><br><a href="comic-halftone-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="painterly-3d-fantasy-game-art/README.md"><img src="painterly-3d-fantasy-game-art/gallery-16x9.svg" width="230" alt="手绘质感三维幻想游戏美术 representative image"></a><br><strong>手绘质感三维幻想游戏美术</strong><br><a href="painterly-3d-fantasy-game-art/README.md">打开 README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="stylized-pbr-sci-fi-game-art/README.md"><img src="stylized-pbr-sci-fi-game-art/gallery-16x9.svg" width="230" alt="风格化PBR科幻游戏美术 representative image"></a><br><strong>风格化PBR科幻游戏美术</strong><br><a href="stylized-pbr-sci-fi-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="flat-design-puzzle-game-art/README.md"><img src="flat-design-puzzle-game-art/gallery-16x9.svg" width="230" alt="平面设计解谜游戏美术 representative image"></a><br><strong>平面设计解谜游戏美术</strong><br><a href="flat-design-puzzle-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="miniature-diorama-game-art/README.md"><img src="miniature-diorama-game-art/gallery-16x9.svg" width="230" alt="微缩模型场景游戏美术 representative image"></a><br><strong>微缩模型场景游戏美术</strong><br><a href="miniature-diorama-game-art/README.md">打开 README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="silhouette-platformer-game-art/README.md"><img src="silhouette-platformer-game-art/gallery-16x9.svg" width="230" alt="剪影光影平台游戏美术 representative image"></a><br><strong>剪影光影平台游戏美术</strong><br><a href="silhouette-platformer-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="neon-noir-3d-game-art/README.md"><img src="neon-noir-3d-game-art/gallery-16x9.svg" width="230" alt="霓虹黑色三维游戏美术 representative image"></a><br><strong>霓虹黑色三维游戏美术</strong><br><a href="neon-noir-3d-game-art/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="stop-motion-clay-game-art/README.md"><img src="stop-motion-clay-game-art/gallery-16x9.svg" width="230" alt="黏土定格游戏美术 representative image"></a><br><strong>黏土定格游戏美术</strong><br><a href="stop-motion-clay-game-art/README.md">打开 README</a></td></tr>
 </table>
