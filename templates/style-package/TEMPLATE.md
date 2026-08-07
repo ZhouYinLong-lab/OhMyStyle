@@ -1,0 +1,37 @@
+# 风格包模板说明
+
+本目录是可执行风格包的标准模板，不是一个可发布的风格包。正式包应由
+`tools/new-style-package.py` 创建到 `style-packages/<分类>/<id>/`，不要直接
+把本目录改名后提交。
+
+```powershell
+python tools/new-style-package.py `
+  --kind artist `
+  --id your-style-id `
+  --name "中文风格名" `
+  --domain painting `
+  --summary "至少三十个字符，并描述可观察的媒介、构图、光线、色彩或表面规则。"
+```
+
+提供 `--source-url`、`--source-title`、`--source-creator` 和
+`--source-attribution` 后，创建器会自动生成 L2 来源清单；否则生成 L1
+研究草稿。生成完成后替换所有 `TODO`，核对来源与权利，替换
+`gallery-16x9.svg`，再按 `CONTRIBUTING.md` 执行校验。
+
+模板文件对应正式包中的：
+
+- `package.yaml`：包身份、类别、领域、版本和文件索引；
+- `identity.yaml`：范围、主体、排除项和实体来源；
+- `visual-signature.yaml`：跨主题稳定的视觉特征；
+- `reproduction.yaml`：媒介、材料和构建顺序；
+- `relations.yaml`：相关流派、概念和边界；
+- `palette/palette.json`：颜色角色和值；
+- `prompts/`：基础 Prompt 与负面约束；
+- `evaluation.yaml`：生成后的检查项；
+- `references/`、`provenance.yaml`：参考来源、署名和再分发边界；
+- `examples/`：待审核、通过和失败的匿名生成样例；
+- `resource.yaml`：注册表使用的成熟度和资源契约；
+- `README.md`、`README.en.md`：面向使用者的双语说明。
+
+模板中的 `gallery-16x9.svg` 只是占位图。发布前必须替换为已生成、公共领域
+或明确允许再分发的代表图。
