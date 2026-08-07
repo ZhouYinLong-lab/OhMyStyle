@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Rinko Kawauchi representative](gallery-16x9.svg)
+![Rinko Kawauchi representative](gallery-16x9.jpg)
 
 > **Category:** photographer
 > **Domain:** photography
