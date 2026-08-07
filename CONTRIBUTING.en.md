@@ -39,7 +39,7 @@ style-packages/<category>/<id>/
 ├── examples/generated/          # anonymous examples awaiting review
 ├── examples/accepted/           # human-reviewed examples
 ├── examples/rejected/           # optional failure-boundary examples
-├── gallery-16x9.jpg             # cleared or newly generated representative image
+├── gallery-16x9.jpg             # native horizontal 16:9 cleared or newly generated image
 └── README.md / README.en.md     # user-facing bilingual documentation
 ```
 
@@ -79,7 +79,7 @@ Complete a new package in this order:
 
 1. Replace every `TODO` with concrete, subject-independent rules for identity, visual signature, reproduction, palette, evaluation, and prompts.
 2. Add source rows to `references/manifest.csv` and explain scope, attribution, and redistribution boundaries in `provenance.yaml`.
-3. Replace the representative image with a generated, public-domain, or explicitly redistributable image. Do not bundle an image merely because it is visible online.
+3. Replace the representative image with a natively composed horizontal 16:9 generated, public-domain, or explicitly redistributable image. Do not crop a portrait image into a gallery card, and do not bundle an image merely because it is visible online.
 4. Put new generated samples in `examples/generated/`. Move an image to `examples/accepted/` only after human review and metadata are present.
 5. Update the version and `version.md` when changing a published package.
 6. Run the complete validation set before opening a pull request.

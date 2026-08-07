@@ -18,7 +18,8 @@ python tools/new-style-package.py `
 提供 `--source-url`、`--source-title`、`--source-creator` 和
 `--source-attribution` 后，创建器会自动生成 L2 来源清单；否则生成 L1
 研究草稿。生成完成后替换所有 `TODO`，核对来源与权利，替换
-`gallery-16x9.svg`，再按 `CONTRIBUTING.md` 执行校验。
+`gallery-16x9.svg`。代表图必须从生成阶段就采用原生横版 16:9 构图；不要先生成竖版图，再裁切或拉伸成画廊图。再按
+`CONTRIBUTING.md` 执行校验。
 
 模板文件对应正式包中的：
 
@@ -35,5 +36,5 @@ python tools/new-style-package.py `
 - `resource.yaml`：注册表使用的成熟度和资源契约；
 - `README.md`、`README.en.md`：面向使用者的双语说明。
 
-模板中的 `gallery-16x9.svg` 只是占位图。发布前必须替换为已生成、公共领域
-或明确允许再分发的代表图。
+模板中的 `gallery-16x9.svg` 只是占位图。发布前必须替换为原生横版 16:9、已生成、公共领域
+或明确允许再分发的代表图；风格包 README 和总 README 画廊都直接使用这张横版代表图。
