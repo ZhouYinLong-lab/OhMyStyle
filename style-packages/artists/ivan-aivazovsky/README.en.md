@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Ivan Aivazovsky representative](gallery-16x9.svg)
+![Ivan Aivazovsky representative](gallery-16x9.jpg)
 
 > **Category:** artist
 > **Domain:** painting

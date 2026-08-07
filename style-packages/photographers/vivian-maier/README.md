@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-![维维安·迈尔 代表图](gallery-16x9.svg)
+![维维安·迈尔 代表图](gallery-16x9.jpg)
 
 > **分类：** 摄影师
 > **媒介领域：** 摄影

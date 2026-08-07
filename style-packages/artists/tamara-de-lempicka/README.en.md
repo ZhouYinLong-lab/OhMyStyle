@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Tamara de Lempicka representative](gallery-16x9.svg)
+![Tamara de Lempicka representative](gallery-16x9.jpg)
 
 > **Category:** artist
 > **Domain:** painting

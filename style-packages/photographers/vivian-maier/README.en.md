@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Vivian Maier representative](gallery-16x9.svg)
+![Vivian Maier representative](gallery-16x9.jpg)
 
 > **Category:** photographer
 > **Domain:** photography

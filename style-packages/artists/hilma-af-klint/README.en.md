@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Hilma af Klint representative](gallery-16x9.svg)
+![Hilma af Klint representative](gallery-16x9.jpg)
 
 > **Category:** artist
 > **Domain:** painting
