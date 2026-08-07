@@ -1,0 +1,22 @@
+canonical_name: 霓虹废墟城市游戏美术
+entity_type: neon_ruined_city_game_art_direction
+origin: dense_decaying_cybercity_environment_art
+period: 2020s
+domain: game_art
+scope:
+  use_cases:
+  - narrow_alley
+  - rooftop_garden
+  - old_market
+  - flooded_underpass
+  exclusions:
+  - recognizable_cat_or_drone
+  - readable_signage
+  - spotless_future_city
+  - generic_neon_wallpaper
+sources:
+- https://www.playstation.com/en-us/games/stray/
+rendering:
+  model: grounded 3D cybercity alley with localized colored practical lights
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

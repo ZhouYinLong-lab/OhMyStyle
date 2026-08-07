@@ -1,0 +1,22 @@
+canonical_name: 电影化荒原连接游戏美术
+entity_type: cinematic_wilderness_game_art_direction
+origin: cinematic_wilderness_and_traversal_environment_art
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - wet_grassland
+  - volcanic_plain
+  - river_crossing
+  - isolated_station
+  exclusions:
+  - hero_poster_pose
+  - copied_equipment
+  - fantasy_monster
+  - oversaturated_grade
+sources:
+- https://deathstrandingpc.505games.com/en/
+rendering:
+  model: cinematic 3D wilderness environment with restrained atmospheric rendering
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

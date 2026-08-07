@@ -1,0 +1,2 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+cyberpunk-night-city-primary-source,,Cyberpunk 2077 official game page,CD PROJEKT RED,,https://www.cyberpunk.net/sc/en/cyberpunk-2077,link_only,"Cyberpunk 2077 is a commercial work by CD PROJEKT RED; this package abstracts city-lighting and environment principles without reproducing its characters, signs, or locations.",primary,Link-only source record. Do not bundle or redistribute external artwork without explicit permission.

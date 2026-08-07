@@ -1,0 +1,31 @@
+{
+  "name": "control-paranormal-architecture",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "concrete",
+      "hex": "#8C8980",
+      "role": "architecture"
+    },
+    {
+      "name": "wood",
+      "hex": "#342A24",
+      "role": "dark_wood"
+    },
+    {
+      "name": "red",
+      "hex": "#8F1E25",
+      "role": "institutional_accent"
+    },
+    {
+      "name": "black",
+      "hex": "#17191A",
+      "role": "deep_shadow"
+    },
+    {
+      "name": "fluorescent",
+      "hex": "#E8E5D6",
+      "role": "practical_light"
+    }
+  ]
+}

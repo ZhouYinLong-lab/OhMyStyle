@@ -1,0 +1,16 @@
+id: stray-neon-cybercity
+name: 霓虹废墟城市游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以低机位巷道、潮湿混凝土、旧公寓、植物和局部彩色灯构成有生活痕迹的衰败未来城市，不把霓虹做成纯装饰。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

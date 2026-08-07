@@ -1,0 +1,15 @@
+medium: hand-painted stylized 3D open-world environment
+materials:
+- 简化三维地形
+- 手绘色面
+- 柔和阴影
+- 低频自然纹理
+- 分层环境雾
+process:
+- 先建立地形和路径
+- 再安排大色面与前中后景
+- 补充少量可读道具
+- 最后检查探索方向与尺度关系
+technical_direction: 使用中等或长焦的自然视角，避免过度广角和游戏截图式 UI。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

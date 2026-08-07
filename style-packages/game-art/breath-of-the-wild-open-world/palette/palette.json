@@ -1,0 +1,31 @@
+{
+  "name": "breath-of-the-wild-open-world",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "sky",
+      "hex": "#65A9D2",
+      "role": "sky_and_distance"
+    },
+    {
+      "name": "grass",
+      "hex": "#7D9C45",
+      "role": "vegetation"
+    },
+    {
+      "name": "stone",
+      "hex": "#687C80",
+      "role": "rock_and_ruin"
+    },
+    {
+      "name": "earth",
+      "hex": "#B98957",
+      "role": "ground"
+    },
+    {
+      "name": "vermilion",
+      "hex": "#C74F3E",
+      "role": "restrained_focal_accent"
+    }
+  ]
+}

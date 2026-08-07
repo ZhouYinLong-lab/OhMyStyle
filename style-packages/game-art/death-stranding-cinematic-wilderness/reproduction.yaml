@@ -1,0 +1,15 @@
+medium: cinematic 3D wilderness environment with restrained atmospheric rendering
+materials:
+- 湿地表
+- 苔藓和草
+- 火山岩
+- 旧工业金属
+- 稀薄雨雾
+process:
+- 先确定地形尺度和天气
+- 再安排一条可读的路径或水系
+- 放置极小尺度人造物
+- 最后用空气透视收束远景
+technical_direction: 保持自然光与物理空间关系，避免科幻装备、灾难废墟和过度电影滤镜。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

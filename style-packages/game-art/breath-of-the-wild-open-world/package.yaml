@@ -1,0 +1,16 @@
+id: breath-of-the-wild-open-world
+name: 旷野自然开放世界游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以手绘质感的三维自然场景、清晰前中后景、柔和卡通明暗和大尺度探索空间组织可游玩的开放世界画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

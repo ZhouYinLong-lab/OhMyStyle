@@ -1,0 +1,22 @@
+canonical_name: 超现实机关建筑游戏美术
+entity_type: surreal_architecture_game_art_direction
+origin: brutalist_institutional_architecture_and_surreal_space
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - archive_corridor
+  - concrete_lobby
+  - office_threshold
+  - impossible_stair
+  exclusions:
+  - chaotic_distortion
+  - horror_gore
+  - copied_logo
+  - fantasy_castle
+sources:
+- https://legacy.controlgame.com/
+rendering:
+  model: precise 3D brutalist interior with restrained surreal geometry
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

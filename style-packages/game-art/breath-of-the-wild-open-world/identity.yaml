@@ -1,0 +1,22 @@
+canonical_name: 旷野自然开放世界游戏美术
+entity_type: painted_open_world_game_art_direction
+origin: open_world_nature_adventure_game_art
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - mountain_landscape
+  - ruin_scene
+  - open_field
+  - exploration_map
+  exclusions:
+  - photorealistic_landscape
+  - copied_landmark
+  - named_character
+  - global_anime_filter
+sources:
+- https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html
+rendering:
+  model: hand-painted stylized 3D open-world environment
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

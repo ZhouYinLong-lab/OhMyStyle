@@ -1,0 +1,16 @@
+id: death-stranding-cinematic-wilderness
+name: 电影化荒原连接游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以极大负空间、风雨荒原、细小人物尺度和克制的电影化自然光构成孤独但不压抑的环境叙事。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

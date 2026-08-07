@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- recognizable_cat_or_drone
+- readable_signage
+- spotless_future_city
+- generic_neon_wallpaper

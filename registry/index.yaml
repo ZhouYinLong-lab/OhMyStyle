@@ -579,6 +579,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: breath-of-the-wild-open-world
+  name: 旷野自然开放世界游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/breath-of-the-wild-open-world
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: cel-shaded-nature-game-art
   name: 卡通渲染自然冒险游戏美术
   kind: game_art
@@ -630,6 +647,91 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: control-paranormal-architecture
+  name: 超现实机关建筑游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/control-paranormal-architecture
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: cyberpunk-night-city
+  name: 霓虹未来都市游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/cyberpunk-night-city
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: death-stranding-cinematic-wilderness
+  name: 电影化荒原连接游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/death-stranding-cinematic-wilderness
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: disco-elysium-painterly-noir
+  name: 厚涂侦探绘本游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/disco-elysium-painterly-noir
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: elden-ring-dark-fantasy
+  name: 暗黑神话幻想游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/elden-ring-dark-fantasy
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: flat-design-puzzle-game-art
   name: 平面设计解谜游戏美术
   kind: game_art
@@ -647,6 +749,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: hades-mythic-illustration
+  name: 神话高对比插画游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/hades-mythic-illustration
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: hand-inked-animation-game-art
   name: 手绘墨线动画游戏美术
   kind: game_art
@@ -662,6 +781,23 @@ packages:
   - layout
   reference_count: 1
   accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: hi-fi-rush-rhythm-comic
+  name: 节奏漫画卡通渲染游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/hi-fi-rush-rhythm-comic
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
 - resource_id: impossible-architecture-game-art
@@ -747,6 +883,23 @@ packages:
   - layout
   reference_count: 1
   accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: ori-luminous-forest
+  name: 荧光森林手绘游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/ori-luminous-forest
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
 - resource_id: painterly-3d-fantasy-game-art
@@ -849,6 +1002,23 @@ packages:
   - layout
   reference_count: 1
   accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: stray-neon-cybercity
+  name: 霓虹废墟城市游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/stray-neon-cybercity
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
 - resource_id: stylized-low-poly-world

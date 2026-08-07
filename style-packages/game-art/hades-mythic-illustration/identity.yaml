@@ -1,0 +1,22 @@
+canonical_name: 神话高对比插画游戏美术
+entity_type: mythic_illustrative_game_art_direction
+origin: mythic_2d_action_illustration
+period: 2020s
+domain: game_art
+scope:
+  use_cases:
+  - mythic_courtyard
+  - character_silhouette
+  - ritual_object
+  - action_scene
+  exclusions:
+  - named_mythic_character
+  - photorealism
+  - generic_anime
+  - uncontrolled_particle_effects
+sources:
+- https://www.supergiantgames.com/games/hades/
+rendering:
+  model: hand-painted 2D mythic game illustration
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

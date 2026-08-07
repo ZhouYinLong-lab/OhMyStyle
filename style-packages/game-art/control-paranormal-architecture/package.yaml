@@ -1,0 +1,16 @@
+id: control-paranormal-architecture
+name: 超现实机关建筑游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以粗野主义建筑、机构化红色标记、荧光灯、深长走廊和单一几何异常组织可解释的超现实空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

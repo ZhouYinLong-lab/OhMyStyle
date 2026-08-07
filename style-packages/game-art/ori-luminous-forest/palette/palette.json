@@ -1,0 +1,31 @@
+{
+  "name": "ori-luminous-forest",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "deepblue",
+      "hex": "#173B77",
+      "role": "foreground"
+    },
+    {
+      "name": "teal",
+      "hex": "#2E9CA6",
+      "role": "water_and_foliage"
+    },
+    {
+      "name": "indigo",
+      "hex": "#4D4C9E",
+      "role": "atmospheric_shadow"
+    },
+    {
+      "name": "cream",
+      "hex": "#F0D78E",
+      "role": "moonlit_light"
+    },
+    {
+      "name": "lilac",
+      "hex": "#9C87C8",
+      "role": "luminous_detail"
+    }
+  ]
+}

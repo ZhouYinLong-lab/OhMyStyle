@@ -1,0 +1,22 @@
+canonical_name: 霓虹未来都市游戏美术
+entity_type: neon_city_game_art_direction
+origin: dense_futuristic_city_environment_design
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - rainy_alley
+  - elevated_transit
+  - dense_market
+  - industrial_night
+  exclusions:
+  - readable_branding
+  - generic_teal_orange
+  - empty_clean_city
+  - fantasy_cybernetics
+sources:
+- https://www.cyberpunk.net/sc/en/cyberpunk-2077
+rendering:
+  model: cinematic 3D cybercity environment with physically motivated local lighting
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

@@ -1,0 +1,31 @@
+{
+  "name": "death-stranding-cinematic-wilderness",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "moss",
+      "hex": "#687962",
+      "role": "wet_vegetation"
+    },
+    {
+      "name": "slate",
+      "hex": "#667681",
+      "role": "sky_and_rock"
+    },
+    {
+      "name": "earth",
+      "hex": "#7B6A52",
+      "role": "wet_ground"
+    },
+    {
+      "name": "rust",
+      "hex": "#9A5B42",
+      "role": "sparse_warm_accent"
+    },
+    {
+      "name": "cloud",
+      "hex": "#D4D2C7",
+      "role": "broken_light"
+    }
+  ]
+}

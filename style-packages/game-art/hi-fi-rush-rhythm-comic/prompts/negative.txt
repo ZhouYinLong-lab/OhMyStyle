@@ -1,0 +1,10 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- photorealism
+- readable_text
+- copied_character
+- random_graffiti
+- heavy_glow

@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 主体剪影和大色块先于细节
+- 建筑、树木和道具形成装饰性框架
+- 动作线条有明确方向和重心
+- 深靛蓝、炭黑、赭金、朱红和青绿形成强对比
+- 高饱和色集中在主体和光源
+- 暖冷冲突明确但不变成霓虹
+- 手绘二维插画
+- 可见笔触和硬软边交替
+- 角色、环境和装饰共享同一笔触语言
+- 光线服务剪影和层次
+- 火焰、月光或神秘水面可提供局部色温
+- 不使用白色轮廓光
+- 石、金属、布、果实和水面用笔触区分
+- 高光是绘制形状而非摄影反射
+- 笔触有方向并集中在主体和前景
+- 背景纹理降低以保持轮廓可读
+- 手绘图形语言稳定
+- 动作或姿态不被装饰淹没
+- 不得复制具体人物、武器、徽记或布局
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

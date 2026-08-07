@@ -1,0 +1,31 @@
+{
+  "name": "disco-elysium-painterly-noir",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "tealgray",
+      "hex": "#667F7B",
+      "role": "wet_city"
+    },
+    {
+      "name": "cream",
+      "hex": "#D9D0B6",
+      "role": "sky_and_paper"
+    },
+    {
+      "name": "rust",
+      "hex": "#A45A49",
+      "role": "focal_warm"
+    },
+    {
+      "name": "nicotine",
+      "hex": "#C4A45D",
+      "role": "aged_light"
+    },
+    {
+      "name": "charcoal",
+      "hex": "#35383A",
+      "role": "deep_form"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "hi-fi-rush-rhythm-comic",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "navy",
+      "hex": "#172B4D",
+      "role": "deep_structure"
+    },
+    {
+      "name": "yellow",
+      "hex": "#F2B728",
+      "role": "primary_accent"
+    },
+    {
+      "name": "red",
+      "hex": "#E63B32",
+      "role": "action_accent"
+    },
+    {
+      "name": "blue",
+      "hex": "#2D81C7",
+      "role": "cool_surface"
+    },
+    {
+      "name": "white",
+      "hex": "#F1EADB",
+      "role": "graphic_light"
+    }
+  ]
+}

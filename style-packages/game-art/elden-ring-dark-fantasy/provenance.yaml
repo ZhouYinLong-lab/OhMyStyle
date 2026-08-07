@@ -1,0 +1,14 @@
+package_id: elden-ring-dark-fantasy
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://www.bandainamcoent.com/games/elden-ring
+  authority: FromSoftware and Bandai Namco Entertainment
+  title: ELDEN RING official game page
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: ELDEN RING is a commercial work by its creators and publishers; this
+  package abstracts environmental atmosphere without reproducing characters, bosses,
+  symbols, or landmarks.

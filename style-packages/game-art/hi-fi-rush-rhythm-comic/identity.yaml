@@ -1,0 +1,23 @@
+canonical_name: 节奏漫画卡通渲染游戏美术
+entity_type: comic_cel_shaded_game_art_direction
+origin: rhythm_action_and_comic_cel_shading
+period: 2020s
+domain: game_art
+scope:
+  use_cases:
+  - industrial_stage
+  - machine_room
+  - action_pose
+  - colorful_platform
+  exclusions:
+  - photorealism
+  - readable_text
+  - copied_character
+  - random_graffiti
+  - heavy_glow
+sources:
+- https://krafton.com/en/games/hifirush/
+rendering:
+  model: bold cel-shaded 3D comic game scene
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

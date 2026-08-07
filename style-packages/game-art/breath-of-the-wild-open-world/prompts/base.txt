@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 以宽阔地平线、路径和前中后景建立可探索空间
+- 远景层次清楚而不过度细密
+- 小尺度主体与大自然尺度形成对照
+- 天空蓝、草木绿、岩石灰、暖土色和少量朱红形成自然色组
+- 焦点色只落在花、旗帜或光源等局部
+- 不使用统一高饱和滤镜
+- 三维环境结合手绘色面与柔和卡通明暗
+- 轮廓简洁但不使用粗黑描边
+- 形体先于微纹理
+- 自然主光方向明确
+- 云影和空气透视帮助分层
+- 阴影柔和且保留地形结构
+- 草、石、水、木和旧墙有不同粗糙度
+- 材质细节克制并服从远近尺度
+- 笔触和色差沿地形、草叶和岩面方向分布
+- 远景纹理密度降低
+- 探索空间保持可读
+- 自然色组不被全局色调覆盖
+- 不得复制具体游戏地图、角色或道具
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.
