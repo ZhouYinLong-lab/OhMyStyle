@@ -854,9 +854,9 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-gauguin/README.md"><img src="style-packages/composites/rpg-maker-x-gauguin/gallery-16x9.jpg" width="230" alt="RPG Maker Foreground + Gauguin Background example"></a><br><strong>像素前景 + 高更背景</strong></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-turner/README.md"><img src="style-packages/composites/rpg-maker-x-turner/gallery-16x9.jpg" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere example"></a><br><strong>日系 RPG 像素 + 透纳天空</strong></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/composites/vermeer-x-monet/README.md"><img src="style-packages/composites/vermeer-x-monet/gallery-16x9.jpg" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>维米尔光线 + 莫奈色彩</strong></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-gauguin/README.md"><img src="style-packages/composites/rpg-maker-x-gauguin/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Foreground + Gauguin Background example"></a><br><strong>像素前景 + 高更背景</strong></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-turner/README.md"><img src="style-packages/composites/rpg-maker-x-turner/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere example"></a><br><strong>日系 RPG 像素 + 透纳天空</strong></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/composites/vermeer-x-monet/README.md"><img src="style-packages/composites/vermeer-x-monet/examples/generated/anonymous-v1.png" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>维米尔光线 + 莫奈色彩</strong></td>
 </tr>
 </table>
 

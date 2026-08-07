@@ -854,9 +854,9 @@ Available modes: `stack` (role-separated stacking), `blend` (weighted blending),
 
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-gauguin/README.en.md"><img src="style-packages/composites/rpg-maker-x-gauguin/gallery-16x9.jpg" width="230" alt="RPG Maker Foreground + Gauguin Background example"></a><br><strong>Pixel foreground + Gauguin background</strong></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-turner/README.en.md"><img src="style-packages/composites/rpg-maker-x-turner/gallery-16x9.jpg" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere example"></a><br><strong>RPG Maker pixel art + Turner sky</strong></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/composites/vermeer-x-monet/README.en.md"><img src="style-packages/composites/vermeer-x-monet/gallery-16x9.jpg" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>Vermeer light + Monet color</strong></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-gauguin/README.en.md"><img src="style-packages/composites/rpg-maker-x-gauguin/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Foreground + Gauguin Background example"></a><br><strong>Pixel foreground + Gauguin background</strong></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/composites/rpg-maker-x-turner/README.en.md"><img src="style-packages/composites/rpg-maker-x-turner/examples/generated/anonymous-v1.png" width="230" alt="RPG Maker Pixel Art + Turner Atmosphere example"></a><br><strong>RPG Maker pixel art + Turner sky</strong></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/composites/vermeer-x-monet/README.en.md"><img src="style-packages/composites/vermeer-x-monet/examples/generated/anonymous-v1.png" width="230" alt="Vermeer Light + Monet Color example"></a><br><strong>Vermeer light + Monet color</strong></td>
 </tr>
 </table>
 
