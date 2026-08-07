@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-115-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-125-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -91,11 +91,6 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/isometric-pixel-tactics/README.md"><img src="style-packages/game-art/isometric-pixel-tactics/gallery-16x9.jpg" width="230" alt="等距像素策略美术代表图"></a><br><strong>等距像素策略美术</strong><br><a href="style-packages/game-art/isometric-pixel-tactics/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/rpg-maker-pixel-art/README.md"><img src="style-packages/game-art/rpg-maker-pixel-art/gallery-16x9.jpg" width="230" alt="角色扮演游戏像素美术代表图"></a><br><strong>角色扮演游戏像素美术</strong><br><a href="style-packages/game-art/rpg-maker-pixel-art/README.md">打开 README</a></td>
-<td width="33%"></td>
-<td width="33%"></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/cel-shaded-nature-game-art/README.md"><img src="style-packages/game-art/cel-shaded-nature-game-art/gallery-16x9.jpg" width="230" alt="卡通渲染自然冒险游戏美术代表图"></a><br><strong>卡通渲染自然冒险游戏美术</strong><br><a href="style-packages/game-art/cel-shaded-nature-game-art/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-inked-animation-game-art/README.md"><img src="style-packages/game-art/hand-inked-animation-game-art/gallery-16x9.jpg" width="230" alt="手绘墨线动画游戏美术代表图"></a><br><strong>手绘墨线动画游戏美术</strong><br><a href="style-packages/game-art/hand-inked-animation-game-art/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/watercolor-storybook-game-art/README.md"><img src="style-packages/game-art/watercolor-storybook-game-art/gallery-16x9.jpg" width="230" alt="水彩绘本冒险游戏美术代表图"></a><br><strong>水彩绘本冒险游戏美术</strong><br><a href="style-packages/game-art/watercolor-storybook-game-art/README.md">打开 README</a></td>
@@ -120,8 +115,26 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/neon-noir-3d-game-art/README.md"><img src="style-packages/game-art/neon-noir-3d-game-art/gallery-16x9.jpg" width="230" alt="霓虹黑色三维游戏美术代表图"></a><br><strong>霓虹黑色三维游戏美术</strong><br><a href="style-packages/game-art/neon-noir-3d-game-art/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/stop-motion-clay-game-art/README.md"><img src="style-packages/game-art/stop-motion-clay-game-art/gallery-16x9.jpg" width="230" alt="黏土定格游戏美术代表图"></a><br><strong>黏土定格游戏美术</strong><br><a href="style-packages/game-art/stop-motion-clay-game-art/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/breath-of-the-wild-open-world/README.md"><img src="style-packages/game-art/breath-of-the-wild-open-world/gallery-16x9.jpg" width="230" alt="旷野自然开放世界游戏美术代表图"></a><br><strong>旷野自然开放世界游戏美术</strong><br><a href="style-packages/game-art/breath-of-the-wild-open-world/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cyberpunk-night-city/README.md"><img src="style-packages/game-art/cyberpunk-night-city/gallery-16x9.jpg" width="230" alt="霓虹未来都市游戏美术代表图"></a><br><strong>霓虹未来都市游戏美术</strong><br><a href="style-packages/game-art/cyberpunk-night-city/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/death-stranding-cinematic-wilderness/README.md"><img src="style-packages/game-art/death-stranding-cinematic-wilderness/gallery-16x9.jpg" width="230" alt="电影化荒原连接游戏美术代表图"></a><br><strong>电影化荒原连接游戏美术</strong><br><a href="style-packages/game-art/death-stranding-cinematic-wilderness/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/control-paranormal-architecture/README.md"><img src="style-packages/game-art/control-paranormal-architecture/gallery-16x9.jpg" width="230" alt="超现实机关建筑游戏美术代表图"></a><br><strong>超现实机关建筑游戏美术</strong><br><a href="style-packages/game-art/control-paranormal-architecture/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hades-mythic-illustration/README.md"><img src="style-packages/game-art/hades-mythic-illustration/gallery-16x9.jpg" width="230" alt="神话高对比插画游戏美术代表图"></a><br><strong>神话高对比插画游戏美术</strong><br><a href="style-packages/game-art/hades-mythic-illustration/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hi-fi-rush-rhythm-comic/README.md"><img src="style-packages/game-art/hi-fi-rush-rhythm-comic/gallery-16x9.jpg" width="230" alt="节奏漫画卡通渲染游戏美术代表图"></a><br><strong>节奏漫画卡通渲染游戏美术</strong><br><a href="style-packages/game-art/hi-fi-rush-rhythm-comic/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/disco-elysium-painterly-noir/README.md"><img src="style-packages/game-art/disco-elysium-painterly-noir/gallery-16x9.jpg" width="230" alt="厚涂侦探绘本游戏美术代表图"></a><br><strong>厚涂侦探绘本游戏美术</strong><br><a href="style-packages/game-art/disco-elysium-painterly-noir/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/elden-ring-dark-fantasy/README.md"><img src="style-packages/game-art/elden-ring-dark-fantasy/gallery-16x9.jpg" width="230" alt="暗黑神话幻想游戏美术代表图"></a><br><strong>暗黑神话幻想游戏美术</strong><br><a href="style-packages/game-art/elden-ring-dark-fantasy/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stray-neon-cybercity/README.md"><img src="style-packages/game-art/stray-neon-cybercity/gallery-16x9.jpg" width="230" alt="霓虹废墟城市游戏美术代表图"></a><br><strong>霓虹废墟城市游戏美术</strong><br><a href="style-packages/game-art/stray-neon-cybercity/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/ori-luminous-forest/README.md"><img src="style-packages/game-art/ori-luminous-forest/gallery-16x9.jpg" width="230" alt="荧光森林手绘游戏美术代表图"></a><br><strong>荧光森林手绘游戏美术</strong><br><a href="style-packages/game-art/ori-luminous-forest/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/rpg-maker-pixel-art/README.md"><img src="style-packages/game-art/rpg-maker-pixel-art/gallery-16x9.jpg" width="230" alt="角色扮演游戏像素美术代表图"></a><br><strong>角色扮演游戏像素美术</strong><br><a href="style-packages/game-art/rpg-maker-pixel-art/README.md">打开 README</a></td>
+</tr>
 </table>
-
 ### 艺术流派与历史时期
 
 <table>
