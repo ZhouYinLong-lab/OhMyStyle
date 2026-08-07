@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Stylized PBR Science-Fiction Game Art representative](gallery-16x9.svg)
+![Stylized PBR Science-Fiction Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art
