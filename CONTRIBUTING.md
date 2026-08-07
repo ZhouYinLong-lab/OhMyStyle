@@ -39,7 +39,7 @@ style-packages/<分类>/<id>/
 ├── examples/generated/          # 待审核的匿名生图样例
 ├── examples/accepted/           # 通过人工审核的样例
 ├── examples/rejected/           # 可选的失败边界样例
-├── gallery-16x9.jpg             # 已清权或新生成的代表图
+├── gallery-16x9.jpg             # 原生横版 16:9 的已清权或新生成代表图
 └── README.md / README.en.md     # 面向使用者的双语说明
 ```
 
@@ -79,7 +79,7 @@ python tools/new-style-package.py `
 
 1. 替换所有 `TODO`，把身份、视觉签名、复现、调色板、评估和 Prompt 写成具体的、与主题无关的规则；
 2. 在 `references/manifest.csv` 添加来源，并在 `provenance.yaml` 说明研究范围、署名和再分发边界；
-3. 将代表图替换为新生成、公共领域或明确允许再分发的图片；不要因为图片能在网上看到就直接打包；
+3. 将代表图替换为原生横版 16:9（宽高比 16:9）的新生成、公共领域或明确允许再分发图片；不要先生成竖版图再裁成画廊图，也不要因为图片能在网上看到就直接打包；
 4. 把新生成样例放在 `examples/generated/`，只有通过人工审核并附带元数据后才放入 `examples/accepted/`；
 5. 发布已有包的修改时更新版本号和 `version.md`；
 6. 运行完整校验后再提交 Pull Request。

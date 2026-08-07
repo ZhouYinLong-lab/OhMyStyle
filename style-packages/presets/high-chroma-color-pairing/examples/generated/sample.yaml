@@ -1,0 +1,8 @@
+asset: anonymous-v1.png
+status: pending_human_review
+generator: OpenAI built-in image generation
+prompt_mode: subject_neutral_high_chroma_color_pairing
+subject: a wide flower meadow organized into cobalt-blue, vermilion-red, and lemon-yellow color fields
+aspect_ratio: 16:9
+dimensions: 1672x941
+generated_at: 2026-08-07

@@ -19,8 +19,10 @@ python tools/new-style-package.py `
 Add `--source-url`, `--source-title`, `--source-creator`, and
 `--source-attribution` to create an L2 link-backed manifest. Without a source,
 the command creates an L1 research draft. Replace all `TODO` values, verify
-rights and provenance, replace `gallery-16x9.svg`, and run the checks in
-`CONTRIBUTING.en.md` before submitting.
+rights and provenance, and replace `gallery-16x9.svg`. The representative
+image must be composed natively as a horizontal 16:9 image; do not generate a
+portrait first and crop or stretch it into a gallery card. Then run the checks
+in `CONTRIBUTING.en.md` before submitting.
 
 The template maps to these package files:
 
@@ -38,4 +40,6 @@ The template maps to these package files:
 - `README.md` and `README.en.md`: user-facing bilingual documentation.
 
 `gallery-16x9.svg` is only a neutral placeholder. Replace it before publication
-with a generated, public-domain, or explicitly redistributable representative image.
+with a natively composed horizontal 16:9 generated, public-domain, or
+explicitly redistributable representative image. The package README and the
+root gallery both use this horizontal representative image directly.
