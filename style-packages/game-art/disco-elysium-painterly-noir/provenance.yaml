@@ -1,0 +1,14 @@
+package_id: disco-elysium-painterly-noir
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://switch.discoelysium.com/
+  authority: ZA/UM
+  title: Disco Elysium official game page
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: Disco Elysium is a commercial work by ZA/UM and its partners; this package
+  abstracts painterly and graphic-novel traits without reproducing characters, text,
+  or scenes.

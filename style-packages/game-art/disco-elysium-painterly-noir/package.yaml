@@ -1,0 +1,16 @@
+id: disco-elysium-painterly-noir
+name: 厚涂侦探绘本游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以厚涂笔触、歪斜城市、潮湿天气、脏柔色组和图形化人物剪影组织带有文学感的绘本式角色扮演画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
