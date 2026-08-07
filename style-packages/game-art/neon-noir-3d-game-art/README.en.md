@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Neon Noir 3D Game Art representative](gallery-16x9.svg)
+![Neon Noir 3D Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art
