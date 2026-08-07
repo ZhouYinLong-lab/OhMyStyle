@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Leonora Carrington representative](gallery-16x9.svg)
+![Leonora Carrington representative](gallery-16x9.jpg)
 
 > **Category:** artist
 > **Domain:** painting
