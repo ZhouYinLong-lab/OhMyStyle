@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-![Vermeer Light + Monet Color 示例](examples/generated/anonymous-v1.png)
+<img src="examples/generated/anonymous-v1.png" width="420" alt="Vermeer Light + Monet Color 示例">
 
 ## 这是什么
 
