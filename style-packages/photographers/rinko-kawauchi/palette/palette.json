@@ -1,0 +1,31 @@
+{
+  "name": "rinko-kawauchi",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "blush",
+      "hex": "#D9AAB0",
+      "role": "soft_warm"
+    },
+    {
+      "name": "milk",
+      "hex": "#F0E8D7",
+      "role": "highlight"
+    },
+    {
+      "name": "sky",
+      "hex": "#AFC7D0",
+      "role": "cool_air"
+    },
+    {
+      "name": "leaf",
+      "hex": "#91A985",
+      "role": "natural_green"
+    },
+    {
+      "name": "butter",
+      "hex": "#E6D58D",
+      "role": "sunlit_detail"
+    }
+  ]
+}

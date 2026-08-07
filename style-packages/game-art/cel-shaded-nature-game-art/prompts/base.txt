@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 以清晰前中后景和大块轮廓组织空间
+- 让路径、树枝、山脊或建筑线条承担视线引导
+- 主体轮廓先于细节建立
+- 自然绿、土黄、朱红、群青和墨色形成有限色组
+- 高饱和色用于焦点和自然能量，不做全局滤镜
+- 明暗分区优先于细密渐变
+- 三维模型结合平面化着色
+- 局部保留手绘笔触或纸墨边缘
+- 轮廓与材质由图形语言统一
+- 使用分段明暗而非连续写实渐变
+- 日光、月光或神秘光源形成明确色温关系
+- 阴影保持形状清楚
+- 木、石、叶片和布料各自保留简化但可辨的表面逻辑
+- 高光面积受控
+- 纹理跟随材质方向，避免随机噪点
+- 边缘可有少量手绘破笔但不能覆盖轮廓
+- 三维空间仍然可信
+- 明暗块面和轮廓优先
+- 不得复制来源游戏的角色、标志或构图
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

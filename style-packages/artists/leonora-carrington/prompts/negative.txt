@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- generic_dark_fantasy
+- gore
+- copied_character
+- literal_alchemy_diagram

@@ -1,0 +1,22 @@
+canonical_name: 漫画网点叙事游戏美术
+entity_type: comic_ink_halftone_game_art_direction
+origin: comic_book_paneling_and_illustrated_adventure_games
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - character_closeup
+  - action_panel
+  - urban_scene
+  - dialogue_staging
+  exclusions:
+  - readable_text
+  - exact_comic_panel
+  - photorealistic_skin
+  - uncontrolled_halftone_noise
+sources:
+- https://www.telltale.com/the-wolf-among-us/
+rendering:
+  model: comic-inspired game illustration with ink, flat color, and controlled halftone
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

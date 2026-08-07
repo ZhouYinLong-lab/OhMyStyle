@@ -1,0 +1,22 @@
+canonical_name: 卡通渲染自然冒险游戏美术
+entity_type: cel_shaded_3d_game_art_direction
+origin: stylized_console_action_adventure
+period: 2000s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - nature_scene
+  - shrine_or_ruin
+  - character_action
+  - environmental_concept
+  exclusions:
+  - photorealistic_pbr
+  - generic_anime_screenshot
+  - copied_named_character
+  - uncontrolled_ink_noise
+sources:
+- https://www.capcom.co.jp/ir/english/news/pdf/e090903.pdf
+rendering:
+  model: stylized 3D render with cel-shaded lighting and restrained hand-painted accents
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 用体素台阶和方块群形成清晰地形层级
+- 大型体块先于单方块装饰
+- 远景减少方块细节但保持块面节奏
+- 每类材料使用少量相邻色阶
+- 草、土、石、水和木有清晰颜色家族
+- 高亮块只用于路径、资源或焦点
+- 立方体或规则体素网格
+- 平面或阶梯化面法线
+- 材质通过方块颜色和面向区分
+- 光照沿体素面分区
+- 接触阴影和体素遮挡清楚
+- 不使用大面积连续反射
+- 泥土、石块、木材和矿物各有有限图案
+- 表面细节服从体素尺度
+- 重复纹理需有模块变化
+- 避免把真实照片压成方块滤镜
+- 几何体由可识别方块构成
+- 不同物体共享同一网格尺度
+- 不得使用来源游戏的独特材质贴图
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

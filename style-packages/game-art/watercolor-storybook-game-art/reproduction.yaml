@@ -1,0 +1,15 @@
+medium: 2D watercolor illustration assembled into an explorable game scene
+materials:
+- 冷压纸纹理
+- 透明水彩层
+- 不透明白色修饰
+- 细线稿
+- 轻柔数字合成
+process:
+- 先确定可玩空间和大留白
+- 按前中后景叠加透明色层
+- 再加入角色与可交互物的清晰轮廓
+- 最后控制纸纹与颜料边缘
+technical_direction: 保留透明叠色的明度层级；避免把每个物体都处理成相同锐度。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

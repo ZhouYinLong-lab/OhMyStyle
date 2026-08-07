@@ -1,0 +1,31 @@
+{
+  "name": "leonora-carrington",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "sage",
+      "hex": "#788675",
+      "role": "atmosphere"
+    },
+    {
+      "name": "ochre",
+      "hex": "#AD8554",
+      "role": "earth"
+    },
+    {
+      "name": "bone",
+      "hex": "#DED1B1",
+      "role": "light_surface"
+    },
+    {
+      "name": "oxblood",
+      "hex": "#743E3B",
+      "role": "focal_red"
+    },
+    {
+      "name": "midnight",
+      "hex": "#293A49",
+      "role": "deep_space"
+    }
+  ]
+}

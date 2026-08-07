@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 角色轮廓和可行走平台优先
+- 前景、中景和远景以明度分层
+- 障碍物边缘留出可读间隙
+- 黑、灰、冷蓝和少量灰白构成低饱和色组
+- 焦点光可以是暖白或暗红但不铺满
+- 色彩差异服务深度
+- 二维剪影与柔焦背景
+- 细微颗粒和体积空气
+- 实体边缘保持清楚
+- 逆光和侧光塑造轮廓
+- 薄雾和远处光带建立空间
+- 不使用彩色轮廓光
+- 材质以轮廓、纹理密度和明暗区分
+- 阴影保持可读而非纯黑块
+- 远景颗粒少、前景纹理多
+- 雾有方向但不遮蔽平台
+- 剪影不是失焦或低曝光
+- 游戏路径仍然清楚
+- 不复制来源关卡和怪物
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

@@ -1,0 +1,22 @@
+canonical_name: 霓虹黑色三维游戏美术
+entity_type: neon_noir_3d_game_art_direction
+origin: noir_cinema_and_real_time_urban_environment_lighting
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - rainy_alley
+  - elevated_city
+  - interior_noir
+  - night_vehicle_scene
+  exclusions:
+  - uniform_cyan_orange_filter
+  - floating_neon
+  - unreadable_darkness
+  - copied_city_layout
+sources:
+- https://annapurnainteractive.com/games/stray
+rendering:
+  model: low-key 3D noir environment with localized emissive and reflective materials
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

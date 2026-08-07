@@ -1,0 +1,31 @@
+{
+  "name": "stop-motion-clay-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "rust",
+      "hex": "#98594A",
+      "role": "aged_metal"
+    },
+    {
+      "name": "denim",
+      "hex": "#526B78",
+      "role": "cloth_and_cool_surface"
+    },
+    {
+      "name": "cream",
+      "hex": "#DED2B6",
+      "role": "model_light"
+    },
+    {
+      "name": "ochre",
+      "hex": "#B58A4E",
+      "role": "wood_and_warm_light"
+    },
+    {
+      "name": "soot",
+      "hex": "#30363B",
+      "role": "deep_joint"
+    }
+  ]
+}

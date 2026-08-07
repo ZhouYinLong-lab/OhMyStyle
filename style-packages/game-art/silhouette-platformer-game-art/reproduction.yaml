@@ -1,0 +1,15 @@
+medium: 2.5D silhouette platformer scene with backlight and atmospheric depth
+materials:
+- 剪影层
+- 柔焦背景
+- 体积雾
+- 少量粒子
+- 粗糙地面材质
+process:
+- 先画可玩平台和角色轮廓
+- 再安排逆光与远近层
+- 加入有限材质细节
+- 最后测试低对比缩略图可读性
+technical_direction: 避免把主体压成纯黑；保留足够边缘和内部分块以支持识别。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

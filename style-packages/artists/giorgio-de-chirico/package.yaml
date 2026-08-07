@@ -1,0 +1,16 @@
+id: giorgio-de-chirico
+name: 乔治·德·基里科
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 以空旷广场、长阴影、古典建筑、雕像与不合时宜的物体构成形而上绘画，强调静止空间中的悬置感与谜题感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

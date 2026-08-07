@@ -1,0 +1,14 @@
+medium: stylized 3D render with cel-shaded lighting and restrained hand-painted accents
+materials:
+- 简化法线或平面化材质
+- 低频手绘纹理
+- 受控轮廓线或边缘墨色
+- 分层环境雾
+process:
+- 先搭建可读空间和主体剪影
+- 再划分大块色面与光照带
+- 最后加入少量材质笔触和环境细节
+- 以轮廓、明暗和色组检查统一性
+technical_direction: 保持正交或中等透视，避免过度景深；把细节密度集中在焦点区域。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

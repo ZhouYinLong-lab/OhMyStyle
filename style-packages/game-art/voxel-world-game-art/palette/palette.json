@@ -1,0 +1,31 @@
+{
+  "name": "voxel-world-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "dirt",
+      "hex": "#8A5A3B",
+      "role": "soil"
+    },
+    {
+      "name": "grass",
+      "hex": "#6A923F",
+      "role": "vegetation"
+    },
+    {
+      "name": "stone",
+      "hex": "#8A8D84",
+      "role": "rock"
+    },
+    {
+      "name": "water",
+      "hex": "#4F91AF",
+      "role": "water"
+    },
+    {
+      "name": "wood",
+      "hex": "#B27B45",
+      "role": "structures"
+    }
+  ]
+}

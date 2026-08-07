@@ -1,0 +1,16 @@
+id: papercraft-diorama-game-art
+name: 纸艺立体书游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 将场景拆成纸张、折痕、剪影和层叠立体结构，使用真实纸艺的边缘、阴影与轻微手作误差构成可游玩的微型世界。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

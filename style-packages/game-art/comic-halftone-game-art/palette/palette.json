@@ -1,0 +1,31 @@
+{
+  "name": "comic-halftone-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "ink",
+      "hex": "#171B25",
+      "role": "line_and_shadow"
+    },
+    {
+      "name": "cream",
+      "hex": "#E7D9B8",
+      "role": "paper"
+    },
+    {
+      "name": "teal",
+      "hex": "#3C747A",
+      "role": "cool_plane"
+    },
+    {
+      "name": "brick",
+      "hex": "#A84A3E",
+      "role": "focal_color"
+    },
+    {
+      "name": "gold",
+      "hex": "#D3A552",
+      "role": "warm_accent"
+    }
+  ]
+}

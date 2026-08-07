@@ -1,0 +1,16 @@
+id: saul-leiter
+name: 索尔·雷特
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 以彩色街头摄影中的遮挡、反射、雨雪、玻璃和低饱和色块构成近距离诗意观察，强调焦点不确定性与日常中的抽象关系。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

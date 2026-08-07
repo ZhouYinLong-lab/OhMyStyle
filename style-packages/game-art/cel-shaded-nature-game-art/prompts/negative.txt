@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- photorealistic_pbr
+- generic_anime_screenshot
+- copied_named_character
+- uncontrolled_ink_noise

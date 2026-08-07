@@ -1,0 +1,31 @@
+{
+  "name": "watercolor-storybook-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "twilight_blue",
+      "hex": "#6C8FA8",
+      "role": "cool_distance"
+    },
+    {
+      "name": "lavender",
+      "hex": "#9E8FBE",
+      "role": "atmospheric_shadow"
+    },
+    {
+      "name": "cream",
+      "hex": "#F1DBA3",
+      "role": "paper_light"
+    },
+    {
+      "name": "coral",
+      "hex": "#D77765",
+      "role": "focal_warmth"
+    },
+    {
+      "name": "moss",
+      "hex": "#788C68",
+      "role": "vegetation"
+    }
+  ]
+}

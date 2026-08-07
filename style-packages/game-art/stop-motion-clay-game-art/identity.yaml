@@ -1,0 +1,23 @@
+canonical_name: 黏土定格游戏美术
+entity_type: clay_stop_motion_game_art_direction
+origin: physical_modelmaking_stop_motion_and_game_environment_art
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - handmade_interior
+  - miniature_character
+  - tactile_vehicle
+  - model_set_scene
+  exclusions:
+  - smooth_cgi_only
+  - perfect_plastic_surface
+  - copied_puppet
+  - horror_body_detail
+sources:
+- https://press.haroldhalibut.com/sheet.php?p=harold_halibut
+rendering:
+  model: handmade clay-and-model-set game scene photographed or rendered as a tactile
+    diorama
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

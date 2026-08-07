@@ -1,0 +1,22 @@
+canonical_name: 乔治·德·基里科
+entity_type: artist_metaphysical_cityscape_painting
+origin: italian_metaphysical_painting
+period: 1888_to_1978
+domain: painting
+scope:
+  use_cases:
+  - empty_square
+  - coastal_architecture
+  - symbolic_still_life
+  - dream_city
+  exclusions:
+  - generic_surrealism
+  - busy_city_scene
+  - random_object_collage
+  - copied_landmark
+sources:
+- https://fondazionedechirico.org/en/giorgio-de-chirico/
+rendering:
+  model: metaphysical oil-painting cityscape with simplified classical forms
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

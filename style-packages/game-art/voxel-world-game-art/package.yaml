@@ -1,0 +1,16 @@
+id: voxel-world-game-art
+name: 体素世界游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以可拆分、可堆叠的立方体体素作为场景基本单位，强调模块化地形、块面光照和从局部方块到整体景观的尺度一致性。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

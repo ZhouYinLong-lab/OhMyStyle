@@ -1,0 +1,22 @@
+canonical_name: 剪影光影平台游戏美术
+entity_type: silhouette_platformer_game_art_direction
+origin: silhouette_cinematic_platformer_design
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - forest_platform
+  - industrial_ruin
+  - creature_silhouette
+  - atmospheric_jump
+  exclusions:
+  - pure_black_everywhere
+  - hidden_playability
+  - horror_gore
+  - copied_character
+sources:
+- https://playdead.com/games/limbo/
+rendering:
+  model: 2.5D silhouette platformer scene with backlight and atmospheric depth
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

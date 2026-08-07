@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 几何形状和留白建立清晰层级
+- 交互物有视觉优先级
+- 每一组元素保持可扫描的间距
+- 使用三到六个主色及中性底色
+- 色相差优先于复杂渐变
+- 危险、目标和可移动物有稳定色码
+- 平面插画
+- 简化三维或二维形体
+- 圆角、硬边和阴影层按语义使用
+- 光照弱化为形状阴影
+- 不依赖镜面高光
+- 少量柔和投影帮助物体落地
+- 表面近似干净纸卡或哑光材质
+- 形状优先于纹理
+- 纹理稀少、低频、可被关闭
+- 不使用噪声填空
+- 不看文字也能理解层级
+- 平面形状和色码稳定
+- 不得复制原作界面或关卡
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

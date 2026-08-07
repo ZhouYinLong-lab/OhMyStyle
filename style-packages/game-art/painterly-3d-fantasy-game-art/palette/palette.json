@@ -1,0 +1,31 @@
+{
+  "name": "painterly-3d-fantasy-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "deep_teal",
+      "hex": "#264C52",
+      "role": "forest_depth"
+    },
+    {
+      "name": "violet",
+      "hex": "#655A7C",
+      "role": "shadow_atmosphere"
+    },
+    {
+      "name": "amber",
+      "hex": "#D9A45C",
+      "role": "magic_light"
+    },
+    {
+      "name": "cream",
+      "hex": "#EDE1B8",
+      "role": "luminous_detail"
+    },
+    {
+      "name": "moss",
+      "hex": "#6E8764",
+      "role": "foliage"
+    }
+  ]
+}

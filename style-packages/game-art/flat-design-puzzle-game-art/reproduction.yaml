@@ -1,0 +1,14 @@
+medium: flat graphic puzzle illustration with optional minimal 3D depth
+materials:
+- 纯色填充
+- 有限阴影层
+- 简化矢量或哑光三维面
+- 中性背景
+process:
+- 先画信息层级和交互路径
+- 再分配色码和几何形状
+- 用最少阴影表示深度
+- 最后清除不必要装饰
+technical_direction: 边缘必须干净，颜色可测量；不要以渐变和高光替代结构。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

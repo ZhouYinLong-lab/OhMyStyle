@@ -1,0 +1,31 @@
+{
+  "name": "ivan-aivazovsky",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "deep_sea",
+      "hex": "#274C6B",
+      "role": "water_depth"
+    },
+    {
+      "name": "slate",
+      "hex": "#718B9A",
+      "role": "cloud_and_distance"
+    },
+    {
+      "name": "silver",
+      "hex": "#D8D9C9",
+      "role": "moonlight"
+    },
+    {
+      "name": "gold",
+      "hex": "#D6A35E",
+      "role": "warm_sunlight"
+    },
+    {
+      "name": "rose",
+      "hex": "#B96F69",
+      "role": "dusk_accent"
+    }
+  ]
+}

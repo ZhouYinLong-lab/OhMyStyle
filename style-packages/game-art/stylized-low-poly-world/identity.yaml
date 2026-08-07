@@ -1,0 +1,22 @@
+canonical_name: 风格化低多边形世界游戏美术
+entity_type: low_poly_3d_game_art_direction
+origin: stylized_mobile_3d_and_low_polygon_modeling
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - explorable_landscape
+  - stylized_architecture
+  - toy_like_prop
+  - calm_environment
+  exclusions:
+  - high_poly_realism
+  - noisy_material_scan
+  - impossible_geometry_as_default
+  - copied_landmark
+sources:
+- https://ustwo.com/work/monument-valley/
+rendering:
+  model: low-poly 3D scene with graphic planes and soft stylized lighting
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

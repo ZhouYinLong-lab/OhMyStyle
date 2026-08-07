@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">索尔·雷特 palette card</title>
+  <desc id="desc">以彩色街头摄影中的遮挡、反射、雨雪、玻璃和低饱和色块构成近距离诗意观察，强调焦点不确定性与日常中的抽象关系。</desc>
+  <rect width="1600" height="900" fill="#10151D"/>
+  <circle cx="1280" cy="240" r="250" fill="#A84945" opacity="0.85"/>
+  <circle cx="1030" cy="360" r="190" fill="#C39A4E" opacity="0.85"/>
+  <path d="M0 520 C280 360 510 690 800 500 S1260 330 1600 520 V900 H0 Z" fill="#30485E" opacity="0.9"/>
+  <path d="M0 640 C280 520 530 760 880 610 S1260 520 1600 680 V900 H0 Z" fill="#9A7487" opacity="0.9"/>
+  <rect x="80" y="600" width="248" height="150" rx="18" fill="#A84945"/><text x="98" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">brick</text><rect x="368" y="600" width="248" height="150" rx="18" fill="#C39A4E"/><text x="386" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">mustard</text><rect x="656" y="600" width="248" height="150" rx="18" fill="#30485E"/><text x="674" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">navy</text><rect x="944" y="600" width="248" height="150" rx="18" fill="#9A7487"/><text x="962" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">mauve</text><rect x="1232" y="600" width="248" height="150" rx="18" fill="#7C8B7F"/><text x="1250" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">graygreen</text>
+  <text x="80" y="120" font-family="sans-serif" font-size="52" font-weight="700" fill="#F5F1E8">索尔·雷特</text>
+  <text x="80" y="175" font-family="sans-serif" font-size="24" fill="#C8D0D8">版权安全的抽象色板卡 · 可替换为已获授权的代表图</text>
+</svg>

@@ -1,0 +1,22 @@
+canonical_name: 艾格尼丝·马丁
+entity_type: artist_minimal_grid_painting
+origin: american_minimal_and_abstract_painting
+period: 1912_to_2004
+domain: painting
+scope:
+  use_cases:
+  - minimal_poster
+  - quiet_wall
+  - abstract_background
+  - meditative_composition
+  exclusions:
+  - perfect_digital_grid
+  - loud_gradient
+  - decorative_pattern
+  - copied_grid_spacing
+sources:
+- https://www.guggenheim.org/exhibition/agnes-martin
+rendering:
+  model: quiet minimal painting with hand-drawn grids and low-contrast color bands
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

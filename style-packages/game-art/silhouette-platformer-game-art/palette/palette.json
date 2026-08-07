@@ -1,0 +1,31 @@
+{
+  "name": "silhouette-platformer-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "soot",
+      "hex": "#1E232B",
+      "role": "silhouette"
+    },
+    {
+      "name": "slate",
+      "hex": "#56626D",
+      "role": "midground"
+    },
+    {
+      "name": "fog",
+      "hex": "#A9B5B7",
+      "role": "haze"
+    },
+    {
+      "name": "bone",
+      "hex": "#DED8C4",
+      "role": "backlight"
+    },
+    {
+      "name": "rust",
+      "hex": "#8B4C43",
+      "role": "warning_accent"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+id: cel-shaded-nature-game-art
+name: 卡通渲染自然冒险游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以平面化明暗、清晰轮廓和书法式形体组织三维自然冒险场景，强调图形设计与手绘质感的协同。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

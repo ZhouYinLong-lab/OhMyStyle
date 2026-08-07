@@ -1,0 +1,22 @@
+canonical_name: 风格化PBR科幻游戏美术
+entity_type: stylized_pbr_sci_fi_game_art_direction
+origin: stylized_real_time_pbr_environment_art
+period: 2020s
+domain: game_art
+scope:
+  use_cases:
+  - urban_sci_fi
+  - industrial_alley
+  - robot_or_vehicle_scene
+  - rain_wet_surface
+  exclusions:
+  - generic_cyberpunk_gradient
+  - unreadable_neon
+  - copied_cityscape
+  - plastic_everything
+sources:
+- https://annapurnainteractive.com/games/stray
+rendering:
+  model: stylized real-time PBR sci-fi environment render
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

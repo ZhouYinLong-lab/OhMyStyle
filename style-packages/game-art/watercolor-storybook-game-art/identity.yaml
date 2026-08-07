@@ -1,0 +1,22 @@
+canonical_name: 水彩绘本冒险游戏美术
+entity_type: watercolor_2d_game_art_direction
+origin: interactive_picture_book_and_watercolor_concept_art
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - storybook_landscape
+  - gentle_adventure
+  - character_vignette
+  - illustrated_map
+  exclusions:
+  - plastic_3d_render
+  - neon_cyberpunk
+  - hard_vector_flatness
+  - copied_game_scene
+sources:
+- https://www.ubisoft.com/en-us/company/about-us/our-brands/child-of-light
+rendering:
+  model: 2D watercolor illustration assembled into an explorable game scene
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

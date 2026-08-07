@@ -1,0 +1,31 @@
+{
+  "name": "impossible-architecture-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "ink",
+      "hex": "#2D3047",
+      "role": "deep_shadow"
+    },
+    {
+      "name": "rose",
+      "hex": "#C77D8A",
+      "role": "architecture"
+    },
+    {
+      "name": "mint",
+      "hex": "#9BC9B5",
+      "role": "cool_plane"
+    },
+    {
+      "name": "gold",
+      "hex": "#E8B95E",
+      "role": "interactive_accent"
+    },
+    {
+      "name": "sky",
+      "hex": "#A8C9D5",
+      "role": "background"
+    }
+  ]
+}

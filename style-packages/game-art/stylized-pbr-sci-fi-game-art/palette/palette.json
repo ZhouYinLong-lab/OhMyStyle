@@ -1,0 +1,31 @@
+{
+  "name": "stylized-pbr-sci-fi-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "night",
+      "hex": "#101C2B",
+      "role": "architecture_shadow"
+    },
+    {
+      "name": "cyan",
+      "hex": "#3F9EA6",
+      "role": "cool_light"
+    },
+    {
+      "name": "amber",
+      "hex": "#E8A24B",
+      "role": "warm_light"
+    },
+    {
+      "name": "magenta",
+      "hex": "#B34C86",
+      "role": "distant_accent"
+    },
+    {
+      "name": "concrete",
+      "hex": "#858C8A",
+      "role": "neutral_material"
+    }
+  ]
+}

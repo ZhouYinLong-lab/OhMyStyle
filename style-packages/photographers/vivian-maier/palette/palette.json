@@ -1,0 +1,31 @@
+{
+  "name": "vivian-maier",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "silver",
+      "hex": "#B8B6AD",
+      "role": "highlight"
+    },
+    {
+      "name": "charcoal",
+      "hex": "#303438",
+      "role": "shadow"
+    },
+    {
+      "name": "denim",
+      "hex": "#526C7B",
+      "role": "muted_color"
+    },
+    {
+      "name": "brick",
+      "hex": "#9A5548",
+      "role": "incidental_accent"
+    },
+    {
+      "name": "cream",
+      "hex": "#D9D0BA",
+      "role": "light_neutral"
+    }
+  ]
+}

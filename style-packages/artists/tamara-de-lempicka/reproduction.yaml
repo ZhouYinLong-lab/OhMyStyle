@@ -1,0 +1,14 @@
+medium: geometric Art Deco oil-painting direction with polished planar volumes
+materials:
+- 平滑油彩
+- 薄层罩染
+- 硬边色面
+- 少量金属或石材质感
+process:
+- 先用几何体块建模
+- 再确定姿态与明暗切面
+- 分配高对比色组
+- 最后控制表面平滑度
+technical_direction: 强调清晰轮廓和大明暗；避免将人物处理成塑料3D渲染。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

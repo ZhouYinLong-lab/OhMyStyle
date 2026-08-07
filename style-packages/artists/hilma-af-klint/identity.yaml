@@ -1,0 +1,22 @@
+canonical_name: 希尔玛·艾夫·克林特
+entity_type: artist_abstract_symbolic_painting
+origin: swedish_early_abstract_painting
+period: 1862_to_1944
+domain: painting
+scope:
+  use_cases:
+  - abstract_diagram
+  - symbolic_poster
+  - geometric_mural
+  - nonfigurative_composition
+  exclusions:
+  - literal_occult_claim
+  - copied_series_layout
+  - generic_color_gradient
+  - readable_esoteric_text
+sources:
+- https://www.guggenheim.org/wp-content/uploads/2018/06/gugg-press_Hilma-af-Klint_PressRelease_1519_20180913.pdf
+rendering:
+  model: symbolic geometric painting with tempera-like matte color fields
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

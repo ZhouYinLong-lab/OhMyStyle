@@ -1,0 +1,16 @@
+id: vivian-maier
+name: 维维安·迈尔
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 以中画幅街头观察、人物与城市细节的偶然关系、方形或接近方形构图和自然光影记录日常，不把被摄者包装成广告人物。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

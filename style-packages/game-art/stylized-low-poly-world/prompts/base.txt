@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 大块几何体先建立层级
+- 道路、台阶和平台提供清晰路径
+- 孤立主体与大面积留白并存
+- 柔和粉彩、蓝绿、珊瑚、沙色和深紫组成有限色组
+- 不同平面用色相或明度轻微区分
+- 焦点色有限
+- 低多边形模型
+- 平滑或平面法线按对象选择
+- 哑光或半哑光材质
+- 单一主光方向清楚
+- 阴影柔和但可读
+- 环境光只做统一补偿
+- 材质表现依靠形体和面色，不靠高清纹理
+- 边缘和倒角适度
+- 表面干净、低频、少量手工色差
+- 不添加随机颗粒
+- 形体简化是主动设计而非低清损失
+- 同一场景共享尺度与材质语言
+- 不得复刻特定游戏建筑
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

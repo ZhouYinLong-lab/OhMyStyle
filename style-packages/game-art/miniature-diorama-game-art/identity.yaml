@@ -1,0 +1,22 @@
+canonical_name: 微缩模型场景游戏美术
+entity_type: miniature_diorama_game_art_direction
+origin: diorama_modelmaking_and_stylized_3d_adventure
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - small_village
+  - forest_clearing
+  - puzzle_diorama
+  - cozy_environment
+  exclusions:
+  - unclear_scale
+  - giant_photo_texture
+  - plastic_toy_gloss
+  - copied_scene
+sources:
+- https://thelastcampfiregame.com/
+rendering:
+  model: stylized 3D miniature diorama with soft game lighting
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

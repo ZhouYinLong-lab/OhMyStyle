@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">微缩模型场景游戏美术 palette card</title>
+  <desc id="desc">把游戏环境设计成具有微缩模型尺度的立体场景，依靠圆润造型、柔和阴影和小物件比例建立亲切但不幼稚的空间。</desc>
+  <rect width="1600" height="900" fill="#10151D"/>
+  <circle cx="1280" cy="240" r="250" fill="#6F8563" opacity="0.85"/>
+  <circle cx="1030" cy="360" r="190" fill="#8E6248" opacity="0.85"/>
+  <path d="M0 520 C280 360 510 690 800 500 S1260 330 1600 520 V900 H0 Z" fill="#E5D3AC" opacity="0.9"/>
+  <path d="M0 640 C280 520 530 760 880 610 S1260 520 1600 680 V900 H0 Z" fill="#6D7E87" opacity="0.9"/>
+  <rect x="80" y="600" width="248" height="150" rx="18" fill="#6F8563"/><text x="98" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">moss</text><rect x="368" y="600" width="248" height="150" rx="18" fill="#8E6248"/><text x="386" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">soil</text><rect x="656" y="600" width="248" height="150" rx="18" fill="#E5D3AC"/><text x="674" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">cream</text><rect x="944" y="600" width="248" height="150" rx="18" fill="#6D7E87"/><text x="962" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">slate</text><rect x="1232" y="600" width="248" height="150" rx="18" fill="#D27B45"/><text x="1250" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">ember</text>
+  <text x="80" y="120" font-family="sans-serif" font-size="52" font-weight="700" fill="#F5F1E8">微缩模型场景游戏美术</text>
+  <text x="80" y="175" font-family="sans-serif" font-size="24" fill="#C8D0D8">版权安全的抽象色板卡 · 可替换为已获授权的代表图</text>
+</svg>

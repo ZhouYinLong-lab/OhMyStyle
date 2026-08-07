@@ -1,0 +1,16 @@
+id: stop-motion-clay-game-art
+name: 黏土定格游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以真实手工搭建的黏土角色、焊接金属、布料和微缩木工为基础，保留指痕、接缝、模型尺度和定格动画般的逐帧生命感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

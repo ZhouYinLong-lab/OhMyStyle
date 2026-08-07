@@ -1,0 +1,22 @@
+canonical_name: 纸艺立体书游戏美术
+entity_type: papercraft_diorama_game_art_direction
+origin: physical_papercraft_and_diorama_design
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - miniature_landscape
+  - playful_interface
+  - craft_world
+  - character_scene
+  exclusions:
+  - photorealistic_material_scan
+  - seamless_cgi_surface
+  - random_collage
+  - copied_game_asset
+sources:
+- https://blog.playstation.com/2013/09/13/tearaway-building-your-own-papercraft-world/
+rendering:
+  model: paper-craft diorama with layered cutouts and miniature lighting
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

@@ -1,0 +1,15 @@
+medium: low-key 3D noir environment with localized emissive and reflective materials
+materials:
+- 湿沥青
+- 玻璃
+- 锈蚀金属
+- 混凝土
+- 有限发光面
+process:
+- 先确定遮挡与主光源
+- 再分配材质粗糙度
+- 设置局部色光与反射
+- 最后检查暗部是否仍有层次
+technical_direction: 光源数量少而明确；所有彩色反射都要能追溯到画面内的光源。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

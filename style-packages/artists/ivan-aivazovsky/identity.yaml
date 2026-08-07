@@ -1,0 +1,22 @@
+canonical_name: 伊万·艾瓦佐夫斯基
+entity_type: artist_romantic_marine_painting
+origin: nineteenth_century_russian_romantic_seascape
+period: 1817_to_1900
+domain: painting
+scope:
+  use_cases:
+  - open_sea
+  - storm_coast
+  - moonlit_harbor
+  - ship_and_horizon
+  exclusions:
+  - flat_blue_background
+  - arbitrary_ship_copy
+  - digital_glow
+  - generic_ocean_photo
+sources:
+- https://www.tretyakovgallery.ru/en/collection/ivan-aivazovsky/
+rendering:
+  model: romantic oil seascape with layered atmosphere and directional water strokes
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

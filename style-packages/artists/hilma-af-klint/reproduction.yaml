@@ -1,0 +1,14 @@
+medium: symbolic geometric painting with tempera-like matte color fields
+materials:
+- 哑光绘画底
+- 蛋彩或薄层油彩
+- 细线勾勒
+- 有限叠色
+process:
+- 先建立轴线与几何骨架
+- 再分配互补色和层级
+- 最后加入少量手绘边缘变化
+- 检查符号系统是否独立于具体原作
+technical_direction: 保持二维平面和色面完整；避免把抽象元素转成发光UI。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

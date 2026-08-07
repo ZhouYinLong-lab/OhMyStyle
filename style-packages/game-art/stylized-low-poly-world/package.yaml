@@ -1,0 +1,16 @@
+id: stylized-low-poly-world
+name: 风格化低多边形世界游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 通过少量大平面、简化轮廓、克制材质和明确光照构成可探索的低多边形三维世界，强调造型选择而非模型细节。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

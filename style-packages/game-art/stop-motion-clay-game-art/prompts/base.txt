@@ -1,0 +1,20 @@
+Create a new subject and composition using these observable visual decisions:
+- 场景像真实模型台或小型布景
+- 角色与道具共享可见比例
+- 前景物体保留手工搭建的重量
+- 暖灰、锈红、旧蓝、乳白和土黄构成复古工业色组
+- 颜色有材料差异而非统一滤镜
+- 局部亮色作为功能焦点
+- 黏土、布料、木板、焊接金属和模型涂料
+- 真实景深但不极端微缩模糊
+- 模型摄影棚的柔和主光
+- 接触阴影和缝隙阴影清楚
+- 光线不做塑料反射
+- 指痕、压痕、缝线、刮痕和不完全平整是结构信息
+- 不同材料可凭触感区分
+- 微小手工误差有节奏
+- 不覆盖成统一颗粒
+- 手工来源从表面、比例和边缘同时体现
+- 空间真实可站立
+- 不复制游戏角色和道具
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

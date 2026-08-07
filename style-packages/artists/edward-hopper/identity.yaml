@@ -1,0 +1,22 @@
+canonical_name: 爱德华·霍普
+entity_type: artist_modern_realist_scene_painting
+origin: american_modern_scene_painting
+period: 1882_to_1967
+domain: painting
+scope:
+  use_cases:
+  - urban_interior
+  - coastal_house
+  - roadside_scene
+  - solitary_figure
+  exclusions:
+  - melodramatic_expression
+  - generic_cinematic_filter
+  - copied_building
+  - crowded_scene
+sources:
+- https://whitney.org/artists/621
+rendering:
+  model: modern realist oil-painting scene with geometric light and quiet distance
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

@@ -1,0 +1,14 @@
+medium: quiet minimal painting with hand-drawn grids and low-contrast color bands
+materials:
+- 细铅笔线
+- 哑光画布或纸
+- 薄层低饱和颜料
+- 精细遮罩或尺规辅助
+process:
+- 先确定边缘与留白比例
+- 再建立线性网格
+- 用低对比色带分层
+- 最后保留少量不机械偏差
+technical_direction: 不要生成完全无瑕的UI网格；线条应轻微受材料与手部影响。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.
