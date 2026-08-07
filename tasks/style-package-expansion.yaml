@@ -1,0 +1,678 @@
+schema_version: "1.0.0"
+purpose: "Reference-backed expansion set: 15 game-art directions and 10 artist/photographer packages."
+packages:
+  - id: cel-shaded-nature-game-art
+    name: 卡通渲染自然冒险游戏美术
+    name_en: Cel-Shaded Nature Adventure Game Art
+    kind: game_art
+    domain: game_art
+    summary: "以平面化明暗、清晰轮廓和书法式形体组织三维自然冒险场景，强调图形设计与手绘质感的协同。"
+    summary_en: "A stylized 3D nature-adventure direction using banded shading, crisp contours, graphic silhouettes, and hand-drawn surface accents."
+    source: {url: "https://www.capcom.co.jp/ir/english/news/pdf/e090903.pdf", title: "Ōkami official company material", authority: "Capcom", attribution: "Ōkami is a commercial work by Capcom; this package is an independent analysis of observable production traits."}
+    origin: "stylized_console_action_adventure"
+    period: "2000s_to_present"
+    entity_type: "cel_shaded_3d_game_art_direction"
+    use_cases: [nature_scene, shrine_or_ruin, character_action, environmental_concept]
+    exclusions: [photorealistic_pbr, generic_anime_screenshot, copied_named_character, uncontrolled_ink_noise]
+    signature:
+      composition: ["以清晰前中后景和大块轮廓组织空间", "让路径、树枝、山脊或建筑线条承担视线引导", "主体轮廓先于细节建立"]
+      palette: ["自然绿、土黄、朱红、群青和墨色形成有限色组", "高饱和色用于焦点和自然能量，不做全局滤镜", "明暗分区优先于细密渐变"]
+      medium: ["三维模型结合平面化着色", "局部保留手绘笔触或纸墨边缘", "轮廓与材质由图形语言统一"]
+      lighting: ["使用分段明暗而非连续写实渐变", "日光、月光或神秘光源形成明确色温关系", "阴影保持形状清楚"]
+      surface: ["木、石、叶片和布料各自保留简化但可辨的表面逻辑", "高光面积受控"]
+      texture: ["纹理跟随材质方向，避免随机噪点", "边缘可有少量手绘破笔但不能覆盖轮廓"]
+      invariants: ["三维空间仍然可信", "明暗块面和轮廓优先", "不得复制来源游戏的角色、标志或构图"]
+    reproduction:
+      medium: "stylized 3D render with cel-shaded lighting and restrained hand-painted accents"
+      materials: ["简化法线或平面化材质", "低频手绘纹理", "受控轮廓线或边缘墨色", "分层环境雾"]
+      process: ["先搭建可读空间和主体剪影", "再划分大块色面与光照带", "最后加入少量材质笔触和环境细节", "以轮廓、明暗和色组检查统一性"]
+      technical: "保持正交或中等透视，避免过度景深；把细节密度集中在焦点区域。"
+    palette: [{name: ink, hex: "#1D2430", role: contour_and_deep_shadow}, {name: leaf, hex: "#587449", role: foliage}, {name: ochre, hex: "#C49245", role: earth_and_warm_light}, {name: vermilion, hex: "#C84B39", role: focal_accent}, {name: sky, hex: "#6E91B5", role: cool_distance}]
+  - id: hand-inked-animation-game-art
+    name: 手绘墨线动画游戏美术
+    name_en: Hand-Inked Animation Game Art
+    kind: game_art
+    domain: game_art
+    summary: "以逐帧手绘的弹性动作、黑色墨线、复古卡通比例和水彩背景组织二维游戏画面，保留人工绘制的不完美节奏。"
+    summary_en: "A 2D game direction built from hand-inked motion, elastic cartoon anatomy, vintage staging, and watercolor-like backgrounds with deliberate imperfections."
+    source: {url: "https://studiomdhr.com/what-kind-of-game-is-cuphead/", title: "What kind of game is Cuphead?", authority: "Studio MDHR", attribution: "Cuphead is a commercial work by Studio MDHR; this package abstracts its production traits without reproducing characters or scenes."}
+    origin: "hand_drawn_animation_and_1930s_cartoon_production"
+    period: "2010s_to_present"
+    entity_type: "hand_inked_2d_game_art_direction"
+    use_cases: [character_action, boss_scene, stage_card, expressive_prop]
+    exclusions: [smooth_vector_icon, realistic_anatomy, photorealistic_texture, copied_cartoon_character]
+    signature:
+      composition: ["动作姿态有明确弧线和夸张重心", "前景角色与背景层次分离", "画面重心清楚但允许舞台化留白"]
+      palette: ["黑、奶油白、暗红、黄绿和暖棕构成复古有限色板", "背景通常比角色低对比", "局部高饱和用于动作焦点"]
+      medium: ["可见的铅笔或墨线轮廓", "手绘填色和水彩式背景", "线条粗细随动作和透视变化"]
+      lighting: ["舞台灯光与大块阴影清楚", "高光为绘制形状而非摄影反射", "不依赖霓虹发光"]
+      surface: ["纸张、墨水、旧动画片的轻微不均匀感", "角色边缘不做数字锐化光晕"]
+      texture: ["少量胶片抖动、纸张颗粒和水彩渗化", "纹理必须服从画面节奏"]
+      invariants: ["动作先于真实比例", "手绘线条和二维舞台关系保持稳定", "不得复制已知角色或镜头"]
+    reproduction:
+      medium: "hand-drawn 2D animation frame with ink contours and painted background"
+      materials: ["铅笔草图", "墨线", "水彩或不透明水彩背景", "有限色彩分层", "轻微纸张颗粒"]
+      process: ["先确定动作弧线和轮廓", "再绘制线稿与大色块", "随后加入背景笔触和有限阴影", "最后检查线条连贯性与角色可读性"]
+      technical: "保留手绘边缘和少量线宽变化；不使用光滑矢量渐变替代绘制层次。"
+    palette: [{name: ink, hex: "#1A1718", role: linework}, {name: paper, hex: "#F0E0B6", role: paper_light}, {name: brick, hex: "#A83F35", role: focal_red}, {name: mustard, hex: "#C09A39", role: warm_background}, {name: sage, hex: "#71805A", role: muted_cool_accent}]
+  - id: watercolor-storybook-game-art
+    name: 水彩绘本冒险游戏美术
+    name_en: Watercolor Storybook Adventure Game Art
+    kind: game_art
+    domain: game_art
+    summary: "把可游玩的二维空间处理成带纸张、透明水彩和童话留白的绘本画面，依靠柔和层叠与手绘轮廓保持空间可读性。"
+    summary_en: "A playable picture-book direction using translucent watercolor layers, paper tooth, gentle contours, and readable 2D depth without hard digital gloss."
+    source: {url: "https://www.ubisoft.com/en-us/company/about-us/our-brands/child-of-light", title: "Child of Light", authority: "Ubisoft", attribution: "Child of Light is a commercial work by Ubisoft; this package studies its watercolor-inspired production language."}
+    origin: "interactive_picture_book_and_watercolor_concept_art"
+    period: "2010s_to_present"
+    entity_type: "watercolor_2d_game_art_direction"
+    use_cases: [storybook_landscape, gentle_adventure, character_vignette, illustrated_map]
+    exclusions: [plastic_3d_render, neon_cyberpunk, hard_vector_flatness, copied_game_scene]
+    signature:
+      composition: ["以纸面留白、飘浮层次和柔和地平线组织画面", "主体周围保留呼吸空间", "远景用透明叠色而非锐利细节"]
+      palette: ["天蓝、紫灰、淡金、珊瑚和苔绿组成低到中饱和水彩色组", "颜色允许相邻渗化但不变成脏灰", "焦点用少量清晰暖色"]
+      medium: ["透明水彩层叠", "纸张吸水边缘", "细而不僵硬的手绘轮廓", "数字拼合但保持绘本感觉"]
+      lighting: ["光线柔和并通过透明叠色表达", "月光或晨光有轻微色温变化", "禁止塑料高光"]
+      surface: ["纸纹与颜料颗粒可见但不压过形体", "水彩边缘自然收束"]
+      texture: ["云、树叶和水面使用方向性水痕", "纹理密度随景深降低"]
+      invariants: ["像绘本而不是带水彩滤镜的照片", "二维空间关系明确", "不得复制来源画面的具体人物和布局"]
+    reproduction:
+      medium: "2D watercolor illustration assembled into an explorable game scene"
+      materials: ["冷压纸纹理", "透明水彩层", "不透明白色修饰", "细线稿", "轻柔数字合成"]
+      process: ["先确定可玩空间和大留白", "按前中后景叠加透明色层", "再加入角色与可交互物的清晰轮廓", "最后控制纸纹与颜料边缘"]
+      technical: "保留透明叠色的明度层级；避免把每个物体都处理成相同锐度。"
+    palette: [{name: twilight_blue, hex: "#6C8FA8", role: cool_distance}, {name: lavender, hex: "#9E8FBE", role: atmospheric_shadow}, {name: cream, hex: "#F1DBA3", role: paper_light}, {name: coral, hex: "#D77765", role: focal_warmth}, {name: moss, hex: "#788C68", role: vegetation}]
+  - id: papercraft-diorama-game-art
+    name: 纸艺立体书游戏美术
+    name_en: Papercraft Diorama Game Art
+    kind: game_art
+    domain: game_art
+    summary: "将场景拆成纸张、折痕、剪影和层叠立体结构，使用真实纸艺的边缘、阴影与轻微手作误差构成可游玩的微型世界。"
+    summary_en: "A miniature game-world direction built from cut paper, folds, layered depth, soft cast shadows, and visible handmade variation."
+    source: {url: "https://blog.playstation.com/2013/09/13/tearaway-building-your-own-papercraft-world/", title: "Tearaway: Building Your Own Papercraft World", authority: "PlayStation and Media Molecule", attribution: "Tearaway is a commercial work by Sony and Media Molecule; this package abstracts paper-craft production traits."}
+    origin: "physical_papercraft_and_diorama_design"
+    period: "2010s_to_present"
+    entity_type: "papercraft_diorama_game_art_direction"
+    use_cases: [miniature_landscape, playful_interface, craft_world, character_scene]
+    exclusions: [photorealistic_material_scan, seamless_cgi_surface, random_collage, copied_game_asset]
+    signature:
+      composition: ["用前中后层纸片形成明确景深", "折叠、开窗、切口和悬挂结构可成为构图骨架", "画面像被放在桌上的小型剧场"]
+      palette: ["纸白、天蓝、珊瑚、草绿和暖黄组成明快色组", "同一物体保持单一主色和少量阴影", "避免全局灰褐滤镜"]
+      medium: ["彩纸、卡纸、瓦楞纸与胶水的视觉暗示", "边缘略有纤维和切割痕", "层间距离真实可读"]
+      lighting: ["柔和顶侧光投下纸片阴影", "折痕和层边用真实遮挡表现", "不使用发光轮廓"]
+      surface: ["纸张粗糙度和折痕是主要材质信号", "胶带或钉合只在需要时出现"]
+      texture: ["纤维、剪切边和轻微手工不齐", "纹理不可变成噪点滤镜"]
+      invariants: ["所有层都像同一套纸艺模型", "空间不是平面贴图拼贴", "不得复刻游戏角色或截图"]
+    reproduction:
+      medium: "paper-craft diorama with layered cutouts and miniature lighting"
+      materials: ["彩纸和卡纸", "纸板折面", "哑光胶水痕迹", "小型木质或纸质支撑", "柔和摄影棚光"]
+      process: ["先分层并确定遮挡关系", "再设计可见折痕和切口", "最后加入纸面色块与投影", "检查所有物体是否保持同一缩尺"]
+      technical: "优先使用真实遮挡、接触阴影和层间间隙表达体积，不用金属或塑料高光。"
+    palette: [{name: paper, hex: "#F3E8D1", role: paper_base}, {name: sky, hex: "#6FB5D6", role: background}, {name: coral, hex: "#E47767", role: focal_cutout}, {name: grass, hex: "#7FA36B", role: foliage}, {name: butter, hex: "#F3C968", role: warm_light}]
+  - id: voxel-world-game-art
+    name: 体素世界游戏美术
+    name_en: Voxel World Game Art
+    kind: game_art
+    domain: game_art
+    summary: "以可拆分、可堆叠的立方体体素作为场景基本单位，强调模块化地形、块面光照和从局部方块到整体景观的尺度一致性。"
+    summary_en: "A block-based world direction using modular voxel units, readable stepped terrain, flat material families, and consistent scale from props to landscapes."
+    source: {url: "https://www.minecraft.net/en-us/article/what-minecraft", title: "What is Minecraft?", authority: "Minecraft and Mojang", attribution: "Minecraft is a commercial work by Mojang and Microsoft; this package abstracts voxel construction principles without copying assets."}
+    origin: "block_based_sandbox_world_building"
+    period: "2000s_to_present"
+    entity_type: "voxel_3d_game_art_direction"
+    use_cases: [block_landscape, modular_building, resource_scene, stylized_world_map]
+    exclusions: [smooth_subdivision_surface, photorealistic_terrain, copied_game_texture, excessive_microdetail]
+    signature:
+      composition: ["用体素台阶和方块群形成清晰地形层级", "大型体块先于单方块装饰", "远景减少方块细节但保持块面节奏"]
+      palette: ["每类材料使用少量相邻色阶", "草、土、石、水和木有清晰颜色家族", "高亮块只用于路径、资源或焦点"]
+      medium: ["立方体或规则体素网格", "平面或阶梯化面法线", "材质通过方块颜色和面向区分"]
+      lighting: ["光照沿体素面分区", "接触阴影和体素遮挡清楚", "不使用大面积连续反射"]
+      surface: ["泥土、石块、木材和矿物各有有限图案", "表面细节服从体素尺度"]
+      texture: ["重复纹理需有模块变化", "避免把真实照片压成方块滤镜"]
+      invariants: ["几何体由可识别方块构成", "不同物体共享同一网格尺度", "不得使用来源游戏的独特材质贴图"]
+    reproduction:
+      medium: "voxel-based 3D scene with block-authored geometry"
+      materials: ["立方体体素", "有限色阶材质", "面向相关的阴影", "稀疏装饰方块"]
+      process: ["先确定网格尺度和大体块", "再分配材料色族", "随后补充可交互小物", "最后检查所有边缘和透视是否服从网格"]
+      technical: "使用正交或弱透视相机，保留方块边缘；避免平滑曲面和高频照片纹理。"
+    palette: [{name: dirt, hex: "#8A5A3B", role: soil}, {name: grass, hex: "#6A923F", role: vegetation}, {name: stone, hex: "#8A8D84", role: rock}, {name: water, hex: "#4F91AF", role: water}, {name: wood, hex: "#B27B45", role: structures}]
+  - id: stylized-low-poly-world
+    name: 风格化低多边形世界游戏美术
+    name_en: Stylized Low-Poly World Game Art
+    kind: game_art
+    domain: game_art
+    summary: "通过少量大平面、简化轮廓、克制材质和明确光照构成可探索的低多边形三维世界，强调造型选择而非模型细节。"
+    summary_en: "A stylized 3D world direction built from reduced polygon counts, broad planes, simplified silhouettes, restrained materials, and deliberate lighting."
+    source: {url: "https://ustwo.com/work/monument-valley/", title: "Monument Valley", authority: "ustwo games", attribution: "Monument Valley is a commercial work by ustwo; this package abstracts stylized 3D composition without reproducing its monuments."}
+    origin: "stylized_mobile_3d_and_low_polygon_modeling"
+    period: "2010s_to_present"
+    entity_type: "low_poly_3d_game_art_direction"
+    use_cases: [explorable_landscape, stylized_architecture, toy_like_prop, calm_environment]
+    exclusions: [high_poly_realism, noisy_material_scan, impossible_geometry_as_default, copied_landmark]
+    signature:
+      composition: ["大块几何体先建立层级", "道路、台阶和平台提供清晰路径", "孤立主体与大面积留白并存"]
+      palette: ["柔和粉彩、蓝绿、珊瑚、沙色和深紫组成有限色组", "不同平面用色相或明度轻微区分", "焦点色有限"]
+      medium: ["低多边形模型", "平滑或平面法线按对象选择", "哑光或半哑光材质"]
+      lighting: ["单一主光方向清楚", "阴影柔和但可读", "环境光只做统一补偿"]
+      surface: ["材质表现依靠形体和面色，不靠高清纹理", "边缘和倒角适度"]
+      texture: ["表面干净、低频、少量手工色差", "不添加随机颗粒"]
+      invariants: ["形体简化是主动设计而非低清损失", "同一场景共享尺度与材质语言", "不得复刻特定游戏建筑"]
+    reproduction:
+      medium: "low-poly 3D scene with graphic planes and soft stylized lighting"
+      materials: ["简化网格", "低频哑光材质", "少量面色变化", "软阴影"]
+      process: ["先确定主几何和视角", "再压缩材料与色彩", "用单一光源塑造面关系", "最后补充少量植物或道具"]
+      technical: "采用中长焦或等距感相机，减少广角畸变；保持轮廓干净和面数克制。"
+    palette: [{name: plum, hex: "#5F4E73", role: deep_plane}, {name: coral, hex: "#D77A6C", role: focal_plane}, {name: sand, hex: "#D7B583", role: ground}, {name: teal, hex: "#6C9F9B", role: cool_structure}, {name: cream, hex: "#F0E2C0", role: light_plane}]
+  - id: impossible-architecture-game-art
+    name: 等距幻觉建筑游戏美术
+    name_en: Isometric Impossible-Architecture Game Art
+    kind: game_art
+    domain: game_art
+    summary: "以等距视角、非欧几何连接、干净色面和可操作建筑机关组织谜题场景，画面优先呈现结构关系与视觉错觉。"
+    summary_en: "An isometric puzzle direction using impossible connections, clean color planes, legible mechanisms, and architectural illusions that remain readable as game spaces."
+    source: {url: "https://gdcvault.com/play/1022299/The-Art-of-Monument", title: "The Art of Monument Valley", authority: "GDC Vault and ustwo", attribution: "Monument Valley is a commercial work by ustwo; this package abstracts isometric design principles without reproducing its structures."}
+    origin: "isometric_puzzle_architecture_and_optical_illusion"
+    period: "2010s_to_present"
+    entity_type: "isometric_architectural_game_art_direction"
+    use_cases: [puzzle_room, monument, impossible_stair, abstract_city]
+    exclusions: [random_perspective_break, photorealistic_architecture, unreadable_mechanism, copied_level_layout]
+    signature:
+      composition: ["等距轴线清楚", "平台、楼梯、桥和门形成可追踪路径", "错觉只发生在结构连接处并可被理解"]
+      palette: ["大块粉彩与深色阴影形成清晰分区", "一到两个高亮色提示可操作结构", "色彩服务于空间而非装饰堆叠"]
+      medium: ["简化三维几何", "等距或弱透视投影", "平整材质和清晰边界"]
+      lighting: ["方向明确的软光", "结构阴影帮助读取高度", "避免强反射干扰几何"]
+      surface: ["建筑表面简洁，少量台阶或砖缝提供尺度", "材质差异通过色块表达"]
+      texture: ["纹理稀疏且不打断几何线", "保持图标化可读性"]
+      invariants: ["每个视觉机关有清楚的几何语法", "错误透视必须是有意且局部的", "不复刻来源游戏的地标"]
+    reproduction:
+      medium: "isometric architectural 3D illustration for puzzle-game spaces"
+      materials: ["模块化建筑体块", "平面色材质", "软阴影", "少量纹理标记"]
+      process: ["先绘制等距网格和主路径", "再设计一处局部结构错觉", "分配色彩与交互提示", "用俯视检查空间是否仍可解释"]
+      technical: "优先正交相机和一致轴线；让每个不可能连接都有明确入口、出口或遮挡理由。"
+    palette: [{name: ink, hex: "#2D3047", role: deep_shadow}, {name: rose, hex: "#C77D8A", role: architecture}, {name: mint, hex: "#9BC9B5", role: cool_plane}, {name: gold, hex: "#E8B95E", role: interactive_accent}, {name: sky, hex: "#A8C9D5", role: background}]
+  - id: comic-halftone-game-art
+    name: 漫画网点叙事游戏美术
+    name_en: Comic Halftone Narrative Game Art
+    kind: game_art
+    domain: game_art
+    summary: "把漫画分镜、墨线轮廓、网点阴影和有限色印刷逻辑转译为游戏画面，重点是强烈的面板节奏、表情剪影与叙事信息层级。"
+    summary_en: "A comic-panel game direction using ink contours, halftone shadows, limited print colors, and strong visual hierarchy without placing readable text in the output."
+    source: {url: "https://www.telltale.com/the-wolf-among-us/", title: "The Wolf Among Us", authority: "Telltale", attribution: "The Wolf Among Us is a commercial work by Telltale and its licensors; this package abstracts comic staging without copying comic panels or characters."}
+    origin: "comic_book_paneling_and_illustrated_adventure_games"
+    period: "2010s_to_present"
+    entity_type: "comic_ink_halftone_game_art_direction"
+    use_cases: [character_closeup, action_panel, urban_scene, dialogue_staging]
+    exclusions: [readable_text, exact_comic_panel, photorealistic_skin, uncontrolled_halftone_noise]
+    signature:
+      composition: ["使用近景、斜线和局部裁切强化戏剧信息", "关键动作有明确视线方向", "背景细节服从主体和面板节奏"]
+      palette: ["黑、米白、暗青、砖红和金黄形成印刷色组", "局部高饱和色承担叙事焦点", "阴影可用单色网点而不是灰阶雾化"]
+      medium: ["粗细变化的墨线", "平涂色块", "网点或交叉线阴影", "略有套印误差的印刷边缘"]
+      lighting: ["高反差侧光或舞台光", "阴影图形化", "高光保持平面形状"]
+      surface: ["纸张与油墨的轻微触感", "边缘允许小幅套印偏移", "禁止廉价漫画滤镜"]
+      texture: ["网点沿阴影和材质方向分布", "颗粒必须有尺度和层级"]
+      invariants: ["图形叙事优先于照片真实", "不会生成可读品牌与对白", "不复刻来源作品的镜头和角色"]
+    reproduction:
+      medium: "comic-inspired game illustration with ink, flat color, and controlled halftone"
+      materials: ["黑色墨线", "平涂色版", "半色调网点", "纸面或印刷纹理"]
+      process: ["先做剪影和镜头信息", "再分配平涂色版", "用网点建立阴影与材质", "最后检查文字和标志是否被排除"]
+      technical: "保持网点尺寸一致且可控；不要把每个区域都覆盖成高频颗粒。"
+    palette: [{name: ink, hex: "#171B25", role: line_and_shadow}, {name: cream, hex: "#E7D9B8", role: paper}, {name: teal, hex: "#3C747A", role: cool_plane}, {name: brick, hex: "#A84A3E", role: focal_color}, {name: gold, hex: "#D3A552", role: warm_accent}]
+  - id: painterly-3d-fantasy-game-art
+    name: 手绘质感三维幻想游戏美术
+    name_en: Painterly 3D Fantasy Game Art
+    kind: game_art
+    domain: game_art
+    summary: "以手绘背景、柔和三维角色和层叠光雾构成幻想游戏空间，强调笔触方向、环境光和角色与景观之间的统一色温。"
+    summary_en: "A fantasy game direction combining hand-painted environments, softly modeled 3D subjects, layered atmospheric light, and coherent color temperature."
+    source: {url: "https://www.orithegame.com/blind-forest/", title: "Ori and the Blind Forest", authority: "Moon Studios", attribution: "Ori and the Blind Forest is a commercial work by Moon Studios and Xbox; this package abstracts hand-painted environment traits."}
+    origin: "hand_painted_environment_and_stylized_3d_character_production"
+    period: "2010s_to_present"
+    entity_type: "painterly_3d_fantasy_game_art_direction"
+    use_cases: [fantasy_forest, magical_ruin, creature_scene, atmospheric_platformer]
+    exclusions: [photorealistic_game_render, glossy_asset_catalog, random_bloom, copied_character]
+    signature:
+      composition: ["用大气透视和枝叶框景组织景深", "角色与环境共享色温但保持轮廓清楚", "前景细节高于远景"]
+      palette: ["深蓝绿、紫灰、暖金和乳白构成冷暖幻想色组", "发光色只用于少数光源或焦点", "背景饱和度随距离降低"]
+      medium: ["手绘环境纹理", "简化三维角色或生物", "柔和但可读的边缘光效"]
+      lighting: ["光线有方向和穿透路径", "雾、粒子和反射服务于空间层级", "避免全局泛白"]
+      surface: ["树皮、岩石、叶片和织物有方向性笔触", "角色材质不统一塑料化"]
+      texture: ["笔触密度随景深和材质变化", "发光粒子稀疏并有明确来源"]
+      invariants: ["手绘空间与三维主体处于同一世界", "光线可以解释", "不得复制来源游戏的角色或场景"]
+    reproduction:
+      medium: "painterly 3D fantasy environment with hand-painted textures and atmospheric lighting"
+      materials: ["手绘纹理", "简化模型", "体积雾或分层雾", "柔和发光材质", "环境遮蔽"]
+      process: ["先搭建景观大形和路径", "再画出材质方向和色温", "加入角色与主要光源", "最后以景深和边缘清晰度复核"]
+      technical: "保持远近层次；不要让发光、景深和颗粒遮蔽主体结构。"
+    palette: [{name: deep_teal, hex: "#264C52", role: forest_depth}, {name: violet, hex: "#655A7C", role: shadow_atmosphere}, {name: amber, hex: "#D9A45C", role: magic_light}, {name: cream, hex: "#EDE1B8", role: luminous_detail}, {name: moss, hex: "#6E8764", role: foliage}]
+  - id: stylized-pbr-sci-fi-game-art
+    name: 风格化物理渲染科幻游戏美术
+    name_en: Stylized PBR Science-Fiction Game Art
+    kind: game_art
+    domain: game_art
+    summary: "在真实材质响应与高度风格化的科幻环境之间建立平衡，使用可读的金属、玻璃、湿地和霓虹反射，但避免把画面退化成无层次的赛博滤镜。"
+    summary_en: "A stylized sci-fi game direction balancing believable PBR responses with graphic color design, readable metal, glass, wet surfaces, and restrained neon."
+    source: {url: "https://annapurnainteractive.com/games/stray", title: "Stray", authority: "Annapurna Interactive and BlueTwelve Studio", attribution: "Stray is a commercial work by Annapurna Interactive and BlueTwelve Studio; this package abstracts material and environment decisions."}
+    origin: "stylized_real_time_pbr_environment_art"
+    period: "2020s"
+    entity_type: "stylized_pbr_sci_fi_game_art_direction"
+    use_cases: [urban_sci_fi, industrial_alley, robot_or_vehicle_scene, rain_wet_surface]
+    exclusions: [generic_cyberpunk_gradient, unreadable_neon, copied_cityscape, plastic_everything]
+    signature:
+      composition: ["用建筑层叠、垂直管线和狭窄通道形成深度", "焦点物体有明确轮廓和交互尺度", "远景灯光不抢近景材质"]
+      palette: ["深蓝黑、青绿、橙黄和少量紫红形成冷暖对照", "霓虹色是局部光源而不是全局色罩", "湿地反射保持原色层次"]
+      medium: ["风格化PBR材质", "真实粗糙度和金属度差异", "图形化灯牌或发光面"]
+      lighting: ["多源环境光仍有主次", "雨后湿地反射可辨但不过曝", "光源方向和颜色可追踪"]
+      surface: ["锈蚀、玻璃、混凝土、塑料和金属必须区分", "粗糙度比高光数量更重要"]
+      texture: ["细节集中在近景和功能构件", "污渍、划痕与水迹有空间逻辑"]
+      invariants: ["PBR材质真实响应与图形色彩同时成立", "不依赖统一青橙滤镜", "不复制具体游戏场景"]
+    reproduction:
+      medium: "stylized real-time PBR sci-fi environment render"
+      materials: ["金属和锈蚀材质", "湿混凝土", "玻璃与塑料", "发光面", "雨水反射"]
+      process: ["先分配空间层次和主光源", "再建立材质粗糙度分区", "加入少量功能色光", "最后检查反射、透明和颜色污染"]
+      technical: "控制光源数量和饱和度；反射必须来自可解释的环境，不使用漂浮光带。"
+    palette: [{name: night, hex: "#101C2B", role: architecture_shadow}, {name: cyan, hex: "#3F9EA6", role: cool_light}, {name: amber, hex: "#E8A24B", role: warm_light}, {name: magenta, hex: "#B34C86", role: distant_accent}, {name: concrete, hex: "#858C8A", role: neutral_material}]
+  - id: flat-design-puzzle-game-art
+    name: 平面设计解谜游戏美术
+    name_en: Flat Design Puzzle Game Art
+    kind: game_art
+    domain: game_art
+    summary: "用几何形状、纯色面、清楚的交互层级和克制动画语言构成平面解谜画面，强调图形识别和操作逻辑而不是材质复杂度。"
+    summary_en: "A graphic puzzle-game direction built from geometric shapes, flat color fields, clear interaction hierarchy, and restrained motion cues rather than material complexity."
+    source: {url: "https://thelastcampfiregame.com/", title: "The Last Campfire", authority: "Hello Games", attribution: "The Last Campfire is a commercial work by Hello Games; this package abstracts readable puzzle-scene design."}
+    origin: "graphic_design_and_accessible_puzzle_game_art"
+    period: "2010s_to_present"
+    entity_type: "flat_graphic_puzzle_game_art_direction"
+    use_cases: [puzzle_board, abstract_room, simple_character, instructional_scene]
+    exclusions: [photorealistic_material, decorative_noise, unreadable_symbols, copied_game_ui]
+    signature:
+      composition: ["几何形状和留白建立清晰层级", "交互物有视觉优先级", "每一组元素保持可扫描的间距"]
+      palette: ["使用三到六个主色及中性底色", "色相差优先于复杂渐变", "危险、目标和可移动物有稳定色码"]
+      medium: ["平面插画", "简化三维或二维形体", "圆角、硬边和阴影层按语义使用"]
+      lighting: ["光照弱化为形状阴影", "不依赖镜面高光", "少量柔和投影帮助物体落地"]
+      surface: ["表面近似干净纸卡或哑光材质", "形状优先于纹理"]
+      texture: ["纹理稀少、低频、可被关闭", "不使用噪声填空"]
+      invariants: ["不看文字也能理解层级", "平面形状和色码稳定", "不得复制原作界面或关卡"]
+    reproduction:
+      medium: "flat graphic puzzle illustration with optional minimal 3D depth"
+      materials: ["纯色填充", "有限阴影层", "简化矢量或哑光三维面", "中性背景"]
+      process: ["先画信息层级和交互路径", "再分配色码和几何形状", "用最少阴影表示深度", "最后清除不必要装饰"]
+      technical: "边缘必须干净，颜色可测量；不要以渐变和高光替代结构。"
+    palette: [{name: navy, hex: "#27344A", role: outline}, {name: cream, hex: "#F0E5C8", role: background}, {name: coral, hex: "#D66C61", role: target}, {name: teal, hex: "#6C9F99", role: movable_object}, {name: ochre, hex: "#D4A950", role: interaction_accent}]
+  - id: miniature-diorama-game-art
+    name: 微缩模型场景游戏美术
+    name_en: Miniature Diorama Game Art
+    kind: game_art
+    domain: game_art
+    summary: "把游戏环境设计成具有微缩模型尺度的立体场景，依靠圆润造型、柔和阴影和小物件比例建立亲切但不幼稚的空间。"
+    summary_en: "A miniature-diorama game direction using rounded forms, soft shadows, believable small-scale props, and tactile scene staging without toy-like clutter."
+    source: {url: "https://thelastcampfiregame.com/", title: "The Last Campfire", authority: "Hello Games", attribution: "The Last Campfire is a commercial work by Hello Games; this package abstracts miniature environment traits."}
+    origin: "diorama_modelmaking_and_stylized_3d_adventure"
+    period: "2010s_to_present"
+    entity_type: "miniature_diorama_game_art_direction"
+    use_cases: [small_village, forest_clearing, puzzle_diorama, cozy_environment]
+    exclusions: [unclear_scale, giant_photo_texture, plastic_toy_gloss, copied_scene]
+    signature:
+      composition: ["中心景物像被安置在可观察的模型空间", "小路、平台和门洞形成可读路径", "保留模型周围的安静背景"]
+      palette: ["苔绿、暖棕、米白、灰蓝和一点篝火橙", "整体中等饱和且有温度", "亮色只用于情绪焦点"]
+      medium: ["哑光三维模型", "纸板、木材、石块和软质地形的简化暗示", "圆润边缘"]
+      lighting: ["大面积柔光和接触阴影", "小型光源给局部温暖", "阴影不黑不脏"]
+      surface: ["表面有手作但不粗糙的质感", "材料边界清楚"]
+      texture: ["近景小物细节有限且有尺度", "远景保持简化"]
+      invariants: ["模型尺度贯穿全场景", "空间可以被当作游戏关卡理解", "不复制来源作品的角色和建筑"]
+    reproduction:
+      medium: "stylized 3D miniature diorama with soft game lighting"
+      materials: ["哑光涂层", "木石与植被简化材质", "软阴影", "小型暖色灯源"]
+      process: ["先建立微缩尺度和相机", "搭出路径和核心场景", "再加入少量可交互小物", "用接触阴影确认落地关系"]
+      technical: "使用轻微移轴感但避免过度虚化；保持所有物体比例可解释。"
+    palette: [{name: moss, hex: "#6F8563", role: vegetation}, {name: soil, hex: "#8E6248", role: ground}, {name: cream, hex: "#E5D3AC", role: light_surface}, {name: slate, hex: "#6D7E87", role: distant_cool}, {name: ember, hex: "#D27B45", role: small_light}]
+  - id: silhouette-platformer-game-art
+    name: 剪影光影平台游戏美术
+    name_en: Silhouette Light-and-Shadow Platformer Game Art
+    kind: game_art
+    domain: game_art
+    summary: "以剪影角色、背光环境、层叠雾气和有限色彩构成平台游戏画面，利用轮廓和光线表达动作、危险与深度。"
+    summary_en: "A platformer direction built from readable silhouettes, backlit environments, layered haze, and limited color used to express motion, danger, and depth."
+    source: {url: "https://playdead.com/games/limbo/", title: "LIMBO", authority: "Playdead", attribution: "LIMBO is a commercial work by Playdead; this package abstracts silhouette and lighting techniques without copying its scenes."}
+    origin: "silhouette_cinematic_platformer_design"
+    period: "2010s_to_present"
+    entity_type: "silhouette_platformer_game_art_direction"
+    use_cases: [forest_platform, industrial_ruin, creature_silhouette, atmospheric_jump]
+    exclusions: [pure_black_everywhere, hidden_playability, horror_gore, copied_character]
+    signature:
+      composition: ["角色轮廓和可行走平台优先", "前景、中景和远景以明度分层", "障碍物边缘留出可读间隙"]
+      palette: ["黑、灰、冷蓝和少量灰白构成低饱和色组", "焦点光可以是暖白或暗红但不铺满", "色彩差异服务深度"]
+      medium: ["二维剪影与柔焦背景", "细微颗粒和体积空气", "实体边缘保持清楚"]
+      lighting: ["逆光和侧光塑造轮廓", "薄雾和远处光带建立空间", "不使用彩色轮廓光"]
+      surface: ["材质以轮廓、纹理密度和明暗区分", "阴影保持可读而非纯黑块"]
+      texture: ["远景颗粒少、前景纹理多", "雾有方向但不遮蔽平台"]
+      invariants: ["剪影不是失焦或低曝光", "游戏路径仍然清楚", "不复制来源关卡和怪物"]
+    reproduction:
+      medium: "2.5D silhouette platformer scene with backlight and atmospheric depth"
+      materials: ["剪影层", "柔焦背景", "体积雾", "少量粒子", "粗糙地面材质"]
+      process: ["先画可玩平台和角色轮廓", "再安排逆光与远近层", "加入有限材质细节", "最后测试低对比缩略图可读性"]
+      technical: "避免把主体压成纯黑；保留足够边缘和内部分块以支持识别。"
+    palette: [{name: soot, hex: "#1E232B", role: silhouette}, {name: slate, hex: "#56626D", role: midground}, {name: fog, hex: "#A9B5B7", role: haze}, {name: bone, hex: "#DED8C4", role: backlight}, {name: rust, hex: "#8B4C43", role: warning_accent}]
+  - id: neon-noir-3d-game-art
+    name: 霓虹黑色三维游戏美术
+    name_en: Neon Noir 3D Game Art
+    kind: game_art
+    domain: game_art
+    summary: "以潮湿城市、低照度空间、局部霓虹色与真实三维材质构成黑色电影式游戏画面，强调色光来源和空间遮挡而不是全局发光。"
+    summary_en: "A 3D noir-game direction using wet urban surfaces, low-key exposure, localized neon color, and believable occlusion rather than a global glow filter."
+    source: {url: "https://annapurnainteractive.com/games/stray", title: "Stray", authority: "Annapurna Interactive and BlueTwelve Studio", attribution: "Stray is a commercial work by Annapurna Interactive and BlueTwelve Studio; this package abstracts noir lighting and urban material logic."}
+    origin: "noir_cinema_and_real_time_urban_environment_lighting"
+    period: "2010s_to_present"
+    entity_type: "neon_noir_3d_game_art_direction"
+    use_cases: [rainy_alley, elevated_city, interior_noir, night_vehicle_scene]
+    exclusions: [uniform_cyan_orange_filter, floating_neon, unreadable_darkness, copied_city_layout]
+    signature:
+      composition: ["狭窄通道、窗框和雨幕形成层层遮挡", "主体通常由一处实际光源勾勒", "背景信息分级而非全部清晰"]
+      palette: ["深蓝黑、青绿、紫红和钨丝橙形成局部对照", "中性物体仍保持中性", "颜色与光源位置绑定"]
+      medium: ["写实或半写实三维场景", "PBR湿地、玻璃和金属", "少量图形化灯牌"]
+      lighting: ["可见光源、反射和遮挡相互对应", "雨后地面有有限反射", "禁止无来源轮廓光"]
+      surface: ["锈、混凝土、玻璃、塑料和水面区分明确", "高光不吞没颜色"]
+      texture: ["污渍、雨痕和城市维护痕迹有方向", "颗粒克制"]
+      invariants: ["霓虹是空间中的对象和光源", "黑色电影的节奏大于赛博装饰", "不复制来源游戏具体街景"]
+    reproduction:
+      medium: "low-key 3D noir environment with localized emissive and reflective materials"
+      materials: ["湿沥青", "玻璃", "锈蚀金属", "混凝土", "有限发光面"]
+      process: ["先确定遮挡与主光源", "再分配材质粗糙度", "设置局部色光与反射", "最后检查暗部是否仍有层次"]
+      technical: "光源数量少而明确；所有彩色反射都要能追溯到画面内的光源。"
+    palette: [{name: blueblack, hex: "#101A2A", role: low_key_base}, {name: cyan, hex: "#2B9CA8", role: neon_cool}, {name: violet, hex: "#8A4F91", role: secondary_light}, {name: tungsten, hex: "#D88B42", role: practical_warm}, {name: wet_gray, hex: "#68747A", role: reflective_neutral}]
+  - id: stop-motion-clay-game-art
+    name: 黏土定格游戏美术
+    name_en: Stop-Motion Clay Game Art
+    kind: game_art
+    domain: game_art
+    summary: "以真实手工搭建的黏土角色、焊接金属、布料和微缩木工为基础，保留指痕、接缝、模型尺度和定格动画般的逐帧生命感。"
+    summary_en: "A tactile game direction based on clay characters, welded metal, sewn textiles, miniature woodwork, fingerprints, seams, and stop-motion-like frame-by-frame life."
+    source: {url: "https://press.haroldhalibut.com/sheet.php?p=harold_halibut", title: "Harold Halibut press kit", authority: "Slow Bros.", attribution: "Harold Halibut is a commercial work by Slow Bros.; this package abstracts handmade set and puppet construction traits."}
+    origin: "physical_modelmaking_stop_motion_and_game_environment_art"
+    period: "2010s_to_present"
+    entity_type: "clay_stop_motion_game_art_direction"
+    use_cases: [handmade_interior, miniature_character, tactile_vehicle, model_set_scene]
+    exclusions: [smooth_cgi_only, perfect_plastic_surface, copied_puppet, horror_body_detail]
+    signature:
+      composition: ["场景像真实模型台或小型布景", "角色与道具共享可见比例", "前景物体保留手工搭建的重量"]
+      palette: ["暖灰、锈红、旧蓝、乳白和土黄构成复古工业色组", "颜色有材料差异而非统一滤镜", "局部亮色作为功能焦点"]
+      medium: ["黏土、布料、木板、焊接金属和模型涂料", "真实景深但不极端微缩模糊"]
+      lighting: ["模型摄影棚的柔和主光", "接触阴影和缝隙阴影清楚", "光线不做塑料反射"]
+      surface: ["指痕、压痕、缝线、刮痕和不完全平整是结构信息", "不同材料可凭触感区分"]
+      texture: ["微小手工误差有节奏", "不覆盖成统一颗粒"]
+      invariants: ["手工来源从表面、比例和边缘同时体现", "空间真实可站立", "不复制游戏角色和道具"]
+    reproduction:
+      medium: "handmade clay-and-model-set game scene photographed or rendered as a tactile diorama"
+      materials: ["黏土", "布料", "木板", "焊接金属", "模型涂料", "哑光保护层"]
+      process: ["先设计模型比例和布景", "再塑造主体与材料接缝", "用柔光拍摄或渲染", "最后保留少量真实制作痕迹"]
+      technical: "保持材质边界和微缩尺度一致；不要用过度磨皮、镜面高光或CG完美边缘。"
+    palette: [{name: rust, hex: "#98594A", role: aged_metal}, {name: denim, hex: "#526B78", role: cloth_and_cool_surface}, {name: cream, hex: "#DED2B6", role: model_light}, {name: ochre, hex: "#B58A4E", role: wood_and_warm_light}, {name: soot, hex: "#30363B", role: deep_joint}]
+  - id: hilma-af-klint
+    name: 希尔玛·艾夫·克林特
+    name_en: Hilma af Klint
+    kind: artist
+    domain: painting
+    summary: "以几何图式、螺旋、对称结构和富有精神象征意味的色彩组织抽象绘画，强调符号系统的秩序与柔性变化。"
+    summary_en: "Abstract painting built from geometric diagrams, spirals, symmetry, and spiritually charged color systems with ordered yet fluid variation."
+    source: {url: "https://www.guggenheim.org/wp-content/uploads/2018/06/gugg-press_Hilma-af-Klint_PressRelease_1519_20180913.pdf", title: "Hilma af Klint exhibition press release", authority: "Solomon R. Guggenheim Museum", attribution: "Works by Hilma af Klint remain protected where applicable; this package describes observable abstract structures and does not reproduce a named painting."}
+    origin: "swedish_early_abstract_painting"
+    period: "1862_to_1944"
+    entity_type: "artist_abstract_symbolic_painting"
+    use_cases: [abstract_diagram, symbolic_poster, geometric_mural, nonfigurative_composition]
+    exclusions: [literal_occult_claim, copied_series_layout, generic_color_gradient, readable_esoteric_text]
+    signature:
+      composition: ["中心轴、圆环、螺旋和对称结构组织画面", "形体之间有层级但不必服从透视", "留白与符号群保持平衡"]
+      palette: ["淡粉、黄、蓝、紫、绿色与黑白形成精神性对照", "颜色块边界清楚但允许手绘不均", "冷暖与互补关系明确"]
+      medium: ["蛋彩或油彩式平面绘画", "细线和几何色面并置", "手工颜料边缘"]
+      lighting: ["不依赖自然光体积", "明度通过色面关系而非写实阴影建立"]
+      surface: ["画布或纸面的薄涂、叠色与细微不均", "避免数字镜面光"]
+      texture: ["纹理克制，服务色面和线条", "不做厚重随机笔触"]
+      invariants: ["抽象系统必须有内部秩序", "符号不指向特定宗教文本", "不复制原作图式"]
+    reproduction:
+      medium: "symbolic geometric painting with tempera-like matte color fields"
+      materials: ["哑光绘画底", "蛋彩或薄层油彩", "细线勾勒", "有限叠色"]
+      process: ["先建立轴线与几何骨架", "再分配互补色和层级", "最后加入少量手绘边缘变化", "检查符号系统是否独立于具体原作"]
+      technical: "保持二维平面和色面完整；避免把抽象元素转成发光UI。"
+    palette: [{name: rose, hex: "#D99AAE", role: warm_symbol}, {name: yellow, hex: "#E8C85B", role: solar_shape}, {name: blue, hex: "#466C99", role: cool_shape}, {name: violet, hex: "#78618C", role: deep_symbol}, {name: sage, hex: "#8BA274", role: balance}]
+  - id: leonora-carrington
+    name: 莱昂诺拉·卡林顿
+    name_en: Leonora Carrington
+    kind: artist
+    domain: painting
+    summary: "以梦境般的生物、炼金意象、细密轮廓和冷静而神秘的空间构成超现实绘画，强调多义形象与精细表面。"
+    summary_en: "Surreal painting built from dreamlike beings, alchemical motifs, fine contours, and cool mysterious spaces with deliberately ambiguous imagery."
+    source: {url: "https://shop.tate.org.uk/leonora-carrington-surrealism-alchemy-and-art/35022.html", title: "Leonora Carrington: Surrealism, Alchemy and Art", authority: "Tate", attribution: "Works by Leonora Carrington remain protected where applicable; this package abstracts surrealist traits without reproducing a particular work."}
+    origin: "british_mexican_surrealist_painting"
+    period: "1917_to_2011"
+    entity_type: "artist_surrealist_symbolic_painting"
+    use_cases: [dreamlike_interior, hybrid_creature, ritual_landscape, symbolic_still_life]
+    exclusions: [generic_dark_fantasy, gore, copied_character, literal_alchemy_diagram]
+    signature:
+      composition: ["人物、动物和器物以仪式性关系分布", "空间像室内与梦境景观的混合", "细节集中在关键生物和象征物"]
+      palette: ["灰绿、赭色、乳白、暗红和深蓝构成低到中饱和色组", "局部金色或鲜红作为异常焦点", "避免统一黑紫滤镜"]
+      medium: ["细密油画式表面", "清晰轮廓与柔和体积并置", "自然物与幻想物共享材质逻辑"]
+      lighting: ["均匀、神秘、略带内在光的照明", "阴影帮助空间而不追求戏剧性摄影效果"]
+      surface: ["细腻画面层、旧墙面或织物质感", "细节精确但不超写实"]
+      texture: ["羽毛、毛发、石头、金属和布料可区分", "纹理集中而不平均铺开"]
+      invariants: ["神秘感来自关系和多义形象，不是堆叠怪物", "人物与环境保持绘画统一", "不复制原作形象"]
+    reproduction:
+      medium: "fine-detail surrealist painting with restrained old-master surface"
+      materials: ["薄层油彩", "细笔轮廓", "柔和底色", "局部精细纹理"]
+      process: ["先构建安静空间和主体关系", "再加入一到两个异常形象", "用有限色组和细节层级完成", "去除无功能的奇观元素"]
+      technical: "保持画面克制和可读；不要用过度锐化、恐怖血腥或随机超现实物体替代构思。"
+    palette: [{name: sage, hex: "#788675", role: atmosphere}, {name: ochre, hex: "#AD8554", role: earth}, {name: bone, hex: "#DED1B1", role: light_surface}, {name: oxblood, hex: "#743E3B", role: focal_red}, {name: midnight, hex: "#293A49", role: deep_space}]
+  - id: tamara-de-lempicka
+    name: 塔玛拉·德·兰佩卡
+    name_en: Tamara de Lempicka
+    kind: artist
+    domain: painting
+    summary: "以装饰艺术时期的几何构形、金属般清晰的体积、冷峻优雅的人物和高对比色面组织现代肖像与静物。"
+    summary_en: "Art-Deco-inflected painting using geometric construction, polished volumes, poised figures, and high-contrast color planes for modern portraiture and still life."
+    source: {url: "https://www.moma.org/artists/3476", title: "Tamara de Lempicka artist page", authority: "Museum of Modern Art", attribution: "Works by Tamara de Lempicka remain protected where applicable; this package describes formal traits without copying a named portrait."}
+    origin: "art_deco_modernist_portrait_painting"
+    period: "1898_to_1980"
+    entity_type: "artist_art_deco_figurative_painting"
+    use_cases: [editorial_portrait, luxury_still_life, geometric_figure, urban_modern_scene]
+    exclusions: [soft_impressionist_blur, photorealistic_skin, copied_pose, logo_or_brand_design]
+    signature:
+      composition: ["人物或物体以雕塑般大形占据画面", "斜线、扇形和建筑切面形成动势", "背景简化为装饰性空间"]
+      palette: ["黑、白、银灰、祖母绿、钴蓝和深红形成高对比", "肤色和金属色保持干净", "颜色块不被综合色滤镜覆盖"]
+      medium: ["平滑油画层", "清晰几何轮廓", "近似金属或大理石的体积处理"]
+      lighting: ["方向明确的硬光或柔硬混合光", "高光精确而不泛滥", "阴影切面清楚"]
+      surface: ["表面平整、精致、少量可见笔触", "材质差异靠体积和边界表达"]
+      texture: ["纹理低频并集中在服装、金属和建筑", "禁止粗颗粒复古滤镜"]
+      invariants: ["几何优雅与人物体积同时成立", "现代感不是加入品牌文字", "不复制特定肖像"]
+    reproduction:
+      medium: "geometric Art Deco oil-painting direction with polished planar volumes"
+      materials: ["平滑油彩", "薄层罩染", "硬边色面", "少量金属或石材质感"]
+      process: ["先用几何体块建模", "再确定姿态与明暗切面", "分配高对比色组", "最后控制表面平滑度"]
+      technical: "强调清晰轮廓和大明暗；避免将人物处理成塑料3D渲染。"
+    palette: [{name: black, hex: "#1D2027", role: contour}, {name: ivory, hex: "#E7DFCC", role: light}, {name: emerald, hex: "#2F6D61", role: luxury_green}, {name: cobalt, hex: "#355A9B", role: cool_accent}, {name: crimson, hex: "#9E3D45", role: warm_accent}]
+  - id: giorgio-de-chirico
+    name: 乔治·德·基里科
+    name_en: Giorgio de Chirico
+    kind: artist
+    domain: painting
+    summary: "以空旷广场、长阴影、古典建筑、雕像与不合时宜的物体构成形而上绘画，强调静止空间中的悬置感与谜题感。"
+    summary_en: "Metaphysical painting built from empty piazzas, long shadows, classical architecture, statues, and displaced objects that create suspended enigma."
+    source: {url: "https://fondazionedechirico.org/en/giorgio-de-chirico/", title: "Giorgio de Chirico biography", authority: "Fondazione Giorgio e Isa de Chirico", attribution: "Works by Giorgio de Chirico remain protected where applicable; this package abstracts metaphysical spatial devices without copying a named piazza."}
+    origin: "italian_metaphysical_painting"
+    period: "1888_to_1978"
+    entity_type: "artist_metaphysical_cityscape_painting"
+    use_cases: [empty_square, coastal_architecture, symbolic_still_life, dream_city]
+    exclusions: [generic_surrealism, busy_city_scene, random_object_collage, copied_landmark]
+    signature:
+      composition: ["建筑透视线和长阴影把视线引向空旷深处", "主体数量少但关系有悬念", "远处可有小型人物或列车作为尺度线索"]
+      palette: ["赭黄、土红、蓝绿阴影、乳白天空和深棕构成干燥色组", "天空与建筑有明确分区", "避免浓艳现代霓虹"]
+      medium: ["平静而坚实的油画表面", "古典建筑细节与简化形体并置", "硬边和柔和空气透视并存"]
+      lighting: ["低角度长阴影", "光线像来自不可见的傍晚太阳", "阴影有几何形状"]
+      surface: ["墙面、石材、木箱和雕像质感简化但可信", "画面不靠厚重笔触制造神秘"]
+      texture: ["纹理少、空间静", "远景略有干燥空气感"]
+      invariants: ["神秘来自空间逻辑与时间错位", "空旷不等于废墟灾难", "不复制原作广场布局"]
+    reproduction:
+      medium: "metaphysical oil-painting cityscape with simplified classical forms"
+      materials: ["平滑油彩底", "干燥墙面色块", "细致建筑边缘", "柔和远景空气层"]
+      process: ["先建立透视和广场空场", "再安排单一异物或尺度线索", "用长阴影固定时间感", "最后削减多余细节"]
+      technical: "保持透视清晰、色彩克制和静止节奏；不要生成随机超现实拼贴。"
+    palette: [{name: ochre, hex: "#B8884D", role: sunlit_architecture}, {name: terracotta, hex: "#A65C4B", role: warm_wall}, {name: bluegray, hex: "#627789", role: shadow_plane}, {name: cream, hex: "#E5D5B1", role: sky}, {name: umber, hex: "#493B37", role: long_shadow}]
+  - id: agnes-martin
+    name: 艾格尼丝·马丁
+    name_en: Agnes Martin
+    kind: artist
+    domain: painting
+    summary: "以极细网格、重复线条、低对比色带和安静留白构成极简绘画，强调手绘重复中的微小偏差与长时间观看。"
+    summary_en: "Minimal painting built from delicate grids, repeated lines, low-contrast bands, and quiet space, where tiny hand-drawn deviations remain visible."
+    source: {url: "https://www.guggenheim.org/exhibition/agnes-martin", title: "Agnes Martin exhibition", authority: "Solomon R. Guggenheim Museum", attribution: "Works by Agnes Martin remain protected where applicable; this package abstracts grid and restraint without reproducing a named canvas."}
+    origin: "american_minimal_and_abstract_painting"
+    period: "1912_to_2004"
+    entity_type: "artist_minimal_grid_painting"
+    use_cases: [minimal_poster, quiet_wall, abstract_background, meditative_composition]
+    exclusions: [perfect_digital_grid, loud_gradient, decorative_pattern, copied_grid_spacing]
+    signature:
+      composition: ["画面大多由单一网格或平行线系统控制", "留白和边缘比例十分重要", "局部偏移产生手工呼吸感"]
+      palette: ["灰白、淡粉、浅蓝、米黄和柔灰组成低对比色组", "颜色变化细微且不脏", "不加入强烈焦点色"]
+      medium: ["铅笔或细线与薄层丙烯/油彩", "手工绘制的重复结构", "平静哑光表面"]
+      lighting: ["均匀漫射光", "不使用戏剧阴影或镜面高光", "表面微差由细线和颜料层表达"]
+      surface: ["纸、画布和薄颜料的轻微吸收感", "不做玻璃质感"]
+      texture: ["纹理极少但不完全无纹理", "线条粗细有微小变化"]
+      invariants: ["克制、重复和非机械的精度同时存在", "安静来自比例而非空白模板", "不复制原作网格"]
+    reproduction:
+      medium: "quiet minimal painting with hand-drawn grids and low-contrast color bands"
+      materials: ["细铅笔线", "哑光画布或纸", "薄层低饱和颜料", "精细遮罩或尺规辅助"]
+      process: ["先确定边缘与留白比例", "再建立线性网格", "用低对比色带分层", "最后保留少量不机械偏差"]
+      technical: "不要生成完全无瑕的UI网格；线条应轻微受材料与手部影响。"
+    palette: [{name: warm_white, hex: "#EEE9DE", role: ground}, {name: blush, hex: "#D9BFC4", role: soft_warm_band}, {name: powder, hex: "#B9C9D1", role: cool_band}, {name: sand, hex: "#D9D0B9", role: neutral_band}, {name: gray, hex: "#A8A9A3", role: line}]
+  - id: edward-hopper
+    name: 爱德华·霍普
+    name_en: Edward Hopper
+    kind: artist
+    domain: painting
+    summary: "以现代城市和海岸生活中的简化建筑、孤立人物、强烈窗光与克制色彩构成悬置的日常场景，强调观看距离和心理空间。"
+    summary_en: "Modern American scene painting built from simplified architecture, isolated figures, strong window light, and restrained color with psychological distance."
+    source: {url: "https://whitney.org/artists/621", title: "Edward Hopper artist page", authority: "Whitney Museum of American Art", attribution: "Works by Edward Hopper remain protected where applicable; this package abstracts framing and light without copying a named work."}
+    origin: "american_modern_scene_painting"
+    period: "1882_to_1967"
+    entity_type: "artist_modern_realist_scene_painting"
+    use_cases: [urban_interior, coastal_house, roadside_scene, solitary_figure]
+    exclusions: [melodramatic_expression, generic_cinematic_filter, copied_building, crowded_scene]
+    signature:
+      composition: ["窗、门、街角和道路构成稳定几何框架", "人物与空间有明显距离", "画面常保留大片空墙或天空"]
+      palette: ["奶油白、土黄、砖红、深绿和蓝灰构成克制暖冷色组", "局部强光与深影形成心理张力", "不做综合色雾化"]
+      medium: ["平整而坚实的油画块面", "建筑边缘清楚", "人物姿态简化但有重量"]
+      lighting: ["强方向日光或室内窗光", "投影和亮面形状明确", "光线不是金色滤镜"]
+      surface: ["墙面、玻璃、木材、布料和皮肤表面分明", "笔触隐约但不炫技"]
+      texture: ["中低频画面纹理", "细节服务空间心理而不平均分布"]
+      invariants: ["孤独感来自构图距离和光线，不靠夸张表情", "场景仍然是具体日常空间", "不复刻原作人物和房屋"]
+    reproduction:
+      medium: "modern realist oil-painting scene with geometric light and quiet distance"
+      materials: ["薄到中厚油彩", "平整大色面", "硬边建筑轮廓", "局部柔化过渡"]
+      process: ["先搭建建筑框架与视点", "再确定单一主光方向", "放置少量人物或物件", "最后削减多余叙事线索"]
+      technical: "保持光影几何和空间比例；不要把静默场景处理成海报或电影截图。"
+    palette: [{name: cream, hex: "#E6D4B5", role: lit_wall}, {name: ochre, hex: "#B48850", role: sunlit_surface}, {name: brick, hex: "#A55647", role: warm_structure}, {name: green, hex: "#53665D", role: cool_structure}, {name: bluegray, hex: "#657A88", role: distance}]
+  - id: ivan-aivazovsky
+    name: 伊万·艾瓦佐夫斯基
+    name_en: Ivan Aivazovsky
+    kind: artist
+    domain: painting
+    summary: "以海面、天空、航船和光线交汇构成浪漫主义海景，强调水面运动、空气透视、月光或夕照的单一光源和宏阔尺度。"
+    summary_en: "Romantic seascape painting built from water motion, atmospheric distance, vessels, and a dominant moonlight or sunset source at monumental scale."
+    source: {url: "https://www.tretyakovgallery.ru/en/collection/ivan-aivazovsky/", title: "Ivan Aivazovsky collection", authority: "Tretyakov Gallery", attribution: "Works by Ivan Aivazovsky remain protected where applicable; this package abstracts seascape and light decisions without copying a named painting."}
+    origin: "nineteenth_century_russian_romantic_seascape"
+    period: "1817_to_1900"
+    entity_type: "artist_romantic_marine_painting"
+    use_cases: [open_sea, storm_coast, moonlit_harbor, ship_and_horizon]
+    exclusions: [flat_blue_background, arbitrary_ship_copy, digital_glow, generic_ocean_photo]
+    signature:
+      composition: ["地平线与海天比例决定宏阔尺度", "船只或人物作为尺度锚点", "海浪方向和光路形成视觉引导"]
+      palette: ["深蓝、青灰、银白、赭金和玫瑰橙构成海景色组", "主光源附近色彩最清澈", "远景对比度降低"]
+      medium: ["油画式薄层叠加", "流动笔触表现水面和云层", "天空与海面有连续空气关系"]
+      lighting: ["月光、破云日光或夕照作为主光", "光路在海面形成连续反射", "暗部仍保留蓝灰层次"]
+      surface: ["水、泡沫、云和木船的材料差异清楚", "高光细而有方向"]
+      texture: ["笔触沿波浪、风向和云层运动", "不平均涂抹成油画滤镜"]
+      invariants: ["海天空间和光源逻辑优先", "戏剧性来自自然尺度而非过度特效", "不复制具体船景"]
+    reproduction:
+      medium: "romantic oil seascape with layered atmosphere and directional water strokes"
+      materials: ["薄层油彩", "透明罩染", "不透明浪花高光", "软硬笔触混合"]
+      process: ["先确定地平线与天气", "再铺海天大色层", "用主光源建立海面反射路径", "最后加入少量船只或岸线尺度锚点"]
+      technical: "保持真实空气透视和统一光源；避免把海水变成均匀蓝色或发光特效。"
+    palette: [{name: deep_sea, hex: "#274C6B", role: water_depth}, {name: slate, hex: "#718B9A", role: cloud_and_distance}, {name: silver, hex: "#D8D9C9", role: moonlight}, {name: gold, hex: "#D6A35E", role: warm_sunlight}, {name: rose, hex: "#B96F69", role: dusk_accent}]
+  - id: saul-leiter
+    name: 索尔·雷特
+    name_en: Saul Leiter
+    kind: photographer
+    domain: photography
+    summary: "以彩色街头摄影中的遮挡、反射、雨雪、玻璃和低饱和色块构成近距离诗意观察，强调焦点不确定性与日常中的抽象关系。"
+    summary_en: "Color street photography built from occlusion, reflections, rain, snow, glass, and muted color fields, turning ordinary proximity into quiet abstraction."
+    source: {url: "https://www.saulleiterfoundation.org/", title: "Saul Leiter Foundation archive", authority: "Saul Leiter Foundation", attribution: "Photographs by Saul Leiter remain protected; this package abstracts compositional and capture traits without reproducing a photograph."}
+    origin: "mid_century_new_york_color_street_photography"
+    period: "1923_to_2013"
+    entity_type: "photographer_color_street_abstraction"
+    use_cases: [rainy_street, window_reflection, urban_color_field, quiet_portrait]
+    exclusions: [clean_street_documentary, oversharpened_hdr, exact_photo_reconstruction, generic_teal_orange_grade]
+    signature:
+      composition: ["前景遮挡或玻璃层切割视野", "主体可能只露出一部分", "色块和反射先于事件解释"]
+      palette: ["砖红、黄、深蓝、粉紫和灰绿形成低到中饱和色块", "红伞、车灯或墙面可作为孤立色点", "肤色与环境保持自然"]
+      medium: ["彩色胶片或等效色彩响应", "近距离街头取景", "浅景深与局部失焦"]
+      lighting: ["阴天、雨天或窗内漫射光", "反射光柔和并保留色彩来源", "不使用商业轮廓光"]
+      surface: ["玻璃、水、雪、车漆和墙面反射可辨", "轻微胶片色彩偏移"]
+      texture: ["颗粒细而不重", "雾气和雨痕形成自然软化"]
+      invariants: ["日常片段被抽象成色彩和遮挡关系", "不靠夸张戏剧叙事", "不复制具体街景或人物"]
+    reproduction:
+      medium: "quiet color street photograph with layered occlusion and analog-like response"
+      materials: ["彩色胶片或胶片模拟", "玻璃与雨水前景", "自然街头反射", "轻微颗粒"]
+      process: ["先找遮挡层和色块关系", "再决定焦点落在前景或背景", "保持曝光克制", "最后检查反射是否有来源"]
+      technical: "使用中长焦或近距离视角；避免锐化、HDR、全局青橙和过度虚化。"
+    palette: [{name: brick, hex: "#A84945", role: street_accent}, {name: mustard, hex: "#C39A4E", role: warm_reflection}, {name: navy, hex: "#30485E", role: cool_shadow}, {name: mauve, hex: "#9A7487", role: glass_color}, {name: graygreen, hex: "#7C8B7F", role: neutral_city}]
+  - id: vivian-maier
+    name: 维维安·迈尔
+    name_en: Vivian Maier
+    kind: photographer
+    domain: photography
+    summary: "以中画幅街头观察、人物与城市细节的偶然关系、方形或接近方形构图和自然光影记录日常，不把被摄者包装成广告人物。"
+    summary_en: "Observational street photography using medium-format presence, chance relationships, square or near-square framing, and unembellished natural light."
+    source: {url: "https://www.vivianmaier.com/about-vivian-maier/", title: "About Vivian Maier", authority: "Vivian Maier archive", attribution: "Photographs by Vivian Maier remain protected; this package abstracts observational methods without reproducing a specific photograph."}
+    origin: "mid_century_american_street_and_documentary_photography"
+    period: "1926_to_2009"
+    entity_type: "photographer_observational_street_photography"
+    use_cases: [street_portrait, urban_childhood, storefront_detail, self_reflection]
+    exclusions: [fashion_pose, staged_advertising, exact_archive_reconstruction, privacy_intrusion]
+    signature:
+      composition: ["画面重视偶然瞬间和边缘关系", "人物与建筑、橱窗或路面共同构成场景", "保留自然裁切和适度空白"]
+      palette: ["黑白银盐或克制彩色胶片", "肤色与环境保持真实", "颜色不被复古滤镜统一染色"]
+      medium: ["中画幅双反或等效中画幅取景", "自然街头距离", "方形或近方形画面倾向"]
+      lighting: ["自然日光、阴影和室内窗光", "高光不过曝，暗部保留信息", "不使用棚拍轮廓光"]
+      surface: ["银盐颗粒或彩色胶片层次", "衣物、墙面和路面保持纪录性细节"]
+      texture: ["颗粒和扫描变化轻微可见", "不添加数字噪声或磨皮"]
+      invariants: ["观察感来自时机和构图，不来自戏剧化摆拍", "人物尊重和匿名化", "不复制档案中的人物和地点"]
+    reproduction:
+      medium: "observational street photograph with medium-format framing and natural light"
+      materials: ["黑白银盐或彩色胶片响应", "中画幅景深", "真实街头反射", "轻微扫描纹理"]
+      process: ["先观察人物与环境的瞬间关系", "保留真实距离和偶然遮挡", "控制曝光而不美化肤色", "最后检查是否过度摆拍或侵犯隐私"]
+      technical: "使用自然光与适度中画幅压缩；不加入商业造型、品牌或精心布景。"
+    palette: [{name: silver, hex: "#B8B6AD", role: highlight}, {name: charcoal, hex: "#303438", role: shadow}, {name: denim, hex: "#526C7B", role: muted_color}, {name: brick, hex: "#9A5548", role: incidental_accent}, {name: cream, hex: "#D9D0BA", role: light_neutral}]
+  - id: rinko-kawauchi
+    name: 川内伦子
+    name_en: Rinko Kawauchi
+    kind: photographer
+    domain: photography
+    summary: "以柔和自然光、近距离日常细节、轻盈色彩和不确定的时间感构成诗性摄影，强调微小事物、空气感与画面之间的呼吸。"
+    summary_en: "Poetic photography built from soft natural light, intimate everyday details, airy color, and an open sense of time between small connected observations."
+    source: {url: "https://rinkokawauchi.com/", title: "Rinko Kawauchi official website", authority: "Rinko Kawauchi", attribution: "Photographs by Rinko Kawauchi remain protected; this package abstracts light, scale, and sequencing traits without reproducing a photograph."}
+    origin: "contemporary_japanese_color_photography"
+    period: "1972_to_present"
+    entity_type: "photographer_poetic_everyday_color_photography"
+    use_cases: [small_nature_detail, domestic_light, quiet_portrait, everyday_sequence]
+    exclusions: [commercial_product_styling, heavy_film_preset, staged_symbolism, copied_image_sequence]
+    signature:
+      composition: ["近距离小物与大面积空气留白并置", "视角可以略低或略偏", "单张画面像一组日常序列中的片段"]
+      palette: ["淡粉、乳白、浅蓝、嫩绿和柔黄组成轻盈色组", "高光柔和，颜色相互呼吸", "避免过度饱和和冷暖滤镜"]
+      medium: ["彩色胶片或柔和数字色彩响应", "浅景深或轻微运动模糊", "自然光近距离观察"]
+      lighting: ["窗光、阴天和清晨光线", "光线柔和且有空气感", "不使用硬质商业光源"]
+      surface: ["花瓣、皮肤、水、玻璃和纸张保留细腻差异", "不过度锐化"]
+      texture: ["细颗粒或轻微柔化", "画面边缘不做复古脏污"]
+      invariants: ["诗意来自尺度、光线和偶然联系", "不是甜美滤镜或装饰静物", "不复制具体作品和序列"]
+    reproduction:
+      medium: "soft natural-light color photograph of an ordinary intimate detail"
+      materials: ["彩色胶片或柔和数字响应", "自然窗光", "浅景深", "真实微小材质"]
+      process: ["先选择平凡而有尺度感的主体", "再等待自然光和偶然关系", "保持曝光轻盈", "最后检查画面是否过度商业化"]
+      technical: "避免极端景深、过度清晰、强烈颗粒和人为彩色灯；保留自然光的中间调。"
+    palette: [{name: blush, hex: "#D9AAB0", role: soft_warm}, {name: milk, hex: "#F0E8D7", role: highlight}, {name: sky, hex: "#AFC7D0", role: cool_air}, {name: leaf, hex: "#91A985", role: natural_green}, {name: butter, hex: "#E6D58D", role: sunlit_detail}]

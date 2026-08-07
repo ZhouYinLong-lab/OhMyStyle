@@ -1,0 +1,16 @@
+medium: painterly 3D fantasy environment with hand-painted textures and atmospheric
+  lighting
+materials:
+- 手绘纹理
+- 简化模型
+- 体积雾或分层雾
+- 柔和发光材质
+- 环境遮蔽
+process:
+- 先搭建景观大形和路径
+- 再画出材质方向和色温
+- 加入角色与主要光源
+- 最后以景深和边缘清晰度复核
+technical_direction: 保持远近层次；不要让发光、景深和颗粒遮蔽主体结构。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

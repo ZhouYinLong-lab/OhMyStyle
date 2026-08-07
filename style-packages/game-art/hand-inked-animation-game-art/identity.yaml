@@ -1,0 +1,22 @@
+canonical_name: 手绘墨线动画游戏美术
+entity_type: hand_inked_2d_game_art_direction
+origin: hand_drawn_animation_and_1930s_cartoon_production
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - character_action
+  - boss_scene
+  - stage_card
+  - expressive_prop
+  exclusions:
+  - smooth_vector_icon
+  - realistic_anatomy
+  - photorealistic_texture
+  - copied_cartoon_character
+sources:
+- https://studiomdhr.com/what-kind-of-game-is-cuphead/
+rendering:
+  model: hand-drawn 2D animation frame with ink contours and painted background
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

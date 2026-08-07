@@ -1,0 +1,16 @@
+id: silhouette-platformer-game-art
+name: 剪影光影平台游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以剪影角色、背光环境、层叠雾气和有限色彩构成平台游戏画面，利用轮廓和光线表达动作、危险与深度。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

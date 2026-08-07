@@ -1,0 +1,22 @@
+canonical_name: 等距幻觉建筑游戏美术
+entity_type: isometric_architectural_game_art_direction
+origin: isometric_puzzle_architecture_and_optical_illusion
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - puzzle_room
+  - monument
+  - impossible_stair
+  - abstract_city
+  exclusions:
+  - random_perspective_break
+  - photorealistic_architecture
+  - unreadable_mechanism
+  - copied_level_layout
+sources:
+- https://gdcvault.com/play/1022299/The-Art-of-Monument
+rendering:
+  model: isometric architectural 3D illustration for puzzle-game spaces
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

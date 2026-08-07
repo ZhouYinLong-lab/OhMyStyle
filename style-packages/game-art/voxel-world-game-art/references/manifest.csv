@@ -1,0 +1,2 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+voxel-world-game-art-primary-source,,What is Minecraft?,Minecraft and Mojang,,https://www.minecraft.net/en-us/article/what-minecraft,link_only,Minecraft is a commercial work by Mojang and Microsoft; this package abstracts voxel construction principles without copying assets.,primary,Link-only source record. Do not bundle or redistribute external artwork without explicit permission.

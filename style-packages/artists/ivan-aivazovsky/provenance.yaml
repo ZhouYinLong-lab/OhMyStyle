@@ -1,0 +1,13 @@
+package_id: ivan-aivazovsky
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://www.tretyakovgallery.ru/en/collection/ivan-aivazovsky/
+  authority: Tretyakov Gallery
+  title: Ivan Aivazovsky collection
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: Works by Ivan Aivazovsky remain protected where applicable; this package
+  abstracts seascape and light decisions without copying a named painting.

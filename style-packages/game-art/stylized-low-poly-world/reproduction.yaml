@@ -1,0 +1,14 @@
+medium: low-poly 3D scene with graphic planes and soft stylized lighting
+materials:
+- 简化网格
+- 低频哑光材质
+- 少量面色变化
+- 软阴影
+process:
+- 先确定主几何和视角
+- 再压缩材料与色彩
+- 用单一光源塑造面关系
+- 最后补充少量植物或道具
+technical_direction: 采用中长焦或等距感相机，减少广角畸变；保持轮廓干净和面数克制。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

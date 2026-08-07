@@ -1,0 +1,16 @@
+id: neon-noir-3d-game-art
+name: 霓虹黑色三维游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以潮湿城市、低照度空间、局部霓虹色与真实三维材质构成黑色电影式游戏画面，强调色光来源和空间遮挡而不是全局发光。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

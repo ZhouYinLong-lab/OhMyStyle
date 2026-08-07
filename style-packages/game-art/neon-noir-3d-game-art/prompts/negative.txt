@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- uniform_cyan_orange_filter
+- floating_neon
+- unreadable_darkness
+- copied_city_layout

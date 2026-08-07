@@ -1,0 +1,31 @@
+{
+  "name": "edward-hopper",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "cream",
+      "hex": "#E6D4B5",
+      "role": "lit_wall"
+    },
+    {
+      "name": "ochre",
+      "hex": "#B48850",
+      "role": "sunlit_surface"
+    },
+    {
+      "name": "brick",
+      "hex": "#A55647",
+      "role": "warm_structure"
+    },
+    {
+      "name": "green",
+      "hex": "#53665D",
+      "role": "cool_structure"
+    },
+    {
+      "name": "bluegray",
+      "hex": "#657A88",
+      "role": "distance"
+    }
+  ]
+}

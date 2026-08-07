@@ -1,0 +1,15 @@
+medium: hand-drawn 2D animation frame with ink contours and painted background
+materials:
+- 铅笔草图
+- 墨线
+- 水彩或不透明水彩背景
+- 有限色彩分层
+- 轻微纸张颗粒
+process:
+- 先确定动作弧线和轮廓
+- 再绘制线稿与大色块
+- 随后加入背景笔触和有限阴影
+- 最后检查线条连贯性与角色可读性
+technical_direction: 保留手绘边缘和少量线宽变化；不使用光滑矢量渐变替代绘制层次。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

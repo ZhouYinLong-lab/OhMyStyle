@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">手绘墨线动画游戏美术 palette card</title>
+  <desc id="desc">以逐帧手绘的弹性动作、黑色墨线、复古卡通比例和水彩背景组织二维游戏画面，保留人工绘制的不完美节奏。</desc>
+  <rect width="1600" height="900" fill="#10151D"/>
+  <circle cx="1280" cy="240" r="250" fill="#1A1718" opacity="0.85"/>
+  <circle cx="1030" cy="360" r="190" fill="#F0E0B6" opacity="0.85"/>
+  <path d="M0 520 C280 360 510 690 800 500 S1260 330 1600 520 V900 H0 Z" fill="#A83F35" opacity="0.9"/>
+  <path d="M0 640 C280 520 530 760 880 610 S1260 520 1600 680 V900 H0 Z" fill="#C09A39" opacity="0.9"/>
+  <rect x="80" y="600" width="248" height="150" rx="18" fill="#1A1718"/><text x="98" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">ink</text><rect x="368" y="600" width="248" height="150" rx="18" fill="#F0E0B6"/><text x="386" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">paper</text><rect x="656" y="600" width="248" height="150" rx="18" fill="#A83F35"/><text x="674" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">brick</text><rect x="944" y="600" width="248" height="150" rx="18" fill="#C09A39"/><text x="962" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">mustard</text><rect x="1232" y="600" width="248" height="150" rx="18" fill="#71805A"/><text x="1250" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">sage</text>
+  <text x="80" y="120" font-family="sans-serif" font-size="52" font-weight="700" fill="#F5F1E8">手绘墨线动画游戏美术</text>
+  <text x="80" y="175" font-family="sans-serif" font-size="24" fill="#C8D0D8">版权安全的抽象色板卡 · 可替换为已获授权的代表图</text>
+</svg>

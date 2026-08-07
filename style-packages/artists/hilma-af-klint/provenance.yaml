@@ -1,0 +1,13 @@
+package_id: hilma-af-klint
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://www.guggenheim.org/wp-content/uploads/2018/06/gugg-press_Hilma-af-Klint_PressRelease_1519_20180913.pdf
+  authority: Solomon R. Guggenheim Museum
+  title: Hilma af Klint exhibition press release
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: Works by Hilma af Klint remain protected where applicable; this package
+  describes observable abstract structures and does not reproduce a named painting.

@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- readable_text
+- exact_comic_panel
+- photorealistic_skin
+- uncontrolled_halftone_noise

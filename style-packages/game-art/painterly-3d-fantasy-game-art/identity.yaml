@@ -1,0 +1,23 @@
+canonical_name: 手绘质感三维幻想游戏美术
+entity_type: painterly_3d_fantasy_game_art_direction
+origin: hand_painted_environment_and_stylized_3d_character_production
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - fantasy_forest
+  - magical_ruin
+  - creature_scene
+  - atmospheric_platformer
+  exclusions:
+  - photorealistic_game_render
+  - glossy_asset_catalog
+  - random_bloom
+  - copied_character
+sources:
+- https://www.orithegame.com/blind-forest/
+rendering:
+  model: painterly 3D fantasy environment with hand-painted textures and atmospheric
+    lighting
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

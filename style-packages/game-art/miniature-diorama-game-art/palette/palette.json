@@ -1,0 +1,31 @@
+{
+  "name": "miniature-diorama-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "moss",
+      "hex": "#6F8563",
+      "role": "vegetation"
+    },
+    {
+      "name": "soil",
+      "hex": "#8E6248",
+      "role": "ground"
+    },
+    {
+      "name": "cream",
+      "hex": "#E5D3AC",
+      "role": "light_surface"
+    },
+    {
+      "name": "slate",
+      "hex": "#6D7E87",
+      "role": "distant_cool"
+    },
+    {
+      "name": "ember",
+      "hex": "#D27B45",
+      "role": "small_light"
+    }
+  ]
+}

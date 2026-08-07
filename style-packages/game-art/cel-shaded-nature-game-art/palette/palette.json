@@ -1,0 +1,31 @@
+{
+  "name": "cel-shaded-nature-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "ink",
+      "hex": "#1D2430",
+      "role": "contour_and_deep_shadow"
+    },
+    {
+      "name": "leaf",
+      "hex": "#587449",
+      "role": "foliage"
+    },
+    {
+      "name": "ochre",
+      "hex": "#C49245",
+      "role": "earth_and_warm_light"
+    },
+    {
+      "name": "vermilion",
+      "hex": "#C84B39",
+      "role": "focal_accent"
+    },
+    {
+      "name": "sky",
+      "hex": "#6E91B5",
+      "role": "cool_distance"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "stylized-low-poly-world",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "plum",
+      "hex": "#5F4E73",
+      "role": "deep_plane"
+    },
+    {
+      "name": "coral",
+      "hex": "#D77A6C",
+      "role": "focal_plane"
+    },
+    {
+      "name": "sand",
+      "hex": "#D7B583",
+      "role": "ground"
+    },
+    {
+      "name": "teal",
+      "hex": "#6C9F9B",
+      "role": "cool_structure"
+    },
+    {
+      "name": "cream",
+      "hex": "#F0E2C0",
+      "role": "light_plane"
+    }
+  ]
+}

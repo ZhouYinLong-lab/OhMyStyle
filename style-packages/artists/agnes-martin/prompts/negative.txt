@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- perfect_digital_grid
+- loud_gradient
+- decorative_pattern
+- copied_grid_spacing

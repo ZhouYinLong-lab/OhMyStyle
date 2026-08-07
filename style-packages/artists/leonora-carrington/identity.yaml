@@ -1,0 +1,22 @@
+canonical_name: 莱昂诺拉·卡林顿
+entity_type: artist_surrealist_symbolic_painting
+origin: british_mexican_surrealist_painting
+period: 1917_to_2011
+domain: painting
+scope:
+  use_cases:
+  - dreamlike_interior
+  - hybrid_creature
+  - ritual_landscape
+  - symbolic_still_life
+  exclusions:
+  - generic_dark_fantasy
+  - gore
+  - copied_character
+  - literal_alchemy_diagram
+sources:
+- https://shop.tate.org.uk/leonora-carrington-surrealism-alchemy-and-art/35022.html
+rendering:
+  model: fine-detail surrealist painting with restrained old-master surface
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

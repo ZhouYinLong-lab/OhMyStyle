@@ -1,0 +1,14 @@
+medium: stylized 3D miniature diorama with soft game lighting
+materials:
+- 哑光涂层
+- 木石与植被简化材质
+- 软阴影
+- 小型暖色灯源
+process:
+- 先建立微缩尺度和相机
+- 搭出路径和核心场景
+- 再加入少量可交互小物
+- 用接触阴影确认落地关系
+technical_direction: 使用轻微移轴感但避免过度虚化；保持所有物体比例可解释。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

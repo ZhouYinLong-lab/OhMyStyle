@@ -1,0 +1,13 @@
+package_id: edward-hopper
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://whitney.org/artists/621
+  authority: Whitney Museum of American Art
+  title: Edward Hopper artist page
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: Works by Edward Hopper remain protected where applicable; this package
+  abstracts framing and light without copying a named work.

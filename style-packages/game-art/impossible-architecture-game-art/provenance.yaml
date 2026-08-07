@@ -1,0 +1,13 @@
+package_id: impossible-architecture-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://gdcvault.com/play/1022299/The-Art-of-Monument
+  authority: GDC Vault and ustwo
+  title: The Art of Monument Valley
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: Monument Valley is a commercial work by ustwo; this package abstracts
+  isometric design principles without reproducing its structures.

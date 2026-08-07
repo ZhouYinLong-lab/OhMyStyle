@@ -1,0 +1,22 @@
+canonical_name: 维维安·迈尔
+entity_type: photographer_observational_street_photography
+origin: mid_century_american_street_and_documentary_photography
+period: 1926_to_2009
+domain: photography
+scope:
+  use_cases:
+  - street_portrait
+  - urban_childhood
+  - storefront_detail
+  - self_reflection
+  exclusions:
+  - fashion_pose
+  - staged_advertising
+  - exact_archive_reconstruction
+  - privacy_intrusion
+sources:
+- https://www.vivianmaier.com/about-vivian-maier/
+rendering:
+  model: observational street photograph with medium-format framing and natural light
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

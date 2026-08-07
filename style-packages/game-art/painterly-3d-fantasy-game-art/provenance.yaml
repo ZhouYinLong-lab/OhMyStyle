@@ -1,0 +1,13 @@
+package_id: painterly-3d-fantasy-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://www.orithegame.com/blind-forest/
+  authority: Moon Studios
+  title: Ori and the Blind Forest
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: Ori and the Blind Forest is a commercial work by Moon Studios and Xbox;
+  this package abstracts hand-painted environment traits.

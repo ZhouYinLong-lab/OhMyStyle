@@ -1,0 +1,33 @@
+schema_version: 1.0.0
+resource_id: hand-inked-animation-game-art
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+- medium
+- composition
+- lighting
+- palette
+- texture
+- layout
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+  benchmark: benchmark/benchmark.yaml
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Reference manifest rows are link-only unless redistribution rights
+    are separately verified.
+  generated_demo_policy: Generated demonstrations must be new anonymous scenes and
+    must not reproduce a source work.

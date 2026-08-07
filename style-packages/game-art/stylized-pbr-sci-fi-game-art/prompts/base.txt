@@ -1,0 +1,21 @@
+Create a new subject and composition using these observable visual decisions:
+- 用建筑层叠、垂直管线和狭窄通道形成深度
+- 焦点物体有明确轮廓和交互尺度
+- 远景灯光不抢近景材质
+- 深蓝黑、青绿、橙黄和少量紫红形成冷暖对照
+- 霓虹色是局部光源而不是全局色罩
+- 湿地反射保持原色层次
+- 风格化PBR材质
+- 真实粗糙度和金属度差异
+- 图形化灯牌或发光面
+- 多源环境光仍有主次
+- 雨后湿地反射可辨但不过曝
+- 光源方向和颜色可追踪
+- 锈蚀、玻璃、混凝土、塑料和金属必须区分
+- 粗糙度比高光数量更重要
+- 细节集中在近景和功能构件
+- 污渍、划痕与水迹有空间逻辑
+- PBR材质真实响应与图形色彩同时成立
+- 不依赖统一青橙滤镜
+- 不复制具体游戏场景
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

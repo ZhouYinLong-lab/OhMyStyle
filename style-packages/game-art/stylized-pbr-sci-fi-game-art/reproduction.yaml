@@ -1,0 +1,15 @@
+medium: stylized real-time PBR sci-fi environment render
+materials:
+- 金属和锈蚀材质
+- 湿混凝土
+- 玻璃与塑料
+- 发光面
+- 雨水反射
+process:
+- 先分配空间层次和主光源
+- 再建立材质粗糙度分区
+- 加入少量功能色光
+- 最后检查反射、透明和颜色污染
+technical_direction: 控制光源数量和饱和度；反射必须来自可解释的环境，不使用漂浮光带。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

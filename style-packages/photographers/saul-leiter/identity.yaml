@@ -1,0 +1,22 @@
+canonical_name: 索尔·雷特
+entity_type: photographer_color_street_abstraction
+origin: mid_century_new_york_color_street_photography
+period: 1923_to_2013
+domain: photography
+scope:
+  use_cases:
+  - rainy_street
+  - window_reflection
+  - urban_color_field
+  - quiet_portrait
+  exclusions:
+  - clean_street_documentary
+  - oversharpened_hdr
+  - exact_photo_reconstruction
+  - generic_teal_orange_grade
+sources:
+- https://www.saulleiterfoundation.org/
+rendering:
+  model: quiet color street photograph with layered occlusion and analog-like response
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

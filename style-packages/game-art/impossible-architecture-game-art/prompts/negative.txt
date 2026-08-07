@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- random_perspective_break
+- photorealistic_architecture
+- unreadable_mechanism
+- copied_level_layout

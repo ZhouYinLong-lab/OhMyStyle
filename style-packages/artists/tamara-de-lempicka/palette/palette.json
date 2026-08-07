@@ -1,0 +1,31 @@
+{
+  "name": "tamara-de-lempicka",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "black",
+      "hex": "#1D2027",
+      "role": "contour"
+    },
+    {
+      "name": "ivory",
+      "hex": "#E7DFCC",
+      "role": "light"
+    },
+    {
+      "name": "emerald",
+      "hex": "#2F6D61",
+      "role": "luxury_green"
+    },
+    {
+      "name": "cobalt",
+      "hex": "#355A9B",
+      "role": "cool_accent"
+    },
+    {
+      "name": "crimson",
+      "hex": "#9E3D45",
+      "role": "warm_accent"
+    }
+  ]
+}

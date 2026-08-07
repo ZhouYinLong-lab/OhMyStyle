@@ -1,0 +1,22 @@
+canonical_name: 塔玛拉·德·兰佩卡
+entity_type: artist_art_deco_figurative_painting
+origin: art_deco_modernist_portrait_painting
+period: 1898_to_1980
+domain: painting
+scope:
+  use_cases:
+  - editorial_portrait
+  - luxury_still_life
+  - geometric_figure
+  - urban_modern_scene
+  exclusions:
+  - soft_impressionist_blur
+  - photorealistic_skin
+  - copied_pose
+  - logo_or_brand_design
+sources:
+- https://www.moma.org/artists/3476
+rendering:
+  model: geometric Art Deco oil-painting direction with polished planar volumes
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

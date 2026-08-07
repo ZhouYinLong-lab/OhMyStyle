@@ -1,0 +1,31 @@
+{
+  "name": "hilma-af-klint",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "rose",
+      "hex": "#D99AAE",
+      "role": "warm_symbol"
+    },
+    {
+      "name": "yellow",
+      "hex": "#E8C85B",
+      "role": "solar_shape"
+    },
+    {
+      "name": "blue",
+      "hex": "#466C99",
+      "role": "cool_shape"
+    },
+    {
+      "name": "violet",
+      "hex": "#78618C",
+      "role": "deep_symbol"
+    },
+    {
+      "name": "sage",
+      "hex": "#8BA274",
+      "role": "balance"
+    }
+  ]
+}

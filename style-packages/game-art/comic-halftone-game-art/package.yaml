@@ -1,0 +1,16 @@
+id: comic-halftone-game-art
+name: 漫画网点叙事游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 把漫画分镜、墨线轮廓、网点阴影和有限色印刷逻辑转译为游戏画面，重点是强烈的面板节奏、表情剪影与叙事信息层级。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

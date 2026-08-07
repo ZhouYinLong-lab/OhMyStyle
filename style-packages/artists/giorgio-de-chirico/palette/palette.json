@@ -1,0 +1,31 @@
+{
+  "name": "giorgio-de-chirico",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "ochre",
+      "hex": "#B8884D",
+      "role": "sunlit_architecture"
+    },
+    {
+      "name": "terracotta",
+      "hex": "#A65C4B",
+      "role": "warm_wall"
+    },
+    {
+      "name": "bluegray",
+      "hex": "#627789",
+      "role": "shadow_plane"
+    },
+    {
+      "name": "cream",
+      "hex": "#E5D5B1",
+      "role": "sky"
+    },
+    {
+      "name": "umber",
+      "hex": "#493B37",
+      "role": "long_shadow"
+    }
+  ]
+}

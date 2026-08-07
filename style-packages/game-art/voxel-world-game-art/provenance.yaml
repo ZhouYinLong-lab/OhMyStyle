@@ -1,0 +1,13 @@
+package_id: voxel-world-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://www.minecraft.net/en-us/article/what-minecraft
+  authority: Minecraft and Mojang
+  title: What is Minecraft?
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: Minecraft is a commercial work by Mojang and Microsoft; this package
+  abstracts voxel construction principles without copying assets.

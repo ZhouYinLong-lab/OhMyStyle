@@ -1,0 +1,14 @@
+medium: voxel-based 3D scene with block-authored geometry
+materials:
+- 立方体体素
+- 有限色阶材质
+- 面向相关的阴影
+- 稀疏装饰方块
+process:
+- 先确定网格尺度和大体块
+- 再分配材料色族
+- 随后补充可交互小物
+- 最后检查所有边缘和透视是否服从网格
+technical_direction: 使用正交或弱透视相机，保留方块边缘；避免平滑曲面和高频照片纹理。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

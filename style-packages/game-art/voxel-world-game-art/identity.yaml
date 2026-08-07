@@ -1,0 +1,22 @@
+canonical_name: 体素世界游戏美术
+entity_type: voxel_3d_game_art_direction
+origin: block_based_sandbox_world_building
+period: 2000s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - block_landscape
+  - modular_building
+  - resource_scene
+  - stylized_world_map
+  exclusions:
+  - smooth_subdivision_surface
+  - photorealistic_terrain
+  - copied_game_texture
+  - excessive_microdetail
+sources:
+- https://www.minecraft.net/en-us/article/what-minecraft
+rendering:
+  model: voxel-based 3D scene with block-authored geometry
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

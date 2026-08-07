@@ -1,0 +1,16 @@
+id: rinko-kawauchi
+name: 川内伦子
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 以柔和自然光、近距离日常细节、轻盈色彩和不确定的时间感构成诗性摄影，强调微小事物、空气感与画面之间的呼吸。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

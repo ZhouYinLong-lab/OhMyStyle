@@ -1,0 +1,31 @@
+{
+  "name": "hand-inked-animation-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "ink",
+      "hex": "#1A1718",
+      "role": "linework"
+    },
+    {
+      "name": "paper",
+      "hex": "#F0E0B6",
+      "role": "paper_light"
+    },
+    {
+      "name": "brick",
+      "hex": "#A83F35",
+      "role": "focal_red"
+    },
+    {
+      "name": "mustard",
+      "hex": "#C09A39",
+      "role": "warm_background"
+    },
+    {
+      "name": "sage",
+      "hex": "#71805A",
+      "role": "muted_cool_accent"
+    }
+  ]
+}

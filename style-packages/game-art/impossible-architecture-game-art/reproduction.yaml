@@ -1,0 +1,14 @@
+medium: isometric architectural 3D illustration for puzzle-game spaces
+materials:
+- 模块化建筑体块
+- 平面色材质
+- 软阴影
+- 少量纹理标记
+process:
+- 先绘制等距网格和主路径
+- 再设计一处局部结构错觉
+- 分配色彩与交互提示
+- 用俯视检查空间是否仍可解释
+technical_direction: 优先正交相机和一致轴线；让每个不可能连接都有明确入口、出口或遮挡理由。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

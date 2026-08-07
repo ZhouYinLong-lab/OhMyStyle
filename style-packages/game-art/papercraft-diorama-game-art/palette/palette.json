@@ -1,0 +1,31 @@
+{
+  "name": "papercraft-diorama-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "paper",
+      "hex": "#F3E8D1",
+      "role": "paper_base"
+    },
+    {
+      "name": "sky",
+      "hex": "#6FB5D6",
+      "role": "background"
+    },
+    {
+      "name": "coral",
+      "hex": "#E47767",
+      "role": "focal_cutout"
+    },
+    {
+      "name": "grass",
+      "hex": "#7FA36B",
+      "role": "foliage"
+    },
+    {
+      "name": "butter",
+      "hex": "#F3C968",
+      "role": "warm_light"
+    }
+  ]
+}

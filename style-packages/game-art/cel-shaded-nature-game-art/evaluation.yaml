@@ -1,0 +1,31 @@
+package_id: cel-shaded-nature-game-art
+package_version: 0.1.0
+invariants:
+- id: style_recognition
+  weight: 3
+  test: The package medium, edge, light, palette, and texture decisions remain recognizable
+    after the subject changes.
+- id: prompt_adherence
+  weight: 3
+  test: The requested subject, count, setting, and aspect ratio are followed without
+    adding a copied source arrangement.
+- id: material_readability
+  weight: 2
+  test: Requested materials and capture behavior remain visually distinguishable.
+- id: human_artifact_control
+  weight: 2
+  test: Hands, faces, geometry, text, reflections, and repeated details do not show
+    avoidable generative defects.
+rejections:
+- copied_named_work
+- generic_global_filter
+- unreadable_subject
+- style_pollution
+- unmotivated_extra_objects
+minimum_score: 8
+benchmark_suite:
+- portrait
+- still_life
+- architecture_environment
+- minimal_composition
+- fuzzy_brief

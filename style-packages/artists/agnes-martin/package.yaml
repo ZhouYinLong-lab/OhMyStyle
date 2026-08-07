@@ -1,0 +1,16 @@
+id: agnes-martin
+name: 艾格尼丝·马丁
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 以极细网格、重复线条、低对比色带和安静留白构成极简绘画，强调手绘重复中的微小偏差与长时间观看。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

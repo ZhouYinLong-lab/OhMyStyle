@@ -1,0 +1,31 @@
+{
+  "name": "neon-noir-3d-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "blueblack",
+      "hex": "#101A2A",
+      "role": "low_key_base"
+    },
+    {
+      "name": "cyan",
+      "hex": "#2B9CA8",
+      "role": "neon_cool"
+    },
+    {
+      "name": "violet",
+      "hex": "#8A4F91",
+      "role": "secondary_light"
+    },
+    {
+      "name": "tungsten",
+      "hex": "#D88B42",
+      "role": "practical_warm"
+    },
+    {
+      "name": "wet_gray",
+      "hex": "#68747A",
+      "role": "reflective_neutral"
+    }
+  ]
+}

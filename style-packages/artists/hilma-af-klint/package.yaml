@@ -1,0 +1,16 @@
+id: hilma-af-klint
+name: 希尔玛·艾夫·克林特
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 以几何图式、螺旋、对称结构和富有精神象征意味的色彩组织抽象绘画，强调符号系统的秩序与柔性变化。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

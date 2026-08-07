@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">纸艺立体书游戏美术 palette card</title>
+  <desc id="desc">将场景拆成纸张、折痕、剪影和层叠立体结构，使用真实纸艺的边缘、阴影与轻微手作误差构成可游玩的微型世界。</desc>
+  <rect width="1600" height="900" fill="#10151D"/>
+  <circle cx="1280" cy="240" r="250" fill="#F3E8D1" opacity="0.85"/>
+  <circle cx="1030" cy="360" r="190" fill="#6FB5D6" opacity="0.85"/>
+  <path d="M0 520 C280 360 510 690 800 500 S1260 330 1600 520 V900 H0 Z" fill="#E47767" opacity="0.9"/>
+  <path d="M0 640 C280 520 530 760 880 610 S1260 520 1600 680 V900 H0 Z" fill="#7FA36B" opacity="0.9"/>
+  <rect x="80" y="600" width="248" height="150" rx="18" fill="#F3E8D1"/><text x="98" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">paper</text><rect x="368" y="600" width="248" height="150" rx="18" fill="#6FB5D6"/><text x="386" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">sky</text><rect x="656" y="600" width="248" height="150" rx="18" fill="#E47767"/><text x="674" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">coral</text><rect x="944" y="600" width="248" height="150" rx="18" fill="#7FA36B"/><text x="962" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">grass</text><rect x="1232" y="600" width="248" height="150" rx="18" fill="#F3C968"/><text x="1250" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">butter</text>
+  <text x="80" y="120" font-family="sans-serif" font-size="52" font-weight="700" fill="#F5F1E8">纸艺立体书游戏美术</text>
+  <text x="80" y="175" font-family="sans-serif" font-size="24" fill="#C8D0D8">版权安全的抽象色板卡 · 可替换为已获授权的代表图</text>
+</svg>

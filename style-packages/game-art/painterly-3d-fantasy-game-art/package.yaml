@@ -1,0 +1,16 @@
+id: painterly-3d-fantasy-game-art
+name: 手绘质感三维幻想游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以手绘背景、柔和三维角色和层叠光雾构成幻想游戏空间，强调笔触方向、环境光和角色与景观之间的统一色温。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

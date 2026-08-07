@@ -1,0 +1,16 @@
+id: flat-design-puzzle-game-art
+name: 平面设计解谜游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 用几何形状、纯色面、清楚的交互层级和克制动画语言构成平面解谜画面，强调图形识别和操作逻辑而不是材质复杂度。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

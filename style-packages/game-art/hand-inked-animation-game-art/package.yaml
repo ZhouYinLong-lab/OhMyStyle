@@ -1,0 +1,16 @@
+id: hand-inked-animation-game-art
+name: 手绘墨线动画游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以逐帧手绘的弹性动作、黑色墨线、复古卡通比例和水彩背景组织二维游戏画面，保留人工绘制的不完美节奏。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

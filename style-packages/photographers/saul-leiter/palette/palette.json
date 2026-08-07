@@ -1,0 +1,31 @@
+{
+  "name": "saul-leiter",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "brick",
+      "hex": "#A84945",
+      "role": "street_accent"
+    },
+    {
+      "name": "mustard",
+      "hex": "#C39A4E",
+      "role": "warm_reflection"
+    },
+    {
+      "name": "navy",
+      "hex": "#30485E",
+      "role": "cool_shadow"
+    },
+    {
+      "name": "mauve",
+      "hex": "#9A7487",
+      "role": "glass_color"
+    },
+    {
+      "name": "graygreen",
+      "hex": "#7C8B7F",
+      "role": "neutral_city"
+    }
+  ]
+}
