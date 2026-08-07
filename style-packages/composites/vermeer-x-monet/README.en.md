@@ -23,7 +23,7 @@ Current mode: `blend`
 
 See `composite.yaml` for constraints. Generated example:
 
-![Cross-style example](examples/generated/anonymous-v1.png)
+![Cross-style example](gallery-16x9.jpg)
 
 ## Use only this package
 
