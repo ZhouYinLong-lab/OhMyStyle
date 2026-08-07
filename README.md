@@ -135,6 +135,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/rpg-maker-pixel-art/README.md"><img src="style-packages/game-art/rpg-maker-pixel-art/gallery-16x9.jpg" width="230" alt="角色扮演游戏像素美术代表图"></a><br><strong>角色扮演游戏像素美术</strong><br><a href="style-packages/game-art/rpg-maker-pixel-art/README.md">打开 README</a></td>
 </tr>
 </table>
+
 ### 艺术流派与历史时期
 
 <table>
