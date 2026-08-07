@@ -1,0 +1,31 @@
+{
+  "name": "hades-mythic-illustration",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "indigo",
+      "hex": "#28244F",
+      "role": "deep_ground"
+    },
+    {
+      "name": "crimson",
+      "hex": "#A33E43",
+      "role": "focal_warm"
+    },
+    {
+      "name": "ochre",
+      "hex": "#D69A45",
+      "role": "mythic_gold"
+    },
+    {
+      "name": "turquoise",
+      "hex": "#4FA6A0",
+      "role": "cool_magic"
+    },
+    {
+      "name": "charcoal",
+      "hex": "#171820",
+      "role": "silhouette"
+    }
+  ]
+}

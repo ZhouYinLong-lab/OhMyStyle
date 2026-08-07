@@ -1,0 +1,14 @@
+package_id: hades-mythic-illustration
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://www.supergiantgames.com/games/hades/
+  authority: Supergiant Games
+  title: Hades official game page
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: Hades is a commercial work by Supergiant Games; this package abstracts
+  illustration, palette, and silhouette decisions without reproducing characters,
+  symbols, or scenes.
