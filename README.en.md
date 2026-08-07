@@ -6,6 +6,8 @@
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
+To add a package, start with the [style-package contribution workflow](CONTRIBUTING.md#创建一个包). The canonical template is in [`templates/style-package`](templates/style-package); the scaffold command creates the complete directory, bilingual documentation, source manifest, prompts, and evaluation scaffold.
+
 ## Style package gallery
 
 The main gallery lists independent style packages only. Every card uses a horizontal 16:9 representative image; click the image or name to open the package README.
