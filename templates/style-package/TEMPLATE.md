@@ -1,5 +1,7 @@
 # 风格包模板说明
 
+[English](TEMPLATE.en.md)
+
 本目录是可执行风格包的标准模板，不是一个可发布的风格包。正式包应由
 `tools/new-style-package.py` 创建到 `style-packages/<分类>/<id>/`，不要直接
 把本目录改名后提交。

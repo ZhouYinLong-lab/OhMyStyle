@@ -6,7 +6,7 @@
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
-想要新增风格包？请从[风格包贡献工作流](CONTRIBUTING.md#创建一个包)开始；模板位于 [`templates/style-package`](templates/style-package)，创建命令会生成完整目录、双语说明、来源清单、Prompt 和评估骨架。
+想要新增风格包？请从[中文贡献指南](CONTRIBUTING.md)或[英文贡献指南](CONTRIBUTING.en.md)开始；模板位于 [`templates/style-package`](templates/style-package)，创建命令会生成完整目录、双语说明、来源清单、Prompt 和评估骨架。
 
 ## 风格包画廊
 

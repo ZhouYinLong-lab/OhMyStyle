@@ -181,7 +181,7 @@ def create_package(args: argparse.Namespace) -> Path:
     try:
         for source in TEMPLATE_ROOT.rglob("*"):
             relative = source.relative_to(TEMPLATE_ROOT)
-            if relative.name == "TEMPLATE.md":
+            if relative.name.startswith("TEMPLATE"):
                 continue
             if source.is_dir():
                 (target / relative).mkdir(parents=True, exist_ok=True)
