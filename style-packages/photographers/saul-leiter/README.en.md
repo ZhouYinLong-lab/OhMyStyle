@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Saul Leiter representative](gallery-16x9.svg)
+![Saul Leiter representative](gallery-16x9.jpg)
 
 > **Category:** photographer
 > **Domain:** photography
