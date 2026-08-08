@@ -15,3 +15,14 @@ rejections:
 - global_generic_filter
 - unreadable_subject
 minimum_score: 8
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - systematic grid and restrained product presentation
+    - neutral functional palette
+  reason: Ulm representatives can share geometric order with Bauhaus, De Stijl, and grid techniques.
+  keep_separate_because:
+    - the package is defined by information clarity, systems thinking, and functional communication
+    - it is not interchangeable with decorative geometric abstraction
+    - it must adapt the user's subject rather than force a product board
+  action: clarify_distinctive_signature

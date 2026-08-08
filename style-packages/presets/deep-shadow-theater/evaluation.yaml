@@ -13,3 +13,14 @@ dimensions:
     or workflow?
 pass_rule: Score each dimension from 0 to 5; investigate any dimension below 3 before
   publishing a package example.
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - theatrical directional light
+    - compressed dark surround
+  reason: The preset intentionally approaches Caravaggio, Rembrandt, and Tenebrism in thumbnail appearance.
+  keep_separate_because:
+    - it is a transferable lighting preset rather than an artist or historical movement
+    - the word theater describes light behaviour, not a mandatory stage or character
+    - it must preserve the user's subject and material identity
+  action: clarify_distinctive_signature

@@ -29,3 +29,14 @@ benchmark_suite:
 - architecture_environment
 - minimal_composition
 - fuzzy_brief
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - wet night surfaces
+    - cyan, magenta, and orange urban illumination
+  reason: Neon urban game-art representatives share strong colour and night-scene signals.
+  keep_separate_because:
+    - the package focuses on lived-in city infrastructure and interactive game-space readability
+    - conditional urban elements must not become fixed subjects
+    - its lighting rules differ from film-noir or single-scene neon presets
+  action: clarify_distinctive_signature

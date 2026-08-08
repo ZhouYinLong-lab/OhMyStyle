@@ -16,3 +16,14 @@ profiles:
     required:
       - requested objects remain count-accurate and physically distinct
 minimum_score: 7
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - near-black ground
+    - concentrated subject illumination
+  reason: Tenebrism is intentionally close to artist and preset packages built around extreme chiaroscuro.
+  keep_separate_because:
+    - it describes a historical lighting principle rather than one artist's brushwork or subject matter
+    - it can transfer to user-supplied subjects without prescribing a narrative
+    - its distinction is the light-to-dark ratio and spatial exclusion
+  action: clarify_distinctive_signature

@@ -16,3 +16,14 @@ profiles:
     required:
       - requested objects remain count-accurate and physically distinct
 minimum_score: 7
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - soft window or overcast light
+    - quiet domestic still-life framing
+  reason: Representative image shares a calm, pale, observational surface with adjacent natural-light packages.
+  keep_separate_because:
+    - source_type is a photographer rather than a reusable lighting preset
+    - the signature depends on everyday observation and restrained distance
+    - subject transfer must remain open
+  action: clarify_distinctive_signature

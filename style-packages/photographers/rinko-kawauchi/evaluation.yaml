@@ -29,3 +29,14 @@ benchmark_suite:
 - architecture_environment
 - minimal_composition
 - fuzzy_brief
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - soft daylight
+    - pale domestic or seasonal details
+  reason: Representative image can resemble quiet natural-light and window-light references at thumbnail size.
+  keep_separate_because:
+    - source_type is a photographer with a distinct fragmentary, intimate observation
+    - colour accents and small fleeting details are not interchangeable with a lighting preset
+    - subject transfer must remain open
+  action: clarify_distinctive_signature

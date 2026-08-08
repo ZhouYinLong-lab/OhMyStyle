@@ -16,3 +16,14 @@ profiles:
     required:
       - requested objects remain count-accurate and physically distinct
 minimum_score: 7
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - modular cell structure
+    - repeated rectangular alignment
+  reason: Grid technique thumbnails can overlap with design-school packages that also use geometric organization.
+  keep_separate_because:
+    - the package controls a compositional scaffold rather than a historical visual language
+    - the grid is optional and must be applied to the user's subject
+    - it must not impose primary colours or a poster subject
+  action: clarify_distinctive_signature

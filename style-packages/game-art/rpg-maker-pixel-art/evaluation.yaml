@@ -22,3 +22,14 @@ profiles:
     required:
       - ordinary_space_remains_legible
       - unusual_detail_is_limited_and_compositionally_integrated
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - low-resolution pixel grid
+    - small-scale exploratory scene framing
+  reason: Pixel adventure representatives can share the same thumbnail silhouette and limited-palette terrain.
+  keep_separate_because:
+    - the package prioritizes reusable RPG Maker tile, sprite, and scene constraints
+    - it is not a cinematic narrative preset
+    - user-supplied subjects and locations remain open
+  action: clarify_distinctive_signature

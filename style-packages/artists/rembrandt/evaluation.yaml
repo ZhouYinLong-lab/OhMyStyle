@@ -15,3 +15,14 @@ invariants:
     test: The scene is not a recognizable reconstruction.
 rejections: [brown_filter, crushed_black_void, generic_movie_chiaroscuro, copied_named_work]
 minimum_score: 8
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - warm selective illumination
+    - deep shadow and strong face-or-object modelling
+  reason: Rembrandt shares a thumbnail-level chiaroscuro structure with Caravaggio and Tenebrism packages.
+  keep_separate_because:
+    - the package emphasizes warm atmospheric modelling, layered surfaces, and psychological quiet
+    - it is an artist-derived visual language rather than a generic dark-light filter
+    - it must remain open to non-portrait subjects
+  action: clarify_distinctive_signature

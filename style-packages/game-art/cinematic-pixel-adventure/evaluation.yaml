@@ -25,3 +25,14 @@ profiles:
   fuzzy_brief:
     required:
       - ambiguous_request_is_compiled_into_coherent_visual_decisions
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - low-resolution pixel rendering
+    - atmospheric landscape and journey-scale framing
+  reason: Representative image overlaps with RPG pixel packages in palette, grid texture, and adventure composition.
+  keep_separate_because:
+    - the package prioritizes cinematic depth, weather, and lighting within pixel constraints
+    - it must transfer to user-supplied subjects without requiring a traveller, house, railway, or coast
+    - its depth and atmosphere rules differ from tile-first RPG construction
+  action: clarify_distinctive_signature

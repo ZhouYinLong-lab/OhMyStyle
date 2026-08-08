@@ -29,3 +29,14 @@ benchmark_suite:
 - architecture_environment
 - minimal_composition
 - fuzzy_brief
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - saturated neon accents
+    - dense reflective urban night surfaces
+  reason: Representative image shares a neon city palette with cyberpunk and neon-noir packages.
+  keep_separate_because:
+    - the package uses intimate lived-in environmental detail and cat-scale street observation as optional cues
+    - optional motifs must never become fixed subjects
+    - it differs from generic cyberpunk infrastructure and noir lighting
+  action: clarify_distinctive_signature

@@ -25,3 +25,14 @@ profiles:
   fuzzy_brief:
     required:
       - ambiguous_request_is_compiled_into_coherent_visual_decisions
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - primary geometric forms
+    - disciplined asymmetrical layout
+  reason: Bauhaus, De Stijl, Ulm, and grid packages can produce similar geometric thumbnails.
+  keep_separate_because:
+    - this package combines workshop pedagogy, functional material thinking, and geometric reduction
+    - it is a design-school reference rather than a generic grid recipe
+    - user-supplied subject matter remains open
+  action: clarify_distinctive_signature

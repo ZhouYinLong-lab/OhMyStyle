@@ -29,3 +29,14 @@ benchmark_suite:
 - architecture_environment
 - minimal_composition
 - fuzzy_brief
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - wet reflective pavement
+    - blue-magenta night contrast
+  reason: Thumbnail-level colour and reflection signals overlap with other neon urban packages.
+  keep_separate_because:
+    - the package is a 3D game-art treatment with readable geometry and real-time material logic
+    - noir atmosphere is a visual option, not a mandatory city or street subject
+    - subject transfer must remain open
+  action: clarify_distinctive_signature

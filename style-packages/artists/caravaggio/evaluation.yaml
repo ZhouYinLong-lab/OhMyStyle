@@ -15,3 +15,14 @@ rejections:
 - global_generic_filter
 - unreadable_subject
 minimum_score: 8
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - dramatic directional light
+    - dark field with isolated highlights
+  reason: Caravaggio, Rembrandt, Tenebrism, and deep-shadow presets share strong chiaroscuro signals.
+  keep_separate_because:
+    - this package is an artist-derived treatment with naturalistic human drama and tactile bodies
+    - it must not force biblical, tavern, or figure subjects
+    - artist-specific spatial and skin-light decisions differ from a generic lighting preset
+  action: clarify_distinctive_signature

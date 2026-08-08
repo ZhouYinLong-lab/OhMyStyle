@@ -25,5 +25,14 @@ profiles:
   fuzzy_brief:
     required:
       - ambiguous_request_is_compiled_into_coherent_visual_decisions
-
-
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - orthogonal grid structure
+    - red, blue, yellow, black, and white colour roles
+  reason: Representative image may be visually close to Bauhaus and grid-based design packages.
+  keep_separate_because:
+    - the package requires strict orthogonal abstraction and primary-colour balance
+    - it is a historical movement, not a general-purpose layout utility
+    - it must not force rectangles, interiors, or posters onto every subject
+  action: clarify_distinctive_signature

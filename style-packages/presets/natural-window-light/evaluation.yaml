@@ -15,3 +15,14 @@ rejections:
 - global_generic_filter
 - unreadable_subject
 minimum_score: 8
+image_audit:
+  similarity_level: high
+  visual_overlap:
+    - diffuse light through or near a window
+    - quiet low-contrast interior atmosphere
+  reason: Representative image overlaps with photographer packages that use soft domestic daylight.
+  keep_separate_because:
+    - source_type is a reusable lighting preset rather than an authorial practice
+    - the package transfers light behaviour across user-supplied subjects
+    - it must not force a window, room, or still life
+  action: clarify_distinctive_signature
