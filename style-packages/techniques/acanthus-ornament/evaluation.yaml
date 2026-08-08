@@ -16,3 +16,16 @@ profiles:
     required:
       - requested objects remain count-accurate and physically distinct
 minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Pending provider-backed neutral-subject review."
+  distinctive_signature:
+    score: null
+    notes: "Record which visual decisions remain observable after the subject changes."
+  visual_overlap:
+    score: null
+    notes: "Compare the representative image and output with near-duplicate packages."
+  cross_subject_stability:
+    score: null
+    notes: "Run at least two different subjects before assigning a score."

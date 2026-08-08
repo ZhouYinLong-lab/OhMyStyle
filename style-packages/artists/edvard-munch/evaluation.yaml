@@ -15,3 +15,16 @@ invariants:
     test: The scene is not a recognizable reconstruction.
 rejections: [decorative_saturation, random_distortion, copied_iconic_pose]
 minimum_score: 8
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Pending provider-backed neutral-subject review."
+  distinctive_signature:
+    score: null
+    notes: "Record which visual decisions remain observable after the subject changes."
+  visual_overlap:
+    score: null
+    notes: "Compare the representative image and output with near-duplicate packages."
+  cross_subject_stability:
+    score: null
+    notes: "Run at least two different subjects before assigning a score."

@@ -51,3 +51,16 @@ profiles:
     max_lstar_delta: 2.0
     max_unassigned_high_chroma: 0.45
     enforce_area_ratio: false
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Pending provider-backed neutral-subject review."
+  distinctive_signature:
+    score: null
+    notes: "Record which visual decisions remain observable after the subject changes."
+  visual_overlap:
+    score: null
+    notes: "Compare the representative image and output with near-duplicate packages."
+  cross_subject_stability:
+    score: null
+    notes: "Run at least two different subjects before assigning a score."

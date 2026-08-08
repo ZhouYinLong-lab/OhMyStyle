@@ -40,3 +40,16 @@ subject_independence_suite:
     - ordinary-chair
     - unspecified-building
   evidence: "No provider-backed result is claimed until a real image run is recorded."
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Pending provider-backed neutral-subject review."
+  distinctive_signature:
+    score: null
+    notes: "Record which visual decisions remain observable after the subject changes."
+  visual_overlap:
+    score: null
+    notes: "Compare the representative image and output with near-duplicate packages."
+  cross_subject_stability:
+    score: null
+    notes: "Run at least two different subjects before assigning a score."
