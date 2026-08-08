@@ -1,0 +1,22 @@
+canonical_name: 辛迪·舍曼
+entity_type: photographer_visual_style_direction
+origin: reference_backed_cindy-sherman
+period: 20th_century_to_present
+domain: photography
+scope:
+  use_cases:
+  - 一间旧旅馆房间里一个看向窗外的人，身份不明
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.moma.org/artists/5392
+rendering:
+  model: 构造性肖像摄影、角色化造型与可见布景
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

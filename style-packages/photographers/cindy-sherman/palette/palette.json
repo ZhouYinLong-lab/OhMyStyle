@@ -1,0 +1,31 @@
+{
+  "name": "cindy-sherman",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "钨黄",
+      "hex": "#C19B5B",
+      "role": "practical_light"
+    },
+    {
+      "name": "夜蓝",
+      "hex": "#1D2A3A",
+      "role": "night"
+    },
+    {
+      "name": "灰紫",
+      "hex": "#6C6473",
+      "role": "mid"
+    },
+    {
+      "name": "湿黑",
+      "hex": "#17191B",
+      "role": "shadow"
+    },
+    {
+      "name": "肤棕",
+      "hex": "#9B725A",
+      "role": "human_warmth"
+    }
+  ]
+}
