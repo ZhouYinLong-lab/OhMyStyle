@@ -1,0 +1,9 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it.
+
+Generate a new image of {SUBJECT} in {LOCATION}. Apply this observable visual direction: 乡村生活的自然材质、朴素器物、植物、织物和温暖日光构成实用而有季节感的视觉.
+Use these construction rules: 木、亚麻、陶、铁和纸张; 功能明确的器物摆放; 季节感来自光线和材质而非固定道具. Preserve the user's subject, objects, location, narrative, and aspect ratio.
+Do not copy a reference work, exact pose, recognizable layout, logo, text, character, or landmark.
+Treat any example image as a visual analysis aid only; its subject and story are not defaults.

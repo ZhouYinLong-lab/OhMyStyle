@@ -1,0 +1,49 @@
+canonical_name: "农舍风格"
+entity_type: movement
+domain: design
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点、对象和叙事优先；本包只决定视觉处理，不添加固定题材。
+  subjects:
+    - user-supplied subject
+    - user-supplied location
+    - user-supplied narrative
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - "https://en.wikipedia.org/wiki/Cottagecore"
+notes:
+  - "乡村生活的自然材质、朴素器物、植物、织物和温暖日光构成实用而有季节感的视觉"
+  - 示例场景只是测试入口，不是每次生成的默认主体。
+composition:
+  - "木、亚麻、陶、铁和纸张"
+palette:
+  - "奶油：墙面与布料"
+  - "橡木：结构材质"
+  - "鼠尾草：自然补色"
+lighting:
+  quality: coherent light appropriate to the user's subject
+  behavior:
+    - 光线服务主体、材质和空间，不把风格变成全局滤镜。
+medium: "乡村生活方式设计"
+materials:
+  support:
+    - 用户主题中真实存在的材质
+    - 与风格方向相容的表面处理
+process:
+  - 先准确编译用户主体、对象、地点和画幅。
+  - 再应用本包的构图、光线、色彩、表面和纹理规则。
+  - 最后检查主体独立性、材质可信度和负面约束。
+technical_direction:
+  contrast: subject-dependent, controlled
+  saturation: preserve deliberate color roles
+  perspective: follow the user's requested viewpoint
+  detail_density: selective and readable
+invariants:
+  - 用户主体、地点、对象数量和叙事不被风格包替换。
+  - 视觉特征必须跨不同主题保持可观察。
+  - 不复刻任何具体参考作品的构图、人物或文字。
+avoid:
+  - "自动添加谷仓、南瓜、干花或乡村人物"
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, text, or branded layout.
