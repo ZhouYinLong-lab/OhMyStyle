@@ -1,0 +1,16 @@
+id: forest-green-naturalism
+name: 森林绿自然主义
+kind: preset
+domain: photography
+version: 0.1.0
+summary: 以森林绿、自然散射光和可信的有机表面保持场景的自然秩序，适合户外环境与材质观察。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
