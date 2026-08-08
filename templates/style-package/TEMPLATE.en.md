@@ -24,6 +24,11 @@ image must be composed natively as a horizontal 16:9 image; do not generate a
 portrait first and crop or stretch it into a gallery card. Then run the checks
 in `CONTRIBUTING.en.md` before submitting.
 
+Future expansion is managed in batches of 20 packages. Copy and complete the
+20 entries in [`templates/expansion-batch.yaml`](../expansion-batch.yaml) before
+building the packages one by one. One package gets one commit; a batch README
+or gallery index cannot substitute for the actual package contents.
+
 The template maps to these package files:
 
 - `package.yaml`: identity, category, domain, version, and file index;

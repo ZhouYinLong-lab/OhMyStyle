@@ -21,6 +21,8 @@ python tools/new-style-package.py `
 `gallery-16x9.svg`。代表图必须从生成阶段就采用原生横版 16:9 构图；不要先生成竖版图，再裁切或拉伸成画廊图。再按
 `CONTRIBUTING.md` 执行校验。
 
+后续扩充按 20 个包为一个批次管理。先复制并填写 [`templates/expansion-batch.yaml`](../expansion-batch.yaml) 中的 20 个包条目，再逐包完成本模板；一个包一个 commit，不能用批次 README 或画廊索引替代实际包内容。
+
 模板文件对应正式包中的：
 
 - `package.yaml`：包身份、类别、领域、版本和文件索引；

@@ -8,6 +8,8 @@ OhMyStyle is a visual-style preset library for image-generation users. Choose an
 
 To add a package, start with the [English contribution guide](CONTRIBUTING.en.md) or [中文贡献指南](CONTRIBUTING.md). The canonical template is in [`templates/style-package`](templates/style-package); the scaffold command creates the complete directory, bilingual documentation, source manifest, prompts, and evaluation scaffold.
 
+Future expansion follows **batches of 20 style packages**: research original works and rights first, then complete each package with visual rules, a native 16:9 representative image, generated samples, bilingual README files, and validation. One package gets one commit; update the root gallery after the batch is complete. See the [style package expansion workflow](docs/EXPANSION-WORKFLOW.en.md) and the [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml) batch template.
+
 ## Style package gallery
 
 The main gallery lists independent style packages only. Every card uses a horizontal 16:9 representative image; click the image or name to open the package README.

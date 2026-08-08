@@ -1,0 +1,220 @@
+schema_version: "1.0.0"
+batch_id: "2026-08-batch-XX"
+status: planning
+target_count: 20
+
+# Counts must add up to exactly 20. Adjust the distribution before starting work.
+category_plan:
+  artists: 20
+  photographers: 0
+  movements: 0
+  schools: 0
+  techniques: 0
+  presets: 0
+  game-art: 0
+
+# Keep exactly 20 entries. One package is one independently reviewable commit.
+packages:
+  - package_id: "artists/package-id-01"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-02"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-03"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-04"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-05"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-06"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-07"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-08"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-09"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-10"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    validation_status: pending
+    docs_status: pending
+    commit: ""
+  - package_id: "artists/package-id-11"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-12"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-13"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-14"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-15"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-16"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-17"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-18"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-19"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+  - package_id: "artists/package-id-20"
+    category: "artists"
+    name: "中文名称"
+    source_status: pending
+    reference_status: pending
+    package_status: pending
+    gallery_status: pending
+    docs_status: pending
+    validation_status: pending
+    commit: ""
+
+# For a complete batch, set status to complete only after every package entry
+# has complete statuses and a non-empty commit hash.
