@@ -1,0 +1,16 @@
+id: man-ray
+name: 曼·雷
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 摄影结合太阳化、叠印和暗房实验；静物、人物和几何物件被安排成带有实验感的摄影构图；黑白银盐、奶油灰与少量高纯度色块形成超现实色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
