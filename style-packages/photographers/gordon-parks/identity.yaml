@@ -1,0 +1,22 @@
+canonical_name: 戈登·帕克斯
+entity_type: photographer_visual_style_direction
+origin: reference_backed_gordon-parks
+period: 20th_century_to_present
+domain: photography
+scope:
+  use_cases:
+  - 社区修理店里一位工人整理工具，门外是黄昏街道
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.gordonparksfoundation.org/
+rendering:
+  model: 人文纪实摄影与环境肖像
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
