@@ -1,0 +1,22 @@
+canonical_name: 乔治亚·欧姬芙
+entity_type: artist_visual_style_direction
+origin: reference_backed_georgia-okeeffe
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一枚被放大的干燥种荚置于沙漠色背景
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.okeeffemuseum.org/
+rendering:
+  model: 平滑渐变、放大花卉或骨骼形体与简洁背景
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
