@@ -1,0 +1,22 @@
+canonical_name: 哈莱姆文艺复兴
+entity_type: movement_visual_style_direction
+origin: reference_backed_harlem-renaissance
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 社区舞厅里一支小型乐队正在收拾乐器
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://nmaahc.si.edu/explore/stories/harlem-renaissance
+rendering:
+  model: 绘画、海报、拼贴与舞台性构图结合
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
