@@ -1,0 +1,16 @@
+id: cool-concrete-minimal
+name: 冷灰混凝土极简
+kind: preset
+domain: photography
+version: 0.1.0
+summary: 以冷灰建筑表面、几何留白和单一强调色建立清晰的极简空间预设。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
