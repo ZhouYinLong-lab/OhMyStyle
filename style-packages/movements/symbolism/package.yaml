@@ -1,0 +1,16 @@
+id: symbolism
+name: 象征主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 平面化绘画、梦境意象与装饰性轮廓；现实场景被一两个心理象征物打断，构图宁静而不解释；深蓝、紫黑、月白、暗红和金黄形成梦境色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

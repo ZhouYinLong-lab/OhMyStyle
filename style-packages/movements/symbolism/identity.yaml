@@ -1,0 +1,22 @@
+canonical_name: 象征主义
+entity_type: movement_visual_style_direction
+origin: reference_backed_symbolism
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 空房间中央一只盛满黑水的玻璃碗
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/s/symbolism
+rendering:
+  model: 平面化绘画、梦境意象与装饰性轮廓
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
