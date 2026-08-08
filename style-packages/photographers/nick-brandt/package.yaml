@@ -1,0 +1,16 @@
+id: nick-brandt
+name: 尼克·布兰特
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 平面化环境肖像和低饱和数码摄影；人或动物与巨大空旷环境形成静态纪念碑式关系；灰褐、沙色、雾蓝与低饱和肤色形成压低色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
