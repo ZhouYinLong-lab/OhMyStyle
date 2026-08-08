@@ -49,7 +49,7 @@ def read_readme_status(package: Path, image_name: str) -> tuple[bool, str]:
 
 def blank_status(image: Image.Image) -> tuple[bool, str]:
     preview = image.convert("RGB").resize((64, 64))
-    pixels = list(preview.getdata())
+    pixels = list(preview.get_flattened_data())
     near_black = sum(max(pixel) <= 8 for pixel in pixels) / len(pixels)
     near_white = sum(min(pixel) >= 247 for pixel in pixels) / len(pixels)
     extrema = ImageStat.Stat(preview).extrema
@@ -65,12 +65,12 @@ def blank_status(image: Image.Image) -> tuple[bool, str]:
     return True, "image has visible variation"
 
 
-def audit_package(package: Path) -> dict[str, Any]:
+def audit_package(package: Path, repository_root: Path) -> dict[str, Any]:
     image_name = "gallery-16x9.jpg"
     image_path = package / image_name
     result: dict[str, Any] = {
-        "package": package.as_posix(),
-        "image": image_path.as_posix(),
+        "package": package.relative_to(repository_root).as_posix(),
+        "image": image_path.relative_to(repository_root).as_posix(),
         "status": "PASS",
         "messages": [],
     }
@@ -124,7 +124,9 @@ def main() -> None:
     parser.add_argument("--strict", action="store_true", help="treat warnings as failures")
     args = parser.parse_args()
 
-    results = [audit_package(package) for package in discover_packages(args.path)]
+    style_root = args.path.resolve()
+    repository_root = style_root.parent if style_root.name == "style-packages" else style_root
+    results = [audit_package(package, repository_root) for package in discover_packages(style_root)]
     counts = {status: sum(item["status"] == status for item in results) for status in ("PASS", "WARN", "FAIL")}
     for item in results:
         for message in item["messages"] or ["valid image"]:
@@ -132,7 +134,7 @@ def main() -> None:
 
     report = {
         "schema_version": "1.0.0",
-        "root": args.path.resolve().as_posix(),
+        "root": args.path.as_posix(),
         "counts": counts,
         "packages": results,
     }
