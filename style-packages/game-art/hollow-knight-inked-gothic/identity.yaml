@@ -1,0 +1,22 @@
+canonical_name: 空洞骑士墨线哥特游戏美术
+entity_type: game_art_visual_style_direction
+origin: reference_backed_hollow-knight-inked-gothic
+period: historical
+domain: game_art
+scope:
+  use_cases:
+  - 一座被根系穿透的地下礼拜堂与一盏孤灯
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.hollowknight.com/
+rendering:
+  model: 手绘二维背景、墨线轮廓和少量柔和色层
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
