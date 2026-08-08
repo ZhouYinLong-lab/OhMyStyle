@@ -1,0 +1,16 @@
+id: glasgow-school-of-art
+name: 格拉斯哥艺术学院
+kind: school
+domain: design
+version: 0.1.0
+summary: 以建筑线性结构、装饰性自然形态和工艺细节共同组织视觉空间，强调结构与装饰之间的张力。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
