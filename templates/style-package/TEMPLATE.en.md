@@ -39,6 +39,15 @@ The template maps to these package files:
 - `resource.yaml`: maturity and registry contract;
 - `README.md` and `README.en.md`: user-facing bilingual documentation.
 
+## Subject-independence requirement
+
+`prompts/base.txt` must contain the subject-independence contract and use the
+`{SUBJECT}` and `{LOCATION}` placeholders. A style package describes only
+medium, composition, lighting, color, material, texture, and edge behavior.
+Concrete content such as bridges, houses, people, cities, flowers, or vehicles
+belongs only in `examples/` or benchmarks. `identity.yaml` must set
+`scope.subject_policy` to `open`.
+
 `gallery-16x9.svg` is only a neutral placeholder. Replace it before publication
 with a natively composed horizontal 16:9 generated, public-domain, or
 explicitly redistributable representative image. The package README and the

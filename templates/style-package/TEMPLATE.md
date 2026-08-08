@@ -36,5 +36,9 @@ python tools/new-style-package.py `
 - `resource.yaml`：注册表使用的成熟度和资源契约；
 - `README.md`、`README.en.md`：面向使用者的双语说明。
 
+## 主体独立性要求
+
+`prompts/base.txt` 必须包含主体独立契约，并使用 `{SUBJECT}` 与 `{LOCATION}` 占位符。风格包只描述媒介、构图、光线、色彩、材质、纹理和边缘行为；桥梁、房屋、人物、城市、花卉、车辆等具体内容只能作为 `examples/` 或 benchmark 的测试场景。`identity.yaml` 中的 `scope.subject_policy` 必须为 `open`。
+
 模板中的 `gallery-16x9.svg` 只是占位图。发布前必须替换为原生横版 16:9、已生成、公共领域
 或明确允许再分发的代表图；风格包 README 和总 README 画廊都直接使用这张横版代表图。

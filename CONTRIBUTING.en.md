@@ -77,12 +77,13 @@ The template lives in [`templates/style-package`](templates/style-package). [`TE
 
 Complete a new package in this order:
 
-1. Replace every `TODO` with concrete, subject-independent rules for identity, visual signature, reproduction, palette, evaluation, and prompts.
-2. Add source rows to `references/manifest.csv` and explain scope, attribution, and redistribution boundaries in `provenance.yaml`.
-3. Replace the representative image with a natively composed horizontal 16:9 generated, public-domain, or explicitly redistributable image. Do not crop a portrait image into a gallery card, and do not bundle an image merely because it is visible online.
-4. Put new generated samples in `examples/generated/`. Move an image to `examples/accepted/` only after human review and metadata are present.
-5. Update the version and `version.md` when changing a published package.
-6. Run the complete validation set before opening a pull request.
+1. Replace every `TODO` with concrete, subject-independent rules for identity, visual signature, reproduction, palette, evaluation, and prompts. The base prompt must retain `{SUBJECT}` / `{LOCATION}` placeholders and the subject-independence contract.
+2. Do not make a bridge, house, city, person, flower, vehicle, landmark, or fixed narrative the default generated content. Concrete scenes belong in `examples/` or benchmarks and must be labeled as test examples.
+3. Add source rows to `references/manifest.csv` and explain scope, attribution, and redistribution boundaries in `provenance.yaml`.
+4. Replace the representative image with a natively composed horizontal 16:9 generated, public-domain, or explicitly redistributable image. Do not crop a portrait image into a gallery card, and do not bundle an image merely because it is visible online.
+5. Put new generated samples in `examples/generated/`. Move an image to `examples/accepted/` only after human review and metadata are present.
+6. Update the version and `version.md` when changing a published package.
+7. Run the complete validation set before opening a pull request.
 
 ## Validation commands
 
@@ -92,6 +93,7 @@ python tools/build-registry.py
 python tools/validate-package.py style-packages
 python tools/validate-resources.py style-packages
 python tools/validate-benchmarks.py style-packages
+python tools/validate-subject-independence.py style-packages
 python -m unittest discover -s tests -v
 python tools/validate.py
 python scripts/validate-style-json.py
@@ -128,6 +130,7 @@ Prefer `style-packages/` for new work. Do not silently convert inherited materia
 - [ ] The implementation remains model-agnostic and style-agnostic.
 - [ ] Relevant validators and tests pass.
 - [ ] Documentation, examples, and schemas agree.
+- [ ] The base prompt is subject-independent and example scenes are not mixed into its rules.
 - [ ] Existing licenses and notices are preserved.
 
 If redistribution rights are unclear, open an issue with the source link and intended use instead of committing the file.

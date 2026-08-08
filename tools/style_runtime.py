@@ -11,6 +11,16 @@ from typing import Any
 from safe_yaml import safe_load
 
 
+SUBJECT_INDEPENDENCE_CONTRACT = """SUBJECT INDEPENDENCE CONTRACT:
+The user-supplied subject and requested setting are authoritative. This style
+package controls only observable visual treatment: medium, composition,
+lighting, palette, surface, texture, and edge behavior. Do not add a recurring
+object, setting, character, landmark, or narrative motif unless the user asks
+for it. Treat any concrete scene mentioned in package metadata or references as
+an optional example, never as a default subject.
+"""
+
+
 def load_yaml(path: Path) -> dict[str, Any]:
     with path.open(encoding="utf-8") as handle:
         data = safe_load(handle)
@@ -167,8 +177,19 @@ def compile_prompt(
     profile: str = "generic",
     variables: dict[str, str] | None = None,
 ) -> tuple[str, str]:
-    template_values = {"SUBJECT": subject, **(variables or {})}
-    base = runtime["base_prompt"]
+    template_variables = variables or {}
+    template_values = {
+        "SUBJECT": subject,
+        "LOCATION": template_variables.get("LOCATION", "the user-requested setting"),
+        **template_variables,
+    }
+    raw_base = runtime["base_prompt"]
+    for key in re.findall(r"(?:\[([A-Z][A-Z0-9_]*)\]|\{([A-Z][A-Z0-9_]*)\})", raw_base):
+        variable = key[0] or key[1]
+        template_values.setdefault(variable, f"the user-requested {variable.lower().replace('_', ' ')}")
+    base = raw_base
+    if "SUBJECT INDEPENDENCE CONTRACT:" not in base:
+        base = SUBJECT_INDEPENDENCE_CONTRACT + "\n" + base
     for key, value in template_values.items():
         base = base.replace(f"[{key}]", value).replace(f"{{{key}}}", value)
     negative = runtime["negative_prompt"]
@@ -222,7 +243,11 @@ def compile_job(
         "reference_images": references,
         "prompt": prompt,
         "negative_prompt": negative,
-        "template_variables": {"SUBJECT": subject, **(variables or {})},
+        "template_variables": {
+            "SUBJECT": subject,
+            "LOCATION": (variables or {}).get("LOCATION", "the user-requested setting"),
+            **(variables or {}),
+        },
         "unresolved_placeholders": unresolved,
         "constraints": {
             "area_ratio": runtime["reproduction"].get("area_ratio", {}),

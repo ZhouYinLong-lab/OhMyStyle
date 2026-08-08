@@ -77,12 +77,13 @@ python tools/new-style-package.py `
 
 创建后按以下顺序完善：
 
-1. 替换所有 `TODO`，把身份、视觉签名、复现、调色板、评估和 Prompt 写成具体的、与主题无关的规则；
-2. 在 `references/manifest.csv` 添加来源，并在 `provenance.yaml` 说明研究范围、署名和再分发边界；
-3. 将代表图替换为原生横版 16:9（宽高比 16:9）的新生成、公共领域或明确允许再分发图片；不要先生成竖版图再裁成画廊图，也不要因为图片能在网上看到就直接打包；
-4. 把新生成样例放在 `examples/generated/`，只有通过人工审核并附带元数据后才放入 `examples/accepted/`；
-5. 发布已有包的修改时更新版本号和 `version.md`；
-6. 运行完整校验后再提交 Pull Request。
+1. 替换所有 `TODO`，把身份、视觉签名、复现、调色板、评估和 Prompt 写成具体的、与主体无关的规则；基础 Prompt 必须保留 `{SUBJECT}` / `{LOCATION}` 占位符，并包含主体独立契约；
+2. 不得把桥梁、房屋、城市、人物、花卉、车辆、地标或固定叙事写成默认生成内容。具体场景只能放在 `examples/` 或 benchmark，并明确标注为测试示例；
+3. 在 `references/manifest.csv` 添加来源，并在 `provenance.yaml` 说明研究范围、署名和再分发边界；
+4. 将代表图替换为原生横版 16:9（宽高比 16:9）的新生成、公共领域或明确允许再分发图片；不要先生成竖版图再裁成画廊图，也不要因为图片能在网上看到就直接打包；
+5. 把新生成样例放在 `examples/generated/`，只有通过人工审核并附带元数据后才放入 `examples/accepted/`；
+6. 发布已有包的修改时更新版本号和 `version.md`；
+7. 运行完整校验后再提交 Pull Request。
 
 ## 校验命令
 
@@ -92,6 +93,7 @@ python tools/build-registry.py
 python tools/validate-package.py style-packages
 python tools/validate-resources.py style-packages
 python tools/validate-benchmarks.py style-packages
+python tools/validate-subject-independence.py style-packages
 python -m unittest discover -s tests -v
 python tools/validate.py
 python scripts/validate-style-json.py
@@ -128,6 +130,7 @@ python scripts/validate-style-json.py
 - [ ] 代码和规则保持模型无关、风格无关；
 - [ ] 相关校验和测试通过；
 - [ ] 文档、示例和当前 Schema 一致；
+- [ ] 基础 Prompt 与具体主体无关，示例场景没有混入基础规则；
 - [ ] 原有许可证和版权声明得到保留。
 
 如果无法确认素材是否可以再分发，请先提交 Issue，提供来源链接和使用计划，不要直接提交文件。
