@@ -1,0 +1,16 @@
+id: warm-paper-still-life
+name: 暖纸色静物
+kind: preset
+domain: photography
+version: 0.1.0
+summary: 以暖象牙色纸面、手工边缘、天然物件和柔和侧光建立触感明确的静物预设。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
