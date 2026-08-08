@@ -1429,6 +1429,40 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: bohemian
+  name: 波西米亚风格
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/bohemian
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: brutalism
+  name: 粗野主义
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/brutalism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: conceptual-art
   name: 观念艺术
   kind: movement
@@ -1463,6 +1497,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: coquette
+  name: 少女风
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/coquette
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 0
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: cubism
   name: 立体主义
   kind: movement
@@ -1480,6 +1531,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: cybercore
+  name: 赛博核
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/cybercore
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 0
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: dada
   name: 达达主义
   kind: movement
@@ -1531,6 +1599,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: farmhouse-cottagecore
+  name: 农舍风格
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/farmhouse-cottagecore
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: futurism
   name: 未来主义
   kind: movement
@@ -1548,6 +1633,40 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: gothic
+  name: 哥特式
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/gothic
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: graffiti
+  name: 涂鸦
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/graffiti
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: greek-archaic-period
   name: 古希腊古风时期
   kind: movement
@@ -1684,6 +1803,57 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: false
+- resource_id: japandi
+  name: 日式北欧风
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/japandi
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: kawaii
+  name: 卡哇伊
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/kawaii
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: kitsch
+  name: 媚俗
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/kitsch
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: land-art
   name: 大地艺术
   kind: movement
@@ -1735,6 +1905,40 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: memphis
+  name: 孟菲斯风格
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/memphis
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: mid-century-modern
+  name: 中世纪现代主义
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/mid-century-modern
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: minimalism
   name: 极简主义
   kind: movement
@@ -1752,6 +1956,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: mystical-western-tarot
+  name: 神秘西部
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/mystical-western-tarot
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: neoclassicism
   name: 新古典主义
   kind: movement
@@ -1854,6 +2075,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: pointillism
+  name: 点彩画法
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/pointillism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: pop-art
   name: 波普艺术
   kind: movement
@@ -1990,6 +2228,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: shabby-chic
+  name: 破旧别致风
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/shabby-chic
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: socialist-realism
   name: 社会主义现实主义
   kind: movement
@@ -2007,6 +2262,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: steampunk
+  name: 蒸汽朋克
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/steampunk
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: suprematism
   name: 至上主义
   kind: movement
@@ -2058,6 +2330,108 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: synthwave
+  name: 合成器浪潮
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/synthwave
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: tenebrism
+  name: 暗色调主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/tenebrism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: utilitarian
+  name: 实用主义
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/utilitarian
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 0
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: vaporwave
+  name: 蒸汽波
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/vaporwave
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: victorian
+  name: 维多利亚风格
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/victorian
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: y2k
+  name: Y2K
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/y2k
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: alfred-stieglitz
   name: 阿尔弗雷德·斯蒂格利茨
   kind: photographer
@@ -2193,6 +2567,23 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 1
+  benchmark: false
+- resource_id: emilie-hofferber
+  name: 埃米莉·霍弗伯
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/emilie-hofferber
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
   benchmark: false
 - resource_id: etienne-jules-marey
   name: 艾蒂安-朱尔·马雷
@@ -3116,6 +3507,70 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: acanthus-ornament
+  name: 莨苕叶装饰
+  kind: technique
+  domain: design
+  package_path: style-packages/techniques/acanthus-ornament
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: anthropomorphic-design
+  name: 拟人化设计
+  kind: technique
+  domain: design
+  package_path: style-packages/techniques/anthropomorphic-design
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: aurora-gradient-grain
+  name: 极光渐变颗粒
+  kind: technique
+  domain: design
+  package_path: style-packages/techniques/aurora-gradient-grain
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 0
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: bento-grid
+  name: 便当盒网格
+  kind: technique
+  domain: design
+  package_path: style-packages/techniques/bento-grid
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 0
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: collage-mixed-media
   name: 拼贴综合材料
   kind: technique
@@ -3133,6 +3588,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: conceptual-sketch
+  name: 概念草图
+  kind: technique
+  domain: design
+  package_path: style-packages/techniques/conceptual-sketch
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 0
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: cyanotype
   name: 氰版印相
   kind: technique
@@ -3183,6 +3654,38 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: ethereal
+  name: 空灵
+  kind: technique
+  domain: design
+  package_path: style-packages/techniques/ethereal
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 0
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: filigree
+  name: 金银丝细工
+  kind: technique
+  domain: design
+  package_path: style-packages/techniques/filigree
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: fresco-painting
   name: 湿壁画
   kind: technique
@@ -3200,6 +3703,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: grid-3x3
+  name: 3×3 网格设计
+  kind: technique
+  domain: design
+  package_path: style-packages/techniques/grid-3x3
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 0
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: gum-bichromate
   name: 重铬酸盐胶印
   kind: technique
@@ -3233,6 +3752,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: luxury-typography
+  name: 奢华排版
+  kind: technique
+  domain: design
+  package_path: style-packages/techniques/luxury-typography
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 0
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: mezzotint-printmaking
   name: 美柔汀版画
   kind: technique

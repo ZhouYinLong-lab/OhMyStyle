@@ -64,6 +64,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--kind", required=True, choices=sorted(KIND_DIRECTORIES))
     parser.add_argument("--id", required=True, help="URL-safe package id, for example: coastal-noir")
     parser.add_argument("--name", required=True, help="Human-facing package name")
+    parser.add_argument("--name-en", help="English display name for README.en.md; defaults to --name")
     parser.add_argument("--domain", required=True, choices=["painting", "photography", "printmaking", "design", "game_art", "hybrid"])
     parser.add_argument("--summary", required=True, help="Observable package summary, at least 30 characters")
     parser.add_argument("--root", type=Path, default=Path("style-packages"), help="Style package root")
@@ -110,6 +111,7 @@ def token_values(args: argparse.Namespace) -> dict[str, str]:
     return {
         "ID": args.id,
         "NAME": args.name.strip(),
+        "NAME_EN": (args.name_en or args.name).strip(),
         "KIND": args.kind,
         "KIND_ZH": KIND_NAMES[args.kind],
         "DOMAIN": args.domain,

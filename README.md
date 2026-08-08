@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-195-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-227-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -148,7 +148,10 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/fan-ho/README.md"><img src="style-packages/photographers/fan-ho/gallery-16x9.jpg" width="230" alt="何藩代表图"></a><br><strong>何藩</strong><br><a href="style-packages/photographers/fan-ho/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lisa-arima/README.md"><img src="style-packages/photographers/lisa-arima/gallery-16x9.jpg" width="230" alt="Lisa Arima 代表图"></a><br><strong>Lisa Arima</strong><br><a href="style-packages/photographers/lisa-arima/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lisa-arima/README.md"><img src="style-packages/photographers/lisa-arima/gallery-16x9.jpg" width="230" alt="丽莎·有马代表图"></a><br><strong>丽莎·有马</strong><br><a href="style-packages/photographers/lisa-arima/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/emilie-hofferber/README.md"><img src="style-packages/photographers/emilie-hofferber/gallery-16x9.jpg" width="230" alt="埃米莉·霍弗伯代表图"></a><br><strong>埃米莉·霍弗伯</strong><br><a href="style-packages/photographers/emilie-hofferber/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -255,6 +258,44 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/de-stijl/README.md"><img src="style-packages/movements/de-stijl/gallery-16x9.jpg" width="230" alt="荷兰风格派代表图"></a><br><strong>荷兰风格派</strong><br><a href="style-packages/movements/de-stijl/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/international-typographic-style/README.md"><img src="style-packages/movements/international-typographic-style/gallery-16x9.jpg" width="230" alt="国际主义版式风格代表图"></a><br><strong>国际主义版式风格</strong><br><a href="style-packages/movements/international-typographic-style/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/new-topographics/README.md"><img src="style-packages/movements/new-topographics/gallery-16x9.jpg" width="230" alt="新地形摄影代表图"></a><br><strong>新地形摄影</strong><br><a href="style-packages/movements/new-topographics/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/japandi/README.md"><img src="style-packages/movements/japandi/gallery-16x9.jpg" width="230" alt="日式北欧风代表图"></a><br><strong>日式北欧风</strong><br><a href="style-packages/movements/japandi/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/memphis/README.md"><img src="style-packages/movements/memphis/gallery-16x9.jpg" width="230" alt="孟菲斯风格代表图"></a><br><strong>孟菲斯风格</strong><br><a href="style-packages/movements/memphis/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/bohemian/README.md"><img src="style-packages/movements/bohemian/gallery-16x9.jpg" width="230" alt="波西米亚风格代表图"></a><br><strong>波西米亚风格</strong><br><a href="style-packages/movements/bohemian/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/shabby-chic/README.md"><img src="style-packages/movements/shabby-chic/gallery-16x9.jpg" width="230" alt="破旧别致风代表图"></a><br><strong>破旧别致风</strong><br><a href="style-packages/movements/shabby-chic/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/farmhouse-cottagecore/README.md"><img src="style-packages/movements/farmhouse-cottagecore/gallery-16x9.jpg" width="230" alt="农舍风格代表图"></a><br><strong>农舍风格</strong><br><a href="style-packages/movements/farmhouse-cottagecore/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/victorian/README.md"><img src="style-packages/movements/victorian/gallery-16x9.jpg" width="230" alt="维多利亚风格代表图"></a><br><strong>维多利亚风格</strong><br><a href="style-packages/movements/victorian/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mystical-western-tarot/README.md"><img src="style-packages/movements/mystical-western-tarot/gallery-16x9.jpg" width="230" alt="神秘西部代表图"></a><br><strong>神秘西部</strong><br><a href="style-packages/movements/mystical-western-tarot/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/kitsch/README.md"><img src="style-packages/movements/kitsch/gallery-16x9.jpg" width="230" alt="媚俗代表图"></a><br><strong>媚俗</strong><br><a href="style-packages/movements/kitsch/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/y2k/README.md"><img src="style-packages/movements/y2k/gallery-16x9.jpg" width="230" alt="Y2K代表图"></a><br><strong>Y2K</strong><br><a href="style-packages/movements/y2k/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/brutalism/README.md"><img src="style-packages/movements/brutalism/gallery-16x9.jpg" width="230" alt="粗野主义代表图"></a><br><strong>粗野主义</strong><br><a href="style-packages/movements/brutalism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/cybercore/README.md"><img src="style-packages/movements/cybercore/gallery-16x9.jpg" width="230" alt="赛博核代表图"></a><br><strong>赛博核</strong><br><a href="style-packages/movements/cybercore/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/synthwave/README.md"><img src="style-packages/movements/synthwave/gallery-16x9.jpg" width="230" alt="合成器浪潮代表图"></a><br><strong>合成器浪潮</strong><br><a href="style-packages/movements/synthwave/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/vaporwave/README.md"><img src="style-packages/movements/vaporwave/gallery-16x9.jpg" width="230" alt="蒸汽波代表图"></a><br><strong>蒸汽波</strong><br><a href="style-packages/movements/vaporwave/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/graffiti/README.md"><img src="style-packages/movements/graffiti/gallery-16x9.jpg" width="230" alt="涂鸦代表图"></a><br><strong>涂鸦</strong><br><a href="style-packages/movements/graffiti/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/tenebrism/README.md"><img src="style-packages/movements/tenebrism/gallery-16x9.jpg" width="230" alt="暗色调主义代表图"></a><br><strong>暗色调主义</strong><br><a href="style-packages/movements/tenebrism/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/gothic/README.md"><img src="style-packages/movements/gothic/gallery-16x9.jpg" width="230" alt="哥特式代表图"></a><br><strong>哥特式</strong><br><a href="style-packages/movements/gothic/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/pointillism/README.md"><img src="style-packages/movements/pointillism/gallery-16x9.jpg" width="230" alt="点彩画法代表图"></a><br><strong>点彩画法</strong><br><a href="style-packages/movements/pointillism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/steampunk/README.md"><img src="style-packages/movements/steampunk/gallery-16x9.jpg" width="230" alt="蒸汽朋克代表图"></a><br><strong>蒸汽朋克</strong><br><a href="style-packages/movements/steampunk/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/kawaii/README.md"><img src="style-packages/movements/kawaii/gallery-16x9.jpg" width="230" alt="卡哇伊代表图"></a><br><strong>卡哇伊</strong><br><a href="style-packages/movements/kawaii/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/coquette/README.md"><img src="style-packages/movements/coquette/gallery-16x9.jpg" width="230" alt="少女风代表图"></a><br><strong>少女风</strong><br><a href="style-packages/movements/coquette/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/utilitarian/README.md"><img src="style-packages/movements/utilitarian/gallery-16x9.jpg" width="230" alt="实用主义代表图"></a><br><strong>实用主义</strong><br><a href="style-packages/movements/utilitarian/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mid-century-modern/README.md"><img src="style-packages/movements/mid-century-modern/gallery-16x9.jpg" width="230" alt="中世纪现代主义代表图"></a><br><strong>中世纪现代主义</strong><br><a href="style-packages/movements/mid-century-modern/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -380,6 +421,21 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/linocut-printmaking/README.md"><img src="style-packages/techniques/linocut-printmaking/gallery-16x9.jpg" width="230" alt="油毡版画代表图"></a><br><strong>油毡版画</strong><br><a href="style-packages/techniques/linocut-printmaking/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/mezzotint-printmaking/README.md"><img src="style-packages/techniques/mezzotint-printmaking/gallery-16x9.jpg" width="230" alt="美柔汀版画代表图"></a><br><strong>美柔汀版画</strong><br><a href="style-packages/techniques/mezzotint-printmaking/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/collage-mixed-media/README.md"><img src="style-packages/techniques/collage-mixed-media/gallery-16x9.jpg" width="230" alt="拼贴综合材料代表图"></a><br><strong>拼贴综合材料</strong><br><a href="style-packages/techniques/collage-mixed-media/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/aurora-gradient-grain/README.md"><img src="style-packages/techniques/aurora-gradient-grain/gallery-16x9.jpg" width="230" alt="极光渐变颗粒代表图"></a><br><strong>极光渐变颗粒</strong><br><a href="style-packages/techniques/aurora-gradient-grain/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/ethereal/README.md"><img src="style-packages/techniques/ethereal/gallery-16x9.jpg" width="230" alt="空灵代表图"></a><br><strong>空灵</strong><br><a href="style-packages/techniques/ethereal/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/filigree/README.md"><img src="style-packages/techniques/filigree/gallery-16x9.jpg" width="230" alt="金银丝细工代表图"></a><br><strong>金银丝细工</strong><br><a href="style-packages/techniques/filigree/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/acanthus-ornament/README.md"><img src="style-packages/techniques/acanthus-ornament/gallery-16x9.jpg" width="230" alt="莨苕叶装饰代表图"></a><br><strong>莨苕叶装饰</strong><br><a href="style-packages/techniques/acanthus-ornament/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/anthropomorphic-design/README.md"><img src="style-packages/techniques/anthropomorphic-design/gallery-16x9.jpg" width="230" alt="拟人化设计代表图"></a><br><strong>拟人化设计</strong><br><a href="style-packages/techniques/anthropomorphic-design/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/conceptual-sketch/README.md"><img src="style-packages/techniques/conceptual-sketch/gallery-16x9.jpg" width="230" alt="概念草图代表图"></a><br><strong>概念草图</strong><br><a href="style-packages/techniques/conceptual-sketch/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/luxury-typography/README.md"><img src="style-packages/techniques/luxury-typography/gallery-16x9.jpg" width="230" alt="奢华排版代表图"></a><br><strong>奢华排版</strong><br><a href="style-packages/techniques/luxury-typography/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/grid-3x3/README.md"><img src="style-packages/techniques/grid-3x3/gallery-16x9.jpg" width="230" alt="3×3 网格设计代表图"></a><br><strong>3×3 网格设计</strong><br><a href="style-packages/techniques/grid-3x3/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/bento-grid/README.md"><img src="style-packages/techniques/bento-grid/gallery-16x9.jpg" width="230" alt="便当盒网格代表图"></a><br><strong>便当盒网格</strong><br><a href="style-packages/techniques/bento-grid/README.md">打开 README</a></td>
 </tr>
 </table>
 

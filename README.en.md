@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-195-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-227-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -150,6 +150,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/fan-ho/README.en.md"><img src="style-packages/photographers/fan-ho/gallery-16x9.jpg" width="230" alt="Fan Ho representative image"></a><br><strong>Fan Ho</strong><br><a href="style-packages/photographers/fan-ho/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/lisa-arima/README.en.md"><img src="style-packages/photographers/lisa-arima/gallery-16x9.jpg" width="230" alt="Lisa Arima representative image"></a><br><strong>Lisa Arima</strong><br><a href="style-packages/photographers/lisa-arima/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/emilie-hofferber/README.en.md"><img src="style-packages/photographers/emilie-hofferber/gallery-16x9.jpg" width="230" alt="Emilie Hofferber representative image"></a><br><strong>Emilie Hofferber</strong><br><a href="style-packages/photographers/emilie-hofferber/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Design schools
@@ -255,6 +258,44 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/de-stijl/README.en.md"><img src="style-packages/movements/de-stijl/gallery-16x9.jpg" width="230" alt="De Stijl representative image"></a><br><strong>De Stijl</strong><br><a href="style-packages/movements/de-stijl/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/international-typographic-style/README.en.md"><img src="style-packages/movements/international-typographic-style/gallery-16x9.jpg" width="230" alt="International Typographic Style representative image"></a><br><strong>International Typographic Style</strong><br><a href="style-packages/movements/international-typographic-style/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/new-topographics/README.en.md"><img src="style-packages/movements/new-topographics/gallery-16x9.jpg" width="230" alt="New Topographics representative image"></a><br><strong>New Topographics</strong><br><a href="style-packages/movements/new-topographics/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/japandi/README.en.md"><img src="style-packages/movements/japandi/gallery-16x9.jpg" width="230" alt="Japandi representative image"></a><br><strong>Japandi</strong><br><a href="style-packages/movements/japandi/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/memphis/README.en.md"><img src="style-packages/movements/memphis/gallery-16x9.jpg" width="230" alt="Memphis representative image"></a><br><strong>Memphis</strong><br><a href="style-packages/movements/memphis/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/bohemian/README.en.md"><img src="style-packages/movements/bohemian/gallery-16x9.jpg" width="230" alt="Bohemian Style representative image"></a><br><strong>Bohemian Style</strong><br><a href="style-packages/movements/bohemian/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/shabby-chic/README.en.md"><img src="style-packages/movements/shabby-chic/gallery-16x9.jpg" width="230" alt="Shabby Chic representative image"></a><br><strong>Shabby Chic</strong><br><a href="style-packages/movements/shabby-chic/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/farmhouse-cottagecore/README.en.md"><img src="style-packages/movements/farmhouse-cottagecore/gallery-16x9.jpg" width="230" alt="Farmhouse and Cottagecore representative image"></a><br><strong>Farmhouse / Cottagecore</strong><br><a href="style-packages/movements/farmhouse-cottagecore/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/victorian/README.en.md"><img src="style-packages/movements/victorian/gallery-16x9.jpg" width="230" alt="Victorian representative image"></a><br><strong>Victorian</strong><br><a href="style-packages/movements/victorian/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mystical-western-tarot/README.en.md"><img src="style-packages/movements/mystical-western-tarot/gallery-16x9.jpg" width="230" alt="Mystical Western and Tarot representative image"></a><br><strong>Mystical Western / Tarot</strong><br><a href="style-packages/movements/mystical-western-tarot/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/kitsch/README.en.md"><img src="style-packages/movements/kitsch/gallery-16x9.jpg" width="230" alt="Kitsch representative image"></a><br><strong>Kitsch</strong><br><a href="style-packages/movements/kitsch/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/y2k/README.en.md"><img src="style-packages/movements/y2k/gallery-16x9.jpg" width="230" alt="Y2K representative image"></a><br><strong>Y2K</strong><br><a href="style-packages/movements/y2k/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/brutalism/README.en.md"><img src="style-packages/movements/brutalism/gallery-16x9.jpg" width="230" alt="Brutalism representative image"></a><br><strong>Brutalism</strong><br><a href="style-packages/movements/brutalism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/cybercore/README.en.md"><img src="style-packages/movements/cybercore/gallery-16x9.jpg" width="230" alt="Cybercore and iOS Core representative image"></a><br><strong>Cybercore / iOS Core</strong><br><a href="style-packages/movements/cybercore/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/synthwave/README.en.md"><img src="style-packages/movements/synthwave/gallery-16x9.jpg" width="230" alt="Synthwave representative image"></a><br><strong>Synthwave</strong><br><a href="style-packages/movements/synthwave/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/vaporwave/README.en.md"><img src="style-packages/movements/vaporwave/gallery-16x9.jpg" width="230" alt="Vaporwave representative image"></a><br><strong>Vaporwave</strong><br><a href="style-packages/movements/vaporwave/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/graffiti/README.en.md"><img src="style-packages/movements/graffiti/gallery-16x9.jpg" width="230" alt="Graffiti representative image"></a><br><strong>Graffiti</strong><br><a href="style-packages/movements/graffiti/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/tenebrism/README.en.md"><img src="style-packages/movements/tenebrism/gallery-16x9.jpg" width="230" alt="Tenebrism representative image"></a><br><strong>Tenebrism</strong><br><a href="style-packages/movements/tenebrism/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/gothic/README.en.md"><img src="style-packages/movements/gothic/gallery-16x9.jpg" width="230" alt="Gothic representative image"></a><br><strong>Gothic</strong><br><a href="style-packages/movements/gothic/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/pointillism/README.en.md"><img src="style-packages/movements/pointillism/gallery-16x9.jpg" width="230" alt="Pointillism representative image"></a><br><strong>Pointillism</strong><br><a href="style-packages/movements/pointillism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/steampunk/README.en.md"><img src="style-packages/movements/steampunk/gallery-16x9.jpg" width="230" alt="Steampunk representative image"></a><br><strong>Steampunk</strong><br><a href="style-packages/movements/steampunk/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/kawaii/README.en.md"><img src="style-packages/movements/kawaii/gallery-16x9.jpg" width="230" alt="Kawaii representative image"></a><br><strong>Kawaii</strong><br><a href="style-packages/movements/kawaii/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/coquette/README.en.md"><img src="style-packages/movements/coquette/gallery-16x9.jpg" width="230" alt="Coquette representative image"></a><br><strong>Coquette</strong><br><a href="style-packages/movements/coquette/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/utilitarian/README.en.md"><img src="style-packages/movements/utilitarian/gallery-16x9.jpg" width="230" alt="Utilitarian representative image"></a><br><strong>Utilitarian</strong><br><a href="style-packages/movements/utilitarian/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mid-century-modern/README.en.md"><img src="style-packages/movements/mid-century-modern/gallery-16x9.jpg" width="230" alt="Mid-century Modern representative image"></a><br><strong>Mid-century Modern</strong><br><a href="style-packages/movements/mid-century-modern/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -380,6 +421,21 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/linocut-printmaking/README.en.md"><img src="style-packages/techniques/linocut-printmaking/gallery-16x9.jpg" width="230" alt="Linocut Printmaking representative image"></a><br><strong>Linocut Printmaking</strong><br><a href="style-packages/techniques/linocut-printmaking/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/mezzotint-printmaking/README.en.md"><img src="style-packages/techniques/mezzotint-printmaking/gallery-16x9.jpg" width="230" alt="Mezzotint Printmaking representative image"></a><br><strong>Mezzotint Printmaking</strong><br><a href="style-packages/techniques/mezzotint-printmaking/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/collage-mixed-media/README.en.md"><img src="style-packages/techniques/collage-mixed-media/gallery-16x9.jpg" width="230" alt="Collage Mixed Media representative image"></a><br><strong>Collage Mixed Media</strong><br><a href="style-packages/techniques/collage-mixed-media/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/aurora-gradient-grain/README.en.md"><img src="style-packages/techniques/aurora-gradient-grain/gallery-16x9.jpg" width="230" alt="Aurora Gradient Grain representative image"></a><br><strong>Aurora Gradient Grain</strong><br><a href="style-packages/techniques/aurora-gradient-grain/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/ethereal/README.en.md"><img src="style-packages/techniques/ethereal/gallery-16x9.jpg" width="230" alt="Ethereal representative image"></a><br><strong>Ethereal</strong><br><a href="style-packages/techniques/ethereal/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/filigree/README.en.md"><img src="style-packages/techniques/filigree/gallery-16x9.jpg" width="230" alt="Filigree representative image"></a><br><strong>Filigree</strong><br><a href="style-packages/techniques/filigree/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/acanthus-ornament/README.en.md"><img src="style-packages/techniques/acanthus-ornament/gallery-16x9.jpg" width="230" alt="Acanthus Ornament representative image"></a><br><strong>Acanthus Ornament</strong><br><a href="style-packages/techniques/acanthus-ornament/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/anthropomorphic-design/README.en.md"><img src="style-packages/techniques/anthropomorphic-design/gallery-16x9.jpg" width="230" alt="Anthropomorphic Design representative image"></a><br><strong>Anthropomorphic Design</strong><br><a href="style-packages/techniques/anthropomorphic-design/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/conceptual-sketch/README.en.md"><img src="style-packages/techniques/conceptual-sketch/gallery-16x9.jpg" width="230" alt="Conceptual Sketch representative image"></a><br><strong>Conceptual Sketch</strong><br><a href="style-packages/techniques/conceptual-sketch/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/luxury-typography/README.en.md"><img src="style-packages/techniques/luxury-typography/gallery-16x9.jpg" width="230" alt="Luxury Typography representative image"></a><br><strong>Luxury Typography</strong><br><a href="style-packages/techniques/luxury-typography/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/grid-3x3/README.en.md"><img src="style-packages/techniques/grid-3x3/gallery-16x9.jpg" width="230" alt="3×3 Grid Design representative image"></a><br><strong>3×3 Grid Design</strong><br><a href="style-packages/techniques/grid-3x3/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/bento-grid/README.en.md"><img src="style-packages/techniques/bento-grid/gallery-16x9.jpg" width="230" alt="Bento Grid representative image"></a><br><strong>Bento Grid</strong><br><a href="style-packages/techniques/bento-grid/README.en.md">Open README</a></td>
 </tr>
 </table>
 

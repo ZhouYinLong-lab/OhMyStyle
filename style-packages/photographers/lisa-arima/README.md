@@ -1,8 +1,8 @@
-# Lisa Arima
+# 丽莎·有马
 
 [English](README.en.md)
 
-![Lisa Arima 代表图](gallery-16x9.jpg)
+![丽莎·有马代表图](gallery-16x9.jpg)
 
 > **分类：** 摄影师
 > **媒介领域：** 摄影
