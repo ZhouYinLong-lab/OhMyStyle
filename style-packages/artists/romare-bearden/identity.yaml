@@ -1,0 +1,22 @@
+canonical_name: 罗梅尔·比尔登
+entity_type: artist_visual_style_direction
+origin: reference_backed_romare-bearden
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 雨后城市车站里一把伞、两只行李箱和一块空广告牌
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.metmuseum.org/art/collection/search?q=Romare%20Bearden
+rendering:
+  model: 纸张拼贴、绘画色块与手工边缘
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
