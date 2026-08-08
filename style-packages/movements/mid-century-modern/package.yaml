@@ -1,0 +1,17 @@
+id: mid-century-modern
+name: 中世纪现代主义
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以20世纪中叶的简洁家具、木材、流线形体、功能主义比例和明快但克制的色彩建立现代生活视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
