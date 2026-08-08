@@ -1,0 +1,22 @@
+canonical_name: 北方文艺复兴
+entity_type: movement_visual_style_direction
+origin: reference_backed_northern-renaissance
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 冬日厨房里的书本、玻璃瓶和一束枯花
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.metmuseum.org/toah/hd/nren/hd_nren.htm
+rendering:
+  model: 细密油画、透明釉层与超写实小物
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

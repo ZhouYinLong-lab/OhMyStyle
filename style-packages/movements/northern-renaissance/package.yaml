@@ -1,0 +1,16 @@
+id: northern-renaissance
+name: 北方文艺复兴
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 细密油画、透明釉层与超写实小物；室内细节、反射物和小尺度象征共同构成精密叙事；深红、墨绿、金黄、木棕和铅白形成细密色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
