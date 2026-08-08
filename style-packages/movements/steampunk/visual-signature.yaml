@@ -1,0 +1,22 @@
+package: "蒸汽朋克"
+summary: "维多利亚时代机械想象、黄铜齿轮、蒸汽装置、皮革和复古工业结构构成幻想设计"
+subject_policy: open
+visual_signature:
+  medium: "历史幻想设计"
+  focus: "维多利亚时代机械想象、黄铜齿轮、蒸汽装置、皮革和复古工业结构构成幻想设计"
+  composition:
+  - "机械结构有功能因果"
+  - "材料差异清楚"
+  - "历史感来自工艺和比例而非固定人物"
+  palette:
+  - "黄铜 #A8783E，角色：金属主色"
+  - "深棕 #4B3024，角色：皮革与木材"
+  - "烟灰 #6D7473，角色：工业背景"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.

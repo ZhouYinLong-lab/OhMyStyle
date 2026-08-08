@@ -1,0 +1,17 @@
+id: steampunk
+name: 蒸汽朋克
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以维多利亚时代机械想象、黄铜齿轮、蒸汽装置、皮革和复古工业结构构成可解释的幻想设计。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
