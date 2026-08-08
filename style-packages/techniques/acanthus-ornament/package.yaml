@@ -1,0 +1,17 @@
+id: acanthus-ornament
+name: 莨苕叶装饰
+kind: technique
+domain: design
+version: 0.1.0
+summary: >-
+  以莨苕叶的卷曲叶脉、对称节奏和浮雕式层叠组织古典装饰边框与表面结构。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
