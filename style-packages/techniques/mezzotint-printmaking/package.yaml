@@ -1,0 +1,16 @@
+id: mezzotint-printmaking
+name: 美柔汀版画
+kind: technique
+domain: painting
+version: 0.1.0
+summary: 铜版颗粒、刮亮高光与柔和黑阶；深色底面中浮出局部光源，画面像从黑暗里逐渐显形；深黑、银灰、暖白、暗红和棕黑形成极宽灰阶。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

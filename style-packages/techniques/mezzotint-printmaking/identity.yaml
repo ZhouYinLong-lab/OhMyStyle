@@ -1,0 +1,22 @@
+canonical_name: 美柔汀版画
+entity_type: technique_visual_style_direction
+origin: reference_backed_mezzotint-printmaking
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 黑底中一盏熄灭前的台灯照亮一只玻璃杯
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/m/mezzotint
+rendering:
+  model: 铜版颗粒、刮亮高光与柔和黑阶
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
