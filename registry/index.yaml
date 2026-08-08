@@ -2228,6 +2228,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: fan-ho
+  name: 何藩
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/fan-ho
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: gordon-parks
   name: 戈登·帕克斯
   kind: photographer
@@ -2312,6 +2329,23 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 1
+  benchmark: false
+- resource_id: lisa-arima
+  name: Lisa Arima
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/lisa-arima
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
   benchmark: false
 - resource_id: man-ray
   name: 曼·雷

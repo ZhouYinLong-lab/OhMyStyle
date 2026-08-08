@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-193-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-195-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -145,6 +145,10 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/cindy-sherman/README.md"><img src="style-packages/photographers/cindy-sherman/gallery-16x9.jpg" width="230" alt="辛迪·舍曼代表图"></a><br><strong>辛迪·舍曼</strong><br><a href="style-packages/photographers/cindy-sherman/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/sebastiao-salgado/README.md"><img src="style-packages/photographers/sebastiao-salgado/gallery-16x9.jpg" width="230" alt="塞巴斯蒂昂·萨尔加多代表图"></a><br><strong>塞巴斯蒂昂·萨尔加多</strong><br><a href="style-packages/photographers/sebastiao-salgado/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/peter-lindbergh/README.md"><img src="style-packages/photographers/peter-lindbergh/gallery-16x9.jpg" width="230" alt="彼得·林德伯格代表图"></a><br><strong>彼得·林德伯格</strong><br><a href="style-packages/photographers/peter-lindbergh/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/fan-ho/README.md"><img src="style-packages/photographers/fan-ho/gallery-16x9.jpg" width="230" alt="何藩代表图"></a><br><strong>何藩</strong><br><a href="style-packages/photographers/fan-ho/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lisa-arima/README.md"><img src="style-packages/photographers/lisa-arima/gallery-16x9.jpg" width="230" alt="Lisa Arima 代表图"></a><br><strong>Lisa Arima</strong><br><a href="style-packages/photographers/lisa-arima/README.md">打开 README</a></td>
 </tr>
 </table>
 
