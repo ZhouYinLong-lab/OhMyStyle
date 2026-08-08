@@ -1,0 +1,16 @@
+id: arts-and-crafts
+name: 工艺美术运动
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 手工木作、织物、壁纸和建筑装饰；建筑、家具和图案共同形成可使用的整体，手工痕迹可见；苔绿、砖红、蜂蜜黄、深蓝和米白形成自然装饰色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

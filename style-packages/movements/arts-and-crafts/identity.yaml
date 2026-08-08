@@ -1,0 +1,22 @@
+canonical_name: 工艺美术运动
+entity_type: movement_visual_style_direction
+origin: reference_backed_arts-and-crafts
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一张手工木桌、织物屏风和陶碗组成安静室内
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.vam.ac.uk/articles/arts-and-crafts-an-introduction
+rendering:
+  model: 手工木作、织物、壁纸和建筑装饰
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
