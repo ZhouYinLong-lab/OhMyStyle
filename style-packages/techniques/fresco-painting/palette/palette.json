@@ -1,0 +1,31 @@
+{
+  "name": "fresco-painting",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "纸白",
+      "hex": "#EEE7D6",
+      "role": "ground"
+    },
+    {
+      "name": "铁黑",
+      "hex": "#242326",
+      "role": "line"
+    },
+    {
+      "name": "靛青",
+      "hex": "#304C71",
+      "role": "cool_ink"
+    },
+    {
+      "name": "朱砂",
+      "hex": "#B84D3D",
+      "role": "accent"
+    },
+    {
+      "name": "赭黄",
+      "hex": "#B89252",
+      "role": "warm_ink"
+    }
+  ]
+}
