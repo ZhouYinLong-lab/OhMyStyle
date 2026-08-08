@@ -1,0 +1,22 @@
+package: "概念草图"
+summary: "快速线稿、局部标记、未完成轮廓和构思痕迹记录形体方向的开发性画面"
+subject_policy: open
+visual_signature:
+  medium: "草图与视觉开发"
+  focus: "快速线稿、局部标记、未完成轮廓和构思痕迹记录形体方向的开发性画面"
+  composition:
+  - "线条先于表面渲染"
+  - "保留修正、箭头或局部未完成区域"
+  - "主体结构仍应清楚可读"
+  palette:
+  - "石墨 #3B3B3B，角色：主线条"
+  - "纸白 #F2ECDD，角色：纸面"
+  - "朱红 #B95644，角色：少量修改标记"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.

@@ -1,0 +1,49 @@
+canonical_name: "概念草图"
+entity_type: technique
+domain: design
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点、对象和叙事优先；本包只决定视觉处理，不添加固定题材。
+  subjects:
+    - user-supplied subject
+    - user-supplied location
+    - user-supplied narrative
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  []
+notes:
+  - "快速线稿、局部标记、未完成轮廓和构思痕迹记录形体方向的开发性画面"
+  - 示例场景只是测试入口，不是每次生成的默认主体。
+composition:
+  - "线条先于表面渲染"
+palette:
+  - "石墨：主线条"
+  - "纸白：纸面"
+  - "朱红：少量修改标记"
+lighting:
+  quality: coherent light appropriate to the user's subject
+  behavior:
+    - 光线服务主体、材质和空间，不把风格变成全局滤镜。
+medium: "草图与视觉开发"
+materials:
+  support:
+    - 用户主题中真实存在的材质
+    - 与风格方向相容的表面处理
+process:
+  - 先准确编译用户主体、对象、地点和画幅。
+  - 再应用本包的构图、光线、色彩、表面和纹理规则。
+  - 最后检查主体独立性、材质可信度和负面约束。
+technical_direction:
+  contrast: subject-dependent, controlled
+  saturation: preserve deliberate color roles
+  perspective: follow the user's requested viewpoint
+  detail_density: selective and readable
+invariants:
+  - 用户主体、地点、对象数量和叙事不被风格包替换。
+  - 视觉特征必须跨不同主题保持可观察。
+  - 不复刻任何具体参考作品的构图、人物或文字。
+avoid:
+  - "伪造手写文字、无意义脏线和完整精修渲染"
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, text, or branded layout.

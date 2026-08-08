@@ -1,0 +1,17 @@
+id: conceptual-sketch
+name: 概念草图
+kind: technique
+domain: design
+version: 0.1.0
+summary: >-
+  以快速线稿、局部标记、未完成轮廓和构思痕迹记录形体方向，而不是追求完整渲染。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
