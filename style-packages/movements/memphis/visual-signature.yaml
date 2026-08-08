@@ -1,0 +1,22 @@
+package: "孟菲斯风格"
+summary: "几何形体、明亮撞色、装饰图案和不对称组合打破严肃功能主义，形成活泼平面空间"
+subject_policy: open
+visual_signature:
+  medium: "后现代设计"
+  focus: "几何形体、明亮撞色、装饰图案和不对称组合打破严肃功能主义，形成活泼平面空间"
+  composition:
+  - "圆、三角、波浪和柱体形成层次"
+  - "撞色承担结构分区"
+  - "图案有规律而非随机噪声"
+  palette:
+  - "珊瑚 #F36F56，角色：暖色块"
+  - "钴蓝 #2454A6，角色：冷色块"
+  - "柠黄 #F6D64A，角色：强调色"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.

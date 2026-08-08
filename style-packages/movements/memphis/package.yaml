@@ -1,0 +1,17 @@
+id: memphis
+name: 孟菲斯风格
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以几何形体、明亮撞色、装饰性图案和不对称组合打破严肃功能主义，形成 playful 的平面空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
