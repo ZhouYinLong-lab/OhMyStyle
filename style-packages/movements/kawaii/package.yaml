@@ -1,0 +1,17 @@
+id: kawaii
+name: 卡哇伊
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以圆润轮廓、简化表情、柔和或糖果色彩和亲和比例构成轻松可爱的视觉，不限定具体角色。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
