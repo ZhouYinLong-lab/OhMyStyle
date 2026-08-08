@@ -1,0 +1,22 @@
+canonical_name: 至上主义
+entity_type: movement_visual_style_direction
+origin: reference_backed_suprematism
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 白色空间里三块倾斜矩形与一个黑色圆环
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/s/suprematism
+rendering:
+  model: 纯几何抽象与硬边平涂
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
