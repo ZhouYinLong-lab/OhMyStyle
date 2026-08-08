@@ -1,0 +1,17 @@
+id: utilitarian
+name: 实用主义
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以功能优先、耐用材料、清楚标识、结构诚实和克制装饰建立直接、可靠、可复用的设计视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
