@@ -1,0 +1,22 @@
+package: "点彩画法"
+summary: "独立色点、光学混色、局部色彩并置和有节奏的点状笔触构成绘画表面"
+subject_policy: open
+visual_signature:
+  medium: "绘画技法与艺术史"
+  focus: "独立色点、光学混色、局部色彩并置和有节奏的点状笔触构成绘画表面"
+  composition:
+  - "色点大小和密度随距离或材质变化"
+  - "颜色并置而不是简单模糊"
+  - "轮廓可由点密度组织"
+  palette:
+  - "群青 #3567A5，角色：冷色点"
+  - "朱红 #C85A4D，角色：暖色点"
+  - "柠黄 #E2C84F，角色：光色点"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
