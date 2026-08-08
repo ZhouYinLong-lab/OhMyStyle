@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-本目录收录 32 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
+本目录收录 35 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
 
 <table>
 <tr>
@@ -58,5 +58,10 @@
 <tr>
 <td width="33%" valign="top" align="center"><a href="ori-luminous-forest/README.md"><img src="ori-luminous-forest/gallery-16x9.jpg" width="230" alt="荧光森林手绘游戏美术代表图"></a><br><strong>荧光森林手绘游戏美术</strong><br><a href="ori-luminous-forest/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="rpg-maker-pixel-art/README.md"><img src="rpg-maker-pixel-art/gallery-16x9.jpg" width="230" alt="角色扮演游戏像素美术代表图"></a><br><strong>角色扮演游戏像素美术</strong><br><a href="rpg-maker-pixel-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="hollow-knight-inked-gothic/README.md"><img src="hollow-knight-inked-gothic/gallery-16x9.jpg" width="230" alt="空洞骑士墨线哥特游戏美术代表图"></a><br><strong>空洞骑士墨线哥特游戏美术</strong><br><a href="hollow-knight-inked-gothic/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="journey-minimalist-desert/README.md"><img src="journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="风之旅人极简沙漠游戏美术代表图"></a><br><strong>风之旅人极简沙漠游戏美术</strong><br><a href="journey-minimalist-desert/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="final-fantasy-ix-painted-fantasy/README.md"><img src="final-fantasy-ix-painted-fantasy/gallery-16x9.jpg" width="230" alt="最终幻想九绘本幻想游戏美术代表图"></a><br><strong>最终幻想九绘本幻想游戏美术</strong><br><a href="final-fantasy-ix-painted-fantasy/README.md">打开 README</a></td>
 </tr>
 </table>

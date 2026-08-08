@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-125-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-173-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -72,8 +72,22 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/ivan-aivazovsky/README.md"><img src="style-packages/artists/ivan-aivazovsky/gallery-16x9.jpg" width="230" alt="伊万·艾瓦佐夫斯基代表图"></a><br><strong>伊万·艾瓦佐夫斯基</strong><br><a href="style-packages/artists/ivan-aivazovsky/README.md">打开 README</a></td>
-<td width="33%"></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/sandro-botticelli/README.md"><img src="style-packages/artists/sandro-botticelli/gallery-16x9.jpg" width="230" alt="桑德罗·波提切利代表图"></a><br><strong>桑德罗·波提切利</strong><br><a href="style-packages/artists/sandro-botticelli/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/jan-van-eyck/README.md"><img src="style-packages/artists/jan-van-eyck/gallery-16x9.jpg" width="230" alt="扬·凡·艾克代表图"></a><br><strong>扬·凡·艾克</strong><br><a href="style-packages/artists/jan-van-eyck/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/artemisia-gentileschi/README.md"><img src="style-packages/artists/artemisia-gentileschi/gallery-16x9.jpg" width="230" alt="阿尔泰米西娅·真蒂莱斯基代表图"></a><br><strong>阿尔泰米西娅·真蒂莱斯基</strong><br><a href="style-packages/artists/artemisia-gentileschi/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/francisco-de-zurbaran/README.md"><img src="style-packages/artists/francisco-de-zurbaran/gallery-16x9.jpg" width="230" alt="弗朗西斯科·德·苏巴朗代表图"></a><br><strong>弗朗西斯科·德·苏巴朗</strong><br><a href="style-packages/artists/francisco-de-zurbaran/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/mary-cassatt/README.md"><img src="style-packages/artists/mary-cassatt/gallery-16x9.jpg" width="230" alt="玛丽·卡萨特代表图"></a><br><strong>玛丽·卡萨特</strong><br><a href="style-packages/artists/mary-cassatt/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/gustav-klimt/README.md"><img src="style-packages/artists/gustav-klimt/gallery-16x9.jpg" width="230" alt="古斯塔夫·克里姆特代表图"></a><br><strong>古斯塔夫·克里姆特</strong><br><a href="style-packages/artists/gustav-klimt/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/egon-schiele/README.md"><img src="style-packages/artists/egon-schiele/gallery-16x9.jpg" width="230" alt="埃贡·席勒代表图"></a><br><strong>埃贡·席勒</strong><br><a href="style-packages/artists/egon-schiele/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/georgia-okeeffe/README.md"><img src="style-packages/artists/georgia-okeeffe/gallery-16x9.jpg" width="230" alt="乔治亚·欧姬芙代表图"></a><br><strong>乔治亚·欧姬芙</strong><br><a href="style-packages/artists/georgia-okeeffe/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/norman-rockwell/README.md"><img src="style-packages/artists/norman-rockwell/gallery-16x9.jpg" width="230" alt="诺曼·洛克威尔代表图"></a><br><strong>诺曼·洛克威尔</strong><br><a href="style-packages/artists/norman-rockwell/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/romare-bearden/README.md"><img src="style-packages/artists/romare-bearden/gallery-16x9.jpg" width="230" alt="罗梅尔·比尔登代表图"></a><br><strong>罗梅尔·比尔登</strong><br><a href="style-packages/artists/romare-bearden/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -133,6 +147,11 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/ori-luminous-forest/README.md"><img src="style-packages/game-art/ori-luminous-forest/gallery-16x9.jpg" width="230" alt="荧光森林手绘游戏美术代表图"></a><br><strong>荧光森林手绘游戏美术</strong><br><a href="style-packages/game-art/ori-luminous-forest/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/rpg-maker-pixel-art/README.md"><img src="style-packages/game-art/rpg-maker-pixel-art/gallery-16x9.jpg" width="230" alt="角色扮演游戏像素美术代表图"></a><br><strong>角色扮演游戏像素美术</strong><br><a href="style-packages/game-art/rpg-maker-pixel-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hollow-knight-inked-gothic/README.md"><img src="style-packages/game-art/hollow-knight-inked-gothic/gallery-16x9.jpg" width="230" alt="空洞骑士墨线哥特游戏美术代表图"></a><br><strong>空洞骑士墨线哥特游戏美术</strong><br><a href="style-packages/game-art/hollow-knight-inked-gothic/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/journey-minimalist-desert/README.md"><img src="style-packages/game-art/journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="风之旅人极简沙漠游戏美术代表图"></a><br><strong>风之旅人极简沙漠游戏美术</strong><br><a href="style-packages/game-art/journey-minimalist-desert/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.md"><img src="style-packages/game-art/final-fantasy-ix-painted-fantasy/gallery-16x9.jpg" width="230" alt="最终幻想九绘本幻想游戏美术代表图"></a><br><strong>最终幻想九绘本幻想游戏美术</strong><br><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.md">打开 README</a></td>
 </tr>
 </table>
 ### 艺术流派与历史时期
@@ -168,6 +187,40 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/expressionism/README.md"><img src="style-packages/movements/expressionism/gallery-16x9.jpg" width="230" alt="表现主义代表图"></a><br><strong>表现主义</strong><br><a href="style-packages/movements/expressionism/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/surrealism/README.md"><img src="style-packages/movements/surrealism/gallery-16x9.jpg" width="230" alt="超现实主义代表图"></a><br><strong>超现实主义</strong><br><a href="style-packages/movements/surrealism/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/renaissance/README.md"><img src="style-packages/movements/renaissance/gallery-16x9.jpg" width="230" alt="文艺复兴代表图"></a><br><strong>文艺复兴</strong><br><a href="style-packages/movements/renaissance/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/northern-renaissance/README.md"><img src="style-packages/movements/northern-renaissance/gallery-16x9.jpg" width="230" alt="北方文艺复兴代表图"></a><br><strong>北方文艺复兴</strong><br><a href="style-packages/movements/northern-renaissance/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mannerism/README.md"><img src="style-packages/movements/mannerism/gallery-16x9.jpg" width="230" alt="风格主义代表图"></a><br><strong>风格主义</strong><br><a href="style-packages/movements/mannerism/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/symbolism/README.md"><img src="style-packages/movements/symbolism/gallery-16x9.jpg" width="230" alt="象征主义代表图"></a><br><strong>象征主义</strong><br><a href="style-packages/movements/symbolism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/dada/README.md"><img src="style-packages/movements/dada/gallery-16x9.jpg" width="230" alt="达达主义代表图"></a><br><strong>达达主义</strong><br><a href="style-packages/movements/dada/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/constructivism/README.md"><img src="style-packages/movements/constructivism/gallery-16x9.jpg" width="230" alt="构成主义代表图"></a><br><strong>构成主义</strong><br><a href="style-packages/movements/constructivism/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/suprematism/README.md"><img src="style-packages/movements/suprematism/gallery-16x9.jpg" width="230" alt="至上主义代表图"></a><br><strong>至上主义</strong><br><a href="style-packages/movements/suprematism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/socialist-realism/README.md"><img src="style-packages/movements/socialist-realism/gallery-16x9.jpg" width="230" alt="社会主义现实主义代表图"></a><br><strong>社会主义现实主义</strong><br><a href="style-packages/movements/socialist-realism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/abstract-expressionism/README.md"><img src="style-packages/movements/abstract-expressionism/gallery-16x9.jpg" width="230" alt="抽象表现主义代表图"></a><br><strong>抽象表现主义</strong><br><a href="style-packages/movements/abstract-expressionism/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/pop-art/README.md"><img src="style-packages/movements/pop-art/gallery-16x9.jpg" width="230" alt="波普艺术代表图"></a><br><strong>波普艺术</strong><br><a href="style-packages/movements/pop-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/minimalism/README.md"><img src="style-packages/movements/minimalism/gallery-16x9.jpg" width="230" alt="极简主义代表图"></a><br><strong>极简主义</strong><br><a href="style-packages/movements/minimalism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/conceptual-art/README.md"><img src="style-packages/movements/conceptual-art/gallery-16x9.jpg" width="230" alt="观念艺术代表图"></a><br><strong>观念艺术</strong><br><a href="style-packages/movements/conceptual-art/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/land-art/README.md"><img src="style-packages/movements/land-art/gallery-16x9.jpg" width="230" alt="大地艺术代表图"></a><br><strong>大地艺术</strong><br><a href="style-packages/movements/land-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/op-art/README.md"><img src="style-packages/movements/op-art/gallery-16x9.jpg" width="230" alt="欧普艺术代表图"></a><br><strong>欧普艺术</strong><br><a href="style-packages/movements/op-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/photorealism/README.md"><img src="style-packages/movements/photorealism/gallery-16x9.jpg" width="230" alt="照相写实主义代表图"></a><br><strong>照相写实主义</strong><br><a href="style-packages/movements/photorealism/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/pre-raphaelites/README.md"><img src="style-packages/movements/pre-raphaelites/gallery-16x9.jpg" width="230" alt="拉斐尔前派代表图"></a><br><strong>拉斐尔前派</strong><br><a href="style-packages/movements/pre-raphaelites/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/arts-and-crafts/README.md"><img src="style-packages/movements/arts-and-crafts/gallery-16x9.jpg" width="230" alt="工艺美术运动代表图"></a><br><strong>工艺美术运动</strong><br><a href="style-packages/movements/arts-and-crafts/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/harlem-renaissance/README.md"><img src="style-packages/movements/harlem-renaissance/gallery-16x9.jpg" width="230" alt="哈莱姆文艺复兴代表图"></a><br><strong>哈莱姆文艺复兴</strong><br><a href="style-packages/movements/harlem-renaissance/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/magic-realism/README.md"><img src="style-packages/movements/magic-realism/gallery-16x9.jpg" width="230" alt="魔幻现实主义代表图"></a><br><strong>魔幻现实主义</strong><br><a href="style-packages/movements/magic-realism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/precisionism/README.md"><img src="style-packages/movements/precisionism/gallery-16x9.jpg" width="230" alt="精确主义代表图"></a><br><strong>精确主义</strong><br><a href="style-packages/movements/precisionism/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 摄影师
@@ -201,12 +254,27 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/alfred-stieglitz/README.md"><img src="style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg" width="230" alt="阿尔弗雷德·斯蒂格利茨代表图"></a><br><strong>阿尔弗雷德·斯蒂格利茨</strong><br><a href="style-packages/photographers/alfred-stieglitz/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/diane-arbus/README.md"><img src="style-packages/photographers/diane-arbus/gallery-16x9.jpg" width="230" alt="黛安·阿勃丝代表图"></a><br><strong>黛安·阿勃丝</strong><br><a href="style-packages/photographers/diane-arbus/README.md">打开 README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/saul-leiter/README.md"><img src="style-packages/photographers/saul-leiter/gallery-16x9.jpg" width="230" alt="索尔·雷特代表图"></a><br><strong>索尔·雷特</strong><br><a href="style-packages/photographers/saul-leiter/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/saul-leiter/README.md"><img src="style-packages/photographers/saul-leiter/gallery-16x9.jpg" width="230" alt="索尔·雷特代表图"></a><br><strong>索尔·雷特</strong><br><a href="style-packages/photographers/saul-leiter/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/vivian-maier/README.md"><img src="style-packages/photographers/vivian-maier/gallery-16x9.jpg" width="230" alt="维维安·迈尔代表图"></a><br><strong>维维安·迈尔</strong><br><a href="style-packages/photographers/vivian-maier/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/rinko-kawauchi/README.md"><img src="style-packages/photographers/rinko-kawauchi/gallery-16x9.jpg" width="230" alt="川内伦子代表图"></a><br><strong>川内伦子</strong><br><a href="style-packages/photographers/rinko-kawauchi/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/man-ray/README.md"><img src="style-packages/photographers/man-ray/gallery-16x9.jpg" width="230" alt="曼·雷代表图"></a><br><strong>曼·雷</strong><br><a href="style-packages/photographers/man-ray/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/berenice-abbott/README.md"><img src="style-packages/photographers/berenice-abbott/gallery-16x9.jpg" width="230" alt="贝伦妮丝·阿博特代表图"></a><br><strong>贝伦妮丝·阿博特</strong><br><a href="style-packages/photographers/berenice-abbott/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/gordon-parks/README.md"><img src="style-packages/photographers/gordon-parks/gallery-16x9.jpg" width="230" alt="戈登·帕克斯代表图"></a><br><strong>戈登·帕克斯</strong><br><a href="style-packages/photographers/gordon-parks/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/william-klein/README.md"><img src="style-packages/photographers/william-klein/gallery-16x9.jpg" width="230" alt="威廉·克莱因代表图"></a><br><strong>威廉·克莱因</strong><br><a href="style-packages/photographers/william-klein/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/mary-ellen-mark/README.md"><img src="style-packages/photographers/mary-ellen-mark/gallery-16x9.jpg" width="230" alt="玛丽·艾伦·马克代表图"></a><br><strong>玛丽·艾伦·马克</strong><br><a href="style-packages/photographers/mary-ellen-mark/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/nick-brandt/README.md"><img src="style-packages/photographers/nick-brandt/gallery-16x9.jpg" width="230" alt="尼克·布兰特代表图"></a><br><strong>尼克·布兰特</strong><br><a href="style-packages/photographers/nick-brandt/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/gregory-crewdson/README.md"><img src="style-packages/photographers/gregory-crewdson/gallery-16x9.jpg" width="230" alt="格里高利·克鲁德森代表图"></a><br><strong>格里高利·克鲁德森</strong><br><a href="style-packages/photographers/gregory-crewdson/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/cindy-sherman/README.md"><img src="style-packages/photographers/cindy-sherman/gallery-16x9.jpg" width="230" alt="辛迪·舍曼代表图"></a><br><strong>辛迪·舍曼</strong><br><a href="style-packages/photographers/cindy-sherman/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/sebastiao-salgado/README.md"><img src="style-packages/photographers/sebastiao-salgado/gallery-16x9.jpg" width="230" alt="塞巴斯蒂昂·萨尔加多代表图"></a><br><strong>塞巴斯蒂昂·萨尔加多</strong><br><a href="style-packages/photographers/sebastiao-salgado/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/peter-lindbergh/README.md"><img src="style-packages/photographers/peter-lindbergh/gallery-16x9.jpg" width="230" alt="彼得·林德伯格代表图"></a><br><strong>彼得·林德伯格</strong><br><a href="style-packages/photographers/peter-lindbergh/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -265,8 +333,13 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/gum-bichromate/README.md"><img src="style-packages/techniques/gum-bichromate/gallery-16x9.jpg" width="230" alt="重铬酸盐胶印代表图"></a><br><strong>重铬酸盐胶印</strong><br><a href="style-packages/techniques/gum-bichromate/README.md">打开 README</a></td>
-<td width="33%"></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/encaustic-painting/README.md"><img src="style-packages/techniques/encaustic-painting/gallery-16x9.jpg" width="230" alt="蜡画代表图"></a><br><strong>蜡画</strong><br><a href="style-packages/techniques/encaustic-painting/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/fresco-painting/README.md"><img src="style-packages/techniques/fresco-painting/gallery-16x9.jpg" width="230" alt="湿壁画代表图"></a><br><strong>湿壁画</strong><br><a href="style-packages/techniques/fresco-painting/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/linocut-printmaking/README.md"><img src="style-packages/techniques/linocut-printmaking/gallery-16x9.jpg" width="230" alt="油毡版画代表图"></a><br><strong>油毡版画</strong><br><a href="style-packages/techniques/linocut-printmaking/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/mezzotint-printmaking/README.md"><img src="style-packages/techniques/mezzotint-printmaking/gallery-16x9.jpg" width="230" alt="美柔汀版画代表图"></a><br><strong>美柔汀版画</strong><br><a href="style-packages/techniques/mezzotint-printmaking/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/collage-mixed-media/README.md"><img src="style-packages/techniques/collage-mixed-media/gallery-16x9.jpg" width="230" alt="拼贴综合材料代表图"></a><br><strong>拼贴综合材料</strong><br><a href="style-packages/techniques/collage-mixed-media/README.md">打开 README</a></td>
 </tr>
 </table>
 

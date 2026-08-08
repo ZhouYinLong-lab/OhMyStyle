@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-本目录收录 34 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
+本目录收录 44 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
 
 <table>
 <tr>
@@ -50,14 +50,33 @@
 <td width="33%" valign="top" align="center"><a href="leonardo-da-vinci/README.md"><img src="leonardo-da-vinci/gallery-16x9.jpg" width="230" alt="莱昂纳多·达·芬奇代表图"></a><br><strong>莱昂纳多·达·芬奇</strong><br><a href="leonardo-da-vinci/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="diego-velazquez/README.md"><img src="diego-velazquez/gallery-16x9.jpg" width="230" alt="迭戈·委拉斯开兹代表图"></a><br><strong>迭戈·委拉斯开兹</strong><br><a href="diego-velazquez/README.md">打开 README</a></td>
 </tr>
-</table>
-
-## 本批新增
-
-这些包使用版权安全的抽象色板卡作为临时代表图，获得授权或完成独立生图审核后可替换。
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="hilma-af-klint/README.md"><img src="hilma-af-klint/gallery-16x9.jpg" width="230" alt="希尔玛·艾夫·克林特代表图"></a><br><strong>希尔玛·艾夫·克林特</strong><br><a href="hilma-af-klint/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="leonora-carrington/README.md"><img src="leonora-carrington/gallery-16x9.jpg" width="230" alt="莱昂诺拉·卡林顿代表图"></a><br><strong>莱昂诺拉·卡林顿</strong><br><a href="leonora-carrington/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="tamara-de-lempicka/README.md"><img src="tamara-de-lempicka/gallery-16x9.jpg" width="230" alt="塔玛拉·德·兰佩卡代表图"></a><br><strong>塔玛拉·德·兰佩卡</strong><br><a href="tamara-de-lempicka/README.md">打开 README</a></td></tr>
-<tr><td width="33%" valign="top" align="center"><a href="giorgio-de-chirico/README.md"><img src="giorgio-de-chirico/gallery-16x9.jpg" width="230" alt="乔治·德·基里科代表图"></a><br><strong>乔治·德·基里科</strong><br><a href="giorgio-de-chirico/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="agnes-martin/README.md"><img src="agnes-martin/gallery-16x9.jpg" width="230" alt="艾格尼丝·马丁代表图"></a><br><strong>艾格尼丝·马丁</strong><br><a href="agnes-martin/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="edward-hopper/README.md"><img src="edward-hopper/gallery-16x9.jpg" width="230" alt="爱德华·霍普代表图"></a><br><strong>爱德华·霍普</strong><br><a href="edward-hopper/README.md">打开 README</a></td></tr>
-<tr><td width="33%" valign="top" align="center"><a href="ivan-aivazovsky/README.md"><img src="ivan-aivazovsky/gallery-16x9.jpg" width="230" alt="伊万·艾瓦佐夫斯基代表图"></a><br><strong>伊万·艾瓦佐夫斯基</strong><br><a href="ivan-aivazovsky/README.md">打开 README</a></td><td width="33%"></td><td width="33%"></td></tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="hilma-af-klint/README.md"><img src="hilma-af-klint/gallery-16x9.jpg" width="230" alt="希尔玛·艾夫·克林特代表图"></a><br><strong>希尔玛·艾夫·克林特</strong><br><a href="hilma-af-klint/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="leonora-carrington/README.md"><img src="leonora-carrington/gallery-16x9.jpg" width="230" alt="莱昂诺拉·卡林顿代表图"></a><br><strong>莱昂诺拉·卡林顿</strong><br><a href="leonora-carrington/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="tamara-de-lempicka/README.md"><img src="tamara-de-lempicka/gallery-16x9.jpg" width="230" alt="塔玛拉·德·兰佩卡代表图"></a><br><strong>塔玛拉·德·兰佩卡</strong><br><a href="tamara-de-lempicka/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="giorgio-de-chirico/README.md"><img src="giorgio-de-chirico/gallery-16x9.jpg" width="230" alt="乔治·德·基里科代表图"></a><br><strong>乔治·德·基里科</strong><br><a href="giorgio-de-chirico/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="agnes-martin/README.md"><img src="agnes-martin/gallery-16x9.jpg" width="230" alt="艾格尼丝·马丁代表图"></a><br><strong>艾格尼丝·马丁</strong><br><a href="agnes-martin/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="edward-hopper/README.md"><img src="edward-hopper/gallery-16x9.jpg" width="230" alt="爱德华·霍普代表图"></a><br><strong>爱德华·霍普</strong><br><a href="edward-hopper/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="ivan-aivazovsky/README.md"><img src="ivan-aivazovsky/gallery-16x9.jpg" width="230" alt="伊万·艾瓦佐夫斯基代表图"></a><br><strong>伊万·艾瓦佐夫斯基</strong><br><a href="ivan-aivazovsky/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="sandro-botticelli/README.md"><img src="sandro-botticelli/gallery-16x9.jpg" width="230" alt="桑德罗·波提切利代表图"></a><br><strong>桑德罗·波提切利</strong><br><a href="sandro-botticelli/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="jan-van-eyck/README.md"><img src="jan-van-eyck/gallery-16x9.jpg" width="230" alt="扬·凡·艾克代表图"></a><br><strong>扬·凡·艾克</strong><br><a href="jan-van-eyck/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="artemisia-gentileschi/README.md"><img src="artemisia-gentileschi/gallery-16x9.jpg" width="230" alt="阿尔泰米西娅·真蒂莱斯基代表图"></a><br><strong>阿尔泰米西娅·真蒂莱斯基</strong><br><a href="artemisia-gentileschi/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="francisco-de-zurbaran/README.md"><img src="francisco-de-zurbaran/gallery-16x9.jpg" width="230" alt="弗朗西斯科·德·苏巴朗代表图"></a><br><strong>弗朗西斯科·德·苏巴朗</strong><br><a href="francisco-de-zurbaran/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="mary-cassatt/README.md"><img src="mary-cassatt/gallery-16x9.jpg" width="230" alt="玛丽·卡萨特代表图"></a><br><strong>玛丽·卡萨特</strong><br><a href="mary-cassatt/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="gustav-klimt/README.md"><img src="gustav-klimt/gallery-16x9.jpg" width="230" alt="古斯塔夫·克里姆特代表图"></a><br><strong>古斯塔夫·克里姆特</strong><br><a href="gustav-klimt/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="egon-schiele/README.md"><img src="egon-schiele/gallery-16x9.jpg" width="230" alt="埃贡·席勒代表图"></a><br><strong>埃贡·席勒</strong><br><a href="egon-schiele/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="georgia-okeeffe/README.md"><img src="georgia-okeeffe/gallery-16x9.jpg" width="230" alt="乔治亚·欧姬芙代表图"></a><br><strong>乔治亚·欧姬芙</strong><br><a href="georgia-okeeffe/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="norman-rockwell/README.md"><img src="norman-rockwell/gallery-16x9.jpg" width="230" alt="诺曼·洛克威尔代表图"></a><br><strong>诺曼·洛克威尔</strong><br><a href="norman-rockwell/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="romare-bearden/README.md"><img src="romare-bearden/gallery-16x9.jpg" width="230" alt="罗梅尔·比尔登代表图"></a><br><strong>罗梅尔·比尔登</strong><br><a href="romare-bearden/README.md">打开 README</a></td>
+</tr>
 </table>
