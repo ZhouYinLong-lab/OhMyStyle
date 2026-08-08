@@ -1,0 +1,17 @@
+id: gothic
+name: 哥特式
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以垂直性、尖拱、深色材质、宗教象征和复杂装饰建立庄严、神秘且结构明确的历史视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

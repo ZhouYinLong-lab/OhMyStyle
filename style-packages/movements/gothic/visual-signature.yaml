@@ -1,0 +1,22 @@
+package: "哥特式"
+summary: "垂直性、尖拱、深色材质、象征性装饰和复杂结构建立庄严而神秘的历史视觉"
+subject_policy: open
+visual_signature:
+  medium: "历史建筑与装饰"
+  focus: "垂直性、尖拱、深色材质、象征性装饰和复杂结构建立庄严而神秘的历史视觉"
+  composition:
+  - "垂直结构和细长比例清楚"
+  - "装饰服务建筑或对象结构"
+  - "暗色材质中保留细节"
+  palette:
+  - "深石灰 #4A4D55，角色：结构"
+  - "暗紫 #403250，角色：神秘色"
+  - "烛金 #C49A52，角色：局部光"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
