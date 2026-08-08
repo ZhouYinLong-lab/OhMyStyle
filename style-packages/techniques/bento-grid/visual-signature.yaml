@@ -1,0 +1,22 @@
+package: "便当盒网格"
+summary: "大小不一但边界清晰的模块、圆角容器、信息分组和均衡留白组织现代版面"
+subject_policy: open
+visual_signature:
+  medium: "产品与界面版式"
+  focus: "大小不一但边界清晰的模块、圆角容器、信息分组和均衡留白组织现代版面"
+  composition:
+  - "模块尺寸有层级"
+  - "圆角与间距保持一致"
+  - "每个模块只承载一个视觉任务"
+  palette:
+  - "暖白 #F3EEE4，角色：底色"
+  - "墨黑 #20242A，角色：结构"
+  - "豆绿 #9DBB9B，角色：状态色"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.

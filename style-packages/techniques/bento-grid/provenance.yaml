@@ -1,0 +1,11 @@
+package_id: bento-grid
+package_version: 0.1.0
+curation_status: draft
+source_policy: No source has been recorded yet. Add at least one traceable source before submitting a pull request.
+sources:
+  []
+
+attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.

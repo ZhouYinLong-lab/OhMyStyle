@@ -1,0 +1,17 @@
+id: bento-grid
+name: 便当盒网格
+kind: technique
+domain: design
+version: 0.1.0
+summary: >-
+  以大小不一但边界清晰的模块、圆角容器、信息分组和均衡留白组织现代产品与界面布局。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
