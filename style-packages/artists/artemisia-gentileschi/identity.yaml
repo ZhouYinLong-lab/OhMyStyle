@@ -1,0 +1,22 @@
+canonical_name: 阿尔泰米西娅·真蒂莱斯基
+entity_type: artist_visual_style_direction
+origin: reference_backed_artemisia-gentileschi
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 夜间厨房里一名厨师扶住坠落的铜锅
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.uffizi.it/en/artworks/judith-beheading-holofernes
+rendering:
+  model: 写实油画与大胆的肉身造型
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
