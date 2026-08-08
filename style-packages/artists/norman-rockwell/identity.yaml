@@ -1,0 +1,22 @@
+canonical_name: 诺曼·洛克威尔
+entity_type: artist_visual_style_direction
+origin: reference_backed_norman-rockwell
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 小镇邮局里一只打翻的包裹和三位正在帮忙的人
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.nrm.org/
+rendering:
+  model: 叙事性商业插画、清晰轮廓与细密生活道具
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
