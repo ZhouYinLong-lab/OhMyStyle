@@ -1,0 +1,16 @@
+id: deep-shadow-theater
+name: 深影剧场光
+kind: preset
+domain: photography
+version: 0.1.0
+summary: 以单一控制光源、深色负空间和雕塑化轮廓建立克制的剧场式光线预设。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
