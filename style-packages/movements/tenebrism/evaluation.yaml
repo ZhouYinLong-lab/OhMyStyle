@@ -27,3 +27,10 @@ image_audit:
     - it can transfer to user-supplied subjects without prescribing a narrative
     - its distinction is the light-to-dark ratio and spatial exclusion
   action: clarify_distinctive_signature
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "No provider-backed result is claimed until a real image run is recorded."

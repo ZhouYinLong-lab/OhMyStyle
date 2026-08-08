@@ -40,3 +40,10 @@ image_audit:
     - noir atmosphere is a visual option, not a mandatory city or street subject
     - subject transfer must remain open
   action: clarify_distinctive_signature
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "No provider-backed result is claimed until a real image run is recorded."

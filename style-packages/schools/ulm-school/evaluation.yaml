@@ -26,3 +26,10 @@ image_audit:
     - it is not interchangeable with decorative geometric abstraction
     - it must adapt the user's subject rather than force a product board
   action: clarify_distinctive_signature
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "No provider-backed result is claimed until a real image run is recorded."

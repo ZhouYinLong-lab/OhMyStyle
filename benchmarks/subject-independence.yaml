@@ -1,0 +1,37 @@
+schema_version: "1.0.0"
+name: neutral-subject-independence-suite
+purpose: >-
+  Provider-neutral prompts for checking that a style package changes visual
+  language without silently replacing the user's subject, location, object
+  count, or narrative.
+instructions:
+  - Run at least two tasks for every high-risk package.
+  - Keep seed, model, aspect ratio, and generation settings recorded when a provider is available.
+  - Do not invent a result when no image provider is available; use status pending.
+  - Compare the output with the requested subject before judging style similarity.
+tasks:
+  - id: ordinary-chair
+    subject: "一把普通木椅，单独放置，不指定地点"
+    prompt: "生成一张只改变视觉语言的图片：{SUBJECT}。不要添加桥、房屋、城市、人物、车辆或故事性道具。"
+  - id: unspecified-building
+    subject: "一座未指定用途的建筑外形，不指定地域"
+    prompt: "生成一张只改变视觉语言的图片：{SUBJECT}。不要把建筑替换成车站、教堂、城堡、工厂或固定地点。"
+  - id: abstract-geometries
+    subject: "三个普通抽象几何体，彼此分离"
+    prompt: "生成一张只改变视觉语言的图片：{SUBJECT}。保留三个物体的数量和形状，不增加人物、植物、文字或场景叙事。"
+  - id: ordinary-clothing
+    subject: "一件无图案的普通外套"
+    prompt: "生成一张只改变视觉语言的图片：{SUBJECT}。保留衣物主体，不添加人物身份、品牌、徽标或固定地点。"
+  - id: unspecified-natural-form
+    subject: "一处未指定地点的自然形体"
+    prompt: "生成一张只改变视觉语言的图片：{SUBJECT}。不要强行加入海岸、森林、山谷、铁路、房屋或人物。"
+evaluation:
+  required_observations:
+    - requested subject remains recognizable
+    - object count and requested spatial relationship remain stable
+    - no unrequested recurring object, location, character, or narrative motif
+    - package visual signature remains observable after subject change
+  result_statuses:
+    - pending
+    - pass
+    - needs_revision

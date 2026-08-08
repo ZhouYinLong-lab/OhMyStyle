@@ -26,3 +26,10 @@ image_audit:
     - it must not force biblical, tavern, or figure subjects
     - artist-specific spatial and skin-light decisions differ from a generic lighting preset
   action: clarify_distinctive_signature
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "No provider-backed result is claimed until a real image run is recorded."

@@ -26,3 +26,10 @@ image_audit:
     - it is an artist-derived visual language rather than a generic dark-light filter
     - it must remain open to non-portrait subjects
   action: clarify_distinctive_signature
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "No provider-backed result is claimed until a real image run is recorded."

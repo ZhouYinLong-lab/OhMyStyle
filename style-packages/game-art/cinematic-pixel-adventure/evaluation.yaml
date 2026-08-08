@@ -36,3 +36,10 @@ image_audit:
     - it must transfer to user-supplied subjects without requiring a traveller, house, railway, or coast
     - its depth and atmosphere rules differ from tile-first RPG construction
   action: clarify_distinctive_signature
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "No provider-backed result is claimed until a real image run is recorded."
