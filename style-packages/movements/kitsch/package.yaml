@@ -1,0 +1,17 @@
+id: kitsch
+name: 媚俗
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以过度装饰、廉价感材料、夸张色彩、流行符号和故意不协调的组合制造高识别度视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
