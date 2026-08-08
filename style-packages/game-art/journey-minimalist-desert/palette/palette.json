@@ -1,0 +1,31 @@
+{
+  "name": "journey-minimalist-desert",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "墨蓝",
+      "hex": "#18243C",
+      "role": "deep_ground"
+    },
+    {
+      "name": "沙金",
+      "hex": "#C49B5B",
+      "role": "light"
+    },
+    {
+      "name": "苔绿",
+      "hex": "#657557",
+      "role": "environment"
+    },
+    {
+      "name": "赤褐",
+      "hex": "#9C4E42",
+      "role": "focal_warm"
+    },
+    {
+      "name": "雾白",
+      "hex": "#D9D8CC",
+      "role": "atmosphere"
+    }
+  ]
+}
