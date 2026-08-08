@@ -1,0 +1,22 @@
+package: "奢华排版"
+summary: "高对比字形、精确字距、克制留白和高级材质感组织标题与编辑版面"
+subject_policy: open
+visual_signature:
+  medium: "编辑与品牌设计"
+  focus: "高对比字形、精确字距、克制留白和高级材质感组织标题与编辑版面"
+  composition:
+  - "明确的字级层次"
+  - "文字与留白形成比例关系"
+  - "材质只辅助版面而不吞没信息"
+  palette:
+  - "炭黑 #191A1C，角色：正文与底色"
+  - "香槟 #D7BF91，角色：强调色"
+  - "暖白 #F5F0E6，角色：留白"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
