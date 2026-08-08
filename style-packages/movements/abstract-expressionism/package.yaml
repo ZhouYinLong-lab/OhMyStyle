@@ -1,0 +1,16 @@
+id: abstract-expressionism
+name: 抽象表现主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 动作绘画、厚薄笔触和开放画布；大尺度画面由手势笔触和局部空白建立非中心构图；黑、赭红、钴蓝、乳白和橙黄形成高能量色层。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
