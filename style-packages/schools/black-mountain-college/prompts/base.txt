@@ -1,0 +1,8 @@
+Create a new image from the user brief while applying the following visual system:
+
+collaborative making, experimental learning, open studio, cross-media practice.
+
+Preserve a clear subject-independent hierarchy, coherent light direction, declared color relationships, believable material evidence, and intentional negative space. Treat narrative as optional. Make a new scene; do not reproduce any reference work, named person, logo, trademark, school emblem, or recognizable layout. Do not add text unless the user explicitly requests it.
+
+USER BRIEF:
+<subject, scene, action, aspect ratio, and intended use>
