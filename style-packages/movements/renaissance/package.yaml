@@ -1,0 +1,16 @@
+id: renaissance
+name: 文艺复兴
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 蛋彩或油画结合古典素描与清晰轮廓；稳定的人体比例、清楚透视和金字塔式人物关系建立人文秩序；赭金、群青、朱红、石灰白和自然绿形成平衡色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
