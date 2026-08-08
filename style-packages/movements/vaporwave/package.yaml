@@ -1,0 +1,17 @@
+id: vaporwave
+name: 蒸汽波
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以消费媒介怀旧、低清数字质感、粉紫青色调、古典雕像隐喻和错位排版构成网络亚文化视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

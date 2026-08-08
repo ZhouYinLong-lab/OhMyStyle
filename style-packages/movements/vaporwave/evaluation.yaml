@@ -1,0 +1,18 @@
+profiles:
+  generic:
+    required:
+      - package-specific visual signature is observable
+      - composition remains coherent for a new subject
+      - user-supplied subject and object count are preserved
+      - no copied reference composition or branded material
+    reject_if:
+      - style is represented only by a global color filter
+      - text, logo, watermark, or unintended signature is present
+      - an unrequested recurring object, location, character, or narrative motif is added
+  portrait:
+    required:
+      - requested subject remains recognizable and naturally posed
+  still_life:
+    required:
+      - requested objects remain count-accurate and physically distinct
+minimum_score: 7
