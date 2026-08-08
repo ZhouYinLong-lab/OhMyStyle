@@ -1,0 +1,17 @@
+id: shabby-chic
+name: 破旧别致风
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以褪色表面、旧家具、柔和粉彩、手工痕迹和轻微磨损建立温柔而不完美的居家审美。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
