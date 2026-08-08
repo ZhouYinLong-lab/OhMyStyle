@@ -1,0 +1,21 @@
+profiles:
+  generic:
+    required:
+      - package-specific visual signature is observable
+      - composition remains coherent for a new subject
+      - no copied reference composition or branded material
+      - light is soft and explainable without a synthetic glow layer
+      - color remains present, restrained, and materially believable
+    reject_if:
+      - style is represented only by a global color filter
+      - text, logo, watermark, or unintended signature is present
+      - an unrequested seaside, summer, young-woman, or school-uniform motif is added
+  portrait:
+    required:
+      - requested subject retains natural skin tone and an unforced posture
+      - face is not over-smoothed or separated by artificial edge light
+  still_life:
+    required:
+      - requested objects retain distinct material response and count
+      - ambient light remains soft without washing out object colors
+minimum_score: 7

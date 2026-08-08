@@ -1,0 +1,23 @@
+package: Lisa Arima
+summary: 清透自然光、轻盈留白、克制胶片色彩和日常瞬间的距离感。
+subject_policy: open
+visual_signature:
+  medium: contemporary natural-light photography
+  composition:
+    - open negative space and an unforced off-center subject
+    - ordinary details remain visible without becoming a catalog display
+    - candid or gently observed posture when people are requested
+  lighting:
+    - soft ambient daylight, window light, or overcast diffusion
+    - controlled highlights with gentle transitions into cool shadow
+  palette:
+    - clean whites, washed blues, natural greens, quiet neutrals, and believable skin
+    - restrained warm/cool separation rather than a fixed two-color scheme
+  surface:
+    - real material response with light film-like color compression
+  edge_behavior:
+    - natural edges, no glow outline, no synthetic bloom halo
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Never add a recurring seaside, summer, school-uniform, or young-woman motif.
+  - Never copy a named photograph, pose, crop, or recognizable layout.

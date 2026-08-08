@@ -1,0 +1,17 @@
+id: lisa-arima
+name: Lisa Arima
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以清透自然光、克制的胶片色彩和日常瞬间的轻微距离感组织新的摄影主题，强调光线而非固定场景。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

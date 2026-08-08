@@ -1,0 +1,54 @@
+canonical_name: Lisa Arima
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点和叙事优先；本包只提取公开资料中可观察的光线与色彩处理方向。
+  subjects:
+    - everyday life
+    - portrait
+    - still life
+    - landscape or architecture
+  exclusions:
+    - copied composition
+    - fixed seaside or summer setting
+    - named character or branded asset
+sources:
+  - 'https://lisa-arima.stores.jp/'
+notes:
+  - 官方页面将公开方向描述为“照亮喜欢的光”，并以安静的心动、阴天的留白、春日光线的余韵和安静午后为意象。
+  - 这些是光线与情绪的参考，不是每次生成都必须出现的海边、少女、夏天或蓝色服装。
+composition:
+  - 让主体保留呼吸感和可感知的环境余量。
+  - 用自然的偏置构图、轻微距离和日常瞬间避免广告式摆拍。
+palette:
+  - 低到中饱和的清透色彩，保留自然白、天空蓝、植物绿和温和肤色。
+  - 冷阴影与轻微暖高光可以共存，但不形成强制性的撞色模板。
+lighting:
+  quality: clear ambient light with gentle diffusion
+  behavior:
+    - 优先使用窗光、阴天光或柔和的户外环境光。
+    - 高光轻盈，暗部保留空气感，不用强轮廓光和浓重彩色光。
+medium: contemporary natural-light photography with restrained film-like color
+materials:
+  support:
+    - natural light capture or restrained film emulation
+    - real skin, fabric, paper, glass, wood, plant, and architectural surfaces as supplied by the subject
+process:
+  - 先准确处理用户指定的主体和空间。
+  - 再从环境中寻找柔和、可解释的主光方向。
+  - 保持留白、轻微距离和自然动作。
+  - 最后以克制的胶片响应统一高光、阴影和色彩，不覆盖材质细节。
+technical_direction:
+  contrast: low to medium, with gentle highlight roll-off
+  saturation: restrained but not gray; preserve clean color separation
+  perspective: natural perspective, often normal or moderate wide angle
+  detail_density: selective everyday detail with open negative space
+invariants:
+  - 光线与空气感先于具体题材。
+  - 用户决定主体、地点、人物数量和叙事。
+  - 不把预设描述中的意象变成固定道具或固定场景。
+avoid:
+  - generic pastel wash that removes material identity
+  - fixed seaside, summer, school-uniform, or young-woman motifs
+  - heavy nostalgia filter, orange skin, or artificial bloom

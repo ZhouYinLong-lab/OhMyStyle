@@ -1,0 +1,19 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Generate a new image of {SUBJECT} in {LOCATION}.
+
+Treat the user's subject, objects, location, narrative, and aspect ratio as authoritative.
+Apply only these visual decisions: contemporary natural-light photography; open breathing room;
+an unforced off-center composition; quiet observation rather than advertising pose; soft daylight,
+window light, or overcast diffusion; clean but restrained color; gentle highlight roll-off; cool,
+airy shadows; real material response; and fine, nearly invisible film-like texture.
+
+The package does not require a seaside, summer, young woman, school uniform, blue clothing, or any
+other recurring motif. Include those only if the user's request asks for them. Keep the supplied
+subject and narrative intact. Invent a new composition and do not copy a reference work, exact pose,
+crop, recognizable layout, logo, text, character, or landmark.
