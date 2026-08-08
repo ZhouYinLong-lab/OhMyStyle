@@ -1,0 +1,42 @@
+canonical_name: 巴黎美术学院
+entity_type: design_school_style_package
+origin: independent_style_package
+period: historical_or_contemporary_practice
+domain: design
+scope:
+  use_cases:
+  - portrait
+  - still_life
+  - architecture_or_environment
+  - minimal_composition
+  - fuzzy_brief_compilation
+  exclusions:
+  - copying_a_specific_work
+  - copying_a_named_character_or_logo
+  - copying_school_emblem_or_layout
+sources:
+- https://beauxartsparis.fr/fr/ecole/presentation-ecole/presentation
+- https://github.com/ZhouYinLong-lab/OhMyStyle
+rendering:
+  model: subject_independent_visual_style
+  scene_logic: preserve_medium_composition_palette_lighting_and_texture_relationships
+  output_behavior: support_new_subjects_without_copying_source_compositions
+medium:
+  name: design_education_tradition
+  visible_evidence:
+  - medium_or_process_marks_are_consistent
+  - edges_and_surfaces_follow_the_selected_medium
+composition:
+  priorities:
+  - visual_hierarchy
+  - negative_space
+  - subject_independent_style_transfer
+style_signature:
+- atelier observation, classical proportion, material discipline, historical continuity,
+  north light
+- avoid_generic_filters; make medium, structure, palette, lighting, and surface jointly
+  visible
+- narrative_is_optional
+invariants:
+- the result is an original new scene, not a copy of a source work
+- no unrequested text, logo, trademark, named character, or school emblem

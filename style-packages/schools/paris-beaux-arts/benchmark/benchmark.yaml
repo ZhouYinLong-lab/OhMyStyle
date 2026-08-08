@@ -1,0 +1,25 @@
+schema_version: 1.0.0
+benchmark_id: paris-beaux-arts-visual-style-core-v1
+package: package.yaml
+package_version: 0.1.0
+suite: visual-style-core-v1
+rubric: ../../../../tasks/benchmarks/rubric.yaml
+maturity_target: L4
+minimum_overall_score: 3.5
+minimum_task_score: 3.0
+tasks:
+- id: portrait
+  kind: portrait
+  task: ../../../../tasks/benchmarks/portrait.yaml
+- id: still-life
+  kind: still_life
+  task: ../../../../tasks/benchmarks/still-life.yaml
+- id: architecture-environment
+  kind: architecture_environment
+  task: ../../../../tasks/benchmarks/architecture-environment.yaml
+- id: minimal-composition
+  kind: minimal_composition
+  task: ../../../../tasks/benchmarks/minimal-composition.yaml
+- id: fuzzy-brief
+  kind: fuzzy_brief
+  task: ../../../../tasks/benchmarks/fuzzy-brief.yaml
