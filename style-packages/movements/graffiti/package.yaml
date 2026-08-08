@@ -1,0 +1,17 @@
+id: graffiti
+name: 涂鸦
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以手写笔触、喷漆边缘、叠写层次、城市表面和高能色块构成直接而有现场感的视觉语言。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

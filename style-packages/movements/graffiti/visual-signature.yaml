@@ -1,0 +1,22 @@
+package: "涂鸦"
+summary: "手写笔触、喷漆边缘、叠写层次、城市表面和高能色块构成直接的现场感视觉"
+subject_policy: open
+visual_signature:
+  medium: "城市表面与街头视觉"
+  focus: "手写笔触、喷漆边缘、叠写层次、城市表面和高能色块构成直接的现场感视觉"
+  composition:
+  - "喷涂边缘和覆盖关系有动作来源"
+  - "墙面或载体由用户决定"
+  - "色块和线条保持层级"
+  palette:
+  - "喷漆红 #E34D43，角色：主色"
+  - "电蓝 #2D72B8，角色：辅助"
+  - "沥青黑 #25272B，角色：轮廓"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
