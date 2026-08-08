@@ -1,1 +1,10 @@
-Create a new historical chronophotographic study of an unfamiliar human movement, such as a craft gesture or athletic preparation. Use a dark technical ground, fixed recording geometry, repeated overlapping body phases or fine trajectory traces, restrained warm-gray and sepia plate tone, and strong analytical clarity. The image should feel like an instrument recording time, not a contact-sheet collage or cinematic action photograph. The movement and arrangement must be new.
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+Create a new historical chronophotographic study of {SUBJECT}; use motion only when the user requests it. Use a dark technical ground, fixed recording geometry, repeated overlapping body phases or fine trajectory traces, restrained warm-gray and sepia plate tone, and strong analytical clarity. The image should feel like an instrument recording time, not a contact-sheet collage or cinematic action photograph. The movement and arrangement must be new.

@@ -1,3 +1,12 @@
-一幅原创的电影化低分辨率像素冒险环境：傍晚海边的小型车站、远处水面和一名匿名旅行者。使用宽阔天空、分层远景、克制色板、冷空气与暖窗光的对照，保持清晰的像素簇和可读地面结构；无文字、无界面、无已知游戏元素。
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+以用户提供的主体和场景生成一幅原创的电影化低分辨率像素冒险图像。使用宽阔天空、分层远景、克制色板、冷空气与暖窗光的对照，保持清晰的像素簇和可读地面结构；无文字、无界面、无已知游戏元素。
 
 将用户的主题替换为新的主体；保持上述媒介、构图、色彩、光线和材质逻辑，不复制任何参考作品。

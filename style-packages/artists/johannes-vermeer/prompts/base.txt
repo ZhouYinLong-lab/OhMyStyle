@@ -1,1 +1,10 @@
-Create a new oil painting of an anonymous everyday action in a quiet seventeenth-century-like interior, without copying any known artwork. Use stable room geometry, one dominant side window, calm wall space, and a small number of ordinary objects that establish scale. Model face, cloth, wood, ceramic, bread, and metal through gradual value transitions. Keep warm gray-beige air, ochre, umber, muted red, and controlled ultramarine accents. Let daylight organize the whole image; preserve open shadows, sparse optical highlights, soft intentional edges, and a contemplative untheatrical mood. The subject, arrangement, and setting must be new.
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+Create a new oil painting of {SUBJECT} in {LOCATION}, without copying any known artwork. Use stable room geometry, one dominant side window, calm wall space, and a small number of ordinary objects that establish scale. Model face, cloth, wood, ceramic, bread, and metal through gradual value transitions. Keep warm gray-beige air, ochre, umber, muted red, and controlled ultramarine accents. Let daylight organize the whole image; preserve open shadows, sparse optical highlights, soft intentional edges, and a contemplative untheatrical mood. The subject, arrangement, and setting must be new.

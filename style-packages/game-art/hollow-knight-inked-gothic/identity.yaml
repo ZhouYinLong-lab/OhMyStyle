@@ -4,6 +4,8 @@ origin: reference_backed_hollow-knight-inked-gothic
 period: historical
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 一座被根系穿透的地下礼拜堂与一盏孤灯
   - portrait

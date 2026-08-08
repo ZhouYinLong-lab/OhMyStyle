@@ -4,6 +4,8 @@ origin: stylized_real_time_pbr_environment_art
 period: 2020s
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - urban_sci_fi
   - industrial_alley

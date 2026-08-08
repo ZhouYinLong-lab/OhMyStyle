@@ -4,6 +4,8 @@ origin: art_deco_modernist_portrait_painting
 period: 1898_to_1980
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - editorial_portrait
   - luxury_still_life

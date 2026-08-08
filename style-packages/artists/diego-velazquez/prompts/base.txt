@@ -1,1 +1,10 @@
-Create a new oil painting of an anonymous courtly or civic encounter in an unfamiliar interior. Use a deep umber architectural field, selective directional light, a small group or single sitter, and a clear social relationship expressed by gaze, stance, or distance. Model faces, hands, white fabric, dark clothing, wood, and metal with different levels of precision: focal details are exact, surrounding forms resolve in broad economical passages. Use muted red, blue-black, warm flesh, and linen-white accents. The composition, people, and setting must be new.
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+Create a new oil painting of {SUBJECT} in {LOCATION}. Use a deep umber architectural field, selective directional light, a small group or single sitter, and a clear social relationship expressed by gaze, stance, or distance. Model faces, hands, white fabric, dark clothing, wood, and metal with different levels of precision: focal details are exact, surrounding forms resolve in broad economical passages. Use muted red, blue-black, warm flesh, and linen-white accents. The composition, people, and setting must be new.

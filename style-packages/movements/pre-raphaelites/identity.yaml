@@ -4,6 +4,8 @@ origin: reference_backed_pre-raphaelites
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 一位成年人在河岸边整理一束野花
   - portrait

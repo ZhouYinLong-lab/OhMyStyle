@@ -1,5 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new subject and composition using these observable visual decisions:
-- 近距离广角、切边人物和运动中的街道形成冲撞式构图
+- 近距离广角、切边主体和运动中的表面形成冲撞式构图
 - 主体与背景保持清楚的层级关系，并让新主题拥有独立构图。
 - 高反差黑白、红黄蓝广告色和粗颗粒形成城市能量
 - 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。

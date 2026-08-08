@@ -4,6 +4,8 @@ origin: reference_backed_renaissance
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 一间有拱门的庭院里摆放测量仪器和植物
   - portrait

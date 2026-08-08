@@ -4,6 +4,8 @@ origin: reference_backed_suprematism
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 白色空间里三块倾斜矩形与一个黑色圆环
   - portrait

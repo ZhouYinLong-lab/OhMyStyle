@@ -4,6 +4,8 @@ origin: british_mexican_surrealist_painting
 period: 1917_to_2011
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - dreamlike_interior
   - hybrid_creature

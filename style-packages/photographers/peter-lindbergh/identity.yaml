@@ -4,6 +4,8 @@ origin: reference_backed_peter-lindbergh
 period: 20th_century_to_present
 domain: photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 一位成年人穿简单白衬衫站在风大的海边墙旁
   - portrait

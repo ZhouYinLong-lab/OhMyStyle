@@ -4,6 +4,8 @@ origin: reference_backed_mezzotint-printmaking
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 黑底中一盏熄灭前的台灯照亮一只玻璃杯
   - portrait

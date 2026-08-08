@@ -4,6 +4,8 @@ life: 1839-1906
 region: France
 primary_medium: oil_painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects:
     - still life with fruit, bottles, cloth, and tables
     - Provençal landscape

@@ -1,1 +1,10 @@
-Create a new oil painting of an unfamiliar riverside public garden on a bright afternoon. Use stable horizontal bands, measured spacing between quietly posed figures, repeated trees or shoreline markers, and calm readable silhouettes. Build the entire surface with disciplined small adjacent color units: blue, green, yellow, vermilion, violet, and deep blue, allowing optical mixing at viewing distance. Shadows remain chromatic and structured. The people, park, and arrangement must be new; do not imitate a famous park painting.
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+Create a new oil painting of {SUBJECT} in {LOCATION}, under the requested light. Use stable horizontal bands, measured spacing between quietly organized forms, repeated visual markers, and calm readable silhouettes. Build the entire surface with disciplined small adjacent color units: blue, green, yellow, vermilion, violet, and deep blue, allowing optical mixing at viewing distance. Shadows remain chromatic and structured. The subject, setting, and arrangement must be new; do not imitate a famous composition.

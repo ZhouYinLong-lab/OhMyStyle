@@ -4,6 +4,8 @@ origin: reference_backed_artemisia-gentileschi
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 夜间厨房里一名厨师扶住坠落的铜锅
   - portrait

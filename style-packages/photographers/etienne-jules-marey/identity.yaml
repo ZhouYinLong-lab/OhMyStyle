@@ -4,6 +4,8 @@ life: 1830-1904
 region: France
 primary_medium: chronophotography_and_collotype
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects:
     - human gait and athletic movement
     - chronophotographic silhouettes

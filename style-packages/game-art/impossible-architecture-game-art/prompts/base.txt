@@ -1,6 +1,15 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new subject and composition using these observable visual decisions:
 - 等距轴线清楚
-- 平台、楼梯、桥和门形成可追踪路径
+- 平台、楼梯、跨越性连接和门形成可追踪路径
 - 错觉只发生在结构连接处并可被理解
 - 大块粉彩与深色阴影形成清晰分区
 - 一到两个高亮色提示可操作结构

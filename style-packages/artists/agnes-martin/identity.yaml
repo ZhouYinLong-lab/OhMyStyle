@@ -4,6 +4,8 @@ origin: american_minimal_and_abstract_painting
 period: 1912_to_2004
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - minimal_poster
   - quiet_wall

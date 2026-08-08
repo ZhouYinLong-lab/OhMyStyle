@@ -1,3 +1,12 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Use case: stylized-concept
 Asset type: anonymous 2D pixel-game scene
 Primary request: Create an original scene in this 2D tile-based pixel-game direction. It may show exploration, dialogue, puzzle, combat, a title transition, a room, a landscape, or a quiet environmental composition. Do not reproduce any known game screenshot, named character, map, dialogue box, logo, or user interface.

@@ -4,11 +4,13 @@ origin: dark_mythic_fantasy_environment_design
 period: 2020s
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
-  - ruined_bridge
-  - ancient_citadel
-  - misty_valley
-  - sacred_tree
+  - large_scale_composition
+  - vertical_structure
+  - atmospheric_depth
+  - weathered_surface
   exclusions:
   - copied_boss
   - recognizable_weapon

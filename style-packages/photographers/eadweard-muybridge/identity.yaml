@@ -4,6 +4,8 @@ life: 1830-1904
 region: United Kingdom / United States
 primary_medium: collotype_and_chronophotographic_plate
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects:
     - animal locomotion
     - human motion studies

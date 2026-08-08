@@ -4,6 +4,8 @@ life: 1934-2012
 region: Japan
 primary_medium: photographic_series_and_photobooks
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects:
     - intimate domestic life
     - self and family

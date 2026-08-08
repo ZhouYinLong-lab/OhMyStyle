@@ -4,6 +4,8 @@ origin: reference_backed_encaustic-painting
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 一块木板上覆盖着分层蜡色和几道新刮开的痕迹
   - portrait

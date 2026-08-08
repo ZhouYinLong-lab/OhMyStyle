@@ -1,1 +1,10 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new painting image with high-view panoramic landscape, many small figures, seasonal labor, crisp terrain, earthy greens and ochres. Use a new subject and arrangement; make the medium and surface behavior observable; keep the focal hierarchy readable; do not imitate a named artwork or exact composition.

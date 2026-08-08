@@ -4,6 +4,8 @@ life: 1840-1926
 region: France
 primary_medium: oil_painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects: [ordinary landscape, water, snow, trees, garden, atmosphere]
   period_focus: impressionist landscape practice
   exclusions: [heavy_contour_expression, generic_soft_focus_filter, copied_scene]

@@ -4,6 +4,8 @@ origin: 1975 exhibition at George Eastman House
 region: North American and European photographic context
 primary_medium: landscape_photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects:
     - roads
     - subdivisions

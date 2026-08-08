@@ -4,6 +4,8 @@ origin: swedish_early_abstract_painting
 period: 1862_to_1944
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - abstract_diagram
   - symbolic_poster

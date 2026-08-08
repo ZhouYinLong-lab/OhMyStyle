@@ -4,6 +4,8 @@ origin: reference_backed_man-ray
 period: 20th_century_to_present
 domain: photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 一只金属手套、镜子和一枚柠檬的暗房静物
   - portrait

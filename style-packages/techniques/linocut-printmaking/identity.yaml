@@ -4,6 +4,8 @@ origin: reference_backed_linocut-printmaking
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 一棵冬树、一只空鸟笼和三块重叠山影
   - portrait

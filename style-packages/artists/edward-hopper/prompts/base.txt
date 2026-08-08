@@ -1,5 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new subject and composition using these observable visual decisions:
-- 窗、门、街角和道路构成稳定几何框架
+- 建筑开口、转角和方向性线条构成稳定几何框架
 - 人物与空间有明显距离
 - 画面常保留大片空墙或天空
 - 奶油白、土黄、砖红、深绿和蓝灰构成克制暖冷色组

@@ -4,6 +4,8 @@ origin: reference_backed_journey-minimalist-desert
 period: historical
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 一条沙脊通向远处的无名石门
   - portrait

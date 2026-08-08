@@ -3,7 +3,7 @@ name: 暗黑神话幻想游戏美术
 kind: game_art
 domain: game_art
 version: 0.1.0
-summary: 以古老石桥、残破神殿、冷雾、微弱金光和巨大尺度构成庄严而克制的暗黑幻想环境，不依赖怪物堆叠。
+summary: 以压低色组、历史重量、冷雾、稀疏暖光和巨大尺度对比构成庄严而克制的暗黑幻想视觉规则，不绑定具体主体或地点。
 files:
   identity: identity.yaml
   visual_signature: visual-signature.yaml

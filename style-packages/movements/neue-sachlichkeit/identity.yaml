@@ -15,3 +15,6 @@ historical_context:
   - social commentary
 sources:
   - https://www.metmuseum.org/met-publications/glitter-and-doom-german-portraits-from-the-1920s
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.

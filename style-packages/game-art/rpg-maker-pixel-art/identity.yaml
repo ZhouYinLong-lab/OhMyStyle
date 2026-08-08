@@ -4,6 +4,8 @@ origin: tile_based_indie_rpg_production
 period: late_2000s_to_2020s_indie_game_art
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
     - exploration_scene
     - dialogue_scene

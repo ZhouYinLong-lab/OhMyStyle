@@ -1,3 +1,12 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a matter-of-fact {MEDIUM} scene showing {SUBJECT} in {LOCATION}. Make the
 social setting and material evidence legible: clothing, tools, furniture,
 architecture, paperwork, or other objects should say something about the

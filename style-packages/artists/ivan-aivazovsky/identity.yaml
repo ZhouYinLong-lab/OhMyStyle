@@ -4,6 +4,8 @@ origin: nineteenth_century_russian_romantic_seascape
 period: 1817_to_1900
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - open_sea
   - storm_coast

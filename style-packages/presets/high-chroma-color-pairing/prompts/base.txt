@@ -1,1 +1,10 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Photograph or paint [SUBJECT] against a quiet neutral ground. Build the image around one clean high-chroma pair: deep cobalt with warm yellow, saturated teal with pale pink, orange with midnight blue, or a similarly decisive warm-cool contrast. Let one hue occupy the dominant mass and the other act as a deliberate counter-mass; keep a small pale or deep neutral to give both room. Use clear silhouettes, broad color areas, restrained object count, and ordinary controlled light. Preserve material detail without covering every surface with texture. Keep the subject open-ended so the same color logic can work for a still life, portrait, landscape, object, or abstract form.

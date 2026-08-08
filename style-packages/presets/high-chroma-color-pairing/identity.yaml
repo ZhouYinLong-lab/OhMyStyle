@@ -12,7 +12,10 @@ mediums:
   - illustration
   - poster_design
   - product_styling
-scope: subject-neutral color direction
+scope:
+  label: subject-neutral color direction
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
 historical_context: contemporary color styling practice; not a historical movement
 not_a_personal_style: true
 not_a_fixed_subject: true

@@ -1,1 +1,10 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new oil painting of a previously unseen still life or landscape. Build every major form from interlocking warm and cool color planes, with repeated short directional brush marks that follow tables, cloth, fruit, trunks, walls, or hills. Allow slight tension between local axes and the overall perspective while keeping objects solid and readable. Use blue-green, muted ochre, vermilion, cream, violet-gray, and deep blue as a restrained structural palette. Avoid smooth airbrush modeling; let adjacent color construct volume. The subject and arrangement must be new.

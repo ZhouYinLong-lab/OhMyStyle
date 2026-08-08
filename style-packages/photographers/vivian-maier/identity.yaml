@@ -4,6 +4,8 @@ origin: mid_century_american_street_and_documentary_photography
 period: 1926_to_2009
 domain: photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - street_portrait
   - urban_childhood

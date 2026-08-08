@@ -1,1 +1,10 @@
-Create a new nineteenth-century documentary photograph of an unfamiliar field camp or roadside work site, not a named historical scene. Use deliberate road, ridge, tent, or equipment geometry; place a few anonymous people as scale and evidence rather than heroes. Preserve readable terrain, cloth, wood, and metal under open field daylight. Use restrained silver-gray or warm paper monochrome, controlled contrast, subtle historical print irregularity, and no dramatic filter. The location, people, and arrangement must be new.
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+Create a new nineteenth-century documentary photograph of {SUBJECT} in {LOCATION}, not a named historical scene. Use deliberate road, ridge, tent, or equipment geometry; place a few anonymous people as scale and evidence rather than heroes. Preserve readable terrain, cloth, wood, and metal under open field daylight. Use restrained silver-gray or warm paper monochrome, controlled contrast, subtle historical print irregularity, and no dramatic filter. The location, people, and arrangement must be new.

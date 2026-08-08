@@ -4,6 +4,8 @@ origin: isometric_puzzle_architecture_and_optical_illusion
 period: 2010s_to_present
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - puzzle_room
   - monument

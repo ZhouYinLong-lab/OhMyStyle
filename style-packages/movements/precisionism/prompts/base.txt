@@ -1,5 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new subject and composition using these observable visual decisions:
-- 工厂、仓库和桥梁被简化为清楚的几何体，人物很少
+- 大型功能结构被简化为清楚的几何体，人物仅作为可选尺度参照
 - 主体与背景保持清楚的层级关系，并让新主题拥有独立构图。
 - 白、灰、铁蓝、砖红和黄褐形成工业色组
 - 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。

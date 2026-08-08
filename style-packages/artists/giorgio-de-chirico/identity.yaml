@@ -4,6 +4,8 @@ origin: italian_metaphysical_painting
 period: 1888_to_1978
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - empty_square
   - coastal_architecture

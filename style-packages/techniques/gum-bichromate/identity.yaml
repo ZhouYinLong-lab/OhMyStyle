@@ -10,3 +10,6 @@ materials:
 sources:
   - https://www.eastman.org/photographic-processes-video-series-glossary
   - https://www.modernamuseet.se/stockholm/en/exhibitions/art-photography-1900/photographic-processes-and-materials/
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.

@@ -4,6 +4,8 @@ origin: reference_backed_egon-schiele
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 空房间里一把歪斜的椅子和一件挂起的外套
   - portrait

@@ -4,6 +4,8 @@ life: 1857-1927
 region: France
 primary_medium: gelatin_silver_and_early_documentary_photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects:
     - streets and passages
     - façades and architectural details

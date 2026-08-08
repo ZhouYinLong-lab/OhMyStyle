@@ -10,7 +10,7 @@
 
 ## Overview
 
-A solemn dark-fantasy environment direction using ancient stone, ruined sanctuaries, cold mist, restrained gold light, and monumental scale.
+A solemn dark-fantasy visual direction using compressed colors, weathered material weight, cold mist, restrained warm light, and monumental scale relationships without binding the subject or location.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

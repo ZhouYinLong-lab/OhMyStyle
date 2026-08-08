@@ -4,6 +4,8 @@ origin: independent_style_package
 period: historical_or_contemporary_practice
 domain: photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
     - portrait
     - still_life

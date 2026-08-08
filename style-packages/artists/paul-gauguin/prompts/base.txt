@@ -1,1 +1,10 @@
-Create a new Synthetist oil painting of an unfamiliar symbolic gathering beside a river at late afternoon. Flatten the scene into broad overlapping color fields, strong dark contours, compressed layered space, and a decorative rhythm of figures, branches, and simple objects. Use systematic non-natural color: vermilion ground, ochre figures, deep blue shadow zones, forest green foliage, violet accents, and cream counterfields. Keep large areas intentionally flat while preserving visible painted surface. The scene and arrangement must be new.
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+Create a new Synthetist oil painting of {SUBJECT} in {LOCATION}, at the requested time of day. Flatten the scene into broad overlapping color fields, strong dark contours, compressed layered space, and a decorative rhythm of figures, branches, and simple objects. Use systematic non-natural color: vermilion ground, ochre figures, deep blue shadow zones, forest green foliage, violet accents, and cream counterfields. Keep large areas intentionally flat while preserving visible painted surface. The scene and arrangement must be new.

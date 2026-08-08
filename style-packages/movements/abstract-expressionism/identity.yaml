@@ -4,6 +4,8 @@ origin: reference_backed_abstract-expressionism
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 一面旧墙上覆盖着未完成的抽象涂层
   - portrait

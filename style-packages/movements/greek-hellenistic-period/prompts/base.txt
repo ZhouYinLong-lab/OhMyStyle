@@ -1,8 +1,16 @@
-A three-quarter view of an unnamed moment of struggle, rescue, grief, or
-public spectacle involving two or three bodies of different ages or physical
-conditions. Drive the composition through one strong diagonal and a visible
-counterforce; use torsion, reaching, turning, contact, foreshortening, and
-drapery that amplifies motion. Make the scene empathetic and materially
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+A three-quarter presentation of {SUBJECT} in {LOCATION}. Drive the composition
+through one strong diagonal and a visible counterforce; use torsion, turning,
+foreshortening, and directional folds or surface marks when relevant. Make the
+image empathetic and materially
 credible as a marble or bronze group with selective polish, worn edges, dark
 recesses, and restrained mineral red, blue, green, and ochre traces. Let the
 space open toward the viewer without becoming a movie poster. No named

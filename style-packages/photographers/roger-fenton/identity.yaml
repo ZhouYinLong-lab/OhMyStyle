@@ -4,6 +4,8 @@ life: 1819-1869
 region: United Kingdom
 primary_medium: salted_paper_and_wet_collodion_print
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects:
     - Crimean War landscapes and camps
     - soldiers and camp life

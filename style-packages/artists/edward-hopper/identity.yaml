@@ -4,6 +4,8 @@ origin: american_modern_scene_painting
 period: 1882_to_1967
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - urban_interior
   - coastal_house

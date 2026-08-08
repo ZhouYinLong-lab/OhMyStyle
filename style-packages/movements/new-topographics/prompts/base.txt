@@ -1,3 +1,12 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Photograph a {SUBJECT} in {LOCATION} as a clear-eyed documentary landscape.
 Show the human alteration directly: {BACKGROUND_ELEMENTS} should remain visible
 as evidence of planning, work, extraction, transport, maintenance, or neglect.
@@ -5,5 +14,3 @@ Use a stable horizontal composition, a fixed tripod-like viewpoint, even dayligh
 restrained saturation, and descriptive surface detail. Let geometry, distance,
 and repetition carry the interest. The image must not become a tourism postcard,
 real-estate advertisement, disaster film, or untouched-wilderness sublime.
-
-

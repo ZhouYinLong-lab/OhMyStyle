@@ -4,6 +4,8 @@ origin: rhythm_action_and_comic_cel_shading
 period: 2020s
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - industrial_stage
   - machine_room

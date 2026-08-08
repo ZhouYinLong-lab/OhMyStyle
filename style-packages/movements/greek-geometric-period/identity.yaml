@@ -19,3 +19,6 @@ subject_matter:
   - chariots and warriors
   - ships and civic ceremony
   - animals reduced to signs
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.

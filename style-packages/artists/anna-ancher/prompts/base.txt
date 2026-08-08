@@ -1,3 +1,12 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a quiet oil painting of {SUBJECT} in {LOCATION}. Show {SUBJECT_ACTION} with
 ordinary, unperformed body language. Use a side window as the main light source:
 broad northern daylight, soft falloff, color carried through the shadows, and a

@@ -4,6 +4,8 @@ origin: contemporary_japanese_color_photography
 period: 1972_to_present
 domain: photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - small_nature_detail
   - domestic_light

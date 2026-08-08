@@ -4,6 +4,8 @@ origin: reference_backed_francisco-de-zurbaran
 period: historical
 domain: painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - 黑暗房间里一只陶罐、一块白布和一束柠檬
   - portrait

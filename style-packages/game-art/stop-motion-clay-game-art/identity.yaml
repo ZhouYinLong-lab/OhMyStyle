@@ -4,6 +4,8 @@ origin: physical_modelmaking_stop_motion_and_game_environment_art
 period: 2010s_to_present
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - handmade_interior
   - miniature_character

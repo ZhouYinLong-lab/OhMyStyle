@@ -4,6 +4,8 @@ life: 1815-1879
 region: United Kingdom; Ceylon
 primary_medium: wet_collodion_and_albumen_portrait_photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects:
     - close portrait
     - literary and artistic sitters

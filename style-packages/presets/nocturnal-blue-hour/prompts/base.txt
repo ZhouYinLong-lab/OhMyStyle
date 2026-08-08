@@ -1,1 +1,10 @@
-Create a new photography image with blue-hour residential street, deep navy sky, cool window lights, subtle wet pavement reflections, realistic low light. Use a new subject and arrangement; make the medium and surface behavior observable; keep the focal hierarchy readable; do not imitate a named artwork or exact composition.
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+Create a new photography image of {SUBJECT} in {LOCATION}, using blue-hour low light, deep navy atmosphere, cool practical light, and subtle surface reflections. Use a new subject and arrangement; make the medium and surface behavior observable; keep the focal hierarchy readable; do not imitate a named artwork or exact composition.

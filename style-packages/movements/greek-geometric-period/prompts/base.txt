@@ -1,7 +1,16 @@
-A frontal hand-shaped terracotta vessel or flat clay panel showing a civic
-or funerary procession in two or three horizontal registers. Use angular
-silhouettes, triangular torsos, profile heads, compact chariots, and repeated
-horses. Paint with dark slip on a warm fired-clay ground; add meanders,
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+A frontal terracotta or flat clay presentation of {SUBJECT} in {LOCATION},
+organized in two or three horizontal registers when appropriate. Use angular
+silhouettes, simplified profiles, repeated geometric units, and rhythmic
+motifs. Paint with dark slip on a warm fired-clay ground; add meanders,
 zigzags, triangles, and concentric marks as disciplined separators. Keep the
 story legible, shallow, ceremonial, rhythmic, matte, and materially tied to
 the clay support. No modern text, no logo, no named artifact, no glossy 3D

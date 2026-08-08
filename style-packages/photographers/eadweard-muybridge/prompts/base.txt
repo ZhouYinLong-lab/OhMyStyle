@@ -1,1 +1,10 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new historical motion-study photographic plate of an unfamiliar everyday movement, not a famous animal or known sequence. Use a fixed camera, neutral measurable background, stable baseline, even technical light, and repeated evenly spaced frames. Show clear phase changes through silhouette, joint position, and contact with the ground; do not use motion blur. Preserve restrained paper, gray-brown emulsion, plate borders, and small registration imperfections. The subject and sequence must be new.

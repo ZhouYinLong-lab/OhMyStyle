@@ -6,10 +6,10 @@ materials:
 - 湿地面
 - 冷雾与远火
 process:
-- 先建立巨大结构和深谷
+- 先建立巨大结构和深层负空间
 - 再安排冷暖光源位置
 - 用雾层组织距离
 - 最后加入少量尺度人物和植被
-technical_direction: 保持建筑、雾和光源的物理关系；避免怪物、血腥、过度粒子和泛用奇幻海报构图。
+technical_direction: 保持结构、雾和光源的物理关系；避免把任何具体建筑、角色或地点设为默认内容，也避免血腥、过度粒子和泛用奇幻海报构图。
 safety_note: Use observable traits only. Do not reconstruct a named work, character,
   location, logo, text, or exact composition.

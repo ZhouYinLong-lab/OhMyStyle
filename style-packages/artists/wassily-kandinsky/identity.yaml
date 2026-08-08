@@ -4,6 +4,8 @@ life: 1866-1944
 region: Russia / Germany / France
 primary_medium: oil_painting
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects:
     - nonrepresentational color and form
     - circles, arcs, diagonals, grids, and irregular planes

@@ -1,5 +1,14 @@
-A centered painted clay vessel or shallow ceramic panel showing an unnamed
-procession or athletic encounter. Use firm profile contours, patterned hair,
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+A centered painted clay or ceramic image of {SUBJECT} in {LOCATION}. Use firm
+profile contours, patterned hair or repeated surface motifs when relevant,
 overlapping limbs, and a readable central action. Organize the scene with a
 dark slip field against warm orange-red clay, incised internal details,
 reserved cream highlights, and narrow ornamental borders filled with small

@@ -1,6 +1,15 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new subject and composition using these observable visual decisions:
 - 大块几何体先建立层级
-- 道路、台阶和平台提供清晰路径
+- 方向性平面、层级变化和平台提供清晰路径
 - 孤立主体与大面积留白并存
 - 柔和粉彩、蓝绿、珊瑚、沙色和深紫组成有限色组
 - 不同平面用色相或明度轻微区分

@@ -1,1 +1,10 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new nonrepresentational oil painting with no depicted story or recognizable object. Use a pale mineral ground and a deliberate asymmetrical network of circles, arcs, thin lines, grids, triangles, and irregular planes. Balance dense clusters against open space. Use black as structural counterweight and measured cobalt blue, red, yellow, green, and violet as compositional masses. Combine precise geometry with small hand-painted deviations and translucent passages. The arrangement must be wholly new and must not imitate a known painting.

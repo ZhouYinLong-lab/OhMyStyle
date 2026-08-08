@@ -1,6 +1,15 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create a new subject and composition using these observable visual decisions:
 - 宽阔地形和低地平线制造巨大尺度
-- 人物、道路或设施作为极小尺度锚点
+- 主体或少量尺度参照作为极小尺度锚点
 - 留白是环境结构而非空洞
 - 苔绿、石板蓝、湿土棕、锈橙和云白组成低饱和色组
 - 暖色只在人物、设施或少量地表出现

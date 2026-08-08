@@ -4,6 +4,8 @@ origin: Sinclair ZX Spectrum graphics constraints
 period: 1980s_home_computer_game_art
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
     - loading_screen
     - adventure_scene

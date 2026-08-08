@@ -26,3 +26,6 @@ work_level_reference:
   artist: Raphael
   date: 1508-1511
   role: one representative fresco, not a movement definition
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.

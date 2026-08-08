@@ -4,6 +4,8 @@ origin: mid_century_new_york_color_street_photography
 period: 1923_to_2013
 domain: photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - rainy_street
   - window_reflection

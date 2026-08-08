@@ -4,6 +4,8 @@ life: 1863-1944
 region: Norway
 primary_medium: painting_and_printmaking
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects: [psychological figure, intimacy, anxiety, landscape as emotion]
   period_focus: mature symbolist and expressionist practice
   exclusions: [decorative_fauvist_color_only, copied_scream_composition, photorealism]

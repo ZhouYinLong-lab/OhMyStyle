@@ -9,5 +9,6 @@ exclusions:
 - copied_named_work
 - generic_global_filter
 - unrelated_extra_style
-
-
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.

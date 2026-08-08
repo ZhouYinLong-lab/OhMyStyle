@@ -4,6 +4,8 @@ origin: block_based_sandbox_world_building
 period: 2000s_to_present
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - block_landscape
   - modular_building

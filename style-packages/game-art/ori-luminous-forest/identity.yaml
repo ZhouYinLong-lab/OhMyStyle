@@ -4,6 +4,8 @@ origin: luminous_hand_painted_platform_game_art
 period: 2020s
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - forest_stream
   - giant_root

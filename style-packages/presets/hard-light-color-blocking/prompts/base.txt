@@ -1,3 +1,12 @@
-一张原创的极简摄影棚静物照片：三个彼此分离的陶瓷物体，在一盏硬质方向光下形成清楚而柔和边缘的投影。物体使用独立的蓝、红、黄大色块，保留真实釉面和体积，不添加文字、品牌或多余物体。
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+一张原创的极简摄影棚图像：用户指定的主体在硬质方向光下形成清楚而柔和边缘的投影。物体使用独立的蓝、红、黄大色块，保留真实釉面和体积，不添加文字、品牌或多余物体。
 
 将用户的主题替换为新的主体；保持上述媒介、构图、色彩、光线和材质逻辑，不复制任何参考作品。

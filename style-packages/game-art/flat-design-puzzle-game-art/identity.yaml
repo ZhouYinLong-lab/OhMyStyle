@@ -4,6 +4,8 @@ origin: graphic_design_and_accessible_puzzle_game_art
 period: 2010s_to_present
 domain: game_art
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   use_cases:
   - puzzle_board
   - abstract_room

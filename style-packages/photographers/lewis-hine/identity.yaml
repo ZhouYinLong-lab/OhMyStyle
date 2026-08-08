@@ -4,6 +4,8 @@ life: 1874-1940
 region: United States
 primary_medium: social_documentary_photography
 scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
   subjects: [labor, immigration, children at work, industrial machinery, public institutions]
   period_focus: 1900s-1930s reform and industrial documentation
   exclusions: [fashion_pose, anonymous_vintage_aesthetic, poverty_porn]

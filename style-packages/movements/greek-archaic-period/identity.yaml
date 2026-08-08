@@ -19,3 +19,6 @@ subject_matter:
   - athletes and warriors
   - animals and hybrid creatures
   - banquets and civic ritual
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; use_cases are optional benchmark labels, not default scene requirements.
