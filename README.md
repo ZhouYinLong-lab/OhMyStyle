@@ -221,6 +221,12 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/magic-realism/README.md"><img src="style-packages/movements/magic-realism/gallery-16x9.jpg" width="230" alt="魔幻现实主义代表图"></a><br><strong>魔幻现实主义</strong><br><a href="style-packages/movements/magic-realism/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/precisionism/README.md"><img src="style-packages/movements/precisionism/gallery-16x9.jpg" width="230" alt="精确主义代表图"></a><br><strong>精确主义</strong><br><a href="style-packages/movements/precisionism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/art-deco/README.md"><img src="style-packages/movements/art-deco/gallery-16x9.jpg" width="230" alt="装饰艺术代表图"></a><br><strong>装饰艺术</strong><br><a href="style-packages/movements/art-deco/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/de-stijl/README.md"><img src="style-packages/movements/de-stijl/gallery-16x9.jpg" width="230" alt="荷兰风格派代表图"></a><br><strong>荷兰风格派</strong><br><a href="style-packages/movements/de-stijl/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/international-typographic-style/README.md"><img src="style-packages/movements/international-typographic-style/gallery-16x9.jpg" width="230" alt="国际主义版式风格代表图"></a><br><strong>国际主义版式风格</strong><br><a href="style-packages/movements/international-typographic-style/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/new-topographics/README.md"><img src="style-packages/movements/new-topographics/gallery-16x9.jpg" width="230" alt="新地形摄影代表图"></a><br><strong>新地形摄影</strong><br><a href="style-packages/movements/new-topographics/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -299,23 +305,13 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </tr>
 </table>
 
-### 艺术与摄影学校
+### 设计学校
 
 <table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="乌尔姆设计学院代表图"></a><br><strong>乌尔姆设计学院</strong><br><a href="style-packages/schools/ulm-school/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/bauhaus/README.md"><img src="style-packages/schools/bauhaus/gallery-16x9.jpg" width="230" alt="包豪斯代表图"></a><br><strong>包豪斯</strong><br><a href="style-packages/schools/bauhaus/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/international-typographic-style/README.md"><img src="style-packages/schools/international-typographic-style/gallery-16x9.jpg" width="230" alt="国际主义版式风格代表图"></a><br><strong>国际主义版式风格</strong><br><a href="style-packages/schools/international-typographic-style/README.md">打开 README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/new-bauhaus/README.md"><img src="style-packages/schools/new-bauhaus/gallery-16x9.jpg" width="230" alt="新包豪斯代表图"></a><br><strong>新包豪斯</strong><br><a href="style-packages/schools/new-bauhaus/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/new-topographics/README.md"><img src="style-packages/schools/new-topographics/gallery-16x9.jpg" width="230" alt="新地形学代表图"></a><br><strong>新地形学</strong><br><a href="style-packages/schools/new-topographics/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/de-stijl/README.md"><img src="style-packages/schools/de-stijl/gallery-16x9.jpg" width="230" alt="荷兰风格派代表图"></a><br><strong>荷兰风格派</strong><br><a href="style-packages/schools/de-stijl/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/art-deco/README.md"><img src="style-packages/schools/art-deco/gallery-16x9.jpg" width="230" alt="装饰艺术代表图"></a><br><strong>装饰艺术</strong><br><a href="style-packages/schools/art-deco/README.md">打开 README</a></td>
-<td width="33%"></td>
-<td width="33%"></td>
 </tr>
 </table>
 

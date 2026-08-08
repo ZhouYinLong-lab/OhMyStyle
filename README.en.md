@@ -220,6 +220,12 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/magic-realism/README.en.md"><img src="style-packages/movements/magic-realism/gallery-16x9.jpg" width="230" alt="Magic Realism representative image"></a><br><strong>Magic Realism</strong><br><a href="style-packages/movements/magic-realism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/precisionism/README.en.md"><img src="style-packages/movements/precisionism/gallery-16x9.jpg" width="230" alt="Precisionism representative image"></a><br><strong>Precisionism</strong><br><a href="style-packages/movements/precisionism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/art-deco/README.en.md"><img src="style-packages/movements/art-deco/gallery-16x9.jpg" width="230" alt="Art Deco representative image"></a><br><strong>Art Deco</strong><br><a href="style-packages/movements/art-deco/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/de-stijl/README.en.md"><img src="style-packages/movements/de-stijl/gallery-16x9.jpg" width="230" alt="De Stijl representative image"></a><br><strong>De Stijl</strong><br><a href="style-packages/movements/de-stijl/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/international-typographic-style/README.en.md"><img src="style-packages/movements/international-typographic-style/gallery-16x9.jpg" width="230" alt="International Typographic Style representative image"></a><br><strong>International Typographic Style</strong><br><a href="style-packages/movements/international-typographic-style/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/new-topographics/README.en.md"><img src="style-packages/movements/new-topographics/gallery-16x9.jpg" width="230" alt="New Topographics representative image"></a><br><strong>New Topographics</strong><br><a href="style-packages/movements/new-topographics/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -298,23 +304,13 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 </table>
 
-### Schools
+### Design schools
 
 <table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.en.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="Ulm School representative image"></a><br><strong>Ulm School</strong><br><a href="style-packages/schools/ulm-school/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/bauhaus/README.en.md"><img src="style-packages/schools/bauhaus/gallery-16x9.jpg" width="230" alt="Bauhaus representative image"></a><br><strong>Bauhaus</strong><br><a href="style-packages/schools/bauhaus/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/international-typographic-style/README.en.md"><img src="style-packages/schools/international-typographic-style/gallery-16x9.jpg" width="230" alt="International Typographic Style representative image"></a><br><strong>International Typographic Style</strong><br><a href="style-packages/schools/international-typographic-style/README.en.md">Open README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/new-bauhaus/README.en.md"><img src="style-packages/schools/new-bauhaus/gallery-16x9.jpg" width="230" alt="New Bauhaus representative image"></a><br><strong>New Bauhaus</strong><br><a href="style-packages/schools/new-bauhaus/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/new-topographics/README.en.md"><img src="style-packages/schools/new-topographics/gallery-16x9.jpg" width="230" alt="New Topographics representative image"></a><br><strong>New Topographics</strong><br><a href="style-packages/schools/new-topographics/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/de-stijl/README.en.md"><img src="style-packages/schools/de-stijl/gallery-16x9.jpg" width="230" alt="De Stijl representative image"></a><br><strong>De Stijl</strong><br><a href="style-packages/schools/de-stijl/README.en.md">Open README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/art-deco/README.en.md"><img src="style-packages/schools/art-deco/gallery-16x9.jpg" width="230" alt="Art Deco representative image"></a><br><strong>Art Deco</strong><br><a href="style-packages/schools/art-deco/README.en.md">Open README</a></td>
-<td width="33%"></td>
-<td width="33%"></td>
 </tr>
 </table>
 

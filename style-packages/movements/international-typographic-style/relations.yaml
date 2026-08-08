@@ -1,0 +1,8 @@
+related_packages: []
+crossing:
+  supported: true
+  default_mode: adaptive
+  note: Cross-style composition is handled by the repository-level workflow, not by
+    this package identity.
+
+

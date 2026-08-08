@@ -1,0 +1,13 @@
+canonical_name: 装饰艺术
+entity_type: movement
+period_or_scope: 20世纪20至30年代
+region_or_context: international
+primary_medium: graphic
+subject_matter:
+- 阶梯几何、对称、金属色与现代奢华
+exclusions:
+- copied_named_work
+- generic_global_filter
+- unrelated_extra_style
+
+

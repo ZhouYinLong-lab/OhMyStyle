@@ -1,0 +1,12 @@
+{
+  "name": "Altered Landscape Neutral",
+  "colors": [
+    {"name": "Pale Sky", "hex": "#C9D0CC", "role": "open_atmosphere"},
+    {"name": "Concrete", "hex": "#A6A49A", "role": "built_surface"},
+    {"name": "Dry Grass", "hex": "#A28F61", "role": "vegetation"},
+    {"name": "Asphalt", "hex": "#4B5050", "role": "ground"},
+    {"name": "Utility Blue", "hex": "#55727A", "role": "small_man_made_accent"}
+  ]
+}
+
+
