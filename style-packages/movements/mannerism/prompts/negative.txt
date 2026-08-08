@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- copied_named_work
+- recognizable_source_arrangement
+- readable_logo_or_text
+- generic_global_filter
