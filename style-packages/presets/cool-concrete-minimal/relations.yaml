@@ -8,3 +8,10 @@ combination:
   recommended_mode: stack
   notes: If combined with another package, assign separate responsibilities explicitly
     rather than concatenating names.
+
+family: visual-preset
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

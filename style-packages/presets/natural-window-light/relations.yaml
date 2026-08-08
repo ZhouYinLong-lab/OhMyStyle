@@ -4,3 +4,16 @@ crossing:
   default_mode: adaptive
   note: Cross-style composition is handled by the repository-level workflow, not by
     this package identity.
+
+family: quiet-natural-light
+near_duplicates:
+  - photographers/emilie-hofferber
+  - photographers/rinko-kawauchi
+supersedes: []
+conflicts: []
+distinctives:
+  - portable window-light recipe
+  - subject-agnostic exposure and shadow behavior
+  - neutral material rendering
+avoid_overlap:
+  - do not imitate either photographer's subject choices or framing

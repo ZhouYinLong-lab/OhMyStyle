@@ -13,3 +13,10 @@ not_equivalent_to:
   - action_movie_still
   - motion_blur_effect
   - random_photo_contact_sheet
+
+family: source-photographer
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

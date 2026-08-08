@@ -4,3 +4,14 @@ crossing:
   default_mode: adaptive
   note: Cross-style composition is handled by the repository-level workflow, not by
     this package identity.
+
+family: information-system-design
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - functional information hierarchy
+  - systematic modular structure
+  - neutral industrial product language
+avoid_overlap:
+  - do not force primary-color geometric abstraction or Art Deco ornament

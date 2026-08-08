@@ -36,6 +36,9 @@ jobs:
       - name: Validate subject-independent style contracts
         run: python3 tools/validate-subject-independence.py style-packages
 
+      - name: Validate semantic package metadata and relationships
+        run: python3 tools/validate-semantics.py style-packages
+
       - name: Validate cross-style composite recipes
         run: python3 tools/validate-composite.py style-packages/composites
 

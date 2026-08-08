@@ -6,3 +6,16 @@ crossing:
   default_mode: adaptive
   note: Cross-style composition is handled by the repository-level workflow, not by
     this package identity.
+
+family: neon-urban-game-art
+near_duplicates:
+  - game-art/neon-noir-3d-game-art
+  - game-art/stray-neon-cybercity
+supersedes: []
+conflicts: []
+distinctives:
+  - dense vertical infrastructure
+  - physically placed local light sources
+  - large urban depth
+avoid_overlap:
+  - do not require a city street, bridge, rain, or neon sign

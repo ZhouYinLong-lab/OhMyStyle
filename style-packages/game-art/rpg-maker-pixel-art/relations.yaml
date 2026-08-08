@@ -15,3 +15,15 @@ not_equivalent_to:
   - zx_spectrum_attribute_pixel_art
   - copied_freebird_games_screenshot
   - generic_unmodified_rpg_maker_asset_pack
+
+family: pixel-game-art
+near_duplicates:
+  - game-art/cinematic-pixel-adventure
+supersedes: []
+conflicts: []
+distinctives:
+  - tile-scale readability
+  - small sprite-to-environment ratio
+  - optional interior or outdoor variants
+avoid_overlap:
+  - do not require a railway, house, bridge, moon, or traveler

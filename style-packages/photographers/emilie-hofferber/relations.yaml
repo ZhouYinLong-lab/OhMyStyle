@@ -4,3 +4,16 @@ influences_to_review: []
 not_equivalent_to:
   - generic color filter
   - subject-specific composition
+
+family: quiet-natural-light
+near_duplicates:
+  - photographers/rinko-kawauchi
+  - presets/natural-window-light
+supersedes: []
+conflicts: []
+distinctives:
+  - quiet domestic observation
+  - soft weather through glass
+  - restrained daily still life
+avoid_overlap:
+  - do not force a window still life when the user supplies another subject

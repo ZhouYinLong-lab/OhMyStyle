@@ -6,3 +6,16 @@ crossing:
   default_mode: adaptive
   note: Cross-style composition is handled by the repository-level workflow, not by
     this package identity.
+
+family: neon-urban-game-art
+near_duplicates:
+  - game-art/cyberpunk-night-city
+  - game-art/neon-noir-3d-game-art
+supersedes: []
+conflicts: []
+distinctives:
+  - inhabited decay
+  - low-rise residential density
+  - practical light embedded in worn architecture
+avoid_overlap:
+  - do not require a cat, alley, apartment block, or puddle

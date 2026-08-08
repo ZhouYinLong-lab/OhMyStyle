@@ -8,3 +8,15 @@ not_equivalent_to:
   - generic_image_filter
   - copying_a_specific_source_work
   - named_author_imitation
+
+family: pixel-game-art
+near_duplicates:
+  - game-art/rpg-maker-pixel-art
+supersedes: []
+conflicts: []
+distinctives:
+  - cinematic widescreen staging
+  - large atmospheric color masses
+  - single readable focal silhouette
+avoid_overlap:
+  - do not require a railway, coastal sunset, house, or traveler

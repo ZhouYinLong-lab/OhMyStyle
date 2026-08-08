@@ -12,3 +12,10 @@ not_equivalent_to:
   - generic_chiaroscuro_filter
   - costume_drama
   - copied_las_meninas
+
+family: source-artist
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

@@ -4,3 +4,10 @@ influences_to_review: []
 not_equivalent_to:
   - generic color filter
   - subject-specific composition
+
+family: technique
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

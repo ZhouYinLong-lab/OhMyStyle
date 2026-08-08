@@ -12,3 +12,10 @@ not_equivalent_to:
   - sepia_filter
   - empty_street_cinematic_grade
   - tourist_postcard_composition
+
+family: source-photographer
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

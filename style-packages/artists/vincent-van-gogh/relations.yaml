@@ -12,3 +12,10 @@ not_equivalent_to:
   - generic_swirl_effect
   - random_impasto_texture
   - saturated_cinematic_grade
+
+family: source-artist
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

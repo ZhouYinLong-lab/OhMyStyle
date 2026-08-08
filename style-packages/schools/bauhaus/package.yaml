@@ -15,5 +15,24 @@
     "evaluation": "evaluation.yaml",
     "references": "references/manifest.csv",
     "provenance": "provenance.yaml"
+  },
+  "classification": {
+    "source_type": "design_school",
+    "medium": "design",
+    "historical_context": "historical_or_contemporary_practice",
+    "application": "general",
+    "visual_axes": [
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ]
+  },
+  "subject_policy": {
+    "mode": "open",
+    "fixed_subjects": [],
+    "optional_motifs": [],
+    "benchmark_subjects": []
   }
 }

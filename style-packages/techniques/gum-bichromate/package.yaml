@@ -18,3 +18,20 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+
+classification:
+  source_type: technique
+  medium: printmaking
+  historical_context: "developed_in_the_1850s_and_used_widely_later_in_the_19th_century"
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

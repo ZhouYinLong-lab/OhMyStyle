@@ -12,3 +12,10 @@ not_equivalent_to:
   - random_dot_texture
   - pixel_art
   - copied_grande_jatte
+
+family: source-artist
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

@@ -18,3 +18,10 @@ not_equivalent_to:
   - a_named_artist_style
   - a_named_historical_movement
   - flower_only_composition
+
+family: visual-preset
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

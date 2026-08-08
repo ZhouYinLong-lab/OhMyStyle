@@ -9,3 +9,10 @@ not_equivalent_to:
   - generic_retro_game_art
   - nes_pixel_art
   - modern_pixel_art_with_unlimited_colors
+
+family: game-art-direction
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

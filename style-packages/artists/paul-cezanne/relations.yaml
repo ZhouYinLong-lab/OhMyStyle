@@ -12,3 +12,10 @@ not_equivalent_to:
   - random_brush_texture
   - cubist_fragmentation
   - generic_impasto_filter
+
+family: source-artist
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

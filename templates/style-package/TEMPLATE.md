@@ -38,6 +38,14 @@ python tools/new-style-package.py `
 - `resource.yaml`：注册表使用的成熟度和资源契约；
 - `README.md`、`README.en.md`：面向使用者的双语说明。
 
+### 分类与关系元数据
+
+`package.yaml` 中的 `classification` 用于描述包的来源类型、媒介、历史语境、应用场景和视觉维度。它是检索与交叉编译元数据，不改变用户提供的主体。
+
+`subject_policy` 必须保持 `mode: open`，并且 `fixed_subjects` 必须为空。具体物体、地点、人物或故事只能放入 `optional_motifs` 或 `benchmark_subjects`，不能成为默认生成要求。
+
+`relations.yaml` 必须填写 `family`、`near_duplicates`、`supersedes`、`conflicts`、`distinctives` 和 `avoid_overlap`。如果声明了近似包，必须同时说明本包的差异化签名。
+
 ## 主体独立性要求
 
 `prompts/base.txt` 必须包含主体独立契约，并使用 `{SUBJECT}` 与 `{LOCATION}` 占位符。风格包只描述媒介、构图、光线、色彩、材质、纹理和边缘行为；桥梁、房屋、人物、城市、花卉、车辆等具体内容只能作为 `examples/` 或 benchmark 的测试场景。`identity.yaml` 中的 `scope.subject_policy` 必须为 `open`。

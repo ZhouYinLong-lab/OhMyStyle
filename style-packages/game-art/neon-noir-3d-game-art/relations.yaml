@@ -6,3 +6,16 @@ crossing:
   default_mode: adaptive
   note: Cross-style composition is handled by the repository-level workflow, not by
     this package identity.
+
+family: neon-urban-game-art
+near_duplicates:
+  - game-art/cyberpunk-night-city
+  - game-art/stray-neon-cybercity
+supersedes: []
+conflicts: []
+distinctives:
+  - tight alley framing
+  - noir-scale solitary figure
+  - localized blue-magenta-orange light
+avoid_overlap:
+  - do not require an alley, vending machine, dumpster, or rain

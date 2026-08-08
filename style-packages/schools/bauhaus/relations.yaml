@@ -8,3 +8,14 @@ not_equivalent_to:
   - generic_image_filter
   - copying_a_specific_source_work
   - named_author_imitation
+
+family: geometric-modern-design
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - primary geometry as a design grammar
+  - function-led reduction
+  - integration of art, craft, and design
+avoid_overlap:
+  - do not reduce the package to a De Stijl rectangle grid or a generic primary-color poster

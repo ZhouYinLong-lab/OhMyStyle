@@ -34,6 +34,16 @@ KIND_NAMES = {
     "game_art": "游戏美术",
 }
 
+SOURCE_TYPES = {
+    "artist": "artist",
+    "photographer": "photographer",
+    "movement": "movement",
+    "school": "design_school",
+    "technique": "technique",
+    "preset": "preset",
+    "game_art": "game_art",
+}
+
 FOCUS_DIMENSIONS = {
     "artist": ["medium", "composition", "lighting", "palette", "surface", "texture"],
     "movement": ["medium", "composition", "lighting", "palette", "surface", "texture"],
@@ -67,6 +77,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--name-en", help="English display name for README.en.md; defaults to --name")
     parser.add_argument("--domain", required=True, choices=["painting", "photography", "printmaking", "design", "game_art", "hybrid"])
     parser.add_argument("--summary", required=True, help="Observable package summary, at least 30 characters")
+    parser.add_argument("--historical-context", default="", help="Optional period, movement, or institutional context")
+    parser.add_argument("--application", help="Application facet; defaults to general or game_art")
+    parser.add_argument("--family", help="Relation family; defaults to the package kind")
     parser.add_argument("--root", type=Path, default=Path("style-packages"), help="Style package root")
     parser.add_argument("--entity", help="Optional catalog entity path")
     parser.add_argument("--source-url", help="Optional primary source URL; enables L2 reference-backed output")
@@ -116,6 +129,10 @@ def token_values(args: argparse.Namespace) -> dict[str, str]:
         "KIND_ZH": KIND_NAMES[args.kind],
         "DOMAIN": args.domain,
         "DOMAIN_ZH": DOMAIN_NAMES[args.domain],
+        "SOURCE_TYPE": SOURCE_TYPES[args.kind],
+        "HISTORICAL_CONTEXT": yaml_quote(args.historical_context) if args.historical_context else "null",
+        "APPLICATION": args.application or ("game_art" if args.kind == "game_art" else "general"),
+        "FAMILY": args.family or args.kind,
         "SUMMARY": args.summary.strip(),
         "VERSION": "0.1.0",
         "MATURITY": maturity,

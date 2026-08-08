@@ -8,3 +8,10 @@ not_equivalent_to:
   - generic_image_filter
   - copying_a_specific_source_work
   - named_author_imitation
+
+family: visual-preset
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

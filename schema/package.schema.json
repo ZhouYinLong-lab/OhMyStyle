@@ -13,6 +13,37 @@
     "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
     "summary": {"type": "string", "minLength": 30},
     "entity": {"type": "string", "minLength": 1},
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_type", "medium", "historical_context", "application", "visual_axes"],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": ["artist", "photographer", "movement", "design_school", "technique", "preset", "game_art"]
+        },
+        "medium": {"type": "string", "minLength": 1},
+        "historical_context": {"type": ["string", "null"]},
+        "application": {"type": "string", "minLength": 1},
+        "visual_axes": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "subject_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "fixed_subjects", "optional_motifs", "benchmark_subjects"],
+      "properties": {
+        "mode": {"type": "string", "enum": ["open"]},
+        "fixed_subjects": {"type": "array", "items": {"type": "string"}, "maxItems": 0},
+        "optional_motifs": {"type": "array", "items": {"type": "string"}},
+        "benchmark_subjects": {"type": "array", "items": {"type": "string"}}
+      }
+    },
     "files": {
       "type": "object",
       "additionalProperties": false,

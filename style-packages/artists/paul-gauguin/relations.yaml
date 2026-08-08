@@ -13,3 +13,10 @@ not_equivalent_to:
   - generic_saturated_filter
   - cartoon_flattening
   - copied_vision_after_the_sermon
+
+family: source-artist
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

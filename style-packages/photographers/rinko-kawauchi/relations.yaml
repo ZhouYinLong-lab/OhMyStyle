@@ -6,3 +6,16 @@ crossing:
   default_mode: adaptive
   note: Cross-style composition is handled by the repository-level workflow, not by
     this package identity.
+
+family: quiet-natural-light
+near_duplicates:
+  - photographers/emilie-hofferber
+  - presets/natural-window-light
+supersedes: []
+conflicts: []
+distinctives:
+  - small luminous details
+  - translucent everyday atmosphere
+  - poetic micro-observation
+avoid_overlap:
+  - do not default to flowers, drinking glasses, or a window

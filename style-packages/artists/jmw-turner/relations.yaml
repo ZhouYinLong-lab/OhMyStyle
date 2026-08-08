@@ -12,3 +12,10 @@ not_equivalent_to:
   - generic_fog_filter
   - bloom_effect
   - low_contrast_wash_without_structure
+
+family: source-artist
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []
