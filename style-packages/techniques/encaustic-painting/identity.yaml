@@ -1,0 +1,22 @@
+canonical_name: 蜡画
+entity_type: technique_visual_style_direction
+origin: reference_backed_encaustic-painting
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一块木板上覆盖着分层蜡色和几道新刮开的痕迹
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/e/encaustic-painting
+rendering:
+  model: 颜料与蜡混合、叠层、熔融和刮除
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
