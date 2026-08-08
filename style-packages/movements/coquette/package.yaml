@@ -1,0 +1,17 @@
+id: coquette
+name: 少女风
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以蝴蝶结、柔和粉彩、细腻织物、轻盈装饰和浪漫细节构成精致但不固定人物身份的少女感视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

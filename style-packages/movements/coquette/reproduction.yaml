@@ -1,0 +1,11 @@
+medium: "时尚与装饰设计"
+materials:
+  - 用户主题提供的真实材料
+  - "蝴蝶结、柔和粉彩、细腻织物、轻盈装饰和浪漫细节构成精致的少女感视觉"
+process:
+  - Translate the user's subject, objects, location, and narrative literally.
+  - Apply the package signature only after the subject is established.
+  - Keep style decisions observable and reversible at the prompt level.
+  - Check that no recurring motif was introduced by the package.
+technical_direction: Preserve subject identity and physical plausibility; use the palette as roles, not a fixed filter.
+safety_note: Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.
