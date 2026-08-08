@@ -1,0 +1,16 @@
+id: parsons-school-of-design
+name: 帕森斯设计学院
+kind: school
+domain: design
+version: 0.1.0
+summary: 以城市语境、设计方法、对象研究和可执行的过程图谱组织视觉方案。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
