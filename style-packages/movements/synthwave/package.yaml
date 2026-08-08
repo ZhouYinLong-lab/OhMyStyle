@@ -1,0 +1,17 @@
+id: synthwave
+name: 合成器浪潮
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以复古电子音乐文化、霓虹地平线、紫蓝渐变、网格透视和强烈夜色对比建立合成未来视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,22 @@
+package: "合成器浪潮"
+summary: "复古电子音乐文化、霓虹地平线、紫蓝渐变、网格透视和夜色对比建立合成未来视觉"
+subject_policy: open
+visual_signature:
+  medium: "复古电子视觉"
+  focus: "复古电子音乐文化、霓虹地平线、紫蓝渐变、网格透视和夜色对比建立合成未来视觉"
+  composition:
+  - "透视网格和渐变有明确消失点"
+  - "紫蓝环境与暖色光源相互平衡"
+  - "主体仍需符合用户主题"
+  palette:
+  - "深紫 #2D1F55，角色：夜色"
+  - "电蓝 #3D76C9，角色：空间光"
+  - "热粉 #E45B9C，角色：强调"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
