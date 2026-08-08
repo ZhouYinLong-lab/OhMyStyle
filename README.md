@@ -93,67 +93,89 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </tr>
 </table>
 
-### 游戏美术
+### 摄影师
 
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/low-poly-adventure-game-art/README.md"><img src="style-packages/game-art/low-poly-adventure-game-art/gallery-16x9.jpg" width="230" alt="低多边形冒险游戏美术代表图"></a><br><strong>低多边形冒险游戏美术</strong><br><a href="style-packages/game-art/low-poly-adventure-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/top-down-16-bit-adventure/README.md"><img src="style-packages/game-art/top-down-16-bit-adventure/gallery-16x9.jpg" width="230" alt="俯视角16位冒险美术代表图"></a><br><strong>俯视角16位冒险美术</strong><br><a href="style-packages/game-art/top-down-16-bit-adventure/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/zx-spectrum-attribute-pixel/README.md"><img src="style-packages/game-art/zx-spectrum-attribute-pixel/gallery-16x9.jpg" width="230" alt="属性受限像素美术代表图"></a><br><strong>属性受限像素美术</strong><br><a href="style-packages/game-art/zx-spectrum-attribute-pixel/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/henri-cartier-bresson/README.md"><img src="style-packages/photographers/henri-cartier-bresson/gallery-16x9.jpg" width="230" alt="亨利·卡蒂埃-布列松代表图"></a><br><strong>亨利·卡蒂埃-布列松</strong><br><a href="style-packages/photographers/henri-cartier-bresson/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lewis-hine/README.md"><img src="style-packages/photographers/lewis-hine/gallery-16x9.jpg" width="230" alt="刘易斯·海因代表图"></a><br><strong>刘易斯·海因</strong><br><a href="style-packages/photographers/lewis-hine/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/eadweard-muybridge/README.md"><img src="style-packages/photographers/eadweard-muybridge/gallery-16x9.jpg" width="230" alt="埃德沃德·迈布里奇代表图"></a><br><strong>埃德沃德·迈布里奇</strong><br><a href="style-packages/photographers/eadweard-muybridge/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/side-scrolling-platformer-pixel/README.md"><img src="style-packages/game-art/side-scrolling-platformer-pixel/gallery-16x9.jpg" width="230" alt="横版平台跳跃像素美术代表图"></a><br><strong>横版平台跳跃像素美术</strong><br><a href="style-packages/game-art/side-scrolling-platformer-pixel/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cinematic-pixel-adventure/README.md"><img src="style-packages/game-art/cinematic-pixel-adventure/gallery-16x9.jpg" width="230" alt="电影化像素冒险美术代表图"></a><br><strong>电影化像素冒险美术</strong><br><a href="style-packages/game-art/cinematic-pixel-adventure/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/isometric-pixel-tactics/README.md"><img src="style-packages/game-art/isometric-pixel-tactics/gallery-16x9.jpg" width="230" alt="等距像素策略美术代表图"></a><br><strong>等距像素策略美术</strong><br><a href="style-packages/game-art/isometric-pixel-tactics/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/dorothea-lange/README.md"><img src="style-packages/photographers/dorothea-lange/gallery-16x9.jpg" width="230" alt="多萝西娅·兰格代表图"></a><br><strong>多萝西娅·兰格</strong><br><a href="style-packages/photographers/dorothea-lange/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/william-eggleston/README.md"><img src="style-packages/photographers/william-eggleston/gallery-16x9.jpg" width="230" alt="威廉·埃格尔斯顿代表图"></a><br><strong>威廉·埃格尔斯顿</strong><br><a href="style-packages/photographers/william-eggleston/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/ansel-adams/README.md"><img src="style-packages/photographers/ansel-adams/gallery-16x9.jpg" width="230" alt="安塞尔·亚当斯代表图"></a><br><strong>安塞尔·亚当斯</strong><br><a href="style-packages/photographers/ansel-adams/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cel-shaded-nature-game-art/README.md"><img src="style-packages/game-art/cel-shaded-nature-game-art/gallery-16x9.jpg" width="230" alt="卡通渲染自然冒险游戏美术代表图"></a><br><strong>卡通渲染自然冒险游戏美术</strong><br><a href="style-packages/game-art/cel-shaded-nature-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-inked-animation-game-art/README.md"><img src="style-packages/game-art/hand-inked-animation-game-art/gallery-16x9.jpg" width="230" alt="手绘墨线动画游戏美术代表图"></a><br><strong>手绘墨线动画游戏美术</strong><br><a href="style-packages/game-art/hand-inked-animation-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/watercolor-storybook-game-art/README.md"><img src="style-packages/game-art/watercolor-storybook-game-art/gallery-16x9.jpg" width="230" alt="水彩绘本冒险游戏美术代表图"></a><br><strong>水彩绘本冒险游戏美术</strong><br><a href="style-packages/game-art/watercolor-storybook-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/julia-margaret-cameron/README.md"><img src="style-packages/photographers/julia-margaret-cameron/gallery-16x9.jpg" width="230" alt="朱莉娅·玛格丽特·卡梅隆代表图"></a><br><strong>朱莉娅·玛格丽特·卡梅隆</strong><br><a href="style-packages/photographers/julia-margaret-cameron/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/daido-moriyama/README.md"><img src="style-packages/photographers/daido-moriyama/gallery-16x9.jpg" width="230" alt="森山大道代表图"></a><br><strong>森山大道</strong><br><a href="style-packages/photographers/daido-moriyama/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/eugene-atget/README.md"><img src="style-packages/photographers/eugene-atget/gallery-16x9.jpg" width="230" alt="欧仁·阿杰代表图"></a><br><strong>欧仁·阿杰</strong><br><a href="style-packages/photographers/eugene-atget/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/papercraft-diorama-game-art/README.md"><img src="style-packages/game-art/papercraft-diorama-game-art/gallery-16x9.jpg" width="230" alt="纸艺立体书游戏美术代表图"></a><br><strong>纸艺立体书游戏美术</strong><br><a href="style-packages/game-art/papercraft-diorama-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/voxel-world-game-art/README.md"><img src="style-packages/game-art/voxel-world-game-art/gallery-16x9.jpg" width="230" alt="体素世界游戏美术代表图"></a><br><strong>体素世界游戏美术</strong><br><a href="style-packages/game-art/voxel-world-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stylized-low-poly-world/README.md"><img src="style-packages/game-art/stylized-low-poly-world/gallery-16x9.jpg" width="230" alt="风格化低多边形世界游戏美术代表图"></a><br><strong>风格化低多边形世界游戏美术</strong><br><a href="style-packages/game-art/stylized-low-poly-world/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/walker-evans/README.md"><img src="style-packages/photographers/walker-evans/gallery-16x9.jpg" width="230" alt="沃克·埃文斯代表图"></a><br><strong>沃克·埃文斯</strong><br><a href="style-packages/photographers/walker-evans/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/masahisa-fukase/README.md"><img src="style-packages/photographers/masahisa-fukase/gallery-16x9.jpg" width="230" alt="深濑昌久代表图"></a><br><strong>深濑昌久</strong><br><a href="style-packages/photographers/masahisa-fukase/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/nadar/README.md"><img src="style-packages/photographers/nadar/gallery-16x9.jpg" width="230" alt="纳达尔代表图"></a><br><strong>纳达尔</strong><br><a href="style-packages/photographers/nadar/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/impossible-architecture-game-art/README.md"><img src="style-packages/game-art/impossible-architecture-game-art/gallery-16x9.jpg" width="230" alt="等距幻觉建筑游戏美术代表图"></a><br><strong>等距幻觉建筑游戏美术</strong><br><a href="style-packages/game-art/impossible-architecture-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/comic-halftone-game-art/README.md"><img src="style-packages/game-art/comic-halftone-game-art/gallery-16x9.jpg" width="230" alt="漫画网点叙事游戏美术代表图"></a><br><strong>漫画网点叙事游戏美术</strong><br><a href="style-packages/game-art/comic-halftone-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/painterly-3d-fantasy-game-art/README.md"><img src="style-packages/game-art/painterly-3d-fantasy-game-art/gallery-16x9.jpg" width="230" alt="手绘质感三维幻想游戏美术代表图"></a><br><strong>手绘质感三维幻想游戏美术</strong><br><a href="style-packages/game-art/painterly-3d-fantasy-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/robert-capa/README.md"><img src="style-packages/photographers/robert-capa/gallery-16x9.jpg" width="230" alt="罗伯特·卡帕代表图"></a><br><strong>罗伯特·卡帕</strong><br><a href="style-packages/photographers/robert-capa/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/roger-fenton/README.md"><img src="style-packages/photographers/roger-fenton/gallery-16x9.jpg" width="230" alt="罗杰·芬顿代表图"></a><br><strong>罗杰·芬顿</strong><br><a href="style-packages/photographers/roger-fenton/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/etienne-jules-marey/README.md"><img src="style-packages/photographers/etienne-jules-marey/gallery-16x9.jpg" width="230" alt="艾蒂安-朱尔·马雷代表图"></a><br><strong>艾蒂安-朱尔·马雷</strong><br><a href="style-packages/photographers/etienne-jules-marey/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.md"><img src="style-packages/game-art/stylized-pbr-sci-fi-game-art/gallery-16x9.jpg" width="230" alt="风格化物理渲染科幻游戏美术代表图"></a><br><strong>风格化物理渲染科幻游戏美术</strong><br><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/flat-design-puzzle-game-art/README.md"><img src="style-packages/game-art/flat-design-puzzle-game-art/gallery-16x9.jpg" width="230" alt="平面设计解谜游戏美术代表图"></a><br><strong>平面设计解谜游戏美术</strong><br><a href="style-packages/game-art/flat-design-puzzle-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/miniature-diorama-game-art/README.md"><img src="style-packages/game-art/miniature-diorama-game-art/gallery-16x9.jpg" width="230" alt="微缩模型场景游戏美术代表图"></a><br><strong>微缩模型场景游戏美术</strong><br><a href="style-packages/game-art/miniature-diorama-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/alfred-stieglitz/README.md"><img src="style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg" width="230" alt="阿尔弗雷德·斯蒂格利茨代表图"></a><br><strong>阿尔弗雷德·斯蒂格利茨</strong><br><a href="style-packages/photographers/alfred-stieglitz/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/diane-arbus/README.md"><img src="style-packages/photographers/diane-arbus/gallery-16x9.jpg" width="230" alt="黛安·阿勃丝代表图"></a><br><strong>黛安·阿勃丝</strong><br><a href="style-packages/photographers/diane-arbus/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/saul-leiter/README.md"><img src="style-packages/photographers/saul-leiter/gallery-16x9.jpg" width="230" alt="索尔·雷特代表图"></a><br><strong>索尔·雷特</strong><br><a href="style-packages/photographers/saul-leiter/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/silhouette-platformer-game-art/README.md"><img src="style-packages/game-art/silhouette-platformer-game-art/gallery-16x9.jpg" width="230" alt="剪影光影平台游戏美术代表图"></a><br><strong>剪影光影平台游戏美术</strong><br><a href="style-packages/game-art/silhouette-platformer-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/neon-noir-3d-game-art/README.md"><img src="style-packages/game-art/neon-noir-3d-game-art/gallery-16x9.jpg" width="230" alt="霓虹黑色三维游戏美术代表图"></a><br><strong>霓虹黑色三维游戏美术</strong><br><a href="style-packages/game-art/neon-noir-3d-game-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stop-motion-clay-game-art/README.md"><img src="style-packages/game-art/stop-motion-clay-game-art/gallery-16x9.jpg" width="230" alt="黏土定格游戏美术代表图"></a><br><strong>黏土定格游戏美术</strong><br><a href="style-packages/game-art/stop-motion-clay-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/vivian-maier/README.md"><img src="style-packages/photographers/vivian-maier/gallery-16x9.jpg" width="230" alt="维维安·迈尔代表图"></a><br><strong>维维安·迈尔</strong><br><a href="style-packages/photographers/vivian-maier/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/rinko-kawauchi/README.md"><img src="style-packages/photographers/rinko-kawauchi/gallery-16x9.jpg" width="230" alt="川内伦子代表图"></a><br><strong>川内伦子</strong><br><a href="style-packages/photographers/rinko-kawauchi/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/man-ray/README.md"><img src="style-packages/photographers/man-ray/gallery-16x9.jpg" width="230" alt="曼·雷代表图"></a><br><strong>曼·雷</strong><br><a href="style-packages/photographers/man-ray/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/breath-of-the-wild-open-world/README.md"><img src="style-packages/game-art/breath-of-the-wild-open-world/gallery-16x9.jpg" width="230" alt="旷野自然开放世界游戏美术代表图"></a><br><strong>旷野自然开放世界游戏美术</strong><br><a href="style-packages/game-art/breath-of-the-wild-open-world/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cyberpunk-night-city/README.md"><img src="style-packages/game-art/cyberpunk-night-city/gallery-16x9.jpg" width="230" alt="霓虹未来都市游戏美术代表图"></a><br><strong>霓虹未来都市游戏美术</strong><br><a href="style-packages/game-art/cyberpunk-night-city/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/death-stranding-cinematic-wilderness/README.md"><img src="style-packages/game-art/death-stranding-cinematic-wilderness/gallery-16x9.jpg" width="230" alt="电影化荒原连接游戏美术代表图"></a><br><strong>电影化荒原连接游戏美术</strong><br><a href="style-packages/game-art/death-stranding-cinematic-wilderness/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/berenice-abbott/README.md"><img src="style-packages/photographers/berenice-abbott/gallery-16x9.jpg" width="230" alt="贝伦妮丝·阿博特代表图"></a><br><strong>贝伦妮丝·阿博特</strong><br><a href="style-packages/photographers/berenice-abbott/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/gordon-parks/README.md"><img src="style-packages/photographers/gordon-parks/gallery-16x9.jpg" width="230" alt="戈登·帕克斯代表图"></a><br><strong>戈登·帕克斯</strong><br><a href="style-packages/photographers/gordon-parks/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/william-klein/README.md"><img src="style-packages/photographers/william-klein/gallery-16x9.jpg" width="230" alt="威廉·克莱因代表图"></a><br><strong>威廉·克莱因</strong><br><a href="style-packages/photographers/william-klein/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/control-paranormal-architecture/README.md"><img src="style-packages/game-art/control-paranormal-architecture/gallery-16x9.jpg" width="230" alt="超现实机关建筑游戏美术代表图"></a><br><strong>超现实机关建筑游戏美术</strong><br><a href="style-packages/game-art/control-paranormal-architecture/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hades-mythic-illustration/README.md"><img src="style-packages/game-art/hades-mythic-illustration/gallery-16x9.jpg" width="230" alt="神话高对比插画游戏美术代表图"></a><br><strong>神话高对比插画游戏美术</strong><br><a href="style-packages/game-art/hades-mythic-illustration/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hi-fi-rush-rhythm-comic/README.md"><img src="style-packages/game-art/hi-fi-rush-rhythm-comic/gallery-16x9.jpg" width="230" alt="节奏漫画卡通渲染游戏美术代表图"></a><br><strong>节奏漫画卡通渲染游戏美术</strong><br><a href="style-packages/game-art/hi-fi-rush-rhythm-comic/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/mary-ellen-mark/README.md"><img src="style-packages/photographers/mary-ellen-mark/gallery-16x9.jpg" width="230" alt="玛丽·艾伦·马克代表图"></a><br><strong>玛丽·艾伦·马克</strong><br><a href="style-packages/photographers/mary-ellen-mark/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/nick-brandt/README.md"><img src="style-packages/photographers/nick-brandt/gallery-16x9.jpg" width="230" alt="尼克·布兰特代表图"></a><br><strong>尼克·布兰特</strong><br><a href="style-packages/photographers/nick-brandt/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/gregory-crewdson/README.md"><img src="style-packages/photographers/gregory-crewdson/gallery-16x9.jpg" width="230" alt="格里高利·克鲁德森代表图"></a><br><strong>格里高利·克鲁德森</strong><br><a href="style-packages/photographers/gregory-crewdson/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/disco-elysium-painterly-noir/README.md"><img src="style-packages/game-art/disco-elysium-painterly-noir/gallery-16x9.jpg" width="230" alt="厚涂侦探绘本游戏美术代表图"></a><br><strong>厚涂侦探绘本游戏美术</strong><br><a href="style-packages/game-art/disco-elysium-painterly-noir/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/elden-ring-dark-fantasy/README.md"><img src="style-packages/game-art/elden-ring-dark-fantasy/gallery-16x9.jpg" width="230" alt="暗黑神话幻想游戏美术代表图"></a><br><strong>暗黑神话幻想游戏美术</strong><br><a href="style-packages/game-art/elden-ring-dark-fantasy/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stray-neon-cybercity/README.md"><img src="style-packages/game-art/stray-neon-cybercity/gallery-16x9.jpg" width="230" alt="霓虹废墟城市游戏美术代表图"></a><br><strong>霓虹废墟城市游戏美术</strong><br><a href="style-packages/game-art/stray-neon-cybercity/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/cindy-sherman/README.md"><img src="style-packages/photographers/cindy-sherman/gallery-16x9.jpg" width="230" alt="辛迪·舍曼代表图"></a><br><strong>辛迪·舍曼</strong><br><a href="style-packages/photographers/cindy-sherman/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/sebastiao-salgado/README.md"><img src="style-packages/photographers/sebastiao-salgado/gallery-16x9.jpg" width="230" alt="塞巴斯蒂昂·萨尔加多代表图"></a><br><strong>塞巴斯蒂昂·萨尔加多</strong><br><a href="style-packages/photographers/sebastiao-salgado/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/peter-lindbergh/README.md"><img src="style-packages/photographers/peter-lindbergh/gallery-16x9.jpg" width="230" alt="彼得·林德伯格代表图"></a><br><strong>彼得·林德伯格</strong><br><a href="style-packages/photographers/peter-lindbergh/README.md">打开 README</a></td>
+</tr>
+</table>
+
+### 设计学校
+
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/bauhaus/README.md"><img src="style-packages/schools/bauhaus/gallery-16x9.jpg" width="230" alt="包豪斯代表图"></a><br><strong>包豪斯</strong><br><a href="style-packages/schools/bauhaus/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/black-mountain-college/README.md"><img src="style-packages/schools/black-mountain-college/gallery-16x9.jpg" width="230" alt="黑山学院代表图"></a><br><strong>黑山学院</strong><br><a href="style-packages/schools/black-mountain-college/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/california-college-of-the-arts/README.md"><img src="style-packages/schools/california-college-of-the-arts/gallery-16x9.jpg" width="230" alt="加州艺术学院代表图"></a><br><strong>加州艺术学院</strong><br><a href="style-packages/schools/california-college-of-the-arts/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/ori-luminous-forest/README.md"><img src="style-packages/game-art/ori-luminous-forest/gallery-16x9.jpg" width="230" alt="荧光森林手绘游戏美术代表图"></a><br><strong>荧光森林手绘游戏美术</strong><br><a href="style-packages/game-art/ori-luminous-forest/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/rpg-maker-pixel-art/README.md"><img src="style-packages/game-art/rpg-maker-pixel-art/gallery-16x9.jpg" width="230" alt="角色扮演游戏像素美术代表图"></a><br><strong>角色扮演游戏像素美术</strong><br><a href="style-packages/game-art/rpg-maker-pixel-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hollow-knight-inked-gothic/README.md"><img src="style-packages/game-art/hollow-knight-inked-gothic/gallery-16x9.jpg" width="230" alt="空洞骑士墨线哥特游戏美术代表图"></a><br><strong>空洞骑士墨线哥特游戏美术</strong><br><a href="style-packages/game-art/hollow-knight-inked-gothic/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/cranbrook-academy/README.md"><img src="style-packages/schools/cranbrook-academy/gallery-16x9.jpg" width="230" alt="克兰布鲁克艺术学院代表图"></a><br><strong>克兰布鲁克艺术学院</strong><br><a href="style-packages/schools/cranbrook-academy/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/glasgow-school-of-art/README.md"><img src="style-packages/schools/glasgow-school-of-art/gallery-16x9.jpg" width="230" alt="格拉斯哥艺术学院代表图"></a><br><strong>格拉斯哥艺术学院</strong><br><a href="style-packages/schools/glasgow-school-of-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/new-bauhaus/README.md"><img src="style-packages/schools/new-bauhaus/gallery-16x9.jpg" width="230" alt="新包豪斯代表图"></a><br><strong>新包豪斯</strong><br><a href="style-packages/schools/new-bauhaus/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/journey-minimalist-desert/README.md"><img src="style-packages/game-art/journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="风之旅人极简沙漠游戏美术代表图"></a><br><strong>风之旅人极简沙漠游戏美术</strong><br><a href="style-packages/game-art/journey-minimalist-desert/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.md"><img src="style-packages/game-art/final-fantasy-ix-painted-fantasy/gallery-16x9.jpg" width="230" alt="最终幻想九绘本幻想游戏美术代表图"></a><br><strong>最终幻想九绘本幻想游戏美术</strong><br><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/paris-beaux-arts/README.md"><img src="style-packages/schools/paris-beaux-arts/gallery-16x9.jpg" width="230" alt="巴黎美术学院代表图"></a><br><strong>巴黎美术学院</strong><br><a href="style-packages/schools/paris-beaux-arts/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/parsons-school-of-design/README.md"><img src="style-packages/schools/parsons-school-of-design/gallery-16x9.jpg" width="230" alt="帕森斯设计学院代表图"></a><br><strong>帕森斯设计学院</strong><br><a href="style-packages/schools/parsons-school-of-design/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/risd/README.md"><img src="style-packages/schools/risd/gallery-16x9.jpg" width="230" alt="罗德岛设计学院代表图"></a><br><strong>罗德岛设计学院</strong><br><a href="style-packages/schools/risd/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-college-of-art/README.md"><img src="style-packages/schools/royal-college-of-art/gallery-16x9.jpg" width="230" alt="皇家艺术学院代表图"></a><br><strong>皇家艺术学院</strong><br><a href="style-packages/schools/royal-college-of-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/slade-school-of-fine-art/README.md"><img src="style-packages/schools/slade-school-of-fine-art/gallery-16x9.jpg" width="230" alt="斯莱德美术学院代表图"></a><br><strong>斯莱德美术学院</strong><br><a href="style-packages/schools/slade-school-of-fine-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="乌尔姆设计学院代表图"></a><br><strong>乌尔姆设计学院</strong><br><a href="style-packages/schools/ulm-school/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="耶鲁艺术学院代表图"></a><br><strong>耶鲁艺术学院</strong><br><a href="style-packages/schools/yale-school-of-art/README.md">打开 README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 
@@ -232,61 +254,6 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </tr>
 </table>
 
-### 摄影师
-
-<table>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/henri-cartier-bresson/README.md"><img src="style-packages/photographers/henri-cartier-bresson/gallery-16x9.jpg" width="230" alt="亨利·卡蒂埃-布列松代表图"></a><br><strong>亨利·卡蒂埃-布列松</strong><br><a href="style-packages/photographers/henri-cartier-bresson/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lewis-hine/README.md"><img src="style-packages/photographers/lewis-hine/gallery-16x9.jpg" width="230" alt="刘易斯·海因代表图"></a><br><strong>刘易斯·海因</strong><br><a href="style-packages/photographers/lewis-hine/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/eadweard-muybridge/README.md"><img src="style-packages/photographers/eadweard-muybridge/gallery-16x9.jpg" width="230" alt="埃德沃德·迈布里奇代表图"></a><br><strong>埃德沃德·迈布里奇</strong><br><a href="style-packages/photographers/eadweard-muybridge/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/dorothea-lange/README.md"><img src="style-packages/photographers/dorothea-lange/gallery-16x9.jpg" width="230" alt="多萝西娅·兰格代表图"></a><br><strong>多萝西娅·兰格</strong><br><a href="style-packages/photographers/dorothea-lange/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/william-eggleston/README.md"><img src="style-packages/photographers/william-eggleston/gallery-16x9.jpg" width="230" alt="威廉·埃格尔斯顿代表图"></a><br><strong>威廉·埃格尔斯顿</strong><br><a href="style-packages/photographers/william-eggleston/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/ansel-adams/README.md"><img src="style-packages/photographers/ansel-adams/gallery-16x9.jpg" width="230" alt="安塞尔·亚当斯代表图"></a><br><strong>安塞尔·亚当斯</strong><br><a href="style-packages/photographers/ansel-adams/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/julia-margaret-cameron/README.md"><img src="style-packages/photographers/julia-margaret-cameron/gallery-16x9.jpg" width="230" alt="朱莉娅·玛格丽特·卡梅隆代表图"></a><br><strong>朱莉娅·玛格丽特·卡梅隆</strong><br><a href="style-packages/photographers/julia-margaret-cameron/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/daido-moriyama/README.md"><img src="style-packages/photographers/daido-moriyama/gallery-16x9.jpg" width="230" alt="森山大道代表图"></a><br><strong>森山大道</strong><br><a href="style-packages/photographers/daido-moriyama/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/eugene-atget/README.md"><img src="style-packages/photographers/eugene-atget/gallery-16x9.jpg" width="230" alt="欧仁·阿杰代表图"></a><br><strong>欧仁·阿杰</strong><br><a href="style-packages/photographers/eugene-atget/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/walker-evans/README.md"><img src="style-packages/photographers/walker-evans/gallery-16x9.jpg" width="230" alt="沃克·埃文斯代表图"></a><br><strong>沃克·埃文斯</strong><br><a href="style-packages/photographers/walker-evans/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/masahisa-fukase/README.md"><img src="style-packages/photographers/masahisa-fukase/gallery-16x9.jpg" width="230" alt="深濑昌久代表图"></a><br><strong>深濑昌久</strong><br><a href="style-packages/photographers/masahisa-fukase/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/nadar/README.md"><img src="style-packages/photographers/nadar/gallery-16x9.jpg" width="230" alt="纳达尔代表图"></a><br><strong>纳达尔</strong><br><a href="style-packages/photographers/nadar/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/robert-capa/README.md"><img src="style-packages/photographers/robert-capa/gallery-16x9.jpg" width="230" alt="罗伯特·卡帕代表图"></a><br><strong>罗伯特·卡帕</strong><br><a href="style-packages/photographers/robert-capa/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/roger-fenton/README.md"><img src="style-packages/photographers/roger-fenton/gallery-16x9.jpg" width="230" alt="罗杰·芬顿代表图"></a><br><strong>罗杰·芬顿</strong><br><a href="style-packages/photographers/roger-fenton/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/etienne-jules-marey/README.md"><img src="style-packages/photographers/etienne-jules-marey/gallery-16x9.jpg" width="230" alt="艾蒂安-朱尔·马雷代表图"></a><br><strong>艾蒂安-朱尔·马雷</strong><br><a href="style-packages/photographers/etienne-jules-marey/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/alfred-stieglitz/README.md"><img src="style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg" width="230" alt="阿尔弗雷德·斯蒂格利茨代表图"></a><br><strong>阿尔弗雷德·斯蒂格利茨</strong><br><a href="style-packages/photographers/alfred-stieglitz/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/diane-arbus/README.md"><img src="style-packages/photographers/diane-arbus/gallery-16x9.jpg" width="230" alt="黛安·阿勃丝代表图"></a><br><strong>黛安·阿勃丝</strong><br><a href="style-packages/photographers/diane-arbus/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/saul-leiter/README.md"><img src="style-packages/photographers/saul-leiter/gallery-16x9.jpg" width="230" alt="索尔·雷特代表图"></a><br><strong>索尔·雷特</strong><br><a href="style-packages/photographers/saul-leiter/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/vivian-maier/README.md"><img src="style-packages/photographers/vivian-maier/gallery-16x9.jpg" width="230" alt="维维安·迈尔代表图"></a><br><strong>维维安·迈尔</strong><br><a href="style-packages/photographers/vivian-maier/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/rinko-kawauchi/README.md"><img src="style-packages/photographers/rinko-kawauchi/gallery-16x9.jpg" width="230" alt="川内伦子代表图"></a><br><strong>川内伦子</strong><br><a href="style-packages/photographers/rinko-kawauchi/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/man-ray/README.md"><img src="style-packages/photographers/man-ray/gallery-16x9.jpg" width="230" alt="曼·雷代表图"></a><br><strong>曼·雷</strong><br><a href="style-packages/photographers/man-ray/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/berenice-abbott/README.md"><img src="style-packages/photographers/berenice-abbott/gallery-16x9.jpg" width="230" alt="贝伦妮丝·阿博特代表图"></a><br><strong>贝伦妮丝·阿博特</strong><br><a href="style-packages/photographers/berenice-abbott/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/gordon-parks/README.md"><img src="style-packages/photographers/gordon-parks/gallery-16x9.jpg" width="230" alt="戈登·帕克斯代表图"></a><br><strong>戈登·帕克斯</strong><br><a href="style-packages/photographers/gordon-parks/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/william-klein/README.md"><img src="style-packages/photographers/william-klein/gallery-16x9.jpg" width="230" alt="威廉·克莱因代表图"></a><br><strong>威廉·克莱因</strong><br><a href="style-packages/photographers/william-klein/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/mary-ellen-mark/README.md"><img src="style-packages/photographers/mary-ellen-mark/gallery-16x9.jpg" width="230" alt="玛丽·艾伦·马克代表图"></a><br><strong>玛丽·艾伦·马克</strong><br><a href="style-packages/photographers/mary-ellen-mark/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/nick-brandt/README.md"><img src="style-packages/photographers/nick-brandt/gallery-16x9.jpg" width="230" alt="尼克·布兰特代表图"></a><br><strong>尼克·布兰特</strong><br><a href="style-packages/photographers/nick-brandt/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/gregory-crewdson/README.md"><img src="style-packages/photographers/gregory-crewdson/gallery-16x9.jpg" width="230" alt="格里高利·克鲁德森代表图"></a><br><strong>格里高利·克鲁德森</strong><br><a href="style-packages/photographers/gregory-crewdson/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/cindy-sherman/README.md"><img src="style-packages/photographers/cindy-sherman/gallery-16x9.jpg" width="230" alt="辛迪·舍曼代表图"></a><br><strong>辛迪·舍曼</strong><br><a href="style-packages/photographers/cindy-sherman/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/sebastiao-salgado/README.md"><img src="style-packages/photographers/sebastiao-salgado/gallery-16x9.jpg" width="230" alt="塞巴斯蒂昂·萨尔加多代表图"></a><br><strong>塞巴斯蒂昂·萨尔加多</strong><br><a href="style-packages/photographers/sebastiao-salgado/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/peter-lindbergh/README.md"><img src="style-packages/photographers/peter-lindbergh/gallery-16x9.jpg" width="230" alt="彼得·林德伯格代表图"></a><br><strong>彼得·林德伯格</strong><br><a href="style-packages/photographers/peter-lindbergh/README.md">打开 README</a></td>
-</tr>
-</table>
-
 ### 原创预设
 
 
@@ -323,34 +290,67 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 </tr>
 </table>
 
-### 设计学校
-
+### 游戏美术
 
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/bauhaus/README.md"><img src="style-packages/schools/bauhaus/gallery-16x9.jpg" width="230" alt="包豪斯代表图"></a><br><strong>包豪斯</strong><br><a href="style-packages/schools/bauhaus/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/black-mountain-college/README.md"><img src="style-packages/schools/black-mountain-college/gallery-16x9.jpg" width="230" alt="黑山学院代表图"></a><br><strong>黑山学院</strong><br><a href="style-packages/schools/black-mountain-college/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/california-college-of-the-arts/README.md"><img src="style-packages/schools/california-college-of-the-arts/gallery-16x9.jpg" width="230" alt="加州艺术学院代表图"></a><br><strong>加州艺术学院</strong><br><a href="style-packages/schools/california-college-of-the-arts/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/low-poly-adventure-game-art/README.md"><img src="style-packages/game-art/low-poly-adventure-game-art/gallery-16x9.jpg" width="230" alt="低多边形冒险游戏美术代表图"></a><br><strong>低多边形冒险游戏美术</strong><br><a href="style-packages/game-art/low-poly-adventure-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/top-down-16-bit-adventure/README.md"><img src="style-packages/game-art/top-down-16-bit-adventure/gallery-16x9.jpg" width="230" alt="俯视角16位冒险美术代表图"></a><br><strong>俯视角16位冒险美术</strong><br><a href="style-packages/game-art/top-down-16-bit-adventure/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/zx-spectrum-attribute-pixel/README.md"><img src="style-packages/game-art/zx-spectrum-attribute-pixel/gallery-16x9.jpg" width="230" alt="属性受限像素美术代表图"></a><br><strong>属性受限像素美术</strong><br><a href="style-packages/game-art/zx-spectrum-attribute-pixel/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/cranbrook-academy/README.md"><img src="style-packages/schools/cranbrook-academy/gallery-16x9.jpg" width="230" alt="克兰布鲁克艺术学院代表图"></a><br><strong>克兰布鲁克艺术学院</strong><br><a href="style-packages/schools/cranbrook-academy/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/glasgow-school-of-art/README.md"><img src="style-packages/schools/glasgow-school-of-art/gallery-16x9.jpg" width="230" alt="格拉斯哥艺术学院代表图"></a><br><strong>格拉斯哥艺术学院</strong><br><a href="style-packages/schools/glasgow-school-of-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/new-bauhaus/README.md"><img src="style-packages/schools/new-bauhaus/gallery-16x9.jpg" width="230" alt="新包豪斯代表图"></a><br><strong>新包豪斯</strong><br><a href="style-packages/schools/new-bauhaus/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/side-scrolling-platformer-pixel/README.md"><img src="style-packages/game-art/side-scrolling-platformer-pixel/gallery-16x9.jpg" width="230" alt="横版平台跳跃像素美术代表图"></a><br><strong>横版平台跳跃像素美术</strong><br><a href="style-packages/game-art/side-scrolling-platformer-pixel/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cinematic-pixel-adventure/README.md"><img src="style-packages/game-art/cinematic-pixel-adventure/gallery-16x9.jpg" width="230" alt="电影化像素冒险美术代表图"></a><br><strong>电影化像素冒险美术</strong><br><a href="style-packages/game-art/cinematic-pixel-adventure/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/isometric-pixel-tactics/README.md"><img src="style-packages/game-art/isometric-pixel-tactics/gallery-16x9.jpg" width="230" alt="等距像素策略美术代表图"></a><br><strong>等距像素策略美术</strong><br><a href="style-packages/game-art/isometric-pixel-tactics/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/paris-beaux-arts/README.md"><img src="style-packages/schools/paris-beaux-arts/gallery-16x9.jpg" width="230" alt="巴黎美术学院代表图"></a><br><strong>巴黎美术学院</strong><br><a href="style-packages/schools/paris-beaux-arts/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/parsons-school-of-design/README.md"><img src="style-packages/schools/parsons-school-of-design/gallery-16x9.jpg" width="230" alt="帕森斯设计学院代表图"></a><br><strong>帕森斯设计学院</strong><br><a href="style-packages/schools/parsons-school-of-design/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/risd/README.md"><img src="style-packages/schools/risd/gallery-16x9.jpg" width="230" alt="罗德岛设计学院代表图"></a><br><strong>罗德岛设计学院</strong><br><a href="style-packages/schools/risd/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cel-shaded-nature-game-art/README.md"><img src="style-packages/game-art/cel-shaded-nature-game-art/gallery-16x9.jpg" width="230" alt="卡通渲染自然冒险游戏美术代表图"></a><br><strong>卡通渲染自然冒险游戏美术</strong><br><a href="style-packages/game-art/cel-shaded-nature-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-inked-animation-game-art/README.md"><img src="style-packages/game-art/hand-inked-animation-game-art/gallery-16x9.jpg" width="230" alt="手绘墨线动画游戏美术代表图"></a><br><strong>手绘墨线动画游戏美术</strong><br><a href="style-packages/game-art/hand-inked-animation-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/watercolor-storybook-game-art/README.md"><img src="style-packages/game-art/watercolor-storybook-game-art/gallery-16x9.jpg" width="230" alt="水彩绘本冒险游戏美术代表图"></a><br><strong>水彩绘本冒险游戏美术</strong><br><a href="style-packages/game-art/watercolor-storybook-game-art/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-college-of-art/README.md"><img src="style-packages/schools/royal-college-of-art/gallery-16x9.jpg" width="230" alt="皇家艺术学院代表图"></a><br><strong>皇家艺术学院</strong><br><a href="style-packages/schools/royal-college-of-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/slade-school-of-fine-art/README.md"><img src="style-packages/schools/slade-school-of-fine-art/gallery-16x9.jpg" width="230" alt="斯莱德美术学院代表图"></a><br><strong>斯莱德美术学院</strong><br><a href="style-packages/schools/slade-school-of-fine-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="乌尔姆设计学院代表图"></a><br><strong>乌尔姆设计学院</strong><br><a href="style-packages/schools/ulm-school/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/papercraft-diorama-game-art/README.md"><img src="style-packages/game-art/papercraft-diorama-game-art/gallery-16x9.jpg" width="230" alt="纸艺立体书游戏美术代表图"></a><br><strong>纸艺立体书游戏美术</strong><br><a href="style-packages/game-art/papercraft-diorama-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/voxel-world-game-art/README.md"><img src="style-packages/game-art/voxel-world-game-art/gallery-16x9.jpg" width="230" alt="体素世界游戏美术代表图"></a><br><strong>体素世界游戏美术</strong><br><a href="style-packages/game-art/voxel-world-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stylized-low-poly-world/README.md"><img src="style-packages/game-art/stylized-low-poly-world/gallery-16x9.jpg" width="230" alt="风格化低多边形世界游戏美术代表图"></a><br><strong>风格化低多边形世界游戏美术</strong><br><a href="style-packages/game-art/stylized-low-poly-world/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="耶鲁艺术学院代表图"></a><br><strong>耶鲁艺术学院</strong><br><a href="style-packages/schools/yale-school-of-art/README.md">打开 README</a></td>
-<td width="33%"></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/impossible-architecture-game-art/README.md"><img src="style-packages/game-art/impossible-architecture-game-art/gallery-16x9.jpg" width="230" alt="等距幻觉建筑游戏美术代表图"></a><br><strong>等距幻觉建筑游戏美术</strong><br><a href="style-packages/game-art/impossible-architecture-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/comic-halftone-game-art/README.md"><img src="style-packages/game-art/comic-halftone-game-art/gallery-16x9.jpg" width="230" alt="漫画网点叙事游戏美术代表图"></a><br><strong>漫画网点叙事游戏美术</strong><br><a href="style-packages/game-art/comic-halftone-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/painterly-3d-fantasy-game-art/README.md"><img src="style-packages/game-art/painterly-3d-fantasy-game-art/gallery-16x9.jpg" width="230" alt="手绘质感三维幻想游戏美术代表图"></a><br><strong>手绘质感三维幻想游戏美术</strong><br><a href="style-packages/game-art/painterly-3d-fantasy-game-art/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.md"><img src="style-packages/game-art/stylized-pbr-sci-fi-game-art/gallery-16x9.jpg" width="230" alt="风格化物理渲染科幻游戏美术代表图"></a><br><strong>风格化物理渲染科幻游戏美术</strong><br><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/flat-design-puzzle-game-art/README.md"><img src="style-packages/game-art/flat-design-puzzle-game-art/gallery-16x9.jpg" width="230" alt="平面设计解谜游戏美术代表图"></a><br><strong>平面设计解谜游戏美术</strong><br><a href="style-packages/game-art/flat-design-puzzle-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/miniature-diorama-game-art/README.md"><img src="style-packages/game-art/miniature-diorama-game-art/gallery-16x9.jpg" width="230" alt="微缩模型场景游戏美术代表图"></a><br><strong>微缩模型场景游戏美术</strong><br><a href="style-packages/game-art/miniature-diorama-game-art/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/silhouette-platformer-game-art/README.md"><img src="style-packages/game-art/silhouette-platformer-game-art/gallery-16x9.jpg" width="230" alt="剪影光影平台游戏美术代表图"></a><br><strong>剪影光影平台游戏美术</strong><br><a href="style-packages/game-art/silhouette-platformer-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/neon-noir-3d-game-art/README.md"><img src="style-packages/game-art/neon-noir-3d-game-art/gallery-16x9.jpg" width="230" alt="霓虹黑色三维游戏美术代表图"></a><br><strong>霓虹黑色三维游戏美术</strong><br><a href="style-packages/game-art/neon-noir-3d-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stop-motion-clay-game-art/README.md"><img src="style-packages/game-art/stop-motion-clay-game-art/gallery-16x9.jpg" width="230" alt="黏土定格游戏美术代表图"></a><br><strong>黏土定格游戏美术</strong><br><a href="style-packages/game-art/stop-motion-clay-game-art/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/breath-of-the-wild-open-world/README.md"><img src="style-packages/game-art/breath-of-the-wild-open-world/gallery-16x9.jpg" width="230" alt="旷野自然开放世界游戏美术代表图"></a><br><strong>旷野自然开放世界游戏美术</strong><br><a href="style-packages/game-art/breath-of-the-wild-open-world/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cyberpunk-night-city/README.md"><img src="style-packages/game-art/cyberpunk-night-city/gallery-16x9.jpg" width="230" alt="霓虹未来都市游戏美术代表图"></a><br><strong>霓虹未来都市游戏美术</strong><br><a href="style-packages/game-art/cyberpunk-night-city/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/death-stranding-cinematic-wilderness/README.md"><img src="style-packages/game-art/death-stranding-cinematic-wilderness/gallery-16x9.jpg" width="230" alt="电影化荒原连接游戏美术代表图"></a><br><strong>电影化荒原连接游戏美术</strong><br><a href="style-packages/game-art/death-stranding-cinematic-wilderness/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/control-paranormal-architecture/README.md"><img src="style-packages/game-art/control-paranormal-architecture/gallery-16x9.jpg" width="230" alt="超现实机关建筑游戏美术代表图"></a><br><strong>超现实机关建筑游戏美术</strong><br><a href="style-packages/game-art/control-paranormal-architecture/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hades-mythic-illustration/README.md"><img src="style-packages/game-art/hades-mythic-illustration/gallery-16x9.jpg" width="230" alt="神话高对比插画游戏美术代表图"></a><br><strong>神话高对比插画游戏美术</strong><br><a href="style-packages/game-art/hades-mythic-illustration/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hi-fi-rush-rhythm-comic/README.md"><img src="style-packages/game-art/hi-fi-rush-rhythm-comic/gallery-16x9.jpg" width="230" alt="节奏漫画卡通渲染游戏美术代表图"></a><br><strong>节奏漫画卡通渲染游戏美术</strong><br><a href="style-packages/game-art/hi-fi-rush-rhythm-comic/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/disco-elysium-painterly-noir/README.md"><img src="style-packages/game-art/disco-elysium-painterly-noir/gallery-16x9.jpg" width="230" alt="厚涂侦探绘本游戏美术代表图"></a><br><strong>厚涂侦探绘本游戏美术</strong><br><a href="style-packages/game-art/disco-elysium-painterly-noir/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/elden-ring-dark-fantasy/README.md"><img src="style-packages/game-art/elden-ring-dark-fantasy/gallery-16x9.jpg" width="230" alt="暗黑神话幻想游戏美术代表图"></a><br><strong>暗黑神话幻想游戏美术</strong><br><a href="style-packages/game-art/elden-ring-dark-fantasy/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stray-neon-cybercity/README.md"><img src="style-packages/game-art/stray-neon-cybercity/gallery-16x9.jpg" width="230" alt="霓虹废墟城市游戏美术代表图"></a><br><strong>霓虹废墟城市游戏美术</strong><br><a href="style-packages/game-art/stray-neon-cybercity/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/ori-luminous-forest/README.md"><img src="style-packages/game-art/ori-luminous-forest/gallery-16x9.jpg" width="230" alt="荧光森林手绘游戏美术代表图"></a><br><strong>荧光森林手绘游戏美术</strong><br><a href="style-packages/game-art/ori-luminous-forest/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/rpg-maker-pixel-art/README.md"><img src="style-packages/game-art/rpg-maker-pixel-art/gallery-16x9.jpg" width="230" alt="角色扮演游戏像素美术代表图"></a><br><strong>角色扮演游戏像素美术</strong><br><a href="style-packages/game-art/rpg-maker-pixel-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hollow-knight-inked-gothic/README.md"><img src="style-packages/game-art/hollow-knight-inked-gothic/gallery-16x9.jpg" width="230" alt="空洞骑士墨线哥特游戏美术代表图"></a><br><strong>空洞骑士墨线哥特游戏美术</strong><br><a href="style-packages/game-art/hollow-knight-inked-gothic/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/journey-minimalist-desert/README.md"><img src="style-packages/game-art/journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="风之旅人极简沙漠游戏美术代表图"></a><br><strong>风之旅人极简沙漠游戏美术</strong><br><a href="style-packages/game-art/journey-minimalist-desert/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.md"><img src="style-packages/game-art/final-fantasy-ix-painted-fantasy/gallery-16x9.jpg" width="230" alt="最终幻想九绘本幻想游戏美术代表图"></a><br><strong>最终幻想九绘本幻想游戏美术</strong><br><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.md">打开 README</a></td>
 </tr>
 </table>
 
