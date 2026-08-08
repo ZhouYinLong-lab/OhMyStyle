@@ -1,0 +1,28 @@
+medium: graphic
+signature: 阶梯几何、对称、金属色与现代奢华
+composition:
+- new subject and arrangement
+- clear primary focal hierarchy
+- readable negative space
+color:
+  palette:
+  - '#1D2227'
+  - '#D0B37A'
+  - '#26735F'
+  behavior:
+  - local color remains readable
+  - no automatic global color wash
+light:
+  quality: style-consistent natural or designed light
+  behavior:
+  - light supports form
+  - background does not erase material identity
+surface:
+  texture: observable medium or capture texture
+  finish: controlled detail without generic AI gloss
+invariants:
+- 阶梯几何、对称、金属色与现代奢华
+- new theme and composition are mandatory
+- style cues remain subordinate to subject readability
+
+

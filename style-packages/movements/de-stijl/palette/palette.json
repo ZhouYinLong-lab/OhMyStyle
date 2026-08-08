@@ -1,0 +1,38 @@
+{
+  "name": "de-stijl",
+  "usage": "controlled relationship among dominant, support, shadow, and accent colors",
+  "colors": [
+    {
+      "name": "color_0",
+      "hex": "#F4F2EA",
+      "role": "主要留白"
+    },
+    {
+      "name": "color_1",
+      "hex": "#1D2021",
+      "role": "结构线"
+    },
+    {
+      "name": "color_2",
+      "hex": "#C83B32",
+      "role": "色面焦点"
+    },
+    {
+      "name": "color_3",
+      "hex": "#2A58A3",
+      "role": "色面焦点"
+    },
+    {
+      "name": "color_4",
+      "hex": "#E5C341",
+      "role": "色面焦点"
+    },
+    {
+      "name": "color_5",
+      "hex": "#A8AAA5",
+      "role": "过渡面"
+    }
+  ]
+}
+
+

@@ -1,7 +1,0 @@
-Photograph a {SUBJECT} in {LOCATION} as a clear-eyed documentary landscape.
-Show the human alteration directly: {BACKGROUND_ELEMENTS} should remain visible
-as evidence of planning, work, extraction, transport, maintenance, or neglect.
-Use a stable horizontal composition, a fixed tripod-like viewpoint, even daylight,
-restrained saturation, and descriptive surface detail. Let geometry, distance,
-and repetition carry the interest. The image must not become a tourism postcard,
-real-estate advertisement, disaster film, or untouched-wilderness sublime.

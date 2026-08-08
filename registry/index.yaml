@@ -1361,6 +1361,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: art-deco
+  name: 装饰艺术
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/art-deco
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: art-nouveau
   name: 新艺术运动
   kind: movement
@@ -1477,6 +1494,23 @@ packages:
   - texture
   - layout
   reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: de-stijl
+  name: 荷兰风格派
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/de-stijl
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
@@ -1616,6 +1650,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: international-typographic-style
+  name: 国际主义版式风格
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/international-typographic-style
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: italian-high-renaissance-raphaelesque
   name: 意大利文艺复兴盛期
   kind: movement
@@ -1723,6 +1774,23 @@ packages:
   kind: movement
   domain: hybrid
   package_path: style-packages/movements/neue-sachlichkeit
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: new-topographics
+  name: 新地形摄影
+  kind: movement
+  domain: photography
+  package_path: style-packages/movements/new-topographics
   maturity: L2
   focus_dimensions:
   - medium
@@ -2613,23 +2681,6 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
-- resource_id: art-deco
-  name: 装饰艺术
-  kind: school
-  domain: design
-  package_path: style-packages/schools/art-deco
-  maturity: L3
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - texture
-  - layout
-  reference_count: 1
-  accepted_example_count: 1
-  rejected_example_count: 0
-  benchmark: true
 - resource_id: bauhaus
   name: 包豪斯
   kind: school
@@ -2644,40 +2695,6 @@ packages:
   - surface
   - texture
   reference_count: 2
-  accepted_example_count: 1
-  rejected_example_count: 0
-  benchmark: true
-- resource_id: de-stijl
-  name: 荷兰风格派
-  kind: school
-  domain: design
-  package_path: style-packages/schools/de-stijl
-  maturity: L3
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - surface
-  - texture
-  reference_count: 2
-  accepted_example_count: 1
-  rejected_example_count: 0
-  benchmark: true
-- resource_id: international-typographic-style
-  name: 国际主义版式风格
-  kind: school
-  domain: design
-  package_path: style-packages/schools/international-typographic-style
-  maturity: L3
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - texture
-  - layout
-  reference_count: 1
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
@@ -2698,23 +2715,6 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
-- resource_id: new-topographics
-  name: 新地形学
-  kind: school
-  domain: photography
-  package_path: style-packages/schools/new-topographics
-  maturity: L2
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - surface
-  - texture
-  reference_count: 2
-  accepted_example_count: 0
-  rejected_example_count: 0
-  benchmark: false
 - resource_id: ulm-school
   name: 乌尔姆设计学院
   kind: school
