@@ -286,31 +286,68 @@ The main gallery lists independent style packages only. Every card uses a horizo
 
 ### Original presets
 
+
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/muted-documentary-color/README.en.md"><img src="style-packages/presets/muted-documentary-color/gallery-16x9.jpg" width="230" alt="Muted Documentary Color representative image"></a><br><strong>Muted Documentary Color</strong><br><a href="style-packages/presets/muted-documentary-color/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/nocturnal-blue-hour/README.en.md"><img src="style-packages/presets/nocturnal-blue-hour/gallery-16x9.jpg" width="230" alt="Nocturnal Blue Hour representative image"></a><br><strong>Nocturnal Blue Hour</strong><br><a href="style-packages/presets/nocturnal-blue-hour/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/acid-yellow-cobalt/README.en.md"><img src="style-packages/presets/acid-yellow-cobalt/gallery-16x9.jpg" width="230" alt="Acid Yellow Cobalt representative image"></a><br><strong>Acid Yellow Cobalt</strong><br><a href="style-packages/presets/acid-yellow-cobalt/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/amber-window-interior/README.en.md"><img src="style-packages/presets/amber-window-interior/gallery-16x9.jpg" width="230" alt="Amber Window Interior representative image"></a><br><strong>Amber Window Interior</strong><br><a href="style-packages/presets/amber-window-interior/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/cool-concrete-minimal/README.en.md"><img src="style-packages/presets/cool-concrete-minimal/gallery-16x9.jpg" width="230" alt="Cool Concrete Minimal representative image"></a><br><strong>Cool Concrete Minimal</strong><br><a href="style-packages/presets/cool-concrete-minimal/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/deep-shadow-theater/README.en.md"><img src="style-packages/presets/deep-shadow-theater/gallery-16x9.jpg" width="230" alt="Deep Shadow Theater representative image"></a><br><strong>Deep Shadow Theater</strong><br><a href="style-packages/presets/deep-shadow-theater/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/dusty-rose-studio/README.en.md"><img src="style-packages/presets/dusty-rose-studio/gallery-16x9.jpg" width="230" alt="Dusty Rose Studio representative image"></a><br><strong>Dusty Rose Studio</strong><br><a href="style-packages/presets/dusty-rose-studio/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/forest-green-naturalism/README.en.md"><img src="style-packages/presets/forest-green-naturalism/gallery-16x9.jpg" width="230" alt="Forest Green Naturalism representative image"></a><br><strong>Forest Green Naturalism</strong><br><a href="style-packages/presets/forest-green-naturalism/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/frosted-daylight/README.en.md"><img src="style-packages/presets/frosted-daylight/gallery-16x9.jpg" width="230" alt="Frosted Daylight representative image"></a><br><strong>Frosted Daylight</strong><br><a href="style-packages/presets/frosted-daylight/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/hard-light-color-blocking/README.en.md"><img src="style-packages/presets/hard-light-color-blocking/gallery-16x9.jpg" width="230" alt="Hard-Light Color Blocking representative image"></a><br><strong>Hard-Light Color Blocking</strong><br><a href="style-packages/presets/hard-light-color-blocking/README.en.md">Open README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/pastel-film-portrait/README.en.md"><img src="style-packages/presets/pastel-film-portrait/gallery-16x9.jpg" width="230" alt="Pastel Film Portrait representative image"></a><br><strong>Pastel Film Portrait</strong><br><a href="style-packages/presets/pastel-film-portrait/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/natural-window-light/README.en.md"><img src="style-packages/presets/natural-window-light/gallery-16x9.jpg" width="230" alt="Natural Window Light representative image"></a><br><strong>Natural Window Light</strong><br><a href="style-packages/presets/natural-window-light/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/monochrome-silver-gelatin/README.en.md"><img src="style-packages/presets/monochrome-silver-gelatin/gallery-16x9.jpg" width="230" alt="Monochrome Silver Gelatin representative image"></a><br><strong>Monochrome Silver Gelatin</strong><br><a href="style-packages/presets/monochrome-silver-gelatin/README.en.md">Open README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/high-chroma-color-pairing/README.en.md"><img src="style-packages/presets/high-chroma-color-pairing/gallery-16x9.jpg" width="230" alt="High-Chroma Color Pairing representative image"></a><br><strong>High-Chroma Color Pairing</strong><br><a href="style-packages/presets/high-chroma-color-pairing/README.en.md">Open README</a></td>
-<td width="33%"></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/monochrome-silver-gelatin/README.en.md"><img src="style-packages/presets/monochrome-silver-gelatin/gallery-16x9.jpg" width="230" alt="Monochrome Silver Gelatin representative image"></a><br><strong>Monochrome Silver Gelatin</strong><br><a href="style-packages/presets/monochrome-silver-gelatin/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/muted-documentary-color/README.en.md"><img src="style-packages/presets/muted-documentary-color/gallery-16x9.jpg" width="230" alt="Muted Documentary Color representative image"></a><br><strong>Muted Documentary Color</strong><br><a href="style-packages/presets/muted-documentary-color/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/natural-window-light/README.en.md"><img src="style-packages/presets/natural-window-light/gallery-16x9.jpg" width="230" alt="Natural Window Light representative image"></a><br><strong>Natural Window Light</strong><br><a href="style-packages/presets/natural-window-light/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/nocturnal-blue-hour/README.en.md"><img src="style-packages/presets/nocturnal-blue-hour/gallery-16x9.jpg" width="230" alt="Nocturnal Blue Hour representative image"></a><br><strong>Nocturnal Blue Hour</strong><br><a href="style-packages/presets/nocturnal-blue-hour/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/pastel-film-portrait/README.en.md"><img src="style-packages/presets/pastel-film-portrait/gallery-16x9.jpg" width="230" alt="Pastel Film Portrait representative image"></a><br><strong>Pastel Film Portrait</strong><br><a href="style-packages/presets/pastel-film-portrait/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/quiet-flash-documentary/README.en.md"><img src="style-packages/presets/quiet-flash-documentary/gallery-16x9.jpg" width="230" alt="Quiet Flash Documentary representative image"></a><br><strong>Quiet Flash Documentary</strong><br><a href="style-packages/presets/quiet-flash-documentary/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/soft-overcast-editorial/README.en.md"><img src="style-packages/presets/soft-overcast-editorial/gallery-16x9.jpg" width="230" alt="Soft Overcast Editorial representative image"></a><br><strong>Soft Overcast Editorial</strong><br><a href="style-packages/presets/soft-overcast-editorial/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/warm-paper-still-life/README.en.md"><img src="style-packages/presets/warm-paper-still-life/gallery-16x9.jpg" width="230" alt="Warm Paper Still Life representative image"></a><br><strong>Warm Paper Still Life</strong><br><a href="style-packages/presets/warm-paper-still-life/README.en.md">Open README</a></td>
 <td width="33%"></td>
 </tr>
 </table>
 
 ### Design schools
 
+
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.en.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="Ulm School representative image"></a><br><strong>Ulm School</strong><br><a href="style-packages/schools/ulm-school/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/bauhaus/README.en.md"><img src="style-packages/schools/bauhaus/gallery-16x9.jpg" width="230" alt="Bauhaus representative image"></a><br><strong>Bauhaus</strong><br><a href="style-packages/schools/bauhaus/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/black-mountain-college/README.en.md"><img src="style-packages/schools/black-mountain-college/gallery-16x9.jpg" width="230" alt="Black Mountain College representative image"></a><br><strong>Black Mountain College</strong><br><a href="style-packages/schools/black-mountain-college/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/california-college-of-the-arts/README.en.md"><img src="style-packages/schools/california-college-of-the-arts/gallery-16x9.jpg" width="230" alt="California College of the Arts representative image"></a><br><strong>California College of the Arts</strong><br><a href="style-packages/schools/california-college-of-the-arts/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/cranbrook-academy/README.en.md"><img src="style-packages/schools/cranbrook-academy/gallery-16x9.jpg" width="230" alt="Cranbrook Academy of Art representative image"></a><br><strong>Cranbrook Academy of Art</strong><br><a href="style-packages/schools/cranbrook-academy/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/glasgow-school-of-art/README.en.md"><img src="style-packages/schools/glasgow-school-of-art/gallery-16x9.jpg" width="230" alt="Glasgow School of Art representative image"></a><br><strong>Glasgow School of Art</strong><br><a href="style-packages/schools/glasgow-school-of-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/new-bauhaus/README.en.md"><img src="style-packages/schools/new-bauhaus/gallery-16x9.jpg" width="230" alt="New Bauhaus representative image"></a><br><strong>New Bauhaus</strong><br><a href="style-packages/schools/new-bauhaus/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/paris-beaux-arts/README.en.md"><img src="style-packages/schools/paris-beaux-arts/gallery-16x9.jpg" width="230" alt="Paris Beaux-Arts representative image"></a><br><strong>Paris Beaux-Arts</strong><br><a href="style-packages/schools/paris-beaux-arts/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/parsons-school-of-design/README.en.md"><img src="style-packages/schools/parsons-school-of-design/gallery-16x9.jpg" width="230" alt="Parsons School of Design representative image"></a><br><strong>Parsons School of Design</strong><br><a href="style-packages/schools/parsons-school-of-design/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/risd/README.en.md"><img src="style-packages/schools/risd/gallery-16x9.jpg" width="230" alt="Rhode Island School of Design representative image"></a><br><strong>Rhode Island School of Design</strong><br><a href="style-packages/schools/risd/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-college-of-art/README.en.md"><img src="style-packages/schools/royal-college-of-art/gallery-16x9.jpg" width="230" alt="Royal College of Art representative image"></a><br><strong>Royal College of Art</strong><br><a href="style-packages/schools/royal-college-of-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/slade-school-of-fine-art/README.en.md"><img src="style-packages/schools/slade-school-of-fine-art/gallery-16x9.jpg" width="230" alt="Slade School of Fine Art representative image"></a><br><strong>Slade School of Fine Art</strong><br><a href="style-packages/schools/slade-school-of-fine-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.en.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="Ulm School representative image"></a><br><strong>Ulm School</strong><br><a href="style-packages/schools/ulm-school/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.en.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="Yale School of Art representative image"></a><br><strong>Yale School of Art</strong><br><a href="style-packages/schools/yale-school-of-art/README.en.md">Open README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 
