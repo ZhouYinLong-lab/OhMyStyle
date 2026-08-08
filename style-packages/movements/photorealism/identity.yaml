@@ -1,0 +1,22 @@
+canonical_name: 照相写实主义
+entity_type: movement_visual_style_direction
+origin: reference_backed_photorealism
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 雨后停车场里一辆普通旧车和空购物车
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/p/photorealism
+rendering:
+  model: 精确绘画或摄影式图像，边缘和细节高度可控
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
