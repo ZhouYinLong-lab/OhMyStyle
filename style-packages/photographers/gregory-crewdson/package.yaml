@@ -1,0 +1,16 @@
+id: gregory-crewdson
+name: 格里高利·克鲁德森
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 大型制作式摄影、舞台调度与超细致景深；郊区住宅、空街和一个停顿的人物组成高度控制的电影化静止；钨黄、暮蓝、湿黑、草绿和砖红形成冷暖夜景。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
