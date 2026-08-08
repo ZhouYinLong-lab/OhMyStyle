@@ -1,0 +1,16 @@
+id: collage-mixed-media
+name: 拼贴综合材料
+kind: technique
+domain: painting
+version: 0.1.0
+summary: 剪切、撕裂、粘贴、印刷和绘画叠加；不同纸张、照片碎片和实体材料通过重叠建立非连续空间；纸白、报纸灰、赭黄、朱红和深蓝形成材料撞色。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

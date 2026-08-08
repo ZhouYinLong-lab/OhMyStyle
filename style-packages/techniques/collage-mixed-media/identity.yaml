@@ -1,0 +1,22 @@
+canonical_name: 拼贴综合材料
+entity_type: technique_visual_style_direction
+origin: reference_backed_collage-mixed-media
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一张工作台上的地图碎片、布料和三块无字标签
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/c/collage
+rendering:
+  model: 剪切、撕裂、粘贴、印刷和绘画叠加
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
