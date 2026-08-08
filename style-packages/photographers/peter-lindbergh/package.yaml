@@ -1,0 +1,16 @@
+id: peter-lindbergh
+name: 彼得·林德伯格
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 自然主义时尚肖像、少量造型和真实皮肤；人物靠自然姿态和面部结构成立，背景尽量简化；黑白银灰、肤色灰阶、深黑和纸白形成干净时尚色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

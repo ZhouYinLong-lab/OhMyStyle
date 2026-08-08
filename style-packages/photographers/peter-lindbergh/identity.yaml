@@ -1,0 +1,22 @@
+canonical_name: 彼得·林德伯格
+entity_type: photographer_visual_style_direction
+origin: reference_backed_peter-lindbergh
+period: 20th_century_to_present
+domain: photography
+scope:
+  use_cases:
+  - 一位成年人穿简单白衬衫站在风大的海边墙旁
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://peterlindbergh.com/
+rendering:
+  model: 自然主义时尚肖像、少量造型和真实皮肤
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
