@@ -1,0 +1,22 @@
+canonical_name: 精确主义
+entity_type: movement_visual_style_direction
+origin: reference_backed_precisionism
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 河岸边一座旧粮仓和一条空传送桥
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.metmuseum.org/toah/hd/prec/hd_prec.htm
+rendering:
+  model: 几何化具象、清晰边缘与简化体积
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
