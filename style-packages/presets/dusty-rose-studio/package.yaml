@@ -1,0 +1,16 @@
+id: dusty-rose-studio
+name: 灰粉影棚静物
+kind: preset
+domain: photography
+version: 0.1.0
+summary: 以灰粉背景、纸张形体和哑光材质建立柔和而现代的静物影棚预设。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
