@@ -1,0 +1,17 @@
+id: grid-3x3
+name: 3×3 网格设计
+kind: technique
+domain: design
+version: 0.1.0
+summary: >-
+  以九宫格分区、重复模块、明确间距和可替换内容建立稳定的编辑版面与视觉导航结构。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

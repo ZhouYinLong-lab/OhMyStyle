@@ -1,0 +1,22 @@
+package: "3×3 网格设计"
+summary: "九宫格分区、重复模块、明确间距和可替换内容建立稳定的编辑版面与视觉导航结构"
+subject_policy: open
+visual_signature:
+  medium: "编辑版式"
+  focus: "九宫格分区、重复模块、明确间距和可替换内容建立稳定的编辑版面与视觉导航结构"
+  composition:
+  - "九个区域的层级不必完全相同"
+  - "间距和边界始终清楚"
+  - "内容由用户提供"
+  palette:
+  - "纸白 #F4F0E6，角色：底色"
+  - "墨黑 #20242A，角色：结构线"
+  - "红橙 #E45B42，角色：少量节点"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
