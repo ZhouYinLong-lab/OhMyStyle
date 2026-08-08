@@ -1,0 +1,22 @@
+package: "埃米莉·霍弗伯"
+summary: "柔和日常光线、低噪点、清洁色彩、真实皮肤和轻微观察距离"
+subject_policy: open
+visual_signature:
+  medium: "自然光摄影"
+  focus: "柔和日常光线、低噪点、清洁色彩、真实皮肤和轻微观察距离"
+  composition:
+  - "窗光或阴天漫射光"
+  - "开放留白和自然偏置构图"
+  - "低到中对比与克制胶片响应"
+  palette:
+  - "雾白 #F1F1EA，角色：高光与空气"
+  - "洗蓝 #89AFC4，角色：冷静环境"
+  - "柔绿 #9EB49A，角色：自然补色"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
