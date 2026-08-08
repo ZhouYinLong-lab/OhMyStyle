@@ -1,9 +1,0 @@
-SUBJECT INDEPENDENCE CONTRACT:
-- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
-- This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.
-- Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it.
-
-Generate a new image of {SUBJECT} in {LOCATION}. Apply this observable visual direction: 西部荒野符号、塔罗式构图、象征物件、旧纸张和神秘叙事形成可读但不依赖固定角色的视觉.
-Use these construction rules: 中央象征与边框结构可选; 荒野感来自空间、材质和光线; 符号必须服务用户主题. Preserve the user's subject, objects, location, narrative, and aspect ratio.
-Do not copy a reference work, exact pose, recognizable layout, logo, text, character, or landmark.
-Treat any example image as a visual analysis aid only; its subject and story are not defaults.

@@ -1531,23 +1531,6 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
-- resource_id: cybercore
-  name: 赛博核
-  kind: movement
-  domain: design
-  package_path: style-packages/movements/cybercore
-  maturity: L2
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - surface
-  - texture
-  reference_count: 0
-  accepted_example_count: 0
-  rejected_example_count: 0
-  benchmark: false
 - resource_id: dada
   name: 达达主义
   kind: movement
@@ -1837,23 +1820,6 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
-- resource_id: kitsch
-  name: 媚俗
-  kind: movement
-  domain: design
-  package_path: style-packages/movements/kitsch
-  maturity: L2
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - surface
-  - texture
-  reference_count: 1
-  accepted_example_count: 0
-  rejected_example_count: 0
-  benchmark: false
 - resource_id: land-art
   name: 大地艺术
   kind: movement
@@ -1956,23 +1922,6 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
-- resource_id: mystical-western-tarot
-  name: 神秘西部
-  kind: movement
-  domain: design
-  package_path: style-packages/movements/mystical-western-tarot
-  maturity: L2
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - surface
-  - texture
-  reference_count: 1
-  accepted_example_count: 0
-  rejected_example_count: 0
-  benchmark: false
 - resource_id: neoclassicism
   name: 新古典主义
   kind: movement
@@ -2403,23 +2352,6 @@ packages:
   kind: movement
   domain: design
   package_path: style-packages/movements/victorian
-  maturity: L2
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - surface
-  - texture
-  reference_count: 1
-  accepted_example_count: 0
-  rejected_example_count: 0
-  benchmark: false
-- resource_id: y2k
-  name: Y2K
-  kind: movement
-  domain: design
-  package_path: style-packages/movements/y2k
   maturity: L2
   focus_dimensions:
   - medium
@@ -3523,38 +3455,6 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
-- resource_id: anthropomorphic-design
-  name: 拟人化设计
-  kind: technique
-  domain: design
-  package_path: style-packages/techniques/anthropomorphic-design
-  maturity: L2
-  focus_dimensions:
-  - medium
-  - process
-  - lighting
-  - surface
-  - texture
-  reference_count: 1
-  accepted_example_count: 0
-  rejected_example_count: 0
-  benchmark: false
-- resource_id: aurora-gradient-grain
-  name: 极光渐变颗粒
-  kind: technique
-  domain: design
-  package_path: style-packages/techniques/aurora-gradient-grain
-  maturity: L2
-  focus_dimensions:
-  - medium
-  - process
-  - lighting
-  - surface
-  - texture
-  reference_count: 0
-  accepted_example_count: 0
-  rejected_example_count: 0
-  benchmark: false
 - resource_id: bento-grid
   name: 便当盒网格
   kind: technique
@@ -3654,22 +3554,6 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
-- resource_id: ethereal
-  name: 空灵
-  kind: technique
-  domain: design
-  package_path: style-packages/techniques/ethereal
-  maturity: L2
-  focus_dimensions:
-  - medium
-  - process
-  - lighting
-  - surface
-  - texture
-  reference_count: 0
-  accepted_example_count: 0
-  rejected_example_count: 0
-  benchmark: false
 - resource_id: filigree
   name: 金银丝细工
   kind: technique

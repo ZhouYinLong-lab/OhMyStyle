@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-227-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-220-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -270,13 +270,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/victorian/README.en.md"><img src="style-packages/movements/victorian/gallery-16x9.jpg" width="230" alt="Victorian representative image"></a><br><strong>Victorian</strong><br><a href="style-packages/movements/victorian/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/mystical-western-tarot/README.en.md"><img src="style-packages/movements/mystical-western-tarot/gallery-16x9.jpg" width="230" alt="Mystical Western and Tarot representative image"></a><br><strong>Mystical Western / Tarot</strong><br><a href="style-packages/movements/mystical-western-tarot/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/kitsch/README.en.md"><img src="style-packages/movements/kitsch/gallery-16x9.jpg" width="230" alt="Kitsch representative image"></a><br><strong>Kitsch</strong><br><a href="style-packages/movements/kitsch/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/y2k/README.en.md"><img src="style-packages/movements/y2k/gallery-16x9.jpg" width="230" alt="Y2K representative image"></a><br><strong>Y2K</strong><br><a href="style-packages/movements/y2k/README.en.md">Open README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/brutalism/README.en.md"><img src="style-packages/movements/brutalism/gallery-16x9.jpg" width="230" alt="Brutalism representative image"></a><br><strong>Brutalism</strong><br><a href="style-packages/movements/brutalism/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/cybercore/README.en.md"><img src="style-packages/movements/cybercore/gallery-16x9.jpg" width="230" alt="Cybercore and iOS Core representative image"></a><br><strong>Cybercore / iOS Core</strong><br><a href="style-packages/movements/cybercore/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/synthwave/README.en.md"><img src="style-packages/movements/synthwave/gallery-16x9.jpg" width="230" alt="Synthwave representative image"></a><br><strong>Synthwave</strong><br><a href="style-packages/movements/synthwave/README.en.md">Open README</a></td>
 </tr>
 <tr>
@@ -423,13 +417,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/collage-mixed-media/README.en.md"><img src="style-packages/techniques/collage-mixed-media/gallery-16x9.jpg" width="230" alt="Collage Mixed Media representative image"></a><br><strong>Collage Mixed Media</strong><br><a href="style-packages/techniques/collage-mixed-media/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/aurora-gradient-grain/README.en.md"><img src="style-packages/techniques/aurora-gradient-grain/gallery-16x9.jpg" width="230" alt="Aurora Gradient Grain representative image"></a><br><strong>Aurora Gradient Grain</strong><br><a href="style-packages/techniques/aurora-gradient-grain/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/ethereal/README.en.md"><img src="style-packages/techniques/ethereal/gallery-16x9.jpg" width="230" alt="Ethereal representative image"></a><br><strong>Ethereal</strong><br><a href="style-packages/techniques/ethereal/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/filigree/README.en.md"><img src="style-packages/techniques/filigree/gallery-16x9.jpg" width="230" alt="Filigree representative image"></a><br><strong>Filigree</strong><br><a href="style-packages/techniques/filigree/README.en.md">Open README</a></td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/acanthus-ornament/README.en.md"><img src="style-packages/techniques/acanthus-ornament/gallery-16x9.jpg" width="230" alt="Acanthus Ornament representative image"></a><br><strong>Acanthus Ornament</strong><br><a href="style-packages/techniques/acanthus-ornament/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/anthropomorphic-design/README.en.md"><img src="style-packages/techniques/anthropomorphic-design/gallery-16x9.jpg" width="230" alt="Anthropomorphic Design representative image"></a><br><strong>Anthropomorphic Design</strong><br><a href="style-packages/techniques/anthropomorphic-design/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/conceptual-sketch/README.en.md"><img src="style-packages/techniques/conceptual-sketch/gallery-16x9.jpg" width="230" alt="Conceptual Sketch representative image"></a><br><strong>Conceptual Sketch</strong><br><a href="style-packages/techniques/conceptual-sketch/README.en.md">Open README</a></td>
 </tr>
 <tr>

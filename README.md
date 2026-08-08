@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-227-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-220-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -270,13 +270,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/victorian/README.md"><img src="style-packages/movements/victorian/gallery-16x9.jpg" width="230" alt="维多利亚风格代表图"></a><br><strong>维多利亚风格</strong><br><a href="style-packages/movements/victorian/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/mystical-western-tarot/README.md"><img src="style-packages/movements/mystical-western-tarot/gallery-16x9.jpg" width="230" alt="神秘西部代表图"></a><br><strong>神秘西部</strong><br><a href="style-packages/movements/mystical-western-tarot/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/kitsch/README.md"><img src="style-packages/movements/kitsch/gallery-16x9.jpg" width="230" alt="媚俗代表图"></a><br><strong>媚俗</strong><br><a href="style-packages/movements/kitsch/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/y2k/README.md"><img src="style-packages/movements/y2k/gallery-16x9.jpg" width="230" alt="Y2K代表图"></a><br><strong>Y2K</strong><br><a href="style-packages/movements/y2k/README.md">打开 README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/brutalism/README.md"><img src="style-packages/movements/brutalism/gallery-16x9.jpg" width="230" alt="粗野主义代表图"></a><br><strong>粗野主义</strong><br><a href="style-packages/movements/brutalism/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/cybercore/README.md"><img src="style-packages/movements/cybercore/gallery-16x9.jpg" width="230" alt="赛博核代表图"></a><br><strong>赛博核</strong><br><a href="style-packages/movements/cybercore/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/synthwave/README.md"><img src="style-packages/movements/synthwave/gallery-16x9.jpg" width="230" alt="合成器浪潮代表图"></a><br><strong>合成器浪潮</strong><br><a href="style-packages/movements/synthwave/README.md">打开 README</a></td>
 </tr>
 <tr>
@@ -423,13 +417,10 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/collage-mixed-media/README.md"><img src="style-packages/techniques/collage-mixed-media/gallery-16x9.jpg" width="230" alt="拼贴综合材料代表图"></a><br><strong>拼贴综合材料</strong><br><a href="style-packages/techniques/collage-mixed-media/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/aurora-gradient-grain/README.md"><img src="style-packages/techniques/aurora-gradient-grain/gallery-16x9.jpg" width="230" alt="极光渐变颗粒代表图"></a><br><strong>极光渐变颗粒</strong><br><a href="style-packages/techniques/aurora-gradient-grain/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/ethereal/README.md"><img src="style-packages/techniques/ethereal/gallery-16x9.jpg" width="230" alt="空灵代表图"></a><br><strong>空灵</strong><br><a href="style-packages/techniques/ethereal/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/filigree/README.md"><img src="style-packages/techniques/filigree/gallery-16x9.jpg" width="230" alt="金银丝细工代表图"></a><br><strong>金银丝细工</strong><br><a href="style-packages/techniques/filigree/README.md">打开 README</a></td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/acanthus-ornament/README.md"><img src="style-packages/techniques/acanthus-ornament/gallery-16x9.jpg" width="230" alt="莨苕叶装饰代表图"></a><br><strong>莨苕叶装饰</strong><br><a href="style-packages/techniques/acanthus-ornament/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/anthropomorphic-design/README.md"><img src="style-packages/techniques/anthropomorphic-design/gallery-16x9.jpg" width="230" alt="拟人化设计代表图"></a><br><strong>拟人化设计</strong><br><a href="style-packages/techniques/anthropomorphic-design/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/conceptual-sketch/README.md"><img src="style-packages/techniques/conceptual-sketch/gallery-16x9.jpg" width="230" alt="概念草图代表图"></a><br><strong>概念草图</strong><br><a href="style-packages/techniques/conceptual-sketch/README.md">打开 README</a></td>
 </tr>
 <tr>
