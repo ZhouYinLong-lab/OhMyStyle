@@ -8,7 +8,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 
 想要新增风格包？请从[中文贡献指南](CONTRIBUTING.md)或[英文贡献指南](CONTRIBUTING.en.md)开始；模板位于 [`templates/style-package`](templates/style-package)，创建命令会生成完整目录、双语说明、来源清单、Prompt 和评估骨架。
 
-后续扩充按 **20 个风格包为一个批次**执行：先研究原作品和权利边界，再逐包完成风格规则、原生 16:9 代表图、生成样例、双语 README 和校验；一个包一个 commit，批次完成后再更新总画廊。完整流程见[风格包扩充工作流](docs/EXPANSION-WORKFLOW.md)，批次清单模板见 [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml)。
+后续扩充按批次执行，数量以实际规划为准：先研究原作品和权利边界，再逐包完成风格规则、原生 16:9 代表图、生成样例、双语 README 和校验；一个包一个 commit，批次完成后再更新总画廊。完整流程见[风格包扩充工作流](docs/EXPANSION-WORKFLOW.md)，批次清单模板见 [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml)。
 
 ## 风格包画廊
 

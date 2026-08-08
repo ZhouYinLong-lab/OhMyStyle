@@ -1,14 +1,14 @@
 # Style Package Expansion Workflow
 
-This document defines the standard expansion workflow for OhMyStyle. The default unit is **one complete batch of exactly 20 style packages**. Every package needs independent research, a representative image, bilingual user documentation, and verifiable visual rules.
+This document defines the standard expansion workflow for OhMyStyle. Batch size is determined by the actual scope of the work; every package needs independent research, a representative image, bilingual user documentation, and verifiable visual rules.
 
 ## 1. Batch rules
 
-- A formal expansion batch must plan and register **exactly 20 packages**. Editing a few index files does not count as adding 20 packages, and repeated boilerplate packages are not acceptable.
-- The 20 packages may span one or more top-level categories, but every package must declare its `category`, `kind`, research target, and style boundaries.
+- A formal expansion batch must plan and register the packages it actually intends to deliver. Editing index files does not count as adding packages, and repeated boilerplate packages are not acceptable.
+- A batch may span one or more top-level categories, but every package must declare its `category`, `kind`, research target, and style boundaries.
 - Each package is an independent delivery unit: complete and validate one package, then commit that package. Batch-level gallery, index, and count updates are made after package work is complete.
-- If a batch cannot be completed with 20 packages, record the reason, completed count, and follow-up plan. An incomplete batch must not be marked complete by default.
-- A composite is not an independent style package and does not count toward the 20-package target; it only references existing base packages.
+- If a batch scope changes, record the reason, completed count, and follow-up plan. An incomplete batch must not be marked complete by default.
+- A composite is not an independent style package; it only references existing base packages.
 
 Use [`templates/expansion-batch.yaml`](../templates/expansion-batch.yaml) for the batch record. Real records should normally live under `batches/YYYY-MM-batch-XX.yaml` and be checked with the validator.
 
@@ -86,7 +86,7 @@ Recommended batch states:
 planning -> research -> building -> review -> complete
 ```
 
-A batch may be marked `complete` only when all 20 packages pass the package gates, batch validation passes, the root README is updated, and `git diff --check` is clean.
+A batch may be marked `complete` only when every package registered in the batch passes the package gates, batch validation passes, the root README is updated, and `git diff --check` is clean.
 
 ## 5. Batch validation
 
@@ -98,9 +98,8 @@ python tools/validate-expansion-batch.py batches/2026-08-batch-01.yaml
 
 The validator checks at least:
 
-- `target_count` is 20;
-- exactly 20 unique package IDs are listed;
-- category plan counts sum to 20 and match the package list;
+- at least one unique package ID is listed and no IDs are duplicated;
+- category plan counts match the package list;
 - completed batches contain package directories, `package.yaml`, representative images, and bilingual READMEs;
 - each completed package records sources, validation status, and its own commit.
 

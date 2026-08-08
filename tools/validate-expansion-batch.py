@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate a 20-package OhMyStyle expansion batch manifest."""
+"""Validate an OhMyStyle expansion batch manifest."""
 
 from __future__ import annotations
 
@@ -12,7 +12,6 @@ import yaml
 from safe_yaml import safe_load
 
 
-TARGET_COUNT = 20
 KNOWN_CATEGORIES = {
     "artists",
     "photographers",
@@ -69,8 +68,6 @@ def validate(path: Path) -> list[str]:
     except (OSError, ValueError, yaml.YAMLError) as exc:
         return [f"{path}: invalid manifest: {exc}"]
 
-    if manifest.get("target_count") != TARGET_COUNT:
-        errors.append(f"target_count must be {TARGET_COUNT}")
     status = manifest.get("status")
     if status not in {"planning", "research", "building", "review", "complete"}:
         errors.append("status must be planning, research, building, review, or complete")
@@ -87,16 +84,11 @@ def validate(path: Path) -> list[str]:
             errors.append(f"category_plan.{category} must be a non-negative integer")
         else:
             plan_total += count
-    if plan_total != TARGET_COUNT:
-        errors.append(f"category_plan must total {TARGET_COUNT}, got {plan_total}")
 
     packages = manifest.get("packages")
-    if not isinstance(packages, list):
-        errors.append("packages must be a list")
+    if not isinstance(packages, list) or not packages:
+        errors.append("packages must be a non-empty list")
         packages = []
-    if len(packages) != TARGET_COUNT:
-        errors.append(f"packages must contain exactly {TARGET_COUNT} entries, got {len(packages)}")
-
     ids: set[str] = set()
     actual_counts: dict[str, int] = {}
     repo_root = path.parent.parent if path.parent.name == "batches" else path.parent
@@ -137,6 +129,8 @@ def validate(path: Path) -> list[str]:
                 if not (package / required).is_file():
                     errors.append(f"{package}: missing {required}")
 
+    if plan_total != len(packages):
+        errors.append(f"category_plan total {plan_total} does not match package count {len(packages)}")
     expected_counts = {key: value for key, value in plan.items() if value}
     if actual_counts != expected_counts:
         errors.append(f"category_plan does not match package categories: plan={plan}, actual={actual_counts}")
@@ -152,7 +146,7 @@ def main() -> None:
         for error in errors:
             print(f"FAIL: {error}", file=sys.stderr)
         raise SystemExit(1)
-    print(f"PASS: {args.manifest} is a valid {TARGET_COUNT}-package batch manifest")
+    print(f"PASS: {args.manifest} is a valid expansion batch manifest")
 
 
 if __name__ == "__main__":

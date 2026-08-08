@@ -75,9 +75,9 @@ python tools/new-style-package.py `
 
 模板文件位于 [`templates/style-package`](templates/style-package)，其中 [`TEMPLATE.md`](templates/style-package/TEMPLATE.md) 解释每个文件的用途，英文说明见 [`TEMPLATE.en.md`](templates/style-package/TEMPLATE.en.md)。模板不在 `style-packages/` 下，因此不会被正式包扫描器收录。
 
-## 20 个包一个扩充批次
+## 扩充批次
 
-后续扩充默认以恰好 20 个风格包为一个批次，不以修改几个索引文件或复制模板来凑数。先用 [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml) 登记 20 个独立包和分类计划，再按“研究 → 建包 → 生图 → 审核 → 校验”的顺序完成。每个包单独提交一个 commit；批次画廊、总 README 和统计更新使用独立的批次集成 commit。
+后续扩充按实际范围划分批次，不设固定包数量，也不以修改几个索引文件或复制模板来凑数。先用 [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml) 登记独立包和分类计划，再按“研究 → 建包 → 生图 → 审核 → 校验”的顺序完成。每个包单独提交一个 commit；批次画廊、总 README 和统计更新使用独立的批次集成 commit。
 
 每个包必须先获取可追溯的原作品或一手视觉资料，再提取跨主题稳定的视觉规则；只使用文字介绍不能作为成熟包的唯一依据。不能再分发的作品只保留来源链接和描述，不能把桥梁、房屋、人物、城市、花卉、车辆、地标或固定叙事写进基础 Prompt。批次状态和验收门槛见[风格包扩充工作流](docs/EXPANSION-WORKFLOW.md)；批次清单可运行：
 
@@ -85,7 +85,7 @@ python tools/new-style-package.py `
 python tools/validate-expansion-batch.py batches/2026-08-batch-01.yaml
 ```
 
-清单必须含 20 个不同包 ID，分类数量合计 20；只有 20 个包都通过来源、权利、结构、主体独立性、代表图、双语 README 和完整校验后，才能标记为 `complete`。
+清单必须含至少一个不同包 ID，分类计划与包清单一致；只有登记的全部包都通过来源、权利、结构、主体独立性、代表图、双语 README 和完整校验后，才能标记为 `complete`。
 
 创建后按以下顺序完善：
 
@@ -97,7 +97,7 @@ python tools/validate-expansion-batch.py batches/2026-08-batch-01.yaml
 6. 发布已有包的修改时更新版本号和 `version.md`；
 7. 运行完整校验后再提交 Pull Request。
 
-批次级工作还必须满足：清单中始终保留 20 个实际包条目；单包 commit、包路径和总画廊链接可以逐项追溯；未完成的包不得只通过更新总 README 来宣称完成。
+批次级工作还必须满足：清单中的每个实际包条目都能追溯到包路径、单包 commit 和总画廊链接；未完成的包不得只通过更新总 README 来宣称完成。
 
 ## 校验命令
 

@@ -75,9 +75,9 @@ python tools/new-style-package.py `
 
 The template lives in [`templates/style-package`](templates/style-package). [`TEMPLATE.md`](templates/style-package/TEMPLATE.md) explains every file, and [`TEMPLATE.en.md`](templates/style-package/TEMPLATE.en.md) provides the English version. The template is outside `style-packages/`, so it is not discovered as a publishable package.
 
-## One expansion batch contains 20 packages
+## Expansion batches
 
-Future expansion uses batches of exactly 20 style packages. Do not count a few index-file edits or copied placeholders as 20 packages. First register 20 independent packages and a category plan in [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml), then complete them in the order “research → build → generate → review → validate”. Each package gets its own commit; the gallery, root README, and count update use a separate batch integration commit.
+Future expansion uses scoped batches with no fixed package count. Do not count a few index-file edits or copied placeholders as packages. First register the independent packages and category plan in [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml), then complete them in the order “research → build → generate → review → validate”. Each package gets its own commit; the gallery, root README, and count update use a separate batch integration commit.
 
 Every package must begin with traceable original works or first-hand visual material before extracting cross-subject rules; a text-only description is not enough for a mature package. If an image cannot be redistributed, keep only its source link and descriptive metadata. Do not put bridges, houses, people, cities, flowers, vehicles, landmarks, or fixed narratives into the base prompt. See the [style package expansion workflow](docs/EXPANSION-WORKFLOW.en.md) for batch states and acceptance gates. Validate a batch with:
 
@@ -85,7 +85,7 @@ Every package must begin with traceable original works or first-hand visual mate
 python tools/validate-expansion-batch.py batches/2026-08-batch-01.yaml
 ```
 
-The manifest must contain 20 unique package IDs and category counts totaling 20. Mark it `complete` only after all 20 packages pass the source, rights, structure, subject-independence, representative-image, bilingual-documentation, and validation gates.
+The manifest must contain at least one unique package ID, with category counts matching the package list. Mark it `complete` only after every registered package passes the source, rights, structure, subject-independence, representative-image, bilingual-documentation, and validation gates.
 
 Complete a new package in this order:
 
@@ -97,7 +97,7 @@ Complete a new package in this order:
 6. Update the version and `version.md` when changing a published package.
 7. Run the complete validation set before opening a pull request.
 
-Batch work must also keep 20 real package entries traceable from the manifest to their package paths, individual commits, and root-gallery links. An unfinished package must not be declared complete by updating only the root README.
+Batch work must also keep every real package entry traceable from the manifest to its package path, individual commit, and root-gallery link. An unfinished package must not be declared complete by updating only the root README.
 
 ## Validation commands
 
