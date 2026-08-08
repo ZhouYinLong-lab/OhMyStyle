@@ -1,0 +1,22 @@
+package: "波西米亚风格"
+summary: "自由混搭、手工材质、旅行物件、自然色彩和不规则层次构成松弛而有生活痕迹的视觉"
+subject_policy: open
+visual_signature:
+  medium: "生活方式与室内设计"
+  focus: "自由混搭、手工材质、旅行物件、自然色彩和不规则层次构成松弛而有生活痕迹的视觉"
+  composition:
+  - "织物、木、陶、藤和手工纹理"
+  - "多层但不拥挤的陈设关系"
+  - "色彩来自材质而非全局滤镜"
+  palette:
+  - "赭红 #A45C43，角色：暖色主调"
+  - "沙色 #D7BB8A，角色：自然底色"
+  - "靛蓝 #3B526A，角色：冷色平衡"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.

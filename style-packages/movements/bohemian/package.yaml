@@ -1,0 +1,17 @@
+id: bohemian
+name: 波西米亚风格
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以自由混搭、手工材质、旅行物件、自然色彩和不规则层次构成松弛而富有生活痕迹的视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
