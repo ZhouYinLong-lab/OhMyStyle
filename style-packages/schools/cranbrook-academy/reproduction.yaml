@@ -1,0 +1,15 @@
+medium: subject-independent visual style package
+technical:
+  base_canvas: 1280x720_or_provider_equivalent
+  output: preserve declared medium, structure, palette, lighting, and surface evidence
+  palette: declared palette with controlled natural variation
+construction:
+- compile the user subject into the package medium and structural rules
+- establish composition and light before small detail
+- inspect against the generic five-task suite
+- keep narrative optional unless requested
+avoid:
+- generic_global_filter
+- copied_source_composition
+- readable_text_or_branding
+- school_emblem_or_institutional_mark
