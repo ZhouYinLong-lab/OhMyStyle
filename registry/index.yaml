@@ -2722,7 +2722,7 @@ packages:
   rejected_example_count: 1
   benchmark: false
 - resource_id: lisa-arima
-  name: Lisa Arima
+  name: 丽莎·有马
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/lisa-arima
