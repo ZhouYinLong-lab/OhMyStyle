@@ -1,0 +1,16 @@
+id: egon-schiele
+name: 埃贡·席勒
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 干涩线描、扭曲人体和稀疏水彩色块；人物或物体以扭曲姿态、尖锐负形和不稳定边缘占据空白纸面；骨白、砖红、暗绿、烟灰和黑线形成裸露而克制的色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

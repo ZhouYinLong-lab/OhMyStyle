@@ -1,0 +1,22 @@
+canonical_name: 埃贡·席勒
+entity_type: artist_visual_style_direction
+origin: reference_backed_egon-schiele
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 空房间里一把歪斜的椅子和一件挂起的外套
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.leopoldmuseum.org/en/collection/artists/egon-schiele
+rendering:
+  model: 干涩线描、扭曲人体和稀疏水彩色块
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
