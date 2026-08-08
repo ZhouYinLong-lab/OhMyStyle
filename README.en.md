@@ -10,6 +10,8 @@ To add a package, start with the [English contribution guide](CONTRIBUTING.en.md
 
 Future expansion follows scoped batches: research original works and rights first, then complete each package with visual rules, a native 16:9 representative image, generated samples, bilingual README files, and validation. One package gets one commit; update the root gallery after the batch is complete. See the [style package expansion workflow](docs/EXPANSION-WORKFLOW.en.md) and the [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml) batch template.
 
+If you are looking for a visual result rather than a source category, use the [visual feature index](docs/VISUAL-INDEX.en.md) for soft natural light, deep dramatic light, geometric layout, pixel grids, neon cities, and more. The index is generated from package metadata and does not replace the seven source-based gallery categories below.
+
 ## Style package gallery
 
 The main gallery lists independent style packages only. Every card uses a horizontal 16:9 representative image; click the image or name to open the package README.
