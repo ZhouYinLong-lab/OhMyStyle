@@ -1,0 +1,16 @@
+id: sebastiao-salgado
+name: 塞巴斯蒂昂·萨尔加多
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 大画幅黑白纪实与环境群像；群体劳动、地貌和人物身体构成宏大的社会纪实尺度；深黑、银灰、粉尘白和少量土黄形成深沉黑白层次。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
