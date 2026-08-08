@@ -1,7 +1,7 @@
 schema_version: 1.0.0
 resource_id: new-topographics
 resource_type: visual_style
-maturity: L2
+maturity: L3
 task_independent: true
 focus_dimensions:
 - medium
@@ -23,7 +23,7 @@ artifacts:
   rejected_examples: examples/rejected
 evidence:
   reference_backed: true
-  accepted_example: false
+  accepted_example: true
   rejected_examples_optional: true
 rights:
   reference_policy: Each reference manifest row governs source, license, attribution,
