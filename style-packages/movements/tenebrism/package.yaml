@@ -1,0 +1,17 @@
+id: tenebrism
+name: 暗色调主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  以大面积暗部包围局部强光、深色背景和戏剧性明暗分割建立集中而有体积感的画面秩序。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

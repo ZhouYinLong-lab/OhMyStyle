@@ -1,0 +1,22 @@
+package: "暗色调主义"
+summary: "大面积暗部包围局部强光、深色背景和戏剧性明暗分割建立集中而有体积感的画面秩序"
+subject_policy: open
+visual_signature:
+  medium: "绘画与戏剧光线"
+  focus: "大面积暗部包围局部强光、深色背景和戏剧性明暗分割建立集中而有体积感的画面秩序"
+  composition:
+  - "唯一或主要光源有明确方向"
+  - "主体从暗部中逐步显现"
+  - "暗部保留颜色和材质信息"
+  palette:
+  - "深褐 #2B211E，角色：暗部"
+  - "朱红 #9E463A，角色：局部色彩"
+  - "暖白 #E8D5B5，角色：光照主体"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
