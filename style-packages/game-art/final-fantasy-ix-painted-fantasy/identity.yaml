@@ -1,0 +1,22 @@
+canonical_name: 最终幻想九绘本幻想游戏美术
+entity_type: game_art_visual_style_direction
+origin: reference_backed_final-fantasy-ix-painted-fantasy
+period: historical
+domain: game_art
+scope:
+  use_cases:
+  - 一座黄昏集市里堆着旅行箱和未点亮的纸灯
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://na.store.square-enix-games.com/final-fantasy-ix
+rendering:
+  model: 手绘背景、简化角色比例和旧绘本纹理
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
