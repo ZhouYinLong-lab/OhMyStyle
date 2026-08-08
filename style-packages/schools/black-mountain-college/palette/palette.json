@@ -1,0 +1,26 @@
+{
+  "colors": [
+    {
+      "name": "主色",
+      "hex": "#E5D7B8",
+      "role": "dominant"
+    },
+    {
+      "name": "辅助色",
+      "hex": "#4C514B",
+      "role": "supporting"
+    },
+    {
+      "name": "强调色",
+      "hex": "#A45B42",
+      "role": "accent"
+    },
+    {
+      "name": "深色",
+      "hex": "#6C7890",
+      "role": "grounding"
+    }
+  ],
+  "usage": "颜色用于建立关系，不是对具体作品的逐像素复制。",
+  "variation": "允许在相邻色相与自然光照范围内微调。"
+}

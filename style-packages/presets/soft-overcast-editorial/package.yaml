@@ -1,0 +1,16 @@
+id: soft-overcast-editorial
+name: 柔和阴天编辑摄影
+kind: preset
+domain: photography
+version: 0.1.0
+summary: 以均匀阴天光、低对比层次和克制色彩建立安静的编辑摄影预设，适合人物、建筑与日常物件。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

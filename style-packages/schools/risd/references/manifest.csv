@@ -1,0 +1,3 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+source-1,,罗德岛设计学院官方历史与传统,罗德岛设计学院,2026,https://www.risd.edu/about/history-and-tradition,reference-only-not-redistributed,罗德岛设计学院官方历史与传统,style_reference,用于研究学校的历史定位、教学方法或公开档案。
+source-2,,OhMyStyle 项目说明,OhMyStyle,2026,https://github.com/ZhouYinLong-lab/OhMyStyle,reference-only-not-redistributed,OhMyStyle,style_reference,用于说明本包是独立整理的可复现风格包。

@@ -1,0 +1,16 @@
+id: yale-school-of-art
+name: 耶鲁艺术学院
+kind: school
+domain: design
+version: 0.1.0
+summary: 以研究、批判讨论、媒介专注和高度个人化的工作室实践形成当代学院气质。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

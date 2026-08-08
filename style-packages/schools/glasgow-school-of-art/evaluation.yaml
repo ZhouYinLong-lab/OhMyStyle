@@ -1,0 +1,15 @@
+suite: visual-style-core-v1
+dimensions:
+  style_recognition: Can a reviewer identify the declared medium/process/educational
+    signature without relying on the package name?
+  object_completion: Are the requested subjects and objects complete and coherent?
+  prompt_adherence: Are the user constraints followed without adding unrequested elements?
+  color_adherence: Are palette roles preserved with controlled variation?
+  material_correctness: Do surfaces show believable material evidence?
+  composition_stability: Does hierarchy survive subject changes and aspect-ratio changes?
+  ai_artifacts: Are generic gloss, repetition, malformed edges, and synthetic clutter
+    controlled?
+  cross_model_stability: Does the signature remain visible across more than one model
+    or workflow?
+pass_rule: Score each dimension from 0 to 5; investigate any dimension below 3 before
+  publishing a package example.

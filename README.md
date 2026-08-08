@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-173-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-193-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -287,31 +287,68 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 
 ### 原创预设
 
+
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/muted-documentary-color/README.md"><img src="style-packages/presets/muted-documentary-color/gallery-16x9.jpg" width="230" alt="低饱和纪实色彩代表图"></a><br><strong>低饱和纪实色彩</strong><br><a href="style-packages/presets/muted-documentary-color/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/nocturnal-blue-hour/README.md"><img src="style-packages/presets/nocturnal-blue-hour/gallery-16x9.jpg" width="230" alt="夜色蓝调代表图"></a><br><strong>夜色蓝调</strong><br><a href="style-packages/presets/nocturnal-blue-hour/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/acid-yellow-cobalt/README.md"><img src="style-packages/presets/acid-yellow-cobalt/gallery-16x9.jpg" width="230" alt="酸黄钴蓝代表图"></a><br><strong>酸黄钴蓝</strong><br><a href="style-packages/presets/acid-yellow-cobalt/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/amber-window-interior/README.md"><img src="style-packages/presets/amber-window-interior/gallery-16x9.jpg" width="230" alt="琥珀窗光室内代表图"></a><br><strong>琥珀窗光室内</strong><br><a href="style-packages/presets/amber-window-interior/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/cool-concrete-minimal/README.md"><img src="style-packages/presets/cool-concrete-minimal/gallery-16x9.jpg" width="230" alt="冷灰混凝土极简代表图"></a><br><strong>冷灰混凝土极简</strong><br><a href="style-packages/presets/cool-concrete-minimal/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/deep-shadow-theater/README.md"><img src="style-packages/presets/deep-shadow-theater/gallery-16x9.jpg" width="230" alt="深影剧场光代表图"></a><br><strong>深影剧场光</strong><br><a href="style-packages/presets/deep-shadow-theater/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/dusty-rose-studio/README.md"><img src="style-packages/presets/dusty-rose-studio/gallery-16x9.jpg" width="230" alt="灰粉影棚静物代表图"></a><br><strong>灰粉影棚静物</strong><br><a href="style-packages/presets/dusty-rose-studio/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/forest-green-naturalism/README.md"><img src="style-packages/presets/forest-green-naturalism/gallery-16x9.jpg" width="230" alt="森林绿自然主义代表图"></a><br><strong>森林绿自然主义</strong><br><a href="style-packages/presets/forest-green-naturalism/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/frosted-daylight/README.md"><img src="style-packages/presets/frosted-daylight/gallery-16x9.jpg" width="230" alt="磨砂日光代表图"></a><br><strong>磨砂日光</strong><br><a href="style-packages/presets/frosted-daylight/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/hard-light-color-blocking/README.md"><img src="style-packages/presets/hard-light-color-blocking/gallery-16x9.jpg" width="230" alt="硬光色块摄影代表图"></a><br><strong>硬光色块摄影</strong><br><a href="style-packages/presets/hard-light-color-blocking/README.md">打开 README</a></td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/pastel-film-portrait/README.md"><img src="style-packages/presets/pastel-film-portrait/gallery-16x9.jpg" width="230" alt="粉彩胶片人像代表图"></a><br><strong>粉彩胶片人像</strong><br><a href="style-packages/presets/pastel-film-portrait/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/natural-window-light/README.md"><img src="style-packages/presets/natural-window-light/gallery-16x9.jpg" width="230" alt="自然窗光代表图"></a><br><strong>自然窗光</strong><br><a href="style-packages/presets/natural-window-light/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/monochrome-silver-gelatin/README.md"><img src="style-packages/presets/monochrome-silver-gelatin/gallery-16x9.jpg" width="230" alt="银盐黑白纪实代表图"></a><br><strong>银盐黑白纪实</strong><br><a href="style-packages/presets/monochrome-silver-gelatin/README.md">打开 README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/high-chroma-color-pairing/README.md"><img src="style-packages/presets/high-chroma-color-pairing/gallery-16x9.jpg" width="230" alt="高纯度撞色代表图"></a><br><strong>高纯度撞色</strong><br><a href="style-packages/presets/high-chroma-color-pairing/README.md">打开 README</a></td>
-<td width="33%"></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/monochrome-silver-gelatin/README.md"><img src="style-packages/presets/monochrome-silver-gelatin/gallery-16x9.jpg" width="230" alt="银盐黑白纪实代表图"></a><br><strong>银盐黑白纪实</strong><br><a href="style-packages/presets/monochrome-silver-gelatin/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/muted-documentary-color/README.md"><img src="style-packages/presets/muted-documentary-color/gallery-16x9.jpg" width="230" alt="低饱和纪实色彩代表图"></a><br><strong>低饱和纪实色彩</strong><br><a href="style-packages/presets/muted-documentary-color/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/natural-window-light/README.md"><img src="style-packages/presets/natural-window-light/gallery-16x9.jpg" width="230" alt="自然窗光代表图"></a><br><strong>自然窗光</strong><br><a href="style-packages/presets/natural-window-light/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/nocturnal-blue-hour/README.md"><img src="style-packages/presets/nocturnal-blue-hour/gallery-16x9.jpg" width="230" alt="夜色蓝调代表图"></a><br><strong>夜色蓝调</strong><br><a href="style-packages/presets/nocturnal-blue-hour/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/pastel-film-portrait/README.md"><img src="style-packages/presets/pastel-film-portrait/gallery-16x9.jpg" width="230" alt="粉彩胶片人像代表图"></a><br><strong>粉彩胶片人像</strong><br><a href="style-packages/presets/pastel-film-portrait/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/quiet-flash-documentary/README.md"><img src="style-packages/presets/quiet-flash-documentary/gallery-16x9.jpg" width="230" alt="安静直闪纪实代表图"></a><br><strong>安静直闪纪实</strong><br><a href="style-packages/presets/quiet-flash-documentary/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/soft-overcast-editorial/README.md"><img src="style-packages/presets/soft-overcast-editorial/gallery-16x9.jpg" width="230" alt="柔和阴天编辑摄影代表图"></a><br><strong>柔和阴天编辑摄影</strong><br><a href="style-packages/presets/soft-overcast-editorial/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/presets/warm-paper-still-life/README.md"><img src="style-packages/presets/warm-paper-still-life/gallery-16x9.jpg" width="230" alt="暖纸色静物代表图"></a><br><strong>暖纸色静物</strong><br><a href="style-packages/presets/warm-paper-still-life/README.md">打开 README</a></td>
 <td width="33%"></td>
 </tr>
 </table>
 
 ### 设计学校
 
+
 <table>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="乌尔姆设计学院代表图"></a><br><strong>乌尔姆设计学院</strong><br><a href="style-packages/schools/ulm-school/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/bauhaus/README.md"><img src="style-packages/schools/bauhaus/gallery-16x9.jpg" width="230" alt="包豪斯代表图"></a><br><strong>包豪斯</strong><br><a href="style-packages/schools/bauhaus/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/black-mountain-college/README.md"><img src="style-packages/schools/black-mountain-college/gallery-16x9.jpg" width="230" alt="黑山学院代表图"></a><br><strong>黑山学院</strong><br><a href="style-packages/schools/black-mountain-college/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/california-college-of-the-arts/README.md"><img src="style-packages/schools/california-college-of-the-arts/gallery-16x9.jpg" width="230" alt="加州艺术学院代表图"></a><br><strong>加州艺术学院</strong><br><a href="style-packages/schools/california-college-of-the-arts/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/cranbrook-academy/README.md"><img src="style-packages/schools/cranbrook-academy/gallery-16x9.jpg" width="230" alt="克兰布鲁克艺术学院代表图"></a><br><strong>克兰布鲁克艺术学院</strong><br><a href="style-packages/schools/cranbrook-academy/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/glasgow-school-of-art/README.md"><img src="style-packages/schools/glasgow-school-of-art/gallery-16x9.jpg" width="230" alt="格拉斯哥艺术学院代表图"></a><br><strong>格拉斯哥艺术学院</strong><br><a href="style-packages/schools/glasgow-school-of-art/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/new-bauhaus/README.md"><img src="style-packages/schools/new-bauhaus/gallery-16x9.jpg" width="230" alt="新包豪斯代表图"></a><br><strong>新包豪斯</strong><br><a href="style-packages/schools/new-bauhaus/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/paris-beaux-arts/README.md"><img src="style-packages/schools/paris-beaux-arts/gallery-16x9.jpg" width="230" alt="巴黎美术学院代表图"></a><br><strong>巴黎美术学院</strong><br><a href="style-packages/schools/paris-beaux-arts/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/parsons-school-of-design/README.md"><img src="style-packages/schools/parsons-school-of-design/gallery-16x9.jpg" width="230" alt="帕森斯设计学院代表图"></a><br><strong>帕森斯设计学院</strong><br><a href="style-packages/schools/parsons-school-of-design/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/risd/README.md"><img src="style-packages/schools/risd/gallery-16x9.jpg" width="230" alt="罗德岛设计学院代表图"></a><br><strong>罗德岛设计学院</strong><br><a href="style-packages/schools/risd/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-college-of-art/README.md"><img src="style-packages/schools/royal-college-of-art/gallery-16x9.jpg" width="230" alt="皇家艺术学院代表图"></a><br><strong>皇家艺术学院</strong><br><a href="style-packages/schools/royal-college-of-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/slade-school-of-fine-art/README.md"><img src="style-packages/schools/slade-school-of-fine-art/gallery-16x9.jpg" width="230" alt="斯莱德美术学院代表图"></a><br><strong>斯莱德美术学院</strong><br><a href="style-packages/schools/slade-school-of-fine-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="乌尔姆设计学院代表图"></a><br><strong>乌尔姆设计学院</strong><br><a href="style-packages/schools/ulm-school/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="耶鲁艺术学院代表图"></a><br><strong>耶鲁艺术学院</strong><br><a href="style-packages/schools/yale-school-of-art/README.md">打开 README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 

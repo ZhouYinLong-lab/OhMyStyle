@@ -1,0 +1,16 @@
+id: acid-yellow-cobalt
+name: 酸黄钴蓝
+kind: preset
+domain: photography
+version: 0.1.0
+summary: 以受控的高纯度酸黄与钴蓝关系建立清晰、现代且不依赖霓虹效果的产品视觉预设。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

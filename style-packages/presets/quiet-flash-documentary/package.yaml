@@ -1,0 +1,16 @@
+id: quiet-flash-documentary
+name: 安静直闪纪实
+kind: preset
+domain: photography
+version: 0.1.0
+summary: 以克制的机顶直闪、真实投影和不修饰的环境细节建立低戏剧性的纪实预设。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

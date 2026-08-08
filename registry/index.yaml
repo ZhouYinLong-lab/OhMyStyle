@@ -2568,6 +2568,125 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: acid-yellow-cobalt
+  name: 酸黄钴蓝
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/acid-yellow-cobalt
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: amber-window-interior
+  name: 琥珀窗光室内
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/amber-window-interior
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: cool-concrete-minimal
+  name: 冷灰混凝土极简
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/cool-concrete-minimal
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: deep-shadow-theater
+  name: 深影剧场光
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/deep-shadow-theater
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: dusty-rose-studio
+  name: 灰粉影棚静物
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/dusty-rose-studio
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: forest-green-naturalism
+  name: 森林绿自然主义
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/forest-green-naturalism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: frosted-daylight
+  name: 磨砂日光
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/frosted-daylight
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: hard-light-color-blocking
   name: 硬光色块摄影
   kind: preset
@@ -2681,6 +2800,57 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: quiet-flash-documentary
+  name: 安静直闪纪实
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/quiet-flash-documentary
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: soft-overcast-editorial
+  name: 柔和阴天编辑摄影
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/soft-overcast-editorial
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: warm-paper-still-life
+  name: 暖纸色静物
+  kind: preset
+  domain: photography
+  package_path: style-packages/presets/warm-paper-still-life
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: bauhaus
   name: 包豪斯
   kind: school
@@ -2689,6 +2859,78 @@ packages:
   maturity: L3
   focus_dimensions:
   - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: black-mountain-college
+  name: 黑山学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/black-mountain-college
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: california-college-of-the-arts
+  name: 加州艺术学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/california-college-of-the-arts
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: cranbrook-academy
+  name: 克兰布鲁克艺术学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/cranbrook-academy
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: glasgow-school-of-art
+  name: 格拉斯哥艺术学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/glasgow-school-of-art
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
   - composition
   - lighting
   - palette
@@ -2715,6 +2957,96 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: paris-beaux-arts
+  name: 巴黎美术学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/paris-beaux-arts
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: parsons-school-of-design
+  name: 帕森斯设计学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/parsons-school-of-design
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: risd
+  name: 罗德岛设计学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/risd
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: royal-college-of-art
+  name: 皇家艺术学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/royal-college-of-art
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: slade-school-of-fine-art
+  name: 斯莱德美术学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/slade-school-of-fine-art
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: ulm-school
   name: 乌尔姆设计学院
   kind: school
@@ -2729,6 +3061,24 @@ packages:
   - texture
   - layout
   reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: yale-school-of-art
+  name: 耶鲁艺术学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/yale-school-of-art
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
