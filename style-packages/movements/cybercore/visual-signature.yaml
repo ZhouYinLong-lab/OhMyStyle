@@ -1,0 +1,22 @@
+package: "赛博核"
+summary: "早期数字界面、透明图层、冷色发光面、系统图标隐喻和信息模块构成可控的数字未来视觉"
+subject_policy: open
+visual_signature:
+  medium: "数字界面设计"
+  focus: "早期数字界面、透明图层、冷色发光面、系统图标隐喻和信息模块构成可控的数字未来视觉"
+  composition:
+  - "界面层次有明确功能"
+  - "发光只围绕可解释的源"
+  - "背景和主体保持可读分离"
+  palette:
+  - "冷青 #70D9D4，角色：界面主色"
+  - "深靛 #202A52，角色：背景"
+  - "电紫 #9A72DB，角色：强调"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.

@@ -1,0 +1,9 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it.
+
+Generate a new image of {SUBJECT} in {LOCATION}. Apply this observable visual direction: 早期数字界面、透明图层、冷色发光面、系统图标隐喻和信息模块构成可控的数字未来视觉.
+Use these construction rules: 界面层次有明确功能; 发光只围绕可解释的源; 背景和主体保持可读分离. Preserve the user's subject, objects, location, narrative, and aspect ratio.
+Do not copy a reference work, exact pose, recognizable layout, logo, text, character, or landmark.
+Treat any example image as a visual analysis aid only; its subject and story are not defaults.
