@@ -1,0 +1,17 @@
+id: japandi
+name: 日式北欧风
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  融合日式克制与北欧功能主义，以自然材质、低饱和色彩、留白和简洁比例建立安静空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,22 @@
+package: "日式北欧风"
+summary: "融合日式克制与北欧功能主义，以自然材质、低饱和色彩、留白和简洁比例建立安静空间"
+subject_policy: open
+visual_signature:
+  medium: "室内与产品设计"
+  focus: "融合日式克制与北欧功能主义，以自然材质、低饱和色彩、留白和简洁比例建立安静空间"
+  composition:
+  - "自然木材、纸、石和织物"
+  - "低矮稳定比例与清楚动线"
+  - "少量植物或器物由用户决定"
+  palette:
+  - "浅木 #C6A77A，角色：主要材质"
+  - "灰米 #D8D1C1，角色：墙面与留白"
+  - "苔绿 #71806A，角色：自然点缀"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
