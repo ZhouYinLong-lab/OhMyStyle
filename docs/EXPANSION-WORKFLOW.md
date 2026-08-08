@@ -104,3 +104,16 @@ python tools/validate-expansion-batch.py batches/2026-08-batch-01.yaml
 - 每个完成包是否记录了来源、校验状态和独立 commit。
 
 批次记录只描述工作状态，不复制风格包内容。真正的风格规则仍以每个包目录中的结构化文件为准。
+
+## 6. 图片级验证与去重
+
+风格包完成后，先做资源审计，再做图片相似度审查；相似度报告只提供人工复核线索，不自动删除或合并包。
+
+```powershell
+python tools/audit-gallery-assets.py style-packages --output reports/gallery-assets.json --strict
+python tools/audit-image-similarity.py style-packages
+```
+
+代表图审计会检查文件存在性、图片完整性、原生 16:9 比例、纯黑或纯白空图，以及中文 README 是否引用代表图。相似度工具使用感知哈希、颜色分布、明度、边缘密度和中心—边缘布局信号，结果写入 `reports/image-similarity.json` 和 `reports/image-clusters.md`。
+
+高风险相似集群必须在相关包的 `evaluation.yaml` 中写明 `image_audit`：记录重叠的视觉维度、保留独立包的理由，以及下一步是重新生成代表图还是澄清视觉签名。若没有真实生图模型，主体独立性只提交 `pending` 的中性测试模板，不伪造图片或评分。

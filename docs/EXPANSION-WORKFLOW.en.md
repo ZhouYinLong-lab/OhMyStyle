@@ -104,3 +104,16 @@ The validator checks at least:
 - each completed package records sources, validation status, and its own commit.
 
 The batch record describes work status; it does not duplicate style content. The package directories remain the source of truth for style rules.
+
+## 6. Image-level validation and deduplication
+
+After a package is complete, audit its representative asset before reviewing image similarity. Similarity reports are human-review signals; they never delete or merge packages automatically.
+
+```powershell
+python tools/audit-gallery-assets.py style-packages --output reports/gallery-assets.json --strict
+python tools/audit-image-similarity.py style-packages
+```
+
+The gallery audit checks file existence, image integrity, native 16:9 ratio, suspicious all-black or all-white images, and the representative-image reference in the Chinese README. The similarity tool uses perceptual hashing, colour distribution, luminance, edge density, and centre-versus-border layout signals. It writes `reports/image-similarity.json` and `reports/image-clusters.md`.
+
+High-risk clusters must record `image_audit` in the relevant package `evaluation.yaml`, including overlapping visual dimensions, reasons to keep packages separate, and whether the next action is to regenerate a representative image or clarify the visual signature. Without a real image provider, subject-independence work remains a `pending` neutral test fixture; do not invent images or scores.

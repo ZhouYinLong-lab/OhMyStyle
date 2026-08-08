@@ -39,6 +39,15 @@ jobs:
       - name: Validate semantic package metadata and relationships
         run: python3 tools/validate-semantics.py style-packages
 
+      - name: Audit structured gallery assets
+        run: python3 tools/audit-gallery-assets.py style-packages --output reports/gallery-assets.json --strict
+
+      - name: Audit representative image similarity
+        run: python3 tools/audit-image-similarity.py style-packages
+
+      - name: Check image audit reports are in sync
+        run: git diff --exit-code -- reports/gallery-assets.json reports/image-similarity.json reports/image-clusters.md
+
       - name: Validate cross-style composite recipes
         run: python3 tools/validate-composite.py style-packages/composites
 
