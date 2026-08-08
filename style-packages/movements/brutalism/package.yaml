@@ -1,0 +1,17 @@
+id: brutalism
+name: 粗野主义
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以裸露结构、厚重体块、粗粝材质、强烈比例和直接功能表达建立不修饰的建筑与平面视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
