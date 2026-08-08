@@ -1,0 +1,22 @@
+canonical_name: 社会主义现实主义
+entity_type: movement_visual_style_direction
+origin: reference_backed_socialist-realism
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一群人共同修复洪水后的社区花园
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/s/socialist-realism
+rendering:
+  model: 具象绘画、清楚轮廓和公共叙事构图
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
