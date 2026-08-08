@@ -1,0 +1,17 @@
+id: ethereal
+name: 空灵
+kind: technique
+domain: design
+version: 0.1.0
+summary: >-
+  以稀薄空气、柔和边缘、低密度细节和克制高光营造轻盈通透但仍然可读的视觉状态。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
