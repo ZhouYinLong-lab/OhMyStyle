@@ -1,0 +1,11 @@
+medium: "装饰设计"
+materials:
+  - 用户主题提供的真实材料
+  - "细密金属线条、卷曲连接、镂空结构和精确重复形成的轻巧装饰表面"
+process:
+  - Translate the user's subject, objects, location, and narrative literally.
+  - Apply the package signature only after the subject is established.
+  - Keep style decisions observable and reversible at the prompt level.
+  - Check that no recurring motif was introduced by the package.
+technical_direction: Preserve subject identity and physical plausibility; use the palette as roles, not a fixed filter.
+safety_note: Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.

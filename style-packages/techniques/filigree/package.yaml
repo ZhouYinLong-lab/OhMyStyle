@@ -1,0 +1,17 @@
+id: filigree
+name: 金银丝细工
+kind: technique
+domain: design
+version: 0.1.0
+summary: >-
+  以细密金属线条、卷草连接、镂空结构和精确重复组织装饰性表面与轻巧轮廓。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
