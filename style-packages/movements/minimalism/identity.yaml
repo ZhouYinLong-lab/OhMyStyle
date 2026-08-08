@@ -1,0 +1,22 @@
+canonical_name: 极简主义
+entity_type: movement_visual_style_direction
+origin: reference_backed_minimalism
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一间空房间中只有三块悬浮的灰色板材
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/m/minimalism
+rendering:
+  model: 工业几何体、硬边表面与极少装饰
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
