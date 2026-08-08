@@ -1,0 +1,17 @@
+id: victorian
+name: 维多利亚风格
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以19世纪装饰秩序、繁复纹样、深色木材、织物层次和结构化室内细节形成历史感视觉。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

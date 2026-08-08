@@ -1,0 +1,11 @@
+medium: "历史设计"
+materials:
+  - 用户主题提供的真实材料
+  - "19世纪装饰秩序、繁复纹样、深色木材、织物层次和结构化室内细节形成历史感视觉"
+process:
+  - Translate the user's subject, objects, location, and narrative literally.
+  - Apply the package signature only after the subject is established.
+  - Keep style decisions observable and reversible at the prompt level.
+  - Check that no recurring motif was introduced by the package.
+technical_direction: Preserve subject identity and physical plausibility; use the palette as roles, not a fixed filter.
+safety_note: Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.

@@ -1,0 +1,22 @@
+package: "维多利亚风格"
+summary: "19世纪装饰秩序、繁复纹样、深色木材、织物层次和结构化室内细节形成历史感视觉"
+subject_policy: open
+visual_signature:
+  medium: "历史设计"
+  focus: "19世纪装饰秩序、繁复纹样、深色木材、织物层次和结构化室内细节形成历史感视觉"
+  composition:
+  - "层次化纹样与明确结构"
+  - "深色材质承载局部金属或宝石色"
+  - "光线强调体积而非现代广告质感"
+  palette:
+  - "胡桃木 #4A3025，角色：深色结构"
+  - "墨绿 #28463B，角色：墙面与织物"
+  - "暗金 #B08A43，角色：装饰高光"
+  surface:
+    - 材质细节服从用户主体，并保持可辨识
+  edge_behavior:
+    - 边缘行为由媒介与光线决定，不使用统一发光描边
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
