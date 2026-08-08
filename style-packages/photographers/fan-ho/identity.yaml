@@ -1,0 +1,53 @@
+canonical_name: 何藩
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点和叙事优先；下列内容只是测试标签，不是默认场景要求。
+  subjects:
+    - human-scale urban scene
+    - architectural form
+    - solitary figure or group
+    - object or still life with directional light
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.mplus.org.hk/en/collection/makers/fan-ho/'
+notes:
+  - 20世纪中期黑白摄影语境中的几何街景、人物剪影与光影分层。
+  - 影像可以有主观的戏剧化组织，但不得把香港、楼梯、三轮车、背影人物或小巷当成固定主体。
+composition:
+  - 用斜线、框架、墙面、阴影和人物比例建立几何秩序。
+  - 让前景、中景、背景以灰阶分层，而不是依赖复杂细节堆积。
+palette:
+  - 以黑、白和中性灰为主，允许少量由光线产生的银灰高光。
+lighting:
+  quality: directional natural light with controlled haze
+  behavior:
+    - 让硬光或侧光切出清晰的亮暗几何。
+    - 以反射光和受控雾气连接不同灰阶，不使用彩色轮廓光。
+medium: black-and-white fine-art street photography with darkroom-like tonal control
+materials:
+  support:
+    - gelatin silver or restrained monochrome film response
+    - natural masonry, glass, fabric, metal, or paper surfaces as supplied by the subject
+process:
+  - 先确定主体的几何关系与视觉入口。
+  - 再安排一束可解释的光线，使前中后景形成灰阶层次。
+  - 用局部遮挡、剪影或负空间压缩信息量。
+  - 最后控制高光、暗部和颗粒，避免全局滤镜感。
+technical_direction:
+  contrast: medium-high local contrast with preserved shadow detail
+  saturation: monochrome only; no sepia or teal-orange grading
+  perspective: normal to short telephoto perspective; keep geometry intentional
+  detail_density: selective detail, quiet backgrounds, readable silhouettes
+invariants:
+  - 黑白灰阶关系先于题材类型。
+  - 几何构图和光影分层必须跨主体保留。
+  - 人物出现与否由用户决定，不是本包的默认要求。
+avoid:
+  - generic film grain without tonal structure
+  - fixed Hong Kong street props or landmarks
+  - staged recreation of a named photograph
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, text, or branded layout.

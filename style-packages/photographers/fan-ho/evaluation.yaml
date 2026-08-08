@@ -1,0 +1,21 @@
+profiles:
+  generic:
+    required:
+      - package-specific visual signature is observable
+      - composition remains coherent for a new subject
+      - no copied reference composition or branded material
+      - neutral monochrome values organize the image rather than a color filter
+      - directional light creates an intentional geometric hierarchy
+    reject_if:
+      - style is represented only by a global color filter
+      - text, logo, watermark, or unintended signature is present
+      - an unrequested Hong Kong, alley, staircase, market, or tricycle motif is added
+  portrait:
+    required:
+      - requested subject remains recognizable and naturally posed
+      - face and body are shaped by the same neutral directional light
+  still_life:
+    required:
+      - requested objects remain count-accurate and physically distinct
+      - object edges and cast shadows follow the geometric light structure
+minimum_score: 7

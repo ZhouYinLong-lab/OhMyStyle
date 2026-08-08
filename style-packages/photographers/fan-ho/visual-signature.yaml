@@ -1,0 +1,22 @@
+package: 何藩
+summary: 黑白灰阶、几何光影、分层空间和克制暗房质感。
+subject_policy: open
+visual_signature:
+  medium: black-and-white fine-art photography
+  composition:
+    - strong diagonals, rectangles, frames, and negative space
+    - layered foreground, middle ground, and background
+    - human scale used only when the user requests people
+  lighting:
+    - directional natural light or a similarly coherent hard source
+    - bright planes and silhouettes separated by controlled haze
+  palette:
+    - neutral black, white, and a full range of silver-gray
+  surface:
+    - restrained analog grain and darkroom-like local contrast
+  edge_behavior:
+    - crisp geometric boundaries with selective softness in atmospheric depth
+invariants:
+  - Preserve the user's subject, location, object count, and narrative.
+  - Never add a recurring staircase, alley, tricycle, market, or Hong Kong landmark.
+  - Never copy a named photograph's pose, crop, lighting arrangement, or composition.

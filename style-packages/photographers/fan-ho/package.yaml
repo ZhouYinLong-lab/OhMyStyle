@@ -1,0 +1,17 @@
+id: fan-ho
+name: 何藩
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  黑白街头摄影，以几何构图、强光影分层、人物剪影和暗房式灰阶控制组织日常场景。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

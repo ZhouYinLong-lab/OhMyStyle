@@ -1,0 +1,9 @@
+asset: ../../gallery-16x9.jpg
+status: generated_demo_pending_human_review
+generator: Codex built-in image generation
+prompt_mode: anonymous_visual_signature
+subject: concrete pedestrian underpass after rain
+generated_at: 2026-08-08
+review:
+  decision: pending
+  notes: New anonymous composition for package preview; not a reproduction of a named photograph.
