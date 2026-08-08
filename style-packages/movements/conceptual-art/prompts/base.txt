@@ -11,6 +11,6 @@ Create a new subject and composition using these observable visual decisions:
 - 不同材质保留可辨识的表面行为。
 - 重复、编号位置和空白体现规则感，但不生成文字
 - 纹理沿结构和媒介方向组织，远景与次要区域降低密度。
-- 保持规则先于装饰，不复制具体观念艺术作品或文字内容
+- 保持规则先于装饰，不复制任何具体来源作品或文字内容
 - 不得复制来源作品的具体人物、地标、文字、标志、道具或构图。
 Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.
