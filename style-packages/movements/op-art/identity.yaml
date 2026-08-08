@@ -1,0 +1,22 @@
+canonical_name: 欧普艺术
+entity_type: movement_visual_style_direction
+origin: reference_backed_op-art
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 黑白波纹覆盖一面弧形墙，中心留出一块空白
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/o/op-art
+rendering:
+  model: 硬边几何、重复图案和视错觉结构
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

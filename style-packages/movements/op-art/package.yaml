@@ -1,0 +1,16 @@
+id: op-art
+name: 欧普艺术
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 硬边几何、重复图案和视错觉结构；重复线条、网格和波纹制造视觉震动，画面保持平面；黑白为主，辅以单一红或蓝强调色。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
