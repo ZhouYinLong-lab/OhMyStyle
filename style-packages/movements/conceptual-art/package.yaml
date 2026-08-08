@@ -1,0 +1,16 @@
+id: conceptual-art
+name: 观念艺术
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 现成物、文档式摄影和文字结构的视觉替代，但画面不出现可读文字；一个简单规则或观念决定物件排列，形式故意保持克制；白、黑、纸灰、红色标记和自然色形成概念性对比。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
