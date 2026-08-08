@@ -1,0 +1,13 @@
+package_id: symbolism
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://www.tate.org.uk/art/art-terms/s/symbolism
+  authority: Tate
+  title: Symbolism
+  supports: source traceability and observable package scope
+  accessed: '2026-08-07'
+attribution: This package studies observable visual decisions associated with Symbolism;
+  it does not reproduce a named work, character, location, logo, text, or exact composition.

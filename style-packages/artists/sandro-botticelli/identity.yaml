@@ -1,0 +1,22 @@
+canonical_name: 桑德罗·波提切利
+entity_type: artist_visual_style_direction
+origin: reference_backed_sandro-botticelli
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一座临海花园中的三件静物与飘动布幔
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.uffizi.it/en/artworks/the-birth-of-venus
+rendering:
+  model: 蛋彩画式平面色层与精细线描
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

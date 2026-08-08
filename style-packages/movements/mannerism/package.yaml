@@ -1,0 +1,16 @@
+id: mannerism
+name: 风格主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 精细线描、扭曲比例与人工化色彩；修长人体、复杂扭转和非自然空间让人物关系产生紧张感；酸黄、冷粉、青绿、灰紫和象牙白形成不稳定对比。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

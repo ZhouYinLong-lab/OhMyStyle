@@ -1,0 +1,22 @@
+canonical_name: 弗朗西斯科·德·苏巴朗
+entity_type: artist_visual_style_direction
+origin: reference_backed_francisco-de-zurbaran
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 黑暗房间里一只陶罐、一块白布和一束柠檬
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.museodelprado.es/en/the-collection/artist/zurbaran-francisco-de/
+rendering:
+  model: 静物与人物的雕塑性油画
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

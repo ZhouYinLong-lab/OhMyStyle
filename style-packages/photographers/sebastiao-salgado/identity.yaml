@@ -1,0 +1,22 @@
+canonical_name: 塞巴斯蒂昂·萨尔加多
+entity_type: photographer_visual_style_direction
+origin: reference_backed_sebastiao-salgado
+period: 20th_century_to_present
+domain: photography
+scope:
+  use_cases:
+  - 盐场边缘一群工人推着空车穿过白色尘土
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.amazonasimages.com/
+rendering:
+  model: 大画幅黑白纪实与环境群像
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

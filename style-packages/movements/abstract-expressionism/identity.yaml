@@ -1,0 +1,22 @@
+canonical_name: 抽象表现主义
+entity_type: movement_visual_style_direction
+origin: reference_backed_abstract-expressionism
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一面旧墙上覆盖着未完成的抽象涂层
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/a/abstract-expressionism
+rendering:
+  model: 动作绘画、厚薄笔触和开放画布
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

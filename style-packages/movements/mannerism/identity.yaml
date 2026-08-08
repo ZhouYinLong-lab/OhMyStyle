@@ -1,0 +1,22 @@
+canonical_name: 风格主义
+entity_type: movement_visual_style_direction
+origin: reference_backed_mannerism
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一座狭长楼梯间里摆放三件过度修长的雕塑
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/m/mannerism
+rendering:
+  model: 精细线描、扭曲比例与人工化色彩
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

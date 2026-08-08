@@ -1,0 +1,16 @@
+id: romare-bearden
+name: 罗梅尔·比尔登
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 纸张拼贴、绘画色块与手工边缘；人物和城市空间由切割平面、重叠形状和碎片化视线组成；深蓝、砖红、芥末黄、奶油和黑色形成爵士般撞色。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

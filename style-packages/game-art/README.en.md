@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-This directory contains 32 independent style packages. Each card uses a consistent 16:9 landscape representative image; click the image or name to open the package README.
+This directory contains 35 independent style packages. Each card uses a consistent 16:9 landscape representative image; click the image or name to open the package README.
 
 <table>
 <tr>
@@ -58,5 +58,10 @@ This directory contains 32 independent style packages. Each card uses a consiste
 <tr>
 <td width="33%" valign="top" align="center"><a href="ori-luminous-forest/README.en.md"><img src="ori-luminous-forest/gallery-16x9.jpg" width="230" alt="Luminous Hand-Painted Forest Game Art representative image"></a><br><strong>Luminous Hand-Painted Forest Game Art</strong><br><a href="ori-luminous-forest/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="rpg-maker-pixel-art/README.en.md"><img src="rpg-maker-pixel-art/gallery-16x9.jpg" width="230" alt="RPG Maker Pixel Art representative image"></a><br><strong>RPG Maker Pixel Art</strong><br><a href="rpg-maker-pixel-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="hollow-knight-inked-gothic/README.en.md"><img src="hollow-knight-inked-gothic/gallery-16x9.jpg" width="230" alt="Inked Gothic Metroidvania Game Art representative image"></a><br><strong>Inked Gothic Metroidvania Game Art</strong><br><a href="hollow-knight-inked-gothic/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="journey-minimalist-desert/README.en.md"><img src="journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="Minimalist Desert Journey Game Art representative image"></a><br><strong>Minimalist Desert Journey Game Art</strong><br><a href="journey-minimalist-desert/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="final-fantasy-ix-painted-fantasy/README.en.md"><img src="final-fantasy-ix-painted-fantasy/gallery-16x9.jpg" width="230" alt="Storybook Fantasy RPG Game Art representative image"></a><br><strong>Storybook Fantasy RPG Game Art</strong><br><a href="final-fantasy-ix-painted-fantasy/README.en.md">Open README</a></td>
 </tr>
 </table>

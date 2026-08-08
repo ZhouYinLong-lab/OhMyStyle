@@ -1,0 +1,31 @@
+{
+  "name": "gustav-klimt",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "海蓝",
+      "hex": "#668CA4",
+      "role": "distance"
+    },
+    {
+      "name": "沙粉",
+      "hex": "#D3A7A0",
+      "role": "skin_and_ground"
+    },
+    {
+      "name": "橄榄",
+      "hex": "#747653",
+      "role": "vegetation"
+    },
+    {
+      "name": "乳白",
+      "hex": "#EFE7D5",
+      "role": "light"
+    },
+    {
+      "name": "棕黑",
+      "hex": "#332B2A",
+      "role": "contour"
+    }
+  ]
+}

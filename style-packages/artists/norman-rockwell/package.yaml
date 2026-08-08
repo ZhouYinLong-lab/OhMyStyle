@@ -1,0 +1,16 @@
+id: norman-rockwell
+name: 诺曼·洛克威尔
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 叙事性商业插画、清晰轮廓与细密生活道具；小型人物关系、清楚动作和可读道具组成带有幽默的叙事插画；暖红、奶油、深蓝、棕色和少量黄形成亲切印刷色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

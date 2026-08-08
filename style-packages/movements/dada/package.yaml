@@ -1,0 +1,16 @@
+id: dada
+name: 达达主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 拼贴、现成物、照片碎片和粗糙排版痕迹；现成物、错位比例和拼贴版面打断传统构图秩序；黑白、广告红、酸黄、灰纸和工业蓝形成冲突色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

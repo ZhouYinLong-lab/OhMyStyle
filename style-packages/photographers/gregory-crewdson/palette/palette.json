@@ -1,0 +1,31 @@
+{
+  "name": "gregory-crewdson",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "银灰",
+      "hex": "#A7A9A5",
+      "role": "highlight"
+    },
+    {
+      "name": "炭黑",
+      "hex": "#242629",
+      "role": "shadow"
+    },
+    {
+      "name": "雾蓝",
+      "hex": "#657783",
+      "role": "ambient"
+    },
+    {
+      "name": "米白",
+      "hex": "#D8D1C2",
+      "role": "paper"
+    },
+    {
+      "name": "锈红",
+      "hex": "#8F5443",
+      "role": "accent"
+    }
+  ]
+}

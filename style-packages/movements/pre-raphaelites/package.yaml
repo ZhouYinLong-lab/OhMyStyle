@@ -1,0 +1,16 @@
+id: pre-raphaelites
+name: 拉斐尔前派
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 细密绘画、植物观察和中世纪式装饰；清晰前景植物、细密人物和装饰性叙事形成高密度平面；宝石绿、深红、蓝、金黄和乳白形成明亮精细色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

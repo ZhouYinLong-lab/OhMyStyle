@@ -1,0 +1,16 @@
+id: francisco-de-zurbaran
+name: 弗朗西斯科·德·苏巴朗
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 静物与人物的雕塑性油画；孤立主体、安静的几何体和大面积暗背景制造修道院式静默；炭黑、灰白、赭褐、暗红和少量金黄形成克制色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">蜡画 palette card</title>
+  <desc id="desc">颜料与蜡混合、叠层、熔融和刮除；半透明蜡层、刮痕和堆积边缘构成厚薄不均的抽象表面；蜂蜜黄、乳白、烟灰、朱红和深棕形成温暖蜡质色组。</desc>
+  <rect width="1600" height="900" fill="#10151D"/>
+  <circle cx="1280" cy="240" r="250" fill="#EEE7D6" opacity="0.85"/>
+  <circle cx="1030" cy="360" r="190" fill="#242326" opacity="0.85"/>
+  <path d="M0 520 C280 360 510 690 800 500 S1260 330 1600 520 V900 H0 Z" fill="#304C71" opacity="0.9"/>
+  <path d="M0 640 C280 520 530 760 880 610 S1260 520 1600 680 V900 H0 Z" fill="#B84D3D" opacity="0.9"/>
+  <rect x="80" y="600" width="248" height="150" rx="18" fill="#EEE7D6"/><text x="98" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">纸白</text><rect x="368" y="600" width="248" height="150" rx="18" fill="#242326"/><text x="386" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">铁黑</text><rect x="656" y="600" width="248" height="150" rx="18" fill="#304C71"/><text x="674" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">靛青</text><rect x="944" y="600" width="248" height="150" rx="18" fill="#B84D3D"/><text x="962" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">朱砂</text><rect x="1232" y="600" width="248" height="150" rx="18" fill="#B89252"/><text x="1250" y="730" font-family="sans-serif" font-size="22" fill="#ffffff">赭黄</text>
+  <text x="80" y="120" font-family="sans-serif" font-size="52" font-weight="700" fill="#F5F1E8">蜡画</text>
+  <text x="80" y="175" font-family="sans-serif" font-size="24" fill="#C8D0D8">版权安全的抽象色板卡 · 可替换为已获授权的代表图</text>
+</svg>

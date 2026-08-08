@@ -1,0 +1,16 @@
+id: suprematism
+name: 至上主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 纯几何抽象与硬边平涂；基本几何形体漂浮于开放底面，重力和比例被悬置；白、黑、红、蓝和黄形成纯净色面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

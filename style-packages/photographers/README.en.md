@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-This directory contains 20 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
+This directory contains 30 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
 
 <table>
 <tr>
@@ -33,14 +33,26 @@ This directory contains 20 independent style packages. Each card uses a horizont
 <tr>
 <td width="33%" valign="top" align="center"><a href="alfred-stieglitz/README.en.md"><img src="alfred-stieglitz/gallery-16x9.jpg" width="230" alt="Alfred Stieglitz representative image"></a><br><strong>Alfred Stieglitz</strong><br><a href="alfred-stieglitz/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="diane-arbus/README.en.md"><img src="diane-arbus/gallery-16x9.jpg" width="230" alt="Diane Arbus representative image"></a><br><strong>Diane Arbus</strong><br><a href="diane-arbus/README.en.md">Open README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="saul-leiter/README.en.md"><img src="saul-leiter/gallery-16x9.jpg" width="230" alt="Saul Leiter representative image"></a><br><strong>Saul Leiter</strong><br><a href="saul-leiter/README.en.md">Open README</a></td>
 </tr>
-</table>
-
-## Added in this batch
-
-These packages use rights-safe abstract palette cards temporarily; replace them after an authorized or independently generated representative image is reviewed.
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="saul-leiter/README.en.md"><img src="saul-leiter/gallery-16x9.jpg" width="230" alt="Saul Leiter representative image"></a><br><strong>Saul Leiter</strong><br><a href="saul-leiter/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="vivian-maier/README.en.md"><img src="vivian-maier/gallery-16x9.jpg" width="230" alt="Vivian Maier representative image"></a><br><strong>Vivian Maier</strong><br><a href="vivian-maier/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="rinko-kawauchi/README.en.md"><img src="rinko-kawauchi/gallery-16x9.jpg" width="230" alt="Rinko Kawauchi representative image"></a><br><strong>Rinko Kawauchi</strong><br><a href="rinko-kawauchi/README.en.md">Open README</a></td></tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="vivian-maier/README.en.md"><img src="vivian-maier/gallery-16x9.jpg" width="230" alt="Vivian Maier representative image"></a><br><strong>Vivian Maier</strong><br><a href="vivian-maier/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="rinko-kawauchi/README.en.md"><img src="rinko-kawauchi/gallery-16x9.jpg" width="230" alt="Rinko Kawauchi representative image"></a><br><strong>Rinko Kawauchi</strong><br><a href="rinko-kawauchi/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="man-ray/README.en.md"><img src="man-ray/gallery-16x9.jpg" width="230" alt="Man Ray representative image"></a><br><strong>Man Ray</strong><br><a href="man-ray/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="berenice-abbott/README.en.md"><img src="berenice-abbott/gallery-16x9.jpg" width="230" alt="Berenice Abbott representative image"></a><br><strong>Berenice Abbott</strong><br><a href="berenice-abbott/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="gordon-parks/README.en.md"><img src="gordon-parks/gallery-16x9.jpg" width="230" alt="Gordon Parks representative image"></a><br><strong>Gordon Parks</strong><br><a href="gordon-parks/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="william-klein/README.en.md"><img src="william-klein/gallery-16x9.jpg" width="230" alt="William Klein representative image"></a><br><strong>William Klein</strong><br><a href="william-klein/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="mary-ellen-mark/README.en.md"><img src="mary-ellen-mark/gallery-16x9.jpg" width="230" alt="Mary Ellen Mark representative image"></a><br><strong>Mary Ellen Mark</strong><br><a href="mary-ellen-mark/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="nick-brandt/README.en.md"><img src="nick-brandt/gallery-16x9.jpg" width="230" alt="Nick Brandt representative image"></a><br><strong>Nick Brandt</strong><br><a href="nick-brandt/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="gregory-crewdson/README.en.md"><img src="gregory-crewdson/gallery-16x9.jpg" width="230" alt="Gregory Crewdson representative image"></a><br><strong>Gregory Crewdson</strong><br><a href="gregory-crewdson/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="cindy-sherman/README.en.md"><img src="cindy-sherman/gallery-16x9.jpg" width="230" alt="Cindy Sherman representative image"></a><br><strong>Cindy Sherman</strong><br><a href="cindy-sherman/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="sebastiao-salgado/README.en.md"><img src="sebastiao-salgado/gallery-16x9.jpg" width="230" alt="Sebastião Salgado representative image"></a><br><strong>Sebastião Salgado</strong><br><a href="sebastiao-salgado/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="peter-lindbergh/README.en.md"><img src="peter-lindbergh/gallery-16x9.jpg" width="230" alt="Peter Lindbergh representative image"></a><br><strong>Peter Lindbergh</strong><br><a href="peter-lindbergh/README.en.md">Open README</a></td>
+</tr>
 </table>

@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-This directory contains 34 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
+This directory contains 44 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
 
 <table>
 <tr>
@@ -50,14 +50,33 @@ This directory contains 34 independent style packages. Each card uses a horizont
 <td width="33%" valign="top" align="center"><a href="leonardo-da-vinci/README.en.md"><img src="leonardo-da-vinci/gallery-16x9.jpg" width="230" alt="Leonardo da Vinci representative image"></a><br><strong>Leonardo da Vinci</strong><br><a href="leonardo-da-vinci/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="diego-velazquez/README.en.md"><img src="diego-velazquez/gallery-16x9.jpg" width="230" alt="Diego Velázquez representative image"></a><br><strong>Diego Velázquez</strong><br><a href="diego-velazquez/README.en.md">Open README</a></td>
 </tr>
-</table>
-
-## Added in this batch
-
-These packages use rights-safe abstract palette cards temporarily; replace them after an authorized or independently generated representative image is reviewed.
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="hilma-af-klint/README.en.md"><img src="hilma-af-klint/gallery-16x9.jpg" width="230" alt="Hilma af Klint representative image"></a><br><strong>Hilma af Klint</strong><br><a href="hilma-af-klint/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="leonora-carrington/README.en.md"><img src="leonora-carrington/gallery-16x9.jpg" width="230" alt="Leonora Carrington representative image"></a><br><strong>Leonora Carrington</strong><br><a href="leonora-carrington/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="tamara-de-lempicka/README.en.md"><img src="tamara-de-lempicka/gallery-16x9.jpg" width="230" alt="Tamara de Lempicka representative image"></a><br><strong>Tamara de Lempicka</strong><br><a href="tamara-de-lempicka/README.en.md">Open README</a></td></tr>
-<tr><td width="33%" valign="top" align="center"><a href="giorgio-de-chirico/README.en.md"><img src="giorgio-de-chirico/gallery-16x9.jpg" width="230" alt="Giorgio de Chirico representative image"></a><br><strong>Giorgio de Chirico</strong><br><a href="giorgio-de-chirico/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="agnes-martin/README.en.md"><img src="agnes-martin/gallery-16x9.jpg" width="230" alt="Agnes Martin representative image"></a><br><strong>Agnes Martin</strong><br><a href="agnes-martin/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="edward-hopper/README.en.md"><img src="edward-hopper/gallery-16x9.jpg" width="230" alt="Edward Hopper representative image"></a><br><strong>Edward Hopper</strong><br><a href="edward-hopper/README.en.md">Open README</a></td></tr>
-<tr><td width="33%" valign="top" align="center"><a href="ivan-aivazovsky/README.en.md"><img src="ivan-aivazovsky/gallery-16x9.jpg" width="230" alt="Ivan Aivazovsky representative image"></a><br><strong>Ivan Aivazovsky</strong><br><a href="ivan-aivazovsky/README.en.md">Open README</a></td><td width="33%"></td><td width="33%"></td></tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="hilma-af-klint/README.en.md"><img src="hilma-af-klint/gallery-16x9.jpg" width="230" alt="Hilma af Klint representative image"></a><br><strong>Hilma af Klint</strong><br><a href="hilma-af-klint/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="leonora-carrington/README.en.md"><img src="leonora-carrington/gallery-16x9.jpg" width="230" alt="Leonora Carrington representative image"></a><br><strong>Leonora Carrington</strong><br><a href="leonora-carrington/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="tamara-de-lempicka/README.en.md"><img src="tamara-de-lempicka/gallery-16x9.jpg" width="230" alt="Tamara de Lempicka representative image"></a><br><strong>Tamara de Lempicka</strong><br><a href="tamara-de-lempicka/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="giorgio-de-chirico/README.en.md"><img src="giorgio-de-chirico/gallery-16x9.jpg" width="230" alt="Giorgio de Chirico representative image"></a><br><strong>Giorgio de Chirico</strong><br><a href="giorgio-de-chirico/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="agnes-martin/README.en.md"><img src="agnes-martin/gallery-16x9.jpg" width="230" alt="Agnes Martin representative image"></a><br><strong>Agnes Martin</strong><br><a href="agnes-martin/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="edward-hopper/README.en.md"><img src="edward-hopper/gallery-16x9.jpg" width="230" alt="Edward Hopper representative image"></a><br><strong>Edward Hopper</strong><br><a href="edward-hopper/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="ivan-aivazovsky/README.en.md"><img src="ivan-aivazovsky/gallery-16x9.jpg" width="230" alt="Ivan Aivazovsky representative image"></a><br><strong>Ivan Aivazovsky</strong><br><a href="ivan-aivazovsky/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="sandro-botticelli/README.en.md"><img src="sandro-botticelli/gallery-16x9.jpg" width="230" alt="Sandro Botticelli representative image"></a><br><strong>Sandro Botticelli</strong><br><a href="sandro-botticelli/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="jan-van-eyck/README.en.md"><img src="jan-van-eyck/gallery-16x9.jpg" width="230" alt="Jan van Eyck representative image"></a><br><strong>Jan van Eyck</strong><br><a href="jan-van-eyck/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="artemisia-gentileschi/README.en.md"><img src="artemisia-gentileschi/gallery-16x9.jpg" width="230" alt="Artemisia Gentileschi representative image"></a><br><strong>Artemisia Gentileschi</strong><br><a href="artemisia-gentileschi/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="francisco-de-zurbaran/README.en.md"><img src="francisco-de-zurbaran/gallery-16x9.jpg" width="230" alt="Francisco de Zurbarán representative image"></a><br><strong>Francisco de Zurbarán</strong><br><a href="francisco-de-zurbaran/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="mary-cassatt/README.en.md"><img src="mary-cassatt/gallery-16x9.jpg" width="230" alt="Mary Cassatt representative image"></a><br><strong>Mary Cassatt</strong><br><a href="mary-cassatt/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="gustav-klimt/README.en.md"><img src="gustav-klimt/gallery-16x9.jpg" width="230" alt="Gustav Klimt representative image"></a><br><strong>Gustav Klimt</strong><br><a href="gustav-klimt/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="egon-schiele/README.en.md"><img src="egon-schiele/gallery-16x9.jpg" width="230" alt="Egon Schiele representative image"></a><br><strong>Egon Schiele</strong><br><a href="egon-schiele/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="georgia-okeeffe/README.en.md"><img src="georgia-okeeffe/gallery-16x9.jpg" width="230" alt="Georgia O'Keeffe representative image"></a><br><strong>Georgia O'Keeffe</strong><br><a href="georgia-okeeffe/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="norman-rockwell/README.en.md"><img src="norman-rockwell/gallery-16x9.jpg" width="230" alt="Norman Rockwell representative image"></a><br><strong>Norman Rockwell</strong><br><a href="norman-rockwell/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="romare-bearden/README.en.md"><img src="romare-bearden/gallery-16x9.jpg" width="230" alt="Romare Bearden representative image"></a><br><strong>Romare Bearden</strong><br><a href="romare-bearden/README.en.md">Open README</a></td>
+</tr>
 </table>

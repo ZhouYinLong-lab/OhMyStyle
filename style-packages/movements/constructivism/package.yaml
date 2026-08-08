@@ -1,0 +1,16 @@
+id: constructivism
+name: 构成主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 几何构成、印刷设计与工业材料感；对角线、圆弧、网格和机械结构构成强烈的平面空间；黑、白、红、黄和工业灰形成革命性几何色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,16 @@
+id: socialist-realism
+name: 社会主义现实主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 具象绘画、清楚轮廓和公共叙事构图；人物群体、劳动动作和清楚背景形成可读的公共场景；红、赭土、天蓝、暖灰和肤色形成正面但不霓虹的色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,31 @@
+{
+  "name": "arts-and-crafts",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "群青",
+      "hex": "#315A8A",
+      "role": "cool_structure"
+    },
+    {
+      "name": "朱红",
+      "hex": "#B74A3F",
+      "role": "focal_warm"
+    },
+    {
+      "name": "赭石",
+      "hex": "#B28A52",
+      "role": "earth"
+    },
+    {
+      "name": "石灰",
+      "hex": "#D9D4C6",
+      "role": "light"
+    },
+    {
+      "name": "炭黑",
+      "hex": "#26262A",
+      "role": "deep_form"
+    }
+  ]
+}

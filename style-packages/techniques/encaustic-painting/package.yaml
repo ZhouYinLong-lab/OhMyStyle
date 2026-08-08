@@ -1,0 +1,16 @@
+id: encaustic-painting
+name: 蜡画
+kind: technique
+domain: painting
+version: 0.1.0
+summary: 颜料与蜡混合、叠层、熔融和刮除；半透明蜡层、刮痕和堆积边缘构成厚薄不均的抽象表面；蜂蜜黄、乳白、烟灰、朱红和深棕形成温暖蜡质色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

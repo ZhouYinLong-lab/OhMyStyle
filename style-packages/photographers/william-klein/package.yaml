@@ -1,0 +1,16 @@
+id: william-klein
+name: 威廉·克莱因
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 广角街头摄影、运动模糊和图形裁切；近距离广角、切边人物和运动中的街道形成冲撞式构图；高反差黑白、红黄蓝广告色和粗颗粒形成城市能量。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

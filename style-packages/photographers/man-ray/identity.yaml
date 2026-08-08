@@ -1,0 +1,22 @@
+canonical_name: 曼·雷
+entity_type: photographer_visual_style_direction
+origin: reference_backed_man-ray
+period: 20th_century_to_present
+domain: photography
+scope:
+  use_cases:
+  - 一只金属手套、镜子和一枚柠檬的暗房静物
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.moma.org/artists/3716
+rendering:
+  model: 摄影结合太阳化、叠印和暗房实验
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

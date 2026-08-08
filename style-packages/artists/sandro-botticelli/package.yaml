@@ -1,0 +1,16 @@
+id: sandro-botticelli
+name: 桑德罗·波提切利
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 蛋彩画式平面色层与精细线描；优雅的线性轮廓、平衡的神话人物群组和轻盈的风向线组织平面叙事；淡蓝、贝壳粉、草绿、金发黄与乳白形成清澈的早期文艺复兴色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

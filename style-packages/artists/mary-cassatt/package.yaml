@@ -1,0 +1,16 @@
+id: mary-cassatt
+name: 玛丽·卡萨特
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 印象派笔触与粉彩般的柔软边缘；亲密的室内关系、偏近的裁切和自然姿态构成日常生活片段；柔和粉、薄荷绿、奶油黄、灰蓝和肤色形成轻盈色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

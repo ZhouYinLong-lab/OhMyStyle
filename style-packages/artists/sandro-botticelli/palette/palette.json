@@ -1,0 +1,31 @@
+{
+  "name": "sandro-botticelli",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "深红",
+      "hex": "#6E2525",
+      "role": "shadow"
+    },
+    {
+      "name": "赭金",
+      "hex": "#B88945",
+      "role": "warm_light"
+    },
+    {
+      "name": "靛蓝",
+      "hex": "#273E63",
+      "role": "cool_mid"
+    },
+    {
+      "name": "骨白",
+      "hex": "#E5D7B8",
+      "role": "light"
+    },
+    {
+      "name": "墨黑",
+      "hex": "#1D1B1B",
+      "role": "deep_form"
+    }
+  ]
+}

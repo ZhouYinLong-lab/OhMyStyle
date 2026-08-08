@@ -1,0 +1,16 @@
+id: cindy-sherman
+name: 辛迪·舍曼
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 构造性肖像摄影、角色化造型与可见布景；单一人物通过服装、姿态和背景暗示身份，但不提供明确叙事；粉灰、旧绿、奶油、黑和人工暖色形成舞台化色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

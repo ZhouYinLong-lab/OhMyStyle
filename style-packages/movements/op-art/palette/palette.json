@@ -1,0 +1,31 @@
+{
+  "name": "op-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "酸黄",
+      "hex": "#D4C62A",
+      "role": "accent"
+    },
+    {
+      "name": "洋红",
+      "hex": "#A94372",
+      "role": "secondary_accent"
+    },
+    {
+      "name": "深青",
+      "hex": "#1E555B",
+      "role": "ground"
+    },
+    {
+      "name": "粉灰",
+      "hex": "#C9B9B4",
+      "role": "light"
+    },
+    {
+      "name": "墨蓝",
+      "hex": "#182B45",
+      "role": "shadow"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+id: mary-ellen-mark
+name: 玛丽·艾伦·马克
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 长期纪实、亲密肖像与现场观察；人物与环境形成亲密距离，姿态自然而不被美化；黑白灰、旧墙棕、暗红和肤色形成克制纪实色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

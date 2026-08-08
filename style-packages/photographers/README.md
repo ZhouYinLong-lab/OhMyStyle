@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-本目录收录 20 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
+本目录收录 30 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
 
 <table>
 <tr>
@@ -33,14 +33,26 @@
 <tr>
 <td width="33%" valign="top" align="center"><a href="alfred-stieglitz/README.md"><img src="alfred-stieglitz/gallery-16x9.jpg" width="230" alt="阿尔弗雷德·斯蒂格利茨代表图"></a><br><strong>阿尔弗雷德·斯蒂格利茨</strong><br><a href="alfred-stieglitz/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="diane-arbus/README.md"><img src="diane-arbus/gallery-16x9.jpg" width="230" alt="黛安·阿勃丝代表图"></a><br><strong>黛安·阿勃丝</strong><br><a href="diane-arbus/README.md">打开 README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="saul-leiter/README.md"><img src="saul-leiter/gallery-16x9.jpg" width="230" alt="索尔·雷特代表图"></a><br><strong>索尔·雷特</strong><br><a href="saul-leiter/README.md">打开 README</a></td>
 </tr>
-</table>
-
-## 本批新增
-
-这些包使用版权安全的抽象色板卡作为临时代表图，获得授权或完成独立生图审核后可替换。
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="saul-leiter/README.md"><img src="saul-leiter/gallery-16x9.jpg" width="230" alt="索尔·雷特代表图"></a><br><strong>索尔·雷特</strong><br><a href="saul-leiter/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="vivian-maier/README.md"><img src="vivian-maier/gallery-16x9.jpg" width="230" alt="维维安·迈尔代表图"></a><br><strong>维维安·迈尔</strong><br><a href="vivian-maier/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="rinko-kawauchi/README.md"><img src="rinko-kawauchi/gallery-16x9.jpg" width="230" alt="川内伦子代表图"></a><br><strong>川内伦子</strong><br><a href="rinko-kawauchi/README.md">打开 README</a></td></tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="vivian-maier/README.md"><img src="vivian-maier/gallery-16x9.jpg" width="230" alt="维维安·迈尔代表图"></a><br><strong>维维安·迈尔</strong><br><a href="vivian-maier/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="rinko-kawauchi/README.md"><img src="rinko-kawauchi/gallery-16x9.jpg" width="230" alt="川内伦子代表图"></a><br><strong>川内伦子</strong><br><a href="rinko-kawauchi/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="man-ray/README.md"><img src="man-ray/gallery-16x9.jpg" width="230" alt="曼·雷代表图"></a><br><strong>曼·雷</strong><br><a href="man-ray/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="berenice-abbott/README.md"><img src="berenice-abbott/gallery-16x9.jpg" width="230" alt="贝伦妮丝·阿博特代表图"></a><br><strong>贝伦妮丝·阿博特</strong><br><a href="berenice-abbott/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="gordon-parks/README.md"><img src="gordon-parks/gallery-16x9.jpg" width="230" alt="戈登·帕克斯代表图"></a><br><strong>戈登·帕克斯</strong><br><a href="gordon-parks/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="william-klein/README.md"><img src="william-klein/gallery-16x9.jpg" width="230" alt="威廉·克莱因代表图"></a><br><strong>威廉·克莱因</strong><br><a href="william-klein/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="mary-ellen-mark/README.md"><img src="mary-ellen-mark/gallery-16x9.jpg" width="230" alt="玛丽·艾伦·马克代表图"></a><br><strong>玛丽·艾伦·马克</strong><br><a href="mary-ellen-mark/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="nick-brandt/README.md"><img src="nick-brandt/gallery-16x9.jpg" width="230" alt="尼克·布兰特代表图"></a><br><strong>尼克·布兰特</strong><br><a href="nick-brandt/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="gregory-crewdson/README.md"><img src="gregory-crewdson/gallery-16x9.jpg" width="230" alt="格里高利·克鲁德森代表图"></a><br><strong>格里高利·克鲁德森</strong><br><a href="gregory-crewdson/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="cindy-sherman/README.md"><img src="cindy-sherman/gallery-16x9.jpg" width="230" alt="辛迪·舍曼代表图"></a><br><strong>辛迪·舍曼</strong><br><a href="cindy-sherman/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="sebastiao-salgado/README.md"><img src="sebastiao-salgado/gallery-16x9.jpg" width="230" alt="塞巴斯蒂昂·萨尔加多代表图"></a><br><strong>塞巴斯蒂昂·萨尔加多</strong><br><a href="sebastiao-salgado/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="peter-lindbergh/README.md"><img src="peter-lindbergh/gallery-16x9.jpg" width="230" alt="彼得·林德伯格代表图"></a><br><strong>彼得·林德伯格</strong><br><a href="peter-lindbergh/README.md">打开 README</a></td>
+</tr>
 </table>

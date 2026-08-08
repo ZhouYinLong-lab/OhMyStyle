@@ -1,0 +1,16 @@
+id: jan-van-eyck
+name: 扬·凡·艾克
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 细密油画、透明釉层和高精度细节；室内正面空间、镜面反射和精密小物共同构成静默的仪式感；深红、橄榄绿、木棕、蓝灰与珍珠白形成宝石般低亮色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,16 @@
+id: magic-realism
+name: 魔幻现实主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 具象绘画、细节写实与一个超现实但克制的事件；日常空间保持真实，但一个不解释的异常物体改变心理重心；尘土色、灰绿、暗红、乳白和冷蓝形成平静而异样的色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

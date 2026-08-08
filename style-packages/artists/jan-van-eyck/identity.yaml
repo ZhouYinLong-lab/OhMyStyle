@@ -1,0 +1,22 @@
+canonical_name: 扬·凡·艾克
+entity_type: artist_visual_style_direction
+origin: reference_backed_jan-van-eyck
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 雨天室内的一张桌子、铜壶和空椅子
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait
+rendering:
+  model: 细密油画、透明釉层和高精度细节
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

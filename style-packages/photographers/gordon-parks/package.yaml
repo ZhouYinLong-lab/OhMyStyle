@@ -1,0 +1,16 @@
+id: gordon-parks
+name: 戈登·帕克斯
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 人文纪实摄影与环境肖像；人物处于真实环境中，环境线索与面部表情同等重要；黑白或低饱和彩色，肤色、深棕、灰蓝和暖黄形成克制对比。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,16 @@
+id: land-art
+name: 大地艺术
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 土地、石头、泥、盐和现场干预共同构成；巨大自然场地中的人工线条、圆环或挖掘痕迹形成尺度关系；土红、岩灰、沙黄、天蓝和植被绿形成自然色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

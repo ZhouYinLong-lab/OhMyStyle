@@ -1,0 +1,16 @@
+id: linocut-printmaking
+name: 油毡版画
+kind: technique
+domain: painting
+version: 0.1.0
+summary: 油毡刻线、平面油墨和套色印刷；黑白或双色块以强轮廓、负形和切刀方向组织画面；黑、纸白、靛蓝、砖红和赭黄形成版画色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

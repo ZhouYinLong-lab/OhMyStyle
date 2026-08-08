@@ -1,0 +1,22 @@
+canonical_name: 贝伦妮丝·阿博特
+entity_type: photographer_visual_style_direction
+origin: reference_backed_berenice-abbott
+period: 20th_century_to_present
+domain: photography
+scope:
+  use_cases:
+  - 清晨一座旧水塔与旁边的现代温室
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.icp.org/browse/archive/constituents/berenice-abbott
+rendering:
+  model: 直接摄影、清晰焦点和精确建筑构图
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

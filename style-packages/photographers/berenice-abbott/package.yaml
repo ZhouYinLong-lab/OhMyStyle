@@ -1,0 +1,16 @@
+id: berenice-abbott
+name: 贝伦妮丝·阿博特
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 直接摄影、清晰焦点和精确建筑构图；建筑立面、街道和科学物件以清楚几何结构和垂直线组织；银盐黑白、冷灰、白色和少量金属反光形成技术感色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

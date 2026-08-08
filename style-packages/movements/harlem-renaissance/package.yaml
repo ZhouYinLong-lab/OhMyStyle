@@ -1,0 +1,16 @@
+id: harlem-renaissance
+name: 哈莱姆文艺复兴
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 绘画、海报、拼贴与舞台性构图结合；人物、音乐、城市街道和装饰平面共同形成文化自信的场景；深棕、金黄、孔雀蓝、朱红和黑色形成爵士般色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

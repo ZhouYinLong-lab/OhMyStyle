@@ -1,0 +1,16 @@
+id: final-fantasy-ix-painted-fantasy
+name: 最终幻想九绘本幻想游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 手绘背景、简化角色比例和旧绘本纹理；绘本式城镇、夸张轮廓和温暖道具形成可亲近的幻想空间；暖棕、蓝紫、橙黄、草绿和奶油白形成童话色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

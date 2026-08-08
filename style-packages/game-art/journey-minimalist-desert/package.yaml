@@ -1,0 +1,16 @@
+id: journey-minimalist-desert
+name: 风之旅人极简沙漠游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 简化三维地形、布料剪影与广阔负空间；小型旅者、长路径和巨大沙丘形成极简尺度对照；沙金、赭红、雾蓝、象牙和深褐形成温暖空气感色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

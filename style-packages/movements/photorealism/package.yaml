@@ -1,0 +1,16 @@
+id: photorealism
+name: 照相写实主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 精确绘画或摄影式图像，边缘和细节高度可控；照片式裁切和日常对象被精确还原，画面冷静而无戏剧性；中性灰、真实肤色、车漆色和玻璃反光组成观察性色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

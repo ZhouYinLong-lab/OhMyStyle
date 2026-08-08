@@ -1,0 +1,16 @@
+id: fresco-painting
+name: 湿壁画
+kind: technique
+domain: painting
+version: 0.1.0
+summary: 湿灰泥上的矿物颜料、平面壁画与建筑尺度；建筑墙面、连续叙事和稳定人物群组形成公共空间画面；石灰白、赭红、群青、土黄和灰绿形成矿物色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

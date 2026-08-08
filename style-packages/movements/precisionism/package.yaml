@@ -1,0 +1,16 @@
+id: precisionism
+name: 精确主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 几何化具象、清晰边缘与简化体积；工厂、仓库和桥梁被简化为清楚的几何体，人物很少；白、灰、铁蓝、砖红和黄褐形成工业色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,22 @@
+canonical_name: 玛丽·卡萨特
+entity_type: artist_visual_style_direction
+origin: reference_backed_mary-cassatt
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 午后窗边一位成年人整理一叠未寄出的信
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.nga.gov/artists/1107-mary-cassatt/artworks
+rendering:
+  model: 印象派笔触与粉彩般的柔软边缘
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

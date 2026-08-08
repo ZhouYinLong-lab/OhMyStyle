@@ -1,0 +1,16 @@
+id: hollow-knight-inked-gothic
+name: 空洞骑士墨线哥特游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 手绘二维背景、墨线轮廓和少量柔和色层；地下遗迹、细小主体和巨大空洞空间由流动墨线与剪影构成；深蓝黑、骨白、锈红、苔绿和冷紫形成压低但清晰的色组。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

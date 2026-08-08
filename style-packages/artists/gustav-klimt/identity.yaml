@@ -1,0 +1,22 @@
+canonical_name: 古斯塔夫·克里姆特
+entity_type: artist_visual_style_direction
+origin: reference_backed_gustav-klimt
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一张覆盖几何布面的长椅与一束白花
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.belvedere.at/en/kiss-gustav-klimt
+rendering:
+  model: 金箔联想、平面装饰和局部写实身体结合
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

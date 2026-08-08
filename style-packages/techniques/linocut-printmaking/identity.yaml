@@ -1,0 +1,22 @@
+canonical_name: 油毡版画
+entity_type: technique_visual_style_direction
+origin: reference_backed_linocut-printmaking
+period: historical
+domain: painting
+scope:
+  use_cases:
+  - 一棵冬树、一只空鸟笼和三块重叠山影
+  - portrait
+  - still_life
+  - architecture_environment
+  exclusions:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+sources:
+- https://www.tate.org.uk/art/art-terms/l/linocut
+rendering:
+  model: 油毡刻线、平面油墨和套色印刷
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
