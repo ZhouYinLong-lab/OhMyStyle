@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-它最适合从organize the scene with a readable foreground, middle distance, and luminous sky or background field；use a str开始尝试。光线、色彩和表面各有位置，主体可以自由变化。
+它最动人的地方是“## 风格重点 以有方向的旋转笔触、高纯度互补色、厚重的颜料质感和天空、植物、地面中的运动感组织画面，保留观察对象的结构，不复制具体作品”。画面不依赖固定场景，视觉秩序本身已经很清楚。
 
 ## 风格重点
 

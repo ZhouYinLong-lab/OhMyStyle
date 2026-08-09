@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-This package is a good place to begin with A post-impressionist painting built from observed directional strokes, high-chroma complementary color, thick material paint, and expressive moti. Light, colour, and surface each have a role, while the subject remains open.
+Its strongest pull comes from “directional strokes, complementary colour, thick material paint, and motion carried through sky, ground, and form”. The visual order remains clear without a fixed scene.
 
 ## Style focus
 
