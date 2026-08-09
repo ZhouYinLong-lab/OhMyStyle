@@ -12,6 +12,10 @@
 
 This independent style package for **Michelangelo Buonarroti** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+Look at Independent Michelangelo Buonarroti style package focused on 纪念性人体、雕塑式体积、复杂透视与强轮廓; it requires new subjects and arrangements first and the details second. That is an easy way into the direction, with room left for a new subject.
+
 ## Visual focus
 
 纪念性人体、雕塑式体积、复杂透视与强轮廓. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
