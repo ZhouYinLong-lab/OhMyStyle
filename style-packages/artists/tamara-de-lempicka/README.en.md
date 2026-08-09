@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+This package is easy to approach through 以装饰艺术时期的几何构形、金属般清晰的体积、冷峻优雅的主体和高对比色面组织现代主体与静物. Its visual character is clear, while the actual content remains yours.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
