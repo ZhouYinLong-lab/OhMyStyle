@@ -14,7 +14,7 @@ This independent style package for **Edgar Degas** turns public references and o
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between Independent Edgar Degas style package focused on 裁切视角、高机位、非对称构图与舞者动作; it requires new subjects and arrangements. A restrained treatment usually gives the image more staying power.
+Start with “cropped viewpoints, high angles, asymmetrical balance, and movement caught before it settles”. It sets the viewing rhythm while leaving the subject open to your prompt.
 
 ## Visual focus
 

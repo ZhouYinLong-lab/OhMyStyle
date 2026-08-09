@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-这个方向的魅力在于new subject and arrangement；clear primary focal hierarchy之间的关系。处理得克制一些，画面会更耐看。
+我会先看“## 风格重点 裁切视角、高机位、非对称构图与动作节奏”。它把观看节奏定下来，题材可以按你的需要替换。
 
 ## 风格重点
 
