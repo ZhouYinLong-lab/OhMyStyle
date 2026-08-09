@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+以几何图式、螺旋、对称结构和富有精神象征意味的色彩组织抽象绘画，强调符号系统的秩序与柔性变化 gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
