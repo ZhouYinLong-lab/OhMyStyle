@@ -12,6 +12,10 @@
 
 This independent style package for **Grant Wood** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+Look at Independent Grant Wood style package focused on 乡土几何、清晰垂直形、冷静中西部色调与细密描绘; it requires new subjects and arrangements first and the details second. That is an easy way into the direction, with room left for a new subject.
+
 ## Visual focus
 
 乡土几何、清晰垂直形、冷静中西部色调与细密描绘. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
