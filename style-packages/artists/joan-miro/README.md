@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-这个方向的魅力在于new subject and arrangement；clear primary focal hierarchy之间的关系。处理得克制一些，画面会更耐看。
+“## 风格重点 生物形态线条、留白、原色岛屿与轻盈非对称”决定了这个包的观看距离。人物、物体和环境都可以另行指定。
 
 ## 风格重点
 

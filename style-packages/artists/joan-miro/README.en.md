@@ -14,7 +14,7 @@ This independent style package for **Joan Miró** turns public references and ob
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between Independent Joan Miró style package focused on 生物形态线条、留白、原色岛屿与轻盈非对称; it requires new subjects and arrangements. A restrained treatment usually gives the image more staying power.
+“biomorphic line, open ground, primary colour islands, and a light asymmetry that keeps the field alive” sets the viewing distance. People, objects, and places can change independently.
 
 ## Visual focus
 
