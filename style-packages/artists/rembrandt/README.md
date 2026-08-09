@@ -12,6 +12,10 @@
 
 这是一个面向「伦勃朗·范·莱因」的独立风格包。它把公开作品、研究资料和可观察的媒介、构图、色彩、光线、材质与纹理决策整理为可执行约束，用于生成新的主题，不用于复制某一幅具体作品。
 
+## 策展短评
+
+伦勃朗最动人的地方，是光线从来不只是照亮人物，而是在决定谁被看见、谁暂时退入阴影，以及皮肤、布料和金属如何拥有不同的触感。这个包适合用来建立有心理重量的画面，但它不要求每次都生成肖像、历史场景或宗教叙事；真正稳定的是光的方向、暗部的层次和局部笔触的重量。
+
 ## 风格重点
 
 以方向明确的光线、具有心理存在感的人物、温暖的深色底子、分层的皮肤与布料和局部可触的厚薄笔触建立质感，而不是套用棕色滤镜。
@@ -23,6 +27,7 @@
 - [https://commons.wikimedia.org/wiki/File:Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_Google_Art_Project.jpg](https://commons.wikimedia.org/wiki/File:Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_Google_Art_Project.jpg)
 - [https://commons.wikimedia.org/wiki/File:Andromeda,_Rembrandt_van_Rijn,_1630-1631,_Mauritshuis,_The_Hague.jpg](https://commons.wikimedia.org/wiki/File:Andromeda,_Rembrandt_van_Rijn,_1630-1631,_Mauritshuis,_The_Hague.jpg)
 - [https://www.rijksmuseum.nl/en/collection/object/Isaac-and-Rebecca-Known-as-The-Jewish-Bride--019c1265e6dbf108d4587ab2b7c02c66](https://www.rijksmuseum.nl/en/collection/object/Isaac-and-Rebecca-Known-as-The-Jewish-Bride--019c1265e6dbf108d4587ab2b7c02c66)
+- [荷兰国立博物馆：伦勃朗](https://www.rijksmuseum.nl/en/stories/rembrandt-van-rijn)
 
 ## 来源与版权
 

@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+Rembrandt's most compelling decision is that light does more than illuminate a figure. It decides who is seen, who recedes into shadow, and how skin, cloth, and metal acquire different tactile weight. This package is useful for building images with psychological gravity, but it does not require a portrait, historical scene, or religious narrative every time. The stable signature is the direction of light, the layering of the darks, and the weight of local paint handling.
+
 ## Style focus
 
 A reference-backed baroque painting profile focused on directional light, psychological presence, warm dark grounds, layered flesh and cloth, and selective tactile paint rather than a generic brown filter.
@@ -23,6 +27,7 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 - [https://commons.wikimedia.org/wiki/File:Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_Google_Art_Project.jpg](https://commons.wikimedia.org/wiki/File:Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_Google_Art_Project.jpg)
 - [https://commons.wikimedia.org/wiki/File:Andromeda,_Rembrandt_van_Rijn,_1630-1631,_Mauritshuis,_The_Hague.jpg](https://commons.wikimedia.org/wiki/File:Andromeda,_Rembrandt_van_Rijn,_1630-1631,_Mauritshuis,_The_Hague.jpg)
 - [https://www.rijksmuseum.nl/en/collection/object/Isaac-and-Rebecca-Known-as-The-Jewish-Bride--019c1265e6dbf108d4587ab2b7c02c66](https://www.rijksmuseum.nl/en/collection/object/Isaac-and-Rebecca-Known-as-The-Jewish-Bride--019c1265e6dbf108d4587ab2b7c02c66)
+- [Rijksmuseum: Rembrandt van Rijn](https://www.rijksmuseum.nl/en/stories/rembrandt-van-rijn)
 
 ## Sources and rights
 
