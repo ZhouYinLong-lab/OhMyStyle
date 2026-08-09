@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+expressionist painting focused on psychological color, contour that carries bodily tension, compressed space, and recurring organic or architectu gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+
 ## Style focus
 
 A reference-backed expressionist painting profile focused on psychological color, contour that carries bodily tension, compressed space, and recurring organic or architectural rhythms without copying an iconic image.
