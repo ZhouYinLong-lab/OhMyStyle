@@ -14,7 +14,7 @@ This independent style package for **Pierre-Auguste Renoir** turns public refere
 
 ## Curatorial note
 
-Independent Pierre-Auguste Renoir style package focused on 明亮户外光、柔和肤色、破碎色点与社交氛围; it requires new subjects and arrangements gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+Its strongest pull comes from “bright outdoor light, broken colour, soft edges, warm skin tones, and the ease of a shared social moment”. The visual order remains clear without a fixed scene.
 
 ## Visual focus
 
