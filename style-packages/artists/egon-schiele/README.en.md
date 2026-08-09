@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-This package is a good place to begin with 干涩线描、扭曲人体和稀疏水彩色块；主体或物体以扭曲姿态、尖锐负形和不稳定边缘占据空白纸面；骨白、砖红、暗绿、烟灰和黑线形成裸露而克制的色组. Light, colour, and surface each have a role, while the subject remains open.
+Its strongest pull comes from “angular contour, exposed negative space, tense poses, and sparse colour on a dry paper ground”. The visual order remains clear without a fixed scene.
 
 ## Read before use
 
