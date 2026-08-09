@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+I would enter this package through 静物与主体的雕塑性油画；孤立主体、安静的几何体和大面积暗背景制造修道院式静默；炭黑、灰白、赭褐、暗红和少量金黄形成克制色组. The image has a clear point of attention, while the subject can change freely.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
