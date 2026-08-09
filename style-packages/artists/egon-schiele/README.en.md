@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+This package is a good place to begin with 干涩线描、扭曲人体和稀疏水彩色块；主体或物体以扭曲姿态、尖锐负形和不稳定边缘占据空白纸面；骨白、砖红、暗绿、烟灰和黑线形成裸露而克制的色组. Light, colour, and surface each have a role, while the subject remains open.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
