@@ -44,6 +44,13 @@ The template maps to these package files:
 - `resource.yaml`: maturity and registry contract;
 - `README.md` and `README.en.md`: user-facing bilingual documentation.
 
+Each README should also include a short `Curatorial note`. Keep it concrete and
+reader-facing: describe the feeling of the image and the visual decisions worth
+trying, usually in 40–100 Chinese characters or a similarly brief English
+paragraph. Rewrite the English naturally rather than translating sentence by
+sentence. Describe transferable visual language only; never turn a representative
+image's person, place, object, or story into a default subject.
+
 ## Subject-independence requirement
 
 `prompts/base.txt` must contain the subject-independence contract and use the

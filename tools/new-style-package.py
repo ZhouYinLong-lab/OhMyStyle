@@ -134,6 +134,8 @@ def token_values(args: argparse.Namespace) -> dict[str, str]:
         "APPLICATION": args.application or ("game_art" if args.kind == "game_art" else "general"),
         "FAMILY": args.family or args.kind,
         "SUMMARY": args.summary.strip(),
+        "CURATORIAL_NOTE_ZH": "TODO：用 40–100 字写出画面的直接感受和最值得尝试的视觉决定。",
+        "CURATORIAL_NOTE_EN": "TODO: In a short paragraph, describe the image's immediate feeling and the visual decisions worth trying.",
         "VERSION": "0.1.0",
         "MATURITY": maturity,
         "REFERENCE_BACKED": reference_backed,
