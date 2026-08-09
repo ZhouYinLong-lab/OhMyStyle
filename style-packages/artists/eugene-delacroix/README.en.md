@@ -12,6 +12,10 @@
 
 This independent style package for **Eugène Delacroix** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+The character of this package appears quickly in Independent Eugène Delacroix style package focused on 对角线运动、暖冷冲突、饱和色与自由笔触; it requires new subjects and arrangements. Keep its rhythm and material response, then let the prompt choose the subject.
+
 ## Visual focus
 
 对角线运动、暖冷冲突、饱和色与自由笔触. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
