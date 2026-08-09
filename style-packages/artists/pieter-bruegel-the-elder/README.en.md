@@ -14,7 +14,7 @@ This independent style package for **Pieter Bruegel the Elder** turns public ref
 
 ## Curatorial note
 
-This package is a good place to begin with Independent Pieter Bruegel the Elder style package focused on 高视点全景、微小群像、季节劳动与乡土地景; it requires new subjects and arrangements. Light, colour, and surface each have a role, while the subject remains open.
+Get “a high viewpoint, small figures, broad seasonal space, and many quiet actions held in one panorama” right first; leave the actual content to your prompt. The style can then travel to another subject.
 
 ## Visual focus
 

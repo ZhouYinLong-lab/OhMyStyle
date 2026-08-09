@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-它最适合从new subject and arrangement；clear primary focal hierarchy开始尝试。光线、色彩和表面各有位置，主体可以自由变化。
+先把“## 风格重点 高视点全景、微小群像、季节劳动与乡土地景”做准，其他内容可以留给你的 Prompt。这样换一个主题，风格仍不会散掉。
 
 ## 风格重点
 
