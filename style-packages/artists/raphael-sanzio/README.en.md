@@ -12,6 +12,10 @@
 
 This independent style package for **Raphael** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+Independent Raphael style package focused on 理想化人体、平衡群像、清晰轮廓与古典秩序; it requires new subjects and arrangements gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+
 ## Visual focus
 
 理想化人体、平衡群像、清晰轮廓与古典秩序. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
