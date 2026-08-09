@@ -14,7 +14,7 @@ This independent style package for **Gustave Courbet** turns public references a
 
 ## Curatorial note
 
-I would enter this package through Independent Gustave Courbet style package focused on 厚重物质感、未理想化主体、土色现实与坚实地面; it requires new subjects and arrangements. The image has a clear point of attention, while the subject can change freely.
+Start with “solid bodies, heavy material presence, earthy colour, and an unidealized ground”. It sets the viewing rhythm while leaving the subject open to your prompt.
 
 ## Visual focus
 
