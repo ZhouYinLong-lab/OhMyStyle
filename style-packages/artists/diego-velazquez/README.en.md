@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+The appeal of this direction sits in the relationship between A court and subject painting built from controlled dark space, selective illumination, precise faces and fabrics, and lively broad passages that. A restrained treatment usually gives the image more staying power.
+
 ## Style focus
 
 A court and portrait painting profile built from controlled dark space, selective illumination, precise faces and fabrics, and lively broad passages that dissolve at the edges.
