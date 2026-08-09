@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-这个方向的魅力在于new subject and arrangement；clear primary focal hierarchy之间的关系。处理得克制一些，画面会更耐看。
+这个方向的气质落在“## 风格重点 晕涂、观察性解剖、空气透视与自然研究”上。保住这条线索，换成新的主体也能成立。
 
 ## 风格重点
 

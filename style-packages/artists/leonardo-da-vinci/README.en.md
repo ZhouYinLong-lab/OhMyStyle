@@ -14,7 +14,7 @@ This independent style package for **Leonardo da Vinci** turns public references
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between Independent Leonardo da Vinci style package focused on 晕涂、观察性解剖、空气透视与自然研究; it requires new subjects and arrangements. A restrained treatment usually gives the image more staying power.
+The character of this package sits in “sfumato transitions, close observation, atmospheric depth, and a measured study of form”. Keep that thread and a new subject can still belong here.
 
 ## Visual focus
 
