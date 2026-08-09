@@ -12,6 +12,10 @@
 
 This independent style package for **Joan Miró** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+The appeal of this direction sits in the relationship between Independent Joan Miró style package focused on 生物形态线条、留白、原色岛屿与轻盈非对称; it requires new subjects and arrangements. A restrained treatment usually gives the image more staying power.
+
 ## Visual focus
 
 生物形态线条、留白、原色岛屿与轻盈非对称. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
