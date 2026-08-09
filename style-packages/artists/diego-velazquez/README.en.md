@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between A court and subject painting built from controlled dark space, selective illumination, precise faces and fabrics, and lively broad passages that. A restrained treatment usually gives the image more staying power.
+“a dark architectural field, restrained figures, quiet gaze, and brushwork that softens at the edges” sets the viewing distance. People, objects, and places can change independently.
 
 ## Style focus
 

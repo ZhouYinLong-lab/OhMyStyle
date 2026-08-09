@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-这个方向的魅力在于establish a dark architectural field with a clear human focal group or sitter；use gaze, stance, doorway, mirro之间的关系。处理得克制一些，画面会更耐看。
+“## 风格重点 以宫廷肖像和主体画的克制秩序为基础：深色空间中只保留必要的光，准确处理脸部与织物，并让宽松的笔触在轮廓边缘自然消散”决定了这个包的观看距离。人物、物体和环境都可以另行指定。
 
 ## 风格重点
 
