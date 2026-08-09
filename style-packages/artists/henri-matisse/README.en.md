@@ -14,7 +14,7 @@ This independent style package for **Henri Matisse** turns public references and
 
 ## Curatorial note
 
-Matisse's lightness does not come from making an image empty. It comes from asking colour, contour, and decorative shape to carry more of the composition. He often weakened conventional perspective so that flat colour fields, curved lines, and open space could build the scene together. That approach can make an ordinary subject feel bright and rhythmic without importing a fixed figure, interior, or plant motif.
+Matisse lets colour arrive before detail. Broad colour fields, simple contours, and decorative lines build the space together, giving the forms a lightness close to graphic design. With this package, an ordinary object can feel bright, direct, and rhythmic while remaining the user's subject.
 
 ## Visual focus
 
