@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+The appeal of this direction sits in the relationship between 纸张拼贴、绘画色块与手工边缘；主体和环境空间由切割平面、重叠形状和碎片化视线组成；深蓝、砖红、芥末黄、奶油和黑色形成爵士般撞色. A restrained treatment usually gives the image more staying power.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
