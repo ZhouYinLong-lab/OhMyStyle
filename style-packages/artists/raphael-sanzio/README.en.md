@@ -14,7 +14,7 @@ This independent style package for **Raphael** turns public references and obser
 
 ## Curatorial note
 
-Independent Raphael style package focused on 理想化人体、平衡群像、清晰轮廓与古典秩序; it requires new subjects and arrangements gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+“idealized volume, balanced grouping, lucid contour, and a calm classical order” sets the viewing distance. People, objects, and places can change independently.
 
 ## Visual focus
 
