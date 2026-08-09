@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+I would use An abstract painting built from geometric and lyrical marks, measured color tensions, layered planes, and compositional balance without narrative as the entry point. It sets a clear viewing distance without fixing the topic.
+
 ## Style focus
 
 An abstract painting profile built from geometric and lyrical marks, measured color tensions, layered planes, and compositional balance without narrative illustration.
