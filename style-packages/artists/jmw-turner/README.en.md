@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+This package is a good place to begin with An atmospheric landscape painting built from dissolving edges, vaporous layered paint, luminous weather, and directional spatial movement without. Light, colour, and surface each have a role, while the subject remains open.
+
 ## Style focus
 
 An atmospheric landscape painting profile built from dissolving edges, vaporous layered paint, luminous weather, and directional spatial movement without reproducing a named marine or railway composition.
