@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+This package is a good place to begin with A painting built from constructive color planes, compressed perspective, repeated directional brush marks, and objects that remain solid while vi. Light, colour, and surface each have a role, while the subject remains open.
+
 ## Style focus
 
 A painting profile built from constructive color planes, compressed perspective, repeated directional brush marks, and objects that remain solid while viewpoints subtly disagree.

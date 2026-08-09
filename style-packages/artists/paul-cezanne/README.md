@@ -12,6 +12,10 @@
 
 这是一个面向「保罗·塞尚」的独立风格包。它把公开作品、研究资料和可观察的媒介、构图、色彩、光线、材质与纹理决策整理为可执行约束，用于生成新的主题，不用于复制某一幅具体作品。
 
+## 策展短评
+
+它最适合从build the scene from interlocking planes rather than one photographic viewpoint；let table edges, cloth folds, 开始尝试。光线、色彩和表面各有位置，主体可以自由变化。
+
 ## 风格重点
 
 以结构性的色面、被压缩的透视、反复而有方向的笔触和略有分歧的观察视角塑造物体；物体保持坚实，但空间不追求机械准确。
