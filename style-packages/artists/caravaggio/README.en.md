@@ -12,6 +12,10 @@
 
 This independent style package for **Caravaggio** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+The appeal of this direction sits in the relationship between Independent Caravaggio style package focused on 明暗对照、单一光源、普通主体与戏剧性空间; it requires new subjects and arrangements. A restrained treatment usually gives the image more staying power.
+
 ## Visual focus
 
 明暗对照、单一光源、普通人物与戏剧性空间. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
