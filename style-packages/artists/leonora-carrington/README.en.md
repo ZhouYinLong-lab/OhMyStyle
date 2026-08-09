@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between 以梦境般的生物、炼金意象、细密轮廓和冷静而神秘的空间构成超现实绘画，强调多义形象与精细表面. A restrained treatment usually gives the image more staying power.
+“precise contours, enigmatic beings, alchemical suggestion, and a cool space open to more than one reading” is the useful entry point: it arranges the image’s breathing room before the subject arrives.
 
 ## Read before use
 
