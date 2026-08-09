@@ -12,6 +12,10 @@
 
 This independent style package for **Pieter Bruegel the Elder** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+This package is a good place to begin with Independent Pieter Bruegel the Elder style package focused on 高视点全景、微小群像、季节劳动与乡土地景; it requires new subjects and arrangements. Light, colour, and surface each have a role, while the subject remains open.
+
 ## Visual focus
 
 高视点全景、微小群像、季节劳动与乡土地景. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
