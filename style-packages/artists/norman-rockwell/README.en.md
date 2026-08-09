@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-This package is a good place to begin with 叙事性商业插画、清晰轮廓与细密生活道具；小型主体关系、清楚动作和可读道具组成带有幽默的叙事插画；暖红、奶油、深蓝、棕色和少量黄形成亲切印刷色组. Light, colour, and surface each have a role, while the subject remains open.
+“clear action, readable small details, warm printed colour, and a compact relationship between figures and things” sets the viewing distance. People, objects, and places can change independently.
 
 ## Read before use
 
