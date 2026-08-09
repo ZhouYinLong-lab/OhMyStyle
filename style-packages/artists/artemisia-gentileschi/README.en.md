@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-This package is a good place to begin with 写实油画与大胆的肉身造型；主体以强烈对角线和近距离动作挤压画面，形成有力的叙事瞬间；深黑、血红、赭金、钴蓝与象牙白形成高对比巴洛克色组. Light, colour, and surface each have a role, while the subject remains open.
+“close action, strong diagonals, sculptural bodies, and a dark field punctuated by warm colour” is the useful entry point: it arranges the image’s breathing room before the subject arrives.
 
 ## Read before use
 
