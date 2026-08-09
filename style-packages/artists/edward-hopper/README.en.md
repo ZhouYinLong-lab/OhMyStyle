@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-Look at 以现代环境和环境生活中的简化建筑、孤立主体、强烈窗光与克制色彩构成悬置的日常场景，强调观看距离和心理空间 first and the details second. That is an easy way into the direction, with room left for a new subject.
+“simplified architecture, strong window light, isolated presence, and a measured distance from everyday life” is the useful entry point: it arranges the image’s breathing room before the subject arrives.
 
 ## Read before use
 
