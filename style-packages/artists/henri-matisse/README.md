@@ -12,6 +12,10 @@
 
 这是一个面向「亨利·马蒂斯」的独立风格包。它把公开作品、研究资料和可观察的媒介、构图、色彩、光线、材质与纹理决策整理为可执行约束，用于生成新的主题，不用于复制某一幅具体作品。
 
+## 策展短评
+
+马蒂斯的轻盈不是把画面做空，而是让色彩、轮廓和装饰性形状承担更多工作。他常常故意削弱传统透视，让平面色块、弯曲线条和留白共同构成空间；这种方法能把普通主体变得明快而有节奏，同时不必附带固定人物、室内或植物题材。
+
 ## 风格重点
 
 平面色块、装饰性空间、简化轮廓与大胆色彩。Prompt 会优先表达这些可观察特征，同时保留新主题、新构图和新的对象关系。
@@ -21,6 +25,8 @@
 ## 参考来源
 
 - [Henri Matisse / 现代主义](https://commons.wikimedia.org/w/index.php?search=Henri+Matisse&title=Special:MediaSearch&type=image)
+- [大都会艺术博物馆：亨利·马蒂斯](https://www.metmuseum.org/essays/henri-matisse-1869-1954)
+- [大都会艺术博物馆：马蒂斯《爵士》](https://www.metmuseum.org/art/collection/search/353770)
 
 ## 来源与版权
 

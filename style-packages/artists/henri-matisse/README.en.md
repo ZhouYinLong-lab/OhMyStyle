@@ -12,6 +12,10 @@
 
 This independent style package for **Henri Matisse** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+Matisse's lightness does not come from making an image empty. It comes from asking colour, contour, and decorative shape to carry more of the composition. He often weakened conventional perspective so that flat colour fields, curved lines, and open space could build the scene together. That approach can make an ordinary subject feel bright and rhythmic without importing a fixed figure, interior, or plant motif.
+
 ## Visual focus
 
 平面色块、装饰性空间、简化轮廓与大胆色彩. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
@@ -21,6 +25,8 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 ## Reference source
 
 - [Henri Matisse / 现代主义](https://commons.wikimedia.org/w/index.php?search=Henri+Matisse&title=Special:MediaSearch&type=image)
+- [The Metropolitan Museum of Art: Henri Matisse](https://www.metmuseum.org/essays/henri-matisse-1869-1954)
+- [The Metropolitan Museum of Art: Matisse's Jazz](https://www.metmuseum.org/art/collection/search/353770)
 
 ## Rights and attribution
 
