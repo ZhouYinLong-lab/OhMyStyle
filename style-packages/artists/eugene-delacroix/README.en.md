@@ -14,7 +14,7 @@ This independent style package for **Eugène Delacroix** turns public references
 
 ## Curatorial note
 
-The character of this package appears quickly in Independent Eugène Delacroix style package focused on 对角线运动、暖冷冲突、饱和色与自由笔触; it requires new subjects and arrangements. Keep its rhythm and material response, then let the prompt choose the subject.
+“diagonal movement, warm–cool conflict, saturated colour, and brushwork that carries the scene forward” sets the viewing distance. People, objects, and places can change independently.
 
 ## Visual focus
 

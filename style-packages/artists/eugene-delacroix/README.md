@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-这个包的气质很快会从new subject and arrangement；clear primary focal hierarchy里显出来。生成时保留它的节奏和材质，具体题材交给你的 Prompt。
+“## 风格重点 对角线运动、暖冷冲突、饱和色与自由笔触”决定了这个包的观看距离。人物、物体和环境都可以另行指定。
 
 ## 风格重点
 
