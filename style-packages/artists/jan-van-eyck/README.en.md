@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+The appeal of this direction sits in the relationship between 细密油画、透明釉层和高精度细节；空间正面空间、镜面反射和精密小物共同构成静默的仪式感；深红、橄榄绿、木棕、蓝灰与珍珠白形成宝石般低亮色组. A restrained treatment usually gives the image more staying power.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
