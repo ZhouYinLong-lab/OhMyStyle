@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-new subject and arrangement；clear primary focal hierarchy让这个方向有了自己的呼吸。换一个主体后，比例、边缘和光线仍应保留这份感觉。
+先把“## 风格重点 拉长形体、垂直升腾、冷色灵光与压缩空间”做准，其他内容可以留给你的 Prompt。这样换一个主题，风格仍不会散掉。
 
 ## 风格重点
 
