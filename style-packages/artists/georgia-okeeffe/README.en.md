@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+I would enter this package through 平滑渐变、放大自然形态或骨骼形体与简洁背景；单一自然形体被放大到接近抽象，边缘清洁且画面留白充足；骨白、沙色、深红、灰蓝和干燥黑形成沙漠般色组. The image has a clear point of attention, while the subject can change freely.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
