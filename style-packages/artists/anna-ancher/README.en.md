@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+The appeal of this direction sits in the relationship between A northern space-painting centered on changing daylight, quiet domestic tasks, simplified forms, and color relationships that make light the subj. A restrained treatment usually gives the image more staying power.
+
 ## Style focus
 
 A northern interior-painting profile centered on changing daylight, quiet domestic tasks, simplified forms, and color relationships that make light the subject rather than a decorative effect.
