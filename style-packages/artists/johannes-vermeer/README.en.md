@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-The character of this package appears quickly in An space and environmentscape painting built from controlled side light, quiet geometry, measured domestic detail, and soft optical transitions. Keep its rhythm and material response, then let the prompt choose the subject.
+Start with “quiet geometry, controlled side light, restrained detail, and a soft transition from light into volume”. It sets the viewing rhythm while leaving the subject open to your prompt.
 
 ## Style focus
 

@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-这个包的气质很快会从use stable space geometry with one quiet human action；place the strongest window direction off-center and leav里显出来。生成时保留它的节奏和材质，具体题材交给你的 Prompt。
+我会先看“## 风格重点 用受控的侧光、安静的几何关系、克制的室内细节和柔和的光学过渡组织空间，让日常场景呈现清晰而安静的体积感”。它把观看节奏定下来，题材可以按你的需要替换。
 
 ## 风格重点
 
