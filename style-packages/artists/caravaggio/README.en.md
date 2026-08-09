@@ -14,7 +14,7 @@ This independent style package for **Caravaggio** turns public references and ob
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between Independent Caravaggio style package focused on 明暗对照、单一光源、普通主体与戏剧性空间; it requires new subjects and arrangements. A restrained treatment usually gives the image more staying power.
+Its strongest pull comes from “a single directional light, a clear focal hierarchy, and ordinary forms held inside a dramatic dark space”. The visual order remains clear without a fixed scene.
 
 ## Visual focus
 
