@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between 以空旷广场、长阴影、古典建筑、雕像与不合时宜的物体构成形而上绘画，强调静止空间中的悬置感与谜题感. A restrained treatment usually gives the image more staying power.
+Its strongest pull comes from “long shadows, architectural perspective, sparse objects, and an empty space charged with suspended meaning”. The visual order remains clear without a fixed scene.
 
 ## Read before use
 
