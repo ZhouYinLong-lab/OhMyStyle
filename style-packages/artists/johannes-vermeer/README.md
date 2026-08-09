@@ -12,6 +12,10 @@
 
 这是一个面向「约翰内斯·维米尔」的独立风格包。它把公开作品、研究资料和可观察的媒介、构图、色彩、光线、材质与纹理决策整理为可执行约束，用于生成新的主题，不用于复制某一幅具体作品。
 
+## 策展短评
+
+这个包的气质很快会从use stable space geometry with one quiet human action；place the strongest window direction off-center and leav里显出来。生成时保留它的节奏和材质，具体题材交给你的 Prompt。
+
 ## 风格重点
 
 用受控的侧光、安静的几何关系、克制的室内细节和柔和的光学过渡组织空间，让日常场景呈现清晰而安静的体积感。

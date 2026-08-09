@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+The character of this package appears quickly in An space and environmentscape painting built from controlled side light, quiet geometry, measured domestic detail, and soft optical transitions. Keep its rhythm and material response, then let the prompt choose the subject.
+
 ## Style focus
 
 An interior and cityscape painting profile built from controlled side light, quiet geometry, measured domestic detail, and soft optical transitions.
