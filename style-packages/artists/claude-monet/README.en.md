@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-landscape painting focused on transient light, atmospheric color, broken touches, and the changing appearance of ordinary motifs rather than heav gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+Get “transient light, atmospheric colour, broken touches, and the changing appearance of ordinary motifs” right first; leave the actual content to your prompt. The style can then travel to another subject.
 
 ## Style focus
 

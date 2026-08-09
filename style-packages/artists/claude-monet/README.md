@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-ordinary motif observed at eye level with a stable horizon or receding path；large atmospheric field and open b让这个方向有了自己的呼吸。换一个主体后，比例、边缘和光线仍应保留这份感觉。
+先把“## 风格重点 围绕转瞬即逝的光线与空气色彩组织画面，用松散而可见的笔触捕捉普通景物在不同时间里的变化，避免厚重轮廓和过度强调的笔触表演”做准，其他内容可以留给你的 Prompt。这样换一个主题，风格仍不会散掉。
 
 ## 风格重点
 
