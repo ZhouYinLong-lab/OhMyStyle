@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-Rembrandt's most compelling decision is that light does more than illuminate a figure. It decides who is seen, who recedes into shadow, and how skin, cloth, and metal acquire different tactile weight. This package is useful for building images with psychological gravity, but it does not require a portrait, historical scene, or religious narrative every time. The stable signature is the direction of light, the layering of the darks, and the weight of local paint handling.
+Rembrandt's light has weight. It enters from one side and leaves different responses on skin, cloth, metal, and wood, while the darks retain their layers. This package suits quiet, concentrated images with psychological distance. The emphasis is on light and touch; the subject and setting remain the user's choice.
 
 ## Style focus
 
