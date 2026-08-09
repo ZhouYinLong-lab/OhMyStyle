@@ -14,7 +14,7 @@ This independent style package for **Michelangelo Buonarroti** turns public refe
 
 ## Curatorial note
 
-Look at Independent Michelangelo Buonarroti style package focused on 纪念性人体、雕塑式体积、复杂透视与强轮廓; it requires new subjects and arrangements first and the details second. That is an easy way into the direction, with room left for a new subject.
+Get “monumental volume, sculptural anatomy, complex foreshortening, and a forceful contour” right first; leave the actual content to your prompt. The style can then travel to another subject.
 
 ## Visual focus
 

@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-先看new subject and arrangement；clear primary focal hierarchy，再看细节，比较容易抓住这个方向。它给新的主体留下了足够空间。
+先把“## 风格重点 纪念性人体、雕塑式体积、复杂透视与强轮廓”做准，其他内容可以留给你的 Prompt。这样换一个主题，风格仍不会散掉。
 
 ## 风格重点
 
