@@ -14,7 +14,7 @@ This independent style package for **Francisco Goya** turns public references an
 
 ## Curatorial note
 
-I would use Independent Francisco Goya style package focused on 心理张力、暗色现实、粗粝笔触与不安静默; it requires new subjects and arrangements as the entry point. It sets a clear viewing distance without fixing the topic.
+The character of this package sits in “psychological pressure, dark realism, rough handling, and a silence that refuses easy resolution”. Keep that thread and a new subject can still belong here.
 
 ## Visual focus
 
