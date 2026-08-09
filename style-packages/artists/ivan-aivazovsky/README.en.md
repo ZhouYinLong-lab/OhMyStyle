@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+Look at 以海面、天空、航船和光线交汇构成浪漫主义海景，强调水面运动、空气透视、月光或夕照的单一光源和宏阔尺度 first and the details second. That is an easy way into the direction, with room left for a new subject.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
