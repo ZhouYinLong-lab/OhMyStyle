@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-The character of this package appears quickly in 印象派笔触与粉彩般的柔软边缘；亲密的空间关系、偏近的裁切和自然姿态构成日常生活片段；柔和粉、薄荷绿、奶油黄、灰蓝和肤色形成轻盈色组. Keep its rhythm and material response, then let the prompt choose the subject.
+Its strongest pull comes from “intimate cropping, natural gestures, soft pastel edges, and the close scale of everyday attention”. The visual order remains clear without a fixed scene.
 
 ## Read before use
 
