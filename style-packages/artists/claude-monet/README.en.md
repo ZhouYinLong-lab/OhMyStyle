@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+landscape painting focused on transient light, atmospheric color, broken touches, and the changing appearance of ordinary motifs rather than heav gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+
 ## Style focus
 
 A reference-backed landscape painting profile focused on transient light, atmospheric color, broken touches, and the changing appearance of ordinary motifs rather than heavy contour or expressive impasto.
