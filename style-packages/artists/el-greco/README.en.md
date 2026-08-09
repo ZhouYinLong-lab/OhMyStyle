@@ -12,6 +12,10 @@
 
 This independent style package for **El Greco** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+Independent El Greco style package focused on 拉长形体、垂直升腾、冷色灵光与压缩空间; it requires new subjects and arrangements gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+
 ## Visual focus
 
 拉长形体、垂直升腾、冷色灵光与压缩空间. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
