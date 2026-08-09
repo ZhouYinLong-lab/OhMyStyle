@@ -12,6 +12,10 @@
 
 这是一个面向「保罗·高更」的独立风格包。它把公开作品、研究资料和可观察的媒介、构图、色彩、光线、材质与纹理决策整理为可执行约束，用于生成新的主题，不用于复制某一幅具体作品。
 
+## 策展短评
+
+这个包很适合从flatten the scene into overlapping color zones rather than continuous realism；use a strong diagonal, tree, bra开始尝试。它的视觉性格清楚，具体内容可以留给使用者。
+
 ## 风格重点
 
 以平展色块、强烈轮廓、非自然的象征性色彩、压缩的空间层次和装饰性节奏构成画面，优先保持形与色的整体关系。

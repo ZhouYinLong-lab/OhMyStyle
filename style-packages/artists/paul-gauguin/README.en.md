@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+This package is easy to approach through A Synthetist painting built from flattened color fields, strong contour design, symbolic non-natural color, compressed spatial layers, and decora. Its visual character is clear, while the actual content remains yours.
+
 ## Style focus
 
 A Synthetist painting profile built from flattened color fields, strong contour design, symbolic non-natural color, compressed spatial layers, and decorative rhythm.
