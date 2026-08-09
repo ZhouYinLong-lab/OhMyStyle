@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-它最适合从establish a low or receding horizon and a strong diagonal vector through water, track, wake, cloud, or light；l开始尝试。光线、色彩和表面各有位置，主体可以自由变化。
+先把“## 风格重点 以边缘溶解、层层叠加的雾化颜料、发光天气和有方向的空间运动表现空气与光，不复刻具体海景或道路或线性结构构图”做准，其他内容可以留给你的 Prompt。这样换一个主题，风格仍不会散掉。
 
 ## 风格重点
 

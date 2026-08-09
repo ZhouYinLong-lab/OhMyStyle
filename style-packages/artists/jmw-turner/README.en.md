@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-This package is a good place to begin with An atmospheric landscape painting built from dissolving edges, vaporous layered paint, luminous weather, and directional spatial movement without. Light, colour, and surface each have a role, while the subject remains open.
+Get “dissolving edges, vaporous layered paint, luminous weather, and directional movement through space” right first; leave the actual content to your prompt. The style can then travel to another subject.
 
 ## Style focus
 
