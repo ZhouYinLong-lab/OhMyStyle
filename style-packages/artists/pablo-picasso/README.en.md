@@ -14,7 +14,7 @@ This independent style package for **Pablo Picasso** turns public references and
 
 ## Curatorial note
 
-I would use Independent Pablo Picasso style package focused on 分析性平面、多视点、结构化静物与几何重组; it requires new subjects and arrangements as the entry point. It sets a clear viewing distance without fixing the topic.
+Start with “multiple viewpoints, analytical planes, geometric reconstruction, and a deliberate tension between object and space”. It sets the viewing rhythm while leaving the subject open to your prompt.
 
 ## Visual focus
 
