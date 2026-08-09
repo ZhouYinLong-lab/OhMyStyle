@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between 纸张拼贴、绘画色块与手工边缘；主体和环境空间由切割平面、重叠形状和碎片化视线组成；深蓝、砖红、芥末黄、奶油和黑色形成爵士般撞色. A restrained treatment usually gives the image more staying power.
+Start with “cut planes, overlapping shapes, hand-worked edges, and a fragmented view that still holds together”. It sets the viewing rhythm while leaving the subject open to your prompt.
 
 ## Read before use
 
