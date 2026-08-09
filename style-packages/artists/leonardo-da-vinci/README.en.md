@@ -12,6 +12,10 @@
 
 This independent style package for **Leonardo da Vinci** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+The appeal of this direction sits in the relationship between Independent Leonardo da Vinci style package focused on 晕涂、观察性解剖、空气透视与自然研究; it requires new subjects and arrangements. A restrained treatment usually gives the image more staying power.
+
 ## Visual focus
 
 晕涂、观察性解剖、空气透视与自然研究. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
