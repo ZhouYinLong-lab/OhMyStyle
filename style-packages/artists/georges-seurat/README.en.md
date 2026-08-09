@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-Seurat is most useful here not as a recipe for turning an image into a dot pattern, but as a way of making colour carry structure, rhythm, and visual pauses. Small touches of unmixed colour sit beside one another, producing a unified light effect at a distance while preserving a deliberate granular order up close. This approach can transfer to new subjects without importing a park, figures, or a riverbank as default content.
+Seurat's images have an almost measured calm. The colour is separated into small touches, so the scene feels bright and quiet at once; from a distance the marks join into light, while up close they keep their own rhythm. This package is useful for light, air, and spatial pauses, with the subject still chosen by the user.
 
 ## Style focus
 
