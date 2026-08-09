@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-This package is easy to approach through 蛋彩画式平面色层与精细线描；优雅的线性轮廓、平衡的神话主体群组和轻盈的风向线组织平面叙事；淡蓝、贝壳粉、草绿、金发黄与乳白形成清澈的早期文艺复兴色组. Its visual character is clear, while the actual content remains yours.
+The character of this package sits in “elegant line, balanced groups, light directional movement, and a clear decorative surface”. Keep that thread and a new subject can still belong here.
 
 ## Read before use
 
