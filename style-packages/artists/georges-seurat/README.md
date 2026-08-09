@@ -12,6 +12,10 @@
 
 这是一个面向「乔治·修拉」的独立风格包。它把公开作品、研究资料和可观察的媒介、构图、色彩、光线、材质与纹理决策整理为可执行约束，用于生成新的主题，不用于复制某一幅具体作品。
 
+## 策展短评
+
+修拉最值得借鉴的地方，不是把画面简单做成点阵，而是把色彩变成一种可以组织空间、节奏和视觉停顿的结构。细小的纯色笔触彼此并置，远看产生统一的光感，近看仍保留清晰的颗粒秩序；这种“让观看者参与混色”的方法，适合迁移到不同主体，而不必复制公园、人物或河岸场景。
+
 ## 风格重点
 
 以受控的光学色点、稳定的剪影、经过测量的公园式空间和安静重复的人物姿态建立画面秩序，让色彩混合发生在观看者的视觉中。
@@ -22,6 +26,8 @@
 
 - [https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte](https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte)
 - [https://commons.wikimedia.org/wiki/File:Baigneurs_a_Asnieres.jpg](https://commons.wikimedia.org/wiki/File:Baigneurs_a_Asnieres.jpg)
+- [大都会艺术博物馆：乔治·修拉与新印象主义](https://www.metmuseum.org/essays/georges-seurat-1859-1891-and-neo-impressionism)
+- [芝加哥艺术博物馆：乔治·修拉](https://www.artic.edu/artists/40810/georges-seurat)
 
 ## 来源与版权
 

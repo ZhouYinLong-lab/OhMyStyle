@@ -12,6 +12,10 @@
 
 This independent style package turns public references and observable decisions in medium, composition, color, light, material, and texture into executable constraints for new subjects. It is not intended to copy a particular source work.
 
+## Curatorial note
+
+Seurat is most useful here not as a recipe for turning an image into a dot pattern, but as a way of making colour carry structure, rhythm, and visual pauses. Small touches of unmixed colour sit beside one another, producing a unified light effect at a distance while preserving a deliberate granular order up close. This approach can transfer to new subjects without importing a park, figures, or a riverbank as default content.
+
 ## Style focus
 
 A Neo-Impressionist painting profile built from disciplined optical color units, stable silhouettes, measured park-like space, and calm repeated social poses.
@@ -22,6 +26,8 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 - [https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte](https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte)
 - [https://commons.wikimedia.org/wiki/File:Baigneurs_a_Asnieres.jpg](https://commons.wikimedia.org/wiki/File:Baigneurs_a_Asnieres.jpg)
+- [The Metropolitan Museum of Art: Georges Seurat and Neo-Impressionism](https://www.metmuseum.org/essays/georges-seurat-1859-1891-and-neo-impressionism)
+- [Art Institute of Chicago: Georges Seurat](https://www.artic.edu/artists/40810/georges-seurat)
 
 ## Sources and rights
 
