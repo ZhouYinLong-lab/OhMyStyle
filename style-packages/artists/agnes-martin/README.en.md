@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+以极细网格、重复线条、低对比色带和安静留白构成极简绘画，强调手绘重复中的微小偏差与长时间观看 gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
