@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-This package is easy to approach through A Synthetist painting built from flattened color fields, strong contour design, symbolic non-natural color, compressed spatial layers, and decora. Its visual character is clear, while the actual content remains yours.
+“flat colour zones, strong contour, symbolic colour, compressed depth, and a decorative rhythm across the surface” is the useful entry point: it arranges the image’s breathing room before the subject arrives.
 
 ## Style focus
 

@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-这个包很适合从flatten the scene into overlapping color zones rather than continuous realism；use a strong diagonal, tree, bra开始尝试。它的视觉性格清楚，具体内容可以留给使用者。
+“## 风格重点 以平展色块、强烈轮廓、非自然的象征性色彩、压缩的空间层次和装饰性节奏构成画面，优先保持形与色的整体关系”是很好的入口：它先安排画面的呼吸，再让具体内容进入。
 
 ## 风格重点
 
