@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+The appeal of this direction sits in the relationship between 以空旷广场、长阴影、古典建筑、雕像与不合时宜的物体构成形而上绘画，强调静止空间中的悬置感与谜题感. A restrained treatment usually gives the image more staying power.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
