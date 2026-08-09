@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-它最适合从build the scene from interlocking planes rather than one photographic viewpoint；let table edges, cloth folds, 开始尝试。光线、色彩和表面各有位置，主体可以自由变化。
+这个方向的气质落在“## 风格重点 以结构性的色面、被压缩的透视、反复而有方向的笔触和略有分歧的观察视角塑造物体；物体保持坚实，但空间不追求机械准确”上。保住这条线索，换成新的主体也能成立。
 
 ## 风格重点
 

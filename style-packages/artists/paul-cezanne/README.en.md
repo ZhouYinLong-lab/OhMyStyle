@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-This package is a good place to begin with A painting built from constructive color planes, compressed perspective, repeated directional brush marks, and objects that remain solid while vi. Light, colour, and surface each have a role, while the subject remains open.
+The character of this package sits in “constructive colour planes, compressed perspective, directional brush marks, and solid forms seen from slightly different angles”. Keep that thread and a new subject can still belong here.
 
 ## Style focus
 
