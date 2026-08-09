@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+I would enter this package through 金箔联想、平面装饰和局部写实身体结合；主体被装饰性平面、金色图案和垂直背景包围，身体关系被图案化；金黄、黑、象牙、深紫与孔雀蓝形成装饰性对比. The image has a clear point of attention, while the subject can change freely.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
