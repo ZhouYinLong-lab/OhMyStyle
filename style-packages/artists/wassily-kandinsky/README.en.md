@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-I would use An abstract painting built from geometric and lyrical marks, measured color tensions, layered planes, and compositional balance without narrative as the entry point. It sets a clear viewing distance without fixing the topic.
+Get “circles, lines, arcs, grids, and colour planes balanced as an independent visual field” right first; leave the actual content to your prompt. The style can then travel to another subject.
 
 ## Style focus
 

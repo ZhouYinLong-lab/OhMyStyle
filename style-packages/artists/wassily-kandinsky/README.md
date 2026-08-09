@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-我会把organize the field through a hierarchy of circles, lines, arcs, grids, and planes；balance dense clusters again看作这个包的入口。它带来的观看距离很明确，题材不需要固定。
+先把“## 风格重点 以几何形、抒情线条、相互牵制的色彩、层叠平面和整体构图平衡构成抽象画面，不把抽象语言强行解释成叙事插图”做准，其他内容可以留给你的 Prompt。这样换一个主题，风格仍不会散掉。
 
 ## 风格重点
 
