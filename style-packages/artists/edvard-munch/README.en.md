@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-expressionist painting focused on psychological color, contour that carries bodily tension, compressed space, and recurring organic or architectu gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+The character of this package sits in “compressed space, charged colour, organic rhythm, and a figure or form held inside psychological tension”. Keep that thread and a new subject can still belong here.
 
 ## Style focus
 
