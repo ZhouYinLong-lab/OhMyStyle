@@ -14,7 +14,7 @@ This independent style package turns public references and observable decisions 
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between A northern space-painting centered on changing daylight, quiet domestic tasks, simplified forms, and color relationships that make light the subj. A restrained treatment usually gives the image more staying power.
+The character of this package sits in “changing northern daylight, quiet domestic activity, simplified forms, and colour relationships that make light feel present”. Keep that thread and a new subject can still belong here.
 
 ## Style focus
 

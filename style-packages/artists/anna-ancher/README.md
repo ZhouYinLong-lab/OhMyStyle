@@ -14,7 +14,7 @@
 
 ## 策展短评
 
-这个方向的魅力在于light enters from a side window；subject is offset rather than theatrically centered之间的关系。处理得克制一些，画面会更耐看。
+这个方向的气质落在“## 风格重点 以北欧室内生活为核心：让变化中的日光、安静的家务动作和简化的主体形体共同成为画面内容，色彩关系服务于光线本身，而不是把光当作装饰效果”上。保住这条线索，换成新的主体也能成立。
 
 ## 风格重点
 
