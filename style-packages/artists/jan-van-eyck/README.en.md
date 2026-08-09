@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-The appeal of this direction sits in the relationship between 细密油画、透明釉层和高精度细节；空间正面空间、镜面反射和精密小物共同构成静默的仪式感；深红、橄榄绿、木棕、蓝灰与珍珠白形成宝石般低亮色组. A restrained treatment usually gives the image more staying power.
+Its strongest pull comes from “frontal space, reflective surfaces, transparent layers, and precise small details with quiet ritual weight”. The visual order remains clear without a fixed scene.
 
 ## Read before use
 
