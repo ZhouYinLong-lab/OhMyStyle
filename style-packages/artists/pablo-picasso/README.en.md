@@ -12,6 +12,10 @@
 
 This independent style package for **Pablo Picasso** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+I would use Independent Pablo Picasso style package focused on 分析性平面、多视点、结构化静物与几何重组; it requires new subjects and arrangements as the entry point. It sets a clear viewing distance without fixing the topic.
+
 ## Visual focus
 
 分析性平面、多视点、结构化静物与几何重组. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
