@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-This package is easy to approach through 以装饰艺术时期的几何构形、金属般清晰的体积、冷峻优雅的主体和高对比色面组织现代主体与静物. Its visual character is clear, while the actual content remains yours.
+“sculptural bodies, geometric cuts, cool elegance, and hard-edged planes with metallic clarity” is the useful entry point: it arranges the image’s breathing room before the subject arrives.
 
 ## Read before use
 
