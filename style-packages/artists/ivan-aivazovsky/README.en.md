@@ -19,7 +19,7 @@ work.
 
 ## Curatorial note
 
-Look at 以海面、天空、航船和光线交汇构成浪漫主义海景，强调水面运动、空气透视、月光或夕照的单一光源和宏阔尺度 first and the details second. That is an easy way into the direction, with room left for a new subject.
+“a wide horizon, luminous water, atmospheric distance, and one large light source carrying the scale” is the useful entry point: it arranges the image’s breathing room before the subject arrives.
 
 ## Read before use
 
