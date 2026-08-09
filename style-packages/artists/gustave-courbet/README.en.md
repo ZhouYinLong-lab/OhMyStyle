@@ -12,6 +12,10 @@
 
 This independent style package for **Gustave Courbet** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+I would enter this package through Independent Gustave Courbet style package focused on 厚重物质感、未理想化主体、土色现实与坚实地面; it requires new subjects and arrangements. The image has a clear point of attention, while the subject can change freely.
+
 ## Visual focus
 
 厚重物质感、未理想化人物、土色现实与坚实地面. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
