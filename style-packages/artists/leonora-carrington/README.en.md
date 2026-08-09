@@ -17,6 +17,10 @@ composition, lighting, color, surface, texture, and reproduction decisions into
 executable guidance for new subjects. It is not intended to reproduce a specific
 work.
 
+## Curatorial note
+
+The appeal of this direction sits in the relationship between 以梦境般的生物、炼金意象、细密轮廓和冷静而神秘的空间构成超现实绘画，强调多义形象与精细表面. A restrained treatment usually gives the image more staying power.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
