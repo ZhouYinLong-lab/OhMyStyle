@@ -12,6 +12,10 @@
 
 This independent style package for **Pierre-Auguste Renoir** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+Independent Pierre-Auguste Renoir style package focused on 明亮户外光、柔和肤色、破碎色点与社交氛围; it requires new subjects and arrangements gives this direction its breathing room. After a subject change, the proportion, edges, and light should keep that feeling.
+
 ## Visual focus
 
 明亮户外光、柔和肤色、破碎色点与社交氛围. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
