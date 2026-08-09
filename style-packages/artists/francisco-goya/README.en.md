@@ -12,6 +12,10 @@
 
 This independent style package for **Francisco Goya** turns public references and observable decisions about medium, composition, color, light, material, and texture into executable constraints. It is intended for new subjects, not for reproducing a specific artwork.
 
+## Curatorial note
+
+I would use Independent Francisco Goya style package focused on 心理张力、暗色现实、粗粝笔触与不安静默; it requires new subjects and arrangements as the entry point. It sets a clear viewing distance without fixing the topic.
+
 ## Visual focus
 
 心理张力、暗色现实、粗粝笔触与不安静默. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
