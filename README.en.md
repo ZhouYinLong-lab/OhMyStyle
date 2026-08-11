@@ -12,6 +12,12 @@ Future expansion follows scoped batches: research original works and rights firs
 
 If you are looking for a visual result rather than a source category, use the [visual feature index](docs/VISUAL-INDEX.en.md) for soft natural light, deep dramatic light, geometric layout, pixel grids, neon cities, and more. The index is generated from package metadata and does not replace the seven source-based gallery categories below.
 
+## Creative workflows
+
+If you already have a photo and want to turn it into an editorial layout, abstract edit, or paper-based work, start with the [creative workflows](workflows/README.en.md). A workflow handles observation, distillation, and composition of input material; a style package supplies visual language. They can be combined, but a workflow must not hard-code a place, person, object, or story for you.
+
+Two external creative projects are registered for compatibility: [Photo Abstract Editorial](integrations/README.en.md#photo-abstract-editorial) and [Gathered Scenes Zine](integrations/README.en.md#gathered-scenes-zine). They are listed only through links and license information; their upstream skills, prompts, examples, and brand assets are not included in OhMyStyle.
+
 ## Style package gallery
 
 The main gallery lists independent style packages only. Every card uses a horizontal 16:9 representative image; click the image or name to open the package README.
