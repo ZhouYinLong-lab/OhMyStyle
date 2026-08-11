@@ -1,0 +1,15 @@
+id: photo-abstract-editorial
+kind: external_workflow
+external_only: true
+copy_upstream_materials: false
+upstream_url: https://github.com/ZzzLc0405/photo-abstract-editorial
+reference: main
+workflow_ref: workflows/photo-abstract-editorial/workflow.yaml
+license:
+  name: custom_noncommercial
+  url: https://github.com/ZzzLc0405/photo-abstract-editorial/blob/main/LICENSE.md
+  redistribution: prohibited_without_permission
+installation: user_managed_external
+notes:
+  zh: 仅登记兼容关系和来源链接；外部仓库的 Skill、Prompt、示例图和品牌素材不随 OhMyStyle 分发。
+  en: This registry records compatibility and provenance only. The upstream skill, prompts, examples, and brand assets are not distributed by OhMyStyle.

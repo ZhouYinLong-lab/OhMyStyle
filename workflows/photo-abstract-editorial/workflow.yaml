@@ -1,0 +1,43 @@
+id: photo-abstract-editorial
+kind: source_transform
+version: 1.0.0
+name:
+  zh: 摄影抽象编辑
+  en: Photo Abstract Editorial
+source:
+  input_type: single_photo
+  rights_required: true
+  source_pixels: required
+variants:
+  - id: preserve-photo
+    keeps_source_pixels: true
+    output_type: photo-plus-abstract-editorial
+    purpose: 保留原照片作为主要视觉事实，在同一版式中把空间关系转译为克制的抽象区域。
+    notes: 抽象区域应来自原照片的色彩、方向和结构关系，不新增与来源无关的装饰主题。
+style_projection:
+  allowed_axes:
+    - composition
+    - palette
+    - surface
+    - typography
+  protected_axes:
+    - source_photo_fidelity
+    - source_subject_identity
+    - user_subject_constraints
+  notes: 风格包只能影响版式、色彩关系、表面和文字层级，不能替换原照片主体。
+subject_policy:
+  default_subjects: []
+  source_subjects_only: true
+  user_subjects_override: true
+  optional_motifs: []
+output:
+  aspect_ratios:
+    - "4:5"
+    - "9:16"
+    - "16:9"
+  requires_text: false
+  notes: 默认保留清晰的照片区域和足够留白；文字只是可选版式层。
+privacy:
+  do_not_browse_external_image: true
+  do_not_store_source_without_permission: true
+  notes: 输入照片由用户提供并由用户负责授权；工作流本身不替用户保存或公开原图。

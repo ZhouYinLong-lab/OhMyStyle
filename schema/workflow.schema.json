@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/workflow.schema.json",
+  "title": "OhMyStyle Source Transform Workflow",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "kind", "version", "source", "variants", "style_projection", "subject_policy", "privacy"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "kind": {"const": "source_transform"},
+    "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+    "name": {"type": "object", "additionalProperties": false, "required": ["zh", "en"], "properties": {"zh": {"type": "string", "minLength": 1}, "en": {"type": "string", "minLength": 1}}},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_type", "rights_required", "source_pixels"],
+      "properties": {
+        "input_type": {"const": "single_photo"},
+        "rights_required": {"const": true},
+        "source_pixels": {"type": "string", "enum": ["required", "optional"]}
+      }
+    },
+    "variants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "keeps_source_pixels", "output_type", "purpose"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "keeps_source_pixels": {"type": "boolean"},
+          "output_type": {"type": "string", "minLength": 1},
+          "purpose": {"type": "string", "minLength": 1},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "style_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowed_axes", "protected_axes"],
+      "properties": {
+        "allowed_axes": {"type": "array", "items": {"type": "string"}},
+        "protected_axes": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "notes": {"type": "string"}
+      }
+    },
+    "subject_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["default_subjects", "source_subjects_only", "user_subjects_override"],
+      "properties": {
+        "default_subjects": {"const": []},
+        "source_subjects_only": {"type": "boolean"},
+        "user_subjects_override": {"type": "boolean"},
+        "optional_motifs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "aspect_ratios": {"type": "array", "items": {"type": "string"}},
+        "requires_text": {"type": "boolean"},
+        "notes": {"type": "string"}
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["do_not_browse_external_image", "do_not_store_source_without_permission"],
+      "properties": {
+        "do_not_browse_external_image": {"type": "boolean"},
+        "do_not_store_source_without_permission": {"type": "boolean"},
+        "notes": {"type": "string"}
+      }
+    }
+  }
+}

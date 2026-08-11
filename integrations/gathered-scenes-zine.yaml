@@ -1,0 +1,16 @@
+id: gathered-scenes-zine
+kind: external_workflow
+external_only: true
+copy_upstream_materials: false
+upstream_url: https://github.com/Zeejay0/gathered-scenes-zine-skill
+historical_url: https://github.com/Zeejay0/gathered-scenes-zine-skill04
+reference: main
+workflow_ref: workflows/gathered-scenes-zine/workflow.yaml
+license:
+  name: custom_personal_noncommercial
+  url: https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/main/LICENSE
+  redistribution: prohibited_without_permission
+installation: user_managed_external
+notes:
+  zh: 原提供链接已归档为历史地址；当前登记指向作者的现行仓库。仅登记兼容关系，不复制外部 Skill、Prompt、示例图或品牌素材。
+  en: The originally supplied URL is retained as a historical address; this record points to the author's current repository. No upstream skills, prompts, examples, or brand assets are copied.

@@ -1,0 +1,49 @@
+id: gathered-scenes-zine
+kind: source_transform
+version: 1.0.0
+name:
+  zh: 场景聚合杂志
+  en: Gathered Scenes Zine
+source:
+  input_type: single_photo
+  rights_required: true
+  source_pixels: optional
+variants:
+  - id: preserve-photo
+    keeps_source_pixels: true
+    output_type: documentary-zine
+    purpose: 保留照片作为真实锚点，再以抽象形状、结构性色块和纸张层次扩展版面。
+    notes: 照片是主要事实来源，新增元素只承担编排和关系转译。
+  - id: scene-distillation
+    keeps_source_pixels: false
+    output_type: distilled-paper-artwork
+    purpose: 提取场景的语义核心、情绪张力和视觉隐喻，重新组织为纸面作品。
+    notes: 不保留原照片像素时，必须明确这是基于输入场景的再创作，不得声称是原景的直接记录。
+style_projection:
+  allowed_axes:
+    - composition
+    - palette
+    - surface
+    - texture
+    - typography
+  protected_axes:
+    - source_subject_identity
+    - user_subject_constraints
+    - transformation_variant
+  notes: 工作流负责观察、提炼、转译和编排；它不规定默认地点、人物、故事或固定物件。
+subject_policy:
+  default_subjects: []
+  source_subjects_only: true
+  user_subjects_override: true
+  optional_motifs: []
+output:
+  aspect_ratios:
+    - "4:5"
+    - "9:16"
+    - "16:9"
+  requires_text: false
+  notes: 版面应保留安静区域；是否加入标题由用户决定，不作为默认题材。
+privacy:
+  do_not_browse_external_image: true
+  do_not_store_source_without_permission: true
+  notes: 输入素材只按用户授权范围处理，不默认上传、分享或长期保存。
