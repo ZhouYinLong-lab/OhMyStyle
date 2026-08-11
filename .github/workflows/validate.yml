@@ -51,6 +51,9 @@ jobs:
       - name: Validate cross-style composite recipes
         run: python3 tools/validate-composite.py style-packages/composites
 
+      - name: Validate source-transform workflows and external boundaries
+        run: python3 tools/validate-workflow.py
+
       - name: Validate compatibility style package
         run: python3 tools/validate.py
 
