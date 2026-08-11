@@ -75,6 +75,16 @@ python tools/new-style-package.py `
 
 The template lives in [`templates/style-package`](templates/style-package). [`TEMPLATE.md`](templates/style-package/TEMPLATE.md) explains every file, and [`TEMPLATE.en.md`](templates/style-package/TEMPLATE.en.md) provides the English version. The template is outside `style-packages/`, so it is not discovered as a publishable package.
 
+## Creative workflows and external integrations
+
+If a contribution describes how a photo is observed, distilled, and composed rather than a visual language, put it in `workflows/` instead of presenting it as a style package. A workflow must define its input, output variants, permitted visual axes, and subject-protection rules; `subject_policy.default_subjects` must remain empty. Start from [`templates/workflow-package`](templates/workflow-package) and run:
+
+```powershell
+python tools/validate-workflow.py
+```
+
+External projects belong in `integrations/`. An entry may include the upstream URL, license URL, and an independently authored compatibility note, but it must not copy upstream skills, prompts, examples, data, or brand assets. Listing an external project does not change its license to the OhMyStyle license. See the [creative workflow guide](workflows/README.en.md) and the [external integration registry](integrations/README.en.md) for the boundaries.
+
 ## Expansion batches
 
 Future expansion uses scoped batches with no fixed package count. Do not count a few index-file edits or copied placeholders as packages. First register the independent packages and category plan in [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml), then complete them in the order “research → build → generate → review → validate”. Each package gets its own commit; the gallery, root README, and count update use a separate batch integration commit.
