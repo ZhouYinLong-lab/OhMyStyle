@@ -1,0 +1,37 @@
+id: {{workflow_id}}
+kind: source_transform
+version: 1.0.0
+name:
+  zh: {{中文工作流名称}}
+  en: {{English workflow name}}
+source:
+  input_type: single_photo
+  rights_required: true
+  source_pixels: required
+variants:
+  - id: preserve-photo
+    keeps_source_pixels: true
+    output_type: {{output_type}}
+    purpose: {{描述输入如何转化为输出}}
+    notes: {{说明保留哪些事实，新增内容承担什么职责}}
+style_projection:
+  allowed_axes:
+    - composition
+    - palette
+  protected_axes:
+    - source_subject_identity
+    - user_subject_constraints
+subject_policy:
+  default_subjects: []
+  source_subjects_only: true
+  user_subjects_override: true
+  optional_motifs: []
+output:
+  aspect_ratios:
+    - "4:5"
+    - "9:16"
+    - "16:9"
+  requires_text: false
+privacy:
+  do_not_browse_external_image: true
+  do_not_store_source_without_permission: true
