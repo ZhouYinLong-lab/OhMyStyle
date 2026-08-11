@@ -1,0 +1,24 @@
+# {{English workflow name}}
+
+> This is a creative workflow, not a style package. It defines how input material is observed, translated, and composed. Choose an OhMyStyle style package separately when a visual language is needed.
+
+## Intended use
+
+{{Briefly describe the input, the transformation target, and what must remain open.}}
+
+## Workflow boundaries
+
+- Keep the default subject open; `subject_policy.default_subjects` must remain empty.
+- Protect the input subject, identity, and user constraints before applying layout or style.
+- List only permitted visual changes in `style_projection.allowed_axes`.
+- Places, people, objects, and stories come from the user input or an explicit selection; never hard-code them into the default prompt.
+- For external projects, record only links and license information. Do not copy their skills, prompts, examples, or brand assets.
+
+## Four ways to use it
+
+1. Give this directory to an image-capable Agent together with your input and output goal.
+2. Copy the constraints from `workflow.yaml`, replace the subject and aspect ratio, and keep the protection rules.
+3. Give the workflow to an API-capable image Agent after configuring your own API key.
+4. With a local model and ComfyUI, connect the workflow rules, reference manifest, and output size to separate nodes.
+
+Confirm the rights to the input before generation. After generation, check that the subject was not replaced, no unrequested fixed object appeared, and the output matches the selected aspect ratio.
