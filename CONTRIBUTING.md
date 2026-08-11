@@ -75,6 +75,16 @@ python tools/new-style-package.py `
 
 模板文件位于 [`templates/style-package`](templates/style-package)，其中 [`TEMPLATE.md`](templates/style-package/TEMPLATE.md) 解释每个文件的用途，英文说明见 [`TEMPLATE.en.md`](templates/style-package/TEMPLATE.en.md)。模板不在 `style-packages/` 下，因此不会被正式包扫描器收录。
 
+## 创作工作流与外部集成
+
+如果贡献的是“照片如何被观察、提炼和编排”的流程，而不是一组视觉语言，请放在 `workflows/`，不要把它伪装成风格包。工作流至少要说明输入类型、输出变体、允许投射的视觉维度和主体保护条件；`subject_policy.default_subjects` 必须为空。可从 [`templates/workflow-package`](templates/workflow-package) 开始，并运行：
+
+```powershell
+python tools/validate-workflow.py
+```
+
+外部项目只登记在 `integrations/`。登记文件可以包含原仓库链接、许可证链接和独立编写的兼容说明，但不得复制外部 Skill、Prompt、示例图、数据或品牌素材。外部许可证不会因为登记在本仓库中就变成 OhMyStyle 的许可证。具体边界见[创作工作流说明](workflows/README.md)和[外部集成登记](integrations/README.md)。
+
 ## 扩充批次
 
 后续扩充按实际范围划分批次，不设固定包数量，也不以修改几个索引文件或复制模板来凑数。先用 [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml) 登记独立包和分类计划，再按“研究 → 建包 → 生图 → 审核 → 校验”的顺序完成。每个包单独提交一个 commit；批次画廊、总 README 和统计更新使用独立的批次集成 commit。
