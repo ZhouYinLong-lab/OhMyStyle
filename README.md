@@ -14,6 +14,61 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 
 如果你希望由 Agent 先多轮确认需求、匹配风格、等待选择，再调用生图模型，请使用 [OhMyStyle Skill](skill/README.md)。它提供 Agent 文件接口、本地 CLI，以及本地 HTTP / MCP 接口；模型账号、API Key 和实际图片生成由使用者自行配置。
 
+## OhMyStyle Skill 的三种使用方式
+
+三种入口共用同一套确认流程：内容确认 → 细节确认 → 风格匹配 → 用户确认风格 → 编译任务 → 调用生图模型。没有完成风格确认时，接口不会进入生图阶段。
+
+### 1. Agent 文件接口
+
+把仓库根目录的 [`SKILL.md`](SKILL.md) 和你的需求交给具备生图能力的 Agent。Agent 会读取风格包、提出多轮确认问题，展示候选风格，等你确认后再编译任务。
+
+```text
+请使用 OhMyStyle Skill：
+1. 先确认我的主体、用途和限制；
+2. 再确认画幅、构图、光线、材质和色彩；
+3. 展示三个候选风格包及代表图；
+4. 等我确认风格后再编译和生图。
+```
+
+这种方式适合 ChatGPT、Claude Code 或其他能够读取本地文件并调用生图工具的 Agent。
+
+### 2. 本地 CLI 接口
+
+CLI 使用 JSON 文件保存会话，适合脚本、本地模型和 ComfyUI 前置编译：
+
+```powershell
+python tools/ohmystyle.py init --brief "做一张安静的临海建筑杂志封面" --output session.json
+python tools/ohmystyle.py turn --session session.json --json '{"content":{"subject":"一座临海建筑","purpose":"杂志封面"},"confirmed":true}'
+python tools/ohmystyle.py turn --session session.json --json '{"details":{"aspect_ratio":"16:9","lighting":"阴天自然光"},"confirmed":true}'
+python tools/ohmystyle.py match --session session.json --limit 5
+python tools/ohmystyle.py turn --session session.json --json '{"style_selection":{"package":"jmw-turner"},"confirmed":true}'
+python tools/ohmystyle.py compile --session session.json --output job.json
+```
+
+默认只输出模型无关的 `job.json`。需要实际生成时，再通过本地命令 Provider 或 HTTP JSON Provider 接入你自己的模型服务。
+
+### 3. HTTP / MCP 接口
+
+HTTP 服务适合本地应用或其他 Agent 调用；MCP 服务适合支持 MCP 的客户端。两者都调用同一个会话核心：
+
+```powershell
+python tools/ohmystyle_http.py --host 127.0.0.1 --port 8765
+python tools/ohmystyle_mcp.py
+```
+
+HTTP 核心路由：
+
+```text
+POST /sessions                       创建会话
+GET  /sessions/{id}                  查看阶段和待确认问题
+POST /sessions/{id}/turn             提交一轮确认
+POST /sessions/{id}/match            获取风格候选
+POST /sessions/{id}/compile          编译模型无关任务
+POST /sessions/{id}/generate         调用启动时配置的 Provider
+```
+
+MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_styles`、`ohmystyle_compile` 和 `ohmystyle_generate` 工具。HTTP 和 MCP 默认不保存 API Key，也不允许客户端提交任意命令；实际 Provider 需要由使用者自行配置。完整协议见 [`skill/README.md`](skill/README.md)。
+
 ## 创作工作流
 
 如果你手里已经有照片，想把它转成杂志版式、抽象编辑或纸面作品，请先看[创作工作流](workflows/README.md)。工作流负责输入素材的观察、提炼和编排；风格包负责视觉语言，两者可以串联，但工作流不会替你固定地点、人物、物件或故事。
