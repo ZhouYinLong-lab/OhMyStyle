@@ -14,6 +14,61 @@ If you are looking for a visual result rather than a source category, use the [v
 
 If you want an Agent to confirm the request over several turns, match styles, wait for your choice, and then call an image model, use the [OhMyStyle Skill](skill/README.en.md). It provides an Agent file interface, a local CLI, and local HTTP / MCP interfaces; users manage model accounts, API keys, and actual image generation.
 
+## Three ways to use the OhMyStyle Skill
+
+All three entry points share the same sequence: content confirmation → detail confirmation → style matching → user style confirmation → job compilation → image-provider call. The interface cannot enter generation before the style is confirmed.
+
+### 1. Agent file interface
+
+Give the root [`SKILL.md`](SKILL.md) and your request to an image-capable Agent. The Agent reads the style packages, asks confirmation questions over several turns, shows candidate styles, and compiles the task only after you choose one.
+
+```text
+Use the OhMyStyle Skill:
+1. Confirm my subject, purpose, and constraints first.
+2. Confirm aspect ratio, composition, lighting, material, and color.
+3. Show three candidate style packages with representative images.
+4. Wait for my style confirmation before compiling or generating.
+```
+
+This is suitable for ChatGPT, Claude Code, or another Agent that can read local files and call an image-generation tool.
+
+### 2. Local CLI interface
+
+The CLI stores the conversation in a JSON file. It is useful for scripts, local models, and ComfyUI pre-compilation:
+
+```powershell
+python tools/ohmystyle.py init --brief "A quiet coastal building magazine cover" --output session.json
+python tools/ohmystyle.py turn --session session.json --json '{"content":{"subject":"a coastal building","purpose":"magazine cover"},"confirmed":true}'
+python tools/ohmystyle.py turn --session session.json --json '{"details":{"aspect_ratio":"16:9","lighting":"overcast natural light"},"confirmed":true}'
+python tools/ohmystyle.py match --session session.json --limit 5
+python tools/ohmystyle.py turn --session session.json --json '{"style_selection":{"package":"jmw-turner"},"confirmed":true}'
+python tools/ohmystyle.py compile --session session.json --output job.json
+```
+
+By default, the CLI outputs a provider-neutral `job.json`. For actual generation, connect your own model service through the local command Provider or the HTTP JSON Provider.
+
+### 3. HTTP / MCP interface
+
+The HTTP service is suitable for local applications or other Agents. The MCP service is suitable for MCP-capable clients. Both call the same session core:
+
+```powershell
+python tools/ohmystyle_http.py --host 127.0.0.1 --port 8765
+python tools/ohmystyle_mcp.py
+```
+
+Core HTTP routes:
+
+```text
+POST /sessions                       create a session
+GET  /sessions/{id}                  inspect phase and questions
+POST /sessions/{id}/turn             submit one confirmation turn
+POST /sessions/{id}/match            get style candidates
+POST /sessions/{id}/compile          compile a provider-neutral job
+POST /sessions/{id}/generate         call the provider configured at startup
+```
+
+MCP exposes `ohmystyle_start_session`, `ohmystyle_turn`, `ohmystyle_match_styles`, `ohmystyle_compile`, and `ohmystyle_generate`. HTTP and MCP do not store API keys by default and do not allow clients to submit arbitrary commands; users configure the actual Provider. See [`skill/README.en.md`](skill/README.en.md) for the complete protocol.
+
 ## Creative workflows
 
 If you already have a photo and want to turn it into an editorial layout, abstract edit, or paper-based work, start with the [creative workflows](workflows/README.en.md). A workflow handles observation, distillation, and composition of input material; a style package supplies visual language. They can be combined, but a workflow must not hard-code a place, person, object, or story for you.
