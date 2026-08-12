@@ -1,0 +1,30 @@
+id: ohmystyle
+name:
+  zh: OhMyStyle 风格编排 Skill
+  en: OhMyStyle Style Orchestration Skill
+version: 1.0.0
+kind: agent_skill
+entrypoints:
+  file: SKILL.md
+  cli: tools/ohmystyle.py
+  http: tools/ohmystyle_http.py
+  mcp: tools/ohmystyle_mcp.py
+conversation:
+  phases:
+    - content_confirmation
+    - detail_confirmation
+    - style_matching
+    - style_confirmation
+    - ready
+    - compiled
+    - generated
+  generation_requires_confirmed_style: true
+  generation_requires_confirmed_content: true
+style_policy:
+  package_root: style-packages
+  subject_independent: true
+  allow_composite: true
+provider_policy:
+  default: provider-neutral
+  user_managed_credentials: true
+  bundled_provider_credentials: false

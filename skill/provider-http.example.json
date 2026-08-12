@@ -1,0 +1,6 @@
+{
+  "type": "http_json",
+  "url": "http://127.0.0.1:9000/generate",
+  "headers": {},
+  "timeout": 120
+}

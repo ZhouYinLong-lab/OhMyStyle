@@ -1,0 +1,5 @@
+{
+  "type": "command",
+  "command": ["python", "path/to/your_provider_adapter.py"],
+  "output_dir": "outputs"
+}

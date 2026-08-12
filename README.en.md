@@ -12,6 +12,8 @@ Future expansion follows scoped batches: research original works and rights firs
 
 If you are looking for a visual result rather than a source category, use the [visual feature index](docs/VISUAL-INDEX.en.md) for soft natural light, deep dramatic light, geometric layout, pixel grids, neon cities, and more. The index is generated from package metadata and does not replace the seven source-based gallery categories below.
 
+If you want an Agent to confirm the request over several turns, match styles, wait for your choice, and then call an image model, use the [OhMyStyle Skill](skill/README.en.md). It provides an Agent file interface, a local CLI, and local HTTP / MCP interfaces; users manage model accounts, API keys, and actual image generation.
+
 ## Creative workflows
 
 If you already have a photo and want to turn it into an editorial layout, abstract edit, or paper-based work, start with the [creative workflows](workflows/README.en.md). A workflow handles observation, distillation, and composition of input material; a style package supplies visual language. They can be combined, but a workflow must not hard-code a place, person, object, or story for you.

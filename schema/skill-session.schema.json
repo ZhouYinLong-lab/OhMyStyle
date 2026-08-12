@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/skill-session.schema.json",
+  "title": "OhMyStyle Skill Session",
+  "type": "object",
+  "required": ["schema_version", "session_id", "phase", "content", "details", "confirmation"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "session_id": {"type": "string", "minLength": 1},
+    "phase": {"type": "string", "enum": ["content_confirmation", "detail_confirmation", "style_matching", "style_confirmation", "ready", "compiled", "generated", "review"]},
+    "brief": {"type": "string"},
+    "content": {"type": "object"},
+    "details": {"type": "object"},
+    "style_candidates": {"type": "array"},
+    "style_selection": {"type": ["object", "null"]},
+    "confirmation": {
+      "type": "object",
+      "required": ["content", "details", "style"],
+      "properties": {"content": {"type": "boolean"}, "details": {"type": "boolean"}, "style": {"type": "boolean"}}
+    }
+  }
+}

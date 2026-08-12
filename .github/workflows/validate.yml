@@ -54,6 +54,12 @@ jobs:
       - name: Validate source-transform workflows and external boundaries
         run: python3 tools/validate-workflow.py
 
+      - name: Validate OhMyStyle Skill interfaces
+        run: python3 -m unittest discover -s tests -p 'test_ohmystyle_*.py' -v
+
+      - name: Validate OhMyStyle Skill contract files
+        run: python3 tools/validate-skill.py
+
       - name: Validate compatibility style package
         run: python3 tools/validate.py
 
