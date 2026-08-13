@@ -25,6 +25,16 @@ OhMyStyle Skill 是一个多轮确认式的风格编排接口。它不把用户�
 
 CLI 会下载并缓存源码压缩包，再使用与本地仓库相同的风格包加载器。生产环境建议固定不可变 commit，并填写压缩包 `sha256`。远程仓库只提供项目代码与风格资料，不会被当作 Provider 命令执行。
 
+也可以直接使用：
+
+```powershell
+python tools/ohmystyle.py init `
+  --repo-url https://github.com/ZhouYinLong-lab/OhMyStyle `
+  --ref main `
+  --brief "做一张安静的临海建筑图" `
+  --output session.json
+```
+
 HTTP 和 MCP 服务从启动参数读取仓库与 Provider 配置；客户端不能通过请求提交仓库、Shell 命令或 API Key。
 
 ## 会话阶段

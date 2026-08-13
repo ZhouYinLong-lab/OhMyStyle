@@ -25,6 +25,16 @@ You can provide the GitHub repository URL without manually cloning it. Use an HT
 
 The CLI downloads and caches the source archive, then uses the same style-package loader as a local checkout. For production, pin an immutable commit and provide the archive `sha256`. The remote repository supplies project code and style data; it is never executed as a Provider command.
 
+You can also pass the URL directly:
+
+```powershell
+python tools/ohmystyle.py init `
+  --repo-url https://github.com/ZhouYinLong-lab/OhMyStyle `
+  --ref main `
+  --brief "Create a quiet coastal architecture image" `
+  --output session.json
+```
+
 HTTP and MCP servers load repository and Provider configuration at startup. Clients cannot submit a repository, shell command, or API key through a request. MCP clients cannot submit a Provider.
 
 ## Session phases

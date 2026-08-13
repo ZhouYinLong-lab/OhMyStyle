@@ -30,6 +30,9 @@ def main() -> None:
     init.add_argument("--brief", default="")
     init.add_argument("--session-id")
     init.add_argument("--repository", type=Path, help="JSON remote repository config")
+    init.add_argument("--repo-url", help="HTTPS GitHub repository URL")
+    init.add_argument("--ref", default="main", help="GitHub branch, tag, or commit")
+    init.add_argument("--sha256", help="Expected SHA-256 of the downloaded archive")
     init.add_argument("--output", type=Path, required=True)
     for name in ("turn", "view", "match", "compile", "generate"):
         command = sub.add_parser(name)
@@ -47,6 +50,12 @@ def main() -> None:
     args = parser.parse_args()
     if args.command == "init":
         repository = read_json(None, args.repository) if args.repository else None
+        if args.repo_url:
+            if repository:
+                parser.error("use either --repository or --repo-url, not both")
+            repository = {"url": args.repo_url, "ref": args.ref}
+            if args.sha256:
+                repository["sha256"] = args.sha256
         data = new_session(args.brief, args.session_id, repository)
         write_json(args.output, data)
         print(json.dumps(session_view(data), ensure_ascii=False, indent=2))

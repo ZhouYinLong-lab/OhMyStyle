@@ -40,4 +40,38 @@ python tools/ohmystyle.py turn --session session.json --json '{"style_selection"
 python tools/ohmystyle.py compile --session session.json --output job.json
 ```
 
+## 远程仓库调用
+
+Agent 可以直接使用仓库 URL，不要求用户手动 Clone。需要执行 CLI、HTTP 或 MCP 时，
+先把仓库地址写入一个 JSON 配置，并固定 `ref` 或 commit；程序会下载 GitHub 源码压缩包，
+校验可选的 `sha256`，然后缓存到本机。远程仓库只提供风格资料和编译代码的来源，
+不会被当作可执行 Provider。
+
+```json
+{
+  "url": "https://github.com/ZhouYinLong-lab/OhMyStyle",
+  "ref": "main"
+}
+```
+
+```powershell
+python tools/ohmystyle.py init `
+  --repository repository.json `
+  --brief "一张安静的临海建筑照片" `
+  --output session.json
+```
+
+也可以直接提供仓库 URL：
+
+```powershell
+python tools/ohmystyle.py init `
+  --repo-url https://github.com/ZhouYinLong-lab/OhMyStyle `
+  --ref main `
+  --brief "一张安静的临海建筑照片" `
+  --output session.json
+```
+
+生产环境建议使用不可变 commit，并同时填写 `sha256`。HTTP/MCP 服务端从启动配置读取
+仓库和 Provider；客户端不能通过请求临时提交命令、API Key 或远程仓库。
+
 CLI、HTTP 和 MCP 都调用同一个 `tools/ohmystyle_core.py`，因此不应为不同入口维护不同的确认逻辑。
