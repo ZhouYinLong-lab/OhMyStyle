@@ -15,6 +15,7 @@ from typing import Any
 
 from resource_registry import discover_packages, load_yaml
 from composite_runtime import compile_composite
+from remote_repository import ensure_repository
 from style_runtime import compile_job, resolve_package
 
 
@@ -55,7 +56,7 @@ def _flatten(value: Any) -> list[str]:
     return [str(value)] if value is not None else []
 
 
-def _package_record(path: Path) -> dict[str, Any]:
+def _package_record(path: Path, repository_root: Path) -> dict[str, Any]:
     package = load_yaml(path / "package.yaml")
     identity = load_yaml(path / "identity.yaml")
     signature = load_yaml(path / "visual-signature.yaml")
@@ -77,21 +78,34 @@ def _package_record(path: Path) -> dict[str, Any]:
         "domain": package.get("domain"),
         "version": package.get("version"),
         "summary": package.get("summary", ""),
-        "path": path.relative_to(ROOT).as_posix(),
+        "path": path.relative_to(repository_root).as_posix(),
         "searchable": searchable,
         "subject_policy": identity.get("subject_policy", identity.get("scope", {}).get("subject_policy", "open")),
-        "gallery": (path / "gallery-16x9.jpg").relative_to(ROOT).as_posix() if (path / "gallery-16x9.jpg").is_file() else None,
+        "gallery": (path / "gallery-16x9.jpg").relative_to(repository_root).as_posix() if (path / "gallery-16x9.jpg").is_file() else None,
     }
 
 
-def list_style_records() -> list[dict[str, Any]]:
-    return [_package_record(path) for path in discover_packages(STYLE_ROOT)]
+def repository_root(repository: dict[str, Any] | None = None) -> Path:
+    if repository:
+        return ensure_repository(repository)
+    return ROOT
 
 
-def match_styles(brief: str, details: dict[str, Any] | None = None, limit: int = 5) -> list[dict[str, Any]]:
+def list_style_records(repository: dict[str, Any] | None = None) -> list[dict[str, Any]]:
+    root = repository_root(repository)
+    style_root = root / "style-packages"
+    return [_package_record(path, root) for path in discover_packages(style_root)]
+
+
+def match_styles(
+    brief: str,
+    details: dict[str, Any] | None = None,
+    limit: int = 5,
+    repository: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
     query = " ".join([brief, " ".join(_flatten(details or {}))])
     query_tokens = _tokens(query)
-    records = list_style_records()
+    records = list_style_records(repository)
     scored: list[tuple[float, dict[str, Any]]] = []
     for record in records:
         record_tokens = _tokens(record["searchable"])
@@ -122,7 +136,11 @@ def _question(phase: str) -> list[str]:
     }.get(phase, [])
 
 
-def new_session(brief: str = "", session_id: str | None = None) -> dict[str, Any]:
+def new_session(
+    brief: str = "",
+    session_id: str | None = None,
+    repository: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     session = {
         "schema_version": "1.0.0",
         "session_id": session_id or f"oms-{uuid.uuid4().hex[:12]}",
@@ -130,6 +148,7 @@ def new_session(brief: str = "", session_id: str | None = None) -> dict[str, Any
         "updated_at": now(),
         "phase": "content_confirmation",
         "brief": brief.strip(),
+        "repository": repository,
         "content": {},
         "details": {},
         "style_candidates": [],
@@ -181,13 +200,19 @@ def advance(session: dict[str, Any], update: dict[str, Any]) -> dict[str, Any]:
                 session.get("brief", ""),
                 {**session.get("content", {}), **details},
                 int(update.get("limit", 5)),
+                session.get("repository"),
             )
             session["phase"] = "style_matching"
         else:
             session["details"] = details
         return _record(session, "details_updated", {"phase": session["phase"]})
     if phase == "style_matching":
-        candidates = match_styles(session.get("brief", ""), session.get("details", {}), int(update.get("limit", 5)))
+        candidates = match_styles(
+            session.get("brief", ""),
+            session.get("details", {}),
+            int(update.get("limit", 5)),
+            session.get("repository"),
+        )
         session["style_candidates"] = candidates
         session["phase"] = "style_confirmation"
         return _record(session, "styles_matched", {"count": len(candidates)})
@@ -198,7 +223,7 @@ def advance(session: dict[str, Any], update: dict[str, Any]) -> dict[str, Any]:
         if isinstance(selection, str):
             selection = {"package": selection}
         package = str(selection.get("package", ""))
-        resolve_style_reference(package)
+        resolve_style_reference(package, repository_root(session.get("repository")))
         session["style_selection"] = selection
         if update.get("confirmed") is True or update.get("style_confirmed") is True:
             session["confirmation"]["style"] = True
@@ -207,21 +232,23 @@ def advance(session: dict[str, Any], update: dict[str, Any]) -> dict[str, Any]:
     raise ValueError(f"Session cannot accept confirmation in phase {phase!r}")
 
 
-def resolve_style_reference(reference: str) -> Path:
+def resolve_style_reference(reference: str, repository_root_path: Path | None = None) -> Path:
+    repository_root_path = (repository_root_path or ROOT).resolve()
+    style_root = repository_root_path / "style-packages"
     raw = Path(reference)
-    candidates = [ROOT / raw, STYLE_ROOT / raw]
+    candidates = [repository_root_path / raw, style_root / raw]
     for candidate in candidates:
         try:
             resolved = candidate.resolve()
-            resolved.relative_to(STYLE_ROOT.resolve())
+            resolved.relative_to(style_root.resolve())
             if (resolved / "package.yaml").is_file() or (resolved / "composite.yaml").is_file():
                 return resolved
         except (FileNotFoundError, ValueError):
             continue
-    for manifest in STYLE_ROOT.rglob("package.yaml"):
+    for manifest in style_root.rglob("package.yaml"):
         if load_yaml(manifest).get("id") == reference:
             return manifest.parent.resolve()
-    for manifest in (STYLE_ROOT / "composites").rglob("composite.yaml"):
+    for manifest in (style_root / "composites").rglob("composite.yaml"):
         if load_yaml(manifest).get("id") == reference:
             return manifest.parent.resolve()
     raise FileNotFoundError(f"Style package is not inside style-packages: {reference}")
@@ -231,7 +258,7 @@ def compile_session(session: dict[str, Any], model: str = "provider-neutral") ->
     if session.get("phase") != "ready" or not session.get("confirmation", {}).get("style"):
         raise ValueError("Session is not ready; complete content, detail, and style confirmation first")
     selection = session["style_selection"]
-    package = resolve_style_reference(str(selection["package"]))
+    package = resolve_style_reference(str(selection["package"]), repository_root(session.get("repository")))
     content = session["content"]
     details = session["details"]
     subject = str(content["subject"])

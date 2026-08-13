@@ -32,6 +32,7 @@ class SessionStore:
 
 STORE = SessionStore()
 SERVER_PROVIDER: dict | None = None
+SERVER_REPOSITORY: dict | None = None
 
 
 def _json_bytes(data: object) -> bytes:
@@ -78,7 +79,9 @@ class Handler(BaseHTTPRequestHandler):
         try:
             body = self._read()
             if path == "/sessions":
-                session = STORE.put(new_session(body.get("brief", ""), body.get("session_id")))
+                if body.get("repository") is not None:
+                    raise ValueError("HTTP clients cannot submit repositories; configure one when starting the server")
+                session = STORE.put(new_session(body.get("brief", ""), body.get("session_id"), SERVER_REPOSITORY))
                 self._send(HTTPStatus.CREATED, session_view(session))
                 return
             parts = path.split("/")
@@ -91,7 +94,7 @@ class Handler(BaseHTTPRequestHandler):
                 result = advance(session, body)
                 self._send(HTTPStatus.OK, session_view(STORE.put(result)))
             elif action == "match":
-                candidates = match_styles(session.get("brief", ""), {**session.get("content", {}), **session.get("details", {})}, int(body.get("limit", 5)))
+                candidates = match_styles(session.get("brief", ""), {**session.get("content", {}), **session.get("details", {})}, int(body.get("limit", 5)), session.get("repository"))
                 session["style_candidates"] = candidates
                 session["phase"] = "style_confirmation"
                 self._send(HTTPStatus.OK, session_view(STORE.put(session)))
@@ -119,9 +122,15 @@ class Handler(BaseHTTPRequestHandler):
         return
 
 
-def serve(host: str = "127.0.0.1", port: int = 8765, provider_config: dict | None = None) -> None:
-    global SERVER_PROVIDER
+def serve(
+    host: str = "127.0.0.1",
+    port: int = 8765,
+    provider_config: dict | None = None,
+    repository_config: dict | None = None,
+) -> None:
+    global SERVER_PROVIDER, SERVER_REPOSITORY
     SERVER_PROVIDER = provider_config
+    SERVER_REPOSITORY = repository_config
     server = ThreadingHTTPServer((host, port), Handler)
     print(f"OhMyStyle HTTP listening on http://{host}:{port}", flush=True)
     try:
@@ -137,9 +146,11 @@ def main() -> None:
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--provider-config", type=Path, help="JSON provider config loaded by the server")
+    parser.add_argument("--repository-config", type=Path, help="JSON remote repository config loaded by the server")
     args = parser.parse_args()
     provider = json.loads(args.provider_config.read_text(encoding="utf-8")) if args.provider_config else None
-    serve(args.host, args.port, provider)
+    repository = json.loads(args.repository_config.read_text(encoding="utf-8")) if args.repository_config else None
+    serve(args.host, args.port, provider, repository)
 
 
 if __name__ == "__main__":

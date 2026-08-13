@@ -12,9 +12,12 @@ import sys
 from typing import Any
 
 from ohmystyle_core import advance, compile_session, generate_session, match_styles, new_session, session_view
+from remote_repository import ensure_repository
 
 
 SESSIONS: dict[str, dict[str, Any]] = {}
+SERVER_REPOSITORY: dict[str, Any] | None = None
+SERVER_PROVIDER: dict[str, Any] | None = None
 
 
 TOOLS = [
@@ -36,7 +39,9 @@ def error(message: str, request_id: object) -> dict[str, Any]:
 
 def call_tool(name: str, arguments: dict[str, Any]) -> object:
     if name == "ohmystyle_start_session":
-        session = new_session(arguments.get("brief", ""), arguments.get("session_id"))
+        if arguments.get("repository") is not None:
+            raise ValueError("MCP clients cannot submit repositories; configure one on the server")
+        session = new_session(arguments.get("brief", ""), arguments.get("session_id"), SERVER_REPOSITORY)
         SESSIONS[session["session_id"]] = session
         return session_view(session)
     session_id = arguments.get("session_id")
@@ -46,14 +51,16 @@ def call_tool(name: str, arguments: dict[str, Any]) -> object:
     if name == "ohmystyle_turn":
         return session_view(advance(session, arguments.get("update", {})))
     if name == "ohmystyle_match_styles":
-        candidates = match_styles(session.get("brief", ""), {**session.get("content", {}), **session.get("details", {})}, int(arguments.get("limit", 5)))
+        candidates = match_styles(session.get("brief", ""), {**session.get("content", {}), **session.get("details", {})}, int(arguments.get("limit", 5)), session.get("repository"))
         session["style_candidates"] = candidates
         session["phase"] = "style_confirmation"
         return session_view(session)
     if name == "ohmystyle_compile":
         return compile_session(session, arguments.get("model", "provider-neutral"))
     if name == "ohmystyle_generate":
-        return generate_session(session, arguments.get("provider"))
+        if arguments.get("provider") is not None:
+            raise ValueError("MCP clients cannot submit providers; configure one on the server")
+        return generate_session(session, SERVER_PROVIDER)
     raise ValueError(f"unknown tool: {name}")
 
 

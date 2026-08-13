@@ -29,6 +29,7 @@ def main() -> None:
     init = sub.add_parser("init", help="Create a multi-turn session file")
     init.add_argument("--brief", default="")
     init.add_argument("--session-id")
+    init.add_argument("--repository", type=Path, help="JSON remote repository config")
     init.add_argument("--output", type=Path, required=True)
     for name in ("turn", "view", "match", "compile", "generate"):
         command = sub.add_parser(name)
@@ -45,7 +46,8 @@ def main() -> None:
             command.add_argument("--provider", type=Path, help="JSON provider config")
     args = parser.parse_args()
     if args.command == "init":
-        data = new_session(args.brief, args.session_id)
+        repository = read_json(None, args.repository) if args.repository else None
+        data = new_session(args.brief, args.session_id, repository)
         write_json(args.output, data)
         print(json.dumps(session_view(data), ensure_ascii=False, indent=2))
         return
@@ -61,6 +63,7 @@ def main() -> None:
             session.get("brief", ""),
             {**session.get("content", {}), **session.get("details", {})},
             args.limit,
+            session.get("repository"),
         )
         session["style_candidates"] = data
         session["phase"] = "style_confirmation"
