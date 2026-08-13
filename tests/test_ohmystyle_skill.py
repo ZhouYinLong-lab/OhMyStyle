@@ -38,7 +38,9 @@ class OhMyStyleSkillTests(unittest.TestCase):
         session = core.new_session("测试")
         with self.assertRaises(ValueError):
             core.compile_session(session)
-        session = core.advance(session, {"content": {"subject": "一把椅子"}, "confirmed": True})
+        with self.assertRaises(ValueError):
+            core.advance(session, {"content": {"subject": "一把椅子"}, "confirmed": True})
+        session = core.advance(session, {"content": {"subject": "一把椅子", "purpose": "风格测试"}, "confirmed": True})
         with self.assertRaises(ValueError):
             core.compile_session(session)
 

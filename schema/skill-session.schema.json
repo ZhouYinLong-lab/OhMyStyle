@@ -9,8 +9,47 @@
     "session_id": {"type": "string", "minLength": 1},
     "phase": {"type": "string", "enum": ["content_confirmation", "detail_confirmation", "style_matching", "style_confirmation", "ready", "compiled", "generated", "review"]},
     "brief": {"type": "string"},
-    "content": {"type": "object"},
-    "details": {"type": "object"},
+    "repository": {
+      "type": ["object", "null"],
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "properties": {
+            "url": {"type": "string", "pattern": "^https://github\\.com/[^/]+/[^/]+/?$"},
+            "ref": {"type": "string", "minLength": 1, "maxLength": 160},
+            "commit": {"type": "string", "minLength": 1, "maxLength": 160},
+            "sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"}
+          },
+          "required": ["url"],
+          "oneOf": [{"required": ["ref"]}, {"required": ["commit"]}],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "content": {
+      "type": "object",
+      "required": ["subject"],
+      "properties": {
+        "subject": {"type": "string", "minLength": 1},
+        "purpose": {"type": "string"},
+        "must_keep": {"type": ["string", "array"]},
+        "must_avoid": {"type": ["string", "array"]}
+      }
+    },
+    "details": {
+      "type": "object",
+      "required": ["aspect_ratio"],
+      "properties": {
+        "aspect_ratio": {"type": "string", "minLength": 1},
+        "composition": {"type": "string"},
+        "lighting": {"type": "string"},
+        "materials": {"type": ["string", "array"]},
+        "colors": {"type": ["string", "array"]},
+        "references": {"type": ["string", "array"]},
+        "output_count": {"type": "integer", "minimum": 1}
+      }
+    },
     "style_candidates": {"type": "array"},
     "style_selection": {"type": ["object", "null"]},
     "confirmation": {

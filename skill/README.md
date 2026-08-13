@@ -12,6 +12,21 @@ OhMyStyle Skill 是一个多轮确认式的风格编排接口。它不把用户�
 
 三种入口都使用 `tools/ohmystyle_core.py`，所以确认顺序和安全门一致。
 
+## 远程仓库模式
+
+可以直接提供 GitHub 仓库地址，不必手动 Clone。使用 HTTPS 地址和固定的 `ref` 或 commit：
+
+```json
+{
+  "url": "https://github.com/ZhouYinLong-lab/OhMyStyle",
+  "ref": "main"
+}
+```
+
+CLI 会下载并缓存源码压缩包，再使用与本地仓库相同的风格包加载器。生产环境建议固定不可变 commit，并填写压缩包 `sha256`。远程仓库只提供项目代码与风格资料，不会被当作 Provider 命令执行。
+
+HTTP 和 MCP 服务从启动参数读取仓库与 Provider 配置；客户端不能通过请求提交仓库、Shell 命令或 API Key。
+
 ## 会话阶段
 
 ```text
@@ -81,4 +96,4 @@ python tools/ohmystyle_mcp.py
 - `ohmystyle_compile`
 - `ohmystyle_generate`
 
-它不在仓库内保存模型账号或 API Key。MCP 客户端应通过自己的安全配置传入 Provider。
+它不在仓库内保存模型账号或 API Key。MCP 服务端应通过启动参数加载 Provider；客户端不能提交 Provider。

@@ -182,7 +182,7 @@ def advance(session: dict[str, Any], update: dict[str, Any]) -> dict[str, Any]:
         content = dict(session.get("content", {}))
         content.update(update.get("content", update))
         if update.get("confirmed") is True or update.get("content_confirmed") is True:
-            _require(content, ("subject",), "content")
+            _require(content, ("subject", "purpose"), "content")
             session["content"] = content
             session["confirmation"]["content"] = True
             session["phase"] = "detail_confirmation"

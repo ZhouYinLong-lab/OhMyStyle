@@ -7,12 +7,13 @@ adding an SDK dependency: initialize, tools/list, and tools/call.
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
+from pathlib import Path
 from typing import Any
 
 from ohmystyle_core import advance, compile_session, generate_session, match_styles, new_session, session_view
-from remote_repository import ensure_repository
 
 
 SESSIONS: dict[str, dict[str, Any]] = {}
@@ -25,7 +26,7 @@ TOOLS = [
     {"name": "ohmystyle_turn", "description": "Apply one confirmed content, detail, or style-selection turn.", "inputSchema": {"type": "object", "required": ["session_id"], "properties": {"session_id": {"type": "string"}, "update": {"type": "object"}}}},
     {"name": "ohmystyle_match_styles", "description": "Match the confirmed request to style packages.", "inputSchema": {"type": "object", "required": ["session_id"], "properties": {"session_id": {"type": "string"}, "limit": {"type": "integer"}}}},
     {"name": "ohmystyle_compile", "description": "Compile a confirmed session into a provider-neutral job.", "inputSchema": {"type": "object", "required": ["session_id"], "properties": {"session_id": {"type": "string"}, "model": {"type": "string"}}}},
-    {"name": "ohmystyle_generate", "description": "Request generation through a user-managed provider.", "inputSchema": {"type": "object", "required": ["session_id"], "properties": {"session_id": {"type": "string"}, "provider": {"type": "object"}}}},
+    {"name": "ohmystyle_generate", "description": "Request generation through the provider configured on the MCP server.", "inputSchema": {"type": "object", "required": ["session_id"], "properties": {"session_id": {"type": "string"}}}},
 ]
 
 
@@ -83,6 +84,13 @@ def handle(request: dict[str, Any]) -> dict[str, Any] | None:
 
 
 def serve() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--provider-config", type=Path)
+    parser.add_argument("--repository-config", type=Path)
+    args = parser.parse_args()
+    global SERVER_PROVIDER, SERVER_REPOSITORY
+    SERVER_PROVIDER = json.loads(args.provider_config.read_text(encoding="utf-8")) if args.provider_config else None
+    SERVER_REPOSITORY = json.loads(args.repository_config.read_text(encoding="utf-8")) if args.repository_config else None
     for line in sys.stdin:
         if not line.strip():
             continue

@@ -27,6 +27,25 @@ class OhMyStyleMCPTests(unittest.TestCase):
         payload = json.loads(response["result"]["content"][0]["text"])
         self.assertEqual(payload["session"]["phase"], "content_confirmation")
 
+    def test_client_cannot_submit_provider(self) -> None:
+        start = MCP.handle({
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "tools/call",
+            "params": {"name": "ohmystyle_start_session", "arguments": {"brief": "测试"}},
+        })
+        session_id = json.loads(start["result"]["content"][0]["text"])["session"]["session_id"]
+        response = MCP.handle({
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "tools/call",
+            "params": {
+                "name": "ohmystyle_generate",
+                "arguments": {"session_id": session_id, "provider": {"type": "command", "command": ["whoami"]}},
+            },
+        })
+        self.assertIn("cannot submit providers", response["error"]["message"])
+
 
 if __name__ == "__main__":
     unittest.main()

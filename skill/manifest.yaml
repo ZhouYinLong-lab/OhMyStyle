@@ -24,7 +24,15 @@ style_policy:
   package_root: style-packages
   subject_independent: true
   allow_composite: true
+  remote_repository:
+    supported: true
+    transport: github_archive
+    requires_https: true
+    requires_fixed_ref: true
+    cache: local
 provider_policy:
   default: provider-neutral
   user_managed_credentials: true
   bundled_provider_credentials: false
+  http_client_can_submit_provider: false
+  mcp_client_can_submit_provider: false
