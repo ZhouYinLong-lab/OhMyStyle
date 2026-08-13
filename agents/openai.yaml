@@ -1,0 +1,8 @@
+interface:
+  display_name: "OhMyStyle 风格编排"
+  short_description: "多轮确认并匹配可复现的视觉风格包"
+  brand_color: "#3B82F6"
+  default_prompt: "使用 $ohmystyle 先确认需求和风格，再编译并执行生图任务。"
+
+policy:
+  allow_implicit_invocation: true
