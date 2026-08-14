@@ -68,6 +68,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: bridget-riley
+  name: 布里奇特·莱利
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/bridget-riley
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: caravaggio
   name: 卡拉瓦乔
   kind: artist
@@ -1275,6 +1292,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: ps1-survival-horror-low-poly
+  name: 早期三维生存恐怖游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/ps1-survival-horror-low-poly
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: retro-3d-console
   name: 复古三维主机美术
   kind: game_art
@@ -2668,6 +2702,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: august-sander
+  name: 奥古斯特·桑德
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/august-sander
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: berenice-abbott
   name: 贝伦妮丝·阿博特
   kind: photographer
