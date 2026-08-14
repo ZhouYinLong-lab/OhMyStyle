@@ -1,0 +1,19 @@
+version: 1
+goal: 复现严谨摄影棚中的比例、材料、留白与受控光线，不固定题材。
+sequence:
+  - 读取用户主体并确定镜头、画幅与用途。
+  - 用无缝或极简背景建立干净轮廓和负空间。
+  - 使用大型中性柔光塑造形体，再以弱补光整理暗部。
+  - 检查材质反射、阴影边界、肤色和局部细节。
+constraints:
+  must:
+    - preserve the user-supplied subject
+    - keep controlled studio geometry and material separation
+    - keep retouching restrained
+  avoid:
+    - generic ecommerce lighting
+    - fixed fashion or still-life props
+    - copied poses or compositions
+model_notes:
+  prompt_order: subject -> camera -> composition -> lighting -> material -> finish
+  reference_use: Study precision, restraint, and material observation only.

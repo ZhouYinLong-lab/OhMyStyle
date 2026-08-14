@@ -1,0 +1,22 @@
+version: 1
+signature:
+  medium: 高控制摄影棚摄影
+  composition: 精确轮廓、留白、克制的物体间距
+  palette: 中性基础色与有限材料色
+  lighting: 大型柔光、清楚但柔和的明暗转折
+  surface: 干净、真实、不过度修饰
+  texture: 细节集中于材料与形体
+  edges: 稳定、精确、无人工发光边缘
+transfer:
+  preserve:
+    - 摄影棚控制和形体精度
+    - 材料差异与克制阴影
+    - 负空间和安静的完成度
+  release:
+    - 代表图中的纸张和器物
+    - 固定肖像、时装或静物题材
+subject_independence:
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 纸张与陶瓷器物

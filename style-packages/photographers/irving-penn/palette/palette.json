@@ -1,0 +1,9 @@
+{
+  "roles": [
+    {"name": "暖灰背景", "hex": "#D4CEC2", "role": "quiet studio ground"},
+    {"name": "炭黑阴影", "hex": "#242321", "role": "controlled depth"},
+    {"name": "纸张米白", "hex": "#EEE7D8", "role": "optional light material"},
+    {"name": "暗赭色", "hex": "#806049", "role": "optional restrained warm accent"}
+  ],
+  "usage": "Treat the palette as tonal roles, not mandatory object colors; preserve the user's subject and local material color."
+}

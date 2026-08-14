@@ -1,0 +1,9 @@
+asset: sample.png
+status: curated_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: folded paper and ceramic vessel
+generated_at: 2026-08-14
+review:
+  decision: accepted_as_representative
+  notes: Neutral props demonstrate studio control and material separation only; they are not package defaults.

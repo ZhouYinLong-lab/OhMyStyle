@@ -1,0 +1,18 @@
+family: controlled-studio-photography
+near_duplicates:
+  - photographers/irving-penn
+complements:
+  - artists/johannes-vermeer
+  - presets/quiet-documentary
+same_family:
+  - photographers/richard-avedon
+supersedes: []
+conflicts:
+  - presets/aurora-gradient-grain
+distinctives:
+  - disciplined studio geometry across portrait, fashion, and still life
+  - material-specific highlights and restrained negative space
+  - polished but not glossy commercial finish
+avoid_overlap:
+  - do not require a white background or product subject
+  - do not reduce the package to generic studio photography
