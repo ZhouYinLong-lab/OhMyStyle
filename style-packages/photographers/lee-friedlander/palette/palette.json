@@ -1,0 +1,8 @@
+{
+  "roles": [
+    {"name": "银白高光", "hex": "#E7E7E2", "role": "glass and sky highlights"},
+    {"name": "中性灰", "hex": "#8B8B86", "role": "material and spatial middle values"},
+    {"name": "深炭黑", "hex": "#1E2020", "role": "frames, shadows, and visual anchors"}
+  ],
+  "usage": "Use the palette as a tonal system; color may be introduced only when the user's request requires it."
+}

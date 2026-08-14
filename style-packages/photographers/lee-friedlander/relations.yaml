@@ -1,0 +1,18 @@
+family: layered-street-observation
+near_duplicates: []
+complements:
+  - photographers/robert-frank
+  - movements/neue-sachlichkeit
+same_family:
+  - photographers/garry-winogrand
+  - photographers/william-klein
+supersedes: []
+conflicts:
+  - presets/quiet-documentary
+distinctives:
+  - self-referential frame construction through reflection and occlusion
+  - high-density black-and-white observation without a fixed narrative
+  - complex urban reading that remains materially grounded
+avoid_overlap:
+  - do not reduce the package to generic street photography
+  - do not require a city street, storefront, car, or passerby

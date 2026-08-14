@@ -1,0 +1,19 @@
+version: 1
+goal: 用真实环境中的反射、遮挡和裁切建立多层黑白观看关系。
+sequence:
+  - 读取用户主体，不从风格名推断城市、人物或故事。
+  - 寻找一个由场景自然提供的反射、框架、影子或遮挡。
+  - 用黑白灰阶整理多层空间，保留局部亮部和深暗。
+  - 检查线索是否仍然可读，删除随机文字、品牌和多余层。
+constraints:
+  must:
+    - preserve the user-supplied subject
+    - use layered observation only when supported by the scene
+    - keep spatial ambiguity readable
+  avoid:
+    - default storefronts, cars, signs, or pedestrians
+    - cinematic noir grading
+    - copied street compositions
+model_notes:
+  prompt_order: subject -> observation layer -> framing -> monochrome -> texture -> exclusions
+  reference_use: Study spatial layering and photographic observation, not identifiable content.

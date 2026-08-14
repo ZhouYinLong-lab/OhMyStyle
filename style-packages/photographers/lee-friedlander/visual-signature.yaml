@@ -1,0 +1,25 @@
+version: 1
+signature:
+  medium: 黑白街头观察摄影
+  composition: 反射、遮挡、框中框、局部裁切和自指性
+  palette: 黑白灰阶，依靠局部明度密度组织观看
+  lighting: 真实环境光与反射光并置
+  surface: 直接、克制、保留街头表面
+  texture: 中等胶片与城市材料纹理
+  edges: 结构线清楚，部分主体被自然遮挡
+transfer:
+  preserve:
+    - 多层观看关系
+    - 黑白灰阶和复杂但可读的构图
+    - 反射与裁切带来的不确定性
+  release:
+    - 代表图中的商店、线缆和行人
+    - 固定城市或街头事件
+subject_independence:
+  fixed_subjects: []
+  optional_motifs:
+    - natural reflection
+    - incidental frame
+    - partial occlusion
+  benchmark_subjects:
+    - 普通城市界面

@@ -1,0 +1,18 @@
+version: 1
+checks:
+  style_recognition:
+    question: 是否能看出黑白街头观察、反射或遮挡层，而不是普通黑白滤镜？
+    score: 0
+  subject_independence:
+    question: 用户主体是否保留，且没有被商店、街道或行人替换？
+    score: 0
+  prompt_following:
+    question: 是否遵守用户指定的主体、场景、画幅和用途？
+    score: 0
+  composition_stability:
+    question: 复杂层次是否仍有清楚的空间线索和观看路径？
+    score: 0
+  ai_artifact_level:
+    question: 是否出现不可能的反射、随机文字、重复人物或无意义颗粒？
+    score: 0
+notes: 评分用于比较生成结果，不表示与摄影师原作的认证或等同。
