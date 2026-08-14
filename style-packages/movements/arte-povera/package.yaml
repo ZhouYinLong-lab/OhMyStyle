@@ -1,0 +1,33 @@
+id: arte-povera
+name: 贫穷艺术
+kind: movement
+domain: hybrid
+version: 0.1.0
+summary: >-
+  以非贵重材料、临时结构、自然变化、粗粝表面和材料之间的张力组织画面，强调物质过程而非装饰性完成度。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: hybrid
+  historical_context: '二十世纪六十年代意大利当代艺术'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

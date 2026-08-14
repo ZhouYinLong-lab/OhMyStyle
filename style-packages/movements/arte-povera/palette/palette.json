@@ -1,0 +1,11 @@
+{
+  "name": "原生材料调色板",
+  "colors": [
+    {"name": "石灰灰", "hex": "#8D8A80", "role": "stone and ground"},
+    {"name": "土壤棕", "hex": "#554536", "role": "organic matter"},
+    {"name": "麻布褐", "hex": "#A38B66", "role": "fiber"},
+    {"name": "氧化红", "hex": "#914B3F", "role": "aged metal accent"},
+    {"name": "半透明蓝", "hex": "#78A9B8", "role": "processed material accent"}
+  ],
+  "notes": "Color is derived from material and change; no single prop or material is mandatory."
+}

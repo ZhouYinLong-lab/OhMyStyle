@@ -1,0 +1,18 @@
+canonical_name: 贫穷艺术
+entity_type: movement
+domain: hybrid
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - any user-supplied subject
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory soil, stone, burlap, branches, or gallery installation
+sources:
+  - 'https://www.moma.org/collection/terms/arte-povera'
+
+notes:
+  - A material-conscious package built around humble matter, unstable balance, impermanence, and visible process.
+  - It can guide a portrait, object, room, or abstract image toward material awareness without forcing an installation recipe.
