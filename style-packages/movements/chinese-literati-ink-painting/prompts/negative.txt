@@ -1,0 +1,4 @@
+Do not force bamboo, mountains, pavilions, scholars, seals, calligraphy, scroll
+formats, or named Chinese locations into the scene. Avoid generic watercolor blur,
+opaque gray fog, photorealism, anime, 3D render, neon color grading, readable text,
+logos, signatures, and watermarks.

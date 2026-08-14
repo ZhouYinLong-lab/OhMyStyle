@@ -1,0 +1,18 @@
+medium: Chinese ink-and-wash painting language on absorbent paper
+materials:
+  support: warm or cool absorbent paper with visible empty ground
+process:
+  - reserve the main blank field and place the user-supplied subject with a few structural strokes
+  - establish pale washes and distant value layers
+  - add dark wet-ink anchors and dry-brush edges selectively
+  - introduce restrained mineral color only when it clarifies the requested subject
+technical_direction:
+  contrast: broad value range with soft middle transitions
+  saturation: low, with small mineral-color accents if needed
+  perspective: atmospheric and selective; omission is part of spatial construction
+  detail_density: TODO
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

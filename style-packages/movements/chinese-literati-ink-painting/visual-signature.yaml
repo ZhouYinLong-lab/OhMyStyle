@@ -1,0 +1,20 @@
+composition:
+  - Give the image a quiet imbalance with a large breathing area and a small number of purposeful brush masses.
+  - Use distance, omission, and scale to create attention rather than filling every area with detail.
+palette:
+  - Let ink value carry most of the image; if color appears, keep it mineral, sparse, and subordinate to the paper.
+  - Preserve warm or cool paper variation without turning it into a tinted cinematic filter.
+lighting:
+  quality: diffuse daylight filtered through atmosphere
+  behavior:
+    - Light is understated; depth comes from ink dilution, dry brush, and omitted edges rather than dramatic cast shadow.
+surface:
+  finish: absorbent paper with pooled and feathered ink
+  edges: alternation between wet soft edges and decisive dry-brush accents
+texture:
+  density: sparse-to-medium, with detail reserved for a few anchor strokes
+  placement: texture follows brush direction and material observation; blank paper remains an active part of the composition
+invariants:
+  - preserve value-based ink hierarchy and active blank space
+  - preserve visible brush behavior instead of generic watercolor blur
+  - preserve an open subject policy; do not force bamboo, mountains, pavilions, seals, or calligraphy

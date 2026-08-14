@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-222-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-223-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -357,6 +357,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/ukiyo-e/README.en.md"><img src="style-packages/movements/ukiyo-e/gallery-16x9.jpg" width="230" alt="Ukiyo-e representative image"></a><br><strong>Ukiyo-e</strong><br><a href="style-packages/movements/ukiyo-e/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/chinese-literati-ink-painting/README.en.md"><img src="style-packages/movements/chinese-literati-ink-painting/gallery-16x9.jpg" width="230" alt="Chinese Literati Ink Painting representative image"></a><br><strong>Chinese Literati Ink Painting</strong><br><a href="style-packages/movements/chinese-literati-ink-painting/README.en.md">Open README</a></td>
 </tr>
 </table>
 

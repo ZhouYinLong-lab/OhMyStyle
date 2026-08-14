@@ -1,0 +1,9 @@
+asset: chinese-literati-hillside-v1.png
+status: generated_for_review
+generator: OpenAI image generation tool
+prompt_mode: anonymous_visual_signature
+subject: original winter hillside with a small shelter and bare tree
+generated_at: 2026-08-14
+review:
+  decision: pending
+  notes: Representative image demonstrates ink value, omitted space, and brush variation without adding bamboo or calligraphy.

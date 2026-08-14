@@ -1,0 +1,20 @@
+canonical_name: 中国文人水墨
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - landscapes and environments
+    - ordinary objects
+    - plants or animals when requested
+    - figures when requested
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E8%A1%8E%E5%A2%A8%E7%AB%B9%E8%BD%B4.png'
+
+notes:
+  - A Chinese literati painting approach built around brush-and-ink variation, cultivated restraint, spatial emptiness, and the relation between image and inscription.
+  - The package transfers the behavior of ink and paper to new subjects; it does not require bamboo, mountains, scholars, or a scroll format.
