@@ -748,6 +748,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: piet-mondrian
+  name: 皮特·蒙德里安
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/piet-mondrian
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: pieter-bruegel-the-elder
   name: 老彼得·勃鲁盖尔
   kind: artist
@@ -1122,6 +1139,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: hand-painted-point-and-click
+  name: 手绘点击式冒险游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/hand-painted-point-and-click
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: hi-fi-rush-rhythm-comic
   name: 节奏漫画卡通渲染游戏美术
   kind: game_art
@@ -3008,6 +3042,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: irving-penn
+  name: 欧文·佩恩
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/irving-penn
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: julia-margaret-cameron
   name: 朱莉娅·玛格丽特·卡梅隆
   kind: photographer
@@ -3024,6 +3075,23 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 1
+  benchmark: false
+- resource_id: lee-friedlander
+  name: 李·弗里德兰德
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/lee-friedlander
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
   benchmark: false
 - resource_id: lewis-hine
   name: 刘易斯·海因
