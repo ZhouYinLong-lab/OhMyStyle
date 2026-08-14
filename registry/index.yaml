@@ -544,6 +544,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: mc-escher
+  name: 莫里茨·科内利斯·埃舍尔
+  kind: artist
+  domain: printmaking
+  package_path: style-packages/artists/mc-escher
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: michelangelo-buonarroti
   name: 米开朗基罗
   kind: artist
@@ -1716,6 +1733,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: fluxus
+  name: 激浪派
+  kind: movement
+  domain: hybrid
+  package_path: style-packages/movements/fluxus
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: futurism
   name: 未来主义
   kind: movement
@@ -2707,6 +2741,23 @@ packages:
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/fan-ho
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: garry-winogrand
+  name: 加里·维诺格兰德
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/garry-winogrand
   maturity: L2
   focus_dimensions:
   - camera
