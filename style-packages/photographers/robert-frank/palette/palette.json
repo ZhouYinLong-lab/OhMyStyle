@@ -1,0 +1,10 @@
+{
+  "name": "粗粝黑白纪实调色板",
+  "colors": [
+    {"name": "深黑", "hex": "#181A1A", "role": "deep shadow"},
+    {"name": "石墨灰", "hex": "#4B4D4B", "role": "structural midtone"},
+    {"name": "雾灰", "hex": "#8E918D", "role": "environmental separation"},
+    {"name": "旧银白", "hex": "#D7D8D2", "role": "highlight and sky"}
+  ],
+  "notes": "The package is monochrome by default. Values describe tonal roles, not mandatory objects."
+}

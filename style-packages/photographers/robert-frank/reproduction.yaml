@@ -1,0 +1,18 @@
+medium: black-and-white documentary photography with 35mm-like framing and print grain
+materials:
+  support: analog or analog-emulated photographic print; preserve grain, imperfect exposure, and non-glossy paper response
+process:
+  - Observe the user's subject in its supplied environment rather than staging a hero scene.
+  - Choose an oblique, cropped, or slightly late frame with a readable but incomplete relation.
+  - Preserve available-light evidence, uneven tonal density, and ordinary surface texture.
+  - Finish with restrained grain and print compression, never with a generic vintage filter.
+technical_direction:
+  contrast: medium-high but uneven; retain gray information
+  saturation: monochrome by default; restrained and documentary if color is requested
+  perspective: ordinary photographic perspective with no exaggerated wide-angle spectacle
+  detail_density: TODO
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

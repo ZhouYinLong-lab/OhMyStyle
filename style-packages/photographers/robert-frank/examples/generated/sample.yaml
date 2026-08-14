@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: ordinary roadside service area seen from an imperfect oblique viewpoint
+generated_at: 2026-08-14
+review:
+  decision: curated
+  notes: Original anonymous documentary scene used to demonstrate cropping, tonal roughness, available light, and unresolved social space.

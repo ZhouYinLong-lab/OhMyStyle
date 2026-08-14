@@ -1,0 +1,17 @@
+canonical_name: 罗伯特·弗兰克
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory road trip, American flag, diner, or named social group
+sources:
+  - 'https://www.metmuseum.org/exhibitions/listings/2009/robert-frank'
+
+notes:
+  - The package extracts open-ended documentary framing, tonal roughness, social distance, and sequence-like ambiguity.
+  - The roadside service area in the representative image is a benchmark only.

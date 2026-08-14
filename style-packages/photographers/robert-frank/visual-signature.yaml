@@ -1,0 +1,23 @@
+composition:
+  - Use off-center, cropped, or slightly awkward framing that leaves relationships unresolved.
+  - Let ordinary environmental details share importance with people; avoid a single heroic focal point.
+  - Suggest a larger sequence or social field without explaining the whole story in one frame.
+palette:
+  - Default to restrained black-and-white with broad gray values, imperfect highlights, and deep but not crushed shadows.
+  - If color is requested, keep it observational and uneven rather than applying a polished commercial grade.
+lighting:
+  quality: available light with occasional harsh or accidental contrast
+  behavior:
+    - Accept windshield reflections, mixed exposure, flat daylight, and small areas of glare when they arise naturally.
+    - Do not add theatrical key light or deliberate fashion polish.
+surface:
+  finish: grainy documentary print with visible tonal compression
+  edges: imperfect crop, contact-sheet energy, and occasional motion or focus softness
+texture:
+  density: medium, carried by film grain, pavement, glass, and ordinary surfaces
+  placement: texture stays embedded in observation rather than becoming a decorative overlay
+invariants:
+  - unresolved but intentional framing
+  - ordinary social or environmental details share the frame with the main subject
+  - tonal roughness and available-light evidence remain visible
+  - no fixed road, country, flag, vehicle, or documentary event
