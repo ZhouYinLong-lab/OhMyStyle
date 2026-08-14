@@ -1,0 +1,39 @@
+profiles:
+  generic:
+    required:
+      - space reads as an explorable game environment
+      - low polygon, low-resolution texture, and vertex-lighting limits are visible
+      - user-supplied subject remains independent
+    reject_if:
+      - output is merely modern low-poly or a pixel-art filter
+      - fixed observatory, road, mountain, or dusk content appears without request
+      - HUD, logo, text, named character, or copied level layout is present
+  environment:
+    required:
+      - ground plane, horizon, depth, and navigational landmark are coherent
+  character:
+    required:
+      - character is original and integrated into the same low-resolution spatial rules
+minimum_score: 7
+
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+  distinctive_signature:
+    score: null
+    notes: "Record whether early real-time 3D constraints remain visible after the subject changes."
+  visual_overlap:
+    score: null
+    notes: "Compare against low-poly and PBR packages; geometry budget alone is not enough."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - unspecified-building
+    - ordinary-chair
+  evidence: "The gallery image demonstrates the medium, not a required game location."

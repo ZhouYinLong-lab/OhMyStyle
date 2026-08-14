@@ -1,0 +1,14 @@
+family: retro-console-3d
+near_duplicates:
+  - game-art/low-poly-adventure-game-art
+  - game-art/stylized-low-poly-world
+supersedes: []
+conflicts:
+  - game-art/stylized-pbr-sci-fi-game-art
+distinctives:
+  - early real-time 3D limits visible in geometry, texture resolution, and vertex lighting
+  - navigable game camera and landmark-first spatial organization
+  - affine or slightly unstable texture behavior rather than clean modern low-poly shading
+avoid_overlap:
+  - generic low-poly illustration
+  - voxel construction, 2D sprite pixel art, and modern PBR game render

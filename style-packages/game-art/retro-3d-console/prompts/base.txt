@@ -1,0 +1,20 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT}, {LOCATION}, and {GAMEPLAY_CONTEXT} are authoritative.
+- This package controls rendering medium, geometry budget, texture behavior,
+  camera, lighting, palette, and fog only.
+- Do not add an observatory, road, mountain, tree, character, or dusk narrative
+  unless the user explicitly requests it.
+
+Create an original game-art image of {SUBJECT} in {LOCATION} for
+{GAMEPLAY_CONTEXT}. Apply early real-time 3D constraints: low polygon geometry,
+small low-resolution textures, vertex-colored lighting, simple shadows,
+restrained distance fog, and a readable navigable camera. Keep the user's scene
+independent from the package identity. Do not copy any named game, character,
+interface, logo, level layout, or screenshot.
+
+Retro 3D console direction:
+- Preserve a playable ground plane, horizon, and landmark silhouette.
+- Use purposeful simplification rather than random deformation; object classes remain readable.
+- Let texture stretching, slight affine skew, repeated surfaces, and pixel structure remain visible when appropriate.
+- Keep lighting broad and economical, with deep but readable midtones and no modern PBR polish.
+- Remove HUD, text, logos, and title-specific assets.

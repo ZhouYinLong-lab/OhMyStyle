@@ -1,0 +1,4 @@
+named game, copied screenshot, recognizable character, HUD, interface, logo, watermark, text,
+mandatory observatory, road, mountain, tree, dusk, modern PBR, ray tracing, glossy CGI,
+ultra-high polygon detail, volumetric light, cinematic concept art, voxel cubes,
+2D pixel sprites, anime rendering, random deformation, broken perspective, duplicated props

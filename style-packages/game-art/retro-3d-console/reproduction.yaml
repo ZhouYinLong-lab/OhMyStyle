@@ -1,0 +1,18 @@
+medium: retro console 3D game rendering
+materials:
+  support: low-resolution polygonal game frame with hand-painted or sampled textures
+process:
+  - Lock the user's subject, then choose a camera angle that makes the space feel navigable.
+  - Reduce geometry while preserving recognizable object classes and traversal paths.
+  - Use small textures, vertex colors, broad light, and simple shadows rather than modern surface simulation.
+  - Apply restrained distance fog to separate depth layers; keep the nearest ground readable.
+  - Check for title-specific characters, interface elements, logos, and accidental modern rendering.
+technical_direction:
+  contrast: moderate, with shadow detail retained in low-resolution surfaces
+  saturation: limited game-era palette with subject-dependent accents
+  perspective: real-time camera, normal to mildly wide
+  detail_density: low-medium and landmark-focused
+avoid:
+  - mandatory environment or story
+  - modern PBR, ray tracing, ultra-high polygon detail, and polished concept-art lighting
+safety_note: The package describes a historical rendering language; users provide the scene and subject.

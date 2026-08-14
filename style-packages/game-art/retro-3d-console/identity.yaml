@@ -1,0 +1,18 @@
+canonical_name: 复古三维主机美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; the observatory environment in the gallery is a benchmark only.
+  subjects:
+    - characters, buildings, landscapes, vehicles, interiors, and abstract game spaces
+    - exploration, adventure, survival, puzzle, and atmospheric scene concepts
+  exclusions:
+    - mandatory observatory, road, mountain, tree, character, or dusk setting
+    - named game, recognizable character, logo, HUD, or copied level layout
+    - modern physically based rendering or polished cinematic concept art
+sources:
+  - 'https://collection.sciencemuseumgroup.org.uk/objects/co8194708'
+notes:
+  - The package transfers a historical rendering constraint, not a title-specific art direction.
+  - Low polygon count is paired with low-resolution texture behavior and vertex lighting; it is not interchangeable with generic low-poly illustration.

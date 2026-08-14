@@ -1,0 +1,47 @@
+composition:
+  - navigable spatial layout with readable ground plane, horizon, and landmark silhouette
+  - simple geometric masses arranged for movement and discovery
+  - camera feels like a game viewpoint rather than a gallery illustration
+palette:
+  - limited, slightly compressed palette with strong dark midtones
+  - local material colors survive low resolution without modern cinematic grading
+  - small warm or cool accents can guide navigation when supported by the subject
+lighting:
+  quality: vertex-lit or simply baked-looking lighting with broad transitions
+  behavior:
+    - distant forms soften through restrained fog rather than volumetric spectacle
+    - shadows remain simple and blocky, with no ray-traced reflections
+surface:
+  finish: low-resolution hand-painted or sampled textures with visible pixel structure
+  edges: hard polygonal silhouette and occasional texture swimming or affine skew
+texture:
+  density: low to medium, constrained by a small texture budget
+  placement:
+    - terrain, walls, props, and characters use repeated or stretched textures when appropriate
+invariants:
+  - the world remains spatially playable and legible
+  - polygon and texture limits are visible parts of the visual language
+  - the image is an original environment, not a title-specific recreation
+not_equivalent_to:
+  - generic low-poly 3D illustration
+  - voxel art or pixel-art sprites
+  - modern PBR game concept art
+medium: retro console 3D game rendering
+materials:
+  support: low-resolution game frame with polygonal geometry, texture mapping, and vertex color
+process:
+  - Begin with the user's requested game subject and determine a navigable camera view.
+  - Simplify forms into purposeful low-polygon masses; do not remove spatial logic.
+  - Apply small, slightly imperfect textures and vertex-colored lighting.
+  - Add restrained distance fog and simple shadows only after the layout reads clearly.
+  - Remove HUD, text, logos, and recognizable title-specific assets before delivery.
+technical_direction:
+  contrast: moderate with deep midtones and readable silhouettes
+  saturation: limited, local, and slightly compressed
+  perspective: real-time third-person or first-person game camera, no extreme lens distortion
+  detail_density: low to medium, concentrated on navigational landmarks
+avoid:
+  - fixed observatory, road, mountain, tree, or dusk scene
+  - modern PBR materials, ray tracing, volumetric light, or glossy cinematic polish
+  - voxel cubes, 2D pixel sprites, anime rendering, and copied game interfaces
+safety_note: This package transfers early real-time 3D constraints and does not imitate a named game's assets.

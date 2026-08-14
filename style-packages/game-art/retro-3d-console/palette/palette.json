@@ -1,0 +1,11 @@
+{
+  "name": "低分辨率主机",
+  "colors": [
+    {"name": "暮紫天空", "hex": "#4A496D", "role": "distance sky or atmospheric layer"},
+    {"name": "冷灰岩面", "hex": "#5D6265", "role": "stone, concrete, or built mass"},
+    {"name": "暗松绿", "hex": "#243A2B", "role": "vegetation or deep silhouette"},
+    {"name": "旧铜暖光", "hex": "#C58B35", "role": "small navigational accent"},
+    {"name": "湿土棕", "hex": "#6E5447", "role": "ground and worn path"}
+  ],
+  "notes": "Reference roles only. The user's subject may introduce other local colors while retaining a limited, compressed palette."
+}

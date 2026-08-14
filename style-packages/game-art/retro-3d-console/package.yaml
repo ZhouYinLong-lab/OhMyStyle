@@ -1,0 +1,33 @@
+id: retro-3d-console
+name: 复古三维主机美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以早期三维主机的低多边形几何、低分辨率纹理、顶点光照、贴图偏移和有限雾效构成可探索空间；本包只提取媒介限制，不固定某部游戏或场景。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '20世纪90年代家用主机三维图形转型时期；受有限多边形预算、低分辨率纹理、顶点光照和早期深度处理影响的游戏美术语言'
+  application: game_art
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

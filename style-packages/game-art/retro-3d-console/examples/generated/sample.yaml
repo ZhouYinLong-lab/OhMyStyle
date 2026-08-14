@@ -1,0 +1,9 @@
+asset: retro-3d-console-v1.png
+status: representative_demo
+generator: OpenAI built-in image generation tool
+prompt_mode: anonymous_visual_signature
+subject: abandoned observatory on a rocky plateau at dusk
+generated_at: 2026-08-14
+review:
+  decision: accepted_for_package_preview
+  notes: "New anonymous environment; demonstrates low polygon geometry, low-resolution texture behavior, vertex lighting, simple fog, and a readable game camera without HUD or title-specific assets."
