@@ -1038,6 +1038,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: ink-wash-adventure
+  name: 水墨冒险游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/ink-wash-adventure
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: isometric-pixel-tactics
   name: 等距像素策略美术
   kind: game_art
@@ -1599,6 +1616,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: deconstructivist-architecture
+  name: 解构主义建筑
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/deconstructivist-architecture
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: expressionism
   name: 表现主义
   kind: movement
@@ -3754,6 +3788,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: risograph-printing
+  name: 孔版印刷
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/risograph-printing
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - palette
+  - surface
+  - texture
+  - composition
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: screen-printing
   name: 丝网印刷
   kind: technique
