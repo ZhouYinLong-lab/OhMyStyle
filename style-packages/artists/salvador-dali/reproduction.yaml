@@ -1,0 +1,19 @@
+version: 1
+goal: 将用户主体放入清醒写实但关系略有偏移的梦境空间。
+sequence:
+  - 先完整保留用户主体、动作、地点和画幅要求。
+  - 选择一个局部关系进行尺度、连接、影子或时间感的轻微异常化。
+  - 用稳定日光、精细材料和清晰透视承载异常关系。
+  - 检查是否仍然可辨，并删除固定符号和多余梦境物件。
+constraints:
+  must:
+    - preserve the user-supplied subject
+    - keep realistic surface detail around the surreal change
+    - use a limited number of anomalous relationships
+  avoid:
+    - fixed melting clocks or desert imagery
+    - random surreal object lists
+    - copied compositions
+model_notes:
+  prompt_order: subject -> realistic setting -> anomalous relation -> light -> material -> exclusions
+  reference_use: Study lucid realism and dream logic, not recognizable motifs or compositions.

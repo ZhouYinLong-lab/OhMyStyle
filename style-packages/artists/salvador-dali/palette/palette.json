@@ -1,0 +1,10 @@
+{
+  "roles": [
+    {"name": "干燥暖土", "hex": "#B8895F", "role": "quiet ground and aged surfaces"},
+    {"name": "灰白石色", "hex": "#D9D1C3", "role": "lucid neutral forms"},
+    {"name": "远景蓝", "hex": "#6F98B2", "role": "cool distance and sky"},
+    {"name": "心理重音红", "hex": "#A84B3A", "role": "limited anomalous accent"},
+    {"name": "深影棕", "hex": "#3B2C28", "role": "elongated shadow and depth"}
+  ],
+  "usage": "Use these as tonal roles, not mandatory object colors; the user's subject and local palette remain authoritative."
+}

@@ -1,0 +1,22 @@
+version: 1
+signature:
+  medium: 精细写实超现实绘画
+  composition: 稳定视点、宽阔留白、局部异常关系
+  palette: 克制暖土色、灰白、天空蓝和局部重音色
+  lighting: 清晰日光与延展阴影
+  surface: 细腻、可辨材料、近写实表面
+  texture: 中等，集中于真实材料
+  edges: 主要轮廓清楚，变形仍有物理边界
+transfer:
+  preserve:
+    - 清醒写实与梦境逻辑的并置
+    - 尺度、影子或连接关系中的局部异常
+    - 安静、带距离的心理气氛
+  release:
+    - 代表图中的石庭和变形物
+    - 固定时钟、荒漠、动物或人物
+subject_independence:
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 普通石庭中的异常形体

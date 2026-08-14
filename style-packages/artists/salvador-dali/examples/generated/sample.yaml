@@ -1,0 +1,9 @@
+asset: sample.png
+status: curated_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: ordinary stone courtyard with restrained dream-logic transformation
+generated_at: 2026-08-14
+review:
+  decision: accepted_as_representative
+  notes: The courtyard and transformed forms demonstrate lucid realism and controlled anomaly only; they are not package defaults.

@@ -1,0 +1,18 @@
+family: surrealist-dream-realism
+near_duplicates:
+  - movements/surrealism
+complements:
+  - artists/giorgio-de-chirico
+  - photographers/gregory-crewdson
+same_family:
+  - artists/leonora-carrington
+supersedes: []
+conflicts:
+  - presets/aurora-gradient-grain
+distinctives:
+  - lucid realistic surface carrying a limited dream-logic disruption
+  - precise material detail and readable perspective
+  - anomaly expressed through scale, shadow, connection, or time rather than object clutter
+avoid_overlap:
+  - do not equate the package with generic surreal collage
+  - do not require clocks, desert, animals, or portraits

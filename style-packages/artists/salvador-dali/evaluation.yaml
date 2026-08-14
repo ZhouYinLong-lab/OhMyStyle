@@ -1,0 +1,18 @@
+version: 1
+checks:
+  style_recognition:
+    question: 是否能看出清醒写实表面与有限梦境异常，而不是随机超现实拼贴？
+    score: 0
+  subject_independence:
+    question: 用户主体是否保留，且没有被时钟、荒漠或动物替换？
+    score: 0
+  prompt_following:
+    question: 是否遵守用户指定的主体、场景、画幅和用途？
+    score: 0
+  material_accuracy:
+    question: 普通材料是否仍有清楚可信的质地和边界？
+    score: 0
+  ai_artifact_level:
+    question: 是否出现随机物件、错误透视、过度发光或符号堆叠？
+    score: 0
+notes: 评分用于比较生成结果，不表示与艺术家原作的认证或等同。
