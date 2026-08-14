@@ -1,0 +1,33 @@
+id: garry-winogrand
+name: 加里·维诺格兰德
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以三十五毫米街头观察、不稳定取景、密集动作关系、突然截取的瞬间和黑白胶片质感组织画面，不把城市或人群写死为默认主体。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '二十世纪后半叶美国街头摄影'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

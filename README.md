@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-234-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-235-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -230,7 +230,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/stephen-shore/README.md"><img src="style-packages/photographers/stephen-shore/gallery-16x9.jpg" width="230" alt="斯蒂芬·肖尔代表图"></a><br><strong>斯蒂芬·肖尔</strong><br><a href="style-packages/photographers/stephen-shore/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/alex-webb/README.md"><img src="style-packages/photographers/alex-webb/gallery-16x9.jpg" width="230" alt="亚历克斯·韦布代表图"></a><br><strong>亚历克斯·韦布</strong><br><a href="style-packages/photographers/alex-webb/README.md">打开 README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/garry-winogrand/README.md"><img src="style-packages/photographers/garry-winogrand/gallery-16x9.jpg" width="230" alt="加里·维诺格兰德代表图"></a><br><strong>加里·维诺格兰德</strong><br><a href="style-packages/photographers/garry-winogrand/README.md">打开 README</a></td>
 </tr>
 </table>
 

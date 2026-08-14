@@ -1,0 +1,18 @@
+medium: 35mm documentary photography
+materials:
+  support: developed gelatin-silver-like print or restrained film scan
+process:
+  - begin with the user's subject and intended situation
+  - observe an unscripted relation or transition rather than staging a pose
+  - frame with active diagonals, overlap, and a slightly imperfect crop
+  - finish with natural exposure variation and consistent film grain
+technical_direction:
+  contrast: medium-high documentary contrast
+  saturation: monochrome by default, restrained color only when requested
+  perspective: normal wide-to-standard 35mm observation, close to human movement
+  detail_density: dense in overlapping gestures, ordinary elsewhere
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

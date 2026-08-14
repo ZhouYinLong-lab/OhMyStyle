@@ -1,0 +1,18 @@
+canonical_name: 加里·维诺格兰德
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - any user-supplied subject
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - fixed city, crowd, landmark, subway, or street-sign motif
+sources:
+  - 'https://www.metmuseum.org/exhibitions/listings/2014/garry-winogrand'
+
+notes:
+  - A street-photography package built around close observation, unstable timing, and layered public gestures.
+  - The package transfers the act of looking to new subjects; it does not require a city, crowd, or documentary storyline.

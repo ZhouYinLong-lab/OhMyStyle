@@ -1,0 +1,9 @@
+asset: garry-winogrand-v1.png
+status: reviewed
+generator: OpenAI image generation tool
+prompt_mode: anonymous_visual_signature
+subject: 午后城市人行道上的交错行走者
+generated_at: 2026-08-14
+review:
+  decision: accepted
+  notes: Original 16:9 anonymous street scene; demonstrates close 35mm observation, active crop, overlapping gestures, and black-and-white film structure without recreating a known photograph.

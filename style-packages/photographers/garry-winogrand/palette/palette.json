@@ -1,0 +1,9 @@
+{
+  "name": "街头黑白胶片调色板",
+  "colors": [
+    {"name": "深影", "hex": "#171717", "role": "shadow"},
+    {"name": "中性灰", "hex": "#777777", "role": "midtone"},
+    {"name": "纸面高光", "hex": "#E7E5DF", "role": "highlight"}
+  ],
+  "notes": "The default palette is monochrome so gesture, crop, and tonal timing remain primary."
+}

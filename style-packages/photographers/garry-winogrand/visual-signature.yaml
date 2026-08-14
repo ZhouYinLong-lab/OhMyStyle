@@ -1,0 +1,21 @@
+composition:
+  - off-center framing with active diagonals and figures entering or leaving the frame
+  - overlapping gestures and unresolved timing rather than a single heroic subject
+  - close observational distance with a deliberately imperfect horizon or crop
+palette:
+  - full black-and-white tonal range, with highlights protected from plastic smoothness
+  - optional restrained color only when the user's request requires it; never use a global color filter
+lighting:
+  quality: TODO
+  behavior:
+    - TODO: describe direction, softness, contrast, or atmospheric behavior.
+surface:
+  finish: developed 35mm documentary print
+  edges: natural lens and crop boundaries, not graphic frames
+texture:
+  density: moderate film grain
+  placement: consistent across the frame, with motion and pavement detail retaining photographic irregularity
+invariants:
+  - found-moment energy rather than posed illustration
+  - active crop, layered gesture, and imperfect alignment
+  - photographic tonal structure and physical 35mm grain
