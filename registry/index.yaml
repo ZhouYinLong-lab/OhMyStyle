@@ -425,6 +425,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: jean-michel-basquiat
+  name: 让·米歇尔·巴斯奎特
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/jean-michel-basquiat
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: jmw-turner
   name: 约瑟夫·马洛德·威廉·透纳
   kind: artist
@@ -901,6 +918,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: cuphead-rubber-hose-animation
+  name: 三十年代橡皮管动画游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/cuphead-rubber-hose-animation
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: cyberpunk-night-city
   name: 霓虹未来都市游戏美术
   kind: game_art
@@ -2562,6 +2596,23 @@ packages:
   - palette
   - surface
   - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: alec-soth
+  name: 亚历克·索思
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/alec-soth
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
   reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
