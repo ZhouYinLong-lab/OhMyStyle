@@ -1,0 +1,33 @@
+id: andreas-gursky
+name: 安德烈亚斯·古尔斯基
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以高视点、大尺度、重复结构和受控色块组织当代环境，让个体与系统性的空间秩序同时可见。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '二十世纪末至二十一世纪德国当代摄影语境'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

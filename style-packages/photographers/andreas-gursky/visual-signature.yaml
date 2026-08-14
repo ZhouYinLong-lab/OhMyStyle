@@ -1,0 +1,25 @@
+visual_signature: large-scale contemporary color photography with distant or elevated observation, modular repetition, controlled color bands, and high but ordered information density
+visual_axes:
+  composition:
+    - 高处或远距离观看
+    - 重复模块与水平分区
+    - 由整体秩序到局部单元的双重阅读
+  palette:
+    - 清晰色带
+    - 受控高饱和局部
+    - 中性基底维持整体稳定
+  lighting:
+    - 均匀环境光
+    - 细节可见而不过度戏剧化
+  surface:
+    - 高解析度摄影
+    - 真实材料细节
+  texture:
+    - 重复结构、网格和尺度变化产生纹理
+subject_independence:
+  preserve_user_subject: true
+  fixed_subjects: []
+  optional_motifs:
+    - 模块重复
+    - 规则队列
+    - 大尺度色块

@@ -1,0 +1,10 @@
+{
+  "name": "大尺度秩序色彩",
+  "colors": [
+    {"name": "雾灰", "hex": "#A9B0AE", "role": "neutral base"},
+    {"name": "工业蓝", "hex": "#3D6D86", "role": "cool structural band"},
+    {"name": "警示红", "hex": "#B94A3B", "role": "controlled accent"},
+    {"name": "草黄绿", "hex": "#A9A83D", "role": "repeated module accent"}
+  ],
+  "rules": ["保持色块清晰", "避免全局综合色滤镜", "让中性基底稳定整体明度"]
+}
