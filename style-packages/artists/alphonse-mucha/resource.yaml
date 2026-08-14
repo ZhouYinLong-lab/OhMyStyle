@@ -1,0 +1,69 @@
+schema_version: 1.0.0
+resource_id: alphonse-mucha
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - medium
+  - composition
+  - palette
+  - surface
+  - texture
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+composition:
+  - Use a strong silhouette enclosed by an ornamental frame, arch, or flowing contour rhythm.
+  - Balance the subject with botanical or geometric arabesques; keep the hierarchy clear rather than filling every gap.
+  - Flatten depth into elegant planes while retaining enough modeling to preserve the user's subject.
+palette:
+  - Warm parchment and muted mineral hues form the ground; dusty rose, olive, teal, and antique gold provide controlled accents.
+  - Color is decorative and relational, not a generic sepia filter.
+lighting:
+  quality: even illustrated light with selective contour emphasis
+  behavior:
+    - volume is carried by line, flat value groups, and restrained modeling rather than dramatic shadows
+surface:
+  finish: lithographic or gouache-like paper surface with fine ink contours
+  edges: continuous elegant contour lines and carefully nested ornamental shapes
+texture:
+  density: fine and consistent, subordinate to line rhythm
+  placement: paper, borders, patterned fabrics, hair, foliage, and decorative surfaces
+invariants:
+  - flowing contour rhythm
+  - ornamental frame or arabesque logic
+  - flat but nuanced color fields
+  - decorative hierarchy survives subject changes
+medium: decorative lithographic poster and illustrated panel language
+materials:
+  support: warm paper, ink, gouache-like flat pigment, and restrained metallic-looking accent
+process:
+  - Establish the user subject as a clear silhouette and choose an ornamental composition around it.
+  - Draw continuous contours and repeat a limited botanical or geometric rhythm.
+  - Apply flat color planes, then add restrained modeling and paper texture.
+  - Check that decoration supports rather than replaces the requested subject.
+technical_direction:
+  contrast: medium, carried by contour and value grouping
+  saturation: muted to medium with deliberate accents
+  perspective: flattened decorative space with selective depth
+  detail_density: medium-high in contours and border rhythm, lower in empty fields
+avoid:
+  - mandatory female portrait, flower, advertisement, text, or named character
+  - generic vintage filter without line and ornament structure
+  - copying a specific Mucha poster or recognizable layout
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

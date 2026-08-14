@@ -1,0 +1,11 @@
+{
+  "name": "温纸与矿物装饰色",
+  "colors": [
+    {"name": "暖羊皮纸", "hex": "#E9D1A4", "role": "paper ground"},
+    {"name": "灰青绿", "hex": "#74877D", "role": "ornamental field"},
+    {"name": "尘粉色", "hex": "#C58C7D", "role": "soft accent"},
+    {"name": "旧金色", "hex": "#B28A4A", "role": "line and border accent"},
+    {"name": "橄榄绿", "hex": "#8A8650", "role": "foliage and secondary plane"}
+  ],
+  "notes": "The palette should feel printed and mineral. Antique gold is a restrained accent, not a metallic glow."
+}

@@ -1,0 +1,20 @@
+canonical_name: 阿尔丰斯·穆夏
+entity_type: artist
+domain: design
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - figures, objects, interiors, and botanical forms
+    - editorial, decorative, and poster-like compositions
+    - portraits and still lifes when requested by the user
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory woman, flower, advertisement, or readable text
+sources:
+  - 'https://www.metmuseum.org/art/collection/search/437169'
+
+notes:
+  - Extracts line rhythm, ornamental framing, flat color, and botanical pattern rather than a fixed poster subject.
+  - The package is an artist study, not a claim of authorship, endorsement, or reproduction of a named work.

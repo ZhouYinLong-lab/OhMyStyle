@@ -1,0 +1,21 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply the package's observable
+medium, composition, lighting, palette, surface, and texture decisions from the
+style files. Preserve the package invariants while inventing a new scene: do not
+copy any reference work, named character, exact pose, recognizable layout, logo,
+or text. Keep the subject and narrative supplied by the user independent from
+the package's visual identity. Use concrete visual instructions rather than the
+package name alone.
+
+Decorative Alphonse Mucha study:
+- Preserve the user's subject and give it a clear silhouette inside a flowing ornamental frame or arabesque rhythm.
+- Use continuous elegant ink contours, flattened decorative planes, warm paper, muted teal, olive, dusty rose, and restrained antique-gold accents.
+- Let botanical or geometric ornament support the composition without becoming a mandatory flower, woman, advertisement, or text layout.
+- Build volume with contour, flat value groups, and restrained modeling rather than dramatic cinematic lighting.
+- The result must be a new anonymous composition, not a copied poster, character, logo, or recognizable work.

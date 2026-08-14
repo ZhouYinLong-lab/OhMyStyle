@@ -1,0 +1,33 @@
+id: alphonse-mucha
+name: 阿尔丰斯·穆夏
+kind: artist
+domain: design
+version: 0.1.0
+summary: >-
+  以流动曲线、植物纹样、人物与边框的连续节奏、温暖纸色和装饰性平面组织画面；本包提取穆夏式视觉语法，不固定女性肖像、花卉、广告或文字。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: design
+  historical_context: '19世纪末至20世纪初巴黎新艺术运动中的装饰艺术家；以曲线轮廓、植物阿拉伯纹样、平面色块与装饰性版式形成高度统一的海报语言'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
