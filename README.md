@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-249-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-253-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -173,7 +173,8 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 
 <table>
 <tr>
-<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/artists/henri-rousseau/README.md"><img src="style-packages/artists/henri-rousseau/gallery-16x9.jpg" width="460" alt="亨利·卢梭代表图"></a><br><strong>亨利·卢梭</strong><br><a href="style-packages/artists/henri-rousseau/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/artists/henri-rousseau/README.md"><img src="style-packages/artists/henri-rousseau/gallery-16x9.jpg" width="320" alt="亨利·卢梭代表图"></a><br><strong>亨利·卢梭</strong><br><a href="style-packages/artists/henri-rousseau/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/artists/piet-mondrian/README.md"><img src="style-packages/artists/piet-mondrian/gallery-16x9.jpg" width="320" alt="皮特·蒙德里安代表图"></a><br><strong>皮特·蒙德里安</strong><br><a href="style-packages/artists/piet-mondrian/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -254,6 +255,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="50%" valign="top" align="center"><a href="style-packages/photographers/robert-frank/README.md"><img src="style-packages/photographers/robert-frank/gallery-16x9.jpg" width="320" alt="罗伯特·弗兰克代表图"></a><br><strong>罗伯特·弗兰克</strong><br><a href="style-packages/photographers/robert-frank/README.md">打开 README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/photographers/nan-goldin/README.md"><img src="style-packages/photographers/nan-goldin/gallery-16x9.jpg" width="320" alt="南·戈尔丁代表图"></a><br><strong>南·戈尔丁</strong><br><a href="style-packages/photographers/nan-goldin/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="50%" valign="top" align="center"><a href="style-packages/photographers/irving-penn/README.md"><img src="style-packages/photographers/irving-penn/gallery-16x9.jpg" width="320" alt="欧文·佩恩代表图"></a><br><strong>欧文·佩恩</strong><br><a href="style-packages/photographers/irving-penn/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/photographers/lee-friedlander/README.md"><img src="style-packages/photographers/lee-friedlander/gallery-16x9.jpg" width="320" alt="李·弗里德兰德代表图"></a><br><strong>李·弗里德兰德</strong><br><a href="style-packages/photographers/lee-friedlander/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -517,6 +522,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/ps1-survival-horror-low-poly/README.md"><img src="style-packages/game-art/ps1-survival-horror-low-poly/gallery-16x9.jpg" width="460" alt="早期三维生存恐怖游戏美术代表图"></a><br><strong>早期三维生存恐怖游戏美术</strong><br><a href="style-packages/game-art/ps1-survival-horror-low-poly/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-point-and-click/README.md"><img src="style-packages/game-art/hand-painted-point-and-click/gallery-16x9.jpg" width="460" alt="手绘点击式冒险游戏美术代表图"></a><br><strong>手绘点击式冒险游戏美术</strong><br><a href="style-packages/game-art/hand-painted-point-and-click/README.md">打开 README</a></td>
 </tr>
 </table>
 
