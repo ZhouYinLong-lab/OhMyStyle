@@ -1,0 +1,12 @@
+{
+  "name": "磨损画布与高张力色块",
+  "colors": [
+    {"name": "旧米白", "hex": "#D7C7A6", "role": "worn ground"},
+    {"name": "赭黄", "hex": "#B68A27", "role": "earth accent"},
+    {"name": "砖红", "hex": "#9B4033", "role": "warm block"},
+    {"name": "钴蓝", "hex": "#24548A", "role": "cool block"},
+    {"name": "炭黑", "hex": "#191A17", "role": "gestural structure"},
+    {"name": "灰绿", "hex": "#9DA99A", "role": "quiet counterpoint"}
+  ],
+  "notes": "角色比精确色值更重要：旧米白与赭黄承载磨损底色，砖红和钴蓝作为少量高张力色块，炭黑负责线条与结构。"
+}

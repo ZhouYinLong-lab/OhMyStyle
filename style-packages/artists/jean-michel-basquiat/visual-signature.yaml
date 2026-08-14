@@ -1,0 +1,22 @@
+composition:
+  - Build an asymmetrical field with several competing but legible zones.
+  - Compress depth so marks, planes, and forms occupy the same active surface.
+  - Let a few large color blocks anchor a denser network of smaller marks.
+palette:
+  - Use dirty cream and muted ochre as a worn ground, interrupted by brick red, cobalt blue, pale green, and black.
+  - Keep black marks structural rather than using a global dark filter.
+lighting:
+  quality: flat studio or gallery light
+  behavior:
+    - Keep volume subordinate to line, material, and color-block relationships.
+    - Avoid cinematic spotlighting and glossy digital highlights.
+surface:
+  finish: rough acrylic, wax, oil-stick, and collage-like abrasion on canvas
+  edges: uneven, hand-drawn, scraped, and occasionally interrupted
+texture:
+  density: medium to high, with deliberate quiet gaps
+  placement: concentrated around marks and color planes while the ground remains visibly tactile
+invariants:
+  - Preserve hand-made line variation and scraped surface when the subject changes.
+  - Preserve compressed space and symbolic abstraction without adding fixed symbols.
+  - Keep the palette role-based rather than applying a uniform color wash.

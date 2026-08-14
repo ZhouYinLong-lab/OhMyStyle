@@ -1,0 +1,18 @@
+medium: mixed-media painting on rough canvas
+materials:
+  support: acrylic, wax crayon, oil-stick, scraped paint, and collage-like ground
+process:
+  - Establish a worn cream or ochre ground with visible support texture.
+  - Place a few broad, uneven color fields before drawing the dominant black gestures.
+  - Add broken forms and small marks with different pressure, then scrape or partially obscure selected areas.
+  - Leave enough ground visible to keep the image tactile and open.
+technical_direction:
+  contrast: medium-high local contrast from line and abrasion, not a crushed global curve
+  saturation: selective high-chroma accents against a worn ground
+  perspective: compressed and intentionally shallow
+  detail_density: varied, with dense marks balanced by quiet surfaces
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

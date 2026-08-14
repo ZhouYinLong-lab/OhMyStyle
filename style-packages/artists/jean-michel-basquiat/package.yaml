@@ -1,0 +1,33 @@
+id: jean-michel-basquiat
+name: 让·米歇尔·巴斯奎特
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以粗粝线条、断裂形体、符号化标记和高张力色块组织画面，保留手工痕迹与城市现场感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '二十世纪后半叶纽约新表现主义与街头绘画语境'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

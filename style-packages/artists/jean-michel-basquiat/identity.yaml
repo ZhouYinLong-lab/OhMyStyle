@@ -1,0 +1,19 @@
+canonical_name: 让·米歇尔·巴斯奎特
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - user-supplied subject of any kind
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - readable words used as a substitute for visual structure
+    - mandatory crowns, skulls, figures, streets, or urban objects
+sources:
+  - 'https://www.moma.org/artists/370-jean-michel-basquiat'
+
+notes:
+  - The package extracts rough mixed-media surface, gestural line, fractured form, and compressed pictorial space.
+  - The representative abstract wall is an example only; a new subject remains user-controlled.
