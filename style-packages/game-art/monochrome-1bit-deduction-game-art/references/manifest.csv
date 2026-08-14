@@ -1,0 +1,3 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+monochrome-1bit-primary-source,,Return of the Obra Dinn official site,Lucas Pope / 3909 LLC,,https://obradinn.com/,link_only,来源资料：官方项目网站；本包为独立媒介研究和重构。,primary,仅记录来源，不打包或再分发外部游戏资产。
+monochrome-1bit-secondary-source,,Lucas Pope on the game's 1-bit art style,PlayStation Blog,,https://blog.playstation.com/archive/2019/10/17/lucas-pope-on-the-challenge-of-creating-return-of-the-obra-dinns-art-style/,link_only,来源资料：开发者访谈转载；仅用于理解媒介特征。,secondary,不复制具体游戏场景。

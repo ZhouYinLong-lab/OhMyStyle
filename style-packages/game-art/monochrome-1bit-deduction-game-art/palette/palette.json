@@ -1,0 +1,8 @@
+{
+  "name": "一位暖黑白",
+  "colors": [
+    {"name": "显示黑", "hex": "#050505", "role": "deep shadow and silhouette"},
+    {"name": "暖象牙白", "hex": "#E7DDC5", "role": "highlight and paper-like light"}
+  ],
+  "rules": ["所有中间调由点阵密度产生", "保持剪影和线索可读", "不使用彩色或连续灰度"]
+}

@@ -1,0 +1,59 @@
+canonical_name: 单色一位推理游戏美术
+entity_type: game_art_direction
+domain: game_art
+origin: one_bit_computer_graphics_and_deduction_game_rendering
+period: contemporary_with_early_computer_reference
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；一位抖动、剪影和空间阅读是媒介规则，不是固定船只或故事。
+  subjects: []
+  exclusions:
+    - 固定船只、海洋、海员、尸体或谋杀案
+    - 彩色像素画、灰度摄影或光滑三维渲染
+    - 复制具体游戏资产、界面或场景
+sources:
+  - 'https://obradinn.com/'
+  - 'https://blog.playstation.com/archive/2019/10/17/lucas-pope-on-the-challenge-of-creating-return-of-the-obra-dinns-art-style/'
+notes:
+  - 本包提取一位黑白显示、规则抖动、清晰空间和线索可读性。
+  - 推理感来自空间结构与信息安排，不规定海难、船只或人物故事。
+composition:
+  - 用清楚的透视线、剪影和少量高价值线索组织场景。
+  - 让黑白面积、抖动密度和局部留白承担光照与深度。
+  - 画面应像可探索的游戏空间，而不是一张复古滤镜照片。
+palette:
+  - 严格黑与暖象牙白，灰度只由点阵密度产生。
+lighting:
+  quality: 由抖动密度表达的硬质定向光
+  behavior:
+    - 高光留在象牙白区域，暗部以黑色和不同点阵密度分层。
+surface:
+  finish: 低位深光栅显示与清楚像素簇
+  edges: 剪影锐利，线条和点阵保持可读
+texture:
+  density: 中等到高
+  placement: 墙面、木材、金属、纸张和阴影中的有序抖动
+invariants:
+  - 单色一位逻辑
+  - 抖动密度与光照、材质和深度相关
+  - 透视空间和线索可读
+  - 不固定船只、海洋、人物或案件
+medium: 复古计算机图形启发的二维推理游戏美术
+materials:
+  support: 一位显示、黑白像素簇和有序抖动
+process:
+  - 先锁定用户主体和游戏用途，不从媒介名称推断案件。
+  - 建立可探索的空间轮廓、透视和主要遮挡关系。
+  - 用黑白面积与抖动密度表达光照和材料。
+  - 最后安排少量清楚线索，避免把画面塞满噪点。
+technical_direction:
+  contrast: 极高，黑白关系明确
+  saturation: 仅黑白与暖象牙白
+  perspective: 稳定的第一人称或环境视角
+  detail_density: 中等到高，线索区域优先
+avoid:
+  - 固定船只、海洋、海员、尸体或谋杀叙事
+  - 彩色像素、连续灰度、光滑渐变和写实渲染
+  - 随机噪点、不可读的黑块和复制游戏界面
+  - 具体游戏角色、场景、文字或品牌
+safety_note: 不复现具体游戏资产、人物、文字或场景；代表图只展示一位媒介规则。

@@ -1,0 +1,24 @@
+visual_signature: monochrome one-bit game rendering with ordered dithering, crisp silhouettes, readable perspective, and evidence-oriented spatial detail
+visual_axes:
+  composition:
+    - 可探索空间
+    - 透视线和剪影
+    - 少量线索优先
+  palette:
+    - 黑色与暖象牙白
+    - 点阵密度模拟灰度
+  lighting:
+    - 硬质定向光
+    - 由抖动密度表达
+  surface:
+    - 低位深光栅
+    - 像素簇和有序点阵
+  texture:
+    - 与材质和阴影相关的抖动
+subject_independence:
+  preserve_user_subject: true
+  fixed_subjects: []
+  optional_motifs:
+    - 一位抖动
+    - 清晰剪影
+    - 可探索空间

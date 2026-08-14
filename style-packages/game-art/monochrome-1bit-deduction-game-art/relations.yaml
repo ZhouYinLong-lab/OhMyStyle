@@ -1,0 +1,12 @@
+family: monochrome-game-art
+near_duplicates: []
+complements:
+  - game-art/hand-painted-point-and-click
+same_family: []
+supersedes: []
+conflicts:
+  - game-art/cinematic-pixel-adventure
+distinctives:
+  - 严格黑白一位逻辑
+  - 有序抖动代替连续灰度
+  - 空间与线索优先于装饰和色彩
