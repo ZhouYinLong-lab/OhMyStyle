@@ -1,0 +1,72 @@
+schema_version: 1.0.0
+resource_id: ink-wash-adventure
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+composition:
+  - Build a readable game scene with clear foreground, midground, and background traversal layers.
+  - Use ink contour and negative space to guide the eye toward a path, opening, or playable focal area.
+  - Keep the subject supplied by the user primary; the sample's bridge and shelter are optional motifs only.
+palette:
+  - Warm paper and diluted earth neutrals form the base, with limited indigo, charcoal, and vermilion accents.
+  - Reserve strong color for focal objects or navigational signals rather than tinting every surface.
+lighting:
+  quality: soft atmospheric wash with selective ink-weight contrast
+  behavior:
+    - distant forms lose contrast through wash and paper space
+    - foreground contours remain readable without hard cinematic rim light
+surface:
+  finish: absorbent paper, mineral pigment, layered wash, and expressive brush edges
+  edges: varied ink pressure; crisp focal contours dissolve into wash at distance
+texture:
+  density: medium, hand-made and directional
+  placement: rocks, foliage, bark, water edges, and brush transitions
+invariants:
+  - non-pixel painted game-art medium
+  - ink contour plus wash and deliberate paper breathing room
+  - readable spatial layers for navigation
+  - limited accent colors without neon grading
+medium: hand-painted ink-and-wash game environment art
+materials:
+  support: textured paper or paper-simulating digital surface, diluted ink, mineral color wash
+process:
+  - Block a readable traversable composition with foreground, midground, and distant masses.
+  - Draw the main contour rhythm with varied ink weight.
+  - Add broad washes and reserve paper for light and atmospheric depth.
+  - Place limited accent colors on user-requested focal elements and check game readability.
+technical_direction:
+  contrast: strongest in foreground contours and focal objects; softer at distance
+  saturation: restrained with selective vermilion, indigo, or user-requested accent
+  perspective: readable environmental perspective, not flat wallpaper
+  detail_density: medium; detail should support navigation and scale
+avoid:
+  - pixel art, glossy 3D render, or generic anime cel shading
+  - mandatory bridge, shrine, traveler, village, or named game reference
+  - photorealistic texture replacing brush and wash behavior
+  - copying a specific game screenshot, character, or layout
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

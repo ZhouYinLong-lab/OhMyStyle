@@ -1,0 +1,17 @@
+medium: hand-painted ink-and-wash game environment simulation
+materials:
+  support: textured paper or paper-simulating digital surface, ink, mineral pigment wash
+process:
+  - Establish the user-requested subject and a readable traversable spatial hierarchy.
+  - Use varied ink pressure to separate focal contours from distant silhouettes.
+  - Layer diluted washes, leaving paper gaps for light and atmosphere.
+  - Add limited accent colors only where the subject or navigation hierarchy needs them.
+technical_direction:
+  contrast: foreground contour emphasis with atmospheric distance
+  saturation: restrained and selectively accented
+  perspective: environmental depth suitable for a game scene
+  detail_density: medium, focused on scale, path, and material cues
+avoid:
+  - pixel grid, plastic 3D, glossy anime render, or fixed game screenshot
+  - mandatory bridge, shrine, traveler, or named character
+safety_note: The package transfers a visual language and game-space logic, not content from a source game.

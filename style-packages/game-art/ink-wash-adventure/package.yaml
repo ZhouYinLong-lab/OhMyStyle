@@ -1,0 +1,33 @@
+id: ink-wash-adventure
+name: 水墨冒险游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以墨线、洗染、留白、有限朱色与清晰前中后景组织可探索画面；本包控制游戏媒介与水墨表现，不固定旅人、桥、神社或任何具体故事。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '以水墨笔触、留白、平涂色块与可探索空间层次为核心的东方幻想游戏美术方向；借鉴传统水墨的视觉语汇并服务于游戏环境阅读'
+  application: game_environment
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

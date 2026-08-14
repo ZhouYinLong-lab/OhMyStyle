@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-226-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-227-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -466,6 +466,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/journey-minimalist-desert/README.md"><img src="style-packages/game-art/journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="风之旅人极简沙漠游戏美术代表图"></a><br><strong>风之旅人极简沙漠游戏美术</strong><br><a href="style-packages/game-art/journey-minimalist-desert/README.md">打开 README</a></td>
 <td colspan="2" width="66%" valign="top" align="center"><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.md"><img src="style-packages/game-art/final-fantasy-ix-painted-fantasy/gallery-16x9.jpg" width="230" alt="最终幻想九绘本幻想游戏美术代表图"></a><br><strong>最终幻想九绘本幻想游戏美术</strong><br><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/ink-wash-adventure/README.md"><img src="style-packages/game-art/ink-wash-adventure/gallery-16x9.jpg" width="230" alt="水墨冒险游戏美术代表图"></a><br><strong>水墨冒险游戏美术</strong><br><a href="style-packages/game-art/ink-wash-adventure/README.md">打开 README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 

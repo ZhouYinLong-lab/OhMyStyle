@@ -1,0 +1,24 @@
+composition:
+  - layered game-environment depth with a readable route or focal opening
+  - asymmetrical masses balanced by paper space
+palette:
+  - warm paper, charcoal, diluted earth, indigo, and selective vermilion
+  - color accents guide attention rather than recolor the whole scene
+lighting:
+  quality: atmospheric wash with ink-weight contrast
+  behavior:
+    - foreground is legible; distant forms dissolve into paper and wash
+surface:
+  finish: absorbent paper, brush edge, mineral pigment, and layered wash
+  edges: variable ink pressure from firm focal contours to soft distant marks
+texture:
+  density: medium and directional
+  placement: natural materials, contour transitions, and water or mist edges
+invariants:
+  - painted ink-and-wash game-art medium, not pixel art
+  - playable spatial readability survives subject changes
+  - no fixed narrative object or named game world
+not_equivalent_to:
+  - generic Japanese fantasy illustration
+  - watercolor postcard without game-space hierarchy
+  - monochrome filter over a normal digital render

@@ -1,0 +1,9 @@
+asset: ink-wash-adventure-v1.png
+status: generated_for_review
+generator: OpenAI image generation tool
+prompt_mode: anonymous_visual_signature
+subject: anonymous traveler in a mountain valley with a stream and ordinary shelter
+generated_at: 2026-08-14
+review:
+  decision: pending
+  notes: Original environment example used to expose ink contour, wash depth, paper space, and game-readable layers.

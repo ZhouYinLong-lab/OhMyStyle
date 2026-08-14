@@ -1,0 +1,20 @@
+canonical_name: 水墨冒险游戏美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - game environments and traversal spaces
+    - characters, creatures, objects, and architecture
+    - landscapes and quiet narrative moments
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory traveler, bridge, shrine, village, or named game world
+sources:
+  - 'https://store.playstation.com/en-us/product/UP0102-PPSA19576_00-KAMIGAMIBUNDLE00/'
+
+notes:
+  - Combines expressive ink contour, wash, paper breathing room, and limited color with game-readable depth layers.
+  - The package is a transferable game-art direction; its sample scene is not a required story beat or asset list.

@@ -1,0 +1,11 @@
+{
+  "name": "纸本墨线与朱色点染",
+  "colors": [
+    {"name": "熟纸色", "hex": "#E7D8B8", "role": "paper ground and light"},
+    {"name": "焦墨", "hex": "#25231F", "role": "contour and foreground depth"},
+    {"name": "淡赭", "hex": "#9A8064", "role": "earth and diluted wash"},
+    {"name": "黛蓝", "hex": "#4A6474", "role": "distance and cool shadow"},
+    {"name": "朱砂", "hex": "#B94B3F", "role": "selective focal accent"}
+  ],
+  "notes": "Paper remains active in the palette. Strong color is reserved for user-requested focal elements or small navigation accents."
+}

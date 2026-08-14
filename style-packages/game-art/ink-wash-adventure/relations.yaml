@@ -1,0 +1,20 @@
+related_movements: []
+related_concepts: []
+influences_to_review: []
+not_equivalent_to:
+  - generic color filter
+  - subject-specific composition
+
+family: non-pixel-painted-game-art
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - ink contour combined with wash-based atmospheric depth
+  - paper breathing room and limited mineral color
+  - game-readable foreground, midground, and background layers
+  - non-pixel painted environment language
+avoid_overlap:
+  - fixed bridge, shrine, traveler, village, or named game world
+  - pixel-art grid and tile-based rendering
+  - generic anime fantasy illustration without navigable space
