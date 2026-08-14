@@ -1,0 +1,33 @@
+id: deconstructivist-architecture
+name: 解构主义建筑
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以倾斜体块、断裂轴线、非中心构图、结构与表皮的紧张关系组织建筑空间；本包控制空间语言和材料表现，不固定博物馆、尖塔或任何具体建筑。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: design
+  historical_context: '20世纪80年代形成鲜明影响的建筑观念与展览语境；强调断裂、错位、非中心和结构张力'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

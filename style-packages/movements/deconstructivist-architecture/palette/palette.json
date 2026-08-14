@@ -1,0 +1,11 @@
+{
+  "name": "冷矿物与氧化金属",
+  "colors": [
+    {"name": "混凝土灰", "hex": "#A9ABA8", "role": "dominant structural field"},
+    {"name": "石墨黑", "hex": "#272B31", "role": "deep recesses and line weight"},
+    {"name": "冷玻璃蓝", "hex": "#7894A2", "role": "transparent or reflective planes"},
+    {"name": "氧化铁", "hex": "#8C5A45", "role": "restrained material accent"},
+    {"name": "旧铝色", "hex": "#C0C2BC", "role": "edge highlights and secondary planes"}
+  ],
+  "notes": "The palette is deliberately mineral and restrained; contrast should come from plane orientation, recesses, and material response rather than a global filter."
+}

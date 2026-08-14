@@ -1,0 +1,27 @@
+composition:
+  - asymmetrical balance with one dominant oblique axis
+  - fragmented planes and controlled offsets
+  - off-center framing with a readable hierarchy
+palette:
+  - cool concrete gray and graphite as structural neutrals
+  - restrained oxidized metal or glass accent
+lighting:
+  quality: directional overcast light
+  behavior:
+    - plane breaks and recesses remain legible
+    - shadows follow one coherent direction
+surface:
+  finish: mineral, metallic, glass, or painted planar surfaces
+  edges: sharp seams, stepped joints, and fractured silhouettes
+texture:
+  density: restrained
+  placement: joints, contact zones, and believable weathering only
+invariants:
+  - competing axes must remain visible after subject substitution
+  - structural tension must be spatially legible, not an arbitrary distortion
+  - materials must remain distinguishable
+  - no fixed building, object, location, or narrative motif
+not_equivalent_to:
+  - generic futuristic architecture
+  - random broken geometry
+  - a global gray color filter

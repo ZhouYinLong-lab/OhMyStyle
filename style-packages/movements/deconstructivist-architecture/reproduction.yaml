@@ -1,0 +1,15 @@
+medium: TODO
+materials:
+  support: TODO
+process:
+  - TODO: describe the order in which the image should be constructed.
+technical_direction:
+  contrast: TODO
+  saturation: TODO
+  perspective: TODO
+  detail_density: TODO
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

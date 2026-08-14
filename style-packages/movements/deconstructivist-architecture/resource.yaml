@@ -1,0 +1,74 @@
+schema_version: 1.0.0
+resource_id: deconstructivist-architecture
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+
+composition:
+  - Use a stable primary mass interrupted by one or two diagonal cuts, offsets, or competing axes.
+  - Prefer asymmetrical balance, oblique viewpoints, and partial occlusion over a centered monument.
+  - Keep a readable subject hierarchy beneath the formal tension.
+palette:
+  - Cool concrete and graphite form the base; oxidized metal or a single restrained accent can punctuate the structure.
+  - Let material differences create contrast instead of applying a global color filter.
+lighting:
+  quality: overcast directional light with controlled hard breaks along planes
+  behavior:
+    - Light should reveal plane changes and recesses without turning the scene into a sci-fi glow.
+    - Shadows may be crisp at edges and soft in open space, with one coherent direction.
+surface:
+  finish: concrete, brushed metal, glass, stone, or painted board with believable wear
+  edges: sharp planar edges, stepped joints, fractured silhouettes, and occasional material seams
+texture:
+  density: restrained; texture supports scale and material identity
+  placement: concentrated at joints, weathering zones, cast surfaces, and contact points
+invariants:
+  - asymmetrical balance and competing directional axes
+  - readable planes or layers separated by offsets, cuts, or seams
+  - structural tension without impossible physics
+  - material contrast remains visible after subject changes
+
+medium: architectural composition and material abstraction
+materials:
+  support: concrete, steel, glass, stone, painted metal, paper, or user-supplied material translated into planar form
+process:
+  - Block the user subject into a small number of legible primary volumes.
+  - Establish one dominant axis and introduce a secondary offset or fracture.
+  - Assign materials to the resulting planes; keep joints and contact logic plausible.
+  - Light across the offsets to expose depth, then add restrained surface wear.
+technical_direction:
+  contrast: medium to high at plane boundaries, with open midtones
+  saturation: restrained, with one optional accent color
+  perspective: controlled wide-to-normal perspective; avoid arbitrary lens warping
+  detail_density: medium; prioritize silhouette, joints, and material transitions
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

@@ -1,0 +1,20 @@
+canonical_name: 解构主义建筑
+entity_type: movement
+domain: design
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - architecture and interiors
+    - furniture and designed objects
+    - urban spaces and landscapes
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - fixed museum, tower, bridge, or landmark
+sources:
+  - 'https://www.moma.org/calendar/exhibitions/1813'
+
+notes:
+  - Treats fragmentation, collision, and off-axis structure as visual organization rather than literal structural failure.
+  - The package can transfer to any user-supplied subject; architecture is the clearest benchmark, not a mandatory output.

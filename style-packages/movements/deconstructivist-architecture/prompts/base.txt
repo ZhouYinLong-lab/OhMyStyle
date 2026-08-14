@@ -1,0 +1,23 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply the package's observable
+medium, composition, lighting, palette, surface, and texture decisions from the
+style files. Preserve the package invariants while inventing a new scene: do not
+copy any reference work, named character, exact pose, recognizable layout, logo,
+or text. Keep the subject and narrative supplied by the user independent from
+the package's visual identity. Use concrete visual instructions rather than the
+package name alone.
+
+Deconstructivist spatial treatment:
+- Organize the user-supplied subject into a few readable planes or volumes.
+- Introduce one dominant oblique axis and one secondary offset, cut, seam, or collision of planes.
+- Use asymmetrical balance, partial occlusion, and controlled off-center framing.
+- Keep gravity, contact, material thickness, and construction joints physically plausible.
+- Use concrete, graphite, brushed metal, glass, stone, or the user's requested materials with distinct surfaces.
+- Light from one coherent direction so plane changes and recesses remain legible; avoid neon glow.
+- Keep the result open to the user's subject. Do not add a museum, tower, bridge, landmark, or city unless requested.
