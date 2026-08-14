@@ -1,0 +1,23 @@
+visual_signature: early modernist color abstraction driven by simultaneous contrast, circular rhythm, prismatic planes, and musical movement across the picture surface
+visual_axes:
+  composition:
+    - 圆弧、扇面和交错色带
+    - 不对称但有节奏的平面组织
+  palette:
+    - 高纯度互补色
+    - 冷暖色相的同时对比
+    - 平面或半透明色层
+  lighting:
+    - 色彩邻接制造光感
+    - 不使用摄影式轮廓光
+  surface:
+    - 画布或纸面上的清晰颜料边界
+  texture:
+    - 轻微颜料和纸面差异
+subject_independence:
+  preserve_user_subject: true
+  fixed_subjects: []
+  optional_motifs:
+    - 圆弧
+    - 扇面
+    - 棱镜色带

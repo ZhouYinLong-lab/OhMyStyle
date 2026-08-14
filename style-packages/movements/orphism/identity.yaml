@@ -1,0 +1,58 @@
+canonical_name: 奥菲主义
+entity_type: movement
+domain: painting
+period: 1910s
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；抽象圆弧、色带和棱镜色块是视觉方法，不是固定物体。
+  subjects: []
+  exclusions:
+    - 固定太阳、月亮、窗户、唱片或宇宙场景
+    - 赛博渐变、霓虹发光和液态背景
+    - 复制具体绘画构图或艺术家作品
+sources:
+  - 'https://www.moma.org/collection/terms/orphism'
+  - 'https://www.moma.org/collection/works/78302'
+notes:
+  - 本包提取色彩、节奏和光感的抽象组织，而不是某个固定叙事。
+  - 可把几何节奏迁移到物体、空间、海报或纯抽象画面，但不强制抽象化用户主体。
+composition:
+  - 以相互咬合的圆弧、扇面、透明色层或节奏性分区建立运动。
+  - 允许不对称，但要维持色块之间的节拍和视觉重心。
+palette:
+  - 使用高纯度的红、橙、黄、蓝、绿和紫形成同时对比。
+  - 颜色应以平面、半透明层或清晰边界出现，不依赖廉价渐变。
+lighting:
+  quality: 由色彩对比产生的光感，而非摄影灯光效果
+  behavior:
+    - 让邻近色和互补色共同形成视觉振动。
+surface:
+  finish: 绘画平面与有限纸面颗粒
+  edges: 边界清楚，局部允许手工绘画的不规则
+texture:
+  density: 低到中等
+  placement: 纹理服务于颜料层次和纸面，不变成数字噪声
+invariants:
+  - 色彩承担结构与运动
+  - 圆弧、扇面、色带或棱镜分区形成节奏
+  - 高纯度色彩之间有明确的同时对比
+  - 不固定太阳、窗户、音乐或宇宙题材
+medium: 早期现代主义色彩抽象绘画
+materials:
+  support: 画布、纸面或平面设计表面
+process:
+  - 先锁定用户主体和用途，再决定抽象程度。
+  - 从主体轮廓或空间关系中提取可迁移的弧线、扇面和色带。
+  - 用有限色板组织色彩节奏，保持主要形体可读。
+  - 最后加入轻微纸面或颜料差异，避免数字渐变和发光。
+technical_direction:
+  contrast: 高，依靠色相与邻接关系而非黑白压差
+  saturation: 高但受控
+  perspective: 平面优先；若用户要求空间，保持空间关系清楚
+  detail_density: 中等，重点放在色块节奏
+avoid:
+  - 通用极光渐变、赛博发光和液态玻璃
+  - 把每个主题都改成太阳、星球或唱片
+  - 无意义的随机几何装饰
+  - 复制具体作品构图或艺术家签名符号
+safety_note: 不复现具体作品、人物、商标或固定叙事；代表图只展示色彩抽象方法。

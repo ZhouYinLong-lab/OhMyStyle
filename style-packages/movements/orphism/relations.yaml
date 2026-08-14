@@ -1,0 +1,13 @@
+family: color-light-abstraction
+near_duplicates: []
+complements:
+  - movements/cubism
+same_family:
+  - movements/futurism
+supersedes: []
+conflicts:
+  - presets/aurora-gradient-grain
+distinctives:
+  - 以色彩同时对比和圆弧节奏组织画面
+  - 色块之间有绘画平面边界
+  - 光感来自色彩关系而非数字发光

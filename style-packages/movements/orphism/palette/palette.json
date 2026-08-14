@@ -1,0 +1,11 @@
+{
+  "name": "棱镜同时对比",
+  "colors": [
+    {"name": "朱红", "hex": "#D94B36", "role": "warm anchor"},
+    {"name": "钴蓝", "hex": "#2457A6", "role": "cool counterpoint"},
+    {"name": "柠檬黄", "hex": "#E7C83F", "role": "luminous plane"},
+    {"name": "翠绿", "hex": "#2D9A73", "role": "rhythmic transition"},
+    {"name": "紫罗兰", "hex": "#76519C", "role": "deep contrast"}
+  ],
+  "rules": ["用邻接和互补色建立振动", "保持色块边界", "避免数字渐变和发光"]
+}

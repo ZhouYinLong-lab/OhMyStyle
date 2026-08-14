@@ -1,0 +1,3 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+orphism-primary-source,,奥菲主义术语条目,现代艺术博物馆,,https://www.moma.org/collection/terms/orphism,link_only,来源资料：现代艺术博物馆术语条目；本包为独立视觉研究和重构。,primary,用于确认历史与形式特征，不打包外部作品。
+orphism-secondary-source,,作品档案,现代艺术博物馆,,https://www.moma.org/collection/works/78302,link_only,来源资料：现代艺术博物馆作品档案；本包不复制具体作品。,secondary,用于观察色彩与圆弧组织。
