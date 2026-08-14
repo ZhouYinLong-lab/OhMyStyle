@@ -1,0 +1,3 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+katsushika-hokusai-primary-source,,神奈川冲浪里（大浪）,大都会艺术博物馆；葛饰北斋,,https://www.metmuseum.org/art/collection/search/56353,public_domain_source_link,Source record links to the Metropolitan Museum of Art public-domain object page; no museum reproduction is bundled.,primary,Link-only source record; bundle a local asset only after redistribution rights are verified.
+katsushika-hokusai-primary-image,references/primary/great-wave-met.jpg,神奈川冲浪里（大浪）,葛饰北斋,约1830–1832,https://images.metmuseum.org/CRDImages/as/original/DP141067.jpg,public_domain,Metropolitan Museum of Art public-domain object image,primary,Downloaded for visual analysis; do not use it as a composition template.

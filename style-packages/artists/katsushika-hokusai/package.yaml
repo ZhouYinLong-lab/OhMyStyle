@@ -1,0 +1,33 @@
+id: katsushika-hokusai
+name: 葛饰北斋
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以清晰刻线、平涂色块、受控套色和强烈的波形节奏组织画面；风格重点在图形化空间、装饰性负形与木版印刷的触感，不固定海浪、船只或任何特定地点。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '江户时代日本浮世绘与多色木版画'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

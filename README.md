@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-220-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-221-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -155,6 +155,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/norman-rockwell/README.md"><img src="style-packages/artists/norman-rockwell/gallery-16x9.jpg" width="230" alt="诺曼·洛克威尔代表图"></a><br><strong>诺曼·洛克威尔</strong><br><a href="style-packages/artists/norman-rockwell/README.md">打开 README</a></td>
 <td colspan="2" width="66%" valign="top" align="center"><a href="style-packages/artists/romare-bearden/README.md"><img src="style-packages/artists/romare-bearden/gallery-16x9.jpg" width="230" alt="罗梅尔·比尔登代表图"></a><br><strong>罗梅尔·比尔登</strong><br><a href="style-packages/artists/romare-bearden/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/artists/katsushika-hokusai/README.md"><img src="style-packages/artists/katsushika-hokusai/gallery-16x9.jpg" width="230" alt="葛饰北斋代表图"></a><br><strong>葛饰北斋</strong><br><a href="style-packages/artists/katsushika-hokusai/README.md">打开 README</a></td>
 </tr>
 </table>
 

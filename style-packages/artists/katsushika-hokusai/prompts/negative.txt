@@ -1,0 +1,5 @@
+Do not add a recurring wave, boat, mountain, shrine, geisha, Mount Fuji, or other
+Japanese landmark unless the user requests it. Avoid copying The Great Wave or any
+other named composition. Avoid photorealistic camera rendering, anime character
+design, glossy 3D surfaces, neon gradients, generic vintage filters, readable text,
+logos, signatures, and watermarks.

@@ -1,0 +1,21 @@
+composition:
+  - Use strong asymmetry, broad cropped forms, and a clear rhythm between foreground, middle distance, and a restrained far plane.
+  - Let contour and silhouette carry hierarchy before adding small internal detail.
+palette:
+  - Keep a limited palette with deep mineral blue, warm off-white, muted vermilion, and charcoal accents.
+  - Separate planes with related flat colors and controlled value steps rather than atmospheric photorealism.
+lighting:
+  quality: graphic daylight
+  behavior:
+    - Use broad, legible light-dark blocks with limited soft transitions.
+surface:
+  finish: absorbent paper with restrained pigment variation
+  edges: carved contour lines, crisp silhouettes, and small registration offsets
+texture:
+  density: medium; concentrated in linework, foam, foliage, and paper grain
+  placement: texture supports form direction and print process, never a universal noise overlay
+invariants:
+  - preserve a limited print-like palette and deliberate contour hierarchy
+  - preserve flat layered planes before internal shading
+  - preserve asymmetrical graphic composition without copying a reference layout
+  - keep the user-supplied subject independent from boats, waves, mountains, or named landmarks

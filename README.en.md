@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-220-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-221-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -155,6 +155,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/norman-rockwell/README.en.md"><img src="style-packages/artists/norman-rockwell/gallery-16x9.jpg" width="230" alt="Norman Rockwell representative image"></a><br><strong>Norman Rockwell</strong><br><a href="style-packages/artists/norman-rockwell/README.en.md">Open README</a></td>
 <td colspan="2" width="66%" valign="top" align="center"><a href="style-packages/artists/romare-bearden/README.en.md"><img src="style-packages/artists/romare-bearden/gallery-16x9.jpg" width="230" alt="Romare Bearden representative image"></a><br><strong>Romare Bearden</strong><br><a href="style-packages/artists/romare-bearden/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/artists/katsushika-hokusai/README.en.md"><img src="style-packages/artists/katsushika-hokusai/gallery-16x9.jpg" width="230" alt="Katsushika Hokusai representative image"></a><br><strong>Katsushika Hokusai</strong><br><a href="style-packages/artists/katsushika-hokusai/README.en.md">Open README</a></td>
 </tr>
 </table>
 

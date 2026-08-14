@@ -1,0 +1,20 @@
+canonical_name: 葛饰北斋
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - landscapes
+    - architecture
+    - ordinary objects
+    - figures when explicitly requested
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.metmuseum.org/art/collection/search/56353'
+
+notes:
+  - Edo-period Japanese woodblock print language studied through line, plane, rhythm, and registration rather than a single famous subject.
+  - Reference works are evidence for visual analysis only; the package must remain transferable to user-supplied subjects.

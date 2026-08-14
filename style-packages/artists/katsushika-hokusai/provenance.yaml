@@ -1,0 +1,15 @@
+package_id: katsushika-hokusai
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://www.metmuseum.org/art/collection/search/56353'
+    title: '神奈川冲浪里（大浪）'
+    authority: '大都会艺术博物馆；葛饰北斋'
+    supports: source traceability and package scope
+
+attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.
+  - The bundled primary reference is the Metropolitan Museum of Art public-domain image for visual study; it is not a template for copying the generated example.
