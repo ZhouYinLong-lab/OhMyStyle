@@ -1,0 +1,18 @@
+canonical_name: 苏珊·梅塞拉斯
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - any user-supplied subject
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - fixed conflict zone, carnival, protest, or documentary event
+sources:
+  - 'https://www.magnumphotos.com/photographer/susan-meiselas/'
+
+notes:
+  - A socially attentive documentary package built around long-form context, proximity, and relationships between people and place.
+  - It treats context as visual information without forcing a news event, country, or group into the user's subject.

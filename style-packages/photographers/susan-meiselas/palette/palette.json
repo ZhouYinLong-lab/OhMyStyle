@@ -1,0 +1,11 @@
+{
+  "name": "社会纪实自然色调板",
+  "colors": [
+    {"name": "旧墙灰", "hex": "#8B8780", "role": "environment"},
+    {"name": "褪红", "hex": "#9B514B", "role": "place accent"},
+    {"name": "尘绿", "hex": "#71806A", "role": "place accent"},
+    {"name": "褪蓝", "hex": "#627A84", "role": "place accent"},
+    {"name": "自然肤色", "hex": "#B98069", "role": "skin reference"}
+  ],
+  "notes": "Colors remain tied to observed place and material; they are not a cinematic preset or fixed subject palette."
+}

@@ -1,0 +1,21 @@
+composition:
+  - human-scale distance with several layers of social and physical context
+  - gestures, glances, and environmental traces share attention without a heroic center
+  - frame information that suggests a larger ongoing situation beyond the image
+palette:
+  - restrained natural color with weathered reds, greens, blues, and skin tones
+  - color supports place and relationship; no global cinematic grade
+lighting:
+  quality: TODO
+  behavior:
+    - TODO: describe direction, softness, contrast, or atmospheric behavior.
+surface:
+  finish: honest documentary print or restrained editorial scan
+  edges: natural lens boundaries and contextual crops
+texture:
+  density: moderate photographic texture
+  placement: consistent across skin, clothing, walls, pavement, and found materials
+invariants:
+  - attention to relationship and context rather than spectacle
+  - human-scale proximity and multiple points of social information
+  - natural color and physical photographic texture

@@ -1,0 +1,33 @@
+id: susan-meiselas
+name: 苏珊·梅塞拉斯
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以长期纪实、现场关系、人物与环境的并置和克制的彩色摄影组织画面，重视观看者与被摄者之间的距离和语境。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '二十世纪后半叶社会纪实摄影'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
