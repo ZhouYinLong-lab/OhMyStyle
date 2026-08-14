@@ -1207,6 +1207,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: retro-3d-console
+  name: 复古三维主机美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/retro-3d-console
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: rpg-maker-pixel-art
   name: 角色扮演游戏像素美术
   kind: game_art
@@ -2477,6 +2494,23 @@ packages:
   - palette
   - surface
   - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: alex-webb
+  name: 亚历克斯·韦布
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/alex-webb
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
   reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
@@ -3836,6 +3870,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: photomontage
+  name: 拼贴蒙太奇
+  kind: technique
+  domain: hybrid
+  package_path: style-packages/techniques/photomontage
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: risograph-printing
   name: 孔版印刷
   kind: technique
