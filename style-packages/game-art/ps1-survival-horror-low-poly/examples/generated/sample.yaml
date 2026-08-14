@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: empty hotel-like corridor used only as a representative environment benchmark
+generated_at: 2026-08-14
+review:
+  decision: curated
+  notes: The corridor is an example of camera, geometry, haze, and material behavior; it is not a fixed subject of the package.

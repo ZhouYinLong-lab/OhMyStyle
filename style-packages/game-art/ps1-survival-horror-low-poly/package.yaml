@@ -1,0 +1,33 @@
+id: ps1-survival-horror-low-poly
+name: 早期三维生存恐怖游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以低多边形几何、低分辨率纹理、固定机位、近距离雾化和预计算阴影制造早期三维游戏的紧张空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '九十年代家用主机三维图形与生存恐怖游戏视觉语境'
+  application: game_art
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

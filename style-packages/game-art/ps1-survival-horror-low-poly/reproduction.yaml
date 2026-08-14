@@ -1,0 +1,19 @@
+medium: early real-time 3D game rendering with low-poly geometry and low-resolution texture logic
+materials:
+  support: polygonal meshes, compact texture atlases, vertex color or baked-light approximations, and simple transparent or reflective surfaces when the subject requires them
+process:
+  - Block the user-supplied subject into a small number of readable polygonal masses.
+  - Choose a deliberate camera position and preserve strong planar perspective.
+  - Assign a restrained material palette and low-resolution texture cues.
+  - Add sparse practical or directional light, simple shadows, and localized distance haze.
+  - Finish with restrained texture breakup and edge stepping; do not add a default horror location or prop.
+technical_direction:
+  contrast: medium-high local contrast with compressed distant values
+  saturation: restrained overall, with selective warm or cool accents
+  perspective: perspective camera with a fixed-camera feel; avoid fisheye and modern ultra-wide distortion
+  detail_density: TODO
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

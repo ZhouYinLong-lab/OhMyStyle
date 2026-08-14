@@ -1,0 +1,20 @@
+related_movements: []
+related_concepts: []
+influences_to_review: []
+not_equivalent_to:
+  - generic color filter
+  - subject-specific composition
+
+family: game-art
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - polygonal silhouettes and visible plane changes
+  - low-resolution surface logic tied to readable form
+  - deliberate camera staging with sparse, spatially legible lighting
+  - restrained haze and simplified shadow construction
+avoid_overlap:
+  - photorealistic modern game rendering
+  - a mandatory mansion, corridor, hotel, monster, or horror narrative
+  - generic retro color grading without geometric or texture decisions

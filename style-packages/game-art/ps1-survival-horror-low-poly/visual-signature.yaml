@@ -1,0 +1,23 @@
+composition:
+  - Use a deliberate fixed-camera or near-fixed viewpoint with readable planes and a clear playable-space hierarchy.
+  - Prefer strong silhouettes, large geometric masses, and a controlled amount of empty space over dense micro-detail.
+  - Let doorways, corners, stairs, windows, or other planes guide the eye only when supplied by the user's subject.
+palette:
+  - Keep a limited, slightly dirty palette: cool blue-green shadows, neutral stone or concrete mids, and small warm practical-light accents.
+  - Separate depth with value grouping and material color blocks rather than a global cinematic grade.
+lighting:
+  quality: hard-edged real-time approximation softened by distance and atmosphere
+  behavior:
+    - Use sparse directional or point-like sources with readable pools of light and restrained falloff.
+    - Keep shadow shapes simple and slightly stepped; use localized haze to reduce distant contrast.
+surface:
+  finish: low-resolution texture mapping with visible material grouping
+  edges: faceted silhouettes, hard polygon breaks, and modest texture shimmer rather than smooth subdivision
+texture:
+  density: low to medium; detail is concentrated on structural seams and gameplay-readable surfaces
+  placement: textures support shape, depth, and navigation; they do not become decorative noise
+invariants:
+  - early real-time 3D geometry remains visible in silhouettes and planes
+  - camera and lighting stay intentional, restrained, and spatially legible
+  - depth is carried by value groups, haze, and simplified material response
+  - no fixed setting, object, character, or narrative motif is added by the package

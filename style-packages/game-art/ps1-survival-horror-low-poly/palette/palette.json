@@ -1,0 +1,11 @@
+{
+  "name": "早期三维游戏材质调色板",
+  "colors": [
+    {"name": "冷灰蓝阴影", "hex": "#34434A", "role": "shadow and distant planes"},
+    {"name": "旧混凝土", "hex": "#777872", "role": "structural midtone"},
+    {"name": "暗橄榄绿", "hex": "#4F5944", "role": "vegetation and aged surfaces"},
+    {"name": "低饱和琥珀", "hex": "#B27A3C", "role": "small practical-light accent"},
+    {"name": "灰白雾光", "hex": "#B7C0BA", "role": "atmospheric separation"}
+  ],
+  "notes": "Values are broad anchors, not a requirement that every subject contain these colors. Keep the user's requested palette authoritative."
+}

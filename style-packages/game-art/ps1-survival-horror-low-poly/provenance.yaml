@@ -1,0 +1,14 @@
+package_id: ps1-survival-horror-low-poly
+package_version: 0.1.0
+curation_status: curated
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://www.playstation.com/en-us/playstation-history/1994-ps-one/'
+    title: 'PlayStation 1994 history timeline'
+    authority: 'PlayStation'
+    supports: source traceability and package scope
+
+attribution: The package describes observable characteristics of an early console 3D vocabulary and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.
