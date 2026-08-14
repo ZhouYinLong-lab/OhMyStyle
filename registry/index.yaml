@@ -18,6 +18,22 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: alphonse-mucha
+  name: 阿尔丰斯·穆夏
+  kind: artist
+  domain: design
+  package_path: style-packages/artists/alphonse-mucha
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: anna-ancher
   name: 安娜·安彻
   kind: artist
@@ -1667,6 +1683,22 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: fauvism
+  name: 野兽主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/fauvism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: futurism
   name: 未来主义
   kind: movement
@@ -2959,6 +2991,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: stephen-shore
+  name: 斯蒂芬·肖尔
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/stephen-shore
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: vivian-maier
   name: 维维安·迈尔
   kind: photographer
