@@ -1,0 +1,23 @@
+visual_signature: postwar abstract painting built from expansive low-modulation color fields, restrained edges, and spatial or emotional depth created by proportion and adjacency
+visual_axes:
+  composition:
+    - 少数大色面
+    - 比例与边界制造焦点
+    - 大量安静留白
+  palette:
+    - 有限色域
+    - 明度或温度关系
+  lighting:
+    - 均匀内部光感
+    - 不使用可见灯效
+  surface:
+    - 吸收性颜料与轻微画布差异
+  texture:
+    - 低密度、边界处细微变化
+subject_independence:
+  preserve_user_subject: true
+  fixed_subjects: []
+  optional_motifs:
+    - 大面积色域
+    - 柔和边界
+    - 留白

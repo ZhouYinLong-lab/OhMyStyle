@@ -1,0 +1,58 @@
+canonical_name: 色域绘画
+entity_type: movement
+domain: painting
+period: 1950s_to_1960s
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；大色面是组织方法，不是固定抽象图形。
+  subjects: []
+  exclusions:
+    - 固定矩形、圆形、地平线或抽象符号
+    - 赛博渐变、发光背景和装饰性色卡
+    - 复制具体画作或艺术家构图
+sources:
+  - 'https://www.moma.org/collection/terms/color-field-painting'
+notes:
+  - 本包提取大面积、低调制色域对观看空间和情绪的影响。
+  - 色域可以服务于抽象画面，也可以包围或简化用户主体，不强制完全抽象。
+composition:
+  - 让少数大色面承担画面结构，减少无关细节和明确焦点。
+  - 用色域之间的边界、渗透和比例建立深度与节奏。
+  - 若包含用户主体，让主体与色域发生关系而不是被装饰纹理淹没。
+palette:
+  - 使用少量宽阔色域，颜色之间有清楚的明度或温度关系。
+  - 色彩可深沉、明亮或近似单色，但避免随机多彩拼贴。
+lighting:
+  quality: 色域内部的均匀光感，不使用可见灯源
+  behavior:
+    - 通过颜色邻接和吸收感产生空间，不添加轮廓光或舞台光。
+surface:
+  finish: 大面积吸收性颜料表面，调制很少但不完全机械平滑
+  edges: 边界柔和、渗透或清楚分界均可，取决于色域关系
+texture:
+  density: 低
+  placement: 轻微画布、颜料吸收和边界变化
+invariants:
+  - 大色面优先于零碎装饰
+  - 颜色承担空间和情绪
+  - 视觉焦点由比例和边界产生
+  - 不固定几何形状、物体、地点或故事
+medium: 20世纪中期抽象绘画
+materials:
+  support: 画布、稀释颜料和大面积涂布层
+process:
+  - 先锁定用户主体和用途，再决定色域是否覆盖或包围主体。
+  - 选择少数颜色并确定面积比例、边界和层次。
+  - 维持低调制表面，让颜色拥有持续的视觉重量。
+  - 最后删去不必要的细节、光效和装饰纹理。
+technical_direction:
+  contrast: 低到中等，依靠色域比例而非碎片化明暗
+  saturation: 可低可高，但整体色彩数量有限
+  perspective: 平面优先，空间由色域关系暗示
+  detail_density: 低，局部细节不能破坏色面完整性
+avoid:
+  - 默认矩形、圆形、地平线或符号
+  - 极光渐变、霓虹发光和数字色卡
+  - 把所有主体变成无边界的雾状抽象
+  - 复制具体作品构图或艺术家签名
+safety_note: 不复现具体作品、人物、商标或固定抽象符号；代表图只展示色域组织方法。

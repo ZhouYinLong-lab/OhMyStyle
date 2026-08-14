@@ -1,0 +1,11 @@
+{
+  "name": "宽阔色域",
+  "colors": [
+    {"name": "深群青", "hex": "#1E3A70", "role": "deep field"},
+    {"name": "暗酒红", "hex": "#6E3D4A", "role": "warm field"},
+    {"name": "灰橙", "hex": "#BE8155", "role": "transition field"},
+    {"name": "淡奶油", "hex": "#D7C79F", "role": "open field"},
+    {"name": "蓝绿", "hex": "#3F6E6B", "role": "cool field"}
+  ],
+  "rules": ["颜色数量有限", "大面积连续", "通过比例和邻接制造空间"]
+}

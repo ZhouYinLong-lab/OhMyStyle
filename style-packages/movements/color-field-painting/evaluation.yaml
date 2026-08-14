@@ -1,0 +1,11 @@
+evaluation:
+  style_recognition: {score: 0, notes: ""}
+  subject_independence: {score: 0, notes: ""}
+  prompt_following: {score: 0, notes: ""}
+  composition_stability: {score: 0, notes: ""}
+  material_accuracy: {score: 0, notes: ""}
+  ai_artifact_level: {score: 0, notes: ""}
+  checks:
+    - 大色面保持连续
+    - 色彩数量有限且承担结构
+    - 没有固定几何符号或数字光效
