@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-245-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-246-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -167,7 +167,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/jean-michel-basquiat/README.md"><img src="style-packages/artists/jean-michel-basquiat/gallery-16x9.jpg" width="230" alt="让·米歇尔·巴斯奎特代表图"></a><br><strong>让·米歇尔·巴斯奎特</strong><br><a href="style-packages/artists/jean-michel-basquiat/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/bridget-riley/README.md"><img src="style-packages/artists/bridget-riley/gallery-16x9.jpg" width="230" alt="布里奇特·莱利代表图"></a><br><strong>布里奇特·莱利</strong><br><a href="style-packages/artists/bridget-riley/README.md">打开 README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/frida-kahlo/README.md"><img src="style-packages/artists/frida-kahlo/gallery-16x9.jpg" width="230" alt="弗里达·卡罗代表图"></a><br><strong>弗里达·卡罗</strong><br><a href="style-packages/artists/frida-kahlo/README.md">打开 README</a></td>
 </tr>
 </table>
 

@@ -1,0 +1,33 @@
+id: frida-kahlo
+name: 弗里达·卡罗
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以正面肖像、私人象征、清晰轮廓和民俗色彩组织亲密而有心理张力的画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '二十世纪墨西哥现代绘画'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

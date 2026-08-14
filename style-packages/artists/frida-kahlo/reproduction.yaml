@@ -1,0 +1,18 @@
+medium: figurative painting with flattened space, controlled contour, and symbolic object placement
+materials:
+  support: opaque paint on a stable surface; preserve deliberate flat passages and tactile brushwork
+process:
+  - Establish the user's subject in a calm frontal or centered arrangement.
+  - Separate large color fields before adding contour and local material marks.
+  - Introduce a small number of relational forms only when they arise from the user's subject.
+  - Add restrained texture to skin, cloth, plant, or object surfaces without photorealistic gloss.
+technical_direction:
+  contrast: medium local contrast with stable midtones
+  saturation: high but organized into distinct color families
+  perspective: shallow or deliberately constructed perspective; avoid wide-angle distortion
+  detail_density: TODO
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

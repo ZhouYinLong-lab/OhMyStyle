@@ -1,0 +1,11 @@
+{
+  "name": "私人象征绘画调色板",
+  "colors": [
+    {"name": "朱红", "hex": "#B83A32", "role": "emotional anchor"},
+    {"name": "湖水蓝绿", "hex": "#258B8A", "role": "cool counterweight"},
+    {"name": "钴蓝", "hex": "#24529A", "role": "deep structural accent"},
+    {"name": "赭黄", "hex": "#C58A3A", "role": "warm earth note"},
+    {"name": "旧乳白", "hex": "#E7D9B7", "role": "quiet ground"}
+  ],
+  "notes": "These are role anchors, not a requirement that every user subject contain all five colors."
+}
