@@ -1,0 +1,11 @@
+{
+  "name": "纸片舞台色板",
+  "colors": [
+    {"name": "纸张米白", "hex": "#E8D6B5", "role": "paper base"},
+    {"name": "墨线深褐", "hex": "#3E302A", "role": "outline and joints"},
+    {"name": "砖红", "hex": "#B9503D", "role": "readable accent"},
+    {"name": "苔藓绿", "hex": "#65734A", "role": "environment layer"},
+    {"name": "靛蓝", "hex": "#3E5572", "role": "depth layer"}
+  ],
+  "rules": ["保持纸片层级清楚", "让色块服务于剪影", "避免塑料和金属高光"]
+}

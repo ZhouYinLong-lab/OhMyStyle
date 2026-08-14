@@ -1,0 +1,24 @@
+visual_signature: flat cut-paper and 2D puppet game art with visible paper edges, articulated silhouettes, shallow stage depth, and readable layered composition
+visual_axes:
+  composition:
+    - 前后纸片层
+    - 可活动关节与清楚剪影
+    - 浅舞台空间
+  palette:
+    - 纸张中性色
+    - 有限高辨识度色块
+    - 手工印刷差异
+  lighting:
+    - 层间柔和投影
+    - 轻微舞台光
+  surface:
+    - 纸纤维、剪切边和胶贴
+  texture:
+    - 墨线、印刷和纸面变化
+subject_independence:
+  preserve_user_subject: true
+  fixed_subjects: []
+  optional_motifs:
+    - 分层纸片
+    - 关节连接
+    - 可读剪影

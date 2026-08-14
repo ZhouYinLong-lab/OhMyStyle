@@ -1,0 +1,33 @@
+id: paper-cut-puppet-game-art
+name: 纸片木偶式二维游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以分层纸片、关节化轮廓、浅舞台深度和手工色块构成可拆分的二维游戏画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '纸片拼贴、木偶戏与二维游戏动画的媒介交汇'
+  application: game_art
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

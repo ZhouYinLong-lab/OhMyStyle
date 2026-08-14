@@ -1,0 +1,58 @@
+canonical_name: 纸片木偶式二维游戏美术
+entity_type: game_art_direction
+domain: game_art
+origin: cut_paper_animation_and_2d_puppet_design
+period: contemporary
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；纸片层、关节和舞台深度是媒介规则，不是固定角色或故事。
+  subjects: []
+  exclusions:
+    - 固定木偶、剧院、儿童房、战争故事或特定角色
+    - 三维纸艺立体书或写实材质扫描
+    - 复制具体游戏资产、界面或关卡构图
+sources:
+  - 'https://www.cosmictopsecretgame.com/'
+notes:
+  - 本包提取平面剪纸、可见纸边、关节化形体和浅层舞台空间。
+  - 视觉媒介可以迁移到环境、人物、道具和界面，但不规定题材。
+composition:
+  - 用前后叠放的纸片层建立浅景深和舞台关系。
+  - 轮廓简洁，关节和可活动连接处保持清楚。
+  - 用有限的层级、阴影和留白让画面适合二维游戏阅读。
+palette:
+  - 使用纸张、墨线和有限的高辨识度色块，允许手工染色的不均匀。
+lighting:
+  quality: 柔和的舞台光与轻微层间投影
+  behavior:
+    - 阴影用于区分纸片层，不做写实摄影棚高光。
+surface:
+  finish: 可见纸张纤维、剪切边缘和轻微印刷差异
+  edges: 轮廓清楚，边缘可以有手工剪切的不规则
+texture:
+  density: 中等
+  placement: 纸面、墨线、胶贴和层间缝隙
+invariants:
+  - 平面剪纸层和可见边缘
+  - 关节化、可动画的形体语言
+  - 浅层舞台空间与可读剪影
+  - 不固定人物、场所、故事或游戏界面
+medium: 纸片剪纸与二维木偶动画式游戏美术
+materials:
+  support: 彩纸、纸板、墨线、胶贴和二维合成层
+process:
+  - 先锁定用户主体和玩法语境，不从媒介名称推断故事。
+  - 将主体拆成有限的前后纸片层和可活动关节。
+  - 用轻微层间阴影建立深度，再加入纸面和印刷细节。
+  - 最后检查远距离剪影和游戏场景的可读性。
+technical_direction:
+  contrast: 中等，依靠层间阴影和色块分离
+  saturation: 中等到高，保持纸面色彩清楚
+  perspective: 平面或浅舞台透视，避免广角写实空间
+  detail_density: 中等，细节服务于剪影、交互和层级
+avoid:
+  - 3D 纸艺立体模型、塑料或玻璃质感
+  - 默认木偶、剧院、儿童房或战争叙事
+  - 复杂写实摄影和无关的拼贴堆叠
+  - 复制具体游戏角色、界面、标志或关卡
+safety_note: 不复现具体游戏资产、人物、品牌或关卡；代表图只展示媒介规则。

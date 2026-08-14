@@ -1,0 +1,12 @@
+family: layered-2d-game-art
+near_duplicates: []
+complements:
+  - game-art/hand-inked-animation-game-art
+same_family: []
+supersedes: []
+conflicts:
+  - game-art/papercraft-diorama-game-art
+distinctives:
+  - 平面剪纸层与可见剪切边
+  - 可活动关节和二维木偶结构
+  - 浅舞台空间而非三维立体模型
