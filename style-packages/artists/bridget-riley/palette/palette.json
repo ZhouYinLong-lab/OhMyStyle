@@ -1,0 +1,11 @@
+{
+  "name": "黑白感知与有限色带",
+  "colors": [
+    {"name": "炭黑", "hex": "#171717", "role": "primary band"},
+    {"name": "暖白", "hex": "#EEEDE7", "role": "ground"},
+    {"name": "中灰", "hex": "#8E9294", "role": "transition"},
+    {"name": "深蓝", "hex": "#315D7D", "role": "limited accent"},
+    {"name": "砖红", "hex": "#B64D45", "role": "limited accent"}
+  ],
+  "notes": "黑、白、灰负责视觉振动；蓝和砖红只作为少量结构色，不做全局滤镜或发光效果。"
+}

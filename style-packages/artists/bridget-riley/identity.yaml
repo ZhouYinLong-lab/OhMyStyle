@@ -1,0 +1,18 @@
+canonical_name: 布里奇特·莱利
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - user-supplied subject of any kind
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory stripes, checkerboards, tunnels, or optical illusions
+sources:
+  - 'https://www.moma.org/audio/playlist/297/4821'
+
+notes:
+  - The package extracts serial repetition, measured spacing, curved bands, and perceptual vibration on a flat painted plane.
+  - The representative optical field is an example only; a new subject remains user-controlled.

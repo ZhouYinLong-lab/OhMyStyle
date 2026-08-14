@@ -1,0 +1,22 @@
+composition:
+  - Organize the image through repeated bands or cells whose spacing changes gradually.
+  - Keep the picture plane active without adding literal depth or illustrative objects.
+  - Use a controlled rhythm with one or two deliberate disruptions.
+palette:
+  - Begin with black, white, and gray relationships; introduce restrained color as a structural accent.
+  - Let adjacent bands alter perceived intensity through proximity rather than a global glow.
+lighting:
+  quality: flat even gallery light
+  behavior:
+    - Avoid cast shadows and simulated illumination; perception should come from spacing and contrast.
+    - Keep paint surface legible but visually quiet.
+surface:
+  finish: flat painted canvas with controlled hand-made variation
+  edges: precise, clean, and slightly human rather than mechanically perfect
+texture:
+  density: low, with subtle paint tooth
+  placement: evenly distributed so texture does not become the subject
+invariants:
+  - Preserve serial repetition, spacing logic, and flatness when the subject changes.
+  - Preserve perceptual contrast without adding neon, glow, or literal three-dimensional effects.
+  - Keep any accent color subordinate to the rhythmic structure.

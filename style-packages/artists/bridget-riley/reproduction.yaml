@@ -1,0 +1,18 @@
+medium: perceptual abstraction painting on canvas
+materials:
+  support: acrylic or oil paint with a smooth prepared ground
+process:
+  - Establish a flat neutral ground and select a repeating band or cell unit.
+  - Repeat the unit across the frame while changing width, curvature, or spacing gradually.
+  - Add limited color only where it clarifies the rhythm; keep edges clean and surface flat.
+  - Check the image at viewing distance so the optical effect comes from the whole field.
+technical_direction:
+  contrast: high local contrast with controlled midtone transitions
+  saturation: restrained, with color as a structural accent
+  perspective: flat picture plane, no simulated lens depth
+  detail_density: repetitive and evenly distributed
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

@@ -1,0 +1,33 @@
+id: bridget-riley
+name: 布里奇特·莱利
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以重复条带、曲线和黑白或有限色彩关系制造视觉振动，强调画面平面与观看者感知之间的主动关系。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '二十世纪六十年代英国光效应艺术与感知绘画语境'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
