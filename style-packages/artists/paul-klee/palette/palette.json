@@ -1,0 +1,12 @@
+{
+  "name": "透明色块调色板",
+  "colors": [
+    {"name": "温暖纸色", "hex": "#E8DCC0", "role": "support"},
+    {"name": "炭黑线", "hex": "#282522", "role": "line anchor"},
+    {"name": "柔和赭黄", "hex": "#C99A3C", "role": "transparent plane"},
+    {"name": "灰青绿", "hex": "#6B9B9A", "role": "transparent plane"},
+    {"name": "尘玫瑰", "hex": "#B8837D", "role": "transparent plane"},
+    {"name": "静紫", "hex": "#80718C", "role": "small accent"}
+  ],
+  "notes": "Colors remain translucent and materially separate; the palette is a role system, not a fixed subject palette."
+}

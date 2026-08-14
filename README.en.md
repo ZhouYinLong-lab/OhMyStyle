@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-236-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-239-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -162,7 +162,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/alphonse-mucha/README.en.md"><img src="style-packages/artists/alphonse-mucha/gallery-16x9.jpg" width="230" alt="Alphonse Mucha representative image"></a><br><strong>Alphonse Mucha</strong><br><a href="style-packages/artists/alphonse-mucha/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/mc-escher/README.en.md"><img src="style-packages/artists/mc-escher/gallery-16x9.jpg" width="230" alt="M. C. Escher representative image"></a><br><strong>M. C. Escher</strong><br><a href="style-packages/artists/mc-escher/README.en.md">Open README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/paul-klee/README.en.md"><img src="style-packages/artists/paul-klee/gallery-16x9.jpg" width="230" alt="Paul Klee representative image"></a><br><strong>Paul Klee</strong><br><a href="style-packages/artists/paul-klee/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -231,6 +231,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/stephen-shore/README.en.md"><img src="style-packages/photographers/stephen-shore/gallery-16x9.jpg" width="230" alt="Stephen Shore representative image"></a><br><strong>Stephen Shore</strong><br><a href="style-packages/photographers/stephen-shore/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/alex-webb/README.en.md"><img src="style-packages/photographers/alex-webb/gallery-16x9.jpg" width="230" alt="Alex Webb representative image"></a><br><strong>Alex Webb</strong><br><a href="style-packages/photographers/alex-webb/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/garry-winogrand/README.en.md"><img src="style-packages/photographers/garry-winogrand/gallery-16x9.jpg" width="230" alt="Garry Winogrand representative image"></a><br><strong>Garry Winogrand</strong><br><a href="style-packages/photographers/garry-winogrand/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/susan-meiselas/README.en.md"><img src="style-packages/photographers/susan-meiselas/gallery-16x9.jpg" width="230" alt="Susan Meiselas representative image"></a><br><strong>Susan Meiselas</strong><br><a href="style-packages/photographers/susan-meiselas/README.en.md">Open README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 
@@ -384,7 +389,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/fauvism/README.en.md"><img src="style-packages/movements/fauvism/gallery-16x9.jpg" width="230" alt="Fauvism representative image"></a><br><strong>Fauvism</strong><br><a href="style-packages/movements/fauvism/README.en.md">Open README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/arte-povera/README.en.md"><img src="style-packages/movements/arte-povera/gallery-16x9.jpg" width="230" alt="Arte Povera representative image"></a><br><strong>Arte Povera</strong><br><a href="style-packages/movements/arte-povera/README.en.md">Open README</a></td>
 <td width="33%"></td>
 </tr>
 </table>

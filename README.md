@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-236-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-239-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -162,7 +162,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/alphonse-mucha/README.md"><img src="style-packages/artists/alphonse-mucha/gallery-16x9.jpg" width="230" alt="阿尔丰斯·穆夏代表图"></a><br><strong>阿尔丰斯·穆夏</strong><br><a href="style-packages/artists/alphonse-mucha/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/mc-escher/README.md"><img src="style-packages/artists/mc-escher/gallery-16x9.jpg" width="230" alt="莫里茨·科内利斯·埃舍尔代表图"></a><br><strong>莫里茨·科内利斯·埃舍尔</strong><br><a href="style-packages/artists/mc-escher/README.md">打开 README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/paul-klee/README.md"><img src="style-packages/artists/paul-klee/gallery-16x9.jpg" width="230" alt="保罗·克利代表图"></a><br><strong>保罗·克利</strong><br><a href="style-packages/artists/paul-klee/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -231,6 +231,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/stephen-shore/README.md"><img src="style-packages/photographers/stephen-shore/gallery-16x9.jpg" width="230" alt="斯蒂芬·肖尔代表图"></a><br><strong>斯蒂芬·肖尔</strong><br><a href="style-packages/photographers/stephen-shore/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/alex-webb/README.md"><img src="style-packages/photographers/alex-webb/gallery-16x9.jpg" width="230" alt="亚历克斯·韦布代表图"></a><br><strong>亚历克斯·韦布</strong><br><a href="style-packages/photographers/alex-webb/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/garry-winogrand/README.md"><img src="style-packages/photographers/garry-winogrand/gallery-16x9.jpg" width="230" alt="加里·维诺格兰德代表图"></a><br><strong>加里·维诺格兰德</strong><br><a href="style-packages/photographers/garry-winogrand/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/susan-meiselas/README.md"><img src="style-packages/photographers/susan-meiselas/gallery-16x9.jpg" width="230" alt="苏珊·梅塞拉斯代表图"></a><br><strong>苏珊·梅塞拉斯</strong><br><a href="style-packages/photographers/susan-meiselas/README.md">打开 README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 
@@ -384,7 +389,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/fauvism/README.md"><img src="style-packages/movements/fauvism/gallery-16x9.jpg" width="230" alt="野兽主义代表图"></a><br><strong>野兽主义</strong><br><a href="style-packages/movements/fauvism/README.md">打开 README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/arte-povera/README.md"><img src="style-packages/movements/arte-povera/gallery-16x9.jpg" width="230" alt="贫穷艺术代表图"></a><br><strong>贫穷艺术</strong><br><a href="style-packages/movements/arte-povera/README.md">打开 README</a></td>
 <td width="33%"></td>
 </tr>
 </table>

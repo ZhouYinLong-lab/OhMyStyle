@@ -1,0 +1,18 @@
+canonical_name: 保罗·克利
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - any user-supplied subject
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - fixed fish, angel, landscape, alphabet, or musical motif
+sources:
+  - 'https://www.zpk.org/en/collection'
+
+notes:
+  - A modernist painting package built around wandering line, transparent color, symbolic geometry, and playful spatial rhythm.
+  - The package transfers a way of organizing perception, not a recurring cast of symbols or a fixed scene.

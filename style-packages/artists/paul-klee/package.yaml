@@ -1,0 +1,33 @@
+id: paul-klee
+name: 保罗·克利
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以游移线条、半透明色块、符号化形体和轻盈的平面节奏组织画面，让抽象秩序保持手工痕迹与开放联想。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '二十世纪现代主义与包豪斯语境'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
