@@ -1,0 +1,33 @@
+id: ukiyo-e
+name: 浮世绘
+kind: movement
+domain: printmaking
+version: 0.1.0
+summary: >-
+  一种以多色木版套印、清晰轮廓、装饰性平面、截取式构图和日常城市题材闻名的视觉传统；本包提取版画组织方法，不固定桥梁、灯笼或日本街景。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: printmaking
+  historical_context: '江户时代日本城市文化与多色木版印刷'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,20 @@
+canonical_name: 浮世绘
+entity_type: movement
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - city scenes
+    - landscapes
+    - portraits or figures when requested
+    - objects and interiors
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.metmuseum.org/art/collection/search/56353'
+
+notes:
+  - A broad Japanese woodblock-print tradition shaped by urban publishing, theater, travel imagery, fashion, and seasonal observation.
+  - The package describes print structure and visual editing, not a mandatory Japanese setting or narrative.

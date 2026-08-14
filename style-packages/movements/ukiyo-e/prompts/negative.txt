@@ -1,0 +1,4 @@
+Do not automatically add bridges, lanterns, kimono, geisha, pagodas, Mount Fuji,
+waves, or Japanese streets. Avoid copying any named print or artist composition.
+Avoid anime, photorealism, 3D CGI, global vintage filters, neon gradients, readable
+text, logos, signatures, and watermarks.

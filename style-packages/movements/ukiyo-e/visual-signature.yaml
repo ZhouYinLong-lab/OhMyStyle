@@ -1,0 +1,20 @@
+composition:
+  - Use selective cropping, strong diagonals, layered silhouettes, and a clear graphic interval between major forms.
+  - Build depth through overlap, scale, and color planes more than lens-based realism.
+palette:
+  - Use a restrained multi-block palette: indigo, warm paper, vermilion, ochre, and charcoal.
+  - Let one saturated accent carry attention while neighboring planes remain deliberately quiet.
+lighting:
+  quality: graphic daylight or stylized dusk
+  behavior:
+    - Keep lighting legible as broad printed value areas, with only limited modeled shading.
+surface:
+  finish: absorbent paper and layered pigment
+  edges: crisp carved contours with occasional registration offsets
+texture:
+  density: medium; decorative detail is concentrated where it supports rhythm or material
+  placement: patterns, foliage, fabric, and architecture may carry marks, but the whole image stays readable at a glance
+invariants:
+  - preserve print-like plane separation and contour hierarchy
+  - preserve edited cropping and asymmetrical balance
+  - keep the subject open; do not force bridges, lanterns, kimono, or Japanese architecture

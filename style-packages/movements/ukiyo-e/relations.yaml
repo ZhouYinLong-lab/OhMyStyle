@@ -1,0 +1,17 @@
+related_movements: []
+related_concepts: []
+influences_to_review: []
+not_equivalent_to:
+  - generic color filter
+  - subject-specific composition
+
+family: japanese-woodblock-print
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - broad woodblock-print grammar rather than one artist's signature
+  - edited cropping, flat pigment layers, pattern, and contour hierarchy
+avoid_overlap:
+  - do not turn every prompt into a Japanese street, bridge, lantern, kimono, or wave scene
+  - do not collapse the package into a generic blue-and-red filter

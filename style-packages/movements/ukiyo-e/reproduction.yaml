@@ -1,0 +1,18 @@
+medium: multicolor woodblock-print visual language
+materials:
+  support: warm, slightly fibrous paper with layered ink behavior
+process:
+  - block the user-supplied subject into a small number of readable planes
+  - place contour lines and major silhouettes before decorative pattern
+  - add limited pigment layers with one clear accent color
+  - finish with restrained paper grain and registration variation
+technical_direction:
+  contrast: medium-high, with readable dark contours
+  saturation: selective rather than globally vivid
+  perspective: graphic compression, crop, and overlap instead of photographic depth
+  detail_density: TODO
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-221-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-222-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -354,6 +354,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/coquette/README.md"><img src="style-packages/movements/coquette/gallery-16x9.jpg" width="230" alt="少女风代表图"></a><br><strong>少女风</strong><br><a href="style-packages/movements/coquette/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/utilitarian/README.md"><img src="style-packages/movements/utilitarian/gallery-16x9.jpg" width="230" alt="实用主义代表图"></a><br><strong>实用主义</strong><br><a href="style-packages/movements/utilitarian/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/mid-century-modern/README.md"><img src="style-packages/movements/mid-century-modern/gallery-16x9.jpg" width="230" alt="中世纪现代主义代表图"></a><br><strong>中世纪现代主义</strong><br><a href="style-packages/movements/mid-century-modern/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/ukiyo-e/README.md"><img src="style-packages/movements/ukiyo-e/gallery-16x9.jpg" width="230" alt="浮世绘代表图"></a><br><strong>浮世绘</strong><br><a href="style-packages/movements/ukiyo-e/README.md">打开 README</a></td>
 </tr>
 </table>
 
