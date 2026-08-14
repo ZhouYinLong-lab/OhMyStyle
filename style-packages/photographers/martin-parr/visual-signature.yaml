@@ -1,0 +1,24 @@
+visual_signature: close observational documentary color photography with direct flash, saturated everyday color, cropped bodies, and socially revealing object relationships
+visual_axes:
+  composition:
+    - 近距离切片
+    - 裁切与遮挡
+    - 前景物件和背景动作并置
+  palette:
+    - 明亮消费色
+    - 真实肤色与环境色
+  lighting:
+    - 直接闪光或平光
+    - 清楚但不戏剧化的阴影
+  surface:
+    - 生活痕迹清晰
+    - 塑料、织物、水分和皮肤可辨
+  texture:
+    - 高密度日常细节
+subject_independence:
+  preserve_user_subject: true
+  fixed_subjects: []
+  optional_motifs:
+    - 局部裁切
+    - 物件并置
+    - 轻微不协调

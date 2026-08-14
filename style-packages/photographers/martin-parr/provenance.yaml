@@ -1,0 +1,7 @@
+curation_status: curated
+reference_policy: external-reference-only
+generated_assets:
+  representative_image:
+    path: gallery-16x9.jpg
+    origin: original-anonymous-generation
+    notes: 不对应具体摄影作品，不代表合作或背书。

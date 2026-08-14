@@ -1,0 +1,11 @@
+{
+  "name": "日常高饱和",
+  "colors": [
+    {"name": "泳池蓝", "hex": "#2F9FC0", "role": "environmental cool"},
+    {"name": "塑料红", "hex": "#D9463E", "role": "everyday accent"},
+    {"name": "明黄", "hex": "#E7B83E", "role": "sunlit object"},
+    {"name": "草绿", "hex": "#71934C", "role": "public-space background"},
+    {"name": "肤色暖橙", "hex": "#C98767", "role": "natural skin range"}
+  ],
+  "rules": ["色彩来自现场", "前景细节清楚", "避免统一橙青滤镜"]
+}

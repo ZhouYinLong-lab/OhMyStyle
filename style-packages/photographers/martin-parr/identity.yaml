@@ -1,0 +1,57 @@
+canonical_name: 马丁·帕尔
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；代表图只是公共生活测试主体。
+  subjects: []
+  exclusions:
+    - 固定泳池、海滩、游客、食物或度假地
+    - 可识别人物、品牌、广告或新闻事件
+    - 把观察式幽默写成嘲讽特定群体
+sources:
+  - 'https://martinparr.com/introduction/'
+  - 'https://martinparr.com/cv/'
+notes:
+  - 本包提取近距离观察、直接闪光、高饱和日常色彩和社会细节。
+  - 轻微尴尬来自构图、裁切和物件关系，不依赖固定故事。
+composition:
+  - 贴近普通生活，把局部身体、道具和背景叠成一张信息密集的切片。
+  - 允许裁切、遮挡和不完美瞬间，保持主体关系可读。
+  - 将小动作、姿态和物件并置为观察线索。
+palette:
+  - 使用明亮、直接、略带消费品感的色彩，但保留真实肤色和环境色。
+lighting:
+  quality: 直接闪光或明亮平光，阴影清楚而不电影化
+  behavior:
+    - 让前景细节具有存在感，避免柔焦和浪漫化逆光。
+surface:
+  finish: 清晰、近距离、带真实生活痕迹的彩色摄影
+  edges: 近景清楚，裁切自然，不使用发光轮廓
+texture:
+  density: 中等到高
+  placement: 皮肤、水分、塑料、织物、食物和公共设施表面
+invariants:
+  - 日常观察距离
+  - 直接色彩和细节并置
+  - 裁切、姿态和物件制造轻微不协调
+  - 不固定人物、地点、活动或消费物
+medium: 当代彩色纪实摄影
+materials:
+  support: 真实公共空间、直接闪光和自然环境色
+process:
+  - 先锁定用户主体和隐私边界，不从摄影师姓名推断游客或泳池。
+  - 选择贴近但不侵犯的观察距离，安排前景和背景的细节关系。
+  - 用直接光线和饱和色彩保留普通生活的触感。
+  - 最后检查人物匿名性、品牌文字和色彩是否仍然自然。
+technical_direction:
+  contrast: 中等到高，前景细节清晰
+  saturation: 中等到高，避免统一橙青滤镜
+  perspective: 近距离广角或标准视角，保持真实比例
+  detail_density: 高，细节分散在前景、中景和背景
+avoid:
+  - 默认泳池、海滩、度假村或食物特写
+  - 摆拍时尚片、旅游宣传照和电影化低饱和
+  - 可识别品牌、人物、文字和刻板嘲讽
+  - 复制具体摄影作品或新闻场景
+safety_note: 不复现具体人物、品牌、地点或事件；代表图只展示观察方法。

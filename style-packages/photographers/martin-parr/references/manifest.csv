@@ -1,0 +1,3 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+martin-parr-primary-source,,摄影师介绍,马丁·帕尔,,https://martinparr.com/introduction/,link_only,来源资料：马丁·帕尔官方网站；本包为独立视觉研究和重构。,primary,仅记录来源，不打包外部作品。
+martin-parr-secondary-source,,个人履历,马丁·帕尔,,https://martinparr.com/cv/,link_only,来源资料：马丁·帕尔官方网站履历页。,secondary,用于确认摄影实践背景。
