@@ -1,0 +1,17 @@
+canonical_name: 南·戈尔丁
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory nightclub, nudity, drugs, named relationship, or autobiographical event
+sources:
+  - 'https://whitney.org/artists/3720'
+
+notes:
+  - The package extracts intimate proximity, direct flash, saturated color, and unguarded everyday observation.
+  - The anonymous apartment moment in the representative image is a benchmark only.

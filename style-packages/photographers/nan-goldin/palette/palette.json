@@ -1,0 +1,11 @@
+{
+  "name": "亲密闪光纪实调色板",
+  "colors": [
+    {"name": "闪光红", "hex": "#B94A46", "role": "warm interior accent"},
+    {"name": "旧粉", "hex": "#C68182", "role": "skin and fabric variation"},
+    {"name": "室内蓝", "hex": "#3F6172", "role": "cool ambient counterweight"},
+    {"name": "琥珀黄", "hex": "#C28B4A", "role": "mixed-light highlight"},
+    {"name": "暗墙灰", "hex": "#4B4847", "role": "grounding shadow"}
+  ],
+  "notes": "Colors are environment-dependent anchors; do not force a specific room, person, or event."
+}

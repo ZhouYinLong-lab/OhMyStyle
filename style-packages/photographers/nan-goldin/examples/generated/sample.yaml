@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: anonymous adult sitting alone in an ordinary apartment after a gathering
+generated_at: 2026-08-14
+review:
+  decision: curated
+  notes: Original anonymous scene used to demonstrate intimacy, direct flash, mixed light, saturated color, and lived surfaces without sensitive narrative content.

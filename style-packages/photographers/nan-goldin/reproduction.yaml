@@ -1,0 +1,18 @@
+medium: intimate color documentary photography with direct flash and available-light mixing
+materials:
+  support: small-format photographic print or faithful digital emulation; preserve flash falloff, color shifts, and surface detail
+process:
+  - Begin with the user's real subject and a plausible lived environment.
+  - Choose a close, unguarded frame rather than a polished pose.
+  - Combine direct flash with existing room or street light and preserve imperfect exposure.
+  - Keep ordinary clutter and tactile surfaces visible without turning them into a fixed narrative.
+technical_direction:
+  contrast: medium-high local flash contrast with readable ambient shadows
+  saturation: medium-high, uneven, and environment-dependent
+  perspective: ordinary close photographic perspective; avoid fashion-editorial distortion
+  detail_density: TODO
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

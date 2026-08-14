@@ -1,0 +1,23 @@
+composition:
+  - Use close personal distance and a frame that feels entered rather than staged.
+  - Allow ordinary clutter, partial bodies, mirrors, beds, tables, or doorways when supplied by the user's scene.
+  - Preserve an unguarded moment without turning the subject into a fashion pose or melodramatic tableau.
+palette:
+  - Use saturated reds, pinks, amber, blue, and green where the environment naturally supports them.
+  - Let mixed color temperatures and imperfect exposure remain visible; avoid a uniform commercial grade.
+lighting:
+  quality: direct on-camera flash mixed with available room or street light
+  behavior:
+    - Keep flash falloff, reflective highlights, and small hard shadows visible without glamorizing the scene.
+    - Do not add a colored rim light or cinematic spotlight.
+surface:
+  finish: consumer or small-format photographic print with honest color and slight imperfection
+  edges: intimate crop, occasional softness, and direct flash highlights are acceptable
+texture:
+  density: medium, carried by skin, fabric, walls, furniture, and film or sensor noise
+  placement: surface detail records lived space; it should not become a decorative grain layer
+invariants:
+  - close, trusting observational distance
+  - direct flash and mixed ambient light remain legible
+  - saturated but imperfect color and ordinary lived surfaces
+  - no fixed person, relationship, venue, or private event

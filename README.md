@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-248-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-249-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -253,6 +253,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <table>
 <tr>
 <td width="50%" valign="top" align="center"><a href="style-packages/photographers/robert-frank/README.md"><img src="style-packages/photographers/robert-frank/gallery-16x9.jpg" width="320" alt="罗伯特·弗兰克代表图"></a><br><strong>罗伯特·弗兰克</strong><br><a href="style-packages/photographers/robert-frank/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/photographers/nan-goldin/README.md"><img src="style-packages/photographers/nan-goldin/gallery-16x9.jpg" width="320" alt="南·戈尔丁代表图"></a><br><strong>南·戈尔丁</strong><br><a href="style-packages/photographers/nan-goldin/README.md">打开 README</a></td>
 </tr>
 </table>
 
