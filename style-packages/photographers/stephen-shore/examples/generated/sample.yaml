@@ -1,0 +1,9 @@
+asset: stephen-shore-v1.png
+status: generated_for_review
+generator: OpenAI image generation tool
+prompt_mode: anonymous_visual_signature
+subject: anonymous roadside laundromat and low commercial strip in ordinary daylight
+generated_at: 2026-08-14
+review:
+  decision: pending
+  notes: Original anonymous scene used to expose eye-level observation, broad focus, local color, and quiet geometry.

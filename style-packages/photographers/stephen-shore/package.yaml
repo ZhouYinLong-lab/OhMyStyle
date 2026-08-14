@@ -1,0 +1,33 @@
+id: stephen-shore
+name: 斯蒂芬·肖尔
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以平视观察、深焦、自然光、平静色彩和不戏剧化的日常构图组织照片；本包提取肖尔的观看方式，不固定公路、汽车、商店或美国小镇。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '20世纪70年代以来美国彩色摄影的重要实践者；以平静、正面、深焦的日常观察，把普通商业街区、道路与生活细节转化为色彩和空间问题'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,69 @@
+schema_version: 1.0.0
+resource_id: stephen-shore
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+composition:
+  - Use a straightforward eye-level view, deliberate but unshowy framing, and clear depth across the whole scene.
+  - Let ordinary alignments—curbs, wires, facades, parked objects, windows, and empty pavement—carry the structure.
+  - Avoid dramatic climax; the image should feel found rather than staged while remaining carefully composed.
+palette:
+  - Record the actual color relationships of the scene without forcing a nostalgic grade.
+  - Allow clean sky, asphalt, painted surfaces, signage shapes, and small saturated objects to coexist.
+lighting:
+  quality: even natural daylight with honest local color
+  behavior:
+    - shadows are present but not theatrical; color remains legible across the frame
+surface:
+  finish: detailed photographic surface with ordinary wear and material specificity
+  edges: clear, optically observed edges across foreground and distance
+texture:
+  density: low to medium, supplied by real surfaces rather than added grain
+  placement: pavement, weathering, glass, paint, foliage, and utility infrastructure
+invariants:
+  - banal subject matter treated with visual seriousness
+  - eye-level observational distance
+  - deep or broad focus with stable geometry
+  - natural color without cinematic drama
+medium: large-format or carefully observed color photography
+materials:
+  support: photographic print or clean digital color image with real surface detail
+process:
+  - Choose the user's subject and wait for an ordinary arrangement rather than inventing spectacle.
+  - Set an eye-level camera and compose with lines, gaps, and depth planes.
+  - Preserve local color and small asymmetries; do not add a global film look.
+  - Review the frame for quiet visual tension and subject independence.
+technical_direction:
+  contrast: moderate, with open shadows and readable highlights
+  saturation: natural to moderately vivid depending on the observed scene
+  perspective: normal or mildly wide, without dramatic distortion
+  detail_density: medium-high across the frame
+avoid:
+  - mandatory road, gas station, motel, car, or American suburb
+  - cinematic teal-orange grading, heavy grain, or staged advertising
+  - copying a specific photograph or location
+safety_note: Do not reproduce a specific reference work, recognizable person, logo, or branded layout.

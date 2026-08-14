@@ -1,0 +1,21 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply the package's observable
+medium, composition, lighting, palette, surface, and texture decisions from the
+style files. Preserve the package invariants while inventing a new scene: do not
+copy any reference work, named character, exact pose, recognizable layout, logo,
+or text. Keep the subject and narrative supplied by the user independent from
+the package's visual identity. Use concrete visual instructions rather than the
+package name alone.
+
+Stephen Shore observational color-photography study:
+- Treat the user's subject as an ordinary visual problem; avoid spectacle, staged drama, or a commercial pitch.
+- Use an eye-level, straightforward viewpoint with broad or deep focus and careful but unshowy framing.
+- Preserve honest local color, small asymmetries, utility lines, pavement, facades, windows, and everyday surface detail when they belong to the requested scene.
+- Keep shadows and highlights readable without cinematic teal-orange grading, heavy grain, or nostalgia filters.
+- Do not add a road trip, motel, gas station, car, or American small-town setting unless explicitly requested.

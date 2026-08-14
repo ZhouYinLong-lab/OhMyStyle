@@ -1,0 +1,20 @@
+canonical_name: 斯蒂芬·肖尔
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - streets, buildings, roads, vehicles, and public spaces
+    - interiors, objects, and ordinary daily arrangements
+    - people when observed without staged drama
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory road trip, gas station, motel, or American small town
+sources:
+  - 'https://www.moma.org/collection/artists/5409'
+
+notes:
+  - Treats ordinary scenes as visual problems through framing, color, depth, and spatial fact rather than spectacle.
+  - The package does not require a particular country, decade, vehicle, or commercial strip.

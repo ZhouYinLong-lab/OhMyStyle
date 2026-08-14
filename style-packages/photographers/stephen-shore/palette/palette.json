@@ -1,0 +1,11 @@
+{
+  "name": "日常本色",
+  "colors": [
+    {"name": "晴天空蓝", "hex": "#75A9CA", "role": "natural sky or cool distance"},
+    {"name": "旧混凝土", "hex": "#8E887A", "role": "street and built surfaces"},
+    {"name": "褪红涂层", "hex": "#A65C4B", "role": "ordinary painted accent"},
+    {"name": "树叶绿", "hex": "#5E744C", "role": "vegetation and seasonal context"},
+    {"name": "褪黄色", "hex": "#C6A05A", "role": "sunlit surface or small object"}
+  ],
+  "notes": "These are reference roles rather than a fixed grade. Preserve the scene's actual color relationships and allow other subjects to bring their own palette."
+}
