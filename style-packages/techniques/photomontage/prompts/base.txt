@@ -1,0 +1,19 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {PURPOSE} are authoritative.
+- This package controls construction method, layer behavior, surface, palette,
+  and composition only.
+- Do not add a recurring figure, hand, machine, staircase, landscape, or story
+  motif unless the user explicitly requests it.
+
+Create a new image about {SUBJECT} for {PURPOSE}. Use photographic montage as a
+construction method: separate image fragments, masking, hard cuts, overlap,
+scale discontinuity, and restrained graphic counterforms. Keep the user's
+subject independent from the package identity. Do not copy any reference work,
+recognizable person, exact layout, logo, or readable text.
+
+Photomontage direction:
+- Separate the composition into a small number of purposeful photographic or graphic layers.
+- Preserve visible seams, cropped contours, and intentional scale jumps; do not smooth the montage into one believable 3D scene.
+- Establish one dominant diagonal or counterform, then remove fragments that do not clarify the subject.
+- Use monochrome, sepia, or a restrained accent color as a structural decision rather than a global filter.
+- Keep paper, ink, halftone, and photographic grain localized to their own layers.

@@ -1,0 +1,33 @@
+id: photomontage
+name: 拼贴蒙太奇
+kind: technique
+domain: hybrid
+version: 0.1.0
+summary: >-
+  以摄影片段、遮罩、负片叠合、硬边几何和尺度错置构成新的平面空间；本包描述蒙太奇的构成机制，不固定人物、建筑或叙事。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: hybrid
+  historical_context: '20世纪早期摄影实验与先锋平面设计中的复合影像技术；区别于一般拼贴，强调摄影层的叠合、遮罩和暗房式合成逻辑'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,18 @@
+medium: photographic montage and mixed-media print
+materials:
+  support: paper, photographic fragments, ink-like planes, and restrained digital compositing
+process:
+  - Translate the user's subject into a small set of image fragments and geometric supports.
+  - Use masking, cropping, overlap, and scale change instead of adding many independent objects.
+  - Keep cuts and seams legible; avoid smoothing every boundary into one synthetic scene.
+  - Establish the main diagonal or counterform before adding grain, halftone, or paper wear.
+  - Check that every fragment is relevant, new, and free of text or protected imagery.
+technical_direction:
+  contrast: graphic high contrast with stable paper midtone
+  saturation: monochrome or restrained accent colors
+  perspective: collage logic; layers may disagree by design
+  detail_density: medium, with emphasis on seams and overlaps
+avoid:
+  - mandatory objects, characters, locations, or narrative
+  - seamless 3D render, random scrapbook, glossy gradient, or fake film poster
+safety_note: The technique is reusable across subjects and does not require a particular fragment set.

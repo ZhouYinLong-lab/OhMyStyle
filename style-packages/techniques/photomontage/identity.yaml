@@ -1,0 +1,18 @@
+canonical_name: 拼贴蒙太奇
+entity_type: technique
+domain: hybrid
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; the collage fragments in the gallery are a benchmark only.
+  subjects:
+    - photographs, objects, figures, architecture, landscapes, and abstract forms
+    - editorial, poster, book, and experimental image-making tasks
+  exclusions:
+    - mandatory hand, staircase, machine, landscape, or human figure
+    - copied source photograph, recognizable person, or protected layout
+    - random scrapbook decoration without compositional intent
+sources:
+  - 'https://museumcollection.tokyo/en/works/6259126/'
+notes:
+  - The package focuses on photographic fragments, masking, overlap, and scale.
+  - A subject can be realistic, abstract, or entirely user-defined.

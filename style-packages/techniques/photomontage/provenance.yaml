@@ -1,0 +1,14 @@
+package_id: photomontage
+package_version: 0.1.0
+curation_status: curated
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://museumcollection.tokyo/en/works/6259126/'
+    title: 'The Great Wave, Sete, 1856/59'
+    authority: 'Tokyo Photographic Art Museum'
+    supports: source traceability and package scope
+
+attribution: The package describes the montage technique from museum collection records and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.

@@ -1,0 +1,11 @@
+{
+  "name": "暗房纸本",
+  "colors": [
+    {"name": "纸张象牙", "hex": "#E7D7B8", "role": "supporting paper ground"},
+    {"name": "银盐黑", "hex": "#242322", "role": "photographic fragment and graphic mass"},
+    {"name": "褪棕灰", "hex": "#796D5E", "role": "sepia image layer or printed midtone"},
+    {"name": "朱红强调", "hex": "#D5492F", "role": "optional structural accent"},
+    {"name": "钴蓝强调", "hex": "#234C92", "role": "optional counterform"}
+  ],
+  "notes": "The palette is optional and structural. A user-supplied subject may require another accent or a monochrome treatment."
+}

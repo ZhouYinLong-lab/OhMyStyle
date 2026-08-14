@@ -1,0 +1,9 @@
+asset: photomontage-v1.png
+status: representative_demo
+generator: OpenAI built-in image generation tool
+prompt_mode: anonymous_visual_signature
+subject: abstract construction assembled from hand, stair, machine, and landscape fragments
+generated_at: 2026-08-14
+review:
+  decision: accepted_for_package_preview
+  notes: "New anonymous montage; demonstrates visible cuts, masks, scale jumps, graphic counterforms, and localized print texture."

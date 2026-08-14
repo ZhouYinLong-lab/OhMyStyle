@@ -1,0 +1,46 @@
+composition:
+  - separate photographic fragments arranged as a deliberate spatial argument
+  - hard-edged cuts, overlaps, interrupted contours, and controlled scale jumps
+  - asymmetrical balance supported by diagonals and flat geometric planes
+palette:
+  - source photographs may remain monochrome, sepia, or selectively colored
+  - one restrained accent color can organize the fragments without becoming a filter
+  - paper ground and image layers retain distinct tonal roles
+lighting:
+  quality: graphic printed contrast rather than continuous scene illumination
+  behavior:
+    - fragment lighting may intentionally disagree when the montage requires it
+surface:
+  finish: paper, ink, halftone, and photographic grain remain visibly layered
+  edges: cut, masked, pasted, or slightly misregistered rather than seamlessly blended
+texture:
+  density: medium and localized by source fragment
+  placement:
+    - paper fibers, ink spread, photographic grain, halftone, and masking edges
+invariants:
+  - the image reads as constructed from distinct layers
+  - scale and spatial discontinuity are intentional, not accidental anatomy errors
+  - every fragment supports the requested subject or composition
+not_equivalent_to:
+  - decorative scrapbook collage
+  - seamless surreal photorealism
+  - a generic vintage paper filter
+medium: photographic montage and mixed-media print
+materials:
+  support: paper or clean digital surface simulating pasted photographic layers
+process:
+  - Start with the user's subject and choose only the fragments required to express it.
+  - Separate source roles: figure, object, architecture, texture, and geometric counterform.
+  - Cut or mask fragments with visible but controlled boundaries; preserve meaningful scale changes.
+  - Arrange a dominant diagonal or central tension, then remove decorative fragments that do not serve it.
+  - Add restrained paper, halftone, or registration texture after the composition is stable.
+technical_direction:
+  contrast: high and graphic, with readable midtones in photographic fragments
+  saturation: limited or selective; accent color is structural, not atmospheric
+  perspective: deliberately discontinuous between layers
+  detail_density: medium, concentrated at fragment boundaries and focal intersections
+avoid:
+  - seamless realistic lighting across incompatible fragments
+  - random clutter, sticker-like decoration, or a fixed surreal prop list
+  - readable text, logos, and copied source layouts
+safety_note: This package transfers a method of image construction, not any source image's content.
