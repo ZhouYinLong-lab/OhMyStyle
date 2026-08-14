@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-253-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-257-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -176,6 +176,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="50%" valign="top" align="center"><a href="style-packages/artists/henri-rousseau/README.md"><img src="style-packages/artists/henri-rousseau/gallery-16x9.jpg" width="320" alt="亨利·卢梭代表图"></a><br><strong>亨利·卢梭</strong><br><a href="style-packages/artists/henri-rousseau/README.md">打开 README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/artists/piet-mondrian/README.md"><img src="style-packages/artists/piet-mondrian/gallery-16x9.jpg" width="320" alt="皮特·蒙德里安代表图"></a><br><strong>皮特·蒙德里安</strong><br><a href="style-packages/artists/piet-mondrian/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/artists/salvador-dali/README.md"><img src="style-packages/artists/salvador-dali/gallery-16x9.jpg" width="460" alt="萨尔瓦多·达利代表图"></a><br><strong>萨尔瓦多·达利</strong><br><a href="style-packages/artists/salvador-dali/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 摄影师
@@ -259,6 +262,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="50%" valign="top" align="center"><a href="style-packages/photographers/irving-penn/README.md"><img src="style-packages/photographers/irving-penn/gallery-16x9.jpg" width="320" alt="欧文·佩恩代表图"></a><br><strong>欧文·佩恩</strong><br><a href="style-packages/photographers/irving-penn/README.md">打开 README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/photographers/lee-friedlander/README.md"><img src="style-packages/photographers/lee-friedlander/gallery-16x9.jpg" width="320" alt="李·弗里德兰德代表图"></a><br><strong>李·弗里德兰德</strong><br><a href="style-packages/photographers/lee-friedlander/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/photographers/andreas-gursky/README.md"><img src="style-packages/photographers/andreas-gursky/gallery-16x9.jpg" width="460" alt="安德烈亚斯·古尔斯基代表图"></a><br><strong>安德烈亚斯·古尔斯基</strong><br><a href="style-packages/photographers/andreas-gursky/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -415,6 +421,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/arte-povera/README.md"><img src="style-packages/movements/arte-povera/gallery-16x9.jpg" width="230" alt="贫穷艺术代表图"></a><br><strong>贫穷艺术</strong><br><a href="style-packages/movements/arte-povera/README.md">打开 README</a></td>
 <td width="33%"></td>
 </tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/orphism/README.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="460" alt="奥菲主义代表图"></a><br><strong>奥菲主义</strong><br><a href="style-packages/movements/orphism/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 原创预设
@@ -525,6 +534,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-point-and-click/README.md"><img src="style-packages/game-art/hand-painted-point-and-click/gallery-16x9.jpg" width="460" alt="手绘点击式冒险游戏美术代表图"></a><br><strong>手绘点击式冒险游戏美术</strong><br><a href="style-packages/game-art/hand-painted-point-and-click/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/paper-cut-puppet-game-art/README.md"><img src="style-packages/game-art/paper-cut-puppet-game-art/gallery-16x9.jpg" width="460" alt="纸片木偶式二维游戏美术代表图"></a><br><strong>纸片木偶式二维游戏美术</strong><br><a href="style-packages/game-art/paper-cut-puppet-game-art/README.md">打开 README</a></td>
 </tr>
 </table>
 

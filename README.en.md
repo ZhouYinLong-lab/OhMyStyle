@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-253-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-257-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -176,6 +176,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="50%" valign="top" align="center"><a href="style-packages/artists/henri-rousseau/README.en.md"><img src="style-packages/artists/henri-rousseau/gallery-16x9.jpg" width="320" alt="Henri Rousseau representative image"></a><br><strong>Henri Rousseau</strong><br><a href="style-packages/artists/henri-rousseau/README.en.md">Open README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/artists/piet-mondrian/README.en.md"><img src="style-packages/artists/piet-mondrian/gallery-16x9.jpg" width="320" alt="Piet Mondrian representative image"></a><br><strong>Piet Mondrian</strong><br><a href="style-packages/artists/piet-mondrian/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/artists/salvador-dali/README.en.md"><img src="style-packages/artists/salvador-dali/gallery-16x9.jpg" width="460" alt="Salvador Dalí representative image"></a><br><strong>Salvador Dalí</strong><br><a href="style-packages/artists/salvador-dali/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Photographers
@@ -259,6 +262,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="50%" valign="top" align="center"><a href="style-packages/photographers/irving-penn/README.en.md"><img src="style-packages/photographers/irving-penn/gallery-16x9.jpg" width="320" alt="Irving Penn representative image"></a><br><strong>Irving Penn</strong><br><a href="style-packages/photographers/irving-penn/README.en.md">Open README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/photographers/lee-friedlander/README.en.md"><img src="style-packages/photographers/lee-friedlander/gallery-16x9.jpg" width="320" alt="Lee Friedlander representative image"></a><br><strong>Lee Friedlander</strong><br><a href="style-packages/photographers/lee-friedlander/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/photographers/andreas-gursky/README.en.md"><img src="style-packages/photographers/andreas-gursky/gallery-16x9.jpg" width="460" alt="Andreas Gursky representative image"></a><br><strong>Andreas Gursky</strong><br><a href="style-packages/photographers/andreas-gursky/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -415,6 +421,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/arte-povera/README.en.md"><img src="style-packages/movements/arte-povera/gallery-16x9.jpg" width="230" alt="Arte Povera representative image"></a><br><strong>Arte Povera</strong><br><a href="style-packages/movements/arte-povera/README.en.md">Open README</a></td>
 <td width="33%"></td>
 </tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/orphism/README.en.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="460" alt="Orphism representative image"></a><br><strong>Orphism</strong><br><a href="style-packages/movements/orphism/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Original presets
@@ -525,6 +534,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-point-and-click/README.en.md"><img src="style-packages/game-art/hand-painted-point-and-click/gallery-16x9.jpg" width="460" alt="Hand-Painted Point-and-Click Adventure Game Art representative image"></a><br><strong>Hand-Painted Point-and-Click Adventure Game Art</strong><br><a href="style-packages/game-art/hand-painted-point-and-click/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/paper-cut-puppet-game-art/README.en.md"><img src="style-packages/game-art/paper-cut-puppet-game-art/gallery-16x9.jpg" width="460" alt="Paper-cut Puppet 2D Game Art representative image"></a><br><strong>Paper-cut Puppet 2D Game Art</strong><br><a href="style-packages/game-art/paper-cut-puppet-game-art/README.en.md">Open README</a></td>
 </tr>
 </table>
 
