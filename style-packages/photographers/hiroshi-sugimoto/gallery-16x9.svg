@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Replace with a representative image</title>
+  <desc id="desc">A neutral placeholder for a style package representative image.</desc>
+  <rect width="1600" height="900" fill="#e8e8e3"/>
+  <rect x="80" y="80" width="1440" height="740" fill="none" stroke="#777" stroke-width="6" stroke-dasharray="24 18"/>
+  <circle cx="800" cy="390" r="130" fill="#c7c7c0"/>
+  <path d="M330 680h940" stroke="#999" stroke-width="8"/>
+</svg>

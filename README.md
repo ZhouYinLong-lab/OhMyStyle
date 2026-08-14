@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-223-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-224-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -218,6 +218,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/fan-ho/README.md"><img src="style-packages/photographers/fan-ho/gallery-16x9.jpg" width="230" alt="何藩代表图"></a><br><strong>何藩</strong><br><a href="style-packages/photographers/fan-ho/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/lisa-arima/README.md"><img src="style-packages/photographers/lisa-arima/gallery-16x9.jpg" width="230" alt="丽莎·有马代表图"></a><br><strong>丽莎·有马</strong><br><a href="style-packages/photographers/lisa-arima/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/emilie-hofferber/README.md"><img src="style-packages/photographers/emilie-hofferber/gallery-16x9.jpg" width="230" alt="埃米莉·霍弗伯代表图"></a><br><strong>埃米莉·霍弗伯</strong><br><a href="style-packages/photographers/emilie-hofferber/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/photographers/hiroshi-sugimoto/README.md"><img src="style-packages/photographers/hiroshi-sugimoto/gallery-16x9.jpg" width="230" alt="杉本博司代表图"></a><br><strong>杉本博司</strong><br><a href="style-packages/photographers/hiroshi-sugimoto/README.md">打开 README</a></td>
 </tr>
 </table>
 

@@ -1,0 +1,33 @@
+id: hiroshi-sugimoto
+name: 杉本博司
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以大画幅黑白摄影、长时间曝光、近乎抽象的海天分界和极简信息密度建立时间感；本包关注观看与曝光的关系，不固定海、地平线或建筑题材。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '当代摄影；海景、剧场、建筑和观念性长时间曝光系列'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

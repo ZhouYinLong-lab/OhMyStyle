@@ -1,0 +1,18 @@
+medium: large-format black-and-white photographic language with long-exposure impression
+materials:
+  support: archival silver-gelatin print or a restrained digital emulation of one
+process:
+  - simplify the requested subject into a small set of structural planes
+  - choose a measured camera position and a stable horizon or axis when relevant
+  - use long-exposure softness and even light to remove incidental movement
+  - finish with fine tonal grain and restrained print contrast
+technical_direction:
+  contrast: medium, with preserved highlight and shadow detail
+  saturation: monochrome unless the user requests another treatment
+  perspective: controlled large-format perspective with minimal distortion
+  detail_density: TODO
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

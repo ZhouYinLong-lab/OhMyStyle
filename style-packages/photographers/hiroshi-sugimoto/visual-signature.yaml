@@ -1,0 +1,20 @@
+composition:
+  - Reduce the frame to a few measured planes or a single centered structural division.
+  - Let emptiness, horizon, symmetry, and repeated architectural rhythm carry the composition.
+palette:
+  - Prefer a narrow neutral scale from deep charcoal to luminous gray; color should be absent unless the user asks for it.
+  - Keep tonal transitions continuous and deliberate, without dramatic crushed blacks.
+lighting:
+  quality: long-exposure natural light
+  behavior:
+    - Light is even and time-based; movement dissolves into calm tonal fields rather than visible effects.
+surface:
+  finish: fine silver-gelatin print with controlled paper presence
+  edges: precise but not digitally sharpened; preserve subtle optical softness
+texture:
+  density: low; detail appears only where it supports material or tonal structure
+  placement: texture is concentrated in subtle grain, water, architecture, or print surface rather than everywhere
+invariants:
+  - preserve measured framing and reduced information density
+  - preserve fine monochrome tonal transitions and long-exposure calm
+  - keep the subject independent; do not force sea, horizon, boats, or empty architecture

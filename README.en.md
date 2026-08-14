@@ -219,6 +219,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/lisa-arima/README.en.md"><img src="style-packages/photographers/lisa-arima/gallery-16x9.jpg" width="230" alt="Lisa Arima representative image"></a><br><strong>Lisa Arima</strong><br><a href="style-packages/photographers/lisa-arima/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/emilie-hofferber/README.en.md"><img src="style-packages/photographers/emilie-hofferber/gallery-16x9.jpg" width="230" alt="Emilie Hofferber representative image"></a><br><strong>Emilie Hofferber</strong><br><a href="style-packages/photographers/emilie-hofferber/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/photographers/hiroshi-sugimoto/README.en.md"><img src="style-packages/photographers/hiroshi-sugimoto/gallery-16x9.jpg" width="230" alt="Hiroshi Sugimoto representative image"></a><br><strong>Hiroshi Sugimoto</strong><br><a href="style-packages/photographers/hiroshi-sugimoto/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Design schools

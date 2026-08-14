@@ -1,0 +1,20 @@
+canonical_name: 杉本博司
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - landscapes and horizons
+    - architecture and interiors
+    - objects when a minimal study is requested
+    - figures only when explicitly requested
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://hirshhorn.si.edu/exhibitions/hiroshi-sugimoto/'
+
+notes:
+  - Contemporary conceptual photography studied through exposure time, reduction, large-format tonal control, and the boundary between document and abstraction.
+  - The package is transferable beyond seascapes; the horizon is a useful benchmark, not a required subject.
