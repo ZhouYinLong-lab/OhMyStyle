@@ -1,0 +1,21 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring street, city, vehicle, crowd, climate, character, or
+  narrative motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply the package's observable
+medium, composition, lighting, palette, surface, and texture decisions from the
+style files. Preserve the package invariants while inventing a new scene: do not
+copy any reference work, named character, exact pose, recognizable layout, logo,
+or text. Keep the subject and narrative supplied by the user independent from
+the package's visual identity. Use concrete visual instructions rather than the
+package name alone.
+
+Alex Webb layered color documentary direction:
+- Find a natural viewpoint with foreground, middle ground, and distance interacting through partial occlusion.
+- Treat gesture, architecture, shadow, and local color as equal compositional information; keep the moment found rather than staged.
+- Use vivid but believable local colors, readable dense shadows, and broad/deep focus so several planes remain useful.
+- Let one or two color relationships carry tension without applying a global saturation filter.
+- Preserve ordinary surfaces, small irregularities, and unresolved timing when they belong to the requested scene.

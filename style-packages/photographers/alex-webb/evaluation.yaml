@@ -1,0 +1,42 @@
+profiles:
+  generic:
+    required:
+      - at least two spatial layers are legible without becoming clutter
+      - package-specific color and observation signature is visible
+      - user-supplied subject remains present and independent
+      - no copied reference composition or branded material
+    reject_if:
+      - style is represented only by a global saturation filter
+      - image becomes a postcard, staged advertisement, or shallow-focus portrait
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - person remains observed rather than turned into a posed fashion subject
+      - gesture and environmental planes remain legible
+  still_life:
+    required:
+      - objects remain countable and are organized through overlap and color
+      - image does not default to a clean commercial product setup
+minimum_score: 7
+
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+  distinctive_signature:
+    score: null
+    notes: "Record which layered color decisions remain observable after the subject changes."
+  visual_overlap:
+    score: null
+    notes: "Compare with Saul Leiter and other color-documentary packages; shared color alone is not duplication."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "The gallery image is a representative demonstration, not proof of every subject transfer."

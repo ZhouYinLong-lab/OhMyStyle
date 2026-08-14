@@ -1,0 +1,11 @@
+{
+  "name": "分层本色",
+  "colors": [
+    {"name": "潮湿青绿", "hex": "#168A91", "role": "painted wall, shade, or reflected cool surface"},
+    {"name": "朱红涂层", "hex": "#B83B32", "role": "architectural accent or warm incident"},
+    {"name": "深蓝阴影", "hex": "#183B52", "role": "foreground occlusion and dense shade"},
+    {"name": "晒黄墙面", "hex": "#C28A3F", "role": "sunlit surface or warm distance"},
+    {"name": "湿灰路面", "hex": "#756F67", "role": "pavement and neutral material anchor"}
+  ],
+  "notes": "These are color roles, not a fixed grade. Preserve the subject's own local colors and use only scene-supported color relationships."
+}

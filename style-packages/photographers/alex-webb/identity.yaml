@@ -1,0 +1,18 @@
+canonical_name: 亚历克斯·韦布
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; the street scene in the gallery is a benchmark only.
+  subjects:
+    - people, architecture, streets, interiors, landscapes, and public spaces
+    - ordinary moments where several planes of activity can coexist
+  exclusions:
+    - copied location, gesture, framing, or recognizable source photograph
+    - mandatory tropical city, street market, political scene, or named landmark
+    - staged fashion pose or travel postcard treatment
+sources:
+  - 'https://www.magnumphotos.com/event/photographers/alex-webb/'
+notes:
+  - The package transfers layered color observation, not a place or story.
+  - Complex framing comes from overlapping planes, not from adding objects the user did not request.

@@ -1,0 +1,51 @@
+composition:
+  - layered foreground, middle ground, and distance with meaningful occlusions
+  - chance encounters of gesture, architecture, shadow, and color within one frame
+  - deep focus or broad legibility rather than a single isolated subject
+palette:
+  - saturated local colors held in tension with dense shadow
+  - warm painted surfaces against cool shade, sky, or reflected pavement
+  - color blocks remain attached to real surfaces instead of becoming a global filter
+lighting:
+  quality: natural daylight with hard or moderately directional contrast
+  behavior:
+    - allow bright patches and deep shade to coexist without theatrical rim light
+    - use reflected color and wet surfaces only when the requested scene supports them
+surface:
+  finish: documentary photographic detail with believable wear and material response
+  edges: partially occluded, crisp enough to read through depth layers
+texture:
+  density: medium to high in the whole frame
+  placement:
+    - walls, pavement, foliage, glass, fabric, cables, and small architectural details
+invariants:
+  - the frame feels discovered rather than staged
+  - several visual planes interact without turning into clutter
+  - color and gesture carry meaning without a fixed narrative
+not_equivalent_to:
+  - generic travel photography
+  - saturated color grading applied to a single-layer scene
+  - shallow-depth fashion or advertising photography
+medium: layered color documentary photography
+materials:
+  support: 35mm or clean digital color photograph with restrained grain
+process:
+  - Start from the user's subject and find an ordinary, non-dramatic arrangement.
+  - Find a viewpoint where foreground, middle ground, and distance overlap naturally.
+  - Preserve local colors and allow one or two strong color relationships to anchor the frame.
+  - Add only scene-supported reflections, shadows, and incidental gestures.
+  - Keep the moment unresolved and observational; avoid a posed climax.
+technical_direction:
+  contrast: moderate-high but with readable shadow detail
+  saturation: vivid local color, never a uniform global boost
+  perspective: normal or mildly wide, with deep spatial layering
+  detail_density: medium-high across near and far planes
+avoid:
+  - fixed tropical street, market, or named city
+  - copied composition or recognizable photograph
+  - cinematic teal-orange grade, fake lens flare, heavy bokeh, or glossy commercial polish
+safety_note: This package transfers a way of seeing in layered color; the user's subject remains authoritative.
+
+related_movements: []
+related_concepts: []
+influences_to_review: []

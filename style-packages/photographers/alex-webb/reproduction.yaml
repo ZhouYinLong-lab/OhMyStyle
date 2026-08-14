@@ -1,0 +1,19 @@
+medium: layered color documentary photography
+materials:
+  support: color photographic surface with subtle grain and real local texture
+process:
+  - Identify the requested subject, then choose an eye-level or lightly elevated observational viewpoint.
+  - Build three readable depth layers using existing architecture, light, and spatial interruptions.
+  - Keep at least one partial occlusion or off-axis gesture if it belongs naturally to the scene.
+  - Expose bright color and shadow together; retain detail in both rather than flattening the range.
+  - Review the result for accidental narrative additions, logos, and copied source composition.
+technical_direction:
+  contrast: moderate-high, shadows textured rather than crushed
+  saturation: vivid local color with scene-dependent balance
+  perspective: normal to mildly wide, no exaggerated wide-angle distortion
+  detail_density: medium-high from foreground to distance
+avoid:
+  - generic travel-poster composition
+  - an obligatory street, car, market, tropical climate, or crowd
+  - global color wash, excessive grain, dramatic rim light, and staged expression
+safety_note: The package is a visual treatment, not a prompt for a recurring location or subject.

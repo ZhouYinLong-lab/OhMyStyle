@@ -1,0 +1,14 @@
+family: layered-color-documentary
+near_duplicates:
+  - photographers/saul-leiter
+supersedes: []
+conflicts:
+  - presets/high-chroma-color-pairing
+distinctives:
+  - complex multi-plane framing with human-scale incident
+  - saturated local color held against dense, readable shadow
+  - deep focus and unresolved street-level observation
+avoid_overlap:
+  - single-layer color grading
+  - fixed tropical street or travel narrative
+  - soft-focus color abstraction

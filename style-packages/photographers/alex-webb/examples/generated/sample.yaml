@@ -1,0 +1,9 @@
+asset: alex-webb-v1.png
+status: representative_demo
+generator: OpenAI built-in image generation tool
+prompt_mode: anonymous_visual_signature
+subject: rainy neighborhood street with layered pedestrians and painted facades
+generated_at: 2026-08-14
+review:
+  decision: accepted_for_package_preview
+  notes: "New anonymous scene; demonstrates layered depth, local color, readable shadow, and found-moment framing without copying a source photograph."
