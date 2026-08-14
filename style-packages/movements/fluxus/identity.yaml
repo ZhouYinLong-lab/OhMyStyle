@@ -1,0 +1,18 @@
+canonical_name: 激浪派
+entity_type: movement
+domain: hybrid
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - any user-supplied subject
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory score card, performance costume, stage, or fixed everyday object
+sources:
+  - 'https://www.moma.org/calendar/galleries/5121'
+
+notes:
+  - A cross-media package built around event logic, ordinary materials, open interpretation, and anti-polish presentation.
+  - It can guide an image toward a documented action, a temporary arrangement, or a visual rule without forcing a story or a prop list.

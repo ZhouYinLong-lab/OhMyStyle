@@ -1,0 +1,9 @@
+asset: fluxus-v1.png
+status: reviewed
+generator: OpenAI image generation tool
+prompt_mode: anonymous_visual_signature
+subject: 临时桌面装置与一个未完成的动作
+generated_at: 2026-08-14
+review:
+  decision: accepted
+  notes: Original 16:9 anonymous event-documentation image; demonstrates ordinary materials, a visible action trace, direct daylight, and open interpretation without readable instructions or copied artwork.

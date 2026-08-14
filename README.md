@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-235-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-236-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -347,6 +347,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/shabby-chic/README.md"><img src="style-packages/movements/shabby-chic/gallery-16x9.jpg" width="230" alt="破旧别致风代表图"></a><br><strong>破旧别致风</strong><br><a href="style-packages/movements/shabby-chic/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/farmhouse-cottagecore/README.md"><img src="style-packages/movements/farmhouse-cottagecore/gallery-16x9.jpg" width="230" alt="农舍风格代表图"></a><br><strong>农舍风格</strong><br><a href="style-packages/movements/farmhouse-cottagecore/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/victorian/README.md"><img src="style-packages/movements/victorian/gallery-16x9.jpg" width="230" alt="维多利亚风格代表图"></a><br><strong>维多利亚风格</strong><br><a href="style-packages/movements/victorian/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/fluxus/README.md"><img src="style-packages/movements/fluxus/gallery-16x9.jpg" width="230" alt="激浪派代表图"></a><br><strong>激浪派</strong><br><a href="style-packages/movements/fluxus/README.md">打开 README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/brutalism/README.md"><img src="style-packages/movements/brutalism/gallery-16x9.jpg" width="230" alt="粗野主义代表图"></a><br><strong>粗野主义</strong><br><a href="style-packages/movements/brutalism/README.md">打开 README</a></td>
