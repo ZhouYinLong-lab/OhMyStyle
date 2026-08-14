@@ -238,6 +238,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: francis-bacon
+  name: 弗朗西斯·培根
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/francis-bacon
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: francisco-de-zurbaran
   name: 弗朗西斯科·德·苏巴朗
   kind: artist
@@ -1309,6 +1326,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: monochrome-1bit-deduction-game-art
+  name: 单色一位推理游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/monochrome-1bit-deduction-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: neon-noir-3d-game-art
   name: 霓虹黑色三维游戏美术
   kind: game_art
@@ -1765,6 +1799,23 @@ packages:
   - surface
   - texture
   reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: color-field-painting
+  name: 色域绘画
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/color-field-painting
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
@@ -3212,6 +3263,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: martin-parr
+  name: 马丁·帕尔
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/martin-parr
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: mary-ellen-mark
   name: 玛丽·艾伦·马克
   kind: photographer
