@@ -833,6 +833,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: salvador-dali
+  name: 萨尔瓦多·达利
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/salvador-dali
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: sandro-botticelli
   name: 桑德罗·波提切利
   kind: artist
@@ -1343,6 +1360,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: paper-cut-puppet-game-art
+  name: 纸片木偶式二维游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/paper-cut-puppet-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: papercraft-diorama-game-art
   name: 纸艺立体书游戏美术
   kind: game_art
@@ -2328,6 +2362,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: orphism
+  name: 奥菲主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/orphism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: photorealism
   name: 照相写实主义
   kind: movement
@@ -2752,6 +2803,23 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 1
+  benchmark: false
+- resource_id: andreas-gursky
+  name: 安德烈亚斯·古尔斯基
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/andreas-gursky
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
   benchmark: false
 - resource_id: ansel-adams
   name: 安塞尔·亚当斯
