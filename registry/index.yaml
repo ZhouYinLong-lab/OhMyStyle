@@ -460,6 +460,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: true
+- resource_id: katsushika-hokusai
+  name: 葛饰北斋
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/katsushika-hokusai
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: leonardo-da-vinci
   name: 莱昂纳多·达·芬奇
   kind: artist
@@ -1463,6 +1480,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: chinese-literati-ink-painting
+  name: 中国文人水墨
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/chinese-literati-ink-painting
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: conceptual-art
   name: 观念艺术
   kind: movement
@@ -2313,6 +2347,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: ukiyo-e
+  name: 浮世绘
+  kind: movement
+  domain: printmaking
+  package_path: style-packages/movements/ukiyo-e
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: utilitarian
   name: 实用主义
   kind: movement
@@ -2619,6 +2670,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: hiroshi-sugimoto
+  name: 杉本博司
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/hiroshi-sugimoto
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: julia-margaret-cameron
   name: 朱莉娅·玛格丽特·卡梅隆
   kind: photographer
