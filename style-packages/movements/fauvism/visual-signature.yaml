@@ -1,0 +1,24 @@
+composition:
+  - simplified forms organized by broad color masses
+  - directional brush passages and selective dark contours
+palette:
+  - saturated, sometimes arbitrary complementary hues
+  - local color remains role-based and readable
+lighting:
+  quality: expressive painted color rather than literal illumination
+  behavior:
+    - shadows may shift hue while preserving value and form
+surface:
+  finish: visible oil-like brushwork and pigment texture
+  edges: simplified contours with energetic but controlled transitions
+texture:
+  density: medium-high and directional
+  placement: marks follow the subject's planes and forms
+invariants:
+  - color is freed from literal description but not from structure
+  - brushwork and simplified shape survive subject substitution
+  - no fixed harbor, bridge, portrait, or village
+not_equivalent_to:
+  - generic high-saturation filter
+  - rainbow gradient
+  - random abstract brush texture over a realistic photograph

@@ -1,0 +1,69 @@
+schema_version: 1.0.0
+resource_id: fauvism
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - medium
+  - composition
+  - palette
+  - surface
+  - texture
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+composition:
+  - Simplify the user's subject into broad, readable masses and directional brush passages.
+  - Balance saturated regions through shape and value rather than naturalistic atmospheric perspective.
+  - Let contour accents and color blocks guide the eye without turning the scene into an arbitrary pattern.
+palette:
+  - Use intense, sometimes non-natural complementary hues and clearly separate color roles.
+  - Color temperature and contrast carry emotion; do not wash the whole image with one filter.
+lighting:
+  quality: expressive painted light with arbitrary but coherent color assignments
+  behavior:
+    - shadows may be blue, violet, or red when they support the composition
+    - value remains sufficient to preserve form and subject identity
+surface:
+  finish: visible oil-paint brushwork with broad, confident marks
+  edges: simplified contours, selected dark outlines, and energetic but controlled transitions
+texture:
+  density: medium-high and directional
+  placement: brush passages follow form, terrain, foliage, architecture, or the user's subject
+invariants:
+  - non-natural color remains organized by subject and composition
+  - broad brushwork and simplified forms survive subject changes
+  - color contrast is expressive rather than a generic saturation boost
+medium: early modern expressive painting with oil-like brushwork
+materials:
+  support: painted canvas or paper with visible pigment and brush direction
+process:
+  - Block the user's subject into simplified silhouettes and broad color regions.
+  - Assign a deliberate non-natural color relationship to light, shadow, and local surfaces.
+  - Add directional brushwork and selective dark contour accents.
+  - Check that the subject remains readable and that color choices are internally coherent.
+technical_direction:
+  contrast: medium-high through color opposition and selected dark accents
+  saturation: high but role-based, not uniformly clipped
+  perspective: simplified spatial depth with readable planes
+  detail_density: medium; marks should be visible without dissolving the subject
+avoid:
+  - mandatory harbor, bridge, Mediterranean village, or named artist composition
+  - global saturation filter, neon glow, or arbitrary rainbow noise
+  - photorealism, smooth digital airbrush, or copied painting
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

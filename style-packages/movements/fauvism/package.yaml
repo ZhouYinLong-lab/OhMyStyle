@@ -1,0 +1,33 @@
+id: fauvism
+name: 野兽主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  以任意色彩、强烈色块、自由笔触、简化形体和深色轮廓组织画面；本包提取野兽主义的色彩与笔触逻辑，不固定海港、桥梁、人物或南法风景。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: painting
+  historical_context: '20世纪初法国现代主义绘画运动；以非自然高纯度色彩、简化形体、自由笔触和强烈色彩对比把颜色从写实描述中解放出来'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

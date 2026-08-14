@@ -1,0 +1,16 @@
+medium: expressive early-modern painting simulation
+materials:
+  support: canvas or paper with oil-like pigment and visible brush direction
+process:
+  - Preserve the user's subject as simplified readable masses.
+  - Choose a limited set of intense, non-natural color relationships for light, shadow, and local surfaces.
+  - Apply broad directional marks and selected dark contours.
+  - Keep value structure clear enough that the subject remains identifiable.
+technical_direction:
+  contrast: medium-high color opposition
+  saturation: intense but role-based
+  perspective: simplified, readable spatial planes
+  detail_density: medium and mark-driven
+avoid:
+  - fixed harbor, bridge, Mediterranean village, or copied painting
+safety_note: This package transfers expressive color and brushwork, not the content of a source artwork.

@@ -1,0 +1,9 @@
+asset: fauvism-v1.png
+status: generated_for_review
+generator: OpenAI image generation tool
+prompt_mode: anonymous_visual_signature
+subject: anonymous riverside neighborhood with trees, path, and distant hills
+generated_at: 2026-08-14
+review:
+  decision: pending
+  notes: Original landscape used to expose arbitrary color, broad brushwork, simplified forms, and selected dark contours.

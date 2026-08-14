@@ -1,0 +1,11 @@
+{
+  "name": "野兽主义高纯度色块",
+  "colors": [
+    {"name": "钴蓝", "hex": "#1745A5", "role": "cool contour and shadow"},
+    {"name": "朱红橙", "hex": "#E84B22", "role": "warm ground or focal mass"},
+    {"name": "祖母绿", "hex": "#16835A", "role": "foliage and cool middle plane"},
+    {"name": "柠檬黄", "hex": "#F1C62B", "role": "light and chromatic counterweight"},
+    {"name": "紫罗兰", "hex": "#7257A6", "role": "distance and arbitrary shadow"}
+  ],
+  "notes": "The palette is expressive rather than mandatory. Keep hue relationships deliberate and preserve the user's requested subject."
+}

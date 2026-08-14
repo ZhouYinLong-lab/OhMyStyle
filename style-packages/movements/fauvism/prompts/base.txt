@@ -1,0 +1,21 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply the package's observable
+medium, composition, lighting, palette, surface, and texture decisions from the
+style files. Preserve the package invariants while inventing a new scene: do not
+copy any reference work, named character, exact pose, recognizable layout, logo,
+or text. Keep the subject and narrative supplied by the user independent from
+the package's visual identity. Use concrete visual instructions rather than the
+package name alone.
+
+Fauvist painting treatment:
+- Simplify the user's subject into broad readable forms and use saturated, sometimes non-natural hues with clear roles.
+- Let blue, violet, red, green, orange, or yellow shadows depart from literal light while preserving value and shape.
+- Use broad directional oil-like brushstrokes, simplified contours, selected dark-blue or dark-violet outlines, and visible pigment texture.
+- Keep the subject and requested setting authoritative; do not add a mandatory harbor, bridge, Mediterranean village, or portrait.
+- Expressive color must be structured, not a global saturation boost, neon glow, rainbow gradient, or random brush overlay.

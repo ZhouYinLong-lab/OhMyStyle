@@ -1,0 +1,20 @@
+canonical_name: 野兽主义
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - landscapes, interiors, figures, and still lifes
+    - ordinary scenes transformed through color and brushwork
+    - abstracted objects and environments
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory harbor, bridge, Mediterranean village, or portrait
+sources:
+  - 'https://www.nga.gov/artworks/fauvism'
+
+notes:
+  - Frees color from literal description while keeping simplified forms and brush energy readable.
+  - The package transfers chromatic decisions and mark-making, not a fixed place, object, or story.

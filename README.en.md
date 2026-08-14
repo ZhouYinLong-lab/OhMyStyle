@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-229-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-230-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -376,6 +376,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/deconstructivist-architecture/README.en.md"><img src="style-packages/movements/deconstructivist-architecture/gallery-16x9.jpg" width="230" alt="Deconstructivist Architecture representative image"></a><br><strong>Deconstructivist Architecture</strong><br><a href="style-packages/movements/deconstructivist-architecture/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/fauvism/README.en.md"><img src="style-packages/movements/fauvism/gallery-16x9.jpg" width="230" alt="Fauvism representative image"></a><br><strong>Fauvism</strong><br><a href="style-packages/movements/fauvism/README.en.md">Open README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 
