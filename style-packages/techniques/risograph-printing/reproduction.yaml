@@ -1,0 +1,18 @@
+medium: stencil duplicator print simulation
+materials:
+  support: warm uncoated paper, porous soy-based spot ink appearance
+process:
+  - Preserve the subject's main silhouette before reducing it to plate separations.
+  - Choose a limited ink set and assign foreground, shadow, and accent roles.
+  - Build tonal changes with coarse halftone and controlled overprint.
+  - Shift plates by a small amount and vary coverage at edges without making the subject ambiguous.
+technical_direction:
+  contrast: medium-high spot separation
+  saturation: concentrated spot inks with paper-colored breathing room
+  perspective: inherit the user's requested camera or layout perspective
+  detail_density: medium, with dots replacing fine photographic texture
+avoid:
+  - full-color photorealism
+  - uniform digital noise used as a substitute for halftone
+  - fixed poster text, named brand, or copied artwork
+safety_note: The package transfers a printing process, not the content of any source print.

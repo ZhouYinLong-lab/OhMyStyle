@@ -1,0 +1,21 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply the package's observable
+medium, composition, lighting, palette, surface, and texture decisions from the
+style files. Preserve the package invariants while inventing a new scene: do not
+copy any reference work, named character, exact pose, recognizable layout, logo,
+or text. Keep the subject and narrative supplied by the user independent from
+the package's visual identity. Use concrete visual instructions rather than the
+package name alone.
+
+Risograph / stencil-print treatment:
+- Reduce the user-supplied subject to two to four deliberate spot-ink plates plus the paper ground.
+- Use crisp cutout silhouettes, porous matte ink, coarse halftone dots, uneven coverage, and slight plate misregistration.
+- Build tonal variation through dot density and overprint, not smooth gradients or glossy highlights.
+- Keep the paper tooth visible and preserve the user's requested subject, count, location, and narrative.
+- Do not add mandatory poster text, zine copy, a brand, or a recurring object unless requested.

@@ -1,0 +1,33 @@
+id: risograph-printing
+name: 孔版印刷
+kind: technique
+domain: printmaking
+version: 0.1.0
+summary: >-
+  以有限专色、粗网点、纸张肌理和轻微套印偏移组织画面；本包描述印刷过程与表面结果，不固定海报、静物或文字内容。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: printmaking
+  historical_context: '20世纪后期发展成熟的数字孔版印刷工艺；以制版、专色油墨、网点和轻微套印偏移形成独特的纸面语言'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

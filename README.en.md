@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-225-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-226-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -501,6 +501,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/luxury-typography/README.en.md"><img src="style-packages/techniques/luxury-typography/gallery-16x9.jpg" width="230" alt="Luxury Typography representative image"></a><br><strong>Luxury Typography</strong><br><a href="style-packages/techniques/luxury-typography/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/grid-3x3/README.en.md"><img src="style-packages/techniques/grid-3x3/gallery-16x9.jpg" width="230" alt="3×3 Grid Design representative image"></a><br><strong>3×3 Grid Design</strong><br><a href="style-packages/techniques/grid-3x3/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/bento-grid/README.en.md"><img src="style-packages/techniques/bento-grid/gallery-16x9.jpg" width="230" alt="Bento Grid representative image"></a><br><strong>Bento Grid</strong><br><a href="style-packages/techniques/bento-grid/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/risograph-printing/README.en.md"><img src="style-packages/techniques/risograph-printing/gallery-16x9.jpg" width="230" alt="Risograph Printing representative image"></a><br><strong>Risograph Printing</strong><br><a href="style-packages/techniques/risograph-printing/README.en.md">Open README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 

@@ -1,0 +1,69 @@
+schema_version: 1.0.0
+resource_id: risograph-printing
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - medium
+  - palette
+  - surface
+  - texture
+  - composition
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+composition:
+  - Use clear flat shapes, generous paper space, and a hierarchy that survives coarse dots.
+  - Let overlaps reveal color separation and a small amount of registration drift.
+palette:
+  - Use two to four deliberate spot colors with a warm uncoated paper ground.
+  - Keep each ink role distinct; do not simulate a full-spectrum gradient.
+lighting:
+  quality: graphic printed light with limited tonal steps
+  behavior:
+    - Volume comes from halftone density, overprint, and cut shapes rather than glossy highlights.
+surface:
+  finish: porous matte ink on slightly toothy uncoated paper
+  edges: crisp stencil silhouettes with small imperfect registration offsets
+texture:
+  density: visible coarse halftone and uneven ink coverage
+  placement: broad fields, shadows, and overprinted overlaps
+invariants:
+  - limited spot-ink separation
+  - visible halftone or stencil texture
+  - slight registration drift without destroying legibility
+  - paper remains part of the palette
+medium: digital simulation of stencil duplicator printing
+materials:
+  support: warm uncoated paper and porous spot inks
+process:
+  - Simplify the user subject into a small number of flat color separations.
+  - Assign one role to each spot ink and reserve paper for highlights.
+  - Apply coarse halftone to tonal areas and overlap plates in sequence.
+  - Introduce restrained registration drift and uneven coverage, then preserve readable silhouettes.
+technical_direction:
+  contrast: medium to high through spot-color separation
+  saturation: concentrated and ink-like, not globally saturated
+  perspective: follow the user's requested perspective; flatten only the print rendering
+  detail_density: medium; detail must survive coarse dots and paper texture
+avoid:
+  - photorealistic gloss and full-spectrum gradients
+  - generic vintage filter without plate separation
+  - mandatory readable text, poster copy, or brand layout
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

@@ -1,0 +1,24 @@
+composition:
+  - clear silhouettes and flat shape hierarchy
+  - generous paper space with deliberate overlaps
+palette:
+  - two to four spot inks plus the paper ground
+  - color identity comes from separate plates and overprint
+lighting:
+  quality: tonal steps built from dots and overlapping ink
+  behavior:
+    - no glossy studio highlights or photographic gradient
+surface:
+  finish: porous matte ink on toothy paper
+  edges: crisp but slightly misregistered plate boundaries
+texture:
+  density: coarse halftone, speckled coverage, and paper tooth
+  placement: fields, shadows, and overlaps
+invariants:
+  - print process remains visible after subject substitution
+  - user subject stays countable and readable
+  - no fixed poster text, product, or narrative object
+not_equivalent_to:
+  - generic retro filter
+  - offset printing with unlimited color blending
+  - paper texture placed over a normal digital image

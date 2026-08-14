@@ -1,0 +1,9 @@
+asset: risograph-printing-v1.png
+status: generated_for_review
+generator: OpenAI image generation tool
+prompt_mode: anonymous_visual_signature
+subject: three pears, a ceramic cup, and a folded paper sheet on a tabletop
+generated_at: 2026-08-14
+review:
+  decision: pending
+  notes: Original still life used to expose spot-ink separation, halftone texture, paper tooth, and registration drift.

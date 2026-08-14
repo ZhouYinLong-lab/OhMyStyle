@@ -1,0 +1,20 @@
+related_movements: []
+related_concepts: []
+influences_to_review: []
+not_equivalent_to:
+  - generic color filter
+  - subject-specific composition
+
+family: print-process
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - limited spot-ink plate logic
+  - coarse halftone and porous coverage
+  - small registration drift between layers
+  - paper ground remains an active color
+avoid_overlap:
+  - mandatory zine copy, poster headline, or commercial brand
+  - generic sepia or film-grain treatment
+  - unlimited watercolor blending or photorealistic gloss

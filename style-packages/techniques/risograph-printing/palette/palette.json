@@ -1,0 +1,10 @@
+{
+  "name": "孔版专色与纸张底色",
+  "colors": [
+    {"name": "暖纸色", "hex": "#F2E7C9", "role": "paper ground"},
+    {"name": "孔版钴蓝", "hex": "#173B9A", "role": "structure and deep halftone"},
+    {"name": "孔版朱红", "hex": "#F04B2F", "role": "warm plate and emphasis"},
+    {"name": "孔版奶黄", "hex": "#F3C84B", "role": "light plate and broad field"}
+  ],
+  "notes": "The colors are role-based spot inks. Keep the set limited and let overprint and paper show the process."
+}

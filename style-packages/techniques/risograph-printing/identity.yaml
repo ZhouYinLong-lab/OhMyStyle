@@ -1,0 +1,20 @@
+canonical_name: 孔版印刷
+entity_type: technique
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - posters and editorial layouts
+    - objects, figures, plants, and architecture
+    - diagrams and abstract forms
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory text, poster, zine, or product subject
+sources:
+  - 'https://www.riso.co.jp/english/tech_portal/core/ink.html'
+
+notes:
+  - Uses the behavior of stencil duplicator printing: a master creates a porous ink layer, and separate spot colors are layered in sequence.
+  - The package controls the print surface and color separation; the user's subject remains open.

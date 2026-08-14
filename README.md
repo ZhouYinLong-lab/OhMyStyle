@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-225-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-226-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -501,6 +501,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/luxury-typography/README.md"><img src="style-packages/techniques/luxury-typography/gallery-16x9.jpg" width="230" alt="奢华排版代表图"></a><br><strong>奢华排版</strong><br><a href="style-packages/techniques/luxury-typography/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/grid-3x3/README.md"><img src="style-packages/techniques/grid-3x3/gallery-16x9.jpg" width="230" alt="3×3 网格设计代表图"></a><br><strong>3×3 网格设计</strong><br><a href="style-packages/techniques/grid-3x3/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/bento-grid/README.md"><img src="style-packages/techniques/bento-grid/gallery-16x9.jpg" width="230" alt="便当盒网格代表图"></a><br><strong>便当盒网格</strong><br><a href="style-packages/techniques/bento-grid/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/risograph-printing/README.md"><img src="style-packages/techniques/risograph-printing/gallery-16x9.jpg" width="230" alt="孔版印刷代表图"></a><br><strong>孔版印刷</strong><br><a href="style-packages/techniques/risograph-printing/README.md">打开 README</a></td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 
