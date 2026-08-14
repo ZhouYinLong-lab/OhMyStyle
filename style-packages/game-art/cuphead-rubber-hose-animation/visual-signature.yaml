@@ -1,0 +1,22 @@
+composition:
+  - Build a readable side-scrolling frame with clear foreground, middle ground, and background layers.
+  - Use strong silhouette hierarchy and a path or directional shape that supports game readability.
+  - Keep the image lively through curved contours and staged visual rhythm, not through clutter.
+palette:
+  - Use a limited parchment, tobacco brown, muted teal, brick red, and warm yellow palette.
+  - Separate planes with value and hue while retaining a printed, slightly aged unity.
+lighting:
+  quality: warm illustrated daylight or stage-like painted light
+  behavior:
+    - Use broad readable light shapes rather than photorealistic bounce-light simulation.
+    - Keep silhouettes legible against the background.
+surface:
+  finish: hand-inked animation drawing with watercolor or gouache background
+  edges: variable ink contour, rounded and elastic where motion is implied
+texture:
+  density: medium, with visible paper, paint, and registration irregularity
+  placement: concentrated in background washes and selected line or cel edges
+invariants:
+  - Preserve hand-inked contour variation and readable game silhouettes after the subject changes.
+  - Preserve layered painted depth without converting the image to pixel art or glossy 3D.
+  - Keep the limited palette and print imperfections subordinate to gameplay clarity.

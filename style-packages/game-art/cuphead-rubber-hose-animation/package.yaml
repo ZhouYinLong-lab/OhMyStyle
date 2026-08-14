@@ -1,0 +1,33 @@
+id: cuphead-rubber-hose-animation
+name: 三十年代橡皮管动画游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  将三十年代手绘动画的橡皮管肢体、墨线、赛璐珞色块和水彩背景转译为可用于游戏场景的视觉语言。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '三十年代动画视觉语言在现代游戏中的转译'
+  application: game_art
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

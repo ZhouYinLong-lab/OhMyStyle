@@ -1,0 +1,11 @@
+{
+  "name": "复古动画纸面色",
+  "colors": [
+    {"name": "羊皮纸", "hex": "#E2C98D", "role": "painted ground"},
+    {"name": "烟草棕", "hex": "#765033", "role": "ink and structure"},
+    {"name": "旧青绿", "hex": "#5D8179", "role": "cool plane"},
+    {"name": "砖红", "hex": "#A84F3D", "role": "warm accent"},
+    {"name": "动画黄", "hex": "#D7A849", "role": "readability accent"}
+  ],
+  "notes": "以羊皮纸和烟草棕建立纸面统一感，青绿、砖红和黄色只用于区分空间层次与交互重点。"
+}

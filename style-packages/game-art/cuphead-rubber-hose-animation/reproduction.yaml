@@ -1,0 +1,18 @@
+medium: hand-drawn 2D game illustration with rubber-hose animation grammar
+materials:
+  support: ink line, watercolor or gouache wash, cel-like flat paint, paper texture
+process:
+  - Block a readable side-scrolling composition and gameplay path with large silhouettes.
+  - Draw variable ink contours and elastic curves around the user-supplied subject.
+  - Paint a limited-color background in broad washes, then add cel-like planes and small accents.
+  - Add restrained paper and registration imperfections without obscuring silhouettes.
+technical_direction:
+  contrast: medium-high silhouette separation with open painted shadows
+  saturation: limited and slightly aged, with warm accents used sparingly
+  perspective: readable layered side-scrolling depth rather than optical realism
+  detail_density: medium, prioritizing silhouettes, paths, and landmark shapes supplied by the user
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

@@ -1,0 +1,18 @@
+canonical_name: 三十年代橡皮管动画游戏美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - user-supplied game subject or environment
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory seaside village, windmill, dock, boss, or mascot
+sources:
+  - 'https://digital.darkhorse.com/books/ef9898a203a8440dbc5d9dc84e30e19a/art-of-cuphead'
+
+notes:
+  - The package extracts rubber-hose motion grammar, ink contours, painted backgrounds, limited color, and cel-like layering.
+  - The representative coastal environment is an example only; a new game subject remains user-controlled.
