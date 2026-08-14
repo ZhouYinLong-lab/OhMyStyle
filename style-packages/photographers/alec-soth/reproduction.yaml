@@ -1,0 +1,18 @@
+medium: large-format color documentary photography
+materials:
+  support: natural light, color negative character, physical location detail
+process:
+  - Start from the user-supplied subject and find an ordinary surrounding place.
+  - Compose a patient wide frame with meaningful negative space and an off-center anchor.
+  - Use soft daylight and preserve local color, weathering, and small visual inconsistencies.
+  - Apply restrained grain and optical softness only after the spatial relationships are stable.
+technical_direction:
+  contrast: low to medium, with open shadows and gentle highlights
+  saturation: restrained natural color, no global teal-orange grade
+  perspective: normal-to-moderate wide view with stable horizon
+  detail_density: medium, allowing quiet areas to remain quiet
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

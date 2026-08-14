@@ -1,0 +1,18 @@
+canonical_name: 亚历克·索思
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - user-supplied subject of any kind
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory road, motel, prairie, American flag, or named location
+sources:
+  - 'https://alecsoth.com/photography/about'
+
+notes:
+  - The package extracts patient large-format color observation, ordinary places, generous space, and quiet human distance.
+  - The roadside building in the representative image is an example only; it is not a default subject.

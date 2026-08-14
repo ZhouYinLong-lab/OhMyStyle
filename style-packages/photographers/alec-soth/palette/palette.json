@@ -1,0 +1,11 @@
+{
+  "name": "阴天公路与褪色环境色",
+  "colors": [
+    {"name": "灰蓝天空", "hex": "#9EAAB0", "role": "open sky"},
+    {"name": "褪绿植被", "hex": "#7E8B72", "role": "ordinary landscape"},
+    {"name": "旧米色", "hex": "#C7B99F", "role": "weathered surface"},
+    {"name": "暗红棕", "hex": "#86564A", "role": "small environmental accent"},
+    {"name": "湿灰路面", "hex": "#777875", "role": "ground and structure"}
+  ],
+  "notes": "色彩保持自然但不过分鲜艳，重点是不同普通材料之间的细小差异，而不是一层统一滤镜。"
+}

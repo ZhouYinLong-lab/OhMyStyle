@@ -1,0 +1,22 @@
+composition:
+  - Hold a wide frame with generous sky or quiet negative space.
+  - Place the subject slightly off-center and let the surrounding place carry equal visual weight.
+  - Keep horizon and perspective calm, with a small irregularity that prevents advertising polish.
+palette:
+  - Use restrained natural color: dusty blue, faded green, pale beige, weathered red-brown, and neutral skin or material colors.
+  - Preserve small color facts in the environment instead of applying a unified cinematic grade.
+lighting:
+  quality: soft natural daylight
+  behavior:
+    - Prefer overcast or gently broken light with low drama and readable local color.
+    - Keep shadows soft enough for place and surface details to remain legible.
+surface:
+  finish: optically realistic large-format color photograph
+  edges: natural lens rendering with moderate, non-stylized falloff
+texture:
+  density: low to medium, with real wear and quiet film grain
+  placement: distributed through road, paint, grass, sky, and ordinary surfaces
+invariants:
+  - Preserve observational distance and the balance between subject and surrounding place.
+  - Preserve open-ended mood without turning the scene into a dramatic narrative.
+  - Keep natural color and optical imperfection ahead of commercial retouching.
