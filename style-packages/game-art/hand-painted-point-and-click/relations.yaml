@@ -1,0 +1,18 @@
+family: hand-painted-adventure
+near_duplicates:
+  - game-art/watercolor-storybook-game-art
+complements:
+  - game-art/ink-wash-adventure
+  - game-art/painterly-3d-fantasy-game-art
+same_family:
+  - game-art/hand-inked-animation-game-art
+supersedes: []
+conflicts:
+  - game-art/zx-spectrum-attribute-pixel
+distinctives:
+  - painterly 2D scene construction designed for exploration and parallax-ready layers
+  - readable environment staging without a fixed story or character roster
+  - visible brush decisions rather than watercolor softness alone
+avoid_overlap:
+  - do not reduce the package to generic storybook watercolor
+  - do not require a fantasy location, puzzle, or dialogue scene

@@ -1,0 +1,22 @@
+version: 1
+signature:
+  medium: 二维手绘游戏背景
+  composition: 前中后景、探索路径、角色预留空间
+  palette: 受环境控制的暖冷层次和局部强调色
+  lighting: 手绘环境光与空气层
+  surface: 可见笔触、设计化边缘、材料分层
+  texture: 中等到中高，服务于空间线索
+  edges: 关键轮廓可读，远景可适度柔化
+transfer:
+  preserve:
+    - 二维手绘媒介感
+    - 可探索的场景层级
+    - 笔触、色块和环境光的协作
+  release:
+    - 代表图中的楼梯、车站和黄昏
+    - 固定角色、谜题或幻想地点
+subject_independence:
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 普通公共空间

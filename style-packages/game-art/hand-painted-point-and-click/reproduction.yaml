@@ -1,0 +1,19 @@
+version: 1
+goal: 用二维手绘层次和可读的探索空间组织用户指定的游戏场景。
+sequence:
+  - 读取用户主体、场景、视角和用途，不从媒介名推断剧情。
+  - 建立前景、中景、背景和可行走或可交互的空间线索。
+  - 以手绘色块和笔触完成材料，再加入来自场景的环境光。
+  - 检查空间是否可读、细节是否支持探索，并删除固定角色、谜题和界面。
+constraints:
+  must:
+    - preserve the user-supplied subject and setting
+    - keep readable 2D painted depth layers
+    - keep the scene usable as a game-background reference
+  avoid:
+    - default fantasy narrative
+    - copied game assets or screenshots
+    - UI, dialogue boxes, logos, or text
+model_notes:
+  prompt_order: subject -> game medium -> spatial layers -> brushwork -> lighting -> exclusions
+  reference_use: Study hand-painted scene construction and layer readability, not game-specific content.

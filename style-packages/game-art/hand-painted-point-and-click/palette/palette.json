@@ -1,0 +1,9 @@
+{
+  "roles": [
+    {"name": "纸灰蓝", "hex": "#9DA7A5", "role": "quiet atmospheric distance"},
+    {"name": "暖土色", "hex": "#A66D45", "role": "ground and aged material"},
+    {"name": "深墨绿", "hex": "#263B35", "role": "foreground foliage or shadow"},
+    {"name": "灯光琥珀", "hex": "#D69A4B", "role": "optional local warm light"}
+  ],
+  "usage": "Choose roles from the user's scene; these colors are not mandatory objects or a fixed palette for every game background."
+}

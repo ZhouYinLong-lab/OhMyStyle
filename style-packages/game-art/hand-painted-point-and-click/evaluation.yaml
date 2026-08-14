@@ -1,0 +1,18 @@
+version: 1
+checks:
+  style_recognition:
+    question: 是否能看出二维手绘游戏背景、分层空间和可探索的画面组织？
+    score: 0
+  subject_independence:
+    question: 用户主体是否保留，且没有被楼梯、车站、角色或谜题替换？
+    score: 0
+  prompt_following:
+    question: 是否遵守用户指定的场景、视角、画幅和用途？
+    score: 0
+  composition_stability:
+    question: 前景、中景、背景和路径线索是否清楚？
+    score: 0
+  ai_artifact_level:
+    question: 是否出现错误笔触、重复结构、文字、界面或不合理的游戏资产？
+    score: 0
+notes: 评分用于比较生成结果，不表示与任何具体游戏或开发者的认证或等同。

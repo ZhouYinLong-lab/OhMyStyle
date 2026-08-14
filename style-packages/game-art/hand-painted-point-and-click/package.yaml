@@ -1,0 +1,33 @@
+id: hand-painted-point-and-click
+name: 手绘点击式冒险游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以二维手绘场景、分层空间、可读的前中后景和局部笔触保留构成可探索的冒险游戏画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '二维手绘点击式冒险游戏的场景美术语境'
+  application: game_art
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
