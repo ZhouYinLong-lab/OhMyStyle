@@ -1,0 +1,10 @@
+{
+  "roles": [
+    {"name": "暖白底色", "hex": "#F2EBDD", "role": "open ground and quiet space"},
+    {"name": "结构黑", "hex": "#151515", "role": "grid lines and decisive boundaries"},
+    {"name": "原色红", "hex": "#D62F24", "role": "small warm focal plane"},
+    {"name": "原色蓝", "hex": "#174A9C", "role": "cool counterweight"},
+    {"name": "原色黄", "hex": "#E8B928", "role": "bright balancing plane"}
+  ],
+  "usage": "Use the colors as separated roles with restrained area ratios; do not force every role into every image."
+}

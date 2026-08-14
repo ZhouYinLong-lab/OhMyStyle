@@ -1,0 +1,18 @@
+version: 1
+checks:
+  style_recognition:
+    question: 是否能看出网格、色面、留白和非对称平衡，而不是普通几何海报？
+    score: 0
+  subject_independence:
+    question: 用户主体是否保留，且没有被抽象矩形或建筑替换？
+    score: 0
+  prompt_following:
+    question: 是否遵守画幅、用途和用户对主体的要求？
+    score: 0
+  composition_stability:
+    question: 线条、色面和留白是否形成稳定层级？
+    score: 0
+  ai_artifact_level:
+    question: 是否出现随机装饰、文字残片、错误透视或不必要的光效？
+    score: 0
+notes: 评分用于比较生成结果，不代表与艺术家原作的认证或等同。

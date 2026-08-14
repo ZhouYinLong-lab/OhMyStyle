@@ -1,0 +1,9 @@
+asset: sample.png
+status: curated_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: original geometric abstract composition
+generated_at: 2026-08-14
+review:
+  decision: accepted_as_representative
+  notes: Original arrangement used to show grid, limited color roles, flatness, and asymmetrical balance; it is not a reproduction of a named work.

@@ -1,0 +1,33 @@
+id: piet-mondrian
+name: 皮特·蒙德里安
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以网格秩序、非对称平衡和少量原色平面组织纯粹的绘画空间，强调结构关系而不是固定题材。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '二十世纪初抽象艺术与新造型主义语境'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,19 @@
+version: 1
+goal: 在不复制具体作品的前提下复现网格、色面与非对称平衡。
+sequence:
+  - 读取用户主体，将其转译为简洁的轮廓、平面或空间关系。
+  - 建立不对称的水平与垂直结构，保留不同宽度的留白。
+  - 使用暖白、黑、红、蓝、黄的有限角色分配组织重心。
+  - 检查线条、边界、比例和留白，再加入低密度纸面触感。
+constraints:
+  must:
+    - keep an asymmetrical grid logic
+    - keep color roles separated and limited
+    - preserve user-supplied subject
+  avoid:
+    - copying a known composition
+    - adding text or interface elements
+    - turning the style into a fixed abstract subject
+model_notes:
+  prompt_order: medium -> composition -> palette -> surface -> user subject
+  reference_use: Analyze line, spacing, color roles, and flatness only; do not imitate a named artwork.

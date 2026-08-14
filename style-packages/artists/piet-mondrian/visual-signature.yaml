@@ -1,0 +1,23 @@
+version: 1
+signature:
+  medium: 平面抽象绘画
+  composition: 不对称网格、少量色面、明显留白
+  palette: 暖白底、黑线、有限红蓝黄原色
+  lighting: 低戏剧、稳定明度
+  surface: 哑光纸面或画布，轻微手工触感
+  texture: 低密度、只服务于表面
+  edges: 结构线清晰，色面边界明确
+transfer:
+  preserve:
+    - 网格秩序
+    - 色面面积的克制
+    - 非对称平衡
+  release:
+    - 代表图中的具体矩形位置
+    - 抽象构成作为默认主体
+    - 任何已知作品的标题或构图
+subject_independence:
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 抽象平面构成

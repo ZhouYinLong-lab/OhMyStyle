@@ -1,0 +1,18 @@
+family: geometric-abstraction
+near_duplicates:
+  - movements/de-stijl
+complements:
+  - movements/constructivism
+  - schools/ulm-school
+same_family:
+  - movements/suprematism
+supersedes: []
+conflicts:
+  - presets/aurora-gradient-grain
+distinctives:
+  - artist-specific balance between black structure and limited primary color planes
+  - controlled asymmetry and unequal white space
+  - flat painted surface rather than generic geometric decoration
+avoid_overlap:
+  - do not turn every subject into a grid poster
+  - do not treat de stijl as interchangeable with this artist package
