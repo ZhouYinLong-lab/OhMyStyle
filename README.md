@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-257-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-261-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -179,6 +179,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/artists/salvador-dali/README.md"><img src="style-packages/artists/salvador-dali/gallery-16x9.jpg" width="460" alt="萨尔瓦多·达利代表图"></a><br><strong>萨尔瓦多·达利</strong><br><a href="style-packages/artists/salvador-dali/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/artists/francis-bacon/README.md"><img src="style-packages/artists/francis-bacon/gallery-16x9.jpg" width="460" alt="弗朗西斯·培根代表图"></a><br><strong>弗朗西斯·培根</strong><br><a href="style-packages/artists/francis-bacon/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 摄影师
@@ -265,6 +268,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/photographers/andreas-gursky/README.md"><img src="style-packages/photographers/andreas-gursky/gallery-16x9.jpg" width="460" alt="安德烈亚斯·古尔斯基代表图"></a><br><strong>安德烈亚斯·古尔斯基</strong><br><a href="style-packages/photographers/andreas-gursky/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/photographers/martin-parr/README.md"><img src="style-packages/photographers/martin-parr/gallery-16x9.jpg" width="460" alt="马丁·帕尔代表图"></a><br><strong>马丁·帕尔</strong><br><a href="style-packages/photographers/martin-parr/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -424,6 +430,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/orphism/README.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="460" alt="奥菲主义代表图"></a><br><strong>奥菲主义</strong><br><a href="style-packages/movements/orphism/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/color-field-painting/README.md"><img src="style-packages/movements/color-field-painting/gallery-16x9.jpg" width="460" alt="色域绘画代表图"></a><br><strong>色域绘画</strong><br><a href="style-packages/movements/color-field-painting/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 原创预设
@@ -537,6 +546,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/paper-cut-puppet-game-art/README.md"><img src="style-packages/game-art/paper-cut-puppet-game-art/gallery-16x9.jpg" width="460" alt="纸片木偶式二维游戏美术代表图"></a><br><strong>纸片木偶式二维游戏美术</strong><br><a href="style-packages/game-art/paper-cut-puppet-game-art/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.md"><img src="style-packages/game-art/monochrome-1bit-deduction-game-art/gallery-16x9.jpg" width="460" alt="单色一位推理游戏美术代表图"></a><br><strong>单色一位推理游戏美术</strong><br><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.md">打开 README</a></td>
 </tr>
 </table>
 

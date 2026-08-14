@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-257-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-261-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -179,6 +179,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/artists/salvador-dali/README.en.md"><img src="style-packages/artists/salvador-dali/gallery-16x9.jpg" width="460" alt="Salvador Dalí representative image"></a><br><strong>Salvador Dalí</strong><br><a href="style-packages/artists/salvador-dali/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/artists/francis-bacon/README.en.md"><img src="style-packages/artists/francis-bacon/gallery-16x9.jpg" width="460" alt="Francis Bacon representative image"></a><br><strong>Francis Bacon</strong><br><a href="style-packages/artists/francis-bacon/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Photographers
@@ -265,6 +268,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/photographers/andreas-gursky/README.en.md"><img src="style-packages/photographers/andreas-gursky/gallery-16x9.jpg" width="460" alt="Andreas Gursky representative image"></a><br><strong>Andreas Gursky</strong><br><a href="style-packages/photographers/andreas-gursky/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td colspan="2" width="100%" valign="top" align="center"><a href="style-packages/photographers/martin-parr/README.en.md"><img src="style-packages/photographers/martin-parr/gallery-16x9.jpg" width="460" alt="Martin Parr representative image"></a><br><strong>Martin Parr</strong><br><a href="style-packages/photographers/martin-parr/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -424,6 +430,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/orphism/README.en.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="460" alt="Orphism representative image"></a><br><strong>Orphism</strong><br><a href="style-packages/movements/orphism/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/movements/color-field-painting/README.en.md"><img src="style-packages/movements/color-field-painting/gallery-16x9.jpg" width="460" alt="Color Field Painting representative image"></a><br><strong>Color Field Painting</strong><br><a href="style-packages/movements/color-field-painting/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Original presets
@@ -537,6 +546,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/paper-cut-puppet-game-art/README.en.md"><img src="style-packages/game-art/paper-cut-puppet-game-art/gallery-16x9.jpg" width="460" alt="Paper-cut Puppet 2D Game Art representative image"></a><br><strong>Paper-cut Puppet 2D Game Art</strong><br><a href="style-packages/game-art/paper-cut-puppet-game-art/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.en.md"><img src="style-packages/game-art/monochrome-1bit-deduction-game-art/gallery-16x9.jpg" width="460" alt="Monochrome 1-bit Deduction Game Art representative image"></a><br><strong>Monochrome 1-bit Deduction Game Art</strong><br><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.en.md">Open README</a></td>
 </tr>
 </table>
 
