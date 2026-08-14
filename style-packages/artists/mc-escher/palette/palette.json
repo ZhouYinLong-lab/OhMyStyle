@@ -1,0 +1,11 @@
+{
+  "name": "纸本版画调色板",
+  "colors": [
+    {"name": "纸张象牙色", "hex": "#E8DFC9", "role": "support"},
+    {"name": "印墨黑", "hex": "#17191B", "role": "linework"},
+    {"name": "静谧群青", "hex": "#315B82", "role": "plane accent"},
+    {"name": "砖红", "hex": "#A84C3A", "role": "plane accent"},
+    {"name": "苔藓绿", "hex": "#5A6847", "role": "plane accent"}
+  ],
+  "notes": "Colors are deliberate roles for a restrained printed palette, not a mandatory recoloring of every subject."
+}

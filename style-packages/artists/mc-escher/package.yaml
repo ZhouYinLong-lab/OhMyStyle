@@ -1,0 +1,33 @@
+id: mc-escher
+name: 莫里茨·科内利斯·埃舍尔
+kind: artist
+domain: printmaking
+version: 0.1.0
+summary: >-
+  以精密线刻、连续镶嵌、错视空间、反射对称与几何变形组织画面，保持版画般的清晰边缘和可解释的结构秩序。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: printmaking
+  historical_context: '二十世纪版画与视觉错觉艺术'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

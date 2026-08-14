@@ -1,0 +1,38 @@
+profiles:
+  generic:
+    required:
+      - package-specific visual signature is observable
+      - composition remains coherent for a new subject
+      - no copied reference composition or branded material
+    reject_if:
+      - style is represented only by a global color filter
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - linework and spatial logic do not distort identity-critical anatomy without a clear user request
+  still_life:
+    required:
+      - objects remain identifiable while the transformation stays structurally legible
+minimum_score: 7
+
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+  distinctive_signature:
+    score: null
+    notes: "Record which visual decisions remain observable after the subject changes."
+  visual_overlap:
+    score: null
+    notes: "Compare the representative image and output with near-duplicate packages."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "No generated result is implied by this template."

@@ -1,0 +1,18 @@
+canonical_name: 莫里茨·科内利斯·埃舍尔
+entity_type: artist
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - any user-supplied subject
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - fixed staircase, belvedere, tower, animal, or landscape motif
+sources:
+  - 'https://www.kunstmuseum.nl/en/collections/escher'
+
+notes:
+  - A printmaking-oriented package built around tessellation, impossible spatial logic, and metamorphosis.
+  - The visual language transfers to portraits, objects, architecture, or abstraction without importing a recurring subject.

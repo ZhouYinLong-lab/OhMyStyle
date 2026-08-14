@@ -1,0 +1,21 @@
+composition:
+  - modular planes that interlock without losing local readability
+  - reflective symmetry or near-symmetry used as a structural device
+  - a clear metamorphic passage between two forms, surfaces, or spatial states
+palette:
+  - ivory or muted paper field with black linework
+  - two to four restrained accent colors assigned to planes, not atmospheric glow
+lighting:
+  quality: TODO
+  behavior:
+    - TODO: describe direction, softness, contrast, or atmospheric behavior.
+surface:
+  finish: printed and lightly fibrous
+  edges: engraved, crisp, and intentionally repeatable
+texture:
+  density: fine
+  placement: line hatching follows form and value; texture does not dissolve geometry
+invariants:
+  - preserve a readable geometric system
+  - preserve controlled line density and flat printed color roles
+  - preserve the logic of transformation rather than a famous motif

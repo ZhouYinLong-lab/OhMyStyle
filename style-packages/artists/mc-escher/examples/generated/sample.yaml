@@ -1,0 +1,9 @@
+asset: mc-escher-v1.png
+status: reviewed
+generator: OpenAI image generation tool
+prompt_mode: anonymous_visual_signature
+subject: 几何庭院与连续变形座椅
+generated_at: 2026-08-14
+review:
+  decision: accepted
+  notes: Original 16:9 representative image; demonstrates print-like contour, modular planes, tessellation, and impossible spatial continuity without copying a known work.

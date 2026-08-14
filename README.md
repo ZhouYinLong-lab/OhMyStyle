@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-233-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-234-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -161,7 +161,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/alphonse-mucha/README.md"><img src="style-packages/artists/alphonse-mucha/gallery-16x9.jpg" width="230" alt="阿尔丰斯·穆夏代表图"></a><br><strong>阿尔丰斯·穆夏</strong><br><a href="style-packages/artists/alphonse-mucha/README.md">打开 README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/mc-escher/README.md"><img src="style-packages/artists/mc-escher/gallery-16x9.jpg" width="230" alt="莫里茨·科内利斯·埃舍尔代表图"></a><br><strong>莫里茨·科内利斯·埃舍尔</strong><br><a href="style-packages/artists/mc-escher/README.md">打开 README</a></td>
 <td width="33%"></td>
 </tr>
 </table>

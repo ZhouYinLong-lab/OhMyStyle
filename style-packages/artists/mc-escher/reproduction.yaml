@@ -1,0 +1,18 @@
+medium: woodcut and lithograph-informed printmaking
+materials:
+  support: paper, ink, and engraved line
+process:
+  - begin with the user's subject, silhouette, and intended composition
+  - construct planes and a stable perspective scaffold
+  - add one transformation, tessellation, reflection, or impossible connection
+  - apply contour, hatching, and a limited print palette
+technical_direction:
+  contrast: medium-high
+  saturation: restrained to moderate
+  perspective: controlled, then intentionally contradictory in one region
+  detail_density: high at edges, moderate in open planes
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
