@@ -1,0 +1,18 @@
+medium: typological documentary portrait photography
+materials:
+  support: view-camera clarity, natural setting, restrained monochrome print
+process:
+  - Identify the user's subject and the visible social or material context around it.
+  - Choose a stable viewpoint and include enough environment to describe the relation.
+  - Use even light and a calm pose or arrangement; avoid theatrical direction.
+  - Finish with restrained tonal control and fine grain while retaining clothing and surface detail.
+technical_direction:
+  contrast: moderate, with open shadows and descriptive midtones
+  saturation: monochrome or restrained neutral color
+  perspective: normal lens, stable and undistorted
+  detail_density: medium, evenly distributed across subject and context
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

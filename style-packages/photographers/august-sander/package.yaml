@@ -1,0 +1,33 @@
+id: august-sander
+name: 奥古斯特·桑德
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以正面、清晰、分类式的人物与环境观察建立社会类型学，服饰、姿态、工具和地点共同参与肖像。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '二十世纪上半叶德国纪实与社会类型学摄影'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,18 @@
+canonical_name: 奥古斯特·桑德
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - user-supplied person, group, object, or place
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - mandatory worker, uniform, profession, German setting, or frontal portrait
+sources:
+  - 'https://augustsander.org/page/biography'
+
+notes:
+  - The package extracts clear frontal observation, social typology, quiet posture, and the equal importance of clothing, tools, and surroundings.
+  - The representative worker is an example only; the user's subject and social context remain authoritative.

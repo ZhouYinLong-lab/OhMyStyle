@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-243-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-244-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -240,7 +240,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/susan-meiselas/README.en.md"><img src="style-packages/photographers/susan-meiselas/gallery-16x9.jpg" width="230" alt="Susan Meiselas representative image"></a><br><strong>Susan Meiselas</strong><br><a href="style-packages/photographers/susan-meiselas/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/alec-soth/README.en.md"><img src="style-packages/photographers/alec-soth/gallery-16x9.jpg" width="230" alt="Alec Soth representative image"></a><br><strong>Alec Soth</strong><br><a href="style-packages/photographers/alec-soth/README.en.md">Open README</a></td>
-<td width="33%"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/august-sander/README.en.md"><img src="style-packages/photographers/august-sander/gallery-16x9.jpg" width="230" alt="August Sander representative image"></a><br><strong>August Sander</strong><br><a href="style-packages/photographers/august-sander/README.en.md">Open README</a></td>
 </tr>
 </table>
 

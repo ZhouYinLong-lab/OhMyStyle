@@ -1,0 +1,10 @@
+{
+  "name": "档案灰阶与自然材质",
+  "colors": [
+    {"name": "炭黑", "hex": "#242525", "role": "deep tone"},
+    {"name": "中灰", "hex": "#858585", "role": "descriptive midtone"},
+    {"name": "浅灰", "hex": "#C8C8C3", "role": "background light"},
+    {"name": "旧棕灰", "hex": "#776D61", "role": "material accent"}
+  ],
+  "notes": "默认以档案式黑白或低饱和中性色为主，重点保持衣物、工具、墙面和地面的明度差异。"
+}
