@@ -1,0 +1,11 @@
+{
+  "name": "压迫色面",
+  "colors": [
+    {"name": "脏奶油", "hex": "#C8B88B", "role": "architectural ground"},
+    {"name": "紫红", "hex": "#633D55", "role": "psychological tension"},
+    {"name": "深蓝绿", "hex": "#203B3A", "role": "structural shadow"},
+    {"name": "赭黄", "hex": "#A87939", "role": "aged warmth"},
+    {"name": "暗肉色", "hex": "#A66A61", "role": "localized organic accent"}
+  ],
+  "rules": ["颜色服务于压力和形体", "保持底层与擦刮差异", "避免统一综合色滤镜"]
+}

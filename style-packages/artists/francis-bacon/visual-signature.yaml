@@ -1,0 +1,24 @@
+visual_signature: psychologically charged figurative painting with compressed interiors, distorted contours, scraped oil layers, and tense color fields
+visual_axes:
+  composition:
+    - 框架化空间
+    - 压缩透视
+    - 具象主体中的局部变形
+  palette:
+    - 脏奶油、紫红、深蓝绿和赭黄
+    - 局部肉色冲突
+  lighting:
+    - 平直室内光
+    - 阴影承担心理压力
+  surface:
+    - 厚薄颜料并置
+    - 擦刮、覆盖和薄洗
+  texture:
+    - 可见绘画过程
+subject_independence:
+  preserve_user_subject: true
+  fixed_subjects: []
+  optional_motifs:
+    - 框架
+    - 局部轮廓偏移
+    - 压缩空间
