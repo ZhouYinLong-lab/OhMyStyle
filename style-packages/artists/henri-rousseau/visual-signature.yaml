@@ -1,0 +1,23 @@
+composition:
+  - Organize the scene in clear frontal or gently receding layers with a strong picture-plane presence.
+  - Use repeated plant, architectural, or object shapes as a decorative rhythm when the subject supplies them.
+  - Keep forms legible and slightly still; avoid photographic spontaneity as the main organizing principle.
+palette:
+  - Use vivid greens, deep blue-greens, warm ochres, coral, and cream in clean, neighboring fields.
+  - Preserve local color and even illumination; avoid atmospheric desaturation as the default depth cue.
+lighting:
+  quality: even, lucid, and minimally theatrical
+  behavior:
+    - Keep shadow transitions modest and readable, as if the scene were patiently arranged for inspection.
+    - Do not add dramatic rim light, spotlighting, or cinematic haze unless requested.
+surface:
+  finish: opaque painted surface with deliberate, slightly naive simplification
+  edges: crisp contours and clean shape boundaries with limited blending
+texture:
+  density: medium in organic clusters, low on large background fields
+  placement: repeated leaves, branches, masonry, or object marks create rhythm without becoming photorealistic noise
+invariants:
+  - flattened layered space and clear silhouette hierarchy
+  - crisp contours with simplified, opaque painted forms
+  - vivid local color under even illumination
+  - no fixed jungle, animal, traveler, or exotic narrative

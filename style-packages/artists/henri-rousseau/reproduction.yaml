@@ -1,0 +1,18 @@
+medium: decorative figurative painting with flattened perspective and simplified opaque forms
+materials:
+  support: opaque paint on a stable surface; retain clean color fields and selected tactile marks
+process:
+  - Block the user's subject into a few clear frontal or receding layers.
+  - Establish local color fields and silhouette boundaries before adding texture.
+  - Repeat organic or structural shapes only when the user's subject contains them.
+  - Add controlled brush marks and small irregularities without photorealistic detail.
+technical_direction:
+  contrast: medium, with clear adjacent color fields
+  saturation: medium-high and locally vivid
+  perspective: shallow, frontal, or gently receding; avoid wide-angle spectacle
+  detail_density: TODO
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

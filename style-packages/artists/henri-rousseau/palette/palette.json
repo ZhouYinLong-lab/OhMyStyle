@@ -1,0 +1,11 @@
+{
+  "name": "装饰性自然调色板",
+  "colors": [
+    {"name": "叶片绿", "hex": "#4F783E", "role": "dominant organic field"},
+    {"name": "深蓝绿", "hex": "#24565A", "role": "depth and contour support"},
+    {"name": "赭黄", "hex": "#C48A3B", "role": "warm structure"},
+    {"name": "珊瑚红", "hex": "#C95D48", "role": "small visual accent"},
+    {"name": "奶油白", "hex": "#EADDBB", "role": "quiet ground"}
+  ],
+  "notes": "These colors describe relationships, not mandatory objects or a fixed landscape."
+}

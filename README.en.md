@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-246-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-247-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -168,6 +168,12 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/jean-michel-basquiat/README.en.md"><img src="style-packages/artists/jean-michel-basquiat/gallery-16x9.jpg" width="230" alt="Jean-Michel Basquiat representative image"></a><br><strong>Jean-Michel Basquiat</strong><br><a href="style-packages/artists/jean-michel-basquiat/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/bridget-riley/README.en.md"><img src="style-packages/artists/bridget-riley/gallery-16x9.jpg" width="230" alt="Bridget Riley representative image"></a><br><strong>Bridget Riley</strong><br><a href="style-packages/artists/bridget-riley/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/frida-kahlo/README.en.md"><img src="style-packages/artists/frida-kahlo/gallery-16x9.jpg" width="230" alt="Frida Kahlo representative image"></a><br><strong>Frida Kahlo</strong><br><a href="style-packages/artists/frida-kahlo/README.en.md">Open README</a></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td colspan="3" width="100%" valign="top" align="center"><a href="style-packages/artists/henri-rousseau/README.en.md"><img src="style-packages/artists/henri-rousseau/gallery-16x9.jpg" width="460" alt="Henri Rousseau representative image"></a><br><strong>Henri Rousseau</strong><br><a href="style-packages/artists/henri-rousseau/README.en.md">Open README</a></td>
 </tr>
 </table>
 

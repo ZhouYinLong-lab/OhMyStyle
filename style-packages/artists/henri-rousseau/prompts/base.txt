@@ -1,0 +1,16 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Use clear frontal or gently
+receding layers, crisp contours, simplified opaque painted forms, even lucid
+illumination, vivid local color, and rhythmic repeated shapes only when they
+belong to the user's subject. Keep the picture plane decorative but readable.
+Do not add a jungle, lion, tiger, palm tree, exotic traveler, or wildlife story
+unless requested. Do not copy any reference work, named character, exact pose,
+recognizable layout, logo, or text. Keep the subject and narrative supplied by
+the user independent from the package's visual identity. Use concrete visual
+instructions rather than the package name alone.

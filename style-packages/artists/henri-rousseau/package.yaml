@@ -1,0 +1,33 @@
+id: henri-rousseau
+name: 亨利·卢梭
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以平面化形体、清晰轮廓、装饰性植物层次和均匀光线构成天真而精确的空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '十九世纪末至二十世纪初法国现代绘画'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
