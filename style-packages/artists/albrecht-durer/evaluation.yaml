@@ -1,0 +1,16 @@
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "需用用户主体进行测试；不得把代表图主体当作默认主体。"
+  distinctive_signature:
+    score: null
+    notes: ""
+  visual_overlap:
+    score: null
+    notes: ""
+  cross_subject_stability:
+    score: null
+    notes: ""
+image_audit:
+  status: pending
+  notes: "代表图为原创建的匿名演示；提交后执行资源审计。"

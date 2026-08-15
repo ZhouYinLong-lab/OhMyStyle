@@ -1,0 +1,15 @@
+priority_order:
+  - user_subject
+  - user_composition
+  - style_signature
+  - material_and_light
+rules:
+  - 'Use directional line and cross-hatching to describe form.'
+  - 'Keep the subject supplied by the user open.'
+  - 'Preserve a tactile paper or print surface without copying a known composition.'
+
+subject_independence:
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - an ordinary ceramic cup on a windowsill, anonymous still life

@@ -1,0 +1,21 @@
+{
+  "palette": [
+    {
+      "name": "warm paper",
+      "hex": "#E8D9B8"
+    },
+    {
+      "name": "carbon black",
+      "hex": "#242321"
+    },
+    {
+      "name": "iron red",
+      "hex": "#8D3E2F"
+    },
+    {
+      "name": "dry umber",
+      "hex": "#6B5138"
+    }
+  ],
+  "usage": "palette is a visual tendency, not a mandatory subject or exact color lock"
+}

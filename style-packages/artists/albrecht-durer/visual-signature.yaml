@@ -1,0 +1,18 @@
+signature:
+  - 'precise contour drawing'
+  - 'fine cross-hatching'
+  - 'structured value modeling'
+  - 'paper and plate impression'
+
+controls:
+  - 'composition'
+  - 'surface'
+  - 'texture'
+  - 'lighting'
+
+does_not_control:
+  - subject identity
+  - object count
+  - location
+  - story or narrative event
+  - text, logo, or brand
