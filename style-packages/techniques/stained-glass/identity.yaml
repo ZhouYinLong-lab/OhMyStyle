@@ -1,0 +1,16 @@
+canonical_name: 彩绘玻璃
+entity_type: technique
+domain: hybrid
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://stainedglassmuseum.com/collections'
+
+notes:
+  - '以玻璃分片、铅线分格、透光色块和投影色彩构成视觉语言。它可以服务抽象、建筑、人物或普通物体，不绑定宗教图像、教堂或固定故事。'
+  - 代表图只用于展示视觉处理，不规定用户主题。

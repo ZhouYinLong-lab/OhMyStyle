@@ -1,0 +1,19 @@
+related_movements: []
+related_concepts: []
+influences_to_review: []
+not_equivalent_to:
+  - generic color filter
+  - subject-specific composition
+
+family: light-through-material
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - 'light must pass through material'
+  - 'lead or structural divisions remain legible when requested'
+  - 'color spill has a bounded projection'
+  - 'no religious icon or fixed architecture is required'
+avoid_overlap:
+  - fixed subject, landmark, character, or narrative event
+  - copied reference composition or branded asset

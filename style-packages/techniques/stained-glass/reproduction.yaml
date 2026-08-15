@@ -1,0 +1,17 @@
+medium: translucent colored glass with leaded divisions and projected light
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+  - 'define the subject independently'
+  - 'construct the leaded geometry or material divisions'
+  - 'assign a limited glass palette'
+  - 'add transmission, edge thickness, and projected color'
+technical_direction:
+  contrast: 'moderate with luminous translucent color against controlled neutrals'
+  saturation: 'clear jewel tones moderated by glass thickness and light loss'
+  perspective: 'precise planar geometry with believable refraction and projection'
+avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, or protected game asset.

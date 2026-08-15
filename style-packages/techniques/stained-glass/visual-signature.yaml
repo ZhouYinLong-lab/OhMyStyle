@@ -1,0 +1,24 @@
+composition:
+  - '分格线建立清楚的几何骨架'
+  - '色块和光影共同组织焦点'
+  - '前后层次由透明度和投影而非景深滤镜决定'
+palette:
+  - '宝石蓝、琥珀、红和紫以有限色块出现'
+  - '透光处变亮但保留颜色密度'
+  - '中性区域用来让色块呼吸'
+lighting:
+  quality: 'backlit or side-lit daylight that casts bounded colored shadows onto nearby surfaces'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Use light as a structural and material decision, not as a fixed scene.
+surface:
+  finish: 'thick translucent glass, lead seams, slight waviness, edge thickness, and small imperfections'
+  edges: varied, deliberate edges with no copied layout
+texture:
+  density: 'medium detail at seams and glass edges, clean planes between divisions, visible but controlled color spill'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'light must pass through material'
+  - 'lead or structural divisions remain legible when requested'
+  - 'color spill has a bounded projection'
+  - 'no religious icon or fixed architecture is required'

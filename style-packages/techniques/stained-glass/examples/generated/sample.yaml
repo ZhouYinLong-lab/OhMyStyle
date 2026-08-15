@@ -1,0 +1,39 @@
+example_id: anonymous-demo
+subject: an ordinary unmarked stone placed beside colored glass panels, original anonymous material study
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: Original anonymous material study showing colored glass, lead divisions, and bounded projected light without religious imagery.
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "需用用户主体进行测试；不得把代表图主体当作默认主体。"
+  distinctive_signature:
+    score: null
+    notes: ""
+  visual_overlap:
+    score: null
+    notes: ""
+  cross_subject_stability:
+    score: null
+    notes: ""
+image_audit:
+  status: pending
+  notes: "代表图为原创建的匿名演示；提交后执行资源审计。"
+signature:
+  - 'light must pass through material'
+  - 'lead or structural divisions remain legible when requested'
+  - 'color spill has a bounded projection'
+  - 'no religious icon or fixed architecture is required'
+controls:
+  - composition
+  - palette
+  - lighting
+  - surface
+does_not_control:
+  - subject identity
+  - object count
+  - location
+  - story or narrative event
+  - text, logo, or brand

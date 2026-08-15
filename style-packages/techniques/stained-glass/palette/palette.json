@@ -1,0 +1,25 @@
+{
+  "name": "透光宝石色",
+  "colors": [
+    {
+      "name": "钴蓝玻璃",
+      "hex": "#164E82",
+      "role": "cool transparent anchor"
+    },
+    {
+      "name": "琥珀玻璃",
+      "hex": "#D08A32",
+      "role": "warm transmitted light"
+    },
+    {
+      "name": "深红玻璃",
+      "hex": "#9D3040",
+      "role": "small focal accent"
+    },
+    {
+      "name": "乳白玻璃",
+      "hex": "#E7E2D2",
+      "role": "diffusing neutral"
+    }
+  ]
+}
