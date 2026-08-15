@@ -561,6 +561,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: true
+- resource_id: kathe-kollwitz
+  name: 凯绥·珂勒惠支
+  kind: artist
+  domain: printmaking
+  package_path: style-packages/artists/kathe-kollwitz
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: katsushika-hokusai
   name: 葛饰北斋
   kind: artist
@@ -1275,6 +1292,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: japanese-cel-shaded-action-game-art
+  name: 日式赛璐珞动作游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/japanese-cel-shaded-action-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: journey-minimalist-desert
   name: 风之旅人极简沙漠游戏美术
   kind: game_art
@@ -2532,6 +2566,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: rayonism
+  name: 射线主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/rayonism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: realism
   name: 现实主义
   kind: movement
@@ -3013,6 +3064,23 @@ packages:
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/emilie-hofferber
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: ernst-haas
+  name: 恩斯特·哈斯
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/ernst-haas
   maturity: L2
   focus_dimensions:
   - camera
@@ -4247,6 +4315,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: frottage
+  name: 擦拓画法
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/frottage
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: grid-3x3
   name: 3×3 网格设计
   kind: technique
