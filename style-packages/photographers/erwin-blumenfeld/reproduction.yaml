@@ -1,0 +1,15 @@
+priority_order:
+  - user_subject
+  - user_composition
+  - style_signature
+  - material_and_light
+rules:
+  - 'Treat ordinary subjects as photographic forms that may be cropped, layered, or optically transformed.'
+  - 'Keep the result photographic rather than painterly.'
+  - 'Use controlled abstraction without turning the subject into a fixed fashion portrait.'
+
+subject_independence:
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - a folded translucent umbrella and a glass sphere on a neutral table

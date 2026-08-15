@@ -1,0 +1,11 @@
+package:
+  name: 埃尔温·布卢门菲尔德
+  source_type: photographer
+  source_url: 'https://www.moma.org/artists/618-erwin-blumenfeld'
+  source_title: 'MoMA: Erwin Blumenfeld'
+reference_policy: link_only
+rights_note: 'The cited museum record notes estate copyright for the artist; this package stores a link only, does not copy source images, and uses a new anonymous demonstration.'
+generated_demo:
+  policy: original_anonymous_scene
+  source_artwork_copied: false
+  source_assets_redistributed: false

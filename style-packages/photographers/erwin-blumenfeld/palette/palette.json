@@ -1,0 +1,25 @@
+{
+  "palette": [
+    {
+      "name": "paper white",
+      "hex": "#F1EEE5"
+    },
+    {
+      "name": "ink black",
+      "hex": "#17191D"
+    },
+    {
+      "name": "signal red",
+      "hex": "#C83B32"
+    },
+    {
+      "name": "cobalt blue",
+      "hex": "#245B9B"
+    },
+    {
+      "name": "skin amber",
+      "hex": "#C58A55"
+    }
+  ],
+  "usage": "palette is a visual tendency, not a mandatory subject or exact color lock"
+}
