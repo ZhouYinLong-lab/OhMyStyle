@@ -1,0 +1,16 @@
+canonical_name: 石内都
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.moma.org/collection/artists/8090'
+
+notes:
+  - The package studies time through worn surfaces, folds, abrasions, fading, and the quiet presence of handled objects.
+  - A supplied subject may change freely; the package transfers intimacy, distance, and material memory rather than a fixed location or biography.

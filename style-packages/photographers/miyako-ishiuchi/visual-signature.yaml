@@ -1,0 +1,21 @@
+composition:
+  - Use intimate close or medium-close framing that gives one surface or object enough room to be examined.
+  - Keep the surrounding space quiet and let cropping, folds, and small absences carry the tension.
+palette:
+  - Favor ash, paper, faded rose, oxidized brown, and muted blue; color should feel absorbed and aged rather than decorative.
+  - A restrained accent may remain, but do not impose monochrome when the supplied subject calls for color.
+lighting:
+  quality: soft available-light observation with gentle falloff
+  behavior:
+    - Reveal dents, scratches, seams, creases, and fading without theatrical spotlighting.
+    - Keep shadows quiet but deep enough to show that the material has been handled.
+surface:
+  finish: matte fine-art photographic print with a slightly aged tonal response
+  edges: natural photographic edges; close crops may cut into the subject without decorative framing
+texture:
+  density: medium visible grain and material detail
+  placement: concentrated in worn fibers, scratches, paper, skin-like surfaces, and uneven emulsion response
+invariants:
+  - Time must be legible through material wear, not through a caption or fixed historical prop.
+  - Intimacy comes from distance, crop, and surface attention rather than staged expression.
+  - The supplied subject stays authoritative and is never replaced by scars, old clothing, or a named place.

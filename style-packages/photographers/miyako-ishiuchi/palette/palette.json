@@ -1,0 +1,11 @@
+{
+  "name": "磨损表面的低饱和色阶",
+  "colors": [
+    {"name": "灰烬黑", "hex": "#343433", "role": "深部与轮廓"},
+    {"name": "纸灰", "hex": "#B8B4AA", "role": "中性基底"},
+    {"name": "褪玫红", "hex": "#A87878", "role": "受时间影响的微弱暖色"},
+    {"name": "氧化棕", "hex": "#765842", "role": "旧物与磨损痕迹"},
+    {"name": "灰蓝", "hex": "#63717A", "role": "冷静的环境色"}
+  ],
+  "notes": "The palette is a tonal tendency, not a fixed subject cue. Keep the user's material and lighting authoritative."
+}

@@ -1,0 +1,19 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply the package's observable
+medium, composition, lighting, palette, surface, and texture decisions from the
+style files. Preserve the package invariants while inventing a new scene: do not
+copy any reference work, named character, exact pose, recognizable layout, logo,
+or text. Keep the subject and narrative supplied by the user independent from
+the package's visual identity. Use intimate close or medium-close observation,
+quiet available light, soft falloff, restrained desaturation, and visible but
+controlled film grain. Let folds, scratches, seams, fading, dents, or handled
+surfaces carry the feeling of time. Keep the surrounding space sparse and do not
+invent a biography, location, scar, garment, or historical event. Add texture
+only after the tonal structure is clear. Use concrete visual instructions rather
+than the package name alone.

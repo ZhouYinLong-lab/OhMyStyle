@@ -1,0 +1,33 @@
+id: miyako-ishiuchi
+name: 石内都
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以近距离观看磨损、伤痕、织物和旧物表面，让时间在材料痕迹中显现，而不是依赖固定人物或地点。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '战后日本摄影；关注身体、记忆、居所与物件表面的时间性。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
