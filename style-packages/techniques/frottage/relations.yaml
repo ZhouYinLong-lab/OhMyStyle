@@ -1,0 +1,12 @@
+family: 物质性印刷与混合媒介
+near_duplicates: []
+same_family:
+  - techniques/mixed-media-collage
+complements:
+  - artists/max-ernst
+conflicts:
+  - presets/clean-vector-flat
+distinctives:
+  - 压力与方向造成的材料转印
+  - 纹理层与未处理纸面并置
+  - 物理粉末感而非数字噪声

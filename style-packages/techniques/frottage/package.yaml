@@ -1,0 +1,33 @@
+id: frottage
+name: 擦拓画法
+kind: technique
+domain: printmaking
+version: 0.1.0
+summary: >-
+  把纸张覆盖在有纹理的表面上进行摩擦转印，让木纹、织物、叶片和网格成为不稳定的图像结构。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: printmaking
+  historical_context: '20世纪超现实主义实验技法'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

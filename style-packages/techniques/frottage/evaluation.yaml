@@ -1,0 +1,22 @@
+version: 1
+tests:
+  - id: portrait
+    subject: 一件普通针织外套
+    checks: [纤维转印, 主体轮廓, 不生成森林]
+  - id: still-life
+    subject: 一个白色陶碗
+    checks: [压力变化, 纸面层次, 材料区分]
+  - id: environment
+    subject: 一段未指定地点的墙面
+    checks: [建筑纹理, 空白纸面, 不生成木纹]
+  - id: minimal
+    subject: 一个黑色圆形
+    checks: [局部擦拓, 边缘断续, 主体独立]
+  - id: ambiguous
+    subject: 一个无法立即命名的形体
+    checks: [纹理可替换, 叠层控制, 不生成固定景观]
+criteria:
+  subject_independence: 材料技法不替换用户主体
+  style_recognition: 压力转印、纸纤维和叠层清楚
+  prompt_following: 主体、画幅和数量符合要求
+  ai_artifact_level: 避免统一噪声、重复纹理和塑料表面

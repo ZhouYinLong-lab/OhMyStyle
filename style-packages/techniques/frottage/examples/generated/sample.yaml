@@ -1,0 +1,8 @@
+subject: 木纹、叶脉、网格与织物的材料样本
+location: 无固定地点
+aspect_ratio: 16:9
+prompt_role: 代表图用于测试擦拓压力、纹理叠层和纸面边缘，不定义默认主体。
+generated_by: anonymous-image-model
+review:
+  status: accepted
+  note: 材料来源彼此区分，叠层和纸纤维可见，未使用统一数字噪声。

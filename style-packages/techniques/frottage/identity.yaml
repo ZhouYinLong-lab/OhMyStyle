@@ -1,0 +1,16 @@
+canonical_name: 擦拓画法
+entity_type: visual_technique
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；纹理来源是可替换的材料方法，不是固定物件。
+  subjects: []
+  exclusions:
+    - 固定树叶、木板、石头或森林题材
+    - 把普通颗粒滤镜当作擦拓纹理
+    - 复制具体艺术作品、构图或文字
+sources:
+  - 'https://www.modernamuseet.se/en/stockholm/exhibitions/max-ernst/collage-frottage-grattage/'
+notes:
+  - 通过纸张与下方纹理表面的摩擦转移建立偶然、断裂而可控制的图像层。
+  - 压力、方向、纸张厚度和叠层顺序共同决定纹理，而不是后期统一加噪声。
