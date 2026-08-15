@@ -1,0 +1,17 @@
+medium: hand-drawn 2D game illustration and animation-ready background art
+materials:
+  support: painted digital layers with paper-like brush response
+process:
+  - 先确定可游玩空间的轮廓、移动方向和主体可读性。
+  - 再用大色面、柔和轮廓和前中后景层次建立环境。
+  - 最后加入少量手绘纹理、互动亮点和局部动画暗示，避免细节淹没形状。
+technical_direction:
+  contrast: medium with soft separation between planes
+  saturation: warm and varied, never globally neon
+  perspective: readable side-view or three-quarter game-space perspective
+  detail_density: moderate; focal gameplay elements receive the clearest detail
+avoid:
+  - mandatory boat, ocean, cat, ghost, or named character
+  - photorealistic rendering, generic anime key art, or hard cel-shading
+  - copied game screenshot, logo, interface, or dialogue box
+safety_note: Do not reproduce a specific game screenshot, recognizable character, logo, or branded layout.

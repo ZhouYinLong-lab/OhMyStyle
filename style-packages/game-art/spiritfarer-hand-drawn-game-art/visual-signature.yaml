@@ -1,0 +1,21 @@
+composition:
+  - 以清晰的前中后景、可读的轮廓和适合横向移动的层次组织画面。
+  - 让主体与环境共享形状语言，保留可供角色、道具或互动元素使用的空间。
+palette:
+  - 使用暖米色、珊瑚、海蓝、苔绿和深紫等柔和但有层次的颜色。
+  - 冷暖关系清晰，避免统一高饱和滤镜或只靠黑色描边分离主体。
+lighting:
+  quality: soft illustrated daylight or warm interior light
+  behavior:
+    - 光线通过大色面、柔和渐变和局部亮点表达，不追求写实摄影阴影。
+    - 关键互动区域可以有温暖的小型光源，但不要自动加入灯笼或船舱。
+surface:
+  finish: hand-drawn 2D illustration with painted fills and animation-ready shapes
+  edges: expressive contour with controlled softness; clean silhouettes at gameplay scale
+texture:
+  density: low_to_medium
+  placement: subtle brush variation in backgrounds, clothing, foliage, and large surfaces
+invariants:
+  - 手绘二维形状、柔和色彩和可读的游戏空间在更换主体后仍然成立。
+  - 不要求船、海、灵魂、猫、角色或特定地图。
+  - 叙事氛围可以温暖，但视觉包不替用户决定故事。

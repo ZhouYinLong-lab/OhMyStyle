@@ -1,0 +1,35 @@
+profiles:
+  generic:
+    required:
+      - hand-drawn 2D shape language and game-space readability are observable
+      - user-supplied subject remains independent
+      - no copied game screenshot or branded material
+    reject_if:
+      - output is photorealistic or only a generic warm filter
+      - default boat, ocean, cat, or named character appears without request
+  portrait:
+    required:
+      - requested character remains readable at gameplay scale
+  still_life:
+    required:
+      - painted surface and object silhouette remain distinct
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
+  distinctive_signature:
+    score: null
+    notes: Record shape language, game-space readability, palette, and brush response.
+  visual_overlap:
+    score: null
+    notes: Compare with watercolor storybook and hand-inked game-art packages.
+  cross_subject_stability:
+    score: null
+    notes: Do not mark complete without outputs for at least two different subjects.
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building

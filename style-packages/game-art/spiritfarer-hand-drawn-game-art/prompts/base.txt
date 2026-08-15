@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: hand-drawn 2D medium, shape language,
+  game-space readability, palette, light, surface, and texture.
+- Do not add a recurring boat, ocean, cat, spirit, character, or narrative motif
+  unless the user explicitly requests it.
+
+Create a new game-art image of {SUBJECT} in {LOCATION}. Use hand-drawn 2D shapes,
+soft expressive contours, painted fills, a readable side-view or three-quarter game
+space, and clear foreground/midground/background separation. Use a warm varied palette
+with muted blue, coral, moss green, and deep violet relationships. Add subtle brush
+variation and a few interaction-friendly highlights, but keep silhouettes readable
+at gameplay scale. Preserve the user-supplied subject and setting; do not copy a
+game screenshot, named character, logo, interface, or dialogue box.

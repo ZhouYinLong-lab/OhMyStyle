@@ -1,0 +1,15 @@
+canonical_name: 灵魂旅人手绘游戏美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点和玩法情境优先；本包只转译手绘二维媒介、形状设计、色彩层次和动画感，不规定船、角色或海上旅程。
+  subjects: []
+  exclusions:
+    - named game character
+    - copied game screenshot or branded asset
+sources:
+  - 'https://store.steampowered.com/app/972660/Spiritfarer/'
+notes:
+  - 研究手绘线条、柔和轮廓、温暖色彩和二维动画中的形状节奏。
+  - 游戏名称只说明参考来源，不是每次生成都必须出现的题材。
