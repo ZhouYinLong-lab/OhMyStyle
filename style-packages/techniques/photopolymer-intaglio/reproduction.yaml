@@ -1,0 +1,17 @@
+medium: photopolymer intaglio printmaking
+materials:
+  support: light-sensitive polymer plate and damp printmaking paper
+process:
+  - prepare a high-quality tonal source from the user-supplied subject
+  - expose and develop the polymer plate so tonal information becomes recessed plate structure
+  - ink, wipe, and press the plate into damp paper, retaining grain and pressure variation
+technical_direction:
+  contrast: moderate with rich midtones
+  saturation: restrained or monochrome
+  perspective: follows the user-supplied source
+  detail_density: fine in tonal transitions, moderate in broad masses
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

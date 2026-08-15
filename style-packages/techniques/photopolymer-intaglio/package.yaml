@@ -1,0 +1,33 @@
+id: photopolymer-intaglio
+name: 光聚合物凹版印刷
+kind: technique
+domain: printmaking
+version: 0.1.0
+summary: >-
+  以感光聚合物版承接影像或连续调信息，再通过凹版上墨和压印获得细密网点、柔和灰阶与纸张压痕。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: printmaking
+  historical_context: '摄影与非腐蚀性凹版印刷交叉形成的现代版画流程。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

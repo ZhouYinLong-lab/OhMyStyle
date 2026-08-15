@@ -1,0 +1,20 @@
+composition:
+  - Preserve the user-supplied image structure while allowing continuous tones to break into granular plate information.
+  - Keep broad tonal masses readable and let the fine detail gather in edges, shadows, and selected transitions.
+palette:
+  - Favor graphite, sepia, blue-black, or restrained process colors on a warm paper ground.
+  - Let ink density and paper absorbency carry the tonal range rather than a digital gradient.
+lighting:
+  quality: direct print light with visible paper relief
+  behavior:
+    - Keep the paper and ink film readable; do not light the print like a glossy photograph.
+surface:
+  finish: pressed intaglio paper with fine halftone and wiped plate character
+  edges: crisp in important tonal transitions with slight plate and paper irregularity
+texture:
+  density: fine and continuous in tonal areas
+  placement: concentrated in shadows, gradients, and photographic detail
+invariants:
+  - continuous-tone information translated into plate grain
+  - wiped intaglio ink and paper pressure
+  - restrained process color over a tactile ground
