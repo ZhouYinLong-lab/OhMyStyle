@@ -916,6 +916,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: peter-paul-rubens
+  name: 彼得·保罗·鲁本斯
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/peter-paul-rubens
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: pierre-auguste-renoir
   name: 皮埃尔-奥古斯特·雷诺阿
   kind: artist
@@ -1847,6 +1864,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: shadow-of-the-colossus-atmospheric-3d
+  name: 巨像之影荒原三维游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/shadow-of-the-colossus-atmospheric-3d
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: side-scrolling-platformer-pixel
   name: 横版平台跳跃像素美术
   kind: game_art
@@ -3002,6 +3036,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: pictorialism
+  name: 画意摄影
+  kind: movement
+  domain: photography
+  package_path: style-packages/movements/pictorialism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: pointillism
   name: 点彩画法
   kind: movement
@@ -3798,6 +3849,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: helen-levitt
+  name: 海伦·莱维特
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/helen-levitt
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: henri-cartier-bresson
   name: 亨利·卡蒂埃-布列松
   kind: photographer
@@ -5358,6 +5426,22 @@ packages:
   kind: technique
   domain: printmaking
   package_path: style-packages/techniques/frottage
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: gelatin-silver-print
+  name: 明胶银盐印相
+  kind: technique
+  domain: photography
+  package_path: style-packages/techniques/gelatin-silver-print
   maturity: L2
   focus_dimensions:
   - medium
