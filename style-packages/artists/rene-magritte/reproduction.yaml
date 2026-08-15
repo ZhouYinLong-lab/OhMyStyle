@@ -1,0 +1,15 @@
+medium: naturalistic surrealist painting
+materials:
+  support: matte painted canvas or paper
+process:
+  - establish the user subject; render it naturally; introduce one controlled perceptual mismatch; check subject independence
+technical_direction:
+  contrast: moderate and stable
+  saturation: restrained with clean color fields
+  perspective: coherent with one deliberate contradiction
+  detail_density: selective and precise
+avoid:
+  - fixed subject, location, character, or story not requested by the user
+  - generic global color filter without process evidence
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

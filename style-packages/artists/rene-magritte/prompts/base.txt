@@ -1,0 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.
+- Do not add recurring objects, settings, characters, landmarks, or narrative motifs unless explicitly requested.
+
+Create a new image of {SUBJECT} in {LOCATION}. Use a calm naturalistic painted surface, sparse theatrical staging, precise silhouettes, restrained modeling, and one carefully designed perceptual dislocation between scale, reflection, or spatial relation. Keep the user's subject and location recognizable. Use cool blue, warm cream, muted green, charcoal, and one controlled accent when appropriate. Invent a new scene; do not copy a reference work, named character, exact pose, logo, or text.
+Keep the user's subject and narrative independent from the package's visual identity.

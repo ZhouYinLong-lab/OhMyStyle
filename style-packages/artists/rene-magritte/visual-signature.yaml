@@ -1,0 +1,16 @@
+composition:
+  - quiet stage-like space; one controlled contradiction of scale, reflection, or adjacency; no fixed prop
+palette:
+  - clean sky blue, warm cream, gray-green, charcoal, and one restrained accent
+lighting:
+  quality: even, calm modeling with minimal dramatic shadow
+  behavior:
+    - Use light and value to preserve the user's subject rather than add a fixed scene.
+surface:
+  finish: smooth matte painted surface with precise naturalistic silhouettes
+  edges: precise enough to preserve the requested subject
+texture:
+  density: low density; material-specific texture only
+  placement: follow material and process; never become a uniform overlay
+invariants:
+  - ordinary subject remains identifiable; visual contradiction survives a subject change; no named motif is forced
