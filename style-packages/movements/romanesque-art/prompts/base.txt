@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- - 厚重、稳定、近乎建筑性的形体
+- 正面秩序与简化比例
+- 赭红、矿物蓝、灰绿和旧金色
+- 清晰轮廓、平面色块与有限空间深度
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先建立正面构图和坚实轮廓
+- 用有限矿物色组织大色块
+- 压缩透视并强化形体重量
+- 以少量纹理和边缘变化补充手工表面
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

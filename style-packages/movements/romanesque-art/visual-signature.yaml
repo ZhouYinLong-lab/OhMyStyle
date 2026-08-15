@@ -1,0 +1,23 @@
+schema_version: 1.0.0
+composition:
+- 厚重、稳定、近乎建筑性的形体
+- 正面秩序与简化比例
+palette:
+- 正面秩序与简化比例
+- 赭红、矿物蓝、灰绿和旧金色
+lighting:
+  quality: 赭红、矿物蓝、灰绿和旧金色
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 清晰轮廓、平面色块与有限空间深度
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- architectural weight
+- frontal simplified form
+- mineral-color surface
+- the requested subject stays unchanged

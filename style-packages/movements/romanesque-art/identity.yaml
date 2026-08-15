@@ -1,0 +1,13 @@
+canonical_name: 罗马式艺术
+entity_type: movement
+domain: painting
+historical_context: 十一至十二世纪西欧中世纪艺术
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character or branded asset
+sources:
+- https://www.metmuseum.org/ko/essays/romanesque-art

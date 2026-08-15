@@ -1,0 +1,18 @@
+medium: 十一至十二世纪西欧中世纪艺术 绘画与装饰艺术
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+- 先建立正面构图和坚实轮廓
+- 用有限矿物色组织大色块
+- 压缩透视并强化形体重量
+- 以少量纹理和边缘变化补充手工表面
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+  game asset.
