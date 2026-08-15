@@ -192,6 +192,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/louise-bourgeois/README.md"><img src="style-packages/artists/louise-bourgeois/gallery-16x9.jpg" width="230" alt="路易丝·布尔乔亚代表图"></a><br><strong>路易丝·布尔乔亚</strong><br><a href="style-packages/artists/louise-bourgeois/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/moholy-nagy/README.md"><img src="style-packages/artists/moholy-nagy/gallery-16x9.jpg" width="230" alt="拉斯洛·莫霍利-纳吉代表图"></a><br><strong>拉斯洛·莫霍利-纳吉</strong><br><a href="style-packages/artists/moholy-nagy/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/yves-klein/README.md"><img src="style-packages/artists/yves-klein/gallery-16x9.jpg" width="230" alt="伊夫·克莱因代表图"></a><br><strong>伊夫·克莱因</strong><br><a href="style-packages/artists/yves-klein/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 摄影师
@@ -291,6 +294,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/raghubir-singh/README.md"><img src="style-packages/photographers/raghubir-singh/gallery-16x9.jpg" width="230" alt="拉古比尔·辛格代表图"></a><br><strong>拉古比尔·辛格</strong><br><a href="style-packages/photographers/raghubir-singh/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/sally-mann/README.md"><img src="style-packages/photographers/sally-mann/gallery-16x9.jpg" width="230" alt="萨莉·曼代表图"></a><br><strong>萨莉·曼</strong><br><a href="style-packages/photographers/sally-mann/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/luigi-ghirri/README.md"><img src="style-packages/photographers/luigi-ghirri/gallery-16x9.jpg" width="230" alt="路易吉·吉里代表图"></a><br><strong>路易吉·吉里</strong><br><a href="style-packages/photographers/luigi-ghirri/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/shomei-tomatsu/README.md"><img src="style-packages/photographers/shomei-tomatsu/gallery-16x9.jpg" width="230" alt="东松照明代表图"></a><br><strong>东松照明</strong><br><a href="style-packages/photographers/shomei-tomatsu/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -469,6 +475,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/mughal-miniature-painting/README.md"><img src="style-packages/movements/mughal-miniature-painting/gallery-16x9.jpg" width="230" alt="莫卧儿细密画代表图"></a><br><strong>莫卧儿细密画</strong><br><a href="style-packages/movements/mughal-miniature-painting/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/vorticism/README.md"><img src="style-packages/movements/vorticism/gallery-16x9.jpg" width="230" alt="旋涡主义代表图"></a><br><strong>旋涡主义</strong><br><a href="style-packages/movements/vorticism/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -588,6 +595,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-isometric-strategy/README.md"><img src="style-packages/game-art/hand-painted-isometric-strategy/gallery-16x9.jpg" width="230" alt="等距手绘策略游戏美术代表图"></a><br><strong>等距手绘策略游戏美术</strong><br><a href="style-packages/game-art/hand-painted-isometric-strategy/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.md"><img src="style-packages/game-art/spiritfarer-hand-drawn-game-art/gallery-16x9.jpg" width="230" alt="灵魂旅人手绘游戏美术代表图"></a><br><strong>灵魂旅人手绘游戏美术</strong><br><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.md"><img src="style-packages/game-art/pentiment-medieval-manuscript-game-art/gallery-16x9.jpg" width="230" alt="潘提曼中世纪手稿游戏美术代表图"></a><br><strong>潘提曼中世纪手稿游戏美术</strong><br><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -643,6 +651,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/monotype-printmaking/README.md"><img src="style-packages/techniques/monotype-printmaking/gallery-16x9.jpg" width="230" alt="单版画代表图"></a><br><strong>单版画</strong><br><a href="style-packages/techniques/monotype-printmaking/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/platinum-palladium-printing/README.md"><img src="style-packages/techniques/platinum-palladium-printing/gallery-16x9.jpg" width="230" alt="铂钯印相代表图"></a><br><strong>铂钯印相</strong><br><a href="style-packages/techniques/platinum-palladium-printing/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/ebru-paper-marbling/README.md"><img src="style-packages/techniques/ebru-paper-marbling/gallery-16x9.jpg" width="230" alt="水面浮彩纸张纹样代表图"></a><br><strong>水面浮彩纸张纹样</strong><br><a href="style-packages/techniques/ebru-paper-marbling/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/albumen-printing/README.md"><img src="style-packages/techniques/albumen-printing/gallery-16x9.jpg" width="230" alt="蛋白印相代表图"></a><br><strong>蛋白印相</strong><br><a href="style-packages/techniques/albumen-printing/README.md">打开 README</a></td>
 </tr>
 </table>
 

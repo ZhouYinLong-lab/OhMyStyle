@@ -192,6 +192,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/louise-bourgeois/README.en.md"><img src="style-packages/artists/louise-bourgeois/gallery-16x9.jpg" width="230" alt="Louise Bourgeois representative image"></a><br><strong>Louise Bourgeois</strong><br><a href="style-packages/artists/louise-bourgeois/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/moholy-nagy/README.en.md"><img src="style-packages/artists/moholy-nagy/gallery-16x9.jpg" width="230" alt="László Moholy-Nagy representative image"></a><br><strong>László Moholy-Nagy</strong><br><a href="style-packages/artists/moholy-nagy/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/yves-klein/README.en.md"><img src="style-packages/artists/yves-klein/gallery-16x9.jpg" width="230" alt="Yves Klein representative image"></a><br><strong>Yves Klein</strong><br><a href="style-packages/artists/yves-klein/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Photographers
@@ -291,6 +294,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/raghubir-singh/README.en.md"><img src="style-packages/photographers/raghubir-singh/gallery-16x9.jpg" width="230" alt="Raghubir Singh representative"></a><br><strong>Raghubir Singh</strong><br><a href="style-packages/photographers/raghubir-singh/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/sally-mann/README.en.md"><img src="style-packages/photographers/sally-mann/gallery-16x9.jpg" width="230" alt="Sally Mann representative image"></a><br><strong>Sally Mann</strong><br><a href="style-packages/photographers/sally-mann/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/luigi-ghirri/README.en.md"><img src="style-packages/photographers/luigi-ghirri/gallery-16x9.jpg" width="230" alt="Luigi Ghirri representative image"></a><br><strong>Luigi Ghirri</strong><br><a href="style-packages/photographers/luigi-ghirri/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/shomei-tomatsu/README.en.md"><img src="style-packages/photographers/shomei-tomatsu/gallery-16x9.jpg" width="230" alt="Shomei Tomatsu representative image"></a><br><strong>Shomei Tomatsu</strong><br><a href="style-packages/photographers/shomei-tomatsu/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -469,6 +475,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/mughal-miniature-painting/README.en.md"><img src="style-packages/movements/mughal-miniature-painting/gallery-16x9.jpg" width="230" alt="Mughal Miniature Painting representative image"></a><br><strong>Mughal Miniature Painting</strong><br><a href="style-packages/movements/mughal-miniature-painting/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/vorticism/README.en.md"><img src="style-packages/movements/vorticism/gallery-16x9.jpg" width="230" alt="Vorticism representative image"></a><br><strong>Vorticism</strong><br><a href="style-packages/movements/vorticism/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -588,6 +595,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-isometric-strategy/README.en.md"><img src="style-packages/game-art/hand-painted-isometric-strategy/gallery-16x9.jpg" width="230" alt="Hand-Painted Isometric Strategy Game Art representative image"></a><br><strong>Hand-Painted Isometric Strategy Game Art</strong><br><a href="style-packages/game-art/hand-painted-isometric-strategy/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.en.md"><img src="style-packages/game-art/spiritfarer-hand-drawn-game-art/gallery-16x9.jpg" width="230" alt="Spiritfarer Hand-Drawn Game Art representative image"></a><br><strong>Spiritfarer Hand-Drawn Game Art</strong><br><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.en.md"><img src="style-packages/game-art/pentiment-medieval-manuscript-game-art/gallery-16x9.jpg" width="230" alt="Pentiment Medieval Manuscript Game Art representative image"></a><br><strong>Pentiment Medieval Manuscript Game Art</strong><br><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -643,6 +651,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/monotype-printmaking/README.en.md"><img src="style-packages/techniques/monotype-printmaking/gallery-16x9.jpg" width="230" alt="Monotype Printmaking representative"></a><br><strong>Monotype Printmaking</strong><br><a href="style-packages/techniques/monotype-printmaking/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/platinum-palladium-printing/README.en.md"><img src="style-packages/techniques/platinum-palladium-printing/gallery-16x9.jpg" width="230" alt="Platinum–Palladium Printing representative image"></a><br><strong>Platinum–Palladium Printing</strong><br><a href="style-packages/techniques/platinum-palladium-printing/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/ebru-paper-marbling/README.en.md"><img src="style-packages/techniques/ebru-paper-marbling/gallery-16x9.jpg" width="230" alt="Ebru Paper Marbling representative image"></a><br><strong>Ebru Paper Marbling</strong><br><a href="style-packages/techniques/ebru-paper-marbling/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/albumen-printing/README.en.md"><img src="style-packages/techniques/albumen-printing/gallery-16x9.jpg" width="230" alt="Albumen Printing representative image"></a><br><strong>Albumen Printing</strong><br><a href="style-packages/techniques/albumen-printing/README.en.md">Open README</a></td>
 </tr>
 </table>
 
