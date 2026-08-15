@@ -1,0 +1,24 @@
+composition:
+  - 以不规则的材料区域和手势压力组织画面，不依赖几何网格或中心主体。
+  - 保留局部空白与密集堆积的张力，让视线沿着刮擦和断裂移动。
+palette:
+  - 以炭黑、土褐、石灰白和锈红形成低饱和材料色，暖色只在厚重区域出现。
+lighting:
+  quality: raking museum light
+  behavior:
+    - 侧向光强调真实起伏和擦痕，但不制造舞台式戏剧光。
+surface:
+  finish: thick mineral and wax-like matter on a matte support
+  edges: torn, scraped, feathered, and partially buried
+texture:
+  density: high and materially varied
+  placement: concentrated in ridges, seams, abrasions, and layered transitions
+invariants:
+  - 材料厚度和施力方向必须比装饰性图案更重要。
+  - 非几何不等于随机噪声；每处堆积都应保留手势或侵蚀的痕迹。
+  - 不复制具体艺术家的画面、符号或作品构图。
+anti_signatures:
+  - clean geometric abstraction
+  - generic grunge texture overlay
+  - smooth digital gradient
+  - recognizable object hidden in the material

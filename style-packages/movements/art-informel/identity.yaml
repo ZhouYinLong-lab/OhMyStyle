@@ -1,0 +1,20 @@
+canonical_name: 非形式艺术
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 非具象材料绘画表面
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.guggenheim-bilbao.eus/en/exhibitions/painterly-abstraction-1949-1969-selections-from-the-guggenheim-collections'
+
+notes:
+  - 关注战后欧洲抽象中的材料性、手势、侵蚀和非几何结构。
+  - 代表图是材料表面测试，不规定后续必须生成抽象画布。

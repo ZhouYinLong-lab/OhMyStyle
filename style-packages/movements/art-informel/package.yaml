@@ -1,0 +1,33 @@
+id: art-informel
+name: 非形式艺术
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  以反几何构成、偶发痕迹、材料厚度和松散手势拒绝整齐的形式秩序。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: painting
+  historical_context: '二战后欧洲艺术'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

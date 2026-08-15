@@ -1,0 +1,23 @@
+medium: postwar material abstraction with matter painting logic
+materials:
+  support: canvas, board, paper, plaster, or user-specified surface
+  tools:
+    - palette knife
+    - dry brush and scraper
+    - sand, chalk, wax, or mineral-like aggregate
+process:
+  - Preserve the user's subject or surface arrangement before adding material treatment.
+  - Establish a restrained earth-and-charcoal ground.
+  - Build irregular deposits, scraped passages, seams, and buried layers.
+  - Use one or two directional gestures to create pressure and movement.
+  - Reduce accidental symbols, text, and decorative geometry while keeping material evidence.
+technical_direction:
+  contrast: medium, with deep cavities and chalky highlights
+  saturation: low to medium, concentrated in rust, ochre, or muted blue-gray
+  perspective: preserve user perspective when the subject is representational; flatten only the surface treatment
+  detail_density: dense tactile detail with several quiet intervals
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

@@ -1,0 +1,13 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls material pressure, surface relief, palette, and edge behavior only.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Preserve the user's subject and
+spatial logic, then apply a postwar material-abstraction treatment: irregular deposits
+of mineral-like matter, scraped passages, buried layers, seams, and visible hand
+pressure. Use charcoal, chalk, earth brown, and restrained rust accents. Organize the
+surface with several quiet intervals and one or two directional gestures. If the user
+requests a recognizable subject, keep its main identity readable beneath the material.
+Do not add an abstract canvas, ruins, cracks, symbols, text, or copied composition.

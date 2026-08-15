@@ -1,0 +1,3 @@
+fixed abstract canvas, fixed wall, fixed ruins, fixed cracks, geometric grid, clean vector,
+generic grunge overlay, digital noise, smooth gradient, neon, logo, readable text, watermark,
+signature, copied artwork, extra objects, duplicate objects, subject erasure
