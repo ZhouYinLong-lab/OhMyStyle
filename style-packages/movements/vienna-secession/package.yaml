@@ -1,0 +1,33 @@
+id: vienna-secession
+name: 维也纳分离派
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以平面装饰、几何秩序、象征性图形和建筑—平面—工艺的整体关系组织画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: design
+  historical_context: '1897年起的维也纳现代艺术运动，连接绘画、建筑、平面设计与装饰艺术。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
