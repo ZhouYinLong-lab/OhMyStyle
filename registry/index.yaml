@@ -1122,6 +1122,22 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: yves-klein
+  name: 伊夫·克莱因
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/yves-klein
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: breath-of-the-wild-open-world
   name: 旷野自然开放世界游戏美术
   kind: game_art
@@ -1666,6 +1682,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: pentiment-medieval-manuscript-game-art
+  name: 潘提曼中世纪手稿游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/pentiment-medieval-manuscript-game-art
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: ps1-survival-horror-low-poly
   name: 早期三维生存恐怖游戏美术
   kind: game_art
@@ -3263,6 +3296,22 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: vorticism
+  name: 旋涡主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/vorticism
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: alec-soth
   name: 亚历克·索思
   kind: photographer
@@ -4113,6 +4162,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: shomei-tomatsu
+  name: 东松照明
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/shomei-tomatsu
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: stephen-shore
   name: 斯蒂芬·肖尔
   kind: photographer
@@ -4890,6 +4955,22 @@ packages:
   focus_dimensions:
   - medium
   - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: albumen-printing
+  name: 蛋白印相
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/albumen-printing
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - palette
   - lighting
   - surface
   - texture
