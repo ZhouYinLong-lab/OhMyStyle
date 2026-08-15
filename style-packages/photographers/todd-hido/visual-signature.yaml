@@ -1,0 +1,24 @@
+composition:
+  - 以远距离、略偏置的视点保留大片安静天空或路面，让普通地点显得悬置。
+  - 主体通常位于中远景，边缘建筑、树木或道路承担空间锚点。
+palette:
+  - 冷蓝灰环境与少量窗内暖黄形成克制对照，避免糖果色或旅游宣传色。
+lighting:
+  quality: blue-hour ambient light with isolated practical warmth
+  behavior:
+    - 天空和路面保持均匀低照度，暖光只来自场景中真实存在的灯窗或灯具。
+surface:
+  finish: restrained color negative or film-like photographic finish
+  edges: natural softening from distance, not artificial blur
+texture:
+  density: low to medium film grain
+  placement: evenly distributed, with wet surfaces retaining readable reflection
+invariants:
+  - 普通主体必须保持可辨，气氛来自距离、光线和等待感。
+  - 冷暖关系来自场景光源，不使用全局青橙滤镜。
+  - 不复制具体住宅、道路或摄影作品的构图。
+anti_signatures:
+  - dramatic cinematic poster lighting
+  - generic teal-and-orange grade
+  - landmark-centered travel photography
+  - invented text or signage

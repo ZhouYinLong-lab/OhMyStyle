@@ -1,0 +1,20 @@
+canonical_name: 托德·海多
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 雨后郊区建筑
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.toddhido.com/info'
+
+notes:
+  - 关注郊区边缘、蓝调时刻、远距离观看和室内外暖冷关系。
+  - 代表图中的低矮建筑只是测试主体，不是固定场景。

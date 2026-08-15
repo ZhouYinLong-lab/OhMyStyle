@@ -1,0 +1,3 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+todd-hido-primary-source,,Information,Todd Hido,,https://www.toddhido.com/info,link_only,研究来源：摄影师官方网站；本包为独立视觉分析。,primary,仅保留链接，不打包外部作品。
+todd-hido-secondary,,Outskirts,Todd Hido,,https://www.toddhido.com/outskirts.html,link_only,研究来源：摄影师官方网站作品目录；本包不复制具体照片。,secondary,用于观察郊区边缘与夜间光线的处理。

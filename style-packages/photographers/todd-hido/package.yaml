@@ -1,0 +1,33 @@
+id: todd-hido
+name: 托德·海多
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以蓝调时刻、住宅边缘和窗内暖光把日常郊区拍成含蓄而悬置的记忆。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '当代美国摄影'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

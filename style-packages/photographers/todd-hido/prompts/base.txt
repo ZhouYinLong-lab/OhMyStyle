@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls photographic distance, ambient light, palette, surface,
+  and grain only.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Use a patient, detached observational
+viewpoint with generous quiet space and calm spatial compression. Render cool blue-gray
+ambient light, protected shadow detail, and only small warm practical lights that already
+belong to the user's scene. If the ground is wet, show restrained reflections; otherwise
+do not add rain or water. Add subtle even film grain and natural distance softness, never
+a global teal-orange grade. Preserve the supplied subject, location, and narrative. Do
+not add houses, roads, windows, people, signs, logos, or a copied composition.
