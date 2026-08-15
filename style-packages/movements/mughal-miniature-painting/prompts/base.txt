@@ -1,0 +1,13 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: paper support, contour, layered space,
+  opaque color, fine detail, and restrained illumination.
+- Do not add a recurring court, palace, hunt, garden, animal, or script motif unless
+  the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION} as a carefully worked miniature
+painting on warm burnished paper. Use precise ink contours, shallow layered space,
+clear planes, selective scale shifts, opaque mineral-like colors, and dense detail
+only at focal areas. Keep open ground around the details and use a very restrained
+gold-like accent if it supports hierarchy. Preserve the user-supplied subject and
+narrative; do not copy a manuscript folio, historical person, logo, or text.

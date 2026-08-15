@@ -1,0 +1,17 @@
+medium: opaque watercolor and ink on burnished paper
+materials:
+  support: warm paper with a subtle burnished surface; optional restrained metallic accent
+process:
+  - 先建立边框、分层平面和主体轮廓，保持空间层级清楚。
+  - 再用不透明色块和细线逐层添加材质、服饰、植物或建筑细节。
+  - 最后以少量亮色或金色样细节强调节奏，并控制空白区域的呼吸感。
+technical_direction:
+  contrast: medium with crisp local separations
+  saturation: mineral and jewel-like but paper-absorbed
+  perspective: layered shallow space with selective scale shifts
+  detail_density: high in focal details, restrained elsewhere
+avoid:
+  - mandatory palace, royal hunt, garden, animal, or calligraphic text
+  - glossy digital illustration, photorealistic lens blur, or 3D rendering
+  - copying a specific manuscript folio or historical figure
+safety_note: Do not reproduce a specific folio, recognizable historical figure, logo, or branded layout.

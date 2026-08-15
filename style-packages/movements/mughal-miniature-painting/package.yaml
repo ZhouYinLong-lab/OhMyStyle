@@ -1,0 +1,33 @@
+id: mughal-miniature-painting
+name: 莫卧儿细密画
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  以细密笔触、清晰轮廓、层叠空间、平面化色块与精确自然观察组织画面，保留纸本、矿物色和金色装饰的手工感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: painting
+  historical_context: '十六至十九世纪南亚宫廷绘画'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

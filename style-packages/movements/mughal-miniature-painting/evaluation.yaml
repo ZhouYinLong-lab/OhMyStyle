@@ -1,0 +1,35 @@
+profiles:
+  generic:
+    required:
+      - paper-like support, precise contour, and layered shallow space are observable
+      - local detail remains subordinate to a clear hierarchy
+      - no copied folio or branded material
+    reject_if:
+      - output is only an ornamental color filter
+      - default subject is palace, court, hunt, or garden without user request
+  portrait:
+    required:
+      - requested person remains the subject and is not replaced by a historical figure
+  still_life:
+    required:
+      - paper, ink, and opaque color remain distinguishable
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
+  distinctive_signature:
+    score: null
+    notes: Record contour precision, shallow layering, paper support, and detail hierarchy.
+  visual_overlap:
+    score: null
+    notes: Compare with Chinese literati ink painting and ukiyo-e without collapsing their media differences.
+  cross_subject_stability:
+    score: null
+    notes: Do not mark complete without outputs for at least two different subjects.
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building

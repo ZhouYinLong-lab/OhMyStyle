@@ -1,0 +1,21 @@
+composition:
+  - 用分层平面、窄边框、局部剖面和清晰轮廓组织空间，允许多个尺度同时存在。
+  - 细节密集但层级明确，远近关系通过重叠、色值和边框而非强烈透视表达。
+palette:
+  - 矿物感红、青绿、靛蓝、米色、棕色和少量金色形成清晰而克制的色块。
+  - 颜色可以明亮，但保持纸面吸收和手工调色的微小差异。
+lighting:
+  quality: even manuscript illumination with selective modeled volume
+  behavior:
+    - 光线均匀，局部以细小明暗塑造体积，不使用电影式强光束。
+    - 金色或亮色只强调边框、细节和层次，不把整幅画变成金属反光。
+surface:
+  finish: burnished paper, opaque watercolor, ink, and restrained gold-like accents
+  edges: precise hand-drawn contours with controlled brush variation
+texture:
+  density: high in selected details, low in open ground
+  placement: concentrated in foliage, textiles, architecture, and small material marks
+invariants:
+  - 细密观察、轮廓秩序和多层平面在更换主体后仍然成立。
+  - 不要求宫殿、皇帝、花园、狩猎、动物或波斯文字。
+  - 复杂度来自局部精度与层级关系，不来自过度写实或随机装饰。

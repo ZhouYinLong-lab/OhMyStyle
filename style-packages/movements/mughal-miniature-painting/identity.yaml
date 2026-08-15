@@ -1,0 +1,16 @@
+canonical_name: 莫卧儿细密画
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点和叙事优先；本包只转译细密绘画的纸本、轮廓、层叠空间和精细观察，不规定宫廷、狩猎或花园题材。
+  subjects: []
+  exclusions:
+    - copied folio composition
+    - named historical figure as default subject
+sources:
+  - 'https://www.metmuseum.org/essays/the-shah-jahan-album'
+  - 'https://www.metmuseum.org/zh/perspectives/depicting-the-royal-hunt'
+notes:
+  - 重点是细密笔触、纸面层次、轮廓清晰度与自然观察之间的平衡。
+  - 宫廷肖像、动物、植物和建筑只是历史中的题材范围，不是默认生成内容。
