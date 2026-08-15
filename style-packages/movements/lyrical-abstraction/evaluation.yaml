@@ -1,0 +1,40 @@
+profiles:
+  generic:
+    required:
+      - package-specific visual signature is observable
+      - composition remains coherent for a new subject
+      - no copied reference composition or branded material
+    reject_if:
+      - style is represented only by a global color filter
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - the body, if requested, is carried by gesture and paint process rather than literal portrait detail
+      - open edges and layered passages remain visible around the supplied subject
+  still_life:
+    required:
+      - objects may dissolve into the field but must not be replaced by a fixed motif
+      - paint process remains visible through drips, overlaps, and varied stroke pressure
+minimum_score: 7
+
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+  distinctive_signature:
+    score: null
+    notes: "Record which visual decisions remain observable after the subject changes."
+  visual_overlap:
+    score: null
+    notes: "Compare the representative image and output with near-duplicate packages."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "No generated result is implied by this template."

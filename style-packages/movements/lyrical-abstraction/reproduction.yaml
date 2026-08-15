@@ -1,0 +1,18 @@
+medium: lyrical abstract painting with a physical process translated into image generation
+materials:
+  support: primed canvas, paper, or a lightly absorbent ground
+process:
+  - Establish the supplied subject only as a loose silhouette, mass, or compositional cue.
+  - Lay down broad transparent and opaque color fields with different stroke pressures.
+  - Add directional gestures, drips, dry-brush skips, and scraped overlaps while leaving pauses.
+  - Reintroduce only the minimum subject cues needed for the user's request; keep the making process visible.
+technical_direction:
+  contrast: medium with strong local value accents
+  saturation: medium-high in selected passages, never uniformly saturated
+  perspective: shallow or indeterminate; do not force literal depth
+  detail_density: variable, with dense gesture zones balanced by open ground
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

@@ -1,0 +1,16 @@
+canonical_name: 抒情抽象
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.metmuseum.org/en/essays/in-memoriam-judit-reigl'
+
+notes:
+  - The package treats gesture, paint movement, and the visible sequence of making as the primary visual content.
+  - A supplied subject may remain recognizable, dissolve, or be omitted; the package does not prescribe a recurring object or story.

@@ -1,0 +1,11 @@
+{
+  "name": "抒情抽象的层叠色场",
+  "colors": [
+    {"name": "暖白", "hex": "#EEE6D8", "role": "开放底色"},
+    {"name": "深酒红", "hex": "#652D39", "role": "沉重手势"},
+    {"name": "钴蓝", "hex": "#315B91", "role": "冷色流动"},
+    {"name": "橄榄绿", "hex": "#687047", "role": "中性转折"},
+    {"name": "生赭", "hex": "#8A6040", "role": "土性底层与干刷"}
+  ],
+  "notes": "Use the palette as a set of relationships between passages; do not force every color into every subject."
+}

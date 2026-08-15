@@ -1,0 +1,21 @@
+composition:
+  - Let the image breathe as an open field with an uneven center of gravity rather than a closed emblem.
+  - Use overlapping gestures and pauses; allow a small supplied form to sit inside, beside, or partly disappear into the field.
+palette:
+  - Combine warm white, deep maroon, cobalt, olive, and raw umber through layered transparent and opaque passages.
+  - Let color temperature shift across gestures while preserving a few quiet areas.
+lighting:
+  quality: diffuse light that reveals paint thickness without theatrical modeling
+  behavior:
+    - Highlights come from paint thickness and exposed support, not a simulated object light source.
+    - Keep the field legible through value rhythm even when edges remain open.
+surface:
+  finish: layered physical paint with visible process and occasional exposed ground
+  edges: open, dragged, feathered, and interrupted; avoid perfect vector boundaries
+texture:
+  density: medium-to-high in selected gesture paths, with deliberate quiet intervals
+  placement: drips, dry-brush skips, translucent overlaps, scraped ridges, and pooled pigment
+invariants:
+  - The sequence and pressure of gestures remain visible after the subject changes.
+  - The image avoids a single decorative pattern or a uniform digital gradient.
+  - The subject remains optional; abstraction is a treatment of making, not a fixed object.

@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_generated_pending_human_review
+generator: OpenAI image generation
+prompt_mode: anonymous_visual_signature
+subject: pale rectangular form in an open painted field
+generated_at: 2026-08-15
+review:
+  decision: pending
+  notes: Neutral composition benchmark; the form is illustrative and not a fixed subject.
