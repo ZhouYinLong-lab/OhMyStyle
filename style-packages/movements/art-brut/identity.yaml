@@ -1,0 +1,16 @@
+canonical_name: 原生艺术
+entity_type: movement
+domain: hybrid
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - TODO: add supported subject or scene types
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://artbrut.ch/en/history'
+
+notes:
+  - TODO: describe the historical, technical, or visual scope in observable language.

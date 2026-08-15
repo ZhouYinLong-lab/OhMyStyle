@@ -1,0 +1,33 @@
+id: art-brut
+name: 原生艺术
+kind: movement
+domain: hybrid
+version: 0.1.0
+summary: >-
+  以未经学院规范驯化的线条、重复、密集痕迹和非标准材料感，保留直接、私人且不完美的视觉生成过程。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: hybrid
+  historical_context: '让·杜布菲于1940年代提出的艺术概念，关注脱离主流艺术制度的个人创作；本包只提取可观察形式，不替任何创作者或群体代言。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
