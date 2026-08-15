@@ -1,0 +1,16 @@
+canonical_name: 海岛卡通渲染游戏美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://iwataasks.nintendo.com/interviews/wiiu/wind-waker/0/0/'
+
+notes:
+  - '以清晰卡通渲染、夸张但可读的轮廓、明亮海天色彩和绘画般的三维表面建立轻快而完整的游戏空间。'
+  - '代表图只用于展示视觉处理，不规定用户主题。'

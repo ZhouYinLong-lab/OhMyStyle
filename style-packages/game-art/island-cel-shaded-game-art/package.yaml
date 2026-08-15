@@ -1,0 +1,34 @@
+id: island-cel-shaded-game-art
+name: 海岛卡通渲染游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以清晰卡通渲染、夸张但可读的轮廓、明亮海天色彩和绘画般的三维表面建立轻快而完整的游戏空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: 游戏美术
+  historical_context: '任天堂卡通渲染海岛冒险游戏视觉方向'
+  application: general
+  visual_axes:
+    - medium
+    - composition
+    - lighting
+    - palette
+    - texture
+    - layout
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

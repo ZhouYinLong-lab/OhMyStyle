@@ -1,0 +1,22 @@
+composition:
+  - '清楚的前中后景和可读的游戏空间'
+  - '轮廓、路径和地标形体优先于细碎写实纹理'
+  - '画面保持轻快的视觉节奏和大色块平衡'
+palette:
+  - '海蓝、天空青、暖沙色和明亮绿植形成清爽关系'
+  - '阴影偏彩色而非纯黑'
+  - '强调色用于可交互或视觉重点，但不强制指定对象'
+lighting:
+  quality: '明亮的自然日光，柔和但明确的卡通阴影，避免写实电影式压暗'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: '简化而有绘画感的三维表面，边缘清楚，材质差异通过色块和形体表达'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: '低到中等纹理密度，近景可有手绘变化，远景保持干净可读'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'the requested subject stays unchanged'
+  - 'the package signature remains visible after subject transfer'

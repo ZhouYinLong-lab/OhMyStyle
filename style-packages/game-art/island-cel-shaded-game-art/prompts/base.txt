@@ -1,0 +1,8 @@
+Create an original image of {SUBJECT} in the visual language of Island Cel-Shaded Game Art.
+
+Transfer these observable decisions: 以清晰卡通渲染、夸张但可读的轮廓、明亮海天色彩和绘画般的三维表面建立轻快而完整的游戏空间。
+Composition: 清楚的前中后景和可读的游戏空间; 轮廓、路径和地标形体优先于细碎写实纹理; 画面保持轻快的视觉节奏和大色块平衡.
+Palette: 海蓝、天空青、暖沙色和明亮绿植形成清爽关系; 阴影偏彩色而非纯黑; 强调色用于可交互或视觉重点，但不强制指定对象.
+Lighting: 明亮的自然日光，柔和但明确的卡通阴影，避免写实电影式压暗. Surface: 简化而有绘画感的三维表面，边缘清楚，材质差异通过色块和形体表达. Texture: 低到中等纹理密度，近景可有手绘变化，远景保持干净可读.
+
+Keep the user's subject, location, quantity, identity, action, aspect ratio, and purpose unchanged. Treat the package as a visual treatment, not as a subject or story generator.

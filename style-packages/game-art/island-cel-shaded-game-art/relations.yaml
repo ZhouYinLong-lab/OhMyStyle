@@ -1,0 +1,14 @@
+schema_version: 1.0.0
+family: bright-cel-shaded-adventure
+near_duplicates: []
+same_family: []
+complements: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '清楚的前中后景和可读的游戏空间'
+  - '轮廓、路径和地标形体优先于细碎写实纹理'
+  - '海蓝、天空青、暖沙色和明亮绿植形成清爽关系'
+avoid_overlap:
+  - '固定加入海盗、木船、角色或特定游戏地标'
+  - '把卡通渲染变成塑料玩具质感'

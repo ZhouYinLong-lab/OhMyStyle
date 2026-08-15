@@ -1,0 +1,48 @@
+schema_version: 1.0.0
+resource_id: island-cel-shaded-game-art
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+family: bright-cel-shaded-adventure
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '清楚的前中后景和可读的游戏空间'
+  - '轮廓、路径和地标形体优先于细碎写实纹理'
+  - '海蓝、天空青、暖沙色和明亮绿植形成清爽关系'
+avoid_overlap:
+  - '固定加入海盗、木船、角色或特定游戏地标'
+  - '把卡通渲染变成塑料玩具质感'
+example_id: anonymous-demo
+subject: 一座未指定地点的普通海边公共建筑与空旷步道
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 原创匿名游戏环境演示，说明卡通渲染、海天色彩和可读空间，不复制商业游戏场景。

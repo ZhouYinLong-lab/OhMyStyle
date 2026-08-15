@@ -1,0 +1,37 @@
+example_id: anonymous-demo
+subject: 一座未指定地点的普通海边公共建筑与空旷步道
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 原创匿名游戏环境演示，说明卡通渲染、海天色彩和可读空间，不复制商业游戏场景。
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "需用用户主体进行测试；不得把代表图主体当作默认主体。"
+  distinctive_signature:
+    score: null
+    notes: ""
+  visual_overlap:
+    score: null
+    notes: ""
+  cross_subject_stability:
+    score: null
+    notes: ""
+image_audit:
+  status: pending
+  notes: "代表图为原创的匿名演示；提交后执行资源审计。"
+signature:
+  - 清楚的前中后景和可读的游戏空间
+  - 海蓝、天空青、暖沙色和明亮绿植形成清爽关系
+  - 简化而有绘画感的三维表面，边缘清楚，材质差异通过色块和形体表达
+controls:
+  - composition
+  - palette
+  - lighting
+does_not_control:
+  - subject identity
+  - object count
+  - location
+  - story or narrative event
+  - text, logo, or brand

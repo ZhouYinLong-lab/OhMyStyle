@@ -1,0 +1,20 @@
+medium: '以清晰卡通渲染、夸张但可读的轮廓、明亮海天色彩和绘画般的三维表面建立轻快而完整的游戏空间。'
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+  - '先建立可游玩的空间层次和路径'
+  - '用卡通渲染分离光照与色块'
+  - '安排海天、地面和建筑的明亮色彩关系'
+  - '最后加入少量绘画式表面变化'
+technical_direction:
+  contrast: '中等饱和度、清晰轮廓、彩色阴影、明亮自然光和稳定三维透视'
+  saturation: rich but subject-dependent, never an all-over filter
+  perspective: preserve the user's requested camera or spatial logic
+avoid:
+  - '固定加入海盗、木船、角色或特定游戏地标'
+  - '把卡通渲染变成塑料玩具质感'
+  - '使用赛博朋克霓虹、写实电影调色或过度颗粒'
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.
