@@ -287,6 +287,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: el-lissitzky
+  name: 埃尔·利西茨基
+  kind: artist
+  domain: hybrid
+  package_path: style-packages/artists/el-lissitzky
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: eugene-delacroix
   name: 欧仁·德拉克罗瓦
   kind: artist
@@ -1238,6 +1255,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: utagawa-hiroshige
+  name: 歌川广重
+  kind: artist
+  domain: printmaking
+  package_path: style-packages/artists/utagawa-hiroshige
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: vincent-van-gogh
   name: 文森特·梵高
   kind: artist
@@ -1299,6 +1333,23 @@ packages:
   - composition
   - palette
   - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: braid-hand-painted-puzzle
+  name: 手绘谜题游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/braid-hand-painted-puzzle
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
   - surface
   - texture
   reference_count: 1
@@ -3121,6 +3172,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: false
+- resource_id: nihonga
+  name: 日本画
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/nihonga
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: northern-renaissance
   name: 北方文艺复兴
   kind: movement
@@ -4580,6 +4648,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: ruth-bernhard
+  name: 露丝·伯恩哈德
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/ruth-bernhard
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: sally-mann
   name: 萨莉·曼
   kind: photographer
@@ -5737,6 +5822,23 @@ packages:
   - surface
   - texture
   reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: impasto-painting
+  name: 厚涂绘画
+  kind: technique
+  domain: painting
+  package_path: style-packages/techniques/impasto-painting
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
