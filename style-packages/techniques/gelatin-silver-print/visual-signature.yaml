@@ -1,0 +1,24 @@
+composition:
+  - '主体结构由阶调而非色相承担'
+  - '保留暗房放大的裁切与边缘控制感'
+  - '可用清晰几何或细腻灰阶适配不同主体'
+palette:
+  - '中性黑白为主'
+  - '高光保留纸面质感而不纯白爆掉'
+  - '暗部有层次，不压成一整块黑'
+lighting:
+  quality: 'controlled photographic light translated into a full neutral value range'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 'fine grain, baryta-paper or fiber-paper impression, and restrained photographic sheen'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: 'fine and even in midtones, with subtle paper and emulsion variation'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'neutral grayscale remains stable'
+  - 'material surface is photographic, not charcoal or ink'
+  - 'local contrast follows the subject'
+  - 'subject and location remain independent'

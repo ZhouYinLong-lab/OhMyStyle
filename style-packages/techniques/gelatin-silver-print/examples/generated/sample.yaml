@@ -1,0 +1,39 @@
+example_id: anonymous-demo
+subject: an unmarked glass bottle on a plain table, original anonymous still life
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: Original anonymous still life used to demonstrate neutral grayscale, material separation, and darkroom-like surface.
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "需用用户主体进行测试；不得把代表图主体当作默认主体。"
+  distinctive_signature:
+    score: null
+    notes: ""
+  visual_overlap:
+    score: null
+    notes: ""
+  cross_subject_stability:
+    score: null
+    notes: ""
+image_audit:
+  status: pending
+  notes: "代表图为原创建的匿名演示；提交后执行资源审计。"
+signature:
+  - 'neutral grayscale remains stable'
+  - 'material surface is photographic, not charcoal or ink'
+  - 'local contrast follows the subject'
+  - 'subject and location remain independent'
+controls:
+  - composition
+  - palette
+  - lighting
+  - surface
+does_not_control:
+  - subject identity
+  - object count
+  - location
+  - story or narrative event
+  - text, logo, or brand

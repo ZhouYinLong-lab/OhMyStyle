@@ -1,0 +1,25 @@
+{
+  "name": "中性银盐灰阶",
+  "colors": [
+    {
+      "name": "深黑",
+      "hex": "#151515",
+      "role": "deep structure"
+    },
+    {
+      "name": "暗灰",
+      "hex": "#494949",
+      "role": "shadow detail"
+    },
+    {
+      "name": "中灰",
+      "hex": "#858585",
+      "role": "tonal bridge"
+    },
+    {
+      "name": "纸白",
+      "hex": "#E2E0D9",
+      "role": "highlight support"
+    }
+  ]
+}

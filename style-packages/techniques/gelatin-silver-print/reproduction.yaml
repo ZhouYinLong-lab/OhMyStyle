@@ -1,0 +1,17 @@
+medium: gelatin silver black-and-white photographic print
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+  - 'define the user subject first'
+  - 'establish exposure and tonal hierarchy'
+  - 'simulate darkroom development and local dodging/burning'
+  - 'finish with fine grain and paper surface'
+technical_direction:
+  contrast: 'controlled from soft to moderately crisp'
+  saturation: 'neutral monochrome'
+  perspective: 'photographic and subject-dependent'
+avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.
