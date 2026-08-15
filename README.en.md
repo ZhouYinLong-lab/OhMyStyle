@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-317-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-327-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -194,7 +194,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/yves-klein/README.en.md"><img src="style-packages/artists/yves-klein/gallery-16x9.jpg" width="230" alt="Yves Klein representative image"></a><br><strong>Yves Klein</strong><br><a href="style-packages/artists/yves-klein/README.en.md">Open README</a></td>
-</tr>
+
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/rene-magritte/README.en.md"><img src="style-packages/artists/rene-magritte/gallery-16x9.jpg" width="230" alt="René Magritte representative image"></a><br><strong>René Magritte</strong><br><a href="style-packages/artists/rene-magritte/README.en.md">Open README</a></td></tr>
 </table>
 
 ### Photographers
@@ -297,7 +298,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/shomei-tomatsu/README.en.md"><img src="style-packages/photographers/shomei-tomatsu/gallery-16x9.jpg" width="230" alt="Shomei Tomatsu representative image"></a><br><strong>Shomei Tomatsu</strong><br><a href="style-packages/photographers/shomei-tomatsu/README.en.md">Open README</a></td>
-</tr>
+
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lillian-bassman/README.en.md"><img src="style-packages/photographers/lillian-bassman/gallery-16x9.jpg" width="230" alt="Lillian Bassman representative image"></a><br><strong>Lillian Bassman</strong><br><a href="style-packages/photographers/lillian-bassman/README.en.md">Open README</a></td></tr>
 </table>
 
 ### Design schools
@@ -476,7 +478,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/mughal-miniature-painting/README.en.md"><img src="style-packages/movements/mughal-miniature-painting/gallery-16x9.jpg" width="230" alt="Mughal Miniature Painting representative image"></a><br><strong>Mughal Miniature Painting</strong><br><a href="style-packages/movements/mughal-miniature-painting/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/vorticism/README.en.md"><img src="style-packages/movements/vorticism/gallery-16x9.jpg" width="230" alt="Vorticism representative image"></a><br><strong>Vorticism</strong><br><a href="style-packages/movements/vorticism/README.en.md">Open README</a></td>
-</tr>
+
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-dada/README.en.md"><img src="style-packages/movements/neo-dada/gallery-16x9.jpg" width="230" alt="Neo-Dada representative image"></a><br><strong>Neo-Dada</strong><br><a href="style-packages/movements/neo-dada/README.en.md">Open README</a></td></tr>
 </table>
 
 ### Original presets
@@ -597,6 +600,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.en.md"><img src="style-packages/game-art/spiritfarer-hand-drawn-game-art/gallery-16x9.jpg" width="230" alt="Spiritfarer Hand-Drawn Game Art representative image"></a><br><strong>Spiritfarer Hand-Drawn Game Art</strong><br><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.en.md"><img src="style-packages/game-art/pentiment-medieval-manuscript-game-art/gallery-16x9.jpg" width="230" alt="Pentiment Medieval Manuscript Game Art representative image"></a><br><strong>Pentiment Medieval Manuscript Game Art</strong><br><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.en.md">Open README</a></td>
 </tr>
+
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md"><img src="style-packages/game-art/monument-valley-impossible-geometry/gallery-16x9.jpg" width="230" alt="Monument Valley Impossible Geometry Game Art representative image"></a><br><strong>Monument Valley Impossible Geometry Game Art</strong><br><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Techniques and media
@@ -654,7 +661,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/albumen-printing/README.en.md"><img src="style-packages/techniques/albumen-printing/gallery-16x9.jpg" width="230" alt="Albumen Printing representative image"></a><br><strong>Albumen Printing</strong><br><a href="style-packages/techniques/albumen-printing/README.en.md">Open README</a></td>
-</tr>
+
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/salted-paper-printing/README.en.md"><img src="style-packages/techniques/salted-paper-printing/gallery-16x9.jpg" width="230" alt="Salted Paper Printing representative image"></a><br><strong>Salted Paper Printing</strong><br><a href="style-packages/techniques/salted-paper-printing/README.en.md">Open README</a></td></tr>
 </table>
 
 ### Inherited 110 lightweight presets
