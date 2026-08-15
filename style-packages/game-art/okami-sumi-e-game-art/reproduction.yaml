@@ -1,0 +1,17 @@
+medium: ink-wash and flat-color 2D game environment art
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+  - 'block the environment as readable planes'
+  - 'draw decisive ink contours'
+  - 'wash distant forms with diluted ink'
+  - 'apply a restrained flat-color accent layer and paper texture'
+technical_direction:
+  contrast: 'high line contrast with soft wash values'
+  saturation: 'limited and selective, never a global game-poster filter'
+  perspective: 'readable 2D traversal space with graphic depth cues'
+avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, or protected game asset.

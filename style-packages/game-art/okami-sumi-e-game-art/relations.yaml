@@ -1,0 +1,19 @@
+related_movements: []
+related_concepts: []
+influences_to_review: []
+not_equivalent_to:
+  - generic color filter
+  - subject-specific composition
+
+family: ink-wash-game-environment
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - 'brush movement remains visible'
+  - 'environmental depth is readable at game scale'
+  - 'limited colors support ink structure'
+  - 'no named character, level, interface, or copied asset is introduced'
+avoid_overlap:
+  - fixed subject, landmark, character, or narrative event
+  - copied reference composition or branded asset

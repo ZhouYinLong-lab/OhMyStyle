@@ -1,0 +1,16 @@
+canonical_name: 大神水墨游戏美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://news.capcomusa.com/lets/browse/matsushita-san-answers-your-okamiden-questions'
+
+notes:
+  - '以书写性墨线、水墨晕染、纸张肌理和有限平涂色面建立游戏场景风格。它强调可读的环境层次和笔触方向，不绑定具体角色、关卡、神话人物或游戏界面。'
+  - 代表图只用于展示视觉处理，不规定用户主题。

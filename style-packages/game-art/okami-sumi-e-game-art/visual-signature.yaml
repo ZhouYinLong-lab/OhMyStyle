@@ -1,0 +1,24 @@
+composition:
+  - '清楚的前中后景层次'
+  - '大块留白与书写性路径'
+  - '轮廓线引导可读的探索空间'
+palette:
+  - '墨黑、灰青和纸白构成骨架'
+  - '朱红、靛蓝或草绿作为少量平涂色面'
+  - '颜色保持平面而不变成赛博霓虹'
+lighting:
+  quality: 'graphic ink value separation with soft wash transitions and selective flat color accents'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Use light as a structural and material decision, not as a fixed scene.
+surface:
+  finish: 'fibrous paper grain, dry-brush edges, pooled ink, and visible brush direction'
+  edges: varied, deliberate edges with no copied layout
+texture:
+  density: 'medium texture in ink strokes and environmental planes, clean readability around paths and interactable forms'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'brush movement remains visible'
+  - 'environmental depth is readable at game scale'
+  - 'limited colors support ink structure'
+  - 'no named character, level, interface, or copied asset is introduced'
