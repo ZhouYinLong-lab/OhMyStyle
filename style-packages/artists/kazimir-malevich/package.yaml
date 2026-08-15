@@ -1,0 +1,33 @@
+id: kazimir-malevich
+name: 卡济米尔·马列维奇
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以悬浮的几何形体、非对象化空间和极少的色彩关系，建立不依赖具体物件的纯粹秩序。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '20世纪俄国先锋艺术；至上主义以几何形体、平面色彩与非对象化构成为核心。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

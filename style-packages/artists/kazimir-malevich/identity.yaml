@@ -1,0 +1,16 @@
+canonical_name: 卡济米尔·马列维奇
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects:
+    - TODO: add supported subject or scene types
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.moma.org/artists/3710-kazimir-malevich'
+
+notes:
+  - TODO: describe the historical, technical, or visual scope in observable language.

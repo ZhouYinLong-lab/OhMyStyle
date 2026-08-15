@@ -1,0 +1,20 @@
+composition:
+  - Use a sparse field where geometric forms float, intersect, or balance without describing a familiar object.
+  - Keep scale, rotation, and interval as the primary compositional decisions.
+palette:
+  - Use a restrained field of white, black, red, blue, and ochre with occasional neutral ground.
+  - Let one saturated plane carry the main tension while other forms remain subordinate.
+lighting:
+  quality: even, non-theatrical graphic illumination
+  behavior:
+    - Avoid modeling that turns planes into objects; keep value changes structural and sparse.
+surface:
+  finish: matte painted or printed plane
+  edges: clean and deliberate, with slight handmade registration variation allowed
+texture:
+  density: low
+  placement: concentrated at geometric intersections and the edge of the ground plane
+invariants:
+  - non-objective geometric hierarchy
+  - sparse field and controlled rotation
+  - limited high-contrast color relations

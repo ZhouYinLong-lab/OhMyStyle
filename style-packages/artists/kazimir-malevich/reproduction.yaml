@@ -1,0 +1,17 @@
+medium: painted or printed geometric abstraction
+materials:
+  support: matte paper, canvas, or a flat digital field
+process:
+  - reduce the user-supplied subject to a clear visual field and essential directional forces
+  - establish the ground and a small number of geometric planes
+  - tune scale, rotation, interval, and color tension before adding minimal surface variation
+technical_direction:
+  contrast: high between selected planes and ground
+  saturation: selective and concentrated
+  perspective: flat or intentionally non-perspectival
+  detail_density: low
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
