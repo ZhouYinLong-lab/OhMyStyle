@@ -1,0 +1,26 @@
+package_id: central-saint-martins
+package_version: 0.1.0
+curation_status: curated_demo
+source_policy: 仅记录学校公开页面作为研究来源；不在仓库再分发校方或学生作品。
+sources:
+  - url: 'https://www.arts.ac.uk/colleges/central-saint-martins/home'
+    title: Central Saint Martins home
+    authority: University of the Arts London
+    supports: 学院定位与教育语境研究
+  - url: 'https://www.arts.ac.uk/colleges/central-saint-martins/about-us/our-programmes/graphic-communication-design-programme'
+    title: Graphic Communication Design programme
+    authority: University of the Arts London
+    supports: 跨媒介设计与研究实践研究
+attribution: 本包提取公开教学语境中的可观察设计方法，不代表学校官方模板或背书。
+rights_notes:
+  - 不打包校方标志、学生作品或官方宣传图。
+  - 生成示例为新的匿名工作室场景。
+asset: gallery-16x9.jpg
+status: generated_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: 实验设计工作台与材料墙，仅作风格基准
+generated_at: 2026-08-15
+review:
+  decision: accepted_as_representative
+  notes: 代表图检验材料并置和过程可见性，不规定默认场景。

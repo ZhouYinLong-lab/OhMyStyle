@@ -1,0 +1,19 @@
+canonical_name: 中央圣马丁艺术与设计学院
+entity_type: design_school
+domain: interdisciplinary_design
+scope:
+  subject_policy: open
+  subject_note: 用户提供的设计任务优先；工作室示例只是过程基准。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 实验设计工作台与材料墙
+  exclusions:
+    - school logo
+    - copied student work
+sources:
+  - https://www.arts.ac.uk/colleges/central-saint-martins/home
+  - https://www.arts.ac.uk/colleges/central-saint-martins/about-us/our-programmes/graphic-communication-design-programme
+notes:
+  - 关注研究、制作、试错和跨媒介碰撞如何进入最终画面。

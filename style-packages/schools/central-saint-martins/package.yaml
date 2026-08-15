@@ -1,0 +1,33 @@
+id: central-saint-martins
+name: 中央圣马丁艺术与设计学院
+kind: school
+domain: design
+version: 0.1.0
+summary: >-
+  以跨媒介实验、研究驱动的视觉沟通和材料工作坊把设计当作思考与制作共同推进的过程。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: design_school
+  medium: design
+  historical_context: '当代英国艺术与设计教育'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

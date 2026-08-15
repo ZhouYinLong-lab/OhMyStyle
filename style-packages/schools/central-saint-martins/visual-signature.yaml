@@ -1,0 +1,23 @@
+composition:
+  - 允许模块、碎片、留白和过程痕迹共存，层次看似松散但有任务重点。
+  - 设计对象、材料样本和注释区域形成跨媒介关系，不要求统一风格表面。
+palette:
+  - 以工作室中性底色承载少量实验性色块，颜色来自材料与主题而非固定配色。
+lighting:
+  quality: clear studio or daylight documentation
+  behavior:
+    - 光线服务于材料、模型和过程的可读性，不制造广告棚拍光效。
+surface:
+  finish: paper, board, fabric, plastic, metal, and found-material contrasts
+  edges: cut, taped, pinned, folded, and unfinished edges remain visible
+texture:
+  density: varied and process-led
+  placement: concentrated around samples, joins, annotations, and prototypes
+invariants:
+  - 画面呈现研究到制作的痕迹，但不生成可读校名、标志或真实学生作品。
+  - 复杂性来自媒介关系和编辑选择，不来自无意义堆叠。
+  - 用户主体和用途仍然决定内容。
+anti_signatures:
+  - generic moodboard
+  - polished e-commerce layout
+  - school logo or readable institutional text
