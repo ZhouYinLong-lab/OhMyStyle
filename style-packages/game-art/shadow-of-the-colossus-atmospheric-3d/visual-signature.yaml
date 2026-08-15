@@ -1,0 +1,24 @@
+composition:
+  - '大面积空旷空间与远距离焦点'
+  - '小主体对照巨大地貌'
+  - '低密度可探索路径和清楚的空间导航'
+palette:
+  - '沙灰、苔绿、冷蓝灰和旧金色构成克制环境色'
+  - '局部暖光作为尺度锚点'
+  - '避免赛博霓虹和全局电影滤镜'
+lighting:
+  quality: 'wide natural light, haze, long shadows, and strong atmospheric perspective'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 'weathered rock, dry grass, dust, water, and restrained 3D material detail'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: 'low-to-medium density in distant terrain, higher only along navigable foreground surfaces'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'scale is carried by spatial contrast'
+  - 'the environment remains playable and readable'
+  - 'distance and haze separate planes'
+  - 'no named creature, map, shrine, or copied asset is introduced'

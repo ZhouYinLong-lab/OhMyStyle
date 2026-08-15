@@ -1,0 +1,25 @@
+{
+  "name": "荒原空气色",
+  "colors": [
+    {
+      "name": "沙灰",
+      "hex": "#A99882",
+      "role": "terrain base"
+    },
+    {
+      "name": "苔绿",
+      "hex": "#596451",
+      "role": "vegetation"
+    },
+    {
+      "name": "冷蓝灰",
+      "hex": "#63747A",
+      "role": "distance and haze"
+    },
+    {
+      "name": "旧金色",
+      "hex": "#B78A4E",
+      "role": "small light anchor"
+    }
+  ]
+}

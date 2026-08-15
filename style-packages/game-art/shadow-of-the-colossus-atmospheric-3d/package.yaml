@@ -1,0 +1,33 @@
+id: shadow-of-the-colossus-atmospheric-3d
+name: 巨像之影荒原三维游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以巨大的空旷尺度、低密度三维地貌、远距离主体、克制的土灰色调和强烈空气透视组织游戏环境，不绑定巨像、遗迹或具体关卡。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: 游戏美术
+  historical_context: '受日本三维动作冒险游戏环境设计启发的氛围化游戏美术'
+  application: game_art
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

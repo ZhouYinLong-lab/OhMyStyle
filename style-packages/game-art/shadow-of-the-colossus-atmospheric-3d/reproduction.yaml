@@ -1,0 +1,17 @@
+medium: atmospheric 3D adventure game environment art
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+  - 'block broad terrain and route readability'
+  - 'set a small subject against the environment'
+  - 'add haze and distant value compression'
+  - 'finish with selective material detail and restrained natural light'
+technical_direction:
+  contrast: 'moderate with compressed distant values'
+  saturation: 'muted earth colors with small warm accents'
+  perspective: 'wide atmospheric 3D depth with level horizon'
+avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

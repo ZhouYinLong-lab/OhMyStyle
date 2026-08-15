@@ -1,0 +1,16 @@
+canonical_name: 巨像之影荒原三维游戏美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.playstation.com/en-us/games/shadow-of-the-colossus/'
+
+notes:
+  - '以巨大的空旷尺度、低密度三维地貌、远距离主体、克制的土灰色调和强烈空气透视组织游戏环境，不绑定巨像、遗迹或具体关卡。'
+  - 代表图只用于展示视觉处理，不规定用户主题。

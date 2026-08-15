@@ -1,0 +1,19 @@
+related_movements: []
+related_concepts: []
+influences_to_review: []
+not_equivalent_to:
+  - generic color filter
+  - subject-specific composition
+
+family: atmospheric-3d-wilderness
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - 'scale is carried by spatial contrast'
+  - 'the environment remains playable and readable'
+  - 'distance and haze separate planes'
+  - 'no named creature, map, shrine, or copied asset is introduced'
+avoid_overlap:
+  - fixed subject, landmark, character, or narrative event
+  - copied reference composition or branded asset
