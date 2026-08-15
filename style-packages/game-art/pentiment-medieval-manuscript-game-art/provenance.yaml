@@ -1,0 +1,15 @@
+package_id: pentiment-medieval-manuscript-game-art
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://pentiment.obsidian.net/'
+    title: '潘提曼官方页面'
+    authority: '黑曜石娱乐'
+    supports: source traceability and package scope
+attribution: '本包提炼可观察视觉特征，不主张与来源艺术家、机构、游戏或流派存在合作、授权、背书或完全等同关系。'
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.
+  - Generated representative images are new anonymous scenes and are not source artworks.
+

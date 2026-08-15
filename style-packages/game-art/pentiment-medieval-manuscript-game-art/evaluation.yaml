@@ -1,0 +1,38 @@
+profiles:
+  generic:
+    required:
+  - '本包的媒介、构图、色彩或表面特征可被观察到'
+  - '用户提供的主体保持独立且可识别'
+  - '没有复制参考作品、品牌或固定题材'
+    reject_if:
+  - '输出只剩下全局滤镜，无法观察到具体媒介规则'
+  - '默认出现未被要求的人物、物件、地点或故事'
+  - '文字、标志、水印或不可控的伪影明显'
+  portrait:
+    required:
+      - requested face, pose, and silhouette remain readable
+      - style treatment does not force a named character or costume
+  still_life:
+    required:
+      - requested objects remain countable and materially distinguishable
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
+  distinctive_signature:
+    score: null
+    notes: Record the package-specific visual decisions that remain observable.
+  visual_overlap:
+    score: null
+    notes: Compare with related packages without treating shared historical context as duplication.
+  cross_subject_stability:
+    score: null
+    notes: Do not mark complete without outputs for at least two different subjects.
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+

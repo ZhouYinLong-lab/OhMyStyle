@@ -1,0 +1,16 @@
+family: game_art
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '页面式构图与手稿层级'
+  - '墨线、木刻纹理和有限着色'
+  - '平面化但具有可游玩的空间阅读顺序'
+avoid_overlap:
+  - '普通中世纪奇幻概念图'
+  - '固定修道院、村庄、谋杀、僧侣或特定角色'
+  - '让模型生成大段可读文字或复制游戏界面'
+related:
+  - 'movements/gothic'
+  - 'techniques/woodcut'
+

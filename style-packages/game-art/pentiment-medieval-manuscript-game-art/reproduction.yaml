@@ -1,0 +1,23 @@
+medium: 手稿插图、木刻印刷与平面游戏动画
+materials:
+  support:
+    - '羊皮纸或粗纸'
+    - '黑色墨线'
+    - '木刻纹理'
+    - '蛋彩薄层'
+    - '有限金属色'
+process:
+  - 先确定用户主体的轮廓与页面阅读顺序，再决定是否使用边框、插图框或连续分格。
+  - 用墨线和少量平涂色块建立主体，不依赖复杂的三维光影。
+  - 最后加入受控的纸张、印刷和有限帧感；文字若未指定则留为空白符号或不可读装饰。
+technical_direction:
+  contrast: 保留中间调和主体轮廓，避免一键高反差滤镜。
+  saturation: 按本包调色板控制饱和度，保留用户指定的关键颜色。
+  perspective: 服从用户的镜头和构图要求，不自动加入固定视角。
+  detail_density: 细节集中在媒介表面与结构边界，主体本身保持清楚。
+avoid:
+  - '普通中世纪奇幻概念图'
+  - '固定修道院、村庄、谋杀、僧侣或特定角色'
+  - '让模型生成大段可读文字或复制游戏界面'
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+
