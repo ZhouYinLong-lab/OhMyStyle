@@ -1,0 +1,33 @@
+id: tonalism
+name: 色调主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  以相近色阶、柔和空气和被雾化的远近关系建立低声部画面，而不是依赖鲜艳颜色或明确轮廓。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: painting
+  historical_context: '19世纪末至20世纪初的欧美绘画传统；关注色调统一、空气与情绪。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

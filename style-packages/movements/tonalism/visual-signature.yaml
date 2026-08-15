@@ -1,0 +1,21 @@
+composition:
+  - Build a simple value hierarchy from near-neighbor tones, with a quiet anchor and broad atmospheric intervals.
+  - Let forms recede through soft edges and color temperature rather than hard outlines or dramatic perspective.
+palette:
+  - Use a limited family of blue-gray, olive, umber, mauve, and warm haze, keeping adjacent values close.
+  - Reserve the clearest contrast for the focal area and let the rest dissolve gently into related tones.
+lighting:
+  quality: diffuse atmosphere with low directional emphasis
+  behavior:
+    - Light should feel spread through air or haze, with no theatrical beam or sharp cast-shadow system.
+    - Preserve enough local contrast to identify the supplied subject.
+surface:
+  finish: softly unified paint surface with thin layered color
+  edges: softened or partially dissolved, with a few firmer edges at the visual anchor
+texture:
+  density: low-to-medium; texture is subordinate to tonal unity
+  placement: gentle brush or grain variation in haze, sky-like fields, and transitional edges
+invariants:
+  - Related tones and atmospheric recession remain more important than detailed description.
+  - The supplied subject remains legible but is not forced into a landscape.
+  - The image avoids a flat gray wash by keeping a controlled focal contrast.

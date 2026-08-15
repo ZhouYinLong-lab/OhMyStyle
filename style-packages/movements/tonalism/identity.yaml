@@ -1,0 +1,16 @@
+canonical_name: 色调主义
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.nga.gov/research/publications/american-light-luminist-movement-1850-1875'
+
+notes:
+  - The package organizes the image through a restricted family of related tones, softened edges, and atmospheric recession.
+  - Landscape is a historical association, not a required subject; the same low-contrast logic can serve an object, interior, or figure.

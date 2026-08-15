@@ -1,0 +1,11 @@
+{
+  "name": "相近色阶与空气雾化",
+  "colors": [
+    {"name": "蓝灰", "hex": "#6D7C82", "role": "空气基底"},
+    {"name": "橄榄灰", "hex": "#77765A", "role": "自然或中性过渡"},
+    {"name": "烟紫", "hex": "#806E78", "role": "远处色温"},
+    {"name": "生赭", "hex": "#8C6F50", "role": "温暖底层"},
+    {"name": "雾白", "hex": "#D8D6C9", "role": "光与留白"}
+  ],
+  "notes": "Keep neighboring tones close, then place the strongest separation only where the user's subject needs it."
+}
