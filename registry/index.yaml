@@ -782,6 +782,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: nicolas-de-stael
+  name: 尼古拉·德·斯塔埃尔
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/nicolas-de-stael
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: norman-rockwell
   name: 诺曼·洛克威尔
   kind: artist
@@ -2481,6 +2498,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: lyrical-abstraction
+  name: 抒情抽象
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/lyrical-abstraction
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: magic-realism
   name: 魔幻现实主义
   kind: movement
@@ -3722,6 +3756,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: miyako-ishiuchi
+  name: 石内都
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/miyako-ishiuchi
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: nadar
   name: 纳达尔
   kind: photographer
@@ -4397,6 +4448,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: california-institute-of-the-arts
+  name: 加州艺术学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/california-institute-of-the-arts
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: central-saint-martins
   name: 中央圣马丁艺术与设计学院
   kind: school
@@ -4682,6 +4750,22 @@ packages:
   kind: technique
   domain: design
   package_path: style-packages/techniques/acanthus-ornament
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: batik-wax-resist
+  name: 蜡染防染工艺
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/batik-wax-resist
   maturity: L2
   focus_dimensions:
   - medium
