@@ -1,0 +1,33 @@
+id: design-academy-eindhoven
+name: 埃因霍温设计学院
+kind: school
+domain: design
+version: 0.1.0
+summary: >-
+  以材料实验、批判性问题意识、社会语境和可讨论的原型结构组织设计图像。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: design_school
+  medium: design
+  historical_context: '当代荷兰设计教育；材料、社会实践与设计研究交叉'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

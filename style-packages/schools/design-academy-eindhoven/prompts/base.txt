@@ -1,0 +1,5 @@
+SUBJECT INDEPENDENCE: Generate the user-supplied {SUBJECT} in {LOCATION}; do not add a recurring product type, exhibition hall, furniture item, sustainability symbol, or institutional motif from the style package.
+
+Create a new image of {SUBJECT} in {LOCATION} as a critical material-design study. Present the supplied subject as a research situation rather than a polished advertisement. Make the material, construction, scale, use, and consequence legible. Use an open documentary layout and clear workshop or exhibition light. Raw, recycled, crafted, or provisional surfaces may remain visible when they belong to the supplied subject. Prefer material neutrals with one purposeful accent.
+
+Keep the perspective credible and the details concentrated at joins, cuts, seams, samples, or test evidence. Do not invent a generic futuristic product, copied student project, school logo, or fixed exhibition layout. The result must be a new scene directed by the user’s subject.

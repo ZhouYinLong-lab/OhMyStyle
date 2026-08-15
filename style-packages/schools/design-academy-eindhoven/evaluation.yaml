@@ -1,0 +1,38 @@
+profiles:
+  generic:
+    required:
+      - supplied design subject remains primary
+      - material and construction evidence are visible
+      - context supports the design question without becoming a fixed setting
+      - no copied student project or branded material
+    reject_if:
+      - result is only a generic product render
+      - furniture, industrial hall, Dutch interior, or eco icon appears without request
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - any person remains a user-specified participant, not a default designer figure
+  still_life:
+    required:
+      - prototype parts and material differences remain legible
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Use two unrelated design subjects and check for recurring objects or institutions."
+  distinctive_signature:
+    score: null
+    notes: "Check material evidence, critical framing, prototype logic, and documentary light."
+  visual_overlap:
+    score: null
+    notes: "Compare against utilitarian design, Scandinavian product render, and gallery display packages."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "Generated evidence must be added by a contributor or user."

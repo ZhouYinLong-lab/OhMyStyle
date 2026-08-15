@@ -1,0 +1,46 @@
+composition:
+  - Present the supplied design subject as a research situation, not a polished product advertisement.
+  - Use open layouts with material samples, diagrams, prototypes, or traces only when relevant to the subject.
+palette:
+  - Prefer raw material neutrals with one unexpected, legible accent.
+lighting:
+  quality: clear workshop or exhibition light
+  behavior:
+    - Reveal construction, scale, joins, wear, and test evidence.
+    - Avoid theatrical gradients and luxury product spotlighting.
+surface:
+  finish: honest, provisional, materially specific
+  edges: clear cuts and joins; unfinished edges may remain intentional
+texture:
+  density: medium and evidence-led
+  placement: samples, tools, seams, recycled matter, paper, wood, clay, metal, or fabric as required
+invariants:
+  - material and social question remain visible together
+  - prototype logic is more important than polish
+  - context is communicated without fixed setting
+medium: critical material and social design presentation
+materials:
+  support: user-specified object, prototype, installation, diagram, or publication
+process:
+  - state the supplied design problem and object
+  - select materials that make the problem legible
+  - show one or two construction decisions and their consequences
+  - place the object in a restrained context or neutral study field
+  - finish with clear documentation rather than advertising gloss
+technical_direction:
+  contrast: medium, with readable construction details
+  saturation: restrained with one purposeful accent
+  perspective: documentary and spatially credible
+  detail_density: medium-high around joins and material evidence
+avoid:
+  - forced furniture, industrial hall, sustainability icon, or Dutch interior
+  - generic futuristic product render
+  - polished branding board without material evidence
+  - copied student work or recognizable school exhibition layout
+safety_note: Do not reproduce a specific student project, logo, or branded layout.
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.

@@ -1,0 +1,22 @@
+canonical_name: 埃因霍温设计学院
+entity_type: school
+domain: design
+scope:
+  subject_policy: open
+  subject_note: 用户提供的设计对象与问题优先；展厅、家具和环保图标只是研究语境，不是默认主体。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 一个未指定用途的材料原型
+    - 一件普通日用品的拆解展示
+  exclusions:
+    - copied student project
+    - named product or branded asset
+    - recurring furniture, industrial hall, or sustainability icon
+sources:
+  - 'https://www.designacademy.nl/page/6083/vision-mission'
+  - 'https://www.designacademy.nl/page/5937/graduation-show'
+notes:
+  - 将材料、问题、使用场景和社会后果放在同一张设计研究图上。
+  - 允许原型保留未完成感，但结构、材料和意图必须可读。
