@@ -1,0 +1,32 @@
+id: jean-auguste-dominique-ingres
+name: 让·奥古斯特·多米尼克·安格尔
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 以清晰而有弹性的轮廓、克制的明暗和理想化的形体秩序建立新古典主义的稳定视觉语言。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: 绘画
+  historical_context: 十九世纪法国新古典主义绘画
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,18 @@
+medium: 十九世纪法国新古典主义绘画 绘画
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+- 先用准确轮廓确定形体关系
+- 保持大面积明度平稳和边缘清楚
+- 用细微渐变塑造体积而非厚重笔触
+- 以少量色彩和布料线条强化秩序
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+  game asset.

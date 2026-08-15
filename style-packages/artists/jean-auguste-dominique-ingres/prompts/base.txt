@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- - 清晰、连续且富有弹性的轮廓线
+- 理想化但不夸张的比例与姿态
+- 平滑表面上的克制明暗
+- 冷静的浅色调与少量深色结构线
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先用准确轮廓确定形体关系
+- 保持大面积明度平稳和边缘清楚
+- 用细微渐变塑造体积而非厚重笔触
+- 以少量色彩和布料线条强化秩序
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

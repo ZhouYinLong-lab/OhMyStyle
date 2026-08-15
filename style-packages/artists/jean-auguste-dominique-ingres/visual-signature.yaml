@@ -1,0 +1,23 @@
+schema_version: 1.0.0
+composition:
+- 清晰、连续且富有弹性的轮廓线
+- 理想化但不夸张的比例与姿态
+palette:
+- 理想化但不夸张的比例与姿态
+- 平滑表面上的克制明暗
+lighting:
+  quality: 平滑表面上的克制明暗
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 冷静的浅色调与少量深色结构线
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- elastic contour
+- idealized calm form
+- restrained modeling
+- the requested subject stays unchanged
