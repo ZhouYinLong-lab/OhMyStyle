@@ -117,6 +117,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: caspar-david-friedrich
+  name: 卡斯帕·大卫·弗里德里希
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/caspar-david-friedrich
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: claude-monet
   name: 克劳德·莫奈
   kind: artist
@@ -168,6 +185,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: edouard-manet
+  name: 爱德华·马奈
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/edouard-manet
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: edvard-munch
   name: 爱德华·蒙克
   kind: artist
@@ -1558,6 +1592,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: island-cel-shaded-game-art
+  name: 海岛卡通渲染游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/island-cel-shaded-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: isometric-pixel-tactics
   name: 等距像素策略美术
   kind: game_art
@@ -2260,6 +2311,23 @@ packages:
   kind: movement
   domain: design
   package_path: style-packages/movements/brutalism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: byzantine-art
+  name: 拜占庭艺术
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/byzantine-art
   maturity: L2
   focus_dimensions:
   - medium
@@ -4510,6 +4578,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: weegee
+  name: 维吉
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/weegee
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: william-eggleston
   name: 威廉·埃格尔斯顿
   kind: photographer
