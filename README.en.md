@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-307-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-312-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -80,6 +80,10 @@ Two external creative projects are registered for compatibility: [Photo Abstract
 The main gallery lists independent style packages only. Every card uses a horizontal 16:9 representative image; click the image or name to open the package README.
 
 ### Artists
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/sonia-delaunay/README.en.md"><img src="style-packages/artists/sonia-delaunay/gallery-16x9.jpg" width="230" alt="Sonia Delaunay representative image"></a><br><strong>Sonia Delaunay</strong><br><a href="style-packages/artists/sonia-delaunay/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/nicolas-de-stael/README.en.md"><img src="style-packages/artists/nicolas-de-stael/gallery-16x9.jpg" width="230" alt="Nicolas de Staël representative"></a><br><strong>Nicolas de Staël</strong><br><a href="style-packages/artists/nicolas-de-stael/README.en.md">Open README</a></td></tr>
@@ -212,6 +216,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Photographers
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/josef-sudek/README.en.md"><img src="style-packages/photographers/josef-sudek/gallery-16x9.jpg" width="230" alt="Josef Sudek representative image"></a><br><strong>Josef Sudek</strong><br><a href="style-packages/photographers/josef-sudek/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/miyako-ishiuchi/README.en.md"><img src="style-packages/photographers/miyako-ishiuchi/gallery-16x9.jpg" width="230" alt="Miyako Ishiuchi representative"></a><br><strong>Miyako Ishiuchi</strong><br><a href="style-packages/photographers/miyako-ishiuchi/README.en.md">Open README</a></td></tr>
@@ -390,6 +398,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Movements and periods
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/tonalism/README.en.md"><img src="style-packages/movements/tonalism/gallery-16x9.jpg" width="230" alt="Tonalism representative image"></a><br><strong>Tonalism</strong><br><a href="style-packages/movements/tonalism/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/lyrical-abstraction/README.en.md"><img src="style-packages/movements/lyrical-abstraction/gallery-16x9.jpg" width="230" alt="Lyrical Abstraction representative"></a><br><strong>Lyrical Abstraction</strong><br><a href="style-packages/movements/lyrical-abstraction/README.en.md">Open README</a></td></tr>
@@ -579,6 +591,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Game art
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/game-art/to-the-moon-narrative-pixel-art/README.en.md"><img src="style-packages/game-art/to-the-moon-narrative-pixel-art/gallery-16x9.jpg" width="230" alt="To the Moon narrative pixel art representative image"></a><br><strong>To the Moon Narrative Pixel Art</strong><br><a href="style-packages/game-art/to-the-moon-narrative-pixel-art/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.en.md"><img src="style-packages/game-art/kentucky-route-zero-scenographic-game-art/gallery-16x9.jpg" width="230" alt="Kentucky Route Zero scenographic game art representative image"></a><br><strong>Kentucky Route Zero Scenographic Game Art</strong><br><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.en.md">Open README</a></td></tr>
 </table>
 
@@ -662,6 +678,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Techniques and media
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/japanese-mokuhanga/README.en.md"><img src="style-packages/techniques/japanese-mokuhanga/gallery-16x9.jpg" width="230" alt="Japanese water-based woodblock printing representative image"></a><br><strong>Japanese Water-Based Woodblock Printing</strong><br><a href="style-packages/techniques/japanese-mokuhanga/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/batik-wax-resist/README.en.md"><img src="style-packages/techniques/batik-wax-resist/gallery-16x9.jpg" width="230" alt="Batik Wax-Resist Dyeing representative"></a><br><strong>Batik Wax-Resist Dyeing</strong><br><a href="style-packages/techniques/batik-wax-resist/README.en.md">Open README</a></td></tr>

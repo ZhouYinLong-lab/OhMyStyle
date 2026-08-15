@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-307-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-312-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -80,6 +80,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 主画廊只展示独立风格包。所有卡片统一使用横版 16:9 代表图，点击图片或名称进入风格包 README。
 
 ### 艺术家
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/sonia-delaunay/README.md"><img src="style-packages/artists/sonia-delaunay/gallery-16x9.jpg" width="230" alt="索尼娅·德洛内代表图"></a><br><strong>索尼娅·德洛内</strong><br><a href="style-packages/artists/sonia-delaunay/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/nicolas-de-stael/README.md"><img src="style-packages/artists/nicolas-de-stael/gallery-16x9.jpg" width="230" alt="尼古拉·德·斯塔埃尔代表图"></a><br><strong>尼古拉·德·斯塔埃尔</strong><br><a href="style-packages/artists/nicolas-de-stael/README.md">打开 README</a></td></tr>
@@ -212,6 +216,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </table>
 
 ### 摄影师
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/josef-sudek/README.md"><img src="style-packages/photographers/josef-sudek/gallery-16x9.jpg" width="230" alt="约瑟夫·苏德克代表图"></a><br><strong>约瑟夫·苏德克</strong><br><a href="style-packages/photographers/josef-sudek/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/miyako-ishiuchi/README.md"><img src="style-packages/photographers/miyako-ishiuchi/gallery-16x9.jpg" width="230" alt="石内都代表图"></a><br><strong>石内都</strong><br><a href="style-packages/photographers/miyako-ishiuchi/README.md">打开 README</a></td></tr>
@@ -390,6 +398,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </table>
 
 ### 艺术流派与历史时期
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/tonalism/README.md"><img src="style-packages/movements/tonalism/gallery-16x9.jpg" width="230" alt="色调主义代表图"></a><br><strong>色调主义</strong><br><a href="style-packages/movements/tonalism/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/lyrical-abstraction/README.md"><img src="style-packages/movements/lyrical-abstraction/gallery-16x9.jpg" width="230" alt="抒情抽象代表图"></a><br><strong>抒情抽象</strong><br><a href="style-packages/movements/lyrical-abstraction/README.md">打开 README</a></td></tr>
@@ -579,6 +591,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 ### 游戏美术
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/game-art/to-the-moon-narrative-pixel-art/README.md"><img src="style-packages/game-art/to-the-moon-narrative-pixel-art/gallery-16x9.jpg" width="230" alt="去月球叙事像素美术代表图"></a><br><strong>去月球叙事像素美术</strong><br><a href="style-packages/game-art/to-the-moon-narrative-pixel-art/README.md">打开 README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.md"><img src="style-packages/game-art/kentucky-route-zero-scenographic-game-art/gallery-16x9.jpg" width="230" alt="肯塔基零号公路舞台化游戏美术代表图"></a><br><strong>肯塔基零号公路舞台化游戏美术</strong><br><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.md">打开 README</a></td></tr>
 </table>
 
@@ -662,6 +678,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </table>
 
 ### 工艺与媒介
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/japanese-mokuhanga/README.md"><img src="style-packages/techniques/japanese-mokuhanga/gallery-16x9.jpg" width="230" alt="日本水性木版画代表图"></a><br><strong>日本水性木版画</strong><br><a href="style-packages/techniques/japanese-mokuhanga/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/batik-wax-resist/README.md"><img src="style-packages/techniques/batik-wax-resist/gallery-16x9.jpg" width="230" alt="蜡染防染工艺代表图"></a><br><strong>蜡染防染工艺</strong><br><a href="style-packages/techniques/batik-wax-resist/README.md">打开 README</a></td></tr>
