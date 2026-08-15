@@ -1,0 +1,33 @@
+id: pictorialism
+name: 画意摄影
+kind: movement
+domain: photography
+version: 0.1.0
+summary: >-
+  以摄影的柔焦、纹理纸面、手工印相和朦胧的光线表达摄影的绘画性，同时保留摄影构图与暗房过程的可观察线索。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: 摄影
+  historical_context: '十九世纪末至二十世纪初的国际艺术摄影运动'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

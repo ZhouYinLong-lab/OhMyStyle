@@ -1,0 +1,16 @@
+canonical_name: 画意摄影
+entity_type: movement
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.metmuseum.org/essays/international-pictorialism'
+
+notes:
+  - '以摄影的柔焦、纹理纸面、手工印相和朦胧的光线表达摄影的绘画性，同时保留摄影构图与暗房过程的可观察线索。'
+  - 代表图只用于展示视觉处理，不规定用户主题。

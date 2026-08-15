@@ -1,0 +1,24 @@
+composition:
+  - '柔化边缘保留清晰的主结构'
+  - '层层空气和负空间形成抒情距离'
+  - '画面可以像一幅印相作品但不复制绘画构图'
+palette:
+  - '黑白、棕褐或低饱和色调均可'
+  - '纸张与乳剂的色调统一但不覆盖主体'
+  - '局部高光像被雾包住而不是发光'
+lighting:
+  quality: 'diffused backlight, mist, or overcast light with a gentle luminous veil'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 'textured paper, soft-focus optical rendering, and subtle handmade print irregularity'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: 'visible at the paper and tonal transitions, never a heavy digital grain overlay'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'photographic structure remains legible'
+  - 'softness is localized and purposeful'
+  - 'print surface participates in the image'
+  - 'subject remains user-supplied'

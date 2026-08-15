@@ -1,0 +1,25 @@
+{
+  "name": "画意印相色调",
+  "colors": [
+    {
+      "name": "烟黑",
+      "hex": "#30302E",
+      "role": "anchor and contour"
+    },
+    {
+      "name": "纸灰",
+      "hex": "#B8B3A8",
+      "role": "middle tone"
+    },
+    {
+      "name": "雾白",
+      "hex": "#E6E2D7",
+      "role": "diffused light"
+    },
+    {
+      "name": "温棕",
+      "hex": "#806A57",
+      "role": "optional print tone"
+    }
+  ]
+}
