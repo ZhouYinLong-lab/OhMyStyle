@@ -1,0 +1,33 @@
+id: monument-valley-impossible-geometry
+name: 纪念碑谷不可能几何游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以简洁色块、建筑错视、可旋转的几何路径和宁静留白组织游戏空间，强调视觉谜题而非固定故事。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '移动平台几何解谜游戏美术'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

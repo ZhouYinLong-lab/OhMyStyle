@@ -1,0 +1,15 @@
+medium: stylized geometric game environment art
+materials:
+  support: flat-shaded digital scene with restrained architectural cues
+process:
+  - block the user subject; simplify it into readable planes; construct one impossible connection; apply calm color roles; check for copied level geometry
+technical_direction:
+  contrast: moderate plane separation
+  saturation: controlled and graphic
+  perspective: orthographic or near-isometric with one optical contradiction
+  detail_density: low to moderate, focused on paths and silhouettes
+avoid:
+  - fixed subject, location, character, or story not requested by the user
+  - generic global color filter without process evidence
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

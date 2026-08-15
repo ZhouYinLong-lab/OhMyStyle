@@ -1,0 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.
+- Do not add recurring objects, settings, characters, landmarks, or narrative motifs unless explicitly requested.
+
+Create a new image of {SUBJECT} in {LOCATION}. Use a clean orthographic or near-isometric view, architectural planes that read as a visual puzzle, elegant negative space, simplified solid colors, and a few carefully placed forms. Allow one believable impossible connection or perspective loop, but keep the user's subject and location recognizable. The scene should feel calm and designed, not like a fixed game screenshot. No UI, text, logo, named character, or copied level layout.
+Keep the user's subject and narrative independent from the package's visual identity.

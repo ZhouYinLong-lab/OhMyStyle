@@ -1,0 +1,16 @@
+canonical_name: 纪念碑谷不可能几何游戏美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体和场景始终优先；本包不自动加入固定物件、地点或故事。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://ustwogames.co.uk/our-games/monument-valley/'
+
+notes:
+  - 以简洁色块、建筑错视、可旋转的几何路径和宁静留白组织游戏空间，强调视觉谜题而非固定故事。
+  - 代表图只用于展示视觉处理，不规定用户主题。

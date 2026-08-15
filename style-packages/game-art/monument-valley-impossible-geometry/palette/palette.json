@@ -1,0 +1,9 @@
+{
+  "name": "package-defined working palette",
+  "colors": [
+    {"name": "light support", "hex": "#E4D5B8", "role": "support or highlight"},
+    {"name": "middle tone", "hex": "#8A7867", "role": "structural mid-tone"},
+    {"name": "deep anchor", "hex": "#30343B", "role": "depth and silhouette"}
+  ],
+  "notes": "Use these as role references, not as a mandatory subject palette."
+}

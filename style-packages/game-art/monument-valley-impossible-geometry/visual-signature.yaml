@@ -1,0 +1,16 @@
+composition:
+  - orthographic or near-isometric framing, generous negative space, readable paths and occlusions
+palette:
+  - warm stone, muted blue, coral, cream, and deep shadow with strong role separation
+lighting:
+  quality: soft graphic lighting with quiet plane shadows
+  behavior:
+    - Use light and value to preserve the user's subject rather than add a fixed scene.
+surface:
+  finish: clean stylized game-art surfaces with minimal material noise
+  edges: precise enough to preserve the requested subject
+texture:
+  density: low density, used only to distinguish material or depth
+  placement: follow material and process; never become a uniform overlay
+invariants:
+  - user subject remains focus; spatial contradiction is intentional; no fixed character, landmark, or level
