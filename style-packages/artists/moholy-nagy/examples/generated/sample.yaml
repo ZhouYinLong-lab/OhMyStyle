@@ -1,0 +1,9 @@
+asset: examples/generated/sample.png
+status: generated_pending_human_review
+generator: built-in image generation tool
+prompt_mode: anonymous_visual_signature
+subject: transparent geometric panels and a small ceramic form on a neutral surface
+generated_at: 2026-08-15
+review:
+  decision: pending
+  notes: Representative image demonstrates geometric transparency, controlled light, and sparse primary accents; it is not a reproduction of a named work.

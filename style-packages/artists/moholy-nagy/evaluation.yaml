@@ -1,0 +1,35 @@
+profiles:
+  generic:
+    required:
+      - geometric light and transparent layering are observable
+      - composition remains coherent for a new subject
+      - no copied reference composition or branded material
+    reject_if:
+      - style is represented only by a global color filter
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - light and geometric layers do not obscure the requested subject
+  still_life:
+    required:
+      - transparent and opaque materials remain visually distinguishable
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
+  distinctive_signature:
+    score: null
+    notes: Record whether light, geometry, and transparent layers remain observable.
+  visual_overlap:
+    score: null
+    notes: Compare with constructivism and Bauhaus packages without assuming equivalence.
+  cross_subject_stability:
+    score: null
+    notes: Do not mark complete without outputs for at least two different subjects.
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building

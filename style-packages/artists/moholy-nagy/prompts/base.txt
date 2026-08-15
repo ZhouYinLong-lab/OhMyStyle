@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: light, geometry, transparency,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative motif
+  unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Build the image as an experimental
+light-and-geometry composition: clear geometric negative space, transparent layers,
+controlled occlusion, crisp lines and circles, and one or two restrained primary
+color accents over a black-white-gray structure. Use neutral directional light to
+make transparent surfaces and projections legible. Preserve the user-supplied
+subject and narrative; do not copy a reference composition, named character, logo,
+or text. Keep the image sparse, precise, and materially believable.

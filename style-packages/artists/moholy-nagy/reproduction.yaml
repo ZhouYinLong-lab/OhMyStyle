@@ -1,0 +1,17 @@
+medium: experimental light-based graphic photography
+materials:
+  support: matte paper, transparent acetate, glass, brushed metal, or photographic emulsion
+process:
+  - 先确定主体的几何轮廓和画面中的主要负形。
+  - 再安排透明层、直线、圆形或斜向片段，让它们与主体产生可解释的遮挡关系。
+  - 用单一方向光建立投影和层次，最后加入克制的颗粒、套印或曝光变化。
+technical_direction:
+  contrast: medium_to_high structural contrast with protected midtones
+  saturation: restrained base with one or two controlled primary accents
+  perspective: frontal or shallow spatial construction; avoid wide-angle distortion
+  detail_density: sparse, with detail concentrated at overlaps and material boundaries
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

@@ -1,0 +1,15 @@
+canonical_name: 拉斯洛·莫霍利-纳吉
+entity_type: artist
+domain: hybrid
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点和叙事优先；本包只转译光、几何、透明层和实验媒介，不规定固定物件。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.moma.org/collection/works/50114'
+notes:
+  - 以光的运动、透明材质、几何切割和摄影式负形组织画面。
+  - 参考包豪斯时期的跨媒介实验，但不把包豪斯通用规则或某件作品的构图写死。
