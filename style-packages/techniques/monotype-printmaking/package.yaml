@@ -1,0 +1,33 @@
+id: monotype-printmaking
+name: 单版画
+kind: technique
+domain: printmaking
+version: 0.1.0
+summary: >-
+  通过一次性版面转印、擦拭边缘、墨层不均和轻微套位变化保留绘画般的偶然性，强调不可完全复制的表面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: printmaking
+  historical_context: '现代版画实践中的一次性转印媒介'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

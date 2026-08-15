@@ -1,0 +1,18 @@
+composition:
+  - 画面保留版面边界、转印留下的空缺和不完全覆盖，让空间从墨层的断裂中出现。
+  - 构图可以开放或半具象，但不追求重复图案的机械均匀。
+palette:
+  - 以一到三层半透明墨色叠印，颜色因压印、擦拭和纸张吸收产生不均匀的重叠。
+lighting:
+  quality: print-room light with visible paper and ink relief
+  behavior:
+    - 光线柔和但不抹平纸纤维、边缘残墨和压印变化。
+surface:
+  finish: one-off ink transfer on fibrous paper
+  edges: wiped, feathered, broken and occasionally hard at plate boundaries
+texture:
+  density: uneven, with ghosted zones and concentrated ink passages
+  placement: on plate edges, wiped highlights, overlaps and paper grain
+invariants:
+  - 一次性转印的不均匀、幽灵印痕和可见纸面必须跨主体保留。
+  - 色彩层次应来自墨层与纸张的关系，不得退化成数字渐变或规则网点。

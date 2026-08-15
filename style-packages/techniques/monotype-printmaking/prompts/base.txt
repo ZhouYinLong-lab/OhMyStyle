@@ -1,0 +1,15 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION} as a one-off monotype print. Use a
+warm fibrous paper ground and one primary ink transfer with uneven density,
+wiped highlights, dragged edges, plate-boundary traces, pressure variation and a
+few ghost impressions. Use translucent smoky blue, umber, muted red and deep ink
+gray in overlapping passages; allow paper gaps to remain active. Keep the user's
+subject recognizable but simplified by the plate process. Do not add a printmaking
+studio, roller, ink tray, plant, abstract still life or repeated dot pattern unless
+requested. Do not copy a reference composition, text or signature.

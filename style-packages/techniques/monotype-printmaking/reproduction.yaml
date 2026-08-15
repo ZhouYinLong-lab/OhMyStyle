@@ -1,0 +1,19 @@
+medium: one-off monotype print with painterly ink transfer
+materials:
+  support: damp or dry fibrous paper and a smooth non-porous plate
+process:
+  - Establish the user's subject with a simple plate-side drawing or ink mass.
+  - Roll or brush a thin, uneven layer of ink onto one plate.
+  - Wipe highlights, drag edges and leave selected areas partially uncovered.
+  - Transfer once, preserving pressure variation, ghost marks and plate-edge drift.
+  - Add only sparse secondary marks; do not make a repeatable screen pattern.
+technical_direction:
+  contrast: low to medium, shaped by ink density and paper showing through
+  saturation: muted to medium, with transparent overlaps rather than neon color
+  perspective: simplified or flattened according to the user's subject
+  detail_density: selective, concentrated at wiped edges and overlapping ink
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

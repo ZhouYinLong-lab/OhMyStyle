@@ -1,0 +1,9 @@
+asset: sample.png
+status: pending_human_review
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: open abstract transfer with no fixed object
+generated_at: 2026-08-15
+review:
+  decision: pending
+  notes: Representative image generated for package review; human rating pending.

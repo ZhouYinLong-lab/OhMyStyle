@@ -1,0 +1,11 @@
+{
+  "name": "半透明蓝灰与赭红墨层",
+  "colors": [
+    {"name": "纸张暖灰", "hex": "#D8D0C0", "role": "active paper ground"},
+    {"name": "烟蓝", "hex": "#536A75", "role": "transparent cool layer"},
+    {"name": "赭褐", "hex": "#8B6747", "role": "earth ink layer"},
+    {"name": "灰红", "hex": "#A46A5C", "role": "muted warm overlap"},
+    {"name": "深墨", "hex": "#394047", "role": "compressed dark passage"}
+  ],
+  "notes": "颜色保持半透明和不均匀，纸面间隙是构图的一部分。"
+}

@@ -1,0 +1,21 @@
+canonical_name: 单版画
+entity_type: technique
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 开放抽象静物
+    - 普通物体的单次转印研究
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.moma.org/explore/inside_out/2016/05/27/lasting-impressions-the-monotype-medium-from-edgar-degas-to-elizabeth-peyton/'
+
+notes:
+  - 关注一次性版面转印带来的不可完全复制、擦拭和墨层变化。
+  - 示例中的抽象形体只用于展示媒介表面，不是技法的固定题材。
