@@ -561,6 +561,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: joan-mitchell
+  name: 琼·米切尔
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/joan-mitchell
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: johannes-vermeer
   name: 约翰内斯·维米尔
   kind: artist
@@ -2396,6 +2413,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: mexican-muralism
+  name: 墨西哥壁画运动
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/mexican-muralism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: mid-century-modern
   name: 中世纪现代主义
   kind: movement
@@ -3552,6 +3586,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: raghubir-singh
+  name: 拉古比尔·辛格
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/raghubir-singh
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: rinko-kawauchi
   name: 川内伦子
   kind: photographer
@@ -4055,6 +4106,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: artcenter
+  name: 艺术中心设计学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/artcenter
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: bauhaus
   name: 包豪斯
   kind: school
@@ -4582,6 +4650,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: monotype-printmaking
+  name: 单版画
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/monotype-printmaking
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: oil-painting
   name: 油画
   kind: technique
