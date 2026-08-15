@@ -1,0 +1,33 @@
+id: school-of-visual-arts
+name: 视觉艺术学院
+kind: school
+domain: design
+version: 0.1.0
+summary: >-
+  以跨媒介实验、清晰的概念框架和面向展示的视觉叙事，组织平面、影像、物件与空间之间的关系。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: design_school
+  medium: design
+  historical_context: '纽约视觉艺术教育机构；涵盖艺术、设计、插画、摄影、动画与视觉叙事等实践。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

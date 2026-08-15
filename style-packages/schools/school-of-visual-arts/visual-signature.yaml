@@ -1,0 +1,21 @@
+composition:
+  - Build a clear visual proposition with strong hierarchy, purposeful cropping, and room for process evidence.
+  - Allow image, text-like structure, object, or space to coexist when the concept requires it, without forcing a collage.
+palette:
+  - Treat color as a conceptual and material decision; combine controlled neutrals with one deliberate accent family.
+  - Preserve the difference between ink, screen, paper, paint, and light rather than applying one global grade.
+lighting:
+  quality: clear exhibition light or neutral working light
+  behavior:
+    - Keep the visual proposition readable before adding atmosphere.
+    - Let material and process determine local contrast.
+surface:
+  finish: resolved presentation surface with visible process where useful
+  edges: intentional; crisp for design elements and tactile for physical media
+texture:
+  density: variable by concept, with focal concentration
+  placement: place texture where it explains process or material, not as decoration everywhere
+invariants:
+  - concept-led hierarchy
+  - cross-media material awareness
+  - presentation-ready structure with room for interpretation
