@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-347-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-353-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -203,7 +203,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/caspar-david-friedrich/README.md"><img src="style-packages/artists/caspar-david-friedrich/gallery-16x9.jpg" width="230" alt="卡斯帕·大卫·弗里德里希代表图"></a><br><strong>卡斯帕·大卫·弗里德里希</strong><br><a href="style-packages/artists/caspar-david-friedrich/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/artists/edouard-manet/README.md"><img src="style-packages/artists/edouard-manet/gallery-16x9.jpg" width="230" alt="爱德华·马奈代表图"></a><br><strong>爱德华·马奈</strong><br><a href="style-packages/artists/edouard-manet/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/edouard-manet/README.md"><img src="style-packages/artists/edouard-manet/gallery-16x9.jpg" width="230" alt="爱德华·马奈代表图"></a><br><strong>爱德华·马奈</strong><br><a href="style-packages/artists/edouard-manet/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/pierre-bonnard/README.md"><img src="style-packages/artists/pierre-bonnard/gallery-16x9.jpg" width="230" alt="皮埃尔·博纳尔代表图"></a><br><strong>皮埃尔·博纳尔</strong><br><a href="style-packages/artists/pierre-bonnard/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/jean-auguste-dominique-ingres/README.md"><img src="style-packages/artists/jean-auguste-dominique-ingres/gallery-16x9.jpg" width="230" alt="让·奥古斯特·多米尼克·安格尔代表图"></a><br><strong>让·奥古斯特·多米尼克·安格尔</strong><br><a href="style-packages/artists/jean-auguste-dominique-ingres/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -314,6 +316,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/michael-kenna/README.md"><img src="style-packages/photographers/michael-kenna/gallery-16x9.jpg" width="230" alt="迈克尔·肯纳代表图"></a><br><strong>迈克尔·肯纳</strong><br><a href="style-packages/photographers/michael-kenna/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/helen-levitt/README.md"><img src="style-packages/photographers/helen-levitt/gallery-16x9.jpg" width="230" alt="海伦·莱维特代表图"></a><br><strong>海伦·莱维特</strong><br><a href="style-packages/photographers/helen-levitt/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/weegee/README.md"><img src="style-packages/photographers/weegee/gallery-16x9.jpg" width="230" alt="维吉代表图"></a><br><strong>维吉</strong><br><a href="style-packages/photographers/weegee/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/photographers/elliott-erwitt/README.md"><img src="style-packages/photographers/elliott-erwitt/gallery-16x9.jpg" width="230" alt="埃利奥特·厄威特代表图"></a><br><strong>埃利奥特·厄威特</strong><br><a href="style-packages/photographers/elliott-erwitt/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -503,6 +508,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/pictorialism/README.md"><img src="style-packages/movements/pictorialism/gallery-16x9.jpg" width="230" alt="画意摄影代表图"></a><br><strong>画意摄影</strong><br><a href="style-packages/movements/pictorialism/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/byzantine-art/README.md"><img src="style-packages/movements/byzantine-art/gallery-16x9.jpg" width="230" alt="拜占庭艺术代表图"></a><br><strong>拜占庭艺术</strong><br><a href="style-packages/movements/byzantine-art/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/movements/romanesque-art/README.md"><img src="style-packages/movements/romanesque-art/gallery-16x9.jpg" width="230" alt="罗马式艺术代表图"></a><br><strong>罗马式艺术</strong><br><a href="style-packages/movements/romanesque-art/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 原创预设
@@ -629,8 +637,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/okami-sumi-e-game-art/README.md"><img src="style-packages/game-art/okami-sumi-e-game-art/gallery-16x9.jpg" width="230" alt="大神水墨游戏美术代表图"></a><br><strong>大神水墨游戏美术</strong><br><a href="style-packages/game-art/okami-sumi-e-game-art/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.md"><img src="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/gallery-16x9.jpg" width="230" alt="巨像之影荒原三维游戏美术代表图"></a><br><strong>巨像之影荒原三维游戏美术</strong><br><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.md">打开 README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/game-art/island-cel-shaded-game-art/README.md"><img src="style-packages/game-art/island-cel-shaded-game-art/gallery-16x9.jpg" width="230" alt="海岛卡通渲染游戏美术代表图"></a><br><strong>海岛卡通渲染游戏美术</strong><br><a href="style-packages/game-art/island-cel-shaded-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.md"><img src="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/gallery-16x9.jpg" width="230" alt="巨像之影荒原三维游戏美术代表图"></a><br><strong>巨像之影荒原三维游戏美术</strong><br><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/island-cel-shaded-game-art/README.md"><img src="style-packages/game-art/island-cel-shaded-game-art/gallery-16x9.jpg" width="230" alt="海岛卡通渲染游戏美术代表图"></a><br><strong>海岛卡通渲染游戏美术</strong><br><a href="style-packages/game-art/island-cel-shaded-game-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/last-of-us-cinematic-survival/README.md"><img src="style-packages/game-art/last-of-us-cinematic-survival/gallery-16x9.jpg" width="230" alt="美丽衰败生存游戏美术代表图"></a><br><strong>美丽衰败生存游戏美术</strong><br><a href="style-packages/game-art/last-of-us-cinematic-survival/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -693,8 +702,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/photogravure/README.md"><img src="style-packages/techniques/photogravure/gallery-16x9.jpg" width="230" alt="凹版照相制版代表图"></a><br><strong>凹版照相制版</strong><br><a href="style-packages/techniques/photogravure/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/techniques/stained-glass/README.md"><img src="style-packages/techniques/stained-glass/gallery-16x9.jpg" width="230" alt="彩绘玻璃代表图"></a><br><strong>彩绘玻璃</strong><br><a href="style-packages/techniques/stained-glass/README.md">打开 README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/techniques/gelatin-silver-print/README.md"><img src="style-packages/techniques/gelatin-silver-print/gallery-16x9.jpg" width="230" alt="明胶银盐印相代表图"></a><br><strong>明胶银盐印相</strong><br><a href="style-packages/techniques/gelatin-silver-print/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/stained-glass/README.md"><img src="style-packages/techniques/stained-glass/gallery-16x9.jpg" width="230" alt="彩绘玻璃代表图"></a><br><strong>彩绘玻璃</strong><br><a href="style-packages/techniques/stained-glass/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/gelatin-silver-print/README.md"><img src="style-packages/techniques/gelatin-silver-print/gallery-16x9.jpg" width="230" alt="明胶银盐印相代表图"></a><br><strong>明胶银盐印相</strong><br><a href="style-packages/techniques/gelatin-silver-print/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/wet-plate-collodion/README.md"><img src="style-packages/techniques/wet-plate-collodion/gallery-16x9.jpg" width="230" alt="湿版火棉胶摄影代表图"></a><br><strong>湿版火棉胶摄影</strong><br><a href="style-packages/techniques/wet-plate-collodion/README.md">打开 README</a></td>
 </tr>
 </table>
 

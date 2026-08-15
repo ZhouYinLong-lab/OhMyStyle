@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-347-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-353-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -203,7 +203,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/caspar-david-friedrich/README.en.md"><img src="style-packages/artists/caspar-david-friedrich/gallery-16x9.jpg" width="230" alt="Caspar David Friedrich representative image"></a><br><strong>Caspar David Friedrich</strong><br><a href="style-packages/artists/caspar-david-friedrich/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/artists/edouard-manet/README.en.md"><img src="style-packages/artists/edouard-manet/gallery-16x9.jpg" width="230" alt="Édouard Manet representative image"></a><br><strong>Édouard Manet</strong><br><a href="style-packages/artists/edouard-manet/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/edouard-manet/README.en.md"><img src="style-packages/artists/edouard-manet/gallery-16x9.jpg" width="230" alt="Édouard Manet representative image"></a><br><strong>Édouard Manet</strong><br><a href="style-packages/artists/edouard-manet/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/pierre-bonnard/README.md"><img src="style-packages/artists/pierre-bonnard/gallery-16x9.jpg" width="230" alt="Pierre Bonnard representative image"></a><br><strong>Pierre Bonnard</strong><br><a href="style-packages/artists/pierre-bonnard/README.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/jean-auguste-dominique-ingres/README.md"><img src="style-packages/artists/jean-auguste-dominique-ingres/gallery-16x9.jpg" width="230" alt="Jean-Auguste-Dominique Ingres representative image"></a><br><strong>Jean-Auguste-Dominique Ingres</strong><br><a href="style-packages/artists/jean-auguste-dominique-ingres/README.md">Open README</a></td>
 </tr>
 </table>
 
@@ -314,6 +316,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/michael-kenna/README.en.md"><img src="style-packages/photographers/michael-kenna/gallery-16x9.jpg" width="230" alt="Michael Kenna representative image"></a><br><strong>Michael Kenna</strong><br><a href="style-packages/photographers/michael-kenna/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/helen-levitt/README.en.md"><img src="style-packages/photographers/helen-levitt/gallery-16x9.jpg" width="230" alt="Helen Levitt representative image"></a><br><strong>Helen Levitt</strong><br><a href="style-packages/photographers/helen-levitt/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/weegee/README.en.md"><img src="style-packages/photographers/weegee/gallery-16x9.jpg" width="230" alt="Weegee representative image"></a><br><strong>Weegee</strong><br><a href="style-packages/photographers/weegee/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/photographers/elliott-erwitt/README.md"><img src="style-packages/photographers/elliott-erwitt/gallery-16x9.jpg" width="230" alt="Elliott Erwitt representative image"></a><br><strong>Elliott Erwitt</strong><br><a href="style-packages/photographers/elliott-erwitt/README.md">Open README</a></td>
 </tr>
 </table>
 
@@ -503,6 +508,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/pictorialism/README.en.md"><img src="style-packages/movements/pictorialism/gallery-16x9.jpg" width="230" alt="Pictorialism representative image"></a><br><strong>Pictorialism</strong><br><a href="style-packages/movements/pictorialism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/byzantine-art/README.en.md"><img src="style-packages/movements/byzantine-art/gallery-16x9.jpg" width="230" alt="Byzantine Art representative image"></a><br><strong>Byzantine Art</strong><br><a href="style-packages/movements/byzantine-art/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/movements/romanesque-art/README.md"><img src="style-packages/movements/romanesque-art/gallery-16x9.jpg" width="230" alt="Romanesque Art representative image"></a><br><strong>Romanesque Art</strong><br><a href="style-packages/movements/romanesque-art/README.md">Open README</a></td>
+</tr>
 </table>
 
 ### Original presets
@@ -629,8 +637,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/okami-sumi-e-game-art/README.en.md"><img src="style-packages/game-art/okami-sumi-e-game-art/gallery-16x9.jpg" width="230" alt="Ōkami Sumi-e Game Art representative image"></a><br><strong>Ōkami Sumi-e Game Art</strong><br><a href="style-packages/game-art/okami-sumi-e-game-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.en.md"><img src="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/gallery-16x9.jpg" width="230" alt="Shadow of the Colossus atmospheric 3D game art representative image"></a><br><strong>Shadow of the Colossus Atmospheric 3D Game Art</strong><br><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.en.md">Open README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/game-art/island-cel-shaded-game-art/README.en.md"><img src="style-packages/game-art/island-cel-shaded-game-art/gallery-16x9.jpg" width="230" alt="Island Cel-Shaded Game Art representative image"></a><br><strong>Island Cel-Shaded Game Art</strong><br><a href="style-packages/game-art/island-cel-shaded-game-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.en.md"><img src="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/gallery-16x9.jpg" width="230" alt="Shadow of the Colossus atmospheric 3D game art representative image"></a><br><strong>Shadow of the Colossus Atmospheric 3D Game Art</strong><br><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/island-cel-shaded-game-art/README.en.md"><img src="style-packages/game-art/island-cel-shaded-game-art/gallery-16x9.jpg" width="230" alt="Island Cel-Shaded Game Art representative image"></a><br><strong>Island Cel-Shaded Game Art</strong><br><a href="style-packages/game-art/island-cel-shaded-game-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/last-of-us-cinematic-survival/README.md"><img src="style-packages/game-art/last-of-us-cinematic-survival/gallery-16x9.jpg" width="230" alt="Beautiful Decay Survival Game Art representative image"></a><br><strong>Beautiful Decay Survival Game Art</strong><br><a href="style-packages/game-art/last-of-us-cinematic-survival/README.md">Open README</a></td>
 </tr>
 </table>
 
@@ -693,8 +702,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/photogravure/README.en.md"><img src="style-packages/techniques/photogravure/gallery-16x9.jpg" width="230" alt="Photogravure representative image"></a><br><strong>Photogravure</strong><br><a href="style-packages/techniques/photogravure/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/techniques/stained-glass/README.en.md"><img src="style-packages/techniques/stained-glass/gallery-16x9.jpg" width="230" alt="Stained Glass representative image"></a><br><strong>Stained Glass</strong><br><a href="style-packages/techniques/stained-glass/README.en.md">Open README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/techniques/gelatin-silver-print/README.en.md"><img src="style-packages/techniques/gelatin-silver-print/gallery-16x9.jpg" width="230" alt="Gelatin silver printing representative image"></a><br><strong>Gelatin Silver Printing</strong><br><a href="style-packages/techniques/gelatin-silver-print/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/stained-glass/README.en.md"><img src="style-packages/techniques/stained-glass/gallery-16x9.jpg" width="230" alt="Stained Glass representative image"></a><br><strong>Stained Glass</strong><br><a href="style-packages/techniques/stained-glass/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/gelatin-silver-print/README.en.md"><img src="style-packages/techniques/gelatin-silver-print/gallery-16x9.jpg" width="230" alt="Gelatin silver printing representative image"></a><br><strong>Gelatin Silver Printing</strong><br><a href="style-packages/techniques/gelatin-silver-print/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/wet-plate-collodion/README.md"><img src="style-packages/techniques/wet-plate-collodion/gallery-16x9.jpg" width="230" alt="Wet-Plate Collodion Photography representative image"></a><br><strong>Wet-Plate Collodion Photography</strong><br><a href="style-packages/techniques/wet-plate-collodion/README.md">Open README</a></td>
 </tr>
 </table>
 
