@@ -1,0 +1,33 @@
+id: collagraph-printmaking
+name: 拼贴版画
+kind: technique
+domain: printmaking
+version: 0.1.0
+summary: >-
+  以叠加、粘附和压印形成不均匀的版面肌理，让材料痕迹、墨色密度和纸张压痕共同构成图像。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: printmaking
+  historical_context: '现代版画技法；通过在版材上附着不同材料，再上墨并压印形成复合表面。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

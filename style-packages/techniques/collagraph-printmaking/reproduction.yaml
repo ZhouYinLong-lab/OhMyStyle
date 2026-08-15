@@ -1,0 +1,17 @@
+medium: collagraph printmaking
+materials:
+  support: textured paper and a hand-built plate of card, wood, or metal
+process:
+  - build the user-supplied subject as a relief plate using attached materials and drawn or scraped passages
+  - seal the plate, ink the raised and recessed areas, and wipe selectively
+  - press damp paper into the relief and retain the tactile registration differences
+technical_direction:
+  contrast: moderate, carried by ink density and relief
+  saturation: limited ink family
+  perspective: follows the user-supplied subject; no fixed viewpoint
+  detail_density: high at material transitions, lower in broad paper fields
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

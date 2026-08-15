@@ -1,0 +1,20 @@
+composition:
+  - Let layered relief, irregular silhouettes, and pressure variations organize the image.
+  - Preserve the clarity of the user-supplied subject while allowing material accidents to interrupt perfect geometry.
+palette:
+  - Use a limited ink family with paper ground and occasional two- or three-color registration shifts.
+  - Let ink density, wiping, and paper absorbency create the main tonal range.
+lighting:
+  quality: direct, even print light
+  behavior:
+    - Keep the printed relief readable; avoid glossy lighting that hides the paper and plate texture.
+surface:
+  finish: tactile pressed paper with uneven ink film
+  edges: irregular, cut, or embossed edges with occasional soft transfer
+texture:
+  density: medium to high at plate transitions
+  placement: concentrated around attached materials, wiped passages, and pressure changes
+invariants:
+  - visible material layering and pressure variation
+  - limited ink palette over a paper ground
+  - tactile irregularity without losing subject legibility
