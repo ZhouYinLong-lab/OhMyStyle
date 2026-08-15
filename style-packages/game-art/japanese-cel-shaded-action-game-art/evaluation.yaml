@@ -1,0 +1,22 @@
+version: 1
+tests:
+  - id: portrait
+    subject: 一件普通雨衣
+    checks: [材质明暗带, 轮廓可读, 不生成固定角色]
+  - id: still-life
+    subject: 一台旧收音机
+    checks: [三维体积, 赛璐珞分段, 不添加武器]
+  - id: environment
+    subject: 一座未指定用途的桥
+    checks: [动态透视, 空间遮挡, 不生成具体游戏地标]
+  - id: minimal
+    subject: 一个几何平台
+    checks: [焦点层级, 轮廓控制, 无界面元素]
+  - id: ambiguous
+    subject: 一个正在移动的物体
+    checks: [动作潜势, 明暗一致, 主体独立]
+criteria:
+  subject_independence: 游戏媒介不替换用户主体
+  style_recognition: 赛璐珞明暗、三维空间和手绘轮廓清楚
+  prompt_following: 主体、画幅、地点和数量符合要求
+  ai_artifact_level: 避免角色模板、界面污染和无来源发光

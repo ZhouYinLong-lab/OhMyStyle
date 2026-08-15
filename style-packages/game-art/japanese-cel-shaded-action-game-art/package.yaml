@@ -1,0 +1,33 @@
+id: japanese-cel-shaded-action-game-art
+name: 日式赛璐珞动作游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以硬边卡通明暗、手绘轮廓、二维动画节奏和三维体积结合，形成清晰而有动势的动作游戏画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '2000年代以来日本二维三维混合游戏视觉'
+  application: game scenes and character-action compositions
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,9 @@
+source_type: game_art_reference
+research_sources:
+  - url: https://www.arcsystemworks.com/game/guilty-gear-strive/
+    purpose: 了解现代日式动作游戏中的二维绘画与三维渲染结合
+reference_policy:
+  external_works_bundled: false
+  representative_image: generated_anonymous_game_scene
+  copied_composition: false
+rights_note: 研究链接用于媒介与视觉方法说明；不复制具体游戏角色、场景、界面或标志。

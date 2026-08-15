@@ -1,0 +1,12 @@
+family: 现代动作游戏视觉
+near_duplicates: []
+same_family:
+  - game-art/rpg-maker-pixel-art
+complements:
+  - artists/hayao-miyazaki
+conflicts:
+  - techniques/photorealistic-rendering
+distinctives:
+  - 赛璐珞明暗带与三维体积并置
+  - 手绘轮廓服务于动态透视
+  - 角色与环境共享渲染规则
