@@ -194,8 +194,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/yves-klein/README.md"><img src="style-packages/artists/yves-klein/gallery-16x9.jpg" width="230" alt="伊夫·克莱因代表图"></a><br><strong>伊夫·克莱因</strong><br><a href="style-packages/artists/yves-klein/README.md">打开 README</a></td>
-
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/rene-magritte/README.md"><img src="style-packages/artists/rene-magritte/gallery-16x9.jpg" width="230" alt="勒内·马格利特代表图"></a><br><strong>勒内·马格利特</strong><br><a href="style-packages/artists/rene-magritte/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="style-packages/artists/albrecht-durer/README.md"><img src="style-packages/artists/albrecht-durer/gallery-16x9.jpg" width="230" alt="阿尔布雷希特·丢勒代表图"></a><br><strong>阿尔布雷希特·丢勒</strong><br><a href="style-packages/artists/albrecht-durer/README.md">打开 README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/rene-magritte/README.md"><img src="style-packages/artists/rene-magritte/gallery-16x9.jpg" width="230" alt="勒内·马格利特代表图"></a><br><strong>勒内·马格利特</strong><br><a href="style-packages/artists/rene-magritte/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/albrecht-durer/README.md"><img src="style-packages/artists/albrecht-durer/gallery-16x9.jpg" width="230" alt="阿尔布雷希特·丢勒代表图"></a><br><strong>阿尔布雷希特·丢勒</strong><br><a href="style-packages/artists/albrecht-durer/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 摄影师
@@ -298,8 +299,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/shomei-tomatsu/README.md"><img src="style-packages/photographers/shomei-tomatsu/gallery-16x9.jpg" width="230" alt="东松照明代表图"></a><br><strong>东松照明</strong><br><a href="style-packages/photographers/shomei-tomatsu/README.md">打开 README</a></td>
-
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lillian-bassman/README.md"><img src="style-packages/photographers/lillian-bassman/gallery-16x9.jpg" width="230" alt="莉莲·巴斯曼代表图"></a><br><strong>莉莲·巴斯曼</strong><br><a href="style-packages/photographers/lillian-bassman/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="style-packages/photographers/erwin-blumenfeld/README.md"><img src="style-packages/photographers/erwin-blumenfeld/gallery-16x9.jpg" width="230" alt="埃尔温·布卢门菲尔德代表图"></a><br><strong>埃尔温·布卢门菲尔德</strong><br><a href="style-packages/photographers/erwin-blumenfeld/README.md">打开 README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lillian-bassman/README.md"><img src="style-packages/photographers/lillian-bassman/gallery-16x9.jpg" width="230" alt="莉莲·巴斯曼代表图"></a><br><strong>莉莲·巴斯曼</strong><br><a href="style-packages/photographers/lillian-bassman/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/erwin-blumenfeld/README.md"><img src="style-packages/photographers/erwin-blumenfeld/gallery-16x9.jpg" width="230" alt="埃尔温·布卢门菲尔德代表图"></a><br><strong>埃尔温·布卢门菲尔德</strong><br><a href="style-packages/photographers/erwin-blumenfeld/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 设计学校
@@ -340,9 +342,8 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/artcenter/README.md"><img src="style-packages/schools/artcenter/gallery-16x9.jpg" width="230" alt="艺术中心设计学院代表图"></a><br><strong>艺术中心设计学院</strong><br><a href="style-packages/schools/artcenter/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/design-academy-eindhoven/README.md"><img src="style-packages/schools/design-academy-eindhoven/gallery-16x9.jpg" width="230" alt="埃因霍温设计学院代表图"></a><br><strong>埃因霍温设计学院</strong><br><a href="style-packages/schools/design-academy-eindhoven/README.md">打开 README</a></td>
 </tr>
-
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/academy-of-fine-arts-vienna/README.md"><img src="style-packages/schools/academy-of-fine-arts-vienna/gallery-16x9.jpg" width="230" alt="维也纳美术学院代表图"></a><br><strong>维也纳美术学院</strong><br><a href="style-packages/schools/academy-of-fine-arts-vienna/README.md">打开 README</a></td>
+<td width="100%" valign="top" align="center"><a href="style-packages/schools/academy-of-fine-arts-vienna/README.md"><img src="style-packages/schools/academy-of-fine-arts-vienna/gallery-16x9.jpg" width="230" alt="维也纳美术学院代表图"></a><br><strong>维也纳美术学院</strong><br><a href="style-packages/schools/academy-of-fine-arts-vienna/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -482,8 +483,8 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/mughal-miniature-painting/README.md"><img src="style-packages/movements/mughal-miniature-painting/gallery-16x9.jpg" width="230" alt="莫卧儿细密画代表图"></a><br><strong>莫卧儿细密画</strong><br><a href="style-packages/movements/mughal-miniature-painting/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/vorticism/README.md"><img src="style-packages/movements/vorticism/gallery-16x9.jpg" width="230" alt="旋涡主义代表图"></a><br><strong>旋涡主义</strong><br><a href="style-packages/movements/vorticism/README.md">打开 README</a></td>
-
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-dada/README.md"><img src="style-packages/movements/neo-dada/gallery-16x9.jpg" width="230" alt="新达达代表图"></a><br><strong>新达达</strong><br><a href="style-packages/movements/neo-dada/README.md">打开 README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-dada/README.md"><img src="style-packages/movements/neo-dada/gallery-16x9.jpg" width="230" alt="新达达代表图"></a><br><strong>新达达</strong><br><a href="style-packages/movements/neo-dada/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 原创预设
@@ -516,8 +517,8 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/quiet-flash-documentary/README.md"><img src="style-packages/presets/quiet-flash-documentary/gallery-16x9.jpg" width="230" alt="安静直闪纪实代表图"></a><br><strong>安静直闪纪实</strong><br><a href="style-packages/presets/quiet-flash-documentary/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/soft-overcast-editorial/README.md"><img src="style-packages/presets/soft-overcast-editorial/gallery-16x9.jpg" width="230" alt="柔和阴天编辑摄影代表图"></a><br><strong>柔和阴天编辑摄影</strong><br><a href="style-packages/presets/soft-overcast-editorial/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/warm-paper-still-life/README.md"><img src="style-packages/presets/warm-paper-still-life/gallery-16x9.jpg" width="230" alt="暖纸色静物代表图"></a><br><strong>暖纸色静物</strong><br><a href="style-packages/presets/warm-paper-still-life/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/presets/soft-overcast-editorial/README.md"><img src="style-packages/presets/soft-overcast-editorial/gallery-16x9.jpg" width="230" alt="柔和阴天编辑摄影代表图"></a><br><strong>柔和阴天编辑摄影</strong><br><a href="style-packages/presets/soft-overcast-editorial/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/presets/warm-paper-still-life/README.md"><img src="style-packages/presets/warm-paper-still-life/gallery-16x9.jpg" width="230" alt="暖纸色静物代表图"></a><br><strong>暖纸色静物</strong><br><a href="style-packages/presets/warm-paper-still-life/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -604,10 +605,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.md"><img src="style-packages/game-art/spiritfarer-hand-drawn-game-art/gallery-16x9.jpg" width="230" alt="灵魂旅人手绘游戏美术代表图"></a><br><strong>灵魂旅人手绘游戏美术</strong><br><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.md"><img src="style-packages/game-art/pentiment-medieval-manuscript-game-art/gallery-16x9.jpg" width="230" alt="潘提曼中世纪手稿游戏美术代表图"></a><br><strong>潘提曼中世纪手稿游戏美术</strong><br><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.md">打开 README</a></td>
 </tr>
-
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/monument-valley-impossible-geometry/README.md"><img src="style-packages/game-art/monument-valley-impossible-geometry/gallery-16x9.jpg" width="230" alt="纪念碑谷不可能几何游戏美术代表图"></a><br><strong>纪念碑谷不可能几何游戏美术</strong><br><a href="style-packages/game-art/monument-valley-impossible-geometry/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/gris-watercolor-game-art/README.md"><img src="style-packages/game-art/gris-watercolor-game-art/gallery-16x9.jpg" width="230" alt="灰烬水彩游戏美术代表图"></a><br><strong>灰烬水彩游戏美术</strong><br><a href="style-packages/game-art/gris-watercolor-game-art/README.md">打开 README</a></td></tr>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/monument-valley-impossible-geometry/README.md"><img src="style-packages/game-art/monument-valley-impossible-geometry/gallery-16x9.jpg" width="230" alt="纪念碑谷不可能几何游戏美术代表图"></a><br><strong>纪念碑谷不可能几何游戏美术</strong><br><a href="style-packages/game-art/monument-valley-impossible-geometry/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/gris-watercolor-game-art/README.md"><img src="style-packages/game-art/gris-watercolor-game-art/gallery-16x9.jpg" width="230" alt="灰烬水彩游戏美术代表图"></a><br><strong>灰烬水彩游戏美术</strong><br><a href="style-packages/game-art/gris-watercolor-game-art/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 工艺与媒介
@@ -665,8 +666,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/albumen-printing/README.md"><img src="style-packages/techniques/albumen-printing/gallery-16x9.jpg" width="230" alt="蛋白印相代表图"></a><br><strong>蛋白印相</strong><br><a href="style-packages/techniques/albumen-printing/README.md">打开 README</a></td>
-
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/salted-paper-printing/README.md"><img src="style-packages/techniques/salted-paper-printing/gallery-16x9.jpg" width="230" alt="盐纸印相代表图"></a><br><strong>盐纸印相</strong><br><a href="style-packages/techniques/salted-paper-printing/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="style-packages/techniques/photogravure/README.md"><img src="style-packages/techniques/photogravure/gallery-16x9.jpg" width="230" alt="凹版照相制版代表图"></a><br><strong>凹版照相制版</strong><br><a href="style-packages/techniques/photogravure/README.md">打开 README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/salted-paper-printing/README.md"><img src="style-packages/techniques/salted-paper-printing/gallery-16x9.jpg" width="230" alt="盐纸印相代表图"></a><br><strong>盐纸印相</strong><br><a href="style-packages/techniques/salted-paper-printing/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/photogravure/README.md"><img src="style-packages/techniques/photogravure/gallery-16x9.jpg" width="230" alt="凹版照相制版代表图"></a><br><strong>凹版照相制版</strong><br><a href="style-packages/techniques/photogravure/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 继承的 110 个轻量预设
@@ -1287,12 +1289,12 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center">
+<td width="50%" valign="top" align="center">
 <a href="styles/yellow-black-manga-food-zine-ad-style/README.md"><img src="styles/yellow-black-manga-food-zine-ad-style/preview-16x9.jpg" width="230" alt="Yellow Black Manga Food Zine Ad Style代表图"></a><br>
 <strong>Yellow Black Manga Food Zine Ad Style</strong><br>
 <a href="styles/yellow-black-manga-food-zine-ad-style/README.md">打开 README</a>
 </td>
-<td width="33%" valign="top" align="center">
+<td width="50%" valign="top" align="center">
 <a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.md"><img src="styles/yellow-graffiti-fisheye-manga-street-poster-style/preview-16x9.jpg" width="230" alt="Yellow Graffiti Fisheye Manga Street Poster Style代表图"></a><br>
 <strong>Yellow Graffiti Fisheye Manga Street Poster Style</strong><br>
 <a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.md">打开 README</a>

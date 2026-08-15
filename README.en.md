@@ -194,8 +194,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/yves-klein/README.en.md"><img src="style-packages/artists/yves-klein/gallery-16x9.jpg" width="230" alt="Yves Klein representative image"></a><br><strong>Yves Klein</strong><br><a href="style-packages/artists/yves-klein/README.en.md">Open README</a></td>
-
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/rene-magritte/README.en.md"><img src="style-packages/artists/rene-magritte/gallery-16x9.jpg" width="230" alt="René Magritte representative image"></a><br><strong>René Magritte</strong><br><a href="style-packages/artists/rene-magritte/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="style-packages/artists/albrecht-durer/README.en.md"><img src="style-packages/artists/albrecht-durer/gallery-16x9.jpg" width="230" alt="Albrecht Durer representative image"></a><br><strong>Albrecht Durer</strong><br><a href="style-packages/artists/albrecht-durer/README.en.md">Open README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/rene-magritte/README.en.md"><img src="style-packages/artists/rene-magritte/gallery-16x9.jpg" width="230" alt="René Magritte representative image"></a><br><strong>René Magritte</strong><br><a href="style-packages/artists/rene-magritte/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/albrecht-durer/README.en.md"><img src="style-packages/artists/albrecht-durer/gallery-16x9.jpg" width="230" alt="Albrecht Durer representative image"></a><br><strong>Albrecht Durer</strong><br><a href="style-packages/artists/albrecht-durer/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Photographers
@@ -298,8 +299,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/shomei-tomatsu/README.en.md"><img src="style-packages/photographers/shomei-tomatsu/gallery-16x9.jpg" width="230" alt="Shomei Tomatsu representative image"></a><br><strong>Shomei Tomatsu</strong><br><a href="style-packages/photographers/shomei-tomatsu/README.en.md">Open README</a></td>
-
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lillian-bassman/README.en.md"><img src="style-packages/photographers/lillian-bassman/gallery-16x9.jpg" width="230" alt="Lillian Bassman representative image"></a><br><strong>Lillian Bassman</strong><br><a href="style-packages/photographers/lillian-bassman/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="style-packages/photographers/erwin-blumenfeld/README.en.md"><img src="style-packages/photographers/erwin-blumenfeld/gallery-16x9.jpg" width="230" alt="Erwin Blumenfeld representative image"></a><br><strong>Erwin Blumenfeld</strong><br><a href="style-packages/photographers/erwin-blumenfeld/README.en.md">Open README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lillian-bassman/README.en.md"><img src="style-packages/photographers/lillian-bassman/gallery-16x9.jpg" width="230" alt="Lillian Bassman representative image"></a><br><strong>Lillian Bassman</strong><br><a href="style-packages/photographers/lillian-bassman/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/erwin-blumenfeld/README.en.md"><img src="style-packages/photographers/erwin-blumenfeld/gallery-16x9.jpg" width="230" alt="Erwin Blumenfeld representative image"></a><br><strong>Erwin Blumenfeld</strong><br><a href="style-packages/photographers/erwin-blumenfeld/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Design schools
@@ -340,9 +342,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/artcenter/README.en.md"><img src="style-packages/schools/artcenter/gallery-16x9.jpg" width="230" alt="ArtCenter College of Design representative"></a><br><strong>ArtCenter College of Design</strong><br><a href="style-packages/schools/artcenter/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/design-academy-eindhoven/README.en.md"><img src="style-packages/schools/design-academy-eindhoven/gallery-16x9.jpg" width="230" alt="Design Academy Eindhoven representative image"></a><br><strong>Design Academy Eindhoven</strong><br><a href="style-packages/schools/design-academy-eindhoven/README.en.md">Open README</a></td>
 </tr>
-
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/academy-of-fine-arts-vienna/README.en.md"><img src="style-packages/schools/academy-of-fine-arts-vienna/gallery-16x9.jpg" width="230" alt="Academy of Fine Arts Vienna representative image"></a><br><strong>Academy of Fine Arts Vienna</strong><br><a href="style-packages/schools/academy-of-fine-arts-vienna/README.en.md">Open README</a></td>
+<td width="100%" valign="top" align="center"><a href="style-packages/schools/academy-of-fine-arts-vienna/README.en.md"><img src="style-packages/schools/academy-of-fine-arts-vienna/gallery-16x9.jpg" width="230" alt="Academy of Fine Arts Vienna representative image"></a><br><strong>Academy of Fine Arts Vienna</strong><br><a href="style-packages/schools/academy-of-fine-arts-vienna/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -482,8 +483,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/mughal-miniature-painting/README.en.md"><img src="style-packages/movements/mughal-miniature-painting/gallery-16x9.jpg" width="230" alt="Mughal Miniature Painting representative image"></a><br><strong>Mughal Miniature Painting</strong><br><a href="style-packages/movements/mughal-miniature-painting/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/vorticism/README.en.md"><img src="style-packages/movements/vorticism/gallery-16x9.jpg" width="230" alt="Vorticism representative image"></a><br><strong>Vorticism</strong><br><a href="style-packages/movements/vorticism/README.en.md">Open README</a></td>
-
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-dada/README.en.md"><img src="style-packages/movements/neo-dada/gallery-16x9.jpg" width="230" alt="Neo-Dada representative image"></a><br><strong>Neo-Dada</strong><br><a href="style-packages/movements/neo-dada/README.en.md">Open README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-dada/README.en.md"><img src="style-packages/movements/neo-dada/gallery-16x9.jpg" width="230" alt="Neo-Dada representative image"></a><br><strong>Neo-Dada</strong><br><a href="style-packages/movements/neo-dada/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Original presets
@@ -516,8 +517,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/quiet-flash-documentary/README.en.md"><img src="style-packages/presets/quiet-flash-documentary/gallery-16x9.jpg" width="230" alt="Quiet Flash Documentary representative image"></a><br><strong>Quiet Flash Documentary</strong><br><a href="style-packages/presets/quiet-flash-documentary/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/soft-overcast-editorial/README.en.md"><img src="style-packages/presets/soft-overcast-editorial/gallery-16x9.jpg" width="230" alt="Soft Overcast Editorial representative image"></a><br><strong>Soft Overcast Editorial</strong><br><a href="style-packages/presets/soft-overcast-editorial/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/presets/warm-paper-still-life/README.en.md"><img src="style-packages/presets/warm-paper-still-life/gallery-16x9.jpg" width="230" alt="Warm Paper Still Life representative image"></a><br><strong>Warm Paper Still Life</strong><br><a href="style-packages/presets/warm-paper-still-life/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/presets/soft-overcast-editorial/README.en.md"><img src="style-packages/presets/soft-overcast-editorial/gallery-16x9.jpg" width="230" alt="Soft Overcast Editorial representative image"></a><br><strong>Soft Overcast Editorial</strong><br><a href="style-packages/presets/soft-overcast-editorial/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/presets/warm-paper-still-life/README.en.md"><img src="style-packages/presets/warm-paper-still-life/gallery-16x9.jpg" width="230" alt="Warm Paper Still Life representative image"></a><br><strong>Warm Paper Still Life</strong><br><a href="style-packages/presets/warm-paper-still-life/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -604,10 +605,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.en.md"><img src="style-packages/game-art/spiritfarer-hand-drawn-game-art/gallery-16x9.jpg" width="230" alt="Spiritfarer Hand-Drawn Game Art representative image"></a><br><strong>Spiritfarer Hand-Drawn Game Art</strong><br><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.en.md"><img src="style-packages/game-art/pentiment-medieval-manuscript-game-art/gallery-16x9.jpg" width="230" alt="Pentiment Medieval Manuscript Game Art representative image"></a><br><strong>Pentiment Medieval Manuscript Game Art</strong><br><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.en.md">Open README</a></td>
 </tr>
-
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md"><img src="style-packages/game-art/monument-valley-impossible-geometry/gallery-16x9.jpg" width="230" alt="Monument Valley Impossible Geometry Game Art representative image"></a><br><strong>Monument Valley Impossible Geometry Game Art</strong><br><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md"><img src="style-packages/game-art/gris-watercolor-game-art/gallery-16x9.jpg" width="230" alt="GRIS Watercolor Game Art representative image"></a><br><strong>GRIS Watercolor Game Art</strong><br><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md">Open README</a></td></tr>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md"><img src="style-packages/game-art/monument-valley-impossible-geometry/gallery-16x9.jpg" width="230" alt="Monument Valley Impossible Geometry Game Art representative image"></a><br><strong>Monument Valley Impossible Geometry Game Art</strong><br><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md"><img src="style-packages/game-art/gris-watercolor-game-art/gallery-16x9.jpg" width="230" alt="GRIS Watercolor Game Art representative image"></a><br><strong>GRIS Watercolor Game Art</strong><br><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Techniques and media
@@ -665,8 +666,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/albumen-printing/README.en.md"><img src="style-packages/techniques/albumen-printing/gallery-16x9.jpg" width="230" alt="Albumen Printing representative image"></a><br><strong>Albumen Printing</strong><br><a href="style-packages/techniques/albumen-printing/README.en.md">Open README</a></td>
-
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/salted-paper-printing/README.en.md"><img src="style-packages/techniques/salted-paper-printing/gallery-16x9.jpg" width="230" alt="Salted Paper Printing representative image"></a><br><strong>Salted Paper Printing</strong><br><a href="style-packages/techniques/salted-paper-printing/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="style-packages/techniques/photogravure/README.en.md"><img src="style-packages/techniques/photogravure/gallery-16x9.jpg" width="230" alt="Photogravure representative image"></a><br><strong>Photogravure</strong><br><a href="style-packages/techniques/photogravure/README.en.md">Open README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/salted-paper-printing/README.en.md"><img src="style-packages/techniques/salted-paper-printing/gallery-16x9.jpg" width="230" alt="Salted Paper Printing representative image"></a><br><strong>Salted Paper Printing</strong><br><a href="style-packages/techniques/salted-paper-printing/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/photogravure/README.en.md"><img src="style-packages/techniques/photogravure/gallery-16x9.jpg" width="230" alt="Photogravure representative image"></a><br><strong>Photogravure</strong><br><a href="style-packages/techniques/photogravure/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Inherited 110 lightweight presets
@@ -1287,12 +1289,12 @@ The original 110 `style.json` presets remain under [`styles/`](styles/), and the
 </td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center">
+<td width="50%" valign="top" align="center">
 <a href="styles/yellow-black-manga-food-zine-ad-style/README.en.md"><img src="styles/yellow-black-manga-food-zine-ad-style/preview-16x9.jpg" width="230" alt="Yellow Black Manga Food Zine Ad Style representative image"></a><br>
 <strong>Yellow Black Manga Food Zine Ad Style</strong><br>
 <a href="styles/yellow-black-manga-food-zine-ad-style/README.en.md">Open README</a>
 </td>
-<td width="33%" valign="top" align="center">
+<td width="50%" valign="top" align="center">
 <a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.en.md"><img src="styles/yellow-graffiti-fisheye-manga-street-poster-style/preview-16x9.jpg" width="230" alt="Yellow Graffiti Fisheye Manga Street Poster Style representative image"></a><br>
 <strong>Yellow Graffiti Fisheye Manga Street Poster Style</strong><br>
 <a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.en.md">Open README</a>
