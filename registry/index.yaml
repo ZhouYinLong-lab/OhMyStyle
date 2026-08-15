@@ -1102,6 +1102,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: titian
+  name: 提香
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/titian
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: vincent-van-gogh
   name: 文森特·梵高
   kind: artist
@@ -1677,6 +1694,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: okami-sumi-e-game-art
+  name: 大神水墨游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/okami-sumi-e-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: ori-luminous-forest
   name: 荧光森林手绘游戏美术
   kind: game_art
@@ -2917,6 +2951,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: orientalism
+  name: 东方主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/orientalism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: orphism
   name: 奥菲主义
   kind: movement
@@ -4050,6 +4101,23 @@ packages:
   - surface
   - subject_treatment
   reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: michael-kenna
+  name: 迈克尔·肯纳
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/michael-kenna
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
@@ -5559,6 +5627,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: stained-glass
+  name: 彩绘玻璃
+  kind: technique
+  domain: hybrid
+  package_path: style-packages/techniques/stained-glass
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: suminagashi
   name: 墨流
   kind: technique
