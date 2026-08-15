@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-261-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-266-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -177,6 +177,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/francis-bacon/README.md"><img src="style-packages/artists/francis-bacon/gallery-16x9.jpg" width="230" alt="弗朗西斯·培根代表图"></a><br><strong>弗朗西斯·培根</strong><br><a href="style-packages/artists/francis-bacon/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/kathe-kollwitz/README.md"><img src="style-packages/artists/kathe-kollwitz/gallery-16x9.jpg" width="230" alt="凯绥·珂勒惠支 representative image"></a><br><strong>凯绥·珂勒惠支</strong><br><a href="style-packages/artists/kathe-kollwitz/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -264,6 +265,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/andreas-gursky/README.md"><img src="style-packages/photographers/andreas-gursky/gallery-16x9.jpg" width="230" alt="安德烈亚斯·古尔斯基代表图"></a><br><strong>安德烈亚斯·古尔斯基</strong><br><a href="style-packages/photographers/andreas-gursky/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/martin-parr/README.md"><img src="style-packages/photographers/martin-parr/gallery-16x9.jpg" width="230" alt="马丁·帕尔代表图"></a><br><strong>马丁·帕尔</strong><br><a href="style-packages/photographers/martin-parr/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/ernst-haas/README.md"><img src="style-packages/photographers/ernst-haas/gallery-16x9.jpg" width="230" alt="恩斯特·哈斯 representative image"></a><br><strong>恩斯特·哈斯</strong><br><a href="style-packages/photographers/ernst-haas/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 设计学校
@@ -292,8 +296,6 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="耶鲁艺术学院代表图"></a><br><strong>耶鲁艺术学院</strong><br><a href="style-packages/schools/yale-school-of-art/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"></td>
-<td width="33%" valign="top" align="center"></td>
 </tr>
 </table>
 
@@ -382,42 +384,38 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/fluxus/README.md"><img src="style-packages/movements/fluxus/gallery-16x9.jpg" width="230" alt="激浪派代表图"></a><br><strong>激浪派</strong><br><a href="style-packages/movements/fluxus/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"></td>
-<td width="33%" valign="top" align="center"></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/brutalism/README.md"><img src="style-packages/movements/brutalism/gallery-16x9.jpg" width="230" alt="粗野主义代表图"></a><br><strong>粗野主义</strong><br><a href="style-packages/movements/brutalism/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/synthwave/README.md"><img src="style-packages/movements/synthwave/gallery-16x9.jpg" width="230" alt="合成器浪潮代表图"></a><br><strong>合成器浪潮</strong><br><a href="style-packages/movements/synthwave/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/vaporwave/README.md"><img src="style-packages/movements/vaporwave/gallery-16x9.jpg" width="230" alt="蒸汽波代表图"></a><br><strong>蒸汽波</strong><br><a href="style-packages/movements/vaporwave/README.md">打开 README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/vaporwave/README.md"><img src="style-packages/movements/vaporwave/gallery-16x9.jpg" width="230" alt="蒸汽波代表图"></a><br><strong>蒸汽波</strong><br><a href="style-packages/movements/vaporwave/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/graffiti/README.md"><img src="style-packages/movements/graffiti/gallery-16x9.jpg" width="230" alt="涂鸦代表图"></a><br><strong>涂鸦</strong><br><a href="style-packages/movements/graffiti/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/tenebrism/README.md"><img src="style-packages/movements/tenebrism/gallery-16x9.jpg" width="230" alt="暗色调主义代表图"></a><br><strong>暗色调主义</strong><br><a href="style-packages/movements/tenebrism/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/gothic/README.md"><img src="style-packages/movements/gothic/gallery-16x9.jpg" width="230" alt="哥特式代表图"></a><br><strong>哥特式</strong><br><a href="style-packages/movements/gothic/README.md">打开 README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/gothic/README.md"><img src="style-packages/movements/gothic/gallery-16x9.jpg" width="230" alt="哥特式代表图"></a><br><strong>哥特式</strong><br><a href="style-packages/movements/gothic/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/pointillism/README.md"><img src="style-packages/movements/pointillism/gallery-16x9.jpg" width="230" alt="点彩画法代表图"></a><br><strong>点彩画法</strong><br><a href="style-packages/movements/pointillism/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/steampunk/README.md"><img src="style-packages/movements/steampunk/gallery-16x9.jpg" width="230" alt="蒸汽朋克代表图"></a><br><strong>蒸汽朋克</strong><br><a href="style-packages/movements/steampunk/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/kawaii/README.md"><img src="style-packages/movements/kawaii/gallery-16x9.jpg" width="230" alt="卡哇伊代表图"></a><br><strong>卡哇伊</strong><br><a href="style-packages/movements/kawaii/README.md">打开 README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/kawaii/README.md"><img src="style-packages/movements/kawaii/gallery-16x9.jpg" width="230" alt="卡哇伊代表图"></a><br><strong>卡哇伊</strong><br><a href="style-packages/movements/kawaii/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/coquette/README.md"><img src="style-packages/movements/coquette/gallery-16x9.jpg" width="230" alt="少女风代表图"></a><br><strong>少女风</strong><br><a href="style-packages/movements/coquette/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/utilitarian/README.md"><img src="style-packages/movements/utilitarian/gallery-16x9.jpg" width="230" alt="实用主义代表图"></a><br><strong>实用主义</strong><br><a href="style-packages/movements/utilitarian/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/mid-century-modern/README.md"><img src="style-packages/movements/mid-century-modern/gallery-16x9.jpg" width="230" alt="中世纪现代主义代表图"></a><br><strong>中世纪现代主义</strong><br><a href="style-packages/movements/mid-century-modern/README.md">打开 README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mid-century-modern/README.md"><img src="style-packages/movements/mid-century-modern/gallery-16x9.jpg" width="230" alt="中世纪现代主义代表图"></a><br><strong>中世纪现代主义</strong><br><a href="style-packages/movements/mid-century-modern/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/ukiyo-e/README.md"><img src="style-packages/movements/ukiyo-e/gallery-16x9.jpg" width="230" alt="浮世绘代表图"></a><br><strong>浮世绘</strong><br><a href="style-packages/movements/ukiyo-e/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/chinese-literati-ink-painting/README.md"><img src="style-packages/movements/chinese-literati-ink-painting/gallery-16x9.jpg" width="230" alt="中国文人水墨代表图"></a><br><strong>中国文人水墨</strong><br><a href="style-packages/movements/chinese-literati-ink-painting/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/deconstructivist-architecture/README.md"><img src="style-packages/movements/deconstructivist-architecture/gallery-16x9.jpg" width="230" alt="解构主义建筑代表图"></a><br><strong>解构主义建筑</strong><br><a href="style-packages/movements/deconstructivist-architecture/README.md">打开 README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/deconstructivist-architecture/README.md"><img src="style-packages/movements/deconstructivist-architecture/gallery-16x9.jpg" width="230" alt="解构主义建筑代表图"></a><br><strong>解构主义建筑</strong><br><a href="style-packages/movements/deconstructivist-architecture/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/fauvism/README.md"><img src="style-packages/movements/fauvism/gallery-16x9.jpg" width="230" alt="野兽主义代表图"></a><br><strong>野兽主义</strong><br><a href="style-packages/movements/fauvism/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/arte-povera/README.md"><img src="style-packages/movements/arte-povera/gallery-16x9.jpg" width="230" alt="贫穷艺术代表图"></a><br><strong>贫穷艺术</strong><br><a href="style-packages/movements/arte-povera/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"></td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/orphism/README.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="230" alt="奥菲主义代表图"></a><br><strong>奥菲主义</strong><br><a href="style-packages/movements/orphism/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/color-field-painting/README.md"><img src="style-packages/movements/color-field-painting/gallery-16x9.jpg" width="230" alt="色域绘画代表图"></a><br><strong>色域绘画</strong><br><a href="style-packages/movements/color-field-painting/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/rayonism/README.md"><img src="style-packages/movements/rayonism/gallery-16x9.jpg" width="230" alt="射线主义 representative image"></a><br><strong>射线主义</strong><br><a href="style-packages/movements/rayonism/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -453,7 +451,6 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/soft-overcast-editorial/README.md"><img src="style-packages/presets/soft-overcast-editorial/gallery-16x9.jpg" width="230" alt="柔和阴天编辑摄影代表图"></a><br><strong>柔和阴天编辑摄影</strong><br><a href="style-packages/presets/soft-overcast-editorial/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/warm-paper-still-life/README.md"><img src="style-packages/presets/warm-paper-still-life/gallery-16x9.jpg" width="230" alt="暖纸色静物代表图"></a><br><strong>暖纸色静物</strong><br><a href="style-packages/presets/warm-paper-still-life/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"></td>
 </tr>
 </table>
 
@@ -530,6 +527,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/paper-cut-puppet-game-art/README.md"><img src="style-packages/game-art/paper-cut-puppet-game-art/gallery-16x9.jpg" width="230" alt="纸片木偶式二维游戏美术代表图"></a><br><strong>纸片木偶式二维游戏美术</strong><br><a href="style-packages/game-art/paper-cut-puppet-game-art/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.md"><img src="style-packages/game-art/monochrome-1bit-deduction-game-art/gallery-16x9.jpg" width="230" alt="单色一位推理游戏美术代表图"></a><br><strong>单色一位推理游戏美术</strong><br><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.md"><img src="style-packages/game-art/japanese-cel-shaded-action-game-art/gallery-16x9.jpg" width="230" alt="日式赛璐珞动作游戏美术 representative image"></a><br><strong>日式赛璐珞动作游戏美术</strong><br><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 工艺与媒介
@@ -568,7 +568,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/risograph-printing/README.md"><img src="style-packages/techniques/risograph-printing/gallery-16x9.jpg" width="230" alt="孔版印刷代表图"></a><br><strong>孔版印刷</strong><br><a href="style-packages/techniques/risograph-printing/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/photomontage/README.md"><img src="style-packages/techniques/photomontage/gallery-16x9.jpg" width="230" alt="拼贴蒙太奇代表图"></a><br><strong>拼贴蒙太奇</strong><br><a href="style-packages/techniques/photomontage/README.md">打开 README</a></td>
-<td width="33%" valign="top" align="center"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/frottage/README.md"><img src="style-packages/techniques/frottage/gallery-16x9.jpg" width="230" alt="擦拓画法 representative image"></a><br><strong>擦拓画法</strong><br><a href="style-packages/techniques/frottage/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -1200,7 +1200,6 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <strong>Yellow Graffiti Fisheye Manga Street Poster Style</strong><br>
 <a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.md">打开 README</a>
 </td>
-<td width="33%" valign="top" align="center"></td>
 </tr>
 </table>
 

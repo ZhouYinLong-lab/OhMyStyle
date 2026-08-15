@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-261-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-266-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -177,6 +177,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/francis-bacon/README.en.md"><img src="style-packages/artists/francis-bacon/gallery-16x9.jpg" width="230" alt="Francis Bacon representative image"></a><br><strong>Francis Bacon</strong><br><a href="style-packages/artists/francis-bacon/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/kathe-kollwitz/README.en.md"><img src="style-packages/artists/kathe-kollwitz/gallery-16x9.jpg" width="230" alt="Käthe Kollwitz representative image"></a><br><strong>Käthe Kollwitz</strong><br><a href="style-packages/artists/kathe-kollwitz/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -264,6 +265,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/andreas-gursky/README.en.md"><img src="style-packages/photographers/andreas-gursky/gallery-16x9.jpg" width="230" alt="Andreas Gursky representative image"></a><br><strong>Andreas Gursky</strong><br><a href="style-packages/photographers/andreas-gursky/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/martin-parr/README.en.md"><img src="style-packages/photographers/martin-parr/gallery-16x9.jpg" width="230" alt="Martin Parr representative image"></a><br><strong>Martin Parr</strong><br><a href="style-packages/photographers/martin-parr/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/ernst-haas/README.en.md"><img src="style-packages/photographers/ernst-haas/gallery-16x9.jpg" width="230" alt="Ernst Haas representative image"></a><br><strong>Ernst Haas</strong><br><a href="style-packages/photographers/ernst-haas/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Design schools
@@ -292,8 +296,6 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.en.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="Yale School of Art representative image"></a><br><strong>Yale School of Art</strong><br><a href="style-packages/schools/yale-school-of-art/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"></td>
-<td width="33%" valign="top" align="center"></td>
 </tr>
 </table>
 
@@ -382,42 +384,38 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/fluxus/README.en.md"><img src="style-packages/movements/fluxus/gallery-16x9.jpg" width="230" alt="Fluxus representative image"></a><br><strong>Fluxus</strong><br><a href="style-packages/movements/fluxus/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"></td>
-<td width="33%" valign="top" align="center"></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/brutalism/README.en.md"><img src="style-packages/movements/brutalism/gallery-16x9.jpg" width="230" alt="Brutalism representative image"></a><br><strong>Brutalism</strong><br><a href="style-packages/movements/brutalism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/synthwave/README.en.md"><img src="style-packages/movements/synthwave/gallery-16x9.jpg" width="230" alt="Synthwave representative image"></a><br><strong>Synthwave</strong><br><a href="style-packages/movements/synthwave/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/vaporwave/README.en.md"><img src="style-packages/movements/vaporwave/gallery-16x9.jpg" width="230" alt="Vaporwave representative image"></a><br><strong>Vaporwave</strong><br><a href="style-packages/movements/vaporwave/README.en.md">Open README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/vaporwave/README.en.md"><img src="style-packages/movements/vaporwave/gallery-16x9.jpg" width="230" alt="Vaporwave representative image"></a><br><strong>Vaporwave</strong><br><a href="style-packages/movements/vaporwave/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/graffiti/README.en.md"><img src="style-packages/movements/graffiti/gallery-16x9.jpg" width="230" alt="Graffiti representative image"></a><br><strong>Graffiti</strong><br><a href="style-packages/movements/graffiti/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/tenebrism/README.en.md"><img src="style-packages/movements/tenebrism/gallery-16x9.jpg" width="230" alt="Tenebrism representative image"></a><br><strong>Tenebrism</strong><br><a href="style-packages/movements/tenebrism/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/gothic/README.en.md"><img src="style-packages/movements/gothic/gallery-16x9.jpg" width="230" alt="Gothic representative image"></a><br><strong>Gothic</strong><br><a href="style-packages/movements/gothic/README.en.md">Open README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/gothic/README.en.md"><img src="style-packages/movements/gothic/gallery-16x9.jpg" width="230" alt="Gothic representative image"></a><br><strong>Gothic</strong><br><a href="style-packages/movements/gothic/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/pointillism/README.en.md"><img src="style-packages/movements/pointillism/gallery-16x9.jpg" width="230" alt="Pointillism representative image"></a><br><strong>Pointillism</strong><br><a href="style-packages/movements/pointillism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/steampunk/README.en.md"><img src="style-packages/movements/steampunk/gallery-16x9.jpg" width="230" alt="Steampunk representative image"></a><br><strong>Steampunk</strong><br><a href="style-packages/movements/steampunk/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/kawaii/README.en.md"><img src="style-packages/movements/kawaii/gallery-16x9.jpg" width="230" alt="Kawaii representative image"></a><br><strong>Kawaii</strong><br><a href="style-packages/movements/kawaii/README.en.md">Open README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/kawaii/README.en.md"><img src="style-packages/movements/kawaii/gallery-16x9.jpg" width="230" alt="Kawaii representative image"></a><br><strong>Kawaii</strong><br><a href="style-packages/movements/kawaii/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/coquette/README.en.md"><img src="style-packages/movements/coquette/gallery-16x9.jpg" width="230" alt="Coquette representative image"></a><br><strong>Coquette</strong><br><a href="style-packages/movements/coquette/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/utilitarian/README.en.md"><img src="style-packages/movements/utilitarian/gallery-16x9.jpg" width="230" alt="Utilitarian representative image"></a><br><strong>Utilitarian</strong><br><a href="style-packages/movements/utilitarian/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/mid-century-modern/README.en.md"><img src="style-packages/movements/mid-century-modern/gallery-16x9.jpg" width="230" alt="Mid-century Modern representative image"></a><br><strong>Mid-century Modern</strong><br><a href="style-packages/movements/mid-century-modern/README.en.md">Open README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mid-century-modern/README.en.md"><img src="style-packages/movements/mid-century-modern/gallery-16x9.jpg" width="230" alt="Mid-century Modern representative image"></a><br><strong>Mid-century Modern</strong><br><a href="style-packages/movements/mid-century-modern/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/ukiyo-e/README.en.md"><img src="style-packages/movements/ukiyo-e/gallery-16x9.jpg" width="230" alt="Ukiyo-e representative image"></a><br><strong>Ukiyo-e</strong><br><a href="style-packages/movements/ukiyo-e/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/chinese-literati-ink-painting/README.en.md"><img src="style-packages/movements/chinese-literati-ink-painting/gallery-16x9.jpg" width="230" alt="Chinese Literati Ink Painting representative image"></a><br><strong>Chinese Literati Ink Painting</strong><br><a href="style-packages/movements/chinese-literati-ink-painting/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/deconstructivist-architecture/README.en.md"><img src="style-packages/movements/deconstructivist-architecture/gallery-16x9.jpg" width="230" alt="Deconstructivist Architecture representative image"></a><br><strong>Deconstructivist Architecture</strong><br><a href="style-packages/movements/deconstructivist-architecture/README.en.md">Open README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/deconstructivist-architecture/README.en.md"><img src="style-packages/movements/deconstructivist-architecture/gallery-16x9.jpg" width="230" alt="Deconstructivist Architecture representative image"></a><br><strong>Deconstructivist Architecture</strong><br><a href="style-packages/movements/deconstructivist-architecture/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/fauvism/README.en.md"><img src="style-packages/movements/fauvism/gallery-16x9.jpg" width="230" alt="Fauvism representative image"></a><br><strong>Fauvism</strong><br><a href="style-packages/movements/fauvism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/arte-povera/README.en.md"><img src="style-packages/movements/arte-povera/gallery-16x9.jpg" width="230" alt="Arte Povera representative image"></a><br><strong>Arte Povera</strong><br><a href="style-packages/movements/arte-povera/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"></td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/orphism/README.en.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="230" alt="Orphism representative image"></a><br><strong>Orphism</strong><br><a href="style-packages/movements/orphism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/color-field-painting/README.en.md"><img src="style-packages/movements/color-field-painting/gallery-16x9.jpg" width="230" alt="Color Field Painting representative image"></a><br><strong>Color Field Painting</strong><br><a href="style-packages/movements/color-field-painting/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/rayonism/README.en.md"><img src="style-packages/movements/rayonism/gallery-16x9.jpg" width="230" alt="Rayonism representative image"></a><br><strong>Rayonism</strong><br><a href="style-packages/movements/rayonism/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -453,7 +451,6 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/soft-overcast-editorial/README.en.md"><img src="style-packages/presets/soft-overcast-editorial/gallery-16x9.jpg" width="230" alt="Soft Overcast Editorial representative image"></a><br><strong>Soft Overcast Editorial</strong><br><a href="style-packages/presets/soft-overcast-editorial/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/presets/warm-paper-still-life/README.en.md"><img src="style-packages/presets/warm-paper-still-life/gallery-16x9.jpg" width="230" alt="Warm Paper Still Life representative image"></a><br><strong>Warm Paper Still Life</strong><br><a href="style-packages/presets/warm-paper-still-life/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"></td>
 </tr>
 </table>
 
@@ -530,6 +527,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/paper-cut-puppet-game-art/README.en.md"><img src="style-packages/game-art/paper-cut-puppet-game-art/gallery-16x9.jpg" width="230" alt="Paper-cut Puppet 2D Game Art representative image"></a><br><strong>Paper-cut Puppet 2D Game Art</strong><br><a href="style-packages/game-art/paper-cut-puppet-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.en.md"><img src="style-packages/game-art/monochrome-1bit-deduction-game-art/gallery-16x9.jpg" width="230" alt="Monochrome 1-bit Deduction Game Art representative image"></a><br><strong>Monochrome 1-bit Deduction Game Art</strong><br><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.en.md"><img src="style-packages/game-art/japanese-cel-shaded-action-game-art/gallery-16x9.jpg" width="230" alt="Japanese Cel-Shaded Action Game Art representative image"></a><br><strong>Japanese Cel-Shaded Action Game Art</strong><br><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Techniques and media
@@ -568,7 +568,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/risograph-printing/README.en.md"><img src="style-packages/techniques/risograph-printing/gallery-16x9.jpg" width="230" alt="Risograph Printing representative image"></a><br><strong>Risograph Printing</strong><br><a href="style-packages/techniques/risograph-printing/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/photomontage/README.en.md"><img src="style-packages/techniques/photomontage/gallery-16x9.jpg" width="230" alt="Photomontage representative image"></a><br><strong>Photomontage</strong><br><a href="style-packages/techniques/photomontage/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/frottage/README.en.md"><img src="style-packages/techniques/frottage/gallery-16x9.jpg" width="230" alt="Frottage representative image"></a><br><strong>Frottage</strong><br><a href="style-packages/techniques/frottage/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -1200,7 +1200,6 @@ The original 110 `style.json` presets remain under [`styles/`](styles/), and the
 <strong>Yellow Graffiti Fisheye Manga Street Poster Style</strong><br>
 <a href="styles/yellow-graffiti-fisheye-manga-street-poster-style/README.en.md">Open README</a>
 </td>
-<td width="33%" valign="top" align="center"></td>
 </tr>
 </table>
 
