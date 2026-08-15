@@ -1,0 +1,18 @@
+medium: 二十世纪人文与街头摄影 摄影
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+- 先保留普通场景和自然行动
+- 用明确的明暗块面整理画面
+- 等待主体与环境形成巧合关系
+- 避免摆拍表情和解释性文字
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+  game asset.

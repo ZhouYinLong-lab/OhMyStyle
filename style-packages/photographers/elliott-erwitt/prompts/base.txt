@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- - 黑白或低彩度的清晰影调
+- 等待瞬间形成的偶然几何关系
+- 克制的镜头距离与自然姿态
+- 轻微幽默和不伤害主体尊严的观察
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先保留普通场景和自然行动
+- 用明确的明暗块面整理画面
+- 等待主体与环境形成巧合关系
+- 避免摆拍表情和解释性文字
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

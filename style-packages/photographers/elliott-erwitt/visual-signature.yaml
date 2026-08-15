@@ -1,0 +1,23 @@
+schema_version: 1.0.0
+composition:
+- 黑白或低彩度的清晰影调
+- 等待瞬间形成的偶然几何关系
+palette:
+- 等待瞬间形成的偶然几何关系
+- 克制的镜头距离与自然姿态
+lighting:
+  quality: 克制的镜头距离与自然姿态
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 轻微幽默和不伤害主体尊严的观察
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- patient candid timing
+- gentle visual humor
+- black-and-white humanist geometry
+- the requested subject stays unchanged

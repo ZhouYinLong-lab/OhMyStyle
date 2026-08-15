@@ -1,0 +1,32 @@
+id: elliott-erwitt
+name: 埃利奥特·厄威特
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 以黑白人文摄影、耐心的瞬间判断和温和幽默捕捉日常空间中意外成立的几何关系。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: 摄影
+  historical_context: 二十世纪人文与街头摄影
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
