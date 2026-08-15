@@ -1,0 +1,16 @@
+canonical_name: 约瑟夫·苏德克
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.moma.org/artists/5715-josef-sudek'
+
+notes:
+  - The package emphasizes quiet observation, soft window light, reflective surfaces, and ordinary arrangements held in suspension.
+  - A supplied subject may change freely; the package transfers a contemplative photographic distance rather than a mandatory studio, garden, or city.

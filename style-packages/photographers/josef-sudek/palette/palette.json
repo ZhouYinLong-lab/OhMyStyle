@@ -1,0 +1,11 @@
+{
+  "name": "窗光与银灰空气",
+  "colors": [
+    {"name": "银灰", "hex": "#A9AAA5", "role": "空气与高光"},
+    {"name": "烟蓝", "hex": "#667580", "role": "冷静环境色"},
+    {"name": "温暖棕", "hex": "#765A43", "role": "木材与旧物"},
+    {"name": "苔绿", "hex": "#68715B", "role": "微弱自然色"},
+    {"name": "琥珀光", "hex": "#B58B55", "role": "小面积暖色回声"}
+  ],
+  "notes": "Use the palette as a quiet tonal tendency. Preserve the user's subject and requested color conditions."
+}

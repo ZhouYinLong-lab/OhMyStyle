@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_generated_pending_human_review
+generator: OpenAI image generation
+prompt_mode: anonymous_visual_signature
+subject: small metal vessel and folded cloth in quiet side light
+generated_at: 2026-08-15
+review:
+  decision: pending
+  notes: Neutral still-life benchmark; the objects are illustrative and not part of the package identity.

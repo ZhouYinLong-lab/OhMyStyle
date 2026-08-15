@@ -1,0 +1,14 @@
+package_id: josef-sudek
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://www.moma.org/artists/5715-josef-sudek'
+    title: 'Josef Sudek'
+    authority: 'Museum of Modern Art'
+    supports: source traceability and package scope
+
+attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.

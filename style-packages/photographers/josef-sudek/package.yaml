@@ -1,0 +1,33 @@
+id: josef-sudek
+name: 约瑟夫·苏德克
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以安静的窗边光、湿润空气和亲密静物观看，让日常物件在低声部的灰阶与反射中获得时间感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '20世纪捷克摄影；工作室、花园和城市边缘的诗性观察。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

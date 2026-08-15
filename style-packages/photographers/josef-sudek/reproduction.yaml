@@ -1,0 +1,18 @@
+medium: poetic fine-art photography with restrained analog print character
+materials:
+  support: matte or semi-matte photographic paper with a gentle silver-toned response
+process:
+  - Place the supplied subject in a quiet, believable light field with one dominant tonal anchor.
+  - Add a soft threshold—reflection, glass, moisture, curtain, or foliage—only when it supports the subject.
+  - Protect subtle highlights and let shadows accumulate without theatrical contrast.
+  - Finish with restrained grain and tonal compression, not a generic vintage preset.
+technical_direction:
+  contrast: low-to-medium with rich shadow detail
+  saturation: low, with muted color accents
+  perspective: normal observational perspective, no exaggerated wide angle
+  detail_density: medium in the subject, sparse in the atmosphere
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

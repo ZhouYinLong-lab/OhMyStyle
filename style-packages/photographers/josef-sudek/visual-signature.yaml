@@ -1,0 +1,21 @@
+composition:
+  - Use a still, intimate composition with a clear foreground object and a deep but quiet tonal background.
+  - Allow glass, moisture, curtains, foliage, or reflections to form a soft threshold when the user's subject supports it.
+palette:
+  - Favor silver gray, smoky blue, warm umber, muted green, and small amber notes; color remains low-key and atmospheric.
+  - Let reflective surfaces carry subtle tonal echoes rather than bright commercial highlights.
+lighting:
+  quality: soft side or window light with long quiet falloff
+  behavior:
+    - Keep highlights broad and restrained, with shadows deep enough to hold atmosphere but not collapse.
+    - Let air, glass, and moisture soften the boundary between object and background.
+surface:
+  finish: fine-art photographic print with gentle tonal compression
+  edges: selective focus and softened edges around the periphery; the main object remains quietly readable
+texture:
+  density: low-to-medium, with detail concentrated in the chosen object and reflective threshold
+  placement: grain, condensation, patina, and small highlights appear as evidence of looking
+invariants:
+  - Stillness, soft falloff, and a contemplative distance survive a change of subject.
+  - Light remains naturalistic and low-key rather than becoming a dramatic studio effect.
+  - The package does not require a window, vase, garden, Prague, or a particular object.
