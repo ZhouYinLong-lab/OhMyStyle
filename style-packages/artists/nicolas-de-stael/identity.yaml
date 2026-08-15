@@ -1,0 +1,16 @@
+canonical_name: 尼古拉·德·斯塔埃尔
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.nga.gov/artists/3119-nicolas-de-stael'
+
+notes:
+  - The package focuses on compressed pictorial space, heavy painted planes, and the tension between recognizable form and abstraction.
+  - A supplied subject may change freely; the package carries over paint weight, plane structure, and color relationships rather than a recurring scene.

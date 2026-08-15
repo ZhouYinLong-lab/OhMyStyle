@@ -1,0 +1,11 @@
+{
+  "name": "厚重色块与压缩空间",
+  "colors": [
+    {"name": "粉笔白", "hex": "#E6DED1", "role": "大面积支撑与留白"},
+    {"name": "群青蓝", "hex": "#2D4E78", "role": "冷色结构块"},
+    {"name": "朱红", "hex": "#C64C3C", "role": "暖色重心"},
+    {"name": "赭黄", "hex": "#B48A4E", "role": "过渡与材料暖色"},
+    {"name": "板岩灰", "hex": "#59646B", "role": "暗部与中性连接"}
+  ],
+  "notes": "Use these as relational anchors, not as a mandatory fixed palette. The user's subject and lighting remain authoritative."
+}

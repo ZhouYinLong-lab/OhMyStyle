@@ -1,0 +1,21 @@
+composition:
+  - Build the image from a few broad, interlocking planes with quiet gaps of support visible between them.
+  - Compress depth and let vertical or diagonal blocks carry the main structural rhythm.
+palette:
+  - Use a small set of opaque, high-clarity color blocks with warm and cool neighbors held in deliberate tension.
+  - Keep light and dark planes distinct without turning the image into a uniform color filter.
+lighting:
+  quality: broad studio-like illumination translated into painted value blocks
+  behavior:
+    - Keep transitions between major planes firm, with only limited soft modulation inside each painted mass.
+    - Let the support or underpainting appear in selected gaps rather than filling every area.
+surface:
+  finish: dense oil paint with visible knife or loaded-brush pressure
+  edges: mostly decisive block edges, interrupted by occasional rough or feathered boundaries
+texture:
+  density: medium; texture is concentrated in the paint mass rather than distributed as noise
+  placement: visible along impasto ridges, scraped passages, and overlaps between planes
+invariants:
+  - Broad material color masses remain more important than literal surface detail.
+  - Spatial compression and the weight of painted planes survive a change of subject.
+  - The image remains open to the user's subject and does not default to coastlines, mountains, sport, or architecture.

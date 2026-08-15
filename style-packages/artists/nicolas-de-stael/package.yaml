@@ -1,0 +1,33 @@
+id: nicolas-de-stael
+name: 尼古拉·德·斯塔埃尔
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以厚重而清晰的色块、被压缩的空间和介于具象与抽象之间的形体，建立具有重量感的开放绘画语言。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '20世纪欧洲现代绘画；在抽象绘画与具象景观之间寻找结构和色彩的平衡。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

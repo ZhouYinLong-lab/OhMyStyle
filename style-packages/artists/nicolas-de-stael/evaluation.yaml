@@ -1,0 +1,40 @@
+profiles:
+  generic:
+    required:
+      - package-specific visual signature is observable
+      - composition remains coherent for a new subject
+      - no copied reference composition or branded material
+    reject_if:
+      - style is represented only by a global color filter
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - face and body remain simplified into weighted planes rather than polished photographic detail
+      - clothing or background planes keep the package's compressed depth
+  still_life:
+    required:
+      - objects are separated by painted plane relationships and retain visible material paint pressure
+      - no named landscape or recurring object has been introduced
+minimum_score: 7
+
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+  distinctive_signature:
+    score: null
+    notes: "Record which visual decisions remain observable after the subject changes."
+  visual_overlap:
+    score: null
+    notes: "Compare the representative image and output with near-duplicate packages."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "No generated result is implied by this template."
