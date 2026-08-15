@@ -31,7 +31,7 @@ Apply a Northern Renaissance printmaking language: precise contour drawing, disc
 
 本包依据公开机构或官方页面提取可观察的视觉线索，仅保存来源链接，不复制原作图像、角色、关卡、标志或版式：
 
-- [The Metropolitan Museum of Art: The Promenade](https://www.metmuseum.org/art/collection/search/336219)
+- [大都会艺术博物馆：散步](https://www.metmuseum.org/art/collection/search/336219)
 
 ## 文件
 
