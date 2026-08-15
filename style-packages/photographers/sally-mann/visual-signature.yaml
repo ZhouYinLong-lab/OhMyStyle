@@ -1,0 +1,46 @@
+composition:
+  - Use a deliberate, patient frame with a clear subject anchor and generous atmospheric space.
+  - Allow quiet asymmetry and partial occlusion; avoid editorial clutter.
+palette:
+  - Work primarily in black, warm gray, cool gray, and paper white with restrained sepia drift.
+lighting:
+  quality: natural or natural-seeming, soft but tonally deep
+  behavior:
+    - Preserve luminous highlights and open shadow texture rather than flattening the scene.
+    - Let haze, wet surfaces, and backlight soften distance without a glow effect.
+surface:
+  finish: matte, fibrous, chemically imperfect photographic surface
+  edges: slightly softened by lens, atmosphere, or print process; never smeared
+texture:
+  density: low to medium, visible at tonal transitions
+  placement: paper grain, wet emulsion traces, foliage, skin, stone, and weathered surfaces
+invariants:
+  - deep but readable black-and-white tonal structure
+  - intimate observation without theatrical posing
+  - atmosphere and material surface remain present after subject changes
+medium: large-format black-and-white photographic language
+materials:
+  support: matte fiber paper or a restrained wet-plate / gelatin-silver surface simulation
+process:
+  - compose from the supplied subject and location
+  - establish a calm large-format frame and tonal anchor
+  - build a continuous grayscale with luminous highlights and open blacks
+  - add restrained atmospheric moisture and print irregularity only where supported
+  - finish with local contrast, not a nostalgic global filter
+technical_direction:
+  contrast: medium-high tonal range with soft transitions
+  saturation: monochrome; optional very subtle warm neutral bias
+  perspective: natural large-format perspective, no wide-angle exaggeration
+  detail_density: medium, with attention to surface and distance
+avoid:
+  - forced children, family scenes, rural southern landscapes, or nudity
+  - fake antique border or heavy film-grain overlay
+  - glossy HDR sharpness and commercial retouching
+  - generic melancholy color grading
+safety_note: Do not reproduce a specific reference work, recognizable person, logo, or branded layout.
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.

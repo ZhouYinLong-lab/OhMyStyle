@@ -1,0 +1,22 @@
+canonical_name: 萨莉·曼
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；乡野、家庭与人物只是研究中的常见语境，不是默认题材。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 一把放在空地上的椅子
+    - 未指定地点的湿地边缘
+  exclusions:
+    - copied composition
+    - named person or branded asset
+    - recurring child, family, rural Virginia, nude body, or southern landscape
+sources:
+  - 'https://www.sfmoma.org/artist/Sally_Mann/'
+  - 'https://www.nga.gov/artists/39122-sally-mann/artworks'
+notes:
+  - 用大画幅观看的缓慢感处理主体，让细节沉入灰阶而不是追求锐利炫技。
+  - 让湿润空气、纸面纤维和轻微化学痕迹参与画面，但不把怀旧滤镜当成风格本身。

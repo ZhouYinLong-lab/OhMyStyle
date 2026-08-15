@@ -1,0 +1,5 @@
+SUBJECT INDEPENDENCE: Generate the user-supplied {SUBJECT} in {LOCATION}; do not add a recurring person, family relationship, landscape, landmark, or narrative motif from the style package.
+
+Create a new large-format black-and-white photograph of {SUBJECT} in {LOCATION}. Use a patient, spacious frame with a clear tonal anchor, quiet asymmetry, and natural perspective. Build a deep but readable grayscale: luminous highlights, textured open shadows, and soft transitions across distance. Let air, moisture, weathered material, foliage, skin, stone, or paper surfaces contribute subtle tactile evidence when they belong to the supplied scene.
+
+The image should feel observed rather than staged. Use natural or natural-seeming light, restrained atmospheric softness, matte fiber-paper character, and modest chemical irregularity. Avoid a fake antique border, heavy grain, glossy HDR sharpness, or a generic melancholy filter. Preserve the user's subject, identity, location, and action; make a new scene rather than copying any reference work.

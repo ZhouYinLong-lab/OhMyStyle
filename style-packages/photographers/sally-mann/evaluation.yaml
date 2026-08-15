@@ -1,0 +1,38 @@
+profiles:
+  generic:
+    required:
+      - monochrome tonal structure is continuous and readable
+      - subject remains recognizable and unforced
+      - atmosphere and print surface are locally supported
+      - no copied reference composition or branded material
+    reject_if:
+      - result is only a sepia or black-and-white filter
+      - a child, family, rural south, nude body, or named place appears without request
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - identity and pose remain user-specified
+  still_life:
+    required:
+      - object edges and material differences remain readable in grayscale
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Use two unrelated subjects and check for recurring family or southern imagery."
+  distinctive_signature:
+    score: null
+    notes: "Check grayscale depth, patient framing, atmosphere, and matte surface evidence."
+  visual_overlap:
+    score: null
+    notes: "Compare against generic vintage monochrome and documentary packages."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "Generated evidence must be added by a contributor or user."
