@@ -1,0 +1,11 @@
+{
+  "name": "矿物红蓝与石灰白",
+  "colors": [
+    {"name": "赭红", "hex": "#9C4634", "role": "structural warmth"},
+    {"name": "土黄", "hex": "#C09043", "role": "sunlit mass"},
+    {"name": "深蓝", "hex": "#294D67", "role": "cool counterweight"},
+    {"name": "墨绿", "hex": "#405B47", "role": "grounding field"},
+    {"name": "石灰白", "hex": "#E5D5B4", "role": "wall and breathing space"}
+  ],
+  "notes": "使用成组的大色块和有限的矿物色变化维持远距离可读性。"
+}

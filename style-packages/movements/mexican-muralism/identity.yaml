@@ -1,0 +1,21 @@
+canonical_name: 墨西哥壁画运动
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 公共空间中的人物群组
+    - 城市与自然形体的并置
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.moma.org/collection/terms/mexican-muralism'
+
+notes:
+  - 以公共尺度的整体构图、坚实轮廓和层次分明的色块传达视觉信息。
+  - 历史壁画中的人物和社会主题只属于研究语境，不是默认生成内容。

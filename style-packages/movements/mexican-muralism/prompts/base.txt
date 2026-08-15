@@ -1,0 +1,15 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION} using a public-scale matte painted
+composition. Make the main forms readable from a distance through broad mineral
+color fields, firm contour masses, shallow overlapping space, and a clear hierarchy
+between foreground, middle ground and background. Use ochre, rust red, deep blue,
+green and lime white as related structural colors. Allow hand-painted irregularity
+and wall-like texture, but keep the user's subject authoritative. Do not add a
+mural wall, revolution, workers, historical figure, specific country, landmark,
+political slogan or fixed crowd unless requested. No copied composition or text.

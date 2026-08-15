@@ -1,0 +1,33 @@
+id: mexican-muralism
+name: 墨西哥壁画运动
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  以公共尺度的整体构图、坚实轮廓、分层色块和壁面叙事秩序组织视觉信息，强调画面结构的可读性与公共空间感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: painting
+  historical_context: '20世纪墨西哥革命后公共艺术与壁画传统'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

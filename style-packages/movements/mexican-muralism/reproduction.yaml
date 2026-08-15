@@ -1,0 +1,19 @@
+medium: public-scale matte mural painting language
+materials:
+  support: plaster, masonry, paper, canvas, or user-specified surface
+process:
+  - Clarify the user's subject and create a legible large-scale silhouette structure.
+  - Block the major mineral color fields before adding small internal marks.
+  - Use contour and overlap to connect figures, forms and background planes.
+  - Add restrained painted texture and local value shifts without breaking the wall-scale read.
+  - Remove accidental text, symbols, named figures and unrequested political content.
+technical_direction:
+  contrast: medium to high through grouped masses and contour hierarchy
+  saturation: medium, with selected mineral-color accents
+  perspective: compressed or shallow; spatial clarity comes from overlap and scale
+  detail_density: grouped and legible at a distance, not uniformly intricate
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

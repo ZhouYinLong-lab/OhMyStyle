@@ -1,0 +1,19 @@
+composition:
+  - 让画面像一面可以被远距离阅读的整体墙面，主体群组与背景色块形成明确层次。
+  - 使用相互咬合的斜线、弧线和块面组织视线，避免细碎的写实景深。
+palette:
+  - 以赭红、土黄、深蓝、墨绿和石灰白形成大块对比，颜色服务于结构与群体关系。
+  - 允许局部高饱和，但整体保持矿物颜料般的厚重与统一。
+lighting:
+  quality: broad matte light with wall-scale tonal stability
+  behavior:
+    - 明暗来自体块和颜料密度，不依赖商业摄影式轮廓光或强烈戏剧投影。
+surface:
+  finish: matte fresco or casein-like painted wall surface
+  edges: firm contour masses with hand-painted irregularity
+texture:
+  density: medium to high in the main structural bands
+  placement: grouped around figures, architecture or user-specified forms, with calm linking fields
+invariants:
+  - 公共尺度的整体可读性、坚实轮廓和分层色块必须跨主体保留。
+  - 叙事关系可以随用户主题改变，不得由风格包自行添加历史事件或固定群像。
