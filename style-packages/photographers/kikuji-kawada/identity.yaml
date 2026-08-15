@@ -1,0 +1,15 @@
+canonical_name: 川田喜久治
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.sfmoma.org/artist/Kikuji_Kawada/'
+
+notes:
+  - The package studies fragmentary postwar photographic observation, symbolic objects, hard tonal structure, and photobook sequencing; it does not prescribe war ruins, flags, or a particular Japanese location.

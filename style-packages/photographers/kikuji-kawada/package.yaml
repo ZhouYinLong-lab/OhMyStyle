@@ -1,0 +1,33 @@
+id: kikuji-kawada
+name: 川田喜久治
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以高反差黑白、碎片化符号、物质表面和历史记忆的间接指涉，形成不依赖单一题材的摄影观察方式。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '战后日本摄影；与摄影书、档案性图像和象征性纪实实践密切相关。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
