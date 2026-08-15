@@ -1,0 +1,48 @@
+schema_version: 1.0.0
+resource_id: weegee
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+family: direct-flash-street
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '近距离、略带侵入性的现场取景'
+  - '人物动作和环境线索共同构成信息'
+  - '以黑白为主，黑位明确、亮部直接'
+avoid_overlap:
+  - '固定加入犯罪、警车、尸体或纽约地标'
+  - '把街头摄影变成摆拍时尚大片'
+example_id: anonymous-demo
+subject: 雨夜普通店铺门口，一把被遗忘的雨伞和经过的匿名行人
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 原创匿名街头演示，使用直接闪光、湿地反射和偶然动作，不引用具体新闻事件。

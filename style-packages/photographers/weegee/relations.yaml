@@ -1,0 +1,14 @@
+schema_version: 1.0.0
+family: direct-flash-street
+near_duplicates: []
+same_family: []
+complements: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '近距离、略带侵入性的现场取景'
+  - '人物动作和环境线索共同构成信息'
+  - '以黑白为主，黑位明确、亮部直接'
+avoid_overlap:
+  - '固定加入犯罪、警车、尸体或纽约地标'
+  - '把街头摄影变成摆拍时尚大片'

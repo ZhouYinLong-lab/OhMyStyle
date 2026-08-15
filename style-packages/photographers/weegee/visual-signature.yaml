@@ -1,0 +1,22 @@
+composition:
+  - '近距离、略带侵入性的现场取景'
+  - '人物动作和环境线索共同构成信息'
+  - '保留偶然遮挡、偏心和不完美的瞬间'
+palette:
+  - '以黑白为主，黑位明确、亮部直接'
+  - '彩色变体只保留少量现场色，不使用统一电影调色'
+  - '反光路面和浅色服装承担视觉闪点'
+lighting:
+  quality: '相机轴线附近的直接闪光，前景清楚，背景快速退入暗部'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: '新闻照片般的清晰颗粒、硬质高光和真实街面反射'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: '颗粒随曝光和放大尺度变化，不能覆盖主体细节'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'the requested subject stays unchanged'
+  - 'the package signature remains visible after subject transfer'

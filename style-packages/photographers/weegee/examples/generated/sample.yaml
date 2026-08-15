@@ -1,0 +1,37 @@
+example_id: anonymous-demo
+subject: 雨夜普通店铺门口，一把被遗忘的雨伞和经过的匿名行人
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 原创匿名街头演示，使用直接闪光、湿地反射和偶然动作，不引用具体新闻事件。
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "需用用户主体进行测试；不得把代表图主体当作默认主体。"
+  distinctive_signature:
+    score: null
+    notes: ""
+  visual_overlap:
+    score: null
+    notes: ""
+  cross_subject_stability:
+    score: null
+    notes: ""
+image_audit:
+  status: pending
+  notes: "代表图为原创的匿名演示；提交后执行资源审计。"
+signature:
+  - 近距离、略带侵入性的现场取景
+  - 以黑白为主，黑位明确、亮部直接
+  - 新闻照片般的清晰颗粒、硬质高光和真实街面反射
+controls:
+  - composition
+  - palette
+  - lighting
+does_not_control:
+  - subject identity
+  - object count
+  - location
+  - story or narrative event
+  - text, logo, or brand

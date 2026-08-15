@@ -1,0 +1,16 @@
+canonical_name: 维吉
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.icp.org/exhibitions/weegee-society-spectacle'
+
+notes:
+  - '以夜间闪光、直接的新闻现场、强烈黑白反差和未经修饰的街头瞬间建立紧迫而具体的观察感。'
+  - '代表图只用于展示视觉处理，不规定用户主题。'

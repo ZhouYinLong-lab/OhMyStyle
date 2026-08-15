@@ -1,0 +1,34 @@
+id: weegee
+name: 维吉
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以夜间闪光、直接的新闻现场、强烈黑白反差和未经修饰的街头瞬间建立紧迫而具体的观察感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: 摄影
+  historical_context: '二十世纪纽约新闻摄影'
+  application: general
+  visual_axes:
+    - camera
+    - composition
+    - lighting
+    - palette
+    - surface
+    - subject_treatment
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
