@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 左右双联视图与明确的卡片式编排
+- 轻微水平视差带来的空间错觉
+- 银盐照片或手工着色的有限色调
+- 两张图之间保持可比较但不完全相同的细节
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先确定一个简单且可辨的用户主体
+- 从相邻视点生成两张保持同一主体的画面
+- 并置双联图并保留边框和卡片比例
+- 避免过度变形，让视差服务于空间感
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+composition:
+- 左右双联视图与明确的卡片式编排
+- 轻微水平视差带来的空间错觉
+palette:
+- 轻微水平视差带来的空间错觉
+- 银盐照片或手工着色的有限色调
+lighting:
+  quality: 银盐照片或手工着色的有限色调
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 两张图之间保持可比较但不完全相同的细节
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- 左右双联视图与明确的卡片式编排
+- 轻微水平视差带来的空间错觉
+- 银盐照片或手工着色的有限色调
+- 两张图之间保持可比较但不完全相同的细节
+- the requested subject stays unchanged

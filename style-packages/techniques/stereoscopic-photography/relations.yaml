@@ -1,0 +1,11 @@
+family: optical-photographic-format
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+- 左右双联视图与明确的卡片式编排
+- 轻微水平视差带来的空间错觉
+- 银盐照片或手工着色的有限色调
+avoid_overlap:
+- fixed subject, landmark, character, or narrative event
+- copied reference composition or branded asset

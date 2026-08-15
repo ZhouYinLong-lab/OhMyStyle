@@ -1,0 +1,32 @@
+id: stereoscopic-photography
+name: 立体摄影
+kind: technique
+domain: photography
+version: 0.1.0
+summary: 以左右视点略有差异的双联影像、卡片式编排和可感知的空间错位模拟早期立体摄影观看经验。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: 摄影格式与观看技术
+  historical_context: 十九世纪摄影格式与观看技术
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
