@@ -1,0 +1,25 @@
+schema_version: 1.0.0
+composition:
+- 几何块面与斜向向量形成清晰的力场
+- 以投影、重叠和切割建立可读的空间层次
+- 版式感来自模块关系，不依赖具体文字
+palette:
+- 黑、白、红、蓝、黄等高辨识度色块
+- 大面积中性底色承托少量强色
+- 颜色用于建立结构关系，不覆盖主体材质
+lighting:
+  quality: 以平面明度和投影关系表现空间
+  behavior:
+  - 避免自然主义光影抢走几何秩序
+surface:
+  finish: 平整、哑光、纸面或涂层般的表面
+  edges: subject-dependent and medium-aware
+texture:
+  density: 低到中等纹理密度
+  placement: 纹理服从块面、边缘和版式结构
+invariants:
+- 几何块面与斜向向量建立视觉力场
+- 强色作为结构节点而非综合色滤镜
+- 模块化版式不绑定文字或固定题材
+- 平面与投影同时保持清晰边缘
+- the requested subject stays unchanged

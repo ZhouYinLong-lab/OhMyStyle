@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 几何块面与斜向向量建立视觉力场
+- 强色作为结构节点而非综合色滤镜
+- 模块化版式不绑定文字或固定题材
+- 平面与投影同时保持清晰边缘
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先抽取主体轮廓和空间关系
+- 将复杂形体归纳为几何块面与方向线
+- 安排一到两组强色作为结构节点
+- 检查模块关系是否仍然服务于用户主体
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

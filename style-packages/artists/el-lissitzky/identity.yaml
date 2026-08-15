@@ -1,0 +1,13 @@
+canonical_name: 埃尔·利西茨基
+entity_type: artist
+domain: hybrid
+historical_context: 二十世纪早期俄国先锋派与构成主义
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character or branded asset
+sources:
+- https://www.moma.org/artists/3569-el-lissitzky

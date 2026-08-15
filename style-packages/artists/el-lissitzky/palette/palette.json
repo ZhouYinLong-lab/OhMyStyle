@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "colors": [
+    {
+      "name": "黑、白、红、蓝、黄等高辨识度色块",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "大面积中性底色承托少量强色",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "颜色用于建立结构关系，不覆盖主体材质",
+      "hex": null,
+      "role": "package palette"
+    }
+  ]
+}

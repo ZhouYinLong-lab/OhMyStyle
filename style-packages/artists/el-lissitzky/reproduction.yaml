@@ -1,0 +1,17 @@
+medium: 绘画与设计
+materials:
+  support: 纸张、木板、涂层表面或平面设计媒介；具体材料以用户需求为准
+process:
+- 先抽取主体轮廓和空间关系
+- 将复杂形体归纳为几何块面与方向线
+- 安排一到两组强色作为结构节点
+- 检查模块关系是否仍然服务于用户主体
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

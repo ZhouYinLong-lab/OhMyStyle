@@ -1,0 +1,30 @@
+family: constructivist-geometry
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+- 几何块面与斜向向量建立视觉力场
+- 强色作为结构节点而非综合色滤镜
+- 模块化版式不绑定文字或固定题材
+- 平面与投影同时保持清晰边缘
+avoid_overlap:
+- generic Bauhaus furniture scene
+- fixed propaganda poster
+- specific typography or political symbol
+profiles:
+  generic:
+    required:
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
+    - no fixed subject leaks into the output
+    reject_if:
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+    - preserve the user-supplied person or object without adding a recurring figure
+  still_life:
+    required:
+    - preserve the user-supplied objects and their count
+minimum_score: 7
