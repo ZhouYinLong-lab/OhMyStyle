@@ -1,0 +1,22 @@
+composition:
+  - '大面积安静空间与低密度地景'
+  - '远近层叠的水平地平线'
+  - '极小尺度的主体只作为比例参照'
+palette:
+  - '灰蓝、冷褐和雾白形成低饱和基础'
+  - '远景降低对比度，保留空气距离'
+  - '局部暖色只用于微弱的季节或光线提示'
+lighting:
+  quality: '冷静、漫射、接近自然天气的光线，明暗过渡宽而不戏剧化'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: '薄层透明色、柔化边缘、湿润空气感和克制的绘画肌理'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: '纹理集中在近景地面、岩石或树木，远景逐渐简化'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'the requested subject stays unchanged'
+  - 'the package signature remains visible after subject transfer'

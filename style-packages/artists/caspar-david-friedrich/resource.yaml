@@ -1,0 +1,48 @@
+schema_version: 1.0.0
+resource_id: caspar-david-friedrich
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+family: romantic-atmospheric-landscape
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '大面积安静空间与低密度地景'
+  - '远近层叠的水平地平线'
+  - '灰蓝、冷褐和雾白形成低饱和基础'
+avoid_overlap:
+  - '固定加入山峰、废墟、墓地或背影人物'
+  - '把安静空间变成电影海报式戏剧场面'
+example_id: anonymous-demo
+subject: 一盏普通台灯放在未指定地点的空旷石地边缘
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 原创匿名风景演示，以空旷尺度、薄雾和冷静远景说明视觉签名。

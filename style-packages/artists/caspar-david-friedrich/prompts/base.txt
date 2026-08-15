@@ -1,0 +1,8 @@
+Create an original image of {SUBJECT} in the visual language of Caspar David Friedrich.
+
+Transfer these observable decisions: 以孤寂尺度、背向观看、清冷空气和远景层叠组织风景，让自然的精神重量超过具体叙事。
+Composition: 大面积安静空间与低密度地景; 远近层叠的水平地平线; 极小尺度的主体只作为比例参照.
+Palette: 灰蓝、冷褐和雾白形成低饱和基础; 远景降低对比度，保留空气距离; 局部暖色只用于微弱的季节或光线提示.
+Lighting: 冷静、漫射、接近自然天气的光线，明暗过渡宽而不戏剧化. Surface: 薄层透明色、柔化边缘、湿润空气感和克制的绘画肌理. Texture: 纹理集中在近景地面、岩石或树木，远景逐渐简化.
+
+Keep the user's subject, location, quantity, identity, action, aspect ratio, and purpose unchanged. Treat the package as a visual treatment, not as a subject or story generator.

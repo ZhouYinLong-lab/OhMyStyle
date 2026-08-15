@@ -1,0 +1,34 @@
+id: caspar-david-friedrich
+name: 卡斯帕·大卫·弗里德里希
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以孤寂尺度、背向观看、清冷空气和远景层叠组织风景，让自然的精神重量超过具体叙事。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: 绘画
+  historical_context: '十九世纪德国浪漫主义风景绘画'
+  application: general
+  visual_axes:
+    - medium
+    - composition
+    - lighting
+    - palette
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

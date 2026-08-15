@@ -1,0 +1,14 @@
+schema_version: 1.0.0
+family: romantic-atmospheric-landscape
+near_duplicates: []
+same_family: []
+complements: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '大面积安静空间与低密度地景'
+  - '远近层叠的水平地平线'
+  - '灰蓝、冷褐和雾白形成低饱和基础'
+avoid_overlap:
+  - '固定加入山峰、废墟、墓地或背影人物'
+  - '把安静空间变成电影海报式戏剧场面'

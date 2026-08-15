@@ -1,0 +1,16 @@
+canonical_name: 卡斯帕·大卫·弗里德里希
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.nga.gov/artists/6885-caspar-david-friedrich'
+
+notes:
+  - '以孤寂尺度、背向观看、清冷空气和远景层叠组织风景，让自然的精神重量超过具体叙事。'
+  - '代表图只用于展示视觉处理，不规定用户主题。'

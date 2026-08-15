@@ -1,0 +1,20 @@
+medium: '以孤寂尺度、背向观看、清冷空气和远景层叠组织风景，让自然的精神重量超过具体叙事。'
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+  - '先确定地平线和大片天空'
+  - '用空气透视建立远景层次'
+  - '再放入用户指定的主体作为尺度参照'
+  - '最后以少量边缘和季节色收束'
+technical_direction:
+  contrast: '低到中等对比度，冷色占主导，远景柔化但不使用廉价雾效'
+  saturation: rich but subject-dependent, never an all-over filter
+  perspective: preserve the user's requested camera or spatial logic
+avoid:
+  - '固定加入山峰、废墟、墓地或背影人物'
+  - '把安静空间变成电影海报式戏剧场面'
+  - '用全局蓝灰滤镜代替空气透视'
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.
