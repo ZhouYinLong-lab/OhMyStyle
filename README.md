@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-271-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-276-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -180,6 +180,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/kathe-kollwitz/README.md"><img src="style-packages/artists/kathe-kollwitz/gallery-16x9.jpg" width="230" alt="凯绥·珂勒惠支 representative image"></a><br><strong>凯绥·珂勒惠支</strong><br><a href="style-packages/artists/kathe-kollwitz/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/gerhard-richter/README.md"><img src="style-packages/artists/gerhard-richter/gallery-16x9.jpg" width="230" alt="格哈德·里希特代表图"></a><br><strong>格哈德·里希特</strong><br><a href="style-packages/artists/gerhard-richter/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/yayoi-kusama/README.md"><img src="style-packages/artists/yayoi-kusama/gallery-16x9.jpg" width="230" alt="草间弥生代表图"></a><br><strong>草间弥生</strong><br><a href="style-packages/artists/yayoi-kusama/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 摄影师
@@ -270,6 +273,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/ernst-haas/README.md"><img src="style-packages/photographers/ernst-haas/gallery-16x9.jpg" width="230" alt="恩斯特·哈斯 representative image"></a><br><strong>恩斯特·哈斯</strong><br><a href="style-packages/photographers/ernst-haas/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/josef-koudelka/README.md"><img src="style-packages/photographers/josef-koudelka/gallery-16x9.jpg" width="230" alt="约瑟夫·库德尔卡代表图"></a><br><strong>约瑟夫·库德尔卡</strong><br><a href="style-packages/photographers/josef-koudelka/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/todd-hido/README.md"><img src="style-packages/photographers/todd-hido/gallery-16x9.jpg" width="230" alt="托德·海多代表图"></a><br><strong>托德·海多</strong><br><a href="style-packages/photographers/todd-hido/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 设计学校
@@ -299,6 +305,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="耶鲁艺术学院代表图"></a><br><strong>耶鲁艺术学院</strong><br><a href="style-packages/schools/yale-school-of-art/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/central-saint-martins/README.md"><img src="style-packages/schools/central-saint-martins/gallery-16x9.jpg" width="230" alt="中央圣马丁艺术与设计学院代表图"></a><br><strong>中央圣马丁艺术与设计学院</strong><br><a href="style-packages/schools/central-saint-martins/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/ecal/README.md"><img src="style-packages/schools/ecal/gallery-16x9.jpg" width="230" alt="洛桑艺术设计学院代表图"></a><br><strong>洛桑艺术设计学院</strong><br><a href="style-packages/schools/ecal/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -423,6 +432,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-expressionism/README.md"><img src="style-packages/movements/neo-expressionism/gallery-16x9.jpg" width="230" alt="新表现主义代表图"></a><br><strong>新表现主义</strong><br><a href="style-packages/movements/neo-expressionism/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/art-informel/README.md"><img src="style-packages/movements/art-informel/gallery-16x9.jpg" width="230" alt="非形式艺术代表图"></a><br><strong>非形式艺术</strong><br><a href="style-packages/movements/art-informel/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 原创预设
@@ -535,6 +547,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.md"><img src="style-packages/game-art/japanese-cel-shaded-action-game-art/gallery-16x9.jpg" width="230" alt="日式赛璐珞动作游戏美术 representative image"></a><br><strong>日式赛璐珞动作游戏美术</strong><br><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-isometric-strategy/README.md"><img src="style-packages/game-art/hand-painted-isometric-strategy/gallery-16x9.jpg" width="230" alt="等距手绘策略游戏美术代表图"></a><br><strong>等距手绘策略游戏美术</strong><br><a href="style-packages/game-art/hand-painted-isometric-strategy/README.md">打开 README</a></td>
 </tr>
 </table>
 

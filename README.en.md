@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-271-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-276-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -180,6 +180,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/kathe-kollwitz/README.en.md"><img src="style-packages/artists/kathe-kollwitz/gallery-16x9.jpg" width="230" alt="Käthe Kollwitz representative image"></a><br><strong>Käthe Kollwitz</strong><br><a href="style-packages/artists/kathe-kollwitz/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/gerhard-richter/README.en.md"><img src="style-packages/artists/gerhard-richter/gallery-16x9.jpg" width="230" alt="Gerhard Richter representative image"></a><br><strong>Gerhard Richter</strong><br><a href="style-packages/artists/gerhard-richter/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/yayoi-kusama/README.en.md"><img src="style-packages/artists/yayoi-kusama/gallery-16x9.jpg" width="230" alt="Yayoi Kusama representative image"></a><br><strong>Yayoi Kusama</strong><br><a href="style-packages/artists/yayoi-kusama/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Photographers
@@ -270,6 +273,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/ernst-haas/README.en.md"><img src="style-packages/photographers/ernst-haas/gallery-16x9.jpg" width="230" alt="Ernst Haas representative image"></a><br><strong>Ernst Haas</strong><br><a href="style-packages/photographers/ernst-haas/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/josef-koudelka/README.en.md"><img src="style-packages/photographers/josef-koudelka/gallery-16x9.jpg" width="230" alt="Josef Koudelka representative image"></a><br><strong>Josef Koudelka</strong><br><a href="style-packages/photographers/josef-koudelka/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/todd-hido/README.en.md"><img src="style-packages/photographers/todd-hido/gallery-16x9.jpg" width="230" alt="Todd Hido representative image"></a><br><strong>Todd Hido</strong><br><a href="style-packages/photographers/todd-hido/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Design schools
@@ -299,6 +305,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.en.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="Yale School of Art representative image"></a><br><strong>Yale School of Art</strong><br><a href="style-packages/schools/yale-school-of-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/central-saint-martins/README.en.md"><img src="style-packages/schools/central-saint-martins/gallery-16x9.jpg" width="230" alt="Central Saint Martins representative image"></a><br><strong>Central Saint Martins</strong><br><a href="style-packages/schools/central-saint-martins/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/ecal/README.en.md"><img src="style-packages/schools/ecal/gallery-16x9.jpg" width="230" alt="ECAL representative image"></a><br><strong>ECAL</strong><br><a href="style-packages/schools/ecal/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -423,6 +432,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-expressionism/README.en.md"><img src="style-packages/movements/neo-expressionism/gallery-16x9.jpg" width="230" alt="Neo-Expressionism representative image"></a><br><strong>Neo-Expressionism</strong><br><a href="style-packages/movements/neo-expressionism/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/art-informel/README.en.md"><img src="style-packages/movements/art-informel/gallery-16x9.jpg" width="230" alt="Art Informel representative image"></a><br><strong>Art Informel</strong><br><a href="style-packages/movements/art-informel/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Original presets
@@ -535,6 +547,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.en.md"><img src="style-packages/game-art/japanese-cel-shaded-action-game-art/gallery-16x9.jpg" width="230" alt="Japanese Cel-Shaded Action Game Art representative image"></a><br><strong>Japanese Cel-Shaded Action Game Art</strong><br><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-isometric-strategy/README.en.md"><img src="style-packages/game-art/hand-painted-isometric-strategy/gallery-16x9.jpg" width="230" alt="Hand-Painted Isometric Strategy Game Art representative image"></a><br><strong>Hand-Painted Isometric Strategy Game Art</strong><br><a href="style-packages/game-art/hand-painted-isometric-strategy/README.en.md">Open README</a></td>
 </tr>
 </table>
 
