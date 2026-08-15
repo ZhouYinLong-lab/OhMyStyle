@@ -1,0 +1,14 @@
+schema_version: 1.0.0
+family: symbolic-flat-solemnity
+near_duplicates: []
+same_family: []
+complements: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '稳定、正面、近似仪式性的排列'
+  - '空间深度被压缩，主体轮廓优先'
+  - '金色、深蓝、暗红和赭色形成象征性色彩关系'
+avoid_overlap:
+  - '固定加入圣像、光环、教堂或宗教仪式'
+  - '把风格简化为金色滤镜'

@@ -1,0 +1,15 @@
+package_id: byzantine-art
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://www.metmuseum.org/met-publications/the-arts-of-byzantium-the-metropolitan-museum-of-art-bulletin-v-58-no-4-spring-2001'
+    title: '拜占庭艺术资料'
+    authority: '大都会艺术博物馆'
+    supports: source traceability and package scope
+
+attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle an external artwork, photograph, screenshot, logo, or dataset item unless redistribution rights are verified.
+  - Link-only sources are acceptable for research when local redistribution is not permitted.
+  - The generated example is an original anonymous scene and is not the source work.

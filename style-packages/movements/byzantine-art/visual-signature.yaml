@@ -1,0 +1,22 @@
+composition:
+  - '稳定、正面、近似仪式性的排列'
+  - '空间深度被压缩，主体轮廓优先'
+  - '以对称或近对称建立持续的视觉安定感'
+palette:
+  - '金色、深蓝、暗红和赭色形成象征性色彩关系'
+  - '高光集中而克制，不制造写实金属反射'
+  - '背景可简化为深色或金色的平面场'
+lighting:
+  quality: '均匀而正面的光线，强调轮廓和色面，不使用强烈自然阴影'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: '平滑的矿物色层、细密装饰性纹理和局部金属光泽'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: '纹理集中在边框、衣料或背景装饰，主体表面保持可读'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'the requested subject stays unchanged'
+  - 'the package signature remains visible after subject transfer'

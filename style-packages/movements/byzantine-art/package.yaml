@@ -1,0 +1,34 @@
+id: byzantine-art
+name: 拜占庭艺术
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  以正面秩序、金色或深色背景、稳定轮廓、象征性尺度和克制的平面层次建立超越日常空间的视觉庄严感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: 绘画
+  historical_context: '中世纪东罗马艺术传统'
+  application: general
+  visual_axes:
+    - medium
+    - composition
+    - lighting
+    - palette
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

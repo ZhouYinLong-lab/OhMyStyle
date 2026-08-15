@@ -1,0 +1,8 @@
+Create an original image of {SUBJECT} in the visual language of Byzantine Art.
+
+Transfer these observable decisions: 以正面秩序、金色或深色背景、稳定轮廓、象征性尺度和克制的平面层次建立超越日常空间的视觉庄严感。
+Composition: 稳定、正面、近似仪式性的排列; 空间深度被压缩，主体轮廓优先; 以对称或近对称建立持续的视觉安定感.
+Palette: 金色、深蓝、暗红和赭色形成象征性色彩关系; 高光集中而克制，不制造写实金属反射; 背景可简化为深色或金色的平面场.
+Lighting: 均匀而正面的光线，强调轮廓和色面，不使用强烈自然阴影. Surface: 平滑的矿物色层、细密装饰性纹理和局部金属光泽. Texture: 纹理集中在边框、衣料或背景装饰，主体表面保持可读.
+
+Keep the user's subject, location, quantity, identity, action, aspect ratio, and purpose unchanged. Treat the package as a visual treatment, not as a subject or story generator.
