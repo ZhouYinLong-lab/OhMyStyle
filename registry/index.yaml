@@ -663,6 +663,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: louise-bourgeois
+  name: 路易丝·布尔乔亚
+  kind: artist
+  domain: hybrid
+  package_path: style-packages/artists/louise-bourgeois
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: mary-cassatt
   name: 玛丽·卡萨特
   kind: artist
@@ -1768,6 +1785,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: aestheticism
+  name: 唯美主义
+  kind: movement
+  domain: hybrid
+  package_path: style-packages/movements/aestheticism
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: art-deco
   name: 装饰艺术
   kind: movement
@@ -3671,6 +3705,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: sally-mann
+  name: 萨莉·曼
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/sally-mann
+  maturity: L3
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: saul-leiter
   name: 索尔·雷特
   kind: photographer
@@ -4211,6 +4262,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: design-academy-eindhoven
+  name: 埃因霍温设计学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/design-academy-eindhoven
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: ecal
   name: 洛桑艺术设计学院
   kind: school
@@ -4696,6 +4764,22 @@ packages:
   - surface
   - texture
   reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: platinum-palladium-printing
+  name: 铂钯印相
+  kind: technique
+  domain: photography
+  package_path: style-packages/techniques/platinum-palladium-printing
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 3
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
