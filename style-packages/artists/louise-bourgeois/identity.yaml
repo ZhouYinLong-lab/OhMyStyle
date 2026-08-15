@@ -1,0 +1,22 @@
+canonical_name: 路易丝·布尔乔亚
+entity_type: artist
+domain: hybrid
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；示例场景只是测试，不会成为默认题材。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 普通椅子与墙面
+    - 未指定地点的建筑体块
+  exclusions:
+    - copied composition
+    - named character or branded asset
+    - recurring spider, cage, cell, body part, or domestic room
+sources:
+  - 'https://www.moma.org/artists/710-louise-bourgeois'
+  - 'https://lb.moma.org/about/biography'
+notes:
+  - 将有机曲线与建筑性框架并置，让空间像记忆一样既可进入又有阻力。
+  - 表面保留手工、修补、压痕与材料不均匀，不把粗粝感简化成滤镜噪点。

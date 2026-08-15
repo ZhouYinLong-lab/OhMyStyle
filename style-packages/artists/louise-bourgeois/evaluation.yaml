@@ -1,0 +1,38 @@
+profiles:
+  generic:
+    required:
+      - architectural and organic geometry remain visibly distinct
+      - material evidence is localized and physically plausible
+      - new subject remains recognizable
+      - no copied reference composition or branded material
+    reject_if:
+      - style is represented only by brown-gray color grading
+      - a spider, cage, cell, or body part appears without user request
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - face and body remain user-specified rather than symbolic substitutions
+  still_life:
+    required:
+      - objects remain separate and materially legible
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Use at least two neutral subjects; record any recurring object leakage."
+  distinctive_signature:
+    score: null
+    notes: "Check the frame, organic counter-form, material joins, and structural negative space."
+  visual_overlap:
+    score: null
+    notes: "Compare against abstract-expressionist and distressed-material packages."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "Generated evidence must be added by a contributor or user."

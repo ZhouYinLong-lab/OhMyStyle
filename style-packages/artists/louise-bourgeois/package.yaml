@@ -1,0 +1,33 @@
+id: louise-bourgeois
+name: 路易丝·布尔乔亚
+kind: artist
+domain: hybrid
+version: 0.1.0
+summary: >-
+  以有机与建筑性形体、压缩空间、粗粝表面和记忆感的结构张力组织画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: hybrid
+  historical_context: '20世纪现代艺术；雕塑、绘画、版画与装置之间的跨媒介实践'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

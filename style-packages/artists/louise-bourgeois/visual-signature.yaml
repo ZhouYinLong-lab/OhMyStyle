@@ -1,0 +1,47 @@
+composition:
+  - Use a stable architectural frame interrupted by one or two biomorphic curves.
+  - Let voids and narrow passages carry psychological tension without adding a story.
+palette:
+  - Prefer restrained charcoal, umber, bone, muted red, and oxidized green; use one warmer accent sparingly.
+lighting:
+  quality: low-key but readable
+  behavior:
+    - Use side or top-side light to reveal relief, seams, dents, and uneven surfaces.
+    - Keep shadows open enough that the material remains legible.
+surface:
+  finish: tactile, worn, repaired, and slightly absorbent
+  edges: deliberate silhouettes with occasional irregularity, never melted blur
+texture:
+  density: medium and localized
+  placement: concentrated at joins, scratches, folds, edges, and pressure points
+invariants:
+  - organic and architectural geometry remain in productive tension
+  - negative space is structural, not empty decoration
+  - material evidence survives changes of subject
+medium: mixed-media sculpture, drawing, print, and installation sensibility
+materials:
+  support: paper, plaster, wood, fabric, metal, or another user-specified support
+process:
+  - establish the subject and a restrained spatial frame
+  - block the largest structural planes and voids
+  - introduce one controlled biomorphic counter-form
+  - add seams, abrasions, repairs, and pressure marks only where material logic supports them
+  - finish with quiet tonal balancing rather than a global filter
+technical_direction:
+  contrast: medium-high local contrast with open shadow detail
+  saturation: restrained, with one controlled accent
+  perspective: stable, slightly compressed, never surreal by default
+  detail_density: medium; concentrate detail on material transitions
+avoid:
+  - literal repetition of a recognizable sculpture or composition
+  - forced spiders, cages, cells, domestic rooms, or anatomy
+  - glossy CGI smoothness
+  - generic distressed texture pasted over every surface
+  - photorealistic detail when it breaks the tactile construction
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
