@@ -1,0 +1,23 @@
+medium: cross-disciplinary design study with editorial documentation logic
+materials:
+  support: worktable, paper, photographic print, translucent plastic, wire, wood, or user-specified materials
+  tools:
+    - paper prototype tools
+    - ruler and measuring tool
+    - camera or editorial documentation setup
+process:
+  - Identify the user's design question, subject, or intended output.
+  - Select a small set of contrasting materials that directly support it.
+  - Arrange primary, secondary, and reference elements with clear hierarchy.
+  - Light the setup with neutral daylight and preserve material differences.
+  - Remove accidental clutter, logos, and unreadable pseudo-text before delivery.
+technical_direction:
+  contrast: medium with clean separation between material samples
+  saturation: restrained, with one optional controlled accent
+  perspective: editorial overhead or three-quarter documentation view
+  detail_density: medium; every visible element should have a design role
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

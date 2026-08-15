@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls editorial hierarchy, material juxtaposition, documentation
+  light, and surface clarity only.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Treat the request as a precise
+cross-disciplinary design study: preserve the user's subject and purpose, then
+organize the visible materials or visual decisions with editorial hierarchy and
+generous negative space. Use neutral daylight, clean edges, tactile evidence, and
+at most one controlled material accent. Every secondary element must support a clear
+design relation. Do not add a worktable, prototype, ruler, school, logo, text, or
+random moodboard unless the user asks for it.

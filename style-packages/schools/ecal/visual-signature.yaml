@@ -1,0 +1,24 @@
+composition:
+  - 用清晰的设计层级组织多个媒介样本，保留留白和可读的工作关系。
+  - 让原型、图像、材料和测量工具形成有意的并置，而不是随意堆物。
+palette:
+  - 以中性白、灰、黑为基础，允许一处材料色或透明色成为视觉焦点。
+lighting:
+  quality: crisp natural studio daylight
+  behavior:
+    - 方向明确但不戏剧化，阴影帮助区分材料和尺度。
+surface:
+  finish: precise editorial documentation with tactile material evidence
+  edges: clean, deliberate, and slightly imperfect at prototypes
+texture:
+  density: medium and organized
+  placement: attached to paper, plastic, wire, wood, and photographic surfaces
+invariants:
+  - 跨媒介并置必须服务于一个清楚的设计问题或观察逻辑。
+  - 画面保持编辑性秩序，不变成无目的的素材拼贴。
+  - 不复制学校作品、学生项目或可识别品牌系统。
+anti_signatures:
+  - generic moodboard collage
+  - luxury product advertisement
+  - random studio clutter
+  - readable school logo or project text

@@ -1,0 +1,20 @@
+canonical_name: 洛桑艺术设计学院
+entity_type: school
+domain: design
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 跨媒介设计工作台
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://ecal.ch/en/school/about/mission-vision/'
+
+notes:
+  - 关注摄影、产品、平面、空间和材料之间的跨学科实验。
+  - 代表图中的工作台只是测试场景，不是默认要求。

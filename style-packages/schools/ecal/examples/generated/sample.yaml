@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: 跨媒介设计工作台
+generated_at: 2026-08-15
+review:
+  decision: accepted_as_representative
+  notes: 仅用于展示跨媒介并置和编辑性层级，不规定后续必须生成工作台。
