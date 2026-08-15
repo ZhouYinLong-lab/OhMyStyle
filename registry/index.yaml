@@ -986,6 +986,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: yves-klein
+  name: 勒内·马格利特
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/rene-magritte
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: romare-bearden
   name: 罗梅尔·比尔登
   kind: artist
@@ -1597,6 +1613,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: impossible-architecture-game-art
+  name: 纪念碑谷不可能几何游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/monument-valley-impossible-geometry
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: neon-noir-3d-game-art
   name: 霓虹黑色三维游戏美术
   kind: game_art
@@ -2735,6 +2768,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: dada
+  name: 新达达
+  kind: movement
+  domain: hybrid
+  package_path: style-packages/movements/neo-dada
+  maturity: L3
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: neo-expressionism
   name: 新表现主义
   kind: movement
@@ -3839,6 +3889,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: rinko-kawauchi
+  name: 莉莲·巴斯曼
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/lillian-bassman
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: lisa-arima
   name: 丽莎·有马
   kind: photographer
@@ -5381,6 +5448,22 @@ packages:
   - surface
   - texture
   - composition
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: albumen-printing
+  name: 盐纸印相
+  kind: technique
+  domain: photography
+  package_path: style-packages/techniques/salted-paper-printing
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
   reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
