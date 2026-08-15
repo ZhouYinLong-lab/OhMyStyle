@@ -1,0 +1,25 @@
+{
+  "name": "佛兰德暖色动势",
+  "colors": [
+    {
+      "name": "朱赭",
+      "hex": "#A84A35",
+      "role": "warm mass"
+    },
+    {
+      "name": "深蓝",
+      "hex": "#263A53",
+      "role": "cool counterweight"
+    },
+    {
+      "name": "金褐",
+      "hex": "#B17A42",
+      "role": "light accent"
+    },
+    {
+      "name": "墨绿",
+      "hex": "#31463A",
+      "role": "receding dark"
+    }
+  ]
+}

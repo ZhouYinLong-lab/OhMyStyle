@@ -1,0 +1,17 @@
+medium: dynamic Flemish Baroque oil painting
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+  - 'set the main diagonal and value masses'
+  - 'build large volumes before detail'
+  - 'layer warm and cool paint with varied opacity'
+  - 'reinforce movement through edges and cloth folds'
+technical_direction:
+  contrast: 'moderate-high with luminous warm highlights'
+  saturation: 'rich and warm, never an all-over filter'
+  perspective: 'natural depth with energetic foreground recession'
+avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

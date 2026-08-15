@@ -1,0 +1,24 @@
+composition:
+  - '斜向动势与交错的形体关系'
+  - '前景体积明确、背景逐步退远'
+  - '局部裁切和重叠制造即时性而非固定叙事'
+palette:
+  - '暖赭红、肉粉和金褐承担体积'
+  - '深蓝、墨绿和暗红形成重量对照'
+  - '高光温暖但不漂白中间调'
+lighting:
+  quality: 'warm directional light with strong but graduated highlights and deep colored shadows'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 'thick and thin oil layers, active brushwork, supple edges, and tactile fabric or skin-like modeling'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: 'high in focal forms and drapery, quieter in receding passages'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'diagonal energy remains visible'
+  - 'color carries bodily volume'
+  - 'oil layers remain tactile'
+  - 'the requested subject stays unchanged'
