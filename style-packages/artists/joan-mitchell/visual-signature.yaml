@@ -1,0 +1,20 @@
+composition:
+  - 让笔触群落在大面积留白之间形成疏密变化，不把画面填成均匀纹理。
+  - 用水平、斜向和局部垂直的笔触建立开放的空间节奏，而非单一中心构图。
+palette:
+  - 以偏暖的白色地面托住深蓝、叶绿、锈红、赭黄和紫色，颜色靠并置与擦拭产生张力。
+  - 允许少量黑色或深褐色作为断裂线，但避免全局变暗。
+lighting:
+  quality: diffuse studio light with visible paint relief
+  behavior:
+    - 光线均匀，让颜料厚薄、干湿和刮擦痕迹成为主要的明暗来源。
+surface:
+  finish: oil-on-canvas appearance with exposed ground
+  edges: broken, scraped, feathered and occasionally sharp
+texture:
+  density: varied, from open ground to dense gestural clusters
+  placement: concentrated in brush groups and drips, never as uniform digital noise
+invariants:
+  - 留白地面、断续笔触和可见的擦拭或滴落痕迹必须跨主体保留。
+  - 颜色通过笔触关系构成，不得退化为单一综合色滤镜。
+  - 主体轮廓可以被笔触打断，但不能被抽象纹理完全抹除。

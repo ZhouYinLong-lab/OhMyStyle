@@ -1,0 +1,17 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Treat it as an expressive painting
+with a warm-white ground, large broken directional brush groups, exposed pauses,
+scraped passages, a few thin drips and tactile variation in paint thickness. Use
+deep blue, green, rust red, ochre and violet as related but distinct stroke
+families. Let the user's subject remain recognizable beneath the abstraction. Keep
+the composition open and asymmetrical, with varied density rather than an even
+all-over pattern. Do not add a landscape, tree, garden, named scene or narrative
+motif unless requested. Do not copy any reference work, exact pose, recognizable
+layout, logo, or text. Use concrete visual instructions rather than the package
+name alone.

@@ -1,0 +1,21 @@
+canonical_name: 琼·米切尔
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 抽象色彩场
+    - 普通椅子与墙面
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.joanmitchellfoundation.org/joan-mitchell/artwork/1180-untitled'
+
+notes:
+  - 以留白的画布地面承托大幅、断续、相互穿插的笔触。
+  - 画面可保留景观记忆的节奏，但不得把山、树或田野写成默认主体。
