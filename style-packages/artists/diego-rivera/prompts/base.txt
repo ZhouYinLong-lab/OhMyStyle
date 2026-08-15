@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 适合远距离阅读的大尺度形体组织
+- 清晰轮廓与平面色块共同承担结构
+- 土红、赭黄、蓝绿和灰黑形成公共空间色彩
+- 人物或物体群组具有壁画式节奏，但不规定主体
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先把用户主体整理成远距离可读的大形
+- 以轮廓和色面建立群组关系
+- 让色彩承担空间层次而非过度写实阴影
+- 用少量表面颗粒和墙面质感收束画面
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

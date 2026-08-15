@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+composition:
+- 适合远距离阅读的大尺度形体组织
+- 清晰轮廓与平面色块共同承担结构
+palette:
+- 清晰轮廓与平面色块共同承担结构
+- 土红、赭黄、蓝绿和灰黑形成公共空间色彩
+lighting:
+  quality: 土红、赭黄、蓝绿和灰黑形成公共空间色彩
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 人物或物体群组具有壁画式节奏，但不规定主体
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- 适合远距离阅读的大尺度形体组织
+- 清晰轮廓与平面色块共同承担结构
+- 土红、赭黄、蓝绿和灰黑形成公共空间色彩
+- 人物或物体群组具有壁画式节奏，但不规定主体
+- the requested subject stays unchanged

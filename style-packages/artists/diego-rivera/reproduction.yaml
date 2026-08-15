@@ -1,0 +1,18 @@
+medium: 二十世纪墨西哥壁画运动 绘画
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+- 先把用户主体整理成远距离可读的大形
+- 以轮廓和色面建立群组关系
+- 让色彩承担空间层次而非过度写实阴影
+- 用少量表面颗粒和墙面质感收束画面
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+  game asset.
