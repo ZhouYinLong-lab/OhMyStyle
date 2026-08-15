@@ -1,0 +1,20 @@
+canonical_name: 约瑟夫·库德尔卡
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户主体优先；代表图和测试题材只用于检验观察方式。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 工业边缘与远处人物
+  exclusions:
+    - copied composition
+    - named event or documentary claim
+    - branded location
+sources:
+  - https://pro.magnumphotos.com/C.aspx?ERID=24KL535C7T&VF=MAGO31_9_VForm&VP3=CMS3
+  - https://www.josefkoudelka.org/chronology
+notes:
+  - 关注人在开阔空间中的尺度、边缘和时间感，而不是固定的流浪、战争或废墟题材。

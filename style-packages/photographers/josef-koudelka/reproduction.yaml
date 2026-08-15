@@ -1,0 +1,20 @@
+medium: black-and-white documentary photography
+materials:
+  capture: high-resolution monochrome negative or neutral digital capture
+  finish: matte photographic paper with restrained grain
+process:
+  - Observe the user-supplied subject without adding a documentary event.
+  - Establish a wide, slightly tense spatial field and a clear horizon or ground plane.
+  - Use available light to divide sky, land, structure, and human scale.
+  - Keep timing observational: a passing figure, an empty interval, or an unsettled edge.
+  - Print with deep blacks, luminous grays, and controlled paper highlights.
+technical_direction:
+  contrast: high but not clipped
+  saturation: monochrome only
+  perspective: human-height or slightly displaced documentary viewpoint
+  detail_density: broad tonal masses with selective crisp detail
+avoid:
+  - fixed walls, fields, war scenes, festivals, or exile narratives
+  - copied Magnum or documentary compositions
+  - artificial vignette, neon, or overprocessed HDR
+safety_note: Do not imply a real historical event, identify private people, or reproduce a source photograph.

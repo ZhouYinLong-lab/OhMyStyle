@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package changes photographic observation only: framing, timing, light,
+  monochrome tonal structure, grain, and distance.
+- Do not add a recurring location, event, character, landmark, or narrative.
+
+Photograph {SUBJECT} in {LOCATION} as a wide, observational black-and-white
+documentary frame. Use a human-height or slightly displaced viewpoint, open
+edges, strong spatial scale, deep blacks, luminous grays, and restrained paper
+white. Let available natural light divide sky, ground, structure, and subject.
+Keep the moment unposed and incomplete: a passing figure, an empty interval, or
+an unsettled edge may occur only when supported by the user's request. Use fine
+to medium grain and matte silver-print tonality. Do not add a war story,
+festival, exile narrative, wall, field, or any other fixed motif.

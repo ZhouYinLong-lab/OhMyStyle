@@ -1,0 +1,24 @@
+composition:
+  - 使用宽阔横向视野和不完全封闭的边缘，让主体处在空间压力中。
+  - 人、地貌或建筑保持清楚的尺度关系，避免广告式居中摆拍。
+palette:
+  - 纯黑、炭灰、银灰和纸白构成主要层次，不使用彩色滤镜。
+lighting:
+  quality: hard or overcast natural light with strong tonal separation
+  behavior:
+    - 天空、地面和主体之间形成明确的黑白结构，保留高光空气感。
+surface:
+  finish: documentary gelatin-silver print impression
+  edges: slightly raw framing with decisive cropping and open negative space
+texture:
+  density: fine to medium photographic grain
+  placement: even across the frame, with deeper grain in broad shadow fields
+invariants:
+  - 观察距离克制，人物不是摆拍模特或戏剧角色。
+  - 黑白层次承担情绪，不能只把彩色图去饱和。
+  - 不重建特定事件、地点、人物或摄影作品。
+anti_signatures:
+  - glossy commercial fashion lighting
+  - cinematic teal-orange grade
+  - staged crowd scene
+  - decorative film border

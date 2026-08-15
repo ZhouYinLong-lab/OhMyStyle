@@ -1,0 +1,26 @@
+package_id: josef-koudelka
+package_version: 0.1.0
+curation_status: curated_demo
+source_policy: 仅记录可访问的研究来源；不在仓库再分发外部摄影作品。
+sources:
+  - url: 'https://pro.magnumphotos.com/C.aspx?ERID=24KL535C7T&VF=MAGO31_9_VForm&VP3=CMS3'
+    title: Magnum photographer profile
+    authority: Magnum Photos
+    supports: 作品与摄影实践研究
+  - url: 'https://www.josefkoudelka.org/chronology'
+    title: Chronology
+    authority: Josef Koudelka Foundation
+    supports: 生涯与作品脉络研究
+attribution: 本包提取可观察的黑白摄影决策，不宣称合作、授权或精确模仿。
+rights_notes:
+  - 外部摄影作品不随包分发。
+  - 生成示例是匿名新场景，不是摄影师的原作。
+asset: gallery-16x9.jpg
+status: generated_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: 工业边缘与远处人物，仅作风格基准
+generated_at: 2026-08-15
+review:
+  decision: accepted_as_representative
+  notes: 代表图检验宽幅黑白、空间尺度和观察距离，不规定默认题材。

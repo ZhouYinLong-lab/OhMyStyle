@@ -1,0 +1,33 @@
+id: josef-koudelka
+name: 约瑟夫·库德尔卡
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以高反差黑白、开放边缘和全景空间记录流动中的人、地景与历史压力。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '20世纪后半叶欧洲纪实与全景摄影'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
