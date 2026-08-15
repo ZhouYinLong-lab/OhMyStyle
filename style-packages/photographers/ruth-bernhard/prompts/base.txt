@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 雕塑般的黑白形体
+- 局部裁切与安静负空间
+- 连续阶调而非高反差滤镜
+- 近距离观察但不制造戏剧叙事
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先确定主体轮廓和负空间
+- 以单一中性光源建立体积
+- 控制黑白阶调和背景干净度
+- 检查画面是否保持亲密观察而非摆拍广告
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

@@ -1,0 +1,25 @@
+schema_version: 1.0.0
+composition:
+- 以单一主体、局部裁切和负空间强调形体
+- 轮廓像雕塑一样清晰，但不追求硬朗商业棚拍
+- 画面安静、集中、留有观察余地
+palette:
+- 黑白或极低饱和的中性灰阶
+- 亮部与暗部过渡连续，避免纯黑纯白占满画面
+- 颜色不替代光线和形体关系
+lighting:
+  quality: 大型柔光或侧向光塑造细腻体积
+  behavior:
+  - 阴影深但保留层次，避免戏剧化轮廓光
+surface:
+  finish: 细腻的银盐照片质感
+  edges: subject-dependent and medium-aware
+texture:
+  density: 低到中等颗粒，集中在暗部和纸面
+  placement: 纹理服务于形体，不增加复古滤镜
+invariants:
+- 雕塑般的黑白形体
+- 局部裁切与安静负空间
+- 连续阶调而非高反差滤镜
+- 近距离观察但不制造戏剧叙事
+- the requested subject stays unchanged

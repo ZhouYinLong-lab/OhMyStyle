@@ -1,0 +1,17 @@
+medium: 摄影
+materials:
+  support: 银盐黑白摄影、纸面纤维和自然光；色彩摄影需求仍由用户优先
+process:
+- 先确定主体轮廓和负空间
+- 以单一中性光源建立体积
+- 控制黑白阶调和背景干净度
+- 检查画面是否保持亲密观察而非摆拍广告
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

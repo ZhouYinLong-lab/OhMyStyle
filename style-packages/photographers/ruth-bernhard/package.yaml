@@ -1,0 +1,32 @@
+id: ruth-bernhard
+name: 露丝·伯恩哈德
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 以克制的黑白影调、雕塑般的轮廓、亲密的静物与人体观察建立安静而精确的摄影形体。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: 摄影
+  historical_context: 二十世纪美国现代摄影与形式主义摄影
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,39 @@
+example_id: anonymous-demo
+subject: an ordinary folded fabric and a plain ceramic cup on an unspecified studio surface, original anonymous photograph
+source_artwork_copied: false
+status: generated
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 用普通器物演示雕塑式轮廓和克制阶调；不默认生成人体、裸像或固定道具
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: 需用用户主体进行测试；不得把代表图主体当作默认主体。
+  distinctive_signature:
+    score: null
+    notes: ''
+  visual_overlap:
+    score: null
+    notes: ''
+  cross_subject_stability:
+    score: null
+    notes: ''
+image_audit:
+  status: pending
+  notes: 代表图为原创匿名演示；提交后执行资源审计。
+signature:
+- 雕塑般的黑白形体
+- 局部裁切与安静负空间
+- 连续阶调而非高反差滤镜
+- 近距离观察但不制造戏剧叙事
+controls:
+- composition
+- palette
+- lighting
+- surface
+does_not_control:
+- subject identity
+- object count
+- location
+- story or narrative event
+- text, logo, or brand

@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "colors": [
+    {
+      "name": "黑白或极低饱和的中性灰阶",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "亮部与暗部过渡连续，避免纯黑纯白占满画面",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "颜色不替代光线和形体关系",
+      "hex": null,
+      "role": "package palette"
+    }
+  ]
+}

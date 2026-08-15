@@ -1,0 +1,30 @@
+family: formal-black-and-white-photography
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+- 雕塑般的黑白形体
+- 局部裁切与安静负空间
+- 连续阶调而非高反差滤镜
+- 近距离观察但不制造戏剧叙事
+avoid_overlap:
+- generic film-noir portrait
+- glamour retouching
+- fixed nude or fashion subject
+profiles:
+  generic:
+    required:
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
+    - no fixed subject leaks into the output
+    reject_if:
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+    - preserve the user-supplied person or object without adding a recurring figure
+  still_life:
+    required:
+    - preserve the user-supplied objects and their count
+minimum_score: 7
