@@ -646,6 +646,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: kazimir-malevich
+  name: 卡济米尔·马列维奇
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/kazimir-malevich
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: leonardo-da-vinci
   name: 莱昂纳多·达·芬奇
   kind: artist
@@ -1816,6 +1833,23 @@ packages:
   - surface
   - texture
   reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: art-brut
+  name: 原生艺术
+  kind: movement
+  domain: hybrid
+  package_path: style-packages/movements/art-brut
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
@@ -3416,6 +3450,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: imogen-cunningham
+  name: 伊莫金·坎宁安
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/imogen-cunningham
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: irving-penn
   name: 欧文·佩恩
   kind: photographer
@@ -4454,6 +4505,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: school-of-the-art-institute-of-chicago
+  name: 芝加哥艺术学院
+  kind: school
+  domain: hybrid
+  package_path: style-packages/schools/school-of-the-art-institute-of-chicago
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: school-of-visual-arts
   name: 视觉艺术学院
   kind: school
@@ -4840,6 +4908,22 @@ packages:
   kind: technique
   domain: hybrid
   package_path: style-packages/techniques/photomontage
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: photopolymer-intaglio
+  name: 光聚合物凹版印刷
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/photopolymer-intaglio
   maturity: L2
   focus_dimensions:
   - medium
