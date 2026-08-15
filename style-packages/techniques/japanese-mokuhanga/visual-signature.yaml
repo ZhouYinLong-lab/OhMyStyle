@@ -1,0 +1,21 @@
+composition:
+  - Build the image from a clear keyline structure and separate color areas that can be imagined as individual blocks.
+  - Use broad flat passages with carefully chosen overlaps, leaving paper to participate in the composition.
+palette:
+  - Use water-based pigments with a limited, transparent-to-opaque range and clear separation between color blocks.
+  - Let paper tone and slight color variation soften the geometry without losing the carved structure.
+lighting:
+  quality: diffuse print light with visible paper absorption
+  behavior:
+    - Keep color matte and layered; avoid glossy highlights that make the print read as a digital poster.
+    - Use value structure from block separation and paper reserve rather than cinematic shading.
+surface:
+  finish: water-based pigment absorbed into handmade paper
+  edges: carved keylines, imperfect registration, soft pigment spread, and occasional baren pressure variation
+texture:
+  density: medium; line and color block density follow the supplied subject
+  placement: concentrated at key contours, overlaps, paper grain, and registration boundaries
+invariants:
+  - Separate block logic, paper reserve, and hand registration remain visible after the subject changes.
+  - The technique does not require waves, actors, landscapes, or a particular historical motif.
+  - Water-based softness supports the carved structure rather than replacing it with watercolor blur.

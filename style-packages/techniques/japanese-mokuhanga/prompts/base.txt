@@ -1,0 +1,20 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply the package's observable
+medium, composition, lighting, palette, surface, and texture decisions from the
+style files. Preserve the package invariants while inventing a new scene: do not
+copy any reference work, named character, exact pose, recognizable layout, logo,
+or text. Keep the subject and narrative supplied by the user independent from
+the package's visual identity. Construct the supplied subject as a water-based
+woodblock print: establish clear carved keylines, divide colors into separate
+block-like areas, leave some warm paper reserve, and allow absorbent pigment,
+small registration shifts, and baren-like pressure variation to remain visible.
+Use restrained ink-black, indigo, vermilion, yellow, and washi-cream relations;
+keep the result matte and tactile. Do not add waves, actors, mountains, shrines,
+or Japanese ornament unless the user asks for them. Use concrete visual
+instructions rather than the package name alone.

@@ -1,0 +1,16 @@
+canonical_name: 日本水性木版画
+entity_type: technique
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.dento-tokyo.metro.tokyo.lg.jp/english/items/36.html'
+
+notes:
+  - The package focuses on separate color blocks, carved key lines, water-based pigment, absorbent paper, and small registration variation.
+  - Historical ukiyo-e associations are optional context; the package does not require waves, actors, landscapes, or Japanese motifs.

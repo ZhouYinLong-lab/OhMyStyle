@@ -1,0 +1,11 @@
+{
+  "name": "水性颜料与和纸吸收",
+  "colors": [
+    {"name": "墨黑", "hex": "#273139", "role": "关键线与深部"},
+    {"name": "靛青", "hex": "#365B79", "role": "冷色块"},
+    {"name": "朱砂", "hex": "#B84B3E", "role": "暖色块"},
+    {"name": "藤黄", "hex": "#D1A74A", "role": "明亮色块"},
+    {"name": "和纸米白", "hex": "#E9DDC4", "role": "纸面与留白"}
+  ],
+  "notes": "The palette describes water-based pigment relationships, not a mandatory ukiyo-e subject palette."
+}

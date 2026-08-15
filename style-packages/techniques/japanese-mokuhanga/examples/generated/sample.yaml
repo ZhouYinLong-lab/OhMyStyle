@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_generated_pending_human_review
+generator: OpenAI image generation
+prompt_mode: anonymous_visual_signature
+subject: folded paper package with a single ceramic form and plant stem
+generated_at: 2026-08-15
+review:
+  decision: pending
+  notes: Neutral material benchmark; the motif is illustrative and not a fixed subject.

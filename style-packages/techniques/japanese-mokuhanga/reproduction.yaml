@@ -1,0 +1,18 @@
+medium: Japanese water-based woodblock printmaking translated into a generated print treatment
+materials:
+  support: absorbent handmade paper with visible but restrained fiber
+process:
+  - Draw a simple keyline study based on the user's subject and separate the image into color blocks.
+  - Assign each color to an imagined carved block and keep overlaps physically plausible.
+  - Apply water-based pigment in layers, allowing paper absorption and small registration shifts.
+  - Finish with restrained paper texture and baren-like pressure variation; preserve clean areas of paper.
+technical_direction:
+  contrast: medium through keyline and block separation
+  saturation: medium, with transparent layered pigments
+  perspective: graphic or flattened, while respecting the user's requested scene
+  detail_density: medium; contours and block boundaries matter more than microtexture
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
