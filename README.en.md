@@ -82,6 +82,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Artists
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/marc-chagall/README.en.md"><img src="style-packages/artists/marc-chagall/gallery-16x9.jpg" width="230" alt="Marc Chagall representative image"></a><br><strong>Marc Chagall</strong><br><a href="style-packages/artists/marc-chagall/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/kazimir-malevich/README.en.md"><img src="style-packages/artists/kazimir-malevich/gallery-16x9.jpg" width="230" alt="Kazimir Malevich representative image"></a><br><strong>Kazimir Malevich</strong><br><a href="style-packages/artists/kazimir-malevich/README.en.md">Open README</a></td></tr>
 </table>
 
@@ -206,6 +210,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Photographers
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/kikuji-kawada/README.en.md"><img src="style-packages/photographers/kikuji-kawada/gallery-16x9.jpg" width="230" alt="Kikuji Kawada representative image"></a><br><strong>Kikuji Kawada</strong><br><a href="style-packages/photographers/kikuji-kawada/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/imogen-cunningham/README.en.md"><img src="style-packages/photographers/imogen-cunningham/gallery-16x9.jpg" width="230" alt="Imogen Cunningham representative image"></a><br><strong>Imogen Cunningham</strong><br><a href="style-packages/photographers/imogen-cunningham/README.en.md">Open README</a></td></tr>
 </table>
 
@@ -317,6 +325,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Design schools
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-danish-academy/README.en.md"><img src="style-packages/schools/royal-danish-academy/gallery-16x9.jpg" width="230" alt="Royal Danish Academy representative image"></a><br><strong>Royal Danish Academy</strong><br><a href="style-packages/schools/royal-danish-academy/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.en.md"><img src="style-packages/schools/school-of-the-art-institute-of-chicago/gallery-16x9.jpg" width="230" alt="School of the Art Institute of Chicago representative image"></a><br><strong>School of the Art Institute of Chicago</strong><br><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.en.md">Open README</a></td></tr>
 </table>
 
@@ -366,6 +378,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Movements and periods
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/situationist-international/README.en.md"><img src="style-packages/movements/situationist-international/gallery-16x9.jpg" width="230" alt="Situationist International representative image"></a><br><strong>Situationist International</strong><br><a href="style-packages/movements/situationist-international/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/art-brut/README.en.md"><img src="style-packages/movements/art-brut/gallery-16x9.jpg" width="230" alt="Art Brut representative image"></a><br><strong>Art Brut</strong><br><a href="style-packages/movements/art-brut/README.en.md">Open README</a></td></tr>
@@ -547,6 +563,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Game art
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.en.md"><img src="style-packages/game-art/kentucky-route-zero-scenographic-game-art/gallery-16x9.jpg" width="230" alt="Kentucky Route Zero scenographic game art representative image"></a><br><strong>Kentucky Route Zero Scenographic Game Art</strong><br><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/low-poly-adventure-game-art/README.en.md"><img src="style-packages/game-art/low-poly-adventure-game-art/gallery-16x9.jpg" width="230" alt="Low-poly Adventure Game Art representative image"></a><br><strong>Low-poly Adventure Game Art</strong><br><a href="style-packages/game-art/low-poly-adventure-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/top-down-16-bit-adventure/README.en.md"><img src="style-packages/game-art/top-down-16-bit-adventure/gallery-16x9.jpg" width="230" alt="Top-down 16-bit Adventure Game Art representative image"></a><br><strong>Top-down 16-bit Adventure Game Art</strong><br><a href="style-packages/game-art/top-down-16-bit-adventure/README.en.md">Open README</a></td>
@@ -626,6 +646,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Techniques and media
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/suminagashi/README.en.md"><img src="style-packages/techniques/suminagashi/gallery-16x9.jpg" width="230" alt="Suminagashi representative image"></a><br><strong>Suminagashi</strong><br><a href="style-packages/techniques/suminagashi/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/photopolymer-intaglio/README.en.md"><img src="style-packages/techniques/photopolymer-intaglio/gallery-16x9.jpg" width="230" alt="Photopolymer Intaglio representative image"></a><br><strong>Photopolymer Intaglio</strong><br><a href="style-packages/techniques/photopolymer-intaglio/README.en.md">Open README</a></td></tr>
