@@ -1,0 +1,21 @@
+composition:
+  - Use open framing with breathable edges, layered depth, and several independent points of visual interest.
+  - Let incidental alignment, color echoes, and distance between figures or objects carry the composition.
+palette:
+  - Favor natural daylight color with warm and cool regions held in the same frame.
+  - Allow one or two clear chromatic accents while preserving ordinary environmental colors.
+lighting:
+  quality: available daylight with gentle directional variation
+  behavior:
+    - Preserve the changing intensity of outdoor light instead of imposing a studio look.
+    - Keep highlights readable and shadows open enough to retain context.
+surface:
+  finish: natural color negative or fine-grained contemporary color print
+  edges: photographic clarity with selective depth and no artificial outline
+texture:
+  density: moderate environmental detail
+  placement: visible in pavement, foliage, architecture, and ordinary surfaces without decorative grain
+invariants:
+  - open observational framing
+  - layered everyday space with quiet color relationships
+  - natural daylight and unforced human or object presence
