@@ -1,5 +1,5 @@
 schema_version: 1.0.0
-resource_id: dada
+resource_id: neo-dada
 resource_type: visual_style
 maturity: L3
 task_independent: true
