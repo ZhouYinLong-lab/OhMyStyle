@@ -9,10 +9,12 @@ profiles:
       - text, logo, watermark, or unintended signature is present
   portrait:
     required:
-      - TODO: add portrait-specific checks when relevant
+      - person is observed rather than fashion-posed
+      - monochrome scale remains readable around the figure
   still_life:
     required:
-      - TODO: add still-life-specific checks when relevant
+      - framing and light remain observational
+      - no fixed wall, field, or documentary story appears
 minimum_score: 7
 
 semantic_evaluation:
