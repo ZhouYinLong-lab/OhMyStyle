@@ -1,0 +1,24 @@
+composition:
+  - '宽松而稳定的群组关系'
+  - '主次分明的中近景层次'
+  - '以色彩块面而不是硬轮廓组织视觉中心'
+palette:
+  - '暖赭红作为体积与温度的支点'
+  - '深蓝、酒红和金褐形成有重量的对照'
+  - '肤色与背景之间保持柔和互渗但不混成滤镜'
+lighting:
+  quality: 'warm, broad, directional light with soft transitions and restrained luminous accents'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Use light as a structural and material decision, not as a fixed scene.
+surface:
+  finish: 'layered oil paint, varied opacity, supple edges, and tactile brush-built color'
+  edges: varied, deliberate edges with no copied layout
+texture:
+  density: 'medium density in focal areas, quieter passages around the subject, visible but controlled paint variation'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'warm color carries form'
+  - 'layered oil surface remains visible'
+  - 'edges vary between soft and deliberate'
+  - 'the requested subject stays unchanged'

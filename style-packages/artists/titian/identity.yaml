@@ -1,0 +1,16 @@
+canonical_name: 提香
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.metmuseum.org/art/collection/search?pageSize=0&perPage=20&q=Titian+%28Tiziano+Vecellio%29'
+
+notes:
+  - '以文艺复兴晚期威尼斯绘画的丰润色彩、温暖光泽与层叠油彩表面组织画面。它关注色彩如何承载体积、肌理和情绪，不规定人物、物体或地点。'
+  - 代表图只用于展示视觉处理，不规定用户主题。

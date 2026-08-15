@@ -1,0 +1,25 @@
+{
+  "name": "威尼斯暖色层次",
+  "colors": [
+    {
+      "name": "赭红",
+      "hex": "#9B4635",
+      "role": "warm mass and flesh undertone"
+    },
+    {
+      "name": "深靛蓝",
+      "hex": "#263B55",
+      "role": "cool counterweight"
+    },
+    {
+      "name": "旧金色",
+      "hex": "#B78A4A",
+      "role": "muted light accent"
+    },
+    {
+      "name": "烟褐",
+      "hex": "#6B574B",
+      "role": "receding neutral"
+    }
+  ]
+}

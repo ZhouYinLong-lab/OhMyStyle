@@ -1,0 +1,39 @@
+example_id: anonymous-demo
+subject: an ordinary ceramic vessel on a quiet table, original anonymous still life
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: Original anonymous still life generated to show layered Venetian color and oil surface without copying a known composition.
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "需用用户主体进行测试；不得把代表图主体当作默认主体。"
+  distinctive_signature:
+    score: null
+    notes: ""
+  visual_overlap:
+    score: null
+    notes: ""
+  cross_subject_stability:
+    score: null
+    notes: ""
+image_audit:
+  status: pending
+  notes: "代表图为原创建的匿名演示；提交后执行资源审计。"
+signature:
+  - 'warm color carries form'
+  - 'layered oil surface remains visible'
+  - 'edges vary between soft and deliberate'
+  - 'the requested subject stays unchanged'
+controls:
+  - composition
+  - palette
+  - lighting
+  - surface
+does_not_control:
+  - subject identity
+  - object count
+  - location
+  - story or narrative event
+  - text, logo, or brand

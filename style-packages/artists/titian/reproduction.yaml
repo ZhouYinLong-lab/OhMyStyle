@@ -1,0 +1,17 @@
+medium: layered oil painting with Venetian colorism
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+  - 'block large warm and cool masses'
+  - 'establish value structure before local detail'
+  - 'build translucent and opaque color layers'
+  - 'reserve small luminous accents for the focal area'
+technical_direction:
+  contrast: 'moderate with rich midtones'
+  saturation: 'deep and warm, never a uniform high-saturation filter'
+  perspective: 'natural spatial depth with painterly atmospheric recession'
+avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, or protected game asset.
