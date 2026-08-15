@@ -31,7 +31,7 @@ Apply an academic fine-art training language: accurate proportion, studied struc
 
 本包依据公开机构或官方页面提取可观察的视觉线索，仅保存来源链接，不复制原作图像、角色、关卡、标志或版式：
 
-- [Academy of Fine Arts Vienna: History](https://www.akbild.ac.at/en/university/history)
+- [维也纳美术学院：学校历史](https://www.akbild.ac.at/en/university/history)
 
 ## 文件
 
