@@ -82,6 +82,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Artists
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/kazimir-malevich/README.en.md"><img src="style-packages/artists/kazimir-malevich/gallery-16x9.jpg" width="230" alt="Kazimir Malevich representative image"></a><br><strong>Kazimir Malevich</strong><br><a href="style-packages/artists/kazimir-malevich/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-morandi/README.en.md"><img src="style-packages/artists/giorgio-morandi/gallery-16x9.jpg" width="230" alt="Giorgio Morandi representative image"></a><br><strong>Giorgio Morandi</strong><br><a href="style-packages/artists/giorgio-morandi/README.en.md">Open README</a></td></tr>
 </table>
 
@@ -202,6 +206,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Photographers
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/imogen-cunningham/README.en.md"><img src="style-packages/photographers/imogen-cunningham/gallery-16x9.jpg" width="230" alt="Imogen Cunningham representative image"></a><br><strong>Imogen Cunningham</strong><br><a href="style-packages/photographers/imogen-cunningham/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/joel-meyerowitz/README.en.md"><img src="style-packages/photographers/joel-meyerowitz/gallery-16x9.jpg" width="230" alt="Joel Meyerowitz representative image"></a><br><strong>Joel Meyerowitz</strong><br><a href="style-packages/photographers/joel-meyerowitz/README.en.md">Open README</a></td></tr>
 </table>
 
@@ -309,6 +317,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Design schools
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.en.md"><img src="style-packages/schools/school-of-the-art-institute-of-chicago/gallery-16x9.jpg" width="230" alt="School of the Art Institute of Chicago representative image"></a><br><strong>School of the Art Institute of Chicago</strong><br><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-visual-arts/README.en.md"><img src="style-packages/schools/school-of-visual-arts/gallery-16x9.jpg" width="230" alt="School of Visual Arts representative image"></a><br><strong>School of Visual Arts</strong><br><a href="style-packages/schools/school-of-visual-arts/README.en.md">Open README</a></td></tr>
 </table>
 
@@ -354,6 +366,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Movements and periods
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/art-brut/README.en.md"><img src="style-packages/movements/art-brut/gallery-16x9.jpg" width="230" alt="Art Brut representative image"></a><br><strong>Art Brut</strong><br><a href="style-packages/movements/art-brut/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/vienna-secession/README.en.md"><img src="style-packages/movements/vienna-secession/gallery-16x9.jpg" width="230" alt="Vienna Secession representative image"></a><br><strong>Vienna Secession</strong><br><a href="style-packages/movements/vienna-secession/README.en.md">Open README</a></td></tr>
@@ -610,6 +626,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Techniques and media
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/photopolymer-intaglio/README.en.md"><img src="style-packages/techniques/photopolymer-intaglio/gallery-16x9.jpg" width="230" alt="Photopolymer Intaglio representative image"></a><br><strong>Photopolymer Intaglio</strong><br><a href="style-packages/techniques/photopolymer-intaglio/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/collagraph-printmaking/README.en.md"><img src="style-packages/techniques/collagraph-printmaking/gallery-16x9.jpg" width="230" alt="Collagraph Printmaking representative image"></a><br><strong>Collagraph Printmaking</strong><br><a href="style-packages/techniques/collagraph-printmaking/README.en.md">Open README</a></td></tr>

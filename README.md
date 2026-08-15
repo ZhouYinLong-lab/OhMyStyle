@@ -82,6 +82,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 ### 艺术家
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/kazimir-malevich/README.md"><img src="style-packages/artists/kazimir-malevich/gallery-16x9.jpg" width="230" alt="卡济米尔·马列维奇代表图"></a><br><strong>卡济米尔·马列维奇</strong><br><a href="style-packages/artists/kazimir-malevich/README.md">打开 README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-morandi/README.md"><img src="style-packages/artists/giorgio-morandi/gallery-16x9.jpg" width="230" alt="乔治·莫兰迪代表图"></a><br><strong>乔治·莫兰迪</strong><br><a href="style-packages/artists/giorgio-morandi/README.md">打开 README</a></td></tr>
 </table>
 
@@ -202,6 +206,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 ### 摄影师
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/imogen-cunningham/README.md"><img src="style-packages/photographers/imogen-cunningham/gallery-16x9.jpg" width="230" alt="伊莫金·坎宁安代表图"></a><br><strong>伊莫金·坎宁安</strong><br><a href="style-packages/photographers/imogen-cunningham/README.md">打开 README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/joel-meyerowitz/README.md"><img src="style-packages/photographers/joel-meyerowitz/gallery-16x9.jpg" width="230" alt="乔尔·迈耶罗维茨代表图"></a><br><strong>乔尔·迈耶罗维茨</strong><br><a href="style-packages/photographers/joel-meyerowitz/README.md">打开 README</a></td></tr>
 </table>
 
@@ -309,6 +317,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 ### 设计学校
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.md"><img src="style-packages/schools/school-of-the-art-institute-of-chicago/gallery-16x9.jpg" width="230" alt="芝加哥艺术学院代表图"></a><br><strong>芝加哥艺术学院</strong><br><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.md">打开 README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-visual-arts/README.md"><img src="style-packages/schools/school-of-visual-arts/gallery-16x9.jpg" width="230" alt="视觉艺术学院代表图"></a><br><strong>视觉艺术学院</strong><br><a href="style-packages/schools/school-of-visual-arts/README.md">打开 README</a></td></tr>
 </table>
 
@@ -354,6 +366,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </table>
 
 ### 艺术流派与历史时期
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/art-brut/README.md"><img src="style-packages/movements/art-brut/gallery-16x9.jpg" width="230" alt="原生艺术代表图"></a><br><strong>原生艺术</strong><br><a href="style-packages/movements/art-brut/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/vienna-secession/README.md"><img src="style-packages/movements/vienna-secession/gallery-16x9.jpg" width="230" alt="维也纳分离派代表图"></a><br><strong>维也纳分离派</strong><br><a href="style-packages/movements/vienna-secession/README.md">打开 README</a></td></tr>
@@ -610,6 +626,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </table>
 
 ### 工艺与媒介
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/photopolymer-intaglio/README.md"><img src="style-packages/techniques/photopolymer-intaglio/gallery-16x9.jpg" width="230" alt="光聚合物凹版印刷代表图"></a><br><strong>光聚合物凹版印刷</strong><br><a href="style-packages/techniques/photopolymer-intaglio/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/collagraph-printmaking/README.md"><img src="style-packages/techniques/collagraph-printmaking/gallery-16x9.jpg" width="230" alt="拼贴版画代表图"></a><br><strong>拼贴版画</strong><br><a href="style-packages/techniques/collagraph-printmaking/README.md">打开 README</a></td></tr>
