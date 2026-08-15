@@ -782,6 +782,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: moholy-nagy
+  name: 拉斯洛·莫霍利-纳吉
+  kind: artist
+  domain: hybrid
+  package_path: style-packages/artists/moholy-nagy
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: nicolas-de-stael
   name: 尼古拉·德·斯塔埃尔
   kind: artist
@@ -1734,6 +1751,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: spiritfarer-hand-drawn-game-art
+  name: 灵魂旅人手绘游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/spiritfarer-hand-drawn-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: stop-motion-clay-game-art
   name: 黏土定格游戏美术
   kind: game_art
@@ -2651,6 +2685,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: mughal-miniature-painting
+  name: 莫卧儿细密画
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/mughal-miniature-painting
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: neo-expressionism
   name: 新表现主义
   kind: movement
@@ -3744,6 +3795,23 @@ packages:
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/lisa-arima
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: luigi-ghirri
+  name: 路易吉·吉里
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/luigi-ghirri
   maturity: L2
   focus_dimensions:
   - camera
@@ -4943,6 +5011,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: ebru-paper-marbling
+  name: 水面浮彩纸张纹样
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/ebru-paper-marbling
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: encaustic-painting
   name: 蜡画
   kind: technique
