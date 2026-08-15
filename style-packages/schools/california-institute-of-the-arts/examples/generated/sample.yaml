@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_generated_pending_human_review
+generator: OpenAI image generation
+prompt_mode: anonymous_visual_signature
+subject: exhibition wall with paper form, projection, clay module, and process board
+generated_at: 2026-08-15
+review:
+  decision: pending
+  notes: Neutral cross-media benchmark; the exhibition elements are illustrative and not a required scene.

@@ -1,0 +1,11 @@
+{
+  "name": "中性展陈与单一强色",
+  "colors": [
+    {"name": "展墙白", "hex": "#F0EEE8", "role": "中性空间"},
+    {"name": "石墨灰", "hex": "#303238", "role": "结构与阴影"},
+    {"name": "酸橙绿", "hex": "#B7D63A", "role": "概念强调色"},
+    {"name": "信号红", "hex": "#D94B43", "role": "替代性强调色"},
+    {"name": "铝灰", "hex": "#A5A9A8", "role": "工业材料过渡"}
+  ],
+  "notes": "Use one accent at a time when possible. The user's subject, material, and intended mood remain authoritative."
+}

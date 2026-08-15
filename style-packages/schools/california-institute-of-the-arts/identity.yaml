@@ -1,0 +1,16 @@
+canonical_name: 加州艺术学院
+entity_type: school
+domain: design
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://calarts.edu/art'
+
+notes:
+  - The package translates cross-media studio thinking into a visual system: concept first, material choice second, presentation third.
+  - The user's subject remains open; the package may use installation logic, process evidence, or mixed materials without requiring a school setting.

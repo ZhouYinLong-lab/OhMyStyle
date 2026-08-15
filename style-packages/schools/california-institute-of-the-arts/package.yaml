@@ -1,0 +1,33 @@
+id: california-institute-of-the-arts
+name: 加州艺术学院
+kind: school
+domain: design
+version: 0.1.0
+summary: >-
+  以跨媒介、批判思考、实验制作和展览语境之间的往返，形成开放而过程导向的当代艺术提案。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: design_school
+  medium: design
+  historical_context: '美国当代艺术教育；重视跨学科工作室、批判语境、表演、影像和实验展示。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
