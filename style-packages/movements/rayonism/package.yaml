@@ -1,0 +1,33 @@
+id: rayonism
+name: 射线主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  以相交射线、透明色带、碎裂平面和方向性运动组织非具象画面，让光线关系取代物体轮廓成为构图骨架。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: painting
+  historical_context: '1910年代俄罗斯前卫艺术'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

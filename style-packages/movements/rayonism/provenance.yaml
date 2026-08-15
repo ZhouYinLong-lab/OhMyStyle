@@ -1,0 +1,11 @@
+source_type: movement_reference
+research_sources:
+  - url: https://www.nationalgalleries.org/art-and-artists/glossary-terms/rayismrayonism
+    purpose: 了解射线主义的历史定位与基本视觉概念
+  - url: https://www.moma.org/collection/works/80480?sov_referrer=theme&theme_id=5102
+    purpose: 查看博物馆收藏中的相关作品记录
+reference_policy:
+  external_works_bundled: false
+  representative_image: generated_anonymous_abstraction
+  copied_composition: false
+rights_note: 研究链接用于历史与视觉方法说明；仓库不重新分发外部作品。

@@ -1,0 +1,8 @@
+subject: 未指明的抽象光线与色场
+location: 无固定地点
+aspect_ratio: 16:9
+prompt_role: 代表图用于测试交错线束、透明色带和绘画表面，不定义默认主体。
+generated_by: anonymous-image-model
+review:
+  status: accepted
+  note: 交错方向和颜料层次成立，未使用固定风景或数字光晕。

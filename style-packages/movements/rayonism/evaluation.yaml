@@ -1,0 +1,22 @@
+version: 1
+tests:
+  - id: portrait
+    subject: 一只普通陶瓶
+    checks: [主体轮廓可辨, 交错色带, 非固定静物]
+  - id: still-life
+    subject: 一把木椅
+    checks: [结构拆解, 颜料表面, 不添加风景]
+  - id: environment
+    subject: 一段未指定地点的墙面
+    checks: [平面空间, 方向线束, 不生成城市]
+  - id: minimal
+    subject: 一个黑色几何体
+    checks: [色带层次, 留白, 非中心放射]
+  - id: ambiguous
+    subject: 一个无法立即命名的形体
+    checks: [抽象转译, 画布吸收感, 主体独立]
+criteria:
+  subject_independence: 抽象方法不替换用户主体
+  style_recognition: 交错射线、色场与先锋绘画表面清楚
+  prompt_following: 主体、画幅和数量符合要求
+  ai_artifact_level: 避免数字光晕、规则渐变和无意义装饰
