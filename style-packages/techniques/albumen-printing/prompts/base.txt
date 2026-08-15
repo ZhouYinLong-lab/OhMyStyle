@@ -1,0 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user's subject, place, people, objects, and story are authoritative.
+- Do not introduce a fixed subject from the package or its reference examples.
+- Translate only the observable visual language below.
+
+将用户指定主体处理成历史纸基接触印相质感：清晰但柔和的细节、温暖褐黑色调、奶油色高光、连续银盐层次和轻微半光纸面；避免把工艺简化为棕色滤镜。
+Keep the requested subject count, identity, silhouette, camera, aspect ratio, and purpose. If the user requests a different medium or subject, transfer the visual rules without copying a reference composition.

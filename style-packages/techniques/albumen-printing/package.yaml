@@ -1,0 +1,33 @@
+id: albumen-printing
+name: 蛋白印相
+kind: technique
+domain: printmaking
+version: 0.1.0
+summary: >-
+  通过蛋白涂层、银盐接触印相和温暖的半光纸面，形成细节清晰、层次细腻且略带历史氧化感的照片表面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: printmaking
+  historical_context: '19世纪摄影印相工艺'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

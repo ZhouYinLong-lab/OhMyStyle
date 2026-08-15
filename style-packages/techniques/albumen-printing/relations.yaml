@@ -1,0 +1,16 @@
+family: technique
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '蛋白涂层带来的细腻半光表面'
+  - '温暖褐色与连续的银盐层次'
+  - '纸张和化学过程参与影像，而非单纯复古滤镜'
+avoid_overlap:
+  - '普通棕褐色复古滤镜'
+  - '固定历史肖像、旧建筑、相册或19世纪服装'
+  - '过重划痕、漏光、胶片边框和低清晰度'
+related:
+  - 'techniques/platinum-palladium-printing'
+  - 'techniques/gum-bichromate'
+

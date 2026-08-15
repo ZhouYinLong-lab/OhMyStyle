@@ -1,0 +1,23 @@
+medium: 历史摄影印相与纸基照片表面
+materials:
+  support:
+    - '蛋白涂层纸'
+    - '银盐感光层'
+    - '玻璃底片接触印相'
+    - '薄纸边缘'
+    - '温和金调或褪色痕迹'
+process:
+  - 先完成用户主体的摄影构图与焦点，再用接触印相的色调和纸面特征统一表面。
+  - 让高光保留奶油色，暗部保留棕黑细节，避免直接套用棕色滤镜。
+  - 最后加入轻微半光、纸边或化学不均匀，并检查主体仍然清楚。
+technical_direction:
+  contrast: 保留中间调和主体轮廓，避免一键高反差滤镜。
+  saturation: 按本包调色板控制饱和度，保留用户指定的关键颜色。
+  perspective: 服从用户的镜头和构图要求，不自动加入固定视角。
+  detail_density: 细节集中在媒介表面与结构边界，主体本身保持清楚。
+avoid:
+  - '普通棕褐色复古滤镜'
+  - '固定历史肖像、旧建筑、相册或19世纪服装'
+  - '过重划痕、漏光、胶片边框和低清晰度'
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+
