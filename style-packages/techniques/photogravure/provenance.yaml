@@ -1,0 +1,11 @@
+package:
+  name: 凹版照相制版
+  source_type: technique
+  source_url: 'https://www.loc.gov/static/collections/world-war-i-rotogravures/articles-and-essays/the-rotogravure-process/'
+  source_title: 'Library of Congress: The Rotogravure Process'
+reference_policy: link_only
+rights_note: 'The cited Library of Congress page is process documentation; this package stores the link only and creates an original anonymous demonstration.'
+generated_demo:
+  policy: original_anonymous_scene
+  source_artwork_copied: false
+  source_assets_redistributed: false

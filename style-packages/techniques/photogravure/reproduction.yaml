@@ -1,0 +1,15 @@
+priority_order:
+  - user_subject
+  - user_composition
+  - style_signature
+  - material_and_light
+rules:
+  - 'Translate the supplied subject into a restrained intaglio print.'
+  - 'Keep highlights paper-like and shadows ink-dense without crushing detail.'
+  - 'Let texture follow form and material rather than becoming generic noise.'
+
+subject_independence:
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - a small cluster of ordinary stones beside a quiet path, anonymous landscape study

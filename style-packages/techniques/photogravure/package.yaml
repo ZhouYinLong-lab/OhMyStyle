@@ -1,0 +1,32 @@
+id: photogravure
+name: 凹版照相制版
+kind: technique
+domain: printmaking
+version: 0.1.0
+summary: >-
+  以连续灰阶、油墨密度、纸面吸收和细密颗粒把摄影转化为有物质感的印刷图像，并保留凹版印刷的层次和触感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: intaglio photomechanical printing
+  historical_context: 十九世纪末至二十世纪的凹版摄影印刷
+  application: general
+  visual_axes:
+    - 'surface'
+    - 'texture'
+    - 'lighting'
+    - 'palette'
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

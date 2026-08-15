@@ -1,0 +1,10 @@
+same_family: []
+near_duplicates: []
+complements: []
+supersedes: []
+conflicts: []
+distinctives:
+  - 'continuous gray scale'
+  - 'ink density in shadow'
+  - 'matte paper absorption'
+  - 'fine plate grain'

@@ -1,0 +1,15 @@
+canonical_name: 凹版照相制版
+entity_type: technique
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；本包只改变视觉处理。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.loc.gov/static/collections/world-war-i-rotogravures/articles-and-essays/the-rotogravure-process/'
+notes:
+  - 以连续灰阶、油墨密度、纸面吸收和细密颗粒把摄影转化为有物质感的印刷图像。
+  - 代表图只用于展示视觉处理，不规定用户主题。
