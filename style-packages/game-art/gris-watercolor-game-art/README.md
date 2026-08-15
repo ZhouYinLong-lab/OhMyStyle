@@ -31,7 +31,7 @@ Apply an original hand-painted 2D game-art language associated with translucent 
 
 本包依据公开机构或官方页面提取可观察的视觉线索，仅保存来源链接，不复制原作图像、角色、关卡、标志或版式：
 
-- [Nomada Studio: Studio](https://nomada.studio/studio/)
+- [诺玛达工作室：工作室介绍](https://nomada.studio/studio/)
 
 ## 文件
 
