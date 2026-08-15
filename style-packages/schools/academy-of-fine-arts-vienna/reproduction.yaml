@@ -1,0 +1,15 @@
+priority_order:
+  - user_subject
+  - user_composition
+  - style_signature
+  - material_and_light
+rules:
+  - 'Give the supplied subject a studied, proportionate construction.'
+  - 'Use coherent light and deliberate value transitions.'
+  - 'Keep the image open to any subject; do not add a school, classroom, historical costume, or academic narrative.'
+
+subject_independence:
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - a plain wooden chair beside a plaster wall, quiet study in proportion and light

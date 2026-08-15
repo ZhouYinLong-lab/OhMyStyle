@@ -1,0 +1,11 @@
+package:
+  name: 维也纳美术学院
+  source_type: design_school
+  source_url: 'https://www.akbild.ac.at/en/university/history'
+  source_title: 'Academy of Fine Arts Vienna: History'
+reference_policy: link_only
+rights_note: 'This package cites the institution''s official history page and does not reproduce institutional images or logos.'
+generated_demo:
+  policy: original_anonymous_scene
+  source_artwork_copied: false
+  source_assets_redistributed: false

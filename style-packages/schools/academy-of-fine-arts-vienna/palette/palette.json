@@ -1,0 +1,25 @@
+{
+  "palette": [
+    {
+      "name": "chalk",
+      "hex": "#E7E0D3"
+    },
+    {
+      "name": "umber",
+      "hex": "#6C5140"
+    },
+    {
+      "name": "vermilion",
+      "hex": "#A54D38"
+    },
+    {
+      "name": "deep green",
+      "hex": "#3D574D"
+    },
+    {
+      "name": "slate",
+      "hex": "#56616B"
+    }
+  ],
+  "usage": "palette is a visual tendency, not a mandatory subject or exact color lock"
+}

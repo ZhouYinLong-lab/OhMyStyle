@@ -1,0 +1,15 @@
+canonical_name: 维也纳美术学院
+entity_type: design_school
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；本包只改变视觉处理。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.akbild.ac.at/en/university/history'
+notes:
+  - 以观察、比例、结构素描、受控明暗和完成度优先的学院训练组织画面。
+  - 代表图只用于展示视觉处理，不规定用户主题。
