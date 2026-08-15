@@ -9,10 +9,12 @@ profiles:
       - text, logo, watermark, or unintended signature is present
   portrait:
     required:
-      - TODO: add portrait-specific checks when relevant
+      - design process supports the user's subject rather than adding a school identity
+      - materials and hierarchy remain intentional
   still_life:
     required:
-      - TODO: add still-life-specific checks when relevant
+      - material samples clarify the user's task
+      - composition is experimental but not cluttered
 minimum_score: 7
 
 semantic_evaluation:
