@@ -1,0 +1,17 @@
+medium: 游戏美术
+materials:
+  support: 数字手绘背景、半透明粒子层和二维游戏环境；不复制游戏资产或截图
+process:
+- 先搭建可读的二维空间层次
+- 用手绘色块和半透明层塑造环境
+- 添加局部自然细节和柔和颗粒
+- 检查没有把角色、时间机制或特定关卡写入默认主体
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

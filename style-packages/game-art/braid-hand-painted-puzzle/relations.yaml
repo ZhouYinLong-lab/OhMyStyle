@@ -1,0 +1,30 @@
+family: painterly-puzzle-environment
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+- 二维空间层叠与可玩路径可读性
+- 手绘背景结合半透明颗粒
+- 有机色阶和柔和边界
+- 环境细节丰富但不依赖固定角色或故事
+avoid_overlap:
+- generic watercolor game art
+- pixel-art grid
+- fixed time-reversal puzzle or named character
+profiles:
+  generic:
+    required:
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
+    - no fixed subject leaks into the output
+    reject_if:
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+    - preserve the user-supplied person or object without adding a recurring figure
+  still_life:
+    required:
+    - preserve the user-supplied objects and their count
+minimum_score: 7

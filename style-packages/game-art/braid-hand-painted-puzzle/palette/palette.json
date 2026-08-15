@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "colors": [
+    {
+      "name": "暖绿、赭黄、蓝灰和柔和暗色形成有机色阶",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "局部高亮用于路径或空间焦点",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "色彩保持绘画层次，不做霓虹游戏滤镜",
+      "hex": null,
+      "role": "package palette"
+    }
+  ]
+}

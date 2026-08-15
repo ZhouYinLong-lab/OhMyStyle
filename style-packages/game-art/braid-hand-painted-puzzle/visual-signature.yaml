@@ -1,0 +1,25 @@
+schema_version: 1.0.0
+composition:
+- 二维平台空间由前中后景层叠构成
+- 可读的路径、边界和遮挡支持游戏空间理解
+- 画面保留手绘叙事感，但不强制加入角色或谜题道具
+palette:
+- 暖绿、赭黄、蓝灰和柔和暗色形成有机色阶
+- 局部高亮用于路径或空间焦点
+- 色彩保持绘画层次，不做霓虹游戏滤镜
+lighting:
+  quality: 柔和环境光与局部逆光制造像活画一样的空间
+  behavior:
+  - 透明颗粒和空气层次可轻微叠加，但不遮挡结构
+surface:
+  finish: 手绘笔触、半透明颗粒和软边界共存
+  edges: subject-dependent and medium-aware
+texture:
+  density: 中到高的局部纹理密度
+  placement: 自然材质和背景层次细密，UI与品牌元素不进入画面
+invariants:
+- 二维空间层叠与可玩路径可读性
+- 手绘背景结合半透明颗粒
+- 有机色阶和柔和边界
+- 环境细节丰富但不依赖固定角色或故事
+- the requested subject stays unchanged

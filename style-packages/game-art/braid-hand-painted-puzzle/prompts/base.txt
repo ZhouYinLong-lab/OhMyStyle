@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 二维空间层叠与可玩路径可读性
+- 手绘背景结合半透明颗粒
+- 有机色阶和柔和边界
+- 环境细节丰富但不依赖固定角色或故事
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先搭建可读的二维空间层次
+- 用手绘色块和半透明层塑造环境
+- 添加局部自然细节和柔和颗粒
+- 检查没有把角色、时间机制或特定关卡写入默认主体
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

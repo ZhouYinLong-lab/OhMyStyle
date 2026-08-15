@@ -1,0 +1,13 @@
+canonical_name: 手绘谜题游戏美术
+entity_type: game_art
+domain: game_art
+historical_context: 独立游戏手绘环境与谜题美术传统
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character or branded asset
+sources:
+- https://braid-game.com/

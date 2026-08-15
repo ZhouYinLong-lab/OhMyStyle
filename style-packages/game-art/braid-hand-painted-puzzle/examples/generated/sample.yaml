@@ -1,0 +1,39 @@
+example_id: anonymous-demo
+subject: an empty stone path and a small unmarked garden structure in an unspecified landscape, original anonymous game environment
+source_artwork_copied: false
+status: generated
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 用空环境演示手绘层叠、颗粒和可玩空间边界；不默认生成角色、时间机关或具体关卡
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: 需用用户主体进行测试；不得把代表图主体当作默认主体。
+  distinctive_signature:
+    score: null
+    notes: ''
+  visual_overlap:
+    score: null
+    notes: ''
+  cross_subject_stability:
+    score: null
+    notes: ''
+image_audit:
+  status: pending
+  notes: 代表图为原创匿名演示；提交后执行资源审计。
+signature:
+- 二维空间层叠与可玩路径可读性
+- 手绘背景结合半透明颗粒
+- 有机色阶和柔和边界
+- 环境细节丰富但不依赖固定角色或故事
+controls:
+- composition
+- palette
+- lighting
+- surface
+does_not_control:
+- subject identity
+- object count
+- location
+- story or narrative event
+- text, logo, or brand

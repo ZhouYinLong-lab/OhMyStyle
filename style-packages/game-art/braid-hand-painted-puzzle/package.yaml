@@ -1,0 +1,32 @@
+id: braid-hand-painted-puzzle
+name: 手绘谜题游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以层叠半透明颗粒、手绘背景、柔和边缘和高密度自然细节制造像活画一样的二维谜题空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: 游戏美术
+  historical_context: 独立游戏手绘环境与谜题美术传统
+  application: game_art
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
