@@ -1,0 +1,16 @@
+canonical_name: 恩斯特·哈斯
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体与地点优先；用途示例只用于测试，不会自动进入生成场景。
+  subjects: []
+  exclusions:
+    - 固定电车、街道、人群或城市题材
+    - 复制具体照片的构图、人物或瞬间
+    - 用单一综合色滤镜替代局部色彩与运动关系
+sources:
+  - 'https://ernst-haas.com/site/essays.html'
+notes:
+  - 以彩色胶片中的色块、反射和运动时间感扩展纪实摄影的观看范围。
+  - 清晰主体与拖影可以同时存在，模糊应服务于速度、距离或观看位置。

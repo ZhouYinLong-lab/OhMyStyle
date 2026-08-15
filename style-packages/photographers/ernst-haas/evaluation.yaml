@@ -1,0 +1,22 @@
+version: 1
+tests:
+  - id: portrait
+    subject: 一件普通外套
+    checks: [主体独立性, 色彩分区, 局部运动边缘]
+  - id: still-life
+    subject: 一只陶瓷杯
+    checks: [材质反射, 稳定焦点, 胶片层次]
+  - id: environment
+    subject: 一段未指定地点的道路
+    checks: [观察式取景, 空间反射, 不生成固定城市]
+  - id: minimal
+    subject: 一个单色几何体
+    checks: [留白, 色块关系, 不添加街景]
+  - id: ambiguous
+    subject: 一个刚刚移动过的物件
+    checks: [模糊方向, 叙事克制, 主体可辨]
+criteria:
+  subject_independence: 只改变视觉语言，不改变用户主体
+  style_recognition: 彩色纪实、时间感、反射和局部拖影清楚
+  prompt_following: 画幅、主体、地点与数量符合要求
+  ai_artifact_level: 避免无方向重影、塑料高光和统一滤镜

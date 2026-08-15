@@ -1,0 +1,9 @@
+source_type: artist_reference
+research_sources:
+  - url: https://ernst-haas.com/site/essays.html
+    purpose: 了解其彩色摄影、运动与纪实观看方法
+reference_policy:
+  external_works_bundled: false
+  representative_image: generated_anonymous_scene
+  copied_composition: false
+rights_note: 研究链接用于风格史与视觉方法说明；仓库不重新分发外部作品。
