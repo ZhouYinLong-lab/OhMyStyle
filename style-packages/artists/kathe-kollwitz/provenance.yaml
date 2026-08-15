@@ -1,0 +1,13 @@
+package_id: kathe-kollwitz
+package_version: 0.1.0
+curation_status: draft
+source_policy: 仅记录可追溯研究入口；不打包外部作品。
+sources:
+  - url: 'https://www.moma.org/collection/artists/3201'
+    title: 'Käthe Kollwitz'
+    authority: 'Museum of Modern Art'
+    supports: 艺术家生平、版画媒介和黑白线性特征
+attribution: 本包只描述可观察视觉特征，不代表合作、授权或背书。
+rights_notes:
+  - 外部作品、商标和页面归原权利人所有。
+  - 代表图是新的匿名场景，不是具体原作。

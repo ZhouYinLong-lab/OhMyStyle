@@ -1,0 +1,33 @@
+id: kathe-kollwitz
+name: 凯绥·珂勒惠支
+kind: artist
+domain: printmaking
+version: 0.1.0
+summary: >-
+  以黑白版画、炭笔线网、压缩构图和强烈明暗把普通形体转化为具有重量的视觉表达。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: printmaking
+  historical_context: '19世纪末至20世纪德国版画与表现主义语境'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

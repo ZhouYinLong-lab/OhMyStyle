@@ -1,0 +1,53 @@
+canonical_name: 凯绥·珂勒惠支
+entity_type: artist
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；代表图只用于展示视觉方法。
+  subjects: []
+  exclusions:
+    - 固定战争场景、母子悲剧或贫民题材
+    - 复制具体版画、人物姿态或构图
+    - 用黑白滤镜代替真实的线性和印刷结构
+sources:
+  - 'https://www.moma.org/collection/artists/3201'
+notes:
+  - 以版画和炭笔的直接性强化形体重量与情绪压力。
+  - 简化不是抹平细节，而是把细节集中到轮廓、手势和明暗交界。
+composition:
+  - 使用紧凑取景和大块留白，让主体具有纪念碑般的重量。
+  - 用交叠轮廓、低视点或局部裁切集中观看压力。
+palette:
+  - 以墨黑、炭灰和温暖纸白形成有限阶调，避免装饰性色彩。
+lighting:
+  quality: 均匀但强烈的黑白明暗组织
+  behavior:
+    - 用密集线网和黑块塑造体积，不依赖摄影轮廓光。
+surface:
+  finish: 粗粝纸面上的木刻、石版或炭笔痕迹
+  edges: 轮廓有手工抖动，关键形体仍保持清楚
+texture:
+  density: 中等到高
+  placement: 线网集中在阴影、布料、木材和背景压暗区域
+invariants:
+  - 有限黑白阶调与强烈形体重量
+  - 线性痕迹承担体积和情绪
+  - 主体保持可辨识，不被纹理吞没
+  - 不固定人物、物体、地点或故事
+medium: 黑白版画与炭笔素描
+materials:
+  support: 粗纹纸、木刻油墨、石版油墨、炭粉
+process:
+  - 先锁定用户主体和轮廓，再安排黑白大关系。
+  - 用线网、擦拭和块面建立体积，不添加无关叙事。
+  - 最后保留纸面和印刷的不均匀性，检查主体可读性。
+technical_direction:
+  contrast: 高，但保留足够中间灰
+  saturation: 近乎无彩，以纸张暖度为唯一色偏
+  perspective: 平实、压缩、服务于形体重量
+  detail_density: 中等，细节集中在轮廓和阴影
+avoid:
+  - 默认悲剧人物、战争、哭泣母亲或贫民窟
+  - 光滑数字插画、电影式彩色调色和塑料质感
+  - 复制原作布局、文字、签名或具体人物
+safety_note: 不复现具体作品、人物、文字或固定叙事；代表图只展示视觉方法。

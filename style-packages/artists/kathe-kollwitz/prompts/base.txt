@@ -1,0 +1,6 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- 用户提供的 {SUBJECT} 和 {LOCATION} 优先。
+- 本包只控制媒介、构图、明暗、线性、纸面和印刷质感。
+- 不从艺术家姓名推断固定人物、物体、地点、故事或悲剧主题。
+
+Create a new image of {SUBJECT} in {LOCATION}. Use a restrained black-and-white printmaking language: warm paper ground, dense charcoal or woodcut line networks, solid black masses, a few carefully preserved middle grays, compressed framing, strong silhouette, and rough handmade edges. Keep the supplied subject recognizable and let the marks describe its volume. Make an original scene; do not copy a reference work, pose, layout, logo, signature, or text.

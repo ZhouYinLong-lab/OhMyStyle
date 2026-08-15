@@ -1,0 +1,38 @@
+profiles:
+  generic:
+    required:
+      - limited black-and-white printmaking structure is visible
+      - line networks and solid masses shape volume
+      - user-supplied subject remains recognizable
+      - no copied artwork or fixed narrative motif
+    reject_if:
+      - result is only a grayscale filter
+      - smooth digital gradients replace marks
+      - text, logo, watermark, or unintended signature appears
+  portrait:
+    required:
+      - face and pose remain legible under the graphic treatment
+  still_life:
+    required:
+      - object edges and material separation survive the dense marks
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: 使用两个不同中性主体复核。
+  distinctive_signature:
+    score: null
+    notes: 记录线性、黑块和纸面是否同时成立。
+  visual_overlap:
+    score: null
+    notes: 与表现主义和木刻包比较。
+  cross_subject_stability:
+    score: null
+    notes: 未完成跨主体测试前不标记为完成。
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: 代表图仅为测试主体，不代表默认场景。

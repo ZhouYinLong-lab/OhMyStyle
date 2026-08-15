@@ -1,0 +1,15 @@
+family: social-graphic-expression
+near_duplicates:
+  - movements/expressionism
+  - techniques/woodcut
+supersedes: []
+conflicts:
+  - movements/pop-art
+  - presets/high-chroma-color-pairing
+distinctives:
+  - 黑白版画的线性重量
+  - 形体简化仍保留情绪和可读性
+  - 粗粝纸面与大块明暗共同塑造主体
+avoid_overlap:
+  - 纯黑白滤镜摄影
+  - 默认战争或苦难叙事

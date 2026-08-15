@@ -1,0 +1,9 @@
+asset: gallery-16x9.jpg
+status: generated_demo
+generator: OpenAI image generation tool
+prompt_mode: anonymous_visual_signature
+subject: 工作室中的普通椅子、外套和木桌
+generated_at: 2026-08-15
+review:
+  decision: pending_human_review
+  notes: 代表图用于检查版画线性、黑块、纸面和主体可读性，不规定后续生成题材。

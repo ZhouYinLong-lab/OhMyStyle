@@ -1,0 +1,17 @@
+medium: 黑白版画与炭笔素描
+materials:
+  support: 粗纹纸、木刻油墨、石版油墨、炭粉
+process:
+  - 先确定用户主体和画面重心。
+  - 用黑白大块和中间灰建立形体。
+  - 以线网、擦痕和印刷不均匀性补充表面。
+technical_direction:
+  contrast: 高对比但不丢失中间灰
+  saturation: 近乎无彩
+  perspective: 平实或轻微压缩
+  detail_density: 中等，细节服务于轮廓和阴影
+avoid:
+  - 普通黑白滤镜
+  - 平滑数字渐变
+  - 固定悲剧题材或复制原作
+safety_note: 代表图是原创测试场景，不是具体原作的复现。
