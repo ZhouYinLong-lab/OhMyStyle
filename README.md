@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-327-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-332-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -195,7 +195,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/yves-klein/README.md"><img src="style-packages/artists/yves-klein/gallery-16x9.jpg" width="230" alt="伊夫·克莱因代表图"></a><br><strong>伊夫·克莱因</strong><br><a href="style-packages/artists/yves-klein/README.md">打开 README</a></td>
 
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/rene-magritte/README.md"><img src="style-packages/artists/rene-magritte/gallery-16x9.jpg" width="230" alt="勒内·马格利特代表图"></a><br><strong>勒内·马格利特</strong><br><a href="style-packages/artists/rene-magritte/README.md">打开 README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/rene-magritte/README.md"><img src="style-packages/artists/rene-magritte/gallery-16x9.jpg" width="230" alt="勒内·马格利特代表图"></a><br><strong>勒内·马格利特</strong><br><a href="style-packages/artists/rene-magritte/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="style-packages/artists/albrecht-durer/README.md"><img src="style-packages/artists/albrecht-durer/gallery-16x9.jpg" width="230" alt="阿尔布雷希特·丢勒代表图"></a><br><strong>阿尔布雷希特·丢勒</strong><br><a href="style-packages/artists/albrecht-durer/README.md">打开 README</a></td></tr>
 </table>
 
 ### 摄影师
@@ -299,7 +299,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/shomei-tomatsu/README.md"><img src="style-packages/photographers/shomei-tomatsu/gallery-16x9.jpg" width="230" alt="东松照明代表图"></a><br><strong>东松照明</strong><br><a href="style-packages/photographers/shomei-tomatsu/README.md">打开 README</a></td>
 
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lillian-bassman/README.md"><img src="style-packages/photographers/lillian-bassman/gallery-16x9.jpg" width="230" alt="莉莲·巴斯曼代表图"></a><br><strong>莉莲·巴斯曼</strong><br><a href="style-packages/photographers/lillian-bassman/README.md">打开 README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/lillian-bassman/README.md"><img src="style-packages/photographers/lillian-bassman/gallery-16x9.jpg" width="230" alt="莉莲·巴斯曼代表图"></a><br><strong>莉莲·巴斯曼</strong><br><a href="style-packages/photographers/lillian-bassman/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="style-packages/photographers/erwin-blumenfeld/README.md"><img src="style-packages/photographers/erwin-blumenfeld/gallery-16x9.jpg" width="230" alt="埃尔温·布卢门菲尔德代表图"></a><br><strong>埃尔温·布卢门菲尔德</strong><br><a href="style-packages/photographers/erwin-blumenfeld/README.md">打开 README</a></td></tr>
 </table>
 
 ### 设计学校
@@ -339,6 +339,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/ecal/README.md"><img src="style-packages/schools/ecal/gallery-16x9.jpg" width="230" alt="洛桑艺术设计学院代表图"></a><br><strong>洛桑艺术设计学院</strong><br><a href="style-packages/schools/ecal/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/artcenter/README.md"><img src="style-packages/schools/artcenter/gallery-16x9.jpg" width="230" alt="艺术中心设计学院代表图"></a><br><strong>艺术中心设计学院</strong><br><a href="style-packages/schools/artcenter/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/design-academy-eindhoven/README.md"><img src="style-packages/schools/design-academy-eindhoven/gallery-16x9.jpg" width="230" alt="埃因霍温设计学院代表图"></a><br><strong>埃因霍温设计学院</strong><br><a href="style-packages/schools/design-academy-eindhoven/README.md">打开 README</a></td>
+</tr>
+
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/academy-of-fine-arts-vienna/README.md"><img src="style-packages/schools/academy-of-fine-arts-vienna/gallery-16x9.jpg" width="230" alt="维也纳美术学院代表图"></a><br><strong>维也纳美术学院</strong><br><a href="style-packages/schools/academy-of-fine-arts-vienna/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -603,7 +607,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/monument-valley-impossible-geometry/README.md"><img src="style-packages/game-art/monument-valley-impossible-geometry/gallery-16x9.jpg" width="230" alt="纪念碑谷不可能几何游戏美术代表图"></a><br><strong>纪念碑谷不可能几何游戏美术</strong><br><a href="style-packages/game-art/monument-valley-impossible-geometry/README.md">打开 README</a></td>
-</tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/gris-watercolor-game-art/README.md"><img src="style-packages/game-art/gris-watercolor-game-art/gallery-16x9.jpg" width="230" alt="灰烬水彩游戏美术代表图"></a><br><strong>灰烬水彩游戏美术</strong><br><a href="style-packages/game-art/gris-watercolor-game-art/README.md">打开 README</a></td></tr>
 </table>
 
 ### 工艺与媒介
@@ -662,7 +666,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/albumen-printing/README.md"><img src="style-packages/techniques/albumen-printing/gallery-16x9.jpg" width="230" alt="蛋白印相代表图"></a><br><strong>蛋白印相</strong><br><a href="style-packages/techniques/albumen-printing/README.md">打开 README</a></td>
 
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/salted-paper-printing/README.md"><img src="style-packages/techniques/salted-paper-printing/gallery-16x9.jpg" width="230" alt="盐纸印相代表图"></a><br><strong>盐纸印相</strong><br><a href="style-packages/techniques/salted-paper-printing/README.md">打开 README</a></td></tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/salted-paper-printing/README.md"><img src="style-packages/techniques/salted-paper-printing/gallery-16x9.jpg" width="230" alt="盐纸印相代表图"></a><br><strong>盐纸印相</strong><br><a href="style-packages/techniques/salted-paper-printing/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="style-packages/techniques/photogravure/README.md"><img src="style-packages/techniques/photogravure/gallery-16x9.jpg" width="230" alt="凹版照相制版代表图"></a><br><strong>凹版照相制版</strong><br><a href="style-packages/techniques/photogravure/README.md">打开 README</a></td></tr>
 </table>
 
 ### 继承的 110 个轻量预设
