@@ -1,0 +1,17 @@
+medium: black-and-white long-exposure photographic print
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+  - 'simplify the scene to essential planes and lines'
+  - 'set a quiet tonal hierarchy'
+  - 'simulate long exposure in moving sky, water, or foliage'
+  - 'finish with restrained silver-grain texture'
+technical_direction:
+  contrast: 'low to moderate, with a readable middle gray'
+  saturation: 'monochrome or near-monochrome; no global color cast'
+  perspective: 'distant, level, and spacious with minimal lens drama'
+avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, or protected game asset.

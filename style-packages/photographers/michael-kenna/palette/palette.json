@@ -1,0 +1,25 @@
+{
+  "name": "银盐灰阶",
+  "colors": [
+    {
+      "name": "煤黑",
+      "hex": "#17191B",
+      "role": "small structural anchor"
+    },
+    {
+      "name": "中性灰",
+      "hex": "#777875",
+      "role": "main tonal bridge"
+    },
+    {
+      "name": "雾白",
+      "hex": "#D9D8D2",
+      "role": "open sky or paper"
+    },
+    {
+      "name": "冷银灰",
+      "hex": "#A7ADB0",
+      "role": "water and atmosphere"
+    }
+  ]
+}

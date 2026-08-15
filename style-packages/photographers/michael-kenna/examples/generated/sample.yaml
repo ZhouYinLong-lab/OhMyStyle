@@ -1,0 +1,39 @@
+example_id: anonymous-demo
+subject: an ordinary fence beside an unspecified shoreline, original anonymous photograph
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: Original anonymous landscape demonstration using a small shoreline fence as a neutral subject, not a named landmark.
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "需用用户主体进行测试；不得把代表图主体当作默认主体。"
+  distinctive_signature:
+    score: null
+    notes: ""
+  visual_overlap:
+    score: null
+    notes: ""
+  cross_subject_stability:
+    score: null
+    notes: ""
+image_audit:
+  status: pending
+  notes: "代表图为原创建的匿名演示；提交后执行资源审计。"
+signature:
+  - 'negative space remains active'
+  - 'the visual anchor stays small'
+  - 'tonal range is controlled rather than dramatic'
+  - 'the user-selected subject remains open'
+controls:
+  - composition
+  - palette
+  - lighting
+  - surface
+does_not_control:
+  - subject identity
+  - object count
+  - location
+  - story or narrative event
+  - text, logo, or brand

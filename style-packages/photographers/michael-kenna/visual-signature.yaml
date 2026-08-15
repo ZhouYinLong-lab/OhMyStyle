@@ -1,0 +1,24 @@
+composition:
+  - '大面积负空间'
+  - '小尺度视觉锚点'
+  - '水平线、垂直线与低密度形体的平衡'
+palette:
+  - '银灰、煤黑与雾白构成连续阶调'
+  - '局部保留柔和中灰，不依赖纯黑纯白'
+  - '不使用彩色滤镜替代结构'
+lighting:
+  quality: 'quiet dawn, dusk, overcast, or nocturnal light with long-exposure calm'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Use light as a structural and material decision, not as a fixed scene.
+surface:
+  finish: 'fine silver-gelatin grain, restrained contrast, smooth tonal transitions, and soft atmospheric edges'
+  edges: varied, deliberate edges with no copied layout
+texture:
+  density: 'low visual density with grain concentrated in midtone surfaces and water or sky'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'negative space remains active'
+  - 'the visual anchor stays small'
+  - 'tonal range is controlled rather than dramatic'
+  - 'the user-selected subject remains open'
