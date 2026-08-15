@@ -1,0 +1,15 @@
+canonical_name: 丹麦皇家艺术学院
+entity_type: school
+domain: design
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://designdenmark.dk/exhibition-new-design-and-architecture/'
+
+notes:
+  - The package translates a research-led Scandinavian design attitude into visual rules: material honesty, environmental awareness, legible structure, and calm presentation. It does not require Danish furniture, architecture, or a particular building.

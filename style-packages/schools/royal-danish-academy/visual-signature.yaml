@@ -1,0 +1,20 @@
+composition:
+  - Use clear structural hierarchy, generous breathing room, and relationships that can be read as both object and system.
+  - Let construction details, joints, modules, or environmental context support the main proposition without visual clutter.
+palette:
+  - Favor natural neutrals, mineral tones, and one deliberate accent tied to material or function.
+  - Keep the palette calm enough for structure and use to remain visible.
+lighting:
+  quality: diffuse Nordic daylight or neutral exhibition light
+  behavior:
+    - Reveal texture, assembly, and scale with soft shadows rather than theatrical effects.
+surface:
+  finish: honest material presentation with restrained refinement
+  edges: precise where the construction is precise; tactile where the material is raw
+texture:
+  density: low to moderate
+  placement: concentrated at joints, grain, seams, and fabrication evidence
+invariants:
+  - preserve material honesty and functional legibility
+  - preserve research-like structure rather than decorative styling
+  - preserve balance between human scale, environment, and object system

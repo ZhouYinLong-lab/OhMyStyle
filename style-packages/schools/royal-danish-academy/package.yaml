@@ -1,0 +1,33 @@
+id: royal-danish-academy
+name: 丹麦皇家艺术学院
+kind: school
+domain: design
+version: 0.1.0
+summary: >-
+  以建筑、设计和材料研究之间的协作方法，强调结构清晰、环境责任与可验证的制作过程。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: design_school
+  medium: design
+  historical_context: '丹麦建筑、设计与保护教育体系；关注材料、居住环境和研究型实践。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
