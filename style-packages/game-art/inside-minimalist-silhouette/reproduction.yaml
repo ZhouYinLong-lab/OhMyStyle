@@ -1,0 +1,18 @@
+medium: 当代二维谜题平台游戏环境美术 游戏环境美术
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+- 先明确可读的前中后景轮廓
+- 用低饱和大色面确定气氛
+- 在局部加入精确材质、灯光和微小线索
+- 保持画面简洁，避免无关装饰和泛滥特效
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+  game asset.

@@ -1,0 +1,32 @@
+id: inside-minimalist-silhouette
+name: 内在世界极简剪影游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以低复杂度形体、克制色彩、强烈剪影和精细环境细节建立安静而紧张的二维游戏空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: 游戏环境美术
+  historical_context: 当代二维谜题平台游戏环境美术
+  application: game_art
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

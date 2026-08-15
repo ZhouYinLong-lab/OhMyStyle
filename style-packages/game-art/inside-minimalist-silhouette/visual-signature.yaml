@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+composition:
+- 低复杂度大形与高精度局部细节并置
+- 灰绿、煤黑、雾白和少量暖色组成克制调色
+palette:
+- 灰绿、煤黑、雾白和少量暖色组成克制调色
+- 强剪影、遮挡与水平构图建立空间压力
+lighting:
+  quality: 强剪影、遮挡与水平构图建立空间压力
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 环境叙事通过材质和尺度表达，不依赖固定角色
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- 低复杂度大形与高精度局部细节并置
+- 灰绿、煤黑、雾白和少量暖色组成克制调色
+- 强剪影、遮挡与水平构图建立空间压力
+- 环境叙事通过材质和尺度表达，不依赖固定角色
+- the requested subject stays unchanged

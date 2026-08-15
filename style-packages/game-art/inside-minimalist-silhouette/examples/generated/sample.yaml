@@ -1,0 +1,38 @@
+example_id: anonymous-demo
+subject: an empty concrete service hall with a single distant doorway, original anonymous game-environment concept
+source_artwork_copied: false
+status: generated
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 用空环境演示剪影、尺度和材质；不默认加入角色或剧情
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: 需用用户主体进行测试；不得把代表图主体当作默认主体。
+  distinctive_signature:
+    score: null
+    notes: ''
+  visual_overlap:
+    score: null
+    notes: ''
+  cross_subject_stability:
+    score: null
+    notes: ''
+image_audit:
+  status: pending
+  notes: 代表图为原创建的匿名演示；提交后执行资源审计。
+signature:
+- 低复杂度大形与高精度局部细节并置
+- 灰绿、煤黑、雾白和少量暖色组成克制调色
+- 强剪影、遮挡与水平构图建立空间压力
+controls:
+- composition
+- palette
+- lighting
+- surface
+does_not_control:
+- subject identity
+- object count
+- location
+- story or narrative event
+- text, logo, or brand

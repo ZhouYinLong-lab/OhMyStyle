@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 低复杂度大形与高精度局部细节并置
+- 灰绿、煤黑、雾白和少量暖色组成克制调色
+- 强剪影、遮挡与水平构图建立空间压力
+- 环境叙事通过材质和尺度表达，不依赖固定角色
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先明确可读的前中后景轮廓
+- 用低饱和大色面确定气氛
+- 在局部加入精确材质、灯光和微小线索
+- 保持画面简洁，避免无关装饰和泛滥特效
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

@@ -1,0 +1,13 @@
+canonical_name: 内在世界极简剪影游戏美术
+entity_type: game_art
+domain: game_art
+historical_context: 当代二维谜题平台游戏环境美术
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character or branded asset
+sources:
+- https://playdead.com/games/inside/
