@@ -1,0 +1,22 @@
+package_id: neo-expressionism
+package_version: 0.1.0
+curation_status: curated_demo
+source_policy: 仅记录研究来源；不在仓库再分发外部作品。
+sources:
+  - url: 'https://press.moma.org/wp-content/uploads/2020/06/MoMA_FelixFeneon_SectionTexts_FINAL.pdf'
+    title: MoMA exhibition section texts
+    authority: Museum of Modern Art
+    supports: 现代绘画语境研究
+attribution: 本包提取可观察的绘画动作与视觉关系，不代表对某位艺术家的精确模仿。
+rights_notes:
+  - 外部作品不随包分发。
+  - 生成示例为新的匿名场景。
+asset: gallery-16x9.jpg
+status: generated_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: 椅子、窗户与植物，仅作风格基准
+generated_at: 2026-08-15
+review:
+  decision: accepted_as_representative
+  notes: 代表图检验粗粝笔触、黑色轮廓和直接色块，不规定默认题材。

@@ -1,0 +1,23 @@
+composition:
+  - 保留主体可读轮廓，同时允许比例、透视和空间关系出现有控制的扭曲。
+palette:
+  - 赭红、钴蓝、酸黄、脏白和紫黑形成直接色块，冷暖关系不求平滑。
+lighting:
+  quality: uneven painted light with emotional value shifts
+  behavior:
+    - 明暗可被笔触打断，局部高光和深影承担情绪压力。
+surface:
+  finish: thick, scraped, and visibly worked paint
+  edges: blunt black contours mixed with broken, bleeding edges
+texture:
+  density: high and varied
+  placement: dense around faces, joints, overlaps, and compositional collisions
+invariants:
+  - 形体仍能辨认，粗粝来自绘画动作而不是故意做坏。
+  - 颜色与线条共同承担情绪，不只叠加一层红蓝滤镜。
+  - 不复制某位艺术家的具体人物、构图或符号。
+anti_signatures:
+  - generic abstract expressionism
+  - childlike doodle without structure
+  - smooth digital illustration
+  - decorative impressionist brushwork

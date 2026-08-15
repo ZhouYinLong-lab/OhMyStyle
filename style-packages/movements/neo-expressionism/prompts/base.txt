@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls expressive medium, contour, palette, spatial tension,
+  and worked surface only.
+- Do not add a recurring object, character, symbol, landmark, or story.
+
+Paint {SUBJECT} in {LOCATION} with a raw, physically worked expressive surface.
+Keep the subject readable but allow controlled distortion of proportion,
+perspective, and local edges. Use dirty off-white, ochre red, cobalt blue,
+acid yellow, and violet-black in direct blocks. Add decisive dark contours,
+thick brush marks, scraped passages, dry drag, and uneven value shifts. Let
+emotion come from the collision of material, line, color, and scale. Avoid a
+generic abstract painting, a smooth digital illustration, or any fixed motif
+not requested by the user.

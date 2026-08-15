@@ -1,0 +1,18 @@
+canonical_name: 新表现主义
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；代表图只用于说明笔触和色彩处理。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 椅子、窗户与植物
+  exclusions:
+    - copied composition
+    - fixed portrait or skull motif
+sources:
+  - https://press.moma.org/wp-content/uploads/2020/06/MoMA_FelixFeneon_SectionTexts_FINAL.pdf
+notes:
+  - 关注原始、紧张、带有身体感的绘画动作；不把它简化为任意高饱和滤镜。

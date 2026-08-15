@@ -1,0 +1,12 @@
+family: 战后激烈绘画
+near_duplicates: []
+supersedes: []
+conflicts:
+  - smooth minimalism
+distinctives:
+  - 形体可读与笔触失控同时存在
+  - 黑色结构线、脏中性色和直接色块相互挤压
+  - 情绪来自材料动作与比例扭曲，不依赖固定图标
+avoid_overlap:
+  - 不强制生成人物、头骨、动物、废墟或城市
+*** Delete File: D:\Projects\Dog\OhMyStyle\style-packages\movements\neo-expressionism\provenance.yaml

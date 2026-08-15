@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: 椅子、窗户与植物
+generated_at: 2026-08-15
+review:
+  decision: accepted_as_representative
+  notes: 仅展示绘画动作，不规定后续生成主体。
