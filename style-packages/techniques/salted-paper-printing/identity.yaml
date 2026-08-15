@@ -1,0 +1,16 @@
+canonical_name: 盐纸印相
+entity_type: technique
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体和场景始终优先；本包不自动加入固定物件、地点或故事。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.archives.gov/research/still-pictures/still-picture-photographic-prints'
+
+notes:
+  - 以无涂层纸纤维、哑光表面、暖棕色调和接触印相的连续灰阶构成早期摄影纸基质感。
+  - 代表图只用于展示视觉处理，不规定用户主题。

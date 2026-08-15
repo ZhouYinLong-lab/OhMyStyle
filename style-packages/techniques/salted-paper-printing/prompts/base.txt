@@ -1,0 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.
+- Do not add recurring objects, settings, characters, landmarks, or narrative motifs unless explicitly requested.
+
+Create a new image of {SUBJECT} in {LOCATION}. Render the user's subject as an authentic salted-paper photographic print. Preserve its structure and use a matte uncoated paper feel with visible but delicate fibers, continuous soft gray scale, warm brown or yellow-brown tone, modest edge variation, and gentle loss of contrast toward the margins. Keep the scene quiet and believable. Do not add period props, historic clothing, ornate borders, text, logo, or a copied archival photograph.
+Keep the user's subject and narrative independent from the package's visual identity.

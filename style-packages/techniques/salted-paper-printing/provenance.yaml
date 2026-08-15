@@ -1,0 +1,14 @@
+package_id: salted-paper-printing
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; external works remain link-only unless redistribution rights are verified.
+sources:
+  - url: 'https://www.archives.gov/research/still-pictures/still-picture-photographic-prints'
+    title: 'Photographic Prints in the Still Picture Branch'
+    authority: 'U.S. National Archives'
+    supports: source traceability and observable package scope
+
+attribution: This package describes observable visual characteristics and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle external artworks, photographs, game screenshots, logos, or dataset items without verified redistribution rights.
+  - The generated representative is a new anonymous scene.

@@ -1,0 +1,16 @@
+composition:
+  - quiet documentary framing with a readable subject and gentle tonal falloff
+palette:
+  - warm gray, ivory, faded umber, and restrained yellow-brown
+lighting:
+  quality: soft continuous daylight-like scale with preserved mid-tones
+  behavior:
+    - Use light and value to preserve the user's subject rather than add a fixed scene.
+surface:
+  finish: matte uncoated paper with visible fibers and contact-print irregularity
+  edges: precise enough to preserve the requested subject
+texture:
+  density: fine and low density in paper support and tonal transitions, never scratches
+  placement: follow material and process; never become a uniform overlay
+invariants:
+  - subject remains identifiable; matte fiber-rich support is visible; warmth is not a generic sepia filter

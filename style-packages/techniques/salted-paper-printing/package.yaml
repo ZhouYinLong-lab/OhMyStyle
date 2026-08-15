@@ -1,0 +1,33 @@
+id: salted-paper-printing
+name: 盐纸印相
+kind: technique
+domain: photography
+version: 0.1.0
+summary: >-
+  以无涂层纸纤维、哑光表面、暖棕色调和接触印相的连续灰阶构成早期摄影纸基质感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: photography
+  historical_context: '十九世纪早期摄影工艺'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,15 @@
+medium: salted-paper photographic print
+materials:
+  support: uncoated fibrous paper with matte surface
+process:
+  - compose the user subject; establish gentle gray scale; apply warm chemical tone; reveal subtle fibers and edge variation; check against glossy albumen
+technical_direction:
+  contrast: low to moderate with preserved mid-tones
+  saturation: near-monochrome warm neutral
+  perspective: follows the user's scene
+  detail_density: fine but softened by paper support
+avoid:
+  - fixed subject, location, character, or story not requested by the user
+  - generic global color filter without process evidence
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
