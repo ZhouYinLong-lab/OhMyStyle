@@ -151,6 +151,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: false
+- resource_id: diego-rivera
+  name: 迭戈·里维拉
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/diego-rivera
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: diego-velazquez
   name: 迭戈·委拉斯开兹
   kind: artist
@@ -491,6 +508,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: gustave-moreau
+  name: 古斯塔夫·莫罗
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/gustave-moreau
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: henri-matisse
   name: 亨利·马蒂斯
   kind: artist
@@ -1614,6 +1648,23 @@ packages:
   kind: game_art
   domain: game_art
   package_path: style-packages/game-art/ink-wash-adventure
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: inside-minimalist-silhouette
+  name: 内在世界极简剪影游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/inside-minimalist-silhouette
   maturity: L2
   focus_dimensions:
   - medium
@@ -3749,6 +3800,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: bruce-davidson
+  name: 布鲁斯·戴维森
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/bruce-davidson
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: cindy-sherman
   name: 辛迪·舍曼
   kind: photographer
@@ -5257,6 +5325,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: royal-academy-schools
+  name: 皇家美术学院学校
+  kind: school
+  domain: painting
+  package_path: style-packages/schools/royal-academy-schools
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: royal-college-of-art
   name: 皇家艺术学院
   kind: school
@@ -5891,6 +5976,23 @@ packages:
   - medium
   - process
   - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: stereoscopic-photography
+  name: 立体摄影
+  kind: technique
+  domain: photography
+  package_path: style-packages/techniques/stereoscopic-photography
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
   - surface
   - texture
   reference_count: 1
