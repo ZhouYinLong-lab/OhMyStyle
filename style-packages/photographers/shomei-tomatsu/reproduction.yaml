@@ -1,0 +1,23 @@
+medium: 战后纪实摄影与主观化街头观察
+materials:
+  support:
+    - '黑白胶片颗粒'
+    - '彩色负片'
+    - '湿润混凝土'
+    - '旧金属与玻璃'
+    - '褪色印刷纸'
+process:
+  - 先确定用户主体与拍摄距离，再选择近距离、偏置或碎片化取景。
+  - 让现场光和表面反射参与叙述，不用额外的戏剧化灯光。
+  - 以有限的颗粒、反差和色彩漂移收尾，保留现实的不整齐。
+technical_direction:
+  contrast: 保留中间调和主体轮廓，避免一键高反差滤镜。
+  saturation: 按本包调色板控制饱和度，保留用户指定的关键颜色。
+  perspective: 服从用户的镜头和构图要求，不自动加入固定视角。
+  detail_density: 细节集中在媒介表面与结构边界，主体本身保持清楚。
+avoid:
+  - '普通黑白街拍预设'
+  - '统一电影青橙滤镜或怀旧滤镜'
+  - '默认生成战争、废墟、军人或日本街道'
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+

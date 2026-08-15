@@ -1,0 +1,33 @@
+id: shomei-tomatsu
+name: 东松照明
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以战后日本的残痕、日常物件与社会现场为线索，在黑白与高饱和色彩之间建立诗性、尖锐而不稳定的摄影观察。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '战后日本摄影与新纪实摄影'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

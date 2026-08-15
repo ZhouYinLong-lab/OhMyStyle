@@ -1,0 +1,16 @@
+family: photographer
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '日常细节承载社会和历史的余波'
+  - '黑白与局部高饱和色之间的张力'
+  - '近距离、碎片化、带有主观不安的观察'
+avoid_overlap:
+  - '普通黑白街拍预设'
+  - '统一电影青橙滤镜或怀旧滤镜'
+  - '默认生成战争、废墟、军人或日本街道'
+related:
+  - 'photographers/daido-moriyama'
+  - 'photographers/miyako-ishiuchi'
+
