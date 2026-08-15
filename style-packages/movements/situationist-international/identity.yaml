@@ -1,0 +1,15 @@
+canonical_name: 情境主义国际
+entity_type: movement
+domain: design
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://situationist.org/collection/demanding-the-impossible/guy-debord-and-the-situationists'
+
+notes:
+  - The package studies dérive, collage, psychogeographic interruption, and critical reorganization of everyday visual material; it does not require a city map, slogan, protest, or named urban landmark.

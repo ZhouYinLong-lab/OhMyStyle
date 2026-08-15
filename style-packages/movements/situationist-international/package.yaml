@@ -1,0 +1,33 @@
+id: situationist-international
+name: 情境主义国际
+kind: movement
+domain: design
+version: 0.1.0
+summary: >-
+  以城市漂移、断裂地图、拼贴文本和对消费空间的重新编排，制造开放而批判性的视觉场景。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: design
+  historical_context: '20世纪中期欧洲前卫文化；连接艺术、城市实践、电影、出版物与社会批评。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
