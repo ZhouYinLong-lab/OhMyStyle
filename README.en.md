@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-286-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-291-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -80,6 +80,10 @@ Two external creative projects are registered for compatibility: [Photo Abstract
 The main gallery lists independent style packages only. Every card uses a horizontal 16:9 representative image; click the image or name to open the package README.
 
 ### Artists
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-morandi/README.en.md"><img src="style-packages/artists/giorgio-morandi/gallery-16x9.jpg" width="230" alt="Giorgio Morandi representative image"></a><br><strong>Giorgio Morandi</strong><br><a href="style-packages/artists/giorgio-morandi/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr>
@@ -198,6 +202,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Photographers
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/joel-meyerowitz/README.en.md"><img src="style-packages/photographers/joel-meyerowitz/gallery-16x9.jpg" width="230" alt="Joel Meyerowitz representative image"></a><br><strong>Joel Meyerowitz</strong><br><a href="style-packages/photographers/joel-meyerowitz/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/henri-cartier-bresson/README.en.md"><img src="style-packages/photographers/henri-cartier-bresson/gallery-16x9.jpg" width="230" alt="Henri Cartier-Bresson representative image"></a><br><strong>Henri Cartier-Bresson</strong><br><a href="style-packages/photographers/henri-cartier-bresson/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/lewis-hine/README.en.md"><img src="style-packages/photographers/lewis-hine/gallery-16x9.jpg" width="230" alt="Lewis Hine representative image"></a><br><strong>Lewis Hine</strong><br><a href="style-packages/photographers/lewis-hine/README.en.md">Open README</a></td>
@@ -300,6 +308,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 
 ### Design schools
 
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-visual-arts/README.en.md"><img src="style-packages/schools/school-of-visual-arts/gallery-16x9.jpg" width="230" alt="School of Visual Arts representative image"></a><br><strong>School of Visual Arts</strong><br><a href="style-packages/schools/school-of-visual-arts/README.en.md">Open README</a></td></tr>
+</table>
+
 
 <table>
 <tr>
@@ -342,6 +354,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Movements and periods
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/vienna-secession/README.en.md"><img src="style-packages/movements/vienna-secession/gallery-16x9.jpg" width="230" alt="Vienna Secession representative image"></a><br><strong>Vienna Secession</strong><br><a href="style-packages/movements/vienna-secession/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr>
@@ -594,6 +610,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Techniques and media
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/collagraph-printmaking/README.en.md"><img src="style-packages/techniques/collagraph-printmaking/gallery-16x9.jpg" width="230" alt="Collagraph Printmaking representative image"></a><br><strong>Collagraph Printmaking</strong><br><a href="style-packages/techniques/collagraph-printmaking/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr>

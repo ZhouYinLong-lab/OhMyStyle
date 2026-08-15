@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-286-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-291-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -80,6 +80,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 主画廊只展示独立风格包。所有卡片统一使用横版 16:9 代表图，点击图片或名称进入风格包 README。
 
 ### 艺术家
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-morandi/README.md"><img src="style-packages/artists/giorgio-morandi/gallery-16x9.jpg" width="230" alt="乔治·莫兰迪代表图"></a><br><strong>乔治·莫兰迪</strong><br><a href="style-packages/artists/giorgio-morandi/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr>
@@ -198,6 +202,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 ### 摄影师
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/joel-meyerowitz/README.md"><img src="style-packages/photographers/joel-meyerowitz/gallery-16x9.jpg" width="230" alt="乔尔·迈耶罗维茨代表图"></a><br><strong>乔尔·迈耶罗维茨</strong><br><a href="style-packages/photographers/joel-meyerowitz/README.md">打开 README</a></td></tr>
+</table>
+
+<table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/henri-cartier-bresson/README.md"><img src="style-packages/photographers/henri-cartier-bresson/gallery-16x9.jpg" width="230" alt="亨利·卡蒂埃-布列松代表图"></a><br><strong>亨利·卡蒂埃-布列松</strong><br><a href="style-packages/photographers/henri-cartier-bresson/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/lewis-hine/README.md"><img src="style-packages/photographers/lewis-hine/gallery-16x9.jpg" width="230" alt="刘易斯·海因代表图"></a><br><strong>刘易斯·海因</strong><br><a href="style-packages/photographers/lewis-hine/README.md">打开 README</a></td>
@@ -300,6 +308,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 
 ### 设计学校
 
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-visual-arts/README.md"><img src="style-packages/schools/school-of-visual-arts/gallery-16x9.jpg" width="230" alt="视觉艺术学院代表图"></a><br><strong>视觉艺术学院</strong><br><a href="style-packages/schools/school-of-visual-arts/README.md">打开 README</a></td></tr>
+</table>
+
 
 <table>
 <tr>
@@ -342,6 +354,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </table>
 
 ### 艺术流派与历史时期
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/vienna-secession/README.md"><img src="style-packages/movements/vienna-secession/gallery-16x9.jpg" width="230" alt="维也纳分离派代表图"></a><br><strong>维也纳分离派</strong><br><a href="style-packages/movements/vienna-secession/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr>
@@ -594,6 +610,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </table>
 
 ### 工艺与媒介
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/collagraph-printmaking/README.md"><img src="style-packages/techniques/collagraph-printmaking/gallery-16x9.jpg" width="230" alt="拼贴版画代表图"></a><br><strong>拼贴版画</strong><br><a href="style-packages/techniques/collagraph-printmaking/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr>
