@@ -1,0 +1,33 @@
+id: school-of-the-art-institute-of-chicago
+name: 芝加哥艺术学院
+kind: school
+domain: hybrid
+version: 0.1.0
+summary: >-
+  以跨学科研究、过程公开和展览语境中的实验性，连接绘画、物件、影像、空间与批评性编辑。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: design_school
+  medium: hybrid
+  historical_context: '芝加哥艺术学院及其博物馆体系；强调跨媒介工作室实践、研究和公共展示。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
