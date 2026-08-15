@@ -18,6 +18,21 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: albrecht-durer
+  name: 阿尔布雷希特·丢勒
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/albrecht-durer
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - surface
+  - texture
+  - lighting
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: alphonse-mucha
   name: 阿尔丰斯·穆夏
   kind: artist
@@ -1358,6 +1373,21 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: gris-watercolor-game-art
+  name: 灰烬水彩游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/gris-watercolor-game-art
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - palette
+  - lighting
+  - surface
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: hades-mythic-illustration
   name: 神话高对比插画游戏美术
   kind: game_art
@@ -3600,6 +3630,21 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: erwin-blumenfeld
+  name: 埃尔温·布卢门菲尔德
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/erwin-blumenfeld
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - palette
+  - lighting
+  - surface
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: etienne-jules-marey
   name: 艾蒂安-朱尔·马雷
   kind: photographer
@@ -4646,6 +4691,21 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: academy-of-fine-arts-vienna
+  name: 维也纳美术学院
+  kind: school
+  domain: painting
+  package_path: style-packages/schools/academy-of-fine-arts-vienna
+  maturity: L2
+  focus_dimensions:
+  - composition
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: artcenter
   name: 艺术中心设计学院
   kind: school
@@ -5388,6 +5448,21 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: photogravure
+  name: 凹版照相制版
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/photogravure
+  maturity: L2
+  focus_dimensions:
+  - surface
+  - texture
+  - lighting
+  - palette
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: photomontage
   name: 拼贴蒙太奇
   kind: technique
