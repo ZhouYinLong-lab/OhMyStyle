@@ -1,0 +1,33 @@
+id: artcenter
+name: 艺术中心设计学院
+kind: school
+domain: design
+version: 0.1.0
+summary: >-
+  以清晰的设计问题、专业化视觉沟通、精确的形式控制和可交付的呈现质量组织图像，不限定具体产品或行业对象。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: design_school
+  medium: design
+  historical_context: '20世纪中叶以来美国职业设计教育与跨学科创意实践'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

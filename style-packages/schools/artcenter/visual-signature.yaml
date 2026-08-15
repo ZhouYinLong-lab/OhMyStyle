@@ -1,0 +1,18 @@
+composition:
+  - 以明确的版面层级把主方案、推演过程、材料样本和小型原型组织在同一视野中。
+  - 留出足够留白，让观看者可以迅速理解重点、证据和下一步。
+palette:
+  - 以中性底色承载一到两个高识别度色彩角色，颜色用于标注结构和重点而非装饰。
+lighting:
+  quality: neutral studio/editorial light with controlled reflections
+  behavior:
+    - 光线均匀、可复核，避免情绪化光效遮蔽材料和比例信息。
+surface:
+  finish: precise editorial presentation with tactile materials
+  edges: clean geometry, measured alignment and restrained handmade evidence
+texture:
+  density: medium, with high detail only around the selected proof points
+  placement: process diagrams, material swatches, prototype edges and key form studies
+invariants:
+  - 问题、方案、证据和呈现层级必须跨主体保留。
+  - 视觉秩序应服务于用户指定的主题，不得自动替换成某类产品或行业。

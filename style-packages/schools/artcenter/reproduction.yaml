@@ -1,0 +1,19 @@
+medium: professional design communication board and studio presentation
+materials:
+  support: paper board, digital canvas, prototype table, or user-specified presentation surface
+process:
+  - State the user's design question and select one primary subject or proposition.
+  - Establish a clear focal solution with a small, disciplined color system.
+  - Add sketches, measured diagrams, material swatches or prototype evidence around it.
+  - Separate hierarchy levels through scale, alignment and whitespace rather than decoration.
+  - Remove logos, readable placeholder copy and unrequested industry cues.
+technical_direction:
+  contrast: medium, with a few high-contrast evidence points
+  saturation: restrained base with one or two deliberate accents
+  perspective: accurate and presentation-oriented; object views may mix orthographic studies and one hero view
+  detail_density: concentrated around proof, low in explanatory whitespace
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

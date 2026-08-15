@@ -1,0 +1,16 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION} as a professional design study or
+editorial presentation. Make one primary solution clearly dominant, then support
+it with a small number of material swatches, form studies, measured diagrams and
+an unobtrusive prototype or process trace. Use a disciplined grid, generous paper
+white space, charcoal hierarchy, cobalt blue and warm red as limited accents. Keep
+the user's subject and purpose authoritative. Do not add a car, device, interface,
+brand, studio person or industry-specific object unless requested. Use accurate
+proportions, clean alignment and concrete visual evidence; do not use readable
+placeholder text or copied institutional layouts.

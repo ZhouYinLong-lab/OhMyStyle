@@ -1,0 +1,11 @@
+{
+  "name": "中性工作板与单色强调",
+  "colors": [
+    {"name": "纸张白", "hex": "#F2F1EC", "role": "presentation ground"},
+    {"name": "炭黑", "hex": "#25292D", "role": "hierarchy and annotation bars"},
+    {"name": "中性灰", "hex": "#A9ADB0", "role": "secondary studies"},
+    {"name": "钴蓝", "hex": "#214E83", "role": "primary accent"},
+    {"name": "暖红", "hex": "#B54832", "role": "secondary emphasis"}
+  ],
+  "notes": "中性底色保证信息可读，强调色只标记方案重点和证据关系。"
+}

@@ -1,0 +1,21 @@
+canonical_name: 艺术中心设计学院
+entity_type: school
+domain: design
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 抽象几何对象的设计研究板
+    - 普通物体的材料与比例研究
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.artcenter.edu/about/get-to-know-artcenter/mission-and-vision.html'
+
+notes:
+  - 关注清晰的问题定义、形式推演、材料判断和面向他人的专业呈现。
+  - 示例中的几何对象和工作板只是展示设计沟通方法，不是默认产品类别。
