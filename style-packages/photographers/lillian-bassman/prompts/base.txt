@@ -1,0 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.
+- Do not add recurring objects, settings, characters, landmarks, or narrative motifs unless explicitly requested.
+
+Create a new image of {SUBJECT} in {LOCATION}. Use an editorial photographic language with deliberate softness, elegant partial concealment, selective sharpness, and a restrained mid-century print sensibility. Let a few contours dissolve into light or shadow while preserving the user's subject and structure. Prefer graceful gesture, quiet negative space, and controlled tonal transitions over catalog clarity. Keep skin and materials believable; do not copy a pose, face, garment, logo, or text.
+Keep the user's subject and narrative independent from the package's visual identity.

@@ -1,0 +1,14 @@
+package_id: lillian-bassman
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; external works remain link-only unless redistribution rights are verified.
+sources:
+  - url: 'https://www.metmuseum.org/exhibitions/lillian-bassman-bazaar-and-beyond'
+    title: 'Lillian Bassman: Bazaar and Beyond'
+    authority: 'The Metropolitan Museum of Art'
+    supports: source traceability and observable package scope
+
+attribution: This package describes observable visual characteristics and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle external artworks, photographs, game screenshots, logos, or dataset items without verified redistribution rights.
+  - The generated representative is a new anonymous scene.

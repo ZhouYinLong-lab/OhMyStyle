@@ -1,0 +1,33 @@
+id: lillian-bassman
+name: 莉莲·巴斯曼
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以时装摄影为入口，用柔焦、暗房擦拭、局部反差和溶解的轮廓把衣物转化为空气与姿态。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '二十世纪中期美国时装摄影'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

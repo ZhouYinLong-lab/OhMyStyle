@@ -1,0 +1,16 @@
+composition:
+  - quiet editorial framing, graceful diagonals, partial concealment, and usable negative space
+palette:
+  - charcoal, pearl, smoke, cream, and restrained flesh tones
+lighting:
+  quality: soft directional light with selective brilliance and broad highlights
+  behavior:
+    - Use light and value to preserve the user's subject rather than add a fixed scene.
+surface:
+  finish: tactile photographic print with controlled darkroom softness
+  edges: precise enough to preserve the requested subject
+texture:
+  density: low density, concentrated in tonal transitions and paper-like areas
+  placement: follow material and process; never become a uniform overlay
+invariants:
+  - subject remains identifiable; softness is selective; gesture and tonal rhythm survive a subject change

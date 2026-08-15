@@ -1,0 +1,16 @@
+canonical_name: 莉莲·巴斯曼
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体和场景始终优先；本包不自动加入固定物件、地点或故事。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.metmuseum.org/exhibitions/lillian-bassman-bazaar-and-beyond'
+
+notes:
+  - 以时装摄影为入口，用柔焦、暗房擦拭、局部反差和溶解的轮廓把衣物转化为空气与姿态。
+  - 代表图只用于展示视觉处理，不规定用户主题。

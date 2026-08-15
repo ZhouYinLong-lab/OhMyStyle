@@ -1,0 +1,15 @@
+medium: experimental editorial photography
+materials:
+  support: gelatin-silver-like tactile photographic print
+process:
+  - establish a natural subject; build a soft tonal base; choose a few sharp edges; add restrained diffusion or local contrast
+technical_direction:
+  contrast: low to moderate with selective local contrast
+  saturation: restrained
+  perspective: photographic and believable
+  detail_density: gesture, material, and selected edges
+avoid:
+  - fixed subject, location, character, or story not requested by the user
+  - generic global color filter without process evidence
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
