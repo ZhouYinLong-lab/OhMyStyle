@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-342-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-347-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -198,8 +198,12 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/albrecht-durer/README.md"><img src="style-packages/artists/albrecht-durer/gallery-16x9.jpg" width="230" alt="阿尔布雷希特·丢勒代表图"></a><br><strong>阿尔布雷希特·丢勒</strong><br><a href="style-packages/artists/albrecht-durer/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/artists/titian/README.md"><img src="style-packages/artists/titian/gallery-16x9.jpg" width="230" alt="提香代表图"></a><br><strong>提香</strong><br><a href="style-packages/artists/titian/README.md">打开 README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/artists/peter-paul-rubens/README.md"><img src="style-packages/artists/peter-paul-rubens/gallery-16x9.jpg" width="230" alt="彼得·保罗·鲁本斯代表图"></a><br><strong>彼得·保罗·鲁本斯</strong><br><a href="style-packages/artists/peter-paul-rubens/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/titian/README.md"><img src="style-packages/artists/titian/gallery-16x9.jpg" width="230" alt="提香代表图"></a><br><strong>提香</strong><br><a href="style-packages/artists/titian/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/peter-paul-rubens/README.md"><img src="style-packages/artists/peter-paul-rubens/gallery-16x9.jpg" width="230" alt="彼得·保罗·鲁本斯代表图"></a><br><strong>彼得·保罗·鲁本斯</strong><br><a href="style-packages/artists/peter-paul-rubens/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/caspar-david-friedrich/README.md"><img src="style-packages/artists/caspar-david-friedrich/gallery-16x9.jpg" width="230" alt="卡斯帕·大卫·弗里德里希代表图"></a><br><strong>卡斯帕·大卫·弗里德里希</strong><br><a href="style-packages/artists/caspar-david-friedrich/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/artists/edouard-manet/README.md"><img src="style-packages/artists/edouard-manet/gallery-16x9.jpg" width="230" alt="爱德华·马奈代表图"></a><br><strong>爱德华·马奈</strong><br><a href="style-packages/artists/edouard-manet/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -307,8 +311,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/erwin-blumenfeld/README.md"><img src="style-packages/photographers/erwin-blumenfeld/gallery-16x9.jpg" width="230" alt="埃尔温·布卢门菲尔德代表图"></a><br><strong>埃尔温·布卢门菲尔德</strong><br><a href="style-packages/photographers/erwin-blumenfeld/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/photographers/michael-kenna/README.md"><img src="style-packages/photographers/michael-kenna/gallery-16x9.jpg" width="230" alt="迈克尔·肯纳代表图"></a><br><strong>迈克尔·肯纳</strong><br><a href="style-packages/photographers/michael-kenna/README.md">打开 README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/photographers/helen-levitt/README.md"><img src="style-packages/photographers/helen-levitt/gallery-16x9.jpg" width="230" alt="海伦·莱维特代表图"></a><br><strong>海伦·莱维特</strong><br><a href="style-packages/photographers/helen-levitt/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/michael-kenna/README.md"><img src="style-packages/photographers/michael-kenna/gallery-16x9.jpg" width="230" alt="迈克尔·肯纳代表图"></a><br><strong>迈克尔·肯纳</strong><br><a href="style-packages/photographers/michael-kenna/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/helen-levitt/README.md"><img src="style-packages/photographers/helen-levitt/gallery-16x9.jpg" width="230" alt="海伦·莱维特代表图"></a><br><strong>海伦·莱维特</strong><br><a href="style-packages/photographers/helen-levitt/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/weegee/README.md"><img src="style-packages/photographers/weegee/gallery-16x9.jpg" width="230" alt="维吉代表图"></a><br><strong>维吉</strong><br><a href="style-packages/photographers/weegee/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -494,8 +499,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-dada/README.md"><img src="style-packages/movements/neo-dada/gallery-16x9.jpg" width="230" alt="新达达代表图"></a><br><strong>新达达</strong><br><a href="style-packages/movements/neo-dada/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/movements/orientalism/README.md"><img src="style-packages/movements/orientalism/gallery-16x9.jpg" width="230" alt="东方主义代表图"></a><br><strong>东方主义</strong><br><a href="style-packages/movements/orientalism/README.md">打开 README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/movements/pictorialism/README.md"><img src="style-packages/movements/pictorialism/gallery-16x9.jpg" width="230" alt="画意摄影代表图"></a><br><strong>画意摄影</strong><br><a href="style-packages/movements/pictorialism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/orientalism/README.md"><img src="style-packages/movements/orientalism/gallery-16x9.jpg" width="230" alt="东方主义代表图"></a><br><strong>东方主义</strong><br><a href="style-packages/movements/orientalism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/pictorialism/README.md"><img src="style-packages/movements/pictorialism/gallery-16x9.jpg" width="230" alt="画意摄影代表图"></a><br><strong>画意摄影</strong><br><a href="style-packages/movements/pictorialism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/byzantine-art/README.md"><img src="style-packages/movements/byzantine-art/gallery-16x9.jpg" width="230" alt="拜占庭艺术代表图"></a><br><strong>拜占庭艺术</strong><br><a href="style-packages/movements/byzantine-art/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -623,7 +629,8 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/okami-sumi-e-game-art/README.md"><img src="style-packages/game-art/okami-sumi-e-game-art/gallery-16x9.jpg" width="230" alt="大神水墨游戏美术代表图"></a><br><strong>大神水墨游戏美术</strong><br><a href="style-packages/game-art/okami-sumi-e-game-art/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.md"><img src="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/gallery-16x9.jpg" width="230" alt="巨像之影荒原三维游戏美术代表图"></a><br><strong>巨像之影荒原三维游戏美术</strong><br><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.md"><img src="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/gallery-16x9.jpg" width="230" alt="巨像之影荒原三维游戏美术代表图"></a><br><strong>巨像之影荒原三维游戏美术</strong><br><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/island-cel-shaded-game-art/README.md"><img src="style-packages/game-art/island-cel-shaded-game-art/gallery-16x9.jpg" width="230" alt="海岛卡通渲染游戏美术代表图"></a><br><strong>海岛卡通渲染游戏美术</strong><br><a href="style-packages/game-art/island-cel-shaded-game-art/README.md">打开 README</a></td>
 </tr>
 </table>
 
