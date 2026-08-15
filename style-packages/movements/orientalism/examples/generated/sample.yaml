@@ -1,0 +1,39 @@
+example_id: anonymous-demo
+subject: an anonymous ordinary courtyard with a single ceramic bowl, no named place or cultural costume
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: Original anonymous courtyard study focused on decorative planes, mineral color, filtered light, and material observation without a fixed ethnic subject.
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "需用用户主体进行测试；不得把代表图主体当作默认主体。"
+  distinctive_signature:
+    score: null
+    notes: ""
+  visual_overlap:
+    score: null
+    notes: ""
+  cross_subject_stability:
+    score: null
+    notes: ""
+image_audit:
+  status: pending
+  notes: "代表图为原创建的匿名演示；提交后执行资源审计。"
+signature:
+  - 'historical tension is acknowledged rather than romanticized'
+  - "decorative material detail supports the user's subject"
+  - 'no ethnicity, costume, landmark, or colonial event is forced'
+  - 'light and palette remain transferable'
+controls:
+  - composition
+  - palette
+  - lighting
+  - surface
+does_not_control:
+  - subject identity
+  - object count
+  - location
+  - story or narrative event
+  - text, logo, or brand

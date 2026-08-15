@@ -1,0 +1,16 @@
+canonical_name: 东方主义
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.metmuseum.org/exhibitions/orientalism-between-fact-and-fantasy'
+
+notes:
+  - '研究十九世纪欧洲艺术中的东方想象及其事实与幻想的交错，提取装饰性空间、暖土色、冷色阴影和材质细节，同时明确反对把族群、地点或异国情节写成默认主体。'
+  - 代表图只用于展示视觉处理，不规定用户主题。

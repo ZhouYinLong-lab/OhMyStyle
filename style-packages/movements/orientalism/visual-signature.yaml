@@ -1,0 +1,24 @@
+composition:
+  - '装饰性边框或建筑平面作为空间秩序'
+  - '前景细节与远处光线形成层次'
+  - '局部遮挡和框景带来观看距离'
+palette:
+  - '赭土、烟褐、沙金与深靛蓝形成温冷对照'
+  - '青绿色和砖红可作为局部材质色'
+  - '避免把颜色简化成廉价的异国情调滤镜'
+lighting:
+  quality: 'filtered directional light, dusty atmosphere, and cool shadow planes with controlled highlights'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Use light as a structural and material decision, not as a fixed scene.
+surface:
+  finish: 'aged paint, textile-like patterning, mineral walls, glazed ceramics, and carefully observed material accents'
+  edges: varied, deliberate edges with no copied layout
+texture:
+  density: 'moderate to high in architectural and material passages, quieter in atmospheric distance'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'historical tension is acknowledged rather than romanticized'
+  - "decorative material detail supports the user's subject"
+  - 'no ethnicity, costume, landmark, or colonial event is forced'
+  - 'light and palette remain transferable'

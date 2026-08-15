@@ -1,0 +1,33 @@
+id: orientalism
+name: 东方主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  研究十九世纪欧洲艺术中的东方想象及其事实与幻想的交错，提取装饰性空间、暖土色、冷色阴影和材质细节，同时明确反对把族群、地点或异国情节写成默认主体。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: 绘画
+  historical_context: '十九世纪欧洲艺术与殖民语境中的东方主义视觉文化'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

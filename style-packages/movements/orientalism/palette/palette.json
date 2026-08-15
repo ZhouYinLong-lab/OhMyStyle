@@ -1,0 +1,25 @@
+{
+  "name": "土色与靛青",
+  "colors": [
+    {
+      "name": "沙土色",
+      "hex": "#B98B5A",
+      "role": "warm architectural ground"
+    },
+    {
+      "name": "砖红",
+      "hex": "#934B3F",
+      "role": "selective material accent"
+    },
+    {
+      "name": "深靛蓝",
+      "hex": "#243B52",
+      "role": "cool shadow plane"
+    },
+    {
+      "name": "旧金色",
+      "hex": "#C5A05A",
+      "role": "filtered light"
+    }
+  ]
+}
