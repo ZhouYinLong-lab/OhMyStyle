@@ -1,0 +1,11 @@
+{
+  "name": "蜡染防染的分层染色",
+  "colors": [
+    {"name": "靛蓝", "hex": "#203C62", "role": "深层主色"},
+    {"name": "茜红", "hex": "#9D4639", "role": "温暖染层"},
+    {"name": "姜黄", "hex": "#C49A3A", "role": "明亮染层"},
+    {"name": "布坯乳白", "hex": "#E8DCC4", "role": "未染底色"},
+    {"name": "深棕", "hex": "#4E382B", "role": "蜡线与暗部"}
+  ],
+  "notes": "Colors should appear layered and absorbed. Do not force a regional palette if the user's subject requires another range."
+}

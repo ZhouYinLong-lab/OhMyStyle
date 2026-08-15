@@ -1,0 +1,20 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply the package's observable
+medium, composition, lighting, palette, surface, and texture decisions from the
+style files. Preserve the package invariants while inventing a new scene: do not
+copy any reference work, named character, exact pose, recognizable layout, logo,
+or text. Keep the subject and narrative supplied by the user independent from
+the package's visual identity. Translate the subject onto absorbent cloth using
+wax-resist logic: irregular wax boundaries, layered dye baths, small crackle,
+localized bleed, visible weave, folds, and matte absorption. Let indigo, madder
+red, turmeric yellow, cloth cream, and dark brown relate through layers rather
+than a flat vector palette. Keep marks hand-processed and slightly varied. Do
+not introduce flowers, temples, regional symbols, a ceremonial garment, or a
+fixed textile object unless the user asks for them. Use concrete visual
+instructions rather than the package name alone.

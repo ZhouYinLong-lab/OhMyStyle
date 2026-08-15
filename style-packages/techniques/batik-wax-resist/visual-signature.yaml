@@ -1,0 +1,21 @@
+composition:
+  - Let the cloth or supplied surface carry a legible field of resist boundaries, layered zones, and irregular flow.
+  - Use repeated marks with small deviations; avoid a mechanically tiled pattern.
+palette:
+  - Build color through layered dye: deep indigo and brown anchors, with restrained madder red, turmeric yellow, and cloth cream.
+  - Dark lines should feel like wax barriers, while dye areas show uneven absorption.
+lighting:
+  quality: soft material light that reveals weave, wax ridges, and dye pooling
+  behavior:
+    - Keep highlights broad and matte; allow shallow shadows to describe folded cloth and raised wax.
+    - Avoid glossy studio reflections that make the textile read as plastic.
+surface:
+  finish: tactile dyed cloth with a dry, absorbent surface
+  edges: irregular resist edges with occasional bleed, crackle, and imperfect registration
+texture:
+  density: medium-to-high in marks, low in unpatterned support areas
+  placement: concentrated along wax lines, crackle networks, folds, and overlaps between dye layers
+invariants:
+  - Wax boundaries and dye sequence remain visible after the motif or subject changes.
+  - Cloth absorbency and small irregularities are more important than perfect geometry.
+  - The user's subject stays open; regional motifs are optional research context, not default content.

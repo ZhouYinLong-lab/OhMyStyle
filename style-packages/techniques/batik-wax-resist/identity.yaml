@@ -1,0 +1,16 @@
+canonical_name: 蜡染防染工艺
+entity_type: technique
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://nga.gov.au/art-artists/indonesian-textiles/'
+
+notes:
+  - The package focuses on the material sequence of wax barriers, repeated dyeing, cracking, and cloth absorption.
+  - Motifs remain open; the package transfers resist logic and textile surface rather than requiring flowers, temples, or regional symbols.

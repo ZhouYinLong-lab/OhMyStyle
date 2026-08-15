@@ -1,0 +1,18 @@
+medium: wax-resist textile dyeing translated into a material-aware visual treatment
+materials:
+  support: absorbent cotton or linen cloth with visible weave
+process:
+  - Establish the user's subject or pattern on the cloth without fixing a cultural motif.
+  - Draw irregular wax barriers that reserve selected areas from the first dye bath.
+  - Layer darker and warmer dyes, allowing absorption, pooling, and small cracks to interrupt the boundaries.
+  - Show folds, weave, and matte surface response; keep the result tactile rather than vector-smooth.
+technical_direction:
+  contrast: medium-high at wax boundaries, moderated in the cloth body
+  saturation: medium, increasing through selected dye layers
+  perspective: close material view or flat textile presentation as requested
+  detail_density: medium-high around resist marks, medium elsewhere
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

@@ -1,0 +1,33 @@
+id: batik-wax-resist
+name: 蜡染防染工艺
+kind: technique
+domain: printmaking
+version: 0.1.0
+summary: >-
+  以熔蜡防染、分层上色、裂纹渗色和织物吸收，形成由工艺顺序决定的图案与表面节奏。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: printmaking
+  historical_context: '印度尼西亚及东南亚纺织传统；以蜡防染和多次染色建立层次。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
