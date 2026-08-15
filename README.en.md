@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-281-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-286-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -189,6 +189,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/joan-mitchell/README.en.md"><img src="style-packages/artists/joan-mitchell/gallery-16x9.jpg" width="230" alt="Joan Mitchell representative"></a><br><strong>Joan Mitchell</strong><br><a href="style-packages/artists/joan-mitchell/README.en.md">Open README</a></td>
 </tr>
 </table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/louise-bourgeois/README.en.md"><img src="style-packages/artists/louise-bourgeois/gallery-16x9.jpg" width="230" alt="Louise Bourgeois representative image"></a><br><strong>Louise Bourgeois</strong><br><a href="style-packages/artists/louise-bourgeois/README.en.md">Open README</a></td>
+</tr>
+</table>
 
 ### Photographers
 
@@ -287,6 +292,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/raghubir-singh/README.en.md"><img src="style-packages/photographers/raghubir-singh/gallery-16x9.jpg" width="230" alt="Raghubir Singh representative"></a><br><strong>Raghubir Singh</strong><br><a href="style-packages/photographers/raghubir-singh/README.en.md">Open README</a></td>
 </tr>
 </table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/sally-mann/README.en.md"><img src="style-packages/photographers/sally-mann/gallery-16x9.jpg" width="230" alt="Sally Mann representative image"></a><br><strong>Sally Mann</strong><br><a href="style-packages/photographers/sally-mann/README.en.md">Open README</a></td>
+</tr>
+</table>
 
 ### Design schools
 
@@ -323,6 +333,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/artcenter/README.en.md"><img src="style-packages/schools/artcenter/gallery-16x9.jpg" width="230" alt="ArtCenter College of Design representative"></a><br><strong>ArtCenter College of Design</strong><br><a href="style-packages/schools/artcenter/README.en.md">Open README</a></td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/design-academy-eindhoven/README.en.md"><img src="style-packages/schools/design-academy-eindhoven/gallery-16x9.jpg" width="230" alt="Design Academy Eindhoven representative image"></a><br><strong>Design Academy Eindhoven</strong><br><a href="style-packages/schools/design-academy-eindhoven/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -454,6 +469,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/mexican-muralism/README.en.md"><img src="style-packages/movements/mexican-muralism/gallery-16x9.jpg" width="230" alt="Mexican Muralism representative"></a><br><strong>Mexican Muralism</strong><br><a href="style-packages/movements/mexican-muralism/README.en.md">Open README</a></td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/aestheticism/README.en.md"><img src="style-packages/movements/aestheticism/gallery-16x9.jpg" width="230" alt="Aestheticism representative image"></a><br><strong>Aestheticism</strong><br><a href="style-packages/movements/aestheticism/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -618,6 +638,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/monotype-printmaking/README.en.md"><img src="style-packages/techniques/monotype-printmaking/gallery-16x9.jpg" width="230" alt="Monotype Printmaking representative"></a><br><strong>Monotype Printmaking</strong><br><a href="style-packages/techniques/monotype-printmaking/README.en.md">Open README</a></td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/platinum-palladium-printing/README.en.md"><img src="style-packages/techniques/platinum-palladium-printing/gallery-16x9.jpg" width="230" alt="Platinum–Palladium Printing representative image"></a><br><strong>Platinum–Palladium Printing</strong><br><a href="style-packages/techniques/platinum-palladium-printing/README.en.md">Open README</a></td>
 </tr>
 </table>
 
