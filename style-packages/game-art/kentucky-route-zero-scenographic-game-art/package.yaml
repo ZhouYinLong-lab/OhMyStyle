@@ -1,0 +1,33 @@
+id: kentucky-route-zero-scenographic-game-art
+name: 肯塔基零号公路舞台化游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以舞台布景式三维空间、低多边形形体、慢电影镜头和克制灯光，构成可迁移的游戏环境视觉语言。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '独立叙事游戏美术；借鉴戏剧舞台、电影场面调度与实验性空间设计。'
+  application: game_art
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

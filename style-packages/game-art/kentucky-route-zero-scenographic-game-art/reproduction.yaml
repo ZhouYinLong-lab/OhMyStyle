@@ -1,0 +1,17 @@
+medium: stylized low-poly 3D environment with theatrical staging
+materials:
+  support: matte geometry, simplified architectural surfaces, restrained props, and volumetric atmosphere
+process:
+  - block the scene as a stage set with a clear foreground, middle plane, and backdrop
+  - simplify objects into readable faceted masses and assign matte materials
+  - add a slow, localized light cue and leave space for the user's subject or action
+technical_direction:
+  contrast: moderate with deep calm shadows
+  saturation: muted with one atmospheric accent
+  perspective: cinematic but stable, with deliberate staging
+  detail_density: low to moderate; prioritize silhouette and spatial rhythm
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

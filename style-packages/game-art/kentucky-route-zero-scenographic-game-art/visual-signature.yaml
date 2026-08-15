@@ -1,0 +1,20 @@
+composition:
+  - Compose environments like theatrical sets: strong stage planes, deliberate entrances, and readable silhouettes.
+  - Use slow, patient framing with a small number of carefully placed forms and generous negative space.
+palette:
+  - Combine muted asphalt, wood, and paper colors with one atmospheric accent such as sodium amber or nocturnal blue.
+  - Keep colors matte and spatially motivated rather than glossy or hyper-saturated.
+lighting:
+  quality: low-key stage light with calm pools of illumination
+  behavior:
+    - Use visible light zones and quiet shadow planes; avoid cinematic spectacle and constant rim light.
+surface:
+  finish: simplified low-poly or painted 3D surface
+  edges: faceted, clean, and slightly uncanny rather than smooth photorealistic edges
+texture:
+  density: low to moderate
+  placement: concentrated on a few props and architectural surfaces; keep distant forms economical
+invariants:
+  - preserve scenographic staging and slow-camera readability
+  - preserve simplified forms, matte surfaces, and quiet atmospheric color
+  - preserve ambiguity without forcing a roadside, cave, or rural American setting
