@@ -1,0 +1,32 @@
+id: wet-plate-collodion
+name: 湿版火棉胶摄影
+kind: technique
+domain: photography
+version: 0.1.0
+summary: 模拟湿版火棉胶工艺留下的玻璃板质感、银灰与琥珀色调、柔化边缘和手工处理痕迹。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: 摄影工艺
+  historical_context: 十九世纪摄影工艺
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

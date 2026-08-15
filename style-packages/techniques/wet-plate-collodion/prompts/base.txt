@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- - 银灰、烟褐和有限琥珀色的化学影调
+- 玻璃板边缘、轻微涂布不均和手工处理痕迹
+- 柔化但仍可辨认的轮廓
+- 局部高光与暗部的非均匀反应
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先确定普通主体和清晰的基本曝光
+- 加入湿版玻璃板的边缘与乳剂不均
+- 用银灰和暖褐建立有限色调
+- 保留手工显影痕迹但避免统一复古滤镜
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

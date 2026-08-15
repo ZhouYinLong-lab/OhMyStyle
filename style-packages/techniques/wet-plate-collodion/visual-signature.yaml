@@ -1,0 +1,23 @@
+schema_version: 1.0.0
+composition:
+- 银灰、烟褐和有限琥珀色的化学影调
+- 玻璃板边缘、轻微涂布不均和手工处理痕迹
+palette:
+- 玻璃板边缘、轻微涂布不均和手工处理痕迹
+- 柔化但仍可辨认的轮廓
+lighting:
+  quality: 柔化但仍可辨认的轮廓
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 局部高光与暗部的非均匀反应
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- glass-plate surface
+- wet chemical irregularity
+- silver-amber tonal response
+- the requested subject stays unchanged

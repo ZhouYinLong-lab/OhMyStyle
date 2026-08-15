@@ -1,0 +1,11 @@
+family: historic-photographic-process
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+- glass-plate surface
+- wet chemical irregularity
+- silver-amber tonal response
+avoid_overlap:
+- fixed subject, landmark, character, or narrative event
+- copied reference composition or branded asset
