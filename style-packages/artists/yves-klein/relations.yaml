@@ -1,0 +1,16 @@
+family: artist
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '色彩被当作空间材料，而不只是调色'
+  - '单色场与触觉表面并存'
+  - '安静、克制但具有身体尺度'
+avoid_overlap:
+  - '普通蓝色滤镜或统一冷色调'
+  - '固定的人体印痕、展厅或特定装置'
+  - '复制某件单色画的尺寸、位置和构图'
+related:
+  - 'movements/new-realism'
+  - 'movements/abstract-expressionism'
+

@@ -1,0 +1,16 @@
+canonical_name: 伊夫·克莱因
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点和叙事优先；本包只转译视觉处理，不规定默认对象。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.yvesklein.com/en/archives/view/artwork/731/monochrome-bleu-sans-titre'
+notes:
+  - '这套视觉语言让我想到一块被从现实中抽离出来的蓝色空间：它不急着讲故事，却会让表面、距离和身体的尺度变得格外清楚。生成时最值得保留的不是“全画面变蓝”，而是让颜色成为一种有重量的材料。'
+  - 主体独立性是硬约束：固定题材只可出现在 benchmark 或可选说明中。
+

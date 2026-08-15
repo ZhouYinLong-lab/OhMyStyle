@@ -1,0 +1,23 @@
+medium: 单色绘画、颜料浮雕与实验性表面构成
+materials:
+  support:
+    - '厚涂颜料'
+    - '海绵压印'
+    - '石膏或石粉底'
+    - '粗纤维画布'
+    - '哑光纸面'
+process:
+  - 先确定用户主体的轮廓和空间尺度，再选择单色场或局部浮雕的组织方式。
+  - 用一到两种表面工艺制造触感差异，避免把所有区域都做成同样粗糙。
+  - 最后用中性光保留材料重量，不加入霓虹、金属科幻或复制原作的动作。
+technical_direction:
+  contrast: 保留中间调和主体轮廓，避免一键高反差滤镜。
+  saturation: 按本包调色板控制饱和度，保留用户指定的关键颜色。
+  perspective: 服从用户的镜头和构图要求，不自动加入固定视角。
+  detail_density: 细节集中在媒介表面与结构边界，主体本身保持清楚。
+avoid:
+  - '普通蓝色滤镜或统一冷色调'
+  - '固定的人体印痕、展厅或特定装置'
+  - '复制某件单色画的尺寸、位置和构图'
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+
