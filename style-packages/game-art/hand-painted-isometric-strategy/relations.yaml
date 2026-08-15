@@ -1,0 +1,18 @@
+related_movements: []
+related_concepts: []
+influences_to_review: []
+not_equivalent_to:
+  - generic color filter
+  - subject-specific composition
+
+family: 等距手绘游戏美术
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - hand-painted terrain materials in a readable isometric grid
+  - strategic depth layers for paths, obstacles, structures, and units
+  - painterly silhouettes without pixel edges or photorealistic optics
+avoid_overlap:
+  - 不强制生成村庄、运河、农田、桥、士兵或东方建筑。
+  - 不把等距策略美术写成像素艺术、界面截图或某一部游戏的场景复刻。

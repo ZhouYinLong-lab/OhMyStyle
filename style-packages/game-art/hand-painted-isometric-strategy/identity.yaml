@@ -1,0 +1,20 @@
+canonical_name: 等距手绘策略游戏美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 运河聚落与梯田
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.gamedeveloper.com/design/the-art-of-isometric-games'
+
+notes:
+  - 关注等距视角、分层地形、可读路径和手绘材质，而不是某个固定世界观。
+  - 代表图中的运河、农田和建筑只是测试场景，不是默认主体。

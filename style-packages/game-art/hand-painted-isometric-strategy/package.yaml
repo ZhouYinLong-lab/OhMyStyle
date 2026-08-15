@@ -1,0 +1,33 @@
+id: hand-painted-isometric-strategy
+name: 等距手绘策略游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以等距网格、手绘材质、分层地形和清晰可读的策略信息组织游戏场景。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: game_art
+  historical_context: '现代独立游戏与策略游戏视觉方向'
+  application: game_art
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

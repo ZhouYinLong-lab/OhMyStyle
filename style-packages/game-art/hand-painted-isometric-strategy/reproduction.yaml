@@ -1,0 +1,23 @@
+medium: hand-painted isometric strategy-game environment art
+materials:
+  support: layered game background with terrain, structures, props, and units defined by the user
+  tools:
+    - isometric tile planning
+    - opaque and textured digital brushes
+    - controlled silhouette and value grouping
+process:
+  - Block the user's subject and scene in an isometric spatial grid.
+  - Separate terrain, paths, structures, props, and units into readable depth layers.
+  - Paint large value groups before adding material-specific brushwork.
+  - Add selective warm or cool accents to communicate hierarchy, not decoration alone.
+  - Remove UI, text, logos, and unrequested game-world objects before delivery.
+technical_direction:
+  contrast: medium with strong silhouette and terrain separation
+  saturation: medium to high in natural materials, restrained in shadows
+  perspective: fixed 30–45 degree isometric view; avoid lens distortion
+  detail_density: layered and readable, with less detail in distant tiles
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

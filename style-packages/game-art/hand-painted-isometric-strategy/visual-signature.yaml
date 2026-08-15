@@ -1,0 +1,24 @@
+composition:
+  - 使用约30–45度等距俯视，把路径、地块、障碍和单位放进清楚的空间层级。
+  - 让前景、中景和远景都能读取，但避免像地图编辑器一样铺满信息。
+palette:
+  - 以自然绿、土黄、石灰灰和水体蓝为底，使用少量暖色提示可交互或重要位置。
+lighting:
+  quality: soft directional daylight with painterly atmospheric separation
+  behavior:
+    - 光照统一，阴影帮助地形分层而不变成电影化光束。
+surface:
+  finish: hand-painted textured tiles with visible brush variation
+  edges: readable silhouettes and slightly softened painted contours
+texture:
+  density: medium to high, organized by terrain type
+  placement: foliage, masonry, soil, water, and paths each retain material identity
+invariants:
+  - 等距视角和策略可读性必须优先于装饰细节。
+  - 手绘质感不能退化为像素化、低多边形或写实照片。
+  - 用户指定的主体和场景保持开放，不添加固定国家、阵营或建筑。
+anti_signatures:
+  - pixel art grid
+  - low-poly 3D render
+  - photorealistic landscape
+  - game UI, text, logos, or named franchise assets

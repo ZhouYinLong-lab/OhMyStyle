@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls isometric projection, game-space readability, painterly
+  terrain materials, palette, and layer hierarchy only.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION} as a hand-painted isometric strategy-game
+scene. Preserve the user's subject and setting, then organize terrain, paths, obstacles,
+structures, props, and requested units into readable 30–45 degree depth layers. Use
+textured brushwork, clear silhouettes, medium-high material separation, and natural
+terrain colors with a small amount of hierarchy accent. Keep the image useful as a
+game-space background: no interface, no text, no logos, no named franchise, no fixed
+village, canal, bridge, army, or architecture unless explicitly requested.
