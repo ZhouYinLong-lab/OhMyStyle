@@ -2,5 +2,5 @@
 
 ## 0.1.0
 
-- Initial contributor scaffold.
-- Replace all `TODO` fields before requesting review.
+- Initial curated package with an anonymous 16:9 representative image.
+- Subject-independent prompt, reproduction rules, source manifest, and evaluation notes.
