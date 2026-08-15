@@ -1020,6 +1020,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: sonia-delaunay
+  name: 索尼娅·德洛内
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/sonia-delaunay
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: tamara-de-lempicka
   name: 塔玛拉·德·兰佩卡
   kind: artist
@@ -1785,6 +1802,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: to-the-moon-narrative-pixel-art
+  name: 去月球叙事像素美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/to-the-moon-narrative-pixel-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: top-down-16-bit-adventure
   name: 俯视角16位冒险美术
   kind: game_art
@@ -3076,6 +3110,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: tonalism
+  name: 色调主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/tonalism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: ukiyo-e
   name: 浮世绘
   kind: movement
@@ -3600,6 +3651,23 @@ packages:
   - surface
   - subject_treatment
   reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: josef-sudek
+  name: 约瑟夫·苏德克
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/josef-sudek
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
@@ -4970,6 +5038,22 @@ packages:
   - surface
   - texture
   reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: japanese-mokuhanga
+  name: 日本水性木版画
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/japanese-mokuhanga
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
