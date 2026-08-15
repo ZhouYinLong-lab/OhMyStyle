@@ -1,0 +1,18 @@
+medium: modernist painting, print, or textile-informed color composition
+materials:
+  support: paper, canvas, cloth, or a clean graphic field chosen by the user
+process:
+  - Reduce the user's subject to a few masses, contours, or color-bearing shapes.
+  - Establish a limited rhythm of arcs, bands, circles, or rectangles.
+  - Introduce simultaneous warm-cool contrasts and let overlaps create visual movement.
+  - Add restrained paper, pigment, or textile variation without losing the designed structure.
+technical_direction:
+  contrast: medium-high through adjacent hue contrast
+  saturation: medium-high but organized into a limited rhythmic palette
+  perspective: flat or shallow; depth is secondary to surface movement
+  detail_density: medium, with clear repeated motifs and quiet intervals
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

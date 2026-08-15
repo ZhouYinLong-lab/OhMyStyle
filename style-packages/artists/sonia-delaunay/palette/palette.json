@@ -1,0 +1,11 @@
+{
+  "name": "同时性对比与彩色节奏",
+  "colors": [
+    {"name": "珊瑚红", "hex": "#D95245", "role": "暖色运动"},
+    {"name": "钴蓝", "hex": "#2E5E9E", "role": "冷色支点"},
+    {"name": "柠檬黄", "hex": "#E8C84A", "role": "明度跳跃"},
+    {"name": "深墨黑", "hex": "#252B34", "role": "轮廓与节拍"},
+    {"name": "纸面乳白", "hex": "#EEE4D4", "role": "呼吸空间"}
+  ],
+  "notes": "Treat colors as interacting neighbors. The user's subject and requested palette remain authoritative."
+}

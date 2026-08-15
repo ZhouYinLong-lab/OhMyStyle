@@ -1,0 +1,21 @@
+composition:
+  - Organize the frame through overlapping circles, arcs, bands, and color blocks that create movement without literal depth.
+  - Let repeated shapes vary slightly in scale or spacing so the rhythm feels designed but not mechanically tiled.
+palette:
+  - Use simultaneous warm-cool contrasts and adjacent saturated colors so movement is carried by color relationships.
+  - Keep a few neutral or quiet intervals to prevent the surface becoming an undifferentiated rainbow.
+lighting:
+  quality: even graphic illumination with color clarity
+  behavior:
+    - Avoid theatrical object lighting; value changes should support the rhythm of the composition.
+    - Let slight pigment variation or paper grain keep the design tactile.
+surface:
+  finish: painted, printed, or textile-like color surface with clean but human variation
+  edges: crisp arcs and bands with occasional registration softness or brush irregularity
+texture:
+  density: medium; visual energy comes from repeated form and hue rather than noise
+  placement: concentrated at overlaps, alternating bands, and small registration shifts
+invariants:
+  - Color contrast and rhythmic repetition remain visible after the subject changes.
+  - The package does not require a dress, textile, circle, or named design object.
+  - Movement is built from relationships between shapes and colors, not from blur or motion effects.
