@@ -1,0 +1,13 @@
+canonical_name: 古斯塔夫·莫罗
+entity_type: artist
+domain: painting
+historical_context: 十九世纪法国象征主义绘画
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character or branded asset
+sources:
+- https://musee-moreau.fr/en/art-gustave-moreau

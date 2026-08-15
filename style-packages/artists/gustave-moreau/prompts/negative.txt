@@ -1,0 +1,1 @@
+Do not copy a reference composition, named character, landmark, logo, brand, readable text, screenshot, watermark, or protected game asset. Do not introduce a fixed subject from the package. Avoid generic global filters, accidental extra objects, and unrequested narrative events.

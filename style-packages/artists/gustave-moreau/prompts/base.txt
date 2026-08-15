@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 精细而有方向感的线条与装饰性曲线
+- 宝石蓝、深红、金色和墨绿形成高密度色彩层
+- 平面细节与梦境空间叠合
+- 局部精密、整体保持神秘的表面节奏
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先确定清晰的主体轮廓和主要色块
+- 用细线与装饰性曲线建立内部秩序
+- 叠加宝石色、金色和深色阴影
+- 让细节集中在视觉焦点，背景保持可呼吸
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

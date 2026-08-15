@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+composition:
+- 精细而有方向感的线条与装饰性曲线
+- 宝石蓝、深红、金色和墨绿形成高密度色彩层
+palette:
+- 宝石蓝、深红、金色和墨绿形成高密度色彩层
+- 平面细节与梦境空间叠合
+lighting:
+  quality: 平面细节与梦境空间叠合
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 局部精密、整体保持神秘的表面节奏
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- 精细而有方向感的线条与装饰性曲线
+- 宝石蓝、深红、金色和墨绿形成高密度色彩层
+- 平面细节与梦境空间叠合
+- 局部精密、整体保持神秘的表面节奏
+- the requested subject stays unchanged
