@@ -1,0 +1,23 @@
+related_movements:
+  - pictorialist-photography
+  - early-modern-photography
+related_concepts:
+  - matte-fiber-paper
+  - continuous-tone-print
+  - contact-printing
+influences_to_review:
+  - platinum-photography
+not_equivalent_to:
+  - generic sepia filter
+  - silver-gelatin gloss
+family: matte-continuous-tone-photography
+near_duplicates: []
+supersedes: []
+conflicts:
+  - glossy-hdr-commercial-photo
+distinctives:
+  - image appears absorbed into fibrous matte paper
+  - long continuous grayscale with open shadows
+  - restrained neutral warmth from material process
+avoid_overlap:
+  - forced portrait, landscape, darkroom, or antique subject

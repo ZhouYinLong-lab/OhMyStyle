@@ -1,0 +1,9 @@
+asset: sample.png
+status: generated_demo
+generator: OpenAI image generation
+prompt_mode: anonymous_visual_signature
+subject: a single unmarked ceramic vessel on a plain table
+generated_at: 2026-08-15
+review:
+  decision: provisional
+  notes: Representative image for package navigation; verify subject independence with neutral fixtures before promotion.

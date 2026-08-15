@@ -1,0 +1,15 @@
+medium: platinum and palladium photographic print simulation
+materials:
+  support: matte, absorbent fiber paper
+  surface: toothy paper, soft metallic grayscale, restrained warm neutral shift
+process:
+  - keep the supplied subject and composition authoritative
+  - establish a broad grayscale negative
+  - model the image as absorbed into paper rather than floating in glossy emulsion
+  - preserve highlight texture and open shadows
+  - apply only subtle paper and coating variation
+technical_direction:
+  contrast: medium with continuous tone
+  saturation: monochrome or warm neutral
+  perspective: natural
+  detail_density: medium and tonally driven

@@ -1,0 +1,22 @@
+package_id: platinum-palladium-printing
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://www.nga.gov/stories/videos/platinum-and-palladium-photography-making-print'
+    title: 'Platinum and Palladium Photography: Making a Print'
+    authority: 'National Gallery of Art'
+    supports: process materials and print construction
+  - url: 'https://www.getty.edu/art/exhibitions/focus_platinum/index.html'
+    title: 'In Focus: Platinum Photographs'
+    authority: 'J. Paul Getty Museum'
+    supports: matte surface, tonal range, and neutral palette
+  - url: 'https://www.nga.gov/research/publications/alfred-stieglitz-key-set/stieglitzs-practices-processes'
+    title: 'Stieglitz’s Practices and Processes'
+    authority: 'National Gallery of Art'
+    supports: paper absorption and platinum/palladium process distinctions
+
+attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.

@@ -1,0 +1,38 @@
+profiles:
+  generic:
+    required:
+      - matte paper and absorbed image character are visible
+      - grayscale is broad and continuous
+      - supplied subject remains recognizable
+      - no copied reference composition or branded material
+    reject_if:
+      - result is only a sepia or monochrome filter
+      - glossy silver-gelatin look, fake border, crushed black, or clipped white dominates
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - skin and facial structure remain legible without forced period styling
+  still_life:
+    required:
+      - material differences survive the grayscale process
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Use unrelated subjects and check that the process does not choose a default scene."
+  distinctive_signature:
+    score: null
+    notes: "Check matte fiber surface, continuous tone, open shadows, and restrained warmth."
+  visual_overlap:
+    score: null
+    notes: "Compare against generic monochrome, sepia, and gelatin-silver packages."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "Generated evidence must be added by a contributor or user."

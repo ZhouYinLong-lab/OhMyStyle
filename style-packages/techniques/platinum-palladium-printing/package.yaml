@@ -1,0 +1,33 @@
+id: platinum-palladium-printing
+name: 铂钯印相
+kind: technique
+domain: photography
+version: 0.1.0
+summary: >-
+  以哑光纸面、连续灰阶、柔和金属色调和纤维吸收感重建铂钯印相的物质观看经验。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: photography
+  historical_context: '19世纪末以来的摄影工艺；铂印与钯印的纸基接触印相传统'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

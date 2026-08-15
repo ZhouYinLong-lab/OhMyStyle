@@ -1,0 +1,5 @@
+SUBJECT INDEPENDENCE: Generate the user-supplied {SUBJECT} in {LOCATION}; do not add a recurring portrait, landscape, darkroom, antique object, or historical costume from the technique package.
+
+Create a new photograph of {SUBJECT} in {LOCATION} using the material appearance of a platinum-palladium print. Keep a calm photographic frame and build a broad continuous grayscale with luminous highlights, open shadows, and smooth tonal modeling. The image should feel absorbed into matte, fibrous paper: softly toothy, gently metallic, and materially present rather than glossy.
+
+Use neutral gray with an optional restrained warm platinum or palladium drift. Keep perspective natural and details tonally descriptive. Do not use a generic sepia filter, fake antique border, heavy grain, glossy silver-gelatin sheen, clipped highlights, or crushed shadows. Preserve the user’s subject and make a new photograph without copying any reference work.

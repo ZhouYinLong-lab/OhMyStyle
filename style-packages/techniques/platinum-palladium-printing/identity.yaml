@@ -1,0 +1,23 @@
+canonical_name: 铂钯印相
+entity_type: technique
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的摄影主体优先；人像、建筑和风景只是工艺测试，不是默认题材。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 一件普通器物
+    - 未指定地点的建筑边缘
+  exclusions:
+    - copied composition
+    - named photographer or branded asset
+    - recurring portrait, landscape, darkroom, or antique object
+sources:
+  - 'https://www.nga.gov/stories/videos/platinum-and-palladium-photography-making-print'
+  - 'https://www.getty.edu/art/exhibitions/focus_platinum/index.html'
+  - 'https://www.nga.gov/research/publications/alfred-stieglitz-key-set/stieglitzs-practices-processes'
+notes:
+  - 图像直接“进入”纸纤维，哑光表面和连续灰阶比锐利光泽更重要。
+  - 铂与钯的暖中性色可以存在，但不能靠棕色滤镜替代纸面、曝光和清洗痕迹。
