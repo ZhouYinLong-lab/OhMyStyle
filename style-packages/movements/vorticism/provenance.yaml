@@ -1,0 +1,15 @@
+package_id: vorticism
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/vorticism'
+    title: '旋涡主义'
+    authority: '苏格兰国家美术馆'
+    supports: source traceability and package scope
+attribution: '本包提炼可观察视觉特征，不主张与来源艺术家、机构、游戏或流派存在合作、授权、背书或完全等同关系。'
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.
+  - Generated representative images are new anonymous scenes and are not source artworks.
+

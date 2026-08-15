@@ -1,0 +1,16 @@
+family: movement
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '硬边折线和向中心集中的动势'
+  - '工业时代的能量被抽象为色面和方向'
+  - '少量强色与粗糙印刷表面并置'
+avoid_overlap:
+  - '普通构成主义海报或包豪斯色块'
+  - '赛博朋克、机械零件和工业场景的固定化叙事'
+  - '无方向的随机几何噪声'
+related:
+  - 'movements/constructivism'
+  - 'movements/futurism'
+

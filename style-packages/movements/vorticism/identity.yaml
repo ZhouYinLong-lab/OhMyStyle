@@ -1,0 +1,16 @@
+canonical_name: 旋涡主义
+entity_type: movement
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点和叙事优先；本包只转译视觉处理，不规定默认对象。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/vorticism'
+notes:
+  - '旋涡主义不是简单地把画面做成“工业风”，它更像把运动压缩成几何断面：硬边、折线、冲突的方向和突然收紧的中心共同制造能量。适合用在需要张力的主体上，但不该强迫每张图出现机器或城市。'
+  - 主体独立性是硬约束：固定题材只可出现在 benchmark 或可选说明中。
+

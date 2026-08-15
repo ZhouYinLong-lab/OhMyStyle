@@ -1,0 +1,23 @@
+medium: 硬边现代主义绘画、版式和综合平面构成
+materials:
+  support:
+    - '哑光颜料'
+    - '粗纹纸'
+    - '木刻或石版印刷边缘'
+    - '铅笔线'
+    - '有限金属色'
+process:
+  - 先提取主体的主要方向和轮廓，再安排折线、楔形面和向中心的动势。
+  - 使用少量高对比色块强化结构，不用复杂背景补足画面。
+  - 最后检查主体仍然可辨，避免把几何化误做成随机故障。
+technical_direction:
+  contrast: 保留中间调和主体轮廓，避免一键高反差滤镜。
+  saturation: 按本包调色板控制饱和度，保留用户指定的关键颜色。
+  perspective: 服从用户的镜头和构图要求，不自动加入固定视角。
+  detail_density: 细节集中在媒介表面与结构边界，主体本身保持清楚。
+avoid:
+  - '普通构成主义海报或包豪斯色块'
+  - '赛博朋克、机械零件和工业场景的固定化叙事'
+  - '无方向的随机几何噪声'
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+

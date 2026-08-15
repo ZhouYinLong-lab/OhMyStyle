@@ -1,0 +1,33 @@
+id: vorticism
+name: 旋涡主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: >-
+  以硬边折线、机械时代的动势、强烈色面和向中心压缩的结构，制造短促而有能量的现代主义画面。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: painting
+  historical_context: '1910年代英国前卫艺术'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

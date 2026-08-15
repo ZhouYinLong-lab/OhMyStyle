@@ -1,0 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user's subject, place, people, objects, and story are authoritative.
+- Do not introduce a fixed subject from the package or its reference examples.
+- Translate only the observable visual language below.
+
+用硬边折线、楔形色面和向中心收紧的动势组织用户指定主体；保持有限的黑白灰结构与少量强烈色块，表面略带印刷和纸张痕迹。
+Keep the requested subject count, identity, silhouette, camera, aspect ratio, and purpose. If the user requests a different medium or subject, transfer the visual rules without copying a reference composition.
