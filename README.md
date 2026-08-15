@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-266-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-271-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -178,6 +178,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/francis-bacon/README.md"><img src="style-packages/artists/francis-bacon/gallery-16x9.jpg" width="230" alt="弗朗西斯·培根代表图"></a><br><strong>弗朗西斯·培根</strong><br><a href="style-packages/artists/francis-bacon/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/kathe-kollwitz/README.md"><img src="style-packages/artists/kathe-kollwitz/gallery-16x9.jpg" width="230" alt="凯绥·珂勒惠支 representative image"></a><br><strong>凯绥·珂勒惠支</strong><br><a href="style-packages/artists/kathe-kollwitz/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/gerhard-richter/README.md"><img src="style-packages/artists/gerhard-richter/gallery-16x9.jpg" width="230" alt="格哈德·里希特代表图"></a><br><strong>格哈德·里希特</strong><br><a href="style-packages/artists/gerhard-richter/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -267,6 +268,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/ernst-haas/README.md"><img src="style-packages/photographers/ernst-haas/gallery-16x9.jpg" width="230" alt="恩斯特·哈斯 representative image"></a><br><strong>恩斯特·哈斯</strong><br><a href="style-packages/photographers/ernst-haas/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/josef-koudelka/README.md"><img src="style-packages/photographers/josef-koudelka/gallery-16x9.jpg" width="230" alt="约瑟夫·库德尔卡代表图"></a><br><strong>约瑟夫·库德尔卡</strong><br><a href="style-packages/photographers/josef-koudelka/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -296,6 +298,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="耶鲁艺术学院代表图"></a><br><strong>耶鲁艺术学院</strong><br><a href="style-packages/schools/yale-school-of-art/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/central-saint-martins/README.md"><img src="style-packages/schools/central-saint-martins/gallery-16x9.jpg" width="230" alt="中央圣马丁艺术与设计学院代表图"></a><br><strong>中央圣马丁艺术与设计学院</strong><br><a href="style-packages/schools/central-saint-martins/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -416,6 +419,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/orphism/README.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="230" alt="奥菲主义代表图"></a><br><strong>奥菲主义</strong><br><a href="style-packages/movements/orphism/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/color-field-painting/README.md"><img src="style-packages/movements/color-field-painting/gallery-16x9.jpg" width="230" alt="色域绘画代表图"></a><br><strong>色域绘画</strong><br><a href="style-packages/movements/color-field-painting/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/rayonism/README.md"><img src="style-packages/movements/rayonism/gallery-16x9.jpg" width="230" alt="射线主义 representative image"></a><br><strong>射线主义</strong><br><a href="style-packages/movements/rayonism/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-expressionism/README.md"><img src="style-packages/movements/neo-expressionism/gallery-16x9.jpg" width="230" alt="新表现主义代表图"></a><br><strong>新表现主义</strong><br><a href="style-packages/movements/neo-expressionism/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -569,6 +575,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/risograph-printing/README.md"><img src="style-packages/techniques/risograph-printing/gallery-16x9.jpg" width="230" alt="孔版印刷代表图"></a><br><strong>孔版印刷</strong><br><a href="style-packages/techniques/risograph-printing/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/photomontage/README.md"><img src="style-packages/techniques/photomontage/gallery-16x9.jpg" width="230" alt="拼贴蒙太奇代表图"></a><br><strong>拼贴蒙太奇</strong><br><a href="style-packages/techniques/photomontage/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/frottage/README.md"><img src="style-packages/techniques/frottage/gallery-16x9.jpg" width="230" alt="擦拓画法 representative image"></a><br><strong>擦拓画法</strong><br><a href="style-packages/techniques/frottage/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/lithography/README.md"><img src="style-packages/techniques/lithography/gallery-16x9.jpg" width="230" alt="石版画代表图"></a><br><strong>石版画</strong><br><a href="style-packages/techniques/lithography/README.md">打开 README</a></td>
 </tr>
 </table>
 

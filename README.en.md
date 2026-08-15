@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-266-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-271-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -178,6 +178,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/francis-bacon/README.en.md"><img src="style-packages/artists/francis-bacon/gallery-16x9.jpg" width="230" alt="Francis Bacon representative image"></a><br><strong>Francis Bacon</strong><br><a href="style-packages/artists/francis-bacon/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/kathe-kollwitz/README.en.md"><img src="style-packages/artists/kathe-kollwitz/gallery-16x9.jpg" width="230" alt="Käthe Kollwitz representative image"></a><br><strong>Käthe Kollwitz</strong><br><a href="style-packages/artists/kathe-kollwitz/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/gerhard-richter/README.en.md"><img src="style-packages/artists/gerhard-richter/gallery-16x9.jpg" width="230" alt="Gerhard Richter representative image"></a><br><strong>Gerhard Richter</strong><br><a href="style-packages/artists/gerhard-richter/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -267,6 +268,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/ernst-haas/README.en.md"><img src="style-packages/photographers/ernst-haas/gallery-16x9.jpg" width="230" alt="Ernst Haas representative image"></a><br><strong>Ernst Haas</strong><br><a href="style-packages/photographers/ernst-haas/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/josef-koudelka/README.en.md"><img src="style-packages/photographers/josef-koudelka/gallery-16x9.jpg" width="230" alt="Josef Koudelka representative image"></a><br><strong>Josef Koudelka</strong><br><a href="style-packages/photographers/josef-koudelka/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -296,6 +298,7 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.en.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="Yale School of Art representative image"></a><br><strong>Yale School of Art</strong><br><a href="style-packages/schools/yale-school-of-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/central-saint-martins/README.en.md"><img src="style-packages/schools/central-saint-martins/gallery-16x9.jpg" width="230" alt="Central Saint Martins representative image"></a><br><strong>Central Saint Martins</strong><br><a href="style-packages/schools/central-saint-martins/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -416,6 +419,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/orphism/README.en.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="230" alt="Orphism representative image"></a><br><strong>Orphism</strong><br><a href="style-packages/movements/orphism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/color-field-painting/README.en.md"><img src="style-packages/movements/color-field-painting/gallery-16x9.jpg" width="230" alt="Color Field Painting representative image"></a><br><strong>Color Field Painting</strong><br><a href="style-packages/movements/color-field-painting/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/rayonism/README.en.md"><img src="style-packages/movements/rayonism/gallery-16x9.jpg" width="230" alt="Rayonism representative image"></a><br><strong>Rayonism</strong><br><a href="style-packages/movements/rayonism/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-expressionism/README.en.md"><img src="style-packages/movements/neo-expressionism/gallery-16x9.jpg" width="230" alt="Neo-Expressionism representative image"></a><br><strong>Neo-Expressionism</strong><br><a href="style-packages/movements/neo-expressionism/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -569,6 +575,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/risograph-printing/README.en.md"><img src="style-packages/techniques/risograph-printing/gallery-16x9.jpg" width="230" alt="Risograph Printing representative image"></a><br><strong>Risograph Printing</strong><br><a href="style-packages/techniques/risograph-printing/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/photomontage/README.en.md"><img src="style-packages/techniques/photomontage/gallery-16x9.jpg" width="230" alt="Photomontage representative image"></a><br><strong>Photomontage</strong><br><a href="style-packages/techniques/photomontage/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/frottage/README.en.md"><img src="style-packages/techniques/frottage/gallery-16x9.jpg" width="230" alt="Frottage representative image"></a><br><strong>Frottage</strong><br><a href="style-packages/techniques/frottage/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/lithography/README.en.md"><img src="style-packages/techniques/lithography/gallery-16x9.jpg" width="230" alt="Lithography representative image"></a><br><strong>Lithography</strong><br><a href="style-packages/techniques/lithography/README.en.md">Open README</a></td>
 </tr>
 </table>
 
