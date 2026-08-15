@@ -31,7 +31,7 @@ Render the user's subject as an original photogravure-inspired image: continuous
 
 本包依据公开机构或官方页面提取可观察的视觉线索，仅保存来源链接，不复制原作图像、角色、关卡、标志或版式：
 
-- [Library of Congress: The Rotogravure Process](https://www.loc.gov/static/collections/world-war-i-rotogravures/articles-and-essays/the-rotogravure-process/)
+- [美国国会图书馆：凹版照相制版工艺](https://www.loc.gov/static/collections/world-war-i-rotogravures/articles-and-essays/the-rotogravure-process/)
 
 ## 文件
 
