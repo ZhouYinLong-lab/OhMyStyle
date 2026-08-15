@@ -1,0 +1,33 @@
+id: yayoi-kusama
+name: 草间弥生
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以重复、增殖、网状覆盖、软雕塑和镜面空间制造近乎无限的观看经验，并让单一视觉单位不断扩张。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '20世纪后半叶至今的日本前卫艺术'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

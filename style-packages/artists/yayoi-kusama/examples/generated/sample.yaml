@@ -1,0 +1,9 @@
+asset: sample.png
+status: representative_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: 普通椅子与楼梯转角
+generated_at: 2026-08-15
+review:
+  decision: accepted_as_representative
+  notes: 仅用于展示重复覆盖和网状空间连续性，不规定后续生成主体。

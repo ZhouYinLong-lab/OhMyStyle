@@ -1,0 +1,3 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+yayoi-kusama-primary-source,,Biography,Yayoi Kusama Official Site,,https://yayoi-kusama.jp/en/biography/,link_only,研究来源：艺术家官方网站；本包为独立视觉分析。,primary,仅保留链接，不打包外部作品。
+yayoi-kusama-secondary,,Yayoi Kusama,The Museum of Modern Art,,https://www.moma.org/artists/3315-yayoi-kusama,link_only,研究来源：MoMA 艺术家资料；本包不复制具体作品。,secondary,用于核对艺术家经历与媒介范围。

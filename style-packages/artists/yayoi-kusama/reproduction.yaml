@@ -1,0 +1,23 @@
+medium: repetitive painting, net drawing, and immersive spatial treatment
+materials:
+  support: matte wall, canvas, paper, or user-specified surface
+  tools:
+    - fine round brush
+    - stencil or repeated mark tool
+    - matte paint with limited glossy accents
+process:
+  - Establish the user's subject and spatial arrangement first.
+  - Select one repeated unit and define its scale, spacing, and color role.
+  - Extend the unit across surfaces and selected objects without erasing the subject.
+  - Add a net-like secondary layer to create continuity and depth.
+  - Restore the main recognition edges and remove accidental symbols or text.
+technical_direction:
+  contrast: medium to high, controlled by repeated marks rather than hard rim light
+  saturation: medium to high in selected mark colors; neutral base remains stable
+  perspective: preserve the user's perspective and scale cues
+  detail_density: high in the repetition field, lower in unrelated background detail
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

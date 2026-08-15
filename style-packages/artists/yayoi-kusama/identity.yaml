@@ -1,0 +1,20 @@
+canonical_name: 草间弥生
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 普通椅子与楼梯转角
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://yayoi-kusama.jp/en/biography/'
+
+notes:
+  - 关注重复单位、网状线条、覆盖性图案与空间无限感。
+  - 示例中的楼梯和椅子只用于检验视觉语言，不是默认主体。

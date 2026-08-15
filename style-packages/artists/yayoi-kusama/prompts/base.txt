@@ -1,0 +1,13 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls repetition, coverage, surface, palette, and spatial continuity only.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Preserve the user's subject, scale,
+and spatial logic. Choose one clear circular or net-like repeated unit, define its
+spacing and scale, then extend it across selected planes and surfaces so the subject
+and environment feel connected by repetition. Use controlled high-contrast colors,
+matte painted texture, and small hand-made variations. Keep one recognition anchor
+readable. Do not add objects, text, logos, named artworks, recognizable installations,
+or a copied composition. Use concrete visual instructions rather than the package name alone.

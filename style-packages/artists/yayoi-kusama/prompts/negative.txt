@@ -1,0 +1,4 @@
+fixed pumpkin, fixed flower, fixed portrait, mirror room, named installation, copied artwork,
+generic wallpaper, random decorative pattern, logo, readable text, watermark, signature,
+global blur, glossy CGI, extra objects, duplicate objects, unrequested character,
+unrequested location, narrative props

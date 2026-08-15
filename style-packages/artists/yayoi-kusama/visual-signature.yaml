@@ -1,0 +1,24 @@
+composition:
+  - 让重复单位跨越墙面、地面或物体，形成连续覆盖与尺度漂移。
+  - 保留一个可识别的主体锚点，同时让环境被同一视觉单位逐步占据。
+palette:
+  - 以黑、白和灰作高对比底层，使用受控的红、黄或紫作为重复单位的节奏变化。
+lighting:
+  quality: even gallery light
+  behavior:
+    - 光线均匀，避免戏剧轮廓光盖过表面重复结构。
+surface:
+  finish: matte painted surface with selective glossy accents
+  edges: crisp repeated marks with hand-applied variation
+texture:
+  density: high and cumulative
+  placement: across planes and selected objects, not as random noise
+invariants:
+  - 重复单位的尺度、间距和覆盖范围必须可感知。
+  - 图案改变表面与空间关系，但不替换用户指定主体。
+  - 保持轻微手工差异，避免生成器式完美复制。
+anti_signatures:
+  - generic polka-dot wallpaper
+  - random decorative pattern unrelated to the subject
+  - glossy CGI showroom
+  - copied installation or named artwork
