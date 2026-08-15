@@ -1,0 +1,9 @@
+asset: sample.png
+status: pending_human_review
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: anonymous translucent ink field with a paper-cut geometric form
+generated_at: 2026-08-15
+review:
+  decision: pending
+  notes: Pending curator review; representative image is an independent generated example.
