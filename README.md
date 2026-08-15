@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-291-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-307-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -80,6 +80,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 主画廊只展示独立风格包。所有卡片统一使用横版 16:9 代表图，点击图片或名称进入风格包 README。
 
 ### 艺术家
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/nicolas-de-stael/README.md"><img src="style-packages/artists/nicolas-de-stael/gallery-16x9.jpg" width="230" alt="尼古拉·德·斯塔埃尔代表图"></a><br><strong>尼古拉·德·斯塔埃尔</strong><br><a href="style-packages/artists/nicolas-de-stael/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/marc-chagall/README.md"><img src="style-packages/artists/marc-chagall/gallery-16x9.jpg" width="230" alt="马克·夏加尔代表图"></a><br><strong>马克·夏加尔</strong><br><a href="style-packages/artists/marc-chagall/README.md">打开 README</a></td></tr>
@@ -210,6 +214,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 ### 摄影师
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/miyako-ishiuchi/README.md"><img src="style-packages/photographers/miyako-ishiuchi/gallery-16x9.jpg" width="230" alt="石内都代表图"></a><br><strong>石内都</strong><br><a href="style-packages/photographers/miyako-ishiuchi/README.md">打开 README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/kikuji-kawada/README.md"><img src="style-packages/photographers/kikuji-kawada/gallery-16x9.jpg" width="230" alt="川田喜久治代表图"></a><br><strong>川田喜久治</strong><br><a href="style-packages/photographers/kikuji-kawada/README.md">打开 README</a></td></tr>
 </table>
 
@@ -325,6 +333,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 ### 设计学校
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/california-institute-of-the-arts/README.md"><img src="style-packages/schools/california-institute-of-the-arts/gallery-16x9.jpg" width="230" alt="加州艺术学院代表图"></a><br><strong>加州艺术学院</strong><br><a href="style-packages/schools/california-institute-of-the-arts/README.md">打开 README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-danish-academy/README.md"><img src="style-packages/schools/royal-danish-academy/gallery-16x9.jpg" width="230" alt="丹麦皇家艺术学院代表图"></a><br><strong>丹麦皇家艺术学院</strong><br><a href="style-packages/schools/royal-danish-academy/README.md">打开 README</a></td></tr>
 </table>
 
@@ -378,6 +390,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </table>
 
 ### 艺术流派与历史时期
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/lyrical-abstraction/README.md"><img src="style-packages/movements/lyrical-abstraction/gallery-16x9.jpg" width="230" alt="抒情抽象代表图"></a><br><strong>抒情抽象</strong><br><a href="style-packages/movements/lyrical-abstraction/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/situationist-international/README.md"><img src="style-packages/movements/situationist-international/gallery-16x9.jpg" width="230" alt="情境主义国际代表图"></a><br><strong>情境主义国际</strong><br><a href="style-packages/movements/situationist-international/README.md">打开 README</a></td></tr>
@@ -646,6 +662,10 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </table>
 
 ### 工艺与媒介
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/batik-wax-resist/README.md"><img src="style-packages/techniques/batik-wax-resist/gallery-16x9.jpg" width="230" alt="蜡染防染工艺代表图"></a><br><strong>蜡染防染工艺</strong><br><a href="style-packages/techniques/batik-wax-resist/README.md">打开 README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/suminagashi/README.md"><img src="style-packages/techniques/suminagashi/gallery-16x9.jpg" width="230" alt="墨流代表图"></a><br><strong>墨流</strong><br><a href="style-packages/techniques/suminagashi/README.md">打开 README</a></td></tr>

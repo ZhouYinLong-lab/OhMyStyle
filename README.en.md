@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-291-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-307-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -80,6 +80,10 @@ Two external creative projects are registered for compatibility: [Photo Abstract
 The main gallery lists independent style packages only. Every card uses a horizontal 16:9 representative image; click the image or name to open the package README.
 
 ### Artists
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/nicolas-de-stael/README.en.md"><img src="style-packages/artists/nicolas-de-stael/gallery-16x9.jpg" width="230" alt="Nicolas de Staël representative"></a><br><strong>Nicolas de Staël</strong><br><a href="style-packages/artists/nicolas-de-stael/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/marc-chagall/README.en.md"><img src="style-packages/artists/marc-chagall/gallery-16x9.jpg" width="230" alt="Marc Chagall representative image"></a><br><strong>Marc Chagall</strong><br><a href="style-packages/artists/marc-chagall/README.en.md">Open README</a></td></tr>
@@ -210,6 +214,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Photographers
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/miyako-ishiuchi/README.en.md"><img src="style-packages/photographers/miyako-ishiuchi/gallery-16x9.jpg" width="230" alt="Miyako Ishiuchi representative"></a><br><strong>Miyako Ishiuchi</strong><br><a href="style-packages/photographers/miyako-ishiuchi/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/kikuji-kawada/README.en.md"><img src="style-packages/photographers/kikuji-kawada/gallery-16x9.jpg" width="230" alt="Kikuji Kawada representative image"></a><br><strong>Kikuji Kawada</strong><br><a href="style-packages/photographers/kikuji-kawada/README.en.md">Open README</a></td></tr>
 </table>
 
@@ -325,6 +333,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Design schools
 
 <table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/california-institute-of-the-arts/README.en.md"><img src="style-packages/schools/california-institute-of-the-arts/gallery-16x9.jpg" width="230" alt="California Institute of the Arts representative"></a><br><strong>California Institute of the Arts</strong><br><a href="style-packages/schools/california-institute-of-the-arts/README.en.md">Open README</a></td></tr>
+</table>
+
+<table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-danish-academy/README.en.md"><img src="style-packages/schools/royal-danish-academy/gallery-16x9.jpg" width="230" alt="Royal Danish Academy representative image"></a><br><strong>Royal Danish Academy</strong><br><a href="style-packages/schools/royal-danish-academy/README.en.md">Open README</a></td></tr>
 </table>
 
@@ -378,6 +390,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Movements and periods
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/lyrical-abstraction/README.en.md"><img src="style-packages/movements/lyrical-abstraction/gallery-16x9.jpg" width="230" alt="Lyrical Abstraction representative"></a><br><strong>Lyrical Abstraction</strong><br><a href="style-packages/movements/lyrical-abstraction/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/situationist-international/README.en.md"><img src="style-packages/movements/situationist-international/gallery-16x9.jpg" width="230" alt="Situationist International representative image"></a><br><strong>Situationist International</strong><br><a href="style-packages/movements/situationist-international/README.en.md">Open README</a></td></tr>
@@ -646,6 +662,10 @@ The main gallery lists independent style packages only. Every card uses a horizo
 </table>
 
 ### Techniques and media
+
+<table>
+<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/batik-wax-resist/README.en.md"><img src="style-packages/techniques/batik-wax-resist/gallery-16x9.jpg" width="230" alt="Batik Wax-Resist Dyeing representative"></a><br><strong>Batik Wax-Resist Dyeing</strong><br><a href="style-packages/techniques/batik-wax-resist/README.en.md">Open README</a></td></tr>
+</table>
 
 <table>
 <tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/suminagashi/README.en.md"><img src="style-packages/techniques/suminagashi/gallery-16x9.jpg" width="230" alt="Suminagashi representative image"></a><br><strong>Suminagashi</strong><br><a href="style-packages/techniques/suminagashi/README.en.md">Open README</a></td></tr>
