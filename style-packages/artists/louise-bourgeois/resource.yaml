@@ -1,7 +1,7 @@
 schema_version: 1.0.0
 resource_id: louise-bourgeois
 resource_type: visual_style
-maturity: L3
+maturity: L2
 task_independent: true
 focus_dimensions:
   - medium
@@ -24,7 +24,7 @@ artifacts:
   rejected_examples: examples/rejected
 evidence:
   reference_backed: true
-  accepted_example: true
+  accepted_example: false
   rejected_examples_optional: true
 rights:
   reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.

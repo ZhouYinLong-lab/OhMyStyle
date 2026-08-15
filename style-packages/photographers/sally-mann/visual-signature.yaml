@@ -38,9 +38,7 @@ avoid:
   - glossy HDR sharpness and commercial retouching
   - generic melancholy color grading
 safety_note: Do not reproduce a specific reference work, recognizable person, logo, or branded layout.
-SUBJECT INDEPENDENCE CONTRACT:
-- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
-- This package controls visual treatment only: medium, composition, lighting,
-  palette, surface, texture, and edge behavior.
-- Do not add a recurring object, setting, character, landmark, or narrative
-  motif unless the user explicitly requests it.
+subject_independence_contract:
+  - The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+  - This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it.

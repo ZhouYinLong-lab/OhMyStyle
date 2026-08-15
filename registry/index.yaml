@@ -668,7 +668,7 @@ packages:
   kind: artist
   domain: hybrid
   package_path: style-packages/artists/louise-bourgeois
-  maturity: L3
+  maturity: L2
   focus_dimensions:
   - medium
   - composition
@@ -1790,7 +1790,7 @@ packages:
   kind: movement
   domain: hybrid
   package_path: style-packages/movements/aestheticism
-  maturity: L3
+  maturity: L2
   focus_dimensions:
   - medium
   - composition
@@ -3710,7 +3710,7 @@ packages:
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/sally-mann
-  maturity: L3
+  maturity: L2
   focus_dimensions:
   - camera
   - composition
@@ -4267,7 +4267,7 @@ packages:
   kind: school
   domain: design
   package_path: style-packages/schools/design-academy-eindhoven
-  maturity: L3
+  maturity: L2
   focus_dimensions:
   - medium
   - composition
@@ -4772,7 +4772,7 @@ packages:
   kind: technique
   domain: photography
   package_path: style-packages/techniques/platinum-palladium-printing
-  maturity: L3
+  maturity: L2
   focus_dimensions:
   - medium
   - process
