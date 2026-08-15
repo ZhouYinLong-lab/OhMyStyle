@@ -576,6 +576,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: jean-auguste-dominique-ingres
+  name: 让·奥古斯特·多米尼克·安格尔
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/jean-auguste-dominique-ingres
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: jean-michel-basquiat
   name: 让·米歇尔·巴斯奎特
   kind: artist
@@ -984,6 +1001,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: pierre-bonnard
+  name: 皮埃尔·博纳尔
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/pierre-bonnard
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: piet-mondrian
   name: 皮特·蒙德里安
   kind: artist
@@ -1673,6 +1707,23 @@ packages:
   - palette
   - texture
   - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: last-of-us-cinematic-survival
+  name: 美丽衰败生存游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/last-of-us-cinematic-survival
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
   reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
@@ -3274,6 +3325,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: romanesque-art
+  name: 罗马式艺术
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/romanesque-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: romanticism
   name: 浪漫主义
   kind: movement
@@ -3765,6 +3833,23 @@ packages:
   reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 1
+  benchmark: false
+- resource_id: elliott-erwitt
+  name: 埃利奥特·厄威特
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/elliott-erwitt
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
   benchmark: false
 - resource_id: emilie-hofferber
   name: 埃米莉·霍弗伯
@@ -5845,6 +5930,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: wet-plate-collodion
+  name: 湿版火棉胶摄影
+  kind: technique
+  domain: photography
+  package_path: style-packages/techniques/wet-plate-collodion
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: woodcut
   name: 木刻版画
   kind: technique
