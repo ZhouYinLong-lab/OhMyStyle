@@ -1,0 +1,20 @@
+composition:
+  - Use floating groupings and gently tilted spatial planes rather than a single stable horizon.
+  - Let figures, objects, and landscape fragments keep generous breathing room while forming a poetic visual rhythm.
+palette:
+  - Pair saturated jewel-like accents with dusty earth colors and quiet paper-like intervals.
+  - Keep color blocks emotionally expressive but avoid a uniform global filter.
+lighting:
+  quality: soft painted illumination
+  behavior:
+    - Use broad, low-direction light with selective luminous areas around important forms.
+surface:
+  finish: opaque painted surface with visible but controlled brush movement
+  edges: alternate between clear silhouettes and soft color-boundary transitions
+texture:
+  density: moderate
+  placement: concentrated in clothing, foliage, sky, and paper-like ground; keep open fields calm
+invariants:
+  - preserve floating spatial relationships and poetic scale shifts
+  - preserve expressive color blocks without forcing a particular object or story
+  - preserve handmade painted edges and selective detail
