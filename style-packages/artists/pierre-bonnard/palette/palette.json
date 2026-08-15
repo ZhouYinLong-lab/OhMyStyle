@@ -1,0 +1,21 @@
+{
+  "palette_id": "pierre-bonnard",
+  "roles": [
+    {
+      "name": "primary",
+      "hex": "#6E5A48",
+      "role": "主色与结构关系"
+    },
+    {
+      "name": "light",
+      "hex": "#D8C7A2",
+      "role": "受控高光"
+    },
+    {
+      "name": "accent",
+      "hex": "#6A7894",
+      "role": "局部色彩锚点"
+    }
+  ],
+  "usage": "Use these as relational color roles, not as a fixed subject palette."
+}

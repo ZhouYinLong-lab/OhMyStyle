@@ -1,0 +1,23 @@
+schema_version: 1.0.0
+composition:
+- 装饰性平面与轻微压缩的空间
+- 粉红、赭黄、暖绿和蓝紫的邻近色震动
+palette:
+- 粉红、赭黄、暖绿和蓝紫的邻近色震动
+- 光线像记忆一样在物体表面缓慢变化
+lighting:
+  quality: 光线像记忆一样在物体表面缓慢变化
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 可见但不僵硬的笔触与织物质感
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- decorative color planes
+- shifting intimate light
+- warm neighboring-color vibration
+- the requested subject stays unchanged

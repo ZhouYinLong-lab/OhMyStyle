@@ -1,0 +1,32 @@
+id: pierre-bonnard
+name: 皮埃尔·博纳尔
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 以亲密日常中的色彩震动、装饰性平面和不断变化的室内光线组织画面，让普通主体保留记忆般的温度。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: 绘画
+  historical_context: 十九世纪末至二十世纪法国纳比派与现代绘画
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

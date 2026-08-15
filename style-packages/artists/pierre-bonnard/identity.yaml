@@ -1,0 +1,13 @@
+canonical_name: 皮埃尔·博纳尔
+entity_type: artist
+domain: painting
+historical_context: 十九世纪末至二十世纪法国纳比派与现代绘画
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character or branded asset
+sources:
+- https://www.moma.org/artists/665-pierre-bonnard

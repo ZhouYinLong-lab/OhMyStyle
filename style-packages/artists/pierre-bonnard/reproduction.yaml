@@ -1,0 +1,18 @@
+medium: 十九世纪末至二十世纪法国纳比派与现代绘画 绘画
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+- 先确定大面积色块和画面节奏
+- 用邻近色建立空间而非依赖写实灰度
+- 让光线在墙面、物体和背景之间产生柔和偏移
+- 最后保留局部笔触与装饰性纹理
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+  game asset.
