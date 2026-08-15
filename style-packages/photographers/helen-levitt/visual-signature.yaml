@@ -1,0 +1,24 @@
+composition:
+  - '贴近视线的街道高度'
+  - '人物动作与墙面、地面形成偶然几何'
+  - '边缘人物和局部遮挡保留现场感'
+palette:
+  - '以清晰黑白阶调突出动作与空间'
+  - '彩色版本可保留少量旧胶片色，但不套统一复古滤镜'
+  - '明亮墙面和深色服装形成可读对照'
+lighting:
+  quality: 'available daylight with crisp but natural urban shadows'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 'fine-grain documentary film, direct detail, and restrained print contrast'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: 'medium street texture with readable pavement, walls, chalk, and clothing'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'camera remains close to ordinary life'
+  - 'gesture and spatial coincidence matter'
+  - 'the scene stays candid rather than staged'
+  - 'the requested subject remains open'

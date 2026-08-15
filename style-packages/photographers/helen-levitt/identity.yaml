@@ -1,0 +1,16 @@
+canonical_name: 海伦·莱维特
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.moma.org/artists/3520-helen-levitt'
+
+notes:
+  - '以贴近街面的观察、儿童与日常动作的偶然节奏、清晰黑白层次和克制的幽默感记录普通城市生活，不绑定特定街区或人物。'
+  - 代表图只用于展示视觉处理，不规定用户主题。

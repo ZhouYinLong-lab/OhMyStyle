@@ -1,0 +1,25 @@
+{
+  "name": "街头黑白与旧色",
+  "colors": [
+    {
+      "name": "煤黑",
+      "hex": "#202020",
+      "role": "figures and shadow"
+    },
+    {
+      "name": "粉墙白",
+      "hex": "#D9D3C6",
+      "role": "urban light"
+    },
+    {
+      "name": "旧红",
+      "hex": "#934F43",
+      "role": "optional small color accent"
+    },
+    {
+      "name": "灰蓝",
+      "hex": "#66727A",
+      "role": "cool street neutral"
+    }
+  ]
+}

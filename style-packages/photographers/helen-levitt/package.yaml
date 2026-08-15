@@ -1,0 +1,33 @@
+id: helen-levitt
+name: 海伦·莱维特
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以贴近街面的观察、儿童与日常动作的偶然节奏、清晰黑白层次和克制的幽默感记录普通城市生活，不绑定特定街区或人物。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: 摄影
+  historical_context: '二十世纪美国街头摄影'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
