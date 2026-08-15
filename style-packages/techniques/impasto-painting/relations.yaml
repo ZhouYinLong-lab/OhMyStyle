@@ -1,0 +1,30 @@
+family: tactile-paint-surface
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+- 真实可见的颜料厚度
+- 笔触方向与体积、光线绑定
+- 高光通过颜料堆叠而不是发光滤镜产生
+- 纹理密度随主体和构图变化
+avoid_overlap:
+- generic painterly filter
+- uniform canvas noise
+- automatic artist palette or subject
+profiles:
+  generic:
+    required:
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
+    - no fixed subject leaks into the output
+    reject_if:
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+    - preserve the user-supplied person or object without adding a recurring figure
+  still_life:
+    required:
+    - preserve the user-supplied objects and their count
+minimum_score: 7

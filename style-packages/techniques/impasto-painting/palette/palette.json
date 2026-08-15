@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "colors": [
+    {
+      "name": "色彩由相邻厚涂色块和混合痕迹建立",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "高光可用更厚的浅色颜料强调",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "整体色相服从用户需求，不自动变成特定艺术家配色",
+      "hex": null,
+      "role": "package palette"
+    }
+  ]
+}

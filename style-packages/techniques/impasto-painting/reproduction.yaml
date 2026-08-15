@@ -1,0 +1,17 @@
+medium: 绘画技法
+materials:
+  support: 油画或丙烯颜料、画布、底板与刷具或调色刀；不改变用户指定媒介
+process:
+- 先确定主体的体积和光源方向
+- 用厚薄不同的颜料建立主要色块
+- 让笔触方向回应曲面、边缘和光线
+- 检查纹理是否仍然服务于主体而非成为固定题材
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

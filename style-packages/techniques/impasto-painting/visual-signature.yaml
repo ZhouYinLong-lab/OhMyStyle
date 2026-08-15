@@ -1,0 +1,25 @@
+schema_version: 1.0.0
+composition:
+- 笔触方向跟随主体体积和光线走向
+- 厚薄变化形成局部节奏与视觉焦点
+- 形体仍然可辨，不让纹理吞没主体
+palette:
+- 色彩由相邻厚涂色块和混合痕迹建立
+- 高光可用更厚的浅色颜料强调
+- 整体色相服从用户需求，不自动变成特定艺术家配色
+lighting:
+  quality: 侧光掠过颜料脊线，产生真实微型阴影
+  behavior:
+  - 光线要能解释厚度，不使用发光特效
+surface:
+  finish: 颜料明显高出画面表面
+  edges: subject-dependent and medium-aware
+texture:
+  density: 中到高纹理密度，按形体局部布置
+  placement: 背景可减弱厚度，避免全画面同质化
+invariants:
+- 真实可见的颜料厚度
+- 笔触方向与体积、光线绑定
+- 高光通过颜料堆叠而不是发光滤镜产生
+- 纹理密度随主体和构图变化
+- the requested subject stays unchanged

@@ -1,0 +1,39 @@
+example_id: anonymous-demo
+subject: a plain clay vessel on an unspecified tabletop, original anonymous thick-painted study
+source_artwork_copied: false
+status: generated
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 用普通器物演示颜料厚度与光线关系；不默认生成风景、星空或特定艺术家构图
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: 需用用户主体进行测试；不得把代表图主体当作默认主体。
+  distinctive_signature:
+    score: null
+    notes: ''
+  visual_overlap:
+    score: null
+    notes: ''
+  cross_subject_stability:
+    score: null
+    notes: ''
+image_audit:
+  status: pending
+  notes: 代表图为原创匿名演示；提交后执行资源审计。
+signature:
+- 真实可见的颜料厚度
+- 笔触方向与体积、光线绑定
+- 高光通过颜料堆叠而不是发光滤镜产生
+- 纹理密度随主体和构图变化
+controls:
+- composition
+- palette
+- lighting
+- surface
+does_not_control:
+- subject identity
+- object count
+- location
+- story or narrative event
+- text, logo, or brand

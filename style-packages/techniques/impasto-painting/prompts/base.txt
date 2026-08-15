@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 真实可见的颜料厚度
+- 笔触方向与体积、光线绑定
+- 高光通过颜料堆叠而不是发光滤镜产生
+- 纹理密度随主体和构图变化
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先确定主体的体积和光源方向
+- 用厚薄不同的颜料建立主要色块
+- 让笔触方向回应曲面、边缘和光线
+- 检查纹理是否仍然服务于主体而非成为固定题材
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

@@ -1,0 +1,32 @@
+id: impasto-painting
+name: 厚涂绘画
+kind: technique
+domain: painting
+version: 0.1.0
+summary: 以明显堆叠的颜料厚度、可见笔触与调色刀痕塑造光线和表面，让画面纹理成为构图与体积的一部分。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: 绘画技法
+  historical_context: 西方油画传统中的表面塑造技法
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
