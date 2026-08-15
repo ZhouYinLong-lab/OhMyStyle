@@ -1,0 +1,33 @@
+id: aestheticism
+name: 唯美主义
+kind: movement
+domain: hybrid
+version: 0.1.0
+summary: >-
+  以艺术整体性、感官表面、装饰性统一和克制的不对称关系组织图像、物件与空间。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: hybrid
+  historical_context: '约1860—1900年的英国与欧美艺术设计语境；艺术为艺术而艺术'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,38 @@
+profiles:
+  generic:
+    required:
+      - subject and surrounding field form a coherent visual whole
+      - pattern, material, and silhouette remain separately legible
+      - color relationships are harmonized rather than filtered
+      - no copied reference composition or branded material
+    reject_if:
+      - only a beige-and-gold filter remains
+      - peacock, Japanese object, Victorian room, or floral wallpaper appears without request
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - subject identity remains primary over ornament
+  still_life:
+    required:
+      - material and pattern hierarchy remain clear
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: "Use unrelated subjects and check for fixed decorative motifs."
+  distinctive_signature:
+    score: null
+    notes: "Check integrated environment, controlled asymmetry, material specificity, and pattern scale."
+  visual_overlap:
+    score: null
+    notes: "Compare against art nouveau, luxury typography, and shabby-chic packages."
+  cross_subject_stability:
+    score: null
+    notes: "Do not mark complete without outputs for at least two different subjects."
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: "Generated evidence must be added by a contributor or user."

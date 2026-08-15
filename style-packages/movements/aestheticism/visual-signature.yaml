@@ -1,0 +1,46 @@
+composition:
+  - Treat subject, support, ornament, and surrounding space as one integrated visual environment.
+  - Use controlled asymmetry, clear framing, and a deliberate relation between flat pattern and depth.
+palette:
+  - Pair muted mineral or botanical tones with one rich accent; keep the whole system harmonized.
+lighting:
+  quality: soft, even, and sensuous
+  behavior:
+    - Reveal surface and color relationships without theatrical spotlighting.
+    - Let background and object share a designed tonal family while retaining depth.
+surface:
+  finish: refined, tactile, decorative, and materially specific
+  edges: elegant contours, selective pattern boundaries, no random ornament
+texture:
+  density: medium and rhythmically distributed
+  placement: textiles, ceramic, wood, metal, paper, or wall surface according to the supplied subject
+invariants:
+  - decorative decisions belong to a coherent whole
+  - pattern and object remain legible as separate layers
+  - pleasure comes from proportion, surface, and rhythm rather than fixed motifs
+medium: integrated painting, interior, furniture, textile, ceramic, and graphic sensibility
+materials:
+  support: user-specified material with visible craft evidence
+process:
+  - establish the supplied subject and its surrounding field
+  - choose a restrained palette with one accent
+  - coordinate silhouette, pattern scale, material gloss, and negative space
+  - add ornament only where it clarifies the visual whole
+  - finish by balancing the environment, not by applying a global vintage filter
+technical_direction:
+  contrast: low to medium, with selective edge definition
+  saturation: medium and harmonized
+  perspective: stable, with optional controlled flattening of depth
+  detail_density: medium-high but organized
+avoid:
+  - fixed peacocks, Japanese objects, Victorian rooms, or floral wallpaper
+  - random luxury decoration
+  - glossy generic fashion-advertising finish
+  - flat color filter without material and proportional reasoning
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.

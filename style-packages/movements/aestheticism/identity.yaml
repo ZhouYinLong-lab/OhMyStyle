@@ -1,0 +1,22 @@
+canonical_name: 唯美主义
+entity_type: movement
+domain: hybrid
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；装饰性室内、花卉和东方趣味只是历史语境，不是默认题材。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 一件普通器物的展示空间
+    - 未指定用途的建筑立面
+  exclusions:
+    - copied composition
+    - named artist or branded asset
+    - recurring peacock, Japanese object, Victorian room, or floral motif
+sources:
+  - 'https://www.vam.ac.uk/collections/aestheticism'
+  - 'https://www.metmuseum.org/exhibitions/listings/2016/aesthetic-movement'
+notes:
+  - 把图像、物件、材质和空间当作一个整体环境来设计，而不是只加一层装饰滤镜。
+  - 让感官愉悦来自比例、表面和节奏的协同，不依赖单一图案或固定物件。

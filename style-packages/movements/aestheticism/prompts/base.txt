@@ -1,0 +1,5 @@
+SUBJECT INDEPENDENCE: Generate the user-supplied {SUBJECT} in {LOCATION}; do not add a recurring object, room, pattern, landmark, or historical motif from the style package.
+
+Create a new image of {SUBJECT} in {LOCATION} as an integrated decorative environment. Coordinate the subject, surrounding field, silhouette, pattern scale, negative space, and material response so they feel designed together. Use a harmonized palette of muted mineral or botanical tones with one rich accent. Let soft, even light reveal tactile surfaces and keep object and pattern layers distinct.
+
+Use controlled asymmetry and optional flattening of depth, but retain a readable hierarchy. Ornament should appear only where it clarifies the supplied subject and its visual environment. Do not default to peacocks, Japanese objects, Victorian rooms, floral wallpaper, or any named artist’s composition. Produce a new scene without copied layout, text, logo, or signature.

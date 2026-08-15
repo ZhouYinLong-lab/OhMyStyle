@@ -1,0 +1,18 @@
+package_id: aestheticism
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://www.vam.ac.uk/collections/aestheticism'
+    title: 'Aestheticism'
+    authority: 'Victoria and Albert Museum'
+    supports: movement scope and collection context
+  - url: 'https://www.metmuseum.org/exhibitions/listings/2016/aesthetic-movement'
+    title: 'The Aesthetic Movement'
+    authority: 'The Metropolitan Museum of Art'
+    supports: cross-media design and integrated environment context
+
+attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.
