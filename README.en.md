@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-359-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-365-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -208,8 +208,12 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/jean-auguste-dominique-ingres/README.md"><img src="style-packages/artists/jean-auguste-dominique-ingres/gallery-16x9.jpg" width="230" alt="Jean-Auguste-Dominique Ingres representative image"></a><br><strong>Jean-Auguste-Dominique Ingres</strong><br><a href="style-packages/artists/jean-auguste-dominique-ingres/README.md">Open README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/artists/gustave-moreau/README.md"><img src="style-packages/artists/gustave-moreau/gallery-16x9.jpg" width="230" alt="Gustave Moreau representative image"></a><br><strong>Gustave Moreau</strong><br><a href="style-packages/artists/gustave-moreau/README.md">Open README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/artists/diego-rivera/README.md"><img src="style-packages/artists/diego-rivera/gallery-16x9.jpg" width="230" alt="Diego Rivera representative image"></a><br><strong>Diego Rivera</strong><br><a href="style-packages/artists/diego-rivera/README.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/gustave-moreau/README.md"><img src="style-packages/artists/gustave-moreau/gallery-16x9.jpg" width="230" alt="Gustave Moreau representative image"></a><br><strong>Gustave Moreau</strong><br><a href="style-packages/artists/gustave-moreau/README.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/diego-rivera/README.md"><img src="style-packages/artists/diego-rivera/gallery-16x9.jpg" width="230" alt="Diego Rivera representative image"></a><br><strong>Diego Rivera</strong><br><a href="style-packages/artists/diego-rivera/README.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/el-lissitzky/README.md"><img src="style-packages/artists/el-lissitzky/gallery-16x9.jpg" width="230" alt="El Lissitzky representative image"></a><br><strong>El Lissitzky</strong><br><a href="style-packages/artists/el-lissitzky/README.md">Open README</a></td>
+</tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/artists/utagawa-hiroshige/README.md"><img src="style-packages/artists/utagawa-hiroshige/gallery-16x9.jpg" width="230" alt="Utagawa Hiroshige representative image"></a><br><strong>Utagawa Hiroshige</strong><br><a href="style-packages/artists/utagawa-hiroshige/README.md">Open README</a></td>
 </tr>
 </table>
 
@@ -322,8 +326,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/weegee/README.en.md"><img src="style-packages/photographers/weegee/gallery-16x9.jpg" width="230" alt="Weegee representative image"></a><br><strong>Weegee</strong><br><a href="style-packages/photographers/weegee/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/photographers/elliott-erwitt/README.md"><img src="style-packages/photographers/elliott-erwitt/gallery-16x9.jpg" width="230" alt="Elliott Erwitt representative image"></a><br><strong>Elliott Erwitt</strong><br><a href="style-packages/photographers/elliott-erwitt/README.md">Open README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/photographers/bruce-davidson/README.md"><img src="style-packages/photographers/bruce-davidson/gallery-16x9.jpg" width="230" alt="Bruce Davidson representative image"></a><br><strong>Bruce Davidson</strong><br><a href="style-packages/photographers/bruce-davidson/README.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/elliott-erwitt/README.md"><img src="style-packages/photographers/elliott-erwitt/gallery-16x9.jpg" width="230" alt="Elliott Erwitt representative image"></a><br><strong>Elliott Erwitt</strong><br><a href="style-packages/photographers/elliott-erwitt/README.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/bruce-davidson/README.md"><img src="style-packages/photographers/bruce-davidson/gallery-16x9.jpg" width="230" alt="Bruce Davidson representative image"></a><br><strong>Bruce Davidson</strong><br><a href="style-packages/photographers/bruce-davidson/README.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/ruth-bernhard/README.md"><img src="style-packages/photographers/ruth-bernhard/gallery-16x9.jpg" width="230" alt="Ruth Bernhard representative image"></a><br><strong>Ruth Bernhard</strong><br><a href="style-packages/photographers/ruth-bernhard/README.md">Open README</a></td>
 </tr>
 </table>
 
@@ -515,7 +520,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/byzantine-art/README.en.md"><img src="style-packages/movements/byzantine-art/gallery-16x9.jpg" width="230" alt="Byzantine Art representative image"></a><br><strong>Byzantine Art</strong><br><a href="style-packages/movements/byzantine-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/movements/romanesque-art/README.md"><img src="style-packages/movements/romanesque-art/gallery-16x9.jpg" width="230" alt="Romanesque Art representative image"></a><br><strong>Romanesque Art</strong><br><a href="style-packages/movements/romanesque-art/README.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/movements/romanesque-art/README.md"><img src="style-packages/movements/romanesque-art/gallery-16x9.jpg" width="230" alt="Romanesque Art representative image"></a><br><strong>Romanesque Art</strong><br><a href="style-packages/movements/romanesque-art/README.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/movements/nihonga/README.md"><img src="style-packages/movements/nihonga/gallery-16x9.jpg" width="230" alt="Nihonga representative image"></a><br><strong>Nihonga</strong><br><a href="style-packages/movements/nihonga/README.md">Open README</a></td>
 </tr>
 </table>
 
@@ -648,7 +654,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/last-of-us-cinematic-survival/README.md"><img src="style-packages/game-art/last-of-us-cinematic-survival/gallery-16x9.jpg" width="230" alt="Beautiful Decay Survival Game Art representative image"></a><br><strong>Beautiful Decay Survival Game Art</strong><br><a href="style-packages/game-art/last-of-us-cinematic-survival/README.md">Open README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/game-art/inside-minimalist-silhouette/README.md"><img src="style-packages/game-art/inside-minimalist-silhouette/gallery-16x9.jpg" width="230" alt="Inside Minimalist Silhouette Game Art representative image"></a><br><strong>Inside Minimalist Silhouette Game Art</strong><br><a href="style-packages/game-art/inside-minimalist-silhouette/README.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/inside-minimalist-silhouette/README.md"><img src="style-packages/game-art/inside-minimalist-silhouette/gallery-16x9.jpg" width="230" alt="Inside Minimalist Silhouette Game Art representative image"></a><br><strong>Inside Minimalist Silhouette Game Art</strong><br><a href="style-packages/game-art/inside-minimalist-silhouette/README.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/braid-hand-painted-puzzle/README.md"><img src="style-packages/game-art/braid-hand-painted-puzzle/gallery-16x9.jpg" width="230" alt="Braid Hand-Painted Puzzle Game Art representative image"></a><br><strong>Braid Hand-Painted Puzzle Game Art</strong><br><a href="style-packages/game-art/braid-hand-painted-puzzle/README.md">Open README</a></td>
 </tr>
 </table>
 
@@ -716,7 +723,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/wet-plate-collodion/README.md"><img src="style-packages/techniques/wet-plate-collodion/gallery-16x9.jpg" width="230" alt="Wet-Plate Collodion Photography representative image"></a><br><strong>Wet-Plate Collodion Photography</strong><br><a href="style-packages/techniques/wet-plate-collodion/README.md">Open README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/techniques/stereoscopic-photography/README.md"><img src="style-packages/techniques/stereoscopic-photography/gallery-16x9.jpg" width="230" alt="Stereoscopic Photography representative image"></a><br><strong>Stereoscopic Photography</strong><br><a href="style-packages/techniques/stereoscopic-photography/README.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/techniques/stereoscopic-photography/README.md"><img src="style-packages/techniques/stereoscopic-photography/gallery-16x9.jpg" width="230" alt="Stereoscopic Photography representative image"></a><br><strong>Stereoscopic Photography</strong><br><a href="style-packages/techniques/stereoscopic-photography/README.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/techniques/impasto-painting/README.md"><img src="style-packages/techniques/impasto-painting/gallery-16x9.jpg" width="230" alt="Impasto Painting representative image"></a><br><strong>Impasto Painting</strong><br><a href="style-packages/techniques/impasto-painting/README.md">Open README</a></td>
 </tr>
 </table>
 

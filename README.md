@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-359-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-365-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -208,8 +208,12 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/jean-auguste-dominique-ingres/README.md"><img src="style-packages/artists/jean-auguste-dominique-ingres/gallery-16x9.jpg" width="230" alt="让·奥古斯特·多米尼克·安格尔代表图"></a><br><strong>让·奥古斯特·多米尼克·安格尔</strong><br><a href="style-packages/artists/jean-auguste-dominique-ingres/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/artists/gustave-moreau/README.md"><img src="style-packages/artists/gustave-moreau/gallery-16x9.jpg" width="230" alt="古斯塔夫·莫罗代表图"></a><br><strong>古斯塔夫·莫罗</strong><br><a href="style-packages/artists/gustave-moreau/README.md">打开 README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/artists/diego-rivera/README.md"><img src="style-packages/artists/diego-rivera/gallery-16x9.jpg" width="230" alt="迭戈·里维拉代表图"></a><br><strong>迭戈·里维拉</strong><br><a href="style-packages/artists/diego-rivera/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/gustave-moreau/README.md"><img src="style-packages/artists/gustave-moreau/gallery-16x9.jpg" width="230" alt="古斯塔夫·莫罗代表图"></a><br><strong>古斯塔夫·莫罗</strong><br><a href="style-packages/artists/gustave-moreau/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/diego-rivera/README.md"><img src="style-packages/artists/diego-rivera/gallery-16x9.jpg" width="230" alt="迭戈·里维拉代表图"></a><br><strong>迭戈·里维拉</strong><br><a href="style-packages/artists/diego-rivera/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/el-lissitzky/README.md"><img src="style-packages/artists/el-lissitzky/gallery-16x9.jpg" width="230" alt="埃尔·利西茨基代表图"></a><br><strong>埃尔·利西茨基</strong><br><a href="style-packages/artists/el-lissitzky/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/artists/utagawa-hiroshige/README.md"><img src="style-packages/artists/utagawa-hiroshige/gallery-16x9.jpg" width="230" alt="歌川广重代表图"></a><br><strong>歌川广重</strong><br><a href="style-packages/artists/utagawa-hiroshige/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -322,8 +326,9 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/weegee/README.md"><img src="style-packages/photographers/weegee/gallery-16x9.jpg" width="230" alt="维吉代表图"></a><br><strong>维吉</strong><br><a href="style-packages/photographers/weegee/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/photographers/elliott-erwitt/README.md"><img src="style-packages/photographers/elliott-erwitt/gallery-16x9.jpg" width="230" alt="埃利奥特·厄威特代表图"></a><br><strong>埃利奥特·厄威特</strong><br><a href="style-packages/photographers/elliott-erwitt/README.md">打开 README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/photographers/bruce-davidson/README.md"><img src="style-packages/photographers/bruce-davidson/gallery-16x9.jpg" width="230" alt="布鲁斯·戴维森代表图"></a><br><strong>布鲁斯·戴维森</strong><br><a href="style-packages/photographers/bruce-davidson/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/elliott-erwitt/README.md"><img src="style-packages/photographers/elliott-erwitt/gallery-16x9.jpg" width="230" alt="埃利奥特·厄威特代表图"></a><br><strong>埃利奥特·厄威特</strong><br><a href="style-packages/photographers/elliott-erwitt/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/bruce-davidson/README.md"><img src="style-packages/photographers/bruce-davidson/gallery-16x9.jpg" width="230" alt="布鲁斯·戴维森代表图"></a><br><strong>布鲁斯·戴维森</strong><br><a href="style-packages/photographers/bruce-davidson/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/ruth-bernhard/README.md"><img src="style-packages/photographers/ruth-bernhard/gallery-16x9.jpg" width="230" alt="露丝·伯恩哈德代表图"></a><br><strong>露丝·伯恩哈德</strong><br><a href="style-packages/photographers/ruth-bernhard/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -515,7 +520,8 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/byzantine-art/README.md"><img src="style-packages/movements/byzantine-art/gallery-16x9.jpg" width="230" alt="拜占庭艺术代表图"></a><br><strong>拜占庭艺术</strong><br><a href="style-packages/movements/byzantine-art/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/movements/romanesque-art/README.md"><img src="style-packages/movements/romanesque-art/gallery-16x9.jpg" width="230" alt="罗马式艺术代表图"></a><br><strong>罗马式艺术</strong><br><a href="style-packages/movements/romanesque-art/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/movements/romanesque-art/README.md"><img src="style-packages/movements/romanesque-art/gallery-16x9.jpg" width="230" alt="罗马式艺术代表图"></a><br><strong>罗马式艺术</strong><br><a href="style-packages/movements/romanesque-art/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/movements/nihonga/README.md"><img src="style-packages/movements/nihonga/gallery-16x9.jpg" width="230" alt="日本画代表图"></a><br><strong>日本画</strong><br><a href="style-packages/movements/nihonga/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -648,7 +654,8 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/last-of-us-cinematic-survival/README.md"><img src="style-packages/game-art/last-of-us-cinematic-survival/gallery-16x9.jpg" width="230" alt="美丽衰败生存游戏美术代表图"></a><br><strong>美丽衰败生存游戏美术</strong><br><a href="style-packages/game-art/last-of-us-cinematic-survival/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/game-art/inside-minimalist-silhouette/README.md"><img src="style-packages/game-art/inside-minimalist-silhouette/gallery-16x9.jpg" width="230" alt="内在世界极简剪影游戏美术代表图"></a><br><strong>内在世界极简剪影游戏美术</strong><br><a href="style-packages/game-art/inside-minimalist-silhouette/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/inside-minimalist-silhouette/README.md"><img src="style-packages/game-art/inside-minimalist-silhouette/gallery-16x9.jpg" width="230" alt="内在世界极简剪影游戏美术代表图"></a><br><strong>内在世界极简剪影游戏美术</strong><br><a href="style-packages/game-art/inside-minimalist-silhouette/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/game-art/braid-hand-painted-puzzle/README.md"><img src="style-packages/game-art/braid-hand-painted-puzzle/gallery-16x9.jpg" width="230" alt="手绘谜题游戏美术代表图"></a><br><strong>手绘谜题游戏美术</strong><br><a href="style-packages/game-art/braid-hand-painted-puzzle/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -716,7 +723,8 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/wet-plate-collodion/README.md"><img src="style-packages/techniques/wet-plate-collodion/gallery-16x9.jpg" width="230" alt="湿版火棉胶摄影代表图"></a><br><strong>湿版火棉胶摄影</strong><br><a href="style-packages/techniques/wet-plate-collodion/README.md">打开 README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/techniques/stereoscopic-photography/README.md"><img src="style-packages/techniques/stereoscopic-photography/gallery-16x9.jpg" width="230" alt="立体摄影代表图"></a><br><strong>立体摄影</strong><br><a href="style-packages/techniques/stereoscopic-photography/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/techniques/stereoscopic-photography/README.md"><img src="style-packages/techniques/stereoscopic-photography/gallery-16x9.jpg" width="230" alt="立体摄影代表图"></a><br><strong>立体摄影</strong><br><a href="style-packages/techniques/stereoscopic-photography/README.md">打开 README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/techniques/impasto-painting/README.md"><img src="style-packages/techniques/impasto-painting/gallery-16x9.jpg" width="230" alt="厚涂绘画代表图"></a><br><strong>厚涂绘画</strong><br><a href="style-packages/techniques/impasto-painting/README.md">打开 README</a></td>
 </tr>
 </table>
 
