@@ -340,6 +340,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: gerhard-richter
+  name: 格哈德·里希特
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/gerhard-richter
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: giorgio-de-chirico
   name: 乔治·德·基里科
   kind: artist
@@ -2362,6 +2379,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: neo-expressionism
+  name: 新表现主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/neo-expressionism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: neoclassicism
   name: 新古典主义
   kind: movement
@@ -3246,6 +3280,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: josef-koudelka
+  name: 约瑟夫·库德尔卡
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/josef-koudelka
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: julia-margaret-cameron
   name: 朱莉娅·玛格丽特·卡梅隆
   kind: photographer
@@ -3989,6 +4040,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: central-saint-martins
+  name: 中央圣马丁艺术与设计学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/central-saint-martins
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: cranbrook-academy
   name: 克兰布鲁克艺术学院
   kind: school
@@ -4380,6 +4448,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: lithography
+  name: 石版画
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/lithography
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 2
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: luxury-typography
   name: 奢华排版
   kind: technique
