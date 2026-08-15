@@ -1,0 +1,16 @@
+composition:
+  - clear anchor subject interrupted by a few offset, cropped, or mismatched fragments
+palette:
+  - colors come from selected materials; add one or two discordant accents, not a mandatory poster palette
+lighting:
+  quality: ordinary, direct, or deliberately inconsistent between material fragments
+  behavior:
+    - Use light and value to preserve the user's subject rather than add a fixed scene.
+surface:
+  finish: mixed paper, photographic, painted, printed, or found-material surfaces
+  edges: precise enough to preserve the requested subject
+texture:
+  density: variable and localized at joins, overlaps, and altered surfaces
+  placement: follow material and process; never become a uniform overlay
+invariants:
+  - user subject remains the anchor; material interruption is observable; no recurring prop or slogan

@@ -1,0 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.
+- Do not add recurring objects, settings, characters, landmarks, or narrative motifs unless explicitly requested.
+
+Create a new image of {SUBJECT} in {LOCATION}. Treat the requested subject as the anchor of an experimental assemblage. Combine a small number of ordinary materials, abrupt scale shifts, cut edges, photographic fragments, hand marks, or visibly mismatched surfaces. Keep the intervention deliberate rather than chaotic. Allow chance-like imbalance and deadpan humor, but preserve subject identity and avoid readable text. Do not copy a reference collage, artwork, logo, or branded image.
+Keep the user's subject and narrative independent from the package's visual identity.

@@ -1,0 +1,16 @@
+canonical_name: 新达达
+entity_type: movement
+domain: hybrid
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体和场景始终优先；本包不自动加入固定物件、地点或故事。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.moma.org/momaorg/shared/pdfs/docs/learn/2006_DadaSymp/HanneBergiusDADA.pdf'
+
+notes:
+  - 以现成物、拼贴、偶发动作与媒介混用打破艺术品和日常物之间的边界，保持反权威的实验感。
+  - 代表图只用于展示视觉处理，不规定用户主题。

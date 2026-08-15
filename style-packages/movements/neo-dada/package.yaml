@@ -1,0 +1,33 @@
+id: neo-dada
+name: 新达达
+kind: movement
+domain: hybrid
+version: 0.1.0
+summary: >-
+  以现成物、拼贴、偶发动作与媒介混用打破艺术品和日常物之间的边界，保持反权威的实验感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: hybrid
+  historical_context: '二十世纪五十至六十年代先锋艺术'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

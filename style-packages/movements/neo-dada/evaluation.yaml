@@ -1,0 +1,37 @@
+profiles:
+  generic:
+    required:
+      - package-specific visual signature is observable
+      - composition remains coherent for a new subject
+      - no copied reference composition or branded material
+    reject_if:
+      - style is represented only by a global color filter
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - requested subject remains readable
+      - style does not force a named subject or costume
+  still_life:
+    required:
+      - requested objects remain countable and materially distinguishable
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
+  distinctive_signature:
+    score: null
+    notes: Record which visual decisions remain observable after the subject changes.
+  visual_overlap:
+    score: null
+    notes: Compare with related packages without treating shared history as duplication.
+  cross_subject_stability:
+    score: null
+    notes: Do not mark complete without outputs for at least two different subjects.
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building
+  evidence: Generated representative is a demonstration, not a fixed subject requirement.
