@@ -1,0 +1,33 @@
+id: raghubir-singh
+name: 拉古比尔·辛格
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以饱和而自然的彩色街头观察组织多层空间，让人物、建筑、反光和日常色块共同形成复杂但清晰的画面节奏。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '20世纪后半叶彩色街头摄影与印度现代视觉文化'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

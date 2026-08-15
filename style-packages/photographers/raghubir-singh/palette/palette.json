@@ -1,0 +1,11 @@
+{
+  "name": "潮湿街景的自然饱和色",
+  "colors": [
+    {"name": "孔雀青", "hex": "#197C7E", "role": "cool architectural field"},
+    {"name": "姜黄", "hex": "#D28B22", "role": "warm human accent"},
+    {"name": "砖红", "hex": "#A84D3B", "role": "weathered surface"},
+    {"name": "叶绿", "hex": "#4F6E45", "role": "vegetation and reflected color"},
+    {"name": "湿灰", "hex": "#8A9290", "role": "pavement and overcast atmosphere"}
+  ],
+  "notes": "色彩要像在现场被发现，而不是由全局滤镜统一覆盖。"
+}

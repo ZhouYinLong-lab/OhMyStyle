@@ -1,0 +1,21 @@
+canonical_name: 拉古比尔·辛格
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects are authoritative; listed use cases are optional benchmark labels, not default scene requirements.
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 雨后普通街角
+    - 交通空间中的日常人物
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.metmuseum.org/art/collection/search/266561'
+
+notes:
+  - 关注自然饱和的彩色观察、前中后景叠层和日常空间里的色彩关系。
+  - 参考作品中的地域与人物只用于研究，不是生成时必须出现的内容。

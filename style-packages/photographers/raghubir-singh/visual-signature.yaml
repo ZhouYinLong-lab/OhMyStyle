@@ -1,0 +1,19 @@
+composition:
+  - 通过门框、车窗、墙体或反光面形成前景遮挡，让街景在多个距离层次中展开。
+  - 让人物、建筑和色块相互嵌套，但保留街头瞬间的偶然性。
+palette:
+  - 采用自然光下的高饱和互补色，让暖色衣物、冷色墙面和湿地反光彼此呼应。
+  - 饱和度来自真实表面与环境关系，不使用统一的旅游宣传滤镜。
+lighting:
+  quality: humid natural daylight or soft overcast light
+  behavior:
+    - 光线保持现场感，允许反光和阴影同时存在，不制造棚拍轮廓光。
+surface:
+  finish: chromogenic-print-like color with restrained grain
+  edges: clear in the decisive plane, softened by depth and moisture elsewhere
+texture:
+  density: layered and information-rich, never uniformly busy
+  placement: foreground frames, reflections, facades, fabric and pavement
+invariants:
+  - 多层空间、自然饱和色彩和偶然取景必须跨主体保留。
+  - 反射与遮挡应服务于空间深度，不得制造固定地标或叙事道具。
