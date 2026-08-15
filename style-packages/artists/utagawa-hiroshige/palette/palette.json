@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "colors": [
+    {
+      "name": "靛蓝、青绿、灰蓝、赭黄和少量朱红",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "大气远景降低对比度，近景保留清晰色面",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "颜色服务于季节、天气和空间层次",
+      "hex": null,
+      "role": "package palette"
+    }
+  ]
+}

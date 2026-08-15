@@ -1,0 +1,3 @@
+Do not add a fixed subject, landmark, named character, branded asset, readable text, logo, watermark, copied composition, or story event from the reference context.
+Keep the user-supplied subject, object count, location, action, and narrative unchanged.
+Do not turn the package into a global color filter, generic cinematic grading, or automatic subject generator.

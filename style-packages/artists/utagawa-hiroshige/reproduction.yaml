@@ -1,0 +1,17 @@
+medium: 木版画
+materials:
+  support: 纸面木版画、墨线与透明或半透明套色；不改变用户主体材质需求
+process:
+- 先确定远近层次与不对称裁切
+- 用简洁轮廓概括主体，不堆叠无关细节
+- 以天气和空气透视安排色阶
+- 最后加入有限的木版线条和套色触感
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

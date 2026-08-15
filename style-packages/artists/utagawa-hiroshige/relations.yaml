@@ -1,0 +1,30 @@
+family: japanese-landscape-print
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+- 裁切式不对称取景
+- 天气与空气透视作为主要空间信号
+- 靛蓝与灰蓝色层配合简洁木刻线
+- 主体保持开放，不自动加入名胜或人物故事
+avoid_overlap:
+- generic Japanese landscape wallpaper
+- copied Great Wave composition
+- fixed Mount Fuji or Edo landmark
+profiles:
+  generic:
+    required:
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
+    - no fixed subject leaks into the output
+    reject_if:
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+    - preserve the user-supplied person or object without adding a recurring figure
+  still_life:
+    required:
+    - preserve the user-supplied objects and their count
+minimum_score: 7

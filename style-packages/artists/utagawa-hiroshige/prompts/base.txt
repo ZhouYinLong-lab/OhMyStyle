@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 裁切式不对称取景
+- 天气与空气透视作为主要空间信号
+- 靛蓝与灰蓝色层配合简洁木刻线
+- 主体保持开放，不自动加入名胜或人物故事
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先确定远近层次与不对称裁切
+- 用简洁轮廓概括主体，不堆叠无关细节
+- 以天气和空气透视安排色阶
+- 最后加入有限的木版线条和套色触感
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

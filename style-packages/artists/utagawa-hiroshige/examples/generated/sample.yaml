@@ -1,0 +1,39 @@
+example_id: anonymous-demo
+subject: three unmarked stones on a shallow ledge under quiet rain, unspecified location, original anonymous woodblock-inspired scene
+source_artwork_copied: false
+status: generated
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 用普通石块演示裁切视角、雨天空气和层叠色面；不默认生成日本地名、名胜或固定风景
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: 需用用户主体进行测试；不得把代表图主体当作默认主体。
+  distinctive_signature:
+    score: null
+    notes: ''
+  visual_overlap:
+    score: null
+    notes: ''
+  cross_subject_stability:
+    score: null
+    notes: ''
+image_audit:
+  status: pending
+  notes: 代表图为原创匿名演示；提交后执行资源审计。
+signature:
+- 裁切式不对称取景
+- 天气与空气透视作为主要空间信号
+- 靛蓝与灰蓝色层配合简洁木刻线
+- 主体保持开放，不自动加入名胜或人物故事
+controls:
+- composition
+- palette
+- lighting
+- surface
+does_not_control:
+- subject identity
+- object count
+- location
+- story or narrative event
+- text, logo, or brand

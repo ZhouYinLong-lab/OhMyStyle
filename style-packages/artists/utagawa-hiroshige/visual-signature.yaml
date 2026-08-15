@@ -1,0 +1,25 @@
+schema_version: 1.0.0
+composition:
+- 不对称取景与前景遮挡制造空间入口
+- 远近层叠使用简练轮廓和大块留白
+- 边缘裁切让画面像连续景观中的一个瞬间
+palette:
+- 靛蓝、青绿、灰蓝、赭黄和少量朱红
+- 大气远景降低对比度，近景保留清晰色面
+- 颜色服务于季节、天气和空间层次
+lighting:
+  quality: 以阴晴、雾气、雨雪和时间感改变空气色
+  behavior:
+  - 光线柔和而有方向，不使用现代摄影棚高光
+surface:
+  finish: 纸面木版印刷的平整色层
+  edges: subject-dependent and medium-aware
+texture:
+  density: 细线与色面共同构成纹理
+  placement: 避免油画厚笔触和照片式皮肤细节
+invariants:
+- 裁切式不对称取景
+- 天气与空气透视作为主要空间信号
+- 靛蓝与灰蓝色层配合简洁木刻线
+- 主体保持开放，不自动加入名胜或人物故事
+- the requested subject stays unchanged

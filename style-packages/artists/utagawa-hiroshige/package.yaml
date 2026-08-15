@@ -1,0 +1,32 @@
+id: utagawa-hiroshige
+name: 歌川广重
+kind: artist
+domain: printmaking
+version: 0.1.0
+summary: 以远近层叠、季节气候、留白与裁切式视角组织木版画画面，强调空气、节奏和自然形体的简洁秩序。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: 木版画
+  historical_context: 江户时代日本浮世绘风景版画
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
