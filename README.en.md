@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-[![Style packages](https://img.shields.io/badge/style%20packages-332-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
+[![Style packages](https://img.shields.io/badge/style%20packages-342-6C63FF)](style-packages/) [![Inherited presets](https://img.shields.io/badge/inherited%20presets-110-5B8C5A)](styles/)
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
@@ -198,7 +198,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/albrecht-durer/README.en.md"><img src="style-packages/artists/albrecht-durer/gallery-16x9.jpg" width="230" alt="Albrecht Durer representative image"></a><br><strong>Albrecht Durer</strong><br><a href="style-packages/artists/albrecht-durer/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/artists/titian/README.en.md"><img src="style-packages/artists/titian/gallery-16x9.jpg" width="230" alt="Titian representative image"></a><br><strong>Titian</strong><br><a href="style-packages/artists/titian/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/artists/titian/README.en.md"><img src="style-packages/artists/titian/gallery-16x9.jpg" width="230" alt="Titian representative image"></a><br><strong>Titian</strong><br><a href="style-packages/artists/titian/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/artists/peter-paul-rubens/README.en.md"><img src="style-packages/artists/peter-paul-rubens/gallery-16x9.jpg" width="230" alt="Peter Paul Rubens representative image"></a><br><strong>Peter Paul Rubens</strong><br><a href="style-packages/artists/peter-paul-rubens/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -306,7 +307,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/erwin-blumenfeld/README.en.md"><img src="style-packages/photographers/erwin-blumenfeld/gallery-16x9.jpg" width="230" alt="Erwin Blumenfeld representative image"></a><br><strong>Erwin Blumenfeld</strong><br><a href="style-packages/photographers/erwin-blumenfeld/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/photographers/michael-kenna/README.en.md"><img src="style-packages/photographers/michael-kenna/gallery-16x9.jpg" width="230" alt="Michael Kenna representative image"></a><br><strong>Michael Kenna</strong><br><a href="style-packages/photographers/michael-kenna/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/photographers/michael-kenna/README.en.md"><img src="style-packages/photographers/michael-kenna/gallery-16x9.jpg" width="230" alt="Michael Kenna representative image"></a><br><strong>Michael Kenna</strong><br><a href="style-packages/photographers/michael-kenna/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/photographers/helen-levitt/README.en.md"><img src="style-packages/photographers/helen-levitt/gallery-16x9.jpg" width="230" alt="Helen Levitt representative image"></a><br><strong>Helen Levitt</strong><br><a href="style-packages/photographers/helen-levitt/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -492,7 +494,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-dada/README.en.md"><img src="style-packages/movements/neo-dada/gallery-16x9.jpg" width="230" alt="Neo-Dada representative image"></a><br><strong>Neo-Dada</strong><br><a href="style-packages/movements/neo-dada/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/movements/orientalism/README.en.md"><img src="style-packages/movements/orientalism/gallery-16x9.jpg" width="230" alt="Orientalism representative image"></a><br><strong>Orientalism</strong><br><a href="style-packages/movements/orientalism/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/movements/orientalism/README.en.md"><img src="style-packages/movements/orientalism/gallery-16x9.jpg" width="230" alt="Orientalism representative image"></a><br><strong>Orientalism</strong><br><a href="style-packages/movements/orientalism/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/movements/pictorialism/README.en.md"><img src="style-packages/movements/pictorialism/gallery-16x9.jpg" width="230" alt="Pictorialism representative image"></a><br><strong>Pictorialism</strong><br><a href="style-packages/movements/pictorialism/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -619,6 +622,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md"><img src="style-packages/game-art/gris-watercolor-game-art/gallery-16x9.jpg" width="230" alt="GRIS Watercolor Game Art representative image"></a><br><strong>GRIS Watercolor Game Art</strong><br><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/okami-sumi-e-game-art/README.en.md"><img src="style-packages/game-art/okami-sumi-e-game-art/gallery-16x9.jpg" width="230" alt="Ōkami Sumi-e Game Art representative image"></a><br><strong>Ōkami Sumi-e Game Art</strong><br><a href="style-packages/game-art/okami-sumi-e-game-art/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.en.md"><img src="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/gallery-16x9.jpg" width="230" alt="Shadow of the Colossus atmospheric 3D game art representative image"></a><br><strong>Shadow of the Colossus Atmospheric 3D Game Art</strong><br><a href="style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Techniques and media
@@ -680,7 +686,8 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/photogravure/README.en.md"><img src="style-packages/techniques/photogravure/gallery-16x9.jpg" width="230" alt="Photogravure representative image"></a><br><strong>Photogravure</strong><br><a href="style-packages/techniques/photogravure/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="100%" valign="top" align="center"><a href="style-packages/techniques/stained-glass/README.en.md"><img src="style-packages/techniques/stained-glass/gallery-16x9.jpg" width="230" alt="Stained Glass representative image"></a><br><strong>Stained Glass</strong><br><a href="style-packages/techniques/stained-glass/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/techniques/stained-glass/README.en.md"><img src="style-packages/techniques/stained-glass/gallery-16x9.jpg" width="230" alt="Stained Glass representative image"></a><br><strong>Stained Glass</strong><br><a href="style-packages/techniques/stained-glass/README.en.md">Open README</a></td>
+<td width="50%" valign="top" align="center"><a href="style-packages/techniques/gelatin-silver-print/README.en.md"><img src="style-packages/techniques/gelatin-silver-print/gallery-16x9.jpg" width="230" alt="Gelatin silver printing representative image"></a><br><strong>Gelatin Silver Printing</strong><br><a href="style-packages/techniques/gelatin-silver-print/README.en.md">Open README</a></td>
 </tr>
 </table>
 
