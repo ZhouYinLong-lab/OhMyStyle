@@ -9,10 +9,12 @@ profiles:
       - text, logo, watermark, or unintended signature is present
   portrait:
     required:
-      - TODO: add portrait-specific checks when relevant
+      - anatomy remains readable beneath controlled distortion
+      - dark contour and worked surface are observable
   still_life:
     required:
-      - TODO: add still-life-specific checks when relevant
+      - object structure survives expressive marks
+      - color blocks are tied to form rather than a global filter
 minimum_score: 7
 
 semantic_evaluation:
