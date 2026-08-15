@@ -1,0 +1,15 @@
+priority_order:
+  - user_subject
+  - user_composition
+  - style_signature
+  - material_and_light
+rules:
+  - 'Keep the user''s subject open while applying a hand-painted 2D environment language.'
+  - 'Use watercolor transparency, broad color fields, gentle edge variation, and a clear playable spatial read.'
+  - 'A character is optional and never mandatory.'
+
+subject_independence:
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - an empty footbridge crossing a pale valley, original anonymous game environment

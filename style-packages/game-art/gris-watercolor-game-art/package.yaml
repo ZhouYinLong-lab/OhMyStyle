@@ -1,0 +1,32 @@
+id: gris-watercolor-game-art
+name: 灰烬水彩游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: >-
+  以透明水彩层、渐变色域、柔和边缘和可读路径组织具有游戏空间感的画面，并在轻盈色彩中保持清楚的二维空间结构。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: game_art
+  medium: 2D watercolor game environment
+  historical_context: 独立叙事游戏的水彩环境美术
+  application: game_art
+  visual_axes:
+    - 'composition'
+    - 'palette'
+    - 'lighting'
+    - 'surface'
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

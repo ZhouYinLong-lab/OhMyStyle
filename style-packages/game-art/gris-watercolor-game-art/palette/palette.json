@@ -1,0 +1,25 @@
+{
+  "palette": [
+    {
+      "name": "mist blue",
+      "hex": "#B9D0D0"
+    },
+    {
+      "name": "dust rose",
+      "hex": "#B77B86"
+    },
+    {
+      "name": "ash violet",
+      "hex": "#6A667D"
+    },
+    {
+      "name": "warm sand",
+      "hex": "#D7B37D"
+    },
+    {
+      "name": "deep charcoal",
+      "hex": "#30323C"
+    }
+  ],
+  "usage": "palette is a visual tendency, not a mandatory subject or exact color lock"
+}

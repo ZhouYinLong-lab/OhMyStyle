@@ -1,0 +1,15 @@
+canonical_name: 灰烬水彩游戏美术
+entity_type: game_art
+domain: game_art
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；本包只改变视觉处理。
+  subjects: []
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://nomada.studio/studio/'
+notes:
+  - 以透明水彩层、渐变色域、柔和边缘和可读路径组织具有游戏空间感的画面。
+  - 代表图只用于展示视觉处理，不规定用户主题。
