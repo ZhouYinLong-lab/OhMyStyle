@@ -1,0 +1,17 @@
+medium: 绘画
+materials:
+  support: 纸、绢、木板、矿物颜料、蛤粉、天然色料与胶；具体支撑物以用户需求为准
+process:
+- 先安排留白、主体轮廓和色层顺序
+- 用细线与平涂建立形体
+- 叠加矿物色、白粉或透明层次
+- 保留自然材料的吸收感与适度不均匀
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

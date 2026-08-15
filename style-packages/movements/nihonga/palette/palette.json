@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "colors": [
+    {
+      "name": "矿物蓝、石绿、朱砂、赭石、白粉和少量金色",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "颜色清澈但不依赖高饱和滤镜",
+      "hex": null,
+      "role": "package palette"
+    },
+    {
+      "name": "透明或半透明层次保留纸绢底色",
+      "hex": null,
+      "role": "package palette"
+    }
+  ]
+}

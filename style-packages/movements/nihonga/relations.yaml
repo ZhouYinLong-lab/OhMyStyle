@@ -1,0 +1,30 @@
+family: japanese-material-painting
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+- 材料逻辑明确的纸绢吸收感
+- 矿物色层与大面积留白
+- 细线、平涂与自然观察共同工作
+- 金色和蛤粉只作为局部材料节点
+avoid_overlap:
+- generic watercolor wash
+- ukiyo-e woodblock linework
+- fixed bird-and-flower motif
+profiles:
+  generic:
+    required:
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
+    - no fixed subject leaks into the output
+    reject_if:
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+    - preserve the user-supplied person or object without adding a recurring figure
+  still_life:
+    required:
+    - preserve the user-supplied objects and their count
+minimum_score: 7

@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 材料逻辑明确的纸绢吸收感
+- 矿物色层与大面积留白
+- 细线、平涂与自然观察共同工作
+- 金色和蛤粉只作为局部材料节点
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先安排留白、主体轮廓和色层顺序
+- 用细线与平涂建立形体
+- 叠加矿物色、白粉或透明层次
+- 保留自然材料的吸收感与适度不均匀
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

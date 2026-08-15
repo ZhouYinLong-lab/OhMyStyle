@@ -1,0 +1,25 @@
+schema_version: 1.0.0
+composition:
+- 大面积留白与细部观察保持平衡
+- 自然形体被整理为平静、连续的层次
+- 画面节奏来自线、色层和空白之间的呼吸
+palette:
+- 矿物蓝、石绿、朱砂、赭石、白粉和少量金色
+- 颜色清澈但不依赖高饱和滤镜
+- 透明或半透明层次保留纸绢底色
+lighting:
+  quality: 光线均匀、含蓄，避免摄影式强烈明暗
+  behavior:
+  - 用色层和留白传达空间，而非投影堆叠
+surface:
+  finish: 纸、绢或木板的细腻吸收感
+  edges: subject-dependent and medium-aware
+texture:
+  density: 低到中等纹理，细节集中在自然形体
+  placement: 金属或蛤粉质感作为局部材料点缀
+invariants:
+- 材料逻辑明确的纸绢吸收感
+- 矿物色层与大面积留白
+- 细线、平涂与自然观察共同工作
+- 金色和蛤粉只作为局部材料节点
+- the requested subject stays unchanged
