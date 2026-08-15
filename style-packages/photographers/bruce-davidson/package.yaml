@@ -1,0 +1,32 @@
+id: bruce-davidson
+name: 布鲁斯·戴维森
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: 以长期观察、贴近主体的人文距离、深沉影调和系列化现场感记录普通生活中的尊严与张力。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: 摄影
+  historical_context: 二十世纪美国纪实与人文摄影
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

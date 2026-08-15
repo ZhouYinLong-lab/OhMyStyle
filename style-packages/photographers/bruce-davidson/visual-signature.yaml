@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+composition:
+- 贴近主体但不侵入的观察距离
+- 深沉黑白或低彩度影调
+palette:
+- 深沉黑白或低彩度影调
+- 系列化现场感和环境中的人物关系
+lighting:
+  quality: 系列化现场感和环境中的人物关系
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 普通生活里的尊严、疲惫和微妙张力
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- 贴近主体但不侵入的观察距离
+- 深沉黑白或低彩度影调
+- 系列化现场感和环境中的人物关系
+- 普通生活里的尊严、疲惫和微妙张力
+- the requested subject stays unchanged

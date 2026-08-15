@@ -1,0 +1,13 @@
+canonical_name: 布鲁斯·戴维森
+entity_type: photographer
+domain: photography
+historical_context: 二十世纪美国纪实与人文摄影
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character or branded asset
+sources:
+- https://pro.magnumphotos.com/C.aspx?ERID=24KL53ZTH6&VF=MAGO31_9_VForm&VP3=CMS3

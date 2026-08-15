@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 贴近主体但不侵入的观察距离
+- 深沉黑白或低彩度影调
+- 系列化现场感和环境中的人物关系
+- 普通生活里的尊严、疲惫和微妙张力
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先保留用户指定场景与人物关系
+- 用环境细节说明人物所处的社会空间
+- 保持深影和有限高光，不用商业化补光
+- 把瞬间当作长期观察的一帧，而非摆拍高潮
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

@@ -1,0 +1,18 @@
+medium: 二十世纪美国纪实与人文摄影 摄影
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+- 先保留用户指定场景与人物关系
+- 用环境细节说明人物所处的社会空间
+- 保持深影和有限高光，不用商业化补光
+- 把瞬间当作长期观察的一帧，而非摆拍高潮
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+  game asset.
