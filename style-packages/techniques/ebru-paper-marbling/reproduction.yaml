@@ -1,0 +1,18 @@
+medium: water-surface marbling and paper transfer
+materials:
+  support: absorbent paper, viscous water bath, floating pigment, comb, stylus, and optional metallic powder
+process:
+  - 先在黏稠液面上建立底色和大尺度漂浮色岛。
+  - 再用滴落、牵引、梳理或轻微吹动形成涡旋、波纹和细线。
+  - 最后将纸面平稳接触液面并转印，保留一次性边缘、吸收和套位变化。
+technical_direction:
+  contrast: medium with clear pigment boundaries
+  saturation: vivid but locally controlled
+  perspective: surface-oriented; no forced deep perspective
+  detail_density: medium_to_high in fluid boundaries and transfer marks
+avoid:
+  - generic gradient wallpaper
+  - mandatory flower, book page, calligraphy, or Ottoman ornament
+  - plastic 3D material, digital glitch, or perfectly repeated pattern
+  - copying a specific marbled sheet
+safety_note: Do not reproduce a specific reference sheet, logo, text, or branded layout.

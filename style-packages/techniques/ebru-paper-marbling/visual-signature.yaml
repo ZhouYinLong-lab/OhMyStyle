@@ -1,0 +1,21 @@
+composition:
+  - 让颜色像流体一样围绕主体或背景形成连续的云纹、涡旋、石纹和细长流线。
+  - 保留水面生成的偶然性，同时用边界、方向和留白控制画面不会变成无差别噪声。
+palette:
+  - 采用高色相分离的红、蓝、黄、绿、紫和乳白，颜色在相互推动时保持边界。
+  - 允许透明叠层与局部混色，但避免统一的渐变背景或塑料光泽。
+lighting:
+  quality: soft even light that reveals pigment thickness and paper absorption
+  behavior:
+    - 光线不制造强烈投影，重点放在颜料边缘、漂浮层和纸面吸收。
+    - 金属粉或高光只能少量出现，不能覆盖整个表面。
+surface:
+  finish: transferred pigment on absorbent paper with visible fluid edges
+  edges: organic flowing boundaries, combed lines, droplets, and occasional registration irregularity
+texture:
+  density: medium_to_high
+  placement: concentrated along swirls, comb marks, pigment islands, and paper fibers
+invariants:
+  - 流体生成的边界、层叠和转印痕迹在更换主体后仍可辨认。
+  - 不要求书籍、花朵、书法、土耳其图案或装帧页面。
+  - 偶然性由水面过程产生，不用数字噪声、故障或随机渐变替代。

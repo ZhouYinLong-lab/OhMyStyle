@@ -1,0 +1,35 @@
+profiles:
+  generic:
+    required:
+      - floating pigment, fluid boundaries, and paper transfer are observable
+      - user-supplied subject remains legible and independent
+      - no copied sheet or branded material
+    reject_if:
+      - output is only a smooth digital gradient or blur filter
+      - default book, flower, calligraphy, or ornamental page appears without request
+  portrait:
+    required:
+      - face and requested pose remain readable despite fluid surface treatment
+  still_life:
+    required:
+      - opaque subject and marbled surface remain visually distinguishable
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
+  distinctive_signature:
+    score: null
+    notes: Record floating pigment, combing, transfer, and paper absorption.
+  visual_overlap:
+    score: null
+    notes: Compare with suminagashi; verify the viscous-bath and transfer differences.
+  cross_subject_stability:
+    score: null
+    notes: Do not mark complete without outputs for at least two different subjects.
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building

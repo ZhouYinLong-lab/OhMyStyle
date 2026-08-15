@@ -1,0 +1,23 @@
+related_movements:
+  - techniques/suminagashi
+  - techniques/watercolor
+related_concepts:
+  - fluid dynamics
+  - decorated paper and book arts
+influences_to_review:
+  - Turkish ebru
+  - Persian abri
+not_equivalent_to:
+  - digital gradient mesh
+  - generic psychedelic swirl filter
+family: technique
+near_duplicates:
+  - techniques/suminagashi
+supersedes: []
+conflicts: []
+distinctives:
+  - viscous bath with floating pigment and deliberate combing
+  - one-time transfer to absorbent paper
+  - controlled chance at the boundary between process and pattern
+avoid_overlap:
+  - mandatory calligraphic page, flower, or bookbinding subject

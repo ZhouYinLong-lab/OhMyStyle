@@ -1,0 +1,16 @@
+canonical_name: 水面浮彩纸张纹样
+entity_type: technique
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点和叙事优先；本包只转译水面浮彩、流体牵引和纸张转印，不规定花朵、书页或某种传统纹样。
+  subjects: []
+  exclusions:
+    - copied marbled sheet
+    - fixed floral pattern
+sources:
+  - 'https://www.metmuseum.org/ja/perspectives/marbled-paper'
+  - 'https://www.britishmuseum.org/collection/object/W_1991-0620-0-3'
+notes:
+  - 研究颜料在黏稠液面上的漂浮、扩散、梳理与一次性转印。
+  - 传统名称和历史用途用于溯源，不把装帧、书法或花纹当成默认主体。

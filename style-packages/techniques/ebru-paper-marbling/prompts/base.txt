@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: floating pigment, fluid boundaries,
+  combed lines, transfer, paper absorption, palette, and surface texture.
+- Do not add a recurring book, flower, calligraphy, Turkish ornament, or page motif
+  unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION} using a water-surface marbling and
+paper-transfer visual language. Let vivid but separated pigments float, spread,
+drift, and form controlled swirls, combed lines, cloud shapes, and stone-like islands
+around the user-supplied subject. Preserve absorbent paper, fluid edges, slight
+registration variation, and one-time process irregularity. Keep the subject legible;
+do not replace it with a decorative sheet. Do not copy a reference sheet, logo, or
+text.
