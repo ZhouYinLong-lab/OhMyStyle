@@ -374,6 +374,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: giorgio-morandi
+  name: 乔治·莫兰迪
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/giorgio-morandi
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: grant-wood
   name: 格兰特·伍德
   kind: artist
@@ -3008,6 +3025,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: vienna-secession
+  name: 维也纳分离派
+  kind: movement
+  domain: design
+  package_path: style-packages/movements/vienna-secession
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: alec-soth
   name: 亚历克·索思
   kind: photographer
@@ -3387,6 +3421,23 @@ packages:
   kind: photographer
   domain: photography
   package_path: style-packages/photographers/irving-penn
+  maturity: L2
+  focus_dimensions:
+  - camera
+  - composition
+  - lighting
+  - palette
+  - surface
+  - subject_treatment
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: joel-meyerowitz
+  name: 乔尔·迈耶罗维茨
+  kind: photographer
+  domain: photography
+  package_path: style-packages/photographers/joel-meyerowitz
   maturity: L2
   focus_dimensions:
   - camera
@@ -4403,6 +4454,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: school-of-visual-arts
+  name: 视觉艺术学院
+  kind: school
+  domain: design
+  package_path: style-packages/schools/school-of-visual-arts
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: slade-school-of-fine-art
   name: 斯莱德美术学院
   kind: school
@@ -4505,6 +4573,22 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: collagraph-printmaking
+  name: 拼贴版画
+  kind: technique
+  domain: printmaking
+  package_path: style-packages/techniques/collagraph-printmaking
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - process
+  - lighting
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: conceptual-sketch
   name: 概念草图
   kind: technique
