@@ -1,0 +1,22 @@
+composition:
+  - '像被偶然截取的现代生活片段'
+  - '主体与背景之间保持清楚的平面关系'
+  - '避免过度解释空间，让视觉重心停留在形体和色面'
+palette:
+  - '黑、白、灰与一两个明确色块并置'
+  - '肤色和材料色保持直接，不做过度综合色'
+  - '暗部偏平而不全部压成黑色'
+lighting:
+  quality: '自然或室内光线直接落在形体上，明暗关系清楚但不过度塑造'
+  behavior:
+    - Keep the requested subject and location independent from the package.
+    - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: '可见而克制的笔触，边缘在清楚和松动之间变化'
+  edges: deliberate and subject-dependent, without a copied layout
+texture:
+  density: '局部保留画笔方向，大片色面保持干净，避免全画面厚重纹理'
+  placement: concentrated where the medium or material needs explanation
+invariants:
+  - 'the requested subject stays unchanged'
+  - 'the package signature remains visible after subject transfer'

@@ -1,0 +1,48 @@
+schema_version: 1.0.0
+resource_id: edouard-manet
+resource_type: visual_style
+maturity: L2
+task_independent: true
+focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+artifacts:
+  package: package.yaml
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+  prompt: prompts/base.txt
+  accepted_examples: examples/accepted
+  rejected_examples: examples/rejected
+evidence:
+  reference_backed: true
+  accepted_example: false
+  rejected_examples_optional: true
+rights:
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
+family: modern-flat-observation
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '像被偶然截取的现代生活片段'
+  - '主体与背景之间保持清楚的平面关系'
+  - '黑、白、灰与一两个明确色块并置'
+avoid_overlap:
+  - '固定加入巴黎、咖啡馆、礼帽或特定人物'
+  - '把风格误写成印象派碎笔触'
+example_id: anonymous-demo
+subject: 一只普通白色马克杯和一块折叠布放在现代桌面上
+source_artwork_copied: false
+status: reviewed
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 原创匿名静物演示，以直接色面、清楚轮廓和未过度抛光的笔触说明视觉签名。

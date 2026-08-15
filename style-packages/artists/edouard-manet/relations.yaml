@@ -1,0 +1,14 @@
+schema_version: 1.0.0
+family: modern-flat-observation
+near_duplicates: []
+same_family: []
+complements: []
+supersedes: []
+conflicts: []
+distinctives:
+  - '像被偶然截取的现代生活片段'
+  - '主体与背景之间保持清楚的平面关系'
+  - '黑、白、灰与一两个明确色块并置'
+avoid_overlap:
+  - '固定加入巴黎、咖啡馆、礼帽或特定人物'
+  - '把风格误写成印象派碎笔触'
