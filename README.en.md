@@ -82,233 +82,196 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Artists
 
 <table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/sonia-delaunay/README.en.md"><img src="style-packages/artists/sonia-delaunay/gallery-16x9.jpg" width="230" alt="Sonia Delaunay representative image"></a><br><strong>Sonia Delaunay</strong><br><a href="style-packages/artists/sonia-delaunay/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/nicolas-de-stael/README.en.md"><img src="style-packages/artists/nicolas-de-stael/gallery-16x9.jpg" width="230" alt="Nicolas de Staël representative"></a><br><strong>Nicolas de Staël</strong><br><a href="style-packages/artists/nicolas-de-stael/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/marc-chagall/README.en.md"><img src="style-packages/artists/marc-chagall/gallery-16x9.jpg" width="230" alt="Marc Chagall representative image"></a><br><strong>Marc Chagall</strong><br><a href="style-packages/artists/marc-chagall/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/kazimir-malevich/README.en.md"><img src="style-packages/artists/kazimir-malevich/gallery-16x9.jpg" width="230" alt="Kazimir Malevich representative image"></a><br><strong>Kazimir Malevich</strong><br><a href="style-packages/artists/kazimir-malevich/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-morandi/README.en.md"><img src="style-packages/artists/giorgio-morandi/gallery-16x9.jpg" width="230" alt="Giorgio Morandi representative image"></a><br><strong>Giorgio Morandi</strong><br><a href="style-packages/artists/giorgio-morandi/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/sonia-delaunay/README.en.md"><img src="style-packages/artists/sonia-delaunay/gallery-16x9.jpg" width="230" alt="Sonia Delaunay representative image"></a><br><strong>Sonia Delaunay</strong><br><a href="style-packages/artists/sonia-delaunay/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/nicolas-de-stael/README.en.md"><img src="style-packages/artists/nicolas-de-stael/gallery-16x9.jpg" width="230" alt="Nicolas de Staël representative"></a><br><strong>Nicolas de Staël</strong><br><a href="style-packages/artists/nicolas-de-stael/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/marc-chagall/README.en.md"><img src="style-packages/artists/marc-chagall/gallery-16x9.jpg" width="230" alt="Marc Chagall representative image"></a><br><strong>Marc Chagall</strong><br><a href="style-packages/artists/marc-chagall/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/kazimir-malevich/README.en.md"><img src="style-packages/artists/kazimir-malevich/gallery-16x9.jpg" width="230" alt="Kazimir Malevich representative image"></a><br><strong>Kazimir Malevich</strong><br><a href="style-packages/artists/kazimir-malevich/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-morandi/README.en.md"><img src="style-packages/artists/giorgio-morandi/gallery-16x9.jpg" width="230" alt="Giorgio Morandi representative image"></a><br><strong>Giorgio Morandi</strong><br><a href="style-packages/artists/giorgio-morandi/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/georges-seurat/README.en.md"><img src="style-packages/artists/georges-seurat/gallery-16x9.jpg" width="230" alt="Georges Seurat representative image"></a><br><strong>Georges Seurat</strong><br><a href="style-packages/artists/georges-seurat/README.en.md">Open README</a></td>
+</tr>
+<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/henri-matisse/README.en.md"><img src="style-packages/artists/henri-matisse/gallery-16x9.jpg" width="230" alt="Henri Matisse representative image"></a><br><strong>Henri Matisse</strong><br><a href="style-packages/artists/henri-matisse/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/rembrandt/README.en.md"><img src="style-packages/artists/rembrandt/gallery-16x9.jpg" width="230" alt="Rembrandt van Rijn representative image"></a><br><strong>Rembrandt van Rijn</strong><br><a href="style-packages/artists/rembrandt/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/paul-cezanne/README.en.md"><img src="style-packages/artists/paul-cezanne/gallery-16x9.jpg" width="230" alt="Paul Cézanne representative image"></a><br><strong>Paul Cézanne</strong><br><a href="style-packages/artists/paul-cezanne/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/paul-cezanne/README.en.md"><img src="style-packages/artists/paul-cezanne/gallery-16x9.jpg" width="230" alt="Paul Cézanne representative image"></a><br><strong>Paul Cézanne</strong><br><a href="style-packages/artists/paul-cezanne/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/paul-gauguin/README.en.md"><img src="style-packages/artists/paul-gauguin/gallery-16x9.jpg" width="230" alt="Paul Gauguin representative image"></a><br><strong>Paul Gauguin</strong><br><a href="style-packages/artists/paul-gauguin/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/claude-monet/README.en.md"><img src="style-packages/artists/claude-monet/gallery-16x9.jpg" width="230" alt="Claude Monet representative image"></a><br><strong>Claude Monet</strong><br><a href="style-packages/artists/claude-monet/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/caravaggio/README.en.md"><img src="style-packages/artists/caravaggio/gallery-16x9.jpg" width="230" alt="Caravaggio representative image"></a><br><strong>Caravaggio</strong><br><a href="style-packages/artists/caravaggio/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/caravaggio/README.en.md"><img src="style-packages/artists/caravaggio/gallery-16x9.jpg" width="230" alt="Caravaggio representative image"></a><br><strong>Caravaggio</strong><br><a href="style-packages/artists/caravaggio/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/gustave-courbet/README.en.md"><img src="style-packages/artists/gustave-courbet/gallery-16x9.jpg" width="230" alt="Gustave Courbet representative image"></a><br><strong>Gustave Courbet</strong><br><a href="style-packages/artists/gustave-courbet/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/el-greco/README.en.md"><img src="style-packages/artists/el-greco/gallery-16x9.jpg" width="230" alt="El Greco representative image"></a><br><strong>El Greco</strong><br><a href="style-packages/artists/el-greco/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/edgar-degas/README.en.md"><img src="style-packages/artists/edgar-degas/gallery-16x9.jpg" width="230" alt="Edgar Degas representative image"></a><br><strong>Edgar Degas</strong><br><a href="style-packages/artists/edgar-degas/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/edgar-degas/README.en.md"><img src="style-packages/artists/edgar-degas/gallery-16x9.jpg" width="230" alt="Edgar Degas representative image"></a><br><strong>Edgar Degas</strong><br><a href="style-packages/artists/edgar-degas/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/anna-ancher/README.en.md"><img src="style-packages/artists/anna-ancher/gallery-16x9.jpg" width="230" alt="Anna Ancher representative image"></a><br><strong>Anna Ancher</strong><br><a href="style-packages/artists/anna-ancher/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/pablo-picasso/README.en.md"><img src="style-packages/artists/pablo-picasso/gallery-16x9.jpg" width="230" alt="Pablo Picasso representative image"></a><br><strong>Pablo Picasso</strong><br><a href="style-packages/artists/pablo-picasso/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/francisco-goya/README.en.md"><img src="style-packages/artists/francisco-goya/gallery-16x9.jpg" width="230" alt="Francisco Goya representative image"></a><br><strong>Francisco Goya</strong><br><a href="style-packages/artists/francisco-goya/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/francisco-goya/README.en.md"><img src="style-packages/artists/francisco-goya/gallery-16x9.jpg" width="230" alt="Francisco Goya representative image"></a><br><strong>Francisco Goya</strong><br><a href="style-packages/artists/francisco-goya/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/raphael-sanzio/README.en.md"><img src="style-packages/artists/raphael-sanzio/gallery-16x9.jpg" width="230" alt="Raphael representative image"></a><br><strong>Raphael</strong><br><a href="style-packages/artists/raphael-sanzio/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/vincent-van-gogh/README.en.md"><img src="style-packages/artists/vincent-van-gogh/gallery-16x9.jpg" width="230" alt="Vincent van Gogh representative image"></a><br><strong>Vincent van Gogh</strong><br><a href="style-packages/artists/vincent-van-gogh/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/grant-wood/README.en.md"><img src="style-packages/artists/grant-wood/gallery-16x9.jpg" width="230" alt="Grant Wood representative image"></a><br><strong>Grant Wood</strong><br><a href="style-packages/artists/grant-wood/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/grant-wood/README.en.md"><img src="style-packages/artists/grant-wood/gallery-16x9.jpg" width="230" alt="Grant Wood representative image"></a><br><strong>Grant Wood</strong><br><a href="style-packages/artists/grant-wood/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/eugene-delacroix/README.en.md"><img src="style-packages/artists/eugene-delacroix/gallery-16x9.jpg" width="230" alt="Eugène Delacroix representative image"></a><br><strong>Eugène Delacroix</strong><br><a href="style-packages/artists/eugene-delacroix/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/edvard-munch/README.en.md"><img src="style-packages/artists/edvard-munch/gallery-16x9.jpg" width="230" alt="Edvard Munch representative image"></a><br><strong>Edvard Munch</strong><br><a href="style-packages/artists/edvard-munch/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/wassily-kandinsky/README.en.md"><img src="style-packages/artists/wassily-kandinsky/gallery-16x9.jpg" width="230" alt="Wassily Kandinsky representative image"></a><br><strong>Wassily Kandinsky</strong><br><a href="style-packages/artists/wassily-kandinsky/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/wassily-kandinsky/README.en.md"><img src="style-packages/artists/wassily-kandinsky/gallery-16x9.jpg" width="230" alt="Wassily Kandinsky representative image"></a><br><strong>Wassily Kandinsky</strong><br><a href="style-packages/artists/wassily-kandinsky/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/pierre-auguste-renoir/README.en.md"><img src="style-packages/artists/pierre-auguste-renoir/gallery-16x9.jpg" width="230" alt="Pierre-Auguste Renoir representative image"></a><br><strong>Pierre-Auguste Renoir</strong><br><a href="style-packages/artists/pierre-auguste-renoir/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/michelangelo-buonarroti/README.en.md"><img src="style-packages/artists/michelangelo-buonarroti/gallery-16x9.jpg" width="230" alt="Michelangelo Buonarroti representative image"></a><br><strong>Michelangelo Buonarroti</strong><br><a href="style-packages/artists/michelangelo-buonarroti/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/jmw-turner/README.en.md"><img src="style-packages/artists/jmw-turner/gallery-16x9.jpg" width="230" alt="J. M. W. Turner representative image"></a><br><strong>J. M. W. Turner</strong><br><a href="style-packages/artists/jmw-turner/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/jmw-turner/README.en.md"><img src="style-packages/artists/jmw-turner/gallery-16x9.jpg" width="230" alt="J. M. W. Turner representative image"></a><br><strong>J. M. W. Turner</strong><br><a href="style-packages/artists/jmw-turner/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/johannes-vermeer/README.en.md"><img src="style-packages/artists/johannes-vermeer/gallery-16x9.jpg" width="230" alt="Johannes Vermeer representative image"></a><br><strong>Johannes Vermeer</strong><br><a href="style-packages/artists/johannes-vermeer/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/pieter-bruegel-the-elder/README.en.md"><img src="style-packages/artists/pieter-bruegel-the-elder/gallery-16x9.jpg" width="230" alt="Pieter Bruegel the Elder representative image"></a><br><strong>Pieter Bruegel the Elder</strong><br><a href="style-packages/artists/pieter-bruegel-the-elder/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/joan-miro/README.en.md"><img src="style-packages/artists/joan-miro/gallery-16x9.jpg" width="230" alt="Joan Miró representative image"></a><br><strong>Joan Miró</strong><br><a href="style-packages/artists/joan-miro/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/joan-miro/README.en.md"><img src="style-packages/artists/joan-miro/gallery-16x9.jpg" width="230" alt="Joan Miró representative image"></a><br><strong>Joan Miró</strong><br><a href="style-packages/artists/joan-miro/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/leonardo-da-vinci/README.en.md"><img src="style-packages/artists/leonardo-da-vinci/gallery-16x9.jpg" width="230" alt="Leonardo da Vinci representative image"></a><br><strong>Leonardo da Vinci</strong><br><a href="style-packages/artists/leonardo-da-vinci/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/diego-velazquez/README.en.md"><img src="style-packages/artists/diego-velazquez/gallery-16x9.jpg" width="230" alt="Diego Velázquez representative image"></a><br><strong>Diego Velázquez</strong><br><a href="style-packages/artists/diego-velazquez/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/hilma-af-klint/README.en.md"><img src="style-packages/artists/hilma-af-klint/gallery-16x9.jpg" width="230" alt="Hilma af Klint representative image"></a><br><strong>Hilma af Klint</strong><br><a href="style-packages/artists/hilma-af-klint/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/hilma-af-klint/README.en.md"><img src="style-packages/artists/hilma-af-klint/gallery-16x9.jpg" width="230" alt="Hilma af Klint representative image"></a><br><strong>Hilma af Klint</strong><br><a href="style-packages/artists/hilma-af-klint/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/leonora-carrington/README.en.md"><img src="style-packages/artists/leonora-carrington/gallery-16x9.jpg" width="230" alt="Leonora Carrington representative image"></a><br><strong>Leonora Carrington</strong><br><a href="style-packages/artists/leonora-carrington/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/tamara-de-lempicka/README.en.md"><img src="style-packages/artists/tamara-de-lempicka/gallery-16x9.jpg" width="230" alt="Tamara de Lempicka representative image"></a><br><strong>Tamara de Lempicka</strong><br><a href="style-packages/artists/tamara-de-lempicka/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-de-chirico/README.en.md"><img src="style-packages/artists/giorgio-de-chirico/gallery-16x9.jpg" width="230" alt="Giorgio de Chirico representative image"></a><br><strong>Giorgio de Chirico</strong><br><a href="style-packages/artists/giorgio-de-chirico/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/giorgio-de-chirico/README.en.md"><img src="style-packages/artists/giorgio-de-chirico/gallery-16x9.jpg" width="230" alt="Giorgio de Chirico representative image"></a><br><strong>Giorgio de Chirico</strong><br><a href="style-packages/artists/giorgio-de-chirico/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/agnes-martin/README.en.md"><img src="style-packages/artists/agnes-martin/gallery-16x9.jpg" width="230" alt="Agnes Martin representative image"></a><br><strong>Agnes Martin</strong><br><a href="style-packages/artists/agnes-martin/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/edward-hopper/README.en.md"><img src="style-packages/artists/edward-hopper/gallery-16x9.jpg" width="230" alt="Edward Hopper representative image"></a><br><strong>Edward Hopper</strong><br><a href="style-packages/artists/edward-hopper/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/ivan-aivazovsky/README.en.md"><img src="style-packages/artists/ivan-aivazovsky/gallery-16x9.jpg" width="230" alt="Ivan Aivazovsky representative image"></a><br><strong>Ivan Aivazovsky</strong><br><a href="style-packages/artists/ivan-aivazovsky/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/ivan-aivazovsky/README.en.md"><img src="style-packages/artists/ivan-aivazovsky/gallery-16x9.jpg" width="230" alt="Ivan Aivazovsky representative image"></a><br><strong>Ivan Aivazovsky</strong><br><a href="style-packages/artists/ivan-aivazovsky/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/sandro-botticelli/README.en.md"><img src="style-packages/artists/sandro-botticelli/gallery-16x9.jpg" width="230" alt="Sandro Botticelli representative image"></a><br><strong>Sandro Botticelli</strong><br><a href="style-packages/artists/sandro-botticelli/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/jan-van-eyck/README.en.md"><img src="style-packages/artists/jan-van-eyck/gallery-16x9.jpg" width="230" alt="Jan van Eyck representative image"></a><br><strong>Jan van Eyck</strong><br><a href="style-packages/artists/jan-van-eyck/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/artemisia-gentileschi/README.en.md"><img src="style-packages/artists/artemisia-gentileschi/gallery-16x9.jpg" width="230" alt="Artemisia Gentileschi representative image"></a><br><strong>Artemisia Gentileschi</strong><br><a href="style-packages/artists/artemisia-gentileschi/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/artemisia-gentileschi/README.en.md"><img src="style-packages/artists/artemisia-gentileschi/gallery-16x9.jpg" width="230" alt="Artemisia Gentileschi representative image"></a><br><strong>Artemisia Gentileschi</strong><br><a href="style-packages/artists/artemisia-gentileschi/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/francisco-de-zurbaran/README.en.md"><img src="style-packages/artists/francisco-de-zurbaran/gallery-16x9.jpg" width="230" alt="Francisco de Zurbarán representative image"></a><br><strong>Francisco de Zurbarán</strong><br><a href="style-packages/artists/francisco-de-zurbaran/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/mary-cassatt/README.en.md"><img src="style-packages/artists/mary-cassatt/gallery-16x9.jpg" width="230" alt="Mary Cassatt representative image"></a><br><strong>Mary Cassatt</strong><br><a href="style-packages/artists/mary-cassatt/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/gustav-klimt/README.en.md"><img src="style-packages/artists/gustav-klimt/gallery-16x9.jpg" width="230" alt="Gustav Klimt representative image"></a><br><strong>Gustav Klimt</strong><br><a href="style-packages/artists/gustav-klimt/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/gustav-klimt/README.en.md"><img src="style-packages/artists/gustav-klimt/gallery-16x9.jpg" width="230" alt="Gustav Klimt representative image"></a><br><strong>Gustav Klimt</strong><br><a href="style-packages/artists/gustav-klimt/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/egon-schiele/README.en.md"><img src="style-packages/artists/egon-schiele/gallery-16x9.jpg" width="230" alt="Egon Schiele representative image"></a><br><strong>Egon Schiele</strong><br><a href="style-packages/artists/egon-schiele/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/georgia-okeeffe/README.en.md"><img src="style-packages/artists/georgia-okeeffe/gallery-16x9.jpg" width="230" alt="Georgia O'Keeffe representative image"></a><br><strong>Georgia O'Keeffe</strong><br><a href="style-packages/artists/georgia-okeeffe/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/norman-rockwell/README.en.md"><img src="style-packages/artists/norman-rockwell/gallery-16x9.jpg" width="230" alt="Norman Rockwell representative image"></a><br><strong>Norman Rockwell</strong><br><a href="style-packages/artists/norman-rockwell/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/norman-rockwell/README.en.md"><img src="style-packages/artists/norman-rockwell/gallery-16x9.jpg" width="230" alt="Norman Rockwell representative image"></a><br><strong>Norman Rockwell</strong><br><a href="style-packages/artists/norman-rockwell/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/romare-bearden/README.en.md"><img src="style-packages/artists/romare-bearden/gallery-16x9.jpg" width="230" alt="Romare Bearden representative image"></a><br><strong>Romare Bearden</strong><br><a href="style-packages/artists/romare-bearden/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/katsushika-hokusai/README.en.md"><img src="style-packages/artists/katsushika-hokusai/gallery-16x9.jpg" width="230" alt="Katsushika Hokusai representative image"></a><br><strong>Katsushika Hokusai</strong><br><a href="style-packages/artists/katsushika-hokusai/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/alphonse-mucha/README.en.md"><img src="style-packages/artists/alphonse-mucha/gallery-16x9.jpg" width="230" alt="Alphonse Mucha representative image"></a><br><strong>Alphonse Mucha</strong><br><a href="style-packages/artists/alphonse-mucha/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/alphonse-mucha/README.en.md"><img src="style-packages/artists/alphonse-mucha/gallery-16x9.jpg" width="230" alt="Alphonse Mucha representative image"></a><br><strong>Alphonse Mucha</strong><br><a href="style-packages/artists/alphonse-mucha/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/mc-escher/README.en.md"><img src="style-packages/artists/mc-escher/gallery-16x9.jpg" width="230" alt="M. C. Escher representative image"></a><br><strong>M. C. Escher</strong><br><a href="style-packages/artists/mc-escher/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/paul-klee/README.en.md"><img src="style-packages/artists/paul-klee/gallery-16x9.jpg" width="230" alt="Paul Klee representative image"></a><br><strong>Paul Klee</strong><br><a href="style-packages/artists/paul-klee/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/jean-michel-basquiat/README.en.md"><img src="style-packages/artists/jean-michel-basquiat/gallery-16x9.jpg" width="230" alt="Jean-Michel Basquiat representative image"></a><br><strong>Jean-Michel Basquiat</strong><br><a href="style-packages/artists/jean-michel-basquiat/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/jean-michel-basquiat/README.en.md"><img src="style-packages/artists/jean-michel-basquiat/gallery-16x9.jpg" width="230" alt="Jean-Michel Basquiat representative image"></a><br><strong>Jean-Michel Basquiat</strong><br><a href="style-packages/artists/jean-michel-basquiat/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/bridget-riley/README.en.md"><img src="style-packages/artists/bridget-riley/gallery-16x9.jpg" width="230" alt="Bridget Riley representative image"></a><br><strong>Bridget Riley</strong><br><a href="style-packages/artists/bridget-riley/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/frida-kahlo/README.en.md"><img src="style-packages/artists/frida-kahlo/gallery-16x9.jpg" width="230" alt="Frida Kahlo representative image"></a><br><strong>Frida Kahlo</strong><br><a href="style-packages/artists/frida-kahlo/README.en.md">Open README</a></td>
-</tr>
-</table>
-
-<table>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/henri-rousseau/README.en.md"><img src="style-packages/artists/henri-rousseau/gallery-16x9.jpg" width="230" alt="Henri Rousseau representative image"></a><br><strong>Henri Rousseau</strong><br><a href="style-packages/artists/henri-rousseau/README.en.md">Open README</a></td>
+</tr>
+<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/piet-mondrian/README.en.md"><img src="style-packages/artists/piet-mondrian/gallery-16x9.jpg" width="230" alt="Piet Mondrian representative image"></a><br><strong>Piet Mondrian</strong><br><a href="style-packages/artists/piet-mondrian/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/salvador-dali/README.en.md"><img src="style-packages/artists/salvador-dali/gallery-16x9.jpg" width="230" alt="Salvador Dalí representative image"></a><br><strong>Salvador Dalí</strong><br><a href="style-packages/artists/salvador-dali/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/francis-bacon/README.en.md"><img src="style-packages/artists/francis-bacon/gallery-16x9.jpg" width="230" alt="Francis Bacon representative image"></a><br><strong>Francis Bacon</strong><br><a href="style-packages/artists/francis-bacon/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/artists/francis-bacon/README.en.md"><img src="style-packages/artists/francis-bacon/gallery-16x9.jpg" width="230" alt="Francis Bacon representative image"></a><br><strong>Francis Bacon</strong><br><a href="style-packages/artists/francis-bacon/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/kathe-kollwitz/README.en.md"><img src="style-packages/artists/kathe-kollwitz/gallery-16x9.jpg" width="230" alt="Käthe Kollwitz representative image"></a><br><strong>Käthe Kollwitz</strong><br><a href="style-packages/artists/kathe-kollwitz/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/gerhard-richter/README.en.md"><img src="style-packages/artists/gerhard-richter/gallery-16x9.jpg" width="230" alt="Gerhard Richter representative image"></a><br><strong>Gerhard Richter</strong><br><a href="style-packages/artists/gerhard-richter/README.en.md">Open README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/yayoi-kusama/README.en.md"><img src="style-packages/artists/yayoi-kusama/gallery-16x9.jpg" width="230" alt="Yayoi Kusama representative image"></a><br><strong>Yayoi Kusama</strong><br><a href="style-packages/artists/yayoi-kusama/README.en.md">Open README</a></td>
 </tr>
-</table>
-<table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/joan-mitchell/README.en.md"><img src="style-packages/artists/joan-mitchell/gallery-16x9.jpg" width="230" alt="Joan Mitchell representative"></a><br><strong>Joan Mitchell</strong><br><a href="style-packages/artists/joan-mitchell/README.en.md">Open README</a></td>
-</tr>
-</table>
-<table>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/louise-bourgeois/README.en.md"><img src="style-packages/artists/louise-bourgeois/gallery-16x9.jpg" width="230" alt="Louise Bourgeois representative image"></a><br><strong>Louise Bourgeois</strong><br><a href="style-packages/artists/louise-bourgeois/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/moholy-nagy/README.en.md"><img src="style-packages/artists/moholy-nagy/gallery-16x9.jpg" width="230" alt="László Moholy-Nagy representative image"></a><br><strong>László Moholy-Nagy</strong><br><a href="style-packages/artists/moholy-nagy/README.en.md">Open README</a></td>
 </tr>
 </table>
 
 ### Photographers
 
 <table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/josef-sudek/README.en.md"><img src="style-packages/photographers/josef-sudek/gallery-16x9.jpg" width="230" alt="Josef Sudek representative image"></a><br><strong>Josef Sudek</strong><br><a href="style-packages/photographers/josef-sudek/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/miyako-ishiuchi/README.en.md"><img src="style-packages/photographers/miyako-ishiuchi/gallery-16x9.jpg" width="230" alt="Miyako Ishiuchi representative"></a><br><strong>Miyako Ishiuchi</strong><br><a href="style-packages/photographers/miyako-ishiuchi/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/kikuji-kawada/README.en.md"><img src="style-packages/photographers/kikuji-kawada/gallery-16x9.jpg" width="230" alt="Kikuji Kawada representative image"></a><br><strong>Kikuji Kawada</strong><br><a href="style-packages/photographers/kikuji-kawada/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/imogen-cunningham/README.en.md"><img src="style-packages/photographers/imogen-cunningham/gallery-16x9.jpg" width="230" alt="Imogen Cunningham representative image"></a><br><strong>Imogen Cunningham</strong><br><a href="style-packages/photographers/imogen-cunningham/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/photographers/joel-meyerowitz/README.en.md"><img src="style-packages/photographers/joel-meyerowitz/gallery-16x9.jpg" width="230" alt="Joel Meyerowitz representative image"></a><br><strong>Joel Meyerowitz</strong><br><a href="style-packages/photographers/joel-meyerowitz/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/josef-sudek/README.en.md"><img src="style-packages/photographers/josef-sudek/gallery-16x9.jpg" width="230" alt="Josef Sudek representative image"></a><br><strong>Josef Sudek</strong><br><a href="style-packages/photographers/josef-sudek/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/miyako-ishiuchi/README.en.md"><img src="style-packages/photographers/miyako-ishiuchi/gallery-16x9.jpg" width="230" alt="Miyako Ishiuchi representative"></a><br><strong>Miyako Ishiuchi</strong><br><a href="style-packages/photographers/miyako-ishiuchi/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/kikuji-kawada/README.en.md"><img src="style-packages/photographers/kikuji-kawada/gallery-16x9.jpg" width="230" alt="Kikuji Kawada representative image"></a><br><strong>Kikuji Kawada</strong><br><a href="style-packages/photographers/kikuji-kawada/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/imogen-cunningham/README.en.md"><img src="style-packages/photographers/imogen-cunningham/gallery-16x9.jpg" width="230" alt="Imogen Cunningham representative image"></a><br><strong>Imogen Cunningham</strong><br><a href="style-packages/photographers/imogen-cunningham/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/joel-meyerowitz/README.en.md"><img src="style-packages/photographers/joel-meyerowitz/gallery-16x9.jpg" width="230" alt="Joel Meyerowitz representative image"></a><br><strong>Joel Meyerowitz</strong><br><a href="style-packages/photographers/joel-meyerowitz/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/henri-cartier-bresson/README.en.md"><img src="style-packages/photographers/henri-cartier-bresson/gallery-16x9.jpg" width="230" alt="Henri Cartier-Bresson representative image"></a><br><strong>Henri Cartier-Bresson</strong><br><a href="style-packages/photographers/henri-cartier-bresson/README.en.md">Open README</a></td>
+</tr>
+<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/lewis-hine/README.en.md"><img src="style-packages/photographers/lewis-hine/gallery-16x9.jpg" width="230" alt="Lewis Hine representative image"></a><br><strong>Lewis Hine</strong><br><a href="style-packages/photographers/lewis-hine/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/eadweard-muybridge/README.en.md"><img src="style-packages/photographers/eadweard-muybridge/gallery-16x9.jpg" width="230" alt="Eadweard Muybridge representative image"></a><br><strong>Eadweard Muybridge</strong><br><a href="style-packages/photographers/eadweard-muybridge/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/dorothea-lange/README.en.md"><img src="style-packages/photographers/dorothea-lange/gallery-16x9.jpg" width="230" alt="Dorothea Lange representative image"></a><br><strong>Dorothea Lange</strong><br><a href="style-packages/photographers/dorothea-lange/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/dorothea-lange/README.en.md"><img src="style-packages/photographers/dorothea-lange/gallery-16x9.jpg" width="230" alt="Dorothea Lange representative image"></a><br><strong>Dorothea Lange</strong><br><a href="style-packages/photographers/dorothea-lange/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/william-eggleston/README.en.md"><img src="style-packages/photographers/william-eggleston/gallery-16x9.jpg" width="230" alt="William Eggleston representative image"></a><br><strong>William Eggleston</strong><br><a href="style-packages/photographers/william-eggleston/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/ansel-adams/README.en.md"><img src="style-packages/photographers/ansel-adams/gallery-16x9.jpg" width="230" alt="Ansel Adams representative image"></a><br><strong>Ansel Adams</strong><br><a href="style-packages/photographers/ansel-adams/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/julia-margaret-cameron/README.en.md"><img src="style-packages/photographers/julia-margaret-cameron/gallery-16x9.jpg" width="230" alt="Julia Margaret Cameron representative image"></a><br><strong>Julia Margaret Cameron</strong><br><a href="style-packages/photographers/julia-margaret-cameron/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/julia-margaret-cameron/README.en.md"><img src="style-packages/photographers/julia-margaret-cameron/gallery-16x9.jpg" width="230" alt="Julia Margaret Cameron representative image"></a><br><strong>Julia Margaret Cameron</strong><br><a href="style-packages/photographers/julia-margaret-cameron/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/daido-moriyama/README.en.md"><img src="style-packages/photographers/daido-moriyama/gallery-16x9.jpg" width="230" alt="Daido Moriyama representative image"></a><br><strong>Daido Moriyama</strong><br><a href="style-packages/photographers/daido-moriyama/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/eugene-atget/README.en.md"><img src="style-packages/photographers/eugene-atget/gallery-16x9.jpg" width="230" alt="Eugène Atget representative image"></a><br><strong>Eugène Atget</strong><br><a href="style-packages/photographers/eugene-atget/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/walker-evans/README.en.md"><img src="style-packages/photographers/walker-evans/gallery-16x9.jpg" width="230" alt="Walker Evans representative image"></a><br><strong>Walker Evans</strong><br><a href="style-packages/photographers/walker-evans/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/walker-evans/README.en.md"><img src="style-packages/photographers/walker-evans/gallery-16x9.jpg" width="230" alt="Walker Evans representative image"></a><br><strong>Walker Evans</strong><br><a href="style-packages/photographers/walker-evans/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/masahisa-fukase/README.en.md"><img src="style-packages/photographers/masahisa-fukase/gallery-16x9.jpg" width="230" alt="Masahisa Fukase representative image"></a><br><strong>Masahisa Fukase</strong><br><a href="style-packages/photographers/masahisa-fukase/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/nadar/README.en.md"><img src="style-packages/photographers/nadar/gallery-16x9.jpg" width="230" alt="Nadar representative image"></a><br><strong>Nadar</strong><br><a href="style-packages/photographers/nadar/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/robert-capa/README.en.md"><img src="style-packages/photographers/robert-capa/gallery-16x9.jpg" width="230" alt="Robert Capa representative image"></a><br><strong>Robert Capa</strong><br><a href="style-packages/photographers/robert-capa/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/robert-capa/README.en.md"><img src="style-packages/photographers/robert-capa/gallery-16x9.jpg" width="230" alt="Robert Capa representative image"></a><br><strong>Robert Capa</strong><br><a href="style-packages/photographers/robert-capa/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/roger-fenton/README.en.md"><img src="style-packages/photographers/roger-fenton/gallery-16x9.jpg" width="230" alt="Roger Fenton representative image"></a><br><strong>Roger Fenton</strong><br><a href="style-packages/photographers/roger-fenton/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/etienne-jules-marey/README.en.md"><img src="style-packages/photographers/etienne-jules-marey/gallery-16x9.jpg" width="230" alt="Étienne-Jules Marey representative image"></a><br><strong>Étienne-Jules Marey</strong><br><a href="style-packages/photographers/etienne-jules-marey/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/alfred-stieglitz/README.en.md"><img src="style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg" width="230" alt="Alfred Stieglitz representative image"></a><br><strong>Alfred Stieglitz</strong><br><a href="style-packages/photographers/alfred-stieglitz/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/alfred-stieglitz/README.en.md"><img src="style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg" width="230" alt="Alfred Stieglitz representative image"></a><br><strong>Alfred Stieglitz</strong><br><a href="style-packages/photographers/alfred-stieglitz/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/diane-arbus/README.en.md"><img src="style-packages/photographers/diane-arbus/gallery-16x9.jpg" width="230" alt="Diane Arbus representative image"></a><br><strong>Diane Arbus</strong><br><a href="style-packages/photographers/diane-arbus/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/saul-leiter/README.en.md"><img src="style-packages/photographers/saul-leiter/gallery-16x9.jpg" width="230" alt="Saul Leiter representative image"></a><br><strong>Saul Leiter</strong><br><a href="style-packages/photographers/saul-leiter/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/vivian-maier/README.en.md"><img src="style-packages/photographers/vivian-maier/gallery-16x9.jpg" width="230" alt="Vivian Maier representative image"></a><br><strong>Vivian Maier</strong><br><a href="style-packages/photographers/vivian-maier/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/vivian-maier/README.en.md"><img src="style-packages/photographers/vivian-maier/gallery-16x9.jpg" width="230" alt="Vivian Maier representative image"></a><br><strong>Vivian Maier</strong><br><a href="style-packages/photographers/vivian-maier/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/rinko-kawauchi/README.en.md"><img src="style-packages/photographers/rinko-kawauchi/gallery-16x9.jpg" width="230" alt="Rinko Kawauchi representative image"></a><br><strong>Rinko Kawauchi</strong><br><a href="style-packages/photographers/rinko-kawauchi/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/man-ray/README.en.md"><img src="style-packages/photographers/man-ray/gallery-16x9.jpg" width="230" alt="Man Ray representative image"></a><br><strong>Man Ray</strong><br><a href="style-packages/photographers/man-ray/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/berenice-abbott/README.en.md"><img src="style-packages/photographers/berenice-abbott/gallery-16x9.jpg" width="230" alt="Berenice Abbott representative image"></a><br><strong>Berenice Abbott</strong><br><a href="style-packages/photographers/berenice-abbott/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/berenice-abbott/README.en.md"><img src="style-packages/photographers/berenice-abbott/gallery-16x9.jpg" width="230" alt="Berenice Abbott representative image"></a><br><strong>Berenice Abbott</strong><br><a href="style-packages/photographers/berenice-abbott/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/gordon-parks/README.en.md"><img src="style-packages/photographers/gordon-parks/gallery-16x9.jpg" width="230" alt="Gordon Parks representative image"></a><br><strong>Gordon Parks</strong><br><a href="style-packages/photographers/gordon-parks/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/william-klein/README.en.md"><img src="style-packages/photographers/william-klein/gallery-16x9.jpg" width="230" alt="William Klein representative image"></a><br><strong>William Klein</strong><br><a href="style-packages/photographers/william-klein/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/mary-ellen-mark/README.en.md"><img src="style-packages/photographers/mary-ellen-mark/gallery-16x9.jpg" width="230" alt="Mary Ellen Mark representative image"></a><br><strong>Mary Ellen Mark</strong><br><a href="style-packages/photographers/mary-ellen-mark/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/mary-ellen-mark/README.en.md"><img src="style-packages/photographers/mary-ellen-mark/gallery-16x9.jpg" width="230" alt="Mary Ellen Mark representative image"></a><br><strong>Mary Ellen Mark</strong><br><a href="style-packages/photographers/mary-ellen-mark/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/nick-brandt/README.en.md"><img src="style-packages/photographers/nick-brandt/gallery-16x9.jpg" width="230" alt="Nick Brandt representative image"></a><br><strong>Nick Brandt</strong><br><a href="style-packages/photographers/nick-brandt/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/gregory-crewdson/README.en.md"><img src="style-packages/photographers/gregory-crewdson/gallery-16x9.jpg" width="230" alt="Gregory Crewdson representative image"></a><br><strong>Gregory Crewdson</strong><br><a href="style-packages/photographers/gregory-crewdson/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/cindy-sherman/README.en.md"><img src="style-packages/photographers/cindy-sherman/gallery-16x9.jpg" width="230" alt="Cindy Sherman representative image"></a><br><strong>Cindy Sherman</strong><br><a href="style-packages/photographers/cindy-sherman/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/cindy-sherman/README.en.md"><img src="style-packages/photographers/cindy-sherman/gallery-16x9.jpg" width="230" alt="Cindy Sherman representative image"></a><br><strong>Cindy Sherman</strong><br><a href="style-packages/photographers/cindy-sherman/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/sebastiao-salgado/README.en.md"><img src="style-packages/photographers/sebastiao-salgado/gallery-16x9.jpg" width="230" alt="Sebastião Salgado representative image"></a><br><strong>Sebastião Salgado</strong><br><a href="style-packages/photographers/sebastiao-salgado/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/peter-lindbergh/README.en.md"><img src="style-packages/photographers/peter-lindbergh/gallery-16x9.jpg" width="230" alt="Peter Lindbergh representative image"></a><br><strong>Peter Lindbergh</strong><br><a href="style-packages/photographers/peter-lindbergh/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/fan-ho/README.en.md"><img src="style-packages/photographers/fan-ho/gallery-16x9.jpg" width="230" alt="Fan Ho representative image"></a><br><strong>Fan Ho</strong><br><a href="style-packages/photographers/fan-ho/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/fan-ho/README.en.md"><img src="style-packages/photographers/fan-ho/gallery-16x9.jpg" width="230" alt="Fan Ho representative image"></a><br><strong>Fan Ho</strong><br><a href="style-packages/photographers/fan-ho/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/lisa-arima/README.en.md"><img src="style-packages/photographers/lisa-arima/gallery-16x9.jpg" width="230" alt="Lisa Arima representative image"></a><br><strong>Lisa Arima</strong><br><a href="style-packages/photographers/lisa-arima/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/emilie-hofferber/README.en.md"><img src="style-packages/photographers/emilie-hofferber/gallery-16x9.jpg" width="230" alt="Emilie Hofferber representative image"></a><br><strong>Emilie Hofferber</strong><br><a href="style-packages/photographers/emilie-hofferber/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/hiroshi-sugimoto/README.en.md"><img src="style-packages/photographers/hiroshi-sugimoto/gallery-16x9.jpg" width="230" alt="Hiroshi Sugimoto representative image"></a><br><strong>Hiroshi Sugimoto</strong><br><a href="style-packages/photographers/hiroshi-sugimoto/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/hiroshi-sugimoto/README.en.md"><img src="style-packages/photographers/hiroshi-sugimoto/gallery-16x9.jpg" width="230" alt="Hiroshi Sugimoto representative image"></a><br><strong>Hiroshi Sugimoto</strong><br><a href="style-packages/photographers/hiroshi-sugimoto/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/stephen-shore/README.en.md"><img src="style-packages/photographers/stephen-shore/gallery-16x9.jpg" width="230" alt="Stephen Shore representative image"></a><br><strong>Stephen Shore</strong><br><a href="style-packages/photographers/stephen-shore/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/alex-webb/README.en.md"><img src="style-packages/photographers/alex-webb/gallery-16x9.jpg" width="230" alt="Alex Webb representative image"></a><br><strong>Alex Webb</strong><br><a href="style-packages/photographers/alex-webb/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/garry-winogrand/README.en.md"><img src="style-packages/photographers/garry-winogrand/gallery-16x9.jpg" width="230" alt="Garry Winogrand representative image"></a><br><strong>Garry Winogrand</strong><br><a href="style-packages/photographers/garry-winogrand/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/photographers/garry-winogrand/README.en.md"><img src="style-packages/photographers/garry-winogrand/gallery-16x9.jpg" width="230" alt="Garry Winogrand representative image"></a><br><strong>Garry Winogrand</strong><br><a href="style-packages/photographers/garry-winogrand/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/susan-meiselas/README.en.md"><img src="style-packages/photographers/susan-meiselas/gallery-16x9.jpg" width="230" alt="Susan Meiselas representative image"></a><br><strong>Susan Meiselas</strong><br><a href="style-packages/photographers/susan-meiselas/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/alec-soth/README.en.md"><img src="style-packages/photographers/alec-soth/gallery-16x9.jpg" width="230" alt="Alec Soth representative image"></a><br><strong>Alec Soth</strong><br><a href="style-packages/photographers/alec-soth/README.en.md">Open README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/august-sander/README.en.md"><img src="style-packages/photographers/august-sander/gallery-16x9.jpg" width="230" alt="August Sander representative image"></a><br><strong>August Sander</strong><br><a href="style-packages/photographers/august-sander/README.en.md">Open README</a></td>
 </tr>
-</table>
-
-<table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/robert-frank/README.en.md"><img src="style-packages/photographers/robert-frank/gallery-16x9.jpg" width="230" alt="Robert Frank representative image"></a><br><strong>Robert Frank</strong><br><a href="style-packages/photographers/robert-frank/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/nan-goldin/README.en.md"><img src="style-packages/photographers/nan-goldin/gallery-16x9.jpg" width="230" alt="Nan Goldin representative image"></a><br><strong>Nan Goldin</strong><br><a href="style-packages/photographers/nan-goldin/README.en.md">Open README</a></td>
@@ -322,77 +285,51 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/ernst-haas/README.en.md"><img src="style-packages/photographers/ernst-haas/gallery-16x9.jpg" width="230" alt="Ernst Haas representative image"></a><br><strong>Ernst Haas</strong><br><a href="style-packages/photographers/ernst-haas/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/josef-koudelka/README.en.md"><img src="style-packages/photographers/josef-koudelka/gallery-16x9.jpg" width="230" alt="Josef Koudelka representative image"></a><br><strong>Josef Koudelka</strong><br><a href="style-packages/photographers/josef-koudelka/README.en.md">Open README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/todd-hido/README.en.md"><img src="style-packages/photographers/todd-hido/gallery-16x9.jpg" width="230" alt="Todd Hido representative image"></a><br><strong>Todd Hido</strong><br><a href="style-packages/photographers/todd-hido/README.en.md">Open README</a></td>
 </tr>
-</table>
-<table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/raghubir-singh/README.en.md"><img src="style-packages/photographers/raghubir-singh/gallery-16x9.jpg" width="230" alt="Raghubir Singh representative"></a><br><strong>Raghubir Singh</strong><br><a href="style-packages/photographers/raghubir-singh/README.en.md">Open README</a></td>
-</tr>
-</table>
-<table>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/sally-mann/README.en.md"><img src="style-packages/photographers/sally-mann/gallery-16x9.jpg" width="230" alt="Sally Mann representative image"></a><br><strong>Sally Mann</strong><br><a href="style-packages/photographers/sally-mann/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/luigi-ghirri/README.en.md"><img src="style-packages/photographers/luigi-ghirri/gallery-16x9.jpg" width="230" alt="Luigi Ghirri representative image"></a><br><strong>Luigi Ghirri</strong><br><a href="style-packages/photographers/luigi-ghirri/README.en.md">Open README</a></td>
 </tr>
 </table>
 
 ### Design schools
 
 <table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/california-institute-of-the-arts/README.en.md"><img src="style-packages/schools/california-institute-of-the-arts/gallery-16x9.jpg" width="230" alt="California Institute of the Arts representative"></a><br><strong>California Institute of the Arts</strong><br><a href="style-packages/schools/california-institute-of-the-arts/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-danish-academy/README.en.md"><img src="style-packages/schools/royal-danish-academy/gallery-16x9.jpg" width="230" alt="Royal Danish Academy representative image"></a><br><strong>Royal Danish Academy</strong><br><a href="style-packages/schools/royal-danish-academy/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.en.md"><img src="style-packages/schools/school-of-the-art-institute-of-chicago/gallery-16x9.jpg" width="230" alt="School of the Art Institute of Chicago representative image"></a><br><strong>School of the Art Institute of Chicago</strong><br><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-visual-arts/README.en.md"><img src="style-packages/schools/school-of-visual-arts/gallery-16x9.jpg" width="230" alt="School of Visual Arts representative image"></a><br><strong>School of Visual Arts</strong><br><a href="style-packages/schools/school-of-visual-arts/README.en.md">Open README</a></td></tr>
-</table>
-
-
-<table>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/california-institute-of-the-arts/README.en.md"><img src="style-packages/schools/california-institute-of-the-arts/gallery-16x9.jpg" width="230" alt="California Institute of the Arts representative"></a><br><strong>California Institute of the Arts</strong><br><a href="style-packages/schools/california-institute-of-the-arts/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-danish-academy/README.en.md"><img src="style-packages/schools/royal-danish-academy/gallery-16x9.jpg" width="230" alt="Royal Danish Academy representative image"></a><br><strong>Royal Danish Academy</strong><br><a href="style-packages/schools/royal-danish-academy/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.en.md"><img src="style-packages/schools/school-of-the-art-institute-of-chicago/gallery-16x9.jpg" width="230" alt="School of the Art Institute of Chicago representative image"></a><br><strong>School of the Art Institute of Chicago</strong><br><a href="style-packages/schools/school-of-the-art-institute-of-chicago/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/school-of-visual-arts/README.en.md"><img src="style-packages/schools/school-of-visual-arts/gallery-16x9.jpg" width="230" alt="School of Visual Arts representative image"></a><br><strong>School of Visual Arts</strong><br><a href="style-packages/schools/school-of-visual-arts/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/bauhaus/README.en.md"><img src="style-packages/schools/bauhaus/gallery-16x9.jpg" width="230" alt="Bauhaus representative image"></a><br><strong>Bauhaus</strong><br><a href="style-packages/schools/bauhaus/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/black-mountain-college/README.en.md"><img src="style-packages/schools/black-mountain-college/gallery-16x9.jpg" width="230" alt="Black Mountain College representative image"></a><br><strong>Black Mountain College</strong><br><a href="style-packages/schools/black-mountain-college/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/california-college-of-the-arts/README.en.md"><img src="style-packages/schools/california-college-of-the-arts/gallery-16x9.jpg" width="230" alt="California College of the Arts representative image"></a><br><strong>California College of the Arts</strong><br><a href="style-packages/schools/california-college-of-the-arts/README.en.md">Open README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/california-college-of-the-arts/README.en.md"><img src="style-packages/schools/california-college-of-the-arts/gallery-16x9.jpg" width="230" alt="California College of the Arts representative image"></a><br><strong>California College of the Arts</strong><br><a href="style-packages/schools/california-college-of-the-arts/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/cranbrook-academy/README.en.md"><img src="style-packages/schools/cranbrook-academy/gallery-16x9.jpg" width="230" alt="Cranbrook Academy of Art representative image"></a><br><strong>Cranbrook Academy of Art</strong><br><a href="style-packages/schools/cranbrook-academy/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/glasgow-school-of-art/README.en.md"><img src="style-packages/schools/glasgow-school-of-art/gallery-16x9.jpg" width="230" alt="Glasgow School of Art representative image"></a><br><strong>Glasgow School of Art</strong><br><a href="style-packages/schools/glasgow-school-of-art/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/new-bauhaus/README.en.md"><img src="style-packages/schools/new-bauhaus/gallery-16x9.jpg" width="230" alt="New Bauhaus representative image"></a><br><strong>New Bauhaus</strong><br><a href="style-packages/schools/new-bauhaus/README.en.md">Open README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/new-bauhaus/README.en.md"><img src="style-packages/schools/new-bauhaus/gallery-16x9.jpg" width="230" alt="New Bauhaus representative image"></a><br><strong>New Bauhaus</strong><br><a href="style-packages/schools/new-bauhaus/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/paris-beaux-arts/README.en.md"><img src="style-packages/schools/paris-beaux-arts/gallery-16x9.jpg" width="230" alt="Paris Beaux-Arts representative image"></a><br><strong>Paris Beaux-Arts</strong><br><a href="style-packages/schools/paris-beaux-arts/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/parsons-school-of-design/README.en.md"><img src="style-packages/schools/parsons-school-of-design/gallery-16x9.jpg" width="230" alt="Parsons School of Design representative image"></a><br><strong>Parsons School of Design</strong><br><a href="style-packages/schools/parsons-school-of-design/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/risd/README.en.md"><img src="style-packages/schools/risd/gallery-16x9.jpg" width="230" alt="Rhode Island School of Design representative image"></a><br><strong>Rhode Island School of Design</strong><br><a href="style-packages/schools/risd/README.en.md">Open README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/risd/README.en.md"><img src="style-packages/schools/risd/gallery-16x9.jpg" width="230" alt="Rhode Island School of Design representative image"></a><br><strong>Rhode Island School of Design</strong><br><a href="style-packages/schools/risd/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/royal-college-of-art/README.en.md"><img src="style-packages/schools/royal-college-of-art/gallery-16x9.jpg" width="230" alt="Royal College of Art representative image"></a><br><strong>Royal College of Art</strong><br><a href="style-packages/schools/royal-college-of-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/slade-school-of-fine-art/README.en.md"><img src="style-packages/schools/slade-school-of-fine-art/gallery-16x9.jpg" width="230" alt="Slade School of Fine Art representative image"></a><br><strong>Slade School of Fine Art</strong><br><a href="style-packages/schools/slade-school-of-fine-art/README.en.md">Open README</a></td>
-<td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.en.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="Ulm School representative image"></a><br><strong>Ulm School</strong><br><a href="style-packages/schools/ulm-school/README.en.md">Open README</a></td>
 </tr>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/ulm-school/README.en.md"><img src="style-packages/schools/ulm-school/gallery-16x9.jpg" width="230" alt="Ulm School representative image"></a><br><strong>Ulm School</strong><br><a href="style-packages/schools/ulm-school/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/yale-school-of-art/README.en.md"><img src="style-packages/schools/yale-school-of-art/gallery-16x9.jpg" width="230" alt="Yale School of Art representative image"></a><br><strong>Yale School of Art</strong><br><a href="style-packages/schools/yale-school-of-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/central-saint-martins/README.en.md"><img src="style-packages/schools/central-saint-martins/gallery-16x9.jpg" width="230" alt="Central Saint Martins representative image"></a><br><strong>Central Saint Martins</strong><br><a href="style-packages/schools/central-saint-martins/README.en.md">Open README</a></td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/ecal/README.en.md"><img src="style-packages/schools/ecal/gallery-16x9.jpg" width="230" alt="ECAL representative image"></a><br><strong>ECAL</strong><br><a href="style-packages/schools/ecal/README.en.md">Open README</a></td>
-</tr>
-</table>
-<table>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/artcenter/README.en.md"><img src="style-packages/schools/artcenter/gallery-16x9.jpg" width="230" alt="ArtCenter College of Design representative"></a><br><strong>ArtCenter College of Design</strong><br><a href="style-packages/schools/artcenter/README.en.md">Open README</a></td>
-</tr>
-</table>
-<table>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/design-academy-eindhoven/README.en.md"><img src="style-packages/schools/design-academy-eindhoven/gallery-16x9.jpg" width="230" alt="Design Academy Eindhoven representative image"></a><br><strong>Design Academy Eindhoven</strong><br><a href="style-packages/schools/design-academy-eindhoven/README.en.md">Open README</a></td>
 </tr>
 </table>
@@ -400,156 +337,138 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Movements and periods
 
 <table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/tonalism/README.en.md"><img src="style-packages/movements/tonalism/gallery-16x9.jpg" width="230" alt="Tonalism representative image"></a><br><strong>Tonalism</strong><br><a href="style-packages/movements/tonalism/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/lyrical-abstraction/README.en.md"><img src="style-packages/movements/lyrical-abstraction/gallery-16x9.jpg" width="230" alt="Lyrical Abstraction representative"></a><br><strong>Lyrical Abstraction</strong><br><a href="style-packages/movements/lyrical-abstraction/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/situationist-international/README.en.md"><img src="style-packages/movements/situationist-international/gallery-16x9.jpg" width="230" alt="Situationist International representative image"></a><br><strong>Situationist International</strong><br><a href="style-packages/movements/situationist-international/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/art-brut/README.en.md"><img src="style-packages/movements/art-brut/gallery-16x9.jpg" width="230" alt="Art Brut representative image"></a><br><strong>Art Brut</strong><br><a href="style-packages/movements/art-brut/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/movements/vienna-secession/README.en.md"><img src="style-packages/movements/vienna-secession/gallery-16x9.jpg" width="230" alt="Vienna Secession representative image"></a><br><strong>Vienna Secession</strong><br><a href="style-packages/movements/vienna-secession/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/tonalism/README.en.md"><img src="style-packages/movements/tonalism/gallery-16x9.jpg" width="230" alt="Tonalism representative image"></a><br><strong>Tonalism</strong><br><a href="style-packages/movements/tonalism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/lyrical-abstraction/README.en.md"><img src="style-packages/movements/lyrical-abstraction/gallery-16x9.jpg" width="230" alt="Lyrical Abstraction representative"></a><br><strong>Lyrical Abstraction</strong><br><a href="style-packages/movements/lyrical-abstraction/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/situationist-international/README.en.md"><img src="style-packages/movements/situationist-international/gallery-16x9.jpg" width="230" alt="Situationist International representative image"></a><br><strong>Situationist International</strong><br><a href="style-packages/movements/situationist-international/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/art-brut/README.en.md"><img src="style-packages/movements/art-brut/gallery-16x9.jpg" width="230" alt="Art Brut representative image"></a><br><strong>Art Brut</strong><br><a href="style-packages/movements/art-brut/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/vienna-secession/README.en.md"><img src="style-packages/movements/vienna-secession/gallery-16x9.jpg" width="230" alt="Vienna Secession representative image"></a><br><strong>Vienna Secession</strong><br><a href="style-packages/movements/vienna-secession/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/impressionism/README.en.md"><img src="style-packages/movements/impressionism/gallery-16x9.jpg" width="230" alt="Impressionism representative image"></a><br><strong>Impressionism</strong><br><a href="style-packages/movements/impressionism/README.en.md">Open README</a></td>
+</tr>
+<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/greek-geometric-period/README.en.md"><img src="style-packages/movements/greek-geometric-period/gallery-16x9.jpg" width="230" alt="Greek Geometric Period representative image"></a><br><strong>Greek Geometric Period</strong><br><a href="style-packages/movements/greek-geometric-period/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/greek-hellenistic-period/README.en.md"><img src="style-packages/movements/greek-hellenistic-period/gallery-16x9.jpg" width="230" alt="Greek Hellenistic Period representative image"></a><br><strong>Greek Hellenistic Period</strong><br><a href="style-packages/movements/greek-hellenistic-period/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/greek-classical-period/README.en.md"><img src="style-packages/movements/greek-classical-period/gallery-16x9.jpg" width="230" alt="Greek Classical Period representative image"></a><br><strong>Greek Classical Period</strong><br><a href="style-packages/movements/greek-classical-period/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/greek-classical-period/README.en.md"><img src="style-packages/movements/greek-classical-period/gallery-16x9.jpg" width="230" alt="Greek Classical Period representative image"></a><br><strong>Greek Classical Period</strong><br><a href="style-packages/movements/greek-classical-period/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/greek-archaic-period/README.en.md"><img src="style-packages/movements/greek-archaic-period/gallery-16x9.jpg" width="230" alt="Greek Archaic Period representative image"></a><br><strong>Greek Archaic Period</strong><br><a href="style-packages/movements/greek-archaic-period/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/post-impressionism/README.en.md"><img src="style-packages/movements/post-impressionism/gallery-16x9.jpg" width="230" alt="Post-Impressionism representative image"></a><br><strong>Post-Impressionism</strong><br><a href="style-packages/movements/post-impressionism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/baroque/README.en.md"><img src="style-packages/movements/baroque/gallery-16x9.jpg" width="230" alt="Baroque representative image"></a><br><strong>Baroque</strong><br><a href="style-packages/movements/baroque/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/baroque/README.en.md"><img src="style-packages/movements/baroque/gallery-16x9.jpg" width="230" alt="Baroque representative image"></a><br><strong>Baroque</strong><br><a href="style-packages/movements/baroque/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/italian-high-renaissance-raphaelesque/README.en.md"><img src="style-packages/movements/italian-high-renaissance-raphaelesque/gallery-16x9.jpg" width="230" alt="Italian High Renaissance representative image"></a><br><strong>Italian High Renaissance</strong><br><a href="style-packages/movements/italian-high-renaissance-raphaelesque/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/neue-sachlichkeit/README.en.md"><img src="style-packages/movements/neue-sachlichkeit/gallery-16x9.jpg" width="230" alt="Neue Sachlichkeit / New Objectivity representative image"></a><br><strong>Neue Sachlichkeit / New Objectivity</strong><br><a href="style-packages/movements/neue-sachlichkeit/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/neoclassicism/README.en.md"><img src="style-packages/movements/neoclassicism/gallery-16x9.jpg" width="230" alt="Neoclassicism representative image"></a><br><strong>Neoclassicism</strong><br><a href="style-packages/movements/neoclassicism/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/neoclassicism/README.en.md"><img src="style-packages/movements/neoclassicism/gallery-16x9.jpg" width="230" alt="Neoclassicism representative image"></a><br><strong>Neoclassicism</strong><br><a href="style-packages/movements/neoclassicism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/art-nouveau/README.en.md"><img src="style-packages/movements/art-nouveau/gallery-16x9.jpg" width="230" alt="Art Nouveau representative image"></a><br><strong>Art Nouveau</strong><br><a href="style-packages/movements/art-nouveau/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/futurism/README.en.md"><img src="style-packages/movements/futurism/gallery-16x9.jpg" width="230" alt="Futurism representative image"></a><br><strong>Futurism</strong><br><a href="style-packages/movements/futurism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/rococo/README.en.md"><img src="style-packages/movements/rococo/gallery-16x9.jpg" width="230" alt="Rococo representative image"></a><br><strong>Rococo</strong><br><a href="style-packages/movements/rococo/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/rococo/README.en.md"><img src="style-packages/movements/rococo/gallery-16x9.jpg" width="230" alt="Rococo representative image"></a><br><strong>Rococo</strong><br><a href="style-packages/movements/rococo/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/romanticism/README.en.md"><img src="style-packages/movements/romanticism/gallery-16x9.jpg" width="230" alt="Romanticism representative image"></a><br><strong>Romanticism</strong><br><a href="style-packages/movements/romanticism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/realism/README.en.md"><img src="style-packages/movements/realism/gallery-16x9.jpg" width="230" alt="Realism representative image"></a><br><strong>Realism</strong><br><a href="style-packages/movements/realism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/cubism/README.en.md"><img src="style-packages/movements/cubism/gallery-16x9.jpg" width="230" alt="Cubism representative image"></a><br><strong>Cubism</strong><br><a href="style-packages/movements/cubism/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/cubism/README.en.md"><img src="style-packages/movements/cubism/gallery-16x9.jpg" width="230" alt="Cubism representative image"></a><br><strong>Cubism</strong><br><a href="style-packages/movements/cubism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/expressionism/README.en.md"><img src="style-packages/movements/expressionism/gallery-16x9.jpg" width="230" alt="Expressionism representative image"></a><br><strong>Expressionism</strong><br><a href="style-packages/movements/expressionism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/surrealism/README.en.md"><img src="style-packages/movements/surrealism/gallery-16x9.jpg" width="230" alt="Surrealism representative image"></a><br><strong>Surrealism</strong><br><a href="style-packages/movements/surrealism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/renaissance/README.en.md"><img src="style-packages/movements/renaissance/gallery-16x9.jpg" width="230" alt="Renaissance representative image"></a><br><strong>Renaissance</strong><br><a href="style-packages/movements/renaissance/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/renaissance/README.en.md"><img src="style-packages/movements/renaissance/gallery-16x9.jpg" width="230" alt="Renaissance representative image"></a><br><strong>Renaissance</strong><br><a href="style-packages/movements/renaissance/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/northern-renaissance/README.en.md"><img src="style-packages/movements/northern-renaissance/gallery-16x9.jpg" width="230" alt="Northern Renaissance representative image"></a><br><strong>Northern Renaissance</strong><br><a href="style-packages/movements/northern-renaissance/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/mannerism/README.en.md"><img src="style-packages/movements/mannerism/gallery-16x9.jpg" width="230" alt="Mannerism representative image"></a><br><strong>Mannerism</strong><br><a href="style-packages/movements/mannerism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/symbolism/README.en.md"><img src="style-packages/movements/symbolism/gallery-16x9.jpg" width="230" alt="Symbolism representative image"></a><br><strong>Symbolism</strong><br><a href="style-packages/movements/symbolism/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/symbolism/README.en.md"><img src="style-packages/movements/symbolism/gallery-16x9.jpg" width="230" alt="Symbolism representative image"></a><br><strong>Symbolism</strong><br><a href="style-packages/movements/symbolism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/dada/README.en.md"><img src="style-packages/movements/dada/gallery-16x9.jpg" width="230" alt="Dada representative image"></a><br><strong>Dada</strong><br><a href="style-packages/movements/dada/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/constructivism/README.en.md"><img src="style-packages/movements/constructivism/gallery-16x9.jpg" width="230" alt="Constructivism representative image"></a><br><strong>Constructivism</strong><br><a href="style-packages/movements/constructivism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/suprematism/README.en.md"><img src="style-packages/movements/suprematism/gallery-16x9.jpg" width="230" alt="Suprematism representative image"></a><br><strong>Suprematism</strong><br><a href="style-packages/movements/suprematism/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/suprematism/README.en.md"><img src="style-packages/movements/suprematism/gallery-16x9.jpg" width="230" alt="Suprematism representative image"></a><br><strong>Suprematism</strong><br><a href="style-packages/movements/suprematism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/socialist-realism/README.en.md"><img src="style-packages/movements/socialist-realism/gallery-16x9.jpg" width="230" alt="Socialist Realism representative image"></a><br><strong>Socialist Realism</strong><br><a href="style-packages/movements/socialist-realism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/abstract-expressionism/README.en.md"><img src="style-packages/movements/abstract-expressionism/gallery-16x9.jpg" width="230" alt="Abstract Expressionism representative image"></a><br><strong>Abstract Expressionism</strong><br><a href="style-packages/movements/abstract-expressionism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/pop-art/README.en.md"><img src="style-packages/movements/pop-art/gallery-16x9.jpg" width="230" alt="Pop Art representative image"></a><br><strong>Pop Art</strong><br><a href="style-packages/movements/pop-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/pop-art/README.en.md"><img src="style-packages/movements/pop-art/gallery-16x9.jpg" width="230" alt="Pop Art representative image"></a><br><strong>Pop Art</strong><br><a href="style-packages/movements/pop-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/minimalism/README.en.md"><img src="style-packages/movements/minimalism/gallery-16x9.jpg" width="230" alt="Minimalism representative image"></a><br><strong>Minimalism</strong><br><a href="style-packages/movements/minimalism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/conceptual-art/README.en.md"><img src="style-packages/movements/conceptual-art/gallery-16x9.jpg" width="230" alt="Conceptual Art representative image"></a><br><strong>Conceptual Art</strong><br><a href="style-packages/movements/conceptual-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/land-art/README.en.md"><img src="style-packages/movements/land-art/gallery-16x9.jpg" width="230" alt="Land Art representative image"></a><br><strong>Land Art</strong><br><a href="style-packages/movements/land-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/land-art/README.en.md"><img src="style-packages/movements/land-art/gallery-16x9.jpg" width="230" alt="Land Art representative image"></a><br><strong>Land Art</strong><br><a href="style-packages/movements/land-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/op-art/README.en.md"><img src="style-packages/movements/op-art/gallery-16x9.jpg" width="230" alt="Op Art representative image"></a><br><strong>Op Art</strong><br><a href="style-packages/movements/op-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/photorealism/README.en.md"><img src="style-packages/movements/photorealism/gallery-16x9.jpg" width="230" alt="Photorealism representative image"></a><br><strong>Photorealism</strong><br><a href="style-packages/movements/photorealism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/pre-raphaelites/README.en.md"><img src="style-packages/movements/pre-raphaelites/gallery-16x9.jpg" width="230" alt="Pre-Raphaelite Brotherhood representative image"></a><br><strong>Pre-Raphaelite Brotherhood</strong><br><a href="style-packages/movements/pre-raphaelites/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/pre-raphaelites/README.en.md"><img src="style-packages/movements/pre-raphaelites/gallery-16x9.jpg" width="230" alt="Pre-Raphaelite Brotherhood representative image"></a><br><strong>Pre-Raphaelite Brotherhood</strong><br><a href="style-packages/movements/pre-raphaelites/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/arts-and-crafts/README.en.md"><img src="style-packages/movements/arts-and-crafts/gallery-16x9.jpg" width="230" alt="Arts and Crafts Movement representative image"></a><br><strong>Arts and Crafts Movement</strong><br><a href="style-packages/movements/arts-and-crafts/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/harlem-renaissance/README.en.md"><img src="style-packages/movements/harlem-renaissance/gallery-16x9.jpg" width="230" alt="Harlem Renaissance representative image"></a><br><strong>Harlem Renaissance</strong><br><a href="style-packages/movements/harlem-renaissance/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/magic-realism/README.en.md"><img src="style-packages/movements/magic-realism/gallery-16x9.jpg" width="230" alt="Magic Realism representative image"></a><br><strong>Magic Realism</strong><br><a href="style-packages/movements/magic-realism/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/magic-realism/README.en.md"><img src="style-packages/movements/magic-realism/gallery-16x9.jpg" width="230" alt="Magic Realism representative image"></a><br><strong>Magic Realism</strong><br><a href="style-packages/movements/magic-realism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/precisionism/README.en.md"><img src="style-packages/movements/precisionism/gallery-16x9.jpg" width="230" alt="Precisionism representative image"></a><br><strong>Precisionism</strong><br><a href="style-packages/movements/precisionism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/art-deco/README.en.md"><img src="style-packages/movements/art-deco/gallery-16x9.jpg" width="230" alt="Art Deco representative image"></a><br><strong>Art Deco</strong><br><a href="style-packages/movements/art-deco/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/de-stijl/README.en.md"><img src="style-packages/movements/de-stijl/gallery-16x9.jpg" width="230" alt="De Stijl representative image"></a><br><strong>De Stijl</strong><br><a href="style-packages/movements/de-stijl/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/de-stijl/README.en.md"><img src="style-packages/movements/de-stijl/gallery-16x9.jpg" width="230" alt="De Stijl representative image"></a><br><strong>De Stijl</strong><br><a href="style-packages/movements/de-stijl/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/international-typographic-style/README.en.md"><img src="style-packages/movements/international-typographic-style/gallery-16x9.jpg" width="230" alt="International Typographic Style representative image"></a><br><strong>International Typographic Style</strong><br><a href="style-packages/movements/international-typographic-style/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/new-topographics/README.en.md"><img src="style-packages/movements/new-topographics/gallery-16x9.jpg" width="230" alt="New Topographics representative image"></a><br><strong>New Topographics</strong><br><a href="style-packages/movements/new-topographics/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/japandi/README.en.md"><img src="style-packages/movements/japandi/gallery-16x9.jpg" width="230" alt="Japandi representative image"></a><br><strong>Japandi</strong><br><a href="style-packages/movements/japandi/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/japandi/README.en.md"><img src="style-packages/movements/japandi/gallery-16x9.jpg" width="230" alt="Japandi representative image"></a><br><strong>Japandi</strong><br><a href="style-packages/movements/japandi/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/memphis/README.en.md"><img src="style-packages/movements/memphis/gallery-16x9.jpg" width="230" alt="Memphis representative image"></a><br><strong>Memphis</strong><br><a href="style-packages/movements/memphis/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/bohemian/README.en.md"><img src="style-packages/movements/bohemian/gallery-16x9.jpg" width="230" alt="Bohemian Style representative image"></a><br><strong>Bohemian Style</strong><br><a href="style-packages/movements/bohemian/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/shabby-chic/README.en.md"><img src="style-packages/movements/shabby-chic/gallery-16x9.jpg" width="230" alt="Shabby Chic representative image"></a><br><strong>Shabby Chic</strong><br><a href="style-packages/movements/shabby-chic/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/shabby-chic/README.en.md"><img src="style-packages/movements/shabby-chic/gallery-16x9.jpg" width="230" alt="Shabby Chic representative image"></a><br><strong>Shabby Chic</strong><br><a href="style-packages/movements/shabby-chic/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/farmhouse-cottagecore/README.en.md"><img src="style-packages/movements/farmhouse-cottagecore/gallery-16x9.jpg" width="230" alt="Farmhouse and Cottagecore representative image"></a><br><strong>Farmhouse / Cottagecore</strong><br><a href="style-packages/movements/farmhouse-cottagecore/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/victorian/README.en.md"><img src="style-packages/movements/victorian/gallery-16x9.jpg" width="230" alt="Victorian representative image"></a><br><strong>Victorian</strong><br><a href="style-packages/movements/victorian/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/fluxus/README.en.md"><img src="style-packages/movements/fluxus/gallery-16x9.jpg" width="230" alt="Fluxus representative image"></a><br><strong>Fluxus</strong><br><a href="style-packages/movements/fluxus/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/fluxus/README.en.md"><img src="style-packages/movements/fluxus/gallery-16x9.jpg" width="230" alt="Fluxus representative image"></a><br><strong>Fluxus</strong><br><a href="style-packages/movements/fluxus/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/brutalism/README.en.md"><img src="style-packages/movements/brutalism/gallery-16x9.jpg" width="230" alt="Brutalism representative image"></a><br><strong>Brutalism</strong><br><a href="style-packages/movements/brutalism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/synthwave/README.en.md"><img src="style-packages/movements/synthwave/gallery-16x9.jpg" width="230" alt="Synthwave representative image"></a><br><strong>Synthwave</strong><br><a href="style-packages/movements/synthwave/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/vaporwave/README.en.md"><img src="style-packages/movements/vaporwave/gallery-16x9.jpg" width="230" alt="Vaporwave representative image"></a><br><strong>Vaporwave</strong><br><a href="style-packages/movements/vaporwave/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/vaporwave/README.en.md"><img src="style-packages/movements/vaporwave/gallery-16x9.jpg" width="230" alt="Vaporwave representative image"></a><br><strong>Vaporwave</strong><br><a href="style-packages/movements/vaporwave/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/graffiti/README.en.md"><img src="style-packages/movements/graffiti/gallery-16x9.jpg" width="230" alt="Graffiti representative image"></a><br><strong>Graffiti</strong><br><a href="style-packages/movements/graffiti/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/tenebrism/README.en.md"><img src="style-packages/movements/tenebrism/gallery-16x9.jpg" width="230" alt="Tenebrism representative image"></a><br><strong>Tenebrism</strong><br><a href="style-packages/movements/tenebrism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/gothic/README.en.md"><img src="style-packages/movements/gothic/gallery-16x9.jpg" width="230" alt="Gothic representative image"></a><br><strong>Gothic</strong><br><a href="style-packages/movements/gothic/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/gothic/README.en.md"><img src="style-packages/movements/gothic/gallery-16x9.jpg" width="230" alt="Gothic representative image"></a><br><strong>Gothic</strong><br><a href="style-packages/movements/gothic/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/pointillism/README.en.md"><img src="style-packages/movements/pointillism/gallery-16x9.jpg" width="230" alt="Pointillism representative image"></a><br><strong>Pointillism</strong><br><a href="style-packages/movements/pointillism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/steampunk/README.en.md"><img src="style-packages/movements/steampunk/gallery-16x9.jpg" width="230" alt="Steampunk representative image"></a><br><strong>Steampunk</strong><br><a href="style-packages/movements/steampunk/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/kawaii/README.en.md"><img src="style-packages/movements/kawaii/gallery-16x9.jpg" width="230" alt="Kawaii representative image"></a><br><strong>Kawaii</strong><br><a href="style-packages/movements/kawaii/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/kawaii/README.en.md"><img src="style-packages/movements/kawaii/gallery-16x9.jpg" width="230" alt="Kawaii representative image"></a><br><strong>Kawaii</strong><br><a href="style-packages/movements/kawaii/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/coquette/README.en.md"><img src="style-packages/movements/coquette/gallery-16x9.jpg" width="230" alt="Coquette representative image"></a><br><strong>Coquette</strong><br><a href="style-packages/movements/coquette/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/utilitarian/README.en.md"><img src="style-packages/movements/utilitarian/gallery-16x9.jpg" width="230" alt="Utilitarian representative image"></a><br><strong>Utilitarian</strong><br><a href="style-packages/movements/utilitarian/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mid-century-modern/README.en.md"><img src="style-packages/movements/mid-century-modern/gallery-16x9.jpg" width="230" alt="Mid-century Modern representative image"></a><br><strong>Mid-century Modern</strong><br><a href="style-packages/movements/mid-century-modern/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/mid-century-modern/README.en.md"><img src="style-packages/movements/mid-century-modern/gallery-16x9.jpg" width="230" alt="Mid-century Modern representative image"></a><br><strong>Mid-century Modern</strong><br><a href="style-packages/movements/mid-century-modern/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/ukiyo-e/README.en.md"><img src="style-packages/movements/ukiyo-e/gallery-16x9.jpg" width="230" alt="Ukiyo-e representative image"></a><br><strong>Ukiyo-e</strong><br><a href="style-packages/movements/ukiyo-e/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/chinese-literati-ink-painting/README.en.md"><img src="style-packages/movements/chinese-literati-ink-painting/gallery-16x9.jpg" width="230" alt="Chinese Literati Ink Painting representative image"></a><br><strong>Chinese Literati Ink Painting</strong><br><a href="style-packages/movements/chinese-literati-ink-painting/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/deconstructivist-architecture/README.en.md"><img src="style-packages/movements/deconstructivist-architecture/gallery-16x9.jpg" width="230" alt="Deconstructivist Architecture representative image"></a><br><strong>Deconstructivist Architecture</strong><br><a href="style-packages/movements/deconstructivist-architecture/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/deconstructivist-architecture/README.en.md"><img src="style-packages/movements/deconstructivist-architecture/gallery-16x9.jpg" width="230" alt="Deconstructivist Architecture representative image"></a><br><strong>Deconstructivist Architecture</strong><br><a href="style-packages/movements/deconstructivist-architecture/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/fauvism/README.en.md"><img src="style-packages/movements/fauvism/gallery-16x9.jpg" width="230" alt="Fauvism representative image"></a><br><strong>Fauvism</strong><br><a href="style-packages/movements/fauvism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/arte-povera/README.en.md"><img src="style-packages/movements/arte-povera/gallery-16x9.jpg" width="230" alt="Arte Povera representative image"></a><br><strong>Arte Povera</strong><br><a href="style-packages/movements/arte-povera/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/orphism/README.en.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="230" alt="Orphism representative image"></a><br><strong>Orphism</strong><br><a href="style-packages/movements/orphism/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/movements/orphism/README.en.md"><img src="style-packages/movements/orphism/gallery-16x9.jpg" width="230" alt="Orphism representative image"></a><br><strong>Orphism</strong><br><a href="style-packages/movements/orphism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/color-field-painting/README.en.md"><img src="style-packages/movements/color-field-painting/gallery-16x9.jpg" width="230" alt="Color Field Painting representative image"></a><br><strong>Color Field Painting</strong><br><a href="style-packages/movements/color-field-painting/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/rayonism/README.en.md"><img src="style-packages/movements/rayonism/gallery-16x9.jpg" width="230" alt="Rayonism representative image"></a><br><strong>Rayonism</strong><br><a href="style-packages/movements/rayonism/README.en.md">Open README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-expressionism/README.en.md"><img src="style-packages/movements/neo-expressionism/gallery-16x9.jpg" width="230" alt="Neo-Expressionism representative image"></a><br><strong>Neo-Expressionism</strong><br><a href="style-packages/movements/neo-expressionism/README.en.md">Open README</a></td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/art-informel/README.en.md"><img src="style-packages/movements/art-informel/gallery-16x9.jpg" width="230" alt="Art Informel representative image"></a><br><strong>Art Informel</strong><br><a href="style-packages/movements/art-informel/README.en.md">Open README</a></td>
-</tr>
-</table>
-<table>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/mexican-muralism/README.en.md"><img src="style-packages/movements/mexican-muralism/gallery-16x9.jpg" width="230" alt="Mexican Muralism representative"></a><br><strong>Mexican Muralism</strong><br><a href="style-packages/movements/mexican-muralism/README.en.md">Open README</a></td>
-</tr>
-</table>
-<table>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/aestheticism/README.en.md"><img src="style-packages/movements/aestheticism/gallery-16x9.jpg" width="230" alt="Aestheticism representative image"></a><br><strong>Aestheticism</strong><br><a href="style-packages/movements/aestheticism/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mughal-miniature-painting/README.en.md"><img src="style-packages/movements/mughal-miniature-painting/gallery-16x9.jpg" width="230" alt="Mughal Miniature Painting representative image"></a><br><strong>Mughal Miniature Painting</strong><br><a href="style-packages/movements/mughal-miniature-painting/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -591,162 +510,139 @@ The main gallery lists independent style packages only. Every card uses a horizo
 ### Game art
 
 <table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/game-art/to-the-moon-narrative-pixel-art/README.en.md"><img src="style-packages/game-art/to-the-moon-narrative-pixel-art/gallery-16x9.jpg" width="230" alt="To the Moon narrative pixel art representative image"></a><br><strong>To the Moon Narrative Pixel Art</strong><br><a href="style-packages/game-art/to-the-moon-narrative-pixel-art/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.en.md"><img src="style-packages/game-art/kentucky-route-zero-scenographic-game-art/gallery-16x9.jpg" width="230" alt="Kentucky Route Zero scenographic game art representative image"></a><br><strong>Kentucky Route Zero Scenographic Game Art</strong><br><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/to-the-moon-narrative-pixel-art/README.en.md"><img src="style-packages/game-art/to-the-moon-narrative-pixel-art/gallery-16x9.jpg" width="230" alt="To the Moon narrative pixel art representative image"></a><br><strong>To the Moon Narrative Pixel Art</strong><br><a href="style-packages/game-art/to-the-moon-narrative-pixel-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.en.md"><img src="style-packages/game-art/kentucky-route-zero-scenographic-game-art/gallery-16x9.jpg" width="230" alt="Kentucky Route Zero scenographic game art representative image"></a><br><strong>Kentucky Route Zero Scenographic Game Art</strong><br><a href="style-packages/game-art/kentucky-route-zero-scenographic-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/low-poly-adventure-game-art/README.en.md"><img src="style-packages/game-art/low-poly-adventure-game-art/gallery-16x9.jpg" width="230" alt="Low-poly Adventure Game Art representative image"></a><br><strong>Low-poly Adventure Game Art</strong><br><a href="style-packages/game-art/low-poly-adventure-game-art/README.en.md">Open README</a></td>
+</tr>
+<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/top-down-16-bit-adventure/README.en.md"><img src="style-packages/game-art/top-down-16-bit-adventure/gallery-16x9.jpg" width="230" alt="Top-down 16-bit Adventure Game Art representative image"></a><br><strong>Top-down 16-bit Adventure Game Art</strong><br><a href="style-packages/game-art/top-down-16-bit-adventure/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/zx-spectrum-attribute-pixel/README.en.md"><img src="style-packages/game-art/zx-spectrum-attribute-pixel/gallery-16x9.jpg" width="230" alt="ZX Spectrum Attribute Pixel Art representative image"></a><br><strong>ZX Spectrum Attribute Pixel Art</strong><br><a href="style-packages/game-art/zx-spectrum-attribute-pixel/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/side-scrolling-platformer-pixel/README.en.md"><img src="style-packages/game-art/side-scrolling-platformer-pixel/gallery-16x9.jpg" width="230" alt="Side-scrolling Platformer Pixel Art representative image"></a><br><strong>Side-scrolling Platformer Pixel Art</strong><br><a href="style-packages/game-art/side-scrolling-platformer-pixel/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/side-scrolling-platformer-pixel/README.en.md"><img src="style-packages/game-art/side-scrolling-platformer-pixel/gallery-16x9.jpg" width="230" alt="Side-scrolling Platformer Pixel Art representative image"></a><br><strong>Side-scrolling Platformer Pixel Art</strong><br><a href="style-packages/game-art/side-scrolling-platformer-pixel/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/cinematic-pixel-adventure/README.en.md"><img src="style-packages/game-art/cinematic-pixel-adventure/gallery-16x9.jpg" width="230" alt="Cinematic Pixel Adventure Art representative image"></a><br><strong>Cinematic Pixel Adventure Art</strong><br><a href="style-packages/game-art/cinematic-pixel-adventure/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/isometric-pixel-tactics/README.en.md"><img src="style-packages/game-art/isometric-pixel-tactics/gallery-16x9.jpg" width="230" alt="Isometric Pixel Tactics Art representative image"></a><br><strong>Isometric Pixel Tactics Art</strong><br><a href="style-packages/game-art/isometric-pixel-tactics/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cel-shaded-nature-game-art/README.en.md"><img src="style-packages/game-art/cel-shaded-nature-game-art/gallery-16x9.jpg" width="230" alt="Cel-Shaded Nature Adventure Game Art representative image"></a><br><strong>Cel-Shaded Nature Adventure Game Art</strong><br><a href="style-packages/game-art/cel-shaded-nature-game-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/cel-shaded-nature-game-art/README.en.md"><img src="style-packages/game-art/cel-shaded-nature-game-art/gallery-16x9.jpg" width="230" alt="Cel-Shaded Nature Adventure Game Art representative image"></a><br><strong>Cel-Shaded Nature Adventure Game Art</strong><br><a href="style-packages/game-art/cel-shaded-nature-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-inked-animation-game-art/README.en.md"><img src="style-packages/game-art/hand-inked-animation-game-art/gallery-16x9.jpg" width="230" alt="Hand-Inked Animation Game Art representative image"></a><br><strong>Hand-Inked Animation Game Art</strong><br><a href="style-packages/game-art/hand-inked-animation-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/watercolor-storybook-game-art/README.en.md"><img src="style-packages/game-art/watercolor-storybook-game-art/gallery-16x9.jpg" width="230" alt="Watercolor Storybook Adventure Game Art representative image"></a><br><strong>Watercolor Storybook Adventure Game Art</strong><br><a href="style-packages/game-art/watercolor-storybook-game-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/papercraft-diorama-game-art/README.en.md"><img src="style-packages/game-art/papercraft-diorama-game-art/gallery-16x9.jpg" width="230" alt="Papercraft Diorama Game Art representative image"></a><br><strong>Papercraft Diorama Game Art</strong><br><a href="style-packages/game-art/papercraft-diorama-game-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/papercraft-diorama-game-art/README.en.md"><img src="style-packages/game-art/papercraft-diorama-game-art/gallery-16x9.jpg" width="230" alt="Papercraft Diorama Game Art representative image"></a><br><strong>Papercraft Diorama Game Art</strong><br><a href="style-packages/game-art/papercraft-diorama-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/voxel-world-game-art/README.en.md"><img src="style-packages/game-art/voxel-world-game-art/gallery-16x9.jpg" width="230" alt="Voxel World Game Art representative image"></a><br><strong>Voxel World Game Art</strong><br><a href="style-packages/game-art/voxel-world-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/stylized-low-poly-world/README.en.md"><img src="style-packages/game-art/stylized-low-poly-world/gallery-16x9.jpg" width="230" alt="Stylized Low-Poly World Game Art representative image"></a><br><strong>Stylized Low-Poly World Game Art</strong><br><a href="style-packages/game-art/stylized-low-poly-world/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/impossible-architecture-game-art/README.en.md"><img src="style-packages/game-art/impossible-architecture-game-art/gallery-16x9.jpg" width="230" alt="Isometric Impossible-Architecture Game Art representative image"></a><br><strong>Isometric Impossible-Architecture Game Art</strong><br><a href="style-packages/game-art/impossible-architecture-game-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/impossible-architecture-game-art/README.en.md"><img src="style-packages/game-art/impossible-architecture-game-art/gallery-16x9.jpg" width="230" alt="Isometric Impossible-Architecture Game Art representative image"></a><br><strong>Isometric Impossible-Architecture Game Art</strong><br><a href="style-packages/game-art/impossible-architecture-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/comic-halftone-game-art/README.en.md"><img src="style-packages/game-art/comic-halftone-game-art/gallery-16x9.jpg" width="230" alt="Comic Halftone Narrative Game Art representative image"></a><br><strong>Comic Halftone Narrative Game Art</strong><br><a href="style-packages/game-art/comic-halftone-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/painterly-3d-fantasy-game-art/README.en.md"><img src="style-packages/game-art/painterly-3d-fantasy-game-art/gallery-16x9.jpg" width="230" alt="Painterly 3D Fantasy Game Art representative image"></a><br><strong>Painterly 3D Fantasy Game Art</strong><br><a href="style-packages/game-art/painterly-3d-fantasy-game-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.en.md"><img src="style-packages/game-art/stylized-pbr-sci-fi-game-art/gallery-16x9.jpg" width="230" alt="Stylized PBR Science-Fiction Game Art representative image"></a><br><strong>Stylized PBR Science-Fiction Game Art</strong><br><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.en.md"><img src="style-packages/game-art/stylized-pbr-sci-fi-game-art/gallery-16x9.jpg" width="230" alt="Stylized PBR Science-Fiction Game Art representative image"></a><br><strong>Stylized PBR Science-Fiction Game Art</strong><br><a href="style-packages/game-art/stylized-pbr-sci-fi-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/flat-design-puzzle-game-art/README.en.md"><img src="style-packages/game-art/flat-design-puzzle-game-art/gallery-16x9.jpg" width="230" alt="Flat Design Puzzle Game Art representative image"></a><br><strong>Flat Design Puzzle Game Art</strong><br><a href="style-packages/game-art/flat-design-puzzle-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/miniature-diorama-game-art/README.en.md"><img src="style-packages/game-art/miniature-diorama-game-art/gallery-16x9.jpg" width="230" alt="Miniature Diorama Game Art representative image"></a><br><strong>Miniature Diorama Game Art</strong><br><a href="style-packages/game-art/miniature-diorama-game-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/silhouette-platformer-game-art/README.en.md"><img src="style-packages/game-art/silhouette-platformer-game-art/gallery-16x9.jpg" width="230" alt="Silhouette Light-and-Shadow Platformer Game Art representative image"></a><br><strong>Silhouette Light-and-Shadow Platformer Game Art</strong><br><a href="style-packages/game-art/silhouette-platformer-game-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/silhouette-platformer-game-art/README.en.md"><img src="style-packages/game-art/silhouette-platformer-game-art/gallery-16x9.jpg" width="230" alt="Silhouette Light-and-Shadow Platformer Game Art representative image"></a><br><strong>Silhouette Light-and-Shadow Platformer Game Art</strong><br><a href="style-packages/game-art/silhouette-platformer-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/neon-noir-3d-game-art/README.en.md"><img src="style-packages/game-art/neon-noir-3d-game-art/gallery-16x9.jpg" width="230" alt="Neon Noir 3D Game Art representative image"></a><br><strong>Neon Noir 3D Game Art</strong><br><a href="style-packages/game-art/neon-noir-3d-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/stop-motion-clay-game-art/README.en.md"><img src="style-packages/game-art/stop-motion-clay-game-art/gallery-16x9.jpg" width="230" alt="Stop-Motion Clay Game Art representative image"></a><br><strong>Stop-Motion Clay Game Art</strong><br><a href="style-packages/game-art/stop-motion-clay-game-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/breath-of-the-wild-open-world/README.en.md"><img src="style-packages/game-art/breath-of-the-wild-open-world/gallery-16x9.jpg" width="230" alt="Open-World Painted Nature Game Art representative image"></a><br><strong>Open-World Painted Nature Game Art</strong><br><a href="style-packages/game-art/breath-of-the-wild-open-world/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/breath-of-the-wild-open-world/README.en.md"><img src="style-packages/game-art/breath-of-the-wild-open-world/gallery-16x9.jpg" width="230" alt="Open-World Painted Nature Game Art representative image"></a><br><strong>Open-World Painted Nature Game Art</strong><br><a href="style-packages/game-art/breath-of-the-wild-open-world/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/cyberpunk-night-city/README.en.md"><img src="style-packages/game-art/cyberpunk-night-city/gallery-16x9.jpg" width="230" alt="Grounded Neon Future City Game Art representative image"></a><br><strong>Grounded Neon Future City Game Art</strong><br><a href="style-packages/game-art/cyberpunk-night-city/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/death-stranding-cinematic-wilderness/README.en.md"><img src="style-packages/game-art/death-stranding-cinematic-wilderness/gallery-16x9.jpg" width="230" alt="Cinematic Connected Wilderness Game Art representative image"></a><br><strong>Cinematic Connected Wilderness Game Art</strong><br><a href="style-packages/game-art/death-stranding-cinematic-wilderness/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/control-paranormal-architecture/README.en.md"><img src="style-packages/game-art/control-paranormal-architecture/gallery-16x9.jpg" width="230" alt="Paranormal Bureaucratic Architecture Game Art representative image"></a><br><strong>Paranormal Bureaucratic Architecture Game Art</strong><br><a href="style-packages/game-art/control-paranormal-architecture/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/control-paranormal-architecture/README.en.md"><img src="style-packages/game-art/control-paranormal-architecture/gallery-16x9.jpg" width="230" alt="Paranormal Bureaucratic Architecture Game Art representative image"></a><br><strong>Paranormal Bureaucratic Architecture Game Art</strong><br><a href="style-packages/game-art/control-paranormal-architecture/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/hades-mythic-illustration/README.en.md"><img src="style-packages/game-art/hades-mythic-illustration/gallery-16x9.jpg" width="230" alt="High-Contrast Mythic Illustration Game Art representative image"></a><br><strong>High-Contrast Mythic Illustration Game Art</strong><br><a href="style-packages/game-art/hades-mythic-illustration/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/hi-fi-rush-rhythm-comic/README.en.md"><img src="style-packages/game-art/hi-fi-rush-rhythm-comic/gallery-16x9.jpg" width="230" alt="Rhythm Comic Cel-Shaded Game Art representative image"></a><br><strong>Rhythm Comic Cel-Shaded Game Art</strong><br><a href="style-packages/game-art/hi-fi-rush-rhythm-comic/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/disco-elysium-painterly-noir/README.en.md"><img src="style-packages/game-art/disco-elysium-painterly-noir/gallery-16x9.jpg" width="230" alt="Painterly Noir Graphic-RPG Game Art representative image"></a><br><strong>Painterly Noir Graphic-RPG Game Art</strong><br><a href="style-packages/game-art/disco-elysium-painterly-noir/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/disco-elysium-painterly-noir/README.en.md"><img src="style-packages/game-art/disco-elysium-painterly-noir/gallery-16x9.jpg" width="230" alt="Painterly Noir Graphic-RPG Game Art representative image"></a><br><strong>Painterly Noir Graphic-RPG Game Art</strong><br><a href="style-packages/game-art/disco-elysium-painterly-noir/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/elden-ring-dark-fantasy/README.en.md"><img src="style-packages/game-art/elden-ring-dark-fantasy/gallery-16x9.jpg" width="230" alt="Dark Mythic Fantasy Game Art representative image"></a><br><strong>Dark Mythic Fantasy Game Art</strong><br><a href="style-packages/game-art/elden-ring-dark-fantasy/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/stray-neon-cybercity/README.en.md"><img src="style-packages/game-art/stray-neon-cybercity/gallery-16x9.jpg" width="230" alt="Neon Ruined-City Game Art representative image"></a><br><strong>Neon Ruined-City Game Art</strong><br><a href="style-packages/game-art/stray-neon-cybercity/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/ori-luminous-forest/README.en.md"><img src="style-packages/game-art/ori-luminous-forest/gallery-16x9.jpg" width="230" alt="Luminous Hand-Painted Forest Game Art representative image"></a><br><strong>Luminous Hand-Painted Forest Game Art</strong><br><a href="style-packages/game-art/ori-luminous-forest/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/ori-luminous-forest/README.en.md"><img src="style-packages/game-art/ori-luminous-forest/gallery-16x9.jpg" width="230" alt="Luminous Hand-Painted Forest Game Art representative image"></a><br><strong>Luminous Hand-Painted Forest Game Art</strong><br><a href="style-packages/game-art/ori-luminous-forest/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/rpg-maker-pixel-art/README.en.md"><img src="style-packages/game-art/rpg-maker-pixel-art/gallery-16x9.jpg" width="230" alt="RPG Maker Pixel Art representative image"></a><br><strong>RPG Maker Pixel Art</strong><br><a href="style-packages/game-art/rpg-maker-pixel-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/hollow-knight-inked-gothic/README.en.md"><img src="style-packages/game-art/hollow-knight-inked-gothic/gallery-16x9.jpg" width="230" alt="Inked Gothic Metroidvania Game Art representative image"></a><br><strong>Inked Gothic Metroidvania Game Art</strong><br><a href="style-packages/game-art/hollow-knight-inked-gothic/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/journey-minimalist-desert/README.en.md"><img src="style-packages/game-art/journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="Minimalist Desert Journey Game Art representative image"></a><br><strong>Minimalist Desert Journey Game Art</strong><br><a href="style-packages/game-art/journey-minimalist-desert/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/journey-minimalist-desert/README.en.md"><img src="style-packages/game-art/journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="Minimalist Desert Journey Game Art representative image"></a><br><strong>Minimalist Desert Journey Game Art</strong><br><a href="style-packages/game-art/journey-minimalist-desert/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.en.md"><img src="style-packages/game-art/final-fantasy-ix-painted-fantasy/gallery-16x9.jpg" width="230" alt="Storybook Fantasy RPG Game Art representative image"></a><br><strong>Storybook Fantasy RPG Game Art</strong><br><a href="style-packages/game-art/final-fantasy-ix-painted-fantasy/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/ink-wash-adventure/README.en.md"><img src="style-packages/game-art/ink-wash-adventure/gallery-16x9.jpg" width="230" alt="Ink-Wash Adventure Game Art representative image"></a><br><strong>Ink-Wash Adventure Game Art</strong><br><a href="style-packages/game-art/ink-wash-adventure/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/retro-3d-console/README.en.md"><img src="style-packages/game-art/retro-3d-console/gallery-16x9.jpg" width="230" alt="Retro 3D Console Game Art representative image"></a><br><strong>Retro 3D Console Game Art</strong><br><a href="style-packages/game-art/retro-3d-console/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/retro-3d-console/README.en.md"><img src="style-packages/game-art/retro-3d-console/gallery-16x9.jpg" width="230" alt="Retro 3D Console Game Art representative image"></a><br><strong>Retro 3D Console Game Art</strong><br><a href="style-packages/game-art/retro-3d-console/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/cuphead-rubber-hose-animation/README.en.md"><img src="style-packages/game-art/cuphead-rubber-hose-animation/gallery-16x9.jpg" width="230" alt="1930s Rubber-Hose Animation Game Art representative image"></a><br><strong>1930s Rubber-Hose Animation Game Art</strong><br><a href="style-packages/game-art/cuphead-rubber-hose-animation/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/ps1-survival-horror-low-poly/README.en.md"><img src="style-packages/game-art/ps1-survival-horror-low-poly/gallery-16x9.jpg" width="230" alt="Early 3D Survival-Horror Game Art representative image"></a><br><strong>Early 3D Survival-Horror Game Art</strong><br><a href="style-packages/game-art/ps1-survival-horror-low-poly/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-point-and-click/README.en.md"><img src="style-packages/game-art/hand-painted-point-and-click/gallery-16x9.jpg" width="230" alt="Hand-Painted Point-and-Click Adventure Game Art representative image"></a><br><strong>Hand-Painted Point-and-Click Adventure Game Art</strong><br><a href="style-packages/game-art/hand-painted-point-and-click/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-point-and-click/README.en.md"><img src="style-packages/game-art/hand-painted-point-and-click/gallery-16x9.jpg" width="230" alt="Hand-Painted Point-and-Click Adventure Game Art representative image"></a><br><strong>Hand-Painted Point-and-Click Adventure Game Art</strong><br><a href="style-packages/game-art/hand-painted-point-and-click/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/paper-cut-puppet-game-art/README.en.md"><img src="style-packages/game-art/paper-cut-puppet-game-art/gallery-16x9.jpg" width="230" alt="Paper-cut Puppet 2D Game Art representative image"></a><br><strong>Paper-cut Puppet 2D Game Art</strong><br><a href="style-packages/game-art/paper-cut-puppet-game-art/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.en.md"><img src="style-packages/game-art/monochrome-1bit-deduction-game-art/gallery-16x9.jpg" width="230" alt="Monochrome 1-bit Deduction Game Art representative image"></a><br><strong>Monochrome 1-bit Deduction Game Art</strong><br><a href="style-packages/game-art/monochrome-1bit-deduction-game-art/README.en.md">Open README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.en.md"><img src="style-packages/game-art/japanese-cel-shaded-action-game-art/gallery-16x9.jpg" width="230" alt="Japanese Cel-Shaded Action Game Art representative image"></a><br><strong>Japanese Cel-Shaded Action Game Art</strong><br><a href="style-packages/game-art/japanese-cel-shaded-action-game-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/hand-painted-isometric-strategy/README.en.md"><img src="style-packages/game-art/hand-painted-isometric-strategy/gallery-16x9.jpg" width="230" alt="Hand-Painted Isometric Strategy Game Art representative image"></a><br><strong>Hand-Painted Isometric Strategy Game Art</strong><br><a href="style-packages/game-art/hand-painted-isometric-strategy/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.en.md"><img src="style-packages/game-art/spiritfarer-hand-drawn-game-art/gallery-16x9.jpg" width="230" alt="Spiritfarer Hand-Drawn Game Art representative image"></a><br><strong>Spiritfarer Hand-Drawn Game Art</strong><br><a href="style-packages/game-art/spiritfarer-hand-drawn-game-art/README.en.md">Open README</a></td>
 </tr>
 </table>
 
 ### Techniques and media
 
 <table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/japanese-mokuhanga/README.en.md"><img src="style-packages/techniques/japanese-mokuhanga/gallery-16x9.jpg" width="230" alt="Japanese water-based woodblock printing representative image"></a><br><strong>Japanese Water-Based Woodblock Printing</strong><br><a href="style-packages/techniques/japanese-mokuhanga/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/batik-wax-resist/README.en.md"><img src="style-packages/techniques/batik-wax-resist/gallery-16x9.jpg" width="230" alt="Batik Wax-Resist Dyeing representative"></a><br><strong>Batik Wax-Resist Dyeing</strong><br><a href="style-packages/techniques/batik-wax-resist/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/suminagashi/README.en.md"><img src="style-packages/techniques/suminagashi/gallery-16x9.jpg" width="230" alt="Suminagashi representative image"></a><br><strong>Suminagashi</strong><br><a href="style-packages/techniques/suminagashi/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/photopolymer-intaglio/README.en.md"><img src="style-packages/techniques/photopolymer-intaglio/gallery-16x9.jpg" width="230" alt="Photopolymer Intaglio representative image"></a><br><strong>Photopolymer Intaglio</strong><br><a href="style-packages/techniques/photopolymer-intaglio/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
-<tr><td width="33%" valign="top" align="center"><a href="style-packages/techniques/collagraph-printmaking/README.en.md"><img src="style-packages/techniques/collagraph-printmaking/gallery-16x9.jpg" width="230" alt="Collagraph Printmaking representative image"></a><br><strong>Collagraph Printmaking</strong><br><a href="style-packages/techniques/collagraph-printmaking/README.en.md">Open README</a></td></tr>
-</table>
-
-<table>
 <tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/japanese-mokuhanga/README.en.md"><img src="style-packages/techniques/japanese-mokuhanga/gallery-16x9.jpg" width="230" alt="Japanese water-based woodblock printing representative image"></a><br><strong>Japanese Water-Based Woodblock Printing</strong><br><a href="style-packages/techniques/japanese-mokuhanga/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/batik-wax-resist/README.en.md"><img src="style-packages/techniques/batik-wax-resist/gallery-16x9.jpg" width="230" alt="Batik Wax-Resist Dyeing representative"></a><br><strong>Batik Wax-Resist Dyeing</strong><br><a href="style-packages/techniques/batik-wax-resist/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/suminagashi/README.en.md"><img src="style-packages/techniques/suminagashi/gallery-16x9.jpg" width="230" alt="Suminagashi representative image"></a><br><strong>Suminagashi</strong><br><a href="style-packages/techniques/suminagashi/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/photopolymer-intaglio/README.en.md"><img src="style-packages/techniques/photopolymer-intaglio/gallery-16x9.jpg" width="230" alt="Photopolymer Intaglio representative image"></a><br><strong>Photopolymer Intaglio</strong><br><a href="style-packages/techniques/photopolymer-intaglio/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/collagraph-printmaking/README.en.md"><img src="style-packages/techniques/collagraph-printmaking/gallery-16x9.jpg" width="230" alt="Collagraph Printmaking representative image"></a><br><strong>Collagraph Printmaking</strong><br><a href="style-packages/techniques/collagraph-printmaking/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/screen-printing/README.en.md"><img src="style-packages/techniques/screen-printing/gallery-16x9.jpg" width="230" alt="Screen Printing representative image"></a><br><strong>Screen Printing</strong><br><a href="style-packages/techniques/screen-printing/README.en.md">Open README</a></td>
+</tr>
+<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/drypoint-etching/README.en.md"><img src="style-packages/techniques/drypoint-etching/gallery-16x9.jpg" width="230" alt="Drypoint Etching representative image"></a><br><strong>Drypoint Etching</strong><br><a href="style-packages/techniques/drypoint-etching/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/woodcut/README.en.md"><img src="style-packages/techniques/woodcut/gallery-16x9.jpg" width="230" alt="Woodcut representative image"></a><br><strong>Woodcut</strong><br><a href="style-packages/techniques/woodcut/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/cyanotype/README.en.md"><img src="style-packages/techniques/cyanotype/gallery-16x9.jpg" width="230" alt="Cyanotype representative image"></a><br><strong>Cyanotype</strong><br><a href="style-packages/techniques/cyanotype/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/cyanotype/README.en.md"><img src="style-packages/techniques/cyanotype/gallery-16x9.jpg" width="230" alt="Cyanotype representative image"></a><br><strong>Cyanotype</strong><br><a href="style-packages/techniques/cyanotype/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/watercolor/README.en.md"><img src="style-packages/techniques/watercolor/gallery-16x9.jpg" width="230" alt="Watercolor representative image"></a><br><strong>Watercolor</strong><br><a href="style-packages/techniques/watercolor/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/oil-painting/README.en.md"><img src="style-packages/techniques/oil-painting/gallery-16x9.jpg" width="230" alt="Oil Painting representative image"></a><br><strong>Oil Painting</strong><br><a href="style-packages/techniques/oil-painting/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/gum-bichromate/README.en.md"><img src="style-packages/techniques/gum-bichromate/gallery-16x9.jpg" width="230" alt="Gum Bichromate Printing representative image"></a><br><strong>Gum Bichromate Printing</strong><br><a href="style-packages/techniques/gum-bichromate/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/gum-bichromate/README.en.md"><img src="style-packages/techniques/gum-bichromate/gallery-16x9.jpg" width="230" alt="Gum Bichromate Printing representative image"></a><br><strong>Gum Bichromate Printing</strong><br><a href="style-packages/techniques/gum-bichromate/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/encaustic-painting/README.en.md"><img src="style-packages/techniques/encaustic-painting/gallery-16x9.jpg" width="230" alt="Encaustic Painting representative image"></a><br><strong>Encaustic Painting</strong><br><a href="style-packages/techniques/encaustic-painting/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/fresco-painting/README.en.md"><img src="style-packages/techniques/fresco-painting/gallery-16x9.jpg" width="230" alt="Fresco Painting representative image"></a><br><strong>Fresco Painting</strong><br><a href="style-packages/techniques/fresco-painting/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/linocut-printmaking/README.en.md"><img src="style-packages/techniques/linocut-printmaking/gallery-16x9.jpg" width="230" alt="Linocut Printmaking representative image"></a><br><strong>Linocut Printmaking</strong><br><a href="style-packages/techniques/linocut-printmaking/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/linocut-printmaking/README.en.md"><img src="style-packages/techniques/linocut-printmaking/gallery-16x9.jpg" width="230" alt="Linocut Printmaking representative image"></a><br><strong>Linocut Printmaking</strong><br><a href="style-packages/techniques/linocut-printmaking/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/mezzotint-printmaking/README.en.md"><img src="style-packages/techniques/mezzotint-printmaking/gallery-16x9.jpg" width="230" alt="Mezzotint Printmaking representative image"></a><br><strong>Mezzotint Printmaking</strong><br><a href="style-packages/techniques/mezzotint-printmaking/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/collage-mixed-media/README.en.md"><img src="style-packages/techniques/collage-mixed-media/gallery-16x9.jpg" width="230" alt="Collage Mixed Media representative image"></a><br><strong>Collage Mixed Media</strong><br><a href="style-packages/techniques/collage-mixed-media/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/filigree/README.en.md"><img src="style-packages/techniques/filigree/gallery-16x9.jpg" width="230" alt="Filigree representative image"></a><br><strong>Filigree</strong><br><a href="style-packages/techniques/filigree/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/filigree/README.en.md"><img src="style-packages/techniques/filigree/gallery-16x9.jpg" width="230" alt="Filigree representative image"></a><br><strong>Filigree</strong><br><a href="style-packages/techniques/filigree/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/acanthus-ornament/README.en.md"><img src="style-packages/techniques/acanthus-ornament/gallery-16x9.jpg" width="230" alt="Acanthus Ornament representative image"></a><br><strong>Acanthus Ornament</strong><br><a href="style-packages/techniques/acanthus-ornament/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/conceptual-sketch/README.en.md"><img src="style-packages/techniques/conceptual-sketch/gallery-16x9.jpg" width="230" alt="Conceptual Sketch representative image"></a><br><strong>Conceptual Sketch</strong><br><a href="style-packages/techniques/conceptual-sketch/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/luxury-typography/README.en.md"><img src="style-packages/techniques/luxury-typography/gallery-16x9.jpg" width="230" alt="Luxury Typography representative image"></a><br><strong>Luxury Typography</strong><br><a href="style-packages/techniques/luxury-typography/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/luxury-typography/README.en.md"><img src="style-packages/techniques/luxury-typography/gallery-16x9.jpg" width="230" alt="Luxury Typography representative image"></a><br><strong>Luxury Typography</strong><br><a href="style-packages/techniques/luxury-typography/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/grid-3x3/README.en.md"><img src="style-packages/techniques/grid-3x3/gallery-16x9.jpg" width="230" alt="3×3 Grid Design representative image"></a><br><strong>3×3 Grid Design</strong><br><a href="style-packages/techniques/grid-3x3/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/bento-grid/README.en.md"><img src="style-packages/techniques/bento-grid/gallery-16x9.jpg" width="230" alt="Bento Grid representative image"></a><br><strong>Bento Grid</strong><br><a href="style-packages/techniques/bento-grid/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/risograph-printing/README.en.md"><img src="style-packages/techniques/risograph-printing/gallery-16x9.jpg" width="230" alt="Risograph Printing representative image"></a><br><strong>Risograph Printing</strong><br><a href="style-packages/techniques/risograph-printing/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="33%" valign="top" align="center"><a href="style-packages/techniques/risograph-printing/README.en.md"><img src="style-packages/techniques/risograph-printing/gallery-16x9.jpg" width="230" alt="Risograph Printing representative image"></a><br><strong>Risograph Printing</strong><br><a href="style-packages/techniques/risograph-printing/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/photomontage/README.en.md"><img src="style-packages/techniques/photomontage/gallery-16x9.jpg" width="230" alt="Photomontage representative image"></a><br><strong>Photomontage</strong><br><a href="style-packages/techniques/photomontage/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/frottage/README.en.md"><img src="style-packages/techniques/frottage/gallery-16x9.jpg" width="230" alt="Frottage representative image"></a><br><strong>Frottage</strong><br><a href="style-packages/techniques/frottage/README.en.md">Open README</a></td>
-</tr>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/lithography/README.en.md"><img src="style-packages/techniques/lithography/gallery-16x9.jpg" width="230" alt="Lithography representative image"></a><br><strong>Lithography</strong><br><a href="style-packages/techniques/lithography/README.en.md">Open README</a></td>
 </tr>
-</table>
-<table>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/monotype-printmaking/README.en.md"><img src="style-packages/techniques/monotype-printmaking/gallery-16x9.jpg" width="230" alt="Monotype Printmaking representative"></a><br><strong>Monotype Printmaking</strong><br><a href="style-packages/techniques/monotype-printmaking/README.en.md">Open README</a></td>
-</tr>
-</table>
-<table>
-<tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/platinum-palladium-printing/README.en.md"><img src="style-packages/techniques/platinum-palladium-printing/gallery-16x9.jpg" width="230" alt="Platinum–Palladium Printing representative image"></a><br><strong>Platinum–Palladium Printing</strong><br><a href="style-packages/techniques/platinum-palladium-printing/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/ebru-paper-marbling/README.en.md"><img src="style-packages/techniques/ebru-paper-marbling/gallery-16x9.jpg" width="230" alt="Ebru Paper Marbling representative image"></a><br><strong>Ebru Paper Marbling</strong><br><a href="style-packages/techniques/ebru-paper-marbling/README.en.md">Open README</a></td>
 </tr>
 </table>
 
