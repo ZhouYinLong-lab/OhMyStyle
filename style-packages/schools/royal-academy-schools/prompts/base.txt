@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 观察先于装饰的形体判断
+- 工作室式材料意识和反复推敲
+- 受控构图、比例和明暗关系
+- 保留个人笔触或材料选择，而不是套用统一滤镜
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先明确主体的比例、结构和光线
+- 使用工作室式的材料与表面逻辑
+- 让细节服务于观察结果而非装饰堆叠
+- 保留适度个人判断，不强行统一成单一风格
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

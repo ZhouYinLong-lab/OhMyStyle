@@ -1,0 +1,20 @@
+package_id: royal-academy-schools
+package_version: 0.1.0
+curation_status: draft
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+- url: https://royal-academy-production-asset.s3.amazonaws.com/uploads/6feabd1b-80a0-4806-a2b8-f1b44ba1c595/RA%20Schools%20Background%20and%20History%2020.5.24.pdf
+  title: 皇家美术学院学校历史资料
+  authority: 皇家美术学院
+  supports: source traceability and package scope
+attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+- Do not bundle an external artwork, photograph, screenshot, logo, or dataset item unless redistribution rights are verified.
+- Link-only sources are acceptable for research when local redistribution is not permitted.
+- The generated example is an original anonymous scene and is not the source work.
+related_movements: []
+related_concepts: []
+influences_to_review: []
+not_equivalent_to:
+- generic color filter
+- subject-specific composition

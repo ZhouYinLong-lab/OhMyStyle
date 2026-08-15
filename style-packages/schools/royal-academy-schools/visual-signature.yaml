@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+composition:
+- 观察先于装饰的形体判断
+- 工作室式材料意识和反复推敲
+palette:
+- 工作室式材料意识和反复推敲
+- 受控构图、比例和明暗关系
+lighting:
+  quality: 受控构图、比例和明暗关系
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 保留个人笔触或材料选择，而不是套用统一滤镜
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- 观察先于装饰的形体判断
+- 工作室式材料意识和反复推敲
+- 受控构图、比例和明暗关系
+- 保留个人笔触或材料选择，而不是套用统一滤镜
+- the requested subject stays unchanged

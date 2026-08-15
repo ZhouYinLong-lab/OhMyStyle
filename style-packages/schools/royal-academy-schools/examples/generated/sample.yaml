@@ -1,0 +1,38 @@
+example_id: anonymous-demo
+subject: an ordinary folded fabric and a plain cup on a studio table, original anonymous study
+source_artwork_copied: false
+status: generated
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 用普通静物演示观察与材料训练；不默认生成学院题材
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: 需用用户主体进行测试；不得把代表图主体当作默认主体。
+  distinctive_signature:
+    score: null
+    notes: ''
+  visual_overlap:
+    score: null
+    notes: ''
+  cross_subject_stability:
+    score: null
+    notes: ''
+image_audit:
+  status: pending
+  notes: 代表图为原创建的匿名演示；提交后执行资源审计。
+signature:
+- 观察先于装饰的形体判断
+- 工作室式材料意识和反复推敲
+- 受控构图、比例和明暗关系
+controls:
+- composition
+- palette
+- lighting
+- surface
+does_not_control:
+- subject identity
+- object count
+- location
+- story or narrative event
+- text, logo, or brand

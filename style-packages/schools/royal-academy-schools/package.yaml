@@ -1,0 +1,32 @@
+id: royal-academy-schools
+name: 皇家美术学院学校
+kind: school
+domain: painting
+version: 0.1.0
+summary: 以长期工作室实践、写生训练、材料研究和个人视觉语言发展组织创作过程，强调训练方法而非固定画面题材。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: design_school
+  medium: 学院训练与工作室实践
+  historical_context: 十八世纪以来英国美术学院教育与当代工作室实践
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

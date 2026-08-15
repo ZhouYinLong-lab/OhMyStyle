@@ -1,0 +1,13 @@
+canonical_name: 皇家美术学院学校
+entity_type: school
+domain: painting
+historical_context: 十八世纪以来英国美术学院教育与当代工作室实践
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量和动作始终优先；示例和测试题材不是默认生成要求。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character or branded asset
+sources:
+- https://royal-academy-production-asset.s3.amazonaws.com/uploads/6feabd1b-80a0-4806-a2b8-f1b44ba1c595/RA%20Schools%20Background%20and%20History%2020.5.24.pdf

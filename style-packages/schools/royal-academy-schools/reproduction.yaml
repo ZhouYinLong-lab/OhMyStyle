@@ -1,0 +1,18 @@
+medium: 十八世纪以来英国美术学院教育与当代工作室实践 学院训练与工作室实践
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+- 先明确主体的比例、结构和光线
+- 使用工作室式的材料与表面逻辑
+- 让细节服务于观察结果而非装饰堆叠
+- 保留适度个人判断，不强行统一成单一风格
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+  game asset.
