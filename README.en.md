@@ -197,6 +197,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/rene-magritte/README.en.md"><img src="style-packages/artists/rene-magritte/gallery-16x9.jpg" width="230" alt="René Magritte representative image"></a><br><strong>René Magritte</strong><br><a href="style-packages/artists/rene-magritte/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/albrecht-durer/README.en.md"><img src="style-packages/artists/albrecht-durer/gallery-16x9.jpg" width="230" alt="Albrecht Durer representative image"></a><br><strong>Albrecht Durer</strong><br><a href="style-packages/artists/albrecht-durer/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/artists/titian/README.en.md"><img src="style-packages/artists/titian/gallery-16x9.jpg" width="230" alt="Titian representative image"></a><br><strong>Titian</strong><br><a href="style-packages/artists/titian/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Photographers
@@ -301,6 +304,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/shomei-tomatsu/README.en.md"><img src="style-packages/photographers/shomei-tomatsu/gallery-16x9.jpg" width="230" alt="Shomei Tomatsu representative image"></a><br><strong>Shomei Tomatsu</strong><br><a href="style-packages/photographers/shomei-tomatsu/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/lillian-bassman/README.en.md"><img src="style-packages/photographers/lillian-bassman/gallery-16x9.jpg" width="230" alt="Lillian Bassman representative image"></a><br><strong>Lillian Bassman</strong><br><a href="style-packages/photographers/lillian-bassman/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/erwin-blumenfeld/README.en.md"><img src="style-packages/photographers/erwin-blumenfeld/gallery-16x9.jpg" width="230" alt="Erwin Blumenfeld representative image"></a><br><strong>Erwin Blumenfeld</strong><br><a href="style-packages/photographers/erwin-blumenfeld/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/photographers/michael-kenna/README.en.md"><img src="style-packages/photographers/michael-kenna/gallery-16x9.jpg" width="230" alt="Michael Kenna representative image"></a><br><strong>Michael Kenna</strong><br><a href="style-packages/photographers/michael-kenna/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -485,6 +491,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/vorticism/README.en.md"><img src="style-packages/movements/vorticism/gallery-16x9.jpg" width="230" alt="Vorticism representative image"></a><br><strong>Vorticism</strong><br><a href="style-packages/movements/vorticism/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/neo-dada/README.en.md"><img src="style-packages/movements/neo-dada/gallery-16x9.jpg" width="230" alt="Neo-Dada representative image"></a><br><strong>Neo-Dada</strong><br><a href="style-packages/movements/neo-dada/README.en.md">Open README</a></td>
 </tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/movements/orientalism/README.en.md"><img src="style-packages/movements/orientalism/gallery-16x9.jpg" width="230" alt="Orientalism representative image"></a><br><strong>Orientalism</strong><br><a href="style-packages/movements/orientalism/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Original presets
@@ -606,8 +615,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.en.md"><img src="style-packages/game-art/pentiment-medieval-manuscript-game-art/gallery-16x9.jpg" width="230" alt="Pentiment Medieval Manuscript Game Art representative image"></a><br><strong>Pentiment Medieval Manuscript Game Art</strong><br><a href="style-packages/game-art/pentiment-medieval-manuscript-game-art/README.en.md">Open README</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top" align="center"><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md"><img src="style-packages/game-art/monument-valley-impossible-geometry/gallery-16x9.jpg" width="230" alt="Monument Valley Impossible Geometry Game Art representative image"></a><br><strong>Monument Valley Impossible Geometry Game Art</strong><br><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md">Open README</a></td>
-<td width="50%" valign="top" align="center"><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md"><img src="style-packages/game-art/gris-watercolor-game-art/gallery-16x9.jpg" width="230" alt="GRIS Watercolor Game Art representative image"></a><br><strong>GRIS Watercolor Game Art</strong><br><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md"><img src="style-packages/game-art/monument-valley-impossible-geometry/gallery-16x9.jpg" width="230" alt="Monument Valley Impossible Geometry Game Art representative image"></a><br><strong>Monument Valley Impossible Geometry Game Art</strong><br><a href="style-packages/game-art/monument-valley-impossible-geometry/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md"><img src="style-packages/game-art/gris-watercolor-game-art/gallery-16x9.jpg" width="230" alt="GRIS Watercolor Game Art representative image"></a><br><strong>GRIS Watercolor Game Art</strong><br><a href="style-packages/game-art/gris-watercolor-game-art/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/okami-sumi-e-game-art/README.en.md"><img src="style-packages/game-art/okami-sumi-e-game-art/gallery-16x9.jpg" width="230" alt="Ōkami Sumi-e Game Art representative image"></a><br><strong>Ōkami Sumi-e Game Art</strong><br><a href="style-packages/game-art/okami-sumi-e-game-art/README.en.md">Open README</a></td>
 </tr>
 </table>
 
@@ -668,6 +678,9 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/albumen-printing/README.en.md"><img src="style-packages/techniques/albumen-printing/gallery-16x9.jpg" width="230" alt="Albumen Printing representative image"></a><br><strong>Albumen Printing</strong><br><a href="style-packages/techniques/albumen-printing/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/salted-paper-printing/README.en.md"><img src="style-packages/techniques/salted-paper-printing/gallery-16x9.jpg" width="230" alt="Salted Paper Printing representative image"></a><br><strong>Salted Paper Printing</strong><br><a href="style-packages/techniques/salted-paper-printing/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/photogravure/README.en.md"><img src="style-packages/techniques/photogravure/gallery-16x9.jpg" width="230" alt="Photogravure representative image"></a><br><strong>Photogravure</strong><br><a href="style-packages/techniques/photogravure/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="100%" valign="top" align="center"><a href="style-packages/techniques/stained-glass/README.en.md"><img src="style-packages/techniques/stained-glass/gallery-16x9.jpg" width="230" alt="Stained Glass representative image"></a><br><strong>Stained Glass</strong><br><a href="style-packages/techniques/stained-glass/README.en.md">Open README</a></td>
 </tr>
 </table>
 
