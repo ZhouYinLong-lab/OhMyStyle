@@ -31,7 +31,7 @@ Apply an experimental mid-century photographic language: graphic crop, transpare
 
 本包依据公开机构或官方页面提取可观察的视觉线索，仅保存来源链接，不复制原作图像、角色、关卡、标志或版式：
 
-- [MoMA: Erwin Blumenfeld](https://www.moma.org/artists/618-erwin-blumenfeld)
+- [现代艺术博物馆：埃尔温·布卢门菲尔德](https://www.moma.org/artists/618-erwin-blumenfeld)
 
 ## 文件
 
