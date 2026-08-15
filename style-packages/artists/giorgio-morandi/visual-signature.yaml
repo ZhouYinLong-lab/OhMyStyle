@@ -1,0 +1,21 @@
+composition:
+  - Compress the scene into a quiet horizontal band with restrained spacing and small shifts in height.
+  - Let adjacent forms nearly touch without becoming a decorative still-life arrangement.
+palette:
+  - Use chalky warm gray, muted rose, smoke blue, ochre, and olive relationships with low saturation.
+  - Keep neighboring colors close in value so separation comes from contour, overlap, and temperature.
+lighting:
+  quality: broad diffuse studio daylight
+  behavior:
+    - Use soft side-to-front light with shallow, continuous value changes.
+    - Keep shadows present but quiet; avoid theatrical highlights.
+surface:
+  finish: dry matte paint with thin translucent passages
+  edges: softened edges with a few deliberately resolved contours
+texture:
+  density: low to moderate
+  placement: visible in paint film and paper support, never as a global grain filter
+invariants:
+  - restrained object spacing and compressed depth
+  - close-value muted palette
+  - quiet diffuse light and softened contour hierarchy

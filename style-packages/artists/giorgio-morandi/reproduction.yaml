@@ -1,0 +1,17 @@
+medium: oil painting with dry, thinly layered passages
+materials:
+  support: primed canvas or warm off-white paper
+process:
+  - establish a warm low-contrast ground
+  - place the user-supplied subject with measured spacing
+  - add muted color planes, then resolve only selected edges
+technical_direction:
+  contrast: low to moderate
+  saturation: muted
+  perspective: shallow, stable, and slightly compressed
+  detail_density: selective
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
