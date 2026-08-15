@@ -1,0 +1,35 @@
+profiles:
+  generic:
+    required:
+      - quiet color separation and observational distance are observable
+      - ordinary subject remains legible and independent
+      - no copied reference photograph or branded material
+    reject_if:
+      - output is only a faded color filter
+      - text, logo, watermark, or unintended signature is present
+  portrait:
+    required:
+      - person remains natural and not converted into a posed fashion advertisement
+  still_life:
+    required:
+      - scale and surface relations remain plausible
+minimum_score: 7
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
+  distinctive_signature:
+    score: null
+    notes: Record the role of quiet color, distance, and scale relations.
+  visual_overlap:
+    score: null
+    notes: Compare with New Topographics and muted documentary packages.
+  cross_subject_stability:
+    score: null
+    notes: Do not mark complete without outputs for at least two different subjects.
+subject_independence_suite:
+  status: pending
+  fixture: benchmarks/subject-independence.yaml
+  required_subjects:
+    - ordinary-chair
+    - unspecified-building

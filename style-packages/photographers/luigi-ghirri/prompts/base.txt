@@ -1,0 +1,15 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: observation distance, scale,
+  composition, daylight, color, surface, and grain.
+- Do not add a recurring object, landmark, map, model, country, or narrative motif
+  unless the user explicitly requests it.
+
+Create a restrained color photograph of {SUBJECT} in {LOCATION}. Observe it from a
+calm, slightly detached distance. Use a simple horizontal or architectural order,
+quiet negative space, modest edge cropping, and a subtle relationship between real
+surfaces and their representations when the subject naturally supports it. Use
+diffuse daylight, low-to-medium contrast, muted but separated colors, and fine
+photographic grain. Keep ordinary details visible without turning the scene into a
+travel postcard. Preserve the user-supplied subject and narrative; do not copy a
+reference photograph, landmark, logo, or text.

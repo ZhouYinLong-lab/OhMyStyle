@@ -1,0 +1,33 @@
+id: luigi-ghirri
+name: 路易吉·吉里
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以克制的彩色摄影、柔和的光线和地图、模型、建筑之间的尺度错位，观察现实如何被图像重新组织。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '二十世纪后期意大利彩色摄影'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

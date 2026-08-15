@@ -1,0 +1,21 @@
+composition:
+  - 使用克制的水平线、边缘裁切和留白，让主体像被安静地放置在观察框中。
+  - 可以让真实物体与图像、模型或标识发生尺度关系，但不能把某一种替代物写成固定题材。
+palette:
+  - 低至中饱和的粉灰、沙色、浅蓝、褪绿和砖红，颜色之间保持细小而清楚的温差。
+  - 避免戏剧化的黑白对比和统一复古滤镜，让色彩像自然光下的旧印刷或褪色照片。
+lighting:
+  quality: diffuse natural daylight with restrained contrast
+  behavior:
+    - 光线平稳、方向不夸张，保留表面细节与轻微空气感。
+    - 阴影不压黑，亮部不制造商业棚拍高光。
+surface:
+  finish: fine-grained color photograph with quiet paper-like tonality
+  edges: clean but slightly softened photographic edges; no artificial vignette
+texture:
+  density: low_to_medium
+  placement: subtle grain and material variation in walls, paper, asphalt, or painted surfaces
+invariants:
+  - 观察距离、尺度关系和克制色彩在更换主体后仍然可见。
+  - 不要求地图、模型、海岸、意大利建筑或空旷广场。
+  - 图像感来自现实的轻微错位与颜色秩序，不来自强烈怀旧特效。

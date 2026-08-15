@@ -1,0 +1,15 @@
+canonical_name: 路易吉·吉里
+entity_type: photographer
+domain: photography
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、地点和叙事优先；本包研究尺度、图像中的图像和克制彩色摄影，不规定地图、模型或意大利地点。
+  subjects: []
+  exclusions:
+    - copied photograph
+    - named landmark as a default subject
+sources:
+  - 'https://www.moma.org/artists/39882-luigi-ghirri'
+  - 'https://fondazioneluigighirri.it/en/artist/biography'
+notes:
+  - 以柔和的彩色层、平静的观察距离和现实与再现之间的尺度错位构成视觉语言。
