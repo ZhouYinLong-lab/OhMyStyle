@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-276-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-281-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -184,6 +184,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/artists/yayoi-kusama/README.md"><img src="style-packages/artists/yayoi-kusama/gallery-16x9.jpg" width="230" alt="草间弥生代表图"></a><br><strong>草间弥生</strong><br><a href="style-packages/artists/yayoi-kusama/README.md">打开 README</a></td>
 </tr>
 </table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/joan-mitchell/README.md"><img src="style-packages/artists/joan-mitchell/gallery-16x9.jpg" width="230" alt="琼·米切尔代表图"></a><br><strong>琼·米切尔</strong><br><a href="style-packages/artists/joan-mitchell/README.md">打开 README</a></td>
+</tr>
+</table>
 
 ### 摄影师
 
@@ -277,6 +282,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="33%" valign="top" align="center"><a href="style-packages/photographers/todd-hido/README.md"><img src="style-packages/photographers/todd-hido/gallery-16x9.jpg" width="230" alt="托德·海多代表图"></a><br><strong>托德·海多</strong><br><a href="style-packages/photographers/todd-hido/README.md">打开 README</a></td>
 </tr>
 </table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/photographers/raghubir-singh/README.md"><img src="style-packages/photographers/raghubir-singh/gallery-16x9.jpg" width="230" alt="拉古比尔·辛格代表图"></a><br><strong>拉古比尔·辛格</strong><br><a href="style-packages/photographers/raghubir-singh/README.md">打开 README</a></td>
+</tr>
+</table>
 
 ### 设计学校
 
@@ -308,6 +318,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/schools/ecal/README.md"><img src="style-packages/schools/ecal/gallery-16x9.jpg" width="230" alt="洛桑艺术设计学院代表图"></a><br><strong>洛桑艺术设计学院</strong><br><a href="style-packages/schools/ecal/README.md">打开 README</a></td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/artcenter/README.md"><img src="style-packages/schools/artcenter/gallery-16x9.jpg" width="230" alt="艺术中心设计学院代表图"></a><br><strong>艺术中心设计学院</strong><br><a href="style-packages/schools/artcenter/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -434,6 +449,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/movements/art-informel/README.md"><img src="style-packages/movements/art-informel/gallery-16x9.jpg" width="230" alt="非形式艺术代表图"></a><br><strong>非形式艺术</strong><br><a href="style-packages/movements/art-informel/README.md">打开 README</a></td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/mexican-muralism/README.md"><img src="style-packages/movements/mexican-muralism/gallery-16x9.jpg" width="230" alt="墨西哥壁画运动代表图"></a><br><strong>墨西哥壁画运动</strong><br><a href="style-packages/movements/mexican-muralism/README.md">打开 README</a></td>
 </tr>
 </table>
 
@@ -593,6 +613,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="style-packages/techniques/lithography/README.md"><img src="style-packages/techniques/lithography/gallery-16x9.jpg" width="230" alt="石版画代表图"></a><br><strong>石版画</strong><br><a href="style-packages/techniques/lithography/README.md">打开 README</a></td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/techniques/monotype-printmaking/README.md"><img src="style-packages/techniques/monotype-printmaking/gallery-16x9.jpg" width="230" alt="单版画代表图"></a><br><strong>单版画</strong><br><a href="style-packages/techniques/monotype-printmaking/README.md">打开 README</a></td>
 </tr>
 </table>
 
