@@ -1,0 +1,23 @@
+package_id: gerhard-richter
+package_version: 0.1.0
+curation_status: curated_demo
+source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+sources:
+  - url: 'https://www.metmuseum.org/exhibitions/listings/2020/gerhard-richter-painting-after-all/exhibition-guide'
+    title: 'Gerhard Richter: Painting After All'
+    authority: 'The Metropolitan Museum of Art'
+    supports: source traceability and package scope
+
+attribution: 本包提取可观察的媒介与视觉决策，不宣称与艺术家存在合作、授权或背书关系，也不复制具体作品。
+rights_notes:
+  - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.
+  - Link-only references are acceptable for research when local redistribution is not permitted.
+asset: gallery-16x9.jpg
+status: generated_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: 玻璃花瓶与折叠衣物，仅作风格基准
+generated_at: 2026-08-15
+review:
+  decision: accepted_as_representative
+  notes: 代表图体现了横向刮擦、灰蓝底色和具象残留；主体不是包的固定要求。

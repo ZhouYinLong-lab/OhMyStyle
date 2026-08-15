@@ -1,0 +1,33 @@
+id: gerhard-richter
+name: 格哈德·里希特
+kind: artist
+domain: painting
+version: 0.1.0
+summary: >-
+  以照片绘画的柔焦、刮板拖拽和抽象色层在具象与非具象之间制造不确定的观看。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: '20世纪后半叶德国战后绘画'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

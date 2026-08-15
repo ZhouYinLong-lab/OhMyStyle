@@ -1,0 +1,23 @@
+medium: oil-painting logic over a photographic or observational base
+materials:
+  support: canvas or matte paper with visible tooth
+  tools:
+    - broad squeegee or palette knife
+    - dry brush
+    - soft wiping cloth
+process:
+  - Establish a quiet, legible arrangement of the user-supplied subject.
+  - Lay in a restrained gray-blue underpainting with selective warm accents.
+  - Drag broad semi-opaque layers horizontally across parts of the image.
+  - Wipe or scrape back selected areas so earlier forms remain visible through the surface.
+  - Restore only the key edges needed for recognition; leave secondary areas unresolved.
+technical_direction:
+  contrast: moderate global contrast with compressed midtones and a few firm dark anchors
+  saturation: low to medium, with controlled red or ochre interruptions
+  perspective: preserve the user's spatial logic; do not flatten every subject into a generic field
+  detail_density: selective detail, concentrated on the recognition anchor and reduced elsewhere
+avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, or branded layout.

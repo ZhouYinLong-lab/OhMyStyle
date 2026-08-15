@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls visual treatment only: medium, composition, lighting,
+  palette, surface, texture, and edge behavior.
+- Do not add a recurring object, setting, character, landmark, or narrative
+  motif unless the user explicitly requests it.
+
+Create a new image of {SUBJECT} in {LOCATION}. Apply a restrained photo-painting
+treatment: keep the main subject recognizable, but let broad horizontal scraped
+and wiped layers interrupt secondary forms. Use gray, blue-gray, off-white,
+muted red, and ochre with compressed midtones and a few firm dark anchors.
+Preserve canvas or matte-paper tooth, thin translucent veils, dry drag, and
+partial erasure. Keep the user's spatial logic and object identity. Do not
+introduce a new subject, location, story, logo, text, or copied composition.

@@ -1,0 +1,23 @@
+composition:
+  - 保留用户主体的一个清晰识别锚点，其余区域允许被横向层次打断。
+palette:
+  - 以雾灰、灰蓝和米白为基底，少量旧赭与褪红形成不规则暖色断裂。
+lighting:
+  quality: soft diffuse light
+  behavior:
+    - 明暗变化连续而克制，不依靠戏剧化轮廓光分离主体。
+surface:
+  finish: canvas or matte-paper tooth with layered paint
+  edges: some edges restored, others dragged, wiped, and partially erased
+texture:
+  density: medium, with broad horizontal squeegee bands
+  placement: concentrated around secondary forms and surface transitions
+invariants:
+  - 用户提供的主体仍然可辨，抽象来自材料处理而非随机换题。
+  - 画面同时保留具象残留与被擦除的绘画层。
+  - 不重建具体作品的构图、标题或可识别来源图像。
+anti_signatures:
+  - uniform digital blur
+  - glossy photorealism
+  - decorative global color grading
+  - random geometry replacing the supplied subject

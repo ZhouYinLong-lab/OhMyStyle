@@ -1,0 +1,20 @@
+canonical_name: 格哈德·里希特
+entity_type: artist
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体优先；示例只用于检验视觉语言，不是默认场景要求。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 玻璃花瓶与折叠衣物
+  exclusions:
+    - copied composition
+    - named character or branded asset
+sources:
+  - 'https://www.metmuseum.org/exhibitions/listings/2020/gerhard-richter-painting-after-all/exhibition-guide'
+
+notes:
+  - 关注照片式识别、绘画性拖拽和抽象层之间的不稳定边界。
+  - 具体物体、人物和地点由用户决定，不能从代表图反推为固定主体。
