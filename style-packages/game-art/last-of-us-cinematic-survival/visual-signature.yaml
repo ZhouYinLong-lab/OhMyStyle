@@ -1,0 +1,23 @@
+schema_version: 1.0.0
+composition:
+- 自然光驱动的可探索空间
+- 植物与人工结构形成时间层次
+palette:
+- 植物与人工结构形成时间层次
+- 蓝灰空气、湿润材质与局部暖色锚点
+lighting:
+  quality: 蓝灰空气、湿润材质与局部暖色锚点
+  behavior:
+  - Keep the requested subject and location independent from the package.
+  - Apply lighting as a transferable visual decision, not a fixed scene.
+surface:
+  finish: 写实材质和克制的电影化景别
+  edges: subject-dependent, without a copied layout
+texture:
+  density: controlled and medium-dependent
+  placement: only where the package visual language needs explanation
+invariants:
+- natural-light exploration space
+- vegetation reclaiming architecture
+- realistic beautiful decay
+- the requested subject stays unchanged

@@ -1,0 +1,21 @@
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- - 自然光驱动的可探索空间
+- 植物与人工结构形成时间层次
+- 蓝灰空气、湿润材质与局部暖色锚点
+- 写实材质和克制的电影化景别
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.
+
+Reproduction direction:
+- 先确定用户指定的环境和可行的空间路径
+- 用自然光与天气建立深度
+- 让植物、锈蚀、混凝土和玻璃表现时间
+- 保留可探索的结构清晰度，避免过度概念化
+
+User request:
+{subject}
+{composition}
+{aspect_ratio}

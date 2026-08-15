@@ -1,0 +1,18 @@
+medium: 当代写实叙事生存游戏环境美术 游戏环境美术
+materials:
+  support: original subject rendered through the package medium and surface logic
+process:
+- 先确定用户指定的环境和可行的空间路径
+- 用自然光与天气建立深度
+- 让植物、锈蚀、混凝土和玻璃表现时间
+- 保留可探索的结构清晰度，避免过度概念化
+technical_direction:
+  contrast: controlled and subject-dependent
+  saturation: package-specific, never an all-over filter
+  perspective: follow the user request
+avoid:
+- generic global style-filter language without observable constraints
+- fixed subject matter, landmark, character, or narrative motif
+- copying a specific reference composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+  game asset.
