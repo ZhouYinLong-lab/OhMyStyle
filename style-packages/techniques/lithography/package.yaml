@@ -1,0 +1,33 @@
+id: lithography
+name: 石版画
+kind: technique
+domain: printmaking
+version: 0.1.0
+summary: >-
+  以平版油水相斥、石面绘制和多次套印建立柔和颗粒、线条与色层的印刷质感。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: technique
+  medium: printmaking
+  historical_context: '19世纪以来的平版印刷与艺术版画'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

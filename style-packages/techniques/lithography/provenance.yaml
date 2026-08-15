@@ -1,0 +1,26 @@
+package_id: lithography
+package_version: 0.1.0
+curation_status: curated_demo
+source_policy: 仅记录工艺研究来源；不在仓库再分发外部版画或博物馆图像。
+sources:
+  - url: 'https://hsm.ox.ac.uk/lithography'
+    title: Lithography
+    authority: Oxford History of Science Museum
+    supports: 工艺原理研究
+  - url: 'https://www.metmuseum.org/de/perspectives/materials-and-techniques-printmaking-lithograph'
+    title: Lithograph materials and techniques
+    authority: The Metropolitan Museum of Art
+    supports: 材料和印刷过程研究
+attribution: 本包提取石版画的可观察工艺特征，不复制具体版画或海报。
+rights_notes:
+  - 外部版画和博物馆图像不随包分发。
+  - 生成示例为新的匿名场景。
+asset: gallery-16x9.jpg
+status: generated_demo
+generator: OpenAI image generation model
+prompt_mode: anonymous_visual_signature
+subject: 折叠织物、陶碗与枝条，仅作风格基准
+generated_at: 2026-08-15
+review:
+  decision: accepted_as_representative
+  notes: 代表图检验墨层、纸面和套印关系，不规定默认题材。

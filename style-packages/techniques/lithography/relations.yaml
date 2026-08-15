@@ -1,0 +1,11 @@
+family: 平版印刷
+near_duplicates: []
+supersedes: []
+conflicts:
+  - photorealistic glossy rendering
+distinctives:
+  - 油水相斥逻辑带来的平面墨层
+  - 石面颗粒、纸张齿纹和多次套印的轻微偏移
+  - 颜色是印刷层，不是环境光滤镜
+avoid_overlap:
+  - 不强制生成静物、海报、文字或风景

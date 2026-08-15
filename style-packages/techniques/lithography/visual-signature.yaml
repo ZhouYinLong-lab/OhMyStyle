@@ -1,0 +1,24 @@
+composition:
+  - 保留清楚的平面组织和纸张边界，主体可由几个印刷层共同构成。
+  - 套印偏差、留白和边缘软化可以存在，但不破坏主体识别。
+palette:
+  - 黑、靛蓝、砖红、赭黄和纸白分层使用，颜色带有印墨的干燥感。
+lighting:
+  quality: flat print illumination with tactile paper shading
+  behavior:
+    - 不模拟真实摄影光源，高光来自纸面与墨层关系。
+surface:
+  finish: stone-grain and paper-tooth print surface
+  edges: drawn, rolled, or slightly offset ink edges
+texture:
+  density: medium, with visible crayon grain and ink accumulation
+  placement: inside ink fields, along registration edges, and in broad shadows
+invariants:
+  - 视觉重点是平版印刷过程，不是泛化的复古滤镜。
+  - 主体由多层墨色与纸面共同构成，仍应读得出来。
+  - 不复制具体海报、版画、文字或固定静物。
+anti_signatures:
+  - woodcut gouge marks
+  - etched hatch lines
+  - risograph-only dot pattern
+  - digital paper overlay without ink behavior

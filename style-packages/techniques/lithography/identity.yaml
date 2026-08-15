@@ -1,0 +1,19 @@
+canonical_name: 石版画
+entity_type: technique
+domain: printmaking
+scope:
+  subject_policy: open
+  subject_note: 用户主体优先；代表图只用于说明平版印刷的材料和套印关系。
+  subjects: []
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects:
+    - 折叠织物、陶碗与枝条
+  exclusions:
+    - fixed still life
+    - copied poster or artwork
+sources:
+  - https://hsm.ox.ac.uk/lithography
+  - https://www.metmuseum.org/de/perspectives/materials-and-techniques-printmaking-lithograph
+notes:
+  - 关注油水相斥、石面颗粒、平面墨层和多次套印形成的触感。

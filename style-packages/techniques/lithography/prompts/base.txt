@@ -1,0 +1,14 @@
+SUBJECT INDEPENDENCE CONTRACT:
+- The user-supplied {SUBJECT} and {LOCATION} are authoritative.
+- This package controls planographic print behavior, ink layers, paper tooth,
+  and registration only.
+- Do not add a recurring still life, landscape, poster, text, or symbol.
+
+Render {SUBJECT} in {LOCATION} as a tactile multi-layer planographic print.
+Simplify the subject into readable masses, then build it through dense black,
+muted blue, brick red, and ochre ink layers on warm paper. Show greasy crayon
+grain, washed marks, rolled fields, paper gaps, slightly uneven ink density,
+and restrained registration offsets. Favor graphic planes while preserving the
+user's spatial logic. The result should feel printed from a worked stone or
+plate, not like a vintage filter, woodcut, etching, risograph, or digital paper
+overlay. Do not introduce a new subject, text, logo, or copied poster layout.

@@ -1,0 +1,24 @@
+medium: planographic stone or plate print
+materials:
+  support: slightly warm paper with visible tooth
+  inks:
+    - dense black
+    - muted blue
+    - brick red
+    - ochre yellow
+  marks: greasy crayon grain, tusche wash, rolled fields, and paper gaps
+process:
+  - Simplify the user-supplied subject into a few printable masses.
+  - Establish a black or dark structural layer with drawn and washed marks.
+  - Add one or more flat color layers with restrained registration offsets.
+  - Keep paper showing between fields and allow ink density to vary.
+  - Finish with a tactile, slightly imperfect print surface rather than a clean digital texture.
+technical_direction:
+  contrast: medium with dense ink anchors
+  saturation: muted to medium, separated by paper white
+  perspective: preserve the user's spatial logic but favor graphic planes
+  detail_density: selective grain and broad ink fields
+avoid:
+  - fixed bowl, cloth, leaf, landscape, poster, or typography subject
+  - woodcut, etching, risograph, or generic vintage filter cues
+safety_note: Do not reproduce a specific print, artist signature, or copyrighted poster layout.
