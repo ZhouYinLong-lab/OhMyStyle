@@ -1,0 +1,20 @@
+composition:
+  - Isolate a user-supplied form with close attention to contour, growth, gesture, or bodily structure.
+  - Use simple framing and a calm ground so small formal changes remain visible.
+palette:
+  - Prefer natural greens, creams, skin tones, and quiet neutrals, with monochrome options for form studies.
+  - Keep color subordinate to structure and surface rather than applying a signature tint.
+lighting:
+  quality: soft daylight or controlled studio daylight
+  behavior:
+    - Model form with gentle directional light and preserve clean shadow information.
+surface:
+  finish: finely resolved photographic print
+  edges: precise focus at the chosen structural point, with natural falloff elsewhere
+texture:
+  density: moderate and selective
+  placement: concentrated in surface, contour, veins, folds, or other structural evidence
+invariants:
+  - close observation of structure
+  - simple framing and controlled focus
+  - natural light with precise tonal separation

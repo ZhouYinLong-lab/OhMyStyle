@@ -1,0 +1,9 @@
+asset: TODO-image-file.png
+status: pending_human_review
+generator: TODO-model-or-agent
+prompt_mode: anonymous_visual_signature
+subject: TODO-new-subject
+generated_at: TODO-YYYY-MM-DD
+review:
+  decision: pending
+  notes: TODO

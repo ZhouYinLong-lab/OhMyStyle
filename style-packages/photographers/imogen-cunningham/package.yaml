@@ -1,0 +1,33 @@
+id: imogen-cunningham
+name: 伊莫金·坎宁安
+kind: photographer
+domain: photography
+version: 0.1.0
+summary: >-
+  以细密的植物观察、身体线条和清晰的摄影结构，在自然形体与抽象形式之间保持精确而柔韧的观看。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: photographer
+  medium: photography
+  historical_context: '20世纪美国摄影；横跨植物摄影、肖像和现代主义形式研究。'
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

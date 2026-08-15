@@ -1,0 +1,8 @@
+{
+  "name": "TODO: package palette name",
+  "colors": [
+    {"name": "TODO: dominant", "hex": "#000000", "role": "TODO"},
+    {"name": "TODO: supporting", "hex": "#FFFFFF", "role": "TODO"}
+  ],
+  "notes": "Replace placeholders with sampled or deliberately defined colors and explain their roles."
+}
