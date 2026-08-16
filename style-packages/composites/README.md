@@ -37,6 +37,65 @@
 | `blend` | 多个风格影响同一个维度 | 按权重融合 |
 | `contrast` | 不同风格负责不同区域 | 区域隔离 |
 
+### 三组可读流程图
+
+复杂流程拆成三张小图，每张只回答一个问题。图表可以直接在 GitHub 中展开查看，原始 Mermaid 文件也保存在仓库中，方便复制到其他文档或继续维护。
+
+#### 1. 从需求到风格任务
+
+```mermaid
+flowchart TD
+    A["用户想法"] --> B["内容确认"]
+    B --> C["风格确认"]
+    C --> D{"是否组合风格？"}
+    D -->|否| E["读取单一风格包"]
+    D -->|是| F["读取组合规则"]
+    E --> G["编译生成任务"]
+    F --> G
+    G --> H["交给 Agent 或工作流"]
+    H --> I["检查结果并交付"]
+```
+
+[查看 Mermaid 源文件](../../docs/diagrams/cross-style-overview.zh.mmd)
+
+#### 2. 风格包如何被编译
+
+```mermaid
+flowchart TD
+    A["composite.yaml"] --> B["加载基础风格包"]
+    B --> C["读取视觉签名"]
+    B --> D["读取 Prompt 与负面约束"]
+    B --> E["读取参考图、调色板与复现规则"]
+    C --> F["分配职责：role / zone / weight"]
+    D --> F
+    E --> F
+    F --> G["合并要求与禁用项"]
+    G --> H["检查冲突与主体独立性"]
+    H --> I["输出 Prompt、负面 Prompt 与报告"]
+```
+
+[查看 Mermaid 源文件](../../docs/diagrams/cross-style-compile.zh.mmd)
+
+#### 3. Agent 如何完成生图
+
+```mermaid
+flowchart TD
+    A["编译结果"] --> B["确认主体、数量与构图"]
+    B --> C["注入风格职责"]
+    C --> D{"需要区域控制？"}
+    D -->|否| E["提交模型"]
+    D -->|是| F["准备区域约束或 mask"]
+    F --> E
+    E --> G["生成候选图"]
+    G --> H["检查主体、风格与禁用项"]
+    H -->|通过| I["交付结果"]
+    H -->|需调整| B
+```
+
+[查看 Mermaid 源文件](../../docs/diagrams/cross-style-agent-generation.zh.mmd)
+
+这里的区域控制是执行阶段的可选增强。`contrast` 目前主要提供 Prompt 层面的区域职责；如果模型不能稳定区分区域，可以由 Agent 或 ComfyUI 工作流补充 mask。
+
 ### 1. `stack`：职责叠加
 
 `stack` 适合两个风格影响不同维度。例如，角色扮演游戏像素美术负责媒介和边缘，透纳包负责天空和大气光线。

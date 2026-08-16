@@ -1,0 +1,11 @@
+flowchart TD
+    A["composite.yaml"] --> B["加载基础风格包"]
+    B --> C["读取视觉签名"]
+    B --> D["读取 Prompt 与负面约束"]
+    B --> E["读取参考图、调色板与复现规则"]
+    C --> F["分配职责：role / zone / weight"]
+    D --> F
+    E --> F
+    F --> G["合并要求与禁用项"]
+    G --> H["检查冲突与主体独立性"]
+    H --> I["输出 Prompt、负面 Prompt 与报告"]

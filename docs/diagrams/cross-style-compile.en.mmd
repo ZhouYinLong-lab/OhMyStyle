@@ -1,0 +1,11 @@
+flowchart TD
+    A["composite.yaml"] --> B["Load base packages"]
+    B --> C["Read visual signatures"]
+    B --> D["Read prompts and negative constraints"]
+    B --> E["Read references, palette, and reproduction rules"]
+    C --> F["Assign roles: role / zone / weight"]
+    D --> F
+    E --> F
+    F --> G["Merge requirements and exclusions"]
+    G --> H["Check conflicts and subject independence"]
+    H --> I["Output prompt, negative prompt, and report"]

@@ -1,0 +1,11 @@
+flowchart TD
+    A["Compiled result"] --> B["Confirm subject, count, and composition"]
+    B --> C["Apply style responsibilities"]
+    C --> D{"Need regional control?"}
+    D -->|No| E["Submit to model"]
+    D -->|Yes| F["Prepare regional constraints or mask"]
+    F --> E
+    E --> G["Generate candidate"]
+    G --> H["Check subject, style, and exclusions"]
+    H -->|Pass| I["Deliver result"]
+    H -->|Revise| B

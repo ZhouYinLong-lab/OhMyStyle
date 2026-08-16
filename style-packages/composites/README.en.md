@@ -32,6 +32,65 @@ It is therefore a visual responsibility map, not a new artist, photographer, or 
 | `blend` | Packages share one dimension | Weighted rule fusion |
 | `contrast` | Packages own different regions | Explicit zone boundaries |
 
+### Three readable workflow views
+
+The workflow is split into three small diagrams. Each diagram answers one question, so it stays readable on a normal screen. GitHub can render the Mermaid blocks directly, and the source files are kept in the repository for reuse and maintenance.
+
+#### 1. From a request to a style task
+
+```mermaid
+flowchart TD
+    A["User idea"] --> B["Confirm content"]
+    B --> C["Confirm style"]
+    C --> D{"Use a composite style?"}
+    D -->|No| E["Load one style package"]
+    D -->|Yes| F["Load composition rules"]
+    E --> G["Compile generation task"]
+    F --> G
+    G --> H["Hand off to Agent or workflow"]
+    H --> I["Review and deliver"]
+```
+
+[View the Mermaid source](../../docs/diagrams/cross-style-overview.en.mmd)
+
+#### 2. How the style package is compiled
+
+```mermaid
+flowchart TD
+    A["composite.yaml"] --> B["Load base packages"]
+    B --> C["Read visual signatures"]
+    B --> D["Read prompts and negative constraints"]
+    B --> E["Read references, palette, and reproduction rules"]
+    C --> F["Assign roles: role / zone / weight"]
+    D --> F
+    E --> F
+    F --> G["Merge requirements and exclusions"]
+    G --> H["Check conflicts and subject independence"]
+    H --> I["Output prompt, negative prompt, and report"]
+```
+
+[View the Mermaid source](../../docs/diagrams/cross-style-compile.en.mmd)
+
+#### 3. How an Agent completes generation
+
+```mermaid
+flowchart TD
+    A["Compiled result"] --> B["Confirm subject, count, and composition"]
+    B --> C["Apply style responsibilities"]
+    C --> D{"Need regional control?"}
+    D -->|No| E["Submit to model"]
+    D -->|Yes| F["Prepare regional constraints or mask"]
+    F --> E
+    E --> G["Generate candidate"]
+    G --> H["Check subject, style, and exclusions"]
+    H -->|Pass| I["Deliver result"]
+    H -->|Revise| B
+```
+
+[View the Mermaid source](../../docs/diagrams/cross-style-agent-generation.en.mmd)
+
+Regional control is an optional execution-time enhancement. `contrast` currently supplies regional responsibilities at the prompt level; when a model cannot separate regions reliably, the Agent or a ComfyUI workflow can add masks.
+
 ### `stack`: separate responsibilities
 
 Use `stack` when packages affect different dimensions. For example, an RPG pixel package can own the medium while Turner owns atmospheric lighting. The compiler keeps pixel geometry authoritative and prevents the lighting package from turning the image into an oil painting.

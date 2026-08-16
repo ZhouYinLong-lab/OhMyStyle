@@ -1,0 +1,10 @@
+flowchart TD
+    A["User idea"] --> B["Confirm content"]
+    B --> C["Confirm style"]
+    C --> D{"Use a composite style?"}
+    D -->|No| E["Load one style package"]
+    D -->|Yes| F["Load composition rules"]
+    E --> G["Compile generation task"]
+    F --> G
+    G --> H["Hand off to Agent or workflow"]
+    H --> I["Review and deliver"]
