@@ -1,0 +1,22 @@
+package_id: persona-3-reload
+package_version: 0.1.0
+curation_status: draft
+source_policy: Official source links are recorded for research and attribution; external screenshots and artwork are not redistributed here.
+sources:
+- url: https://persona.atlus.com/p3r/index.html?lang=enbuy
+  title: Persona 3 Reload official website
+  authority: ATLUS / SEGA
+  supports: work identity and publicly presented visual context
+attribution: This package describes observable visual characteristics and is independent from ATLUS and SEGA. It does not claim affiliation, endorsement, or exact imitation.
+rights_notes:
+- Do not bundle an external artwork, screenshot, logo, character asset, or soundtrack unless redistribution rights are verified.
+- Link-only sources are used for research when local redistribution is not permitted.
+- The generated example is an original anonymous scene and is not a source artwork.
+related_movements: []
+related_concepts:
+- 日式角色扮演游戏环境美术
+- 都市幻想图形化叙事
+influences_to_review: []
+not_equivalent_to:
+- generic blue color filter
+- fixed moonlit city composition

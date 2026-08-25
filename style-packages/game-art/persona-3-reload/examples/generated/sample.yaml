@@ -1,0 +1,20 @@
+example_id: anonymous-demo
+subject: an empty elevated urban platform at blue hour, original anonymous game environment
+source_artwork_copied: false
+status: generated
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 用冷蓝夜间环境、都市几何骨架和少量暖色窗光演示视觉签名；不默认生成月亮、学校、列车或人物。
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: 需用用户主体进行测试。
+  distinctive_signature:
+    score: null
+    notes: 需人工记录冷蓝色阶、剪影和局部暖光是否成立。
+  visual_overlap:
+    score: null
+    notes: 需与相邻日式角色扮演游戏包比较。
+  cross_subject_stability:
+    score: null
+    notes: 需用至少两个不同主体验证。

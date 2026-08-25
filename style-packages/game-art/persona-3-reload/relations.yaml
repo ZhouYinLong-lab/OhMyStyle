@@ -1,0 +1,15 @@
+family: japanese-rpg-graphic-environment
+near_duplicates:
+- game-art/japanese-cel-shaded-action-game-art
+- game-art/cyberpunk-night-city
+supersedes: []
+conflicts:
+- game-art/neon-noir-3d-game-art
+distinctives:
+- deep blue and cobalt night palette
+- calm urban geometry with controlled silhouettes
+- sparse warm light used as a local accent
+- graphic clarity over neon spectacle
+avoid_overlap:
+- generic cyberpunk neon city
+- fixed school, moon, train, or character imagery

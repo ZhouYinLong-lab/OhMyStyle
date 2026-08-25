@@ -1,0 +1,24 @@
+package_id: persona-3-reload
+package_version: 0.1.0
+medium: 游戏美术
+materials:
+  support: 数字绘画、图形化建筑和受控的空气透视
+  avoid: 复制游戏截图、角色、徽标或原始界面
+process:
+- 先写用户主体和构图，再注入冷蓝夜间视觉签名
+- 将蓝色作为环境主色，将暖色限制为有来源的局部光
+- 保持建筑、天空、人物或物体的轮廓可读
+- 用少量颗粒、湿润反射或软雾连接前中后景
+technical_direction:
+  contrast: medium-high
+  saturation: blue-led with restrained warm accents
+  perspective: subject-dependent
+  aspect_ratio: user-defined; 16:9 is used for the representative image
+verification:
+- 不自动加入月亮、学校、列车、固定人物或武器
+- 不使用红蓝霓虹滤镜替代完整视觉签名
+- 检查主体数量、地点和动作仍由用户决定
+avoid:
+- fixed subject matter
+- copied composition
+- logos, interface text, or branded symbols

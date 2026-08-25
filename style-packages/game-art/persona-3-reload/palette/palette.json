@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "colors": [
+    {"name": "深海军蓝", "hex": "#071A4A", "role": "dominant night field"},
+    {"name": "钴蓝", "hex": "#1459D9", "role": "architectural and atmospheric midtone"},
+    {"name": "冷青蓝", "hex": "#62C6F2", "role": "moonlit highlight"},
+    {"name": "冷紫", "hex": "#4A3E85", "role": "shadow transition"},
+    {"name": "暖琥珀", "hex": "#D99545", "role": "limited local light accent"},
+    {"name": "雾白", "hex": "#DCE8EE", "role": "moonlight and separation"}
+  ]
+}

@@ -1,0 +1,31 @@
+canonical_name: 女神异闻录3重制版游戏美术
+entity_type: game_art
+domain: game_art
+historical_context: 现代日式角色扮演游戏的都市幻想与界面化叙事传统
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量、动作和叙事优先；代表图只是匿名环境示例。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character
+  - branded interface
+  - fixed moon or school setting
+sources:
+- https://persona.atlus.com/p3r/index.html?lang=enbuy
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 深蓝、钴蓝和冷紫构成夜间主色阶
+- 月光或冷色顶光塑造清晰而克制的剪影
+- 都市建筑、电线和栏杆形成有秩序的图形骨架
+- 少量暖色窗口光作为视觉节拍，不改变整体冷色基调
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring moon, school, train, character, weapon, or game interface.
+
+Reproduction direction:
+- 先确定宽幅构图和清楚的前中后景关系
+- 以深蓝冷色环境光统一画面，再加入有限暖色点光
+- 使用干净轮廓、平整色面和少量有方向的纹理
+- 检查没有把代表图中的都市平台、月亮或人物剪影变成默认主体

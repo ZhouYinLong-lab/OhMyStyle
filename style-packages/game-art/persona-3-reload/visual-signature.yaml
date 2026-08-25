@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+composition:
+- 宽幅画面由建筑、栏杆、电线或道路组织出清楚的水平与斜向骨架
+- 主体通常保留适度留白，不依赖中心对称或固定场景
+- 前景结构清楚，中景承担空间叙事，远景用蓝色空气透视后退
+palette:
+- 深海军蓝、钴蓝和冷紫构成主要明度层
+- 青蓝高光用于月光、玻璃或湿润表面
+- 少量暖琥珀光只作为窗口、路灯或局部反射
+- 不使用全画面霓虹渐变或无来源的彩色光污染
+lighting:
+  quality: 冷色月光或大型环境光，方向明确但不过度戏剧化
+  behavior:
+  - 阴影保持深色而有细节
+  - 暖色点光必须服从场景中的光源或反射逻辑
+surface:
+  finish: 干净数字绘画、清晰色面与克制纹理并置
+  edges: clean graphic edges with subject-dependent softness
+texture:
+  density: 中等
+  placement: 建筑、天空和地面允许少量颗粒与笔触，主体轮廓保持清楚
+invariants:
+- 冷蓝夜间色阶是主要识别点
+- 图形化都市骨架与清晰剪影并存
+- 暖色只作受控的局部节拍
+- 用户主体保持不变，不自动加入固定题材
+medium: 游戏美术
+materials:
+  support: 日式角色扮演游戏环境概念图、数字绘画和图形化光影
+process:
+- 先安排宽幅空间骨架与主体留白
+- 用冷色环境光统一不同材质
+- 以轮廓、色面和有限纹理建立可读性
+- 最后检查暖色光源是否过量、是否出现固定游戏元素
+technical_direction:
+  contrast: medium-high and controlled
+  saturation: concentrated in blue range, warm accents limited
+  perspective: follow the user request
+avoid:
+- generic neon cyberpunk treatment
+- fixed moon, school, train, character, weapon, or interface
+- copied key-art composition
+- photorealistic rendering when the user requests illustration
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

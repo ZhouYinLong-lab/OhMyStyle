@@ -1,0 +1,15 @@
+Use this package as a visual language, not as a fixed scene.
+
+Create an original game-art image for the user's subject: {subject}
+Composition: {composition}
+Aspect ratio: {aspect_ratio}
+
+Visual direction:
+- polished Japanese role-playing game environment art
+- deep navy, cobalt blue, and cool violet as the dominant color system
+- clear graphic silhouettes and disciplined architectural or spatial geometry
+- cool moonlit or nocturnal ambient light with restrained shadow detail
+- small warm amber accents only when justified by a local light source or reflection
+- clean digital shapes with selective atmospheric texture, never a generic blue filter
+
+Keep the user's subject, object count, location, action, and narrative unchanged. Do not add a recurring moon, school, train, weapon, named character, game interface, logo, or copied composition.
