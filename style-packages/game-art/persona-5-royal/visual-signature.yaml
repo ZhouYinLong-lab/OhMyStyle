@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+composition:
+- 斜线、切角、重叠平面和不对称留白形成明确的视觉方向
+- 主体可以被大色块或边界切分，但轮廓和动作仍需可读
+- 画面保留编辑版式的呼吸区，不把所有空间填满
+palette:
+- 朱红、近黑和纸白构成核心三色系统
+- 暗灰和少量米白用于过渡，不稀释红黑对比
+- 红色集中在主体、路径或视觉焦点，不做全局红色滤镜
+- 禁止使用廉价霓虹光替代平面色块和印刷层次
+lighting:
+  quality: 高方向性硬光与平面化阴影并置
+  behavior:
+  - 明暗边界清楚，但保留材料和纸面细节
+  - 局部高光服从版式焦点，不制造发光轮廓
+surface:
+  finish: 数字平面设计、剪贴纸张、网点和少量手工刷痕
+  edges: crisp graphic edges with intentional roughness in selected layers
+texture:
+  density: 中等
+  placement: 纹理集中在背景纸面、阴影和少数叠加层，主体信息保持清晰
+invariants:
+- 朱红、近黑、纸白的高对比结构
+- 斜切、拼贴和重叠层次带来编辑化动势
+- 印刷触感是局部表面处理，不是全画面噪点
+- 用户主体保持不变，不自动加入固定题材
+medium: 游戏美术
+materials:
+  support: 图形化游戏美术、编辑海报、纸张纹理和漫画式色块
+process:
+- 先写用户主体和版式目标，再决定斜线或切角方向
+- 用黑白建立层级，用朱红突出关键区域
+- 添加少量网点、纸张磨损或手工刷痕
+- 最后检查版式没有变成固定游戏界面或品牌海报
+technical_direction:
+  contrast: high and graphic
+  saturation: red-led with black and white separation
+  perspective: follow the user request
+avoid:
+- generic red-black color filter
+- fixed mask, card, weapon, thief, character, or landmark
+- copied key-art composition
+- excessive neon glow or photorealistic rendering
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

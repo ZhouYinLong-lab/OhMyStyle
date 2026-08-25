@@ -1,0 +1,20 @@
+example_id: anonymous-demo
+subject: an abstract modern city plaza with a red diagonal pedestrian bridge, original anonymous game environment
+source_artwork_copied: false
+status: generated
+image: sample.png
+gallery: ../../gallery-16x9.jpg
+notes: 用朱红、近黑、纸白、斜切和拼贴层次演示视觉签名；不默认生成面具、扑克牌、枪械或怪盗角色。
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: 需用用户主体进行测试。
+  distinctive_signature:
+    score: null
+    notes: 需人工记录红黑白系统、斜切版式和印刷触感是否成立。
+  visual_overlap:
+    score: null
+    notes: 需与相邻漫画、编辑化和霓虹城市包比较。
+  cross_subject_stability:
+    score: null
+    notes: 需用至少两个不同主体验证。

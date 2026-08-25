@@ -1,0 +1,24 @@
+package_id: persona-5-royal
+package_version: 0.1.0
+medium: 游戏美术
+materials:
+  support: 图形化数字绘画、编辑拼贴、纸张纹理和漫画式色面
+  avoid: 复制游戏截图、角色、徽标或原始界面
+process:
+- 先写用户主体、数量和构图，再注入红黑白版式语言
+- 用近黑、纸白和清楚的切角建立层级
+- 将朱红限制在主体、路径或视觉焦点
+- 以局部网点和刷痕增加触感，不覆盖主体结构
+technical_direction:
+  contrast: high
+  saturation: red-led with paper-white breathing room
+  perspective: subject-dependent
+  aspect_ratio: user-defined; 16:9 is used for the representative image
+verification:
+- 不自动加入面具、扑克牌、枪械、怪盗、地标或界面文字
+- 不使用全局红黑滤镜替代斜切、拼贴和层级控制
+- 检查主体数量、地点和动作仍由用户决定
+avoid:
+- fixed subject matter
+- copied composition
+- logos, interface text, or branded symbols

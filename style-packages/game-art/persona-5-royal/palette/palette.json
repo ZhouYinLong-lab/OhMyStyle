@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "colors": [
+    {"name": "朱红", "hex": "#D5102D", "role": "action accent and focal plane"},
+    {"name": "近黑", "hex": "#090909", "role": "silhouette and structural field"},
+    {"name": "纸白", "hex": "#F5F1E8", "role": "negative space and separation"},
+    {"name": "深灰", "hex": "#353535", "role": "secondary shadow transition"},
+    {"name": "暗酒红", "hex": "#721325", "role": "red depth and material variation"},
+    {"name": "旧纸米色", "hex": "#D7C7A7", "role": "limited print texture support"}
+  ]
+}

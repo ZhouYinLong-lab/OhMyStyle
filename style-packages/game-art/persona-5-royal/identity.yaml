@@ -1,0 +1,31 @@
+canonical_name: 女神异闻录5皇家版游戏美术
+entity_type: game_art
+domain: game_art
+historical_context: 现代日式角色扮演游戏的编辑化平面设计、都市幻想与漫画拼贴传统
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量、动作和叙事优先；代表图只是匿名环境示例。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character
+  - branded interface
+  - fixed mask, card, weapon, thief, or city landmark
+sources:
+- https://persona.atlus.com/p5r/?lang=en
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 朱红、近黑和纸白形成强烈的三色结构
+- 斜切平面、重叠色块和不对称留白制造编辑化动势
+- 硬朗黑色剪影与局部手工纹理并置
+- 红色承担行动和视觉焦点，白色承担分隔与呼吸
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a mask, playing card, gun, named character, phantom thief, city landmark, or game interface.
+
+Reproduction direction:
+- 先确定主体和版面主轴，再建立斜切或拼贴层次
+- 用近黑和纸白确定高对比边界，再把朱红放到关键区域
+- 以少量网点、纸张磨损或刷痕增加印刷触感
+- 检查没有把代表图中的桥、人物或纸片变成默认主体

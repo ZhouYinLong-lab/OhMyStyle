@@ -1,0 +1,15 @@
+Use this package as a visual language, not as a fixed scene.
+
+Create an original game-art image for the user's subject: {subject}
+Composition: {composition}
+Aspect ratio: {aspect_ratio}
+
+Visual direction:
+- premium Japanese role-playing game editorial art
+- vermilion red, near-black, and paper white as the organizing three-color system
+- sharp diagonal cuts, layered collage planes, and asymmetric negative space
+- bold silhouettes, crisp graphic edges, and selective print or screenprint texture
+- red concentrated on the subject, route, or visual focal point; white provides separation and breathing room
+- high contrast without generic neon glow or a global red-black filter
+
+Keep the user's subject, object count, location, action, and narrative unchanged. Do not add a mask, playing card, gun, named character, phantom thief, city landmark, game interface, logo, or copied composition.

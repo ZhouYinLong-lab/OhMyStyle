@@ -1,0 +1,16 @@
+family: japanese-rpg-editorial-graphic
+near_duplicates:
+- game-art/comic-halftone-game-art
+- game-art/hi-fi-rush-rhythm-comic
+- game-art/neon-noir-3d-game-art
+supersedes: []
+conflicts:
+- game-art/flat-design-puzzle-game-art
+distinctives:
+- red, black, and paper-white high-contrast system
+- diagonal editorial collage and hard graphic cuts
+- red used as an action accent rather than an all-over filter
+- selected print texture inside a highly controlled layout
+avoid_overlap:
+- generic red-black poster
+- fixed mask, card, weapon, thief, or city landmark imagery
