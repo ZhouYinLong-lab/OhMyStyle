@@ -1,0 +1,15 @@
+Use this package as a visual language, not as a fixed scene.
+
+Create an original game-art image for the user's subject: {subject}
+Composition: {composition}
+Aspect ratio: {aspect_ratio}
+
+Visual direction:
+- polished Japanese role-playing game environment art
+- sunny yellow, warm white, ochre, and leaf green as the main color system
+- ordinary spaces with clear human scale and readable perspective
+- bright post-rain light, soft reflections, and limited distant haze
+- a calm, approachable mood with a subtle sense of uncertainty
+- clean digital shapes with lightly textured surfaces, never a generic yellow filter
+
+Keep the user's subject, object count, location, action, and narrative unchanged. Do not add a television, fog event, shopping street, rural town, named character, game interface, logo, or copied composition.

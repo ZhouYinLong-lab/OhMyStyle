@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+composition:
+- 生活化街道、室内或自然环境保持清楚的视线和可读尺度
+- 低层建筑、道路、电线、树木或远山形成稳定的水平透视
+- 主体可以偏置，画面保留天空、道路或墙面的安静区域
+palette:
+- 晴黄、暖白、浅赭和叶绿构成明亮的主色阶
+- 红色、深棕或青灰用于少量局部对比
+- 反光与雾气允许降低局部饱和度，但不把画面洗成灰色
+- 不使用全局黄色滤镜，也不依赖阴暗恐怖色调
+lighting:
+  quality: 雨后明亮自然光、柔和逆光或均匀的晴天环境光
+  behavior:
+  - 湿润地面可以出现清晰但不夸张的反射
+  - 雾气作为远景层次，不覆盖主体和空间结构
+surface:
+  finish: 干净数字绘画、轻微绘本质感和可控的湿润反射
+  edges: subject-dependent with soft atmospheric transitions
+texture:
+  density: 中等
+  placement: 墙面、地面、树叶和远山可有细节，主体保持清楚
+invariants:
+- 明亮晴黄是组织画面的主色，而不是单一滤镜
+- 日常尺度与轻微悬疑感同时存在
+- 雨后反光和远景雾气必须服务于空间
+- 用户主体保持不变，不自动加入固定题材
+medium: 游戏美术
+materials:
+  support: 日式角色扮演游戏环境概念图、数字绘画和自然光空间
+process:
+- 先安排平凡场景的透视、尺度和主体位置
+- 用暖黄、暖白和绿建立亲切感
+- 添加有限的湿润反光或远景雾层
+- 最后检查是否把电视、连环案件或具体小镇写进默认主体
+technical_direction:
+  contrast: medium and readable
+  saturation: warm yellow-led with green balance
+  perspective: follow the user request
+avoid:
+- generic yellow color filter
+- fixed television, fog event, shopping street, rural town, or character
+- horror or disaster mood
+- copied key-art composition
+safety_note: Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected game asset.

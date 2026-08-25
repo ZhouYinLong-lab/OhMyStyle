@@ -1,0 +1,24 @@
+package_id: persona-4-golden
+package_version: 0.1.0
+medium: 游戏美术
+materials:
+  support: 数字绘画、日常环境、自然光和受控的雨后表面
+  avoid: 复制游戏截图、角色、徽标或原始界面
+process:
+- 先写用户主体和构图，再注入明亮乡镇日常的视觉签名
+- 以晴黄、暖白和叶绿建立主色系统
+- 用湿润反光和远景雾气增加层次，但不遮挡主体
+- 保持场景亲切、可读，同时留出轻微的不确定感
+technical_direction:
+  contrast: medium
+  saturation: warm yellow-led with restrained cool accents
+  perspective: subject-dependent
+  aspect_ratio: user-defined; 16:9 is used for the representative image
+verification:
+- 不自动加入电视、雾之事件、商店街、乡镇或固定人物
+- 不使用全局黄色滤镜替代完整视觉签名
+- 检查主体数量、地点和动作仍由用户决定
+avoid:
+- fixed subject matter
+- copied composition
+- logos, interface text, or branded symbols

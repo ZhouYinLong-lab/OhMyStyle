@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "colors": [
+    {"name": "晴日金黄", "hex": "#F1C84B", "role": "dominant daylight field"},
+    {"name": "暖奶白", "hex": "#FFF2C7", "role": "light and open space"},
+    {"name": "叶绿", "hex": "#6E9B4B", "role": "vegetation and everyday balance"},
+    {"name": "浅赭色", "hex": "#C98B52", "role": "wood, soil, and warm surfaces"},
+    {"name": "雨后青灰", "hex": "#8199A0", "role": "haze and wet-surface counterpoint"},
+    {"name": "小面积朱红", "hex": "#C94E3D", "role": "limited visual accent"}
+  ]
+}

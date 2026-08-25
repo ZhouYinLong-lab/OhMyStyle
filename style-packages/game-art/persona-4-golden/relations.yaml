@@ -1,0 +1,15 @@
+family: japanese-rpg-everyday-mystery
+near_duplicates:
+- game-art/japanese-cel-shaded-action-game-art
+- game-art/watercolor-storybook-game-art
+supersedes: []
+conflicts:
+- game-art/elden-ring-dark-fantasy
+distinctives:
+- sunny yellow and warm white everyday palette
+- small-town scale with humid post-rain air
+- friendly daylight carrying a restrained mystery
+- environmental clarity over spectacle
+avoid_overlap:
+- generic yellow filter
+- fixed television, fog, shopping street, or rural town imagery

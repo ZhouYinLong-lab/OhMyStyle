@@ -1,0 +1,31 @@
+canonical_name: 女神异闻录4黄金版游戏美术
+entity_type: game_art
+domain: game_art
+historical_context: 现代日式角色扮演游戏的乡镇日常、青春群像与悬疑幻想传统
+scope:
+  subject_policy: open
+  subject_note: 用户提供的主体、场景、数量、动作和叙事优先；代表图只是匿名环境示例。
+  subjects: []
+  exclusions:
+  - copied composition
+  - named character
+  - branded interface
+  - fixed television, fog, shopping street, or rural town
+sources:
+- https://persona.atlus.com/p4g/
+Create an original image using this package as a visual language, not as a fixed subject or copied composition.
+
+Package signature:
+- 晴黄、暖白和叶绿构成明亮的日常主色阶
+- 雨后反光与轻雾让平凡空间出现微妙的悬疑感
+- 低层建筑、道路、山丘和电线构成亲切的乡镇尺度
+- 红色、深棕或青灰只作小面积节拍
+
+Subject rule:
+Keep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a television, fog event, shopping street, rural town, named character, or fixed mystery.
+
+Reproduction direction:
+- 先确定平凡、可识别的生活空间和自然视线
+- 用明亮暖色建立可亲近的日常氛围
+- 以雨后反射、远景雾气或湿润空气增加空间层次
+- 检查没有把代表图中的街道、自行车或山丘变成默认主体
