@@ -2017,6 +2017,57 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: persona-3-reload
+  name: 女神异闻录3重制版游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/persona-3-reload
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: persona-4-golden
+  name: 女神异闻录4黄金版游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/persona-4-golden
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
+- resource_id: persona-5-royal
+  name: 女神异闻录5皇家版游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/persona-5-royal
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: ps1-survival-horror-low-poly
   name: 早期三维生存恐怖游戏美术
   kind: game_art
@@ -2204,23 +2255,6 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
-- resource_id: to-the-moon-narrative-pixel-art
-  name: 去月球叙事像素美术
-  kind: game_art
-  domain: game_art
-  package_path: style-packages/game-art/to-the-moon-narrative-pixel-art
-  maturity: L2
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - texture
-  - layout
-  reference_count: 1
-  accepted_example_count: 0
-  rejected_example_count: 0
-  benchmark: false
 - resource_id: top-down-16-bit-adventure
   name: 俯视角16位冒险美术
   kind: game_art
@@ -5854,7 +5888,7 @@ packages:
   - lighting
   - surface
   - texture
-  reference_count: 1
+  reference_count: 0
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false

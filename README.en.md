@@ -657,6 +657,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="50%" valign="top" align="center"><a href="style-packages/game-art/inside-minimalist-silhouette/README.md"><img src="style-packages/game-art/inside-minimalist-silhouette/gallery-16x9.jpg" width="230" alt="Inside Minimalist Silhouette Game Art representative image"></a><br><strong>Inside Minimalist Silhouette Game Art</strong><br><a href="style-packages/game-art/inside-minimalist-silhouette/README.md">Open README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/game-art/braid-hand-painted-puzzle/README.md"><img src="style-packages/game-art/braid-hand-painted-puzzle/gallery-16x9.jpg" width="230" alt="Braid Hand-Painted Puzzle Game Art representative image"></a><br><strong>Braid Hand-Painted Puzzle Game Art</strong><br><a href="style-packages/game-art/braid-hand-painted-puzzle/README.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/persona-3-reload/README.en.md"><img src="style-packages/game-art/persona-3-reload/gallery-16x9.jpg" width="230" alt="Persona 3 Reload Game Art representative image"></a><br><strong>Persona 3 Reload Game Art</strong><br><a href="style-packages/game-art/persona-3-reload/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/persona-4-golden/README.en.md"><img src="style-packages/game-art/persona-4-golden/gallery-16x9.jpg" width="230" alt="Persona 4 Golden Game Art representative image"></a><br><strong>Persona 4 Golden Game Art</strong><br><a href="style-packages/game-art/persona-4-golden/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/persona-5-royal/README.en.md"><img src="style-packages/game-art/persona-5-royal/gallery-16x9.jpg" width="230" alt="Persona 5 Royal Game Art representative image"></a><br><strong>Persona 5 Royal Game Art</strong><br><a href="style-packages/game-art/persona-5-royal/README.en.md">Open README</a></td>
+</tr>
 </table>
 
 ### Techniques and media

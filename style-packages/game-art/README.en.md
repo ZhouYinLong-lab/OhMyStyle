@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-This directory contains 35 independent style packages. Each card uses a consistent 16:9 landscape representative image; click the image or name to open the package README.
+This directory contains 38 independent style packages. Each card uses a consistent 16:9 landscape representative image; click the image or name to open the package README.
 
 <table>
 <tr>
@@ -63,5 +63,10 @@ This directory contains 35 independent style packages. Each card uses a consiste
 <tr>
 <td width="33%" valign="top" align="center"><a href="journey-minimalist-desert/README.en.md"><img src="journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="Minimalist Desert Journey Game Art representative image"></a><br><strong>Minimalist Desert Journey Game Art</strong><br><a href="journey-minimalist-desert/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="final-fantasy-ix-painted-fantasy/README.en.md"><img src="final-fantasy-ix-painted-fantasy/gallery-16x9.jpg" width="230" alt="Storybook Fantasy RPG Game Art representative image"></a><br><strong>Storybook Fantasy RPG Game Art</strong><br><a href="final-fantasy-ix-painted-fantasy/README.en.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="persona-3-reload/README.en.md"><img src="persona-3-reload/gallery-16x9.jpg" width="230" alt="Persona 3 Reload Game Art representative image"></a><br><strong>Persona 3 Reload Game Art</strong><br><a href="persona-3-reload/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="persona-4-golden/README.en.md"><img src="persona-4-golden/gallery-16x9.jpg" width="230" alt="Persona 4 Golden Game Art representative image"></a><br><strong>Persona 4 Golden Game Art</strong><br><a href="persona-4-golden/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="persona-5-royal/README.en.md"><img src="persona-5-royal/gallery-16x9.jpg" width="230" alt="Persona 5 Royal Game Art representative image"></a><br><strong>Persona 5 Royal Game Art</strong><br><a href="persona-5-royal/README.en.md">Open README</a></td>
 </tr>
 </table>

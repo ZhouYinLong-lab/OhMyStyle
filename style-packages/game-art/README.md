@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-本目录收录 35 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
+本目录收录 38 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
 
 <table>
 <tr>
@@ -63,5 +63,10 @@
 <tr>
 <td width="33%" valign="top" align="center"><a href="journey-minimalist-desert/README.md"><img src="journey-minimalist-desert/gallery-16x9.jpg" width="230" alt="风之旅人极简沙漠游戏美术代表图"></a><br><strong>风之旅人极简沙漠游戏美术</strong><br><a href="journey-minimalist-desert/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="final-fantasy-ix-painted-fantasy/README.md"><img src="final-fantasy-ix-painted-fantasy/gallery-16x9.jpg" width="230" alt="最终幻想九绘本幻想游戏美术代表图"></a><br><strong>最终幻想九绘本幻想游戏美术</strong><br><a href="final-fantasy-ix-painted-fantasy/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="persona-3-reload/README.md"><img src="persona-3-reload/gallery-16x9.jpg" width="230" alt="女神异闻录3重制版游戏美术代表图"></a><br><strong>女神异闻录3重制版游戏美术</strong><br><a href="persona-3-reload/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="persona-4-golden/README.md"><img src="persona-4-golden/gallery-16x9.jpg" width="230" alt="女神异闻录4黄金版游戏美术代表图"></a><br><strong>女神异闻录4黄金版游戏美术</strong><br><a href="persona-4-golden/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="persona-5-royal/README.md"><img src="persona-5-royal/gallery-16x9.jpg" width="230" alt="女神异闻录5皇家版游戏美术代表图"></a><br><strong>女神异闻录5皇家版游戏美术</strong><br><a href="persona-5-royal/README.md">打开 README</a></td>
 </tr>
 </table>

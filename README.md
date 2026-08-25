@@ -657,6 +657,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="50%" valign="top" align="center"><a href="style-packages/game-art/inside-minimalist-silhouette/README.md"><img src="style-packages/game-art/inside-minimalist-silhouette/gallery-16x9.jpg" width="230" alt="内在世界极简剪影游戏美术代表图"></a><br><strong>内在世界极简剪影游戏美术</strong><br><a href="style-packages/game-art/inside-minimalist-silhouette/README.md">打开 README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/game-art/braid-hand-painted-puzzle/README.md"><img src="style-packages/game-art/braid-hand-painted-puzzle/gallery-16x9.jpg" width="230" alt="手绘谜题游戏美术代表图"></a><br><strong>手绘谜题游戏美术</strong><br><a href="style-packages/game-art/braid-hand-painted-puzzle/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/persona-3-reload/README.md"><img src="style-packages/game-art/persona-3-reload/gallery-16x9.jpg" width="230" alt="女神异闻录3重制版游戏美术代表图"></a><br><strong>女神异闻录3重制版游戏美术</strong><br><a href="style-packages/game-art/persona-3-reload/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/persona-4-golden/README.md"><img src="style-packages/game-art/persona-4-golden/gallery-16x9.jpg" width="230" alt="女神异闻录4黄金版游戏美术代表图"></a><br><strong>女神异闻录4黄金版游戏美术</strong><br><a href="style-packages/game-art/persona-4-golden/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/game-art/persona-5-royal/README.md"><img src="style-packages/game-art/persona-5-royal/gallery-16x9.jpg" width="230" alt="女神异闻录5皇家版游戏美术代表图"></a><br><strong>女神异闻录5皇家版游戏美术</strong><br><a href="style-packages/game-art/persona-5-royal/README.md">打开 README</a></td>
+</tr>
 </table>
 
 ### 工艺与媒介
