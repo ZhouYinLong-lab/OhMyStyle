@@ -1,0 +1,16 @@
+medium: 2D character animation composited into a 3D game environment
+materials:
+- drawn 2D sprites
+- 3D geometry
+- contact shadows
+- coordinated scene lighting
+process:
+- 确定二维角色的朝向规则
+- 搭建可探索三维空间
+- 校准遮挡、接地和阴影
+- 协调角色与环境光色
+- 测试视角切换和转角
+technical_direction: Keep dimension boundaries intentional; do not automatically convert
+  this hybrid into HD-2D pixel art.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

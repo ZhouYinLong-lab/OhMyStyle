@@ -1,0 +1,19 @@
+canonical_name: 二维角色与三维场景混合游戏美术
+entity_type: game_art_direction
+origin: 2d_character_animation_in_3d_environment
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - platform scene
+  - character exploration
+  exclusions:
+  - unmotivated pixel grid
+  - floating character
+  - copied named character
+sources:
+- https://store.steampowered.com/app/1328840/Demon_Turf/
+rendering:
+  model: 2D character animation composited into a 3D game environment
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

@@ -1,0 +1,31 @@
+{
+  "name": "2d-character-3d-world-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "deep teal",
+      "hex": "#294B57",
+      "role": "environment"
+    },
+    {
+      "name": "warm coral",
+      "hex": "#D26A5E",
+      "role": "character accent"
+    },
+    {
+      "name": "sand",
+      "hex": "#D7C49C",
+      "role": "ground light"
+    },
+    {
+      "name": "indigo",
+      "hex": "#3E3D62",
+      "role": "shadow"
+    },
+    {
+      "name": "leaf",
+      "hex": "#71916C",
+      "role": "secondary"
+    }
+  ]
+}

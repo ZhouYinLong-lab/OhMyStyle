@@ -1,0 +1,16 @@
+id: 2d-character-3d-world-game-art
+name: 二维角色与三维场景混合游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 让平面绘制的角色在有深度的三维空间活动，保留二维表演力度，同时获得立体关卡的距离、遮挡与探索。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

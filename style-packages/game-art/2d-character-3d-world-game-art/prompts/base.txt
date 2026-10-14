@@ -1,0 +1,17 @@
+Create a new subject and composition using these observable visual decisions:
+- 二维角色与三维空间层次分明
+- 接地面、遮挡和路径关系清楚
+- 角色与背景分配不同色彩层级
+- 关键边缘有明度差
+- 平面角色动画与三维几何环境共存
+- 角色不自动变为像素或剪纸
+- 环境光与角色受光协调
+- 阴影帮助角色接地
+- 二维边缘保持清楚，环境材质适度简化
+- 侧面与转角仍可辨
+- 背景细节不压过角色
+- 景深不模糊角色轮廓
+- 二维表演和三维空间都可读
+- 接地、遮挡和转角一致
+- 不复制特定角色
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.
