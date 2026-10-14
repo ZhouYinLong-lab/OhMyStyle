@@ -1,0 +1,19 @@
+canonical_name: Q版超变形三维游戏美术
+entity_type: game_art_direction
+origin: super_deformed_character_proportions_in_3d
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - party RPG
+  - small-screen character scene
+  exclusions:
+  - adult realistic proportions
+  - over-detailed costume
+  - copied named character
+sources:
+- https://www.square-enix-games.com/en_US/games/bravely-default-ii
+rendering:
+  model: stylized super-deformed 3D character rendering
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

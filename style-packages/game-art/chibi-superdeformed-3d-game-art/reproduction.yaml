@@ -1,0 +1,15 @@
+medium: stylized super-deformed 3D character rendering
+materials:
+- shortened body proportions
+- simplified costume shapes
+- clear facial features
+process:
+- 先定头身比和剪影
+- 概括服装及装备大形
+- 突出眼睛、眉口和姿态
+- 以软边明暗建立体积
+- 检查小尺寸辨识度
+technical_direction: Chibi proportions are a redesign of anatomy, not a uniform scale
+  reduction.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

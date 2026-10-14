@@ -1,0 +1,16 @@
+id: chibi-superdeformed-3d-game-art
+name: Q版超变形三维游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 通过放大头部、缩短躯干和四肢，将复杂角色压缩成小尺度也能辨认的三维形象，而非等比缩小成人比例。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

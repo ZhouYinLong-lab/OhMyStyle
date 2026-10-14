@@ -1,0 +1,31 @@
+{
+  "name": "chibi-superdeformed-3d-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "cream",
+      "hex": "#F0E3C5",
+      "role": "highlight"
+    },
+    {
+      "name": "coral",
+      "hex": "#C96D5D",
+      "role": "warm accent"
+    },
+    {
+      "name": "sky",
+      "hex": "#7195B1",
+      "role": "cool accent"
+    },
+    {
+      "name": "ink",
+      "hex": "#37333A",
+      "role": "contour"
+    },
+    {
+      "name": "leaf",
+      "hex": "#76916A",
+      "role": "secondary"
+    }
+  ]
+}
