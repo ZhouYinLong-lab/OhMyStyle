@@ -1,0 +1,31 @@
+{
+  "name": "wuxia-jianghu-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "pine green",
+      "hex": "#526A52",
+      "role": "landscape"
+    },
+    {
+      "name": "warm paper",
+      "hex": "#D9C7A1",
+      "role": "open light"
+    },
+    {
+      "name": "iron ink",
+      "hex": "#333A3A",
+      "role": "deep structure"
+    },
+    {
+      "name": "vermilion",
+      "hex": "#A9473D",
+      "role": "focal motion"
+    },
+    {
+      "name": "river blue",
+      "hex": "#66869A",
+      "role": "distance"
+    }
+  ]
+}

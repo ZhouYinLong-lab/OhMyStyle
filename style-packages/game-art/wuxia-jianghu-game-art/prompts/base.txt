@@ -1,0 +1,17 @@
+Create a new subject and composition using these observable visual decisions:
+- 动作、兵器轨迹与路径形成方向
+- 庭院、山道和门派空间各有秩序
+- 地貌与服装色彩相互区分
+- 门派识别色作为局部信号
+- 媒介开放，可为像素、水墨或三维
+- 动作重心、兵器方向和落点清楚
+- 环境光不遮住人物与路径
+- 招式亮色沿运动方向短暂出现
+- 服饰、兵器、木构和山石各有材质
+- 装饰不遮挡轮廓
+- 特效随动作方向扩散
+- 背景为战斗留出对比空间
+- 题材规则可读但媒介开放
+- 动作、地形和社会空间成立
+- 不固定门派或角色
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

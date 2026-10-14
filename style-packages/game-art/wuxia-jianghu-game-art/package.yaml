@@ -1,0 +1,16 @@
+id: wuxia-jianghu-game-art
+name: 武侠江湖游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以侠客行动、兵器线条、门派空间和山水路径塑造武侠世界；题材规则与水墨、像素或写实媒介保持可组合关系。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

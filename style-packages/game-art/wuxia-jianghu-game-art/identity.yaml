@@ -1,0 +1,20 @@
+canonical_name: 武侠江湖游戏美术
+entity_type: game_art_direction
+origin: wuxia_and_jianghu_visual_storytelling
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - martial arts action
+  - sect environment
+  - journey scene
+  exclusions:
+  - fixed hero or weapon
+  - unreadable effects
+  - assumed ink medium
+sources:
+- https://www.playstation.com/en-us/games/wandering-sword/
+rendering:
+  model: adaptive game illustration for a Chinese martial-arts world
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
