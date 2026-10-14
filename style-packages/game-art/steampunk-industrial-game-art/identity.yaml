@@ -1,0 +1,19 @@
+canonical_name: 蒸汽朋克工业游戏美术
+entity_type: game_art_direction
+origin: steam_powered_industrial_imagination
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - industrial city
+  - mechanical puzzle
+  exclusions:
+  - random gears
+  - unexplained pipe networks
+  - generic gold filter
+sources:
+- https://www.frostpunkgame.com/
+rendering:
+  model: industrial illustration with visible steam-power systems
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

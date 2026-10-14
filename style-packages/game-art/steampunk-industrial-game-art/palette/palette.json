@@ -1,0 +1,31 @@
+{
+  "name": "steampunk-industrial-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "soot black",
+      "hex": "#252A2D",
+      "role": "machinery"
+    },
+    {
+      "name": "iron gray",
+      "hex": "#657078",
+      "role": "structure"
+    },
+    {
+      "name": "aged brass",
+      "hex": "#A47C4A",
+      "role": "fittings"
+    },
+    {
+      "name": "furnace amber",
+      "hex": "#D68B42",
+      "role": "heat"
+    },
+    {
+      "name": "ice blue",
+      "hex": "#9BB5BE",
+      "role": "cold contrast"
+    }
+  ]
+}

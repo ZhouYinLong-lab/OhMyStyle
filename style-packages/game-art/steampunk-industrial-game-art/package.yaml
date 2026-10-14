@@ -1,0 +1,16 @@
+id: steampunk-industrial-game-art
+name: 蒸汽朋克工业游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 把锅炉、管线、压力系统和机械连接转译成架空世界中可见的动力系统；齿轮只在结构需要时出现。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
