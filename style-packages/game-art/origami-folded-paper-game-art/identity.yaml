@@ -1,0 +1,19 @@
+canonical_name: 折纸与折叠纸景游戏美术
+entity_type: game_art_direction
+origin: folded_paper_and_pop_up_scene_construction
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - folding puzzle
+  - storybook scene
+  exclusions:
+  - generic paper texture
+  - unfoldable geometry
+  - copied book composition
+sources:
+- https://apps.apple.com/id/app/tengami/id942981334?mt=12
+rendering:
+  model: folded paper illustration and pop-up scene construction
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

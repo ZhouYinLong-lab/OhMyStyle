@@ -1,0 +1,15 @@
+medium: folded paper illustration and pop-up scene construction
+materials:
+- paper sheets
+- folds and hinges
+- layered cut edges
+process:
+- 设计纸面分区和主折线
+- 沿折线建立体积与遮挡
+- 增加可展开的空间层
+- 以投影读出纸层厚度
+- 检查折叠逻辑
+technical_direction: Make fold structure legible; paper grain cannot substitute for
+  folded geometry.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

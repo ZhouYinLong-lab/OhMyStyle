@@ -1,0 +1,26 @@
+{
+  "name": "origami-folded-paper-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "paper cream",
+      "hex": "#E9DFC7",
+      "role": "paper"
+    },
+    {
+      "name": "ink blue",
+      "hex": "#31495C",
+      "role": "contour"
+    },
+    {
+      "name": "vermilion",
+      "hex": "#BF5B47",
+      "role": "accent"
+    },
+    {
+      "name": "sage",
+      "hex": "#7F9274",
+      "role": "secondary plane"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+id: origami-folded-paper-game-art
+name: 折纸与折叠纸景游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以折线、折面、铰接和展开关系建立纸质形体；每个体积都应让人看出纸面如何折合，而非只叠加纸纹。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
