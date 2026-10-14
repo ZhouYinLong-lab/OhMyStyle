@@ -1,0 +1,19 @@
+canonical_name: ASCII 字符游戏美术
+entity_type: game_art_direction
+origin: terminal_glyph_graphics
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - terminal world
+  - tactical map
+  exclusions:
+  - photographic texture
+  - unreadable glyph noise
+  - copied interface
+sources:
+- https://www.gridsagegames.com/cogmind/
+rendering:
+  model: monospaced glyph-based raster art
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

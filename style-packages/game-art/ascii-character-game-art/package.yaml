@@ -1,0 +1,16 @@
+id: ascii-character-game-art
+name: ASCII 字符游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 用字母、数字和标点构成空间、角色与材质，把字符栅格的密度、字体和对比关系作为主要图形语言。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

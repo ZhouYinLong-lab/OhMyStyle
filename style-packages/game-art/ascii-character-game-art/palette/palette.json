@@ -1,0 +1,26 @@
+{
+  "name": "ascii-character-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "terminal black",
+      "hex": "#10151B",
+      "role": "background"
+    },
+    {
+      "name": "warm phosphor",
+      "hex": "#D9D0A7",
+      "role": "primary glyphs"
+    },
+    {
+      "name": "amber",
+      "hex": "#D39A54",
+      "role": "interaction accent"
+    },
+    {
+      "name": "muted green",
+      "hex": "#73947D",
+      "role": "secondary layer"
+    }
+  ]
+}

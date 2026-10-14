@@ -1,0 +1,13 @@
+package_id: ascii-character-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://www.gridsagegames.com/cogmind/
+  authority: Grid Sage Games
+  title: Cogmind
+  supports: source traceability and observable package scope
+  accessed: '2026-10-14'
+attribution: Cogmind by Grid Sage Games; link-only research record, no source assets
+  included.

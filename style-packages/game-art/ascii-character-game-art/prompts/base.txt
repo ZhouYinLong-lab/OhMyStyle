@@ -1,0 +1,16 @@
+Create a new subject and composition using these observable visual decisions:
+- 等宽网格组织空间和图形层级
+- 重要轮廓使用更大字形或更高对比
+- 少量前景、背景和提示色
+- 颜色不独自承担关键信息
+- 字符是主要媒介而非表面装饰
+- 字形组合成块面、轮廓和透视
+- 高对比终端显示
+- 亮度区分交互层与远景
+- 字形清晰、行列对齐
+- 字号变化建立距离
+- 细节由字符密度表达
+- 不覆盖随机噪声
+- 字符阅读与图形阅读同时成立
+- 不复制具体界面或地图
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

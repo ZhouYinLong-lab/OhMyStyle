@@ -1,0 +1,15 @@
+medium: monospaced glyph-based raster art
+materials:
+- monospaced type
+- limited terminal colors
+- character-grid clusters
+process:
+- 选择等宽字符网格
+- 先分空间层级与负形
+- 用字形搭建主体轮廓
+- 增加材质和少量提示符号
+- 缩放后检查阅读性
+technical_direction: Keep glyphs legible at the requested display size; do not encode
+  essential meaning through color alone.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.
