@@ -1,0 +1,16 @@
+id: solarpunk-ecological-game-art
+name: 太阳朋克生态未来游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以生态修复、可再生能源和技术与自然共存构想未来；设施应参与生态循环，而不只是点缀绿色植物。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

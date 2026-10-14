@@ -1,0 +1,31 @@
+{
+  "name": "solarpunk-ecological-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "leaf green",
+      "hex": "#628A61",
+      "role": "restored vegetation"
+    },
+    {
+      "name": "sky blue",
+      "hex": "#78A8B4",
+      "role": "atmosphere"
+    },
+    {
+      "name": "warm sun",
+      "hex": "#D7AC5F",
+      "role": "energy"
+    },
+    {
+      "name": "soil",
+      "hex": "#78644E",
+      "role": "ground"
+    },
+    {
+      "name": "deep water",
+      "hex": "#416C76",
+      "role": "water"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+canonical_name: 太阳朋克生态未来游戏美术
+entity_type: game_art_direction
+origin: ecological_restoration_and_renewable_future
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - ecological restoration
+  - future settlement
+  exclusions:
+  - green filter only
+  - decorative plants without system logic
+  - wasteland-only framing
+sources:
+- https://www.terranil.com/
+rendering:
+  model: ecological game environment illustration
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
