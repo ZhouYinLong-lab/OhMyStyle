@@ -1,0 +1,31 @@
+{
+  "name": "cosmic-horror-biomechanical-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "basalt",
+      "hex": "#313B3D",
+      "role": "structure"
+    },
+    {
+      "name": "mineral gray",
+      "hex": "#77786E",
+      "role": "surface"
+    },
+    {
+      "name": "bone",
+      "hex": "#C7BCA1",
+      "role": "pale forms"
+    },
+    {
+      "name": "dull red",
+      "hex": "#8C5149",
+      "role": "organic accent"
+    },
+    {
+      "name": "cold teal",
+      "hex": "#527878",
+      "role": "local light"
+    }
+  ]
+}

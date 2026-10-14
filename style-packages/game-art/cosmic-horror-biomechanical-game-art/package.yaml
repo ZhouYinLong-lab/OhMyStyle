@@ -1,0 +1,16 @@
+id: cosmic-horror-biomechanical-game-art
+name: 宇宙恐怖与生物机械游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以难以解释的尺度、异化器官和有机机械结构制造陌生感；通过轮廓、运动与局部光线保留可交互空间的辨认度。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

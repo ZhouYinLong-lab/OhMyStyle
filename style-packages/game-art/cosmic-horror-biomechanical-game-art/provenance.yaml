@@ -1,0 +1,13 @@
+package_id: cosmic-horror-biomechanical-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://scorn-game.com/presskit/
+  authority: Ebb Software
+  title: Scorn Press Kit
+  supports: source traceability and observable package scope
+  accessed: '2026-10-14'
+attribution: Scorn Press Kit by Ebb Software; link-only research record, no source
+  assets included.

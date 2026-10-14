@@ -1,0 +1,19 @@
+canonical_name: 宇宙恐怖与生物机械游戏美术
+entity_type: game_art_direction
+origin: cosmic_horror_and_biomechanical_world_design
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - cosmic horror
+  - biomechanical environment
+  exclusions:
+  - uniform flesh texture
+  - unreadable interaction areas
+  - copied creature design
+sources:
+- https://scorn-game.com/presskit/
+rendering:
+  model: surreal biomechanical environment illustration
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
