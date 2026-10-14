@@ -1,0 +1,16 @@
+id: retrofuturist-atomic-age-game-art
+name: 原子时代复古未来游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 重现过去对未来的想象，以流线造型、模拟控制、早期机器人和科技乐观建立时间错位感，而非只摆放老家具。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,0 +1,19 @@
+canonical_name: 原子时代复古未来游戏美术
+entity_type: game_art_direction
+origin: retro_future_imagined_from_mid_century_design
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - speculative technology
+  - retro-future interior
+  exclusions:
+  - nostalgia-only props
+  - random neon
+  - brand logos
+sources:
+- https://theinvinciblegame.com/
+rendering:
+  model: mid-century inspired speculative technology illustration
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

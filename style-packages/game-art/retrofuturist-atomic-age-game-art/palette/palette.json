@@ -1,0 +1,31 @@
+{
+  "name": "retrofuturist-atomic-age-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "cream enamel",
+      "hex": "#E7DDC3",
+      "role": "housing"
+    },
+    {
+      "name": "navy",
+      "hex": "#2D4962",
+      "role": "controls"
+    },
+    {
+      "name": "signal orange",
+      "hex": "#D26A3D",
+      "role": "status accent"
+    },
+    {
+      "name": "brushed steel",
+      "hex": "#899092",
+      "role": "metal"
+    },
+    {
+      "name": "charcoal",
+      "hex": "#2C3032",
+      "role": "shadow"
+    }
+  ]
+}
