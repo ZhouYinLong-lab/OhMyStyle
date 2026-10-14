@@ -1,0 +1,19 @@
+canonical_name: 彩玻拼片游戏美术
+entity_type: game_art_direction
+origin: stained_glass_and_mosaic_piece_composition
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - ornamental scene
+  - piece-based puzzle
+  exclusions:
+  - opaque flat mosaic
+  - washed-out glow
+  - copied puzzle art
+sources:
+- https://store.steampowered.com/app/1536980/Glass_Masquerade_3_Honeylines/
+rendering:
+  model: translucent color pieces arranged as a stained-glass panel
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

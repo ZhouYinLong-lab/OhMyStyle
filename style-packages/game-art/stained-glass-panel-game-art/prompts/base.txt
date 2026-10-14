@@ -1,0 +1,17 @@
+Create a new subject and composition using these observable visual decisions:
+- 色片先组成大轮廓，再细分内部
+- 接缝构成结构线而非随机网格
+- 宝石色片与深色边界相邻
+- 明度层级维持图形完整
+- 透光玻璃和深色接缝共同造型
+- 片内颜色有变化但层次有限
+- 背光穿透色片
+- 边界仍可读且泛光受控
+- 切片边缘清楚
+- 玻璃面带细微不均匀感
+- 片内纹理低于轮廓信息
+- 反光方向一致
+- 色片边界组成完整形体
+- 透光关系明确
+- 不复制具体拼图
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

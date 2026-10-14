@@ -1,0 +1,14 @@
+medium: translucent color pieces arranged as a stained-glass panel
+materials:
+- colored glass
+- dark leading seams
+- transmitted light
+process:
+- 先设计大轮廓和主色片
+- 用接缝划分结构
+- 加入有限透光与片内明暗
+- 用背光强化色片但保留边界
+- 缩小检查辨识度
+technical_direction: Distinguish translucent glass from opaque stone or ceramic mosaic.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

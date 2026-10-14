@@ -1,0 +1,31 @@
+{
+  "name": "stained-glass-panel-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "deep lead",
+      "hex": "#202837",
+      "role": "seams"
+    },
+    {
+      "name": "ruby",
+      "hex": "#A84553",
+      "role": "warm glass"
+    },
+    {
+      "name": "sapphire",
+      "hex": "#3E6F9A",
+      "role": "cool glass"
+    },
+    {
+      "name": "amber",
+      "hex": "#D49A4F",
+      "role": "light"
+    },
+    {
+      "name": "opal",
+      "hex": "#E6D9BB",
+      "role": "pale glass"
+    }
+  ]
+}
