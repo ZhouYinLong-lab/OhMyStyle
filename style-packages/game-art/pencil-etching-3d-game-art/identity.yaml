@@ -1,0 +1,19 @@
+canonical_name: 铅笔排线与蚀刻感三维游戏美术
+entity_type: game_art_direction
+origin: hand_drawn_pencil_rendering_on_3d_forms
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - folk horror scene
+  - etched environment
+  exclusions:
+  - smooth gradient-only shading
+  - random crosshatching
+  - unreadable fine lines
+sources:
+- https://mundaun.com/
+rendering:
+  model: 3D scene rendering with hand-drawn pencil and etched linework
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

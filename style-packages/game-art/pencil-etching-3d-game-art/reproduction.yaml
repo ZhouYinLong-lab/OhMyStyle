@@ -1,0 +1,16 @@
+medium: 3D scene rendering with hand-drawn pencil and etched linework
+materials:
+- pencil hatching
+- paper grain
+- charcoal accents
+- simplified 3D geometry
+process:
+- 搭建清楚三维空间
+- 按平面朝向安排排线
+- 用交叉线密度构成明暗
+- 保留少量纸面擦痕
+- 移动与缩放检查线条闪烁
+technical_direction: Keep hatch direction tied to surface form and camera distance;
+  avoid uniform high-frequency line noise.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

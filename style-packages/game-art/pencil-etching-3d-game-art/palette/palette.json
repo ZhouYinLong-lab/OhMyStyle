@@ -1,0 +1,31 @@
+{
+  "name": "pencil-etching-3d-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "paper gray",
+      "hex": "#D7D3C8",
+      "role": "support"
+    },
+    {
+      "name": "graphite",
+      "hex": "#323436",
+      "role": "deep line"
+    },
+    {
+      "name": "mid graphite",
+      "hex": "#777A78",
+      "role": "hatching"
+    },
+    {
+      "name": "warm chalk",
+      "hex": "#EEE8D8",
+      "role": "highlight"
+    },
+    {
+      "name": "rust accent",
+      "hex": "#9D6555",
+      "role": "limited color"
+    }
+  ]
+}
