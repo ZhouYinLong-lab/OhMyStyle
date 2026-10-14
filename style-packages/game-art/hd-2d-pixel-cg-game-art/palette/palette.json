@@ -1,0 +1,26 @@
+{
+  "name": "hd-2d-pixel-cg-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "deep indigo",
+      "hex": "#20283D",
+      "role": "environment shadow"
+    },
+    {
+      "name": "night blue",
+      "hex": "#405C82",
+      "role": "cool distance"
+    },
+    {
+      "name": "warm amber",
+      "hex": "#D89A52",
+      "role": "light focus"
+    },
+    {
+      "name": "paper cream",
+      "hex": "#E5D8B7",
+      "role": "pixel highlight"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+medium: 2D pixel sprites layered over a real-time 3D environment
+materials:
+- pixel sprites
+- low-frequency 3D materials
+- controlled bloom
+process:
+- establish the subject and camera
+- build simple 3D depth layers
+- place crisp pixel sprites
+- add restrained light and depth of field
+- check path and edge readability
+technical_direction: Keep pixel characters sharp; reserve depth of field for distant
+  scenery.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

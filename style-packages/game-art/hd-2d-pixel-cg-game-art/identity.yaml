@@ -1,0 +1,20 @@
+canonical_name: HD-2D 像素与三维融合游戏美术
+entity_type: hd_2d_game_art_direction
+origin: pixel_art_and_realtime_3d_hybrid
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - RPG scenes
+  - exploration environments
+  exclusions:
+  - pure flat pixel scene
+  - photorealistic PBR
+  - copied character
+  - excessive blur
+sources:
+- https://www.square-enix-games.com/en_US/games/octopath-traveler-ii
+rendering:
+  model: 2D pixel sprites layered over a real-time 3D environment
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

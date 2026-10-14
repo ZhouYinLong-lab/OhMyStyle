@@ -1,0 +1,21 @@
+composition:
+- 2D pixel sprites layer over 3D depth
+- foreground, middle ground, and distance stay distinct
+palette:
+- cool environmental layers with warm focal light
+- pixel clusters remain readable in shadow
+medium:
+- pixel sprites in simplified real-time 3D space
+- depth of field serves distance without blurring characters
+lighting:
+- layered environment light
+- controlled bloom
+surface:
+- crisp sprite edges
+- simple 3D material detail
+texture:
+- stable pixel clusters
+- sparse atmospheric particles
+invariants:
+- 2D sprite and 3D space stay legible
+- no copied scene or named character

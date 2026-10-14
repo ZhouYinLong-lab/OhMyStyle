@@ -1,0 +1,16 @@
+Create a new subject and composition using these observable visual decisions:
+- 2D pixel sprites layer over 3D depth
+- foreground, middle ground, and distance stay distinct
+- cool environmental layers with warm focal light
+- pixel clusters remain readable in shadow
+- pixel sprites in simplified real-time 3D space
+- depth of field serves distance without blurring characters
+- layered environment light
+- controlled bloom
+- crisp sprite edges
+- simple 3D material detail
+- stable pixel clusters
+- sparse atmospheric particles
+- 2D sprite and 3D space stay legible
+- no copied scene or named character
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

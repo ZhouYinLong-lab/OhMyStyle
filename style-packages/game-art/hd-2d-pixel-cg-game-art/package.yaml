@@ -1,0 +1,16 @@
+id: hd-2d-pixel-cg-game-art
+name: HD-2D 像素与三维融合游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 将清晰的二维像素精灵置于具有体积、景深和分层灯光的三维空间，让复古图形与现代镜头语言同时可读。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
