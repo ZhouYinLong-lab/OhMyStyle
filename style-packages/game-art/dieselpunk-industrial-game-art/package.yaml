@@ -1,0 +1,16 @@
+id: dieselpunk-industrial-game-art
+name: 柴油朋克工业游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以早期工业、燃烧动力、装甲和大规模生产构建架空机械世界，并通过轮廓与方向保证远距离辨识。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

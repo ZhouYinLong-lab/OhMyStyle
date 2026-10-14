@@ -1,0 +1,31 @@
+{
+  "name": "dieselpunk-industrial-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "iron",
+      "hex": "#454C4E",
+      "role": "armor"
+    },
+    {
+      "name": "field olive",
+      "hex": "#657158",
+      "role": "equipment"
+    },
+    {
+      "name": "soot",
+      "hex": "#24282A",
+      "role": "shadow"
+    },
+    {
+      "name": "rust",
+      "hex": "#8C5640",
+      "role": "wear"
+    },
+    {
+      "name": "signal ochre",
+      "hex": "#C19A53",
+      "role": "marking"
+    }
+  ]
+}

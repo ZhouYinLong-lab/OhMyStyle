@@ -1,0 +1,13 @@
+package_id: dieselpunk-industrial-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://ironharvest.deepsilver.com/
+  authority: KING Art Games / Deep Silver
+  title: Iron Harvest 1920+
+  supports: source traceability and observable package scope
+  accessed: '2026-10-14'
+attribution: Iron Harvest 1920+ by KING Art Games / Deep Silver; link-only research
+  record, no source assets included.

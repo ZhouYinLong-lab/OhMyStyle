@@ -1,0 +1,19 @@
+canonical_name: 柴油朋克工业游戏美术
+entity_type: game_art_direction
+origin: interwar_industrial_warfare_and_combustion_mechanics
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - industrial battlefield
+  - mechanical strategy
+  exclusions:
+  - random steampunk gears
+  - unreadable smoke
+  - copied mech design
+sources:
+- https://ironharvest.deepsilver.com/
+rendering:
+  model: industrial military illustration with combustion-powered machinery
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
