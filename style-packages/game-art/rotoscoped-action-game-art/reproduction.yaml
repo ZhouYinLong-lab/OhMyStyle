@@ -1,0 +1,15 @@
+medium: frame-by-frame 2D animation based on observed movement
+materials:
+- live-action motion reference
+- drawn contours
+- selective frame processing
+process:
+- 观察动作节奏和重心
+- 选择关键姿态并简化形体
+- 连接为可读动作弧线
+- 设计线条与色块处理
+- 检查帧间轮廓稳定
+technical_direction: Use motion reference as a study aid only; do not copy a specific
+  actor, footage, or recognizable sequence.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

@@ -1,0 +1,19 @@
+canonical_name: 转描动作游戏美术
+entity_type: game_art_direction
+origin: live_action_reference_and_frame_by_frame_translation
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - action animation
+  - story scene
+  exclusions:
+  - copied actor
+  - photorealistic frame
+  - frozen traced footage
+sources:
+- https://jordanmechner.com/
+rendering:
+  model: frame-by-frame 2D animation based on observed movement
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

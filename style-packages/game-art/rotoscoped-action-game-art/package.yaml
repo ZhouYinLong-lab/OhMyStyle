@@ -1,0 +1,16 @@
+id: rotoscoped-action-game-art
+name: 转描动作游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以真人动作或影像为运动参照，再经逐帧描绘、提炼或处理形成动画；核心是动作观察与再设计，而非固定表面画风。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

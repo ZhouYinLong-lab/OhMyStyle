@@ -1,0 +1,26 @@
+{
+  "name": "rotoscoped-action-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "warm paper",
+      "hex": "#E9DDC7",
+      "role": "base"
+    },
+    {
+      "name": "charcoal",
+      "hex": "#2A2B30",
+      "role": "contour"
+    },
+    {
+      "name": "brick red",
+      "hex": "#AC5044",
+      "role": "action accent"
+    },
+    {
+      "name": "smoke blue",
+      "hex": "#687B83",
+      "role": "background"
+    }
+  ]
+}
