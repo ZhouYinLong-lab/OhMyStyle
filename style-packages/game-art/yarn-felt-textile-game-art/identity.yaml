@@ -1,0 +1,19 @@
+canonical_name: 毛线与毡布游戏美术
+entity_type: game_art_direction
+origin: textile_craft_visual_language_in_games
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - crafted world
+  - character platformer
+  exclusions:
+  - generic plastic surface
+  - flat color without fiber logic
+  - copied character
+sources:
+- https://www.ea.com/games/unravel/unravel
+rendering:
+  model: crafted textile illustration or textured 3D render
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

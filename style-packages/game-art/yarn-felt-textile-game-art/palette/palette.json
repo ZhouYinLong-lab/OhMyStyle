@@ -1,0 +1,26 @@
+{
+  "name": "yarn-felt-textile-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "wool cream",
+      "hex": "#E6D8BB",
+      "role": "soft light"
+    },
+    {
+      "name": "yarn red",
+      "hex": "#BB554D",
+      "role": "focal thread"
+    },
+    {
+      "name": "forest muted",
+      "hex": "#536B57",
+      "role": "environment"
+    },
+    {
+      "name": "denim blue",
+      "hex": "#58788C",
+      "role": "cool fabric"
+    }
+  ]
+}

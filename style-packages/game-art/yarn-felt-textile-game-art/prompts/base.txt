@@ -1,0 +1,17 @@
+Create a new subject and composition using these observable visual decisions:
+- 大形由布片和纱线体块建立
+- 接缝与针脚作为方向性细节
+- 纱线可作局部焦点，环境低饱和
+- 明暗显示织物体积而非塑料高光
+- 针织、毡化和编织具有不同结构
+- 补丁和接缝参与造型
+- 柔和侧光显示纤维起伏
+- 接触阴影展示厚度
+- 边缘微毛但轮廓清楚
+- 褶皱符合重力和受力
+- 针脚方向跟随结构
+- 颗粒尺度随材质变化
+- 织物结构可辨
+- 角色轮廓稳定
+- 不复制来源角色
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

@@ -1,0 +1,16 @@
+id: yarn-felt-textile-game-art
+name: 毛线与毡布游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以可辨的纤维、编织环、接缝和柔软厚度塑造角色与环境，让织物结构参与轮廓和空间叙事。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
