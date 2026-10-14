@@ -1,0 +1,19 @@
+canonical_name: 欧美动画式夸张三维游戏美术
+entity_type: game_art_direction
+origin: expressive_character_design_and_stylized_3d
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - character action
+  - expressive scene
+  exclusions:
+  - realistic anatomy
+  - uniform exaggeration
+  - copied character
+sources:
+- https://www.doublefine.com/games/psychonauts-2
+rendering:
+  model: stylized 3D character illustration
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

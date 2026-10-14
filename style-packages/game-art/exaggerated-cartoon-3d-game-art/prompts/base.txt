@@ -1,0 +1,17 @@
+Create a new subject and composition using these observable visual decisions:
+- 角色剪影先传达性格和动作
+- 关键姿态可被远距离读懂
+- 大色块区分角色与场景
+- 局部色彩强调表情和动作
+- 三维结构以动画比例主动变形
+- 材质细节服从表演轮廓
+- 面部和肢体重点受光
+- 阴影不抹掉夸张形体
+- 皮肤、布料和道具简化但各自可辨
+- 边缘干净而有造型弹性
+- 细节集中于表情和功能部位
+- 背景不与角色争抢
+- 夸张比例有明确主次
+- 动作和轮廓可读
+- 不复制特定角色
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

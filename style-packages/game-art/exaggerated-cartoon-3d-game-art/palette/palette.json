@@ -1,0 +1,31 @@
+{
+  "name": "exaggerated-cartoon-3d-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "warm skin",
+      "hex": "#D78C69",
+      "role": "character"
+    },
+    {
+      "name": "deep plum",
+      "hex": "#40344C",
+      "role": "shadow"
+    },
+    {
+      "name": "sun yellow",
+      "hex": "#E7C45B",
+      "role": "accent"
+    },
+    {
+      "name": "teal",
+      "hex": "#4C8A86",
+      "role": "support"
+    },
+    {
+      "name": "cream",
+      "hex": "#F0E4C9",
+      "role": "highlight"
+    }
+  ]
+}

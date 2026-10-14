@@ -1,0 +1,16 @@
+id: exaggerated-cartoon-3d-game-art
+name: 欧美动画式夸张三维游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 把角色当作可表演的图形符号，放大最能传达性格的部位并压缩次要结构，让姿态和剪影先于写实比例。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
