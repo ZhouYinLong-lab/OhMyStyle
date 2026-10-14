@@ -1,0 +1,26 @@
+{
+  "name": "woodcut-print-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "ink black",
+      "hex": "#232326",
+      "role": "deep block"
+    },
+    {
+      "name": "warm paper",
+      "hex": "#E5D9C0",
+      "role": "paper"
+    },
+    {
+      "name": "iron gray",
+      "hex": "#77716B",
+      "role": "hatching"
+    },
+    {
+      "name": "rust red",
+      "hex": "#A34D41",
+      "role": "spot accent"
+    }
+  ]
+}

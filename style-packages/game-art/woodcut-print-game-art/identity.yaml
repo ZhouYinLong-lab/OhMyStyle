@@ -1,0 +1,19 @@
+canonical_name: 木刻版画游戏美术
+entity_type: game_art_direction
+origin: woodcut_print_language_in_game_art
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - folklore scene
+  - printed narrative
+  exclusions:
+  - sepia filter only
+  - random crosshatching
+  - copied named print
+sources:
+- https://store.steampowered.com/app/505330/Apocalipsis/
+rendering:
+  model: digital illustration inspired by relief printmaking
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
