@@ -1,0 +1,31 @@
+{
+  "name": "collage-mixed-media-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "paper cream",
+      "hex": "#E8DCC2",
+      "role": "support"
+    },
+    {
+      "name": "ink",
+      "hex": "#2E3034",
+      "role": "contour"
+    },
+    {
+      "name": "oxide red",
+      "hex": "#B55446",
+      "role": "focal fragment"
+    },
+    {
+      "name": "dusty blue",
+      "hex": "#637C91",
+      "role": "secondary layer"
+    },
+    {
+      "name": "mustard",
+      "hex": "#C7A355",
+      "role": "warm accent"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+canonical_name: 拼贴与混合媒材游戏美术
+entity_type: game_art_direction
+origin: collage_and_mixed_media_composition
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - narrative collage
+  - editorial game scene
+  exclusions:
+  - single flat illustration
+  - unmarked seamless composite
+  - copied source artwork
+sources:
+- https://store.steampowered.com/app/1071130/The_Procession_to_Calvary/
+rendering:
+  model: digitally composed collage with distinct source-like material layers
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

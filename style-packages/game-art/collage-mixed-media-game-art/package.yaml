@@ -1,0 +1,16 @@
+id: collage-mixed-media-game-art
+name: 拼贴与混合媒材游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 通过剪切、叠放、遮挡和尺度错置组合图像材料，让接缝和来源差异成为构图的一部分。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
