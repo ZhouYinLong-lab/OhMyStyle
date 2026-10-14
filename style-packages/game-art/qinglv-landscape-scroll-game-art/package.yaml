@@ -1,0 +1,16 @@
+id: qinglv-landscape-scroll-game-art
+name: 青绿山水画卷游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 借石青、石绿、勾线和层叠峰峦构成可游历的画卷空间，同时保持路径、远近和交互层级清楚。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

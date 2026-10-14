@@ -1,0 +1,31 @@
+{
+  "name": "qinglv-landscape-scroll-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "stone blue",
+      "hex": "#416C93",
+      "role": "mountain cool"
+    },
+    {
+      "name": "malachite green",
+      "hex": "#5D8061",
+      "role": "mountain green"
+    },
+    {
+      "name": "deep ink",
+      "hex": "#263A3E",
+      "role": "outlines"
+    },
+    {
+      "name": "warm ochre",
+      "hex": "#C49A62",
+      "role": "rock and path"
+    },
+    {
+      "name": "scroll light",
+      "hex": "#E6D9B6",
+      "role": "mist"
+    }
+  ]
+}

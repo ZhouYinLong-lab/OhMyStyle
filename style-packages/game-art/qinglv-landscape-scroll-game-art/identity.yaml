@@ -1,0 +1,20 @@
+canonical_name: 青绿山水画卷游戏美术
+entity_type: game_art_direction
+origin: qinglv_landscape_painting_translated_to_interactive_space
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - landscape exploration
+  - scroll scene
+  exclusions:
+  - simple teal filter
+  - photorealistic panorama
+  - copied painting
+  - unclear paths
+sources:
+- https://www.taptap.cn/app/91969
+rendering:
+  model: illustrative landscape painting adapted to exploratory game space
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
