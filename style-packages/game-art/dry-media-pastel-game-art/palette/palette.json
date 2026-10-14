@@ -1,0 +1,26 @@
+{
+  "name": "dry-media-pastel-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "paper",
+      "hex": "#E9DFC9",
+      "role": "support"
+    },
+    {
+      "name": "crayon red",
+      "hex": "#B95D51",
+      "role": "focal mark"
+    },
+    {
+      "name": "pencil blue",
+      "hex": "#516D87",
+      "role": "cool line"
+    },
+    {
+      "name": "ochre",
+      "hex": "#C49A57",
+      "role": "warm fill"
+    }
+  ]
+}

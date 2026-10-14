@@ -1,0 +1,19 @@
+canonical_name: 蜡笔粉彩与彩铅游戏美术
+entity_type: game_art_direction
+origin: dry_drawing_media_translated_to_interactive_shapes
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - hand-drawn puzzle
+  - storybook environment
+  exclusions:
+  - smooth digital gradients
+  - uniform noise
+  - unclear interaction edge
+sources:
+- https://www.crayonphysics.com/
+rendering:
+  model: dry drawing media on textured paper
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
