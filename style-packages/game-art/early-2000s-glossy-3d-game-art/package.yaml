@@ -1,0 +1,16 @@
+id: early-2000s-glossy-3d-game-art
+name: 2000年代初亮面三维游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 借第六世代主机时期常见的光滑模型、清晰贴图色块和直接高光建立年代观感，同时保留可读几何和有限材质层次。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

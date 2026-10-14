@@ -1,0 +1,31 @@
+{
+  "name": "early-2000s-glossy-3d-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "electric blue",
+      "hex": "#316DA2",
+      "role": "cool mass"
+    },
+    {
+      "name": "sun yellow",
+      "hex": "#E4C84E",
+      "role": "accent"
+    },
+    {
+      "name": "warm concrete",
+      "hex": "#A99E89",
+      "role": "environment"
+    },
+    {
+      "name": "shadow navy",
+      "hex": "#233144",
+      "role": "depth"
+    },
+    {
+      "name": "white highlight",
+      "hex": "#E7E5D8",
+      "role": "specular"
+    }
+  ]
+}

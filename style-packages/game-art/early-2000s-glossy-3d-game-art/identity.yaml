@@ -1,0 +1,19 @@
+canonical_name: 2000年代初亮面三维游戏美术
+entity_type: game_art_direction
+origin: early_2000s_console_3d_visual_language
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - arcade action
+  - stylized console scene
+  exclusions:
+  - modern PBR microdetail
+  - bloom-only filter
+  - copied character
+sources:
+- https://store.steampowered.com/app/213610/Sonic_Adventure_2/
+rendering:
+  model: stylized real-time 3D with smooth materials and direct highlights
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

@@ -1,0 +1,17 @@
+Create a new subject and composition using these observable visual decisions:
+- 中低密度几何和清晰场景层级
+- 大形与速度方向优先
+- 鲜明材质色块和明确高光色
+- 避免单靠泛光建立年代感
+- 简洁模型配较清晰贴图
+- 高光直接但不过度写实
+- 高光硬朗并能读出体积
+- 运动环境保留轮廓
+- 光滑塑料、金属和贴图材质分开
+- 边缘可有早期实时渲染感
+- 细节密度有限，贴图色块可读
+- 不模拟低分辨率损坏
+- 几何简化与清晰高光同时存在
+- 不把泛光当作唯一特征
+- 不复制具体游戏场景
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

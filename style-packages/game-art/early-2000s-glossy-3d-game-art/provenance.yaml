@@ -1,0 +1,13 @@
+package_id: early-2000s-glossy-3d-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://store.steampowered.com/app/213610/Sonic_Adventure_2/
+  authority: SEGA
+  title: Sonic Adventure 2
+  supports: source traceability and observable package scope
+  accessed: '2026-10-14'
+attribution: Sonic Adventure 2 by SEGA; link-only research record, no source assets
+  included.
