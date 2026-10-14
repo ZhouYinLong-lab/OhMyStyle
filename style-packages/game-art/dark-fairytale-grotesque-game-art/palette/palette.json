@@ -1,0 +1,31 @@
+{
+  "name": "dark-fairytale-grotesque-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "old paper",
+      "hex": "#D8C8A4",
+      "role": "familiar ground"
+    },
+    {
+      "name": "ink plum",
+      "hex": "#39303F",
+      "role": "unease"
+    },
+    {
+      "name": "muted rose",
+      "hex": "#B46F6D",
+      "role": "story accent"
+    },
+    {
+      "name": "sour green",
+      "hex": "#9B9A63",
+      "role": "uncanny accent"
+    },
+    {
+      "name": "deep blue",
+      "hex": "#45536A",
+      "role": "night layer"
+    }
+  ]
+}

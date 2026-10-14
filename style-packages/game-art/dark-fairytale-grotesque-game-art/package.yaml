@@ -1,0 +1,16 @@
+id: dark-fairytale-grotesque-game-art
+name: 暗黑童话与怪诞游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 借童话、玩具和儿童视角建立熟悉感，再以扭曲比例、反常道具和危险空间制造不安；不限定受众或具体动画技术。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

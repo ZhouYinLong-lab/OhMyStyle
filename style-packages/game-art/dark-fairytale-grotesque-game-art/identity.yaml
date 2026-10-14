@@ -1,0 +1,19 @@
+canonical_name: 暗黑童话与怪诞游戏美术
+entity_type: game_art_direction
+origin: dark_fairytale_and_grotesque_worldbuilding
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - fairytale environment
+  - narrative puzzle
+  exclusions:
+  - all-dark scene
+  - random deformation
+  - copied story character
+sources:
+- https://www.ea.com/games/lost-in-random
+rendering:
+  model: adaptive storybook and game environment illustration
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
