@@ -1,0 +1,26 @@
+{
+  "name": "monochrome-3d-value-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "near black",
+      "hex": "#161719",
+      "role": "deep shadow"
+    },
+    {
+      "name": "charcoal",
+      "hex": "#414448",
+      "role": "mid dark"
+    },
+    {
+      "name": "stone gray",
+      "hex": "#92938F",
+      "role": "mid light"
+    },
+    {
+      "name": "paper white",
+      "hex": "#E5E2D8",
+      "role": "highlight"
+    }
+  ]
+}

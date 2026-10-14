@@ -1,0 +1,17 @@
+Create a new subject and composition using these observable visual decisions:
+- 亮区、暗块和负形建立空间
+- 关键路径以明度区分
+- 黑白为主并允许有限灰阶
+- 明度承担信息层级
+- 三维体积由投影、反光和轮廓表达
+- 材质不依赖色相区分
+- 强方向光形成可读投影
+- 暗部保留导航线索
+- 高光和暗面能区分表面
+- 避免全部压成纯黑
+- 纹理与明度层级一致
+- 减少无用颗粒
+- 空间与物件靠明度可辨
+- 不把彩色图直接去饱和
+- 交互线索有足够亮度
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

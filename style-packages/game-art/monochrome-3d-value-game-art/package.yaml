@@ -1,0 +1,16 @@
+id: monochrome-3d-value-game-art
+name: 黑白明暗构成三维游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 主动撤去大部分颜色，以黑白灰阶、负形和投影组织三维空间；关键是重设计明暗关系，而非给彩色画面去饱和。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

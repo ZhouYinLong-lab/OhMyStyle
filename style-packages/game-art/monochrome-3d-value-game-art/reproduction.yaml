@@ -1,0 +1,16 @@
+medium: monochrome 3D scene design using deliberate value grouping
+materials:
+- black and white values
+- controlled grayscale
+- directional light
+- clear negative shapes
+process:
+- 以灰阶缩略图设计大明暗
+- 确认路径和主体负形
+- 建立关键光源与投影
+- 按材质分配反光和暗面
+- 检查交互物亮度
+technical_direction: Use value as the main information system; do not merely desaturate
+  a colorful render.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

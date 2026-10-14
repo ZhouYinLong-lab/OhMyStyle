@@ -1,0 +1,19 @@
+canonical_name: 黑白明暗构成三维游戏美术
+entity_type: game_art_direction
+origin: monochrome_value_composition_in_3d
+period: contemporary
+domain: game_art
+scope:
+  use_cases:
+  - noir environment
+  - light-based puzzle
+  exclusions:
+  - color-only cues
+  - uniform gray wash
+  - unreadable dark masses
+sources:
+- https://store.steampowered.com/app/301560/White_Night/
+rendering:
+  model: monochrome 3D scene design using deliberate value grouping
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.
