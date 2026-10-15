@@ -1,0 +1,31 @@
+{
+  "name": "naturalistic-realism-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "earth",
+      "hex": "#816B52",
+      "role": "soil_and_aged_material"
+    },
+    {
+      "name": "foliage",
+      "hex": "#647A4D",
+      "role": "vegetation"
+    },
+    {
+      "name": "stone",
+      "hex": "#7E8582",
+      "role": "mineral_surface"
+    },
+    {
+      "name": "sky",
+      "hex": "#9DB6C3",
+      "role": "atmospheric_distance"
+    },
+    {
+      "name": "sunlight",
+      "hex": "#D8B87A",
+      "role": "natural_warm_light"
+    }
+  ]
+}

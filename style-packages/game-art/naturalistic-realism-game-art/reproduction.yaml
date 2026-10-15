@@ -1,0 +1,16 @@
+medium: physically grounded 3D environment with observational lighting and material
+  behavior
+materials:
+- 尺度一致的几何体
+- 受控物理材质
+- 方向性环境细节
+- 大气透视
+- 自然光与反弹光
+process:
+- 先建立地形尺度和光源方向
+- 再安置与环境功能相符的结构
+- 按材料属性配置粗糙度和反射
+- 最后检查远中近景及可行走路径
+technical_direction: 使用高细节前先保证尺度、光照和材质响应可信；避免用景深、锐化或色彩滤镜掩盖空间错误。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

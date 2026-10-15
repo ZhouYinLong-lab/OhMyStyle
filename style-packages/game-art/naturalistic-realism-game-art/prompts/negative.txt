@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- generic_cinematic_teal_orange
+- fantasy_material_glow
+- arbitrary_asset_scatter
+- copied_named_world

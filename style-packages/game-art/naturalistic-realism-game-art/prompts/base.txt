@@ -1,0 +1,28 @@
+Subject: {SUBJECT}
+Location: {LOCATION}
+
+Create a new subject and composition using these observable visual decisions:
+- 空间尺度由可比较的物体和地形关系建立
+- 视线引导来自地貌、光线和真实使用路径
+- 远近层次遵循大气和遮挡关系
+- 颜色来自环境光与材料本色的共同作用
+- 远景对比和饱和度随空气距离下降
+- 人工色彩用于有因果的标记或物件
+- 三维形体保持可信比例和结构
+- 材质差异由粗糙度、反射和细节尺度共同表达
+- 写实不要求每个区域都堆满微细节
+- 主光方向与环境反弹光一致
+- 阴影跟随接触关系和物体尺度
+- 天气及时间改变局部色温而非统一套滤镜
+- 磨损、沉积和植被生长与暴露及使用方式相关
+- 材质在近景可辨远景收敛
+- 高光受表面粗糙度控制
+- 细节沿结构和生态分布
+- 重复资产避免机械复制感
+- 环境叙事有空间因果且不阻塞路径
+- 光照、材质和尺度互相支持
+- 世界细节服务空间可信度及玩法阅读
+- 不复刻来源游戏的地点、角色或标志
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.
+
+SUBJECT INDEPENDENCE CONTRACT: render only the requested subject and location; do not add a default character, object, setting, or narrative.

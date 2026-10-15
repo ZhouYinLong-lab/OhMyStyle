@@ -1,0 +1,24 @@
+canonical_name: 自然主义写实游戏美术
+entity_type: naturalistic_realist_game_art_direction
+origin: observational_environmental_realism
+period: 2000s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - natural_environment
+  - inhabited_settlement
+  - material_study
+  - open_world_scene
+  exclusions:
+  - generic_cinematic_teal_orange
+  - fantasy_material_glow
+  - arbitrary_asset_scatter
+  - copied_named_world
+  subject_policy: open
+sources:
+- https://blog.playstation.com/2021/11/22/horizon-forbidden-west-an-authentic-world/
+rendering:
+  model: physically grounded 3D environment with observational lighting and material
+    behavior
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

@@ -1,0 +1,14 @@
+package_id: naturalistic-realism-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://blog.playstation.com/2021/11/22/horizon-forbidden-west-an-authentic-world/
+  authority: Guerrilla Games / PlayStation Blog
+  title: 'Horizon Forbidden West: An authentic world'
+  supports: source traceability and observable package scope
+  accessed: '2026-10-14'
+attribution: Horizon Forbidden West is a commercial work by Guerrilla Games and Sony
+  Interactive Entertainment; this package abstracts environmental art principles and
+  includes no game assets.
