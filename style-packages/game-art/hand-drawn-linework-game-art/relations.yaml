@@ -1,0 +1,8 @@
+related_packages: []
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture
+  before crossing this package with another.
+crossing:
+  supported: true
+  default_mode: adaptive
+  note: Cross-style composition is handled by the repository-level workflow, not by
+    this package identity.

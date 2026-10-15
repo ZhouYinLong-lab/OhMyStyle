@@ -1,0 +1,24 @@
+canonical_name: 手绘线描游戏美术
+entity_type: hand_drawn_linework_game_art_direction
+origin: hand_illustration_and_interactive_search
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - search_scene
+  - illustrated_map
+  - narrative_location
+  - monochrome_puzzle
+  exclusions:
+  - perfect_vector_uniformity
+  - photographic_shading
+  - copied_illustration
+  - illegible_dense_hatching
+  subject_policy: open
+sources:
+- https://hiddenfolks.com/
+rendering:
+  model: hand-drawn ink or pencil illustration with layered linework for an interactive
+    scene
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

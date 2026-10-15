@@ -1,0 +1,31 @@
+{
+  "name": "hand-drawn-linework-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "ink",
+      "hex": "#252523",
+      "role": "primary_line"
+    },
+    {
+      "name": "paper",
+      "hex": "#F4F0E5",
+      "role": "ground"
+    },
+    {
+      "name": "graphite",
+      "hex": "#88877F",
+      "role": "secondary_line"
+    },
+    {
+      "name": "muted_red",
+      "hex": "#B95B51",
+      "role": "optional_focal_accent"
+    },
+    {
+      "name": "muted_blue",
+      "hex": "#66858B",
+      "role": "optional_cool_accent"
+    }
+  ]
+}
