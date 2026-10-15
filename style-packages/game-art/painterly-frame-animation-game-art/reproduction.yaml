@@ -1,0 +1,16 @@
+medium: hand-authored 2D painted animation with pose-by-pose timing and restrained
+  compositing
+materials:
+- 绘画色层
+- 手绘轮廓
+- 纸面或颜料纹理
+- 分层透明度
+- 明确动作关键帧
+process:
+- 先明确动作重心和关键剪影
+- 再逐帧设计姿态过渡
+- 铺设大色面与环境笔触
+- 最后校准帧率节奏和可行动边界
+technical_direction: 允许相邻帧姿态与线条轻微变化；碰撞、平台和攻击预警的视觉位置必须稳定。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

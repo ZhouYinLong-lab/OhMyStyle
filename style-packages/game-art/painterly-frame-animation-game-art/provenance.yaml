@@ -1,0 +1,13 @@
+package_id: painterly-frame-animation-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research
+  and visual analysis only. They are not bundled or redistributed.
+sources:
+- url: https://nomada.studio/studio/
+  authority: Nomada Studio
+  title: Nomada Studio official studio page
+  supports: source traceability and observable package scope
+  accessed: '2026-10-14'
+attribution: GRIS is a commercial work by Nomada Studio; this package generalizes
+  hand-authored illustration and animation traits without reproducing its art.

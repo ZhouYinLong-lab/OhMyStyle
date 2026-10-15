@@ -1,0 +1,24 @@
+canonical_name: 绘画型逐帧动画游戏美术
+entity_type: painterly_frame_animation_game_art_direction
+origin: illustrated_animation
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - expressive_character_scene
+  - narrative_platformer
+  - emotional_transition
+  - illustrated_action
+  exclusions:
+  - rigid_uniform_tweening
+  - plastic_3d_shading
+  - copied_game_character
+  - ambiguous_collision_edges
+  subject_policy: open
+sources:
+- https://nomada.studio/studio/
+rendering:
+  model: hand-authored 2D painted animation with pose-by-pose timing and restrained
+    compositing
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

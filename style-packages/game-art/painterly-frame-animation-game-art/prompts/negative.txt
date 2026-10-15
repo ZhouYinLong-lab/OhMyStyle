@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- rigid_uniform_tweening
+- plastic_3d_shading
+- copied_game_character
+- ambiguous_collision_edges

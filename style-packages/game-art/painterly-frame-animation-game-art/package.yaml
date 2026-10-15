@@ -1,0 +1,16 @@
+id: painterly-frame-animation-game-art
+name: 绘画型逐帧动画游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 将具有笔触、晕染或纸感的二维绘画与逐张设计姿态的动画结合，以有机边缘和节奏变化表现动作与情绪。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
