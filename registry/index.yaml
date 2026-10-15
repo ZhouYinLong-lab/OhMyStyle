@@ -1356,6 +1356,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: abstract-geometric-neon-game-art
+  name: 抽象几何霓虹游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/abstract-geometric-neon-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: ascii-character-game-art
   name: ASCII 字符游戏美术
   kind: game_art
@@ -1762,6 +1779,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: hand-drawn-linework-game-art
+  name: 手绘线描游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/hand-drawn-linework-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: hand-inked-animation-game-art
   name: 手绘墨线动画游戏美术
   kind: game_art
@@ -1826,10 +1860,10 @@ packages:
   - palette
   - texture
   - layout
-  reference_count: 0
+  reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
-  benchmark: false
+  benchmark: true
 - resource_id: hi-fi-rush-rhythm-comic
   name: 节奏漫画卡通渲染游戏美术
   kind: game_art
@@ -1845,6 +1879,23 @@ packages:
   - layout
   reference_count: 1
   accepted_example_count: 1
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: high-density-modern-pixel-game-art
+  name: 高密度现代像素游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/high-density-modern-pixel-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
 - resource_id: hollow-knight-inked-gothic
@@ -2102,6 +2153,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
+- resource_id: naturalistic-realism-game-art
+  name: 自然主义写实游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/naturalistic-realism-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: neon-noir-3d-game-art
   name: 霓虹黑色三维游戏美术
   kind: game_art
@@ -2175,6 +2243,23 @@ packages:
   kind: game_art
   domain: game_art
   package_path: style-packages/game-art/painterly-3d-fantasy-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: painterly-frame-animation-game-art
+  name: 绘画型逐帧动画游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/painterly-frame-animation-game-art
   maturity: L2
   focus_dimensions:
   - medium

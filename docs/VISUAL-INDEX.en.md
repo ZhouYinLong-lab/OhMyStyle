@@ -51,6 +51,7 @@ This index is generated from each package's classification and relations metadat
 - [卡济米尔·马列维奇](../style-packages/artists/kazimir-malevich/README.en.md)
 - [拉斯洛·莫霍利-纳吉](../style-packages/artists/moholy-nagy/README.en.md)
 - [皮特·蒙德里安](../style-packages/artists/piet-mondrian/README.en.md)
+- [抽象几何霓虹游戏美术](../style-packages/game-art/abstract-geometric-neon-game-art/README.en.md)
 - [等距手绘策略游戏美术](../style-packages/game-art/hand-painted-isometric-strategy/README.en.md)
 - [纪念碑谷不可能几何游戏美术](../style-packages/game-art/monument-valley-impossible-geometry/README.en.md)
 - [女神异闻录3重制版游戏美术](../style-packages/game-art/persona-3-reload/README.en.md)
@@ -124,6 +125,7 @@ This index is generated from each package's classification and relations metadat
 - [电影化像素冒险美术](../style-packages/game-art/cinematic-pixel-adventure/README.en.md)
 - [等距手绘策略游戏美术](../style-packages/game-art/hand-painted-isometric-strategy/README.en.md)
 - [HD-2D 像素与三维融合游戏美术](../style-packages/game-art/hd-2d-pixel-cg-game-art/README.en.md)
+- [高密度现代像素游戏美术](../style-packages/game-art/high-density-modern-pixel-game-art/README.en.md)
 - [水墨冒险游戏美术](../style-packages/game-art/ink-wash-adventure/README.en.md)
 - [等距像素策略美术](../style-packages/game-art/isometric-pixel-tactics/README.en.md)
 - [角色扮演游戏像素美术](../style-packages/game-art/rpg-maker-pixel-art/README.en.md)
@@ -133,6 +135,7 @@ This index is generated from each package's classification and relations metadat
 
 ## Neon city
 
+- [抽象几何霓虹游戏美术](../style-packages/game-art/abstract-geometric-neon-game-art/README.en.md)
 - [霓虹未来都市游戏美术](../style-packages/game-art/cyberpunk-night-city/README.en.md)
 - [霓虹黑色三维游戏美术](../style-packages/game-art/neon-noir-3d-game-art/README.en.md)
 - [女神异闻录3重制版游戏美术](../style-packages/game-art/persona-3-reload/README.en.md)
