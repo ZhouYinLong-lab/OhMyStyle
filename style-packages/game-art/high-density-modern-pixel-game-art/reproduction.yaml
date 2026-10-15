@@ -1,0 +1,16 @@
+medium: high-resolution 2D pixel-art scene with deliberate pixel clusters and localized
+  modern lighting
+materials:
+- 硬边像素簇
+- 有限色阶
+- 分层环境色
+- 逐帧角色姿态
+- 低频材质图案
+process:
+- 先定网格比例和主体剪影
+- 再安排大色块及可走区域
+- 以像素簇绘制材质和景深层次
+- 最后添加受控光照并检查缩放可读性
+technical_direction: 像素边缘采用整数倍缩放；照明可连续变化，但不得让合成结果失去像素簇结构。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

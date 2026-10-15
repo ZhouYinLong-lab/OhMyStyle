@@ -1,0 +1,31 @@
+{
+  "name": "high-density-modern-pixel-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "deep_ink",
+      "hex": "#202B3A",
+      "role": "outline_and_shadow"
+    },
+    {
+      "name": "teal",
+      "hex": "#3F7778",
+      "role": "cool_environment"
+    },
+    {
+      "name": "leaf",
+      "hex": "#7D9B62",
+      "role": "organic_mid"
+    },
+    {
+      "name": "amber",
+      "hex": "#D8A45F",
+      "role": "warm_light"
+    },
+    {
+      "name": "coral",
+      "hex": "#CE6C58",
+      "role": "focal_accent"
+    }
+  ]
+}
