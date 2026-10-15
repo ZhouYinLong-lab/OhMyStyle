@@ -1,0 +1,446 @@
+schema_version: 1.0.0
+purpose: Five reference-backed game-art directions identified as distinct gaps in
+  the supplied style list.
+packages:
+- id: high-density-modern-pixel-game-art
+  name: 高密度现代像素游戏美术
+  name_en: High-Density Modern Pixel Game Art
+  kind: game_art
+  domain: game_art
+  summary: 保留像素网格与清晰边缘，同时用密集环境叙事、精细动画和现代光照构成可近看探索的像素世界。
+  summary_en: Pixel-grid edges and deliberate clusters remain visible while dense
+    environments, nuanced animation, and modern lighting create worlds built for close
+    exploration.
+  source:
+    url: https://eastwardgame.com/media/
+    title: Eastward official media and game description
+    authority: Pixpil Games / Chucklefish
+    attribution: Eastward is a commercial work by Pixpil Games and Chucklefish; this
+      package abstracts observable pixel-art traits without reproducing its assets
+      or scenes.
+  origin: modern_pixel_art
+  period: 2010s_to_present
+  entity_type: high_density_pixel_game_art_direction
+  use_cases:
+  - exploration_scene
+  - expressive_sprite
+  - dense_environment
+  - narrative_vignette
+  exclusions:
+  - unfiltered_photorealism
+  - arbitrary_pixel_noise
+  - copied_game_scene
+  - smooth_vector_edges
+  signature:
+    composition:
+    - 像素尺度保持一致，主体与可走区域优先于装饰
+    - 用前中后景和局部遮挡承载环境信息
+    - 细节密度集中在焦点并为交互物保留负形
+    palette:
+    - 限制局部色组并为明暗层级分配稳定角色
+    - 以邻近色阶塑造体积而不抹平像素簇
+    - 灯光色只在明确光源附近改变局部色相
+    medium:
+    - 角色轮廓由可辨认像素簇构成
+    - 场景允许比角色更细的像素纹理但不得改变网格感
+    - 逐像素边缘保持硬朗
+    lighting:
+    - 用分区明暗和局部动态光扩展体积
+    - 发光效果不能覆盖轮廓像素
+    - 远景降低对比而不模糊成照片
+    surface:
+    - 材质靠像素簇方向和色块差异表达
+    - 避免统一颗粒叠层
+    - 水面金属织物保留不同纹理节奏
+    texture:
+    - 像素簇有可追踪的方向与尺度
+    - 细节在缩小后仍不形成噪声
+    - 动画帧间保持边缘稳定
+    invariants:
+    - 像素组织仍是主要边缘语言
+    - 角色和可交互区域在复杂背景上清晰可读
+    - 不复刻任何来源游戏画面
+  reproduction:
+    medium: high-resolution 2D pixel-art scene with deliberate pixel clusters and
+      localized modern lighting
+    materials:
+    - 硬边像素簇
+    - 有限色阶
+    - 分层环境色
+    - 逐帧角色姿态
+    - 低频材质图案
+    process:
+    - 先定网格比例和主体剪影
+    - 再安排大色块及可走区域
+    - 以像素簇绘制材质和景深层次
+    - 最后添加受控光照并检查缩放可读性
+    technical: 像素边缘采用整数倍缩放；照明可连续变化，但不得让合成结果失去像素簇结构。
+  palette:
+  - name: deep_ink
+    hex: '#202B3A'
+    role: outline_and_shadow
+  - name: teal
+    hex: '#3F7778'
+    role: cool_environment
+  - name: leaf
+    hex: '#7D9B62'
+    role: organic_mid
+  - name: amber
+    hex: '#D8A45F'
+    role: warm_light
+  - name: coral
+    hex: '#CE6C58'
+    role: focal_accent
+- id: abstract-geometric-neon-game-art
+  name: 抽象几何霓虹游戏美术
+  name_en: Abstract Geometric Neon Game Art
+  kind: game_art
+  domain: game_art
+  summary: 以线框、几何体、亮色轨迹和节奏性变化组织空间，让颜色与运动方向承担识别，而不依赖具体城市或写实材质。
+  summary_en: Wireframes, geometric forms, luminous trails, and rhythmic changes organize
+    space so color and motion carry recognition without relying on a realistic city
+    or material set.
+  source:
+    url: https://www.rezinfinite.com/
+    title: Rez Infinite official site
+    authority: Enhance Experience
+    attribution: Rez Infinite is a commercial work by Enhance Experience; this package
+      studies broad visual principles and does not reproduce game assets.
+  origin: abstract_visual_music_games
+  period: 1990s_to_present
+  entity_type: abstract_geometric_neon_game_art_direction
+  use_cases:
+  - arcade_action
+  - rhythm_visualization
+  - abstract_space
+  - motion_graphic_scene
+  exclusions:
+  - cyberpunk_city_default
+  - photorealistic_materials
+  - unreadable_flashing
+  - copied_game_entities
+  signature:
+    composition:
+    - 几何焦点沿明确的运动轴组织
+    - 深色负空间隔开轮廓与光迹
+    - 透视线和重复形状提供方向感
+    palette:
+    - 暗底承托少量高亮色
+    - 每个颜色承担稳定的对象或节奏角色
+    - 高饱和色以面积和亮度共同分级
+    medium:
+    - 线框、发光边缘与简化实体并置
+    - 形体以几何轮廓而非生活化细节识别
+    - 光迹沿运动路径出现并及时衰减
+    lighting:
+    - 发光核心与外溢光晕分层
+    - 高光不吞并主体边界
+    - 明暗变化跟随节奏或事件而非随机闪烁
+    surface:
+    - 表面保持光滑、抽象且低材质噪声
+    - 体积由边缘亮度和透明叠层建立
+    - 不用照片纹理伪装复杂度
+    texture:
+    - 重复图形构成节拍而非装饰铺满
+    - 轨迹粗细映射速度或能量
+    - 屏幕闪烁频率可控且保留舒适度
+    invariants:
+    - 抽象几何比写实地点更主导
+    - 颜色和运动有一致映射
+    - 不复刻来源作品的特定图形或镜头
+  reproduction:
+    medium: abstract real-time 2D or 3D geometric scene with emissive lines and rhythm-aware
+      motion
+    materials:
+    - 低细节几何体
+    - 发光线框
+    - 半透明色层
+    - 受控辉光
+    - 深色基底
+    process:
+    - 先定义运动轴与空间深度
+    - 再构成几何焦点
+    - 分配颜色和发光层级
+    - 最后检查动态强度及形体辨识
+    technical: 控制泛光半径与高频闪烁；静态轮廓仍需足以区分对象和运动方向。
+  palette:
+  - name: midnight
+    hex: '#090B24'
+    role: negative_space
+  - name: electric_blue
+    hex: '#2864F0'
+    role: cool_structure
+  - name: cyan
+    hex: '#30E6E2'
+    role: motion_trace
+  - name: magenta
+    hex: '#F03BAF'
+    role: rhythmic_accent
+  - name: white
+    hex: '#F4F5FF'
+    role: peak_highlight
+- id: hand-drawn-linework-game-art
+  name: 手绘线描游戏美术
+  name_en: Hand-Drawn Linework Game Art
+  kind: game_art
+  domain: game_art
+  summary: 以具有手绘粗细和轻微不规则性的线条构建人物、物件与空间，允许黑白或少量填色，靠线密度和轮廓保持层级。
+  summary_en: Hand-drawn lines with varied weight and slight irregularity build subjects
+    and spaces; monochrome or restrained fills use contour and line density to establish
+    hierarchy.
+  source:
+    url: https://hiddenfolks.com/
+    title: Hidden Folks official site
+    authority: Adriaan de Jongh / Sylvain Tegroeg
+    attribution: Hidden Folks is a commercial work by Adriaan de Jongh and Sylvain
+      Tegroeg; this package abstracts linework traits without reproducing its illustrations.
+  origin: hand_illustration_and_interactive_search
+  period: 2010s_to_present
+  entity_type: hand_drawn_linework_game_art_direction
+  use_cases:
+  - search_scene
+  - illustrated_map
+  - narrative_location
+  - monochrome_puzzle
+  exclusions:
+  - perfect_vector_uniformity
+  - photographic_shading
+  - copied_illustration
+  - illegible_dense_hatching
+  signature:
+    composition:
+    - 以清楚的外轮廓和疏密差组织读图顺序
+    - 密集区域之间保留可供视线停留的空隙
+    - 交互对象用轮廓或留白从线网中分离
+    palette:
+    - 黑白或纸色为主并限制强调色数量
+    - 线色与底色保持稳定对比
+    - 色块只用于分区和交互提示
+    medium:
+    - 线条具有手绘粗细和微小偏差
+    - 轮廓允许局部断开但形体必须闭合可读
+    - 排线沿结构而非随机填充
+    lighting:
+    - 明暗以线密度和少量实黑表达
+    - 不模拟写实渐变
+    - 重要轮廓避免与暗部合并
+    surface:
+    - 纸面和扫描感轻微可见
+    - 不规则线端保留人工痕迹
+    - 表面纹理不能遮住线条交叉关系
+    texture:
+    - 排线方向呼应结构和材质
+    - 细节密度随重要度分配
+    - 缩小显示时合并为稳定明暗块
+    invariants:
+    - 线条始终是主要造型媒介
+    - 主题变化后仍保留手绘边缘
+    - 不复制来源插画或其物件布局
+  reproduction:
+    medium: hand-drawn ink or pencil illustration with layered linework for an interactive
+      scene
+    materials:
+    - 钢笔或铅笔式线条
+    - 纸白或浅色底
+    - 少量平涂色
+    - 结构性排线
+    - 低强度纸纹
+    process:
+    - 先用大轮廓建立空间与焦点
+    - 再用线宽区分前后层级
+    - 以方向性排线说明形体
+    - 最后检查缩小后的可读性
+    technical: 密线场景用局部放大或分区引导；交互提示不能只依赖相近的细线差异。
+  palette:
+  - name: ink
+    hex: '#252523'
+    role: primary_line
+  - name: paper
+    hex: '#F4F0E5'
+    role: ground
+  - name: graphite
+    hex: '#88877F'
+    role: secondary_line
+  - name: muted_red
+    hex: '#B95B51'
+    role: optional_focal_accent
+  - name: muted_blue
+    hex: '#66858B'
+    role: optional_cool_accent
+- id: painterly-frame-animation-game-art
+  name: 绘画型逐帧动画游戏美术
+  name_en: Painterly Frame-by-Frame Animation Game Art
+  kind: game_art
+  domain: game_art
+  summary: 将具有笔触、晕染或纸感的二维绘画与逐张设计姿态的动画结合，以有机边缘和节奏变化表现动作与情绪。
+  summary_en: Textured or paper-like 2D painting meets deliberately designed frame-by-frame
+    poses, using organic edges and rhythmic variation to express movement and emotion.
+  source:
+    url: https://nomada.studio/gris-game/
+    title: GRIS official game page
+    authority: Nomada Studio
+    attribution: GRIS is a commercial work by Nomada Studio and Devolver Digital;
+      this package generalizes illustration and animation traits without reproducing
+      its art.
+  origin: illustrated_animation
+  period: 2010s_to_present
+  entity_type: painterly_frame_animation_game_art_direction
+  use_cases:
+  - expressive_character_scene
+  - narrative_platformer
+  - emotional_transition
+  - illustrated_action
+  exclusions:
+  - rigid_uniform_tweening
+  - plastic_3d_shading
+  - copied_game_character
+  - ambiguous_collision_edges
+  signature:
+    composition:
+    - 关键姿势形成清楚的动作剪影
+    - 画面留白服务动作方向与情绪停顿
+    - 背景层级不抢占角色运动路径
+    palette:
+    - 色彩按情绪阶段分组而非全程固定滤镜
+    - 大色面托住角色和平台
+    - 高饱和变化集中在叙事或动作焦点
+    medium:
+    - 二维绘制边缘保留笔触和局部晕染
+    - 姿态逐帧变化而非完全均匀插值
+    - 轮廓形状随动作伸缩但保持角色身份
+    lighting:
+    - 光影以绘制色块和透明叠层表达
+    - 光线转场可参与情绪变化
+    - 避免写实高光盖掉笔触
+    surface:
+    - 纸纹或颜料颗粒轻微可辨
+    - 不同景物可有不同笔触方向
+    - 纹理尺度与角色尺寸协调
+    texture:
+    - 动作快时减少面部和关键部位噪声
+    - 帧间纹理稳定或有控制地变化
+    - 可站立表面边缘比装饰笔触更清晰
+    invariants:
+    - 姿态设计与绘画表面共同构成风格
+    - 动画节奏允许停顿和不均匀变化
+    - 不复刻来源作品的角色或镜头
+  reproduction:
+    medium: hand-authored 2D painted animation with pose-by-pose timing and restrained
+      compositing
+    materials:
+    - 绘画色层
+    - 手绘轮廓
+    - 纸面或颜料纹理
+    - 分层透明度
+    - 明确动作关键帧
+    process:
+    - 先明确动作重心和关键剪影
+    - 再逐帧设计姿态过渡
+    - 铺设大色面与环境笔触
+    - 最后校准帧率节奏和可行动边界
+    technical: 允许相邻帧姿态与线条轻微变化；碰撞、平台和攻击预警的视觉位置必须稳定。
+  palette:
+  - name: paper
+    hex: '#F0E9DA'
+    role: painted_ground
+  - name: slate
+    hex: '#596475'
+    role: cool_shadow
+  - name: muted_teal
+    hex: '#6D9C9A'
+    role: atmosphere
+  - name: rose
+    hex: '#CF8C8A'
+    role: emotional_warmth
+  - name: ochre
+    hex: '#D4B56E'
+    role: focal_light
+- id: naturalistic-realism-game-art
+  name: 自然主义写实游戏美术
+  name_en: Naturalistic Realist Game Art
+  kind: game_art
+  domain: game_art
+  summary: 以可信的自然光、材质响应、尺度关系和环境因果构建可探索世界；强调观察所得的真实感，而非电影式镜头或单纯高细节。
+  summary_en: Believable natural light, material response, scale, and environmental
+    causality create an explorable world grounded in observation rather than cinematic
+    framing or detail density alone.
+  source:
+    url: https://blog.playstation.com/2021/11/22/horizon-forbidden-west-an-authentic-world/
+    title: 'Horizon Forbidden West: An authentic world'
+    authority: Guerrilla Games / PlayStation Blog
+    attribution: Horizon Forbidden West is a commercial work by Guerrilla Games and
+      Sony Interactive Entertainment; this package abstracts environmental art principles
+      and includes no game assets.
+  origin: observational_environmental_realism
+  period: 2000s_to_present
+  entity_type: naturalistic_realist_game_art_direction
+  use_cases:
+  - natural_environment
+  - inhabited_settlement
+  - material_study
+  - open_world_scene
+  exclusions:
+  - generic_cinematic_teal_orange
+  - fantasy_material_glow
+  - arbitrary_asset_scatter
+  - copied_named_world
+  signature:
+    composition:
+    - 空间尺度由可比较的物体和地形关系建立
+    - 视线引导来自地貌、光线和真实使用路径
+    - 远近层次遵循大气和遮挡关系
+    palette:
+    - 颜色来自环境光与材料本色的共同作用
+    - 远景对比和饱和度随空气距离下降
+    - 人工色彩用于有因果的标记或物件
+    medium:
+    - 三维形体保持可信比例和结构
+    - 材质差异由粗糙度、反射和细节尺度共同表达
+    - 写实不要求每个区域都堆满微细节
+    lighting:
+    - 主光方向与环境反弹光一致
+    - 阴影跟随接触关系和物体尺度
+    - 天气及时间改变局部色温而非统一套滤镜
+    surface:
+    - 磨损、沉积和植被生长与暴露及使用方式相关
+    - 材质在近景可辨远景收敛
+    - 高光受表面粗糙度控制
+    texture:
+    - 细节沿结构和生态分布
+    - 重复资产避免机械复制感
+    - 环境叙事有空间因果且不阻塞路径
+    invariants:
+    - 光照、材质和尺度互相支持
+    - 世界细节服务空间可信度及玩法阅读
+    - 不复刻来源游戏的地点、角色或标志
+  reproduction:
+    medium: physically grounded 3D environment with observational lighting and material
+      behavior
+    materials:
+    - 尺度一致的几何体
+    - 受控物理材质
+    - 方向性环境细节
+    - 大气透视
+    - 自然光与反弹光
+    process:
+    - 先建立地形尺度和光源方向
+    - 再安置与环境功能相符的结构
+    - 按材料属性配置粗糙度和反射
+    - 最后检查远中近景及可行走路径
+    technical: 使用高细节前先保证尺度、光照和材质响应可信；避免用景深、锐化或色彩滤镜掩盖空间错误。
+  palette:
+  - name: earth
+    hex: '#816B52'
+    role: soil_and_aged_material
+  - name: foliage
+    hex: '#647A4D'
+    role: vegetation
+  - name: stone
+    hex: '#7E8582'
+    role: mineral_surface
+  - name: sky
+    hex: '#9DB6C3'
+    role: atmospheric_distance
+  - name: sunlight
+    hex: '#D8B87A'
+    role: natural_warm_light

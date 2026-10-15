@@ -4,10 +4,10 @@ curation_status: reference_backed_link_only
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
 sources:
-- url: https://nomada.studio/studio/
+- url: https://nomada.studio/gris-game/
   authority: Nomada Studio
-  title: Nomada Studio official studio page
+  title: GRIS official game page
   supports: source traceability and observable package scope
   accessed: '2026-10-14'
-attribution: GRIS is a commercial work by Nomada Studio; this package generalizes
-  hand-authored illustration and animation traits without reproducing its art.
+attribution: GRIS is a commercial work by Nomada Studio and Devolver Digital; this
+  package generalizes illustration and animation traits without reproducing its art.
