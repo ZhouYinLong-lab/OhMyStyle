@@ -13,7 +13,7 @@ This package translates observable visual decisions associated with Pentiment Me
 
 ## Curatorial note
 
-What makes this direction compelling is它让“页面”成为空间：人物、建筑和道具像被画在纸上，又通过有限动作获得生命。真正需要提取的是纸张、墨线、边缘装饰和图像层级，不是每次都生成修道院、谋杀或中世纪村庄。
+What makes this direction compelling is how it turns the page into a space: figures, buildings, and objects look drawn on paper, then come to life through restrained movement. The transferable traits are the paper, ink lines, decorative borders, and image hierarchy—not a default monastery, murder, or medieval village.
 
 ## Subject independence
 

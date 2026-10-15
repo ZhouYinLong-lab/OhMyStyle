@@ -20,7 +20,7 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 ## Reference source
 
-- [Anonymous game-art study / 游戏美术类型](https://opengameart.org/)
+- [Anonymous game-art reference collection](https://opengameart.org/)
 
 ## Rights and attribution
 
@@ -84,7 +84,7 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 ## Reference source
 
-- [Anonymous game-art study / 游戏美术类型](https://opengameart.org/)
+- [Anonymous game-art reference collection](https://opengameart.org/)
 
 ## Rights and attribution
 

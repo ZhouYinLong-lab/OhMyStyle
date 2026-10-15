@@ -10,7 +10,7 @@
 
 ## Overview
 
-以等距网格、手绘材质、分层地形和清晰可读的策略信息组织游戏场景。
+Isometric grids, hand-painted surfaces, layered terrain, and clear strategic cues organize the game scene.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

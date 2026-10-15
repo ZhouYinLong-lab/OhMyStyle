@@ -10,7 +10,7 @@
 
 ## Overview
 
-以舞台布景式三维空间、低多边形形体、慢电影镜头和克制灯光，构成可迁移的游戏环境视觉语言。
+Stage-like 3D spaces, low-poly forms, slow cinematic framing, and restrained lighting form a transferable visual language for game environments.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

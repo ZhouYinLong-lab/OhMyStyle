@@ -9,11 +9,11 @@
 
 ## Overview
 
-以巨大的空旷尺度、低密度三维地貌、远距离主体、克制的土灰色调和强烈空气透视组织游戏环境，不绑定巨像、遗迹或具体关卡。
+Vast open spaces, sparse 3D terrain, distant focal subjects, restrained earth-and-ash colors, and strong atmospheric perspective shape the environment without prescribing a colossus, ruin, or specific level.
 
 ## Curatorial note
 
-这种游戏美术的重点不是“放入一个巨大的怪物”，而是让空间先于事件发生。远处的山脊、风吹草地、孤立建筑和小小的可控角色共同建立尺度感。这个包负责三维环境的距离、材质和安静张力，不会自动加入巨像、祭坛、遗迹或具体地图。
+The focus is not to “add a giant monster,” but to let space precede the event. Distant ridgelines, wind-swept grass, isolated structures, and a small controllable figure establish scale together. This package defines distance, materials, and quiet tension in a 3D environment without automatically adding a colossus, altar, ruin, or specific map.
 
 ## Subject independence
 
@@ -21,8 +21,8 @@ This package controls how an image is generated, not what it depicts. People, ob
 
 ## Visual signature
 
-- 大面积空旷空间与远距离焦点
-- 沙灰、苔绿、冷蓝灰和旧金色构成克制环境色
+- Broad open spaces with a distant focal point
+- A restrained environment palette of sand-gray, moss green, cool blue-gray, and aged gold
 - wide natural light, haze, long shadows, and strong atmospheric perspective
 - weathered rock, dry grass, dust, water, and restrained 3D material detail
 
@@ -30,7 +30,7 @@ This package controls how an image is generated, not what it depicts. People, ob
 
 References are used for research and visual analysis. External artworks, photographs, game imagery, trademarks, and platform pages remain the property of their respective rights holders. The generated example is a new anonymous scene and is not an original work by, or endorsement from, the referenced source.
 
-- [游戏官方介绍](https://www.playstation.com/en-us/games/shadow-of-the-colossus/)
+- [Official game overview](https://www.playstation.com/en-us/games/shadow-of-the-colossus/)
 
 See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/manifest.csv), and the repository [NOTICE](../../../NOTICE) for redistribution boundaries.
 

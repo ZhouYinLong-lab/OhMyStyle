@@ -6,7 +6,7 @@
 
 ## What this package captures
 
-以透明水彩层、渐变色域、柔和边缘和可读路径组织具有游戏空间感的画面。
+Transparent watercolor layers, gradual color transitions, and soft edges shape a game-like space while keeping routes readable.
 
 This package borrows the spatial treatment of a watercolor 2D environment; it does not require a character, ruins, or a specific narrative in every image.
 

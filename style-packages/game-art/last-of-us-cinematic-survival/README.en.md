@@ -9,7 +9,7 @@
 
 ## Overview
 
-以自然光、植物重新占据人工环境、克制的蓝灰空气和真实材质建立美丽与衰败并置的生存游戏空间。
+Natural light, vegetation reclaiming built environments, restrained blue-gray atmosphere, and grounded materials create a survival-game world where beauty and decay coexist.
 
 ## Notes
 
@@ -17,10 +17,10 @@ This package transfers observable visual decisions to a user-supplied subject. I
 
 ## Visual signature
 
-- 自然光驱动的可探索空间
-- 植物与人工结构形成时间层次
-- 蓝灰空气、湿润材质与局部暖色锚点
-- 写实材质和克制的电影化景别
+- Explorable spaces shaped by natural light
+- Vegetation and built structures reveal layers of time
+- Blue-gray atmosphere, damp surfaces, and selective warm accents
+- Realistic materials and restrained cinematic framing
 
 ## Subject independence
 
@@ -30,42 +30,42 @@ The package controls how an image is rendered, not what the user must render. Th
 
 Research sources are linked for attribution and study. External works, photographs, game images, trademarks, and platform pages remain with their respective rights holders. The generated demonstration is original and anonymous; it is not an original work by, nor an endorsement from, the cited source.
 
-- [生存游戏艺术指导资料](https://www.naughtydog.com/blog/celebrating_the_10th_anniversary_of_the_last_of_us)
+- [Survival-game art direction reference](https://www.naughtydog.com/blog/celebrating_the_10th_anniversary_of_the_last_of_us)
 
 See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/manifest.csv), and the repository [NOTICE](../../../NOTICE) for the rights boundary.
 
 ## Use only this package
 
-四种方式可以按手边工具任选其一，不需要同时使用。
+Choose any one of the four methods that fits your tools; you do not need to use them all.
 
 ### Method 1: Give the package to an image-capable Agent
 
-把整个风格包目录上传给 Agent，或把本地目录路径交给它，并附上：
+Upload the style package directory to an image-capable agent, or provide its local path, together with these instructions:
 
 ~~~
-请使用这个风格包帮助我生成图片。
+Use this style package to help me generate an image.
 
-请先读取本目录中的 identity.yaml、visual-signature.yaml、reproduction.yaml、
-prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.yaml。
-请把文件中的规则整合到生成流程中，不要只把风格名称当作 Prompt，也不要复制参考作品。
+First read identity.yaml, visual-signature.yaml, reproduction.yaml,
+prompts/base.txt, prompts/negative.txt, palette/palette.json, and evaluation.yaml in this directory.
+Integrate the rules from those files into the generation workflow. Do not use only the style name as a prompt or copy a reference work.
 
-我的生成需求是：
-<填写人物、物体、场景、画幅和用途>
+My image requirements are:
+<subject, objects, setting, aspect ratio, and purpose>
 
-请先编译完整 Prompt，再调用你的生图能力。生成后按照 evaluation.yaml 检查风格特征、
-构图、颜色、材质、AI 痕迹和需求遵循度，并说明仍然存在的风险。
+Compile the complete prompt before generating the image. Then use evaluation.yaml to review the style traits,
+composition, color, materials, generative artifacts, and adherence to the request. Report any remaining risks.
 ~~~
 
 ### Method 2: Copy the Prompt
 
-打开 [prompts/base.txt](prompts/base.txt)，替换主题、人物、物体、场景和画幅；将 [prompts/negative.txt](prompts/negative.txt) 作为负面 Prompt 一并提交到支持文本生图的平台。需要更稳定时，同时参考视觉签名和调色板。
+Open [prompts/base.txt](prompts/base.txt) and replace the subject, people, objects, setting, and aspect ratio. Submit [prompts/negative.txt](prompts/negative.txt) as a negative prompt on a text-to-image platform that supports it. For more consistent results, also consult the visual signature and palette.
 
 ### Method 3: Generate through your own API
 
-在你自己的生图平台或编译工具中配置 API Key，将基础 Prompt、负面约束、调色板和必要的参考清单一起提交。API Key 只保存在你的环境中；本仓库不代管密钥、不托管在线生图服务。
+Configure your API key in your own image-generation platform or prompt compiler, then submit the base prompt, negative constraints, palette, and any needed references. Keep your API key in your own environment; this repository does not store keys or host an online image-generation service.
 
 ### Method 4: Local model + ComfyUI
 
-将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 [evaluation.yaml](evaluation.yaml) 做人工或自动复核。
+Add the base prompt and negative constraints to a local model or ComfyUI workflow. Use the palette, reproduction notes, and reference manifest to guide color, composition, materials, and lighting. Review the result manually or automatically with [evaluation.yaml](evaluation.yaml).
 
-模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+Users manage their own model weights, API keys, and generated images. Reference images are for understanding observable traits; do not copy a source work’s exact composition, people, text, trademarks, or logos.

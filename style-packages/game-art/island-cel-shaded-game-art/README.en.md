@@ -9,18 +9,18 @@
 
 ## Overview
 
-以清晰卡通渲染、夸张但可读的轮廓、明亮海天色彩和绘画般的三维表面建立轻快而完整的游戏空间。
+Clear cel shading, expressive but readable silhouettes, bright sea-and-sky colors, and painterly 3D surfaces create a buoyant, cohesive game world.
 
 ## Curatorial note
 
-这类游戏美术把三维空间处理得像一幅清楚、明亮、带有绘画感的插画：轮廓可读，色块大胆，海天和建筑都保持轻快的形体关系。这个包提取卡通渲染和海岛色彩，不会固定生成海盗、木船、角色或某个游戏地图。
+This direction treats 3D space like a clear, bright, painterly illustration: silhouettes stay readable, color blocks are bold, and coastlines, skies, and buildings retain light, graphic forms. The package captures cel shading and island color relationships without prescribing pirates, boats, characters, or a specific game map.
 
 ## Visual signature
 
-- 清楚的前中后景和可读的游戏空间; 轮廓、路径和地标形体优先于细碎写实纹理; 画面保持轻快的视觉节奏和大色块平衡
-- 海蓝、天空青、暖沙色和明亮绿植形成清爽关系; 阴影偏彩色而非纯黑; 强调色用于可交互或视觉重点，但不强制指定对象
-- 明亮的自然日光，柔和但明确的卡通阴影，避免写实电影式压暗
-- 简化而有绘画感的三维表面，边缘清楚，材质差异通过色块和形体表达
+- Clear foreground, middle ground, and background; readable game space; silhouettes, routes, and landmarks take priority over fine realistic texture; a buoyant rhythm balanced by large color shapes
+- Sea blue, sky cyan, warm sand, and bright vegetation create a fresh palette; shadows lean toward color rather than pure black; accent colors mark interactive or focal areas without prescribing specific objects
+- Bright natural daylight and soft but distinct cel-shaded shadows, without a dark photorealistic film grade
+- Simplified, painterly 3D surfaces with crisp edges; color shapes and form distinguish materials
 
 ## Subject independence
 

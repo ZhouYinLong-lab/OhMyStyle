@@ -17,8 +17,8 @@ Organizes scenes through isometric grids, compact units, layered tiles, and clea
 
 ## Sources
 
-- [OpenGameArt 像素美术资源](https://opengameart.org/)
-- [GDC 公开开发演讲索引](https://www.gdcvault.com/)
+- [OpenGameArt pixel-art resources](https://opengameart.org/)
+- [GDC index of public developer talks](https://www.gdcvault.com/)
 
 ## Rights and provenance
 
@@ -78,8 +78,8 @@ Organizes scenes through isometric grids, compact units, layered tiles, and clea
 
 ## Sources
 
-- [OpenGameArt 像素美术资源](https://opengameart.org/)
-- [GDC 公开开发演讲索引](https://www.gdcvault.com/)
+- [OpenGameArt pixel-art resources](https://opengameart.org/)
+- [GDC index of public developer talks](https://www.gdcvault.com/)
 
 ## Rights and provenance
 

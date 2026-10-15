@@ -17,8 +17,8 @@ Combines small readable sprites, broad skies, layered distance, and warm-cool en
 
 ## Sources
 
-- [《To the Moon》官方商店页面](https://store.steampowered.com/app/206440/To_the_Moon/)
-- [《Impostor Factory》官方商店页面](https://store.steampowered.com/app/1182620/Impostor_Factory/)
+- [Official store page for To the Moon](https://store.steampowered.com/app/206440/To_the_Moon/)
+- [Official store page for Impostor Factory](https://store.steampowered.com/app/1182620/Impostor_Factory/)
 
 ## Rights and provenance
 
@@ -78,8 +78,8 @@ Combines small readable sprites, broad skies, layered distance, and warm-cool en
 
 ## Sources
 
-- [《To the Moon》官方商店页面](https://store.steampowered.com/app/206440/To_the_Moon/)
-- [《Impostor Factory》官方商店页面](https://store.steampowered.com/app/1182620/Impostor_Factory/)
+- [Official store page for To the Moon](https://store.steampowered.com/app/206440/To_the_Moon/)
+- [Official store page for Impostor Factory](https://store.steampowered.com/app/1182620/Impostor_Factory/)
 
 ## Rights and provenance
 

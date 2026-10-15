@@ -9,18 +9,18 @@
 
 ## Overview
 
-以低复杂度形体、克制色彩、强烈剪影和精细环境细节建立安静而紧张的二维游戏空间。
+Low-complexity forms, restrained color, strong silhouettes, and carefully observed environmental detail create a quiet but tense 2D game space.
 
 ## Notes
 
-这种游戏美术把简洁的远景轮廓和近处精细材质放在同一空间里，靠光、尺度和遮挡制造不安。这个包提取环境层次与剪影关系，不自动加入男孩、实验室、狼群或具体剧情。
+This direction places simple distant silhouettes beside finely rendered foreground surfaces, using light, scale, and occlusion to create unease. The package captures those relationships without automatically adding a boy, laboratory, wolves, or a specific plot.
 
 ## Visual signature
 
-- 低复杂度大形与高精度局部细节并置
-- 灰绿、煤黑、雾白和少量暖色组成克制调色
-- 强剪影、遮挡与水平构图建立空间压力
-- 环境叙事通过材质和尺度表达，不依赖固定角色
+- Simple large forms contrasted with highly detailed focal areas
+- A restrained palette of gray-green, charcoal, misty white, and small warm accents
+- Strong silhouettes, occlusion, and horizontal framing create spatial tension
+- Materials and scale carry environmental storytelling without relying on a fixed character
 
 ## Subject independence
 
@@ -30,38 +30,38 @@ This package controls visual treatment, not the user's subject, object count, lo
 
 Research sources are linked for study and attribution. External works, photographs, game materials, trademarks, and platform pages remain with their respective rights holders. The generated demonstration is original and anonymous, not a source artwork or endorsement.
 
-- [极简剪影游戏艺术指导资料](https://playdead.com/games/inside/)
+- [Minimalist silhouette game art direction reference](https://playdead.com/games/inside/)
 
 See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/manifest.csv), and the repository [NOTICE](../../../NOTICE).
 
 ## Use only this package
 
-四种方式可以按手边工具任选其一，不需要同时使用。
+Choose any one of the four methods that fits your tools; you do not need to use them all.
 
 ### Method 1: Give the package to an image-capable Agent
 
-把整个风格包目录上传给 Agent，或把本地目录路径交给它，并附上：
+Upload the style package directory to an image-capable agent, or provide its local path, together with these instructions:
 
 ~~~
-请使用这个风格包帮助我生成图片。
-请先读取 identity.yaml、visual-signature.yaml、reproduction.yaml、prompts/base.txt、
-prompts/negative.txt、palette/palette.json 和 evaluation.yaml。
-请把文件中的规则整合到生成流程中，不要只把风格名称当作 Prompt，也不要复制参考作品。
-我的生成需求是：<填写人物、物体、场景、画幅和用途>
-请先编译完整 Prompt，再调用你的生图能力。生成后按照 evaluation.yaml 检查风格特征、
-构图、颜色、材质、AI 痕迹和需求遵循度，并说明仍然存在的风险。
+Use this style package to help me generate an image.
+First read identity.yaml, visual-signature.yaml, reproduction.yaml, prompts/base.txt,
+prompts/negative.txt, palette/palette.json, and evaluation.yaml.
+Integrate the rules from those files into the generation workflow. Do not use only the style name as a prompt or copy a reference work.
+My image requirements are: <subject, objects, setting, aspect ratio, and purpose>
+Compile the complete prompt before generating the image. Then use evaluation.yaml to review the style traits,
+composition, color, materials, generative artifacts, and adherence to the request. Report any remaining risks.
 ~~~
 
 ### Method 2: Copy the Prompt
 
-打开 [prompts/base.txt](prompts/base.txt)，替换主题、人物、物体、场景和画幅；将 [prompts/negative.txt](prompts/negative.txt) 作为负面 Prompt 一并提交到支持文本生图的平台。
+Open [prompts/base.txt](prompts/base.txt) and replace the subject, people, objects, setting, and aspect ratio. Submit [prompts/negative.txt](prompts/negative.txt) as a negative prompt on a text-to-image platform that supports it.
 
 ### Method 3: Generate through your own API
 
-在你自己的生图平台或编译工具中配置 API Key，将基础 Prompt、负面约束、调色板和必要的参考清单一起提交。本仓库不代管密钥、不托管在线生图服务。
+Configure your API key in your own image-generation platform or prompt compiler, then submit the base prompt, negative constraints, palette, and any needed references. This repository does not store keys or host an online image-generation service.
 
 ### Method 4: Local model + ComfyUI
 
-将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 [evaluation.yaml](evaluation.yaml) 做复核。
+Add the base prompt and negative constraints to a local model or ComfyUI workflow. Use the palette, reproduction notes, and reference manifest to guide color, composition, materials, and lighting. Review the result with [evaluation.yaml](evaluation.yaml).
 
-模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+Users manage their own model weights, API keys, and generated images. Reference images are for understanding observable traits; do not copy a source work’s exact composition, people, text, trademarks, or logos.

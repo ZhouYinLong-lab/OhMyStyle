@@ -4,23 +4,23 @@
 
 ![Braid Hand-Painted Puzzle Game Art representative image](gallery-16x9.jpg)
 
-> **Category:** Game art  · **Medium:** 游戏美术
+> **Category:** Game art  · **Medium:** Game art
 > **Directory:** style-packages/game-art/braid-hand-painted-puzzle
 
 ## Overview
 
-以层叠半透明颗粒、手绘背景、柔和边缘和高密度自然细节制造像活画一样的二维谜题空间。
+Layered translucent particles, hand-painted backgrounds, soft edges, and richly detailed nature create a 2D puzzle world that feels like a living painting.
 
 ## A short note
 
-独立游戏中手绘环境、半透明粒子和可读谜题空间的视觉实践. The package is best understood as a transferable set of visual decisions: 二维空间层叠与可玩路径可读性, supported by light, surface, and spatial structure. It extracts observable traits without importing the subject, composition, or story of a source work.
+This package draws on indie-game practices that combine hand-painted environments, translucent particles, and readable puzzle spaces. It translates those observations into reusable decisions about layered 2D space and legible traversal, supported by lighting, surfaces, and spatial structure. It does not import a source work’s subject, composition, or story.
 
 ## Visual signature
 
-- 二维空间层叠与可玩路径可读性
-- 手绘背景结合半透明颗粒
-- 有机色阶和柔和边界
-- 环境细节丰富但不依赖固定角色或故事
+- Layered 2D spaces with readable routes
+- Hand-painted backgrounds with translucent particles
+- Organic color transitions and soft edges
+- Rich environmental detail without a fixed character or story
 
 ## Subject independence
 

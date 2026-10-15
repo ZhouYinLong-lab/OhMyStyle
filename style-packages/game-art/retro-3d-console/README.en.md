@@ -10,7 +10,7 @@
 
 ## Overview
 
-以早期三维主机的低多边形几何、低分辨率纹理、顶点光照、贴图偏移和有限雾效构成可探索空间；本包只提取媒介限制，不固定某部游戏或场景。
+Low-poly geometry, low-resolution textures, vertex lighting, texture warping, and limited fog evoke early 3D console spaces. This package captures the medium’s visual constraints without prescribing a specific game or scene.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

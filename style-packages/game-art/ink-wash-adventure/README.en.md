@@ -10,7 +10,7 @@
 
 ## Overview
 
-以墨线、洗染、留白、有限朱色与清晰前中后景组织可探索画面；本包控制游戏媒介与水墨表现，不固定旅人、桥、神社或任何具体故事。
+Ink lines, tonal washes, open paper, restrained vermilion, and clearly separated foreground, middle ground, and background shape an explorable scene. This package controls the game-art medium and ink-wash treatment without prescribing a traveler, bridge, shrine, or story.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into
