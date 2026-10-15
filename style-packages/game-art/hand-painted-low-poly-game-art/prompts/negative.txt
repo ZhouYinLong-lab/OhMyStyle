@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- photographic_texture_maps
+- faceted_geometry_without_painted_surface_logic
+- generic_pastel_filter
+- copied_asset_or_scene

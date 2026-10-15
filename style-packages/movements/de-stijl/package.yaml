@@ -1,38 +1,33 @@
-{
-  "id": "de-stijl",
-  "name": "荷兰风格派",
-  "kind": "movement",
-  "domain": "design",
-  "version": "0.1.0",
-  "summary": "Builds clarity through horizontal-vertical relations, rectangular color fields, black structural lines, and asymmetrical balance, treating composition as a system rather than a few colored shapes.",
-  "files": {
-    "identity": "identity.yaml",
-    "visual_signature": "visual-signature.yaml",
-    "reproduction": "reproduction.yaml",
-    "relations": "relations.yaml",
-    "palette": "palette/palette.json",
-    "prompts": "prompts",
-    "evaluation": "evaluation.yaml",
-    "references": "references/manifest.csv",
-    "provenance": "provenance.yaml"
-  },
-  "classification": {
-    "source_type": "movement",
-    "medium": "design",
-    "historical_context": "historical_or_contemporary_practice",
-    "application": "general",
-    "visual_axes": [
-      "composition",
-      "palette",
-      "lighting",
-      "surface",
-      "texture"
-    ]
-  },
-  "subject_policy": {
-    "mode": "open",
-    "fixed_subjects": [],
-    "optional_motifs": [],
-    "benchmark_subjects": []
-  }
-}
+id: de-stijl
+name: 荷兰风格派
+kind: movement
+domain: design
+version: 0.1.0
+summary: Builds clarity through horizontal-vertical relations, rectangular color fields, black structural
+  lines, and asymmetrical balance, treating composition as a system rather than a few colored shapes.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: design
+  historical_context: historical_or_contemporary_practice
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

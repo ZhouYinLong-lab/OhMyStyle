@@ -1,5 +1,7 @@
 # GRIS Watercolor Game Art
 
+![GRIS Watercolor Game Art representative image](gallery-16x9.jpg)
+
 > Type: game_art · Domain: game_art
 
 ## What this package captures

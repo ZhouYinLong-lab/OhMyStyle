@@ -1,0 +1,409 @@
+schema_version: 1.0.0
+purpose: Five additional reference-backed game-art directions with explicit boundaries against nearby existing packages.
+packages:
+- id: pre-rendered-isometric-environment-game-art
+  name: 预渲染等距环境游戏美术
+  name_en: Pre-Rendered Isometric Environment Game Art
+  kind: game_art
+  domain: game_art
+  summary: 以固定等距投影、精细预渲染背景和分层遮挡构建可探索场景；核心是静态画面的空间阅读，不限定油画或像素媒介。
+  summary_en: Fixed isometric projection, detailed pre-rendered environments, and layered occlusion make spaces
+    readable and explorable without prescribing a painterly or pixel medium.
+  source:
+    url: https://www.gamedeveloper.com/art/how-obsidian-replicated-the-look-of-an-infinity-engine-game----in-2015
+    title: How Obsidian replicated the look of an Infinity Engine game
+    authority: Obsidian Entertainment / Game Developer
+    attribution: This package abstracts isometric composition and pre-rendered environment traits discussed by the
+      developers; it does not reproduce game assets or scenes.
+  origin: pre_rendered_isometric_role_playing_games
+  period: 1990s_to_present
+  entity_type: pre_rendered_isometric_environment_game_art_direction
+  use_cases:
+  - isometric_exploration
+  - room_or_village_scene
+  - environment_concept
+  - readable_tactical_space
+  exclusions:
+  - forced_oil_paint_texture
+  - pixel_grid_as_primary_edge_language
+  - copied_named_game_scene
+  - arbitrary_camera_roll
+  signature:
+    composition:
+    - Use a stable isometric camera and consistent verticals across the scene.
+    - Layer foreground occluders, traversable middle ground, and distant architecture.
+    - Reserve uncluttered paths and focal landmarks so small figures remain legible.
+    palette:
+    - Group local colors by material and depth rather than global tint.
+    - Use restrained warm highlights against cooler distance where needed.
+    - Keep interaction cues distinct from decorative set dressing.
+    medium:
+    - Present a high-detail environment as a fixed-view rendered image.
+    - Allow painted, modeled, or hybrid source methods; do not claim a specific production pipeline from appearance
+      alone.
+    lighting:
+    - Use coherent baked-looking illumination with readable contact shadows.
+    - Keep key paths and doorways legible beneath environmental shade.
+    surface:
+    - Differentiate stone, plaster, foliage, and metal through restrained material cues.
+    texture:
+    - Concentrate fine detail on landmarks and near-ground surfaces.
+    - Reduce distant detail without atmospheric blur.
+    invariants:
+    - Maintain a stable isometric projection and a clear playable route.
+    - Keep user-specified subjects and scene contents independent of the style.
+    - Do not copy source layouts, named places, characters, or UI.
+  reproduction:
+    medium: Fixed-view isometric environment illustration with a pre-rendered scene appearance
+    materials:
+    - layered architecture
+    - baked-looking ambient light
+    - controlled surface detail
+    - depth-separated occluders
+    process:
+    - Block the traversable footprint and camera grid.
+    - Place landmarks and large masses before small props.
+    - Separate near, middle, and distant layers with value and overlap.
+    - Check object scale, foot contact, and path readability at gameplay size.
+    technical: Keep a consistent projection and align repeated edges to the scene grid; reserve fine detail for
+      focal areas.
+  palette:
+  - name: slate
+    hex: '#34434C'
+    role: cool_structure
+  - name: moss
+    hex: '#667558'
+    role: vegetation
+  - name: sandstone
+    hex: '#C09A68'
+    role: warm_architecture
+  - name: linen
+    hex: '#D9C8A4'
+    role: lit_surfaces
+  - name: oxblood
+    hex: '#774C49'
+    role: focal_accent
+- id: layered-parallax-storybook-game-art
+  name: 分层视差绘本游戏美术
+  name_en: Layered Parallax Storybook Game Art
+  kind: game_art
+  domain: game_art
+  summary: 把手绘或绘本式场景拆成前中后景平面，并以不同位移制造有限纵深；画面仍保持插画轮廓与读图层级。
+  summary_en: Illustrated scenery is separated into foreground, middle, and distant planes that shift at different
+    rates, creating shallow depth while preserving a storybook hierarchy.
+  source:
+    url: https://www.gamedeveloper.com/business/exploring-the-art-and-animation-behind-hand-painted-odyssey-i-planet-of-lana-i-
+    title: Exploring the art and animation behind hand-painted odyssey Planet of Lana
+    authority: Wishfully Studios / Game Developer
+    attribution: This package generalizes the developers’ discussion of illustrated parallax environments and mixed
+      dimensionality without copying characters, settings, or compositions.
+  origin: illustrated_multiplane_side_scrolling_games
+  period: 1990s_to_present
+  entity_type: layered_parallax_storybook_game_art_direction
+  use_cases:
+  - side_scrolling_landscape
+  - storybook_scene
+  - environment_panorama
+  - character_traversal
+  exclusions:
+  - pixel_tile_grid_as_required_medium
+  - single_flat_poster_composition
+  - unreadable_foreground_occlusion
+  - copied_named_scene
+  signature:
+    composition:
+    - Build depth from a few broad planes with clear overlap.
+    - Keep the play lane and character silhouette readable against the moving background.
+    - Use large illustrated shapes before small decorative marks.
+    palette:
+    - Separate depth planes with related but distinct color and value groups.
+    - Reserve stronger contrast for the play lane and landmarks.
+    - Keep color transitions consistent across layer boundaries.
+    medium:
+    - Use hand-drawn or painted illustration as layered game scenery.
+    - Layer separation is a compositional device and does not imply a particular animation technology.
+    lighting:
+    - Keep a shared light direction across all planes.
+    - Use gentle atmospheric shifts in distant planes without erasing their contours.
+    surface:
+    - Retain visible drawing or paint character in each plane.
+    texture:
+    - Vary detail density by distance and movement importance.
+    - Avoid high-frequency patterns that shimmer during scrolling.
+    invariants:
+    - Depth comes from separated illustrated planes and controlled parallax.
+    - The requested subject and setting remain user-controlled.
+    - Do not copy a source game’s character designs or exact landscape.
+  reproduction:
+    medium: Layered illustrated 2D scene with shallow parallax depth
+    materials:
+    - painted scenery planes
+    - clean play-lane silhouettes
+    - subtle atmospheric overlays
+    - limited animated accents
+    process:
+    - Design the horizon and play lane.
+    - Split foreground, middle ground, and distant scenery along meaningful depth boundaries.
+    - Assign slower motion to distant planes and faster motion to near planes.
+    - Preview scrolling to catch edge gaps, visual jitter, and occlusion conflicts.
+    technical: Keep parallax ratios modest and maintain continuity at screen edges; use depth offsets only where
+      the scene supports them.
+  palette:
+  - name: night_blue
+    hex: '#334A63'
+    role: distant_plane
+  - name: sage
+    hex: '#7D927B'
+    role: middle_plane
+  - name: ochre
+    hex: '#C69A61'
+    role: warm_landmark
+  - name: paper
+    hex: '#E8D9B9'
+    role: lit_ground
+  - name: plum
+    hex: '#76596B'
+    role: accent_shadow
+- id: hand-painted-low-poly-game-art
+  name: 手绘低多边形游戏美术
+  name_en: Hand-Painted Low-Poly Game Art
+  kind: game_art
+  domain: game_art
+  summary: 以简化多边形建立清楚体块，再用手绘色面和方向性笔触表达材质；重点是贴图笔触与几何面的协作，不是统一低模滤镜。
+  summary_en: Simple polygonal forms provide readable volume while hand-painted color fields and directional strokes
+    describe materials; the look depends on painted surface logic, not a generic low-poly filter.
+  source:
+    url: https://grafit.artstation.com/blog/o0v6/creating-3d-handpainted-scene-creator-s-notes
+    title: Creating 3D Handpainted Scene — Creator’s Notes
+    authority: Grafit Studio
+    attribution: This package abstracts a publicly documented hand-painted 3D workflow and observable surface traits;
+      it does not copy the studio’s assets or scene.
+  origin: hand_painted_game_ready_3d_assets
+  period: 2000s_to_present
+  entity_type: hand_painted_low_poly_game_art_direction
+  use_cases:
+  - stylized_character
+  - small_prop
+  - natural_environment
+  - modular_game_asset
+  exclusions:
+  - photographic_texture_maps
+  - faceted_geometry_without_painted_surface_logic
+  - generic_pastel_filter
+  - copied_asset_or_scene
+  signature:
+    composition:
+    - Use a few large readable forms before adding painted detail.
+    - Keep facet direction and painted shadow shapes aligned with volume.
+    - Separate focal objects from scenery through silhouette and value.
+    palette:
+    - Use compact material-specific color families with controlled accents.
+    - Shift hue within painted shadow and light shapes instead of adding uniform gradients.
+    - Keep outlines and contact shadows readable at game scale.
+    medium:
+    - Combine low-to-moderate polygon geometry with hand-painted surface color.
+    - The visible paint can be stylized digital texture and does not imply physical paint.
+    lighting:
+    - Use broad painted light and shadow shapes that reinforce facets.
+    - Avoid glossy specular highlights that erase the painted surface.
+    surface:
+    - Show deliberate brush direction, edge accents, and simplified material cues.
+    texture:
+    - Use large-to-medium painted marks that remain legible when assets are reduced.
+    - Avoid photorealistic noise and procedural detail as the dominant surface language.
+    invariants:
+    - Painted color and geometry jointly describe form.
+    - Keep the user-provided subject independent from example props.
+    - Do not reuse source assets, silhouettes, or exact compositions.
+  reproduction:
+    medium: Game-ready low-poly 3D assets with hand-painted stylized textures
+    materials:
+    - simplified polygon forms
+    - painted color blocks
+    - directional brush marks
+    - selective edge highlights
+    process:
+    - Establish silhouette and major planes.
+    - Paint local color and broad shadow shapes along the form.
+    - Add selective material cues and edge accents.
+    - Inspect at target distance and remove texture noise that competes with gameplay.
+    technical: Use texture resolution appropriate to screen size; keep hand-painted value structure visible under
+      the intended lighting.
+  palette:
+  - name: deep_umber
+    hex: '#483D37'
+    role: shadow_and_outline
+  - name: leaf
+    hex: '#65805A'
+    role: organic_mid
+  - name: ochre
+    hex: '#C29455'
+    role: warm_light
+  - name: linen
+    hex: '#E0D1AA'
+    role: highlight
+  - name: bluegrey
+    hex: '#667E88'
+    role: cool_material
+- id: real-time-brushstroke-3d-game-art
+  name: 实时笔触三维游戏美术
+  name_en: Real-Time Brushstroke 3D Game Art
+  kind: game_art
+  domain: game_art
+  summary: 让可见笔触沿三维形体组织，并随受光方向显出起伏；与静态厚涂贴图不同，笔触边缘和明暗关系需在场景光照下保持一致。
+  summary_en: Visible strokes follow 3D forms and respond to scene lighting; unlike a static painterly texture,
+    stroke edges and value relationships remain coherent as illumination changes.
+  source:
+    url: https://www.gamedeveloper.com/art/achieving-a-painterly-look-in-the-signal-from-t-lva
+    title: Achieving a Painterly Look in The Signal From Tölva
+    authority: Big Robot / Game Developer
+    attribution: This package summarizes a developer-described real-time painterly rendering approach; it does not
+      imitate the game’s scenes, designs, or concept art.
+  origin: real_time_non_photorealistic_brush_rendering
+  period: 2010s_to_present
+  entity_type: real_time_brushstroke_3d_game_art_direction
+  use_cases:
+  - 3d_landscape
+  - architectural_environment
+  - stylized_character
+  - moving_camera_scene
+  exclusions:
+  - static_canvas_painting_only
+  - generic_oil_paint_filter
+  - photorealistic_microtexture
+  - copied_concept_art
+  signature:
+    composition:
+    - Build the scene with clear large forms and a controlled focal hierarchy.
+    - Let brush direction support the shape and camera-readable silhouette.
+    - Avoid stroke density that obscures traversal or interaction cues.
+    palette:
+    - Use a coherent scene palette with local color variation inside strokes.
+    - Keep value separation stronger at focal subjects and playable edges.
+    - Avoid a global color grade as a substitute for painted rendering.
+    medium:
+    - Render 3D forms with visible brush-like surface marks in real time.
+    - The paint appearance is a rendering treatment, not evidence of a physical painting source.
+    lighting:
+    - Let strokes respond to the scene’s light and form.
+    - Keep highlight and shadow behavior coherent across moving or turning surfaces.
+    - Avoid specular glare that wipes out stroke structure.
+    surface:
+    - Use irregular but purposeful stroke shapes across large surfaces.
+    texture:
+    - Vary stroke length, width, and density by material and scale.
+    - Keep strokes stable enough to avoid crawling or flicker during camera movement.
+    invariants:
+    - Brush marks remain visible and tied to 3D form under lighting.
+    - Preserve the requested subject, camera, and scene details.
+    - Do not reproduce named concept art or source layouts.
+  reproduction:
+    medium: Real-time stylized 3D render with form-following painterly strokes
+    materials:
+    - stroke-aware surface shading
+    - broad painted color variation
+    - controlled roughness
+    - stable edge accents
+    process:
+    - Block in the scene and lighting before adding stroke detail.
+    - Align stroke direction with surface curvature and material.
+    - Tune stroke scale against camera distance and motion.
+    - Review moving lights and camera angles for flicker, flatness, or lost silhouettes.
+    technical: Use screen-space or surface-space marks consistently; preserve stroke scale and avoid temporal shimmer.
+  palette:
+  - name: charcoal
+    hex: '#343A3D'
+    role: deep_form
+  - name: pine
+    hex: '#4E7162'
+    role: environment_mid
+  - name: clay
+    hex: '#B87454'
+    role: warm_accent
+  - name: golden_light
+    hex: '#D7B36D'
+    role: lit_brushwork
+  - name: mist
+    hex: '#A6B5A4'
+    role: distance
+- id: cutout-2-5d-stage-game-art
+  name: 剪纸式 2.5D 舞台游戏美术
+  name_en: Cutout 2.5D Stage Game Art
+  kind: game_art
+  domain: game_art
+  summary: 以相机朝向的插画平面组成纵深舞台，角色和少量道具可在层间移动；保留剪纸式轮廓与舞台空间，不要求角色必须是二维或场景必须完全平面。
+  summary_en: Illustrated planes form a depth-aware stage while characters and selected props move between layers;
+    cutout silhouettes remain visible without requiring every asset to be strictly 2D.
+  source:
+    url: https://www.gamedeveloper.com/business/poncho-a-postmortem
+    title: Poncho — A Postmortem
+    authority: Delve Interactive / Game Developer
+    attribution: This package generalizes a developer-described layered-plane 2.5D environment approach; it does
+      not copy the game’s art, characters, or level layouts.
+  origin: layered_plane_2_5d_environment_art
+  period: 2010s_to_present
+  entity_type: cutout_2_5d_stage_game_art_direction
+  use_cases:
+  - side_view_exploration
+  - layered_stage_scene
+  - platforming_environment
+  - illustrated_action_scene
+  exclusions:
+  - flat_noninteractive_poster
+  - full_perspective_photoreal_3d
+  - unreadable_layer_overlap
+  - copied_named_scene
+  signature:
+    composition:
+    - Arrange planes in a clear foreground-to-background order.
+    - Use overlap and shallow depth to frame the playable route.
+    - Keep the action plane distinct from decorative layers.
+    palette:
+    - Use connected colors across planes while separating their values.
+    - Reserve strongest contrast for active characters and interactable objects.
+    - Keep lighting and color transitions consistent across adjacent planes.
+    medium:
+    - Combine illustrated planes with limited depth-aware movement and optional 3D elements.
+    - Cutout-like edges may be clean, textured, or hand-drawn but remain intentional.
+    lighting:
+    - Use soft inter-plane shadows or ambient separation to clarify depth.
+    - Avoid lighting that makes flat layers appear accidentally detached.
+    surface:
+    - Preserve the chosen illustration surface consistently across planes.
+    texture:
+    - Keep high-frequency texture sparse near the player silhouette.
+    - Use depth-appropriate detail and avoid moiré during camera movement.
+    invariants:
+    - The scene reads as a layered stage with controlled shallow depth.
+    - User-specified subjects and interactions remain independent from example content.
+    - Do not reuse source-game layouts, characters, or visual assets.
+  reproduction:
+    medium: Layered illustrated 2.5D environment with cutout-like planes
+    materials:
+    - illustrated depth planes
+    - limited parallax
+    - soft contact shadows
+    - clear gameplay silhouettes
+    process:
+    - Set the camera and action plane.
+    - Separate scenery into layers according to depth and occlusion.
+    - Place characters and interactive props with consistent scale across layers.
+    - Test movement, occlusion, and edge continuity from the gameplay camera.
+    technical: Keep parallax shallow and intentional; validate that character feet, platforms, and foreground occluders
+      align at the target camera.
+  palette:
+  - name: ink
+    hex: '#353B43'
+    role: contour_and_shadow
+  - name: moss
+    hex: '#72836C'
+    role: middle_ground
+  - name: paper
+    hex: '#DED0AF'
+    role: lit_plane
+  - name: rust
+    hex: '#B66F52'
+    role: focal_accent
+  - name: blue_haze
+    hex: '#829AA0'
+    role: distant_plane

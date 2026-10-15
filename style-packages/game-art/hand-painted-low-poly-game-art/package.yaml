@@ -1,0 +1,16 @@
+id: hand-painted-low-poly-game-art
+name: 手绘低多边形游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以简化多边形建立清楚体块，再用手绘色面和方向性笔触表达材质；重点是贴图笔触与几何面的协作，不是统一低模滤镜。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

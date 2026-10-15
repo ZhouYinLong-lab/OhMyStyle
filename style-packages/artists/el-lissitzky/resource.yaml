@@ -26,6 +26,6 @@ evidence:
   accepted_example: false
   rejected_examples_optional: true
 rights:
-  reference_policy: Each manifest row must identify source, license or rights status, attribution, and redistribution boundaries.
+  reference_policy: Each manifest row must identify source, license or rights status, attribution, and
+    redistribution boundaries.
   generated_demo_policy: Generated demonstrations are new anonymous scenes and are not source artworks.
-family: constructivist-geometry

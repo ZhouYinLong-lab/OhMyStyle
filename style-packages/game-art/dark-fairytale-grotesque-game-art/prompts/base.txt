@@ -1,3 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
 Create a new subject and composition using these observable visual decisions:
 - 熟悉的日常形体出现比例错置
 - 安全区与危险区形成对照

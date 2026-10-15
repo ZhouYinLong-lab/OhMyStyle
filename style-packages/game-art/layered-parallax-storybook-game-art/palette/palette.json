@@ -1,0 +1,31 @@
+{
+  "name": "layered-parallax-storybook-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "night_blue",
+      "hex": "#334A63",
+      "role": "distant_plane"
+    },
+    {
+      "name": "sage",
+      "hex": "#7D927B",
+      "role": "middle_plane"
+    },
+    {
+      "name": "ochre",
+      "hex": "#C69A61",
+      "role": "warm_landmark"
+    },
+    {
+      "name": "paper",
+      "hex": "#E8D9B9",
+      "role": "lit_ground"
+    },
+    {
+      "name": "plum",
+      "hex": "#76596B",
+      "role": "accent_shadow"
+    }
+  ]
+}

@@ -3,8 +3,7 @@ name: 横版平台跳跃像素美术
 kind: game_art
 domain: game_art
 version: 0.1.0
-summary: A side-scrolling pixel-art direction that prioritizes layered depth, readable
-  platforms, deliberate pixel clusters, and background parallax.
+summary: 以清晰的像素轮廓、横向关卡层次和稳定的角色对比组织平台动作画面。
 files:
   identity: identity.yaml
   visual_signature: visual-signature.yaml

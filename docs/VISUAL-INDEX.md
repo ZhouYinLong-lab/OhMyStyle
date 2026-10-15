@@ -146,6 +146,7 @@
 
 ## 低多边形与体素
 
+- [手绘低多边形游戏美术](../style-packages/game-art/hand-painted-low-poly-game-art/README.md)
 - [低多边形冒险游戏美术](../style-packages/game-art/low-poly-adventure-game-art/README.md)
 - [微缩模型场景游戏美术](../style-packages/game-art/miniature-diorama-game-art/README.md)
 - [纸艺立体书游戏美术](../style-packages/game-art/papercraft-diorama-game-art/README.md)

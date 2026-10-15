@@ -11,6 +11,7 @@ scope:
   - photographic texture
   - unreadable glyph noise
   - copied interface
+  subject_policy: open
 sources:
 - https://www.gridsagegames.com/cogmind/
 rendering:

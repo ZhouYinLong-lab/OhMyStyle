@@ -1,3 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
 Create a new subject and composition using these observable visual decisions:
 - 动力核心组织建筑和工作路径
 - 管线、设备和操作空间层级清楚

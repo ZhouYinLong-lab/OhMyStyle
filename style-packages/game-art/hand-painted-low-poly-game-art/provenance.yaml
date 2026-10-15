@@ -1,0 +1,13 @@
+package_id: hand-painted-low-poly-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research and visual analysis
+  only. They are not bundled or redistributed.
+sources:
+- url: https://grafit.artstation.com/blog/o0v6/creating-3d-handpainted-scene-creator-s-notes
+  authority: Grafit Studio
+  title: Creating 3D Handpainted Scene — Creator’s Notes
+  supports: source traceability and observable package scope
+  accessed: '2026-10-15'
+attribution: This package abstracts a publicly documented hand-painted 3D workflow and observable surface
+  traits; it does not copy the studio’s assets or scene.

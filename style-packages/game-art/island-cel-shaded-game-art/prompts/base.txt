@@ -1,3 +1,6 @@
+SUBJECT INDEPENDENCE CONTRACT
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
 Create an original image of {SUBJECT} in the visual language of Island Cel-Shaded Game Art.
 
 Transfer these observable decisions: 以清晰卡通渲染、夸张但可读的轮廓、明亮海天色彩和绘画般的三维表面建立轻快而完整的游戏空间。

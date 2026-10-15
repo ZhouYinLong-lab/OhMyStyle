@@ -1,0 +1,16 @@
+id: real-time-brushstroke-3d-game-art
+name: 实时笔触三维游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 让可见笔触沿三维形体组织，并随受光方向显出起伏；与静态厚涂贴图不同，笔触边缘和明暗关系需在场景光照下保持一致。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

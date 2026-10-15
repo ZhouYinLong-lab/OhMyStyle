@@ -1,0 +1,23 @@
+canonical_name: 剪纸式 2.5D 舞台游戏美术
+entity_type: cutout_2_5d_stage_game_art_direction
+origin: layered_plane_2_5d_environment_art
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - side_view_exploration
+  - layered_stage_scene
+  - platforming_environment
+  - illustrated_action_scene
+  exclusions:
+  - flat_noninteractive_poster
+  - full_perspective_photoreal_3d
+  - unreadable_layer_overlap
+  - copied_named_scene
+  subject_policy: open
+sources:
+- https://www.gamedeveloper.com/business/poncho-a-postmortem
+rendering:
+  model: Layered illustrated 2.5D environment with cutout-like planes
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

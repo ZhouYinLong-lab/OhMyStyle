@@ -11,6 +11,7 @@ scope:
   - all-dark scene
   - random deformation
   - copied story character
+  subject_policy: open
 sources:
 - https://www.ea.com/games/lost-in-random
 rendering:

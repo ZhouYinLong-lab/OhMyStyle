@@ -1,0 +1,13 @@
+package_id: pre-rendered-isometric-environment-game-art
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External works and game materials are recorded as links for research and visual analysis
+  only. They are not bundled or redistributed.
+sources:
+- url: https://www.gamedeveloper.com/art/how-obsidian-replicated-the-look-of-an-infinity-engine-game----in-2015
+  authority: Obsidian Entertainment / Game Developer
+  title: How Obsidian replicated the look of an Infinity Engine game
+  supports: source traceability and observable package scope
+  accessed: '2026-10-15'
+attribution: This package abstracts isometric composition and pre-rendered environment traits discussed
+  by the developers; it does not reproduce game assets or scenes.

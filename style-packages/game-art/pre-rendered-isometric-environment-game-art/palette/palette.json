@@ -1,0 +1,31 @@
+{
+  "name": "pre-rendered-isometric-environment-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "slate",
+      "hex": "#34434C",
+      "role": "cool_structure"
+    },
+    {
+      "name": "moss",
+      "hex": "#667558",
+      "role": "vegetation"
+    },
+    {
+      "name": "sandstone",
+      "hex": "#C09A68",
+      "role": "warm_architecture"
+    },
+    {
+      "name": "linen",
+      "hex": "#D9C8A4",
+      "role": "lit_surfaces"
+    },
+    {
+      "name": "oxblood",
+      "hex": "#774C49",
+      "role": "focal_accent"
+    }
+  ]
+}

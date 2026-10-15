@@ -1560,6 +1560,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: cutout-2-5d-stage-game-art
+  name: 剪纸式 2.5D 舞台游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/cutout-2-5d-stage-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: cyberpunk-night-city
   name: 霓虹未来都市游戏美术
   kind: game_art
@@ -1830,6 +1847,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: hand-painted-low-poly-game-art
+  name: 手绘低多边形游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/hand-painted-low-poly-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: hand-painted-point-and-click
   name: 手绘点击式冒险游戏美术
   kind: game_art
@@ -2068,6 +2102,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: layered-parallax-storybook-game-art
+  name: 分层视差绘本游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/layered-parallax-storybook-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: low-poly-adventure-game-art
   name: 低多边形冒险游戏美术
   kind: game_art
@@ -2391,6 +2442,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: pre-rendered-isometric-environment-game-art
+  name: 预渲染等距环境游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/pre-rendered-isometric-environment-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: ps1-survival-horror-low-poly
   name: 早期三维生存恐怖游戏美术
   kind: game_art
@@ -2413,6 +2481,23 @@ packages:
   kind: game_art
   domain: game_art
   package_path: style-packages/game-art/qinglv-landscape-scroll-game-art
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - texture
+  - layout
+  reference_count: 1
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
+- resource_id: real-time-brushstroke-3d-game-art
+  name: 实时笔触三维游戏美术
+  kind: game_art
+  domain: game_art
+  package_path: style-packages/game-art/real-time-brushstroke-3d-game-art
   maturity: L2
   focus_dimensions:
   - medium
@@ -6364,7 +6449,7 @@ packages:
   - lighting
   - surface
   - texture
-  reference_count: 0
+  reference_count: 1
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false

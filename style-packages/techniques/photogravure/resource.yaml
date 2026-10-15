@@ -3,10 +3,10 @@ resource_type: visual_style
 maturity: L2
 task_independent: true
 focus_dimensions:
-  - 'surface'
-  - 'texture'
-  - 'lighting'
-  - 'palette'
+- surface
+- texture
+- lighting
+- palette
 artifacts:
   package: package.yaml
   identity: identity.yaml
@@ -25,3 +25,4 @@ evidence:
 rights:
   reference_policy: Link-only source record; no source artwork is redistributed.
   generated_demo_policy: Generated demonstration is an original anonymous scene.
+schema_version: 1.0.0

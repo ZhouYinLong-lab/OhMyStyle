@@ -1,0 +1,16 @@
+id: pre-rendered-isometric-environment-game-art
+name: 预渲染等距环境游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以固定等距投影、精细预渲染背景和分层遮挡构建可探索场景；核心是静态画面的空间阅读，不限定油画或像素媒介。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

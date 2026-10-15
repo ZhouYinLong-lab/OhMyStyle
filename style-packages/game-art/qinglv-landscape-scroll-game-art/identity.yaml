@@ -12,6 +12,7 @@ scope:
   - photorealistic panorama
   - copied painting
   - unclear paths
+  subject_policy: open
 sources:
 - https://www.taptap.cn/app/91969
 rendering:

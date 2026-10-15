@@ -11,7 +11,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
 
@@ -47,6 +49,34 @@ def read_readme_status(package: Path, image_name: str) -> tuple[bool, str]:
     return True, "README.md references representative image"
 
 
+def representative_image_name(package: Path) -> str | None:
+    readme = package / "README.md"
+    if not readme.is_file():
+        return None
+    text = readme.read_text(encoding="utf-8")
+    for target in re.findall(r"!\[[^\]]*\]\(([^)]+)\)", text):
+        target = target.split()[0].strip("<>")
+        candidate = Path(target)
+        if candidate.name.startswith("gallery-16x9.") and not candidate.is_absolute():
+            return candidate.as_posix()
+    return None
+
+
+def audit_svg(image_path: Path) -> tuple[int, int, str]:
+    root = ET.parse(image_path).getroot()
+    if root.tag.rsplit("}", 1)[-1] != "svg":
+        raise ValueError("SVG root element is not <svg>")
+    view_box = root.attrib.get("viewBox", "").replace(",", " ").split()
+    if len(view_box) != 4:
+        raise ValueError("SVG must declare a four-value viewBox")
+    width, height = float(view_box[2]), float(view_box[3])
+    if width <= 0 or height <= 0:
+        raise ValueError("SVG viewBox dimensions must be positive")
+    if not any(element.tag.rsplit("}", 1)[-1] in {"rect", "path", "circle", "ellipse", "polygon", "image"} for element in root.iter()):
+        raise ValueError("SVG contains no visible drawing elements")
+    return round(width), round(height), "SVG"
+
+
 def blank_status(image: Image.Image) -> tuple[bool, str]:
     preview = image.convert("RGB").resize((64, 64))
     pixels = list(preview.get_flattened_data())
@@ -66,7 +96,9 @@ def blank_status(image: Image.Image) -> tuple[bool, str]:
 
 
 def audit_package(package: Path, repository_root: Path) -> dict[str, Any]:
-    image_name = "gallery-16x9.jpg"
+    image_name = representative_image_name(package)
+    if image_name is None:
+        image_name = "gallery-16x9.jpg"
     image_path = package / image_name
     result: dict[str, Any] = {
         "package": package.relative_to(repository_root).as_posix(),
@@ -86,6 +118,20 @@ def audit_package(package: Path, repository_root: Path) -> dict[str, Any]:
 
     if not image_path.is_file():
         fail("missing representative image")
+    elif image_path.suffix.lower() == ".svg":
+        try:
+            width, height, image_format = audit_svg(image_path)
+            result["width"] = width
+            result["height"] = height
+            result["format"] = image_format
+            ratio = width / height
+            result["aspect_ratio"] = round(ratio, 6)
+            if width < MIN_DIMENSION or height < MIN_DIMENSION:
+                warn(f"low resolution: {width}x{height}")
+            if abs(ratio - ASPECT_RATIO) > ASPECT_TOLERANCE:
+                fail(f"aspect ratio mismatch: {width}x{height}")
+        except Exception as exc:
+            fail(f"corrupt or unreadable SVG: {exc}")
     else:
         try:
             with Image.open(image_path) as image:

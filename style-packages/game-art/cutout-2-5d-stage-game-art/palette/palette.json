@@ -1,0 +1,31 @@
+{
+  "name": "cutout-2-5d-stage-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "ink",
+      "hex": "#353B43",
+      "role": "contour_and_shadow"
+    },
+    {
+      "name": "moss",
+      "hex": "#72836C",
+      "role": "middle_ground"
+    },
+    {
+      "name": "paper",
+      "hex": "#DED0AF",
+      "role": "lit_plane"
+    },
+    {
+      "name": "rust",
+      "hex": "#B66F52",
+      "role": "focal_accent"
+    },
+    {
+      "name": "blue_haze",
+      "hex": "#829AA0",
+      "role": "distant_plane"
+    }
+  ]
+}

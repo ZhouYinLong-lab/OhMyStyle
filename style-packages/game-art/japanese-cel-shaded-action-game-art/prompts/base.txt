@@ -1,3 +1,6 @@
+SUBJECT INDEPENDENCE CONTRACT
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
 主体独立性约束：
 - 用户提供的 {SUBJECT}、{LOCATION} 与世界设定是唯一内容来源。
 - 本包只控制游戏美术媒介、赛璐珞明暗、轮廓、透视、材质与动作感。

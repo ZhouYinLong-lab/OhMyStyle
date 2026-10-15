@@ -1,0 +1,31 @@
+{
+  "name": "hand-painted-low-poly-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "deep_umber",
+      "hex": "#483D37",
+      "role": "shadow_and_outline"
+    },
+    {
+      "name": "leaf",
+      "hex": "#65805A",
+      "role": "organic_mid"
+    },
+    {
+      "name": "ochre",
+      "hex": "#C29455",
+      "role": "warm_light"
+    },
+    {
+      "name": "linen",
+      "hex": "#E0D1AA",
+      "role": "highlight"
+    },
+    {
+      "name": "bluegrey",
+      "hex": "#667E88",
+      "role": "cool_material"
+    }
+  ]
+}

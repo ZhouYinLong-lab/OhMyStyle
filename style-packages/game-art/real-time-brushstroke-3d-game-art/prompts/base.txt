@@ -1,0 +1,23 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
+Create a new subject and composition using these observable visual decisions:
+- Build the scene with clear large forms and a controlled focal hierarchy.
+- Let brush direction support the shape and camera-readable silhouette.
+- Avoid stroke density that obscures traversal or interaction cues.
+- Use a coherent scene palette with local color variation inside strokes.
+- Keep value separation stronger at focal subjects and playable edges.
+- Avoid a global color grade as a substitute for painted rendering.
+- Render 3D forms with visible brush-like surface marks in real time.
+- The paint appearance is a rendering treatment, not evidence of a physical painting source.
+- Let strokes respond to the scene’s light and form.
+- Keep highlight and shadow behavior coherent across moving or turning surfaces.
+- Avoid specular glare that wipes out stroke structure.
+- Use irregular but purposeful stroke shapes across large surfaces.
+- Vary stroke length, width, and density by material and scale.
+- Keep strokes stable enough to avoid crawling or flicker during camera movement.
+- Brush marks remain visible and tied to 3D form under lighting.
+- Preserve the requested subject, camera, and scene details.
+- Do not reproduce named concept art or source layouts.
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

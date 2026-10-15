@@ -11,6 +11,7 @@ scope:
   - sepia filter only
   - random crosshatching
   - copied named print
+  subject_policy: open
 sources:
 - https://store.steampowered.com/app/505330/Apocalipsis/
 rendering:

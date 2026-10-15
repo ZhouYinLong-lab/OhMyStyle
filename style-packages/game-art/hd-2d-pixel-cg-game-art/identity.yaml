@@ -12,6 +12,7 @@ scope:
   - photorealistic PBR
   - copied character
   - excessive blur
+  subject_policy: open
 sources:
 - https://www.square-enix-games.com/en_US/games/octopath-traveler-ii
 rendering:

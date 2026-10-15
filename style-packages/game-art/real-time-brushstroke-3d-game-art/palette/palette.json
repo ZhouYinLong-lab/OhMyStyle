@@ -1,0 +1,31 @@
+{
+  "name": "real-time-brushstroke-3d-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "charcoal",
+      "hex": "#343A3D",
+      "role": "deep_form"
+    },
+    {
+      "name": "pine",
+      "hex": "#4E7162",
+      "role": "environment_mid"
+    },
+    {
+      "name": "clay",
+      "hex": "#B87454",
+      "role": "warm_accent"
+    },
+    {
+      "name": "golden_light",
+      "hex": "#D7B36D",
+      "role": "lit_brushwork"
+    },
+    {
+      "name": "mist",
+      "hex": "#A6B5A4",
+      "role": "distance"
+    }
+  ]
+}

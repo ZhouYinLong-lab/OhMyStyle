@@ -11,6 +11,7 @@ scope:
   - generic paper texture
   - unfoldable geometry
   - copied book composition
+  subject_policy: open
 sources:
 - https://apps.apple.com/id/app/tengami/id942981334?mt=12
 rendering:

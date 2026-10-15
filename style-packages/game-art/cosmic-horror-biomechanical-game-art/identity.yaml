@@ -11,6 +11,7 @@ scope:
   - uniform flesh texture
   - unreadable interaction areas
   - copied creature design
+  subject_policy: open
 sources:
 - https://scorn-game.com/presskit/
 rendering:

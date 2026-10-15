@@ -1,0 +1,22 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
+Create a new subject and composition using these observable visual decisions:
+- Use a stable isometric camera and consistent verticals across the scene.
+- Layer foreground occluders, traversable middle ground, and distant architecture.
+- Reserve uncluttered paths and focal landmarks so small figures remain legible.
+- Group local colors by material and depth rather than global tint.
+- Use restrained warm highlights against cooler distance where needed.
+- Keep interaction cues distinct from decorative set dressing.
+- Present a high-detail environment as a fixed-view rendered image.
+- Allow painted, modeled, or hybrid source methods; do not claim a specific production pipeline from appearance alone.
+- Use coherent baked-looking illumination with readable contact shadows.
+- Keep key paths and doorways legible beneath environmental shade.
+- Differentiate stone, plaster, foliage, and metal through restrained material cues.
+- Concentrate fine detail on landmarks and near-ground surfaces.
+- Reduce distant detail without atmospheric blur.
+- Maintain a stable isometric projection and a clear playable route.
+- Keep user-specified subjects and scene contents independent of the style.
+- Do not copy source layouts, named places, characters, or UI.
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

@@ -1,0 +1,9 @@
+related_packages:
+- painterly-3d-fantasy-game-art
+- painterly-frame-animation-game-art
+contrast_note: This package requires lighting-responsive strokes on moving 3D forms; related packages
+  focus on painterly scene treatment or frame-by-frame animation.
+crossing:
+  supported: true
+  default_mode: adaptive
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.

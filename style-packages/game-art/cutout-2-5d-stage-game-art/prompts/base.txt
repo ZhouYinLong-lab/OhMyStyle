@@ -1,0 +1,22 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
+Create a new subject and composition using these observable visual decisions:
+- Arrange planes in a clear foreground-to-background order.
+- Use overlap and shallow depth to frame the playable route.
+- Keep the action plane distinct from decorative layers.
+- Use connected colors across planes while separating their values.
+- Reserve strongest contrast for active characters and interactable objects.
+- Keep lighting and color transitions consistent across adjacent planes.
+- Combine illustrated planes with limited depth-aware movement and optional 3D elements.
+- Cutout-like edges may be clean, textured, or hand-drawn but remain intentional.
+- Use soft inter-plane shadows or ambient separation to clarify depth.
+- Avoid lighting that makes flat layers appear accidentally detached.
+- Preserve the chosen illustration surface consistently across planes.
+- Keep high-frequency texture sparse near the player silhouette.
+- Use depth-appropriate detail and avoid moiré during camera movement.
+- The scene reads as a layered stage with controlled shallow depth.
+- User-specified subjects and interactions remain independent from example content.
+- Do not reuse source-game layouts, characters, or visual assets.
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.

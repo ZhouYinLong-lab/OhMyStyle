@@ -1,0 +1,15 @@
+medium: Layered illustrated 2D scene with shallow parallax depth
+materials:
+- painted scenery planes
+- clean play-lane silhouettes
+- subtle atmospheric overlays
+- limited animated accents
+process:
+- Design the horizon and play lane.
+- Split foreground, middle ground, and distant scenery along meaningful depth boundaries.
+- Assign slower motion to distant planes and faster motion to near planes.
+- Preview scrolling to catch edge gaps, visual jitter, and occlusion conflicts.
+technical_direction: Keep parallax ratios modest and maintain continuity at screen
+  edges; use depth offsets only where the scene supports them.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

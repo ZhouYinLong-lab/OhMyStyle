@@ -1,26 +1,26 @@
-canvas:
-  native_resolution: 256x192
-  upscale: nearest_neighbor_only
-  grid: 32x24_attribute_cells
-palette:
-  visible_colors: 15
-  attribute_rule: maximum_two_colors_per_8x8_cell
-  brightness: normal_or_bright_mode
-forms:
-  - chunky_silhouette
-  - one_pixel_stair_steps
-  - high_contrast_sprite_against_background
-  - readable_iconography
+medium:
+- 'Native resolution: 256x192; integer nearest-neighbor upscale only.'
 composition:
-  - gameplay_first_legibility
-  - strong_horizontal_ground_or_platform
-  - clustered_cells_for_objects
-  - deliberate_empty_border_or_ui_band
+- gameplay_first_legibility
+- strong_horizontal_ground_or_platform
+- clustered_cells_for_objects
+- deliberate_empty_border_or_ui_band
+palette:
+- 15 visible colors; at most maximum_two_colors_per_8x8_cell.
+- 'Brightness mode: normal_or_bright_mode'
+lighting:
+- Represent tonal changes through attribute-cell color and dithering.
+surface:
+- Hard pixel edges with no smooth antialiasing.
 texture:
-  - hard_pixel_edges
-  - sparse_dither
-  - controlled_attribute_clash
+- hard_pixel_edges
+- sparse_dither
+- controlled_attribute_clash
 invariants:
-  - no_smooth_antialiasing
-  - two_color_cell_logic_remains_visible
-  - silhouette_is_readable_at_native_size
+- no_smooth_antialiasing
+- two_color_cell_logic_remains_visible
+- silhouette_is_readable_at_native_size
+- chunky_silhouette
+- one_pixel_stair_steps
+- high_contrast_sprite_against_background
+- readable_iconography

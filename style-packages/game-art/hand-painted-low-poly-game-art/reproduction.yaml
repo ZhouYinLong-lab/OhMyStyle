@@ -1,0 +1,15 @@
+medium: Game-ready low-poly 3D assets with hand-painted stylized textures
+materials:
+- simplified polygon forms
+- painted color blocks
+- directional brush marks
+- selective edge highlights
+process:
+- Establish silhouette and major planes.
+- Paint local color and broad shadow shapes along the form.
+- Add selective material cues and edge accents.
+- Inspect at target distance and remove texture noise that competes with gameplay.
+technical_direction: Use texture resolution appropriate to screen size; keep hand-painted
+  value structure visible under the intended lighting.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

@@ -1,0 +1,2 @@
+asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
+cutout-2-5d-stage-game-art-primary-source,,Poncho — A Postmortem,Delve Interactive / Game Developer,,https://www.gamedeveloper.com/business/poncho-a-postmortem,link_only,"This package generalizes a developer-described layered-plane 2.5D environment approach; it does not copy the game’s art, characters, or level layouts.",primary,Link-only source record. Do not bundle or redistribute external artwork without explicit permission.

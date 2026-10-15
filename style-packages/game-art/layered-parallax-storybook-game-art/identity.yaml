@@ -1,0 +1,23 @@
+canonical_name: 分层视差绘本游戏美术
+entity_type: layered_parallax_storybook_game_art_direction
+origin: illustrated_multiplane_side_scrolling_games
+period: 1990s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - side_scrolling_landscape
+  - storybook_scene
+  - environment_panorama
+  - character_traversal
+  exclusions:
+  - pixel_tile_grid_as_required_medium
+  - single_flat_poster_composition
+  - unreadable_foreground_occlusion
+  - copied_named_scene
+  subject_policy: open
+sources:
+- https://www.gamedeveloper.com/business/exploring-the-art-and-animation-behind-hand-painted-odyssey-i-planet-of-lana-i-
+rendering:
+  model: Layered illustrated 2D scene with shallow parallax depth
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

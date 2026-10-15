@@ -1,3 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
 Create an original image using this package as a visual language, not as a fixed subject or copied composition.
 
 Package signature:

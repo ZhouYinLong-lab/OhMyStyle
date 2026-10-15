@@ -11,6 +11,7 @@ scope:
   - copied actor
   - photorealistic frame
   - frozen traced footage
+  subject_policy: open
 sources:
 - https://jordanmechner.com/
 rendering:

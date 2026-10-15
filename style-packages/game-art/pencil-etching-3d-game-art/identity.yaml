@@ -11,6 +11,7 @@ scope:
   - smooth gradient-only shading
   - random crosshatching
   - unreadable fine lines
+  subject_policy: open
 sources:
 - https://mundaun.com/
 rendering:

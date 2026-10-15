@@ -1,0 +1,24 @@
+composition:
+- Build depth from a few broad planes with clear overlap.
+- Keep the play lane and character silhouette readable against the moving background.
+- Use large illustrated shapes before small decorative marks.
+palette:
+- Separate depth planes with related but distinct color and value groups.
+- Reserve stronger contrast for the play lane and landmarks.
+- Keep color transitions consistent across layer boundaries.
+medium:
+- Use hand-drawn or painted illustration as layered game scenery.
+- Layer separation is a compositional device and does not imply a particular animation
+  technology.
+lighting:
+- Keep a shared light direction across all planes.
+- Use gentle atmospheric shifts in distant planes without erasing their contours.
+surface:
+- Retain visible drawing or paint character in each plane.
+texture:
+- Vary detail density by distance and movement importance.
+- Avoid high-frequency patterns that shimmer during scrolling.
+invariants:
+- Depth comes from separated illustrated planes and controlled parallax.
+- The requested subject and setting remain user-controlled.
+- Do not copy a source game’s character designs or exact landscape.

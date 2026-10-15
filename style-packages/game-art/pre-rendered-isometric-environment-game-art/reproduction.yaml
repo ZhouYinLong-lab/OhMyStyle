@@ -1,0 +1,15 @@
+medium: Fixed-view isometric environment illustration with a pre-rendered scene appearance
+materials:
+- layered architecture
+- baked-looking ambient light
+- controlled surface detail
+- depth-separated occluders
+process:
+- Block the traversable footprint and camera grid.
+- Place landmarks and large masses before small props.
+- Separate near, middle, and distant layers with value and overlap.
+- Check object scale, foot contact, and path readability at gameplay size.
+technical_direction: Keep a consistent projection and align repeated edges to the
+  scene grid; reserve fine detail for focal areas.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

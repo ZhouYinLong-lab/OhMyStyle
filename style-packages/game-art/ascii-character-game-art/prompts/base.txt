@@ -1,3 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
 Create a new subject and composition using these observable visual decisions:
 - 等宽网格组织空间和图形层级
 - 重要轮廓使用更大字形或更高对比

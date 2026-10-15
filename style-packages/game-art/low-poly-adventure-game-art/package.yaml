@@ -3,8 +3,7 @@ name: 低多边形冒险游戏美术
 kind: game_art
 domain: game_art
 version: 0.1.0
-summary: An independent low-poly game-art direction built from faceted surfaces, simplified
-  materials, readable lighting, and explorable space.
+summary: 以简化多边形、清楚的轮廓与受控色组构建轻盈可读的三维冒险场景。
 files:
   identity: identity.yaml
   visual_signature: visual-signature.yaml

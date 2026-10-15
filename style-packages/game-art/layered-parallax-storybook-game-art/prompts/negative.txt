@@ -1,0 +1,9 @@
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- pixel_tile_grid_as_required_medium
+- single_flat_poster_composition
+- unreadable_foreground_occlusion
+- copied_named_scene

@@ -3,8 +3,7 @@ name: 俯视角16位冒险美术
 kind: game_art
 domain: game_art
 version: 0.1.0
-summary: A top-down 16-bit-inspired game-art direction using compact color clusters,
-  readable terrain grids, and a disciplined palette.
+summary: 以俯视角像素场景、层次分明的地形色块和丰富但克制的色阶呈现探索空间。
 files:
   identity: identity.yaml
   visual_signature: visual-signature.yaml

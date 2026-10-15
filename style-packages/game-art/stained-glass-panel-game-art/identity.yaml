@@ -11,6 +11,7 @@ scope:
   - opaque flat mosaic
   - washed-out glow
   - copied puzzle art
+  subject_policy: open
 sources:
 - https://store.steampowered.com/app/1536980/Glass_Masquerade_3_Honeylines/
 rendering:

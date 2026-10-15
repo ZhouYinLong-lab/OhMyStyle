@@ -1,0 +1,23 @@
+composition:
+- Use a few large readable forms before adding painted detail.
+- Keep facet direction and painted shadow shapes aligned with volume.
+- Separate focal objects from scenery through silhouette and value.
+palette:
+- Use compact material-specific color families with controlled accents.
+- Shift hue within painted shadow and light shapes instead of adding uniform gradients.
+- Keep outlines and contact shadows readable at game scale.
+medium:
+- Combine low-to-moderate polygon geometry with hand-painted surface color.
+- The visible paint can be stylized digital texture and does not imply physical paint.
+lighting:
+- Use broad painted light and shadow shapes that reinforce facets.
+- Avoid glossy specular highlights that erase the painted surface.
+surface:
+- Show deliberate brush direction, edge accents, and simplified material cues.
+texture:
+- Use large-to-medium painted marks that remain legible when assets are reduced.
+- Avoid photorealistic noise and procedural detail as the dominant surface language.
+invariants:
+- Painted color and geometry jointly describe form.
+- Keep the user-provided subject independent from example props.
+- Do not reuse source assets, silhouettes, or exact compositions.

@@ -11,6 +11,7 @@ scope:
   - generic plastic surface
   - flat color without fiber logic
   - copied character
+  subject_policy: open
 sources:
 - https://www.ea.com/games/unravel/unravel
 rendering:

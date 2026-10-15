@@ -1,0 +1,23 @@
+canonical_name: 实时笔触三维游戏美术
+entity_type: real_time_brushstroke_3d_game_art_direction
+origin: real_time_non_photorealistic_brush_rendering
+period: 2010s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - 3d_landscape
+  - architectural_environment
+  - stylized_character
+  - moving_camera_scene
+  exclusions:
+  - static_canvas_painting_only
+  - generic_oil_paint_filter
+  - photorealistic_microtexture
+  - copied_concept_art
+  subject_policy: open
+sources:
+- https://www.gamedeveloper.com/art/achieving-a-painterly-look-in-the-signal-from-t-lva
+rendering:
+  model: Real-time stylized 3D render with form-following painterly strokes
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

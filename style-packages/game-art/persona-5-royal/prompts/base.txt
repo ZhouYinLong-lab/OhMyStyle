@@ -1,3 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
 Use this package as a visual language, not as a fixed scene.
 
 Create an original game-art image for the user's subject: {subject}

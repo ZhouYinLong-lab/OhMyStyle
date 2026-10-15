@@ -1,38 +1,33 @@
-{
-  "id": "muted-documentary-color",
-  "name": "低饱和纪实色彩",
-  "kind": "preset",
-  "domain": "photography",
-  "version": "0.1.0",
-  "summary": "Builds an observational look through restrained but not lifeless color, natural overcast light, ordinary surfaces, and unforced framing; it is not bound to a subject, place, or narrative.",
-  "files": {
-    "identity": "identity.yaml",
-    "visual_signature": "visual-signature.yaml",
-    "reproduction": "reproduction.yaml",
-    "relations": "relations.yaml",
-    "palette": "palette/palette.json",
-    "prompts": "prompts",
-    "evaluation": "evaluation.yaml",
-    "references": "references/manifest.csv",
-    "provenance": "provenance.yaml"
-  },
-  "classification": {
-    "source_type": "preset",
-    "medium": "photography",
-    "historical_context": "historical_or_contemporary_practice",
-    "application": "general",
-    "visual_axes": [
-      "composition",
-      "palette",
-      "lighting",
-      "surface",
-      "texture"
-    ]
-  },
-  "subject_policy": {
-    "mode": "open",
-    "fixed_subjects": [],
-    "optional_motifs": [],
-    "benchmark_subjects": []
-  }
-}
+id: muted-documentary-color
+name: 低饱和纪实色彩
+kind: preset
+domain: photography
+version: 0.1.0
+summary: Builds an observational look through restrained but not lifeless color, natural overcast light,
+  ordinary surfaces, and unforced framing; it is not bound to a subject, place, or narrative.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: preset
+  medium: photography
+  historical_context: historical_or_contemporary_practice
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

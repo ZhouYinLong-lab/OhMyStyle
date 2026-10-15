@@ -1,0 +1,15 @@
+medium: Layered illustrated 2.5D environment with cutout-like planes
+materials:
+- illustrated depth planes
+- limited parallax
+- soft contact shadows
+- clear gameplay silhouettes
+process:
+- Set the camera and action plane.
+- Separate scenery into layers according to depth and occlusion.
+- Place characters and interactive props with consistent scale across layers.
+- Test movement, occlusion, and edge continuity from the gameplay camera.
+technical_direction: Keep parallax shallow and intentional; validate that character
+  feet, platforms, and foreground occluders align at the target camera.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

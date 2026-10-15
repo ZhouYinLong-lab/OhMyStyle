@@ -1,0 +1,23 @@
+canonical_name: 预渲染等距环境游戏美术
+entity_type: pre_rendered_isometric_environment_game_art_direction
+origin: pre_rendered_isometric_role_playing_games
+period: 1990s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - isometric_exploration
+  - room_or_village_scene
+  - environment_concept
+  - readable_tactical_space
+  exclusions:
+  - forced_oil_paint_texture
+  - pixel_grid_as_primary_edge_language
+  - copied_named_game_scene
+  - arbitrary_camera_roll
+  subject_policy: open
+sources:
+- https://www.gamedeveloper.com/art/how-obsidian-replicated-the-look-of-an-infinity-engine-game----in-2015
+rendering:
+  model: Fixed-view isometric environment illustration with a pre-rendered scene appearance
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

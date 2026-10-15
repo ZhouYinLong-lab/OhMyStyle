@@ -11,6 +11,7 @@ scope:
   - green filter only
   - decorative plants without system logic
   - wasteland-only framing
+  subject_policy: open
 sources:
 - https://www.terranil.com/
 rendering:

@@ -1,0 +1,23 @@
+canonical_name: 手绘低多边形游戏美术
+entity_type: hand_painted_low_poly_game_art_direction
+origin: hand_painted_game_ready_3d_assets
+period: 2000s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - stylized_character
+  - small_prop
+  - natural_environment
+  - modular_game_asset
+  exclusions:
+  - photographic_texture_maps
+  - faceted_geometry_without_painted_surface_logic
+  - generic_pastel_filter
+  - copied_asset_or_scene
+  subject_policy: open
+sources:
+- https://grafit.artstation.com/blog/o0v6/creating-3d-handpainted-scene-creator-s-notes
+rendering:
+  model: Game-ready low-poly 3D assets with hand-painted stylized textures
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

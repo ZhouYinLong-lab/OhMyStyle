@@ -11,6 +11,7 @@ scope:
   - smooth digital gradients
   - uniform noise
   - unclear interaction edge
+  subject_policy: open
 sources:
 - https://www.crayonphysics.com/
 rendering:

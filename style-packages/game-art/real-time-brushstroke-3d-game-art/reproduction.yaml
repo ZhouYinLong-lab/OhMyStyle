@@ -1,0 +1,15 @@
+medium: Real-time stylized 3D render with form-following painterly strokes
+materials:
+- stroke-aware surface shading
+- broad painted color variation
+- controlled roughness
+- stable edge accents
+process:
+- Block in the scene and lighting before adding stroke detail.
+- Align stroke direction with surface curvature and material.
+- Tune stroke scale against camera distance and motion.
+- Review moving lights and camera angles for flicker, flatness, or lost silhouettes.
+technical_direction: Use screen-space or surface-space marks consistently; preserve
+  stroke scale and avoid temporal shimmer.
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

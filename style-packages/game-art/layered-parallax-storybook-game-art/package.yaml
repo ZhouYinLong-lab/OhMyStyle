@@ -1,0 +1,16 @@
+id: layered-parallax-storybook-game-art
+name: 分层视差绘本游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 把手绘或绘本式场景拆成前中后景平面，并以不同位移制造有限纵深；画面仍保持插画轮廓与读图层级。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

@@ -1,18 +1,16 @@
-signature:
-  - 'transparent watercolor layers'
-  - 'gradual palette transitions'
-  - 'soft atmospheric edges'
-  - 'readable 2D traversal space'
-
-controls:
-  - 'composition'
-  - 'palette'
-  - 'lighting'
-  - 'surface'
-
-does_not_control:
-  - subject identity
-  - object count
-  - location
-  - story or narrative event
-  - text, logo, or brand
+medium:
+- Transparent watercolor layers
+- Readable 2D traversal space
+composition:
+- Readable 2D traversal space
+palette:
+- Gradual palette transitions
+lighting:
+- Soft atmospheric watercolor light
+surface:
+- Transparent watercolor layers
+texture:
+- Soft atmospheric edges
+invariants:
+- The style controls visual treatment, not subject identity, object count, location, story, text, logo,
+  or brand.

@@ -11,6 +11,7 @@ scope:
   - color-only cues
   - uniform gray wash
   - unreadable dark masses
+  subject_policy: open
 sources:
 - https://store.steampowered.com/app/301560/White_Night/
 rendering:

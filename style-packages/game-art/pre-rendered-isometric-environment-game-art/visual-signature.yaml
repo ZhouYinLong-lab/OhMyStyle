@@ -1,0 +1,24 @@
+composition:
+- Use a stable isometric camera and consistent verticals across the scene.
+- Layer foreground occluders, traversable middle ground, and distant architecture.
+- Reserve uncluttered paths and focal landmarks so small figures remain legible.
+palette:
+- Group local colors by material and depth rather than global tint.
+- Use restrained warm highlights against cooler distance where needed.
+- Keep interaction cues distinct from decorative set dressing.
+medium:
+- Present a high-detail environment as a fixed-view rendered image.
+- Allow painted, modeled, or hybrid source methods; do not claim a specific production
+  pipeline from appearance alone.
+lighting:
+- Use coherent baked-looking illumination with readable contact shadows.
+- Keep key paths and doorways legible beneath environmental shade.
+surface:
+- Differentiate stone, plaster, foliage, and metal through restrained material cues.
+texture:
+- Concentrate fine detail on landmarks and near-ground surfaces.
+- Reduce distant detail without atmospheric blur.
+invariants:
+- Maintain a stable isometric projection and a clear playable route.
+- Keep user-specified subjects and scene contents independent of the style.
+- Do not copy source layouts, named places, characters, or UI.

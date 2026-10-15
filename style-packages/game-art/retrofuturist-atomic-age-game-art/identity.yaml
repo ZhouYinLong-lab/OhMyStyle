@@ -11,6 +11,7 @@ scope:
   - nostalgia-only props
   - random neon
   - brand logos
+  subject_policy: open
 sources:
 - https://theinvinciblegame.com/
 rendering:

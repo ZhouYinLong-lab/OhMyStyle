@@ -11,6 +11,7 @@ scope:
   - random gears
   - unexplained pipe networks
   - generic gold filter
+  subject_policy: open
 sources:
 - https://www.frostpunkgame.com/
 rendering:

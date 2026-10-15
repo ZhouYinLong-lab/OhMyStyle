@@ -146,6 +146,7 @@ This index is generated from each package's classification and relations metadat
 
 ## Low-poly and voxel
 
+- [手绘低多边形游戏美术](../style-packages/game-art/hand-painted-low-poly-game-art/README.en.md)
 - [低多边形冒险游戏美术](../style-packages/game-art/low-poly-adventure-game-art/README.en.md)
 - [微缩模型场景游戏美术](../style-packages/game-art/miniature-diorama-game-art/README.en.md)
 - [纸艺立体书游戏美术](../style-packages/game-art/papercraft-diorama-game-art/README.en.md)

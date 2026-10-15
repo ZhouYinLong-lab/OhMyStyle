@@ -11,6 +11,7 @@ scope:
   - modern PBR microdetail
   - bloom-only filter
   - copied character
+  subject_policy: open
 sources:
 - https://store.steampowered.com/app/213610/Sonic_Adventure_2/
 rendering:

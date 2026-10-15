@@ -12,6 +12,7 @@ scope:
   - fixed hero or weapon
   - unreadable effects
   - assumed ink medium
+  subject_policy: open
 sources:
 - https://www.playstation.com/en-us/games/wandering-sword/
 rendering:
