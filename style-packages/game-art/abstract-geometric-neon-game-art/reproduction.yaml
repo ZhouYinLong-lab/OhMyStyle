@@ -1,0 +1,16 @@
+medium: abstract real-time 2D or 3D geometric scene with emissive lines and rhythm-aware
+  motion
+materials:
+- 低细节几何体
+- 发光线框
+- 半透明色层
+- 受控辉光
+- 深色基底
+process:
+- 先定义运动轴与空间深度
+- 再构成几何焦点
+- 分配颜色和发光层级
+- 最后检查动态强度及形体辨识
+technical_direction: 控制泛光半径与高频闪烁；静态轮廓仍需足以区分对象和运动方向。
+safety_note: Use observable traits only. Do not reconstruct a named work, character,
+  location, logo, text, or exact composition.

@@ -1,0 +1,16 @@
+id: abstract-geometric-neon-game-art
+name: 抽象几何霓虹游戏美术
+kind: game_art
+domain: game_art
+version: 0.1.0
+summary: 以线框、几何体、亮色轨迹和节奏性变化组织空间，让颜色与运动方向承担识别，而不依赖具体城市或写实材质。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml

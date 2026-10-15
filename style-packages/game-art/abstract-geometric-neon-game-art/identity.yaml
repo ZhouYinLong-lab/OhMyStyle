@@ -1,0 +1,24 @@
+canonical_name: 抽象几何霓虹游戏美术
+entity_type: abstract_geometric_neon_game_art_direction
+origin: abstract_visual_music_games
+period: 1990s_to_present
+domain: game_art
+scope:
+  use_cases:
+  - arcade_action
+  - rhythm_visualization
+  - abstract_space
+  - motion_graphic_scene
+  exclusions:
+  - cyberpunk_city_default
+  - photorealistic_materials
+  - unreadable_flashing
+  - copied_game_entities
+  subject_policy: open
+sources:
+- https://www.rezinfinite.com/
+rendering:
+  model: abstract real-time 2D or 3D geometric scene with emissive lines and rhythm-aware
+    motion
+  scene_logic: New subject and composition; preserve only observable package rules.
+  output_behavior: Readable, independently authored image with no copied source arrangement.

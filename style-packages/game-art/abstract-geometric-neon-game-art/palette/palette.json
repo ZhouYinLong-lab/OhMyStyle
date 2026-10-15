@@ -1,0 +1,31 @@
+{
+  "name": "abstract-geometric-neon-game-art",
+  "usage": "Curated role-based colors; treat values as anchors, not a global filter.",
+  "colors": [
+    {
+      "name": "midnight",
+      "hex": "#090B24",
+      "role": "negative_space"
+    },
+    {
+      "name": "electric_blue",
+      "hex": "#2864F0",
+      "role": "cool_structure"
+    },
+    {
+      "name": "cyan",
+      "hex": "#30E6E2",
+      "role": "motion_trace"
+    },
+    {
+      "name": "magenta",
+      "hex": "#F03BAF",
+      "role": "rhythmic_accent"
+    },
+    {
+      "name": "white",
+      "hex": "#F4F5FF",
+      "role": "peak_highlight"
+    }
+  ]
+}
