@@ -14,7 +14,7 @@ This independent style package for **Low-poly Adventure Game Art** turns public 
 
 ## Visual focus
 
-低多边形面、简化材质、清晰光照与可探索空间. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Faceted low-poly surfaces, simplified materials, clear lighting, and explorable space. Prompts retain these traits while leaving subjects and arrangements open.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
@@ -78,7 +78,7 @@ This independent style package for **Low-poly Adventure Game Art** turns public 
 
 ## Visual focus
 
-低多边形面、简化材质、清晰光照与可探索空间. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Faceted low-poly surfaces, simplified materials, clear lighting, and explorable space. Prompts retain these traits while leaving subjects and arrangements open.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 

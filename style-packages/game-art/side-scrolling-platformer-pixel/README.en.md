@@ -14,7 +14,7 @@ This independent style package for **Side-scrolling Platformer Pixel Art** turns
 
 ## Visual focus
 
-横向层次、平台可读性、像素簇与背景视差. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Layered side-view depth, readable platforms, deliberate pixel clusters, and background parallax. Prompts retain these traits while leaving subjects and arrangements open.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
@@ -78,7 +78,7 @@ This independent style package for **Side-scrolling Platformer Pixel Art** turns
 
 ## Visual focus
 
-横向层次、平台可读性、像素簇与背景视差. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Layered side-view depth, readable platforms, deliberate pixel clusters, and background parallax. Prompts retain these traits while leaving subjects and arrangements open.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 

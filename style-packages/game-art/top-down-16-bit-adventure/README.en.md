@@ -14,7 +14,7 @@ This independent style package for **Top-down 16-bit Adventure Game Art** turns 
 
 ## Visual focus
 
-16位色块、俯视网格、可读地形与有限调色板. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Compact 16-bit-inspired color clusters, a readable top-down grid, legible terrain, and a disciplined palette. Prompts retain these traits while leaving subjects and arrangements open.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
@@ -78,7 +78,7 @@ This independent style package for **Top-down 16-bit Adventure Game Art** turns 
 
 ## Visual focus
 
-16位色块、俯视网格、可读地形与有限调色板. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Compact 16-bit-inspired color clusters, a readable top-down grid, legible terrain, and a disciplined palette. Prompts retain these traits while leaving subjects and arrangements open.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 

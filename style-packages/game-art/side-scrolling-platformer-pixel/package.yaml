@@ -3,8 +3,8 @@ name: 横版平台跳跃像素美术
 kind: game_art
 domain: game_art
 version: 0.1.0
-summary: Independent Side-scrolling Platformer Pixel Art style package focused on
-  横向层次、平台可读性、像素簇与背景视差; it requires new subjects and arrangements.
+summary: A side-scrolling pixel-art direction that prioritizes layered depth, readable
+  platforms, deliberate pixel clusters, and background parallax.
 files:
   identity: identity.yaml
   visual_signature: visual-signature.yaml
@@ -15,18 +15,17 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
-
 classification:
   source_type: game_art
   medium: game_art
-  historical_context: "游戏美术类型"
+  historical_context: 游戏美术类型
   application: game_art
   visual_axes:
-    - composition
-    - palette
-    - lighting
-    - surface
-    - texture
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
 subject_policy:
   mode: open
   fixed_subjects: []
