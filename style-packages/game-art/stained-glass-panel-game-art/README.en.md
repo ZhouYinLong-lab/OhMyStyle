@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Stained Glass Panel Game Art representative](gallery-16x9.svg)
+![Stained Glass Panel Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

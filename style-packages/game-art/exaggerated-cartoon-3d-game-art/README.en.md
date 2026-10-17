@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Exaggerated Cartoon 3D Game Art representative](gallery-16x9.svg)
+![Exaggerated Cartoon 3D Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

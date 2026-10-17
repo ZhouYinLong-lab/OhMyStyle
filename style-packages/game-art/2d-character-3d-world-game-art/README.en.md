@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![2D Characters in 3D Worlds Game Art representative](gallery-16x9.svg)
+![2D Characters in 3D Worlds Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

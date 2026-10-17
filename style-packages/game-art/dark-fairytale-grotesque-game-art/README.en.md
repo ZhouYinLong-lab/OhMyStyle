@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Dark Fairytale and Grotesque Game Art representative](gallery-16x9.svg)
+![Dark Fairytale and Grotesque Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

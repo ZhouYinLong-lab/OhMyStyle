@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Solarpunk Ecological Future Game Art representative](gallery-16x9.svg)
+![Solarpunk Ecological Future Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

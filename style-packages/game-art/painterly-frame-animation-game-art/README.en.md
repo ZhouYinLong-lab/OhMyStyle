@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Painterly Frame-by-Frame Animation Game Art representative](gallery-16x9.svg)
+![Painterly Frame-by-Frame Animation Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

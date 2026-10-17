@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Collage and Mixed-Media Game Art representative](gallery-16x9.svg)
+![Collage and Mixed-Media Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

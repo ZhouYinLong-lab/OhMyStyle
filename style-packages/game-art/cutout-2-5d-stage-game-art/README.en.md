@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Cutout 2.5D Stage Game Art representative](gallery-16x9.svg)
+![Cutout 2.5D Stage Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

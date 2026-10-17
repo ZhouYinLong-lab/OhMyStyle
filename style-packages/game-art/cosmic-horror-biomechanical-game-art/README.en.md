@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Cosmic Horror and Biomechanical Game Art representative](gallery-16x9.svg)
+![Cosmic Horror and Biomechanical Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

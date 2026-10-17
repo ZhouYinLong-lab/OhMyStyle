@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-![HD-2D 像素与三维融合游戏美术 代表图](gallery-16x9.svg)
+![HD-2D 像素与三维融合游戏美术 代表图](gallery-16x9.jpg)
 
 > **分类：** 游戏美术
 > **媒介领域：** 游戏美术

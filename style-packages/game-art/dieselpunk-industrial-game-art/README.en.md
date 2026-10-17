@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Dieselpunk Industrial Game Art representative](gallery-16x9.svg)
+![Dieselpunk Industrial Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

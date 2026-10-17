@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![HD-2D Pixel and 3D Hybrid Game Art representative](gallery-16x9.svg)
+![HD-2D Pixel and 3D Hybrid Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

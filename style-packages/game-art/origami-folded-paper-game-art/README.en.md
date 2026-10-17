@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Origami and Folded Paper Game Art representative](gallery-16x9.svg)
+![Origami and Folded Paper Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

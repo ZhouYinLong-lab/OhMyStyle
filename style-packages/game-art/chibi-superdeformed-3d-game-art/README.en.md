@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Chibi Super-Deformed 3D Game Art representative](gallery-16x9.svg)
+![Chibi Super-Deformed 3D Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art

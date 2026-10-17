@@ -2,7 +2,7 @@
 
 [中文版](README.md)
 
-![Atomic Age Retrofuturist Game Art representative](gallery-16x9.svg)
+![Atomic Age Retrofuturist Game Art representative](gallery-16x9.jpg)
 
 > **Category:** game_art
 > **Domain:** game_art
