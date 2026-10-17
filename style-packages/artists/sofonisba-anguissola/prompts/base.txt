@@ -1,0 +1,13 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.
+
+Create an original image with these observable decisions:
+- Build a stable, legible arrangement with quiet negative space.
+- If people are requested, use individualized features, attentive gaze, and a restrained hand gesture to convey presence; do not assume a court, family, or historical scene.
+- Suggest thin-layer Renaissance oil paint with careful drawing, soft tonal modeling, and controlled, resolved edges.
+- Use natural skin tones, deep varied darks, and muted accents; keep light even and expression readable.
+- Reserve the finest detail for the requested focal features; keep the background calm and subordinate.
+- Avoid grand idealization and theatrical spotlighting. Do not copy a named portrait, sitter, garment, or composition.
+Keep the user’s subject, location, count, aspect ratio, and purpose authoritative.

@@ -1,0 +1,25 @@
+package_id: sofonisba-anguissola
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: Museum records are link-only references; no historical artwork or collection photograph is bundled.
+sources:
+  - url: https://www.metmuseum.org/art/collection/search/892539
+    authority: The Metropolitan Museum of Art
+    title: Portrait of a Noblewoman
+    supports: Portrait practice and the use of individualized sitters across social contexts.
+    accessed: '2026-10-18'
+  - url: https://www.museodelprado.es/en/the-collection/artist/anguissola-sofonisba/d3c474ef-a960-4f9e-b9af-4ace52588da2
+    authority: Museo Nacional del Prado
+    title: Sofonisba Anguissola collection records
+    supports: Portrait practice and attentive, delicate treatment of sitters.
+    accessed: '2026-10-18'
+  - url: https://collection.nationalmuseum.se/en/collection/item/640747/
+    authority: Nationalmuseum, Sweden
+    title: Portrait of a Canon Regular
+    supports: Individualized portrait treatment and historical context.
+    accessed: '2026-10-18'
+attribution: This package describes observable traits for new subjects and is not affiliated with, endorsed by, or an exact imitation of Sofonisba Anguissola.
+rights_notes:
+  - External artworks remain with their respective rights holders; this package includes links and descriptions only.
+  - Do not bundle source images or derivatives without verified redistribution rights.
+  - The gallery and generated sample are new anonymous scenes, not historical works.

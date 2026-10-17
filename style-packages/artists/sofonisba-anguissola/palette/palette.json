@@ -1,0 +1,12 @@
+{
+  "name": "sofonisba-anguissola",
+  "usage": "Quiet, role-based Renaissance portrait colors; let subject and source lighting determine their balance.",
+  "colors": [
+    {"name": "warm_ground", "hex": "#D8C7A8", "role": "light_background"},
+    {"name": "skin_ochre", "hex": "#C68F69", "role": "skin_mid"},
+    {"name": "soft_highlight", "hex": "#E8D8BE", "role": "face_and_hand_light"},
+    {"name": "deep_umber", "hex": "#3B2D24", "role": "dark_cloth_or_background"},
+    {"name": "muted_olive", "hex": "#777054", "role": "restrained_material_accent"},
+    {"name": "old_rose", "hex": "#9B655C", "role": "small_warm_accent"}
+  ]
+}

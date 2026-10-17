@@ -1,0 +1,29 @@
+package_id: sofonisba-anguissola
+package_version: 0.1.0
+invariants:
+  - id: style_recognition
+    weight: 3
+    test: Controlled Renaissance modeling, individualized expression, and selective fine detail remain visible across changed subjects.
+  - id: prompt_adherence
+    weight: 3
+    test: The requested subject and setting are followed without adding a default court, family, or historical narrative.
+  - id: expression_and_gesture
+    weight: 2
+    test: If people are requested, their gaze and gestures are natural and support the requested interaction.
+  - id: material_readability
+    weight: 2
+    test: Skin, cloth, and hard materials remain distinguishable without theatrical contrast.
+rejections: [copied_named_portrait, unrequested_royal_iconography, generic_global_filter, unreadable_face_or_hands, unmotivated_extra_objects]
+minimum_score: 8
+benchmark_suite: [portrait, still_life, architecture_environment, minimal_composition, fuzzy_brief]
+semantic_evaluation:
+  subject_independence: {score: null, notes: Pending provider-backed neutral-subject review.}
+  distinctive_signature: {score: null, notes: Check quiet modeling, individualized gaze, and controlled detail.}
+  visual_overlap: {score: null, notes: Compare with Raphael, Velázquez, Ingres, and Vermeer; record specific distinctions.}
+  cross_subject_stability: {score: null, notes: Run at least two different subjects before assigning a score.}
+related_packages: [diego-velazquez, raphael-sanzio, jean-auguste-dominique-ingres, johannes-vermeer]
+contrast_note: Separate interpersonal expression and fine tonal modeling from idealized monumental portraiture and from hard academic contour.
+crossing:
+  supported: true
+  default_mode: adaptive
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.

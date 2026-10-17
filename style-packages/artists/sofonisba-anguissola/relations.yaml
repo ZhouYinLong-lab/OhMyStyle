@@ -1,0 +1,11 @@
+family: source-artist
+near_duplicates: [diego-velazquez, raphael-sanzio, jean-auguste-dominique-ingres, johannes-vermeer]
+supersedes: []
+conflicts: []
+distinctives:
+  - Compared with Velázquez, favor quiet, fine-grained modeling and reciprocal attention over broad painterly surfaces and courtly scale.
+  - Compared with Raphael, preserve individual facial character and small human gestures instead of idealized, balanced group harmony.
+  - Compared with Ingres, avoid hard linear polish; use gentle transitions and a psychologically alert gaze.
+avoid_overlap:
+  - Do not default to royal regalia, monumental court portraiture, or conspicuous status objects.
+  - Do not borrow the deep spotlight of Caravaggio or the broad impressionist stroke of Morisot.

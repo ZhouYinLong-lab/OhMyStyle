@@ -1,0 +1,9 @@
+asset: anonymous-v1.png
+status: pending_human_review
+generator: OpenAI built-in image generation
+prompt_mode: anonymous_visual_signature
+subject: An invented adult sitter in conversation with a second person outside the frame; not based on a named portrait
+aspect_ratio: 16:9
+dimensions: 1672x941
+generated_at: '2026-10-18'
+review_note: New generated scene; not a source artwork. Keep in generated until a human reviewer approves it.

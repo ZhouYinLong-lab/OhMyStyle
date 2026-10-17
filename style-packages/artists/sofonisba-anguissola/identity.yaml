@@ -1,0 +1,18 @@
+canonical_name: 索福尼斯巴·安圭索拉
+entity_type: artist_renaissance_portrait_painting
+origin: italian_renaissance_painting
+period: 1532_to_1625
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: Follow the user's subject and setting. Portrait and interpersonal cues are optional examples, not default content.
+  use_cases: [expressive_portrait, paired_figures, subtle_gesture, quiet_social_scene]
+  exclusions: [generic_royal_iconography, idealized_anonymous_face, theatrical_chiaroscuro, copied_named_portrait]
+sources:
+  - https://www.metmuseum.org/art/collection/search/892539
+  - https://www.museodelprado.es/en/the-collection/artist/anguissola-sofonisba/d3c474ef-a960-4f9e-b9af-4ace52588da2
+  - https://collection.nationalmuseum.se/en/collection/item/640747/
+rendering:
+  model: Renaissance portrait painting centered on attentive expression and quiet social presence.
+  scene_logic: Build a fresh arrangement; use gaze and gesture only when relevant to the requested subject.
+  output_behavior: Keep contours legible and modeling soft; reserve detailed finish for faces, hands, and a few material accents.
