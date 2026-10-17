@@ -1,15 +1,14 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this
+  package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 具象绘画、细节写实与一个超现实但克制的事件；日常空间保持真实，但一个不解释的异常物体改变心理重心；尘土色、灰绿、暗红、乳白和冷蓝形成平静而异样的色组。
 avoid_overlap: []

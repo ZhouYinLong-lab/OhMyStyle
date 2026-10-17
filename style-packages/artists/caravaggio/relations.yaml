@@ -2,12 +2,11 @@ related_packages: []
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- Independent Caravaggio style package focused on 明暗对照、单一光源、普通人物与戏剧性空间; it requires new subjects and arrangements.
 avoid_overlap: []

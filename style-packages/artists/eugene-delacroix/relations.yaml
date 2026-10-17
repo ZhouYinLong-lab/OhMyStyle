@@ -2,12 +2,12 @@ related_packages: []
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- Independent Eugène Delacroix style package focused on 对角线运动、暖冷冲突、饱和色与自由笔触; it requires new subjects
+  and arrangements.
 avoid_overlap: []

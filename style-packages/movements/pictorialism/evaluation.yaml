@@ -1,39 +1,80 @@
 profiles:
   generic:
     required:
-      - package-specific visual signature is observable
-      - composition remains coherent for a new subject
-      - no copied reference composition or branded material
-      - no fixed subject leaks into the output
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
+    - no fixed subject leaks into the output
     reject_if:
-      - style is represented only by a global color filter
-      - text, logo, watermark, or unintended signature is present
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
   portrait:
     required:
-      - preserve the user-supplied person or object without adding a recurring figure
+    - preserve the user-supplied person or object without adding a recurring figure
   still_life:
     required:
-      - preserve the user-supplied objects and their count
+    - preserve the user-supplied objects and their count
 minimum_score: 7
-
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Do not mark complete without outputs for at least two different subjects."
-
+    notes: Do not mark complete without outputs for at least two different subjects.
 subject_independence_suite:
   status: pending
   fixture: benchmarks/subject-independence.yaml
   required_subjects:
-    - ordinary-chair
-    - unspecified-building
-  evidence: "Representative image is an anonymous demo, not a default subject requirement."
+  - ordinary-chair
+  - unspecified-building
+  evidence: Representative image is an anonymous demo, not a default subject requirement.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/anna-ancher
+    score: 0.926
+    signals:
+      perceptual_hash: 0.883
+      color: 0.961
+      luminance: 0.953
+      texture: 0.991
+      layout: 0.942
+  - package: movements/romanticism
+    score: 0.858
+    signals:
+      perceptual_hash: 0.781
+      color: 0.844
+      luminance: 0.992
+      texture: 0.997
+      layout: 0.969
+  - package: artists/titian
+    score: 0.839
+    signals:
+      perceptual_hash: 0.883
+      luminance: 0.786
+      texture: 0.994
+      layout: 0.877
+  - package: movements/futurism
+    score: 0.827
+    signals:
+      color: 0.827
+      luminance: 0.897
+      texture: 0.957
+      layout: 0.886
+  - package: artists/sofonisba-anguissola
+    score: 0.821
+    signals:
+      perceptual_hash: 0.781
+      color: 0.859
+      luminance: 0.793
+      texture: 0.989
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

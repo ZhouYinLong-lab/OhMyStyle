@@ -2,12 +2,11 @@ related_packages: []
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- Independent Pierre-Auguste Renoir style package focused on 明亮户外光、柔和肤色、破碎色点与社交氛围; it requires new subjects and arrangements.
 avoid_overlap: []

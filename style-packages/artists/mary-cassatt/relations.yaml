@@ -1,15 +1,13 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 印象派笔触与粉彩般的柔软边缘；亲密的室内关系、偏近的裁切和自然姿态构成日常生活片段；柔和粉、薄荷绿、奶油黄、灰蓝和肤色形成轻盈色组。
 avoid_overlap: []

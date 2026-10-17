@@ -1,3 +1,8 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create an original image using this package as a visual language, not as a fixed subject or copied composition.
 
 Package signature:
@@ -16,6 +21,6 @@ Reproduction direction:
 - 以少量色彩和布料线条强化秩序
 
 User request:
-{subject}
-{composition}
-{aspect_ratio}
+{SUBJECT}
+{COMPOSITION}
+{ASPECT_RATIO}

@@ -1,11 +1,22 @@
-related_movements: [symbolism, expressionism]
-related_concepts: [psychological_landscape, emotional_color, existential_figure]
-influences_to_review: [post_impressionism, nordic_symbolism]
-not_equivalent_to: [random_distortion, horror_filter, decorative_high_saturation]
-
+related_movements:
+- symbolism
+- expressionism
+related_concepts:
+- psychological_landscape
+- emotional_color
+- existential_figure
+influences_to_review:
+- post_impressionism
+- nordic_symbolism
+not_equivalent_to:
+- random_distortion
+- horror_filter
+- decorative_high_saturation
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A reference-backed expressionist painting profile focused on psychological color, contour that carries bodily tension, compressed
+  space, and recurring organic or architectural rhythms without copying an iconic image.
 avoid_overlap: []

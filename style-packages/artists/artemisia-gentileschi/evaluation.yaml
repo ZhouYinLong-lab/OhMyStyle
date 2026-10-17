@@ -3,19 +3,16 @@ package_version: 0.1.0
 invariants:
 - id: style_recognition
   weight: 3
-  test: The package medium, edge, light, palette, and texture decisions remain recognizable
-    after the subject changes.
+  test: The package medium, edge, light, palette, and texture decisions remain recognizable after the subject changes.
 - id: prompt_adherence
   weight: 3
-  test: The requested subject, count, setting, and aspect ratio are followed without
-    adding a copied source arrangement.
+  test: The requested subject, count, setting, and aspect ratio are followed without adding a copied source arrangement.
 - id: material_readability
   weight: 2
   test: Requested materials and capture behavior remain visually distinguishable.
 - id: human_artifact_control
   weight: 2
-  test: Hands, faces, geometry, text, reflections, and repeated details do not show
-    avoidable generative defects.
+  test: Hands, faces, geometry, text, reflections, and repeated details do not show avoidable generative defects.
 rejections:
 - copied_named_work
 - generic_global_filter
@@ -32,13 +29,26 @@ benchmark_suite:
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/diego-velazquez
+    score: 0.836
+    signals:
+      color: 0.997
+      luminance: 0.993
+      texture: 0.976
+      layout: 0.982
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

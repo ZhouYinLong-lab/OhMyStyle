@@ -1,3 +1,8 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.
+
 Create an original image of {SUBJECT} in the visual language of Caspar David Friedrich.
 
 Transfer these observable decisions: 以孤寂尺度、背向观看、清冷空气和远景层叠组织风景，让自然的精神重量超过具体叙事。

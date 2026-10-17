@@ -6,12 +6,12 @@ distinguish_from:
 - uncontrolled global color filter
 combination:
   recommended_mode: stack
-  notes: If combined with another package, assign separate responsibilities explicitly
-    rather than concatenating names.
-
+  notes: If combined with another package, assign separate responsibilities explicitly rather than concatenating
+    names.
 family: design-school
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 以实践、协作、实验和跨媒介学习为核心的进步艺术教育传统，强调开放过程而非固定样式。
 avoid_overlap: []

@@ -2,12 +2,11 @@ related_packages: []
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- Independent Impressionism style package focused on 瞬时光、破碎笔触、反射色与户外空气; it requires new subjects and arrangements.
 avoid_overlap: []

@@ -18,31 +18,47 @@ minimum_score: 8
 image_audit:
   similarity_level: high
   visual_overlap:
-    - systematic grid and restrained product presentation
-    - neutral functional palette
+  - systematic grid and restrained product presentation
+  - neutral functional palette
   reason: Ulm representatives can share geometric order with Bauhaus, De Stijl, and grid techniques.
   keep_separate_because:
-    - the package is defined by information clarity, systems thinking, and functional communication
-    - it is not interchangeable with decorative geometric abstraction
-    - it must adapt the user's subject rather than force a product board
+  - the package is defined by information clarity, systems thinking, and functional communication
+  - it is not interchangeable with decorative geometric abstraction
+  - it must adapt the user's subject rather than force a product board
   action: clarify_distinctive_signature
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: movements/conceptual-art
+    score: 0.85
+    signals:
+      color: 0.997
+      luminance: 1.0
+      texture: 0.981
+      layout: 0.92
+  - package: movements/chinese-literati-ink-painting
+    score: 0.83
+    signals:
+      color: 0.983
+      luminance: 0.898
+      texture: 0.985
+      layout: 0.968
 subject_independence_suite:
   status: pending
   fixture: benchmarks/subject-independence.yaml
   required_subjects:
-    - ordinary-chair
-    - unspecified-building
-  evidence: "No provider-backed result is claimed until a real image run is recorded."
+  - ordinary-chair
+  - unspecified-building
+  evidence: No provider-backed result is claimed until a real image run is recorded.
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.

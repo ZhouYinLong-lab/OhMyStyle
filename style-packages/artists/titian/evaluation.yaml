@@ -1,39 +1,106 @@
 profiles:
   generic:
     required:
-      - package-specific visual signature is observable
-      - composition remains coherent for a new subject
-      - no copied reference composition or branded material
-      - no fixed subject leaks into the output
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
+    - no fixed subject leaks into the output
     reject_if:
-      - style is represented only by a global color filter
-      - text, logo, watermark, or unintended signature is present
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
   portrait:
     required:
-      - preserve the user-supplied person or object without adding a recurring figure
+    - preserve the user-supplied person or object without adding a recurring figure
   still_life:
     required:
-      - preserve the user-supplied objects and their count
+    - preserve the user-supplied objects and their count
 minimum_score: 7
-
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Do not mark complete without outputs for at least two different subjects."
-
+    notes: Do not mark complete without outputs for at least two different subjects.
 subject_independence_suite:
   status: pending
   fixture: benchmarks/subject-independence.yaml
   required_subjects:
-    - ordinary-chair
-    - unspecified-building
-  evidence: "Representative image is an anonymous demo, not a default subject requirement."
+  - ordinary-chair
+  - unspecified-building
+  evidence: Representative image is an anonymous demo, not a default subject requirement.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/anna-ancher
+    score: 0.863
+    signals:
+      perceptual_hash: 0.883
+      luminance: 0.833
+      texture: 0.985
+      layout: 0.934
+  - package: artists/caravaggio
+    score: 0.856
+    signals:
+      perceptual_hash: 0.781
+      color: 0.877
+      luminance: 0.938
+      texture: 0.98
+      layout: 0.931
+  - package: movements/pictorialism
+    score: 0.839
+    signals:
+      perceptual_hash: 0.883
+      luminance: 0.786
+      texture: 0.994
+      layout: 0.877
+  - package: artists/frida-kahlo
+    score: 0.834
+    signals:
+      luminance: 0.999
+      texture: 0.997
+      layout: 0.949
+  - package: movements/lyrical-abstraction
+    score: 0.834
+    signals:
+      perceptual_hash: 0.805
+      luminance: 0.825
+      texture: 0.998
+      layout: 0.983
+  - package: movements/northern-renaissance
+    score: 0.828
+    signals:
+      color: 0.889
+      luminance: 0.941
+      texture: 0.965
+      layout: 0.917
+  - package: artists/sofonisba-anguissola
+    score: 0.825
+    signals:
+      color: 0.863
+      luminance: 0.992
+      texture: 0.983
+      layout: 0.884
+  - package: artists/paul-gauguin
+    score: 0.824
+    signals:
+      color: 0.946
+      luminance: 0.934
+      texture: 0.976
+      layout: 0.911
+  - package: movements/futurism
+    score: 0.823
+    signals:
+      color: 0.816
+      luminance: 0.889
+      texture: 0.95
+      layout: 0.991
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

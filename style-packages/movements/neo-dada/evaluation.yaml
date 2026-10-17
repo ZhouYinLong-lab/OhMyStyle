@@ -1,19 +1,19 @@
 profiles:
   generic:
     required:
-      - package-specific visual signature is observable
-      - composition remains coherent for a new subject
-      - no copied reference composition or branded material
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
     reject_if:
-      - style is represented only by a global color filter
-      - text, logo, watermark, or unintended signature is present
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
   portrait:
     required:
-      - requested subject remains readable
-      - style does not force a named subject or costume
+    - requested subject remains readable
+    - style does not force a named subject or costume
   still_life:
     required:
-      - requested objects remain countable and materially distinguishable
+    - requested objects remain countable and materially distinguishable
 minimum_score: 7
 semantic_evaluation:
   subject_independence:
@@ -32,6 +32,19 @@ subject_independence_suite:
   status: pending
   fixture: benchmarks/subject-independence.yaml
   required_subjects:
-    - ordinary-chair
-    - unspecified-building
+  - ordinary-chair
+  - unspecified-building
   evidence: Generated representative is a demonstration, not a fixed subject requirement.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/paul-klee
+    score: 0.821
+    signals:
+      color: 0.858
+      luminance: 0.838
+      texture: 0.987
+      layout: 0.988
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

@@ -1,4 +1,9 @@
 SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.
+
+SUBJECT INDEPENDENCE CONTRACT:
 - The user's subject, place, people, objects, and story are authoritative.
 - Do not introduce a fixed subject from the package or its reference examples.
 - Translate only the observable visual language below.

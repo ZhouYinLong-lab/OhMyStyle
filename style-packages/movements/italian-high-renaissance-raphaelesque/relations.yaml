@@ -1,27 +1,28 @@
 related_movements:
-  - early-italian-renaissance
-  - italian-mannerism
-  - baroque_classicism
+- early-italian-renaissance
+- italian-mannerism
+- baroque_classicism
 related_practices:
-  - disegno
-  - cartoon preparation
-  - fresco painting
-  - humanist allegory
+- disegno
+- cartoon preparation
+- fresco painting
+- humanist allegory
 work_level_reference:
   id: raphael-school-of-athens
   relation: representative case of a monumental intellectual fresco
   not_definition: Its architecture and figure arrangement are not package invariants.
 transition_notes:
-  - Mannerism often stretches proportion and unsettles the calm balance.
-  - Baroque increases movement, theatrical light, and emotional pressure.
+- Mannerism often stretches proportion and unsettles the calm balance.
+- Baroque increases movement, theatrical light, and emotional pressure.
 not_equivalent_to:
-  - ancient Greek art itself
-  - generic neoclassicism
-  - a replica of The School of Athens
-
+- ancient Greek art itself
+- generic neoclassicism
+- a replica of The School of Athens
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A sixteenth-century Italian painting system built on careful drawing, proportioned figures, coherent space, calm narrative
+  action, and controlled color; Raphael's School of Athens is one reference case, not a template.
 avoid_overlap: []

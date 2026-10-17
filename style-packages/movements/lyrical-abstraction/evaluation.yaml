@@ -1,40 +1,59 @@
 profiles:
   generic:
     required:
-      - package-specific visual signature is observable
-      - composition remains coherent for a new subject
-      - no copied reference composition or branded material
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
     reject_if:
-      - style is represented only by a global color filter
-      - text, logo, watermark, or unintended signature is present
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
   portrait:
     required:
-      - the body, if requested, is carried by gesture and paint process rather than literal portrait detail
-      - open edges and layered passages remain visible around the supplied subject
+    - the body, if requested, is carried by gesture and paint process rather than literal portrait detail
+    - open edges and layered passages remain visible around the supplied subject
   still_life:
     required:
-      - objects may dissolve into the field but must not be replaced by a fixed motif
-      - paint process remains visible through drips, overlaps, and varied stroke pressure
+    - objects may dissolve into the field but must not be replaced by a fixed motif
+    - paint process remains visible through drips, overlaps, and varied stroke pressure
 minimum_score: 7
-
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Do not mark complete without outputs for at least two different subjects."
-
+    notes: Do not mark complete without outputs for at least two different subjects.
 subject_independence_suite:
   status: pending
   fixture: benchmarks/subject-independence.yaml
   required_subjects:
-    - ordinary-chair
-    - unspecified-building
-  evidence: "No generated result is implied by this template."
+  - ordinary-chair
+  - unspecified-building
+  evidence: No generated result is implied by this template.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/anna-ancher
+    score: 0.843
+    signals:
+      perceptual_hash: 0.781
+      color: 0.808
+      luminance: 0.993
+      texture: 0.986
+      layout: 0.917
+  - package: artists/titian
+    score: 0.834
+    signals:
+      perceptual_hash: 0.805
+      luminance: 0.825
+      texture: 0.998
+      layout: 0.983
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

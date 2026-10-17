@@ -35,3 +35,45 @@ subject_independence_suite:
   - ordinary-chair
   - unspecified-building
   evidence: Representative image is an anonymous demo, not a default subject requirement.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: schools/yale-school-of-art
+    score: 0.897
+    signals:
+      perceptual_hash: 0.812
+      color: 0.964
+      luminance: 0.995
+      texture: 0.991
+      layout: 0.921
+  - package: movements/art-informel
+    score: 0.84
+    signals:
+      color: 0.927
+      luminance: 0.994
+      texture: 0.989
+      layout: 0.898
+  - package: schools/black-mountain-college
+    score: 0.836
+    signals:
+      color: 0.937
+      luminance: 0.985
+      texture: 0.948
+      layout: 0.959
+  - package: movements/futurism
+    score: 0.826
+    signals:
+      color: 0.916
+      luminance: 0.978
+      texture: 0.963
+      layout: 0.972
+  - package: artists/leonardo-da-vinci
+    score: 0.823
+    signals:
+      color: 0.909
+      luminance: 0.952
+      texture: 0.997
+      layout: 0.951
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

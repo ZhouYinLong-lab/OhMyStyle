@@ -2,12 +2,11 @@ related_packages: []
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- Independent Surrealism style package focused on 梦境逻辑、日常错位、清晰质感与非理性连接; it requires new subjects and arrangements.
 avoid_overlap: []

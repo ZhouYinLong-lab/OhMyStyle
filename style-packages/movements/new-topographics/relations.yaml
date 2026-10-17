@@ -1,25 +1,24 @@
 related_contexts:
-  - 1975_new_topographics_exhibition
-  - documentary_landscape
-  - conceptual_photography
-  - man_altered_landscape
+- 1975_new_topographics_exhibition
+- documentary_landscape
+- conceptual_photography
+- man_altered_landscape
 related_artists_to_research:
-  - robert-adams
-  - lewis-baltz
-  - bernd-and-hilla-becher
-  - joe-deal
+- robert-adams
+- lewis-baltz
+- bernd-and-hilla-becher
+- joe-deal
 later_echoes:
-  - new_dutch_landscape_photography
-  - infrastructure_photography
+- new_dutch_landscape_photography
+- infrastructure_photography
 not_equivalent_to:
-  - generic_urban_photography
-  - apocalyptic_landscape
-
-
-
+- generic_urban_photography
+- apocalyptic_landscape
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A landscape-photography movement profile built around clear-eyed views of human-altered terrain, restrained composition,
+  neutral description, and the tension between documentary evidence and aesthetic order.
 avoid_overlap: []

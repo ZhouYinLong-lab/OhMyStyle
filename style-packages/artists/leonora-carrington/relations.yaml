@@ -1,15 +1,14 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this
+  package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 以梦境般的生物、炼金意象、细密轮廓和冷静而神秘的空间构成超现实绘画，强调多义形象与精细表面。
 avoid_overlap: []

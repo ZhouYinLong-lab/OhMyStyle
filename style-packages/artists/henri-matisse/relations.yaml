@@ -2,12 +2,11 @@ related_packages: []
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- Independent Henri Matisse style package focused on 平面色块、装饰性空间、简化轮廓与大胆色彩; it requires new subjects and arrangements.
 avoid_overlap: []

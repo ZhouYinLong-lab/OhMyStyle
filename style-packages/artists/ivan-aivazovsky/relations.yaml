@@ -1,15 +1,14 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this
+  package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 以海面、天空、航船和光线交汇构成浪漫主义海景，强调水面运动、空气透视、月光或夕照的单一光源和宏阔尺度。
 avoid_overlap: []

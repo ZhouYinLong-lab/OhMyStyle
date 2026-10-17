@@ -1,22 +1,23 @@
 representative_contexts:
-  - otto-dix
-  - george-grosz
-  - max-beckmann
-  - august-sander
-  - albert-renger-patzsch
+- otto-dix
+- george-grosz
+- max-beckmann
+- august-sander
+- albert-renger-patzsch
 related_movements:
-  - expressionism
-  - modernist_straight_photography
+- expressionism
+- modernist_straight_photography
 later_echoes:
-  - documentary_typology
-  - social_realism
+- documentary_typology
+- social_realism
 not_equivalent_to:
-  - photorealism
-  - generic_retro_realism
-
+- photorealism
+- generic_retro_realism
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A Weimar-era visual language of matter-of-fact realism, hard-edged observation, social typology, and
+  unsentimental attention to bodies, interiors, labor, and the consequences of modern life.
 avoid_overlap: []

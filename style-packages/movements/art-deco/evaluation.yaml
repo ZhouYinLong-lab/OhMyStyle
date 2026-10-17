@@ -18,13 +18,40 @@ minimum_score: 8
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: movements/byzantine-art
+    score: 0.847
+    signals:
+      color: 0.965
+      luminance: 0.998
+      texture: 0.946
+      layout: 0.948
+  - package: artists/diego-velazquez
+    score: 0.832
+    signals:
+      color: 0.947
+      luminance: 0.9
+      texture: 0.936
+      layout: 0.967
+  - package: artists/kathe-kollwitz
+    score: 0.832
+    signals:
+      color: 0.926
+      luminance: 0.942
+      texture: 0.969
+      layout: 0.98
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

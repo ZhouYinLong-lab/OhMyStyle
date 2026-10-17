@@ -1,15 +1,13 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 以现代城市和海岸生活中的简化建筑、孤立人物、强烈窗光与克制色彩构成悬置的日常场景，强调观看距离和心理空间。
 avoid_overlap: []

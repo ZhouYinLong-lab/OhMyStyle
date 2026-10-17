@@ -1,12 +1,19 @@
 family: historical-movement
-near_duplicates: [hudson-river-school, tonalism, romanticism, impressionism]
+near_duplicates:
+- hudson-river-school
+- tonalism
+- romanticism
+- impressionism
 supersedes: []
 conflicts: []
 distinctives:
-  - Compared with Romanticism, use quiet scale and measured light rather than sublime weather, rugged peaks, or a lone dramatic figure.
-  - Compared with Impressionism, suppress broken visible strokes and keep forms optically calm and clearly layered.
-  - Compared with Tonalism, preserve crisp atmospheric depth and radiant local light instead of unifying the scene into a narrow dusk-toned envelope.
+- Compared with Romanticism, use quiet scale and measured light rather than sublime weather, rugged peaks,
+  or a lone dramatic figure.
+- Compared with Impressionism, suppress broken visible strokes and keep forms optically calm and clearly
+  layered.
+- Compared with Tonalism, preserve crisp atmospheric depth and radiant local light instead of unifying
+  the scene into a narrow dusk-toned envelope.
 avoid_overlap:
-  - Do not add a shore, sailboat, mountain, or open landscape unless the user requests it.
-  - Do not use dramatic cloud breaks, blazing sunsets, glittering water, or expressive impasto.
-  - Do not represent this as an official fixed school or a single artist's signature.
+- Do not add a shore, sailboat, mountain, or open landscape unless the user requests it.
+- Do not use dramatic cloud breaks, blazing sunsets, glittering water, or expressive impasto.
+- Do not represent this as an official fixed school or a single artist's signature.

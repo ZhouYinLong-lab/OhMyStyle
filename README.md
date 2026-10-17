@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[![风格包](https://img.shields.io/badge/风格包-400-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
+[![风格包](https://img.shields.io/badge/风格包-404-6C63FF)](style-packages/) [![继承预设](https://img.shields.io/badge/继承预设-110-5B8C5A)](styles/)
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
@@ -215,6 +215,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="100%" valign="top" align="center"><a href="style-packages/artists/utagawa-hiroshige/README.md"><img src="style-packages/artists/utagawa-hiroshige/gallery-16x9.jpg" width="230" alt="歌川广重代表图"></a><br><strong>歌川广重</strong><br><a href="style-packages/artists/utagawa-hiroshige/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/sofonisba-anguissola/README.md"><img src="style-packages/artists/sofonisba-anguissola/gallery-16x9.jpg" width="230" alt="索福尼斯巴·安圭索拉代表图"></a><br><strong>索福尼斯巴·安圭索拉</strong><br><a href="style-packages/artists/sofonisba-anguissola/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/berthe-morisot/README.md"><img src="style-packages/artists/berthe-morisot/gallery-16x9.jpg" width="230" alt="贝尔特·莫里索代表图"></a><br><strong>贝尔特·莫里索</strong><br><a href="style-packages/artists/berthe-morisot/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"></td>
+</tr>
 </table>
 
 ### 摄影师
@@ -374,6 +379,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <td width="50%" valign="top" align="center"><a href="style-packages/schools/academy-of-fine-arts-vienna/README.md"><img src="style-packages/schools/academy-of-fine-arts-vienna/gallery-16x9.jpg" width="230" alt="维也纳美术学院代表图"></a><br><strong>维也纳美术学院</strong><br><a href="style-packages/schools/academy-of-fine-arts-vienna/README.md">打开 README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/schools/royal-academy-schools/README.md"><img src="style-packages/schools/royal-academy-schools/gallery-16x9.jpg" width="230" alt="皇家美术学院学校代表图"></a><br><strong>皇家美术学院学校</strong><br><a href="style-packages/schools/royal-academy-schools/README.md">打开 README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/academie-julian/README.md"><img src="style-packages/schools/academie-julian/gallery-16x9.jpg" width="230" alt="朱利安学院代表图"></a><br><strong>朱利安学院</strong><br><a href="style-packages/schools/academie-julian/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"></td>
+<td width="33%" valign="top" align="center"></td>
+</tr>
 </table>
 
 ### 艺术流派与历史时期
@@ -522,6 +532,11 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 <tr>
 <td width="50%" valign="top" align="center"><a href="style-packages/movements/romanesque-art/README.md"><img src="style-packages/movements/romanesque-art/gallery-16x9.jpg" width="230" alt="罗马式艺术代表图"></a><br><strong>罗马式艺术</strong><br><a href="style-packages/movements/romanesque-art/README.md">打开 README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/movements/nihonga/README.md"><img src="style-packages/movements/nihonga/gallery-16x9.jpg" width="230" alt="日本画代表图"></a><br><strong>日本画</strong><br><a href="style-packages/movements/nihonga/README.md">打开 README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/american-luminism/README.md"><img src="style-packages/movements/american-luminism/gallery-16x9.jpg" width="230" alt="美国光主义代表图"></a><br><strong>美国光主义</strong><br><a href="style-packages/movements/american-luminism/README.md">打开 README</a></td>
+<td width="33%" valign="top" align="center"></td>
+<td width="33%" valign="top" align="center"></td>
 </tr>
 </table>
 

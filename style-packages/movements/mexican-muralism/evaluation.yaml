@@ -1,40 +1,51 @@
 profiles:
   generic:
     required:
-      - package-specific visual signature is observable
-      - composition remains coherent for a new subject
-      - no copied reference composition or branded material
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
     reject_if:
-      - style is represented only by a global color filter
-      - text, logo, watermark, or unintended signature is present
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
   portrait:
     required:
-      - faces and gestures remain structurally readable inside the broad contour system
-      - the subject is not replaced by an unrequested historical or political figure
+    - faces and gestures remain structurally readable inside the broad contour system
+    - the subject is not replaced by an unrequested historical or political figure
   still_life:
     required:
-      - objects are grouped into large readable masses rather than rendered as glossy product photography
-      - matte surface and contour hierarchy remain visible around each object
+    - objects are grouped into large readable masses rather than rendered as glossy product photography
+    - matte surface and contour hierarchy remain visible around each object
 minimum_score: 7
-
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Do not mark complete without outputs for at least two different subjects."
-
+    notes: Do not mark complete without outputs for at least two different subjects.
 subject_independence_suite:
   status: pending
   fixture: benchmarks/subject-independence.yaml
   required_subjects:
-    - ordinary-chair
-    - unspecified-building
-  evidence: "No generated result is implied by this template."
+  - ordinary-chair
+  - unspecified-building
+  evidence: No generated result is implied by this template.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/paul-gauguin
+    score: 0.827
+    signals:
+      color: 0.946
+      luminance: 0.959
+      texture: 0.996
+      layout: 0.997
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

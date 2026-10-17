@@ -215,6 +215,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="100%" valign="top" align="center"><a href="style-packages/artists/utagawa-hiroshige/README.md"><img src="style-packages/artists/utagawa-hiroshige/gallery-16x9.jpg" width="230" alt="Utagawa Hiroshige representative image"></a><br><strong>Utagawa Hiroshige</strong><br><a href="style-packages/artists/utagawa-hiroshige/README.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/sofonisba-anguissola/README.en.md"><img src="style-packages/artists/sofonisba-anguissola/gallery-16x9.jpg" width="230" alt="Sofonisba Anguissola representative image"></a><br><strong>Sofonisba Anguissola</strong><br><a href="style-packages/artists/sofonisba-anguissola/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"><a href="style-packages/artists/berthe-morisot/README.en.md"><img src="style-packages/artists/berthe-morisot/gallery-16x9.jpg" width="230" alt="Berthe Morisot representative image"></a><br><strong>Berthe Morisot</strong><br><a href="style-packages/artists/berthe-morisot/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"></td>
+</tr>
 </table>
 
 ### Photographers
@@ -374,6 +379,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <td width="50%" valign="top" align="center"><a href="style-packages/schools/academy-of-fine-arts-vienna/README.en.md"><img src="style-packages/schools/academy-of-fine-arts-vienna/gallery-16x9.jpg" width="230" alt="Academy of Fine Arts Vienna representative image"></a><br><strong>Academy of Fine Arts Vienna</strong><br><a href="style-packages/schools/academy-of-fine-arts-vienna/README.en.md">Open README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/schools/royal-academy-schools/README.md"><img src="style-packages/schools/royal-academy-schools/gallery-16x9.jpg" width="230" alt="Royal Academy Schools representative image"></a><br><strong>Royal Academy Schools</strong><br><a href="style-packages/schools/royal-academy-schools/README.md">Open README</a></td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/schools/academie-julian/README.en.md"><img src="style-packages/schools/academie-julian/gallery-16x9.jpg" width="230" alt="Académie Julian representative image"></a><br><strong>Académie Julian</strong><br><a href="style-packages/schools/academie-julian/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"></td>
+<td width="33%" valign="top" align="center"></td>
+</tr>
 </table>
 
 ### Movements and periods
@@ -522,6 +532,11 @@ The main gallery lists independent style packages only. Every card uses a horizo
 <tr>
 <td width="50%" valign="top" align="center"><a href="style-packages/movements/romanesque-art/README.md"><img src="style-packages/movements/romanesque-art/gallery-16x9.jpg" width="230" alt="Romanesque Art representative image"></a><br><strong>Romanesque Art</strong><br><a href="style-packages/movements/romanesque-art/README.md">Open README</a></td>
 <td width="50%" valign="top" align="center"><a href="style-packages/movements/nihonga/README.md"><img src="style-packages/movements/nihonga/gallery-16x9.jpg" width="230" alt="Nihonga representative image"></a><br><strong>Nihonga</strong><br><a href="style-packages/movements/nihonga/README.md">Open README</a></td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center"><a href="style-packages/movements/american-luminism/README.en.md"><img src="style-packages/movements/american-luminism/gallery-16x9.jpg" width="230" alt="American Luminism representative image"></a><br><strong>American Luminism</strong><br><a href="style-packages/movements/american-luminism/README.en.md">Open README</a></td>
+<td width="33%" valign="top" align="center"></td>
+<td width="33%" valign="top" align="center"></td>
 </tr>
 </table>
 

@@ -1,15 +1,13 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 丝网印刷、硬边平涂、重复和商业图像语法；日常商品、广告式裁切和重复图像形成平面冲击；正红、亮黄、宝蓝、黑和纸白形成高纯度印刷色组。
 avoid_overlap: []

@@ -1,15 +1,13 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 精确绘画或摄影式图像，边缘和细节高度可控；照片式裁切和日常对象被精确还原，画面冷静而无戏剧性；中性灰、真实肤色、车漆色和玻璃反光组成观察性色组。
 avoid_overlap: []

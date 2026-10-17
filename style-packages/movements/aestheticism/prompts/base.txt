@@ -1,3 +1,8 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.
+
 SUBJECT INDEPENDENCE: Generate the user-supplied {SUBJECT} in {LOCATION}; do not add a recurring object, room, pattern, landmark, or historical motif from the style package.
 
 Create a new image of {SUBJECT} in {LOCATION} as an integrated decorative environment. Coordinate the subject, surrounding field, silhouette, pattern scale, negative space, and material response so they feel designed together. Use a harmonized palette of muted mineral or botanical tones with one rich accent. Let soft, even light reveal tactile surfaces and keep object and pattern layers distinct.

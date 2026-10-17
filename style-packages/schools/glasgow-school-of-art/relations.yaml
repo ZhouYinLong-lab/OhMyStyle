@@ -6,12 +6,12 @@ distinguish_from:
 - uncontrolled global color filter
 combination:
   recommended_mode: stack
-  notes: If combined with another package, assign separate responsibilities explicitly
-    rather than concatenating names.
-
+  notes: If combined with another package, assign separate responsibilities explicitly rather than concatenating
+    names.
 family: design-school
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 以建筑线性结构、装饰性自然形态和工艺细节共同组织视觉空间，强调结构与装饰之间的张力。
 avoid_overlap: []

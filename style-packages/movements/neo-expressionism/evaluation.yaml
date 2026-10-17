@@ -1,40 +1,51 @@
 profiles:
   generic:
     required:
-      - package-specific visual signature is observable
-      - composition remains coherent for a new subject
-      - no copied reference composition or branded material
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - no copied reference composition or branded material
     reject_if:
-      - style is represented only by a global color filter
-      - text, logo, watermark, or unintended signature is present
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
   portrait:
     required:
-      - anatomy remains readable beneath controlled distortion
-      - dark contour and worked surface are observable
+    - anatomy remains readable beneath controlled distortion
+    - dark contour and worked surface are observable
   still_life:
     required:
-      - object structure survives expressive marks
-      - color blocks are tied to form rather than a global filter
+    - object structure survives expressive marks
+    - color blocks are tied to form rather than a global filter
 minimum_score: 7
-
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml."
+    notes: Run at least two neutral-subject tasks from benchmarks/subject-independence.yaml.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Do not mark complete without outputs for at least two different subjects."
-
+    notes: Do not mark complete without outputs for at least two different subjects.
 subject_independence_suite:
   status: pending
   fixture: benchmarks/subject-independence.yaml
   required_subjects:
-    - ordinary-chair
-    - unspecified-building
-  evidence: "No generated result is implied by this template."
+  - ordinary-chair
+  - unspecified-building
+  evidence: No generated result is implied by this template.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: movements/futurism
+    score: 0.844
+    signals:
+      color: 0.89
+      luminance: 0.969
+      texture: 0.994
+      layout: 0.966
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

@@ -1,15 +1,13 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 精细线描、扭曲比例与人工化色彩；修长人体、复杂扭转和非自然空间让人物关系产生紧张感；酸黄、冷粉、青绿、灰紫和象牙白形成不稳定对比。
 avoid_overlap: []

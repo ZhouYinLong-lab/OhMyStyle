@@ -1,28 +1,52 @@
 suite: visual-style-core-v1
 dimensions:
-  style_recognition: Can a reviewer identify the declared medium/process/educational
-    signature without relying on the package name?
+  style_recognition: Can a reviewer identify the declared medium/process/educational signature without relying on the package
+    name?
   object_completion: Are the requested subjects and objects complete and coherent?
   prompt_adherence: Are the user constraints followed without adding unrequested elements?
   color_adherence: Are palette roles preserved with controlled variation?
   material_correctness: Do surfaces show believable material evidence?
   composition_stability: Does hierarchy survive subject changes and aspect-ratio changes?
-  ai_artifacts: Are generic gloss, repetition, malformed edges, and synthetic clutter
-    controlled?
-  cross_model_stability: Does the signature remain visible across more than one model
-    or workflow?
-pass_rule: Score each dimension from 0 to 5; investigate any dimension below 3 before
-  publishing a package example.
+  ai_artifacts: Are generic gloss, repetition, malformed edges, and synthetic clutter controlled?
+  cross_model_stability: Does the signature remain visible across more than one model or workflow?
+pass_rule: Score each dimension from 0 to 5; investigate any dimension below 3 before publishing a package example.
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/claude-monet
+    score: 0.829
+    signals:
+      color: 0.884
+      luminance: 0.982
+      texture: 0.962
+      layout: 0.958
+  - package: movements/deconstructivist-architecture
+    score: 0.826
+    signals:
+      color: 0.888
+      luminance: 0.911
+      texture: 0.987
+      layout: 0.957
+  - package: movements/minimalism
+    score: 0.82
+    signals:
+      color: 0.907
+      luminance: 0.951
+      texture: 0.957
+      layout: 0.968
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

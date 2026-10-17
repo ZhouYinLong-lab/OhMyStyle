@@ -1,21 +1,22 @@
 related_movements:
-  - neo_impressionism
-  - pointillism
+- neo_impressionism
+- pointillism
 related_concepts:
-  - optical_mixing
-  - measured_social_rhythm
-  - color_unit
+- optical_mixing
+- measured_social_rhythm
+- color_unit
 influences_to_review:
-  - impressionist_light
-  - scientific_color_theory
+- impressionist_light
+- scientific_color_theory
 not_equivalent_to:
-  - random_dot_texture
-  - pixel_art
-  - copied_grande_jatte
-
+- random_dot_texture
+- pixel_art
+- copied_grande_jatte
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A Neo-Impressionist painting profile built from disciplined optical color units, stable silhouettes, measured park-like
+  space, and calm repeated social poses.
 avoid_overlap: []

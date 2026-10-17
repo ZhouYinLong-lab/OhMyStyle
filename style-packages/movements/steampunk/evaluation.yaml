@@ -1,31 +1,44 @@
 profiles:
   generic:
     required:
-      - package-specific visual signature is observable
-      - composition remains coherent for a new subject
-      - user-supplied subject and object count are preserved
-      - no copied reference composition or branded material
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - user-supplied subject and object count are preserved
+    - no copied reference composition or branded material
     reject_if:
-      - style is represented only by a global color filter
-      - text, logo, watermark, or unintended signature is present
-      - an unrequested recurring object, location, character, or narrative motif is added
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
+    - an unrequested recurring object, location, character, or narrative motif is added
   portrait:
     required:
-      - requested subject remains recognizable and naturally posed
+    - requested subject remains recognizable and naturally posed
   still_life:
     required:
-      - requested objects remain count-accurate and physically distinct
+    - requested objects remain count-accurate and physically distinct
 minimum_score: 7
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: movements/victorian
+    score: 0.843
+    signals:
+      color: 0.974
+      luminance: 0.981
+      texture: 0.986
+      layout: 0.992
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

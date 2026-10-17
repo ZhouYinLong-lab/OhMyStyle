@@ -1,33 +1,46 @@
 package_id: johannes-vermeer
 package_version: 0.1.0
 invariants:
-  - id: signature_primary
-    weight: 3
-    test: The output demonstrates the package's primary observable structural behavior.
-  - id: medium_consistency
-    weight: 2
-    test: Surface, light, and detail behavior remain consistent with the stated medium.
-  - id: original_arrangement
-    weight: 3
-    test: The subject and composition are not a recognizable reconstruction.
-  - id: no_generic_filter
-    weight: 2
-    test: The result is not explained by a global filter alone.
+- id: signature_primary
+  weight: 3
+  test: The output demonstrates the package's primary observable structural behavior.
+- id: medium_consistency
+  weight: 2
+  test: Surface, light, and detail behavior remain consistent with the stated medium.
+- id: original_arrangement
+  weight: 3
+  test: The subject and composition are not a recognizable reconstruction.
+- id: no_generic_filter
+  weight: 2
+  test: The result is not explained by a global filter alone.
 rejections:
-  - copied_named_work
-  - generic_style_filter
-  - contradictory_medium_behavior
+- copied_named_work
+- generic_style_filter
+- contradictory_medium_behavior
 minimum_score: 8
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/leonardo-da-vinci
+    score: 0.857
+    signals:
+      color: 0.974
+      luminance: 0.965
+      texture: 0.987
+      layout: 0.999
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

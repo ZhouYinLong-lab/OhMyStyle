@@ -1,21 +1,22 @@
 related_movements:
-  - post_impressionism
-  - neo_impressionism_context
+- post_impressionism
+- neo_impressionism_context
 related_concepts:
-  - expressive_brushwork
-  - complementary_color
-  - painted_motion
+- expressive_brushwork
+- complementary_color
+- painted_motion
 influences_to_review:
-  - japanese_woodblock_composition
-  - impressionist_color_observation
+- japanese_woodblock_composition
+- impressionist_color_observation
 not_equivalent_to:
-  - generic_swirl_effect
-  - random_impasto_texture
-  - saturated_cinematic_grade
-
+- generic_swirl_effect
+- random_impasto_texture
+- saturated_cinematic_grade
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A post-impressionist painting profile built from observed directional strokes, high-chroma complementary color, thick material
+  paint, and expressive motion in sky, vegetation, and ground without copying a named composition.
 avoid_overlap: []

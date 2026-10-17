@@ -1,20 +1,21 @@
 related_periods:
-  - proto-geometric pottery
-  - greek-archaic-period
+- proto-geometric pottery
+- greek-archaic-period
 related_systems:
-  - vase painting
-  - funerary monument
-  - ornamental pattern
+- vase painting
+- funerary monument
+- ornamental pattern
 not_equivalent_to:
-  - generic geometric design
-  - modern vector pattern
-  - black-and-white minimalism
+- generic geometric design
+- modern vector pattern
+- black-and-white minimalism
 transition_notes:
-  - later figure painting keeps ordered storytelling but increases naturalistic anatomy
-
+- later figure painting keeps ordered storytelling but increases naturalistic anatomy
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- An early Greek visual system built from ordered registers, angular bodies, repeated signs, funerary procession, and a tightly
+  controlled terracotta, black, and cream material language.
 avoid_overlap: []

@@ -1,15 +1,13 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 蛋彩画式平面色层与精细线描；优雅的线性轮廓、平衡的神话人物群组和轻盈的风向线组织平面叙事；淡蓝、贝壳粉、草绿、金发黄与乳白形成清澈的早期文艺复兴色组。
 avoid_overlap: []

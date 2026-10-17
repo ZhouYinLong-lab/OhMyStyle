@@ -18,13 +18,75 @@ minimum_score: 8
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/anna-ancher
+    score: 0.853
+    signals:
+      color: 0.898
+      luminance: 0.944
+      texture: 0.966
+      layout: 0.943
+  - package: movements/neo-expressionism
+    score: 0.844
+    signals:
+      color: 0.89
+      luminance: 0.969
+      texture: 0.994
+      layout: 0.966
+  - package: movements/pictorialism
+    score: 0.827
+    signals:
+      color: 0.827
+      luminance: 0.897
+      texture: 0.957
+      layout: 0.886
+  - package: movements/neoclassicism
+    score: 0.827
+    signals:
+      color: 0.827
+      luminance: 0.995
+      texture: 0.979
+      layout: 0.94
+  - package: schools/yale-school-of-art
+    score: 0.827
+    signals:
+      color: 0.87
+      luminance: 0.973
+      texture: 0.971
+      layout: 0.949
+  - package: artists/jean-auguste-dominique-ingres
+    score: 0.826
+    signals:
+      color: 0.916
+      luminance: 0.978
+      texture: 0.963
+      layout: 0.972
+  - package: schools/black-mountain-college
+    score: 0.826
+    signals:
+      color: 0.829
+      luminance: 0.963
+      texture: 0.985
+      layout: 0.932
+  - package: artists/titian
+    score: 0.823
+    signals:
+      color: 0.816
+      luminance: 0.889
+      texture: 0.95
+      layout: 0.991
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

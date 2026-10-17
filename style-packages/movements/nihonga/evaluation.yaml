@@ -35,3 +35,16 @@ subject_independence_suite:
   - ordinary-chair
   - unspecified-building
   evidence: Representative image is an anonymous demo, not a default subject requirement.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/wassily-kandinsky
+    score: 0.835
+    signals:
+      color: 0.85
+      luminance: 0.912
+      texture: 0.949
+      layout: 0.993
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

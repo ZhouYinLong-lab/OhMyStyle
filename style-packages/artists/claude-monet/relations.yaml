@@ -1,11 +1,22 @@
-related_movements: [impressionism, plein_air_painting]
-related_concepts: [transient_light, optical_color, serial_observation]
-influences_to_review: [realist_landscape, japanese_print_composition]
-not_equivalent_to: [generic_pastel_filter, airbrush_softness, thick_impasto_expressionism]
-
+related_movements:
+- impressionism
+- plein_air_painting
+related_concepts:
+- transient_light
+- optical_color
+- serial_observation
+influences_to_review:
+- realist_landscape
+- japanese_print_composition
+not_equivalent_to:
+- generic_pastel_filter
+- airbrush_softness
+- thick_impasto_expressionism
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A reference-backed landscape painting profile focused on transient light, atmospheric color, broken
+  touches, and the changing appearance of ordinary motifs rather than heavy contour or expressive impasto.
 avoid_overlap: []

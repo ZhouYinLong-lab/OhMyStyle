@@ -35,3 +35,30 @@ subject_independence_suite:
   - ordinary-chair
   - unspecified-building
   evidence: Representative image is an anonymous demo, not a default subject requirement.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: movements/victorian
+    score: 0.833
+    signals:
+      color: 0.993
+      luminance: 0.956
+      texture: 0.974
+      layout: 0.985
+  - package: artists/francisco-goya
+    score: 0.826
+    signals:
+      color: 0.977
+      luminance: 0.957
+      texture: 0.996
+      layout: 0.943
+  - package: schools/yale-school-of-art
+    score: 0.824
+    signals:
+      perceptual_hash: 0.781
+      color: 0.836
+      texture: 0.975
+      layout: 0.89
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

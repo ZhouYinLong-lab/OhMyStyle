@@ -1,33 +1,75 @@
 package_id: jmw-turner
 package_version: 0.1.0
 invariants:
-  - id: atmospheric_depth
-    weight: 3
-    test: Distant forms lose contrast and edge certainty through layered air.
-  - id: diagonal_movement
-    weight: 2
-    test: A readable diagonal vector organizes the scene.
-  - id: luminous_weather
-    weight: 3
-    test: Warm light and cool atmosphere interact through paint, not digital glow.
-  - id: original_arrangement
-    weight: 3
-    test: Subject and composition are not a recognizable reconstruction.
+- id: atmospheric_depth
+  weight: 3
+  test: Distant forms lose contrast and edge certainty through layered air.
+- id: diagonal_movement
+  weight: 2
+  test: A readable diagonal vector organizes the scene.
+- id: luminous_weather
+  weight: 3
+  test: Warm light and cool atmosphere interact through paint, not digital glow.
+- id: original_arrangement
+  weight: 3
+  test: Subject and composition are not a recognizable reconstruction.
 rejections:
-  - generic_fog_filter
-  - neon_bloom
-  - copied_named_work
+- generic_fog_filter
+- neon_bloom
+- copied_named_work
 minimum_score: 8
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: schools/design-academy-eindhoven
+    score: 0.862
+    signals:
+      color: 0.946
+      luminance: 0.954
+      texture: 0.958
+      layout: 0.973
+  - package: movements/american-luminism
+    score: 0.844
+    signals:
+      color: 0.821
+      luminance: 0.948
+      texture: 0.996
+      layout: 0.978
+  - package: schools/royal-danish-academy
+    score: 0.834
+    signals:
+      color: 0.945
+      luminance: 0.989
+      texture: 0.967
+      layout: 0.863
+  - package: movements/romanticism
+    score: 0.834
+    signals:
+      perceptual_hash: 0.781
+      color: 0.795
+      luminance: 0.912
+      texture: 0.991
+      layout: 0.935
+  - package: movements/japandi
+    score: 0.83
+    signals:
+      color: 0.828
+      luminance: 0.973
+      texture: 0.958
+      layout: 0.957
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

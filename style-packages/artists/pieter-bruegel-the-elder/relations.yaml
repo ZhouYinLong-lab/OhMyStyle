@@ -2,12 +2,12 @@ related_packages: []
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- Independent Pieter Bruegel the Elder style package focused on 高视点全景、微小群像、季节劳动与乡土地景; it requires new
+  subjects and arrangements.
 avoid_overlap: []

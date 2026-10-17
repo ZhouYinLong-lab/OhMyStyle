@@ -1,15 +1,14 @@
 related_packages: []
-contrast_note: Compare medium, composition, lighting, palette, surface, and texture
-  before crossing this package with another.
+contrast_note: Compare medium, composition, lighting, palette, surface, and texture before crossing this
+  package with another.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by
-    this package identity.
-
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 干涩线描、扭曲人体和稀疏水彩色块；人物或物体以扭曲姿态、尖锐负形和不稳定边缘占据空白纸面；骨白、砖红、暗绿、烟灰和黑线形成裸露而克制的色组。
 avoid_overlap: []

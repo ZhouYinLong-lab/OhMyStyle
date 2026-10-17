@@ -1,31 +1,81 @@
 invariants:
-  - id: window_light_is_structural
-    weight: 3
-    test: The main light direction is legible and shapes the composition.
-  - id: domestic_scale
-    weight: 2
-    test: The setting feels like an ordinary interior rather than a stage.
-  - id: restrained_color
-    weight: 2
-    test: Muted color relationships carry the image without neon saturation.
-  - id: simplified_planes
-    weight: 2
-    test: Secondary objects are simplified into readable planes and edges.
+- id: window_light_is_structural
+  weight: 3
+  test: The main light direction is legible and shapes the composition.
+- id: domestic_scale
+  weight: 2
+  test: The setting feels like an ordinary interior rather than a stage.
+- id: restrained_color
+  weight: 2
+  test: Muted color relationships carry the image without neon saturation.
+- id: simplified_planes
+  weight: 2
+  test: Secondary objects are simplified into readable planes and edges.
 rejections:
-  - spotlight_or_rim_light
-  - glossy_digital_finish
-  - copied_composition
+- spotlight_or_rim_light
+- glossy_digital_finish
+- copied_composition
 minimum_score: 7
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: movements/pictorialism
+    score: 0.926
+    signals:
+      perceptual_hash: 0.883
+      color: 0.961
+      luminance: 0.953
+      texture: 0.991
+      layout: 0.942
+  - package: artists/titian
+    score: 0.863
+    signals:
+      perceptual_hash: 0.883
+      luminance: 0.833
+      texture: 0.985
+      layout: 0.934
+  - package: movements/romanticism
+    score: 0.855
+    signals:
+      color: 0.888
+      luminance: 0.961
+      texture: 0.988
+      layout: 0.973
+  - package: movements/futurism
+    score: 0.853
+    signals:
+      color: 0.898
+      luminance: 0.944
+      texture: 0.966
+      layout: 0.943
+  - package: movements/lyrical-abstraction
+    score: 0.843
+    signals:
+      perceptual_hash: 0.781
+      color: 0.808
+      luminance: 0.993
+      texture: 0.986
+      layout: 0.917
+  - package: schools/black-mountain-college
+    score: 0.823
+    signals:
+      color: 0.953
+      luminance: 0.981
+      texture: 0.951
+      layout: 0.875
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

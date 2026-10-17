@@ -1,31 +1,57 @@
 profiles:
   generic:
     required:
-      - package-specific visual signature is observable
-      - composition remains coherent for a new subject
-      - user-supplied subject and object count are preserved
-      - no copied reference composition or branded material
+    - package-specific visual signature is observable
+    - composition remains coherent for a new subject
+    - user-supplied subject and object count are preserved
+    - no copied reference composition or branded material
     reject_if:
-      - style is represented only by a global color filter
-      - text, logo, watermark, or unintended signature is present
-      - an unrequested recurring object, location, character, or narrative motif is added
+    - style is represented only by a global color filter
+    - text, logo, watermark, or unintended signature is present
+    - an unrequested recurring object, location, character, or narrative motif is added
   portrait:
     required:
-      - requested subject remains recognizable and naturally posed
+    - requested subject remains recognizable and naturally posed
   still_life:
     required:
-      - requested objects remain count-accurate and physically distinct
+    - requested objects remain count-accurate and physically distinct
 minimum_score: 7
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: schools/new-bauhaus
+    score: 0.838
+    signals:
+      perceptual_hash: 0.809
+      color: 0.936
+      texture: 0.986
+  - package: movements/chinese-literati-ink-painting
+    score: 0.825
+    signals:
+      color: 0.991
+      luminance: 0.948
+      texture: 0.988
+      layout: 0.915
+  - package: movements/suprematism
+    score: 0.821
+    signals:
+      color: 0.978
+      luminance: 0.913
+      texture: 0.968
+      layout: 0.792
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

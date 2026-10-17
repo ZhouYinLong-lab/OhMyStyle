@@ -18,13 +18,40 @@ minimum_score: 8
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/johannes-vermeer
+    score: 0.857
+    signals:
+      color: 0.974
+      luminance: 0.965
+      texture: 0.987
+      layout: 0.999
+  - package: schools/yale-school-of-art
+    score: 0.828
+    signals:
+      color: 0.879
+      luminance: 0.948
+      texture: 0.988
+      layout: 0.873
+  - package: artists/jean-auguste-dominique-ingres
+    score: 0.823
+    signals:
+      color: 0.909
+      luminance: 0.952
+      texture: 0.997
+      layout: 0.951
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

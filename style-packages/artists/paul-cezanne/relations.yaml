@@ -1,21 +1,22 @@
 related_movements:
-  - post_impressionism
-  - constructive_modernism
+- post_impressionism
+- constructive_modernism
 related_concepts:
-  - form_through_color
-  - multiple_viewpoint_tension
-  - still_life_as_architecture
+- form_through_color
+- multiple_viewpoint_tension
+- still_life_as_architecture
 influences_to_review:
-  - provence_landscape
-  - dutch_and_french_still_life
+- provence_landscape
+- dutch_and_french_still_life
 not_equivalent_to:
-  - random_brush_texture
-  - cubist_fragmentation
-  - generic_impasto_filter
-
+- random_brush_texture
+- cubist_fragmentation
+- generic_impasto_filter
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A painting profile built from constructive color planes, compressed perspective, repeated directional brush marks, and objects
+  that remain solid while viewpoints subtly disagree.
 avoid_overlap: []

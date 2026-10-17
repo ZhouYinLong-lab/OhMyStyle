@@ -2,12 +2,12 @@ related_movements: []
 related_concepts: []
 influences_to_review: []
 not_equivalent_to:
-  - generic color filter
-  - subject-specific composition
-
+- generic color filter
+- subject-specific composition
 family: historical-movement
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- 以几何形体、明亮撞色、装饰性图案和不对称组合打破严肃功能主义，形成 playful 的平面空间。
 avoid_overlap: []

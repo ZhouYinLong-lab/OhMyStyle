@@ -1,22 +1,23 @@
 related_movements:
-  - abstract_art
-  - bauhaus
-  - expressionism
+- abstract_art
+- bauhaus
+- expressionism
 related_concepts:
-  - synesthetic_composition
-  - geometric_lyricism
-  - color_weight
+- synesthetic_composition
+- geometric_lyricism
+- color_weight
 influences_to_review:
-  - music_and_rhythm
-  - folk_and_spiritual_abstraction
+- music_and_rhythm
+- folk_and_spiritual_abstraction
 not_equivalent_to:
-  - random_shapes
-  - corporate_vector_art
-  - copied_composition_viii
-
+- random_shapes
+- corporate_vector_art
+- copied_composition_viii
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- An abstract painting profile built from geometric and lyrical marks, measured color tensions, layered
+  planes, and compositional balance without narrative illustration.
 avoid_overlap: []

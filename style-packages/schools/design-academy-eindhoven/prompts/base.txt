@@ -1,3 +1,8 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.
+
 SUBJECT INDEPENDENCE: Generate the user-supplied {SUBJECT} in {LOCATION}; do not add a recurring product type, exhibition hall, furniture item, sustainability symbol, or institutional motif from the style package.
 
 Create a new image of {SUBJECT} in {LOCATION} as a critical material-design study. Present the supplied subject as a research situation rather than a polished advertisement. Make the material, construction, scale, use, and consequence legible. Use an open documentary layout and clear workshop or exhibition light. Raw, recycled, crafted, or provisional surfaces may remain visible when they belong to the supplied subject. Prefer material neutrals with one purposeful accent.

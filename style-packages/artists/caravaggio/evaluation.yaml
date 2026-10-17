@@ -18,31 +18,83 @@ minimum_score: 8
 image_audit:
   similarity_level: high
   visual_overlap:
-    - dramatic directional light
-    - dark field with isolated highlights
+  - dramatic directional light
+  - dark field with isolated highlights
   reason: Caravaggio, Rembrandt, Tenebrism, and deep-shadow presets share strong chiaroscuro signals.
   keep_separate_because:
-    - this package is an artist-derived treatment with naturalistic human drama and tactile bodies
-    - it must not force biblical, tavern, or figure subjects
-    - artist-specific spatial and skin-light decisions differ from a generic lighting preset
+  - this package is an artist-derived treatment with naturalistic human drama and tactile bodies
+  - it must not force biblical, tavern, or figure subjects
+  - artist-specific spatial and skin-light decisions differ from a generic lighting preset
   action: clarify_distinctive_signature
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: artists/titian
+    score: 0.856
+    signals:
+      perceptual_hash: 0.781
+      color: 0.877
+      luminance: 0.938
+      texture: 0.98
+      layout: 0.931
+  - package: artists/leonora-carrington
+    score: 0.839
+    signals:
+      color: 0.943
+      luminance: 0.915
+      texture: 0.987
+      layout: 0.984
+  - package: movements/northern-renaissance
+    score: 0.839
+    signals:
+      color: 0.978
+      luminance: 0.879
+      texture: 0.985
+      layout: 0.986
+  - package: movements/synthwave
+    score: 0.838
+    signals:
+      color: 0.926
+      luminance: 0.914
+      texture: 0.956
+      layout: 0.998
+  - package: artists/francisco-de-zurbaran
+    score: 0.833
+    signals:
+      color: 0.997
+      luminance: 0.957
+      texture: 0.978
+      layout: 0.987
+  - package: artists/sofonisba-anguissola
+    score: 0.828
+    signals:
+      color: 0.993
+      luminance: 0.93
+      texture: 0.997
+      layout: 0.953
+  - package: movements/magic-realism
+    score: 0.821
+    signals:
+      color: 0.927
+      luminance: 0.874
+      texture: 0.991
+      layout: 0.99
 subject_independence_suite:
   status: pending
   fixture: benchmarks/subject-independence.yaml
   required_subjects:
-    - ordinary-chair
-    - unspecified-building
-  evidence: "No provider-backed result is claimed until a real image run is recorded."
+  - ordinary-chair
+  - unspecified-building
+  evidence: No provider-backed result is claimed until a real image run is recorded.
 semantic_evaluation:
   subject_independence:
     score: null
-    notes: "Pending provider-backed neutral-subject review."
+    notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: Record which visual decisions remain observable after the subject changes.
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: Compare the representative image and output with near-duplicate packages.
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: Run at least two different subjects before assigning a score.

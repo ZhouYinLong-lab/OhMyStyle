@@ -35,3 +35,30 @@ subject_independence_suite:
   - ordinary-chair
   - unspecified-building
   evidence: Representative image is an anonymous demo, not a default subject requirement.
+image_audit:
+  similarity_level: review
+  method: perceptual hash, color histogram, luminance, texture, and layout; screening only
+  candidate_pairs:
+  - package: movements/romanticism
+    score: 0.854
+    signals:
+      color: 0.873
+      luminance: 0.967
+      texture: 0.999
+      layout: 0.924
+  - package: schools/design-academy-eindhoven
+    score: 0.836
+    signals:
+      color: 0.95
+      luminance: 0.991
+      texture: 0.968
+      layout: 0.984
+  - package: movements/impressionism
+    score: 0.833
+    signals:
+      color: 0.948
+      luminance: 0.942
+      texture: 0.998
+      layout: 0.927
+  reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
+  action: preserve-distinctive-signature-and-recheck-gallery

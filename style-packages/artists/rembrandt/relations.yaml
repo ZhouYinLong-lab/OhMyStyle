@@ -1,11 +1,22 @@
-related_movements: [dutch_baroque, baroque_painting]
-related_concepts: [chiaroscuro, psychological_portrait, material_paint]
-influences_to_review: [caravaggist_light, dutch_golden_age]
-not_equivalent_to: [sepia_filter, black_background_portrait, generic_cinematic_chiaroscuro]
-
+related_movements:
+- dutch_baroque
+- baroque_painting
+related_concepts:
+- chiaroscuro
+- psychological_portrait
+- material_paint
+influences_to_review:
+- caravaggist_light
+- dutch_golden_age
+not_equivalent_to:
+- sepia_filter
+- black_background_portrait
+- generic_cinematic_chiaroscuro
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A reference-backed baroque painting profile focused on directional light, psychological presence, warm dark grounds, layered
+  flesh and cloth, and selective tactile paint rather than a generic brown filter.
 avoid_overlap: []

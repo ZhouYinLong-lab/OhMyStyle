@@ -1,19 +1,20 @@
 related_movements:
-  - skagen_art_colony
-  - nordic_realism
+- skagen_art_colony
+- nordic_realism
 related_concepts:
-  - painting_light
-  - domestic_interior
-  - color_sensation
+- painting_light
+- domestic_interior
+- color_sensation
 influences_to_review:
-  - impressionist_light_observation
+- impressionist_light_observation
 not_equivalent_to:
-  - generic_impressionist_filter
-  - photorealistic_interior_render
-
+- generic_impressionist_filter
+- photorealistic_interior_render
 family: source-artist
 near_duplicates: []
 supersedes: []
 conflicts: []
-distinctives: []
+distinctives:
+- A northern interior-painting profile centered on changing daylight, quiet domestic tasks, simplified
+  forms, and color relationships that make light the subject rather than a decorative effect.
 avoid_overlap: []
