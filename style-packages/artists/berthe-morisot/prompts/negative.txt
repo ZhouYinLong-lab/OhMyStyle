@@ -1,0 +1,7 @@
+- copied named artwork, sitter, or recognizable source composition
+- added recurring subjects, period costumes, garden, interior, or narrative not requested by the user
+- global pastel tint, uniform blur, airbrush smoothness, or photographic realism
+- hard black contours, theatrical chiaroscuro, muddy shadows, or uniformly sharp edges
+- evenly distributed tiny strokes or a repeated digital canvas overlay
+- unreadable subject, malformed anatomy, broken geometry, or incoherent light direction
+- extra text, signature, logo, frame, watermark, or unrelated objects

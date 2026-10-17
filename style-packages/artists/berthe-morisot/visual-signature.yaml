@@ -1,0 +1,23 @@
+composition:
+  - Use an open, slightly asymmetrical arrangement with room for air around the main forms.
+  - Let a figure, object, or landscape merge selectively with its surroundings; avoid a rigid silhouette cutout.
+  - Crop naturally at the frame when useful, without forcing a centered portrait layout.
+palette:
+  - Build from luminous whites, ivory, pale blue, blue-green, soft greens, and warm rose or ochre accents.
+  - Place color in broken touches and neighboring strokes rather than applying one global pastel wash.
+  - Preserve a few saturated notes as local accents while keeping the overall value range light.
+medium:
+  - Suggest oil paint on a lightly textured canvas with visible, varied brush direction.
+  - Use broad, quick strokes for clothing, foliage, water, and background masses; reserve finer marks for selective structural cues.
+lighting:
+  - Use changing natural daylight with bright reflected light and soft, colored shadows.
+  - Keep shadow transitions open and chromatic; avoid blackened shadow masses and hard theatrical contrast.
+surface:
+  - Allow the ground or underpainting to show through in sparse passages.
+  - Let edges vary from briefly defined to visibly unfinished, while retaining enough structure to read the requested subject.
+texture:
+  - Use lively, directional, non-uniform brush marks; do not simulate a uniform digital canvas overlay.
+invariants:
+  - Luminous values, broken brushwork, and softened transitions remain visible across different subjects.
+  - The scene stays freshly composed and follows the user's requested content.
+  - Detail is selective: forms emerge through color relationships rather than complete contouring.

@@ -83,6 +83,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: berthe-morisot
+  name: 贝尔特·莫里索
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/berthe-morisot
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 3
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: bridget-riley
   name: 布里奇特·莱利
   kind: artist

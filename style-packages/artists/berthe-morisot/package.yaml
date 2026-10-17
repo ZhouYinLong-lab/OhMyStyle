@@ -1,0 +1,32 @@
+id: berthe-morisot
+name: 贝尔特·莫里索
+kind: artist
+domain: painting
+version: 0.1.0
+summary: 以高明度色调、迅疾松动的笔触、开放的边缘和流动日光组织画面，让人物与环境在轻盈的色块中相互渗透。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: painting
+  historical_context: "1841_to_1895"
+  application: general
+  visual_axes:
+    - composition
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

@@ -1,0 +1,26 @@
+canonical_name: 贝尔特·莫里索
+entity_type: artist_impressionist_painting
+origin: french_impressionist_painting
+period: 1841_to_1895
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: User-supplied subjects and settings are authoritative; example motifs are optional and never become defaults.
+  use_cases:
+    - expressive_portrait
+    - airy_landscape
+    - intimate_interior
+    - light_filled_editorial_illustration
+  exclusions:
+    - copied_named_composition
+    - sharply_outlined_forms
+    - uniform_pastel_filter
+    - photorealistic_surface
+sources:
+  - https://www.metmuseum.org/art/collection/search/437159
+  - https://www.metmuseum.org/art/collection/search/438009
+  - https://www.nga.gov/artists/1733-berthe-morisot
+rendering:
+  model: Luminous, open-brush oil painting with shifting daylight and softened contours.
+  scene_logic: New subject and arrangement; preserve observable painting decisions only.
+  output_behavior: Keep the user subject legible while allowing selected edges and background forms to dissolve into brushwork.

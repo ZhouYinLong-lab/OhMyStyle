@@ -1,0 +1,9 @@
+asset: anonymous-v1.png
+status: pending_human_review
+generator: OpenAI built-in image generation
+prompt_mode: anonymous_visual_signature
+subject: An invented garden edge and a small indistinct seated figure, used only as a neutral style demonstration
+aspect_ratio: 16:9
+dimensions: 1672x941
+generated_at: '2026-10-17'
+review_note: New generated scene; not a source artwork. Keep in generated until a human reviewer approves it.

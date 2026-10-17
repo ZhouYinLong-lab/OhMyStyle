@@ -1,0 +1,15 @@
+family: source-artist
+near_duplicates:
+  - claude-monet
+  - edgar-degas
+  - mary-cassatt
+  - pierre-auguste-renoir
+supersedes: []
+conflicts: []
+distinctives:
+  - Maintains open, unfinished passages and softened contours while keeping a portrait or environment readable.
+  - Uses a light-led, chromatically varied palette with broken strokes across both subject and setting.
+avoid_overlap:
+  - Do not turn the style into Monet-like atmospheric landscape abstraction; preserve a readable user-supplied subject.
+  - Do not rely on Degas-like stage, rehearsal, or strong diagonal cropping as a default composition.
+  - Do not impose Cassatt-like domestic portrait subjects or Renoir-like polished flesh rendering.

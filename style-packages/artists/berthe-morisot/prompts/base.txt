@@ -1,0 +1,13 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.
+
+Render a newly composed image using these observable decisions:
+- Open, slightly asymmetrical composition with breathable space and selective cropping.
+- Oil-paint-like, broken brushwork with varied stroke size and direction; broad marks establish light and shadow, smaller marks clarify only essential structure.
+- Luminous high-key values with role-based ivory, soft white, pale blue, blue-green, and gentle green; introduce restrained rose or ochre accents where useful.
+- Natural daylight with colored, soft-edged shadows and visible reflected light.
+- Let some contours dissolve into the setting and leave a few passages open or lightly unfinished, while keeping the requested subject recognizable.
+- Preserve canvas-like surface variation without adding a uniform digital texture or blur.
+Use palette values as anchors, not a global filter. Follow the user’s requested subject, setting, aspect ratio, count, and purpose. Create an original arrangement; do not copy a named artwork or sitter.

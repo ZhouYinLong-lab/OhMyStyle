@@ -1,0 +1,12 @@
+{
+  "name": "berthe-morisot",
+  "usage": "Role-based color anchors for luminous, broken color; use them selectively rather than as a global tint.",
+  "colors": [
+    {"name": "ivory_light", "hex": "#F1EBDD", "role": "light_ground"},
+    {"name": "soft_white", "hex": "#E8E8E1", "role": "lit_form"},
+    {"name": "pale_blue", "hex": "#B9D1D8", "role": "cool_light_and_reflection"},
+    {"name": "sage_green", "hex": "#AAB99A", "role": "foliage_or_neutral_mid"},
+    {"name": "rose_accent", "hex": "#D69B91", "role": "warm_accent"},
+    {"name": "ochre_note", "hex": "#C99E63", "role": "small_warm_structure"}
+  ]
+}

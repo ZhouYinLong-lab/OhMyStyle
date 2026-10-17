@@ -1,0 +1,52 @@
+package_id: berthe-morisot
+package_version: 0.1.0
+invariants:
+  - id: style_recognition
+    weight: 3
+    test: Broken, varied brushwork, luminous values, and selective soft edges remain visible after changing the subject.
+  - id: prompt_adherence
+    weight: 3
+    test: The requested subject, setting, count, and aspect ratio are followed without importing unrequested recurring motifs.
+  - id: color_and_light
+    weight: 2
+    test: Light and shadow remain chromatic and open; palette accents are used locally rather than as a global filter.
+  - id: subject_legibility
+    weight: 2
+    test: Selectively softened passages do not obscure the main subject or requested action.
+rejections:
+  - copied_named_work
+  - unrequested_period_scene
+  - generic_global_filter
+  - unreadable_subject
+  - photorealistic_rendering
+  - unmotivated_extra_objects
+minimum_score: 8
+benchmark_suite:
+  - portrait
+  - still_life
+  - architecture_environment
+  - landscape
+  - fuzzy_brief
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Pending provider-backed neutral-subject review.
+  distinctive_signature:
+    score: null
+    notes: Record which brush, edge, light, and palette decisions remain visible across subjects.
+  visual_overlap:
+    score: null
+    notes: Compare against the related Impressionist packages and document meaningful differences.
+  cross_subject_stability:
+    score: null
+    notes: Run at least two distinct subjects before assigning a score.
+related_packages:
+  - claude-monet
+  - edgar-degas
+  - mary-cassatt
+  - pierre-auguste-renoir
+contrast_note: Compare edge openness, stroke variation, value range, and subject legibility before crossing this package with related Impressionist styles.
+crossing:
+  supported: true
+  default_mode: adaptive
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.

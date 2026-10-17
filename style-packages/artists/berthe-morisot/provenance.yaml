@@ -1,0 +1,25 @@
+package_id: berthe-morisot
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: External artworks are recorded as links for research and visual analysis only; no source artwork is bundled or redistributed.
+sources:
+  - url: https://www.metmuseum.org/art/collection/search/437159
+    authority: The Metropolitan Museum of Art
+    title: Young Woman Knitting
+    supports: Open brushwork, simplified detail, and an impression of a modern subject.
+    accessed: '2026-10-17'
+  - url: https://www.metmuseum.org/art/collection/search/438009
+    authority: The Metropolitan Museum of Art
+    title: The Pink Dress
+    supports: High-key tonal organization and visible changes in the painting process.
+    accessed: '2026-10-17'
+  - url: https://www.nga.gov/artists/1733-berthe-morisot
+    authority: National Gallery of Art
+    title: Berthe Morisot artist page
+    supports: Descriptive visual records across portraits, interiors, and landscapes.
+    accessed: '2026-10-17'
+attribution: This package abstracts observable visual traits for new subjects and is not affiliated with, endorsed by, or an exact imitation of Berthe Morisot.
+rights_notes:
+  - External artwork and collection photography are not included; consult each institution's rights statement before reuse.
+  - Do not bundle a reproduction, screenshot, or derivative of a named artwork without verified redistribution rights.
+  - The included gallery and generated sample are new generated images, not original works or historical documents.
