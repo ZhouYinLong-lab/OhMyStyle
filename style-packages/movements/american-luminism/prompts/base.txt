@@ -1,0 +1,13 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.
+
+Apply the following movement-level decisions to a new image:
+- Create calm spatial depth through carefully separated near, middle, and far values.
+- Prefer broad horizontal balance and measured negative space when compatible with the user’s requested composition.
+- Let clear, reflective light organize the image; use cool silver, pale blue, muted green, and restrained earth notes without a global tint.
+- Suggest smooth, finely controlled oil paint with very few visible brush marks.
+- Keep reflective surfaces quiet and detail sparse; preserve optical clarity instead of adding blur.
+- Avoid dramatic weather, abrupt light beams, and sublime scale. Keep the user’s subject, setting, aspect ratio, and purpose authoritative.
+This is the quiet, optically resolved American Luminist direction; do not substitute Impressionist stroke breakup or Romantic spectacle.

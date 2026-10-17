@@ -1,0 +1,12 @@
+{
+  "name": "american-luminism",
+  "usage": "Use restrained role-based colors to express clear atmospheric light; avoid applying them as a global filter.",
+  "colors": [
+    {"name": "silver_sky", "hex": "#D6DDE0", "role": "clear_light_field"},
+    {"name": "cool_water", "hex": "#91AEBB", "role": "reflective_mid"},
+    {"name": "distant_blue", "hex": "#738B9B", "role": "far_plane"},
+    {"name": "muted_green", "hex": "#68745F", "role": "small_land_anchor"},
+    {"name": "warm_earth", "hex": "#9A8162", "role": "foreground_accent"},
+    {"name": "soft_white", "hex": "#F0EEE7", "role": "light_reflection"}
+  ]
+}

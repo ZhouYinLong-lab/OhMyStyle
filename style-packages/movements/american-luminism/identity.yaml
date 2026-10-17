@@ -1,0 +1,18 @@
+canonical_name: 美国光主义
+entity_type: american_luminist_painting_movement
+origin: united_states_hudson_river_school_context
+period: 1850_to_1875
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: Keep the requested subject and setting authoritative. Horizontal quiet landscapes are an optional benchmark, not default content.
+  use_cases: [quiet_landscape, reflective_surface, atmospheric_depth, low_detail_composition]
+  exclusions: [dramatic_storm, sublime_mountain_scale, visible_impressionist_strokes, global_cool_filter]
+sources:
+  - https://www.nga.gov/research/publications/american-light-luminist-movement-1850-1875
+  - https://artmuseum.princeton.edu/art/collections/objects/33873
+  - https://www.nga.gov/exhibitions/american-light
+rendering:
+  model: Quiet American landscape painting built from precise atmospheric depth and radiant, still light.
+  scene_logic: Use the user’s requested scene; apply calm tonal spacing and reflective light without adding landscape elements.
+  output_behavior: Favor smooth tonal transitions, measured horizontal rhythm, and sparse accents over conspicuous brush marks.

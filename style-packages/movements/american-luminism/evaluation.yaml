@@ -1,0 +1,30 @@
+package_id: american-luminism
+package_version: 0.1.0
+invariants:
+  - id: style_recognition
+    weight: 3
+    test: Calm tonal spacing, precise atmospheric depth, reflective light, and suppressed brushwork remain visible across subjects.
+  - id: prompt_adherence
+    weight: 3
+    test: The requested subject, setting, aspect ratio, and purpose are followed without adding a default landscape.
+  - id: light_and_depth
+    weight: 2
+    test: Light creates clear spatial layers and selective reflections without theatrical beams or blur.
+  - id: surface_control
+    weight: 2
+    test: Paint handling stays smooth and restrained rather than visibly broken or heavily gestural.
+rejections: [copied_named_landscape, unrequested_landscape_elements, impressionist_stroke_breakup, romantic_spectacle, generic_global_filter]
+minimum_score: 8
+benchmark_suite: [portrait, still_life, architecture_environment, minimal_composition, fuzzy_brief]
+semantic_evaluation:
+  subject_independence: {score: null, notes: Pending provider-backed neutral-subject review.}
+  distinctive_signature: {score: null, notes: Check tonal spacing, smooth surface, controlled reflection, and atmospheric depth.
+  }
+  visual_overlap: {score: null, notes: Compare with Hudson River School, Romanticism, Tonalism, and Impressionism; document edges, light, and brushwork differences.}
+  cross_subject_stability: {score: null, notes: Run at least two different subjects before assigning a score.}
+related_packages: [hudson-river-school, romanticism, tonalism, impressionism]
+contrast_note: Separate clear, optically resolved light and smooth paint from Romantic drama, Tonalist dusk, and Impressionist broken strokes.
+crossing:
+  supported: true
+  default_mode: adaptive
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.

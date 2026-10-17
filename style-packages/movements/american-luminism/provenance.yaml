@@ -1,0 +1,25 @@
+package_id: american-luminism
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: Institutional catalogue and collection pages are link-only; no source artworks are bundled.
+sources:
+  - url: https://www.nga.gov/research/publications/american-light-luminist-movement-1850-1875
+    authority: National Gallery of Art
+    title: American Light: The Luminist Movement, 1850–1875
+    supports: Historical scope and shared interest in radiant light and atmosphere.
+    accessed: '2026-10-18'
+  - url: https://artmuseum.princeton.edu/art/collections/objects/33873
+    authority: Princeton University Art Museum
+    title: Lake George
+    supports: Sparse horizontal composition, reflective light, and suppressed visible brushwork.
+    accessed: '2026-10-18'
+  - url: https://www.nga.gov/exhibitions/american-light
+    authority: National Gallery of Art
+    title: American Light exhibition
+    supports: Historical artists and the movement's landscape context.
+    accessed: '2026-10-18'
+attribution: This package abstracts a historical visual approach for new subjects; it does not claim an official movement membership, affiliation, or exact imitation of a named painting.
+rights_notes:
+  - Source artworks and collection photographs are not included; consult each institution's rights statement before reuse.
+  - Do not bundle or reconstruct a named landscape without verified redistribution rights.
+  - The gallery and generated sample are new anonymous scenes.

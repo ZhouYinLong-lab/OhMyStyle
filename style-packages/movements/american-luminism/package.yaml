@@ -1,0 +1,35 @@
+id: american-luminism
+name: 美国光主义
+kind: movement
+domain: painting
+version: 0.1.0
+summary: 以稀疏的横向景观、克制的边缘、平静水面和精密大气透视捕捉冷静、清澈且近乎静止的自然光。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: movement
+  medium: painting
+  historical_context: 1850_to_1875
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs:
+  - broad horizontal arrangement
+  - calm reflective surface
+  - distant horizon
+  benchmark_subjects: []

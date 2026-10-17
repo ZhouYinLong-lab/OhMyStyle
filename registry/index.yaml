@@ -2952,6 +2952,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: american-luminism
+  name: 美国光主义
+  kind: movement
+  domain: painting
+  package_path: style-packages/movements/american-luminism
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 3
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: art-brut
   name: 原生艺术
   kind: movement
