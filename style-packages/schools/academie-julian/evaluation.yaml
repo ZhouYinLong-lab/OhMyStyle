@@ -1,0 +1,29 @@
+package_id: academie-julian
+package_version: 0.1.0
+invariants:
+  - id: style_recognition
+    weight: 3
+    test: Observational construction, proportion checking, grouped values, and selective revision remain legible when relevant to the requested medium.
+  - id: prompt_adherence
+    weight: 3
+    test: The output follows the user's subject and setting without adding an atelier, people, or historical narrative.
+  - id: process_visibility
+    weight: 2
+    test: Study marks support form and do not become generic distress or clutter.
+  - id: medium_adaptation
+    weight: 2
+    test: Drawing-led pedagogy adapts to the requested medium without imposing one palette or surface.
+rejections: [unrequested_classroom_scene, copied_historical_class, generic_charcoal_filter, obscured_subject, unmotivated_extra_objects]
+minimum_score: 8
+benchmark_suite: [portrait, still_life, architecture_environment, minimal_composition, fuzzy_brief]
+semantic_evaluation:
+  subject_independence: {score: null, notes: Pending provider-backed neutral-subject review.}
+  distinctive_signature: {score: null, notes: Check process visibility and drawing-led observation without forcing an atelier scene.}
+  visual_overlap: {score: null, notes: Compare with state academies and experimental schools; note context and process differences.}
+  cross_subject_stability: {score: null, notes: Run at least two different subjects before assigning a score.}
+related_packages: [paris-beaux-arts, royal-academy-schools, slade-school-of-fine-art, black-mountain-college]
+contrast_note: This package describes an independent atelier pedagogy rather than a fixed visual style or institutional architecture.
+crossing:
+  supported: true
+  default_mode: adaptive
+  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.

@@ -1,0 +1,9 @@
+asset: anonymous-v1.png
+status: pending_human_review
+generator: OpenAI built-in image generation
+prompt_mode: anonymous_visual_signature
+subject: Invented Paris atelier with fully clothed adult learners studying drawings and a plaster bust
+aspect_ratio: 16:9
+dimensions: 1672x941
+generated_at: '2026-10-18'
+review_note: New generated scene, not an archival record or a reconstruction of a named painting. Keep in generated until human review.

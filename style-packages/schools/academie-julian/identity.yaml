@@ -1,0 +1,18 @@
+canonical_name: 朱利安学院
+entity_type: private_art_academy
+origin: paris_artist_training_institution
+period: 1868_to_1968
+domain: painting
+scope:
+  subject_policy: open
+  subject_note: The academy's training method informs the making of requested subjects; an atelier, students, or model is never a default output.
+  use_cases: [observational_drawing, figure_study, atelier_process, academic_painting]
+  exclusions: [grand_state_academy_hall, abstract_workshop_installation, copied_historical_classroom]
+sources:
+  - https://www.musee-orsay.fr/en/artworks/un-meeting-54
+  - https://www.musee-orsay.fr/en/node/288025
+  - https://www.metmuseum.org/essays/women-artists-in-nineteenth-century-france
+rendering:
+  model: Private atelier pedagogy translated into attentive observation, iterative drawing, and visible study-to-finish decisions.
+  scene_logic: If the user requests an artwork, apply observational structure; do not invent an academy scene or a figure.
+  output_behavior: Keep drawing construction, tonal grouping, and revision cues legible without turning every result into a classroom view.

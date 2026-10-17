@@ -1,0 +1,32 @@
+id: academie-julian
+name: 朱利安学院
+kind: school
+domain: painting
+version: 0.1.0
+summary: 以巴黎私人工作室式教学、持续写生、炭笔人体习作和师生围绕画架交流为核心，呈现开放的职业化艺术训练氛围。
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: design_school
+  medium: painting
+  historical_context: 1868_to_1968
+  application: general
+  visual_axes:
+  - composition
+  - palette
+  - lighting
+  - surface
+  - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []

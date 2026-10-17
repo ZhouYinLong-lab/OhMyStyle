@@ -1,0 +1,12 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: {SUBJECT}
+User setting: {LOCATION}
+The user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.
+
+Apply the Académie Julian package as a working method rather than as a default scene:
+- Observe the requested form and establish proportion, pose, and large value groups before detail.
+- Use clear construction and selective revision; retain a few purposeful study marks when they help explain form.
+- If the user requests a painting, combine drawing-led structure with controlled modeling and selective finish.
+- Use grouped values and clear studio-like illumination only as visual treatment; do not invent a studio setting.
+- Keep the requested medium, subject, setting, aspect ratio, count, and purpose authoritative.
+Do not add students, an easel, a model, a classroom, historical clothing, or a French academy environment unless explicitly requested. This is observational atelier pedagogy, distinct from official academic spectacle and from experimental collective workshops.

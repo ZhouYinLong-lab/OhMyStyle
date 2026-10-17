@@ -1,0 +1,11 @@
+{
+  "name": "academie-julian",
+  "usage": "Material references for optional study scenes only; the academy package does not impose one palette on user subjects.",
+  "colors": [
+    {"name": "warm_paper", "hex": "#D9C8A6", "role": "drawing_ground"},
+    {"name": "charcoal", "hex": "#34312D", "role": "construction_line"},
+    {"name": "umber", "hex": "#806448", "role": "tonal_study"},
+    {"name": "plaster", "hex": "#E7DFCF", "role": "light_study_form"},
+    {"name": "muted_oxide", "hex": "#9B624A", "role": "optional_paint_accent"}
+  ]
+}

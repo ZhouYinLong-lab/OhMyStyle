@@ -1,0 +1,12 @@
+family: art-school
+near_duplicates: [paris-beaux-arts, royal-academy-schools, slade-school-of-fine-art, black-mountain-college]
+supersedes: []
+conflicts: []
+distinctives:
+  - Compared with Paris Beaux-Arts and the Royal Academy Schools, emphasize an independent, private atelier and iterative working practice rather than a monumental state-school hall or formal institutional hierarchy.
+  - Compared with Black Mountain College, keep the method centered on observational drawing and figure-study discipline rather than interdisciplinary collaboration and experimental workshops.
+  - Its historical distinction includes private instruction and access to life-drawing classes for women when official training routes remained restricted.
+avoid_overlap:
+  - Do not turn every output into a classroom, easel scene, student group, model, or period costume.
+  - Do not substitute Bauhaus geometric design exercises, Black Mountain performance, or a generic modern art studio.
+  - Keep the package about an atelier learning method, not a universal academic painting filter.

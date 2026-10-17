@@ -5796,6 +5796,23 @@ packages:
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true
+- resource_id: academie-julian
+  name: 朱利安学院
+  kind: school
+  domain: painting
+  package_path: style-packages/schools/academie-julian
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 3
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: true
 - resource_id: academy-of-fine-arts-vienna
   name: 维也纳美术学院
   kind: school

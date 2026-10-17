@@ -1,0 +1,25 @@
+package_id: academie-julian
+package_version: 0.1.0
+curation_status: reference_backed_link_only
+source_policy: Museum and institutional history pages are link-only; no source artworks are bundled.
+sources:
+  - url: https://www.musee-orsay.fr/en/artworks/un-meeting-54
+    authority: Musée d'Orsay
+    title: Un meeting
+    supports: Marie Bashkirtseff's study at Académie Julian, its significance as a school open to women, and her naturalist composition.
+    accessed: '2026-10-18'
+  - url: https://www.musee-orsay.fr/en/node/288025
+    authority: Musée d'Orsay
+    title: Who was Marie Bashkirtseff?
+    supports: The academy's foundation, private status, and life-drawing classes available to women.
+    accessed: '2026-10-18'
+  - url: https://www.metmuseum.org/essays/women-artists-in-nineteenth-century-france
+    authority: The Metropolitan Museum of Art
+    title: Women Artists in Nineteenth-Century France
+    supports: Historical access restrictions and private women's ateliers in Paris.
+    accessed: '2026-10-18'
+attribution: This package abstracts documented educational context and does not claim affiliation, endorsement, or an official style authored by Académie Julian.
+rights_notes:
+  - Source artworks and photographs are not included; consult the institutions' rights information before reuse.
+  - Do not reproduce a known classroom painting or identify generated people as historical students.
+  - The gallery and sample are new generated scenes, not archival records.
