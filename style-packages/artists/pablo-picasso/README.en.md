@@ -73,3 +73,7 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## Experimental direction: multiple viewpoints in one object
+
+The optional direction in [`art-direction.yaml`](art-direction.yaml) concentrates multiple viewpoints in one user-specified still-life object: front, side, or top views meet inside one silhouette while identity cues remain. Keep the surrounding table and background shallow and quiet; bottles, instruments, text, and collage are not defaults. See [`comparisons/`](comparisons/README.md) for paired images.

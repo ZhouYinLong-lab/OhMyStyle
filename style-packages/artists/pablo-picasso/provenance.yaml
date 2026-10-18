@@ -1,5 +1,10 @@
 package_id: pablo-picasso
 research_basis:
+- title: Multiple Perspectives
+  creator: The Museum of Modern Art
+  period: Cubism educational essay
+  source_url: https://www.moma.org/collection/terms/cubism/multiple-perspectives
+  role: institutional context for rendering an object from more than one view
 - title: Pablo Picasso
   creator: Pablo Picasso
   period: 现代主义

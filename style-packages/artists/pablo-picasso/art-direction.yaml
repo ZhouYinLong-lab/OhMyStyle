@@ -1,0 +1,100 @@
+schema_version: 2.0.0
+status: experimental
+id: picasso-single-object-multiple-viewpoints
+name: Picasso single object in multiple viewpoints
+base_package: artists/pablo-picasso
+scope:
+  medium: oil_painting_informed_analytical_cubism
+  representation: stylized
+  description: >-
+    An optional still-life direction for one user-specified object. Combine two
+    or three useful views of that same object—such as side, front, or top—inside
+    one connected faceted form. Preserve enough silhouette and object clues for
+    recognition; keep the surrounding table and background shallow and quieter
+    so the viewpoint shift stays local. This does not add an instrument, bottle,
+    text, collage fragment, or named work by default.
+  required_contexts:
+    - single-object-multiple-viewpoints
+  incompatible_contexts:
+    - photorealistic-single-perspective-render
+    - multi-object-dense-still-life
+    - unrecognizable-fragmented-abstraction
+  limitations:
+    - Activate only for a user-requested single object suitable for a still-life study.
+    - Preserve the user's object identity, count, material, color, and requested setting.
+    - Show multiple views within the same object; do not duplicate the object to demonstrate each view.
+    - Keep the object recognizable and the table/background in a restrained shallow space.
+    - Text-only generation may produce inconsistent geometry; inspect object identity and view transitions.
+    - Do not copy a named painting, exact facet layout, text fragment, or branded material.
+pillars:
+  - Let one requested object carry the viewpoint shift; do not fragment every surface in the scene.
+  - Join views through a small number of crisp facets that reveal distinct useful sides of the same form.
+  - Retain a clear silhouette and a few stable identity clues while flattening depth around it.
+rules:
+  - id: fused-view-facets
+    axis: object_representation_and_viewpoint
+    importance: core
+    applies_when: The user requests one still-life object and allows interpretive viewpoints.
+    instruction: Show two or three distinct useful views of the same object within one connected silhouette; shift the angle at selected facets rather than repeating the object as separate copies.
+    observable: The object remains countable as one and at least two viewpoints can be read in its planes or opening while the overall silhouette remains recognizable.
+    reject_when: The object is duplicated, the views cannot be distinguished, or facet breaks make the object unidentifiable.
+    evidence:
+      source_ids:
+        - moma-cubism-multiple-perspectives
+      basis: institutional_description
+      visual_review: pending
+    avoid: shattered-glass fragmentation, random polygon overlay, and copied named object layout
+  - id: anchored-recognition-cues
+    axis: silhouette_and_identity
+    importance: core
+    applies_when: The user requests a recognizable everyday object.
+    instruction: Preserve two or more identity-critical cues from the requested object—such as handle, spout, opening, rim, or base—across the facet transitions; do not alter its material or function.
+    observable: A viewer can name the object from its connected outer contour and stable cues even though its views are not optically consistent.
+    reject_when: Identity depends on a label, a second duplicate, or a copied reference composition.
+    evidence:
+      source_ids:
+        - moma-cubism-multiple-perspectives
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: added text, extra object copies, and unrequested collage labels
+  - id: quiet-supporting-plane
+    axis: composition_and_depth
+    importance: supporting
+    applies_when: The brief permits a sparse tabletop or neutral setting.
+    instruction: Keep the supporting table and background in broad shallow planes with fewer viewpoint shifts and lower detail than the main object.
+    observable: The eye first reads the single transformed object, then the support plane; surrounding geometry does not compete with its viewpoint changes.
+    reject_when: Every background plane fractures as strongly as the main form or the requested setting disappears.
+    evidence:
+      source_ids:
+        - moma-cubism-multiple-perspectives
+      basis: original_design_intent
+      visual_review: pending
+    avoid: dense all-over fragmentation and deep photographic perspective
+active_rule_ids:
+  - fused-view-facets
+  - anchored-recognition-cues
+  - quiet-supporting-plane
+joint_checks:
+  - id: recognizable-multiple-view-object
+    rule_ids:
+      - fused-view-facets
+      - anchored-recognition-cues
+      - quiet-supporting-plane
+    instruction: Keep one requested object recognizable while selected facets reveal two or three views within its connected silhouette; hold the supporting setting quieter and shallower.
+    observable: The object is clearly single and identifiable, the joined viewpoints are visible, and the background does not steal the facet language.
+sources:
+  - id: moma-cubism-multiple-perspectives
+    kind: museum_educational_essay
+    url: https://www.moma.org/collection/terms/cubism/multiple-perspectives
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested single still-life object.
+    - Preserve the requested object's identity, count, material, color, and setting.
+    - Show multiple viewpoints within one connected object, never as duplicate objects.
+    - Preserve a recognizable silhouette and identity cues across a few selected facets.
+    - Keep the supporting plane quieter and review object count, silhouette, and view consistency.
+  avoid:
+    - adding instruments, bottles, letters, collage scraps, or named subjects unless requested
+    - copying a named painting, exact facet arrangement, or recognizable composition
+    - scattering random polygons over every surface

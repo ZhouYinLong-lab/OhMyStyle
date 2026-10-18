@@ -2,10 +2,11 @@ id: pablo-picasso
 name: 巴勃罗·毕加索
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: Independent Pablo Picasso style package focused on 分析性平面、多视点、结构化静物与几何重组;
   it requires new subjects and arrangements.
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

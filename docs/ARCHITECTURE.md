@@ -223,6 +223,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [莫霍利-纳吉透明平面投影研究](../style-packages/artists/moholy-nagy/art-direction.yaml) | 用一个半透明平面、一束方向光和一块主投影构成稀疏光学关系 | `text_only`，声明 `photogram-shadow-study` |
 | [德·斯塔埃尔表演者色块节奏](../style-packages/artists/nicolas-de-stael/art-direction.yaml) | 用户指定的舞者或乐手压成少量倾角不同的色块，以动作线索维持可读性 | `text_only`，声明 `dance-or-music-performance` |
 | [洛克威尔共享道具反应链](../style-packages/artists/norman-rockwell/art-direction.yaml) | 用一个共享事件连接小群像，以发起动作和不同回应读出单帧叙事 | `text_only`，声明 `reaction-chain-around-shared-prop` |
+| [毕加索单一物体多视点](../style-packages/artists/pablo-picasso/art-direction.yaml) | 在同一个物体轮廓内结合正面、侧面或俯视面，并让周边空间更安静 | `text_only`，声明 `single-object-multiple-viewpoints` |
 
 ## 6. 从主体请求到结果
 

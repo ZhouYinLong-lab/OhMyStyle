@@ -73,3 +73,7 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## 实验方向：单一物体的多视点
+
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 将多视点集中到用户指定的一个静物对象：同一轮廓中结合正面、侧面或俯视面，同时保留足够的身份线索。周边桌面与背景保持浅而安静，不默认添加酒瓶、乐器、文字或拼贴。对照图见 [`comparisons/`](comparisons/README.md)。

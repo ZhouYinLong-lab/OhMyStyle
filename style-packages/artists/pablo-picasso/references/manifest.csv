@@ -1,2 +1,3 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 pablo-picasso-source,,Pablo Picasso,Pablo Picasso,现代主义,https://commons.wikimedia.org/w/index.php?search=Pablo+Picasso&title=Special:MediaSearch&type=image,reference-only-not-redistributed,Pablo Picasso,primary,External research link; no protected source file is redistributed in this package.
+picasso-moma-multiple-perspectives,,Multiple Perspectives,The Museum of Modern Art,,https://www.moma.org/collection/terms/cubism/multiple-perspectives,link-only research reference,The Museum of Modern Art,primary,Institutional essay explains multiple viewpoints in Cubist compositions; the single-object scope is a curatorial interpretation. No source image is bundled.
