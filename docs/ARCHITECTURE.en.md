@@ -36,7 +36,7 @@ These are authoring requirements, not a claim that every existing package has al
 | Production and execution | How are the decisions implemented? | Construction sequence, prompts, provider capabilities, deterministic settings |
 | Review across subjects | Do the decisions persist and remain distinguishable? | Complete runs, rule reviews, failures, applicability exceptions |
 
-Each rule pairs a creation instruction with an observable result and rejection condition. For example, the [Sorolla pilot](../experiments/style-v2/sorolla-sunlit-oil/direction.yaml) requires directional daylight and reflected color to explain form; a uniform warm wash does not satisfy it.
+Each rule pairs a creation instruction with an observable result and rejection condition. For example, the [Sorolla pilot](../style-packages/artists/joaquin-sorolla/art-direction.yaml) requires directional daylight and reflected color to explain form; a uniform warm wash does not satisfy it.
 
 Evidence records distinguish institutional descriptions, direct visual observation, curatorial inference, and original design intent. A source link alone does not establish visual validation. `joint_checks` connects several rules so that reflected color, value groups, and brushwork explain the same forms coherently.
 
@@ -91,6 +91,13 @@ style-packages/<category>/<id>/
 | Reference manifest and provenance | Sources, analytical roles, rights boundaries |
 | Evaluation and examples | Criteria, candidates, accepted or rejected examples |
 
+`package.yaml` may optionally declare `files.art_direction` to register new
+rules as a package artifact. Registration alone does not change legacy
+compilation; callers must explicitly pass `--direction package`. Packages
+without this field require no conversion and retain their current path. This
+allows gradual adoption while preserving old files for compatibility and
+retrieval.
+
 See the [package specification](STYLE-PACKAGE-SPEC.md) and [resource architecture](RESOURCE-ARCHITECTURE.md) for the detailed contracts.
 
 ### Loading a file does not mean compiling all of its content
@@ -101,7 +108,7 @@ Retrieval flattens visual signature content into search terms. An Agent reading 
 
 ## 5. v2 pilots: explicitly selected directions
 
-v2 currently retains the formal packages and adds a separate `direction.yaml` for each selected practice. It does not automatically convert the old library or enter the formal search index or gallery.
+v2 keeps the formal package and registers an optional `art_direction` artifact. A direction may live in an experiment folder until it is ready to register, as the Bauhaus and ASCII pilots do. Sorolla is the first formal package with an explicitly enabled experimental direction. The library is not automatically converted.
 
 | Field | Responsibility |
 | --- | --- |
@@ -124,11 +131,23 @@ The compiled job separates four kinds of information:
 
 `applies_when` is a natural language authoring note. The implementation checks caller-declared required and incompatible contexts; it does not infer applicability from the subject or select rules automatically. Research sources are not automatically supplied as reference images.
 
-This stage supports `profile=generic` and `references=none`, without legacy palette pairs. HTTP/MCP sessions and composite compilation retain the legacy path. Enable v2 explicitly through CLI `--direction` or Python `direction_path`.
+This stage supports `profile=generic` and `references=none`, without legacy palette pairs. HTTP/MCP sessions and composite compilation retain the legacy path. Enable v2 explicitly through CLI `--direction` or Python `direction_path`. Directions may live in the experiment directory, or be registered through `package.yaml` `files.art_direction` and selected with `--direction package`.
+
+Compile the same package in both modes to inspect prompts and rule metadata.
+With reference images disabled in both jobs:
+
+~~~powershell
+python tools/compile-style.py style-packages/artists/joaquin-sorolla --subject "A wooden chair in a plain courtyard in afternoon daylight, no people, water, or coast" --references none --output runs/compare/sorolla-legacy.json
+python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction package --context daylight --subject "A wooden chair in a plain courtyard in afternoon daylight, no people, water, or coast" --output runs/compare/sorolla-direction.json
+~~~
+
+Compare `prompt`, `negative_prompt`, and `review.rules` individually. This
+checks compilation inputs, not image quality; the two formats need not produce
+the same prompt wording.
 
 | Pilot | Main relationships | Route |
 | --- | --- | --- |
-| [Sorolla sunlit oil](../experiments/style-v2/sorolla-sunlit-oil/direction.yaml) | Daylight, reflected color, value groups, directional marks | `text_only`, declare `daylight` |
+| [Sorolla sunlit oil](../style-packages/artists/joaquin-sorolla/art-direction.yaml) | Daylight, reflected color, value groups, directional marks | `text_only`, declare `daylight` |
 | [Bauhaus paper method](../experiments/style-v2/bauhaus-paper-study/direction.yaml) | Cutting, tearing, folding, supports, openings, shadows | `text_only`, declare `paper-study` |
 | [Literal ASCII grid](../experiments/style-v2/literal-ascii-grid/direction.yaml) | Real glyphs, fixed cells, density, negative space | `deterministic_grid` |
 

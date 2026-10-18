@@ -1,6 +1,6 @@
 # 美术风格包 v2：独立试点
 
-状态：可运行的实验入口，尚未完成跨题材生图对照。三个方向都是人工整理的试点，正式风格包未批量迁移。
+状态：可运行的渐进迁移试点，尚未完成跨题材生图对照。索罗亚方向已登记到正式包但仍标记为实验；包豪斯和 ASCII 方向仍在实验目录，未批量迁移正式包。
 
 ## 版本保留与回退
 
@@ -40,6 +40,7 @@ experiments/style-v2/<direction>/direction.yaml
 - `applies_when` 是编辑说明，不会被程序理解为条件表达式。当前用人工整理的规则集合和调用者声明的上下文控制适用范围；不会自动识别主体语句里的夜景等冲突。
 - 研究来源不自动作为图片输入。第一阶段仅支持 `references=none`、`profile=generic`，不使用旧版调色对；不支持的组合会明确拒绝。
 - 新入口必须显式传入 `--direction`。省略时沿用旧版编译路径及默认参考选择。实验目录不参与正式包检索，也不自动进入画廊。
+- 逐包迁移时，可在该包 `package.yaml` 中设置 `files.art_direction`，再用 `--direction package` 选择。原有 `visual-signature.yaml`、Prompt 和检索索引不自动改写；需要明确处理其与新规则的同步，完成评审前继续以旧路径为兼容基线。
 - 本阶段接入命令行与 Python 编译接口，HTTP、MCP 会话和组合包仍使用旧版路径。任务文件不是自动调用生图服务的承诺。
 
 相对于 [总体设计草案](../../docs/ART-STYLE-PACK-ARCHITECTURE.md)，这份文件是最小实施契约。设计样稿与运行文件分开，避免把尚未支持的字段当作已执行能力。
@@ -48,7 +49,7 @@ experiments/style-v2/<direction>/direction.yaml
 
 | 方向 | 选定范围 | 制作路线 | 必须声明的上下文 |
 | --- | --- | --- | --- |
-| [索罗亚日光油画](sorolla-sunlit-oil/direction.yaml) | 光线、反射色、笔触与体块的联动 | text_only | daylight |
+| [索罗亚日光油画](../../style-packages/artists/joaquin-sorolla/art-direction.yaml) | 光线、反射色、笔触与体块的联动；登记于正式包但仍为实验 | text_only | daylight |
 | [包豪斯纸材研究](bauhaus-paper-study/direction.yaml) | 具体纸材课程方法的当代转译 | text_only | paper-study |
 | [严格 ASCII 网格](literal-ascii-grid/direction.yaml) | 全部场景形状由真实字符构成 | deterministic_grid | 无 |
 
@@ -57,7 +58,7 @@ experiments/style-v2/<direction>/direction.yaml
 ### 索罗亚：先编译规则任务
 
 ~~~powershell
-python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction experiments/style-v2/sorolla-sunlit-oil --context daylight --subject "Two folded blue cloths and a white bowl on an outdoor table in daylight" --output runs/style-v2/sorolla-job.json
+python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction package --context daylight --subject "Two folded blue cloths and a white bowl on an outdoor table in daylight" --output runs/style-v2/sorolla-job.json
 ~~~
 
 输出任务的 `prompt` 和 `negative_prompt` 可交给你选定的图像模型。此处不下载或上传研究来源图片。`review` 保存规则检查项与来源 ID，方便对照结果时逐项记录。

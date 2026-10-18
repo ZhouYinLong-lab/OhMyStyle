@@ -54,7 +54,7 @@ evidence:
   visual_review: pending
 ~~~
 
-这是 [索罗亚试点](../experiments/style-v2/sorolla-sunlit-oil/direction.yaml) 中的一条规则，不能单独替代完整方向文件。`basis` 区分机构描述、直接视觉观察、研究推断与原创意图；有来源链接不等于规则已经通过视觉评审。
+这是 [索罗亚试点](../style-packages/artists/joaquin-sorolla/art-direction.yaml) 中的一条规则，不能单独替代完整方向文件。`basis` 区分机构描述、直接视觉观察、研究推断与原创意图；有来源链接不等于规则已经通过视觉评审。
 
 规则还需要联动。例如，反射色、明暗组和笔触应共同说明同一体块。v2 用 `joint_checks` 连接多条规则，避免每条局部成立而整体画面失去一致性。
 
@@ -109,6 +109,8 @@ style-packages/<category>/<id>/
 | `references/manifest.csv`、`provenance.yaml` | 来源、用途与权利边界 |
 | `evaluation.yaml`、`examples/` | 检查标准、候选与已接受或拒绝的样例 |
 
+`package.yaml` 可选声明 `files.art_direction`，将新版规则文件登记为包的一部分。登记本身不改变旧版编译行为；调用者需要显式传入 `--direction package`。没有这个字段的旧包无需转换，仍沿用旧路径。这样可逐包保留旧文件供兼容和检索，同时明确决定何时使用新版规则。
+
 详细格式见 [正式包规范](STYLE-PACKAGE-SPEC.md)，资源与成熟度契约见 [资源架构](RESOURCE-ARCHITECTURE.md)。
 
 ### 文件存在与实际执行的区别
@@ -116,6 +118,8 @@ style-packages/<category>/<id>/
 当前旧版编译器会加载视觉签名等结构文件，但最终正负 Prompt 主要来自 `prompts/base.txt`、`prompts/negative.txt` 和选定调色对，**不会自动把 `visual-signature.yaml` 的全部规则展开为指令**。`prompts/variations.txt` 也不是该编译路径的自动输入。
 
 检索会读取并展开视觉签名；Agent 直接阅读文件时也可能使用更多规则。因此，“检索到了某个词”“Agent 读到了规则”和“编译任务实际包含规则”是三种不同情况。最终应保存实际交给模型的 Prompt 与输入素材，而不能仅凭 YAML 已修改就判定执行发生了变化。
+
+<a id="v2-direction"></a>
 
 ## 5. v2 试点：显式选择的方向文件
 
@@ -142,13 +146,22 @@ v2 暂时保留正式包，用单独的 `direction.yaml` 描述选定方向。�
 
 `applies_when` 是供编辑判断的自然语言说明。当前程序检查人工声明的上下文是否缺失或冲突，不会理解主体文本并自动选择规则。研究来源也不会自动变成参考图片输入。
 
-目前只支持 `profile=generic`、`references=none`，不与旧版调色对混用。HTTP/MCP 多轮会话和组合包仍走旧版编译路径；v2 通过命令行的 `--direction` 或 Python 的 `direction_path` 显式启用。
+目前只支持 `profile=generic`、`references=none`，不与旧版调色对混用。HTTP/MCP 多轮会话和组合包仍走旧版编译路径；v2 通过命令行的 `--direction` 或 Python 的 `direction_path` 显式启用。方向可以单独存放在实验目录，也可以通过 `package.yaml` 的 `files.art_direction` 登记后用 `--direction package` 选择。
+
+同一包可以分别编译旧版和新版任务，方便检查 Prompt 与规则差异。两路都关闭参考图时：
+
+~~~powershell
+python tools/compile-style.py style-packages/artists/joaquin-sorolla --subject "午后日光下无装饰庭院中的木椅，无人物、无水面、无海岸" --references none --output runs/compare/sorolla-legacy.json
+python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction package --context daylight --subject "午后日光下无装饰庭院中的木椅，无人物、无水面、无海岸" --output runs/compare/sorolla-direction.json
+~~~
+
+逐条对照 `prompt`、`negative_prompt` 和 `review.rules`。这能检查编译路径和输入差异，不代替同模型生图对比；两种格式的完整 Prompt 并不要求字面相同。
 
 ### 三个不同的制作方向
 
 | 方向 | 核心视觉关系 | 执行路线 |
 | --- | --- | --- |
-| [索罗亚日光油画](../experiments/style-v2/sorolla-sunlit-oil/direction.yaml) | 日光、反射色、明暗组和随形笔触 | `text_only`，声明 `daylight` |
+| [索罗亚日光油画](../style-packages/artists/joaquin-sorolla/art-direction.yaml) | 日光、反射色、明暗组和随形笔触 | `text_only`，声明 `daylight` |
 | [包豪斯纸材方法](../experiments/style-v2/bauhaus-paper-study/direction.yaml) | 切、撕、折与支撑、开口和投影 | `text_only`，声明 `paper-study` |
 | [严格 ASCII 网格](../experiments/style-v2/literal-ascii-grid/direction.yaml) | 真实字符、统一单元格、密度与留白 | `deterministic_grid` |
 
