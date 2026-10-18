@@ -73,3 +73,7 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## 实验方向：树荫下的局部光斑
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 只在用户明确要求树冠下的户外多人场景时启用：把碎裂的亮色光斑集中到衣物局部和地面，保持脸部识别区清楚，并用少量光斑连接人物与场地。它不添加摇椅、特定舞会或新人物，也不复刻《La Balançoire》的构图。见 [`comparisons/`](comparisons/README.md) 查看同一散步场景对照；该方向仍处于实验状态。

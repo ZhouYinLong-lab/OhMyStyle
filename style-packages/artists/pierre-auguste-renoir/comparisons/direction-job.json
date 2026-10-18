@@ -1,0 +1,152 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "pierre-auguste-renoir",
+    "name": "皮埃尔-奥古斯特·雷诺阿",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\pierre-auguste-renoir"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Exactly three fully clothed adult friends pause in conversation on a curving garden path beneath leafy trees in bright midday daylight, with clear distinct faces and natural gestures; horizontal 16:9.",
+  "prompt": "USER SUBJECT: Exactly three fully clothed adult friends pause in conversation on a curving garden path beneath leafy trees in bright midday daylight, with clear distinct faces and natural gestures; horizontal 16:9.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [flecks-land-on-clothing-and-ground] Render filtered canopy light as irregular light-color touches on selected clothing planes and ground patches; keep most large surfaces in their local colors.\n- [faces-remain-readable] Keep eyes, nose, mouth, and expression areas comparatively free of the brightest flecks; carry dappled highlights around faces onto hair, hats, shoulders, and nearby fabric instead.\n- [light-notes-link-group-to-ground] Repeat a few related light-color notes between nearby clothing and ground patches so figures feel present in the same filtered daylight, while preserving distinct silhouettes and interactions.\n- [dappled-light-with-readable-group] Keep the requested group readable under leafy daylight, place sparse broken highlights on selected clothing and ground, and protect faces and figure boundaries.\nREQUIREMENT: Activate only for a user-requested outdoor group beneath a leafy canopy in daylight.\nREQUIREMENT: Preserve subject count, identities, expressions, clothing, and requested interaction.\nREQUIREMENT: Place broken light notes selectively on clothing and ground while keeping faces clear.\nREQUIREMENT: Review face legibility, light placement, local colors, and separation between figures.",
+  "negative_prompt": "all-over glitter, hard spotlight circles, or global color wash\nface-obscuring foliage patterns, glittery skin, uniformly lit masks\nmirrored poses, extra figures, repeated copy-pasted silhouettes\nadding people or a swing, picnic, dance, or other unrequested activity\nglobal filters, hard circular spotlights, or glitter-like surface noise\ncopying a named painting's composition or figure arrangement",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "renoir-localized-canopy-sun-flecks",
+    "name": "Renoir localized canopy sun flecks",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\pierre-auguste-renoir\\art-direction.yaml",
+    "sha256": "3407b1806144fa599c9b43644f268c9dd5cb5c4d138caf420e34328647b9fb51",
+    "active_rule_ids": [
+      "flecks-land-on-clothing-and-ground",
+      "faces-remain-readable",
+      "light-notes-link-group-to-ground"
+    ],
+    "contexts": [
+      "user-requested-outdoor-group-under-tree-canopy"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested outdoor group beneath a leafy canopy in daylight.",
+      "Preserve subject count, identities, expressions, clothing, and requested interaction.",
+      "Place broken light notes selectively on clothing and ground while keeping faces clear.",
+      "Review face legibility, light placement, local colors, and separation between figures."
+    ],
+    "avoid": [
+      "adding people or a swing, picnic, dance, or other unrequested activity",
+      "global filters, hard circular spotlights, or glitter-like surface noise",
+      "copying a named painting's composition or figure arrangement"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "An optional lighting direction for user-requested outdoor group scenes beneath a leafy canopy in daylight. Place broken light-color touches selectively on clothing planes and the ground, keeping faces and the group's visual relationships readable. This narrows the base package's general outdoor light into a controlled placement rule; it does not prescribe a swing, dance, picnic, or fixed cast.",
+      "required_contexts": [
+        "user-requested-outdoor-group-under-tree-canopy"
+      ],
+      "incompatible_contexts": [
+        "single-subject-close-up",
+        "night-or-indoor-scene",
+        "user-requested-even-unfiltered-light",
+        "text-or-logo-reproduction"
+      ],
+      "limitations": [
+        "Activate only for a user-requested group beneath a leafy canopy in daylight.",
+        "Preserve the user's people, count, identity, pose, clothing, activity, and spatial relationships.",
+        "Keep facial recognition areas and important expressions legible; do not paint bright flecks over eyes or distinctive features.",
+        "Concentrate light touches on selected clothing planes and ground; do not cover every surface evenly.",
+        "Do not add a swing, dance, picnic, crowd, or named scene unless requested.",
+        "Do not reproduce the composition or figure arrangement of La Balançoire or another named work."
+      ]
+    },
+    "rules": [
+      {
+        "id": "flecks-land-on-clothing-and-ground",
+        "axis": "dappled_light_placement",
+        "importance": "core",
+        "applies_when": "The user requests people outdoors beneath a leafy canopy in daylight.",
+        "instruction": "Render filtered canopy light as irregular light-color touches on selected clothing planes and ground patches; keep most large surfaces in their local colors.",
+        "observable": "Bright broken notes appear in both clothing and ground while the scene retains coherent daylight and local color.",
+        "reject_when": "Light becomes a uniform overlay, every surface is speckled, or bright marks obscure essential clothing structure.",
+        "evidence": {
+          "source_ids": [
+            "musee-orsay-renoir-swing"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "all-over glitter, hard spotlight circles, or global color wash"
+      },
+      {
+        "id": "faces-remain-readable",
+        "axis": "facial_legibility_and_light_contrast",
+        "importance": "core",
+        "applies_when": "One or more faces are visible in the requested group scene.",
+        "instruction": "Keep eyes, nose, mouth, and expression areas comparatively free of the brightest flecks; carry dappled highlights around faces onto hair, hats, shoulders, and nearby fabric instead.",
+        "observable": "Faces remain identifiable and expressions readable against the broken light pattern.",
+        "reject_when": "A bright spot erases an eye, merges facial features, or makes expressions unreadable.",
+        "evidence": {
+          "source_ids": [
+            "musee-orsay-renoir-swing"
+          ],
+          "basis": "original_design_intent",
+          "visual_review": "pending"
+        },
+        "avoid": "face-obscuring foliage patterns, glittery skin, uniformly lit masks"
+      },
+      {
+        "id": "light-notes-link-group-to-ground",
+        "axis": "figure_setting_integration",
+        "importance": "supporting",
+        "applies_when": "The user requests multiple people within one shared outdoor setting.",
+        "instruction": "Repeat a few related light-color notes between nearby clothing and ground patches so figures feel present in the same filtered daylight, while preserving distinct silhouettes and interactions.",
+        "observable": "The light pattern connects figures to the ground without merging people or inventing new interactions.",
+        "reject_when": "Repetition creates false limbs, merges separate people, or changes the requested group arrangement.",
+        "evidence": {
+          "source_ids": [
+            "musee-orsay-renoir-swing"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "mirrored poses, extra figures, repeated copy-pasted silhouettes"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "dappled-light-with-readable-group",
+        "rule_ids": [
+          "flecks-land-on-clothing-and-ground",
+          "faces-remain-readable",
+          "light-notes-link-group-to-ground"
+        ],
+        "instruction": "Keep the requested group readable under leafy daylight, place sparse broken highlights on selected clothing and ground, and protect faces and figure boundaries.",
+        "observable": "Dappled light is visibly localized, expressions remain readable, and each requested person stays distinct."
+      }
+    ],
+    "sources": [
+      {
+        "id": "musee-orsay-renoir-swing",
+        "kind": "museum_collection_record",
+        "url": "https://www.musee-orsay.fr/en/artworks/la-balancoire-1096"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "3407b1806144fa599c9b43644f268c9dd5cb5c4d138caf420e34328647b9fb51",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

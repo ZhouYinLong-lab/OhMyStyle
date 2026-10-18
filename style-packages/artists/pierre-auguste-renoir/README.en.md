@@ -73,3 +73,7 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## Experimental direction: localized sun flecks beneath trees
+
+The optional [`art-direction.yaml`](art-direction.yaml) activates only for a user-requested outdoor group scene beneath a canopy. Concentrate broken bright color touches on selected clothing planes and the ground, keep facial recognition areas clear, and use a few flecks to link figures to the setting. It does not add a swing, a specific dance, or extra people, and does not copy the composition of *La Balançoire*. See [`comparisons/`](comparisons/README.md) for a paired garden-walk probe. This direction remains experimental.

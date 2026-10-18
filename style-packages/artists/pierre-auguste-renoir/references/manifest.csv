@@ -1,2 +1,3 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 pierre-auguste-renoir-source,,Pierre-Auguste Renoir,Pierre-Auguste Renoir,印象主义,https://commons.wikimedia.org/w/index.php?search=Pierre-Auguste+Renoir&title=Special:MediaSearch&type=image,reference-only-not-redistributed,Pierre-Auguste Renoir,primary,External research link; no protected source file is redistributed in this package.
+renoir-orsay-swing,,La Balançoire,Auguste Renoir,1876,https://www.musee-orsay.fr/en/artworks/la-balancoire-1096,link_only,Musée d'Orsay,primary research source,Museum text describes filtered sunlight as light color touches on clothing and ground; no artwork image is bundled or used as generation input.

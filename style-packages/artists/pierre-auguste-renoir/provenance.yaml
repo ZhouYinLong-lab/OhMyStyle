@@ -5,6 +5,14 @@ research_basis:
   period: 印象主义
   source_url: https://commons.wikimedia.org/w/index.php?search=Pierre-Auguste+Renoir&title=Special:MediaSearch&type=image
   role: style research
+- title: La Balançoire
+  creator: Auguste Renoir
+  period: 1876
+  source_url: https://www.musee-orsay.fr/en/artworks/la-balancoire-1096
+  authority: Musée d'Orsay
+  role: >-
+    Museum description of filtered sunlight rendered as light color touches on
+    clothing and ground; supports a limited lighting inference, not a composition copy.
 generated_assets:
 - path: gallery-16x9.jpg
   description: New anonymous representative image
