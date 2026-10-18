@@ -211,6 +211,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [巴斯奎特用户文字与标记层级](../style-packages/artists/jean-michel-basquiat/art-direction.yaml) | 只组织用户提供的字词和符号；划改限定在指定元素，保留可读层级 | `text_only`，声明 `user-authored-mark-hierarchy` |
 | [米罗悬置的有机形与开放色场](../style-packages/artists/joan-miro/art-direction.yaml) | 曲线与色形保持独立关系，以不对称间距和留白平衡画面 | `text_only`，声明 `suspended-biomorphic-sign-field` |
 | [米切尔互相回应的色彩笔触群](../style-packages/artists/joan-mitchell/art-direction.yaml) | 不同方向、厚薄与色彩重量的笔触群构成反向节奏，保留底色停顿 | `text_only`，声明 `counterposed-color-stroke-groups` |
+| [维米尔安静城景的横向层次](../style-packages/artists/johannes-vermeer/art-direction.yaml) | 用户指定城景的横向空间分层、明暗纵深与稀疏反光 | `text_only`，声明 `quiet-cityscape-banded-depth` |
 
 ## 6. 从主体请求到结果
 

@@ -1,8 +1,16 @@
 package_id: johannes-vermeer
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_images_verified
 source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
 sources:
+  - url: https://www.rijksmuseum.nl/en/whats-on/exhibitions/past/vermeer/vermeer-exhibition-text
+    authority: Rijksmuseum
+    supports: Formal analysis of light and dark, perspective, color, texture, and horizontal bands in Vermeer's cityscape work; not a template to copy.
+    accessed: 2026-10-19
+  - url: https://www.mauritshuis.nl/en/our-collection/artworks/92-view-of-delft
+    authority: Mauritshuis
+    supports: Collection context for formal cityscape analysis; exact scene and skyline must not be copied.
+    accessed: 2026-10-19
   - url: https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg
     authority: Wikimedia Commons
     supports: primary public-domain reference image and work attribution

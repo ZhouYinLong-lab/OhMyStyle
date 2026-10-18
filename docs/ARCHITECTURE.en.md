@@ -197,6 +197,7 @@ the same prompt wording.
 | [Basquiat user-authored text and mark hierarchy](../style-packages/artists/jean-michel-basquiat/art-direction.yaml) | Organizes only user-supplied words and symbols; localizes strike-through and preserves legibility | `text_only`, declare `user-authored-mark-hierarchy` |
 | [Miró suspended biomorphic forms and open color field](../style-packages/artists/joan-miro/art-direction.yaml) | Keeps curve and color forms distinct, balanced by asymmetric spacing and negative space | `text_only`, declare `suspended-biomorphic-sign-field` |
 | [Mitchell counterposed color-stroke groups](../style-packages/artists/joan-mitchell/art-direction.yaml) | Directional groups vary paint weight and color, creating counter-rhythm with open-ground pauses | `text_only`, declare `counterposed-color-stroke-groups` |
+| [Vermeer quiet cityscape with banded depth](../style-packages/artists/johannes-vermeer/art-direction.yaml) | User-requested cityscapes organized by horizontal zones, light-dark depth, and sparse reflections | `text_only`, declare `quiet-cityscape-banded-depth` |
 
 ## 6. Execution routes
 

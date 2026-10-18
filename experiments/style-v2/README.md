@@ -102,6 +102,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [巴斯奎特用户文字与标记层级](../../style-packages/artists/jean-michel-basquiat/art-direction.yaml) | 只组织用户提供的字词和符号；划改限定在指定元素，保留可读层级 | text_only | user-authored-mark-hierarchy |
 | [米罗悬置的有机形与开放色场](../../style-packages/artists/joan-miro/art-direction.yaml) | 曲线与色形保持独立关系，以不对称间距和留白平衡画面 | text_only | suspended-biomorphic-sign-field |
 | [米切尔互相回应的色彩笔触群](../../style-packages/artists/joan-mitchell/art-direction.yaml) | 不同方向、厚薄与色彩重量的笔触群构成反向节奏，保留底色停顿 | text_only | counterposed-color-stroke-groups |
+| [维米尔安静城景的横向层次](../../style-packages/artists/johannes-vermeer/art-direction.yaml) | 城景的横向空间分层、明暗纵深和稀疏反光；作为室内默认包的可选方向 | text_only | quiet-cityscape-banded-depth |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

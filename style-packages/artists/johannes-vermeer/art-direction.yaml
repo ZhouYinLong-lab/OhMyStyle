@@ -1,0 +1,101 @@
+schema_version: 2.0.0
+status: experimental
+id: vermeer-quiet-cityscape-banded-depth
+name: Vermeer quiet cityscape with banded depth
+base_package: artists/johannes-vermeer
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    An optional cityscape direction for user-requested town views. It organizes
+    foreground, architecture, and sky into connected horizontal zones, then
+    clarifies distance through controlled light-dark alternation, color, and
+    edge softness. It is distinct from the base package's domestic interior
+    emphasis and never selects a city, landmark, or arrangement for the user.
+  required_contexts:
+    - quiet-cityscape-banded-depth
+  incompatible_contexts:
+    - dramatic-romantic-sunset
+    - flat-vector-city-poster
+    - photorealistic-architectural-render
+  limitations:
+    - Enable only when the user requests a townscape or cityscape.
+    - Preserve requested location, weather, time, landmarks, viewpoint, framing, and object inventory.
+    - Do not infer a canal, bridge, tower, boats, figures, or period architecture unless requested.
+    - Never copy the skyline, viewpoint, or exact arrangement of View of Delft or another named work.
+pillars:
+  - Organize requested foreground, town mass, and sky as broad connected horizontal zones, varying their height with the user's composition.
+  - Use selective light-dark alternation across facades and roof groups to clarify depth without emphasizing an unrequested landmark.
+  - Let distance emerge through restrained shifts in value, color, and edge definition; retain enough architectural structure to read the requested place.
+  - Keep reflections and small bright accents sparse and subordinate to the full scene.
+rules:
+  - id: requested-horizontal-scene-zones
+    axis: composition
+    importance: core
+    applies_when: The requested scene contains a townscape or cityscape with separable foreground, built mass, and sky.
+    instruction: Arrange the requested scene elements into broad, connected horizontal zones; vary the band heights and interruptions according to the user's viewpoint and inventory rather than imposing a fixed template.
+    observable: Foreground, town mass, and sky can be read as distinct but connected zones without changing the requested composition.
+    reject_when: Zones become rigid stripes, requested objects are rearranged, or an unrequested waterway or landmark is inserted.
+    evidence:
+      source_ids:
+        - rijksmuseum-vermeer-exhibition
+        - mauritshuis-view-of-delft
+      basis: institutional_description
+      visual_review: pending
+    avoid: copying a named skyline, fixed three-band proportions, and diagrammatic striping
+  - id: light-dark-distance-cues
+    axis: lighting_and_spatial_depth
+    importance: core
+    applies_when: The scene includes layered buildings or visible distance.
+    instruction: Place restrained light and dark passages across the requested architectural groups; use softer edges and modest value or color shifts in farther forms while keeping the focal architecture legible.
+    observable: A viewer can distinguish near and far planes through value, color, and edge changes rather than blur or a global haze.
+    reject_when: All buildings receive equal contrast, distance disappears, or lighting creates an invented focal landmark.
+    evidence:
+      source_ids:
+        - rijksmuseum-vermeer-exhibition
+      basis: institutional_description
+      visual_review: pending
+    avoid: global fog, hard cutout silhouettes, and uniformly sharp facade detail
+  - id: sparse-optical-highlights
+    axis: surface_and_light
+    importance: supporting
+    applies_when: Water, glass, masonry, or other reflective or textured material is requested.
+    instruction: Reserve small crisp highlights and reflections for a few material-specific points; keep broad surfaces quiet and preserve the requested material colors.
+    observable: Highlights read as local material cues and do not become an all-over sparkle or glow effect.
+    reject_when: Reflections dominate the town, every edge sparkles, or a digital glow obscures surface structure.
+    evidence:
+      source_ids:
+        - mauritshuis-view-of-delft
+      basis: institutional_description
+      visual_review: pending
+    avoid: glitter, bloom, repeated white flecks, and full-surface texture noise
+active_rule_ids:
+  - requested-horizontal-scene-zones
+  - light-dark-distance-cues
+  - sparse-optical-highlights
+joint_checks:
+  - id: readable-quiet-town-depth
+    rule_ids:
+      - requested-horizontal-scene-zones
+      - light-dark-distance-cues
+      - sparse-optical-highlights
+    instruction: Clarify the user's townscape through connected scene zones, selective light-dark structure, and sparse material highlights while preserving all requested content.
+    observable: The image reads as a quiet layered cityscape with legible near and far forms, restrained highlights, and no copied or invented landmark.
+sources:
+  - id: rijksmuseum-vermeer-exhibition
+    kind: museum_exhibition_analysis
+    url: https://www.rijksmuseum.nl/en/whats-on/exhibitions/past/vermeer/vermeer-exhibition-text
+  - id: mauritshuis-view-of-delft
+    kind: museum_collection_analysis
+    url: https://www.mauritshuis.nl/en/our-collection/artworks/92-view-of-delft
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested cityscape or townscape.
+    - Treat the user's scene contents, viewpoint, weather, time, and framing as authoritative.
+    - Use connected horizontal scene zones and selective distance cues through value, color, and edges.
+    - Keep highlights and reflections local and sparse.
+  avoid:
+    - adding canals, bridges, towers, boats, people, or period details unless requested
+    - copying View of Delft or another known cityscape's skyline or composition
+    - applying global haze, bloom, uniform texture, or rigid horizontal stripes

@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "johannes-vermeer",
+    "name": "约翰内斯·维米尔",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\johannes-vermeer"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A quiet fictional riverside townscape with a low row of brick houses, calm water, and cloudy morning sky; no towers, bridge, boats, people, or trees; horizontal 16:9 composition.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A quiet fictional riverside townscape with a low row of brick houses, calm water, and cloudy morning sky; no towers, bridge, boats, people, or trees; horizontal 16:9 composition.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new oil painting of A quiet fictional riverside townscape with a low row of brick houses, calm water, and cloudy morning sky; no towers, bridge, boats, people, or trees; horizontal 16:9 composition. in the user-requested setting, without copying any known artwork. Use stable room geometry, one dominant side window, calm wall space, and a small number of ordinary objects that establish scale. Model face, cloth, wood, ceramic, bread, and metal through gradual value transitions. Keep warm gray-beige air, ochre, umber, muted red, and controlled ultramarine accents. Let daylight organize the whole image; preserve open shadows, sparse optical highlights, soft intentional edges, and a contemplative untheatrical mood. The subject, arrangement, and setting must be new.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not use the artist's name, a recognizable historical composition, copied figures, famous room, theatrical drama, fantasy props, neon lighting, teal-orange grading, global bloom, plastic skin, excessive bokeh, decorative clutter, text, logos, or watermark.",
+  "template_variables": {
+    "SUBJECT": "A quiet fictional riverside townscape with a low row of brick houses, calm water, and cloudy morning sky; no towers, bridge, boats, people, or trees; horizontal 16:9 composition.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "quiet-cityscape-banded-depth": {
+        "minimum_score": 8,
+        "criteria": [
+          {
+            "id": "three_scene_bands",
+            "weight": 3,
+            "test": "Foreground, town mass, and sky form distinct but connected horizontal zones when those elements are requested."
+          },
+          {
+            "id": "distance_through_value_and_edges",
+            "weight": 3,
+            "test": "Distance is conveyed through controlled value, color, and edge changes without losing requested architecture."
+          },
+          {
+            "id": "light_and_surface_restraint",
+            "weight": 2,
+            "test": "Directional daylight and selective accents remain legible without a global glow or uniformly busy texture."
+          },
+          {
+            "id": "prompt_content_preserved",
+            "weight": 3,
+            "test": "Requested landmarks, objects, weather, framing, and exclusions remain authoritative."
+          }
+        ],
+        "reject_when": [
+          "copied_named_cityscape_or_landmark_arrangement",
+          "invented_unrequested_tower_bridge_boat_or_figures",
+          "global_color_filter_or_uniform_impasto"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

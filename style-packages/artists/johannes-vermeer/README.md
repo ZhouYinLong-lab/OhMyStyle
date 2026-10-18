@@ -22,6 +22,20 @@
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 
+## 可选新方向：安静城景的横向层次
+
+`art-direction.yaml` 登记一个实验方向，仅在用户明确要求城镇或城市景观时启用。它用前景、建筑主体与天空的横向关系组织画面，再用明暗、色彩和边缘变化表现纵深；不会替用户添加运河、桥、塔楼、船只或人物，也不会替换原包的室内默认特征。方向尚未完成跨题材人工评审，使用新版编译时必须显式声明上下文 `quiet-cityscape-banded-depth`。
+
+### 同一虚构城景的生成对照
+
+左图使用旧版包路径，右图在同一图像基础上应用新版方向。新版主要加强水面、建筑与天空之间的层次及明暗区分；目前改变量偏克制，建筑细节略有变化，尚不能据此证明规则对不同题材都稳定。
+
+| 旧版默认路径 | 新版城景方向 |
+| --- | --- |
+| ![维米尔旧版城景生成样图](comparisons/legacy.png) | ![维米尔新版城景方向生成样图](comparisons/direction.png) |
+
+任务文件：[`legacy-job.json`](comparisons/legacy-job.json)、[`direction-job.json`](comparisons/direction-job.json)；生图提示和评审记录：[`generation-prompts.md`](comparisons/generation-prompts.md)。
+
 ## 参考来源
 
 - [https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg](https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg)

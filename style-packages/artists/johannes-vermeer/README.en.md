@@ -22,6 +22,20 @@ An interior and cityscape painting profile built from controlled side light, qui
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rules.
 
+## Optional direction: quiet cityscape with banded depth
+
+`art-direction.yaml` registers an experimental direction for explicitly requested townscapes and cityscapes. It organizes foreground, built mass, and sky through broad horizontal relationships, then uses value, color, and edge changes to show depth. It does not add a canal, bridge, tower, boats, or figures, and it does not replace the package's interior default. Cross-subject visual review is pending. When compiling this direction, explicitly declare the `quiet-cityscape-banded-depth` context.
+
+### Generated comparison using the same fictional townscape
+
+The left image uses the legacy package path. The right image applies the new direction to the same image. The main visible changes are stronger separation among water, buildings, and sky, and more deliberate value grouping. The change remains subtle; architectural details vary slightly, so this pair does not establish cross-subject stability.
+
+| Legacy default path | New cityscape direction |
+| --- | --- |
+| ![Vermeer legacy cityscape sample](comparisons/legacy.png) | ![Vermeer cityscape direction sample](comparisons/direction.png) |
+
+Compiled jobs: [`legacy-job.json`](comparisons/legacy-job.json), [`direction-job.json`](comparisons/direction-job.json). Generation and review notes: [`generation-prompts.md`](comparisons/generation-prompts.md).
+
 ## Reference sources
 
 - [https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg](https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg)

@@ -1,5 +1,5 @@
 package_id: johannes-vermeer
-package_version: 0.1.0
+package_version: 0.2.0
 invariants:
 - id: signature_primary
   weight: 3
@@ -44,3 +44,23 @@ image_audit:
       layout: 0.999
   reason: Automated gallery similarity is a curator-review cue, not evidence of semantic duplication.
   action: preserve-distinctive-signature-and-recheck-gallery
+profiles:
+  quiet-cityscape-banded-depth:
+    minimum_score: 8
+    criteria:
+      - id: three_scene_bands
+        weight: 3
+        test: Foreground, town mass, and sky form distinct but connected horizontal zones when those elements are requested.
+      - id: distance_through_value_and_edges
+        weight: 3
+        test: Distance is conveyed through controlled value, color, and edge changes without losing requested architecture.
+      - id: light_and_surface_restraint
+        weight: 2
+        test: Directional daylight and selective accents remain legible without a global glow or uniformly busy texture.
+      - id: prompt_content_preserved
+        weight: 3
+        test: Requested landmarks, objects, weather, framing, and exclusions remain authoritative.
+    reject_when:
+      - copied_named_cityscape_or_landmark_arrangement
+      - invented_unrequested_tower_bridge_boat_or_figures
+      - global_color_filter_or_uniform_impasto

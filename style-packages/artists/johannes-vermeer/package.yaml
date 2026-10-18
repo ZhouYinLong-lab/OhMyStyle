@@ -2,11 +2,12 @@ id: johannes-vermeer
 name: 约翰内斯·维米尔
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 entity: catalog/persons/artists/johannes-vermeer/entity.yaml
 summary: >-
   An interior and cityscape painting profile built from controlled side light, quiet geometry, measured domestic detail, and soft optical transitions.
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml
