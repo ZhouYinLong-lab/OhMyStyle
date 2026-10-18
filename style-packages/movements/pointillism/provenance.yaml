@@ -1,12 +1,20 @@
 package_id: pointillism
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
-source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
+source_policy: Museum and educational sources are link-only; verify redistribution rights before bundling any external image.
 sources:
-  - url: 'https://en.wikipedia.org/wiki/Pointillism'
-    title: 'Pointillism'
-    authority: 'Wikipedia editors'
-    supports: source traceability and package scope
+  - url: 'https://www.metmuseum.org/zh/essays/georges-seurat-1859-1891-and-neo-impressionism'
+    title: 'Georges Seurat (1859–1891) and Neo-Impressionism'
+    authority: 'The Metropolitan Museum of Art'
+    supports: measured color touches, optical mixture, the distinction between pointillism and divisionism, and contrast with Impressionist spontaneity
+  - url: 'https://www.metmuseum.org/art/collection/search/437658?nextInternalLocale=en'
+    title: 'Study for A Sunday on La Grande Jatte'
+    authority: 'The Metropolitan Museum of Art'
+    supports: discrete pigment marks, color juxtaposition, optical mixing, and the change from free sketch marks to tighter dots
+  - url: 'https://archive.artic.edu/sciarttech/global_pages/g3.4.html'
+    title: 'Sunday Afternoon on the Island of La Grande Jatte'
+    authority: 'Art Institute of Chicago'
+    supports: small adjacent complementary colors, optical color mixing, measured contours, and form through dot placement
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

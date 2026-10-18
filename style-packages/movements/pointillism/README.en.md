@@ -28,11 +28,24 @@ and must never be added as default content.
 
 - `identity.yaml`: scope, subjects, and exclusions
 - `visual-signature.yaml`: features that should survive a subject change
+- `art-direction.yaml`: optional rules under the new architecture; opt in explicitly
 - `reproduction.yaml`: medium, materials, and construction order
 - `prompts/base.txt`, `prompts/negative.txt`: prompt constraints
 - `palette/palette.json`: color roles and values
 - `evaluation.yaml`: post-generation checks
 - `references/manifest.csv`, `provenance.yaml`: sources and rights boundaries
+
+## New direction (experimental)
+
+The new direction has five reviewable parts: discrete visible dots, form and contours built from dot fields, colors kept separate up close and optically mixed at normal viewing distance, dot size and spacing adapted to material and depth, and strict preservation of the requested subject. The main difference from the Impressionism movement package is that Impressionism emphasizes fast, freely varying marks, while Pointillism deliberately separates color and organizes dot fields. It also differs from a printed halftone screen; the image should not collapse into a uniform grid or pixel pattern.
+
+Research is grounded in The Met's discussion of optical mixture and the distinction between Pointillism and Divisionism, and the Art Institute of Chicago's explanation of dots forming light, shadow, and contour. The rules remain experimental and the legacy prompt remains the default. Compile the new direction explicitly:
+
+```powershell
+python tools/compile-style.py style-packages/movements/pointillism --direction package --subject "A red ceramic teapot and two lemons on a wooden table, warm window light" --output runs/pointillism-v2-job.json
+```
+
+Review the result both close up and at normal viewing distance: dots should remain separate nearby and form coherent color, light, and subject from farther away. Repeat with a different material to check that dot size, density, and color relationships adapt to the object.
 
 ## Sources and rights
 
@@ -46,6 +59,10 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+- [The Met: Georges Seurat and Neo-Impressionism](https://www.metmuseum.org/zh/essays/georges-seurat-1859-1891-and-neo-impressionism)
+- [The Met: Study for A Sunday on La Grande Jatte](https://www.metmuseum.org/art/collection/search/437658?nextInternalLocale=en)
+- [Art Institute of Chicago: Pointillist technique and optical mixing](https://archive.artic.edu/sciarttech/global_pages/g3.4.html)
+
 ## Use only this package
 
 Choose one of the following methods.
@@ -57,7 +74,7 @@ Upload this package directory to an Agent, or provide its local path, and ask:
 ```text
 Use this style package to help me generate an image.
 
-First read identity.yaml, visual-signature.yaml, reproduction.yaml,
+First read identity.yaml, visual-signature.yaml, art-direction.yaml (if opting into the new rules), reproduction.yaml,
 prompts/base.txt, prompts/negative.txt, palette/palette.json, and evaluation.yaml.
 Compile their rules into the generation process. Do not use only the style name
 as a prompt and do not copy a reference work.

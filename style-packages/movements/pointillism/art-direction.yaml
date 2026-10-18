@@ -1,0 +1,170 @@
+schema_version: 2.0.0
+status: experimental
+id: pointillism-optical-dot-field
+name: 点彩画法：有组织的光学混色
+base_package: movements/pointillism
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    以彼此分离、可近看辨认的颜料色点构成形体；颜色在观者的正常观看距离
+    产生光学混合，点的疏密、大小和色彩关系服从平面、体积与光线，而不是
+    退化为印刷网点或随机噪声。
+  required_contexts: []
+  incompatible_contexts:
+    - photographic-output
+    - vector-halftone
+  limitations:
+    - 点必须可辨认且彼此分离；若输出尺寸无法保留点状笔触，应调整画面密度而非模糊成色块。
+    - 光学混色是观看距离下的视觉效果，不表示所有颜色配对都必须使用互补色。
+    - 本方向聚焦点状颜料的组织方法，不默认采用修拉的具体人物、场景或构图。
+pillars:
+  - 用分离的色点构成表面，让综合色彩在观者眼中而非画布平涂中形成。
+  - 让点的大小、间距、密度和色相随物体平面、光照、边缘和观看距离变化。
+  - 通过点的聚散塑造轮廓与体积；点状表面仍要服务主体可读性。
+  - 颜色并置有明确关系，互补色或邻近色只在能够解释局部光色时使用。
+rules:
+  - id: pointillism-separated-pigment-dots
+    axis: surface
+    importance: core
+    applies_when: 画面采用点彩画法作为主要绘画表面。
+    instruction: >-
+      用多个彼此分离、边缘可辨的颜料色点覆盖主要形体；不先铺满整块综合色，
+      也不把颜色完全揉合。点可以短椭圆或小笔触状，但整体需读作有意控制的点群。
+    observable: >-
+      放大可见独立颜料点之间的间隙和色差；缩至正常观看距离时，这些点组合成
+      连贯的物体和综合色面。
+    reject_when: >-
+      形体被连续平涂、柔焦融合或完全均匀的印刷网点取代，无法辨认颜料分离。
+    avoid: flat unbroken color fields, blurred dots, mechanical halftone screen
+    evidence:
+      source_ids:
+        - pointillism-met-neo-impressionism
+        - pointillism-met-study
+      basis: institutional_description
+      visual_review: pending
+  - id: pointillism-form-through-dot-field
+    axis: form_and_composition
+    importance: core
+    applies_when: 物体需要由色点组织轮廓、平面或体积。
+    instruction: >-
+      沿物体的转面、重叠和轮廓调整点的间距与色相；边缘可用更紧密或对比更高
+      的点群明确，暗部则用颜色和密度塑形，不用连续黑线勾边。
+    observable: >-
+      物体形体能从点群的聚散和色彩关系中读出；点群随平面变化，主体轮廓无需
+      实线描边仍然清楚。
+    reject_when: >-
+      色点不受形体影响地均匀撒满画面，或必须依赖粗黑轮廓才能看出物体结构。
+    avoid: uniform dot density, black contour outlines, dots detached from form
+    evidence:
+      source_ids:
+        - pointillism-met-study
+        - pointillism-artic-guide
+      basis: direct_visual_observation
+      visual_review: pending
+  - id: pointillism-optical-color-pairs
+    axis: color
+    importance: core
+    applies_when: 局部颜色可由相邻色点和观看距离共同组织。
+    instruction: >-
+      将未混合的纯色或近纯色成对、成簇并置；需要增强亮度或色彩振动时，可让
+      有依据的冷暖或互补色相邻，使它们在观看距离产生综合色。按物体的固有色
+      和照明选择色对，不机械轮换色轮。
+    observable: >-
+      近看时各色仍独立，远看时综合色清楚；互补色增强局部光感而不制造无来源
+      的霓虹边缘，阴影保留色彩层次。
+    reject_when: >-
+      色点全部使用单一互补配对，产生刺眼噪声，或颜色在画布上预先混匀而失去
+      光学并置效果。
+    avoid: arbitrary complementary pairs, neon edge flicker, premixed smooth gradients
+    evidence:
+      source_ids:
+        - pointillism-met-neo-impressionism
+        - pointillism-artic-guide
+      basis: institutional_description
+      visual_review: pending
+  - id: pointillism-scaled-dot-rhythm
+    axis: mark_making
+    importance: core
+    applies_when: 画面包含不同距离、材质或明暗层级。
+    instruction: >-
+      根据视距和材质调节点的尺度与节奏：主体焦点可更密、更细，次要面适当放大
+      或疏开；同一平面内保持可识别的节拍，但不要排列成严格等距的数字网格。
+    observable: >-
+      点的尺度和间距形成有控制的重复变化；焦点细节更集中，远处不坍缩为脏点，
+      不同材料仍可区分。
+    reject_when: >-
+      所有点完全同尺寸同间距，呈现网版印刷或屏幕像素感；或点太小太密而融合成
+      无结构的噪点。
+    avoid: identical dot size and spacing, random speckle, pixel grid, noise texture
+    evidence:
+      source_ids:
+        - pointillism-met-study
+        - pointillism-artic-guide
+      basis: curatorial_inference
+      visual_review: pending
+  - id: pointillism-subject-independence
+    axis: subject_scope
+    importance: core
+    applies_when: 用户提供了明确的主体、场景、数量和叙事。
+    instruction: >-
+      只把点状颜料组织方法应用到用户指定的内容；若用户没有要求，不添加公园、
+      观众、草地、河岸或任何来自某一著名作品的场景关系。
+    observable: >-
+      主体、对象数量、地点和主要关系与请求一致；风格差异体现在色点建构，而非
+      自动替换题材。
+    reject_when: >-
+      生成结果把用户题材替换为熟悉的公园场景、固定人物队列或复制的名作布局。
+    avoid: unrequested park scene, fixed figure procession, copied famous composition
+    evidence:
+      source_ids:
+        - pointillism-met-study
+      basis: original_design_intent
+      visual_review: pending
+active_rule_ids:
+  - pointillism-separated-pigment-dots
+  - pointillism-form-through-dot-field
+  - pointillism-optical-color-pairs
+  - pointillism-scaled-dot-rhythm
+  - pointillism-subject-independence
+joint_checks:
+  - id: pointillism-dot-optical-coherence
+    rule_ids:
+      - pointillism-separated-pigment-dots
+      - pointillism-optical-color-pairs
+      - pointillism-scaled-dot-rhythm
+    instruction: >-
+      让分离的色点、相邻色彩和观看距离协同工作；局部色点保持独立，远看形成
+      有组织的综合色，而不是噪声或预混色。
+    observable: >-
+      近距离能够看到色点分离，正常观看距离能读出平面综合色和光照关系。
+  - id: pointillism-form-subject-coherence
+    rule_ids:
+      - pointillism-form-through-dot-field
+      - pointillism-subject-independence
+    instruction: >-
+      点的密度和颜色要解释用户指定对象的形体；轮廓与构图仍服从主体，不以点彩
+      纹理替换主体识别。
+    observable: >-
+      用户指定主体从点群结构中可辨，且没有被默认的名作母题或队列构图替换。
+sources:
+  - id: pointillism-met-neo-impressionism
+    kind: museum_movement_analysis
+    base_asset_id: pointillism-met-neo-impressionism
+  - id: pointillism-met-study
+    kind: museum_object_record
+    base_asset_id: pointillism-met-study
+  - id: pointillism-artic-guide
+    kind: museum_education_resource
+    base_asset_id: pointillism-artic-guide
+execution:
+  route: text_only
+  must:
+    - Preserve the requested subject, count, setting, and composition.
+    - Build important surfaces from discrete pigment dots rather than flat fills or blur.
+    - Vary dot scale and spacing to describe form, light, material, and depth.
+    - Let colors remain separate close up and optically combine at normal viewing distance.
+  avoid:
+    - unrequested park, riverbank, figure procession, or copied La Grande Jatte arrangement
+    - uniform halftone screen, pixel grid, or random noise
+    - flat fills, smooth blur, black contour outlines, or arbitrary neon color pairs

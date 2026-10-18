@@ -1,12 +1,17 @@
 profiles:
   generic:
     required:
-      - package-specific visual signature is observable
+      - discrete color marks remain visible at close viewing distance
+      - separated hues optically combine at intended viewing distance
+      - mark density and size support form, light, and spatial depth
       - composition remains coherent for a new subject
       - user-supplied subject and object count are preserved
       - no copied reference composition or branded material
     reject_if:
       - style is represented only by a global color filter
+      - marks are so uniformly small or dense that they merge into noise
+      - forms are painted with flat color rather than discrete marks
+      - color pairing is random and does not describe light, plane, or material
       - text, logo, watermark, or unintended signature is present
       - an unrequested recurring object, location, character, or narrative motif is added
   portrait:
@@ -22,10 +27,10 @@ semantic_evaluation:
     notes: "Pending provider-backed neutral-subject review."
   distinctive_signature:
     score: null
-    notes: "Record which visual decisions remain observable after the subject changes."
+    notes: "Check distinct color dots close up and optical color mixing at normal viewing distance across at least two unlike subjects."
   visual_overlap:
     score: null
-    notes: "Compare the representative image and output with near-duplicate packages."
+    notes: "Distinguish the deliberate, measured dot field from Impressionism's faster irregular marks and from half-tone printing. Compare results at close and normal viewing distances."
   cross_subject_stability:
     score: null
-    notes: "Run at least two different subjects before assigning a score."
+    notes: "Run at least two subjects with different surfaces and lighting; verify dot size, spacing, and color pairs adapt without losing optical mixing."

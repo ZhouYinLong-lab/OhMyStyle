@@ -2,7 +2,7 @@ id: pointillism
 name: 点彩画法
 kind: movement
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以独立色点、光学混色、局部色彩并置和有节奏的点状笔触构成可辨识的绘画表面。
 files:
@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: movement

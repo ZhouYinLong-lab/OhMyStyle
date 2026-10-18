@@ -12,7 +12,9 @@ scope:
     - copied composition
     - named character or branded asset
 sources:
-  - "https://en.wikipedia.org/wiki/Pointillism"
+  - https://www.metmuseum.org/zh/essays/georges-seurat-1859-1891-and-neo-impressionism
+  - https://www.metmuseum.org/art/collection/search/437658?nextInternalLocale=en
+  - https://archive.artic.edu/sciarttech/global_pages/g3.4.html
 notes:
   - "独立色点、光学混色、局部色彩并置和有节奏的点状笔触构成绘画表面"
   - 示例场景只是测试入口，不是每次生成的默认主体。
