@@ -43,6 +43,18 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: measured void, perspective shift, and geometric long shadows (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when `metaphysical-spatial-enigma` is explicitly declared. It preserves the user's subject and setting, leaves substantial quiet space, introduces one limited perspective or scale mismatch, and uses long, clear-edged shadows as a second set of spatial forms.
+
+This differs from Hopper's direction, which emphasizes coherent architecture, a legible natural-light path, and human scale. De Chirico's direction permits one deliberate spatial disagreement while keeping the subject readable. It does not add a tower, arcade, statue, train, or mannequin by default, and it does not turn empty space into ruins or horror.
+
+```powershell
+python tools/compile-style.py style-packages/artists/giorgio-de-chirico --direction package --context metaphysical-spatial-enigma --subject "One red chair and one closed pale-yellow umbrella in an empty stone courtyard"
+```
+
+[`comparisons/`](comparisons/) contains legacy and new compiled jobs and actual generated images of the same subject for review. The new direction remains experimental.
+
 ## Use only this package
 
 Choose one of the following methods.

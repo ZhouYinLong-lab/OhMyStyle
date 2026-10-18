@@ -88,6 +88,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [培根封闭空间与局部轮廓偏移](../../style-packages/artists/francis-bacon/art-direction.yaml) | 框架压缩空间、局部轮廓偏移、可见的覆盖与擦刮颜料层 | text_only | enclosed-figurative-tension |
 | [苏巴朗静物秩序与聚焦侧光](../../style-packages/artists/francisco-de-zurbaran/art-direction.yaml) | 用户指定物件的间距、单一侧光、克制背景与材质辨析 | text_only | ordered-object-still-life |
 | [里希特颜料覆盖、拖拽与局部显露](../../style-packages/artists/gerhard-richter/art-direction.yaml) | 保留识别锚点，以定向刮擦、覆盖与显露在具象和抽象之间转换 | text_only | layered-image-veil |
+| [德·基里科空场、透视错位与几何长影](../../style-packages/artists/giorgio-de-chirico/art-direction.yaml) | 大面积留白、有限透视失配与长影构成的可读空间谜题 | text_only | metaphysical-spatial-enigma |
 | [修拉测量式构图与分色笔触](../../style-packages/artists/georges-seurat/art-direction.yaml) | 稳定剪影、物件间距、随平面变化的分色笔触与光色关系 | text_only | measured-chromatic-composition |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。

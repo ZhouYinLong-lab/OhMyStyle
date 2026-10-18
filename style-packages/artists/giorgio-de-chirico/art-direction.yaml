@@ -1,0 +1,109 @@
+schema_version: 2.0.0
+status: experimental
+id: de-chirico-shadow-geometry-and-spatial-dislocation
+name: de Chirico shadow geometry and spatial dislocation
+base_package: artists/giorgio-de-chirico
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    A quiet architectural painting direction that creates unease through the
+    relationship between measured empty space, a limited perspective shift,
+    and long geometric shadows. Keep most forms stable and legible, but allow
+    one deliberate disagreement in scale, vanishing direction, or shadow origin.
+    The user's requested scene remains authoritative; classical arcades, statues,
+    towers, mannequins, trains, and named piazzas are never required motifs.
+  required_contexts:
+    - metaphysical-spatial-enigma
+  incompatible_contexts:
+    - strict-single-point-architectural-render
+    - crowded-narrative-interior
+    - photorealistic-real-estate-image
+  limitations:
+    - Preserve the user-requested subject, setting, count, and object relationships; introduce no standard de Chirico motifs by default.
+    - Limit spatial disagreement to one or two deliberate relationships so the scene remains structurally readable.
+    - Make long shadows visually clear, but do not imply an unrequested person, event, threat, or hidden figure.
+pillars:
+  - Keep broad areas of floor, wall, or sky quiet so the requested objects feel isolated without turning the scene into a ruin.
+  - Set a mostly stable architectural grid, then introduce one controlled perspective, scale, or alignment discrepancy.
+  - Use one low, directional light to cast long, sharply legible shadow shapes across the ground plane.
+  - Simplify architectural surfaces and use a restrained, sun-dried palette with a clear boundary between built forms and sky or distance.
+rules:
+  - id: measured-void-and-offset-perspective
+    axis: space_and_perspective
+    importance: core
+    applies_when: The user requests an architectural or object-led scene with a quiet, uncanny spatial mood.
+    instruction: Preserve the requested architecture and objects, leave substantial quiet space around them, and introduce one deliberate but bounded mismatch in a vanishing direction, scale relationship, or alignment.
+    observable: Most geometry remains readable while one spatial relationship feels subtly impossible or unsettled.
+    reject_when: Multiple unrelated perspective errors make the scene incoherent, or the scene copies a named piazza layout.
+    evidence:
+      source_ids:
+        - dechirico-moma-artist
+        - dechirico-moma-nostalgia
+      basis: institutional_description
+      visual_review: pending
+    avoid: copied piazza layouts, automatic arcades, towers, statues, and arbitrary broken geometry
+  - id: long-shadow-as-independent-shape
+    axis: light_and_shadow
+    importance: core
+    applies_when: The user requests a low-angle, late-day, or enigmatic architectural light treatment.
+    instruction: Cast one or two long, clean-edged shadows across a broad ground plane; let their direction or visible origin remain slightly ambiguous without adding an unseen character or event.
+    observable: Shadow shapes become compositional forms that cross the empty space while the requested objects remain identifiable.
+    reject_when: Shadows contradict every visible light cue, become a horror threat, or obscure the requested objects.
+    evidence:
+      source_ids:
+        - dechirico-moma-audio
+        - dechirico-foundation-shadow
+      basis: institutional_description
+      visual_review: pending
+    avoid: default human-shaped shadow, horror silhouette, soft all-over dusk, and multiple conflicting suns
+  - id: restrained-built-form-and-color-separation
+    axis: form_and_palette
+    importance: supporting
+    applies_when: The scene contains architecture or planar surfaces under clear directional light.
+    instruction: Describe walls and ground with simple, firm planes and a restrained sun-dried palette; keep sky, built surfaces, and shadow fields distinct while preserving the user's specified colors where applicable.
+    observable: The scene reads through a few calm color fields and clear edges rather than ornate detail or a global sepia filter.
+    reject_when: Palette or simplified geometry replaces requested material identity, or every surface receives the same brown cast.
+    evidence:
+      source_ids:
+        - dechirico-moma-artist
+        - dechirico-foundation-shadow
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: uniform sepia filter, excessive architectural ornament, and unrelated surreal props
+active_rule_ids:
+  - measured-void-and-offset-perspective
+  - long-shadow-as-independent-shape
+  - restrained-built-form-and-color-separation
+joint_checks:
+  - id: void-perspective-and-shadow-coherence
+    rule_ids:
+      - measured-void-and-offset-perspective
+      - long-shadow-as-independent-shape
+      - restrained-built-form-and-color-separation
+    instruction: Use quiet space, one bounded perspective disagreement, and long shadow shapes to create an enigmatic but readable version of the user's requested scene.
+    observable: Requested subjects remain count-correct; most architecture reads clearly; only a limited spatial cue is uncanny; shadows are long and legible without adding a hidden narrative.
+sources:
+  - id: dechirico-moma-artist
+    kind: museum_artist_analysis
+    url: https://www.moma.org/artists/1106-giorgio-de-chirico
+  - id: dechirico-moma-nostalgia
+    kind: museum_artwork_analysis
+    url: https://www.moma.org/collection/works/78738
+  - id: dechirico-moma-audio
+    kind: museum_artwork_analysis
+    url: https://www.moma.org/audio/playlist/3/189
+  - id: dechirico-foundation-shadow
+    kind: foundation_art_history_essay
+    url: https://fondazionedechirico.org/wp-content/uploads/2019/07/26.-n.-11-13-Metaphysical-Art-Nature_According_to_de_Chirico_R.Levante_2014_ENG.pdf
+execution:
+  route: text_only
+  must:
+    - Declare metaphysical-spatial-enigma before applying this direction.
+    - Preserve the user's requested identities, counts, setting, and object relationships.
+    - Keep most spatial geometry readable and limit discrepancies to one or two cues.
+    - Use long, clear-edged shadows without adding an unseen person or threat.
+  avoid:
+    - adding arcades, statues, mannequins, towers, trains, or piazza layouts without request
+    - turning subtle spatial tension into a horror scene, ruined city, or incoherent dream collage
+    - replacing the requested palette with a uniform sepia filter

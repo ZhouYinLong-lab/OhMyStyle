@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "giorgio-de-chirico",
+    "name": "乔治·德·基里科",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\giorgio-de-chirico"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One red chair and one closed pale-yellow umbrella in an empty stone courtyard",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: One red chair and one closed pale-yellow umbrella in an empty stone courtyard\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new subject and composition using these observable visual decisions:\n- 建筑透视线和长阴影把视线引向空旷深处\n- 主体数量少但关系有悬念\n- 远处可有小型人物或列车作为尺度线索\n- 赭黄、土红、蓝绿阴影、乳白天空和深棕构成干燥色组\n- 天空与建筑有明确分区\n- 避免浓艳现代霓虹\n- 平静而坚实的油画表面\n- 古典建筑细节与简化形体并置\n- 硬边和柔和空气透视并存\n- 低角度长阴影\n- 光线像来自不可见的傍晚太阳\n- 阴影有几何形状\n- 墙面、石材、木箱和雕像质感简化但可信\n- 画面不靠厚重笔触制造神秘\n- 纹理少、空间静\n- 远景略有干燥空气感\n- 神秘来自空间逻辑与时间错位\n- 空旷不等于废墟灾难\n- 不复制原作广场布局\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- generic_surrealism\n- busy_city_scene\n- random_object_collage\n- copied_landmark",
+  "template_variables": {
+    "SUBJECT": "One red chair and one closed pale-yellow umbrella in an empty stone courtyard",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "metaphysical-spatial-enigma": {
+        "required": [
+          "requested subjects and object counts remain unchanged",
+          "most architecture remains readable with only a limited perspective or scale mismatch",
+          "long shadow shapes cross quiet space and retain a plausible light direction",
+          "the scene remains calm and uncanny rather than horror or ruin imagery"
+        ],
+        "reject_if": [
+          "unrequested mannequin, statue, train, tower, arcade, or hidden figure appears",
+          "multiple perspective disagreements destroy spatial legibility",
+          "shadows imply an unrequested person, threat, or event"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

@@ -1,6 +1,6 @@
 package_id: giorgio-de-chirico
-package_version: 0.1.0
-curation_status: reference_backed_link_only
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
 sources:
@@ -9,5 +9,25 @@ sources:
   title: Giorgio de Chirico biography
   supports: source traceability and observable package scope
   accessed: '2026-08-07'
+- url: https://www.moma.org/artists/1106-giorgio-de-chirico
+  authority: The Museum of Modern Art
+  title: Giorgio de Chirico artist overview
+  supports: deliberately distorted perspectives, tilted ground, empty architectural spaces, and long shadows
+  accessed: '2026-10-19'
+- url: https://www.moma.org/collection/works/78738
+  authority: The Museum of Modern Art
+  title: The Nostalgia of the Infinite
+  supports: tall architectural form, compressed framing, and metaphysical spatial tension
+  accessed: '2026-10-19'
+- url: https://www.moma.org/audio/playlist/3/189
+  authority: The Museum of Modern Art
+  title: Gare Montparnasse (The Melancholy of Departure)
+  supports: inconsistent perspective and emphasized void beneath architectural forms
+  accessed: '2026-10-19'
+- url: https://fondazionedechirico.org/wp-content/uploads/2019/07/26.-n.-11-13-Metaphysical-Art-Nature_According_to_de_Chirico_R.Levante_2014_ENG.pdf
+  authority: Fondazione Giorgio e Isa de Chirico
+  title: "The Nature of Shadow: The Enigma of the Italian Piazza"
+  supports: long, sharply defined shadows as compositional and interpretive elements
+  accessed: '2026-10-19'
 attribution: Works by Giorgio de Chirico remain protected where applicable; this package
   abstracts metaphysical spatial devices without copying a named piazza.
