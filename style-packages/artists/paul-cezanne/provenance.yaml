@@ -3,6 +3,10 @@ package_version: 0.1.0
 curation_status: reference_images_verified
 source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
 sources:
+  - url: https://www.nga.gov/educational-resources/sense-place-france/cezannes-still-lifes
+    authority: National Gallery of Art
+    title: Cézanne's Still Lifes
+    supports: institutional description of object relationships and viewer-facing tilted support planes
   - url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_La_bouteille_de_menthe_poivr%C3%A9e_(National_Gallery_of_Art).jpg
     authority: Wikimedia Commons
     supports: primary public-domain reference image and work attribution

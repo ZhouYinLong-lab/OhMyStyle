@@ -224,6 +224,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [德·斯塔埃尔表演者色块节奏](../style-packages/artists/nicolas-de-stael/art-direction.yaml) | 用户指定的舞者或乐手压成少量倾角不同的色块，以动作线索维持可读性 | `text_only`，声明 `dance-or-music-performance` |
 | [洛克威尔共享道具反应链](../style-packages/artists/norman-rockwell/art-direction.yaml) | 用一个共享事件连接小群像，以发起动作和不同回应读出单帧叙事 | `text_only`，声明 `reaction-chain-around-shared-prop` |
 | [毕加索单一物体多视点](../style-packages/artists/pablo-picasso/art-direction.yaml) | 在同一个物体轮廓内结合正面、侧面或俯视面，并让周边空间更安静 | `text_only`，声明 `single-object-multiple-viewpoints` |
+| [塞尚倾斜桌面静物平衡](../style-packages/artists/paul-cezanne/art-direction.yaml) | 倾斜用户指定的桌面支撑面，以接触和色面关系平衡物件，局部视角保持可读 | `text_only`，声明 `tilted-tabletop-still-life` |
 
 ## 6. 从主体请求到结果
 

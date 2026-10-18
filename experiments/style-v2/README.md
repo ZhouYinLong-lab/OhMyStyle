@@ -115,6 +115,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [德·斯塔埃尔表演者色块节奏](../../style-packages/artists/nicolas-de-stael/art-direction.yaml) | 表演者各以少量倾斜色面表现节奏，乐器只保留必要线索 | text_only | dance-or-music-performance |
 | [洛克威尔共享道具反应链](../../style-packages/artists/norman-rockwell/art-direction.yaml) | 一件共享道具或事件串联小群像，每个人以独特反应引导视线回到焦点 | text_only | reaction-chain-around-shared-prop |
 | [毕加索单一物体多视点](../../style-packages/artists/pablo-picasso/art-direction.yaml) | 正面、侧面或俯视面组合进同一个清晰可辨的物体轮廓 | text_only | single-object-multiple-viewpoints |
+| [塞尚倾斜桌面静物平衡](../../style-packages/artists/paul-cezanne/art-direction.yaml) | 倾斜桌面支撑平面并平衡用户指定的物件，保留清楚的接触点 | text_only | tilted-tabletop-still-life |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

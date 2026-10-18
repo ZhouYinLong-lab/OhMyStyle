@@ -210,6 +210,7 @@ the same prompt wording.
 | [Nicolas de Staël performance gesture blocks](../style-packages/artists/nicolas-de-stael/art-direction.yaml) | User-requested dancers or musicians become a few angled color masses with sparse action cues | `text_only`, declare `dance-or-music-performance` |
 | [Rockwell reaction chain around a shared prop](../style-packages/artists/norman-rockwell/art-direction.yaml) | A single shared event links a small group through one initiating gesture and differentiated reactions | `text_only`, declare `reaction-chain-around-shared-prop` |
 | [Picasso single object in multiple viewpoints](../style-packages/artists/pablo-picasso/art-direction.yaml) | Front, side, or top views meet within one recognizable object silhouette while the surrounding space stays quiet | `text_only`, declare `single-object-multiple-viewpoints` |
+| [Cézanne tilted tabletop object balance](../style-packages/artists/paul-cezanne/art-direction.yaml) | Tilt the requested support plane and balance user-specified objects through contact and color relationships | `text_only`, declare `tilted-tabletop-still-life` |
 
 ## 6. Execution routes
 

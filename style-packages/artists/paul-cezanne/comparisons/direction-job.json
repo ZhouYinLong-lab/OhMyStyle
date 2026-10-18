@@ -1,0 +1,153 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "paul-cezanne",
+    "name": "保罗·塞尚",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\paul-cezanne"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A blue ceramic bowl holding exactly three pears, on a wooden table with exactly one folded ivory cloth, horizontal 16:9.",
+  "prompt": "USER SUBJECT: A blue ceramic bowl holding exactly three pears, on a wooden table with exactly one folded ivory cloth, horizontal 16:9.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting_with_constructive_color_planes\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [viewer-facing-support-plane] Tilt the visible tabletop or counter plane toward the viewer so its surface occupies a clear structural area; let one edge or cloth fold reveal that tilt without turning the entire room into a new viewpoint.\n- [balanced-object-network] Arrange the requested objects as a connected mass network using deliberate intervals and selective overlaps; give each object a stable base or contact relation on the tilted support and preserve its identity.\n- [local-axis-tension] Let one or two requested object axes differ slightly from the support plane's angle; use adjacent warm and cool color planes and short directional strokes to keep each object solid despite the local mismatch.\n- [supported-tilted-still-life] Tilt only the user-requested support plane; balance the requested objects across it with visible contact and limited local axis tension, using constructive color and directional strokes to keep forms solid.\nREQUIREMENT: Activate only for a user-requested tabletop still life.\nREQUIREMENT: Preserve the user's object count, identities, materials, and setting.\nREQUIREMENT: Tilt the visible support plane while keeping object contact points readable.\nREQUIREMENT: Balance the objects as a connected mass network and limit perspective mismatch to a few local axes.\nREQUIREMENT: Use adjacent constructive color planes and directional brush marks rather than smooth airbrush shading.\nREQUIREMENT: Review support, contact, count, and object solidity after generation.",
+  "negative_prompt": "full-scene fisheye distortion, overhead flat-lay, and copied table edge arrangement\nextra fruit, bottles, plates, or cloth unless requested; evenly spaced catalog rows\nimpossible geometry, global fragmentation, and airbrushed gradients\nadding fruit, bottles, cloth, plates, or other props unless requested\nturning the whole scene into a fisheye or impossible-perspective exercise\ncopying a named still life or its exact object arrangement",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "cezanne-tilted-tabletop-object-balance",
+    "name": "Cézanne tilted tabletop object balance",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\paul-cezanne\\art-direction.yaml",
+    "sha256": "8de3c789ae8efda4837bea4871b4acd39c4b74a6e1362d8a5861db34fb4abbee",
+    "active_rule_ids": [
+      "viewer-facing-support-plane",
+      "balanced-object-network",
+      "local-axis-tension"
+    ],
+    "contexts": [
+      "tilted-tabletop-still-life"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested tabletop still life.",
+      "Preserve the user's object count, identities, materials, and setting.",
+      "Tilt the visible support plane while keeping object contact points readable.",
+      "Balance the objects as a connected mass network and limit perspective mismatch to a few local axes.",
+      "Use adjacent constructive color planes and directional brush marks rather than smooth airbrush shading.",
+      "Review support, contact, count, and object solidity after generation."
+    ],
+    "avoid": [
+      "adding fruit, bottles, cloth, plates, or other props unless requested",
+      "turning the whole scene into a fisheye or impossible-perspective exercise",
+      "copying a named still life or its exact object arrangement"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting_with_constructive_color_planes",
+      "representation": "stylized",
+      "description": "An optional direction for a user-requested tabletop still life. Tilt the supporting plane toward the viewer enough to reveal its surface, then balance the requested objects across that plane through contact, overlap, and warm-cool color relationships. Objects may keep slightly different local axes, but they remain solid and connected to their support. Fruit, bottles, cloth, or a particular tabletop are not defaults.",
+      "required_contexts": [
+        "tilted-tabletop-still-life"
+      ],
+      "incompatible_contexts": [
+        "landscape-only-scene",
+        "strict-single-point-product-photography",
+        "floating-object-arrangement"
+      ],
+      "limitations": [
+        "Activate only for a user-requested still life with a visible table or counter.",
+        "Preserve all requested objects, counts, materials, and relationships; do not add a default fruit, bottle, cloth, or plate.",
+        "Tilt the support plane as a controlled local choice; do not warp every surface or make objects appear to fall.",
+        "Keep contact points and object weight readable even when local axes differ.",
+        "Text-only generation may create unstable gravity or table edges; review support and object contact.",
+        "Do not copy a named still life, its exact object arrangement, or distinctive props."
+      ]
+    },
+    "rules": [
+      {
+        "id": "viewer-facing-support-plane",
+        "axis": "support_plane_and_viewpoint",
+        "importance": "core",
+        "applies_when": "The user requests a tabletop still life and allows interpretive perspective.",
+        "instruction": "Tilt the visible tabletop or counter plane toward the viewer so its surface occupies a clear structural area; let one edge or cloth fold reveal that tilt without turning the entire room into a new viewpoint.",
+        "observable": "The viewer sees the tabletop surface and can read its changed angle from a visible edge, plane boundary, or fold.",
+        "reject_when": "The support becomes a vertical wall, the tilt is imperceptible, or background geometry shifts as strongly as the tabletop.",
+        "evidence": {
+          "source_ids": [
+            "nga-cezanne-still-life-method"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "full-scene fisheye distortion, overhead flat-lay, and copied table edge arrangement"
+      },
+      {
+        "id": "balanced-object-network",
+        "axis": "object_relations_and_mass",
+        "importance": "core",
+        "applies_when": "The user requests multiple objects sharing one tabletop.",
+        "instruction": "Arrange the requested objects as a connected mass network using deliberate intervals and selective overlaps; give each object a stable base or contact relation on the tilted support and preserve its identity.",
+        "observable": "The objects feel related as a still life, remain individually countable, and appear supported rather than sliding or floating.",
+        "reject_when": "Contact points disappear, objects merge, or the still life becomes a scattered inventory with no shared balance.",
+        "evidence": {
+          "source_ids": [
+            "nga-cezanne-still-life-method"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "extra fruit, bottles, plates, or cloth unless requested; evenly spaced catalog rows"
+      },
+      {
+        "id": "local-axis-tension",
+        "axis": "color_plane_and_local_perspective",
+        "importance": "supporting",
+        "applies_when": "The user permits painterly perspective rather than strict product rendering.",
+        "instruction": "Let one or two requested object axes differ slightly from the support plane's angle; use adjacent warm and cool color planes and short directional strokes to keep each object solid despite the local mismatch.",
+        "observable": "The viewer notices a gentle perspective disagreement but still understands the object's volume, material, and support.",
+        "reject_when": "Every object's axis conflicts independently, the table and objects lose solidity, or smooth shading replaces constructive color.",
+        "evidence": {
+          "source_ids": [
+            "nga-cezanne-still-life-method"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "impossible geometry, global fragmentation, and airbrushed gradients"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "supported-tilted-still-life",
+        "rule_ids": [
+          "viewer-facing-support-plane",
+          "balanced-object-network",
+          "local-axis-tension"
+        ],
+        "instruction": "Tilt only the user-requested support plane; balance the requested objects across it with visible contact and limited local axis tension, using constructive color and directional strokes to keep forms solid.",
+        "observable": "The visible table tilt, object-to-object balance, and color-built volume work together without adding props or making the scene physically unstable."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nga-cezanne-still-life-method",
+        "kind": "museum_education_resource",
+        "url": "https://www.nga.gov/educational-resources/sense-place-france/cezannes-still-lifes"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "8de3c789ae8efda4837bea4871b4acd39c4b74a6e1362d8a5861db34fb4abbee",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

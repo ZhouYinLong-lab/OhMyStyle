@@ -74,3 +74,7 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## Experimental direction: tilted tabletop object balance
+
+The optional direction in [`art-direction.yaml`](art-direction.yaml) is for a user-requested tabletop still life: tilt only the supporting plane, then balance the specified objects through contact, overlap, and warm/cool color planes. Local viewpoints may differ slightly while the objects remain grounded. Fruit, bottles, plates, and cloth are not defaults. See [`comparisons/`](comparisons/README.md) for paired images.
