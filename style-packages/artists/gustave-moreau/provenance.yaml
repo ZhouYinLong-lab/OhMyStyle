@@ -1,12 +1,23 @@
 package_id: gustave-moreau
-package_version: 0.1.0
-curation_status: draft
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
 - url: https://musee-moreau.fr/en/art-gustave-moreau
   title: 古斯塔夫·莫罗艺术资料
   authority: 古斯塔夫·莫罗博物馆
-  supports: source traceability and package scope
+  supports: precise arabesque drawing, imaginative color, and deliberate mystery through line and detail
+  accessed: '2026-10-19'
+- url: https://musee-moreau.fr/fr/collection/objet/jupiter-et-semele
+  title: Jupiter and Semele
+  authority: Musée Gustave Moreau
+  supports: ornamental detail and symbolic spatial complexity; studied without copying iconography or composition
+  accessed: '2026-10-19'
+- url: https://musee-moreau.fr/sites/moreau/files/documents/Press%20kit.pdf
+  title: Gustave Moreau, a great paint technician
+  authority: Musée Gustave Moreau
+  supports: deliberate dissonance between line and colored space, and use of rich color
+  accessed: '2026-10-19'
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:
 - Do not bundle an external artwork, photograph, screenshot, logo, or dataset item unless redistribution rights are verified.

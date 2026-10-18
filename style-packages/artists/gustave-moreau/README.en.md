@@ -34,6 +34,18 @@ Research sources are linked for study and attribution. External works, photograp
 
 See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/manifest.csv), and the repository [NOTICE](../../../NOTICE).
 
+## New architecture: symbolic line, jewel-like color, and mystery (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) applies only when `symbolic-line-color-enigma` is explicitly declared. It translates Moreau's direction into precise arabesque curves, jewel-like color planes, deliberate tension between contour and color, and selective fine detail. The image may retain mystery while the requested subject, count, and setting remain clear.
+
+Unlike Klimt's contrast between modeled figures and patterned regions, this direction builds an imaginative enigma through line, colored planes, and local detail; it does not require a figure or gold leaf. It adds no mythological, biblical, or religious figures, objects, symbols, or events by default.
+
+```powershell
+python tools/compile-style.py style-packages/artists/gustave-moreau --direction package --context symbolic-line-color-enigma --subject "One white ceramic cup on a plain tabletop"
+```
+
+[`comparisons/`](comparisons/) holds the compiled legacy and new-direction jobs, generation prompts, and sample images. Visual review is pending, so this direction remains experimental.
+
 ## Use only this package
 
 Choose one of the following methods based on the tools you have available.

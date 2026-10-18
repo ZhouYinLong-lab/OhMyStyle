@@ -34,6 +34,18 @@
 
 详细来源和再分发边界见 [provenance.yaml](provenance.yaml)、[references/manifest.csv](references/manifest.csv) 以及仓库根目录的 [NOTICE](../../../NOTICE)。
 
+## 新架构：象征线条、宝石色与神秘空间（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `symbolic-line-color-enigma` 时启用。它把莫罗方向落在精确的阿拉伯式曲线、宝石色平面与轮廓线之间有意形成的张力，以及选择性细节上；画面可以保留神秘感，但主体、数量和用户指定的场景必须清楚。
+
+它与克里姆特方向的差别在于：克里姆特的装饰重点是人物塑形与纹样区域的对照；莫罗方向则以线条、色彩平面和局部细节共同构造想象性的谜意，不要求加入人物或金箔。不会默认加入神话、圣经或宗教人物、器物、符号和情节。
+
+```powershell
+python tools/compile-style.py style-packages/artists/gustave-moreau --direction package --context symbolic-line-color-enigma --subject "One white ceramic cup on a plain tabletop"
+```
+
+[`comparisons/`](comparisons/) 保存同题旧版与新版编译 job 和实际生成图；方向仍待视觉评审，保持实验状态。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

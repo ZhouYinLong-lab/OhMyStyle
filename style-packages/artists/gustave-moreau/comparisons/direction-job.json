@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "gustave-moreau",
+    "name": "古斯塔夫·莫罗",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\gustave-moreau"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One white ceramic cup on a plain tabletop",
+  "prompt": "USER SUBJECT: One white ceramic cup on a plain tabletop\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [exact-contour-and-arabesque] Define important silhouettes with precise, sinuous contour and let a few arabesque curves connect internal details to adjacent space; preserve the requested subject's distinctive outline and count.\n- [jewel-color-and-plane-dissonance] Pair rich jewel-like color regions with intentional differences between contour and color boundaries; use restrained gold-like accents only when they clarify a plane, and preserve readable local colors in the requested subject.\n- [selective-detail-and-mysterious-space] Concentrate fine ornamental detail around selected subject surfaces and allow adjacent planes or background intervals to remain quieter; use only a slight spatial ambiguity that does not alter the requested setting.\n- [contour-color-and-subject-readability] Make line, color, and selected detail create an imaginative painted surface while preserving the user's requested form and setting.\nREQUIREMENT: Declare symbolic-line-color-enigma before applying this direction.\nREQUIREMENT: Preserve the requested subject identity, count, silhouette, setting, and action.\nREQUIREMENT: Use deliberate contour rhythm, jewel-like color relationships, and selective fine detail.\nREQUIREMENT: Keep color-plane dissonance intentional and the subject legible.",
+  "negative_prompt": "generic swirls, enclosing decorative border, contour noise, and hidden subject silhouettes\nuniform gold wash, arbitrary color noise, muddy value structure, and generic fantasy glow\nadded temples, stars, mythic creatures, religious symbols, and all-over filigree\nadding a myth, biblical episode, religious icon, or literary narrative without request\ncovering every region with gold, filigree, or equally dense detail\nreplacing the requested setting with a fantasy temple or dream landscape",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "moreau-symbolic-line-and-color-enigma",
+    "name": "Moreau symbolic line and color enigma",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\gustave-moreau\\art-direction.yaml",
+    "sha256": "1d6874d0f90fad94c34d4fa7f3d00a24420289bd4b9d6bd26635fe62af48219c",
+    "active_rule_ids": [
+      "exact-contour-and-arabesque",
+      "jewel-color-and-plane-dissonance",
+      "selective-detail-and-mysterious-space"
+    ],
+    "contexts": [
+      "symbolic-line-color-enigma"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare symbolic-line-color-enigma before applying this direction.",
+      "Preserve the requested subject identity, count, silhouette, setting, and action.",
+      "Use deliberate contour rhythm, jewel-like color relationships, and selective fine detail.",
+      "Keep color-plane dissonance intentional and the subject legible."
+    ],
+    "avoid": [
+      "adding a myth, biblical episode, religious icon, or literary narrative without request",
+      "covering every region with gold, filigree, or equally dense detail",
+      "replacing the requested setting with a fantasy temple or dream landscape"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "A subject-independent painting direction built from exact, sinuous line, jewel-like color, and deliberate tension between drawn contours and colored planes. Let selected decorative detail and a subtly dreamlike space make the image feel enigmatic, while keeping the requested subject immediately identifiable. Visual richness must arise from relationships among line, color, and surface rather than from adding a story.",
+      "required_contexts": [
+        "symbolic-line-color-enigma"
+      ],
+      "incompatible_contexts": [
+        "photorealistic-documentary",
+        "flat-minimal-icon",
+        "generic-fantasy-ornament"
+      ],
+      "limitations": [
+        "Add no mythological, biblical, religious, or literary character, prop, or narrative unless requested.",
+        "Keep the requested subject, count, silhouette, setting, and action legible beneath decorative detail.",
+        "Avoid copying a named Moreau composition, iconography, or specific ornament pattern."
+      ]
+    },
+    "rules": [
+      {
+        "id": "exact-contour-and-arabesque",
+        "axis": "line_and_form",
+        "importance": "core",
+        "applies_when": "The requested image benefits from a drawn, decorative painting language.",
+        "instruction": "Define important silhouettes with precise, sinuous contour and let a few arabesque curves connect internal details to adjacent space; preserve the requested subject's distinctive outline and count.",
+        "observable": "The image has deliberate line rhythm and recognizable forms, with curves guiding attention rather than becoming a generic frame.",
+        "reject_when": "Contours become mechanically uniform, ornament obscures the subject, or repeated curls replace specific form.",
+        "evidence": {
+          "source_ids": [
+            "moreau-museum-technique",
+            "moreau-museum-art"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "generic swirls, enclosing decorative border, contour noise, and hidden subject silhouettes"
+      },
+      {
+        "id": "jewel-color-and-plane-dissonance",
+        "axis": "palette_and_surface",
+        "importance": "core",
+        "applies_when": "The user requests an imaginative painted treatment with distinct color regions.",
+        "instruction": "Pair rich jewel-like color regions with intentional differences between contour and color boundaries; use restrained gold-like accents only when they clarify a plane, and preserve readable local colors in the requested subject.",
+        "observable": "Saturated color and fine line feel interdependent yet not mechanically aligned; the subject remains easy to identify.",
+        "reject_when": "The result collapses into a global jewel-tone filter, gold covers every surface, or color contrast hides the requested form.",
+        "evidence": {
+          "source_ids": [
+            "moreau-museum-art",
+            "moreau-museum-press-kit"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform gold wash, arbitrary color noise, muddy value structure, and generic fantasy glow"
+      },
+      {
+        "id": "selective-detail-and-mysterious-space",
+        "axis": "composition_and_detail",
+        "importance": "supporting",
+        "applies_when": "The requested composition has surrounding space that can carry a subtle imaginative treatment.",
+        "instruction": "Concentrate fine ornamental detail around selected subject surfaces and allow adjacent planes or background intervals to remain quieter; use only a slight spatial ambiguity that does not alter the requested setting.",
+        "observable": "Detail density creates a focal hierarchy while the setting stays coherent enough to read and retains an understated sense of mystery.",
+        "reject_when": "Every region has equal detail, background becomes an unrelated fantasy setting, or spatial treatment changes the user's scene.",
+        "evidence": {
+          "source_ids": [
+            "moreau-museum-art",
+            "moreau-museum-jupiter-semele"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "added temples, stars, mythic creatures, religious symbols, and all-over filigree"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "contour-color-and-subject-readability",
+        "rule_ids": [
+          "exact-contour-and-arabesque",
+          "jewel-color-and-plane-dissonance",
+          "selective-detail-and-mysterious-space"
+        ],
+        "instruction": "Make line, color, and selected detail create an imaginative painted surface while preserving the user's requested form and setting.",
+        "observable": "Subject identity, count, and silhouette remain clear; ornamental line and saturated planes create the style; detail is selective and no unrequested narrative appears."
+      }
+    ],
+    "sources": [
+      {
+        "id": "moreau-museum-art",
+        "kind": "museum_artist_and_style_analysis",
+        "url": "https://musee-moreau.fr/en/art-gustave-moreau"
+      },
+      {
+        "id": "moreau-museum-technique",
+        "kind": "museum_technique_analysis",
+        "url": "https://musee-moreau.fr/en/art-gustave-moreau"
+      },
+      {
+        "id": "moreau-museum-jupiter-semele",
+        "kind": "museum_collection_analysis",
+        "url": "https://musee-moreau.fr/fr/collection/objet/jupiter-et-semele"
+      },
+      {
+        "id": "moreau-museum-press-kit",
+        "kind": "museum_technical_press_kit",
+        "url": "https://musee-moreau.fr/sites/moreau/files/documents/Press%20kit.pdf"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "1d6874d0f90fad94c34d4fa7f3d00a24420289bd4b9d6bd26635fe62af48219c",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

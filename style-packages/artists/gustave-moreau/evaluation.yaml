@@ -1,4 +1,16 @@
+package_id: gustave-moreau
+package_version: 0.2.0
 profiles:
+  symbolic-line-color-enigma:
+    required:
+      - requested subject identity, silhouette, and count remain readable
+      - precise contour and arabesque line rhythm are visible
+      - jewel-like color planes interact deliberately with line
+      - fine detail is selective and creates a clear focal hierarchy
+    reject_if:
+      - unrequested mythological, biblical, or religious narrative appears
+      - gold or ornamental detail becomes an all-over filter
+      - arbitrary fantasy scenery replaces the requested setting
   generic:
     required:
     - package-specific visual signature is observable
