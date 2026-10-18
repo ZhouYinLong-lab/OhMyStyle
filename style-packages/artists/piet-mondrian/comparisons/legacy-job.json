@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "piet-mondrian",
+    "name": "皮特·蒙德里安",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\piet-mondrian"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "An abstract transit network diagram with exactly three connected orthogonal routes and seven simple station nodes, no text or geographic claims, on a square warm-white ground.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: An abstract transit network diagram with exactly three connected orthogonal routes and seven simple station nodes, no text or geographic claims, on a square warm-white ground.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new image of An abstract transit network diagram with exactly three connected orthogonal routes and seven simple station nodes, no text or geographic claims, on a square warm-white ground. in an original geometric abstract painting language associated with Piet Mondrian. Preserve the user's subject and intended action or setting. Organize the image with an asymmetrical horizontal-and-vertical grid, deliberate unequal white space, crisp black structural lines, and a restrained set of warm off-white, red, blue, and yellow planes. Keep the composition flat and measured, with clear color roles, quiet matte paint, and slight handmade edge variation. Use the package as a transferable visual language, not as a request for a fixed abstract composition or a copy of any known artwork. Aspect ratio: the user-requested aspect ratio. Intended use: the user-requested use case.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not add a fixed abstract grid as the subject unless requested. Do not copy a named artwork or recognizable composition. No text, logo, brand layout, interface, glossy 3D render, gradients, neon glow, dramatic cast shadows, random decorative rectangles, generic poster template, photorealistic filter, or global color wash. Do not replace the user's subject with buildings, furniture, or geometric symbols.",
+  "template_variables": {
+    "SUBJECT": "An abstract transit network diagram with exactly three connected orthogonal routes and seven simple station nodes, no text or geographic claims, on a square warm-white ground.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

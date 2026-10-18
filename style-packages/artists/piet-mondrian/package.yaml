@@ -2,10 +2,11 @@ id: piet-mondrian
 name: 皮特·蒙德里安
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以网格秩序、非对称平衡和少量原色平面组织纯粹的绘画空间，强调结构关系而不是固定题材。
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

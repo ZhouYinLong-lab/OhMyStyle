@@ -41,3 +41,7 @@ Configure the API key in your own image service or compiler and submit the base 
 ### Method 4: Local model + ComfyUI
 
 Connect the prompt, palette, and reproduction notes to a local model or ComfyUI workflow, then review the result with `evaluation.yaml`. Do not treat the representative image’s exact rectangle placement as a required composition.
+
+## Experimental direction: syncopated abstract route diagram
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user explicitly asks to turn their own transit routes or network diagram into an abstract painting. Routes use off-beat primary-color segments and a few pale intervals while preserving the supplied connectivity, station count, and labels. It does not copy a city map or a specific painting layout. See [`comparisons/`](comparisons/README.md) for a paired abstract-network probe. This direction remains experimental.

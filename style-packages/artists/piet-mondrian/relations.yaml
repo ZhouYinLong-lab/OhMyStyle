@@ -1,14 +1,13 @@
 family: geometric-abstraction
 near_duplicates:
-  - movements/de-stijl
+  - de-stijl
 complements:
   - movements/constructivism
   - schools/ulm-school
 same_family:
   - movements/suprematism
 supersedes: []
-conflicts:
-  - presets/aurora-gradient-grain
+conflicts: []
 distinctives:
   - artist-specific balance between black structure and limited primary color planes
   - controlled asymmetry and unequal white space

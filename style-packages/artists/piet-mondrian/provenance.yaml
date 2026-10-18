@@ -1,5 +1,5 @@
 package_id: piet-mondrian
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: curated
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
@@ -7,6 +7,12 @@ sources:
     title: 'Piet Mondrian'
     authority: 'The Museum of Modern Art'
     supports: source traceability and package scope
+  - url: 'https://www.moma.org/collection/works/78682/'
+    title: 'Broadway Boogie Woogie'
+    authority: 'The Museum of Modern Art'
+    supports: >-
+      Museum description of interrupted multicolored line segments and syncopated
+      visual rhythm; used only to infer a rule for user-provided abstract route diagrams.
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

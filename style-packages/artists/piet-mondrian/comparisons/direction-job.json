@@ -1,0 +1,151 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "piet-mondrian",
+    "name": "皮特·蒙德里安",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\piet-mondrian"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "An abstract transit network diagram with exactly three connected orthogonal routes and seven simple station nodes, no text or geographic claims, on a square warm-white ground.",
+  "prompt": "USER SUBJECT: An abstract transit network diagram with exactly three connected orthogonal routes and seven simple station nodes, no text or geographic claims, on a square warm-white ground.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: painted_diagram\nREPRESENTATION: abstract_interpretation\nAPPLY THESE AUTHORED VISUAL RULES:\n- [route-graph-preservation] Preserve every requested route, station, endpoint, and connection exactly; distribute visual emphasis without changing graph structure.\n- [syncopated-segmented-bars] Divide selected orthogonal route bars into short primary-color rectangles with a few pale intervals; vary segment grouping and intersection spacing so the cadence feels off-beat but remains easy to follow.\n- [color-hierarchy-without-black-lattice] Use red, yellow, blue, white, and restrained gray as route or interval roles; let spacing and limited local contrast distinguish crossings, and retain black only where the user explicitly needs it for legibility.\n- [rhythmic-network-remains-traceable] Keep the source network's topology intact while translating its lines into a readable, syncopated rhythm of segmented primary-color bars and pale gaps.\nREQUIREMENT: Activate only for a user-requested abstract route or transit network.\nREQUIREMENT: Preserve all supplied routes, stops, labels, and connections.\nREQUIREMENT: Use segmented colored bars with syncopated but traceable rhythm and pale intervals.\nREQUIREMENT: Review route topology, label integrity, segment cadence, and black-line dominance.\nREQUIREMENT: Keep the result distinct from any named painting or real transit map.",
+  "negative_prompt": "sacrificing network correctness to decorative rhythm\ncopying a named painting's exact grid, segment placement, or proportions\ndefaulting every route to a different arbitrary rainbow color\nsilently altering network data or claiming navigation accuracy\nreproducing a specific artwork layout or a recognizable city map\nturning the entire map into illegible multicolor confetti",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "mondrian-syncopated-route-grid",
+    "name": "Mondrian syncopated route grid",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\piet-mondrian\\art-direction.yaml",
+    "sha256": "d21d2df0645013db12fa47d26f21cccaf8cdee9c795472f6ba4714c89ae2d104",
+    "active_rule_ids": [
+      "route-graph-preservation",
+      "syncopated-segmented-bars",
+      "color-hierarchy-without-black-lattice"
+    ],
+    "contexts": [
+      "user-requested-abstract-route-network"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested abstract route or transit network.",
+      "Preserve all supplied routes, stops, labels, and connections.",
+      "Use segmented colored bars with syncopated but traceable rhythm and pale intervals.",
+      "Review route topology, label integrity, segment cadence, and black-line dominance.",
+      "Keep the result distinct from any named painting or real transit map."
+    ],
+    "avoid": [
+      "silently altering network data or claiming navigation accuracy",
+      "reproducing a specific artwork layout or a recognizable city map",
+      "turning the entire map into illegible multicolor confetti"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "painted_diagram",
+      "representation": "abstract_interpretation",
+      "description": "An optional direction for a user-supplied abstract transit or route network. Preserve the supplied graph and turn its paths into an asymmetrical orthogonal rhythm of short primary-color segments, pale intervals, and carefully weighted intersections. This is a compositional inference from Mondrian's late segmented grids, not a recreation of a named painting or real city's map.",
+      "required_contexts": [
+        "user-requested-abstract-route-network"
+      ],
+      "incompatible_contexts": [
+        "geographically-accurate-navigation-map",
+        "user-requested-organic-or-curved-route-geometry",
+        "text-or-logo-reproduction"
+      ],
+      "limitations": [
+        "Activate only when the user explicitly requests an abstract rendering of a route or transit network.",
+        "Preserve user-provided route connectivity, station count, route count, and requested labels.",
+        "Do not add, remove, merge, or disconnect routes, stations, or intersections to improve visual rhythm.",
+        "Use orthogonal turns only if the user permits abstraction; do not claim geographic or navigational accuracy.",
+        "Do not use the layout of Broadway Boogie Woogie, Victory Boogie Woogie, or a recognizable city transit map."
+      ]
+    },
+    "rules": [
+      {
+        "id": "route-graph-preservation",
+        "axis": "network_topology_and_information",
+        "importance": "core",
+        "applies_when": "The user provides a route network or specifies route and station counts.",
+        "instruction": "Preserve every requested route, station, endpoint, and connection exactly; distribute visual emphasis without changing graph structure.",
+        "observable": "A viewer can trace the same routes and intersections as in the user's input, with no missing or invented nodes.",
+        "reject_when": "A path is disconnected, an intersection is fabricated, or station/route counts change.",
+        "evidence": {
+          "source_ids": [
+            "moma-broadway-boogie-woogie"
+          ],
+          "basis": "original_design_intent",
+          "visual_review": "pending"
+        },
+        "avoid": "sacrificing network correctness to decorative rhythm"
+      },
+      {
+        "id": "syncopated-segmented-bars",
+        "axis": "line_rhythm_and_color_segmentation",
+        "importance": "core",
+        "applies_when": "The user requests an abstract route-network treatment.",
+        "instruction": "Divide selected orthogonal route bars into short primary-color rectangles with a few pale intervals; vary segment grouping and intersection spacing so the cadence feels off-beat but remains easy to follow.",
+        "observable": "Route lines read as linked rhythmic color units rather than uninterrupted black bars or an even checkerboard.",
+        "reject_when": "Segments become confetti, lose path continuity, repeat in a rigid uniform pattern, or obscure one another at intersections.",
+        "evidence": {
+          "source_ids": [
+            "moma-broadway-boogie-woogie"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "copying a named painting's exact grid, segment placement, or proportions"
+      },
+      {
+        "id": "color-hierarchy-without-black-lattice",
+        "axis": "palette_and_intersection_weight",
+        "importance": "supporting",
+        "applies_when": "The route diagram can remain legible without continuous black dividers.",
+        "instruction": "Use red, yellow, blue, white, and restrained gray as route or interval roles; let spacing and limited local contrast distinguish crossings, and retain black only where the user explicitly needs it for legibility.",
+        "observable": "The paths remain distinct while pale ground and color intervals provide breathing space between junctions.",
+        "reject_when": "Continuous black lines dominate every route or color assignment changes user-specified route identity.",
+        "evidence": {
+          "source_ids": [
+            "moma-broadway-boogie-woogie"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "defaulting every route to a different arbitrary rainbow color"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "rhythmic-network-remains-traceable",
+        "rule_ids": [
+          "route-graph-preservation",
+          "syncopated-segmented-bars",
+          "color-hierarchy-without-black-lattice"
+        ],
+        "instruction": "Keep the source network's topology intact while translating its lines into a readable, syncopated rhythm of segmented primary-color bars and pale gaps.",
+        "observable": "The composition feels more rhythmically broken and colorful than a regular black-lined grid, while every route remains traceable."
+      }
+    ],
+    "sources": [
+      {
+        "id": "moma-broadway-boogie-woogie",
+        "kind": "museum_collection_record",
+        "url": "https://www.moma.org/collection/works/78682/"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "d21d2df0645013db12fa47d26f21cccaf8cdee9c795472f6ba4714c89ae2d104",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
