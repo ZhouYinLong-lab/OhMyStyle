@@ -65,3 +65,13 @@ Configure your API key in your own image platform or prompt compiler, then submi
 Connect the prompts to a local model or ComfyUI workflow. Use the palette, reproduction notes, and reference manifest to guide color, composition, material, and lighting. Review the result against [evaluation.yaml](evaluation.yaml).
 
 Users manage model weights, API keys, and generated images themselves. References are for observable traits only; do not copy a source work’s composition, figures, text, trademarks, or logos.
+
+## New architecture: public narrative mural registers (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) applies when the user requests multiple activities or a broad public narrative. It connects those activities across a few registers, keeps people, tools, and environment at a shared scale, and uses contours with broad color planes for distance readability. A single action is not split into panels, and the direction does not default to workers, factories, Mexican symbols, or political emblems.
+
+```powershell
+python tools/compile-style.py style-packages/artists/diego-rivera --direction package --context public-narrative-mural --subject "A panoramic community greenhouse project: neighbors tend seedlings, builders repair its roof, and water channels feed the crops" --output runs/style-v2/diego-rivera-job.json
+```
+
+This direction remains experimental; same-subject comparisons and stability across subjects still need human review.

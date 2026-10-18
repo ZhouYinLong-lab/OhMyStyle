@@ -1,0 +1,99 @@
+schema_version: 2.0.0
+status: experimental
+id: rivera-public-narrative-registers
+name: Rivera public narrative registers
+base_package: artists/diego-rivera
+scope:
+  medium: fresco_mural
+  representation: stylized
+  description: >-
+    A mural-scale narrative direction that links several requested activities
+    through broad registers, monumental but readable forms, and shared scale
+  required_contexts:
+    - public-narrative-mural
+  incompatible_contexts:
+    - isolated-miniature
+    - single-object-product-render
+    - photorealistic-rendering
+  limitations:
+    - Preserve the user-requested people, activities, setting, and relationships; do not add workers, factories, machinery, national symbols, or political emblems unless requested.
+    - Use multiple registers only when the brief contains multiple activities or a broad public narrative; do not split a single action into a forced timeline.
+    - Keep large shapes readable at a distance while retaining enough local detail to distinguish the requested actions.
+pillars:
+  - Organize multiple requested activities into connected horizontal or vertical registers that read as one large composition.
+  - Integrate people, tools, structures, and natural systems through shared scale and clear working relationships.
+  - Use firm contours and broad, flat color planes to support public readability rather than illusionistic depth.
+  - Let each register add a distinct part of the user's narrative without becoming a decorative panel grid.
+rules:
+  - id: connected-narrative-registers
+    axis: composition_and_sequence
+    importance: core
+    applies_when: The prompt requests a broad mural narrative with more than one activity or stage.
+    instruction: Group the requested activities into a few connected registers; use changes in scale, direction, and adjacency to lead the eye between them while maintaining one continuous spatial world.
+    observable: Each requested activity can be located at a glance, and the registers connect as a single mural rather than separate unrelated vignettes.
+    reject_when: The composition becomes an arbitrary grid, duplicates the same event, or omits a requested activity.
+    evidence:
+      source_ids:
+        - rivera-dia-detroit-murals
+        - rivera-moma-electric-power
+      basis: institutional_description
+      visual_review: pending
+    avoid: unrelated comic-strip panels and invented narrative episodes
+  - id: shared-scale-people-and-systems
+    axis: figure_environment_relationship
+    importance: core
+    applies_when: The brief includes people working with tools, structures, or natural systems.
+    instruction: Make people, equipment, materials, and surrounding structures occupy a coherent shared scale; show their relation through clear contact, alignment, or repeated structural rhythms instead of isolating a heroic figure from the scene.
+    observable: A viewer can understand how the requested people interact with their environment, and no single scale mismatch breaks the mural's spatial logic.
+    reject_when: Figures float above their work, tools become unrelated decoration, or machinery overwhelms the requested human activity.
+    evidence:
+      source_ids:
+        - rivera-dia-detroit-murals
+        - rivera-moma-electric-power
+      basis: institutional_description
+      visual_review: pending
+    avoid: isolated hero figures, unrequested machines, and scale jumps without narrative purpose
+  - id: flat-contour-and-fresco-color-planes
+    axis: form_and_surface
+    importance: core
+    applies_when: The image is intended to read as a large painted mural.
+    instruction: Establish large forms with clear contours and broad overlapping color planes; use restrained surface variation to suggest painted plaster, and let color relationships clarify groups instead of modeling every object with realistic gradients.
+    observable: The scene remains legible from a distance, while adjacent people, structures, and materials keep distinct color identities.
+    reject_when: The surface becomes a photorealistic depth render, a global color filter, or an ornate texture that obscures the narrative.
+    evidence:
+      source_ids:
+        - rivera-dia-detroit-murals
+        - rivera-moma-electric-power
+      basis: institutional_description
+      visual_review: pending
+    avoid: photorealistic volume, decorative pseudo-fresco cracking, and global color tint
+active_rule_ids:
+  - connected-narrative-registers
+  - shared-scale-people-and-systems
+  - flat-contour-and-fresco-color-planes
+joint_checks:
+  - id: narrative-scale-surface-coherence
+    rule_ids:
+      - connected-narrative-registers
+      - shared-scale-people-and-systems
+      - flat-contour-and-fresco-color-planes
+    instruction: Let register sequence, shared scale, and flat color planes make the user's public narrative readable as one mural.
+    observable: Requested activities connect across a coherent wall-sized composition, with people and environment clearly related and no decorative motifs substituted for content.
+sources:
+  - id: rivera-dia-detroit-murals
+    kind: museum_mural_cycle_description
+    url: https://dia.org/riveracourt
+  - id: rivera-moma-electric-power
+    kind: museum_mural_analysis
+    url: https://www.moma.org/interactives/exhibitions/2011/rivera/mobile/mural_details/electric_power.html
+execution:
+  route: text_only
+  must:
+    - Declare the public-narrative-mural context before applying this direction.
+    - Preserve the user's requested people, activities, and setting.
+    - Use connected registers only when the brief contains multiple requested activities.
+    - Keep contour, color plane, and scale hierarchy readable at a distance.
+  avoid:
+    - adding Mexican symbols, workers, factories, political emblems, or heroic figures without request
+    - imposing registers on a single-action brief
+    - using faux plaster damage or photorealistic depth as a shortcut to mural style

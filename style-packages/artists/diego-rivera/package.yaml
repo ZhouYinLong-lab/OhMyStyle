@@ -2,7 +2,7 @@ id: diego-rivera
 name: 迭戈·里维拉
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: 以壁画式大尺度结构、清晰轮廓、平面色块和公共空间的叙事组织画面，同时保持用户主体开放。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: 绘画

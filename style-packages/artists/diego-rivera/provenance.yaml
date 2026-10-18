@@ -7,6 +7,16 @@ sources:
   title: 迭戈·里维拉艺术家资料
   authority: 现代艺术博物馆
   supports: source traceability and package scope
+- url: https://dia.org/riveracourt
+  title: Rivera Court and the Detroit Industry Murals
+  authority: Detroit Institute of Arts
+  supports: mural scale, connected multi-panel narrative, and relations among labor, technology, and human activity
+  accessed: '2026-10-19'
+- url: https://www.moma.org/interactives/exhibitions/2011/rivera/mobile/mural_details/electric_power.html
+  title: Electric Power mural analysis
+  authority: Museum of Modern Art
+  supports: industrial setting as compositional structure and workers aligned with machine rhythms
+  accessed: '2026-10-19'
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:
 - Do not bundle an external artwork, photograph, screenshot, logo, or dataset item unless redistribution rights are verified.

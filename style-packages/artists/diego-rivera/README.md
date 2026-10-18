@@ -65,3 +65,13 @@ prompts/negative.txt、palette/palette.json 和 evaluation.yaml。
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 [evaluation.yaml](evaluation.yaml) 做复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 新架构：公共叙事壁画层次（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 适用于用户要求多个活动或多段公共叙事的壁画构图：把活动放进相连的画面层次，让人物、工具与环境共享尺度，并用轮廓和大色面保持远距离可读。单一动作不强行拆成分格，也不默认工人、工厂、墨西哥符号或政治标志。
+
+```powershell
+python tools/compile-style.py style-packages/artists/diego-rivera --direction package --context public-narrative-mural --subject "A panoramic community greenhouse project: neighbors tend seedlings, builders repair its roof, and water channels feed the crops" --output runs/style-v2/diego-rivera-job.json
+```
+
+此方向仍为实验规则；同题对照及跨主题稳定性待人工评审。

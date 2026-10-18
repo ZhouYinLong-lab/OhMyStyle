@@ -1,3 +1,5 @@
+package_id: diego-rivera
+package_version: 0.2.0
 profiles:
   generic:
     required:
@@ -14,6 +16,15 @@ profiles:
   still_life:
     required:
     - preserve the user-supplied objects and their count
+  public_narrative_mural:
+    required:
+      - multiple requested activities connect as one wall-scale composition
+      - people and environment share a readable scale and relation
+      - contours and color planes remain legible at a distance
+    reject_if:
+      - an unrequested worker, factory, machine, emblem, or political symbol appears
+      - a single activity is split into artificial panels
+      - photorealistic depth or decorative texture obscures the narrative
 minimum_score: 7
 semantic_evaluation:
   subject_independence:
