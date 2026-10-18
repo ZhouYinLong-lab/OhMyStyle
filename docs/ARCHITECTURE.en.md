@@ -161,6 +161,7 @@ the same prompt wording.
 | [O'Keeffe close observation and form](../style-packages/artists/georgia-okeeffe/art-direction.yaml) | Enlarged user-selected form, simplified color shapes, form-following negative space | `text_only`, declare `close-observation` |
 | [Riley serial rhythm and perceptual motion](../style-packages/artists/bridget-riley/art-direction.yaml) | Geometric progression, adjacent contrast, flat-plane optical movement | `text_only`, declare `abstract-field` |
 | [Dürer engraved line and value structure](../style-packages/artists/albrecht-durer/art-direction.yaml) | Contour first, form-following hatch, paper highlights, material-specific line groups | `text_only` |
+| [Mucha ornamental poster hierarchy](../style-packages/artists/alphonse-mucha/art-direction.yaml) | Subject-to-frame hierarchy, contour-linked curves, flat lithographic color, user-controlled text | `text_only`, declare `ornamental-poster` |
 
 ## 6. Execution routes
 

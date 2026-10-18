@@ -95,3 +95,13 @@ and lighting. Review the output against `evaluation.yaml`.
 Users manage model weights, API keys, and generated images themselves. References
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
+
+## New architecture: ornamental poster hierarchy (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only with the `ornamental-poster` context. First keep the requested subject clear, then let framing curves and ornament follow its contour. Botanical motifs and lettering are not defaults; only exact user-provided copy may appear. Unlike Dürer's direction, which models value through hatching, Mucha's direction centers on flat color areas, flowing curves, and subject-to-frame layout.
+
+```powershell
+python tools/compile-style.py style-packages/artists/alphonse-mucha --direction package --context ornamental-poster --subject "A blue glass perfume bottle in a decorative poster, no lettering" --output runs/style-v2/mucha-job.json
+```
+
+This direction remains experimental. Met and National Gallery of Art material on decorative panels, color lithographic posters, and layout supports these observations; transfer to subjects without figures or lettering remains pending.

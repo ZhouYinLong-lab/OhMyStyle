@@ -1,4 +1,12 @@
 profiles:
+  ornamental_poster:
+    required:
+      - requested subject remains the first read
+      - frame and ornament support rather than obscure the subject
+      - lettering is exact and user-supplied, or absent
+    reject_if:
+      - a woman, flower, logo, or pseudo-text appears without request
+      - border copies a named poster composition
   generic:
     required:
       - package-specific visual signature is observable

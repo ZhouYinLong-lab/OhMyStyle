@@ -1,0 +1,120 @@
+schema_version: 2.0.0
+status: experimental
+id: mucha-ornamental-poster-hierarchy
+name: Mucha ornamental poster hierarchy
+base_package: artists/alphonse-mucha
+scope:
+  medium: color_lithographic_illustration
+  representation: stylized
+  description: >-
+    An opt-in ornamental-poster direction that places the user-selected subject inside
+    a flowing frame and connects it to repeated curvilinear ornament, flat color fields,
+    and optional typography without prescribing a person, flower, advertisement, or text.
+  required_contexts:
+    - ornamental-poster
+  incompatible_contexts:
+    - photorealistic-output
+    - text-dominant-document
+    - undecorated-product-photography
+  limitations:
+    - Preserve the requested subject and count; do not add a woman, flowers, jewelry, a product, or a historical character unless requested.
+    - Use an ornamental border only when the caller requests a poster or decorative panel; do not force it onto an ordinary scene.
+    - Include lettering only when exact wording is supplied; never invent pseudo-text, brand names, signatures, or dates.
+    - Build new framing and ornament; do not copy the layout or figure pose of a named Mucha work.
+pillars:
+  - Establish one clear subject hierarchy before adding border or arabesque detail.
+  - Make decorative curves respond to the subject's silhouette and direction rather than forming an unrelated floral halo.
+  - Combine flowing contour with broad, flat lithographic color areas and a restrained warm paper ground.
+  - Treat typography as an optional layout layer whose wording and placement follow the user's brief.
+rules:
+  - id: subject-and-frame-hierarchy
+    axis: composition
+    importance: core
+    applies_when: always
+    instruction: Keep the user-selected subject as the first read; use a vertical arch, partial frame, or border rhythm only when it supports the requested poster layout, and leave the subject's contour unobstructed.
+    observable: The subject reads before the ornament, while frame shapes connect the top, sides, or lower edge into a deliberate poster composition.
+    reject_when: A decorative halo crowds the subject, framing becomes a copied layout, or the border dictates an unrequested portrait pose.
+    evidence:
+      source_ids:
+        - mucha-met-joan-arc
+        - mucha-nga-lorenzaccio
+      basis: institutional_description
+      visual_review: pending
+    avoid: mandatory round halos, obscured subject contours, and copied poster layouts
+  - id: subject-linked-curvilinear-ornament
+    axis: line_and_pattern
+    importance: core
+    applies_when: The requested poster benefits from decorative movement around its subject.
+    instruction: Build a small family of flowing curves that echo the subject's contours and guide the eye through the composition; use botanical forms only when requested, otherwise keep the ornament abstract and shape-linked.
+    observable: Ornament feels continuous with the subject's movement and varies in scale, with open gaps that prevent a dense wallpaper effect.
+    reject_when: Repeated flowers, hair-like swirls, or arabesques appear without request, or ornament forms an independent texture layer.
+    evidence:
+      source_ids:
+        - mucha-met-joan-arc
+        - mucha-met-panel-study
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: unsolicited flowers, hair swirls, jewelry, and dense wallpaper patterns
+  - id: flat-lithographic-color-and-paper
+    axis: palette_and_surface
+    importance: core
+    applies_when: always
+    instruction: Separate the subject, frame, and background with a restrained set of flat color areas; use warm paper and selective contour variation, with gentle modeling only where it clarifies the requested form.
+    observable: Color blocks remain distinct, contours remain graceful, and texture is limited to a subtle printed surface rather than a global sepia filter.
+    reject_when: Photographic lighting, metallic effects, or all-over grain overwhelms the flat poster structure.
+    evidence:
+      source_ids:
+        - mucha-met-joan-arc
+        - mucha-nga-lorenzaccio
+      basis: institutional_description
+      visual_review: pending
+    avoid: global sepia wash, photorealistic lighting, and heavy metallic effects
+  - id: user-controlled-lettering
+    axis: typography
+    importance: optional
+    applies_when: The user supplies exact poster wording or explicitly requests a blank title area.
+    instruction: Reserve the requested text zone within the frame; reproduce only the exact supplied wording, or leave the zone blank when requested, with legible spacing that does not obscure the subject.
+    observable: Lettering appears only when requested and its content is exact; otherwise the poster contains no text, logo, signature, or pseudo-lettering.
+    reject_when: The model invents words, adds a trademark or artist signature, or uses decorative glyph-like marks that resemble text.
+    evidence:
+      source_ids:
+        - mucha-nga-lorenzaccio
+        - mucha-met-panel-study
+      basis: institutional_description
+      visual_review: pending
+    avoid: pseudo-text, invented advertising copy, signatures, and logos
+active_rule_ids:
+  - subject-and-frame-hierarchy
+  - subject-linked-curvilinear-ornament
+  - flat-lithographic-color-and-paper
+  - user-controlled-lettering
+joint_checks:
+  - id: subject-ornament-type-coherence
+    rule_ids:
+      - subject-and-frame-hierarchy
+      - subject-linked-curvilinear-ornament
+      - flat-lithographic-color-and-paper
+      - user-controlled-lettering
+    instruction: Align the subject silhouette, frame, color blocks, and any requested typography in one readable hierarchy; use ornament to connect the layout without adding unrequested content.
+    observable: The subject remains first read, decorative curves guide rather than cover it, and text is absent unless exact copy is supplied.
+sources:
+  - id: mucha-met-joan-arc
+    kind: museum_object_description
+    url: https://www.metmuseum.org/art/collection/search/437169
+  - id: mucha-nga-lorenzaccio
+    kind: museum_object_record
+    url: https://www.nga.gov/artworks/58795-lorenzaccio-theatre-de-la-renaissance
+  - id: mucha-met-panel-study
+    kind: museum_object_description
+    url: https://www.metmuseum.org/art/collection/search/283253
+execution:
+  route: text_only
+  must:
+    - Declare the ornamental-poster context before applying the direction.
+    - Preserve the requested subject, count, wording, and aspect ratio.
+    - Establish the subject before frame, ornament, or typography.
+    - Use subject-linked curves and separated lithographic color areas.
+  avoid:
+    - adding a woman, flowers, products, jewelry, or historical characters unless requested
+    - inventing text, pseudo-lettering, logos, signatures, or dates
+    - copying a named poster's border, pose, or composition

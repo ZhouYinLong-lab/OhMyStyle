@@ -73,3 +73,13 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 `evaluation.yaml` 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 新架构：装饰海报层级（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在声明 `ornamental-poster` 时启用：先保证用户指定主体清楚，再让边框曲线和装饰纹样沿主体轮廓展开。植物纹样和文字都不是默认项；只有用户给出准确文案时才排入文字。与丢勒以排线塑造明暗的方向不同，穆夏方向以平面色块、流动曲线和主体—边框版式为核心。
+
+```powershell
+python tools/compile-style.py style-packages/artists/alphonse-mucha --direction package --context ornamental-poster --subject "A blue glass perfume bottle in a decorative poster, no lettering" --output runs/style-v2/mucha-job.json
+```
+
+方向仍处于实验状态。大都会艺术博物馆与美国国家美术馆关于装饰画、彩色石版海报和版式的资料支持这些观察；无人物、无文字主体上的装饰迁移效果仍待评审。

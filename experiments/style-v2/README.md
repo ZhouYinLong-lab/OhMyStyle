@@ -66,6 +66,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [欧姬芙近距离观察](../../style-packages/artists/georgia-okeeffe/art-direction.yaml) | 用户指定形体的放大、色形简化、随形负空间 | text_only | close-observation |
 | [莱利光学节奏](../../style-packages/artists/bridget-riley/art-direction.yaml) | 几何单元渐变序列、相邻对比、平面视觉振动 | text_only | abstract-field |
 | [丢勒刻线明暗](../../style-packages/artists/albrecht-durer/art-direction.yaml) | 轮廓先行、顺形排线、纸白高光、材质线组 | text_only | 无 |
+| [穆夏装饰海报](../../style-packages/artists/alphonse-mucha/art-direction.yaml) | 主体与边框层级、随形曲线、石版平涂、用户控制文字 | text_only | ornamental-poster |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

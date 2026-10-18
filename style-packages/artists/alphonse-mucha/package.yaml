@@ -2,7 +2,7 @@ id: alphonse-mucha
 name: 阿尔丰斯·穆夏
 kind: artist
 domain: design
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以流动曲线、植物纹样、人物与边框的连续节奏、温暖纸色和装饰性平面组织画面；本包提取穆夏式视觉语法，不固定女性肖像、花卉、广告或文字。
 files:
@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: design
