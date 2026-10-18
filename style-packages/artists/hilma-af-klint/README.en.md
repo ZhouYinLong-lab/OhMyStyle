@@ -43,6 +43,18 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: axis, spiral, and geometric-biomorphic order (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) applies only when `axial-symbolic-abstraction` is explicitly declared. It turns abstract order into inspectable decisions: one clear axis, bounded cyclical geometry, a contrast between geometric and organic forms, and matte color fields with fine line boundaries. These are formal rules; they do not assign scientific, religious, or spiritual meanings to the user's shapes.
+
+Unlike Kandinsky's dynamic relations of mark, color, and force, or Mondrian's strict rectangular grid and primary-color system, af Klint's direction balances an axis and spiral with geometric and biomorphic forms. It adds no religious icon or esoteric lettering by default.
+
+```powershell
+python tools/compile-style.py style-packages/artists/hilma-af-klint --direction package --context axial-symbolic-abstraction --subject "A nonfigurative composition of one central indigo axis, one gold spiral, two pale-pink biomorphic forms, and one cobalt-blue circle on a warm-white ground"
+```
+
+[`comparisons/`](comparisons/) holds the compiled legacy and new-direction jobs, generation prompts, and sample images. Visual review is pending, so this direction remains experimental.
+
 ## Use only this package
 
 Choose one of the following methods.

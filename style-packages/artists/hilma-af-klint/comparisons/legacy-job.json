@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "hilma-af-klint",
+    "name": "希尔玛·艾夫·克林特",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\hilma-af-klint"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A nonfigurative composition of one central indigo axis, one gold spiral, two pale-pink biomorphic forms, and one cobalt-blue circle on a warm-white ground",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A nonfigurative composition of one central indigo axis, one gold spiral, two pale-pink biomorphic forms, and one cobalt-blue circle on a warm-white ground\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new subject and composition using these observable visual decisions:\n- 中心轴、圆环、螺旋和对称结构组织画面\n- 形体之间有层级但不必服从透视\n- 留白与符号群保持平衡\n- 淡粉、黄、蓝、紫、绿色与黑白形成精神性对照\n- 颜色块边界清楚但允许手绘不均\n- 冷暖与互补关系明确\n- 蛋彩或油彩式平面绘画\n- 细线和几何色面并置\n- 手工颜料边缘\n- 不依赖自然光体积\n- 明度通过色面关系而非写实阴影建立\n- 画布或纸面的薄涂、叠色与细微不均\n- 避免数字镜面光\n- 纹理克制，服务色面和线条\n- 不做厚重随机笔触\n- 抽象系统必须有内部秩序\n- 符号不指向特定宗教文本\n- 不复制原作图式\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- literal_occult_claim\n- copied_series_layout\n- generic_color_gradient\n- readable_esoteric_text",
+  "template_variables": {
+    "SUBJECT": "A nonfigurative composition of one central indigo axis, one gold spiral, two pale-pink biomorphic forms, and one cobalt-blue circle on a warm-white ground",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "axial-symbolic-abstraction": {
+        "required": [
+          "requested abstract form counts and roles remain intact",
+          "one compositional axis and bounded cyclical movement are legible",
+          "geometric and biomorphic shapes form a deliberate contrast",
+          "matte color fields and fine boundaries carry the hierarchy"
+        ],
+        "reject_if": [
+          "unrequested religious, spiritual, scientific, or narrative symbols appear",
+          "composition collapses into a generic mandala or zodiac diagram",
+          "glow, shadow, or texture turns flat forms into a digital interface or 3D object"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

@@ -201,6 +201,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [克里姆特塑形人物与装饰平面](../style-packages/artists/gustav-klimt/art-direction.yaml) | 可读人物与平面纹样相邻，按区域控制装饰密度和金属质感 | `text_only`，声明 `modeled-figure-ornamental-field` |
 | [莫罗象征线条、宝石色与谜意](../style-packages/artists/gustave-moreau/art-direction.yaml) | 精确阿拉伯式线条、宝石色平面与局部细节形成主体清楚的想象性谜意 | `text_only`，声明 `symbolic-line-color-enigma` |
 | [马蒂斯剪纸色块与正负形节奏](../style-packages/artists/henri-matisse/art-direction.yaml) | 不透明平面色块、利落剪影边缘与主动留白构成富有节奏的画面 | `text_only`，声明 `cut-paper-color-construction` |
+| [克林特轴线、螺旋与几何—有机形秩序](../style-packages/artists/hilma-af-klint/art-direction.yaml) | 轴线和有限循环几何连接几何形与生物形态，哑光色面维持抽象秩序 | `text_only`，声明 `axial-symbolic-abstraction` |
 | [卢梭平面空间与清晰自然细节](../style-packages/artists/henri-rousseau/art-direction.yaml) | 清楚轮廓、受控色块、层叠平面与均匀漫射光，不默认加入丛林题材 | `text_only`，声明 `flat-space-natural-detail` |
 | [库尔贝物质笔触与地面重量](../style-packages/artists/gustave-courbet/art-direction.yaml) | 不理想化主体、材料对应的厚涂笔触与稳固地面关系 | `text_only`，声明 `tactile-material-realism` |
 | [修拉测量式构图与分色笔触](../style-packages/artists/georges-seurat/art-direction.yaml) | 稳定剪影、经过安排的间距、随平面变化的分色笔触与光色关系 | `text_only`，声明 `measured-chromatic-composition` |

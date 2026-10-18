@@ -34,6 +34,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：轴线、螺旋与几何—有机形对照（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `axial-symbolic-abstraction` 时启用。它把抽象秩序落实为可检查的画面规则：一条清晰轴线、有限的循环几何、几何形与有机形的对照，以及哑光色面和细线边界。规则只处理形式，不替用户解释符号的科学、宗教或灵性含义。
+
+这和康定斯基以笔触、色彩和力度建立动态关系的方向不同，也与蒙德里安把直线网格和原色限制在严格矩形系统中的方法不同；克林特方向让轴线与螺旋结构、几何和生物形态并置，但不会自动加入宗教图标或神秘文字。
+
+```powershell
+python tools/compile-style.py style-packages/artists/hilma-af-klint --direction package --context axial-symbolic-abstraction --subject "A nonfigurative composition of one central indigo axis, one gold spiral, two pale-pink biomorphic forms, and one cobalt-blue circle on a warm-white ground"
+```
+
+[`comparisons/`](comparisons/) 保存同题旧版与新版编译 job、生成提示词和实际样本；方向仍待视觉评审，保持实验状态。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

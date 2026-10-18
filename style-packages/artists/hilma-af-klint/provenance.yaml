@@ -1,5 +1,5 @@
 package_id: hilma-af-klint
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_backed_link_only
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
@@ -7,7 +7,22 @@ sources:
 - url: https://www.guggenheim.org/wp-content/uploads/2018/06/gugg-press_Hilma-af-Klint_PressRelease_1519_20180913.pdf
   authority: Solomon R. Guggenheim Museum
   title: Hilma af Klint exhibition press release
-  supports: source traceability and observable package scope
-  accessed: '2026-08-07'
+  supports: geometric and biomorphic forms, varied scales, and both maximalist and reductivist compositions
+  accessed: '2026-10-19'
+- url: https://www.guggenheim.org/teaching-materials/hilma-af-klint-paintings-for-the-future/science
+  authority: Solomon R. Guggenheim Museum
+  title: Science and Symbols
+  supports: spiral and cube used as formal devices in af Klint's work; this package does not assign those meanings by default
+  accessed: '2026-10-19'
+- url: https://www.guggenheim.org/teaching-materials/hilma-af-klint-paintings-for-the-future
+  authority: Solomon R. Guggenheim Museum
+  title: "Hilma af Klint: Paintings for the Future teaching materials"
+  supports: nonobjective form and limited or absent pictorial narrative
+  accessed: '2026-10-19'
+- url: https://www.guggenheim.org/teaching-materials/hilma-af-klint-paintings-for-the-future/paintings-for-the-temple
+  authority: Solomon R. Guggenheim Museum
+  title: Paintings for the Temple
+  supports: geometric forms and selected material choices including oil and metal leaf in the Altarpieces
+  accessed: '2026-10-19'
 attribution: Works by Hilma af Klint remain protected where applicable; this package
   describes observable abstract structures and does not reproduce a named painting.

@@ -1,0 +1,109 @@
+schema_version: 2.0.0
+status: experimental
+id: af-klint-axial-spiral-and-biomorphic-order
+name: Af Klint axial spiral and biomorphic order
+base_package: artists/hilma-af-klint
+scope:
+  medium: flat_painting_or_print
+  representation: nonfigurative
+  description: >-
+    A nonfigurative painting direction organized by a visible axis, a controlled
+    spiral or circular system, and a counterpoint between geometric and
+    biomorphic forms. Use matte color fields and fine hand-drawn boundaries to
+    make the image read like a composed visual system rather than a literal
+    diagram. This direction describes formal decisions only; it does not assign
+    spiritual, scientific, or religious meaning to the user's shapes.
+  required_contexts:
+    - axial-symbolic-abstraction
+  incompatible_contexts:
+    - photorealistic-object-illustration
+    - generic-occult-sigil
+    - luminous-digital-interface
+  limitations:
+    - Use only abstract forms and symbols explicitly requested by the user; add no text, letters, religious icon, or narrative code.
+    - Keep the requested number and relative role of geometric and biomorphic forms legible.
+    - Do not reproduce a named af Klint painting, series composition, or exact symbol arrangement.
+pillars:
+  - Establish one readable compositional axis, then organize a bounded spiral or circular structure around or across it; avoid turning the image into a generic mandala.
+  - Balance constructed geometry with a limited organic counterform so neither vocabulary becomes decorative noise.
+  - Use matte, mostly flat color planes with a restrained palette of pale blue, yellow, pink, green, black, and white; let contrast and adjacency carry emphasis instead of cast shadows.
+  - Keep fine hand-drawn boundary variation selective, preserving the clarity of the overall symbolic system.
+rules:
+  - id: axis-and-cyclical-geometry
+    axis: composition_and_structure
+    importance: core
+    applies_when: The user requests a nonfigurative composition with geometric or symbolic forms.
+    instruction: Arrange requested forms around one visible axis and use one bounded spiral, ring, or nested circle sequence to establish direction; preserve the user's requested counts and avoid a generic mandala template.
+    observable: The image has a clear structural backbone and a purposeful cyclical movement that can be described without interpreting its meaning.
+    reject_when: Multiple competing centers appear, geometry becomes a random scatter, or added symbols change the user's requested form count.
+    evidence:
+      source_ids:
+        - afklint-guggenheim-exhibition
+        - afklint-guggenheim-science
+      basis: institutional_description
+      visual_review: pending
+    avoid: generic mandala, zodiac wheel, extra glyphs, and copied series layouts
+  - id: geometric-biomorphic-counterpoint
+    axis: shape_and_relationship
+    importance: core
+    applies_when: The user requests both geometric and organic abstract form, or permits their formal contrast.
+    instruction: Set a small number of crisp geometric forms against one or two flowing biomorphic shapes, keeping their edges distinct and their relative scale intentional; do not translate them into literal plants, cells, planets, or religious emblems.
+    observable: Constructed and organic shapes remain separately readable and form a deliberate visual relationship without becoming a literal scene.
+    reject_when: One shape vocabulary overwhelms the other, forms become identifiable objects not requested, or the contrast reads as random decoration.
+    evidence:
+      source_ids:
+        - afklint-guggenheim-exhibition
+        - afklint-guggenheim-teaching
+      basis: institutional_description
+      visual_review: pending
+    avoid: unrequested celestial bodies, botanical motifs, body organs, and sacred iconography
+  - id: matte-color-fields-and-line-boundaries
+    axis: palette_and_surface
+    importance: supporting
+    applies_when: The requested abstraction uses color blocks and drawn boundaries.
+    instruction: Use mostly matte, even color fields from a restrained cool-warm palette; let fine, slightly imperfect line boundaries articulate selected relationships and keep value contrast sufficient for the structure to read.
+    observable: Color adjacency and line, rather than realistic light or texture, establish hierarchy; surfaces remain calm and planar.
+    reject_when: Gloss, glow, cast shadows, or heavy texture make the work read as a digital interface or volumetric object.
+    evidence:
+      source_ids:
+        - afklint-guggenheim-exhibition
+        - afklint-guggenheim-altar
+      basis: institutional_description
+      visual_review: pending
+    avoid: neon glow, metallic gradients, thick random impasto, and illegible low-contrast colors
+active_rule_ids:
+  - axis-and-cyclical-geometry
+  - geometric-biomorphic-counterpoint
+  - matte-color-fields-and-line-boundaries
+joint_checks:
+  - id: formal-system-without-imposed-meaning
+    rule_ids:
+      - axis-and-cyclical-geometry
+      - geometric-biomorphic-counterpoint
+      - matte-color-fields-and-line-boundaries
+    instruction: Make the requested abstract forms read as one ordered visual system through axis, cyclical movement, shape contrast, and matte color relationships; do not assign an unrequested narrative or spiritual meaning.
+    observable: Requested form count and types remain intact; axis and spiral are legible; geometric and organic forms contrast; flat color and fine boundaries carry the hierarchy without literalized symbols.
+sources:
+  - id: afklint-guggenheim-exhibition
+    kind: museum_exhibition_analysis
+    url: https://www.guggenheim.org/exhibition/hilma-af-klint
+  - id: afklint-guggenheim-science
+    kind: museum_educational_analysis
+    url: https://www.guggenheim.org/teaching-materials/hilma-af-klint-paintings-for-the-future/science
+  - id: afklint-guggenheim-teaching
+    kind: museum_educational_analysis
+    url: https://www.guggenheim.org/teaching-materials/hilma-af-klint-paintings-for-the-future
+  - id: afklint-guggenheim-altar
+    kind: museum_collection_and_material_analysis
+    url: https://www.guggenheim.org/teaching-materials/hilma-af-klint-paintings-for-the-future/paintings-for-the-temple
+execution:
+  route: text_only
+  must:
+    - Declare axial-symbolic-abstraction before applying this direction.
+    - Preserve the abstract forms, count, and relationships requested by the user.
+    - Use a visible axis, bounded cyclical geometry, and a clear geometric-biomorphic contrast.
+    - Keep surfaces matte and use line and color adjacency instead of realistic lighting.
+  avoid:
+    - adding spiritual, scientific, or religious symbols and meanings without request
+    - using a generic mandala, zodiac chart, or luminous interface aesthetic
+    - copying a named artwork, series layout, or exact symbol arrangement

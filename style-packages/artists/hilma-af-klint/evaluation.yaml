@@ -1,5 +1,16 @@
 package_id: hilma-af-klint
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  axial-symbolic-abstraction:
+    required:
+      - requested abstract form counts and roles remain intact
+      - one compositional axis and bounded cyclical movement are legible
+      - geometric and biomorphic shapes form a deliberate contrast
+      - matte color fields and fine boundaries carry the hierarchy
+    reject_if:
+      - unrequested religious, spiritual, scientific, or narrative symbols appear
+      - composition collapses into a generic mandala or zodiac diagram
+      - glow, shadow, or texture turns flat forms into a digital interface or 3D object
 invariants:
 - id: style_recognition
   weight: 3
