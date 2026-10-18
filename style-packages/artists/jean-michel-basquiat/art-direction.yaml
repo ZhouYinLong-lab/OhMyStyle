@@ -1,0 +1,105 @@
+schema_version: 2.0.0
+status: experimental
+id: basquiat-user-authored-mark-hierarchy
+name: Basquiat user-authored mark hierarchy
+base_package: artists/jean-michel-basquiat
+scope:
+  medium: mixed_media_painting
+  representation: stylized
+  description: >-
+    A context-specific direction for images where the user supplies words or
+    symbols as part of the composition. It organizes those exact marks through
+    hand-drawn emphasis, selective overlap, color grouping, and occasional
+    strike-through when requested. It does not supply the words, symbols,
+    cultural references, or message.
+  required_contexts:
+    - user-authored-mark-hierarchy
+  incompatible_contexts:
+    - no-text-clean-layout
+    - corporate-typography-system
+    - photorealistic-image
+  limitations:
+    - Apply only when the user explicitly supplies words or symbols for the image.
+    - Preserve the exact supplied wording, spelling, symbol count, and requested legibility.
+    - Cross out, circle, repeat, or obscure a mark only when the user requests that operation.
+    - Add no crown, skull, anatomy diagram, signature, street tag, historical allusion, or political message unless explicitly requested.
+    - Keep the requested main subject legible beneath mark and color layers.
+    - Do not copy a named painting's layout, text, symbol, or figure arrangement.
+pillars:
+  - Treat only the user's words and symbols as content; establish a clear hierarchy among them through scale, color, placement, and mark weight.
+  - Use crossing, circling, boxing, or partial overlap only on the specific user-designated marks, keeping required text readable.
+  - Let hand-drawn lines and a few intense color planes connect marks to the subject, with visible ground and deliberate quiet gaps.
+  - Keep rough material traces and uneven edges intentional; avoid turning the whole image into an undifferentiated graffiti texture.
+rules:
+  - id: exact-user-text-hierarchy
+    axis: text_and_composition
+    importance: core
+    applies_when: The user supplies one or more words or symbols and requests them in the image.
+    instruction: Preserve every supplied word and symbol exactly, then use only requested differences in size, color, placement, repetition, or surrounding marks to make a readable hierarchy; invent no additional text.
+    observable: All requested text is present with the requested spelling and relative emphasis, and no unrequested text appears.
+    reject_when: Words are substituted, duplicated without request, obscured beyond requested legibility, or mixed with invented labels.
+    evidence:
+      source_ids:
+        - moma-basquiat-language-and-marks
+        - whitney-basquiat-strike-through
+      basis: institutional_description
+      visual_review: pending
+    avoid: automatic tags, pseudo-writing, extra dates, signatures, and copied phrases
+  - id: intentional-mark-intervention
+    axis: line_and_emphasis
+    importance: core
+    applies_when: The user explicitly requests a word or symbol to be crossed out, circled, boxed, or partially covered.
+    instruction: Apply the requested intervention only to the designated mark; make the intervention increase attention while retaining the degree of legibility the user requested.
+    observable: The selected mark remains identifiable and the gesture clearly targets it rather than decorating the entire composition.
+    reject_when: Unrequested text is crossed out, the target becomes unreadable against the request, or marks target other objects.
+    evidence:
+      source_ids:
+        - whitney-basquiat-strike-through
+        - moma-basquiat-language-and-marks
+      basis: institutional_description
+      visual_review: pending
+    avoid: random crossed words, illegible scribble fields, and generalized censorship motifs
+  - id: layered-mark-field-with-quiet-gaps
+    axis: surface_and_color
+    importance: supporting
+    applies_when: The user requests a rough mixed-media or hand-marked surface.
+    instruction: Layer a small number of hand-drawn marks and high-contrast color planes around the requested subject, then leave visible ground and quiet gaps so the mark hierarchy remains readable.
+    observable: Line, color, and abrasion form distinct layers without replacing the subject or filling every area with noise.
+    reject_when: The composition becomes an all-over graffiti wall, a clean corporate typography layout, or a generic distressed filter.
+    evidence:
+      source_ids:
+        - moma-basquiat-language-and-marks
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform splatter, generic neon graffiti, and globally distressed texture
+active_rule_ids:
+  - exact-user-text-hierarchy
+  - intentional-mark-intervention
+  - layered-mark-field-with-quiet-gaps
+joint_checks:
+  - id: legible-user-authored-mark-system
+    rule_ids:
+      - exact-user-text-hierarchy
+      - intentional-mark-intervention
+      - layered-mark-field-with-quiet-gaps
+    instruction: Build an expressive, hand-made hierarchy from the user's own words and symbols while keeping the requested subject, spelling, and mark operations intact.
+    observable: No invented words or iconography appear; requested interventions are localized; color and line form a hierarchy with visible open ground.
+sources:
+  - id: moma-basquiat-language-and-marks
+    kind: museum_artist_analysis
+    url: https://www.moma.org/artists/370-jean-michel-basquiat
+  - id: whitney-basquiat-strike-through
+    kind: museum_educational_analysis
+    url: https://whitney.org/education/families/kids-art-challenge/jean-michel-basquiat
+execution:
+  route: text_only
+  must:
+    - Declare user-authored-mark-hierarchy only when the user supplies text or symbols.
+    - Preserve exact user-supplied wording, symbol count, and requested operations.
+    - Use hand-drawn marks, color hierarchy, abrasion, and open ground selectively.
+    - Keep the main user-requested subject readable.
+  avoid:
+    - generating words or symbols that the user did not provide
+    - adding recurring Basquiat-associated motifs as defaults
+    - crossing out or obscuring text without instruction
+    - copying a named artwork or its message

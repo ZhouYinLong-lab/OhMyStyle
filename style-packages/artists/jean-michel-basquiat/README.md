@@ -30,6 +30,18 @@
 - `evaluation.yaml`：生成后的检查标准
 - `references/manifest.csv`、`provenance.yaml`：来源与权利边界
 
+## 新架构：用户文字与标记层级（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在用户明确提供画面中的文字或符号并声明 `user-authored-mark-hierarchy` 时启用。它把用户给出的内容按大小、颜色、位置和手绘线条组织层级；划线、圈出、重复或遮挡只作用于用户指定的元素。没有用户输入时，不添加任何字、皇冠、骷髅、解剖图、署名或文化暗示。MoMA 与惠特尼的馆方资料分别记录了文字、色块和手绘标记的交织，以及划掉文字用于吸引注意的做法；本方向只转译这些形式关系，不借用原作信息或话语。
+
+它与普通涂鸦墙或干净的海报字体排版都不同：内容由用户决定，手绘线、色块和局部划改形成层级，留白和底材仍可见。重点是“如何强调指定内容”，而不是随机堆字或套用固定符号。
+
+```powershell
+python tools/compile-style.py style-packages/artists/jean-michel-basquiat --direction package --context user-authored-mark-hierarchy --subject "A small yellow portable radio with the exact handwritten words RADIO, SIGNAL, and QUIET; cross out only QUIET once; include one blue square and one red circle; no other text"
+```
+
+[`comparisons/`](comparisons/) 保存旧版与新方向 job、提示词和样图。新方向样图以旧图为构图参考，便于检查指定文字层级和局部划改；生成仍有随机性，文字是否准确须以图片实际结果为准。方向保持实验状态，等待视觉评审。
+
 ## 来源与版权
 
 本包参考[现代艺术博物馆的艺术家资料](https://www.moma.org/artists/370-jean-michel-basquiat)，只提取可观察的视觉特征。外部作品及其图像权利仍归原权利人所有；代表图是新的原创抽象场景，不复制具体作品，也不表示与艺术家、机构存在合作、授权或背书关系。详细边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 和仓库根目录的 [`NOTICE`](../../../NOTICE)。

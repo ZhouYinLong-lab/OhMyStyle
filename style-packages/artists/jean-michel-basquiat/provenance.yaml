@@ -1,12 +1,18 @@
 package_id: jean-michel-basquiat
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: curated
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
+  - url: 'https://whitney.org/education/families/kids-art-challenge/jean-michel-basquiat'
+    title: 'Create a Tag!'
+    authority: 'Whitney Museum of American Art'
+    supports: user-authored word and symbol combinations and crossing out as a way to direct attention
+    accessed: '2026-10-19'
   - url: 'https://www.moma.org/artists/370-jean-michel-basquiat'
     title: 'Jean-Michel Basquiat'
     authority: 'The Museum of Modern Art'
-    supports: source traceability and package scope
+    supports: source traceability, layered text, varied marks, intense color patches, and crossed-out words
+    accessed: '2026-10-19'
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation. Its representative image is newly generated and not a reproduction of a specific work.
 rights_notes:

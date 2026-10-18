@@ -1,4 +1,14 @@
 profiles:
+  user-authored-mark-hierarchy:
+    required:
+      - only user-supplied words and symbols appear
+      - requested spelling and number of text elements are preserved
+      - line, color, overlap, or strike-through creates a readable hierarchy among supplied marks
+      - hand-made marks and surface abrasion remain visible without overwhelming the requested subject
+    reject_if:
+      - crowns, skulls, anatomy diagrams, signatures, or cultural references appear without request
+      - crossed-out text is omitted or becomes unreadable when the user asked to preserve it
+      - marks form a generic graffiti wall with no hierarchy to the requested subject
   generic:
     required:
       - package-specific visual signature is observable

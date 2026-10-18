@@ -208,6 +208,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [艾瓦佐夫斯基水面光路与浪向](../style-packages/artists/ivan-aivazovsky/art-direction.yaml) | 断续反光路径、随水面方向变化的笔触、海天空气透视 | `text_only`，声明 `radiant-sea-light-path` |
 | [凡·艾克釉层与材质光感](../style-packages/artists/jan-van-eyck/art-direction.yaml) | 同一光源下区分材质高光、局部薄层叠色、选择性细节 | `text_only`，声明 `glazed-material-observation` |
 | [安格尔轮廓主导的人物习作](../style-packages/artists/jean-auguste-dominique-ingres/art-direction.yaml) | 连续轮廓组织姿态、平滑克制塑形、浅而安静的背景 | `text_only`，声明 `contour-led-figure-study` |
+| [巴斯奎特用户文字与标记层级](../style-packages/artists/jean-michel-basquiat/art-direction.yaml) | 只组织用户提供的字词和符号；划改限定在指定元素，保留可读层级 | `text_only`，声明 `user-authored-mark-hierarchy` |
 
 ## 6. 从主体请求到结果
 
