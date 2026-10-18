@@ -69,3 +69,13 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 `evaluation.yaml` 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 新架构：手绘网格色域（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅适用于非具象的抽象色域：用细铅笔线或克制的平行线组织低对比画面，保留手工线条的轻微偏差，让薄涂色层与画布质地在近看时显现。它与包豪斯的高对比基本形和功能构成不同；不能拿来把人物、场景转成“网格风”。需显式声明 `abstract-field` 上下文。
+
+```powershell
+python tools/compile-style.py style-packages/artists/agnes-martin --direction package --context abstract-field --subject "A quiet nonfigurative square field of pale blue and warm gray" --output runs/style-v2/agnes-martin-job.json
+```
+
+方向仍处于实验状态。古根海姆和 MoMA 的资料支持其手绘网格、柔和色域与线条微差的观察；它对题材的限制也已写入范围契约。

@@ -88,3 +88,13 @@ and lighting. Review the output against `evaluation.yaml`.
 Users manage model weights, API keys, and generated images themselves. References
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
+
+## New architecture: hand-drawn grid field (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is limited to nonfigurative fields: fine pencil-like lines or restrained stripes organize a low-contrast surface, slight hand-made deviations remain visible, and thin washes and support texture reward close viewing. This differs from Bauhaus's high-contrast basic forms and functional composition; do not use it to turn a requested person or scene into a “grid style.” Explicitly declare the `abstract-field` context.
+
+```powershell
+python tools/compile-style.py style-packages/artists/agnes-martin --direction package --context abstract-field --subject "A quiet nonfigurative square field of pale blue and warm gray" --output runs/style-v2/agnes-martin-job.json
+```
+
+The direction remains experimental. Guggenheim and MoMA sources support the observations about hand-drawn grids, subdued fields, and line variation; its subject limitation is part of the scope contract.

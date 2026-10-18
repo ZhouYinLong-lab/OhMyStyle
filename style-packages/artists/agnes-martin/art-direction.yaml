@@ -1,0 +1,91 @@
+schema_version: 2.0.0
+status: experimental
+id: agnes-martin-hand-drawn-grid-field
+name: Agnes Martin hand-drawn grid field
+base_package: artists/agnes-martin
+scope:
+  medium: painting_and_drawing
+  representation: nonfigurative
+  description: A nonrepresentational field built from delicate hand-drawn horizontal and vertical lines or restrained stripes over thin, subdued color; no depicted object is required.
+  required_contexts:
+    - abstract-field
+  incompatible_contexts:
+    - figurative-scene
+    - high-contrast-functional-poster
+  limitations:
+    - Keep the work nonfigurative; a user request for a literal object or scene is outside this direction's scope.
+    - Avoid turning the grid into an immaculate digital interface or a bold Bauhaus layout.
+pillars:
+  - Let repeated lines establish a quiet all-over field without a focal icon.
+  - Keep the grid delicate, human-made, and slightly contingent rather than mechanically perfect.
+  - Allow small changes in scale, rhythm, and wash to reward both distant and close viewing.
+rules:
+  - id: delicate-hand-drawn-grid
+    axis: composition
+    importance: core
+    applies_when: always
+    instruction: Build the field from fine horizontal and vertical pencil-like lines or restrained parallel stripes; keep their alignment deliberate but allow slight wavering and hand pressure variation.
+    observable: The grid reads as a coherent all-over structure at a distance and reveals delicate irregularity on close inspection.
+    reject_when: Lines are perfectly digital, decorative, or so irregular that the underlying order disappears.
+    evidence:
+      source_ids:
+        - agnes-guggenheim-retrospective
+        - agnes-moma-the-tree
+      basis: institutional_description
+      visual_review: pending
+    avoid: flawless CAD grids and arbitrary hand-drawn scribbles
+  - id: subdued-wash-and-close-value
+    axis: palette
+    importance: core
+    applies_when: always
+    instruction: Place the line structure over a thin, subdued field of near-white, pale gray, soft blue, muted rose, or warm neutral; use small value and hue shifts instead of accent colors.
+    observable: Lines and washes remain quiet, with subtle differences appearing through layering rather than strong contrast.
+    reject_when: Saturated primary colors, heavy dark outlines, or a graphic focal shape dominate the field.
+    evidence:
+      source_ids:
+        - agnes-guggenheim-retrospective
+        - agnes-moma-the-tree
+      basis: institutional_description
+      visual_review: pending
+    avoid: primary-color blocks, hard black outlines, and dramatic gradients
+  - id: intimate-surface-and-viewing-distance
+    axis: surface
+    importance: supporting
+    applies_when: always
+    instruction: Let thin paint or wash, pencil traces, and the support remain subtly perceptible; tune line density so the field feels calm from afar and intimate up close.
+    observable: The surface has a fragile handmade quality without a global grain effect, and no single mark becomes a pictorial object.
+    reject_when: A uniform texture filter replaces material traces, or close detail becomes more important than the whole field.
+    evidence:
+      source_ids:
+        - agnes-guggenheim-retrospective
+      basis: institutional_description
+      visual_review: pending
+    avoid: global canvas-grain overlays and focal decorative motifs
+active_rule_ids:
+  - delicate-hand-drawn-grid
+  - subdued-wash-and-close-value
+  - intimate-surface-and-viewing-distance
+joint_checks:
+  - id: grid-wash-surface-coherence
+    rule_ids:
+      - delicate-hand-drawn-grid
+      - subdued-wash-and-close-value
+      - intimate-surface-and-viewing-distance
+    instruction: Keep the grid, subdued wash, and material traces in one restrained visual register; the field should feel ordered but not mechanically perfect.
+    observable: The composition stays nonfigurative and quiet, while close inspection reveals line and surface variation.
+sources:
+  - id: agnes-guggenheim-retrospective
+    kind: museum_exhibition_description
+    url: https://www.guggenheim.org/press-release/agnes-martin
+  - id: agnes-moma-the-tree
+    kind: museum_object_description
+    url: https://www.moma.org/collection/works/78361
+execution:
+  route: text_only
+  must:
+    - Keep the image abstract and nonfigurative.
+    - Use fine repeated lines or stripes over a quiet, lightly painted field.
+    - Retain slight hand-made irregularity and low contrast.
+  avoid:
+    - literal trees, flowers, landscapes, faces, or objects even when suggested by a title
+    - bold Bauhaus geometry, high-contrast UI grids, and perfectly uniform vector lines

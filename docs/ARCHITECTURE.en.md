@@ -153,6 +153,7 @@ the same prompt wording.
 | [Van Gogh directional strokes](../style-packages/artists/vincent-van-gogh/art-direction.yaml) | Surface-following marks, local cool-warm relationships, visible impasto | `text_only` |
 | [Morandi quiet tonality](../style-packages/artists/giorgio-morandi/art-direction.yaml) | Close values, measured intervals, shallow space, selective soft edges | `text_only` |
 | [Hopper architectural light](../style-packages/artists/edward-hopper/art-direction.yaml) | Everyday architectural planes, directional shadows, spatial distance | `text_only` |
+| [Agnes Martin hand-drawn grid](../style-packages/artists/agnes-martin/art-direction.yaml) | Nonfigurative fine grid, subdued field, hand-made variation | `text_only`, declare `abstract-field` |
 
 ## 6. Execution routes
 
