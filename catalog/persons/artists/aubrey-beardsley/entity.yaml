@@ -1,0 +1,10 @@
+id: aubrey-beardsley
+entity_type: artist
+name: Aubrey Vincent Beardsley
+life: 1872-1898
+region: United Kingdom
+mediums: [illustration, pen_and_ink, line_block_print]
+themes: [black_white_graphics, calligraphic_line, negative_space, illustrated_books]
+sources:
+  - https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/aubrey-beardsley-1872-1898
+  - https://www.vam.ac.uk/articles/aubrey-beardsley-decadence-desire

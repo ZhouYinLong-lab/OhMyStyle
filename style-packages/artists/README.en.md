@@ -2,9 +2,12 @@
 
 [中文](README.md)
 
-This directory contains 83 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
+This directory contains 84 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
 
 <table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="aubrey-beardsley/README.en.md"><img src="aubrey-beardsley/gallery-16x9.jpg" width="230" alt="Aubrey Beardsley representative"></a><br><strong>Aubrey Beardsley</strong><br><a href="aubrey-beardsley/README.en.md">Open README</a></td>
+</tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="joaquin-sorolla/README.en.md"><img src="joaquin-sorolla/gallery-16x9.jpg" width="230" alt="Joaquín Sorolla representative"></a><br><strong>Joaquín Sorolla</strong><br><a href="joaquin-sorolla/README.en.md">Open README</a></td>
 </tr>

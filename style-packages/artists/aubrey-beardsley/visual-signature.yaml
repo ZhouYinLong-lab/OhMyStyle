@@ -1,0 +1,31 @@
+composition:
+  - balance a few large flat black shapes against broad untouched paper fields
+  - arrange the main silhouette asymmetrically with deliberate graphic spacing
+  - concentrate intricate line detail around selected focal passages
+  - let contour and negative space carry the reading before ornament
+palette:
+  - strict black ink and warm paper white
+  - optional sparse gray wash only when explicitly requested
+  - value contrast, not hue, separates figure, ground, and detail
+medium:
+  - pen and brush in black ink, suited to line-block reproduction
+  - confident calligraphic contour beside solid filled areas
+  - flat graphic shapes without modeled painterly volume
+lighting:
+  - translate light into black-white shape design rather than gradients
+  - use white paper to describe light, fabric, and reflective space
+  - gray wash is not the default rendering method
+surface:
+  mark_logic: controlled_sinuous_line_with_selective_ink_fill
+  edge_behavior: crisp_printable_contour
+  finish: flat_high_contrast_illustration
+texture:
+  - group hatching sparsely and intentionally
+  - vary decorative line rhythm and direction instead of filling every surface
+  - keep large black areas clean enough to preserve graphic silhouettes
+invariants:
+  - the image reads through black-white balance before fine detail
+  - contour is fluid and deliberate, not uniformly thin or mechanically geometric
+  - detail density varies sharply between focal and quiet areas
+  - ornament remains subordinate to silhouette and negative space
+  - the user's requested subject remains authoritative

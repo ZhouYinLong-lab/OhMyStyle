@@ -1,0 +1,30 @@
+package_id: aubrey-beardsley
+package_version: 0.1.0
+invariants:
+  - id: black_white_mass_balance
+    weight: 3
+    test: The composition reads through a deliberate balance of solid black and open paper.
+  - id: calligraphic_contour
+    weight: 3
+    test: Contours are fluid and controlled, with selective changes in weight and rhythm.
+  - id: selective_detail
+    weight: 2
+    test: Fine detail is concentrated at focal points while quiet areas remain open.
+  - id: subject_independence
+    weight: 3
+    test: The requested subject remains clear without fixed period motifs or a copied source scene.
+rejections: [copied_named_work, colored_poster_treatment, uniform_dense_hatching, gray_gradient_modeling, unrequested_ornament]
+minimum_score: 8
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Pending neutral-subject review.
+  distinctive_signature:
+    score: null
+    notes: Check black-white mass, calligraphic contour, and selective detail together.
+  visual_overlap:
+    score: null
+    notes: Compare with Mucha and related Art Nouveau packages; evaluate construction, not shared period vocabulary alone.
+  cross_subject_stability:
+    score: null
+    notes: Run at least two subjects outside literary illustration before assigning a score.

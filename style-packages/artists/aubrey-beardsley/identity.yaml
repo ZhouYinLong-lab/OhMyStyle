@@ -1,0 +1,14 @@
+canonical_name: 奥布里·比亚兹莱
+entity_type: artist
+life: 1872-1898
+region: United Kingdom
+primary_medium: pen_and_ink_illustration
+scope:
+  subject_policy: open
+  subject_note: Apply the graphic construction to user-supplied subjects; do not insert recurring characters, period clothing, or decorative props.
+  subjects: [book illustration, portrait, narrative scene, ornamental graphic composition]
+  period_focus: mature black-and-white illustration
+  exclusions: [mandatory Art Nouveau poster layout, copied named illustration, color-led painting]
+sources:
+  - https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/aubrey-beardsley-1872-1898
+  - https://www.vam.ac.uk/articles/aubrey-beardsley-decadence-desire

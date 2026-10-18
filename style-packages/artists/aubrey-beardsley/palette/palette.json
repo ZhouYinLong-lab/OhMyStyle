@@ -1,0 +1,8 @@
+{
+  "name": "Ink and Paper",
+  "colors": [
+    {"name": "Dense Ink", "hex": "#111111", "role": "solid_mass_and_contour"},
+    {"name": "Paper White", "hex": "#F4F0E5", "role": "negative_space_and_light"},
+    {"name": "Optional Gray Wash", "hex": "#88847D", "role": "rare_secondary_tone"}
+  ]
+}

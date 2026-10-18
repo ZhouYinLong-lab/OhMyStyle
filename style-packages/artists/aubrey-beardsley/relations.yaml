@@ -1,0 +1,14 @@
+related_movements: [art_nouveau, aesthetic_movement]
+related_concepts: [line_block_printing, black_white_illustration, negative_space]
+influences_to_review: [japanese_print_composition, pre_raphaelite_illustration]
+not_equivalent_to: [colored_art_nouveau_poster, generic_gothic_ornament, dense_engraving_hatch]
+family: source-artist
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives:
+  - Unlike Alphonse Mucha's color-led poster design, this profile uses strict black-white mass, calligraphic contour, and unevenly distributed detail to make illustration and page space work together.
+avoid_overlap:
+  - Do not introduce Mucha-like colored halos or poster lettering.
+  - Do not fill every area with decorative pattern or crosshatching.
+  - Do not replace organic contour with geometric constructivist forms.

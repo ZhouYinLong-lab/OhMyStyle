@@ -1,0 +1,18 @@
+package_id: aubrey-beardsley
+package_version: 0.1.0
+curation_status: research_scaffold
+source_policy: External artworks are link-only; no source artwork is redistributed in this package.
+sources:
+  - url: https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/aubrey-beardsley-1872-1898
+    authority: Musée d'Orsay
+    supports: graphic world, black-and-white line-block process, and vigorous pen line
+    accessed: 2026-10-18
+  - url: https://www.vam.ac.uk/articles/aubrey-beardsley-decadence-desire
+    authority: Victoria and Albert Museum
+    supports: black-and-white illustration as a major medium in illustrated books, magazines, and advertisements
+    accessed: 2026-10-18
+  - url: https://www.metmuseum.org/art/collection/search/753519
+    authority: The Metropolitan Museum of Art
+    supports: pen and India ink medium and economical black-line treatment on a white ground
+    accessed: 2026-10-18
+attribution: This package studies publicly observable illustration traits; no affiliation or endorsement is claimed.

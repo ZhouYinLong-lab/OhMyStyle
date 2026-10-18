@@ -1,0 +1,18 @@
+medium: black_ink_line_illustration
+materials:
+  support: smooth_illustration_board_or_paper
+  pigment_direction: black_ink_on_warm_white_ground
+  finish: line_block_print_compatible_flat_areas
+process:
+  - decide the positive-black and untouched-white balance before adding detail
+  - place the primary silhouette and reserve broad negative space
+  - draw a few confident contour lines that clarify pose and shape
+  - fill selected regions with solid black to create graphic weight
+  - add sparse hatching or ornamental detail only near focal passages
+  - check legibility at print scale; remove marks that collapse into noise
+technical_direction:
+  contrast: very_high
+  saturation: monochrome
+  perspective: simplified_graphic_space
+  detail_density: uneven_and_focal
+safety_note: Do not reproduce a named illustration, literary character, title page, or exact arrangement.

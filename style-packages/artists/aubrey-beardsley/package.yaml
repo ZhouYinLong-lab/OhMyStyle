@@ -1,0 +1,31 @@
+id: aubrey-beardsley
+name: 奥布里·比亚兹莱
+kind: artist
+domain: design
+version: 0.1.0
+entity: catalog/persons/artists/aubrey-beardsley/entity.yaml
+summary: >-
+  A fin-de-siècle illustration profile built from calligraphic contour,
+  decisive ink-black masses, flat silhouettes, and carefully balanced open
+  paper space with detail concentrated at focal points.
+files:
+  identity: identity.yaml
+  visual_signature: visual-signature.yaml
+  reproduction: reproduction.yaml
+  relations: relations.yaml
+  palette: palette/palette.json
+  prompts: prompts
+  evaluation: evaluation.yaml
+  references: references/manifest.csv
+  provenance: provenance.yaml
+classification:
+  source_type: artist
+  medium: pen_and_ink_illustration
+  historical_context: British fin-de-siècle illustration, 1890s
+  application: general
+  visual_axes: [composition, palette, surface, texture]
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: [sinuous_contour, ornamental_foliage]
+  benchmark_subjects: [portrait, still_life, architecture_environment, narrative_scene]

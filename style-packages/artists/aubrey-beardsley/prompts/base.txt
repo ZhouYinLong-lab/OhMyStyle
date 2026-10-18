@@ -1,0 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Location: {LOCATION}
+Action: {SUBJECT_ACTION}
+Preserve the supplied subject, count, setting, and requested details. Do not add period costumes, ornamental foliage, or recurring props unless requested.
+
+Construct a black-ink illustration on a warm-white ground. Establish the positive-black and untouched-white balance first. Use a few confident, sinuous calligraphic contours and decisive flat ink masses to make the subject legible. Leave broad areas of open paper; vary detail density sharply and reserve sparse hatching or decorative line for selected focal areas. Keep the space graphic and flat, with crisp contours suited to line-block reproduction. Let line rhythm and negative space adapt to {SUBJECT} in {LOCATION}; do not add color, lettering, a poster frame, or a fixed literary narrative.
