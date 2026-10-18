@@ -1,0 +1,105 @@
+schema_version: 2.0.0
+status: experimental
+id: literal-ascii-grid
+name: Literal ASCII character grid
+base_package: game-art/ascii-character-game-art
+scope:
+  medium: ascii_glyph_grid
+  representation: stylized
+  description: Construct the complete game scene from literal printable ASCII glyphs placed in a fixed grid, then rasterize each glyph cell deterministically.
+  required_contexts: []
+  incompatible_contexts:
+    - image-repainting
+    - unicode-art
+  limitations:
+    - The selected character set does not include Chinese, block-drawing characters, or emoji.
+    - Do not ask a standard image generator to repaint the grid or add pictorial detail.
+pillars:
+  - Every visible scene shape is made from literal characters.
+  - Fixed cells and glyph density organize silhouettes, space, and depth.
+  - Foreground, environment, and important interactions remain readable within the permitted glyph and color budget.
+rules:
+  - id: ascii-literal-construction
+    axis: process
+    importance: core
+    applies_when: always
+    instruction: Create a row-by-row character source first, then rasterize it in a fixed grid with a monospaced font.
+    observable: Every scene mark can be traced to a specific row, column, and glyph.
+    reject_when: The image is a conventional painting with a glyph texture, or contains independent graphics outside the grid.
+    evidence:
+      source_ids:
+        - ascii-package-source-grid
+        - ascii-package-renderer
+      basis: original_design_intent
+      visual_review: pending
+    avoid: paintings decorated with character textures
+  - id: ascii-density-hierarchy
+    axis: value
+    importance: core
+    applies_when: always
+    instruction: Use glyph density, negative space, and permitted foreground brightness to distinguish the subject, paths, and distance.
+    observable: The main subject reads at thumbnail size, and enlarged regions remain composed of separate character cells.
+    reject_when: Random glyph noise obscures the subject, or color alone separates every important object.
+    evidence:
+      source_ids:
+        - ascii-package-source-grid
+      basis: original_design_intent
+      visual_review: pending
+    avoid: random character noise obscuring the subject
+  - id: ascii-grid-alignment
+    axis: layout
+    importance: core
+    applies_when: always
+    instruction: Pad every row consistently to the fixed column count and align each glyph to one cell; do not vary font size locally to fake depth.
+    observable: Row and column coordinates remain stable, while spatial differences come from symbols and layout.
+    reject_when: A proportional font breaks alignment, or local stretching distorts glyphs into shapes.
+    evidence:
+      source_ids:
+        - ascii-package-renderer
+      basis: original_design_intent
+      visual_review: pending
+    avoid: proportional fonts or local character stretching
+active_rule_ids:
+  - ascii-literal-construction
+  - ascii-density-hierarchy
+  - ascii-grid-alignment
+joint_checks:
+  - id: ascii-glyph-layout-readability
+    rule_ids:
+      - ascii-literal-construction
+      - ascii-density-hierarchy
+      - ascii-grid-alignment
+    instruction: Keep the new subject readable through glyph density and negative space while preserving literal characters and a uniform grid.
+    observable: The subject is recognizable, every mark belongs to a glyph cell, and the grid stays aligned.
+sources:
+  - id: ascii-package-source-grid
+    kind: project_authored_source_artifact
+    local_path: examples/ascii-cave-grid.txt
+  - id: ascii-package-renderer
+    kind: project_authored_renderer
+    local_path: render_gallery.py
+execution:
+  route: deterministic_grid
+  must:
+    - Build every scene shape from literal printable ASCII glyphs in fixed cells.
+    - Keep requested object count and layout readable.
+    - Return only the source grid for the deterministic rasterizer.
+  avoid:
+    - image-model repainting
+    - fake characters or text overlays on a painting
+    - independent shadows, outlines, gradients, or figures outside the glyph grid
+  grid:
+    columns: 100
+    rows: 36
+    width: 1280
+    height: 720
+    margin: 12
+    font_size: 18
+    foreground: '#A9B9BF'
+    background: '#0A0E13'
+    glyph_colors:
+      '#': '#74828B'
+      '@': '#C2D2DA'
+      '+': '#FFDB89'
+      '*': '#FFDB89'
+      '.': '#536570'

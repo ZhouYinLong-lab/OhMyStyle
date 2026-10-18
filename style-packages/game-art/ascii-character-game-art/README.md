@@ -36,6 +36,7 @@
 - `prompts/base.txt`、`prompts/negative.txt`：基础 Prompt 与负面约束
 - `palette/palette.json`：色彩角色与色值
 - `evaluation.yaml`：生成后的检查标准
+- `art-direction.yaml`：严格字格路线的可选实验方向；普通旧路径仍保持兼容
 - `references/manifest.csv`、`provenance.yaml`：来源和权利边界
 
 ## 来源与版权
@@ -81,3 +82,14 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 使用本地文本模型生成固定宽度字符网格，再通过代码或 ComfyUI 中严格逐字符渲染的节点输出图片。不要使用会重绘字符结构的图像生成节点。完成后用 `evaluation.yaml` 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 新架构：严格 ASCII 网格方向（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 把严格字符构建写成编译器可读的方向规则：先输出固定行列的纯 ASCII 字符源，再逐格用等宽字体栅格化。它仍处于实验状态；图像生成模型不能参与重绘。新版方向与旧版默认入口并存，只有显式指定 `--direction package` 才会使用它。
+
+```powershell
+python tools/compile-style.py style-packages/game-art/ascii-character-game-art --direction package --subject "One explorer holding a torch inside a cavern" --output runs/style-v2/ascii-job.json
+python tools/render-ascii-grid.py runs/style-v2/ascii-job.json --source style-packages/game-art/ascii-character-game-art/examples/ascii-cave-grid.txt --font C:/Windows/Fonts/consola.ttf --output runs/style-v2/ascii-cave-render
+```
+
+渲染器只从字符源画出字符，不会补画网格外的轮廓、阴影或纹理。需要新题材时，先创作并检查字符源，再运行栅格器。当前方向固定 100 列、36 行；主体可读性和新题材迁移效果仍待人工评审。

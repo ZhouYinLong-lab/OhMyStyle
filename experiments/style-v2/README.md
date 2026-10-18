@@ -1,6 +1,6 @@
 # 美术风格包 v2：独立试点
 
-状态：可运行的渐进迁移试点，尚未完成跨题材生图对照。索罗亚日光与包豪斯纸材方法已登记到正式包，但仍标记为实验；严格 ASCII 网格仍在实验目录。
+状态：可运行的渐进迁移试点，尚未完成跨题材效果评审。索罗亚日光、包豪斯纸材方法和严格 ASCII 网格已登记到正式包，但仍标记为实验。
 
 ## 版本保留与回退
 
@@ -51,7 +51,7 @@ experiments/style-v2/<direction>/direction.yaml
 | --- | --- | --- | --- |
 | [索罗亚日光油画](../../style-packages/artists/joaquin-sorolla/art-direction.yaml) | 光线、反射色、笔触与体块的联动；登记于正式包但仍为实验 | text_only | daylight |
 | [包豪斯纸材研究](../../style-packages/schools/bauhaus/art-direction.yaml) | 阿尔伯斯预备课程纸材方法的当代转译；不是整个学院的统一画风 | text_only | paper-study |
-| [严格 ASCII 网格](literal-ascii-grid/direction.yaml) | 全部场景形状由真实字符构成 | deterministic_grid | 无 |
+| [严格 ASCII 网格](../../style-packages/game-art/ascii-character-game-art/art-direction.yaml) | 全部场景形状由真实字符构成 | deterministic_grid | 无 |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 
@@ -74,11 +74,11 @@ python tools/compile-style.py style-packages/schools/bauhaus --direction package
 ### ASCII：字符源 → 等宽字形 → 无损图片
 
 ~~~powershell
-python tools/compile-style.py style-packages/game-art/ascii-character-game-art --direction experiments/style-v2/literal-ascii-grid --subject "One explorer holding a torch inside a cavern" --output runs/style-v2/ascii-job.json
+python tools/compile-style.py style-packages/game-art/ascii-character-game-art --direction package --subject "One explorer holding a torch inside a cavern" --output runs/style-v2/ascii-job.json
 python tools/render-ascii-grid.py runs/style-v2/ascii-job.json --source style-packages/game-art/ascii-character-game-art/examples/ascii-cave-grid.txt --font C:/Windows/Fonts/consola.ttf --output runs/style-v2/ascii-cave-render
 ~~~
 
-第二条命令复用旧包的洞穴字符源，演示渲染链路；不会按新主体自动改写字符源。新题材需要先人工创作字符源，或把任务 Prompt 交给文本模型，再保存纯字符结果。不要把这个任务交给普通图像模型重绘。
+第二条命令复用正式包的洞穴字符源，演示渲染链路；不会按新主体自动改写字符源。新题材需要先人工创作字符源，或把任务 Prompt 交给文本模型，再保存纯字符结果。不要把这个任务交给普通图像模型重绘。实验稿保留在 `literal-ascii-grid/direction.yaml` 作为迁移记录；正式包中的 `art-direction.yaml` 是当前编译入口。
 
 字符源必须恰有 36 行，每行至多 100 列；支持 LF/CRLF 和一个可选末尾换行；右侧缺列补空格。仅接受 ASCII 可打印字符，拒绝中文、块字符、emoji、Tab、控制字符、超宽行和全空场景。必须显式选择等宽字体；字符不能超出单元格。若改行列数或字号，应先修改方向文件再重新编译。
 
