@@ -2,9 +2,12 @@
 
 [English](README.en.md)
 
-本目录收录 44 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
+本目录收录 83 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击名称或图片进入风格包 README。
 
 <table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="joaquin-sorolla/README.md"><img src="joaquin-sorolla/gallery-16x9.jpg" width="230" alt="华金·索罗亚代表图"></a><br><strong>华金·索罗亚</strong><br><a href="joaquin-sorolla/README.md">打开 README</a></td>
+</tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="georges-seurat/README.md"><img src="georges-seurat/gallery-16x9.jpg" width="230" alt="乔治·修拉代表图"></a><br><strong>乔治·修拉</strong><br><a href="georges-seurat/README.md">打开 README</a></td>
 <td width="33%" valign="top" align="center"><a href="henri-matisse/README.md"><img src="henri-matisse/gallery-16x9.jpg" width="230" alt="亨利·马蒂斯代表图"></a><br><strong>亨利·马蒂斯</strong><br><a href="henri-matisse/README.md">打开 README</a></td>

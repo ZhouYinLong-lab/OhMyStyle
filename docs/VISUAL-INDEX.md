@@ -4,6 +4,7 @@
 
 ## 柔和自然光
 
+- [安娜·安彻](../style-packages/artists/anna-ancher/README.md)
 - [美丽衰败生存游戏美术](../style-packages/game-art/last-of-us-cinematic-survival/README.md)
 - [女神异闻录4黄金版游戏美术](../style-packages/game-art/persona-4-golden/README.md)
 - [埃米莉·霍弗伯](../style-packages/photographers/emilie-hofferber/README.md)
@@ -15,6 +16,7 @@
 ## 深暗戏剧光
 
 - [卡拉瓦乔](../style-packages/artists/caravaggio/README.md)
+- [华金·索罗亚](../style-packages/artists/joaquin-sorolla/README.md)
 - [彼得·保罗·鲁本斯](../style-packages/artists/peter-paul-rubens/README.md)
 - [皮埃尔-奥古斯特·雷诺阿](../style-packages/artists/pierre-auguste-renoir/README.md)
 - [伦勃朗·范·莱因](../style-packages/artists/rembrandt/README.md)
@@ -35,6 +37,8 @@
 
 ## 高饱和撞色
 
+- [贝尔特·莫里索](../style-packages/artists/berthe-morisot/README.md)
+- [文森特·梵高](../style-packages/artists/vincent-van-gogh/README.md)
 - [野兽主义](../style-packages/movements/fauvism/README.md)
 - [孟菲斯风格](../style-packages/movements/memphis/README.md)
 - [波普艺术](../style-packages/movements/pop-art/README.md)
@@ -48,9 +52,11 @@
 ## 几何版式
 
 - [埃尔·利西茨基](../style-packages/artists/el-lissitzky/README.md)
+- [约翰内斯·维米尔](../style-packages/artists/johannes-vermeer/README.md)
 - [卡济米尔·马列维奇](../style-packages/artists/kazimir-malevich/README.md)
 - [拉斯洛·莫霍利-纳吉](../style-packages/artists/moholy-nagy/README.md)
 - [皮特·蒙德里安](../style-packages/artists/piet-mondrian/README.md)
+- [瓦西里·康定斯基](../style-packages/artists/wassily-kandinsky/README.md)
 - [抽象几何霓虹游戏美术](../style-packages/game-art/abstract-geometric-neon-game-art/README.md)
 - [等距手绘策略游戏美术](../style-packages/game-art/hand-painted-isometric-strategy/README.md)
 - [纪念碑谷不可能几何游戏美术](../style-packages/game-art/monument-valley-impossible-geometry/README.md)
@@ -77,6 +83,7 @@
 
 - [葛饰北斋](../style-packages/artists/katsushika-hokusai/README.md)
 - [莫里茨·科内利斯·埃舍尔](../style-packages/artists/mc-escher/README.md)
+- [索福尼斯巴·安圭索拉](../style-packages/artists/sofonisba-anguissola/README.md)
 - [索尼娅·德洛内](../style-packages/artists/sonia-delaunay/README.md)
 - [歌川广重](../style-packages/artists/utagawa-hiroshige/README.md)
 - [漫画网点叙事游戏美术](../style-packages/game-art/comic-halftone-game-art/README.md)

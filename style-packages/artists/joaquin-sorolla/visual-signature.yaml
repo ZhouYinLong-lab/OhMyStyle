@@ -1,0 +1,32 @@
+composition:
+  - use an immediate, observed viewpoint with a decisive but natural crop
+  - organize the scene in broad readable masses before small marks
+  - let a strong diagonal or horizontal band carry movement when the subject supports it
+  - keep the focal subject legible against active reflected light
+palette:
+  - high-key warm ivory and chalk white under direct sun
+  - clear turquoise, ultramarine, and blue-green reflected color
+  - violet-blue and cool green shadows retain local color
+  - small warm earth or vermilion accents balance the cool field
+medium:
+  - oil-painted forms built from quick, confident strokes of varied length
+  - broad opaque light notes set beside thinner, cooler passages
+  - marks describe water movement, fabric folds, and turning form
+lighting:
+  - direct outdoor light creates bright local-value contrasts
+  - bounced light from water, pale ground, or cloth colors nearby shadows
+  - highlight clusters stay selective; no uniform glow or haze
+surface:
+  brushwork: visible_and_directional
+  edge_behavior: crisp_at_sunlit_focal_forms_looser_in_secondary_passages
+  finish: lively_oil_surface_with_tonal_unity
+texture:
+  - reflections are short broken strokes grouped by water plane and current
+  - cloth and foliage marks follow wind, weight, and fold direction
+  - texture stays subordinate to large color and value structure
+invariants:
+  - bright light remains a structural force, not a global filter
+  - reflected color appears in shadows and transitional planes
+  - visible brush marks clarify form and movement rather than becoming uniform stippling
+  - a vivid palette retains coherent value grouping
+  - the style adapts to the user's subject without requiring a beach, boat, or figure

@@ -1,0 +1,18 @@
+package_id: joaquin-sorolla
+package_version: 0.1.0
+curation_status: research_scaffold
+source_policy: External artworks are link-only; no source artwork is redistributed in this package.
+sources:
+  - url: https://www.nationalgallery.org.uk/exhibitions/past/sorolla/bright-colours-bold-brushstrokes-and-unexpected-angles
+    authority: National Gallery, London
+    supports: plein-air process, rapid brushwork, transient light, and unexpected cropping
+    accessed: 2026-10-18
+  - url: https://www.museodelprado.es/en/the-collection/art-work/boys-on-the-beach/edd7a202-c069-49f1-a3f4-eacf9b4022c2
+    authority: Museo Nacional del Prado
+    supports: water movement, reflected light, wet-surface reflections, and colored shadows
+    accessed: 2026-10-18
+  - url: https://museosorolladigital.es/exposiciones-temporales/sorolla-viajar-para-pintar/
+    authority: Museo Sorolla
+    supports: outdoor painting practice and variation in coastal light
+    accessed: 2026-10-18
+attribution: This package studies publicly observable painting traits; no affiliation or endorsement is claimed.

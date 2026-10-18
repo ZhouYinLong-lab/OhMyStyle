@@ -4,6 +4,7 @@ This index is generated from each package's classification and relations metadat
 
 ## Soft natural light
 
+- [安娜·安彻](../style-packages/artists/anna-ancher/README.en.md)
 - [美丽衰败生存游戏美术](../style-packages/game-art/last-of-us-cinematic-survival/README.en.md)
 - [女神异闻录4黄金版游戏美术](../style-packages/game-art/persona-4-golden/README.en.md)
 - [埃米莉·霍弗伯](../style-packages/photographers/emilie-hofferber/README.en.md)
@@ -15,6 +16,7 @@ This index is generated from each package's classification and relations metadat
 ## Deep dramatic light
 
 - [卡拉瓦乔](../style-packages/artists/caravaggio/README.en.md)
+- [华金·索罗亚](../style-packages/artists/joaquin-sorolla/README.en.md)
 - [彼得·保罗·鲁本斯](../style-packages/artists/peter-paul-rubens/README.en.md)
 - [皮埃尔-奥古斯特·雷诺阿](../style-packages/artists/pierre-auguste-renoir/README.en.md)
 - [伦勃朗·范·莱因](../style-packages/artists/rembrandt/README.en.md)
@@ -35,6 +37,8 @@ This index is generated from each package's classification and relations metadat
 
 ## High-chroma colour
 
+- [贝尔特·莫里索](../style-packages/artists/berthe-morisot/README.en.md)
+- [文森特·梵高](../style-packages/artists/vincent-van-gogh/README.en.md)
 - [野兽主义](../style-packages/movements/fauvism/README.en.md)
 - [孟菲斯风格](../style-packages/movements/memphis/README.en.md)
 - [波普艺术](../style-packages/movements/pop-art/README.en.md)
@@ -48,9 +52,11 @@ This index is generated from each package's classification and relations metadat
 ## Geometric layout
 
 - [埃尔·利西茨基](../style-packages/artists/el-lissitzky/README.en.md)
+- [约翰内斯·维米尔](../style-packages/artists/johannes-vermeer/README.en.md)
 - [卡济米尔·马列维奇](../style-packages/artists/kazimir-malevich/README.en.md)
 - [拉斯洛·莫霍利-纳吉](../style-packages/artists/moholy-nagy/README.en.md)
 - [皮特·蒙德里安](../style-packages/artists/piet-mondrian/README.en.md)
+- [瓦西里·康定斯基](../style-packages/artists/wassily-kandinsky/README.en.md)
 - [抽象几何霓虹游戏美术](../style-packages/game-art/abstract-geometric-neon-game-art/README.en.md)
 - [等距手绘策略游戏美术](../style-packages/game-art/hand-painted-isometric-strategy/README.en.md)
 - [纪念碑谷不可能几何游戏美术](../style-packages/game-art/monument-valley-impossible-geometry/README.en.md)
@@ -77,6 +83,7 @@ This index is generated from each package's classification and relations metadat
 
 - [葛饰北斋](../style-packages/artists/katsushika-hokusai/README.en.md)
 - [莫里茨·科内利斯·埃舍尔](../style-packages/artists/mc-escher/README.en.md)
+- [索福尼斯巴·安圭索拉](../style-packages/artists/sofonisba-anguissola/README.en.md)
 - [索尼娅·德洛内](../style-packages/artists/sonia-delaunay/README.en.md)
 - [歌川广重](../style-packages/artists/utagawa-hiroshige/README.en.md)
 - [漫画网点叙事游戏美术](../style-packages/game-art/comic-halftone-game-art/README.en.md)

@@ -1,0 +1,35 @@
+package_id: joaquin-sorolla
+package_version: 0.1.0
+invariants:
+  - id: light_shapes_form
+    weight: 3
+    test: Direct light and reflected light visibly shape the subject and nearby planes.
+  - id: directional_oil_marks
+    weight: 3
+    test: Brush marks follow material, movement, and form rather than forming uniform stipple.
+  - id: coherent_vivid_color
+    weight: 2
+    test: Bright local colors remain grouped by value and shadows retain reflected color.
+  - id: subject_independence
+    weight: 3
+    test: The requested subject remains authoritative; coastal motifs appear only when requested.
+rejections:
+  - copied_named_work
+  - global_warm_filter
+  - uniform_impressionist_stipple
+  - all_over_atmospheric_haze
+  - unrequested_coastal_props
+minimum_score: 8
+semantic_evaluation:
+  subject_independence:
+    score: null
+    notes: Pending neutral-subject review.
+  distinctive_signature:
+    score: null
+    notes: Check direct light, colored shadow, broad form, and directional brushwork together.
+  visual_overlap:
+    score: null
+    notes: Compare with Monet, Renoir, Turner, and Van Gogh packages; treat similarity metrics as review cues only.
+  cross_subject_stability:
+    score: null
+    notes: Run at least two non-coastal subjects before assigning a score.

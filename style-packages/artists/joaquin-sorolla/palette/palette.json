@@ -1,0 +1,12 @@
+{
+  "name": "Coastal Sun and Reflected Color",
+  "colors": [
+    {"name": "Sunlit Ivory", "hex": "#F2E8D1", "role": "high_value_light"},
+    {"name": "Warm Canvas", "hex": "#D8C39A", "role": "warm_midtone"},
+    {"name": "Sea Turquoise", "hex": "#4FAEAB", "role": "reflected_water_color"},
+    {"name": "Ultramarine", "hex": "#315F99", "role": "cool_structure"},
+    {"name": "Violet Blue", "hex": "#59617F", "role": "colored_shadow"},
+    {"name": "Sail Ochre", "hex": "#B47A43", "role": "small_warm_accent"},
+    {"name": "Coral Red", "hex": "#B94C36", "role": "rare_complementary_accent"}
+  ]
+}

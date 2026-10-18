@@ -729,6 +729,23 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
+- resource_id: joaquin-sorolla
+  name: 华金·索罗亚
+  kind: artist
+  domain: painting
+  package_path: style-packages/artists/joaquin-sorolla
+  maturity: L2
+  focus_dimensions:
+  - medium
+  - composition
+  - lighting
+  - palette
+  - surface
+  - texture
+  reference_count: 3
+  accepted_example_count: 0
+  rejected_example_count: 0
+  benchmark: false
 - resource_id: johannes-vermeer
   name: 约翰内斯·维米尔
   kind: artist

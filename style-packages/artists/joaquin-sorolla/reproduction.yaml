@@ -1,0 +1,18 @@
+medium: plein_air_oil_painting
+materials:
+  support: primed_canvas_or_panel
+  pigment_direction: luminous_whites_clear_blues_turquoise_and_colored_cool_shadows
+  finish: visible_opaque_and_thin_oil_passages
+process:
+  - establish the viewpoint and largest light-dark masses before detail
+  - set the dominant daylight direction and the surfaces that reflect it
+  - block broad local colors while preserving a coherent value structure
+  - use directional strokes to describe motion, folds, reflections, and form turns
+  - place crisp accents selectively and leave secondary passages less resolved
+  - review the image at thumbnail size for clear silhouette and light hierarchy
+technical_direction:
+  contrast: moderate_to_high_in_sunlit_areas
+  saturation: vivid_but_locally_controlled
+  perspective: observed_viewpoint_with_deliberate_crop
+  detail_density: broad_masses_with_selective_focal_marks
+safety_note: Use observable traits only; do not reproduce a named painting, sitter, location, or exact composition.

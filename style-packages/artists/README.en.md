@@ -2,9 +2,12 @@
 
 [中文](README.md)
 
-This directory contains 44 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
+This directory contains 83 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
 
 <table>
+<tr>
+<td width="33%" valign="top" align="center"><a href="joaquin-sorolla/README.en.md"><img src="joaquin-sorolla/gallery-16x9.jpg" width="230" alt="Joaquín Sorolla representative"></a><br><strong>Joaquín Sorolla</strong><br><a href="joaquin-sorolla/README.en.md">Open README</a></td>
+</tr>
 <tr>
 <td width="33%" valign="top" align="center"><a href="georges-seurat/README.en.md"><img src="georges-seurat/gallery-16x9.jpg" width="230" alt="Georges Seurat representative image"></a><br><strong>Georges Seurat</strong><br><a href="georges-seurat/README.en.md">Open README</a></td>
 <td width="33%" valign="top" align="center"><a href="henri-matisse/README.en.md"><img src="henri-matisse/gallery-16x9.jpg" width="230" alt="Henri Matisse representative image"></a><br><strong>Henri Matisse</strong><br><a href="henri-matisse/README.en.md">Open README</a></td>

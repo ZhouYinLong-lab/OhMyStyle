@@ -1,0 +1,7 @@
+SUBJECT INDEPENDENCE CONTRACT
+Subject: {SUBJECT}
+Location: {LOCATION}
+Action: {SUBJECT_ACTION}
+Preserve the supplied subject, count, setting, and requested details. Do not add a beach, boat, sail, worker, or other recurring motif unless requested.
+
+Render the scene as direct, lively outdoor oil painting. Establish broad, legible value and color masses before detail. Use bright warm ivory lights and clear local color, with turquoise or ultramarine reflected into cool blue-violet and green shadows where the setting supports it. Let directional, quick brush marks describe the actual form: water movement, fabric folds, foliage, architecture, or the subject's turning planes. Keep tonal unity beneath the vivid palette. Use an immediate observed viewpoint and a decisive crop, but keep the user's subject readable. Reserve sharp accents for selected sunlit edges and reflections; let secondary passages remain loose without dissolving into haze. Adapt these decisions to {SUBJECT} in {LOCATION}; do not force a coastal setting or a fixed narrative.
