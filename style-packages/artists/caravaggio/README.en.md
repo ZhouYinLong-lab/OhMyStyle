@@ -73,3 +73,13 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## New architecture: close-staged chiaroscuro (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) separates the direction into close staging of action, a single strong source that divides light from shadow, and tangible surfaces in skin, cloth, and objects. Its physical immediacy differs from Hopper's quiet scenes organized by architectural planes, spatial distance, and daylight. This direction remains experimental and does not default to biblical stories, taverns, fruit, or famous poses.
+
+```powershell
+python tools/compile-style.py style-packages/artists/caravaggio --direction package --subject "A repairer lifting a broken pocket watch under one overhead work lamp" --output runs/style-v2/caravaggio-job.json
+```
+
+Compilation creates an image task but does not call a model. The National Gallery, the Metropolitan Museum of Art, and the National Gallery of Art support the observations about chiaroscuro, close figure staging, gesture, and naturalistic surfaces.

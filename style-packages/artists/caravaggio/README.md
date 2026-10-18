@@ -73,3 +73,13 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## 新架构：贴近观看的明暗对照（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 将卡拉瓦乔方向拆成近景动作编排、单一强光源形成的明暗分界，以及皮肤、布料和器物的物质感。它强调人物/手势的物理临场感，与霍普以建筑平面、空间距离和日光投影组织的静默场景不同。方向仍处于实验状态；不会默认添加圣经故事、酒馆、果盘或名作姿势。
+
+```powershell
+python tools/compile-style.py style-packages/artists/caravaggio --direction package --subject "A repairer lifting a broken pocket watch under one overhead work lamp" --output runs/style-v2/caravaggio-job.json
+```
+
+编译会生成生图任务，不会自动调用模型。英国国家美术馆、大都会艺术博物馆和美国国家美术馆的馆藏/策展说明支持本方向对明暗、近景人物、手势和写实表面的观察。

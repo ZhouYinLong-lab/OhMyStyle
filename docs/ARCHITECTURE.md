@@ -168,6 +168,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [莫兰迪静谧色阶](../style-packages/artists/giorgio-morandi/art-direction.yaml) | 近似明度、克制间距、浅空间与选择性软边 | `text_only` |
 | [霍普建筑光影](../style-packages/artists/edward-hopper/art-direction.yaml) | 日常建筑平面、方向投影与空间距离 | `text_only` |
 | [艾格尼丝·马丁手绘网格](../style-packages/artists/agnes-martin/art-direction.yaml) | 非具象细线网格、低对比色域与手工微差 | `text_only`，声明 `abstract-field` |
+| [卡拉瓦乔明暗对照](../style-packages/artists/caravaggio/art-direction.yaml) | 近景动作、单光源明暗与物质感 | `text_only` |
 
 ## 6. 从主体请求到结果
 

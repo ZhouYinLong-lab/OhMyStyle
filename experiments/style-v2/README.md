@@ -59,6 +59,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [莫兰迪静谧色阶](../../style-packages/artists/giorgio-morandi/art-direction.yaml) | 近似明度、器物间距、浅空间和选择性软边 | text_only | 无 |
 | [霍普建筑光影](../../style-packages/artists/edward-hopper/art-direction.yaml) | 几何建筑、单一光源投影和空间距离 | text_only | 无 |
 | [艾格尼丝·马丁手绘网格](../../style-packages/artists/agnes-martin/art-direction.yaml) | 非具象细线网格、柔和色域与手工微差 | text_only | abstract-field |
+| [卡拉瓦乔明暗对照](../../style-packages/artists/caravaggio/art-direction.yaml) | 近景人物、单一强光源与具象材质 | text_only | 无 |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

@@ -5,6 +5,21 @@ research_basis:
   period: 巴洛克早期
   source_url: https://commons.wikimedia.org/w/index.php?search=Caravaggio+paintings&title=Special:MediaSearch&type=image
   role: style research
+- title: Michelangelo Merisi da Caravaggio, The Supper at Emmaus
+  creator: National Gallery, London
+  period: 1601
+  source_url: https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus
+  role: museum object description for light, staging, realism, and physical gesture
+- title: Caravaggio and His Followers
+  creator: The Metropolitan Museum of Art
+  period: 2026
+  source_url: https://www.metmuseum.org/essays/caravaggio-michelangelo-merisi-1571-1610-and-his-followers
+  role: museum essay on close figure staging and physical immediacy
+- title: Caravaggio's The Taking of Christ
+  creator: National Gallery of Art
+  period: 2026
+  source_url: https://www.nga.gov/exhibitions/caravaggios-taking-christ
+  role: museum description of directional light and deep shadow
 generated_assets:
 - path: gallery-16x9.jpg
   description: New anonymous representative image

@@ -1,0 +1,95 @@
+schema_version: 2.0.0
+status: experimental
+id: caravaggio-embodied-chiaroscuro
+name: Caravaggio embodied chiaroscuro
+base_package: artists/caravaggio
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: Build an original, physically immediate scene through tightly staged figures or objects, one strong directional light, deep surrounding shadow, and tangible naturalistic surfaces.
+  required_contexts: []
+  incompatible_contexts:
+    - diffuse-even-lighting
+    - atmospheric-color-field
+  limitations:
+    - Follow the user's subject; do not default to a biblical story, tavern, fruit basket, or famous Caravaggio arrangement.
+    - Deep shadow must preserve enough form and color to make the illuminated subject and action legible.
+pillars:
+  - Bring the key figure, gesture, or object close to the picture plane.
+  - Use one decisive light source to select forms out of a dark, restrained setting.
+  - Make gesture, skin, cloth, and objects feel materially present rather than idealized or atmospheric.
+rules:
+  - id: close-staging-and-physical-gesture
+    axis: composition
+    importance: core
+    applies_when: The requested scene contains people or an interaction.
+    instruction: Stage the important people and their action close to the viewer; use a clear bodily gesture, hand, or object to carry the focal event without adding an unrequested narrative.
+    observable: The interaction reads immediately, and a foreground gesture may press toward the picture plane while the setting stays compressed.
+    reject_when: Figures recede into a broad landscape, or exaggerated poses replace a specific readable action.
+    evidence:
+      source_ids:
+        - caravaggio-national-gallery-emmaus
+        - caravaggio-met-museum-essay
+      basis: institutional_description
+      visual_review: pending
+    avoid: distant figure staging and melodramatic gesture without a clear action
+  - id: single-source-chiaroscuro
+    axis: lighting
+    importance: core
+    applies_when: always
+    instruction: Use one strong, directional light from a consistent side or upper angle to illuminate selected faces, hands, and material details; let the surrounding setting fall into deep but readable shadow.
+    observable: Highlights and cast shadows agree with the same source, and the dark field directs attention without erasing the scene.
+    reject_when: Several conflicting spotlights, global glow, or black fill obscures the subject's structure.
+    evidence:
+      source_ids:
+        - caravaggio-national-gallery-emmaus
+        - caravaggio-nga-taking-christ
+      basis: institutional_description
+      visual_review: pending
+    avoid: multiple inconsistent spotlights and detail-erasing black shadows
+  - id: unidealized-tactile-naturalism
+    axis: surface
+    importance: core
+    applies_when: always
+    instruction: Render the requested people and objects with observed physical weight and specific surface cues in skin, worn fabric, wood, food, or metal where present; avoid polished idealization.
+    observable: Lit forms feel tangible and particular, while material differences remain visible at the boundary between light and shadow.
+    reject_when: Skin and cloth become smooth generic digital surfaces, or texture is scattered uniformly over every region.
+    evidence:
+      source_ids:
+        - caravaggio-national-gallery-emmaus
+        - caravaggio-met-museum-essay
+      basis: institutional_description
+      visual_review: pending
+    avoid: idealized porcelain skin and uniform texture overlays
+active_rule_ids:
+  - close-staging-and-physical-gesture
+  - single-source-chiaroscuro
+  - unidealized-tactile-naturalism
+joint_checks:
+  - id: gesture-light-material-coherence
+    rule_ids:
+      - close-staging-and-physical-gesture
+      - single-source-chiaroscuro
+      - unidealized-tactile-naturalism
+    instruction: Let the light reveal the same physical gesture and material details that carry the scene; keep the setting quiet and the user's subject authoritative.
+    observable: Attention moves from the lit gesture to tactile material cues, while deep shadow supports rather than hides the action.
+sources:
+  - id: caravaggio-national-gallery-emmaus
+    kind: museum_object_description
+    url: https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus
+  - id: caravaggio-met-museum-essay
+    kind: museum_essay
+    url: https://www.metmuseum.org/essays/caravaggio-michelangelo-merisi-1571-1610-and-his-followers
+  - id: caravaggio-nga-taking-christ
+    kind: museum_exhibition_description
+    url: https://www.nga.gov/exhibitions/caravaggios-taking-christ
+execution:
+  route: text_only
+  must:
+    - Preserve the requested subject, count, and action.
+    - Use a single coherent light direction with readable shadows.
+    - Keep illuminated forms tactile and physically grounded.
+  avoid:
+    - copying a named religious scene, pose, or table arrangement
+    - default biblical stories, taverns, fruit, or specific Caravaggio props
+    - turning the entire image black or adding a cinematic spotlight effect
