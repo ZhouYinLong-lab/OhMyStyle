@@ -174,6 +174,7 @@ the same prompt wording.
 | [Lissitzky Proun axonometric space](../style-packages/artists/el-lissitzky/art-direction.yaml) | Planes and volumes in shared space, coherent axonometric relations, color as spatial cue | `text_only`, declare `pictorial-architectonic-space` |
 | [El Greco vertical lift and flickering form](../style-packages/artists/el-greco/art-direction.yaml) | Selective elongation, staged upward composition, local color contrast and brush rhythm | `text_only`, declare `vertical-lift-composition` |
 | [Kahlo frontal presence and personal symbolic relations](../style-packages/artists/frida-kahlo/art-direction.yaml) | Frontal portrait presence, shallow space, relationships among user-specified objects | `text_only`, declare `intimate-symbolic-portrait` |
+| [Cassatt figure and decorative plane](../style-packages/artists/mary-cassatt/art-direction.yaml) | Modeled figure against flatter pattern, decorative color planes, scene-led viewpoint | `text_only`, declare `patterned-domestic-figure-scene` |
 
 ## 6. Execution routes
 

@@ -1,6 +1,6 @@
 package_id: mary-cassatt
-package_version: 0.1.0
-curation_status: reference_backed_link_only
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
 sources:
@@ -9,6 +9,21 @@ sources:
   title: Mary Cassatt selected works
   supports: source traceability and observable package scope
   accessed: '2026-08-07'
+- url: https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/research/publications/pdfs/mary-cassatt-1844-1926.pdf
+  authority: National Gallery of Art
+  title: Mary Cassatt, 1844-1926
+  supports: rounded figure volume against flattened patterned backgrounds and distinction beyond mother-and-child subjects
+  accessed: '2026-10-19'
+- url: https://www.nga.gov/artworks/33350-woman-bathing
+  authority: National Gallery of Art
+  title: Woman Bathing
+  supports: color planes, contour, patterned fabric and interior surfaces in a domestic figure scene
+  accessed: '2026-10-19'
+- url: https://www.metmuseum.org/art/collection/search/10406
+  authority: The Metropolitan Museum of Art
+  title: Portrait of a Young Girl
+  supports: elevated viewpoint, flattened space, and absence of a horizon
+  accessed: '2026-10-19'
 attribution: This package studies observable visual decisions associated with Mary
   Cassatt; it does not reproduce a named work, character, location, logo, text, or
   exact composition.

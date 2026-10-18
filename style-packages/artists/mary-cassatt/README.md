@@ -34,6 +34,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：人物与装饰平面的组织（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `patterned-domestic-figure-scene` 时启用。它强调人物体积与较平坦的图案色面之间的对照，让图案参与构图但不压过人物与动作；视点和裁切按场景需要选择。
+
+这与德加方向的偶然观察、偏置取景和空间裁切有所区分：卡萨特方向以人物和装饰平面之间的稳定组织为核心，不把快照式裁边作为默认。也不会自动加入母子关系、日本道具、花卉或年代服饰。
+
+```powershell
+python tools/compile-style.py style-packages/artists/mary-cassatt --direction package --context patterned-domestic-figure-scene --subject "An adult repairing a canvas bag beside a patterned curtain" --output runs/style-v2/mary-cassatt-job.json
+```
+
+该方向仍为实验规则；同题与跨主体视觉评审待完成。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

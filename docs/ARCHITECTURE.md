@@ -188,6 +188,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [利西茨基 Proun 轴测空间](../style-packages/artists/el-lissitzky/art-direction.yaml) | 平面与几何体共处、轴测关系、色彩承担空间定位 | `text_only`，声明 `pictorial-architectonic-space` |
 | [格列柯垂直升腾与闪烁形体](../style-packages/artists/el-greco/art-direction.yaml) | 选择性拉长、分阶段向上构图、局部冷暖色与笔触节奏 | `text_only`，声明 `vertical-lift-composition` |
 | [卡罗正面肖像与个人象征关系](../style-packages/artists/frida-kahlo/art-direction.yaml) | 肖像正面存在感、浅层背景、用户指定物件的关系安排 | `text_only`，声明 `intimate-symbolic-portrait` |
+| [卡萨特人物与装饰平面组织](../style-packages/artists/mary-cassatt/art-direction.yaml) | 立体人物与平面图案的对照、装饰色面、按需选择的视点 | `text_only`，声明 `patterned-domestic-figure-scene` |
 
 ## 6. 从主体请求到结果
 

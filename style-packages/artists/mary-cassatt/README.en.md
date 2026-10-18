@@ -43,6 +43,18 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: figure and decorative plane (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `patterned-domestic-figure-scene`. It emphasizes the contrast between modeled figure volume and flatter patterned color fields, letting pattern contribute to the composition without overwhelming the figure or action. Viewpoint and crop depend on the requested scene.
+
+This differs from Degas's direction of incidental observation, oblique framing, and spatial cropping: Cassatt's direction centers the stable organization between figure and decorative plane, rather than making snapshot-like edge cuts the default. It does not automatically add motherhood, Japanese props, flowers, or period clothing.
+
+```powershell
+python tools/compile-style.py style-packages/artists/mary-cassatt --direction package --context patterned-domestic-figure-scene --subject "An adult repairing a canvas bag beside a patterned curtain" --output runs/style-v2/mary-cassatt-job.json
+```
+
+This direction remains experimental; same-subject and cross-subject visual review is pending.
+
 ## Use only this package
 
 Choose one of the following methods.

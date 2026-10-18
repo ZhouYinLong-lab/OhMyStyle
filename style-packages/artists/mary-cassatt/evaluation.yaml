@@ -1,5 +1,14 @@
 package_id: mary-cassatt
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  patterned-domestic-figure-scene:
+    required:
+    - requested figure and action remain readable against patterned planes
+    - figure volume stays distinct from flatter decorative surfaces
+    - viewpoint and crop support the requested composition
+    reject_if:
+    - unrequested family roles, Japanese props, flowers, or period costume appear
+    - pattern overwhelms anatomy or replaces the requested setting
 invariants:
 - id: style_recognition
   weight: 3
