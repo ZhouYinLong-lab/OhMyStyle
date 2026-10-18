@@ -19,6 +19,7 @@ artifacts:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
   prompt: prompts/base.txt
   accepted_examples: examples/accepted
   rejected_examples: examples/rejected

@@ -1,12 +1,28 @@
 package_id: henri-rousseau
-package_version: 0.1.0
-curation_status: curated
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
   - url: 'https://www.moma.org/artists/5056'
     title: 'Henri Rousseau artist page'
     authority: 'The Museum of Modern Art'
-    supports: source traceability and package scope
+    supports: artist and package scope
+    accessed: '2026-10-19'
+  - url: 'https://www.nga.gov/artworks/46688-equatorial-jungle'
+    title: 'The Equatorial Jungle'
+    authority: 'National Gallery of Art'
+    supports: overlapping foliage planes, bounded flat colors, and distinct small forms
+    accessed: '2026-10-19'
+  - url: 'https://www.moma.org/collection/works/79277'
+    title: 'The Dream'
+    authority: 'The Museum of Modern Art'
+    supports: flattened, perspectiveless space and invented spatial relationships
+    accessed: '2026-10-19'
+  - url: 'https://www.nga.gov/educational-resources/art-and-ecology/rousseau-jungle'
+    title: 'Rousseau in the Jungle'
+    authority: 'National Gallery of Art'
+    supports: broad flat color, enlarged and transformed natural forms, and imaginative detail
+    accessed: '2026-10-19'
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

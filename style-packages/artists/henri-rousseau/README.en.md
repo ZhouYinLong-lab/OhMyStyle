@@ -33,6 +33,18 @@ The Museum of Modern Art artist page is used as a research source. External work
 photographs, trademarks, and web content remain with their rights holders. This
 repository stores a source link and an original generated demonstration only.
 
+## New architecture: flat space and crisp natural detail (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) applies only when `flat-space-natural-detail` is explicitly declared. It translates Rousseau's direction into clear continuous contours, bounded color areas, overlapping but not fully naturalistic depth, and even diffuse light. Detailed natural forms appear only when the user requests a natural subject; the direction does not add a jungle, plants, animals, or adventure narrative by default.
+
+This differs from Matisse's composition through cut-paper color shapes and positive-negative space, and from Moreau's fine curves, jewel-like color planes, and mysterious detail. Rousseau's direction emphasizes stable planar layers, defined forms, and even illumination; any slight spatial strangeness must preserve the requested subject count and layout.
+
+```powershell
+python tools/compile-style.py style-packages/artists/henri-rousseau --direction package --context flat-space-natural-detail --subject "One red watering can on an empty garden path"
+```
+
+[`comparisons/`](comparisons/) holds the compiled legacy and new-direction jobs, generation prompts, and sample images. Visual review is pending, so this direction remains experimental.
+
 ## Use only this package
 
 1. Give the directory to an image-capable Agent and ask it to read the YAML files,

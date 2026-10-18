@@ -33,6 +33,18 @@
 
 本包以现代艺术博物馆的艺术家资料作为研究入口。外部作品、照片、商标和网页内容仍归原权利人所有；仓库只保存来源链接和原创生成示例，不打包外部作品。
 
+## 新架构：平面空间与清晰自然细节（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `flat-space-natural-detail` 时启用。它把卢梭的方向转成清楚连续的轮廓、受控色块、前后层叠但不过度写实的空间，以及均匀漫射光。精细的自然形态只会出现在用户确实指定自然主题时；不会默认添加丛林、植物、动物或冒险叙事。
+
+这与马蒂斯以剪纸色块和正负形关系构图的方式不同，也与莫罗以精细曲线、浓艳色平面和神秘细节营造谜意不同。卢梭方向更强调稳定的平面层次、形体边界和均匀光照；轻微的空间陌生感不能改动主体数量和用户指定布局。
+
+```powershell
+python tools/compile-style.py style-packages/artists/henri-rousseau --direction package --context flat-space-natural-detail --subject "One red watering can on an empty garden path"
+```
+
+[`comparisons/`](comparisons/) 保存同题旧版与新版编译 job、生成提示词和实际样本；方向仍待视觉评审，保持实验状态。
+
 ## 只使用此包
 
 四种方式可以任选其一：

@@ -1,2 +1,5 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 henri-rousseau-primary-source,,Henri Rousseau artist page,The Museum of Modern Art,,https://www.moma.org/artists/5056,link-only research reference,MoMA: Henri Rousseau,primary,Research link only; no external artwork is bundled.
+rousseau-nga-equatorial-jungle,,The Equatorial Jungle,Henri Rousseau,1909,https://www.nga.gov/artworks/46688-equatorial-jungle,link_only,No reproduction; source for overlapping flat color areas and distinct forms.,primary,Link only; do not copy the named composition or add its motifs by default.
+rousseau-moma-the-dream,,The Dream,Henri Rousseau,1910,https://www.moma.org/collection/works/79277,link_only,No reproduction; source for flattened and perspectiveless space.,primary,Link only; do not copy the scene or its narrative.
+rousseau-nga-ecology,,Rousseau in the Jungle,National Gallery of Art,,https://www.nga.gov/educational-resources/art-and-ecology/rousseau-jungle,link_only,No reproduction; source for transformed natural forms and broad flat color.,primary,Link only; use visual decisions without importing unrequested flora or fauna.

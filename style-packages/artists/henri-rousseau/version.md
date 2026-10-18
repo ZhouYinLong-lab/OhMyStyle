@@ -2,5 +2,8 @@
 
 ## 0.1.0
 
-- Initial contributor scaffold.
-- Replace all `TODO` fields before requesting review.
+- Initial subject-independent package.
+
+## 0.2.0
+
+- Added an optional experimental direction for crisp bounded forms, shallow layered space, and steady illumination. The legacy package path remains the default.

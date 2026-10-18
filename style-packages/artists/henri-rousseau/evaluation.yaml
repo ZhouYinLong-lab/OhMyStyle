@@ -1,4 +1,16 @@
+package_id: henri-rousseau
+package_version: 0.2.0
 profiles:
+  flat-space-natural-detail:
+    required:
+      - requested subject identities and count remain correct
+      - crisp contours and bounded color areas remain visible
+      - shallow overlap organizes depth without changing the layout
+      - diffuse light keeps requested details legible
+    reject_if:
+      - unrequested plants, animals, figures, or jungle narrative appear
+      - atmospheric haze erases the forms or dramatic light dominates
+      - perspective or scale changes the requested arrangement
   generic:
     required:
       - package-specific visual signature is observable

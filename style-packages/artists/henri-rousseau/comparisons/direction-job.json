@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "henri-rousseau",
+    "name": "亨利·卢梭",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\henri-rousseau"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One red watering can on an empty garden path",
+  "prompt": "USER SUBJECT: One red watering can on an empty garden path\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [crisp-contour-and-bounded-color] Enclose the requested subject with clear, continuous contours and fill it with broad, controlled color areas; retain identifying details without introducing a heavy outline around every mark.\n- [shallow-overlap-and-spatial-tension] Organize the requested forms as readable overlapping layers with compressed atmospheric depth; allow a restrained mismatch in scale or perspective only when it preserves the user's intended arrangement.\n- [steady-light-and-particular-detail] Keep illumination broadly diffuse and make small details precise but selective; where the user requests natural forms, use distinct shapes rather than realistic botanical density or generic texture noise.\n- [flattened-space-with-subject-fidelity] Give the requested scene clear bounded forms, shallow layered space, and steady light without changing its subject or importing Rousseau's recurring subject matter.\nREQUIREMENT: Declare flat-space-natural-detail before applying this direction.\nREQUIREMENT: Preserve the user's requested subjects, counts, actions, and setting.\nREQUIREMENT: Use crisp contours, bounded color areas, shallow overlap, and steady diffuse light.\nREQUIREMENT: Keep any spatial distortion subtle and consistent with the requested arrangement.",
+  "negative_prompt": "soft-focus haze, uniform black outlines, and unreadable color masses\nunrequested jungle walls, floating forms, extreme scale shifts, and atmospheric perspective haze\ninvented flora or fauna, dramatic chiaroscuro, generic leaf stamps, and clutter\nadding a jungle, tropical vegetation, animals, flowers, or people without request\nreplacing the requested layout with a scene from a named Rousseau painting\nusing heavy atmospheric haze, theatrical lighting, or generic leaf texture",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "rousseau-flat-space-and-crisp-natural-detail",
+    "name": "Rousseau flat space and crisp natural detail",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\henri-rousseau\\art-direction.yaml",
+    "sha256": "01d73613976f0f8d8916dd97266a24e135d881278f040bcaa98d86390811bbb0",
+    "active_rule_ids": [
+      "crisp-contour-and-bounded-color",
+      "shallow-overlap-and-spatial-tension",
+      "steady-light-and-particular-detail"
+    ],
+    "contexts": [
+      "flat-space-natural-detail"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare flat-space-natural-detail before applying this direction.",
+      "Preserve the user's requested subjects, counts, actions, and setting.",
+      "Use crisp contours, bounded color areas, shallow overlap, and steady diffuse light.",
+      "Keep any spatial distortion subtle and consistent with the requested arrangement."
+    ],
+    "avoid": [
+      "adding a jungle, tropical vegetation, animals, flowers, or people without request",
+      "replacing the requested layout with a scene from a named Rousseau painting",
+      "using heavy atmospheric haze, theatrical lighting, or generic leaf texture"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "A subject-independent painting direction that combines clearly bounded color areas, shallow overlapping planes, steady diffuse light, and carefully separated small details. Use the same deliberate clarity on the user's chosen subject and environment; do not make a jungle, animal cast, or exotic narrative the default. Spatial flattening may create a quiet strangeness without changing requested identities, counts, or setting.",
+      "required_contexts": [
+        "flat-space-natural-detail"
+      ],
+      "incompatible_contexts": [
+        "photorealistic-atmospheric-depth",
+        "gestural-expressionist-strokes",
+        "automatic-tropical-jungle-scene"
+      ],
+      "limitations": [
+        "Only depict plants, animals, figures, or story elements that the user requests.",
+        "Preserve the requested subject identities, count, action, proportions, and location.",
+        "Use scale or perspective tension subtly; do not distort an explicitly requested size or layout."
+      ]
+    },
+    "rules": [
+      {
+        "id": "crisp-contour-and-bounded-color",
+        "axis": "form_and_surface",
+        "importance": "core",
+        "applies_when": "The user requests a stylized painting with recognizable forms.",
+        "instruction": "Enclose the requested subject with clear, continuous contours and fill it with broad, controlled color areas; retain identifying details without introducing a heavy outline around every mark.",
+        "observable": "The subject remains legible at a glance, with edges and color regions more distinct than atmospheric gradients.",
+        "reject_when": "Blended haze erases form, outlines become mechanically thick, or simplification removes requested identifying features.",
+        "evidence": {
+          "source_ids": [
+            "rousseau-nga-equatorial-jungle",
+            "rousseau-moma-the-dream"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "soft-focus haze, uniform black outlines, and unreadable color masses"
+      },
+      {
+        "id": "shallow-overlap-and-spatial-tension",
+        "axis": "composition_and_depth",
+        "importance": "core",
+        "applies_when": "The requested setting contains distinct near, middle, or far forms.",
+        "instruction": "Organize the requested forms as readable overlapping layers with compressed atmospheric depth; allow a restrained mismatch in scale or perspective only when it preserves the user's intended arrangement.",
+        "observable": "Near and far remain distinguishable through overlap and relative placement, while the space feels flatter and more deliberate than a naturalistic view.",
+        "reject_when": "Planes merge into a cluttered wall, depth cues become photorealistic, or perspective changes the requested layout.",
+        "evidence": {
+          "source_ids": [
+            "rousseau-moma-the-dream",
+            "rousseau-nga-equatorial-jungle"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "unrequested jungle walls, floating forms, extreme scale shifts, and atmospheric perspective haze"
+      },
+      {
+        "id": "steady-light-and-particular-detail",
+        "axis": "lighting_and_detail",
+        "importance": "supporting",
+        "applies_when": "The requested subject benefits from even visibility and clearly separated details.",
+        "instruction": "Keep illumination broadly diffuse and make small details precise but selective; where the user requests natural forms, use distinct shapes rather than realistic botanical density or generic texture noise.",
+        "observable": "Small requested features remain visible under steady light, and detail is specific to the provided subject rather than an added motif.",
+        "reject_when": "Dramatic spotlights dominate, details turn into noisy texture, or plant and animal motifs appear without request.",
+        "evidence": {
+          "source_ids": [
+            "rousseau-moma-the-dream",
+            "rousseau-nga-ecology"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "invented flora or fauna, dramatic chiaroscuro, generic leaf stamps, and clutter"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "flattened-space-with-subject-fidelity",
+        "rule_ids": [
+          "crisp-contour-and-bounded-color",
+          "shallow-overlap-and-spatial-tension",
+          "steady-light-and-particular-detail"
+        ],
+        "instruction": "Give the requested scene clear bounded forms, shallow layered space, and steady light without changing its subject or importing Rousseau's recurring subject matter.",
+        "observable": "Subject identities and counts remain correct; planes are cleanly separated and slightly flattened; light is even; no unrequested plant, animal, or narrative is added."
+      }
+    ],
+    "sources": [
+      {
+        "id": "rousseau-nga-equatorial-jungle",
+        "kind": "national_gallery_artwork_analysis",
+        "url": "https://www.nga.gov/artworks/46688-equatorial-jungle"
+      },
+      {
+        "id": "rousseau-moma-the-dream",
+        "kind": "museum_collection_analysis",
+        "url": "https://www.moma.org/collection/works/79277"
+      },
+      {
+        "id": "rousseau-nga-ecology",
+        "kind": "national_gallery_educational_analysis",
+        "url": "https://www.nga.gov/educational-resources/art-and-ecology/rousseau-jungle"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "01d73613976f0f8d8916dd97266a24e135d881278f040bcaa98d86390811bbb0",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
