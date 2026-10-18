@@ -184,6 +184,7 @@ the same prompt wording.
 | [Zurbarán ordered still life and focused side light](../style-packages/artists/francisco-de-zurbaran/art-direction.yaml) | Spacing of user-specified objects, single lateral light, restrained ground, and material distinction | `text_only`, declare `ordered-object-still-life` |
 | [Richter layered veil and squeegee erasure](../style-packages/artists/gerhard-richter/art-direction.yaml) | Preserve recognition anchors while directional dragging and selective layer removal shift between image and abstraction | `text_only`, declare `layered-image-veil` |
 | [de Chirico measured void, spatial dislocation, and geometric shadows](../style-packages/artists/giorgio-de-chirico/art-direction.yaml) | Quiet negative space, one bounded perspective mismatch, and long shadows create a readable spatial enigma | `text_only`, declare `metaphysical-spatial-enigma` |
+| [Klimt modeled figure and ornamental field](../style-packages/artists/gustav-klimt/art-direction.yaml) | Legible modeled figure beside region-specific flat ornament and selective metallic surface | `text_only`, declare `modeled-figure-ornamental-field` |
 | [Seurat measured composition and divided-color marks](../style-packages/artists/georges-seurat/art-direction.yaml) | Stable silhouettes, deliberate intervals, plane-sensitive separated marks, and optical light | `text_only`, declare `measured-chromatic-composition` |
 
 ## 6. Execution routes

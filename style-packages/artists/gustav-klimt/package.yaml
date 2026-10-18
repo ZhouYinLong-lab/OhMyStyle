@@ -2,7 +2,7 @@ id: gustav-klimt
 name: 古斯塔夫·克里姆特
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: 金箔联想、平面装饰和局部写实身体结合；人物被装饰性平面、金色图案和垂直背景包围，身体关系被图案化；金黄、黑、象牙、深紫与孔雀蓝形成装饰性对比。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist

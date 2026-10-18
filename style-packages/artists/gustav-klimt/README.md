@@ -34,6 +34,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：塑形人物与装饰平面（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `modeled-figure-ornamental-field` 时启用。它要求人物由用户指定，保留脸部、手部和身份辨识；服饰或背景可以转为平面纹样，并以局部金属质感强调画面表面，不把整幅画涂成金色。
+
+这不同于穆夏方向以海报边框、曲线与文字区域组织装饰层级；克里姆特方向关注写实塑形的人物与平面纹样之间的过渡，以及受限的金属表面。它不会默认加入情侣、拥抱姿势、珠宝或象征物。
+
+```powershell
+python tools/compile-style.py style-packages/artists/gustav-klimt --direction package --context modeled-figure-ornamental-field --subject "One seated adult with short dark hair, wearing a plain teal dress and holding one white paper fan"
+```
+
+[`comparisons/`](comparisons/) 中保存同题旧版、新版编译 job 与实际生成图；视觉评审未完成，因此方向保持实验状态。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

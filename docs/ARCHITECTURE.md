@@ -198,6 +198,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [苏巴朗静物秩序与聚焦侧光](../style-packages/artists/francisco-de-zurbaran/art-direction.yaml) | 用户指定物件的间距、单一侧光、克制背景与材质辨析 | `text_only`，声明 `ordered-object-still-life` |
 | [里希特颜料覆盖、拖拽与局部显露](../style-packages/artists/gerhard-richter/art-direction.yaml) | 保留识别锚点，以定向刮擦、覆盖与显露在具象和抽象之间转换 | `text_only`，声明 `layered-image-veil` |
 | [德·基里科空场、透视错位与几何长影](../style-packages/artists/giorgio-de-chirico/art-direction.yaml) | 大面积留白、有限透视失配与长影构成的可读空间谜题 | `text_only`，声明 `metaphysical-spatial-enigma` |
+| [克里姆特塑形人物与装饰平面](../style-packages/artists/gustav-klimt/art-direction.yaml) | 可读人物与平面纹样相邻，按区域控制装饰密度和金属质感 | `text_only`，声明 `modeled-figure-ornamental-field` |
 | [修拉测量式构图与分色笔触](../style-packages/artists/georges-seurat/art-direction.yaml) | 稳定剪影、经过安排的间距、随平面变化的分色笔触与光色关系 | `text_only`，声明 `measured-chromatic-composition` |
 
 ## 6. 从主体请求到结果

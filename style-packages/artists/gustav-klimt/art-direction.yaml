@@ -1,0 +1,106 @@
+schema_version: 2.0.0
+status: experimental
+id: klimt-modeled-figure-and-ornamental-field
+name: Klimt modeled figure and ornamental field
+base_package: artists/gustav-klimt
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    A figure-led decorative painting direction for user-specified people. Keep
+    the face, hands, and other identity-bearing areas legibly modeled, while
+    allowing clothing and adjacent background to flatten into selected geometric
+    or organic ornament. Use reflective gold-like material as a bounded surface
+    accent that emphasizes the painting plane, never as a uniform color wash or
+    a substitute for the requested subject.
+  required_contexts:
+    - modeled-figure-ornamental-field
+  incompatible_contexts:
+    - photorealistic-editorial-portrait
+    - plain-documentary-portrait
+    - all-over-metallic-surface
+  limitations:
+    - Only include a person when the user requests one; preserve requested identity, count, pose, clothing, and expression.
+    - Keep the face and hands readable; ornamental fields may merge with clothing or background but must not replace anatomy.
+    - Confine gold-like reflective accents to selected patterned areas and preserve the user's palette and material requests.
+pillars:
+  - Contrast a carefully modeled focal figure with flatter, denser ornamental clothing or background planes.
+  - Let geometric and organic motifs follow separate surface regions instead of filling every space with repeated decoration.
+  - Place small reflective gold-like areas among matte color fields so the picture surface catches light without becoming a full gold wash.
+  - Use ornamental density to guide attention toward the user-specified face, hands, or focal object.
+rules:
+  - id: modeled-identity-against-flat-ornament
+    axis: figure_and_representation
+    importance: core
+    applies_when: The user requests a portrait or figure-led decorative painting.
+    instruction: Model the requested face, hands, and visible body with readable volume and restrained tonal transitions, then flatten selected clothing or background areas into ornament while preserving identity, pose, count, and expression.
+    observable: The focal person reads as a specific modeled figure, while adjacent patterned areas read as intentionally flatter planes.
+    reject_when: Pattern obscures facial features or anatomy, or a new person, couple, gesture, or expression is introduced.
+    evidence:
+      source_ids:
+        - klimt-belvedere-gold
+        - klimt-belvedere-kiss
+      basis: institutional_description
+      visual_review: pending
+    avoid: default embracing couple, anonymous face, decorative pattern replacing anatomy
+  - id: region-specific-ornamental-vocabulary
+    axis: ornament_and_composition
+    importance: core
+    applies_when: The requested figure or setting includes clothing or background surfaces that can carry ornament.
+    instruction: Assign a limited motif family to each selected region, such as geometric marks on clothing and more organic shapes in the surrounding field; vary scale and spacing so ornament follows the form and does not turn into a poster border.
+    observable: Pattern changes with its surface region and density supports the figure's hierarchy rather than covering the whole image uniformly.
+    reject_when: Repeated motifs hide the requested form, all regions share one wallpaper pattern, or a poster frame and lettering take over the composition.
+    evidence:
+      source_ids:
+        - klimt-belvedere-gold
+        - klimt-belvedere-kiss
+      basis: institutional_description
+      visual_review: pending
+    avoid: all-over wallpaper, decorative border, typography, and copied garment patterns
+  - id: selective-metallic-picture-plane
+    axis: material_and_light
+    importance: supporting
+    applies_when: The user requests a decorative painting treatment with metallic surface accents.
+    instruction: Reserve gold-like reflective material for selected garment or background passages; vary matte, grainy, and brighter metallic areas, and keep these accents distinct from the modeled skin and ordinary painted highlights.
+    observable: Metallic areas catch light as part of the flat picture surface, while skin, fabric, and background retain distinguishable material behavior.
+    reject_when: The entire image becomes a uniform gold filter, metallic shine replaces modeling, or the requested palette is overridden.
+    evidence:
+      source_ids:
+        - klimt-belvedere-gold
+        - klimt-belvedere-judith
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform gold overlay, chrome skin, glitter texture, and unrelated jewelry
+active_rule_ids:
+  - modeled-identity-against-flat-ornament
+  - region-specific-ornamental-vocabulary
+  - selective-metallic-picture-plane
+joint_checks:
+  - id: identity-ornament-and-material-coherence
+    rule_ids:
+      - modeled-identity-against-flat-ornament
+      - region-specific-ornamental-vocabulary
+      - selective-metallic-picture-plane
+    instruction: Keep the requested figure legible while patterned regions and limited metallic surfaces make the picture plane visibly decorative.
+    observable: The requested person remains count-correct and recognizable; ornament follows selected surfaces; metallic reflectance is selective rather than a global filter.
+sources:
+  - id: klimt-belvedere-gold
+    kind: museum_material_and_technique_essay
+    url: https://www.belvedere.at/en/stories/why-did-gustav-klimt-use-gold
+  - id: klimt-belvedere-kiss
+    kind: museum_collection_analysis
+    url: https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar
+  - id: klimt-belvedere-judith
+    kind: museum_collection_analysis
+    url: https://sammlung.belvedere.at/objects/3492/judith
+execution:
+  route: text_only
+  must:
+    - Declare modeled-figure-ornamental-field before applying this direction.
+    - Preserve user-specified people, identities, counts, pose, expression, and clothing.
+    - Keep modeled focal features distinct from flatter patterned regions.
+    - Use bounded metallic accents and preserve the requested palette.
+  avoid:
+    - adding an unrequested person, embracing couple, jewelry, or symbolic object
+    - using a continuous poster border, text, or one repeated wallpaper pattern
+    - coating the whole image in gold or replacing facial and hand structure with ornament

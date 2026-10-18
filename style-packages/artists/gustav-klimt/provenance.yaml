@@ -1,6 +1,6 @@
 package_id: gustav-klimt
-package_version: 0.1.0
-curation_status: reference_backed_link_only
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
 sources:
@@ -9,6 +9,21 @@ sources:
   title: The Kiss
   supports: source traceability and observable package scope
   accessed: '2026-08-07'
+- url: https://www.belvedere.at/en/stories/why-did-gustav-klimt-use-gold
+  authority: Belvedere Museum
+  title: "Why did Gustav Klimt use gold?"
+  supports: gold, silver, and platinum as selective surface materials; figure, clothing, and background can merge into ornament
+  accessed: '2026-10-19'
+- url: https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar
+  authority: Belvedere Museum Collection
+  title: "The Kiss (Lovers)"
+  supports: distinct materials used across figures and background, including metal leaf and oil-resin colors
+  accessed: '2026-10-19'
+- url: https://sammlung.belvedere.at/objects/3492/judith
+  authority: Belvedere Museum Collection
+  title: "Judith"
+  supports: formal stylization, ornament, real gold leaf, and short colored strokes over neutral skin tone
+  accessed: '2026-10-19'
 attribution: This package studies observable visual decisions associated with Gustav
   Klimt; it does not reproduce a named work, character, location, logo, text, or exact
   composition.

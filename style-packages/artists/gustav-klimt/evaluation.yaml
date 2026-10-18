@@ -1,5 +1,16 @@
 package_id: gustav-klimt
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  modeled-figure-ornamental-field:
+    required:
+      - requested face, hands, identity, pose, and figure count remain readable
+      - modeled figure contrasts with flatter patterned regions
+      - ornamental density changes by region and directs attention toward the focal figure
+      - metallic accents remain selective and distinct from painted skin and ordinary highlights
+    reject_if:
+      - an unrequested couple, person, expression, or jewelry appears
+      - ornament obscures anatomy or becomes an all-over wallpaper pattern
+      - a uniform gold filter replaces surface and material differences
 invariants:
 - id: style_recognition
   weight: 3

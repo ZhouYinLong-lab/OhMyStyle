@@ -43,6 +43,18 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: modeled figure and ornamental field (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when `modeled-figure-ornamental-field` is explicitly declared. The person must come from the user; keep the face, hands, and identity legible. Clothing or background may flatten into pattern, with localized metallic accents that emphasize the picture surface rather than coating the whole image in gold.
+
+This differs from Mucha's direction, which organizes ornament through poster borders, curves, and text zones. Klimt's direction focuses on the transition between a modeled figure and flatter pattern, with restrained metallic surface. It does not add a couple, embrace, jewelry, or symbol by default.
+
+```powershell
+python tools/compile-style.py style-packages/artists/gustav-klimt --direction package --context modeled-figure-ornamental-field --subject "One seated adult with short dark hair, wearing a plain teal dress and holding one white paper fan"
+```
+
+[`comparisons/`](comparisons/) contains legacy/new compiled jobs and actual generated images of the same subject. Visual review is pending, so the direction remains experimental.
+
 ## Use only this package
 
 Choose one of the following methods.
