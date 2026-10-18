@@ -53,3 +53,7 @@
 把基础 Prompt 和负面约束接入本地模型或 ComfyUI；按复现说明设置透明层、方向光、投影和黑白结构，生成后用 `evaluation.yaml` 复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图用于理解视觉特征，不要复制原作构图、人物、文字、商标或标志。
+
+## 实验方向：透明平面与投影研究
+
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 把用户指定的半透明平面、单一方向光和一块主投影组成清晰的光学关系；不自动加入机械设备或实验室场景。对照图与模型局限见 [`comparisons/`](comparisons/README.md)。

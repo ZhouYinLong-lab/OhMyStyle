@@ -53,3 +53,7 @@ Configure your API key in your own image platform or compiler, then submit the b
 Connect the base and negative prompts to a local model or ComfyUI workflow. Follow the reproduction notes for transparent layers, directional light, projections, and the black-white structure, then review with `evaluation.yaml`.
 
 Model weights, API keys, and generated images remain under the user’s control. Use references to understand visual characteristics; do not copy a source work’s composition, person, text, trademark, or logo.
+
+## Experimental direction: transparent-plane shadow study
+
+The optional direction in [`art-direction.yaml`](art-direction.yaml) links a user-specified translucent plane, one directional light, and one principal cast shadow into a readable optical study. It does not add machinery or a laboratory setting by default. See [`comparisons/`](comparisons/README.md) for the paired images and model limitations.

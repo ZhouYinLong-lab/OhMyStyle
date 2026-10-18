@@ -2,10 +2,11 @@ id: moholy-nagy
 name: 拉斯洛·莫霍利-纳吉
 kind: artist
 domain: hybrid
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以光作为材料，结合几何构成、透明叠层、机械运动感与高反差黑白结构，形成跨越绘画、摄影与设计的实验视觉语言。
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

@@ -206,6 +206,7 @@ the same prompt wording.
 | [Chagall floating pair with chromatic echo](../style-packages/artists/marc-chagall/art-direction.yaml) | Two unequal forms float along a loose diagonal and share a small repeating accent hue | `text_only`, declare `chromatic-echo-floating-pair` |
 | [Escher single impossible junction](../style-packages/artists/mc-escher/art-direction.yaml) | A user-specified object has one localized perspective contradiction while its remaining structure stays readable | `text_only`, declare `single-impossible-junction` |
 | [Michelangelo counterturned weight-bearing figure](../style-packages/artists/michelangelo-buonarroti/art-direction.yaml) | One standing figure is anchored by a weight-bearing leg, with a controlled opposing turn through pelvis and shoulders | `text_only`, declare `counterturned-weight-bearing-figure` |
+| [Moholy-Nagy transparent-plane shadow study](../style-packages/artists/moholy-nagy/art-direction.yaml) | One translucent plane, one directional light, and one principal cast shadow form a sparse optical relation | `text_only`, declare `photogram-shadow-study` |
 
 ## 6. Execution routes
 

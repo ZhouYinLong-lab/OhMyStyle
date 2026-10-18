@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "moholy-nagy",
+    "name": "拉斯洛·莫霍利-纳吉",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\moholy-nagy"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One translucent amber acrylic sheet on a matte ivory paper field, viewed slightly from above; one strong light from the upper left makes a crisp cast shadow, horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied One translucent amber acrylic sheet on a matte ivory paper field, viewed slightly from above; one strong light from the upper left makes a crisp cast shadow, horizontal 16:9. and the user-requested setting are authoritative.\n- This package controls visual treatment only: light, geometry, transparency,\n  palette, surface, texture, and edge behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative motif\n  unless the user explicitly requests it.\n\nCreate a new image of One translucent amber acrylic sheet on a matte ivory paper field, viewed slightly from above; one strong light from the upper left makes a crisp cast shadow, horizontal 16:9. in the user-requested setting. Build the image as an experimental\nlight-and-geometry composition: clear geometric negative space, transparent layers,\ncontrolled occlusion, crisp lines and circles, and one or two restrained primary\ncolor accents over a black-white-gray structure. Use neutral directional light to\nmake transparent surfaces and projections legible. Preserve the user-supplied\nsubject and narrative; do not copy a reference composition, named character, logo,\nor text. Keep the image sparse, precise, and materially believable.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "fixed machinery, laboratory setting, Bauhaus furniture showroom, poster text,\nlogo, watermark, copied composition, recognizable artwork, neon cyberpunk glow,\nrandom glitch effects, excessive decoration, generic color filter",
+  "template_variables": {
+    "SUBJECT": "One translucent amber acrylic sheet on a matte ivory paper field, viewed slightly from above; one strong light from the upper left makes a crisp cast shadow, horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "geometric light and transparent layering are observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "light and geometric layers do not obscure the requested subject"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "transparent and opaque materials remain visually distinguishable"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

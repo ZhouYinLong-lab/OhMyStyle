@@ -1,0 +1,100 @@
+schema_version: 2.0.0
+status: experimental
+id: moholy-nagy-transparent-plane-shadow-study
+name: Moholy-Nagy transparent-plane shadow study
+base_package: artists/moholy-nagy
+scope:
+  medium: experimental_light_based_photography_and_graphic_composition
+  representation: stylized
+  description: >-
+    An optional optical study for a user-specified transparent or translucent
+    plane. One directional light makes the plane legible through transmission,
+    edge highlights, and a clearly related cast shadow; the shadow and the open
+    field become the main graphic shapes. Use a sparse black-white-gray structure
+    with at most one user-approved accent. No device, laboratory, or specific
+    object is implied by default.
+  required_contexts:
+    - photogram-shadow-study
+  incompatible_contexts:
+    - diffuse-all-over-light
+    - busy-layered-photomontage
+    - opaque-object-only-study
+  limitations:
+    - Activate only when the user requests a light, transparency, or photogram-like study.
+    - Preserve the user's subject, material, color assignments, and object count.
+    - Use one dominant directional light and one principal cast shadow; do not add extra lamps or decorative beams.
+    - Text-only generation may confuse transparency, reflection, and refraction; review optical consistency.
+    - Do not add the Light-Space Modulator, laboratory equipment, or copied MoMA composition unless requested.
+pillars:
+  - Make one user-specified translucent plane legible by how it transmits and interrupts light.
+  - Give the principal cast shadow a distinct, traceable shape that carries equal compositional weight to the object.
+  - Preserve open negative space and keep accent color local to the transparent material.
+rules:
+  - id: one-light-shadow-pair
+    axis: lighting_and_occlusion
+    importance: core
+    applies_when: The user requests a light-based study with one translucent object and a visible cast shadow.
+    instruction: Use one dominant directional light so the requested plane and its principal cast shadow form a traceable object-shadow pair. Keep the shadow direction consistent with the light and allow the shadow to define one large graphic shape.
+    observable: The viewer can connect the single visible light direction to the plane's main shadow without extra beams or unrelated shadow shapes.
+    reject_when: The image contains conflicting shadow directions, multiple decorative light beams, or a shadow unrelated to the object.
+    evidence:
+      source_ids:
+        - moma-a-lightplay
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: neon glow, multiple spotlights, and unrelated dramatic shadows
+  - id: transparent-plane-legibility
+    axis: material_and_optics
+    importance: core
+    applies_when: The requested subject includes a transparent or translucent plane.
+    instruction: "Distinguish the plane from its background using a small number of physically related cues: a readable edge highlight, partial transmission or tint, and a boundary where it interrupts the cast shadow. Preserve the user's stated material and color."
+    observable: The plane reads as transparent or translucent through edge, transmission, and occlusion together rather than through a global color wash.
+    reject_when: The plane becomes opaque, disappears, or is rendered only as a glowing outline with no relationship to the shadow.
+    evidence:
+      source_ids:
+        - moma-a-lightplay
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: uniform glass gloss, rainbow refraction, and global tint
+  - id: shadow-negative-space
+    axis: composition_and_negative_space
+    importance: supporting
+    applies_when: The brief permits a sparse graphic or photographic composition.
+    instruction: Let the plane, its shadow, and the surrounding unmarked field form a small set of balanced geometric areas; keep the rest of the frame open.
+    observable: The object-shadow pair remains the focal unit and blank space separates it from the frame edges.
+    reject_when: Extra geometry, labels, or background detail crowds out the main optical relationship.
+    evidence:
+      source_ids:
+        - moma-a-lightplay
+      basis: original_design_intent
+      visual_review: pending
+    avoid: decorative grids, captions, crowded photomontage, and added machinery
+active_rule_ids:
+  - one-light-shadow-pair
+  - transparent-plane-legibility
+  - shadow-negative-space
+joint_checks:
+  - id: readable-optical-pair
+    rule_ids:
+      - one-light-shadow-pair
+      - transparent-plane-legibility
+      - shadow-negative-space
+    instruction: Use one light to reveal the requested transparent plane through its edge and transmission while a single related shadow creates a second large shape in an otherwise open field.
+    observable: Material, illumination, shadow direction, and negative space support one coherent optical relationship.
+sources:
+  - id: moma-a-lightplay
+    kind: museum_collection_description
+    url: https://www.moma.org/collection/works/50114
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested transparent-light or photogram-like study.
+    - Preserve the requested subject and use only one dominant light and one principal shadow.
+    - Use related edge, transmission, and occlusion cues to explain transparent material.
+    - Keep the object-shadow pair distinct within generous negative space.
+    - Review light direction and the consistency of transparency after generation.
+  avoid:
+    - adding machinery, laboratory props, or named works unless requested
+    - adding text, logos, labels, or decorative beam effects
+    - changing the requested material into generic glowing glass
+
