@@ -1,8 +1,13 @@
 package_id: louise-bourgeois
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
+  - url: 'https://lb.moma.org/themes/fabric-works'
+    title: 'Fabric Works'
+    authority: 'MoMA: The Complete Prints & Books'
+    supports: fabric as sculptural material and sewing as a visible act of repair; do not infer autobiographical meaning for user subjects
+    accessed: '2026-10-19'
   - url: 'https://www.moma.org/artists/710-louise-bourgeois'
     title: 'Louise Bourgeois'
     authority: 'The Museum of Modern Art'

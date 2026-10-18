@@ -1,4 +1,14 @@
 profiles:
+  visible-mending-textile-assembly:
+    required:
+      - user-specified textile fragments are joined by visible hand-repair marks at their actual seams
+      - stitch spacing and tension vary slightly rather than forming machine-perfect rows
+      - patch, fold, edge, and thread relief remain tactile and physically plausible
+      - repair detail is localized and does not tile the whole panel
+    reject_if:
+      - a regular quilt grid replaces the requested assembly
+      - needles, spools, bodies, spiders, or cages appear without request
+      - a global distress texture obscures the textile material
   generic:
     required:
       - architectural and organic geometry remain visibly distinct

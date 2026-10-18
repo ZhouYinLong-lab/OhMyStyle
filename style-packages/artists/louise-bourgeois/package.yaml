@@ -2,10 +2,11 @@ id: louise-bourgeois
 name: 路易丝·布尔乔亚
 kind: artist
 domain: hybrid
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以有机与建筑性形体、压缩空间、粗粝表面和记忆感的结构张力组织画面。
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

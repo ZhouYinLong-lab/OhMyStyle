@@ -20,6 +20,20 @@ The image does not need to explain a story first. Let weight emerge between form
 
 This package controls visual treatment, not subject matter. People, objects, places, architecture, plants, and narrative come from the request. Objects in the example are tests only and are never default output requirements.
 
+## Optional direction: visible textile mending
+
+The art-direction.yaml file registers an experimental direction for user-requested fabric assembly, seams, or visible repair. Stitches cross actual joins with slight variation in length and spacing; folds, patches, and wear stay concentrated at stressed connections so broad fabric areas remain readable. It does not infer personal memory or add needles, spools, spiders, cages, or body imagery by default. Declare visible-mending-textile-assembly when compiling; the legacy package and default path remain unchanged.
+
+### Generated comparison using the same fabric fragments
+
+Both images show an assemblage of four torn fabric pieces. The direction version adds dark hand stitches and local patches along the seams, making the joining itself a visible structure. The model still changes some edges and stitch spacing, so this is not a precise textile-process simulation.
+
+| Legacy default path | New visible-mending direction |
+| --- | --- |
+| ![Bourgeois legacy textile sample](comparisons/legacy.png) | ![Bourgeois visible textile mending sample](comparisons/direction.png) |
+
+Compiled jobs: [legacy-job.json](comparisons/legacy-job.json), [direction-job.json](comparisons/direction-job.json). Prompts and review notes: [generation-prompts.md](comparisons/generation-prompts.md).
+
 ## Sources and rights
 
 Observable traits were studied from the [MoMA artist page](https://www.moma.org/artists/710-louise-bourgeois) and the [artist biography](https://lb.moma.org/about/biography). External works remain with their rights holders; this repository keeps links only and makes no claim of affiliation, authorization, or endorsement.

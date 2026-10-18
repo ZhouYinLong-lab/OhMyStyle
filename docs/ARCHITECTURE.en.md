@@ -202,6 +202,7 @@ the same prompt wording.
 | [Malevich diagonal drift and counterweight](../style-packages/artists/kazimir-malevich/art-direction.yaml) | Geometric planes move along an off-center diagonal and counterbalance through scale and uneven intervals | `text_only`, declare `diagonal-drift-counterweight` |
 | [Leonardo layered hand-mechanics study](../style-packages/artists/leonardo-da-vinci/art-direction.yaml) | Comparative hand views, aligned wrist and joint axes, and separated surface and skeletal structures | `text_only`, declare `layered-hand-mechanics-study` |
 | [Carrington three-state material metamorphosis](../style-packages/artists/leonora-carrington/art-direction.yaml) | User-requested source, transition, and changed forms with detail focused at the transformation | `text_only`, declare `three-state-material-metamorphosis` |
+| [Bourgeois visible textile mending](../style-packages/artists/louise-bourgeois/art-direction.yaml) | Stitches cross actual joins, with repair and textile relief focused at connections | `text_only`, declare `visible-mending-textile-assembly` |
 
 ## 6. Execution routes
 

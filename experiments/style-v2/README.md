@@ -107,6 +107,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [马列维奇斜向漂移与反向配重](../../style-packages/artists/kazimir-malevich/art-direction.yaml) | 几何色面偏心斜向运动、大小配重和不等距留白 | text_only | diagonal-drift-counterweight |
 | [达·芬奇分层手部结构研究](../../style-packages/artists/leonardo-da-vinci/art-direction.yaml) | 多视图比较、腕关节轴关系与表层和骨骼结构分离 | text_only | layered-hand-mechanics-study |
 | [卡林顿三阶段物质蜕变](../../style-packages/artists/leonora-carrington/art-direction.yaml) | 用户指定对象的原态、过渡态和变化态，变化处集中细节 | text_only | three-state-material-metamorphosis |
+| [布尔乔亚布料可见修补](../../style-packages/artists/louise-bourgeois/art-direction.yaml) | 针脚跨越真实接缝，修补与织物立体感集中在连接处 | text_only | visible-mending-textile-assembly |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

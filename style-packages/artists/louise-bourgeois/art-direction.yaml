@@ -1,0 +1,98 @@
+schema_version: 2.0.0
+status: experimental
+id: bourgeois-visible-mending-textile-assembly
+name: Bourgeois visible-mending textile assembly
+base_package: artists/louise-bourgeois
+scope:
+  medium: textile_mixed_media
+  representation: stylized
+  description: >-
+    An optional tactile assembly direction for user-requested textile or fabric
+    fragments that are visibly repaired or joined. Uneven stitches cross actual
+    raw seams, and patches or folds give the joins physical relief. The repair
+    line becomes a local structural feature; it does not impose a personal
+    memory, body, domestic setting, or symbolic narrative on the user's subject.
+  required_contexts:
+    - visible-mending-textile-assembly
+  incompatible_contexts:
+    - seamless-machine-woven-surface
+    - regular-quilt-grid
+    - photorealistic-flat-product-shot
+  limitations:
+    - Enable only when the user requests a textile assembly, seam repair, or visible mending.
+    - Preserve the requested fabric pieces, palette, count, layout, and support.
+    - Place stitches on actual joins and vary their spacing and tension slightly.
+    - Do not infer autobiographical memory or add needles, spools, clothing, bodies, spiders, or cages.
+    - Do not copy a named work, textile composition, or installation.
+pillars:
+  - Let seams follow the real boundary between user-specified fragments; show thread crossing the join and binding the layers.
+  - Vary stitch length, interval, and tension subtly so repair reads as handwork rather than a decorative machine pattern.
+  - Use patches, frayed edges, and folds only where the material needs support; keep their relief palpable under side light.
+  - Preserve open fabric areas and localized texture so repair marks remain readable without distressing the whole surface.
+rules:
+  - id: stitch-through-actual-seams
+    axis: construction_and_joinery
+    importance: core
+    applies_when: The user requests fabric fragments joined, repaired, or visibly stitched.
+    instruction: Place visible running stitches or short repair passes across the actual seam between requested fragments; make the thread visibly enter and leave the cloth and follow the seam's direction.
+    observable: Stitches visibly bind two textile edges and read as construction rather than printed decoration.
+    reject_when: Stitching floats on the surface, crosses unrelated areas, or forms a regular quilt grid not requested.
+    evidence:
+      source_ids:
+        - moma-fabric-works
+      basis: institutional_description
+      visual_review: pending
+    avoid: decorative embroidery, regular grid stitching, and unsupported narrative symbols
+  - id: hand-repair-irregularity
+    axis: mark_and_material
+    importance: core
+    applies_when: The requested work emphasizes repaired or timeworn fabric.
+    instruction: Vary stitch length, spacing, and thread tension slightly; combine the seam with restrained fraying, folds, or a patch only where material stress supports it.
+    observable: The repair appears manually made and physically functional, with localized differences rather than uniform distress.
+    reject_when: Every edge receives identical stitching, wear is applied globally, or thread no longer appears to hold the fabric.
+    evidence:
+      source_ids:
+        - moma-fabric-works
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: machine-perfect repeat, global grunge, and excessive loose threads
+  - id: textile-relief-and-open-ground
+    axis: surface_and_negative_space
+    importance: supporting
+    applies_when: Fabric fragments are assembled on a wall, support, or other visible ground.
+    instruction: Use folds, overlapped patches, and shallow cast shadows to show textile relief; leave broad quiet areas that reveal the fabric weave and prevent seams from covering the whole panel.
+    observable: Cloth thickness, edge lift, and supporting ground remain distinguishable, with texture concentrated at joins.
+    reject_when: Fabric reads as flat paper, relief becomes glossy CGI, or the whole surface receives equal microtexture.
+    evidence:
+      source_ids:
+        - moma-fabric-works
+      basis: institutional_description
+      visual_review: pending
+    avoid: glossy plastic, uniform surface noise, and added wall objects
+active_rule_ids:
+  - stitch-through-actual-seams
+  - hand-repair-irregularity
+  - textile-relief-and-open-ground
+joint_checks:
+  - id: tactile-functional-mending
+    rule_ids:
+      - stitch-through-actual-seams
+      - hand-repair-irregularity
+      - textile-relief-and-open-ground
+    instruction: Make each repair physically bind the requested fragments, vary hand-sewn marks, and preserve textile relief and quiet ground.
+    observable: Seams, thread, cloth thickness, and support remain legible as one tactile assembly without a forced personal story.
+sources:
+  - id: moma-fabric-works
+    kind: museum_artist_analysis
+    url: https://lb.moma.org/themes/fabric-works
+execution:
+  route: text_only
+  must:
+    - Activate only for user-requested textile assembly, visible repair, or mending.
+    - Preserve user-specified fragments, count, color, layout, and support.
+    - Make stitches cross actual joins with slight hand-made variation.
+    - Concentrate wear and relief at seams while keeping textile areas readable.
+  avoid:
+    - adding a needle, spool, body, spider, cage, or domestic narrative without request
+    - turning the work into a regular quilt, decorative embroidery, or global distress filter
+    - copying a named textile work or installation
