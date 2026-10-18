@@ -2,7 +2,7 @@ id: georgia-okeeffe
 name: 乔治亚·欧姬芙
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: 平滑渐变、放大花卉或骨骼形体与简洁背景；单一自然形体被放大到接近抽象，边缘清洁且画面留白充足；骨白、沙色、深红、灰蓝和干燥黑形成沙漠般色组。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist

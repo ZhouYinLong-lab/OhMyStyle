@@ -89,4 +89,14 @@ Users manage model weights, API keys, and generated images themselves. Reference
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
 
+## New architecture: close observation and form (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when `close-observation` is declared. It enlarges one user-selected form or detail and approaches abstraction through simplified color shapes, controlled transitions, and negative space that follows the contour, while retaining identifying cues. Flowers, bones, shells, and desert rocks are not defaults; do not force a crop when the user asks for a complete object or a distant view.
+
+```powershell
+python tools/compile-style.py style-packages/artists/georgia-okeeffe --direction package --context close-observation --subject "A single red pear, seen close enough to reveal its curved shoulder and stem" --output runs/style-v2/okeeffe-job.json
+```
+
+This direction remains experimental. The Met and National Gallery of Art material on enlarged forms, progressive zoom, and simplified color and shape supports these observations; transfer beyond natural forms remains pending.
+
 

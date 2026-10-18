@@ -158,6 +158,7 @@ the same prompt wording.
 | [Hiroshige atmospheric landscape](../style-packages/artists/utagawa-hiroshige/art-direction.yaml) | Weather layers, cropped foreground, travel scale, woodblock gradation | `text_only`, declare `landscape-view` |
 | [Hokusai graphic contour and planes](../style-packages/artists/katsushika-hokusai/art-direction.yaml) | Silhouette hierarchy, registered color planes, deliberate crop, paper-shaped negative space | `text_only` |
 | [Friedrich human scale and vastness](../style-packages/artists/caspar-david-friedrich/art-direction.yaml) | Open space, finite human scale, selective visibility of distance | `text_only`, declare `landscape-view` |
+| [O'Keeffe close observation and form](../style-packages/artists/georgia-okeeffe/art-direction.yaml) | Enlarged user-selected form, simplified color shapes, form-following negative space | `text_only`, declare `close-observation` |
 
 ## 6. Execution routes
 

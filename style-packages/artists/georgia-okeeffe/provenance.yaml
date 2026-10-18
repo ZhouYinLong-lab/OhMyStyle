@@ -1,14 +1,24 @@
 package_id: georgia-okeeffe
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_backed_link_only
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
 sources:
-- url: https://www.okeeffemuseum.org/
-  authority: Georgia O’Keeffe Museum
-  title: Georgia O'Keeffe Museum collection
-  supports: source traceability and observable package scope
-  accessed: '2026-08-07'
+  - url: https://www.okeeffemuseum.org/
+    authority: Georgia O’Keeffe Museum
+    title: Georgia O'Keeffe Museum collection
+    supports: source traceability and observable package scope
+    accessed: '2026-08-07'
+  - url: https://www.metmuseum.org/art/collection/search/489813
+    authority: The Metropolitan Museum of Art
+    title: Black Iris
+    supports: magnified petals and close observation of details otherwise overlooked
+    accessed: 2026-10-19
+  - url: https://www.nga.gov/educational-resources/jack-in-pulpit-georgia-okeeffe
+    authority: National Gallery of Art
+    title: 'Close Looking: Georgia O''Keeffe'
+    supports: progressive zoom, simplification of color and shape, and abstraction grounded in close observation
+    accessed: 2026-10-19
 attribution: This package studies observable visual decisions associated with Georgia
   O'Keeffe; it does not reproduce a named work, character, location, logo, text, or
   exact composition.

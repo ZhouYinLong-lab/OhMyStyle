@@ -172,6 +172,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [广重气象版画](../style-packages/artists/utagawa-hiroshige/art-direction.yaml) | 天气层次、裁切前景、旅途尺度与木版渐变 | `text_only`，声明 `landscape-view` |
 | [北斋轮廓色面](../style-packages/artists/katsushika-hokusai/art-direction.yaml) | 剪影层级、套色色面、明确裁切与纸面负形 | `text_only` |
 | [弗里德里希人的尺度](../style-packages/artists/caspar-david-friedrich/art-direction.yaml) | 开阔空间、有限人类尺度、远景选择性显现 | `text_only`，声明 `landscape-view` |
+| [欧姬芙近距离观察](../style-packages/artists/georgia-okeeffe/art-direction.yaml) | 用户指定形体的放大、色形简化、随形负空间 | `text_only`，声明 `close-observation` |
 
 ## 6. 从主体请求到结果
 

@@ -70,4 +70,14 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
 
+## 新架构：近距离观察与形体（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在明确声明 `close-observation` 时启用：放大用户指定的一个形体或细节，用简化色形、受控渐变和随轮廓变化的负形让对象接近抽象，同时保留可辨识特征。花、骨骼、贝壳和沙漠岩石都不是默认主体；用户需要完整物体或远景时不要强行裁切。
+
+```powershell
+python tools/compile-style.py style-packages/artists/georgia-okeeffe --direction package --context close-observation --subject "A single red pear, seen close enough to reveal its curved shoulder and stem" --output runs/style-v2/okeeffe-job.json
+```
+
+方向仍处于实验状态。大都会艺术博物馆和美国国家美术馆关于欧姬芙放大花形、逐步推近并简化色形的资料支持这些观察；非植物主体的迁移效果仍待评审。
+
 
