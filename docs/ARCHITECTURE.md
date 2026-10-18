@@ -176,6 +176,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [莱利光学节奏](../style-packages/artists/bridget-riley/art-direction.yaml) | 几何单元渐变序列、相邻对比、平面视觉振动 | `text_only`，声明 `abstract-field` |
 | [丢勒刻线明暗](../style-packages/artists/albrecht-durer/art-direction.yaml) | 轮廓先行、顺形排线、纸白高光、材质线组 | `text_only` |
 | [穆夏装饰海报](../style-packages/artists/alphonse-mucha/art-direction.yaml) | 主体与边框层级、随形曲线、石版平涂、用户控制文字 | `text_only`，声明 `ornamental-poster` |
+| [安娜·安彻居室窗光](../style-packages/artists/anna-ancher/art-direction.yaml) | 单一窗光路径、跨墙地家具的反射色、日常室内尺度 | `text_only`，声明 `window-lit-interior` |
 
 ## 6. 从主体请求到结果
 

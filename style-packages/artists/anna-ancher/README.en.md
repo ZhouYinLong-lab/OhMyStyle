@@ -22,9 +22,21 @@ A northern interior-painting profile centered on changing daylight, quiet domest
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rules.
 
+## New architecture: window light and domestic planes (experimental)
+
+`art-direction.yaml` scopes this direction to window-lit interiors. Daylight enters from one legible direction and creates readable color relationships across at least two room planes, such as a wall, floor, or furnishing. People and domestic activity appear only when requested; the direction does not invent figures, plants, windows, or props. It describes how interior daylight organizes a room, rather than outdoor impressionist mark-making or theatrical spotlighting.
+
+```powershell
+python tools/compile-style.py style-packages/artists/anna-ancher --direction package --context window-lit-interior --subject "A woman reading beside a window in a quiet room" --output runs/style-v2/anna-ancher-job.json
+```
+
+This direction remains experimental. Generated examples and stability across subjects still need human review. See `art-direction.yaml` and `provenance.yaml` for the rule and source basis.
+
 ## Reference sources
 
 - [https://www.smk.dk/en/artist_profile/anna-ancher/](https://www.smk.dk/en/artist_profile/anna-ancher/)
+- [SMK: Kunstnerens mor Ane Hedvig Brøndum i den røde stue](https://connect.smk.dk/vaerker/67-kms-8654)
+- [Skagens Museum: Anna Ancher artist profile](https://skagensmuseum.dk/kunstnere/anna-ancher/)
 
 ## Sources and rights
 

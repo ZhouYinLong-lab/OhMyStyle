@@ -162,6 +162,7 @@ the same prompt wording.
 | [Riley serial rhythm and perceptual motion](../style-packages/artists/bridget-riley/art-direction.yaml) | Geometric progression, adjacent contrast, flat-plane optical movement | `text_only`, declare `abstract-field` |
 | [Dürer engraved line and value structure](../style-packages/artists/albrecht-durer/art-direction.yaml) | Contour first, form-following hatch, paper highlights, material-specific line groups | `text_only` |
 | [Mucha ornamental poster hierarchy](../style-packages/artists/alphonse-mucha/art-direction.yaml) | Subject-to-frame hierarchy, contour-linked curves, flat lithographic color, user-controlled text | `text_only`, declare `ornamental-poster` |
+| [Anna Ancher domestic window light](../style-packages/artists/anna-ancher/art-direction.yaml) | One window-light path, reflected color across room planes, ordinary domestic scale | `text_only`, declare `window-lit-interior` |
 
 ## 6. Execution routes
 

@@ -22,9 +22,21 @@
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 
+## 新架构：窗光与居室色面（实验）
+
+`art-direction.yaml` 将方向限定在有窗光的室内：让日光从一个明确方向进入，并在至少两个墙面、地面或家具平面上留下可读的光色关系。人物与家务动作只按用户要求呈现；不自动添加人物、植物、窗户或道具。它关注的是室内日光如何组织空间，不是户外印象派笔触，也不是舞台聚光。
+
+```powershell
+python tools/compile-style.py style-packages/artists/anna-ancher --direction package --context window-lit-interior --subject "A woman reading beside a window in a quiet room" --output runs/style-v2/anna-ancher-job.json
+```
+
+该方向仍为实验规则；示例图的模型效果与跨题材稳定性尚待人工评审。来源及规则依据见 `art-direction.yaml` 和 `provenance.yaml`。
+
 ## 参考来源
 
 - [https://www.smk.dk/en/artist_profile/anna-ancher/](https://www.smk.dk/en/artist_profile/anna-ancher/)
+- [SMK：Kunstnerens mor Ane Hedvig Brøndum i den røde stue](https://connect.smk.dk/vaerker/67-kms-8654)
+- [斯卡恩美术馆：安娜·安彻艺术家简介](https://skagensmuseum.dk/kunstnere/anna-ancher/)
 
 ## 来源与版权
 

@@ -1,3 +1,15 @@
+package_id: anna-ancher
+package_version: 0.2.0
+profiles:
+  window_lit_interior:
+    required:
+      - window light has one coherent direction and shapes multiple room planes
+      - reflected colors follow the light path instead of tinting the whole image
+      - domestic scale remains believable and quiet
+    reject_if:
+      - a person, plant, or prop appears without request
+      - spotlight, global haze, or theatrical beams replace daylight
+
 invariants:
 - id: window_light_is_structural
   weight: 3
