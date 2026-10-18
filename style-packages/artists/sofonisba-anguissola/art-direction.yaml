@@ -1,0 +1,97 @@
+schema_version: 2.0.0
+status: experimental
+id: anguissola-shared-action-portrait-focus
+name: Anguissola shared-action portrait focus
+base_package: artists/sofonisba-anguissola
+scope:
+  medium: painted_image
+  representation: stylized
+  description: >-
+    An optional direction for a user-requested multi-person portrait in which
+    the sitters share a clearly specified activity. Keep faces and hands close
+    enough to read together; let a small, requested object or gesture connect
+    the sitters while distributing attention between the interaction and viewer
+    only as requested. This is a compositional focus, not a default chess scene,
+    family group, period costume, or fixed arrangement.
+  required_contexts:
+    - user-requested-interactive-group-portrait
+  incompatible_contexts:
+    - single-person-portrait
+    - user-requested-distant-full-figure-group
+    - no-interaction-requested
+    - exact-reconstruction-of-named-portrait
+  limitations:
+    - Use only when the requested scene includes at least two sitters sharing an activity.
+    - Do not add an object, relationship, gesture, location, or historical detail not present in the user request.
+    - Preserve the requested sitter count, age range, clothing, framing, and setting.
+    - Do not copy the National Museum in Poznan's chess scene, its arrangement, or named sitters.
+pillars:
+  - Keep the requested shared action legible through a compact relationship between faces, hands, and its stated object.
+  - Give each sitter an individual expression and a distinct role in the interaction.
+  - Use a quiet setting and restrained detail so the exchange remains the visual center.
+rules:
+  - id: faces-and-gesture-share-one-focus
+    axis: interaction-legibility
+    importance: core
+    applies_when: The user requests a multi-person portrait with a shared activity.
+    instruction: Arrange the requested faces and hand action so they can be read together; keep the stated activity object visible between or near the participating sitters.
+    observable: At thumbnail size, the viewer can identify who is acting, who is responding, and what requested object or gesture links them.
+    reject_when: Hands or the shared object are cropped out, hidden, or disconnected from the sitters' attention.
+    evidence:
+      source_ids:
+        - poznan-anguissola-chess-game
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: copied chessboard, copied sitter count, copied poses, or invented activity props
+  - id: differentiated-attention-without-fixed-staging
+    axis: interpersonal-attention
+    importance: core
+    applies_when: The user requests a group portrait with interaction.
+    instruction: Give the sitters different readable attention targets that fit the requested action; use direct viewer gaze only when the user requests or allows it.
+    observable: Expressions and gaze make the sitters feel individually present rather than uniformly posed.
+    reject_when: Every sitter has the same expression or looks at an invented focal point.
+    evidence:
+      source_ids:
+        - poznan-anguissola-chess-game
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: fixed three-quarter gaze pattern or copied historical likeness
+  - id: subordinate-setting-and-costume-detail
+    axis: portrait-hierarchy
+    importance: supporting
+    applies_when: The requested interactive portrait has a setting or detailed clothing.
+    instruction: Keep setting and costume secondary to individualized faces, hands, and the shared action; retain all clothing and location details specified by the user.
+    observable: The interaction reads before background ornament or fabric pattern.
+    reject_when: Decorative or historical detail competes with the requested interaction.
+    evidence:
+      source_ids:
+        - poznan-anguissola-chess-game
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: automatic aristocratic setting, period dress, jewelry, or landscape
+active_rule_ids:
+  - faces-and-gesture-share-one-focus
+  - differentiated-attention-without-fixed-staging
+  - subordinate-setting-and-costume-detail
+joint_checks:
+  - id: shared-action-remains-readable
+    rule_ids:
+      - faces-and-gesture-share-one-focus
+      - differentiated-attention-without-fixed-staging
+      - subordinate-setting-and-costume-detail
+    instruction: Keep each sitter's face, the requested gesture, and its shared object readable as one interaction while leaving viewer gaze, setting, clothing, and story choices to the user's prompt.
+    observable: The image communicates the specified exchange without relying on a copied historical composition or extra narrative props.
+sources:
+  - id: poznan-anguissola-chess-game
+    kind: museum_collection_record
+    url: https://mnp.art.pl/sofonisba-anguissola-gra-w-szachy-1555
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested multi-person portrait with a shared activity.
+    - Preserve requested sitter count, identities, gestures, clothing, setting, and activity object.
+    - Keep faces, hands, and the shared action legible together.
+    - Keep individualized gaze and expressions without introducing an unrequested viewer gaze.
+  avoid:
+    - copying the chess scene, its sitter count, poses, landscape, costumes, or board
+    - adding a family relationship, historical setting, aristocratic costume, or story not requested

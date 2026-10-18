@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "sofonisba-anguissola",
+    "name": "索福尼斯巴·安圭索拉",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\sofonisba-anguissola"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Three adult colleagues in contemporary plain clothing quietly review one folded map around a small table; one points to a marked route, one follows the gesture, and one listens; half-length group portrait, horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: Three adult colleagues in contemporary plain clothing quietly review one folded map around a small table; one points to a marked route, one follows the gesture, and one listens; half-length group portrait, horizontal 16:9.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original image with these observable decisions:\n- Build a stable, legible arrangement with quiet negative space.\n- If people are requested, use individualized features, attentive gaze, and a restrained hand gesture to convey presence; do not assume a court, family, or historical scene.\n- Suggest thin-layer Renaissance oil paint with careful drawing, soft tonal modeling, and controlled, resolved edges.\n- Use natural skin tones, deep varied darks, and muted accents; keep light even and expression readable.\n- Reserve the finest detail for the requested focal features; keep the background calm and subordinate.\n- Avoid grand idealization and theatrical spotlighting. Do not copy a named portrait, sitter, garment, or composition.\nKeep the user’s subject, location, count, aspect ratio, and purpose authoritative.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied named portrait, sitter, family grouping, or composition\n- unrequested royal setting, heraldry, crown, ruff, court costume, or historical props\n- identical idealized faces, rigid doll-like gaze, or exaggerated theatrical gesture\n- tenebrist spotlight, near-black shadow masses, or heavy impasto\n- hard engraved outlines, plastic skin, glossy digital finish, or global sepia filter\n- malformed hands, unreadable expressions, or invented narrative details\n- extra text, signature, logo, frame, or watermark",
+  "template_variables": {
+    "SUBJECT": "Three adult colleagues in contemporary plain clothing quietly review one folded map around a small table; one points to a marked route, one follows the gesture, and one listens; half-length group portrait, horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "Museum records are link-only references; no historical artwork or collection photograph is bundled.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

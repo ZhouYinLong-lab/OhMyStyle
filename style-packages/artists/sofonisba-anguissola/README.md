@@ -35,3 +35,7 @@
 读取 `prompts/base.txt`，替换 `{SUBJECT}` 与 `{LOCATION}`，并一并提交 `prompts/negative.txt`。生成后按 `evaluation.yaml` 检查需求遵循、人物表达、媒介感和细节控制。也可在自己的 API 或本地模型工作流中使用；本仓库不托管生图服务或 API Key。
 
 代表图和样例是新生成内容，尚待人工审核，不是安圭索拉的作品，也不代表授权或背书。
+
+## 实验方向：以共同动作组织群像
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户指定多人肖像及共同活动时启用：让面部表情、手部动作和用户指定的活动物件共同构成清晰焦点，并区分每位人物的注意方向。不会默认添加棋盘、家族关系、历史服装或观者视线。查看 [`comparisons/`](comparisons/README.md) 中的生成对照。该方向仍处于实验状态。

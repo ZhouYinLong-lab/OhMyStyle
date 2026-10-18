@@ -35,3 +35,7 @@ The reference manifest links to collection records from The Metropolitan Museum 
 Read `prompts/base.txt`, replace `{SUBJECT}` and `{LOCATION}`, and submit `prompts/negative.txt` alongside it. After generation, use `evaluation.yaml` to review prompt adherence, expression, medium, and detail control. You can also use the rules with your own API or local-model workflow; this repository does not host an image service or API keys.
 
 The gallery and sample are newly generated and pending human review. They are not works by Anguissola and do not imply endorsement or authorization.
+
+## Experimental direction: shared-action group portrait
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user requests a multi-person portrait with a shared activity. Keep faces, hand gestures, and the user-specified activity object in one readable focus, while giving each sitter a distinct attention target. It does not add a chessboard, family relationship, historical costume, or viewer gaze by default. See [`comparisons/`](comparisons/README.md) for a generated comparison. This direction remains experimental.
