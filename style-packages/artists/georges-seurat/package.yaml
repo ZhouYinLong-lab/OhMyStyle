@@ -2,7 +2,7 @@ id: georges-seurat
 name: 乔治·修拉
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 entity: catalog/persons/artists/georges-seurat/entity.yaml
 summary: >-
   A Neo-Impressionist painting profile built from disciplined optical color units, stable silhouettes, measured park-like space, and calm repeated social poses.
@@ -16,6 +16,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist

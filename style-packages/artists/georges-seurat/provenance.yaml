@@ -1,6 +1,6 @@
 package_id: georges-seurat
-package_version: 0.1.0
-curation_status: reference_images_verified
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
 sources:
   - url: https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte
@@ -11,4 +11,19 @@ sources:
     authority: Wikimedia Commons
     supports: secondary public-domain reference image and work attribution
     accessed: 2026-08-06
+  - url: https://www.metmuseum.org/essays/georges-seurat-1859-1891-and-neo-impressionism
+    authority: The Metropolitan Museum of Art
+    title: "Georges Seurat (1859–1891) and Neo-Impressionism"
+    supports: measured optical color theory and orderly separate touches
+    accessed: '2026-10-19'
+  - url: https://www.metmuseum.org/art/collection/search/437658
+    authority: The Metropolitan Museum of Art
+    title: "Study for A Sunday on La Grande Jatte"
+    supports: variation from patchy strokes in the study to tighter dot-like dabs in the later painting
+    accessed: '2026-10-19'
+  - url: https://archive.artic.edu/sciarttech/2a1.html
+    authority: Art Institute of Chicago
+    title: "The Enduring Relationship of Science and Art"
+    supports: adjacent color dots and dashes, distinct close-up color units, and optical mixing
+    accessed: '2026-10-19'
 attribution: Historical works remain attributed to Georges Seurat and their source institutions. This independent package claims no affiliation.

@@ -1,0 +1,107 @@
+schema_version: 2.0.0
+status: experimental
+id: seurat-measured-composition-and-divided-color
+name: Seurat measured composition and divided color
+base_package: artists/georges-seurat
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: >-
+    A structured painting direction for user-specified scenes. Establish calm,
+    carefully spaced forms and clear compositional rhythms, then build light and
+    color from separate, orderly marks whose shape and density follow each form
+    or plane. The marks may be small dabs, short strokes, or interwoven patches;
+    they should remain visibly separate up close and cohere optically at normal
+    viewing distance. Do not require dots or a park scene as the subject.
+  required_contexts:
+    - measured-chromatic-composition
+  incompatible_contexts:
+    - gestural-impasto-painting
+    - photographic-output
+    - mechanical-halftone
+  limitations:
+    - Preserve only the people, objects, setting, count, and relationships requested by the user.
+    - Do not add a park, procession of figures, shoreline, or named Seurat motif by default.
+    - Keep pigment marks orderly but varied with form; avoid uniform dots, arbitrary noise, and the impression of a printed screen.
+pillars:
+  - Build a measured composition from stable silhouettes, clear intervals, and a few deliberate alignments.
+  - Separate nearby hues into small, visible pigment marks so colors can combine optically at ordinary viewing distance.
+  - Change mark shape, direction, size, and density with the object plane, light, and distance rather than applying one repeated dot everywhere.
+  - Keep daylight, shadow color, and edge contrast coherent across the requested scene.
+rules:
+  - id: measured-silhouette-and-intervals
+    axis: composition_and_shape
+    importance: core
+    applies_when: The user requests a composed scene or object study in a measured painted style.
+    instruction: Arrange only the requested subjects with clear silhouettes and intentional intervals; use a small number of horizontal, vertical, or diagonal alignments to create rhythm without borrowing a known Seurat composition.
+    observable: Main forms remain individually readable and their spacing creates a quiet, deliberate visual rhythm.
+    reject_when: The requested objects merge, arbitrary background figures are added, or the layout resembles a recognizable park or harbor painting.
+    evidence:
+      source_ids:
+        - seurat-met-essay
+        - seurat-met-study
+      basis: institutional_description
+      visual_review: pending
+    avoid: unrequested figures, default park setting, copied figure procession, and crowded layout
+  - id: plane-sensitive-separated-pigment-marks
+    axis: mark_making_and_surface
+    importance: core
+    applies_when: The scene uses divided color as a visible painting method.
+    instruction: Apply separate nearby pigment hues in orderly dabs, short strokes, or patches whose direction and density follow the local plane; let them remain distinct close up and combine visually at normal viewing distance.
+    observable: Pigment units are legible at close range, while the image reads as coherent color and light from a normal viewing distance.
+    reject_when: Marks become identical dots, random speckle, smooth premixed gradients, or a mechanical halftone screen.
+    evidence:
+      source_ids:
+        - seurat-met-essay
+        - seurat-met-study
+        - seurat-aic-color-science
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform dots, arbitrary complementary pairs, blur, noise, and printed halftone
+  - id: optical-light-and-colored-shadow
+    axis: color_and_light
+    importance: supporting
+    applies_when: The user requests clear natural light or a luminous outdoor painting.
+    instruction: Keep the light direction and value structure simple; place related or contrasting hues next to one another where they describe illumination and shadow, without making every surface vibrate equally.
+    observable: Light and shadow remain readable through grouped color relationships, and the brightest chromatic activity stays focused on meaningful areas.
+    reject_when: Color contrast overwhelms form, shadows become flat black, or complementary hues are paired without regard to local light.
+    evidence:
+      source_ids:
+        - seurat-met-essay
+        - seurat-aic-color-science
+      basis: institutional_description
+      visual_review: pending
+    avoid: all-over neon vibration, black shadow fill, and indiscriminate color contrast
+active_rule_ids:
+  - measured-silhouette-and-intervals
+  - plane-sensitive-separated-pigment-marks
+  - optical-light-and-colored-shadow
+joint_checks:
+  - id: composition-mark-and-light-coherence
+    rule_ids:
+      - measured-silhouette-and-intervals
+      - plane-sensitive-separated-pigment-marks
+      - optical-light-and-colored-shadow
+    instruction: Let the arrangement, mark rhythm, and divided colors describe one coherent user-requested scene.
+    observable: Requested forms remain count-correct and readable; mark behavior follows planes; colors cohere at viewing distance without losing their separate painted character.
+sources:
+  - id: seurat-met-essay
+    kind: museum_art_history_essay
+    url: https://www.metmuseum.org/essays/georges-seurat-1859-1891-and-neo-impressionism
+  - id: seurat-met-study
+    kind: museum_artwork_analysis
+    url: https://www.metmuseum.org/art/collection/search/437658
+  - id: seurat-aic-color-science
+    kind: museum_conservation_and_science
+    url: https://archive.artic.edu/sciarttech/2a1.html
+execution:
+  route: text_only
+  must:
+    - Declare measured-chromatic-composition before applying this direction.
+    - Preserve the requested subject, setting, count, and relationships.
+    - Keep pigment marks separate but orderly, with size and direction responding to form.
+    - Make the composition and light readable without defaulting to a park scene or figure procession.
+  avoid:
+    - adding unrequested people, park furniture, boats, shoreline, or narrative props
+    - copying a named Seurat painting's arrangement, crop, figures, or color layout
+    - replacing the painterly mark system with uniform dots, random speckle, blur, or halftone

@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "georges-seurat",
+    "name": "乔治·修拉",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\georges-seurat"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One yellow bicycle leaning against a blue plaster wall in clear midday light",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: One yellow bicycle leaning against a blue plaster wall in clear midday light\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new oil painting of One yellow bicycle leaning against a blue plaster wall in clear midday light in the user-requested setting, under the requested light. Use stable horizontal bands, measured spacing between quietly organized forms, repeated visual markers, and calm readable silhouettes. Build the entire surface with disciplined small adjacent color units: blue, green, yellow, vermilion, violet, and deep blue, allowing optical mixing at viewing distance. Shadows remain chromatic and structured. The subject, setting, and arrangement must be new; do not imitate a famous composition.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not use the artist's name, La Grande Jatte, copied figures, random dot noise, pixel art, photographic blur, generic stipple filter, dramatic chiaroscuro, text, logo, or watermark.",
+  "template_variables": {
+    "SUBJECT": "One yellow bicycle leaning against a blue plaster wall in clear midday light",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "measured-chromatic-composition": {
+        "required": [
+          "user-requested subjects and object counts remain unchanged",
+          "pigment marks vary with the form and remain individually visible at close range",
+          "the color relationships resolve into coherent light at normal viewing distance",
+          "the composition has measured spacing and stable silhouettes"
+        ],
+        "reject_if": [
+          "unrequested park or procession elements appear",
+          "mark texture becomes uniform dots, random noise, blur, or halftone",
+          "color contrast destroys readable form or the light direction"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

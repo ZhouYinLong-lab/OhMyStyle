@@ -196,6 +196,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [德拉克罗瓦色彩驱动的运动与笔触](../style-packages/artists/eugene-delacroix/art-direction.yaml) | 暖冷色交互、清楚的动作方向、随材质变化的笔触节奏 | `text_only`，声明 `chromatic-dynamic-scene` |
 | [培根封闭空间与局部轮廓偏移](../style-packages/artists/francis-bacon/art-direction.yaml) | 框架压缩空间、局部轮廓偏移、可见的覆盖与擦刮颜料层 | `text_only`，声明 `enclosed-figurative-tension` |
 | [苏巴朗静物秩序与聚焦侧光](../style-packages/artists/francisco-de-zurbaran/art-direction.yaml) | 用户指定物件的间距、单一侧光、克制背景与材质辨析 | `text_only`，声明 `ordered-object-still-life` |
+| [修拉测量式构图与分色笔触](../style-packages/artists/georges-seurat/art-direction.yaml) | 稳定剪影、经过安排的间距、随平面变化的分色笔触与光色关系 | `text_only`，声明 `measured-chromatic-composition` |
 
 ## 6. 从主体请求到结果
 

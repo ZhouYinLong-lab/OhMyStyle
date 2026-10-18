@@ -35,6 +35,18 @@ References are used for research and visual analysis. External artworks, photogr
 
 See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references/manifest.csv), and the repository [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: measured composition and divided-color marks (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when `measured-chromatic-composition` is explicitly declared. It centers Seurat's direction on stable silhouettes, deliberate spacing, and divided-color marks that respond to each form. Close up, the pigment touches stay distinct; at normal viewing distance, they resolve into coherent light. Marks may be dots, short strokes, or interwoven patches rather than identical dots across the whole image.
+
+This differs from the [Pointillism movement package](../../movements/pointillism/README.md), which defines a general dot-based surface method. Seurat's direction also constrains compositional rhythm, silhouette, and how marks change with each plane. It does not add a park, fixed procession of figures, or riverbank by default.
+
+```powershell
+python tools/compile-style.py style-packages/artists/georges-seurat --direction package --context measured-chromatic-composition --subject "A yellow bicycle leaning against a blue plaster wall in clear midday light"
+```
+
+See [`comparisons/`](comparisons/) for the legacy/new compiled jobs and an illustrative comparison. The image is for discussing the rule difference and was not rendered from those jobs.
+
 ## Use only this package
 
 Choose any one of the four methods below. They are alternatives, not steps that must all be completed.

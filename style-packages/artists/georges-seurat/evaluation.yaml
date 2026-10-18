@@ -1,5 +1,16 @@
 package_id: georges-seurat
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  measured-chromatic-composition:
+    required:
+      - user-requested subjects and object counts remain unchanged
+      - pigment marks vary with the form and remain individually visible at close range
+      - the color relationships resolve into coherent light at normal viewing distance
+      - the composition has measured spacing and stable silhouettes
+    reject_if:
+      - unrequested park or procession elements appear
+      - mark texture becomes uniform dots, random noise, blur, or halftone
+      - color contrast destroys readable form or the light direction
 invariants:
   - id: signature_primary
     weight: 3
