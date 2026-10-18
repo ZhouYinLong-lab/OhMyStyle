@@ -1,6 +1,6 @@
 # 美术风格包 v2：独立试点
 
-状态：可运行的渐进迁移试点，尚未完成跨题材效果评审。索罗亚日光、包豪斯纸材方法和严格 ASCII 网格已登记到正式包，但仍标记为实验。
+状态：可运行的渐进迁移架构，已逐包登记若干方向，但跨题材效果评审仍未完成。已登记的方向仍标记为实验。
 
 ## 版本保留与回退
 
@@ -45,13 +45,17 @@ experiments/style-v2/<direction>/direction.yaml
 
 相对于 [总体设计草案](../../docs/ART-STYLE-PACK-ARCHITECTURE.md)，这份文件是最小实施契约。设计样稿与运行文件分开，避免把尚未支持的字段当作已执行能力。
 
-## 三个试点
+## 已登记方向
 
 | 方向 | 选定范围 | 制作路线 | 必须声明的上下文 |
 | --- | --- | --- | --- |
 | [索罗亚日光油画](../../style-packages/artists/joaquin-sorolla/art-direction.yaml) | 光线、反射色、笔触与体块的联动；登记于正式包但仍为实验 | text_only | daylight |
+| [莫奈光色研究](../../style-packages/artists/claude-monet/art-direction.yaml) | 特定时刻光线、局部色彩与大气边缘 | text_only | daylight |
+| [印象派绘画](../../style-packages/movements/impressionism/art-direction.yaml) | 可见笔触、光色关系与开放边缘 | text_only | 无 |
+| [点彩绘画](../../style-packages/movements/pointillism/art-direction.yaml) | 离散色点、光学混色与点密度塑形 | text_only | 无 |
 | [包豪斯纸材研究](../../style-packages/schools/bauhaus/art-direction.yaml) | 阿尔伯斯预备课程纸材方法的当代转译；不是整个学院的统一画风 | text_only | paper-study |
 | [严格 ASCII 网格](../../style-packages/game-art/ascii-character-game-art/art-direction.yaml) | 全部场景形状由真实字符构成 | deterministic_grid | 无 |
+| [梵高方向性笔触](../../style-packages/artists/vincent-van-gogh/art-direction.yaml) | 分表面笔触、局部冷暖色关系和颜料厚度 | text_only | 无 |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

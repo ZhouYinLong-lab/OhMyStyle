@@ -1,5 +1,5 @@
 package_id: vincent-van-gogh
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_images_verified
 source_policy: Original historical works are bundled only when the cited source marks them public domain; the generated example is an anonymous new scene.
 sources:
@@ -15,4 +15,12 @@ sources:
     authority: The Museum of Modern Art
     supports: object context and material description for The Starry Night
     accessed: 2026-08-06
+  - url: https://www.moma.org/collection/works/79802
+    authority: The Museum of Modern Art
+    supports: museum description of vivid blues and yellows, gestural paint, swirling patterns, short brushstrokes, and thick paint in The Starry Night
+    accessed: 2026-10-19
+  - url: https://www.moma.org/collection/works/80013
+    authority: The Museum of Modern Art
+    supports: daylight landscape counterpart for comparing Van Gogh's directional treatment of sky and vegetation
+    accessed: 2026-10-19
 attribution: Historical works remain attributed to Vincent van Gogh and their collection/source institutions. This package is independent and claims no affiliation.

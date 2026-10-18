@@ -164,6 +164,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [索罗亚日光油画](../style-packages/artists/joaquin-sorolla/art-direction.yaml) | 日光、反射色、明暗组和随形笔触 | `text_only`，声明 `daylight` |
 | [包豪斯纸材方法](../style-packages/schools/bauhaus/art-direction.yaml) | 切、撕、折与支撑、开口和投影 | `text_only`，声明 `paper-study` |
 | [严格 ASCII 网格](../style-packages/game-art/ascii-character-game-art/art-direction.yaml) | 真实字符、统一单元格、密度与留白 | `deterministic_grid` |
+| [梵高方向性笔触](../style-packages/artists/vincent-van-gogh/art-direction.yaml) | 随形笔触、局部冷暖关系、可见厚涂 | `text_only` |
 
 ## 6. 从主体请求到结果
 
@@ -202,7 +203,7 @@ ASCII 路线要求先有字面字符源，再用指定等宽字体逐格绘制�
 
 现行成熟度为 L0 名称描述、L1 结构化描述、L2 有参考的可执行包、L3 增加已接受生成与评审证据、L4 增加跨模型或适配器验证。旧包的成熟度不会自动继承成 v2 规则的通过结论。
 
-三个试点均为 `experimental`，评审均为 `pending`。已完成三个任务编译与一次已有 ASCII 源渲染；尚未完成生图对照，也没有据此提升成熟度。记录见 [实施报告](../reports/style-v2-implementation.json)。
+最初三个试点均为 `experimental`，评审均为 `pending`；后续登记的方向也维持实验状态。已完成任务编译和严格 ASCII 源渲染，生成的示意图不作为 provider-backed 对照评审，也没有据此提升成熟度。初始阶段记录见 [实施报告](../reports/style-v2-implementation.json)。
 
 ## 8. 版本与后续推进
 

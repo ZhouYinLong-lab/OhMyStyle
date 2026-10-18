@@ -75,3 +75,13 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## New architecture: directional strokes and impasto (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) separates mark direction, local cool-warm color structure, and visible paint load into reviewable rules. Stroke families change with the surface instead of turning the whole image into one swirl; blue-yellow relationships follow the subject and light. Stars, cypresses, villages, and sunflowers are not automatic motifs. This direction remains experimental, and the legacy package prompt stays unchanged by default.
+
+```powershell
+python tools/compile-style.py style-packages/artists/vincent-van-gogh --direction package --subject "A wind-bent orchard after rain, with a figure walking along a path" --output runs/style-v2/van-gogh-job.json
+```
+
+Compilation does not call an image-generation service. Museum collection records support the observations about blue-yellow relationships, gestural marks, and thick paint. Transfer to new subjects and differentiation from neighboring artist packages still need image review.

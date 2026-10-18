@@ -75,3 +75,13 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## 新架构：方向性笔触与厚涂（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 将笔触方向、局部冷暖色组织和可见颜料堆积拆成可检查的规则。笔触随不同表面改变，不把所有画面统一成旋涡；蓝黄关系服从主体与光线，也不自动添加星夜、柏树、村庄或向日葵。它仍是实验方向，默认包和旧版 Prompt 保持不变。
+
+```powershell
+python tools/compile-style.py style-packages/artists/vincent-van-gogh --direction package --subject "A wind-bent orchard after rain, with a figure walking along a path" --output runs/style-v2/van-gogh-job.json
+```
+
+编译任务不会自动调用生图服务。官方馆藏说明支持本方向关于蓝黄关系、手势性笔触与厚涂的观察；新题材上的笔触迁移和与相近艺术家包的差异仍待图片评审。

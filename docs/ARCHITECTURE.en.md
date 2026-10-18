@@ -108,7 +108,7 @@ Retrieval flattens visual signature content into search terms. An Agent reading 
 
 ## 5. v2 pilots: explicitly selected directions
 
-v2 keeps the formal package and registers an optional `art_direction` artifact. A direction may live in an experiment folder until it is ready to register. Sorolla, Bauhaus, and ASCII now register optional experimental directions in their formal packages. The library is not automatically converted.
+v2 keeps the formal package and registers an optional `art_direction` artifact. A direction may live in an experiment folder until it is ready to register. Sorolla, Bauhaus, ASCII, and Van Gogh now register optional experimental directions in their formal packages. The library is not automatically converted.
 
 | Field | Responsibility |
 | --- | --- |
@@ -150,6 +150,7 @@ the same prompt wording.
 | [Sorolla sunlit oil](../style-packages/artists/joaquin-sorolla/art-direction.yaml) | Daylight, reflected color, value groups, directional marks | `text_only`, declare `daylight` |
 | [Bauhaus paper method](../style-packages/schools/bauhaus/art-direction.yaml) | Cutting, tearing, folding, supports, openings, shadows | `text_only`, declare `paper-study` |
 | [Literal ASCII grid](../style-packages/game-art/ascii-character-game-art/art-direction.yaml) | Real glyphs, fixed cells, density, negative space | `deterministic_grid` |
+| [Van Gogh directional strokes](../style-packages/artists/vincent-van-gogh/art-direction.yaml) | Surface-following marks, local cool-warm relationships, visible impasto | `text_only` |
 
 ## 6. Execution routes
 
@@ -184,7 +185,7 @@ Compare specific visual relationships with neighboring artists, movements, or sc
 
 The existing maturity contract is L0 descriptor, L1 structured description, L2 reference-backed executable package, L3 accepted generation and review evidence, and L4 interoperability evidence across providers or adapters. Existing maturity does not establish validation of newly authored v2 rules.
 
-All three pilots remain `experimental` with review `pending`. Three jobs were compiled and one existing ASCII source was rasterized. The image comparison protocol has not been run and maturity was not upgraded. See the [implementation record](../reports/style-v2-implementation.json).
+The initial three pilots remain `experimental` with review `pending`; directions registered since then also remain experimental. Jobs have been compiled and a literal ASCII source rasterized. Illustrative previews are not provider-backed comparison evidence, and maturity has not been upgraded. See the [initial implementation record](../reports/style-v2-implementation.json).
 
 ## 8. Versions and migration
 
