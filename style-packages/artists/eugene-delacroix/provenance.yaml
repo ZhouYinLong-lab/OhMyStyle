@@ -1,10 +1,24 @@
 package_id: eugene-delacroix
+package_version: 0.2.0
 research_basis:
 - title: Eugène Delacroix
   creator: Eugène Delacroix
   period: 浪漫主义
   source_url: https://commons.wikimedia.org/w/index.php?search=Eug%C3%A8ne+Delacroix&title=Special:MediaSearch&type=image
   role: style research
+- title: Delacroix and colour
+  creator: Musée National Eugène-Delacroix
+  period: 2022
+  source_url: https://www.louvre.fr/en/explore/life-at-the-museum/delacroix-and-colour
+  role: institutional analysis of juxtaposed hues and contrasting palette
+- title: The Capture of Constantinople restored
+  creator: Musée du Louvre
+  source_url: https://www.louvre.fr/decouvrir/vie-du-musee/la-prise-de-constantinople-par-les-croises-de-delacroix-retrouve-son-eclat
+  role: technical analysis of color modulation and chromatic depth
+- title: Delacroix exhibition galleries
+  creator: The Metropolitan Museum of Art
+  source_url: https://www.metmuseum.org/exhibitions/listings/2018/delacroix/exhibition-galleries
+  role: institutional analysis of brushwork, color, and movement
 generated_assets:
 - path: gallery-16x9.jpg
   description: New anonymous representative image

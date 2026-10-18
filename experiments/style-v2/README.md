@@ -84,6 +84,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [戈雅心理肖像与选择性笔触](../../style-packages/artists/francisco-goya/art-direction.yaml) | 表情与姿态、背景与面部笔触尺度差异、克制的明暗分离 | text_only | psychological-portrait |
 | [伍德乡土景观图案与垂直节奏](../../style-packages/artists/grant-wood/art-direction.yaml) | 滚动地形与竖向轮廓、路径引导、地域细节的克制组织 | text_only | composed-regional-landscape |
 | [马奈直接色块与压缩空间](../../style-packages/artists/edouard-manet/art-direction.yaml) | 并置色块、经过安排的压缩空间、焦点处的轮廓与笔触层级 | text_only | modern-life-color-plane |
+| [德拉克罗瓦色彩驱动的运动与笔触](../../style-packages/artists/eugene-delacroix/art-direction.yaml) | 暖冷色交互、清楚的动作方向、随材质变化的笔触节奏 | text_only | chromatic-dynamic-scene |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

@@ -1,5 +1,14 @@
 package_id: eugene-delacroix
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  chromatic-dynamic-scene:
+    required:
+    - warm-cool relationships articulate form or depth
+    - one coherent diagonal or curved vector supports requested action
+    - varied marks retain focal figure and object readability
+    reject_if:
+    - battle, revolt, flags, weapons, or exoticized costume appear without request
+    - global saturation or uniform turbulence replaces local color and mark logic
 invariants:
 - id: signature
   weight: 3

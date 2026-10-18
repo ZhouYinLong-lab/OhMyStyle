@@ -179,6 +179,7 @@ the same prompt wording.
 | [Goya psychological portrait and selective brushwork](../style-packages/artists/francisco-goya/art-direction.yaml) | Expression and posture, contrasting mark scale, restrained value separation | `text_only`, declare `psychological-portrait` |
 | [Wood regional landscape pattern and vertical rhythm](../style-packages/artists/grant-wood/art-direction.yaml) | Rolling land with upright forms, path-led composition, controlled regional detail | `text_only`, declare `composed-regional-landscape` |
 | [Manet direct color and compressed scene](../style-packages/artists/edouard-manet/art-direction.yaml) | Adjacent color patches, deliberate spatial compression, selective contours and brushwork | `text_only`, declare `modern-life-color-plane` |
+| [Delacroix chromatic motion and brushwork](../style-packages/artists/eugene-delacroix/art-direction.yaml) | Warm-cool interaction, legible action vector, material-sensitive brush rhythm | `text_only`, declare `chromatic-dynamic-scene` |
 
 ## 6. Execution routes
 

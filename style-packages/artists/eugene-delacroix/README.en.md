@@ -32,6 +32,16 @@ Reference links are provided for research and visual analysis only. External art
 
 See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references/manifest.csv), and the repository [`NOTICE`](../../../NOTICE) for boundaries.
 
+## New architecture: color-driven motion and brushwork (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `chromatic-dynamic-scene`. It turns warm-cool interaction, a clear action vector, and material-sensitive brush rhythm into reviewable rules. Unlike Turner's direction, which expresses movement through weather and dissolving atmosphere, this one uses neighboring colors and figure gestures to carry motion. It does not default to revolutions, flags, weapons, or exoticized costume.
+
+```powershell
+python tools/compile-style.py style-packages/artists/eugene-delacroix --direction package --context chromatic-dynamic-scene --subject "A street musician turning toward a sudden gust as sheet music lifts" --output runs/style-v2/eugene-delacroix-job.json
+```
+
+This direction remains experimental; same-subject and cross-subject visual review is pending.
+
 ## Use only this package
 
 Choose any one of the four methods below. They are alternatives, not steps that must all be completed.

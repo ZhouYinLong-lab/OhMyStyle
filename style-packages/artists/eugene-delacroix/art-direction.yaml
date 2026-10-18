@@ -1,0 +1,106 @@
+schema_version: 2.0.0
+status: experimental
+id: delacroix-chromatic-motion-and-brushwork
+name: Delacroix chromatic motion and brushwork
+base_package: artists/eugene-delacroix
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: >-
+    A dynamic painting direction in which warm and cool colors interact to
+    articulate form and depth, while a clear diagonal or curved vector carries
+    movement through the scene. Juxtaposed hues and varied brush marks give
+    energy to the focal action; value and contour remain sufficient to keep
+    figures and objects readable. The user's subject and narrative stay in
+    control.
+  required_contexts:
+    - chromatic-dynamic-scene
+  incompatible_contexts:
+    - monochrome-flat-graphic
+    - static-geometric-still-life
+    - mandatory-historical-battle
+  limitations:
+    - Preserve the user-requested figures, action, place, period, and count; do not add revolution, flags, weapons, or exoticized costume by default.
+    - Use diagonal or curved movement only when supported by the requested action.
+    - Keep saturated contrast localized and purposeful; do not apply an all-over vivid-color filter.
+pillars:
+  - Let adjacent warm and cool hues describe form, reflected light, and depth rather than using saturation as decoration.
+  - Organize the focal action along one readable diagonal or curved movement path.
+  - "Vary brush marks by material and motion: lively or broken in active passages, more settled where forms need clarity."
+  - Preserve enough value structure and contour for the requested figures and objects to remain legible.
+rules:
+  - id: warm-cool-color-interaction
+    axis: chromatic_structure
+    importance: core
+    applies_when: The requested scene benefits from saturated color and visible reflected light.
+    instruction: Build form from neighboring warm and cool color relationships, allowing small contrasting touches to vibrate within larger color areas; keep the local identity of skin, cloth, architecture, and environment readable.
+    observable: Color contrast articulates planes and depth while remaining tied to materials and light.
+    reject_when: Hue contrast becomes a global filter, materials lose distinction, or color alone makes the subject legible.
+    evidence:
+      source_ids:
+        - delacroix-louvre-color
+        - delacroix-louvre-restoration
+      basis: institutional_description
+      visual_review: pending
+    avoid: arbitrary complementary colors, neon saturation, and flat global color wash
+  - id: directional-action-composition
+    axis: movement_and_composition
+    importance: core
+    applies_when: The requested scene contains a clear action, gesture, or movement through space.
+    instruction: Arrange the action around one dominant diagonal or curved vector, using body gestures, environmental lines, and color transitions to guide the eye; retain a clear focal hierarchy and do not invent a battle or crowd.
+    observable: The eye follows one coherent path through the action, while the main subject remains distinct from secondary forms.
+    reject_when: Several unrelated vectors compete, movement is conveyed only by blur, or new dramatic action is invented.
+    evidence:
+      source_ids:
+        - delacroix-louvre-restoration
+        - delacroix-met-gallery-analysis
+      basis: institutional_description
+      visual_review: pending
+    avoid: random swirls, mandatory crowds, and copied pyramid arrangement
+  - id: varied-mark-rhythm-and-figure-readability
+    axis: brushwork_and_form
+    importance: supporting
+    applies_when: The user requests a visibly painted scene with active passages.
+    instruction: Vary touch size and direction to distinguish active movement, soft transitions, and settled forms; keep the main figure and requested objects structurally readable rather than wrapping every surface in the same energetic texture.
+    observable: Brush rhythm changes with action and material, and the focal forms remain recognizable.
+    reject_when: Uniform texture obscures anatomy or objects, or lively marks become an ornamental overlay.
+    evidence:
+      source_ids:
+        - delacroix-louvre-color
+        - delacroix-met-gallery-analysis
+      basis: institutional_description
+      visual_review: pending
+    avoid: all-over turbulent strokes, generic impasto, and blurred focal subjects
+active_rule_ids:
+  - warm-cool-color-interaction
+  - directional-action-composition
+  - varied-mark-rhythm-and-figure-readability
+joint_checks:
+  - id: color-movement-form-coherence
+    rule_ids:
+      - warm-cool-color-interaction
+      - directional-action-composition
+      - varied-mark-rhythm-and-figure-readability
+    instruction: Coordinate color contrast, movement path, and mark rhythm around the user-requested focal action.
+    observable: Color describes form and depth, movement has a readable direction, and energetic marks do not erase the subject.
+sources:
+  - id: delacroix-louvre-color
+    kind: museum_artist_analysis
+    url: https://www.louvre.fr/en/explore/life-at-the-museum/delacroix-and-colour
+  - id: delacroix-louvre-restoration
+    kind: museum_technical_analysis
+    url: https://www.louvre.fr/decouvrir/vie-du-musee/la-prise-de-constantinople-par-les-croises-de-delacroix-retrouve-son-eclat
+  - id: delacroix-met-gallery-analysis
+    kind: museum_exhibition_analysis
+    url: https://www.metmuseum.org/exhibitions/listings/2018/delacroix/exhibition-galleries
+execution:
+  route: text_only
+  must:
+    - Declare chromatic-dynamic-scene before applying this direction.
+    - Preserve the user's subject, action, setting, and requested number of figures.
+    - Use warm-cool interaction and movement paths only to support that scene.
+    - Keep focal subjects legible amid varied painterly marks.
+  avoid:
+    - adding historical revolt, flags, weapons, battle, or orientalist motifs without request
+    - copying a named painting's exact color arrangement, gestures, or pyramid composition
+    - applying uniform saturation or turbulent brush texture across the entire image
