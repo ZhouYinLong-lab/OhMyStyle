@@ -170,6 +170,7 @@ the same prompt wording.
 | [Velázquez gaze, depth, and selective precision](../style-packages/artists/diego-velazquez/art-direction.yaml) | Gaze organizes group relationships, dark values create room depth, focal details against broad passages | `text_only`, declare `observed-interior-portrait` |
 | [Degas oblique observation and spatial crop](../style-packages/artists/edgar-degas/art-direction.yaml) | Oblique viewpoint, asymmetric framing, spatial planes, and legible transitional poses | `text_only`, declare `observed-figure-scene` |
 | [Schiele contour tension and exposed ground](../style-packages/artists/egon-schiele/art-direction.yaml) | Directional contour, tension between form and paper ground, sparse dry color | `text_only`, declare `expressive-contour-study` |
+| [Munch subjective color and environmental rhythm](../style-packages/artists/edvard-munch/art-direction.yaml) | Local psychological color, curves linking subject and setting, selective spatial compression | `text_only`, declare `psychological-expressionist-scene` |
 
 ## 6. Execution routes
 

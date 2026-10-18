@@ -33,6 +33,18 @@ References are used for research and visual analysis. External artworks, photogr
 
 See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references/manifest.csv), and the repository [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: subjective color and environmental rhythm (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) focuses on selected Symbolist and Expressionist works from Munch's 1890s practice and is enabled only when the user declares `psychological-expressionist-scene`. It separates the emotional role of color, rhythmic curves between subject and environment, and selective spatial compression into reviewable rules. It does not default to a distressed expression, isolated figure, shore, bridge, or sunset, and does not reproduce the composition of *The Scream*.
+
+Unlike Van Gogh's direction, which centers on surface-following strokes, paint thickness, and local cool-warm brushwork, Munch's direction centers on color relationships that establish emotional tone and contours that connect subject and environment.
+
+```powershell
+python tools/compile-style.py style-packages/artists/edvard-munch --direction package --context psychological-expressionist-scene --subject "A tired traveler sitting in a quiet room beside a closed window" --output runs/style-v2/edvard-munch-job.json
+```
+
+This direction remains experimental; cross-subject and same-subject image review is pending.
+
 ## Use only this package
 
 Choose any one of the four methods below. They are alternatives, not steps that must all be completed.

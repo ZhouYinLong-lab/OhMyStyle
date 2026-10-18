@@ -1,5 +1,15 @@
 package_id: edvard-munch
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  psychological-expressionist-scene:
+    required:
+      - local color relationships reinforce the user's stated emotional tone
+      - selected environmental rhythms connect the subject and setting
+      - spatial emphasis remains readable and tied to the requested scene
+    reject_if:
+      - panic, isolation, shoreline, bridge, or sunset appears without request
+      - a global color wash or uniform wavy contour replaces local form
+      - The Scream or another named composition is reconstructed
 invariants:
   - id: psychological_color
     weight: 3

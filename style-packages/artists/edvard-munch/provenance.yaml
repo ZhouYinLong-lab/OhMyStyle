@@ -1,5 +1,5 @@
 package_id: edvard-munch
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_images_verified
 source_policy: Historical works are bundled from public-domain reproductions; the generated example is an anonymous new scene.
 sources:
@@ -11,4 +11,19 @@ sources:
     authority: Wikimedia Commons
     supports: secondary visual reference; public-domain reproduction
     accessed: 2026-08-06
+  - url: https://dks.nasjonalmuseet.no/kunstverk/melankoli?media=print
+    authority: National Museum of Norway
+    title: Melancholy
+    supports: Analysis of Munch's subjective use of composition, color, and form to convey strong feeling
+    accessed: 2026-10-19
+  - url: https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/research/publications/pdfs/edvard-munch-symbols-images.pdf
+    authority: National Gallery of Art
+    title: "Edvard Munch: Symbols and Images"
+    supports: Scholarly analysis of how contour, landscape, and color work together in selected Munch compositions
+    accessed: 2026-10-19
+  - url: https://www.nga.gov/artworks/56601-two-women-shore
+    authority: National Gallery of Art
+    title: Two Women on the Shore
+    supports: Institutional object record for expressive flowing lines and color blocks; no claim that its motif is a default
+    accessed: 2026-10-19
 attribution: Historical works remain attributed to Edvard Munch and their source institutions. This package is independent and claims no affiliation.
