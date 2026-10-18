@@ -1,0 +1,105 @@
+schema_version: 2.0.0
+status: experimental
+id: zurbaran-ordered-still-life-and-focused-light
+name: Zurbarán ordered still life and focused light
+base_package: artists/francisco-de-zurbaran
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: >-
+    An austere still-life direction for user-specified objects. Arrange a small
+    number of forms with measured intervals on a quiet ground, then use one
+    focused lateral light to distinguish volume and material against a restrained
+    background. Preserve the requested object identities and count; do not import
+    the source painting's fruit, vessels, rose, or religious interpretation.
+  required_contexts:
+    - ordered-object-still-life
+  incompatible_contexts:
+    - exuberant-decorative-tabletop
+    - high-key-product-photography
+    - crowded-banquet-scene
+  limitations:
+    - Work only with objects and setting supplied or approved by the user; do not add signature fruit, vessels, flowers, or devotional symbols by default.
+    - Keep the arrangement spare without changing object identity, count, or requested placement.
+    - Use a single readable light direction; retain enough shadow detail to keep forms and materials legible.
+pillars:
+  - Set a clear ground plane and separate each requested object with deliberate intervals and modest overlap.
+  - Use one focused lateral light to model volume and let shadow transitions describe each object's material.
+  - Keep the background and palette restrained so differences between the requested materials carry the visual emphasis.
+  - Reserve fine detail for object edges and texture changes; leave secondary areas quiet.
+rules:
+  - id: measured-object-spacing
+    axis: composition_and_spacing
+    importance: core
+    applies_when: The requested scene is a still life or a deliberately object-led composition.
+    instruction: Arrange only the requested objects on a simple, readable ground plane; preserve their count and defining placement, and use clear intervals or restrained overlap to keep each form individually legible.
+    observable: Object silhouettes can be distinguished at a glance and the negative space between them feels intentional.
+    reject_when: Extra signature props appear, objects merge accidentally, or the arrangement imitates a known painting.
+    evidence:
+      source_ids:
+        - zurbaran-prado-citrons
+        - zurbaran-prado-vessels
+      basis: institutional_description
+      visual_review: pending
+    avoid: default citrus, rose, metal plates, devotional objects, and copied source layout
+  - id: focused-lateral-light-and-shadow-detail
+    axis: lighting_and_volume
+    importance: core
+    applies_when: The user requests a quiet, materially descriptive still life.
+    instruction: Establish one focused lateral light direction, describe volume with clear but not crushed shadow shapes, and retain enough detail in darker passages to identify the requested forms.
+    observable: Light reveals object volume and leaves readable shadow structure without flattening the scene into a global dark filter.
+    reject_when: Multiple conflicting light sources appear, shadow loses all material detail, or dramatic spotlighting changes the requested mood.
+    evidence:
+      source_ids:
+        - zurbaran-prado-citrons
+        - zurbaran-met-southern-still-life
+      basis: institutional_description
+      visual_review: pending
+    avoid: pitch-black shadow masses, theatrical beams, and uniform vignette
+  - id: material-specific-surface-contrast
+    axis: material_and_surface
+    importance: supporting
+    applies_when: The scene contains two or more visually distinct requested materials.
+    instruction: Differentiate each requested material through its highlight shape, edge character, and small-scale surface cues while keeping the overall brushwork restrained.
+    observable: Ceramic, fabric, wood, metal, or fruit remain distinguishable without adding ornamental detail.
+    reject_when: Every object receives the same gloss, texture, or edge treatment, or detail density overwhelms the simple arrangement.
+    evidence:
+      source_ids:
+        - zurbaran-prado-citrons
+        - zurbaran-prado-vessels
+      basis: institutional_description
+      visual_review: pending
+    avoid: metallic shine on every surface, decorative excess, and photographic microtexture
+active_rule_ids:
+  - measured-object-spacing
+  - focused-lateral-light-and-shadow-detail
+  - material-specific-surface-contrast
+joint_checks:
+  - id: object-order-light-and-material-coherence
+    rule_ids:
+      - measured-object-spacing
+      - focused-lateral-light-and-shadow-detail
+      - material-specific-surface-contrast
+    instruction: Make the requested object's spacing, single light direction, and material distinctions support one calm, ordered still-life composition.
+    observable: The requested objects remain identifiable and count-correct; spacing is intentional, light is consistent, and materials are visually distinct.
+sources:
+  - id: zurbaran-prado-citrons
+    kind: museum_artwork_analysis
+    url: https://www.museodelprado.es/en/whats-on/exhibition/francisco-de-zurbaran-still-life-with-citrons/fcd85cd8-c1bf-0e1d-4593-b64b8540257a
+  - id: zurbaran-prado-vessels
+    kind: museum_artwork_analysis
+    url: https://www.museodelprado.es/en/whats-on/multimedia/still-life-with-vessels-zurbaran/928d34c8-ce8d-ec63-1d92-f193cf162f40
+  - id: zurbaran-met-southern-still-life
+    kind: museum_collection_essay
+    url: https://www.metmuseum.org/es/essays/still-life-painting-in-southern-europe-1600-1800
+execution:
+  route: text_only
+  must:
+    - Declare ordered-object-still-life before applying this direction.
+    - Preserve the user's requested object identities, count, placement, and setting.
+    - Keep object spacing and shadows readable under one consistent light direction.
+    - Distinguish requested materials without adding signature props or decorative excess.
+  avoid:
+    - adding citrus, a rose, metal plates, devotional objects, or other props without request
+    - copying a named painting's exact object selection, placement, crop, or background
+    - converting the scene to a global dark filter, banquet, or theatrical spotlight

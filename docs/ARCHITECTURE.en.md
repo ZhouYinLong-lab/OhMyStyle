@@ -181,6 +181,7 @@ the same prompt wording.
 | [Manet direct color and compressed scene](../style-packages/artists/edouard-manet/art-direction.yaml) | Adjacent color patches, deliberate spatial compression, selective contours and brushwork | `text_only`, declare `modern-life-color-plane` |
 | [Delacroix chromatic motion and brushwork](../style-packages/artists/eugene-delacroix/art-direction.yaml) | Warm-cool interaction, legible action vector, material-sensitive brush rhythm | `text_only`, declare `chromatic-dynamic-scene` |
 | [Bacon enclosed space and localized distortion](../style-packages/artists/francis-bacon/art-direction.yaml) | Frame-compressed space, localized contour shift, visible overpaint and scrape layers | `text_only`, declare `enclosed-figurative-tension` |
+| [Zurbarán ordered still life and focused side light](../style-packages/artists/francisco-de-zurbaran/art-direction.yaml) | Spacing of user-specified objects, single lateral light, restrained ground, and material distinction | `text_only`, declare `ordered-object-still-life` |
 
 ## 6. Execution routes
 

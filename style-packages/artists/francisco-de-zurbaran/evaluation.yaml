@@ -1,5 +1,15 @@
 package_id: francisco-de-zurbaran
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  ordered-object-still-life:
+    required:
+      - requested object identities and count stay unchanged
+      - spacing between requested objects remains deliberate and legible
+      - one consistent lateral light reveals volume and material
+    reject_if:
+      - unrequested citrus, rose, vessels, devotional imagery, or props appear
+      - the layout copies a named source painting
+      - shadows become unreadable or materials receive uniform surface treatment
 invariants:
 - id: style_recognition
   weight: 3

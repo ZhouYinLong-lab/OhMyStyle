@@ -1,6 +1,6 @@
 package_id: francisco-de-zurbaran
-package_version: 0.1.0
-curation_status: reference_backed_link_only
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
 sources:
@@ -9,6 +9,21 @@ sources:
   title: Francisco de Zurbarán collection
   supports: source traceability and observable package scope
   accessed: '2026-08-07'
+- url: https://www.museodelprado.es/en/whats-on/exhibition/francisco-de-zurbaran-still-life-with-citrons/fcd85cd8-c1bf-0e1d-4593-b64b8540257a
+  authority: Museo Nacional del Prado
+  title: "Francisco de Zurbarán: Still Life with Citrons, Oranges and a Rose"
+  supports: measured object arrangement, focused lateral light, individual object presence, and descriptive texture
+  accessed: '2026-10-19'
+- url: https://www.museodelprado.es/en/whats-on/multimedia/still-life-with-vessels-zurbaran/928d34c8-ce8d-ec63-1d92-f193cf162f40
+  authority: Museo Nacional del Prado
+  title: "Still Life with Vessels: accessible artwork guide"
+  supports: deliberate attention to distinct object materials and restrained composition
+  accessed: '2026-10-19'
+- url: https://www.metmuseum.org/es/essays/still-life-painting-in-southern-europe-1600-1800
+  authority: The Metropolitan Museum of Art
+  title: "Still-Life Painting in Southern Europe, 1600–1800"
+  supports: naturalistic handling, reduced compositions, and chiaroscuro in Zurbarán's still lifes
+  accessed: '2026-10-19'
 attribution: This package studies observable visual decisions associated with Francisco
   de Zurbarán; it does not reproduce a named work, character, location, logo, text,
   or exact composition.

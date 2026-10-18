@@ -34,6 +34,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：静物秩序与聚焦侧光（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `ordered-object-still-life` 时启用。它围绕用户指定的物件组织留白，以单一侧光呈现体积和材质差异；不会默认添加柑橘、玫瑰、器皿或宗教意象。
+
+这不同于卡拉瓦乔方向用强烈明暗对照组织近景人物和戏剧性动作，也不同于培根方向通过空间框架与轮廓偏移制造张力。苏巴朗方向关注的是稀疏物件之间的秩序、静态侧光及材质辨析。
+
+```powershell
+python tools/compile-style.py style-packages/artists/francisco-de-zurbaran --direction package --context ordered-object-still-life --subject "One blue ceramic teapot and a folded linen cloth on a plain wooden table"
+```
+
+可查看 [`comparisons/`](comparisons/) 中的旧版/新版编译提示词和示意图。该方向仍为实验规则，示意图不是实际模型渲染结果。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

@@ -43,6 +43,18 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: ordered still life and focused side light (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when `ordered-object-still-life` is explicitly declared. It organizes negative space around user-specified objects and uses one lateral light to describe volume and material. It does not add citrus, roses, vessels, or devotional imagery by default.
+
+This differs from Caravaggio's direction, which uses strong chiaroscuro for close figures and dramatic action, and Bacon's direction, which builds tension through spatial framing and contour shifts. Zurbarán's direction focuses on order among sparse objects, still lateral light, and material distinction.
+
+```powershell
+python tools/compile-style.py style-packages/artists/francisco-de-zurbaran --direction package --context ordered-object-still-life --subject "One blue ceramic teapot and a folded linen cloth on a plain wooden table"
+```
+
+See [`comparisons/`](comparisons/) for legacy/new compiled prompts and an illustrative image. The direction remains experimental; the image is not a model render from those jobs.
+
 ## Use only this package
 
 Choose one of the following methods.
