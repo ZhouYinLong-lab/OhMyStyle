@@ -1,5 +1,5 @@
 package_id: edward-hopper
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_backed_link_only
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
@@ -9,5 +9,25 @@ sources:
   title: Edward Hopper artist page
   supports: source traceability and observable package scope
   accessed: '2026-08-07'
+- url: https://whitney.org/collection/works/46345
+  authority: Whitney Museum of American Art
+  title: Edward Hopper, Early Sunday Morning
+  supports: geometric reduction, strong directional sunlight, long shadows, and the mood produced by empty urban space
+  accessed: 2026-10-19
+- url: https://archive.artic.edu/hopper/overview/
+  authority: Art Institute of Chicago
+  title: Edward Hopper exhibition overview
+  supports: architectural geometry, color organized by light and shadow, and understated drama
+  accessed: 2026-10-19
+- url: https://whitney.org/education/blog/notes-for-a-painting
+  authority: Whitney Museum of American Art
+  title: 'Hopper Drawing: Notes For A Painting'
+  supports: preparatory notes on warm and cool colors and which architectural planes are in shadow
+  accessed: 2026-10-19
+- url: https://whitney.org/education/schools-educators/k-12/teaching-materials/teacher-guides/hopper-new-york/reality-fantasy
+  authority: Whitney Museum of American Art
+  title: Reality and Fantasy
+  supports: restrained visual detail, spatial distance, and quiet dramatic mood
+  accessed: 2026-10-19
 attribution: Works by Edward Hopper remain protected where applicable; this package
   abstracts framing and light without copying a named work.

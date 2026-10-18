@@ -282,7 +282,7 @@ packages:
   - palette
   - surface
   - texture
-  reference_count: 1
+  reference_count: 5
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true

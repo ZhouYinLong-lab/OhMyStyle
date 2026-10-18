@@ -57,6 +57,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [严格 ASCII 网格](../../style-packages/game-art/ascii-character-game-art/art-direction.yaml) | 全部场景形状由真实字符构成 | deterministic_grid | 无 |
 | [梵高方向性笔触](../../style-packages/artists/vincent-van-gogh/art-direction.yaml) | 分表面笔触、局部冷暖色关系和颜料厚度 | text_only | 无 |
 | [莫兰迪静谧色阶](../../style-packages/artists/giorgio-morandi/art-direction.yaml) | 近似明度、器物间距、浅空间和选择性软边 | text_only | 无 |
+| [霍普建筑光影](../../style-packages/artists/edward-hopper/art-direction.yaml) | 几何建筑、单一光源投影和空间距离 | text_only | 无 |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

@@ -69,3 +69,13 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 `evaluation.yaml` 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 新架构：建筑光影与空间距离（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 把霍普方向拆为日常建筑的大色面、单一光源形成的投影几何，以及人物和空间之间的克制距离。静默感由取景、门窗、空墙和影子共同产生，不默认添加餐馆、灯塔或窗边独坐者。该方向仍待跨题材视觉评审；旧包和默认 Prompt 保持原样。
+
+```powershell
+python tools/compile-style.py style-packages/artists/edward-hopper --direction package --subject "A closed neighborhood bakery at noon, with a bicycle leaning outside" --output runs/style-v2/hopper-job.json
+```
+
+编译只生成待提交给生图工具的任务，不会自动调用模型。惠特尼与芝加哥艺术博物馆的资料支持本方向对几何建筑、方向日光、投影及克制叙事的观察。

@@ -2,7 +2,7 @@ id: edward-hopper
 name: 爱德华·霍普
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: 以现代城市和海岸生活中的简化建筑、孤立人物、强烈窗光与克制色彩构成悬置的日常场景，强调观看距离和心理空间。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist

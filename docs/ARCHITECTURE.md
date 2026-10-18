@@ -166,6 +166,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [严格 ASCII 网格](../style-packages/game-art/ascii-character-game-art/art-direction.yaml) | 真实字符、统一单元格、密度与留白 | `deterministic_grid` |
 | [梵高方向性笔触](../style-packages/artists/vincent-van-gogh/art-direction.yaml) | 随形笔触、局部冷暖关系、可见厚涂 | `text_only` |
 | [莫兰迪静谧色阶](../style-packages/artists/giorgio-morandi/art-direction.yaml) | 近似明度、克制间距、浅空间与选择性软边 | `text_only` |
+| [霍普建筑光影](../style-packages/artists/edward-hopper/art-direction.yaml) | 日常建筑平面、方向投影与空间距离 | `text_only` |
 
 ## 6. 从主体请求到结果
 

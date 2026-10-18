@@ -1,0 +1,99 @@
+schema_version: 2.0.0
+status: experimental
+id: hopper-geometric-light-and-distance
+name: Hopper geometric light and distance
+base_package: artists/edward-hopper
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: Translate Hopper's simplified everyday architecture, directional light, cast-shadow geometry, and deliberate interpersonal or spatial distance into an original scene.
+  required_contexts: []
+  incompatible_contexts:
+    - diffuse-global-glow
+    - theatrical-expressionist-distortion
+  limitations:
+    - Follow the requested subject and setting; do not default to a diner, lighthouse, empty storefront, or solitary woman at a window.
+    - Quiet tension should come from the arrangement of people, openings, and light rather than exaggerated facial emotion or a copied cinematic frame.
+pillars:
+  - Reduce architecture and ordinary spaces to clear, large planes and a deliberate viewpoint.
+  - Let a single directional light source carve readable shapes across walls, floors, and objects.
+  - Use distance, thresholds, and withheld detail to hold a scene in quiet suspension.
+rules:
+  - id: architectural-plane-composition
+    axis: composition
+    importance: core
+    applies_when: always
+    instruction: Organize the requested place with a stable arrangement of horizontals, verticals, openings, and a clear viewpoint; simplify incidental detail while retaining plausible everyday architecture.
+    observable: Large structural planes read immediately, and windows, doors, streets, or room boundaries define the space rather than decorate it.
+    reject_when: The architecture dissolves into a generic cinematic backdrop or becomes an exact reconstruction of a known setting.
+    evidence:
+      source_ids:
+        - hopper-whitney-early-sunday-morning
+        - hopper-artic-overview
+      basis: institutional_description
+      visual_review: pending
+    avoid: ornamental architecture and cinematic establishing-shot clichés
+  - id: directional-light-shadow-geometry
+    axis: lighting
+    importance: core
+    applies_when: always
+    instruction: Choose one clear daylight or window-light direction and make its illuminated planes and cast shadows agree across the scene; keep warm and cool colors attached to lit and shaded surfaces.
+    observable: Shadow edges reveal the light direction, and distinct color temperatures preserve form without a golden wash.
+    reject_when: Shadows point in conflicting directions, or a global warm filter replaces painted light and color.
+    evidence:
+      source_ids:
+        - hopper-whitney-early-sunday-morning
+        - hopper-whitney-light-color-study
+      basis: institutional_description
+      visual_review: pending
+    avoid: global golden haze and inconsistent shadow directions
+  - id: quiet-distance-and-selective-detail
+    axis: narrative
+    importance: supporting
+    applies_when: The scene includes people, thresholds, or visible signs of recent human activity.
+    instruction: Express stillness through spacing, orientation, barriers, and restrained detail; imply human presence without forcing a dramatic gesture.
+    observable: The viewer can read the relationship or separation between figure and place even when faces and small objects remain understated.
+    reject_when: Exaggerated expressions or extra narrative props explain a mood that the composition should carry.
+    evidence:
+      source_ids:
+        - hopper-whitney-early-sunday-morning
+        - hopper-whitney-reality-fantasy
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: melodramatic expressions and unnecessary story props
+active_rule_ids:
+  - architectural-plane-composition
+  - directional-light-shadow-geometry
+  - quiet-distance-and-selective-detail
+joint_checks:
+  - id: space-light-distance-coherence
+    rule_ids:
+      - architectural-plane-composition
+      - directional-light-shadow-geometry
+      - quiet-distance-and-selective-detail
+    instruction: Make architecture, light direction, and human distance reinforce the same suspended moment without turning it into a film still or copying a known work.
+    observable: The scene reads as a specific everyday place, its shadows agree with one light source, and its stillness comes from spatial relationships.
+sources:
+  - id: hopper-whitney-early-sunday-morning
+    kind: museum_object_description
+    url: https://whitney.org/collection/works/46345
+  - id: hopper-artic-overview
+    kind: museum_essay
+    url: https://archive.artic.edu/hopper/overview/
+  - id: hopper-whitney-light-color-study
+    kind: museum_education_description
+    url: https://whitney.org/education/blog/notes-for-a-painting
+  - id: hopper-whitney-reality-fantasy
+    kind: museum_education_description
+    url: https://whitney.org/education/schools-educators/k-12/teaching-materials/teacher-guides/hopper-new-york/reality-fantasy
+execution:
+  route: text_only
+  must:
+    - Preserve the user's requested subject, setting, count, and layout.
+    - Keep architecture legible through large planes and a consistent viewpoint.
+    - Use a coherent light direction and matching cast shadows.
+    - Leave quiet intervals and withheld detail where they strengthen spatial distance.
+  avoid:
+    - copying a named Hopper composition, location, or recognizable arrangement
+    - default diners, lighthouses, storefronts, or solitary figures at windows
+    - film-grain overlays, dramatic lens effects, or generic sepia grading
