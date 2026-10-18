@@ -73,3 +73,13 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 `evaluation.yaml` 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 新架构：静谧色阶与器物间距（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 将莫兰迪方向限定在近似明度色阶、克制的横向间距、浅景深和选择性软边。它不要求每个题目都画瓶罐；生成新题材时仍以用户提供的主体为准。该方向尚未完成跨题材评审，默认包和旧 Prompt 保持不变。
+
+```powershell
+python tools/compile-style.py style-packages/artists/giorgio-morandi --direction package --subject "Three folded towels and a small wooden tray on a shelf" --output runs/style-v2/morandi-job.json
+```
+
+编译任务不会自动调用生图服务。Casa Museo Morandi、梵蒂冈博物馆和 MoMA 的馆藏说明支持本方向对微妙色彩/空间变化、器物分组和调性构成的观察。

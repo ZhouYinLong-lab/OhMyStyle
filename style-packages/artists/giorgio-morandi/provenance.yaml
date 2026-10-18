@@ -1,5 +1,5 @@
 package_id: giorgio-morandi
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
@@ -7,6 +7,21 @@ sources:
     title: 'Giorgio Morandi | MoMA'
     authority: 'The Museum of Modern Art'
     supports: source traceability and package scope
+  - url: https://casamuseomorandi.it/en/lo-studio-dellartista/
+    title: 'Casa Museo Morandi: The artist''s studio'
+    authority: Casa Museo Morandi
+    supports: subtle chromatic and spatial variations as the artist's recurring study
+    accessed: 2026-10-19
+  - url: https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/collezione-d_arte_contemporanea/sala-20--giorgio-morandi/sala-20--giorgio-morandi.html
+    title: 'Vatican Museums: Room 20, Giorgio Morandi'
+    authority: Vatican Museums
+    supports: simple objects selected and grouped as the principal figures in still-life compositions
+    accessed: 2026-10-19
+  - url: https://www.moma.org/collection/works/61744
+    title: 'MoMA: Large Still Life with Coffeepot'
+    authority: The Museum of Modern Art
+    supports: carefully modulated tonalities and architectonic composition
+    accessed: 2026-10-19
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

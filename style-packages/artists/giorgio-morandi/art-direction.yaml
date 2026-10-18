@@ -1,0 +1,93 @@
+schema_version: 2.0.0
+status: experimental
+id: morandi-quiet-tonal-still-life
+name: Morandi quiet tonal still life
+base_package: artists/giorgio-morandi
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: Translate Morandi's measured spacing, close tonal relationships, and restrained spatial stillness into new subjects without making bottles or any specific arrangement mandatory.
+  required_contexts: []
+  incompatible_contexts:
+    - high-contrast-theatrical-lighting
+    - glossy-photoreal-render
+  limitations:
+    - Follow the user's requested subject; do not add bottles or ceramic vessels as default motifs.
+    - Low contrast must not flatten object boundaries or remove the focal hierarchy.
+pillars:
+  - Use small spacing and height changes to create quiet visual rhythm.
+  - Let close-value colors separate forms through contour, overlap, and temperature.
+  - Keep light broad and calm, with a few resolved edges inside a mostly softened contour system.
+rules:
+  - id: measured-intervals-and-compressed-depth
+    axis: composition
+    importance: core
+    applies_when: always
+    instruction: Arrange the requested forms in a compact, stable field with deliberate gaps, near-contacts, and small shifts in height; compress depth without turning the arrangement into a decorative product display.
+    observable: Silhouettes and intervals remain distinct, while overlaps and shallow depth create a quiet horizontal rhythm.
+    reject_when: Objects are evenly spaced like a catalog, or gaps collapse into an unreadable cluster.
+    evidence:
+      source_ids:
+        - morandi-casa-museum-studio
+        - morandi-vatican-still-life
+      basis: institutional_description
+      visual_review: pending
+    avoid: catalog-like spacing and deep theatrical perspective
+  - id: close-value-chromatic-modeling
+    axis: palette
+    importance: core
+    applies_when: always
+    instruction: Model form with closely related chalky grays, muted rose, smoke blue, ochre, and olive; use small temperature shifts and soft light changes instead of large value jumps.
+    observable: Adjacent forms stay close in value but remain separable through temperature, contour, overlap, and selective shadow.
+    reject_when: A monochrome gray wash erases object differences, or saturated accents dominate the arrangement.
+    evidence:
+      source_ids:
+        - morandi-casa-museum-studio
+        - morandi-moma-tonalities
+      basis: institutional_description
+      visual_review: pending
+    avoid: global sepia or gray filters and bright accent colors
+  - id: quiet-edge-and-matte-surface
+    axis: surface
+    importance: supporting
+    applies_when: always
+    instruction: Keep most contours softened, resolve only selected edges, and use a dry matte paint surface with quiet shadow transitions.
+    observable: A few contours anchor the grouping while other edges merge gently with neighboring tones or the background.
+    reject_when: Every edge is uniformly sharp, glossy, outlined, or blurred.
+    evidence:
+      source_ids:
+        - morandi-casa-museum-studio
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: uniform sharp outlines, metallic gloss, and global blur
+active_rule_ids:
+  - measured-intervals-and-compressed-depth
+  - close-value-chromatic-modeling
+  - quiet-edge-and-matte-surface
+joint_checks:
+  - id: spacing-tone-edge-coherence
+    rule_ids:
+      - measured-intervals-and-compressed-depth
+      - close-value-chromatic-modeling
+      - quiet-edge-and-matte-surface
+    instruction: Let measured spacing, close-value colors, and selective edges preserve both quietness and legibility.
+    observable: The arrangement feels still without flattening; each important form remains readable through small tonal and edge differences.
+sources:
+  - id: morandi-casa-museum-studio
+    kind: institutional_description
+    url: https://casamuseomorandi.it/en/lo-studio-dellartista/
+  - id: morandi-vatican-still-life
+    kind: institutional_description
+    url: https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/collezione-d_arte-contemporanea/sala-20--giorgio-morandi/sala-20--giorgio-morandi.html
+  - id: morandi-moma-tonalities
+    kind: institutional_description
+    url: https://www.moma.org/collection/works/61744
+execution:
+  route: text_only
+  must:
+    - Preserve the requested subject and count.
+    - Build separation from close tonal and spatial relationships rather than hard contrast.
+    - Keep matte paint and restrained light visible.
+  avoid:
+    - inserting bottles, vases, or a known Morandi composition unless requested
+    - dramatic spotlights, deep perspective, glossy 3D rendering, or saturated decorative accents

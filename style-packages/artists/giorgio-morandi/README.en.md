@@ -95,3 +95,13 @@ and lighting. Review the output against `evaluation.yaml`.
 Users manage model weights, API keys, and generated images themselves. References
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
+
+## New architecture: quiet tonality and measured spacing (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) scopes the direction to close-value colors, restrained horizontal intervals, shallow depth, and selective soft edges. It does not require bottles in every prompt; preserve the user's subject. Cross-subject review is still pending, and the legacy package prompt remains the default.
+
+```powershell
+python tools/compile-style.py style-packages/artists/giorgio-morandi --direction package --subject "Three folded towels and a small wooden tray on a shelf" --output runs/style-v2/morandi-job.json
+```
+
+Compilation does not call an image-generation service. Casa Museo Morandi, the Vatican Museums, and MoMA collection descriptions support the observations about subtle color and spatial variation, grouped objects, and modulated tonality.

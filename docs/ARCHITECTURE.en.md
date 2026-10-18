@@ -151,6 +151,7 @@ the same prompt wording.
 | [Bauhaus paper method](../style-packages/schools/bauhaus/art-direction.yaml) | Cutting, tearing, folding, supports, openings, shadows | `text_only`, declare `paper-study` |
 | [Literal ASCII grid](../style-packages/game-art/ascii-character-game-art/art-direction.yaml) | Real glyphs, fixed cells, density, negative space | `deterministic_grid` |
 | [Van Gogh directional strokes](../style-packages/artists/vincent-van-gogh/art-direction.yaml) | Surface-following marks, local cool-warm relationships, visible impasto | `text_only` |
+| [Morandi quiet tonality](../style-packages/artists/giorgio-morandi/art-direction.yaml) | Close values, measured intervals, shallow space, selective soft edges | `text_only` |
 
 ## 6. Execution routes
 
