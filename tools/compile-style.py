@@ -18,10 +18,12 @@ def main() -> None:
     parser.add_argument("--profile", choices=("generic", "weak"), default="generic")
     parser.add_argument("--model", default="provider-neutral")
     parser.add_argument("--var", action="append", default=[], metavar="KEY=VALUE", help="Fill a package prompt variable; repeatable")
+    parser.add_argument("--direction", type=Path, help="Explicit experimental art-direction file or directory")
+    parser.add_argument("--context", action="append", default=[], help="Declare a direction context, e.g. daylight; repeatable")
     parser.add_argument(
         "--references",
-        choices=("palette", "details", "primary", "all"),
-        default="palette",
+        choices=("none", "palette", "details", "primary", "all"),
+        default=None,
     )
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
@@ -31,15 +33,20 @@ def main() -> None:
             parser.error(f"--var must use KEY=VALUE: {assignment}")
         key, value = assignment.split("=", 1)
         variables[key.strip()] = value
-    job = compile_job(
-        args.package,
-        args.subject,
-        pair_id=args.pair_id,
-        profile=args.profile,
-        reference_set=args.references,
-        model=args.model,
-        variables=variables,
-    )
+    try:
+        job = compile_job(
+            args.package,
+            args.subject,
+            pair_id=args.pair_id,
+            profile=args.profile,
+            reference_set=args.references or ("none" if args.direction else "palette"),
+            model=args.model,
+            variables=variables,
+            direction_path=args.direction,
+            direction_contexts=args.context,
+        )
+    except (OSError, ValueError) as error:
+        parser.error(str(error))
     rendered = json.dumps(job, ensure_ascii=False, indent=2) + "\n"
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experimental OhMyStyle art direction",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "status", "id", "name", "base_package", "scope", "pillars", "rules", "active_rule_ids", "joint_checks", "sources", "execution"],
+  "properties": {
+    "schema_version": {"const": "2.0.0"},
+    "status": {"const": "experimental"},
+    "id": {"$ref": "#/$defs/id"},
+    "name": {"type": "string", "minLength": 1},
+    "base_package": {"type": "string", "pattern": "^[a-z-]+/[a-z0-9-]+$"},
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["medium", "representation", "description", "required_contexts", "incompatible_contexts", "limitations"],
+      "properties": {
+        "medium": {"type": "string", "minLength": 1},
+        "representation": {"enum": ["recognizable", "stylized", "abstract_interpretation", "nonfigurative"]},
+        "description": {"type": "string", "minLength": 1},
+        "required_contexts": {"$ref": "#/$defs/ids"},
+        "incompatible_contexts": {"$ref": "#/$defs/ids"},
+        "limitations": {"$ref": "#/$defs/strings"}
+      }
+    },
+    "pillars": {"$ref": "#/$defs/strings"},
+    "rules": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "axis", "importance", "applies_when", "instruction", "observable", "reject_when", "evidence"],
+        "properties": {
+          "id": {"$ref": "#/$defs/id"},
+          "axis": {"type": "string", "minLength": 1},
+          "importance": {"enum": ["core", "supporting", "optional"]},
+          "applies_when": {"type": "string", "minLength": 1},
+          "instruction": {"type": "string", "minLength": 1},
+          "observable": {"type": "string", "minLength": 1},
+          "reject_when": {"type": "string", "minLength": 1},
+          "avoid": {"type": "string", "minLength": 1},
+          "evidence": {
+            "type": "object", "additionalProperties": false,
+            "required": ["source_ids", "basis", "visual_review"],
+            "properties": {
+              "source_ids": {"$ref": "#/$defs/ids"},
+              "basis": {"enum": ["institutional_description", "direct_visual_observation", "curatorial_inference", "original_design_intent"]},
+              "visual_review": {"enum": ["pending", "reviewed"]}
+            }
+          }
+        }
+      }
+    },
+    "active_rule_ids": {"$ref": "#/$defs/ids"},
+    "joint_checks": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "rule_ids", "instruction", "observable"],
+        "properties": {
+          "id": {"$ref": "#/$defs/id"},
+          "rule_ids": {"$ref": "#/$defs/ids"},
+          "instruction": {"type": "string", "minLength": 1},
+          "observable": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "sources": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "kind"],
+        "oneOf": [
+          {"required": ["base_asset_id"]},
+          {"required": ["url"]},
+          {"required": ["local_path"]},
+          {"required": ["text"]}
+        ],
+        "properties": {
+          "id": {"$ref": "#/$defs/id"},
+          "kind": {"type": "string", "minLength": 1},
+          "base_asset_id": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "pattern": "^https?://"},
+          "local_path": {"type": "string", "minLength": 1},
+          "text": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "execution": {
+      "type": "object", "additionalProperties": false,
+      "required": ["route", "must", "avoid"],
+      "properties": {
+        "route": {"enum": ["text_only", "deterministic_grid"]},
+        "must": {"$ref": "#/$defs/strings"},
+        "avoid": {"$ref": "#/$defs/strings"},
+        "grid": {"$ref": "#/$defs/grid"}
+      },
+      "allOf": [
+        {"if": {"properties": {"route": {"const": "deterministic_grid"}}}, "then": {"required": ["grid"]}},
+        {"if": {"properties": {"route": {"const": "text_only"}}}, "then": {"not": {"required": ["grid"]}}}
+      ]
+    }
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+    "strings": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "grid": {
+      "type": "object", "additionalProperties": false,
+      "required": ["columns", "rows", "width", "height", "margin", "font_size", "foreground", "background", "glyph_colors"],
+      "properties": {
+        "columns": {"type": "integer", "minimum": 1, "maximum": 200},
+        "rows": {"type": "integer", "minimum": 1, "maximum": 120},
+        "width": {"type": "integer", "minimum": 32, "maximum": 4096},
+        "height": {"type": "integer", "minimum": 32, "maximum": 4096},
+        "margin": {"type": "integer", "minimum": 0, "maximum": 1024},
+        "font_size": {"type": "integer", "minimum": 1, "maximum": 256},
+        "foreground": {"$ref": "#/$defs/color"},
+        "background": {"$ref": "#/$defs/color"},
+        "glyph_colors": {"type": "object", "additionalProperties": {"$ref": "#/$defs/color"}, "propertyNames": {"pattern": "^[ -~]$"}}
+      }
+    },
+    "color": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"}
+  }
+}

@@ -220,8 +220,20 @@ def compile_job(
     reference_set: str = "palette",
     model: str = "provider-neutral",
     variables: dict[str, str] | None = None,
+    direction_path: Path | None = None,
+    direction_contexts: list[str] | None = None,
 ) -> dict[str, Any]:
     runtime = load_package(package_path)
+    if direction_path is not None:
+        from art_direction_runtime import compile_direction_job
+
+        return compile_direction_job(
+            runtime, direction_path, subject, contexts=direction_contexts,
+            reference_set=reference_set, pair_id=pair_id, model=model,
+            profile=profile, variables=variables,
+        )
+    if direction_contexts:
+        raise ValueError("direction_contexts requires an explicit direction_path")
     package = runtime["package"]
     pair = choose_pair(runtime, pair_id)
     references = select_references(runtime, pair, reference_set)
