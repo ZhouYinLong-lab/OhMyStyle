@@ -35,3 +35,13 @@ The reference manifest links to collection records from The Metropolitan Museum 
 Give the full directory to an image-capable agent, or read `prompts/base.txt` and replace `{SUBJECT}` and `{LOCATION}`. Submit `prompts/negative.txt` alongside it. After generation, use `evaluation.yaml` to review subject legibility, brushwork, light, and color. The rules can also be used with your own API or local-model workflow; this repository does not host an image service or API keys.
 
 The representative image and sample are currently pending human review. Do not present them as works by Morisot or use them to reconstruct a specific painting in the reference list.
+
+## New architecture: gesture-led brushwork and open edges (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) lets strokes follow a figure's turn, the fall of cloth, and nearby forms. It keeps facial and hand anchors readable while selectively releasing contours and leaving parts of the ground visible. The direction focuses on how marks describe movement, where edges stop, and how the canvas keeps breathing room. Monet's direction centers on a specified moment's weather and light-color conditions and mark-making by surface; Morisot's direction does not assume weather effects or landscape series.
+
+```powershell
+python tools/compile-style.py style-packages/artists/berthe-morisot --direction package --context open-brush-figure-painting --subject "A person turning while holding a loose white scarf beside an open window" --output runs/style-v2/berthe-morisot-job.json
+```
+
+This direction remains experimental; same-subject comparisons and stability across subjects still need human review.

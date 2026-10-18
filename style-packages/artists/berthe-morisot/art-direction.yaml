@@ -1,0 +1,107 @@
+schema_version: 2.0.0
+status: experimental
+id: morisot-gesture-and-open-edge-painting
+name: Morisot gesture and open-edge painting
+base_package: artists/berthe-morisot
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    A figure-centered painting direction in which quick grouped strokes carry
+    gesture and cloth, selected contours remain unresolved, and light ground
+    stays visible at margins. It treats incompletion as an intentional edge
+    decision, not a soft-focus effect or generalized weather atmosphere.
+  required_contexts:
+    - open-brush-figure-painting
+  incompatible_contexts:
+    - closed-academic-contour
+    - photorealistic-rendering
+    - all-over-soft-focus
+  limitations:
+    - Preserve requested identities, activity, setting, and figure count; do not add a period costume, family relation, garden, or domestic prop unless requested.
+    - Keep the face, hands, and other user-designated focal details readable while loosening selected boundaries.
+    - Use quick brush marks to describe the requested form and gesture; do not turn every surface into identical broken color or add weather effects without request.
+pillars:
+  - Let grouped, quick strokes follow the gesture of a figure or the direction of cloth and nearby forms.
+  - Resolve important facial, hand, and structural anchors while allowing selected edges to merge with adjacent color.
+  - Leave some margins or secondary passages lightly worked so the ground participates in the finished image.
+  - Keep light and palette high-key through local relationships, not a global pastel overlay.
+rules:
+  - id: gesture-led-stroke-bundles
+    axis: mark_making
+    importance: core
+    applies_when: The requested subject includes a figure, fabric, or a visible change of pose.
+    instruction: Group quick, varied strokes along the figure's turn, the fall of cloth, or the angle of nearby forms; change direction and scale with the subject instead of distributing uniform dabs over every surface.
+    observable: Brushwork conveys movement and material while the requested pose remains legible.
+    reject_when: All surfaces use identical marks, or loose strokes erase the action and anatomy.
+    evidence:
+      source_ids:
+        - morisot-national-gallery-divan
+        - morisot-national-gallery-profile
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform stippling, repeated short dabs, and unrelated texture
+  - id: anchor-and-release-contours
+    axis: edges_and_subject_legibility
+    importance: core
+    applies_when: A subject sits against a light or brushworked surrounding field.
+    instruction: Keep a few high-value anchors crisp enough to identify the requested subject, then release selected contours into adjacent colors or visible ground; make each softened edge a deliberate local choice.
+    observable: The image alternates readable anchors with open edges, so the subject feels present in its surroundings without becoming blurred.
+    reject_when: Every contour is closed and equally sharp, or the entire image is uniformly out of focus.
+    evidence:
+      source_ids:
+        - morisot-orsay-profile
+        - morisot-national-gallery-divan
+      basis: institutional_description
+      visual_review: pending
+    avoid: universal blur, complete outline tracing, and lost focal features
+  - id: visible-ground-and-open-margin
+    axis: surface_and_composition
+    importance: core
+    applies_when: The composition allows a light ground or quiet margin around its main subject.
+    instruction: Leave selected corners, margins, or secondary planes sparse enough for the light ground to show through; let the degree of finish vary across the image while keeping the main subject structurally sound.
+    observable: Open passages feel intentionally related to the subject and brushwork, not like an unfinished crop or missing background.
+    reject_when: Every region is filled to the edge with equal detail, or exposed ground interrupts a critical contour or requested object.
+    evidence:
+      source_ids:
+        - morisot-orsay-profile
+        - morisot-nga-artist-page
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform edge-to-edge finish, arbitrary blank holes, and decorative frames
+active_rule_ids:
+  - gesture-led-stroke-bundles
+  - anchor-and-release-contours
+  - visible-ground-and-open-margin
+joint_checks:
+  - id: gesture-edge-ground-coherence
+    rule_ids:
+      - gesture-led-stroke-bundles
+      - anchor-and-release-contours
+      - visible-ground-and-open-margin
+    instruction: Let gesture-led marks, selectively resolved edges, and open ground work together to describe a freshly observed subject without relying on a weather effect or pastel filter.
+    observable: The focal pose is legible, brushwork follows its movement, and selected passages remain open without making the whole image vague.
+sources:
+  - id: morisot-national-gallery-divan
+    kind: museum_object_description
+    url: https://www.nationalgallery.org.uk/paintings/berthe-morisot-girl-on-a-divan
+  - id: morisot-national-gallery-profile
+    kind: museum_artist_profile
+    url: https://www.nationalgallery.org.uk/artists/berthe-morisot
+  - id: morisot-orsay-profile
+    kind: museum_artist_profile
+    url: https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/berthe-morisot-1841-1895
+  - id: morisot-nga-artist-page
+    kind: museum_artist_profile
+    url: https://www.nga.gov/artists/1733-berthe-morisot
+execution:
+  route: text_only
+  must:
+    - Declare the open-brush-figure-painting context before applying this direction.
+    - Preserve the requested subject, pose, setting, and count.
+    - Use varied strokes that follow gesture or form.
+    - Keep focal anchors readable while leaving selected edges and margins open.
+  avoid:
+    - applying a global pastel wash or uniform blur
+    - adding unrequested family, period, garden, or decorative motifs
+    - finishing every region with the same detail density

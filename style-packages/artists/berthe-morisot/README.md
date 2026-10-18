@@ -35,3 +35,13 @@
 把整个目录交给有生图能力的 Agent，或读取 `prompts/base.txt` 并替换 `{SUBJECT}` 与 `{LOCATION}`。将 `prompts/negative.txt` 一并提交；生成后按照 `evaluation.yaml` 检查主体可读性、笔触、光线和色彩。也可以在自己的 API 或本地模型工作流中使用这些规则；本仓库不托管生图服务或 API Key。
 
 代表图及样例当前标为待人工审核。不要把它们称作莫里索的作品，也不要用它们重建参考清单中的具体画作。
+
+## 新架构：手势笔触与开放边缘（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 让笔触跟随人物转身、衣料走势和邻近形体；在面部、手部等关键锚点保持可读的同时，选择性放开边缘，并让部分画布底色留在画面里。它针对的是笔触如何表现动作、边缘如何停笔和画布如何留气口；莫奈方向更侧重某一时刻的天气、光色条件和不同表面的笔触组织，莫里索方向不默认天气效果或风景系列。
+
+```powershell
+python tools/compile-style.py style-packages/artists/berthe-morisot --direction package --context open-brush-figure-painting --subject "A person turning while holding a loose white scarf beside an open window" --output runs/style-v2/berthe-morisot-job.json
+```
+
+此方向仍为实验规则；同题生图对照与跨主体稳定性待人工评审。

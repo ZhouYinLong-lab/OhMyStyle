@@ -1,5 +1,5 @@
 package_id: berthe-morisot
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_backed_link_only
 source_policy: External artworks are recorded as links for research and visual analysis only; no source artwork is bundled or redistributed.
 sources:
@@ -18,6 +18,21 @@ sources:
     title: Berthe Morisot artist page
     supports: Descriptive visual records across portraits, interiors, and landscapes.
     accessed: '2026-10-17'
+  - url: https://www.nationalgallery.org.uk/paintings/berthe-morisot-girl-on-a-divan
+    authority: The National Gallery, London
+    title: Girl on a Divan
+    supports: Quick brushstrokes describing fabric, lightly painted hair merging into background, and a relaxed turning pose
+    accessed: '2026-10-19'
+  - url: https://www.nationalgallery.org.uk/artists/berthe-morisot
+    authority: The National Gallery, London
+    title: Berthe Morisot artist profile
+    supports: Rapid brushstroke technique and soft pastel range as distinct from academic Rococo finish
+    accessed: '2026-10-19'
+  - url: https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/berthe-morisot-1841-1895
+    authority: Musée d'Orsay
+    title: Berthe Morisot (1841-1895)
+    supports: Sketchy immediacy, sparse or blank margins, visible ground, and variable completion
+    accessed: '2026-10-19'
 attribution: This package abstracts observable visual traits for new subjects and is not affiliated with, endorsed by, or an exact imitation of Berthe Morisot.
 rights_notes:
   - External artwork and collection photography are not included; consult each institution's rights statement before reuse.

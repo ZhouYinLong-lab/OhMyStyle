@@ -2,7 +2,7 @@ id: berthe-morisot
 name: 贝尔特·莫里索
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: 以高明度色调、迅疾松动的笔触、开放的边缘和流动日光组织画面，让人物与环境在轻盈的色块中相互渗透。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: painting
