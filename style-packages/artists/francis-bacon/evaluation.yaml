@@ -1,3 +1,15 @@
+package_id: francis-bacon
+package_version: 0.2.0
+profiles:
+  enclosed-figurative-tension:
+    required:
+    - requested subject stays identifiable and unchanged
+    - a simple spatial cue compresses or focuses the scene
+    - contour shifts and paint disturbance remain selective
+    reject_if:
+    - unrequested violence, screaming, cross, arena, or meat imagery appears
+    - identity or count changes under distortion
+    - generic glitch or grunge filter replaces the painted process
 evaluation:
   style_recognition: {score: 0, notes: ""}
   subject_independence: {score: 0, notes: ""}

@@ -180,6 +180,7 @@ the same prompt wording.
 | [Wood regional landscape pattern and vertical rhythm](../style-packages/artists/grant-wood/art-direction.yaml) | Rolling land with upright forms, path-led composition, controlled regional detail | `text_only`, declare `composed-regional-landscape` |
 | [Manet direct color and compressed scene](../style-packages/artists/edouard-manet/art-direction.yaml) | Adjacent color patches, deliberate spatial compression, selective contours and brushwork | `text_only`, declare `modern-life-color-plane` |
 | [Delacroix chromatic motion and brushwork](../style-packages/artists/eugene-delacroix/art-direction.yaml) | Warm-cool interaction, legible action vector, material-sensitive brush rhythm | `text_only`, declare `chromatic-dynamic-scene` |
+| [Bacon enclosed space and localized distortion](../style-packages/artists/francis-bacon/art-direction.yaml) | Frame-compressed space, localized contour shift, visible overpaint and scrape layers | `text_only`, declare `enclosed-figurative-tension` |
 
 ## 6. Execution routes
 

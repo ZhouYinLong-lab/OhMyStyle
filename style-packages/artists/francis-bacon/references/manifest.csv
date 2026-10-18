@@ -1,2 +1,5 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 francis-bacon-primary-source,,弗朗西斯·培根艺术家档案,现代艺术博物馆,,https://www.moma.org/artists/272-francis-bacon,link_only,来源资料：现代艺术博物馆艺术家档案；本包为独立视觉研究和重构。,primary,仅记录来源，不打包外部作品。
+bacon-met-three-studies,,Three Studies for Self-Portrait,Francis Bacon,1979,https://www.metmuseum.org/art/collection/search/489966,link_only,The Metropolitan Museum of Art,primary,Research link for compressed space and figure isolation; artwork image not bundled.
+bacon-moma-conservation,,Francis Bacon's Painting: Histories and Conservation Part 1,Francis Bacon,2015,https://www.moma.org/explore/inside_out/2015/11/19/francis-bacons-painting-1946-histories-and-conservation-part-1/,link_only,The Museum of Modern Art,primary,Conservation account of underlayers and revision; research link only.
+bacon-moma-catalogue,,Francis Bacon exhibition catalogue,Francis Bacon,1959,https://www.moma.org/documents/moma_catalogue_1959_300062980.pdf,link_only,The Museum of Modern Art,primary,Institutional catalogue analysis of distortion and triptychs; research link only.

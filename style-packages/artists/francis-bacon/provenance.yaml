@@ -1,5 +1,23 @@
-curation_status: curated
+package_id: francis-bacon
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 reference_policy: external-reference-only
+sources:
+  - url: https://www.metmuseum.org/art/collection/search/489966
+    title: Three Studies for Self-Portrait
+    authority: The Metropolitan Museum of Art
+    supports: tightly constricted space and a subject isolated against a deep dark field
+    accessed: '2026-10-19'
+  - url: https://www.moma.org/explore/inside_out/2015/11/19/francis-bacons-painting-1946-histories-and-conservation-part-1/
+    title: "Francis Bacon's Painting: Histories and Conservation, Part 1"
+    authority: The Museum of Modern Art
+    supports: underlayers, compositional revision, and visual vocabulary shaped by underlying marks
+    accessed: '2026-10-19'
+  - url: https://www.moma.org/documents/moma_catalogue_1959_300062980.pdf
+    title: Francis Bacon exhibition catalogue
+    authority: The Museum of Modern Art
+    supports: triptych studies, local distortion, fragmentation, and abbreviated perception
+    accessed: '2026-10-19'
 generated_assets:
   representative_image:
     path: gallery-16x9.jpg

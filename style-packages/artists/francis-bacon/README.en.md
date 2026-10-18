@@ -24,6 +24,18 @@ This package controls compressed space, local distortion, color-field conflict, 
 
 The research entry is the [Museum of Modern Art Francis Bacon archive](https://www.moma.org/artists/272-francis-bacon). The repository does not bundle external artworks. The representative image is a newly generated anonymous scene, not a reproduction of a specific work and not an endorsement or collaboration.
 
+## New architecture: enclosed space and localized contour shift (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `enclosed-figurative-tension`. It compresses space around a user-supplied subject with a simple frame, shifts contours in a few places, and exposes overpainted or scraped layers while requiring the subject to stay recognizable.
+
+This differs from Goya's direction, which shapes psychological presence through expression, facial detail, and dark-ground brushwork. Bacon's direction centers the relation between an enclosing spatial frame and localized contour shifts. It does not automatically add a person, screaming, violence, a cross, or an arena.
+
+```powershell
+python tools/compile-style.py style-packages/artists/francis-bacon --direction package --context enclosed-figurative-tension --subject "A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio" --output runs/style-v2/francis-bacon-job.json
+```
+
+This direction remains experimental; same-subject and cross-subject visual review is pending.
+
 ## Use this package only
 
 ### Method 1: Give it to an image-capable Agent

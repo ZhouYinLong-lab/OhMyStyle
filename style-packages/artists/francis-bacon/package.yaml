@@ -2,7 +2,7 @@ id: francis-bacon
 name: 弗朗西斯·培根
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   通过扭曲人物、封闭空间、强烈色块和肉身张力建立不安而具体的现代绘画语言
 files:
@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: painting

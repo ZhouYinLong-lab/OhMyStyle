@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "francis-bacon",
+    "name": "弗朗西斯·培根",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\francis-bacon"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original painting of A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio informed by the visual language of Francis Bacon. Preserve the user's subject, purpose, and requested aspect ratio. Begin with a readable figurative structure, then use compressed space, framing devices, tense color fields, and restrained local distortions to create psychological pressure. Show visible oil-paint process: scraped passages, thin washes, overpainting, and hard architectural edges against softened or dragged contours. Keep the main subject recognizable and let every deformation remain purposeful. The result must not default to a portrait, screaming face, crucifix, arena, flesh mass, or copied artwork.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "default portrait, screaming face, crucifix, arena, flesh pile, horror gore, random anatomy, liquid distortion, glitch filter, cartoon anatomy, glossy digital painting, smooth gradient, copied composition, recognizable person, logo, text, brand",
+  "template_variables": {
+    "SUBJECT": "A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "enclosed-figurative-tension": {
+        "required": [
+          "requested subject stays identifiable and unchanged",
+          "a simple spatial cue compresses or focuses the scene",
+          "contour shifts and paint disturbance remain selective"
+        ],
+        "reject_if": [
+          "unrequested violence, screaming, cross, arena, or meat imagery appears",
+          "identity or count changes under distortion",
+          "generic glitch or grunge filter replaces the painted process"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
