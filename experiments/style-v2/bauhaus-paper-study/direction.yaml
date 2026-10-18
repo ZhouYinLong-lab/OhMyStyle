@@ -1,0 +1,90 @@
+schema_version: 2.0.0
+status: experimental
+id: bauhaus-paper-study
+name: 包豪斯：纸材方法研究
+base_package: schools/bauhaus
+scope:
+  medium: paper_construction
+  representation: stylized
+  description: Albers 预备课程纸材方法的当代转译
+  required_contexts:
+  - paper-study
+  incompatible_contexts:
+  - oil-painting
+  - physical-certification
+  limitations:
+  - 要求保留纯油画或摄影媒介、同时完整体现本方向的实际纸材构建。
+  - 仅凭一张生成图就要求认证真实可制作、可承重或可折叠。
+pillars:
+- 形与空间由纸材的加工和结构关系产生。
+- 以少量明确操作研究材料，不用学院名称代替设计方法。
+- 留白、开口和投影共同说明折叠与受力关系。
+rules:
+- id: paper-form-from-operations
+  axis: process
+  importance: core
+  applies_when: always
+  instruction: 从明确的切、撕、折操作发展形体，保留操作造成的可辨认痕迹。
+  observable: 折线、切口与纸面连续性能够解释主要体块的形成。
+  reject_when: 只生成泛化现代主义雕塑，纸面上有装饰折痕却不能解释形体。
+  evidence:
+    source_ids:
+    - bauhaus-dessau-paper-course
+    basis: institutional_description
+    visual_review: pending
+  avoid: decorative fold marks unrelated to construction
+- id: paper-material-economy
+  axis: form
+  importance: core
+  applies_when: always
+  instruction: 以少量纸材和清楚的连接方式组织结构；每个新增构件必须有功能说明。
+  observable: 形体的支撑、接触与转折可在整体图和结构视图中对应。
+  reject_when: 连接处凭空漂浮，或靠不可见支架掩盖结构问题。
+  evidence:
+    source_ids:
+    - bauhaus-dessau-paper-course
+    - bauhaus-dessau-teaching-models
+    basis: curatorial_inference
+    visual_review: pending
+  avoid: floating joints and hidden supports
+- id: paper-space-and-shadow
+  axis: space
+  importance: supporting
+  applies_when: 任务包含空间体块，且照明允许观察开口和折叠。
+  instruction: 用开口、负空间和可解释投影显示纸面的空间关系。
+  observable: 观察者可区分实面、开口和阴影；阴影方向与纸面转折相容。
+  reject_when: 黑色装饰贴片被当成开口，或投影与结构矛盾。
+  evidence:
+    source_ids:
+    - bauhaus-dessau-teaching-models
+    basis: curatorial_inference
+    visual_review: pending
+  avoid: painted black patches substituting for physical openings
+active_rule_ids:
+- paper-form-from-operations
+- paper-material-economy
+- paper-space-and-shadow
+joint_checks:
+- id: paper-operation-structure-space-coherence
+  rule_ids:
+  - paper-form-from-operations
+  - paper-material-economy
+  - paper-space-and-shadow
+  instruction: 使加工步骤、纸面连接、开口和投影相互解释；不能用投影掩盖结构矛盾。
+  observable: 加工步骤、纸面连接与负空间能够相互解释，投影没有掩盖结构矛盾。
+sources:
+- id: bauhaus-dessau-paper-course
+  kind: institutional_teaching_description
+  url: https://bauhaus-dessau.de/en/visit/groups/offers-for-students/
+- id: bauhaus-dessau-teaching-models
+  kind: institutional_teaching_description
+  url: https://bauhaus-dessau.de/en/knowledge/teaching/
+execution:
+  route: text_only
+  must:
+  - Use only the user-requested paper and cutting, tearing, folding.
+  - Show understandable folds, cuts, contacts and structural negative space.
+  - Treat generated images as visual studies, not proof of physical feasibility.
+  avoid:
+  - glue, tape, hidden supports, metal framework
+  - automatic red-yellow-blue branding or copied historical design
