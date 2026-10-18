@@ -2,10 +2,11 @@ id: pieter-bruegel-the-elder
 name: 老彼得·勃鲁盖尔
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: Independent Pieter Bruegel the Elder style package focused on 高视点全景、微小群像、季节劳动与乡土地景;
   it requires new subjects and arrangements.
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

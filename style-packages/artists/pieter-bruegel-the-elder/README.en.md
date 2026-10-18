@@ -73,3 +73,7 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## Experimental direction: activities linked by a landscape route
+
+The optional direction in [`art-direction.yaml`](art-direction.yaml) applies to a user-requested wide landscape with different activities at multiple depths. Arrange foreground, middle-distance, and distant actions in a gradual discovery sequence; when the user requests or allows a path, use it to link those stations. It does not add peasants, harvest, villages, winter, or extra narrative episodes by default. See [`comparisons/`](comparisons/README.md) for the paired probe and rule review; this direction remains experimental.

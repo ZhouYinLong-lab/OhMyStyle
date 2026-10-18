@@ -1149,7 +1149,7 @@ packages:
   - palette
   - texture
   - layout
-  reference_count: 1
+  reference_count: 2
   accepted_example_count: 1
   rejected_example_count: 0
   benchmark: true

@@ -73,3 +73,7 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## 实验方向：沿景观路径串联活动
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 适用于用户指定的宽幅景观和多种远近活动：把前景、中景、远景中的活动安排成逐级发现的视觉顺序，并在用户指定或允许路径时用一条连续路线串联。它不默认添加农民、收获、村庄、冬景或额外情节。对照图和规则评审见 [`comparisons/`](comparisons/README.md)；当前方向仍处于实验状态。

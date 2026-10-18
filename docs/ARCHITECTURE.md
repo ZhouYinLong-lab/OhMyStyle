@@ -227,6 +227,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [塞尚倾斜桌面静物平衡](../style-packages/artists/paul-cezanne/art-direction.yaml) | 倾斜用户指定的桌面支撑面，以接触和色面关系平衡物件，局部视角保持可读 | `text_only`，声明 `tilted-tabletop-still-life` |
 | [高更轮廓人物与选择性背景肌理](../style-packages/artists/paul-gauguin/art-direction.yaml) | 单人物用连续轮廓与平色表现，局部背景保留更自由的混色 | `text_only`，声明 `single-figure-flat-ground` |
 | [克利活动线与独立色场](../style-packages/artists/paul-klee/art-direction.yaml) | 机械物件由活动线描述，透明色域独立组织浅空间并保留纸面 | `text_only`，声明 `simple-moving-mechanical-object` |
+| [勃鲁盖尔沿景观路径串联活动](../style-packages/artists/pieter-bruegel-the-elder/art-direction.yaml) | 用户指定的不同活动按远近层次排列，并由一条路径引导视线逐步发现 | `text_only`，声明 `landscape-with-multiple-activities` |
 
 ## 6. 从主体请求到结果
 

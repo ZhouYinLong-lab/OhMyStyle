@@ -1,0 +1,105 @@
+schema_version: 2.0.0
+status: experimental
+id: bruegel-micro-actions-landscape-route
+name: Bruegel micro-actions along a landscape route
+base_package: artists/pieter-bruegel-the-elder
+scope:
+  medium: oil_painting_on_panel
+  representation: recognizable
+  description: >-
+    An optional narrative-composition direction for a user-requested wide
+    landscape with several different activities distributed across its depth.
+    Let one visible route connect distinct foreground, middle-distance, and
+    distant action clusters so the viewer can travel through the scene in a
+    clear order. The direction controls scale and reading sequence, not the
+    activities, people, setting, or story supplied by the user.
+  required_contexts:
+    - landscape-with-multiple-activities
+  incompatible_contexts:
+    - isolated-single-figure-portrait
+    - overhead-map-or-diagram
+    - photorealistic-location-documentation
+  limitations:
+    - Activate only when the user requests a wide landscape with at least two distinct activities distributed across foreground and distance.
+    - Preserve the requested people, actions, locations, counts, objects, and era; do not default to peasants, harvest, village, winter, or a particular season.
+    - Keep activity clusters on one continuous landscape plane; do not separate them into panels, storyboard frames, or a map.
+    - Use a route only when the user has requested or allowed a path, road, shoreline, or comparable connector; do not invent one to force a narrative.
+    - Keep distant people small but distinguishable by pose and group relation; do not invent extra subplots or characters.
+    - Do not copy a named Bruegel work's composition, figures, landmarks, or motifs.
+pillars:
+  - Give user-requested activities distinct spatial stations across the foreground, middle distance, and background.
+  - Use one continuous user-requested route to connect those stations and create a readable order of attention.
+  - Preserve landscape continuity and let pose, grouping, and scale carry action cues instead of facial detail.
+rules:
+  - id: distributed-activity-hierarchy
+    axis: action_cluster_and_scale
+    importance: core
+    applies_when: The user requests at least two different activities across a wide landscape.
+    instruction: Place the most important requested activity in the foreground, a different requested activity in the middle distance, and any other requested activity farther away; reduce figure scale and detail gradually without losing the action cues.
+    observable: The viewer can identify the main action first, then discover at least one distinct user-requested action farther into the same scene.
+    reject_when: Activity groups merge, distant people disappear, or additional actions are invented.
+    evidence:
+      source_ids:
+        - met-bruegel-harvesters
+        - met-bruegel-visual-approaches
+      basis: institutional_description
+      visual_review: pending
+    avoid: generic crowd texture, default labor scenes, and even-sized catalog groups
+  - id: route-led-reading-order
+    axis: path_and_viewer_sequence
+    importance: core
+    applies_when: The user requests or permits a visible route through a populated landscape.
+    instruction: Let one continuous route pass near the foreground activity and continue toward a different middle- or background activity; keep its course legible while allowing the landscape to interrupt or partly conceal it naturally.
+    observable: The route gives the eye a clear near-to-far sequence and leads to an action cluster rather than ending as decoration.
+    reject_when: The path disconnects from all activity, splits into a confusing network, or creates an unrequested location feature.
+    evidence:
+      source_ids:
+        - met-bruegel-harvesters
+        - met-bruegel-visual-approaches
+      basis: institutional_description
+      visual_review: pending
+    avoid: default village road, harbor, wheat field, and graphic arrows
+  - id: pose-readable-at-distance
+    axis: figure_gesture_and_detail
+    importance: supporting
+    applies_when: The requested activities include figures at different depths.
+    instruction: Simplify distant figures into clear silhouettes and action-specific group poses, reserving finer detail for the principal foreground activity.
+    observable: The distant activity can be inferred from pose and grouping, while small faces and clothing details do not compete with the foreground.
+    reject_when: Distant groups become anonymous specks, or detail shifts attention away from the user-designated main activity.
+    evidence:
+      source_ids:
+        - met-bruegel-harvesters
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: tiny facial features, copied costumes, and extra people
+active_rule_ids:
+  - distributed-activity-hierarchy
+  - route-led-reading-order
+  - pose-readable-at-distance
+joint_checks:
+  - id: connected-micro-narrative
+    rule_ids:
+      - distributed-activity-hierarchy
+      - route-led-reading-order
+      - pose-readable-at-distance
+    instruction: Keep separate requested activities legible at decreasing scales and connect them with one continuous route across a shared landscape.
+    observable: The viewer reads a clear foreground action, follows the landscape route, and discovers a distinct distant action without mistaking the scene for separate panels.
+sources:
+  - id: met-bruegel-harvesters
+    kind: museum_collection_description
+    url: https://www.metmuseum.org/art/collection/search/435809
+  - id: met-bruegel-visual-approaches
+    kind: museum_education_publication
+    url: https://resources.metmuseum.org/resources/metpublications/pdf/Looking_to_Connect_with_European_Paintings_Visual_Approaches_for_Teaching_in_the_Galleries.pdf
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested wide landscape with activities at more than one depth.
+    - Preserve the requested scene, people, actions, counts, era, and locations.
+    - Keep activities in a shared landscape and arrange them at distinct scales.
+    - Let a user-requested route link foreground activity to a different distant activity.
+    - Review action readability, reading order, route continuity, and scale hierarchy.
+  avoid:
+    - adding peasants, harvest, winter, village, harbor, or other named-work motifs unless requested
+    - inventing symbolic meaning, extra characters, or narrative episodes
+    - copying a specific Bruegel composition, pose, or arrangement
