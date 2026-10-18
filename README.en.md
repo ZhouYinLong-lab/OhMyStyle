@@ -14,7 +14,7 @@ An art style package connects **scope and intent → visual rules → references
 
 See the **[art style package architecture guide](docs/ARCHITECTURE.en.md)** for artifact responsibilities, rule examples, compilation paths, literal ASCII constraints, and review.
 
-The formal library retains its multiple-file package contract. The new architecture uses explicitly selected experimental direction files. See the [v2 pilot guide (Chinese)](experiments/style-v2/README.md) for Sorolla sunlit oil, Bauhaus paper methods, and literal ASCII grids. Image comparisons remain pending. The baseline is preserved as tag `style-v1-snapshot-2026-10-18`.
+The current `main` includes the new architecture pilots and is the branch for continued development. The formal library retains its multiple-file package contract; experimental direction files are selected explicitly. See the [v2 pilot guide (Chinese)](experiments/style-v2/README.md) for Sorolla sunlit oil, Bauhaus paper methods, and literal ASCII grids. Image comparisons remain pending. The old version is preserved on branch `codex/style-v1-preserved` and tag `style-v1-snapshot-2026-10-18`.
 
 <a id="style-package-gallery"></a>
 

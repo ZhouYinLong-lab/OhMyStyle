@@ -169,6 +169,6 @@ All three pilots remain `experimental` with review `pending`. Three jobs were co
 
 ## 8. Versions and migration
 
-The preserved baseline is tag `style-v1-snapshot-2026-10-18` at commit `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`. The implementation branch is `codex/style-pack-v2`. This work retains the main branch without bulk migration.
+The preserved baseline is branch `codex/style-v1-preserved` and tag `style-v1-snapshot-2026-10-18` at commit `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`. The implementation started on `codex/style-pack-v2` and is now included in `main`. Continue development on `main`; retain the old baseline for comparison. The formal library has not been bulk migrated.
 
 Proceed through manual direction authoring, saved compiled inputs, comparison runs, rule reviews, and a decision on wider adoption. Scripts handle structure, references, and records; artistic interpretation and differences require research and review. See the [migration assessment (Chinese)](ART-STYLE-MIGRATION-ASSESSMENT.md) and [baseline worktree instructions (Chinese)](../experiments/style-v2/README.md#版本保留与回退).

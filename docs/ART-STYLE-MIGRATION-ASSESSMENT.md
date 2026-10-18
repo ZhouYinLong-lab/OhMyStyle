@@ -2,7 +2,7 @@
 
 评估日期：2026-10-18。基线版本：59d9aa10ee9eeaedf3b815688d00f3e553ef31ea。评估对象是 [美术风格包架构草案](ART-STYLE-PACK-ARCHITECTURE.md)；本轮只做盘点、读取和内存探查，没有改写正式风格包。
 
-后续实施已另行开展：旧版保存在远端标签 `style-v1-snapshot-2026-10-18`，新入口和三个试点位于 `codex/style-pack-v2` 分支，参见 [试点使用与回退说明](../experiments/style-v2/README.md)。下文保留评估时的统计；其中 American Luminism 标题的 YAML 引号问题已在实施分支单独修复，未批量改写美术规则。
+后续实施已另行开展：旧版保存在远端标签 `style-v1-snapshot-2026-10-18` 和分支 `codex/style-v1-preserved`；新入口和三个试点最初在 `codex/style-pack-v2` 实施，现已进入 `main`，后续开发继续使用 `main`。参见 [试点使用与回退说明](../experiments/style-v2/README.md)。下文保留评估时的统计；其中 American Luminism 标题的 YAML 引号问题已单独修复，未批量改写美术规则。
 
 ## 1. 结论与方案修订
 

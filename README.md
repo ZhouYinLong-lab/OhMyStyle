@@ -14,7 +14,7 @@ OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺�
 
 完整的文件分工、规则示例、编译流程、ASCII 制作约束及评审方式见 **[美术风格包架构详解](docs/ARCHITECTURE.md)**。
 
-当前正式库沿用多文件风格包；新架构在独立方向文件中试点，必须显式选择。索罗亚日光油画、包豪斯纸材方法和严格 ASCII 网格的命令见 [v2 试点说明](experiments/style-v2/README.md)。试点仍待生图对照评审；旧版已保存在 `style-v1-snapshot-2026-10-18` 标签。
+当前 `main` 已采用包含新架构试点的版本，后续开发继续在 `main` 推进。正式库沿用多文件风格包；新架构通过独立方向文件显式选择。索罗亚日光油画、包豪斯纸材方法和严格 ASCII 网格的命令见 [v2 试点说明](experiments/style-v2/README.md)。试点仍待生图对照评审；旧版保留在 `codex/style-v1-preserved` 分支和 `style-v1-snapshot-2026-10-18` 标签。
 
 <a id="风格包画廊"></a>
 

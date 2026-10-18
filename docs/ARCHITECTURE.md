@@ -193,6 +193,6 @@ ASCII 路线要求先有字面字符源，再用指定等宽字体逐格绘制�
 
 ## 8. 版本与后续推进
 
-旧版固定在标签 `style-v1-snapshot-2026-10-18`，提交为 `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`；新实现位于 `codex/style-pack-v2`。本轮保留主分支，不将全库批量迁移。
+旧版固定在 `codex/style-v1-preserved` 分支和 `style-v1-snapshot-2026-10-18` 标签，提交为 `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`。新实现最初在 `codex/style-pack-v2` 开发，现已进入 `main`；后续开发以 `main` 为准。旧版基线继续保留，正式包没有全库批量迁移。
 
 建议按“人工整理方向 → 保存实际编译结果 → 对照生成 → 逐规则评审 → 决定是否扩大”推进。脚本负责结构、引用和记录；视觉规则的补写、来源解释及风格差异由研究和评审决定。成本与风险见 [迁移评估](ART-STYLE-MIGRATION-ASSESSMENT.md)，独立旧版工作区命令见 [回退说明](../experiments/style-v2/README.md#版本保留与回退)。

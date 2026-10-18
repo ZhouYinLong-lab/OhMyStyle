@@ -7,8 +7,9 @@
 | 版本 | Git 引用 | 用途 |
 | --- | --- | --- |
 | 旧版快照 | `style-v1-snapshot-2026-10-18` | 固定在 `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`，已推送远端 |
-| 旧版主分支 | `main` | 本轮不合并实验改动 |
-| 实施分支 | `codex/style-pack-v2` | 架构设计、试点、编译入口与字符渲染器 |
+| 旧版保留分支 | `codex/style-v1-preserved` | 固定在旧版基线，用于查看与对照 |
+| 当前主分支 | `main` | 包含架构设计、试点、编译入口与字符渲染器；后续开发继续在此推进 |
+| 初始实施分支 | `codex/style-pack-v2` | 保留最初实施历史，改动已进入 `main` |
 
 快照保存 Git 跟踪的内容；被忽略的本地候选图片和运行结果不在 Git 快照内。实施分支另行提交了快照时的架构设计文档，并修复 American Luminism 来源标题缺少引号的问题。
 
@@ -18,7 +19,7 @@
 git worktree add --detach ../OhMyStyle-v1 style-v1-snapshot-2026-10-18
 ~~~
 
-旧版快照保留原有 American Luminism YAML 解析问题，便于准确还原当时状态。无需重置或删除当前工作区。若当前工作区干净，也可以用 `git switch main` 切回旧主分支，用 `git switch codex/style-pack-v2` 返回实施分支。
+旧版快照保留原有 American Luminism YAML 解析问题，便于准确还原当时状态。无需重置或删除当前工作区。若当前工作区干净，也可以用 `git switch codex/style-v1-preserved` 查看旧版，用 `git switch main` 返回当前开发版本。旧版分支和标签保留为对照基线，后续开发以 `main` 为准。
 
 ## 实际落地的结构
 
