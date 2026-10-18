@@ -36,6 +36,18 @@
 - [evaluation.yaml](evaluation.yaml)：生成后的检查标准
 - [references/manifest.csv](references/manifest.csv)、[provenance.yaml](provenance.yaml)：来源与权利边界
 
+## 新架构：轮廓主导的人物习作（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 只在用户请求绘制人物并声明 `contour-led-figure-study` 时启用。方向用连续而有弹性的外轮廓建立姿态，以少量内部线交代结构和衣褶，再用克制明暗塑造体积；它不会自动拉长身体、改变体型、改换姿势，也不添加古典服装、裸像或寓意场景。奥赛博物馆对安格尔《泉》的说明强调曲线轮廓、简化塑形和浅空间；这里借用的是这些可观察的形式关系，不复刻画中人物或姿态。
+
+它与德拉克罗瓦强调色彩冲突和动作笔触的方向不同：安格尔方向让轮廓和姿态先被读到，笔触和阴影保持收敛。它也区别于凡·艾克以微观材质反光为中心的规则；本方向处理的是人物形体边缘与有限体积塑造。
+
+```powershell
+python tools/compile-style.py style-packages/artists/jean-auguste-dominique-ingres --direction package --context contour-led-figure-study --subject "An adult seated sideways on a simple wooden chair, wearing a long rust-red coat, one hand resting on a closed blue book, against a pale quiet wall"
+```
+
+[`comparisons/`](comparisons/) 保存同题旧版与新方向 job、提示词和样图。新版以旧版样图作为构图参考进行方向化处理，人物、姿势、服装和物件位置保持一致，便于单独检查轮廓和明暗规则；图像生成仍有随机性，因此不代表所有模型都会复现相同结果。方向仍待视觉评审，保持实验状态。
+
 ## 来源与版权
 
 参考资料只用于研究和分析。外部作品、摄影作品、游戏画面、商标和平台页面仍归原权利人所有。生成示例是新的匿名场景，不是相关艺术家、摄影师、流派、技法或游戏的原作，也不代表合作、授权或背书关系。

@@ -1,4 +1,14 @@
 profiles:
+  contour-led-figure-study:
+    required:
+    - the requested clothed figure, pose, and body proportions remain recognizable
+    - the outer contour and major internal contours carry more structure than shadow
+    - modeling stays smooth and restrained with a shallow, quiet background
+    - any elongation is subtle and does not alter identity or anatomy beyond plausibility
+    reject_if:
+    - an unrequested nude, classical costume, prop, or allegorical setting appears
+    - contour becomes a uniform dark outline around every edge
+    - anatomy is distorted or the pose changes to imitate a known composition
   generic:
     required:
     - package-specific visual signature is observable

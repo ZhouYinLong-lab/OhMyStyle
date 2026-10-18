@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "jean-auguste-dominique-ingres",
+    "name": "让·奥古斯特·多米尼克·安格尔",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\jean-auguste-dominique-ingres"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "An adult seated sideways on a simple wooden chair, wearing a long rust-red coat, one hand resting on a closed blue book, against a pale quiet wall",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: An adult seated sideways on a simple wooden chair, wearing a long rust-red coat, one hand resting on a closed blue book, against a pale quiet wall\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original image using this package as a visual language, not as a fixed subject or copied composition.\n\nPackage signature:\n- - 清晰、连续且富有弹性的轮廓线\n- 理想化但不夸张的比例与姿态\n- 平滑表面上的克制明暗\n- 冷静的浅色调与少量深色结构线\n\nSubject rule:\nKeep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.\n\nReproduction direction:\n- 先用准确轮廓确定形体关系\n- 保持大面积明度平稳和边缘清楚\n- 用细微渐变塑造体积而非厚重笔触\n- 以少量色彩和布料线条强化秩序\n\nUser request:\nAn adult seated sideways on a simple wooden chair, wearing a long rust-red coat, one hand resting on a closed blue book, against a pale quiet wall\nthe user-requested composition\nthe user-requested aspect ratio\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not copy a reference composition, named character, landmark, logo, brand, readable text, screenshot, watermark, or protected game asset. Do not introduce a fixed subject from the package. Avoid generic global filters, accidental extra objects, and unrequested narrative events.",
+  "template_variables": {
+    "SUBJECT": "An adult seated sideways on a simple wooden chair, wearing a long rust-red coat, one hand resting on a closed blue book, against a pale quiet wall",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "contour-led-figure-study": {
+        "required": [
+          "the requested clothed figure, pose, and body proportions remain recognizable",
+          "the outer contour and major internal contours carry more structure than shadow",
+          "modeling stays smooth and restrained with a shallow, quiet background",
+          "any elongation is subtle and does not alter identity or anatomy beyond plausibility"
+        ],
+        "reject_if": [
+          "an unrequested nude, classical costume, prop, or allegorical setting appears",
+          "contour becomes a uniform dark outline around every edge",
+          "anatomy is distorted or the pose changes to imitate a known composition"
+        ]
+      },
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material",
+          "no fixed subject leaks into the output"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "preserve the user-supplied person or object without adding a recurring figure"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "preserve the user-supplied objects and their count"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

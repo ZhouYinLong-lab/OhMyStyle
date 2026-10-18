@@ -2,7 +2,7 @@ id: jean-auguste-dominique-ingres
 name: 让·奥古斯特·多米尼克·安格尔
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: 以清晰而有弹性的轮廓、克制的明暗和理想化的形体秩序建立新古典主义的稳定视觉语言。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: 绘画

@@ -26,6 +26,18 @@ This package transfers observable visual decisions to a user-supplied subject. I
 
 The package controls how an image is rendered, not what the user must render. The representative image is an anonymous demonstration. Keep the requested subject, count, location, and story unchanged.
 
+## New architecture: contour-led figure study (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) activates only for a user-requested painted figure when `contour-led-figure-study` is declared. A supple outer contour establishes the pose; a few interior lines describe structure and folds; restrained value shifts add volume. It does not automatically elongate the body, change body type or pose, or add classical costume, nudity, or allegory. The Musée d'Orsay's note on Ingres's *La Source* describes curved contours, simplified modeling, and shallow space; this direction uses those observable formal relationships without copying the figure or pose.
+
+This differs from Delacroix's color conflict and action-driven brushwork: contour and pose should read first, with marks and shadows kept controlled. It also differs from Van Eyck's material-reflection rules; this direction handles figure edges and economical volume.
+
+```powershell
+python tools/compile-style.py style-packages/artists/jean-auguste-dominique-ingres --direction package --context contour-led-figure-study --subject "An adult seated sideways on a simple wooden chair, wearing a long rust-red coat, one hand resting on a closed blue book, against a pale quiet wall"
+```
+
+[`comparisons/`](comparisons/) contains same-subject legacy and direction jobs, prompts, and sample images. The direction image uses the legacy image as a composition reference, keeping the figure, pose, clothing, and object positions aligned so contour and value rules are easier to inspect. Image generation remains stochastic, so this does not guarantee the same result across models. The direction remains experimental pending visual review.
+
 ## Sources and rights
 
 Research sources are linked for attribution and study. External works, photographs, game images, trademarks, and platform pages remain with their respective rights holders. The generated demonstration is original and anonymous; it is not an original work by, nor an endorsement from, the cited source.

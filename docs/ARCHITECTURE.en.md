@@ -193,6 +193,7 @@ the same prompt wording.
 | [Seurat measured composition and divided-color marks](../style-packages/artists/georges-seurat/art-direction.yaml) | Stable silhouettes, deliberate intervals, plane-sensitive separated marks, and optical light | `text_only`, declare `measured-chromatic-composition` |
 | [Aivazovsky radiant sea light and wave direction](../style-packages/artists/ivan-aivazovsky/art-direction.yaml) | Broken reflection path, direction-sensitive water marks, and atmospheric sea-sky depth | `text_only`, declare `radiant-sea-light-path` |
 | [Van Eyck glazing and material-specific light](../style-packages/artists/jan-van-eyck/art-direction.yaml) | Distinct material highlights under shared light, selective translucent layers, and localized detail | `text_only`, declare `glazed-material-observation` |
+| [Ingres contour-led figure study](../style-packages/artists/jean-auguste-dominique-ingres/art-direction.yaml) | Supple contours organize pose, restrained smooth modeling, and shallow quiet space | `text_only`, declare `contour-led-figure-study` |
 
 ## 6. Execution routes
 

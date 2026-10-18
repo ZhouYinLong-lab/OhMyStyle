@@ -1,8 +1,18 @@
 package_id: jean-auguste-dominique-ingres
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
+- url: https://www.musee-orsay.fr/en/artworks/la-source-525
+  title: La Source
+  authority: Musée d'Orsay
+  supports: contour-led figure drawing, curved silhouette, simplified modeling, and shallow depth
+  accessed: '2026-10-19'
+- url: https://resources.metmuseum.org/resources/metpublications/pdf/Looking_to_Connect_with_European_Paintings_Visual_Approaches_for_Teaching_in_the_Galleries.pdf
+  title: Looking to Connect with European Paintings
+  authority: The Metropolitan Museum of Art
+  supports: Ingres's deliberate emphasis on contour as a visual boundary
+  accessed: '2026-10-19'
 - url: https://www.metmuseum.org/fr/art/collection/search/337364
   title: 让·奥古斯特·多米尼克·安格尔作品资料
   authority: 大都会艺术博物馆

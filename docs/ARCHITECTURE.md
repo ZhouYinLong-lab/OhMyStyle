@@ -207,6 +207,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [修拉测量式构图与分色笔触](../style-packages/artists/georges-seurat/art-direction.yaml) | 稳定剪影、经过安排的间距、随平面变化的分色笔触与光色关系 | `text_only`，声明 `measured-chromatic-composition` |
 | [艾瓦佐夫斯基水面光路与浪向](../style-packages/artists/ivan-aivazovsky/art-direction.yaml) | 断续反光路径、随水面方向变化的笔触、海天空气透视 | `text_only`，声明 `radiant-sea-light-path` |
 | [凡·艾克釉层与材质光感](../style-packages/artists/jan-van-eyck/art-direction.yaml) | 同一光源下区分材质高光、局部薄层叠色、选择性细节 | `text_only`，声明 `glazed-material-observation` |
+| [安格尔轮廓主导的人物习作](../style-packages/artists/jean-auguste-dominique-ingres/art-direction.yaml) | 连续轮廓组织姿态、平滑克制塑形、浅而安静的背景 | `text_only`，声明 `contour-led-figure-study` |
 
 ## 6. 从主体请求到结果
 

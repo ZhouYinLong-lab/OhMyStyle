@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "jean-auguste-dominique-ingres",
+    "name": "让·奥古斯特·多米尼克·安格尔",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\jean-auguste-dominique-ingres"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "An adult seated sideways on a simple wooden chair, wearing a long rust-red coat, one hand resting on a closed blue book, against a pale quiet wall",
+  "prompt": "USER SUBJECT: An adult seated sideways on a simple wooden chair, wearing a long rust-red coat, one hand resting on a closed blue book, against a pale quiet wall\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [continuous-contour-pose] Define the pose with one readable outer contour and only a few intentional interior contours at the face, hands, garment folds, or major form transitions; allow curves to flow without turning into a heavy graphic outline.\n- [simplified-surface-modeling] Use smooth, economical value transitions to turn the major forms; keep shadow shapes broad and subordinate to contour, and preserve the user's requested light direction and skin or clothing tone.\n- [shallow-quiet-stage] Keep the background visually quiet and spatially shallow enough for the figure contour to remain distinct; retain any setting details the user specifically requests.\n- [silhouette-led-figure-with-restraint] Make contour and pose the first read, use restrained modeling for volume, and keep background depth subordinate without changing the user-defined person or scene.\nREQUIREMENT: Declare contour-led-figure-study only for a user-requested painted figure or portrait.\nREQUIREMENT: Preserve the requested identity, body type, pose, clothing, framing, and setting.\nREQUIREMENT: Let selective contour and smooth restrained modeling carry the form.\nREQUIREMENT: Keep the background quiet only to the extent compatible with the requested scene.",
+  "negative_prompt": "uniform dark outlining, decorative filigree, and copied silhouette\ndramatic chiaroscuro, airbrushed plastic skin, and broad global blur\ndefault classical interior, landscape props, and unrequested narrative setting\nadding nude figures, classical costume, allegory, or props\nforcing idealized anatomy or a copied figure pose\nreplacing contour with thick painterly gesture or dramatic shadow\nremoving user-requested setting details",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "ingres-contour-led-figure-study",
+    "name": "Ingres contour-led figure study",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\jean-auguste-dominique-ingres\\art-direction.yaml",
+    "sha256": "327da14fc13074f08daac40f4a4e1037a682b7d16f5d91895535d72af877985c",
+    "active_rule_ids": [
+      "continuous-contour-pose",
+      "simplified-surface-modeling",
+      "shallow-quiet-stage"
+    ],
+    "contexts": [
+      "contour-led-figure-study"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare contour-led-figure-study only for a user-requested painted figure or portrait.",
+      "Preserve the requested identity, body type, pose, clothing, framing, and setting.",
+      "Let selective contour and smooth restrained modeling carry the form.",
+      "Keep the background quiet only to the extent compatible with the requested scene."
+    ],
+    "avoid": [
+      "adding nude figures, classical costume, allegory, or props",
+      "forcing idealized anatomy or a copied figure pose",
+      "replacing contour with thick painterly gesture or dramatic shadow",
+      "removing user-requested setting details"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "A context-specific figure-painting direction in which a clear, continuous silhouette and a few carefully placed interior contours organize the pose. Form is modeled with smooth, restrained value shifts and a shallow, quiet setting. The direction controls line, silhouette, and modeling; it does not prescribe nudity, costume, pose, identity, or allegorical subject matter.",
+      "required_contexts": [
+        "contour-led-figure-study"
+      ],
+      "incompatible_contexts": [
+        "action-scene",
+        "gestural-painterly-study",
+        "deep-cinematic-environment"
+      ],
+      "limitations": [
+        "Apply only when the user requests a painted human figure or portrait.",
+        "Preserve the user's clothing, pose, identity, body type, age, and framing.",
+        "Use contour to clarify the requested figure; do not force an idealized or elongated body shape.",
+        "Do not add classical costume, nude body, prop, inscription, or allegorical setting unless requested.",
+        "Do not reproduce a named figure, pose, or composition."
+      ]
+    },
+    "rules": [
+      {
+        "id": "continuous-contour-pose",
+        "axis": "line_and_composition",
+        "importance": "core",
+        "applies_when": "The user requests a single painted human figure or portrait where the pose is central.",
+        "instruction": "Define the pose with one readable outer contour and only a few intentional interior contours at the face, hands, garment folds, or major form transitions; allow curves to flow without turning into a heavy graphic outline.",
+        "observable": "The pose and silhouette read clearly at thumbnail scale, while internal lines remain selective.",
+        "reject_when": "The figure is enclosed by a uniform black outline, broken into unrelated contour fragments, or changed to match a known pose.",
+        "evidence": {
+          "source_ids": [
+            "orsay-la-source",
+            "met-ingres-contour"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform dark outlining, decorative filigree, and copied silhouette"
+      },
+      {
+        "id": "simplified-surface-modeling",
+        "axis": "form_and_value",
+        "importance": "core",
+        "applies_when": "The requested figure is painted with visible volume but does not require dramatic lighting.",
+        "instruction": "Use smooth, economical value transitions to turn the major forms; keep shadow shapes broad and subordinate to contour, and preserve the user's requested light direction and skin or clothing tone.",
+        "observable": "Volume reads without thick impasto or high-contrast chiaroscuro overpowering the line.",
+        "reject_when": "The figure becomes flat line art, heavily sculpted by theatrical shadow, or anatomically idealized against the user's request.",
+        "evidence": {
+          "source_ids": [
+            "orsay-la-source"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "dramatic chiaroscuro, airbrushed plastic skin, and broad global blur"
+      },
+      {
+        "id": "shallow-quiet-stage",
+        "axis": "depth_and_background",
+        "importance": "supporting",
+        "applies_when": "The user's requested scene includes a background behind a figure.",
+        "instruction": "Keep the background visually quiet and spatially shallow enough for the figure contour to remain distinct; retain any setting details the user specifically requests.",
+        "observable": "Figure and background separate clearly without a forced studio void or invented architecture.",
+        "reject_when": "Background scenery competes with the figure or removes a user-requested location.",
+        "evidence": {
+          "source_ids": [
+            "orsay-la-source"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "default classical interior, landscape props, and unrequested narrative setting"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "silhouette-led-figure-with-restraint",
+        "rule_ids": [
+          "continuous-contour-pose",
+          "simplified-surface-modeling",
+          "shallow-quiet-stage"
+        ],
+        "instruction": "Make contour and pose the first read, use restrained modeling for volume, and keep background depth subordinate without changing the user-defined person or scene.",
+        "observable": "The requested person and pose remain recognizable; contour is continuous but not uniformly outlined; shadows stay controlled; no default costume or allegory appears."
+      }
+    ],
+    "sources": [
+      {
+        "id": "orsay-la-source",
+        "kind": "museum_collection_analysis",
+        "url": "https://www.musee-orsay.fr/en/artworks/la-source-525"
+      },
+      {
+        "id": "met-ingres-contour",
+        "kind": "museum_educational_analysis",
+        "url": "https://resources.metmuseum.org/resources/metpublications/pdf/Looking_to_Connect_with_European_Paintings_Visual_Approaches_for_Teaching_in_the_Galleries.pdf"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "327da14fc13074f08daac40f4a4e1037a682b7d16f5d91895535d72af877985c",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
