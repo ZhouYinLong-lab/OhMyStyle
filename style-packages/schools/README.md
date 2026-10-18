@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-本目录收录 13 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击图片或名称进入风格包 README。
+本目录收录 24 个独立风格包。每个卡片使用统一的横版 16:9 代表图，点击图片或名称进入风格包 README。
 
 <table>
 <tr>
@@ -30,4 +30,15 @@
 <td width="33%"></td>
 <td width="33%"></td>
 </tr>
+</table>
+
+## 其他风格包
+
+以下卡片补齐本分类的完整索引。
+
+<table width="100%">
+<tr><td width="33%" valign="top" align="center"><a href="./academie-julian/README.md"><img src="./academie-julian/gallery-16x9.jpg" width="230" alt="朱利安学院代表图"></a><br><strong>朱利安学院</strong><br><a href="./academie-julian/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="./academy-of-fine-arts-vienna/README.md"><img src="./academy-of-fine-arts-vienna/gallery-16x9.jpg" width="230" alt="维也纳美术学院代表图"></a><br><strong>维也纳美术学院</strong><br><a href="./academy-of-fine-arts-vienna/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="./artcenter/README.md"><img src="./artcenter/gallery-16x9.jpg" width="230" alt="艺术中心设计学院代表图"></a><br><strong>艺术中心设计学院</strong><br><a href="./artcenter/README.md">打开 README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="./california-institute-of-the-arts/README.md"><img src="./california-institute-of-the-arts/gallery-16x9.jpg" width="230" alt="加州艺术学院代表图"></a><br><strong>加州艺术学院</strong><br><a href="./california-institute-of-the-arts/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="./central-saint-martins/README.md"><img src="./central-saint-martins/gallery-16x9.jpg" width="230" alt="中央圣马丁艺术与设计学院代表图"></a><br><strong>中央圣马丁艺术与设计学院</strong><br><a href="./central-saint-martins/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="./design-academy-eindhoven/README.md"><img src="./design-academy-eindhoven/gallery-16x9.jpg" width="230" alt="埃因霍温设计学院代表图"></a><br><strong>埃因霍温设计学院</strong><br><a href="./design-academy-eindhoven/README.md">打开 README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="./ecal/README.md"><img src="./ecal/gallery-16x9.jpg" width="230" alt="洛桑艺术设计学院代表图"></a><br><strong>洛桑艺术设计学院</strong><br><a href="./ecal/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="./royal-academy-schools/README.md"><img src="./royal-academy-schools/gallery-16x9.jpg" width="230" alt="皇家美术学院学校代表图"></a><br><strong>皇家美术学院学校</strong><br><a href="./royal-academy-schools/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="./royal-danish-academy/README.md"><img src="./royal-danish-academy/gallery-16x9.jpg" width="230" alt="丹麦皇家艺术学院代表图"></a><br><strong>丹麦皇家艺术学院</strong><br><a href="./royal-danish-academy/README.md">打开 README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="./school-of-the-art-institute-of-chicago/README.md"><img src="./school-of-the-art-institute-of-chicago/gallery-16x9.jpg" width="230" alt="芝加哥艺术学院代表图"></a><br><strong>芝加哥艺术学院</strong><br><a href="./school-of-the-art-institute-of-chicago/README.md">打开 README</a></td><td width="33%" valign="top" align="center"><a href="./school-of-visual-arts/README.md"><img src="./school-of-visual-arts/gallery-16x9.jpg" width="230" alt="视觉艺术学院代表图"></a><br><strong>视觉艺术学院</strong><br><a href="./school-of-visual-arts/README.md">打开 README</a></td><td width="33%"></td></tr>
 </table>

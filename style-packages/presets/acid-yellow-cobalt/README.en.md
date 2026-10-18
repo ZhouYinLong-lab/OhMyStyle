@@ -1,15 +1,15 @@
-# 酸黄钴蓝
+# Acid Yellow and Cobalt
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 酸黄钴蓝](gallery-16x9.jpg)
+![Representative image for Acid Yellow and Cobalt](gallery-16x9.jpg)
 
-> **Category:** 摄影
+> **Category:** photography
 > **Directory:** `style-packages/presets/acid-yellow-cobalt`
 
 ## Overview
 
-以受控的高纯度酸黄与钴蓝关系建立清晰、现代且不依赖霓虹效果的产品视觉预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A clear, contemporary product-visual preset built around controlled, highly saturated acid yellow and cobalt blue without relying on neon effects. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ controlled acid yellow and cobalt blue, crisp product composition, neutral surro
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ Start with “controlled high-purity acid yellow and cobalt blue with clear mode
 
 ## Overview
 
-以受控的高纯度酸黄与钴蓝关系建立清晰、现代且不依赖霓虹效果的产品视觉预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A clear, contemporary product-visual preset built around controlled, highly saturated acid yellow and cobalt blue without relying on neon effects. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ controlled acid yellow and cobalt blue, crisp product composition, neutral surro
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

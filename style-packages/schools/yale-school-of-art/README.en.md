@@ -1,15 +1,15 @@
-# 耶鲁艺术学院
+# Yale School of Art
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 耶鲁艺术学院](gallery-16x9.jpg)
+![Representative image of Yale School of Art](gallery-16x9.jpg)
 
-> **Category:** 设计学院
+ > **Category:** design school
 > **Directory:** `style-packages/schools/yale-school-of-art`
 
 ## Overview
 
-以研究、批判讨论、媒介专注和高度个人化的工作室实践形成当代学院气质。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A contemporary academic character shaped by research, critical discussion, focus on the medium, and highly individual studio practice. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ research and critique, medium-specific practice, personal studio language, archi
 
 ## References
 
-- [耶鲁艺术学院官方历史页面](https://www.art.yale.edu/about/history)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Yale School of Art: official history](https://www.art.yale.edu/about/history)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ Start with “research, critical discussion, medium focus, and highly personal s
 
 ## Overview
 
-以研究、批判讨论、媒介专注和高度个人化的工作室实践形成当代学院气质。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A contemporary academic character shaped by research, critical discussion, focus on the medium, and highly individual studio practice. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ research and critique, medium-specific practice, personal studio language, archi
 
 ## References
 
-- [耶鲁艺术学院官方历史页面](https://www.art.yale.edu/about/history)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Yale School of Art: official history](https://www.art.yale.edu/about/history)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

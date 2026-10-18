@@ -1,15 +1,15 @@
-# 格拉斯哥艺术学院
+# Glasgow School of Art
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 格拉斯哥艺术学院](gallery-16x9.jpg)
+![Representative image of Glasgow School of Art](gallery-16x9.jpg)
 
-> **Category:** 设计学院
+ > **Category:** design school
 > **Directory:** `style-packages/schools/glasgow-school-of-art`
 
 ## Overview
 
-以建筑线性结构、装饰性自然形态和工艺细节共同组织视觉空间，强调结构与装饰之间的张力。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+Architectural line, ornamental natural forms, and craft detail shape the visual space together, creating tension between structure and decoration. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ linear architectural structure, stylized botanical forms, craft detail, dark tim
 
 ## References
 
-- [格拉斯哥艺术学院官方历史页面](https://www.gsa.ac.uk/discover/the-school/history/)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Glasgow School of Art: official history](https://www.gsa.ac.uk/discover/the-school/history/)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ Get “architectural line, ornamental natural forms, craft detail, and tension b
 
 ## Overview
 
-以建筑线性结构、装饰性自然形态和工艺细节共同组织视觉空间，强调结构与装饰之间的张力。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+Architectural line, ornamental natural forms, and craft detail shape the visual space together, creating tension between structure and decoration. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ linear architectural structure, stylized botanical forms, craft detail, dark tim
 
 ## References
 
-- [格拉斯哥艺术学院官方历史页面](https://www.gsa.ac.uk/discover/the-school/history/)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Glasgow School of Art: official history](https://www.gsa.ac.uk/discover/the-school/history/)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

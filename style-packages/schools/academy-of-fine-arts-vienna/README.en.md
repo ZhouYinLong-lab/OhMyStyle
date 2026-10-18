@@ -4,7 +4,7 @@
 
 ## What this package captures
 
-以观察、比例、结构素描、受控明暗和完成度优先的学院训练组织画面。
+Academic training organizes the image around observation, proportion, structural drawing, controlled value, and finish.
 
 Academic art is a training method rather than a fixed subject list. This package emphasizes structure, light, and finish.
 

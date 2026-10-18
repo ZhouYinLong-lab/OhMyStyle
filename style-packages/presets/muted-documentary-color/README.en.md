@@ -1,6 +1,6 @@
 # Muted Documentary Color
 
-[中文](README.md)
+[Chinese version](README.md)
 
 ![Muted Documentary Color representative image](gallery-16x9.jpg)
 
@@ -17,8 +17,8 @@ Builds an observational look through restrained but not lifeless color, natural 
 
 ## Sources
 
-- [MoMA 纪实摄影术语](https://www.moma.org/collection/terms/documentary-photography)
-- [OhMyStyle 原创预设实践](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [MoMA: documentary photography terms](https://www.moma.org/collection/terms/documentary-photography)
+- [OhMyStyle original preset practice](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Rights and provenance
 
@@ -78,8 +78,8 @@ Builds an observational look through restrained but not lifeless color, natural 
 
 ## Sources
 
-- [MoMA 纪实摄影术语](https://www.moma.org/collection/terms/documentary-photography)
-- [OhMyStyle 原创预设实践](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [MoMA: documentary photography terms](https://www.moma.org/collection/terms/documentary-photography)
+- [OhMyStyle original preset practice](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Rights and provenance
 

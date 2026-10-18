@@ -1,6 +1,6 @@
 # California Institute of the Arts
 
-[中文版](README.md)
+[Chinese version](README.md)
 
 ![California Institute of the Arts representative](gallery-16x9.jpg)
 
@@ -10,7 +10,7 @@
 
 ## Overview
 
-以跨媒介、批判思考、实验制作和展览语境之间的往返，形成开放而过程导向的当代艺术提案。
+Contemporary art proposals remain open and process-led, moving between media, critical thought, experimental making, and exhibition contexts.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

@@ -9,7 +9,7 @@
 
 ## Overview
 
-以厚重结构、正面叙事秩序、简化比例和矿物色彩建立坚实而清晰的中世纪视觉语言。
+Build a sturdy, legible medieval visual language from weighty structure, frontal narrative order, simplified proportion, and mineral pigments.
 
 ## Notes
 
@@ -17,10 +17,10 @@ This package transfers observable visual decisions to a user-supplied subject. I
 
 ## Visual signature
 
-- 厚重、稳定、近乎建筑性的形体
-- 正面秩序与简化比例
-- 赭红、矿物蓝、灰绿和旧金色
-- 清晰轮廓、平面色块与有限空间深度
+- Weighty, stable forms with an almost architectural presence
+- Frontal organization and simplified proportions
+- Ochre red, mineral blue, gray-green, and aged gold
+- Clear contours, flat color fields, and limited spatial depth
 
 ## Subject independence
 
@@ -30,42 +30,42 @@ The package controls how an image is rendered, not what the user must render. Th
 
 Research sources are linked for attribution and study. External works, photographs, game images, trademarks, and platform pages remain with their respective rights holders. The generated demonstration is original and anonymous; it is not an original work by, nor an endorsement from, the cited source.
 
-- [罗马式艺术时期资料](https://www.metmuseum.org/ko/essays/romanesque-art)
+- [Romanesque art overview](https://www.metmuseum.org/ko/essays/romanesque-art)
 
 See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/manifest.csv), and the repository [NOTICE](../../../NOTICE) for the rights boundary.
 
 ## Use only this package
 
-四种方式可以按手边工具任选其一，不需要同时使用。
+Choose one of the following methods based on the tools you have available.
 
 ### Method 1: Give the package to an image-capable Agent
 
-把整个风格包目录上传给 Agent，或把本地目录路径交给它，并附上：
+Upload this package directory to an Agent, or provide its local path, and ask:
 
 ~~~
-请使用这个风格包帮助我生成图片。
+Use this style package to help me generate an image.
 
-请先读取本目录中的 identity.yaml、visual-signature.yaml、reproduction.yaml、
-prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.yaml。
-请把文件中的规则整合到生成流程中，不要只把风格名称当作 Prompt，也不要复制参考作品。
+First read identity.yaml, visual-signature.yaml, reproduction.yaml,
+prompts/base.txt, prompts/negative.txt, palette/palette.json, and evaluation.yaml.
+Integrate the package rules into the workflow; do not rely on the style name alone or copy a reference work.
 
-我的生成需求是：
-<填写人物、物体、场景、画幅和用途>
+My image request is:
+<subject, objects, scene, aspect ratio, and purpose>
 
-请先编译完整 Prompt，再调用你的生图能力。生成后按照 evaluation.yaml 检查风格特征、
-构图、颜色、材质、AI 痕迹和需求遵循度，并说明仍然存在的风险。
+Compile the full prompt first, then generate the image. After generation, check style features,
+composition, color, material, AI artifacts, and request adherence against evaluation.yaml, and report remaining risks.
 ~~~
 
 ### Method 2: Copy the Prompt
 
-打开 [prompts/base.txt](prompts/base.txt)，替换主题、人物、物体、场景和画幅；将 [prompts/negative.txt](prompts/negative.txt) 作为负面 Prompt 一并提交到支持文本生图的平台。需要更稳定时，同时参考视觉签名和调色板。
+Open [prompts/base.txt](prompts/base.txt), replace the subject, people, objects, scene, and aspect ratio, then submit [prompts/negative.txt](prompts/negative.txt) as a negative prompt to a text-to-image platform. For more consistent results, also consult the visual signature and palette.
 
 ### Method 3: Generate through your own API
 
-在你自己的生图平台或编译工具中配置 API Key，将基础 Prompt、负面约束、调色板和必要的参考清单一起提交。API Key 只保存在你的环境中；本仓库不代管密钥、不托管在线生图服务。
+Configure your API key in your own image platform or prompt compiler, then submit the base prompt, negative constraints, palette, and any required references. Keep the API key in your environment; this repository does not manage keys or host an image-generation service.
 
 ### Method 4: Local model + ComfyUI
 
-将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 [evaluation.yaml](evaluation.yaml) 做人工或自动复核。
+Connect the prompts to a local model or ComfyUI workflow. Use the palette, reproduction notes, and reference manifest to guide color, composition, material, and lighting. Review the result against [evaluation.yaml](evaluation.yaml).
 
-模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+Users manage model weights, API keys, and generated images themselves. References are for observable traits only; do not copy a source work’s composition, figures, text, trademarks, or logos.

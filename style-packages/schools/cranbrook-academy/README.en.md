@@ -1,15 +1,15 @@
-# 克兰布鲁克艺术学院
+# Cranbrook Academy of Art
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 克兰布鲁克艺术学院](gallery-16x9.jpg)
+![Representative image of Cranbrook Academy of Art](gallery-16x9.jpg)
 
-> **Category:** 设计学院
+ > **Category:** design school
 > **Directory:** `style-packages/schools/cranbrook-academy`
 
 ## Overview
 
-以驻校导师、工作室实践和跨学科材料实验为核心的设计教育传统。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A design education tradition centered on artist-in-residence mentors, studio practice, and interdisciplinary material experiments. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ studio-based practice, artist-in-residence mentorship, craft, material experimen
 
 ## References
 
-- [克兰布鲁克艺术学院官方历史与教育介绍](https://cranbrookart.edu/about/)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Cranbrook Academy of Art: official history and education overview](https://cranbrookart.edu/about/)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ Its strongest pull comes from “resident mentors, studio practice, craft, and c
 
 ## Overview
 
-以驻校导师、工作室实践和跨学科材料实验为核心的设计教育传统。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A design education tradition centered on artist-in-residence mentors, studio practice, and interdisciplinary material experiments. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ studio-based practice, artist-in-residence mentorship, craft, material experimen
 
 ## References
 
-- [克兰布鲁克艺术学院官方历史与教育介绍](https://cranbrookart.edu/about/)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Cranbrook Academy of Art: official history and education overview](https://cranbrookart.edu/about/)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

@@ -1,15 +1,15 @@
-# 斯莱德美术学院
+# Slade School of Fine Art
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 斯莱德美术学院](gallery-16x9.jpg)
+![Representative image of Slade School of Fine Art](gallery-16x9.jpg)
 
-> **Category:** 设计学院
+ > **Category:** design school
 > **Directory:** `style-packages/schools/slade-school-of-fine-art`
 
 ## Overview
 
-以开放的实验媒介、工作室研究、版画与雕塑实践建立跨学科的艺术教育方法。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+An interdisciplinary art education method built through open media experimentation, studio research, printmaking, and sculpture. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ experimental media, studio research, printmaking, sculpture, interdisciplinary p
 
 ## References
 
-- [伦敦大学学院斯莱德档案介绍](https://www.ucl.ac.uk/library/collections/ucl-digital-collections/special-collections-digital-collections/slade-archives)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [UCL: Slade archives](https://www.ucl.ac.uk/library/collections/ucl-digital-collections/special-collections-digital-collections/slade-archives)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ Get “open media, studio research, print, sculpture, and a deliberately cross-d
 
 ## Overview
 
-以开放的实验媒介、工作室研究、版画与雕塑实践建立跨学科的艺术教育方法。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+An interdisciplinary art education method built through open media experimentation, studio research, printmaking, and sculpture. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ experimental media, studio research, printmaking, sculpture, interdisciplinary p
 
 ## References
 
-- [伦敦大学学院斯莱德档案介绍](https://www.ucl.ac.uk/library/collections/ucl-digital-collections/special-collections-digital-collections/slade-archives)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [UCL: Slade archives](https://www.ucl.ac.uk/library/collections/ucl-digital-collections/special-collections-digital-collections/slade-archives)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

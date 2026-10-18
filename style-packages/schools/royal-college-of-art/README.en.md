@@ -1,15 +1,15 @@
-# 皇家艺术学院
+# Royal College of Art
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 皇家艺术学院](gallery-16x9.jpg)
+![Representative image of Royal College of Art](gallery-16x9.jpg)
 
-> **Category:** 设计学院
+ > **Category:** design school
 > **Directory:** `style-packages/schools/royal-college-of-art`
 
 ## Overview
 
-以研究驱动、跨学科、材料实验和设计实践共同推动视觉方案，重视从问题到原型的转换过程。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+Research, interdisciplinary work, material experimentation, and design practice shape proposals, with a strong focus on turning problems into prototypes. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ research-led design, material prototyping, interdisciplinary practice, inventive
 
 ## References
 
-- [皇家艺术学院官方历史页面](https://www.rca.ac.uk/more/history/)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Royal College of Art: official history](https://www.rca.ac.uk/more/history/)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ Its strongest pull comes from “research, cross-disciplinary practice, material
 
 ## Overview
 
-以研究驱动、跨学科、材料实验和设计实践共同推动视觉方案，重视从问题到原型的转换过程。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+Research, interdisciplinary work, material experimentation, and design practice shape proposals, with a strong focus on turning problems into prototypes. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ research-led design, material prototyping, interdisciplinary practice, inventive
 
 ## References
 
-- [皇家艺术学院官方历史页面](https://www.rca.ac.uk/more/history/)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Royal College of Art: official history](https://www.rca.ac.uk/more/history/)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

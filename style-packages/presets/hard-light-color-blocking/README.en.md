@@ -1,6 +1,6 @@
 # Hard-Light Color Blocking
 
-[中文](README.md)
+[Chinese version](README.md)
 
 ![Hard-Light Color Blocking representative image](gallery-16x9.jpg)
 
@@ -17,8 +17,8 @@ Organizes images through hard directional light, clear shadows, separated color 
 
 ## Sources
 
-- [MoMA 现代摄影收藏](https://www.moma.org/collection/)
-- [OhMyStyle 原创预设实践](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [MoMA: modern photography collection](https://www.moma.org/collection/)
+- [OhMyStyle original preset practice](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Rights and provenance
 
@@ -78,8 +78,8 @@ Organizes images through hard directional light, clear shadows, separated color 
 
 ## Sources
 
-- [MoMA 现代摄影收藏](https://www.moma.org/collection/)
-- [OhMyStyle 原创预设实践](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [MoMA: modern photography collection](https://www.moma.org/collection/)
+- [OhMyStyle original preset practice](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Rights and provenance
 

@@ -1,6 +1,6 @@
 # School of Visual Arts
 
-[中文版](README.md)
+[Chinese version](README.md)
 
 ![School of Visual Arts representative](gallery-16x9.jpg)
 
@@ -10,7 +10,7 @@
 
 ## Overview
 
-以跨媒介实验、清晰的概念框架和面向展示的视觉叙事，组织平面、影像、物件与空间之间的关系。
+Cross-media experimentation, clear conceptual frameworks, and presentation-focused visual narratives organize relationships among graphic design, moving image, objects, and space.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

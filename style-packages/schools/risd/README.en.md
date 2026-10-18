@@ -1,15 +1,15 @@
-# 罗德岛设计学院
+# Rhode Island School of Design
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 罗德岛设计学院](gallery-16x9.jpg)
+![Representative image of Rhode Island School of Design](gallery-16x9.jpg)
 
-> **Category:** 设计学院
+ > **Category:** design school
 > **Directory:** `style-packages/schools/risd`
 
 ## Overview
 
-以材料实践、问题意识、批判思考和跨学科制作共同推动设计学习。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+Design learning advanced through material practice, problem framing, critical thinking, and interdisciplinary making. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ material practice, question-led making, critical thinking, cross-disciplinary st
 
 ## References
 
-- [罗德岛设计学院官方历史与传统](https://www.risd.edu/about/history-and-tradition)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Rhode Island School of Design: history and tradition](https://www.risd.edu/about/history-and-tradition)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ References are for observable feature study only. Do not reproduce source compos
 
 ## Overview
 
-以材料实践、问题意识、批判思考和跨学科制作共同推动设计学习。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+Design learning advanced through material practice, problem framing, critical thinking, and interdisciplinary making. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ material practice, question-led making, critical thinking, cross-disciplinary st
 
 ## References
 
-- [罗德岛设计学院官方历史与传统](https://www.risd.edu/about/history-and-tradition)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Rhode Island School of Design: history and tradition](https://www.risd.edu/about/history-and-tradition)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

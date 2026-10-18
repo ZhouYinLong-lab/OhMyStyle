@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-This directory contains 13 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
+This directory contains 24 independent style packages. Each card uses a horizontal 16:9 representative image; click an image or name to open the package README.
 
 <table>
 <tr>
@@ -30,4 +30,15 @@ This directory contains 13 independent style packages. Each card uses a horizont
 <td width="33%"></td>
 <td width="33%"></td>
 </tr>
+</table>
+
+## Additional packages
+
+The cards below complete the category index.
+
+<table width="100%">
+<tr><td width="33%" valign="top" align="center"><a href="./academie-julian/README.en.md"><img src="./academie-julian/gallery-16x9.jpg" width="230" alt="Académie Julian representative image"></a><br><strong>Académie Julian</strong><br><a href="./academie-julian/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="./academy-of-fine-arts-vienna/README.en.md"><img src="./academy-of-fine-arts-vienna/gallery-16x9.jpg" width="230" alt="Academy of Fine Arts Vienna representative image"></a><br><strong>Academy of Fine Arts Vienna</strong><br><a href="./academy-of-fine-arts-vienna/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="./artcenter/README.en.md"><img src="./artcenter/gallery-16x9.jpg" width="230" alt="ArtCenter College of Design representative image"></a><br><strong>ArtCenter College of Design</strong><br><a href="./artcenter/README.en.md">Open README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="./california-institute-of-the-arts/README.en.md"><img src="./california-institute-of-the-arts/gallery-16x9.jpg" width="230" alt="California Institute of the Arts representative image"></a><br><strong>California Institute of the Arts</strong><br><a href="./california-institute-of-the-arts/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="./central-saint-martins/README.en.md"><img src="./central-saint-martins/gallery-16x9.jpg" width="230" alt="Central Saint Martins representative image"></a><br><strong>Central Saint Martins</strong><br><a href="./central-saint-martins/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="./design-academy-eindhoven/README.en.md"><img src="./design-academy-eindhoven/gallery-16x9.jpg" width="230" alt="Design Academy Eindhoven representative image"></a><br><strong>Design Academy Eindhoven</strong><br><a href="./design-academy-eindhoven/README.en.md">Open README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="./ecal/README.en.md"><img src="./ecal/gallery-16x9.jpg" width="230" alt="ECAL representative image"></a><br><strong>ECAL</strong><br><a href="./ecal/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="./royal-academy-schools/README.en.md"><img src="./royal-academy-schools/gallery-16x9.jpg" width="230" alt="Royal Academy Schools representative image"></a><br><strong>Royal Academy Schools</strong><br><a href="./royal-academy-schools/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="./royal-danish-academy/README.en.md"><img src="./royal-danish-academy/gallery-16x9.jpg" width="230" alt="Royal Danish Academy representative image"></a><br><strong>Royal Danish Academy</strong><br><a href="./royal-danish-academy/README.en.md">Open README</a></td></tr>
+<tr><td width="33%" valign="top" align="center"><a href="./school-of-the-art-institute-of-chicago/README.en.md"><img src="./school-of-the-art-institute-of-chicago/gallery-16x9.jpg" width="230" alt="School of the Art Institute of Chicago representative image"></a><br><strong>School of the Art Institute of Chicago</strong><br><a href="./school-of-the-art-institute-of-chicago/README.en.md">Open README</a></td><td width="33%" valign="top" align="center"><a href="./school-of-visual-arts/README.en.md"><img src="./school-of-visual-arts/gallery-16x9.jpg" width="230" alt="School of Visual Arts representative image"></a><br><strong>School of Visual Arts</strong><br><a href="./school-of-visual-arts/README.en.md">Open README</a></td><td width="33%"></td></tr>
 </table>

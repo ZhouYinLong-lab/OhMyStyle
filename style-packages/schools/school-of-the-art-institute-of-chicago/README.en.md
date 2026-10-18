@@ -1,6 +1,6 @@
 # School of the Art Institute of Chicago
 
-[中文版](README.md)
+[Chinese version](README.md)
 
 ![School of the Art Institute of Chicago representative](gallery-16x9.jpg)
 
@@ -10,7 +10,7 @@
 
 ## Overview
 
-以跨学科研究、过程公开和展览语境中的实验性，连接绘画、物件、影像、空间与批评性编辑。
+Interdisciplinary research, visible process, and exhibition-based experimentation connect painting, objects, moving image, space, and critical editing.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

@@ -1,6 +1,6 @@
 # Natural Window Light
 
-[中文](README.md)
+[Chinese version](README.md)
 
 ![Natural Window Light representative image](gallery-16x9.jpg)
 
@@ -14,13 +14,13 @@ This independent style package for **Natural Window Light** turns public referen
 
 ## Visual focus
 
-大窗软光、自然阴影、低饱和材质与真实镜头表现. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Soft light from a large window, natural shadows, low-saturation materials, and a realistic lens response. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
 ## Reference source
 
-- [Anonymous photographic study / 摄影预设](https://www.loc.gov/photos/)
+- [Anonymous photographic study / photography preset](https://www.loc.gov/photos/)
 
 ## Rights and attribution
 
@@ -78,13 +78,13 @@ This independent style package for **Natural Window Light** turns public referen
 
 ## Visual focus
 
-大窗软光、自然阴影、低饱和材质与真实镜头表现. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Soft light from a large window, natural shadows, low-saturation materials, and a realistic lens response. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
 ## Reference source
 
-- [Anonymous photographic study / 摄影预设](https://www.loc.gov/photos/)
+- [Anonymous photographic study / photography preset](https://www.loc.gov/photos/)
 
 ## Rights and attribution
 

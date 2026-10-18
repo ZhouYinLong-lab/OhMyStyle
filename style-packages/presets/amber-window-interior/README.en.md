@@ -1,15 +1,15 @@
-# 琥珀窗光室内
+# Amber Window-Light Interior
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 琥珀窗光室内](gallery-16x9.jpg)
+![Representative image for Amber Window-Light Interior](gallery-16x9.jpg)
 
-> **Category:** 摄影
+> **Category:** photography
 > **Directory:** `style-packages/presets/amber-window-interior`
 
 ## Overview
 
-以温暖窗光、木材和织物的真实表面建立具有时间感但不复古的室内预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A timeworn yet non-retro interior preset built from warm window light and the honest surfaces of wood and fabric. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ amber window light, warm wood, linen texture, quiet interior geometry.
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ The character of this package sits in “warm window light, honest wood and text
 
 ## Overview
 
-以温暖窗光、木材和织物的真实表面建立具有时间感但不复古的室内预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A timeworn yet non-retro interior preset built from warm window light and the honest surfaces of wood and fabric. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ amber window light, warm wood, linen texture, quiet interior geometry.
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

@@ -1,6 +1,6 @@
 # Ulm School
 
-[中文](README.md)
+[Chinese version](README.md)
 
 ![Ulm School representative image](gallery-16x9.jpg)
 
@@ -14,13 +14,13 @@ This independent style package for **Ulm School** turns public references and ob
 
 ## Visual focus
 
-功能主义、系统化网格、信息清晰与中性材料. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Functionalism, systematic grids, information clarity, and neutral materials. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
 ## Reference source
 
-- [Ulm designers / 20世纪50至60年代](https://commons.wikimedia.org/w/index.php?search=Ulm+School+design&title=Special:MediaSearch&type=image)
+- [Ulm designers / the 1950s–60s](https://commons.wikimedia.org/w/index.php?search=Ulm+School+design&title=Special:MediaSearch&type=image)
 
 ## Rights and attribution
 
@@ -78,13 +78,13 @@ This independent style package for **Ulm School** turns public references and ob
 
 ## Visual focus
 
-功能主义、系统化网格、信息清晰与中性材料. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Functionalism, systematic grids, information clarity, and neutral materials. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
 ## Reference source
 
-- [Ulm designers / 20世纪50至60年代](https://commons.wikimedia.org/w/index.php?search=Ulm+School+design&title=Special:MediaSearch&type=image)
+- [Ulm designers / the 1950s–60s](https://commons.wikimedia.org/w/index.php?search=Ulm+School+design&title=Special:MediaSearch&type=image)
 
 ## Rights and attribution
 

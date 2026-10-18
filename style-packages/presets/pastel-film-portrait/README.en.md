@@ -1,6 +1,6 @@
 # Pastel Film Portrait
 
-[中文](README.md)
+[Chinese version](README.md)
 
 ![Pastel Film Portrait representative image](gallery-16x9.jpg)
 
@@ -14,13 +14,13 @@ This independent style package for **Pastel Film Portrait** turns public referen
 
 ## Visual focus
 
-自然窗光、粉彩服饰、柔和肤色与细腻胶片颗粒. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Natural window light, pastel clothing, soft skin tones, and fine film grain. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
 ## Reference source
 
-- [Anonymous photographic study / 摄影预设](https://www.loc.gov/photos/)
+- [Anonymous photographic study / photography preset](https://www.loc.gov/photos/)
 
 ## Rights and attribution
 
@@ -78,13 +78,13 @@ This independent style package for **Pastel Film Portrait** turns public referen
 
 ## Visual focus
 
-自然窗光、粉彩服饰、柔和肤色与细腻胶片颗粒. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Natural window light, pastel clothing, soft skin tones, and fine film grain. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
 ## Reference source
 
-- [Anonymous photographic study / 摄影预设](https://www.loc.gov/photos/)
+- [Anonymous photographic study / photography preset](https://www.loc.gov/photos/)
 
 ## Rights and attribution
 

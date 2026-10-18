@@ -1,15 +1,15 @@
-# 灰粉影棚静物
+# Dusty-Rose Studio Still Life
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 灰粉影棚静物](gallery-16x9.jpg)
+![Representative image for Dusty-Rose Studio Still Life](gallery-16x9.jpg)
 
-> **Category:** 摄影
+> **Category:** photography
 > **Directory:** `style-packages/presets/dusty-rose-studio`
 
 ## Overview
 
-以灰粉背景、纸张形体和哑光材质建立柔和而现代的静物影棚预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A soft, contemporary still-life studio preset built from a dusty-rose backdrop, paper forms, and matte materials. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ dusty rose seamless background, paper forms, matte materials, soft frontal light
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ Get “dusty-rose ground, paper-like forms, matte surfaces, and a soft contempor
 
 ## Overview
 
-以灰粉背景、纸张形体和哑光材质建立柔和而现代的静物影棚预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A soft, contemporary still-life studio preset built from a dusty-rose backdrop, paper forms, and matte materials. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ dusty rose seamless background, paper forms, matte materials, soft frontal light
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

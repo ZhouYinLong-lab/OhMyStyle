@@ -1,6 +1,6 @@
 # Central Saint Martins
 
-[中文版](README.md)
+[Chinese version](README.md)
 
 ![Central Saint Martins representative](gallery-16x9.jpg)
 
@@ -10,7 +10,7 @@
 
 ## Overview
 
-以跨媒介实验、研究驱动的视觉沟通和材料工作坊把设计当作思考与制作共同推进的过程。
+Design is treated as thinking and making in tandem through cross-media experimentation, research-led visual communication, and material workshops.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

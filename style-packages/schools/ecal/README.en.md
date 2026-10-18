@@ -1,6 +1,6 @@
 # ECAL
 
-[中文版](README.md)
+[Chinese version](README.md)
 
 ![ECAL representative](gallery-16x9.jpg)
 
@@ -10,7 +10,7 @@
 
 ## Overview
 
-以跨学科、研究驱动和专业制作把摄影、平面、产品与数字媒介放在同一实验场中。
+Photography, graphic, product, and digital media share one experimental field shaped by interdisciplinary research and professional making.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

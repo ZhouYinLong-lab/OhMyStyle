@@ -1,6 +1,6 @@
 # Royal Danish Academy
 
-[中文版](README.md)
+[Chinese version](README.md)
 
 ![Royal Danish Academy representative](gallery-16x9.jpg)
 
@@ -10,7 +10,7 @@
 
 ## Overview
 
-以建筑、设计和材料研究之间的协作方法，强调结构清晰、环境责任与可验证的制作过程。
+Collaborative work across architecture, design, and material research emphasizes clear structure, environmental responsibility, and verifiable making processes.
 
 This is an independently usable style package. It turns observable medium,
 composition, lighting, color, surface, texture, and reproduction decisions into

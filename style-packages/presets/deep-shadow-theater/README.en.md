@@ -1,15 +1,15 @@
-# 深影剧场光
+# Deep-Shadow Theater Light
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 深影剧场光](gallery-16x9.jpg)
+![Representative image for Deep-Shadow Theater Light](gallery-16x9.jpg)
 
-> **Category:** 摄影
+> **Category:** photography
 > **Directory:** `style-packages/presets/deep-shadow-theater`
 
 ## Overview
 
-以单一控制光源、深色负空间和雕塑化轮廓建立克制的剧场式光线预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A restrained theatrical-lighting preset shaped by one controlled light source, dark negative space, and sculptural contours. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ single controlled spotlight, deep negative space, sculptural silhouette, restrai
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ Its strongest pull comes from “one controlled source, deep negative space, and
 
 ## Overview
 
-以单一控制光源、深色负空间和雕塑化轮廓建立克制的剧场式光线预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A restrained theatrical-lighting preset shaped by one controlled light source, dark negative space, and sculptural contours. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ single controlled spotlight, deep negative space, sculptural silhouette, restrai
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

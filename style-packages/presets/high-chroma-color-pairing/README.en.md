@@ -1,6 +1,6 @@
 # High-Chroma Color Pairing
 
-[中文](README.md)
+[Chinese version](README.md)
 
 ![High-Chroma Color Pairing representative image](gallery-16x9.jpg)
 

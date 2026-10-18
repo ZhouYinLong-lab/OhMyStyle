@@ -1,6 +1,6 @@
 # Académie Julian
 
-[中文版](README.md)
+[Chinese version](README.md)
 
 ![Académie Julian representative](gallery-16x9.jpg)
 

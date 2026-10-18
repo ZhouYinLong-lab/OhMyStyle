@@ -1,6 +1,6 @@
 # New Bauhaus
 
-[中文](README.md)
+[Chinese version](README.md)
 
 ![New Bauhaus representative image](gallery-16x9.jpg)
 
@@ -14,7 +14,7 @@ This independent style package for **New Bauhaus** turns public references and o
 
 ## Visual focus
 
-基础几何、实验构成、材料感与形式功能统一. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Basic geometry, experimental composition, material presence, and unity of form and function. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
@@ -78,7 +78,7 @@ This independent style package for **New Bauhaus** turns public references and o
 
 ## Visual focus
 
-基础几何、实验构成、材料感与形式功能统一. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Basic geometry, experimental composition, material presence, and unity of form and function. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 

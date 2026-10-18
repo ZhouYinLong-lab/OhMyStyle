@@ -9,7 +9,7 @@
 
 ## Overview
 
-模拟湿版火棉胶工艺留下的玻璃板质感、银灰与琥珀色调、柔化边缘和手工处理痕迹。
+Recreate the material character of wet-plate collodion: glass-plate presence, silver-gray and amber tones, softened edges, and traces of hand processing.
 
 ## Notes
 
@@ -17,10 +17,10 @@ This package transfers observable visual decisions to a user-supplied subject. I
 
 ## Visual signature
 
-- 银灰、烟褐和有限琥珀色的化学影调
-- 玻璃板边缘、轻微涂布不均和手工处理痕迹
-- 柔化但仍可辨认的轮廓
-- 局部高光与暗部的非均匀反应
+- Chemically produced silver-gray, smoky brown, and restrained amber tones
+- Glass-plate edges, slight coating irregularities, and signs of hand processing
+- Softened but still recognizable contours
+- Uneven response in selected highlights and shadows
 
 ## Subject independence
 
@@ -30,42 +30,42 @@ The package controls how an image is rendered, not what the user must render. Th
 
 Research sources are linked for attribution and study. External works, photographs, game images, trademarks, and platform pages remain with their respective rights holders. The generated demonstration is original and anonymous; it is not an original work by, nor an endorsement from, the cited source.
 
-- [摄影工艺与湿版火棉胶资料](https://www.vam.ac.uk/articles/photographic-processes)
+- [Photographic processes and wet-plate collodion](https://www.vam.ac.uk/articles/photographic-processes)
 
 See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/manifest.csv), and the repository [NOTICE](../../../NOTICE) for the rights boundary.
 
 ## Use only this package
 
-四种方式可以按手边工具任选其一，不需要同时使用。
+Choose one of the following methods based on the tools you have available.
 
 ### Method 1: Give the package to an image-capable Agent
 
-把整个风格包目录上传给 Agent，或把本地目录路径交给它，并附上：
+Upload this package directory to an Agent, or provide its local path, and ask:
 
 ~~~
-请使用这个风格包帮助我生成图片。
+Use this style package to help me generate an image.
 
-请先读取本目录中的 identity.yaml、visual-signature.yaml、reproduction.yaml、
-prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.yaml。
-请把文件中的规则整合到生成流程中，不要只把风格名称当作 Prompt，也不要复制参考作品。
+First read identity.yaml, visual-signature.yaml, reproduction.yaml,
+prompts/base.txt, prompts/negative.txt, palette/palette.json, and evaluation.yaml.
+Integrate the package rules into the workflow; do not rely on the style name alone or copy a reference work.
 
-我的生成需求是：
-<填写人物、物体、场景、画幅和用途>
+My image request is:
+<subject, objects, scene, aspect ratio, and purpose>
 
-请先编译完整 Prompt，再调用你的生图能力。生成后按照 evaluation.yaml 检查风格特征、
-构图、颜色、材质、AI 痕迹和需求遵循度，并说明仍然存在的风险。
+Compile the full prompt first, then generate the image. After generation, check style features,
+composition, color, material, AI artifacts, and request adherence against evaluation.yaml, and report remaining risks.
 ~~~
 
 ### Method 2: Copy the Prompt
 
-打开 [prompts/base.txt](prompts/base.txt)，替换主题、人物、物体、场景和画幅；将 [prompts/negative.txt](prompts/negative.txt) 作为负面 Prompt 一并提交到支持文本生图的平台。需要更稳定时，同时参考视觉签名和调色板。
+Open [prompts/base.txt](prompts/base.txt), replace the subject, people, objects, scene, and aspect ratio, then submit [prompts/negative.txt](prompts/negative.txt) as a negative prompt to a text-to-image platform. For more consistent results, also consult the visual signature and palette.
 
 ### Method 3: Generate through your own API
 
-在你自己的生图平台或编译工具中配置 API Key，将基础 Prompt、负面约束、调色板和必要的参考清单一起提交。API Key 只保存在你的环境中；本仓库不代管密钥、不托管在线生图服务。
+Configure your API key in your own image platform or prompt compiler, then submit the base prompt, negative constraints, palette, and any required references. Keep the API key in your environment; this repository does not manage keys or host an image-generation service.
 
 ### Method 4: Local model + ComfyUI
 
-将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 [evaluation.yaml](evaluation.yaml) 做人工或自动复核。
+Connect the prompts to a local model or ComfyUI workflow. Use the palette, reproduction notes, and reference manifest to guide color, composition, material, and lighting. Review the result against [evaluation.yaml](evaluation.yaml).
 
-模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+Users manage model weights, API keys, and generated images themselves. References are for observable traits only; do not copy a source work’s composition, figures, text, trademarks, or logos.

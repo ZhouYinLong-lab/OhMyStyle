@@ -1,6 +1,6 @@
 # Design Academy Eindhoven
 
-[中文版](README.md)
+[Chinese version](README.md)
 
 ![Design Academy Eindhoven representative](gallery-16x9.jpg)
 

@@ -1,15 +1,15 @@
-# 加州艺术学院
+# California College of the Arts
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 加州艺术学院](gallery-16x9.jpg)
+![Representative image of California College of the Arts](gallery-16x9.jpg)
 
-> **Category:** 设计学院
+ > **Category:** design school
 > **Directory:** `style-packages/schools/california-college-of-the-arts`
 
 ## Overview
 
-以湾区开放工作室、艺术与设计协作、建筑模型和可持续材料实验组织视觉学习。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+Visual learning shaped by Bay Area open studios, collaboration across art and design, architectural models, and experiments with sustainable materials. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ open studio, art-design collaboration, architecture models, sustainable material
 
 ## References
 
-- [加州艺术学院官方历史与学校介绍](https://www.cca.edu/about/?vm=r)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [California College of the Arts: official history and overview](https://www.cca.edu/about/?vm=r)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ References are for observable feature study only. Do not reproduce source compos
 
 ## Overview
 
-以湾区开放工作室、艺术与设计协作、建筑模型和可持续材料实验组织视觉学习。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+Visual learning shaped by Bay Area open studios, collaboration across art and design, architectural models, and experiments with sustainable materials. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ open studio, art-design collaboration, architecture models, sustainable material
 
 ## References
 
-- [加州艺术学院官方历史与学校介绍](https://www.cca.edu/about/?vm=r)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [California College of the Arts: official history and overview](https://www.cca.edu/about/?vm=r)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

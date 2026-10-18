@@ -1,6 +1,6 @@
 # Bauhaus
 
-[中文](README.md)
+[Chinese version](README.md)
 
 ![Bauhaus representative image](gallery-16x9.jpg)
 
@@ -17,8 +17,8 @@ Emphasizes geometric order, basic forms, primary-color relationships, functional
 
 ## Sources
 
-- [包豪斯德绍官方历史介绍](https://www.bauhaus.de/en/das-bauhaus/)
-- [MoMA 包豪斯收藏检索](https://www.moma.org/collection/?q=bauhaus)
+- [Bauhaus Dessau: official history](https://www.bauhaus.de/en/das-bauhaus/)
+- [MoMA: Bauhaus collection search](https://www.moma.org/collection/?q=bauhaus)
 
 ## Rights and provenance
 
@@ -78,8 +78,8 @@ Emphasizes geometric order, basic forms, primary-color relationships, functional
 
 ## Sources
 
-- [包豪斯德绍官方历史介绍](https://www.bauhaus.de/en/das-bauhaus/)
-- [MoMA 包豪斯收藏检索](https://www.moma.org/collection/?q=bauhaus)
+- [Bauhaus Dessau: official history](https://www.bauhaus.de/en/das-bauhaus/)
+- [MoMA: Bauhaus collection search](https://www.moma.org/collection/?q=bauhaus)
 
 ## Rights and provenance
 

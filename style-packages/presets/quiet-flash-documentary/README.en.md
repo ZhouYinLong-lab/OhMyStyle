@@ -1,15 +1,15 @@
-# 安静直闪纪实
+# Quiet Direct-Flash Documentary
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 安静直闪纪实](gallery-16x9.jpg)
+![Representative image for Quiet Direct-Flash Documentary](gallery-16x9.jpg)
 
-> **Category:** 摄影
+> **Category:** photography
 > **Directory:** `style-packages/presets/quiet-flash-documentary`
 
 ## Overview
 
-以克制的机顶直闪、真实投影和不修饰的环境细节建立低戏剧性的纪实预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A low-drama documentary preset shaped by restrained on-camera flash, realistic cast shadows, and unretouched environmental detail. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ quiet on-camera flash, honest hard shadows, ordinary environment, documentary re
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ References are for observable feature study only. Do not reproduce source compos
 
 ## Overview
 
-以克制的机顶直闪、真实投影和不修饰的环境细节建立低戏剧性的纪实预设。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A low-drama documentary preset shaped by restrained on-camera flash, realistic cast shadows, and unretouched environmental detail. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ quiet on-camera flash, honest hard shadows, ordinary environment, documentary re
 
 ## References
 
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
-- [本包的原创整理声明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Original curation statement](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包为 OhMyStyle 独立整理的原创预设，不指向某位艺术家、摄影师、学校或具体作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This is an original preset independently curated for OhMyStyle. It is not associated with any specific artist, photographer, school, or artwork. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

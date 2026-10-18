@@ -1,15 +1,15 @@
-# 巴黎美术学院
+# École des Beaux-Arts de Paris
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 巴黎美术学院](gallery-16x9.jpg)
+![Representative image of École des Beaux-Arts de Paris](gallery-16x9.jpg)
 
-> **Category:** 设计学院
+ > **Category:** design school
 > **Directory:** `style-packages/schools/paris-beaux-arts`
 
 ## Overview
 
-以工作室观察、经典比例、材料训练和历史连续性建立学院派的基础方法。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A foundational academic method built through studio observation, classical proportion, material training, and historical continuity. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ atelier observation, classical proportion, material discipline, historical conti
 
 ## References
 
-- [巴黎美术学院官方学校介绍](https://beauxartsparis.fr/fr/ecole/presentation-ecole/presentation)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [École des Beaux-Arts de Paris: official overview](https://beauxartsparis.fr/fr/ecole/presentation-ecole/presentation)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ Start with “studio observation, classical proportion, material training, and c
 
 ## Overview
 
-以工作室观察、经典比例、材料训练和历史连续性建立学院派的基础方法。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A foundational academic method built through studio observation, classical proportion, material training, and historical continuity. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ atelier observation, classical proportion, material discipline, historical conti
 
 ## References
 
-- [巴黎美术学院官方学校介绍](https://beauxartsparis.fr/fr/ecole/presentation-ecole/presentation)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [École des Beaux-Arts de Paris: official overview](https://beauxartsparis.fr/fr/ecole/presentation-ecole/presentation)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 

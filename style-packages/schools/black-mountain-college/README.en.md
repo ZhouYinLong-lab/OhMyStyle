@@ -1,15 +1,15 @@
-# 黑山学院
+# Black Mountain College
 
-[中文](README.md)
+[Chinese version](README.md)
 
-![Representative image of 黑山学院](gallery-16x9.jpg)
+![Representative image of Black Mountain College](gallery-16x9.jpg)
 
-> **Category:** 设计学院
+ > **Category:** design school
 > **Directory:** `style-packages/schools/black-mountain-college`
 
 ## Overview
 
-以实践、协作、实验和跨媒介学习为核心的进步艺术教育传统，强调开放过程而非固定样式。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A progressive art education tradition centered on hands-on practice, collaboration, experimentation, and cross-media learning, with an emphasis on open processes rather than fixed styles. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -17,12 +17,12 @@ collaborative making, experimental learning, open studio, cross-media practice.
 
 ## References
 
-- [黑山学院博物馆与艺术中心历史介绍](https://www.blackmountaincollege.org/explore/)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Black Mountain College Museum + Arts Center: history](https://www.blackmountaincollege.org/explore/)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
@@ -50,7 +50,7 @@ The character of this package sits in “practice, collaboration, experiment, an
 
 ## Overview
 
-以实践、协作、实验和跨媒介学习为核心的进步艺术教育传统，强调开放过程而非固定样式。 The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
+A progressive art education tradition centered on hands-on practice, collaboration, experimentation, and cross-media learning, with an emphasis on open processes rather than fixed styles. The package turns medium, composition, lighting, palette, material, and surface decisions into executable rules that can be transferred to new subjects and scenes.
 
 ## Observable features
 
@@ -58,12 +58,12 @@ collaborative making, experimental learning, open studio, cross-media practice.
 
 ## References
 
-- [黑山学院博物馆与艺术中心历史介绍](https://www.blackmountaincollege.org/explore/)
-- [OhMyStyle 项目说明](https://github.com/ZhouYinLong-lab/OhMyStyle)
+- [Black Mountain College Museum + Arts Center: history](https://www.blackmountaincollege.org/explore/)
+- [OhMyStyle project overview](https://github.com/ZhouYinLong-lab/OhMyStyle)
 
 ## Origin and rights
 
-本包提取的是学校公开历史与教学传统中的可观察方法，不复制任何单一作品、校徽、课程页面排版或在校作品。 External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
+This package extracts observable methods from the school’s public history and teaching tradition. It does not reproduce any individual artwork, logo, course-page layout, or student work. External works, school names, marks, and page content remain with their respective rights holders. The generated example is a new anonymous scene and does not imply endorsement or authorization.
 
 ## Use only this package
 
