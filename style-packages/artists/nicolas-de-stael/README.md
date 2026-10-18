@@ -73,3 +73,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 `evaluation.yaml` 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 实验方向：演出场景色块节奏
+
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 只在用户指定舞蹈或音乐演出时启用：保留人物数量与动作，把人物和乐器压成倾角不同的厚重色块，仅用少量边线提示动作。演出类型、乐器、咖啡馆或观众都由用户决定。对照图和生成限制见 [`comparisons/`](comparisons/README.md)。

@@ -207,6 +207,7 @@ the same prompt wording.
 | [Escher single impossible junction](../style-packages/artists/mc-escher/art-direction.yaml) | A user-specified object has one localized perspective contradiction while its remaining structure stays readable | `text_only`, declare `single-impossible-junction` |
 | [Michelangelo counterturned weight-bearing figure](../style-packages/artists/michelangelo-buonarroti/art-direction.yaml) | One standing figure is anchored by a weight-bearing leg, with a controlled opposing turn through pelvis and shoulders | `text_only`, declare `counterturned-weight-bearing-figure` |
 | [Moholy-Nagy transparent-plane shadow study](../style-packages/artists/moholy-nagy/art-direction.yaml) | One translucent plane, one directional light, and one principal cast shadow form a sparse optical relation | `text_only`, declare `photogram-shadow-study` |
+| [Nicolas de Staël performance gesture blocks](../style-packages/artists/nicolas-de-stael/art-direction.yaml) | User-requested dancers or musicians become a few angled color masses with sparse action cues | `text_only`, declare `dance-or-music-performance` |
 
 ## 6. Execution routes
 

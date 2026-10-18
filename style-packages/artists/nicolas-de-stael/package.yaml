@@ -2,10 +2,11 @@ id: nicolas-de-stael
 name: 尼古拉·德·斯塔埃尔
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以厚重而清晰的色块、被压缩的空间和介于具象与抽象之间的形体，建立具有重量感的开放绘画语言。
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

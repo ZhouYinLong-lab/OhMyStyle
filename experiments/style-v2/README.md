@@ -112,6 +112,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [埃舍尔单一不可能连接](../../style-packages/artists/mc-escher/art-direction.yaml) | 普通物体仅在一个指定连接处产生透视矛盾，其余保持一致透视 | text_only | single-impossible-junction |
 | [米开朗基罗承重与反向扭转](../../style-packages/artists/michelangelo-buonarroti/art-direction.yaml) | 单人站姿由承重腿锚定，骨盆与肩线反向转动 | text_only | counterturned-weight-bearing-figure |
 | [莫霍利-纳吉透明平面投影研究](../../style-packages/artists/moholy-nagy/art-direction.yaml) | 一块半透明平面与单束方向光形成清晰投影及开放负形 | text_only | photogram-shadow-study |
+| [德·斯塔埃尔表演者色块节奏](../../style-packages/artists/nicolas-de-stael/art-direction.yaml) | 表演者各以少量倾斜色面表现节奏，乐器只保留必要线索 | text_only | dance-or-music-performance |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

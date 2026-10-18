@@ -1,5 +1,5 @@
 package_id: nicolas-de-stael
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
@@ -7,6 +7,14 @@ sources:
     title: 'Nicolas de Staël'
     authority: 'National Gallery of Art'
     supports: source traceability and package scope
+  - url: 'https://www.nga.gov/artworks/61384-ballet'
+    title: 'Ballet'
+    authority: 'National Gallery of Art'
+    supports: work identification for a user-selected performance-scene direction
+  - url: 'https://www.nga.gov/artworks/53075-musique-de-cafe'
+    title: 'Musique de Cafe'
+    authority: 'National Gallery of Art'
+    supports: work identification for a user-selected music-scene direction
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

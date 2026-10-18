@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "nicolas-de-stael",
+    "name": "尼古拉·德·斯塔埃尔",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\nicolas-de-stael"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Three musicians performing together on a small stage: one violinist, one cellist, and one flutist, horizontal 16:9.",
+  "prompt": "USER SUBJECT: Three musicians performing together on a small stage: one violinist, one cellist, and one flutist, horizontal 16:9.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting_with_compressed_color_planes\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [performer-color-masses] Reduce each requested performer to no more than four broad opaque color masses. Give each body a distinct dominant angle or height; omit facial features, garment seams, and small anatomy unless the user requests them, so the performer remains readable through silhouette, instrument, and gesture rather than illustration detail.\n- [alternating-performance-rhythm] Alternate upright and oblique blocks across the requested action; vary their scale and intervals so the scene has a readable pulse without imposing a fixed left-to-right order.\n- [selective-action-cues] Use only a few narrow contrasting marks to indicate instrument direction and the main arm gesture; leave faces, hands, and clothing largely unmodeled so the larger color masses stay dominant.\n- [movement-in-painted-masses] Keep each requested performer countable, use alternating weighted planes to carry the motion, and reserve narrow marks for the instruments or gestures that identify the action.\nREQUIREMENT: Activate only for a user-requested dance or music performance.\nREQUIREMENT: Preserve performer count, identity, instruments, choreography, and stated setting.\nREQUIREMENT: Use a few broad, textured color planes per performer and vary their orientations to express motion.\nREQUIREMENT: Keep a small number of contour cues for the requested gesture or instrument.\nREQUIREMENT: Review performer separation and action readability after generation.",
+  "negative_prompt": "polished portraits, uniform body shapes, and copied figure placement\ndecorative zigzags, unrequested audience rows, and copied composition\ndetailed musical notation, readable text, and thin uniform outlining\nadding cafés, stadiums, audiences, instruments, or named settings unless requested\nchanging the requested choreography or performance type\ncopying a named painting, exact pose, or recognizable arrangement",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "nicolas-de-stael-performance-gesture-blocks",
+    "name": "Nicolas de Staël performance gesture blocks",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\nicolas-de-stael\\art-direction.yaml",
+    "sha256": "ab817cb13240ccaab6d5095569b151e355cf30833a1764c6e4c8cc5814c49d4c",
+    "active_rule_ids": [
+      "performer-color-masses",
+      "alternating-performance-rhythm",
+      "selective-action-cues"
+    ],
+    "contexts": [
+      "dance-or-music-performance"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested dance or music performance.",
+      "Preserve performer count, identity, instruments, choreography, and stated setting.",
+      "Use a few broad, textured color planes per performer and vary their orientations to express motion.",
+      "Keep a small number of contour cues for the requested gesture or instrument.",
+      "Review performer separation and action readability after generation."
+    ],
+    "avoid": [
+      "adding cafés, stadiums, audiences, instruments, or named settings unless requested",
+      "changing the requested choreography or performance type",
+      "copying a named painting, exact pose, or recognizable arrangement"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting_with_compressed_color_planes",
+      "representation": "stylized",
+      "description": "An optional direction for a user-requested dance or music performance. Preserve the requested performer count and action, but translate bodies, instruments, and the stage into a few broad, weighted color masses. Vary vertical and diagonal blocks to carry rhythm; use only a few narrow edges or gaps to keep gestures and instruments distinguishable. It does not prescribe a café, stadium, specific dance, instrument, or named composition.",
+      "required_contexts": [
+        "dance-or-music-performance"
+      ],
+      "incompatible_contexts": [
+        "photorealistic-concert-documentation",
+        "quiet-unoccupied-landscape",
+        "detailed-solo-portrait"
+      ],
+      "limitations": [
+        "Activate only when the user requests a dance or music performance scene.",
+        "Preserve requested performer count, identities, instruments, choreography, and setting.",
+        "Make figures recognizable through pose and color-plane relationship, not anatomical detail.",
+        "Do not add a café, stage, audience, sports field, or instrument unless it appears in the user's request.",
+        "Do not reproduce a named painting or its figure arrangement."
+      ]
+    },
+    "rules": [
+      {
+        "id": "performer-color-masses",
+        "axis": "figure_and_color_plane",
+        "importance": "core",
+        "applies_when": "The user requests one or more performers in a dance or music scene.",
+        "instruction": "Reduce each requested performer to no more than four broad opaque color masses. Give each body a distinct dominant angle or height; omit facial features, garment seams, and small anatomy unless the user requests them, so the performer remains readable through silhouette, instrument, and gesture rather than illustration detail.",
+        "observable": "Performer count and action remain readable from silhouettes, distinct block angles, instruments, and a few gesture cues; each figure visibly uses a small number of large color masses.",
+        "reject_when": "Bodies merge into one undifferentiated block, the requested count changes, or faces, garment folds, and anatomy details dominate instead of a few broad color masses.",
+        "evidence": {
+          "source_ids": [
+            "nga-de-stael-ballet"
+          ],
+          "basis": "direct_visual_observation",
+          "visual_review": "pending"
+        },
+        "avoid": "polished portraits, uniform body shapes, and copied figure placement"
+      },
+      {
+        "id": "alternating-performance-rhythm",
+        "axis": "composition_and_motion",
+        "importance": "core",
+        "applies_when": "The user requests multiple performers or a visible movement phrase.",
+        "instruction": "Alternate upright and oblique blocks across the requested action; vary their scale and intervals so the scene has a readable pulse without imposing a fixed left-to-right order.",
+        "observable": "The eye can follow the movement across distinct masses while open gaps prevent a crowded, continuous silhouette.",
+        "reject_when": "All figures repeat one static pose, the user-requested choreography changes, or unrelated diagonal shapes dominate the action.",
+        "evidence": {
+          "source_ids": [
+            "nga-de-stael-ballet",
+            "nga-de-stael-musique-de-cafe"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "decorative zigzags, unrequested audience rows, and copied composition"
+      },
+      {
+        "id": "selective-action-cues",
+        "axis": "contour_and_detail_hierarchy",
+        "importance": "supporting",
+        "applies_when": "The scene includes instruments, held props, or identifiable dance gestures.",
+        "instruction": "Use only a few narrow contrasting marks to indicate instrument direction and the main arm gesture; leave faces, hands, and clothing largely unmodeled so the larger color masses stay dominant.",
+        "observable": "Requested instruments and the main action remain identifiable, while each performer still reads first as a handful of weighted paint planes rather than a detailed illustration.",
+        "reject_when": "Instrument or limb cues disappear, or outlines and small details cover most color fields.",
+        "evidence": {
+          "source_ids": [
+            "nga-de-stael-musique-de-cafe"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "detailed musical notation, readable text, and thin uniform outlining"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "movement-in-painted-masses",
+        "rule_ids": [
+          "performer-color-masses",
+          "alternating-performance-rhythm",
+          "selective-action-cues"
+        ],
+        "instruction": "Keep each requested performer countable, use alternating weighted planes to carry the motion, and reserve narrow marks for the instruments or gestures that identify the action.",
+        "observable": "The scene reads as the requested performance through silhouettes, angle, and a small number of action cues while thick color masses remain dominant."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nga-de-stael-ballet",
+        "kind": "museum_collection_record",
+        "url": "https://www.nga.gov/artworks/61384-ballet"
+      },
+      {
+        "id": "nga-de-stael-musique-de-cafe",
+        "kind": "museum_collection_record",
+        "url": "https://www.nga.gov/artworks/53075-musique-de-cafe"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "ab817cb13240ccaab6d5095569b151e355cf30833a1764c6e4c8cc5814c49d4c",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

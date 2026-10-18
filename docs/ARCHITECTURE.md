@@ -221,6 +221,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [埃舍尔单一不可能连接](../style-packages/artists/mc-escher/art-direction.yaml) | 让普通物体只在一个指定连接处产生透视矛盾，其余结构保持可读 | `text_only`，声明 `single-impossible-junction` |
 | [米开朗基罗承重与反向扭转](../style-packages/artists/michelangelo-buonarroti/art-direction.yaml) | 单人站姿由一条承重腿锚定，骨盆与肩线受控反向，衣褶解释体积 | `text_only`，声明 `counterturned-weight-bearing-figure` |
 | [莫霍利-纳吉透明平面投影研究](../style-packages/artists/moholy-nagy/art-direction.yaml) | 用一个半透明平面、一束方向光和一块主投影构成稀疏光学关系 | `text_only`，声明 `photogram-shadow-study` |
+| [德·斯塔埃尔表演者色块节奏](../style-packages/artists/nicolas-de-stael/art-direction.yaml) | 用户指定的舞者或乐手压成少量倾角不同的色块，以动作线索维持可读性 | `text_only`，声明 `dance-or-music-performance` |
 
 ## 6. 从主体请求到结果
 

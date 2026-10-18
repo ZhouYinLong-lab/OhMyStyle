@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "nicolas-de-stael",
+    "name": "尼古拉·德·斯塔埃尔",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\nicolas-de-stael"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Three musicians performing together on a small stage: one violinist, one cellist, and one flutist, horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied Three musicians performing together on a small stage: one violinist, one cellist, and one flutist, horizontal 16:9. and the user-requested setting are authoritative.\n- This package controls visual treatment only: medium, composition, lighting,\n  palette, surface, texture, and edge behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of Three musicians performing together on a small stage: one violinist, one cellist, and one flutist, horizontal 16:9. in the user-requested setting. Apply the package's observable\nmedium, composition, lighting, palette, surface, and texture decisions from the\nstyle files. Preserve the package invariants while inventing a new scene: do not\ncopy any reference work, named character, exact pose, recognizable layout, logo,\nor text. Keep the subject and narrative supplied by the user independent from\nthe package's visual identity. Use a limited set of broad opaque painted planes,\ncompressed shallow space, firm but irregular edges, visible knife-like impasto,\nand selective gaps of support. Let warm and cool color blocks organize the image;\ndo not turn the result into a global color wash. Keep small details subordinate\nto the weight, balance, and material pressure of the painted planes. Use concrete\nvisual instructions rather than the package name alone.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied reference composition, recognizable character, logo, watermark, artist signature,\nunintended text, generic global color filter, incompatible medium, accidental photorealism,\nunmotivated neon, plastic CGI finish, malformed anatomy, duplicate objects\nfixed coast, fixed sea, fixed mountain range, fixed football, fixed city skyline,\nsmooth gradient background, glossy 3D render, decorative cubist pattern without paint weight",
+  "template_variables": {
+    "SUBJECT": "Three musicians performing together on a small stage: one violinist, one cellist, and one flutist, horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "face and body remain simplified into weighted planes rather than polished photographic detail",
+          "clothing or background planes keep the package's compressed depth"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "objects are separated by painted plane relationships and retain visible material paint pressure",
+          "no named landscape or recurring object has been introduced"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

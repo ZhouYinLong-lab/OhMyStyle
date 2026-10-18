@@ -95,3 +95,7 @@ and lighting. Review the output against `evaluation.yaml`.
 Users manage model weights, API keys, and generated images themselves. References
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
+
+## Experimental direction: performance gesture blocks
+
+The optional direction in [`art-direction.yaml`](art-direction.yaml) applies only to a user-requested dance or music scene. It preserves performer count and action, compresses bodies and instruments into weighted color blocks, and uses only a few edges to clarify gesture. The user chooses the performance, instruments, setting, and audience. See [`comparisons/`](comparisons/README.md) for generated examples and limitations.
