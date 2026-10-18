@@ -45,3 +45,7 @@
 ### 方式四：本地模型与 ComfyUI
 
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流，按 visual-signature.yaml、reproduction.yaml 和 palette/palette.json 设置视觉参数，生成后用 evaluation.yaml 复核。
+
+## 实验方向：物体与投影的错位
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户明确要求“物体投下不同形状的影子”时启用：物体保持自然、清晰，影子贴合地面并沿同一光源方向，但轮廓呈现用户指定的另一种形态。不会自动加入额外实物或经典主题。查看 [`comparisons/`](comparisons/README.md) 中的生成对照；该方向仍处于实验状态。

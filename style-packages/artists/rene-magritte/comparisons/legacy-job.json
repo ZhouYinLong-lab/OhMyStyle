@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "rene-magritte",
+    "name": "勒内·马格利特",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\rene-magritte"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Exactly one small pale-blue ceramic vase on a bare cream table. Its cast shadow is shaped like an open book, as requested; no actual book is present. Horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied Exactly one small pale-blue ceramic vase on a bare cream table. Its cast shadow is shaped like an open book, as requested; no actual book is present. Horizontal 16:9. and the user-requested setting are authoritative.\n- This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior.\n- Do not add recurring objects, settings, characters, landmarks, or narrative motifs unless explicitly requested.\n\nCreate a new image of Exactly one small pale-blue ceramic vase on a bare cream table. Its cast shadow is shaped like an open book, as requested; no actual book is present. Horizontal 16:9. in the user-requested setting. Use a calm naturalistic painted surface, sparse theatrical staging, precise silhouettes, restrained modeling, and one carefully designed perceptual dislocation between scale, reflection, or spatial relation. Keep the user's subject and location recognizable. Use cool blue, warm cream, muted green, charcoal, and one controlled accent when appropriate. Invent a new scene; do not copy a reference work, named character, exact pose, logo, or text.\nKeep the user's subject and narrative independent from the package's visual identity.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied reference composition, recognizable character, logo, watermark, artist signature, unrequested surrealist prop, unrequested text, decorative clutter, expressive brush splashes, generic global color filter, glossy CGI, excessive photorealistic microtexture, duplicate objects",
+  "template_variables": {
+    "SUBJECT": "Exactly one small pale-blue ceramic vase on a bare cream table. Its cast shadow is shaped like an open book, as requested; no actual book is present. Horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "requested subject remains readable",
+          "style does not force a named subject or costume"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "requested objects remain countable and materially distinguishable"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; external works remain link-only unless redistribution rights are verified.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

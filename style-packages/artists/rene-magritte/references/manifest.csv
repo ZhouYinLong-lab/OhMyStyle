@@ -1,2 +1,3 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 rene-magritte-primary-source,,René Magritte | MoMA,The Museum of Modern Art,,https://www.moma.org/collection/artists/3692,link_only,Reference link only; source works are not redistributed.,primary,Verify redistribution rights before bundling local assets.
+rene-magritte-moma-mystery-ordinary,,Magritte: The Mystery of the Ordinary 1926–1938,The Museum of Modern Art,,https://www.moma.org/interactives/exhibitions/2013/magritte/,link_only,Reference link only; source works are not redistributed.,primary,Supports naturalistic objects and carefully constructed perceptual puzzles; no source image bundled or used as generation input.

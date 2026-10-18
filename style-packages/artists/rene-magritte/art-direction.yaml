@@ -1,0 +1,96 @@
+schema_version: 2.0.0
+status: experimental
+id: magritte-discordant-cast-shadow
+name: Magritte discordant cast shadow
+base_package: artists/rene-magritte
+scope:
+  medium: painted_image
+  representation: stylized
+  description: >-
+    A narrow optional direction for a user-requested surreal image whose
+    contradiction depends on a cast shadow. Keep the physical object calmly
+    and naturally rendered, while making its grounded shadow clearly describe
+    the different form specified by the user. The contradiction should be
+    legible without adding a second physical object or a fixed motif.
+  required_contexts:
+    - user-requested-shadow-paradox
+  incompatible_contexts:
+    - user-requested-physically-accurate-shadow
+    - no-shadow-contradiction-requested
+    - exact-reconstruction-of-named-work
+  limitations:
+    - Use only when the user requests a shadow that contradicts its casting object.
+    - Preserve the requested object, setting, light direction, palette, and shadow target.
+    - Keep the shadow attached to the object's contact plane and consistent with one readable light source.
+    - Do not add a physical version of the form shown only in shadow.
+pillars:
+  - Preserve the ordinary object's naturalistic silhouette and material.
+  - Make the requested incompatible shadow silhouette the single clear perceptual contradiction.
+  - Keep light, ground, and edges quiet enough for the shadow relation to read immediately.
+rules:
+  - id: shadow-shape-breaks-object-expectation
+    axis: cast-shadow-contradiction
+    importance: core
+    applies_when: The user requests an object whose cast shadow takes a different form.
+    instruction: Render the requested casting object naturally, and shape its attached ground shadow into the different form explicitly requested by the user.
+    observable: The object and shadow are both identifiable, and their incompatible forms read as one intentional visual puzzle.
+    reject_when: The shadow simply repeats the object silhouette, floats away from the ground, or becomes too vague to identify.
+    evidence:
+      source_ids:
+        - moma-magritte-mystery-of-the-ordinary
+      basis: institutional_description
+      visual_review: pending
+    avoid: adding a physical copy of the shadow form or an unrelated second contradiction
+  - id: one-grounded-shadow-one-light-source
+    axis: shadow-spatial-coherence
+    importance: core
+    applies_when: A cast shadow carries the requested contradiction.
+    instruction: Keep the shadow in contact with the supporting surface and maintain one coherent direction of illumination, even while its outline contradicts the object's shape.
+    observable: Grounding and light direction feel physically calm; only the shadow's identity violates expectation.
+    reject_when: Multiple shadow directions, luminous outlines, or impossible detached shadows distract from the requested paradox.
+    evidence:
+      source_ids:
+        - moma-magritte-mystery-of-the-ordinary
+      basis: institutional_description
+      visual_review: pending
+    avoid: global surreal distortion, glow, blur, or theatrical lighting
+  - id: retain-ordinary-surface-rendering
+    axis: object-shadow-contrast
+    importance: supporting
+    applies_when: The user specifies an ordinary object and a contrasting shadow.
+    instruction: Keep the object crisp, recognizable, and material-specific; use a simple quiet ground so the different shadow form remains easy to compare with its source.
+    observable: The viewer can compare object, contact point, and shadow without extra narrative explanation.
+    reject_when: Surface treatment or background detail obscures the object-shadow relationship.
+    evidence:
+      source_ids:
+        - moma-magritte-mystery-of-the-ordinary
+      basis: institutional_description
+      visual_review: pending
+    avoid: named Magritte motifs or copied compositions
+active_rule_ids:
+  - shadow-shape-breaks-object-expectation
+  - one-grounded-shadow-one-light-source
+  - retain-ordinary-surface-rendering
+joint_checks:
+  - id: contradiction-stays-specific-and-grounded
+    rule_ids:
+      - shadow-shape-breaks-object-expectation
+      - one-grounded-shadow-one-light-source
+      - retain-ordinary-surface-rendering
+    instruction: Keep the user-requested object naturalistic and its contradictory shadow attached to the ground under one coherent light, with no unrequested matching object or extra visual puzzle.
+    observable: One calm, sharply readable object-shadow contradiction carries the image.
+sources:
+  - id: moma-magritte-mystery-of-the-ordinary
+    kind: museum_exhibition_record
+    url: https://www.moma.org/interactives/exhibitions/2013/magritte/
+execution:
+  route: text_only
+  must:
+    - Activate only when the user explicitly requests a shadow-based surreal contradiction.
+    - Preserve the casting object and the shadow form specified by the user.
+    - Keep the shadow grounded and the illumination coherent.
+    - Review whether object and shadow read as distinct but connected forms.
+  avoid:
+    - adding a real object that duplicates the form visible only in shadow
+    - forcing apples, pipes, bowler hats, clouds, or other named motifs
+    - creating extra contradictions, dramatic spotlights, glow, or text

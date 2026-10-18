@@ -45,3 +45,7 @@ Use your own image platform or compiler. Submit the base prompt, negative constr
 ### Method 4: Local model and ComfyUI
 
 Connect the base prompt and negative constraints to a local model or ComfyUI workflow. Use visual-signature.yaml, reproduction.yaml, and palette/palette.json to set visual parameters, then review the output with evaluation.yaml.
+
+## Experimental direction: object and shadow mismatch
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user explicitly requests an object casting a differently shaped shadow. Keep the object naturalistic and clear; ground its shadow on the same surface under one coherent light source, while letting the outline take the other form specified by the user. It does not add a physical copy of the shadow form or classic motifs by default. See [`comparisons/`](comparisons/README.md) for a generated comparison. This direction remains experimental.
