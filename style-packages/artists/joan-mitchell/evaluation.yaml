@@ -1,4 +1,14 @@
 profiles:
+  counterposed-color-stroke-groups:
+    required:
+      - distinct brush groups use counterposed directions and varied stroke weights
+      - the requested ground remains visible between color clusters
+      - thick and thin paint passages create local depth without a global filter
+      - the requested subject or abstract arrangement remains recognizable
+    reject_if:
+      - strokes fill the whole image as uniform texture or an all-over web
+      - all clusters share one direction, length, and density
+      - unrequested horizon, trees, flowers, or landscape objects appear
   generic:
     required:
       - package-specific visual signature is observable

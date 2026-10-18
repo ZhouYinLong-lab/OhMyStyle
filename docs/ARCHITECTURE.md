@@ -210,6 +210,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [安格尔轮廓主导的人物习作](../style-packages/artists/jean-auguste-dominique-ingres/art-direction.yaml) | 连续轮廓组织姿态、平滑克制塑形、浅而安静的背景 | `text_only`，声明 `contour-led-figure-study` |
 | [巴斯奎特用户文字与标记层级](../style-packages/artists/jean-michel-basquiat/art-direction.yaml) | 只组织用户提供的字词和符号；划改限定在指定元素，保留可读层级 | `text_only`，声明 `user-authored-mark-hierarchy` |
 | [米罗悬置的有机形与开放色场](../style-packages/artists/joan-miro/art-direction.yaml) | 曲线与色形保持独立关系，以不对称间距和留白平衡画面 | `text_only`，声明 `suspended-biomorphic-sign-field` |
+| [米切尔互相回应的色彩笔触群](../style-packages/artists/joan-mitchell/art-direction.yaml) | 不同方向、厚薄与色彩重量的笔触群构成反向节奏，保留底色停顿 | `text_only`，声明 `counterposed-color-stroke-groups` |
 
 ## 6. 从主体请求到结果
 

@@ -38,6 +38,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：互相回应的色彩笔触群（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 只在用户要求抽象笔触画面并声明 `counterposed-color-stroke-groups` 时启用。规则要求几组笔触在方向、长度和颜料厚薄上彼此回应，用色彩重量制造运动，并在笔触群之间保留大块底色停顿；不会自动画出地平线、树木、水面或花朵。琼·米切尔基金会记录了她在厚涂、薄层、线状笔触和颜色关系上的变化，国家美术馆资料也描述了横向笔触与斜向、竖向笔触的交错。
+
+这与米罗把独立色形和曲线符号悬置在开放底色上的方向不同，也与波洛克式满幅滴洒纹理不同：米切尔方向以不同笔触群的色彩重量和疏密间隔构成节奏，保留可见的画布空地。
+
+```powershell
+python tools/compile-style.py style-packages/artists/joan-mitchell --direction package --context counterposed-color-stroke-groups --subject "A horizontal abstract field with cobalt and olive horizontal strokes at left, short yellow vertical strokes near center, and a violet diagonal cluster at right, separated by broad warm-white ground; no objects or horizon"
+```
+
+[`comparisons/`](comparisons/) 保存旧版与新方向 job、提示词和样图；新版以旧图作构图参考，笔触厚薄和群落反向关系更明显，底色间隔仍保留。样图的厚涂效果偏强，已列为评审点。方向保持实验状态，待视觉评审。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

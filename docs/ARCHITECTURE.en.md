@@ -196,6 +196,7 @@ the same prompt wording.
 | [Ingres contour-led figure study](../style-packages/artists/jean-auguste-dominique-ingres/art-direction.yaml) | Supple contours organize pose, restrained smooth modeling, and shallow quiet space | `text_only`, declare `contour-led-figure-study` |
 | [Basquiat user-authored text and mark hierarchy](../style-packages/artists/jean-michel-basquiat/art-direction.yaml) | Organizes only user-supplied words and symbols; localizes strike-through and preserves legibility | `text_only`, declare `user-authored-mark-hierarchy` |
 | [Miró suspended biomorphic forms and open color field](../style-packages/artists/joan-miro/art-direction.yaml) | Keeps curve and color forms distinct, balanced by asymmetric spacing and negative space | `text_only`, declare `suspended-biomorphic-sign-field` |
+| [Mitchell counterposed color-stroke groups](../style-packages/artists/joan-mitchell/art-direction.yaml) | Directional groups vary paint weight and color, creating counter-rhythm with open-ground pauses | `text_only`, declare `counterposed-color-stroke-groups` |
 
 ## 6. Execution routes
 

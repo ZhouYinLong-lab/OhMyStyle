@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "joan-mitchell",
+    "name": "琼·米切尔",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\joan-mitchell"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A horizontal abstract field with cobalt and olive horizontal strokes at left, short yellow vertical strokes near center, and a violet diagonal cluster at right, separated by broad warm-white ground; no objects or horizon",
+  "prompt": "USER SUBJECT: A horizontal abstract field with cobalt and olive horizontal strokes at left, short yellow vertical strokes near center, and a violet diagonal cluster at right, separated by broad warm-white ground; no objects or horizon\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: abstract_interpretation\nAPPLY THESE AUTHORED VISUAL RULES:\n- [counterposed-directional-groups] Organize marks into a few distinct families with different directions, such as horizontal sweeps answered by diagonal or vertical strokes; vary scale and pressure within each family and preserve readable intervals between groups.\n- [paint-weight-and-layer-contrast] Vary paint thickness and opacity across the color groups; reserve a few dense, opaque strokes as anchors, balance them with thinner veils or scumbled passages, and keep each hue attached to its own stroke form.\n- [exposed-ground-pauses] Preserve broad, intentional ground passages between stroke groups; let their shape and width create pauses and counterbalance the denser color areas.\n- [color-groups-in-open-counterpoint] Use directional, varied paint groups to create color weight and movement across visible ground while preserving the user's subject and color requests.\nREQUIREMENT: Declare counterposed-color-stroke-groups only for a user-requested painterly abstract field.\nREQUIREMENT: Preserve the user's subject, palette roles, and framing.\nREQUIREMENT: Use counterposed stroke families, variable paint weight, and visible ground pauses.\nREQUIREMENT: Keep brush clusters distinct and avoid filling every area with marks.",
+  "negative_prompt": "uniform splatter, repetitive parallel striping, and all-over webbing\nglobal color overlays, uniform impasto, and digital gradients\nedge-to-edge texture, decorative blank border, and erased subject structure\ninventing literal landscape features or a horizon\nturning mark groups into a uniform web or repeated pattern\napplying a global color filter or equal texture everywhere\ncopying a named artwork's arrangement",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "mitchell-counterposed-color-stroke-groups",
+    "name": "Mitchell counterposed color-stroke groups",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\joan-mitchell\\art-direction.yaml",
+    "sha256": "d7b1f3ad558e8500ebe504ca55aecceafa302ad4d50fcb70a17800d5e908e4c1",
+    "active_rule_ids": [
+      "counterposed-directional-groups",
+      "paint-weight-and-layer-contrast",
+      "exposed-ground-pauses"
+    ],
+    "contexts": [
+      "counterposed-color-stroke-groups"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare counterposed-color-stroke-groups only for a user-requested painterly abstract field.",
+      "Preserve the user's subject, palette roles, and framing.",
+      "Use counterposed stroke families, variable paint weight, and visible ground pauses.",
+      "Keep brush clusters distinct and avoid filling every area with marks."
+    ],
+    "avoid": [
+      "inventing literal landscape features or a horizon",
+      "turning mark groups into a uniform web or repeated pattern",
+      "applying a global color filter or equal texture everywhere",
+      "copying a named artwork's arrangement"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "abstract_interpretation",
+      "description": "A context-specific abstract-painting direction built from distinct groups of brushstrokes that counterpose in direction, scale, and paint thickness. Color weight and stroke density create movement across a broad visible ground without requiring a literal landscape, horizon, or focal object. It controls paint relationships, not subject matter.",
+      "required_contexts": [
+        "counterposed-color-stroke-groups"
+      ],
+      "incompatible_contexts": [
+        "all-over-drip-web",
+        "flat-vector-poster",
+        "photorealistic-landscape"
+      ],
+      "limitations": [
+        "Apply only to a user-requested abstract or painterly composition with visible brushwork.",
+        "Preserve any requested subject, color roles, object count, and framing.",
+        "Do not introduce a horizon, trees, flowers, water, or landscape objects unless requested.",
+        "Avoid copying a named canvas, panel arrangement, or identifiable stroke pattern."
+      ]
+    },
+    "rules": [
+      {
+        "id": "counterposed-directional-groups",
+        "axis": "markmaking_and_composition",
+        "importance": "core",
+        "applies_when": "The user requests a painterly abstract field or a subject treated through visible brush groups.",
+        "instruction": "Organize marks into a few distinct families with different directions, such as horizontal sweeps answered by diagonal or vertical strokes; vary scale and pressure within each family and preserve readable intervals between groups.",
+        "observable": "The image has several directional brush clusters with a legible counter-rhythm rather than one repeated all-over texture.",
+        "reject_when": "Every mark points the same way, clusters dissolve into a uniform web, or a new focal subject appears.",
+        "evidence": {
+          "source_ids": [
+            "mitchell-foundation-materials",
+            "nga-piano-mecanique"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform splatter, repetitive parallel striping, and all-over webbing"
+      },
+      {
+        "id": "paint-weight-and-layer-contrast",
+        "axis": "color_and_material",
+        "importance": "core",
+        "applies_when": "The requested treatment relies on color and visible oil-paint handling.",
+        "instruction": "Vary paint thickness and opacity across the color groups; reserve a few dense, opaque strokes as anchors, balance them with thinner veils or scumbled passages, and keep each hue attached to its own stroke form.",
+        "observable": "Color has different weights and surface depths while remaining tied to discrete marks rather than a global filter.",
+        "reject_when": "All paint looks equally thick, translucent passages turn into a full-image wash, or color loses its local structure.",
+        "evidence": {
+          "source_ids": [
+            "mitchell-foundation-materials"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "global color overlays, uniform impasto, and digital gradients"
+      },
+      {
+        "id": "exposed-ground-pauses",
+        "axis": "negative_space_and_rhythm",
+        "importance": "supporting",
+        "applies_when": "The user requests an open abstract field or permits visible unpainted ground.",
+        "instruction": "Preserve broad, intentional ground passages between stroke groups; let their shape and width create pauses and counterbalance the denser color areas.",
+        "observable": "Ground remains an active compositional element rather than a thin border or a fully covered background.",
+        "reject_when": "Marks fill the surface uniformly or ground is inserted only as empty margins.",
+        "evidence": {
+          "source_ids": [
+            "nga-piano-mecanique",
+            "mitchell-foundation-materials"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "edge-to-edge texture, decorative blank border, and erased subject structure"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "color-groups-in-open-counterpoint",
+        "rule_ids": [
+          "counterposed-directional-groups",
+          "paint-weight-and-layer-contrast",
+          "exposed-ground-pauses"
+        ],
+        "instruction": "Use directional, varied paint groups to create color weight and movement across visible ground while preserving the user's subject and color requests.",
+        "observable": "Stroke families counterpose; paint thickness varies; ground creates pauses; no fixed landscape or all-over web is added."
+      }
+    ],
+    "sources": [
+      {
+        "id": "mitchell-foundation-materials",
+        "kind": "artist_foundation_material_analysis",
+        "url": "https://www.joanmitchellfoundation.org/joan-mitchell/materials-and-practice"
+      },
+      {
+        "id": "nga-piano-mecanique",
+        "kind": "museum_collection_analysis",
+        "url": "https://www.nga.gov/artworks/75155-piano-mecanique"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "d7b1f3ad558e8500ebe504ca55aecceafa302ad4d50fcb70a17800d5e908e4c1",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

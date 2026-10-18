@@ -54,6 +54,18 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: counterposed color-stroke groups (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) activates only for a user-requested abstract brushwork field when `counterposed-color-stroke-groups` is declared. Several groups answer one another through direction, length, and paint thickness; color weight creates movement, while broad ground passages create pauses. The direction does not add a horizon, trees, water, or flowers by default. The Joan Mitchell Foundation documents her varied thick, thin, and linear paint handling and color relationships; the National Gallery of Art describes horizontal brushwork counterposed with diagonal and vertical marks.
+
+This differs from Miró's suspended separate forms and curving sign-like line, and from Pollock's all-over drip web. The Mitchell direction builds rhythm from the color weight and spacing of distinct brush groups, with visible ground between them.
+
+```powershell
+python tools/compile-style.py style-packages/artists/joan-mitchell --direction package --context counterposed-color-stroke-groups --subject "A horizontal abstract field with cobalt and olive horizontal strokes at left, short yellow vertical strokes near center, and a violet diagonal cluster at right, separated by broad warm-white ground; no objects or horizon"
+```
+
+[`comparisons/`](comparisons/) contains legacy and direction jobs, prompts, and sample images. With the legacy image as a composition reference, the direction result makes paint thickness and counterposed brush groups more pronounced while retaining ground intervals. Its impasto is stronger than the neutral prompt baseline and is listed as a review point. The direction remains experimental pending visual review.
+
 ## Use only this package
 
 Choose one of the following methods.
