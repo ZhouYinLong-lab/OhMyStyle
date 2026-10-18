@@ -55,3 +55,13 @@
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 [evaluation.yaml](evaluation.yaml) 做复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 新架构：天气层次与旅途视点（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅适用于 `landscape-view`：用前景裁切、中景路径、弱化远景组织空间；若题目包含雨雪或雾气，再用留白、木版渐变和简练线条表现天气。它与北斋包的平涂色层、清晰刻线和图形轮廓不同，更强调天气改变远近对比、视点像旅途中截取的一瞬。不会自动加入名胜、旅人或雨雪。
+
+```powershell
+python tools/compile-style.py style-packages/artists/utagawa-hiroshige --direction package --context landscape-view --subject "A narrow path beside a river in first snow, with one distant footbridge" --output runs/style-v2/hiroshige-job.json
+```
+
+方向仍处于实验状态。大都会艺术博物馆关于《雪峡》的说明和大英博物馆关于广重取景与木版渐变的资料支持这些观察；跨题材和与北斋方向的图片区分仍待评审。

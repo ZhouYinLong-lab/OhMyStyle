@@ -60,6 +60,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [霍普建筑光影](../../style-packages/artists/edward-hopper/art-direction.yaml) | 几何建筑、单一光源投影和空间距离 | text_only | 无 |
 | [艾格尼丝·马丁手绘网格](../../style-packages/artists/agnes-martin/art-direction.yaml) | 非具象细线网格、柔和色域与手工微差 | text_only | abstract-field |
 | [卡拉瓦乔明暗对照](../../style-packages/artists/caravaggio/art-direction.yaml) | 近景人物、单一强光源与具象材质 | text_only | 无 |
+| [广重气象版画](../../style-packages/artists/utagawa-hiroshige/art-direction.yaml) | 天气层次、前景裁切、旅途尺度和版画渐变 | text_only | landscape-view |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

@@ -1,3 +1,5 @@
+package_id: utagawa-hiroshige
+package_version: 0.2.0
 profiles:
   generic:
     required:

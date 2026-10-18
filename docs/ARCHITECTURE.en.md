@@ -155,6 +155,7 @@ the same prompt wording.
 | [Hopper architectural light](../style-packages/artists/edward-hopper/art-direction.yaml) | Everyday architectural planes, directional shadows, spatial distance | `text_only` |
 | [Agnes Martin hand-drawn grid](../style-packages/artists/agnes-martin/art-direction.yaml) | Nonfigurative fine grid, subdued field, hand-made variation | `text_only`, declare `abstract-field` |
 | [Caravaggio embodied chiaroscuro](../style-packages/artists/caravaggio/art-direction.yaml) | Close staging, single-source chiaroscuro, tactile realism | `text_only` |
+| [Hiroshige atmospheric landscape](../style-packages/artists/utagawa-hiroshige/art-direction.yaml) | Weather layers, cropped foreground, travel scale, woodblock gradation | `text_only`, declare `landscape-view` |
 
 ## 6. Execution routes
 

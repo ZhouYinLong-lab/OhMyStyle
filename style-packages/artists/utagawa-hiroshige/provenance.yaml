@@ -1,5 +1,5 @@
 package_id: utagawa-hiroshige
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
@@ -7,6 +7,21 @@ sources:
   title: Morning Glories
   authority: The Metropolitan Museum of Art
   supports: source traceability and package scope
+- url: https://www.metmuseum.org/art/collection/search/56683
+  title: Snowy Gorge
+  authority: The Metropolitan Museum of Art
+  supports: snowfall rendered with unprinted paper, small figures against monumental landscape forms
+  accessed: 2026-10-19
+- url: https://www.britishmuseum.org/blog/introduction-hiroshige-artist-open-road
+  title: 'Introduction to Hiroshige: Artist of the Open Road'
+  authority: The British Museum
+  supports: view-angle variation and enlarged foreground juxtaposed with distant landscape
+  accessed: 2026-10-19
+- url: https://www.britishmuseum.org/blog/technique-making-good-impression
+  title: The technique of making a good impression
+  authority: The British Museum
+  supports: bokashi gradation in Hiroshige's rain landscapes and Japanese woodblock printing process
+  accessed: 2026-10-19
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:
 - Do not bundle an external artwork, photograph, screenshot, logo, or dataset item unless redistribution rights are verified.

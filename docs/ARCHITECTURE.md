@@ -169,6 +169,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [霍普建筑光影](../style-packages/artists/edward-hopper/art-direction.yaml) | 日常建筑平面、方向投影与空间距离 | `text_only` |
 | [艾格尼丝·马丁手绘网格](../style-packages/artists/agnes-martin/art-direction.yaml) | 非具象细线网格、低对比色域与手工微差 | `text_only`，声明 `abstract-field` |
 | [卡拉瓦乔明暗对照](../style-packages/artists/caravaggio/art-direction.yaml) | 近景动作、单光源明暗与物质感 | `text_only` |
+| [广重气象版画](../style-packages/artists/utagawa-hiroshige/art-direction.yaml) | 天气层次、裁切前景、旅途尺度与木版渐变 | `text_only`，声明 `landscape-view` |
 
 ## 6. 从主体请求到结果
 

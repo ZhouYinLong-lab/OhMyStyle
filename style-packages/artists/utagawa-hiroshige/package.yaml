@@ -2,7 +2,7 @@ id: utagawa-hiroshige
 name: 歌川广重
 kind: artist
 domain: printmaking
-version: 0.1.0
+version: 0.2.0
 summary: 以远近层叠、季节气候、留白与裁切式视角组织木版画画面，强调空气、节奏和自然形体的简洁秩序。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: 木版画

@@ -55,3 +55,13 @@ Configure an API key in your own image service or prompt compiler, then submit t
 Connect the base prompt and negative constraints to a local model or ComfyUI workflow. Use the palette and reproduction notes to set color, composition, material, and light. Review the output with [evaluation.yaml](evaluation.yaml).
 
 Model weights, API keys, and generated images remain the user's responsibility. References explain observable features; do not copy a source work's exact composition, person, text, trademark, or logo.
+
+## New architecture: weather layers and travel viewpoint (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is limited to the `landscape-view` context. It organizes space through a cropped foreground, a readable middle-distance route, and a softened far plane; when the prompt includes rain, snow, or mist, it uses paper reserve, woodblock gradation, and concise marks to express weather. Unlike Hokusai's flat color planes and crisp carved contours, this direction emphasizes how atmosphere changes distance and how a viewpoint feels like one moment along a journey. It does not add landmarks, travelers, or weather by default.
+
+```powershell
+python tools/compile-style.py style-packages/artists/utagawa-hiroshige --direction package --context landscape-view --subject "A narrow path beside a river in first snow, with one distant footbridge" --output runs/style-v2/hiroshige-job.json
+```
+
+This direction remains experimental. The Met's description of *Snowy Gorge* and British Museum material on Hiroshige's viewpoints and woodblock gradation support these observations; cross-subject and Hokusai differentiation review is still pending.
