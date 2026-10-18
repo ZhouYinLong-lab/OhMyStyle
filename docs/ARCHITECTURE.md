@@ -218,6 +218,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [卡林顿三阶段物质蜕变](../style-packages/artists/leonora-carrington/art-direction.yaml) | 用户指定对象从原态、过渡态到变化态；细节集中于形体变化处 | `text_only`，声明 `three-state-material-metamorphosis` |
 | [布尔乔亚布料可见修补](../style-packages/artists/louise-bourgeois/art-direction.yaml) | 针脚穿过真实拼接缝，修补和织物立体感集中于连接处 | `text_only`，声明 `visible-mending-textile-assembly` |
 | [夏加尔漂浮双主体与色彩回声](../style-packages/artists/marc-chagall/art-direction.yaml) | 两个主体不等尺度斜向漂浮，以局部重复色建立呼应 | `text_only`，声明 `chromatic-echo-floating-pair` |
+| [埃舍尔单一不可能连接](../style-packages/artists/mc-escher/art-direction.yaml) | 让普通物体只在一个指定连接处产生透视矛盾，其余结构保持可读 | `text_only`，声明 `single-impossible-junction` |
 
 ## 6. 从主体请求到结果
 

@@ -2,10 +2,11 @@ id: mc-escher
 name: 莫里茨·科内利斯·埃舍尔
 kind: artist
 domain: printmaking
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以精密线刻、连续镶嵌、错视空间、反射对称与几何变形组织画面，保持版画般的清晰边缘和可解释的结构秩序。
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

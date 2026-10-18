@@ -1,0 +1,98 @@
+schema_version: 2.0.0
+status: experimental
+id: escher-single-impossible-junction
+name: Escher single impossible junction
+base_package: artists/mc-escher
+scope:
+  medium: woodcut_and_lithograph_informed_printmaking
+  representation: recognizable
+  description: >-
+    An optional direction for a user-specified object or structure whose overall
+    identity stays readable while exactly one local junction contradicts its
+    otherwise stable spatial construction. Precise engraved contours and a
+    restrained printed palette keep the paradox small and inspectable. The
+    direction does not prescribe stairs, towers, animals, or a landscape.
+  required_contexts:
+    - single-impossible-junction
+  incompatible_contexts:
+    - globally-impossible-architecture
+    - continuous-metamorphosis
+    - photorealistic-product-render
+  limitations:
+    - Activate only when the user asks for one localized spatial contradiction.
+    - Preserve the requested subject, object count, function, and overall silhouette.
+    - Keep all but one junction spatially consistent; do not spread the paradox into the background.
+    - This text-only route cannot guarantee mathematically exact perspective; inspect the junction manually.
+    - Do not copy a named print, famous composition, or recognizable arrangement.
+pillars:
+  - Keep the user-specified object recognizable and grounded in a coherent ordinary space.
+  - Concentrate the impossible reading at one clearly bounded join between planes or edges.
+  - Use engraved contour and measured hatching to make the spatial disagreement inspectable.
+rules:
+  - id: localized-spatial-contradiction
+    axis: spatial_logic
+    importance: core
+    applies_when: The user requests one localized impossible connection in an otherwise readable object or structure.
+    instruction: Keep the requested object and its ordinary spatial construction recognizable, but let exactly one bounded junction connect planes or edges in mutually incompatible depth or order. Make the contradiction visible at that join and keep neighboring surfaces coherent.
+    observable: The viewer can identify the object and point to one specific junction where its spatial construction contradicts itself; the rest remains legible.
+    reject_when: Multiple unrelated paradoxes appear, the contradiction is too diffuse to locate, or the object loses its requested function or identity.
+    evidence:
+      source_ids:
+        - kunstmuseum-escher-overview
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: global perspective distortion, generic surreal collage, and a famous impossible structure
+  - id: coherent-surrounding-space
+    axis: composition_and_space
+    importance: core
+    applies_when: The brief asks for a localized paradox rather than a fully impossible environment.
+    instruction: Keep the background, support surface, and all non-paradoxical connections in one stable perspective system; use the single junction as the only spatial exception.
+    observable: Ordinary depth cues agree outside the selected join, making the local contradiction easier to notice.
+    reject_when: Background lines contradict one another or additional edges create unintended impossible connections.
+    evidence:
+      source_ids:
+        - kunstmuseum-escher-overview
+      basis: original_design_intent
+      visual_review: pending
+    avoid: impossible architecture across the whole scene and decorative perspective breaks
+  - id: inspectable-print-contour
+    axis: linework_and_medium
+    importance: supporting
+    applies_when: The user requests printmaking treatment for the object study.
+    instruction: Use crisp engraved contours and sparse directional hatching to distinguish adjoining planes; keep the line hierarchy clear around the chosen junction.
+    observable: The join can be read from contour and value grouping without relying on color glow or photographic shading.
+    reject_when: Hatching obscures the joint or texture dissolves the planes.
+    evidence:
+      source_ids:
+        - kunstmuseum-escher-overview
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: soft painterly blur, glossy CGI, and uniform crosshatching that hides the edge order
+active_rule_ids:
+  - localized-spatial-contradiction
+  - coherent-surrounding-space
+  - inspectable-print-contour
+joint_checks:
+  - id: one-junction-paradox
+    rule_ids:
+      - localized-spatial-contradiction
+      - coherent-surrounding-space
+      - inspectable-print-contour
+    instruction: Preserve the user-specified object in coherent engraved perspective everywhere except one inspectable connection where adjoining planes contradict their depth or edge order.
+    observable: The object remains recognizable, the paradox reads at one localized joint, and crisp contours explain both the ordinary structure and the contradiction.
+sources:
+  - id: kunstmuseum-escher-overview
+    kind: institutional_collection_overview
+    url: https://www.kunstmuseum.nl/en/collections/escher
+execution:
+  route: text_only
+  must:
+    - Activate only for a requested single localized spatial contradiction.
+    - Preserve the requested subject and keep exactly one junction paradoxical.
+    - Keep background and remaining object connections in stable, ordinary perspective.
+    - Use crisp print contours and sparse directional hatching to reveal the chosen joint.
+    - Treat text-only perspective as approximate and flag visible geometry errors for review.
+  avoid:
+    - adding stairs, towers, animals, landscapes, or named Escher motifs unless requested
+    - spreading impossible perspective across the full scene
+    - copying a named print, exact composition, or recognizable layout

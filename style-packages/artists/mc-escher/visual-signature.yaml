@@ -6,9 +6,9 @@ palette:
   - ivory or muted paper field with black linework
   - two to four restrained accent colors assigned to planes, not atmospheric glow
 lighting:
-  quality: TODO
+  quality: even, diffuse illumination that keeps ink lines and plane boundaries legible
   behavior:
-    - TODO: describe direction, softness, contrast, or atmospheric behavior.
+    - keep value contrast controlled across the printed field; do not turn linework into theatrical cast-shadow lighting
 surface:
   finish: printed and lightly fibrous
   edges: engraved, crisp, and intentionally repeatable

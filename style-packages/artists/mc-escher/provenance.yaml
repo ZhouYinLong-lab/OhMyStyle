@@ -1,5 +1,5 @@
 package_id: mc-escher
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: curated
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
@@ -7,6 +7,10 @@ sources:
     title: 'Escher collection'
     authority: 'Kunstmuseum Den Haag'
     supports: source traceability and package scope
+  - url: 'https://www.kunstmuseum.nl/en/museum/news/kunstmuseum-den-haag-and-escher-palace-celebrate-escher'
+    title: 'Kunstmuseum Den Haag and Escher in The Palace celebrate Escher'
+    authority: 'Kunstmuseum Den Haag'
+    supports: institutional description of perception, optical illusions, and impossible architecture
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

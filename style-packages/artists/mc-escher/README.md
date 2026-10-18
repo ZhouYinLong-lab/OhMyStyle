@@ -42,11 +42,11 @@
 
 ### 方式一：交给有生图能力的 Agent
 
-把本目录上传给 Agent，或提供本地路径，并告诉它：先读取 `identity.yaml`、`visual-signature.yaml`、`reproduction.yaml`、`prompts/base.txt`、`prompts/negative.txt`、`palette/palette.json` 和 `evaluation.yaml`，再把你的主题编译成完整 Prompt。要求它只使用包中的视觉规则，不添加楼梯、塔楼、动物等固定题材，并在生成后按 `evaluation.yaml` 检查。
+把本目录上传给 Agent，或提供本地路径，并告诉它：先读取 `identity.yaml`、`visual-signature.yaml`、`reproduction.yaml`、`prompts/base.txt`、`prompts/negative.txt`、`palette/palette.json` 和 `evaluation.yaml`，再把你的主题编译成完整 Prompt。如果任务要表现一个局部空间悖论，再显式读取 `art-direction.yaml`，声明 `single-impossible-junction` 上下文。要求它只使用包中的视觉规则，不添加楼梯、塔楼、动物等固定题材，并在生成后按 `evaluation.yaml` 检查。
 
 ### 方式二：直接复制 Prompt
 
-打开 `prompts/base.txt`，替换主题、地点和画幅；把 `prompts/negative.txt` 一并作为负面约束。需要更稳定时，同时参考视觉签名和调色板。
+打开 `prompts/base.txt`，替换主题、地点和画幅；把 `prompts/negative.txt` 一并作为负面约束。需要单一局部悖论时，用 `--direction package --context single-impossible-junction` 显式启用新版方向。旧版默认路径不变。
 
 ### 方式三：配置 API Key 后提交生成
 
@@ -57,3 +57,8 @@
 把基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流，按复现说明设置线条、平面、材质和有限色彩，生成后用 `evaluation.yaml` 复核。
 
 模型权重、密钥和生成图片由使用者自行管理。参考资料用于理解特征，不用于复制原作。
+## 实验方向：单一不可能连接
+
+包现包含一个可显式选择的实验方向 [`art-direction.yaml`](art-direction.yaml)：只在用户指定的普通物体或结构中设置一个局部空间悖论，其他连接和背景保持一致透视。它不默认加入楼梯、塔楼、动物或风景，也不复制任何著名构图。
+
+对照图和编译记录见 [`comparisons/`](comparisons/README.md)。这是一条文本生图路线，不能保证几何精确；样图需检查连接处的边线、深度顺序与物体可辨识度。

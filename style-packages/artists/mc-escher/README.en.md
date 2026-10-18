@@ -42,11 +42,11 @@ Source: [Kunstmuseum Den Haag Escher collection](https://www.kunstmuseum.nl/en/c
 
 ### Method 1: Give the package to an image-capable Agent
 
-Upload this directory or provide its local path. Ask the Agent to read the identity, visual signature, reproduction, prompt, palette, and evaluation files first, then compile your subject into a complete prompt. Tell it to use only the package’s visual rules, avoid fixed stairs, towers, or animals, and review the result against `evaluation.yaml`.
+Upload this directory or provide its local path. Ask the Agent to read the identity, visual signature, reproduction, prompt, palette, and evaluation files first, then compile your subject into a complete prompt. For one localized paradox, explicitly read `art-direction.yaml` and declare the `single-impossible-junction` context. Tell it to avoid fixed stairs, towers, or animals and review the result against `evaluation.yaml`.
 
 ### Method 2: Copy the prompts
 
-Open `prompts/base.txt`, replace the subject, location, and aspect ratio, and send `prompts/negative.txt` as the negative prompt. Use the signature and palette for tighter control.
+Open `prompts/base.txt`, replace the subject, location, and aspect ratio, and send `prompts/negative.txt` as the negative prompt. Use the signature and palette for tighter control. To opt into the localized paradox, compile with `--direction package --context single-impossible-junction`; the legacy default remains unchanged.
 
 ### Method 3: Submit through your own API tool
 
@@ -57,3 +57,8 @@ Configure an API key in your own image platform or compiler, then submit the bas
 Connect the prompts to a local model or ComfyUI workflow. Use the reproduction notes to set line, planes, material, and limited color, then review the output with `evaluation.yaml`.
 
 Users manage model weights, keys, and generated images. References are for understanding traits, not for copying source works.
+## Experimental direction: one impossible junction
+
+The package now includes one explicitly selected experimental direction in [`art-direction.yaml`](art-direction.yaml): introduce one localized spatial paradox in a user-specified ordinary object or structure while keeping all other connections and the background in consistent perspective. It does not add stairs, towers, animals, or landscapes by default, and it does not copy a famous composition.
+
+See [`comparisons/`](comparisons/README.md) for the paired images and compiled prompts. This text-only image route cannot guarantee exact geometry; review edge continuity, depth order, and object readability in the generated sample.
