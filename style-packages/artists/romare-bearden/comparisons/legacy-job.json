@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "romare-bearden",
+    "name": "罗梅尔·比尔登",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\romare-bearden"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A fictional urban street segment with exactly three adjoining storefronts: a bakery, a bicycle repair shop, and a small bookshop. Exactly two fully clothed adult pedestrians walk along one continuous sidewalk. No readable signs or named location. Horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A fictional urban street segment with exactly three adjoining storefronts: a bakery, a bicycle repair shop, and a small bookshop. Exactly two fully clothed adult pedestrians walk along one continuous sidewalk. No readable signs or named location. Horizontal 16:9.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new subject and composition using these observable visual decisions:\n- 人物和城市空间由切割平面、重叠形状和碎片化视线组成\n- 主体与背景保持清楚的层级关系，并让新主题拥有独立构图。\n- 深蓝、砖红、芥末黄、奶油和黑色形成爵士般撞色\n- 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。\n- 纸张拼贴、绘画色块与手工边缘\n- 媒介边缘、形体和细节密度保持一致。\n- 光线被压缩为平面色块和局部亮面\n- 光源方向和明暗层次服务于空间与主体，而不是制造无来源效果。\n- 纸张、油彩、印刷纹理和粗糙边缘共同可见\n- 不同材质保留可辨识的表面行为。\n- 拼接边缘、重复形状和局部文字纹理形成节奏，但不得出现可读字\n- 纹理沿结构和媒介方向组织，远景与次要区域降低密度。\n- 保持拼贴结构和城市节奏，不复制具体人物、音乐家或原作碎片\n- 不得复制来源作品的具体人物、地标、文字、标志、道具或构图。\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- copied_named_work\n- recognizable_source_arrangement\n- readable_logo_or_text\n- generic_global_filter",
+  "template_variables": {
+    "SUBJECT": "A fictional urban street segment with exactly three adjoining storefronts: a bakery, a bicycle repair shop, and a small bookshop. Exactly two fully clothed adult pedestrians walk along one continuous sidewalk. No readable signs or named location. Horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

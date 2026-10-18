@@ -89,4 +89,8 @@ Users manage model weights, API keys, and generated images themselves. Reference
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
 
+## Experimental direction: connected street vignettes
+
+The optional [`art-direction.yaml`](art-direction.yaml) activates only for a user-requested neighborhood or continuous street collage. Divide the supplied frontage into connected paper-cut vignettes, keep one street baseline running through the composition, and reveal interior slices only through requested windows. The user determines the number of segments, buildings, activities, and place; the direction does not default to six panels, Harlem landmarks, or the layout of *The Block*. See [`comparisons/`](comparisons/README.md) for a fictional three-storefront probe. This direction remains experimental.
+
 

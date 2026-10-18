@@ -9,6 +9,10 @@ sources:
   title: Romare Bearden collection
   supports: source traceability and observable package scope
   accessed: '2026-08-07'
+- url: https://www.metmuseum.org/art/collection/search/481891
+  authority: The Metropolitan Museum of Art
+  title: The Block
+  supports: Museum documentation of a six-panel urban collage organized as connected street vignettes; used only for a general sequencing inference.
 attribution: This package studies observable visual decisions associated with Romare
   Bearden; it does not reproduce a named work, character, location, logo, text, or
   exact composition.

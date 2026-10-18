@@ -70,4 +70,8 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
 
+## 实验方向：连续街景中的分段小场景
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 只在用户请求街区或连续街景拼贴时启用：把用户给定的沿街界面分成若干相连的纸片式小场景，让街道基线连续穿过画面，并在指定窗面局部展示室内切片。分段数量、建筑、活动和地点都由用户决定；不默认六格、不采用哈莱姆地标，也不复刻《The Block》的版式。见 [`comparisons/`](comparisons/README.md) 查看虚构三店面街景对照，方向仍处于实验状态。
+
 

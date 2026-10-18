@@ -1,0 +1,101 @@
+schema_version: 2.0.0
+status: experimental
+id: bearden-connected-street-vignettes
+name: Bearden connected street vignettes
+base_package: artists/romare-bearden
+scope:
+  medium: cut_paper_collage
+  representation: abstract_interpretation
+  description: >-
+    An optional compositional direction for a user-requested continuous neighborhood
+    street or streetscape collage. Divide the supplied frontage into a user-chosen
+    number of adjacent paper-cut vignettes, keep a street baseline visually connected
+    across them, and reveal interior slices only in user-specified places. This adapts
+    a sequence-of-neighborhood-scenes idea to new locations and counts; it does not
+    prescribe Harlem, a six-panel format, or any source-work arrangement.
+  required_contexts:
+    - user-requested-continuous-neighborhood-street-collage
+  incompatible_contexts:
+    - single-building-product-render
+    - user-requested-nonurban-landscape
+    - geographically-accurate-building-elevation
+    - text-or-logo-reproduction
+  limitations:
+    - Activate only when the user requests an urban street or neighborhood collage.
+    - Preserve the user-specified number and order of building fronts, people, activities, and scene segments.
+    - Keep one readable sidewalk or street-edge anchor continuous across the vignettes, unless the user requests a discontinuous layout.
+    - Show interiors only through windows or cutaway areas explicitly requested by the user; do not invent private activities.
+    - Keep building facades and collage seams distinct enough that segment boundaries remain legible.
+    - Do not default to six panels, Harlem, named neighborhood institutions, or the layout of The Block.
+pillars:
+  - Organize the supplied street frontage as adjacent paper-cut scenes with a user-controlled number of segments.
+  - Use one continuous sidewalk, curb, or street-edge band to link the vignettes across their cut boundaries.
+  - Let selected windows expose shallow interior slices, while keeping public street activity and interior views visually distinct.
+rules:
+  - id: frontage-segments-follow-user-count
+    axis: vignette_segmentation_and_scene_count
+    importance: core
+    applies_when: The user provides a street frontage or specifies the number of scene segments.
+    instruction: Divide the frontage into the same number and order of user-specified adjacent vignettes; let cut-paper seams mark transitions without adding buildings or activities.
+    observable: The requested storefront or building count remains recognizable, and each collage segment corresponds to the supplied sequence.
+    reject_when: Extra facades appear, a requested segment disappears, or the sequence is rearranged into a copied fixed panel layout.
+    evidence:
+      source_ids:
+        - met-bearden-the-block
+      basis: institutional_description
+      visual_review: pending
+    avoid: default six panels, Harlem landmarks, named businesses, or copied scene order
+  - id: street-edge-connects-fragments
+    axis: urban_continuity_across_paper_seams
+    importance: core
+    applies_when: Multiple street vignettes share one continuous urban frontage.
+    instruction: Carry a sidewalk, curb, or street-edge color band through each cut seam so the separate paper scenes still read as one connected walk along the user's street.
+    observable: The viewer can trace one continuous ground-level path across all requested segments despite visible collage boundaries.
+    reject_when: The ground line stops without cause, jumps to a different street, or merges distinct building fronts into one facade.
+    evidence:
+      source_ids:
+        - met-bearden-the-block
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: disconnected floating panels or a seamless photorealistic panorama
+  - id: interior-slices-remain-bounded
+    axis: public_private_space_boundary
+    importance: supporting
+    applies_when: The user requests windows or cutaway views into specified interiors.
+    instruction: Reveal shallow interior fragments only within the requested window or cutaway boundaries; retain enough facade edge and paper overlap to separate interior from sidewalk activity.
+    observable: Each interior detail is framed by a readable opening and does not spill into adjacent street vignettes.
+    reject_when: Unrequested rooms, private figures, or interior objects cross into the public street scene.
+    evidence:
+      source_ids:
+        - met-bearden-the-block
+      basis: original_design_intent
+      visual_review: pending
+    avoid: arbitrary open-wall cutaways, invented private scenes, or full-building dollhouse views
+active_rule_ids:
+  - frontage-segments-follow-user-count
+  - street-edge-connects-fragments
+  - interior-slices-remain-bounded
+joint_checks:
+  - id: street-sequence-stays-connected-and-bounded
+    rule_ids:
+      - frontage-segments-follow-user-count
+      - street-edge-connects-fragments
+      - interior-slices-remain-bounded
+    instruction: Keep the user-defined sequence and number of street segments, connect them with one ground-level anchor, and show interiors only inside requested openings.
+    observable: Visible paper seams create separate neighborhood glimpses while the street remains one coherent user-defined place.
+sources:
+  - id: met-bearden-the-block
+    kind: museum_collection_record
+    url: https://www.metmuseum.org/art/collection/search/481891
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested continuous neighborhood street collage.
+    - Preserve user-specified building, person, activity, and segment counts and order.
+    - Use paper-cut vignettes with a continuous street-edge anchor; show interiors only when requested.
+    - Review segment count, ground-line continuity, opening boundaries, and invented activity.
+    - Avoid the source work's six-part format and named location or institutions.
+  avoid:
+    - defaulting to Harlem or named local businesses
+    - adding unrequested interior life or people
+    - turning the street collage into one photorealistic uninterrupted panorama
