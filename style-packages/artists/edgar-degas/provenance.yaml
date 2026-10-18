@@ -1,10 +1,27 @@
 package_id: edgar-degas
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 research_basis:
 - title: Edgar Degas
   creator: Edgar Degas
   period: 印象主义
   source_url: https://commons.wikimedia.org/w/index.php?search=Edgar+Degas&title=Special:MediaSearch&type=image
   role: style research
+- title: "Edgar Degas (1834–1917): Painting and Drawing"
+  creator: The Metropolitan Museum of Art
+  period: 2004
+  source_url: https://www.metmuseum.org/essays/edgar-degas-1834-1917-painting-and-drawing
+  role: institutional analysis of unusual viewpoints, asymmetric framing, and selective cropping
+- title: Picturing France 1830–1900
+  creator: National Gallery of Art
+  period: 2008
+  source_url: https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/education/learning-resources/teaching-packets/pdfs/picturing_france.pdf
+  role: institutional analysis of cropped figures, off-center placement, and floor-plane composition
+- title: Degas's Dancers
+  creator: National Gallery of Art
+  period: 2024
+  source_url: https://www.nga.gov/research/publications/degass-dancers
+  role: catalogue analysis of bodily positions and movement; dance remains optional subject matter
 generated_assets:
 - path: gallery-16x9.jpg
   description: New anonymous representative image

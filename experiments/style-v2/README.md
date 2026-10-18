@@ -73,6 +73,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [莫里索手势笔触与开放边缘](../../style-packages/artists/berthe-morisot/art-direction.yaml) | 动势笔触、选择性软边、可见底色与疏密差 | text_only | open-brush-figure-painting |
 | [里维拉公共叙事壁画层次](../../style-packages/artists/diego-rivera/art-direction.yaml) | 相连叙事层次、人物与环境共尺度、远距可读的大色面 | text_only | public-narrative-mural |
 | [委拉斯开兹目光、纵深与选择性精确](../../style-packages/artists/diego-velazquez/art-direction.yaml) | 群像视线组织、暗部空间纵深、焦点细节与宽松背景笔触 | text_only | observed-interior-portrait |
+| [德加偏置观察与空间裁切](../../style-packages/artists/edgar-degas/art-direction.yaml) | 偏置视点、非对称取景、空间平面与可读的过渡姿态 | text_only | observed-figure-scene |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

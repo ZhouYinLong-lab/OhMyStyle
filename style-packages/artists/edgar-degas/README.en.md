@@ -18,9 +18,19 @@ Start with “cropped viewpoints, high angles, asymmetrical balance, and movemen
 
 ## Visual focus
 
-裁切视角、高机位、非对称构图与舞者动作. The prompt emphasizes these observable traits while requiring a new subject, arrangement, and object relationship.
+Off-center viewpoints, asymmetric cropping, spatial planes, and legible transitional poses. Dance is not the default subject; user-specified people, action, setting, and count remain authoritative.
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
+
+## New architecture: oblique observation, spatial crop, and transitional pose (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `observed-figure-scene`. It links viewpoint, asymmetric framing, a floor or spatial plane, and bodily balance into reviewable rules. Elevated views and crops are used only when the scene benefits from them; dancers, stages, mirrors, and rehearsal rooms are not defaults. This separates the direction from Morisot's gesture-led brushwork and open edges, and Artemisia's close action staging and counter-diagonals.
+
+```powershell
+python tools/compile-style.py style-packages/artists/edgar-degas --direction package --context observed-figure-scene --subject "A commuter kneeling to retrieve a dropped glove beside a station bench, seen from a slightly elevated oblique viewpoint" --output runs/style-v2/edgar-degas-job.json
+```
+
+The direction remains experimental; same-subject comparisons and stability across subjects need human review. Local old/new visual comparisons are saved under `runs/edgar-degas-direction-comparison/` and are not approved evaluation evidence.
 
 ## Reference source
 

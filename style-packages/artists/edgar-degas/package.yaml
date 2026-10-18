@@ -2,8 +2,8 @@ id: edgar-degas
 name: 埃德加·德加
 kind: artist
 domain: painting
-version: 0.1.0
-summary: Independent Edgar Degas style package focused on 裁切视角、高机位、非对称构图与舞者动作; it
+version: 0.2.0
+summary: Independent Edgar Degas style package focused on oblique observation, asymmetric framing, spatial planes, and legible transitional gestures; it
   requires new subjects and arrangements.
 files:
   identity: identity.yaml
@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist

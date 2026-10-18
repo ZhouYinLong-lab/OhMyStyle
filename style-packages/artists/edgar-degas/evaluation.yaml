@@ -1,5 +1,15 @@
 package_id: edgar-degas
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  observed-figure-scene:
+    required:
+      - off-center or oblique framing is deliberate and keeps the requested figure readable
+      - a visible spatial plane connects viewpoint, setting, and action where applicable
+      - the selected transitional pose remains anatomically and narratively legible
+    reject_if:
+      - dancers, stage, studio, mirror, or period props appear without request
+      - arbitrary crop or perspective distortion obscures the requested action
+      - motion blur replaces a readable pose
 invariants:
 - id: signature
   weight: 3
