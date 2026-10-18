@@ -215,6 +215,7 @@ the same prompt wording.
 | [Klee active line and independent color field](../style-packages/artists/paul-klee/art-direction.yaml) | Active lines describe a requested mechanism while a translucent color field builds shallow space and leaves paper visible | `text_only`, declare `simple-moving-mechanical-object` |
 | [Bruegel activities linked by a landscape route](../style-packages/artists/pieter-bruegel-the-elder/art-direction.yaml) | User-requested actions sit at different depths and a route guides the viewer through them in sequence | `text_only`, declare `landscape-with-multiple-activities` |
 | [Rubens diagonal sweep of selective light](../style-packages/artists/peter-paul-rubens/art-direction.yaml) | One diagonal light path touches only planes facing the source and leaves overlaps in colored shadow | `text_only`, declare `multi-figure-scene-with-directed-light` |
+| [Kusama dots bounded by one object contour](../style-packages/artists/yayoi-kusama/art-direction.yaml) | Dots follow one user-requested object's curvature and stop at its silhouette against quiet negative space | `text_only`, declare `single-object-patterned-surface` |
 
 ## 6. Execution routes
 

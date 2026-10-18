@@ -98,3 +98,7 @@ and lighting. Review the output against `evaluation.yaml`.
 Users manage model weights, API keys, and generated images themselves. References
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
+
+## Experimental direction: dots bounded by one object contour
+
+The optional direction in [`art-direction.yaml`](art-direction.yaml) applies when the user chooses one object as the carrier of a repeated dot pattern. Dots follow its curvature but stop at the silhouette; the setting stays quiet and identity cues such as handles and openings remain readable. This tests a localized use of Kusama's expansive repetition without defaulting to a room or mirror installation. See [`comparisons/`](comparisons/README.md) for a teapot probe; the direction remains experimental.

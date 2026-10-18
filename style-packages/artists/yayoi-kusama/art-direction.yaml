@@ -1,0 +1,98 @@
+schema_version: 2.0.0
+status: experimental
+id: kusama-object-bounded-dot-field
+name: Kusama dots contained by one object contour
+base_package: artists/yayoi-kusama
+scope:
+  medium: acrylic_or_gouache_on_object_surface
+  representation: stylized
+  description: >-
+    An optional direction for a user-requested single rounded object whose
+    surface the user wants covered in repeated dots. Let the pattern follow the
+    object's curvature and compress near its silhouette, while keeping the
+    object boundary and surrounding negative space clean. Repetition remains
+    visibly hand-applied and the object remains recognizable. This direction
+    deliberately localizes the pattern instead of extending it through a room.
+  required_contexts:
+    - single-object-patterned-surface
+  incompatible_contexts:
+    - user-requested-infinity-mirror-room
+    - all-over-environment-obliteration
+    - text-or-logo-reproduction
+  limitations:
+    - Activate only when the user requests one identifiable object as the locus of a repeated dot pattern.
+    - Preserve the object's silhouette, material, color, openings, handle, spout, and other user-specified features.
+    - Keep dots on the object surface; do not extend the pattern onto walls, floors, people, or unrequested objects.
+    - Let dot size, spacing, and visible curvature respond to the object's form; do not obscure its defining structure.
+    - Use slight hand-applied variation rather than mathematically perfect repetition, and do not imitate a named work or installation.
+pillars:
+  - Treat the user-requested object's surface as one clear pattern field bounded by its existing silhouette.
+  - Follow the object's curvature with a repeated dot rhythm; adjust dot size and spacing as the form turns away.
+  - Leave the surrounding setting quiet and preserve enough unpatterned structural cues to identify the object.
+rules:
+  - id: contour-bounded-dot-coverage
+    axis: object_surface_and_pattern_boundary
+    importance: core
+    applies_when: The user requests a single object to carry a repeated dot pattern.
+    instruction: Confine the requested dot field to the object's visible surface and stop marks at its silhouette; leave all surrounding surfaces unpatterned unless separately requested.
+    observable: The patterned object reads as a distinct bounded form against a quiet setting, with dots visibly stopping at its contour.
+    reject_when: Dots bleed onto the background, erase the silhouette, or cover user-specified openings and edges needed for recognition.
+    evidence:
+      source_ids:
+        - hirshhorn-kusama-infinity-mirrors
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: wallpaper, room-wide dot spill, and copied installation layouts
+  - id: curvature-responsive-repeat
+    axis: pattern_scale_and_surface_form
+    importance: core
+    applies_when: The patterned object has a rounded or visibly turning surface.
+    instruction: Repeat dots across the object's form with small, consistent variations; let their apparent spacing compress and shapes narrow toward turning edges to maintain the object's volume.
+    observable: The viewer reads the object as three-dimensional from dot spacing and contour, not as a flat sticker or pasted graphic.
+    reject_when: Dot spacing ignores the form, pattern units become a perfect rigid grid, or marks change the object's material identity.
+    evidence:
+      source_ids:
+        - hirshhorn-kusama-infinity-mirrors
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: random speckles, evenly spaced decals, and dots that float outside the object
+  - id: identity-cues-through-pattern
+    axis: object_recognition_and_detail
+    importance: supporting
+    applies_when: The user requests a patterned vessel, container, or similarly structured object.
+    instruction: Preserve the object's key openings, handle, spout, base, seams, and color breaks; vary pattern density around those parts without hiding or redesigning them.
+    observable: The object remains identifiable at thumbnail size despite dense surface repetition.
+    reject_when: A defining feature disappears, changes position, or merges with the dot field.
+    evidence:
+      source_ids:
+        - hirshhorn-kusama-infinity-mirrors
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: default pumpkin forms, soft sculptures, and extra repeated objects
+active_rule_ids:
+  - contour-bounded-dot-coverage
+  - curvature-responsive-repeat
+  - identity-cues-through-pattern
+joint_checks:
+  - id: bounded-pattern-preserves-object
+    rule_ids:
+      - contour-bounded-dot-coverage
+      - curvature-responsive-repeat
+      - identity-cues-through-pattern
+    instruction: Keep the user-requested dot pattern inside one object's silhouette, make it follow curvature, and retain all of the object's identity cues against a quiet background.
+    observable: The pattern transforms the object's surface while leaving its contour, depth, and function clear.
+sources:
+  - id: hirshhorn-kusama-infinity-mirrors
+    kind: museum_exhibition_description
+    url: https://hirshhorn.si.edu/exhibitions/yayoi-kusama-infinity-mirrors/
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested single object with a requested repeated dot treatment.
+    - Preserve object identity, shape, material, color, openings, and count.
+    - Keep the pattern bounded by the object silhouette and responsive to its curvature.
+    - Review pattern bleed, dot scale and spacing, and object recognition.
+  avoid:
+    - extending dots through a room or onto unrequested surfaces
+    - adding pumpkins, soft sculptures, mirrors, or installation settings unless requested
+    - copying a named work, an Infinity Mirror Room, or an installation layout

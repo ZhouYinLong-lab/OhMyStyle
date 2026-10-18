@@ -7,6 +7,10 @@ sources:
     title: 'Biography'
     authority: 'Yayoi Kusama Official Site'
     supports: source traceability and package scope
+  - url: 'https://hirshhorn.si.edu/exhibitions/yayoi-kusama-infinity-mirrors/'
+    title: 'Yayoi Kusama: Infinity Mirrors'
+    authority: 'Hirshhorn Museum and Sculpture Garden, Smithsonian Institution'
+    supports: museum documentation of repeated-dot fields expanding across objects and environments
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

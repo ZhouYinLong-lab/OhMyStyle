@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "yayoi-kusama",
+    "name": "草间弥生",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\yayoi-kusama"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One rounded mustard-yellow ceramic teapot with a short spout, loop handle, and visible lid, covered in irregular white dots; it stands alone on a plain pale blue-gray table against a quiet off-white wall, horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied One rounded mustard-yellow ceramic teapot with a short spout, loop handle, and visible lid, covered in irregular white dots; it stands alone on a plain pale blue-gray table against a quiet off-white wall, horizontal 16:9. and the user-requested setting are authoritative.\n- This package controls repetition, coverage, surface, palette, and spatial continuity only.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of One rounded mustard-yellow ceramic teapot with a short spout, loop handle, and visible lid, covered in irregular white dots; it stands alone on a plain pale blue-gray table against a quiet off-white wall, horizontal 16:9. in the user-requested setting. Preserve the user's subject, scale,\nand spatial logic. Choose one clear circular or net-like repeated unit, define its\nspacing and scale, then extend it across selected planes and surfaces so the subject\nand environment feel connected by repetition. Use controlled high-contrast colors,\nmatte painted texture, and small hand-made variations. Keep one recognition anchor\nreadable. Do not add objects, text, logos, named artworks, recognizable installations,\nor a copied composition. Use concrete visual instructions rather than the package name alone.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "fixed pumpkin, fixed flower, fixed portrait, mirror room, named installation, copied artwork,\ngeneric wallpaper, random decorative pattern, logo, readable text, watermark, signature,\nglobal blur, glossy CGI, extra objects, duplicate objects, unrequested character,\nunrequested location, narrative props",
+  "template_variables": {
+    "SUBJECT": "One rounded mustard-yellow ceramic teapot with a short spout, loop handle, and visible lid, covered in irregular white dots; it stands alone on a plain pale blue-gray table against a quiet off-white wall, horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "repeated marks do not replace facial identity or anatomy"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "repeated treatment remains attached to surfaces and does not duplicate objects"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

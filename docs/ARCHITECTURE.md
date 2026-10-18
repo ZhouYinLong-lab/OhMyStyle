@@ -229,6 +229,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [克利活动线与独立色场](../style-packages/artists/paul-klee/art-direction.yaml) | 机械物件由活动线描述，透明色域独立组织浅空间并保留纸面 | `text_only`，声明 `simple-moving-mechanical-object` |
 | [勃鲁盖尔沿景观路径串联活动](../style-packages/artists/pieter-bruegel-the-elder/art-direction.yaml) | 用户指定的不同活动按远近层次排列，并由一条路径引导视线逐步发现 | `text_only`，声明 `landscape-with-multiple-activities` |
 | [鲁本斯斜向光带与选择性高光](../style-packages/artists/peter-paul-rubens/art-direction.yaml) | 一条斜向光路选择性照亮人物朝向光源的平面，重叠面保留有色暗部 | `text_only`，声明 `multi-figure-scene-with-directed-light` |
+| [草间弥生物体轮廓内的点阵覆盖](../style-packages/artists/yayoi-kusama/art-direction.yaml) | 点阵沿一个用户指定物体的曲面变化，并停在其轮廓内，背景保持安静 | `text_only`，声明 `single-object-patterned-surface` |
 
 ## 6. 从主体请求到结果
 
