@@ -1,8 +1,18 @@
 package_id: kazimir-malevich
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
+  - url: 'https://www.moma.org/collection/terms/suprematism'
+    title: 'Suprematism'
+    authority: 'The Museum of Modern Art'
+    supports: colored geometric forms floating against white grounds and non-objective abstraction; do not copy named works
+    accessed: '2026-10-19'
+  - url: 'https://www.moma.org/collection/works/80385?sov_referrer=theme&theme_id=5527'
+    title: 'Suprematist Composition: White on White'
+    authority: 'The Museum of Modern Art'
+    supports: off-center skew, visual balance, material surface, and perceived movement; formal reference only, not a target composition
+    accessed: '2026-10-19'
   - url: 'https://www.moma.org/artists/3710-kazimir-malevich'
     title: 'Kazimir Malevich | MoMA'
     authority: 'The Museum of Modern Art'

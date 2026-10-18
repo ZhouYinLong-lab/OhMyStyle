@@ -213,6 +213,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [米切尔互相回应的色彩笔触群](../style-packages/artists/joan-mitchell/art-direction.yaml) | 不同方向、厚薄与色彩重量的笔触群构成反向节奏，保留底色停顿 | `text_only`，声明 `counterposed-color-stroke-groups` |
 | [维米尔安静城景的横向层次](../style-packages/artists/johannes-vermeer/art-direction.yaml) | 用户指定城景的横向空间分层、明暗纵深与稀疏反光 | `text_only`，声明 `quiet-cityscape-banded-depth` |
 | [珂勒惠支压缩人物群像版画](../style-packages/artists/kathe-kollwitz/art-direction.yaml) | 用户指定动作接触点的群像压缩、黑块与纸白线口；不推断人物关系或故事 | `text_only`，声明 `compressed-figure-group-print` |
+| [马列维奇斜向漂移与反向配重](../style-packages/artists/kazimir-malevich/art-direction.yaml) | 几何色面沿偏心斜向运动，以大小和不等距留白形成配重 | `text_only`，声明 `diagonal-drift-counterweight` |
 
 ## 6. 从主体请求到结果
 

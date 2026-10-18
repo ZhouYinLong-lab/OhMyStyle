@@ -1,0 +1,103 @@
+schema_version: 2.0.0
+status: experimental
+id: malevich-diagonal-drift-counterweight
+name: Malevich diagonal drift and counterweight
+base_package: artists/kazimir-malevich
+scope:
+  medium: painted_geometric_abstraction
+  representation: abstract_interpretation
+  description: >-
+    An optional non-objective composition direction in which a small set of
+    user-selected geometric forms drifts along an off-center diagonal axis.
+    One larger plane establishes weight while smaller, differently rotated
+    forms counterbalance it across open intervals. It narrows the base package's
+    general floating geometry into a directional spatial rhythm and does not
+    prescribe a fixed shape, palette, or iconic arrangement.
+  required_contexts:
+    - diagonal-drift-counterweight
+  incompatible_contexts:
+    - strict-horizontal-vertical-grid
+    - centered-symmetrical-logo
+    - representational-object-illustration
+  limitations:
+    - Use only for user-requested non-objective geometric abstraction.
+    - Preserve the user's shape inventory, count, palette roles, and aspect ratio.
+    - Let diagonal movement emerge through unequal scale, interval, and rotation; do not force every form onto one straight line.
+    - Do not reproduce a named work, black-square-on-white composition, or fixed museum layout.
+pillars:
+  - Establish one off-center diagonal direction through unequal form size, placement, and rotation.
+  - Give the largest plane visual weight and answer it with smaller forms at varied intervals rather than a balanced logo-like symmetry.
+  - Keep negative space open and active; vary gaps along the direction so the forms appear suspended rather than tiled.
+  - Use the user's selected colors and shapes as flat, matte planes, with only slight handmade edge variation.
+rules:
+  - id: off-center-diagonal-drift
+    axis: composition_and_movement
+    importance: core
+    applies_when: The user requests an open non-objective composition made from geometric forms.
+    instruction: Organize the requested forms around an off-center diagonal drift, using differences in scale, rotation, and interval to create a directional route; allow pauses and small deviations so the route does not become a rigid line.
+    observable: The eye follows a clear directional movement across the field, while the arrangement remains asymmetric and non-grid-like.
+    reject_when: Forms sit on a centered axis, align as a regular grid, or merely point the same way without compositional movement.
+    evidence:
+      source_ids:
+        - moma-suprematism-term
+        - moma-white-on-white
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: centered symmetry, rigid diagonal stripe, and copied composition
+  - id: dominant-plane-counterweight
+    axis: scale_and_color_weight
+    importance: core
+    applies_when: The user supplies multiple geometric forms with distinct color roles or scales.
+    instruction: Let one requested form carry the main visual weight and use smaller forms as unequal counterweights; preserve the user's specified shape count and color assignments without inventing a dominant black square.
+    observable: A hierarchy between dominant and supporting planes is visible, but balance depends on their spatial relationship rather than matching sizes or mirror positions.
+    reject_when: Every plane has equal weight, the composition becomes a logo, or an unrequested signature symbol is inserted.
+    evidence:
+      source_ids:
+        - moma-white-on-white
+        - moma-suprematism-term
+      basis: institutional_description
+      visual_review: pending
+    avoid: equal-sized repeated forms, mirrored balance, and black-square-on-white shorthand
+  - id: variable-open-intervals
+    axis: negative_space
+    importance: supporting
+    applies_when: The composition includes a light or neutral ground around floating forms.
+    instruction: Preserve open ground around and between the forms, varying the interval width to reinforce the drift and prevent accidental tangencies.
+    observable: Ground separates the forms and participates in the movement rather than reading as a uniform border or empty leftover area.
+    reject_when: Forms touch unintentionally, gaps repeat mechanically, or shapes are clipped without user request.
+    evidence:
+      source_ids:
+        - moma-white-on-white
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: accidental tangencies, uniform spacing, and decorative frame margins
+active_rule_ids:
+  - off-center-diagonal-drift
+  - dominant-plane-counterweight
+  - variable-open-intervals
+joint_checks:
+  - id: asymmetric-suspended-rhythm
+    rule_ids:
+      - off-center-diagonal-drift
+      - dominant-plane-counterweight
+      - variable-open-intervals
+    instruction: Use unequal plane weights and variable open intervals to create a drifting diagonal rhythm that remains suspended on the ground.
+    observable: Direction, scale hierarchy, and negative space reinforce one another without forming a grid, logo, or copied layout.
+sources:
+  - id: moma-suprematism-term
+    kind: museum_art_term
+    url: https://www.moma.org/collection/terms/suprematism
+  - id: moma-white-on-white
+    kind: museum_collection_analysis
+    url: https://www.moma.org/collection/works/80385?sov_referrer=theme&theme_id=5527
+execution:
+  route: text_only
+  must:
+    - Activate only for user-requested non-objective geometric abstraction.
+    - Preserve the user's form inventory, count, color roles, and aspect ratio.
+    - Build an off-center directional drift through unequal scale, rotation, and intervals.
+    - Keep the dominant and supporting form weights distinct and negative space open.
+  avoid:
+    - adding a representational object, symbol, black square, or unrequested color
+    - arranging all forms on a grid, centered axis, or rigid stripe
+    - copying a named Malevich composition or iconic layout

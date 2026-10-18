@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "kazimir-malevich",
+    "name": "卡济米尔·马列维奇",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\kazimir-malevich"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Four non-objective geometric forms on a warm-white ground: one large vermilion quadrilateral, one medium ultramarine slanted rectangle, one small ochre circle, and one charcoal bar; horizontal 16:9 composition.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied Four non-objective geometric forms on a warm-white ground: one large vermilion quadrilateral, one medium ultramarine slanted rectangle, one small ochre circle, and one charcoal bar; horizontal 16:9 composition. and the user-requested setting are authoritative.\n- This package controls visual treatment only: medium, composition, lighting,\n  palette, surface, texture, and edge behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of Four non-objective geometric forms on a warm-white ground: one large vermilion quadrilateral, one medium ultramarine slanted rectangle, one small ochre circle, and one charcoal bar; horizontal 16:9 composition. in the user-requested setting. Apply the package's observable\nmedium, composition, lighting, palette, surface, and texture decisions from the\nstyle files. Preserve the package invariants while inventing a new scene: do not\ncopy any reference work, named character, exact pose, recognizable layout, logo,\nor text. Keep the subject and narrative supplied by the user independent from\nthe package's visual identity. Use concrete visual instructions rather than the\npackage name alone.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied reference composition, recognizable character, logo, watermark, artist signature,\nunintended text, generic global color filter, incompatible medium, accidental photorealism,\nunmotivated neon, plastic CGI finish, malformed anatomy, duplicate objects",
+  "template_variables": {
+    "SUBJECT": "Four non-objective geometric forms on a warm-white ground: one large vermilion quadrilateral, one medium ultramarine slanted rectangle, one small ochre circle, and one charcoal bar; horizontal 16:9 composition.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "diagonal-drift-counterweight": {
+        "required": [
+          "user-requested non-objective forms follow a clear but irregular diagonal movement axis",
+          "one dominant form is counterweighted by smaller forms and open intervals",
+          "scale and rotation create movement without a rigid grid or object illusion",
+          "requested shape count and color roles remain intact"
+        ],
+        "reject_if": [
+          "forms resemble a copied named composition or recognizable black-square motif",
+          "every shape follows one uniform direction or identical spacing",
+          "new representational symbols are added without request"
+        ]
+      },
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          {
+            "TODO": "add portrait-specific checks when relevant"
+          }
+        ]
+      },
+      "still_life": {
+        "required": [
+          {
+            "TODO": "add still-life-specific checks when relevant"
+          }
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

@@ -1,4 +1,14 @@
 profiles:
+  diagonal-drift-counterweight:
+    required:
+    - user-requested non-objective forms follow a clear but irregular diagonal movement axis
+    - one dominant form is counterweighted by smaller forms and open intervals
+    - scale and rotation create movement without a rigid grid or object illusion
+    - requested shape count and color roles remain intact
+    reject_if:
+    - forms resemble a copied named composition or recognizable black-square motif
+    - every shape follows one uniform direction or identical spacing
+    - new representational symbols are added without request
   generic:
     required:
     - package-specific visual signature is observable

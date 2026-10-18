@@ -28,6 +28,20 @@ People, objects, places, architecture, plants, vehicles, and narrative come
 from your prompt. Concrete scenes in this package are examples or tests only
 and must never be added as default content.
 
+## Optional direction: diagonal drift and counterweight
+
+`art-direction.yaml` registers an experimental direction for user-requested non-objective geometric compositions. It connects unequal forms along an off-center diagonal movement, then uses irregular open intervals and smaller planes as counterweights. This narrows the legacy package's general floating-geometry rules without prescribing a fixed color-and-shape recipe. Explicitly declare `diagonal-drift-counterweight` when compiling. The new direction is optional; the legacy default is unchanged.
+
+### Generated comparison using the same four forms
+
+Both images use the same four geometric forms. The direction version places the large red plane at lower left, then balances it with a tilted blue plane, ochre circle, and charcoal bar along a rising route. The edit retains the shape count and color roles, but their positions and angles vary slightly. This illustrates a compositional change rather than precise layout rendering.
+
+| Legacy default path | New diagonal-drift direction |
+| --- | --- |
+| ![Malevich legacy geometric composition sample](comparisons/legacy.png) | ![Malevich diagonal composition direction sample](comparisons/direction.png) |
+
+Compiled jobs: [`legacy-job.json`](comparisons/legacy-job.json), [`direction-job.json`](comparisons/direction-job.json). Generation prompts and review: [`generation-prompts.md`](comparisons/generation-prompts.md).
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions

@@ -199,6 +199,7 @@ the same prompt wording.
 | [Mitchell counterposed color-stroke groups](../style-packages/artists/joan-mitchell/art-direction.yaml) | Directional groups vary paint weight and color, creating counter-rhythm with open-ground pauses | `text_only`, declare `counterposed-color-stroke-groups` |
 | [Vermeer quiet cityscape with banded depth](../style-packages/artists/johannes-vermeer/art-direction.yaml) | User-requested cityscapes organized by horizontal zones, light-dark depth, and sparse reflections | `text_only`, declare `quiet-cityscape-banded-depth` |
 | [Kollwitz compressed figure-group print](../style-packages/artists/kathe-kollwitz/art-direction.yaml) | User-specified group action organized around its contact point with bold masses and paper-white cuts; no inferred relationship or story | `text_only`, declare `compressed-figure-group-print` |
+| [Malevich diagonal drift and counterweight](../style-packages/artists/kazimir-malevich/art-direction.yaml) | Geometric planes move along an off-center diagonal and counterbalance through scale and uneven intervals | `text_only`, declare `diagonal-drift-counterweight` |
 
 ## 6. Execution routes
 

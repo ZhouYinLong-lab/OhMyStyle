@@ -22,6 +22,20 @@
 
 本包只决定“怎么生成”，不决定“生成什么”。人物、物体、地点、建筑、植物、车辆和叙事由你的 Prompt 决定；本包中的具体场景只属于示例或测试，不会作为默认主体加入生成结果。
 
+## 可选新方向：斜向漂移与反向配重
+
+`art-direction.yaml` 登记一个实验方向，用于用户指定的非具象几何构成。它以偏离中心的斜向运动串联大小不同、角度不同的色面，再用不等距留白和小形体形成反向配重；这比旧包“悬浮几何形”的一般规则更明确，但不指定固定色形组合。编译时显式声明 `diagonal-drift-counterweight`。新版是可选方向，旧版默认不变。
+
+### 同一组色形的生成对照
+
+左右图都使用四个同样的几何形体。新版把大红色面压到左下，以蓝色斜面、赭黄圆形和炭黑细条沿上升方向配重；改图保留了形状数和颜色角色，但位置与角度有模型误差。对照显示构成关系的变化，不代表精确排版渲染。
+
+| 旧版默认路径 | 新版斜向漂移 |
+| --- | --- |
+| ![马列维奇旧版几何构成样图](comparisons/legacy.png) | ![马列维奇新版斜向构成样图](comparisons/direction.png) |
+
+编译任务：[`legacy-job.json`](comparisons/legacy-job.json)、[`direction-job.json`](comparisons/direction-job.json)；生图提示与评审：[`generation-prompts.md`](comparisons/generation-prompts.md)。
+
 ## 使用前先看
 
 - `identity.yaml`：范围、对象和排除项
