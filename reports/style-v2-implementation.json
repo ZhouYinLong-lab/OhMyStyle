@@ -1,0 +1,132 @@
+{
+  "status": "implementation_pilot_only",
+  "baseline_tag": "style-v1-snapshot-2026-10-18",
+  "baseline_commit": "59d9aa10ee9eeaedf3b815688d00f3e553ef31ea",
+  "implementation_branch": "codex/style-pack-v2",
+  "completed_operations": "Compiled three opt-in direction jobs and rasterized the existing cave source once.",
+  "compiled_jobs": [
+    {
+      "job_file_local_ignored": "runs/style-v2/sorolla-job.json",
+      "direction": "experiments/style-v2/sorolla-sunlit-oil/direction.yaml",
+      "direction_sha256": "86f09613d2c2b2fcd15108dcf5b25ba75562db01dd86a504ad17e3158c721a29",
+      "job_type": "style_render",
+      "prompt_sha256": "5d4d877d6bdb12ca35c716ea98a84b3f1d1af4094e82470eec889b7c6fb2253a",
+      "active_rule_ids": [
+        "sorolla-light-structure",
+        "sorolla-directional-marks",
+        "sorolla-value-grouping",
+        "sorolla-selective-edges"
+      ],
+      "reference_image_count": 0,
+      "review_status": "pending"
+    },
+    {
+      "job_file_local_ignored": "runs/style-v2/paper-job.json",
+      "direction": "experiments/style-v2/bauhaus-paper-study/direction.yaml",
+      "direction_sha256": "9733ef55cd1a32ec92980c117c0264657fb10dd46cd34707b8cbd7d048271922",
+      "job_type": "style_render",
+      "prompt_sha256": "9d02f49522e3d31b4bf5d99b85806e81a27f78a0d0d7837a77223e45ea833ae8",
+      "active_rule_ids": [
+        "paper-form-from-operations",
+        "paper-material-economy",
+        "paper-space-and-shadow"
+      ],
+      "reference_image_count": 0,
+      "review_status": "pending"
+    },
+    {
+      "job_file_local_ignored": "runs/style-v2/ascii-job.json",
+      "direction": "experiments/style-v2/literal-ascii-grid/direction.yaml",
+      "direction_sha256": "7e5868a45862bbfd62765372757a0a3cec013647029462c590182d5ada0d2866",
+      "job_type": "ascii_grid_construction",
+      "prompt_sha256": "8e05e80c9505d8cc887bbe1b0b69e3fc90002516a4ce5afdf7e818a0236c61da",
+      "active_rule_ids": [
+        "ascii-literal-construction",
+        "ascii-density-hierarchy",
+        "ascii-grid-alignment"
+      ],
+      "reference_image_count": 0,
+      "review_status": "pending"
+    }
+  ],
+  "ascii_render": {
+    "schema_version": "1.0.0",
+    "route": "deterministic_grid",
+    "created_at": "2026-10-18T08:10:44.330097+00:00",
+    "subject": "One explorer holding a torch inside a cavern",
+    "art_direction": {
+      "id": "literal-ascii-grid",
+      "name": "严格 ASCII 字符网格",
+      "status": "experimental",
+      "path": "D:\\Projects\\Dog\\OhMyStyle\\experiments\\style-v2\\literal-ascii-grid\\direction.yaml",
+      "sha256": "7e5868a45862bbfd62765372757a0a3cec013647029462c590182d5ada0d2866",
+      "active_rule_ids": [
+        "ascii-literal-construction",
+        "ascii-density-hierarchy",
+        "ascii-grid-alignment"
+      ],
+      "contexts": [],
+      "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+    },
+    "grid": {
+      "columns": 100,
+      "rows": 36,
+      "width": 1280,
+      "height": 720,
+      "margin": 12,
+      "font_size": 18,
+      "foreground": "#A9B9BF",
+      "background": "#0A0E13",
+      "glyph_colors": {
+        "#": "#74828B",
+        "@": "#C2D2DA",
+        "+": "#FFDB89",
+        "*": "#FFDB89",
+        ".": "#536570"
+      }
+    },
+    "occupied_cells": 791,
+    "source": {
+      "path": "style-packages/game-art/ascii-character-game-art/examples/ascii-cave-grid.txt",
+      "sha256": "a9357d43a1114f57b6524370798758022998f6cc2110dba9fe17071004063c49",
+      "normalized_sha256": "2f9bfd3f34d0bb8adc6ad89973dfd8139995167abe9c5e95b3bcb097262dd071"
+    },
+    "font": {
+      "path": "C:/Windows/Fonts/consola.ttf",
+      "sha256": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+      "name": [
+        "Consolas",
+        "Regular"
+      ]
+    },
+    "renderer": {
+      "sha256": "816cc087a140549f00d676b6d2d9e76904db593e9db0073f707654c86c2574b0",
+      "pillow": "12.3.0",
+      "python": "3.13.12",
+      "cell_width": 12.56,
+      "cell_height": 19.333333333333332,
+      "anchor": "ls",
+      "glyph_offset": [
+        1,
+        14
+      ]
+    },
+    "output": {
+      "file": "master.png",
+      "sha256": "9c4c60a96cecc5c331147b4d85bf29b048154d12e9e6eb4ac6507964cea338a5",
+      "rgb_pixels_sha256": "35730a92552d6e74987c540be4812cabf393229164b099a3ff400c858a24af65"
+    },
+    "review": {
+      "status": "pending",
+      "note": "Literal construction does not establish scene readability or style quality."
+    }
+  },
+  "limits": [
+    "No image model was invoked; no comparison protocol or automated test suite was run in this implementation step.",
+    "One ASCII render demonstrates the glyph construction route, not repeated-run reproducibility or new-scene quality.",
+    "Existing source-grid layout is preserved and right-padded to the configured grid.",
+    "Generation outputs remain local ignored artifacts; repeat the README commands to recreate them.",
+    "No bulk conversion of formal packages, maturity upgrades, or image-quality acceptance.",
+    "HTTP/MCP sessions, retrieval, gallery, and composite compilation retain the legacy path."
+  ]
+}
