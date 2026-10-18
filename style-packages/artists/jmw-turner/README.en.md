@@ -34,6 +34,18 @@ References are used for research and visual analysis. External artworks, photogr
 
 See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references/manifest.csv), and the repository [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: weather, light, and motion (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `atmospheric-weather-motion`. It makes gradual loss of edge and contrast through vapor, layered warm light and cool air, and one legible movement vector reviewable rules. It does not add trains, ships, bridges, or storms by default, and does not use uniform fog as a substitute for atmospheric depth.
+
+This differs from Monet's direction, which organizes a scene around transient color and reflections on water: Turner's direction requires a traceable spatial movement vector and lets weather, light, and motion jointly shape the focal event.
+
+```powershell
+python tools/compile-style.py style-packages/artists/jmw-turner --direction package --context atmospheric-weather-motion --subject "A rescue helicopter crossing a rain-dark valley at sunrise" --output runs/style-v2/jmw-turner-job.json
+```
+
+This direction remains experimental; same-subject and cross-subject visual review is pending.
+
 ## Use only this package
 
 Choose any one of the four methods below. They are alternatives, not steps that must all be completed.

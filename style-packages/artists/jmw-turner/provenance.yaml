@@ -1,12 +1,22 @@
 package_id: jmw-turner
-package_version: 0.1.0
-curation_status: reference_images_verified
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: Original historical works are bundled only when the cited source marks them public domain; the generated example is an anonymous new scene.
 sources:
   - url: https://commons.wikimedia.org/wiki/File:Rain_Steam_and_Speed_the_Great_Western_Railway.jpg
     authority: Wikimedia Commons
     supports: primary visual reference; public-domain reproduction of a historical oil painting
     accessed: 2026-08-06
+  - url: https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-rain-steam-and-speed-the-great-western-railway
+    authority: The National Gallery, London
+    title: Rain, Steam, and Speed - The Great Western Railway
+    supports: diagonal recession, selective obscuring by rain and steam, and the focal event's contrast with the atmosphere
+    accessed: '2026-10-19'
+  - url: https://www.nationalgallery.org.uk/research/publications/exhibition-catalogues/fruits-of-the-spirit-art-from-the-heart/self-control
+    authority: The National Gallery, London
+    title: Atmospheric light in Rain, Steam and Speed
+    supports: light and atmosphere as a deeper subject, with weather held between observation and dissolution
+    accessed: '2026-10-19'
   - url: https://commons.wikimedia.org/wiki/File:The_Fighting_Temeraire,_JMW_Turner,_National_Gallery.jpg
     authority: Wikimedia Commons
     supports: secondary visual reference; public-domain reproduction of a historical oil painting

@@ -34,6 +34,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 和仓库的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：天气、光线与运动（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `atmospheric-weather-motion` 时启用。它把透雾后的边缘与对比度递减、暖光和冷空气的颜料层次、以及一个清楚的运动方向变成可检查规则。不会默认加入火车、船、桥梁或暴风雨，也不会用均匀雾层代替空气透视。
+
+这与莫奈方向围绕瞬时色彩与水面反光组织画面有所区别：透纳方向要求一个可追踪的空间运动向量，并让天气、光线和运动共同塑造主事件。
+
+```powershell
+python tools/compile-style.py style-packages/artists/jmw-turner --direction package --context atmospheric-weather-motion --subject "A rescue helicopter crossing a rain-dark valley at sunrise" --output runs/style-v2/jmw-turner-job.json
+```
+
+该方向仍为实验规则；同题与跨主体视觉评审待完成。
+
 ## 只使用此包
 
 四种方式可以按手边的工具任选其一，不需要同时使用。

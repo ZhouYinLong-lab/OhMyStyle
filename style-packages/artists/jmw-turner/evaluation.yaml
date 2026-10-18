@@ -1,5 +1,15 @@
 package_id: jmw-turner
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  atmospheric-weather-motion:
+    required:
+    - focal event stays identifiable while edge certainty decreases with distance or vapor
+    - warm light and cool air interact through layered painted relationships
+    - one clear movement vector supports the requested event
+    reject_if:
+    - uniform fog or global blur replaces atmospheric depth
+    - neon bloom or lens flare replaces painted luminosity
+    - an unrequested train, ship, bridge, or storm is added
 invariants:
 - id: atmospheric_depth
   weight: 3

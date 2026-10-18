@@ -175,6 +175,7 @@ the same prompt wording.
 | [El Greco vertical lift and flickering form](../style-packages/artists/el-greco/art-direction.yaml) | Selective elongation, staged upward composition, local color contrast and brush rhythm | `text_only`, declare `vertical-lift-composition` |
 | [Kahlo frontal presence and personal symbolic relations](../style-packages/artists/frida-kahlo/art-direction.yaml) | Frontal portrait presence, shallow space, relationships among user-specified objects | `text_only`, declare `intimate-symbolic-portrait` |
 | [Cassatt figure and decorative plane](../style-packages/artists/mary-cassatt/art-direction.yaml) | Modeled figure against flatter pattern, decorative color planes, scene-led viewpoint | `text_only`, declare `patterned-domestic-figure-scene` |
+| [Turner weather, light, and motion](../style-packages/artists/jmw-turner/art-direction.yaml) | Graduated atmospheric depth, layered warm-cool light, one legible movement vector | `text_only`, declare `atmospheric-weather-motion` |
 
 ## 6. Execution routes
 

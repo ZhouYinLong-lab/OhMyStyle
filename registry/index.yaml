@@ -707,7 +707,7 @@ packages:
   - palette
   - surface
   - texture
-  reference_count: 2
+  reference_count: 4
   accepted_example_count: 1
   rejected_example_count: 1
   benchmark: true
