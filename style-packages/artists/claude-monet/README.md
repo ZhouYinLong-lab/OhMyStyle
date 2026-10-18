@@ -22,10 +22,27 @@
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 
+## 新版方向（实验）
+
+`art-direction.yaml` 将新版方向拆为条件光色、相邻色触、选择性大气边缘、依表面变化的笔触、普通母题构图，以及仅在用户要求组图时启用的系列观察规则。它强调同一时刻里天气与光线如何改变画面，不等同于整体粉彩滤镜、均匀柔焦或随处撒点。
+
+这与索罗亚方向的区分是：莫奈优先表现天气和时段造成的综合色彩、空气距离和相邻色触；索罗亚优先表现明确日光方向、可追溯的反射光和清楚的明暗分组。两者都能表现户外光线，但不能互换成同一套暖亮或蓝紫滤镜。
+
+新版规则为实验状态，需显式启用；省略 `--direction` 时仍走原有包路径：
+
+```powershell
+python tools/compile-style.py style-packages/artists/claude-monet --direction package --context daylight --subject "A small stone footbridge beside a quiet pond under cool, overcast autumn daylight; no lilies or people" --output runs/monet-v2-job.json
+```
+
+生图效果尚未完成评审。用 `evaluation.yaml` 对比至少两个不同天气或时段，并确认没有擅自加入睡莲、教堂、干草堆等固定母题。
+
 ## 参考来源
 
 - [https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg](https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg)
 - [https://www.nga.gov/artworks/52186-argenteuil](https://www.nga.gov/artworks/52186-argenteuil)
+- [Musée d'Orsay：Monet and changing weather, time, and season](https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/lucas-arruda-quimporte-le-paysage)
+- [Musée d'Orsay：Wind Effect, Series of Poplars](https://www.musee-orsay.fr/en/artworks/effet-de-vent-serie-des-peupliers-119429)
+- [National Gallery of Art：Claude Monet](https://www.nga.gov/artists/1726-claude-monet)
 
 ## 来源与版权
 
@@ -47,13 +64,14 @@
 请先读取本目录中的：
 - identity.yaml
 - visual-signature.yaml
+- art-direction.yaml（如需启用新版规则）
 - reproduction.yaml
 - prompts/base.txt
 - prompts/negative.txt
 - palette/palette.json
 - evaluation.yaml
 
-请把这些文件中的规则整合到生成流程中，不要只把风格名称当作 Prompt，也不要复制参考作品。
+请把这些文件中的规则整合到生成流程中，不要只把风格名称当作 Prompt，也不要复制参考作品。如采用新版方向，须显式按其适用条件和拒绝条件执行；默认路径保持原有提示内容。
 
 我的生成需求是：
 <填写人物、物体、场景、画幅和用途>

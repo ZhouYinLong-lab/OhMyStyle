@@ -1,15 +1,15 @@
 package_id: claude-monet
-package_version: 0.1.0
+package_version: 0.2.0
 invariants:
 - id: transient_light
   weight: 3
-  test: Light temperature and reflected air organize the image.
+  test: A declared time or weather condition changes the light temperature across the scene without becoming a uniform color filter.
 - id: broken_color
   weight: 3
-  test: Adjacent color touches replace uniform fills and heavy outlines.
+  test: Adjacent color notes remain locally distinct at viewing scale and combine into forms without heavy contour drawing.
 - id: selective_atmosphere
   weight: 2
-  test: Distant edges dissolve while the motif remains readable.
+  test: Atmospheric edges soften with distance or veil while the principal motif remains structurally legible.
 - id: original_arrangement
   weight: 3
   test: The scene is not a recognizable reconstruction.
@@ -17,6 +17,9 @@ rejections:
 - global_pastel_filter
 - heavy_impasto
 - copied_named_work
+- uniform_pastel_filter
+- universal_blur
+- forced_multi_panel_series
 minimum_score: 8
 semantic_evaluation:
   subject_independence:
@@ -24,13 +27,16 @@ semantic_evaluation:
     notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: Record which visual decisions remain observable after the subject changes.
+    notes: Check whether weather-dependent color, adjacent broken touches, and selective atmospheric edges remain visible after the subject changes.
   visual_overlap:
     score: null
-    notes: Compare the representative image and output with near-duplicate packages.
+    notes: >-
+      Compare with Sorolla. Monet foregrounds condition-dependent atmosphere and
+      adjacent color notes; Sorolla foregrounds directional sun, sourced bounce
+      light, and clearer value grouping. Similarity metrics are screening cues only.
   cross_subject_stability:
     score: null
-    notes: Run at least two different subjects before assigning a score.
+    notes: Run at least two subjects under different declared conditions. If a series is requested, keep the motif and framing stable while changing only the specified time or weather; otherwise generate one scene.
 image_audit:
   similarity_level: review
   method: perceptual hash, color histogram, luminance, texture, and layout; screening only

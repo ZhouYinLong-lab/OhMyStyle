@@ -1,0 +1,201 @@
+schema_version: 2.0.0
+status: experimental
+id: monet-changing-moment
+name: 莫奈：瞬时光色观察
+base_package: artists/claude-monet
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    以一个被明确观察到的日间时刻为单位，让天气、空气和反射改变相邻色彩
+    的关系；用可见但松动的笔触和有选择的边缘融化表现感知变化，不把作品
+    简化为粉彩滤镜或统一柔焦。
+  required_contexts:
+    - daylight
+  incompatible_contexts:
+    - night
+    - studio-spotlight
+    - photographic-output
+  limitations:
+    - 需要由用户场景或调用者上下文确定日光、天气或季节条件；不得擅自添加雾、雪或雨。
+    - 单幅图表现一个时刻；只有用户明确要求组图时，才使用系列观察方法。
+    - 大气边缘可以软化，但主体结构和重要空间关系仍需可读。
+pillars:
+  - 把光线和天气的具体瞬间当作画面组织条件，而非铺在所有物体上的色彩滤镜。
+  - 以相邻、可辨的冷暖色触组织综合色彩，让观看距离参与颜色融合。
+  - 笔触按水面、树叶、天空和建筑等表面变化，不把所有区域处理成同一种碎点。
+  - 近处保留主体结构，远处边缘随空气和天气有选择地松动。
+  - 重复母题是受请求时的观察方法，不是每张图的默认构图模板。
+rules:
+  - id: monet-condition-specific-light
+    axis: lighting
+    importance: core
+    applies_when: 用户或上下文指定了日光下的时段、天气或季节条件。
+    instruction: >-
+      先选定这一幅画所处的光照状态，再让天空、地面和主体的色温彼此呼应；
+      让光的变化具体落在物体表面和空气距离上，不给全画套同一层粉蓝、灰紫
+      或金黄色。
+    observable: >-
+      观看者能从场景内多个表面读出同一种天气或时段；颜色会随受光方向、遮挡
+      和空气距离而变化，而非每个对象等量染色。
+    reject_when: >-
+      画面只有整体低饱和、泛白或泛蓝的滤镜感，天气条件无法从物体和空间关系
+      中被辨认。
+    avoid: uniform pastel wash, global cool tint, all-over golden haze
+    evidence:
+      source_ids:
+        - monet-orsay-series
+        - monet-nga-profile
+      basis: institutional_description
+      visual_review: pending
+  - id: monet-adjacent-color-notes
+    axis: palette
+    importance: core
+    applies_when: 画面有可观察的光色变化、反射或相邻色面。
+    instruction: >-
+      用彼此相邻但局部可区分的短色触表现综合色彩；依据环境把冷暖色并置在
+      水面、雪地、树影或建筑平面上，让这些色触在观看距离融合成整体，不用
+      黑色轮廓线逐件封闭形体。
+    observable: >-
+      放大看可见局部色触的差别，缩小看能读出统一光色；阴影不被压成单一黑灰，
+      形体也不依赖深色描边才成立。
+    reject_when: >-
+      所有表面都被平涂成大块粉彩，或对比色随机点缀而不受光线和邻接关系约束。
+    avoid: flat pastel fill, arbitrary complementary speckles, heavy dark contours
+    evidence:
+      source_ids:
+        - monet-nga-profile
+        - monet-orsay-series
+      basis: curatorial_inference
+      visual_review: pending
+  - id: monet-selective-atmospheric-edges
+    axis: space_and_edges
+    importance: core
+    applies_when: 场景具有可辨认的前后距离、空气遮蔽或天气造成的软化。
+    instruction: >-
+      让远处轮廓随空气、湿度或雾气局部融入邻近色；近处的主要母题保留足够
+      的形体转折和遮挡关系。没有雾气时，用较弱的对比和较少的边缘细节表现距离，
+      不要人为叠加雾幕。
+    observable: >-
+      远近层次通过边缘、对比和色彩变化共同成立；核心主体仍可辨认，软边没有
+      退化成全画面失焦。
+    reject_when: >-
+      前景和远景同样模糊，或所有物体都以硬轮廓切开，抹除了天气与空间深度。
+    avoid: universal blur, airbrush softness, uniform crisp outlines
+    evidence:
+      source_ids:
+        - monet-orsay-series
+        - monet-nga-profile
+      basis: curatorial_inference
+      visual_review: pending
+  - id: monet-surface-specific-marks
+    axis: mark_making
+    importance: core
+    applies_when: 场景包含可以区分的表面方向、重复纹理或运动。
+    instruction: >-
+      按表面组织色触：水面用贴合水平方向和反射带的短横笔触，树叶用随枝叶
+      聚散的色簇，建筑和雪地则沿平面分组；变化笔触长度和密度，不要让每种
+      材质都变成相同的点状纹理。
+    observable: >-
+      不看物体轮廓也能从笔触分组辨别至少两种表面；笔触疏密服从主体尺度和
+      空气距离，局部颜料感没有覆盖整体光色关系。
+    reject_when: >-
+      全图均匀铺满同尺寸短点，或以厚重、单一方向的堆叠笔触主导所有材质。
+    avoid: uniform stippling, dominant thick impasto, texture unrelated to surface
+    evidence:
+      source_ids:
+        - monet-nga-profile
+        - monet-orsay-poplar-record
+      basis: direct_visual_observation
+      visual_review: pending
+  - id: monet-ordinary-motif-composition
+    axis: composition
+    importance: supporting
+    applies_when: 用户给定的主体允许以平静视点和开放空间呈现。
+    instruction: >-
+      用稳定、直接的观察视点安排一个普通但可辨的主体，让周围天空、水面或
+      环境留出呼吸空间；可以使用偏置构图，不为制造戏剧性强加倾斜地平线或
+      夸张裁切。
+    observable: >-
+      主体清楚，环境色光获得足够面积，构图注意力落在母题及其所处的光色条件，
+      而不是戏剧化动作。
+    reject_when: >-
+      为了模仿某个名作而固定使用睡莲池、干草堆、教堂立面或某种特定视角，
+      或用强烈裁切压过用户给定主体。
+    avoid: unrequested water lilies, haystacks, cathedral facade, dramatic forced crop
+    evidence:
+      source_ids:
+        - monet-orsay-series
+      basis: curatorial_inference
+      visual_review: pending
+  - id: monet-requested-series-variation
+    axis: serial_observation
+    importance: optional
+    applies_when: 用户明确要求同一主体在多个时段或天气下的组图。
+    instruction: >-
+      仅在用户要求多幅变体时，保持主体、视点和主要构图关系稳定，只改变用户
+      指定的时段、天气或季节；每幅单独保留可读色彩组织，不把组图拼成一张
+      未经要求的多格画面。
+    observable: >-
+      变体之间的差异可归因于指定光照条件；主体和构图锚点保持一致，单张画面
+      仍然完整。
+    reject_when: >-
+      用户只要单张图时擅自生成多格组图，或多幅之间同时改变主体和天气以致
+      无法比较光色变化。
+    avoid: unsolicited multi-panel collage, changing subject and weather at once
+    evidence:
+      source_ids:
+        - monet-orsay-series
+      basis: institutional_description
+      visual_review: pending
+active_rule_ids:
+  - monet-condition-specific-light
+  - monet-adjacent-color-notes
+  - monet-selective-atmospheric-edges
+  - monet-surface-specific-marks
+  - monet-ordinary-motif-composition
+  - monet-requested-series-variation
+joint_checks:
+  - id: monet-light-color-distance-coherence
+    rule_ids:
+      - monet-condition-specific-light
+      - monet-adjacent-color-notes
+      - monet-selective-atmospheric-edges
+    instruction: >-
+      让指定的天气或时段同时影响邻接色关系与空间边缘；色彩变化要解释空气和
+      光线，边缘变化也要服从同一条件。
+    observable: >-
+      光色、远近对比和软边共同描述同一瞬间；移除全局色调后，天气仍能从局部
+      色彩和空间关系中被读出。
+  - id: monet-mark-motif-coherence
+    rule_ids:
+      - monet-surface-specific-marks
+      - monet-ordinary-motif-composition
+    instruction: >-
+      让笔触分组解释母题与环境的材料差异，同时让构图保留观察母题所需的空间；
+      不把点状笔触当作独立装饰层。
+    observable: >-
+      至少两种材料能从笔触方向或密度区分，主体仍然突出，环境留白支持光色
+      观察而非抢夺主体。
+sources:
+  - id: monet-orsay-series
+    kind: museum_curatorial_analysis
+    base_asset_id: monet-orsay-series
+  - id: monet-nga-profile
+    kind: museum_artist_profile
+    base_asset_id: monet-nga-profile
+  - id: monet-orsay-poplar-record
+    kind: museum_object_record
+    url: https://www.musee-orsay.fr/en/artworks/effet-de-vent-serie-des-peupliers-119429
+execution:
+  route: text_only
+  must:
+    - Preserve the requested subject, count, setting, and essential composition.
+    - Use one caller-declared daylight or weather moment; do not add unrequested weather.
+    - Build color from adjacent locally varied notes and keep the main motif legible.
+    - Vary mark grouping and edge softness by surface and distance.
+    - Produce one complete scene unless the user explicitly asks for a series.
+  avoid:
+    - unrequested water lilies, haystacks, cathedral facades, or copied reference arrangements
+    - uniform pastel tint, universal blur, heavy dark contours, or dominant thick impasto
+    - unrequested multi-panel collage or dramatic cropping that obscures the subject

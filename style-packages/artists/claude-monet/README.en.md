@@ -22,10 +22,27 @@ A reference-backed landscape painting profile focused on transient light, atmosp
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rules.
 
+## New direction (experimental)
+
+`art-direction.yaml` separates condition-specific light and color, adjacent color notes, selective atmospheric edges, surface-dependent marks, ordinary-motif composition, and a series-observation rule used only when the user requests multiple images. It focuses on how weather and light alter one observed moment; it is not a global pastel filter, uniform blur, or random stippling.
+
+The distinction from the Sorolla direction is deliberate: Monet foregrounds weather- and time-dependent color, atmospheric distance, and adjacent color notes. Sorolla foregrounds a readable daylight direction, traceable bounce light, and clearer value grouping. Both can depict outdoor light, but they do not reduce to the same warm-bright or blue-violet filter.
+
+The new rules are experimental and opt-in. Omitting `--direction` retains the package's original path:
+
+```powershell
+python tools/compile-style.py style-packages/artists/claude-monet --direction package --context daylight --subject "A small stone footbridge beside a quiet pond under cool, overcast autumn daylight; no lilies or people" --output runs/monet-v2-job.json
+```
+
+Image results have not been reviewed. Use `evaluation.yaml` to compare at least two weather or time conditions, and check that the package does not add water lilies, cathedrals, haystacks, or other fixed motifs without being asked.
+
 ## Reference sources
 
 - [https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg](https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg)
 - [https://www.nga.gov/artworks/52186-argenteuil](https://www.nga.gov/artworks/52186-argenteuil)
+- [Musée d'Orsay: Monet and changing weather, time, and season](https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/lucas-arruda-quimporte-le-paysage)
+- [Musée d'Orsay: Wind Effect, Series of Poplars](https://www.musee-orsay.fr/en/artworks/effet-de-vent-serie-des-peupliers-119429)
+- [National Gallery of Art: Claude Monet](https://www.nga.gov/artists/1726-claude-monet)
 
 ## Sources and rights
 
@@ -47,13 +64,14 @@ Use this style package to help me generate an image.
 First read:
 - identity.yaml
 - visual-signature.yaml
+- art-direction.yaml (if opting into the new rules)
 - reproduction.yaml
 - prompts/base.txt
 - prompts/negative.txt
 - palette/palette.json
 - evaluation.yaml
 
-Integrate the rules from these files into the generation process. Do not treat the style name as the whole Prompt, and do not copy a reference work.
+Integrate the rules from these files into the generation process. Do not treat the style name as the whole Prompt, and do not copy a reference work. If using the new direction, apply its conditions and rejection criteria explicitly; the default path retains the original prompt content.
 
 My generation request is:
 <describe the subject, people, objects, scene, aspect ratio, and intended use>
