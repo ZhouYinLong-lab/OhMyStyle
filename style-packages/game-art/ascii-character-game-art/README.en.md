@@ -28,6 +28,12 @@ People, objects, places, architecture, plants, vehicles, and narrative come
 from your prompt. Concrete scenes in this package are examples or tests only
 and must never be added as default content.
 
+## Literal character construction
+
+ASCII art must be stacked row by row in a fixed-width grid of printable ASCII characters. Every visible scene shape must correspond to a character cell. The final image may only rasterize those characters in a monospaced font; glyphs may be tinted, but no shape may be added beyond the grid. Do not generate an ordinary picture and then overlay character texture or imitate a character effect.
+
+The gallery source grid is `examples/ascii-cave-grid.txt`, and its renderer is `render_gallery.py`. Run `python render_gallery.py` to rebuild `gallery-16x9.jpg` from the grid. The cave, torch, and explorer in the gallery are all drawn by stacking characters.
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions
@@ -54,12 +60,12 @@ See [`provenance.yaml`](provenance.yaml),
 
 Choose one of the following methods.
 
-### Method 1: Give the package to an image-capable Agent
+### Method 1: Give the package to an Agent that can output a character grid
 
 Upload this package directory to an Agent, or provide its local path, and ask:
 
 ```text
-Use this style package to help me generate an image.
+Use this style package to help me construct ASCII art.
 
 First read identity.yaml, visual-signature.yaml, reproduction.yaml,
 prompts/base.txt, prompts/negative.txt, palette/palette.json, and evaluation.yaml.
@@ -69,28 +75,34 @@ as a prompt and do not copy a reference work.
 My image request is:
 <subject, objects, scene, aspect ratio, and purpose>
 
-Compile the full prompt first, then generate the image. After generation, check
-style features, composition, color, material, AI artifacts, and request adherence
-against evaluation.yaml, and report remaining risks.
+First output a fixed-width, row-by-row grid containing printable ASCII only.
+Every scene shape must be formed by the characters themselves. Do not call an
+image generator to make a picture that merely looks like ASCII art, and do not
+add graphics outside the grid. To make an image, use render_gallery.py as a
+reference for rasterizing the grid. Then check the grid, composition, color,
+material, and request adherence against evaluation.yaml, and report any issues.
 ```
 
-### Method 2: Copy the prompts
+### Method 2: Copy the character construction rules
 
-Replace the subject, objects, scene, and aspect ratio in `prompts/base.txt` and
-send `prompts/negative.txt` as the negative prompt. Use the visual signature and
-palette for tighter control.
+Replace the subject, objects, scene, and aspect ratio in `prompts/base.txt`, and
+ask a text model to return a fixed-width ASCII grid. Do not submit these rules to
+a standard text-to-image model. To make an image, render the grid cell by cell
+in a monospaced font. `prompts/negative.txt` lists approaches to exclude.
 
 ### Method 3: Submit through your own API tool
 
-Configure your API key in your own image platform or prompt compiler, then submit
-the base prompt, negative constraints, palette, and any required reference list.
-The repository does not host a generation service or manage API keys.
+Configure your API key in your own text-model API or prompt compiler and have it
+return a character grid, then rasterize that grid cell by cell in your
+application. Do not send the grid to an image-generation API for redrawing. The
+repository does not host an online service or manage API keys.
 
 ### Method 4: Local model + ComfyUI
 
-Connect the prompts to a local model or ComfyUI workflow. Use the palette,
-reproduction notes, and reference manifest to set color, composition, material,
-and lighting. Review the output against `evaluation.yaml`.
+Use a local text model to produce the fixed-width character grid, then render it
+with code or a ComfyUI node that preserves each glyph cell exactly. Avoid image
+generation nodes that redraw the character structure. Review the output against
+`evaluation.yaml`.
 
 Users manage model weights, API keys, and generated images themselves. References
 are for observable traits only; do not copy a source work's exact composition,

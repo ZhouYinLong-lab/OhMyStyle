@@ -12,6 +12,9 @@ invariants:
 - id: material_readability
   weight: 2
   test: Requested materials and capture behavior remain visually distinguishable.
+- id: literal_glyph_construction
+  weight: 4
+  test: Every visible scene mark comes from a printable ASCII character in a fixed-width grid, and the raster preview preserves each glyph in its original cell without added pictorial geometry.
 - id: human_artifact_control
   weight: 2
   test: Hands, faces, geometry, text, reflections, and repeated details do not show
@@ -22,6 +25,8 @@ rejections:
 - unreadable_subject
 - style_pollution
 - unmotivated_extra_objects
+- image_that_only_resembles_ascii
+- pictorial_shapes_absent_from_character_grid
 minimum_score: 8
 benchmark_suite:
 - portrait

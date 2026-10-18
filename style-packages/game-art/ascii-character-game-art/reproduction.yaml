@@ -1,14 +1,20 @@
-medium: monospaced glyph-based raster art
+medium: rasterized fixed-width ASCII character grid
 materials:
-- monospaced type
+- printable ASCII characters in a fixed-width grid
+- monospaced type rendered one glyph per grid cell
 - limited terminal colors
 - character-grid clusters
 process:
-- 选择等宽字符网格
-- 先分空间层级与负形
-- 用字形搭建主体轮廓
-- 增加材质和少量提示符号
-- 缩放后检查阅读性
+- 先确定固定列宽、行数和等宽字体
+- 用空格安排负形，以逐行 ASCII 字符堆叠空间、主体和轮廓
+- 用字符密度和字形变化表达材质、光线与远近
+- 只给已有字符单元着色，不用色块、几何或图像纹理补画形状
+- 将字符网格逐格栅格化为目标画幅，并检查字符清晰度与主体可读性
+hard_constraints:
+- Every visible mark that carries scene content must be a printable ASCII glyph in the fixed-width grid.
+- Raster output must be rendered from the grid; never create a pictorial image first and imitate or overlay ASCII afterward.
+- Preserve every non-space source character in its original cell; do not let an image model redraw, replace, or rearrange glyphs.
+- Color may tint glyph cells but may not carry a shape that is absent from the grid.
 technical_direction: Keep glyphs legible at the requested display size; do not encode
   essential meaning through color alone.
 safety_note: Use observable traits only. Do not reconstruct a named work, character,

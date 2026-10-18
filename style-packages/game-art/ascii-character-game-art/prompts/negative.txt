@@ -6,3 +6,7 @@
 - photographic texture
 - unreadable glyph noise
 - copied interface
+- pictorial image that only resembles ASCII art
+- ASCII texture over a non-glyph scene
+- visible scene shapes absent from the character grid
+- altered, replaced, or rearranged source glyphs
