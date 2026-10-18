@@ -43,6 +43,18 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: contour tension and exposed ground (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) focuses on selected works on paper from around 1910–1914 and is enabled only when the user declares `expressive-contour-study`. It uses directional, weighted contour; open ground that presses against the subject; and sparse, localized dry color. It does not default to nudity, self-portraiture, a particular pose, or erotic framing.
+
+This differs from Beardsley's black-and-white ink masses and decorative calligraphic contour, and from Morisot's quick gesture-led strokes and open edges. The Schiele direction centers on structural pressure in the contour and the compositional role of exposed paper.
+
+```powershell
+python tools/compile-style.py style-packages/artists/egon-schiele --direction package --context expressive-contour-study --subject "A fully clothed ceramicist seated at a worktable, repairing a cracked cup" --output runs/style-v2/egon-schiele-job.json
+```
+
+This direction remains experimental; visual review across subjects is still pending.
+
 ## Use only this package
 
 Choose one of the following methods.

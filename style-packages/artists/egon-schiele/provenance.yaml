@@ -1,5 +1,5 @@
 package_id: egon-schiele
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_backed_link_only
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
@@ -9,6 +9,26 @@ sources:
   title: Egon Schiele collection
   supports: source traceability and observable package scope
   accessed: '2026-08-07'
+- url: https://www.moma.org/documents/moma_catalogue_264_300063176.pdf
+  authority: The Museum of Modern Art
+  title: "Egon Schiele: The Leopold Collection"
+  supports: Development of emphatic contour drawing from direct observation
+  accessed: '2026-10-19'
+- url: https://onlinecollection.leopoldmuseum.org/en/object/1538-crouching-female-nude/
+  authority: Leopold Museum
+  title: Crouching Female Nude, 1914
+  supports: Sparse dry coloring and confident line and compositional organization in works on paper
+  accessed: '2026-10-19'
+- url: https://onlinecollection.leopoldmuseum.org/en/object/1596-squatting-female-nude/
+  authority: Leopold Museum
+  title: Squatting Female Nude, 1910
+  supports: Angular body silhouette and contour emphasis; not a default subject recommendation
+  accessed: '2026-10-19'
+- url: https://onlinecollection.leopoldmuseum.org/en/object/528-self-portrait-with-chinese-lantern-plant/
+  authority: Leopold Museum
+  title: Self-Portrait with Chinese Lantern Plant, 1912
+  supports: Asymmetrical composition and corresponding contour and color balance
+  accessed: '2026-10-19'
 attribution: This package studies observable visual decisions associated with Egon
   Schiele; it does not reproduce a named work, character, location, logo, text, or
   exact composition.

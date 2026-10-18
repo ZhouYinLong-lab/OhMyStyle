@@ -183,6 +183,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [里维拉公共叙事壁画层次](../style-packages/artists/diego-rivera/art-direction.yaml) | 相连叙事层次、人物与环境共尺度、远距可读的大色面 | `text_only`，声明 `public-narrative-mural` |
 | [委拉斯开兹目光、纵深与选择性精确](../style-packages/artists/diego-velazquez/art-direction.yaml) | 群像视线组织、暗部空间纵深、焦点细节与宽松背景笔触 | `text_only`，声明 `observed-interior-portrait` |
 | [德加偏置观察与空间裁切](../style-packages/artists/edgar-degas/art-direction.yaml) | 偏置视点、非对称取景、空间平面与可读的过渡姿态 | `text_only`，声明 `observed-figure-scene` |
+| [席勒轮廓张力与纸白负形](../style-packages/artists/egon-schiele/art-direction.yaml) | 方向性轮廓、形体与纸白张力、局部干涩色块 | `text_only`，声明 `expressive-contour-study` |
 
 ## 6. 从主体请求到结果
 

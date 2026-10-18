@@ -34,6 +34,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：轮廓张力与纸白负形（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 聚焦席勒约 1910–1914 年的部分纸上作品，并仅在用户声明 `expressive-contour-study` 时启用。核心是有方向和轻重变化的轮廓、与主体互相施压的留白、少量局部干涩色彩。不会自动加入裸体、自画像、特定姿势或情色表达。
+
+这与比亚兹莱以黑白墨块和装饰性书写轮廓组织画面的方向不同，也与莫里索以快速笔触承载手势、开放边缘不同：席勒方向关注轮廓的结构压力和纸白的构图作用。
+
+```powershell
+python tools/compile-style.py style-packages/artists/egon-schiele --direction package --context expressive-contour-study --subject "A fully clothed ceramicist seated at a worktable, repairing a cracked cup" --output runs/style-v2/egon-schiele-job.json
+```
+
+该方向仍为实验规则，跨题材视觉评审尚未完成。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

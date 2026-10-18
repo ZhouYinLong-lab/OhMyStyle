@@ -169,6 +169,7 @@ the same prompt wording.
 | [Rivera public narrative registers](../style-packages/artists/diego-rivera/art-direction.yaml) | Connected narrative registers, shared scale for people and environment, distance-readable color planes | `text_only`, declare `public-narrative-mural` |
 | [Velázquez gaze, depth, and selective precision](../style-packages/artists/diego-velazquez/art-direction.yaml) | Gaze organizes group relationships, dark values create room depth, focal details against broad passages | `text_only`, declare `observed-interior-portrait` |
 | [Degas oblique observation and spatial crop](../style-packages/artists/edgar-degas/art-direction.yaml) | Oblique viewpoint, asymmetric framing, spatial planes, and legible transitional poses | `text_only`, declare `observed-figure-scene` |
+| [Schiele contour tension and exposed ground](../style-packages/artists/egon-schiele/art-direction.yaml) | Directional contour, tension between form and paper ground, sparse dry color | `text_only`, declare `expressive-contour-study` |
 
 ## 6. Execution routes
 
