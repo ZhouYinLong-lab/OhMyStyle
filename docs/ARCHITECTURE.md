@@ -191,6 +191,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [卡萨特人物与装饰平面组织](../style-packages/artists/mary-cassatt/art-direction.yaml) | 立体人物与平面图案的对照、装饰色面、按需选择的视点 | `text_only`，声明 `patterned-domestic-figure-scene` |
 | [透纳天气、光线与运动](../style-packages/artists/jmw-turner/art-direction.yaml) | 渐进的空气透视、颜料层次中的暖冷光、一条清楚的运动向量 | `text_only`，声明 `atmospheric-weather-motion` |
 | [戈雅心理肖像与选择性笔触](../style-packages/artists/francisco-goya/art-direction.yaml) | 表情与姿态、背景与面部笔触尺度差异、克制的明暗分离 | `text_only`，声明 `psychological-portrait` |
+| [伍德乡土景观图案与垂直节奏](../style-packages/artists/grant-wood/art-direction.yaml) | 滚动地形与竖向轮廓、路径引导、地域细节的克制组织 | `text_only`，声明 `composed-regional-landscape` |
 
 ## 6. 从主体请求到结果
 

@@ -1,10 +1,20 @@
 package_id: grant-wood
+package_version: 0.2.0
 research_basis:
 - title: Grant Wood
   creator: Grant Wood
   period: 美国地域主义
   source_url: https://commons.wikimedia.org/w/index.php?search=Grant+Wood&title=Special:MediaSearch&type=image
   role: style research
+- title: The American Golfer
+  creator: Grant Wood
+  period: 1940
+  source_url: https://crystalbridges.org/artworks/2014-33
+  role: institutional description of regional landscape, shape, and leading zigzag
+- title: Grant Wood
+  creator: Smithsonian American Art Museum
+  source_url: https://americanart.si.edu/artist/grant-wood-5470
+  role: institutional biography of regional subject and stylized realism
 generated_assets:
 - path: gallery-16x9.jpg
   description: New anonymous representative image

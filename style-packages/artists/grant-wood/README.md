@@ -32,6 +32,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 和仓库的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：乡土景观图案与垂直节奏（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `composed-regional-landscape` 时启用。它用滚动地形、竖向轮廓和一条有方向的路径组织景物，再以克制细节表现地域环境；不会默认添加爱荷华农田、玉米或农夫夫妇。
+
+这与戈雅的心理肖像方向不同：伍德方向依赖地景形状和道路、手势等线条串联场景，不以暗背景和面部笔触对比塑造主体。
+
+```powershell
+python tools/compile-style.py style-packages/artists/grant-wood --direction package --context composed-regional-landscape --subject "A postal cyclist passing a stone orchard wall in late autumn" --output runs/style-v2/grant-wood-job.json
+```
+
+该方向仍为实验规则；同题与跨主体视觉评审待完成。
+
 ## 只使用此包
 
 四种方式可以按手边的工具任选其一，不需要同时使用。

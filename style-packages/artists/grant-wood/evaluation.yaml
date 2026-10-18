@@ -1,5 +1,15 @@
 package_id: grant-wood
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  composed-regional-landscape:
+    required:
+    - requested activity and location remain primary
+    - rolling forms and vertical accents establish deliberate landscape rhythm
+    - a path or gesture leads the eye when it fits the scene
+    reject_if:
+    - iconic Grant Wood figures, pitchfork, or copied triangular arrangement appear
+    - unrequested farm or Midwest details replace the requested setting
+    - uniform detail or global color wash flattens the focal hierarchy
 invariants:
 - id: signature
   weight: 3

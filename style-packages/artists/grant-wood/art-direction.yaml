@@ -1,0 +1,102 @@
+schema_version: 2.0.0
+status: experimental
+id: grant-wood-rural-pattern-and-vertical-rhythm
+name: Grant Wood rural pattern and vertical rhythm
+base_package: artists/grant-wood
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: >-
+    A composed regional landscape direction that arranges rolling land, trees,
+    roads, buildings, and people as clear, stylized forms. Vertical silhouettes
+    and repeated rural patterns are balanced by a path or gesture that leads
+    the eye through the scene. Local seasonal colors and fine, controlled
+    description keep the setting legible without making a specific place or
+    subject mandatory.
+  required_contexts:
+    - composed-regional-landscape
+  incompatible_contexts:
+    - atmospheric-impressionist-haze
+    - photorealistic-aerial-landscape
+    - mandatory-farmhouse-couple
+  limitations:
+    - Preserve the user's requested place, people, season, activity, and land use; do not assume an Iowa farm.
+    - Use vertical forms and a leading path only when present in or useful to the requested scene.
+    - Do not reproduce the pose, pitchfork, architecture, or exact triangular arrangement of a named painting.
+pillars:
+  - Organize landscape elements as distinct, quietly stylized shapes with clear vertical accents.
+  - Use repeated trees, fields, roofs, or fences to build a measured regional rhythm rather than photographic randomness.
+  - Let a road, wall, fence, limb, or gesture guide the eye through the composition when the scene supports it.
+  - Keep fine detail controlled and subordinate to the large pattern of land, sky, and built forms.
+rules:
+  - id: vertical-forms-in-rolling-land
+    axis: landscape_composition
+    importance: core
+    applies_when: The requested scene includes hills, fields, trees, or small rural buildings.
+    instruction: Balance broad rolling landforms with a small number of clear upright forms such as trees, rooflines, poles, or figures; simplify their silhouettes while preserving the user's specific place and subject.
+    observable: The landscape reads as a deliberate arrangement of rounded land and vertical accents, not as a generic photo conversion.
+    reject_when: Upright forms become a mandatory tree row, all contours are geometrically identical, or the scene inherits an unrequested farm setting.
+    evidence:
+      source_ids:
+        - grant-wood-american-golfer
+        - grant-wood-smithsonian-biography
+      basis: institutional_description
+      visual_review: pending
+    avoid: mandatory cornfields, copied roof silhouettes, and repeated identical trees
+  - id: leading-zigzag-and-gesture
+    axis: directional_composition
+    importance: core
+    applies_when: The scene includes a path, fence, field boundary, body gesture, or other directional element.
+    instruction: Use one path or gesture to carry the eye through the scene, relating foreground activity to the distant setting; keep its bends and direction native to the user's location rather than copying a source layout.
+    observable: A readable directional line links the focal action with the surrounding landscape without competing with it.
+    reject_when: Decorative lines compete, the route is added without narrative purpose, or the composition resembles a known painting.
+    evidence:
+      source_ids:
+        - grant-wood-american-golfer
+      basis: institutional_description
+      visual_review: pending
+    avoid: arbitrary zigzags, pitchfork-shaped props, and copied action pose
+  - id: controlled-regional-detail-and-color
+    axis: surface_and_palette
+    importance: supporting
+    applies_when: A landscape needs readable regional details or seasonal color.
+    instruction: Render selected crops, foliage, masonry, and clothing with neat, fine detail and distinct local colors; let season and place determine the palette instead of applying a fixed Midwest color wash.
+    observable: Important regional details are precise enough to read while large shapes and focal hierarchy remain dominant.
+    reject_when: Every surface has equal detail, palette becomes a global filter, or added rural motifs replace the requested setting.
+    evidence:
+      source_ids:
+        - grant-wood-american-golfer
+        - grant-wood-smithsonian-biography
+      basis: institutional_description
+      visual_review: pending
+    avoid: global sepia, universal harvest palette, and decorative over-detail
+active_rule_ids:
+  - vertical-forms-in-rolling-land
+  - leading-zigzag-and-gesture
+  - controlled-regional-detail-and-color
+joint_checks:
+  - id: regional-pattern-and-focal-activity
+    rule_ids:
+      - vertical-forms-in-rolling-land
+      - leading-zigzag-and-gesture
+      - controlled-regional-detail-and-color
+    instruction: Keep the requested activity primary while a measured land pattern and directional element establish the scene's regional character.
+    observable: The composition links activity and setting; stylization stays precise and no iconic source arrangement is reconstructed.
+sources:
+  - id: grant-wood-american-golfer
+    kind: museum_artwork_description
+    url: https://crystalbridges.org/artworks/2014-33
+  - id: grant-wood-smithsonian-biography
+    kind: museum_artist_biography
+    url: https://americanart.si.edu/artist/grant-wood-5470
+execution:
+  route: text_only
+  must:
+    - Declare composed-regional-landscape before applying this direction.
+    - Preserve the user's location, activity, season, people, and landscape details.
+    - Use simplified vertical accents and directional paths only when they suit the requested scene.
+    - Keep fine detail subordinate to large shape relationships.
+  avoid:
+    - defaulting to Iowa, farmland, corn, or a farming couple
+    - adding a pitchfork or copying American Gothic's pose and triangular layout
+    - replacing a requested setting with idealized rural scenery

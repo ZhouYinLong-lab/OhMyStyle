@@ -32,6 +32,18 @@ Reference links are provided for research and visual analysis only. External art
 
 See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references/manifest.csv), and the repository [`NOTICE`](../../../NOTICE) for boundaries.
 
+## New architecture: regional landscape pattern and vertical rhythm (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `composed-regional-landscape`. It organizes scenery through rolling land, upright silhouettes, and a directional path, with controlled detail for a distinct sense of place. It does not default to Iowa farmland, corn, or a farming couple.
+
+This differs from Goya's psychological-portrait direction: Wood's direction uses landscape shapes and lines such as roads or gestures to connect the scene, rather than dark grounds and contrasting facial brushwork to shape the subject.
+
+```powershell
+python tools/compile-style.py style-packages/artists/grant-wood --direction package --context composed-regional-landscape --subject "A postal cyclist passing a stone orchard wall in late autumn" --output runs/style-v2/grant-wood-job.json
+```
+
+This direction remains experimental; same-subject and cross-subject visual review is pending.
+
 ## Use only this package
 
 Choose any one of the four methods below. They are alternatives, not steps that must all be completed.
