@@ -6,102 +6,185 @@ base_package: artists/joaquin-sorolla
 scope:
   medium: oil_painting
   representation: stylized
-  description: 户外日光油画实践
+  description: >-
+    以明确方向的日光（户外直射光或从窗户进入的日光）、有来源的彩色阴影和
+    有方向的油画笔触塑造可读形体；构图可以采用鲜明裁切，但不固定海岸题材
+    或特定叙事。
   required_contexts:
-  - daylight
+    - daylight
   incompatible_contexts:
-  - night
-  - photographic-output
+    - night
+    - photographic-output
   limitations:
-  - 完全黑暗且没有受光面的场景，与本次日光方向的核心条件冲突。
-  - 无笔触的纯摄影成像，与本方向的油画制作语言冲突。
+    - 需要能辨认的主光方向和至少一个可见受光面；完全黑暗的场景不适用。
+    - 反射色应由场景中的水、浅色地面、衣物或其他表面提供依据，不能凭空铺色。
+    - 照片级、无可见绘画痕迹的输出不符合本方向的油画媒介要求。
 pillars:
-- 光线与环境反射色共同组织可读的体块。
-- 快速而有方向的油画笔触承载形体与运动。
-- 鲜明局部颜色服从整体明暗分组。
+  - 直射日光以明确的明暗关系建立体积，而不是作为全画面的暖色滤镜。
+  - 阴影中的环境色能追溯到邻近受光表面，并服从主体的体积关系。
+  - 笔触沿水流、布褶、叶片或体面转折组织；大笔触先于零碎高光。
+  - 大色块保持整体明度秩序，亮色和强裁切都只在支持主体时使用。
 rules:
-- id: sorolla-light-structure
-  axis: lighting
-  importance: core
-  applies_when: 本方向选择日光任务，画面中存在可见的受光面与阴影面。
-  instruction: 以主要日光方向塑造体块，让环境反射影响暗面和过渡面。
-  observable: 同一对象的受光、暗面与反射色关系共同帮助读出结构。
-  reject_when: 只有整体偏暖或均匀发光，形体明暗和反射关系没有变化。
-  evidence:
-    source_ids:
-    - sorolla-national-gallery-technique
-    - sorolla-prado-boys-on-the-beach
-    basis: curatorial_inference
-    visual_review: pending
-  avoid: uniform warm wash or all-over glow
-- id: sorolla-directional-marks
-  axis: mark_making
-  importance: core
-  applies_when: 存在可辨认的物体表面或运动方向。
-  instruction: 用长短和厚薄有变化的笔触沿表面转折、折痕或运动组织，不将笔触均匀撒满画面。
-  observable: 焦点附近可用笔触读出转面，次要区域的细节被概括。
-  reject_when: 所有材质都被同密度短点覆盖，或整图变成无笔触的柔焦照片。
-  evidence:
-    source_ids:
-    - sorolla-national-gallery-technique
-    basis: curatorial_inference
-    visual_review: pending
-  avoid: uniform stippling or directionless brush noise
-- id: sorolla-value-grouping
-  axis: value
-  importance: core
-  applies_when: always
-  instruction: 先建立清楚的大明暗组，再放入局部亮色和选择性的高光。
-  observable: 灰阶缩略图仍能辨认主体和主要平面；局部亮色不会打散整体层级。
-  reject_when: 全画面平均提亮，或高饱和度细节取代了形体组织。
-  evidence:
-    source_ids:
-    - sorolla-national-gallery-technique
-    - sorolla-prado-boys-on-the-beach
-    basis: curatorial_inference
-    visual_review: pending
-  avoid: flattened all-bright values and scattered highlights
-- id: sorolla-selective-edges
-  axis: edges
-  importance: supporting
-  applies_when: 题材允许区分焦点与次要区域。
-  instruction: 在焦点的受光转折保留明确边缘，次要处允许松动与断续。
-  observable: 边缘清晰度有层级，主体轮廓无需整圈描黑仍然可读。
-  reject_when: 全部边缘同样锐利，或全部边缘被同样的雾化处理。
-  evidence:
-    source_ids:
-    - sorolla-national-gallery-technique
-    basis: curatorial_inference
-    visual_review: pending
-  avoid: uniform sharpness or uniform blur
+  - id: sorolla-directional-daylight
+    axis: lighting
+    importance: core
+    applies_when: 画面中存在可辨认的直射日光和受光面，包括从户外进入室内的日光。
+    instruction: >-
+      选定一个主要日光方向，用受光面、投影和转折面说明主体体积；
+      让亮部保持局部形状，不把整幅画统一提亮或染成橙黄色。
+    observable: >-
+      缩小画面后仍能判断主要受光方向；主体的亮面与阴影面共同说明体积，
+      高光没有抹掉关键轮廓和结构。
+    reject_when: >-
+      光线只表现为全画面泛白、泛黄或均匀发光，无法从明暗关系读出形体。
+    avoid: global warm wash, all-over glow, uniformly lifted shadows
+    evidence:
+      source_ids:
+        - sorolla-national-gallery-technique
+        - sorolla-museum-plein-air
+      basis: institutional_description
+      visual_review: pending
+  - id: sorolla-causal-reflected-color
+    axis: color_and_light
+    importance: core
+    applies_when: 场景中有水面、浅色地面、衣物或其他能反射光线的表面。
+    instruction: >-
+      只在受环境影响的阴影和过渡面加入邻近表面的颜色；反射光要弱于主光，
+      并沿着被照物的平面或曲面变化，不要把互补色随机撒进暗部。
+    observable: >-
+      阴影颜色能对应到附近的反光来源，且仍与亮面保持明度差；反射笔触服从
+      水面、湿润皮肤、布料或建筑等具体表面的方向。
+    reject_when: >-
+      阴影统一涂成单一蓝紫色，或出现与环境无关的彩色渐变，破坏物体体积。
+    avoid: arbitrary colored shadows, uniform blue shadow fill, unrelated gradients
+    evidence:
+      source_ids:
+        - sorolla-prado-boys-on-the-beach
+        - sorolla-national-gallery-technique
+      basis: direct_visual_observation
+      visual_review: pending
+  - id: sorolla-broad-value-design
+    axis: value
+    importance: core
+    applies_when: always
+    instruction: >-
+      先归并少量清楚的大明暗组，再用高明度白色、局部高饱和色和少量暗部
+      强调焦点；保留足够的中间调连接亮面与阴影。
+    observable: >-
+      灰阶缩略图仍能辨认主体和前后层次；鲜艳局部色没有把大形切碎，阴影中
+      仍保留可读的色彩变化。
+    reject_when: >-
+      画面只有亮色堆叠、主体与背景明度相近，或为了显得明亮而删除全部中间调。
+    avoid: scattered highlights, equal-brightness color patches, crushed shadow structure
+    evidence:
+      source_ids:
+        - sorolla-national-gallery-technique
+        - sorolla-prado-boys-on-the-beach
+      basis: curatorial_inference
+      visual_review: pending
+  - id: sorolla-form-following-brushwork
+    axis: mark_making
+    importance: core
+    applies_when: 画面需要表现可辨认的表面、运动或体面转折。
+    instruction: >-
+      用长短、宽窄和不透明度有变化的油画笔触概括表面：顺水流排布水面笔触，
+      顺布褶和风向处理衣物与叶片，顺体面转折塑造人物、器物和建筑；只在焦点
+      使用少量短促亮笔，不要给所有区域铺同一种笔触。
+    observable: >-
+      主要笔触方向能帮助读出材料或运动；焦点细节比次要区域更集中，局部颜料
+      纹理仍参与形体而非覆盖形体。
+    reject_when: >-
+      全画面被同密度短点、均匀碎笔或无方向的纹理覆盖，或笔触被平滑渲染完全抹除。
+    avoid: uniform stippling, directionless brush noise, airbrushed surfaces
+    evidence:
+      source_ids:
+        - sorolla-national-gallery-technique
+        - sorolla-museum-plein-air
+      basis: institutional_description
+      visual_review: pending
+  - id: sorolla-observed-crop
+    axis: composition
+    importance: supporting
+    applies_when: 主体和场景允许使用近距离视点、斜向视线或非对称裁切。
+    instruction: >-
+      可采用直接观察般的视点、斜向角度或大胆裁切，让场景显得即时；裁切必须
+      保留主体识别所需的关键关系，不把偶发构图变成固定模板。
+    observable: >-
+      构图重心明确，裁切边缘带来观看方向或空间张力，主体仍可辨认；若题材不
+      适合强裁切，使用自然视点也符合规则。
+    reject_when: >-
+      每张图都强制使用倾斜地平线、贴边人物或海岸俯视角，或裁切切断主体关键
+      结构而没有形成有意图的构图关系。
+    avoid: mandatory tilted horizon, repeated beach viewpoint, arbitrary subject cropping
+    evidence:
+      source_ids:
+        - sorolla-national-gallery-technique
+      basis: institutional_description
+      visual_review: pending
+  - id: sorolla-selective-edge-hierarchy
+    axis: edges
+    importance: supporting
+    applies_when: 画面存在可区分的焦点和次要区域。
+    instruction: >-
+      在能帮助读出受光形体和主体关系的位置保留明确边缘；让次要轮廓在颜色、
+      笔触或相邻色块中局部融开，避免整圈描边或整面雾化。
+    observable: >-
+      清晰、松动和消失的边缘共同形成焦点层级；不依赖黑色轮廓线，主体仍能从
+      活跃背景中分离出来。
+    reject_when: 所有边缘同样锐利，或全画面都被同程度柔焦和薄雾覆盖。
+    avoid: uniform outlines, uniform sharpness, all-over haze
+    evidence:
+      source_ids:
+        - sorolla-national-gallery-technique
+      basis: curatorial_inference
+      visual_review: pending
 active_rule_ids:
-- sorolla-light-structure
-- sorolla-directional-marks
-- sorolla-value-grouping
-- sorolla-selective-edges
+  - sorolla-directional-daylight
+  - sorolla-causal-reflected-color
+  - sorolla-broad-value-design
+  - sorolla-form-following-brushwork
+  - sorolla-observed-crop
+  - sorolla-selective-edge-hierarchy
 joint_checks:
-- id: sorolla-form-light-mark-coherence
-  rule_ids:
-  - sorolla-light-structure
-  - sorolla-directional-marks
-  - sorolla-value-grouping
-  instruction: 让反射色、明暗组和笔触共同说明同一组体块，保持整体空间与主体可读。
-  observable: 反射色与明暗分组说明同一组体块，笔触沿这些体块转折；三者同时支持主体可读性。
+  - id: sorolla-light-color-form-coherence
+    rule_ids:
+      - sorolla-directional-daylight
+      - sorolla-causal-reflected-color
+      - sorolla-broad-value-design
+    instruction: >-
+      让主光确定体积，让有来源的反射色丰富阴影，并让大明暗组保持主体可读；
+      三者必须描述同一个光照场景。
+    observable: >-
+      光向、反射来源和主体体积彼此一致；移除彩色反射后仍能读出明暗结构。
+  - id: sorolla-mark-composition-coherence
+    rule_ids:
+      - sorolla-form-following-brushwork
+      - sorolla-observed-crop
+      - sorolla-selective-edge-hierarchy
+    instruction: >-
+      让构图视点确定观看动势，笔触沿主体与材料的方向工作，并用边缘层级控制
+      视线；不要把三项规则变成互不相关的装饰效果。
+    observable: >-
+      主要笔触带领视线经过主体，裁切强化而非遮蔽主体，焦点边缘比次要区域
+      更集中。
 sources:
-- id: sorolla-national-gallery-technique
-  kind: institutional_analysis
-  base_asset_id: sorolla-national-gallery-technique
-- id: sorolla-prado-boys-on-the-beach
-  kind: collection_object_record
-  base_asset_id: sorolla-prado-boys-on-the-beach
-- id: sorolla-museum-plein-air
-  kind: institutional_analysis
-  base_asset_id: sorolla-museum-plein-air
+  - id: sorolla-national-gallery-technique
+    kind: institutional_analysis
+    base_asset_id: sorolla-national-gallery-technique
+  - id: sorolla-prado-boys-on-the-beach
+    kind: collection_object_record
+    base_asset_id: sorolla-prado-boys-on-the-beach
+  - id: sorolla-museum-plein-air
+    kind: institutional_analysis
+    base_asset_id: sorolla-museum-plein-air
 execution:
   route: text_only
   must:
-  - Preserve the requested objects, count, setting, and composition.
-  - Organize light, reflected color and directional oil marks coherently.
+    - Preserve the requested subject, object count, setting, and essential composition.
+    - Use a declared daylight context with a readable key-light direction.
+    - Make reflected color conditional on visible environmental sources.
+    - Describe forms and motion with varied directional oil marks and grouped values.
   avoid:
-  - unrequested beach, boat, shoreline, or reference pose
-  - copied reference composition
+    - unrequested beach, boat, shoreline, sail, or recurring reference pose
+    - copied reference composition or recognizable source painting
+    - adding a dramatic crop or tilted view when it harms subject readability

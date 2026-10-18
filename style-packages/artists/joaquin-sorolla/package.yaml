@@ -2,12 +2,13 @@ id: joaquin-sorolla
 name: 华金·索罗亚
 kind: artist
 domain: painting
-version: 0.1.1
+version: 0.2.0
 entity: catalog/persons/artists/joaquin-sorolla/entity.yaml
 summary: >-
-  A plein-air painting profile built around intense coastal daylight, bounced
-  reflected color, rapid directional oil marks, and bold crops that keep forms
-  clear within a vivid but tonally unified scene.
+  An open-subject oil painting profile built around directional daylight,
+  environmentally sourced reflected color, broad value design, and varied
+  form-following brush marks. Optional candid crops keep the image immediate;
+  coastal motifs are never required.
 files:
   identity: identity.yaml
   visual_signature: visual-signature.yaml

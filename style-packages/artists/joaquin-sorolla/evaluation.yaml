@@ -1,15 +1,15 @@
 package_id: joaquin-sorolla
-package_version: 0.1.1
+package_version: 0.2.0
 invariants:
   - id: light_shapes_form
     weight: 3
-    test: Direct light and reflected light visibly shape the subject and nearby planes.
+    test: A single declared daylight direction shapes the subject; reflected color comes from visible nearby surfaces and remains weaker than the key light.
   - id: directional_oil_marks
     weight: 3
-    test: Brush marks follow material, movement, and form rather than forming uniform stipple.
+    test: Varied oil marks follow surface, motion, and turning planes; short accents stay selective instead of covering the image uniformly.
   - id: coherent_vivid_color
     weight: 2
-    test: Bright local colors remain grouped by value and shadows retain reflected color.
+    test: The image remains readable in grayscale; vivid local colors preserve broad value groups and shadows retain sourced color variation.
   - id: subject_independence
     weight: 3
     test: The requested subject remains authoritative; coastal motifs appear only when requested.
@@ -19,6 +19,9 @@ rejections:
   - uniform_impressionist_stipple
   - all_over_atmospheric_haze
   - unrequested_coastal_props
+  - missing_directional_daylight
+  - unsupported_reflected_color
+  - crop_harms_subject_readability
 minimum_score: 8
 semantic_evaluation:
   subject_independence:
@@ -26,10 +29,10 @@ semantic_evaluation:
     notes: Pending neutral-subject review.
   distinctive_signature:
     score: null
-    notes: Check direct light, colored shadow, broad form, and directional brushwork together.
+    notes: Check a declared light direction, an identifiable source for reflected color, broad value grouping, and form-following oil marks together; brightness alone is insufficient.
   visual_overlap:
     score: null
-    notes: Compare with Monet, Renoir, Turner, and Van Gogh packages; treat similarity metrics as review cues only.
+    notes: Compare with Monet, Renoir, Turner, and Van Gogh packages; distinguish direct structured sunlight and causal reflected color from atmospheric color vibration, soft figure modeling, dissolving weather, and emotionally driven contour rhythm. Treat similarity metrics as review cues only.
   cross_subject_stability:
     score: null
-    notes: Run at least two non-coastal subjects before assigning a score.
+    notes: Run at least two non-coastal subjects, including one indoor scene with direct sunlight entering through a window, before assigning a score. Reflected color should adapt to available surfaces rather than introducing water by default.

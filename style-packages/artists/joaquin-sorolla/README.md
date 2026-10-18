@@ -25,13 +25,19 @@
 
 - `identity.yaml`：范围、主体开放策略和排除项
 - `visual-signature.yaml`：跨主题保持的视觉特征
-- `art-direction.yaml`：可选新版规则；当前仍为实验状态，需显式使用 `--direction package`，默认编译行为不变
+- `art-direction.yaml`：新架构下可选的完整方向规则，当前版本为 0.2.0；仍属实验状态，需显式使用 `--direction package`，默认编译行为不变
 - `reproduction.yaml`：从大色块到局部笔触的构建顺序
 - `prompts/base.txt`、`prompts/negative.txt`：基础提示与负面约束
 - `palette/palette.json`：颜色角色与色值
 - `evaluation.yaml`：生成后的风格和主体检查
 - `references/manifest.csv`、`provenance.yaml`：博物馆与美术馆来源、权利边界
 - `examples/generated/`：仅本地保留、尚未审核的候选图；PNG 候选默认不进入版本库
+
+## 新版方向规则
+
+新版方向把“索罗亚式日光”拆成可执行、可检查的决策：先确定主光并以明暗塑形；反射色必须有场景内的光源依据，且弱于主光；笔触依水流、布褶、叶片和体面转折而变化；大胆视点和裁切只在增强主体时采用。它不把暖色滤镜、海岸题材或倾斜构图当成固定模板。
+
+规则分别写明适用条件、生成指令、可观察结果和拒绝条件；联合检查还要求主光、反射色、明度分组、笔触与构图相互一致。所有视觉评审仍为 pending，因此这是待验证的创作规范，不代表生图效果已通过审核。`evaluation.yaml` 要求先用非海岸题材（包括阳光从窗户进入的室内场景）检查主体保持和跨题材稳定性。
 
 ## 参考依据与权利
 
@@ -49,6 +55,6 @@
 python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction package --context daylight --subject "午后日光下的庭院木椅，无人物、无水面" --output runs/sorolla-v2-job.json
 ```
 
-该方向还未完成生图对照评审，普通编译仍使用旧版路径。
+该方向还未完成生图对照评审，普通编译仍使用旧版路径。新版规则不替换 `visual-signature.yaml`、基础提示词或调色板，避免实验改动悄悄改变原有输出。
 
 每次生成后，按 `evaluation.yaml` 检查主体是否按要求呈现、日光和反射色是否参与形体塑造，以及笔触是否沿着材料和运动方向组织。不要只看颜色是否明亮。
