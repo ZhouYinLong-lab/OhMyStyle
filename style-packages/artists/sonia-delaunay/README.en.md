@@ -95,3 +95,7 @@ and lighting. Review the output against `evaluation.yaml`.
 Users manage model weights, API keys, and generated images themselves. References
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
+
+## Experimental direction: color rhythm follows garment seams
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies to one user-requested garment design. Place simultaneous-contrast color blocks along actual body, sleeve, and seam panels so the rhythm answers the garment's cut while preserving its silhouette, closures, and construction details. It does not require a dress or a fixed motif and does not turn the background into a second textile. See [`comparisons/`](comparisons/README.md) for a jacket-design probe. This direction remains experimental.

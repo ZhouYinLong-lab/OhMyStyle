@@ -1,2 +1,3 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 sonia-delaunay-primary-source,,Sonia Delaunay,National Gallery of Art,,https://www.nga.gov/artists/2467-sonia-delaunay,link_only,Source recorded for research and visual analysis; no external artwork is bundled.,primary,Link-only source record; bundle a local asset only after redistribution rights are verified.
+sonia-delaunay-moma,,Sonia Delaunay,The Museum of Modern Art,,https://www.moma.org/artists/1480-sonia-delaunay,link_only,The Museum of Modern Art,primary research source,Museum documentation of simultaneous color practice across clothing and textile design; no source image bundled or used as generation input.

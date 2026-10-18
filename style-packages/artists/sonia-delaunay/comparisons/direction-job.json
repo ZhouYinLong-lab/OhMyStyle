@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "sonia-delaunay",
+    "name": "索尼娅·德洛内",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\sonia-delaunay"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Exactly one hip-length cobalt wool jacket displayed front-on on a plain dress form, with lapels, long sleeves, one central closure, two square patch pockets, and visible panel seams; coordinated red, yellow, cobalt, and cream design; horizontal 16:9.",
+  "prompt": "USER SUBJECT: Exactly one hip-length cobalt wool jacket displayed front-on on a plain dress form, with lapels, long sleeves, one central closure, two square patch pockets, and visible panel seams; coordinated red, yellow, cobalt, and cream design; horizontal 16:9.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: painted_image\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [rhythm-follows-garment-panels] Place major color blocks and arcs inside the actual body, sleeve, and collar panels; let related edges meet or continue across seams where the user has requested a coordinated design.\n- [construction-details-remain-readable] Preserve each specified feature and leave enough contrast around it to identify its function; pattern edges may meet a seam but must not disguise the opening or fastener.\n- [controlled-simultaneous-contrast] Pair a small set of contrasting hues across neighboring garment panels, vary arc or block scale to create movement, and leave a few quiet intervals so the garment does not become an undifferentiated rainbow.\n- [wearable-color-rhythm-keeps-construction] Let a limited rhythmic color design follow the user's actual garment panels, preserve every named construction feature, and keep the garment readable as a functional item.\nREQUIREMENT: Activate only for a user-requested garment design.\nREQUIREMENT: Preserve garment type, silhouette, fit, material, openings, closures, and construction features.\nREQUIREMENT: Keep color rhythm within the garment and align it to garment panels and seams.\nREQUIREMENT: Review pattern boundaries, seam alignment, feature legibility, and palette control.",
+  "negative_prompt": "wallpaper-like all-over print or copied costume geometry\ndecorative blocks that obscure garment construction\nrandom rainbow fill, blur, motion streaks, or copied textile repeat\nadding a dress, wearer, accessories, or second garment unless requested\nextending garment pattern onto the background or mannequin\nobscuring pockets, buttons, lapels, cuffs, or openings",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "delaunay-seam-aware-garment-color-rhythm",
+    "name": "Delaunay seam-aware garment color rhythm",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\sonia-delaunay\\art-direction.yaml",
+    "sha256": "2fe0231d8866136d0713b446933aef654df2860ccdbdcdd3f8b1cb28a685fb8c",
+    "active_rule_ids": [
+      "rhythm-follows-garment-panels",
+      "construction-details-remain-readable",
+      "controlled-simultaneous-contrast"
+    ],
+    "contexts": [
+      "user-requested-single-garment-design"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested garment design.",
+      "Preserve garment type, silhouette, fit, material, openings, closures, and construction features.",
+      "Keep color rhythm within the garment and align it to garment panels and seams.",
+      "Review pattern boundaries, seam alignment, feature legibility, and palette control."
+    ],
+    "avoid": [
+      "adding a dress, wearer, accessories, or second garment unless requested",
+      "extending garment pattern onto the background or mannequin",
+      "obscuring pockets, buttons, lapels, cuffs, or openings"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "painted_image",
+      "representation": "stylized",
+      "description": "An optional direction for one user-requested garment design. Place simultaneous- contrast color blocks, arcs, and bands according to the garment's real body, sleeve, collar, cuff, and seam panels. Let color rhythm cross adjacent pieces through related shapes while preserving the cut and construction. This applies Delaunay's color-and-fashion practice to a new garment without prescribing a dress, pattern, wearer, or historical design.",
+      "required_contexts": [
+        "user-requested-single-garment-design"
+      ],
+      "incompatible_contexts": [
+        "user-requested-unpatterned-garment",
+        "multiple-garments-as-equal-subjects",
+        "exact-brand-or-logo-reproduction",
+        "text-or-logo-reproduction"
+      ],
+      "limitations": [
+        "Activate only when the user requests a designed or patterned garment.",
+        "Preserve the requested garment type, silhouette, fit, material, color constraints, closures, and visible construction features.",
+        "Keep all designed color shapes within the garment silhouette; do not turn the wearer, mannequin, background, or second garment into a textile pattern unless requested.",
+        "Align blocks and arcs to actual garment panels and seams; do not erase buttons, pockets, lapels, cuffs, or openings.",
+        "Do not default to a dress, a specific historical costume, a wearer, or a named design."
+      ]
+    },
+    "rules": [
+      {
+        "id": "rhythm-follows-garment-panels",
+        "axis": "pattern-to-construction-alignment",
+        "importance": "core",
+        "applies_when": "The user requests a patterned or color-blocked garment.",
+        "instruction": "Place major color blocks and arcs inside the actual body, sleeve, and collar panels; let related edges meet or continue across seams where the user has requested a coordinated design.",
+        "observable": "Color rhythm follows the garment's cut and panel boundaries rather than floating as an unrelated overlay.",
+        "reject_when": "Pattern erases seams, crosses openings arbitrarily, or changes the garment silhouette.",
+        "evidence": {
+          "source_ids": [
+            "moma-sonia-delaunay-clothing-and-textiles"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "wallpaper-like all-over print or copied costume geometry"
+      },
+      {
+        "id": "construction-details-remain-readable",
+        "axis": "garment-function-and-feature-legibility",
+        "importance": "core",
+        "applies_when": "The requested garment includes closures, lapels, pockets, cuffs, or other structural details.",
+        "instruction": "Preserve each specified feature and leave enough contrast around it to identify its function; pattern edges may meet a seam but must not disguise the opening or fastener.",
+        "observable": "The garment remains wearable and recognizable at thumbnail size, with all requested closures and features visible.",
+        "reject_when": "A pocket vanishes, buttons merge into pattern, sleeves fuse into the body, or the neckline changes.",
+        "evidence": {
+          "source_ids": [
+            "nga-sonia-textile-patterns"
+          ],
+          "basis": "direct_visual_observation",
+          "visual_review": "pending"
+        },
+        "avoid": "decorative blocks that obscure garment construction"
+      },
+      {
+        "id": "controlled-simultaneous-contrast",
+        "axis": "color-rhythm-and-local-contrast",
+        "importance": "supporting",
+        "applies_when": "The user permits a multicolor garment design.",
+        "instruction": "Pair a small set of contrasting hues across neighboring garment panels, vary arc or block scale to create movement, and leave a few quiet intervals so the garment does not become an undifferentiated rainbow.",
+        "observable": "Adjacent panels create a pulsing color rhythm while each panel and the whole garment remain distinct.",
+        "reject_when": "Every panel receives an unrelated saturated hue or repeated shapes become an even mechanical tile.",
+        "evidence": {
+          "source_ids": [
+            "moma-sonia-delaunay-clothing-and-textiles"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "random rainbow fill, blur, motion streaks, or copied textile repeat"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "wearable-color-rhythm-keeps-construction",
+        "rule_ids": [
+          "rhythm-follows-garment-panels",
+          "construction-details-remain-readable",
+          "controlled-simultaneous-contrast"
+        ],
+        "instruction": "Let a limited rhythmic color design follow the user's actual garment panels, preserve every named construction feature, and keep the garment readable as a functional item.",
+        "observable": "Simultaneous color contrast energizes the garment while its silhouette, seams, closures, and requested material stay clear."
+      }
+    ],
+    "sources": [
+      {
+        "id": "moma-sonia-delaunay-clothing-and-textiles",
+        "kind": "museum_artist_record",
+        "url": "https://www.moma.org/artists/1480-sonia-delaunay"
+      },
+      {
+        "id": "nga-sonia-textile-patterns",
+        "kind": "museum_collection_record",
+        "url": "https://www.nga.gov/artworks/199084-simultaneous-patterns-cloth"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "2fe0231d8866136d0713b446933aef654df2860ccdbdcdd3f8b1cb28a685fb8c",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

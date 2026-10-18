@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "sonia-delaunay",
+    "name": "索尼娅·德洛内",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\sonia-delaunay"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Exactly one hip-length cobalt wool jacket displayed front-on on a plain dress form, with lapels, long sleeves, one central closure, two square patch pockets, and visible panel seams; coordinated red, yellow, cobalt, and cream design; horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied Exactly one hip-length cobalt wool jacket displayed front-on on a plain dress form, with lapels, long sleeves, one central closure, two square patch pockets, and visible panel seams; coordinated red, yellow, cobalt, and cream design; horizontal 16:9. and the user-requested setting are authoritative.\n- This package controls visual treatment only: medium, composition, lighting,\n  palette, surface, texture, and edge behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of Exactly one hip-length cobalt wool jacket displayed front-on on a plain dress form, with lapels, long sleeves, one central closure, two square patch pockets, and visible panel seams; coordinated red, yellow, cobalt, and cream design; horizontal 16:9. in the user-requested setting. Apply the package's observable\nmedium, composition, lighting, palette, surface, and texture decisions from the\nstyle files. Preserve the package invariants while inventing a new scene: do not\ncopy any reference work, named character, exact pose, recognizable layout, logo,\nor text. Keep the subject and narrative supplied by the user independent from\nthe package's visual identity. Organize the supplied subject through overlapping\narcs, circles, bands, and color blocks rather than literal depth. Use simultaneous\nwarm-cool contrast, repeated forms with slight human variation, crisp but tactile\nedges, and a few quiet neutral intervals. Let color create movement across the\nsurface; do not use blur, neon glow, or a global rainbow filter. Keep the subject\nand narrative supplied by the user independent from the package's visual identity.\nUse concrete visual instructions rather than the package name alone.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied reference composition, recognizable character, logo, watermark, artist signature,\nunintended text, generic global color filter, incompatible medium, accidental photorealism,\nunmotivated neon, plastic CGI finish, malformed anatomy, duplicate objects\nfixed dress, fixed textile, fixed circle poster, random psychedelic pattern,\nrainbow gradient, motion blur, glossy 3D geometry, unreadable decorative text",
+  "template_variables": {
+    "SUBJECT": "Exactly one hip-length cobalt wool jacket displayed front-on on a plain dress form, with lapels, long sleeves, one central closure, two square patch pockets, and visible panel seams; coordinated red, yellow, cobalt, and cream design; horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "figure and clothing, if requested, are organized by color rhythm rather than forced into a fashion scene",
+          "repeated forms remain legible without becoming a fixed costume or logo"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "simultaneous warm-cool contrast and rhythmic overlap are visible",
+          "no fixed textile or circle motif has replaced the supplied subject"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

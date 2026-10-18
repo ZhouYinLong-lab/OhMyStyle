@@ -2,10 +2,11 @@ id: sonia-delaunay
 name: 索尼娅·德洛内
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以同时性对比、圆弧节奏和色彩运动组织画面，让绘画、设计与织物之间形成连续的视觉韵律。
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml
