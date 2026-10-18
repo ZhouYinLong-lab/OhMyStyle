@@ -1,5 +1,10 @@
 package_id: michelangelo-buonarroti
 research_basis:
+- title: Michelangelo-associated contrapposto study
+  creator: Auguste Rodin
+  period: ca. 1911
+  source_url: https://www.metmuseum.org/art/collection/search/207693
+  role: museum description of weight-bearing pose and counterturned torso
 - title: Michelangelo Buonarroti
   creator: Michelangelo Buonarroti
   period: 文艺复兴盛期

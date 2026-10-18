@@ -1,0 +1,152 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "michelangelo-buonarroti",
+    "name": "米开朗基罗",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\michelangelo-buonarroti"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A fully clothed adult potter holding a small clay bowl in a quiet workshop, standing, horizontal 16:9.",
+  "prompt": "USER SUBJECT: A fully clothed adult potter holding a small clay bowl in a quiet workshop, standing, horizontal 16:9.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: renaissance_fresco_informed_painting\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [weight-bearing-axis] Assign most of the figure's apparent weight to one requested leg; let the pelvis settle over that support while the free leg remains visibly less loaded. Preserve the user's stance and functional action.\n- [counterturned-torso] Turn the ribcage and shoulders gently against the pelvis and supporting leg, using one clear diagonal through the torso. Let the arms balance or continue the requested action without creating a second competing twist.\n- [modeled-clothed-form] Use a coherent light direction and broad value groups to describe volume through the user's specified clothing; keep folds subordinate to the body's weight shift and requested material.\n- [readable-counterturn] Let a single supporting leg anchor the figure while pelvis, torso, shoulders, and user-requested arms form a controlled counterturn; use light and clothing folds to explain the weight shift.\nREQUIREMENT: Activate only for a user-requested single standing figure with weight shift and torso counterturn.\nREQUIREMENT: Preserve user-specified identity, clothing, age, anatomy, pose action, and props.\nREQUIREMENT: Make one leg the clear support and turn shoulders gently against the pelvis.\nREQUIREMENT: Use light and clothing folds to clarify volume without adding nudity or iconography.\nREQUIREMENT: Inspect anatomy, foot contact, joint continuity, and action readability after generation.",
+  "negative_prompt": "rigid mirrored stance, exaggerated hip displacement, and decorative arching\ncopied named pose, extreme contortion, and generalized muscular exaggeration\nunrequested nudity, theatrical spotlight, and generic marble-statue surface\nadding nudity, religious or mythological figures, halos, wings, or historical props unless requested\ncopying a named artwork, exact pose, or famous figure arrangement\nforced contortion, extra limbs, duplicate hands, or an unstable center of gravity",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "michelangelo-counterturned-weight-bearing-figure",
+    "name": "Michelangelo counterturned weight-bearing figure",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\michelangelo-buonarroti\\art-direction.yaml",
+    "sha256": "9a5ba02c388eff03be5f76098ac7dcc1559b18eab85603294d656750674d9d3d",
+    "active_rule_ids": [
+      "weight-bearing-axis",
+      "counterturned-torso",
+      "modeled-clothed-form"
+    ],
+    "contexts": [
+      "counterturned-weight-bearing-figure"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested single standing figure with weight shift and torso counterturn.",
+      "Preserve user-specified identity, clothing, age, anatomy, pose action, and props.",
+      "Make one leg the clear support and turn shoulders gently against the pelvis.",
+      "Use light and clothing folds to clarify volume without adding nudity or iconography.",
+      "Inspect anatomy, foot contact, joint continuity, and action readability after generation."
+    ],
+    "avoid": [
+      "adding nudity, religious or mythological figures, halos, wings, or historical props unless requested",
+      "copying a named artwork, exact pose, or famous figure arrangement",
+      "forced contortion, extra limbs, duplicate hands, or an unstable center of gravity"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "renaissance_fresco_informed_painting",
+      "representation": "recognizable",
+      "description": "An optional single-figure pose direction for a user-requested standing adult. One leg visibly bears most of the weight; the pelvis settles over it while the upper torso and shoulders turn against the pelvis. The pose makes weight, counterturn, and sculptural volume readable without requiring nudity, mythological subject matter, or a named composition.",
+      "required_contexts": [
+        "counterturned-weight-bearing-figure"
+      ],
+      "incompatible_contexts": [
+        "front-facing-symmetrical-portrait",
+        "seated-relaxed-figure",
+        "fast-running-action-pose"
+      ],
+      "limitations": [
+        "Use only when the user requests a standing single figure and a weight-shifted, counterturned pose.",
+        "Preserve the user's clothing, age, identity, anatomy, gesture, and prop requirements.",
+        "Treat contrapposto as pose organization, not an instruction to expose or exaggerate anatomy.",
+        "Text-only generation may distort joints and limb counts; inspect generated anatomy.",
+        "Do not add religious, mythological, or historical iconography unless requested.",
+        "Do not copy a named work, exact pose, or recognizable figure arrangement."
+      ]
+    },
+    "rules": [
+      {
+        "id": "weight-bearing-axis",
+        "axis": "figure_pose_and_balance",
+        "importance": "core",
+        "applies_when": "The user requests one standing figure in a weight-shifted pose.",
+        "instruction": "Assign most of the figure's apparent weight to one requested leg; let the pelvis settle over that support while the free leg remains visibly less loaded. Preserve the user's stance and functional action.",
+        "observable": "A viewer can identify the supporting leg and read a stable center of gravity without measuring the anatomy.",
+        "reject_when": "Both legs appear equally loaded despite a requested weight shift, the figure floats, or the balance requires an unrequested prop.",
+        "evidence": {
+          "source_ids": [
+            "met-michelangelo-contrapposto"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "rigid mirrored stance, exaggerated hip displacement, and decorative arching"
+      },
+      {
+        "id": "counterturned-torso",
+        "axis": "gesture_and_sculptural_volume",
+        "importance": "core",
+        "applies_when": "The user requests a standing figure whose pose can accommodate a torso turn.",
+        "instruction": "Turn the ribcage and shoulders gently against the pelvis and supporting leg, using one clear diagonal through the torso. Let the arms balance or continue the requested action without creating a second competing twist.",
+        "observable": "The pelvis and shoulder lines have related but opposing directions, and the action remains easy to identify.",
+        "reject_when": "The pose becomes a forced S-curve, joints look dislocated, or the torso twist obscures the requested gesture.",
+        "evidence": {
+          "source_ids": [
+            "met-michelangelo-contrapposto"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "copied named pose, extreme contortion, and generalized muscular exaggeration"
+      },
+      {
+        "id": "modeled-clothed-form",
+        "axis": "light_and_surface",
+        "importance": "supporting",
+        "applies_when": "The brief requests painterly modeling of a clothed figure.",
+        "instruction": "Use a coherent light direction and broad value groups to describe volume through the user's specified clothing; keep folds subordinate to the body's weight shift and requested material.",
+        "observable": "Clothing wraps the changed torso and supporting hip, so light, folds, and pose reinforce one another.",
+        "reject_when": "Drapery hides the supporting leg, decorative folds replace the pose, or skin exposure is added without request.",
+        "evidence": {
+          "source_ids": [
+            "met-michelangelo-contrapposto"
+          ],
+          "basis": "original_design_intent",
+          "visual_review": "pending"
+        },
+        "avoid": "unrequested nudity, theatrical spotlight, and generic marble-statue surface"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "readable-counterturn",
+        "rule_ids": [
+          "weight-bearing-axis",
+          "counterturned-torso",
+          "modeled-clothed-form"
+        ],
+        "instruction": "Let a single supporting leg anchor the figure while pelvis, torso, shoulders, and user-requested arms form a controlled counterturn; use light and clothing folds to explain the weight shift.",
+        "observable": "The support leg, opposing torso direction, and requested action read together without forced anatomy or extra narrative symbols."
+      }
+    ],
+    "sources": [
+      {
+        "id": "met-michelangelo-contrapposto",
+        "kind": "museum_collection_description",
+        "url": "https://www.metmuseum.org/art/collection/search/207693"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "9a5ba02c388eff03be5f76098ac7dcc1559b18eab85603294d656750674d9d3d",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

@@ -73,3 +73,7 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## Experimental direction: counterturned weight-bearing figure
+
+The package now includes an explicitly selected single-figure pose direction in [`art-direction.yaml`](art-direction.yaml): one leg bears most of the weight while pelvis and shoulders turn in controlled opposition, with light and clothing folds clarifying the action. It applies only to a user-requested standing figure; nudity, religious subjects, and mythological subjects are not defaults. See [`comparisons/`](comparisons/README.md) for generated examples and limitations.

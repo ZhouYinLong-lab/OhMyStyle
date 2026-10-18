@@ -219,6 +219,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [布尔乔亚布料可见修补](../style-packages/artists/louise-bourgeois/art-direction.yaml) | 针脚穿过真实拼接缝，修补和织物立体感集中于连接处 | `text_only`，声明 `visible-mending-textile-assembly` |
 | [夏加尔漂浮双主体与色彩回声](../style-packages/artists/marc-chagall/art-direction.yaml) | 两个主体不等尺度斜向漂浮，以局部重复色建立呼应 | `text_only`，声明 `chromatic-echo-floating-pair` |
 | [埃舍尔单一不可能连接](../style-packages/artists/mc-escher/art-direction.yaml) | 让普通物体只在一个指定连接处产生透视矛盾，其余结构保持可读 | `text_only`，声明 `single-impossible-junction` |
+| [米开朗基罗承重与反向扭转](../style-packages/artists/michelangelo-buonarroti/art-direction.yaml) | 单人站姿由一条承重腿锚定，骨盆与肩线受控反向，衣褶解释体积 | `text_only`，声明 `counterturned-weight-bearing-figure` |
 
 ## 6. 从主体请求到结果
 
