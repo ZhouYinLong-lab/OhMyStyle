@@ -34,6 +34,18 @@
 
 本包使用弗里达·卡罗博物馆的生平与作品资料作为研究入口。外部作品、照片、商标和网页内容仍归原权利人所有；仓库只保存来源链接和原创生成示例，不打包外部作品。
 
+## 新架构：正面肖像与个人象征关系（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `intimate-symbolic-portrait` 时启用。它把肖像的正面存在感、浅层背景，以及用户明确提供的陪衬物之间的关系写成可检查规则；不自动加入卡罗本人、动物、植物、医疗意象或墨西哥服饰。
+
+这不是把卡罗简化成“超现实拼贴”：方向重视用户指定对象与人物之间清楚、可读的关系，不以梦境般的随机置换取代用户场景。它也不同于委拉斯开兹方向用深色室内纵深和多人目光关系组织群像。
+
+```powershell
+python tools/compile-style.py style-packages/artists/frida-kahlo --direction package --context intimate-symbolic-portrait --subject "A person in a plain work shirt seated against a pale wall, looking slightly to the side" --output runs/style-v2/frida-kahlo-job.json
+```
+
+该方向仍为实验规则；同题与跨主体视觉评审待完成。
+
 ## 只使用此包
 
 四种方式可以任选其一。

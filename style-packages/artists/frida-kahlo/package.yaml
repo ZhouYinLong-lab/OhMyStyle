@@ -2,7 +2,7 @@ id: frida-kahlo
 name: 弗里达·卡罗
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以正面肖像、私人象征、清晰轮廓和民俗色彩组织亲密而有心理张力的画面。
 files:
@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: painting

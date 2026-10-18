@@ -1,12 +1,27 @@
 package_id: frida-kahlo
-package_version: 0.1.0
-curation_status: curated
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
   - url: 'https://www.museofridakahlo.org.mx/frida/?lang=en'
     title: 'Frida Kahlo Museum biography and timeline'
     authority: 'Museo Frida Kahlo'
     supports: source traceability and package scope
+  - url: https://www.moma.org/magazine/articles/1417
+    title: "One on One: Frida Kahlo's Self-Portrait with Cropped Hair"
+    authority: The Museum of Modern Art
+    supports: self-expression and personal imagery; individual portrait variations rather than a fixed costume or symbol set
+    accessed: 2026-10-19
+  - url: https://www.moma.org/collection/works/78333
+    title: Self-Portrait with Cropped Hair
+    authority: The Museum of Modern Art
+    supports: portrait presence and an example that departs from the artist's familiar attributes
+    accessed: 2026-10-19
+  - url: https://www.moma.org/collection/works/79374/
+    title: Fulang-Chang and I
+    authority: The Museum of Modern Art
+    supports: stated personal reality and a visible relationship between portrait subject and accompanying animal; no animal is a package default
+    accessed: 2026-10-19
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

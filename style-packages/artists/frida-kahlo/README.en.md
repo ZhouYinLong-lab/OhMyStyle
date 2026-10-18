@@ -34,6 +34,18 @@ The Museo Frida Kahlo biography and timeline are used as a research source. Exte
 works, photographs, trademarks, and web content remain with their rights holders;
 this package stores source links and an original generated demonstration only.
 
+## New architecture: frontal presence and personal symbolic relations (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `intimate-symbolic-portrait`. It makes frontal presence, shallow background space, and relationships among user-specified companion objects reviewable rules. It does not automatically add Kahlo herself, animals, plants, medical imagery, or Mexican dress.
+
+This does not reduce Kahlo to “Surrealist collage”: requested objects stay legible and related to the portrait subject, rather than being randomly exchanged for dreamlike imagery. It also differs from Velázquez's direction, which organizes group portraits through dark interior depth and relationships among several gazes.
+
+```powershell
+python tools/compile-style.py style-packages/artists/frida-kahlo --direction package --context intimate-symbolic-portrait --subject "A person in a plain work shirt seated against a pale wall, looking slightly to the side" --output runs/style-v2/frida-kahlo-job.json
+```
+
+This direction remains experimental; same-subject and cross-subject visual review is pending.
+
 ## Use only this package
 
 1. Give the directory to an image-capable Agent and ask it to read the YAML files,

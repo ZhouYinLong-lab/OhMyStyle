@@ -1,3 +1,5 @@
+package_id: frida-kahlo
+package_version: 0.2.0
 profiles:
   generic:
     required:
@@ -13,6 +15,15 @@ profiles:
   still_life:
     required:
     - object relationships and color blocks remain deliberate without adding symbolic props
+  intimate-symbolic-portrait:
+    required:
+    - requested portrait subject remains primary and recognizable
+    - only user-specified companion forms establish symbolic relationships
+    - shallow space and separated color fields support a painted portrait presence
+    reject_if:
+    - self-portrait, animals, plants, medical symbols, or regional dress appear without request
+    - generic dream collage replaces the requested setting and objects
+    - direct gaze is forced against the user's specified expression or pose
 minimum_score: 7
 semantic_evaluation:
   subject_independence:

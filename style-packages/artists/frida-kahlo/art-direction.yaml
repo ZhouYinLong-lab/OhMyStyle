@@ -1,0 +1,107 @@
+schema_version: 2.0.0
+status: experimental
+id: kahlo-frontal-presence-and-personal-symbolism
+name: Kahlo frontal presence and personal symbolism
+base_package: artists/frida-kahlo
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: >-
+    A focused direction for intimate, frontal portrait scenes associated with
+    Kahlo's painted practice. A steady subject plane, direct but not compulsory
+    gaze, firm contours, and shallow constructed space give the requested
+    person a clear presence. Objects acquire meaning through their relationship
+    to that person, but only when the user supplies or approves them. The
+    direction favors lucid personal expression over generic dream collage; it
+    does not define all of Kahlo's work or make self-portraiture mandatory.
+  required_contexts:
+    - intimate-symbolic-portrait
+  incompatible_contexts:
+    - photorealistic-editorial-portrait
+    - automatic-dream-collage
+    - multi-figure-deep-interior
+  limitations:
+    - Preserve the user's requested person, identity, age, clothing, pose, setting, and count; never substitute Kahlo or another named person.
+    - Add no animal, plant, medical emblem, national costume, companion, or autobiographical prop unless the user requests it.
+    - Keep personal symbolism legible through relationships among requested elements; do not invent dream logic to make the image seem surreal.
+pillars:
+  - Give the requested portrait a steady frontal or near-frontal presence while preserving the specified gaze and pose.
+  - Use shallow, constructed space and a clear backdrop to separate the person from the surrounding field.
+  - Treat user-specified objects as relational symbols through their placement, scale, or contact with the person.
+  - Use distinct local color blocks and firm selected contours without turning the image into an all-over filter.
+rules:
+  - id: frontal-presence-and-gaze
+    axis: portrait_composition
+    importance: core
+    applies_when: The user requests an intimate portrait with a frontal or near-frontal view.
+    instruction: Keep the face and upper body clearly presented in a steady frontal or slight three-quarter orientation; use the requested gaze direction to establish presence, and leave enough surrounding space to read the person without forcing a centered pose.
+    observable: The portrait feels psychologically present through pose and gaze, while the user's specified expression and identity remain intact.
+    reject_when: A self-portrait is implied, the subject is forced to stare at the viewer, or the face is obscured by unrequested symbols.
+    evidence:
+      source_ids:
+        - kahlo-moma-cropped-hair
+        - kahlo-moma-one-on-one
+      basis: institutional_description
+      visual_review: pending
+    avoid: default self-portrait, compulsory direct gaze, and copied pose
+  - id: user-authored-symbolic-relations
+    axis: object_relationships
+    importance: core
+    applies_when: The user specifies one or more objects, animals, plants, or other forms to accompany the portrait subject.
+    instruction: Place only the requested accompanying forms so their scale, distance, overlap, or contact makes a clear relationship with the person; preserve the objects' identities and do not assign a hidden narrative that the user did not state.
+    observable: The requested objects feel deliberately related to the person and remain recognizable without becoming a generic symbolic inventory.
+    reject_when: Unrequested animals, plants, medical objects, flags, or costume symbols are added, or the arrangement changes the user's narrative.
+    evidence:
+      source_ids:
+        - kahlo-moma-fulang-chang
+        - kahlo-moma-cropped-hair
+      basis: institutional_description
+      visual_review: pending
+    avoid: automatic monkeys, foliage, medical symbols, and dreamlike object substitution
+  - id: shallow-space-and-separated-color-fields
+    axis: space_color_and_surface
+    importance: core
+    applies_when: The portrait uses a painted setting with a simplified or shallow background.
+    instruction: Separate the person from the background with a small number of stable color fields and selected firm contours; retain enough spatial cues to place the figure, and use color locally rather than as a cinematic wash.
+    observable: The subject plane and backdrop read as distinct painted areas, and color supports the portrait's presence without glossy photographic depth.
+    reject_when: The background becomes an unrelated dream landscape, contour erases requested features, or a global filter replaces local color relationships.
+    evidence:
+      source_ids:
+        - kahlo-moma-cropped-hair
+        - kahlo-moma-one-on-one
+      basis: institutional_description
+      visual_review: pending
+    avoid: automatic jungle backdrop, global color grade, and photorealistic studio gloss
+active_rule_ids:
+  - frontal-presence-and-gaze
+  - user-authored-symbolic-relations
+  - shallow-space-and-separated-color-fields
+joint_checks:
+  - id: portrait-presence-and-symbol-coherence
+    rule_ids:
+      - frontal-presence-and-gaze
+      - user-authored-symbolic-relations
+      - shallow-space-and-separated-color-fields
+    instruction: Let the requested pose, user-supplied objects, and separated color fields express one coherent portrait relationship without adding biography or dream narrative.
+    observable: The requested person remains primary, any requested object relation is clear, and the setting supports rather than replaces the portrait.
+sources:
+  - id: kahlo-moma-one-on-one
+    kind: museum_artwork_analysis
+    url: https://www.moma.org/magazine/articles/1417
+  - id: kahlo-moma-cropped-hair
+    kind: museum_artwork_description
+    url: https://www.moma.org/collection/works/78333
+  - id: kahlo-moma-fulang-chang
+    kind: museum_artwork_description
+    url: https://www.moma.org/collection/works/79374/
+execution:
+  route: text_only
+  must:
+    - Declare the intimate-symbolic-portrait context before applying this direction.
+    - Preserve the user-specified person, expression, pose, objects, and count.
+    - Use direct presence, shallow space, and color fields only as portrait decisions, not fixed subject matter.
+    - Let only user-supplied accompanying objects carry symbolic relations.
+  avoid:
+    - adding Kahlo, self-portrait cues, animals, plants, medical emblems, or regional costume without request
+    - treating Kahlo's work as generic Surrealist dream imagery
+    - copying a named portrait's pose or object arrangement

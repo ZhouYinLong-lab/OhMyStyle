@@ -1,2 +1,5 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 frida-kahlo-primary-source,,Frida biography and timeline,Museo Frida Kahlo,,https://www.museofridakahlo.org.mx/frida/?lang=en,link-only research reference,Museo Frida Kahlo: Frida biography and timeline,primary,Research link only; no external artwork is bundled.
+kahlo-moma-one-on-one,,One on One: Frida Kahlo's Self-Portrait with Cropped Hair,The Museum of Modern Art,2026,https://www.moma.org/magazine/articles/1417,link_only,The Museum of Modern Art,primary,Analysis of Kahlo's self-expression and distinct portrait choices; research link only.
+kahlo-moma-cropped-hair,,Self-Portrait with Cropped Hair,Frida Kahlo,1940,https://www.moma.org/collection/works/78333,link_only,The Museum of Modern Art,primary,Portrait example that departs from familiar costume and symbolic attributes; no image bundled.
+kahlo-moma-fulang-chang,,Fulang-Chang and I,Frida Kahlo,1937,https://www.moma.org/collection/works/79374/,link_only,The Museum of Modern Art,primary,Personal portrait and object relationship; animal motif is not a package default.

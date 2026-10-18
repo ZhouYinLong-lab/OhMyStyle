@@ -78,6 +78,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [蒙克心理色彩与环境节奏](../../style-packages/artists/edvard-munch/art-direction.yaml) | 局部心理色彩、主体与环境的曲线联动、选择性空间压缩 | text_only | psychological-expressionist-scene |
 | [利西茨基 Proun 轴测空间](../../style-packages/artists/el-lissitzky/art-direction.yaml) | 平面与几何体共处、轴测关系、色彩承担空间定位 | text_only | pictorial-architectonic-space |
 | [格列柯垂直升腾与闪烁形体](../../style-packages/artists/el-greco/art-direction.yaml) | 选择性拉长、分阶段向上构图、局部冷暖色与笔触节奏 | text_only | vertical-lift-composition |
+| [卡罗正面肖像与个人象征关系](../../style-packages/artists/frida-kahlo/art-direction.yaml) | 肖像正面存在感、浅层背景、用户指定物件的关系安排 | text_only | intimate-symbolic-portrait |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 
