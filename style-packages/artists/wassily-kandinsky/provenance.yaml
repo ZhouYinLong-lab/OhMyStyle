@@ -1,5 +1,5 @@
 package_id: wassily-kandinsky
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_images_verified
 source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
 sources:
@@ -11,4 +11,14 @@ sources:
     authority: Wikimedia Commons
     supports: secondary public-domain reference image and work attribution
     accessed: 2026-08-06
+  - url: https://collections.lacma.org/object/25476
+    authority: Los Angeles County Museum of Art
+    title: Wassily Kandinsky, Semicircle, 1927
+    supports: Museum description of circles, arcs, and geometric forms in Kandinsky's abstract compositions.
+    accessed: 2026-10-19
+  - url: https://www.moma.org/collection/artists/2981
+    authority: The Museum of Modern Art
+    title: Wassily Kandinsky
+    supports: Kandinsky's use of primary forms and colors in abstraction.
+    accessed: 2026-10-19
 attribution: Historical works remain attributed to Wassily Kandinsky and their source institutions. This independent package claims no affiliation.

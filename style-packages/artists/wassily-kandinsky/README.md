@@ -74,3 +74,7 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## 实验方向：留空中心与环形张力
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户指定“围绕留空中心组织抽象构图”时启用：用不闭合的圆弧保持中心安静，再以不对称的线条和色块在弧线周围形成张力。避免把圆弧变成行星轨道、靶心或机械图表。查看 [`comparisons/`](comparisons/README.md) 中的生成对照；该方向仍处于实验状态。

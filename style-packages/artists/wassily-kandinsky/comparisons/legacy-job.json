@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "wassily-kandinsky",
+    "name": "瓦西里·康定斯基",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\wassily-kandinsky"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A nonrepresentational abstract painting with a quiet open center, an incomplete pale-blue arc, scattered red, ochre, black, and ivory geometric marks in asymmetric rhythm; tactile oil-painted surface; no recognizable objects; horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A nonrepresentational abstract painting with a quiet open center, an incomplete pale-blue arc, scattered red, ochre, black, and ivory geometric marks in asymmetric rhythm; tactile oil-painted surface; no recognizable objects; horizontal 16:9.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new nonrepresentational oil painting with no depicted story or recognizable object. Use a pale mineral ground and a deliberate asymmetrical network of circles, arcs, thin lines, grids, triangles, and irregular planes. Balance dense clusters against open space. Use black as structural counterweight and measured cobalt blue, red, yellow, green, and violet as compositional masses. Combine precise geometry with small hand-painted deviations and translucent passages. The arrangement must be wholly new and must not imitate a known painting.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not use the artist's name, copied geometric layout, logos, typography, UI symbols, random clip-art shapes, glossy 3D rendering, neon glow, photorealistic objects, or watermark.",
+  "template_variables": {
+    "SUBJECT": "A nonrepresentational abstract painting with a quiet open center, an incomplete pale-blue arc, scattered red, ochre, black, and ivory geometric marks in asymmetric rhythm; tactile oil-painted surface; no recognizable objects; horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

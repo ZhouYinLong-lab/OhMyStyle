@@ -74,3 +74,7 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## Experimental direction: open center and orbital tension
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user asks for an abstract composition organized around an open center. Use an incomplete circle or arc to hold a quiet interior, then create asymmetrical pressure around it with lines and color masses. Avoid turning the arc into a planet orbit, target, or mechanical diagram. See [`comparisons/`](comparisons/README.md) for a generated comparison. This direction remains experimental.

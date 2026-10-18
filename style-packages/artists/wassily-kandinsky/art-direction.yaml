@@ -1,0 +1,100 @@
+schema_version: 2.0.0
+status: experimental
+id: kandinsky-open-center-orbital-tension
+name: Kandinsky open-center orbital tension
+base_package: artists/wassily-kandinsky
+scope:
+  medium: painted_image
+  representation: stylized
+  description: >-
+    An optional compositional direction for a user-requested abstract painting
+    built around an open center. Let an incomplete ring or broad arc hold a
+    quiet unpainted or lightly painted interior while uneven clusters of lines
+    and geometric marks create pressure around its perimeter. The orbit is an
+    abstract structure, not a planet, target, clock, or fixed diagram.
+  required_contexts:
+    - user-requested-open-center-abstract-composition
+  incompatible_contexts:
+    - user-requested-filled-center
+    - literal-astronomical-diagram
+    - user-requested-unstructured-mark-field
+    - exact-reconstruction-of-named-composition
+  limitations:
+    - Use only when the user requests an abstract composition organized around a quiet center or incomplete ring.
+    - Preserve requested colors, shapes, aspect ratio, and mark density.
+    - Keep the center open; do not turn it into a planet, eye, clock, or target unless the user asks.
+    - Do not copy a named work or reuse the geometry of a supplied reference composition.
+pillars:
+  - Keep a visible quiet center while allowing an incomplete circle or arc to imply orbital movement.
+  - Place uneven clusters of lines and smaller forms around the ring to create asymmetrical counterpressure.
+  - Maintain painterly variation and deliberate negative space instead of mechanical diagram geometry.
+rules:
+  - id: incomplete-ring-preserves-open-center
+    axis: center-to-orbit-relationship
+    importance: core
+    applies_when: The user requests an abstract composition with an open center or incomplete circular structure.
+    instruction: Use one incomplete ring or broad arc to frame a quiet center; keep the opening visibly broken and avoid filling the center with a dominant form.
+    observable: A legible open interior contrasts with an off-center arc and surrounding marks.
+    reject_when: The ring closes into a target or the center becomes the densest part of the image.
+    evidence:
+      source_ids:
+        - lacma-kandinsky-semicircle
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: perfect concentric circles, target symbols, or literal planetary orbits
+  - id: uneven-perimeter-counterweights
+    axis: asymmetrical-compositional-pressure
+    importance: core
+    applies_when: An open-center orbit is requested.
+    instruction: Distribute a few geometric masses, thin lines, and small color marks unevenly around the arc so one side carries greater weight and another stays sparse.
+    observable: The ring feels active but not mechanically tiled, with the quiet center remaining distinct.
+    reject_when: Marks repeat at equal intervals or the layout becomes a symmetric mandala.
+    evidence:
+      source_ids:
+        - lacma-kandinsky-semicircle
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: uniform radial spokes, symmetry, or decorative border patterns
+  - id: keep-orbit-painterly-not-diagrammatic
+    axis: geometric-mark-surface
+    importance: supporting
+    applies_when: Geometric marks and arcs define the abstract structure.
+    instruction: Vary edge precision, line weight, and pigment density slightly; retain a tactile painted ground beneath the shapes.
+    observable: The arrangement reads as a resolved painting rather than a vector infographic.
+    reject_when: Every edge, stroke, and interval becomes perfectly uniform.
+    evidence:
+      source_ids:
+        - moma-kandinsky-primary-forms
+      basis: institutional_description
+      visual_review: pending
+    avoid: glossy gradients, 3D spheres, or explanatory labels
+active_rule_ids:
+  - incomplete-ring-preserves-open-center
+  - uneven-perimeter-counterweights
+  - keep-orbit-painterly-not-diagrammatic
+joint_checks:
+  - id: open-center-keeps-asymmetric-painted-tension
+    rule_ids:
+      - incomplete-ring-preserves-open-center
+      - uneven-perimeter-counterweights
+      - keep-orbit-painterly-not-diagrammatic
+    instruction: Balance an open center against an incomplete, hand-painted orbit and uneven marks without converting the composition into a literal diagram or fixed motif.
+    observable: Negative space, asymmetrical color weight, and varied painted edges work together to create orbital tension.
+sources:
+  - id: lacma-kandinsky-semicircle
+    kind: museum_collection_record
+    url: https://collections.lacma.org/object/25476
+  - id: moma-kandinsky-primary-forms
+    kind: museum_artist_record
+    url: https://www.moma.org/collection/artists/2981
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested abstract open-center composition.
+    - Keep the requested center open and the ring incomplete.
+    - Balance sparse and dense marks asymmetrically over a tactile painted ground.
+    - Review that the image reads as an abstract painting rather than a literal chart.
+  avoid:
+    - adding a planet, eye, clock, target, or narrative scene by default
+    - copying a named Kandinsky composition or reference arrangement
+    - turning the composition into a vector diagram or symmetric mandala

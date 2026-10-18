@@ -2,7 +2,7 @@ id: wassily-kandinsky
 name: 瓦西里·康定斯基
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 entity: catalog/persons/artists/wassily-kandinsky/entity.yaml
 summary: >-
   An abstract painting profile built from geometric and lyrical marks, measured color tensions, layered planes, and compositional balance without narrative illustration.
@@ -16,6 +16,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist
