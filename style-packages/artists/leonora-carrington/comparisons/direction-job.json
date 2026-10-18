@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "leonora-carrington",
+    "name": "莱昂诺拉·卡林顿",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\leonora-carrington"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Three pale ivory ceramic vessels in a quiet old room, arranged left to right; the user requests one vessel to transform progressively through three related states, without faces, animals, symbols, labels, or text.",
+  "prompt": "USER SUBJECT: Three pale ivory ceramic vessels in a quiet old room, arranged left to right; the user requests one vessel to transform progressively through three related states, without faces, animals, symbols, labels, or text.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: surrealist_oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [progressive-three-state-change] Show the requested source form in three readable stages from intact, through a gradual hybrid transition, to the requested changed form; keep the progression spatially or visually ordered without adding unrequested stages.\n- [source-identity-through-hybrid-form] Preserve a readable trace of the source object's silhouette, material, or function inside the transitional and changed forms, and direct fine details toward the point where forms meet or change.\n- [quiet-stage-and-detail-hierarchy] Keep the environment and illumination stable across the sequence; reserve crisp contour and fine surface detail for transition points, leaving open intervals between states.\n- [coherent-quiet-metamorphosis] Build a readable three-state transformation that retains source identity and concentrates detail at the transition while keeping the setting still.\nREQUIREMENT: Activate only on an explicit user request for transformation or staged states.\nREQUIREMENT: Preserve the requested source object, destination, object count, setting, and exclusions.\nREQUIREMENT: Show three related stages and retain source identity through the transition.\nREQUIREMENT: Keep setting, light, and material palette quiet while focusing detail at the change.",
+  "negative_prompt": "random object substitution, unrelated collage, and copied named sequences\ndefault animal hybrids, faces on objects, and symbolic details not requested\nhorror lighting, global glow, and all-over microtexture\nadding an animal, face, occult symbol, text, or narrative without request\nchanging the scene into unrelated objects or a horror tableau\ncopying a named painting, creature, or exact room composition",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "carrington-three-state-material-metamorphosis",
+    "name": "Carrington three-state material metamorphosis",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\leonora-carrington\\art-direction.yaml",
+    "sha256": "4c834e51d8b25618d9a336a87820bcbb8d02b08bcbb1c74c6e8c1eb8d9656719",
+    "active_rule_ids": [
+      "progressive-three-state-change",
+      "source-identity-through-hybrid-form",
+      "quiet-stage-and-detail-hierarchy"
+    ],
+    "contexts": [
+      "three-state-material-metamorphosis"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only on an explicit user request for transformation or staged states.",
+      "Preserve the requested source object, destination, object count, setting, and exclusions.",
+      "Show three related stages and retain source identity through the transition.",
+      "Keep setting, light, and material palette quiet while focusing detail at the change."
+    ],
+    "avoid": [
+      "adding an animal, face, occult symbol, text, or narrative without request",
+      "changing the scene into unrelated objects or a horror tableau",
+      "copying a named painting, creature, or exact room composition"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "surrealist_oil_painting",
+      "representation": "stylized",
+      "description": "An optional surrealist tableau for a user-requested object transformation shown as three related states in one calm scene. A recognizable source form passes through a hybrid transition and arrives at a changed but still related form. Fine detail gathers around the transformation while the room, light, and palette stay measured. The direction never invents a creature, symbol, or narrative.",
+      "required_contexts": [
+        "three-state-material-metamorphosis"
+      ],
+      "incompatible_contexts": [
+        "static-ordinary-still-life",
+        "photorealistic-product-shot",
+        "unrelated-object-collage"
+      ],
+      "limitations": [
+        "Enable only when the user explicitly asks to show a transformation or sequence of states.",
+        "Preserve the user's source object, destination form, object count, environment, and exclusions.",
+        "Keep the source identity visible through the transition unless the user requests total transformation.",
+        "Do not add faces, eyes, animals, occult marks, or writing without explicit request.",
+        "Do not copy a named painting, creature, or exact room arrangement."
+      ]
+    },
+    "rules": [
+      {
+        "id": "progressive-three-state-change",
+        "axis": "metamorphic_sequence",
+        "importance": "core",
+        "applies_when": "The user explicitly requests a staged object transformation or a sequence of related states.",
+        "instruction": "Show the requested source form in three readable stages from intact, through a gradual hybrid transition, to the requested changed form; keep the progression spatially or visually ordered without adding unrequested stages.",
+        "observable": "A viewer can follow one continuous change across the stages without mistaking them for unrelated objects.",
+        "reject_when": "The stages appear unrelated, transformation jumps abruptly, or extra stages and objects are invented.",
+        "evidence": {
+          "source_ids": [
+            "moma-carrington-transformation",
+            "tate-carrington-alchemy"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "random object substitution, unrelated collage, and copied named sequences"
+      },
+      {
+        "id": "source-identity-through-hybrid-form",
+        "axis": "form_and_material",
+        "importance": "core",
+        "applies_when": "The transformation contains an intermediate or hybrid state.",
+        "instruction": "Preserve a readable trace of the source object's silhouette, material, or function inside the transitional and changed forms, and direct fine details toward the point where forms meet or change.",
+        "observable": "The changed form remains perceptibly connected to the requested source while still reading as a transformation.",
+        "reject_when": "The source disappears before the final state, hybrid features become a generic creature, or added symbolism replaces the requested object.",
+        "evidence": {
+          "source_ids": [
+            "moma-carrington-transformation",
+            "tate-carrington-alchemy"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "default animal hybrids, faces on objects, and symbolic details not requested"
+      },
+      {
+        "id": "quiet-stage-and-detail-hierarchy",
+        "axis": "composition_and_surface",
+        "importance": "supporting",
+        "applies_when": "The scene uses a shared room, shelf, table, or other stable setting for the transformation.",
+        "instruction": "Keep the environment and illumination stable across the sequence; reserve crisp contour and fine surface detail for transition points, leaving open intervals between states.",
+        "observable": "Transformation details stand out against a cohesive, restrained setting without a dramatic spotlight or uniformly dense finish.",
+        "reject_when": "Background changes compete with the metamorphosis, every surface receives equal detail, or theatrical lighting obscures material continuity.",
+        "evidence": {
+          "source_ids": [
+            "moma-carrington-transformation"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "horror lighting, global glow, and all-over microtexture"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "coherent-quiet-metamorphosis",
+        "rule_ids": [
+          "progressive-three-state-change",
+          "source-identity-through-hybrid-form",
+          "quiet-stage-and-detail-hierarchy"
+        ],
+        "instruction": "Build a readable three-state transformation that retains source identity and concentrates detail at the transition while keeping the setting still.",
+        "observable": "The sequence reads as one coherent metamorphosis requested by the user, with no invented creature, symbol, or narrative."
+      }
+    ],
+    "sources": [
+      {
+        "id": "moma-carrington-transformation",
+        "kind": "museum_artist_analysis",
+        "url": "https://www.moma.org/artists/993-leonora-carrington"
+      },
+      {
+        "id": "tate-carrington-alchemy",
+        "kind": "museum_publication",
+        "url": "https://shop.tate.org.uk/leonora-carrington-surrealism-alchemy-and-art/35022.html"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "4c834e51d8b25618d9a336a87820bcbb8d02b08bcbb1c74c6e8c1eb8d9656719",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

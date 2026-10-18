@@ -215,6 +215,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [珂勒惠支压缩人物群像版画](../style-packages/artists/kathe-kollwitz/art-direction.yaml) | 用户指定动作接触点的群像压缩、黑块与纸白线口；不推断人物关系或故事 | `text_only`，声明 `compressed-figure-group-print` |
 | [马列维奇斜向漂移与反向配重](../style-packages/artists/kazimir-malevich/art-direction.yaml) | 几何色面沿偏心斜向运动，以大小和不等距留白形成配重 | `text_only`，声明 `diagonal-drift-counterweight` |
 | [达·芬奇分层手部结构研究](../style-packages/artists/leonardo-da-vinci/art-direction.yaml) | 多视图手部比较、腕关节轴对齐与表层—骨骼分离 | `text_only`，声明 `layered-hand-mechanics-study` |
+| [卡林顿三阶段物质蜕变](../style-packages/artists/leonora-carrington/art-direction.yaml) | 用户指定对象从原态、过渡态到变化态；细节集中于形体变化处 | `text_only`，声明 `three-state-material-metamorphosis` |
 
 ## 6. 从主体请求到结果
 

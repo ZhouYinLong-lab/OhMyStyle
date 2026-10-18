@@ -31,6 +31,20 @@ work.
 - `evaluation.yaml`: post-generation checks
 - `references/manifest.csv`, `provenance.yaml`: sources and rights boundaries
 
+## Optional direction: three-state material metamorphosis
+
+The art-direction.yaml file registers an experimental direction that activates only when the user explicitly asks for an object transformation or sequence of states. It organizes one object as intact, transitional, and changed forms, retaining visible traces of the requested source object and concentrating detail at the transformation. It does not add animals, faces, occult symbols, or a story by default. Declare three-state-material-metamorphosis when compiling; the legacy default path stays unchanged.
+
+### Generated comparison using the same vessels
+
+Both images use three pale ceramic vessels on a table. The direction version turns them into a gradual sequence from intact vessels to branching rims and a seedpod-like ceramic form, while keeping the room and lighting steady. Fine contours still vary because of image generation, so this is a visual direction sample rather than deterministic shape animation.
+
+| Legacy default path | New three-state metamorphosis |
+| --- | --- |
+| ![Carrington legacy vessel sample](comparisons/legacy.png) | ![Carrington three-state metamorphosis direction sample](comparisons/direction.png) |
+
+Compiled jobs: [legacy-job.json](comparisons/legacy-job.json), [direction-job.json](comparisons/direction-job.json). Generation prompts and review notes: [generation-prompts.md](comparisons/generation-prompts.md).
+
 ## Sources and rights
 
 References are used for research and visual analysis. External artworks,

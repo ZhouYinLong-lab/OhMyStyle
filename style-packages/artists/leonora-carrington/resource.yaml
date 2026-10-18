@@ -11,6 +11,7 @@ focus_dimensions:
 - surface
 - texture
 artifacts:
+  art_direction: art-direction.yaml
   package: package.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml

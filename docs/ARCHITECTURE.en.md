@@ -201,6 +201,7 @@ the same prompt wording.
 | [Kollwitz compressed figure-group print](../style-packages/artists/kathe-kollwitz/art-direction.yaml) | User-specified group action organized around its contact point with bold masses and paper-white cuts; no inferred relationship or story | `text_only`, declare `compressed-figure-group-print` |
 | [Malevich diagonal drift and counterweight](../style-packages/artists/kazimir-malevich/art-direction.yaml) | Geometric planes move along an off-center diagonal and counterbalance through scale and uneven intervals | `text_only`, declare `diagonal-drift-counterweight` |
 | [Leonardo layered hand-mechanics study](../style-packages/artists/leonardo-da-vinci/art-direction.yaml) | Comparative hand views, aligned wrist and joint axes, and separated surface and skeletal structures | `text_only`, declare `layered-hand-mechanics-study` |
+| [Carrington three-state material metamorphosis](../style-packages/artists/leonora-carrington/art-direction.yaml) | User-requested source, transition, and changed forms with detail focused at the transformation | `text_only`, declare `three-state-material-metamorphosis` |
 
 ## 6. Execution routes
 

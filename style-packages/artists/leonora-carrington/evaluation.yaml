@@ -1,5 +1,25 @@
 package_id: leonora-carrington
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  three-state-material-metamorphosis:
+    minimum_score: 8
+    criteria:
+      - id: progressive_state_sequence
+        weight: 3
+        test: The user-requested subject changes progressively across clearly related stages.
+      - id: source_form_retained
+        weight: 3
+        test: Each changed stage still carries visible features of the user-specified source form.
+      - id: restrained_transformation_detail
+        weight: 2
+        test: Fine details gather around transitions while room, palette, and illumination remain cohesive.
+      - id: inventory_preserved
+        weight: 2
+        test: The requested number of objects and exclusions remain intact.
+    reject_when:
+      - invented_creature_or_symbol_not_requested
+      - abrupt_unrelated_object_replacement
+      - copied_named_work_or_exact_scene
 invariants:
 - id: style_recognition
   weight: 3

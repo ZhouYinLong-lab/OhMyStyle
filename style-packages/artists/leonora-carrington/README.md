@@ -28,6 +28,20 @@
 - `evaluation.yaml`：生成后的检查标准
 - `references/manifest.csv`、`provenance.yaml`：来源和权利边界
 
+## 可选新方向：三阶段物质蜕变
+
+art-direction.yaml 登记一个实验方向，只有在用户明确要求物体呈现转变或连续状态时才启用。它将同一对象组织为“原态—过渡态—变化态”，让形体仍可追溯到用户指定的原物，并把精细描绘集中在变化处。它不会自动添加动物、面孔、神秘符号或故事。编译时声明 three-state-material-metamorphosis，旧版默认路径不变。
+
+### 同一组器物的生成对照
+
+两张图都使用桌上的三个浅色陶器。新版把它们组织为从完整器物到器口长出纤细分枝、再到种荚状陶器的渐进变化；背景与光线保持稳定。图像模型会改变细小轮廓，因此这是一组可视化方向样例，不是确定性形状动画。
+
+| 旧版默认路径 | 新版三阶段蜕变 |
+| --- | --- |
+| ![卡林顿旧版器物样图](comparisons/legacy.png) | ![卡林顿新版三阶段蜕变样图](comparisons/direction.png) |
+
+编译任务：[legacy-job.json](comparisons/legacy-job.json)、[direction-job.json](comparisons/direction-job.json)；生成提示与评审记录：[generation-prompts.md](comparisons/generation-prompts.md)。
+
 ## 来源与版权
 
 参考资料只用于研究和分析。外部作品、摄影作品、游戏画面、商标和平台页面仍归原权利人所有。生成示例是新的匿名场景，不是相关艺术家、摄影师、流派、学校或游戏的原作，也不代表合作、授权或背书关系。

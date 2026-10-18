@@ -1,0 +1,104 @@
+schema_version: 2.0.0
+status: experimental
+id: carrington-three-state-material-metamorphosis
+name: Carrington three-state material metamorphosis
+base_package: artists/leonora-carrington
+scope:
+  medium: surrealist_oil_painting
+  representation: stylized
+  description: >-
+    An optional surrealist tableau for a user-requested object transformation
+    shown as three related states in one calm scene. A recognizable source form
+    passes through a hybrid transition and arrives at a changed but still
+    related form. Fine detail gathers around the transformation while the room,
+    light, and palette stay measured. The direction never invents a creature,
+    symbol, or narrative.
+  required_contexts:
+    - three-state-material-metamorphosis
+  incompatible_contexts:
+    - static-ordinary-still-life
+    - photorealistic-product-shot
+    - unrelated-object-collage
+  limitations:
+    - Enable only when the user explicitly asks to show a transformation or sequence of states.
+    - Preserve the user's source object, destination form, object count, environment, and exclusions.
+    - Keep the source identity visible through the transition unless the user requests total transformation.
+    - Do not add faces, eyes, animals, occult marks, or writing without explicit request.
+    - Do not copy a named painting, creature, or exact room arrangement.
+pillars:
+  - Repeat or sequence only the user-requested source form across three states, moving from intact through transitional to changed.
+  - Keep each later state visibly related to the source by retaining part of its outline, material, or functional structure.
+  - Concentrate delicate detail at the point of change and keep the rest of the scene quiet.
+  - Let the surreal effect come from a coherent relation between forms, not a pile of unrelated strange objects.
+rules:
+  - id: progressive-three-state-change
+    axis: metamorphic_sequence
+    importance: core
+    applies_when: The user explicitly requests a staged object transformation or a sequence of related states.
+    instruction: Show the requested source form in three readable stages from intact, through a gradual hybrid transition, to the requested changed form; keep the progression spatially or visually ordered without adding unrequested stages.
+    observable: A viewer can follow one continuous change across the stages without mistaking them for unrelated objects.
+    reject_when: The stages appear unrelated, transformation jumps abruptly, or extra stages and objects are invented.
+    evidence:
+      source_ids:
+        - moma-carrington-transformation
+        - tate-carrington-alchemy
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: random object substitution, unrelated collage, and copied named sequences
+  - id: source-identity-through-hybrid-form
+    axis: form_and_material
+    importance: core
+    applies_when: The transformation contains an intermediate or hybrid state.
+    instruction: Preserve a readable trace of the source object's silhouette, material, or function inside the transitional and changed forms, and direct fine details toward the point where forms meet or change.
+    observable: The changed form remains perceptibly connected to the requested source while still reading as a transformation.
+    reject_when: The source disappears before the final state, hybrid features become a generic creature, or added symbolism replaces the requested object.
+    evidence:
+      source_ids:
+        - moma-carrington-transformation
+        - tate-carrington-alchemy
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: default animal hybrids, faces on objects, and symbolic details not requested
+  - id: quiet-stage-and-detail-hierarchy
+    axis: composition_and_surface
+    importance: supporting
+    applies_when: The scene uses a shared room, shelf, table, or other stable setting for the transformation.
+    instruction: Keep the environment and illumination stable across the sequence; reserve crisp contour and fine surface detail for transition points, leaving open intervals between states.
+    observable: Transformation details stand out against a cohesive, restrained setting without a dramatic spotlight or uniformly dense finish.
+    reject_when: Background changes compete with the metamorphosis, every surface receives equal detail, or theatrical lighting obscures material continuity.
+    evidence:
+      source_ids:
+        - moma-carrington-transformation
+      basis: institutional_description
+      visual_review: pending
+    avoid: horror lighting, global glow, and all-over microtexture
+active_rule_ids:
+  - progressive-three-state-change
+  - source-identity-through-hybrid-form
+  - quiet-stage-and-detail-hierarchy
+joint_checks:
+  - id: coherent-quiet-metamorphosis
+    rule_ids:
+      - progressive-three-state-change
+      - source-identity-through-hybrid-form
+      - quiet-stage-and-detail-hierarchy
+    instruction: Build a readable three-state transformation that retains source identity and concentrates detail at the transition while keeping the setting still.
+    observable: The sequence reads as one coherent metamorphosis requested by the user, with no invented creature, symbol, or narrative.
+sources:
+  - id: moma-carrington-transformation
+    kind: museum_artist_analysis
+    url: https://www.moma.org/artists/993-leonora-carrington
+  - id: tate-carrington-alchemy
+    kind: museum_publication
+    url: https://shop.tate.org.uk/leonora-carrington-surrealism-alchemy-and-art/35022.html
+execution:
+  route: text_only
+  must:
+    - Activate only on an explicit user request for transformation or staged states.
+    - Preserve the requested source object, destination, object count, setting, and exclusions.
+    - Show three related stages and retain source identity through the transition.
+    - Keep setting, light, and material palette quiet while focusing detail at the change.
+  avoid:
+    - adding an animal, face, occult symbol, text, or narrative without request
+    - changing the scene into unrelated objects or a horror tableau
+    - copying a named painting, creature, or exact room composition
