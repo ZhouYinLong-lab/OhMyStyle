@@ -2,7 +2,7 @@ id: ivan-aivazovsky
 name: 伊万·艾瓦佐夫斯基
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: 以海面、天空、航船和光线交汇构成浪漫主义海景，强调水面运动、空气透视、月光或夕照的单一光源和宏阔尺度。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist

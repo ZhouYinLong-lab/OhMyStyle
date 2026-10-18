@@ -1,9 +1,19 @@
 package_id: ivan-aivazovsky
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_backed_link_only
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
 sources:
+- url: https://lnmm.gov.lv/en/art-museum-riga-bourse/exhibitions/metaphysics-of-light-44
+  authority: Art Museum RIGA BOURSE / Latvian National Museum of Art
+  title: Metaphysics of Light
+  supports: observable relationship between light, water transparency, glazing, brushwork, and varied atmospheric conditions
+  accessed: '2026-10-19'
+- url: https://rusmuseumvrm.ru/data/collections/painting/18_19/zh_2202/index.php?lang=en
+  authority: The State Russian Museum
+  title: Aivazovsky I.K. The Ninth Wave
+  supports: material, date, medium, and a documented example of light against dark sea and sky
+  accessed: '2026-10-19'
 - url: https://www.tretyakovgallery.ru/en/collection/ivan-aivazovsky/
   authority: Tretyakov Gallery
   title: Ivan Aivazovsky collection

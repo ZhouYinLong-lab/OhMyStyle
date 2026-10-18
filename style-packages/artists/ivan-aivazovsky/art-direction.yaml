@@ -1,0 +1,102 @@
+schema_version: 2.0.0
+status: experimental
+id: aivazovsky-radiant-sea-light-path
+name: Aivazovsky radiant sea-light path
+base_package: artists/ivan-aivazovsky
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    A context-specific marine painting direction that organizes the view through
+    a luminous reflection path, directional wave marks, and atmospheric
+    separation between foreground water and distant sea or sky. It controls how
+    light and water are painted; it does not prescribe a ship, storm, time of
+    day, or narrative.
+  required_contexts:
+    - radiant-sea-light-path
+  incompatible_contexts:
+    - non-marine-subject
+    - flat-color-graphic
+    - text-only-composition
+  limitations:
+    - Apply only when the user requests a sea or ocean scene; do not add water to other subjects.
+    - Preserve user-specified weather, time, light source, horizon, vessel count, and aspect ratio.
+    - Add no ship, person, shoreline, moon, sun, storm, or narrative event unless requested.
+    - Do not reproduce a named painting, its exact horizon, wave silhouette, figures, or vessel arrangement.
+pillars:
+  - Make the requested light source legible through its effect on the water, with a broken but continuous reflection path that follows the surface.
+  - Give wave crests and reflected marks a consistent directional rhythm, varying their scale and contrast with distance.
+  - Separate near water, horizon, and sky with atmospheric value and color shifts while keeping the requested scene readable.
+  - Use layered oil-like color and selective thin highlights to distinguish water, foam, cloud, and any user-requested vessel without a global glow filter.
+rules:
+  - id: broken-reflection-path
+    axis: lighting_and_composition
+    importance: core
+    applies_when: The requested marine scene includes a visible light source or bright opening in the sky.
+    instruction: Carry the source light onto the water as a broken, narrowing or widening path of reflections that responds to the wave planes; retain dark blue-gray intervals between highlights.
+    observable: The reflection connects sky and water visually, follows the surface, and remains composed of distinct light marks rather than a uniform glow stripe.
+    reject_when: Light floats above the surface, forms a straight graphic beam, or erases the dark-water structure.
+    evidence:
+      source_ids:
+        - lnma-metaphysics-of-light
+      basis: institutional_description
+      visual_review: pending
+    avoid: bloom halo, uniform glitter, mirror-flat stripe, and unrelated secondary light sources
+  - id: directional-wave-rhythm
+    axis: markmaking_and_surface
+    importance: core
+    applies_when: The user requests visible open water, waves, or reflections.
+    instruction: Align short curved or tapering marks with the observed wave movement; vary mark length, spacing, and contrast from foreground to distance, reserving crisp light accents for selected crests.
+    observable: Marks describe water motion and recede in scale and contrast without turning into repeated decorative stripes.
+    reject_when: Water reads as a repeated pattern, a flat blue field, or an unrelated thick-impasto texture.
+    evidence:
+      source_ids:
+        - lnma-metaphysics-of-light
+        - rusmuseum-ninth-wave
+      basis: institutional_description
+      visual_review: pending
+    avoid: evenly spaced parallel lines, noisy white foam everywhere, and texture detached from wave direction
+  - id: atmospheric-sea-sky-separation
+    axis: color_and_depth
+    importance: supporting
+    applies_when: The requested composition includes a visible horizon or distant water.
+    instruction: Keep the user-requested horizon and establish distance with restrained shifts in edge softness, value, and color; reserve the strongest local contrast for the requested focal area.
+    observable: Foreground, horizon, and sky remain distinct but share coherent air and light.
+    reject_when: A hard cutout horizon, uniform contrast, or generic blue overlay flattens the depth.
+    evidence:
+      source_ids:
+        - lnma-metaphysics-of-light
+      basis: institutional_description
+      visual_review: pending
+    avoid: arbitrary horizon relocation, heavy vignette, and global blue filter
+active_rule_ids:
+  - broken-reflection-path
+  - directional-wave-rhythm
+  - atmospheric-sea-sky-separation
+joint_checks:
+  - id: luminous-water-with-readable-motion
+    rule_ids:
+      - broken-reflection-path
+      - directional-wave-rhythm
+      - atmospheric-sea-sky-separation
+    instruction: Let reflected light, wave direction, and atmospheric depth work as one coherent treatment while preserving the user's requested scene and object inventory.
+    observable: Water motion is readable; the reflection belongs to the water surface; distance is visible; no unrequested narrative object has appeared.
+sources:
+  - id: lnma-metaphysics-of-light
+    kind: museum_exhibition_analysis
+    url: https://lnmm.gov.lv/en/art-museum-riga-bourse/exhibitions/metaphysics-of-light-44
+  - id: rusmuseum-ninth-wave
+    kind: museum_collection_analysis
+    url: https://rusmuseumvrm.ru/data/collections/painting/18_19/zh_2202/index.php?lang=en
+execution:
+  route: text_only
+  must:
+    - Declare radiant-sea-light-path and ensure the user requested a marine scene.
+    - Preserve the exact user-requested subject, object count, weather, time, light source, and framing.
+    - Use a broken water reflection, directionally coherent wave marks, and atmospheric depth only where compatible with the request.
+    - Keep surface variation tied to water, light, and material rather than applying a global effect.
+  avoid:
+    - inventing boats, people, storms, moonlight, sunsets, or narrative events
+    - replacing requested lighting with a dramatic single source
+    - uniform blue filters, generic glow, or repeated stripe texture
+    - copying a named composition or recognizable scene

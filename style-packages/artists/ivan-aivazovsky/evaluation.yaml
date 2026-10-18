@@ -1,5 +1,16 @@
 package_id: ivan-aivazovsky
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  radiant-sea-light-path:
+    required:
+      - the requested marine subject and object count remain unchanged
+      - reflected light follows a readable path that breaks across wave planes
+      - wave marks and highlights follow a consistent water movement direction
+      - distance is separated through atmospheric value and color shifts
+    reject_if:
+      - unrequested ships, people, storm, moon, or sunset are introduced
+      - water becomes a uniform blue field or generic glow effect
+      - all wave marks use the same scale and contrast regardless of distance
 invariants:
 - id: style_recognition
   weight: 3

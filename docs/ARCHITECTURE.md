@@ -205,6 +205,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [卢梭平面空间与清晰自然细节](../style-packages/artists/henri-rousseau/art-direction.yaml) | 清楚轮廓、受控色块、层叠平面与均匀漫射光，不默认加入丛林题材 | `text_only`，声明 `flat-space-natural-detail` |
 | [库尔贝物质笔触与地面重量](../style-packages/artists/gustave-courbet/art-direction.yaml) | 不理想化主体、材料对应的厚涂笔触与稳固地面关系 | `text_only`，声明 `tactile-material-realism` |
 | [修拉测量式构图与分色笔触](../style-packages/artists/georges-seurat/art-direction.yaml) | 稳定剪影、经过安排的间距、随平面变化的分色笔触与光色关系 | `text_only`，声明 `measured-chromatic-composition` |
+| [艾瓦佐夫斯基水面光路与浪向](../style-packages/artists/ivan-aivazovsky/art-direction.yaml) | 断续反光路径、随水面方向变化的笔触、海天空气透视 | `text_only`，声明 `radiant-sea-light-path` |
 
 ## 6. 从主体请求到结果
 

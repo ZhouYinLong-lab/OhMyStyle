@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "ivan-aivazovsky",
+    "name": "伊万·艾瓦佐夫斯基",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\ivan-aivazovsky"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One small red wooden skiff on a calm blue sea beneath a pale-gold opening in gray clouds",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: One small red wooden skiff on a calm blue sea beneath a pale-gold opening in gray clouds\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new subject and composition using these observable visual decisions:\n- 地平线与海天比例决定宏阔尺度\n- 船只或人物作为尺度锚点\n- 海浪方向和光路形成视觉引导\n- 深蓝、青灰、银白、赭金和玫瑰橙构成海景色组\n- 主光源附近色彩最清澈\n- 远景对比度降低\n- 油画式薄层叠加\n- 流动笔触表现水面和云层\n- 天空与海面有连续空气关系\n- 月光、破云日光或夕照作为主光\n- 光路在海面形成连续反射\n- 暗部仍保留蓝灰层次\n- 水、泡沫、云和木船的材料差异清楚\n- 高光细而有方向\n- 笔触沿波浪、风向和云层运动\n- 不平均涂抹成油画滤镜\n- 海天空间和光源逻辑优先\n- 戏剧性来自自然尺度而非过度特效\n- 不复制具体船景\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- flat_blue_background\n- arbitrary_ship_copy\n- digital_glow\n- generic_ocean_photo",
+  "template_variables": {
+    "SUBJECT": "One small red wooden skiff on a calm blue sea beneath a pale-gold opening in gray clouds",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "radiant-sea-light-path": {
+        "required": [
+          "the requested marine subject and object count remain unchanged",
+          "reflected light follows a readable path that breaks across wave planes",
+          "wave marks and highlights follow a consistent water movement direction",
+          "distance is separated through atmospheric value and color shifts"
+        ],
+        "reject_if": [
+          "unrequested ships, people, storm, moon, or sunset are introduced",
+          "water becomes a uniform blue field or generic glow effect",
+          "all wave marks use the same scale and contrast regardless of distance"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

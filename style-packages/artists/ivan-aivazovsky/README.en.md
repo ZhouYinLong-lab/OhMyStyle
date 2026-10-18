@@ -31,6 +31,18 @@ work.
 - `evaluation.yaml`: post-generation checks
 - `references/manifest.csv`, `provenance.yaml`: sources and rights boundaries
 
+## New architecture: radiant sea light and wave direction (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) activates only when the user requests a marine scene and explicitly declares `radiant-sea-light-path`. It makes the broken path of reflected light, the direction and scale of wave marks, and atmospheric separation between sea and sky inspectable. It does not prescribe a ship, person, storm, moon, or sunset; the user's requested weather, time, light source, and object count take precedence.
+
+This differs from Turner's weather-motion direction: its focus is the local relationship between water reflections and wave marks, rather than atmospheric color and a motion vector organizing the whole image. It also differs from Courbet's emphasis on material weight and grounded mass; this direction focuses on layered color, wave reflections, and the shared air between sea and sky.
+
+```powershell
+python tools/compile-style.py style-packages/artists/ivan-aivazovsky --direction package --context radiant-sea-light-path --subject "One small red wooden skiff on a calm blue sea beneath a pale-gold opening in gray clouds"
+```
+
+[`comparisons/`](comparisons/) contains same-subject legacy and direction jobs, generated images, prompts, and review notes. The sample shows a more broken reflection and clearer foreground wave marks in the direction result, though the overall difference is modest. The images came from separate calls without a fixed random seed, so this is illustrative rather than a controlled experiment. The direction remains experimental pending visual review.
+
 ## Sources and rights
 
 References are used for research and visual analysis. External artworks,
