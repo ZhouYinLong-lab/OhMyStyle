@@ -10,6 +10,17 @@ invariants:
 - id: material_readability
   weight: 2
   test: The requested medium or capture behavior remains visible.
+profiles:
+  suspended-biomorphic-sign-field:
+    required:
+      - exact requested forms and their count remain recognizable
+      - curved line, filled forms, and open ground have distinct roles
+      - asymmetrical spacing feels intentional without a rigid central axis
+      - selected color islands stay local rather than becoming a global wash
+    reject_if:
+      - unrequested stars, eyes, birds, people, letters, or cosmic symbols appear
+      - the user-specified shapes are replaced by recurring motifs
+      - every form is enclosed by the same outline or the field becomes crowded
 rejections:
 - copied_named_work
 - global_generic_filter

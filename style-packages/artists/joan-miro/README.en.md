@@ -22,9 +22,22 @@ This independent style package for **Joan Miró** turns public references and ob
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
-## Reference source
+## Reference sources
 
-- [Joan Miró / 超现实主义](https://commons.wikimedia.org/w/index.php?search=Joan+Mir%C3%B3&title=Special:MediaSearch&type=image)
+- [MoMA: Joan Miró](https://www.moma.org/artists/4016-joan-miro)
+- [MoMA: Daphnis and Chloé](https://www.moma.org/collection/works/61026)
+
+## New architecture: suspended biomorphic forms and open color field (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) activates only for a user-requested abstract or stylized arrangement when `suspended-biomorphic-sign-field` is declared. It treats the user's curves, color planes, and shapes separately: a line may approach or guide the eye between color forms without outlining every shape; asymmetrical spacing and negative space balance the field without an axis, grid, or an all-over symbol pattern. No stars, eyes, birds, people, letters, or moons are added by default.
+
+This differs from af Klint's axis, spiral, and geometric-biomorphic structure, and from Mondrian's orthogonal grid. The Miró direction keeps a looser relationship among curved line, separate color forms, and open ground. MoMA's notes on Miró's sign language, curvilinear lines, and biomorphic forms provide formal context without copying any specific symbol or arrangement.
+
+```powershell
+python tools/compile-style.py style-packages/artists/joan-miro --direction package --context suspended-biomorphic-sign-field --subject "One black crescent, one red triangle, one cobalt-blue irregular oval, and one thin black curved line on a warm-white ground; keep all four marks distinct and leave generous open space"
+```
+
+[`comparisons/`](comparisons/) contains legacy and direction jobs, prompts, and sample images. With the legacy image as a composition reference, the direction result extends the curve into a clearer path beneath the color forms while keeping the shapes separate with open ground between them. Image generation remains stochastic; the direction is experimental pending visual review.
 
 ## Rights and attribution
 

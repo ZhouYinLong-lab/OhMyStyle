@@ -195,6 +195,7 @@ the same prompt wording.
 | [Van Eyck glazing and material-specific light](../style-packages/artists/jan-van-eyck/art-direction.yaml) | Distinct material highlights under shared light, selective translucent layers, and localized detail | `text_only`, declare `glazed-material-observation` |
 | [Ingres contour-led figure study](../style-packages/artists/jean-auguste-dominique-ingres/art-direction.yaml) | Supple contours organize pose, restrained smooth modeling, and shallow quiet space | `text_only`, declare `contour-led-figure-study` |
 | [Basquiat user-authored text and mark hierarchy](../style-packages/artists/jean-michel-basquiat/art-direction.yaml) | Organizes only user-supplied words and symbols; localizes strike-through and preserves legibility | `text_only`, declare `user-authored-mark-hierarchy` |
+| [Miró suspended biomorphic forms and open color field](../style-packages/artists/joan-miro/art-direction.yaml) | Keeps curve and color forms distinct, balanced by asymmetric spacing and negative space | `text_only`, declare `suspended-biomorphic-sign-field` |
 
 ## 6. Execution routes
 

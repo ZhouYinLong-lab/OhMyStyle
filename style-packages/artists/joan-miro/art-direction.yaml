@@ -1,0 +1,104 @@
+schema_version: 2.0.0
+status: experimental
+id: miro-suspended-biomorphic-sign-field
+name: Miró suspended biomorphic sign field
+base_package: artists/joan-miro
+scope:
+  medium: painting
+  representation: abstract_interpretation
+  description: >-
+    A context-specific abstract direction that arranges user-specified organic
+    and geometric forms as a sparse, asymmetrical field. A curving drawn line
+    acts as a loose path between separate color islands, while generous open
+    ground prevents the composition from becoming a grid or a crowded symbol
+    chart. It controls relationships among requested forms and adds no fixed
+    iconography or implied narrative.
+  required_contexts:
+    - suspended-biomorphic-sign-field
+  incompatible_contexts:
+    - photorealistic-scene
+    - strict-orthogonal-grid
+    - axial-symbolic-diagram
+  limitations:
+    - Apply only when the user requests an abstract or stylized composition of visible forms.
+    - Preserve the user's exact forms, colors, count, and any requested relative relationships.
+    - Do not turn a recognizable requested object into an unrelated biomorphic symbol.
+    - Add no stars, eyes, birds, people, letters, moons, or cosmic motifs unless explicitly requested.
+    - Do not copy a named print, painting, or recognizable motif arrangement.
+pillars:
+  - Give the requested curving line and filled forms separate but related roles; allow the line to pass near, touch, or visually lead between forms without outlining every shape.
+  - Balance asymmetry through spacing and counterweight across the open ground rather than through a central axis, radial symmetry, or rigid grid.
+  - Keep color in a few local islands against a quiet ground; retain the user's specified colors and leave visible breathing room around each form.
+  - Vary line weight and shape scale selectively so the field reads as a deliberate composition rather than random symbol scatter.
+rules:
+  - id: line-as-loose-connector
+    axis: line_and_shape_relation
+    importance: core
+    applies_when: The user requests a drawn line together with separate abstract forms.
+    instruction: Use the requested line as a loose visual path that can approach or connect selected forms; keep it independent from the contours of other forms so line and shape remain distinct.
+    observable: The line guides attention across the field without becoming a uniform outline or an unrequested literal object.
+    reject_when: Every shape is traced, the line becomes a rigid diagram, or it introduces a new recognizable symbol.
+    evidence:
+      source_ids:
+        - moma-miro-visual-language
+        - moma-miro-daphnis-chloe
+      basis: institutional_description
+      visual_review: pending
+    avoid: closed black outlines around every shape, star-shaped connectors, and decorative wiring
+  - id: asymmetrical-open-ground
+    axis: composition_and_spacing
+    importance: core
+    applies_when: The user requests a nonfigurative or stylized arrangement with available negative space.
+    instruction: Distribute the requested forms asymmetrically, using their scale and distance as counterweights; leave broad quiet ground and avoid a central axis, repeated row, or all-over pattern.
+    observable: The composition feels balanced without mirror symmetry or a grid, and each requested form can be read separately.
+    reject_when: Forms crowd into one cluster, become evenly tiled, or are organized into a symbolic wheel.
+    evidence:
+      source_ids:
+        - moma-miro-visual-language
+      basis: institutional_description
+      visual_review: pending
+    avoid: generic mandala, centered logo, rigid grid, and all-over constellation pattern
+  - id: local-color-islands
+    axis: palette_and_surface
+    importance: supporting
+    applies_when: The user requests a limited-color abstract composition.
+    instruction: Keep saturated color in a few bounded planes and preserve the underlying ground; use matte, direct color with minimal shading unless the user requests volume.
+    observable: Color accents remain localized and the open ground contributes to the composition.
+    reject_when: Color washes over the full surface, gradients create unrequested volume, or added hues change the user's palette.
+    evidence:
+      source_ids:
+        - moma-miro-visual-language
+      basis: institutional_description
+      visual_review: pending
+    avoid: global primary-color filter, glossy gradients, and unrequested texture
+active_rule_ids:
+  - line-as-loose-connector
+  - asymmetrical-open-ground
+  - local-color-islands
+joint_checks:
+  - id: sparse-organic-field-with-distinct-forms
+    rule_ids:
+      - line-as-loose-connector
+      - asymmetrical-open-ground
+      - local-color-islands
+    instruction: Arrange only the user's requested forms in an open asymmetrical field, letting a curving line and local color planes create rhythm while preserving clear negative space.
+    observable: Requested forms remain unchanged and countable; line and filled shapes have separate roles; color stays localized; no fixed symbol or story appears.
+sources:
+  - id: moma-miro-visual-language
+    kind: museum_artist_analysis
+    url: https://www.moma.org/artists/4016-joan-miro
+  - id: moma-miro-daphnis-chloe
+    kind: museum_collection_analysis
+    url: https://www.moma.org/collection/works/61026
+execution:
+  route: text_only
+  must:
+    - Declare suspended-biomorphic-sign-field only for an abstract or stylized form arrangement.
+    - Preserve every user-specified shape, color, and count.
+    - Use asymmetrical spacing, a loose curving line, local color planes, and generous open ground.
+    - Keep the line distinct from shape outlines unless the user requests connected contours.
+  avoid:
+    - adding recognizable symbols or narrative motifs without user request
+    - imposing an axis, radial order, or geometric grid
+    - filling open ground with decorative marks
+    - copying a known Miró composition or motif arrangement

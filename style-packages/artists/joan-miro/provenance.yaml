@@ -1,13 +1,21 @@
 package_id: joan-miro
-research_basis:
-- title: Joan Miró
-  creator: Joan Miró
-  period: 超现实主义
-  source_url: https://commons.wikimedia.org/w/index.php?search=Joan+Mir%C3%B3&title=Special:MediaSearch&type=image
-  role: style research
+package_version: 0.2.0
+curation_status: reference_backed_link_only
+source_policy: External artworks remain link-only unless redistribution rights are separately verified.
+sources:
+- url: https://www.moma.org/artists/4016-joan-miro
+  authority: The Museum of Modern Art
+  title: Joan Miró
+  supports: observable visual language, signs, media range, and color-field practice
+  accessed: '2026-10-19'
+- url: https://www.moma.org/collection/works/61026
+  authority: The Museum of Modern Art
+  title: Daphnis and Chloé
+  supports: curvilinear line and biomorphic forms as part of Miró's visual vocabulary
+  accessed: '2026-10-19'
 generated_assets:
 - path: gallery-16x9.jpg
   description: New anonymous representative image
   rights: Generated demonstration; not a source artwork
-redistribution: Do not redistribute external source works unless their rights are
-  independently verified. Preserve this attribution and package license.
+redistribution: Do not redistribute external source works unless their rights are independently verified.
+attribution: This package abstracts formal features and does not reproduce a named work or imply endorsement.

@@ -24,7 +24,20 @@
 
 ## 参考来源
 
-- [Joan Miró / 超现实主义](https://commons.wikimedia.org/w/index.php?search=Joan+Mir%C3%B3&title=Special:MediaSearch&type=image)
+- [MoMA：胡安·米罗艺术家资料](https://www.moma.org/artists/4016-joan-miro)
+- [MoMA：Daphnis and Chloé](https://www.moma.org/collection/works/61026)
+
+## 新架构：悬置的有机形与开放色场（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 只在用户要求抽象或风格化形体组合并声明 `suspended-biomorphic-sign-field` 时启用。方向把用户指定的曲线、色面与形体分开处理：线条可以靠近或引导视线经过色形，但不必包围每个形体；构图用不对称间距和留白取得平衡，避免轴线、网格或满版符号。不会自动加入星星、眼睛、鸟、人物、文字、月亮等固定图像。
+
+这与克林特依靠轴线、螺旋和几何—有机对照建立结构的方法不同，也不同于蒙德里安的正交网格；米罗方向让曲线、分离色形和开放底色形成较松动的视觉关系。MoMA 对米罗符号语言、曲线和生物形态的说明可作形式依据，但不复用任何具体符号或构图。
+
+```powershell
+python tools/compile-style.py style-packages/artists/joan-miro --direction package --context suspended-biomorphic-sign-field --subject "One black crescent, one red triangle, one cobalt-blue irregular oval, and one thin black curved line on a warm-white ground; keep all four marks distinct and leave generous open space"
+```
+
+[`comparisons/`](comparisons/) 保存旧版与新方向 job、提示词及样图；新版以旧图作构图参考，曲线从色形下方延展为更清楚的视觉路径，形体仍彼此分离并留有空地。生成有随机性，方向保持实验状态，待视觉评审。
 
 ## 来源与版权
 

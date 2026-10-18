@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "joan-miro",
+    "name": "胡安·米罗",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\joan-miro"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One black crescent, one red triangle, one cobalt-blue irregular oval, and one thin black curved line on a warm-white ground; keep all four marks distinct and leave generous open space",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: One black crescent, one red triangle, one cobalt-blue irregular oval, and one thin black curved line on a warm-white ground; keep all four marks distinct and leave generous open space\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new painting image with biomorphic black curves, pale ground, small red yellow blue and green color islands, playful asymmetry. Use a new subject and arrangement; make the medium and surface behavior observable; keep the focal hierarchy readable; do not imitate a named artwork or exact composition.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied named artwork, recognizable reconstruction, generic global style filter, unrelated extra style, unreadable subject, logo, trademark, watermark, arbitrary text",
+  "template_variables": {
+    "SUBJECT": "One black crescent, one red triangle, one cobalt-blue irregular oval, and one thin black curved line on a warm-white ground; keep all four marks distinct and leave generous open space",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "suspended-biomorphic-sign-field": {
+        "required": [
+          "exact requested forms and their count remain recognizable",
+          "curved line, filled forms, and open ground have distinct roles",
+          "asymmetrical spacing feels intentional without a rigid central axis",
+          "selected color islands stay local rather than becoming a global wash"
+        ],
+        "reject_if": [
+          "unrequested stars, eyes, birds, people, letters, or cosmic symbols appear",
+          "the user-specified shapes are replaced by recurring motifs",
+          "every form is enclosed by the same outline or the field becomes crowded"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "External artworks remain link-only unless redistribution rights are separately verified.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
