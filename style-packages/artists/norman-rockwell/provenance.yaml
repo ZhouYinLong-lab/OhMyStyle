@@ -1,9 +1,13 @@
 package_id: norman-rockwell
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_backed_link_only
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
 sources:
+- url: https://virtual.nrm.org/wp-content/uploads/2024/11/NRM_SettingTheSceneNarrative_Curriculum.pdf
+  authority: Norman Rockwell Museum
+  title: "Setting the Scene: Narrative"
+  supports: museum teaching resource for reading a single illustrated moment and story reactions
 - url: https://www.nrm.org/
   authority: Norman Rockwell Museum
   title: Norman Rockwell Museum collection

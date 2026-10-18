@@ -70,4 +70,6 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
 
+## 实验方向：共享道具的反应链
 
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 用于用户指定的小群像与共同事件：一个动作带起场景，其余人物用不同目光、手势或姿态回应同一焦点。是否幽默由用户的场景决定，不自动编造事故或笑料。对照图见 [`comparisons/`](comparisons/README.md)。

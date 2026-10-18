@@ -1,0 +1,99 @@
+schema_version: 2.0.0
+status: experimental
+id: rockwell-reaction-chain-shared-prop
+name: Rockwell reaction chain around a shared prop
+base_package: artists/norman-rockwell
+scope:
+  medium: narrative_editorial_illustration
+  representation: recognizable
+  description: >-
+    An optional single-frame narrative direction for a user-requested small group
+    and a shared object or event. One visible gesture initiates the moment; other
+    requested figures respond through distinct gaze or hand cues that lead back
+    to the same prop. Keep the action readable at a glance, with detail supporting
+    the user's tone. Do not force humor, period clothing, a specific setting, or
+    a familiar story.
+  required_contexts:
+    - reaction-chain-around-shared-prop
+  incompatible_contexts:
+    - isolated-single-figure-portrait
+    - multi-panel-sequential-storyboard
+    - text-led-advertisement
+  limitations:
+    - Activate only when the user requests multiple figures connected by one shared prop or event.
+    - Preserve requested figure count, relationships, setting, mood, and object details.
+    - Use a reaction chain only when compatible with the user's stated action; do not force a comic outcome.
+    - Keep all figures and the prop readable; model-generated gaze and hand details may be inaccurate and must be reviewed.
+    - Do not copy a named Rockwell work, source photograph, exact pose, text, or commercial layout.
+pillars:
+  - Freeze one legible instant in the user-requested event rather than illustrating a whole sequence.
+  - Make one prop or event the shared point of action, gaze, and response.
+  - Give each requested person a distinct, readable reaction while keeping secondary setting detail subordinate.
+rules:
+  - id: focal-prop-action
+    axis: narrative_hierarchy
+    importance: core
+    applies_when: The user requests a small group interacting with one object or event.
+    instruction: Choose the user-specified object or event as the focal pivot. Show one initiating gesture clearly meeting, moving, or reacting to it; preserve the requested action and object state.
+    observable: The viewer can identify what just happened or is happening from the prop and a single clear initiating gesture without reading text.
+    reject_when: Several props compete as the story's center, the event is unclear, or the initiating action changes the user's narrative.
+    evidence:
+      source_ids:
+        - nrm-single-frame-story
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: added accident, extra prop, written caption, and copied source setup
+  - id: differentiated-reaction-chain
+    axis: gaze_and_gesture
+    importance: core
+    applies_when: The user requests at least two figures responding to the same shared action.
+    instruction: Give each requested figure a distinct response through head direction, eye-line, hand position, or posture; connect their attention back to the focal prop without making everyone repeat one expression.
+    observable: Two or more reactions can be distinguished and their gaze or gesture paths form a readable link to the shared object or event.
+    reject_when: Figures duplicate one reaction, look unrelated to the action, or the gaze chain depends on exact text or a label.
+    evidence:
+      source_ids:
+        - nrm-single-frame-story
+      basis: institutional_description
+      visual_review: pending
+    avoid: identical pointing poses, forced slapstick, and generic surprise faces
+  - id: staged-detail-hierarchy
+    axis: composition_and_detail
+    importance: supporting
+    applies_when: The scene includes a small group and a setting with contextual objects.
+    instruction: Arrange figures and prop so their silhouettes remain separate; keep background details fewer, softer, and less contrasty than the action cues, while preserving details the user explicitly requests.
+    observable: The shared action reads before the setting, yet the setting still explains where the event occurs.
+    reject_when: Background props obscure hands, faces, or the focal object, or the scene loses a user-required location detail.
+    evidence:
+      source_ids:
+        - nrm-single-frame-story
+      basis: original_design_intent
+      visual_review: pending
+    avoid: dense wallpaper detail, decorative frame text, and unrelated side gags
+active_rule_ids:
+  - focal-prop-action
+  - differentiated-reaction-chain
+  - staged-detail-hierarchy
+joint_checks:
+  - id: single-frame-readable-story
+    rule_ids:
+      - focal-prop-action
+      - differentiated-reaction-chain
+      - staged-detail-hierarchy
+    instruction: Use one user-specified prop or event as the story pivot; preserve the initiating gesture, differentiate each requested response, and keep setting detail subordinate to this interaction.
+    observable: A viewer can summarize the instant without captions, count the requested figures, and distinguish each person's response.
+sources:
+  - id: nrm-single-frame-story
+    kind: museum_education_resource
+    url: https://virtual.nrm.org/wp-content/uploads/2024/11/NRM_SettingTheSceneNarrative_Curriculum.pdf
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested small group linked by one shared prop or event.
+    - Preserve figure count, relationships, prop, action, setting, and mood.
+    - Make the requested prop or event the focal pivot and show a clear initiating gesture.
+    - Give each requested figure a distinct response that leads attention back to the shared action.
+    - Keep background detail subordinate and review hands, gaze, and story clarity after generation.
+  avoid:
+    - inventing a comic mishap, extra character, prop, or side story unless requested
+    - using text, logos, known characters, source photographs, or recognizable composition
+    - forcing period costume or a commercial advertisement layout

@@ -89,4 +89,6 @@ Users manage model weights, API keys, and generated images themselves. Reference
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
 
+## Experimental direction: reaction chain around a shared prop
 
+The optional direction in [`art-direction.yaml`](art-direction.yaml) is for a user-requested small group connected by one event or prop: one gesture initiates the moment and the other figures respond through distinct gaze, hands, or posture. The user’s tone controls whether the scene is humorous; the direction does not invent a mishap or joke. See [`comparisons/`](comparisons/README.md) for the paired images.

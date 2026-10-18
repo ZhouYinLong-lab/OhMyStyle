@@ -113,6 +113,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [米开朗基罗承重与反向扭转](../../style-packages/artists/michelangelo-buonarroti/art-direction.yaml) | 单人站姿由承重腿锚定，骨盆与肩线反向转动 | text_only | counterturned-weight-bearing-figure |
 | [莫霍利-纳吉透明平面投影研究](../../style-packages/artists/moholy-nagy/art-direction.yaml) | 一块半透明平面与单束方向光形成清晰投影及开放负形 | text_only | photogram-shadow-study |
 | [德·斯塔埃尔表演者色块节奏](../../style-packages/artists/nicolas-de-stael/art-direction.yaml) | 表演者各以少量倾斜色面表现节奏，乐器只保留必要线索 | text_only | dance-or-music-performance |
+| [洛克威尔共享道具反应链](../../style-packages/artists/norman-rockwell/art-direction.yaml) | 一件共享道具或事件串联小群像，每个人以独特反应引导视线回到焦点 | text_only | reaction-chain-around-shared-prop |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 
