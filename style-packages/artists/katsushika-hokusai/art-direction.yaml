@@ -1,0 +1,101 @@
+schema_version: 2.0.0
+status: experimental
+id: hokusai-graphic-contour-and-plane
+name: Hokusai graphic contour and plane
+base_package: artists/katsushika-hokusai
+scope:
+  medium: japanese_color_woodblock
+  representation: stylized
+  description: >-
+    An open-subject print direction that organizes the requested scene through decisive
+    contour, cropped silhouettes, interlocking flat color planes, and graphic negative
+    space; it does not prescribe a wave, mountain, boat, or blue palette.
+  required_contexts: []
+  incompatible_contexts:
+    - photographic-output
+    - soft-focus-painterly-output
+  limitations:
+    - Keep the user-requested subject, count, setting, and palette authoritative; do not add waves, boats, Mount Fuji, or a red sun by default.
+    - Borrow compositional principles only; do not recreate a named print, series layout, or recognizable landmark arrangement.
+    - Strong cropping and contrast must clarify the requested subject rather than hide it.
+pillars:
+  - Make contour and silhouette establish the subject hierarchy before adding interior detail.
+  - Build space from a few interlocking printed color planes and deliberate paper-shaped negative spaces.
+  - Use decisive scale shifts, cropping, or perspective only when they make the requested scene more immediate and legible.
+  - Keep the edges and registration print-like; do not simulate a photographic lens or a generic distressed filter.
+rules:
+  - id: contour-first-shape-hierarchy
+    axis: composition
+    importance: core
+    applies_when: always
+    instruction: Establish the requested subject with a small number of decisive silhouettes and carved contour groups; concentrate internal lines where they explain structure, motion, or material.
+    observable: The main subject reads at thumbnail size from its outline and large internal divisions, without relying on shading or tiny detail.
+    reject_when: Uniform outlines, ornamental line clutter, or surface detail obscure the primary silhouette.
+    evidence:
+      source_ids:
+        - hokusai-met-great-wave
+        - hokusai-met-ushibori-crop
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform outlining, decorative line clutter, and detail-first rendering
+  - id: interlocking-flat-color-plates
+    axis: palette
+    importance: core
+    applies_when: always
+    instruction: Separate the scene into a limited number of clear color planes with controlled value steps and occasional overlap; use indigo or Prussian blue as an anchor only when it suits the requested palette.
+    observable: Large color regions remain distinct and support the subject's form; depth comes mainly from overlap, scale, and contour rather than smooth atmospheric gradients.
+    reject_when: Photographic shading, continuous airbrushed gradients, or many unrelated colors dissolve the printed plane structure.
+    evidence:
+      source_ids:
+        - hokusai-met-great-wave
+        - hokusai-met-shichirigahama-blue
+      basis: institutional_description
+      visual_review: pending
+    avoid: continuous airbrush gradients, photographic shading, and arbitrary multicolor noise
+  - id: decisive-crop-and-negative-space
+    axis: space_and_edges
+    importance: core
+    applies_when: A crop, scale contrast, or open paper area can clarify the requested composition.
+    instruction: Use an intentional crop, scale shift, or broad paper-shaped opening to direct attention and create graphic tension; keep a readable path through the requested scene and avoid reproducing a known layout.
+    observable: Cropped forms feel purposeful, and unprinted or quiet areas balance the printed masses without leaving the subject ambiguous.
+    reject_when: Cropping cuts off essential requested information or negative space becomes an empty background with no compositional role.
+    evidence:
+      source_ids:
+        - hokusai-met-ushibori-crop
+        - hokusai-met-great-wave
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: copied landmark arrangements, accidental cutoffs, and decorative empty space
+active_rule_ids:
+  - contour-first-shape-hierarchy
+  - interlocking-flat-color-plates
+  - decisive-crop-and-negative-space
+joint_checks:
+  - id: contour-plane-crop-coherence
+    rule_ids:
+      - contour-first-shape-hierarchy
+      - interlocking-flat-color-plates
+      - decisive-crop-and-negative-space
+    instruction: Let silhouette, color planes, and cropping reinforce the same subject hierarchy; preserve the requested scene and keep print-like graphic tension without importing a famous motif.
+    observable: At thumbnail size the subject is clear, large planes remain separable, and any crop or paper opening directs attention through the scene.
+sources:
+  - id: hokusai-met-great-wave
+    kind: museum_object_description
+    url: https://www.metmuseum.org/art/collection/search/39799
+  - id: hokusai-met-ushibori-crop
+    kind: museum_object_description
+    url: https://www.metmuseum.org/art/collection/search/56132
+  - id: hokusai-met-shichirigahama-blue
+    kind: museum_object_description
+    url: https://www.metmuseum.org/art/collection/search/36496
+execution:
+  route: text_only
+  must:
+    - Preserve the requested subject, count, setting, and user-specified palette.
+    - Build a clear silhouette hierarchy with a small set of separated color planes.
+    - Use cropping, overlap, or quiet paper space only when it improves readability and graphic balance.
+    - Keep contour and color registration tactile but controlled.
+  avoid:
+    - adding waves, boats, Mount Fuji, a red sun, or a Japanese setting unless requested
+    - copying a named print, series layout, crop, or recognizable landmark arrangement
+    - photographic shading, continuous airbrush gradients, and generic distressed overlays

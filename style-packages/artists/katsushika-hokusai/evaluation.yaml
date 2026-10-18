@@ -1,3 +1,5 @@
+package_id: katsushika-hokusai
+package_version: 0.2.0
 profiles:
   generic:
     required:

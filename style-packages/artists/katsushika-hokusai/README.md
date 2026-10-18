@@ -73,3 +73,13 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 `evaluation.yaml` 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 新架构：轮廓、色面与负形（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 适用于开放主体：先让轮廓和剪影建立层级，再用少量套色色面、明确裁切和纸面负形组织画面。蓝色只是可选色彩锚点，不会固定出现；不会自动加入海浪、船只、富士山或日式场景。与广重方向相比，这里由轮廓、色块和裁切产生图形张力；广重则更依赖天气、前中远景和空气渐变。
+
+```powershell
+python tools/compile-style.py style-packages/artists/katsushika-hokusai --direction package --subject "A red bicycle leaning against a brick wall" --output runs/style-v2/hokusai-job.json
+```
+
+方向仍处于实验状态。大都会艺术博物馆关于《神奈川冲浪里》、牛堀和相州七里滨的馆藏资料支持这些观察；跨题材表现以及与广重方向的图片区分仍待评审。

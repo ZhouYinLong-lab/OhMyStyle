@@ -95,3 +95,13 @@ and lighting. Review the output against `evaluation.yaml`.
 Users manage model weights, API keys, and generated images themselves. References
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
+
+## New architecture: contour, planes, and negative space (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is open-subject: establish hierarchy with contour and silhouette, then organize the scene with a few registered color planes, deliberate cropping, and paper-shaped negative space. Blue is an optional palette anchor, not a default. Do not add waves, boats, Mount Fuji, or a Japanese setting unless requested. Compared with Hiroshige's direction, this one gets its tension from contour, color blocks, and crop; Hiroshige's relies more on weather, near-to-far staging, and atmospheric gradation.
+
+```powershell
+python tools/compile-style.py style-packages/artists/katsushika-hokusai --direction package --subject "A red bicycle leaning against a brick wall" --output runs/style-v2/hokusai-job.json
+```
+
+This direction remains experimental. The Met's collection records for *The Great Wave*, Ushibori, and Shichirigahama support these observations; cross-subject stability and visual differentiation from Hiroshige remain pending.
