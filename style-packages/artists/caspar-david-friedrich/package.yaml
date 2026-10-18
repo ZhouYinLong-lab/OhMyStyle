@@ -2,7 +2,7 @@ id: caspar-david-friedrich
 name: 卡斯帕·大卫·弗里德里希
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以孤寂尺度、背向观看、清冷空气和远景层叠组织风景，让自然的精神重量超过具体叙事。
 files:
@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: 绘画

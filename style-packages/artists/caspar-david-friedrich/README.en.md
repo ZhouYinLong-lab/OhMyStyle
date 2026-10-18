@@ -65,3 +65,13 @@ Configure your provider or compiler with your own API key, then send the base pr
 Connect the prompts to your local model or ComfyUI workflow. Translate the palette, reproduction notes, and visual signature into nodes or conditioning, then review the result with [evaluation.yaml](evaluation.yaml).
 
 Model weights, API keys, and generated images are managed by the user. References are for observable analysis; do not copy a source work’s exact composition, people, text, trademarks, or logos.
+
+## New architecture: human scale and natural vastness (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is limited to `landscape-view`. It uses open space, horizon placement, scale, and selective visibility to frame the relationship between a person (only when requested) and the natural setting. It does not add a back-facing wanderer, fog, mountain, ruin, or religious symbol by default. Unlike Hiroshige's weather, route, and print-layer emphasis, this direction lets quiet expanses and finite human scale carry the mood.
+
+```powershell
+python tools/compile-style.py style-packages/artists/caspar-david-friedrich --direction package --context landscape-view --subject "A small lighthouse on a broad rocky coast at dusk" --output runs/style-v2/friedrich-job.json
+```
+
+This direction remains experimental. The Met and National Gallery of Art records support these observations; cross-subject stability and visual differentiation from Hiroshige remain pending.

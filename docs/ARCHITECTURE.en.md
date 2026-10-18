@@ -157,6 +157,7 @@ the same prompt wording.
 | [Caravaggio embodied chiaroscuro](../style-packages/artists/caravaggio/art-direction.yaml) | Close staging, single-source chiaroscuro, tactile realism | `text_only` |
 | [Hiroshige atmospheric landscape](../style-packages/artists/utagawa-hiroshige/art-direction.yaml) | Weather layers, cropped foreground, travel scale, woodblock gradation | `text_only`, declare `landscape-view` |
 | [Hokusai graphic contour and planes](../style-packages/artists/katsushika-hokusai/art-direction.yaml) | Silhouette hierarchy, registered color planes, deliberate crop, paper-shaped negative space | `text_only` |
+| [Friedrich human scale and vastness](../style-packages/artists/caspar-david-friedrich/art-direction.yaml) | Open space, finite human scale, selective visibility of distance | `text_only`, declare `landscape-view` |
 
 ## 6. Execution routes
 

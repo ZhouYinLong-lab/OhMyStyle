@@ -79,3 +79,13 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 [evaluation.yaml](evaluation.yaml) 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 新架构：人的尺度与自然广度（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅用于 `landscape-view`：用开阔空间、地平线位置、远近尺度和选择性显现，建立人（仅在用户要求时出现）与自然环境的关系。它不默认添加背影旅人、雾、山峰、废墟或宗教象征。与广重包重视天气、路径和版画层叠不同，这个方向让大块静谧空间与有限的人类尺度承载情绪。
+
+```powershell
+python tools/compile-style.py style-packages/artists/caspar-david-friedrich --direction package --context landscape-view --subject "A small lighthouse on a broad rocky coast at dusk" --output runs/style-v2/friedrich-job.json
+```
+
+方向仍处于实验状态。大都会艺术博物馆和美国国家美术馆的资料支持这些观察；跨主体稳定性以及与广重方向的图片区分仍待评审。

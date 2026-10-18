@@ -1,5 +1,5 @@
 package_id: caspar-david-friedrich
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
@@ -7,6 +7,16 @@ sources:
     title: '卡斯帕·大卫·弗里德里希艺术家资料'
     authority: '美国国家美术馆'
     supports: source traceability and package scope
+  - url: https://www.metmuseum.org/zh/exhibitions/caspar-david-friedrich-the-soul-of-nature/inside-the-exhibition
+    title: 'Caspar David Friedrich: The Soul of Nature, Inside the Exhibition'
+    authority: The Metropolitan Museum of Art
+    supports: Rückenfigur as a viewing cue, sublime scale, and the contrast between solid rock and passing mist
+    accessed: 2026-10-19
+  - url: https://www.nga.gov/artworks/130555-northern-landscape-spring
+    title: Northern Landscape, Spring
+    authority: National Gallery of Art
+    supports: small human scale within a wide landscape and restrained tonal distance
+    accessed: 2026-10-19
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:
