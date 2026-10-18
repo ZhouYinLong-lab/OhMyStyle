@@ -90,3 +90,7 @@ are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
 
 
+
+## Experimental direction: shared wind contours
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user specifies wind moving both fabric and plants. Let their contours echo one wind path while keeping continuous cloth folds and branching stems materially distinct. It does not add figures, flowers, seascapes, or mythological stories by default. See [`comparisons/`](comparisons/README.md) for a generated comparison. This direction remains experimental.

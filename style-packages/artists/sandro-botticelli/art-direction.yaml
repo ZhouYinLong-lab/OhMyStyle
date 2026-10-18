@@ -1,0 +1,95 @@
+schema_version: 2.0.0
+status: experimental
+id: botticelli-shared-wind-contour
+name: Botticelli shared wind contour
+base_package: artists/sandro-botticelli
+scope:
+  medium: painted_image
+  representation: stylized
+  description: >-
+    A narrow optional direction for a user-requested scene where wind moves
+    both fabric and plants. Let their separate contours echo one clear wind
+    path through graceful curves and fine tempera-like lines, while preserving
+    the distinct material behavior and the user's exact subjects.
+  required_contexts:
+    - user-requested-wind-moving-fabric-and-plants
+  incompatible_contexts:
+    - no-wind-or-still-scene-requested
+    - user-requested-rigid-fabric-or-vertical-plants
+    - exact-reconstruction-of-named-botticelli-work
+  limitations:
+    - Use only when the user specifies both wind-moved fabric and plants.
+    - Preserve the exact garment, plant species, pose, location, and wind strength requested.
+    - Echo the direction through related curves without merging fabric and foliage into one shape.
+    - Do not add flowers, figures, sea, ribbons, or a mythological story unless requested.
+pillars:
+  - Connect user-specified moving materials through a shared graceful directional curve.
+  - Keep textile folds and plant stems individually legible.
+  - Use fine linear accents over calm flat color fields without thick painterly texture.
+rules:
+  - id: wind-path-echoes-across-materials
+    axis: shared-directional-contour
+    importance: core
+    applies_when: Wind moves both fabric and plants in the requested scene.
+    instruction: Let the main wind direction recur as related but non-identical curves in the requested fabric and plant contours.
+    observable: The two materials appear to respond to one wind path, while their shapes and surface behavior remain distinct.
+    reject_when: Fabric and foliage merge, or their motion implies conflicting wind directions.
+    evidence:
+      source_ids:
+        - uffizi-birth-of-venus-wind-and-cloak
+      basis: institutional_description
+      visual_review: pending
+    avoid: copying the source composition or adding source-specific roses or figures
+  - id: preserve-material-specific-line
+    axis: textile-and-foliage-legibility
+    importance: core
+    applies_when: Fabric and plants both carry the requested movement.
+    instruction: Use longer continuous curves for fabric folds and finer branching contours for stems and leaves; keep each outline readable against nearby shapes.
+    observable: A viewer can distinguish cloth motion from plant motion even where the curves echo each other.
+    reject_when: Leaves become cloth-like or folds fragment into foliage-like marks.
+    evidence:
+      source_ids:
+        - uffizi-birth-of-venus-wind-and-cloak
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: identical repeated contour templates or decorative pattern fill
+  - id: keep-flat-tempera-color-order
+    axis: linear-detail-and-color-field
+    importance: supporting
+    applies_when: Motion lines cross colored fabric or plants.
+    instruction: Retain calm flat color regions beneath the fine contours, reserving detailed linework for the moving edges and selected material folds.
+    observable: Directional movement reads through line and silhouette without thick impasto or photographic texture.
+    reject_when: Dense texture or gradients obscure the moving contours.
+    evidence:
+      source_ids:
+        - uffizi-birth-of-venus-wind-and-cloak
+      basis: institutional_description
+      visual_review: pending
+    avoid: global texture overlays, blur, or uniform decorative hatching
+active_rule_ids:
+  - wind-path-echoes-across-materials
+  - preserve-material-specific-line
+  - keep-flat-tempera-color-order
+joint_checks:
+  - id: shared-wind-keeps-materials-distinct
+    rule_ids:
+      - wind-path-echoes-across-materials
+      - preserve-material-specific-line
+      - keep-flat-tempera-color-order
+    instruction: Carry one requested wind direction across fabric and foliage through related fine contours, keeping each material, subject silhouette, and color field distinct.
+    observable: Shared movement links the scene without merging its objects or adding unrequested subject matter.
+sources:
+  - id: uffizi-birth-of-venus-wind-and-cloak
+    kind: museum_collection_record
+    url: https://www.uffizi.it/en/artworks/birth-of-venus
+execution:
+  route: text_only
+  must:
+    - Activate only when wind moves both fabric and plants in the user's scene.
+    - Preserve requested subjects, materials, setting, pose, and wind strength.
+    - Keep cloth folds and plant contours separate but rhythmically related.
+    - Review contour continuity and the flat tempera-like color order.
+  avoid:
+    - adding flowers, sea, figures, ribbons, or mythological subjects by default
+    - copying a known Botticelli composition, pose, or arrangement
+    - thick impasto, photographic texture, blur, or uniform pattern fill

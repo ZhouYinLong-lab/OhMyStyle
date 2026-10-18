@@ -71,3 +71,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
 
 
+
+## 实验方向：共享风向的线性轮廓
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户指定风同时吹动布料与植物时启用：让两种材料的轮廓呼应同一流向，但用连续布褶线和分枝叶茎线保留材质区别。不会自动添加人物、花朵、海景或神话故事。见 [`comparisons/`](comparisons/README.md) 的生成对照；该方向仍处于实验状态。
