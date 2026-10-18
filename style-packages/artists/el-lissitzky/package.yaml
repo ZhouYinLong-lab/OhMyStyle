@@ -2,7 +2,7 @@ id: el-lissitzky
 name: 埃尔·利西茨基
 kind: artist
 domain: hybrid
-version: 0.1.0
+version: 0.2.0
 summary: 以几何构造、空间投影、斜向动力和工程化版式建立视觉秩序，适合抽象图形、建筑表面与信息结构。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: 绘画与设计

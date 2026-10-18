@@ -1,12 +1,27 @@
 package_id: el-lissitzky
-package_version: 0.1.0
-curation_status: draft
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
 - url: https://www.moma.org/artists/3569-el-lissitzky
   title: El Lissitzky
   authority: The Museum of Modern Art
   supports: source traceability and package scope
+- url: https://www.moma.org/collection/works/79040
+  title: Proun 19D
+  authority: The Museum of Modern Art
+  supports: Proun as a spatial experiment combining planes and quasi-architectural forms
+  accessed: 2026-10-19
+- url: https://www.moma.org/collection/works/88312
+  title: The New Man
+  authority: The Museum of Modern Art
+  supports: floating architectonic forms in imagined three-dimensional space
+  accessed: 2026-10-19
+- url: https://assets.moma.org/documents/moma_catalogue_1733_300062754.pdf
+  title: Contrasts of Form
+  authority: The Museum of Modern Art
+  supports: Proun as transition between painting and architecture; flat planes, geometric forms, and isometric cues
+  accessed: 2026-10-19
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:
 - Do not bundle an external artwork, photograph, screenshot, logo, or dataset item unless redistribution rights are verified.

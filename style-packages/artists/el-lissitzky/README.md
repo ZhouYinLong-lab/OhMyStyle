@@ -34,6 +34,16 @@
 
 详细来源和再分发边界见 [provenance.yaml](provenance.yaml)、[references/manifest.csv](references/manifest.csv) 以及仓库根目录的 NOTICE (../../../NOTICE)。
 
+## 新架构：Proun 轴测空间（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 只采用利西茨基 1919–1927 年 Proun 作品中的一个方向：让平面色块与几何体共享一致的想象空间，通过轴测边、遮挡和色彩关系表现“介于绘画与建筑之间”的空间构造。它不等同于整个构成主义运动，也不是包豪斯的纸材切折方法；不默认红色方块、口号、星形或政治符号。
+
+```powershell
+python tools/compile-style.py style-packages/artists/el-lissitzky --direction package --context pictorial-architectonic-space --subject "A small reading lamp represented as a planar shade and a few interlocking geometric volumes" --output runs/style-v2/el-lissitzky-job.json
+```
+
+此方向仍为实验规则；同题和跨主体视觉评审待完成。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

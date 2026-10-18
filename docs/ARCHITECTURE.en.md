@@ -171,6 +171,7 @@ the same prompt wording.
 | [Degas oblique observation and spatial crop](../style-packages/artists/edgar-degas/art-direction.yaml) | Oblique viewpoint, asymmetric framing, spatial planes, and legible transitional poses | `text_only`, declare `observed-figure-scene` |
 | [Schiele contour tension and exposed ground](../style-packages/artists/egon-schiele/art-direction.yaml) | Directional contour, tension between form and paper ground, sparse dry color | `text_only`, declare `expressive-contour-study` |
 | [Munch subjective color and environmental rhythm](../style-packages/artists/edvard-munch/art-direction.yaml) | Local psychological color, curves linking subject and setting, selective spatial compression | `text_only`, declare `psychological-expressionist-scene` |
+| [Lissitzky Proun axonometric space](../style-packages/artists/el-lissitzky/art-direction.yaml) | Planes and volumes in shared space, coherent axonometric relations, color as spatial cue | `text_only`, declare `pictorial-architectonic-space` |
 
 ## 6. Execution routes
 

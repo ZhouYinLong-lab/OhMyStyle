@@ -1,3 +1,5 @@
+package_id: el-lissitzky
+package_version: 0.2.0
 profiles:
   generic:
     required:
@@ -14,6 +16,15 @@ profiles:
   still_life:
     required:
     - preserve the user-supplied objects and their count
+  pictorial-architectonic-space:
+    required:
+    - flat planes and geometric volumes occupy a coherent imagined space
+    - oblique directions make overlap and orientation legible
+    - color clarifies spatial roles instead of acting as a global filter
+    reject_if:
+    - slogans, political symbols, stars, or red-square motifs appear without request
+    - all forms collapse into flat layout or realistic 3D rendering
+    - mixed projection axes make spatial relations incoherent
 minimum_score: 7
 semantic_evaluation:
   subject_independence:
