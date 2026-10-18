@@ -57,3 +57,7 @@ Configure an API key in your own image platform or compiler, then submit the bas
 Connect the prompts to a local model or ComfyUI workflow. Use the reproduction notes to set line, translucent planes, paper, and shallow space, then review the output with `evaluation.yaml`.
 
 Users manage model weights, keys, and generated images. References are for understanding traits, not for copying source works.
+
+## Experimental direction: active line and independent color field
+
+The optional direction in [`art-direction.yaml`](art-direction.yaml) is limited to a user-requested simple moving mechanism: a few wiry ink lines describe its structure and action, with one line extending beyond its contour; a separate translucent color field establishes shallow space while leaving paper visible. Do not add default birds, notes, letters, landscapes, or forms from a source work. See [`comparisons/`](comparisons/README.md) for a visual probe using the same tabletop-fan subject. The direction remains experimental.

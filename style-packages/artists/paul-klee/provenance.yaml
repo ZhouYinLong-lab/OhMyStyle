@@ -7,6 +7,10 @@ sources:
     title: 'Collection'
     authority: 'Zentrum Paul Klee'
     supports: source traceability and package scope
+  - url: 'https://www.moma.org/collection/works/37347'
+    title: 'Twittering Machine (Die Zwitscher-Maschine)'
+    authority: 'The Museum of Modern Art'
+    supports: museum description of active line, independent line and color, transfer marks, and atmospheric depth
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

@@ -1,0 +1,152 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "paul-klee",
+    "name": "保罗·克利",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\paul-klee"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One small brass-cage desk fan with a dark wooden pedestal, standing on a plain side table and turned slightly to the side, its blades gently turning, horizontal 16:9.",
+  "prompt": "USER SUBJECT: One small brass-cage desk fan with a dark wooden pedestal, standing on a plain side table and turned slightly to the side, its blades gently turning, horizontal 16:9.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: watercolor_gouache_and_ink_on_paper\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [active-line-beyond-contour] Use a small number of wiry, hand-drawn lines to make the requested object's structure and motion readable; let one connected line travel beyond its contour into open space rather than closing every form.\n- [independent-translucent-color-field] Set one translucent, irregular color field behind or across part of the mechanism; allow it to establish shallow atmosphere independently from the ink line and leave some paper unpainted.\n- [sparse-transfer-trace] Keep the paper visibly present and use only a few faint, irregular transfer-like smudges near the drawn mechanism; let these marks register the support without becoming extra objects or symbols.\n- [line-color-plane-tension] Keep the user's mechanism readable through wiry active lines while a separate translucent field suggests shallow atmosphere; leave paper visible and use incidental marks sparingly.\nREQUIREMENT: Activate only for a user-requested simple moving mechanical object.\nREQUIREMENT: Preserve the user's object identity, material, count, and requested action.\nREQUIREMENT: Keep line-drawn structure distinct from the translucent color field.\nREQUIREMENT: Let one active line travel into open space while preserving object recognition.\nREQUIREMENT: Leave visible paper and keep incidental smudges sparse.\nREQUIREMENT: Review object readability, line path, color-field independence, and paper visibility.",
+  "negative_prompt": "bird forms, music-note marks, copied wire perch, and rigid CAD edges\nall-over gradient, enclosing frame, and color-coded technical diagram\ndirt, grunge overlays, deliberate handwriting, and copied transfer artifacts\nadding birds, notes, perches, traps, lettering, or an unrequested landscape\ncopying the composition or particular forms of Twittering Machine\nturning the image into a technical blueprint, generic watercolor filter, or photorealistic product render",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "klee-independent-line-atmospheric-color",
+    "name": "Klee independent line and atmospheric color field",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\paul-klee\\art-direction.yaml",
+    "sha256": "289251a487312227bda138c5d446dbf18d6b1c81a46099a9e8e4cb1d9341ba93",
+    "active_rule_ids": [
+      "active-line-beyond-contour",
+      "independent-translucent-color-field",
+      "sparse-transfer-trace"
+    ],
+    "contexts": [
+      "simple-moving-mechanical-object"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested simple moving mechanical object.",
+      "Preserve the user's object identity, material, count, and requested action.",
+      "Keep line-drawn structure distinct from the translucent color field.",
+      "Let one active line travel into open space while preserving object recognition.",
+      "Leave visible paper and keep incidental smudges sparse.",
+      "Review object readability, line path, color-field independence, and paper visibility."
+    ],
+    "avoid": [
+      "adding birds, notes, perches, traps, lettering, or an unrequested landscape",
+      "copying the composition or particular forms of Twittering Machine",
+      "turning the image into a technical blueprint, generic watercolor filter, or photorealistic product render"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "watercolor_gouache_and_ink_on_paper",
+      "representation": "stylized",
+      "description": "An optional direction for a user-requested simple mechanical object whose movement should remain legible. Describe the object with a few wiry, active ink lines while allowing a translucent color field to establish a separate shallow atmosphere. Let at least one line travel beyond the object's contour into open paper; do not turn that gesture into a fixed symbol or narrative.",
+      "required_contexts": [
+        "simple-moving-mechanical-object"
+      ],
+      "incompatible_contexts": [
+        "photorealistic-product-render",
+        "dense-technical-blueprint",
+        "user-requested-typography-layout"
+      ],
+      "limitations": [
+        "Activate only for a user-requested simple mechanical object or device with implied or requested movement.",
+        "Preserve the requested object, material, count, controls, and action; do not add a default bird, music note, perch, trap, letter, or landscape.",
+        "Keep line and color as distinguishable carriers; the line records action or connection, while the color field builds atmosphere without filling every line-bounded area.",
+        "Retain enough object geometry for recognition; a freely moving line must not change the object's structure or function.",
+        "Keep paper visible and use only a few incidental transfer-like marks; do not imitate a specific Klee drawing or its composition."
+      ]
+    },
+    "rules": [
+      {
+        "id": "active-line-beyond-contour",
+        "axis": "line_behavior_and_motion",
+        "importance": "core",
+        "applies_when": "The user requests one simple mechanical object with implied or requested movement.",
+        "instruction": "Use a small number of wiry, hand-drawn lines to make the requested object's structure and motion readable; let one connected line travel beyond its contour into open space rather than closing every form.",
+        "observable": "The object remains identifiable while at least one active line has a clear path into negative space that is not simply a copied outer contour.",
+        "reject_when": "The line becomes a dense blueprint, an unrelated decorative squiggle, or changes the mechanism's user-specified structure.",
+        "evidence": {
+          "source_ids": [
+            "moma-klee-twittering-machine"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "bird forms, music-note marks, copied wire perch, and rigid CAD edges"
+      },
+      {
+        "id": "independent-translucent-color-field",
+        "axis": "color_field_and_space",
+        "importance": "core",
+        "applies_when": "The user requests a stylized mechanical study on a paper-like support.",
+        "instruction": "Set one translucent, irregular color field behind or across part of the mechanism; allow it to establish shallow atmosphere independently from the ink line and leave some paper unpainted.",
+        "observable": "A viewer can distinguish line-drawn structure from the larger soft-edged color field; the color does not simply fill every mechanical contour.",
+        "reject_when": "Color becomes uniform object fill, a full-bleed background, or photographic volumetric shading.",
+        "evidence": {
+          "source_ids": [
+            "moma-klee-twittering-machine"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "all-over gradient, enclosing frame, and color-coded technical diagram"
+      },
+      {
+        "id": "sparse-transfer-trace",
+        "axis": "support_and_surface",
+        "importance": "supporting",
+        "applies_when": "The user allows a handmade drawing surface.",
+        "instruction": "Keep the paper visibly present and use only a few faint, irregular transfer-like smudges near the drawn mechanism; let these marks register the support without becoming extra objects or symbols.",
+        "observable": "Empty paper remains an active part of the composition, with incidental marks subordinate to the requested object and color field.",
+        "reject_when": "Smudges obscure object details, form an all-over distressed texture, or read as added symbols or text.",
+        "evidence": {
+          "source_ids": [
+            "moma-klee-twittering-machine"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "dirt, grunge overlays, deliberate handwriting, and copied transfer artifacts"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "line-color-plane-tension",
+        "rule_ids": [
+          "active-line-beyond-contour",
+          "independent-translucent-color-field",
+          "sparse-transfer-trace"
+        ],
+        "instruction": "Keep the user's mechanism readable through wiry active lines while a separate translucent field suggests shallow atmosphere; leave paper visible and use incidental marks sparingly.",
+        "observable": "Object, line path, color field, and paper remain distinct but form one balanced drawing."
+      }
+    ],
+    "sources": [
+      {
+        "id": "moma-klee-twittering-machine",
+        "kind": "museum_collection_description",
+        "url": "https://www.moma.org/collection/works/37347"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "289251a487312227bda138c5d446dbf18d6b1c81a46099a9e8e4cb1d9341ba93",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

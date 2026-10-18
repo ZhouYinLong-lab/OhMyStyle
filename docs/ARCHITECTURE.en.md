@@ -212,6 +212,7 @@ the same prompt wording.
 | [Picasso single object in multiple viewpoints](../style-packages/artists/pablo-picasso/art-direction.yaml) | Front, side, or top views meet within one recognizable object silhouette while the surrounding space stays quiet | `text_only`, declare `single-object-multiple-viewpoints` |
 | [Cézanne tilted tabletop object balance](../style-packages/artists/paul-cezanne/art-direction.yaml) | Tilt the requested support plane and balance user-specified objects through contact and color relationships | `text_only`, declare `tilted-tabletop-still-life` |
 | [Gauguin outlined figure and selective ground texture](../style-packages/artists/paul-gauguin/art-direction.yaml) | A user-specified figure uses a continuous contour and flat color while one limited ground patch has looser surface handling | `text_only`, declare `single-figure-flat-ground` |
+| [Klee active line and independent color field](../style-packages/artists/paul-klee/art-direction.yaml) | Active lines describe a requested mechanism while a translucent color field builds shallow space and leaves paper visible | `text_only`, declare `simple-moving-mechanical-object` |
 
 ## 6. Execution routes
 

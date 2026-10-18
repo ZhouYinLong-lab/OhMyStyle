@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "paul-klee",
+    "name": "保罗·克利",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\paul-klee"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One small brass-cage desk fan with a dark wooden pedestal, standing on a plain side table and turned slightly to the side, its blades gently turning, horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied One small brass-cage desk fan with a dark wooden pedestal, standing on a plain side table and turned slightly to the side, its blades gently turning, horizontal 16:9. and the user-requested setting are authoritative.\n- This package controls visual treatment only: painting medium, line, composition,\n  palette, surface, texture, and symbolic spatial behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of One small brass-cage desk fan with a dark wooden pedestal, standing on a plain side table and turned slightly to the side, its blades gently turning, horizontal 16:9. in the user-requested setting. Apply a delicate wandering line,\ntranslucent watercolor and gouache planes, shallow symbolic space, asymmetrical\nbalance, and small abstract signs that support rather than replace the user's\nsubject. Preserve the package invariants while inventing a new scene: do not copy\nany reference work, named character, exact pose, recognizable layout, logo, or\ntext. Keep the subject and narrative supplied by the user independent from the\npackage's visual identity. Use concrete visual instructions rather than the\npackage name alone.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied reference composition, recognizable character, logo, watermark, artist signature,\nunintended text, generic global color filter, incompatible medium, accidental photorealism,\nunmotivated neon, plastic CGI finish, malformed anatomy, duplicate objects\nDo not add fixed fish, angels, alphabets, landscapes, musical symbols, or famous motifs.\nDo not turn the subject into a children's cartoon, a generic geometric poster, or a copied work.\nAvoid glossy digital gradients, photorealism, 3D rendering, readable text, logos, watermarks,\nand decorative captions. Keep the user's subject authoritative.",
+  "template_variables": {
+    "SUBJECT": "One small brass-cage desk fan with a dark wooden pedestal, standing on a plain side table and turned slightly to the side, its blades gently turning, horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "identity-critical anatomy remains readable while line and color stay symbolic"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "objects remain identifiable without becoming a fixed symbolic inventory"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
