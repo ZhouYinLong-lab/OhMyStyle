@@ -1,4 +1,17 @@
 package_id: leonardo-da-vinci
+package_version: 0.2.0
+curation_status: draft
+sources:
+- url: 'https://www.rct.uk/collection/stories/leonardo-in-the-royal-collection/leonardos-study-of-anatomy'
+  title: "Leonardo's Study of Anatomy"
+  authority: Royal Collection Trust
+  supports: observational drawing of bones and muscles using multiple illustrative techniques for clarity
+  accessed: '2026-10-19'
+- url: 'https://www.rct.uk/collection/exhibitions/leonardo-da-vinci/the-queens-gallery-palace-of-holyroodhouse/the-skeleton-recto-the-muscles-of-the-face-and-arm-and-the-nerves-and-veins-of-the-hand-verso'
+  title: The skeleton; muscles of the face and arm; nerves and veins of the hand
+  authority: Royal Collection Trust
+  supports: distinct aligned views and layered anatomical observations; formal research only, do not copy the sheet
+  accessed: '2026-10-19'
 research_basis:
 - title: Leonardo da Vinci
   creator: Leonardo da Vinci

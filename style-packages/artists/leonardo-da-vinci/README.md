@@ -22,6 +22,20 @@
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 
+## 可选新方向：分层手部结构研究
+
+`art-direction.yaml` 登记一个实验性绘图方向，仅用于用户要求的手部或腕部多视图解剖习作。它把手背、掌面与骨骼等不同视图作为同一对象的比较研究，尽量对齐腕部入口和关节轴，用红褐粉笔、炭笔和随形排线区分表层与深层结构。它不提供医疗解释，也不自动添加标签。编译时显式声明 `layered-hand-mechanics-study`；原有艺术家包和旧版默认路径保留。
+
+### 同一张手部研究页的生成对照
+
+两张图都包含手背、掌面和骨骼三个视图。新版把腕部基线和构造轴联系得更明确，页内比较关系更强；模型同时改写了一些手指细节，不能把它当成准确的医学图或确定性绘图结果。
+
+| 旧版默认路径 | 新版分层手部研究 |
+| --- | --- |
+| ![达芬奇旧版手部研究样图](comparisons/legacy.png) | ![达芬奇新版手部研究方向样图](comparisons/direction.png) |
+
+编译任务：[`legacy-job.json`](comparisons/legacy-job.json)、[`direction-job.json`](comparisons/direction-job.json)；提示与评审：[`generation-prompts.md`](comparisons/generation-prompts.md)。
+
 ## 参考来源
 
 - [Leonardo da Vinci / 文艺复兴盛期](https://commons.wikimedia.org/w/index.php?search=Leonardo+da+Vinci&title=Special:MediaSearch&type=image)

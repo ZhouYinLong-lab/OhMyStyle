@@ -22,6 +22,20 @@ The character of this package sits in “sfumato transitions, close observation,
 
 See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `evaluation.yaml` for the complete rule set.
 
+## Optional direction: layered hand-structure study
+
+`art-direction.yaml` registers an experimental drawing direction for user-requested multi-view hand or wrist anatomy studies. It treats back-of-hand, palm, and skeletal views as a comparison of the same subject, relating wrist entry points and joint axes where useful. Red-brown chalk, charcoal, and form-following hatching distinguish surface and deeper structures. It does not provide medical interpretation or add labels by default. Explicitly declare `layered-hand-mechanics-study` when compiling; the existing artist package and legacy default remain in place.
+
+### Generated comparison using the same hand study sheet
+
+Both images contain dorsal, palm, and skeletal views. The direction version relates the wrist baselines and construction axes more clearly, strengthening the page's comparative structure. The model also changes some finger details, so this is not a medically accurate diagram or deterministic drawing result.
+
+| Legacy default path | New layered hand study |
+| --- | --- |
+| ![Leonardo legacy hand study sample](comparisons/legacy.png) | ![Leonardo layered hand study direction sample](comparisons/direction.png) |
+
+Compiled jobs: [`legacy-job.json`](comparisons/legacy-job.json), [`direction-job.json`](comparisons/direction-job.json). Prompts and review notes: [`generation-prompts.md`](comparisons/generation-prompts.md).
+
 ## Reference source
 
 - [Leonardo da Vinci / 文艺复兴盛期](https://commons.wikimedia.org/w/index.php?search=Leonardo+da+Vinci&title=Special:MediaSearch&type=image)

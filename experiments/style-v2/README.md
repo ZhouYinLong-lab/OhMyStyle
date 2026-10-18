@@ -105,6 +105,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [维米尔安静城景的横向层次](../../style-packages/artists/johannes-vermeer/art-direction.yaml) | 城景的横向空间分层、明暗纵深和稀疏反光；作为室内默认包的可选方向 | text_only | quiet-cityscape-banded-depth |
 | [珂勒惠支压缩人物群像版画](../../style-packages/artists/kathe-kollwitz/art-direction.yaml) | 用户指定动作接触点的群像压缩、黑块与纸白线口，不推断关系或叙事 | text_only | compressed-figure-group-print |
 | [马列维奇斜向漂移与反向配重](../../style-packages/artists/kazimir-malevich/art-direction.yaml) | 几何色面偏心斜向运动、大小配重和不等距留白 | text_only | diagonal-drift-counterweight |
+| [达·芬奇分层手部结构研究](../../style-packages/artists/leonardo-da-vinci/art-direction.yaml) | 多视图比较、腕关节轴关系与表层和骨骼结构分离 | text_only | layered-hand-mechanics-study |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

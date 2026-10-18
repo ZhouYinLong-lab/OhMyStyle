@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "leonardo-da-vinci",
+    "name": "莱昂纳多·达·芬奇",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\leonardo-da-vinci"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One horizontal sheet with three views of the same right hand and wrist: dorsal surface, open palm, and simplified bones and joints; no labels or arrows.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: One horizontal sheet with three views of the same right hand and wrist: dorsal surface, open palm, and simplified bones and joints; no labels or arrows.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new painting image with calm sfumato transitions, precise observation, atmospheric landscape, restrained earth and blue palette. Use a new subject and arrangement; make the medium and surface behavior observable; keep the focal hierarchy readable; do not imitate a named artwork or exact composition.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied named artwork, recognizable reconstruction, generic global style filter, unrelated extra style, unreadable subject, logo, trademark, watermark, arbitrary text",
+  "template_variables": {
+    "SUBJECT": "One horizontal sheet with three views of the same right hand and wrist: dorsal surface, open palm, and simplified bones and joints; no labels or arrows.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "layered-hand-mechanics-study": {
+        "minimum_score": 8,
+        "criteria": [
+          {
+            "id": "distinct_comparative_views",
+            "weight": 3,
+            "test": "User-requested hand views remain distinct and share a legible scale or alignment relationship."
+          },
+          {
+            "id": "surface_to_skeleton_separation",
+            "weight": 3,
+            "test": "External form, tendon or joint landmarks, and skeletal structure are represented as separate analytical layers or views."
+          },
+          {
+            "id": "directional_observation_marks",
+            "weight": 2,
+            "test": "Fine hatching and construction lines clarify form without turning into decorative texture."
+          },
+          {
+            "id": "no_unrequested_labels",
+            "weight": 2,
+            "test": "Text, arrows, and labeling appear only when explicitly requested."
+          }
+        ],
+        "reject_when": [
+          "copied_named_study_sheet",
+          "invented_medical_annotation_or_claim",
+          "extra_or_missing_digits_or_views"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

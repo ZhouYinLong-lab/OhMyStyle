@@ -15,6 +15,26 @@ rejections:
 - global_generic_filter
 - unreadable_subject
 minimum_score: 8
+profiles:
+  layered-hand-mechanics-study:
+    minimum_score: 8
+    criteria:
+      - id: distinct_comparative_views
+        weight: 3
+        test: User-requested hand views remain distinct and share a legible scale or alignment relationship.
+      - id: surface_to_skeleton_separation
+        weight: 3
+        test: External form, tendon or joint landmarks, and skeletal structure are represented as separate analytical layers or views.
+      - id: directional_observation_marks
+        weight: 2
+        test: Fine hatching and construction lines clarify form without turning into decorative texture.
+      - id: no_unrequested_labels
+        weight: 2
+        test: Text, arrows, and labeling appear only when explicitly requested.
+    reject_when:
+      - copied_named_study_sheet
+      - invented_medical_annotation_or_claim
+      - extra_or_missing_digits_or_views
 semantic_evaluation:
   subject_independence:
     score: null

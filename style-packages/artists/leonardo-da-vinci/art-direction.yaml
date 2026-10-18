@@ -1,0 +1,104 @@
+schema_version: 2.0.0
+status: experimental
+id: leonardo-layered-hand-mechanics-study
+name: Leonardo layered hand mechanics study
+base_package: artists/leonardo-da-vinci
+scope:
+  medium: red_chalk_and_charcoal_drawing
+  representation: stylized
+  description: >-
+    An optional comparative drawing-sheet direction for user-requested hand
+    anatomy studies. It places distinct surface and skeletal views of the same
+    hand in a shared analytical layout, aligning their wrist and joint axes
+    where useful. Fine directional marks clarify observed structure while
+    open paper keeps the views separate. It is a drawing-study mode, not medical
+    instruction or a template of any historical sheet.
+  required_contexts:
+    - layered-hand-mechanics-study
+  incompatible_contexts:
+    - single-finished-hand-portrait
+    - ornamental-hand-symbol
+    - photorealistic-medical-render
+  limitations:
+    - Use only for a user-requested hand or wrist anatomy study with multiple views or structural layers.
+    - Preserve the requested laterality, view count, pose, framing, and annotation preference.
+    - Distinguish surface form from skeletal study through separate views unless the user requests an overlay.
+    - Do not add medical labels, diagnoses, or anatomical claims the user did not request.
+    - Do not copy a named historical drawing or its page layout.
+pillars:
+  - Treat the sheet as a comparison of views of the same requested hand, keeping wrist entry points and joint axes in a readable relationship.
+  - Separate external form, visible tendon and joint landmarks, and skeletal structure into distinct user-requested views rather than confusing overlays.
+  - Use fine red-brown chalk, charcoal, and selective parallel hatching to explain form; leave exploratory construction marks visible but subordinate.
+  - Preserve generous paper intervals and avoid fabricated labels or pseudo-writing.
+rules:
+  - id: aligned-comparative-hand-views
+    axis: study_sheet_composition
+    importance: core
+    applies_when: The user requests multiple views or layers of the same hand or wrist.
+    instruction: Arrange only the requested views as a comparative sheet; relate wrist entry points, palm axes, and joint positions with consistent orientation or scale where appropriate, while keeping each view distinct.
+    observable: A viewer can compare the requested views as belonging to the same hand without confusing surface and skeletal structure.
+    reject_when: Views contradict the requested laterality or count, drift into unrelated poses, or overlap until their structures become ambiguous.
+    evidence:
+      source_ids:
+        - rct-anatomy-study
+        - rct-hand-views
+      basis: institutional_description
+      visual_review: pending
+    avoid: copied page layouts, arbitrary view rotation, and unrequested extra studies
+  - id: layered-structural-reading
+    axis: anatomy_and_form
+    importance: core
+    applies_when: The request includes both an external hand view and internal or skeletal information.
+    instruction: Keep surface contours, tendon or joint landmarks, and bones legible as separate analytical information; use adjacent views or restrained construction guides rather than implying unsupported transparency.
+    observable: Surface and deeper structure can be distinguished, and the page does not confuse illustration with a medical explanation.
+    reject_when: Bones are drawn through intact skin without a requested cutaway, landmarks contradict the requested view, or labels imply unsupported anatomy.
+    evidence:
+      source_ids:
+        - rct-anatomy-study
+        - rct-hand-views
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: invented anatomy, false transparency, medical diagnosis, and pseudo-labels
+  - id: directional-study-marking
+    axis: line_and_surface
+    importance: supporting
+    applies_when: The user requests a drawing or study-sheet treatment on paper.
+    instruction: Use light exploratory contours before selective darker structural lines; keep parallel hatching aligned with the turning plane and reserve the darkest marks for clear overlaps or joints.
+    observable: Marks describe structure and observation, while open paper separates views and keeps the sheet readable.
+    reject_when: Hatching becomes uniform decoration, construction lines obscure anatomy, or paper is filled with unrelated notes.
+    evidence:
+      source_ids:
+        - rct-anatomy-study
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: uniform crosshatching, decorative page borders, and unrequested writing
+active_rule_ids:
+  - aligned-comparative-hand-views
+  - layered-structural-reading
+  - directional-study-marking
+joint_checks:
+  - id: comparable-observed-hand-structure
+    rule_ids:
+      - aligned-comparative-hand-views
+      - layered-structural-reading
+      - directional-study-marking
+    instruction: Organize the user's requested hand views so that alignment, structural layers, and purposeful drawing marks jointly clarify rather than overstate the observation.
+    observable: The page reads as a comparative drawing study, with distinct views, clear surface-to-bone separation, and open paper intervals.
+sources:
+  - id: rct-anatomy-study
+    kind: museum_collection_analysis
+    url: https://www.rct.uk/collection/stories/leonardo-in-the-royal-collection/leonardos-study-of-anatomy
+  - id: rct-hand-views
+    kind: museum_collection_analysis
+    url: https://www.rct.uk/collection/exhibitions/leonardo-da-vinci/the-queens-gallery-palace-of-holyroodhouse/the-skeleton-recto-the-muscles-of-the-face-and-arm-and-the-nerves-and-veins-of-the-hand-verso
+execution:
+  route: text_only
+  must:
+    - Activate only for user-requested comparative hand or wrist anatomy drawing.
+    - Preserve requested laterality, view count, pose, frame, and annotation preference.
+    - Keep external and skeletal views distinct unless an overlay is explicitly requested.
+    - Use directional construction lines and hatching to explain form while preserving open paper.
+  avoid:
+    - adding labels, arrows, diagnoses, or unsupported anatomical claims
+    - inventing views, digits, or structural layers
+    - copying a known historical sheet or page layout
