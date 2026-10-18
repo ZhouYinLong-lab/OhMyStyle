@@ -76,3 +76,7 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## Experimental direction: hand-object light path
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user requests a figure holding or touching an object. Use one selective warm light path to connect the face, contact hand, and the object's material response; keep the person primary and surrounding shadows detailed. It does not assign symbolic meaning to the object. See [`comparisons/`](comparisons/README.md) for a generated study. This direction remains experimental.

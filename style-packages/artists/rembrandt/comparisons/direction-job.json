@@ -1,0 +1,154 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "rembrandt",
+    "name": "伦勃朗·范·莱因",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\rembrandt"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One anonymous adult in a plain dark sweater quietly examines a small brass key held between the fingers near a single shaded table lamp; one visible face and clear hand-object contact, intimate horizontal 16:9 portrait.",
+  "prompt": "USER SUBJECT: One anonymous adult in a plain dark sweater quietly examines a small brass key held between the fingers near a single shaded table lamp; one visible face and clear hand-object contact, intimate horizontal 16:9 portrait.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: painted_image\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [light-connects-face-hand-and-object] Align the dominant light path across the face, the contact hand, and one material-specific accent on the requested object.\n- [contact-point-explains-material] Keep finger placement anatomically clear and use a small local change in value or paint texture where the object's material meets the hand.\n- [keep-shadow-open-around-contact] Preserve warm detail around the hand and object; reserve the deepest dark for areas that do not explain the contact or expression.\n- [hand-object-action-remains-human-led] Use selective light to connect the user's requested face, hand gesture, and object while keeping material, contact, and warm shadows legible.\nREQUIREMENT: Activate only for a user-requested figure-object contact.\nREQUIREMENT: Preserve hand placement, face, object, material, and scene.\nREQUIREMENT: Connect attention and contact through one selective warm light path.\nREQUIREMENT: Review anatomy, object legibility, material response, and open shadow detail.",
+  "negative_prompt": "halo around the object or multiple competing highlight paths\nadded jewelry, decorative insignia, or unrequested object details\nuniform sepia tint or theatrical black background\nmaking the object brighter or more important than the requested person\nadding symbolic meanings, objects, or historical costume\nusing generic sepia overlays or clipping shadows to black",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "rembrandt-hand-object-light-chain",
+    "name": "Rembrandt hand-object light chain",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\rembrandt\\art-direction.yaml",
+    "sha256": "c59c98988b4c2566755532623b85b8c5bf68f5a6ac56506e80ffcdea13a34b0f",
+    "active_rule_ids": [
+      "light-connects-face-hand-and-object",
+      "contact-point-explains-material",
+      "keep-shadow-open-around-contact"
+    ],
+    "contexts": [
+      "user-requested-figure-handling-object"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested figure-object contact.",
+      "Preserve hand placement, face, object, material, and scene.",
+      "Connect attention and contact through one selective warm light path.",
+      "Review anatomy, object legibility, material response, and open shadow detail."
+    ],
+    "avoid": [
+      "making the object brighter or more important than the requested person",
+      "adding symbolic meanings, objects, or historical costume",
+      "using generic sepia overlays or clipping shadows to black"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "painted_image",
+      "representation": "stylized",
+      "description": "An optional direction for a user-requested figure holding or touching a small object. Use one restrained light path to connect the face, contact hand, and the object's material response, making the requested act of handling clear without making the object brighter than the human subject.",
+      "required_contexts": [
+        "user-requested-figure-handling-object"
+      ],
+      "incompatible_contexts": [
+        "no-figure-or-hand-object-contact",
+        "user-requested-dark-silhouette",
+        "exact-reconstruction-of-named-rembrandt-work"
+      ],
+      "limitations": [
+        "Use only when the user requests a figure holding or touching an object.",
+        "Preserve the specified object, hand, gesture, face, light source, and setting.",
+        "Keep the human figure as the primary subject; object highlights remain secondary.",
+        "Do not invent a symbolic or historical meaning for the object."
+      ]
+    },
+    "rules": [
+      {
+        "id": "light-connects-face-hand-and-object",
+        "axis": "focal-light-path",
+        "importance": "core",
+        "applies_when": "A figure holds or touches an object in the requested scene.",
+        "instruction": "Align the dominant light path across the face, the contact hand, and one material-specific accent on the requested object.",
+        "observable": "The viewer can follow the sitter's attention from face to gesture and identify the object without it becoming the brightest subject.",
+        "reject_when": "Face, hand, and object receive unrelated lighting or the object overwhelms the figure.",
+        "evidence": {
+          "source_ids": [
+            "rijksmuseum-rembrandt-jewish-bride"
+          ],
+          "basis": "direct_visual_observation",
+          "visual_review": "pending"
+        },
+        "avoid": "halo around the object or multiple competing highlight paths"
+      },
+      {
+        "id": "contact-point-explains-material",
+        "axis": "hand-object-material-response",
+        "importance": "core",
+        "applies_when": "The requested hand touches, holds, or presents an object.",
+        "instruction": "Keep finger placement anatomically clear and use a small local change in value or paint texture where the object's material meets the hand.",
+        "observable": "Contact, weight, and material can be read at a glance without adding detail to every surface.",
+        "reject_when": "Fingers float away from the object or the material is replaced by a generic glossy highlight.",
+        "evidence": {
+          "source_ids": [
+            "rijksmuseum-rembrandt-jewish-bride"
+          ],
+          "basis": "direct_visual_observation",
+          "visual_review": "pending"
+        },
+        "avoid": "added jewelry, decorative insignia, or unrequested object details"
+      },
+      {
+        "id": "keep-shadow-open-around-contact",
+        "axis": "warm-shadow-detail",
+        "importance": "supporting",
+        "applies_when": "A local light path is used in a dark interior or intimate scene.",
+        "instruction": "Preserve warm detail around the hand and object; reserve the deepest dark for areas that do not explain the contact or expression.",
+        "observable": "Hand, object, and nearby fabric remain distinguishable within the warm dark field.",
+        "reject_when": "The hand-object relation disappears into clipped black shadow.",
+        "evidence": {
+          "source_ids": [
+            "nga-rembrandt-old-lady-book"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform sepia tint or theatrical black background"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "hand-object-action-remains-human-led",
+        "rule_ids": [
+          "light-connects-face-hand-and-object",
+          "contact-point-explains-material",
+          "keep-shadow-open-around-contact"
+        ],
+        "instruction": "Use selective light to connect the user's requested face, hand gesture, and object while keeping material, contact, and warm shadows legible.",
+        "observable": "The object enriches the human action without displacing the person or inventing a narrative."
+      }
+    ],
+    "sources": [
+      {
+        "id": "rijksmuseum-rembrandt-jewish-bride",
+        "kind": "museum_collection_record",
+        "url": "https://www.rijksmuseum.nl/en/collection/object/Isaac-and-Rebecca-Known-as-The-Jewish-Bride--019c1265e6dbf108d4587ab2b7c02c66"
+      },
+      {
+        "id": "nga-rembrandt-old-lady-book",
+        "kind": "museum_research_record",
+        "url": "https://www.nga.gov/research/publications/dutch-paintings-seventeenth-century/rembrandt-van-rijn-old-lady-book-1637"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "c59c98988b4c2566755532623b85b8c5bf68f5a6ac56506e80ffcdea13a34b0f",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

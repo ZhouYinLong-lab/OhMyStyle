@@ -76,3 +76,7 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## Experimental direction: hand-object light path
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user requests a figure holding or touching an object. Use one selective warm light path to connect the face, contact hand, and the object's material response; keep the person primary and the surrounding shadows detailed. It does not assign symbolic meaning to the object. See [`comparisons/`](comparisons/README.md) for the generated study. This direction remains experimental.

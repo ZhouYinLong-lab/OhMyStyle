@@ -1,5 +1,5 @@
 package_id: rembrandt
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_images_verified
 source_policy: Historical works are bundled from public-domain reproductions; the generated example is an anonymous new scene.
 sources:
@@ -15,4 +15,9 @@ sources:
     authority: Rijksmuseum
     supports: public-domain status and material context for Rembrandt's oil painting
     accessed: 2026-08-06
+  - url: https://www.nga.gov/research/publications/dutch-paintings-seventeenth-century/rembrandt-van-rijn-old-lady-book-1637
+    authority: National Gallery of Art
+    title: Rembrandt van Rijn, An Old Lady with a Book, 1637
+    supports: Paint handling that articulates both form and patterns of light and dark.
+    accessed: 2026-10-19
 attribution: Historical works remain attributed to Rembrandt van Rijn and their source institutions. This package is independent and claims no affiliation.
