@@ -1,0 +1,107 @@
+schema_version: 2.0.0
+status: experimental
+id: sorolla-sunlit-oil
+name: 索罗亚：户外日光油画
+base_package: artists/joaquin-sorolla
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: 户外日光油画实践
+  required_contexts:
+  - daylight
+  incompatible_contexts:
+  - night
+  - photographic-output
+  limitations:
+  - 完全黑暗且没有受光面的场景，与本次日光方向的核心条件冲突。
+  - 无笔触的纯摄影成像，与本方向的油画制作语言冲突。
+pillars:
+- 光线与环境反射色共同组织可读的体块。
+- 快速而有方向的油画笔触承载形体与运动。
+- 鲜明局部颜色服从整体明暗分组。
+rules:
+- id: sorolla-light-structure
+  axis: lighting
+  importance: core
+  applies_when: 本方向选择日光任务，画面中存在可见的受光面与阴影面。
+  instruction: 以主要日光方向塑造体块，让环境反射影响暗面和过渡面。
+  observable: 同一对象的受光、暗面与反射色关系共同帮助读出结构。
+  reject_when: 只有整体偏暖或均匀发光，形体明暗和反射关系没有变化。
+  evidence:
+    source_ids:
+    - sorolla-national-gallery-technique
+    - sorolla-prado-boys-on-the-beach
+    basis: curatorial_inference
+    visual_review: pending
+  avoid: uniform warm wash or all-over glow
+- id: sorolla-directional-marks
+  axis: mark_making
+  importance: core
+  applies_when: 存在可辨认的物体表面或运动方向。
+  instruction: 用长短和厚薄有变化的笔触沿表面转折、折痕或运动组织，不将笔触均匀撒满画面。
+  observable: 焦点附近可用笔触读出转面，次要区域的细节被概括。
+  reject_when: 所有材质都被同密度短点覆盖，或整图变成无笔触的柔焦照片。
+  evidence:
+    source_ids:
+    - sorolla-national-gallery-technique
+    basis: curatorial_inference
+    visual_review: pending
+  avoid: uniform stippling or directionless brush noise
+- id: sorolla-value-grouping
+  axis: value
+  importance: core
+  applies_when: always
+  instruction: 先建立清楚的大明暗组，再放入局部亮色和选择性的高光。
+  observable: 灰阶缩略图仍能辨认主体和主要平面；局部亮色不会打散整体层级。
+  reject_when: 全画面平均提亮，或高饱和度细节取代了形体组织。
+  evidence:
+    source_ids:
+    - sorolla-national-gallery-technique
+    - sorolla-prado-boys-on-the-beach
+    basis: curatorial_inference
+    visual_review: pending
+  avoid: flattened all-bright values and scattered highlights
+- id: sorolla-selective-edges
+  axis: edges
+  importance: supporting
+  applies_when: 题材允许区分焦点与次要区域。
+  instruction: 在焦点的受光转折保留明确边缘，次要处允许松动与断续。
+  observable: 边缘清晰度有层级，主体轮廓无需整圈描黑仍然可读。
+  reject_when: 全部边缘同样锐利，或全部边缘被同样的雾化处理。
+  evidence:
+    source_ids:
+    - sorolla-national-gallery-technique
+    basis: curatorial_inference
+    visual_review: pending
+  avoid: uniform sharpness or uniform blur
+active_rule_ids:
+- sorolla-light-structure
+- sorolla-directional-marks
+- sorolla-value-grouping
+- sorolla-selective-edges
+joint_checks:
+- id: sorolla-form-light-mark-coherence
+  rule_ids:
+  - sorolla-light-structure
+  - sorolla-directional-marks
+  - sorolla-value-grouping
+  instruction: 让反射色、明暗组和笔触共同说明同一组体块，保持整体空间与主体可读。
+  observable: 反射色与明暗分组说明同一组体块，笔触沿这些体块转折；三者同时支持主体可读性。
+sources:
+- id: sorolla-national-gallery-technique
+  kind: institutional_analysis
+  base_asset_id: sorolla-national-gallery-technique
+- id: sorolla-prado-boys-on-the-beach
+  kind: collection_object_record
+  base_asset_id: sorolla-prado-boys-on-the-beach
+- id: sorolla-museum-plein-air
+  kind: institutional_analysis
+  base_asset_id: sorolla-museum-plein-air
+execution:
+  route: text_only
+  must:
+  - Preserve the requested objects, count, setting, and composition.
+  - Organize light, reflected color and directional oil marks coherently.
+  avoid:
+  - unrequested beach, boat, shoreline, or reference pose
+  - copied reference composition
