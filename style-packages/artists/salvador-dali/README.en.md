@@ -41,3 +41,7 @@ Configure the API key in your own image service or compiler and submit the base 
 ### Method 4: Local model + ComfyUI
 
 Connect the prompt, palette, and reproduction notes to a local model or ComfyUI workflow, then review realism, anomaly, subject preservation, and artifacts with `evaluation.yaml`.
+
+## Experimental direction: a second reading in the cast shadow
+
+The optional [`art-direction.yaml`](art-direction.yaml) activates only when the user explicitly asks for a subject's cast shadow to suggest a second form. Keep the physical object singular, intact, and near-realistic; the second reading exists only in its attached, directionally consistent shadow. It does not add a bird, statue, animal, or clock by default and does not reproduce a named double-image painting. See [`comparisons/`](comparisons/README.md) for a teapot and bird-shaped-shadow probe. This direction remains experimental.

@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "salvador-dali",
+    "name": "萨尔瓦多·达利",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\salvador-dali"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One small red enamel kettle with an arched handle and short spout on an ivory plinth; one strong lamp at upper left casts a single long shadow to the right on a warm pale wall. The user requests that this shadow subtly suggest the profile of a perched raven, but no actual bird is present. Horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: One small red enamel kettle with an arched handle and short spout on an ivory plinth; one strong lamp at upper left casts a single long shadow to the right on a warm pale wall. The user requests that this shadow subtly suggest the profile of a perched raven, but no actual bird is present. Horizontal 16:9.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new image of One small red enamel kettle with an arched handle and short spout on an ivory plinth; one strong lamp at upper left casts a single long shadow to the right on a warm pale wall. The user requests that this shadow subtly suggest the profile of a perched raven, but no actual bird is present. Horizontal 16:9. in an original surrealist painting language associated with Salvador Dalí. Preserve the user's subject, setting, action, and intended use. Keep the scene lucid and materially detailed, with stable perspective, precise surfaces, quiet negative space, clear daylight, and one or two restrained dream-logic disruptions involving scale, shadow, connection, or time. Make the anomaly feel deliberate and psychologically strange, not like a random list of surreal objects. This package transfers lucid realism and controlled transformation; it does not require clocks, desert, animals, portraits, or any fixed motif. Aspect ratio: the user-requested aspect ratio. Intended use: the user-requested use case.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not add melting clocks, desert, long-legged animals, moustached portrait, fixed surreal symbols, or copied artwork. No random object collage, excessive fog, neon glow, cyberpunk grading, generic fantasy concept art, unreadable text, logo, brand, or impossible perspective that destroys the user's subject.",
+  "template_variables": {
+    "SUBJECT": "One small red enamel kettle with an arched handle and short spout on an ivory plinth; one strong lamp at upper left casts a single long shadow to the right on a warm pale wall. The user requests that this shadow subtly suggest the profile of a perched raven, but no actual bird is present. Horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

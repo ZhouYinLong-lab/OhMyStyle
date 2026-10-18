@@ -1,0 +1,100 @@
+schema_version: 2.0.0
+status: experimental
+id: dali-double-reading-cast-shadow
+name: Dalí double reading in a cast shadow
+base_package: artists/salvador-dali
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    An optional optical direction for a user-requested single object and a
+    user-requested secondary silhouette. Keep the physical object intact and
+    near-realistic, while shaping its one attached cast shadow so it also suggests
+    the specified second reading. The double reading lives in the shadow only;
+    no second physical subject is added. This adapts a documented optical device
+    without copying a particular double-image painting.
+  required_contexts:
+    - user-requested-shadow-double-reading
+  incompatible_contexts:
+    - no-cast-shadow-requested
+    - multiple-light-sources-requested
+    - user-requested-abstract-only-rendering
+    - text-or-logo-reproduction
+  limitations:
+    - Activate only when the user explicitly requests an ordinary object and a second silhouette suggested by its cast shadow.
+    - Preserve the physical object's identity, count, material, silhouette, and recognizable details.
+    - Keep the second reading inside the shadow only; do not render it as a separate animal, person, object, or reflection.
+    - Maintain one coherent light direction and an attached shadow with plausible contact and perspective.
+    - Keep the shadow's secondary shape suggestive rather than so literal that the object appears physically transformed.
+    - Do not add melting clocks, deserts, ants, statues, or other familiar Dalí motifs unless the user requests them.
+pillars:
+  - Hold the requested object as a stable, near-realistic form with clear material detail.
+  - Let a single cast shadow carry one secondary silhouette through a limited contour change.
+  - Keep the shadow visibly attached to the object and consistent with one light source, even as its outline becomes ambiguous.
+rules:
+  - id: secondary-reading-stays-in-shadow
+    axis: double-image-localization
+    importance: core
+    applies_when: The user requests a cast shadow that suggests one specific second form.
+    instruction: Place the second reading wholly within the object's cast shadow; keep its cues in contour, width, and negative space rather than adding another physical form.
+    observable: At first glance the image contains one ordinary object; on closer inspection the attached shadow also suggests the user-specified second silhouette.
+    reject_when: A second bird, person, prop, or face appears outside the shadow, or the shadow fails to remain connected to the object.
+    evidence:
+      source_ids:
+        - dali-museum-double-image
+      basis: institutional_description
+      visual_review: pending
+    avoid: separate doubles, mirror reflections, hidden faces unrelated to the user request
+  - id: object-form-remains-intact
+    axis: primary-subject-stability
+    importance: core
+    applies_when: The shadow's outline is deliberately transformed.
+    instruction: Keep the object itself in its expected proportions, material, and silhouette; place the optical anomaly in the shadow contour rather than melting or fusing the object.
+    observable: The object is immediately identifiable and materially plausible, while the anomaly is localized to the projected shape.
+    reject_when: The object deforms to resemble the second form, loses a defining feature, or merges with the shadow.
+    evidence:
+      source_ids:
+        - dali-museum-double-image
+      basis: original_design_intent
+      visual_review: pending
+    avoid: melting objects, extra limbs or parts, morphing the object into the shadow's subject
+  - id: one-light-shadow-geometry
+    axis: cast_shadow_contact_and_direction
+    importance: supporting
+    applies_when: The scene uses a single dominant light source.
+    instruction: Keep the shadow's contact point, length, and direction consistent with one readable light source; use only the far contour or a limited internal notch to suggest the second silhouette.
+    observable: The shadow still reads as a projection attached to the object, despite its double interpretation.
+    reject_when: Several contradictory shadows appear or the second silhouette floats free of the object.
+    evidence:
+      source_ids:
+        - dali-museum-double-image
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: multiple light directions, detached shadow figures, decorative shadow clutter
+active_rule_ids:
+  - secondary-reading-stays-in-shadow
+  - object-form-remains-intact
+  - one-light-shadow-geometry
+joint_checks:
+  - id: stable-object-ambiguous-attached-shadow
+    rule_ids:
+      - secondary-reading-stays-in-shadow
+      - object-form-remains-intact
+      - one-light-shadow-geometry
+    instruction: Preserve one recognizable object under one coherent light source, and keep the user-requested second silhouette perceptible only in its attached cast shadow.
+    observable: The image remains a lucid still life until the viewer notices the shadow's second reading; no separate secondary object is present.
+sources:
+  - id: dali-museum-double-image
+    kind: museum_collection_description
+    url: https://thedali.org/dalis-masterwork-a-closer-look/
+execution:
+  route: text_only
+  must:
+    - Activate only when the user requests a second reading in an object's cast shadow.
+    - Preserve the physical object as one intact subject.
+    - Keep the secondary shape inside a single attached, directionally consistent shadow.
+    - Review object identity, shadow contact, light direction, and whether a second physical entity was accidentally added.
+  avoid:
+    - adding unrequested animals, people, objects, clocks, or landscapes
+    - morphing the physical object to match the shadow's second reading
+    - copying a named painting's imagery, geometry, or composition

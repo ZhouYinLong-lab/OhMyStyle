@@ -7,6 +7,10 @@ sources:
     title: 'Salvador Dalí'
     authority: 'The Museum of Modern Art'
     supports: source traceability and package scope
+  - url: 'https://thedali.org/dalis-masterwork-a-closer-look/'
+    title: "Dalí's Masterworks: A Closer Look"
+    authority: The Dalí Museum
+    supports: Museum discussion of a second image emerging from shadows; used only for a shadow-based double-reading rule.
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:

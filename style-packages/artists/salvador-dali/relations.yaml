@@ -1,14 +1,13 @@
 family: surrealist-dream-realism
 near_duplicates:
-  - movements/surrealism
+  - surrealism
 complements:
   - artists/giorgio-de-chirico
   - photographers/gregory-crewdson
 same_family:
   - artists/leonora-carrington
 supersedes: []
-conflicts:
-  - presets/aurora-gradient-grain
+conflicts: []
 distinctives:
   - lucid realistic surface carrying a limited dream-logic disruption
   - precise material detail and readable perspective
