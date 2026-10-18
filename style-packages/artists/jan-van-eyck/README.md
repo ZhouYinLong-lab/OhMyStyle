@@ -28,6 +28,18 @@
 - `evaluation.yaml`：生成后的检查标准
 - `references/manifest.csv`、`provenance.yaml`：来源和权利边界
 
+## 新架构：釉层与材质光感（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 只在用户指定油画静物或近景材质研究，并显式声明 `glazed-material-observation` 时启用。它把不同材质在同一光源下的高光形状、边缘软硬、透明釉层的使用范围和细节密度写成可检查规则；不默认添加室内、镜子、人物、题字或象征物。
+
+该方向的识别重点是材质各自如何接光，以及薄层颜色如何增加深度。它与苏巴朗方向的暗背景、强侧光和孤立静物不同，也不要求维米尔式的几何室内空间与窗光构图；凡·艾克方向关注多个物件之间细微但可辨的表面反应和选择性细节。
+
+```powershell
+python tools/compile-style.py style-packages/artists/jan-van-eyck --direction package --context glazed-material-observation --subject "A small green glass bottle, a folded cream linen cloth, and a tarnished brass key on a pale wooden tabletop, softly lit by a nearby window"
+```
+
+[`comparisons/`](comparisons/) 保存同题旧版与新方向 job、生图提示词和样图。当前样图里，新版玻璃和黄铜的高光更窄，亚麻和木面的明暗变化更柔和，细节也更集中；独立生成未固定随机种子，不是控制变量实验，差异不能视作所有模型下的必然效果。方向保持实验状态，等待视觉评审。
+
 ## 来源与版权
 
 参考资料只用于研究和分析。外部作品、摄影作品、游戏画面、商标和平台页面仍归原权利人所有。生成示例是新的匿名场景，不是相关艺术家、摄影师、流派、学校或游戏的原作，也不代表合作、授权或背书关系。

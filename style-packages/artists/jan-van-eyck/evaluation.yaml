@@ -1,5 +1,16 @@
 package_id: jan-van-eyck
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  glazed-material-observation:
+    required:
+      - requested objects and their material identities remain intact
+      - highlights and edge sharpness differ by material rather than sharing one gloss
+      - thin color layers deepen selected passages without obscuring their base color
+      - fine detail is selective and supports form, light, or material
+    reject_if:
+      - every surface receives the same mirror-like shine
+      - unrequested mirrors, inscriptions, figures, or symbolic props are introduced
+      - detail density becomes uniform noise across focal and secondary areas
 invariants:
 - id: style_recognition
   weight: 3

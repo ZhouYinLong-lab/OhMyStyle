@@ -1,0 +1,102 @@
+schema_version: 2.0.0
+status: experimental
+id: van-eyck-glazed-material-observation
+name: Van Eyck glazed material observation
+base_package: artists/jan-van-eyck
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    A context-specific direction for requested still lifes or close views with
+    several distinct materials. It uses thin translucent color layers, carefully
+    differentiated light responses, and selective fine marks to make each
+    material readable. It does not require an interior, mirror, portrait, or
+    symbolic object.
+  required_contexts:
+    - glazed-material-observation
+  incompatible_contexts:
+    - flat-color-graphic
+    - monochrome-etching
+    - uniform-gloss-render
+  limitations:
+    - Apply only when the user requests an oil-painted still life or close view with distinguishable materials.
+    - Preserve the user's exact objects, count, setting, lighting, and framing.
+    - Do not add mirrors, inscriptions, people, religious signs, or symbolic props unless requested.
+    - Do not reproduce a named portrait, room, reflected figure, or exact object arrangement.
+pillars:
+  - Match each requested surface to its light response, using sharp controlled accents for polished glass or metal, broader transitions for cloth or wood, and restrained transparency for glass.
+  - Build selected color depth through thin translucent layers while leaving the material's underlying color and structure legible.
+  - Concentrate precise small marks where they explain a highlight, fold, grain, or edge; allow secondary areas to stay quieter.
+  - Keep natural light coherent across every object, with detail and contrast serving form rather than decorative hyperrealism.
+rules:
+  - id: material-specific-light-response
+    axis: lighting_and_surface
+    importance: core
+    applies_when: The requested scene contains at least two visibly different materials.
+    instruction: Give each requested material its own highlight shape, edge softness, and reflection behavior under the same light source; keep polished highlights small and controlled, and let softer materials transition gradually.
+    observable: Glass, metal, cloth, and wood can be distinguished by their highlight and edge behavior without changing the user's object inventory.
+    reject_when: Every surface has the same gloss, or reflections invent shapes that do not belong to the scene.
+    evidence:
+      source_ids:
+        - national-gallery-van-eyck-technique
+        - national-gallery-portrait-of-man
+      basis: institutional_description
+      visual_review: pending
+    avoid: plastic gloss on all objects, fake mirror reflections, and hard outlines around every form
+  - id: translucent-color-layering
+    axis: medium_and_color
+    importance: core
+    applies_when: The requested image uses oil-paint handling and benefits from layered color depth.
+    instruction: Use restrained thin translucent layers to deepen selected reds, greens, browns, and shadows; preserve the underlying value structure and avoid turning the whole image into a luminous glaze effect.
+    observable: Color has depth in selected passages while the object forms and light direction remain clear.
+    reject_when: Layers muddy local colors, hide structure, or create uniform glow.
+    evidence:
+      source_ids:
+        - national-gallery-van-eyck-technique
+      basis: institutional_description
+      visual_review: pending
+    avoid: global varnish filter, neon saturation, and opaque airbrushed gradients
+  - id: selective-fine-mark-hierarchy
+    axis: detail_and_edge
+    importance: supporting
+    applies_when: The user requests a close view or objects whose form depends on fine surface detail.
+    instruction: Place small precise marks only where they describe a material cue, fold, edge, or light catch; reduce their density on secondary objects and background.
+    observable: Fine marks clarify a few focal details while larger planes remain calm and readable.
+    reject_when: Every surface has equal microdetail or small marks become random noise.
+    evidence:
+      source_ids:
+        - national-gallery-portrait-of-man
+      basis: institutional_description
+      visual_review: pending
+    avoid: all-over stippling, invented writing, and copied portrait detail
+active_rule_ids:
+  - material-specific-light-response
+  - translucent-color-layering
+  - selective-fine-mark-hierarchy
+joint_checks:
+  - id: distinct-surfaces-with-economical-detail
+    rule_ids:
+      - material-specific-light-response
+      - translucent-color-layering
+      - selective-fine-mark-hierarchy
+    instruction: Make requested materials distinct through light behavior and selective layered detail while preserving the exact scene, counts, and lighting supplied by the user.
+    observable: Each material reads differently; glazes deepen rather than obscure; fine marks remain selective; no signature prop or narrative is added.
+sources:
+  - id: national-gallery-van-eyck-technique
+    kind: museum_artist_analysis
+    url: https://www.nationalgallery.org.uk/artists/jan-van-eyck
+  - id: national-gallery-portrait-of-man
+    kind: museum_collection_analysis
+    url: https://www.nationalgallery.org.uk/paintings/jan-van-eyck-portrait-of-a-man-self-portrait
+execution:
+  route: text_only
+  must:
+    - Declare glazed-material-observation only for a requested oil-painted still life or close material study.
+    - Preserve the user's objects, count, setting, lighting, and framing.
+    - Differentiate material highlights and use translucent color layers selectively.
+    - Keep the finest marks localized to useful material evidence.
+  avoid:
+    - automatically adding an interior, convex mirror, portrait, inscription, or religious object
+    - applying the same gloss or microtexture to every material
+    - replacing requested lighting with dramatic chiaroscuro
+    - reproducing a named painting or recognizable arrangement

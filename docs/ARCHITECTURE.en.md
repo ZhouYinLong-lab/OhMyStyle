@@ -192,6 +192,7 @@ the same prompt wording.
 | [Courbet tactile matter and grounded scale](../style-packages/artists/gustave-courbet/art-direction.yaml) | Unidealized subject, material-congruent impasto, and weight-bearing ground | `text_only`, declare `tactile-material-realism` |
 | [Seurat measured composition and divided-color marks](../style-packages/artists/georges-seurat/art-direction.yaml) | Stable silhouettes, deliberate intervals, plane-sensitive separated marks, and optical light | `text_only`, declare `measured-chromatic-composition` |
 | [Aivazovsky radiant sea light and wave direction](../style-packages/artists/ivan-aivazovsky/art-direction.yaml) | Broken reflection path, direction-sensitive water marks, and atmospheric sea-sky depth | `text_only`, declare `radiant-sea-light-path` |
+| [Van Eyck glazing and material-specific light](../style-packages/artists/jan-van-eyck/art-direction.yaml) | Distinct material highlights under shared light, selective translucent layers, and localized detail | `text_only`, declare `glazed-material-observation` |
 
 ## 6. Execution routes
 

@@ -97,6 +97,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [库尔贝物质笔触与地面重量](../../style-packages/artists/gustave-courbet/art-direction.yaml) | 不理想化主体、材料对应的厚涂笔触与稳固地面关系 | text_only | tactile-material-realism |
 | [修拉测量式构图与分色笔触](../../style-packages/artists/georges-seurat/art-direction.yaml) | 稳定剪影、物件间距、随平面变化的分色笔触与光色关系 | text_only | measured-chromatic-composition |
 | [艾瓦佐夫斯基水面光路与浪向](../../style-packages/artists/ivan-aivazovsky/art-direction.yaml) | 断续反光路径、随水面方向变化的笔触、海天空气透视 | text_only | radiant-sea-light-path |
+| [凡·艾克釉层与材质光感](../../style-packages/artists/jan-van-eyck/art-direction.yaml) | 同一光源下区分材质高光、局部薄层叠色、选择性细节 | text_only | glazed-material-observation |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

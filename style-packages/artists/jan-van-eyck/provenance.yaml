@@ -1,9 +1,19 @@
 package_id: jan-van-eyck
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_backed_link_only
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
 sources:
+- url: https://www.nationalgallery.org.uk/artists/jan-van-eyck
+  authority: National Gallery London
+  title: Jan van Eyck
+  supports: translucent oil glazes, natural light, and finely observed surface effects
+  accessed: '2026-10-19'
+- url: https://www.nationalgallery.org.uk/paintings/jan-van-eyck-portrait-of-a-man-self-portrait
+  authority: National Gallery London
+  title: Portrait of a Man (Self Portrait?)
+  supports: selective small paint dabs, material-specific folds, and light-catching surface detail
+  accessed: '2026-10-19'
 - url: https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait
   authority: National Gallery London
   title: The Arnolfini Portrait
