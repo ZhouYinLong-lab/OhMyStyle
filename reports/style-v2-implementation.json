@@ -3,11 +3,13 @@
   "baseline_tag": "style-v1-snapshot-2026-10-18",
   "baseline_commit": "59d9aa10ee9eeaedf3b815688d00f3e553ef31ea",
   "implementation_branch": "codex/style-pack-v2",
+  "now_integrated_on": "main",
   "completed_operations": "Compiled three opt-in direction jobs and rasterized the existing cave source once.",
   "compiled_jobs": [
     {
       "job_file_local_ignored": "runs/style-v2/sorolla-job.json",
       "direction": "experiments/style-v2/sorolla-sunlit-oil/direction.yaml",
+      "current_canonical_location": "style-packages/artists/joaquin-sorolla/art-direction.yaml",
       "direction_sha256": "86f09613d2c2b2fcd15108dcf5b25ba75562db01dd86a504ad17e3158c721a29",
       "job_type": "style_render",
       "prompt_sha256": "5d4d877d6bdb12ca35c716ea98a84b3f1d1af4094e82470eec889b7c6fb2253a",

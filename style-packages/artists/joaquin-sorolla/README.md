@@ -25,6 +25,7 @@
 
 - `identity.yaml`：范围、主体开放策略和排除项
 - `visual-signature.yaml`：跨主题保持的视觉特征
+- `art-direction.yaml`：可选新版规则；当前仍为实验状态，需显式使用 `--direction package`，默认编译行为不变
 - `reproduction.yaml`：从大色块到局部笔触的构建顺序
 - `prompts/base.txt`、`prompts/negative.txt`：基础提示与负面约束
 - `palette/palette.json`：颜色角色与色值
@@ -41,5 +42,13 @@
 ## 使用
 
 将 `{SUBJECT}`、`{LOCATION}` 和 `{SUBJECT_ACTION}` 替换为你的需求，并把基础提示、负面约束与调色板一并交给图像工作流。风格包控制媒介和视觉处理，不应擅自增加海滩、船只、帆布或固定叙事。
+
+试用新版方向规则时，先声明其适用上下文，再显式编译：
+
+```powershell
+python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction package --context daylight --subject "午后日光下的庭院木椅，无人物、无水面" --output runs/sorolla-v2-job.json
+```
+
+该方向还未完成生图对照评审，普通编译仍使用旧版路径。
 
 每次生成后，按 `evaluation.yaml` 检查主体是否按要求呈现、日光和反射色是否参与形体塑造，以及笔触是否沿着材料和运动方向组织。不要只看颜色是否明亮。

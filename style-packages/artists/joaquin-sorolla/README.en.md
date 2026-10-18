@@ -25,6 +25,7 @@ It does not make beaches, sailboats, or figures mandatory subjects. The style pa
 
 - `identity.yaml`: scope, open-subject policy, and exclusions
 - `visual-signature.yaml`: visual traits that survive a subject change
+- `art-direction.yaml`: optional experimental rules, enabled explicitly with `--direction package`; default compilation is unchanged
 - `reproduction.yaml`: construction from broad color masses to selected strokes
 - `prompts/base.txt`, `prompts/negative.txt`: base prompt and negative constraints
 - `palette/palette.json`: color roles and values
@@ -41,5 +42,13 @@ The representative image is an anonymous new scene created with an image-generat
 ## Use
 
 Replace `{SUBJECT}`, `{LOCATION}`, and `{SUBJECT_ACTION}` with your request, then provide the base prompt, negative constraints, and palette to your image workflow. The package controls medium and visual treatment; it should not add a beach, boat, sail, or fixed narrative unless requested.
+
+To try the new direction rules, declare their applicable context and explicitly compile them:
+
+```powershell
+python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction package --context daylight --subject "A courtyard chair in afternoon daylight, no people or water" --output runs/sorolla-v2-job.json
+```
+
+This direction has not completed image comparison review. Ordinary compilation continues to use the legacy path.
 
 After generation, use `evaluation.yaml` to check the requested subject, the role of direct and reflected light in form, and whether brush marks follow material and movement. Do not judge the result only by how bright its colors are.
