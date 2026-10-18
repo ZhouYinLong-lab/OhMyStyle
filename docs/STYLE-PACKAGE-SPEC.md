@@ -27,6 +27,7 @@ and an explicit compiler option; see the [pilot guide](../experiments/style-v2/R
 style-packages/<category>/<style-id>/
 ├── README.md
 ├── package.yaml
+├── art-direction.yaml           # optional, explicitly compiled v2 rules
 ├── identity.yaml
 ├── visual-signature.yaml
 ├── reproduction.yaml
@@ -67,6 +68,12 @@ AI-Visual-Prompt-Cookbook format. They are not silently converted because the
 new package format has a different purpose and adds provenance, technical
 parameters, and evaluation evidence. New executable packages should use
 `package.yaml` and the schema in [`schema/package.schema.json`](../schema/package.schema.json).
+
+A package may register a v2 direction file as `files.art_direction` in
+`package.yaml`. The optional field preserves existing manifests. It does not
+change legacy compilation; select the registered file explicitly with
+`python tools/compile-style.py <package> --direction package --subject "..."`.
+See the [architecture guide](ARCHITECTURE.md#v2-direction).
 
 ## Versioning
 

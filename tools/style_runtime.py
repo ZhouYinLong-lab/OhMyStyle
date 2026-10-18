@@ -220,12 +220,22 @@ def compile_job(
     reference_set: str = "palette",
     model: str = "provider-neutral",
     variables: dict[str, str] | None = None,
-    direction_path: Path | None = None,
+    direction_path: Path | str | None = None,
     direction_contexts: list[str] | None = None,
 ) -> dict[str, Any]:
     runtime = load_package(package_path)
     if direction_path is not None:
         from art_direction_runtime import compile_direction_job
+
+        if isinstance(direction_path, str) and direction_path == "package":
+            relative = runtime["package"].get("files", {}).get("art_direction")
+            if not relative:
+                raise ValueError("The selected package does not declare files.art_direction")
+            direction_path = safe_package_file(
+                runtime["root"], relative, label="package files.art_direction"
+            )
+        elif isinstance(direction_path, str):
+            direction_path = Path(direction_path)
 
         return compile_direction_job(
             runtime, direction_path, subject, contexts=direction_contexts,

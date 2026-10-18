@@ -18,7 +18,10 @@ def main() -> None:
     parser.add_argument("--profile", choices=("generic", "weak"), default="generic")
     parser.add_argument("--model", default="provider-neutral")
     parser.add_argument("--var", action="append", default=[], metavar="KEY=VALUE", help="Fill a package prompt variable; repeatable")
-    parser.add_argument("--direction", type=Path, help="Explicit experimental art-direction file or directory")
+    parser.add_argument(
+        "--direction",
+        help="Explicit art-direction file or directory; use 'package' to select files.art_direction from the package manifest",
+    )
     parser.add_argument("--context", action="append", default=[], help="Declare a direction context, e.g. daylight; repeatable")
     parser.add_argument(
         "--references",
@@ -33,6 +36,9 @@ def main() -> None:
             parser.error(f"--var must use KEY=VALUE: {assignment}")
         key, value = assignment.split("=", 1)
         variables[key.strip()] = value
+    direction_path = None
+    if args.direction:
+        direction_path = "package" if args.direction == "package" else Path(args.direction)
     try:
         job = compile_job(
             args.package,
@@ -42,7 +48,7 @@ def main() -> None:
             reference_set=args.references or ("none" if args.direction else "palette"),
             model=args.model,
             variables=variables,
-            direction_path=args.direction,
+            direction_path=direction_path,
             direction_contexts=args.context,
         )
     except (OSError, ValueError) as error:

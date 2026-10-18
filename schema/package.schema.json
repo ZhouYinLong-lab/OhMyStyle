@@ -57,7 +57,8 @@
         "prompts": {"type": "string"},
         "evaluation": {"type": "string"},
         "references": {"type": "string"},
-        "provenance": {"type": "string"}
+        "provenance": {"type": "string"},
+        "art_direction": {"type": "string"}
       }
     }
   }

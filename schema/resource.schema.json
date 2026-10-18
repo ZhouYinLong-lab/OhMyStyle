@@ -36,6 +36,7 @@
       "required": ["package", "identity", "visual_signature", "reproduction", "evaluation", "references", "provenance", "prompt", "accepted_examples", "rejected_examples"],
       "properties": {
         "package": {"type": "string", "minLength": 1},
+        "art_direction": {"type": "string", "minLength": 1},
         "identity": {"type": "string", "minLength": 1},
         "visual_signature": {"type": "string", "minLength": 1},
         "reproduction": {"type": "string", "minLength": 1},
