@@ -1,13 +1,29 @@
 package_id: impressionism
 research_basis:
-- title: Impressionism
-  creator: Various artists
-  period: 19世纪后期
-  source_url: https://commons.wikimedia.org/w/index.php?search=Impressionism+painting&title=Special:MediaSearch&type=image
-  role: style research
+  - title: Impressionism
+    creator: Various artists
+    period: 19世纪后期
+    source_url: https://commons.wikimedia.org/w/index.php?search=Impressionism+painting&title=Special:MediaSearch&type=image
+    role: style research
+  - title: "Impressionism: Art and Modernity"
+    creator: The Metropolitan Museum of Art
+    period: 2004
+    source_url: https://www.metmuseum.org/pt/essays/impressionism-art-and-modernity
+    role: institutional movement analysis; broken brushwork, unblended colors, light effects, modernity, and variation among artists
+  - title: Guide to Impressionism
+    creator: National Gallery, London
+    period: current collection guide
+    source_url: https://www.nationalgallery.org.uk/paintings/learn-about-art/guide-to-impressionism?viewPage=1
+    role: institutional overview of rapid brushwork, bright colors, outdoor painting, landscape, and modern urban subjects
+  - title: "Paris 1874: Inventing Impressionism"
+    creator: Musée d'Orsay
+    period: 2024
+    source_url: https://www.musee-orsay.fr/en/node/278990
+    role: exhibition context and shared pursuit of fleeting impressions before the motif
 generated_assets:
-- path: gallery-16x9.jpg
-  description: New anonymous representative image
-  rights: Generated demonstration; not a source artwork
-redistribution: Do not redistribute external source works unless their rights are
-  independently verified. Preserve this attribution and package license.
+  - path: gallery-16x9.jpg
+    description: New anonymous representative image
+    rights: Generated demonstration; not a source artwork
+redistribution: >-
+  Do not redistribute external source works unless their rights are independently
+  verified. Preserve this attribution and package license.

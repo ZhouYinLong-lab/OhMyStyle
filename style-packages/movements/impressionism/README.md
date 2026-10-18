@@ -18,9 +18,26 @@
 
 完整规则见 `visual-signature.yaml`、`reproduction.yaml`、`palette/palette.json` 和 `evaluation.yaml`。
 
+## 新版方向（实验）
+
+`art-direction.yaml` 描述印象主义作为一个**流派层级**的共享方法：快速可见的绘画动作、受光线影响的局部颜色、带有色彩的阴影，以及即时但经过安排的构图。它不规定所有画家使用同一种笔触，也不把点彩画法自动当作印象主义的标准答案。
+
+这与莫奈个人包不同：莫奈包聚焦某一位画家的天气观察、系列母题与远近空气变化；本包只保留多位参与者共有的技法倾向，并允许题材与构图变化。它也不同于索罗亚包的强方向日光与明确反射光，以及新印象主义的系统分点排列。需要特定画家时，应选择对应艺术家包。
+
+新版规则尚处实验状态，需显式启用；不传 `--direction` 时，仍使用已有提示词：
+
+```powershell
+python tools/compile-style.py style-packages/movements/impressionism --direction package --context daylight --subject "A neighborhood street market after rain, vendors arranging crates, muted spring daylight" --output runs/impressionism-v2-job.json
+```
+
+评审时至少比较三种不同主体，并改变光照条件；确认快速笔触与局部光色仍可见，同时没有自动长出睡莲、舞者、咖啡馆等艺术家个人母题。
+
 ## 参考来源
 
 - [Various artists / 19世纪后期](https://commons.wikimedia.org/w/index.php?search=Impressionism+painting&title=Special:MediaSearch&type=image)
+- [The Metropolitan Museum of Art: Impressionism: Art and Modernity](https://www.metmuseum.org/pt/essays/impressionism-art-and-modernity)
+- [National Gallery, London: Guide to Impressionism](https://www.nationalgallery.org.uk/paintings/learn-about-art/guide-to-impressionism?viewPage=1)
+- [Musée d'Orsay: Paris 1874, Inventing Impressionism](https://www.musee-orsay.fr/en/node/278990)
 
 ## 来源与版权
 
@@ -42,6 +59,7 @@
 请先读取本目录中的：
 - identity.yaml
 - visual-signature.yaml
+- art-direction.yaml（如需启用新版规则）
 - reproduction.yaml
 - prompts/base.txt
 - prompts/negative.txt
@@ -49,6 +67,7 @@
 - evaluation.yaml
 
 请把这些文件中的规则整合到生成流程中，不要只把风格名称当作 Prompt，也不要复制参考作品。
+使用新版方向时，请保留流派层级的共享方法，不要擅自套用某一位画家的标志母题或构图。
 
 我的生成需求是：
 <填写人物、物体、场景、画幅和用途>

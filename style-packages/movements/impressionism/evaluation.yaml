@@ -1,19 +1,22 @@
 package_id: impressionism
-package_version: 0.1.0
+package_version: 0.2.0
 invariants:
 - id: signature
   weight: 3
-  test: 瞬时光、破碎笔触、反射色与户外空气
+  test: The chosen light or atmosphere visibly affects local colors; marks remain visible and responsive to the subject rather than uniform decorative texture.
 - id: new_arrangement
   weight: 3
   test: The subject and composition are not a recognizable reconstruction.
 - id: material_readability
   weight: 2
-  test: The requested medium or capture behavior remains visible.
+  test: Oil-paint handling remains visible, but the result avoids a single named artist's signature or a mechanically regular pointillist system.
 rejections:
 - copied_named_work
 - global_generic_filter
 - unreadable_subject
+- mechanically_regular_pointillism
+- single_artist_motif_template
+- smooth_digital_blur
 minimum_score: 8
 semantic_evaluation:
   subject_independence:
@@ -21,13 +24,13 @@ semantic_evaluation:
     notes: Pending provider-backed neutral-subject review.
   distinctive_signature:
     score: null
-    notes: Record which visual decisions remain observable after the subject changes.
+    notes: Check for visible rapid marks, color-bearing light and shadow, and a coherent overall impression across at least three unrelated subjects.
   visual_overlap:
     score: null
-    notes: Compare the representative image and output with near-duplicate packages.
+    notes: Distinguish this broad movement-level direction from Monet's serial weather observation, Sorolla's strong directional sun and sourced bounce light, Seurat's systematic pointillist method, and Post-Impressionist structural or symbolic color.
   cross_subject_stability:
     score: null
-    notes: Run at least two different subjects before assigning a score.
+    notes: Run at least three different subject classes and more than one lighting condition; do not judge the movement from a single landscape-only sample.
 image_audit:
   similarity_level: review
   method: perceptual hash, color histogram, luminance, texture, and layout; screening only
