@@ -38,7 +38,7 @@ image_audit:
   action: clarify_distinctive_signature
 subject_independence_suite:
   status: pending
-  fixture: benchmarks/subject-independence.yaml
+  fixture: benchmark/benchmark.yaml
   required_subjects:
     - ordinary-chair
     - unspecified-building

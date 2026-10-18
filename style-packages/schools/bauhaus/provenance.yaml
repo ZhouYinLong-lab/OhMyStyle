@@ -1,5 +1,5 @@
 package_id: bauhaus
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: independent_demo_with_public_reference_links
 source_policy: Public pages are used to research observable traits. No source artwork or commercial screenshot is bundled. The included representative image and accepted example are newly generated anonymous scenes.
 sources:
@@ -11,4 +11,12 @@ sources:
     authority: MoMA 包豪斯收藏检索
     supports: 用于观察几何、功能与媒介关系的公开作品资料。
     accessed: 2026-08-07
+  - url: https://bauhaus-dessau.de/en/visit/groups/offers-for-students/
+    authority: Stiftung Bauhaus Dessau
+    supports: Josef Albers preliminary-course paper exercises; cutting, tearing, and folding without glue
+    accessed: 2026-10-19
+  - url: https://bauhaus-dessau.de/mediathek/uebungen/
+    authority: Stiftung Bauhaus Dessau
+    supports: paper exercises based on Bauhaus preliminary-course methods, cutting, creasing, stable constructions, and material economy
+    accessed: 2026-10-19
 attribution: This independent package describes observable traits associated with Bauhaus; it is not affiliated with any referenced institution, artist, studio, or rights holder.

@@ -162,7 +162,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | 方向 | 核心视觉关系 | 执行路线 |
 | --- | --- | --- |
 | [索罗亚日光油画](../style-packages/artists/joaquin-sorolla/art-direction.yaml) | 日光、反射色、明暗组和随形笔触 | `text_only`，声明 `daylight` |
-| [包豪斯纸材方法](../experiments/style-v2/bauhaus-paper-study/direction.yaml) | 切、撕、折与支撑、开口和投影 | `text_only`，声明 `paper-study` |
+| [包豪斯纸材方法](../style-packages/schools/bauhaus/art-direction.yaml) | 切、撕、折与支撑、开口和投影 | `text_only`，声明 `paper-study` |
 | [严格 ASCII 网格](../experiments/style-v2/literal-ascii-grid/direction.yaml) | 真实字符、统一单元格、密度与留白 | `deterministic_grid` |
 
 ## 6. 从主体请求到结果

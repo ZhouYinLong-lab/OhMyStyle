@@ -14,7 +14,7 @@ An art style package connects **scope and intent → visual rules → references
 
 See the **[art style package architecture guide](docs/ARCHITECTURE.en.md)** for artifact responsibilities, rule examples, compilation paths, literal ASCII constraints, and review.
 
-The current `main` includes the new architecture pilots and is the branch for continued development. Existing formal packages can register new directions one at a time and opt in explicitly; packages without a registered direction keep the legacy path. Sorolla is the first registered pilot; the Bauhaus paper method and literal ASCII grid remain in the experiment directory. See the [v2 pilot guide (Chinese)](experiments/style-v2/README.md). Image comparison reviews remain pending. The old version is preserved on branch `codex/style-v1-preserved` and tag `style-v1-snapshot-2026-10-18`.
+The current `main` includes the new architecture pilots and is the branch for continued development. Existing formal packages can register new directions one at a time and opt in explicitly; packages without a registered direction keep the legacy path. Sorolla daylight and the Bauhaus paper method are registered as optional experimental directions in their formal packages; the literal ASCII grid remains in the experiment directory. See the [v2 pilot guide (Chinese)](experiments/style-v2/README.md). Image comparison reviews remain pending. The old version is preserved on branch `codex/style-v1-preserved` and tag `style-v1-snapshot-2026-10-18`.
 
 <a id="style-package-gallery"></a>
 

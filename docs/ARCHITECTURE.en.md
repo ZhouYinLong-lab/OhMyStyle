@@ -108,7 +108,7 @@ Retrieval flattens visual signature content into search terms. An Agent reading 
 
 ## 5. v2 pilots: explicitly selected directions
 
-v2 keeps the formal package and registers an optional `art_direction` artifact. A direction may live in an experiment folder until it is ready to register, as the Bauhaus and ASCII pilots do. Sorolla is the first formal package with an explicitly enabled experimental direction. The library is not automatically converted.
+v2 keeps the formal package and registers an optional `art_direction` artifact. A direction may live in an experiment folder until it is ready to register. Sorolla and Bauhaus now register optional experimental directions in their formal packages; the ASCII pilot remains in the experiment folder. The library is not automatically converted.
 
 | Field | Responsibility |
 | --- | --- |
@@ -148,7 +148,7 @@ the same prompt wording.
 | Pilot | Main relationships | Route |
 | --- | --- | --- |
 | [Sorolla sunlit oil](../style-packages/artists/joaquin-sorolla/art-direction.yaml) | Daylight, reflected color, value groups, directional marks | `text_only`, declare `daylight` |
-| [Bauhaus paper method](../experiments/style-v2/bauhaus-paper-study/direction.yaml) | Cutting, tearing, folding, supports, openings, shadows | `text_only`, declare `paper-study` |
+| [Bauhaus paper method](../style-packages/schools/bauhaus/art-direction.yaml) | Cutting, tearing, folding, supports, openings, shadows | `text_only`, declare `paper-study` |
 | [Literal ASCII grid](../experiments/style-v2/literal-ascii-grid/direction.yaml) | Real glyphs, fixed cells, density, negative space | `deterministic_grid` |
 
 ## 6. Execution routes

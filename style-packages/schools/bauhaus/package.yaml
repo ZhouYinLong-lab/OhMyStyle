@@ -2,7 +2,7 @@ id: bauhaus
 name: 包豪斯
 kind: school
 domain: design
-version: 0.1.0
+version: 0.2.0
 summary: Emphasizes geometric order, basic forms, primary-color relationships, functional structure, and
   negative space across graphic, spatial, product, and abstract compositions without copying a specific
   design.
@@ -16,6 +16,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: design_school
   medium: design

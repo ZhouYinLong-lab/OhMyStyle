@@ -1,0 +1,90 @@
+schema_version: 2.0.0
+status: experimental
+id: bauhaus-paper-study
+name: Bauhaus preliminary-course paper study
+base_package: schools/bauhaus
+scope:
+  medium: paper_construction
+  representation: stylized
+  description: A contemporary visual translation of paper exercises associated with Josef Albers's Bauhaus preliminary course; this direction describes one teaching method, not a unified Bauhaus look.
+  required_contexts:
+    - paper-study
+  incompatible_contexts:
+    - oil-painting
+    - physical-certification
+  limitations:
+    - Do not use this direction when the requested medium must remain pure painting or photography.
+    - A generated image cannot certify that a paper construction is physically buildable, foldable, or load-bearing.
+pillars:
+  - Form and space emerge from the processing and structural relationships of paper.
+  - Explore material with a small number of clear operations; do not use a school name as a substitute for a design method.
+  - Negative space, openings, and cast shadows explain folds and support.
+rules:
+  - id: paper-form-from-operations
+    axis: process
+    importance: core
+    applies_when: always
+    instruction: Develop the form through explicit cutting, tearing, and folding operations, keeping their legible traces.
+    observable: Folds, cuts, and paper continuity explain how the main volumes were formed.
+    reject_when: The result is a generic modernist sculpture with decorative folds that do not explain its form.
+    evidence:
+      source_ids:
+        - bauhaus-dessau-paper-course
+      basis: institutional_description
+      visual_review: pending
+    avoid: decorative fold marks unrelated to construction
+  - id: paper-material-economy
+    axis: form
+    importance: core
+    applies_when: always
+    instruction: Organize the structure with little paper and clear connections; every added piece must have a function.
+    observable: Supports, contacts, and turns can be traced between the overall view and structural details.
+    reject_when: Connections float without contact, or hidden supports conceal structural problems.
+    evidence:
+      source_ids:
+        - bauhaus-dessau-paper-course
+        - bauhaus-dessau-teaching-models
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: floating joints and hidden supports
+  - id: paper-space-and-shadow
+    axis: space
+    importance: supporting
+    applies_when: The subject has spatial volumes and lighting allows openings and folds to be read.
+    instruction: Use openings, negative space, and explainable cast shadows to reveal spatial relationships in the paper.
+    observable: Solid surfaces, openings, and shadows are distinguishable; shadow direction agrees with the folds.
+    reject_when: A black decorative patch substitutes for an opening, or shadows contradict the structure.
+    evidence:
+      source_ids:
+        - bauhaus-dessau-teaching-models
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: painted black patches substituting for physical openings
+active_rule_ids:
+  - paper-form-from-operations
+  - paper-material-economy
+  - paper-space-and-shadow
+joint_checks:
+  - id: paper-operation-structure-space-coherence
+    rule_ids:
+      - paper-form-from-operations
+      - paper-material-economy
+      - paper-space-and-shadow
+    instruction: Make the operations, paper connections, openings, and shadows explain one another; shadows must not conceal structural contradictions.
+    observable: Operations, paper connections, and negative space are mutually legible, and shadows do not hide structural contradictions.
+sources:
+  - id: bauhaus-dessau-paper-course
+    kind: institutional_teaching_description
+    url: https://bauhaus-dessau.de/en/visit/groups/offers-for-students/
+  - id: bauhaus-dessau-teaching-models
+    kind: institutional_teaching_description
+    url: https://bauhaus-dessau.de/mediathek/uebungen/
+execution:
+  route: text_only
+  must:
+    - Use only the requested paper and cutting, tearing, or folding.
+    - Show legible folds, cuts, contacts, and structural negative space.
+    - Treat generated images as visual studies, not proof of physical feasibility.
+  avoid:
+    - glue, tape, hidden supports, and metal frameworks
+    - automatic red-yellow-blue branding or copied historical designs

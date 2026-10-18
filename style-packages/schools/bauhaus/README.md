@@ -39,6 +39,7 @@
 - identity.yaml
 - visual-signature.yaml
 - reproduction.yaml
+- art-direction.yaml（仅当任务明确要求纸材研究方向）
 - prompts/base.txt
 - prompts/negative.txt
 - palette/palette.json
@@ -126,3 +127,15 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## 可选实验方向：预备课程纸材研究
+
+包内的 [`art-direction.yaml`](art-direction.yaml) 记录一条范围有限的纸材构成方法：以切、撕、折解释形体，检查纸面连续性、连接、开口和投影。它转译的是与约瑟夫·阿尔伯斯预备课程相关的纸材练习，不代表包豪斯整体的统一视觉风格。该方向仍处于实验阶段，须显式声明 `paper-study` 上下文；普通包豪斯任务仍使用原有风格签名和 Prompt。
+
+官方课程介绍记载了使用纸张并通过切、撕、折探索材料、无需胶水的练习；德绍包豪斯基金会的练习档案也记录了纸材结构、切割、压折、稳定性与材料经济性。这里把这些资料转写为可观察的构图规则，规则的视觉效果仍待跨题材评审。
+
+```powershell
+python tools/compile-style.py style-packages/schools/bauhaus --direction package --context paper-study --subject "A small paper pavilion made from one sheet using cuts and folds, with a clear opening" --output runs/style-v2/bauhaus-paper-job.json
+```
+
+编译结果是交给生图工具使用的任务描述，不会自动调用生图服务。生成图只用于视觉研究，不能证明纸结构真实可制作或承重。

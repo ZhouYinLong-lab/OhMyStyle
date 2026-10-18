@@ -39,6 +39,7 @@ First read:
 - identity.yaml
 - visual-signature.yaml
 - reproduction.yaml
+- art-direction.yaml (only when the paper-study direction is explicitly requested)
 - prompts/base.txt
 - prompts/negative.txt
 - palette/palette.json
@@ -126,3 +127,15 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## Optional experimental direction: preliminary-course paper study
+
+The package's [`art-direction.yaml`](art-direction.yaml) records a narrowly scoped paper-construction method: use cutting, tearing, and folding to explain form, then inspect paper continuity, connections, openings, and shadows. It translates paper exercises associated with Josef Albers's preliminary course; it does not define a unified Bauhaus visual style. This direction remains experimental and must be explicitly selected with the `paper-study` context. Ordinary Bauhaus tasks continue to use the existing style signature and prompts.
+
+The official course description documents paper exercises exploring material through cutting, tearing, and folding without glue. The Bauhaus Dessau Foundation's exercise archive also documents paper structures, cutting, creasing, stability, and material economy. These sources are translated here into observable composition rules; their visual effect still needs cross-subject review.
+
+```powershell
+python tools/compile-style.py style-packages/schools/bauhaus --direction package --context paper-study --subject "A small paper pavilion made from one sheet using cuts and folds, with a clear opening" --output runs/style-v2/bauhaus-paper-job.json
+```
+
+Compilation produces a task description for an image tool; it does not call an image-generation service. Generated images are visual studies and cannot prove physical buildability or load-bearing capacity.

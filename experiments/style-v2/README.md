@@ -1,6 +1,6 @@
 # 美术风格包 v2：独立试点
 
-状态：可运行的渐进迁移试点，尚未完成跨题材生图对照。索罗亚方向已登记到正式包但仍标记为实验；包豪斯和 ASCII 方向仍在实验目录，未批量迁移正式包。
+状态：可运行的渐进迁移试点，尚未完成跨题材生图对照。索罗亚日光与包豪斯纸材方法已登记到正式包，但仍标记为实验；严格 ASCII 网格仍在实验目录。
 
 ## 版本保留与回退
 
@@ -50,7 +50,7 @@ experiments/style-v2/<direction>/direction.yaml
 | 方向 | 选定范围 | 制作路线 | 必须声明的上下文 |
 | --- | --- | --- | --- |
 | [索罗亚日光油画](../../style-packages/artists/joaquin-sorolla/art-direction.yaml) | 光线、反射色、笔触与体块的联动；登记于正式包但仍为实验 | text_only | daylight |
-| [包豪斯纸材研究](bauhaus-paper-study/direction.yaml) | 具体纸材课程方法的当代转译 | text_only | paper-study |
+| [包豪斯纸材研究](../../style-packages/schools/bauhaus/art-direction.yaml) | 阿尔伯斯预备课程纸材方法的当代转译；不是整个学院的统一画风 | text_only | paper-study |
 | [严格 ASCII 网格](literal-ascii-grid/direction.yaml) | 全部场景形状由真实字符构成 | deterministic_grid | 无 |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
@@ -66,10 +66,10 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 ### 包豪斯：明确是纸材方法
 
 ~~~powershell
-python tools/compile-style.py style-packages/schools/bauhaus --direction experiments/style-v2/bauhaus-paper-study --context paper-study --subject "A small paper pavilion made from one sheet using cuts and folds, with an opening and visible supports" --output runs/style-v2/paper-job.json
+python tools/compile-style.py style-packages/schools/bauhaus --direction package --context paper-study --subject "A small paper pavilion made from one sheet using cuts and folds, with an opening and visible supports" --output runs/style-v2/paper-job.json
 ~~~
 
-生成图只用于研究结构的视觉表达，不能据此确认真实折叠或承重可行。该方向不是对整个包豪斯学院的统一画风定义。
+生成图只用于研究结构的视觉表达，不能据此确认真实折叠或承重可行。该方向不是对整个包豪斯学院的统一画风定义。原实验稿保留作迁移记录，正式包中的 `art-direction.yaml` 是当前编译入口。
 
 ### ASCII：字符源 → 等宽字形 → 无损图片
 
