@@ -69,3 +69,7 @@ Configure your API key in your own image platform or prompt compiler, then submi
 Connect the prompts to a local model or ComfyUI workflow. Use the palette, reproduction notes, and reference manifest to guide color, composition, material, and lighting. Review the result against [evaluation.yaml](evaluation.yaml).
 
 Users manage model weights, API keys, and generated images themselves. References are for observable traits only; do not copy a source work’s composition, figures, text, trademarks, or logos.
+
+## Experimental direction: mirror as a second viewpoint
+
+The optional [`art-direction.yaml`](art-direction.yaml) activates only when the user requests an interior or still life with a mirror. The frame crops a shifted reflected view of the same subject, letting reflection and direct view reorganize the room while preserving object count and identity. It does not add a mirror, person, or bathroom by default, and does not reproduce a source painting's mirror placement or figure arrangement. See [`comparisons/`](comparisons/README.md) for a vase still-life probe. This direction remains experimental.

@@ -2,9 +2,10 @@ id: pierre-bonnard
 name: 皮埃尔·博纳尔
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: 以亲密日常中的色彩震动、装饰性平面和不断变化的室内光线组织画面，让普通主体保留记忆般的温度。
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

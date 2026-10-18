@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "pierre-bonnard",
+    "name": "皮埃尔·博纳尔",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\pierre-bonnard"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A quiet still life with exactly one pale ceramic vase holding three orange and green branches on a small table in a warm intimate room; one wall mirror reflects that same vase and branches from a shifted angle; horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A quiet still life with exactly one pale ceramic vase holding three orange and green branches on a small table in a warm intimate room; one wall mirror reflects that same vase and branches from a shifted angle; horizontal 16:9.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original image using this package as a visual language, not as a fixed subject or copied composition.\n\nPackage signature:\n- - 装饰性平面与轻微压缩的空间\n- 粉红、赭黄、暖绿和蓝紫的邻近色震动\n- 光线像记忆一样在物体表面缓慢变化\n- 可见但不僵硬的笔触与织物质感\n\nSubject rule:\nKeep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.\n\nReproduction direction:\n- 先确定大面积色块和画面节奏\n- 用邻近色建立空间而非依赖写实灰度\n- 让光线在墙面、物体和背景之间产生柔和偏移\n- 最后保留局部笔触与装饰性纹理\n\nUser request:\nA quiet still life with exactly one pale ceramic vase holding three orange and green branches on a small table in a warm intimate room; one wall mirror reflects that same vase and branches from a shifted angle; horizontal 16:9.\nthe user-requested composition\nthe user-requested aspect ratio\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not copy a reference composition, named character, landmark, logo, brand, readable text, screenshot, watermark, or protected game asset. Do not introduce a fixed subject from the package. Avoid generic global filters, accidental extra objects, and unrequested narrative events.",
+  "template_variables": {
+    "SUBJECT": "A quiet still life with exactly one pale ceramic vase holding three orange and green branches on a small table in a warm intimate room; one wall mirror reflects that same vase and branches from a shifted angle; horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material",
+          "no fixed subject leaks into the output"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "preserve the user-supplied person or object without adding a recurring figure"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "preserve the user-supplied objects and their count"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

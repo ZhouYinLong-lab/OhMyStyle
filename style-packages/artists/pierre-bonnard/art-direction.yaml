@@ -1,0 +1,102 @@
+schema_version: 2.0.0
+status: experimental
+id: bonnard-mirror-as-second-viewpoint
+name: Bonnard mirror as second viewpoint
+base_package: artists/pierre-bonnard
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    An optional compositional direction for a user-requested interior or still life
+    containing a mirror. Let the mirror frame a shifted, partial view of the same
+    subject so reflected and direct views jointly define the room. Keep the reflected
+    identity and count coherent while allowing decorative planes and intimate color
+    to soften strict perspective. This is a transferable spatial rule, not a copy of
+    any Bonnard mirror composition.
+  required_contexts:
+    - user-requested-interior-with-mirror
+  incompatible_contexts:
+    - user-requested-no-reflection
+    - multiple-reflective-surfaces-with-distinct-subjects
+    - text-or-logo-reproduction
+  limitations:
+    - Activate only when the user's scene explicitly includes a mirror.
+    - Preserve the user-requested subject, count, identity, pose, and object details in both direct view and reflection.
+    - A reflected appearance is the same subject, not an additional person or object.
+    - Keep the mirror frame and reflected crop readable; do not invent a recursive mirror maze.
+    - Allow mild spatial compression or viewpoint shift, but do not make the reflection physically impossible or contradict user-specified geometry.
+    - Do not add a bathroom, bather, domestic figure, or source-work arrangement unless requested.
+pillars:
+  - Use the mirror as an active framing plane that reveals a partial second view, not as a decorative rectangle.
+  - Make the reflected crop differ from the direct view in angle or truncation while preserving subject identity.
+  - Let neighboring warm colors and patterned planes soften the room's strict perspective without obscuring mirror logic.
+rules:
+  - id: mirror-as-shifted-crop
+    axis: reflected_view_and_framing
+    importance: core
+    applies_when: The user requests a mirror in an intimate interior or still-life scene.
+    instruction: Use the mirror frame to crop a shifted view of the same scene; reveal a useful part of the subject or room that is not fully visible in the direct view.
+    observable: The viewer can distinguish the direct view from a partial reflected view and read the mirror as a compositional boundary.
+    reject_when: The mirror merely duplicates the whole scene symmetrically, or the reflection is unrelated to the visible subject.
+    evidence:
+      source_ids:
+        - met-bonnard-dressing-room
+      basis: institutional_description
+      visual_review: pending
+    avoid: copying the source painting's mirror position, aspect ratio, or figure arrangement
+  - id: reflection-keeps-subject-identity
+    axis: object_count_and_reflection_consistency
+    importance: core
+    applies_when: A person or object appears in both the direct view and a mirror.
+    instruction: Keep the reflection attributable to the exact same user-requested person or object; preserve its count, identifying color, silhouette, and defining details across both views.
+    observable: The reflection reads as the same vase, person, or scene seen from another angle, without an apparent duplicate subject.
+    reject_when: The reflected subject changes identity, duplicates into an extra independent object, or contradicts the direct view in essential features.
+    evidence:
+      source_ids:
+        - met-bonnard-dressing-room
+      basis: original_design_intent
+      visual_review: pending
+    avoid: extra people, extra vases, contradictory object colors, mirror-maze repetitions
+  - id: intimate-planes-with-readable-mirror
+    axis: room_space_and_color_planes
+    importance: supporting
+    applies_when: The scene contains a mirror and the room's strict perspective can be softened.
+    instruction: Compress room depth with nearby patterned color planes and gentle viewpoint shifts, while retaining a legible mirror edge and a coherent reflection boundary.
+    observable: The room feels close and color-rich, yet the viewer can still tell which forms are reflected and which are directly present.
+    reject_when: Wallpaper, furniture, or color fields erase the mirror boundary or make the room unreadable.
+    evidence:
+      source_ids:
+        - musee-orsay-bonnard-mirror-space
+      basis: institutional_description
+      visual_review: pending
+    avoid: full-scene photographic perspective, unrelated pattern overlays, arbitrary perspective breaks
+active_rule_ids:
+  - mirror-as-shifted-crop
+  - reflection-keeps-subject-identity
+  - intimate-planes-with-readable-mirror
+joint_checks:
+  - id: second-view-without-duplicate-subject
+    rule_ids:
+      - mirror-as-shifted-crop
+      - reflection-keeps-subject-identity
+      - intimate-planes-with-readable-mirror
+    instruction: Frame a partial second viewpoint in the user-requested mirror, keep the same subject identifiable in direct and reflected views, and use intimate color planes without losing mirror logic.
+    observable: The mirror changes how the room is seen, not what people or objects are present.
+sources:
+  - id: met-bonnard-dressing-room
+    kind: museum_collection_record
+    url: https://www.metmuseum.org/art/collection/search/483440
+  - id: musee-orsay-bonnard-mirror-space
+    kind: museum_exhibition_description
+    url: https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/pierre-bonnard-painting-arcadia
+execution:
+  route: text_only
+  must:
+    - Activate only when the user requests a scene with a mirror.
+    - Preserve the user's subject count and identity; a mirror reflection is not another subject.
+    - Use the mirror frame to reveal a partial shifted view while keeping the reflected scene coherent.
+    - Review object count, reflection consistency, mirror boundary, and spatial legibility.
+  avoid:
+    - adding mirrors, people, bathrooms, or source-work motifs that the user did not request
+    - copying a named work's composition or figure placement
+    - impossible reflections, recursive mirror rooms, text, or logos

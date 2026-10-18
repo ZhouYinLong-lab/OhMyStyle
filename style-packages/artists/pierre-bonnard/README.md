@@ -79,3 +79,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 [evaluation.yaml](evaluation.yaml) 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 实验方向：镜面中的第二视角
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户指定带镜面的室内或静物时启用：镜框裁切出同一主体的偏移反射视角，让反射和实景共同重组空间，同时保留物体数量与身份。它不默认添加镜子、人物或浴室，也不复刻某幅作品的镜子位置和人物布局。见 [`comparisons/`](comparisons/README.md) 查看花瓶静物对照；方向仍处于实验状态。
