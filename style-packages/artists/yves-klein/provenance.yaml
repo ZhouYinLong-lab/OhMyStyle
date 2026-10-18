@@ -1,5 +1,5 @@
 package_id: yves-klein
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
@@ -7,6 +7,12 @@ sources:
     title: '无题蓝色单色画'
     authority: '伊夫·克莱因档案'
     supports: source traceability and package scope
+  - url: 'https://www.metmuseum.org/art/collection/search/266750?locale=en'
+    title: 'Leap into the Void'
+    authority: 'The Metropolitan Museum of Art'
+    supports: >-
+      Museum documentation of the carefully staged action and composite photograph;
+      supports only a compositional inference about suspended action and open space.
 attribution: '本包提炼可观察视觉特征，不主张与来源艺术家、机构、游戏或流派存在合作、授权、背书或完全等同关系。'
 rights_notes:
   - Do not bundle an external artwork, screenshot, photograph, logo, or dataset item unless redistribution rights are verified.

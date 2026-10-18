@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "yves-klein",
+    "name": "伊夫·克莱因",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\yves-klein"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One fully clothed adult contemporary dancer at the apex of a simple jump in a sparse open-air setting, with a thin distant horizon, horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: One fully clothed adult contemporary dancer at the apex of a simple jump in a sparse open-air setting, with a thin distant horizon, horizontal 16:9.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nSUBJECT INDEPENDENCE CONTRACT:\n- The user's subject, place, people, objects, and story are authoritative.\n- Do not introduce a fixed subject from the package or its reference examples.\n- Translate only the observable visual language below.\n\n使用大面积单色场、克制的色面对照和可感知的颜料表面；让光线只揭示材料起伏与主体结构。颜色像有重量的颜料，不像发光效果。用户指定的主体、地点、人物和叙事优先。\nKeep the requested subject count, identity, silhouette, camera, aspect ratio, and purpose. If the user requests a different medium or subject, transfer the visual rules without copying a reference composition.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- 不要把所有输出固定成蓝色人体、裸体、展厅或单色墙面\n- 不要复制具体作品的构图、尺寸、动作或装置\n- 不要加入霓虹发光、金属科幻、品牌标志、文字或水印\n- 不要用全局蓝色滤镜代替表面材料和空间关系",
+  "template_variables": {
+    "SUBJECT": "One fully clothed adult contemporary dancer at the apex of a simple jump in a sparse open-air setting, with a thin distant horizon, horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "本包的媒介、构图、色彩或表面特征可被观察到",
+          "用户提供的主体保持独立且可识别",
+          "没有复制参考作品、品牌或固定题材"
+        ],
+        "reject_if": [
+          "输出只剩下全局滤镜，无法观察到具体媒介规则",
+          "默认出现未被要求的人物、物件、地点或故事",
+          "文字、标志、水印或不可控的伪影明显"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "requested face, pose, and silhouette remain readable",
+          "style treatment does not force a named character or costume"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "requested objects remain countable and materially distinguishable"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

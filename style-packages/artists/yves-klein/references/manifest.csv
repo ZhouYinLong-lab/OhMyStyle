@@ -1,3 +1,4 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 yves-klein-primary-source,,无题蓝色单色画,伊夫·克莱因档案,,https://www.yvesklein.com/en/archives/view/artwork/731/monochrome-bleu-sans-titre,Museum collection or official reference; generated sample is original,Reference record: 伊夫·克莱因档案,primary,Link-only source record; bundle a local asset only after redistribution rights are verified.
+yves-klein-met-leap,,Leap into the Void,The Metropolitan Museum of Art,1960,https://www.metmuseum.org/art/collection/search/266750?locale=en,link_only,The Metropolitan Museum of Art,primary,Museum record documents the staged action and composite photograph; research only, no source image bundled or used as a generation input.
 

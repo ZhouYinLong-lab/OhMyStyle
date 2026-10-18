@@ -13,7 +13,7 @@ This package translates observable visual decisions associated with Yves Klein i
 
 ## Curatorial note
 
-This visual language makes me think of一块被从现实中抽离出来的蓝色空间：它不急着讲故事，却会让表面、距离和身体的尺度变得格外清楚。生成时最值得保留的不是“全画面变蓝”，而是让颜色成为一种有重量的材料。
+This visual language suggests a field of blue separated from ordinary space. It slows the story down and makes surface, distance, and bodily scale unusually clear. The useful rule is not simply to turn the whole image blue, but to make color feel materially present.
 
 ## Subject independence
 
@@ -60,3 +60,7 @@ Configure the API key in your own image platform or compiler, then submit the ba
 Connect the prompts and palette to a local model or ComfyUI workflow. Use `evaluation.yaml` to review subject preservation, style signature, and unwanted artifacts.
 
 Model weights, API keys, and generated images are managed by the user.
+
+## Experimental direction: a suspended subject in open space
+
+The optional [`art-direction.yaml`](art-direction.yaml) activates only when the user explicitly requests an airborne or floating subject. It keeps that subject legible but relatively small within a broad, nearly uninterrupted color field, with at most one restrained ground or horizon cue. It does not add a person or jump by default and does not reproduce the pose, street, or photo montage of *Leap into the Void*. See [`comparisons/`](comparisons/README.md) for a paired dancer probe. This direction remains experimental.

@@ -1,0 +1,102 @@
+schema_version: 2.0.0
+status: experimental
+id: yves-klein-suspended-figure-in-open-field
+name: Klein suspended figure in open field
+base_package: artists/yves-klein
+scope:
+  medium: painted_image
+  representation: stylized
+  description: >-
+    An optional compositional direction for a user-requested airborne or floating
+    subject. Make the subject a small, clearly readable event held in a very large
+    uninterrupted color field, with at most one restrained ground or horizon cue.
+    This tests scale, suspension, and pictorial emptiness; it does not prescribe a
+    person, a jump, a street, a camera trick, or any source-work layout.
+  required_contexts:
+    - user-requested-airborne-or-floating-subject
+  incompatible_contexts:
+    - user-requested-dense-environment
+    - user-requested-multiple-equal-scale-subjects
+    - text-or-logo-reproduction
+  limitations:
+    - Activate only when the user's subject is explicitly airborne or floating.
+    - Preserve the requested subject, count, action, identity, clothing, and silhouette.
+    - Keep the subject small relative to the field but large enough to read; do not crop or erase it.
+    - Use one low, quiet spatial cue only when needed to clarify scale; do not invent a street, rooftop, building, or audience.
+    - Render as a materially painted image, not as a documentary photograph or photomontage.
+    - Do not reproduce the composition, pose, setting, or visual arrangement of a named work.
+pillars:
+  - Let a broad, nearly uninterrupted color field carry most of the image area.
+  - Treat the user-requested airborne subject as a compact, legible event surrounded by unusually generous negative space.
+  - Use no more than one restrained horizon or ground cue to make scale and suspension intelligible.
+rules:
+  - id: subject-small-within-open-field
+    axis: subject_scale_and_negative_space
+    importance: core
+    applies_when: The user explicitly requests an airborne or floating subject and accepts a sparse composition.
+    instruction: Keep the requested subject as a compact focal event within a broad uninterrupted field; reserve substantially more area for empty space than for the subject.
+    observable: The subject remains recognizable while the surrounding field dominates the composition.
+    reject_when: The subject fills the frame, is lost in the field, or the empty area is broken into many competing objects.
+    evidence:
+      source_ids:
+        - met-klein-leap-into-the-void
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: copied figure placement, copied pose, or a reenactment of a named photograph
+  - id: single-scale-anchor
+    axis: spatial_cue_and_suspension
+    importance: core
+    applies_when: The subject's height or distance would otherwise be unclear.
+    instruction: Add at most one thin horizon, low ground strip, or small user-requested support cue; keep it secondary to the open field and subject.
+    observable: A single quiet spatial cue makes the subject's separation from ground or surroundings readable without creating a detailed setting.
+    reject_when: Several architectural, street, crowd, or landscape elements build a narrative scene the user did not request.
+    evidence:
+      source_ids:
+        - met-klein-leap-into-the-void
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: Paris street, rooftop edge, staged catch tarp, or copied photo montage
+  - id: painted-not-documentary
+    axis: medium_and_surface
+    importance: supporting
+    applies_when: The direction is active.
+    instruction: Keep broad color areas materially painted with restrained pigment variation and a mostly matte finish; simplify incidental detail without changing the requested subject.
+    observable: The image reads as a sparse painted composition rather than a realistic photograph or glossy 3D render.
+    reject_when: Photographic staging, lens effects, composited realism, or decorative texture overwhelms the field.
+    evidence:
+      source_ids:
+        - klein-monochrome-blue-archive
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: photomontage, cinematic lens flare, global blue filter
+active_rule_ids:
+  - subject-small-within-open-field
+  - single-scale-anchor
+  - painted-not-documentary
+joint_checks:
+  - id: suspended-event-remains-readable
+    rule_ids:
+      - subject-small-within-open-field
+      - single-scale-anchor
+      - painted-not-documentary
+    instruction: Preserve the requested airborne subject as a readable compact event, place it within a dominant open color field, use at most one quiet spatial cue, and retain a painted material surface.
+    observable: Open space, subject, and one scale cue form a sparse painted composition without a copied source layout.
+sources:
+  - id: met-klein-leap-into-the-void
+    kind: museum_collection_record
+    url: https://www.metmuseum.org/art/collection/search/266750?locale=en
+  - id: klein-monochrome-blue-archive
+    kind: artist_archive_record
+    url: https://www.yvesklein.com/en/archives/view/artwork/731/monochrome-bleu-sans-titre
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-requested airborne or floating subject.
+    - Preserve the user's requested subject, count, action, silhouette, and scene constraints.
+    - Let a broad quiet color field dominate and use at most one scale cue.
+    - Keep the result visibly painted and avoid copying a named photograph or composition.
+    - Review subject legibility, field-to-subject scale, number of spatial cues, and medium.
+  avoid:
+    - adding an unrequested jumping person or airborne object
+    - depicting a rooftop leap, street scene, or staged safety-tarp setup
+    - photomontage, documentary realism, extra figures, or narrative props
