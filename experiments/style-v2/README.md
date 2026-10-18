@@ -64,6 +64,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [北斋轮廓色面](../../style-packages/artists/katsushika-hokusai/art-direction.yaml) | 剪影层级、套色色面、明确裁切与纸面负形 | text_only | 无 |
 | [弗里德里希人的尺度](../../style-packages/artists/caspar-david-friedrich/art-direction.yaml) | 开阔空间、有限人类尺度、远景选择性显现 | text_only | landscape-view |
 | [欧姬芙近距离观察](../../style-packages/artists/georgia-okeeffe/art-direction.yaml) | 用户指定形体的放大、色形简化、随形负空间 | text_only | close-observation |
+| [莱利光学节奏](../../style-packages/artists/bridget-riley/art-direction.yaml) | 几何单元渐变序列、相邻对比、平面视觉振动 | text_only | abstract-field |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

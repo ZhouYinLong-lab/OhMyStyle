@@ -2,7 +2,7 @@ id: bridget-riley
 name: 布里奇特·莱利
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以重复条带、曲线和黑白或有限色彩关系制造视觉振动，强调画面平面与观看者感知之间的主动关系。
 files:
@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: painting

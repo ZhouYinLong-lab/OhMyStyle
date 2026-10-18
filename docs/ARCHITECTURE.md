@@ -173,6 +173,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [北斋轮廓色面](../style-packages/artists/katsushika-hokusai/art-direction.yaml) | 剪影层级、套色色面、明确裁切与纸面负形 | `text_only` |
 | [弗里德里希人的尺度](../style-packages/artists/caspar-david-friedrich/art-direction.yaml) | 开阔空间、有限人类尺度、远景选择性显现 | `text_only`，声明 `landscape-view` |
 | [欧姬芙近距离观察](../style-packages/artists/georgia-okeeffe/art-direction.yaml) | 用户指定形体的放大、色形简化、随形负空间 | `text_only`，声明 `close-observation` |
+| [莱利光学节奏](../style-packages/artists/bridget-riley/art-direction.yaml) | 几何单元渐变序列、相邻对比、平面视觉振动 | `text_only`，声明 `abstract-field` |
 
 ## 6. 从主体请求到结果
 

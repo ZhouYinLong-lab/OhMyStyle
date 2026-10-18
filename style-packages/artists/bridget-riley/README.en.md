@@ -32,3 +32,13 @@ The package refers to [MoMA's material on Bridget Riley's Current](https://www.m
 4. **Use a local model + ComfyUI:** wire the prompts into your workflow, reproduce the repetition, interval, flatness, and contrast rules, then review with `evaluation.yaml`.
 
 Models, keys, and generated images remain under the user's control. References are for feature analysis, not copying.
+
+## New architecture: serial rhythm and perceptual motion (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is limited to an `abstract-field` context. Start with one band, curve, or geometric cell, then change spacing, width, or curvature in a controlled sequence so adjacent contrast creates perceptual movement. It does not impose stripes on people or objects, and it avoids neon, glow, and perspective shadows as shortcuts to depth. Compared with Agnes Martin's low-contrast hand-drawn grid, Riley's direction emphasizes high contrast, continuous change, and perceptual vibration.
+
+```powershell
+python tools/compile-style.py style-packages/artists/bridget-riley --direction package --context abstract-field --subject "A field of curved black and white bands with a gradual wave" --output runs/style-v2/riley-job.json
+```
+
+This direction remains experimental. MoMA and National Gallery of Art collection records support these observations; generation stability across different repeated units remains pending.

@@ -1,4 +1,14 @@
+package_id: bridget-riley
+package_version: 0.2.0
 profiles:
+  abstract_field:
+    required:
+      - repeated unit follows a controlled progression
+      - optical movement comes from adjacency rather than literal depth
+      - field remains flat with no neon glow or copied composition
+    reject_if:
+      - randomly varied units obscure the sequence
+      - representational objects appear without request
   generic:
     required:
       - package-specific visual signature is observable

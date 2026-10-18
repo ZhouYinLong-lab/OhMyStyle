@@ -1,5 +1,5 @@
 package_id: bridget-riley
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: curated
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
@@ -7,6 +7,11 @@ sources:
     title: 'Bridget Riley. Current. 1964'
     authority: 'The Museum of Modern Art'
     supports: source traceability and package scope
+  - url: https://www.nga.gov/artists/1828-bridget-riley
+    title: Bridget Riley collection records
+    authority: National Gallery of Art
+    supports: repeated wavy lines and graduated circles creating perceptual rhythm and apparent curvature
+    accessed: 2026-10-19
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation. Its representative image is newly generated and not a reproduction of a specific painting.
 rights_notes:

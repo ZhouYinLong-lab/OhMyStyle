@@ -44,3 +44,13 @@
 4. **本地模型 + ComfyUI**：把基础 Prompt 和负面约束接入工作流，按复现说明设置重复、间距、平面和对比；生成后用 `evaluation.yaml` 复核。
 
 模型权重、密钥和生成图片由使用者自行管理。参考资料用于理解特征，不用于复制原作。
+
+## 新架构：重复节奏与视觉运动（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅用于声明 `abstract-field` 的抽象画面：从一种条带、曲线或几何单元出发，有控制地改变间距、宽度或弯曲程度，让相邻对比产生视觉运动。它不把条纹硬套到人物和物体上，也不用霓虹、辉光或透视阴影制造假立体。与艾格尼丝·马丁的低对比手绘网格相比，莱利方向强调高对比、连续变化和感知振动。
+
+```powershell
+python tools/compile-style.py style-packages/artists/bridget-riley --direction package --context abstract-field --subject "A field of curved black and white bands with a gradual wave" --output runs/style-v2/riley-job.json
+```
+
+方向仍处于实验状态。MoMA 与美国国家美术馆的馆藏资料支持这些观察；不同重复单元的生成稳定性仍待评审。
