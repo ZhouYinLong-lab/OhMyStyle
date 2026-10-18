@@ -74,3 +74,7 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## 实验方向：轮廓人物与选择性背景肌理
+
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 适用于用户指定的单人物与可见环境：人物用连续轮廓和大色面表现，只在一块有限背景或地面保留更细的混色肌理。人物身份、衣着与文化背景仍由用户的提示决定，不默认加入任何特定族群服饰或符号。对照图见 [`comparisons/`](comparisons/README.md)。

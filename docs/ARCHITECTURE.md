@@ -225,6 +225,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [洛克威尔共享道具反应链](../style-packages/artists/norman-rockwell/art-direction.yaml) | 用一个共享事件连接小群像，以发起动作和不同回应读出单帧叙事 | `text_only`，声明 `reaction-chain-around-shared-prop` |
 | [毕加索单一物体多视点](../style-packages/artists/pablo-picasso/art-direction.yaml) | 在同一个物体轮廓内结合正面、侧面或俯视面，并让周边空间更安静 | `text_only`，声明 `single-object-multiple-viewpoints` |
 | [塞尚倾斜桌面静物平衡](../style-packages/artists/paul-cezanne/art-direction.yaml) | 倾斜用户指定的桌面支撑面，以接触和色面关系平衡物件，局部视角保持可读 | `text_only`，声明 `tilted-tabletop-still-life` |
+| [高更轮廓人物与选择性背景肌理](../style-packages/artists/paul-gauguin/art-direction.yaml) | 单人物用连续轮廓与平色表现，局部背景保留更自由的混色 | `text_only`，声明 `single-figure-flat-ground` |
 
 ## 6. 从主体请求到结果
 

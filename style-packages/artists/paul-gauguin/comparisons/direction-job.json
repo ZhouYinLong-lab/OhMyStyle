@@ -1,0 +1,152 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "paul-gauguin",
+    "name": "保罗·高更",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\paul-gauguin"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One adult gardener in simple blue work clothes, standing beside a small flowering plant and holding pruning shears, in a quiet garden, horizontal 16:9.",
+  "prompt": "USER SUBJECT: One adult gardener in simple blue work clothes, standing beside a small flowering plant and holding pruning shears, in a quiet garden, horizontal 16:9.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: synthetist_oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [continuous-figure-contour] Use a clear continuous contour around the main figure; let it carry silhouette and pose separation while preserving the user's face, clothing, and gesture cues as needed.\n- [unmodulated-figure-fields] Keep the main clothing and body areas in broad, solid color fields; use only a few deliberate color divisions and reserve smooth or mottled transitions for a limited setting patch.\n- [selective-ground-mottle] Allow one bounded area of the setting to carry lightly mottled or more casually mixed paint while keeping the figure flatter; keep this texture secondary to silhouette and action.\n- [figure-ground-surface-contrast] Keep the user-requested figure as a clear outlined silhouette in broad flat color while one limited patch of the setting carries more mottled paint; preserve the figure's identity and action.\nREQUIREMENT: Activate only for a user-requested single figure against a visible setting.\nREQUIREMENT: Preserve identity, age, clothing, posture, action, and setting.\nREQUIREMENT: Use one continuous contour and broad flat interior color for the figure.\nREQUIREMENT: Restrict mottled surface variation to one selected background or ground patch.\nREQUIREMENT: Review contour separation, identity cues, and figure-ground surface contrast.",
+  "negative_prompt": "copied figure outline, heavy cartoon inking, and unrequested costume motifs\nglobal color wash, airbrush shading, and random color change\nall-over grain, decorative wallpaper, and photorealistic foliage\nadding Tahitian, Breton, religious, mythological, or colonial-era imagery unless requested\ncopying a named Gauguin composition, source photograph, costume, or pose\nturning the whole image into a cartoon, a global filter, or a photorealistic portrait",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "gauguin-outlined-figure-flat-ground",
+    "name": "Gauguin outlined figure against selective ground texture",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\paul-gauguin\\art-direction.yaml",
+    "sha256": "b983e574000f14d3d2ef20ce8de10aa4609a6f68b85cb8c785eba5739f734f6b",
+    "active_rule_ids": [
+      "continuous-figure-contour",
+      "unmodulated-figure-fields",
+      "selective-ground-mottle"
+    ],
+    "contexts": [
+      "single-figure-flat-ground"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested single figure against a visible setting.",
+      "Preserve identity, age, clothing, posture, action, and setting.",
+      "Use one continuous contour and broad flat interior color for the figure.",
+      "Restrict mottled surface variation to one selected background or ground patch.",
+      "Review contour separation, identity cues, and figure-ground surface contrast."
+    ],
+    "avoid": [
+      "adding Tahitian, Breton, religious, mythological, or colonial-era imagery unless requested",
+      "copying a named Gauguin composition, source photograph, costume, or pose",
+      "turning the whole image into a cartoon, a global filter, or a photorealistic portrait"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "synthetist_oil_painting",
+      "representation": "stylized",
+      "description": "An optional single-figure direction for a user-requested person in a visible setting. Give the figure a simple continuous contrasting contour and broad flat interior color; reserve mottled or more descriptive paint for one selected patch of the ground or setting. This surface contrast makes the figure and its surrounding space read differently without prescribing a culture, costume, landscape, symbol, or narrative.",
+      "required_contexts": [
+        "single-figure-flat-ground"
+      ],
+      "incompatible_contexts": [
+        "photorealistic-portrait",
+        "detailed-crowd-scene",
+        "all-over-patterned-field"
+      ],
+      "limitations": [
+        "Activate only when the user requests one recognizable figure against a visible setting.",
+        "Preserve the user's identity, age, clothing, posture, action, and setting.",
+        "Use contour and flat color as representation choices, not as permission to simplify identity-critical details.",
+        "Confine mottled surface variation to a selected ground or background patch; keep figure color broad and flat.",
+        "Do not add Polynesian, Breton, religious, mythological, or primitivist imagery unless explicitly requested.",
+        "Do not copy a named painting, source photograph, costume, or recognizable figure arrangement."
+      ]
+    },
+    "rules": [
+      {
+        "id": "continuous-figure-contour",
+        "axis": "silhouette_and_edge",
+        "importance": "core",
+        "applies_when": "The user requests one recognizable figure against a visible setting.",
+        "instruction": "Use a clear continuous contour around the main figure; let it carry silhouette and pose separation while preserving the user's face, clothing, and gesture cues as needed.",
+        "observable": "The figure silhouette reads independently from the setting and remains identifiable through a small set of color fields and pose cues.",
+        "reject_when": "The contour breaks into photorealistic edge detail, merges with background colors, or changes an identity-critical feature.",
+        "evidence": {
+          "source_ids": [
+            "met-gauguin-siesta"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "copied figure outline, heavy cartoon inking, and unrequested costume motifs"
+      },
+      {
+        "id": "unmodulated-figure-fields",
+        "axis": "figure_color_and_modeling",
+        "importance": "core",
+        "applies_when": "The user requests a figure scene that allows stylized flat color.",
+        "instruction": "Keep the main clothing and body areas in broad, solid color fields; use only a few deliberate color divisions and reserve smooth or mottled transitions for a limited setting patch.",
+        "observable": "The figure is described mainly by silhouette and color relationships rather than continuous volumetric shading.",
+        "reject_when": "Gradients model every body plane, or flat fill removes requested clothing/material distinctions.",
+        "evidence": {
+          "source_ids": [
+            "met-gauguin-siesta"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "global color wash, airbrush shading, and random color change"
+      },
+      {
+        "id": "selective-ground-mottle",
+        "axis": "surface_and_depth",
+        "importance": "supporting",
+        "applies_when": "The user requests a ground or background with a visible painted surface.",
+        "instruction": "Allow one bounded area of the setting to carry lightly mottled or more casually mixed paint while keeping the figure flatter; keep this texture secondary to silhouette and action.",
+        "observable": "Figure and setting have visibly different surface behavior, but the selected patch still belongs to the scene and does not become decorative noise.",
+        "reject_when": "Mottling spreads over the entire image, obscures the figure contour, or invents a new atmospheric effect.",
+        "evidence": {
+          "source_ids": [
+            "met-gauguin-siesta"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "all-over grain, decorative wallpaper, and photorealistic foliage"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "figure-ground-surface-contrast",
+        "rule_ids": [
+          "continuous-figure-contour",
+          "unmodulated-figure-fields",
+          "selective-ground-mottle"
+        ],
+        "instruction": "Keep the user-requested figure as a clear outlined silhouette in broad flat color while one limited patch of the setting carries more mottled paint; preserve the figure's identity and action.",
+        "observable": "The figure and setting differ in contour and surface handling, yet remain joined by a coherent color relationship and readable pose."
+      }
+    ],
+    "sources": [
+      {
+        "id": "met-gauguin-siesta",
+        "kind": "museum_collection_description",
+        "url": "https://www.metmuseum.org/art/collection/search/436449"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "b983e574000f14d3d2ef20ce8de10aa4609a6f68b85cb8c785eba5739f734f6b",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

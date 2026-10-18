@@ -3,6 +3,10 @@ package_version: 0.1.0
 curation_status: reference_images_verified
 source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
 sources:
+  - url: https://www.metmuseum.org/art/collection/search/436449
+    authority: The Metropolitan Museum of Art
+    title: The Siesta
+    supports: museum description of continuous figure outlines, flat color, and selective surface variation
   - url: https://commons.wikimedia.org/wiki/File:La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg
     authority: Wikimedia Commons
     supports: primary public-domain reference image and work attribution

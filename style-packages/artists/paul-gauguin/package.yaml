@@ -2,11 +2,12 @@ id: paul-gauguin
 name: 保罗·高更
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 entity: catalog/persons/artists/paul-gauguin/entity.yaml
 summary: >-
   A Synthetist painting profile built from flattened color fields, strong contour design, symbolic non-natural color, compressed spatial layers, and decorative rhythm.
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml
