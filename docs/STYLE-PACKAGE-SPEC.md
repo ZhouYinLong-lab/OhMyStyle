@@ -1,5 +1,8 @@
 # Style Package Specification
 
+See the [art style architecture guide](ARCHITECTURE.en.md) for the full content
+model, execution paths, and the distinction between formal packages and v2 pilots.
+
 OhMyStyle stores a style as a reproducible package rather than as a prompt and
 some images. A package separates four responsibilities:
 
@@ -14,7 +17,9 @@ some images. A package separates four responsibilities:
 The [art-style architecture proposal](ART-STYLE-PACK-ARCHITECTURE.md) describes
 a draft approach to evidence-linked visual rules, scoped school practices,
 strict media constraints, and comparative evaluation. Its study files are
-design examples, not a format already supported by the current compiler.
+design examples. Runnable v2 directions use a separate
+[`art-direction.schema.json`](../schema/art-direction.schema.json) contract
+and an explicit compiler option; see the [pilot guide](../experiments/style-v2/README.md).
 
 ## Package layout
 

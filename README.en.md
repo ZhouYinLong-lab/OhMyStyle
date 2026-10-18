@@ -6,76 +6,25 @@
 
 OhMyStyle is a visual-style preset library for image-generation users. Choose an independent package for an artist, photographer, movement, technique, game-art direction, or original preset, then apply it to your own subject.
 
-To add a package, start with the [English contribution guide](CONTRIBUTING.en.md) or [中文贡献指南](CONTRIBUTING.md). The canonical template is in [`templates/style-package`](templates/style-package); the scaffold command creates the complete directory, bilingual documentation, source manifest, prompts, and evaluation scaffold.
+[Architecture](#architecture) · [Art packages](#art-packages) · [Usage](#usage)
 
-Future expansion follows scoped batches: research original works and rights first, then complete each package with visual rules, a native 16:9 representative image, generated samples, bilingual README files, and validation. One package gets one commit; update the root gallery after the batch is complete. See the [style package expansion workflow](docs/EXPANSION-WORKFLOW.en.md) and the [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml) batch template.
+## Architecture
 
-If you are looking for a visual result rather than a source category, use the [visual feature index](docs/VISUAL-INDEX.en.md) for soft natural light, deep dramatic light, geometric layout, pixel grids, neon cities, and more. The index is generated from package metadata and does not replace the seven source-based gallery categories below.
+An art style package connects **scope and intent → visual rules → references and counterexamples → production and execution → review across subjects**, so its visual decisions can be applied to your own subject.
 
-If you want an Agent to confirm the request over several turns, match styles, wait for your choice, and then call an image model, use the [OhMyStyle Skill](skill/README.en.md). It provides an Agent file interface, a local CLI, and local HTTP / MCP interfaces; users manage model accounts, API keys, and actual image generation.
+See the **[art style package architecture guide](docs/ARCHITECTURE.en.md)** for artifact responsibilities, rule examples, compilation paths, literal ASCII constraints, and review.
 
-## Three ways to use the OhMyStyle Skill
+The formal library retains its multiple-file package contract. The new architecture uses explicitly selected experimental direction files. See the [v2 pilot guide (Chinese)](experiments/style-v2/README.md) for Sorolla sunlit oil, Bauhaus paper methods, and literal ASCII grids. Image comparisons remain pending. The baseline is preserved as tag `style-v1-snapshot-2026-10-18`.
 
-All three entry points share the same sequence: content confirmation → detail confirmation → style matching → user style confirmation → job compilation → image-provider call. The interface cannot enter generation before the style is confirmed.
+<a id="style-package-gallery"></a>
 
-### 1. Agent file interface
+## Art packages
 
-Give the root [`SKILL.md`](SKILL.md) and your request to an image-capable Agent. The Agent reads the style packages, asks confirmation questions over several turns, shows candidate styles, and compiles the task only after you choose one.
+Browse seven source categories:
 
-```text
-Use the OhMyStyle Skill:
-1. Confirm my subject, purpose, and constraints first.
-2. Confirm aspect ratio, composition, lighting, material, and color.
-3. Show three candidate style packages with representative images.
-4. Wait for my style confirmation before compiling or generating.
-```
+[Artists](#artists) · [Photographers](#photographers) · [Design schools](#design-schools) · [Movements and periods](#movements-and-periods) · [Original presets](#original-presets) · [Game art](#game-art) · [Techniques and media](#techniques-and-media)
 
-This is suitable for ChatGPT, Claude Code, or another Agent that can read local files and call an image-generation tool.
-
-### 2. Local CLI interface
-
-The CLI stores the conversation in a JSON file. It is useful for scripts, local models, and ComfyUI pre-compilation:
-
-```powershell
-python tools/ohmystyle.py init --brief "A quiet coastal building magazine cover" --output session.json
-python tools/ohmystyle.py turn --session session.json --json '{"content":{"subject":"a coastal building","purpose":"magazine cover"},"confirmed":true}'
-python tools/ohmystyle.py turn --session session.json --json '{"details":{"aspect_ratio":"16:9","lighting":"overcast natural light"},"confirmed":true}'
-python tools/ohmystyle.py match --session session.json --limit 5
-python tools/ohmystyle.py turn --session session.json --json '{"style_selection":{"package":"jmw-turner"},"confirmed":true}'
-python tools/ohmystyle.py compile --session session.json --output job.json
-```
-
-By default, the CLI outputs a provider-neutral `job.json`. For actual generation, connect your own model service through the local command Provider or the HTTP JSON Provider.
-
-### 3. HTTP / MCP interface
-
-The HTTP service is suitable for local applications or other Agents. The MCP service is suitable for MCP-capable clients. Both call the same session core:
-
-```powershell
-python tools/ohmystyle_http.py --host 127.0.0.1 --port 8765
-python tools/ohmystyle_mcp.py
-```
-
-Core HTTP routes:
-
-```text
-POST /sessions                       create a session
-GET  /sessions/{id}                  inspect phase and questions
-POST /sessions/{id}/turn             submit one confirmation turn
-POST /sessions/{id}/match            get style candidates
-POST /sessions/{id}/compile          compile a provider-neutral job
-POST /sessions/{id}/generate         call the provider configured at startup
-```
-
-MCP exposes `ohmystyle_start_session`, `ohmystyle_turn`, `ohmystyle_match_styles`, `ohmystyle_compile`, and `ohmystyle_generate`. HTTP and MCP do not store API keys by default and do not allow clients to submit arbitrary commands; users configure the actual Provider. See [`skill/README.en.md`](skill/README.en.md) for the complete protocol.
-
-## Creative workflows
-
-If you already have a photo and want to turn it into an editorial layout, abstract edit, or paper-based work, start with the [creative workflows](workflows/README.en.md). A workflow handles observation, distillation, and composition of input material; a style package supplies visual language. They can be combined, but a workflow must not hard-code a place, person, object, or story for you.
-
-Two external creative projects are registered for compatibility: [Photo Abstract Editorial](integrations/README.en.md#photo-abstract-editorial) and [Gathered Scenes Zine](integrations/README.en.md#gathered-scenes-zine). They are listed only through links and license information; their upstream skills, prompts, examples, and brand assets are not included in OhMyStyle.
-
-## Style package gallery
+Use the [visual feature index](docs/VISUAL-INDEX.en.md) to search by appearance. The [110 inherited lightweight presets](#inherited-110-lightweight-presets) and [cross-style feature](#cross-style-feature) are also retained below.
 
 The main gallery lists independent style packages only. Every card uses a horizontal 16:9 representative image; click the image or name to open the package README.
 
@@ -517,7 +466,7 @@ The original 110 `style.json` presets remain under [`styles/`](styles/), and the
 
 [Open the independent preset directory](styles/)
 
-## Cross-style feature
+### Cross-style feature
 
 Cross-style recipes are not listed as independent styles in the main gallery. They are an optional composition mechanism that assigns different packages to roles such as medium, lighting, color, foreground, or background.
 
@@ -531,7 +480,92 @@ Available modes: `stack` (role-separated stacking), `blend` (weighted blending),
 </tr>
 </table>
 
+## Usage
 
-## Provenance and rights
+### Use an art package directly
+
+Open a package README from the gallery, read its medium, visual rules, and exclusions, then supply your subject, composition, aspect ratio, and purpose. Give the base prompt and negative constraints to an image-capable Agent or model. To compile a job file directly:
+
+```powershell
+python -m pip install -r requirements-dev.txt
+python tools/compile-style.py style-packages/artists/joaquin-sorolla --subject "One wooden chair in a plain courtyard in afternoon daylight, no people or water" --output runs/sorolla-job.json
+```
+
+This command uses the formal package's legacy compilation path and creates a job file. You configure the actual image provider. See the [architecture guide](docs/ARCHITECTURE.en.md#loading-a-file-does-not-mean-compiling-all-of-its-content) for the distinction between package content and compiled inputs.
+
+### OhMyStyle Skill: confirm the request over several turns
+
+All three entry points share the same sequence: content confirmation → detail confirmation → style matching → user style confirmation → job compilation → image-provider call. The interface cannot enter generation before the style is confirmed.
+
+#### 1. Agent file interface
+
+Give the root [`SKILL.md`](SKILL.md) and your request to an image-capable Agent. The Agent reads the style packages, asks confirmation questions over several turns, shows candidate styles, and compiles the task only after you choose one.
+
+```text
+Use the OhMyStyle Skill:
+1. Confirm my subject, purpose, and constraints first.
+2. Confirm aspect ratio, composition, lighting, material, and color.
+3. Show three candidate style packages with representative images.
+4. Wait for my style confirmation before compiling or generating.
+```
+
+This is suitable for ChatGPT, Claude Code, or another Agent that can read local files and call an image-generation tool.
+
+#### 2. Local CLI interface
+
+The CLI stores the conversation in a JSON file. It is useful for scripts, local models, and ComfyUI pre-compilation:
+
+```powershell
+python tools/ohmystyle.py init --brief "A quiet coastal building magazine cover" --output session.json
+python tools/ohmystyle.py turn --session session.json --json '{"content":{"subject":"a coastal building","purpose":"magazine cover"},"confirmed":true}'
+python tools/ohmystyle.py turn --session session.json --json '{"details":{"aspect_ratio":"16:9","lighting":"overcast natural light"},"confirmed":true}'
+python tools/ohmystyle.py match --session session.json --limit 5
+python tools/ohmystyle.py turn --session session.json --json '{"style_selection":{"package":"jmw-turner"},"confirmed":true}'
+python tools/ohmystyle.py compile --session session.json --output job.json
+```
+
+By default, the CLI outputs a provider-neutral `job.json`. For actual generation, connect your own model service through the local command Provider or the HTTP JSON Provider.
+
+#### 3. HTTP / MCP interface
+
+The HTTP service is suitable for local applications or other Agents. The MCP service is suitable for MCP-capable clients. Both call the same session core:
+
+```powershell
+python tools/ohmystyle_http.py --host 127.0.0.1 --port 8765
+python tools/ohmystyle_mcp.py
+```
+
+Core HTTP routes:
+
+```text
+POST /sessions                       create a session
+GET  /sessions/{id}                  inspect phase and questions
+POST /sessions/{id}/turn             submit one confirmation turn
+POST /sessions/{id}/match            get style candidates
+POST /sessions/{id}/compile          compile a provider-neutral job
+POST /sessions/{id}/generate         call the provider configured at startup
+```
+
+MCP exposes `ohmystyle_start_session`, `ohmystyle_turn`, `ohmystyle_match_styles`, `ohmystyle_compile`, and `ohmystyle_generate`. HTTP and MCP do not store API keys by default and do not allow clients to submit arbitrary commands; users configure the actual Provider. See [`skill/README.en.md`](skill/README.en.md) for the complete protocol.
+
+### Creative workflows
+
+If you already have a photo and want to turn it into an editorial layout, abstract edit, or paper-based work, start with the [creative workflows](workflows/README.en.md). A workflow handles observation, distillation, and composition of input material; a style package supplies visual language. They can be combined, but a workflow must not hard-code a place, person, object, or story for you.
+
+Two external creative projects are registered for compatibility: [Photo Abstract Editorial](integrations/README.en.md#photo-abstract-editorial) and [Gathered Scenes Zine](integrations/README.en.md#gathered-scenes-zine). They are listed only through links and license information; their upstream skills, prompts, examples, and brand assets are not included in OhMyStyle.
+
+### Use a v2 pilot
+
+Select an experimental direction explicitly with `tools/compile-style.py --direction`. Sorolla requires the `daylight` context; the paper method requires `paper-study`. ASCII requires an authored character source followed by monospace grid rendering.
+
+See the [v2 pilot guide (Chinese)](experiments/style-v2/README.md) for commands, input limits, and a separate baseline worktree. HTTP/MCP sessions and composite compilation still use the legacy path.
+
+### Contributing and expansion
+
+To add a package, start with the [English contribution guide](CONTRIBUTING.en.md) or [中文贡献指南](CONTRIBUTING.md). The canonical template is in [`templates/style-package`](templates/style-package); the scaffold command creates the complete directory, bilingual documentation, source manifest, prompts, and evaluation scaffold.
+
+Future expansion follows scoped batches: research original works and rights first, then complete each package with visual rules, a native 16:9 representative image, generated samples, bilingual README files, and validation. One package gets one commit; update the root gallery after the batch is complete. See the [style package expansion workflow](docs/EXPANSION-WORKFLOW.en.md) and the [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml) batch template.
+
+### Provenance and rights
 
 Read [NOTICE](NOTICE), [LICENSE](LICENSE), [LICENSE-OHMYSTYLE.md](LICENSE-OHMYSTYLE.md), and each package's `provenance.yaml`. References are used for research and visual analysis; they do not authorize copying a specific source work.

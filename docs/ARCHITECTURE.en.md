@@ -1,0 +1,174 @@
+# OhMyStyle art style package architecture
+
+[中文](ARCHITECTURE.md) · [Back to README](../README.en.md)
+
+This guide explains how artistic content is organized and what the current implementation actually executes. See the [art architecture proposal (Chinese)](ART-STYLE-PACK-ARCHITECTURE.md) for research and the [v2 pilot guide (Chinese)](../experiments/style-v2/README.md) for runnable examples.
+
+## 1. What a package describes
+
+An art style package describes visual decisions that can transfer to different subjects: how to construct form, organize values and color, handle edges and materials, and reproduce those relationships through a particular process. The user supplies the subject, count, setting, composition, and purpose separately.
+
+For example, a sunlit oil direction can require reflected color to shape shadows and brushwork to follow turning surfaces. A wooden chair in a courtyard should still express those decisions without acquiring an unrequested beach or boat.
+
+One artist can have several periods, media, or practices; a school can have several teaching methods. A source name identifies the research subject. The package must further define which practice it selects.
+
+| Source category | Scope to declare | Differences to observe |
+| --- | --- | --- |
+| Artist | Period, medium, selected practice | Relationships between form, light, color, marks, and edges |
+| Photographer | Practice, scene conditions, imaging method | Viewpoint, timing, distance, light, and tone |
+| Movement | Historical scope and selected branch | Shared formal principles and distinctions from adjacent movements |
+| School | Specific course, workshop, or teaching method | Material operations, structural exploration, and design process |
+| Technique or medium | Materials, tools, production limits | Marks and forms produced by the process |
+| Game art | Representation and technical constraints | Pixel or glyph construction, silhouettes, space, interactive readability |
+| Original preset | Authorial intent and choices | Repeatable visual relationships and explicit exclusions |
+
+These are authoring requirements, not a claim that every existing package has already passed this review.
+
+## 2. Five layers of artistic content
+
+**Scope and intent → visual rules → references and counterexamples → production and execution → review across subjects.**
+
+| Layer | Question | Content to retain |
+| --- | --- | --- |
+| Scope and intent | Which practice and conditions does this direction select? | Medium, period or method, pillars, applicable and incompatible conditions |
+| Visual rules | What decisions should the creator make? | Instructions, observable results, failure conditions, importance, rule IDs |
+| References and counterexamples | What supports the definition and its distinctions? | Source records, analysis, source/generated distinctions, rights |
+| Production and execution | How are the decisions implemented? | Construction sequence, prompts, provider capabilities, deterministic settings |
+| Review across subjects | Do the decisions persist and remain distinguishable? | Complete runs, rule reviews, failures, applicability exceptions |
+
+Each rule pairs a creation instruction with an observable result and rejection condition. For example, the [Sorolla pilot](../experiments/style-v2/sorolla-sunlit-oil/direction.yaml) requires directional daylight and reflected color to explain form; a uniform warm wash does not satisfy it.
+
+Evidence records distinguish institutional descriptions, direct visual observation, curatorial inference, and original design intent. A source link alone does not establish visual validation. `joint_checks` connects several rules so that reflected color, value groups, and brushwork explain the same forms coherently.
+
+## 3. Repository responsibilities
+
+| Location | Responsibility |
+| --- | --- |
+| `catalog/` | Source entities such as people and institutions |
+| `style-packages/<category>/<id>/` | Current independent executable packages |
+| `style-packages/composites/` | Recipes assigning different packages to different roles |
+| `styles/` | The 110 inherited lightweight presets in their existing format |
+| `experiments/style-v2/` | Three manually authored directions outside the formal catalog |
+| `tasks/` | A particular subject, composition, aspect ratio, and task constraints |
+| `workflows/` | Observation, distillation, and composition of input material |
+| `skill/` and root `SKILL.md` | Agent and session interface protocols |
+| `schema/` and `tools/` | Contracts, loading, compilation, rendering, and evaluation tools |
+| `reports/` | Recorded inventories and implementation results |
+| `runs/` | Local jobs and candidates, ignored by Git by default |
+
+Composite recipes assign medium, lighting, color, foreground, or background roles through `stack`, `blend`, or `contrast`. See the [composition guide](../style-packages/composites/README.en.md).
+
+## 4. Current formal packages: multiple artifact files
+
+~~~text
+style-packages/<category>/<id>/
+├── README.md / README.en.md
+├── package.yaml
+├── resource.yaml
+├── identity.yaml
+├── visual-signature.yaml
+├── reproduction.yaml
+├── relations.yaml
+├── palette/palette.json
+├── prompts/base.txt / negative.txt / variations.txt
+├── references/manifest.csv
+├── provenance.yaml
+├── evaluation.yaml
+├── gallery-16x9.jpg
+└── examples/accepted / generated / rejected
+~~~
+
+| Artifact | Content |
+| --- | --- |
+| `package.yaml` | Package ID, version, classification, artifact entry points |
+| `resource.yaml` | Resource type, maturity, dimensions, evidence declarations |
+| `identity.yaml` | Interpretation, scope, open subject policy, exclusions |
+| `visual-signature.yaml` | Composition, lighting, color, marks, material behavior |
+| `reproduction.yaml` | Production sequence and technical constraints |
+| `relations.yaml` | Neighboring directions and distinctions |
+| `palette/palette.json` | Color roles and values, or optional palette pairs |
+| `prompts/` | Base and negative text used by the current compiler, plus other prompt artifacts |
+| Reference manifest and provenance | Sources, analytical roles, rights boundaries |
+| Evaluation and examples | Criteria, candidates, accepted or rejected examples |
+
+See the [package specification](STYLE-PACKAGE-SPEC.md) and [resource architecture](RESOURCE-ARCHITECTURE.md) for the detailed contracts.
+
+### Loading a file does not mean compiling all of its content
+
+The legacy compiler loads the package artifacts, but its final prompts primarily use `prompts/base.txt`, `prompts/negative.txt`, and the selected palette pair. It **does not automatically expand all visual signature rules into prompt instructions**. `prompts/variations.txt` is not an automatic input to this compilation path either.
+
+Retrieval flattens visual signature content into search terms. An Agent reading files directly may use additional rules. Retrieval, direct Agent reading, and compiled model input therefore need separate inspection. Save the actual prompts and input assets submitted to the model; editing a YAML file alone does not establish an execution change.
+
+## 5. v2 pilots: explicitly selected directions
+
+v2 currently retains the formal packages and adds a separate `direction.yaml` for each selected practice. It does not automatically convert the old library or enter the formal search index or gallery.
+
+| Field | Responsibility |
+| --- | --- |
+| `base_package` | Explicitly selected formal package identity and source records |
+| `scope`, `pillars` | Medium, representation, limits, editorial intent |
+| `rules` | Identified instructions, observable results, failure conditions, evidence |
+| `active_rule_ids` | Authored selection, including every core rule |
+| `joint_checks` | Requirements connecting multiple active rules |
+| `sources` | Base source IDs, institutional links, local source artifacts, original requirements |
+| `execution` | Route, mandatory requirements, exclusions |
+
+The contract is [art-direction.schema.json](../schema/art-direction.schema.json); the compiler is [art_direction_runtime.py](../tools/art_direction_runtime.py).
+
+The compiled job separates four kinds of information:
+
+- **Positive prompt:** user subject and details, medium, representation, active rule instructions, joint instructions, production requirements.
+- **Negative prompt:** explicitly authored rule and execution `avoid` text.
+- **Review:** scope, rule text, observable results, rejection conditions, sources.
+- **Traceability:** direction path and SHA-256, active rule IDs, declared contexts.
+
+`applies_when` is a natural language authoring note. The implementation checks caller-declared required and incompatible contexts; it does not infer applicability from the subject or select rules automatically. Research sources are not automatically supplied as reference images.
+
+This stage supports `profile=generic` and `references=none`, without legacy palette pairs. HTTP/MCP sessions and composite compilation retain the legacy path. Enable v2 explicitly through CLI `--direction` or Python `direction_path`.
+
+| Pilot | Main relationships | Route |
+| --- | --- | --- |
+| [Sorolla sunlit oil](../experiments/style-v2/sorolla-sunlit-oil/direction.yaml) | Daylight, reflected color, value groups, directional marks | `text_only`, declare `daylight` |
+| [Bauhaus paper method](../experiments/style-v2/bauhaus-paper-study/direction.yaml) | Cutting, tearing, folding, supports, openings, shadows | `text_only`, declare `paper-study` |
+| [Literal ASCII grid](../experiments/style-v2/literal-ascii-grid/direction.yaml) | Real glyphs, fixed cells, density, negative space | `deterministic_grid` |
+
+## 6. Execution routes
+
+~~~mermaid
+flowchart TD
+    A[User subject and details] --> B[Legacy package compiler]
+    P[Formal package] --> B
+    A --> C[Explicit v2 direction]
+    P --> C
+    D[direction.yaml] --> C
+    B --> E[Image job and actual prompts]
+    C --> F{Production route}
+    F -->|text_only| E
+    E --> G[External image model]
+    F -->|deterministic_grid| H[Human or text model authors glyph source]
+    H --> I[Fixed cells and explicit monospace font]
+    G --> J[Subject, medium and rule review]
+    I --> J
+~~~
+
+`text_only` means no reference images in this stage. Compilation creates a job; users select and configure the actual image model.
+
+ASCII requires literal source text before rasterization. The renderer draws only a uniform background and individual glyphs. It rejects non-ASCII input, wrong row counts, excessive line widths, blank scenes, and unsuitable fonts or cell sizes. It outputs a lossless PNG, normalized source grid, and a record with source, font, environment, and pixel hashes. A new subject does not automatically rewrite an existing source grid. An image model's approximate character painting does not satisfy this route.
+
+See the [pilot commands (Chinese)](../experiments/style-v2/README.md) and [Skill interface guide](../skill/README.en.md).
+
+## 7. Quality and differentiation
+
+Review the requested subject, count, layout, and exclusions first; then check medium and production constraints. Review applicable core rules, supporting rules, and joint relationships separately. Preserve failures and use multiple subjects and repeated outputs to inspect stability.
+
+Compare specific visual relationships with neighboring artists, movements, or school methods. Names and textual similarity alone do not establish artistic differentiation. Hold the subject, model version, aspect ratio, and generation settings constant across name-only, legacy-package, and new-rule arms. The initial phase excludes research images. See the [comparison protocol](design/art-style-pack-v2/comparison-plan.yaml).
+
+The existing maturity contract is L0 descriptor, L1 structured description, L2 reference-backed executable package, L3 accepted generation and review evidence, and L4 interoperability evidence across providers or adapters. Existing maturity does not establish validation of newly authored v2 rules.
+
+All three pilots remain `experimental` with review `pending`. Three jobs were compiled and one existing ASCII source was rasterized. The image comparison protocol has not been run and maturity was not upgraded. See the [implementation record](../reports/style-v2-implementation.json).
+
+## 8. Versions and migration
+
+The preserved baseline is tag `style-v1-snapshot-2026-10-18` at commit `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`. The implementation branch is `codex/style-pack-v2`. This work retains the main branch without bulk migration.
+
+Proceed through manual direction authoring, saved compiled inputs, comparison runs, rule reviews, and a decision on wider adoption. Scripts handle structure, references, and records; artistic interpretation and differences require research and review. See the [migration assessment (Chinese)](ART-STYLE-MIGRATION-ASSESSMENT.md) and [baseline worktree instructions (Chinese)](../experiments/style-v2/README.md#版本保留与回退).

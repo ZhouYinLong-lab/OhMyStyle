@@ -1,5 +1,8 @@
 # Core resource architecture
 
+For the full artistic content model, artifact responsibilities, and current
+legacy/v2 execution boundaries, see the [art style architecture guide](ARCHITECTURE.en.md).
+
 OhMyStyle treats a visual style as a reusable, evidence-backed resource rather
 than a long prompt or a subject-specific image recipe.
 
@@ -31,8 +34,10 @@ must be independent of a particular subject, character, story, or narrative.
 
 The [art-style architecture proposal](ART-STYLE-PACK-ARCHITECTURE.md) develops
 the artistic content model with evidence-linked rules, scoped directions,
-media constraints, and comparative reviews. It is a design draft and has not
-been integrated into the current runtime.
+media constraints, and comparative reviews. The proposal remains a design
+draft. Three explicitly selected runtime pilots now live separately in
+[`experiments/style-v2/`](../experiments/style-v2/README.md); formal packages
+retain their legacy compilation path.
 
 Render tasks under `tasks/` describe what to generate. A task may contain a
 subject, composition request, narrative, aspect ratio, or strict measurable

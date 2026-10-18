@@ -6,76 +6,25 @@
 
 OhMyStyle 是一个面向生图用户的视觉风格预设库。你可以从艺术家、摄影师、艺术流派、工艺、游戏美术和原创预设中选择一个独立风格包，再把它用于自己的主题。
 
-想要新增风格包？请从[中文贡献指南](CONTRIBUTING.md)或[英文贡献指南](CONTRIBUTING.en.md)开始；模板位于 [`templates/style-package`](templates/style-package)，创建命令会生成完整目录、双语说明、来源清单、Prompt 和评估骨架。
+[架构](#架构) · [美术包](#美术包) · [使用方式](#使用方式)
 
-后续扩充按批次执行，数量以实际规划为准：先研究原作品和权利边界，再逐包完成风格规则、原生 16:9 代表图、生成样例、双语 README 和校验；一个包一个 commit，批次完成后再更新总画廊。完整流程见[风格包扩充工作流](docs/EXPANSION-WORKFLOW.md)，批次清单模板见 [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml)。
+## 架构
 
-如果你更关心画面效果而不是来源，可以使用[视觉特征索引](docs/VISUAL-INDEX.md)查找柔和自然光、深暗戏剧光、几何版式、像素网格、霓虹城市等方向。该索引由风格包元数据生成，不改变下面按来源组织的七大分类。
+美术风格包按 **范围与意图 → 视觉规则 → 参考与反例 → 制作与执行 → 跨题材评审** 组织，让同一组视觉决定可以用于你自己的主体。
 
-如果你希望由 Agent 先多轮确认需求、匹配风格、等待选择，再调用生图模型，请使用 [OhMyStyle Skill](skill/README.md)。它提供 Agent 文件接口、本地 CLI，以及本地 HTTP / MCP 接口；模型账号、API Key 和实际图片生成由使用者自行配置。
+完整的文件分工、规则示例、编译流程、ASCII 制作约束及评审方式见 **[美术风格包架构详解](docs/ARCHITECTURE.md)**。
 
-## OhMyStyle Skill 的三种使用方式
+当前正式库沿用多文件风格包；新架构在独立方向文件中试点，必须显式选择。索罗亚日光油画、包豪斯纸材方法和严格 ASCII 网格的命令见 [v2 试点说明](experiments/style-v2/README.md)。试点仍待生图对照评审；旧版已保存在 `style-v1-snapshot-2026-10-18` 标签。
 
-三种入口共用同一套确认流程：内容确认 → 细节确认 → 风格匹配 → 用户确认风格 → 编译任务 → 调用生图模型。没有完成风格确认时，接口不会进入生图阶段。
+<a id="风格包画廊"></a>
 
-### 1. Agent 文件接口
+## 美术包
 
-把仓库根目录的 [`SKILL.md`](SKILL.md) 和你的需求交给具备生图能力的 Agent。Agent 会读取风格包、提出多轮确认问题，展示候选风格，等你确认后再编译任务。
+按来源浏览七类独立美术包：
 
-```text
-请使用 OhMyStyle Skill：
-1. 先确认我的主体、用途和限制；
-2. 再确认画幅、构图、光线、材质和色彩；
-3. 展示三个候选风格包及代表图；
-4. 等我确认风格后再编译和生图。
-```
+[艺术家](#艺术家) · [摄影师](#摄影师) · [设计学校](#设计学校) · [艺术流派与历史时期](#艺术流派与历史时期) · [原创预设](#原创预设) · [游戏美术](#游戏美术) · [工艺与媒介](#工艺与媒介)
 
-这种方式适合 ChatGPT、Claude Code 或其他能够读取本地文件并调用生图工具的 Agent。
-
-### 2. 本地 CLI 接口
-
-CLI 使用 JSON 文件保存会话，适合脚本、本地模型和 ComfyUI 前置编译：
-
-```powershell
-python tools/ohmystyle.py init --brief "做一张安静的临海建筑杂志封面" --output session.json
-python tools/ohmystyle.py turn --session session.json --json '{"content":{"subject":"一座临海建筑","purpose":"杂志封面"},"confirmed":true}'
-python tools/ohmystyle.py turn --session session.json --json '{"details":{"aspect_ratio":"16:9","lighting":"阴天自然光"},"confirmed":true}'
-python tools/ohmystyle.py match --session session.json --limit 5
-python tools/ohmystyle.py turn --session session.json --json '{"style_selection":{"package":"jmw-turner"},"confirmed":true}'
-python tools/ohmystyle.py compile --session session.json --output job.json
-```
-
-默认只输出模型无关的 `job.json`。需要实际生成时，再通过本地命令 Provider 或 HTTP JSON Provider 接入你自己的模型服务。
-
-### 3. HTTP / MCP 接口
-
-HTTP 服务适合本地应用或其他 Agent 调用；MCP 服务适合支持 MCP 的客户端。两者都调用同一个会话核心：
-
-```powershell
-python tools/ohmystyle_http.py --host 127.0.0.1 --port 8765
-python tools/ohmystyle_mcp.py
-```
-
-HTTP 核心路由：
-
-```text
-POST /sessions                       创建会话
-GET  /sessions/{id}                  查看阶段和待确认问题
-POST /sessions/{id}/turn             提交一轮确认
-POST /sessions/{id}/match            获取风格候选
-POST /sessions/{id}/compile          编译模型无关任务
-POST /sessions/{id}/generate         调用启动时配置的 Provider
-```
-
-MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_styles`、`ohmystyle_compile` 和 `ohmystyle_generate` 工具。HTTP 和 MCP 默认不保存 API Key，也不允许客户端提交任意命令；实际 Provider 需要由使用者自行配置。完整协议见 [`skill/README.md`](skill/README.md)。
-
-## 创作工作流
-
-如果你手里已经有照片，想把它转成杂志版式、抽象编辑或纸面作品，请先看[创作工作流](workflows/README.md)。工作流负责输入素材的观察、提炼和编排；风格包负责视觉语言，两者可以串联，但工作流不会替你固定地点、人物、物件或故事。
-
-目前登记了两个外部创作项目的兼容关系：[摄影抽象编辑](integrations/README.md#摄影抽象编辑)和[场景聚合杂志](integrations/README.md#场景聚合杂志)。它们只以链接和许可证信息的形式登记，外部 Skill、Prompt、示例图和品牌素材不包含在 OhMyStyle 中。
-
-## 风格包画廊
+按画面特征查找，请使用 [视觉特征索引](docs/VISUAL-INDEX.md)。[继承的 110 个轻量预设](#继承的-110-个轻量预设)与[交叉风格功能](#交叉风格功能)也保留在下方。
 
 主画廊只展示独立风格包。所有卡片统一使用横版 16:9 代表图，点击图片或名称进入风格包 README。
 
@@ -519,7 +468,7 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 
 [打开独立预设目录](styles/)
 
-## 交叉风格功能
+### 交叉风格功能
 
 交叉风格不作为独立风格加入上面的主画廊。它是一种可选组合机制，可以把不同风格包分别分配给媒介、光线、色彩、前景或背景等职责。
 
@@ -533,7 +482,92 @@ MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_style
 </tr>
 </table>
 
+## 使用方式
 
-## 来源与版权
+### 直接使用美术包
+
+先从画廊打开包内 README，了解媒介、视觉规则和排除项，再提供自己的主体、构图、画幅与用途。把基础提示和负面约束交给具备生图能力的 Agent 或模型；需要任务文件时可直接编译：
+
+```powershell
+python -m pip install -r requirements-dev.txt
+python tools/compile-style.py style-packages/artists/joaquin-sorolla --subject "午后日光下，一把木椅放在无装饰的院子里，无人物、无水面" --output runs/sorolla-job.json
+```
+
+这条命令使用正式包的旧版编译路径，只生成任务文件。实际生图服务由你配置；完整包内容与编译输入的区别见[架构详解](docs/ARCHITECTURE.md#文件存在与实际执行的区别)。
+
+### OhMyStyle Skill：多轮确认后使用
+
+三种入口共用同一套确认流程：内容确认 → 细节确认 → 风格匹配 → 用户确认风格 → 编译任务 → 调用生图模型。没有完成风格确认时，接口不会进入生图阶段。
+
+#### 1. Agent 文件接口
+
+把仓库根目录的 [`SKILL.md`](SKILL.md) 和你的需求交给具备生图能力的 Agent。Agent 会读取风格包、提出多轮确认问题，展示候选风格，等你确认后再编译任务。
+
+```text
+请使用 OhMyStyle Skill：
+1. 先确认我的主体、用途和限制；
+2. 再确认画幅、构图、光线、材质和色彩；
+3. 展示三个候选风格包及代表图；
+4. 等我确认风格后再编译和生图。
+```
+
+这种方式适合 ChatGPT、Claude Code 或其他能够读取本地文件并调用生图工具的 Agent。
+
+#### 2. 本地 CLI 接口
+
+CLI 使用 JSON 文件保存会话，适合脚本、本地模型和 ComfyUI 前置编译：
+
+```powershell
+python tools/ohmystyle.py init --brief "做一张安静的临海建筑杂志封面" --output session.json
+python tools/ohmystyle.py turn --session session.json --json '{"content":{"subject":"一座临海建筑","purpose":"杂志封面"},"confirmed":true}'
+python tools/ohmystyle.py turn --session session.json --json '{"details":{"aspect_ratio":"16:9","lighting":"阴天自然光"},"confirmed":true}'
+python tools/ohmystyle.py match --session session.json --limit 5
+python tools/ohmystyle.py turn --session session.json --json '{"style_selection":{"package":"jmw-turner"},"confirmed":true}'
+python tools/ohmystyle.py compile --session session.json --output job.json
+```
+
+默认只输出模型无关的 `job.json`。需要实际生成时，再通过本地命令 Provider 或 HTTP JSON Provider 接入你自己的模型服务。
+
+#### 3. HTTP / MCP 接口
+
+HTTP 服务适合本地应用或其他 Agent 调用；MCP 服务适合支持 MCP 的客户端。两者都调用同一个会话核心：
+
+```powershell
+python tools/ohmystyle_http.py --host 127.0.0.1 --port 8765
+python tools/ohmystyle_mcp.py
+```
+
+HTTP 核心路由：
+
+```text
+POST /sessions                       创建会话
+GET  /sessions/{id}                  查看阶段和待确认问题
+POST /sessions/{id}/turn             提交一轮确认
+POST /sessions/{id}/match            获取风格候选
+POST /sessions/{id}/compile          编译模型无关任务
+POST /sessions/{id}/generate         调用启动时配置的 Provider
+```
+
+MCP 提供 `ohmystyle_start_session`、`ohmystyle_turn`、`ohmystyle_match_styles`、`ohmystyle_compile` 和 `ohmystyle_generate` 工具。HTTP 和 MCP 默认不保存 API Key，也不允许客户端提交任意命令；实际 Provider 需要由使用者自行配置。完整协议见 [`skill/README.md`](skill/README.md)。
+
+### 创作工作流
+
+如果你手里已经有照片，想把它转成杂志版式、抽象编辑或纸面作品，请先看[创作工作流](workflows/README.md)。工作流负责输入素材的观察、提炼和编排；风格包负责视觉语言，两者可以串联，但工作流不会替你固定地点、人物、物件或故事。
+
+目前登记了两个外部创作项目的兼容关系：[摄影抽象编辑](integrations/README.md#摄影抽象编辑)和[场景聚合杂志](integrations/README.md#场景聚合杂志)。它们只以链接和许可证信息的形式登记，外部 Skill、Prompt、示例图和品牌素材不包含在 OhMyStyle 中。
+
+### 使用 v2 试点
+
+通过 `tools/compile-style.py --direction` 显式选择实验方向。索罗亚需要声明 `daylight`，纸材方法需要声明 `paper-study`；ASCII 需要先创作字符源，再用等宽字体逐格渲染。
+
+完整命令、输入限制和旧版独立工作区操作见 [v2 试点说明](experiments/style-v2/README.md)。目前 HTTP/MCP 会话和组合编译仍使用旧版路径。
+
+### 贡献与扩展
+
+想要新增风格包？请从[中文贡献指南](CONTRIBUTING.md)或[英文贡献指南](CONTRIBUTING.en.md)开始；模板位于 [`templates/style-package`](templates/style-package)，创建命令会生成完整目录、双语说明、来源清单、Prompt 和评估骨架。
+
+后续扩充按批次执行，数量以实际规划为准：先研究原作品和权利边界，再逐包完成风格规则、原生 16:9 代表图、生成样例、双语 README 和校验；一个包一个 commit，批次完成后再更新总画廊。完整流程见[风格包扩充工作流](docs/EXPANSION-WORKFLOW.md)，批次清单模板见 [`templates/expansion-batch.yaml`](templates/expansion-batch.yaml)。
+
+### 来源与版权
 
 请先阅读 [NOTICE](NOTICE)、[LICENSE](LICENSE)、[LICENSE-OHMYSTYLE.md](LICENSE-OHMYSTYLE.md) 和具体风格包的 `provenance.yaml`。参考作品用于研究和风格拆解，不代表复制具体作品获得授权。
