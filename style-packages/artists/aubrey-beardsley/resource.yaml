@@ -6,6 +6,7 @@ task_independent: true
 focus_dimensions: [medium, composition, palette, surface, texture]
 artifacts:
   package: package.yaml
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

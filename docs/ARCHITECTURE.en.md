@@ -164,6 +164,7 @@ the same prompt wording.
 | [Mucha ornamental poster hierarchy](../style-packages/artists/alphonse-mucha/art-direction.yaml) | Subject-to-frame hierarchy, contour-linked curves, flat lithographic color, user-controlled text | `text_only`, declare `ornamental-poster` |
 | [Anna Ancher domestic window light](../style-packages/artists/anna-ancher/art-direction.yaml) | One window-light path, reflected color across room planes, ordinary domestic scale | `text_only`, declare `window-lit-interior` |
 | [Artemisia embodied action composition](../style-packages/artists/artemisia-gentileschi/art-direction.yaml) | Countering diagonals, close action staging, local color retained in shadow | `text_only`, declare `figure-action` |
+| [Beardsley ink mass and negative space](../style-packages/artists/aubrey-beardsley/art-direction.yaml) | Black-white positive and negative shapes, calligraphic contour, selective focal detail | `text_only`, declare `black-and-white-ink-illustration` |
 
 ## 6. Execution routes
 

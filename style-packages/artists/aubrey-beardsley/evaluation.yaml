@@ -1,5 +1,15 @@
 package_id: aubrey-beardsley
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  black_and_white_ink_illustration:
+    required:
+      - black-white balance reads before fine detail
+      - calligraphic contour has deliberate weight and rhythm
+      - detail density varies and leaves broad paper areas open
+    reject_if:
+      - color or gray gradients replace ink-and-paper value design
+      - decorative motifs or borders appear without request
+      - uniform hatching makes the whole image equally dense
 invariants:
   - id: black_white_mass_balance
     weight: 3

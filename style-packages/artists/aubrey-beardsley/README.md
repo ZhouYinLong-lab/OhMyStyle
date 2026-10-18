@@ -42,3 +42,13 @@
 在 `prompts/base.txt` 中填写 `{SUBJECT}`、`{LOCATION}` 和 `{SUBJECT_ACTION}`。将基础提示与负面约束一起交给绘图工作流。该包应将用户提供的主体转译成黑白图形，不应擅自添加复古服装、花藤、文学叙事或海报文字。
 
 生成后用 `evaluation.yaml` 检查画面是否先以黑白块面成立、轮廓是否有明确的书写节奏、细节是否集中于焦点。若缩小后全画面变成同样密度的线噪声，应减少纹理并扩大留白。
+
+## 新架构：墨块、书写性轮廓与留白（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 把方向拆为三个可观察规则：先让黑白正负形在缩略尺寸成立；再以有粗细变化的书写性墨线组织轮廓；最后把精细线条限制在少数焦点。它不要求装饰边框、藤蔓、哥特道具或文学人物，与穆夏的彩色海报框架方向有明确区别。
+
+```powershell
+python tools/compile-style.py style-packages/artists/aubrey-beardsley --direction package --context black-and-white-ink-illustration --subject "A small moth resting on a cracked teacup on a plain shelf" --output runs/style-v2/aubrey-beardsley-job.json
+```
+
+该规则仍为实验状态；同题生图对照及跨主体稳定性待人工评审。

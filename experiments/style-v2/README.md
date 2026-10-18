@@ -69,6 +69,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [穆夏装饰海报](../../style-packages/artists/alphonse-mucha/art-direction.yaml) | 主体与边框层级、随形曲线、石版平涂、用户控制文字 | text_only | ornamental-poster |
 | [安娜·安彻居室窗光](../../style-packages/artists/anna-ancher/art-direction.yaml) | 单一窗光路径、跨墙地家具的反射色、日常室内尺度 | text_only | window-lit-interior |
 | [阿尔泰米西娅身体动作构图](../../style-packages/artists/artemisia-gentileschi/art-direction.yaml) | 相抵对角线、贴近动作的裁切、暗部保留局部色彩 | text_only | figure-action |
+| [比亚兹莱墨块与留白](../../style-packages/artists/aubrey-beardsley/art-direction.yaml) | 黑白正负形、书写性轮廓、焦点细节与大面积纸白 | text_only | black-and-white-ink-illustration |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 
