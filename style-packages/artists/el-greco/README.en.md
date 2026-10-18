@@ -32,6 +32,16 @@ Reference links are provided for research and visual analysis only. External art
 
 See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references/manifest.csv), and the repository [`NOTICE`](../../../NOTICE) for boundaries.
 
+## New architecture: vertical lift and flickering form (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) focuses on vertical lift in selected late Toledo paintings: selectively elongated forms, a two or three-stage upward path, and a few flickering contours or brush passages. Religious stories, saints, angels, and halos are not defaults. This also differs from Artemisia's counter-diagonals, which organize physical force in an action.
+
+```powershell
+python tools/compile-style.py style-packages/artists/el-greco --direction package --context vertical-lift-composition --subject "A person carrying a folded umbrella up a quiet stairwell" --output runs/style-v2/el-greco-job.json
+```
+
+This direction remains experimental; cross-subject and same-subject visual review is pending.
+
 ## Use only this package
 
 Choose any one of the four methods below. They are alternatives, not steps that must all be completed.

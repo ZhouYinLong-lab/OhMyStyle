@@ -32,6 +32,16 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 和仓库的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：垂直升腾与闪烁形体（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 聚焦格列柯晚期托莱多绘画中的垂直上升感：选择性拉长形体，用两到三个视觉阶段引导视线，并让少数轮廓与笔触产生闪烁节奏。它不默认宗教故事、圣徒、天使或神圣光环；也不同于阿尔泰米西娅方向以相抵对角线传达身体施力的方式。
+
+```powershell
+python tools/compile-style.py style-packages/artists/el-greco --direction package --context vertical-lift-composition --subject "A person carrying a folded umbrella up a quiet stairwell" --output runs/style-v2/el-greco-job.json
+```
+
+此方向仍为实验规则；跨主体和同题视觉评审尚未完成。
+
 ## 只使用此包
 
 四种方式可以按手边的工具任选其一，不需要同时使用。

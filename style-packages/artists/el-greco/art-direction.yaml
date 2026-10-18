@@ -1,0 +1,106 @@
+schema_version: 2.0.0
+status: experimental
+id: el-greco-vertical-lift-and-flickering-form
+name: El Greco vertical lift and flickering form
+base_package: artists/el-greco
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    A focused direction drawn from selected late Toledo paintings by El Greco.
+    Elongated but legible forms, a rising compositional path, and selective
+    cool-warm contrasts create a sense of vertical lift and unstable light.
+    Brush and contour rhythms guide the eye upward in linked intervals rather
+    than turning every edge into a flame. The direction concerns visual lift,
+    not a required religious narrative or supernatural effect.
+  required_contexts:
+    - vertical-lift-composition
+  incompatible_contexts:
+    - photorealistic-rendering
+    - grounded-horizontal-group-scene
+    - flat-geometric-layout
+  limitations:
+    - Preserve the user's requested subject, identity, count, action, and setting; do not add saints, angels, worshippers, clouds, or a religious story unless requested.
+    - Elongate or twist forms only enough to support the rising composition; keep faces, hands, and action-critical landmarks identifiable.
+    - Use luminous contrast as a local relationship between forms; do not add a halo, divine source, or supernatural glow without request.
+pillars:
+  - Arrange the requested focal form and supporting elements along a readable rising axis without changing the subject count.
+  - Stretch selected proportions and contours to reinforce upward movement while retaining identifiable anatomy or object structure.
+  - Link a few flickering edges or brush passages so the eye climbs through the composition in stages.
+  - Use cool and warm color contrasts locally to make forms feel light, weightless, or tense without a universal palette.
+rules:
+  - id: legible-elongation-for-vertical-lift
+    axis: figure_proportion_and_composition
+    importance: core
+    applies_when: The user requests a vertical or upward-moving figure or form composition.
+    instruction: Selectively lengthen or taper the requested focal forms and align their posture or axis with an upward path; preserve recognizable anatomy, object structure, and the action specified by the user.
+    observable: The forms feel elevated or drawn upward, yet their identities and relationships remain clear.
+    reject_when: Elongation is uniform or arbitrary, a user-specified body or object becomes unrecognizable, or the requested action changes.
+    evidence:
+      source_ids:
+        - elgreco-met-late-works
+        - elgreco-nga-laocoon
+      basis: institutional_description
+      visual_review: pending
+    avoid: identical stretching across all forms, arbitrary distortion, and invented figures
+  - id: rising-compositional-sequence
+    axis: compositional_direction
+    importance: core
+    applies_when: The brief calls for vertical emphasis, ascent, or a tall focal arrangement.
+    instruction: Place the requested forms, overlaps, and directional gestures so attention rises through two or three clear stages; keep supporting forms subordinate and do not create an unrequested narrative procession.
+    observable: The eye can follow a rising sequence from the lower area toward the focal point, with enough pauses to distinguish each requested form.
+    reject_when: The composition becomes a generic pyramid, the upward path is blocked by unrelated detail, or extra figures are added to manufacture a sequence.
+    evidence:
+      source_ids:
+        - elgreco-met-late-works
+        - elgreco-met-vision-john
+      basis: institutional_description
+      visual_review: pending
+    avoid: default altar arrangements, generic pyramids, and added narrative actors
+  - id: localized-flicker-and-cool-warm-contrast
+    axis: mark_making_and_color
+    importance: core
+    applies_when: The image uses painterly edges and color to reinforce a rising focal form.
+    instruction: Let a few broken or flickering brush passages follow the upward rhythm and place cool-warm contrasts on selected planes; keep other contours calm and colors attached to the depicted forms.
+    observable: Brush rhythm and color make the focal forms feel active or weightless without dissolving their structure or turning light into a special effect.
+    reject_when: Every edge flickers equally, color becomes a global blue filter, or a halo-like glow replaces local form and value.
+    evidence:
+      source_ids:
+        - elgreco-met-late-works
+        - elgreco-nga-laocoon
+      basis: institutional_description
+      visual_review: pending
+    avoid: universal flame-like edges, global blue wash, and unrequested supernatural light
+active_rule_ids:
+  - legible-elongation-for-vertical-lift
+  - rising-compositional-sequence
+  - localized-flicker-and-cool-warm-contrast
+joint_checks:
+  - id: proportion-sequence-light-coherence
+    rule_ids:
+      - legible-elongation-for-vertical-lift
+      - rising-compositional-sequence
+      - localized-flicker-and-cool-warm-contrast
+    instruction: Let selective elongation, the rising sequence, and localized flicker support the same upward movement while preserving the user's requested scene.
+    observable: The subject remains identifiable, the eye travels upward through linked forms, and color and brush rhythm heighten that movement without adding a religious or supernatural narrative.
+sources:
+  - id: elgreco-met-late-works
+    kind: museum_exhibition_analysis
+    url: https://www.metmuseum.org/exhibitions/listings/2003/el-greco
+  - id: elgreco-nga-laocoon
+    kind: museum_artwork_description
+    url: https://www.nga.gov/artworks/33253-laocoon
+  - id: elgreco-met-vision-john
+    kind: museum_teaching_resource
+    url: https://resources.metmuseum.org/resources/metpublications/pdf/Looking_to_Connect_with_European_Paintings_Visual_Approaches_for_Teaching_in_the_Galleries.pdf
+execution:
+  route: text_only
+  must:
+    - Declare the vertical-lift-composition context before applying this direction.
+    - Preserve the user's requested subject, identity, action, setting, and count.
+    - Keep elongation and upward movement selective and readable.
+    - Use local color and brush rhythm rather than a global glow or filter.
+  avoid:
+    - adding religious figures, narratives, halos, or supernatural effects without request
+    - distorting faces, hands, or objects beyond recognition
+    - filling every edge with flickering brushwork

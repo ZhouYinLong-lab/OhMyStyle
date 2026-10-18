@@ -172,6 +172,7 @@ the same prompt wording.
 | [Schiele contour tension and exposed ground](../style-packages/artists/egon-schiele/art-direction.yaml) | Directional contour, tension between form and paper ground, sparse dry color | `text_only`, declare `expressive-contour-study` |
 | [Munch subjective color and environmental rhythm](../style-packages/artists/edvard-munch/art-direction.yaml) | Local psychological color, curves linking subject and setting, selective spatial compression | `text_only`, declare `psychological-expressionist-scene` |
 | [Lissitzky Proun axonometric space](../style-packages/artists/el-lissitzky/art-direction.yaml) | Planes and volumes in shared space, coherent axonometric relations, color as spatial cue | `text_only`, declare `pictorial-architectonic-space` |
+| [El Greco vertical lift and flickering form](../style-packages/artists/el-greco/art-direction.yaml) | Selective elongation, staged upward composition, local color contrast and brush rhythm | `text_only`, declare `vertical-lift-composition` |
 
 ## 6. Execution routes
 

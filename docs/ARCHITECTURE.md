@@ -186,6 +186,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [席勒轮廓张力与纸白负形](../style-packages/artists/egon-schiele/art-direction.yaml) | 方向性轮廓、形体与纸白张力、局部干涩色块 | `text_only`，声明 `expressive-contour-study` |
 | [蒙克心理色彩与环境节奏](../style-packages/artists/edvard-munch/art-direction.yaml) | 局部心理色彩、主体与环境的曲线联动、选择性空间压缩 | `text_only`，声明 `psychological-expressionist-scene` |
 | [利西茨基 Proun 轴测空间](../style-packages/artists/el-lissitzky/art-direction.yaml) | 平面与几何体共处、轴测关系、色彩承担空间定位 | `text_only`，声明 `pictorial-architectonic-space` |
+| [格列柯垂直升腾与闪烁形体](../style-packages/artists/el-greco/art-direction.yaml) | 选择性拉长、分阶段向上构图、局部冷暖色与笔触节奏 | `text_only`，声明 `vertical-lift-composition` |
 
 ## 6. 从主体请求到结果
 

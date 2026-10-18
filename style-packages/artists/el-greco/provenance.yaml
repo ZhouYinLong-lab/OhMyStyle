@@ -1,10 +1,27 @@
 package_id: el-greco
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 research_basis:
 - title: El Greco
   creator: El Greco
   period: 晚期文艺复兴
   source_url: https://commons.wikimedia.org/w/index.php?search=El+Greco+paintings&title=Special:MediaSearch&type=image
   role: style research
+- title: El Greco
+  creator: The Metropolitan Museum of Art
+  period: 2003
+  source_url: https://www.metmuseum.org/exhibitions/listings/2003/el-greco
+  role: analysis of late works, elongated forms, expressive distortion, and color
+- title: Laocoön
+  creator: National Gallery of Art
+  period: c. 1610/1614
+  source_url: https://www.nga.gov/artworks/33253-laocoon
+  role: institutional artwork description of elongated forms, local color, and dynamic grouping; its narrative is not a package default
+- title: Looking to Connect with European Paintings
+  creator: The Metropolitan Museum of Art
+  period: 2013
+  source_url: https://resources.metmuseum.org/resources/metpublications/pdf/Looking_to_Connect_with_European_Paintings_Visual_Approaches_for_Teaching_in_the_Galleries.pdf
+  role: analysis of upward movement through elongated forms, gesture, line, light, and brushstroke
 generated_assets:
 - path: gallery-16x9.jpg
   description: New anonymous representative image
