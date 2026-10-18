@@ -200,6 +200,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [德·基里科空场、透视错位与几何长影](../style-packages/artists/giorgio-de-chirico/art-direction.yaml) | 大面积留白、有限透视失配与长影构成的可读空间谜题 | `text_only`，声明 `metaphysical-spatial-enigma` |
 | [克里姆特塑形人物与装饰平面](../style-packages/artists/gustav-klimt/art-direction.yaml) | 可读人物与平面纹样相邻，按区域控制装饰密度和金属质感 | `text_only`，声明 `modeled-figure-ornamental-field` |
 | [莫罗象征线条、宝石色与谜意](../style-packages/artists/gustave-moreau/art-direction.yaml) | 精确阿拉伯式线条、宝石色平面与局部细节形成主体清楚的想象性谜意 | `text_only`，声明 `symbolic-line-color-enigma` |
+| [马蒂斯剪纸色块与正负形节奏](../style-packages/artists/henri-matisse/art-direction.yaml) | 不透明平面色块、利落剪影边缘与主动留白构成富有节奏的画面 | `text_only`，声明 `cut-paper-color-construction` |
 | [库尔贝物质笔触与地面重量](../style-packages/artists/gustave-courbet/art-direction.yaml) | 不理想化主体、材料对应的厚涂笔触与稳固地面关系 | `text_only`，声明 `tactile-material-realism` |
 | [修拉测量式构图与分色笔触](../style-packages/artists/georges-seurat/art-direction.yaml) | 稳定剪影、经过安排的间距、随平面变化的分色笔触与光色关系 | `text_only`，声明 `measured-chromatic-composition` |
 

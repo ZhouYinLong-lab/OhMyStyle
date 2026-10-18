@@ -34,6 +34,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 和仓库的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：剪纸色块与正负形节奏（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `cut-paper-color-construction` 时启用。它将马蒂斯晚期剪纸的视觉方法抽象为少量不透明平面色块、利落的手剪边缘、主动组织的留白，以及错落的颜色间距；生成图仍需保留用户指定主体的轮廓和数量。
+
+它与克里姆特包的区别在于：马蒂斯方向依靠整体剪影、色块和留白构成画面，不依赖人物塑形、金色或密集纹样。它也不同于莫罗方向以精细曲线和神秘细节组织画面；这里强调简化的形与色，不默认加入植物、海洋生物或人物剪纸。
+
+```powershell
+python tools/compile-style.py style-packages/artists/henri-matisse --direction package --context cut-paper-color-construction --subject "One yellow pear on a plain pale-blue tabletop"
+```
+
+[`comparisons/`](comparisons/) 保存同题旧版与新版编译 job、生成提示词和实际样本；方向仍待视觉评审，保持实验状态。
+
 ## 只使用此包
 
 四种方式可以按手边的工具任选其一，不需要同时使用。

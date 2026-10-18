@@ -1,0 +1,106 @@
+schema_version: 2.0.0
+status: experimental
+id: matisse-cut-paper-color-construction
+name: Matisse cut-paper color construction
+base_package: artists/henri-matisse
+scope:
+  medium: flat_painting_or_print
+  representation: stylized
+  description: >-
+    A two-dimensional, cut-paper-inspired direction that constructs the image
+    from decisive opaque color shapes, crisp scissor-like edges, and intentional
+    positive-negative intervals. Preserve the user's requested subject and
+    count by simplifying its silhouette into a few readable cut forms. Let
+    color relationships and spacing carry movement instead of modeled volume,
+    metallic ornament, or painterly gradients.
+  required_contexts:
+    - cut-paper-color-construction
+  incompatible_contexts:
+    - photorealistic-render
+    - volumetric-oil-impasto
+    - metallic-ornamental-portrait
+  limitations:
+    - Keep the requested subject, count, action, and setting recognizable after shape simplification.
+    - Do not add a recurring plant, sea creature, figure, or cutout motif unless the user requests it.
+    - Treat paper edges as flat cut forms; do not imply a physically buildable paper sculpture.
+pillars:
+  - Translate the requested silhouette into a small number of broad, decisive, flat color shapes with clean, hand-cut-like edges.
+  - Use opaque, matte gouache-like color fields with minimal internal shading; let color and contour work together as one construction.
+  - Arrange positive forms and open negative spaces so the composition feels active without turning into a rigid grid or wallpaper pattern.
+  - Keep overlaps and color intervals legible, with scale and spacing establishing a clear visual rhythm.
+rules:
+  - id: silhouette-cut-directly-into-color
+    axis: shape_and_medium
+    importance: core
+    applies_when: The user requests a flat illustration or cut-paper-inspired treatment.
+    instruction: Build the requested subject from a few opaque flat color shapes with crisp, slightly hand-cut edges; preserve its identifying outline, count, and action instead of drawing a full contour and shading it volumetrically.
+    observable: The subject reads as an intentional arrangement of colored cut forms with little or no gradient modeling.
+    reject_when: The subject becomes a shaded 3D render, a stack of tiny fragments, or an unrecognizable abstract pattern.
+    evidence:
+      source_ids:
+        - matisse-moma-cutouts
+        - matisse-nga-cutouts
+      basis: institutional_description
+      visual_review: pending
+    avoid: photorealistic volume, tiny mosaic fragments, torn-paper distress, and unrequested subjects
+  - id: positive-negative-shape-dialogue
+    axis: composition_and_space
+    importance: core
+    applies_when: The composition includes a field around the requested subject.
+    instruction: Let the cut silhouette and surrounding open field shape one another; use a few intentional gaps and overlaps to create movement while preserving the requested setting and object count.
+    observable: Negative spaces are composed as clearly as the colored forms, and overlaps do not obscure the subject's identifying features.
+    reject_when: Every gap is filled, shapes become a rigid wallpaper grid, or added forms change the requested subject count.
+    evidence:
+      source_ids:
+        - matisse-moma-cutouts
+        - matisse-nga-large-decoration-masks
+      basis: institutional_description
+      visual_review: pending
+    avoid: busy all-over pattern, unrequested decorative motifs, and accidental extra objects
+  - id: vivid-color-interval-and-rhythm
+    axis: palette_and_rhythm
+    importance: supporting
+    applies_when: The requested image allows strong color relationships.
+    instruction: Distribute a compact set of vivid, flat color areas with varied size and spacing; use contrast and interval to move the eye without imposing an unrelated palette on the requested subject.
+    observable: Color areas feel lively but measured, with clear separation and no reliance on metallic sheen or gradient lighting.
+    reject_when: Color becomes an even checkerboard, a global filter replaces local color, or decorative rhythm overwhelms readability.
+    evidence:
+      source_ids:
+        - matisse-nga-large-decoration-masks
+        - matisse-moma-cutouts
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform grid, metallic gold, airbrushed gradients, and ornamental filigree
+active_rule_ids:
+  - silhouette-cut-directly-into-color
+  - positive-negative-shape-dialogue
+  - vivid-color-interval-and-rhythm
+joint_checks:
+  - id: cut-shape-color-and-readability
+    rule_ids:
+      - silhouette-cut-directly-into-color
+      - positive-negative-shape-dialogue
+      - vivid-color-interval-and-rhythm
+    instruction: Simplify the requested subject into a lively flat color construction while keeping its identifying silhouette, count, and open space readable.
+    observable: Subject remains recognizable; crisp color shapes, active negative space, and varied color intervals define the treatment without unrequested motifs or volumetric shading.
+sources:
+  - id: matisse-moma-cutouts
+    kind: museum_exhibition_and_technique_analysis
+    url: https://www.moma.org/interactives/exhibitions/2014/matisse/the-cut-outs.html
+  - id: matisse-nga-cutouts
+    kind: national_gallery_exhibition_analysis
+    url: https://www.nga.gov/exhibitions/henri-matisse
+  - id: matisse-nga-large-decoration-masks
+    kind: national_gallery_artwork_analysis
+    url: https://www.nga.gov/artworks/53814-large-decoration-masks
+execution:
+  route: text_only
+  must:
+    - Declare cut-paper-color-construction before applying this direction.
+    - Preserve the requested subject, count, action, and setting.
+    - Use a few flat opaque color shapes, crisp edges, and intentional negative space.
+    - Keep color rhythm varied and the subject silhouette recognizable.
+  avoid:
+    - adding plants, sea creatures, figures, or recurring cutout motifs without request
+    - shading the forms as photorealistic volume or adding metallic ornament
+    - filling the negative space with a rigid grid, wallpaper, or decorative border

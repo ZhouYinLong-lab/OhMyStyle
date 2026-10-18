@@ -1,4 +1,22 @@
 package_id: henri-matisse
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
+sources:
+- url: https://www.moma.org/interactives/exhibitions/2014/matisse/the-cut-outs.html
+  authority: The Museum of Modern Art
+  title: The Cut-Outs
+  supports: opaque gouache-painted paper cut into shapes and arranged; relationship between color and line
+  accessed: '2026-10-19'
+- url: https://www.nga.gov/exhibitions/henri-matisse
+  authority: National Gallery of Art
+  title: Henri Matisse
+  supports: freehand cut colored paper, loose arrangement, adjustment, and recombination
+  accessed: '2026-10-19'
+- url: https://www.nga.gov/artworks/53814-large-decoration-masks
+  authority: National Gallery of Art
+  title: Large Decoration with Masks
+  supports: flat vivid color shapes, varied distribution, and composed intervals
+  accessed: '2026-10-19'
 research_basis:
 - title: Henri Matisse
   creator: Henri Matisse

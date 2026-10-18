@@ -1,5 +1,16 @@
 package_id: henri-matisse
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  cut-paper-color-construction:
+    required:
+      - requested subject and count remain recognizable in simplified silhouettes
+      - opaque flat color shapes and crisp edges define the image
+      - positive and negative shapes create an intentional composition
+      - color spacing creates varied rhythm without a rigid grid
+    reject_if:
+      - unrequested plant, sea creature, figure, or decorative motif appears
+      - forms use photorealistic gradients or metallic ornament
+      - added cutouts obscure or alter the requested subject count
 invariants:
 - id: signature
   weight: 3
