@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "gerhard-richter",
+    "name": "格哈德·里希特",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\gerhard-richter"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One red suitcase and one yellow scarf on a plain concrete floor",
+  "prompt": "USER SUBJECT: One red suitcase and one yellow scarf on a plain concrete floor\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [preserve-recognition-anchors] Establish the requested subject and retain a few defining contours, proportions, or color relationships while allowing selected areas to soften or disappear.\n- [directional-drag-and-selective-smear] Drag paint in a small number of deliberate horizontal, vertical, or form-following passes; vary width and opacity, interrupt some passes, and let movement cross selected boundaries rather than softening every edge equally.\n- [layered-cover-and-reveal] Alternate opaque or translucent color deposits with selected wiping or scraping so earlier layers reappear in fragments; keep the revealed passages related to the image beneath them.\n- [legibility-movement-and-layer-coherence] Use directional movement and selective layer removal to destabilize parts of the requested image while retaining enough visual anchors for recognition.\nREQUIREMENT: Declare layered-image-veil before applying this direction.\nREQUIREMENT: Preserve the user's requested identities, counts, setting, and defining image anchors.\nREQUIREMENT: Make blur and concealment follow visible paint movement rather than a global filter.\nREQUIREMENT: Show selective layering and removal while keeping the subject partly legible.",
+  "negative_prompt": "total subject erasure, generic gaussian blur, and unrequested documentary imagery\nuniform blur, repeated digital streaks, and decorative scratch overlays\nuniform grunge, random splatter, and plastic smooth gradients\nadding historical trauma, violence, victims, weapons, or documentary subjects without request\nobscuring all identifying features or replacing the requested scene with unrelated abstraction\nusing uniform gaussian blur, repeated digital streaks, or global grunge",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "richter-layered-veil-and-squeegee-erasure",
+    "name": "Richter layered veil and squeegee erasure",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\gerhard-richter\\art-direction.yaml",
+    "sha256": "9272eddc071d70e2b5153b0bcbb223d37f7ff29dc21a394f02de4c77f592cb55",
+    "active_rule_ids": [
+      "preserve-recognition-anchors",
+      "directional-drag-and-selective-smear",
+      "layered-cover-and-reveal"
+    ],
+    "contexts": [
+      "layered-image-veil"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare layered-image-veil before applying this direction.",
+      "Preserve the user's requested identities, counts, setting, and defining image anchors.",
+      "Make blur and concealment follow visible paint movement rather than a global filter.",
+      "Show selective layering and removal while keeping the subject partly legible."
+    ],
+    "avoid": [
+      "adding historical trauma, violence, victims, weapons, or documentary subjects without request",
+      "obscuring all identifying features or replacing the requested scene with unrelated abstraction",
+      "using uniform gaussian blur, repeated digital streaks, or global grunge"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "A process-led painting direction that begins with the user's recognizable subject, then selectively veils, drags, scrapes, or reveals portions through successive paint layers. Keep a few identity-bearing contours or color anchors intact while other areas shift between image and abstraction. The effect comes from material movement and partial concealment, not a uniform blur filter or a predetermined narrative.",
+      "required_contexts": [
+        "layered-image-veil"
+      ],
+      "incompatible_contexts": [
+        "crisp-flat-vector-art",
+        "fully-photographic-output",
+        "unstructured-all-over-abstraction"
+      ],
+      "limitations": [
+        "Use only the people, objects, setting, and narrative supplied by the user; do not add historical trauma, weapons, victims, or documentary content.",
+        "Preserve enough requested contours, proportions, and color anchors for the subject to remain identifiable.",
+        "Make blur or concealment follow visible paint movement; do not apply a global digital blur or obscure every focal feature."
+      ]
+    },
+    "rules": [
+      {
+        "id": "preserve-recognition-anchors",
+        "axis": "subject_and_legibility",
+        "importance": "core",
+        "applies_when": "The user requests a recognizable subject transformed by painterly blur or concealment.",
+        "instruction": "Establish the requested subject and retain a few defining contours, proportions, or color relationships while allowing selected areas to soften or disappear.",
+        "observable": "The subject remains identifiable from surviving visual anchors even though some boundaries are obscured.",
+        "reject_when": "All defining features are lost, the subject's count changes, or a new narrative appears through the distortion.",
+        "evidence": {
+          "source_ids": [
+            "richter-met-exhibition",
+            "richter-met-photo-painting"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "total subject erasure, generic gaussian blur, and unrequested documentary imagery"
+      },
+      {
+        "id": "directional-drag-and-selective-smear",
+        "axis": "mark_movement_and_edges",
+        "importance": "core",
+        "applies_when": "The user requests a visible painted dragging or smearing process.",
+        "instruction": "Drag paint in a small number of deliberate horizontal, vertical, or form-following passes; vary width and opacity, interrupt some passes, and let movement cross selected boundaries rather than softening every edge equally.",
+        "observable": "Distortion has visible direction and varied stroke widths; some contours remain sharp while others dissolve into paint.",
+        "reject_when": "Every contour receives the same soft blur, marks lack direction, or smearing reads as motion blur added after painting.",
+        "evidence": {
+          "source_ids": [
+            "richter-met-exhibition",
+            "richter-sfmoma-abstract-picture"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform blur, repeated digital streaks, and decorative scratch overlays"
+      },
+      {
+        "id": "layered-cover-and-reveal",
+        "axis": "paint_layers_and_surface",
+        "importance": "supporting",
+        "applies_when": "The painting should reveal a visible history of application and removal.",
+        "instruction": "Alternate opaque or translucent color deposits with selected wiping or scraping so earlier layers reappear in fragments; keep the revealed passages related to the image beneath them.",
+        "observable": "Overlapping coats, exposed underlayers, and scraped transitions remain visible without forming an evenly distributed grunge texture.",
+        "reject_when": "The surface looks like a single overlay, underlayers appear as arbitrary noise, or every area has equal abrasion.",
+        "evidence": {
+          "source_ids": [
+            "richter-met-exhibition",
+            "richter-sfmoma-abstract-picture"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform grunge, random splatter, and plastic smooth gradients"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "legibility-movement-and-layer-coherence",
+        "rule_ids": [
+          "preserve-recognition-anchors",
+          "directional-drag-and-selective-smear",
+          "layered-cover-and-reveal"
+        ],
+        "instruction": "Use directional movement and selective layer removal to destabilize parts of the requested image while retaining enough visual anchors for recognition.",
+        "observable": "The requested subject is identifiable; blur follows paint movement; applied and removed layers remain materially visible and selective."
+      }
+    ],
+    "sources": [
+      {
+        "id": "richter-met-exhibition",
+        "kind": "museum_exhibition_guide",
+        "url": "https://www.metmuseum.org/exhibitions/listings/2020/gerhard-richter-painting-after-all/exhibition-guide"
+      },
+      {
+        "id": "richter-met-photo-painting",
+        "kind": "museum_collection_analysis",
+        "url": "https://www.metmuseum.org/art/collection/search/285143"
+      },
+      {
+        "id": "richter-sfmoma-abstract-picture",
+        "kind": "museum_artwork_analysis",
+        "url": "https://www.sfmoma.org/artwork/FC.314.1/"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "9272eddc071d70e2b5153b0bcbb223d37f7ff29dc21a394f02de4c77f592cb55",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

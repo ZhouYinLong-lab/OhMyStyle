@@ -38,6 +38,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。代表图中的花瓶和衣物只是测试主体。
 
+## 新架构：颜料覆盖、拖拽与局部显露（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `layered-image-veil` 时启用。它先建立用户指定的可辨认主体，再用方向明确的涂层拖拽、覆盖和擦除打断部分轮廓；保留少量识别锚点，让画面在具象残留与抽象颜料层之间摆动。
+
+这与培根方向通过封闭框架和局部轮廓偏移建立空间压力不同；里希特方向的重心是颜料覆盖与移除的过程。规则不把历史创伤、暴力或纪录影像设成默认题材，也不把全局数字模糊当作绘画痕迹。
+
+```powershell
+python tools/compile-style.py style-packages/artists/gerhard-richter --direction package --context layered-image-veil --subject "One red suitcase and one yellow scarf on a plain concrete floor"
+```
+
+[`comparisons/`](comparisons/) 收录同一主体的旧版与新版提示词及对应生图，供直接比较；方向仍为实验状态。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

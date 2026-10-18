@@ -1,2 +1,4 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 gerhard-richter-primary-source,,Painting After All,The Metropolitan Museum of Art,,https://www.metmuseum.org/exhibitions/listings/2020/gerhard-richter-painting-after-all/exhibition-guide,link_only,来源资料：大都会艺术博物馆展览指南；本包为独立视觉研究与重构。,primary,仅保留链接，不打包外部作品。
+richter-met-photo-painting,,Gustave Flaubert sieht seine Geliebte,Gerhard Richter,,https://www.metmuseum.org/art/collection/search/285143,link_only,No reproduction; reference for photo-based blur and surface sheen.,primary,Link only; do not copy the source image or composition.
+richter-sfmoma-abstract-picture,,Abstraktes Bild (Abstract Picture),Gerhard Richter,1988,https://www.sfmoma.org/artwork/FC.314.1/,link_only,No reproduction; reference for squeegee movement and layered paint removal.,primary,Link only; do not copy the source image or composition.

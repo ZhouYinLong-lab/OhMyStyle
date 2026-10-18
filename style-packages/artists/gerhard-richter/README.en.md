@@ -50,6 +50,18 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## New architecture: paint veil, dragging, and selective reveal (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when `layered-image-veil` is explicitly declared. First establish the user's recognizable subject, then interrupt selected contours with directional paint dragging, covering, and scraping. Retain a few recognition anchors so the image shifts between representational remnants and abstract paint layers.
+
+This differs from Bacon's direction, which creates spatial pressure through an enclosing frame and local contour shifts. Richter's direction centers the process of applying and removing paint. Historical trauma, violence, documentary imagery, and global digital blur are not default content or effects.
+
+```powershell
+python tools/compile-style.py style-packages/artists/gerhard-richter --direction package --context layered-image-veil --subject "One red suitcase and one yellow scarf on a plain concrete floor"
+```
+
+[`comparisons/`](comparisons/) contains legacy and new prompts plus generated images of the same subject for direct comparison. This direction remains experimental.
+
 ## Use only this package
 
 Choose one of the following methods.

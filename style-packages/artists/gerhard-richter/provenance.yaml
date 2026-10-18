@@ -1,12 +1,23 @@
 package_id: gerhard-richter
-package_version: 0.1.0
-curation_status: curated_demo
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
   - url: 'https://www.metmuseum.org/exhibitions/listings/2020/gerhard-richter-painting-after-all/exhibition-guide'
     title: 'Gerhard Richter: Painting After All'
     authority: 'The Metropolitan Museum of Art'
     supports: source traceability and package scope
+    accessed: '2026-10-19'
+  - url: https://www.metmuseum.org/art/collection/search/285143
+    title: "Gerhard Richter, Gustave Flaubert sieht seine Geliebte"
+    authority: The Metropolitan Museum of Art
+    supports: blur and cool surface sheen in a photo-based painting
+    accessed: '2026-10-19'
+  - url: https://www.sfmoma.org/artwork/FC.314.1/
+    title: "Gerhard Richter, Abstraktes Bild (Abstract Picture), 1988"
+    authority: San Francisco Museum of Modern Art
+    supports: successive paint layers, squeegee dragging, blending, and scraping
+    accessed: '2026-10-19'
 
 attribution: 本包提取可观察的媒介与视觉决策，不宣称与艺术家存在合作、授权或背书关系，也不复制具体作品。
 rights_notes:

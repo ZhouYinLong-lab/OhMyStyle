@@ -182,6 +182,7 @@ the same prompt wording.
 | [Delacroix chromatic motion and brushwork](../style-packages/artists/eugene-delacroix/art-direction.yaml) | Warm-cool interaction, legible action vector, material-sensitive brush rhythm | `text_only`, declare `chromatic-dynamic-scene` |
 | [Bacon enclosed space and localized distortion](../style-packages/artists/francis-bacon/art-direction.yaml) | Frame-compressed space, localized contour shift, visible overpaint and scrape layers | `text_only`, declare `enclosed-figurative-tension` |
 | [Zurbarán ordered still life and focused side light](../style-packages/artists/francisco-de-zurbaran/art-direction.yaml) | Spacing of user-specified objects, single lateral light, restrained ground, and material distinction | `text_only`, declare `ordered-object-still-life` |
+| [Richter layered veil and squeegee erasure](../style-packages/artists/gerhard-richter/art-direction.yaml) | Preserve recognition anchors while directional dragging and selective layer removal shift between image and abstraction | `text_only`, declare `layered-image-veil` |
 | [Seurat measured composition and divided-color marks](../style-packages/artists/georges-seurat/art-direction.yaml) | Stable silhouettes, deliberate intervals, plane-sensitive separated marks, and optical light | `text_only`, declare `measured-chromatic-composition` |
 
 ## 6. Execution routes

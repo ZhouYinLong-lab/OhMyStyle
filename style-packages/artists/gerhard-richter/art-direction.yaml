@@ -1,0 +1,106 @@
+schema_version: 2.0.0
+status: experimental
+id: richter-layered-veil-and-squeegee-erasure
+name: Richter layered veil and squeegee erasure
+base_package: artists/gerhard-richter
+scope:
+  medium: oil_painting
+  representation: stylized
+  description: >-
+    A process-led painting direction that begins with the user's recognizable
+    subject, then selectively veils, drags, scrapes, or reveals portions through
+    successive paint layers. Keep a few identity-bearing contours or color
+    anchors intact while other areas shift between image and abstraction. The
+    effect comes from material movement and partial concealment, not a uniform
+    blur filter or a predetermined narrative.
+  required_contexts:
+    - layered-image-veil
+  incompatible_contexts:
+    - crisp-flat-vector-art
+    - fully-photographic-output
+    - unstructured-all-over-abstraction
+  limitations:
+    - Use only the people, objects, setting, and narrative supplied by the user; do not add historical trauma, weapons, victims, or documentary content.
+    - Preserve enough requested contours, proportions, and color anchors for the subject to remain identifiable.
+    - Make blur or concealment follow visible paint movement; do not apply a global digital blur or obscure every focal feature.
+pillars:
+  - Establish a readable base image from the user's requested subject before disrupting it.
+  - Apply broad and narrow dragged passages that cross or follow selected forms, allowing some edges to dissolve while retaining other edges as anchors.
+  - Build successive coats and scrape or wipe through selected areas so earlier colors remain visible beneath later paint.
+  - Balance representational remnants with abstract passages through selective concealment, not random destruction.
+rules:
+  - id: preserve-recognition-anchors
+    axis: subject_and_legibility
+    importance: core
+    applies_when: The user requests a recognizable subject transformed by painterly blur or concealment.
+    instruction: Establish the requested subject and retain a few defining contours, proportions, or color relationships while allowing selected areas to soften or disappear.
+    observable: The subject remains identifiable from surviving visual anchors even though some boundaries are obscured.
+    reject_when: All defining features are lost, the subject's count changes, or a new narrative appears through the distortion.
+    evidence:
+      source_ids:
+        - richter-met-exhibition
+        - richter-met-photo-painting
+      basis: institutional_description
+      visual_review: pending
+    avoid: total subject erasure, generic gaussian blur, and unrequested documentary imagery
+  - id: directional-drag-and-selective-smear
+    axis: mark_movement_and_edges
+    importance: core
+    applies_when: The user requests a visible painted dragging or smearing process.
+    instruction: Drag paint in a small number of deliberate horizontal, vertical, or form-following passes; vary width and opacity, interrupt some passes, and let movement cross selected boundaries rather than softening every edge equally.
+    observable: Distortion has visible direction and varied stroke widths; some contours remain sharp while others dissolve into paint.
+    reject_when: Every contour receives the same soft blur, marks lack direction, or smearing reads as motion blur added after painting.
+    evidence:
+      source_ids:
+        - richter-met-exhibition
+        - richter-sfmoma-abstract-picture
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform blur, repeated digital streaks, and decorative scratch overlays
+  - id: layered-cover-and-reveal
+    axis: paint_layers_and_surface
+    importance: supporting
+    applies_when: The painting should reveal a visible history of application and removal.
+    instruction: Alternate opaque or translucent color deposits with selected wiping or scraping so earlier layers reappear in fragments; keep the revealed passages related to the image beneath them.
+    observable: Overlapping coats, exposed underlayers, and scraped transitions remain visible without forming an evenly distributed grunge texture.
+    reject_when: The surface looks like a single overlay, underlayers appear as arbitrary noise, or every area has equal abrasion.
+    evidence:
+      source_ids:
+        - richter-met-exhibition
+        - richter-sfmoma-abstract-picture
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform grunge, random splatter, and plastic smooth gradients
+active_rule_ids:
+  - preserve-recognition-anchors
+  - directional-drag-and-selective-smear
+  - layered-cover-and-reveal
+joint_checks:
+  - id: legibility-movement-and-layer-coherence
+    rule_ids:
+      - preserve-recognition-anchors
+      - directional-drag-and-selective-smear
+      - layered-cover-and-reveal
+    instruction: Use directional movement and selective layer removal to destabilize parts of the requested image while retaining enough visual anchors for recognition.
+    observable: The requested subject is identifiable; blur follows paint movement; applied and removed layers remain materially visible and selective.
+sources:
+  - id: richter-met-exhibition
+    kind: museum_exhibition_guide
+    url: https://www.metmuseum.org/exhibitions/listings/2020/gerhard-richter-painting-after-all/exhibition-guide
+  - id: richter-met-photo-painting
+    kind: museum_collection_analysis
+    url: https://www.metmuseum.org/art/collection/search/285143
+  - id: richter-sfmoma-abstract-picture
+    kind: museum_artwork_analysis
+    url: https://www.sfmoma.org/artwork/FC.314.1/
+execution:
+  route: text_only
+  must:
+    - Declare layered-image-veil before applying this direction.
+    - Preserve the user's requested identities, counts, setting, and defining image anchors.
+    - Make blur and concealment follow visible paint movement rather than a global filter.
+    - Show selective layering and removal while keeping the subject partly legible.
+  avoid:
+    - adding historical trauma, violence, victims, weapons, or documentary subjects without request
+    - obscuring all identifying features or replacing the requested scene with unrelated abstraction
+    - using uniform gaussian blur, repeated digital streaks, or global grunge

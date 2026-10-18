@@ -15,6 +15,15 @@ profiles:
     required:
       - material drag and layered surface remain visible
       - object identity is not replaced by a fixed vase or prop
+  layered-image-veil:
+    required:
+      - subject remains identifiable from a few surviving contours or color anchors
+      - paint movement has direction and varied width rather than uniform digital blur
+      - scraped and covered layers expose a visible history of application and removal
+    reject_if:
+      - all identifying information is erased or subject count changes
+      - violence or historical documentary content appears without request
+      - global blur or grunge replaces selective material marks
 minimum_score: 7
 
 semantic_evaluation:
