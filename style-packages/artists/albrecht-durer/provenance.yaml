@@ -1,10 +1,22 @@
 package:
   name: 阿尔布雷希特·丢勒
+  version: 0.2.0
   source_type: artist
   source_url: 'https://www.metmuseum.org/art/collection/search/336219'
   source_title: 'The Metropolitan Museum of Art: The Promenade'
 reference_policy: link_only
 rights_note: 'The cited museum record identifies a public-domain, open-access reference; this package stores the link only and does not redistribute the artwork.'
+sources:
+  - url: https://www.nga.gov/artworks/6637-knight-death-and-devil
+    title: Knight, Death and Devil
+    authority: National Gallery of Art
+    supports: fine hatching and cross-hatching model deep shadows on cream-white paper
+    accessed: 2026-10-19
+  - url: https://www.metmuseum.org/pt/essays/the-printed-image-in-the-west-engraving
+    title: 'The Printed Image in the West: Engraving'
+    authority: The Metropolitan Museum of Art
+    supports: fine line density and line variation contribute form, texture, and shading
+    accessed: 2026-10-19
 generated_demo:
   policy: original_anonymous_scene
   source_artwork_copied: false

@@ -9,6 +9,7 @@ focus_dimensions:
 - lighting
 artifacts:
   package: package.yaml
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

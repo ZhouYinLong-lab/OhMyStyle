@@ -51,3 +51,13 @@ Apply a Northern Renaissance printmaking language: precise contour drawing, disc
 3. 选择一种执行方式：把风格包交给具备生图能力的 Agent；复制 Prompt 到生图平台并配置自己的 API Key；或将 Prompt、参考清单和调色板导入本地模型与 ComfyUI 工作流。
 4. 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或可识别资产。
 5. 模型、API Key、生成图片和存储由使用者自行管理；本仓库不托管在线生图服务。
+
+## 新架构：刻线、明暗与材质（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 把明暗写成随形线条：先确立轮廓，再用顺着形体的平行排线表现中间调，最深处才少量交叉加密；亮部保留纸白，材质通过线组方向和疏密区分。它不会自动加入历史人物、动物、宗教叙事或丢勒签名。
+
+```powershell
+python tools/compile-style.py style-packages/artists/albrecht-durer --direction package --subject "An ordinary ceramic cup on a windowsill" --output runs/style-v2/durer-job.json
+```
+
+方向仍处于实验状态。美国国家美术馆与大都会艺术博物馆关于版画线条和排线的资料支持这些观察；跨材质与跨题材表现仍待评审。

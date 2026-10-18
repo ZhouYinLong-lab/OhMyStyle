@@ -48,3 +48,13 @@ The package extracts observable visual cues from public institutional or officia
 3. Choose one execution method: give the package to an image-capable Agent; copy the prompt to an image platform with your own API key; or import the prompt, reference list, and palette into a local model and ComfyUI workflow.
 4. Use references to understand observable features. Do not copy the source composition, people, text, trademarks, or identifiable assets.
 5. The user manages the model, API key, generated images, and storage. This repository does not host an online image service.
+
+## New architecture: engraved line, value, and material (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) treats value as form-following linework: establish the contour, use aligned parallel hatching for middle values, add limited cross-hatching only in the deepest shadows, and preserve paper for highlights. Distinguish requested materials through stroke direction and density. Do not add historical figures, animals, religious narratives, or a Dürer signature by default.
+
+```powershell
+python tools/compile-style.py style-packages/artists/albrecht-durer --direction package --subject "An ordinary ceramic cup on a windowsill" --output runs/style-v2/durer-job.json
+```
+
+This direction remains experimental. National Gallery of Art and Met material on engraving lines and hatching supports these observations; cross-material and cross-subject stability remain pending.

@@ -160,6 +160,7 @@ the same prompt wording.
 | [Friedrich human scale and vastness](../style-packages/artists/caspar-david-friedrich/art-direction.yaml) | Open space, finite human scale, selective visibility of distance | `text_only`, declare `landscape-view` |
 | [O'Keeffe close observation and form](../style-packages/artists/georgia-okeeffe/art-direction.yaml) | Enlarged user-selected form, simplified color shapes, form-following negative space | `text_only`, declare `close-observation` |
 | [Riley serial rhythm and perceptual motion](../style-packages/artists/bridget-riley/art-direction.yaml) | Geometric progression, adjacent contrast, flat-plane optical movement | `text_only`, declare `abstract-field` |
+| [Dürer engraved line and value structure](../style-packages/artists/albrecht-durer/art-direction.yaml) | Contour first, form-following hatch, paper highlights, material-specific line groups | `text_only` |
 
 ## 6. Execution routes
 

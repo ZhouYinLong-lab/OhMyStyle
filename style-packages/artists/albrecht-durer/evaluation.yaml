@@ -1,3 +1,15 @@
+package_id: albrecht-durer
+package_version: 0.2.0
+profiles:
+  generic:
+    required:
+      - contour establishes subject before fine detail
+      - hatch direction follows form and line density explains value
+      - paper highlights remain visible
+    reject_if:
+      - cross-hatching is uniform across the image
+      - a signature, monogram, or historical motif appears without request
+
 semantic_evaluation:
   subject_independence:
     score: null

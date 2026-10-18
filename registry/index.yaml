@@ -29,7 +29,7 @@ packages:
   - surface
   - texture
   - lighting
-  reference_count: 1
+  reference_count: 3
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: false
