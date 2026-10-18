@@ -1,0 +1,99 @@
+schema_version: 2.0.0
+status: experimental
+id: chagall-chromatic-echo-floating-pair
+name: Chagall chromatic-echo floating pair
+base_package: artists/marc-chagall
+scope:
+  medium: oil_and_gouache_painting
+  representation: stylized
+  description: >-
+    An optional poetic still-life or figure direction for a user-specified pair.
+    The two forms drift across a loose diagonal with unequal scale or tilt; a
+    small accent hue repeats between them so color carries a visual reply.
+    A compressed or gently tilted ground can support their distance, while
+    generous open intervals keep the pair distinct. No third figure, animal,
+    moon, village, or narrative is implied.
+  required_contexts:
+    - chromatic-echo-floating-pair
+  incompatible_contexts:
+    - centered-mirrored-emblem
+    - strict-grounded-product-display
+    - photorealistic-static-pair
+  limitations:
+    - Use only when the user requests two figures or objects with a relationship that can be shown through placement or color.
+    - Preserve exactly the user-specified pair, their identities, color roles, and any requested interaction.
+    - Use color echo only between the specified pair; do not add connecting symbols or narrative motifs.
+    - Keep the background compressed or gently tilted only when compatible with the request.
+    - Do not copy a named painting, folk scene, village arrangement, or recognizable motif.
+pillars:
+  - Place the two requested forms at unequal scales and along a loose diagonal so they appear to answer one another across open space.
+  - Repeat one user-approved accent hue in both forms as a small color echo; keep their main local colors distinct.
+  - Let the shared color relationship carry the visual connection without adding a drawn line, emblem, or third object.
+  - Use a calm, tilted or compressed ground plane only as a supporting field, with clear brush edges and quiet intervals.
+rules:
+  - id: unequal-diagonal-pair
+    axis: composition_and_scale
+    importance: core
+    applies_when: The user requests exactly two figures or objects with a visual relationship.
+    instruction: Arrange the requested pair across a loose off-center diagonal using unequal scale or rotation; preserve the user-specified interaction and leave open space between the forms.
+    observable: The pair reads as related but not mirrored, with a clear directional movement across the field.
+    reject_when: Forms become a centered emblem, lose their requested interaction, or a third form is inserted to explain their relationship.
+    evidence:
+      source_ids:
+        - moma-i-and-the-village
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: mirrored symmetry, fixed scale ratios, and copied figure placement
+  - id: reciprocal-accent-echo
+    axis: palette_and_relation
+    importance: core
+    applies_when: The user allows a shared accent color across both requested forms.
+    instruction: Repeat one limited accent hue in a small area of each form while preserving their main colors; make the echo visible enough to link them but too local to become a global wash.
+    observable: The viewer notices a color response between the pair while each form retains its own silhouette and local color.
+    reject_when: The accent overwhelms either form, becomes an all-over tint, or alters a user-specified color assignment.
+    evidence:
+      source_ids:
+        - moma-i-and-the-village
+      basis: institutional_description
+      visual_review: pending
+    avoid: global color filters, rainbow gradients, and new symbolic color motifs
+  - id: open-dream-space
+    axis: spatial_ground_and_negative_space
+    importance: supporting
+    applies_when: The user requests a dreamlike, compressed, or open painted setting.
+    instruction: Keep a gentle tilt or compression in the supporting ground if the brief permits, and preserve generous quiet intervals around the floating pair.
+    observable: The ground supports the pair without forcing a single horizon or turning open space into unrequested scenery.
+    reject_when: Perspective breaks obscure the objects, or a village, moon, landscape, or other scenery appears without request.
+    evidence:
+      source_ids:
+        - moma-i-and-the-village
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: forced horizon, unrequested village setting, and added dream symbols
+active_rule_ids:
+  - unequal-diagonal-pair
+  - reciprocal-accent-echo
+  - open-dream-space
+joint_checks:
+  - id: paired-color-conversation
+    rule_ids:
+      - unequal-diagonal-pair
+      - reciprocal-accent-echo
+      - open-dream-space
+    instruction: Let two unequal forms drift across open space and answer through a small repeated accent color, while keeping their identities and user-specified relationship clear.
+    observable: Scale, diagonal placement, and color echo link the pair without adding a story or third symbol.
+sources:
+  - id: moma-i-and-the-village
+    kind: museum_collection_audio_analysis
+    url: https://www.moma.org/audio/playlist/296/85
+execution:
+  route: text_only
+  must:
+    - Activate only for a user-specified pair with a visual relationship.
+    - Preserve the requested pair, identities, interaction, and color roles.
+    - Use unequal scale or tilt along a loose diagonal with open intervals.
+    - Echo one accent color between the two forms without adding a connector or third object.
+  avoid:
+    - adding a human figure, animal, moon, village, or symbol unless requested
+    - turning the pair into a logo, mirror image, or global color filter
+    - copying I and the Village or another named composition

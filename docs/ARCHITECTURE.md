@@ -217,6 +217,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [达·芬奇分层手部结构研究](../style-packages/artists/leonardo-da-vinci/art-direction.yaml) | 多视图手部比较、腕关节轴对齐与表层—骨骼分离 | `text_only`，声明 `layered-hand-mechanics-study` |
 | [卡林顿三阶段物质蜕变](../style-packages/artists/leonora-carrington/art-direction.yaml) | 用户指定对象从原态、过渡态到变化态；细节集中于形体变化处 | `text_only`，声明 `three-state-material-metamorphosis` |
 | [布尔乔亚布料可见修补](../style-packages/artists/louise-bourgeois/art-direction.yaml) | 针脚穿过真实拼接缝，修补和织物立体感集中于连接处 | `text_only`，声明 `visible-mending-textile-assembly` |
+| [夏加尔漂浮双主体与色彩回声](../style-packages/artists/marc-chagall/art-direction.yaml) | 两个主体不等尺度斜向漂浮，以局部重复色建立呼应 | `text_only`，声明 `chromatic-echo-floating-pair` |
 
 ## 6. 从主体请求到结果
 

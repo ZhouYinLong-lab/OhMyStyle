@@ -28,6 +28,20 @@ People, objects, places, architecture, plants, vehicles, and narrative come
 from your prompt. Concrete scenes in this package are examples or tests only
 and must never be added as default content.
 
+## Optional direction: floating pair with chromatic echo
+
+The art-direction.yaml file registers an experimental direction for two user-specified subjects and their relationship. The pair floats at unequal scales or angles along a loose diagonal, while a small accent color repeats locally between them so color carries a visual reply. It does not add people, animals, a moon, a village, or symbolic objects by default. Declare chromatic-echo-floating-pair when compiling; the legacy package's floating space and uneven color remain the default.
+
+### Generated comparison using the same pair of objects
+
+Both images show a red ceramic cup and a blue paper kite. The direction version repeats the cup's red in a kite panel and echoes the kite's blue along the cup rim, while retaining different scales, floating positions, and the warm ground. The model still changes some local colors and contours.
+
+| Legacy default path | New floating-pair direction |
+| --- | --- |
+| ![Chagall legacy two-object sample](comparisons/legacy.png) | ![Chagall chromatic-echo direction sample](comparisons/direction.png) |
+
+Compiled jobs: [legacy-job.json](comparisons/legacy-job.json), [direction-job.json](comparisons/direction-job.json). Generation prompts and review notes: [generation-prompts.md](comparisons/generation-prompts.md).
+
 ## Read before use
 
 - `identity.yaml`: scope, subjects, and exclusions

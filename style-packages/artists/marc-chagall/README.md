@@ -22,6 +22,20 @@
 
 本包只决定“怎么生成”，不决定“生成什么”。人物、物体、地点、建筑、植物、车辆和叙事由你的 Prompt 决定；本包中的具体场景只属于示例或测试，不会作为默认主体加入生成结果。
 
+## 可选新方向：漂浮双主体与色彩回声
+
+art-direction.yaml 登记一个实验方向，只用于用户指定的两个主体及其关系。它让两者以不同尺度或角度沿松散斜线漂浮，并在各自局部重复一种小面积强调色，让颜色承担彼此呼应的作用。它不默认添加人物、动物、月亮、村庄或象征物。编译时声明 chromatic-echo-floating-pair；原包的漂浮空间和不均匀色彩仍是旧版默认。
+
+### 同一对物件的生成对照
+
+两张图都表现红陶杯与蓝纸风筝。新版在风筝上重复杯子的红色、在杯沿回响风筝的蓝色，同时保留不同尺度、漂浮位置和暖色地面；模型对局部颜色和轮廓仍有改动。
+
+| 旧版默认路径 | 新版漂浮双主体 |
+| --- | --- |
+| ![夏加尔旧版双物件样图](comparisons/legacy.png) | ![夏加尔新版色彩回声样图](comparisons/direction.png) |
+
+任务文件：[legacy-job.json](comparisons/legacy-job.json)、[direction-job.json](comparisons/direction-job.json)；生成提示和评审记录：[generation-prompts.md](comparisons/generation-prompts.md)。
+
 ## 使用前先看
 
 - `identity.yaml`：范围、对象和排除项

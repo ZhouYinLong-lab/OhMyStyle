@@ -203,6 +203,7 @@ the same prompt wording.
 | [Leonardo layered hand-mechanics study](../style-packages/artists/leonardo-da-vinci/art-direction.yaml) | Comparative hand views, aligned wrist and joint axes, and separated surface and skeletal structures | `text_only`, declare `layered-hand-mechanics-study` |
 | [Carrington three-state material metamorphosis](../style-packages/artists/leonora-carrington/art-direction.yaml) | User-requested source, transition, and changed forms with detail focused at the transformation | `text_only`, declare `three-state-material-metamorphosis` |
 | [Bourgeois visible textile mending](../style-packages/artists/louise-bourgeois/art-direction.yaml) | Stitches cross actual joins, with repair and textile relief focused at connections | `text_only`, declare `visible-mending-textile-assembly` |
+| [Chagall floating pair with chromatic echo](../style-packages/artists/marc-chagall/art-direction.yaml) | Two unequal forms float along a loose diagonal and share a small repeating accent hue | `text_only`, declare `chromatic-echo-floating-pair` |
 
 ## 6. Execution routes
 

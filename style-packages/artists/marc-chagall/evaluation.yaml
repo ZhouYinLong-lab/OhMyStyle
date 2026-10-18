@@ -1,4 +1,14 @@
 profiles:
+  chromatic-echo-floating-pair:
+    required:
+      - exactly the user-specified pair remains visible
+      - pair placement follows a loose diagonal with unequal scale or orientation
+      - a limited accent hue repeats across the two forms to create a visible relationship
+      - the pair stays legible against the tilted or compressed ground
+    reject_if:
+      - extra figures, animals, moons, village motifs, or symbols appear without request
+      - repeated color becomes a global filter
+      - the two objects become a mirrored logo-like emblem
   generic:
     required:
       - package-specific visual signature is observable
