@@ -2,7 +2,7 @@ id: diego-velazquez
 name: 迭戈·委拉斯开兹
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 entity: catalog/persons/artists/diego-velazquez/entity.yaml
 summary: >-
   A court and portrait painting profile built from controlled dark space, selective illumination, precise faces and fabrics, and lively broad passages that dissolve at the edges.
@@ -16,6 +16,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist

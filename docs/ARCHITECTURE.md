@@ -181,6 +181,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 | [比亚兹莱墨块与留白](../style-packages/artists/aubrey-beardsley/art-direction.yaml) | 黑白正负形、书写性轮廓、焦点细节与大面积纸白 | `text_only`，声明 `black-and-white-ink-illustration` |
 | [莫里索手势笔触与开放边缘](../style-packages/artists/berthe-morisot/art-direction.yaml) | 动势笔触、选择性软边、可见底色与疏密差 | `text_only`，声明 `open-brush-figure-painting` |
 | [里维拉公共叙事壁画层次](../style-packages/artists/diego-rivera/art-direction.yaml) | 相连叙事层次、人物与环境共尺度、远距可读的大色面 | `text_only`，声明 `public-narrative-mural` |
+| [委拉斯开兹目光、纵深与选择性精确](../style-packages/artists/diego-velazquez/art-direction.yaml) | 群像视线组织、暗部空间纵深、焦点细节与宽松背景笔触 | `text_only`，声明 `observed-interior-portrait` |
 
 ## 6. 从主体请求到结果
 

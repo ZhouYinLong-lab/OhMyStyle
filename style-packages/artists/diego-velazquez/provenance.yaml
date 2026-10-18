@@ -1,5 +1,5 @@
 package_id: diego-velazquez
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_images_verified
 source_policy: Historical works are bundled only where the cited source marks the work or reproduction public domain; generated examples are new anonymous scenes.
 sources:
@@ -11,4 +11,19 @@ sources:
     authority: Wikimedia Commons
     supports: secondary public-domain reference image and work attribution
     accessed: 2026-08-06
+  - url: https://www.museodelprado.es/en/whats-on/multimedia/las-meninas-diego-velazquez/c43f1c8d-e6c9-a8c2-44dc-0c9be2e10177
+    authority: Museo Nacional del Prado
+    title: Las Meninas, easy-to-read artwork
+    supports: light and perspective creating depth in an interior and a complex social gaze structure
+    accessed: 2026-10-19
+  - url: https://www.nationalgallery.org.uk/paintings/diego-velazquez-philip-iv-of-spain
+    authority: The National Gallery, London
+    title: Philip IV of Spain
+    supports: free late brushwork, selective facial detail, and economical paint marks for highlights
+    accessed: 2026-10-19
+  - url: https://www.metmuseum.org/art/collection/search/437869
+    authority: The Metropolitan Museum of Art
+    title: Juan de Pareja
+    supports: lively and convincing portrait presence
+    accessed: 2026-10-19
 attribution: Historical works remain attributed to Diego Velázquez and their source institutions. This independent package claims no affiliation.

@@ -1,0 +1,103 @@
+schema_version: 2.0.0
+status: experimental
+id: velazquez-gaze-depth-and-selective-precision
+name: Velázquez gaze, depth, and selective precision
+base_package: artists/diego-velazquez
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: >-
+    An observed-interior-portrait direction that connects people through gaze
+    and posture, creates depth through overlapping dark planes and selective
+    illumination, and reserves crisp detail for a few focal features. Painterly
+    looseness remains active around those anchors without dissolving the room.
+  required_contexts:
+    - observed-interior-portrait
+  incompatible_contexts:
+    - open-air-landscape
+    - isolated-product-still-life
+    - high-key-abstract-field
+  limitations:
+    - Preserve the requested people, identities, count, relationships, and setting; do not add a mirror, doorway, court costume, attendant, or painter figure unless requested.
+    - Use gaze and posture to connect requested people or a person and task; do not force anyone to look at the viewer.
+    - Let selective light clarify the requested scene without turning it into a theatrical spotlight or copying a known portrait arrangement.
+pillars:
+  - Distribute gaze and body orientation to create a readable social or observational exchange.
+  - Build room depth through overlapping forms, controlled dark planes, and any light opening already established by the user.
+  - Keep eyes, hands, and user-designated focal details precise while allowing surrounding cloth and architecture to resolve in broader paint.
+  - Let visible brushwork shift with attention, from crisp focal marks to economical background passages.
+rules:
+  - id: gaze-posture-exchange
+    axis: figure_relationships
+    importance: core
+    applies_when: The requested scene includes multiple people or a person engaged with another subject.
+    instruction: Use the requested gaze directions, head turns, and posture to create a path of attention among the figures, their task, or an explicitly requested viewer; keep each gesture natural and specific to the brief.
+    observable: A viewer can infer who attends to whom or what, and the relationships read without added narrative props.
+    reject_when: All figures stare forward by default, their gazes have no relation to the scene, or unrequested social drama is introduced.
+    evidence:
+      source_ids:
+        - velazquez-prado-meninas
+        - velazquez-national-gallery-philip
+      basis: institutional_description
+      visual_review: pending
+    avoid: forced direct gaze, copied group poses, and invented courtly interaction
+  - id: layered-dark-room-depth
+    axis: space_and_lighting
+    importance: core
+    applies_when: The user requests an interior portrait or group scene with visible spatial depth.
+    instruction: Separate foreground, figure plane, and background with overlap and restrained changes in value; use a coherent patch or opening of light only when the requested setting provides one, and keep shadowed architecture legible.
+    observable: Space recedes behind the figures without relying on a black void, a universal spotlight, or an invented architectural feature.
+    reject_when: Background and figures collapse into one flat dark mass, or dramatic light overwhelms the requested people.
+    evidence:
+      source_ids:
+        - velazquez-prado-meninas
+      basis: institutional_description
+      visual_review: pending
+    avoid: unrequested mirrors or doorways, blacked-out rooms, and theatrical beams
+  - id: focal-precision-with-broad-passages
+    axis: mark_making_and_edges
+    importance: core
+    applies_when: A portrait or group scene has a few clear points of attention.
+    instruction: Use precise, economical marks for eyes, hands, and focal materials; let less important garments and room surfaces resolve through broader, freer strokes, preserving enough edge information to identify the forms.
+    observable: Detail density follows attention, and broad passages feel intentional rather than unfinished or uniformly blurred.
+    reject_when: Every surface is rendered with equal sharpness, or loose marks erase the requested expression and action.
+    evidence:
+      source_ids:
+        - velazquez-national-gallery-philip
+        - velazquez-met-juan-pareja
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform photorealistic detail, random brush texture, and global soft focus
+active_rule_ids:
+  - gaze-posture-exchange
+  - layered-dark-room-depth
+  - focal-precision-with-broad-passages
+joint_checks:
+  - id: gaze-depth-detail-coherence
+    rule_ids:
+      - gaze-posture-exchange
+      - layered-dark-room-depth
+      - focal-precision-with-broad-passages
+    instruction: Let gaze organize the requested relationships, layered value carry the room, and selective precision direct attention without adding a narrative motif.
+    observable: People and space form a coherent observed scene; focal details are clear while secondary passages remain broad and painterly.
+sources:
+  - id: velazquez-prado-meninas
+    kind: museum_artwork_analysis
+    url: https://www.museodelprado.es/en/whats-on/multimedia/las-meninas-diego-velazquez/c43f1c8d-e6c9-a8c2-44dc-0c9be2e10177
+  - id: velazquez-national-gallery-philip
+    kind: museum_artwork_description
+    url: https://www.nationalgallery.org.uk/paintings/diego-velazquez-philip-iv-of-spain
+  - id: velazquez-met-juan-pareja
+    kind: museum_artwork_description
+    url: https://www.metmuseum.org/art/collection/search/437869
+execution:
+  route: text_only
+  must:
+    - Declare the observed-interior-portrait context before applying this direction.
+    - Preserve the requested people, relationships, and room.
+    - Use gaze and posture to organize attention without forcing direct eye contact.
+    - Concentrate crisp detail at focal features and keep shadowed space readable.
+  avoid:
+    - adding mirrors, doorways, court figures, or a painter at an easel without request
+    - turning selective light into a theatrical spotlight
+    - applying equal sharpness or blur across the whole image

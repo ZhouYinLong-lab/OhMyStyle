@@ -26,12 +26,25 @@
 
 - [https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Las_Meninas.jpg](https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Las_Meninas.jpg)
 - [https://commons.wikimedia.org/wiki/File:Retrato_de_Juan_Pareja](https://commons.wikimedia.org/wiki/File:Retrato_de_Juan_Pareja)
+- [普拉多博物馆：容易理解的《宫娥》](https://www.museodelprado.es/en/whats-on/multimedia/las-meninas-diego-velazquez/c43f1c8d-e6c9-a8c2-44dc-0c9be2e10177)
+- [伦敦国家美术馆：腓力四世肖像](https://www.nationalgallery.org.uk/paintings/diego-velazquez-philip-iv-of-spain)
+- [大都会艺术博物馆：胡安·德·帕雷哈](https://www.metmuseum.org/art/collection/search/437869)
 
 ## 来源与版权
 
 参考资料用于研究和视觉分析。外部作品、摄影作品、游戏画面、商标和平台页面仍归原权利人所有。生成示例是新的匿名场景，不是相关艺术家或摄影师的原作，也不代表合作或授权关系。
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 和仓库的 [`NOTICE`](../../../NOTICE)。
+
+## 新架构：目光、纵深与选择性精确（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在用户要求的室内肖像或群像中启用：用人物视线与姿态组织关系，以叠合和明暗建立房间纵深，再把精细笔触留给眼睛、手和少数焦点。它不默认镜子、门口、宫廷服饰或特定群像布局；也不同于卡拉瓦乔方向以单一强光和近景动作作为中心。
+
+```powershell
+python tools/compile-style.py style-packages/artists/diego-velazquez --direction package --context observed-interior-portrait --subject "Three musicians rehearsing in a dim room, one listening while another checks the sheet music" --output runs/style-v2/diego-velazquez-job.json
+```
+
+此方向仍为实验规则；同题生图对照和跨主体稳定性待人工评审。
 
 ## 只使用此包
 

@@ -167,6 +167,7 @@ the same prompt wording.
 | [Beardsley ink mass and negative space](../style-packages/artists/aubrey-beardsley/art-direction.yaml) | Black-white positive and negative shapes, calligraphic contour, selective focal detail | `text_only`, declare `black-and-white-ink-illustration` |
 | [Morisot gesture and open-edge painting](../style-packages/artists/berthe-morisot/art-direction.yaml) | Gesture-led strokes, selective released edges, visible ground, variable finish density | `text_only`, declare `open-brush-figure-painting` |
 | [Rivera public narrative registers](../style-packages/artists/diego-rivera/art-direction.yaml) | Connected narrative registers, shared scale for people and environment, distance-readable color planes | `text_only`, declare `public-narrative-mural` |
+| [Velázquez gaze, depth, and selective precision](../style-packages/artists/diego-velazquez/art-direction.yaml) | Gaze organizes group relationships, dark values create room depth, focal details against broad passages | `text_only`, declare `observed-interior-portrait` |
 
 ## 6. Execution routes
 

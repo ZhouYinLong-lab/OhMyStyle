@@ -1,5 +1,15 @@
 package_id: diego-velazquez
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  observed_interior_portrait:
+    required:
+      - gaze and posture organize attention among requested people or tasks
+      - layered values create readable space without a black void
+      - facial and hand anchors are precise while secondary paint remains broad
+    reject_if:
+      - mirror, doorway, attendant, or court costume appears without request
+      - every figure faces the viewer by default
+      - detail or blur is uniform across all forms
 invariants:
 - id: signature_primary
   weight: 3

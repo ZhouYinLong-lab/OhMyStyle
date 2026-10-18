@@ -26,12 +26,25 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 - [https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Las_Meninas.jpg](https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Las_Meninas.jpg)
 - [https://commons.wikimedia.org/wiki/File:Retrato_de_Juan_Pareja](https://commons.wikimedia.org/wiki/File:Retrato_de_Juan_Pareja)
+- [Museo del Prado: Las Meninas, easy-to-read artwork](https://www.museodelprado.es/en/whats-on/multimedia/las-meninas-diego-velazquez/c43f1c8d-e6c9-a8c2-44dc-0c9be2e10177)
+- [The National Gallery: Philip IV of Spain](https://www.nationalgallery.org.uk/paintings/diego-velazquez-philip-iv-of-spain)
+- [The Met: Juan de Pareja](https://www.metmuseum.org/art/collection/search/437869)
 
 ## Sources and rights
 
 References are used for research and visual analysis. External artworks, photographs, game imagery, trademarks, and source pages remain with their respective rights holders. Generated examples are anonymous new scenes, not works by the referenced creator, and do not imply endorsement or authorization.
 
 See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references/manifest.csv), and the repository [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
+
+## New architecture: gaze, depth, and selective precision (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) applies to requested interior portraits and group portraits. It uses gaze and posture to organize relationships, overlap and value to establish room depth, then reserves precise marks for eyes, hands, and a few focal details. It does not default to mirrors, doorways, court dress, or a specific group arrangement; it also differs from Caravaggio's direction, which centers on single-source light and close action.
+
+```powershell
+python tools/compile-style.py style-packages/artists/diego-velazquez --direction package --context observed-interior-portrait --subject "Three musicians rehearsing in a dim room, one listening while another checks the sheet music" --output runs/style-v2/diego-velazquez-job.json
+```
+
+This direction remains experimental; same-subject comparisons and stability across subjects still need human review.
 
 ## Use only this package
 
