@@ -214,6 +214,7 @@ the same prompt wording.
 | [Gauguin outlined figure and selective ground texture](../style-packages/artists/paul-gauguin/art-direction.yaml) | A user-specified figure uses a continuous contour and flat color while one limited ground patch has looser surface handling | `text_only`, declare `single-figure-flat-ground` |
 | [Klee active line and independent color field](../style-packages/artists/paul-klee/art-direction.yaml) | Active lines describe a requested mechanism while a translucent color field builds shallow space and leaves paper visible | `text_only`, declare `simple-moving-mechanical-object` |
 | [Bruegel activities linked by a landscape route](../style-packages/artists/pieter-bruegel-the-elder/art-direction.yaml) | User-requested actions sit at different depths and a route guides the viewer through them in sequence | `text_only`, declare `landscape-with-multiple-activities` |
+| [Rubens diagonal sweep of selective light](../style-packages/artists/peter-paul-rubens/art-direction.yaml) | One diagonal light path touches only planes facing the source and leaves overlaps in colored shadow | `text_only`, declare `multi-figure-scene-with-directed-light` |
 
 ## 6. Execution routes
 

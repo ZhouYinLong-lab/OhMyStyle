@@ -79,3 +79,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 [evaluation.yaml](evaluation.yaml) 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 实验方向：斜向光带与选择性高光
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 适用于用户指定多人物和明确方向光源的场景：一条斜向光路只照亮朝向光源的部分脸部、肢体或布料，其他重叠面保留有色暗部。方向不会自动增加神话、宗教或宫廷题材。见 [`comparisons/`](comparisons/README.md) 查看同一双人排练场景的对照；规则仍处于实验状态。

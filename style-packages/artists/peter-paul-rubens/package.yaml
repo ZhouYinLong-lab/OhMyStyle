@@ -2,10 +2,11 @@ id: peter-paul-rubens
 name: 彼得·保罗·鲁本斯
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以充满动势的斜向构图、肉身与布料的丰润体积、温暖高光和厚薄交错的油彩组织画面，保持主体开放。
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml

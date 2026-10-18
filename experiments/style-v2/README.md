@@ -119,6 +119,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [高更轮廓人物与选择性背景肌理](../../style-packages/artists/paul-gauguin/art-direction.yaml) | 单人物以连续轮廓和平色突出，有限背景区保留更自由的混色 | text_only | single-figure-flat-ground |
 | [克利活动线与独立色场](../../style-packages/artists/paul-klee/art-direction.yaml) | 活动线描述用户指定的机械物件，透明色域独立组织浅空间并保留纸面 | text_only | simple-moving-mechanical-object |
 | [勃鲁盖尔沿景观路径串联活动](../../style-packages/artists/pieter-bruegel-the-elder/art-direction.yaml) | 用户指定的多种活动按远近层次排列，并由路径引导视线逐步发现 | text_only | landscape-with-multiple-activities |
+| [鲁本斯斜向光带与选择性高光](../../style-packages/artists/peter-paul-rubens/art-direction.yaml) | 一条斜向光路选择性照亮朝向光源的平面，重叠面保留有色暗部 | text_only | multi-figure-scene-with-directed-light |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 

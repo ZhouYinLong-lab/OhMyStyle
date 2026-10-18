@@ -1,2 +1,3 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 peter-paul-rubens-primary-source,,彼得·保罗·鲁本斯绘画与素描展览资料,大都会艺术博物馆,,https://www.metmuseum.org/exhibitions/listings/2005/rubens-drawings,来源资料链接；不在本包重新分发图像,大都会艺术博物馆：鲁本斯展览资料,primary,Link-only source record; verify redistribution before bundling any image.
+peter-paul-rubens-nga-phaeton,,The Fall of Phaeton,Peter Paul Rubens,c. 1604/1605,https://www.nga.gov/artworks/71349-fall-phaeton,link-only research reference,National Gallery of Art,primary,NGA visual description informs the optional diagonal selective-light rule; the painting is not bundled or used as a generation input.

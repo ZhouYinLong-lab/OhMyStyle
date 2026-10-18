@@ -1,0 +1,151 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "peter-paul-rubens",
+    "name": "彼得·保罗·鲁本斯",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\peter-paul-rubens"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Two adult dancers rehearsing a turning lift on a bare stage, one in plain deep blue rehearsal clothes and the other in an ochre wrap skirt; one warm stage lamp high at the upper right, deep quiet studio shadows, horizontal 16:9.",
+  "prompt": "USER SUBJECT: Two adult dancers rehearsing a turning lift on a bare stage, one in plain deep blue rehearsal clothes and the other in an ochre wrap skirt; one warm stage lamp high at the upper right, deep quiet studio shadows, horizontal 16:9.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting_on_canvas\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [single-sweep-light-path] Carry the specified light as one broad diagonal path across part of the group; let it touch selected faces, limbs, or fabric planes according to their orientation while leaving intervening areas in shadow.\n- [selective-plane-highlights] Place warm highlights only on planes facing the requested source; retain deep, colored shadow in overlaps and on turned-away surfaces so the bodies do not read as evenly lit.\n- [lit-gesture-cascade] Let the selective highlights move across the requested figures in a readable diagonal order, preserving each pose and keeping the main action clear within the group.\n- [diagonal-light-volume-legibility] Let the requested directional source cross the group in one diagonal sweep, picking out selected planes so light clarifies the existing poses while shadows retain color and volume.\nREQUIREMENT: Activate only for a user-requested multi-figure scene with specified directional lighting.\nREQUIREMENT: Preserve the specified light source and direction, requested figures, counts, poses, identities, and clothing.\nREQUIREMENT: Apply one diagonal path of selective illumination and retain deep colored shadow.\nREQUIREMENT: Review the light path, plane orientation, highlight continuity, and pose readability.",
+  "negative_prompt": "unrequested spotlight, glowing outline, and copied beam placement\nfull-figure spotlight, gray monochrome shadows, and blown highlights\nadded figures, theatrical smoke, and narrative symbols\nadding mythological, religious, courtly, winged, or allegorical subject matter unless requested\ninventing a spotlight or changing the requested light source\ncopying the scene, figures, or lighting arrangement of *The Fall of Phaeton*",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "rubens-diagonal-selective-light",
+    "name": "Rubens diagonal band of selective light",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\peter-paul-rubens\\art-direction.yaml",
+    "sha256": "ede566213f16e870e05fd0bd0eabc9153488b17828b5b88f74b8f497b29a4ae5",
+    "active_rule_ids": [
+      "single-sweep-light-path",
+      "selective-plane-highlights",
+      "lit-gesture-cascade"
+    ],
+    "contexts": [
+      "multi-figure-scene-with-directed-light"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested multi-figure scene with specified directional lighting.",
+      "Preserve the specified light source and direction, requested figures, counts, poses, identities, and clothing.",
+      "Apply one diagonal path of selective illumination and retain deep colored shadow.",
+      "Review the light path, plane orientation, highlight continuity, and pose readability."
+    ],
+    "avoid": [
+      "adding mythological, religious, courtly, winged, or allegorical subject matter unless requested",
+      "inventing a spotlight or changing the requested light source",
+      "copying the scene, figures, or lighting arrangement of *The Fall of Phaeton*"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting_on_canvas",
+      "representation": "stylized",
+      "description": "An optional lighting direction for a user-requested multi-figure scene with a specified directional light source. Let one broad diagonal path of light cross the group, catching only the body and fabric planes turned toward it; keep the spaces between those highlights in deep colored shadow. The light organizes movement and volume but does not introduce a new event, source, costume, or narrative.",
+      "required_contexts": [
+        "multi-figure-scene-with-directed-light"
+      ],
+      "incompatible_contexts": [
+        "diffuse-even-lighting",
+        "isolated-product-photography",
+        "flat-graphic-silhouette"
+      ],
+      "limitations": [
+        "Activate only for a user-requested multi-figure scene with a specified directional light source.",
+        "Preserve all requested people, identities, poses, clothing, props, actions, and the stated source and direction of light.",
+        "Illuminate only planes plausibly facing the specified light; do not change anatomy or invent a second source to brighten shadow areas.",
+        "Keep highlights warm but retain deep colored shadows and intermediate tones; do not wash out skin, cloth, or materials.",
+        "Do not add mythological, religious, winged, courtly, or allegorical figures unless the user requests them.",
+        "Do not copy the composition, poses, lighting layout, or figures of a named Rubens work."
+      ]
+    },
+    "rules": [
+      {
+        "id": "single-sweep-light-path",
+        "axis": "directional-light_and_composition",
+        "importance": "core",
+        "applies_when": "The user specifies a directional light source in a multi-figure scene.",
+        "instruction": "Carry the specified light as one broad diagonal path across part of the group; let it touch selected faces, limbs, or fabric planes according to their orientation while leaving intervening areas in shadow.",
+        "observable": "The viewer can trace one dominant diagonal sequence of lit planes, and some requested forms remain in colored shadow.",
+        "reject_when": "Light becomes a uniform wash, several competing beams appear, or illumination contradicts the user's source direction.",
+        "evidence": {
+          "source_ids": [
+            "nga-rubens-fall-phaeton"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "unrequested spotlight, glowing outline, and copied beam placement"
+      },
+      {
+        "id": "selective-plane-highlights",
+        "axis": "highlight_and_shadow_modeling",
+        "importance": "core",
+        "applies_when": "The specified light crosses moving or overlapping figures.",
+        "instruction": "Place warm highlights only on planes facing the requested source; retain deep, colored shadow in overlaps and on turned-away surfaces so the bodies do not read as evenly lit.",
+        "observable": "The highlighted areas form broken, selective patches across the group rather than complete pale figures or continuous rim light.",
+        "reject_when": "Skin, clothing, and props lose their local colors, or shadows flatten into featureless black.",
+        "evidence": {
+          "source_ids": [
+            "nga-rubens-fall-phaeton"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "full-figure spotlight, gray monochrome shadows, and blown highlights"
+      },
+      {
+        "id": "lit-gesture-cascade",
+        "axis": "figure_group_and_gesture",
+        "importance": "supporting",
+        "applies_when": "The user requests interacting or overlapping figures.",
+        "instruction": "Let the selective highlights move across the requested figures in a readable diagonal order, preserving each pose and keeping the main action clear within the group.",
+        "observable": "Light reinforces the requested action and overlap; it does not turn the group into anonymous fragments.",
+        "reject_when": "The light sequence obscures a face, limb relation, prop, or identity cue.",
+        "evidence": {
+          "source_ids": [
+            "nga-rubens-fall-phaeton"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "added figures, theatrical smoke, and narrative symbols"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "diagonal-light-volume-legibility",
+        "rule_ids": [
+          "single-sweep-light-path",
+          "selective-plane-highlights",
+          "lit-gesture-cascade"
+        ],
+        "instruction": "Let the requested directional source cross the group in one diagonal sweep, picking out selected planes so light clarifies the existing poses while shadows retain color and volume.",
+        "observable": "The lighting has a clear source and path; highlighted planes connect across the group, yet every person's pose and local color remain legible."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nga-rubens-fall-phaeton",
+        "kind": "museum_collection_description",
+        "url": "https://www.nga.gov/artworks/71349-fall-phaeton"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "ede566213f16e870e05fd0bd0eabc9153488b17828b5b88f74b8f497b29a4ae5",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

@@ -42,3 +42,7 @@ See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/man
 4. Connect the prompt, palette, reproduction notes, and reference manifest to a local model or ComfyUI workflow.
 
 Do not copy a source work's exact composition, figures, text, trademark, logo, game asset, or fixed subject. Users manage model weights, API keys, generated images, and storage themselves.
+
+## Experimental direction: diagonal sweep of selective light
+
+The optional direction in [`art-direction.yaml`](art-direction.yaml) applies to a user-requested multi-figure scene with a specified directional light source. One diagonal path of light touches only planes facing that source, while overlaps and turned-away forms keep deep colored shadow. It adds no mythological, religious, or courtly subject matter by default. See [`comparisons/`](comparisons/README.md) for a paired rehearsal-scene probe; the rules remain experimental.
