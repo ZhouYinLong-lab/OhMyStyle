@@ -44,6 +44,16 @@
 
 详细来源和再分发边界见 [provenance.yaml](provenance.yaml)、[references/manifest.csv](references/manifest.csv) 以及仓库根目录的 [NOTICE](../../../NOTICE)。
 
+## 新架构：直接色块与压缩空间（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `modern-life-color-plane` 时启用。新版明确要求并置局部色块、保持经过安排的构图，并在焦点处保留较清晰的轮廓与笔触层级。它和德加偏斜、快照式的取景区分开来；不默认添加巴黎咖啡馆、酒吧或特定人物。
+
+```powershell
+python tools/compile-style.py style-packages/artists/edouard-manet --direction package --context modern-life-color-plane --subject "A florist arranging a small display at a neighborhood shop counter" --output runs/style-v2/edouard-manet-job.json
+```
+
+该方向仍为实验规则；同题与跨主体视觉评审待完成。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

@@ -44,6 +44,16 @@ External artworks, photographs, trademarks, and platform pages remain the proper
 
 See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/manifest.csv), and the repository [NOTICE](../../../NOTICE) for the detailed boundary.
 
+## New architecture: direct color and compressed space (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `modern-life-color-plane`. It makes adjacent local color patches, deliberate composition, and selective contour and brushwork around the focal forms explicit. It differs from Degas's oblique, snapshot-like framing and does not default to Paris cafés, bars, or particular figures.
+
+```powershell
+python tools/compile-style.py style-packages/artists/edouard-manet --direction package --context modern-life-color-plane --subject "A florist arranging a small display at a neighborhood shop counter" --output runs/style-v2/edouard-manet-job.json
+```
+
+This direction remains experimental; same-subject and cross-subject visual review is pending.
+
 ## Use this package only
 
 Choose one of the following methods.

@@ -1,4 +1,13 @@
 profiles:
+  modern-life-color-plane:
+    required:
+      - local colors remain distinct in adjacent patches
+      - composition is deliberate even when some paint passages remain open
+      - compressed space preserves the requested focal action and object identity
+    reject_if:
+      - a café, bar, nude figure, Paris landmark, or named composition is added without request
+      - all edges become uniformly vague or uniformly outlined
+      - palette alone substitutes for the visual rules
   generic:
     required:
       - package-specific visual signature is observable

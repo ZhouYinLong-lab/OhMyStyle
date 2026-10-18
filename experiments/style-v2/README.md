@@ -83,6 +83,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [透纳天气、光线与运动](../../style-packages/artists/jmw-turner/art-direction.yaml) | 渐进的空气透视、颜料层次中的暖冷光、一条清楚的运动向量 | text_only | atmospheric-weather-motion |
 | [戈雅心理肖像与选择性笔触](../../style-packages/artists/francisco-goya/art-direction.yaml) | 表情与姿态、背景与面部笔触尺度差异、克制的明暗分离 | text_only | psychological-portrait |
 | [伍德乡土景观图案与垂直节奏](../../style-packages/artists/grant-wood/art-direction.yaml) | 滚动地形与竖向轮廓、路径引导、地域细节的克制组织 | text_only | composed-regional-landscape |
+| [马奈直接色块与压缩空间](../../style-packages/artists/edouard-manet/art-direction.yaml) | 并置色块、经过安排的压缩空间、焦点处的轮廓与笔触层级 | text_only | modern-life-color-plane |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 
