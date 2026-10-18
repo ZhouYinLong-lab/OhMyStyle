@@ -32,6 +32,16 @@ Reference links are provided for research and visual analysis only. External art
 
 See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references/manifest.csv), and the repository [`NOTICE`](../../../NOTICE) for boundaries.
 
+## New architecture: psychological portrait and selective brushwork (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `psychological-portrait`. It focuses on the sitter's expressive presence, differences in brush scale between ground and face, and restrained highlights when appropriate. It differs from Kahlo's shallow space and user-authored symbolic relations; it does not automatically add direct eye contact, violence, or grotesque subjects.
+
+```powershell
+python tools/compile-style.py style-packages/artists/francisco-goya --direction package --context psychological-portrait --subject "A retired lighthouse keeper in a worn wool jacket, looking down thoughtfully" --output runs/style-v2/francisco-goya-job.json
+```
+
+This direction remains experimental; same-subject and cross-subject visual review is pending.
+
 ## Use only this package
 
 Choose any one of the four methods below. They are alternatives, not steps that must all be completed.

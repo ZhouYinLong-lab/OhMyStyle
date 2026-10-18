@@ -1,0 +1,106 @@
+schema_version: 2.0.0
+status: experimental
+id: goya-psychological-portrait-and-brushwork
+name: Goya psychological portrait and brushwork
+base_package: artists/francisco-goya
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: >-
+    A portrait direction that gives psychological presence through a specific
+    expression, gaze, and restrained gesture. A dark, energetically brushed
+    ground can frame a more carefully resolved face and selected clothing
+    details, with a small amount of light separating the sitter from the
+    surrounding field. It is a portrait method, not a requirement for darkness,
+    direct eye contact, or a named historical identity.
+  required_contexts:
+    - psychological-portrait
+  incompatible_contexts:
+    - glossy-fashion-editorial
+    - decorative-patterned-group-portrait
+    - mandatory-horror-imagery
+  limitations:
+    - Preserve the requested identity, age, expression, pose, clothing, background, and count.
+    - Keep psychological character grounded in requested facial expression and posture; do not invent trauma or narrative.
+    - Use a dark ground only when it suits the requested portrait; do not default to violence, grotesque imagery, or self-portraiture.
+pillars:
+  - Make the sitter's expression and gaze carry the portrait's psychological presence without forcing direct eye contact.
+  - Contrast broad, active background marks with finer selected treatment on the face and requested focal details.
+  - Let restrained light clarify face, collar, or hands against a darker field when the user's setting supports it.
+  - Keep the sitter physically recognizable and socially situated rather than turning expressive paint into caricature.
+rules:
+  - id: expression-led-psychological-presence
+    axis: portrait_expression
+    importance: core
+    applies_when: The user requests a portrait whose expression or mood matters.
+    instruction: Preserve the requested facial expression and pose; build presence through subtle gaze direction, facial tension, and a restrained gesture instead of adding symbolic props or forcing a stare at the viewer.
+    observable: The sitter feels individually present, with expression and posture supporting the requested mood.
+    reject_when: The gaze is forced, features become caricature, or an unrequested narrative is implied.
+    evidence:
+      source_ids:
+        - goya-prado-self-portrait-1815
+        - goya-prado-portrait-analysis
+      basis: institutional_description
+      visual_review: pending
+    avoid: mandatory direct gaze, self-portrait substitution, and invented distress
+  - id: active-ground-and-selective-detail
+    axis: brushwork_and_focus
+    importance: core
+    applies_when: A portrait uses a visible painted background and a clear focal sitter.
+    instruction: Use broader, more energetic marks in the ground and reserve finer, more controlled passages for the face and a few requested details; keep the brushwork contrast selective so the sitter remains readable.
+    observable: Background and focal passages differ in mark scale and detail density, while both remain visibly painted.
+    reject_when: Every area has equal detail, the ground competes with the face, or surface marks become a generic roughness filter.
+    evidence:
+      source_ids:
+        - goya-prado-self-portrait-1815
+        - goya-prado-portrait-analysis
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform high-frequency texture, unfinished-face effect, and global brush filter
+  - id: restrained-light-against-ground
+    axis: light_and_value
+    importance: supporting
+    applies_when: The user requests a portrait with a dark or subdued background.
+    instruction: Separate the sitter with a restrained value contrast, letting light clarify the requested facial planes and selected clothing materials while preserving detail in shadow.
+    observable: The face is legible without a spotlight halo, and darker passages retain material and tonal variation.
+    reject_when: The face is overexposed, the background becomes featureless black, or digital glow replaces painted value transitions.
+    evidence:
+      source_ids:
+        - goya-prado-self-portrait-1815
+        - goya-prado-self-portrait-early
+      basis: institutional_description
+      visual_review: pending
+    avoid: theatrical spotlight, black cutout background, and digital halo
+active_rule_ids:
+  - expression-led-psychological-presence
+  - active-ground-and-selective-detail
+  - restrained-light-against-ground
+joint_checks:
+  - id: sitter-presence-through-mark-and-light
+    rule_ids:
+      - expression-led-psychological-presence
+      - active-ground-and-selective-detail
+      - restrained-light-against-ground
+    instruction: Let expression, differentiated brushwork, and restrained value contrast support one coherent portrait without inventing a story.
+    observable: The requested sitter stays recognizable and primary; paint activity and light clarify rather than dramatize beyond the brief.
+sources:
+  - id: goya-prado-self-portrait-1815
+    kind: museum_artwork_description
+    url: https://www.museodelprado.es/en/the-collection/art-work/self-portrait/a3bf3226-62ba-44f2-9b94-aa7155c3c488
+  - id: goya-prado-self-portrait-early
+    kind: museum_artwork_description
+    url: https://www.museodelprado.es/en/the-collection/art-work/self-portrait/93d004b2-c4a6-428a-96fe-7c52b1283af7
+  - id: goya-prado-portrait-analysis
+    kind: museum_exhibition_analysis
+    url: https://www.museodelprado.es/en/whats-on/exhibition/goya-drawings-only-my-strength-of-will-remains/802339bb-1b74-8f92-d9ac-091244d4e474
+execution:
+  route: text_only
+  must:
+    - Declare psychological-portrait before applying this direction.
+    - Preserve the requested sitter, expression, pose, identity, and background.
+    - Use differentiated mark scale and detail density to clarify the portrait focal point.
+    - Apply dark-ground lighting only when supported by the requested scene.
+  avoid:
+    - adding Goya or another named person, self-portrait cues, violence, or grotesque imagery without request
+    - forcing direct eye contact or inventing psychological trauma
+    - copying a named portrait's pose, clothing, light, or composition

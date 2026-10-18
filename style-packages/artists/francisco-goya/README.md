@@ -32,6 +32,16 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 和仓库的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：心理肖像与选择性笔触（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `psychological-portrait` 时启用。方向关注表情和姿态的心理存在感、背景与面部的笔触尺度差异，以及按需使用的克制亮部。它与卡罗方向的浅背景、个人象征关系不同；不自动加入直视观者、暴力或怪诞题材。
+
+```powershell
+python tools/compile-style.py style-packages/artists/francisco-goya --direction package --context psychological-portrait --subject "A retired lighthouse keeper in a worn wool jacket, looking down thoughtfully" --output runs/style-v2/francisco-goya-job.json
+```
+
+该方向仍为实验规则；同题与跨主体视觉评审待完成。
+
 ## 只使用此包
 
 四种方式可以按手边的工具任选其一，不需要同时使用。

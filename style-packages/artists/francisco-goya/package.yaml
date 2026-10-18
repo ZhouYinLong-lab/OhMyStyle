@@ -2,7 +2,7 @@ id: francisco-goya
 name: 弗朗西斯科·戈雅
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: Independent Francisco Goya style package focused on 心理张力、暗色现实、粗粝笔触与不安静默;
   it requires new subjects and arrangements.
 files:
@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist

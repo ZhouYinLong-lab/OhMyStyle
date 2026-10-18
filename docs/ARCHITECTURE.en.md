@@ -176,6 +176,7 @@ the same prompt wording.
 | [Kahlo frontal presence and personal symbolic relations](../style-packages/artists/frida-kahlo/art-direction.yaml) | Frontal portrait presence, shallow space, relationships among user-specified objects | `text_only`, declare `intimate-symbolic-portrait` |
 | [Cassatt figure and decorative plane](../style-packages/artists/mary-cassatt/art-direction.yaml) | Modeled figure against flatter pattern, decorative color planes, scene-led viewpoint | `text_only`, declare `patterned-domestic-figure-scene` |
 | [Turner weather, light, and motion](../style-packages/artists/jmw-turner/art-direction.yaml) | Graduated atmospheric depth, layered warm-cool light, one legible movement vector | `text_only`, declare `atmospheric-weather-motion` |
+| [Goya psychological portrait and selective brushwork](../style-packages/artists/francisco-goya/art-direction.yaml) | Expression and posture, contrasting mark scale, restrained value separation | `text_only`, declare `psychological-portrait` |
 
 ## 6. Execution routes
 

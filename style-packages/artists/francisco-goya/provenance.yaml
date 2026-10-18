@@ -1,10 +1,24 @@
 package_id: francisco-goya
+package_version: 0.2.0
 research_basis:
 - title: Francisco Goya
   creator: Francisco Goya
   period: 浪漫主义前夜
   source_url: https://commons.wikimedia.org/w/index.php?search=Francisco+Goya&title=Special:MediaSearch&type=image
   role: style research
+- title: Self-Portrait, 1815
+  creator: Francisco de Goya
+  period: 1815
+  source_url: https://www.museodelprado.es/en/the-collection/art-work/self-portrait/a3bf3226-62ba-44f2-9b94-aa7155c3c488
+  role: institutional analysis of mark contrast and light
+- title: Self-Portrait
+  creator: Francisco de Goya
+  source_url: https://www.museodelprado.es/en/the-collection/art-work/self-portrait/93d004b2-c4a6-428a-96fe-7c52b1283af7
+  role: institutional analysis of gaze and figure-ground light
+- title: 'Goya Drawings: Only My Strength of Will Remains'
+  creator: Museo Nacional del Prado
+  source_url: https://www.museodelprado.es/en/whats-on/exhibition/goya-drawings-only-my-strength-of-will-remains/802339bb-1b74-8f92-d9ac-091244d4e474
+  role: institutional analysis of emotional depth and portrait likeness
 generated_assets:
 - path: gallery-16x9.jpg
   description: New anonymous representative image

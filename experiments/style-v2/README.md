@@ -81,6 +81,7 @@ experiments/style-v2/<direction>/direction.yaml
 | [卡罗正面肖像与个人象征关系](../../style-packages/artists/frida-kahlo/art-direction.yaml) | 肖像正面存在感、浅层背景、用户指定物件的关系安排 | text_only | intimate-symbolic-portrait |
 | [卡萨特人物与装饰平面组织](../../style-packages/artists/mary-cassatt/art-direction.yaml) | 立体人物与平面图案的对照、装饰色面、按需选择的视点 | text_only | patterned-domestic-figure-scene |
 | [透纳天气、光线与运动](../../style-packages/artists/jmw-turner/art-direction.yaml) | 渐进的空气透视、颜料层次中的暖冷光、一条清楚的运动向量 | text_only | atmospheric-weather-motion |
+| [戈雅心理肖像与选择性笔触](../../style-packages/artists/francisco-goya/art-direction.yaml) | 表情与姿态、背景与面部笔触尺度差异、克制的明暗分离 | text_only | psychological-portrait |
 
 命令在仓库根目录运行，依赖沿用 `requirements-dev.txt`（PyYAML、jsonschema、Pillow）。需要时先执行 `python -m pip install -r requirements-dev.txt`。
 
