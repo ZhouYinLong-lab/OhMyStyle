@@ -73,3 +73,7 @@ Configure your API key in the image platform or in your own Prompt compiler, the
 Connect `prompts/base.txt` and `prompts/negative.txt` to a local model or ComfyUI workflow. Use `palette/palette.json` for color targets, `references/manifest.csv` to choose references, and `reproduction.yaml` to constrain composition, materials, and lighting. Use `evaluation.yaml` for manual or automated review after generation.
 
 Use references to understand observable characteristics. Do not copy a source work's exact composition, people, text, trademarks, or marks. Model weights, API keys, and generated images remain under your control.
+
+## Experimental direction: designated focal figure in a group
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user names a focal sitter in a group portrait. Establish hierarchy through placement, contour, and negative space, while keeping the other requested figures balanced without rigid symmetry. It does not add crowns, halos, architecture, or historical subjects by default. See [`comparisons/`](comparisons/README.md) for a group-portrait comparison. This direction remains experimental.

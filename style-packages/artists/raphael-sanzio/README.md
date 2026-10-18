@@ -73,3 +73,7 @@
 将 `prompts/base.txt` 和 `prompts/negative.txt` 接入本地模型或 ComfyUI 工作流；按 `palette/palette.json` 调整颜色，按 `references/manifest.csv` 选择参考图，并用 `reproduction.yaml` 中的参数约束构图、材质和光线。生成后可用 `evaluation.yaml` 做人工或自动复核。
 
 参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。模型权重、API Key 和生成图片由使用者自行管理。
+
+## 实验方向：指定焦点人物的群像平衡
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户明确指定群像中的焦点人物时启用：通过人物位置、轮廓和留白建立主次，让其他人物形成稳定但不僵硬的群组关系。不会默认增加王冠、光环、建筑或历史题材。见 [`comparisons/`](comparisons/README.md) 查看群像对照；该方向仍处于实验状态。

@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "raphael-sanzio",
+    "name": "拉斐尔",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\raphael-sanzio"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Four adult colleagues in contemporary clothes meet around a table. One woman standing at the center presents a map as the explicitly designated focal figure; three others sit nearby and listen. Horizontal 16:9 group portrait.",
+  "prompt": "USER SUBJECT: Four adult colleagues in contemporary clothes meet around a table. One woman standing at the center presents a map as the explicitly designated focal figure; three others sit nearby and listen. Horizontal 16:9 group portrait.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: painted_image\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [designated-sitter-owns-primary-axis] Place the designated sitter on the clearest compositional axis and preserve their requested gesture and visual prominence.\n- [supporting-figures-stabilize-without-mirroring] Distribute supporting sitters on both sides or at different depths as needed, using natural spacing and distinct gestures to stabilize the main figure without exact mirroring.\n- [keep-classical-clarity-without-dramatic-light] Keep major contours distinct and preserve quiet negative space between figures; use calm modeling rather than a spotlight to separate the focal sitter.\n- [focal-group-remains-balanced-and-specific] Make the user's designated sitter read first while every requested supporting figure stays distinct, balanced, and subordinate only through composition.\nREQUIREMENT: Activate only when a focal sitter is named by the user.\nREQUIREMENT: Preserve all requested group members, roles, gestures, and context.\nREQUIREMENT: Build hierarchy by placement and clear contours, not added status symbols.\nREQUIREMENT: Review focal prominence and supporting figure legibility.",
+  "negative_prompt": "crown, throne, halo, or status object added to indicate importance\nfixed count, paired poses, or copied pyramid arrangement\ntheatrical tenebrism, uniform idealized faces, or generic glow\ninventing a focal person when the user requests equal-weight figures\nforcing an exact pyramid, symmetry, or sitter count\nadding classical architecture or historical motifs by default",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "raphael-designated-focal-group-balance",
+    "name": "Raphael designated focal group balance",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\raphael-sanzio\\art-direction.yaml",
+    "sha256": "8f1fd4900a4a8f30e252e37184c1de7ec559e2232832a90a4a57be32ed41d001",
+    "active_rule_ids": [
+      "designated-sitter-owns-primary-axis",
+      "supporting-figures-stabilize-without-mirroring",
+      "keep-classical-clarity-without-dramatic-light"
+    ],
+    "contexts": [
+      "user-requested-group-with-designated-focal-sitter"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only when a focal sitter is named by the user.",
+      "Preserve all requested group members, roles, gestures, and context.",
+      "Build hierarchy by placement and clear contours, not added status symbols.",
+      "Review focal prominence and supporting figure legibility."
+    ],
+    "avoid": [
+      "inventing a focal person when the user requests equal-weight figures",
+      "forcing an exact pyramid, symmetry, or sitter count",
+      "adding classical architecture or historical motifs by default"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "painted_image",
+      "representation": "stylized",
+      "description": "An optional composition direction for a user-requested group portrait with one explicitly designated focal sitter. Give that person a clear central or upper position and let the other requested figures balance the group around them with natural, readable gestures. This refines hierarchy only; it does not change roles, sitter count, or setting.",
+      "required_contexts": [
+        "user-requested-group-with-designated-focal-sitter"
+      ],
+      "incompatible_contexts": [
+        "no-focal-sitter-designated",
+        "user-requested-equal-weight-group",
+        "single-person-portrait",
+        "exact-reconstruction-of-named-work"
+      ],
+      "limitations": [
+        "Activate only when the user explicitly designates one sitter as the focal figure.",
+        "Preserve every requested sitter, role, age range, relationship, action, clothing, and setting.",
+        "Balance supporting figures around the focal sitter without imposing exact symmetry or a fixed number of people.",
+        "Do not add architectural openings, props, or historical motifs unless requested."
+      ]
+    },
+    "rules": [
+      {
+        "id": "designated-sitter-owns-primary-axis",
+        "axis": "focal-figure-hierarchy",
+        "importance": "core",
+        "applies_when": "The user names one sitter as the primary focus in a group portrait.",
+        "instruction": "Place the designated sitter on the clearest compositional axis and preserve their requested gesture and visual prominence.",
+        "observable": "The designated sitter reads first at thumbnail size without relying on invented clothing, symbols, or props.",
+        "reject_when": "Another figure becomes more visually dominant or the focal role changes.",
+        "evidence": {
+          "source_ids": [
+            "norton-simon-raphael-pyramidal-group"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "crown, throne, halo, or status object added to indicate importance"
+      },
+      {
+        "id": "supporting-figures-stabilize-without-mirroring",
+        "axis": "group-balance-and-individuality",
+        "importance": "core",
+        "applies_when": "Supporting sitters are requested around a designated focal figure.",
+        "instruction": "Distribute supporting sitters on both sides or at different depths as needed, using natural spacing and distinct gestures to stabilize the main figure without exact mirroring.",
+        "observable": "The group feels balanced, but each supporting sitter retains an individual posture and clear outline.",
+        "reject_when": "Supporting figures become a rigid symmetrical frame or merge into the focal sitter.",
+        "evidence": {
+          "source_ids": [
+            "norton-simon-raphael-pyramidal-group"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "fixed count, paired poses, or copied pyramid arrangement"
+      },
+      {
+        "id": "keep-classical-clarity-without-dramatic-light",
+        "axis": "contour-and-negative-space",
+        "importance": "supporting",
+        "applies_when": "A group hierarchy is established through figure placement.",
+        "instruction": "Keep major contours distinct and preserve quiet negative space between figures; use calm modeling rather than a spotlight to separate the focal sitter.",
+        "observable": "Faces, hands, and body relationships remain readable in a stable, clear composition.",
+        "reject_when": "Heavy shadow or overlapping contours obscure the requested relationships.",
+        "evidence": {
+          "source_ids": [
+            "nga-raphael-artist-record"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "theatrical tenebrism, uniform idealized faces, or generic glow"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "focal-group-remains-balanced-and-specific",
+        "rule_ids": [
+          "designated-sitter-owns-primary-axis",
+          "supporting-figures-stabilize-without-mirroring",
+          "keep-classical-clarity-without-dramatic-light"
+        ],
+        "instruction": "Make the user's designated sitter read first while every requested supporting figure stays distinct, balanced, and subordinate only through composition.",
+        "observable": "The hierarchy and group relationships read clearly without changing identity or adding status symbols."
+      }
+    ],
+    "sources": [
+      {
+        "id": "norton-simon-raphael-pyramidal-group",
+        "kind": "museum_collection_record",
+        "url": "https://www.nortonsimon.org/art/detail/M.1972.2.P"
+      },
+      {
+        "id": "nga-raphael-artist-record",
+        "kind": "museum_artist_record",
+        "url": "https://www.nga.gov/artists/1818-raphael"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "8f1fd4900a4a8f30e252e37184c1de7ec559e2232832a90a4a57be32ed41d001",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

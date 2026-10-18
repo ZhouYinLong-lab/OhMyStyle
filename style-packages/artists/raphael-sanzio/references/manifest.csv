@@ -1,2 +1,4 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 raphael-sanzio-source,,Raphael,Raphael,文艺复兴盛期,https://commons.wikimedia.org/w/index.php?search=Raphael+paintings&title=Special:MediaSearch&type=image,reference-only-not-redistributed,Raphael,primary,External research link; no protected source file is redistributed in this package.
+raphael-norton-simon-group,,Madonna and Child with Book,Raphael,,https://www.nortonsimon.org/art/detail/M.1972.2.P,link_only,Norton Simon Museum,primary,Museum record used for group-balance observation; no image bundled or used as generation input.
+raphael-nga-record,,Raphael,National Gallery of Art,,https://www.nga.gov/artists/1818-raphael,link_only,National Gallery of Art,primary,Museum record used for harmony and natural figure grouping; no image bundled or used as generation input.

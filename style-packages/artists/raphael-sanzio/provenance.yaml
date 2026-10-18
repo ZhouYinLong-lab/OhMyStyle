@@ -5,6 +5,16 @@ research_basis:
   period: 文艺复兴盛期
   source_url: https://commons.wikimedia.org/w/index.php?search=Raphael+paintings&title=Special:MediaSearch&type=image
   role: style research
+  notes: Keep research focused on harmony and grouped figure arrangement; source composition is not to be copied.
+- title: Madonna and Child with Book
+  creator: Raphael
+  period: Renaissance
+  source_url: https://www.nortonsimon.org/art/detail/M.1972.2.P
+  role: group-composition research; museum record describes a pyramidal grouping
+- title: Raphael artist record
+  creator: Raphael
+  source_url: https://www.nga.gov/artists/1818-raphael
+  role: museum research on harmonious balance and natural figure groupings
 generated_assets:
 - path: gallery-16x9.jpg
   description: New anonymous representative image
