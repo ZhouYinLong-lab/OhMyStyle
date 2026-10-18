@@ -1,9 +1,32 @@
 package_id: gustave-courbet
+package_version: 0.2.0
+curation_status: institutional_links_reviewed
+sources:
+- url: https://www.musee-orsay.fr/en/artworks/un-enterrement-ornans-924
+  authority: Musée d'Orsay
+  title: A Burial at Ornans
+  supports: unidealized ordinary figures and thick paint applied by brush and palette knife to skin and material surfaces
+  accessed: '2026-10-19'
+- url: https://www.musee-orsay.fr/en/magazine/2025-02-20/restoration-courbets-painting-burial-ornans
+  authority: Musée d'Orsay
+  title: "Restoration of Courbet's painting A Burial at Ornans"
+  supports: dense expressive painting with generous impasto and palette-knife application
+  accessed: '2026-10-19'
+- url: https://www.nga.gov/content/dam/ngaweb/Education/learning-resources/teaching-packets/pdfs/picturing_france.pdf
+  authority: National Gallery of Art
+  title: Picturing France 1830–1900
+  supports: material congruence of palette-knife paint and ordinary subjects given monumental presence
+  accessed: '2026-10-19'
+- url: https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/education/learning-resources/teaching-packets/pdfs/french-painting-tp.pdf
+  authority: National Gallery of Art
+  title: French Painting at the National Gallery of Art
+  supports: thick palette-knife highlights against dark rock and horizontal paint passages describing wet sand and sea
+  accessed: '2026-10-19'
 research_basis:
 - title: Gustave Courbet
   creator: Gustave Courbet
   period: 现实主义
-  source_url: https://commons.wikimedia.org/w/index.php?search=Gustave+Courbet&title=Special:MediaSearch&type=image
+  source_url: https://www.musee-orsay.fr/en/artworks/un-enterrement-ornans-924
   role: style research
 generated_assets:
 - path: gallery-16x9.jpg

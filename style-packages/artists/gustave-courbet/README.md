@@ -32,6 +32,18 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 和仓库的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：物质笔触与地面重量（实验）
+
+[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `tactile-material-realism` 时启用。它把库尔贝方向落在直接、不理想化的主体塑形，材料对应的厚涂或调色刀笔触，以及让物体显得有重量的地面关系上；笔触不再只是通用粗糙滤镜。
+
+这不同于梵高方向以方向性笔触表现运动和情绪；库尔贝方向的厚重笔触用于呈现材料的物理质地。它不会默认加入劳动者、贫困叙事或乡村道具。
+
+```powershell
+python tools/compile-style.py style-packages/artists/gustave-courbet --direction package --context tactile-material-realism --subject "One chipped blue enamel washbasin resting on compact soil beside a rough limestone block"
+```
+
+[`comparisons/`](comparisons/) 保存同题旧版与新版编译 job 和实际生成图，供人工比较；方向仍待视觉评审，保持实验状态。
+
 ## 只使用此包
 
 四种方式可以按手边的工具任选其一，不需要同时使用。

@@ -1,0 +1,110 @@
+schema_version: 2.0.0
+status: experimental
+id: courbet-tactile-matter-and-grounded-scale
+name: Courbet tactile matter and grounded scale
+base_package: artists/gustave-courbet
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: >-
+    A material-led realist painting direction for user-specified ordinary
+    subjects. Keep forms direct, solid, and unidealized; give selected surfaces
+    physical weight through thick, material-specific paint and palette-knife
+    passages. Marks should describe what is being painted rather than add a
+    generic rough texture. Maintain a firm ground relationship and a clear
+    hierarchy between focal matter and quieter surroundings.
+  required_contexts:
+    - tactile-material-realism
+  incompatible_contexts:
+    - photorealistic-product-render
+    - polished-academic-idealization
+    - uniform-impasto-filter
+  limitations:
+    - Only depict the subjects, setting, and narrative requested by the user; do not add workers, rural poverty, or social documentary content by default.
+    - Keep the requested identities, count, proportions, and material distinctions legible beneath the thick paint.
+    - Restrict the heaviest impasto or palette-knife marks to selected surfaces; do not cover every region with equal texture.
+pillars:
+  - Treat the requested subject with direct, unidealized form and physical presence rather than smoothing away wear or irregularity.
+  - Use thick brush or palette-knife marks on selected surfaces, with stroke shape and paint load responding to the represented material.
+  - Establish a stable ground plane and solid value masses so objects feel weight-bearing rather than decorative or floating.
+  - Keep colors local and earthy where appropriate, but avoid a global brown filter; reserve fine detail for the focal material.
+rules:
+  - id: direct-unidealized-subject-presence
+    axis: subject_and_form
+    importance: core
+    applies_when: The user requests a realist painting of an ordinary person, object, or place.
+    instruction: Keep the requested subject's proportions, particular features, and visible wear direct and specific; give ordinary subject matter full pictorial weight without beautifying it or adding a social narrative.
+    observable: The subject reads clearly and concretely, with its individual form and condition intact rather than idealized or generalized.
+    reject_when: Features are beautified into a conventional ideal, the subject becomes anonymous, or unrequested hardship or labor is inserted.
+    evidence:
+      source_ids:
+        - courbet-orsay-burial
+        - courbet-nga-realism
+      basis: institutional_description
+      visual_review: pending
+    avoid: idealized faces, invented workers, poverty narrative, and generic rustic props
+  - id: material-congruent-impasto-and-knife-work
+    axis: paint_surface_and_material
+    importance: core
+    applies_when: The requested subject contains tactile surfaces that benefit from visible paint relief.
+    instruction: Apply selected thick deposits with brush or palette knife; vary edge, direction, and paint load so the mark echoes the surface being represented, such as granular stone, compact soil, rough fabric, or wet ground.
+    observable: Thick paint has visible physical relief and a clear relationship to the represented material, while other surfaces remain comparatively quieter.
+    reject_when: Impasto becomes uniform noise, material categories collapse, or texture hides defining object structure.
+    evidence:
+      source_ids:
+        - courbet-orsay-burial
+        - courbet-orsay-restoration
+        - courbet-nga-realism
+      basis: institutional_description
+      visual_review: pending
+    avoid: all-over palette-knife noise, decorative frosting, and repeated generic brush texture
+  - id: weight-bearing-ground-and-value-masses
+    axis: composition_and_light
+    importance: supporting
+    applies_when: The requested scene includes objects or figures resting in a physical environment.
+    instruction: Anchor the subject to a readable ground plane using broad, stable value masses; let shadows and horizontal paint passages describe contact and weight without flattening the entire scene into darkness.
+    observable: Contact points, cast shadows, and large masses make the subject feel physically present and supported by its setting.
+    reject_when: Objects float, the ground becomes an unrelated decorative pattern, or a global earth-tone wash erases local color.
+    evidence:
+      source_ids:
+        - courbet-nga-beach
+        - courbet-orsay-burial
+      basis: institutional_description
+      visual_review: pending
+    avoid: floating objects, global sepia, crushed shadows, and unsupported dramatic lighting
+active_rule_ids:
+  - direct-unidealized-subject-presence
+  - material-congruent-impasto-and-knife-work
+  - weight-bearing-ground-and-value-masses
+joint_checks:
+  - id: subject-material-and-ground-coherence
+    rule_ids:
+      - direct-unidealized-subject-presence
+      - material-congruent-impasto-and-knife-work
+      - weight-bearing-ground-and-value-masses
+    instruction: Make the requested subject feel direct and weight-bearing while reserving heavy paint for material passages that call for it.
+    observable: Subject identity and count stay correct; the ground supports the form; impasto describes selected materials rather than becoming a global style filter.
+sources:
+  - id: courbet-orsay-burial
+    kind: museum_artwork_analysis
+    url: https://www.musee-orsay.fr/en/artworks/un-enterrement-ornans-924
+  - id: courbet-orsay-restoration
+    kind: museum_conservation_analysis
+    url: https://www.musee-orsay.fr/en/magazine/2025-02-20/restoration-courbets-painting-burial-ornans
+  - id: courbet-nga-realism
+    kind: national_gallery_art_history_guide
+    url: https://www.nga.gov/content/dam/ngaweb/Education/learning-resources/teaching-packets/pdfs/picturing_france.pdf
+  - id: courbet-nga-beach
+    kind: national_gallery_artwork_analysis
+    url: https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/education/learning-resources/teaching-packets/pdfs/french-painting-tp.pdf
+execution:
+  route: text_only
+  must:
+    - Declare tactile-material-realism before applying this direction.
+    - Preserve requested subject identity, proportions, count, and setting.
+    - Make the ground and contact shadows support a solid sense of weight.
+    - Use thick paint selectively and let the marks describe the represented material.
+  avoid:
+    - adding workers, rural hardship, or social commentary without request
+    - applying equal impasto texture to every surface
+    - replacing local colors with a uniform brown filter or making objects float

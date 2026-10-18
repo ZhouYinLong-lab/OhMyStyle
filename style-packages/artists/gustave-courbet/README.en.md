@@ -32,6 +32,18 @@ Reference links are provided for research and visual analysis only. External art
 
 See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references/manifest.csv), and the repository [`NOTICE`](../../../NOTICE) for boundaries.
 
+## New architecture: tactile paint and grounded weight (experimental)
+
+[`art-direction.yaml`](art-direction.yaml) is enabled only when `tactile-material-realism` is explicitly declared. It operationalizes Courbet's direction through direct, unidealized form, material-specific impasto or palette-knife marks, and a ground relationship that makes objects feel weight-bearing. The mark-making is not a generic roughness filter.
+
+This differs from Van Gogh's directional strokes, which express movement and emotion; Courbet's heavy marks describe the physical material. It does not add workers, poverty narratives, or rustic props by default.
+
+```powershell
+python tools/compile-style.py style-packages/artists/gustave-courbet --direction package --context tactile-material-realism --subject "One chipped blue enamel washbasin resting on compact soil beside a rough limestone block"
+```
+
+[`comparisons/`](comparisons/) contains the legacy/new compiled jobs and actual generated images of the same subject. The direction remains experimental pending visual review.
+
 ## Use only this package
 
 Choose any one of the four methods below. They are alternatives, not steps that must all be completed.

@@ -1,5 +1,16 @@
 package_id: gustave-courbet
-package_version: 0.1.0
+package_version: 0.2.0
+profiles:
+  tactile-material-realism:
+    required:
+      - requested subject stays direct, particular, and unidealized
+      - thick paint or palette-knife marks follow selected material surfaces
+      - subject feels grounded with clear contact and weight
+      - quieter regions remain distinct from the impasto focal surfaces
+    reject_if:
+      - unrequested worker or poverty narrative appears
+      - uniform texture replaces material-specific paint handling
+      - all color is covered by a global brown wash or shadow
 invariants:
 - id: signature
   weight: 3
