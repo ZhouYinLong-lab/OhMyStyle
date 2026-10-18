@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "kathe-kollwitz",
+    "name": "凯绥·珂勒惠支",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\kathe-kollwitz"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Two adults jointly lifting one wooden crate; preserve exactly two people, neutral cooperation, their stated poses, and horizontal composition. No family relationship, injury, conflict, war, or political symbol.",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- 用户提供的 Two adults jointly lifting one wooden crate; preserve exactly two people, neutral cooperation, their stated poses, and horizontal composition. No family relationship, injury, conflict, war, or political symbol. 和 the user-requested setting 优先。\n- 本包只控制媒介、构图、明暗、线性、纸面和印刷质感。\n- 不从艺术家姓名推断固定人物、物体、地点、故事或悲剧主题。\n\nCreate a new image of Two adults jointly lifting one wooden crate; preserve exactly two people, neutral cooperation, their stated poses, and horizontal composition. No family relationship, injury, conflict, war, or political symbol. in the user-requested setting. Use a restrained black-and-white printmaking language: warm paper ground, dense charcoal or woodcut line networks, solid black masses, a few carefully preserved middle grays, compressed framing, strong silhouette, and rough handmade edges. Keep the supplied subject recognizable and let the marks describe its volume. Make an original scene; do not copy a reference work, pose, layout, logo, signature, or text.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied artwork, fixed war scene, mourning mother, poverty narrative, recognizable person,\nartist signature, logo, watermark, text, smooth grayscale filter, glossy digital illustration,\nplastic CGI, neon color, decorative border, generic cinematic lighting, malformed anatomy,\nunrelated objects, duplicate objects",
+  "template_variables": {
+    "SUBJECT": "Two adults jointly lifting one wooden crate; preserve exactly two people, neutral cooperation, their stated poses, and horizontal composition. No family relationship, injury, conflict, war, or political symbol.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "compressed-figure-group-print": {
+        "required": [
+          "user-requested figures and their specified relationship remain readable",
+          "figure masses and the central hand or object contact form one compact composition",
+          "selective paper-white cuts clarify silhouettes and gestures inside dark masses",
+          "background marks stay subordinate to the requested figures"
+        ],
+        "reject_if": [
+          "invented kinship, grief, injury, conflict, or political narrative",
+          "repeated decorative crosshatching replaces form-following marks",
+          "figure count, pose, or interaction changes from the request"
+        ]
+      },
+      "generic": {
+        "required": [
+          "limited black-and-white printmaking structure is visible",
+          "line networks and solid masses shape volume",
+          "user-supplied subject remains recognizable",
+          "no copied artwork or fixed narrative motif"
+        ],
+        "reject_if": [
+          "result is only a grayscale filter",
+          "smooth digital gradients replace marks",
+          "text, logo, watermark, or unintended signature appears"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "face and pose remain legible under the graphic treatment"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "object edges and material separation survive the dense marks"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "仅记录可追溯研究入口；不打包外部作品。",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

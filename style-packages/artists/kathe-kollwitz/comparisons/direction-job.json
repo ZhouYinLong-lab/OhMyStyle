@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "kathe-kollwitz",
+    "name": "凯绥·珂勒惠支",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\kathe-kollwitz"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Two adults jointly lifting one wooden crate; preserve exactly two people, neutral cooperation, their stated poses, and horizontal composition. No family relationship, injury, conflict, war, or political symbol.",
+  "prompt": "USER SUBJECT: Two adults jointly lifting one wooden crate; preserve exactly two people, neutral cooperation, their stated poses, and horizontal composition. No family relationship, injury, conflict, war, or political symbol.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: black_and_white_printmaking\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [contact-centered-figure-mass] Arrange the requested figures as a compact, readable mass around their stated interaction or shared focus; maintain the requested count, pose, and relationships, and use overlap only where it does not obscure the action.\n- [paper-cuts-inside-dark-masses] Establish the primary shadow masses first, then cut a small number of paper-white channels through them to clarify the requested face, hand, or clothing gesture; keep middle gray for transitions that protect form readability.\n- [directional-mark-economy] Use short gouges, crosshatching, or charcoal strokes selectively and align their direction with the form; simplify the background to a few broad masses and keep the interaction area most legible.\n- [readable-figure-contact] Make the user-specified group interaction legible through a compact silhouette, selective paper-white gesture cuts, and form-following marks while keeping background detail subordinate.\nREQUIREMENT: Enable only for a user-requested multi-figure interaction or shared focus.\nREQUIREMENT: Preserve the user's specified figures, count, relationship, action, and composition.\nREQUIREMENT: Make the point of contact legible through grouped silhouette and selective paper-white cuts.\nREQUIREMENT: Keep marks directional and background detail subordinate.",
+  "negative_prompt": "invented embrace, kinship, grief, aggression, or fixed narrative\nglobal grayscale filtering, bright rim light, and uniform outline treatment\ndecorative all-over hatching and background scene invention\ninventing a family bond, grief, violence, poverty, war, or political symbol\nchanging the user-specified gesture, pose, count, clothing, or shared object\nusing uniform grayscale, equal outlines, or decorative all-over hatching\ncopying a named print composition",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "kollwitz-compressed-figure-group-print",
+    "name": "Kollwitz compressed figure-group print",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\kathe-kollwitz\\art-direction.yaml",
+    "sha256": "99cfbe9c08e744f19bb6edc08ca4fa95ae424e63aab1df42a33a0b3262592c3f",
+    "active_rule_ids": [
+      "contact-centered-figure-mass",
+      "paper-cuts-inside-dark-masses",
+      "directional-mark-economy"
+    ],
+    "contexts": [
+      "compressed-figure-group-print"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Enable only for a user-requested multi-figure interaction or shared focus.",
+      "Preserve the user's specified figures, count, relationship, action, and composition.",
+      "Make the point of contact legible through grouped silhouette and selective paper-white cuts.",
+      "Keep marks directional and background detail subordinate."
+    ],
+    "avoid": [
+      "inventing a family bond, grief, violence, poverty, war, or political symbol",
+      "changing the user-specified gesture, pose, count, clothing, or shared object",
+      "using uniform grayscale, equal outlines, or decorative all-over hatching",
+      "copying a named print composition"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "black_and_white_printmaking",
+      "representation": "stylized",
+      "description": "An optional compositional direction for user-requested multi-figure scenes whose specified gestures or shared object create a clear point of contact. It compresses figure masses around that contact, lets silhouettes carry the main weight, and uses selective paper-white cuts and form-following marks to keep gestures legible. It does not select a relationship, emotion, or social narrative for the user.",
+      "required_contexts": [
+        "compressed-figure-group-print"
+      ],
+      "incompatible_contexts": [
+        "airy-spaced-figure-study",
+        "full-color-editorial-illustration",
+        "photorealistic-group-portrait"
+      ],
+      "limitations": [
+        "Use only when the user requests multiple figures with a specified interaction or shared focus.",
+        "Preserve the requested people, relationships, pose, action, clothing, and framing.",
+        "Do not infer kinship, grief, poverty, injury, conflict, or political meaning.",
+        "Never copy a named print's figures, gesture, crop, or arrangement."
+      ]
+    },
+    "rules": [
+      {
+        "id": "contact-centered-figure-mass",
+        "axis": "composition_and_gesture",
+        "importance": "core",
+        "applies_when": "The user requests a multi-figure scene with a specified interaction, shared object, or contact point.",
+        "instruction": "Arrange the requested figures as a compact, readable mass around their stated interaction or shared focus; maintain the requested count, pose, and relationships, and use overlap only where it does not obscure the action.",
+        "observable": "The specified interaction reads quickly through the group silhouette and the location of hands, arms, or shared objects.",
+        "reject_when": "The figures become isolated decorative portraits, the requested action is obscured, or an unrequested relationship is implied.",
+        "evidence": {
+          "source_ids": [
+            "nga-the-people",
+            "moma-the-mothers"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "invented embrace, kinship, grief, aggression, or fixed narrative"
+      },
+      {
+        "id": "paper-cuts-inside-dark-masses",
+        "axis": "value_structure_and_markmaking",
+        "importance": "core",
+        "applies_when": "The requested treatment uses black print masses and a light paper ground.",
+        "instruction": "Establish the primary shadow masses first, then cut a small number of paper-white channels through them to clarify the requested face, hand, or clothing gesture; keep middle gray for transitions that protect form readability.",
+        "observable": "Black masses carry weight while selective light cuts separate the key gesture without reducing the image to a threshold filter.",
+        "reject_when": "The scene is uniformly black, all contours receive equal white outlines, or intermediate values disappear where needed for readability.",
+        "evidence": {
+          "source_ids": [
+            "nga-the-people"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "global grayscale filtering, bright rim light, and uniform outline treatment"
+      },
+      {
+        "id": "directional-mark-economy",
+        "axis": "texture_and_surface",
+        "importance": "supporting",
+        "applies_when": "Shadows, clothing, or objects need directional printed or drawn texture.",
+        "instruction": "Use short gouges, crosshatching, or charcoal strokes selectively and align their direction with the form; simplify the background to a few broad masses and keep the interaction area most legible.",
+        "observable": "Mark direction explains material and movement, with visibly lower detail density away from the requested figures.",
+        "reject_when": "Repeated hatching becomes wallpaper, the background competes with the figures, or texture changes the requested object count or action.",
+        "evidence": {
+          "source_ids": [
+            "nga-the-people",
+            "moma-the-mothers"
+          ],
+          "basis": "direct_visual_observation",
+          "visual_review": "pending"
+        },
+        "avoid": "decorative all-over hatching and background scene invention"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "readable-figure-contact",
+        "rule_ids": [
+          "contact-centered-figure-mass",
+          "paper-cuts-inside-dark-masses",
+          "directional-mark-economy"
+        ],
+        "instruction": "Make the user-specified group interaction legible through a compact silhouette, selective paper-white gesture cuts, and form-following marks while keeping background detail subordinate.",
+        "observable": "The requested action and figure count remain clear at thumbnail scale; black-white pattern supports rather than invents narrative."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nga-the-people",
+        "kind": "museum_collection_analysis",
+        "url": "https://www.nga.gov/artworks/8200-people-das-volk"
+      },
+      {
+        "id": "moma-the-mothers",
+        "kind": "museum_collection_analysis",
+        "url": "https://www.moma.org/collection/works/69687?association=portfolios&page=1&parent_id=69682&sov_referrer=association"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "99cfbe9c08e744f19bb6edc08ca4fa95ae424e63aab1df42a33a0b3262592c3f",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

@@ -20,6 +20,20 @@
 
 本包只决定版画媒介、黑白阶调、线性结构和纸面质感，不规定人物、物体、地点或故事。代表图中的工作室物件只是测试主体。
 
+## 可选新方向：压缩人物群像
+
+`art-direction.yaml` 登记一个实验构图方向，仅用于用户已指定人物互动或共同动作的多人物场景。它把人物重心围绕动作接触点组织，以黑色形体和少量纸白线口提高动作可读性，同时压低背景细节。它不会替用户推断亲属关系、悲伤、冲突或政治叙事。编译新版方向时显式声明 `compressed-figure-group-print`。
+
+### 同一场景的生成对照
+
+两张图都表现两位成年人合力搬动木箱。右图是对左图的新版方向编辑：背景收敛为更大的黑色块面，人物、木箱和手臂关系更集中；细节仍有模型改写，尤其木箱与衣褶纹路，因此该对照展示的是方向差异，不是确定性渲染结果。
+
+| 旧版默认路径 | 新版群像方向 |
+| --- | --- |
+| ![珂勒惠支旧版群像样图](comparisons/legacy.png) | ![珂勒惠支新版群像方向样图](comparisons/direction.png) |
+
+查看编译任务：[`legacy-job.json`](comparisons/legacy-job.json)、[`direction-job.json`](comparisons/direction-job.json)；生成提示和评审记录：[`generation-prompts.md`](comparisons/generation-prompts.md)。
+
 ## 来源与版权
 
 研究入口为[现代艺术博物馆的凯绥·珂勒惠支档案](https://www.moma.org/collection/artists/3201)。仓库不打包外部作品；代表图是新的匿名场景，不是具体原作，也不表示合作、授权或背书关系。

@@ -1,4 +1,14 @@
 profiles:
+  compressed-figure-group-print:
+    required:
+    - user-requested figures and their specified relationship remain readable
+    - figure masses and the central hand or object contact form one compact composition
+    - selective paper-white cuts clarify silhouettes and gestures inside dark masses
+    - background marks stay subordinate to the requested figures
+    reject_if:
+    - invented kinship, grief, injury, conflict, or political narrative
+    - repeated decorative crosshatching replaces form-following marks
+    - figure count, pose, or interaction changes from the request
   generic:
     required:
     - limited black-and-white printmaking structure is visible

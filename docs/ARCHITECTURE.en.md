@@ -198,6 +198,7 @@ the same prompt wording.
 | [Miró suspended biomorphic forms and open color field](../style-packages/artists/joan-miro/art-direction.yaml) | Keeps curve and color forms distinct, balanced by asymmetric spacing and negative space | `text_only`, declare `suspended-biomorphic-sign-field` |
 | [Mitchell counterposed color-stroke groups](../style-packages/artists/joan-mitchell/art-direction.yaml) | Directional groups vary paint weight and color, creating counter-rhythm with open-ground pauses | `text_only`, declare `counterposed-color-stroke-groups` |
 | [Vermeer quiet cityscape with banded depth](../style-packages/artists/johannes-vermeer/art-direction.yaml) | User-requested cityscapes organized by horizontal zones, light-dark depth, and sparse reflections | `text_only`, declare `quiet-cityscape-banded-depth` |
+| [Kollwitz compressed figure-group print](../style-packages/artists/kathe-kollwitz/art-direction.yaml) | User-specified group action organized around its contact point with bold masses and paper-white cuts; no inferred relationship or story | `text_only`, declare `compressed-figure-group-print` |
 
 ## 6. Execution routes
 

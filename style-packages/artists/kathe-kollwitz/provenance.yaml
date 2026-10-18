@@ -1,8 +1,18 @@
 package_id: kathe-kollwitz
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: 仅记录可追溯研究入口；不打包外部作品。
 sources:
+  - url: 'https://www.nga.gov/artworks/8200-people-das-volk'
+    title: 'The People (Das Volk)'
+    authority: 'National Gallery of Art'
+    supports: use of dark mass, emergent figures, prominent hands, and woodcut on Japanese paper; analytical reference only, do not copy its group or arrangement
+    accessed: '2026-10-19'
+  - url: 'https://www.moma.org/collection/works/69687?association=portfolios&page=1&parent_id=69682&sov_referrer=association'
+    title: 'The Mothers, from War (Krieg)'
+    authority: 'Museum of Modern Art'
+    supports: compositional use of clustered figures and protective gestures in one specific historical series; the new direction does not prescribe its narrative
+    accessed: '2026-10-19'
   - url: 'https://www.moma.org/collection/artists/3201'
     title: 'Käthe Kollwitz'
     authority: 'Museum of Modern Art'

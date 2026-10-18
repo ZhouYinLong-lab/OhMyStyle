@@ -2,10 +2,11 @@ id: kathe-kollwitz
 name: 凯绥·珂勒惠支
 kind: artist
 domain: printmaking
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以黑白版画、炭笔线网、压缩构图和强烈明暗把普通形体转化为具有重量的视觉表达。
 files:
+  art_direction: art-direction.yaml
   identity: identity.yaml
   visual_signature: visual-signature.yaml
   reproduction: reproduction.yaml
