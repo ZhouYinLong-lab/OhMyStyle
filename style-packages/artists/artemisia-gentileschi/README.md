@@ -34,6 +34,16 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 新架构：身体动作与对角线构图（实验）
+
+`art-direction.yaml` 面向用户指定的人物动作：通过相互呼应或抵抗的身体、手臂和物件方向，让动作贴近观看者且一眼可读；暗部仍保留形体和局部色彩。它关注动作的身体能动性与近距离编排，不默认女性主角、暴力、宗教故事或某幅名作姿势。与卡拉瓦乔方向的单一强光和触觉质感区分，此方向优先处理动作的力线、反作用和裁切空间。
+
+```powershell
+python tools/compile-style.py style-packages/artists/artemisia-gentileschi --direction package --context figure-action --subject "A person catching a brass pot before it falls in a dim kitchen" --output runs/style-v2/artemisia-gentileschi-job.json
+```
+
+此规则仍处于实验状态，生图对照与跨主题稳定性待人工评审。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

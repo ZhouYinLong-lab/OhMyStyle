@@ -1,5 +1,5 @@
 package_id: artemisia-gentileschi
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: reference_backed_link_only
 source_policy: External works and game materials are recorded as links for research
   and visual analysis only. They are not bundled or redistributed.
@@ -9,6 +9,16 @@ sources:
   title: Judith Beheading Holofernes
   supports: source traceability and observable package scope
   accessed: '2026-08-07'
+- url: https://www.nationalgallery.org.uk/exhibitions/past/artemisia/five-heroines-by-artemisia
+  authority: The National Gallery, London
+  title: Five heroines by Artemisia
+  supports: close framing, readable agency, and varied emotional states across distinct subjects
+  accessed: '2026-10-19'
+- url: https://www.nga.gov/press/national-gallery-art-acquires-mary-magdalene-ecstasy-defining-masterwork-artemisia-gentileschi
+  authority: National Gallery of Art
+  title: Mary Magdalene in Ecstasy acquisition announcement
+  supports: close figure focus, saturated color, and narrative expression beyond action scenes
+  accessed: '2026-10-19'
 attribution: This package studies observable visual decisions associated with Artemisia
   Gentileschi; it does not reproduce a named work, character, location, logo, text,
   or exact composition.

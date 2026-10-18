@@ -1,0 +1,104 @@
+schema_version: 2.0.0
+status: experimental
+id: artemisia-embodied-action-composition
+name: Artemisia embodied action composition
+base_package: artists/artemisia-gentileschi
+scope:
+  medium: oil_painting
+  representation: recognizable
+  description: >-
+    A figure-action direction that makes a requested consequential gesture
+    physically legible through compressed staging, counter-moving diagonals,
+    and expressive but controlled color. Its subject is the body's agency in
+    an action, not a prescribed heroine, historical story, or violent event.
+  required_contexts:
+    - figure-action
+  incompatible_contexts:
+    - nonfigurative-field
+    - static-architecture
+    - quiet-single-figure-portrait
+  limitations:
+    - Preserve the user-requested people, identities, activity, force, and outcome; do not add conflict, injury, or a narrative role.
+    - Do not default to women, biblical heroines, weapons, blood, historical costume, or a specific source composition.
+    - Keep dark passages readable and use contrast to clarify the requested action, not to replace it with theatrical lighting.
+pillars:
+  - Let a requested action read through the physical relation between bodies, hands, and any user-specified object.
+  - Use intersecting or opposing diagonals to show effort, resistance, or changing balance without inventing drama.
+  - Keep the main action close and materially present while allowing enough surrounding space to understand its direction.
+  - Concentrate rich color on meaningful forms and preserve variation within shadow.
+rules:
+  - id: action-through-counter-diagonals
+    axis: composition
+    importance: core
+    applies_when: The requested scene contains a consequential human gesture or interaction.
+    instruction: Arrange the requested bodies, arms, and relevant objects along readable diagonals that converge, cross, or oppose one another to carry the action; preserve the actual requested gesture rather than borrowing a famous pose.
+    observable: The viewer can follow the action through the direction of the bodies and hands, and any opposing force is clear without explanatory props.
+    reject_when: The figure is merely posed beside the event, limbs tangle without readable function, or added violence changes the user's brief.
+    evidence:
+      source_ids:
+        - artemisia-uffizi-judith
+        - artemisia-national-gallery-heroines
+      basis: institutional_description
+      visual_review: pending
+    avoid: copied poses, gratuitous struggle, and disconnected gesturing
+  - id: close-staging-with-action-space
+    axis: composition
+    importance: core
+    applies_when: A requested person performs or responds to an action.
+    instruction: Bring the focal action near enough for posture, hands, and contact to read, but retain the small amount of space needed to understand the action's direction and the participants' relationship.
+    observable: The scene feels physically immediate, while the viewer can still distinguish who acts, what responds, and where the motion leads.
+    reject_when: The event recedes into a broad setting or a tight crop hides the gesture's cause and consequence.
+    evidence:
+      source_ids:
+        - artemisia-national-gallery-heroines
+        - artemisia-nga-magdalene
+      basis: institutional_description
+      visual_review: pending
+    avoid: distant staging, isolated portrait framing, and unreadable crops
+  - id: localized-color-in-readable-shadow
+    axis: palette_and_lighting
+    importance: core
+    applies_when: The scene uses a dark or restrained setting around an active figure.
+    instruction: Keep shadow deep enough to group secondary areas, but preserve form and color within it; reserve richer reds, ochres, blues, and warm lights for the requested figures, garments, and objects that carry the action.
+    observable: The action remains distinct from its setting, colors stay attached to forms, and shadow does not collapse into a featureless black field.
+    reject_when: A global red or brown filter replaces local color, or dark areas erase the people and action.
+    evidence:
+      source_ids:
+        - artemisia-uffizi-judith
+        - artemisia-nga-magdalene
+      basis: institutional_description
+      visual_review: pending
+    avoid: global color filters, black voids, and indiscriminate spotlighting
+active_rule_ids:
+  - action-through-counter-diagonals
+  - close-staging-with-action-space
+  - localized-color-in-readable-shadow
+joint_checks:
+  - id: action-space-color-coherence
+    rule_ids:
+      - action-through-counter-diagonals
+      - close-staging-with-action-space
+      - localized-color-in-readable-shadow
+    instruction: Let body direction, close staging, and localized color clarify one user-requested action; do not add narrative content to amplify it.
+    observable: The action reads at first glance, its physical relationships remain understandable, and dark color supports rather than obscures the event.
+sources:
+  - id: artemisia-uffizi-judith
+    kind: museum_object_description
+    url: https://www.uffizi.it/en/artworks/judith-beheading-holofernes
+  - id: artemisia-national-gallery-heroines
+    kind: museum_exhibition_description
+    url: https://www.nationalgallery.org.uk/exhibitions/past/artemisia/five-heroines-by-artemisia
+  - id: artemisia-nga-magdalene
+    kind: museum_object_description
+    url: https://www.nga.gov/press/national-gallery-art-acquires-mary-magdalene-ecstasy-defining-masterwork-artemisia-gentileschi
+execution:
+  route: text_only
+  must:
+    - Declare the figure-action context before applying the direction.
+    - Preserve the requested people, action, intensity, and outcome.
+    - Use body and object direction to make the action physically legible.
+    - Retain form and local color within dark passages.
+  avoid:
+    - inventing conflict, injury, a weapon, or a historical narrative
+    - defaulting to a heroine or a specific famous pose
+    - allowing a dramatic light effect to obscure the action
