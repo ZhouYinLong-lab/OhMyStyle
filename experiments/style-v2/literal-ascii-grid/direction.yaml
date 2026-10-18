@@ -1,0 +1,109 @@
+schema_version: 2.0.0
+status: experimental
+id: literal-ascii-grid
+name: 严格 ASCII 字符网格
+base_package: game-art/ascii-character-game-art
+scope:
+  medium: ascii_glyph_grid
+  representation: stylized
+  description: 真实 ASCII 字符网格构图
+  required_contexts: []
+  incompatible_contexts:
+  - image-repainting
+  - unicode-art
+  limitations:
+  - 超出所选字符集的中文、块字符或 emoji。
+  - 要求普通图像生成器重绘网格以增加写实质感。
+pillars:
+- 可见场景形状由真实字符本身构成。
+- 固定网格和字形密度共同组织轮廓、空间与层级。
+- 前景、环境和重要交互对象在允许色数与字符预算内保持可读。
+rules:
+- id: ascii-literal-construction
+  axis: process
+  importance: core
+  applies_when: always
+  instruction: 先生成逐行字符源，再由等宽字体在固定单元格内渲染。
+  observable: 每个场景图形都能回溯到具体行、列和字形。
+  reject_when: 图片是普通绘画加字符贴图，或含网格外独立图形。
+  evidence:
+    source_ids:
+    - ascii-package-source-grid
+    - ascii-package-renderer
+    - user-literal-character-requirement
+    basis: original_design_intent
+    visual_review: pending
+  avoid: paintings decorated with character textures
+- id: ascii-density-hierarchy
+  axis: value
+  importance: core
+  applies_when: always
+  instruction: 以字符密度、负空间和允许的前景亮度区分主体、通路和远景。
+  observable: 缩略查看仍可读出主要对象，放大后各区域仍是独立字符。
+  reject_when: 随机字符噪声遮蔽主体，或仅用颜色区分所有关键对象。
+  evidence:
+    source_ids:
+    - ascii-package-source-grid
+    basis: original_design_intent
+    visual_review: pending
+  avoid: random character noise obscuring the subject
+- id: ascii-grid-alignment
+  axis: layout
+  importance: core
+  applies_when: always
+  instruction: 各行用统一规则补齐列数，字形逐格对齐；不在局部改变字号伪造景深。
+  observable: 行列坐标稳定，空间差异由符号与布局体现。
+  reject_when: 文本比例字体导致错列，或靠局部拉伸扭曲字符制造轮廓。
+  evidence:
+    source_ids:
+    - user-literal-character-requirement
+    basis: original_design_intent
+    visual_review: pending
+  avoid: proportional fonts or local character stretching
+active_rule_ids:
+- ascii-literal-construction
+- ascii-density-hierarchy
+- ascii-grid-alignment
+joint_checks:
+- id: ascii-glyph-layout-readability
+  rule_ids:
+  - ascii-literal-construction
+  - ascii-density-hierarchy
+  - ascii-grid-alignment
+  instruction: 在真实字形与统一网格约束内，通过密度和留白形成可读的新场景。
+  observable: 在统一网格和真实字形约束下，字符密度与留白共同形成可辨认的新题材。
+sources:
+- id: ascii-package-source-grid
+  kind: project_authored_source_artifact
+  local_path: examples/ascii-cave-grid.txt
+- id: ascii-package-renderer
+  kind: project_authored_renderer
+  local_path: render_gallery.py
+- id: user-literal-character-requirement
+  kind: project_requirement
+  text: 字符游戏美术需要严格按照字符堆叠实现。
+execution:
+  route: deterministic_grid
+  must:
+  - Build every scene shape from literal printable ASCII glyphs in fixed cells.
+  - Keep requested object count and layout readable.
+  - Return only the source grid for the deterministic rasterizer.
+  avoid:
+  - image-model repainting
+  - fake characters, text overlays on a painting
+  - independent shadows, outlines, gradients or figures outside the glyph grid
+  grid:
+    columns: 100
+    rows: 36
+    width: 1280
+    height: 720
+    margin: 12
+    font_size: 18
+    foreground: '#A9B9BF'
+    background: '#0A0E13'
+    glyph_colors:
+      '#': '#74828B'
+      '@': '#C2D2DA'
+      +: '#FFDB89'
+      '*': '#FFDB89'
+      .: '#536570'
