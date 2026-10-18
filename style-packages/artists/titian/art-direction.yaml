@@ -1,0 +1,96 @@
+schema_version: 2.0.0
+status: experimental
+id: titian-adjacent-color-reflection
+name: Titian adjacent color reflection
+base_package: artists/titian
+scope:
+  medium: painted_image
+  representation: stylized
+  description: >-
+    An optional direction for a user-requested scene with adjacent warm and cool
+    materials. Let a few restrained reflected color notes cross the local-color
+    boundary in shadow or transition areas, while keeping the materials,
+    silhouettes, and original palette distinct. This is a local paint
+    relationship, not a global color wash.
+  required_contexts:
+    - user-requested-adjacent-warm-and-cool-materials
+  incompatible_contexts:
+    - user-requested-monochrome-palette
+    - isolated-object-with-no-adjacent-materials
+    - exact-reconstruction-of-named-titian-work
+  limitations:
+    - Use only when the requested composition contains adjacent warm and cool materials.
+    - Preserve every requested object, local color, material, lighting direction, and palette constraint.
+    - Add reflected color only to a few shadow or transition planes; do not recolor an entire object or surface.
+    - Keep each material independently recognizable.
+pillars:
+  - Use local reflected color to connect neighboring warm and cool planes without erasing their identity.
+  - Keep the strongest color exchange near contact or shadow transitions.
+  - Preserve rich midtones and varied oil-painted edges, avoiding a uniform filter.
+rules:
+  - id: reflected-hue-stays-near-material-boundary
+    axis: adjacent-color-interaction
+    importance: core
+    applies_when: Warm and cool materials touch or sit close together in the requested image.
+    instruction: Echo a small amount of a neighboring material's hue in the receiving material's shadow or contact edge, keeping most of its local color intact.
+    observable: Warm and cool surfaces feel optically related near their boundary while remaining distinct across their main planes.
+    reject_when: One material becomes globally tinted by the other or the reflected color appears far from its source.
+    evidence:
+      source_ids:
+        - nga-titian-color-and-brushwork
+      basis: institutional_description
+      visual_review: pending
+    avoid: global warm filter, uniform complementary outlines, or unrelated color accents
+  - id: contact-and-shadow-carry-color-echo
+    axis: reflected-color-placement
+    importance: core
+    applies_when: Adjacent colored materials create a visible contact or cast-shadow region.
+    instruction: Concentrate reflected color at the contact, underside, or shadow-facing edge; let it fade into the receiving material instead of outlining the whole object.
+    observable: The color exchange explains proximity and form without looking like a graphic border.
+    reject_when: Reflected hue forms a continuous neon rim or replaces natural value structure.
+    evidence:
+      source_ids:
+        - nga-titian-color-and-brushwork
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: glow, blur, hard contour stripes, or a second light source
+  - id: preserve-distinct-painted-materials
+    axis: material-and-edge-separation
+    importance: supporting
+    applies_when: Color interaction crosses fabric, fruit, ceramic, skin, or other unlike materials.
+    instruction: Keep each surface's characteristic edge and paint thickness; vary the softness of selected transitions without merging silhouettes.
+    observable: The image retains layered oil color and material-specific edges while neighboring colors subtly influence one another.
+    reject_when: Materials merge or the image becomes a flat color overlay.
+    evidence:
+      source_ids:
+        - nga-titian-color-and-brushwork
+      basis: institutional_description
+      visual_review: pending
+    avoid: uniform edge softness, smooth digital gradient, or photorealistic compositing
+active_rule_ids:
+  - reflected-hue-stays-near-material-boundary
+  - contact-and-shadow-carry-color-echo
+  - preserve-distinct-painted-materials
+joint_checks:
+  - id: color-echo-connects-without-recoloring
+    rule_ids:
+      - reflected-hue-stays-near-material-boundary
+      - contact-and-shadow-carry-color-echo
+      - preserve-distinct-painted-materials
+    instruction: Place only local reflected hues at nearby warm-cool transitions and retain each requested material's main color, silhouette, and distinct painted surface.
+    observable: The colors interact near contact while the image remains readable as separate materials rather than a color filter.
+sources:
+  - id: nga-titian-color-and-brushwork
+    kind: museum_artist_record
+    url: https://www.nga.gov/artists/1932-titian
+execution:
+  route: text_only
+  must:
+    - Activate only when adjacent warm and cool materials are part of the requested scene.
+    - Preserve local colors, surfaces, objects, lighting direction, and silhouettes.
+    - Place reflected color near contact or shadow transitions and keep its strength restrained.
+    - Review material separation and absence of global color wash.
+  avoid:
+    - recoloring an entire object or surface
+    - adding unrequested objects, highlights, or secondary light sources
+    - using neon glow, blur, or a global warm filter

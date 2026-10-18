@@ -42,3 +42,7 @@ See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/man
 4. Connect the prompt, palette, reproduction notes, and reference manifest to a local model or ComfyUI workflow.
 
 Do not copy a source work's exact composition, figures, text, trademark, logo, game asset, or fixed subject. Users manage model weights, API keys, generated images, and storage themselves.
+
+## Experimental direction: local color reflection between materials
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only when the requested scene contains adjacent warm and cool materials. Add a small amount of reflected neighboring color near contact or shadow edges while preserving most local color, silhouettes, and material differences. This is local color interaction, not a global warm filter. See [`comparisons/`](comparisons/README.md) for a still-life probe. This direction remains experimental.

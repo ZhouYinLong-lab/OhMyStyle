@@ -2,7 +2,7 @@ id: titian
 name: 提香
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: >-
   以文艺复兴晚期威尼斯绘画的丰润色彩、温暖光泽与层叠油彩表面组织画面。它关注色彩如何承载体积、肌理和情绪，不规定人物、物体或地点。
 files:
@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: artist
   medium: 绘画

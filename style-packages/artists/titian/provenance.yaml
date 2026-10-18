@@ -1,5 +1,5 @@
 package_id: titian
-package_version: 0.1.0
+package_version: 0.2.0
 curation_status: draft
 source_policy: A primary source is recorded below; verify redistribution rights before bundling any image.
 sources:
@@ -7,6 +7,10 @@ sources:
     title: '提香作品检索与开放图像资源'
     authority: '大都会艺术博物馆'
     supports: source traceability and package scope
+  - url: 'https://www.nga.gov/artists/1932-titian'
+    title: Titian
+    authority: National Gallery of Art
+    supports: Titian's colorism and expressive use of varying brushwork and paint thickness.
 
 attribution: The package describes observable characteristics and does not claim affiliation, endorsement, or exact imitation.
 rights_notes:
