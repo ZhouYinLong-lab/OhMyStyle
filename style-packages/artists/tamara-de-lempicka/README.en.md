@@ -88,3 +88,7 @@ and lighting. Review the output against `evaluation.yaml`.
 Users manage model weights, API keys, and generated images themselves. References
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
+
+## Experimental direction: facets on polished objects
+
+The optional [`art-direction.yaml`](art-direction.yaml) applies only to a user-requested polished metal or stone object. Align light and shadow facets to the object's form and separate its silhouette from background geometry. Avoid turning the painting into a product photograph, plastic 3D render, or uniform chrome effect. See [`comparisons/`](comparisons/README.md) for a generated comparison. This direction remains experimental.

@@ -2,7 +2,7 @@ id: tamara-de-lempicka
 name: 塔玛拉·德·兰佩卡
 kind: artist
 domain: painting
-version: 0.1.0
+version: 0.2.0
 summary: 以装饰艺术时期的几何构形、金属般清晰的体积、冷峻优雅的人物和高对比色面组织现代肖像与静物。
 files:
   identity: identity.yaml
@@ -14,6 +14,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 
 classification:
   source_type: artist

@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "tamara-de-lempicka",
+    "name": "塔玛拉·德·兰佩卡",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\tamara-de-lempicka"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One unbranded polished brass vessel on a stepped pale stone plinth, with broad geometric planes behind it; sculptural Art Deco still life, horizontal 16:9.",
+  "prompt": "USER SUBJECT: One unbranded polished brass vessel on a stepped pale stone plinth, with broad geometric planes behind it; sculptural Art Deco still life, horizontal 16:9.\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: painted_image\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [facets-follow-object-turning-form] Place broad light and shadow facets along the object's real planes and curves; keep the brightest narrow highlight on a turning edge or bevel that clarifies its volume.\n- [background-facets-respect-silhouette] Stop architectural or decorative planes at the object's silhouette; use value and hue contrast to separate overlapping edges without adding a halo.\n- [painted-surface-controls-reflection] Translate reflections into a few smooth painted planes with restrained surface variation; preserve visible paint character and the specified material color.\n- [polished-object-remains-painted-and-readable] Use a few form-aligned painted facets to describe the user's polished object, and keep surrounding geometric planes separate from its contour.\nREQUIREMENT: Activate only for a user-requested polished metal or stone object.\nREQUIREMENT: Preserve the specified object, material, shape, color, and setting.\nREQUIREMENT: Align facets with the object's form and keep background geometry behind its silhouette.\nREQUIREMENT: Review material legibility, silhouette separation, and painterly surface.",
+  "negative_prompt": "generic chrome reflections, plastic gloss, or vector gradients\nbackground pattern crossing the object or luminous outline effects\nphotorealistic product lighting, lens flare, and texture overlays\nphotorealistic or plastic 3D product rendering\nadding logos, labels, jewelry, or unrequested objects\nglobal chrome filters, lens flares, or background halos",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "lempicka-polished-object-facets",
+    "name": "Lempicka polished-object facets",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\tamara-de-lempicka\\art-direction.yaml",
+    "sha256": "7b40307efcab7f107b8201e60571c8d1d715bdc468e1b4f9e0f5c4ae5adff617",
+    "active_rule_ids": [
+      "facets-follow-object-turning-form",
+      "background-facets-respect-silhouette",
+      "painted-surface-controls-reflection"
+    ],
+    "contexts": [
+      "user-requested-polished-metal-or-stone-object"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Activate only for a user-requested polished metal or stone object.",
+      "Preserve the specified object, material, shape, color, and setting.",
+      "Align facets with the object's form and keep background geometry behind its silhouette.",
+      "Review material legibility, silhouette separation, and painterly surface."
+    ],
+    "avoid": [
+      "photorealistic or plastic 3D product rendering",
+      "adding logos, labels, jewelry, or unrequested objects",
+      "global chrome filters, lens flares, or background halos"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "painted_image",
+      "representation": "stylized",
+      "description": "An optional material-specific direction for a user-requested polished metal or stone object in a geometric Art Deco painting. Fit large highlight and shadow facets to the object's turning form, while keeping background geometry behind its silhouette. This avoids treating the material as a generic mirror or a plastic 3D render.",
+      "required_contexts": [
+        "user-requested-polished-metal-or-stone-object"
+      ],
+      "incompatible_contexts": [
+        "user-requested-matte-object",
+        "exact-reconstruction-of-named-lempicka-work",
+        "photorealistic-product-render-requested"
+      ],
+      "limitations": [
+        "Use only for a user-requested polished metal or stone object.",
+        "Preserve the object's requested design, material, color, scale, and placement.",
+        "Keep background planes distinct from the object's silhouette.",
+        "Do not add a person, fashion object, jewelry, label, or brand unless requested."
+      ]
+    },
+    "rules": [
+      {
+        "id": "facets-follow-object-turning-form",
+        "axis": "material-volume-structure",
+        "importance": "core",
+        "applies_when": "The user requests a polished metal or stone object.",
+        "instruction": "Place broad light and shadow facets along the object's real planes and curves; keep the brightest narrow highlight on a turning edge or bevel that clarifies its volume.",
+        "observable": "The object's shape remains readable through angular value changes, with no uniform metallic gloss.",
+        "reject_when": "Facets ignore the object's form or reflections flatten its silhouette.",
+        "evidence": {
+          "source_ids": [
+            "moma-tamara-lempicka-artist-record"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "generic chrome reflections, plastic gloss, or vector gradients"
+      },
+      {
+        "id": "background-facets-respect-silhouette",
+        "axis": "object-background-plane-hierarchy",
+        "importance": "core",
+        "applies_when": "Geometric background shapes surround the requested object.",
+        "instruction": "Stop architectural or decorative planes at the object's silhouette; use value and hue contrast to separate overlapping edges without adding a halo.",
+        "observable": "The object reads as a coherent volume against a crisp but subordinate Art Deco setting.",
+        "reject_when": "Background geometry cuts across or merges with the object contour.",
+        "evidence": {
+          "source_ids": [
+            "moma-tamara-lempicka-artist-record"
+          ],
+          "basis": "direct_visual_observation",
+          "visual_review": "pending"
+        },
+        "avoid": "background pattern crossing the object or luminous outline effects"
+      },
+      {
+        "id": "painted-surface-controls-reflection",
+        "axis": "painterly-material-translation",
+        "importance": "supporting",
+        "applies_when": "Highlights and reflections are needed to identify the requested material.",
+        "instruction": "Translate reflections into a few smooth painted planes with restrained surface variation; preserve visible paint character and the specified material color.",
+        "observable": "The polished surface feels painted and sculptural rather than photo-composited or rendered in 3D.",
+        "reject_when": "Every surface becomes uniformly reflective or mechanically smooth.",
+        "evidence": {
+          "source_ids": [
+            "moma-tamara-lempicka-artist-record"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "photorealistic product lighting, lens flare, and texture overlays"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "polished-object-remains-painted-and-readable",
+        "rule_ids": [
+          "facets-follow-object-turning-form",
+          "background-facets-respect-silhouette",
+          "painted-surface-controls-reflection"
+        ],
+        "instruction": "Use a few form-aligned painted facets to describe the user's polished object, and keep surrounding geometric planes separate from its contour.",
+        "observable": "The material and object silhouette read clearly within a high-contrast painted composition."
+      }
+    ],
+    "sources": [
+      {
+        "id": "moma-tamara-lempicka-artist-record",
+        "kind": "museum_artist_record",
+        "url": "https://www.moma.org/artists/3476"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "7b40307efcab7f107b8201e60571c8d1d715bdc468e1b4f9e0f5c4ae5adff617",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

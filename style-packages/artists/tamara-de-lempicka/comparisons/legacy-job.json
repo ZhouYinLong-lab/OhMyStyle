@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "tamara-de-lempicka",
+    "name": "塔玛拉·德·兰佩卡",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\tamara-de-lempicka"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One unbranded polished brass vessel on a stepped pale stone plinth, with broad geometric planes behind it; sculptural Art Deco still life, horizontal 16:9.",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: One unbranded polished brass vessel on a stepped pale stone plinth, with broad geometric planes behind it; sculptural Art Deco still life, horizontal 16:9.\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new subject and composition using these observable visual decisions:\n- 人物或物体以雕塑般大形占据画面\n- 斜线、扇形和建筑切面形成动势\n- 背景简化为装饰性空间\n- 黑、白、银灰、祖母绿、钴蓝和深红形成高对比\n- 肤色和金属色保持干净\n- 颜色块不被综合色滤镜覆盖\n- 平滑油画层\n- 清晰几何轮廓\n- 近似金属或大理石的体积处理\n- 方向明确的硬光或柔硬混合光\n- 高光精确而不泛滥\n- 阴影切面清楚\n- 表面平整、精致、少量可见笔触\n- 材质差异靠体积和边界表达\n- 纹理低频并集中在服装、金属和建筑\n- 禁止粗颗粒复古滤镜\n- 几何优雅与人物体积同时成立\n- 现代感不是加入品牌文字\n- 不复制特定肖像\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- soft_impressionist_blur\n- photorealistic_skin\n- copied_pose\n- logo_or_brand_design",
+  "template_variables": {
+    "SUBJECT": "One unbranded polished brass vessel on a stepped pale stone plinth, with broad geometric planes behind it; sculptural Art Deco still life, horizontal 16:9.",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

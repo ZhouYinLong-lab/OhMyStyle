@@ -69,3 +69,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 将基础 Prompt 和负面约束接入本地模型或 ComfyUI 工作流；按调色板、复现说明和参考清单设置颜色、构图、材质与光线。生成后用 `evaluation.yaml` 做人工或自动复核。
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
+
+## 实验方向：抛光物件的几何切面
+
+可选方向 [`art-direction.yaml`](art-direction.yaml) 仅适用于用户指定的抛光金属或石材物件：让明暗切面顺着物件真实体积变化，并使背景几何形与物件轮廓保持分离。避免把画面变成产品级照片、塑料 3D 或通体镀铬效果。查看 [`comparisons/`](comparisons/README.md) 中的生成对照；该方向仍处于实验状态。

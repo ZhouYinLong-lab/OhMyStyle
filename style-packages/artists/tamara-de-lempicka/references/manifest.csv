@@ -1,2 +1,3 @@
 asset_id,local_path,title,creator,year,source_url,license,attribution,role,notes
 tamara-de-lempicka-primary-source,,Tamara de Lempicka artist page,Museum of Modern Art,,https://www.moma.org/artists/3476,link_only,Works by Tamara de Lempicka remain protected where applicable; this package describes formal traits without copying a named portrait.,primary,Link-only source record. Do not bundle or redistribute external artwork without explicit permission.
+tamara-de-lempicka-moma-materials,,Tamara de Lempicka artist page,The Museum of Modern Art,,https://www.moma.org/artists/3476,link_only,The Museum of Modern Art,primary,Used for the package's Art Deco geometric painting scope; no source image bundled or used as generation input.
