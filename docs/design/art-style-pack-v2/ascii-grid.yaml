@@ -1,0 +1,138 @@
+design_version: 2.0.0-draft
+status: proposal_unexecuted
+target_package: style-packages/game-art/ascii-character-game-art
+purpose: 展示硬媒介约束怎样与美术规则共同构成风格包。
+layout_note: 样稿规定的是拟议接口；现有渲染器仍是固定 100 列、36 行的代表图工具，尚未实现这里的通用任务入口。
+
+identity:
+  source_kind: game_art
+  direction_id: literal-ascii-grid
+  direction_name: 真实 ASCII 字符网格构图
+  scope:
+    medium: ascii_glyph_grid
+    visual_goal: 用真实可打印字符的形、密度和排列构成场景。
+  subject_policy:
+    mode: open
+    default_motifs: []
+    representation: stylized
+    preserve: [requested_scene_elements, subject_count, layout_constraints]
+  incompatible_requests:
+    - 超出所选字符集的中文、块字符或 emoji。
+    - 要求普通图像生成器重绘网格以增加写实质感。
+  conflict_action: 提示字符集或媒介冲突；修改任务或切换包必须明确选择。
+
+source_records:
+  - id: ascii-package-source-grid
+    type: project_authored_source_artifact
+    path: style-packages/game-art/ascii-character-game-art/examples/ascii-cave-grid.txt
+  - id: ascii-package-renderer
+    type: project_authored_renderer
+    path: style-packages/game-art/ascii-character-game-art/render_gallery.py
+  - id: user-literal-character-requirement
+    type: project_requirement
+    text: 字符游戏美术需要严格按照字符堆叠实现。
+
+visual_signature:
+  pillars:
+    - 可见场景形状由真实字符本身构成。
+    - 固定网格和字形密度共同组织轮廓、空间与层级。
+    - 前景、环境和重要交互对象在允许色数与字符预算内保持可读。
+  rules:
+    - id: ascii-literal-construction
+      axis: process
+      importance: core
+      applies_when: always
+      instruction: 先生成逐行字符源，再由等宽字体在固定单元格内渲染。
+      observable: 每个场景图形都能回溯到具体行、列和字形。
+      reject_when: 图片是普通绘画加字符贴图，或含网格外独立图形。
+      evidence:
+        source_ids: [ascii-package-source-grid, ascii-package-renderer, user-literal-character-requirement]
+        basis: original_design_intent
+        visual_review: existing_source_and_renderer_inspected_new_tasks_pending
+    - id: ascii-density-hierarchy
+      axis: value
+      importance: core
+      applies_when: always
+      instruction: 以字符密度、负空间和允许的前景亮度区分主体、通路和远景。
+      observable: 缩略查看仍可读出主要对象，放大后各区域仍是独立字符。
+      reject_when: 随机字符噪声遮蔽主体，或仅用颜色区分所有关键对象。
+      evidence:
+        source_ids: [ascii-package-source-grid]
+        basis: original_design_intent
+        visual_review: pending_new_task_review
+    - id: ascii-grid-alignment
+      axis: layout
+      importance: core
+      applies_when: always
+      instruction: 各行用统一规则补齐列数，字形逐格对齐；不在局部改变字号伪造景深。
+      observable: 行列坐标稳定，空间差异由符号与布局体现。
+      reject_when: 文本比例字体导致错列，或靠局部拉伸扭曲字符制造轮廓。
+      evidence:
+        source_ids: [user-literal-character-requirement]
+        basis: original_design_intent
+        visual_review: pending_new_task_review
+
+  joint_checks:
+    - id: ascii-glyph-layout-readability
+      rule_ids: [ascii-literal-construction, ascii-density-hierarchy, ascii-grid-alignment]
+      observable: 在统一网格和真实字形约束下，字符密度与留白共同形成可辨认的新题材。
+      reject_when: 字符技术上合法但画面不可读，或为提高可读性偷偷加入网格外图形。
+
+reproduction:
+  supported_routes: [deterministic_grid]
+  source_generator: text_model_or_human
+  renderer_kind: monospace_glyph_rasterizer
+  legacy_renderer: style-packages/game-art/ascii-character-game-art/render_gallery.py
+  implementation_status: generalized_task_interface_and_lossless_export_required
+  hard_constraints:
+    - id: ascii-character-set
+      check: 所有源字符为 U+0020 至 U+007E；换行仅作为行分隔符。
+    - id: ascii-grid-size
+      check: 行列数与本次任务声明一致，空格和右侧补齐规则明确，不能依靠自动换行。
+    - id: ascii-glyph-only-scene
+      check: 除统一背景外，场景像素仅来自声明网格中的字形栅格化与逐格前景色。
+    - id: ascii-font-identity
+      check: 记录实际字体文件、可用许可、字体哈希、字号、单元格宽高和栅格化库版本。
+    - id: ascii-source-roundtrip
+      check: 固定源、颜色映射、字体、参数和渲染环境后，独立重渲染的无损像素缓冲一致。
+  artifacts:
+    required:
+      - source_grid.txt
+      - render_record.yaml
+      - master.png
+    optional:
+      - cell_foreground_colors.json
+      - gallery-16x9.jpg
+  validation_note: glyph-only 和像素一致性在无损母版或编码前缓冲上检查；有损 JPEG 的压缩误差不能用作字形来源判据。
+  resizing_policy: 网格在目标尺寸直接排版；不以会改画形状的图像节点重绘。
+  background_policy: 统一背景可以填充；禁止独立手绘阴影、插画轮廓或字形外高光。
+  reference_image_policy: 可作人工构图研究，不能绕过源网格直接生成最终图。
+
+reference_analysis:
+  - asset_id: ascii-package-source-grid
+    supports_rules: [ascii-literal-construction, ascii-density-hierarchy]
+    do_not_transfer: [固定洞穴布局, 固定火把数量, 固定角色位置]
+    reuse_note: 复用构建方法；新任务生成新的源网格。
+
+relations:
+  compare_with: [pixel-art, terminal-inspired-illustration]
+  comparison_scope: 此处为媒介类别，不是已登记包 ID。
+  shared_traits: [离散网格, 有限细节, 轮廓简化]
+  distinguishing_rule_ids: [ascii-literal-construction, ascii-grid-alignment]
+  comparison_hypothesis: ASCII 的基本构件是指定字体的真实字形，而不是像素块或看似文字的涂抹。
+  comparison_status: hard_media_boundary_defined_aesthetic_comparison_pending
+
+evaluation:
+  hard_gate_ids:
+    - ascii-character-set
+    - ascii-grid-size
+    - ascii-glyph-only-scene
+    - ascii-font-identity
+    - ascii-source-roundtrip
+  style_rule_ids: [ascii-literal-construction, ascii-density-hierarchy, ascii-grid-alignment]
+  joint_check_ids: [ascii-glyph-layout-readability]
+  task_checks: [requested_objects_present, requested_count_correct, requested_layout_preserved]
+  gate_policy: 任一硬约束不通过，该输出不计入严格 ASCII 合格样例；美观评价可单独保留。
+  tasks: [terminal-workshop, terminal-garden, terminal-room]
+  result_status: not_run
+  accepted_examples: []

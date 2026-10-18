@@ -1,0 +1,150 @@
+design_version: 2.0.0-draft
+status: proposal_unexecuted
+target_package: style-packages/artists/joaquin-sorolla
+purpose: 展示艺术家方向如何形成有证据连接、可迁移和可评审的视觉规则。
+layout_note: 本文件合并展示未来分属现行多个文件的内容，不能直接交给当前编译器。
+
+identity: # 对应 identity.yaml
+  source_kind: artist
+  entity: Joaquín Sorolla
+  direction_id: sunlit-outdoor-oil
+  direction_name: 户外日光油画实践
+  scope:
+    medium: oil_painting
+    practice: 户外观察、变化光线、有方向的笔触；选定研究范围，不概括全部生涯。
+    period: 待依据实际参考作品集缩定
+    research_status: institutional_sources_read_cross_work_visual_review_pending
+  subject_policy:
+    mode: open
+    default_motifs: []
+    representation: stylized
+    preserve: [requested_subject_identity, subject_count, requested_setting]
+  incompatible_requests:
+    - 完全黑暗且没有受光面的场景，与本次日光方向的核心条件冲突。
+    - 无笔触的纯摄影成像，与本方向的油画制作语言冲突。
+  conflict_action: 说明冲突；请求选择兼容方向或明确放宽相关规则，不擅改用户场景。
+
+source_records: # 实际发布时复用 references/manifest.csv 中同名 asset_id
+  - id: sorolla-national-gallery-technique
+    type: institutional_analysis
+    url: https://www.nationalgallery.org.uk/exhibitions/past/sorolla/bright-colours-bold-brushstrokes-and-unexpected-angles
+    input_permission: research_link_only
+  - id: sorolla-prado-boys-on-the-beach
+    type: collection_object_record
+    url: https://www.museodelprado.es/en/the-collection/art-work/boys-on-the-beach/edd7a202-c069-49f1-a3f4-eacf9b4022c2
+    input_permission: research_link_only
+  - id: sorolla-museum-plein-air
+    type: institutional_analysis
+    url: https://museosorolladigital.es/exposiciones-temporales/sorolla-viajar-para-pintar/
+    input_permission: research_link_only
+    access_note: 沿用现有包来源记录；本轮未重新验证该页面内容。
+
+visual_signature: # 对应 visual-signature.yaml；视觉规则的规范源
+  pillars:
+    - 光线与环境反射色共同组织可读的体块。
+    - 快速而有方向的油画笔触承载形体与运动。
+    - 鲜明局部颜色服从整体明暗分组。
+  rules:
+    - id: sorolla-light-structure
+      axis: lighting
+      importance: core
+      applies_when: 本方向选择日光任务，画面中存在可见的受光面与阴影面。
+      instruction: 以主要日光方向塑造体块，让环境反射影响暗面和过渡面。
+      observable: 同一对象的受光、暗面与反射色关系共同帮助读出结构。
+      reject_when: 只有整体偏暖或均匀发光，形体明暗和反射关系没有变化。
+      evidence:
+        source_ids: [sorolla-national-gallery-technique, sorolla-prado-boys-on-the-beach]
+        basis: curatorial_inference
+        visual_review: pending
+    - id: sorolla-directional-marks
+      axis: mark_making
+      importance: core
+      applies_when: 存在可辨认的物体表面或运动方向。
+      instruction: 用长短和厚薄有变化的笔触沿表面转折、折痕或运动组织，不将笔触均匀撒满画面。
+      observable: 焦点附近可用笔触读出转面，次要区域的细节被概括。
+      reject_when: 所有材质都被同密度短点覆盖，或整图变成无笔触的柔焦照片。
+      evidence:
+        source_ids: [sorolla-national-gallery-technique]
+        basis: curatorial_inference
+        visual_review: pending
+    - id: sorolla-value-grouping
+      axis: value
+      importance: core
+      applies_when: always
+      instruction: 先建立清楚的大明暗组，再放入局部亮色和选择性的高光。
+      observable: 灰阶缩略图仍能辨认主体和主要平面；局部亮色不会打散整体层级。
+      reject_when: 全画面平均提亮，或高饱和度细节取代了形体组织。
+      evidence:
+        source_ids: [sorolla-national-gallery-technique, sorolla-prado-boys-on-the-beach]
+        basis: curatorial_inference
+        visual_review: pending
+    - id: sorolla-selective-edges
+      axis: edges
+      importance: supporting
+      applies_when: 题材允许区分焦点与次要区域。
+      instruction: 在焦点的受光转折保留明确边缘，次要处允许松动与断续。
+      observable: 边缘清晰度有层级，主体轮廓无需整圈描黑仍然可读。
+      reject_when: 全部边缘同样锐利，或全部边缘被同样的雾化处理。
+      evidence:
+        source_ids: [sorolla-national-gallery-technique]
+        basis: curatorial_inference
+        visual_review: pending
+
+  joint_checks:
+    - id: sorolla-form-light-mark-coherence
+      rule_ids: [sorolla-light-structure, sorolla-directional-marks, sorolla-value-grouping]
+      observable: 反射色与明暗分组说明同一组体块，笔触沿这些体块转折；三者同时支持主体可读性。
+      reject_when: 图里同时有彩色阴影与油画笔触，但笔触和颜色都不服从形体，无法构成一致空间。
+
+reference_analysis: # 对应可选 references/analysis.yaml
+  - asset_id: sorolla-prado-boys-on-the-beach
+    supports_rules: [sorolla-light-structure, sorolla-value-grouping]
+    inspect_next: 比较受光表面、反光与暗面；再以不同题材作品检查这些判断能否成立。
+    do_not_transfer: [人物身份与数量, 海滩, 姿态, 原作精确构图]
+    inspection_status: pending
+    generation_input: disallowed_until_request_specific_permission_and_local_asset_are_recorded
+
+palette_roles: # 对应 palette/palette.json 的关系说明；本样稿不规定全局精确色值
+  light_planes: 在任务材料允许时采用偏暖高明度关系，保留局部色。
+  shadow_planes: 按环境反射呈现色相变化，不预设所有阴影都是蓝色。
+  accents: 在局部保留明确颜色，服从大明暗组。
+  prohibited_default: 不因参考中有水面，就把所有新题材强制改成蓝绿色。
+
+reproduction: # 对应 reproduction.yaml
+  supported_routes: [text_only, style_reference]
+  default_route: text_only
+  process:
+    - 按用户请求建立对象、数量、场景与主要受光关系。
+    - 先组织大明暗块与主要色彩关系，再组织笔触。
+    - 让笔触跟随形体和材质；以选择性边缘与高光收束焦点。
+  reference_route_requirements:
+    - 模型具有明确的风格参考通路。
+    - 实际输入的图像须单独记录素材、用途和可用权限，研究链接不能当作已输入。
+    - 输入图若带来海滩、人物姿态或原作布局，应记录为内容泄漏并降低其使用优先级。
+  anonymous_prompt_study: >-
+    描绘 {SUBJECT}，场景为 {LOCATION}，保持所要求的对象数量与布局。
+    采用户外日光下的油画呈现，以主要受光与环境反射色组织体块。
+    建立清楚的大明暗组，用有方向、长短厚薄不同的笔触描述表面转折。
+    焦点边缘明确，次要区域松动；高光选择性集中，不给整个画面覆盖暖色或雾化。
+    不从参考中额外加入海滩、水面、人物或具体构图。
+  prompt_status: authoring_study_not_provider_tested
+
+relations: # 对应 relations.yaml
+  compare_with: [claude-monet, pierre-auguste-renoir]
+  shared_traits: [油画表面, 户外观察, 对光与色彩的关注]
+  comparison_hypothesis: 检查选定参考集中的受光体块、反射色、边缘层级与笔触组织是否形成可辨认组合。
+  comparison_status: pending_reference_selection_and_same_subject_review
+  boundary_note: 不把其他画家的全部作品概括成与本方向相反；差异由具体参考集和输出证明。
+
+evaluation: # 对应 evaluation.yaml
+  hard_gates: [user_subject_and_count_preserved, no_unrequested_reference_scene]
+  style_rule_ids:
+    - sorolla-light-structure
+    - sorolla-directional-marks
+    - sorolla-value-grouping
+    - sorolla-selective-edges
+  joint_check_ids: [sorolla-form-light-mark-coherence]
+  tasks: [sunlit-chair, sunlit-courtyard, sunlit-still-life]
+  result_status: not_run
+  accepted_examples: []
+  readiness: 研究与试验草稿；不能据此给现有包增加验证等级。

@@ -1,0 +1,136 @@
+design_version: 2.0.0-draft
+status: proposal_unexecuted
+target_package: style-packages/schools/bauhaus
+purpose: 展示学院包如何按具体课程与材料方法缩定范围。
+layout_note: 合并展示 identity、visual-signature、reproduction、relations 和 evaluation 的设计内容。
+
+identity:
+  source_kind: school
+  institution: Bauhaus
+  direction_id: albers-inspired-paper-study
+  direction_name: Albers 预备课程纸材方法的当代转译
+  scope:
+    medium: paper_construction
+    method: 通过切、撕、折研究纸的结构、表面与空间可能。
+    attribution: 依据 Bauhaus Dessau 当代教育项目对 Albers 课程方法的介绍。
+    historical_limits: 不是具体历史课堂的完整复原，也不代表包豪斯所有时期、导师和媒介的共同成品风格。
+  subject_policy:
+    mode: open
+    default_motifs: []
+    representation: stylized
+    compatible_tasks: [纸材对象研究, 纸材空间研究, 纸材形式研究]
+  incompatible_requests:
+    - 要求保留纯油画或摄影媒介、同时完整体现本方向的实际纸材构建。
+    - 仅凭一张生成图就要求认证真实可制作、可承重或可折叠。
+  conflict_action: 明示媒介或证据冲突；选择视觉研究、数字构建研究或实物试作中的适合目标。
+
+source_records:
+  - id: bauhaus-dessau-paper-course
+    type: institutional_teaching_description
+    url: https://bauhaus-dessau.de/en/visit/groups/offers-for-students/
+    locator: Works made of paper – preliminary course
+    input_permission: research_link_only
+  - id: bauhaus-dessau-teaching-models
+    type: institutional_teaching_description
+    url: https://bauhaus-dessau.de/en/knowledge/teaching/
+    locator: Open Studios – Teaching Models
+    input_permission: research_link_only
+
+visual_signature:
+  pillars:
+    - 形与空间由纸材的加工和结构关系产生。
+    - 以少量明确操作研究材料，不用学院名称代替设计方法。
+    - 留白、开口和投影共同说明折叠与受力关系。
+  rules:
+    - id: paper-form-from-operations
+      axis: process
+      importance: core
+      applies_when: always
+      instruction: 从明确的切、撕、折操作发展形体，保留操作造成的可辨认痕迹。
+      observable: 折线、切口与纸面连续性能够解释主要体块的形成。
+      reject_when: 只生成泛化现代主义雕塑，纸面上有装饰折痕却不能解释形体。
+      evidence:
+        source_ids: [bauhaus-dessau-paper-course]
+        basis: institutional_description
+        visual_review: pending_output_review
+    - id: paper-material-economy
+      axis: form
+      importance: core
+      applies_when: always
+      instruction: 以少量纸材和清楚的连接方式组织结构；每个新增构件必须有功能说明。
+      observable: 形体的支撑、接触与转折可在整体图和结构视图中对应。
+      reject_when: 连接处凭空漂浮，或靠不可见支架掩盖结构问题。
+      evidence:
+        source_ids: [bauhaus-dessau-paper-course, bauhaus-dessau-teaching-models]
+        basis: curatorial_inference
+        visual_review: pending
+    - id: paper-space-and-shadow
+      axis: space
+      importance: supporting
+      applies_when: 任务包含空间体块，且照明允许观察开口和折叠。
+      instruction: 用开口、负空间和可解释投影显示纸面的空间关系。
+      observable: 观察者可区分实面、开口和阴影；阴影方向与纸面转折相容。
+      reject_when: 黑色装饰贴片被当成开口，或投影与结构矛盾。
+      evidence:
+        source_ids: [bauhaus-dessau-teaching-models]
+        basis: curatorial_inference
+        visual_review: pending
+
+  joint_checks:
+    - id: paper-operation-structure-space-coherence
+      rule_ids: [paper-form-from-operations, paper-material-economy, paper-space-and-shadow]
+      observable: 加工步骤、纸面连接与负空间能够相互解释，投影没有掩盖结构矛盾。
+      reject_when: 图像很像折纸或现代主义雕塑，但形体无法由声明的材料操作解释。
+
+reference_analysis:
+  - asset_id: bauhaus-dessau-paper-course
+    supports_rules: [paper-form-from-operations, paper-material-economy]
+    documented_method: 当代课程介绍明确提到纸材研究，以及切、撕、折和不使用胶水的练习限制。
+    do_not_transfer: [网站版式, 教学现场布置, 未经选择的历史风格图案]
+    inspection_status: institutional_text_reviewed_no_historical_object_set_claimed
+    generation_input: none
+
+palette_roles:
+  default: 保留用户指定纸材的本色和表面差异，用明度帮助观察结构。
+  color_is_optional: 颜色服务材料研究，不自动加入红黄蓝。
+  surface: 纸纤维、折线和厚度应按选定材料表现，不统一叠加复古纸纹。
+
+reproduction:
+  supported_routes: [text_only, structure_control, physical_prototype]
+  default_route: text_only
+  evidence_levels:
+    visual_study: 生成图只说明视觉方案，不能认证真实结构可行。
+    virtual_construction: 具有可检查尺寸、几何或展开图的数字方案，物理性能仍需另证。
+    physical_prototype: 记录实物加工、材料和过程后，才能对真实制作提出相应证据。
+  task_specific_constraints:
+    - 本试点继承当代纸材练习的不使用胶水约束，不将其宣称为包豪斯所有作品的普遍规则。
+    - 只有切、撕、折操作；不静默添加金属骨架、胶带或非纸构件。
+  process:
+    - 明确纸材、任务和预期证据等级。
+    - 提出少量加工步骤，检查每步如何改变平面和受力关系。
+    - 展示整体方案和能解释接触、折线、切口的结构视图。
+    - 结构验证不足时保留 visual_study 状态，不因图像好看而升级。
+  anonymous_prompt_study: >-
+    为 {SUBJECT} 设计一个当代纸材练习，纸材和尺寸按用户要求。
+    通过切、撕、折发展形体，不使用胶水、胶带或隐藏支架。
+    让折线、切口、接触点和负空间解释结构；保留纸材本色与可辨认厚度。
+    不强制加入红黄蓝或历史标志。将输出标注为视觉研究，
+    并列出仍需要展开图或实物试作验证的位置。
+  prompt_status: authoring_study_not_provider_tested
+
+relations:
+  compare_with: [de-stijl, geometric-minimalism]
+  comparison_scope: 仅把相邻方向作为同题材的诊断候选，发布前需核实包 ID 与研究范围。
+  shared_traits: [结构简化, 几何组织, 留白]
+  distinguishing_rule_ids: [paper-form-from-operations, paper-material-economy]
+  comparison_hypothesis: 判断结果能否通过加工和材料结构解释，而不只依赖原色矩形来暗示现代主义。
+  comparison_status: pending
+
+evaluation:
+  hard_gates: [requested_paper_task_preserved, evidence_level_not_overclaimed]
+  style_rule_ids: [paper-form-from-operations, paper-material-economy, paper-space-and-shadow]
+  joint_check_ids: [paper-operation-structure-space-coherence]
+  process_gate: 缺少加工与结构证据时，不能判定真实可制作；视觉方案可继续评审。
+  tasks: [paper-seat-study, paper-screen-study, paper-light-study]
+  result_status: not_run
+  accepted_examples: []

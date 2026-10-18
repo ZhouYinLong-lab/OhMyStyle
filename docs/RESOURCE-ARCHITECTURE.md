@@ -23,10 +23,16 @@ signature  + prompts   + examples
 
 ## Resource and task boundaries
 
-`style-packages/**/resource.yaml` describes how a style behaves. It must be
-independent of a particular subject, character, story, or narrative. The
-existing `package.yaml`, prompt files, visual signature, reproduction rules,
-references, and evaluation files are the implementation artifacts.
+`style-packages/**/resource.yaml` records the resource type, readiness,
+dimensions, artifact paths, and evidence and rights declarations. The actual
+visual behavior is defined by the identity, visual signature, reproduction,
+palette, and prompt artifacts identified by `package.yaml`. That behavior
+must be independent of a particular subject, character, story, or narrative.
+
+The [art-style architecture proposal](ART-STYLE-PACK-ARCHITECTURE.md) develops
+the artistic content model with evidence-linked rules, scoped directions,
+media constraints, and comparative reviews. It is a design draft and has not
+been integrated into the current runtime.
 
 Render tasks under `tasks/` describe what to generate. A task may contain a
 subject, composition request, narrative, aspect ratio, or strict measurable

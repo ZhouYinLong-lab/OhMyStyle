@@ -3,12 +3,18 @@
 OhMyStyle stores a style as a reproducible package rather than as a prompt and
 some images. A package separates four responsibilities:
 
-1. `style.yaml` defines the visual identity and machine-readable constraints.
+1. `package.yaml` identifies the package; `identity.yaml` and
+   `visual-signature.yaml` define its scope and visual rules.
 2. References and examples show what the style is, including accepted and
    rejected results.
 3. Technique and prompt files describe how to reproduce the style.
 4. Provenance and license files explain where every inherited or external asset
    came from and whether it can be redistributed.
+
+The [art-style architecture proposal](ART-STYLE-PACK-ARCHITECTURE.md) describes
+a draft approach to evidence-linked visual rules, scoped school practices,
+strict media constraints, and comparative evaluation. Its study files are
+design examples, not a format already supported by the current compiler.
 
 ## Package layout
 

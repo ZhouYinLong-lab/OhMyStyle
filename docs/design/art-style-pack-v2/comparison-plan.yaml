@@ -1,0 +1,153 @@
+design_version: 2.0.0-draft
+status: protocol_only_not_run
+purpose: 先检验新美术规则是否优于名称提示及现有规则，再决定是否接入运行时。
+baseline_repository_revision: 59d9aa10
+protocol_limits:
+  - 初筛规模用于发现失败和估计改进方向，不提供统计显著性或全库有效性结论。
+  - 已有包、样稿和模型的效果均不得在未运行前标注为 accepted。
+  - 所有题材请求预先锁定；不得按某个组的输出临时调整另一个组的题材。
+
+controlled_conditions:
+  within_provider:
+    - 使用同一模型及版本、画幅、质量设置和可配置采样参数。
+    - 每个任务在各组中使用相同用户请求，记录编译后实际提交的全文。
+    - 如服务支持种子，在同任务同轮次组间尽量匹配；服务不保证确定性时照实记录。
+    - 随机化生成顺序，记录日期；若模型版本或服务行为改变，分批报告。
+    - 第一阶段不输入作品、代表图、角色图或布局图，避免把参考图优势误记成文本结构优势。
+    - 同一组独立上下文，只提供该组材料；不同时读取旧包与新样稿。
+  between_providers:
+    - 单独报告每个模型的结果，不用相同 seed 数字声称跨模型可比噪声。
+    - 能力差异、自动 Prompt 改写、负面 Prompt 不支持和参考控制差异必须记录。
+  output_selection:
+    - 保存全部预定输出，包括失败结果；不只挑最好的一张。
+    - 需重试时保留失败和重试原因，并在所有组中采用相同规则。
+
+text_pilots:
+  - id: sorolla-sunlit-oil
+    proposed_study: sorolla.yaml
+    current_package: style-packages/artists/joaquin-sorolla
+    shared_scope: 户外日光任务；对象、数量、背景和画幅由同一用户请求指定。
+    arms:
+      - id: name_only
+        instruction_source: 仅在共同用户请求后加“索罗亚风格的户外日光油画”。
+      - id: current_package
+        instruction_source: 冻结版本的现行包规则、色板和 Prompt；保存实际读入内容。
+      - id: proposed_rules
+        instruction_source: sorolla.yaml 中的范围、适用规则与工序；保存实际编译文本。
+    tasks:
+      - id: sunlit-chair
+        user_request: 横版 16:9，一把普通木椅位于无装饰的院子里，下午直接日光，无人物、无水面、无文字。
+      - id: sunlit-courtyard
+        user_request: 横版 16:9，一处普通庭院，有石墙和一扇门，午后日光，无人物、无海岸、无文字。
+      - id: sunlit-still-life
+        user_request: 横版 16:9，一个陶碗和一块折叠布放在户外桌面上，有直接日光，无人物、无海岸、无文字。
+    repeats_per_arm_per_task: 2
+    planned_image_count: 18
+    diagnosis:
+      - 比较受光与反射色是否组织形体，笔触是否随形，灰阶大组是否清楚。
+      - 检查没有要求海岸时是否仍自动出现水、沙滩或船。
+      - 基础任务指定日光，避免把改善仅归因于新组偷偷加入日光条件。
+
+  - id: bauhaus-paper-method
+    proposed_study: bauhaus-paper.yaml
+    current_package: style-packages/schools/bauhaus
+    shared_scope: 所有组共同收到相同纸材方法任务；不是只给新组增加材料、无胶和结构要求。
+    arms:
+      - id: name_only
+        instruction_source: 仅在共同用户请求后加“包豪斯预备课程启发的纸材研究”。
+      - id: current_package
+        instruction_source: 冻结版本的现行包规则、色板和 Prompt；保存实际读入内容。
+      - id: proposed_rules
+        instruction_source: bauhaus-paper.yaml 中的方法范围、规则与工序；保存实际编译文本。
+    tasks:
+      - id: paper-seat-study
+        user_request: 横版 16:9，用一张无涂色卡纸提出微缩坐具视觉研究，只允许切、撕、折，不用胶或隐藏支架；展示整体和连接说明。
+      - id: paper-screen-study
+        user_request: 横版 16:9，用一张无涂色卡纸提出桌面屏风视觉研究，只允许切、撕、折，不用胶或隐藏支架；展示整体和接触说明。
+      - id: paper-light-study
+        user_request: 横版 16:9，用一张无涂色卡纸提出光影构成视觉研究，只允许切、撕、折，不用胶或隐藏支架；展示整体和折线说明。
+    repeats_per_arm_per_task: 2
+    planned_image_count: 18
+    diagnosis:
+      - 结构是否可由折、切、接触等操作解释，还是只出现泛化的原色现代主义图案。
+      - 字体或文字渲染失败单独记录，不用生成说明文字的好坏替代结构判断。
+      - 只有视觉输出时最多评为 visual_study；真实可制作性需展开图、几何或实物补证。
+      - 若需要分离“缩小研究范围”和“规则格式”两项作用，追加 scope_only 组；不要把初筛结果都归因于 YAML 结构。
+
+ascii_pilot:
+  id: literal-ascii-construction
+  proposed_study: ascii-grid.yaml
+  existing_renderer: style-packages/game-art/ascii-character-game-art/render_gallery.py
+  implementation_note: 现有入口固定源文件、100 列与 36 行；测试前在独立运行目录适配输入和无损母版输出，不能覆盖正式包的源网格。
+  grid: {columns: 100, rows: 36, allowed_codepoints: "U+0020..U+007E"}
+  tasks:
+    - id: terminal-workshop
+      request: 一个房间内有一张桌子、一个箱子和一个门口；对象由真实 ASCII 字符构建。
+    - id: terminal-garden
+      request: 一个有小路和两棵树的简化花园；对象由真实 ASCII 字符构建。
+    - id: terminal-room
+      request: 一个房间内有两把椅子和一扇窗；对象由真实 ASCII 字符构建。
+  runs_per_task:
+    - 独立产生一次源网格，记录字符检查、颜色映射、字体和渲染环境。
+    - 从同一份已冻结源文件独立重渲染一次，比较编码前缓冲或无损母版像素。
+  gates:
+    - 字符集和网格尺寸通过。
+    - 统一背景之外的场景像素来自网格字形，不含独立重绘图形。
+    - 同源同环境重渲染一致。
+    - 用户指定对象、数量与布局通过人工检查。
+  diagnostic_baseline: 可用普通图像模型产生的 ASCII 近似图说明失败类型，但不能把视觉近似计为严格构建合格。
+
+optional_reference_phase:
+  prerequisite: text_pilots 初筛完成，且有适合本次请求的合法实际输入素材和独立风格控制通路。
+  compare:
+    - proposed_rules_text_only
+    - proposed_rules_with_style_reference
+  hold_constant: 同一用户任务、规则和同一模型，显式记录风格输入素材与强度。
+  no_structure_input_by_default: true
+  report:
+    - 风格规则改善的维度和仍然失败的维度。
+    - 参考主体、姿态、构图、地标或道具是否泄漏。
+    - 该模型支持哪些能力；不能把能力缺失当作规则普适失败。
+  run_count: 待初筛和预算确定后预先登记，不默认宣称已执行。
+
+review:
+  protocol:
+    - 隐藏组名和风格名称，随机排列输出；先逐图评规则和用户任务，再揭示组别。
+    - 核心规则、支持规则和硬门槛分别报告；不只报告总平均分。
+    - 有两位评审时独立评分后记录分歧；只有一位时注明主观性与重复评审结果。
+    - 无法适用的规则标记 not_applicable 并说明原因。
+  separate_dimensions:
+    - user_request_adherence
+    - applicable_core_rule_fidelity
+    - supporting_rule_fidelity
+    - unwanted_reference_content
+    - medium_integrity
+    - cross_subject_stability
+  ordinal_scale:
+    0: 相反或缺失
+    1: 只有泛化暗示
+    2: 部分成立，仍有明显冲突
+    3: 清楚成立
+    4: 多处一致并服务整体画面
+  publication_threshold: 未校准；根据初筛结果设定并在后续验证前冻结。
+  acceptance_basis:
+    - 硬门槛通过。
+    - 在多个题材和重复结果上可解释地保持核心视觉规则。
+    - 相对现行规则的改善没有依靠明显牺牲主体遵循。
+    - 对失败、内容泄漏、模型能力和证据不足保留记录。
+
+run_record_fields:
+  - run_id
+  - task_id
+  - arm_id
+  - package_and_rules_revision
+  - provider_model_version
+  - generation_date
+  - actual_prompt_and_negative_prompt_if_supported
+  - input_asset_ids_and_roles
+  - parameters_and_seed_if_supported
+  - complete_output_paths
+  - source_grid_renderer_font_and_environment_when_applicable
+  - reviewer_rule_scores_and_gate_results
+  - applicability_exceptions
+  - failure_notes_and_retry_history
