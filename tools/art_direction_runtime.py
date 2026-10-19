@@ -172,6 +172,7 @@ def compile_direction_job(
         [rule["avoid"] for rule in rules if rule.get("avoid")] + execution["avoid"]
     ))
     package = runtime["package"]
+    compiler_files = [ROOT / "tools/style_runtime.py", Path(__file__).resolve()]
     return {
         "schema_version": "0.2.0",
         "job_type": "ascii_grid_construction" if execution["route"] == "deterministic_grid" else "style_render",
@@ -197,5 +198,13 @@ def compile_direction_job(
             "joint_checks": joint_checks, "sources": data["sources"],
             "note": "Successful compilation is not image-quality validation or a maturity upgrade.",
         },
-        "provenance": {"direction_sha256": loaded["sha256"], "reference_usage": "Research records are not generation inputs."},
+        "provenance": {
+            "direction_sha256": loaded["sha256"],
+            "direction_schema_sha256": hashlib.sha256(SCHEMA.read_bytes()).hexdigest(),
+            "compiler_sha256": {
+                path.relative_to(ROOT).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
+                for path in compiler_files
+            },
+            "reference_usage": "Research records are not generation inputs.",
+        },
     }

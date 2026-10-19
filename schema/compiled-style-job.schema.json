@@ -32,7 +32,24 @@
     },
     {
       "if": {"properties": {"schema_version": {"const": "0.2.0"}}},
-      "then": {"required": ["art_direction", "execution", "review"], "not": {"required": ["palette_pair", "template_variables", "unresolved_placeholders"]}}
+      "then": {
+        "required": ["art_direction", "execution", "review"],
+        "not": {"required": ["palette_pair", "template_variables", "unresolved_placeholders"]},
+        "properties": {
+          "provenance": {
+            "type": "object", "additionalProperties": false,
+            "required": ["direction_sha256", "direction_schema_sha256", "compiler_sha256", "reference_usage"],
+            "properties": {
+              "direction_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+              "direction_schema_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+              "compiler_sha256": {
+                "type": "object", "minProperties": 2, "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+              },
+              "reference_usage": {"type": "string"}
+            }
+          }
+        }
+      }
     },
     {
       "if": {"properties": {"job_type": {"const": "ascii_grid_construction"}}},
