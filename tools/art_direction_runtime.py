@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -31,10 +32,26 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+@lru_cache(maxsize=1)
+def _direction_schema() -> dict[str, Any]:
+    return json.loads(SCHEMA.read_text(encoding="utf-8"))
+
+
+@lru_cache(maxsize=1)
+def _direction_validator() -> Draft202012Validator:
+    schema = _direction_schema()
+    Draft202012Validator.check_schema(schema)
+    return Draft202012Validator(schema)
+
+
+@lru_cache(maxsize=1)
+def _grid_validator() -> Draft202012Validator:
+    schema = _direction_schema()
+    return Draft202012Validator({"$ref": "#/$defs/grid", "$defs": schema["$defs"]})
+
+
 def validate_grid(grid: dict[str, Any]) -> None:
-    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-    grid_schema = {"$ref": "#/$defs/grid", "$defs": schema["$defs"]}
-    problems = list(Draft202012Validator(grid_schema).iter_errors(grid))
+    problems = list(_grid_validator().iter_errors(grid))
     if problems:
         raise ValueError(f"Invalid ASCII grid configuration: {problems[0].message}")
     if grid["margin"] * 2 >= min(grid["width"], grid["height"]):
@@ -59,8 +76,7 @@ def load_direction(path: Path, runtime: dict[str, Any]) -> dict[str, Any]:
         path = existing[0]
     with path.open(encoding="utf-8") as handle:
         data = safe_load(handle)
-    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-    problems = list(Draft202012Validator(schema).iter_errors(data))
+    problems = list(_direction_validator().iter_errors(data))
     if problems:
         location = ".".join(map(str, problems[0].path)) or "<root>"
         raise ValueError(f"{path}:{location}: {problems[0].message}")
