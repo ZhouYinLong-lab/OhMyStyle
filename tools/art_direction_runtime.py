@@ -275,6 +275,7 @@ def compile_direction_job(
             "applicable_rule_ids": [rule["id"] for rule in rules],
             "omitted_context_rule_ids": sorted(active - applicable_ids),
             "contexts": sorted(declared_contexts),
+            "variables": variables,
             "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred",
         },
         "execution": execution,

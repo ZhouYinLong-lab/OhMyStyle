@@ -107,7 +107,7 @@
     },
     "art_direction": {
       "type": "object", "additionalProperties": false,
-      "required": ["id", "name", "schema_version", "status", "path", "sha256", "active_rule_ids", "applicable_rule_ids", "omitted_context_rule_ids", "contexts", "applicability"],
+      "required": ["id", "name", "schema_version", "status", "path", "sha256", "active_rule_ids", "applicable_rule_ids", "omitted_context_rule_ids", "contexts", "variables", "applicability"],
       "properties": {
         "id": {"type": "string"},
         "name": {"type": "string"},
@@ -119,6 +119,7 @@
         "applicable_rule_ids": {"$ref": "#/$defs/ids"},
         "omitted_context_rule_ids": {"$ref": "#/$defs/ids"},
         "contexts": {"$ref": "#/$defs/ids"},
+        "variables": {"type": "object", "additionalProperties": {"type": "string"}},
         "applicability": {"type": "string"}
       }
     },
