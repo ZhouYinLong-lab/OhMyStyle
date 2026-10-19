@@ -190,7 +190,8 @@ def compile_direction_job(
         "reference_set": "none",
         "reference_images": [],
         "art_direction": {
-            "id": data["id"], "name": data["name"], "status": "experimental",
+            "id": data["id"], "name": data["name"], "schema_version": data["schema_version"],
+            "status": "experimental",
             "path": str(loaded["path"]), "sha256": loaded["sha256"],
             "active_rule_ids": data["active_rule_ids"],
             "applicable_rule_ids": [rule["id"] for rule in rules],

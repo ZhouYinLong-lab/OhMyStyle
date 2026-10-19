@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "required": ["schema_version", "status", "id", "name", "base_package", "scope", "pillars", "rules", "active_rule_ids", "joint_checks", "sources", "execution"],
   "properties": {
-    "schema_version": {"const": "2.0.0"},
+    "schema_version": {"enum": ["2.0.0", "2.1.0"]},
     "status": {"const": "experimental"},
     "id": {"$ref": "#/$defs/id"},
     "name": {"type": "string", "minLength": 1},
@@ -106,6 +106,19 @@
       ]
     }
   },
+  "allOf": [
+    {
+      "if": {"properties": {"schema_version": {"const": "2.0.0"}}},
+      "then": {
+        "not": {
+          "anyOf": [
+            {"required": ["contexts"]},
+            {"properties": {"rules": {"contains": {"anyOf": [{"required": ["when_contexts"]}, {"required": ["unless_contexts"]}]}}}}
+          ]
+        }
+      }
+    }
+  ],
   "$defs": {
     "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},

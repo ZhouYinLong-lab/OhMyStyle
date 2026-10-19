@@ -100,10 +100,11 @@
     },
     "art_direction": {
       "type": "object", "additionalProperties": false,
-      "required": ["id", "name", "status", "path", "sha256", "active_rule_ids", "applicable_rule_ids", "omitted_context_rule_ids", "contexts", "applicability"],
+      "required": ["id", "name", "schema_version", "status", "path", "sha256", "active_rule_ids", "applicable_rule_ids", "omitted_context_rule_ids", "contexts", "applicability"],
       "properties": {
         "id": {"type": "string"},
         "name": {"type": "string"},
+        "schema_version": {"enum": ["2.0.0", "2.1.0"]},
         "status": {"const": "experimental"},
         "path": {"type": "string"},
         "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},

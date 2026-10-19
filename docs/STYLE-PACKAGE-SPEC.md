@@ -78,7 +78,7 @@ See the [architecture guide](ARCHITECTURE.md#v2-direction).
 schema, package binding, referenced sources, and execution constraints together
 with the existing package contract.
 
-Directions may optionally declare a top-level `contexts` catalog. Catalog IDs
+Format `2.1.0` directions may declare a top-level `contexts` catalog. Catalog IDs
 are validated against the direction's required and incompatible scope contexts
 and against rule selectors. `when_contexts` activates a rule when at least one
 listed context was declared; `unless_contexts` suppresses it when any listed

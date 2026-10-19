@@ -119,7 +119,7 @@ v2 keeps the formal package and registers an optional `art_direction` artifact. 
 | `joint_checks` | Requirements connecting multiple active rules |
 | `sources` | Base source IDs, institutional links, local source artifacts, original requirements |
 | `execution` | Route, mandatory requirements, exclusions |
-| Optional `contexts` | A machine-readable vocabulary; rules may select by `when_contexts` and `unless_contexts` |
+| Optional `contexts` (format 2.1.0+) | A machine-readable vocabulary; rules may select by `when_contexts` and `unless_contexts` |
 
 The contract is [art-direction.schema.json](../schema/art-direction.schema.json); the compiler is [art_direction_runtime.py](../tools/art_direction_runtime.py).
 Compiled output follows [compiled-style-job.schema.json](../schema/compiled-style-job.schema.json): `0.1.0` preserves legacy package jobs, while `0.2.0` marks an explicitly selected art direction. Both the compiler and ASCII grid renderer validate the matching branch. Direction jobs also record SHA-256 hashes for the direction, its schema, and the key compiler files so reviewers can identify which definition and implementation produced a prompt.
@@ -131,7 +131,7 @@ The compiled job separates four kinds of information:
 - **Review:** scope, pillars, applicable rule text, observable results, rejection conditions, sources.
 - **Traceability:** direction path and SHA-256, authored and applicable rule IDs, context-skipped rule IDs, declared contexts.
 
-`applies_when` remains editorial prose; the program does not infer it from subject text. When a direction declares `contexts`, compilation validates caller-declared values and selects rules using `when_contexts` (at least one match) and `unless_contexts` (any match skips the rule). A rule cannot both require and exclude the same context, and selectors require a context catalog. Directions without selectors keep their existing behavior. At least one core rule must remain applicable; a joint check is emitted only when every referenced rule applies. The compiled job records applicable and skipped rule IDs for review. Research sources are not automatically supplied as reference images.
+`applies_when` remains editorial prose; the program does not infer it from subject text. Format `2.0.0` keeps authored active rules static; format `2.1.0` may declare `contexts`, which compilation validates against caller-declared values before selecting rules with `when_contexts` (at least one match) and `unless_contexts` (any match skips the rule). A rule cannot both require and exclude the same context, and selectors require a context catalog. At least one core rule must remain applicable; a joint check is emitted only when every referenced rule applies. The compiled job records applicable and skipped rule IDs for review. Research sources are not automatically supplied as reference images.
 
 This stage supports `profile=generic` and `references=none`, without legacy palette pairs. HTTP/MCP sessions and composite compilation retain the legacy path. Enable v2 explicitly through CLI `--direction` or Python `direction_path`. Directions may live in the experiment directory, or be registered through `package.yaml` `files.art_direction` and selected with `--direction package`.
 
