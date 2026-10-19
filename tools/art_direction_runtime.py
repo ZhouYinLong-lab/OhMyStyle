@@ -57,6 +57,16 @@ def load_direction(path: Path, runtime: dict[str, Any]) -> dict[str, Any]:
     rule_ids = unique_ids(data["rules"], "rule")
     source_ids = unique_ids(data["sources"], "source")
     joint_ids = unique_ids(data["joint_checks"], "joint check")
+    context_catalog = data.get("contexts")
+    if context_catalog is not None:
+        context_ids = unique_ids(context_catalog, "context")
+        scope_contexts = set(data["scope"]["required_contexts"]) | set(data["scope"]["incompatible_contexts"])
+        if not scope_contexts <= context_ids:
+            raise ValueError("Scope contexts must be declared in the context catalog")
+        for rule in data["rules"]:
+            selected_contexts = set(rule.get("when_contexts", [])) | set(rule.get("unless_contexts", []))
+            if not selected_contexts <= context_ids:
+                raise ValueError(f"Rule {rule['id']} references an unknown context")
     if joint_ids & rule_ids:
         raise ValueError("Rule and joint check IDs must be distinct")
     active = set(data["active_rule_ids"])
@@ -114,11 +124,30 @@ def compile_direction_job(
     conflicts = declared_contexts & set(data["scope"]["incompatible_contexts"])
     if conflicts:
         raise ValueError("Incompatible direction contexts: " + ", ".join(sorted(conflicts)))
+    if data.get("contexts") is not None:
+        known_contexts = {item["id"] for item in data["contexts"]}
+        unknown = declared_contexts - known_contexts
+        if unknown:
+            raise ValueError("Unknown direction contexts: " + ", ".join(sorted(unknown)))
     variables = variables or {}
     if "SUBJECT" in variables:
         raise ValueError("Direction variables cannot override the user subject")
     active = set(data["active_rule_ids"])
-    rules = [rule for rule in data["rules"] if rule["id"] in active]
+
+    def applies(rule: dict[str, Any]) -> bool:
+        required_contexts = set(rule.get("when_contexts", []))
+        excluded_contexts = set(rule.get("unless_contexts", []))
+        return (not required_contexts or bool(required_contexts & declared_contexts)) and not (excluded_contexts & declared_contexts)
+
+    rules = [rule for rule in data["rules"] if rule["id"] in active and applies(rule)]
+    applicable_ids = {rule["id"] for rule in rules}
+    applicable_core = [rule for rule in rules if rule["importance"] == "core"]
+    if not applicable_core:
+        raise ValueError("No core visual rules apply to the declared direction contexts")
+    joint_checks = [
+        joint for joint in data["joint_checks"]
+        if set(joint["rule_ids"]) <= applicable_ids
+    ]
     execution = data["execution"]
     parts = [
         "USER SUBJECT: " + subject.strip(),
@@ -129,7 +158,7 @@ def compile_direction_job(
     parts.extend(f"USER DETAIL {key}: {value}" for key, value in sorted(variables.items()))
     parts.append("APPLY THESE AUTHORED VISUAL RULES:")
     parts.extend(f"- [{rule['id']}] {rule['instruction']}" for rule in rules)
-    parts.extend(f"- [{joint['id']}] {joint['instruction']}" for joint in data["joint_checks"])
+    parts.extend(f"- [{joint['id']}] {joint['instruction']}" for joint in joint_checks)
     parts.extend(f"REQUIREMENT: {item}" for item in execution["must"])
     if execution["route"] == "deterministic_grid":
         grid = execution["grid"]
@@ -156,13 +185,16 @@ def compile_direction_job(
         "art_direction": {
             "id": data["id"], "name": data["name"], "status": "experimental",
             "path": str(loaded["path"]), "sha256": loaded["sha256"],
-            "active_rule_ids": data["active_rule_ids"], "contexts": sorted(declared_contexts),
-            "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred",
+            "active_rule_ids": data["active_rule_ids"],
+            "applicable_rule_ids": [rule["id"] for rule in rules],
+            "omitted_context_rule_ids": sorted(active - applicable_ids),
+            "contexts": sorted(declared_contexts),
+            "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred",
         },
         "execution": execution,
         "review": {
             "status": "pending", "scope": data["scope"], "rules": rules,
-            "joint_checks": data["joint_checks"], "sources": data["sources"],
+            "joint_checks": joint_checks, "sources": data["sources"],
             "note": "Successful compilation is not image-quality validation or a maturity upgrade.",
         },
         "provenance": {"direction_sha256": loaded["sha256"], "reference_usage": "Research records are not generation inputs."},

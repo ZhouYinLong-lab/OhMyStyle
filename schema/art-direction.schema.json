@@ -23,6 +23,10 @@
         "limitations": {"$ref": "#/$defs/strings"}
       }
     },
+    "contexts": {
+      "description": "Optional machine-readable context vocabulary. When present, caller contexts and rule selectors must use these IDs.",
+      "$ref": "#/$defs/context_catalog"
+    },
     "pillars": {"$ref": "#/$defs/strings"},
     "rules": {
       "type": "array", "minItems": 1,
@@ -34,6 +38,8 @@
           "axis": {"type": "string", "minLength": 1},
           "importance": {"enum": ["core", "supporting", "optional"]},
           "applies_when": {"type": "string", "minLength": 1},
+          "when_contexts": {"$ref": "#/$defs/ids"},
+          "unless_contexts": {"$ref": "#/$defs/ids"},
           "instruction": {"type": "string", "minLength": 1},
           "observable": {"type": "string", "minLength": 1},
           "reject_when": {"type": "string", "minLength": 1},
@@ -104,6 +110,17 @@
     "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
     "strings": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "context_catalog": {
+      "type": "array", "uniqueItems": true,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "description"],
+        "properties": {
+          "id": {"$ref": "#/$defs/id"},
+          "description": {"type": "string", "minLength": 1}
+        }
+      }
+    },
     "grid": {
       "type": "object", "additionalProperties": false,
       "required": ["columns", "rows", "width", "height", "margin", "font_size", "foreground", "background", "glyph_colors"],

@@ -134,6 +134,7 @@ v2 暂时保留正式包，用单独的 `direction.yaml` 描述选定方向。�
 | `joint_checks` | 多条启用规则共同组织画面的要求 |
 | `sources` | 正式包来源 ID、机构链接、本地原始文件或原创要求 |
 | `execution` | 执行路线、必须满足的要求与避免项 |
+| `contexts`（可选） | 方向可接受的机器可读上下文词汇；规则可用 `when_contexts` 与 `unless_contexts` 声明条件 |
 
 契约见 [art-direction.schema.json](../schema/art-direction.schema.json)，编译实现见 [art_direction_runtime.py](../tools/art_direction_runtime.py)。
 
@@ -142,9 +143,9 @@ v2 暂时保留正式包，用单独的 `direction.yaml` 描述选定方向。�
 - **正面 Prompt**：用户主体及细节、媒介、再现方式、启用规则的 `instruction`、联动 `instruction` 与制作要求。
 - **负面 Prompt**：显式编写的规则 `avoid` 和执行 `avoid`。
 - **评审信息**：范围、规则原文、`observable`、`reject_when` 与来源保存在任务的 `review` 中，不直接作为生成指令拼接。
-- **追踪信息**：方向文件路径、SHA-256、启用规则 ID 与声明的上下文。
+- **追踪信息**：方向文件路径、SHA-256、启用及适用规则 ID、因上下文跳过的规则 ID 与声明的上下文。
 
-`applies_when` 是供编辑判断的自然语言说明。当前程序检查人工声明的上下文是否缺失或冲突，不会理解主体文本并自动选择规则。研究来源也不会自动变成参考图片输入。
+`applies_when` 仍是供编辑阅读的自然语言说明，程序不会从主体文本推断它。若方向声明 `contexts`，编译器会校验调用者传入的上下文，并按规则的 `when_contexts`（至少命中一个）及 `unless_contexts`（命中任一个即跳过）选择规则；未声明上下文目录的旧方向保持原有行为。上下文筛选后必须至少剩下一条核心规则，联动检查仅在其引用的规则全部适用时输出。编译任务会记录适用与跳过的规则 ID，方便复核。研究来源也不会自动变成参考图片输入。
 
 目前只支持 `profile=generic`、`references=none`，不与旧版调色对混用。HTTP/MCP 多轮会话和组合包仍走旧版编译路径；v2 通过命令行的 `--direction` 或 Python 的 `direction_path` 显式启用。方向可以单独存放在实验目录，也可以通过 `package.yaml` 的 `files.art_direction` 登记后用 `--direction package` 选择。
 
