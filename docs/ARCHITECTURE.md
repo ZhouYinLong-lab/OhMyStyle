@@ -138,6 +138,7 @@ v2 暂时保留正式包，用单独的 `direction.yaml` 描述选定方向。�
 
 契约见 [art-direction.schema.json](../schema/art-direction.schema.json)，编译实现见 [art_direction_runtime.py](../tools/art_direction_runtime.py)。
 编译产物遵循 [compiled-style-job.schema.json](../schema/compiled-style-job.schema.json)：`0.1.0` 保持旧包任务格式，`0.2.0` 表示显式选择的新方向；编译器和 ASCII 栅格器都会校验任务。新方向任务同时记录方向文件、方向 schema 与关键编译器文件的 SHA-256，便于确认 Prompt 是由哪一版定义和实现生成的。
+旧版包任务中的参考图也记录文件 SHA-256，因此重跑或比较时可确认模型实际使用的是哪一份资产。
 
 ### 编译与评审信息分开保存
 

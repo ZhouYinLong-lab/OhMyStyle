@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -148,11 +149,16 @@ def select_references(
             continue
         asset = safe_package_file(runtime["root"], relative, label=f"manifest asset {row.get('asset_id', '')}")
         seen.add(relative)
+        digest = hashlib.sha256()
+        with asset.open("rb") as handle:
+            for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                digest.update(chunk)
         result.append(
             {
                 "asset_id": row.get("asset_id", ""),
                 "path": Path(relative).as_posix(),
                 "absolute_path": str(asset.resolve()),
+                "sha256": digest.hexdigest(),
                 "title": row.get("title", ""),
                 "role": row.get("role", ""),
                 "source_url": row.get("source_url", ""),

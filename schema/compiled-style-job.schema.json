@@ -15,7 +15,14 @@
     "prompt": {"type": "string", "minLength": 1},
     "negative_prompt": {"type": "string"},
     "reference_set": {"enum": ["none", "palette", "details", "primary", "all"]},
-    "reference_images": {"type": "array", "items": {"type": "object", "additionalProperties": {"type": "string"}}},
+    "reference_images": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": {"type": "string"},
+        "required": ["asset_id", "path", "absolute_path", "sha256", "title", "role", "source_url", "usage"],
+        "properties": {"sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}
+      }
+    },
     "palette_pair": {"type": ["object", "null"], "additionalProperties": true},
     "template_variables": {"type": "object", "additionalProperties": {"type": "string"}},
     "unresolved_placeholders": {"type": "array", "items": {"type": "string"}},
