@@ -87,6 +87,11 @@ from natural-language subjects. Without a catalog, directions preserve the
 original all-active-rules behavior. The compiled job records rules omitted by
 context selection so reviewers can inspect the decision.
 
+`compile-style.py` validates each returned job against
+[`compiled-style-job.schema.json`](../schema/compiled-style-job.schema.json).
+Legacy jobs remain version `0.1.0`; explicitly selected directions use `0.2.0`
+and carry their review and provenance records.
+
 ## Versioning
 
 Package versions use `MAJOR.MINOR.PATCH`:

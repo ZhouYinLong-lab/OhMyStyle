@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from safe_yaml import safe_load
+from compiled_job_runtime import validate_compiled_job
 
 
 SUBJECT_INDEPENDENCE_CONTRACT = """SUBJECT INDEPENDENCE CONTRACT:
@@ -237,11 +238,13 @@ def compile_job(
         elif isinstance(direction_path, str):
             direction_path = Path(direction_path)
 
-        return compile_direction_job(
+        job = compile_direction_job(
             runtime, direction_path, subject, contexts=direction_contexts,
             reference_set=reference_set, pair_id=pair_id, model=model,
             profile=profile, variables=variables,
         )
+        validate_compiled_job(job)
+        return job
     if direction_contexts:
         raise ValueError("direction_contexts requires an explicit direction_path")
     package = runtime["package"]
@@ -249,7 +252,7 @@ def compile_job(
     references = select_references(runtime, pair, reference_set)
     prompt, negative = compile_prompt(runtime, subject, pair, profile, variables=variables)
     unresolved = sorted(set(re.findall(r"(?:\[[A-Z][A-Z0-9_]*\]|\{[A-Z][A-Z0-9_]*\})", prompt)))
-    return {
+    job = {
         "schema_version": "0.1.0",
         "job_type": "style_render",
         "package": {
@@ -280,3 +283,5 @@ def compile_job(
             "reference_usage": "Reference images are inputs to the render job; they are not silently inferred.",
         },
     }
+    validate_compiled_job(job)
+    return job

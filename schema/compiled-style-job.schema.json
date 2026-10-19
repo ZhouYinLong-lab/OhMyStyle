@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZhouYinLong-lab/OhMyStyle/schema/compiled-style-job.schema.json",
+  "title": "OhMyStyle Compiled Style Job",
+  "description": "Provider-neutral output from compile-style.py. Version 0.1.0 is the legacy package path; 0.2.0 is an explicitly selected art direction.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "job_type", "package", "model", "subject", "prompt", "negative_prompt", "reference_set", "reference_images", "provenance"],
+  "properties": {
+    "schema_version": {"enum": ["0.1.0", "0.2.0"]},
+    "job_type": {"enum": ["style_render", "ascii_grid_construction"]},
+    "package": {"$ref": "#/$defs/package"},
+    "model": {"$ref": "#/$defs/model"},
+    "subject": {"type": "string", "minLength": 1},
+    "prompt": {"type": "string", "minLength": 1},
+    "negative_prompt": {"type": "string"},
+    "reference_set": {"enum": ["none", "palette", "details", "primary", "all"]},
+    "reference_images": {"type": "array", "items": {"type": "object", "additionalProperties": {"type": "string"}}},
+    "palette_pair": {"type": ["object", "null"], "additionalProperties": true},
+    "template_variables": {"type": "object", "additionalProperties": {"type": "string"}},
+    "unresolved_placeholders": {"type": "array", "items": {"type": "string"}},
+    "constraints": {"type": "object"},
+    "art_direction": {"$ref": "#/$defs/art_direction"},
+    "execution": {"$ref": "#/$defs/execution"},
+    "review": {"type": "object"},
+    "provenance": {"type": "object"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"schema_version": {"const": "0.1.0"}}},
+      "then": {"required": ["palette_pair", "template_variables", "unresolved_placeholders", "constraints"], "not": {"required": ["art_direction", "execution", "review"]}}
+    },
+    {
+      "if": {"properties": {"schema_version": {"const": "0.2.0"}}},
+      "then": {"required": ["art_direction", "execution", "review"], "not": {"required": ["palette_pair", "template_variables", "unresolved_placeholders"]}}
+    },
+    {
+      "if": {"properties": {"job_type": {"const": "ascii_grid_construction"}}},
+      "then": {
+        "required": ["schema_version", "execution"],
+        "properties": {
+          "schema_version": {"const": "0.2.0"},
+          "execution": {"properties": {"route": {"const": "deterministic_grid"}}}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"schema_version": {"const": "0.2.0"}, "job_type": {"const": "style_render"}}},
+      "then": {"properties": {"execution": {"properties": {"route": {"const": "text_only"}}}}}
+    }
+  ],
+  "$defs": {
+    "package": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "name", "version", "root"],
+      "properties": {
+        "id": {"type": ["string", "null"]},
+        "name": {"type": ["string", "null"]},
+        "version": {"type": ["string", "null"]},
+        "root": {"type": "string"}
+      }
+    },
+    "model": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "profile", "adapter"],
+      "properties": {
+        "name": {"type": "string"},
+        "profile": {"type": "string"},
+        "adapter": {"type": "string"}
+      }
+    },
+    "art_direction": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "name", "status", "path", "sha256", "active_rule_ids", "applicable_rule_ids", "omitted_context_rule_ids", "contexts", "applicability"],
+      "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string"},
+        "status": {"const": "experimental"},
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "active_rule_ids": {"$ref": "#/$defs/ids"},
+        "applicable_rule_ids": {"$ref": "#/$defs/ids"},
+        "omitted_context_rule_ids": {"$ref": "#/$defs/ids"},
+        "contexts": {"$ref": "#/$defs/ids"},
+        "applicability": {"type": "string"}
+      }
+    },
+    "execution": {
+      "type": "object", "additionalProperties": false,
+      "required": ["route", "must", "avoid"],
+      "properties": {
+        "route": {"enum": ["text_only", "deterministic_grid"]},
+        "must": {"$ref": "#/$defs/strings"},
+        "avoid": {"$ref": "#/$defs/strings"},
+        "grid": {"type": "object"}
+      }
+    },
+    "ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "strings": {"type": "array", "items": {"type": "string"}}
+  }
+}
