@@ -80,9 +80,10 @@ with the existing package contract.
 
 Format `2.1.0` directions may declare a top-level `contexts` catalog. Catalog IDs
 are validated against the direction's required and incompatible scope contexts
-and against rule selectors. `when_contexts` activates a rule when at least one
-listed context was declared; `unless_contexts` suppresses it when any listed
-context was declared. These selectors are explicit caller inputs, not inferred
+and against rule selectors. `all_contexts` requires every listed context;
+`when_contexts` activates a rule when at least one listed context was declared;
+`unless_contexts` suppresses it when any listed context was declared. These
+selectors are explicit caller inputs, not inferred
 from natural-language subjects. Without a catalog, directions preserve the
 original all-active-rules behavior. The compiled job records rules omitted by
 context selection so reviewers can inspect the decision.

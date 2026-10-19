@@ -78,14 +78,16 @@ def load_direction(path: Path, runtime: dict[str, Any]) -> dict[str, Any]:
         if not scope_contexts <= context_ids:
             raise ValueError("Scope contexts must be declared in the context catalog")
         for rule in data["rules"]:
+            all_contexts = set(rule.get("all_contexts", []))
             required_contexts = set(rule.get("when_contexts", []))
             excluded_contexts = set(rule.get("unless_contexts", []))
-            selected_contexts = required_contexts | excluded_contexts
+            selected_contexts = all_contexts | required_contexts | excluded_contexts
             if not selected_contexts <= context_ids:
                 raise ValueError(f"Rule {rule['id']} references an unknown context")
-            if required_contexts & excluded_contexts:
-                raise ValueError(f"Rule {rule['id']} both requires and excludes the same context")
-    elif any(rule.get("when_contexts") or rule.get("unless_contexts") for rule in data["rules"]):
+            impossible_contexts = all_contexts & excluded_contexts
+            if impossible_contexts or (required_contexts and required_contexts <= excluded_contexts):
+                raise ValueError(f"Rule {rule['id']} has contradictory context selectors")
+    elif any(rule.get("all_contexts") or rule.get("when_contexts") or rule.get("unless_contexts") for rule in data["rules"]):
         raise ValueError("Rule context selectors require a top-level contexts catalog")
     if joint_ids & rule_ids:
         raise ValueError("Rule and joint check IDs must be distinct")
@@ -155,9 +157,14 @@ def compile_direction_job(
     active = set(data["active_rule_ids"])
 
     def applies(rule: dict[str, Any]) -> bool:
+        all_contexts = set(rule.get("all_contexts", []))
         required_contexts = set(rule.get("when_contexts", []))
         excluded_contexts = set(rule.get("unless_contexts", []))
-        return (not required_contexts or bool(required_contexts & declared_contexts)) and not (excluded_contexts & declared_contexts)
+        return (
+            all_contexts <= declared_contexts
+            and (not required_contexts or bool(required_contexts & declared_contexts))
+            and not (excluded_contexts & declared_contexts)
+        )
 
     rules = [rule for rule in data["rules"] if rule["id"] in active and applies(rule)]
     applicable_ids = {rule["id"] for rule in rules}

@@ -134,7 +134,7 @@ v2 暂时保留正式包，用单独的 `direction.yaml` 描述选定方向。�
 | `joint_checks` | 多条启用规则共同组织画面的要求 |
 | `sources` | 正式包来源 ID、机构链接、本地原始文件或原创要求 |
 | `execution` | 执行路线、必须满足的要求与避免项 |
-| `contexts`（v2.1.0 起可选） | 方向可接受的机器可读上下文词汇；规则可用 `when_contexts` 与 `unless_contexts` 声明条件 |
+| `contexts`（v2.1.0 起可选） | 方向可接受的机器可读上下文词汇；规则可用 `all_contexts`（全部满足）、`when_contexts`（至少一个满足）与 `unless_contexts`（命中即排除）声明条件 |
 
 契约见 [art-direction.schema.json](../schema/art-direction.schema.json)，编译实现见 [art_direction_runtime.py](../tools/art_direction_runtime.py)。
 编译产物遵循 [compiled-style-job.schema.json](../schema/compiled-style-job.schema.json)：`0.1.0` 保持旧包任务格式，`0.2.0` 表示显式选择的新方向；编译器和 ASCII 栅格器都会校验任务。新方向任务同时记录方向文件、方向 schema 与关键编译器文件的 SHA-256，便于确认 Prompt 是由哪一版定义和实现生成的。
@@ -146,7 +146,7 @@ v2 暂时保留正式包，用单独的 `direction.yaml` 描述选定方向。�
 - **评审信息**：范围、支柱、适用规则原文、`observable`、`reject_when` 与来源保存在任务的 `review` 中，不直接作为生成指令拼接。
 - **追踪信息**：方向文件路径、SHA-256、启用及适用规则 ID、因上下文跳过的规则 ID 与声明的上下文。
 
-`applies_when` 仍是供编辑阅读的自然语言说明，程序不会从主体文本推断它。方向格式 `2.0.0` 保持静态启用规则；`2.1.0` 可声明 `contexts`，由编译器校验调用者传入的上下文，并按规则的 `when_contexts`（至少命中一个）及 `unless_contexts`（命中任一个即跳过）选择规则。同一规则不能同时要求和排除一个上下文，使用规则筛选器也必须提供上下文目录。上下文筛选后必须至少剩下一条核心规则，联动检查仅在其引用的规则全部适用时输出。编译任务会记录适用与跳过的规则 ID，方便复核。研究来源也不会自动变成参考图片输入。
+`applies_when` 仍是供编辑阅读的自然语言说明，程序不会从主体文本推断它。方向格式 `2.0.0` 保持静态启用规则；`2.1.0` 可声明 `contexts`，由编译器校验调用者传入的上下文，并按规则的 `all_contexts`（全部满足）、`when_contexts`（至少命中一个）与 `unless_contexts`（命中任一个即跳过）筛选。全部条件与排除条件不能互相矛盾，使用规则筛选器也必须提供上下文目录。上下文筛选后必须至少剩下一条核心规则，联动检查仅在其引用的规则全部适用时输出。编译任务会记录适用与跳过的规则 ID，方便复核。研究来源也不会自动变成参考图片输入。
 
 目前只支持 `profile=generic`、`references=none`，不与旧版调色对混用。HTTP/MCP 多轮会话和组合包仍走旧版编译路径；v2 通过命令行的 `--direction` 或 Python 的 `direction_path` 显式启用。独立目录可包含 `direction.yaml` 或 `art-direction.yaml`；若同时有两个文件，必须直接指定其一。正式包可通过 `package.yaml` 的 `files.art_direction` 登记后用 `--direction package` 选择。
 
