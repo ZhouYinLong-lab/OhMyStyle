@@ -191,7 +191,11 @@ def compile_direction_job(
         known_contexts = {item["id"] for item in data["contexts"]}
         unknown = declared_contexts - known_contexts
         if unknown:
-            raise ValueError("Unknown direction contexts: " + ", ".join(sorted(unknown)))
+            available = ", ".join(sorted(known_contexts)) or "<none declared>"
+            raise ValueError(
+                "Unknown direction contexts: " + ", ".join(sorted(unknown))
+                + ". Available contexts: " + available
+            )
     variables = variables or {}
     if "SUBJECT" in variables:
         raise ValueError("Direction variables cannot override the user subject")
