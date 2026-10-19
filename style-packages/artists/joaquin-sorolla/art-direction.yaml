@@ -19,6 +19,15 @@ scope:
     - 需要能辨认的主光方向和至少一个可见受光面；完全黑暗的场景不适用。
     - 反射色应由场景中的水、浅色地面、衣物或其他表面提供依据，不能凭空铺色。
     - 照片级、无可见绘画痕迹的输出不符合本方向的油画媒介要求。
+contexts:
+  - id: daylight
+    description: 可辨认的日光，包括户外直射光与从窗户进入的日光。
+  - id: night
+    description: 夜间或以人工照明为主的场景。
+  - id: photographic-output
+    description: 目标是无可见绘画痕迹的照片级输出。
+  - id: reflective-surface
+    description: 场景中存在能为主体提供反射色的水面、浅色地面、衣物或其他表面。
 pillars:
   - 直射日光以明确的明暗关系建立体积，而不是作为全画面的暖色滤镜。
   - 阴影中的环境色能追溯到邻近受光表面，并服从主体的体积关系。
@@ -48,6 +57,8 @@ rules:
     axis: color_and_light
     importance: core
     applies_when: 场景中有水面、浅色地面、衣物或其他能反射光线的表面。
+    when_contexts:
+      - reflective-surface
     instruction: >-
       只在受环境影响的阴影和过渡面加入邻近表面的颜色；反射光要弱于主光，
       并沿着被照物的平面或曲面变化，不要把互补色随机撒进暗部。
