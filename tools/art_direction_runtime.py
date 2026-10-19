@@ -285,6 +285,8 @@ def compile_direction_job(
             "note": "Successful compilation is not image-quality validation or a maturity upgrade.",
         },
         "provenance": {
+            "prompt_sha256": hashlib.sha256(prompt.encode("utf-8")).hexdigest(),
+            "negative_prompt_sha256": hashlib.sha256(negative.encode("utf-8")).hexdigest(),
             "direction_sha256": loaded["sha256"],
             "direction_schema_sha256": hashlib.sha256(SCHEMA.read_bytes()).hexdigest(),
             "compiler_sha256": {

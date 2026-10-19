@@ -289,6 +289,8 @@ def compile_job(
             "profiles": runtime["evaluation"].get("profiles", {}),
         },
         "provenance": {
+            "prompt_sha256": hashlib.sha256(prompt.encode("utf-8")).hexdigest(),
+            "negative_prompt_sha256": hashlib.sha256(negative.encode("utf-8")).hexdigest(),
             "source_policy": runtime["provenance"].get("source_policy", ""),
             "reference_usage": "Reference images are inputs to the render job; they are not silently inferred.",
         },

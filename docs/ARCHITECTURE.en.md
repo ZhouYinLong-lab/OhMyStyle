@@ -123,7 +123,7 @@ v2 keeps the formal package and registers an optional `art_direction` artifact. 
 
 The contract is [art-direction.schema.json](../schema/art-direction.schema.json); the compiler is [art_direction_runtime.py](../tools/art_direction_runtime.py).
 Compiled output follows [compiled-style-job.schema.json](../schema/compiled-style-job.schema.json): `0.1.0` preserves legacy package jobs, while `0.2.0` marks an explicitly selected art direction. Both the compiler and ASCII grid renderer validate the matching branch. Direction jobs also record SHA-256 hashes for the direction, its schema, and the key compiler files so reviewers can identify which definition and implementation produced a prompt.
-Legacy package jobs record a SHA-256 for each reference image so later runs can identify the exact asset used.
+Both compilation paths record SHA-256 hashes for the positive and negative prompts. Legacy package jobs also hash each reference image so later runs can verify the exact text and asset inputs.
 
 The compiled job separates four kinds of information:
 

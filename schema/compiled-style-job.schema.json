@@ -57,8 +57,10 @@
         "properties": {
           "provenance": {
             "type": "object", "additionalProperties": false,
-            "required": ["direction_sha256", "direction_schema_sha256", "compiler_sha256", "reference_usage"],
+            "required": ["prompt_sha256", "negative_prompt_sha256", "direction_sha256", "direction_schema_sha256", "compiler_sha256", "reference_usage"],
             "properties": {
+              "prompt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+              "negative_prompt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
               "direction_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
               "direction_schema_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
               "compiler_sha256": {
