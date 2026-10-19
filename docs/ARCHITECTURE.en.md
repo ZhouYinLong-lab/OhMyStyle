@@ -147,6 +147,10 @@ Compare `prompt`, `negative_prompt`, and `review.rules` individually. This
 checks compilation inputs, not image quality; the two formats need not produce
 the same prompt wording.
 
+`SUBJECT` is reserved for the user input and cannot be overridden through
+`--var` or the API variable map. Other package variables still fill their
+declared prompt placeholders.
+
 | Pilot | Main relationships | Route |
 | --- | --- | --- |
 | [Sorolla sunlit oil](../style-packages/artists/joaquin-sorolla/art-direction.yaml) | Daylight, reflected color, value groups, directional marks | `text_only`, declare `daylight` |

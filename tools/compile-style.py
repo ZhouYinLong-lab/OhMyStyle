@@ -17,7 +17,7 @@ def main() -> None:
     parser.add_argument("--pair", dest="pair_id", help="Palette pair id")
     parser.add_argument("--profile", choices=("generic", "weak"), default="generic")
     parser.add_argument("--model", default="provider-neutral")
-    parser.add_argument("--var", action="append", default=[], metavar="KEY=VALUE", help="Fill a package prompt variable; repeatable")
+    parser.add_argument("--var", action="append", default=[], metavar="KEY=VALUE", help="Fill a package prompt variable (SUBJECT is reserved); repeatable")
     parser.add_argument(
         "--direction",
         help="Explicit art-direction file or a directory containing direction.yaml or art-direction.yaml; use 'package' to select files.art_direction from the package manifest",

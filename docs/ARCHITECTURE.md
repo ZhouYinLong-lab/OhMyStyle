@@ -159,6 +159,8 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 
 逐条对照 `prompt`、`negative_prompt` 和 `review.rules`。这能检查编译路径和输入差异，不代替同模型生图对比；两种格式的完整 Prompt 并不要求字面相同。
 
+`SUBJECT` 是所有编译路径保留的输入变量，不能通过 `--var` 或 API 变量表覆盖；其他包变量仍按包 Prompt 模板填入。
+
 ### 三个不同的制作方向
 
 | 方向 | 核心视觉关系 | 执行路线 |

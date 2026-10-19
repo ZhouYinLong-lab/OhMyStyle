@@ -179,6 +179,8 @@ def compile_prompt(
     variables: dict[str, str] | None = None,
 ) -> tuple[str, str]:
     template_variables = variables or {}
+    if "SUBJECT" in template_variables:
+        raise ValueError("The SUBJECT template variable is reserved for the user subject")
     template_values = {
         "SUBJECT": subject,
         "LOCATION": template_variables.get("LOCATION", "the user-requested setting"),
@@ -224,6 +226,8 @@ def compile_job(
     direction_path: Path | str | None = None,
     direction_contexts: list[str] | None = None,
 ) -> dict[str, Any]:
+    if variables and "SUBJECT" in variables:
+        raise ValueError("The SUBJECT template variable is reserved for the user subject")
     runtime = load_package(package_path)
     if direction_path is not None:
         from art_direction_runtime import compile_direction_job
