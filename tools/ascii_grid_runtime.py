@@ -13,6 +13,7 @@ from typing import Any
 from PIL import Image, ImageDraw, ImageFont, __version__ as pillow_version
 
 from art_direction_runtime import validate_grid
+from compiled_job_runtime import validate_compiled_job
 
 
 def sha256(data: bytes) -> str:
@@ -42,6 +43,7 @@ def render_grid_job(
     job: dict[str, Any], source_path: Path, font_path: Path, output: Path
 ) -> dict[str, Any]:
     """Create a lossless image and the source/configuration needed to reproduce it."""
+    validate_compiled_job(job)
     execution = job.get("execution", {})
     if job.get("job_type") != "ascii_grid_construction" or execution.get("route") != "deterministic_grid":
         raise ValueError("This renderer requires an ASCII grid construction job")

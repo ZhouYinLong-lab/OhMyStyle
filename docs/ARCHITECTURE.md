@@ -137,7 +137,7 @@ v2 暂时保留正式包，用单独的 `direction.yaml` 描述选定方向。�
 | `contexts`（可选） | 方向可接受的机器可读上下文词汇；规则可用 `when_contexts` 与 `unless_contexts` 声明条件 |
 
 契约见 [art-direction.schema.json](../schema/art-direction.schema.json)，编译实现见 [art_direction_runtime.py](../tools/art_direction_runtime.py)。
-编译产物遵循 [compiled-style-job.schema.json](../schema/compiled-style-job.schema.json)：`0.1.0` 保持旧包任务格式，`0.2.0` 表示显式选择的新方向；运行时会在返回任务前校验对应分支。新方向任务同时记录方向文件、方向 schema 与关键编译器文件的 SHA-256，便于确认 Prompt 是由哪一版定义和实现生成的。
+编译产物遵循 [compiled-style-job.schema.json](../schema/compiled-style-job.schema.json)：`0.1.0` 保持旧包任务格式，`0.2.0` 表示显式选择的新方向；编译器和 ASCII 栅格器都会校验任务。新方向任务同时记录方向文件、方向 schema 与关键编译器文件的 SHA-256，便于确认 Prompt 是由哪一版定义和实现生成的。
 
 ### 编译与评审信息分开保存
 

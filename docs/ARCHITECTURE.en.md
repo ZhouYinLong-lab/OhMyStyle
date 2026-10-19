@@ -122,7 +122,7 @@ v2 keeps the formal package and registers an optional `art_direction` artifact. 
 | Optional `contexts` | A machine-readable vocabulary; rules may select by `when_contexts` and `unless_contexts` |
 
 The contract is [art-direction.schema.json](../schema/art-direction.schema.json); the compiler is [art_direction_runtime.py](../tools/art_direction_runtime.py).
-Compiled output follows [compiled-style-job.schema.json](../schema/compiled-style-job.schema.json): `0.1.0` preserves legacy package jobs, while `0.2.0` marks an explicitly selected art direction. The runtime validates the matching branch before returning a job. Direction jobs also record SHA-256 hashes for the direction, its schema, and the key compiler files so reviewers can identify which definition and implementation produced a prompt.
+Compiled output follows [compiled-style-job.schema.json](../schema/compiled-style-job.schema.json): `0.1.0` preserves legacy package jobs, while `0.2.0` marks an explicitly selected art direction. Both the compiler and ASCII grid renderer validate the matching branch. Direction jobs also record SHA-256 hashes for the direction, its schema, and the key compiler files so reviewers can identify which definition and implementation produced a prompt.
 
 The compiled job separates four kinds of information:
 
