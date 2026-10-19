@@ -15,6 +15,13 @@ from safe_yaml import safe_load
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "schema/art-direction.schema.json"
 
+REPRESENTATION_CONTRACTS = {
+    "recognizable": "Depict the requested subject recognizably. Preserve its identity, requested count, setting, and layout; add no default motifs.",
+    "stylized": "Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.",
+    "abstract_interpretation": "Translate the requested subject into abstracted shapes, colors, and spatial relationships. Preserve explicit user constraints where they remain meaningful; add no unrequested recognizable subjects or motifs.",
+    "nonfigurative": "Make a nonfigurative composition with no recognizable objects, people, or setting. Use the user's brief only as a conceptual input; add no recognizable motifs.",
+}
+
 
 def validate_grid(grid: dict[str, Any]) -> None:
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
@@ -157,7 +164,7 @@ def compile_direction_job(
     execution = data["execution"]
     parts = [
         "USER SUBJECT: " + subject.strip(),
-        "Preserve the user's requested identities, counts, setting, and layout. Add no default motifs.",
+        "SUBJECT REPRESENTATION: " + REPRESENTATION_CONTRACTS[data["scope"]["representation"]],
         "VISUAL MEDIUM: " + data["scope"]["medium"],
         "REPRESENTATION: " + data["scope"]["representation"],
     ]

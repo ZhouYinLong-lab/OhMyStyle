@@ -126,7 +126,7 @@ Compiled output follows [compiled-style-job.schema.json](../schema/compiled-styl
 
 The compiled job separates four kinds of information:
 
-- **Positive prompt:** user subject and details, medium, representation, active rule instructions, joint instructions, production requirements.
+- **Positive prompt:** user subject and details, medium, a subject contract chosen by `representation`, active rule instructions, joint instructions, production requirements. Recognizable and stylized directions retain subject identity; abstract interpretation translates it into visual relationships; nonfigurative directions use the brief as conceptual input only.
 - **Negative prompt:** explicitly authored rule and execution `avoid` text.
 - **Review:** scope, pillars, applicable rule text, observable results, rejection conditions, sources.
 - **Traceability:** direction path and SHA-256, authored and applicable rule IDs, context-skipped rule IDs, declared contexts.
