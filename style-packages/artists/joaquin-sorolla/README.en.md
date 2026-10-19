@@ -25,7 +25,7 @@ It does not make beaches, sailboats, or figures mandatory subjects. The style pa
 
 - `identity.yaml`: scope, open-subject policy, and exclusions
 - `visual-signature.yaml`: visual traits that survive a subject change
-- `art-direction.yaml`: the complete opt-in direction under the new architecture, currently version 0.2.0; still experimental and enabled explicitly with `--direction package`; default compilation is unchanged
+- `art-direction.yaml`: the complete opt-in direction under the new architecture; the package version is 0.2.0 and the direction format is 2.1.0 (with structured context selection); still experimental and enabled explicitly with `--direction package`; default compilation is unchanged
 - `reproduction.yaml`: construction from broad color masses to selected strokes
 - `prompts/base.txt`, `prompts/negative.txt`: base prompt and negative constraints
 - `palette/palette.json`: color roles and values

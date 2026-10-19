@@ -25,7 +25,7 @@
 
 - `identity.yaml`：范围、主体开放策略和排除项
 - `visual-signature.yaml`：跨主题保持的视觉特征
-- `art-direction.yaml`：新架构下可选的完整方向规则，当前版本为 0.2.0；仍属实验状态，需显式使用 `--direction package`，默认编译行为不变
+- `art-direction.yaml`：新架构下可选的完整方向规则；包版本为 0.2.0，方向格式为 2.1.0（支持显式上下文筛选）；仍属实验状态，需使用 `--direction package`，默认编译行为不变
 - `reproduction.yaml`：从大色块到局部笔触的构建顺序
 - `prompts/base.txt`、`prompts/negative.txt`：基础提示与负面约束
 - `palette/palette.json`：颜色角色与色值
