@@ -148,7 +148,7 @@ v2 暂时保留正式包，用单独的 `direction.yaml` 描述选定方向。�
 
 `applies_when` 仍是供编辑阅读的自然语言说明，程序不会从主体文本推断它。方向格式 `2.0.0` 保持静态启用规则；`2.1.0` 可声明 `contexts`，由编译器校验调用者传入的上下文，并按规则的 `when_contexts`（至少命中一个）及 `unless_contexts`（命中任一个即跳过）选择规则。同一规则不能同时要求和排除一个上下文，使用规则筛选器也必须提供上下文目录。上下文筛选后必须至少剩下一条核心规则，联动检查仅在其引用的规则全部适用时输出。编译任务会记录适用与跳过的规则 ID，方便复核。研究来源也不会自动变成参考图片输入。
 
-目前只支持 `profile=generic`、`references=none`，不与旧版调色对混用。HTTP/MCP 多轮会话和组合包仍走旧版编译路径；v2 通过命令行的 `--direction` 或 Python 的 `direction_path` 显式启用。方向可以单独存放在实验目录，也可以通过 `package.yaml` 的 `files.art_direction` 登记后用 `--direction package` 选择。
+目前只支持 `profile=generic`、`references=none`，不与旧版调色对混用。HTTP/MCP 多轮会话和组合包仍走旧版编译路径；v2 通过命令行的 `--direction` 或 Python 的 `direction_path` 显式启用。独立目录可包含 `direction.yaml` 或 `art-direction.yaml`；若同时有两个文件，必须直接指定其一。正式包可通过 `package.yaml` 的 `files.art_direction` 登记后用 `--direction package` 选择。
 
 同一包可以分别编译旧版和新版任务，方便检查 Prompt 与规则差异。两路都关闭参考图时：
 

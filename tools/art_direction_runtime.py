@@ -41,7 +41,14 @@ def load_direction(path: Path, runtime: dict[str, Any]) -> dict[str, Any]:
 
     path = path.resolve()
     if path.is_dir():
-        path = path / "direction.yaml"
+        candidates = [path / "direction.yaml", path / "art-direction.yaml"]
+        existing = [candidate for candidate in candidates if candidate.is_file()]
+        if len(existing) != 1:
+            names = " or ".join(candidate.name for candidate in candidates)
+            if existing:
+                raise ValueError(f"Direction directory is ambiguous; select one file directly: {names}")
+            raise FileNotFoundError(f"Direction directory must contain {names}: {path}")
+        path = existing[0]
     with path.open(encoding="utf-8") as handle:
         data = safe_load(handle)
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))

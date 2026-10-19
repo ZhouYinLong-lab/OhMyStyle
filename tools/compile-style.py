@@ -20,7 +20,7 @@ def main() -> None:
     parser.add_argument("--var", action="append", default=[], metavar="KEY=VALUE", help="Fill a package prompt variable; repeatable")
     parser.add_argument(
         "--direction",
-        help="Explicit art-direction file or directory; use 'package' to select files.art_direction from the package manifest",
+        help="Explicit art-direction file or a directory containing direction.yaml or art-direction.yaml; use 'package' to select files.art_direction from the package manifest",
     )
     parser.add_argument("--context", action="append", default=[], help="Declare a direction context, e.g. daylight; repeatable")
     parser.add_argument(

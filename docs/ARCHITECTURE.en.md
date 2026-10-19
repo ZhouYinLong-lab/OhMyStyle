@@ -133,7 +133,7 @@ The compiled job separates four kinds of information:
 
 `applies_when` remains editorial prose; the program does not infer it from subject text. Format `2.0.0` keeps authored active rules static; format `2.1.0` may declare `contexts`, which compilation validates against caller-declared values before selecting rules with `when_contexts` (at least one match) and `unless_contexts` (any match skips the rule). A rule cannot both require and exclude the same context, and selectors require a context catalog. At least one core rule must remain applicable; a joint check is emitted only when every referenced rule applies. The compiled job records applicable and skipped rule IDs for review. Research sources are not automatically supplied as reference images.
 
-This stage supports `profile=generic` and `references=none`, without legacy palette pairs. HTTP/MCP sessions and composite compilation retain the legacy path. Enable v2 explicitly through CLI `--direction` or Python `direction_path`. Directions may live in the experiment directory, or be registered through `package.yaml` `files.art_direction` and selected with `--direction package`.
+This stage supports `profile=generic` and `references=none`, without legacy palette pairs. HTTP/MCP sessions and composite compilation retain the legacy path. Enable v2 explicitly through CLI `--direction` or Python `direction_path`. A standalone directory may contain `direction.yaml` or `art-direction.yaml`; if both exist, select a file directly. A formal package can register its direction through `package.yaml` `files.art_direction` and select it with `--direction package`.
 
 Compile the same package in both modes to inspect prompts and rule metadata.
 With reference images disabled in both jobs:
