@@ -200,7 +200,7 @@ def compile_direction_job(
         },
         "execution": execution,
         "review": {
-            "status": "pending", "scope": data["scope"], "rules": rules,
+            "status": "pending", "scope": data["scope"], "pillars": data["pillars"], "rules": rules,
             "joint_checks": joint_checks, "sources": data["sources"],
             "note": "Successful compilation is not image-quality validation or a maturity upgrade.",
         },

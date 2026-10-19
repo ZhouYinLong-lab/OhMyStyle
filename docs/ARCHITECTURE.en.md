@@ -128,7 +128,7 @@ The compiled job separates four kinds of information:
 
 - **Positive prompt:** user subject and details, medium, representation, active rule instructions, joint instructions, production requirements.
 - **Negative prompt:** explicitly authored rule and execution `avoid` text.
-- **Review:** scope, rule text, observable results, rejection conditions, sources.
+- **Review:** scope, pillars, applicable rule text, observable results, rejection conditions, sources.
 - **Traceability:** direction path and SHA-256, authored and applicable rule IDs, context-skipped rule IDs, declared contexts.
 
 `applies_when` remains editorial prose; the program does not infer it from subject text. When a direction declares `contexts`, compilation validates caller-declared values and selects rules using `when_contexts` (at least one match) and `unless_contexts` (any match skips the rule). A rule cannot both require and exclude the same context, and selectors require a context catalog. Directions without selectors keep their existing behavior. At least one core rule must remain applicable; a joint check is emitted only when every referenced rule applies. The compiled job records applicable and skipped rule IDs for review. Research sources are not automatically supplied as reference images.

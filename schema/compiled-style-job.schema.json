@@ -22,7 +22,19 @@
     "constraints": {"type": "object"},
     "art_direction": {"$ref": "#/$defs/art_direction"},
     "execution": {"$ref": "#/$defs/execution"},
-    "review": {"type": "object"},
+    "review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "scope", "pillars", "rules", "joint_checks", "sources", "note"],
+      "properties": {
+        "status": {"const": "pending"},
+        "scope": {"type": "object"},
+        "pillars": {"type": "array", "items": {"type": "string"}},
+        "rules": {"type": "array", "items": {"type": "object"}},
+        "joint_checks": {"type": "array", "items": {"type": "object"}},
+        "sources": {"type": "array", "items": {"type": "object"}},
+        "note": {"type": "string"}
+      }
+    },
     "provenance": {"type": "object"}
   },
   "allOf": [
