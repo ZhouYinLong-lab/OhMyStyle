@@ -74,6 +74,9 @@ A package may register a v2 direction file as `files.art_direction` in
 change legacy compilation; select the registered file explicitly with
 `python tools/compile-style.py <package> --direction package --subject "..."`.
 See the [architecture guide](ARCHITECTURE.md#v2-direction).
+`python tools/validate-package.py <package>` validates a registered direction's
+schema, package binding, referenced sources, and execution constraints together
+with the existing package contract.
 
 Directions may optionally declare a top-level `contexts` catalog. Catalog IDs
 are validated against the direction's required and incompatible scope contexts

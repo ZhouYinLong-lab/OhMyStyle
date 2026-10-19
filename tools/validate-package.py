@@ -14,6 +14,8 @@ import yaml
 from jsonschema import Draft202012Validator
 
 from safe_yaml import safe_load
+from art_direction_runtime import load_direction
+from style_runtime import load_package
 
 
 REQUIRED_FILES = {
@@ -127,6 +129,19 @@ def validate_package(package: Path, schema: dict[str, Any], errors: list[str]) -
     canonical_name = str(data.get("name", "")).lower()
     if canonical_name and canonical_name in base_prompt:
         errors.append(f"{package / 'prompts/base.txt'}: anonymous prompt must not contain package name")
+
+    package_files = data.get("files")
+    direction_relative = package_files.get("art_direction") if isinstance(package_files, dict) else None
+    if direction_relative:
+        try:
+            direction_path = safe_package_file(package, direction_relative)
+            if not direction_path.is_file():
+                errors.append(f"{package / 'package.yaml'}: files.art_direction does not exist: {direction_relative}")
+            else:
+                runtime = load_package(package)
+                load_direction(direction_path, runtime)
+        except (OSError, ValueError, TypeError) as exc:
+            errors.append(f"{package / 'package.yaml'}: invalid files.art_direction: {exc}")
 
 
 def main() -> None:
