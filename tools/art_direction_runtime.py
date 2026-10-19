@@ -23,6 +23,14 @@ REPRESENTATION_CONTRACTS = {
 }
 
 
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def validate_grid(grid: dict[str, Any]) -> None:
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
     grid_schema = {"$ref": "#/$defs/grid", "$defs": schema["$defs"]}
@@ -109,11 +117,21 @@ def load_direction(path: Path, runtime: dict[str, Any]) -> dict[str, Any]:
         raise ValueError("A context cannot be both required and incompatible")
     base_source_rows = manifest_records(runtime)
     base_sources = {row["asset_id"]: row for row in base_source_rows}
+    local_source_hashes = {}
     for source in data["sources"]:
         if "base_asset_id" in source and source["base_asset_id"] not in base_sources:
             raise ValueError(f"Unknown base reference: {source['base_asset_id']}")
         if "local_path" in source:
-            safe_package_file(base_root, source["local_path"], label="direction source")
+            source_path = safe_package_file(base_root, source["local_path"], label="direction source")
+            local_source_hashes[source["id"]] = sha256_file(source_path)
+    referenced_base_ids = {source["base_asset_id"] for source in data["sources"] if "base_asset_id" in source}
+    for source in base_source_rows:
+        if source["asset_id"] not in referenced_base_ids:
+            continue
+        relative = source.get("local_path", "").strip()
+        if relative:
+            source_path = safe_package_file(base_root, relative, label=f"base reference {source['asset_id']}")
+            local_source_hashes[source["asset_id"]] = sha256_file(source_path)
     if data["execution"]["route"] == "deterministic_grid":
         validate_grid(data["execution"]["grid"])
     return {
@@ -121,6 +139,7 @@ def load_direction(path: Path, runtime: dict[str, Any]) -> dict[str, Any]:
         "path": path,
         "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
         "base_sources": base_sources,
+        "local_source_hashes": local_source_hashes,
     }
 
 
@@ -208,7 +227,13 @@ def compile_direction_job(
     for source in data["sources"]:
         record = dict(source)
         if "base_asset_id" in source:
-            record["package_reference"] = loaded["base_sources"][source["base_asset_id"]]
+            package_reference = dict(loaded["base_sources"][source["base_asset_id"]])
+            package_reference_sha256 = loaded["local_source_hashes"].get(source["base_asset_id"])
+            if package_reference_sha256:
+                package_reference["sha256"] = package_reference_sha256
+            record["package_reference"] = package_reference
+        elif "local_path" in source:
+            record["sha256"] = loaded["local_source_hashes"][source["id"]]
         review_sources.append(record)
     package = runtime["package"]
     compiler_files = [ROOT / "tools/style_runtime.py", Path(__file__).resolve()]
