@@ -107,7 +107,8 @@ def load_direction(path: Path, runtime: dict[str, Any]) -> dict[str, Any]:
     scope = data["scope"]
     if set(scope["required_contexts"]) & set(scope["incompatible_contexts"]):
         raise ValueError("A context cannot be both required and incompatible")
-    base_sources = {row["asset_id"] for row in manifest_records(runtime)}
+    base_source_rows = manifest_records(runtime)
+    base_sources = {row["asset_id"]: row for row in base_source_rows}
     for source in data["sources"]:
         if "base_asset_id" in source and source["base_asset_id"] not in base_sources:
             raise ValueError(f"Unknown base reference: {source['base_asset_id']}")
@@ -115,7 +116,12 @@ def load_direction(path: Path, runtime: dict[str, Any]) -> dict[str, Any]:
             safe_package_file(base_root, source["local_path"], label="direction source")
     if data["execution"]["route"] == "deterministic_grid":
         validate_grid(data["execution"]["grid"])
-    return {"data": data, "path": path, "sha256": hashlib.sha256(path.read_bytes()).hexdigest()}
+    return {
+        "data": data,
+        "path": path,
+        "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "base_sources": base_sources,
+    }
 
 
 def compile_direction_job(
@@ -198,6 +204,12 @@ def compile_direction_job(
     negative = "\n".join(dict.fromkeys(
         [rule["avoid"] for rule in rules if rule.get("avoid")] + execution["avoid"]
     ))
+    review_sources = []
+    for source in data["sources"]:
+        record = dict(source)
+        if "base_asset_id" in source:
+            record["package_reference"] = loaded["base_sources"][source["base_asset_id"]]
+        review_sources.append(record)
     package = runtime["package"]
     compiler_files = [ROOT / "tools/style_runtime.py", Path(__file__).resolve()]
     return {
@@ -223,7 +235,7 @@ def compile_direction_job(
         "execution": execution,
         "review": {
             "status": "pending", "scope": data["scope"], "pillars": data["pillars"], "rules": rules,
-            "joint_checks": joint_checks, "sources": data["sources"],
+            "joint_checks": joint_checks, "sources": review_sources,
             "note": "Successful compilation is not image-quality validation or a maturity upgrade.",
         },
         "provenance": {
