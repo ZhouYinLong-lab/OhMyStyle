@@ -1,0 +1,171 @@
+schema_version: 2.1.0
+status: experimental
+id: lithography-direction
+name: 石版画
+base_package: techniques/lithography
+scope:
+  medium: planographic stone or plate print
+  representation: stylized
+  description: 以平版油水相斥、石面绘制和多次套印建立柔和颗粒、线条与色层的印刷质感。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - fixed still life
+  - copied poster or artwork
+  - woodcut gouge marks
+  - etched hatch lines
+  - risograph-only dot pattern
+  - digital paper overlay without ink behavior
+  - 不强制生成静物、海报、文字或风景
+pillars:
+- 以平版油水相斥、石面绘制和多次套印建立柔和颗粒、线条与色层的印刷质感。
+- 'differentiation: 油水相斥逻辑带来的平面墨层; 石面颗粒、纸张齿纹和多次套印的轻微偏移; 颜色是印刷层，不是环境光滤镜'
+- 'composition: 保留清楚的平面组织和纸张边界，主体可由几个印刷层共同构成。; 套印偏差、留白和边缘软化可以存在，但不破坏主体识别。'
+- 'palette: 黑、靛蓝、砖红、赭黄和纸白分层使用，颜色带有印墨的干燥感。'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: 油水相斥逻辑带来的平面墨层;
+    石面颗粒、纸张齿纹和多次套印的轻微偏移; 颜色是印刷层，不是环境光滤镜. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: 油水相斥逻辑带来的平面墨层; 石面颗粒、纸张齿纹和多次套印的轻微偏移;
+    颜色是印刷层，不是环境光滤镜.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: 油水相斥逻辑带来的平面墨层;
+    石面颗粒、纸张齿纹和多次套印的轻微偏移; 颜色是印刷层，不是环境光滤镜.'
+  evidence:
+    source_ids:
+    - source-lithography-oxford
+    - source-lithography-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 保留清楚的平面组织和纸张边界，主体可由几个印刷层共同构成。;
+    套印偏差、留白和边缘软化可以存在，但不破坏主体识别。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 保留清楚的平面组织和纸张边界，主体可由几个印刷层共同构成。;
+    套印偏差、留白和边缘软化可以存在，但不破坏主体识别。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 保留清楚的平面组织和纸张边界，主体可由几个印刷层共同构成。;
+    套印偏差、留白和边缘软化可以存在，但不破坏主体识别。.'
+  evidence:
+    source_ids:
+    - source-lithography-oxford
+    - source-lithography-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑、靛蓝、砖红、赭黄和纸白分层使用，颜色带有印墨的干燥感。. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑、靛蓝、砖红、赭黄和纸白分层使用，颜色带有印墨的干燥感。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑、靛蓝、砖红、赭黄和纸白分层使用，颜色带有印墨的干燥感。.'
+  evidence:
+    source_ids:
+    - source-lithography-oxford
+    - source-lithography-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: flat print illumination with tactile paper
+    shading; behavior: 不模拟真实摄影光源，高光来自纸面与墨层关系。. Keep light coherent with the requested subject, medium, and
+    scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: flat print illumination
+    with tactile paper shading; behavior: 不模拟真实摄影光源，高光来自纸面与墨层关系。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: flat print illumination
+    with tactile paper shading; behavior: 不模拟真实摄影光源，高光来自纸面与墨层关系。.'
+  evidence:
+    source_ids:
+    - source-lithography-oxford
+    - source-lithography-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: stone-grain
+    and paper-tooth print surface; edges: drawn, rolled, or slightly offset ink edges. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    stone-grain and paper-tooth print surface; edges: drawn, rolled, or slightly offset ink edges.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: stone-grain and paper-tooth print surface; edges: drawn, rolled, or slightly offset ink edges.'
+  evidence:
+    source_ids:
+    - source-lithography-oxford
+    - source-lithography-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium,
+    with visible crayon grain and ink accumulation; placement: inside ink fields, along registration edges,
+    and in broad shadows. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium, with visible crayon grain and ink accumulation; placement: inside ink fields, along registration
+    edges, and in broad shadows.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium, with visible crayon grain and ink accumulation; placement: inside ink fields, along registration
+    edges, and in broad shadows.'
+  evidence:
+    source_ids:
+    - source-lithography-oxford
+    - source-lithography-met
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-lithography-oxford
+  kind: primary
+  base_asset_id: lithography-oxford
+- id: source-lithography-met
+  kind: secondary
+  base_asset_id: lithography-met
+execution:
+  route: text_only
+  must:
+  - Simplify the user-supplied subject into a few printable masses.
+  - Establish a black or dark structural layer with drawn and washed marks.
+  - Add one or more flat color layers with restrained registration offsets.
+  - Keep paper showing between fields and allow ink density to vary.
+  - Finish with a tactile, slightly imperfect print surface rather than a clean digital texture.
+  - 视觉重点是平版印刷过程，不是泛化的复古滤镜。
+  - 主体由多层墨色与纸面共同构成，仍应读得出来。
+  - 不复制具体海报、版画、文字或固定静物。
+  avoid:
+  - fixed bowl, cloth, leaf, landscape, poster, or typography subject
+  - woodcut, etching, risograph, or generic vintage filter cues
+  - 不强制生成静物、海报、文字或风景
+  - fixed still life
+  - copied poster or artwork
+  - woodcut gouge marks
+  - etched hatch lines
+  - risograph-only dot pattern
+  - digital paper overlay without ink behavior
+  - Do not reproduce a specific print, artist signature, or copyrighted poster layout.
