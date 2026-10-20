@@ -46,7 +46,7 @@ See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/man
 
 ## New architecture: direct color and compressed space (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `modern-life-color-plane`. It makes adjacent local color patches, deliberate composition, and selective contour and brushwork around the focal forms explicit. It differs from Degas's oblique, snapshot-like framing and does not default to Paris cafés, bars, or particular figures.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when the user declares `modern-life-color-plane`. It makes adjacent local color patches, deliberate composition, and selective contour and brushwork around the focal forms explicit. Spatial compression applies only when the caller declares `close-compression-benefits-composition`. It differs from Degas's oblique, snapshot-like framing and does not default to Paris cafés, bars, or particular figures.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/edouard-manet --direction package --context modern-life-color-plane --subject "A florist arranging a small display at a neighborhood shop counter" --output runs/style-v2/edouard-manet-job.json

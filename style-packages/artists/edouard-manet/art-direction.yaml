@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: manet-direct-color-and-compressed-scene
 name: Manet direct color and compressed scene
@@ -22,6 +22,17 @@ scope:
     - Preserve requested people, objects, place, activity, and count; do not add a café, bar, nude figure, or Paris landmark by default.
     - Use compressed space and strong value groups only where they support the user's composition.
     - Keep loose passages selective and intentional; do not turn the entire image into an unfinished sketch.
+contexts:
+  - id: modern-life-color-plane
+    description: A user-requested modern scene organized through direct local color relationships.
+  - id: seamless-photorealistic-render
+    description: A photorealistic image without visible painterly color patches.
+  - id: uniform-impressionist-flicker
+    description: An image where uniform broken brush marks dominate every surface.
+  - id: mandatory-paris-cafe-scene
+    description: A request to reproduce a specific Paris café scene or named source arrangement.
+  - id: close-compression-benefits-composition
+    description: A closer or compressed arrangement improves the requested scene's focal hierarchy.
 pillars:
   - Place clear color patches beside one another instead of relying on long, blended tonal transitions.
   - Keep a deliberate compositional structure beneath the immediate surface and modern subject.
@@ -45,6 +56,8 @@ rules:
   - id: deliberate-compressed-space
     axis: composition_and_space
     importance: core
+    when_contexts:
+      - close-compression-benefits-composition
     applies_when: The requested modern scene benefits from a close or compressed arrangement.
     instruction: Organize the main figures and objects in a deliberate relation to the picture plane; simplify depth cues and preserve a clear focal hierarchy without copying photographic crop accidents or a named layout.
     observable: The scene feels intentionally structured and close to the viewer while its people and objects remain distinct.

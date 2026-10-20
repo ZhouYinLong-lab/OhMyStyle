@@ -46,7 +46,7 @@
 
 ## 新架构：直接色块与压缩空间（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `modern-life-color-plane` 时启用。新版明确要求并置局部色块、保持经过安排的构图，并在焦点处保留较清晰的轮廓与笔触层级。它和德加偏斜、快照式的取景区分开来；不默认添加巴黎咖啡馆、酒吧或特定人物。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户指定 `modern-life-color-plane` 时启用。它要求并置局部色块、保持经过安排的构图，并在焦点处保留较清晰的轮廓与笔触层级。只有调用者声明 `close-compression-benefits-composition` 时，才应用压缩空间规则。它和德加偏斜、快照式的取景区分开来；不默认添加巴黎咖啡馆、酒吧或特定人物。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/edouard-manet --direction package --context modern-life-color-plane --subject "A florist arranging a small display at a neighborhood shop counter" --output runs/style-v2/edouard-manet-job.json
