@@ -82,4 +82,4 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：斜向光带与选择性高光
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 适用于用户指定多人物和明确方向光源的场景：一条斜向光路只照亮朝向光源的部分脸部、肢体或布料，其他重叠面保留有色暗部。方向不会自动增加神话、宗教或宫廷题材。见 [`comparisons/`](comparisons/README.md) 查看同一双人排练场景的对照；规则仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，适用于用户指定多人物和明确方向光源的场景：一条斜向光路只照亮朝向光源的部分脸部、肢体或布料，其他重叠面保留有色暗部。只有人物确有互动或重叠时，才声明 `user-requests-interacting-or-overlapping-figures` 启用动作光路规则。方向不会自动增加神话、宗教或宫廷题材。见 [`comparisons/`](comparisons/README.md) 查看同一双人排练场景的对照；规则仍处于实验状态。

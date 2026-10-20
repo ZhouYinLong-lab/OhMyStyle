@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: rubens-diagonal-selective-light
 name: Rubens diagonal band of selective light
@@ -26,6 +26,17 @@ scope:
     - Keep highlights warm but retain deep colored shadows and intermediate tones; do not wash out skin, cloth, or materials.
     - Do not add mythological, religious, winged, courtly, or allegorical figures unless the user requests them.
     - Do not copy the composition, poses, lighting layout, or figures of a named Rubens work.
+contexts:
+  - id: multi-figure-scene-with-directed-light
+    description: The user requests a multi-figure scene with a specified directional light source.
+  - id: diffuse-even-lighting
+    description: The user requires diffuse, even lighting.
+  - id: isolated-product-photography
+    description: The user requests isolated product photography.
+  - id: flat-graphic-silhouette
+    description: The user requires flat graphic silhouettes.
+  - id: user-requests-interacting-or-overlapping-figures
+    description: The requested scene includes interacting or overlapping figures.
 pillars:
   - Send one broad diagonal band of directional light across the user-requested group rather than lighting every figure evenly.
   - Use selective warm highlights on the planes that turn into the beam, with deep colored shadow between them.
@@ -34,6 +45,8 @@ rules:
   - id: single-sweep-light-path
     axis: directional-light_and_composition
     importance: core
+    when_contexts:
+      - multi-figure-scene-with-directed-light
     applies_when: The user specifies a directional light source in a multi-figure scene.
     instruction: Carry the specified light as one broad diagonal path across part of the group; let it touch selected faces, limbs, or fabric planes according to their orientation while leaving intervening areas in shadow.
     observable: The viewer can trace one dominant diagonal sequence of lit planes, and some requested forms remain in colored shadow.
@@ -47,6 +60,8 @@ rules:
   - id: selective-plane-highlights
     axis: highlight_and_shadow_modeling
     importance: core
+    when_contexts:
+      - multi-figure-scene-with-directed-light
     applies_when: The specified light crosses moving or overlapping figures.
     instruction: Place warm highlights only on planes facing the requested source; retain deep, colored shadow in overlaps and on turned-away surfaces so the bodies do not read as evenly lit.
     observable: The highlighted areas form broken, selective patches across the group rather than complete pale figures or continuous rim light.
@@ -60,6 +75,8 @@ rules:
   - id: lit-gesture-cascade
     axis: figure_group_and_gesture
     importance: supporting
+    when_contexts:
+      - user-requests-interacting-or-overlapping-figures
     applies_when: The user requests interacting or overlapping figures.
     instruction: Let the selective highlights move across the requested figures in a readable diagonal order, preserving each pose and keeping the main action clear within the group.
     observable: Light reinforces the requested action and overlap; it does not turn the group into anonymous fragments.
