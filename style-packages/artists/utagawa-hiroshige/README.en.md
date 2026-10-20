@@ -58,10 +58,10 @@ Model weights, API keys, and generated images remain the user's responsibility. 
 
 ## New architecture: weather layers and travel viewpoint (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is limited to the `landscape-view` context. It organizes space through a cropped foreground, a readable middle-distance route, and a softened far plane; when the prompt includes rain, snow, or mist, it uses paper reserve, woodblock gradation, and concise marks to express weather. Unlike Hokusai's flat color planes and crisp carved contours, this direction emphasizes how atmosphere changes distance and how a viewpoint feels like one moment along a journey. It does not add landmarks, travelers, or weather by default.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is limited to the `landscape-view` context. It organizes space through a cropped foreground, a readable middle-distance route, and a softened far plane; the weather rule activates only when the caller declares `visible-weather`, allowing paper reserve, woodblock gradation, and concise marks to express requested conditions. Unlike Hokusai's flat color planes and crisp carved contours, this direction emphasizes how atmosphere changes distance and how a viewpoint feels like one moment along a journey. It does not add landmarks, travelers, or weather by default.
 
 ```powershell
-python tools/compile-style.py style-packages/artists/utagawa-hiroshige --direction package --context landscape-view --subject "A narrow path beside a river in first snow, with one distant footbridge" --output runs/style-v2/hiroshige-job.json
+python tools/compile-style.py style-packages/artists/utagawa-hiroshige --direction package --context landscape-view --context visible-weather --subject "A narrow path beside a river in first snow, with one distant footbridge" --output runs/style-v2/hiroshige-job.json
 ```
 
 This direction remains experimental. The Met's description of *Snowy Gorge* and British Museum material on Hiroshige's viewpoints and woodblock gradation support these observations; cross-subject and Hokusai differentiation review is still pending.

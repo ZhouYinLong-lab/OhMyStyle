@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: hiroshige-atmospheric-landscape-print
 name: Hiroshige atmospheric landscape print
@@ -15,6 +15,15 @@ scope:
   limitations:
     - Follow the requested place, season, weather, and figure count; do not add rain, snow, landmarks, or travelers unless supported by the prompt.
     - This direction describes a landscape print method, not a fixed Japanese scene or a specific Hiroshige series.
+contexts:
+  - id: landscape-view
+    description: A scene organized around a landscape and its near-to-far spatial layers.
+  - id: object-only-still-life
+    description: A composition centered on arranged objects without a landscape view.
+  - id: photoreal-atmosphere
+    description: A photographic rendering whose atmosphere relies on optical realism.
+  - id: visible-weather
+    description: The requested landscape includes visible rain, snow, mist, or another atmospheric condition.
 pillars:
   - Use weather and unprinted paper as compositional material, not as a decorative overlay.
   - Establish depth through a striking near plane, a legible middle route, and a quiet distant plane.
@@ -23,6 +32,8 @@ rules:
   - id: atmosphere-through-print-process
     axis: lighting
     importance: core
+    when_contexts:
+      - visible-weather
     applies_when: The prompt includes rain, snow, mist, dusk, or another visible atmospheric condition.
     instruction: "Translate the requested atmosphere through woodblock-friendly means: unprinted paper for snow, controlled bokashi-like gradation for rain or haze, and restrained line marks for falling weather."
     observable: Weather changes the visibility and contrast of the scene's planes and remains integrated with the printed surface.
