@@ -79,4 +79,4 @@ Use references to understand observable characteristics. Do not copy a source wo
 
 ## Experimental direction: hand-object light path
 
-The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user requests a figure holding or touching an object. Use one selective warm light path to connect the face, contact hand, and the object's material response; keep the person primary and surrounding shadows detailed. It does not assign symbolic meaning to the object. See [`comparisons/`](comparisons/README.md) for a generated study. This direction remains experimental.
+The optional [`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and applies only when the user requests a figure holding or touching an object. Use one selective warm light path to connect the face, contact hand, and the object's material response; keep the person primary. The warm-shadow detail rule applies only when the caller declares `dark-intimate-setting`. It does not assign symbolic meaning to the object. See [`comparisons/`](comparisons/README.md) for a generated study. This direction remains experimental.

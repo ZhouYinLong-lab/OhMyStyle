@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: rembrandt-hand-object-light-chain
 name: Rembrandt hand-object light chain
@@ -22,6 +22,17 @@ scope:
     - Preserve the specified object, hand, gesture, face, light source, and setting.
     - Keep the human figure as the primary subject; object highlights remain secondary.
     - Do not invent a symbolic or historical meaning for the object.
+contexts:
+  - id: user-requested-figure-handling-object
+    description: A user-requested figure holding or touching a small object.
+  - id: no-figure-or-hand-object-contact
+    description: A scene without a figure touching or holding an object.
+  - id: user-requested-dark-silhouette
+    description: A dark silhouette treatment where contact detail should remain hidden.
+  - id: exact-reconstruction-of-named-rembrandt-work
+    description: A request to reproduce a named Rembrandt work exactly.
+  - id: dark-intimate-setting
+    description: The requested scene uses a dark interior or intimate light setting.
 pillars:
   - Let the light path link facial attention to the requested hand-object contact.
   - Show how the user's specified object material receives light without generic glow.
@@ -56,6 +67,8 @@ rules:
   - id: keep-shadow-open-around-contact
     axis: warm-shadow-detail
     importance: supporting
+    when_contexts:
+      - dark-intimate-setting
     applies_when: A local light path is used in a dark interior or intimate scene.
     instruction: Preserve warm detail around the hand and object; reserve the deepest dark for areas that do not explain the contact or expression.
     observable: Hand, object, and nearby fabric remain distinguishable within the warm dark field.

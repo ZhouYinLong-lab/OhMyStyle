@@ -79,4 +79,4 @@
 
 ## Experimental direction: hand-object light path
 
-The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user requests a figure holding or touching an object. Use one selective warm light path to connect the face, contact hand, and the object's material response; keep the person primary and the surrounding shadows detailed. It does not assign symbolic meaning to the object. See [`comparisons/`](comparisons/README.md) for the generated study. This direction remains experimental.
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户要求人物持有或触碰物体时启用：用一条克制的暖光路径连接面部、接触手和物体的材质反应，并让人物保持主体地位。只有调用者声明 `dark-intimate-setting` 时，才启用暗部接触细节规则。它不为物体指定象征意义。生成对照见 [`comparisons/`](comparisons/README.md)；该方向仍处于实验状态。
