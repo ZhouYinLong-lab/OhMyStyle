@@ -1,0 +1,173 @@
+schema_version: 2.1.0
+status: experimental
+id: hand-painted-low-poly-game-art-direction
+name: 手绘低多边形游戏美术
+base_package: game-art/hand-painted-low-poly-game-art
+scope:
+  medium: Combine low-to-moderate polygon geometry with hand-painted surface color.; The visible paint can
+    be stylized digital texture and does not imply physical paint.
+  representation: stylized
+  description: 以简化多边形建立清楚体块，再用手绘色面和方向性笔触表达材质；重点是贴图笔触与几何面的协作，不是统一低模滤镜。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - photographic_texture_maps
+  - faceted_geometry_without_painted_surface_logic
+  - generic_pastel_filter
+  - copied_asset_or_scene
+pillars:
+- 以简化多边形建立清楚体块，再用手绘色面和方向性笔触表达材质；重点是贴图笔触与几何面的协作，不是统一低模滤镜。
+- 'medium: Combine low-to-moderate polygon geometry with hand-painted surface color.; The visible paint can
+  be stylized digital texture and does not imply physical paint.'
+- 'composition: Use a few large readable forms before adding painted detail.; Keep facet direction and painted
+  shadow shapes aligned with volume.; Separate focal objects from scenery through silhouette and value.'
+- 'palette: Use compact material-specific color families with controlled accents.; Shift hue within painted
+  shadow and light shapes instead of adding uniform gradients.; Keep outlines and contact shadows readable
+  at game scale.'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: Combine
+    low-to-moderate polygon geometry with hand-painted surface color.; The visible paint can be stylized digital
+    texture and does not imply physical paint..'
+  observable: 'The requested image retains the stated medium distinction or production constraint: Combine
+    low-to-moderate polygon geometry with hand-painted surface color.; The visible paint can be stylized digital
+    texture and does not imply physical paint..'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    Combine low-to-moderate polygon geometry with hand-painted surface color.; The visible paint can be stylized
+    digital texture and does not imply physical paint..'
+  evidence:
+    source_ids:
+    - source-hand-painted-low-poly-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Use a few large
+    readable forms before adding painted detail.; Keep facet direction and painted shadow shapes aligned with
+    volume.; Separate focal objects from scenery through silhouette and value.. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Use a few large readable
+    forms before adding painted detail.; Keep facet direction and painted shadow shapes aligned with volume.;
+    Separate focal objects from scenery through silhouette and value..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Use a few
+    large readable forms before adding painted detail.; Keep facet direction and painted shadow shapes aligned
+    with volume.; Separate focal objects from scenery through silhouette and value..'
+  evidence:
+    source_ids:
+    - source-hand-painted-low-poly-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use compact material-specific color
+    families with controlled accents.; Shift hue within painted shadow and light shapes instead of adding uniform
+    gradients.; Keep outlines and contact shadows readable at game scale.. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use compact material-specific
+    color families with controlled accents.; Shift hue within painted shadow and light shapes instead of adding
+    uniform gradients.; Keep outlines and contact shadows readable at game scale..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use compact material-specific color families with controlled accents.; Shift hue within painted shadow
+    and light shapes instead of adding uniform gradients.; Keep outlines and contact shadows readable at game
+    scale..'
+  evidence:
+    source_ids:
+    - source-hand-painted-low-poly-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: Use broad painted light and shadow shapes that reinforce
+    facets.; Avoid glossy specular highlights that erase the painted surface.. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: Use broad painted light and
+    shadow shapes that reinforce facets.; Avoid glossy specular highlights that erase the painted surface..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: Use broad painted light
+    and shadow shapes that reinforce facets.; Avoid glossy specular highlights that erase the painted surface..'
+  evidence:
+    source_ids:
+    - source-hand-painted-low-poly-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Show deliberate
+    brush direction, edge accents, and simplified material cues.. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Show deliberate
+    brush direction, edge accents, and simplified material cues..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Show deliberate brush direction, edge accents, and simplified material cues..'
+  evidence:
+    source_ids:
+    - source-hand-painted-low-poly-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Use large-to-medium
+    painted marks that remain legible when assets are reduced.; Avoid photorealistic noise and procedural detail
+    as the dominant surface language.. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Use large-to-medium
+    painted marks that remain legible when assets are reduced.; Avoid photorealistic noise and procedural detail
+    as the dominant surface language..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Use large-to-medium painted marks that remain legible when assets are reduced.; Avoid photorealistic noise
+    and procedural detail as the dominant surface language..'
+  evidence:
+    source_ids:
+    - source-hand-painted-low-poly-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-hand-painted-low-poly-game-art-primary-source
+  kind: primary
+  base_asset_id: hand-painted-low-poly-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - Establish silhouette and major planes.
+  - Paint local color and broad shadow shapes along the form.
+  - Add selective material cues and edge accents.
+  - Inspect at target distance and remove texture noise that competes with gameplay.
+  - Painted color and geometry jointly describe form.
+  - Keep the user-provided subject independent from example props.
+  - Do not reuse source assets, silhouettes, or exact compositions.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photographic_texture_maps
+  - faceted_geometry_without_painted_surface_logic
+  - generic_pastel_filter
+  - copied_asset_or_scene
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
