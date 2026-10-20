@@ -1,0 +1,124 @@
+schema_version: 2.1.0
+status: experimental
+id: gum-bichromate-direction
+name: 重铬酸盐胶印
+base_package: techniques/gum-bichromate
+scope:
+  medium: printmaking
+  representation: stylized
+  description: A hand-controlled pigment-printing process using sensitized gum arabic and pigment, contact
+    exposure, washing, and optional layered color passes to create broad tones, soft detail, and visibly material
+    photographic surfaces.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+pillars:
+- A hand-controlled pigment-printing process using sensitized gum arabic and pigment, contact exposure, washing,
+  and optional layered color passes to create broad tones, soft detail, and visibly material photographic surfaces.
+- 'palette: default: monochrome_or_limited_palette; layered_option: multiple_pigment_passes'
+- 'surface: matte_paper_tooth; pigment_sitting_in_or_on_paper; visible_brush_or_wash_variation'
+- 'surface: brushed_or_softened; selective_detail; uneven_transition'
+rules:
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: default: monochrome_or_limited_palette;
+    layered_option: multiple_pigment_passes. Adapt their balance to the requested subject; do not apply them
+    as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: default: monochrome_or_limited_palette;
+    layered_option: multiple_pigment_passes.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    default: monochrome_or_limited_palette; layered_option: multiple_pigment_passes.'
+  evidence:
+    source_ids:
+    - source-eastman-process-glossary
+    - source-moderna-gum-process
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: matte_paper_tooth;
+    pigment_sitting_in_or_on_paper; visible_brush_or_wash_variation. Preserve detail hierarchy and material
+    identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: matte_paper_tooth;
+    pigment_sitting_in_or_on_paper; visible_brush_or_wash_variation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    matte_paper_tooth; pigment_sitting_in_or_on_paper; visible_brush_or_wash_variation.'
+  evidence:
+    source_ids:
+    - source-eastman-process-glossary
+    - source-moderna-gum-process
+    basis: curatorial_inference
+    visual_review: pending
+- id: edges
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: brushed_or_softened;
+    selective_detail; uneven_transition. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: brushed_or_softened;
+    selective_detail; uneven_transition.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    brushed_or_softened; selective_detail; uneven_transition.'
+  evidence:
+    source_ids:
+    - source-eastman-process-glossary
+    - source-moderna-gum-process
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: A hand-controlled
+    pigment-printing process using sensitized gum arabic and pigment, contact exposure, washing, and optional
+    layered color passes to create broad tones, soft detail, and visibly material photographic surfaces.. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: A hand-controlled
+    pigment-printing process using sensitized gum arabic and pigment, contact exposure, washing, and optional
+    layered color passes to create broad tones, soft detail, and visibly material photographic surfaces..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: A hand-controlled
+    pigment-printing process using sensitized gum arabic and pigment, contact exposure, washing, and optional
+    layered color passes to create broad tones, soft detail, and visibly material photographic surfaces..'
+  evidence:
+    source_ids:
+    - source-eastman-process-glossary
+    - source-moderna-gum-process
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- color
+- surface
+- edges
+- composition
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - color
+  - surface
+  - edges
+  instruction: Keep the package-specific relationship among palette, surface, surface consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-eastman-process-glossary
+  kind: primary
+  base_asset_id: eastman-process-glossary
+- id: source-moderna-gum-process
+  kind: secondary
+  base_asset_id: moderna-gum-process
+execution:
+  route: text_only
+  must:
+  - image reads as a material print rather than a clean screen image
+  - tonal structure remains broad and tactile
+  - hand variation is controlled, not random noise
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
