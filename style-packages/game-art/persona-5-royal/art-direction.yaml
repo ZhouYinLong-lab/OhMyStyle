@@ -1,0 +1,155 @@
+schema_version: 2.1.0
+status: experimental
+id: persona-5-royal-direction
+name: 女神异闻录5皇家版游戏美术
+base_package: game-art/persona-5-royal
+scope:
+  medium: 游戏美术
+  representation: stylized
+  description: 以朱红、近黑和纸白构成高对比图形系统，结合斜切构图、拼贴层次和印刷质感制造强烈而时尚的日式角色扮演游戏画面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character
+  - branded interface
+  - fixed mask, card, weapon, thief, or city landmark
+pillars:
+- 以朱红、近黑和纸白构成高对比图形系统，结合斜切构图、拼贴层次和印刷质感制造强烈而时尚的日式角色扮演游戏画面。
+- 'medium: 游戏美术'
+- 'composition: 斜线、切角、重叠平面和不对称留白形成明确的视觉方向; 主体可以被大色块或边界切分，但轮廓和动作仍需可读; 画面保留编辑版式的呼吸区，不把所有空间填满'
+- 'palette: 朱红、近黑和纸白构成核心三色系统; 暗灰和少量米白用于过渡，不稀释红黑对比; 红色集中在主体、路径或视觉焦点，不做全局红色滤镜; 禁止使用廉价霓虹光替代平面色块和印刷层次'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 游戏美术.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 游戏美术.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    游戏美术.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 斜线、切角、重叠平面和不对称留白形成明确的视觉方向;
+    主体可以被大色块或边界切分，但轮廓和动作仍需可读; 画面保留编辑版式的呼吸区，不把所有空间填满. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 斜线、切角、重叠平面和不对称留白形成明确的视觉方向;
+    主体可以被大色块或边界切分，但轮廓和动作仍需可读; 画面保留编辑版式的呼吸区，不把所有空间填满.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 斜线、切角、重叠平面和不对称留白形成明确的视觉方向;
+    主体可以被大色块或边界切分，但轮廓和动作仍需可读; 画面保留编辑版式的呼吸区，不把所有空间填满.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 朱红、近黑和纸白构成核心三色系统; 暗灰和少量米白用于过渡，不稀释红黑对比;
+    红色集中在主体、路径或视觉焦点，不做全局红色滤镜; 禁止使用廉价霓虹光替代平面色块和印刷层次. Adapt their balance to the requested subject; do not apply
+    them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 朱红、近黑和纸白构成核心三色系统; 暗灰和少量米白用于过渡，不稀释红黑对比;
+    红色集中在主体、路径或视觉焦点，不做全局红色滤镜; 禁止使用廉价霓虹光替代平面色块和印刷层次.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    朱红、近黑和纸白构成核心三色系统; 暗灰和少量米白用于过渡，不稀释红黑对比; 红色集中在主体、路径或视觉焦点，不做全局红色滤镜; 禁止使用廉价霓虹光替代平面色块和印刷层次.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 高方向性硬光与平面化阴影并置; behavior: 明暗边界清楚，但保留材料和纸面细节;
+    behavior: 局部高光服从版式焦点，不制造发光轮廓. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 高方向性硬光与平面化阴影并置; behavior:
+    明暗边界清楚，但保留材料和纸面细节; behavior: 局部高光服从版式焦点，不制造发光轮廓.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 高方向性硬光与平面化阴影并置;
+    behavior: 明暗边界清楚，但保留材料和纸面细节; behavior: 局部高光服从版式焦点，不制造发光轮廓.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 数字平面设计、剪贴纸张、网点和少量手工刷痕;
+    edges: crisp graphic edges with intentional roughness in selected layers. Preserve detail hierarchy and
+    material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    数字平面设计、剪贴纸张、网点和少量手工刷痕; edges: crisp graphic edges with intentional roughness in selected layers.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 数字平面设计、剪贴纸张、网点和少量手工刷痕; edges: crisp graphic edges with intentional roughness in selected layers.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 中等;
+    placement: 纹理集中在背景纸面、阴影和少数叠加层，主体信息保持清晰. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    中等; placement: 纹理集中在背景纸面、阴影和少数叠加层，主体信息保持清晰.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 中等; placement: 纹理集中在背景纸面、阴影和少数叠加层，主体信息保持清晰.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-01
+  kind: primary_research_source
+  base_asset_id: primary-01
+execution:
+  route: text_only
+  must:
+  - 先写用户主体、数量和构图，再注入红黑白版式语言
+  - 用近黑、纸白和清楚的切角建立层级
+  - 将朱红限制在主体、路径或视觉焦点
+  - 以局部网点和刷痕增加触感，不覆盖主体结构
+  - 先写用户主体和版式目标，再决定斜线或切角方向
+  - 用黑白建立层级，用朱红突出关键区域
+  - 添加少量网点、纸张磨损或手工刷痕
+  - 最后检查版式没有变成固定游戏界面或品牌海报
+  avoid:
+  - fixed subject matter
+  - copied composition
+  - logos, interface text, or branded symbols
+  - generic red-black color filter
+  - fixed mask, card, weapon, thief, character, or landmark
+  - copied key-art composition
+  - excessive neon glow or photorealistic rendering
+  - named character
+  - branded interface
+  - fixed mask, card, weapon, thief, or city landmark
