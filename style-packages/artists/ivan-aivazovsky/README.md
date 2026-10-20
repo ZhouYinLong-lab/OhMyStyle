@@ -30,12 +30,12 @@
 
 ## 新架构：水面光路与浪向（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 只在用户请求海景且显式声明 `radiant-sea-light-path` 时启用。它把光线如何在波面断续延伸、浪纹如何随水流改变方向和尺度、海天如何通过空气透视分层写成可检查的规则。方向不指定必须出现的船、人物、风暴、月亮或日落；用户的天气、时间、光源和物件数量优先。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，只在用户请求海景且显式声明 `radiant-sea-light-path` 时启用。只有场景声明 `visible-light-source` 时，才应用水面反光光路规则；`visible-horizon` 控制海天远景分层规则。浪纹仍根据用户要求的水面运动组织。方向不指定必须出现的船、人物、风暴、月亮或日落；用户的天气、时间、光源和物件数量优先。
 
 这个方向和透纳的天气运动方向不同：这里的核心是水面反射与浪纹之间的局部关系，而非整幅画面被大气色雾和运动向量统摄。也不同于库尔贝强调材料厚重和地面重量的处理；艾瓦佐夫斯基方向关注薄层叠色、波面反光与海天空气关系。
 
 ```powershell
-python tools/compile-style.py style-packages/artists/ivan-aivazovsky --direction package --context radiant-sea-light-path --subject "One small red wooden skiff on a calm blue sea beneath a pale-gold opening in gray clouds"
+python tools/compile-style.py style-packages/artists/ivan-aivazovsky --direction package --context radiant-sea-light-path --context visible-light-source --context visible-horizon --subject "One small red wooden skiff on a calm blue sea beneath a pale-gold opening in gray clouds"
 ```
 
 [`comparisons/`](comparisons/) 保存同题旧版与新方向的编译任务、实际生图、提示词和检查说明。样图显示新版的反光更断续、近景浪纹更清楚，但整体差异仍较克制。两张图由独立调用生成，没有固定随机种子，适合检查方向规则是否可见，不构成控制变量实验；新方向仍待视觉评审，保持实验状态。

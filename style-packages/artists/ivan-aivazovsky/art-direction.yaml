@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: aivazovsky-radiant-sea-light-path
 name: Aivazovsky radiant sea-light path
@@ -23,6 +23,19 @@ scope:
     - Preserve user-specified weather, time, light source, horizon, vessel count, and aspect ratio.
     - Add no ship, person, shoreline, moon, sun, storm, or narrative event unless requested.
     - Do not reproduce a named painting, its exact horizon, wave silhouette, figures, or vessel arrangement.
+contexts:
+  - id: radiant-sea-light-path
+    description: A requested sea or ocean painting organized around painted water and light.
+  - id: non-marine-subject
+    description: A subject that is not a sea or ocean scene.
+  - id: flat-color-graphic
+    description: A flat graphic that does not use painted atmospheric surfaces.
+  - id: text-only-composition
+    description: A composition whose subject is typography rather than a marine scene.
+  - id: visible-light-source
+    description: The user-requested scene contains a visible sun, moon, or bright opening in the sky.
+  - id: visible-horizon
+    description: The requested composition includes a visible horizon or distant water.
 pillars:
   - Make the requested light source legible through its effect on the water, with a broken but continuous reflection path that follows the surface.
   - Give wave crests and reflected marks a consistent directional rhythm, varying their scale and contrast with distance.
@@ -32,6 +45,8 @@ rules:
   - id: broken-reflection-path
     axis: lighting_and_composition
     importance: core
+    when_contexts:
+      - visible-light-source
     applies_when: The requested marine scene includes a visible light source or bright opening in the sky.
     instruction: Carry the source light onto the water as a broken, narrowing or widening path of reflections that responds to the wave planes; retain dark blue-gray intervals between highlights.
     observable: The reflection connects sky and water visually, follows the surface, and remains composed of distinct light marks rather than a uniform glow stripe.
@@ -59,6 +74,8 @@ rules:
   - id: atmospheric-sea-sky-separation
     axis: color_and_depth
     importance: supporting
+    when_contexts:
+      - visible-horizon
     applies_when: The requested composition includes a visible horizon or distant water.
     instruction: Keep the user-requested horizon and establish distance with restrained shifts in edge softness, value, and color; reserve the strongest local contrast for the requested focal area.
     observable: Foreground, horizon, and sky remain distinct but share coherent air and light.
