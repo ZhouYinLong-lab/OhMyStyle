@@ -7,8 +7,7 @@ same_family:
   - photographers/garry-winogrand
   - photographers/william-klein
 supersedes: []
-conflicts:
-  - presets/quiet-documentary
+conflicts: []
 distinctives:
   - self-referential frame construction through reflection and occlusion
   - high-density black-and-white observation without a fixed narrative
@@ -16,3 +15,4 @@ distinctives:
 avoid_overlap:
   - do not reduce the package to generic street photography
   - do not require a city street, storefront, car, or passerby
+  - 'Avoid blending this direction with the unregistered contrast reference: presets/quiet-documentary.'
