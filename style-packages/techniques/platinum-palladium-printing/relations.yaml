@@ -13,11 +13,11 @@ not_equivalent_to:
 family: matte-continuous-tone-photography
 near_duplicates: []
 supersedes: []
-conflicts:
-  - glossy-hdr-commercial-photo
+conflicts: []
 distinctives:
   - image appears absorbed into fibrous matte paper
   - long continuous grayscale with open shadows
   - restrained neutral warmth from material process
 avoid_overlap:
   - forced portrait, landscape, darkroom, or antique subject
+  - 'Avoid blending this direction with the unregistered contrast reference: glossy-hdr-commercial-photo.'
