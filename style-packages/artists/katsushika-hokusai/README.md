@@ -76,7 +76,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 新架构：轮廓、色面与负形（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 适用于开放主体：先让轮廓和剪影建立层级，再用少量套色色面、明确裁切和纸面负形组织画面。蓝色只是可选色彩锚点，不会固定出现；不会自动加入海浪、船只、富士山或日式场景。与广重方向相比，这里由轮廓、色块和裁切产生图形张力；广重则更依赖天气、前中远景和空气渐变。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，适用于开放主体：先让轮廓和剪影建立层级，再用少量套色色面组织画面。只有调用者声明 `composition-benefits-from-crop` 时，才启用强调裁切、尺度反差和纸面负形的规则。蓝色只是可选色彩锚点，不会固定出现；不会自动加入海浪、船只、富士山或日式场景。与广重方向相比，这里由轮廓、色块和选择性裁切产生图形张力；广重则更依赖天气、前中远景和空气渐变。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/katsushika-hokusai --direction package --subject "A red bicycle leaning against a brick wall" --output runs/style-v2/hokusai-job.json

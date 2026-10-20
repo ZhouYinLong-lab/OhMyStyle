@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: hokusai-graphic-contour-and-plane
 name: Hokusai graphic contour and plane
@@ -18,6 +18,13 @@ scope:
     - Keep the user-requested subject, count, setting, and palette authoritative; do not add waves, boats, Mount Fuji, or a red sun by default.
     - Borrow compositional principles only; do not recreate a named print, series layout, or recognizable landmark arrangement.
     - Strong cropping and contrast must clarify the requested subject rather than hide it.
+contexts:
+  - id: photographic-output
+    description: A photographic rendering without visible printmaking interpretation.
+  - id: soft-focus-painterly-output
+    description: A soft-focus painting treatment without crisp contour or printed planes.
+  - id: composition-benefits-from-crop
+    description: A crop, scale contrast, or broad paper-shaped opening clarifies the requested subject.
 pillars:
   - Make contour and silhouette establish the subject hierarchy before adding interior detail.
   - Build space from a few interlocking printed color planes and deliberate paper-shaped negative spaces.
@@ -55,6 +62,8 @@ rules:
   - id: decisive-crop-and-negative-space
     axis: space_and_edges
     importance: core
+    when_contexts:
+      - composition-benefits-from-crop
     applies_when: A crop, scale contrast, or open paper area can clarify the requested composition.
     instruction: Use an intentional crop, scale shift, or broad paper-shaped opening to direct attention and create graphic tension; keep a readable path through the requested scene and avoid reproducing a known layout.
     observable: Cropped forms feel purposeful, and unprinted or quiet areas balance the printed masses without leaving the subject ambiguous.
