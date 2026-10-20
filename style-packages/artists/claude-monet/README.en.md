@@ -24,7 +24,7 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 ## New direction (experimental)
 
-`art-direction.yaml` separates condition-specific light and color, adjacent color notes, selective atmospheric edges, surface-dependent marks, ordinary-motif composition, and a series-observation rule used only when the user requests multiple images. It focuses on how weather and light alter one observed moment; it is not a global pastel filter, uniform blur, or random stippling.
+`art-direction.yaml` uses direction format 2.1.0. It separates condition-specific light and color, adjacent color notes, selective atmospheric edges, surface-dependent marks, ordinary-motif composition, and a series-observation rule activated only when the caller declares `series-request`. It focuses on how weather and light alter one observed moment; it is not a global pastel filter, uniform blur, or random stippling.
 
 The distinction from the Sorolla direction is deliberate: Monet foregrounds weather- and time-dependent color, atmospheric distance, and adjacent color notes. Sorolla foregrounds a readable daylight direction, traceable bounce light, and clearer value grouping. Both can depict outdoor light, but they do not reduce to the same warm-bright or blue-violet filter.
 

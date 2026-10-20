@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: monet-changing-moment
 name: 莫奈：瞬时光色观察
@@ -20,6 +20,17 @@ scope:
     - 需要由用户场景或调用者上下文确定日光、天气或季节条件；不得擅自添加雾、雪或雨。
     - 单幅图表现一个时刻；只有用户明确要求组图时，才使用系列观察方法。
     - 大气边缘可以软化，但主体结构和重要空间关系仍需可读。
+contexts:
+  - id: daylight
+    description: 以自然日光为主要光源的场景。
+  - id: night
+    description: 夜间或以人工照明为主的场景。
+  - id: studio-spotlight
+    description: 以受控棚拍聚光灯为主的场景。
+  - id: photographic-output
+    description: 目标是无可见绘画痕迹的照片级输出。
+  - id: series-request
+    description: 用户明确要求同一主体的多幅时段或天气变体。
 pillars:
   - 把光线和天气的具体瞬间当作画面组织条件，而非铺在所有物体上的色彩滤镜。
   - 以相邻、可辨的冷暖色触组织综合色彩，让观看距离参与颜色融合。
@@ -131,6 +142,8 @@ rules:
   - id: monet-requested-series-variation
     axis: serial_observation
     importance: optional
+    when_contexts:
+      - series-request
     applies_when: 用户明确要求同一主体在多个时段或天气下的组图。
     instruction: >-
       仅在用户要求多幅变体时，保持主体、视点和主要构图关系稳定，只改变用户
