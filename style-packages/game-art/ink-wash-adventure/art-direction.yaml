@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: ink-wash-adventure-direction
+name: 水墨冒险游戏美术
+base_package: game-art/ink-wash-adventure
+scope:
+  medium: hand-painted ink-and-wash game environment simulation
+  representation: stylized
+  description: 以墨线、洗染、留白、有限朱色与清晰前中后景组织可探索画面；本包控制游戏媒介与水墨表现，不固定旅人、桥、神社或任何具体故事。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory traveler, bridge, shrine, village, or named game world
+pillars:
+- 以墨线、洗染、留白、有限朱色与清晰前中后景组织可探索画面；本包控制游戏媒介与水墨表现，不固定旅人、桥、神社或任何具体故事。
+- 'composition: layered game-environment depth with a readable route or focal opening; asymmetrical masses
+  balanced by paper space'
+- 'palette: warm paper, charcoal, diluted earth, indigo, and selective vermilion; color accents guide attention
+  rather than recolor the whole scene'
+- 'lighting: quality: atmospheric wash with ink-weight contrast; behavior: foreground is legible; distant forms
+  dissolve into paper and wash'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: layered game-environment
+    depth with a readable route or focal opening; asymmetrical masses balanced by paper space. Preserve the
+    user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: layered game-environment
+    depth with a readable route or focal opening; asymmetrical masses balanced by paper space.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: layered
+    game-environment depth with a readable route or focal opening; asymmetrical masses balanced by paper space.'
+  evidence:
+    source_ids:
+    - source-ink-wash-adventure-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: warm paper, charcoal, diluted earth,
+    indigo, and selective vermilion; color accents guide attention rather than recolor the whole scene. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: warm paper, charcoal, diluted
+    earth, indigo, and selective vermilion; color accents guide attention rather than recolor the whole scene.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    warm paper, charcoal, diluted earth, indigo, and selective vermilion; color accents guide attention rather
+    than recolor the whole scene.'
+  evidence:
+    source_ids:
+    - source-ink-wash-adventure-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: atmospheric wash with ink-weight contrast;
+    behavior: foreground is legible; distant forms dissolve into paper and wash. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: atmospheric wash with
+    ink-weight contrast; behavior: foreground is legible; distant forms dissolve into paper and wash.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: atmospheric wash
+    with ink-weight contrast; behavior: foreground is legible; distant forms dissolve into paper and wash.'
+  evidence:
+    source_ids:
+    - source-ink-wash-adventure-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: absorbent
+    paper, brush edge, mineral pigment, and layered wash; edges: variable ink pressure from firm focal contours
+    to soft distant marks. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    absorbent paper, brush edge, mineral pigment, and layered wash; edges: variable ink pressure from firm
+    focal contours to soft distant marks.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: absorbent paper, brush edge, mineral pigment, and layered wash; edges: variable ink pressure from
+    firm focal contours to soft distant marks.'
+  evidence:
+    source_ids:
+    - source-ink-wash-adventure-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium
+    and directional; placement: natural materials, contour transitions, and water or mist edges. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium and directional; placement: natural materials, contour transitions, and water or mist edges.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium and directional; placement: natural materials, contour transitions, and water or mist edges.'
+  evidence:
+    source_ids:
+    - source-ink-wash-adventure-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-ink-wash-adventure-primary-source
+  kind: primary
+  base_asset_id: ink-wash-adventure-primary-source
+execution:
+  route: text_only
+  must:
+  - Establish the user-requested subject and a readable traversable spatial hierarchy.
+  - Use varied ink pressure to separate focal contours from distant silhouettes.
+  - Layer diluted washes, leaving paper gaps for light and atmosphere.
+  - Add limited accent colors only where the subject or navigation hierarchy needs them.
+  - painted ink-and-wash game-art medium, not pixel art
+  - playable spatial readability survives subject changes
+  - no fixed narrative object or named game world
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - pixel grid, plastic 3D, glossy anime render, or fixed game screenshot
+  - mandatory bridge, shrine, traveler, or named character
+  - copied composition
+  - named character or branded asset
+  - mandatory traveler, bridge, shrine, village, or named game world
+  - The package transfers a visual language and game-space logic, not content from a source game.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
