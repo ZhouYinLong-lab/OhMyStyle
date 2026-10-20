@@ -91,7 +91,7 @@ figures, text, trademark, or logo.
 
 ## New architecture: hand-drawn grid field (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is limited to nonfigurative fields: fine pencil-like lines or restrained stripes organize a low-contrast surface, slight hand-made deviations remain visible, and thin washes and support texture reward close viewing. This differs from Bauhaus's high-contrast basic forms and functional composition; do not use it to turn a requested person or scene into a “grid style.” Explicitly declare the `abstract-field` context.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is limited to nonfigurative fields: fine pencil-like lines or restrained stripes organize a low-contrast surface, with slight hand-made deviations. Explicitly declare `abstract-field`; add `close-view-of-painted-surface` only when the requested framing should emphasize thin washes and support texture at close range. This differs from Bauhaus's high-contrast basic forms and functional composition; do not use it to turn a requested person or scene into a “grid style.”
 
 ```powershell
 python tools/compile-style.py style-packages/artists/agnes-martin --direction package --context abstract-field --subject "A quiet nonfigurative square field of pale blue and warm gray" --output runs/style-v2/agnes-martin-job.json

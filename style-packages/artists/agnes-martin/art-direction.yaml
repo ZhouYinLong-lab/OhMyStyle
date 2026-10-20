@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: agnes-martin-hand-drawn-grid-field
 name: Agnes Martin hand-drawn grid field
@@ -15,6 +15,15 @@ scope:
   limitations:
     - Keep the work nonfigurative; a user request for a literal object or scene is outside this direction's scope.
     - Avoid turning the grid into an immaculate digital interface or a bold Bauhaus layout.
+contexts:
+  - id: abstract-field
+    description: The user requests a nonfigurative abstract field.
+  - id: figurative-scene
+    description: The user requests a recognizable person, object, or scene.
+  - id: high-contrast-functional-poster
+    description: The user requests a high-contrast poster or functional graphic layout.
+  - id: close-view-of-painted-surface
+    description: The user requests a close view where fine marks and support texture can be inspected.
 pillars:
   - Let repeated lines establish a quiet all-over field without a focal icon.
   - Keep the grid delicate, human-made, and slightly contingent rather than mechanically perfect.
@@ -51,6 +60,8 @@ rules:
   - id: intimate-surface-and-viewing-distance
     axis: surface
     importance: supporting
+    when_contexts:
+      - close-view-of-painted-surface
     applies_when: always
     instruction: Let thin paint or wash, pencil traces, and the support remain subtly perceptible; tune line density so the field feels calm from afar and intimate up close.
     observable: The surface has a fragile handmade quality without a global grain effect, and no single mark becomes a pictorial object.

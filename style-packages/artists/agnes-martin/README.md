@@ -72,7 +72,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 新架构：手绘网格色域（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅适用于非具象的抽象色域：用细铅笔线或克制的平行线组织低对比画面，保留手工线条的轻微偏差，让薄涂色层与画布质地在近看时显现。它与包豪斯的高对比基本形和功能构成不同；不能拿来把人物、场景转成“网格风”。需显式声明 `abstract-field` 上下文。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅适用于非具象的抽象色域：用细铅笔线或克制的平行线组织低对比画面，保留手工线条的轻微偏差。需显式声明 `abstract-field` 上下文；只有调用者再声明 `close-view-of-painted-surface` 时，才启用强调薄涂色层和支撑材质细节的近看规则。它与包豪斯的高对比基本形和功能构成不同；不能拿来把人物、场景转成“网格风”。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/agnes-martin --direction package --context abstract-field --subject "A quiet nonfigurative square field of pale blue and warm gray" --output runs/style-v2/agnes-martin-job.json
