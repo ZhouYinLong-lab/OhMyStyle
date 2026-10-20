@@ -99,4 +99,6 @@ python tools/compile-style.py style-packages/artists/georgia-okeeffe --direction
 
 This direction remains experimental. The Met and National Gallery of Art material on enlarged forms, progressive zoom, and simplified color and shape supports these observations; transfer beyond natural forms remains pending.
 
+## Legacy and direction comparison
 
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

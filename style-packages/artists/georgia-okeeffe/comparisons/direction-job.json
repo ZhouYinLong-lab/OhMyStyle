@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "georgia-okeeffe",
+    "name": "乔治亚·欧姬芙",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\georgia-okeeffe"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A single red pear, seen close enough to reveal its curved shoulder and stem",
+  "prompt": "USER SUBJECT: A single red pear, seen close enough to reveal its curved shoulder and stem\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [selected-form-fills-the-view] Select one user-named form or feature and bring it close to the picture plane; crop only where the remaining silhouette and internal cues still identify the requested subject.\n- [simplify-to-structural-color-shapes] Reduce secondary detail into a small number of broad color shapes; use smooth, controlled transitions along the form where they clarify curvature, and retain stronger local contrast only at the structural center or overlap.\n- [form-following-negative-space] Shape the surrounding quiet areas around the selected form's curves, openings, and overlaps; keep the background simple but related in color and edge behavior to the subject.\n- [close-form-identity-and-simplification] Let the selected contour, simplified color shapes, and surrounding negative space all describe the same requested form; retain at least one clear identity cue as the image approaches abstraction.\nREQUIREMENT: Preserve the selected user subject and any requested view or aspect ratio.\nREQUIREMENT: Enlarge one selected form only when close-observation context is declared.\nREQUIREMENT: Simplify color and detail while keeping the subject identifiable.\nREQUIREMENT: Make surrounding negative space follow the form's structure.",
+  "negative_prompt": "unsolicited macro crops, anonymous organic blobs, and hidden subject identity\nall-over color filters, airbrush haze, and decorative detail accumulation\nuniform dark outlines, detached gradient backdrops, and loss of silhouette\nadding flowers, bones, shells, desert rocks, or other signature subjects unless requested\nforcing a close crop when the user asks for a full scene or complete object\ngeneric pastel wash, uniform gradients, and copied named-work compositions",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "okeeffe-close-observation-and-form",
+    "name": "O'Keeffe close observation and form",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\georgia-okeeffe\\art-direction.yaml",
+    "sha256": "a7ea82f92b13bc3e9b846e7ad53411587ea9f66280a8df28d5bb9192b58d4067",
+    "active_rule_ids": [
+      "selected-form-fills-the-view",
+      "simplify-to-structural-color-shapes",
+      "form-following-negative-space"
+    ],
+    "contexts": [
+      "close-observation"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Preserve the selected user subject and any requested view or aspect ratio.",
+      "Enlarge one selected form only when close-observation context is declared.",
+      "Simplify color and detail while keeping the subject identifiable.",
+      "Make surrounding negative space follow the form's structure."
+    ],
+    "avoid": [
+      "adding flowers, bones, shells, desert rocks, or other signature subjects unless requested",
+      "forcing a close crop when the user asks for a full scene or complete object",
+      "generic pastel wash, uniform gradients, and copied named-work compositions"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "An opt-in close-observation direction for one user-selected form. It enlarges a distinctive contour or internal structure toward the frame, simplifies color and surrounding detail, and lets the subject approach abstraction without losing its identity.",
+      "required_contexts": [
+        "close-observation"
+      ],
+      "incompatible_contexts": [
+        "distant-environment-view",
+        "crowded-multi-subject-scene",
+        "photorealistic-output"
+      ],
+      "limitations": [
+        "The user chooses the subject and which part to examine; do not default to flowers, bones, shells, or desert motifs.",
+        "Preserve enough identifying structure for the requested object, plant, rock, architecture, or portrait to remain legible.",
+        "Close cropping is an opt-in framing choice; do not force it onto a requested wide scene or complete-object view."
+      ]
+    },
+    "rules": [
+      {
+        "id": "selected-form-fills-the-view",
+        "axis": "scale_and_composition",
+        "importance": "core",
+        "applies_when": "The caller requests close observation or an enlarged detail.",
+        "instruction": "Select one user-named form or feature and bring it close to the picture plane; crop only where the remaining silhouette and internal cues still identify the requested subject.",
+        "observable": "The chosen form occupies most of the frame and reads through a distinctive contour or structure rather than through surrounding context.",
+        "reject_when": "The crop hides essential requested information, invents an unrequested feature, or turns the subject into an anonymous texture.",
+        "evidence": {
+          "source_ids": [
+            "okeeffe-met-black-iris",
+            "okeeffe-nga-jack-in-pulpit"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "unsolicited macro crops, anonymous organic blobs, and hidden subject identity"
+      },
+      {
+        "id": "simplify-to-structural-color-shapes",
+        "axis": "palette_and_form",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Reduce secondary detail into a small number of broad color shapes; use smooth, controlled transitions along the form where they clarify curvature, and retain stronger local contrast only at the structural center or overlap.",
+        "observable": "Large forms remain calm and legible, and color transitions explain the subject's volume instead of tinting the entire image.",
+        "reject_when": "A global pastel filter replaces observed color, gradients erase the form's structure, or decorative detail competes with the selected subject.",
+        "evidence": {
+          "source_ids": [
+            "okeeffe-met-black-iris",
+            "okeeffe-nga-jack-in-pulpit"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "all-over color filters, airbrush haze, and decorative detail accumulation"
+      },
+      {
+        "id": "form-following-negative-space",
+        "axis": "space_and_edges",
+        "importance": "core",
+        "applies_when": "The selected form has a distinctive outer contour or opening.",
+        "instruction": "Shape the surrounding quiet areas around the selected form's curves, openings, and overlaps; keep the background simple but related in color and edge behavior to the subject.",
+        "observable": "The negative space helps reveal the form's proportions and direction, while the outer edge remains distinct from the background.",
+        "reject_when": "Background becomes a generic gradient, the subject is outlined uniformly, or its silhouette dissolves into adjacent colors.",
+        "evidence": {
+          "source_ids": [
+            "okeeffe-met-black-iris",
+            "okeeffe-nga-jack-in-pulpit"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform dark outlines, detached gradient backdrops, and loss of silhouette"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "close-form-identity-and-simplification",
+        "rule_ids": [
+          "selected-form-fills-the-view",
+          "simplify-to-structural-color-shapes",
+          "form-following-negative-space"
+        ],
+        "instruction": "Let the selected contour, simplified color shapes, and surrounding negative space all describe the same requested form; retain at least one clear identity cue as the image approaches abstraction.",
+        "observable": "The subject feels enlarged and distilled, yet its identifying structure remains visible and the empty areas actively shape the composition."
+      }
+    ],
+    "sources": [
+      {
+        "id": "okeeffe-met-black-iris",
+        "kind": "museum_object_description",
+        "url": "https://www.metmuseum.org/art/collection/search/489813"
+      },
+      {
+        "id": "okeeffe-nga-jack-in-pulpit",
+        "kind": "museum_educational_analysis",
+        "url": "https://www.nga.gov/educational-resources/jack-in-pulpit-georgia-okeeffe"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "a7ea82f92b13bc3e9b846e7ad53411587ea9f66280a8df28d5bb9192b58d4067",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

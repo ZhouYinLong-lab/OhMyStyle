@@ -80,4 +80,6 @@ python tools/compile-style.py style-packages/artists/georgia-okeeffe --direction
 
 方向仍处于实验状态。大都会艺术博物馆和美国国家美术馆关于欧姬芙放大花形、逐步推近并简化色形的资料支持这些观察；非植物主体的迁移效果仍待评审。
 
+## 新旧架构视觉对照
 
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。
