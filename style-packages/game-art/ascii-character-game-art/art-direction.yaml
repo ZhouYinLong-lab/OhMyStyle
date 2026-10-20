@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: literal-ascii-grid
 name: Literal ASCII character grid
@@ -7,13 +7,21 @@ scope:
   medium: ascii_glyph_grid
   representation: stylized
   description: Construct the complete game scene from literal printable ASCII glyphs placed in a fixed grid, then rasterize each glyph cell deterministically.
-  required_contexts: []
+  required_contexts:
+    - literal-ascii-grid-construction
   incompatible_contexts:
     - image-repainting
     - unicode-art
   limitations:
     - The selected character set does not include Chinese, block-drawing characters, or emoji.
     - Do not ask a standard image generator to repaint the grid or add pictorial detail.
+contexts:
+  - id: literal-ascii-grid-construction
+    description: The user requests a scene built literally from printable ASCII characters in fixed-width rows and columns.
+  - id: image-repainting
+    description: The user asks an image model to repaint or embellish a character grid.
+  - id: unicode-art
+    description: The user requests Unicode block art, non-ASCII glyphs, or emoji.
 pillars:
   - Every visible scene shape is made from literal characters.
   - Fixed cells and glyph density organize silhouettes, space, and depth.
@@ -22,6 +30,8 @@ rules:
   - id: ascii-literal-construction
     axis: process
     importance: core
+    when_contexts:
+      - literal-ascii-grid-construction
     applies_when: always
     instruction: Create a row-by-row character source first, then rasterize it in a fixed grid with a monospaced font.
     observable: Every scene mark can be traced to a specific row, column, and glyph.
@@ -36,6 +46,8 @@ rules:
   - id: ascii-density-hierarchy
     axis: value
     importance: core
+    when_contexts:
+      - literal-ascii-grid-construction
     applies_when: always
     instruction: Use glyph density, negative space, and permitted foreground brightness to distinguish the subject, paths, and distance.
     observable: The main subject reads at thumbnail size, and enlarged regions remain composed of separate character cells.
@@ -49,6 +61,8 @@ rules:
   - id: ascii-grid-alignment
     axis: layout
     importance: core
+    when_contexts:
+      - literal-ascii-grid-construction
     applies_when: always
     instruction: Pad every row consistently to the fixed column count and align each glyph to one cell; do not vary font size locally to fake depth.
     observable: Row and column coordinates remain stable, while spatial differences come from symbols and layout.

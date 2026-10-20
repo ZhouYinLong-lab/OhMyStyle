@@ -111,10 +111,10 @@ figures, text, trademark, or logo.
 
 ## New architecture: literal ASCII grid direction (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) expresses strict character construction as compiler-readable rules: first produce a fixed-size source containing printable ASCII only, then rasterize each cell with a monospaced font. This direction remains experimental; an image-generation model must not repaint the grid. The new direction and legacy default coexist; select the new one explicitly with `--direction package`.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 to express strict character construction as compiler-readable rules: first produce a fixed-size source containing printable ASCII only, then rasterize each cell with a monospaced font. Callers must declare `literal-ascii-grid-construction`, which requires every scene shape to be composed from literal characters in the grid and forbids image-model repainting. The new direction and legacy default coexist; select the new one explicitly with `--direction package` and this context.
 
 ```powershell
-python tools/compile-style.py style-packages/game-art/ascii-character-game-art --direction package --subject "One explorer holding a torch inside a cavern" --output runs/style-v2/ascii-job.json
+python tools/compile-style.py style-packages/game-art/ascii-character-game-art --direction package --context literal-ascii-grid-construction --subject "One explorer holding a torch inside a cavern" --output runs/style-v2/ascii-job.json
 python tools/render-ascii-grid.py runs/style-v2/ascii-job.json --source style-packages/game-art/ascii-character-game-art/examples/ascii-cave-grid.txt --font C:/Windows/Fonts/consola.ttf --output runs/style-v2/ascii-cave-render
 ```
 

@@ -85,10 +85,10 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 新架构：严格 ASCII 网格方向（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 把严格字符构建写成编译器可读的方向规则：先输出固定行列的纯 ASCII 字符源，再逐格用等宽字体栅格化。它仍处于实验状态；图像生成模型不能参与重绘。新版方向与旧版默认入口并存，只有显式指定 `--direction package` 才会使用它。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，把严格字符构建写成编译器可读的方向规则：先输出固定行列的纯 ASCII 字符源，再逐格用等宽字体栅格化。调用者必须声明 `literal-ascii-grid-construction`；这要求每个场景形状都由字符网格里的字面字符堆叠出来，不允许图像生成模型重绘。新版方向与旧版默认入口并存，显式指定 `--direction package` 并传入该上下文才会启用。
 
 ```powershell
-python tools/compile-style.py style-packages/game-art/ascii-character-game-art --direction package --subject "One explorer holding a torch inside a cavern" --output runs/style-v2/ascii-job.json
+python tools/compile-style.py style-packages/game-art/ascii-character-game-art --direction package --context literal-ascii-grid-construction --subject "One explorer holding a torch inside a cavern" --output runs/style-v2/ascii-job.json
 python tools/render-ascii-grid.py runs/style-v2/ascii-job.json --source style-packages/game-art/ascii-character-game-art/examples/ascii-cave-grid.txt --font C:/Windows/Fonts/consola.ttf --output runs/style-v2/ascii-cave-render
 ```
 
