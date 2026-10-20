@@ -1,0 +1,196 @@
+schema_version: 2.1.0
+status: experimental
+id: photomontage-direction
+name: 拼贴蒙太奇
+base_package: techniques/photomontage
+scope:
+  medium: photographic montage and mixed-media print
+  representation: stylized
+  description: 以摄影片段、遮罩、负片叠合、硬边几何和尺度错置构成新的平面空间；本包描述蒙太奇的构成机制，不固定人物、建筑或叙事。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - mandatory hand, staircase, machine, landscape, or human figure
+  - copied source photograph, recognizable person, or protected layout
+  - random scrapbook decoration without compositional intent
+  - sticker collage, scrapbook decoration, and seamless composite photography
+  - fixed surreal objects or a mandatory retro paper look
+pillars:
+- 以摄影片段、遮罩、负片叠合、硬边几何和尺度错置构成新的平面空间；本包描述蒙太奇的构成机制，不固定人物、建筑或叙事。
+- 'differentiation: photographic fragments and masking are structural, not decorative; hard seams, scale discontinuity,
+  and darkroom-like overlap; controlled graphic counterforms around a limited set of source roles'
+- 'medium: photographic montage and mixed-media print'
+- 'composition: separate photographic fragments arranged as a deliberate spatial argument; hard-edged cuts,
+  overlaps, interrupted contours, and controlled scale jumps; asymmetrical balance supported by diagonals and
+  flat geometric planes'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: photographic
+    fragments and masking are structural, not decorative; hard seams, scale discontinuity, and darkroom-like
+    overlap; controlled graphic counterforms around a limited set of source roles. Do not collapse the direction
+    into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: photographic fragments and masking
+    are structural, not decorative; hard seams, scale discontinuity, and darkroom-like overlap; controlled
+    graphic counterforms around a limited set of source roles.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: photographic
+    fragments and masking are structural, not decorative; hard seams, scale discontinuity, and darkroom-like
+    overlap; controlled graphic counterforms around a limited set of source roles.'
+  evidence:
+    source_ids:
+    - source-photomontage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: photographic
+    montage and mixed-media print.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: photographic
+    montage and mixed-media print.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    photographic montage and mixed-media print.'
+  evidence:
+    source_ids:
+    - source-photomontage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: separate photographic
+    fragments arranged as a deliberate spatial argument; hard-edged cuts, overlaps, interrupted contours, and
+    controlled scale jumps; asymmetrical balance supported by diagonals and flat geometric planes. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: separate photographic
+    fragments arranged as a deliberate spatial argument; hard-edged cuts, overlaps, interrupted contours, and
+    controlled scale jumps; asymmetrical balance supported by diagonals and flat geometric planes.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: separate
+    photographic fragments arranged as a deliberate spatial argument; hard-edged cuts, overlaps, interrupted
+    contours, and controlled scale jumps; asymmetrical balance supported by diagonals and flat geometric planes.'
+  evidence:
+    source_ids:
+    - source-photomontage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: source photographs may remain monochrome,
+    sepia, or selectively colored; one restrained accent color can organize the fragments without becoming
+    a filter; paper ground and image layers retain distinct tonal roles. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: source photographs may remain
+    monochrome, sepia, or selectively colored; one restrained accent color can organize the fragments without
+    becoming a filter; paper ground and image layers retain distinct tonal roles.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    source photographs may remain monochrome, sepia, or selectively colored; one restrained accent color can
+    organize the fragments without becoming a filter; paper ground and image layers retain distinct tonal roles.'
+  evidence:
+    source_ids:
+    - source-photomontage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: graphic printed contrast rather than continuous
+    scene illumination; behavior: fragment lighting may intentionally disagree when the montage requires it.
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: graphic printed contrast
+    rather than continuous scene illumination; behavior: fragment lighting may intentionally disagree when
+    the montage requires it.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: graphic printed
+    contrast rather than continuous scene illumination; behavior: fragment lighting may intentionally disagree
+    when the montage requires it.'
+  evidence:
+    source_ids:
+    - source-photomontage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: paper,
+    ink, halftone, and photographic grain remain visibly layered; edges: cut, masked, pasted, or slightly misregistered
+    rather than seamlessly blended. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    paper, ink, halftone, and photographic grain remain visibly layered; edges: cut, masked, pasted, or slightly
+    misregistered rather than seamlessly blended.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: paper, ink, halftone, and photographic grain remain visibly layered; edges: cut, masked, pasted,
+    or slightly misregistered rather than seamlessly blended.'
+  evidence:
+    source_ids:
+    - source-photomontage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium
+    and localized by source fragment; placement: paper fibers, ink spread, photographic grain, halftone, and
+    masking edges. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium and localized by source fragment; placement: paper fibers, ink spread, photographic grain, halftone,
+    and masking edges.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium and localized by source fragment; placement: paper fibers, ink spread, photographic grain,
+    halftone, and masking edges.'
+  evidence:
+    source_ids:
+    - source-photomontage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among differentiation, medium, composition consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-photomontage-primary-source
+  kind: primary
+  base_asset_id: photomontage-primary-source
+execution:
+  route: text_only
+  must:
+  - Translate the user's subject into a small set of image fragments and geometric supports.
+  - Use masking, cropping, overlap, and scale change instead of adding many independent objects.
+  - Keep cuts and seams legible; avoid smoothing every boundary into one synthetic scene.
+  - Establish the main diagonal or counterform before adding grain, halftone, or paper wear.
+  - Check that every fragment is relevant, new, and free of text or protected imagery.
+  - Start with the user's subject and choose only the fragments required to express it.
+  - 'Separate source roles: figure, object, architecture, texture, and geometric counterform.'
+  - Cut or mask fragments with visible but controlled boundaries; preserve meaningful scale changes.
+  avoid:
+  - mandatory objects, characters, locations, or narrative
+  - seamless 3D render, random scrapbook, glossy gradient, or fake film poster
+  - seamless realistic lighting across incompatible fragments
+  - random clutter, sticker-like decoration, or a fixed surreal prop list
+  - readable text, logos, and copied source layouts
+  - sticker collage, scrapbook decoration, and seamless composite photography
+  - fixed surreal objects or a mandatory retro paper look
+  - mandatory hand, staircase, machine, landscape, or human figure
+  - copied source photograph, recognizable person, or protected layout
+  - random scrapbook decoration without compositional intent
