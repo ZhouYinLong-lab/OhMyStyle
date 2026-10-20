@@ -37,12 +37,12 @@ and must never be added as default content.
 
 ## New direction (experimental)
 
-The new direction has five reviewable parts: discrete visible dots, form and contours built from dot fields, colors kept separate up close and optically mixed at normal viewing distance, dot size and spacing adapted to material and depth, and strict preservation of the requested subject. The main difference from the Impressionism movement package is that Impressionism emphasizes fast, freely varying marks, while Pointillism deliberately separates color and organizes dot fields. It also differs from a printed halftone screen; the image should not collapse into a uniform grid or pixel pattern.
+The new direction uses format 2.1.0 and has five reviewable parts: discrete visible dots, form and contours built from dot fields, colors kept separate up close and optically mixed at normal viewing distance, dot size and spacing adapted to material and depth, and strict preservation of the requested subject. The adjacent-color-pair rule activates only when the caller declares `chromatic-light-contrast`; the core dot-organization rules remain active otherwise. The main difference from the Impressionism movement package is that Impressionism emphasizes fast, freely varying marks, while Pointillism deliberately separates color and organizes dot fields. It also differs from a printed halftone screen; the image should not collapse into a uniform grid or pixel pattern.
 
 Research is grounded in The Met's discussion of optical mixture and the distinction between Pointillism and Divisionism, and the Art Institute of Chicago's explanation of dots forming light, shadow, and contour. The rules remain experimental and the legacy prompt remains the default. Compile the new direction explicitly:
 
 ```powershell
-python tools/compile-style.py style-packages/movements/pointillism --direction package --subject "A red ceramic teapot and two lemons on a wooden table, warm window light" --output runs/pointillism-v2-job.json
+python tools/compile-style.py style-packages/movements/pointillism --direction package --context chromatic-light-contrast --subject "A red ceramic teapot and two lemons on a wooden table, warm window light" --output runs/pointillism-v2-job.json
 ```
 
 Review the result both close up and at normal viewing distance: dots should remain separate nearby and form coherent color, light, and subject from farther away. Repeat with a different material to check that dot size, density, and color relationships adapt to the object.

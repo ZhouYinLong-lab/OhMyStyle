@@ -31,12 +31,12 @@
 
 ## 新版方向（实验）
 
-新版把点彩技法拆成五个检查点：可辨认的分离色点、由点群形成的形体和轮廓、近看分色而远看综合色、随距离和材质变化的点径与间距，以及用户主体保持。它与印象主义流派包的主要差别是：印象主义强调迅速、自由变化的现场笔触；点彩要求更有计划地分解颜色并组织点群。它也不同于半色调印刷，不能将画面处理成均匀网版或像素网格。
+新版使用方向格式 2.1.0，把点彩技法拆成五个检查点：可辨认的分离色点、由点群形成的形体和轮廓、近看分色而远看综合色、随距离和材质变化的点径与间距，以及用户主体保持。只有调用者声明 `chromatic-light-contrast` 时，才会启用相邻色对规则；其余点彩组织规则始终保留。它与印象主义流派包的主要差别是：印象主义强调迅速、自由变化的现场笔触；点彩要求更有计划地分解颜色并组织点群。它也不同于半色调印刷，不能将画面处理成均匀网版或像素网格。
 
 研究依据包括大都会艺术博物馆对光学混色与点彩/分色主义的区分，以及芝加哥艺术博物馆对色点如何构成光、阴影和轮廓的说明。规则仍为实验状态，默认旧版提示不变；新版需显式编译：
 
 ```powershell
-python tools/compile-style.py style-packages/movements/pointillism --direction package --subject "A red ceramic teapot and two lemons on a wooden table, warm window light" --output runs/pointillism-v2-job.json
+python tools/compile-style.py style-packages/movements/pointillism --direction package --context chromatic-light-contrast --subject "A red ceramic teapot and two lemons on a wooden table, warm window light" --output runs/pointillism-v2-job.json
 ```
 
 评审时同时查看近距离和正常观看距离：近看确认色点彼此分离，远看确认色点形成清晰综合色面、光照和主体。至少再换一个不同材质主体，确认点的尺度、密度和色彩关系会随对象改变。
