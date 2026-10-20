@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: miniature-diorama-game-art-direction
+name: 微缩模型场景游戏美术
+base_package: game-art/miniature-diorama-game-art
+scope:
+  medium: 哑光三维模型; 纸板、木材、石块和软质地形的简化暗示; 圆润边缘
+  representation: stylized
+  description: 把游戏环境设计成具有微缩模型尺度的立体场景，依靠圆润造型、柔和阴影和小物件比例建立亲切但不幼稚的空间。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - unclear_scale
+  - giant_photo_texture
+  - plastic_toy_gloss
+  - copied_scene
+pillars:
+- 把游戏环境设计成具有微缩模型尺度的立体场景，依靠圆润造型、柔和阴影和小物件比例建立亲切但不幼稚的空间。
+- 'medium: 哑光三维模型; 纸板、木材、石块和软质地形的简化暗示; 圆润边缘'
+- 'composition: 中心景物像被安置在可观察的模型空间; 小路、平台和门洞形成可读路径; 保留模型周围的安静背景'
+- 'palette: 苔绿、暖棕、米白、灰蓝和一点篝火橙; 整体中等饱和且有温度; 亮色只用于情绪焦点'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 哑光三维模型;
+    纸板、木材、石块和软质地形的简化暗示; 圆润边缘.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 哑光三维模型;
+    纸板、木材、石块和软质地形的简化暗示; 圆润边缘.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    哑光三维模型; 纸板、木材、石块和软质地形的简化暗示; 圆润边缘.'
+  evidence:
+    source_ids:
+    - source-miniature-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 中心景物像被安置在可观察的模型空间;
+    小路、平台和门洞形成可读路径; 保留模型周围的安静背景. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 中心景物像被安置在可观察的模型空间;
+    小路、平台和门洞形成可读路径; 保留模型周围的安静背景.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 中心景物像被安置在可观察的模型空间;
+    小路、平台和门洞形成可读路径; 保留模型周围的安静背景.'
+  evidence:
+    source_ids:
+    - source-miniature-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 苔绿、暖棕、米白、灰蓝和一点篝火橙; 整体中等饱和且有温度; 亮色只用于情绪焦点.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 苔绿、暖棕、米白、灰蓝和一点篝火橙; 整体中等饱和且有温度;
+    亮色只用于情绪焦点.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    苔绿、暖棕、米白、灰蓝和一点篝火橙; 整体中等饱和且有温度; 亮色只用于情绪焦点.'
+  evidence:
+    source_ids:
+    - source-miniature-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 大面积柔光和接触阴影; 小型光源给局部温暖; 阴影不黑不脏. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 大面积柔光和接触阴影; 小型光源给局部温暖; 阴影不黑不脏.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 大面积柔光和接触阴影; 小型光源给局部温暖;
+    阴影不黑不脏.'
+  evidence:
+    source_ids:
+    - source-miniature-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 表面有手作但不粗糙的质感;
+    材料边界清楚. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 表面有手作但不粗糙的质感;
+    材料边界清楚.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    表面有手作但不粗糙的质感; 材料边界清楚.'
+  evidence:
+    source_ids:
+    - source-miniature-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 近景小物细节有限且有尺度;
+    远景保持简化. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 近景小物细节有限且有尺度;
+    远景保持简化.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    近景小物细节有限且有尺度; 远景保持简化.'
+  evidence:
+    source_ids:
+    - source-miniature-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-miniature-diorama-game-art-primary-source
+  kind: primary
+  base_asset_id: miniature-diorama-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先建立微缩尺度和相机
+  - 搭出路径和核心场景
+  - 再加入少量可交互小物
+  - 用接触阴影确认落地关系
+  - 模型尺度贯穿全场景
+  - 空间可以被当作游戏关卡理解
+  - 不复制来源作品的角色和建筑
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - unclear_scale
+  - giant_photo_texture
+  - plastic_toy_gloss
+  - copied_scene
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
