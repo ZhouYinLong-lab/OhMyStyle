@@ -4,9 +4,11 @@ same_family:
   - techniques/mixed-media-collage
 complements:
   - artists/max-ernst
-conflicts:
-  - presets/clean-vector-flat
+conflicts: []
 distinctives:
   - 压力与方向造成的材料转印
   - 纹理层与未处理纸面并置
   - 物理粉末感而非数字噪声
+avoid_overlap:
+  - 'Avoid blending this direction with the unregistered contrast reference: presets/clean-vector-flat.'
+supersedes: []
