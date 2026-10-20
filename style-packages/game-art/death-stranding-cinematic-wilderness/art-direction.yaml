@@ -1,0 +1,152 @@
+schema_version: 2.1.0
+status: experimental
+id: death-stranding-cinematic-wilderness-direction
+name: 电影化荒原连接游戏美术
+base_package: game-art/death-stranding-cinematic-wilderness
+scope:
+  medium: 电影化三维环境; 自然地形细节与克制后期; 真实材质和大气透视优先
+  representation: stylized
+  description: 以极大负空间、风雨荒原、细小人物尺度和克制的电影化自然光构成孤独但不压抑的环境叙事。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - hero_poster_pose
+  - copied_equipment
+  - fantasy_monster
+  - oversaturated_grade
+pillars:
+- 以极大负空间、风雨荒原、细小人物尺度和克制的电影化自然光构成孤独但不压抑的环境叙事。
+- 'medium: 电影化三维环境; 自然地形细节与克制后期; 真实材质和大气透视优先'
+- 'composition: 宽阔地形和低地平线制造巨大尺度; 人物、道路或设施作为极小尺度锚点; 留白是环境结构而非空洞'
+- 'palette: 苔绿、石板蓝、湿土棕、锈橙和云白组成低饱和色组; 暖色只在人物、设施或少量地表出现; 不把所有颜色压成灰'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 电影化三维环境;
+    自然地形细节与克制后期; 真实材质和大气透视优先.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 电影化三维环境;
+    自然地形细节与克制后期; 真实材质和大气透视优先.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    电影化三维环境; 自然地形细节与克制后期; 真实材质和大气透视优先.'
+  evidence:
+    source_ids:
+    - source-death-stranding-cinematic-wilderness-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 宽阔地形和低地平线制造巨大尺度;
+    人物、道路或设施作为极小尺度锚点; 留白是环境结构而非空洞. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 宽阔地形和低地平线制造巨大尺度;
+    人物、道路或设施作为极小尺度锚点; 留白是环境结构而非空洞.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 宽阔地形和低地平线制造巨大尺度;
+    人物、道路或设施作为极小尺度锚点; 留白是环境结构而非空洞.'
+  evidence:
+    source_ids:
+    - source-death-stranding-cinematic-wilderness-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 苔绿、石板蓝、湿土棕、锈橙和云白组成低饱和色组; 暖色只在人物、设施或少量地表出现;
+    不把所有颜色压成灰. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 苔绿、石板蓝、湿土棕、锈橙和云白组成低饱和色组;
+    暖色只在人物、设施或少量地表出现; 不把所有颜色压成灰.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    苔绿、石板蓝、湿土棕、锈橙和云白组成低饱和色组; 暖色只在人物、设施或少量地表出现; 不把所有颜色压成灰.'
+  evidence:
+    source_ids:
+    - source-death-stranding-cinematic-wilderness-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 阴天、雨后或破云光作为主光; 光线柔和且方向可追踪; 远景对比度自然降低. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 阴天、雨后或破云光作为主光; 光线柔和且方向可追踪;
+    远景对比度自然降低.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 阴天、雨后或破云光作为主光; 光线柔和且方向可追踪;
+    远景对比度自然降低.'
+  evidence:
+    source_ids:
+    - source-death-stranding-cinematic-wilderness-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 湿草、泥、岩石、水和旧工业设施各有重量;
+    反射有限并服从粗糙度. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 湿草、泥、岩石、水和旧工业设施各有重量;
+    反射有限并服从粗糙度.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    湿草、泥、岩石、水和旧工业设施各有重量; 反射有限并服从粗糙度.'
+  evidence:
+    source_ids:
+    - source-death-stranding-cinematic-wilderness-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 地形纹理沿风向和侵蚀方向分布;
+    不使用粗重胶片噪点制造电影感. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 地形纹理沿风向和侵蚀方向分布;
+    不使用粗重胶片噪点制造电影感.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    地形纹理沿风向和侵蚀方向分布; 不使用粗重胶片噪点制造电影感.'
+  evidence:
+    source_ids:
+    - source-death-stranding-cinematic-wilderness-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-death-stranding-cinematic-wilderness-primary-source
+  kind: primary
+  base_asset_id: death-stranding-cinematic-wilderness-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定地形尺度和天气
+  - 再安排一条可读的路径或水系
+  - 放置极小尺度人造物
+  - 最后用空气透视收束远景
+  - 自然尺度先于人物戏剧
+  - 天气改变空间但不吞没主体
+  - 不得复制具体装备、角色、地标或构图
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - hero_poster_pose
+  - copied_equipment
+  - fantasy_monster
+  - oversaturated_grade
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
