@@ -1,0 +1,154 @@
+schema_version: 2.1.0
+status: experimental
+id: ori-luminous-forest-direction
+name: 荧光森林手绘游戏美术
+base_package: game-art/ori-luminous-forest
+scope:
+  medium: 手绘二维背景与柔和角色剪影; 笔触沿植物生长和水流方向; 层叠绘画保持平台空间可读
+  representation: stylized
+  description: 以手绘二维森林、流动根系、发光叶片、柔和空气层和清晰小型主体组织梦幻但可游玩的平台冒险空间。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - named_spirit_character
+  - photorealistic_forest
+  - hard_plastic_3d
+  - excessive_bloom
+  - copied_world_layout
+pillars:
+- 以手绘二维森林、流动根系、发光叶片、柔和空气层和清晰小型主体组织梦幻但可游玩的平台冒险空间。
+- 'medium: 手绘二维背景与柔和角色剪影; 笔触沿植物生长和水流方向; 层叠绘画保持平台空间可读'
+- 'composition: 根系、枝干和溪流形成流动曲线; 主体很小但轮廓清晰; 前景深色剪影包围明亮远景'
+- 'palette: 深蓝、青绿、靛紫、暖奶黄和少量紫粉形成发光色组; 发光物体颜色由附近空气承接; 不把全画面提亮成荧光'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 手绘二维背景与柔和角色剪影;
+    笔触沿植物生长和水流方向; 层叠绘画保持平台空间可读.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 手绘二维背景与柔和角色剪影;
+    笔触沿植物生长和水流方向; 层叠绘画保持平台空间可读.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    手绘二维背景与柔和角色剪影; 笔触沿植物生长和水流方向; 层叠绘画保持平台空间可读.'
+  evidence:
+    source_ids:
+    - source-ori-luminous-forest-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 根系、枝干和溪流形成流动曲线;
+    主体很小但轮廓清晰; 前景深色剪影包围明亮远景. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 根系、枝干和溪流形成流动曲线; 主体很小但轮廓清晰;
+    前景深色剪影包围明亮远景.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 根系、枝干和溪流形成流动曲线;
+    主体很小但轮廓清晰; 前景深色剪影包围明亮远景.'
+  evidence:
+    source_ids:
+    - source-ori-luminous-forest-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 深蓝、青绿、靛紫、暖奶黄和少量紫粉形成发光色组; 发光物体颜色由附近空气承接;
+    不把全画面提亮成荧光. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 深蓝、青绿、靛紫、暖奶黄和少量紫粉形成发光色组;
+    发光物体颜色由附近空气承接; 不把全画面提亮成荧光.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    深蓝、青绿、靛紫、暖奶黄和少量紫粉形成发光色组; 发光物体颜色由附近空气承接; 不把全画面提亮成荧光.'
+  evidence:
+    source_ids:
+    - source-ori-luminous-forest-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 月光或森林光源形成局部光池; 发光叶片和水面有柔和反射; 背景亮度逐层递减. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 月光或森林光源形成局部光池; 发光叶片和水面有柔和反射;
+    背景亮度逐层递减.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 月光或森林光源形成局部光池; 发光叶片和水面有柔和反射;
+    背景亮度逐层递减.'
+  evidence:
+    source_ids:
+    - source-ori-luminous-forest-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 树皮、叶脉、水、岩石和苔藓用不同笔触表达;
+    高光柔和而不塑料化. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 树皮、叶脉、水、岩石和苔藓用不同笔触表达;
+    高光柔和而不塑料化.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    树皮、叶脉、水、岩石和苔藓用不同笔触表达; 高光柔和而不塑料化.'
+  evidence:
+    source_ids:
+    - source-ori-luminous-forest-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纹理集中在前景和焦点附近;
+    远景用透明叠色和软边. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纹理集中在前景和焦点附近;
+    远景用透明叠色和软边.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纹理集中在前景和焦点附近; 远景用透明叠色和软边.'
+  evidence:
+    source_ids:
+    - source-ori-luminous-forest-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-ori-luminous-forest-primary-source
+  kind: primary
+  base_asset_id: ori-luminous-forest-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定平台路径和大根系
+  - 再建立深色前景和明亮远景
+  - 加入少量发光植物
+  - 最后以空气层和边缘控制景深
+  - 梦幻来自光色和植物曲线而非随机魔法特效
+  - 平台和路径仍然能读
+  - 不得复制具体角色、地图或生物
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - named_spirit_character
+  - photorealistic_forest
+  - hard_plastic_3d
+  - excessive_bloom
+  - copied_world_layout
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
