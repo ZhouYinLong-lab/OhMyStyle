@@ -72,6 +72,6 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：连续街景中的分段小场景
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 只在用户请求街区或连续街景拼贴时启用：把用户给定的沿街界面分成若干相连的纸片式小场景，让街道基线连续穿过画面，并在指定窗面局部展示室内切片。分段数量、建筑、活动和地点都由用户决定；不默认六格、不采用哈莱姆地标，也不复刻《The Block》的版式。见 [`comparisons/`](comparisons/README.md) 查看虚构三店面街景对照，方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，只在用户请求街区或连续街景拼贴时启用：把用户给定的沿街界面分成若干相连的纸片式小场景，让街道基线连续穿过画面。只有用户指定窗户或剖开展示室内时，才声明 `user-requests-windows-or-cutaway-interiors` 启用室内边界规则。分段数量、建筑、活动和地点都由用户决定；不默认六格、不采用哈莱姆地标，也不复刻《The Block》的版式。见 [`comparisons/`](comparisons/README.md) 查看虚构三店面街景对照，方向仍处于实验状态。
 
 

@@ -91,6 +91,6 @@ figures, text, trademark, or logo.
 
 ## Experimental direction: connected street vignettes
 
-The optional [`art-direction.yaml`](art-direction.yaml) activates only for a user-requested neighborhood or continuous street collage. Divide the supplied frontage into connected paper-cut vignettes, keep one street baseline running through the composition, and reveal interior slices only through requested windows. The user determines the number of segments, buildings, activities, and place; the direction does not default to six panels, Harlem landmarks, or the layout of *The Block*. See [`comparisons/`](comparisons/README.md) for a fictional three-storefront probe. This direction remains experimental.
+The optional [`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and activates only for a user-requested neighborhood or continuous street collage. Divide the supplied frontage into connected paper-cut vignettes and keep one street baseline running through the composition. Declare `user-requests-windows-or-cutaway-interiors` only when the user specifies interior views to activate the bounded-interior rule. The user determines the number of segments, buildings, activities, and place; the direction does not default to six panels, Harlem landmarks, or the layout of *The Block*. See [`comparisons/`](comparisons/README.md) for a fictional three-storefront probe. This direction remains experimental.
 
 

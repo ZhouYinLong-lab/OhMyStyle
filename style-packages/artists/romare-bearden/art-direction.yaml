@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: bearden-connected-street-vignettes
 name: Bearden connected street vignettes
@@ -27,6 +27,19 @@ scope:
     - Show interiors only through windows or cutaway areas explicitly requested by the user; do not invent private activities.
     - Keep building facades and collage seams distinct enough that segment boundaries remain legible.
     - Do not default to six panels, Harlem, named neighborhood institutions, or the layout of The Block.
+contexts:
+  - id: user-requested-continuous-neighborhood-street-collage
+    description: The user requests an urban street or neighborhood collage with connected street frontage.
+  - id: single-building-product-render
+    description: The user requests one building as a product-style render.
+  - id: user-requested-nonurban-landscape
+    description: The user requests a nonurban landscape.
+  - id: geographically-accurate-building-elevation
+    description: The user requests a geographically accurate building elevation.
+  - id: text-or-logo-reproduction
+    description: The user requests text or logo reproduction.
+  - id: user-requests-windows-or-cutaway-interiors
+    description: The user specifies windows or cutaway views into interiors.
 pillars:
   - Organize the supplied street frontage as adjacent paper-cut scenes with a user-controlled number of segments.
   - Use one continuous sidewalk, curb, or street-edge band to link the vignettes across their cut boundaries.
@@ -35,6 +48,8 @@ rules:
   - id: frontage-segments-follow-user-count
     axis: vignette_segmentation_and_scene_count
     importance: core
+    when_contexts:
+      - user-requested-continuous-neighborhood-street-collage
     applies_when: The user provides a street frontage or specifies the number of scene segments.
     instruction: Divide the frontage into the same number and order of user-specified adjacent vignettes; let cut-paper seams mark transitions without adding buildings or activities.
     observable: The requested storefront or building count remains recognizable, and each collage segment corresponds to the supplied sequence.
@@ -48,6 +63,8 @@ rules:
   - id: street-edge-connects-fragments
     axis: urban_continuity_across_paper_seams
     importance: core
+    when_contexts:
+      - user-requested-continuous-neighborhood-street-collage
     applies_when: Multiple street vignettes share one continuous urban frontage.
     instruction: Carry a sidewalk, curb, or street-edge color band through each cut seam so the separate paper scenes still read as one connected walk along the user's street.
     observable: The viewer can trace one continuous ground-level path across all requested segments despite visible collage boundaries.
@@ -61,6 +78,8 @@ rules:
   - id: interior-slices-remain-bounded
     axis: public_private_space_boundary
     importance: supporting
+    when_contexts:
+      - user-requests-windows-or-cutaway-interiors
     applies_when: The user requests windows or cutaway views into specified interiors.
     instruction: Reveal shallow interior fragments only within the requested window or cutaway boundaries; retain enough facade edge and paper overlap to separate interior from sidewalk activity.
     observable: Each interior detail is framed by a readable opening and does not spill into adjacent street vignettes.
