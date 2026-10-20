@@ -1,0 +1,159 @@
+schema_version: 2.1.0
+status: experimental
+id: lyrical-abstraction-direction
+name: 抒情抽象
+base_package: movements/lyrical-abstraction
+scope:
+  medium: lyrical abstract painting with a physical process translated into image generation
+  representation: abstract_interpretation
+  description: 以身体性的笔触、开放边界、流动色层和不规则节奏，让绘画过程成为画面结构的一部分。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以身体性的笔触、开放边界、流动色层和不规则节奏，让绘画过程成为画面结构的一部分。
+- 'composition: Let the image breathe as an open field with an uneven center of gravity rather than a closed
+  emblem.; Use overlapping gestures and pauses; allow a small supplied form to sit inside, beside, or partly
+  disappear into the field.'
+- 'palette: Combine warm white, deep maroon, cobalt, olive, and raw umber through layered transparent and opaque
+  passages.; Let color temperature shift across gestures while preserving a few quiet areas.'
+- 'lighting: quality: diffuse light that reveals paint thickness without theatrical modeling; behavior: Highlights
+  come from paint thickness and exposed support, not a simulated object light source.; behavior: Keep the field
+  legible through value rhythm even when edges remain open.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Let the image
+    breathe as an open field with an uneven center of gravity rather than a closed emblem.; Use overlapping
+    gestures and pauses; allow a small supplied form to sit inside, beside, or partly disappear into the field..
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Let the image breathe
+    as an open field with an uneven center of gravity rather than a closed emblem.; Use overlapping gestures
+    and pauses; allow a small supplied form to sit inside, beside, or partly disappear into the field..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Let the
+    image breathe as an open field with an uneven center of gravity rather than a closed emblem.; Use overlapping
+    gestures and pauses; allow a small supplied form to sit inside, beside, or partly disappear into the field..'
+  evidence:
+    source_ids:
+    - source-lyrical-abstraction-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Combine warm white, deep maroon,
+    cobalt, olive, and raw umber through layered transparent and opaque passages.; Let color temperature shift
+    across gestures while preserving a few quiet areas.. Adapt their balance to the requested subject; do not
+    apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Combine warm white, deep
+    maroon, cobalt, olive, and raw umber through layered transparent and opaque passages.; Let color temperature
+    shift across gestures while preserving a few quiet areas..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Combine warm white, deep maroon, cobalt, olive, and raw umber through layered transparent and opaque passages.;
+    Let color temperature shift across gestures while preserving a few quiet areas..'
+  evidence:
+    source_ids:
+    - source-lyrical-abstraction-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: diffuse light that reveals paint thickness
+    without theatrical modeling; behavior: Highlights come from paint thickness and exposed support, not a
+    simulated object light source.; behavior: Keep the field legible through value rhythm even when edges remain
+    open.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: diffuse light that
+    reveals paint thickness without theatrical modeling; behavior: Highlights come from paint thickness and
+    exposed support, not a simulated object light source.; behavior: Keep the field legible through value rhythm
+    even when edges remain open..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: diffuse light
+    that reveals paint thickness without theatrical modeling; behavior: Highlights come from paint thickness
+    and exposed support, not a simulated object light source.; behavior: Keep the field legible through value
+    rhythm even when edges remain open..'
+  evidence:
+    source_ids:
+    - source-lyrical-abstraction-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: layered
+    physical paint with visible process and occasional exposed ground; edges: open, dragged, feathered, and
+    interrupted; avoid perfect vector boundaries. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    layered physical paint with visible process and occasional exposed ground; edges: open, dragged, feathered,
+    and interrupted; avoid perfect vector boundaries.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: layered physical paint with visible process and occasional exposed ground; edges: open, dragged,
+    feathered, and interrupted; avoid perfect vector boundaries.'
+  evidence:
+    source_ids:
+    - source-lyrical-abstraction-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium-to-high
+    in selected gesture paths, with deliberate quiet intervals; placement: drips, dry-brush skips, translucent
+    overlaps, scraped ridges, and pooled pigment. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium-to-high in selected gesture paths, with deliberate quiet intervals; placement: drips, dry-brush
+    skips, translucent overlaps, scraped ridges, and pooled pigment.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium-to-high in selected gesture paths, with deliberate quiet intervals; placement: drips, dry-brush
+    skips, translucent overlaps, scraped ridges, and pooled pigment.'
+  evidence:
+    source_ids:
+    - source-lyrical-abstraction-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-lyrical-abstraction-primary-source
+  kind: primary
+  base_asset_id: lyrical-abstraction-primary-source
+execution:
+  route: text_only
+  must:
+  - Establish the supplied subject only as a loose silhouette, mass, or compositional cue.
+  - Lay down broad transparent and opaque color fields with different stroke pressures.
+  - Add directional gestures, drips, dry-brush skips, and scraped overlaps while leaving pauses.
+  - Reintroduce only the minimum subject cues needed for the user's request; keep the making process visible.
+  - The sequence and pressure of gestures remain visible after the subject changes.
+  - The image avoids a single decorative pattern or a uniform digital gradient.
+  - The subject remains optional; abstraction is a treatment of making, not a fixed object.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
