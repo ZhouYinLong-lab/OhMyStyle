@@ -1,0 +1,153 @@
+schema_version: 2.1.0
+status: experimental
+id: susan-meiselas-direction
+name: 苏珊·梅塞拉斯
+base_package: photographers/susan-meiselas
+scope:
+  medium: long-form social documentary photography
+  representation: recognizable
+  description: 以长期纪实、现场关系、人物与环境的并置和克制的彩色摄影组织画面，重视观看者与被摄者之间的距离和语境。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - fixed conflict zone, carnival, protest, or documentary event
+pillars:
+- 以长期纪实、现场关系、人物与环境的并置和克制的彩色摄影组织画面，重视观看者与被摄者之间的距离和语境。
+- 'composition: human-scale distance with several layers of social and physical context; gestures, glances,
+  and environmental traces share attention without a heroic center; frame information that suggests a larger
+  ongoing situation beyond the image'
+- 'palette: restrained natural color with weathered reds, greens, blues, and skin tones; color supports place
+  and relationship; no global cinematic grade'
+- 'lighting: quality: TODO; behavior: TODO: describe direction, softness, contrast, or atmospheric behavior.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: human-scale
+    distance with several layers of social and physical context; gestures, glances, and environmental traces
+    share attention without a heroic center; frame information that suggests a larger ongoing situation beyond
+    the image. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: human-scale distance
+    with several layers of social and physical context; gestures, glances, and environmental traces share attention
+    without a heroic center; frame information that suggests a larger ongoing situation beyond the image.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: human-scale
+    distance with several layers of social and physical context; gestures, glances, and environmental traces
+    share attention without a heroic center; frame information that suggests a larger ongoing situation beyond
+    the image.'
+  evidence:
+    source_ids:
+    - source-susan-meiselas-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: restrained natural color with weathered
+    reds, greens, blues, and skin tones; color supports place and relationship; no global cinematic grade.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: restrained natural color
+    with weathered reds, greens, blues, and skin tones; color supports place and relationship; no global cinematic
+    grade.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    restrained natural color with weathered reds, greens, blues, and skin tones; color supports place and relationship;
+    no global cinematic grade.'
+  evidence:
+    source_ids:
+    - source-susan-meiselas-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: TODO; behavior: TODO: describe direction,
+    softness, contrast, or atmospheric behavior.. Keep light coherent with the requested subject, medium, and
+    scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: TODO; behavior: TODO:
+    describe direction, softness, contrast, or atmospheric behavior..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: TODO; behavior:
+    TODO: describe direction, softness, contrast, or atmospheric behavior..'
+  evidence:
+    source_ids:
+    - source-susan-meiselas-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: honest
+    documentary print or restrained editorial scan; edges: natural lens boundaries and contextual crops. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    honest documentary print or restrained editorial scan; edges: natural lens boundaries and contextual crops.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: honest documentary print or restrained editorial scan; edges: natural lens boundaries and contextual
+    crops.'
+  evidence:
+    source_ids:
+    - source-susan-meiselas-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: moderate
+    photographic texture; placement: consistent across skin, clothing, walls, pavement, and found materials.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    moderate photographic texture; placement: consistent across skin, clothing, walls, pavement, and found
+    materials.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: moderate photographic texture; placement: consistent across skin, clothing, walls, pavement, and
+    found materials.'
+  evidence:
+    source_ids:
+    - source-susan-meiselas-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-susan-meiselas-primary-source
+  kind: primary
+  base_asset_id: susan-meiselas-primary-source
+execution:
+  route: text_only
+  must:
+  - begin with the user's subject and social or spatial context
+  - observe relationships, gestures, and traces rather than directing a pose
+  - include enough surrounding information to locate the moment without over-explaining it
+  - finish with honest color, natural skin, and consistent photographic texture
+  - attention to relationship and context rather than spectacle
+  - human-scale proximity and multiple points of social information
+  - natural color and physical photographic texture
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - fixed conflict zone, carnival, protest, or documentary event
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
