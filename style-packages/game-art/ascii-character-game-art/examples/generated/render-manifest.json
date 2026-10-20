@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "route": "deterministic_grid",
+  "created_at": "2026-10-20T08:27:36.768475+00:00",
+  "subject": "One explorer holding a torch inside a cavern",
+  "art_direction": {
+    "id": "literal-ascii-grid",
+    "name": "Literal ASCII character grid",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "art-direction.yaml",
+    "sha256": "30985c147ce2b8213d270c84e3eddd95f043e43332cddbdb16ea62cabf4e0947",
+    "active_rule_ids": [
+      "ascii-literal-construction",
+      "ascii-density-hierarchy",
+      "ascii-grid-alignment"
+    ],
+    "applicable_rule_ids": [
+      "ascii-literal-construction",
+      "ascii-density-hierarchy",
+      "ascii-grid-alignment"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [
+      "literal-ascii-grid-construction"
+    ],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "grid": {
+    "columns": 100,
+    "rows": 36,
+    "width": 1280,
+    "height": 720,
+    "margin": 12,
+    "font_size": 18,
+    "foreground": "#A9B9BF",
+    "background": "#0A0E13",
+    "glyph_colors": {
+      "#": "#74828B",
+      "@": "#C2D2DA",
+      "+": "#FFDB89",
+      "*": "#FFDB89",
+      ".": "#536570"
+    }
+  },
+  "occupied_cells": 791,
+  "source": {
+    "path": "examples/ascii-cave-grid.txt",
+    "sha256": "a9357d43a1114f57b6524370798758022998f6cc2110dba9fe17071004063c49",
+    "normalized_sha256": "2f9bfd3f34d0bb8adc6ad89973dfd8139995167abe9c5e95b3bcb097262dd071"
+  },
+  "font": {
+    "path": "Consolas (system font)",
+    "sha256": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+    "name": [
+      "Consolas",
+      "Regular"
+    ]
+  },
+  "renderer": {
+    "sha256": "07d906d4b32b477fb876436e393cf9f41d73cb4694eb48e8deba6b98c32390b4",
+    "pillow": "12.3.0",
+    "python": "3.13.12",
+    "cell_width": 12.56,
+    "cell_height": 19.333333333333332,
+    "anchor": "ls",
+    "glyph_offset": [
+      1,
+      14
+    ]
+  },
+  "output": {
+    "file": "ascii-cave-grid.png",
+    "sha256": "9c4c60a96cecc5c331147b4d85bf29b048154d12e9e6eb4ac6507964cea338a5",
+    "rgb_pixels_sha256": "35730a92552d6e74987c540be4812cabf393229164b099a3ff400c858a24af65"
+  },
+  "review": {
+    "status": "pending",
+    "note": "Literal construction does not establish scene readability or style quality."
+  }
+}
