@@ -36,7 +36,7 @@
 
 ## 新架构：人物与装饰平面的组织（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `patterned-domestic-figure-scene` 时启用。它强调人物体积与较平坦的图案色面之间的对照，让图案参与构图但不压过人物与动作；视点和裁切按场景需要选择。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户指定 `patterned-domestic-figure-scene` 时启用。人物体积与背景平面之间的对照是基础规则；只有场景包含图案表面或适合斜向视点时，才声明 `requested-scene-includes-patterned-surfaces` 或 `figure-benefits-from-elevated-or-oblique-view`，启用对应规则。
 
 这与德加方向的偶然观察、偏置取景和空间裁切有所区分：卡萨特方向以人物和装饰平面之间的稳定组织为核心，不把快照式裁边作为默认。也不会自动加入母子关系、日本道具、花卉或年代服饰。
 

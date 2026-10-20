@@ -45,7 +45,7 @@ See [`provenance.yaml`](provenance.yaml),
 
 ## New architecture: figure and decorative plane (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `patterned-domestic-figure-scene`. It emphasizes the contrast between modeled figure volume and flatter patterned color fields, letting pattern contribute to the composition without overwhelming the figure or action. Viewpoint and crop depend on the requested scene.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when the user declares `patterned-domestic-figure-scene`. Figure volume against the ground plane is a base rule; declare `requested-scene-includes-patterned-surfaces` or `figure-benefits-from-elevated-or-oblique-view` only when applicable to activate pattern or viewpoint guidance.
 
 This differs from Degas's direction of incidental observation, oblique framing, and spatial cropping: Cassatt's direction centers the stable organization between figure and decorative plane, rather than making snapshot-like edge cuts the default. It does not automatically add motherhood, Japanese props, flowers, or period clothing.
 

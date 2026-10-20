@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: cassatt-patterned-domestic-plane
 name: Cassatt patterned domestic plane
@@ -22,6 +22,19 @@ scope:
     - Preserve the requested people, relationships, age, clothing, pose, setting, and count.
     - Use a domestic interior or patterned field only when it fits the user's setting; do not invent family roles.
     - Keep patterns subordinate to readable anatomy and the requested action; do not copy a named print's layout.
+contexts:
+  - id: patterned-domestic-figure-scene
+    description: The user requests a figure-centered scene against a patterned interior or decorative field.
+  - id: deep-cinematic-room
+    description: The user requests a deep cinematic interior.
+  - id: unpatterned-photographic-background
+    description: The user requires a photographic background without pattern.
+  - id: mandatory-mother-and-child
+    description: The user explicitly requests a mother-and-child subject.
+  - id: requested-scene-includes-patterned-surfaces
+    description: The requested scene includes visible fabric, wallpaper, furnishings, or other patterned surfaces.
+  - id: figure-benefits-from-elevated-or-oblique-view
+    description: An elevated or oblique view would clarify a figure in a close setting.
 pillars:
   - Keep the figure's rounded volume and gesture readable against flatter surrounding shapes.
   - Let requested wallpaper, fabric, furnishings, or other patterns contribute to the composition as organized color planes.
@@ -31,6 +44,8 @@ rules:
   - id: figure-volume-against-flat-pattern
     axis: figure_ground_relationship
     importance: core
+    when_contexts:
+      - patterned-domestic-figure-scene
     applies_when: A figure is placed against a patterned interior, textile, or other decorative field.
     instruction: Keep the figure's head, limbs, and gesture modeled as coherent rounded forms while allowing surrounding pattern to read as flatter color shapes; preserve a clear boundary without turning the whole image into a flat graphic.
     observable: The person remains volumetric and readable while the patterned field has its own distinct, organized rhythm.
@@ -45,6 +60,8 @@ rules:
   - id: composed-pattern-and-color-planes
     axis: surface_and_color_organization
     importance: core
+    when_contexts:
+      - requested-scene-includes-patterned-surfaces
     applies_when: The requested scene includes visible fabric, wallpaper, furnishings, or other patterned surfaces.
     instruction: Arrange visible patterns as a few legible fields that support the figure and the requested action; use distinct local colors and selected dark contours where useful, while preserving quiet intervals and material differences.
     observable: Pattern, contour, and local color help organize the scene rather than acting as a global filter or generic decorative overlay.
@@ -59,6 +76,8 @@ rules:
   - id: deliberate-viewpoint-and-crop
     axis: viewpoint_and_framing
     importance: supporting
+    when_contexts:
+      - figure-benefits-from-elevated-or-oblique-view
     applies_when: The requested subject benefits from an elevated or oblique view of a figure in a close setting.
     instruction: Choose a stable viewpoint that clarifies the figure and nearby surfaces; crop only when the user requests a close frame or when a deliberate edge relationship improves the composition.
     observable: The viewpoint feels composed around the figure and scene, not like an arbitrary cut or surveillance snapshot.
