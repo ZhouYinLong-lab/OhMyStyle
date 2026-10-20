@@ -1,0 +1,139 @@
+schema_version: 2.1.0
+status: experimental
+id: inside-minimalist-silhouette-direction
+name: 内在世界极简剪影游戏美术
+base_package: game-art/inside-minimalist-silhouette
+scope:
+  medium: 当代二维谜题平台游戏环境美术 游戏环境美术
+  representation: stylized
+  description: 以低复杂度形体、克制色彩、强烈剪影和精细环境细节建立安静而紧张的二维游戏空间。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以低复杂度形体、克制色彩、强烈剪影和精细环境细节建立安静而紧张的二维游戏空间。
+- 'composition: 低复杂度大形与高精度局部细节并置; 灰绿、煤黑、雾白和少量暖色组成克制调色'
+- 'palette: 灰绿、煤黑、雾白和少量暖色组成克制调色; 强剪影、遮挡与水平构图建立空间压力'
+- 'lighting: quality: 强剪影、遮挡与水平构图建立空间压力; behavior: Keep the requested subject and location independent from
+  the package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 低复杂度大形与高精度局部细节并置;
+    灰绿、煤黑、雾白和少量暖色组成克制调色. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 低复杂度大形与高精度局部细节并置;
+    灰绿、煤黑、雾白和少量暖色组成克制调色.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 低复杂度大形与高精度局部细节并置;
+    灰绿、煤黑、雾白和少量暖色组成克制调色.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 灰绿、煤黑、雾白和少量暖色组成克制调色; 强剪影、遮挡与水平构图建立空间压力.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 灰绿、煤黑、雾白和少量暖色组成克制调色; 强剪影、遮挡与水平构图建立空间压力.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    灰绿、煤黑、雾白和少量暖色组成克制调色; 强剪影、遮挡与水平构图建立空间压力.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 强剪影、遮挡与水平构图建立空间压力; behavior: Keep the requested
+    subject and location independent from the package.; behavior: Apply lighting as a transferable visual decision,
+    not a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 强剪影、遮挡与水平构图建立空间压力;
+    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
+    as a transferable visual decision, not a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 强剪影、遮挡与水平构图建立空间压力;
+    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
+    as a transferable visual decision, not a fixed scene..'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 环境叙事通过材质和尺度表达，不依赖固定角色;
+    edges: subject-dependent, without a copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    环境叙事通过材质和尺度表达，不依赖固定角色; edges: subject-dependent, without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 环境叙事通过材质和尺度表达，不依赖固定角色; edges: subject-dependent, without a copied layout.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: controlled
+    and medium-dependent; placement: only where the package visual language needs explanation. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    controlled and medium-dependent; placement: only where the package visual language needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: controlled and medium-dependent; placement: only where the package visual language needs explanation.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-01
+  kind: primary_research_source
+  base_asset_id: primary-01
+execution:
+  route: text_only
+  must:
+  - 先明确可读的前中后景轮廓
+  - 用低饱和大色面确定气氛
+  - 在局部加入精确材质、灯光和微小线索
+  - 保持画面简洁，避免无关装饰和泛滥特效
+  - 低复杂度大形与高精度局部细节并置
+  - 灰绿、煤黑、雾白和少量暖色组成克制调色
+  - 强剪影、遮挡与水平构图建立空间压力
+  - 环境叙事通过材质和尺度表达，不依赖固定角色
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
+    protected game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
