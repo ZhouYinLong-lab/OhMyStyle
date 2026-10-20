@@ -8,3 +8,5 @@ distinctives:
   - 'gradual palette transitions'
   - 'soft atmospheric edges'
   - 'readable 2D traversal space'
+family: game-art
+avoid_overlap: []
