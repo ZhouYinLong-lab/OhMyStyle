@@ -48,7 +48,7 @@ visual_signature:
       evidence:
         source_ids: [ascii-package-source-grid, ascii-package-renderer, user-literal-character-requirement]
         basis: original_design_intent
-        visual_review: three_task_pilot_basic_readability_reviewed_rule_level_pending
+        visual_review: three_task_single_reviewer_limited_pilot_pass
     - id: ascii-density-hierarchy
       axis: value
       importance: core
@@ -59,7 +59,7 @@ visual_signature:
       evidence:
         source_ids: [ascii-package-source-grid]
         basis: original_design_intent
-        visual_review: three_task_pilot_basic_readability_reviewed_rule_level_pending
+        visual_review: three_task_single_reviewer_limited_pilot_pass
     - id: ascii-grid-alignment
       axis: layout
       importance: core
@@ -70,7 +70,7 @@ visual_signature:
       evidence:
         source_ids: [user-literal-character-requirement]
         basis: original_design_intent
-        visual_review: three_task_pilot_basic_readability_reviewed_rule_level_pending
+        visual_review: three_task_single_reviewer_limited_pilot_pass
 
   joint_checks:
     - id: ascii-glyph-layout-readability
@@ -149,6 +149,6 @@ evaluation:
         - No external text-generation provider sampled the source grids.
         - One source grid per task does not test cross-subject or within-subject stability.
         - No legacy baseline arm was run; no relative style-quality claim is made.
-        - Rule-level visual_review remains pending.
+        - A single reviewer checked each core rule across three authored grids; these limited judgments are not independent or provider-backed.
     artifacts: style-packages/game-art/ascii-character-game-art/evidence/literal-grid-pilot
   accepted_examples: []
