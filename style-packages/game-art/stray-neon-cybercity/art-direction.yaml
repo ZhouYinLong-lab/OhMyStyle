@@ -1,0 +1,152 @@
+schema_version: 2.1.0
+status: experimental
+id: stray-neon-cybercity-direction
+name: 霓虹废墟城市游戏美术
+base_package: game-art/stray-neon-cybercity
+scope:
+  medium: 写实三维环境; 密集但可导航的空间布局; 材质细节与灯光共同讲述使用痕迹
+  representation: stylized
+  description: 以低机位巷道、潮湿混凝土、旧公寓、植物和局部彩色灯构成有生活痕迹的衰败未来城市，不把霓虹做成纯装饰。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - recognizable_cat_or_drone
+  - readable_signage
+  - spotless_future_city
+  - generic_neon_wallpaper
+pillars:
+- 以低机位巷道、潮湿混凝土、旧公寓、植物和局部彩色灯构成有生活痕迹的衰败未来城市，不把霓虹做成纯装饰。
+- 'medium: 写实三维环境; 密集但可导航的空间布局; 材质细节与灯光共同讲述使用痕迹'
+- 'composition: 低机位让巷道和建筑压出纵深; 屋檐、线缆和楼梯形成遮挡层; 小动物、植物或远处灯光可作为尺度锚点'
+- 'palette: 湿青、暗紫、锈红、暖黄和深褐形成夜间色组; 彩色光只落在邻近墙面和水洼; 黑暗保留细节和色相'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 写实三维环境;
+    密集但可导航的空间布局; 材质细节与灯光共同讲述使用痕迹.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 写实三维环境;
+    密集但可导航的空间布局; 材质细节与灯光共同讲述使用痕迹.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    写实三维环境; 密集但可导航的空间布局; 材质细节与灯光共同讲述使用痕迹.'
+  evidence:
+    source_ids:
+    - source-stray-neon-cybercity-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 低机位让巷道和建筑压出纵深;
+    屋檐、线缆和楼梯形成遮挡层; 小动物、植物或远处灯光可作为尺度锚点. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 低机位让巷道和建筑压出纵深; 屋檐、线缆和楼梯形成遮挡层;
+    小动物、植物或远处灯光可作为尺度锚点.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 低机位让巷道和建筑压出纵深;
+    屋檐、线缆和楼梯形成遮挡层; 小动物、植物或远处灯光可作为尺度锚点.'
+  evidence:
+    source_ids:
+    - source-stray-neon-cybercity-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 湿青、暗紫、锈红、暖黄和深褐形成夜间色组; 彩色光只落在邻近墙面和水洼;
+    黑暗保留细节和色相. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 湿青、暗紫、锈红、暖黄和深褐形成夜间色组; 彩色光只落在邻近墙面和水洼;
+    黑暗保留细节和色相.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    湿青、暗紫、锈红、暖黄和深褐形成夜间色组; 彩色光只落在邻近墙面和水洼; 黑暗保留细节和色相.'
+  evidence:
+    source_ids:
+    - source-stray-neon-cybercity-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 灯管、窗口和招牌提供分散实用光; 雨水反射有限且有来源; 不使用全局发光边缘. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 灯管、窗口和招牌提供分散实用光; 雨水反射有限且有来源;
+    不使用全局发光边缘.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 灯管、窗口和招牌提供分散实用光; 雨水反射有限且有来源;
+    不使用全局发光边缘.'
+  evidence:
+    source_ids:
+    - source-stray-neon-cybercity-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 剥落涂层、锈金属、玻璃、水泥、植物和水面有明显区别;
+    近景细节更密. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 剥落涂层、锈金属、玻璃、水泥、植物和水面有明显区别;
+    近景细节更密.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    剥落涂层、锈金属、玻璃、水泥、植物和水面有明显区别; 近景细节更密.'
+  evidence:
+    source_ids:
+    - source-stray-neon-cybercity-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 污渍、维修、植物和废弃物形成有规律的生活痕迹;
+    避免随机垃圾堆满画面. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 污渍、维修、植物和废弃物形成有规律的生活痕迹;
+    避免随机垃圾堆满画面.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    污渍、维修、植物和废弃物形成有规律的生活痕迹; 避免随机垃圾堆满画面.'
+  evidence:
+    source_ids:
+    - source-stray-neon-cybercity-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-stray-neon-cybercity-primary-source
+  kind: primary
+  base_asset_id: stray-neon-cybercity-primary-source
+execution:
+  route: text_only
+  must:
+  - 先搭建巷道和垂直层次
+  - 再加入建筑使用痕迹
+  - 用少量彩色灯连接空间
+  - 最后检查反射与光源一致
+  - 城市可居住又正在衰败
+  - 光源必须嵌入建筑逻辑
+  - 不得复制具体角色、招牌、机器人或场景
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - recognizable_cat_or_drone
+  - readable_signage
+  - spotless_future_city
+  - generic_neon_wallpaper
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
