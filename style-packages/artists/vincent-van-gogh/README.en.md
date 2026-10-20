@@ -78,7 +78,7 @@ Use references to understand observable characteristics. Do not copy a source wo
 
 ## New architecture: directional strokes and impasto (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) separates mark direction, local cool-warm color structure, and visible paint load into reviewable rules. Stroke families change with the surface instead of turning the whole image into one swirl; blue-yellow relationships follow the subject and light. Stars, cypresses, villages, and sunflowers are not automatic motifs. This direction remains experimental, and the legacy package prompt stays unchanged by default.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and separates mark direction, local cool-warm color structure, and visible paint load into reviewable rules. Stroke families change with the surface instead of turning the whole image into one swirl; blue-yellow relationships follow the subject and light. Stars, cypresses, villages, and sunflowers are not automatic motifs. Callers can declare `close-view-of-painted-surface` only for close framing to activate extra checks on localized impasto edges. This direction remains experimental, and the legacy package prompt stays unchanged by default.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/vincent-van-gogh --direction package --subject "A wind-bent orchard after rain, with a figure walking along a path" --output runs/style-v2/van-gogh-job.json

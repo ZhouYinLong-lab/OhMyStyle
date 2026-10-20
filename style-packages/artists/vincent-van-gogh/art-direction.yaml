@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: van-gogh-directional-impasto
 name: Van Gogh directional impasto
@@ -14,6 +14,13 @@ scope:
   limitations:
     - Do not make a night sky, cypress, village, or sunflower a default subject; follow the user's requested subject.
     - Do not infer that every mark in Van Gogh's work follows one uniform curve or direction.
+contexts:
+  - id: smooth-digital-painting
+    description: The user requires smooth digital painting without visible directional paint marks.
+  - id: photographic-texture-overlay
+    description: The user requires a photographic texture overlay.
+  - id: close-view-of-painted-surface
+    description: The user requests a close view where loaded, directional paint edges should remain legible.
 pillars:
   - Organize brush marks by the form and movement of each surface.
   - Build color relationships locally, especially cool blue-violet against warm yellow, rather than applying a global filter.
@@ -60,16 +67,33 @@ rules:
       basis: institutional_description
       visual_review: pending
     avoid: airbrushed glow and uniform embossed texture
+  - id: close-view-of-directional-impasto
+    axis: surface_and_detail
+    importance: supporting
+    when_contexts:
+      - close-view-of-painted-surface
+    applies_when: The user requests a close view of an oil-painted surface.
+    instruction: Keep selected raised paint edges, overlaps, and changes in stroke length visible at close range; let the mark direction continue to follow the depicted forms instead of adding an even texture layer.
+    observable: Close details reveal varied paint handling while the larger color masses and subject remain readable.
+    reject_when: The surface becomes uniformly embossed, gritty, or so enlarged that the underlying form disappears.
+    evidence:
+      source_ids:
+        - vangogh-moma-starry-night
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: global canvas grain, uniform impasto relief, and texture unrelated to form
 active_rule_ids:
   - surface-following-mark-families
   - local-cool-warm-color-structure
   - tactile-loaded-paint
+  - close-view-of-directional-impasto
 joint_checks:
   - id: mark-color-form-coherence
     rule_ids:
       - surface-following-mark-families
       - local-cool-warm-color-structure
       - tactile-loaded-paint
+      - close-view-of-directional-impasto
     instruction: Make mark direction, local color contrast, and paint load reinforce the same forms; retain an original composition that follows the user's subject.
     observable: Stroke families clarify the forms carrying the warm-cool contrasts, and paint remains materially visible without reproducing a recognized composition.
 sources:

@@ -78,7 +78,7 @@
 
 ## 新架构：方向性笔触与厚涂（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 将笔触方向、局部冷暖色组织和可见颜料堆积拆成可检查的规则。笔触随不同表面改变，不把所有画面统一成旋涡；蓝黄关系服从主体与光线，也不自动添加星夜、柏树、村庄或向日葵。它仍是实验方向，默认包和旧版 Prompt 保持不变。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，将笔触方向、局部冷暖色组织和可见颜料堆积拆成可检查的规则。笔触随不同表面改变，不把所有画面统一成旋涡；蓝黄关系服从主体与光线，也不自动添加星夜、柏树、村庄或向日葵。调用者仅在请求近看画面时声明 `close-view-of-painted-surface`，以启用对局部厚涂边缘的额外检查。它仍是实验方向，默认包和旧版 Prompt 保持不变。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/vincent-van-gogh --direction package --subject "A wind-bent orchard after rain, with a figure walking along a path" --output runs/style-v2/van-gogh-job.json
