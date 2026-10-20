@@ -4,34 +4,35 @@ id: screen-printing-direction
 name: 丝网印刷
 base_package: techniques/screen-printing
 scope:
-  medium: 'name: technique; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
+  medium: screen printing with opaque ink layers, limited color separations, visible registration shifts, and
+    paper grain
   representation: stylized
-  description: Builds screen-print results from opaque ink layers, limited separations, registration shifts,
-    paper grain, and deliberate reduction for posters, packaging, illustration, and graphic marks.
+  description: Builds screen-print results from opaque ink layers, limited separations, registration shifts, paper
+    grain, and deliberate reduction for posters, packaging, illustration, and graphic marks.
   required_contexts: []
   incompatible_contexts: []
   limitations:
   - copying_a_specific_work
   - copying_a_named_character_or_logo
 pillars:
-- Builds screen-print results from opaque ink layers, limited separations, registration shifts, paper grain,
-  and deliberate reduction for posters, packaging, illustration, and graphic marks.
-- 'medium: name: technique; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
-- 'composition: priorities: visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer'
-- 'palette: name: screen-printing; usage: controlled relationship among dominant, support, shadow, and accent
-  colors; colors: name: color_0; colors: hex: #F0E8D4; colors: role: 纸张; colors: name: color_1; colors: hex:
-  #172A42; colors: role: 主轮廓'
+- Builds screen-print results from opaque ink layers, limited separations, registration shifts, paper grain, and
+  deliberate reduction for posters, packaging, illustration, and graphic marks.
+- 'medium: screen printing with opaque ink layers, limited color separations, visible registration shifts, and
+  paper grain'
+- 'composition: Reduce forms to bold silhouettes and a small number of separations; use negative space and registration
+  offsets to clarify hierarchy without copying a poster layout.'
+- 'palette: Warm paper #F0E8D4, dark outline #172A42, red #B7483B, ochre #D4A83B, teal #3E827D, and near-black
+  structure #202020 as separated ink roles.'
 rules:
 - id: medium
   axis: medium
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: name:
-    technique; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  observable: 'The requested image retains the stated medium distinction or production constraint: name: technique;
-    visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
-    name: technique; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
+  instruction: Render in screen printing with opaque ink layers, limited color separations, visible registration
+    shifts, and paper grain; make the production or rendering process visible in edge, surface, and tonal evidence.
+  observable: The image visibly reads as screen printing with opaque ink layers, limited color separations, visible
+    registration shifts, and paper grain, rather than a generic color treatment.
+  reject_when: Reject when the material or rendering process cannot be distinguished from a generic filter.
   evidence:
     source_ids:
     - source-source-1
@@ -42,13 +43,12 @@ rules:
   axis: composition
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Organize the requested subject using these package-specific spatial decisions: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer. Preserve
-    the user-provided content and layout.'
-  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: priorities: visual_hierarchy;
-    priorities: negative_space; priorities: subject_independent_style_transfer.'
-  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer.'
+  instruction: Reduce forms to bold silhouettes and a small number of separations; use negative space and registration
+    offsets to clarify hierarchy without copying a poster layout. Preserve the user-provided subject and requested
+    layout.
+  observable: Reduce forms to bold silhouettes and a small number of separations; use negative space and registration
+    offsets to clarify hierarchy without copying a poster layout.
+  reject_when: Reject when the arrangement loses these structural decisions or copies a source composition.
   evidence:
     source_ids:
     - source-source-1
@@ -59,17 +59,11 @@ rules:
   axis: palette
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: name: screen-printing; usage: controlled
-    relationship among dominant, support, shadow, and accent colors; colors: name: color_0; colors: hex: #F0E8D4;
-    colors: role: 纸张; colors: name: color_1; colors: hex: #172A42; colors: role: 主轮廓. Adapt their balance to
-    the requested subject; do not apply them as a uniform tint.'
-  observable: 'The stated colors and their roles are visible and distinguishable: name: screen-printing; usage:
-    controlled relationship among dominant, support, shadow, and accent colors; colors: name: color_0; colors:
-    hex: #F0E8D4; colors: role: 纸张; colors: name: color_1; colors: hex: #172A42; colors: role: 主轮廓.'
-  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
-    name: screen-printing; usage: controlled relationship among dominant, support, shadow, and accent colors;
-    colors: name: color_0; colors: hex: #F0E8D4; colors: role: 纸张; colors: name: color_1; colors: hex: #172A42;
-    colors: role: 主轮廓.'
+  instruction: Keep the paper ground distinct from the dark structural ink, then use a few opaque, clearly separated
+    color layers. Avoid gradients that erase the printed separations.
+  observable: 'Warm paper #F0E8D4, dark outline #172A42, red #B7483B, ochre #D4A83B, teal #3E827D, and near-black
+    structure #202020 as separated ink roles.'
+  reject_when: Reject when a global tint replaces the stated color roles or the roles cannot be distinguished.
   evidence:
     source_ids:
     - source-source-1
@@ -88,8 +82,7 @@ joint_checks:
   - palette
   instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
     the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-source-1
   kind: style_reference
