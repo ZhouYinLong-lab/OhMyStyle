@@ -56,4 +56,4 @@ Model weights, API keys, and generated images remain under the user’s control.
 
 ## Experimental direction: transparent-plane shadow study
 
-The optional direction in [`art-direction.yaml`](art-direction.yaml) links a user-specified translucent plane, one directional light, and one principal cast shadow into a readable optical study. It does not add machinery or a laboratory setting by default. See [`comparisons/`](comparisons/README.md) for the paired images and model limitations.
+The optional direction in [`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and activates with `photogram-shadow-study`, linking a user-specified translucent plane, one directional light, and one principal cast shadow into a readable optical study. Add `sparse-graphic-or-photographic-composition` only when the brief supports the negative-space rule. It does not add machinery or a laboratory setting by default. See [`comparisons/`](comparisons/README.md) for the paired images and model limitations.

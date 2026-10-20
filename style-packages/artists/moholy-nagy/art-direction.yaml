@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: moholy-nagy-transparent-plane-shadow-study
 name: Moholy-Nagy transparent-plane shadow study
@@ -25,6 +25,19 @@ scope:
     - Use one dominant directional light and one principal cast shadow; do not add extra lamps or decorative beams.
     - Text-only generation may confuse transparency, reflection, and refraction; review optical consistency.
     - Do not add the Light-Space Modulator, laboratory equipment, or copied MoMA composition unless requested.
+contexts:
+  - id: photogram-shadow-study
+    description: The user requests a light-based, transparency, or photogram-like study.
+  - id: diffuse-all-over-light
+    description: The user requests diffuse illumination from all directions.
+  - id: busy-layered-photomontage
+    description: The user requests a busy layered photomontage.
+  - id: opaque-object-only-study
+    description: The user requests an opaque object without transparent material.
+  - id: requested-one-translucent-plane-with-visible-shadow
+    description: The requested study includes one transparent or translucent plane and its visible cast shadow.
+  - id: sparse-graphic-or-photographic-composition
+    description: The brief permits a sparse graphic or photographic composition.
 pillars:
   - Make one user-specified translucent plane legible by how it transmits and interrupts light.
   - Give the principal cast shadow a distinct, traceable shape that carries equal compositional weight to the object.
@@ -33,6 +46,8 @@ rules:
   - id: one-light-shadow-pair
     axis: lighting_and_occlusion
     importance: core
+    when_contexts:
+      - photogram-shadow-study
     applies_when: The user requests a light-based study with one translucent object and a visible cast shadow.
     instruction: Use one dominant directional light so the requested plane and its principal cast shadow form a traceable object-shadow pair. Keep the shadow direction consistent with the light and allow the shadow to define one large graphic shape.
     observable: The viewer can connect the single visible light direction to the plane's main shadow without extra beams or unrelated shadow shapes.
@@ -46,6 +61,8 @@ rules:
   - id: transparent-plane-legibility
     axis: material_and_optics
     importance: core
+    when_contexts:
+      - photogram-shadow-study
     applies_when: The requested subject includes a transparent or translucent plane.
     instruction: "Distinguish the plane from its background using a small number of physically related cues: a readable edge highlight, partial transmission or tint, and a boundary where it interrupts the cast shadow. Preserve the user's stated material and color."
     observable: The plane reads as transparent or translucent through edge, transmission, and occlusion together rather than through a global color wash.
@@ -59,6 +76,8 @@ rules:
   - id: shadow-negative-space
     axis: composition_and_negative_space
     importance: supporting
+    when_contexts:
+      - sparse-graphic-or-photographic-composition
     applies_when: The brief permits a sparse graphic or photographic composition.
     instruction: Let the plane, its shadow, and the surrounding unmarked field form a small set of balanced geometric areas; keep the rest of the frame open.
     observable: The object-shadow pair remains the focal unit and blank space separates it from the frame edges.

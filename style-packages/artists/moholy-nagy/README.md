@@ -56,4 +56,4 @@
 
 ## 实验方向：透明平面与投影研究
 
-新版可选方向 [`art-direction.yaml`](art-direction.yaml) 把用户指定的半透明平面、单一方向光和一块主投影组成清晰的光学关系；不自动加入机械设备或实验室场景。对照图与模型局限见 [`comparisons/`](comparisons/README.md)。
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，以 `photogram-shadow-study` 为启用上下文，把用户指定的半透明平面、单一方向光和一块主投影组成清晰的光学关系。只有简洁构图适用时，再声明 `sparse-graphic-or-photographic-composition` 启用留白规则；不自动加入机械设备或实验室场景。对照图与模型局限见 [`comparisons/`](comparisons/README.md)。
