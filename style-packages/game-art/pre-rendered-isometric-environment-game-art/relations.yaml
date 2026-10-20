@@ -1,9 +1,17 @@
 related_packages:
-- hand-painted-isometric-strategy
-- isometric-pixel-tactics
-contrast_note: This package is defined by fixed projection and pre-rendered spatial layering; the related
-  packages foreground hand-painted or pixel surface language.
+  - hand-painted-isometric-strategy
+  - isometric-pixel-tactics
+contrast_note: This package is defined by fixed projection and pre-rendered 
+  spatial layering; the related packages foreground hand-painted or pixel 
+  surface language.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
+  note: Cross-style composition is handled by the repository-level workflow, not
+    by this package identity.
+family: game-art
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []

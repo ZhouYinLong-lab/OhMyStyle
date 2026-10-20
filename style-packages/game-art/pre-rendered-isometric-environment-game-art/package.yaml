@@ -15,3 +15,21 @@ files:
   references: references/manifest.csv
   provenance: provenance.yaml
   art_direction: art-direction.yaml
+classification:
+  source_type: game_art
+  medium: Fixed-view isometric environment illustration with a pre-rendered 
+    scene appearance
+  historical_context: 1990s_to_present
+  application: game_art
+  visual_axes:
+    - composition
+    - medium
+    - palette
+    - lighting
+    - surface
+    - texture
+subject_policy:
+  mode: open
+  fixed_subjects: []
+  optional_motifs: []
+  benchmark_subjects: []
