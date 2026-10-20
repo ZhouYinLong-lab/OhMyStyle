@@ -1,0 +1,157 @@
+schema_version: 2.1.0
+status: experimental
+id: tonalism-direction
+name: 色调主义
+base_package: movements/tonalism
+scope:
+  medium: atmospheric tonal painting translated into a restrained visual treatment
+  representation: stylized
+  description: 以相近色阶、柔和空气和被雾化的远近关系建立低声部画面，而不是依赖鲜艳颜色或明确轮廓。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以相近色阶、柔和空气和被雾化的远近关系建立低声部画面，而不是依赖鲜艳颜色或明确轮廓。
+- 'composition: Build a simple value hierarchy from near-neighbor tones, with a quiet anchor and broad atmospheric
+  intervals.; Let forms recede through soft edges and color temperature rather than hard outlines or dramatic
+  perspective.'
+- 'palette: Use a limited family of blue-gray, olive, umber, mauve, and warm haze, keeping adjacent values
+  close.; Reserve the clearest contrast for the focal area and let the rest dissolve gently into related tones.'
+- 'lighting: quality: diffuse atmosphere with low directional emphasis; behavior: Light should feel spread
+  through air or haze, with no theatrical beam or sharp cast-shadow system.; behavior: Preserve enough local
+  contrast to identify the supplied subject.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Build a simple
+    value hierarchy from near-neighbor tones, with a quiet anchor and broad atmospheric intervals.; Let forms
+    recede through soft edges and color temperature rather than hard outlines or dramatic perspective.. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Build a simple value
+    hierarchy from near-neighbor tones, with a quiet anchor and broad atmospheric intervals.; Let forms recede
+    through soft edges and color temperature rather than hard outlines or dramatic perspective..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Build a
+    simple value hierarchy from near-neighbor tones, with a quiet anchor and broad atmospheric intervals.;
+    Let forms recede through soft edges and color temperature rather than hard outlines or dramatic perspective..'
+  evidence:
+    source_ids:
+    - source-tonalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use a limited family of blue-gray,
+    olive, umber, mauve, and warm haze, keeping adjacent values close.; Reserve the clearest contrast for the
+    focal area and let the rest dissolve gently into related tones.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use a limited family of blue-gray,
+    olive, umber, mauve, and warm haze, keeping adjacent values close.; Reserve the clearest contrast for the
+    focal area and let the rest dissolve gently into related tones..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use a limited family of blue-gray, olive, umber, mauve, and warm haze, keeping adjacent values close.;
+    Reserve the clearest contrast for the focal area and let the rest dissolve gently into related tones..'
+  evidence:
+    source_ids:
+    - source-tonalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: diffuse atmosphere with low directional
+    emphasis; behavior: Light should feel spread through air or haze, with no theatrical beam or sharp cast-shadow
+    system.; behavior: Preserve enough local contrast to identify the supplied subject.. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: diffuse atmosphere
+    with low directional emphasis; behavior: Light should feel spread through air or haze, with no theatrical
+    beam or sharp cast-shadow system.; behavior: Preserve enough local contrast to identify the supplied subject..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: diffuse atmosphere
+    with low directional emphasis; behavior: Light should feel spread through air or haze, with no theatrical
+    beam or sharp cast-shadow system.; behavior: Preserve enough local contrast to identify the supplied subject..'
+  evidence:
+    source_ids:
+    - source-tonalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: softly
+    unified paint surface with thin layered color; edges: softened or partially dissolved, with a few firmer
+    edges at the visual anchor. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    softly unified paint surface with thin layered color; edges: softened or partially dissolved, with a few
+    firmer edges at the visual anchor.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: softly unified paint surface with thin layered color; edges: softened or partially dissolved, with
+    a few firmer edges at the visual anchor.'
+  evidence:
+    source_ids:
+    - source-tonalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low-to-medium;
+    texture is subordinate to tonal unity; placement: gentle brush or grain variation in haze, sky-like fields,
+    and transitional edges. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low-to-medium; texture is subordinate to tonal unity; placement: gentle brush or grain variation in haze,
+    sky-like fields, and transitional edges.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low-to-medium; texture is subordinate to tonal unity; placement: gentle brush or grain variation
+    in haze, sky-like fields, and transitional edges.'
+  evidence:
+    source_ids:
+    - source-tonalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-tonalism-primary-source
+  kind: primary
+  base_asset_id: tonalism-primary-source
+execution:
+  route: text_only
+  must:
+  - Establish the user's subject with a simple silhouette and one focal value anchor.
+  - Lay in a narrow family of related tones before adding local description.
+  - Soften secondary edges and push distant areas toward the shared atmospheric value.
+  - Restore only enough focal contrast and material detail for the subject to remain readable.
+  - Related tones and atmospheric recession remain more important than detailed description.
+  - The supplied subject remains legible but is not forced into a landscape.
+  - The image avoids a flat gray wash by keeping a controlled focal contrast.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
