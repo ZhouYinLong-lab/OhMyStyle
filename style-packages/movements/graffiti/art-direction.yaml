@@ -1,0 +1,144 @@
+schema_version: 2.1.0
+status: experimental
+id: graffiti-direction
+name: 涂鸦
+base_package: movements/graffiti
+scope:
+  medium: 城市表面与街头视觉
+  representation: stylized
+  description: 以手写笔触、喷漆边缘、叠写层次、城市表面和高能色块构成直接而有现场感的视觉语言。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以手写笔触、喷漆边缘、叠写层次、城市表面和高能色块构成直接而有现场感的视觉语言。
+- 'form: 手写笔触、喷漆边缘、叠写层次、城市表面和高能色块构成直接的现场感视觉'
+- 'medium: 城市表面与街头视觉'
+- 'composition: 喷涂边缘和覆盖关系有动作来源; 墙面或载体由用户决定; 色块和线条保持层级'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: 手写笔触、喷漆边缘、叠写层次、城市表面和高能色块构成直接的现场感视觉.
+    Do not let generic polish or another package direction replace it. If a cue names a concrete object or
+    motif, do not add it unless the user requests it; translate its formal qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: 手写笔触、喷漆边缘、叠写层次、城市表面和高能色块构成直接的现场感视觉.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: 手写笔触、喷漆边缘、叠写层次、城市表面和高能色块构成直接的现场感视觉.'
+  evidence:
+    source_ids:
+    - source-graffiti-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 城市表面与街头视觉.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 城市表面与街头视觉.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    城市表面与街头视觉.'
+  evidence:
+    source_ids:
+    - source-graffiti-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 喷涂边缘和覆盖关系有动作来源;
+    墙面或载体由用户决定; 色块和线条保持层级. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 喷涂边缘和覆盖关系有动作来源; 墙面或载体由用户决定;
+    色块和线条保持层级.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 喷涂边缘和覆盖关系有动作来源;
+    墙面或载体由用户决定; 色块和线条保持层级.'
+  evidence:
+    source_ids:
+    - source-graffiti-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 喷漆红 #E34D43，角色：主色; 电蓝 #2D72B8，角色：辅助;
+    沥青黑 #25272B，角色：轮廓. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 喷漆红 #E34D43，角色：主色; 电蓝 #2D72B8，角色：辅助;
+    沥青黑 #25272B，角色：轮廓.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    喷漆红 #E34D43，角色：主色; 电蓝 #2D72B8，角色：辅助; 沥青黑 #25272B，角色：轮廓.'
+  evidence:
+    source_ids:
+    - source-graffiti-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 材质细节服从用户主体，并保持可辨识.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 材质细节服从用户主体，并保持可辨识.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    材质细节服从用户主体，并保持可辨识.'
+  evidence:
+    source_ids:
+    - source-graffiti-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: edge-behavior
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 边缘行为由媒介与光线决定，不使用统一发光描边.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 边缘行为由媒介与光线决定，不使用统一发光描边.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    边缘行为由媒介与光线决定，不使用统一发光描边.'
+  evidence:
+    source_ids:
+    - source-graffiti-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- medium
+- composition
+- palette
+- surface
+- edge-behavior
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among form, medium, composition consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-graffiti-primary-source
+  kind: primary
+  base_asset_id: graffiti-primary-source
+execution:
+  route: text_only
+  must:
+  - Translate the user's subject, objects, location, and narrative literally.
+  - Apply the package signature only after the subject is established.
+  - Keep style decisions observable and reversible at the prompt level.
+  - Check that no recurring motif was introduced by the package.
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied composition
+  - named character or branded asset
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
