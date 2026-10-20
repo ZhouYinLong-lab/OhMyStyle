@@ -36,12 +36,12 @@
 
 ## 新架构：空场、透视错位与几何长影（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `metaphysical-spatial-enigma` 时启用。它保留用户指定的主体和场景，在大面积安静空间里设置一处有限的透视或尺度失配，并用长而清楚的阴影构成第二组空间形状。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在显式声明 `metaphysical-spatial-enigma` 时启用。它保留用户指定的主体和场景，在大面积安静空间里设置一处有限的透视或尺度失配。只有调用者声明 `shadow-bearing-ground-plane` 时，才应用长影构成规则。
 
 这与霍普方向对连贯建筑、自然光路径和人物尺度的处理不同；德·基里科方向的空间会在主体仍可读的前提下出现一处有意错位。它不会默认加入钟楼、拱廊、雕像、火车或人体模型，也不把空场变成废墟或恐怖场景。
 
 ```powershell
-python tools/compile-style.py style-packages/artists/giorgio-de-chirico --direction package --context metaphysical-spatial-enigma --subject "One red chair and one closed pale-yellow umbrella in an empty stone courtyard"
+python tools/compile-style.py style-packages/artists/giorgio-de-chirico --direction package --context metaphysical-spatial-enigma --context shadow-bearing-ground-plane --subject "One red chair and one closed pale-yellow umbrella in an empty stone courtyard"
 ```
 
 [`comparisons/`](comparisons/) 中保存相同主体的旧版、新版编译 job 和实际生成图；生成对照可用于人工判断，新方向仍为实验状态。

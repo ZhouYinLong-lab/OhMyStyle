@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: de-chirico-shadow-geometry-and-spatial-dislocation
 name: de Chirico shadow geometry and spatial dislocation
@@ -23,6 +23,17 @@ scope:
     - Preserve the user-requested subject, setting, count, and object relationships; introduce no standard de Chirico motifs by default.
     - Limit spatial disagreement to one or two deliberate relationships so the scene remains structurally readable.
     - Make long shadows visually clear, but do not imply an unrequested person, event, threat, or hidden figure.
+contexts:
+  - id: metaphysical-spatial-enigma
+    description: A user-requested architectural or object-led scene with an uncanny spatial mood.
+  - id: strict-single-point-architectural-render
+    description: An architectural rendering requiring consistent perspective.
+  - id: crowded-narrative-interior
+    description: A densely populated interior with several simultaneous actions.
+  - id: photorealistic-real-estate-image
+    description: A photorealistic property image with coherent spatial depiction.
+  - id: shadow-bearing-ground-plane
+    description: The requested scene includes a broad ground plane where long shadows can be legible.
 pillars:
   - Keep broad areas of floor, wall, or sky quiet so the requested objects feel isolated without turning the scene into a ruin.
   - Set a mostly stable architectural grid, then introduce one controlled perspective, scale, or alignment discrepancy.
@@ -46,6 +57,8 @@ rules:
   - id: long-shadow-as-independent-shape
     axis: light_and_shadow
     importance: core
+    when_contexts:
+      - shadow-bearing-ground-plane
     applies_when: The user requests a low-angle, late-day, or enigmatic architectural light treatment.
     instruction: Cast one or two long, clean-edged shadows across a broad ground plane; let their direction or visible origin remain slightly ambiguous without adding an unseen character or event.
     observable: Shadow shapes become compositional forms that cross the empty space while the requested objects remain identifiable.
