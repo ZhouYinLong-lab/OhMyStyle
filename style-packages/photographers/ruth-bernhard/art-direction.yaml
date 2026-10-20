@@ -1,0 +1,135 @@
+schema_version: 2.1.0
+status: experimental
+id: ruth-bernhard-direction
+name: 露丝·伯恩哈德
+base_package: photographers/ruth-bernhard
+scope:
+  medium: 摄影
+  representation: recognizable
+  description: 以克制的黑白影调、雕塑般的轮廓、亲密的静物与人体观察建立安静而精确的摄影形体。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以克制的黑白影调、雕塑般的轮廓、亲密的静物与人体观察建立安静而精确的摄影形体。
+- 'composition: 以单一主体、局部裁切和负空间强调形体; 轮廓像雕塑一样清晰，但不追求硬朗商业棚拍; 画面安静、集中、留有观察余地'
+- 'palette: 黑白或极低饱和的中性灰阶; 亮部与暗部过渡连续，避免纯黑纯白占满画面; 颜色不替代光线和形体关系'
+- 'lighting: quality: 大型柔光或侧向光塑造细腻体积; behavior: 阴影深但保留层次，避免戏剧化轮廓光'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以单一主体、局部裁切和负空间强调形体;
+    轮廓像雕塑一样清晰，但不追求硬朗商业棚拍; 画面安静、集中、留有观察余地. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以单一主体、局部裁切和负空间强调形体;
+    轮廓像雕塑一样清晰，但不追求硬朗商业棚拍; 画面安静、集中、留有观察余地.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以单一主体、局部裁切和负空间强调形体;
+    轮廓像雕塑一样清晰，但不追求硬朗商业棚拍; 画面安静、集中、留有观察余地.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑白或极低饱和的中性灰阶; 亮部与暗部过渡连续，避免纯黑纯白占满画面;
+    颜色不替代光线和形体关系. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑白或极低饱和的中性灰阶; 亮部与暗部过渡连续，避免纯黑纯白占满画面;
+    颜色不替代光线和形体关系.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑白或极低饱和的中性灰阶; 亮部与暗部过渡连续，避免纯黑纯白占满画面; 颜色不替代光线和形体关系.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 大型柔光或侧向光塑造细腻体积; behavior: 阴影深但保留层次，避免戏剧化轮廓光.
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 大型柔光或侧向光塑造细腻体积; behavior:
+    阴影深但保留层次，避免戏剧化轮廓光.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 大型柔光或侧向光塑造细腻体积;
+    behavior: 阴影深但保留层次，避免戏剧化轮廓光.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 细腻的银盐照片质感;
+    edges: subject-dependent and medium-aware. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    细腻的银盐照片质感; edges: subject-dependent and medium-aware.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 细腻的银盐照片质感; edges: subject-dependent and medium-aware.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 低到中等颗粒，集中在暗部和纸面;
+    placement: 纹理服务于形体，不增加复古滤镜. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    低到中等颗粒，集中在暗部和纸面; placement: 纹理服务于形体，不增加复古滤镜.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 低到中等颗粒，集中在暗部和纸面; placement: 纹理服务于形体，不增加复古滤镜.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-01
+  kind: ruth_bernhard
+  base_asset_id: primary-01
+execution:
+  route: text_only
+  must:
+  - 先确定主体轮廓和负空间
+  - 以单一中性光源建立体积
+  - 控制黑白阶调和背景干净度
+  - 检查画面是否保持亲密观察而非摆拍广告
+  - 雕塑般的黑白形体
+  - 局部裁切与安静负空间
+  - 连续阶调而非高反差滤镜
+  - 近距离观察但不制造戏剧叙事
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
+    protected game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
