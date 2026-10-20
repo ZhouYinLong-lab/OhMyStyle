@@ -76,4 +76,4 @@
 
 ## 实验方向：沿景观路径串联活动
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 适用于用户指定的宽幅景观和多种远近活动：把前景、中景、远景中的活动安排成逐级发现的视觉顺序，并在用户指定或允许路径时用一条连续路线串联。它不默认添加农民、收获、村庄、冬景或额外情节。对照图和规则评审见 [`comparisons/`](comparisons/README.md)；当前方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，适用于用户指定的宽幅景观和多种远近活动：把前景、中景、远景中的活动安排成逐级发现的视觉顺序。只有调用者声明 `visible-route` 时，才启用路线串联规则；只有声明 `figures-at-multiple-depths` 时，才启用远处人物的姿态简化规则。它不默认添加农民、收获、村庄、冬景或额外情节。对照图和规则评审见 [`comparisons/`](comparisons/README.md)；当前方向仍处于实验状态。

@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: bruegel-micro-actions-landscape-route
 name: Bruegel micro-actions along a landscape route
@@ -26,6 +26,19 @@ scope:
     - Use a route only when the user has requested or allowed a path, road, shoreline, or comparable connector; do not invent one to force a narrative.
     - Keep distant people small but distinguishable by pose and group relation; do not invent extra subplots or characters.
     - Do not copy a named Bruegel work's composition, figures, landmarks, or motifs.
+contexts:
+  - id: landscape-with-multiple-activities
+    description: A user-requested wide landscape containing at least two distinct activities.
+  - id: isolated-single-figure-portrait
+    description: A portrait centered on one isolated figure.
+  - id: overhead-map-or-diagram
+    description: A map or diagram viewed from directly above.
+  - id: photorealistic-location-documentation
+    description: A photographic record of a real location.
+  - id: visible-route
+    description: The user requests or allows a path, road, shoreline, or comparable route.
+  - id: figures-at-multiple-depths
+    description: The requested scene includes figures at both foreground and distant depths.
 pillars:
   - Give user-requested activities distinct spatial stations across the foreground, middle distance, and background.
   - Use one continuous user-requested route to connect those stations and create a readable order of attention.
@@ -48,6 +61,8 @@ rules:
   - id: route-led-reading-order
     axis: path_and_viewer_sequence
     importance: core
+    when_contexts:
+      - visible-route
     applies_when: The user requests or permits a visible route through a populated landscape.
     instruction: Let one continuous route pass near the foreground activity and continue toward a different middle- or background activity; keep its course legible while allowing the landscape to interrupt or partly conceal it naturally.
     observable: The route gives the eye a clear near-to-far sequence and leads to an action cluster rather than ending as decoration.
@@ -62,6 +77,8 @@ rules:
   - id: pose-readable-at-distance
     axis: figure_gesture_and_detail
     importance: supporting
+    when_contexts:
+      - figures-at-multiple-depths
     applies_when: The requested activities include figures at different depths.
     instruction: Simplify distant figures into clear silhouettes and action-specific group poses, reserving finer detail for the principal foreground activity.
     observable: The distant activity can be inferred from pose and grouping, while small faces and clothing details do not compete with the foreground.
