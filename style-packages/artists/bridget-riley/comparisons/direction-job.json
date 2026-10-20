@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "bridget-riley",
+    "name": "布里奇特·莱利",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\bridget-riley"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A field of curved black and white bands with a gradual wave",
+  "prompt": "USER SUBJECT: A field of curved black and white bands with a gradual wave\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: flat_painting_or_print\nREPRESENTATION: nonfigurative\nAPPLY THESE AUTHORED VISUAL RULES:\n- [measured-serial-progression] Select one band, curve, or cell unit and repeat it across the field; introduce a controlled progression in spacing, width, curvature, or direction, with at most a few intentional interruptions.\n- [contrast-through-adjacency] Begin with a controlled set of adjacent values or colors; let contrast arise where units meet, and add hue only when it strengthens the sequence rather than becoming a global glow.\n- [flat-plane-and-edge-control] Keep the image on one flat plane with clean, stable edges and subtle hand-made variation; do not use perspective convergence, cast shadows, or material texture to imply a physical corridor or object.\n- [rhythm-contrast-flatness-coherence] Let repeated units, their contrast, and edge behavior form one consistent visual sequence on a flat plane; maintain enough clarity for the eye to follow the progression.\nREQUIREMENT: Declare the abstract-field context before applying the direction.\nREQUIREMENT: Preserve a measurable unit and coherent progression across the whole image.\nREQUIREMENT: Generate perceptual movement through adjacency, not simulated light or depth.\nREQUIREMENT: Keep edges clear and contrast controlled.",
+  "negative_prompt": "random stripe variation, decorative flourishes, and arbitrary focal objects\nneon glow, gradient overlays, and uniform color filters\nliteral tunnels, cast shadows, simulated relief, and texture overlays\nturning requested representational subjects into stripes or grids without instruction\ncopying a named work's geometry or repeat pattern\nneon glow, strobe-like contrast, literal 3D forms, and gradient lighting",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "riley-serial-rhythm-and-perceptual-motion",
+    "name": "Riley serial rhythm and perceptual motion",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\bridget-riley\\art-direction.yaml",
+    "sha256": "a6c8c4cb6b401405f9c1004a453b452305914fdf9d35e14c24bfaf71c1a50b8f",
+    "active_rule_ids": [
+      "measured-serial-progression",
+      "contrast-through-adjacency",
+      "flat-plane-and-edge-control"
+    ],
+    "contexts": [
+      "abstract-field"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare the abstract-field context before applying the direction.",
+      "Preserve a measurable unit and coherent progression across the whole image.",
+      "Generate perceptual movement through adjacency, not simulated light or depth.",
+      "Keep edges clear and contrast controlled."
+    ],
+    "avoid": [
+      "turning requested representational subjects into stripes or grids without instruction",
+      "copying a named work's geometry or repeat pattern",
+      "neon glow, strobe-like contrast, literal 3D forms, and gradient lighting"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "flat_painting_or_print",
+      "representation": "nonfigurative",
+      "description": "An abstract-field direction built from repeated geometric units whose spacing, width, curvature, or value changes in a controlled sequence, producing perceptual movement on a flat surface without simulating literal three-dimensional depth.",
+      "required_contexts": [
+        "abstract-field"
+      ],
+      "incompatible_contexts": [
+        "representational-scene",
+        "photorealistic-output",
+        "text-dominant-layout"
+      ],
+      "limitations": [
+        "Use only when the caller requests an abstract field; do not transform a person, object, or place into stripes without asking for that treatment.",
+        "Build a new rhythm and geometry; do not recreate a known Riley composition or named work.",
+        "Keep contrast and repetition readable without flicker claims, extreme strobing, or neon glow."
+      ]
+    },
+    "rules": [
+      {
+        "id": "measured-serial-progression",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Select one band, curve, or cell unit and repeat it across the field; introduce a controlled progression in spacing, width, curvature, or direction, with at most a few intentional interruptions.",
+        "observable": "The eye can follow a coherent sequence, and any local disruption sharpens rather than breaks the overall rhythm.",
+        "reject_when": "Units vary randomly, repetitions lose a readable progression, or ornament competes with the field's underlying structure.",
+        "evidence": {
+          "source_ids": [
+            "riley-moma-current",
+            "riley-nga-balm"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "random stripe variation, decorative flourishes, and arbitrary focal objects"
+      },
+      {
+        "id": "contrast-through-adjacency",
+        "axis": "palette_and_perception",
+        "importance": "core",
+        "applies_when": "Adjacent units create a value or color interaction.",
+        "instruction": "Begin with a controlled set of adjacent values or colors; let contrast arise where units meet, and add hue only when it strengthens the sequence rather than becoming a global glow.",
+        "observable": "The field appears to pulse, bend, or shift through adjacency while each region remains a flat, distinct painted shape.",
+        "reject_when": "Gradient lighting, neon glow, or uniform color tint creates the effect instead of the relationships between units.",
+        "evidence": {
+          "source_ids": [
+            "riley-moma-current",
+            "riley-nga-balm"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "neon glow, gradient overlays, and uniform color filters"
+      },
+      {
+        "id": "flat-plane-and-edge-control",
+        "axis": "surface_and_space",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Keep the image on one flat plane with clean, stable edges and subtle hand-made variation; do not use perspective convergence, cast shadows, or material texture to imply a physical corridor or object.",
+        "observable": "The optical effect remains active without the field appearing to depict a tunnel, bulging object, or light source.",
+        "reject_when": "Shading creates literal volume, texture overwhelms the pattern, or edges become mechanically perfect and sterile.",
+        "evidence": {
+          "source_ids": [
+            "riley-moma-current",
+            "riley-nga-balm"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "literal tunnels, cast shadows, simulated relief, and texture overlays"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "rhythm-contrast-flatness-coherence",
+        "rule_ids": [
+          "measured-serial-progression",
+          "contrast-through-adjacency",
+          "flat-plane-and-edge-control"
+        ],
+        "instruction": "Let repeated units, their contrast, and edge behavior form one consistent visual sequence on a flat plane; maintain enough clarity for the eye to follow the progression.",
+        "observable": "The field produces controlled perceptual movement, remains visibly flat, and has no single effect that conflicts with the sequence."
+      }
+    ],
+    "sources": [
+      {
+        "id": "riley-moma-current",
+        "kind": "museum_audio_object_record",
+        "url": "https://www.moma.org/audio/playlist/297/4821"
+      },
+      {
+        "id": "riley-nga-balm",
+        "kind": "museum_object_record",
+        "url": "https://www.nga.gov/artists/1828-bridget-riley"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "a6c8c4cb6b401405f9c1004a453b452305914fdf9d35e14c24bfaf71c1a50b8f",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

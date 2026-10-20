@@ -42,3 +42,7 @@ python tools/compile-style.py style-packages/artists/bridget-riley --direction p
 ```
 
 This direction remains experimental. MoMA and National Gallery of Art collection records support these observations; generation stability across different repeated units remains pending.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "bridget-riley",
+    "name": "布里奇特·莱利",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\bridget-riley"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A field of curved black and white bands with a gradual wave",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied A field of curved black and white bands with a gradual wave and the user-requested setting are authoritative.\n- This package controls visual treatment only: medium, composition, lighting,\n  palette, surface, texture, and edge behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of A field of curved black and white bands with a gradual wave in the user-requested setting. Apply the package's observable\nmedium, composition, lighting, palette, surface, and texture decisions from the\nstyle files: serial repetition, measured spacing, flat painted plane, controlled\ncontrast, and limited structural color. Preserve the package invariants while inventing a new scene: do not\ncopy any reference work, named character, exact pose, recognizable layout, logo,\nor text. Keep the subject and narrative supplied by the user independent from\nthe package's visual identity. Use concrete visual instructions rather than the\npackage name alone.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied reference composition, recognizable character, logo, watermark, artist signature,\nunintended readable text, generic global color filter, incompatible medium, neon glow,\n3D tunnel, lens distortion, checkerboard wallpaper, mandatory stripe pattern, duplicate objects",
+  "template_variables": {
+    "SUBJECT": "A field of curved black and white bands with a gradual wave",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "abstract_field": {
+        "required": [
+          "repeated unit follows a controlled progression",
+          "optical movement comes from adjacency rather than literal depth",
+          "field remains flat with no neon glow or copied composition"
+        ],
+        "reject_if": [
+          "randomly varied units obscure the sequence",
+          "representational objects appear without request"
+        ]
+      },
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "the user-supplied portrait remains identifiable if the package is applied to it",
+          "optical rhythm does not become a literal face or fixed pattern"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "requested objects remain present while spacing or contrast carries the style",
+          "flat treatment does not become a generic 3D render"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

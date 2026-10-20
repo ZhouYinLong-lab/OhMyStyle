@@ -54,3 +54,7 @@ python tools/compile-style.py style-packages/artists/bridget-riley --direction p
 ```
 
 方向仍处于实验状态。MoMA 与美国国家美术馆的馆藏资料支持这些观察；不同重复单元的生成稳定性仍待评审。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。
