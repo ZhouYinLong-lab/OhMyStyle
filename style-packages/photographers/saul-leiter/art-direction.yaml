@@ -1,0 +1,152 @@
+schema_version: 2.1.0
+status: experimental
+id: saul-leiter-direction
+name: 索尔·雷特
+base_package: photographers/saul-leiter
+scope:
+  medium: 彩色胶片或等效色彩响应; 近距离街头取景; 浅景深与局部失焦
+  representation: recognizable
+  description: 以彩色街头摄影中的遮挡、反射、雨雪、玻璃和低饱和色块构成近距离诗意观察，强调焦点不确定性与日常中的抽象关系。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - clean_street_documentary
+  - oversharpened_hdr
+  - exact_photo_reconstruction
+  - generic_teal_orange_grade
+pillars:
+- 以彩色街头摄影中的遮挡、反射、雨雪、玻璃和低饱和色块构成近距离诗意观察，强调焦点不确定性与日常中的抽象关系。
+- 'medium: 彩色胶片或等效色彩响应; 近距离街头取景; 浅景深与局部失焦'
+- 'composition: 前景遮挡或玻璃层切割视野; 主体可能只露出一部分; 色块和反射先于事件解释'
+- 'palette: 砖红、黄、深蓝、粉紫和灰绿形成低到中饱和色块; 红伞、车灯或墙面可作为孤立色点; 肤色与环境保持自然'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 彩色胶片或等效色彩响应;
+    近距离街头取景; 浅景深与局部失焦.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 彩色胶片或等效色彩响应;
+    近距离街头取景; 浅景深与局部失焦.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    彩色胶片或等效色彩响应; 近距离街头取景; 浅景深与局部失焦.'
+  evidence:
+    source_ids:
+    - source-saul-leiter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 前景遮挡或玻璃层切割视野;
+    主体可能只露出一部分; 色块和反射先于事件解释. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 前景遮挡或玻璃层切割视野; 主体可能只露出一部分;
+    色块和反射先于事件解释.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 前景遮挡或玻璃层切割视野;
+    主体可能只露出一部分; 色块和反射先于事件解释.'
+  evidence:
+    source_ids:
+    - source-saul-leiter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 砖红、黄、深蓝、粉紫和灰绿形成低到中饱和色块; 红伞、车灯或墙面可作为孤立色点;
+    肤色与环境保持自然. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 砖红、黄、深蓝、粉紫和灰绿形成低到中饱和色块; 红伞、车灯或墙面可作为孤立色点;
+    肤色与环境保持自然.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    砖红、黄、深蓝、粉紫和灰绿形成低到中饱和色块; 红伞、车灯或墙面可作为孤立色点; 肤色与环境保持自然.'
+  evidence:
+    source_ids:
+    - source-saul-leiter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 阴天、雨天或窗内漫射光; 反射光柔和并保留色彩来源; 不使用商业轮廓光. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 阴天、雨天或窗内漫射光; 反射光柔和并保留色彩来源;
+    不使用商业轮廓光.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 阴天、雨天或窗内漫射光; 反射光柔和并保留色彩来源;
+    不使用商业轮廓光.'
+  evidence:
+    source_ids:
+    - source-saul-leiter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 玻璃、水、雪、车漆和墙面反射可辨;
+    轻微胶片色彩偏移. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 玻璃、水、雪、车漆和墙面反射可辨;
+    轻微胶片色彩偏移.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    玻璃、水、雪、车漆和墙面反射可辨; 轻微胶片色彩偏移.'
+  evidence:
+    source_ids:
+    - source-saul-leiter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 颗粒细而不重; 雾气和雨痕形成自然软化.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 颗粒细而不重;
+    雾气和雨痕形成自然软化.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    颗粒细而不重; 雾气和雨痕形成自然软化.'
+  evidence:
+    source_ids:
+    - source-saul-leiter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-saul-leiter-primary-source
+  kind: primary
+  base_asset_id: saul-leiter-primary-source
+execution:
+  route: text_only
+  must:
+  - 先找遮挡层和色块关系
+  - 再决定焦点落在前景或背景
+  - 保持曝光克制
+  - 最后检查反射是否有来源
+  - 日常片段被抽象成色彩和遮挡关系
+  - 不靠夸张戏剧叙事
+  - 不复制具体街景或人物
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - clean_street_documentary
+  - oversharpened_hdr
+  - exact_photo_reconstruction
+  - generic_teal_orange_grade
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
