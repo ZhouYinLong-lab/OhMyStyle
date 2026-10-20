@@ -1,0 +1,144 @@
+schema_version: 2.1.0
+status: experimental
+id: memphis-direction
+name: 孟菲斯风格
+base_package: movements/memphis
+scope:
+  medium: 后现代设计
+  representation: stylized
+  description: 以几何形体、明亮撞色、装饰性图案和不对称组合打破严肃功能主义，形成 playful 的平面空间。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以几何形体、明亮撞色、装饰性图案和不对称组合打破严肃功能主义，形成 playful 的平面空间。
+- 'form: 几何形体、明亮撞色、装饰图案和不对称组合打破严肃功能主义，形成活泼平面空间'
+- 'medium: 后现代设计'
+- 'composition: 圆、三角、波浪和柱体形成层次; 撞色承担结构分区; 图案有规律而非随机噪声'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: 几何形体、明亮撞色、装饰图案和不对称组合打破严肃功能主义，形成活泼平面空间.
+    Do not let generic polish or another package direction replace it. If a cue names a concrete object or
+    motif, do not add it unless the user requests it; translate its formal qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: 几何形体、明亮撞色、装饰图案和不对称组合打破严肃功能主义，形成活泼平面空间.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: 几何形体、明亮撞色、装饰图案和不对称组合打破严肃功能主义，形成活泼平面空间.'
+  evidence:
+    source_ids:
+    - source-memphis-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 后现代设计.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 后现代设计.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    后现代设计.'
+  evidence:
+    source_ids:
+    - source-memphis-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 圆、三角、波浪和柱体形成层次;
+    撞色承担结构分区; 图案有规律而非随机噪声. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 圆、三角、波浪和柱体形成层次; 撞色承担结构分区;
+    图案有规律而非随机噪声.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 圆、三角、波浪和柱体形成层次;
+    撞色承担结构分区; 图案有规律而非随机噪声.'
+  evidence:
+    source_ids:
+    - source-memphis-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 珊瑚 #F36F56，角色：暖色块; 钴蓝 #2454A6，角色：冷色块;
+    柠黄 #F6D64A，角色：强调色. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 珊瑚 #F36F56，角色：暖色块; 钴蓝 #2454A6，角色：冷色块;
+    柠黄 #F6D64A，角色：强调色.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    珊瑚 #F36F56，角色：暖色块; 钴蓝 #2454A6，角色：冷色块; 柠黄 #F6D64A，角色：强调色.'
+  evidence:
+    source_ids:
+    - source-memphis-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 材质细节服从用户主体，并保持可辨识.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 材质细节服从用户主体，并保持可辨识.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    材质细节服从用户主体，并保持可辨识.'
+  evidence:
+    source_ids:
+    - source-memphis-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: edge-behavior
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 边缘行为由媒介与光线决定，不使用统一发光描边.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 边缘行为由媒介与光线决定，不使用统一发光描边.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    边缘行为由媒介与光线决定，不使用统一发光描边.'
+  evidence:
+    source_ids:
+    - source-memphis-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- medium
+- composition
+- palette
+- surface
+- edge-behavior
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among form, medium, composition consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-memphis-primary-source
+  kind: primary
+  base_asset_id: memphis-primary-source
+execution:
+  route: text_only
+  must:
+  - Translate the user's subject, objects, location, and narrative literally.
+  - Apply the package signature only after the subject is established.
+  - Keep style decisions observable and reversible at the prompt level.
+  - Check that no recurring motif was introduced by the package.
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied composition
+  - named character or branded asset
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
