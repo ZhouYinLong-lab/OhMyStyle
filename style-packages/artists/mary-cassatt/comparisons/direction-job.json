@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "mary-cassatt",
+    "name": "玛丽·卡萨特",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\mary-cassatt"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "An adult repairing a canvas bag beside a patterned curtain",
+  "prompt": "USER SUBJECT: An adult repairing a canvas bag beside a patterned curtain\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [figure-volume-against-flat-pattern] Keep the figure's head, limbs, and gesture modeled as coherent rounded forms while allowing surrounding pattern to read as flatter color shapes; preserve a clear boundary without turning the whole image into a flat graphic.\n- [composed-pattern-and-color-planes] Arrange visible patterns as a few legible fields that support the figure and the requested action; use distinct local colors and selected dark contours where useful, while preserving quiet intervals and material differences.\n- [deliberate-viewpoint-and-crop] Choose a stable viewpoint that clarifies the figure and nearby surfaces; crop only when the user requests a close frame or when a deliberate edge relationship improves the composition.\n- [figure-pattern-action-coherence] Keep the requested figure and action primary while viewpoint and patterned surfaces create a clear, balanced scene.\nREQUIREMENT: Declare patterned-domestic-figure-scene before applying this direction.\nREQUIREMENT: Preserve the user's subjects, setting, action, and requested number of figures.\nREQUIREMENT: Use patterned planes and viewpoint only when supported by the requested scene.\nREQUIREMENT: Keep figures and important actions legible against decorative surfaces.",
+  "negative_prompt": "pattern-filled anatomy, mandatory floral wallpaper, and uniform flattening\ninvented Japanese props, blanket ornament, and global pastel wash\ncompulsory overhead view, accidental edge cuts, and voyeuristic framing\nadding mother-and-child roles, Japanese props, flowers, or period clothing without request\nflattening the figure together with the background\ncopying a named artwork's exact crop, pose, pattern, or layout",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "cassatt-patterned-domestic-plane",
+    "name": "Cassatt patterned domestic plane",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\mary-cassatt\\art-direction.yaml",
+    "sha256": "4192187be91f03653f60b69ee866cd78e499e455cf2a30ce1169be47e22ec633",
+    "active_rule_ids": [
+      "figure-volume-against-flat-pattern",
+      "composed-pattern-and-color-planes",
+      "deliberate-viewpoint-and-crop"
+    ],
+    "contexts": [
+      "patterned-domestic-figure-scene"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare patterned-domestic-figure-scene before applying this direction.",
+      "Preserve the user's subjects, setting, action, and requested number of figures.",
+      "Use patterned planes and viewpoint only when supported by the requested scene.",
+      "Keep figures and important actions legible against decorative surfaces."
+    ],
+    "avoid": [
+      "adding mother-and-child roles, Japanese props, flowers, or period clothing without request",
+      "flattening the figure together with the background",
+      "copying a named artwork's exact crop, pose, pattern, or layout"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "recognizable",
+      "description": "A figure-centered direction in which rounded bodies and faces remain legible against shallow, patterned interiors. High or oblique viewpoints, cropped edges, and decorative color planes may organize the scene, while pattern supports rather than overwhelms the figure. It describes compositional and surface choices, not a required family subject or period costume.",
+      "required_contexts": [
+        "patterned-domestic-figure-scene"
+      ],
+      "incompatible_contexts": [
+        "deep-cinematic-room",
+        "unpatterned-photographic-background",
+        "mandatory-mother-and-child"
+      ],
+      "limitations": [
+        "Preserve the requested people, relationships, age, clothing, pose, setting, and count.",
+        "Use a domestic interior or patterned field only when it fits the user's setting; do not invent family roles.",
+        "Keep patterns subordinate to readable anatomy and the requested action; do not copy a named print's layout."
+      ]
+    },
+    "rules": [
+      {
+        "id": "figure-volume-against-flat-pattern",
+        "axis": "figure_ground_relationship",
+        "importance": "core",
+        "applies_when": "A figure is placed against a patterned interior, textile, or other decorative field.",
+        "instruction": "Keep the figure's head, limbs, and gesture modeled as coherent rounded forms while allowing surrounding pattern to read as flatter color shapes; preserve a clear boundary without turning the whole image into a flat graphic.",
+        "observable": "The person remains volumetric and readable while the patterned field has its own distinct, organized rhythm.",
+        "reject_when": "Pattern fragments the face or hands, the figure loses its volume, or the background becomes an unrelated all-over motif.",
+        "evidence": {
+          "source_ids": [
+            "cassatt-nga-catalogue",
+            "cassatt-met-portrait-girl"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "pattern-filled anatomy, mandatory floral wallpaper, and uniform flattening"
+      },
+      {
+        "id": "composed-pattern-and-color-planes",
+        "axis": "surface_and_color_organization",
+        "importance": "core",
+        "applies_when": "The requested scene includes visible fabric, wallpaper, furnishings, or other patterned surfaces.",
+        "instruction": "Arrange visible patterns as a few legible fields that support the figure and the requested action; use distinct local colors and selected dark contours where useful, while preserving quiet intervals and material differences.",
+        "observable": "Pattern, contour, and local color help organize the scene rather than acting as a global filter or generic decorative overlay.",
+        "reject_when": "Unrequested motifs dominate, materials become indistinguishable, or ornament replaces the user's setting.",
+        "evidence": {
+          "source_ids": [
+            "cassatt-nga-woman-bathing",
+            "cassatt-nga-catalogue"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "invented Japanese props, blanket ornament, and global pastel wash"
+      },
+      {
+        "id": "deliberate-viewpoint-and-crop",
+        "axis": "viewpoint_and_framing",
+        "importance": "supporting",
+        "applies_when": "The requested subject benefits from an elevated or oblique view of a figure in a close setting.",
+        "instruction": "Choose a stable viewpoint that clarifies the figure and nearby surfaces; crop only when the user requests a close frame or when a deliberate edge relationship improves the composition.",
+        "observable": "The viewpoint feels composed around the figure and scene, not like an arbitrary cut or surveillance snapshot.",
+        "reject_when": "The camera angle distorts requested anatomy, removes important action, or copies a recognizable source layout.",
+        "evidence": {
+          "source_ids": [
+            "cassatt-met-portrait-girl",
+            "cassatt-nga-catalogue"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "compulsory overhead view, accidental edge cuts, and voyeuristic framing"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "figure-pattern-action-coherence",
+        "rule_ids": [
+          "figure-volume-against-flat-pattern",
+          "composed-pattern-and-color-planes",
+          "deliberate-viewpoint-and-crop"
+        ],
+        "instruction": "Keep the requested figure and action primary while viewpoint and patterned surfaces create a clear, balanced scene.",
+        "observable": "The figure remains anatomically readable, patterns stay organized, and framing supports the requested action."
+      }
+    ],
+    "sources": [
+      {
+        "id": "cassatt-nga-catalogue",
+        "kind": "museum_catalogue",
+        "url": "https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/research/publications/pdfs/mary-cassatt-1844-1926.pdf"
+      },
+      {
+        "id": "cassatt-nga-woman-bathing",
+        "kind": "museum_artwork_description",
+        "url": "https://www.nga.gov/artworks/33350-woman-bathing"
+      },
+      {
+        "id": "cassatt-met-portrait-girl",
+        "kind": "museum_artwork_description",
+        "url": "https://www.metmuseum.org/art/collection/search/10406"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "4192187be91f03653f60b69ee866cd78e499e455cf2a30ce1169be47e22ec633",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
