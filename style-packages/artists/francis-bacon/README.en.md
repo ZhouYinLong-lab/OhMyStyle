@@ -26,7 +26,7 @@ The research entry is the [Museum of Modern Art Francis Bacon archive](https://w
 
 ## New architecture: enclosed space and localized contour shift (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `enclosed-figurative-tension`. It compresses space around a user-supplied subject with a simple frame, shifts contours in a few places, and exposes overpainted or scraped layers while requiring the subject to stay recognizable.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when the user declares `enclosed-figurative-tension`. It compresses space around a user-supplied subject with a simple frame and shifts contours in a few places while requiring the subject to stay recognizable. Visible overpainting and scraping activate only when the caller declares `visibly-expressive-oil-surface-requested`.
 
 This differs from Goya's direction, which shapes psychological presence through expression, facial detail, and dark-ground brushwork. Bacon's direction centers the relation between an enclosing spatial frame and localized contour shifts. It does not automatically add a person, screaming, violence, a cross, or an arena.
 

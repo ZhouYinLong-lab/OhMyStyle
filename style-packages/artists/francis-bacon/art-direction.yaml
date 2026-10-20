@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: bacon-enclosed-space-and-localized-distortion
 name: Bacon enclosed space and localized distortion
@@ -23,6 +23,17 @@ scope:
     - Only use a figure or object supplied by the user; do not add a person, animal, portrait, or body part by default.
     - Keep any contour shift localized and recover the requested subject's identity and count.
     - Use enclosure and dark or saturated fields only when they fit the requested setting; do not add violence, screaming, crosses, arenas, or meat imagery.
+contexts:
+  - id: enclosed-figurative-tension
+    description: A user-requested figurative painting organized around compressed space and localized tension.
+  - id: open-atmospheric-landscape
+    description: An open landscape organized by atmospheric distance rather than enclosure.
+  - id: photorealistic-editorial-portrait
+    description: A photorealistic portrait without visible painting intervention.
+  - id: mandatory-horror-scene
+    description: A scene whose requested genre requires horror imagery.
+  - id: visibly-expressive-oil-surface-requested
+    description: The user requests visible overpainting, scraping, or altered oil-paint surface.
 pillars:
   - Compress space around the existing subject with a spare frame or shallow architectural cue rather than a fully described room.
   - Apply small, selective contour displacements through dragged, scraped, or overpainted marks while preserving recognition.
@@ -60,6 +71,8 @@ rules:
   - id: overpaint-scrape-and-color-field
     axis: surface_and_color
     importance: supporting
+    when_contexts:
+      - visibly-expressive-oil-surface-requested
     applies_when: The user requests a visibly, materially expressive oil-painted surface.
     instruction: Build a few distinct color fields and show selected dragged, scraped, covered, or thinly washed passages; reserve the strongest surface disturbance for places where it reinforces the subject's tension.
     observable: Paint layers and corrections remain visible in selected areas while the overall color structure stays coherent.

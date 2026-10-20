@@ -26,7 +26,7 @@
 
 ## 新架构：封闭空间与局部轮廓偏移（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `enclosed-figurative-tension` 时启用。它以简单框架压缩用户已有主体周围的空间，在少数位置偏移轮廓，并让覆盖、擦刮的颜料层次可见，同时要求主体仍可辨认。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户指定 `enclosed-figurative-tension` 时启用。它以简单框架压缩用户已有主体周围的空间，在少数位置偏移轮廓，同时要求主体仍可辨认。只有调用者声明 `visibly-expressive-oil-surface-requested` 时，才应用颜料覆盖和擦刮的表面规则。
 
 这不同于戈雅方向以表情、面部细节和暗背景笔触塑造心理肖像；培根方向的辨识点是空间框架与局部轮廓偏移之间的关系。新版不会自动加入人物、尖叫、暴力、十字架或竞技场。
 
