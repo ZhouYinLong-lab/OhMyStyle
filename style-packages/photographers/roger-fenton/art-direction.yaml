@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: roger-fenton-direction
+name: 罗杰·芬顿
+base_package: photographers/roger-fenton
+scope:
+  medium: salted_paper_and_wet_collodion_print
+  representation: recognizable
+  description: A nineteenth-century documentary photography profile built from deliberate field composition,
+    restrained tonal range, material evidence, and dignified human or landscape observation.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied famous composition
+  - generic style filter
+  - unmotivated decorative effects
+pillars:
+- A nineteenth-century documentary photography profile built from deliberate field composition, restrained
+  tonal range, material evidence, and dignified human or landscape observation.
+- 'composition: use a deliberate road, ridge, tent line, or camp arrangement to organize the field; place human
+  figures as scale and evidence rather than dramatic heroes; leave enough empty terrain for the event''s aftermath
+  or context'
+- 'palette: monochrome silver-gray with restrained warm paper bias; skies and ground retain separate tonal
+  texture'
+- 'lighting: quality: open_field_daylight; behavior: exposure is even enough to read terrain, cloth, and equipment;
+  behavior: contrast is controlled, with no cinematic crushed blacks; behavior: atmosphere comes from weather
+  and distance, not filters'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: use a deliberate
+    road, ridge, tent line, or camp arrangement to organize the field; place human figures as scale and evidence
+    rather than dramatic heroes; leave enough empty terrain for the event''s aftermath or context. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: use a deliberate
+    road, ridge, tent line, or camp arrangement to organize the field; place human figures as scale and evidence
+    rather than dramatic heroes; leave enough empty terrain for the event''s aftermath or context.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: use a deliberate
+    road, ridge, tent line, or camp arrangement to organize the field; place human figures as scale and evidence
+    rather than dramatic heroes; leave enough empty terrain for the event''s aftermath or context.'
+  evidence:
+    source_ids:
+    - source-fenton-shadow-death
+    - source-fenton-crimean-soldier
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: monochrome silver-gray with restrained
+    warm paper bias; skies and ground retain separate tonal texture. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: monochrome silver-gray with
+    restrained warm paper bias; skies and ground retain separate tonal texture.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    monochrome silver-gray with restrained warm paper bias; skies and ground retain separate tonal texture.'
+  evidence:
+    source_ids:
+    - source-fenton-shadow-death
+    - source-fenton-crimean-soldier
+    basis: curatorial_inference
+    visual_review: pending
+- id: light
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: open_field_daylight; behavior: exposure
+    is even enough to read terrain, cloth, and equipment; behavior: contrast is controlled, with no cinematic
+    crushed blacks; behavior: atmosphere comes from weather and distance, not filters. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: open_field_daylight;
+    behavior: exposure is even enough to read terrain, cloth, and equipment; behavior: contrast is controlled,
+    with no cinematic crushed blacks; behavior: atmosphere comes from weather and distance, not filters.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: open_field_daylight;
+    behavior: exposure is even enough to read terrain, cloth, and equipment; behavior: contrast is controlled,
+    with no cinematic crushed blacks; behavior: atmosphere comes from weather and distance, not filters.'
+  evidence:
+    source_ids:
+    - source-fenton-shadow-death
+    - source-fenton-crimean-soldier
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: brushwork: none_historical_print_emulsion;
+    mark_logic: preserve plate/paper irregularity without decorative fake grain; mark_logic: keep documentary
+    details legible but not hyper-sharp; mark_logic: favor material evidence over spectacle; finish: restrained_historical_documentary_print.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: brushwork:
+    none_historical_print_emulsion; mark_logic: preserve plate/paper irregularity without decorative fake grain;
+    mark_logic: keep documentary details legible but not hyper-sharp; mark_logic: favor material evidence over
+    spectacle; finish: restrained_historical_documentary_print.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    brushwork: none_historical_print_emulsion; mark_logic: preserve plate/paper irregularity without decorative
+    fake grain; mark_logic: keep documentary details legible but not hyper-sharp; mark_logic: favor material
+    evidence over spectacle; finish: restrained_historical_documentary_print.'
+  evidence:
+    source_ids:
+    - source-fenton-shadow-death
+    - source-fenton-crimean-soldier
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- color
+- light
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - color
+  - light
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-fenton-shadow-death
+  kind: primary
+  base_asset_id: fenton-shadow-death
+- id: source-fenton-crimean-soldier
+  kind: secondary
+  base_asset_id: fenton-crimean-soldier
+execution:
+  route: text_only
+  must:
+  - choose a clear documentary subject and field geometry
+  - compose roads, tents, terrain, and figures for evidence
+  - expose for readable sky, ground, cloth, and equipment
+  - apply restrained historical print tone without cinematic dramatization
+  - place and material evidence are central
+  - human presence is dignified and observational
+  - tonal range remains restrained and readable
+  - the new scene must not recreate a named war photograph
+  avoid:
+  - copied famous composition
+  - generic style filter
+  - unmotivated decorative effects
+  - Use observable traits only; do not recreate a named work, sitter, plate, object, or exact arrangement.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
