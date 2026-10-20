@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: dry-media-pastel-game-art-direction
+name: 蜡笔粉彩与彩铅游戏美术
+base_package: game-art/dry-media-pastel-game-art
+scope:
+  medium: 蜡笔宽擦、粉彩柔边、彩铅叠线可辨; 线条承担形体和互动边界
+  representation: stylized
+  description: 用纸纹间隙、擦痕和颗粒呈现蜡笔、粉彩或彩铅的不同触感，不把三类材料混为同一种笔触。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - smooth digital gradients
+  - uniform noise
+  - unclear interaction edge
+pillars:
+- 用纸纹间隙、擦痕和颗粒呈现蜡笔、粉彩或彩铅的不同触感，不把三类材料混为同一种笔触。
+- 'medium: 蜡笔宽擦、粉彩柔边、彩铅叠线可辨; 线条承担形体和互动边界'
+- 'composition: 色面和线条保留纸面呼吸; 主体轮廓缩小后仍清楚'
+- 'palette: 纸色与少量高彩色块; 颗粒来自笔材而非滤镜'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 蜡笔宽擦、粉彩柔边、彩铅叠线可辨;
+    线条承担形体和互动边界.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 蜡笔宽擦、粉彩柔边、彩铅叠线可辨;
+    线条承担形体和互动边界.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    蜡笔宽擦、粉彩柔边、彩铅叠线可辨; 线条承担形体和互动边界.'
+  evidence:
+    source_ids:
+    - source-dry-media-pastel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 色面和线条保留纸面呼吸;
+    主体轮廓缩小后仍清楚. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 色面和线条保留纸面呼吸; 主体轮廓缩小后仍清楚.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 色面和线条保留纸面呼吸;
+    主体轮廓缩小后仍清楚.'
+  evidence:
+    source_ids:
+    - source-dry-media-pastel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 纸色与少量高彩色块; 颗粒来自笔材而非滤镜. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 纸色与少量高彩色块; 颗粒来自笔材而非滤镜.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    纸色与少量高彩色块; 颗粒来自笔材而非滤镜.'
+  evidence:
+    source_ids:
+    - source-dry-media-pastel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 柔和光照保留纸面白; 阴影不抹平颗粒. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 柔和光照保留纸面白; 阴影不抹平颗粒.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 柔和光照保留纸面白; 阴影不抹平颗粒.'
+  evidence:
+    source_ids:
+    - source-dry-media-pastel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 边缘有摩擦、断续和覆盖关系;
+    笔触顺形体走向. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 边缘有摩擦、断续和覆盖关系;
+    笔触顺形体走向.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    边缘有摩擦、断续和覆盖关系; 笔触顺形体走向.'
+  evidence:
+    source_ids:
+    - source-dry-media-pastel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 颗粒集中于受力和转折处;
+    避免随机噪点铺满. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 颗粒集中于受力和转折处;
+    避免随机噪点铺满.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    颗粒集中于受力和转折处; 避免随机噪点铺满.'
+  evidence:
+    source_ids:
+    - source-dry-media-pastel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-dry-media-pastel-game-art-primary-source
+  kind: primary
+  base_asset_id: dry-media-pastel-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 选择一种主笔材
+  - 用大色块搭建主体
+  - 沿结构添加擦痕或叠线
+  - 留出纸白和清晰互动边界
+  - 缩小检查颗粒密度
+  - 材料触感明确
+  - 交互轮廓比纹理清楚
+  - 材料分支不可混同
+  avoid:
+  - smooth digital gradients
+  - uniform noise
+  - unclear interaction edge
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
