@@ -105,3 +105,7 @@ python tools/compile-style.py style-packages/artists/alphonse-mucha --direction 
 ```
 
 This direction remains experimental. Met and National Gallery of Art material on decorative panels, color lithographic posters, and layout supports these observations; transfer to subjects without figures or lettering remains pending.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

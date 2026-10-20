@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "alphonse-mucha",
+    "name": "阿尔丰斯·穆夏",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\alphonse-mucha"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A blue glass perfume bottle in a decorative poster, no lettering",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied A blue glass perfume bottle in a decorative poster, no lettering and the user-requested setting are authoritative.\n- This package controls visual treatment only: medium, composition, lighting,\n  palette, surface, texture, and edge behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of A blue glass perfume bottle in a decorative poster, no lettering in the user-requested setting. Apply the package's observable\nmedium, composition, lighting, palette, surface, and texture decisions from the\nstyle files. Preserve the package invariants while inventing a new scene: do not\ncopy any reference work, named character, exact pose, recognizable layout, logo,\nor text. Keep the subject and narrative supplied by the user independent from\nthe package's visual identity. Use concrete visual instructions rather than the\npackage name alone.\n\nDecorative Alphonse Mucha study:\n- Preserve the user's subject and give it a clear silhouette inside a flowing ornamental frame or arabesque rhythm.\n- Use continuous elegant ink contours, flattened decorative planes, warm paper, muted teal, olive, dusty rose, and restrained antique-gold accents.\n- Let botanical or geometric ornament support the composition without becoming a mandatory flower, woman, advertisement, or text layout.\n- Build volume with contour, flat value groups, and restrained modeling rather than dramatic cinematic lighting.\n- The result must be a new anonymous composition, not a copied poster, character, logo, or recognizable work.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied reference composition, recognizable character, logo, watermark, artist signature,\nunintended text, generic global color filter, incompatible medium, accidental photorealism,\nunmotivated neon, plastic CGI finish, malformed anatomy, duplicate objects,\nmandatory woman, flower, advertisement, poster headline, readable text, named character,\ngeneric sepia filter, copied art nouveau poster, cluttered ornament that hides the subject",
+  "template_variables": {
+    "SUBJECT": "A blue glass perfume bottle in a decorative poster, no lettering",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "ornamental_poster": {
+        "required": [
+          "requested subject remains the first read",
+          "frame and ornament support rather than obscure the subject",
+          "lettering is exact and user-supplied, or absent"
+        ],
+        "reject_if": [
+          "a woman, flower, logo, or pseudo-text appears without request",
+          "border copies a named poster composition"
+        ]
+      },
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "face and pose remain subordinate to the user's request, not a mandatory Mucha heroine",
+          "line rhythm and ornament do not deform anatomy"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "objects remain countable beneath ornamental framing",
+          "decorative motifs do not replace requested objects"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

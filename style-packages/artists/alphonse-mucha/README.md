@@ -83,3 +83,7 @@ python tools/compile-style.py style-packages/artists/alphonse-mucha --direction 
 ```
 
 方向仍处于实验状态。大都会艺术博物馆与美国国家美术馆关于装饰画、彩色石版海报和版式的资料支持这些观察；无人物、无文字主体上的装饰迁移效果仍待评审。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。
