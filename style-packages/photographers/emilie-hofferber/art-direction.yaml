@@ -1,0 +1,144 @@
+schema_version: 2.1.0
+status: experimental
+id: emilie-hofferber-direction
+name: 埃米莉·霍弗伯
+base_package: photographers/emilie-hofferber
+scope:
+  medium: 自然光摄影
+  representation: recognizable
+  description: 以安静的自然光、克制的色彩和细腻的日常观察组织新的摄影主题，强调真实空气与轻微距离感。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以安静的自然光、克制的色彩和细腻的日常观察组织新的摄影主题，强调真实空气与轻微距离感。
+- 'form: 柔和日常光线、低噪点、清洁色彩、真实皮肤和轻微观察距离'
+- 'medium: 自然光摄影'
+- 'composition: 窗光或阴天漫射光; 开放留白和自然偏置构图; 低到中对比与克制胶片响应'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: 柔和日常光线、低噪点、清洁色彩、真实皮肤和轻微观察距离.
+    Do not let generic polish or another package direction replace it. If a cue names a concrete object or
+    motif, do not add it unless the user requests it; translate its formal qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: 柔和日常光线、低噪点、清洁色彩、真实皮肤和轻微观察距离.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: 柔和日常光线、低噪点、清洁色彩、真实皮肤和轻微观察距离.'
+  evidence:
+    source_ids:
+    - source-emilie-hofferber-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 自然光摄影.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 自然光摄影.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    自然光摄影.'
+  evidence:
+    source_ids:
+    - source-emilie-hofferber-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 窗光或阴天漫射光; 开放留白和自然偏置构图;
+    低到中对比与克制胶片响应. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 窗光或阴天漫射光; 开放留白和自然偏置构图;
+    低到中对比与克制胶片响应.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 窗光或阴天漫射光;
+    开放留白和自然偏置构图; 低到中对比与克制胶片响应.'
+  evidence:
+    source_ids:
+    - source-emilie-hofferber-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 雾白 #F1F1EA，角色：高光与空气; 洗蓝 #89AFC4，角色：冷静环境;
+    柔绿 #9EB49A，角色：自然补色. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 雾白 #F1F1EA，角色：高光与空气; 洗蓝 #89AFC4，角色：冷静环境;
+    柔绿 #9EB49A，角色：自然补色.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    雾白 #F1F1EA，角色：高光与空气; 洗蓝 #89AFC4，角色：冷静环境; 柔绿 #9EB49A，角色：自然补色.'
+  evidence:
+    source_ids:
+    - source-emilie-hofferber-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 材质细节服从用户主体，并保持可辨识.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 材质细节服从用户主体，并保持可辨识.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    材质细节服从用户主体，并保持可辨识.'
+  evidence:
+    source_ids:
+    - source-emilie-hofferber-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: edge-behavior
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 边缘行为由媒介与光线决定，不使用统一发光描边.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 边缘行为由媒介与光线决定，不使用统一发光描边.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    边缘行为由媒介与光线决定，不使用统一发光描边.'
+  evidence:
+    source_ids:
+    - source-emilie-hofferber-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- medium
+- composition
+- palette
+- surface
+- edge-behavior
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among form, medium, composition consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-emilie-hofferber-primary-source
+  kind: primary
+  base_asset_id: emilie-hofferber-primary-source
+execution:
+  route: text_only
+  must:
+  - Translate the user's subject, objects, location, and narrative literally.
+  - Apply the package signature only after the subject is established.
+  - Keep style decisions observable and reversible at the prompt level.
+  - Check that no recurring motif was introduced by the package.
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied composition
+  - named character or branded asset
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
