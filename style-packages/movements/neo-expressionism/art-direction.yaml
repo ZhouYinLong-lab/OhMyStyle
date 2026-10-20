@@ -1,0 +1,142 @@
+schema_version: 2.1.0
+status: experimental
+id: neo-expressionism-direction
+name: 新表现主义
+base_package: movements/neo-expressionism
+scope:
+  medium: expressive oil, acrylic, and mixed paint surface
+  representation: abstract_interpretation
+  description: 以粗粝笔触、变形具象和强烈色块把情绪压力带回绘画表面，同时保留主体的冲突性。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - fixed portrait or skull motif
+  - generic abstract expressionism
+  - childlike doodle without structure
+  - smooth digital illustration
+  - decorative impressionist brushwork
+pillars:
+- 以粗粝笔触、变形具象和强烈色块把情绪压力带回绘画表面，同时保留主体的冲突性。
+- 'composition: 保留主体可读轮廓，同时允许比例、透视和空间关系出现有控制的扭曲。'
+- 'palette: 赭红、钴蓝、酸黄、脏白和紫黑形成直接色块，冷暖关系不求平滑。'
+- 'lighting: quality: uneven painted light with emotional value shifts; behavior: 明暗可被笔触打断，局部高光和深影承担情绪压力。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 保留主体可读轮廓，同时允许比例、透视和空间关系出现有控制的扭曲。.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 保留主体可读轮廓，同时允许比例、透视和空间关系出现有控制的扭曲。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 保留主体可读轮廓，同时允许比例、透视和空间关系出现有控制的扭曲。.'
+  evidence:
+    source_ids:
+    - source-neo-expressionism-moma
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 赭红、钴蓝、酸黄、脏白和紫黑形成直接色块，冷暖关系不求平滑。. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 赭红、钴蓝、酸黄、脏白和紫黑形成直接色块，冷暖关系不求平滑。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    赭红、钴蓝、酸黄、脏白和紫黑形成直接色块，冷暖关系不求平滑。.'
+  evidence:
+    source_ids:
+    - source-neo-expressionism-moma
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: uneven painted light with emotional value
+    shifts; behavior: 明暗可被笔触打断，局部高光和深影承担情绪压力。. Keep light coherent with the requested subject, medium, and
+    scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: uneven painted light
+    with emotional value shifts; behavior: 明暗可被笔触打断，局部高光和深影承担情绪压力。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: uneven painted
+    light with emotional value shifts; behavior: 明暗可被笔触打断，局部高光和深影承担情绪压力。.'
+  evidence:
+    source_ids:
+    - source-neo-expressionism-moma
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: thick,
+    scraped, and visibly worked paint; edges: blunt black contours mixed with broken, bleeding edges. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    thick, scraped, and visibly worked paint; edges: blunt black contours mixed with broken, bleeding edges.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: thick, scraped, and visibly worked paint; edges: blunt black contours mixed with broken, bleeding
+    edges.'
+  evidence:
+    source_ids:
+    - source-neo-expressionism-moma
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: high
+    and varied; placement: dense around faces, joints, overlaps, and compositional collisions. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    high and varied; placement: dense around faces, joints, overlaps, and compositional collisions.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: high and varied; placement: dense around faces, joints, overlaps, and compositional collisions.'
+  evidence:
+    source_ids:
+    - source-neo-expressionism-moma
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-neo-expressionism-moma
+  kind: primary
+  base_asset_id: neo-expressionism-moma
+execution:
+  route: text_only
+  must:
+  - Block the user-supplied subject with simplified, slightly unstable masses.
+  - Draw decisive dark contours around selected structural edges.
+  - Push a few saturated color blocks against dirty neutrals.
+  - Add thick, scraped, and dragged marks that remain visibly physical.
+  - Reassert enough anatomy or object structure for the subject to remain readable.
+  - 形体仍能辨认，粗粝来自绘画动作而不是故意做坏。
+  - 颜色与线条共同承担情绪，不只叠加一层红蓝滤镜。
+  - 不复制某位艺术家的具体人物、构图或符号。
+  avoid:
+  - fixed chair, portrait, skull, animal, ruin, or city scene
+  - smooth painterly polish and generic filter language
+  - copied composition
+  - fixed portrait or skull motif
+  - generic abstract expressionism
+  - childlike doodle without structure
+  - smooth digital illustration
+  - decorative impressionist brushwork
+  - Do not reproduce a named artwork, artist signature, or recognizable source composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
