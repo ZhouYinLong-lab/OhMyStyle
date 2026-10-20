@@ -1,0 +1,140 @@
+schema_version: 2.1.0
+status: experimental
+id: artcenter-direction
+name: 艺术中心设计学院
+base_package: schools/artcenter
+scope:
+  medium: professional design communication board and studio presentation
+  representation: stylized
+  description: 以清晰的设计问题、专业化视觉沟通、精确的形式控制和可交付的呈现质量组织图像，不限定具体产品或行业对象。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以清晰的设计问题、专业化视觉沟通、精确的形式控制和可交付的呈现质量组织图像，不限定具体产品或行业对象。
+- 'composition: 以明确的版面层级把主方案、推演过程、材料样本和小型原型组织在同一视野中。; 留出足够留白，让观看者可以迅速理解重点、证据和下一步。'
+- 'palette: 以中性底色承载一到两个高识别度色彩角色，颜色用于标注结构和重点而非装饰。'
+- 'lighting: quality: neutral studio/editorial light with controlled reflections; behavior: 光线均匀、可复核，避免情绪化光效遮蔽材料和比例信息。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以明确的版面层级把主方案、推演过程、材料样本和小型原型组织在同一视野中。;
+    留出足够留白，让观看者可以迅速理解重点、证据和下一步。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以明确的版面层级把主方案、推演过程、材料样本和小型原型组织在同一视野中。;
+    留出足够留白，让观看者可以迅速理解重点、证据和下一步。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以明确的版面层级把主方案、推演过程、材料样本和小型原型组织在同一视野中。;
+    留出足够留白，让观看者可以迅速理解重点、证据和下一步。.'
+  evidence:
+    source_ids:
+    - source-artcenter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 以中性底色承载一到两个高识别度色彩角色，颜色用于标注结构和重点而非装饰。.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 以中性底色承载一到两个高识别度色彩角色，颜色用于标注结构和重点而非装饰。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    以中性底色承载一到两个高识别度色彩角色，颜色用于标注结构和重点而非装饰。.'
+  evidence:
+    source_ids:
+    - source-artcenter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: neutral studio/editorial light with controlled
+    reflections; behavior: 光线均匀、可复核，避免情绪化光效遮蔽材料和比例信息。. Keep light coherent with the requested subject, medium,
+    and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: neutral studio/editorial
+    light with controlled reflections; behavior: 光线均匀、可复核，避免情绪化光效遮蔽材料和比例信息。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: neutral studio/editorial
+    light with controlled reflections; behavior: 光线均匀、可复核，避免情绪化光效遮蔽材料和比例信息。.'
+  evidence:
+    source_ids:
+    - source-artcenter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: precise
+    editorial presentation with tactile materials; edges: clean geometry, measured alignment and restrained
+    handmade evidence. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    precise editorial presentation with tactile materials; edges: clean geometry, measured alignment and restrained
+    handmade evidence.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: precise editorial presentation with tactile materials; edges: clean geometry, measured alignment
+    and restrained handmade evidence.'
+  evidence:
+    source_ids:
+    - source-artcenter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium,
+    with high detail only around the selected proof points; placement: process diagrams, material swatches,
+    prototype edges and key form studies. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium, with high detail only around the selected proof points; placement: process diagrams, material swatches,
+    prototype edges and key form studies.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium, with high detail only around the selected proof points; placement: process diagrams, material
+    swatches, prototype edges and key form studies.'
+  evidence:
+    source_ids:
+    - source-artcenter-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-artcenter-primary-source
+  kind: primary
+  base_asset_id: artcenter-primary-source
+execution:
+  route: text_only
+  must:
+  - State the user's design question and select one primary subject or proposition.
+  - Establish a clear focal solution with a small, disciplined color system.
+  - Add sketches, measured diagrams, material swatches or prototype evidence around it.
+  - Separate hierarchy levels through scale, alignment and whitespace rather than decoration.
+  - Remove logos, readable placeholder copy and unrequested industry cues.
+  - 问题、方案、证据和呈现层级必须跨主体保留。
+  - 视觉秩序应服务于用户指定的主题，不得自动替换成某类产品或行业。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
