@@ -1,0 +1,197 @@
+schema_version: 2.1.0
+status: experimental
+id: design-academy-eindhoven-direction
+name: 埃因霍温设计学院
+base_package: schools/design-academy-eindhoven
+scope:
+  medium: critical material and social design presentation
+  representation: stylized
+  description: 以材料实验、批判性问题意识、社会语境和可讨论的原型结构组织设计图像。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied student project
+  - named product or branded asset
+  - recurring furniture, industrial hall, or sustainability icon
+  - forced furniture, industrial hall, Dutch interior, or eco icon
+pillars:
+- 以材料实验、批判性问题意识、社会语境和可讨论的原型结构组织设计图像。
+- 'differentiation: material and social question are shown together; prototype logic remains visible; documentation
+  is exploratory rather than branded'
+- 'medium: critical material and social design presentation'
+- 'composition: Present the supplied design subject as a research situation, not a polished product advertisement.;
+  Use open layouts with material samples, diagrams, prototypes, or traces only when relevant to the subject.'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: material
+    and social question are shown together; prototype logic remains visible; documentation is exploratory rather
+    than branded. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: material and social question are
+    shown together; prototype logic remains visible; documentation is exploratory rather than branded.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: material
+    and social question are shown together; prototype logic remains visible; documentation is exploratory rather
+    than branded.'
+  evidence:
+    source_ids:
+    - source-dae-vision-mission
+    - source-dae-graduation-show
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: critical
+    material and social design presentation.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: critical
+    material and social design presentation.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    critical material and social design presentation.'
+  evidence:
+    source_ids:
+    - source-dae-vision-mission
+    - source-dae-graduation-show
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Present the
+    supplied design subject as a research situation, not a polished product advertisement.; Use open layouts
+    with material samples, diagrams, prototypes, or traces only when relevant to the subject.. Preserve the
+    user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Present the supplied
+    design subject as a research situation, not a polished product advertisement.; Use open layouts with material
+    samples, diagrams, prototypes, or traces only when relevant to the subject..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Present
+    the supplied design subject as a research situation, not a polished product advertisement.; Use open layouts
+    with material samples, diagrams, prototypes, or traces only when relevant to the subject..'
+  evidence:
+    source_ids:
+    - source-dae-vision-mission
+    - source-dae-graduation-show
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Prefer raw material neutrals with
+    one unexpected, legible accent.. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Prefer raw material neutrals
+    with one unexpected, legible accent..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Prefer raw material neutrals with one unexpected, legible accent..'
+  evidence:
+    source_ids:
+    - source-dae-vision-mission
+    - source-dae-graduation-show
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: clear workshop or exhibition light; behavior:
+    Reveal construction, scale, joins, wear, and test evidence.; behavior: Avoid theatrical gradients and luxury
+    product spotlighting.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: clear workshop or
+    exhibition light; behavior: Reveal construction, scale, joins, wear, and test evidence.; behavior: Avoid
+    theatrical gradients and luxury product spotlighting..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: clear workshop
+    or exhibition light; behavior: Reveal construction, scale, joins, wear, and test evidence.; behavior: Avoid
+    theatrical gradients and luxury product spotlighting..'
+  evidence:
+    source_ids:
+    - source-dae-vision-mission
+    - source-dae-graduation-show
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: honest,
+    provisional, materially specific; edges: clear cuts and joins; unfinished edges may remain intentional.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    honest, provisional, materially specific; edges: clear cuts and joins; unfinished edges may remain intentional.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: honest, provisional, materially specific; edges: clear cuts and joins; unfinished edges may remain
+    intentional.'
+  evidence:
+    source_ids:
+    - source-dae-vision-mission
+    - source-dae-graduation-show
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium
+    and evidence-led; placement: samples, tools, seams, recycled matter, paper, wood, clay, metal, or fabric
+    as required. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium and evidence-led; placement: samples, tools, seams, recycled matter, paper, wood, clay, metal, or
+    fabric as required.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium and evidence-led; placement: samples, tools, seams, recycled matter, paper, wood, clay,
+    metal, or fabric as required.'
+  evidence:
+    source_ids:
+    - source-dae-vision-mission
+    - source-dae-graduation-show
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among differentiation, medium, composition consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-dae-vision-mission
+  kind: primary
+  base_asset_id: dae-vision-mission
+- id: source-dae-graduation-show
+  kind: secondary
+  base_asset_id: dae-graduation-show
+execution:
+  route: text_only
+  must:
+  - define the supplied design problem without inventing a new product category
+  - show materials and construction decisions
+  - make scale, use, and consequence legible
+  - use neutral documentation light and open space
+  - avoid polishing away the research status
+  - state the supplied design problem and object
+  - select materials that make the problem legible
+  - show one or two construction decisions and their consequences
+  avoid:
+  - forced furniture, industrial hall, sustainability icon, or Dutch interior
+  - generic futuristic product render
+  - polished branding board without material evidence
+  - copied student work or recognizable school exhibition layout
+  - forced furniture, industrial hall, Dutch interior, or eco icon
+  - copied student project
+  - named product or branded asset
+  - recurring furniture, industrial hall, or sustainability icon
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
