@@ -1,0 +1,120 @@
+schema_version: 2.1.0
+status: experimental
+id: irving-penn-direction
+name: 欧文·佩恩
+base_package: photographers/irving-penn
+scope:
+  medium: photography
+  representation: recognizable
+  description: 以严谨的摄影棚控制、克制的背景、精确的形体关系和材料质感组织肖像、时装与静物画面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - 固定人物、服装品牌或特定静物
+  - 复制具体摄影作品
+  - 过度修饰和电商棚拍效果
+pillars:
+- 以严谨的摄影棚控制、克制的背景、精确的形体关系和材料质感组织肖像、时装与静物画面。
+- 'form: medium: 高控制摄影棚摄影; composition: 精确轮廓、留白、克制的物体间距; palette: 中性基础色与有限材料色; lighting: 大型柔光、清楚但柔和的明暗转折; surface:
+  干净、真实、不过度修饰; texture: 细节集中于材料与形体; edges: 稳定、精确、无人工发光边缘'
+- 'process: preserve: 摄影棚控制和形体精度; preserve: 材料差异与克制阴影; preserve: 负空间和安静的完成度; release: 代表图中的纸张和器物; release:
+  固定肖像、时装或静物题材'
+- 'palette: roles: name: 暖灰背景; roles: hex: #D4CEC2; roles: role: quiet studio ground; roles: name: 炭黑阴影; roles:
+  hex: #242321; roles: role: controlled depth; roles: name: 纸张米白; roles: hex: #EEE7D8'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: medium: 高控制摄影棚摄影;
+    composition: 精确轮廓、留白、克制的物体间距; palette: 中性基础色与有限材料色; lighting: 大型柔光、清楚但柔和的明暗转折; surface: 干净、真实、不过度修饰; texture:
+    细节集中于材料与形体; edges: 稳定、精确、无人工发光边缘. Do not let generic polish or another package direction replace it. If
+    a cue names a concrete object or motif, do not add it unless the user requests it; translate its formal
+    qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: medium:
+    高控制摄影棚摄影; composition: 精确轮廓、留白、克制的物体间距; palette: 中性基础色与有限材料色; lighting: 大型柔光、清楚但柔和的明暗转折; surface: 干净、真实、不过度修饰;
+    texture: 细节集中于材料与形体; edges: 稳定、精确、无人工发光边缘.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: medium: 高控制摄影棚摄影; composition: 精确轮廓、留白、克制的物体间距; palette: 中性基础色与有限材料色; lighting:
+    大型柔光、清楚但柔和的明暗转折; surface: 干净、真实、不过度修饰; texture: 细节集中于材料与形体; edges: 稳定、精确、无人工发光边缘.'
+  evidence:
+    source_ids:
+    - source-irving-penn-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: transfer
+  axis: process
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: preserve: 摄影棚控制和形体精度; preserve: 材料差异与克制阴影; preserve:
+    负空间和安静的完成度; release: 代表图中的纸张和器物; release: 固定肖像、时装或静物题材. Keep it subordinate to the requested subject and
+    medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: preserve: 摄影棚控制和形体精度;
+    preserve: 材料差异与克制阴影; preserve: 负空间和安静的完成度; release: 代表图中的纸张和器物; release: 固定肖像、时装或静物题材.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: preserve: 摄影棚控制和形体精度;
+    preserve: 材料差异与克制阴影; preserve: 负空间和安静的完成度; release: 代表图中的纸张和器物; release: 固定肖像、时装或静物题材.'
+  evidence:
+    source_ids:
+    - source-irving-penn-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: roles: name: 暖灰背景; roles: hex: #D4CEC2;
+    roles: role: quiet studio ground; roles: name: 炭黑阴影; roles: hex: #242321; roles: role: controlled depth;
+    roles: name: 纸张米白; roles: hex: #EEE7D8. Adapt their balance to the requested subject; do not apply them
+    as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: roles: name: 暖灰背景; roles:
+    hex: #D4CEC2; roles: role: quiet studio ground; roles: name: 炭黑阴影; roles: hex: #242321; roles: role: controlled
+    depth; roles: name: 纸张米白; roles: hex: #EEE7D8.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    roles: name: 暖灰背景; roles: hex: #D4CEC2; roles: role: quiet studio ground; roles: name: 炭黑阴影; roles: hex:
+    #242321; roles: role: controlled depth; roles: name: 纸张米白; roles: hex: #EEE7D8.'
+  evidence:
+    source_ids:
+    - source-irving-penn-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以严谨的摄影棚控制、克制的背景、精确的形体关系和材料质感组织肖像、时装与静物画面。.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以严谨的摄影棚控制、克制的背景、精确的形体关系和材料质感组织肖像、时装与静物画面。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以严谨的摄影棚控制、克制的背景、精确的形体关系和材料质感组织肖像、时装与静物画面。.'
+  evidence:
+    source_ids:
+    - source-irving-penn-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- transfer
+- palette
+- composition
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - transfer
+  - palette
+  instruction: Keep the package-specific relationship among form, process, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-irving-penn-primary-source
+  kind: primary
+  base_asset_id: irving-penn-primary-source
+execution:
+  route: text_only
+  must:
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 固定人物、服装品牌或特定静物
+  - 复制具体摄影作品
+  - 过度修饰和电商棚拍效果
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
