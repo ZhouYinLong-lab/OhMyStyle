@@ -53,3 +53,7 @@ Configure an API key in your own image service or compiler, then submit the base
 ### Method 4: Local model + ComfyUI
 
 Connect the prompts, palette, and reproduction notes to a local model or ComfyUI workflow. Use `evaluation.yaml` for review; do not treat the chair or interior in the representative image as a default subject.
+
+## Legacy and direction comparison
+
+See [the actual legacy and direction outputs, compiled prompts, and review notes](comparisons/README.md).

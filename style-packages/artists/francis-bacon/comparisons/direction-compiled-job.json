@@ -13,25 +13,34 @@
     "adapter": "provider-neutral"
   },
   "subject": "A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio",
-  "prompt": "USER SUBJECT: A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [frame-and-compressed-spatial-cue] Place the requested subject in a compressed, shallow setting and use one spare frame, opening, platform, or boundary line to establish spatial pressure; do not add literal bars or a cage unless requested.\n- [localized-contour-shift-with-recognition] Shift or drag only selected contour passages; preserve the subject's defining silhouette, identity, number of parts, and pose while letting surrounding marks suggest tension or movement.\n- [overpaint-scrape-and-color-field] Build a few distinct color fields and show selected dragged, scraped, covered, or thinly washed passages; reserve the strongest surface disturbance for places where it reinforces the subject's tension.\n- [enclosure-distortion-and-material-coherence] Let the spatial frame, localized shifts, and altered paint surface build pressure around the user's subject while preserving its identity.\nREQUIREMENT: Declare enclosed-figurative-tension before applying this direction.\nREQUIREMENT: Preserve the user's requested subject, identity, pose, count, and setting.\nREQUIREMENT: Apply contour shifts selectively and keep the subject recognizable.\nREQUIREMENT: Use visible paint disturbance as a material decision, not a uniform filter.",
-  "negative_prompt": "default cage bars, generic cell, and elaborate unrelated interior\nall-over liquefaction, duplicate features, and grotesque default expression\nuniform grunge overlay, plastic smoothness, and unmotivated splatter\nadding a person, screaming face, crucifix, arena, meat, or violence without request\nturning the frame into literal cage bars unless the user requests that setting\ncopying a named triptych's exact pose, crop, color layout, or sequence",
+  "prompt": "USER SUBJECT: A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio\nSUBJECT REPRESENTATION: Depict the requested subject recognizably. Preserve its identity, requested count, setting, and layout; add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [frame-and-compressed-spatial-cue] Place the requested subject in a compressed, shallow setting and use one spare frame, opening, platform, or boundary line to establish spatial pressure; do not add literal bars or a cage unless requested.\n- [localized-contour-shift-with-recognition] Choose one or two existing contours of the requested subject and offset or drag a short segment by a clearly visible amount; preserve the subject's identity, count, pose, and at least one clean recognition anchor. Keep the disturbance local rather than deforming every edge.\nREQUIREMENT: Declare enclosed-figurative-tension before applying this direction.\nREQUIREMENT: Preserve the user's requested subject, identity, pose, count, and setting.\nREQUIREMENT: Apply contour shifts selectively and keep the subject recognizable.\nREQUIREMENT: Use visible paint disturbance as a material decision, not a uniform filter.",
+  "negative_prompt": "default cage bars, generic cell, and elaborate unrelated interior\nall-over liquefaction, duplicate features, and grotesque default expression\nadding a person, screaming face, crucifix, arena, meat, or violence without request\nturning the frame into literal cage bars unless the user requests that setting\ncopying a named triptych's exact pose, crop, color layout, or sequence",
   "reference_set": "none",
   "reference_images": [],
   "art_direction": {
     "id": "bacon-enclosed-space-and-localized-distortion",
     "name": "Bacon enclosed space and localized distortion",
+    "schema_version": "2.1.0",
     "status": "experimental",
     "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\francis-bacon\\art-direction.yaml",
-    "sha256": "dc8034cabbc2e677a22d2b6b06bbf1aa1e2dfbf04c6d4d27ef9eb33049a1cc2b",
+    "sha256": "ad1c1b145e2d7a7fe9868517b02b329572d3e69d8c2b36ecca3511848921056a",
     "active_rule_ids": [
       "frame-and-compressed-spatial-cue",
       "localized-contour-shift-with-recognition",
       "overpaint-scrape-and-color-field"
     ],
+    "applicable_rule_ids": [
+      "frame-and-compressed-spatial-cue",
+      "localized-contour-shift-with-recognition"
+    ],
+    "omitted_context_rule_ids": [
+      "overpaint-scrape-and-color-field"
+    ],
     "contexts": [
       "enclosed-figurative-tension"
     ],
-    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
   },
   "execution": {
     "route": "text_only",
@@ -67,6 +76,12 @@
         "Use enclosure and dark or saturated fields only when they fit the requested setting; do not add violence, screaming, crosses, arenas, or meat imagery."
       ]
     },
+    "pillars": [
+      "Compress space around the existing subject with a spare frame or shallow architectural cue rather than a fully described room.",
+      "Apply small, selective contour displacements through dragged, scraped, or overpainted marks while preserving recognition.",
+      "Contrast a few broad color fields with visible changes in paint thickness and exposed underlying layers.",
+      "Keep areas of visual quiet so distortion reads as a deliberate pressure point, not all-over glitch."
+    ],
     "rules": [
       {
         "id": "frame-and-compressed-spatial-cue",
@@ -91,9 +106,9 @@
         "axis": "figure_and_contour",
         "importance": "core",
         "applies_when": "The user requests expressive distortion of a recognizable subject.",
-        "instruction": "Shift or drag only selected contour passages; preserve the subject's defining silhouette, identity, number of parts, and pose while letting surrounding marks suggest tension or movement.",
-        "observable": "The subject remains identifiable at a glance, and distortion concentrates in a few intentional passages.",
-        "reject_when": "Features melt indiscriminately, identity changes, anatomy multiplies, or distortion becomes a digital glitch effect.",
+        "instruction": "Choose one or two existing contours of the requested subject and offset or drag a short segment by a clearly visible amount; preserve the subject's identity, count, pose, and at least one clean recognition anchor. Keep the disturbance local rather than deforming every edge.",
+        "observable": "At ordinary viewing size, at least one localized contour shift is unmistakable while the requested subject and its parts remain countable and recognizable.",
+        "reject_when": "No contour shift is visible at ordinary viewing size, the subject's count or identity changes, features melt indiscriminately, or distortion becomes a digital glitch effect.",
         "evidence": {
           "source_ids": [
             "bacon-met-three-studies",
@@ -103,38 +118,9 @@
           "visual_review": "pending"
         },
         "avoid": "all-over liquefaction, duplicate features, and grotesque default expression"
-      },
-      {
-        "id": "overpaint-scrape-and-color-field",
-        "axis": "surface_and_color",
-        "importance": "supporting",
-        "applies_when": "The user requests a visibly, materially expressive oil-painted surface.",
-        "instruction": "Build a few distinct color fields and show selected dragged, scraped, covered, or thinly washed passages; reserve the strongest surface disturbance for places where it reinforces the subject's tension.",
-        "observable": "Paint layers and corrections remain visible in selected areas while the overall color structure stays coherent.",
-        "reject_when": "Scratches become decorative noise, every surface has the same texture, or color fields hide the requested subject.",
-        "evidence": {
-          "source_ids": [
-            "bacon-moma-conservation",
-            "bacon-moma-painting-audio"
-          ],
-          "basis": "institutional_description",
-          "visual_review": "pending"
-        },
-        "avoid": "uniform grunge overlay, plastic smoothness, and unmotivated splatter"
       }
     ],
-    "joint_checks": [
-      {
-        "id": "enclosure-distortion-and-material-coherence",
-        "rule_ids": [
-          "frame-and-compressed-spatial-cue",
-          "localized-contour-shift-with-recognition",
-          "overpaint-scrape-and-color-field"
-        ],
-        "instruction": "Let the spatial frame, localized shifts, and altered paint surface build pressure around the user's subject while preserving its identity.",
-        "observable": "The subject remains recognizable, spatial enclosure feels deliberate, and paint disturbance is selective rather than a global effect."
-      }
-    ],
+    "joint_checks": [],
     "sources": [
       {
         "id": "bacon-met-three-studies",
@@ -160,7 +146,14 @@
     "note": "Successful compilation is not image-quality validation or a maturity upgrade."
   },
   "provenance": {
-    "direction_sha256": "dc8034cabbc2e677a22d2b6b06bbf1aa1e2dfbf04c6d4d27ef9eb33049a1cc2b",
+    "prompt_sha256": "ff2be268d75e660a49e269e237ab554c0b2ff66d13dd4c4f28a1afa54fff2911",
+    "negative_prompt_sha256": "eba0b930395564e8e5514f120f327ed5a4d5efedd23c1231165b681c15dd53a5",
+    "direction_sha256": "ad1c1b145e2d7a7fe9868517b02b329572d3e69d8c2b36ecca3511848921056a",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
     "reference_usage": "Research records are not generation inputs."
   }
 }

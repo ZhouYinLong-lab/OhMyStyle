@@ -1,7 +1,11 @@
-# 培根包新版方向对照（实验）
+# 新旧架构实际生图对照
 
-同一测试主体：`A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio`。两份提示词由当前仓库编译器分别按旧版默认路径和新版 `enclosed-figurative-tension` 上下文生成，见本目录中的 JSON。
+| 旧版包默认规则 | 新版方向规则 |
+|---|---|
+| ![旧版实际生图](legacy-output.jpg) | ![新版方向实际生图](direction-output.jpg) |
 
-![同一陶艺工作室题材的旧版/新版方向示意对照](direction-comparison.png)
-
-图片是用于讨论方向差异的 AI 示意图，并非由两份编译 JSON 实际渲染得到；左右画面也不是受控实验结果。新版希望把差异收敛到空间框定、局部轮廓偏移和选择性颜料处理，同时维持主体可辨认。视觉审查尚未完成，因此规则保持 `experimental`。
+- **同一输入主题：** `A ceramicist holding a clay bowl beside a tall wooden frame in a quiet studio`
+- **任务提示：** 旧版和新版使用[编译任务](legacy-compiled-job.json)、[方向任务](direction-compiled-job.json)中保存的提示词与负面约束。
+- **生成记录：** 两图分别使用 OpenAI imagegen 生成；工具未提供可记录的随机种子，未控制随机性。
+- **人工复核：** The direction sample shows a compressed frame and a visible local shift along the face contour while retaining one person and one bowl. The difference is visible but remains a single-subject spot check.
+- **限制：** 这组对照能说明单次输出，不足以证明差异只由架构规则造成或可跨题材稳定。方向继续保持 `experimental`。

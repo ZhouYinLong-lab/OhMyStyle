@@ -58,9 +58,9 @@ rules:
     axis: figure_and_contour
     importance: core
     applies_when: The user requests expressive distortion of a recognizable subject.
-    instruction: Shift or drag only selected contour passages; preserve the subject's defining silhouette, identity, number of parts, and pose while letting surrounding marks suggest tension or movement.
-    observable: The subject remains identifiable at a glance, and distortion concentrates in a few intentional passages.
-    reject_when: Features melt indiscriminately, identity changes, anatomy multiplies, or distortion becomes a digital glitch effect.
+    instruction: Choose one or two existing contours of the requested subject and offset or drag a short segment by a clearly visible amount; preserve the subject's identity, count, pose, and at least one clean recognition anchor. Keep the disturbance local rather than deforming every edge.
+    observable: At ordinary viewing size, at least one localized contour shift is unmistakable while the requested subject and its parts remain countable and recognizable.
+    reject_when: No contour shift is visible at ordinary viewing size, the subject's count or identity changes, features melt indiscriminately, or distortion becomes a digital glitch effect.
     evidence:
       source_ids:
         - bacon-met-three-studies

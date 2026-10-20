@@ -53,3 +53,7 @@ python tools/compile-style.py style-packages/artists/francis-bacon --direction p
 ### 方式四：本地模型 + ComfyUI
 
 将 Prompt、调色板和复现说明接入本地模型或 ComfyUI，生成后用 `evaluation.yaml` 复核，不要把代表图的椅子和室内当成默认主体。
+
+## 新旧架构视觉对照
+
+查看[旧版与新方向的实际生图、编译提示和人工复核记录](comparisons/README.md)。
