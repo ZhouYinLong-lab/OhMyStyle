@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: solarpunk-ecological-game-art-direction
+name: 太阳朋克生态未来游戏美术
+base_package: game-art/solarpunk-ecological-game-art
+scope:
+  medium: 可再生设备与植物、水系并置; 技术体块清楚且可维护
+  representation: stylized
+  description: 以生态修复、可再生能源和技术与自然共存构想未来；设施应参与生态循环，而不只是点缀绿色植物。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - green filter only
+  - decorative plants without system logic
+  - wasteland-only framing
+pillars:
+- 以生态修复、可再生能源和技术与自然共存构想未来；设施应参与生态循环，而不只是点缀绿色植物。
+- 'medium: 可再生设备与植物、水系并置; 技术体块清楚且可维护'
+- 'composition: 能源设施与地貌生态形成关系; 修复路径和社区结构组织空间'
+- 'palette: 植物绿、天空蓝和暖色能量点; 避免全局荧光绿'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 可再生设备与植物、水系并置;
+    技术体块清楚且可维护.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 可再生设备与植物、水系并置;
+    技术体块清楚且可维护.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    可再生设备与植物、水系并置; 技术体块清楚且可维护.'
+  evidence:
+    source_ids:
+    - source-solarpunk-ecological-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 能源设施与地貌生态形成关系;
+    修复路径和社区结构组织空间. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 能源设施与地貌生态形成关系; 修复路径和社区结构组织空间.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 能源设施与地貌生态形成关系;
+    修复路径和社区结构组织空间.'
+  evidence:
+    source_ids:
+    - source-solarpunk-ecological-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 植物绿、天空蓝和暖色能量点; 避免全局荧光绿. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 植物绿、天空蓝和暖色能量点; 避免全局荧光绿.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    植物绿、天空蓝和暖色能量点; 避免全局荧光绿.'
+  evidence:
+    source_ids:
+    - source-solarpunk-ecological-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 自然光展示生态阶段; 受损与恢复区域形成变化. Keep light coherent with
+    the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 自然光展示生态阶段; 受损与恢复区域形成变化.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 自然光展示生态阶段; 受损与恢复区域形成变化.'
+  evidence:
+    source_ids:
+    - source-solarpunk-ecological-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 耐用建材和自然表面平衡;
+    设备功能轮廓清楚. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 耐用建材和自然表面平衡;
+    设备功能轮廓清楚.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    耐用建材和自然表面平衡; 设备功能轮廓清楚.'
+  evidence:
+    source_ids:
+    - source-solarpunk-ecological-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 植物依地形与生态阶段分布;
+    避免装饰性均匀铺叶. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 植物依地形与生态阶段分布;
+    避免装饰性均匀铺叶.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    植物依地形与生态阶段分布; 避免装饰性均匀铺叶.'
+  evidence:
+    source_ids:
+    - source-solarpunk-ecological-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-solarpunk-ecological-game-art-primary-source
+  kind: primary
+  base_asset_id: solarpunk-ecological-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 定义生态状态和修复目标
+  - 安排能源与水系设施
+  - 让植物按地形和阶段生长
+  - 用自然光区分恢复层级
+  - 保留可读的系统路径
+  - 未来感来自生态系统关系
+  - 设施与自然相互作用
+  - 不预设无冲突乌托邦
+  avoid:
+  - green filter only
+  - decorative plants without system logic
+  - wasteland-only framing
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
