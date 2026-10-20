@@ -1,0 +1,157 @@
+schema_version: 2.1.0
+status: experimental
+id: vienna-secession-direction
+name: 维也纳分离派
+base_package: movements/vienna-secession
+scope:
+  medium: decorative painting, print, or mixed graphic surface
+  representation: stylized
+  description: 以平面装饰、几何秩序、象征性图形和建筑—平面—工艺的整体关系组织画面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以平面装饰、几何秩序、象征性图形和建筑—平面—工艺的整体关系组织画面。
+- 'composition: Organize the image as a deliberate flat field with ornamental borders, axial balance, and controlled
+  asymmetry.; Connect image, frame, and surrounding surface so decoration feels structural rather than added
+  afterward.'
+- 'palette: Combine mineral cream, deep blue-green, muted red, black, and restrained metallic gold.; Use metallic
+  or jewel-like accents sparingly against large calm fields.'
+- 'lighting: quality: even graphic illumination with selective metallic emphasis; behavior: Keep the main field
+  legible and stable; allow small highlights to articulate ornament.; behavior: Avoid cinematic spotlights
+  or a single iconic building as the source of style.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Organize the
+    image as a deliberate flat field with ornamental borders, axial balance, and controlled asymmetry.; Connect
+    image, frame, and surrounding surface so decoration feels structural rather than added afterward.. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Organize the image
+    as a deliberate flat field with ornamental borders, axial balance, and controlled asymmetry.; Connect image,
+    frame, and surrounding surface so decoration feels structural rather than added afterward..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Organize
+    the image as a deliberate flat field with ornamental borders, axial balance, and controlled asymmetry.;
+    Connect image, frame, and surrounding surface so decoration feels structural rather than added afterward..'
+  evidence:
+    source_ids:
+    - source-vienna-secession-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Combine mineral cream, deep blue-green,
+    muted red, black, and restrained metallic gold.; Use metallic or jewel-like accents sparingly against large
+    calm fields.. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Combine mineral cream, deep
+    blue-green, muted red, black, and restrained metallic gold.; Use metallic or jewel-like accents sparingly
+    against large calm fields..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Combine mineral cream, deep blue-green, muted red, black, and restrained metallic gold.; Use metallic or
+    jewel-like accents sparingly against large calm fields..'
+  evidence:
+    source_ids:
+    - source-vienna-secession-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: even graphic illumination with selective
+    metallic emphasis; behavior: Keep the main field legible and stable; allow small highlights to articulate
+    ornament.; behavior: Avoid cinematic spotlights or a single iconic building as the source of style.. Keep
+    light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: even graphic illumination
+    with selective metallic emphasis; behavior: Keep the main field legible and stable; allow small highlights
+    to articulate ornament.; behavior: Avoid cinematic spotlights or a single iconic building as the source
+    of style..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: even graphic
+    illumination with selective metallic emphasis; behavior: Keep the main field legible and stable; allow
+    small highlights to articulate ornament.; behavior: Avoid cinematic spotlights or a single iconic building
+    as the source of style..'
+  evidence:
+    source_ids:
+    - source-vienna-secession-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: printed,
+    lacquered, or painted decorative surface; edges: crisp graphic contours with controlled ornamental linework.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    printed, lacquered, or painted decorative surface; edges: crisp graphic contours with controlled ornamental
+    linework.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: printed, lacquered, or painted decorative surface; edges: crisp graphic contours with controlled
+    ornamental linework.'
+  evidence:
+    source_ids:
+    - source-vienna-secession-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: moderate
+    and patterned; placement: concentrated in borders, motifs, typography-like structures, and selected surfaces.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    moderate and patterned; placement: concentrated in borders, motifs, typography-like structures, and selected
+    surfaces.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: moderate and patterned; placement: concentrated in borders, motifs, typography-like structures,
+    and selected surfaces.'
+  evidence:
+    source_ids:
+    - source-vienna-secession-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-vienna-secession-primary-source
+  kind: primary
+  base_asset_id: vienna-secession-primary-source
+execution:
+  route: text_only
+  must:
+  - establish the flat field and primary axis
+  - place the user-supplied subject inside a balanced frame
+  - add ornamental line, geometric accents, and restrained metallic or jewel notes
+  - integration of decoration with the whole composition
+  - planar geometry and controlled ornament
+  - restrained jewel accents against calm fields
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
