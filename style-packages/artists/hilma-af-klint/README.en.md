@@ -45,7 +45,7 @@ See [`provenance.yaml`](provenance.yaml),
 
 ## New architecture: axis, spiral, and geometric-biomorphic order (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) applies only when `axial-symbolic-abstraction` is explicitly declared. It turns abstract order into inspectable decisions: one clear axis, bounded cyclical geometry, a contrast between geometric and organic forms, and matte color fields with fine line boundaries. These are formal rules; they do not assign scientific, religious, or spiritual meanings to the user's shapes.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and applies only when `axial-symbolic-abstraction` is explicitly declared. The axis and cyclical geometry are base rules; callers can declare `geometric-and-organic-forms-both-requested-or-permitted` and `color-blocks-with-drawn-boundaries` as supported by the user's forms and materials to activate the matching shape or surface rules. These are formal rules; they do not assign scientific, religious, or spiritual meanings to the user's shapes.
 
 Unlike Kandinsky's dynamic relations of mark, color, and force, or Mondrian's strict rectangular grid and primary-color system, af Klint's direction balances an axis and spiral with geometric and biomorphic forms. It adds no religious icon or esoteric lettering by default.
 

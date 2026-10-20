@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: af-klint-axial-spiral-and-biomorphic-order
 name: Af Klint axial spiral and biomorphic order
@@ -23,6 +23,19 @@ scope:
     - Use only abstract forms and symbols explicitly requested by the user; add no text, letters, religious icon, or narrative code.
     - Keep the requested number and relative role of geometric and biomorphic forms legible.
     - Do not reproduce a named af Klint painting, series composition, or exact symbol arrangement.
+contexts:
+  - id: axial-symbolic-abstraction
+    description: The user requests a nonfigurative abstract composition organized around a visible axis.
+  - id: photorealistic-object-illustration
+    description: The user requests a photorealistic object illustration.
+  - id: generic-occult-sigil
+    description: The user requests a generic occult sigil.
+  - id: luminous-digital-interface
+    description: The user requires a luminous digital-interface aesthetic.
+  - id: geometric-and-organic-forms-both-requested-or-permitted
+    description: The abstract composition includes both geometric and organic forms or permits their formal contrast.
+  - id: color-blocks-with-drawn-boundaries
+    description: The requested abstraction uses color blocks and drawn boundaries.
 pillars:
   - Establish one readable compositional axis, then organize a bounded spiral or circular structure around or across it; avoid turning the image into a generic mandala.
   - Balance constructed geometry with a limited organic counterform so neither vocabulary becomes decorative noise.
@@ -32,6 +45,8 @@ rules:
   - id: axis-and-cyclical-geometry
     axis: composition_and_structure
     importance: core
+    when_contexts:
+      - axial-symbolic-abstraction
     applies_when: The user requests a nonfigurative composition with geometric or symbolic forms.
     instruction: Arrange requested forms around one visible axis and use one bounded spiral, ring, or nested circle sequence to establish direction; preserve the user's requested counts and avoid a generic mandala template.
     observable: The image has a clear structural backbone and a purposeful cyclical movement that can be described without interpreting its meaning.
@@ -46,6 +61,8 @@ rules:
   - id: geometric-biomorphic-counterpoint
     axis: shape_and_relationship
     importance: core
+    when_contexts:
+      - geometric-and-organic-forms-both-requested-or-permitted
     applies_when: The user requests both geometric and organic abstract form, or permits their formal contrast.
     instruction: Set a small number of crisp geometric forms against one or two flowing biomorphic shapes, keeping their edges distinct and their relative scale intentional; do not translate them into literal plants, cells, planets, or religious emblems.
     observable: Constructed and organic shapes remain separately readable and form a deliberate visual relationship without becoming a literal scene.
@@ -60,6 +77,8 @@ rules:
   - id: matte-color-fields-and-line-boundaries
     axis: palette_and_surface
     importance: supporting
+    when_contexts:
+      - color-blocks-with-drawn-boundaries
     applies_when: The requested abstraction uses color blocks and drawn boundaries.
     instruction: Use mostly matte, even color fields from a restrained cool-warm palette; let fine, slightly imperfect line boundaries articulate selected relationships and keep value contrast sufficient for the structure to read.
     observable: Color adjacency and line, rather than realistic light or texture, establish hierarchy; surfaces remain calm and planar.

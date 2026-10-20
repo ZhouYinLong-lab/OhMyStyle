@@ -36,7 +36,7 @@
 
 ## 新架构：轴线、螺旋与几何—有机形对照（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `axial-symbolic-abstraction` 时启用。它把抽象秩序落实为可检查的画面规则：一条清晰轴线、有限的循环几何、几何形与有机形的对照，以及哑光色面和细线边界。规则只处理形式，不替用户解释符号的科学、宗教或灵性含义。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在显式声明 `axial-symbolic-abstraction` 时启用。轴线与循环几何是基础规则；调用者可按用户指定的形体与材料声明 `geometric-and-organic-forms-both-requested-or-permitted` 和 `color-blocks-with-drawn-boundaries`，再启用相应的形体对照或表面规则。规则只处理形式，不替用户解释符号的科学、宗教或灵性含义。
 
 这和康定斯基以笔触、色彩和力度建立动态关系的方向不同，也与蒙德里安把直线网格和原色限制在严格矩形系统中的方法不同；克林特方向让轴线与螺旋结构、几何和生物形态并置，但不会自动加入宗教图标或神秘文字。
 
