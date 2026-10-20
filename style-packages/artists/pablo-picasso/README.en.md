@@ -76,4 +76,4 @@ Use references to understand observable characteristics. Do not copy a source wo
 
 ## Experimental direction: multiple viewpoints in one object
 
-The optional direction in [`art-direction.yaml`](art-direction.yaml) concentrates multiple viewpoints in one user-specified still-life object: front, side, or top views meet inside one silhouette while identity cues remain. Keep the surrounding table and background shallow and quiet; bottles, instruments, text, and collage are not defaults. See [`comparisons/`](comparisons/README.md) for paired images.
+The optional direction in [`art-direction.yaml`](art-direction.yaml) uses format 2.1.0 and concentrates multiple viewpoints in one user-specified still-life object: front, side, or top views meet inside one silhouette while identity cues remain. The supporting-plane rule activates only when the caller declares `sparse-tabletop-setting`; bottles, instruments, text, and collage are not defaults. See [`comparisons/`](comparisons/README.md) for paired images.

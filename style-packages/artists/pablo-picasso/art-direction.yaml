@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: picasso-single-object-multiple-viewpoints
 name: Picasso single object in multiple viewpoints
@@ -26,6 +26,17 @@ scope:
     - Keep the object recognizable and the table/background in a restrained shallow space.
     - Text-only generation may produce inconsistent geometry; inspect object identity and view transitions.
     - Do not copy a named painting, exact facet layout, text fragment, or branded material.
+contexts:
+  - id: single-object-multiple-viewpoints
+    description: A user-requested single still-life object with interpretive viewpoints allowed.
+  - id: photorealistic-single-perspective-render
+    description: A photorealistic object render from one consistent camera angle.
+  - id: multi-object-dense-still-life
+    description: A still life centered on several objects arranged in a dense composition.
+  - id: unrecognizable-fragmented-abstraction
+    description: An image intended to fragment objects until they are no longer recognizable.
+  - id: sparse-tabletop-setting
+    description: A sparse tabletop or neutral support plane is part of the requested setting.
 pillars:
   - Let one requested object carry the viewpoint shift; do not fragment every surface in the scene.
   - Join views through a small number of crisp facets that reveal distinct useful sides of the same form.
@@ -60,6 +71,8 @@ rules:
   - id: quiet-supporting-plane
     axis: composition_and_depth
     importance: supporting
+    when_contexts:
+      - sparse-tabletop-setting
     applies_when: The brief permits a sparse tabletop or neutral setting.
     instruction: Keep the supporting table and background in broad shallow planes with fewer viewpoint shifts and lower detail than the main object.
     observable: The eye first reads the single transformed object, then the support plane; surrounding geometry does not compete with its viewpoint changes.

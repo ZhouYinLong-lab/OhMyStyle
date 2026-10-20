@@ -76,4 +76,4 @@
 
 ## 实验方向：单一物体的多视点
 
-新版可选方向 [`art-direction.yaml`](art-direction.yaml) 将多视点集中到用户指定的一个静物对象：同一轮廓中结合正面、侧面或俯视面，同时保留足够的身份线索。周边桌面与背景保持浅而安静，不默认添加酒瓶、乐器、文字或拼贴。对照图见 [`comparisons/`](comparisons/README.md)。
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，将多视点集中到用户指定的一个静物对象：同一轮廓中结合正面、侧面或俯视面，同时保留足够的身份线索。只有调用者声明 `sparse-tabletop-setting` 时，才启用安静桌面与背景的辅助规则；不默认添加酒瓶、乐器、文字或拼贴。对照图见 [`comparisons/`](comparisons/README.md)。
