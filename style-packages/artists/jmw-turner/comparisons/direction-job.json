@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "jmw-turner",
+    "name": "约瑟夫·马洛德·威廉·透纳",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\jmw-turner"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A rescue helicopter crossing a rain-dark valley at sunrise",
+  "prompt": "USER SUBJECT: A rescue helicopter crossing a rain-dark valley at sunrise\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [graduated-atmospheric-legibility] Preserve a readable focal subject, then reduce edge certainty and contrast gradually with distance or passing vapor; vary the atmospheric veils so the scene retains depth and does not become evenly blurred.\n- [painted-luminosity-through-color-relations] Let warm light pass through or sit beside cool atmospheric layers using scumbled, broken, or scraped paint behavior; keep highlights integrated with nearby color and avoid simulated lens effects.\n- [directional-motion-through-atmosphere] Establish one clear diagonal or receding vector through the subject's path, wake, rain, cloud, or light; let broken marks and changing contrast reinforce that movement while preserving the user's intended direction.\n- [light-depth-motion-coherence] Coordinate atmospheric depth, light, and the main movement vector around the user-requested focal event.\nREQUIREMENT: Declare atmospheric-weather-motion before applying this direction.\nREQUIREMENT: Preserve the requested subject and setting; do not make trains, ships, bridges, or storms mandatory.\nREQUIREMENT: Use graduated edge and contrast changes rather than a uniform fog effect.\nREQUIREMENT: Keep light and motion tied to the requested weather and focal event.",
+  "negative_prompt": "global blur, opaque fog overlay, and evenly sharp detail\nlens flare, neon bloom, and flat color wash\narbitrary swirls, motion blur, and copied diagonal layout\nreconstructing a named Turner composition\nadding an unrequested train, ship, bridge, hare, or storm\nusing lens flare, neon bloom, or global blur to imitate atmosphere",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "turner-weather-light-and-motion",
+    "name": "Turner weather, light, and motion",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\jmw-turner\\art-direction.yaml",
+    "sha256": "b5eca28f4c9fbec85ebcc8c2b43a59f9d2f7aee4a067d318f92ff625f12d071d",
+    "active_rule_ids": [
+      "graduated-atmospheric-legibility",
+      "painted-luminosity-through-color-relations",
+      "directional-motion-through-atmosphere"
+    ],
+    "contexts": [
+      "atmospheric-weather-motion"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare atmospheric-weather-motion before applying this direction.",
+      "Preserve the requested subject and setting; do not make trains, ships, bridges, or storms mandatory.",
+      "Use graduated edge and contrast changes rather than a uniform fog effect.",
+      "Keep light and motion tied to the requested weather and focal event."
+    ],
+    "avoid": [
+      "reconstructing a named Turner composition",
+      "adding an unrequested train, ship, bridge, hare, or storm",
+      "using lens flare, neon bloom, or global blur to imitate atmosphere"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "recognizable",
+      "description": "A weather-driven scene direction in which luminous atmosphere, layered vapor, and a clear movement vector interact. Forms remain identifiable near the focal event and progressively lose edge and contrast through rain, mist, spray, smoke, or distance. Warm light and cool air emerge from neighboring paint relationships rather than a digital glow effect.",
+      "required_contexts": [
+        "atmospheric-weather-motion"
+      ],
+      "incompatible_contexts": [
+        "crisp-studio-still-life",
+        "evenly-lit-flat-graphic",
+        "static-fog-background"
+      ],
+      "limitations": [
+        "Preserve the user-requested subject, setting, weather, time, and motion; do not add a ship, train, bridge, or storm by default.",
+        "Keep a readable focal event and spatial direction even when surrounding forms dissolve.",
+        "Do not reconstruct a named Turner composition or use a generic fog overlay as a substitute for painted atmosphere."
+      ]
+    },
+    "rules": [
+      {
+        "id": "graduated-atmospheric-legibility",
+        "axis": "atmospheric_depth",
+        "importance": "core",
+        "applies_when": "The requested scene includes rain, mist, spray, smoke, haze, or layered distance.",
+        "instruction": "Preserve a readable focal subject, then reduce edge certainty and contrast gradually with distance or passing vapor; vary the atmospheric veils so the scene retains depth and does not become evenly blurred.",
+        "observable": "Nearby and focal forms remain more distinct than distant forms, with atmospheric layers visibly shaping the space.",
+        "reject_when": "Fog is applied uniformly, all landmarks disappear, or every object has the same sharpness.",
+        "evidence": {
+          "source_ids": [
+            "turner-national-gallery-rain-steam",
+            "turner-national-gallery-light"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "global blur, opaque fog overlay, and evenly sharp detail"
+      },
+      {
+        "id": "painted-luminosity-through-color-relations",
+        "axis": "light_and_color",
+        "importance": "core",
+        "applies_when": "The scene uses weather, reflected light, smoke, or atmospheric distance.",
+        "instruction": "Let warm light pass through or sit beside cool atmospheric layers using scumbled, broken, or scraped paint behavior; keep highlights integrated with nearby color and avoid simulated lens effects.",
+        "observable": "Light appears to emerge from layered warm-cool relationships and changes across the atmosphere rather than sitting as a digital halo.",
+        "reject_when": "Glow has a uniform neon edge, highlights are detached from the weather, or color acts only as a global grade.",
+        "evidence": {
+          "source_ids": [
+            "turner-national-gallery-light",
+            "turner-national-gallery-rain-steam"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "lens flare, neon bloom, and flat color wash"
+      },
+      {
+        "id": "directional-motion-through-atmosphere",
+        "axis": "spatial_motion",
+        "importance": "core",
+        "applies_when": "The requested subject contains travel, weather movement, flowing water, or another moving event.",
+        "instruction": "Establish one clear diagonal or receding vector through the subject's path, wake, rain, cloud, or light; let broken marks and changing contrast reinforce that movement while preserving the user's intended direction.",
+        "observable": "The eye can follow a coherent path through the scene, and atmospheric marks support rather than obscure it.",
+        "reject_when": "Multiple unrelated vectors compete, motion is conveyed only by blur, or the composition copies a known railway or marine scene.",
+        "evidence": {
+          "source_ids": [
+            "turner-national-gallery-rain-steam",
+            "turner-national-gallery-light"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "arbitrary swirls, motion blur, and copied diagonal layout"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "light-depth-motion-coherence",
+        "rule_ids": [
+          "graduated-atmospheric-legibility",
+          "painted-luminosity-through-color-relations",
+          "directional-motion-through-atmosphere"
+        ],
+        "instruction": "Coordinate atmospheric depth, light, and the main movement vector around the user-requested focal event.",
+        "observable": "The focal event remains legible, light belongs to the weather, and the scene's motion reads in one clear spatial direction."
+      }
+    ],
+    "sources": [
+      {
+        "id": "turner-national-gallery-rain-steam",
+        "kind": "museum_catalogue",
+        "url": "https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-rain-steam-and-speed-the-great-western-railway"
+      },
+      {
+        "id": "turner-national-gallery-light",
+        "kind": "museum_analysis",
+        "url": "https://www.nationalgallery.org.uk/research/publications/exhibition-catalogues/fruits-of-the-spirit-art-from-the-heart/self-control"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "b5eca28f4c9fbec85ebcc8c2b43a59f9d2f7aee4a067d318f92ff625f12d071d",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "jmw-turner",
+    "name": "约瑟夫·马洛德·威廉·透纳",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\jmw-turner"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A rescue helicopter crossing a rain-dark valley at sunrise",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A rescue helicopter crossing a rain-dark valley at sunrise\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original oil painting of A rescue helicopter crossing a rain-dark valley at sunrise in the user-requested setting. Treat weather and\nlight as active subjects. Build a spacious atmospheric field of blue-gray,\npearl-gray, pale cream, and subdued umber, then introduce one amber or muted\norange light event. Use a clear diagonal spatial vector through water, a wake,\nsmoke, a road, or a beam of weather. Forms should emerge and dissolve through\nthin translucent veils and scumbled paint: distant structures lose contrast,\nwhile only the narrative focal event receives sharper broken marks. Suggest rain,\nmist, vapor, or sea air through layered paint rather than digital blur or lens\nbloom. Keep the image physically believable, luminous but not glossy, and make a\nnew arrangement that does not reconstruct any known artwork.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "generic fog overlay, digital bloom, lens flare, neon glow, cyberpunk, glossy\nconcept art, flat vector art, photorealistic render, hard cutout edges everywhere,\nuniform gray wash, copied famous composition, recognizable artwork recreation,\nartist signature, watermark, logo, text",
+  "template_variables": {
+    "SUBJECT": "A rescue helicopter crossing a rain-dark valley at sunrise",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "atmospheric-weather-motion": {
+        "required": [
+          "focal event stays identifiable while edge certainty decreases with distance or vapor",
+          "warm light and cool air interact through layered painted relationships",
+          "one clear movement vector supports the requested event"
+        ],
+        "reject_if": [
+          "uniform fog or global blur replaces atmospheric depth",
+          "neon bloom or lens flare replaces painted luminosity",
+          "an unrequested train, ship, bridge, or storm is added"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "Original historical works are bundled only when the cited source marks them public domain; the generated example is an anonymous new scene.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
