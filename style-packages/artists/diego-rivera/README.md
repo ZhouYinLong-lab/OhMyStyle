@@ -68,7 +68,7 @@ prompts/negative.txt、palette/palette.json 和 evaluation.yaml。
 
 ## 新架构：公共叙事壁画层次（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 适用于用户要求多个活动或多段公共叙事的壁画构图：把活动放进相连的画面层次，让人物、工具与环境共享尺度，并用轮廓和大色面保持远距离可读。单一动作不强行拆成分格，也不默认工人、工厂、墨西哥符号或政治标志。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，适用于用户要求公共叙事壁画时的构图：只有调用者声明 `multiple-requested-activities` 时，才启用多层叙事组织规则；`people-tools-or-system-interaction` 控制人物与环境共享尺度的规则。单一动作不强行拆成分格，也不默认工人、工厂、墨西哥符号或政治标志。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/diego-rivera --direction package --context public-narrative-mural --subject "A panoramic community greenhouse project: neighbors tend seedlings, builders repair its roof, and water channels feed the crops" --output runs/style-v2/diego-rivera-job.json

@@ -68,7 +68,7 @@ Users manage model weights, API keys, and generated images themselves. Reference
 
 ## New architecture: public narrative mural registers (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) applies when the user requests multiple activities or a broad public narrative. It connects those activities across a few registers, keeps people, tools, and environment at a shared scale, and uses contours with broad color planes for distance readability. A single action is not split into panels, and the direction does not default to workers, factories, Mexican symbols, or political emblems.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and applies to user-requested public narrative murals. The register rule activates only with `multiple-requested-activities`; `people-tools-or-system-interaction` controls the shared-scale rule. A single action is not split into panels, and the direction does not default to workers, factories, Mexican symbols, or political emblems.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/diego-rivera --direction package --context public-narrative-mural --subject "A panoramic community greenhouse project: neighbors tend seedlings, builders repair its roof, and water channels feed the crops" --output runs/style-v2/diego-rivera-job.json

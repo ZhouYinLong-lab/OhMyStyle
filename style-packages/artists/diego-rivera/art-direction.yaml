@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: rivera-public-narrative-registers
 name: Rivera public narrative registers
@@ -19,6 +19,19 @@ scope:
     - Preserve the user-requested people, activities, setting, and relationships; do not add workers, factories, machinery, national symbols, or political emblems unless requested.
     - Use multiple registers only when the brief contains multiple activities or a broad public narrative; do not split a single action into a forced timeline.
     - Keep large shapes readable at a distance while retaining enough local detail to distinguish the requested actions.
+contexts:
+  - id: public-narrative-mural
+    description: A mural-scale painting with user-requested public narrative content.
+  - id: isolated-miniature
+    description: A small isolated image rather than a wall-scale composition.
+  - id: single-object-product-render
+    description: A product render centered on one isolated object.
+  - id: photorealistic-rendering
+    description: A photorealistic render with illusionistic depth.
+  - id: multiple-requested-activities
+    description: The brief includes more than one user-requested activity or narrative stage.
+  - id: people-tools-or-system-interaction
+    description: Requested people interact with tools, structures, or natural systems.
 pillars:
   - Organize multiple requested activities into connected horizontal or vertical registers that read as one large composition.
   - Integrate people, tools, structures, and natural systems through shared scale and clear working relationships.
@@ -28,6 +41,8 @@ rules:
   - id: connected-narrative-registers
     axis: composition_and_sequence
     importance: core
+    when_contexts:
+      - multiple-requested-activities
     applies_when: The prompt requests a broad mural narrative with more than one activity or stage.
     instruction: Group the requested activities into a few connected registers; use changes in scale, direction, and adjacency to lead the eye between them while maintaining one continuous spatial world.
     observable: Each requested activity can be located at a glance, and the registers connect as a single mural rather than separate unrelated vignettes.
@@ -42,6 +57,8 @@ rules:
   - id: shared-scale-people-and-systems
     axis: figure_environment_relationship
     importance: core
+    when_contexts:
+      - people-tools-or-system-interaction
     applies_when: The brief includes people working with tools, structures, or natural systems.
     instruction: Make people, equipment, materials, and surrounding structures occupy a coherent shared scale; show their relation through clear contact, alignment, or repeated structural rhythms instead of isolating a heroic figure from the scene.
     observable: A viewer can understand how the requested people interact with their environment, and no single scale mismatch breaks the mural's spatial logic.
