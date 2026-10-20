@@ -24,7 +24,7 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 ## Optional direction: layered hand-structure study
 
-`art-direction.yaml` registers an experimental drawing direction for user-requested multi-view hand or wrist anatomy studies. It treats back-of-hand, palm, and skeletal views as a comparison of the same subject, relating wrist entry points and joint axes where useful. Red-brown chalk, charcoal, and form-following hatching distinguish surface and deeper structures. It does not provide medical interpretation or add labels by default. Explicitly declare `layered-hand-mechanics-study` when compiling; the existing artist package and legacy default remain in place.
+`art-direction.yaml` uses direction format 2.1.0 and registers an experimental drawing direction for user-requested multi-view hand or wrist anatomy studies. It treats back-of-hand, palm, and skeletal views as a comparison of the same subject, relating wrist entry points and joint axes where useful. Declare `external-and-internal-hand-structure-requested` only when both surface and deeper structures are requested to activate the layered-reading rule; paper drawing marks can also be selected when applicable. It does not provide medical interpretation or add labels by default. Explicitly declare `layered-hand-mechanics-study` when compiling; the existing artist package and legacy default remain in place.
 
 ### Generated comparison using the same hand study sheet
 

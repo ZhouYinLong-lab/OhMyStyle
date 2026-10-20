@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: leonardo-layered-hand-mechanics-study
 name: Leonardo layered hand mechanics study
@@ -25,6 +25,19 @@ scope:
     - Distinguish surface form from skeletal study through separate views unless the user requests an overlay.
     - Do not add medical labels, diagnoses, or anatomical claims the user did not request.
     - Do not copy a named historical drawing or its page layout.
+contexts:
+  - id: layered-hand-mechanics-study
+    description: The user requests a multi-view or layered hand and wrist drawing study.
+  - id: single-finished-hand-portrait
+    description: The user requests one finished hand portrait rather than a comparative study sheet.
+  - id: ornamental-hand-symbol
+    description: The user requests a decorative hand symbol.
+  - id: photorealistic-medical-render
+    description: The user requests a photorealistic medical rendering.
+  - id: external-and-internal-hand-structure-requested
+    description: The request includes an external hand view and internal or skeletal information.
+  - id: paper-drawing-or-study-sheet-requested
+    description: The user requests a drawing or study-sheet treatment on paper.
 pillars:
   - Treat the sheet as a comparison of views of the same requested hand, keeping wrist entry points and joint axes in a readable relationship.
   - Separate external form, visible tendon and joint landmarks, and skeletal structure into distinct user-requested views rather than confusing overlays.
@@ -34,6 +47,8 @@ rules:
   - id: aligned-comparative-hand-views
     axis: study_sheet_composition
     importance: core
+    when_contexts:
+      - layered-hand-mechanics-study
     applies_when: The user requests multiple views or layers of the same hand or wrist.
     instruction: Arrange only the requested views as a comparative sheet; relate wrist entry points, palm axes, and joint positions with consistent orientation or scale where appropriate, while keeping each view distinct.
     observable: A viewer can compare the requested views as belonging to the same hand without confusing surface and skeletal structure.
@@ -48,6 +63,8 @@ rules:
   - id: layered-structural-reading
     axis: anatomy_and_form
     importance: core
+    when_contexts:
+      - external-and-internal-hand-structure-requested
     applies_when: The request includes both an external hand view and internal or skeletal information.
     instruction: Keep surface contours, tendon or joint landmarks, and bones legible as separate analytical information; use adjacent views or restrained construction guides rather than implying unsupported transparency.
     observable: Surface and deeper structure can be distinguished, and the page does not confuse illustration with a medical explanation.
@@ -62,6 +79,8 @@ rules:
   - id: directional-study-marking
     axis: line_and_surface
     importance: supporting
+    when_contexts:
+      - paper-drawing-or-study-sheet-requested
     applies_when: The user requests a drawing or study-sheet treatment on paper.
     instruction: Use light exploratory contours before selective darker structural lines; keep parallel hatching aligned with the turning plane and reserve the darkest marks for clear overlaps or joints.
     observable: Marks describe structure and observation, while open paper separates views and keeps the sheet readable.
