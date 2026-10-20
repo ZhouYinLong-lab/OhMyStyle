@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: design_school
   medium: academic painting and drawing

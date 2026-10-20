@@ -1,0 +1,113 @@
+schema_version: 2.1.0
+status: experimental
+id: academy-of-fine-arts-vienna-direction
+name: 维也纳美术学院
+base_package: schools/academy-of-fine-arts-vienna
+scope:
+  medium: painting
+  representation: stylized
+  description: 以观察、比例、结构素描、受控明暗和完成度优先的学院训练组织画面，强调从观察到完成的稳定方法。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以观察、比例、结构素描、受控明暗和完成度优先的学院训练组织画面，强调从观察到完成的稳定方法。
+- 'form: careful proportion; observational drawing; controlled chiaroscuro; resolved material edges'
+- 'process: composition; lighting; surface; texture'
+- 'palette: palette: name: chalk; palette: hex: #E7E0D3; palette: name: umber; palette: hex: #6C5140; palette:
+  name: vermilion; palette: hex: #A54D38; palette: name: deep green; palette: hex: #3D574D'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: careful proportion;
+    observational drawing; controlled chiaroscuro; resolved material edges. Do not let generic polish or another
+    package direction replace it. If a cue names a concrete object or motif, do not add it unless the user
+    requests it; translate its formal qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: careful
+    proportion; observational drawing; controlled chiaroscuro; resolved material edges.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: careful proportion; observational drawing; controlled chiaroscuro; resolved
+    material edges.'
+  evidence:
+    source_ids:
+    - source-primary-reference
+    basis: curatorial_inference
+    visual_review: pending
+- id: controls
+  axis: process
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: composition; lighting; surface; texture. Keep it subordinate
+    to the requested subject and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: composition; lighting;
+    surface; texture.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: composition;
+    lighting; surface; texture.'
+  evidence:
+    source_ids:
+    - source-primary-reference
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: palette: name: chalk; palette: hex:
+    #E7E0D3; palette: name: umber; palette: hex: #6C5140; palette: name: vermilion; palette: hex: #A54D38;
+    palette: name: deep green; palette: hex: #3D574D. Adapt their balance to the requested subject; do not
+    apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: palette: name: chalk; palette:
+    hex: #E7E0D3; palette: name: umber; palette: hex: #6C5140; palette: name: vermilion; palette: hex: #A54D38;
+    palette: name: deep green; palette: hex: #3D574D.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    palette: name: chalk; palette: hex: #E7E0D3; palette: name: umber; palette: hex: #6C5140; palette: name:
+    vermilion; palette: hex: #A54D38; palette: name: deep green; palette: hex: #3D574D.'
+  evidence:
+    source_ids:
+    - source-primary-reference
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以观察、比例、结构素描、受控明暗和完成度优先的学院训练组织画面，强调从观察到完成的稳定方法。.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以观察、比例、结构素描、受控明暗和完成度优先的学院训练组织画面，强调从观察到完成的稳定方法。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以观察、比例、结构素描、受控明暗和完成度优先的学院训练组织画面，强调从观察到完成的稳定方法。.'
+  evidence:
+    source_ids:
+    - source-primary-reference
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- controls
+- palette
+- composition
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - controls
+  - palette
+  instruction: Keep the package-specific relationship among form, process, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-reference
+  kind: primary
+  base_asset_id: primary-reference
+execution:
+  route: text_only
+  must:
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied composition
+  - named character or branded asset
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
