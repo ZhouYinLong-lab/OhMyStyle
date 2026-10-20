@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: rousseau-flat-space-and-crisp-natural-detail
 name: Rousseau flat space and crisp natural detail
@@ -23,6 +23,17 @@ scope:
     - Only depict plants, animals, figures, or story elements that the user requests.
     - Preserve the requested subject identities, count, action, proportions, and location.
     - Use scale or perspective tension subtly; do not distort an explicitly requested size or layout.
+contexts:
+  - id: flat-space-natural-detail
+    description: A stylized painting direction using bounded color areas and shallow overlapping planes.
+  - id: photorealistic-atmospheric-depth
+    description: A photorealistic scene with natural atmospheric depth.
+  - id: gestural-expressionist-strokes
+    description: A painting treatment led by expressive gestural brushwork.
+  - id: automatic-tropical-jungle-scene
+    description: An automatically generated jungle or tropical narrative not requested by the user.
+  - id: natural-forms-requested
+    description: The user requests plants, animals, or other natural forms as part of the subject.
 pillars:
   - Separate forms with clean, continuous contours and broad, mostly even color areas rather than soft atmospheric blending.
   - Build shallow depth through overlaps and clear foreground-to-background layers while retaining a readable, slightly flattened space.
@@ -60,6 +71,8 @@ rules:
   - id: steady-light-and-particular-detail
     axis: lighting_and_detail
     importance: supporting
+    when_contexts:
+      - natural-forms-requested
     applies_when: The requested subject benefits from even visibility and clearly separated details.
     instruction: Keep illumination broadly diffuse and make small details precise but selective; where the user requests natural forms, use distinct shapes rather than realistic botanical density or generic texture noise.
     observable: Small requested features remain visible under steady light, and detail is specific to the provided subject rather than an added motif.

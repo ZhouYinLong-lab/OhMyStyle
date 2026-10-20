@@ -35,7 +35,7 @@ repository stores a source link and an original generated demonstration only.
 
 ## New architecture: flat space and crisp natural detail (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) applies only when `flat-space-natural-detail` is explicitly declared. It translates Rousseau's direction into clear continuous contours, bounded color areas, overlapping but not fully naturalistic depth, and even diffuse light. Detailed natural forms appear only when the user requests a natural subject; the direction does not add a jungle, plants, animals, or adventure narrative by default.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and applies only when `flat-space-natural-detail` is explicitly declared. It translates Rousseau's direction into clear continuous contours, bounded color areas, and overlapping but not fully naturalistic depth. The natural-form detail rule activates only when the caller declares `natural-forms-requested`; the direction does not add a jungle, plants, animals, or adventure narrative by default.
 
 This differs from Matisse's composition through cut-paper color shapes and positive-negative space, and from Moreau's fine curves, jewel-like color planes, and mysterious detail. Rousseau's direction emphasizes stable planar layers, defined forms, and even illumination; any slight spatial strangeness must preserve the requested subject count and layout.
 
