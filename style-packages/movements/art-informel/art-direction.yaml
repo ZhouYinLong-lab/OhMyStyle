@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: art-informel-direction
+name: 非形式艺术
+base_package: movements/art-informel
+scope:
+  medium: postwar material abstraction with matter painting logic
+  representation: stylized
+  description: 以反几何构成、偶发痕迹、材料厚度和松散手势拒绝整齐的形式秩序。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - clean geometric abstraction
+  - generic grunge texture overlay
+  - smooth digital gradient
+  - recognizable object hidden in the material
+pillars:
+- 以反几何构成、偶发痕迹、材料厚度和松散手势拒绝整齐的形式秩序。
+- 'composition: 以不规则的材料区域和手势压力组织画面，不依赖几何网格或中心主体。; 保留局部空白与密集堆积的张力，让视线沿着刮擦和断裂移动。'
+- 'palette: 以炭黑、土褐、石灰白和锈红形成低饱和材料色，暖色只在厚重区域出现。'
+- 'lighting: quality: raking museum light; behavior: 侧向光强调真实起伏和擦痕，但不制造舞台式戏剧光。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以不规则的材料区域和手势压力组织画面，不依赖几何网格或中心主体。;
+    保留局部空白与密集堆积的张力，让视线沿着刮擦和断裂移动。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以不规则的材料区域和手势压力组织画面，不依赖几何网格或中心主体。;
+    保留局部空白与密集堆积的张力，让视线沿着刮擦和断裂移动。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以不规则的材料区域和手势压力组织画面，不依赖几何网格或中心主体。;
+    保留局部空白与密集堆积的张力，让视线沿着刮擦和断裂移动。.'
+  evidence:
+    source_ids:
+    - source-art-informel-primary-source
+    - source-art-informel-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 以炭黑、土褐、石灰白和锈红形成低饱和材料色，暖色只在厚重区域出现。.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 以炭黑、土褐、石灰白和锈红形成低饱和材料色，暖色只在厚重区域出现。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    以炭黑、土褐、石灰白和锈红形成低饱和材料色，暖色只在厚重区域出现。.'
+  evidence:
+    source_ids:
+    - source-art-informel-primary-source
+    - source-art-informel-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: raking museum light; behavior: 侧向光强调真实起伏和擦痕，但不制造舞台式戏剧光。.
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: raking museum light;
+    behavior: 侧向光强调真实起伏和擦痕，但不制造舞台式戏剧光。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: raking museum
+    light; behavior: 侧向光强调真实起伏和擦痕，但不制造舞台式戏剧光。.'
+  evidence:
+    source_ids:
+    - source-art-informel-primary-source
+    - source-art-informel-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: thick
+    mineral and wax-like matter on a matte support; edges: torn, scraped, feathered, and partially buried.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    thick mineral and wax-like matter on a matte support; edges: torn, scraped, feathered, and partially buried.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: thick mineral and wax-like matter on a matte support; edges: torn, scraped, feathered, and partially
+    buried.'
+  evidence:
+    source_ids:
+    - source-art-informel-primary-source
+    - source-art-informel-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: high
+    and materially varied; placement: concentrated in ridges, seams, abrasions, and layered transitions. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    high and materially varied; placement: concentrated in ridges, seams, abrasions, and layered transitions.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: high and materially varied; placement: concentrated in ridges, seams, abrasions, and layered transitions.'
+  evidence:
+    source_ids:
+    - source-art-informel-primary-source
+    - source-art-informel-secondary
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-art-informel-primary-source
+  kind: primary
+  base_asset_id: art-informel-primary-source
+- id: source-art-informel-secondary
+  kind: secondary
+  base_asset_id: art-informel-secondary
+execution:
+  route: text_only
+  must:
+  - Preserve the user's subject or surface arrangement before adding material treatment.
+  - Establish a restrained earth-and-charcoal ground.
+  - Build irregular deposits, scraped passages, seams, and buried layers.
+  - Use one or two directional gestures to create pressure and movement.
+  - Reduce accidental symbols, text, and decorative geometry while keeping material evidence.
+  - 材料厚度和施力方向必须比装饰性图案更重要。
+  - 非几何不等于随机噪声；每处堆积都应保留手势或侵蚀的痕迹。
+  - 不复制具体艺术家的画面、符号或作品构图。
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - clean geometric abstraction
+  - generic grunge texture overlay
+  - smooth digital gradient
+  - recognizable object hidden in the material
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
