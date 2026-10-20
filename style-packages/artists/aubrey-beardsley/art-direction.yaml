@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: beardsley-ink-mass-and-negative-space
 name: Beardsley ink mass and negative space
@@ -21,6 +21,19 @@ scope:
     - Keep the user's subject and layout authoritative; do not add period costume, literary characters, grotesques, or decorative framing unless requested.
     - Use black ink and paper white as the default value system; do not add color or gray wash unless requested.
     - Preserve broad quiet paper areas so fine line work and solid blacks remain legible.
+contexts:
+  - id: black-and-white-ink-illustration
+    description: The user requests a black-and-white ink illustration on a light ground.
+  - id: color-led-poster
+    description: The user requires a color-led poster treatment.
+  - id: painterly-gradient-rendering
+    description: The user requires painterly gradients rather than ink shape design.
+  - id: photorealistic-rendering
+    description: The user requires photorealistic rendering.
+  - id: readable-outer-silhouette-or-overlap
+    description: The requested subject has a readable outer silhouette or overlapping forms.
+  - id: distinct-focal-passage
+    description: A focal object or passage can carry more detail than the surrounding image.
 pillars:
   - Let a few solid black shapes and open paper fields establish the composition before detail.
   - Use fluid, varied ink contours with deliberate starts, tapers, and changes of weight.
@@ -30,6 +43,8 @@ rules:
   - id: black-mass-paper-counterweight
     axis: composition_and_value
     importance: core
+    when_contexts:
+      - black-and-white-ink-illustration
     applies_when: The requested image uses black ink on a light ground.
     instruction: Organize the subject with a small number of clear black masses balanced by broad untouched paper; use white gaps inside or around forms to keep their edges readable.
     observable: The composition reads at thumbnail size through black-white balance before any fine detail is noticed.
@@ -44,6 +59,8 @@ rules:
   - id: calligraphic-contour-hierarchy
     axis: line_and_edge
     importance: core
+    when_contexts:
+      - readable-outer-silhouette-or-overlap
     applies_when: The subject has a readable outer silhouette or overlapping forms.
     instruction: Draw contours as confident ink decisions, varying thickness, taper, and curvature to separate near and far edges; use solid brush shapes where a line should become a mass.
     observable: The outline has a controlled rhythm and the silhouette remains clear without a mechanically uniform stroke.
@@ -58,6 +75,8 @@ rules:
   - id: selective-detail-open-paper
     axis: detail_density
     importance: core
+    when_contexts:
+      - distinct-focal-passage
     applies_when: A focal object or passage can carry more detail than the surrounding image.
     instruction: Place fine line work only where it clarifies a requested material, overlap, or focal feature; let secondary surfaces resolve as clean paper or a single ink shape.
     observable: A clear focal passage contrasts with quieter regions, and the image does not depend on all-over ornament.

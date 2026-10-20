@@ -45,7 +45,7 @@ Use `evaluation.yaml` to check whether the image works first as black-white mass
 
 ## New architecture: ink masses, calligraphic contour, and open paper (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) separates the direction into three observable rules: make black-white positive and negative shapes work at thumbnail size; use varied calligraphic ink weight to organize contours; and reserve fine line work for a few focal passages. It does not require ornamental frames, vines, Gothic props, or literary characters, and is distinct from Mucha's color-poster hierarchy.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and separates the direction into three observable rules: make black-white positive and negative shapes work at thumbnail size; use varied calligraphic ink weight to organize contours; and reserve fine line work for a few focal passages. Black-white ink masses are a base rule; callers can declare `readable-outer-silhouette-or-overlap` and `distinct-focal-passage` to activate contour and focal-detail rules as applicable. It does not require ornamental frames, vines, Gothic props, or literary characters, and is distinct from Mucha's color-poster hierarchy.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/aubrey-beardsley --direction package --context black-and-white-ink-illustration --subject "A small moth resting on a cracked teacup on a plain shelf" --output runs/style-v2/aubrey-beardsley-job.json
