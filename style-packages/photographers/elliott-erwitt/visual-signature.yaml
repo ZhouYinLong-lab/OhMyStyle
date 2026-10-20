@@ -6,10 +6,9 @@ palette:
 - 等待瞬间形成的偶然几何关系
 - 克制的镜头距离与自然姿态
 lighting:
-  quality: 克制的镜头距离与自然姿态
+  quality: natural available light with moderate contrast and readable midtones
   behavior:
-  - Keep the requested subject and location independent from the package.
-  - Apply lighting as a transferable visual decision, not a fixed scene.
+  - Keep gestures and visual coincidences legible without theatrical spotlighting.
 surface:
   finish: 轻微幽默和不伤害主体尊严的观察
   edges: subject-dependent, without a copied layout
