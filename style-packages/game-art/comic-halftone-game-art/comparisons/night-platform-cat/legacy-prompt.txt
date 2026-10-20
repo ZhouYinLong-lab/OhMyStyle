@@ -1,0 +1,46 @@
+SUBJECT INDEPENDENCE CONTRACT:
+User subject: 横版 16:9，无文字。夜晚空旷的户外站台上只有一只橘猫，猫停在一盏暖黄色站台灯下；背景为深蓝夜空和三层远处山形剪影，不出现人物、列车、建筑标识或其他动物。猫的轮廓清晰，地面与远景分层可读。
+User setting: the user-requested setting
+The user-supplied subject and setting are authoritative. This package controls
+visual treatment only: medium, composition, lighting, palette, surface,
+texture, and edge behavior. Do not add a recurring object, setting, character,
+landmark, or narrative motif unless the user explicitly requests it. Any
+concrete noun used below is optional visual vocabulary, not a default subject.
+
+Create a new subject and composition using these observable visual decisions:
+- 使用近景、斜线和局部裁切强化戏剧信息
+- 关键动作有明确视线方向
+- 背景细节服从主体和面板节奏
+- 黑、米白、暗青、砖红和金黄形成印刷色组
+- 局部高饱和色承担叙事焦点
+- 阴影可用单色网点而不是灰阶雾化
+- 粗细变化的墨线
+- 平涂色块
+- 网点或交叉线阴影
+- 高反差侧光或舞台光
+- 阴影图形化
+- 高光保持平面形状
+- 纸张与油墨的轻微触感
+- 边缘允许小幅套印偏移
+- 禁止廉价漫画滤镜
+- 网点沿阴影和材质方向分布
+- 颗粒必须有尺度和层级
+- 图形叙事优先于照片真实
+- 不会生成可读品牌与对白
+- 不复刻来源作品的镜头和角色
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.
+
+Exact package assignment:
+Follow the package-defined visual signature, process, materials, and constraints exactly.
+Use any supplied reference images for palette relationship only, not for subject identity or copied composition.
+
+Negative prompt:
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- readable_text
+- exact_comic_panel
+- photorealistic_skin
+- uncontrolled_halftone_noise

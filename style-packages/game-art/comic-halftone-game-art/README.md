@@ -30,6 +30,10 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 视觉对照
+
+[`夜站台上的橘猫`](comparisons/night-platform-cat/README.md)保存了同题旧包与新版方向结果。新版的网点、墨线和近景框景更明显，详见逐项复核。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

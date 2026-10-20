@@ -1,0 +1,232 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "comic-halftone-game-art",
+    "name": "漫画网点叙事游戏美术",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\comic-halftone-game-art"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，无文字。夜晚空旷的户外站台上只有一只橘猫，猫停在一盏暖黄色站台灯下；背景为深蓝夜空和三层远处山形剪影，不出现人物、列车、建筑标识或其他动物。猫的轮廓清晰，地面与远景分层可读。",
+  "prompt": "USER SUBJECT: 横版 16:9，无文字。夜晚空旷的户外站台上只有一只橘猫，猫停在一盏暖黄色站台灯下；背景为深蓝夜空和三层远处山形剪影，不出现人物、列车、建筑标识或其他动物。猫的轮廓清晰，地面与远景分层可读。\nSUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.\nVISUAL MEDIUM: 粗细变化的墨线; 平涂色块; 网点或交叉线阴影; 略有套印误差的印刷边缘\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [medium] Use the declared medium and keep its package-specific representation constraints visible: 粗细变化的墨线; 平涂色块; 网点或交叉线阴影; 略有套印误差的印刷边缘.\n- [composition] Organize the requested subject using these package-specific spatial decisions: 使用近景、斜线和局部裁切强化戏剧信息; 关键动作有明确视线方向; 背景细节服从主体和面板节奏. Preserve the user-provided content and layout.\n- [palette] Use these package-specific color roles and relationships: 黑、米白、暗青、砖红和金黄形成印刷色组; 局部高饱和色承担叙事焦点; 阴影可用单色网点而不是灰阶雾化. Adapt their balance to the requested subject; do not apply them as a uniform tint.\n- [lighting] Apply the package-specific light behavior: 高反差侧光或舞台光; 阴影图形化; 高光保持平面形状. Keep light coherent with the requested subject, medium, and scene.\n- [surface] Render the requested materials using these package-specific surface decisions: 纸张与油墨的轻微触感; 边缘允许小幅套印偏移; 禁止廉价漫画滤镜. Preserve detail hierarchy and material identity.\n- [texture] Render the requested materials using these package-specific surface decisions: 网点沿阴影和材质方向分布; 颗粒必须有尺度和层级. Preserve detail hierarchy and material identity.\n- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.\nREQUIREMENT: 先做剪影和镜头信息\nREQUIREMENT: 再分配平涂色版\nREQUIREMENT: 用网点建立阴影与材质\nREQUIREMENT: 最后检查文字和标志是否被排除\nREQUIREMENT: 图形叙事优先于照片真实\nREQUIREMENT: 不会生成可读品牌与对白\nREQUIREMENT: 不复刻来源作品的镜头和角色\nREQUIREMENT: Preserve the user-provided subject, object count, location, and requested details.",
+  "negative_prompt": "readable_text\nexact_comic_panel\nphotorealistic_skin\nuncontrolled_halftone_noise\nUse observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.\nDo not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "comic-halftone-game-art-direction",
+    "name": "漫画网点叙事游戏美术",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\comic-halftone-game-art\\art-direction.yaml",
+    "sha256": "9487286d9602b8cd29a8f7fc8a13c028476a3357d467fdb837053e1e5c6de30c",
+    "active_rule_ids": [
+      "medium",
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "applicable_rule_ids": [
+      "medium",
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "先做剪影和镜头信息",
+      "再分配平涂色版",
+      "用网点建立阴影与材质",
+      "最后检查文字和标志是否被排除",
+      "图形叙事优先于照片真实",
+      "不会生成可读品牌与对白",
+      "不复刻来源作品的镜头和角色",
+      "Preserve the user-provided subject, object count, location, and requested details."
+    ],
+    "avoid": [
+      "readable_text",
+      "exact_comic_panel",
+      "photorealistic_skin",
+      "uncontrolled_halftone_noise",
+      "Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.",
+      "Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it."
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "粗细变化的墨线; 平涂色块; 网点或交叉线阴影; 略有套印误差的印刷边缘",
+      "representation": "stylized",
+      "description": "把漫画分镜、墨线轮廓、网点阴影和有限色印刷逻辑转译为游戏画面，重点是强烈的面板节奏、表情剪影与叙事信息层级。",
+      "required_contexts": [],
+      "incompatible_contexts": [],
+      "limitations": [
+        "readable_text",
+        "exact_comic_panel",
+        "photorealistic_skin",
+        "uncontrolled_halftone_noise"
+      ]
+    },
+    "pillars": [
+      "把漫画分镜、墨线轮廓、网点阴影和有限色印刷逻辑转译为游戏画面，重点是强烈的面板节奏、表情剪影与叙事信息层级。",
+      "medium: 粗细变化的墨线; 平涂色块; 网点或交叉线阴影; 略有套印误差的印刷边缘",
+      "composition: 使用近景、斜线和局部裁切强化戏剧信息; 关键动作有明确视线方向; 背景细节服从主体和面板节奏",
+      "palette: 黑、米白、暗青、砖红和金黄形成印刷色组; 局部高饱和色承担叙事焦点; 阴影可用单色网点而不是灰阶雾化"
+    ],
+    "rules": [
+      {
+        "id": "medium",
+        "axis": "medium",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use the declared medium and keep its package-specific representation constraints visible: 粗细变化的墨线; 平涂色块; 网点或交叉线阴影; 略有套印误差的印刷边缘.",
+        "observable": "The requested image retains the stated medium distinction or production constraint: 粗细变化的墨线; 平涂色块; 网点或交叉线阴影; 略有套印误差的印刷边缘.",
+        "reject_when": "The medium is converted into an unrelated representation or the stated distinction disappears: 粗细变化的墨线; 平涂色块; 网点或交叉线阴影; 略有套印误差的印刷边缘.",
+        "evidence": {
+          "source_ids": [
+            "source-comic-halftone-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "composition",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Organize the requested subject using these package-specific spatial decisions: 使用近景、斜线和局部裁切强化戏剧信息; 关键动作有明确视线方向; 背景细节服从主体和面板节奏. Preserve the user-provided content and layout.",
+        "observable": "The stated hierarchy, spacing, framing, or depth relationship is readable: 使用近景、斜线和局部裁切强化戏剧信息; 关键动作有明确视线方向; 背景细节服从主体和面板节奏.",
+        "reject_when": "The composition contradicts these spatial decisions or copies a source arrangement: 使用近景、斜线和局部裁切强化戏剧信息; 关键动作有明确视线方向; 背景细节服从主体和面板节奏.",
+        "evidence": {
+          "source_ids": [
+            "source-comic-halftone-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "palette",
+        "axis": "palette",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use these package-specific color roles and relationships: 黑、米白、暗青、砖红和金黄形成印刷色组; 局部高饱和色承担叙事焦点; 阴影可用单色网点而不是灰阶雾化. Adapt their balance to the requested subject; do not apply them as a uniform tint.",
+        "observable": "The stated colors and their roles are visible and distinguishable: 黑、米白、暗青、砖红和金黄形成印刷色组; 局部高饱和色承担叙事焦点; 阴影可用单色网点而不是灰阶雾化.",
+        "reject_when": "An all-over filter replaces the stated color relationships, or their roles cannot be distinguished: 黑、米白、暗青、砖红和金黄形成印刷色组; 局部高饱和色承担叙事焦点; 阴影可用单色网点而不是灰阶雾化.",
+        "evidence": {
+          "source_ids": [
+            "source-comic-halftone-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "lighting",
+        "axis": "lighting",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Apply the package-specific light behavior: 高反差侧光或舞台光; 阴影图形化; 高光保持平面形状. Keep light coherent with the requested subject, medium, and scene.",
+        "observable": "Light and shadow visibly support the stated forms or atmosphere: 高反差侧光或舞台光; 阴影图形化; 高光保持平面形状.",
+        "reject_when": "Global glow, tint, or incoherent light replaces the stated behavior: 高反差侧光或舞台光; 阴影图形化; 高光保持平面形状.",
+        "evidence": {
+          "source_ids": [
+            "source-comic-halftone-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "surface",
+        "axis": "surface",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Render the requested materials using these package-specific surface decisions: 纸张与油墨的轻微触感; 边缘允许小幅套印偏移; 禁止廉价漫画滤镜. Preserve detail hierarchy and material identity.",
+        "observable": "The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纸张与油墨的轻微触感; 边缘允许小幅套印偏移; 禁止廉价漫画滤镜.",
+        "reject_when": "Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: 纸张与油墨的轻微触感; 边缘允许小幅套印偏移; 禁止廉价漫画滤镜.",
+        "evidence": {
+          "source_ids": [
+            "source-comic-halftone-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "texture",
+        "axis": "texture",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Render the requested materials using these package-specific surface decisions: 网点沿阴影和材质方向分布; 颗粒必须有尺度和层级. Preserve detail hierarchy and material identity.",
+        "observable": "The stated edge, surface, or texture treatment can be seen at an appropriate scale: 网点沿阴影和材质方向分布; 颗粒必须有尺度和层级.",
+        "reject_when": "Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: 网点沿阴影和材质方向分布; 颗粒必须有尺度和层级.",
+        "evidence": {
+          "source_ids": [
+            "source-comic-halftone-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "visual-relationship-coherence",
+        "rule_ids": [
+          "medium",
+          "composition",
+          "palette"
+        ],
+        "instruction": "Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.",
+        "observable": "The linked visual decisions reinforce one another and remain subordinate to the user-provided subject."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-comic-halftone-game-art-primary-source",
+        "kind": "primary",
+        "base_asset_id": "comic-halftone-game-art-primary-source",
+        "package_reference": {
+          "asset_id": "comic-halftone-game-art-primary-source",
+          "local_path": "",
+          "title": "The Wolf Among Us",
+          "creator": "Telltale",
+          "year": "",
+          "source_url": "https://www.telltale.com/the-wolf-among-us/",
+          "license": "link_only",
+          "attribution": "The Wolf Among Us is a commercial work by Telltale and its licensors; this package abstracts comic staging without copying comic panels or characters.",
+          "role": "primary",
+          "notes": "Link-only source record. Do not bundle or redistribute external artwork without explicit permission."
+        }
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "ddbf3669afcea19effc8bda6f654da884b6a10281fcd32cc40bd6f482cd8a4ad",
+    "negative_prompt_sha256": "d44b0c3327de061646853afa2b27537f6473e93d34ad635084ccb7a5ba238c71",
+    "direction_sha256": "9487286d9602b8cd29a8f7fc8a13c028476a3357d467fdb837053e1e5c6de30c",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
