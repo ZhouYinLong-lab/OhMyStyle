@@ -1,8 +1,7 @@
 family: 黑白纪实观察
 near_duplicates: []
 supersedes: []
-conflicts:
-  - saturated editorial color
+conflicts: []
 distinctives:
   - 宽阔视野中的人地尺度
   - 高反差黑白与开放边缘
@@ -10,3 +9,5 @@ distinctives:
 avoid_overlap:
   - 不强制生成墙、荒地、战争、节庆或流浪者
   - 不把黑白当作唯一特征而忽略空间与时机
+  - 'Avoid blending this direction with the unregistered contrast reference: saturated
+    editorial color.'
