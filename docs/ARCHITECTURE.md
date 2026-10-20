@@ -275,7 +275,7 @@ ASCII 路线要求先有字面字符源，再用指定等宽字体逐格绘制�
 
 现行成熟度为 L0 名称描述、L1 结构化描述、L2 有参考的可执行包、L3 增加已接受生成与评审证据、L4 增加跨模型或适配器验证。旧包的成熟度不会自动继承成 v2 规则的通过结论。
 
-三个方向均维持 `experimental`。索罗亚与包豪斯的预注册比较仍未执行；ASCII 已完成三项字面网格构建和基础可读性试验，但没有新旧风格对照或逐规则审查。初始阶段记录见 [实施报告](../reports/style-v2-implementation.json)，当前 ASCII 试验范围及其限制见[比较覆盖报告](../reports/style-v2-comparison-coverage.md)。
+三个方向均维持 `experimental`。索罗亚与包豪斯的预注册比较仍未执行；ASCII 已完成三项字面网格构建及单人、有限的逐规则检查，但没有新旧风格对照或独立复核。初始阶段记录见 [实施报告](../reports/style-v2-implementation.json)，当前 ASCII 试验范围及其限制见[比较覆盖报告](../reports/style-v2-comparison-coverage.md)。
 
 ## 8. 版本与后续推进
 

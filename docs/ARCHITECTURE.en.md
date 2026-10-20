@@ -265,7 +265,7 @@ Compare specific visual relationships with neighboring artists, movements, or sc
 
 The existing maturity contract is L0 descriptor, L1 structured description, L2 reference-backed executable package, L3 accepted generation and review evidence, and L4 interoperability evidence across providers or adapters. Existing maturity does not establish validation of newly authored v2 rules.
 
-All three directions remain `experimental`. The preregistered Sorolla and Bauhaus comparisons have not run. ASCII has passed a limited three-task literal-grid construction and basic-readability pilot, but has no old-versus-new style comparison or rule-by-rule review. See the [initial implementation record](../reports/style-v2-implementation.json) and the current [comparison coverage report](../reports/style-v2-comparison-coverage.md) for scope and limits.
+All three directions remain `experimental`. The preregistered Sorolla and Bauhaus comparisons have not run. ASCII has passed a limited, single-reviewer rule check across three literal-grid tasks, but has no old-versus-new style comparison or independent review. See the [initial implementation record](../reports/style-v2-implementation.json) and the current [comparison coverage report](../reports/style-v2-comparison-coverage.md) for scope and limits.
 
 ## 8. Versions and migration
 
