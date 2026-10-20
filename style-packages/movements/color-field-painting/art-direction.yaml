@@ -1,0 +1,77 @@
+schema_version: 2.1.0
+status: experimental
+id: color-field-painting-direction
+name: 色域绘画
+base_package: movements/color-field-painting
+scope:
+  medium: painting
+  representation: nonfigurative
+  description: 以大面积、低调制的色面组织视觉空间、观看节奏和情绪，不依赖明确的中心叙事
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - 固定矩形、圆形、地平线或抽象符号
+  - 赛博渐变、发光背景和装饰性色卡
+  - 复制具体画作或艺术家构图
+pillars:
+- 以大面积、低调制的色面组织视觉空间、观看节奏和情绪，不依赖明确的中心叙事
+- 'palette: name: 宽阔色域; colors: name: 深群青; colors: hex: #1E3A70; colors: role: deep field; colors: name: 暗酒红;
+  colors: hex: #6E3D4A; colors: role: warm field; colors: name: 灰橙'
+- 'composition: 以大面积、低调制的色面组织视觉空间、观看节奏和情绪，不依赖明确的中心叙事'
+rules:
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: name: 宽阔色域; colors: name: 深群青; colors:
+    hex: #1E3A70; colors: role: deep field; colors: name: 暗酒红; colors: hex: #6E3D4A; colors: role: warm field;
+    colors: name: 灰橙. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: name: 宽阔色域; colors: name:
+    深群青; colors: hex: #1E3A70; colors: role: deep field; colors: name: 暗酒红; colors: hex: #6E3D4A; colors: role:
+    warm field; colors: name: 灰橙.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    name: 宽阔色域; colors: name: 深群青; colors: hex: #1E3A70; colors: role: deep field; colors: name: 暗酒红; colors:
+    hex: #6E3D4A; colors: role: warm field; colors: name: 灰橙.'
+  evidence:
+    source_ids:
+    - source-color-field-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以大面积、低调制的色面组织视觉空间、观看节奏和情绪，不依赖明确的中心叙事.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以大面积、低调制的色面组织视觉空间、观看节奏和情绪，不依赖明确的中心叙事.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以大面积、低调制的色面组织视觉空间、观看节奏和情绪，不依赖明确的中心叙事.'
+  evidence:
+    source_ids:
+    - source-color-field-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- palette
+- composition
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - palette
+  - composition
+  instruction: Keep the package-specific relationship among palette, composition consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-color-field-primary-source
+  kind: primary
+  base_asset_id: color-field-primary-source
+execution:
+  route: text_only
+  must:
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 固定矩形、圆形、地平线或抽象符号
+  - 赛博渐变、发光背景和装饰性色卡
+  - 复制具体画作或艺术家构图
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
