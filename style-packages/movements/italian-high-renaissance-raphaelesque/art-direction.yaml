@@ -1,0 +1,182 @@
+schema_version: 2.1.0
+status: experimental
+id: italian-high-renaissance-raphaelesque-direction
+name: 意大利文艺复兴盛期
+base_package: movements/italian-high-renaissance-raphaelesque
+scope:
+  medium: 'support: fresco, tempera panel, or preparatory drawing; mark: clear underdrawing, thin layered color,
+    restrained plaster or gesso variation; finish: matte, luminous, and materially quiet'
+  representation: stylized
+  description: A sixteenth-century Italian painting system built on careful drawing, proportioned figures,
+    coherent space, calm narrative action, and controlled color; Raphael's School of Athens is one reference
+    case, not a template.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+pillars:
+- A sixteenth-century Italian painting system built on careful drawing, proportioned figures, coherent space,
+  calm narrative action, and controlled color; Raphael's School of Athens is one reference case, not a template.
+- 'composition: rule: Let subject matter determine the arrangement.; valid_modes: single figure with a quiet
+  ground; valid_modes: small group with balanced counterweights; valid_modes: narrative scene with several
+  connected actions; valid_modes: architectural, landscape, or domestic setting; forbidden_assumption: The
+  movement does not require a symmetrical hall, a central pair, or a philosopher assembly.'
+- 'composition: rule: Construct depth consistently, but do not force one-point perspective in every image.;
+  tools: overlapping bodies; tools: receding planes; tools: measured architectural perspective when appropriate;
+  tools: atmospheric distance kept subordinate to drawing'
+- 'surface: fresco or tempera/panel surface may show restrained material variation; the image should feel made
+  by a painter, not rendered by a 3D engine'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: rule: Let subject
+    matter determine the arrangement.; valid_modes: single figure with a quiet ground; valid_modes: small group
+    with balanced counterweights; valid_modes: narrative scene with several connected actions; valid_modes:
+    architectural, landscape, or domestic setting; forbidden_assumption: The movement does not require a symmetrical
+    hall, a central pair, or a philosopher assembly.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: rule: Let subject
+    matter determine the arrangement.; valid_modes: single figure with a quiet ground; valid_modes: small group
+    with balanced counterweights; valid_modes: narrative scene with several connected actions; valid_modes:
+    architectural, landscape, or domestic setting; forbidden_assumption: The movement does not require a symmetrical
+    hall, a central pair, or a philosopher assembly..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: rule: Let
+    subject matter determine the arrangement.; valid_modes: single figure with a quiet ground; valid_modes:
+    small group with balanced counterweights; valid_modes: narrative scene with several connected actions;
+    valid_modes: architectural, landscape, or domestic setting; forbidden_assumption: The movement does not
+    require a symmetrical hall, a central pair, or a philosopher assembly..'
+  evidence:
+    source_ids:
+    - source-vatican-school-of-athens
+    - source-vatican-segnatura
+    - source-met-437371
+    basis: curatorial_inference
+    visual_review: pending
+- id: space
+  axis: composition
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: rule: Construct
+    depth consistently, but do not force one-point perspective in every image.; tools: overlapping bodies;
+    tools: receding planes; tools: measured architectural perspective when appropriate; tools: atmospheric
+    distance kept subordinate to drawing. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: rule: Construct depth
+    consistently, but do not force one-point perspective in every image.; tools: overlapping bodies; tools:
+    receding planes; tools: measured architectural perspective when appropriate; tools: atmospheric distance
+    kept subordinate to drawing.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: rule: Construct
+    depth consistently, but do not force one-point perspective in every image.; tools: overlapping bodies;
+    tools: receding planes; tools: measured architectural perspective when appropriate; tools: atmospheric
+    distance kept subordinate to drawing.'
+  evidence:
+    source_ids:
+    - source-vatican-school-of-athens
+    - source-vatican-segnatura
+    - source-met-437371
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: fresco or tempera/panel
+    surface may show restrained material variation; the image should feel made by a painter, not rendered by
+    a 3D engine. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: fresco or
+    tempera/panel surface may show restrained material variation; the image should feel made by a painter,
+    not rendered by a 3D engine.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    fresco or tempera/panel surface may show restrained material variation; the image should feel made by a
+    painter, not rendered by a 3D engine.'
+  evidence:
+    source_ids:
+    - source-vatican-school-of-athens
+    - source-vatican-segnatura
+    - source-met-437371
+    basis: curatorial_inference
+    visual_review: pending
+- id: drawing
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: contours are
+    deliberate and anatomy is proportioned; bodies have weight, structure, and believable joints; drapery explains
+    the body instead of becoming surface noise. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: contours
+    are deliberate and anatomy is proportioned; bodies have weight, structure, and believable joints; drapery
+    explains the body instead of becoming surface noise.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    contours are deliberate and anatomy is proportioned; bodies have weight, structure, and believable joints;
+    drapery explains the body instead of becoming surface noise.'
+  evidence:
+    source_ids:
+    - source-vatican-school-of-athens
+    - source-vatican-segnatura
+    - source-met-437371
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: name: Roman Fresco and Mineral Drapery;
+    colors: name: Aged Plaster; colors: hex: #D5C3A0; colors: role: architectural_ground; colors: name: Ultramarine
+    Cloth; colors: hex: #3E5874; colors: role: heroic_drapery; colors: name: Fresco Red. Adapt their balance
+    to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: name: Roman Fresco and Mineral
+    Drapery; colors: name: Aged Plaster; colors: hex: #D5C3A0; colors: role: architectural_ground; colors:
+    name: Ultramarine Cloth; colors: hex: #3E5874; colors: role: heroic_drapery; colors: name: Fresco Red.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    name: Roman Fresco and Mineral Drapery; colors: name: Aged Plaster; colors: hex: #D5C3A0; colors: role:
+    architectural_ground; colors: name: Ultramarine Cloth; colors: hex: #3E5874; colors: role: heroic_drapery;
+    colors: name: Fresco Red.'
+  evidence:
+    source_ids:
+    - source-vatican-school-of-athens
+    - source-vatican-segnatura
+    - source-met-437371
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- space
+- surface
+- drawing
+- palette
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - space
+  - surface
+  instruction: Keep the package-specific relationship among composition, composition, surface consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-vatican-school-of-athens
+  kind: primary
+  base_asset_id: vatican-school-of-athens
+- id: source-vatican-segnatura
+  kind: secondary
+  base_asset_id: vatican-segnatura
+- id: source-met-437371
+  kind: primary
+  base_asset_id: met-437371
+- id: source-met-337075
+  kind: primary
+  base_asset_id: met-337075
+- id: source-met-340579
+  kind: primary
+  base_asset_id: met-340579
+- id: source-met-340590
+  kind: primary
+  base_asset_id: met-340590
+execution:
+  route: text_only
+  must:
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
