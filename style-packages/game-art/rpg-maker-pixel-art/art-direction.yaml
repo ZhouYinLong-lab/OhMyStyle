@@ -1,0 +1,222 @@
+schema_version: 2.1.0
+status: experimental
+id: rpg-maker-pixel-art-direction
+name: 角色扮演游戏像素美术
+base_package: game-art/rpg-maker-pixel-art
+scope:
+  medium: 2d_rpg_pixel_game_art
+  representation: stylized
+  description: A 2D tile-based pixel-game direction built from compact sprites, crisp nearest-neighbor edges,
+    layered environments, restrained palettes, and warm-cool lighting. It supports exploration, dialogue, puzzle,
+    combat, menu, and transition scenes without requiring a particular subject.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - generic_8_bit_hardware_replica
+  - modern_smooth_pixel_art
+  - photorealistic_background
+  - character_or_scene_copying
+pillars:
+- A 2D tile-based pixel-game direction built from compact sprites, crisp nearest-neighbor edges, layered environments,
+  restrained palettes, and warm-cool lighting. It supports exploration, dialogue, puzzle, combat, menu, and
+  transition scenes without requiring a particular subject.
+- 'composition: build a readable tile-based room or landscape with a clear walkable plane; keep sprites small
+  enough for the environment to carry compositional weight; use doors, windows, paths, railings, horizon lines,
+  or furniture as guide lines; reserve negative space when the scene needs calm or visual separation; establish
+  the largest spatial masses before adding small props'
+- 'palette: deep navy, blue-violet, muted teal, dusty lavender, warm amber, ochre, muted rose; keep most surfaces
+  in a restrained family and reserve bright accents for focal objects; use warm-cool opposition as an optional
+  lighting and spatial device'
+- 'lighting: warm pools of interior or sunset light against cool dusk or night surroundings; haze and reflection
+  expressed as deliberate pixel clusters or stepped bands; no smooth bloom; important forms retain visible
+  pixel edges; shadows remain shaped and readable instead of becoming uniform black'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: build a readable
+    tile-based room or landscape with a clear walkable plane; keep sprites small enough for the environment
+    to carry compositional weight; use doors, windows, paths, railings, horizon lines, or furniture as guide
+    lines; reserve negative space when the scene needs calm or visual separation; establish the largest spatial
+    masses before adding small props. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: build a readable
+    tile-based room or landscape with a clear walkable plane; keep sprites small enough for the environment
+    to carry compositional weight; use doors, windows, paths, railings, horizon lines, or furniture as guide
+    lines; reserve negative space when the scene needs calm or visual separation; establish the largest spatial
+    masses before adding small props.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: build a
+    readable tile-based room or landscape with a clear walkable plane; keep sprites small enough for the environment
+    to carry compositional weight; use doors, windows, paths, railings, horizon lines, or furniture as guide
+    lines; reserve negative space when the scene needs calm or visual separation; establish the largest spatial
+    masses before adding small props.'
+  evidence:
+    source_ids:
+    - source-to-the-moon-steam-01
+    - source-to-the-moon-steam-02
+    - source-impostor-factory-steam-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: deep navy, blue-violet, muted teal,
+    dusty lavender, warm amber, ochre, muted rose; keep most surfaces in a restrained family and reserve bright
+    accents for focal objects; use warm-cool opposition as an optional lighting and spatial device. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: deep navy, blue-violet, muted
+    teal, dusty lavender, warm amber, ochre, muted rose; keep most surfaces in a restrained family and reserve
+    bright accents for focal objects; use warm-cool opposition as an optional lighting and spatial device.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    deep navy, blue-violet, muted teal, dusty lavender, warm amber, ochre, muted rose; keep most surfaces in
+    a restrained family and reserve bright accents for focal objects; use warm-cool opposition as an optional
+    lighting and spatial device.'
+  evidence:
+    source_ids:
+    - source-to-the-moon-steam-01
+    - source-to-the-moon-steam-02
+    - source-impostor-factory-steam-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: warm pools of interior or sunset light against cool
+    dusk or night surroundings; haze and reflection expressed as deliberate pixel clusters or stepped bands;
+    no smooth bloom; important forms retain visible pixel edges; shadows remain shaped and readable instead
+    of becoming uniform black. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: warm pools of interior or sunset
+    light against cool dusk or night surroundings; haze and reflection expressed as deliberate pixel clusters
+    or stepped bands; no smooth bloom; important forms retain visible pixel edges; shadows remain shaped and
+    readable instead of becoming uniform black.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: warm pools of interior
+    or sunset light against cool dusk or night surroundings; haze and reflection expressed as deliberate pixel
+    clusters or stepped bands; no smooth bloom; important forms retain visible pixel edges; shadows remain
+    shaped and readable instead of becoming uniform black.'
+  evidence:
+    source_ids:
+    - source-to-the-moon-steam-01
+    - source-to-the-moon-steam-02
+    - source-impostor-factory-steam-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: pixel-language
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: compact
+    sprite clusters with dark readable outer contours; stepped diagonals and selective one-pixel highlights;
+    layered background planes with different detail densities; pixel texture that follows material or atmosphere
+    rather than random noise.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: compact
+    sprite clusters with dark readable outer contours; stepped diagonals and selective one-pixel highlights;
+    layered background planes with different detail densities; pixel texture that follows material or atmosphere
+    rather than random noise.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    compact sprite clusters with dark readable outer contours; stepped diagonals and selective one-pixel highlights;
+    layered background planes with different detail densities; pixel texture that follows material or atmosphere
+    rather than random noise.'
+  evidence:
+    source_ids:
+    - source-to-the-moon-steam-01
+    - source-to-the-moon-steam-02
+    - source-impostor-factory-steam-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: character-sprites
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: small
+    readable silhouettes with a few high-value face hair and clothing pixels; side or three-quarter orientation
+    with a restrained pose language; consistent scale between characters and tile geometry.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: small readable
+    silhouettes with a few high-value face hair and clothing pixels; side or three-quarter orientation with
+    a restrained pose language; consistent scale between characters and tile geometry.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    small readable silhouettes with a few high-value face hair and clothing pixels; side or three-quarter orientation
+    with a restrained pose language; consistent scale between characters and tile geometry.'
+  evidence:
+    source_ids:
+    - source-to-the-moon-steam-01
+    - source-to-the-moon-steam-02
+    - source-impostor-factory-steam-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: environment
+  axis: space
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: wood floors, wallpaper, grass, water, roads, railings,
+    windows, and skies built from tile logic; props clarify place, interaction, or visual rhythm without crowding
+    the frame; distant backgrounds may become broad painterly pixel masses while foregrounds stay crisp. Keep
+    it subordinate to the requested subject and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: wood floors, wallpaper,
+    grass, water, roads, railings, windows, and skies built from tile logic; props clarify place, interaction,
+    or visual rhythm without crowding the frame; distant backgrounds may become broad painterly pixel masses
+    while foregrounds stay crisp.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: wood floors,
+    wallpaper, grass, water, roads, railings, windows, and skies built from tile logic; props clarify place,
+    interaction, or visual rhythm without crowding the frame; distant backgrounds may become broad painterly
+    pixel masses while foregrounds stay crisp.'
+  evidence:
+    source_ids:
+    - source-to-the-moon-steam-01
+    - source-to-the-moon-steam-02
+    - source-impostor-factory-steam-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- pixel-language
+- character-sprites
+- environment
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-to-the-moon-steam-01
+  kind: primary
+  base_asset_id: to-the-moon-steam-01
+- id: source-to-the-moon-steam-02
+  kind: secondary
+  base_asset_id: to-the-moon-steam-02
+- id: source-impostor-factory-steam-01
+  kind: primary
+  base_asset_id: impostor-factory-steam-01
+- id: source-impostor-factory-steam-02
+  kind: secondary
+  base_asset_id: impostor-factory-steam-02
+execution:
+  route: text_only
+  must:
+  - block the walkable plane and largest light-dark masses first
+  - place sprites and interactive objects using one consistent tile scale
+  - add props for location clarity composition or gameplay readability
+  - use stepped palette bands for sky water shadow and interior light
+  - check the scene at logical resolution before display upscale
+  - choose an optional open outdoor enclosed interior or uncanny detail variant
+  - the image is authored pixel art rather than a smooth image with a pixel filter
+  - sprite scale and environment geometry remain coherent
+  avoid:
+  - anti_aliasing
+  - smooth_photographic_gradient
+  - excessive_particle_effects
+  - generic_neon_cyberpunk_lighting
+  - oversized_character_portrait
+  - readable_text_or_branding
+  - copied_game_ui_or_known_scene
+  - generic_8_bit_hardware_replica
+  - modern_smooth_pixel_art
+  - photorealistic_background
