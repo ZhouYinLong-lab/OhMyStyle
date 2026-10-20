@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "katsushika-hokusai",
+    "name": "葛饰北斋",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\katsushika-hokusai"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A red bicycle leaning against a brick wall",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied A red bicycle leaning against a brick wall and the user-requested setting are authoritative.\n- This package controls visual treatment only: medium, composition, lighting,\n  palette, surface, texture, and edge behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of A red bicycle leaning against a brick wall in the user-requested setting. Apply the package's observable\nmedium, composition, lighting, palette, surface, and texture decisions from the\nstyle files. Preserve the package invariants while inventing a new scene: do not\ncopy any reference work, named character, exact pose, recognizable layout, logo,\nor text. Keep the subject and narrative supplied by the user independent from\nthe package's visual identity. Use concrete visual instructions rather than the\npackage name alone.\n\nUse a limited Edo-period Japanese woodblock print vocabulary: warm paper ground,\nmineral blue and muted vermilion planes, bold carved contour lines, selective\nflat perspective, rhythmic directional marks, asymmetrical cropping, and modest\nregistration variation. Apply these decisions to the requested subject only.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not add a recurring wave, boat, mountain, shrine, geisha, Mount Fuji, or other\nJapanese landmark unless the user requests it. Avoid copying The Great Wave or any\nother named composition. Avoid photorealistic camera rendering, anime character\ndesign, glossy 3D surfaces, neon gradients, generic vintage filters, readable text,\nlogos, signatures, and watermarks.",
+  "template_variables": {
+    "SUBJECT": "A red bicycle leaning against a brick wall",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "user-requested figure remains the subject without recurring Edo-period props",
+          "contour hierarchy and flat color layers remain visible"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "objects remain readable through silhouette and linework",
+          "no boat, wave, mountain, or landmark leaks into the scene"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
