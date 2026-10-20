@@ -1,0 +1,153 @@
+schema_version: 2.1.0
+status: experimental
+id: kikuji-kawada-direction
+name: 川田喜久治
+base_package: photographers/kikuji-kawada
+scope:
+  medium: high-contrast black-and-white documentary photography
+  representation: recognizable
+  description: 以高反差黑白、碎片化符号、物质表面和历史记忆的间接指涉，形成不依赖单一题材的摄影观察方式。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以高反差黑白、碎片化符号、物质表面和历史记忆的间接指涉，形成不依赖单一题材的摄影观察方式。
+- 'composition: Build images from cropped fragments, oblique viewpoints, and visual interruptions rather than
+  explanatory scenes.; Let a small sign, surface, or object carry tension through placement and scale.'
+- 'palette: Prefer dense black, paper white, and restrained gray; allow a single muted color when it functions
+  as a symbolic accent.; Keep tonal separation strong without turning every subject into a graphic poster.'
+- 'lighting: quality: hard or naturally abrupt documentary light; behavior: Preserve blown highlights, deep
+  shadows, and reflective surfaces as evidence of the photographic encounter.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Build images
+    from cropped fragments, oblique viewpoints, and visual interruptions rather than explanatory scenes.; Let
+    a small sign, surface, or object carry tension through placement and scale.. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Build images from
+    cropped fragments, oblique viewpoints, and visual interruptions rather than explanatory scenes.; Let a
+    small sign, surface, or object carry tension through placement and scale..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Build images
+    from cropped fragments, oblique viewpoints, and visual interruptions rather than explanatory scenes.; Let
+    a small sign, surface, or object carry tension through placement and scale..'
+  evidence:
+    source_ids:
+    - source-kikuji-kawada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Prefer dense black, paper white,
+    and restrained gray; allow a single muted color when it functions as a symbolic accent.; Keep tonal separation
+    strong without turning every subject into a graphic poster.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Prefer dense black, paper
+    white, and restrained gray; allow a single muted color when it functions as a symbolic accent.; Keep tonal
+    separation strong without turning every subject into a graphic poster..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Prefer dense black, paper white, and restrained gray; allow a single muted color when it functions as a
+    symbolic accent.; Keep tonal separation strong without turning every subject into a graphic poster..'
+  evidence:
+    source_ids:
+    - source-kikuji-kawada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: hard or naturally abrupt documentary light;
+    behavior: Preserve blown highlights, deep shadows, and reflective surfaces as evidence of the photographic
+    encounter.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: hard or naturally
+    abrupt documentary light; behavior: Preserve blown highlights, deep shadows, and reflective surfaces as
+    evidence of the photographic encounter..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: hard or naturally
+    abrupt documentary light; behavior: Preserve blown highlights, deep shadows, and reflective surfaces as
+    evidence of the photographic encounter..'
+  evidence:
+    source_ids:
+    - source-kikuji-kawada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: gelatin-silver
+    or photobook-like photographic surface; edges: crisp crops with occasional motion softness and optical
+    uncertainty. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    gelatin-silver or photobook-like photographic surface; edges: crisp crops with occasional motion softness
+    and optical uncertainty.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: gelatin-silver or photobook-like photographic surface; edges: crisp crops with occasional motion
+    softness and optical uncertainty.'
+  evidence:
+    source_ids:
+    - source-kikuji-kawada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: moderate
+    to high; placement: grain and surface information remain visible in dark areas, weathered materials, and
+    printed details. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    moderate to high; placement: grain and surface information remain visible in dark areas, weathered materials,
+    and printed details.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: moderate to high; placement: grain and surface information remain visible in dark areas, weathered
+    materials, and printed details.'
+  evidence:
+    source_ids:
+    - source-kikuji-kawada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-kikuji-kawada-primary-source
+  kind: primary
+  base_asset_id: kikuji-kawada-primary-source
+execution:
+  route: text_only
+  must:
+  - choose an ordinary subject with an unresolved visual detail
+  - crop or frame it as a fragment rather than an explanatory scene
+  - tune exposure for deep blacks, active highlights, and readable surface grain
+  - preserve fragmentary observation and symbolic ambiguity
+  - preserve high-contrast photographic evidence rather than illustrative neatness
+  - preserve the tension between ordinary detail and historical resonance
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
