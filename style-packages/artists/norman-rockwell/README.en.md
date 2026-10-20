@@ -91,4 +91,4 @@ figures, text, trademark, or logo.
 
 ## Experimental direction: reaction chain around a shared prop
 
-The optional direction in [`art-direction.yaml`](art-direction.yaml) is for a user-requested small group connected by one event or prop: one gesture initiates the moment and the other figures respond through distinct gaze, hands, or posture. The user’s tone controls whether the scene is humorous; the direction does not invent a mishap or joke. See [`comparisons/`](comparisons/README.md) for the paired images.
+The optional direction in [`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is for a user-requested small group connected by one event or prop: one gesture initiates the moment. Declare `multiple-figures-respond-to-shared-action` only when at least two people respond to the action to activate the reaction-chain rule. The user’s tone controls whether the scene is humorous; the direction does not invent a mishap or joke. See [`comparisons/`](comparisons/README.md) for the paired images.

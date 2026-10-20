@@ -72,4 +72,4 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：共享道具的反应链
 
-新版可选方向 [`art-direction.yaml`](art-direction.yaml) 用于用户指定的小群像与共同事件：一个动作带起场景，其余人物用不同目光、手势或姿态回应同一焦点。是否幽默由用户的场景决定，不自动编造事故或笑料。对照图见 [`comparisons/`](comparisons/README.md)。
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，用于用户指定的小群像与共同事件：一个动作带起场景。只有至少两个人回应同一动作时，才声明 `multiple-figures-respond-to-shared-action` 启用反应链规则。是否幽默由用户的场景决定，不自动编造事故或笑料。对照图见 [`comparisons/`](comparisons/README.md)。

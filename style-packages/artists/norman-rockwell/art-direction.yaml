@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: rockwell-reaction-chain-shared-prop
 name: Rockwell reaction chain around a shared prop
@@ -25,6 +25,19 @@ scope:
     - Use a reaction chain only when compatible with the user's stated action; do not force a comic outcome.
     - Keep all figures and the prop readable; model-generated gaze and hand details may be inaccurate and must be reviewed.
     - Do not copy a named Rockwell work, source photograph, exact pose, text, or commercial layout.
+contexts:
+  - id: reaction-chain-around-shared-prop
+    description: The user requests a small group connected by one shared prop or event.
+  - id: isolated-single-figure-portrait
+    description: The user requests an isolated single-figure portrait.
+  - id: multi-panel-sequential-storyboard
+    description: The user requests a multi-panel sequential storyboard.
+  - id: text-led-advertisement
+    description: The user requests a text-led advertisement.
+  - id: multiple-figures-respond-to-shared-action
+    description: At least two figures respond to the same shared action.
+  - id: small-group-with-contextual-setting-objects
+    description: The scene includes a small group and contextual objects in the setting.
 pillars:
   - Freeze one legible instant in the user-requested event rather than illustrating a whole sequence.
   - Make one prop or event the shared point of action, gaze, and response.
@@ -33,6 +46,8 @@ rules:
   - id: focal-prop-action
     axis: narrative_hierarchy
     importance: core
+    when_contexts:
+      - reaction-chain-around-shared-prop
     applies_when: The user requests a small group interacting with one object or event.
     instruction: Choose the user-specified object or event as the focal pivot. Show one initiating gesture clearly meeting, moving, or reacting to it; preserve the requested action and object state.
     observable: The viewer can identify what just happened or is happening from the prop and a single clear initiating gesture without reading text.
@@ -46,6 +61,8 @@ rules:
   - id: differentiated-reaction-chain
     axis: gaze_and_gesture
     importance: core
+    when_contexts:
+      - multiple-figures-respond-to-shared-action
     applies_when: The user requests at least two figures responding to the same shared action.
     instruction: Give each requested figure a distinct response through head direction, eye-line, hand position, or posture; connect their attention back to the focal prop without making everyone repeat one expression.
     observable: Two or more reactions can be distinguished and their gaze or gesture paths form a readable link to the shared object or event.
@@ -59,6 +76,8 @@ rules:
   - id: staged-detail-hierarchy
     axis: composition_and_detail
     importance: supporting
+    when_contexts:
+      - small-group-with-contextual-setting-objects
     applies_when: The scene includes a small group and a setting with contextual objects.
     instruction: Arrange figures and prop so their silhouettes remain separate; keep background details fewer, softer, and less contrasty than the action cues, while preserving details the user explicitly requests.
     observable: The shared action reads before the setting, yet the setting still explains where the event occurs.
