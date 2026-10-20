@@ -6,10 +6,9 @@ palette:
 - 轻微水平视差带来的空间错觉
 - 银盐照片或手工着色的有限色调
 lighting:
-  quality: 银盐照片或手工着色的有限色调
+  quality: even photographic illumination with moderate contrast across both paired views
   behavior:
-  - Keep the requested subject and location independent from the package.
-  - Apply lighting as a transferable visual decision, not a fixed scene.
+  - Keep illumination consistent between views while retaining the small horizontal parallax that creates depth.
 surface:
   finish: 两张图之间保持可比较但不完全相同的细节
   edges: subject-dependent, without a copied layout
