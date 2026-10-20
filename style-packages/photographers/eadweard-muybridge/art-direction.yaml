@@ -1,0 +1,145 @@
+schema_version: 2.1.0
+status: experimental
+id: eadweard-muybridge-direction
+name: 埃德沃德·迈布里奇
+base_package: photographers/eadweard-muybridge
+scope:
+  medium: collotype_and_chronophotographic_plate
+  representation: recognizable
+  description: A motion-study photography profile built from repeatable camera geometry, neutral staging, sequential
+    phases, and evidence-first observation of movement.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied famous composition
+  - generic style filter
+  - unmotivated decorative effects
+pillars:
+- A motion-study photography profile built from repeatable camera geometry, neutral staging, sequential phases,
+  and evidence-first observation of movement.
+- 'composition: treat the frame or plate as a measurement field, not a cinematic scene; show repeated phases
+  on a stable baseline or grid; keep subject orientation and camera geometry consistent across phases'
+- 'palette: neutral paper, charcoal, gray-brown emulsion, and sparse structural lines; avoid expressive color
+  grading'
+- 'lighting: quality: even_technical_daylight; behavior: illumination stays sufficiently stable for comparing
+  phases; behavior: motion is communicated by changed pose, not motion blur; behavior: background and scale
+  markers remain legible'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: treat the frame
+    or plate as a measurement field, not a cinematic scene; show repeated phases on a stable baseline or grid;
+    keep subject orientation and camera geometry consistent across phases. Preserve the user-provided content
+    and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: treat the frame or
+    plate as a measurement field, not a cinematic scene; show repeated phases on a stable baseline or grid;
+    keep subject orientation and camera geometry consistent across phases.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: treat the
+    frame or plate as a measurement field, not a cinematic scene; show repeated phases on a stable baseline
+    or grid; keep subject orientation and camera geometry consistent across phases.'
+  evidence:
+    source_ids:
+    - source-muybridge-horse
+    - source-muybridge-woman-dog
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: neutral paper, charcoal, gray-brown
+    emulsion, and sparse structural lines; avoid expressive color grading. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: neutral paper, charcoal,
+    gray-brown emulsion, and sparse structural lines; avoid expressive color grading.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    neutral paper, charcoal, gray-brown emulsion, and sparse structural lines; avoid expressive color grading.'
+  evidence:
+    source_ids:
+    - source-muybridge-horse
+    - source-muybridge-woman-dog
+    basis: curatorial_inference
+    visual_review: pending
+- id: light
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: even_technical_daylight; behavior: illumination
+    stays sufficiently stable for comparing phases; behavior: motion is communicated by changed pose, not motion
+    blur; behavior: background and scale markers remain legible. Keep light coherent with the requested subject,
+    medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: even_technical_daylight;
+    behavior: illumination stays sufficiently stable for comparing phases; behavior: motion is communicated
+    by changed pose, not motion blur; behavior: background and scale markers remain legible.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: even_technical_daylight;
+    behavior: illumination stays sufficiently stable for comparing phases; behavior: motion is communicated
+    by changed pose, not motion blur; behavior: background and scale markers remain legible.'
+  evidence:
+    source_ids:
+    - source-muybridge-horse
+    - source-muybridge-woman-dog
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: brushwork: none_collotype_plate_texture;
+    mark_logic: preserve plate borders, spacing, and registration when useful; mark_logic: retain technical
+    imperfections as evidence, not decoration; mark_logic: prioritize silhouette and joint position over atmosphere;
+    finish: historical_motion_study_print. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: brushwork:
+    none_collotype_plate_texture; mark_logic: preserve plate borders, spacing, and registration when useful;
+    mark_logic: retain technical imperfections as evidence, not decoration; mark_logic: prioritize silhouette
+    and joint position over atmosphere; finish: historical_motion_study_print.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    brushwork: none_collotype_plate_texture; mark_logic: preserve plate borders, spacing, and registration
+    when useful; mark_logic: retain technical imperfections as evidence, not decoration; mark_logic: prioritize
+    silhouette and joint position over atmosphere; finish: historical_motion_study_print.'
+  evidence:
+    source_ids:
+    - source-muybridge-horse
+    - source-muybridge-woman-dog
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- color
+- light
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - color
+  - light
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-muybridge-horse
+  kind: primary
+  base_asset_id: muybridge-horse
+- id: source-muybridge-woman-dog
+  kind: secondary
+  base_asset_id: muybridge-woman-dog
+execution:
+  route: text_only
+  must:
+  - choose a stable side or orthogonal camera and baseline
+  - define the interval and number of phases
+  - keep lighting and scale markers consistent
+  - render clear silhouettes with restrained plate texture
+  - the sequence has a repeatable viewpoint and interval logic
+  - movement is decomposed into observable phases
+  - the background is neutral and measurement-friendly
+  - the new sequence must not reproduce a known plate
+  avoid:
+  - copied famous composition
+  - generic style filter
+  - unmotivated decorative effects
+  - Use observable traits only; do not recreate a named work, sitter, plate, object, or exact arrangement.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
