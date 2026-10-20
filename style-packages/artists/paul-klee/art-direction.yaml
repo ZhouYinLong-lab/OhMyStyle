@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: klee-independent-line-atmospheric-color
 name: Klee independent line and atmospheric color field
@@ -24,6 +24,17 @@ scope:
     - Keep line and color as distinguishable carriers; the line records action or connection, while the color field builds atmosphere without filling every line-bounded area.
     - Retain enough object geometry for recognition; a freely moving line must not change the object's structure or function.
     - Keep paper visible and use only a few incidental transfer-like marks; do not imitate a specific Klee drawing or its composition.
+contexts:
+  - id: simple-moving-mechanical-object
+    description: A user-requested simple mechanical object whose movement should remain legible.
+  - id: photorealistic-product-render
+    description: A photorealistic product rendering with no visible drawing marks.
+  - id: dense-technical-blueprint
+    description: A technical drawing requiring precise measured linework and labels.
+  - id: user-requested-typography-layout
+    description: A composition that includes requested typography or a designed text layout.
+  - id: handmade-paper-support
+    description: The requested image allows a visible handmade paper surface and incidental pigment traces.
 pillars:
   - Draw the requested mechanism with a few wiry, variable lines; allow a motion or connection line to extend into negative space instead of merely outlining the object.
   - Place a translucent color field as a separate spatial layer, letting it overlap or sit behind the line without making the two systems coincide.
@@ -58,6 +69,8 @@ rules:
   - id: sparse-transfer-trace
     axis: support_and_surface
     importance: supporting
+    when_contexts:
+      - handmade-paper-support
     applies_when: The user allows a handmade drawing surface.
     instruction: Keep the paper visibly present and use only a few faint, irregular transfer-like smudges near the drawn mechanism; let these marks register the support without becoming extra objects or symbols.
     observable: Empty paper remains an active part of the composition, with incidental marks subordinate to the requested object and color field.
