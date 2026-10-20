@@ -1,0 +1,155 @@
+schema_version: 2.1.0
+status: experimental
+id: watercolor-direction
+name: 水彩画
+base_package: techniques/watercolor
+scope:
+  medium: painting
+  representation: stylized
+  description: Independent Watercolor style package focused on 透明水洗、纸白、颗粒感与软硬边交替; it requires new subjects
+    and arrangements.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied_named_work
+  - generic_global_filter
+  - unrelated_extra_style
+pillars:
+- Independent Watercolor style package focused on 透明水洗、纸白、颗粒感与软硬边交替; it requires new subjects and arrangements.
+- 'form: 透明水洗、纸白、颗粒感与软硬边交替'
+- 'medium: painting'
+- 'composition: new subject and arrangement; clear primary focal hierarchy; readable negative space'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: 透明水洗、纸白、颗粒感与软硬边交替.
+    Do not let generic polish or another package direction replace it. If a cue names a concrete object or
+    motif, do not add it unless the user requests it; translate its formal qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: 透明水洗、纸白、颗粒感与软硬边交替.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: 透明水洗、纸白、颗粒感与软硬边交替.'
+  evidence:
+    source_ids:
+    - source-watercolor-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: painting.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: painting.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    painting.'
+  evidence:
+    source_ids:
+    - source-watercolor-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: new subject
+    and arrangement; clear primary focal hierarchy; readable negative space. Preserve the user-provided content
+    and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: new subject and arrangement;
+    clear primary focal hierarchy; readable negative space.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: new subject
+    and arrangement; clear primary focal hierarchy; readable negative space.'
+  evidence:
+    source_ids:
+    - source-watercolor-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: palette: #7EA1B2; palette: #7B9C76;
+    palette: #C39A67; behavior: local color remains readable; behavior: no automatic global color wash. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: palette: #7EA1B2; palette:
+    #7B9C76; palette: #C39A67; behavior: local color remains readable; behavior: no automatic global color
+    wash.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    palette: #7EA1B2; palette: #7B9C76; palette: #C39A67; behavior: local color remains readable; behavior:
+    no automatic global color wash.'
+  evidence:
+    source_ids:
+    - source-watercolor-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: light
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: style-consistent natural or designed light;
+    behavior: light supports form; behavior: background does not erase material identity. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: style-consistent natural
+    or designed light; behavior: light supports form; behavior: background does not erase material identity.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: style-consistent
+    natural or designed light; behavior: light supports form; behavior: background does not erase material
+    identity.'
+  evidence:
+    source_ids:
+    - source-watercolor-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: texture: observable
+    medium or capture texture; finish: controlled detail without generic AI gloss. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: texture:
+    observable medium or capture texture; finish: controlled detail without generic AI gloss.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    texture: observable medium or capture texture; finish: controlled detail without generic AI gloss.'
+  evidence:
+    source_ids:
+    - source-watercolor-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- medium
+- composition
+- color
+- light
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among form, medium, composition consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-watercolor-source
+  kind: primary
+  base_asset_id: watercolor-source
+execution:
+  route: text_only
+  must:
+  - define subject and composition first
+  - apply the package signature as observable decisions
+  - check color, material, texture, and edge behavior
+  - reject copied or generic results
+  - 透明水洗、纸白、颗粒感与软硬边交替
+  - new theme and composition are mandatory
+  - style cues remain subordinate to subject readability
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied_named_work
+  - generic_global_filter
+  - unrelated_extra_style
+  - Use observable style traits only; do not recreate a named work or exact motif arrangement.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
