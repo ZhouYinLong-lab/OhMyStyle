@@ -1,0 +1,176 @@
+schema_version: 2.1.0
+status: experimental
+id: sally-mann-direction
+name: 萨莉·曼
+base_package: photographers/sally-mann
+scope:
+  medium: large-format black-and-white photographic language
+  representation: recognizable
+  description: 以大画幅黑白摄影、深而开放的灰阶、亲密距离和潮湿颗粒感组织时间与记忆的气氛。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named person or branded asset
+  - recurring child, family, rural Virginia, nude body, or southern landscape
+pillars:
+- 以大画幅黑白摄影、深而开放的灰阶、亲密距离和潮湿颗粒感组织时间与记忆的气氛。
+- 'medium: large-format black-and-white photographic language'
+- 'composition: Use a deliberate, patient frame with a clear subject anchor and generous atmospheric space.;
+  Allow quiet asymmetry and partial occlusion; avoid editorial clutter.'
+- 'palette: Work primarily in black, warm gray, cool gray, and paper white with restrained sepia drift.'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: large-format
+    black-and-white photographic language.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: large-format
+    black-and-white photographic language.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    large-format black-and-white photographic language.'
+  evidence:
+    source_ids:
+    - source-sally-mann-sfmoma
+    - source-sally-mann-nga
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Use a deliberate,
+    patient frame with a clear subject anchor and generous atmospheric space.; Allow quiet asymmetry and partial
+    occlusion; avoid editorial clutter.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Use a deliberate,
+    patient frame with a clear subject anchor and generous atmospheric space.; Allow quiet asymmetry and partial
+    occlusion; avoid editorial clutter..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Use a deliberate,
+    patient frame with a clear subject anchor and generous atmospheric space.; Allow quiet asymmetry and partial
+    occlusion; avoid editorial clutter..'
+  evidence:
+    source_ids:
+    - source-sally-mann-sfmoma
+    - source-sally-mann-nga
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Work primarily in black, warm gray,
+    cool gray, and paper white with restrained sepia drift.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Work primarily in black,
+    warm gray, cool gray, and paper white with restrained sepia drift..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Work primarily in black, warm gray, cool gray, and paper white with restrained sepia drift..'
+  evidence:
+    source_ids:
+    - source-sally-mann-sfmoma
+    - source-sally-mann-nga
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: natural or natural-seeming, soft but tonally
+    deep; behavior: Preserve luminous highlights and open shadow texture rather than flattening the scene.;
+    behavior: Let haze, wet surfaces, and backlight soften distance without a glow effect.. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: natural or natural-seeming,
+    soft but tonally deep; behavior: Preserve luminous highlights and open shadow texture rather than flattening
+    the scene.; behavior: Let haze, wet surfaces, and backlight soften distance without a glow effect..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: natural or natural-seeming,
+    soft but tonally deep; behavior: Preserve luminous highlights and open shadow texture rather than flattening
+    the scene.; behavior: Let haze, wet surfaces, and backlight soften distance without a glow effect..'
+  evidence:
+    source_ids:
+    - source-sally-mann-sfmoma
+    - source-sally-mann-nga
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: matte,
+    fibrous, chemically imperfect photographic surface; edges: slightly softened by lens, atmosphere, or print
+    process; never smeared. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    matte, fibrous, chemically imperfect photographic surface; edges: slightly softened by lens, atmosphere,
+    or print process; never smeared.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: matte, fibrous, chemically imperfect photographic surface; edges: slightly softened by lens, atmosphere,
+    or print process; never smeared.'
+  evidence:
+    source_ids:
+    - source-sally-mann-sfmoma
+    - source-sally-mann-nga
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    to medium, visible at tonal transitions; placement: paper grain, wet emulsion traces, foliage, skin, stone,
+    and weathered surfaces. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low to medium, visible at tonal transitions; placement: paper grain, wet emulsion traces, foliage, skin,
+    stone, and weathered surfaces.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low to medium, visible at tonal transitions; placement: paper grain, wet emulsion traces, foliage,
+    skin, stone, and weathered surfaces.'
+  evidence:
+    source_ids:
+    - source-sally-mann-sfmoma
+    - source-sally-mann-nga
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-sally-mann-sfmoma
+  kind: primary
+  base_asset_id: sally-mann-sfmoma
+- id: source-sally-mann-nga
+  kind: secondary
+  base_asset_id: sally-mann-nga
+execution:
+  route: text_only
+  must:
+  - keep the user's subject and setting unchanged
+  - use a patient, spacious frame with a clear tonal anchor
+  - build deep grayscale before adding atmosphere
+  - reveal wet surfaces, foliage, skin, stone, or paper texture locally
+  - soften distance through air and print surface rather than blur everywhere
+  - compose from the supplied subject and location
+  - establish a calm large-format frame and tonal anchor
+  - build a continuous grayscale with luminous highlights and open blacks
+  avoid:
+  - forced children, family scenes, rural southern landscapes, or nudity
+  - fake antique border or heavy film-grain overlay
+  - glossy HDR sharpness and commercial retouching
+  - generic melancholy color grading
+  - copied composition
+  - named person or branded asset
+  - recurring child, family, rural Virginia, nude body, or southern landscape
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
