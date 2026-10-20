@@ -1,7 +1,11 @@
-# 修拉包新版方向对照（实验）
+# 新旧架构实际生图对照
 
-同一测试主体：`One yellow bicycle leaning against a blue plaster wall in clear midday light`。两个 JSON 文件分别保存旧版默认路径和新版 `measured-chromatic-composition` 的编译结果，均由仓库编译器生成。
+| 旧版包默认规则 | 新版方向规则 |
+|---|---|
+| ![旧版实际生图](legacy-output.jpg) | ![新版方向实际生图](direction-output.jpg) |
 
-![黄色自行车的旧版与新版方向示意对照](direction-comparison.png)
-
-此图是 AI 生成的讨论示意，不是由上述 JSON 提示词实际渲染，也不是受控实验。新版规则尝试把差异落在构图间距、稳定剪影和随平面变化的色笔触上；人工视觉评审尚未完成，因此方向保持 `experimental`。
+- **同一输入主题：** `One yellow bicycle leaning against a blue plaster wall in clear midday light`
+- **任务提示：** 旧版和新版使用[编译任务](legacy-compiled-job.json)、[方向任务](direction-compiled-job.json)中保存的提示词与负面约束。
+- **生成记录：** 两图分别使用 OpenAI imagegen 生成；工具未提供可记录的随机种子，未控制随机性。 Added a cardinality lock after the first legacy generation returned a duplicate bicycle.
+- **人工复核：** Both images retain one yellow bicycle against a blue wall. The direction sample has slightly more plane-following, separated marks, but the difference is subtle because the legacy package already uses divided color. Treat this as weak evidence of incremental direction behavior; keep experimental.
+- **限制：** 这组对照能说明单次输出，不足以证明差异只由架构规则造成或可跨题材稳定。方向继续保持 `experimental`。
