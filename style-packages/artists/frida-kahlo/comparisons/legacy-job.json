@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "frida-kahlo",
+    "name": "弗里达·卡罗",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\frida-kahlo"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A person in a plain work shirt seated against a pale wall, looking slightly to the side",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied A person in a plain work shirt seated against a pale wall, looking slightly to the side and the user-requested setting are authoritative.\n- This package controls visual treatment only: medium, composition, lighting,\n  palette, surface, texture, and edge behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of A person in a plain work shirt seated against a pale wall, looking slightly to the side in the user-requested setting. Apply a frontal or calmly centered\npainted arrangement, flattened but intentional space, crisp selected contours,\nopaque handmade brushwork, and organized saturated color blocks with warm/cool\ntension. Allow a small number of symbolic relationships only if they arise from\nthe user's subject. Do not add a self-portrait, traditional costume, monkey,\nmedical symbol, or autobiographical event unless requested. Preserve the package\ninvariants while inventing a new scene: do not copy any reference work, named\ncharacter, exact pose, recognizable layout, logo, or text. Keep the subject and\nnarrative supplied by the user independent from the package's visual identity.\nUse concrete visual instructions rather than the package name alone.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied reference composition, recognizable character, logo, watermark, artist signature,\nunintended text, generic global color filter, incompatible medium, accidental photorealism,\nunmotivated neon, plastic CGI finish, malformed anatomy, duplicate objects",
+  "template_variables": {
+    "SUBJECT": "A person in a plain work shirt seated against a pale wall, looking slightly to the side",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "frontal psychological clarity is present without forcing a self-portrait"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "object relationships and color blocks remain deliberate without adding symbolic props"
+        ]
+      },
+      "intimate-symbolic-portrait": {
+        "required": [
+          "requested portrait subject remains primary and recognizable",
+          "only user-specified companion forms establish symbolic relationships",
+          "shallow space and separated color fields support a painted portrait presence"
+        ],
+        "reject_if": [
+          "self-portrait, animals, plants, medical symbols, or regional dress appear without request",
+          "generic dream collage replaces the requested setting and objects",
+          "direct gaze is forced against the user's specified expression or pose"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

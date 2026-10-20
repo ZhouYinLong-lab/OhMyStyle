@@ -57,3 +57,7 @@ This direction remains experimental; same-subject and cross-subject visual revie
    configuring your own API key. This repository does not host generation.
 4. Connect the package to a local model or ComfyUI workflow and review the result
    against `evaluation.yaml`.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

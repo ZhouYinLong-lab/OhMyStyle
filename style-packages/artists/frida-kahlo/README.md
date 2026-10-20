@@ -65,3 +65,7 @@ python tools/compile-style.py style-packages/artists/frida-kahlo --direction pac
 ### 方式四：本地模型 + ComfyUI
 
 把 Prompt、调色板和复现说明接入本地模型或 ComfyUI，生成后用 `evaluation.yaml` 复核，不要把代表图当成必须复制的构图。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。
