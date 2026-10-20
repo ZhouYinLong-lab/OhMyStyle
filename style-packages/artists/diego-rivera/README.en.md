@@ -75,3 +75,7 @@ python tools/compile-style.py style-packages/artists/diego-rivera --direction pa
 ```
 
 This direction remains experimental; same-subject comparisons and stability across subjects still need human review.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

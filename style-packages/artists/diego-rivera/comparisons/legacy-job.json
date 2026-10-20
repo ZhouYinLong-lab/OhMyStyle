@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "diego-rivera",
+    "name": "迭戈·里维拉",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\diego-rivera"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A panoramic community greenhouse project: neighbors tend seedlings, builders repair its roof, and water channels feed the crops",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A panoramic community greenhouse project: neighbors tend seedlings, builders repair its roof, and water channels feed the crops\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original image using this package as a visual language, not as a fixed subject or copied composition.\n\nPackage signature:\n- 适合远距离阅读的大尺度形体组织\n- 清晰轮廓与平面色块共同承担结构\n- 土红、赭黄、蓝绿和灰黑形成公共空间色彩\n- 人物或物体群组具有壁画式节奏，但不规定主体\n\nSubject rule:\nKeep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.\n\nReproduction direction:\n- 先把用户主体整理成远距离可读的大形\n- 以轮廓和色面建立群组关系\n- 让色彩承担空间层次而非过度写实阴影\n- 用少量表面颗粒和墙面质感收束画面\n\nUser request:\nA panoramic community greenhouse project: neighbors tend seedlings, builders repair its roof, and water channels feed the crops\nthe user-requested composition\nthe user-requested aspect ratio\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not copy a reference composition, named character, landmark, logo, brand, readable text, screenshot, watermark, or protected game asset. Do not introduce a fixed subject from the package. Avoid generic global filters, accidental extra objects, and unrequested narrative events.",
+  "template_variables": {
+    "SUBJECT": "A panoramic community greenhouse project: neighbors tend seedlings, builders repair its roof, and water channels feed the crops",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material",
+          "no fixed subject leaks into the output"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "preserve the user-supplied person or object without adding a recurring figure"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "preserve the user-supplied objects and their count"
+        ]
+      },
+      "public_narrative_mural": {
+        "required": [
+          "multiple requested activities connect as one wall-scale composition",
+          "people and environment share a readable scale and relation",
+          "contours and color planes remain legible at a distance"
+        ],
+        "reject_if": [
+          "an unrequested worker, factory, machine, emblem, or political symbol appears",
+          "a single activity is split into artificial panels",
+          "photorealistic depth or decorative texture obscures the narrative"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
