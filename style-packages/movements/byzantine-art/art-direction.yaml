@@ -16,8 +16,8 @@ pillars:
 - 以正面秩序、金色或深色背景、稳定轮廓、象征性尺度和克制的平面层次建立超越日常空间的视觉庄严感。
 - 'composition: 稳定、正面、近似仪式性的排列; 空间深度被压缩，主体轮廓优先; 以对称或近对称建立持续的视觉安定感'
 - 'palette: 金色、深蓝、暗红和赭色形成象征性色彩关系; 高光集中而克制，不制造写实金属反射; 背景可简化为深色或金色的平面场'
-- 'lighting: quality: 均匀而正面的光线，强调轮廓和色面，不使用强烈自然阴影; behavior: Keep the requested subject and location independent
-  from the package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene.'
+- 'lighting: even frontal illumination with minimal cast shadow and luminous flat grounds; Use light to keep outlines
+  and color fields legible; avoid sculptural chiaroscuro.'
 rules:
 - id: composition
   axis: composition
@@ -53,15 +53,14 @@ rules:
   axis: lighting
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Apply the package-specific light behavior: quality: 均匀而正面的光线，强调轮廓和色面，不使用强烈自然阴影; behavior: Keep
-    the requested subject and location independent from the package.; behavior: Apply lighting as a transferable
-    visual decision, not a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
-  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 均匀而正面的光线，强调轮廓和色面，不使用强烈自然阴影;
-    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
-    as a transferable visual decision, not a fixed scene..'
-  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 均匀而正面的光线，强调轮廓和色面，不使用强烈自然阴影;
-    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
-    as a transferable visual decision, not a fixed scene..'
+  instruction: Use even frontal illumination with minimal cast shadow and luminous flat grounds. Use light to
+    keep outlines and color fields legible; avoid sculptural chiaroscuro. Keep the light coherent with the requested
+    subject and scene.
+  observable: 'The light quality and its effect on shadows, materials, or tonal separation are visible: even frontal
+    illumination with minimal cast shadow and luminous flat grounds. Use light to keep outlines and color fields
+    legible; avoid sculptural chiaroscuro.'
+  reject_when: 'Reject global tint, bloom, or lighting that erases the stated tonal or material distinctions:
+    even frontal illumination with minimal cast shadow and luminous flat grounds.'
   evidence:
     source_ids:
     - source-byzantine-art-primary-source
@@ -72,12 +71,11 @@ rules:
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
   instruction: 'Render the requested materials using these package-specific surface decisions: finish: 平滑的矿物色层、细密装饰性纹理和局部金属光泽;
-    edges: deliberate and subject-dependent, without a copied layout. Preserve detail hierarchy and material
-    identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    edges: deliberate and subject-dependent, without a copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish: 平滑的矿物色层、细密装饰性纹理和局部金属光泽;
+    edges: deliberate and subject-dependent, without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: finish:
     平滑的矿物色层、细密装饰性纹理和局部金属光泽; edges: deliberate and subject-dependent, without a copied layout.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    finish: 平滑的矿物色层、细密装饰性纹理和局部金属光泽; edges: deliberate and subject-dependent, without a copied layout.'
   evidence:
     source_ids:
     - source-byzantine-art-primary-source
@@ -90,10 +88,10 @@ rules:
   instruction: 'Render the requested materials using these package-specific surface decisions: density: 纹理集中在边框、衣料或背景装饰，主体表面保持可读;
     placement: concentrated where the medium or material needs explanation. Preserve detail hierarchy and material
     identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density: 纹理集中在边框、衣料或背景装饰，主体表面保持可读;
+    placement: concentrated where the medium or material needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: density:
     纹理集中在边框、衣料或背景装饰，主体表面保持可读; placement: concentrated where the medium or material needs explanation.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    density: 纹理集中在边框、衣料或背景装饰，主体表面保持可读; placement: concentrated where the medium or material needs explanation.'
   evidence:
     source_ids:
     - source-byzantine-art-primary-source
@@ -111,10 +109,9 @@ joint_checks:
   - composition
   - palette
   - lighting
-  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
-    preserving the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-byzantine-art-primary-source
   kind: primary
@@ -138,6 +135,6 @@ execution:
   - copying a specific reference composition
   - copied composition
   - named character or branded asset
-  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
-    protected game asset.
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+    game asset.
   - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
