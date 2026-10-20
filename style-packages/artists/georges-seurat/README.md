@@ -37,7 +37,7 @@
 
 ## 新架构：测量式构图与分色笔触（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `measured-chromatic-composition` 时启用。它把修拉方向的重点放在稳定剪影、经过安排的物件间距，以及随形体变化的分色笔触；近看保留独立色笔触，正常观看距离形成连贯光色。笔触可以是小点，也可以是短划或交织色块，不要求全画面都变成等大色点。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在显式声明 `measured-chromatic-composition` 时启用。稳定剪影、经过安排的物件间距和分色笔触是基础规则；只有用户要求清晰自然光或明亮户外画面时，才声明 `user-requests-natural-light-or-luminous-outdoor-painting` 启用色光规则。笔触可以是小点、短划或交织色块，不要求全画面都变成等大色点。
 
 这与[点彩运动包](../../movements/pointillism/README.md)的通用点状表面规则不同：修拉方向还明确约束构图节奏、轮廓与色笔触如何随平面变化，不会默认加入公园、固定人物队列或河岸场景。
 

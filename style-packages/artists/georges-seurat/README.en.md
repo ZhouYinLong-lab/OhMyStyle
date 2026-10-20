@@ -37,7 +37,7 @@ See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references
 
 ## New architecture: measured composition and divided-color marks (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when `measured-chromatic-composition` is explicitly declared. It centers Seurat's direction on stable silhouettes, deliberate spacing, and divided-color marks that respond to each form. Close up, the pigment touches stay distinct; at normal viewing distance, they resolve into coherent light. Marks may be dots, short strokes, or interwoven patches rather than identical dots across the whole image.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when `measured-chromatic-composition` is explicitly declared. Stable silhouettes, deliberate spacing, and divided-color marks are base rules. Add `user-requests-natural-light-or-luminous-outdoor-painting` only when clear natural light or a luminous outdoor scene is requested to activate the light-and-shadow rule. Marks may be dots, short strokes, or interwoven patches rather than identical dots across the whole image.
 
 This differs from the [Pointillism movement package](../../movements/pointillism/README.md), which defines a general dot-based surface method. Seurat's direction also constrains compositional rhythm, silhouette, and how marks change with each plane. It does not add a park, fixed procession of figures, or riverbank by default.
 

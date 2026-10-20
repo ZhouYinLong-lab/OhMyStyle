@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: seurat-measured-composition-and-divided-color
 name: Seurat measured composition and divided color
@@ -23,6 +23,19 @@ scope:
     - Preserve only the people, objects, setting, count, and relationships requested by the user.
     - Do not add a park, procession of figures, shoreline, or named Seurat motif by default.
     - Keep pigment marks orderly but varied with form; avoid uniform dots, arbitrary noise, and the impression of a printed screen.
+contexts:
+  - id: measured-chromatic-composition
+    description: The user requests a measured painted composition using divided color.
+  - id: gestural-impasto-painting
+    description: The user requires gestural impasto painting.
+  - id: photographic-output
+    description: The user requires photographic output.
+  - id: mechanical-halftone
+    description: The user requires a mechanical halftone treatment.
+  - id: scene-uses-divided-color-as-visible-method
+    description: The scene uses divided color as a visible painting method.
+  - id: user-requests-natural-light-or-luminous-outdoor-painting
+    description: The user requests clear natural light or a luminous outdoor painting.
 pillars:
   - Build a measured composition from stable silhouettes, clear intervals, and a few deliberate alignments.
   - Separate nearby hues into small, visible pigment marks so colors can combine optically at ordinary viewing distance.
@@ -32,6 +45,8 @@ rules:
   - id: measured-silhouette-and-intervals
     axis: composition_and_shape
     importance: core
+    when_contexts:
+      - measured-chromatic-composition
     applies_when: The user requests a composed scene or object study in a measured painted style.
     instruction: Arrange only the requested subjects with clear silhouettes and intentional intervals; use a small number of horizontal, vertical, or diagonal alignments to create rhythm without borrowing a known Seurat composition.
     observable: Main forms remain individually readable and their spacing creates a quiet, deliberate visual rhythm.
@@ -46,6 +61,8 @@ rules:
   - id: plane-sensitive-separated-pigment-marks
     axis: mark_making_and_surface
     importance: core
+    when_contexts:
+      - measured-chromatic-composition
     applies_when: The scene uses divided color as a visible painting method.
     instruction: Apply separate nearby pigment hues in orderly dabs, short strokes, or patches whose direction and density follow the local plane; let them remain distinct close up and combine visually at normal viewing distance.
     observable: Pigment units are legible at close range, while the image reads as coherent color and light from a normal viewing distance.
@@ -61,6 +78,8 @@ rules:
   - id: optical-light-and-colored-shadow
     axis: color_and_light
     importance: supporting
+    when_contexts:
+      - user-requests-natural-light-or-luminous-outdoor-painting
     applies_when: The user requests clear natural light or a luminous outdoor painting.
     instruction: Keep the light direction and value structure simple; place related or contrasting hues next to one another where they describe illumination and shadow, without making every surface vibrate equally.
     observable: Light and shadow remain readable through grouped color relationships, and the brightest chromatic activity stays focused on meaningful areas.
