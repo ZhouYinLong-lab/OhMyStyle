@@ -1,0 +1,154 @@
+schema_version: 2.1.0
+status: experimental
+id: todd-hido-direction
+name: 托德·海多
+base_package: photographers/todd-hido
+scope:
+  medium: observational color photography with restrained film response
+  representation: recognizable
+  description: 以蓝调时刻、住宅边缘和窗内暖光把日常郊区拍成含蓄而悬置的记忆。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - dramatic cinematic poster lighting
+  - generic teal-and-orange grade
+  - landmark-centered travel photography
+  - invented text or signage
+pillars:
+- 以蓝调时刻、住宅边缘和窗内暖光把日常郊区拍成含蓄而悬置的记忆。
+- 'composition: 以远距离、略偏置的视点保留大片安静天空或路面，让普通地点显得悬置。; 主体通常位于中远景，边缘建筑、树木或道路承担空间锚点。'
+- 'palette: 冷蓝灰环境与少量窗内暖黄形成克制对照，避免糖果色或旅游宣传色。'
+- 'lighting: quality: blue-hour ambient light with isolated practical warmth; behavior: 天空和路面保持均匀低照度，暖光只来自场景中真实存在的灯窗或灯具。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以远距离、略偏置的视点保留大片安静天空或路面，让普通地点显得悬置。;
+    主体通常位于中远景，边缘建筑、树木或道路承担空间锚点。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以远距离、略偏置的视点保留大片安静天空或路面，让普通地点显得悬置。;
+    主体通常位于中远景，边缘建筑、树木或道路承担空间锚点。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以远距离、略偏置的视点保留大片安静天空或路面，让普通地点显得悬置。;
+    主体通常位于中远景，边缘建筑、树木或道路承担空间锚点。.'
+  evidence:
+    source_ids:
+    - source-todd-hido-primary-source
+    - source-todd-hido-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 冷蓝灰环境与少量窗内暖黄形成克制对照，避免糖果色或旅游宣传色。.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 冷蓝灰环境与少量窗内暖黄形成克制对照，避免糖果色或旅游宣传色。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    冷蓝灰环境与少量窗内暖黄形成克制对照，避免糖果色或旅游宣传色。.'
+  evidence:
+    source_ids:
+    - source-todd-hido-primary-source
+    - source-todd-hido-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: blue-hour ambient light with isolated practical
+    warmth; behavior: 天空和路面保持均匀低照度，暖光只来自场景中真实存在的灯窗或灯具。. Keep light coherent with the requested subject, medium,
+    and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: blue-hour ambient
+    light with isolated practical warmth; behavior: 天空和路面保持均匀低照度，暖光只来自场景中真实存在的灯窗或灯具。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: blue-hour ambient
+    light with isolated practical warmth; behavior: 天空和路面保持均匀低照度，暖光只来自场景中真实存在的灯窗或灯具。.'
+  evidence:
+    source_ids:
+    - source-todd-hido-primary-source
+    - source-todd-hido-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: restrained
+    color negative or film-like photographic finish; edges: natural softening from distance, not artificial
+    blur. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    restrained color negative or film-like photographic finish; edges: natural softening from distance, not
+    artificial blur.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: restrained color negative or film-like photographic finish; edges: natural softening from distance,
+    not artificial blur.'
+  evidence:
+    source_ids:
+    - source-todd-hido-primary-source
+    - source-todd-hido-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    to medium film grain; placement: evenly distributed, with wet surfaces retaining readable reflection. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low to medium film grain; placement: evenly distributed, with wet surfaces retaining readable reflection.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low to medium film grain; placement: evenly distributed, with wet surfaces retaining readable
+    reflection.'
+  evidence:
+    source_ids:
+    - source-todd-hido-primary-source
+    - source-todd-hido-secondary
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-todd-hido-primary-source
+  kind: primary
+  base_asset_id: todd-hido-primary-source
+- id: source-todd-hido-secondary
+  kind: secondary
+  base_asset_id: todd-hido-secondary
+execution:
+  route: text_only
+  must:
+  - Establish the user's subject and location before adding atmosphere.
+  - Choose a distant, slightly detached viewpoint with generous negative space.
+  - Set cool ambient exposure for the sky, pavement, or surrounding air.
+  - Retain small warm practical lights only where the scene supports them.
+  - Add restrained grain and wet-surface reflections without making the image nostalgic.
+  - 普通主体必须保持可辨，气氛来自距离、光线和等待感。
+  - 冷暖关系来自场景光源，不使用全局青橙滤镜。
+  - 不复制具体住宅、道路或摄影作品的构图。
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - dramatic cinematic poster lighting
+  - generic teal-and-orange grade
+  - landmark-centered travel photography
+  - invented text or signage
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
