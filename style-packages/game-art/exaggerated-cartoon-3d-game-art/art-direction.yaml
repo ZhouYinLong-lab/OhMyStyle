@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: exaggerated-cartoon-3d-game-art-direction
+name: 欧美动画式夸张三维游戏美术
+base_package: game-art/exaggerated-cartoon-3d-game-art
+scope:
+  medium: 三维结构以动画比例主动变形; 材质细节服从表演轮廓
+  representation: stylized
+  description: 把角色当作可表演的图形符号，放大最能传达性格的部位并压缩次要结构，让姿态和剪影先于写实比例。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - realistic anatomy
+  - uniform exaggeration
+  - copied character
+pillars:
+- 把角色当作可表演的图形符号，放大最能传达性格的部位并压缩次要结构，让姿态和剪影先于写实比例。
+- 'medium: 三维结构以动画比例主动变形; 材质细节服从表演轮廓'
+- 'composition: 角色剪影先传达性格和动作; 关键姿态可被远距离读懂'
+- 'palette: 大色块区分角色与场景; 局部色彩强调表情和动作'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 三维结构以动画比例主动变形;
+    材质细节服从表演轮廓.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 三维结构以动画比例主动变形;
+    材质细节服从表演轮廓.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    三维结构以动画比例主动变形; 材质细节服从表演轮廓.'
+  evidence:
+    source_ids:
+    - source-exaggerated-cartoon-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 角色剪影先传达性格和动作;
+    关键姿态可被远距离读懂. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 角色剪影先传达性格和动作; 关键姿态可被远距离读懂.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 角色剪影先传达性格和动作;
+    关键姿态可被远距离读懂.'
+  evidence:
+    source_ids:
+    - source-exaggerated-cartoon-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 大色块区分角色与场景; 局部色彩强调表情和动作. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 大色块区分角色与场景; 局部色彩强调表情和动作.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    大色块区分角色与场景; 局部色彩强调表情和动作.'
+  evidence:
+    source_ids:
+    - source-exaggerated-cartoon-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 面部和肢体重点受光; 阴影不抹掉夸张形体. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 面部和肢体重点受光; 阴影不抹掉夸张形体.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 面部和肢体重点受光; 阴影不抹掉夸张形体.'
+  evidence:
+    source_ids:
+    - source-exaggerated-cartoon-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 皮肤、布料和道具简化但各自可辨;
+    边缘干净而有造型弹性. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 皮肤、布料和道具简化但各自可辨;
+    边缘干净而有造型弹性.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    皮肤、布料和道具简化但各自可辨; 边缘干净而有造型弹性.'
+  evidence:
+    source_ids:
+    - source-exaggerated-cartoon-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 细节集中于表情和功能部位;
+    背景不与角色争抢. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 细节集中于表情和功能部位;
+    背景不与角色争抢.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    细节集中于表情和功能部位; 背景不与角色争抢.'
+  evidence:
+    source_ids:
+    - source-exaggerated-cartoon-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-exaggerated-cartoon-3d-game-art-primary-source
+  kind: primary
+  base_asset_id: exaggerated-cartoon-3d-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定角色性格和剪影
+  - 放大一到两个表达部位
+  - 压缩次要结构
+  - 设计支持表演的姿势
+  - 检查缩略轮廓与动作可读性
+  - 夸张比例有明确主次
+  - 动作和轮廓可读
+  - 不复制特定角色
+  avoid:
+  - realistic anatomy
+  - uniform exaggeration
+  - copied character
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
