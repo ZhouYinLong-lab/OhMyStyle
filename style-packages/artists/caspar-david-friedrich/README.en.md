@@ -75,3 +75,7 @@ python tools/compile-style.py style-packages/artists/caspar-david-friedrich --di
 ```
 
 This direction remains experimental. The Met and National Gallery of Art records support these observations; cross-subject stability and visual differentiation from Hiroshige remain pending.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

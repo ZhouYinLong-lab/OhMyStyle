@@ -1,0 +1,154 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "caspar-david-friedrich",
+    "name": "卡斯帕·大卫·弗里德里希",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\caspar-david-friedrich"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A small person seen from behind on a rocky shore at dusk, looking across a broad quiet sea",
+  "prompt": "USER SUBJECT: A small person seen from behind on a rocky shore at dusk, looking across a broad quiet sea\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [human-measure-without-default-figure] Use the requested person's scale and placement to measure the surrounding land or sky; a back-facing stance may invite looking into the view, but do not add or enlarge a figure beyond the prompt.\n- [expansive-quiet-field] Reserve broad, low-detail areas of sky, sea, or land and place the horizon or major land masses with deliberate weight; let the requested subject feel small or exposed only when that relationship fits the prompt.\n- [partial-revelation-and-material-contrast] Let selected foreground rock, vegetation, or shoreline carry precise material cues while distant forms emerge or disappear in broad, quiet value masses; use only the weather or obscuration requested.\n- [scale-space-visibility-coherence] Align the scale of any requested figure, the amount of open space, and the visibility of distant forms around one clear landscape viewpoint; do not add narrative symbols to explain the mood.\nREQUIREMENT: Preserve the requested landscape, location, weather, time, and figure count.\nREQUIREMENT: Use scale and open space to create a contemplative relationship between subject and setting.\nREQUIREMENT: Keep near material and distant forms distinct without uniform blur.",
+  "negative_prompt": "unsolicited back-facing wanderers, heroic portraits, and fixed clothing or props\ncrowded scenic detail, postcard panoramas, and empty space with no spatial role\nuniform fog overlays, photographic depth blur, and equal-detail planes\nadding a wanderer, monk, ruin, cross, mountain, fog, or sunset unless requested\nturning the landscape into a travel route or weather-driven print sequence\ncopying a named painting's figure placement or composition",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "friedrich-human-scale-and-vastness",
+    "name": "Friedrich human scale and vastness",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\caspar-david-friedrich\\art-direction.yaml",
+    "sha256": "2afbe0ddbe0525a756068d58bd6e65ece9c64d84f7a9a403d17d3a9ca15dfc07",
+    "active_rule_ids": [
+      "human-measure-without-default-figure",
+      "expansive-quiet-field",
+      "partial-revelation-and-material-contrast"
+    ],
+    "contexts": [
+      "landscape-view"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Preserve the requested landscape, location, weather, time, and figure count.",
+      "Use scale and open space to create a contemplative relationship between subject and setting.",
+      "Keep near material and distant forms distinct without uniform blur."
+    ],
+    "avoid": [
+      "adding a wanderer, monk, ruin, cross, mountain, fog, or sunset unless requested",
+      "turning the landscape into a travel route or weather-driven print sequence",
+      "copying a named painting's figure placement or composition"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "A landscape-only direction that makes the viewer feel the distance between a finite human presence and an expansive natural world through scale, a quiet horizon, and selective visibility. Atmospheric effects support this relationship but do not become the subject.",
+      "required_contexts": [
+        "landscape-view"
+      ],
+      "incompatible_contexts": [
+        "object-only-still-life",
+        "photorealistic-landscape"
+      ],
+      "limitations": [
+        "Preserve the requested location, weather, time, and figure count; never add a wanderer, monk, ruin, cross, mountain, or fog by default.",
+        "A person viewed from behind is optional and only appears when the prompt requests a person or a human viewpoint.",
+        "Keep the scene contemplative through scale and spacing, not through invented religious or national symbolism."
+      ]
+    },
+    "rules": [
+      {
+        "id": "human-measure-without-default-figure",
+        "axis": "scale_and_viewpoint",
+        "importance": "core",
+        "applies_when": "The requested landscape includes a person or implies an observer's viewpoint.",
+        "instruction": "Use the requested person's scale and placement to measure the surrounding land or sky; a back-facing stance may invite looking into the view, but do not add or enlarge a figure beyond the prompt.",
+        "observable": "The relationship between person and landscape is immediately legible, while the person remains anonymous unless the prompt specifies identity or detail.",
+        "reject_when": "A person is inserted without request, dominates the scene without purpose, or becomes a copied iconic wanderer.",
+        "evidence": {
+          "source_ids": [
+            "friedrich-met-soul-of-nature",
+            "friedrich-nga-northern-landscape"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "unsolicited back-facing wanderers, heroic portraits, and fixed clothing or props"
+      },
+      {
+        "id": "expansive-quiet-field",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Reserve broad, low-detail areas of sky, sea, or land and place the horizon or major land masses with deliberate weight; let the requested subject feel small or exposed only when that relationship fits the prompt.",
+        "observable": "Open space is an active part of the composition, and a few grounded forms anchor the viewer without turning the scene into an ornamental panorama.",
+        "reject_when": "Every region is filled with landmarks and detail, or forced emptiness makes the requested subject difficult to read.",
+        "evidence": {
+          "source_ids": [
+            "friedrich-met-soul-of-nature",
+            "friedrich-nga-northern-landscape"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "crowded scenic detail, postcard panoramas, and empty space with no spatial role"
+      },
+      {
+        "id": "partial-revelation-and-material-contrast",
+        "axis": "space_and_surface",
+        "importance": "core",
+        "applies_when": "The requested landscape contains distance, haze, cloud, or a visible transition between near and far forms.",
+        "instruction": "Let selected foreground rock, vegetation, or shoreline carry precise material cues while distant forms emerge or disappear in broad, quiet value masses; use only the weather or obscuration requested.",
+        "observable": "The viewer can distinguish near material from far atmosphere, and visibility changes support depth without relying on uniform mist or blur.",
+        "reject_when": "Fog is added without request, distant forms are uniformly blurred, or all planes have equal descriptive detail.",
+        "evidence": {
+          "source_ids": [
+            "friedrich-met-soul-of-nature",
+            "friedrich-nga-northern-landscape"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform fog overlays, photographic depth blur, and equal-detail planes"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "scale-space-visibility-coherence",
+        "rule_ids": [
+          "human-measure-without-default-figure",
+          "expansive-quiet-field",
+          "partial-revelation-and-material-contrast"
+        ],
+        "instruction": "Align the scale of any requested figure, the amount of open space, and the visibility of distant forms around one clear landscape viewpoint; do not add narrative symbols to explain the mood.",
+        "observable": "The scene reads as one sustained encounter with a large natural setting; open space and visibility shape attention while the requested subject remains clear."
+      }
+    ],
+    "sources": [
+      {
+        "id": "friedrich-met-soul-of-nature",
+        "kind": "museum_exhibition_analysis",
+        "url": "https://www.metmuseum.org/zh/exhibitions/caspar-david-friedrich-the-soul-of-nature/inside-the-exhibition"
+      },
+      {
+        "id": "friedrich-nga-northern-landscape",
+        "kind": "museum_object_record",
+        "url": "https://www.nga.gov/artworks/130555-northern-landscape-spring"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "2afbe0ddbe0525a756068d58bd6e65ece9c64d84f7a9a403d17d3a9ca15dfc07",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

@@ -89,3 +89,7 @@ python tools/compile-style.py style-packages/artists/caspar-david-friedrich --di
 ```
 
 方向仍处于实验状态。大都会艺术博物馆和美国国家美术馆的资料支持这些观察；跨主体稳定性以及与广重方向的图片区分仍待评审。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。
