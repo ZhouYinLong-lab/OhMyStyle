@@ -1,0 +1,156 @@
+schema_version: 2.1.0
+status: experimental
+id: royal-academy-schools-direction
+name: 皇家美术学院学校
+base_package: schools/royal-academy-schools
+scope:
+  medium: 十八世纪以来英国美术学院教育与当代工作室实践 学院训练与工作室实践
+  representation: stylized
+  description: 以长期工作室实践、写生训练、材料研究和个人视觉语言发展组织创作过程，强调训练方法而非固定画面题材。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - fixed subject, landmark, character, or narrative event
+  - copied reference composition or branded asset
+pillars:
+- 以长期工作室实践、写生训练、材料研究和个人视觉语言发展组织创作过程，强调训练方法而非固定画面题材。
+- 'differentiation: 观察先于装饰的形体判断; 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系'
+- 'composition: 观察先于装饰的形体判断; 工作室式材料意识和反复推敲'
+- 'palette: 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: 观察先于装饰的形体判断;
+    工作室式材料意识和反复推敲; 受控构图、比例和明暗关系. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: 观察先于装饰的形体判断; 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: 观察先于装饰的形体判断;
+    工作室式材料意识和反复推敲; 受控构图、比例和明暗关系.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 观察先于装饰的形体判断;
+    工作室式材料意识和反复推敲. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 观察先于装饰的形体判断; 工作室式材料意识和反复推敲.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 观察先于装饰的形体判断;
+    工作室式材料意识和反复推敲.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    工作室式材料意识和反复推敲; 受控构图、比例和明暗关系.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 受控构图、比例和明暗关系; behavior: Keep the requested
+    subject and location independent from the package.; behavior: Apply lighting as a transferable visual decision,
+    not a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 受控构图、比例和明暗关系; behavior:
+    Keep the requested subject and location independent from the package.; behavior: Apply lighting as a transferable
+    visual decision, not a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 受控构图、比例和明暗关系;
+    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
+    as a transferable visual decision, not a fixed scene..'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 保留个人笔触或材料选择，而不是套用统一滤镜;
+    edges: subject-dependent, without a copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    保留个人笔触或材料选择，而不是套用统一滤镜; edges: subject-dependent, without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 保留个人笔触或材料选择，而不是套用统一滤镜; edges: subject-dependent, without a copied layout.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: controlled
+    and medium-dependent; placement: only where the package visual language needs explanation. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    controlled and medium-dependent; placement: only where the package visual language needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: controlled and medium-dependent; placement: only where the package visual language needs explanation.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-01
+  kind: primary_research_source
+  base_asset_id: primary-01
+execution:
+  route: text_only
+  must:
+  - 先明确主体的比例、结构和光线
+  - 使用工作室式的材料与表面逻辑
+  - 让细节服务于观察结果而非装饰堆叠
+  - 保留适度个人判断，不强行统一成单一风格
+  - 观察先于装饰的形体判断
+  - 工作室式材料意识和反复推敲
+  - 受控构图、比例和明暗关系
+  - 保留个人笔触或材料选择，而不是套用统一滤镜
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - fixed subject, landmark, character, or narrative event
+  - copied reference composition or branded asset
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
+    protected game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
