@@ -1,0 +1,162 @@
+schema_version: 2.1.0
+status: experimental
+id: cuphead-rubber-hose-animation-direction
+name: 三十年代橡皮管动画游戏美术
+base_package: game-art/cuphead-rubber-hose-animation
+scope:
+  medium: hand-drawn 2D game illustration with rubber-hose animation grammar
+  representation: stylized
+  description: 将三十年代手绘动画的橡皮管肢体、墨线、赛璐珞色块和水彩背景转译为可用于游戏场景的视觉语言。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory seaside village, windmill, dock, boss, or mascot
+pillars:
+- 将三十年代手绘动画的橡皮管肢体、墨线、赛璐珞色块和水彩背景转译为可用于游戏场景的视觉语言。
+- 'composition: Build a readable side-scrolling frame with clear foreground, middle ground, and background
+  layers.; Use strong silhouette hierarchy and a path or directional shape that supports game readability.;
+  Keep the image lively through curved contours and staged visual rhythm, not through clutter.'
+- 'palette: Use a limited parchment, tobacco brown, muted teal, brick red, and warm yellow palette.; Separate
+  planes with value and hue while retaining a printed, slightly aged unity.'
+- 'lighting: quality: warm illustrated daylight or stage-like painted light; behavior: Use broad readable light
+  shapes rather than photorealistic bounce-light simulation.; behavior: Keep silhouettes legible against the
+  background.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Build a readable
+    side-scrolling frame with clear foreground, middle ground, and background layers.; Use strong silhouette
+    hierarchy and a path or directional shape that supports game readability.; Keep the image lively through
+    curved contours and staged visual rhythm, not through clutter.. Preserve the user-provided content and
+    layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Build a readable
+    side-scrolling frame with clear foreground, middle ground, and background layers.; Use strong silhouette
+    hierarchy and a path or directional shape that supports game readability.; Keep the image lively through
+    curved contours and staged visual rhythm, not through clutter..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Build a
+    readable side-scrolling frame with clear foreground, middle ground, and background layers.; Use strong
+    silhouette hierarchy and a path or directional shape that supports game readability.; Keep the image lively
+    through curved contours and staged visual rhythm, not through clutter..'
+  evidence:
+    source_ids:
+    - source-cuphead-rubber-hose-animation-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use a limited parchment, tobacco
+    brown, muted teal, brick red, and warm yellow palette.; Separate planes with value and hue while retaining
+    a printed, slightly aged unity.. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use a limited parchment,
+    tobacco brown, muted teal, brick red, and warm yellow palette.; Separate planes with value and hue while
+    retaining a printed, slightly aged unity..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use a limited parchment, tobacco brown, muted teal, brick red, and warm yellow palette.; Separate planes
+    with value and hue while retaining a printed, slightly aged unity..'
+  evidence:
+    source_ids:
+    - source-cuphead-rubber-hose-animation-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: warm illustrated daylight or stage-like
+    painted light; behavior: Use broad readable light shapes rather than photorealistic bounce-light simulation.;
+    behavior: Keep silhouettes legible against the background.. Keep light coherent with the requested subject,
+    medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: warm illustrated daylight
+    or stage-like painted light; behavior: Use broad readable light shapes rather than photorealistic bounce-light
+    simulation.; behavior: Keep silhouettes legible against the background..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: warm illustrated
+    daylight or stage-like painted light; behavior: Use broad readable light shapes rather than photorealistic
+    bounce-light simulation.; behavior: Keep silhouettes legible against the background..'
+  evidence:
+    source_ids:
+    - source-cuphead-rubber-hose-animation-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: hand-inked
+    animation drawing with watercolor or gouache background; edges: variable ink contour, rounded and elastic
+    where motion is implied. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    hand-inked animation drawing with watercolor or gouache background; edges: variable ink contour, rounded
+    and elastic where motion is implied.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: hand-inked animation drawing with watercolor or gouache background; edges: variable ink contour,
+    rounded and elastic where motion is implied.'
+  evidence:
+    source_ids:
+    - source-cuphead-rubber-hose-animation-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium,
+    with visible paper, paint, and registration irregularity; placement: concentrated in background washes
+    and selected line or cel edges. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium, with visible paper, paint, and registration irregularity; placement: concentrated in background
+    washes and selected line or cel edges.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium, with visible paper, paint, and registration irregularity; placement: concentrated in background
+    washes and selected line or cel edges.'
+  evidence:
+    source_ids:
+    - source-cuphead-rubber-hose-animation-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-cuphead-rubber-hose-animation-primary-source
+  kind: primary
+  base_asset_id: cuphead-rubber-hose-animation-primary-source
+execution:
+  route: text_only
+  must:
+  - Block a readable side-scrolling composition and gameplay path with large silhouettes.
+  - Draw variable ink contours and elastic curves around the user-supplied subject.
+  - Paint a limited-color background in broad washes, then add cel-like planes and small accents.
+  - Add restrained paper and registration imperfections without obscuring silhouettes.
+  - Preserve hand-inked contour variation and readable game silhouettes after the subject changes.
+  - Preserve layered painted depth without converting the image to pixel art or glossy 3D.
+  - Keep the limited palette and print imperfections subordinate to gameplay clarity.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - mandatory seaside village, windmill, dock, boss, or mascot
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
