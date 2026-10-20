@@ -1,0 +1,206 @@
+schema_version: 2.1.0
+status: experimental
+id: american-luminism-direction
+name: 美国光主义
+base_package: movements/american-luminism
+scope:
+  medium: Suggest finely controlled oil paint with smooth, thin transitions and few conspicuous stroke marks.;
+    Keep surface detail subordinate to precise atmospheric separation.
+  representation: stylized
+  description: 以稀疏的横向景观、克制的边缘、平静水面和精密大气透视捕捉冷静、清澈且近乎静止的自然光。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - dramatic_storm
+  - sublime_mountain_scale
+  - visible_impressionist_strokes
+  - global_cool_filter
+pillars:
+- 以稀疏的横向景观、克制的边缘、平静水面和精密大气透视捕捉冷静、清澈且近乎静止的自然光。
+- 'medium: Suggest finely controlled oil paint with smooth, thin transitions and few conspicuous stroke marks.;
+  Keep surface detail subordinate to precise atmospheric separation.'
+- 'composition: Prefer broad horizontal balance and a low or distant horizon when the requested subject allows
+  it; follow a different requested aspect ratio without cropping to a preset.; Keep the main forms sparse and
+  carefully spaced; let empty water, sky, or an equivalent quiet field carry visual weight.; Use layered near,
+  middle, and far planes with restrained scale shifts rather than a dramatic foreground-to-mountain sweep.'
+- 'palette: Use cool silver, pale blue, soft gray, muted green, and controlled earth colors.; Keep chroma measured;
+  allow light to brighten local colors without turning the whole image blue or gold.; Reserve stronger darks
+  for small anchors and foreground edges.'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: Suggest
+    finely controlled oil paint with smooth, thin transitions and few conspicuous stroke marks.; Keep surface
+    detail subordinate to precise atmospheric separation..'
+  observable: 'The requested image retains the stated medium distinction or production constraint: Suggest
+    finely controlled oil paint with smooth, thin transitions and few conspicuous stroke marks.; Keep surface
+    detail subordinate to precise atmospheric separation..'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    Suggest finely controlled oil paint with smooth, thin transitions and few conspicuous stroke marks.; Keep
+    surface detail subordinate to precise atmospheric separation..'
+  evidence:
+    source_ids:
+    - source-nga-american-light
+    - source-princeton-lake-george
+    - source-nga-american-light-exhibition
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Prefer broad
+    horizontal balance and a low or distant horizon when the requested subject allows it; follow a different
+    requested aspect ratio without cropping to a preset.; Keep the main forms sparse and carefully spaced;
+    let empty water, sky, or an equivalent quiet field carry visual weight.; Use layered near, middle, and
+    far planes with restrained scale shifts rather than a dramatic foreground-to-mountain sweep.. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Prefer broad horizontal
+    balance and a low or distant horizon when the requested subject allows it; follow a different requested
+    aspect ratio without cropping to a preset.; Keep the main forms sparse and carefully spaced; let empty
+    water, sky, or an equivalent quiet field carry visual weight.; Use layered near, middle, and far planes
+    with restrained scale shifts rather than a dramatic foreground-to-mountain sweep..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Prefer
+    broad horizontal balance and a low or distant horizon when the requested subject allows it; follow a different
+    requested aspect ratio without cropping to a preset.; Keep the main forms sparse and carefully spaced;
+    let empty water, sky, or an equivalent quiet field carry visual weight.; Use layered near, middle, and
+    far planes with restrained scale shifts rather than a dramatic foreground-to-mountain sweep..'
+  evidence:
+    source_ids:
+    - source-nga-american-light
+    - source-princeton-lake-george
+    - source-nga-american-light-exhibition
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use cool silver, pale blue, soft
+    gray, muted green, and controlled earth colors.; Keep chroma measured; allow light to brighten local colors
+    without turning the whole image blue or gold.; Reserve stronger darks for small anchors and foreground
+    edges.. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use cool silver, pale blue,
+    soft gray, muted green, and controlled earth colors.; Keep chroma measured; allow light to brighten local
+    colors without turning the whole image blue or gold.; Reserve stronger darks for small anchors and foreground
+    edges..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use cool silver, pale blue, soft gray, muted green, and controlled earth colors.; Keep chroma measured;
+    allow light to brighten local colors without turning the whole image blue or gold.; Reserve stronger darks
+    for small anchors and foreground edges..'
+  evidence:
+    source_ids:
+    - source-nga-american-light
+    - source-princeton-lake-george
+    - source-nga-american-light-exhibition
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: Make light itself the primary event: clear, even,
+    and quietly radiant across surfaces.; Use subtle reflected light and delicate atmospheric haze while preserving
+    distant form.; Avoid sudden rays, theatrical sunset bands, and abrupt chiaroscuro.. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: Make light itself the primary
+    event: clear, even, and quietly radiant across surfaces.; Use subtle reflected light and delicate atmospheric
+    haze while preserving distant form.; Avoid sudden rays, theatrical sunset bands, and abrupt chiaroscuro..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: Make light itself the
+    primary event: clear, even, and quietly radiant across surfaces.; Use subtle reflected light and delicate
+    atmospheric haze while preserving distant form.; Avoid sudden rays, theatrical sunset bands, and abrupt
+    chiaroscuro..'
+  evidence:
+    source_ids:
+    - source-nga-american-light
+    - source-princeton-lake-george
+    - source-nga-american-light-exhibition
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Suppress visible
+    brushwork; distinguish this from Impressionist broken color and gestural landscape painting.; Keep water
+    and sky calm, with sparse horizontal variations rather than glittering detail.. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Suppress
+    visible brushwork; distinguish this from Impressionist broken color and gestural landscape painting.; Keep
+    water and sky calm, with sparse horizontal variations rather than glittering detail..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Suppress visible brushwork; distinguish this from Impressionist broken color and gestural landscape painting.;
+    Keep water and sky calm, with sparse horizontal variations rather than glittering detail..'
+  evidence:
+    source_ids:
+    - source-nga-american-light
+    - source-princeton-lake-george
+    - source-nga-american-light-exhibition
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Use smooth transitions
+    and fine detail in moderation; do not add artificial canvas grain uniformly.. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Use smooth
+    transitions and fine detail in moderation; do not add artificial canvas grain uniformly..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Use smooth transitions and fine detail in moderation; do not add artificial canvas grain uniformly..'
+  evidence:
+    source_ids:
+    - source-nga-american-light
+    - source-princeton-lake-george
+    - source-nga-american-light-exhibition
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-nga-american-light
+  kind: primary
+  base_asset_id: nga-american-light
+- id: source-princeton-lake-george
+  kind: primary
+  base_asset_id: princeton-lake-george
+- id: source-nga-american-light-exhibition
+  kind: primary
+  base_asset_id: nga-american-light-exhibition
+execution:
+  route: text_only
+  must:
+  - Honor the requested subject and choose a quiet, balanced arrangement.
+  - Separate near, middle, and far planes through small shifts in value and atmospheric clarity.
+  - Establish the broad light field before detailing objects or surfaces.
+  - Add reflective light in restrained, aligned accents; keep water or equivalent surfaces calm.
+  - Resolve only the structural edges needed for depth; suppress conspicuous brushwork.
+  - Stillness comes from sparse spacing, tonal control, and reflective light, not from blur.
+  - Atmospheric depth stays legible even when detail is restrained.
+  - The image retains the user’s chosen subject and does not default to a specific coast or landmark.
+  avoid:
+  - dramatic_storm
+  - sublime_mountain_scale
+  - visible_impressionist_strokes
+  - global_cool_filter
+  - Use movement-level visual traits only. Do not reconstruct a named landscape, landmark, composition, logo,
+    or text.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
