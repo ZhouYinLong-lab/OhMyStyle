@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: bourgeois-visible-mending-textile-assembly
 name: Bourgeois visible-mending textile assembly
@@ -24,6 +24,19 @@ scope:
     - Place stitches on actual joins and vary their spacing and tension slightly.
     - Do not infer autobiographical memory or add needles, spools, clothing, bodies, spiders, or cages.
     - Do not copy a named work, textile composition, or installation.
+contexts:
+  - id: visible-mending-textile-assembly
+    description: The user requests textile fragments assembled, repaired, or visibly mended.
+  - id: seamless-machine-woven-surface
+    description: The user requires a seamless machine-woven surface.
+  - id: regular-quilt-grid
+    description: The user requests a regular quilt grid.
+  - id: photorealistic-flat-product-shot
+    description: The user requires a photorealistic flat product shot.
+  - id: user-requests-repaired-or-timeworn-fabric
+    description: The requested fabric is described as repaired or timeworn.
+  - id: fragments-assembled-on-visible-ground
+    description: Fabric fragments are assembled on a wall, support, or other visible ground.
 pillars:
   - Let seams follow the real boundary between user-specified fragments; show thread crossing the join and binding the layers.
   - Vary stitch length, interval, and tension subtly so repair reads as handwork rather than a decorative machine pattern.
@@ -33,6 +46,8 @@ rules:
   - id: stitch-through-actual-seams
     axis: construction_and_joinery
     importance: core
+    when_contexts:
+      - visible-mending-textile-assembly
     applies_when: The user requests fabric fragments joined, repaired, or visibly stitched.
     instruction: Place visible running stitches or short repair passes across the actual seam between requested fragments; make the thread visibly enter and leave the cloth and follow the seam's direction.
     observable: Stitches visibly bind two textile edges and read as construction rather than printed decoration.
@@ -46,6 +61,8 @@ rules:
   - id: hand-repair-irregularity
     axis: mark_and_material
     importance: core
+    when_contexts:
+      - user-requests-repaired-or-timeworn-fabric
     applies_when: The requested work emphasizes repaired or timeworn fabric.
     instruction: Vary stitch length, spacing, and thread tension slightly; combine the seam with restrained fraying, folds, or a patch only where material stress supports it.
     observable: The repair appears manually made and physically functional, with localized differences rather than uniform distress.
@@ -59,6 +76,8 @@ rules:
   - id: textile-relief-and-open-ground
     axis: surface_and_negative_space
     importance: supporting
+    when_contexts:
+      - fragments-assembled-on-visible-ground
     applies_when: Fabric fragments are assembled on a wall, support, or other visible ground.
     instruction: Use folds, overlapped patches, and shallow cast shadows to show textile relief; leave broad quiet areas that reveal the fabric weave and prevent seams from covering the whole panel.
     observable: Cloth thickness, edge lift, and supporting ground remain distinguishable, with texture concentrated at joins.

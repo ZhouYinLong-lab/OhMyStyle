@@ -22,7 +22,7 @@ This package controls visual treatment, not subject matter. People, objects, pla
 
 ## Optional direction: visible textile mending
 
-The art-direction.yaml file registers an experimental direction for user-requested fabric assembly, seams, or visible repair. Stitches cross actual joins with slight variation in length and spacing; folds, patches, and wear stay concentrated at stressed connections so broad fabric areas remain readable. It does not infer personal memory or add needles, spools, spiders, cages, or body imagery by default. Declare visible-mending-textile-assembly when compiling; the legacy package and default path remain unchanged.
+The `art-direction.yaml` file uses direction format 2.1.0 and registers an experimental direction for user-requested fabric assembly, seams, or visible repair. Stitches cross actual joins; declare `user-requests-repaired-or-timeworn-fabric` or `fragments-assembled-on-visible-ground` only when applicable to activate localized wear or textile-relief rules. It does not infer personal memory or add needles, spools, spiders, cages, or body imagery by default. Declare `visible-mending-textile-assembly` when compiling; the legacy package and default path remain unchanged.
 
 ### Generated comparison using the same fabric fragments
 

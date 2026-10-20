@@ -22,7 +22,7 @@
 
 ## 可选新方向：布料可见修补
 
-art-direction.yaml 登记一个实验方向，仅用于用户要求的布料拼接、缝合或可见修补。针脚沿真实接缝穿过布片，长度与间隔略有差异；折痕、补片和磨损集中在受力连接处，保留大块可读织物表面。它不推断个人记忆，也不默认加入针线工具、蜘蛛、笼状结构或身体意象。编译时声明 visible-mending-textile-assembly；原包和旧版默认路径不变。
+art-direction.yaml 使用方向格式 2.1.0，登记一个实验方向，仅用于用户要求的布料拼接、缝合或可见修补。针脚沿真实接缝穿过布片；只有布料本身破旧或需要在支撑面呈现时，才声明 `user-requests-repaired-or-timeworn-fabric` 或 `fragments-assembled-on-visible-ground`，启用局部磨损或织物浮雕规则。它不推断个人记忆，也不默认加入针线工具、蜘蛛、笼状结构或身体意象。编译时声明 `visible-mending-textile-assembly`；原包和旧版默认路径不变。
 
 ### 同一组布片的生成对照
 
