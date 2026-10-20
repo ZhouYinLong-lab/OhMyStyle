@@ -1,0 +1,135 @@
+schema_version: 2.1.0
+status: experimental
+id: nihonga-direction
+name: 日本画
+base_package: movements/nihonga
+scope:
+  medium: 绘画
+  representation: stylized
+  description: 以纸、绢、矿物颜料、蛤粉与胶为材料基础，结合细线、平静留白、自然观察和层叠色面形成现代日本绘画语言。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以纸、绢、矿物颜料、蛤粉与胶为材料基础，结合细线、平静留白、自然观察和层叠色面形成现代日本绘画语言。
+- 'composition: 大面积留白与细部观察保持平衡; 自然形体被整理为平静、连续的层次; 画面节奏来自线、色层和空白之间的呼吸'
+- 'palette: 矿物蓝、石绿、朱砂、赭石、白粉和少量金色; 颜色清澈但不依赖高饱和滤镜; 透明或半透明层次保留纸绢底色'
+- 'lighting: quality: 光线均匀、含蓄，避免摄影式强烈明暗; behavior: 用色层和留白传达空间，而非投影堆叠'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 大面积留白与细部观察保持平衡;
+    自然形体被整理为平静、连续的层次; 画面节奏来自线、色层和空白之间的呼吸. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 大面积留白与细部观察保持平衡; 自然形体被整理为平静、连续的层次;
+    画面节奏来自线、色层和空白之间的呼吸.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 大面积留白与细部观察保持平衡;
+    自然形体被整理为平静、连续的层次; 画面节奏来自线、色层和空白之间的呼吸.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 矿物蓝、石绿、朱砂、赭石、白粉和少量金色; 颜色清澈但不依赖高饱和滤镜;
+    透明或半透明层次保留纸绢底色. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 矿物蓝、石绿、朱砂、赭石、白粉和少量金色; 颜色清澈但不依赖高饱和滤镜;
+    透明或半透明层次保留纸绢底色.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    矿物蓝、石绿、朱砂、赭石、白粉和少量金色; 颜色清澈但不依赖高饱和滤镜; 透明或半透明层次保留纸绢底色.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 光线均匀、含蓄，避免摄影式强烈明暗; behavior: 用色层和留白传达空间，而非投影堆叠.
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 光线均匀、含蓄，避免摄影式强烈明暗;
+    behavior: 用色层和留白传达空间，而非投影堆叠.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 光线均匀、含蓄，避免摄影式强烈明暗;
+    behavior: 用色层和留白传达空间，而非投影堆叠.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 纸、绢或木板的细腻吸收感;
+    edges: subject-dependent and medium-aware. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    纸、绢或木板的细腻吸收感; edges: subject-dependent and medium-aware.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 纸、绢或木板的细腻吸收感; edges: subject-dependent and medium-aware.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 低到中等纹理，细节集中在自然形体;
+    placement: 金属或蛤粉质感作为局部材料点缀. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    低到中等纹理，细节集中在自然形体; placement: 金属或蛤粉质感作为局部材料点缀.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 低到中等纹理，细节集中在自然形体; placement: 金属或蛤粉质感作为局部材料点缀.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-01
+  kind: about_nihonga
+  base_asset_id: primary-01
+execution:
+  route: text_only
+  must:
+  - 先安排留白、主体轮廓和色层顺序
+  - 用细线与平涂建立形体
+  - 叠加矿物色、白粉或透明层次
+  - 保留自然材料的吸收感与适度不均匀
+  - 材料逻辑明确的纸绢吸收感
+  - 矿物色层与大面积留白
+  - 细线、平涂与自然观察共同工作
+  - 金色和蛤粉只作为局部材料节点
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
+    protected game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
