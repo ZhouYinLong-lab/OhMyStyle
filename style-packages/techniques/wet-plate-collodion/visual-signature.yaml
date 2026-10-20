@@ -6,10 +6,10 @@ palette:
 - 玻璃板边缘、轻微涂布不均和手工处理痕迹
 - 柔化但仍可辨认的轮廓
 lighting:
-  quality: 柔化但仍可辨认的轮廓
+  quality: soft, steady photographic light with a broad tonal range and modest highlights
   behavior:
-  - Keep the requested subject and location independent from the package.
-  - Apply lighting as a transferable visual decision, not a fixed scene.
+  - Keep exposure legible across the plate; limit chemical irregularity to the surface rather than a global lighting
+    effect.
 surface:
   finish: 局部高光与暗部的非均匀反应
   edges: subject-dependent, without a copied layout
