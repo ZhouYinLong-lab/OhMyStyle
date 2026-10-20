@@ -1,0 +1,152 @@
+schema_version: 2.1.0
+status: experimental
+id: control-paranormal-architecture-direction
+name: 超现实机关建筑游戏美术
+base_package: game-art/control-paranormal-architecture
+scope:
+  medium: 写实三维建筑; 图形化构图和克制超现实; 材质细节服从空间几何
+  representation: stylized
+  description: 以粗野主义建筑、机构化红色标记、荧光灯、深长走廊和单一几何异常组织可解释的超现实空间。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - chaotic_distortion
+  - horror_gore
+  - copied_logo
+  - fantasy_castle
+pillars:
+- 以粗野主义建筑、机构化红色标记、荧光灯、深长走廊和单一几何异常组织可解释的超现实空间。
+- 'medium: 写实三维建筑; 图形化构图和克制超现实; 材质细节服从空间几何'
+- 'composition: 强透视走廊、门框和天井建立秩序; 异常只改变一个空间关系; 小人物或普通物件用于测量尺度'
+- 'palette: 混凝土灰、暗木棕、深黑、机构红和荧光白组成严格色组; 红色是局部标记而非全局滤镜; 异常可有微弱冷色但不发光泛滥'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 写实三维建筑;
+    图形化构图和克制超现实; 材质细节服从空间几何.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 写实三维建筑;
+    图形化构图和克制超现实; 材质细节服从空间几何.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    写实三维建筑; 图形化构图和克制超现实; 材质细节服从空间几何.'
+  evidence:
+    source_ids:
+    - source-control-paranormal-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 强透视走廊、门框和天井建立秩序;
+    异常只改变一个空间关系; 小人物或普通物件用于测量尺度. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 强透视走廊、门框和天井建立秩序;
+    异常只改变一个空间关系; 小人物或普通物件用于测量尺度.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 强透视走廊、门框和天井建立秩序;
+    异常只改变一个空间关系; 小人物或普通物件用于测量尺度.'
+  evidence:
+    source_ids:
+    - source-control-paranormal-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 混凝土灰、暗木棕、深黑、机构红和荧光白组成严格色组; 红色是局部标记而非全局滤镜;
+    异常可有微弱冷色但不发光泛滥. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 混凝土灰、暗木棕、深黑、机构红和荧光白组成严格色组;
+    红色是局部标记而非全局滤镜; 异常可有微弱冷色但不发光泛滥.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    混凝土灰、暗木棕、深黑、机构红和荧光白组成严格色组; 红色是局部标记而非全局滤镜; 异常可有微弱冷色但不发光泛滥.'
+  evidence:
+    source_ids:
+    - source-control-paranormal-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 荧光灯和侧向机构光形成硬朗明暗; 红色表面有有限反射; 深处保持可读而不纯黑. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 荧光灯和侧向机构光形成硬朗明暗; 红色表面有有限反射;
+    深处保持可读而不纯黑.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 荧光灯和侧向机构光形成硬朗明暗; 红色表面有有限反射;
+    深处保持可读而不纯黑.'
+  evidence:
+    source_ids:
+    - source-control-paranormal-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 浇筑混凝土、深色木材、金属文件柜和红色织物可区分;
+    表面老化有规律. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 浇筑混凝土、深色木材、金属文件柜和红色织物可区分;
+    表面老化有规律.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    浇筑混凝土、深色木材、金属文件柜和红色织物可区分; 表面老化有规律.'
+  evidence:
+    source_ids:
+    - source-control-paranormal-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纹理集中在近景边缘和材料接缝;
+    墙面不覆盖随机脏污. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纹理集中在近景边缘和材料接缝;
+    墙面不覆盖随机脏污.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纹理集中在近景边缘和材料接缝; 墙面不覆盖随机脏污.'
+  evidence:
+    source_ids:
+    - source-control-paranormal-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-control-paranormal-architecture-primary-source
+  kind: primary
+  base_asset_id: control-paranormal-architecture-primary-source
+execution:
+  route: text_only
+  must:
+  - 先建立建筑轴线和尺度
+  - 再加入单一异常连接
+  - 用红色标记固定视觉锚点
+  - 最后检查空间仍可解释
+  - 空间秩序先于异常
+  - 异常必须局部、清楚、可描述
+  - 不得复制具体机构标志和关卡结构
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - chaotic_distortion
+  - horror_gore
+  - copied_logo
+  - fantasy_castle
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
