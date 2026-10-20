@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: gauguin-outlined-figure-flat-ground
 name: Gauguin outlined figure against selective ground texture
@@ -26,6 +26,19 @@ scope:
     - Confine mottled surface variation to a selected ground or background patch; keep figure color broad and flat.
     - Do not add Polynesian, Breton, religious, mythological, or primitivist imagery unless explicitly requested.
     - Do not copy a named painting, source photograph, costume, or recognizable figure arrangement.
+contexts:
+  - id: single-figure-flat-ground
+    description: The user requests one recognizable figure against a visible setting.
+  - id: photorealistic-portrait
+    description: The user requires a photorealistic portrait.
+  - id: detailed-crowd-scene
+    description: The user requests a detailed crowd scene.
+  - id: all-over-patterned-field
+    description: The user requires a pattern across the entire field.
+  - id: figure-scene-permits-stylized-flat-color
+    description: The figure scene permits stylized flat color.
+  - id: painted-ground-or-background-surface
+    description: The user requests a visibly painted ground or background.
 pillars:
   - Enclose the user-specified figure with one continuous, contrasting contour that separates it from the ground.
   - Fill the main figure masses with broad, minimally modeled colors rather than photographic shading.
@@ -34,6 +47,8 @@ rules:
   - id: continuous-figure-contour
     axis: silhouette_and_edge
     importance: core
+    when_contexts:
+      - single-figure-flat-ground
     applies_when: The user requests one recognizable figure against a visible setting.
     instruction: Use a clear continuous contour around the main figure; let it carry silhouette and pose separation while preserving the user's face, clothing, and gesture cues as needed.
     observable: The figure silhouette reads independently from the setting and remains identifiable through a small set of color fields and pose cues.
@@ -47,6 +62,8 @@ rules:
   - id: unmodulated-figure-fields
     axis: figure_color_and_modeling
     importance: core
+    when_contexts:
+      - single-figure-flat-ground
     applies_when: The user requests a figure scene that allows stylized flat color.
     instruction: Keep the main clothing and body areas in broad, solid color fields; use only a few deliberate color divisions and reserve smooth or mottled transitions for a limited setting patch.
     observable: The figure is described mainly by silhouette and color relationships rather than continuous volumetric shading.
@@ -60,6 +77,8 @@ rules:
   - id: selective-ground-mottle
     axis: surface_and_depth
     importance: supporting
+    when_contexts:
+      - painted-ground-or-background-surface
     applies_when: The user requests a ground or background with a visible painted surface.
     instruction: Allow one bounded area of the setting to carry lightly mottled or more casually mixed paint while keeping the figure flatter; keep this texture secondary to silhouette and action.
     observable: Figure and setting have visibly different surface behavior, but the selected patch still belongs to the scene and does not become decorative noise.

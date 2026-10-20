@@ -77,4 +77,4 @@ Use references to understand observable characteristics. Do not copy a source wo
 
 ## Experimental direction: outlined figure and selective ground texture
 
-The optional direction in [`art-direction.yaml`](art-direction.yaml) is for a user-requested single figure in a visible setting: a continuous contour and broad flat color describe the figure, while one limited patch of the ground or background carries more mottled paint. Identity, clothing, and cultural context remain user-controlled; no costume or symbol is a default. See [`comparisons/`](comparisons/README.md) for paired images.
+The optional direction in [`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is for a user-requested single figure in a visible setting: a continuous contour and broad flat color describe the figure. Declare `painted-ground-or-background-surface` only when visible painted texture is requested to activate the limited mottling rule. Identity, clothing, and cultural context remain user-controlled; no costume or symbol is a default. See [`comparisons/`](comparisons/README.md) for paired images.

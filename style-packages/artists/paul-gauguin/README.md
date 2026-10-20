@@ -77,4 +77,4 @@
 
 ## 实验方向：轮廓人物与选择性背景肌理
 
-新版可选方向 [`art-direction.yaml`](art-direction.yaml) 适用于用户指定的单人物与可见环境：人物用连续轮廓和大色面表现，只在一块有限背景或地面保留更细的混色肌理。人物身份、衣着与文化背景仍由用户的提示决定，不默认加入任何特定族群服饰或符号。对照图见 [`comparisons/`](comparisons/README.md)。
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，适用于用户指定的单人物与可见环境：人物用连续轮廓和大色面表现。仅在用户要求可见绘画肌理时，声明 `painted-ground-or-background-surface`，启用有限背景混色规则。人物身份、衣着与文化背景仍由用户的提示决定，不默认加入任何特定族群服饰或符号。对照图见 [`comparisons/`](comparisons/README.md)。
