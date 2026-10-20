@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: riley-serial-rhythm-and-perceptual-motion
 name: Riley serial rhythm and perceptual motion
@@ -20,6 +20,17 @@ scope:
     - Use only when the caller requests an abstract field; do not transform a person, object, or place into stripes without asking for that treatment.
     - Build a new rhythm and geometry; do not recreate a known Riley composition or named work.
     - Keep contrast and repetition readable without flicker claims, extreme strobing, or neon glow.
+contexts:
+  - id: abstract-field
+    description: A nonfigurative field of repeated geometric units.
+  - id: representational-scene
+    description: A scene depicting recognizable people, objects, or places.
+  - id: photorealistic-output
+    description: A photographic rendering without visible geometric painting.
+  - id: text-dominant-layout
+    description: A composition led by typography rather than repeated geometric units.
+  - id: chromatic-palette-requested
+    description: The user explicitly requests colored units rather than a monochrome value study.
 pillars:
   - Choose a simple repeatable geometric unit and keep its progression legible across the whole field.
   - Create movement by changing spacing, width, curvature, or direction gradually rather than scattering unrelated marks.
@@ -43,6 +54,8 @@ rules:
   - id: contrast-through-adjacency
     axis: palette_and_perception
     importance: core
+    when_contexts:
+      - chromatic-palette-requested
     applies_when: Adjacent units create a value or color interaction.
     instruction: Begin with a controlled set of adjacent values or colors; let contrast arise where units meet, and add hue only when it strengthens the sequence rather than becoming a global glow.
     observable: The field appears to pulse, bend, or shift through adjacency while each region remains a flat, distinct painted shape.

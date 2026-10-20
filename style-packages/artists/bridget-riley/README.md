@@ -47,7 +47,7 @@
 
 ## 新架构：重复节奏与视觉运动（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅用于声明 `abstract-field` 的抽象画面：从一种条带、曲线或几何单元出发，有控制地改变间距、宽度或弯曲程度，让相邻对比产生视觉运动。它不把条纹硬套到人物和物体上，也不用霓虹、辉光或透视阴影制造假立体。与艾格尼丝·马丁的低对比手绘网格相比，莱利方向强调高对比、连续变化和感知振动。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅用于声明 `abstract-field` 的抽象画面：从一种条带、曲线或几何单元出发，有控制地改变间距、宽度或弯曲程度。只有调用者声明 `chromatic-palette-requested` 时，才启用相邻色彩对比规则；否则可保持黑白或灰阶。它不把条纹硬套到人物和物体上，也不用霓虹、辉光或透视阴影制造假立体。与艾格尼丝·马丁的低对比手绘网格相比，莱利方向强调连续变化和感知振动。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/bridget-riley --direction package --context abstract-field --subject "A field of curved black and white bands with a gradual wave" --output runs/style-v2/riley-job.json

@@ -35,7 +35,7 @@ Models, keys, and generated images remain under the user's control. References a
 
 ## New architecture: serial rhythm and perceptual motion (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is limited to an `abstract-field` context. Start with one band, curve, or geometric cell, then change spacing, width, or curvature in a controlled sequence so adjacent contrast creates perceptual movement. It does not impose stripes on people or objects, and it avoids neon, glow, and perspective shadows as shortcuts to depth. Compared with Agnes Martin's low-contrast hand-drawn grid, Riley's direction emphasizes high contrast, continuous change, and perceptual vibration.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is limited to an `abstract-field` context. Start with one band, curve, or geometric cell, then change spacing, width, or curvature in a controlled sequence. The color-adjacency rule activates only when the caller declares `chromatic-palette-requested`; otherwise a monochrome or grayscale study remains valid. It does not impose stripes on people or objects, and it avoids neon, glow, and perspective shadows as shortcuts to depth. Compared with Agnes Martin's low-contrast hand-drawn grid, Riley's direction emphasizes continuous change and perceptual vibration.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/bridget-riley --direction package --context abstract-field --subject "A field of curved black and white bands with a gradual wave" --output runs/style-v2/riley-job.json
