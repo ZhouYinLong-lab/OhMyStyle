@@ -1,7 +1,11 @@
 design_version: 2.0.0-draft
-status: protocol_only_not_run
+status: partial_execution
 purpose: 先检验新美术规则是否优于名称提示及现有规则，再决定是否接入运行时。
 baseline_repository_revision: 59d9aa10
+execution_notes:
+  - ascii_pilot: 三个预设题材的固定字符网格已完成逐格渲染与同源重放；验证的是字面字符构建和基本可读性，不是新旧风格优劣。
+  - text_pilots: 索罗亚与包豪斯的完整三臂、多题材重复试验仍未完成。
+  - package_comparison_inventory: 仓库另有逐包单次新旧图像对照；这些记录不等于本方案的完整受控试验。
 protocol_limits:
   - 初筛规模用于发现失败和估计改进方向，不提供统计显著性或全库有效性结论。
   - 已有包、样稿和模型的效果均不得在未运行前标注为 accepted。

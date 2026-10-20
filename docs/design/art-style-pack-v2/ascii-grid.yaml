@@ -120,7 +120,7 @@ relations:
   shared_traits: [离散网格, 有限细节, 轮廓简化]
   distinguishing_rule_ids: [ascii-literal-construction, ascii-grid-alignment]
   comparison_hypothesis: ASCII 的基本构件是指定字体的真实字形，而不是像素块或看似文字的涂抹。
-  comparison_status: hard_media_boundary_defined_aesthetic_comparison_pending
+  comparison_status: hard_media_pilot_passed_aesthetic_comparison_pending
 
 evaluation:
   hard_gate_ids:
@@ -134,5 +134,21 @@ evaluation:
   task_checks: [requested_objects_present, requested_count_correct, requested_layout_preserved]
   gate_policy: 任一硬约束不通过，该输出不计入严格 ASCII 合格样例；美观评价可单独保留。
   tasks: [terminal-workshop, terminal-garden, terminal-room]
-  result_status: not_run
+  result_status: three_task_hard_gate_pilot_passed_limited_review
+  run_evidence:
+    status: completed_for_all_three_pre_registered_tasks
+    source_method: one_hand_authored_literal_grid_per_task
+    renderer: tools/render-ascii-grid.py
+    font: C:/Windows/Fonts/consola.ttf
+    replay_count_per_source: 2
+    replay_rgb_hashes_identical: true
+    visual_review:
+      reviewer_count: 1
+      status: basic_task_readability_passed
+      limitations:
+        - No external text-generation provider sampled the source grids.
+        - One source grid per task does not test cross-subject or within-subject stability.
+        - No legacy baseline arm was run; no relative style-quality claim is made.
+        - Rule-level visual_review remains pending.
+    artifacts: style-packages/game-art/ascii-character-game-art/evidence/literal-grid-pilot
   accepted_examples: []
