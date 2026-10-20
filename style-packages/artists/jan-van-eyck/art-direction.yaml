@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: van-eyck-glazed-material-observation
 name: Van Eyck glazed material observation
@@ -23,6 +23,17 @@ scope:
     - Preserve the user's exact objects, count, setting, lighting, and framing.
     - Do not add mirrors, inscriptions, people, religious signs, or symbolic props unless requested.
     - Do not reproduce a named portrait, room, reflected figure, or exact object arrangement.
+contexts:
+  - id: glazed-material-observation
+    description: The user requests an oil-painted still life or close view that distinguishes multiple materials.
+  - id: flat-color-graphic
+    description: The user requires a flat-color graphic treatment.
+  - id: monochrome-etching
+    description: The user requires monochrome etching.
+  - id: uniform-gloss-render
+    description: The user requires uniform glossy rendering across all surfaces.
+  - id: user-requests-close-view-or-fine-surface-detail
+    description: The user requests close framing or objects whose form depends on fine surface detail.
 pillars:
   - Match each requested surface to its light response, using sharp controlled accents for polished glass or metal, broader transitions for cloth or wood, and restrained transparency for glass.
   - Build selected color depth through thin translucent layers while leaving the material's underlying color and structure legible.
@@ -32,6 +43,8 @@ rules:
   - id: material-specific-light-response
     axis: lighting_and_surface
     importance: core
+    when_contexts:
+      - glazed-material-observation
     applies_when: The requested scene contains at least two visibly different materials.
     instruction: Give each requested material its own highlight shape, edge softness, and reflection behavior under the same light source; keep polished highlights small and controlled, and let softer materials transition gradually.
     observable: Glass, metal, cloth, and wood can be distinguished by their highlight and edge behavior without changing the user's object inventory.
@@ -59,6 +72,8 @@ rules:
   - id: selective-fine-mark-hierarchy
     axis: detail_and_edge
     importance: supporting
+    when_contexts:
+      - user-requests-close-view-or-fine-surface-detail
     applies_when: The user requests a close view or objects whose form depends on fine surface detail.
     instruction: Place small precise marks only where they describe a material cue, fold, edge, or light catch; reduce their density on secondary objects and background.
     observable: Fine marks clarify a few focal details while larger planes remain calm and readable.

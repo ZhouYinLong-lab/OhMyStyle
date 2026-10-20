@@ -33,7 +33,7 @@ Its strongest pull comes from “frontal space, reflective surfaces, transparent
 
 ## New architecture: glazing and material-specific light (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) activates only for a user-requested oil-painted still life or close material study when `glazed-material-observation` is explicitly declared. It makes highlight shape, edge softness, selective translucent layers, and detail density inspectable for different materials under one light source. It does not add an interior, mirror, person, inscription, or symbolic object by default.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and activates only for a user-requested oil-painted still life or close material study when `glazed-material-observation` is explicitly declared. Material-specific light response and translucent color layering are base rules; callers can add `user-requests-close-view-or-fine-surface-detail` to activate fine-mark guidance only when close framing or surface detail matters. It does not add an interior, mirror, person, inscription, or symbolic object by default.
 
 The defining focus is how each material receives the same light and how thin color layers add depth. This differs from Zurbarán's dark ground, strong side light, and isolated still life, and does not require Vermeer's geometric interior or window-lit composition. The Van Eyck direction focuses on subtle but distinct surface responses and selective detail across multiple objects.
 
