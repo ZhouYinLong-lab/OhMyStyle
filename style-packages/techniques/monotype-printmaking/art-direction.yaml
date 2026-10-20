@@ -1,0 +1,166 @@
+schema_version: 2.1.0
+status: experimental
+id: monotype-printmaking-direction
+name: 单版画
+base_package: techniques/monotype-printmaking
+scope:
+  medium: one-off monotype print with painterly ink transfer
+  representation: stylized
+  description: 通过一次性版面转印、擦拭边缘、墨层不均和轻微套位变化保留绘画般的偶然性，强调不可完全复制的表面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - 不强制生成版画工作室、滚筒、墨盘、植物或抽象静物。
+  - 不把一次性转印写成丝网印刷的规则网点、石版画的均匀平版质感或普通水彩晕染。
+pillars:
+- 通过一次性版面转印、擦拭边缘、墨层不均和轻微套位变化保留绘画般的偶然性，强调不可完全复制的表面。
+- 'differentiation: one-off transfer produces broken edges, pressure variation and unrepeatable ghosts; paper
+  ground remains active between translucent and opaque ink passages; painterly marks are organized by the plate
+  process rather than digital texture'
+- 'composition: 画面保留版面边界、转印留下的空缺和不完全覆盖，让空间从墨层的断裂中出现。; 构图可以开放或半具象，但不追求重复图案的机械均匀。'
+- 'palette: 以一到三层半透明墨色叠印，颜色因压印、擦拭和纸张吸收产生不均匀的重叠。'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: one-off transfer
+    produces broken edges, pressure variation and unrepeatable ghosts; paper ground remains active between
+    translucent and opaque ink passages; painterly marks are organized by the plate process rather than digital
+    texture. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: one-off transfer produces broken
+    edges, pressure variation and unrepeatable ghosts; paper ground remains active between translucent and
+    opaque ink passages; painterly marks are organized by the plate process rather than digital texture.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: one-off
+    transfer produces broken edges, pressure variation and unrepeatable ghosts; paper ground remains active
+    between translucent and opaque ink passages; painterly marks are organized by the plate process rather
+    than digital texture.'
+  evidence:
+    source_ids:
+    - source-monotype-printmaking-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 画面保留版面边界、转印留下的空缺和不完全覆盖，让空间从墨层的断裂中出现。;
+    构图可以开放或半具象，但不追求重复图案的机械均匀。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 画面保留版面边界、转印留下的空缺和不完全覆盖，让空间从墨层的断裂中出现。;
+    构图可以开放或半具象，但不追求重复图案的机械均匀。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 画面保留版面边界、转印留下的空缺和不完全覆盖，让空间从墨层的断裂中出现。;
+    构图可以开放或半具象，但不追求重复图案的机械均匀。.'
+  evidence:
+    source_ids:
+    - source-monotype-printmaking-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 以一到三层半透明墨色叠印，颜色因压印、擦拭和纸张吸收产生不均匀的重叠。.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 以一到三层半透明墨色叠印，颜色因压印、擦拭和纸张吸收产生不均匀的重叠。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    以一到三层半透明墨色叠印，颜色因压印、擦拭和纸张吸收产生不均匀的重叠。.'
+  evidence:
+    source_ids:
+    - source-monotype-printmaking-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: print-room light with visible paper and
+    ink relief; behavior: 光线柔和但不抹平纸纤维、边缘残墨和压印变化。. Keep light coherent with the requested subject, medium, and
+    scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: print-room light with
+    visible paper and ink relief; behavior: 光线柔和但不抹平纸纤维、边缘残墨和压印变化。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: print-room light
+    with visible paper and ink relief; behavior: 光线柔和但不抹平纸纤维、边缘残墨和压印变化。.'
+  evidence:
+    source_ids:
+    - source-monotype-printmaking-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: one-off
+    ink transfer on fibrous paper; edges: wiped, feathered, broken and occasionally hard at plate boundaries.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    one-off ink transfer on fibrous paper; edges: wiped, feathered, broken and occasionally hard at plate boundaries.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: one-off ink transfer on fibrous paper; edges: wiped, feathered, broken and occasionally hard at
+    plate boundaries.'
+  evidence:
+    source_ids:
+    - source-monotype-printmaking-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: uneven,
+    with ghosted zones and concentrated ink passages; placement: on plate edges, wiped highlights, overlaps
+    and paper grain. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    uneven, with ghosted zones and concentrated ink passages; placement: on plate edges, wiped highlights,
+    overlaps and paper grain.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: uneven, with ghosted zones and concentrated ink passages; placement: on plate edges, wiped highlights,
+    overlaps and paper grain.'
+  evidence:
+    source_ids:
+    - source-monotype-printmaking-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-monotype-printmaking-primary-source
+  kind: primary
+  base_asset_id: monotype-printmaking-primary-source
+execution:
+  route: text_only
+  must:
+  - Establish the user's subject with a simple plate-side drawing or ink mass.
+  - Roll or brush a thin, uneven layer of ink onto one plate.
+  - Wipe highlights, drag edges and leave selected areas partially uncovered.
+  - Transfer once, preserving pressure variation, ghost marks and plate-edge drift.
+  - Add only sparse secondary marks; do not make a repeatable screen pattern.
+  - 一次性转印的不均匀、幽灵印痕和可见纸面必须跨主体保留。
+  - 色彩层次应来自墨层与纸张的关系，不得退化成数字渐变或规则网点。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - 不强制生成版画工作室、滚筒、墨盘、植物或抽象静物。
+  - 不把一次性转印写成丝网印刷的规则网点、石版画的均匀平版质感或普通水彩晕染。
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
