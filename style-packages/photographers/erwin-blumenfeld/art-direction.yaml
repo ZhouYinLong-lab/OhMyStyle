@@ -1,0 +1,114 @@
+schema_version: 2.1.0
+status: experimental
+id: erwin-blumenfeld-direction
+name: 埃尔温·布卢门菲尔德
+base_package: photographers/erwin-blumenfeld
+scope:
+  medium: photography
+  representation: recognizable
+  description: 以几何裁切、透明叠层、负片感、明暗反差和摄影实验重组现实，同时保持光学关系和摄影质感可辨。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以几何裁切、透明叠层、负片感、明暗反差和摄影实验重组现实，同时保持光学关系和摄影质感可辨。
+- 'form: graphic cropping; transparent overlays; solarization or negative-like tonal reversal; hard and soft
+  light contrast'
+- 'process: composition; palette; lighting; surface'
+- 'palette: palette: name: paper white; palette: hex: #F1EEE5; palette: name: ink black; palette: hex: #17191D;
+  palette: name: signal red; palette: hex: #C83B32; palette: name: cobalt blue; palette: hex: #245B9B'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: graphic cropping;
+    transparent overlays; solarization or negative-like tonal reversal; hard and soft light contrast. Do not
+    let generic polish or another package direction replace it. If a cue names a concrete object or motif,
+    do not add it unless the user requests it; translate its formal qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: graphic
+    cropping; transparent overlays; solarization or negative-like tonal reversal; hard and soft light contrast.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: graphic cropping; transparent overlays; solarization or negative-like tonal
+    reversal; hard and soft light contrast.'
+  evidence:
+    source_ids:
+    - source-primary-reference
+    basis: curatorial_inference
+    visual_review: pending
+- id: controls
+  axis: process
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: composition; palette; lighting; surface. Keep it subordinate
+    to the requested subject and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: composition; palette;
+    lighting; surface.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: composition;
+    palette; lighting; surface.'
+  evidence:
+    source_ids:
+    - source-primary-reference
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: palette: name: paper white; palette:
+    hex: #F1EEE5; palette: name: ink black; palette: hex: #17191D; palette: name: signal red; palette: hex:
+    #C83B32; palette: name: cobalt blue; palette: hex: #245B9B. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: palette: name: paper white;
+    palette: hex: #F1EEE5; palette: name: ink black; palette: hex: #17191D; palette: name: signal red; palette:
+    hex: #C83B32; palette: name: cobalt blue; palette: hex: #245B9B.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    palette: name: paper white; palette: hex: #F1EEE5; palette: name: ink black; palette: hex: #17191D; palette:
+    name: signal red; palette: hex: #C83B32; palette: name: cobalt blue; palette: hex: #245B9B.'
+  evidence:
+    source_ids:
+    - source-primary-reference
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以几何裁切、透明叠层、负片感、明暗反差和摄影实验重组现实，同时保持光学关系和摄影质感可辨。.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以几何裁切、透明叠层、负片感、明暗反差和摄影实验重组现实，同时保持光学关系和摄影质感可辨。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以几何裁切、透明叠层、负片感、明暗反差和摄影实验重组现实，同时保持光学关系和摄影质感可辨。.'
+  evidence:
+    source_ids:
+    - source-primary-reference
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- controls
+- palette
+- composition
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - controls
+  - palette
+  instruction: Keep the package-specific relationship among form, process, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-reference
+  kind: primary
+  base_asset_id: primary-reference
+execution:
+  route: text_only
+  must:
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied composition
+  - named character or branded asset
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
