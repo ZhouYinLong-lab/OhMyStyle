@@ -1,0 +1,20 @@
+USER SUBJECT: 横版 16:9，无文字。夜晚空旷的户外站台上只有一只橘猫，猫停在一盏暖黄色站台灯下；背景为深蓝夜空和三层远处山形剪影，不出现人物、列车、建筑标识或其他动物。猫的轮廓清晰，地面与远景分层可读。
+SUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.
+VISUAL MEDIUM: low-resolution pixel sprites and tile-based 2D environments
+REPRESENTATION: stylized
+APPLY THESE AUTHORED VISUAL RULES:
+- [medium] Build characters, props, and terrain from intentional pixel clusters with stepped contours. Keep distant clusters simpler and retain crisp pixel edges at the requested output scale.
+- [composition] Stage the requested subject against a broad atmospheric field. Separate foreground, middle distance, and far distance in clear bands, and keep the focal sprite or object readable against the environment.
+- [palette] Use cool colors to separate distance and shadow from warmer focal light or foreground accents. Adapt the balance to the requested time and subject; do not apply the palette as a global tint.
+- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.
+REQUIREMENT: Preserve the requested subject, object count, and location while building an original pixel-art scene.
+REQUIREMENT: Establish large sky and environment color masses before adding sprite and prop clusters.
+REQUIREMENT: Use stepped contours and grid-aware pixel groups; keep the focal silhouette readable at the requested display size.
+REQUIREMENT: Separate foreground, middle distance, and far distance with value and warm-cool color roles.
+REQUIREMENT: Do not force a railway, sunset, house, traveler, or narrative event unless requested.
+
+Negative prompt:
+blurred pixel edges or smooth vector-like outlines
+random pixel noise that damages silhouettes
+generic global color filters
+copied game screenshots, characters, interfaces, or compositions

@@ -24,6 +24,10 @@ Combines small readable sprites, broad skies, layered distance, and warm-cool en
 
 Sources are used for research and visual analysis. External works and hosted pages remain with their respective rights holders. The generated example is a new anonymous scene and does not imply affiliation or endorsement.
 
+## Visual comparison
+
+The [night platform cat comparison](comparisons/night-platform-cat/README.md) records legacy and structured-direction outputs, compiled jobs, and submitted prompts for the same request. The new output separates depth layers more clearly, but also adds an unrequested crescent moon and stars; see the review notes.
+
 ## Use only this package
 
 Choose any one of the four methods below. They are alternatives, not steps that must all be completed.

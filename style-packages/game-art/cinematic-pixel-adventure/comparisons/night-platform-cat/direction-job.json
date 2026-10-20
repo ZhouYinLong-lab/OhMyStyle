@@ -1,0 +1,191 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "cinematic-pixel-adventure",
+    "name": "电影化像素冒险美术",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\cinematic-pixel-adventure"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，无文字。夜晚空旷的户外站台上只有一只橘猫，猫停在一盏暖黄色站台灯下；背景为深蓝夜空和三层远处山形剪影，不出现人物、列车、建筑标识或其他动物。猫的轮廓清晰，地面与远景分层可读。",
+  "prompt": "USER SUBJECT: 横版 16:9，无文字。夜晚空旷的户外站台上只有一只橘猫，猫停在一盏暖黄色站台灯下；背景为深蓝夜空和三层远处山形剪影，不出现人物、列车、建筑标识或其他动物。猫的轮廓清晰，地面与远景分层可读。\nSUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.\nVISUAL MEDIUM: low-resolution pixel sprites and tile-based 2D environments\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [medium] Build characters, props, and terrain from intentional pixel clusters with stepped contours. Keep distant clusters simpler and retain crisp pixel edges at the requested output scale.\n- [composition] Stage the requested subject against a broad atmospheric field. Separate foreground, middle distance, and far distance in clear bands, and keep the focal sprite or object readable against the environment.\n- [palette] Use cool colors to separate distance and shadow from warmer focal light or foreground accents. Adapt the balance to the requested time and subject; do not apply the palette as a global tint.\n- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.\nREQUIREMENT: Preserve the requested subject, object count, and location while building an original pixel-art scene.\nREQUIREMENT: Establish large sky and environment color masses before adding sprite and prop clusters.\nREQUIREMENT: Use stepped contours and grid-aware pixel groups; keep the focal silhouette readable at the requested display size.\nREQUIREMENT: Separate foreground, middle distance, and far distance with value and warm-cool color roles.\nREQUIREMENT: Do not force a railway, sunset, house, traveler, or narrative event unless requested.",
+  "negative_prompt": "blurred pixel edges or smooth vector-like outlines\nrandom pixel noise that damages silhouettes\ngeneric global color filters\ncopied game screenshots, characters, interfaces, or compositions",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "cinematic-pixel-adventure-direction",
+    "name": "电影化像素冒险美术",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\cinematic-pixel-adventure\\art-direction.yaml",
+    "sha256": "94418bdb435eb09c13b2aea6a4bbe2a6a60405faa8f3b8665006b447bcf7b6cf",
+    "active_rule_ids": [
+      "medium",
+      "composition",
+      "palette"
+    ],
+    "applicable_rule_ids": [
+      "medium",
+      "composition",
+      "palette"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Preserve the requested subject, object count, and location while building an original pixel-art scene.",
+      "Establish large sky and environment color masses before adding sprite and prop clusters.",
+      "Use stepped contours and grid-aware pixel groups; keep the focal silhouette readable at the requested display size.",
+      "Separate foreground, middle distance, and far distance with value and warm-cool color roles.",
+      "Do not force a railway, sunset, house, traveler, or narrative event unless requested."
+    ],
+    "avoid": [
+      "blurred pixel edges or smooth vector-like outlines",
+      "random pixel noise that damages silhouettes",
+      "generic global color filters",
+      "copied game screenshots, characters, interfaces, or compositions"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "low-resolution pixel sprites and tile-based 2D environments",
+      "representation": "stylized",
+      "description": "Combines small readable sprites, broad skies, layered distance, and warm-cool environmental light for cinematic space; narrative use is optional and the direction also works for environments, still lifes, and backgrounds.",
+      "required_contexts": [],
+      "incompatible_contexts": [],
+      "limitations": [
+        "copying_a_specific_work",
+        "copying_a_named_character_or_logo"
+      ]
+    },
+    "pillars": [
+      "Character and interaction silhouettes resolve into deliberate pixel clusters at the intended display size.",
+      "A broad sky and layered near, middle, and far planes create cinematic distance without hiding the playable focal point.",
+      "Warm light and cool shadow separate planes and guide attention; color remains role-based rather than a full-frame tint.",
+      "Pixel edges stay stepped and grid-aware; no blur or smooth repainting replaces the pixel structure."
+    ],
+    "rules": [
+      {
+        "id": "medium",
+        "axis": "medium",
+        "importance": "core",
+        "applies_when": "For requested scenes rendered in this pixel-art direction.",
+        "instruction": "Build characters, props, and terrain from intentional pixel clusters with stepped contours. Keep distant clusters simpler and retain crisp pixel edges at the requested output scale.",
+        "observable": "Contours, value groups, and small material cues resolve into readable pixel clusters rather than blurred or smoothly painted forms.",
+        "reject_when": "The image is smooth raster painting with a pixel filter, or pixel noise breaks the main silhouettes.",
+        "evidence": {
+          "source_ids": [
+            "source-source-1",
+            "source-source-2"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "composition",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "When the requested scene includes a playable subject, environment, or both.",
+        "instruction": "Stage the requested subject against a broad atmospheric field. Separate foreground, middle distance, and far distance in clear bands, and keep the focal sprite or object readable against the environment.",
+        "observable": "The scene has a clear focal silhouette, visible depth layers, and enough open space to read the requested subject at thumbnail size.",
+        "reject_when": "Dense scenery competes with the focal subject, or the scene becomes a fixed railway, sunset, house, or traveler composition.",
+        "evidence": {
+          "source_ids": [
+            "source-source-1",
+            "source-source-2"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "palette",
+        "axis": "palette",
+        "importance": "supporting",
+        "applies_when": "When the requested subject and scene use environmental color.",
+        "instruction": "Use cool colors to separate distance and shadow from warmer focal light or foreground accents. Adapt the balance to the requested time and subject; do not apply the palette as a global tint.",
+        "observable": "Warm and cool color groups distinguish depth or focal emphasis while the subject remains legible.",
+        "reject_when": "A uniform sunset or blue-hour wash replaces distinct color roles, or the palette reduces contrast around the focal silhouette.",
+        "evidence": {
+          "source_ids": [
+            "source-source-1",
+            "source-source-2"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "visual-relationship-coherence",
+        "rule_ids": [
+          "medium",
+          "composition",
+          "palette"
+        ],
+        "instruction": "Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.",
+        "observable": "The linked visual decisions reinforce one another and remain subordinate to the user-provided subject."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-source-1",
+        "kind": "style_reference",
+        "base_asset_id": "source-1",
+        "package_reference": {
+          "asset_id": "source-1",
+          "local_path": "",
+          "title": "《To the Moon》官方商店页面",
+          "creator": "Public source page",
+          "year": "2026",
+          "source_url": "https://store.steampowered.com/app/206440/To_the_Moon/",
+          "license": "reference-only-not-redistributed",
+          "attribution": "《To the Moon》官方商店页面",
+          "role": "style_reference",
+          "notes": "用于观察低分辨率冒险游戏中的像素环境、天空与暖冷光线关系。"
+        }
+      },
+      {
+        "id": "source-source-2",
+        "kind": "style_reference",
+        "base_asset_id": "source-2",
+        "package_reference": {
+          "asset_id": "source-2",
+          "local_path": "",
+          "title": "《Impostor Factory》官方商店页面",
+          "creator": "Public source page",
+          "year": "2026",
+          "source_url": "https://store.steampowered.com/app/1182620/Impostor_Factory/",
+          "license": "reference-only-not-redistributed",
+          "attribution": "《Impostor Factory》官方商店页面",
+          "role": "style_reference",
+          "notes": "用于观察独立像素冒险游戏中的环境层次与精灵尺度。"
+        }
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "086255434b76a6ed9b0ca03dd41933f855001033d1767e450378cc3a1c3c5216",
+    "negative_prompt_sha256": "320901512986ee1e3b900b2d2726e250c182cebbc483310f6e2f04c9e7015a37",
+    "direction_sha256": "94418bdb435eb09c13b2aea6a4bbe2a6a60405faa8f3b8665006b447bcf7b6cf",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
