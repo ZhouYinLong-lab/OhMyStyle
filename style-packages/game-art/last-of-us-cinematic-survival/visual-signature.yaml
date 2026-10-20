@@ -6,10 +6,10 @@ palette:
 - 植物与人工结构形成时间层次
 - 蓝灰空气、湿润材质与局部暖色锚点
 lighting:
-  quality: 蓝灰空气、湿润材质与局部暖色锚点
+  quality: filtered natural light broken by foliage and openings, with local warm sources against cool ambient
+    shade
   behavior:
-  - Keep the requested subject and location independent from the package.
-  - Apply lighting as a transferable visual decision, not a fixed scene.
+  - Keep wet-surface reflections selective and let vegetation fragment the light.
 surface:
   finish: 写实材质和克制的电影化景别
   edges: subject-dependent, without a copied layout

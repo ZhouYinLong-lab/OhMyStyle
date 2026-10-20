@@ -16,15 +16,15 @@ pillars:
 - 以自然光、植物重新占据人工环境、克制的蓝灰空气和真实材质建立美丽与衰败并置的生存游戏空间。
 - 'composition: 自然光驱动的可探索空间; 植物与人工结构形成时间层次'
 - 'palette: 植物与人工结构形成时间层次; 蓝灰空气、湿润材质与局部暖色锚点'
-- 'lighting: quality: 蓝灰空气、湿润材质与局部暖色锚点; behavior: Keep the requested subject and location independent from
-  the package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene.'
+- 'lighting: filtered natural light broken by foliage and openings, with local warm sources against cool ambient
+  shade; Keep wet-surface reflections selective and let vegetation fragment the light.'
 rules:
 - id: composition
   axis: composition
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Organize the requested subject using these package-specific spatial decisions: 自然光驱动的可探索空间;
-    植物与人工结构形成时间层次. Preserve the user-provided content and layout.'
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 自然光驱动的可探索空间; 植物与人工结构形成时间层次.
+    Preserve the user-provided content and layout.'
   observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 自然光驱动的可探索空间; 植物与人工结构形成时间层次.'
   reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 自然光驱动的可探索空间;
     植物与人工结构形成时间层次.'
@@ -37,8 +37,8 @@ rules:
   axis: palette
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: 植物与人工结构形成时间层次; 蓝灰空气、湿润材质与局部暖色锚点.
-    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  instruction: 'Use these package-specific color roles and relationships: 植物与人工结构形成时间层次; 蓝灰空气、湿润材质与局部暖色锚点. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
   observable: 'The stated colors and their roles are visible and distinguishable: 植物与人工结构形成时间层次; 蓝灰空气、湿润材质与局部暖色锚点.'
   reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
     植物与人工结构形成时间层次; 蓝灰空气、湿润材质与局部暖色锚点.'
@@ -51,15 +51,14 @@ rules:
   axis: lighting
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Apply the package-specific light behavior: quality: 蓝灰空气、湿润材质与局部暖色锚点; behavior: Keep the requested
-    subject and location independent from the package.; behavior: Apply lighting as a transferable visual decision,
-    not a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
-  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 蓝灰空气、湿润材质与局部暖色锚点;
-    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
-    as a transferable visual decision, not a fixed scene..'
-  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 蓝灰空气、湿润材质与局部暖色锚点;
-    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
-    as a transferable visual decision, not a fixed scene..'
+  instruction: Use filtered natural light broken by foliage and openings, with local warm sources against cool
+    ambient shade. Keep wet-surface reflections selective and let vegetation fragment the light. Keep the light
+    coherent with the requested subject and scene.
+  observable: 'The light quality and its effect on shadows, materials, or tonal separation are visible: filtered
+    natural light broken by foliage and openings, with local warm sources against cool ambient shade. Keep wet-surface
+    reflections selective and let vegetation fragment the light.'
+  reject_when: 'Reject global tint, bloom, or lighting that erases the stated tonal or material distinctions:
+    filtered natural light broken by foliage and openings, with local warm sources against cool ambient shade.'
   evidence:
     source_ids:
     - source-primary-01
@@ -71,10 +70,10 @@ rules:
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
   instruction: 'Render the requested materials using these package-specific surface decisions: finish: 写实材质和克制的电影化景别;
     edges: subject-dependent, without a copied layout. Preserve detail hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish: 写实材质和克制的电影化景别;
+    edges: subject-dependent, without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: finish:
     写实材质和克制的电影化景别; edges: subject-dependent, without a copied layout.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    finish: 写实材质和克制的电影化景别; edges: subject-dependent, without a copied layout.'
   evidence:
     source_ids:
     - source-primary-01
@@ -87,10 +86,10 @@ rules:
   instruction: 'Render the requested materials using these package-specific surface decisions: density: controlled
     and medium-dependent; placement: only where the package visual language needs explanation. Preserve detail
     hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density: controlled
+    and medium-dependent; placement: only where the package visual language needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: density:
     controlled and medium-dependent; placement: only where the package visual language needs explanation.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    density: controlled and medium-dependent; placement: only where the package visual language needs explanation.'
   evidence:
     source_ids:
     - source-primary-01
@@ -108,10 +107,9 @@ joint_checks:
   - composition
   - palette
   - lighting
-  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
-    preserving the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-primary-01
   kind: primary_research_source
@@ -133,6 +131,6 @@ execution:
   - copying a specific reference composition
   - copied composition
   - named character or branded asset
-  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
-    protected game asset.
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+    game asset.
   - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
