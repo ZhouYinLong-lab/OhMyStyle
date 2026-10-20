@@ -33,7 +33,7 @@ work.
 
 ## Optional direction: three-state material metamorphosis
 
-The art-direction.yaml file registers an experimental direction that activates only when the user explicitly asks for an object transformation or sequence of states. It organizes one object as intact, transitional, and changed forms, retaining visible traces of the requested source object and concentrating detail at the transformation. It does not add animals, faces, occult symbols, or a story by default. Declare three-state-material-metamorphosis when compiling; the legacy default path stays unchanged.
+The `art-direction.yaml` file uses direction format 2.1.0 and registers an experimental direction that activates only when the user explicitly asks for an object transformation or sequence of states. It organizes one object as intact, transitional, and changed forms. Add `transformation-has-intermediate-or-hybrid-state` or `transformation-uses-shared-stable-setting` only when those conditions apply to activate the matching rules. The source object remains traceable through the change; animals, faces, occult symbols, or a story are not added by default. Declare `three-state-material-metamorphosis` when compiling; the legacy default path stays unchanged.
 
 ### Generated comparison using the same vessels
 

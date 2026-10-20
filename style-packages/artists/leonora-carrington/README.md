@@ -30,7 +30,7 @@
 
 ## 可选新方向：三阶段物质蜕变
 
-art-direction.yaml 登记一个实验方向，只有在用户明确要求物体呈现转变或连续状态时才启用。它将同一对象组织为“原态—过渡态—变化态”，让形体仍可追溯到用户指定的原物，并把精细描绘集中在变化处。它不会自动添加动物、面孔、神秘符号或故事。编译时声明 three-state-material-metamorphosis，旧版默认路径不变。
+art-direction.yaml 使用方向格式 2.1.0，登记一个实验方向，只有在用户明确要求物体呈现转变或连续状态时才启用。它将同一对象组织为“原态—过渡态—变化态”。只有包含中间混合形态或稳定环境时，才声明 `transformation-has-intermediate-or-hybrid-state` 或 `transformation-uses-shared-stable-setting`，启用对应规则。形体仍可追溯到用户指定的原物；不会自动添加动物、面孔、神秘符号或故事。编译时声明 `three-state-material-metamorphosis`，旧版默认路径不变。
 
 ### 同一组器物的生成对照
 
