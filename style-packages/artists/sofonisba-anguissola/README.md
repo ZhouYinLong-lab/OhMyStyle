@@ -38,4 +38,4 @@
 
 ## 实验方向：以共同动作组织群像
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户指定多人肖像及共同活动时启用：让面部表情、手部动作和用户指定的活动物件共同构成清晰焦点，并区分每位人物的注意方向。不会默认添加棋盘、家族关系、历史服装或观者视线。查看 [`comparisons/`](comparisons/README.md) 中的生成对照。该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户指定多人肖像及共同活动时启用：让面部表情、手部动作和用户指定的活动物件共同构成清晰焦点，并区分每位人物的注意方向。仅当用户场景包含环境或详细服饰时，才声明 `interactive-portrait-with-setting-or-detailed-clothing` 启用背景与服装层级规则。不会默认添加棋盘、家族关系、历史服装或观者视线。查看 [`comparisons/`](comparisons/README.md) 中的生成对照。该方向仍处于实验状态。

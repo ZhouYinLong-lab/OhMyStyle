@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: anguissola-shared-action-portrait-focus
 name: Anguissola shared-action portrait focus
@@ -25,6 +25,19 @@ scope:
     - Do not add an object, relationship, gesture, location, or historical detail not present in the user request.
     - Preserve the requested sitter count, age range, clothing, framing, and setting.
     - Do not copy the National Museum in Poznan's chess scene, its arrangement, or named sitters.
+contexts:
+  - id: user-requested-interactive-group-portrait
+    description: The user requests a multi-person portrait in which the sitters share a specified activity.
+  - id: single-person-portrait
+    description: The user requests a single-person portrait.
+  - id: user-requested-distant-full-figure-group
+    description: The user requests a distant full-figure group portrait.
+  - id: no-interaction-requested
+    description: The user requests a group portrait without interaction among sitters.
+  - id: exact-reconstruction-of-named-portrait
+    description: The user requests an exact reconstruction of a named portrait.
+  - id: interactive-portrait-with-setting-or-detailed-clothing
+    description: The interactive portrait includes a setting or detailed clothing.
 pillars:
   - Keep the requested shared action legible through a compact relationship between faces, hands, and its stated object.
   - Give each sitter an individual expression and a distinct role in the interaction.
@@ -33,6 +46,8 @@ rules:
   - id: faces-and-gesture-share-one-focus
     axis: interaction-legibility
     importance: core
+    when_contexts:
+      - user-requested-interactive-group-portrait
     applies_when: The user requests a multi-person portrait with a shared activity.
     instruction: Arrange the requested faces and hand action so they can be read together; keep the stated activity object visible between or near the participating sitters.
     observable: At thumbnail size, the viewer can identify who is acting, who is responding, and what requested object or gesture links them.
@@ -46,6 +61,8 @@ rules:
   - id: differentiated-attention-without-fixed-staging
     axis: interpersonal-attention
     importance: core
+    when_contexts:
+      - user-requested-interactive-group-portrait
     applies_when: The user requests a group portrait with interaction.
     instruction: Give the sitters different readable attention targets that fit the requested action; use direct viewer gaze only when the user requests or allows it.
     observable: Expressions and gaze make the sitters feel individually present rather than uniformly posed.
@@ -59,6 +76,8 @@ rules:
   - id: subordinate-setting-and-costume-detail
     axis: portrait-hierarchy
     importance: supporting
+    when_contexts:
+      - interactive-portrait-with-setting-or-detailed-clothing
     applies_when: The requested interactive portrait has a setting or detailed clothing.
     instruction: Keep setting and costume secondary to individualized faces, hands, and the shared action; retain all clothing and location details specified by the user.
     observable: The interaction reads before background ornament or fabric pattern.
