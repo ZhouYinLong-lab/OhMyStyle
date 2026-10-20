@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: voxel-world-game-art-direction
+name: 体素世界游戏美术
+base_package: game-art/voxel-world-game-art
+scope:
+  medium: 立方体或规则体素网格; 平面或阶梯化面法线; 材质通过方块颜色和面向区分
+  representation: stylized
+  description: 以可拆分、可堆叠的立方体体素作为场景基本单位，强调模块化地形、块面光照和从局部方块到整体景观的尺度一致性。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - smooth_subdivision_surface
+  - photorealistic_terrain
+  - copied_game_texture
+  - excessive_microdetail
+pillars:
+- 以可拆分、可堆叠的立方体体素作为场景基本单位，强调模块化地形、块面光照和从局部方块到整体景观的尺度一致性。
+- 'medium: 立方体或规则体素网格; 平面或阶梯化面法线; 材质通过方块颜色和面向区分'
+- 'composition: 用体素台阶和方块群形成清晰地形层级; 大型体块先于单方块装饰; 远景减少方块细节但保持块面节奏'
+- 'palette: 每类材料使用少量相邻色阶; 草、土、石、水和木有清晰颜色家族; 高亮块只用于路径、资源或焦点'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 立方体或规则体素网格;
+    平面或阶梯化面法线; 材质通过方块颜色和面向区分.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 立方体或规则体素网格;
+    平面或阶梯化面法线; 材质通过方块颜色和面向区分.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    立方体或规则体素网格; 平面或阶梯化面法线; 材质通过方块颜色和面向区分.'
+  evidence:
+    source_ids:
+    - source-voxel-world-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 用体素台阶和方块群形成清晰地形层级;
+    大型体块先于单方块装饰; 远景减少方块细节但保持块面节奏. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 用体素台阶和方块群形成清晰地形层级;
+    大型体块先于单方块装饰; 远景减少方块细节但保持块面节奏.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 用体素台阶和方块群形成清晰地形层级;
+    大型体块先于单方块装饰; 远景减少方块细节但保持块面节奏.'
+  evidence:
+    source_ids:
+    - source-voxel-world-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 每类材料使用少量相邻色阶; 草、土、石、水和木有清晰颜色家族; 高亮块只用于路径、资源或焦点.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 每类材料使用少量相邻色阶; 草、土、石、水和木有清晰颜色家族;
+    高亮块只用于路径、资源或焦点.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    每类材料使用少量相邻色阶; 草、土、石、水和木有清晰颜色家族; 高亮块只用于路径、资源或焦点.'
+  evidence:
+    source_ids:
+    - source-voxel-world-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 光照沿体素面分区; 接触阴影和体素遮挡清楚; 不使用大面积连续反射. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 光照沿体素面分区; 接触阴影和体素遮挡清楚; 不使用大面积连续反射.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 光照沿体素面分区; 接触阴影和体素遮挡清楚;
+    不使用大面积连续反射.'
+  evidence:
+    source_ids:
+    - source-voxel-world-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 泥土、石块、木材和矿物各有有限图案;
+    表面细节服从体素尺度. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 泥土、石块、木材和矿物各有有限图案;
+    表面细节服从体素尺度.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    泥土、石块、木材和矿物各有有限图案; 表面细节服从体素尺度.'
+  evidence:
+    source_ids:
+    - source-voxel-world-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 重复纹理需有模块变化;
+    避免把真实照片压成方块滤镜. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 重复纹理需有模块变化;
+    避免把真实照片压成方块滤镜.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    重复纹理需有模块变化; 避免把真实照片压成方块滤镜.'
+  evidence:
+    source_ids:
+    - source-voxel-world-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-voxel-world-game-art-primary-source
+  kind: primary
+  base_asset_id: voxel-world-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定网格尺度和大体块
+  - 再分配材料色族
+  - 随后补充可交互小物
+  - 最后检查所有边缘和透视是否服从网格
+  - 几何体由可识别方块构成
+  - 不同物体共享同一网格尺度
+  - 不得使用来源游戏的独特材质贴图
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - smooth_subdivision_surface
+  - photorealistic_terrain
+  - copied_game_texture
+  - excessive_microdetail
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
