@@ -1,0 +1,176 @@
+schema_version: 2.1.0
+status: experimental
+id: ecal-direction
+name: 洛桑艺术设计学院
+base_package: schools/ecal
+scope:
+  medium: cross-disciplinary design study with editorial documentation logic
+  representation: stylized
+  description: 以跨学科、研究驱动和专业制作把摄影、平面、产品与数字媒介放在同一实验场中。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - generic moodboard collage
+  - luxury product advertisement
+  - random studio clutter
+  - readable school logo or project text
+  - 不强制生成工作台、纸样、尺子、塑料模型或设计学校场景。
+  - 不把跨媒介研究误写成豪华产品广告或随机拼贴。
+pillars:
+- 以跨学科、研究驱动和专业制作把摄影、平面、产品与数字媒介放在同一实验场中。
+- 'differentiation: cross-disciplinary material thinking with precise visual hierarchy; prototypes and references
+  shown as an active design process; crisp documentation rather than a decorative moodboard'
+- 'composition: 用清晰的设计层级组织多个媒介样本，保留留白和可读的工作关系。; 让原型、图像、材料和测量工具形成有意的并置，而不是随意堆物。'
+- 'palette: 以中性白、灰、黑为基础，允许一处材料色或透明色成为视觉焦点。'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: cross-disciplinary
+    material thinking with precise visual hierarchy; prototypes and references shown as an active design process;
+    crisp documentation rather than a decorative moodboard. Do not collapse the direction into a neighboring
+    style.'
+  observable: 'The result expresses the stated distinction in visible form: cross-disciplinary material thinking
+    with precise visual hierarchy; prototypes and references shown as an active design process; crisp documentation
+    rather than a decorative moodboard.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: cross-disciplinary
+    material thinking with precise visual hierarchy; prototypes and references shown as an active design process;
+    crisp documentation rather than a decorative moodboard.'
+  evidence:
+    source_ids:
+    - source-ecal-primary-source
+    - source-ecal-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 用清晰的设计层级组织多个媒介样本，保留留白和可读的工作关系。;
+    让原型、图像、材料和测量工具形成有意的并置，而不是随意堆物。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 用清晰的设计层级组织多个媒介样本，保留留白和可读的工作关系。;
+    让原型、图像、材料和测量工具形成有意的并置，而不是随意堆物。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 用清晰的设计层级组织多个媒介样本，保留留白和可读的工作关系。;
+    让原型、图像、材料和测量工具形成有意的并置，而不是随意堆物。.'
+  evidence:
+    source_ids:
+    - source-ecal-primary-source
+    - source-ecal-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 以中性白、灰、黑为基础，允许一处材料色或透明色成为视觉焦点。. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 以中性白、灰、黑为基础，允许一处材料色或透明色成为视觉焦点。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    以中性白、灰、黑为基础，允许一处材料色或透明色成为视觉焦点。.'
+  evidence:
+    source_ids:
+    - source-ecal-primary-source
+    - source-ecal-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: crisp natural studio daylight; behavior:
+    方向明确但不戏剧化，阴影帮助区分材料和尺度。. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: crisp natural studio
+    daylight; behavior: 方向明确但不戏剧化，阴影帮助区分材料和尺度。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: crisp natural
+    studio daylight; behavior: 方向明确但不戏剧化，阴影帮助区分材料和尺度。.'
+  evidence:
+    source_ids:
+    - source-ecal-primary-source
+    - source-ecal-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: precise
+    editorial documentation with tactile material evidence; edges: clean, deliberate, and slightly imperfect
+    at prototypes. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    precise editorial documentation with tactile material evidence; edges: clean, deliberate, and slightly
+    imperfect at prototypes.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: precise editorial documentation with tactile material evidence; edges: clean, deliberate, and slightly
+    imperfect at prototypes.'
+  evidence:
+    source_ids:
+    - source-ecal-primary-source
+    - source-ecal-secondary
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium
+    and organized; placement: attached to paper, plastic, wire, wood, and photographic surfaces. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium and organized; placement: attached to paper, plastic, wire, wood, and photographic surfaces.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium and organized; placement: attached to paper, plastic, wire, wood, and photographic surfaces.'
+  evidence:
+    source_ids:
+    - source-ecal-primary-source
+    - source-ecal-secondary
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-ecal-primary-source
+  kind: primary
+  base_asset_id: ecal-primary-source
+- id: source-ecal-secondary
+  kind: secondary
+  base_asset_id: ecal-secondary
+execution:
+  route: text_only
+  must:
+  - Identify the user's design question, subject, or intended output.
+  - Select a small set of contrasting materials that directly support it.
+  - Arrange primary, secondary, and reference elements with clear hierarchy.
+  - Light the setup with neutral daylight and preserve material differences.
+  - Remove accidental clutter, logos, and unreadable pseudo-text before delivery.
+  - 跨媒介并置必须服务于一个清楚的设计问题或观察逻辑。
+  - 画面保持编辑性秩序，不变成无目的的素材拼贴。
+  - 不复制学校作品、学生项目或可识别品牌系统。
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - 不强制生成工作台、纸样、尺子、塑料模型或设计学校场景。
+  - 不把跨媒介研究误写成豪华产品广告或随机拼贴。
+  - copied composition
+  - named character or branded asset
+  - generic moodboard collage
+  - luxury product advertisement
+  - random studio clutter
