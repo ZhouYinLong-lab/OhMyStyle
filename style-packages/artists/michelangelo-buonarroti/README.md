@@ -76,4 +76,4 @@
 
 ## 实验方向：承重与反向扭转
 
-包现包含一个显式选择的单人姿态方向 [`art-direction.yaml`](art-direction.yaml)：一条腿承担主要重量，骨盆与肩线形成受控反向，衣褶和明暗解释动作。它只适用于用户要求的站立人物，不默认加入裸像、宗教或神话题材。生图对照及限制见 [`comparisons/`](comparisons/README.md)。
+包现包含一个显式选择的单人姿态方向 [`art-direction.yaml`](art-direction.yaml)，使用方向格式 2.1.0：一条腿承担主要重量，骨盆与肩线形成受控反向。只有调用者声明 `clothed-figure-painterly-modeling` 时，才应用衣褶和明暗塑形规则。它只适用于用户要求的站立人物，不默认加入裸像、宗教或神话题材。生图对照及限制见 [`comparisons/`](comparisons/README.md)。

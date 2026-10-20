@@ -76,4 +76,4 @@ Use references to understand observable characteristics. Do not copy a source wo
 
 ## Experimental direction: counterturned weight-bearing figure
 
-The package now includes an explicitly selected single-figure pose direction in [`art-direction.yaml`](art-direction.yaml): one leg bears most of the weight while pelvis and shoulders turn in controlled opposition, with light and clothing folds clarifying the action. It applies only to a user-requested standing figure; nudity, religious subjects, and mythological subjects are not defaults. See [`comparisons/`](comparisons/README.md) for generated examples and limitations.
+The package now includes an explicitly selected single-figure pose direction in [`art-direction.yaml`](art-direction.yaml), using format 2.1.0: one leg bears most of the weight while pelvis and shoulders turn in controlled opposition. Clothing-fold and light modeling activates only when the caller declares `clothed-figure-painterly-modeling`. It applies only to a user-requested standing figure; nudity, religious subjects, and mythological subjects are not defaults. See [`comparisons/`](comparisons/README.md) for generated examples and limitations.

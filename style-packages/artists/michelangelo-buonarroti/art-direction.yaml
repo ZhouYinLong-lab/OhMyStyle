@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: michelangelo-counterturned-weight-bearing-figure
 name: Michelangelo counterturned weight-bearing figure
@@ -25,6 +25,17 @@ scope:
     - Text-only generation may distort joints and limb counts; inspect generated anatomy.
     - Do not add religious, mythological, or historical iconography unless requested.
     - Do not copy a named work, exact pose, or recognizable figure arrangement.
+contexts:
+  - id: counterturned-weight-bearing-figure
+    description: A user-requested standing single figure with a weight shift and counterturn.
+  - id: front-facing-symmetrical-portrait
+    description: A symmetrical, front-facing portrait pose.
+  - id: seated-relaxed-figure
+    description: A seated figure in a relaxed pose.
+  - id: fast-running-action-pose
+    description: A fast running or highly dynamic action pose.
+  - id: clothed-figure-painterly-modeling
+    description: The user requests painterly light and fold modeling on specified clothing.
 pillars:
   - Set a clear weight-bearing leg before arranging the torso and arms.
   - Turn the shoulders against the pelvis so the pose carries a readable counter-movement.
@@ -59,6 +70,8 @@ rules:
   - id: modeled-clothed-form
     axis: light_and_surface
     importance: supporting
+    when_contexts:
+      - clothed-figure-painterly-modeling
     applies_when: The brief requests painterly modeling of a clothed figure.
     instruction: Use a coherent light direction and broad value groups to describe volume through the user's specified clothing; keep folds subordinate to the body's weight shift and requested material.
     observable: Clothing wraps the changed torso and supporting hip, so light, folds, and pose reinforce one another.
