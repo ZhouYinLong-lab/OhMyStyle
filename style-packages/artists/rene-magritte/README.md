@@ -48,4 +48,4 @@
 
 ## 实验方向：物体与投影的错位
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户明确要求“物体投下不同形状的影子”时启用：物体保持自然、清晰，影子贴合地面并沿同一光源方向，但轮廓呈现用户指定的另一种形态。不会自动加入额外实物或经典主题。查看 [`comparisons/`](comparisons/README.md) 中的生成对照；该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户明确声明 `user-requested-shadow-paradox` 时启用：物体保持自然、清晰，影子贴合地面并沿同一光源方向，但轮廓呈现用户指定的另一种形态。仅在对象本身普通且有对照影子时，才声明 `ordinary-object-with-contrasting-shadow` 启用物体表面规则。不会自动加入额外实物或经典主题。查看 [`comparisons/`](comparisons/README.md) 中的生成对照；该方向仍处于实验状态。
