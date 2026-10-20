@@ -26,6 +26,8 @@
 
 新版规则尚处实验状态，需显式启用；不传 `--direction` 时，仍使用已有提示词：
 
+同题旧 / 新提示的[日光椅子对照](comparisons/daylight-chair/README.md)显示主体与流派特征得以保留，但这一组尚不能证明结构化方向有视觉优势。
+
 ```powershell
 python tools/compile-style.py style-packages/movements/impressionism --direction package --context daylight --context visible-reflective-surface --subject "A neighborhood street market after rain, vendors arranging crates, muted spring daylight" --output runs/impressionism-v2-job.json
 ```

@@ -26,6 +26,8 @@ This differs from the Monet artist package, which focuses on one painter's weath
 
 The new rules remain experimental and must be selected explicitly. Without `--direction`, the existing prompt path is used:
 
+The [same-subject daylight-chair comparison](comparisons/daylight-chair/README.md) preserves the subject and movement cues, but this single pair does not establish a visual advantage for the structured direction.
+
 ```powershell
 python tools/compile-style.py style-packages/movements/impressionism --direction package --context daylight --context visible-reflective-surface --subject "A neighborhood street market after rain, vendors arranging crates, muted spring daylight" --output runs/impressionism-v2-job.json
 ```

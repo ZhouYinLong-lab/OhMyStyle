@@ -1,0 +1,270 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "impressionism",
+    "name": "印象主义",
+    "version": "0.2.0",
+    "root": "style-packages/movements/impressionism"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One blue-painted wooden chair beside a shallow rain puddle on a paved courtyard in afternoon daylight; no people, buildings, or readable text",
+  "prompt": "USER SUBJECT: One blue-painted wooden chair beside a shallow rain puddle on a paved courtyard in afternoon daylight; no people, buildings, or readable text\nSUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [impressionism-observed-light-event] 选择一个主要观看瞬间，用高光、彩色阴影和邻近表面的反光表现光线如何 改变场景；保留物体和空间的基本可信度，不把“印象”处理成随意失焦。\n- [impressionism-visible-rapid-marks] 用快速、可见、方向和长度有变化的笔触概括形体；在水面、树叶、街景或 衣物上按表面调整笔触，但让笔触融入整体构图，不把全画覆盖为同尺寸碎点。\n- [impressionism-color-bearing-shadow] 让阴影和亮部保留局部色彩，把附近天空、地面、衣物或建筑的颜色带入相邻 平面；用色彩和笔触共同组织体积，避免统一黑灰阴影或无来源的彩色装饰。\n- [impressionism-composed-immediacy] 保持直接观察般的取景和清楚的视觉重心；可用偏置裁切、开放空间或日常 生活细节制造即时感，但先确定主体与空间结构，再让松动笔触参与构图。\n- [impressionism-movement-not-artist-template] 使用快速可见笔触、局部光色和即时观察这组共享方法；不要默认复制莫奈的 系列母题与天气处理、雷诺阿的人物和肤色倾向，或德加的舞台构图。只在用户 明确选择艺术家时才引入其特定签名。\n- [impressionism-mark-light-coherence] 让笔触变化、局部色彩和光线共同说明同一观看瞬间；笔触不能独立变成装饰 纹理，彩色阴影不能脱离环境反射。\n- [impressionism-movement-scope-coherence] 保留直接观察和现代日常场景的开放性，不把流派概括收窄为单一艺术家的 题材或构图模板。\nREQUIREMENT: Preserve the requested subject, object count, setting, and composition.\nREQUIREMENT: Preserve visible oil-paint marks and let the declared light affect local color.\nREQUIREMENT: Keep the requested subject readable while using broken marks and color-bearing shadows.\nREQUIREMENT: Apply a movement-level shared method; do not add any artist's signature motif by default.",
+  "negative_prompt": "global filter, black-only shadows, unreadable loose forms\nregular pointillist dots, uniform dashes, smooth digital gradients\nblack-filled shadows, arbitrary complementary speckles, pastel wash\nunrequested cafe, dancers, garden, accidental-looking crop\nsingle-artist motif template, copied signature composition, signature palette\ncopied named painting, artist signature arrangement, or default Monet/Renoir/Degas motif\nglobal pastel wash, mechanically regular pointillism, or universal soft focus\nunreadable subject or unrelated extra style",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "impressionism-shared-practice",
+    "name": "印象主义：共享的瞬时观察方法",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "style-packages/movements/impressionism/art-direction.yaml",
+    "sha256": "90cc6b09b4366152205c52d0ed67d8ee18be4a12ad4013c83302118cb20d5b69",
+    "active_rule_ids": [
+      "impressionism-observed-light-event",
+      "impressionism-visible-rapid-marks",
+      "impressionism-color-bearing-shadow",
+      "impressionism-composed-immediacy",
+      "impressionism-movement-not-artist-template"
+    ],
+    "applicable_rule_ids": [
+      "impressionism-observed-light-event",
+      "impressionism-visible-rapid-marks",
+      "impressionism-color-bearing-shadow",
+      "impressionism-composed-immediacy",
+      "impressionism-movement-not-artist-template"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [
+      "daylight",
+      "visible-reflective-surface"
+    ],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Preserve the requested subject, object count, setting, and composition.",
+      "Preserve visible oil-paint marks and let the declared light affect local color.",
+      "Keep the requested subject readable while using broken marks and color-bearing shadows.",
+      "Apply a movement-level shared method; do not add any artist's signature motif by default."
+    ],
+    "avoid": [
+      "copied named painting, artist signature arrangement, or default Monet/Renoir/Degas motif",
+      "global pastel wash, mechanically regular pointillism, or universal soft focus",
+      "unreadable subject or unrelated extra style"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "以可见而快速的绘画痕迹、受光线影响的局部色彩和即时观察组织一个新场景； 这是概括多位印象主义者共享倾向的流派方向，不复刻莫奈或其他单一画家的 个人签名。",
+      "required_contexts": [
+        "daylight"
+      ],
+      "incompatible_contexts": [
+        "photographic-output"
+      ],
+      "limitations": [
+        "印象主义内部存在不同画家、题材和技法；本方向只给出共享方法，不声称适用于每件历史作品。",
+        "需要可以观察到的光线、局部色彩或表面变化；若用户要求夜景，应另行选择适合夜景的具体方向。",
+        "破碎笔触不等同于规则点描；不得自动套用修拉式点彩的机械排列。"
+      ]
+    },
+    "pillars": [
+      "通过可见、快速的笔触保留现场观察的即时感，同时维持经过安排的整体构图。",
+      "让高光、阴影和环境反射带有局部色彩，不依赖黑灰明暗或全画同色滤镜。",
+      "让相邻色触共同形成形体，但避免整齐均匀的点阵和厚重肌理成为唯一识别手段。",
+      "从现代日常生活或自然环境中选择用户指定的场景，不固定为某位画家的代表母题。",
+      "保留流派内部的表现差异；若用户要某一位画家的特定方法，应改用对应艺术家包。"
+    ],
+    "rules": [
+      {
+        "id": "impressionism-observed-light-event",
+        "axis": "lighting",
+        "importance": "core",
+        "applies_when": "场景存在可辨认的自然光或由环境反射形成的光色变化。",
+        "instruction": "选择一个主要观看瞬间，用高光、彩色阴影和邻近表面的反光表现光线如何 改变场景；保留物体和空间的基本可信度，不把“印象”处理成随意失焦。",
+        "observable": "至少两种表面因受光、遮挡或反射呈现不同局部色彩；即使笔触松动，主要 形体和空间关系仍然可读。",
+        "reject_when": "画面只覆盖统一色调、缺少局部光色因果，或因松散笔触而无法辨认主体。",
+        "avoid": "global filter, black-only shadows, unreadable loose forms",
+        "evidence": {
+          "source_ids": [
+            "impressionism-met-essay",
+            "impressionism-national-gallery-guide"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "impressionism-visible-rapid-marks",
+        "axis": "mark_making",
+        "importance": "core",
+        "applies_when": "场景含有可概括的形体、运动或表面纹理。",
+        "instruction": "用快速、可见、方向和长度有变化的笔触概括形体；在水面、树叶、街景或 衣物上按表面调整笔触，但让笔触融入整体构图，不把全画覆盖为同尺寸碎点。",
+        "observable": "近看能辨认绘画动作，远看笔触聚合为完整场景；不同表面至少有一处可观察 的笔触方向或密度差异。",
+        "reject_when": "画面被机械等距的圆点、统一方向的短划或平滑数码渐变支配，无法看出针对 场景的现场观察。",
+        "avoid": "regular pointillist dots, uniform dashes, smooth digital gradients",
+        "evidence": {
+          "source_ids": [
+            "impressionism-met-essay",
+            "impressionism-national-gallery-guide"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "impressionism-color-bearing-shadow",
+        "axis": "palette",
+        "importance": "core",
+        "when_contexts": [
+          "visible-reflective-surface"
+        ],
+        "applies_when": "画面包含受光面、阴影面或环境色反射。",
+        "instruction": "让阴影和亮部保留局部色彩，把附近天空、地面、衣物或建筑的颜色带入相邻 平面；用色彩和笔触共同组织体积，避免统一黑灰阴影或无来源的彩色装饰。",
+        "observable": "阴影中可见环境色变化，亮暗关系仍支持体积；色彩既明亮又受场景关系约束， 没有退化为同一层粉彩覆盖。",
+        "reject_when": "阴影全部压黑或填成单一色相，或冷暖色任意交替而不对应光源和邻接表面。",
+        "avoid": "black-filled shadows, arbitrary complementary speckles, pastel wash",
+        "evidence": {
+          "source_ids": [
+            "impressionism-met-essay",
+            "impressionism-orsay-1874"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "impressionism-composed-immediacy",
+        "axis": "composition",
+        "importance": "supporting",
+        "applies_when": "需要把用户指定主体放入自然或现代日常环境。",
+        "instruction": "保持直接观察般的取景和清楚的视觉重心；可用偏置裁切、开放空间或日常 生活细节制造即时感，但先确定主体与空间结构，再让松动笔触参与构图。",
+        "observable": "画面有自然、非仪式化的观看感，同时主体位置、空间深度和主要动作仍可辨； 裁切像一次有意的取景，而非误切。",
+        "reject_when": "为追求“随手感”而丢失主体层级，或固定加入咖啡馆、舞者、花园等熟悉题材。",
+        "avoid": "unrequested cafe, dancers, garden, accidental-looking crop",
+        "evidence": {
+          "source_ids": [
+            "impressionism-national-gallery-guide",
+            "impressionism-orsay-1874"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "impressionism-movement-not-artist-template",
+        "axis": "stylistic_scope",
+        "importance": "core",
+        "applies_when": "用户选择的是印象主义流派包而非特定艺术家包。",
+        "instruction": "使用快速可见笔触、局部光色和即时观察这组共享方法；不要默认复制莫奈的 系列母题与天气处理、雷诺阿的人物和肤色倾向，或德加的舞台构图。只在用户 明确选择艺术家时才引入其特定签名。",
+        "observable": "生成结果可被辨认为一幅印象主义取向的新作品，但没有被单一画家的固定 主题、视点、轮廓或调色方式垄断。",
+        "reject_when": "每次都生成睡莲池、舞者、干草堆或某一位画家的标志性构图，导致流派包变成 艺术家模仿包。",
+        "avoid": "single-artist motif template, copied signature composition, signature palette",
+        "evidence": {
+          "source_ids": [
+            "impressionism-met-essay",
+            "impressionism-orsay-1874"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        }
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "impressionism-mark-light-coherence",
+        "rule_ids": [
+          "impressionism-observed-light-event",
+          "impressionism-visible-rapid-marks",
+          "impressionism-color-bearing-shadow"
+        ],
+        "instruction": "让笔触变化、局部色彩和光线共同说明同一观看瞬间；笔触不能独立变成装饰 纹理，彩色阴影不能脱离环境反射。",
+        "observable": "主要表面的笔触和色温差异能指向同一光照条件，缩小画面后主体仍可辨。"
+      },
+      {
+        "id": "impressionism-movement-scope-coherence",
+        "rule_ids": [
+          "impressionism-composed-immediacy",
+          "impressionism-movement-not-artist-template"
+        ],
+        "instruction": "保留直接观察和现代日常场景的开放性，不把流派概括收窄为单一艺术家的 题材或构图模板。",
+        "observable": "主题来自用户要求，构图服务于新场景，画面没有自动附加某位艺术家的代表 母题或固定视角。"
+      }
+    ],
+    "sources": [
+      {
+        "id": "impressionism-met-essay",
+        "kind": "museum_movement_analysis",
+        "base_asset_id": "impressionism-met-essay",
+        "package_reference": {
+          "asset_id": "impressionism-met-essay",
+          "local_path": "",
+          "title": "Impressionism: Art and Modernity",
+          "creator": "The Metropolitan Museum of Art",
+          "year": "2004",
+          "source_url": "https://www.metmuseum.org/pt/essays/impressionism-art-and-modernity",
+          "license": "link_only",
+          "attribution": "The Metropolitan Museum of Art",
+          "role": "primary",
+          "notes": "Museum essay discusses broken strokes unblended color light effects modern subjects and diversity among participants; no image bundled."
+        }
+      },
+      {
+        "id": "impressionism-national-gallery-guide",
+        "kind": "museum_movement_guide",
+        "base_asset_id": "impressionism-national-gallery-guide",
+        "package_reference": {
+          "asset_id": "impressionism-national-gallery-guide",
+          "local_path": "",
+          "title": "Guide to Impressionism",
+          "creator": "National Gallery London",
+          "year": "",
+          "source_url": "https://www.nationalgallery.org.uk/paintings/learn-about-art/guide-to-impressionism?viewPage=1",
+          "license": "link_only",
+          "attribution": "National Gallery London",
+          "role": "primary",
+          "notes": "Museum guide describes visible rapid brushwork bright color landscape and modern urban or suburban subjects; no image bundled."
+        }
+      },
+      {
+        "id": "impressionism-orsay-1874",
+        "kind": "museum_exhibition_history",
+        "base_asset_id": "impressionism-orsay-1874",
+        "package_reference": {
+          "asset_id": "impressionism-orsay-1874",
+          "local_path": "",
+          "title": "Paris 1874: Inventing Impressionism",
+          "creator": "Musée d'Orsay",
+          "year": "2024",
+          "source_url": "https://www.musee-orsay.fr/en/node/278990",
+          "license": "link_only",
+          "attribution": "Musée d'Orsay",
+          "role": "primary",
+          "notes": "Exhibition history and shared pursuit of fleeting impressions painted before the motif; no image bundled."
+        }
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "b67760c8034bd80014f9a37fad6ddffd34729436999f024f89096b17cbbb42b8",
+    "negative_prompt_sha256": "d69515aca1055fe193c7c2be0481bedb1a34b6ef7371d4b3fcb39c0d4f0e3879",
+    "direction_sha256": "90cc6b09b4366152205c52d0ed67d8ee18be4a12ad4013c83302118cb20d5b69",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
