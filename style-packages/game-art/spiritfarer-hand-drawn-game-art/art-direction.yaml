@@ -1,0 +1,140 @@
+schema_version: 2.1.0
+status: experimental
+id: spiritfarer-hand-drawn-game-art-direction
+name: 灵魂旅人手绘游戏美术
+base_package: game-art/spiritfarer-hand-drawn-game-art
+scope:
+  medium: hand-drawn 2D game illustration and animation-ready background art
+  representation: stylized
+  description: 以手绘线条、温暖的形状设计、柔和的色彩层次和具有呼吸感的二维动画构成亲和而完整的游戏视觉语言。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - named game character
+  - copied game screenshot or branded asset
+pillars:
+- 以手绘线条、温暖的形状设计、柔和的色彩层次和具有呼吸感的二维动画构成亲和而完整的游戏视觉语言。
+- 'composition: 以清晰的前中后景、可读的轮廓和适合横向移动的层次组织画面。; 让主体与环境共享形状语言，保留可供角色、道具或互动元素使用的空间。'
+- 'palette: 使用暖米色、珊瑚、海蓝、苔绿和深紫等柔和但有层次的颜色。; 冷暖关系清晰，避免统一高饱和滤镜或只靠黑色描边分离主体。'
+- 'lighting: quality: soft illustrated daylight or warm interior light; behavior: 光线通过大色面、柔和渐变和局部亮点表达，不追求写实摄影阴影。;
+  behavior: 关键互动区域可以有温暖的小型光源，但不要自动加入灯笼或船舱。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以清晰的前中后景、可读的轮廓和适合横向移动的层次组织画面。;
+    让主体与环境共享形状语言，保留可供角色、道具或互动元素使用的空间。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以清晰的前中后景、可读的轮廓和适合横向移动的层次组织画面。;
+    让主体与环境共享形状语言，保留可供角色、道具或互动元素使用的空间。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以清晰的前中后景、可读的轮廓和适合横向移动的层次组织画面。;
+    让主体与环境共享形状语言，保留可供角色、道具或互动元素使用的空间。.'
+  evidence:
+    source_ids:
+    - source-spiritfarer-hand-drawn-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 使用暖米色、珊瑚、海蓝、苔绿和深紫等柔和但有层次的颜色。; 冷暖关系清晰，避免统一高饱和滤镜或只靠黑色描边分离主体。.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 使用暖米色、珊瑚、海蓝、苔绿和深紫等柔和但有层次的颜色。;
+    冷暖关系清晰，避免统一高饱和滤镜或只靠黑色描边分离主体。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    使用暖米色、珊瑚、海蓝、苔绿和深紫等柔和但有层次的颜色。; 冷暖关系清晰，避免统一高饱和滤镜或只靠黑色描边分离主体。.'
+  evidence:
+    source_ids:
+    - source-spiritfarer-hand-drawn-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft illustrated daylight or warm interior
+    light; behavior: 光线通过大色面、柔和渐变和局部亮点表达，不追求写实摄影阴影。; behavior: 关键互动区域可以有温暖的小型光源，但不要自动加入灯笼或船舱。. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft illustrated daylight
+    or warm interior light; behavior: 光线通过大色面、柔和渐变和局部亮点表达，不追求写实摄影阴影。; behavior: 关键互动区域可以有温暖的小型光源，但不要自动加入灯笼或船舱。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft illustrated
+    daylight or warm interior light; behavior: 光线通过大色面、柔和渐变和局部亮点表达，不追求写实摄影阴影。; behavior: 关键互动区域可以有温暖的小型光源，但不要自动加入灯笼或船舱。.'
+  evidence:
+    source_ids:
+    - source-spiritfarer-hand-drawn-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: hand-drawn
+    2D illustration with painted fills and animation-ready shapes; edges: expressive contour with controlled
+    softness; clean silhouettes at gameplay scale. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    hand-drawn 2D illustration with painted fills and animation-ready shapes; edges: expressive contour with
+    controlled softness; clean silhouettes at gameplay scale.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: hand-drawn 2D illustration with painted fills and animation-ready shapes; edges: expressive contour
+    with controlled softness; clean silhouettes at gameplay scale.'
+  evidence:
+    source_ids:
+    - source-spiritfarer-hand-drawn-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low_to_medium;
+    placement: subtle brush variation in backgrounds, clothing, foliage, and large surfaces. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low_to_medium; placement: subtle brush variation in backgrounds, clothing, foliage, and large surfaces.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low_to_medium; placement: subtle brush variation in backgrounds, clothing, foliage, and large
+    surfaces.'
+  evidence:
+    source_ids:
+    - source-spiritfarer-hand-drawn-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-spiritfarer-hand-drawn-game-art-primary-source
+  kind: primary
+  base_asset_id: spiritfarer-hand-drawn-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定可游玩空间的轮廓、移动方向和主体可读性。
+  - 再用大色面、柔和轮廓和前中后景层次建立环境。
+  - 最后加入少量手绘纹理、互动亮点和局部动画暗示，避免细节淹没形状。
+  - 手绘二维形状、柔和色彩和可读的游戏空间在更换主体后仍然成立。
+  - 不要求船、海、灵魂、猫、角色或特定地图。
+  - 叙事氛围可以温暖，但视觉包不替用户决定故事。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - mandatory boat, ocean, cat, ghost, or named character
+  - photorealistic rendering, generic anime key art, or hard cel-shading
+  - copied game screenshot, logo, interface, or dialogue box
+  - named game character
+  - copied game screenshot or branded asset
+  - Do not reproduce a specific game screenshot, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
