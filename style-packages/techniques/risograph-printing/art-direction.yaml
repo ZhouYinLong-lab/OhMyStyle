@@ -1,0 +1,165 @@
+schema_version: 2.1.0
+status: experimental
+id: risograph-printing-direction
+name: 孔版印刷
+base_package: techniques/risograph-printing
+scope:
+  medium: stencil duplicator print simulation
+  representation: stylized
+  description: 以有限专色、粗网点、纸张肌理和轻微套印偏移组织画面；本包描述印刷过程与表面结果，不固定海报、静物或文字内容。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory text, poster, zine, or product subject
+  - mandatory zine copy, poster headline, or commercial brand
+  - generic sepia or film-grain treatment
+  - unlimited watercolor blending or photorealistic gloss
+pillars:
+- 以有限专色、粗网点、纸张肌理和轻微套印偏移组织画面；本包描述印刷过程与表面结果，不固定海报、静物或文字内容。
+- 'differentiation: limited spot-ink plate logic; coarse halftone and porous coverage; small registration drift
+  between layers; paper ground remains an active color'
+- 'composition: clear silhouettes and flat shape hierarchy; generous paper space with deliberate overlaps'
+- 'palette: two to four spot inks plus the paper ground; color identity comes from separate plates and overprint'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: limited spot-ink
+    plate logic; coarse halftone and porous coverage; small registration drift between layers; paper ground
+    remains an active color. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: limited spot-ink plate logic; coarse
+    halftone and porous coverage; small registration drift between layers; paper ground remains an active color.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: limited
+    spot-ink plate logic; coarse halftone and porous coverage; small registration drift between layers; paper
+    ground remains an active color.'
+  evidence:
+    source_ids:
+    - source-risograph-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: clear silhouettes
+    and flat shape hierarchy; generous paper space with deliberate overlaps. Preserve the user-provided content
+    and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: clear silhouettes
+    and flat shape hierarchy; generous paper space with deliberate overlaps.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: clear silhouettes
+    and flat shape hierarchy; generous paper space with deliberate overlaps.'
+  evidence:
+    source_ids:
+    - source-risograph-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: two to four spot inks plus the paper
+    ground; color identity comes from separate plates and overprint. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: two to four spot inks plus
+    the paper ground; color identity comes from separate plates and overprint.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    two to four spot inks plus the paper ground; color identity comes from separate plates and overprint.'
+  evidence:
+    source_ids:
+    - source-risograph-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: tonal steps built from dots and overlapping
+    ink; behavior: no glossy studio highlights or photographic gradient. Keep light coherent with the requested
+    subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: tonal steps built
+    from dots and overlapping ink; behavior: no glossy studio highlights or photographic gradient.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: tonal steps built
+    from dots and overlapping ink; behavior: no glossy studio highlights or photographic gradient.'
+  evidence:
+    source_ids:
+    - source-risograph-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: porous
+    matte ink on toothy paper; edges: crisp but slightly misregistered plate boundaries. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    porous matte ink on toothy paper; edges: crisp but slightly misregistered plate boundaries.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: porous matte ink on toothy paper; edges: crisp but slightly misregistered plate boundaries.'
+  evidence:
+    source_ids:
+    - source-risograph-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: coarse
+    halftone, speckled coverage, and paper tooth; placement: fields, shadows, and overlaps. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    coarse halftone, speckled coverage, and paper tooth; placement: fields, shadows, and overlaps.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: coarse halftone, speckled coverage, and paper tooth; placement: fields, shadows, and overlaps.'
+  evidence:
+    source_ids:
+    - source-risograph-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-risograph-printing-primary-source
+  kind: primary
+  base_asset_id: risograph-printing-primary-source
+execution:
+  route: text_only
+  must:
+  - Preserve the subject's main silhouette before reducing it to plate separations.
+  - Choose a limited ink set and assign foreground, shadow, and accent roles.
+  - Build tonal changes with coarse halftone and controlled overprint.
+  - Shift plates by a small amount and vary coverage at edges without making the subject ambiguous.
+  - print process remains visible after subject substitution
+  - user subject stays countable and readable
+  - no fixed poster text, product, or narrative object
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - full-color photorealism
+  - uniform digital noise used as a substitute for halftone
+  - fixed poster text, named brand, or copied artwork
+  - mandatory zine copy, poster headline, or commercial brand
+  - generic sepia or film-grain treatment
+  - unlimited watercolor blending or photorealistic gloss
+  - copied composition
+  - named character or branded asset
+  - mandatory text, poster, zine, or product subject
+  - The package transfers a printing process, not the content of any source print.
