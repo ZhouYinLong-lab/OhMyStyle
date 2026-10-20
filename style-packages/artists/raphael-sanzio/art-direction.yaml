@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: raphael-designated-focal-group-balance
 name: Raphael designated focal group balance
@@ -24,6 +24,21 @@ scope:
     - Preserve every requested sitter, role, age range, relationship, action, clothing, and setting.
     - Balance supporting figures around the focal sitter without imposing exact symmetry or a fixed number of people.
     - Do not add architectural openings, props, or historical motifs unless requested.
+contexts:
+  - id: user-requested-group-with-designated-focal-sitter
+    description: The user requests a group portrait and explicitly designates one sitter as the focal figure.
+  - id: no-focal-sitter-designated
+    description: The user does not designate a focal sitter.
+  - id: user-requested-equal-weight-group
+    description: The user requests equal visual weight for all group members.
+  - id: single-person-portrait
+    description: The user requests a single-person portrait.
+  - id: exact-reconstruction-of-named-work
+    description: The user requests an exact reconstruction of a named work.
+  - id: supporting-sitters-around-designated-focal-figure
+    description: Supporting sitters are requested around the designated focal figure.
+  - id: figure-placement-establishes-group-hierarchy
+    description: The group hierarchy is established through figure placement.
 pillars:
   - Establish one legible focal figure through placement and silhouette rather than status props.
   - Balance supporting figures as a coherent group while preserving individual faces and gestures.
@@ -32,6 +47,8 @@ rules:
   - id: designated-sitter-owns-primary-axis
     axis: focal-figure-hierarchy
     importance: core
+    when_contexts:
+      - user-requested-group-with-designated-focal-sitter
     applies_when: The user names one sitter as the primary focus in a group portrait.
     instruction: Place the designated sitter on the clearest compositional axis and preserve their requested gesture and visual prominence.
     observable: The designated sitter reads first at thumbnail size without relying on invented clothing, symbols, or props.
@@ -45,6 +62,8 @@ rules:
   - id: supporting-figures-stabilize-without-mirroring
     axis: group-balance-and-individuality
     importance: core
+    when_contexts:
+      - supporting-sitters-around-designated-focal-figure
     applies_when: Supporting sitters are requested around a designated focal figure.
     instruction: Distribute supporting sitters on both sides or at different depths as needed, using natural spacing and distinct gestures to stabilize the main figure without exact mirroring.
     observable: The group feels balanced, but each supporting sitter retains an individual posture and clear outline.
@@ -58,6 +77,8 @@ rules:
   - id: keep-classical-clarity-without-dramatic-light
     axis: contour-and-negative-space
     importance: supporting
+    when_contexts:
+      - figure-placement-establishes-group-hierarchy
     applies_when: A group hierarchy is established through figure placement.
     instruction: Keep major contours distinct and preserve quiet negative space between figures; use calm modeling rather than a spotlight to separate the focal sitter.
     observable: Faces, hands, and body relationships remain readable in a stable, clear composition.

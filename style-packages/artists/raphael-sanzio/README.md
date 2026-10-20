@@ -76,4 +76,4 @@
 
 ## 实验方向：指定焦点人物的群像平衡
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户明确指定群像中的焦点人物时启用：通过人物位置、轮廓和留白建立主次，让其他人物形成稳定但不僵硬的群组关系。不会默认增加王冠、光环、建筑或历史题材。见 [`comparisons/`](comparisons/README.md) 查看群像对照；该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户明确指定群像中的焦点人物时启用：通过人物位置建立主次。用户要求其他人物围绕焦点平衡，或希望以轮廓与留白保持清晰时，可分别声明 `supporting-sitters-around-designated-focal-figure` 和 `figure-placement-establishes-group-hierarchy` 启用对应规则。不会默认增加王冠、光环、建筑或历史题材。见 [`comparisons/`](comparisons/README.md) 查看群像对照；该方向仍处于实验状态。
