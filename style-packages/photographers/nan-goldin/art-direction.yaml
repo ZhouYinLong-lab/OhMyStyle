@@ -1,0 +1,163 @@
+schema_version: 2.1.0
+status: experimental
+id: nan-goldin-direction
+name: 南·戈尔丁
+base_package: photographers/nan-goldin
+scope:
+  medium: intimate color documentary photography with direct flash and available-light mixing
+  representation: recognizable
+  description: 以亲密距离、直接闪光、饱和色彩和未经修饰的关系现场记录私人生活。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory nightclub, nudity, drugs, named relationship, or autobiographical event
+pillars:
+- 以亲密距离、直接闪光、饱和色彩和未经修饰的关系现场记录私人生活。
+- 'composition: Use close personal distance and a frame that feels entered rather than staged.; Allow ordinary
+  clutter, partial bodies, mirrors, beds, tables, or doorways when supplied by the user''s scene.; Preserve
+  an unguarded moment without turning the subject into a fashion pose or melodramatic tableau.'
+- 'palette: Use saturated reds, pinks, amber, blue, and green where the environment naturally supports them.;
+  Let mixed color temperatures and imperfect exposure remain visible; avoid a uniform commercial grade.'
+- 'lighting: quality: direct on-camera flash mixed with available room or street light; behavior: Keep flash
+  falloff, reflective highlights, and small hard shadows visible without glamorizing the scene.; behavior:
+  Do not add a colored rim light or cinematic spotlight.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Use close personal
+    distance and a frame that feels entered rather than staged.; Allow ordinary clutter, partial bodies, mirrors,
+    beds, tables, or doorways when supplied by the user''s scene.; Preserve an unguarded moment without turning
+    the subject into a fashion pose or melodramatic tableau.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Use close personal
+    distance and a frame that feels entered rather than staged.; Allow ordinary clutter, partial bodies, mirrors,
+    beds, tables, or doorways when supplied by the user''s scene.; Preserve an unguarded moment without turning
+    the subject into a fashion pose or melodramatic tableau..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Use close
+    personal distance and a frame that feels entered rather than staged.; Allow ordinary clutter, partial bodies,
+    mirrors, beds, tables, or doorways when supplied by the user''s scene.; Preserve an unguarded moment without
+    turning the subject into a fashion pose or melodramatic tableau..'
+  evidence:
+    source_ids:
+    - source-nan-goldin-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use saturated reds, pinks, amber,
+    blue, and green where the environment naturally supports them.; Let mixed color temperatures and imperfect
+    exposure remain visible; avoid a uniform commercial grade.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use saturated reds, pinks,
+    amber, blue, and green where the environment naturally supports them.; Let mixed color temperatures and
+    imperfect exposure remain visible; avoid a uniform commercial grade..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use saturated reds, pinks, amber, blue, and green where the environment naturally supports them.; Let mixed
+    color temperatures and imperfect exposure remain visible; avoid a uniform commercial grade..'
+  evidence:
+    source_ids:
+    - source-nan-goldin-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: direct on-camera flash mixed with available
+    room or street light; behavior: Keep flash falloff, reflective highlights, and small hard shadows visible
+    without glamorizing the scene.; behavior: Do not add a colored rim light or cinematic spotlight.. Keep
+    light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: direct on-camera flash
+    mixed with available room or street light; behavior: Keep flash falloff, reflective highlights, and small
+    hard shadows visible without glamorizing the scene.; behavior: Do not add a colored rim light or cinematic
+    spotlight..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: direct on-camera
+    flash mixed with available room or street light; behavior: Keep flash falloff, reflective highlights, and
+    small hard shadows visible without glamorizing the scene.; behavior: Do not add a colored rim light or
+    cinematic spotlight..'
+  evidence:
+    source_ids:
+    - source-nan-goldin-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: consumer
+    or small-format photographic print with honest color and slight imperfection; edges: intimate crop, occasional
+    softness, and direct flash highlights are acceptable. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    consumer or small-format photographic print with honest color and slight imperfection; edges: intimate
+    crop, occasional softness, and direct flash highlights are acceptable.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: consumer or small-format photographic print with honest color and slight imperfection; edges: intimate
+    crop, occasional softness, and direct flash highlights are acceptable.'
+  evidence:
+    source_ids:
+    - source-nan-goldin-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium,
+    carried by skin, fabric, walls, furniture, and film or sensor noise; placement: surface detail records
+    lived space; it should not become a decorative grain layer. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium, carried by skin, fabric, walls, furniture, and film or sensor noise; placement: surface detail
+    records lived space; it should not become a decorative grain layer.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium, carried by skin, fabric, walls, furniture, and film or sensor noise; placement: surface
+    detail records lived space; it should not become a decorative grain layer.'
+  evidence:
+    source_ids:
+    - source-nan-goldin-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-nan-goldin-primary-source
+  kind: primary
+  base_asset_id: nan-goldin-primary-source
+execution:
+  route: text_only
+  must:
+  - Begin with the user's real subject and a plausible lived environment.
+  - Choose a close, unguarded frame rather than a polished pose.
+  - Combine direct flash with existing room or street light and preserve imperfect exposure.
+  - Keep ordinary clutter and tactile surfaces visible without turning them into a fixed narrative.
+  - close, trusting observational distance
+  - direct flash and mixed ambient light remain legible
+  - saturated but imperfect color and ordinary lived surfaces
+  - no fixed person, relationship, venue, or private event
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - mandatory nightclub, nudity, drugs, named relationship, or autobiographical event
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
