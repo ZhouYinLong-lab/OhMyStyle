@@ -1,9 +1,16 @@
 related_packages:
-- watercolor-storybook-game-art
-- spiritfarer-hand-drawn-game-art
-contrast_note: This package is defined by depth-separated scrolling planes; the related packages foreground
-  watercolor or hand-drawn surface treatment.
+  - watercolor-storybook-game-art
+  - spiritfarer-hand-drawn-game-art
+contrast_note: This package is defined by depth-separated scrolling planes; the 
+  related packages foreground watercolor or hand-drawn surface treatment.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
+  note: Cross-style composition is handled by the repository-level workflow, not
+    by this package identity.
+family: game-art
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []
