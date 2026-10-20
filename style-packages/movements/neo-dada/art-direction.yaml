@@ -1,0 +1,143 @@
+schema_version: 2.1.0
+status: experimental
+id: neo-dada-direction
+name: 新达达
+base_package: movements/neo-dada
+scope:
+  medium: mixed-media assemblage and collage
+  representation: stylized
+  description: 以现成物、拼贴、偶发动作与媒介混用打破艺术品和日常物之间的边界，保持反权威的实验感。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以现成物、拼贴、偶发动作与媒介混用打破艺术品和日常物之间的边界，保持反权威的实验感。
+- 'composition: clear anchor subject interrupted by a few offset, cropped, or mismatched fragments'
+- 'palette: colors come from selected materials; add one or two discordant accents, not a mandatory poster
+  palette'
+- 'lighting: quality: ordinary, direct, or deliberately inconsistent between material fragments; behavior:
+  Use light and value to preserve the user''s subject rather than add a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: clear anchor
+    subject interrupted by a few offset, cropped, or mismatched fragments. Preserve the user-provided content
+    and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: clear anchor subject
+    interrupted by a few offset, cropped, or mismatched fragments.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: clear anchor
+    subject interrupted by a few offset, cropped, or mismatched fragments.'
+  evidence:
+    source_ids:
+    - source-neo-dada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: colors come from selected materials;
+    add one or two discordant accents, not a mandatory poster palette. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: colors come from selected
+    materials; add one or two discordant accents, not a mandatory poster palette.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    colors come from selected materials; add one or two discordant accents, not a mandatory poster palette.'
+  evidence:
+    source_ids:
+    - source-neo-dada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: ordinary, direct, or deliberately inconsistent
+    between material fragments; behavior: Use light and value to preserve the user''s subject rather than add
+    a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: ordinary, direct,
+    or deliberately inconsistent between material fragments; behavior: Use light and value to preserve the
+    user''s subject rather than add a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: ordinary, direct,
+    or deliberately inconsistent between material fragments; behavior: Use light and value to preserve the
+    user''s subject rather than add a fixed scene..'
+  evidence:
+    source_ids:
+    - source-neo-dada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: mixed
+    paper, photographic, painted, printed, or found-material surfaces; edges: precise enough to preserve the
+    requested subject. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    mixed paper, photographic, painted, printed, or found-material surfaces; edges: precise enough to preserve
+    the requested subject.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: mixed paper, photographic, painted, printed, or found-material surfaces; edges: precise enough
+    to preserve the requested subject.'
+  evidence:
+    source_ids:
+    - source-neo-dada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: variable
+    and localized at joins, overlaps, and altered surfaces; placement: follow material and process; never become
+    a uniform overlay. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    variable and localized at joins, overlaps, and altered surfaces; placement: follow material and process;
+    never become a uniform overlay.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: variable and localized at joins, overlaps, and altered surfaces; placement: follow material and
+    process; never become a uniform overlay.'
+  evidence:
+    source_ids:
+    - source-neo-dada-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-neo-dada-primary-source
+  kind: primary
+  base_asset_id: neo-dada-primary-source
+execution:
+  route: text_only
+  must:
+  - establish the user subject; add a few ordinary material interventions; introduce one offset or scale shift;
+    remove accidental clutter
+  - user subject remains the anchor; material interruption is observable; no recurring prop or slogan
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - fixed subject, location, character, or story not requested by the user
+  - generic global color filter without process evidence
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
