@@ -1,0 +1,160 @@
+schema_version: 2.1.0
+status: experimental
+id: miyako-ishiuchi-direction
+name: 石内都
+base_package: photographers/miyako-ishiuchi
+scope:
+  medium: observational fine-art photography with restrained analog print character
+  representation: recognizable
+  description: 以近距离观看磨损、伤痕、织物和旧物表面，让时间在材料痕迹中显现，而不是依赖固定人物或地点。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以近距离观看磨损、伤痕、织物和旧物表面，让时间在材料痕迹中显现，而不是依赖固定人物或地点。
+- 'composition: Use intimate close or medium-close framing that gives one surface or object enough room to
+  be examined.; Keep the surrounding space quiet and let cropping, folds, and small absences carry the tension.'
+- 'palette: Favor ash, paper, faded rose, oxidized brown, and muted blue; color should feel absorbed and aged
+  rather than decorative.; A restrained accent may remain, but do not impose monochrome when the supplied subject
+  calls for color.'
+- 'lighting: quality: soft available-light observation with gentle falloff; behavior: Reveal dents, scratches,
+  seams, creases, and fading without theatrical spotlighting.; behavior: Keep shadows quiet but deep enough
+  to show that the material has been handled.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Use intimate
+    close or medium-close framing that gives one surface or object enough room to be examined.; Keep the surrounding
+    space quiet and let cropping, folds, and small absences carry the tension.. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Use intimate close
+    or medium-close framing that gives one surface or object enough room to be examined.; Keep the surrounding
+    space quiet and let cropping, folds, and small absences carry the tension..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Use intimate
+    close or medium-close framing that gives one surface or object enough room to be examined.; Keep the surrounding
+    space quiet and let cropping, folds, and small absences carry the tension..'
+  evidence:
+    source_ids:
+    - source-miyako-ishiuchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Favor ash, paper, faded rose, oxidized
+    brown, and muted blue; color should feel absorbed and aged rather than decorative.; A restrained accent
+    may remain, but do not impose monochrome when the supplied subject calls for color.. Adapt their balance
+    to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Favor ash, paper, faded rose,
+    oxidized brown, and muted blue; color should feel absorbed and aged rather than decorative.; A restrained
+    accent may remain, but do not impose monochrome when the supplied subject calls for color..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Favor ash, paper, faded rose, oxidized brown, and muted blue; color should feel absorbed and aged rather
+    than decorative.; A restrained accent may remain, but do not impose monochrome when the supplied subject
+    calls for color..'
+  evidence:
+    source_ids:
+    - source-miyako-ishiuchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft available-light observation with gentle
+    falloff; behavior: Reveal dents, scratches, seams, creases, and fading without theatrical spotlighting.;
+    behavior: Keep shadows quiet but deep enough to show that the material has been handled.. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft available-light
+    observation with gentle falloff; behavior: Reveal dents, scratches, seams, creases, and fading without
+    theatrical spotlighting.; behavior: Keep shadows quiet but deep enough to show that the material has been
+    handled..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft available-light
+    observation with gentle falloff; behavior: Reveal dents, scratches, seams, creases, and fading without
+    theatrical spotlighting.; behavior: Keep shadows quiet but deep enough to show that the material has been
+    handled..'
+  evidence:
+    source_ids:
+    - source-miyako-ishiuchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: matte
+    fine-art photographic print with a slightly aged tonal response; edges: natural photographic edges; close
+    crops may cut into the subject without decorative framing. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    matte fine-art photographic print with a slightly aged tonal response; edges: natural photographic edges;
+    close crops may cut into the subject without decorative framing.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: matte fine-art photographic print with a slightly aged tonal response; edges: natural photographic
+    edges; close crops may cut into the subject without decorative framing.'
+  evidence:
+    source_ids:
+    - source-miyako-ishiuchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium
+    visible grain and material detail; placement: concentrated in worn fibers, scratches, paper, skin-like
+    surfaces, and uneven emulsion response. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium visible grain and material detail; placement: concentrated in worn fibers, scratches, paper, skin-like
+    surfaces, and uneven emulsion response.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium visible grain and material detail; placement: concentrated in worn fibers, scratches, paper,
+    skin-like surfaces, and uneven emulsion response.'
+  evidence:
+    source_ids:
+    - source-miyako-ishiuchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-miyako-ishiuchi-primary-source
+  kind: primary
+  base_asset_id: miyako-ishiuchi-primary-source
+execution:
+  route: text_only
+  must:
+  - Choose a neutral supplied subject with a surface that can carry evidence of use.
+  - Frame close enough for folds, abrasions, seams, and tonal loss to become readable.
+  - Use soft directional available light and preserve a quiet surrounding field.
+  - Add restrained grain and print wear after the tonal structure is stable; never use grain to hide errors.
+  - Time must be legible through material wear, not through a caption or fixed historical prop.
+  - Intimacy comes from distance, crop, and surface attention rather than staged expression.
+  - The supplied subject stays authoritative and is never replaced by scars, old clothing, or a named place.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
