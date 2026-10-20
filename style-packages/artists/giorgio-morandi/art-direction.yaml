@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: morandi-quiet-tonal-still-life
 name: Morandi quiet tonal still life
@@ -14,6 +14,13 @@ scope:
   limitations:
     - Follow the user's requested subject; do not add bottles or ceramic vessels as default motifs.
     - Low contrast must not flatten object boundaries or remove the focal hierarchy.
+contexts:
+  - id: high-contrast-theatrical-lighting
+    description: The user requires high-contrast theatrical lighting.
+  - id: glossy-photoreal-render
+    description: The user requires glossy photorealistic rendering.
+  - id: user-requests-close-observation-of-matte-surface
+    description: The user requests close observation of dry matte paint and subtle edge transitions.
 pillars:
   - Use small spacing and height changes to create quiet visual rhythm.
   - Let close-value colors separate forms through contour, overlap, and temperature.
@@ -60,16 +67,33 @@ rules:
       basis: curatorial_inference
       visual_review: pending
     avoid: uniform sharp outlines, metallic gloss, and global blur
+  - id: close-range-matte-paint-evidence
+    axis: surface_observation
+    importance: supporting
+    when_contexts:
+      - user-requests-close-observation-of-matte-surface
+    applies_when: The user requests close observation of the painted surface.
+    instruction: Let small variations in dry paint, softened contour, and shallow shadow remain visible at close range without introducing a global grain or sharpening every edge.
+    observable: Close viewing reveals restrained surface evidence while the grouping stays quiet and its important silhouettes remain readable.
+    reject_when: Surface grain becomes a filter or close detail turns the still life into a product photograph.
+    evidence:
+      source_ids:
+        - morandi-casa-museum-studio
+      basis: direct_visual_observation
+      visual_review: pending
+    avoid: uniform canvas grain, glossy highlights, and universal edge sharpness
 active_rule_ids:
   - measured-intervals-and-compressed-depth
   - close-value-chromatic-modeling
   - quiet-edge-and-matte-surface
+  - close-range-matte-paint-evidence
 joint_checks:
   - id: spacing-tone-edge-coherence
     rule_ids:
       - measured-intervals-and-compressed-depth
       - close-value-chromatic-modeling
       - quiet-edge-and-matte-surface
+      - close-range-matte-paint-evidence
     instruction: Let measured spacing, close-value colors, and selective edges preserve both quietness and legibility.
     observable: The arrangement feels still without flattening; each important form remains readable through small tonal and edge differences.
 sources:

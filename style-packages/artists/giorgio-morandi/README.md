@@ -76,7 +76,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 新架构：静谧色阶与器物间距（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 将莫兰迪方向限定在近似明度色阶、克制的横向间距、浅景深和选择性软边。它不要求每个题目都画瓶罐；生成新题材时仍以用户提供的主体为准。该方向尚未完成跨题材评审，默认包和旧 Prompt 保持不变。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，将莫兰迪方向限定在近似明度色阶、克制的横向间距、浅景深和选择性软边。只有用户要求近看干性哑光表面时，才声明 `user-requests-close-observation-of-matte-surface` 启用表面细节规则。它不要求每个题目都画瓶罐；生成新题材时仍以用户提供的主体为准。该方向尚未完成跨题材评审，默认包和旧 Prompt 保持不变。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/giorgio-morandi --direction package --subject "Three folded towels and a small wooden tray on a shelf" --output runs/style-v2/morandi-job.json

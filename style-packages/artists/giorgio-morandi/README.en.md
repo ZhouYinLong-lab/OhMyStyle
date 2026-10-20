@@ -98,7 +98,7 @@ figures, text, trademark, or logo.
 
 ## New architecture: quiet tonality and measured spacing (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) scopes the direction to close-value colors, restrained horizontal intervals, shallow depth, and selective soft edges. It does not require bottles in every prompt; preserve the user's subject. Cross-subject review is still pending, and the legacy package prompt remains the default.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and scopes the direction to close-value colors, restrained horizontal intervals, shallow depth, and selective soft edges. Declare `user-requests-close-observation-of-matte-surface` only when close viewing of dry matte paint is requested to activate the surface-detail rule. It does not require bottles in every prompt; preserve the user's subject. Cross-subject review is still pending, and the legacy package prompt remains the default.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/giorgio-morandi --direction package --subject "Three folded towels and a small wooden tray on a shelf" --output runs/style-v2/morandi-job.json
