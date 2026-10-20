@@ -1,0 +1,149 @@
+schema_version: 2.1.0
+status: experimental
+id: greek-hellenistic-period-direction
+name: 古希腊化时期
+base_package: movements/greek-hellenistic-period
+scope:
+  medium: 'support: marble or bronze sculptural group, or a stone-and-tessera surface; mark: modeled torsion,
+    stretched drapery, contact shadows, selective polish; finish: museum-visible material with wear concentrated
+    on exposed edges'
+  representation: stylized
+  description: A late Greek visual language of energetic diagonals, torsion, emotional intensity, varied bodies,
+    theatrical space, and contact between Greek and eastern Mediterranean traditions after the Macedonian expansion.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+pillars:
+- A late Greek visual language of energetic diagonals, torsion, emotional intensity, varied bodies, theatrical
+  space, and contact between Greek and eastern Mediterranean traditions after the Macedonian expansion.
+- 'composition: drive the eye through a strong diagonal or spiral; use foreshortening and partial occlusion
+  to create spatial pressure; stage emotion as an embodied action, not a facial sticker'
+- 'form: anatomy: naturalistic, varied, age- and labor-specific; movement: torsion, counterforce, reaching,
+  falling, or turning; space: deep, crowded, and theatrically opened toward the viewer'
+- 'palette: stone and bronze neutrals; saturated red, blue, ochre, and green accents; dark cavities against
+  lit planes'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: drive the eye
+    through a strong diagonal or spiral; use foreshortening and partial occlusion to create spatial pressure;
+    stage emotion as an embodied action, not a facial sticker. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: drive the eye through
+    a strong diagonal or spiral; use foreshortening and partial occlusion to create spatial pressure; stage
+    emotion as an embodied action, not a facial sticker.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: drive the
+    eye through a strong diagonal or spiral; use foreshortening and partial occlusion to create spatial pressure;
+    stage emotion as an embodied action, not a facial sticker.'
+  evidence:
+    source_ids:
+    - source-met-hellenistic
+    - source-met-248120
+    - source-met-250541
+    basis: curatorial_inference
+    visual_review: pending
+- id: form
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: anatomy: naturalistic, varied, age- and labor-specific;
+    movement: torsion, counterforce, reaching, falling, or turning; space: deep, crowded, and theatrically
+    opened toward the viewer. Keep it subordinate to the requested subject and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: anatomy: naturalistic,
+    varied, age- and labor-specific; movement: torsion, counterforce, reaching, falling, or turning; space:
+    deep, crowded, and theatrically opened toward the viewer.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: anatomy: naturalistic,
+    varied, age- and labor-specific; movement: torsion, counterforce, reaching, falling, or turning; space:
+    deep, crowded, and theatrically opened toward the viewer.'
+  evidence:
+    source_ids:
+    - source-met-hellenistic
+    - source-met-248120
+    - source-met-250541
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: stone and bronze neutrals; saturated
+    red, blue, ochre, and green accents; dark cavities against lit planes. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: stone and bronze neutrals;
+    saturated red, blue, ochre, and green accents; dark cavities against lit planes.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    stone and bronze neutrals; saturated red, blue, ochre, and green accents; dark cavities against lit planes.'
+  evidence:
+    source_ids:
+    - source-met-hellenistic
+    - source-met-248120
+    - source-met-250541
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: polished and
+    rough passages coexist; marble grain, bronze patina, terracotta, or tesserae stay legible; drapery amplifies
+    motion and contact. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: polished
+    and rough passages coexist; marble grain, bronze patina, terracotta, or tesserae stay legible; drapery
+    amplifies motion and contact.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    polished and rough passages coexist; marble grain, bronze patina, terracotta, or tesserae stay legible;
+    drapery amplifies motion and contact.'
+  evidence:
+    source_ids:
+    - source-met-hellenistic
+    - source-met-248120
+    - source-met-250541
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- form
+- color
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - form
+  - color
+  instruction: Keep the package-specific relationship among composition, form, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-met-hellenistic
+  kind: primary
+  base_asset_id: met-hellenistic
+- id: source-met-248120
+  kind: primary
+  base_asset_id: met-248120
+- id: source-met-250541
+  kind: primary
+  base_asset_id: met-250541
+- id: source-met-252553
+  kind: primary
+  base_asset_id: met-252553
+- id: source-met-258495
+  kind: primary
+  base_asset_id: met-258495
+execution:
+  route: text_only
+  must:
+  - emotion is carried by posture and contact
+  - space feels active rather than diagrammed
+  - bodies include age, difference, and vulnerability
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - generic superhero action
+  - flat neoclassical calm
+  - horror gore as a shortcut to pathos
+  - copied famous sculpture group
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
