@@ -82,4 +82,4 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：相邻材质的局部色彩反射
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户画面本身包含相邻暖、冷色材质时启用：在接触面或阴影边缘加入少量邻近色反光，保留物体的大部分固有色、轮廓和材质差别。这是局部色彩关系，不是全局暖色滤镜。见 [`comparisons/`](comparisons/README.md) 查看静物测试；该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户画面本身包含相邻暖、冷色材质时启用：在局部加入少量邻近色反光，保留物体的大部分固有色和轮廓。只有调用者声明 `visible-contact-or-cast-shadow` 时，才将反光放到接触面或投影边缘；`unlike-materials-touch` 控制异质材质的边缘区分规则。这是局部色彩关系，不是全局暖色滤镜。见 [`comparisons/`](comparisons/README.md) 查看静物测试；该方向仍处于实验状态。

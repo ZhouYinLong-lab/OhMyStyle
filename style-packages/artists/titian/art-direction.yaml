@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: titian-adjacent-color-reflection
 name: Titian adjacent color reflection
@@ -23,6 +23,19 @@ scope:
     - Preserve every requested object, local color, material, lighting direction, and palette constraint.
     - Add reflected color only to a few shadow or transition planes; do not recolor an entire object or surface.
     - Keep each material independently recognizable.
+contexts:
+  - id: user-requested-adjacent-warm-and-cool-materials
+    description: The user requests neighboring warm and cool materials whose colors may interact locally.
+  - id: user-requested-monochrome-palette
+    description: The user requires a monochrome palette.
+  - id: isolated-object-with-no-adjacent-materials
+    description: A single isolated object without neighboring materials.
+  - id: exact-reconstruction-of-named-titian-work
+    description: A request to reproduce a named Titian work exactly.
+  - id: visible-contact-or-cast-shadow
+    description: The requested scene includes a visible contact or cast-shadow region between materials.
+  - id: unlike-materials-touch
+    description: The color interaction crosses visibly different materials such as fabric, fruit, ceramic, or skin.
 pillars:
   - Use local reflected color to connect neighboring warm and cool planes without erasing their identity.
   - Keep the strongest color exchange near contact or shadow transitions.
@@ -44,6 +57,8 @@ rules:
   - id: contact-and-shadow-carry-color-echo
     axis: reflected-color-placement
     importance: core
+    when_contexts:
+      - visible-contact-or-cast-shadow
     applies_when: Adjacent colored materials create a visible contact or cast-shadow region.
     instruction: Concentrate reflected color at the contact, underside, or shadow-facing edge; let it fade into the receiving material instead of outlining the whole object.
     observable: The color exchange explains proximity and form without looking like a graphic border.
@@ -57,6 +72,8 @@ rules:
   - id: preserve-distinct-painted-materials
     axis: material-and-edge-separation
     importance: supporting
+    when_contexts:
+      - unlike-materials-touch
     applies_when: Color interaction crosses fabric, fruit, ceramic, skin, or other unlike materials.
     instruction: Keep each surface's characteristic edge and paint thickness; vary the softness of selected transitions without merging silhouettes.
     observable: The image retains layered oil color and material-specific edges while neighboring colors subtly influence one another.
