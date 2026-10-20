@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: basquiat-user-authored-mark-hierarchy
 name: Basquiat user-authored mark hierarchy
@@ -25,6 +25,19 @@ scope:
     - Add no crown, skull, anatomy diagram, signature, street tag, historical allusion, or political message unless explicitly requested.
     - Keep the requested main subject legible beneath mark and color layers.
     - Do not copy a named painting's layout, text, symbol, or figure arrangement.
+contexts:
+  - id: user-authored-mark-hierarchy
+    description: The user supplies the exact words or symbols to include in the image.
+  - id: no-text-clean-layout
+    description: A clean image without text or symbols.
+  - id: corporate-typography-system
+    description: A polished brand or corporate typography layout.
+  - id: photorealistic-image
+    description: A photorealistic image without visible mixed-media marks.
+  - id: requested-mark-intervention
+    description: The user explicitly requests crossing out, circling, boxing, repeating, or partial coverage of a specified mark.
+  - id: rough-mixed-media-surface
+    description: The user requests a rough hand-marked or mixed-media surface.
 pillars:
   - Treat only the user's words and symbols as content; establish a clear hierarchy among them through scale, color, placement, and mark weight.
   - Use crossing, circling, boxing, or partial overlap only on the specific user-designated marks, keeping required text readable.
@@ -48,6 +61,8 @@ rules:
   - id: intentional-mark-intervention
     axis: line_and_emphasis
     importance: core
+    when_contexts:
+      - requested-mark-intervention
     applies_when: The user explicitly requests a word or symbol to be crossed out, circled, boxed, or partially covered.
     instruction: Apply the requested intervention only to the designated mark; make the intervention increase attention while retaining the degree of legibility the user requested.
     observable: The selected mark remains identifiable and the gesture clearly targets it rather than decorating the entire composition.
@@ -62,6 +77,8 @@ rules:
   - id: layered-mark-field-with-quiet-gaps
     axis: surface_and_color
     importance: supporting
+    when_contexts:
+      - rough-mixed-media-surface
     applies_when: The user requests a rough mixed-media or hand-marked surface.
     instruction: Layer a small number of hand-drawn marks and high-contrast color planes around the requested subject, then leave visible ground and quiet gaps so the mark hierarchy remains readable.
     observable: Line, color, and abrasion form distinct layers without replacing the subject or filling every area with noise.
