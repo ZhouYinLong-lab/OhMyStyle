@@ -1,0 +1,183 @@
+schema_version: 2.1.0
+status: experimental
+id: batik-wax-resist-direction
+name: 蜡染防染工艺
+base_package: techniques/batik-wax-resist
+scope:
+  medium: wax-resist textile dyeing translated into a material-aware visual treatment
+  representation: stylized
+  description: 以熔蜡防染、分层上色、裂纹渗色和织物吸收，形成由工艺顺序决定的图案与表面节奏。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory floral, temple, Indonesian, or regional ornament when not requested
+  - a smooth vector pattern or glossy synthetic fabric
+  - a fixed scarf, garment, or ceremonial object
+pillars:
+- 以熔蜡防染、分层上色、裂纹渗色和织物吸收，形成由工艺顺序决定的图案与表面节奏。
+- 'differentiation: wax barriers that remain legible as raised or pale resist edges; layered dye, crackle,
+  bleed, and cloth absorption; repeated marks with hand-process variation rather than perfect vector tiling'
+- 'composition: Let the cloth or supplied surface carry a legible field of resist boundaries, layered zones,
+  and irregular flow.; Use repeated marks with small deviations; avoid a mechanically tiled pattern.'
+- 'palette: Build color through layered dye: deep indigo and brown anchors, with restrained madder red, turmeric
+  yellow, and cloth cream.; Dark lines should feel like wax barriers, while dye areas show uneven absorption.'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: wax barriers
+    that remain legible as raised or pale resist edges; layered dye, crackle, bleed, and cloth absorption;
+    repeated marks with hand-process variation rather than perfect vector tiling. Do not collapse the direction
+    into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: wax barriers that remain legible
+    as raised or pale resist edges; layered dye, crackle, bleed, and cloth absorption; repeated marks with
+    hand-process variation rather than perfect vector tiling.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: wax
+    barriers that remain legible as raised or pale resist edges; layered dye, crackle, bleed, and cloth absorption;
+    repeated marks with hand-process variation rather than perfect vector tiling.'
+  evidence:
+    source_ids:
+    - source-batik-wax-resist-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Let the cloth
+    or supplied surface carry a legible field of resist boundaries, layered zones, and irregular flow.; Use
+    repeated marks with small deviations; avoid a mechanically tiled pattern.. Preserve the user-provided content
+    and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Let the cloth or
+    supplied surface carry a legible field of resist boundaries, layered zones, and irregular flow.; Use repeated
+    marks with small deviations; avoid a mechanically tiled pattern..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Let the
+    cloth or supplied surface carry a legible field of resist boundaries, layered zones, and irregular flow.;
+    Use repeated marks with small deviations; avoid a mechanically tiled pattern..'
+  evidence:
+    source_ids:
+    - source-batik-wax-resist-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Build color through layered dye:
+    deep indigo and brown anchors, with restrained madder red, turmeric yellow, and cloth cream.; Dark lines
+    should feel like wax barriers, while dye areas show uneven absorption.. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Build color through layered
+    dye: deep indigo and brown anchors, with restrained madder red, turmeric yellow, and cloth cream.; Dark
+    lines should feel like wax barriers, while dye areas show uneven absorption..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Build color through layered dye: deep indigo and brown anchors, with restrained madder red, turmeric yellow,
+    and cloth cream.; Dark lines should feel like wax barriers, while dye areas show uneven absorption..'
+  evidence:
+    source_ids:
+    - source-batik-wax-resist-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft material light that reveals weave,
+    wax ridges, and dye pooling; behavior: Keep highlights broad and matte; allow shallow shadows to describe
+    folded cloth and raised wax.; behavior: Avoid glossy studio reflections that make the textile read as plastic..
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft material light
+    that reveals weave, wax ridges, and dye pooling; behavior: Keep highlights broad and matte; allow shallow
+    shadows to describe folded cloth and raised wax.; behavior: Avoid glossy studio reflections that make the
+    textile read as plastic..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft material
+    light that reveals weave, wax ridges, and dye pooling; behavior: Keep highlights broad and matte; allow
+    shallow shadows to describe folded cloth and raised wax.; behavior: Avoid glossy studio reflections that
+    make the textile read as plastic..'
+  evidence:
+    source_ids:
+    - source-batik-wax-resist-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: tactile
+    dyed cloth with a dry, absorbent surface; edges: irregular resist edges with occasional bleed, crackle,
+    and imperfect registration. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    tactile dyed cloth with a dry, absorbent surface; edges: irregular resist edges with occasional bleed,
+    crackle, and imperfect registration.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: tactile dyed cloth with a dry, absorbent surface; edges: irregular resist edges with occasional
+    bleed, crackle, and imperfect registration.'
+  evidence:
+    source_ids:
+    - source-batik-wax-resist-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium-to-high
+    in marks, low in unpatterned support areas; placement: concentrated along wax lines, crackle networks,
+    folds, and overlaps between dye layers. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium-to-high in marks, low in unpatterned support areas; placement: concentrated along wax lines, crackle
+    networks, folds, and overlaps between dye layers.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium-to-high in marks, low in unpatterned support areas; placement: concentrated along wax lines,
+    crackle networks, folds, and overlaps between dye layers.'
+  evidence:
+    source_ids:
+    - source-batik-wax-resist-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-batik-wax-resist-primary-source
+  kind: primary
+  base_asset_id: batik-wax-resist-primary-source
+execution:
+  route: text_only
+  must:
+  - Establish the user's subject or pattern on the cloth without fixing a cultural motif.
+  - Draw irregular wax barriers that reserve selected areas from the first dye bath.
+  - Layer darker and warmer dyes, allowing absorption, pooling, and small cracks to interrupt the boundaries.
+  - Show folds, weave, and matte surface response; keep the result tactile rather than vector-smooth.
+  - Wax boundaries and dye sequence remain visible after the motif or subject changes.
+  - Cloth absorbency and small irregularities are more important than perfect geometry.
+  - The user's subject stays open; regional motifs are optional research context, not default content.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - mandatory floral, temple, Indonesian, or regional ornament when not requested
+  - a smooth vector pattern or glossy synthetic fabric
+  - a fixed scarf, garment, or ceremonial object
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
