@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: kahlo-frontal-presence-and-personal-symbolism
 name: Kahlo frontal presence and personal symbolism
@@ -24,6 +24,17 @@ scope:
     - Preserve the user's requested person, identity, age, clothing, pose, setting, and count; never substitute Kahlo or another named person.
     - Add no animal, plant, medical emblem, national costume, companion, or autobiographical prop unless the user requests it.
     - Keep personal symbolism legible through relationships among requested elements; do not invent dream logic to make the image seem surreal.
+contexts:
+  - id: intimate-symbolic-portrait
+    description: An intimate frontal or near-frontal painted portrait with shallow space.
+  - id: photorealistic-editorial-portrait
+    description: A photorealistic editorial portrait.
+  - id: automatic-dream-collage
+    description: A dream collage built from motifs not supplied by the user.
+  - id: multi-figure-deep-interior
+    description: A multi-figure scene organized around deep interior space.
+  - id: user-supplied-companion-forms
+    description: The user supplies objects, animals, plants, or other forms to accompany the portrait subject.
 pillars:
   - Give the requested portrait a steady frontal or near-frontal presence while preserving the specified gaze and pose.
   - Use shallow, constructed space and a clear backdrop to separate the person from the surrounding field.
@@ -47,6 +58,8 @@ rules:
   - id: user-authored-symbolic-relations
     axis: object_relationships
     importance: core
+    when_contexts:
+      - user-supplied-companion-forms
     applies_when: The user specifies one or more objects, animals, plants, or other forms to accompany the portrait subject.
     instruction: Place only the requested accompanying forms so their scale, distance, overlap, or contact makes a clear relationship with the person; preserve the objects' identities and do not assign a hidden narrative that the user did not state.
     observable: The requested objects feel deliberately related to the person and remain recognizable without becoming a generic symbolic inventory.

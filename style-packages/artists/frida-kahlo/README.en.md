@@ -36,7 +36,7 @@ this package stores source links and an original generated demonstration only.
 
 ## New architecture: frontal presence and personal symbolic relations (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `intimate-symbolic-portrait`. It makes frontal presence, shallow background space, and relationships among user-specified companion objects reviewable rules. It does not automatically add Kahlo herself, animals, plants, medical imagery, or Mexican dress.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when the user declares `intimate-symbolic-portrait`. It makes frontal presence and shallow background space reviewable rules. Relationships among companion objects activate only when the caller declares `user-supplied-companion-forms`. It does not automatically add Kahlo herself, animals, plants, medical imagery, or Mexican dress.
 
 This does not reduce Kahlo to “Surrealist collage”: requested objects stay legible and related to the portrait subject, rather than being randomly exchanged for dreamlike imagery. It also differs from Velázquez's direction, which organizes group portraits through dark interior depth and relationships among several gazes.
 
