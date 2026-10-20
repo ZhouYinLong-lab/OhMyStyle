@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: vermeer-quiet-cityscape-banded-depth
 name: Vermeer quiet cityscape with banded depth
@@ -23,6 +23,17 @@ scope:
     - Preserve requested location, weather, time, landmarks, viewpoint, framing, and object inventory.
     - Do not infer a canal, bridge, tower, boats, figures, or period architecture unless requested.
     - Never copy the skyline, viewpoint, or exact arrangement of View of Delft or another named work.
+contexts:
+  - id: quiet-cityscape-banded-depth
+    description: A user-requested townscape or cityscape organized in broad connected zones.
+  - id: dramatic-romantic-sunset
+    description: A cityscape led by a dramatic sunset or romantic atmosphere.
+  - id: flat-vector-city-poster
+    description: A flat vector city poster rather than a painted scene.
+  - id: photorealistic-architectural-render
+    description: A photorealistic architectural rendering.
+  - id: visible-reflective-or-textured-material
+    description: The requested scene includes water, glass, masonry, or another material that benefits from local highlights.
 pillars:
   - Organize requested foreground, town mass, and sky as broad connected horizontal zones, varying their height with the user's composition.
   - Use selective light-dark alternation across facades and roof groups to clarify depth without emphasizing an unrequested landmark.
@@ -59,6 +70,8 @@ rules:
   - id: sparse-optical-highlights
     axis: surface_and_light
     importance: supporting
+    when_contexts:
+      - visible-reflective-or-textured-material
     applies_when: Water, glass, masonry, or other reflective or textured material is requested.
     instruction: Reserve small crisp highlights and reflections for a few material-specific points; keep broad surfaces quiet and preserve the requested material colors.
     observable: Highlights read as local material cues and do not become an all-over sparkle or glow effect.

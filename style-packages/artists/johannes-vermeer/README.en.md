@@ -24,7 +24,7 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 ## Optional direction: quiet cityscape with banded depth
 
-`art-direction.yaml` registers an experimental direction for explicitly requested townscapes and cityscapes. It organizes foreground, built mass, and sky through broad horizontal relationships, then uses value, color, and edge changes to show depth. It does not add a canal, bridge, tower, boats, or figures, and it does not replace the package's interior default. Cross-subject visual review is pending. When compiling this direction, explicitly declare the `quiet-cityscape-banded-depth` context.
+`art-direction.yaml` uses direction format 2.1.0 and registers an experimental direction for explicitly requested townscapes and cityscapes. It organizes foreground, built mass, and sky through broad horizontal relationships, then uses value, color, and edge changes to show depth. Local highlight guidance activates only when the caller declares `visible-reflective-or-textured-material`. The direction does not add a canal, bridge, tower, boats, or figures, and it does not replace the package's interior default. Cross-subject visual review is pending. When compiling this direction, explicitly declare the `quiet-cityscape-banded-depth` context.
 
 ### Generated comparison using the same fictional townscape
 
