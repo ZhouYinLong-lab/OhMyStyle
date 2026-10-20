@@ -28,7 +28,7 @@ The package controls how an image is rendered, not what the user must render. Th
 
 ## New architecture: contour-led figure study (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) activates only for a user-requested painted figure when `contour-led-figure-study` is declared. A supple outer contour establishes the pose; a few interior lines describe structure and folds; restrained value shifts add volume. It does not automatically elongate the body, change body type or pose, or add classical costume, nudity, or allegory. The Musée d'Orsay's note on Ingres's *La Source* describes curved contours, simplified modeling, and shallow space; this direction uses those observable formal relationships without copying the figure or pose.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and activates only for a user-requested painted figure when `contour-led-figure-study` is declared. A supple outer contour establishes the pose; a few interior lines describe structure and folds; restrained value shifts add volume. The shallow-background rule applies only when the caller declares `quiet-background-permitted`. It does not automatically elongate the body, change body type or pose, or add classical costume, nudity, or allegory. The Musée d'Orsay's note on Ingres's *La Source* describes curved contours, simplified modeling, and shallow space; this direction uses those observable formal relationships without copying the figure or pose.
 
 This differs from Delacroix's color conflict and action-driven brushwork: contour and pose should read first, with marks and shadows kept controlled. It also differs from Van Eyck's material-reflection rules; this direction handles figure edges and economical volume.
 

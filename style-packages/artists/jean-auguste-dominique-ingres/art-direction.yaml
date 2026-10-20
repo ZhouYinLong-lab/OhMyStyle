@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: ingres-contour-led-figure-study
 name: Ingres contour-led figure study
@@ -24,6 +24,17 @@ scope:
     - Use contour to clarify the requested figure; do not force an idealized or elongated body shape.
     - Do not add classical costume, nude body, prop, inscription, or allegorical setting unless requested.
     - Do not reproduce a named figure, pose, or composition.
+contexts:
+  - id: contour-led-figure-study
+    description: A user-requested painted human figure or portrait organized by contour.
+  - id: action-scene
+    description: A dynamic scene centered on physical action or interaction.
+  - id: gestural-painterly-study
+    description: A figure study led by loose painterly gesture rather than contour.
+  - id: deep-cinematic-environment
+    description: A scene requiring deep atmospheric or cinematic environmental space.
+  - id: quiet-background-permitted
+    description: The requested figure scene allows a shallow, low-detail background.
 pillars:
   - Let a continuous, supple outer contour carry the figure's pose; use a small number of interior lines for garment folds and key structural transitions.
   - Keep value modeling smooth and restrained, with the silhouette distinct from a shallow, low-detail background.
@@ -60,6 +71,8 @@ rules:
   - id: shallow-quiet-stage
     axis: depth_and_background
     importance: supporting
+    when_contexts:
+      - quiet-background-permitted
     applies_when: The user's requested scene includes a background behind a figure.
     instruction: Keep the background visually quiet and spatially shallow enough for the figure contour to remain distinct; retain any setting details the user specifically requests.
     observable: Figure and background separate clearly without a forced studio void or invented architecture.
