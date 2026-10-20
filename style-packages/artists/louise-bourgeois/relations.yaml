@@ -14,11 +14,11 @@ not_equivalent_to:
 family: biomorphic-architectural-memory
 near_duplicates: []
 supersedes: []
-conflicts:
-  - glossy-commercial-product-render
+conflicts: []
 distinctives:
   - organic curves interrupt an architectural frame
   - tactile joins and repairs carry meaning without fixed narrative
   - negative space is treated as structural pressure
 avoid_overlap:
   - forced spiders, cages, cells, domestic interiors, or anatomy
+  - 'Avoid blending this direction with the unregistered contrast reference: glossy-commercial-product-render.'
