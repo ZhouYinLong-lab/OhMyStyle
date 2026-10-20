@@ -36,7 +36,7 @@
 
 ## 新架构：静物秩序与聚焦侧光（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `ordered-object-still-life` 时启用。它围绕用户指定的物件组织留白，以单一侧光呈现体积和材质差异；不会默认添加柑橘、玫瑰、器皿或宗教意象。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在显式声明 `ordered-object-still-life` 时启用。它围绕用户指定的物件组织留白，以单一侧光呈现体积。只有调用者声明 `multiple-distinct-materials` 时，才启用针对不同物件材质的细节区分规则；不会默认添加柑橘、玫瑰、器皿或宗教意象。
 
 这不同于卡拉瓦乔方向用强烈明暗对照组织近景人物和戏剧性动作，也不同于培根方向通过空间框架与轮廓偏移制造张力。苏巴朗方向关注的是稀疏物件之间的秩序、静态侧光及材质辨析。
 

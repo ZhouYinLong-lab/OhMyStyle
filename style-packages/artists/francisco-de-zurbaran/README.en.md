@@ -45,7 +45,7 @@ See [`provenance.yaml`](provenance.yaml),
 
 ## New architecture: ordered still life and focused side light (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when `ordered-object-still-life` is explicitly declared. It organizes negative space around user-specified objects and uses one lateral light to describe volume and material. It does not add citrus, roses, vessels, or devotional imagery by default.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when `ordered-object-still-life` is explicitly declared. It organizes negative space around user-specified objects and uses one lateral light to describe volume. Material-specific surface detail activates only when the caller declares `multiple-distinct-materials`. It does not add citrus, roses, vessels, or devotional imagery by default.
 
 This differs from Caravaggio's direction, which uses strong chiaroscuro for close figures and dramatic action, and Bacon's direction, which builds tension through spatial framing and contour shifts. Zurbarán's direction focuses on order among sparse objects, still lateral light, and material distinction.
 

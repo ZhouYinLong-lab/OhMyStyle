@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: zurbaran-ordered-still-life-and-focused-light
 name: Zurbarán ordered still life and focused light
@@ -22,6 +22,17 @@ scope:
     - Work only with objects and setting supplied or approved by the user; do not add signature fruit, vessels, flowers, or devotional symbols by default.
     - Keep the arrangement spare without changing object identity, count, or requested placement.
     - Use a single readable light direction; retain enough shadow detail to keep forms and materials legible.
+contexts:
+  - id: ordered-object-still-life
+    description: A user-requested arrangement of a small number of objects on a quiet ground.
+  - id: exuberant-decorative-tabletop
+    description: A crowded, ornate tabletop with dense decoration.
+  - id: high-key-product-photography
+    description: A brightly lit commercial product photograph.
+  - id: crowded-banquet-scene
+    description: A large banquet arrangement with many dishes and objects.
+  - id: multiple-distinct-materials
+    description: Two or more requested objects have visibly different materials.
 pillars:
   - Set a clear ground plane and separate each requested object with deliberate intervals and modest overlap.
   - Use one focused lateral light to model volume and let shadow transitions describe each object's material.
@@ -59,6 +70,8 @@ rules:
   - id: material-specific-surface-contrast
     axis: material_and_surface
     importance: supporting
+    when_contexts:
+      - multiple-distinct-materials
     applies_when: The scene contains two or more visually distinct requested materials.
     instruction: Differentiate each requested material through its highlight shape, edge character, and small-scale surface cues while keeping the overall brushwork restrained.
     observable: Ceramic, fabric, wood, metal, or fruit remain distinguishable without adding ornamental detail.
