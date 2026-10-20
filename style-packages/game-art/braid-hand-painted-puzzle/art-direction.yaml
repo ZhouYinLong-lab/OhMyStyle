@@ -1,0 +1,153 @@
+schema_version: 2.1.0
+status: experimental
+id: layered-hand-painted-puzzle-environment
+name: Layered hand-painted puzzle environment
+base_package: game-art/braid-hand-painted-puzzle
+scope:
+  medium: 2d_game_environment_illustration
+  representation: stylized
+  description: An original, readable 2D environment language built from painted depth layers, softened edges, selective translucent light, and tactile natural detail. It does not prescribe a particular game, character, puzzle mechanic, or story.
+  required_contexts:
+    - layered-2d-environment
+  incompatible_contexts:
+    - strict-pixel-grid
+    - flat-icon-only
+  limitations:
+    - Treat any named game and its assets as research context only; do not recreate its characters, scenes, interface, or recognizable compositions.
+    - Keep interactive paths and object boundaries legible; atmospheric layering must not obscure them.
+contexts:
+  - id: layered-2d-environment
+    description: The requested image is a side-view or shallow-depth 2D environment with visible spatial layers.
+  - id: foreground-obstruction
+    description: The user requests framing foliage, architecture, or another foreground layer.
+  - id: luminous-atmosphere
+    description: The scene includes mist, dust, filtered light, or another restrained atmospheric effect.
+  - id: gameplay-readability
+    description: The scene must communicate a traversable route, platform edge, or interactive area.
+  - id: strict-pixel-grid
+    description: The user requires a strict low-resolution pixel grid or discrete pixel clusters.
+  - id: flat-icon-only
+    description: The requested output is a flat icon or isolated symbol without environment depth.
+pillars:
+  - Separate foreground, playable middle distance, and background through paint handling and overlap rather than heavy outlines.
+  - Use hand-painted masses and selective translucent atmosphere while preserving clear spatial landmarks.
+  - Put fine natural detail where it supports depth and mood; protect the main route from visual noise.
+rules:
+  - id: painted-depth-layers
+    axis: composition
+    importance: core
+    applies_when: The scene contains more than one depth plane.
+    instruction: Organize the view into overlapping foreground, middle-ground, and distant layers. Keep the requested route or focal area in the middle ground, and use scale, value, and edge softness to separate depth.
+    observable: A viewer can distinguish the playable or focal plane from framing elements and the distant setting without relying on a uniform outline.
+    reject_when: All elements sit on one flat plane, or atmospheric layers erase the route and key silhouettes.
+    evidence:
+      source_ids:
+        - primary-01
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: fixed tree silhouettes, platform layouts, or scene arrangements associated with a particular game
+  - id: soft-paint-with-structural-edges
+    axis: surface
+    importance: core
+    applies_when: always
+    instruction: Build broad forms with visibly painted color masses and selective soft edges. Retain firmer edges at route boundaries, overlaps, and user-specified focal objects so the environment remains readable.
+    observable: Brush-like variation and softened transitions are visible in broad surfaces while important silhouettes and navigable boundaries stay distinct.
+    reject_when: A global blur softens every edge equally, or hard vector outlines replace the painted surface.
+    evidence:
+      source_ids:
+        - primary-01
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: uniform Gaussian blur, plastic smoothness, and heavy comic outlines
+  - id: restrained-translucent-atmosphere
+    axis: lighting
+    importance: supporting
+    applies_when: The requested scene includes haze, filtered light, dust, or mist.
+    when_contexts:
+      - luminous-atmosphere
+    instruction: Add atmospheric layers as sparse, low-opacity color veils or particles behind the main silhouettes. Let them gently connect planes without becoming a full-frame glow or obscuring functional edges.
+    observable: The atmosphere adds depth around selected light or distance cues, and the main route remains easy to parse.
+    reject_when: Particles or bloom cover key objects, or a uniform overlay flattens the separation between planes.
+    evidence:
+      source_ids:
+        - primary-01
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: pervasive sparkles, magical time motifs, and glowing interface elements
+  - id: localized-natural-detail
+    axis: texture
+    importance: supporting
+    applies_when: The environment contains natural or weathered surfaces.
+    instruction: Concentrate small marks in selected foliage, ground, stone, wood, or water areas; vary their scale and direction with the material, leaving quiet passages around the route and focal shapes.
+    observable: Local textures suggest distinct materials and depth, while large color masses remain readable at thumbnail size.
+    reject_when: Repeated detail fills every surface evenly or competes with the requested subject.
+    evidence:
+      source_ids:
+        - primary-01
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: uniform noise overlays, decorative particle fields, and detail copied from a reference scene
+  - id: organic-muted-color-structure
+    axis: palette
+    importance: core
+    applies_when: always
+    instruction: Use a scene-specific range of warm earth colors, softened greens, and blue-gray or muted cool notes. Reserve stronger accents for a small number of user-requested focal or navigation cues; avoid imposing a fixed filter on every image.
+    observable: Warm and cool regions help separate planes and materials, with accents remaining selective.
+    reject_when: An all-over sepia or green tint replaces material variation, or saturated effects dominate the environment.
+    evidence:
+      source_ids:
+        - primary-01
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: game-specific palette matching, neon grading, and mandatory golden-hour lighting
+  - id: playable-route-legibility
+    axis: composition
+    importance: core
+    applies_when: The scene is intended to communicate navigation or interaction.
+    when_contexts:
+      - gameplay-readability
+    instruction: Preserve clear negative space and value separation along the requested traversable route, platform edge, or interaction zone. Keep decorative foliage and foreground framing outside critical boundaries.
+    observable: The route or interaction area can be read quickly without removing the environmental depth and hand-painted character.
+    reject_when: Texture, haze, or overlapping props merge the route with its surroundings.
+    evidence:
+      source_ids:
+        - primary-01
+      basis: curatorial_inference
+      visual_review: pending
+    avoid: adding unrequested platforms, puzzle props, collectibles, or a fixed side-scrolling layout
+active_rule_ids:
+  - painted-depth-layers
+  - soft-paint-with-structural-edges
+  - restrained-translucent-atmosphere
+  - localized-natural-detail
+  - organic-muted-color-structure
+  - playable-route-legibility
+joint_checks:
+  - id: atmosphere-and-route-balance
+    rule_ids:
+      - painted-depth-layers
+      - restrained-translucent-atmosphere
+      - playable-route-legibility
+    instruction: Keep atmospheric depth behind the route-defining silhouettes and maintain distinct values across the traversable plane.
+    observable: Depth reads at a glance, atmospheric effects remain localized, and the route stays unobstructed.
+  - id: detail-and-paint-hierarchy
+    rule_ids:
+      - soft-paint-with-structural-edges
+      - localized-natural-detail
+      - organic-muted-color-structure
+    instruction: Let broad painted color masses establish the scene before local texture and accents; keep material detail subordinate to the main forms.
+    observable: The image reads first as a layered painted environment, then reveals selected surface details on closer inspection.
+sources:
+  - id: primary-01
+    kind: official_game_visual_context
+    url: https://braid-game.com/
+execution:
+  route: text_only
+  must:
+    - Preserve the user-provided subject, setting, count, and requested action.
+    - Build depth with hand-painted overlapping planes and selective edge control.
+    - Keep requested route boundaries readable when the scene has gameplay or navigation intent.
+  avoid:
+    - reproducing a specific game frame, character, level, interface, puzzle design, or recognizable scene layout
+    - adding time-reversal imagery, clocks, puzzle objects, or story motifs unless explicitly requested by the user
+    - applying a uniform blur, grain, color tint, or particle overlay across the whole image
