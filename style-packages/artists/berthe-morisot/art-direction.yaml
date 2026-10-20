@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: morisot-gesture-and-open-edge-painting
 name: Morisot gesture and open-edge painting
@@ -21,6 +21,17 @@ scope:
     - Preserve requested identities, activity, setting, and figure count; do not add a period costume, family relation, garden, or domestic prop unless requested.
     - Keep the face, hands, and other user-designated focal details readable while loosening selected boundaries.
     - Use quick brush marks to describe the requested form and gesture; do not turn every surface into identical broken color or add weather effects without request.
+contexts:
+  - id: open-brush-figure-painting
+    description: A figure-centered painting using open, visible brushwork.
+  - id: closed-academic-contour
+    description: A style requiring all contours to be closed and fully resolved.
+  - id: photorealistic-rendering
+    description: A photographic or photorealistic image without visible brush marks.
+  - id: all-over-soft-focus
+    description: A uniformly soft or blurred image treatment.
+  - id: light-ground-open-margin-allowed
+    description: The composition allows some light ground and sparse margins to remain visible.
 pillars:
   - Let grouped, quick strokes follow the gesture of a figure or the direction of cloth and nearby forms.
   - Resolve important facial, hand, and structural anchors while allowing selected edges to merge with adjacent color.
@@ -58,6 +69,8 @@ rules:
   - id: visible-ground-and-open-margin
     axis: surface_and_composition
     importance: core
+    when_contexts:
+      - light-ground-open-margin-allowed
     applies_when: The composition allows a light ground or quiet margin around its main subject.
     instruction: Leave selected corners, margins, or secondary planes sparse enough for the light ground to show through; let the degree of finish vary across the image while keeping the main subject structurally sound.
     observable: Open passages feel intentionally related to the subject and brushwork, not like an unfinished crop or missing background.

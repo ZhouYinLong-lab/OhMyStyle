@@ -38,10 +38,10 @@
 
 ## 新架构：手势笔触与开放边缘（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 让笔触跟随人物转身、衣料走势和邻近形体；在面部、手部等关键锚点保持可读的同时，选择性放开边缘，并让部分画布底色留在画面里。它针对的是笔触如何表现动作、边缘如何停笔和画布如何留气口；莫奈方向更侧重某一时刻的天气、光色条件和不同表面的笔触组织，莫里索方向不默认天气效果或风景系列。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，让笔触跟随人物转身、衣料走势和邻近形体；在面部、手部等关键锚点保持可读的同时，选择性放开边缘。只有调用者声明 `light-ground-open-margin-allowed` 时，才要求保留画布底色与稀疏边缘。它针对的是笔触如何表现动作、边缘如何停笔和画布如何留气口；莫奈方向更侧重某一时刻的天气、光色条件和不同表面的笔触组织，莫里索方向不默认天气效果或风景系列。
 
 ```powershell
-python tools/compile-style.py style-packages/artists/berthe-morisot --direction package --context open-brush-figure-painting --subject "A person turning while holding a loose white scarf beside an open window" --output runs/style-v2/berthe-morisot-job.json
+python tools/compile-style.py style-packages/artists/berthe-morisot --direction package --context open-brush-figure-painting --context light-ground-open-margin-allowed --subject "A person turning while holding a loose white scarf beside an open window" --output runs/style-v2/berthe-morisot-job.json
 ```
 
 此方向仍为实验规则；同题生图对照与跨主体稳定性待人工评审。
