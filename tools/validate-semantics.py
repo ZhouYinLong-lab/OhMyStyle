@@ -39,6 +39,17 @@ FIXED_SUBJECT_PATTERNS = [
     re.compile(r"(?:城市|森林|桥|铁路|房屋|巷道|人像|花卉)(?:必须|必需|默认)"),
 ]
 
+# Migration artifacts can be valid YAML while embedding serialized field names
+# such as "name: technique; visible_evidence: ..." inside a scalar. These are
+# not usable art-direction rules, so keep the semantic gate on their content.
+SERIALIZED_DIRECTION_PATTERNS = [
+    re.compile(r"\bname:\s*(?:technique|preset|school);\s*visible_evidence:", re.I),
+    re.compile(r"\bpriorities:\s*visual_hierarchy;\s*priorities:", re.I),
+    re.compile(r"\bcolors:\s*name:\s*color_\d+;\s*colors:\s*hex:", re.I),
+    re.compile(r"\bname:\s*[^;]+;\s*usage:\s*controlled relationship", re.I),
+    re.compile(r"\bquality:\s*[^;]+;\s*behavior:\s*(?:Keep the requested|Apply lighting as)", re.I),
+]
+
 
 def load(path: Path) -> Any:
     with path.open(encoding="utf-8") as handle:
@@ -56,6 +67,14 @@ def discover(root: Path) -> list[Path]:
 
 def list_values(value: Any) -> list[str]:
     return [str(item) for item in value] if isinstance(value, list) else []
+
+
+def string_values(value: Any) -> list[str]:
+    if isinstance(value, dict):
+        return [text for item in value.values() for text in string_values(item)]
+    if isinstance(value, list):
+        return [text for item in value for text in string_values(item)]
+    return [value] if isinstance(value, str) else []
 
 
 def main() -> None:
@@ -127,6 +146,20 @@ def main() -> None:
                 if pattern.search(text):
                     warnings.append(f"{package}: possible fixed subject language in {relative}")
                     break
+
+        direction_path = package / "art-direction.yaml"
+        if direction_path.is_file():
+            try:
+                direction = load(direction_path)
+            except Exception as exc:
+                errors.append(f"{package}: invalid art-direction.yaml: {exc}")
+            else:
+                if isinstance(direction, dict):
+                    for text in string_values(direction):
+                        matched = next((pattern for pattern in SERIALIZED_DIRECTION_PATTERNS if pattern.search(text)), None)
+                        if matched:
+                            errors.append(f"{package}: art-direction.yaml contains serialized field text ({matched.pattern})")
+                            break
 
     for warning in sorted(set(warnings)):
         print(f"WARN: {warning}")
