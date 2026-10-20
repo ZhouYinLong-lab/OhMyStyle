@@ -1,0 +1,153 @@
+schema_version: 2.1.0
+status: experimental
+id: elden-ring-dark-fantasy-direction
+name: 暗黑神话幻想游戏美术
+base_package: game-art/elden-ring-dark-fantasy
+scope:
+  medium: 写实三维环境结合绘画式大气; 石材和金属有历史重量; 形体细节集中在近景和建筑节点
+  representation: stylized
+  description: 以压低色组、历史重量、冷雾、稀疏暖光和巨大尺度对比构成庄严而克制的暗黑幻想视觉规则，不绑定具体主体或地点。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied_boss
+  - recognizable_weapon
+  - gore
+  - generic_high_fantasy_gloss
+  - excessive_particles
+pillars:
+- 以压低色组、历史重量、冷雾、稀疏暖光和巨大尺度对比构成庄严而克制的暗黑幻想视觉规则，不绑定具体主体或地点。
+- 'medium: 写实三维环境结合绘画式大气; 石材和金属有历史重量; 形体细节集中在近景和建筑节点'
+- 'composition: 巨大结构或自然体量与主体形成庄严尺度对比; 线性与垂直结构形成庄严引导线; 垂直结构与深层负空间产生危险尺度'
+- 'palette: 炭蓝、冷灰、枯金、暗褐和微弱琥珀形成压低色组; 金色只作为遥远火光或稀疏植被; 不使用纯黑吞没细节'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 写实三维环境结合绘画式大气;
+    石材和金属有历史重量; 形体细节集中在近景和建筑节点.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 写实三维环境结合绘画式大气;
+    石材和金属有历史重量; 形体细节集中在近景和建筑节点.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    写实三维环境结合绘画式大气; 石材和金属有历史重量; 形体细节集中在近景和建筑节点.'
+  evidence:
+    source_ids:
+    - source-elden-ring-dark-fantasy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 巨大结构或自然体量与主体形成庄严尺度对比;
+    线性与垂直结构形成庄严引导线; 垂直结构与深层负空间产生危险尺度. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 巨大结构或自然体量与主体形成庄严尺度对比;
+    线性与垂直结构形成庄严引导线; 垂直结构与深层负空间产生危险尺度.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 巨大结构或自然体量与主体形成庄严尺度对比;
+    线性与垂直结构形成庄严引导线; 垂直结构与深层负空间产生危险尺度.'
+  evidence:
+    source_ids:
+    - source-elden-ring-dark-fantasy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 炭蓝、冷灰、枯金、暗褐和微弱琥珀形成压低色组; 金色只作为遥远火光或稀疏植被;
+    不使用纯黑吞没细节. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 炭蓝、冷灰、枯金、暗褐和微弱琥珀形成压低色组; 金色只作为遥远火光或稀疏植被;
+    不使用纯黑吞没细节.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    炭蓝、冷灰、枯金、暗褐和微弱琥珀形成压低色组; 金色只作为遥远火光或稀疏植被; 不使用纯黑吞没细节.'
+  evidence:
+    source_ids:
+    - source-elden-ring-dark-fantasy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 月光或阴天冷光为主; 远处火光提供稀疏暖色; 雾层按距离降低对比度. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 月光或阴天冷光为主; 远处火光提供稀疏暖色; 雾层按距离降低对比度.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 月光或阴天冷光为主; 远处火光提供稀疏暖色;
+    雾层按距离降低对比度.'
+  evidence:
+    source_ids:
+    - source-elden-ring-dark-fantasy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 湿石、苔藓、锈金属、枯木和布料可分辨;
+    表面老化具有方向和历史感. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 湿石、苔藓、锈金属、枯木和布料可分辨;
+    表面老化具有方向和历史感.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    湿石、苔藓、锈金属、枯木和布料可分辨; 表面老化具有方向和历史感.'
+  evidence:
+    source_ids:
+    - source-elden-ring-dark-fantasy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纹理沿侵蚀、裂缝和植被生长方向分布;
+    远景只保留大型结构. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纹理沿侵蚀、裂缝和植被生长方向分布;
+    远景只保留大型结构.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纹理沿侵蚀、裂缝和植被生长方向分布; 远景只保留大型结构.'
+  evidence:
+    source_ids:
+    - source-elden-ring-dark-fantasy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-elden-ring-dark-fantasy-primary-source
+  kind: primary
+  base_asset_id: elden-ring-dark-fantasy-primary-source
+execution:
+  route: text_only
+  must:
+  - 先建立巨大结构和深层负空间
+  - 再安排冷暖光源位置
+  - 用雾层组织距离
+  - 最后加入少量尺度人物和植被
+  - 庄严感来自尺度和时间痕迹
+  - 暗部仍可读取形体
+  - 不得复制具体 Boss、武器、纹章或地点
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied_boss
+  - recognizable_weapon
+  - gore
+  - generic_high_fantasy_gloss
+  - excessive_particles
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
