@@ -1,0 +1,153 @@
+schema_version: 2.1.0
+status: experimental
+id: arte-povera-direction
+name: 贫穷艺术
+base_package: movements/arte-povera
+scope:
+  medium: material-based installation and process-oriented image-making
+  representation: stylized
+  description: 以非贵重材料、临时结构、自然变化、粗粝表面和材料之间的张力组织画面，强调物质过程而非装饰性完成度。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory soil, stone, burlap, branches, or gallery installation
+pillars:
+- 以非贵重材料、临时结构、自然变化、粗粝表面和材料之间的张力组织画面，强调物质过程而非装饰性完成度。
+- 'composition: asymmetrical relationships between heavy, fragile, raw, and processed elements; temporary balance
+  and visible tension replace polished visual closure; generous space lets material changes and contact points
+  remain legible'
+- 'palette: stone, soil, wood, fiber, oxidized metal, and muted translucent accents; color comes from matter
+  and aging, not from a decorative preset or clean brand system'
+- 'lighting: quality: TODO; behavior: TODO: describe direction, softness, contrast, or atmospheric behavior.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: asymmetrical
+    relationships between heavy, fragile, raw, and processed elements; temporary balance and visible tension
+    replace polished visual closure; generous space lets material changes and contact points remain legible.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: asymmetrical relationships
+    between heavy, fragile, raw, and processed elements; temporary balance and visible tension replace polished
+    visual closure; generous space lets material changes and contact points remain legible.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: asymmetrical
+    relationships between heavy, fragile, raw, and processed elements; temporary balance and visible tension
+    replace polished visual closure; generous space lets material changes and contact points remain legible.'
+  evidence:
+    source_ids:
+    - source-arte-povera-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: stone, soil, wood, fiber, oxidized
+    metal, and muted translucent accents; color comes from matter and aging, not from a decorative preset or
+    clean brand system. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: stone, soil, wood, fiber,
+    oxidized metal, and muted translucent accents; color comes from matter and aging, not from a decorative
+    preset or clean brand system.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    stone, soil, wood, fiber, oxidized metal, and muted translucent accents; color comes from matter and aging,
+    not from a decorative preset or clean brand system.'
+  evidence:
+    source_ids:
+    - source-arte-povera-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: TODO; behavior: TODO: describe direction,
+    softness, contrast, or atmospheric behavior.. Keep light coherent with the requested subject, medium, and
+    scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: TODO; behavior: TODO:
+    describe direction, softness, contrast, or atmospheric behavior..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: TODO; behavior:
+    TODO: describe direction, softness, contrast, or atmospheric behavior..'
+  evidence:
+    source_ids:
+    - source-arte-povera-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: raw,
+    handled, weathered, and visibly provisional; edges: irregular cuts, frayed fibers, rough breaks, and natural
+    material boundaries. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    raw, handled, weathered, and visibly provisional; edges: irregular cuts, frayed fibers, rough breaks, and
+    natural material boundaries.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: raw, handled, weathered, and visibly provisional; edges: irregular cuts, frayed fibers, rough breaks,
+    and natural material boundaries.'
+  evidence:
+    source_ids:
+    - source-arte-povera-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: high
+    at material contacts and changes, sparse in surrounding space; placement: pores, dust, scratches, oxidation,
+    tears, and small signs of use remain visible. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    high at material contacts and changes, sparse in surrounding space; placement: pores, dust, scratches,
+    oxidation, tears, and small signs of use remain visible.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: high at material contacts and changes, sparse in surrounding space; placement: pores, dust, scratches,
+    oxidation, tears, and small signs of use remain visible.'
+  evidence:
+    source_ids:
+    - source-arte-povera-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-arte-povera-primary-source
+  kind: primary
+  base_asset_id: arte-povera-primary-source
+execution:
+  route: text_only
+  must:
+  - begin with the user's subject and identify its material behavior
+  - pair or contrast raw and processed, heavy and fragile, stable and changing states
+  - leave contact, tension, aging, or transformation visible
+  - avoid polishing away the evidence of assembly and use
+  - material process remains visible and meaningful
+  - balance feels temporary rather than engineered for showroom perfection
+  - humble surface and natural change are prioritized over ornament
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - mandatory soil, stone, burlap, branches, or gallery installation
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
