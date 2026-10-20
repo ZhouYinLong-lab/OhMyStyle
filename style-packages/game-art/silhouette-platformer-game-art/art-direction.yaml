@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: silhouette-platformer-game-art-direction
+name: 剪影光影平台游戏美术
+base_package: game-art/silhouette-platformer-game-art
+scope:
+  medium: 二维剪影与柔焦背景; 细微颗粒和体积空气; 实体边缘保持清楚
+  representation: stylized
+  description: 以剪影角色、背光环境、层叠雾气和有限色彩构成平台游戏画面，利用轮廓和光线表达动作、危险与深度。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - pure_black_everywhere
+  - hidden_playability
+  - horror_gore
+  - copied_character
+pillars:
+- 以剪影角色、背光环境、层叠雾气和有限色彩构成平台游戏画面，利用轮廓和光线表达动作、危险与深度。
+- 'medium: 二维剪影与柔焦背景; 细微颗粒和体积空气; 实体边缘保持清楚'
+- 'composition: 角色轮廓和可行走平台优先; 前景、中景和远景以明度分层; 障碍物边缘留出可读间隙'
+- 'palette: 黑、灰、冷蓝和少量灰白构成低饱和色组; 焦点光可以是暖白或暗红但不铺满; 色彩差异服务深度'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 二维剪影与柔焦背景;
+    细微颗粒和体积空气; 实体边缘保持清楚.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 二维剪影与柔焦背景;
+    细微颗粒和体积空气; 实体边缘保持清楚.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    二维剪影与柔焦背景; 细微颗粒和体积空气; 实体边缘保持清楚.'
+  evidence:
+    source_ids:
+    - source-silhouette-platformer-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 角色轮廓和可行走平台优先;
+    前景、中景和远景以明度分层; 障碍物边缘留出可读间隙. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 角色轮廓和可行走平台优先; 前景、中景和远景以明度分层;
+    障碍物边缘留出可读间隙.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 角色轮廓和可行走平台优先;
+    前景、中景和远景以明度分层; 障碍物边缘留出可读间隙.'
+  evidence:
+    source_ids:
+    - source-silhouette-platformer-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑、灰、冷蓝和少量灰白构成低饱和色组; 焦点光可以是暖白或暗红但不铺满;
+    色彩差异服务深度. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑、灰、冷蓝和少量灰白构成低饱和色组; 焦点光可以是暖白或暗红但不铺满;
+    色彩差异服务深度.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑、灰、冷蓝和少量灰白构成低饱和色组; 焦点光可以是暖白或暗红但不铺满; 色彩差异服务深度.'
+  evidence:
+    source_ids:
+    - source-silhouette-platformer-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 逆光和侧光塑造轮廓; 薄雾和远处光带建立空间; 不使用彩色轮廓光. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 逆光和侧光塑造轮廓; 薄雾和远处光带建立空间; 不使用彩色轮廓光.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 逆光和侧光塑造轮廓; 薄雾和远处光带建立空间;
+    不使用彩色轮廓光.'
+  evidence:
+    source_ids:
+    - source-silhouette-platformer-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 材质以轮廓、纹理密度和明暗区分;
+    阴影保持可读而非纯黑块. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 材质以轮廓、纹理密度和明暗区分;
+    阴影保持可读而非纯黑块.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    材质以轮廓、纹理密度和明暗区分; 阴影保持可读而非纯黑块.'
+  evidence:
+    source_ids:
+    - source-silhouette-platformer-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 远景颗粒少、前景纹理多;
+    雾有方向但不遮蔽平台. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 远景颗粒少、前景纹理多;
+    雾有方向但不遮蔽平台.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    远景颗粒少、前景纹理多; 雾有方向但不遮蔽平台.'
+  evidence:
+    source_ids:
+    - source-silhouette-platformer-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-silhouette-platformer-game-art-primary-source
+  kind: primary
+  base_asset_id: silhouette-platformer-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先画可玩平台和角色轮廓
+  - 再安排逆光与远近层
+  - 加入有限材质细节
+  - 最后测试低对比缩略图可读性
+  - 剪影不是失焦或低曝光
+  - 游戏路径仍然清楚
+  - 不复制来源关卡和怪物
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - pure_black_everywhere
+  - hidden_playability
+  - horror_gore
+  - copied_character
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
