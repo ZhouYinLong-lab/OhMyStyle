@@ -4,7 +4,7 @@ id: muted-documentary-color-direction
 name: 低饱和纪实色彩
 base_package: presets/muted-documentary-color
 scope:
-  medium: 'name: preset; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
+  medium: a transferable photographic rendering treatment that preserves the user-requested capture medium
   representation: stylized
   description: Builds an observational look through restrained but not lifeless color, natural overcast light,
     ordinary surfaces, and unforced framing; it is not bound to a subject, place, or narrative.
@@ -14,24 +14,23 @@ scope:
   - copying_a_specific_work
   - copying_a_named_character_or_logo
 pillars:
-- Builds an observational look through restrained but not lifeless color, natural overcast light, ordinary
-  surfaces, and unforced framing; it is not bound to a subject, place, or narrative.
-- 'medium: name: preset; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
-- 'composition: priorities: visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer'
-- 'palette: name: muted-documentary-color; usage: controlled relationship among dominant, support, shadow,
-  and accent colors; colors: name: color_0; colors: hex: #50565A; colors: role: 阴影与道路; colors: name: color_1;
-  colors: hex: #73828A; colors: role: 空气与远景'
+- Builds an observational look through restrained but not lifeless color, natural overcast light, ordinary surfaces,
+  and unforced framing; it is not bound to a subject, place, or narrative.
+- 'medium: a transferable photographic rendering treatment that preserves the user-requested capture medium'
+- 'composition: Use unforced framing and ordinary environmental context; keep the subject readable through restrained
+  contrast and natural spatial relationships.'
+- 'palette: Muted shadow #50565A, blue-gray distance #73828A, muted red focal note #9B6256, plant green #6F7960,
+  warm highlight #D7D2C7, and natural skin #A98772.'
 rules:
 - id: medium
   axis: medium
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: name:
-    preset; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  observable: 'The requested image retains the stated medium distinction or production constraint: name: preset;
-    visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
-    name: preset; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
+  instruction: Render in a transferable photographic rendering treatment that preserves the user-requested capture
+    medium; make the production or rendering process visible in edge, surface, and tonal evidence.
+  observable: The image visibly reads as a transferable photographic rendering treatment that preserves the user-requested
+    capture medium, rather than a generic color treatment.
+  reject_when: Reject when the material or rendering process cannot be distinguished from a generic filter.
   evidence:
     source_ids:
     - source-source-1
@@ -42,13 +41,11 @@ rules:
   axis: composition
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Organize the requested subject using these package-specific spatial decisions: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer. Preserve
-    the user-provided content and layout.'
-  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: priorities: visual_hierarchy;
-    priorities: negative_space; priorities: subject_independent_style_transfer.'
-  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer.'
+  instruction: Use unforced framing and ordinary environmental context; keep the subject readable through restrained
+    contrast and natural spatial relationships. Preserve the user-provided subject and requested layout.
+  observable: Use unforced framing and ordinary environmental context; keep the subject readable through restrained
+    contrast and natural spatial relationships.
+  reject_when: Reject when the arrangement loses these structural decisions or copies a source composition.
   evidence:
     source_ids:
     - source-source-1
@@ -59,17 +56,11 @@ rules:
   axis: palette
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: name: muted-documentary-color; usage:
-    controlled relationship among dominant, support, shadow, and accent colors; colors: name: color_0; colors:
-    hex: #50565A; colors: role: 阴影与道路; colors: name: color_1; colors: hex: #73828A; colors: role: 空气与远景. Adapt
-    their balance to the requested subject; do not apply them as a uniform tint.'
-  observable: 'The stated colors and their roles are visible and distinguishable: name: muted-documentary-color;
-    usage: controlled relationship among dominant, support, shadow, and accent colors; colors: name: color_0;
-    colors: hex: #50565A; colors: role: 阴影与道路; colors: name: color_1; colors: hex: #73828A; colors: role: 空气与远景.'
-  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
-    name: muted-documentary-color; usage: controlled relationship among dominant, support, shadow, and accent
-    colors; colors: name: color_0; colors: hex: #50565A; colors: role: 阴影与道路; colors: name: color_1; colors:
-    hex: #73828A; colors: role: 空气与远景.'
+  instruction: Lower color intensity without draining all color. Preserve believable skin and material colors,
+    and reserve the warmest hue for a small focal area.
+  observable: 'Muted shadow #50565A, blue-gray distance #73828A, muted red focal note #9B6256, plant green #6F7960,
+    warm highlight #D7D2C7, and natural skin #A98772.'
+  reject_when: Reject when a global tint replaces the stated color roles or the roles cannot be distinguished.
   evidence:
     source_ids:
     - source-source-1
@@ -88,8 +79,7 @@ joint_checks:
   - palette
   instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
     the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-source-1
   kind: style_reference
