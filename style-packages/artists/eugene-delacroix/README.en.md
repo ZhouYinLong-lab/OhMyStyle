@@ -34,7 +34,7 @@ See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references
 
 ## New architecture: color-driven motion and brushwork (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `chromatic-dynamic-scene`. It turns warm-cool interaction, a clear action vector, and material-sensitive brush rhythm into reviewable rules. Unlike Turner's direction, which expresses movement through weather and dissolving atmosphere, this one uses neighboring colors and figure gestures to carry motion. It does not default to revolutions, flags, weapons, or exoticized costume.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when the user declares `chromatic-dynamic-scene`. Warm-cool interaction is a base rule; callers can also declare `clear-action-gesture-or-spatial-movement` and `user-requested-painted-active-scene` to activate the matching action and brushwork rules. Unlike Turner's direction, which expresses movement through weather and dissolving atmosphere, this one uses neighboring colors and figure gestures to carry motion. It does not default to revolutions, flags, weapons, or exoticized costume.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/eugene-delacroix --direction package --context chromatic-dynamic-scene --subject "A street musician turning toward a sudden gust as sheet music lifts" --output runs/style-v2/eugene-delacroix-job.json

@@ -34,7 +34,7 @@
 
 ## 新架构：色彩驱动的运动与笔触（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `chromatic-dynamic-scene` 时启用。新版把暖冷色交互、明确的动作方向和随材质变化的笔触节奏拆成可检查规则。它与透纳依靠天气、雾气和空间消融表现运动的方向不同：这里让相邻色彩和人物动作共同承载动势；不默认加入革命、旗帜、武器或异域服饰。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户指定 `chromatic-dynamic-scene` 时启用。暖冷色交互作为基础规则；调用者还可声明 `clear-action-gesture-or-spatial-movement` 和 `user-requested-painted-active-scene`，按需启用动作构图与笔触规则。它与透纳依靠天气、雾气和空间消融表现运动的方向不同：这里让相邻色彩和人物动作共同承载动势；不默认加入革命、旗帜、武器或异域服饰。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/eugene-delacroix --direction package --context chromatic-dynamic-scene --subject "A street musician turning toward a sudden gust as sheet music lifts" --output runs/style-v2/eugene-delacroix-job.json
