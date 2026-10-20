@@ -65,3 +65,7 @@ python tools/compile-style.py style-packages/artists/utagawa-hiroshige --directi
 ```
 
 This direction remains experimental. The Met's description of *Snowy Gorge* and British Museum material on Hiroshige's viewpoints and woodblock gradation support these observations; cross-subject and Hokusai differentiation review is still pending.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

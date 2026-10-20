@@ -65,3 +65,7 @@ python tools/compile-style.py style-packages/artists/utagawa-hiroshige --directi
 ```
 
 方向仍处于实验状态。大都会艺术博物馆关于《雪峡》的说明和大英博物馆关于广重取景与木版渐变的资料支持这些观察；跨题材和与北斋方向的图片区分仍待评审。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。

@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "utagawa-hiroshige",
+    "name": "歌川广重",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\utagawa-hiroshige"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A narrow path beside a river in first snow, with one distant footbridge",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A narrow path beside a river in first snow, with one distant footbridge\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original image using this package as a visual language, not as a fixed subject or copied composition.\n\nPackage signature:\n- 裁切式不对称取景\n- 天气与空气透视作为主要空间信号\n- 靛蓝与灰蓝色层配合简洁木刻线\n- 主体保持开放，不自动加入名胜或人物故事\n\nSubject rule:\nKeep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.\n\nReproduction direction:\n- 先确定远近层次与不对称裁切\n- 用简洁轮廓概括主体，不堆叠无关细节\n- 以天气和空气透视安排色阶\n- 最后加入有限的木版线条和套色触感\n\nUser request:\nA narrow path beside a river in first snow, with one distant footbridge\nthe user-requested composition\nthe user-requested aspect ratio\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not add a fixed subject, landmark, named character, branded asset, readable text, logo, watermark, copied composition, or story event from the reference context.\nKeep the user-supplied subject, object count, location, action, and narrative unchanged.\nDo not turn the package into a global color filter, generic cinematic grading, or automatic subject generator.",
+  "template_variables": {
+    "SUBJECT": "A narrow path beside a river in first snow, with one distant footbridge",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material",
+          "no fixed subject leaks into the output"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "preserve the user-supplied person or object without adding a recurring figure"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "preserve the user-supplied objects and their count"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

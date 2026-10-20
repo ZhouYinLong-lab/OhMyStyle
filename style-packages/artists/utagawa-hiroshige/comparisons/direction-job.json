@@ -1,0 +1,158 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "utagawa-hiroshige",
+    "name": "歌川广重",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\utagawa-hiroshige"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A narrow path beside a river in first snow, with one distant footbridge",
+  "prompt": "USER SUBJECT: A narrow path beside a river in first snow, with one distant footbridge\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: japanese_color_woodblock\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [atmosphere-through-print-process] Translate the requested atmosphere through woodblock-friendly means: unprinted paper for snow, controlled bokashi-like gradation for rain or haze, and restrained line marks for falling weather.\n- [cropped-foreground-and-travel-scale] Build an asymmetrical landscape view from a cropped or enlarged near form, a readable middle-distance route or waterway, and a reduced far plane; include small people only when requested.\n- [layered-color-and-ink-contour] Separate the landscape into a limited set of clean printed color planes with concise ink contours; soften distant values and reserve the strongest edge or color accent for the near plane.\n- [weather-scale-and-print-coherence] Make the requested atmosphere, near-to-far scale, and printed color layers support the same landscape moment without adding an unrequested landmark or narrative.\nREQUIREMENT: Preserve the user-requested landscape, place, weather, and figure count.\nREQUIREMENT: Keep a legible near, middle, and far plane with a clear route through the view.\nREQUIREMENT: Use layered print colors, concise contour, and restrained atmospheric gradation.",
+  "negative_prompt": "photographic mist, uniform weather particles, and unrequested rain or snow\nequal-detail scenic panoramas and copied landmark compositions\noil-paint impasto, lens blur, and uniformly bold outlines\ncopying a named Hiroshige print, series layout, or landmark arrangement\nadding Mount Fuji, bridges, travelers, rain, or snow unless requested\nphotorealistic fog, thick painterly strokes, and uniform high-contrast outlines",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "hiroshige-atmospheric-landscape-print",
+    "name": "Hiroshige atmospheric landscape print",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\utagawa-hiroshige\\art-direction.yaml",
+    "sha256": "2ad77eec2a92844aa1cd1d8668208bb62e13b63e8cf305caf0629d869badc9e9",
+    "active_rule_ids": [
+      "atmosphere-through-print-process",
+      "cropped-foreground-and-travel-scale",
+      "layered-color-and-ink-contour"
+    ],
+    "contexts": [
+      "landscape-view"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Preserve the user-requested landscape, place, weather, and figure count.",
+      "Keep a legible near, middle, and far plane with a clear route through the view.",
+      "Use layered print colors, concise contour, and restrained atmospheric gradation."
+    ],
+    "avoid": [
+      "copying a named Hiroshige print, series layout, or landmark arrangement",
+      "adding Mount Fuji, bridges, travelers, rain, or snow unless requested",
+      "photorealistic fog, thick painterly strokes, and uniform high-contrast outlines"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "japanese_color_woodblock",
+      "representation": "stylized",
+      "description": "A landscape-view direction where weather, travel-scale figures, cropped foreground framing, and layered color make the printed scene feel like one observed moment within a larger route.",
+      "required_contexts": [
+        "landscape-view"
+      ],
+      "incompatible_contexts": [
+        "object-only-still-life",
+        "photoreal-atmosphere"
+      ],
+      "limitations": [
+        "Follow the requested place, season, weather, and figure count; do not add rain, snow, landmarks, or travelers unless supported by the prompt.",
+        "This direction describes a landscape print method, not a fixed Japanese scene or a specific Hiroshige series."
+      ]
+    },
+    "rules": [
+      {
+        "id": "atmosphere-through-print-process",
+        "axis": "lighting",
+        "importance": "core",
+        "applies_when": "The prompt includes rain, snow, mist, dusk, or another visible atmospheric condition.",
+        "instruction": "Translate the requested atmosphere through woodblock-friendly means: unprinted paper for snow, controlled bokashi-like gradation for rain or haze, and restrained line marks for falling weather.",
+        "observable": "Weather changes the visibility and contrast of the scene's planes and remains integrated with the printed surface.",
+        "reject_when": "Weather appears as a photographic overlay, uniform particle effect, or an unrequested dramatic event.",
+        "evidence": {
+          "source_ids": [
+            "hiroshige-met-snowy-gorge",
+            "hiroshige-british-museum-technique"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "photographic mist, uniform weather particles, and unrequested rain or snow"
+      },
+      {
+        "id": "cropped-foreground-and-travel-scale",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Build an asymmetrical landscape view from a cropped or enlarged near form, a readable middle-distance route or waterway, and a reduced far plane; include small people only when requested.",
+        "observable": "Near and far forms differ in scale and contrast, and the viewer can follow a path, bridge, river, or other spatial connection through the image.",
+        "reject_when": "Every plane has equal detail and scale, or the crop reproduces a recognizable named print.",
+        "evidence": {
+          "source_ids": [
+            "hiroshige-british-museum-open-road",
+            "hiroshige-met-snowy-gorge"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "equal-detail scenic panoramas and copied landmark compositions"
+      },
+      {
+        "id": "layered-color-and-ink-contour",
+        "axis": "palette",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Separate the landscape into a limited set of clean printed color planes with concise ink contours; soften distant values and reserve the strongest edge or color accent for the near plane.",
+        "observable": "The scene reads as layered color printing on paper, with distance carried by contrast and overlap rather than photographic lens blur.",
+        "reject_when": "Thick painterly impasto, airbrushed depth blur, or highly saturated contour-heavy graphic blocks dominate.",
+        "evidence": {
+          "source_ids": [
+            "hiroshige-met-snowy-gorge",
+            "hiroshige-british-museum-open-road"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "oil-paint impasto, lens blur, and uniformly bold outlines"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "weather-scale-and-print-coherence",
+        "rule_ids": [
+          "atmosphere-through-print-process",
+          "cropped-foreground-and-travel-scale",
+          "layered-color-and-ink-contour"
+        ],
+        "instruction": "Make the requested atmosphere, near-to-far scale, and printed color layers support the same landscape moment without adding an unrequested landmark or narrative.",
+        "observable": "Atmospheric handling reduces distance, the foreground crop frames rather than hides the view, and color planes retain a woodblock-print character."
+      }
+    ],
+    "sources": [
+      {
+        "id": "hiroshige-met-snowy-gorge",
+        "kind": "museum_object_description",
+        "url": "https://www.metmuseum.org/art/collection/search/56683"
+      },
+      {
+        "id": "hiroshige-british-museum-open-road",
+        "kind": "museum_essay",
+        "url": "https://www.britishmuseum.org/blog/introduction-hiroshige-artist-open-road"
+      },
+      {
+        "id": "hiroshige-british-museum-technique",
+        "kind": "museum_process_description",
+        "url": "https://www.britishmuseum.org/blog/technique-making-good-impression"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "2ad77eec2a92844aa1cd1d8668208bb62e13b63e8cf305caf0629d869badc9e9",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
