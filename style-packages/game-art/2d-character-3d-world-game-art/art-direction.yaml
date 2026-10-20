@@ -1,0 +1,141 @@
+schema_version: 2.1.0
+status: experimental
+id: 2d-character-3d-world-game-art-direction
+name: 二维角色与三维场景混合游戏美术
+base_package: game-art/2d-character-3d-world-game-art
+scope:
+  medium: 平面角色动画与三维几何环境共存; 角色不自动变为像素或剪纸
+  representation: stylized
+  description: 让平面绘制的角色在有深度的三维空间活动，保留二维表演力度，同时获得立体关卡的距离、遮挡与探索。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - unmotivated pixel grid
+  - floating character
+  - copied named character
+pillars:
+- 让平面绘制的角色在有深度的三维空间活动，保留二维表演力度，同时获得立体关卡的距离、遮挡与探索。
+- 'medium: 平面角色动画与三维几何环境共存; 角色不自动变为像素或剪纸'
+- 'composition: 二维角色与三维空间层次分明; 接地面、遮挡和路径关系清楚'
+- 'palette: 角色与背景分配不同色彩层级; 关键边缘有明度差'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 平面角色动画与三维几何环境共存;
+    角色不自动变为像素或剪纸.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 平面角色动画与三维几何环境共存;
+    角色不自动变为像素或剪纸.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    平面角色动画与三维几何环境共存; 角色不自动变为像素或剪纸.'
+  evidence:
+    source_ids: &id001
+    - source-2d-character-3d-world-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 二维角色与三维空间层次分明;
+    接地面、遮挡和路径关系清楚. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 二维角色与三维空间层次分明; 接地面、遮挡和路径关系清楚.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 二维角色与三维空间层次分明;
+    接地面、遮挡和路径关系清楚.'
+  evidence:
+    source_ids: *id001
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 角色与背景分配不同色彩层级; 关键边缘有明度差. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 角色与背景分配不同色彩层级; 关键边缘有明度差.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    角色与背景分配不同色彩层级; 关键边缘有明度差.'
+  evidence:
+    source_ids: *id001
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 环境光与角色受光协调; 阴影帮助角色接地. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 环境光与角色受光协调; 阴影帮助角色接地.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 环境光与角色受光协调; 阴影帮助角色接地.'
+  evidence:
+    source_ids: *id001
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 二维边缘保持清楚，环境材质适度简化;
+    侧面与转角仍可辨. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 二维边缘保持清楚，环境材质适度简化;
+    侧面与转角仍可辨.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    二维边缘保持清楚，环境材质适度简化; 侧面与转角仍可辨.'
+  evidence:
+    source_ids: *id001
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 背景细节不压过角色; 景深不模糊角色轮廓.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 背景细节不压过角色;
+    景深不模糊角色轮廓.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    背景细节不压过角色; 景深不模糊角色轮廓.'
+  evidence:
+    source_ids: *id001
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-2d-character-3d-world-game-art-primary-source
+  kind: primary
+  base_asset_id: 2d-character-3d-world-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 确定二维角色的朝向规则
+  - 搭建可探索三维空间
+  - 校准遮挡、接地和阴影
+  - 协调角色与环境光色
+  - 测试视角切换和转角
+  - 二维表演和三维空间都可读
+  - 接地、遮挡和转角一致
+  - 不复制特定角色
+  avoid:
+  - unmotivated pixel grid
+  - floating character
+  - copied named character
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
