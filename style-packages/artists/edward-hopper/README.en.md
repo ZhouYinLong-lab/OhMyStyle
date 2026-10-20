@@ -98,3 +98,7 @@ python tools/compile-style.py style-packages/artists/edward-hopper --direction p
 ```
 
 Compilation creates a task for an image tool and does not call a model. Whitney and Art Institute of Chicago sources support the observations about geometric architecture, directional sunlight, cast shadows, and restrained narrative.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

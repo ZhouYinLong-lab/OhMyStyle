@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "edward-hopper",
+    "name": "爱德华·霍普",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edward-hopper"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A closed neighborhood bakery at noon, with a bicycle leaning outside",
+  "prompt": "USER SUBJECT: A closed neighborhood bakery at noon, with a bicycle leaning outside\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [architectural-plane-composition] Organize the requested place with a stable arrangement of horizontals, verticals, openings, and a clear viewpoint; simplify incidental detail while retaining plausible everyday architecture.\n- [directional-light-shadow-geometry] Choose one clear daylight or window-light direction and make its illuminated planes and cast shadows agree across the scene; keep warm and cool colors attached to lit and shaded surfaces.\n- [quiet-distance-and-selective-detail] Express stillness through spacing, orientation, barriers, and restrained detail; imply human presence without forcing a dramatic gesture.\n- [space-light-distance-coherence] Make architecture, light direction, and human distance reinforce the same suspended moment without turning it into a film still or copying a known work.\nREQUIREMENT: Preserve the user's requested subject, setting, count, and layout.\nREQUIREMENT: Keep architecture legible through large planes and a consistent viewpoint.\nREQUIREMENT: Use a coherent light direction and matching cast shadows.\nREQUIREMENT: Leave quiet intervals and withheld detail where they strengthen spatial distance.",
+  "negative_prompt": "ornamental architecture and cinematic establishing-shot clichés\nglobal golden haze and inconsistent shadow directions\nmelodramatic expressions and unnecessary story props\ncopying a named Hopper composition, location, or recognizable arrangement\ndefault diners, lighthouses, storefronts, or solitary figures at windows\nfilm-grain overlays, dramatic lens effects, or generic sepia grading",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "hopper-geometric-light-and-distance",
+    "name": "Hopper geometric light and distance",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edward-hopper\\art-direction.yaml",
+    "sha256": "02499b0ea137fda8a05431c85fdb5865089629c1e0b078ac051f30b855d7642e",
+    "active_rule_ids": [
+      "architectural-plane-composition",
+      "directional-light-shadow-geometry",
+      "quiet-distance-and-selective-detail"
+    ],
+    "contexts": [],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Preserve the user's requested subject, setting, count, and layout.",
+      "Keep architecture legible through large planes and a consistent viewpoint.",
+      "Use a coherent light direction and matching cast shadows.",
+      "Leave quiet intervals and withheld detail where they strengthen spatial distance."
+    ],
+    "avoid": [
+      "copying a named Hopper composition, location, or recognizable arrangement",
+      "default diners, lighthouses, storefronts, or solitary figures at windows",
+      "film-grain overlays, dramatic lens effects, or generic sepia grading"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "recognizable",
+      "description": "Translate Hopper's simplified everyday architecture, directional light, cast-shadow geometry, and deliberate interpersonal or spatial distance into an original scene.",
+      "required_contexts": [],
+      "incompatible_contexts": [
+        "diffuse-global-glow",
+        "theatrical-expressionist-distortion"
+      ],
+      "limitations": [
+        "Follow the requested subject and setting; do not default to a diner, lighthouse, empty storefront, or solitary woman at a window.",
+        "Quiet tension should come from the arrangement of people, openings, and light rather than exaggerated facial emotion or a copied cinematic frame."
+      ]
+    },
+    "rules": [
+      {
+        "id": "architectural-plane-composition",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Organize the requested place with a stable arrangement of horizontals, verticals, openings, and a clear viewpoint; simplify incidental detail while retaining plausible everyday architecture.",
+        "observable": "Large structural planes read immediately, and windows, doors, streets, or room boundaries define the space rather than decorate it.",
+        "reject_when": "The architecture dissolves into a generic cinematic backdrop or becomes an exact reconstruction of a known setting.",
+        "evidence": {
+          "source_ids": [
+            "hopper-whitney-early-sunday-morning",
+            "hopper-artic-overview"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "ornamental architecture and cinematic establishing-shot clichés"
+      },
+      {
+        "id": "directional-light-shadow-geometry",
+        "axis": "lighting",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Choose one clear daylight or window-light direction and make its illuminated planes and cast shadows agree across the scene; keep warm and cool colors attached to lit and shaded surfaces.",
+        "observable": "Shadow edges reveal the light direction, and distinct color temperatures preserve form without a golden wash.",
+        "reject_when": "Shadows point in conflicting directions, or a global warm filter replaces painted light and color.",
+        "evidence": {
+          "source_ids": [
+            "hopper-whitney-early-sunday-morning",
+            "hopper-whitney-light-color-study"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "global golden haze and inconsistent shadow directions"
+      },
+      {
+        "id": "quiet-distance-and-selective-detail",
+        "axis": "narrative",
+        "importance": "supporting",
+        "applies_when": "The scene includes people, thresholds, or visible signs of recent human activity.",
+        "instruction": "Express stillness through spacing, orientation, barriers, and restrained detail; imply human presence without forcing a dramatic gesture.",
+        "observable": "The viewer can read the relationship or separation between figure and place even when faces and small objects remain understated.",
+        "reject_when": "Exaggerated expressions or extra narrative props explain a mood that the composition should carry.",
+        "evidence": {
+          "source_ids": [
+            "hopper-whitney-early-sunday-morning",
+            "hopper-whitney-reality-fantasy"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "melodramatic expressions and unnecessary story props"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "space-light-distance-coherence",
+        "rule_ids": [
+          "architectural-plane-composition",
+          "directional-light-shadow-geometry",
+          "quiet-distance-and-selective-detail"
+        ],
+        "instruction": "Make architecture, light direction, and human distance reinforce the same suspended moment without turning it into a film still or copying a known work.",
+        "observable": "The scene reads as a specific everyday place, its shadows agree with one light source, and its stillness comes from spatial relationships."
+      }
+    ],
+    "sources": [
+      {
+        "id": "hopper-whitney-early-sunday-morning",
+        "kind": "museum_object_description",
+        "url": "https://whitney.org/collection/works/46345"
+      },
+      {
+        "id": "hopper-artic-overview",
+        "kind": "museum_essay",
+        "url": "https://archive.artic.edu/hopper/overview/"
+      },
+      {
+        "id": "hopper-whitney-light-color-study",
+        "kind": "museum_education_description",
+        "url": "https://whitney.org/education/blog/notes-for-a-painting"
+      },
+      {
+        "id": "hopper-whitney-reality-fantasy",
+        "kind": "museum_education_description",
+        "url": "https://whitney.org/education/schools-educators/k-12/teaching-materials/teacher-guides/hopper-new-york/reality-fantasy"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "02499b0ea137fda8a05431c85fdb5865089629c1e0b078ac051f30b855d7642e",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

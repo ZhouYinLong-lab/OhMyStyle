@@ -79,3 +79,7 @@ python tools/compile-style.py style-packages/artists/edward-hopper --direction p
 ```
 
 编译只生成待提交给生图工具的任务，不会自动调用模型。惠特尼与芝加哥艺术博物馆的资料支持本方向对几何建筑、方向日光、投影及克制叙事的观察。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。

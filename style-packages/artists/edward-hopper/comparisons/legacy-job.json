@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "edward-hopper",
+    "name": "爱德华·霍普",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edward-hopper"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A closed neighborhood bakery at noon, with a bicycle leaning outside",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A closed neighborhood bakery at noon, with a bicycle leaning outside\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new subject and composition using these observable visual decisions:\n- 建筑开口、转角和方向性线条构成稳定几何框架\n- 人物与空间有明显距离\n- 画面常保留大片空墙或天空\n- 奶油白、土黄、砖红、深绿和蓝灰构成克制暖冷色组\n- 局部强光与深影形成心理张力\n- 不做综合色雾化\n- 平整而坚实的油画块面\n- 建筑边缘清楚\n- 人物姿态简化但有重量\n- 强方向日光或室内窗光\n- 投影和亮面形状明确\n- 光线不是金色滤镜\n- 墙面、玻璃、木材、布料和皮肤表面分明\n- 笔触隐约但不炫技\n- 中低频画面纹理\n- 细节服务空间心理而不平均分布\n- 孤独感来自构图距离和光线，不靠夸张表情\n- 场景仍然是具体日常空间\n- 不复刻原作人物和房屋\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- melodramatic_expression\n- generic_cinematic_filter\n- copied_building\n- crowded_scene",
+  "template_variables": {
+    "SUBJECT": "A closed neighborhood bakery at noon, with a bicycle leaning outside",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
