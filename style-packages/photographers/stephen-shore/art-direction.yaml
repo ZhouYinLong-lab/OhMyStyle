@@ -1,0 +1,142 @@
+schema_version: 2.1.0
+status: experimental
+id: stephen-shore-direction
+name: 斯蒂芬·肖尔
+base_package: photographers/stephen-shore
+scope:
+  medium: observational color photography
+  representation: recognizable
+  description: 以平视观察、深焦、自然光、平静色彩和不戏剧化的日常构图组织照片；本包提取肖尔的观看方式，不固定公路、汽车、商店或美国小镇。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory road trip, gas station, motel, or American small town
+pillars:
+- 以平视观察、深焦、自然光、平静色彩和不戏剧化的日常构图组织照片；本包提取肖尔的观看方式，不固定公路、汽车、商店或美国小镇。
+- 'composition: eye-level, unshowy, carefully balanced observation; deep or broad focus with lines and gaps
+  carrying structure'
+- 'palette: honest local color, including ordinary saturated surfaces; no automatic nostalgia or cinematic
+  grade'
+- 'lighting: quality: natural daylight or ordinary ambient light; behavior: shadows remain readable and non-theatrical'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: eye-level, unshowy,
+    carefully balanced observation; deep or broad focus with lines and gaps carrying structure. Preserve the
+    user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: eye-level, unshowy,
+    carefully balanced observation; deep or broad focus with lines and gaps carrying structure.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: eye-level,
+    unshowy, carefully balanced observation; deep or broad focus with lines and gaps carrying structure.'
+  evidence:
+    source_ids:
+    - source-stephen-shore-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: honest local color, including ordinary
+    saturated surfaces; no automatic nostalgia or cinematic grade. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: honest local color, including
+    ordinary saturated surfaces; no automatic nostalgia or cinematic grade.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    honest local color, including ordinary saturated surfaces; no automatic nostalgia or cinematic grade.'
+  evidence:
+    source_ids:
+    - source-stephen-shore-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: natural daylight or ordinary ambient light;
+    behavior: shadows remain readable and non-theatrical. Keep light coherent with the requested subject, medium,
+    and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: natural daylight or
+    ordinary ambient light; behavior: shadows remain readable and non-theatrical.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: natural daylight
+    or ordinary ambient light; behavior: shadows remain readable and non-theatrical.'
+  evidence:
+    source_ids:
+    - source-stephen-shore-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: optically
+    observed photographic detail and everyday wear; edges: clear geometry across the frame. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    optically observed photographic detail and everyday wear; edges: clear geometry across the frame.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: optically observed photographic detail and everyday wear; edges: clear geometry across the frame.'
+  evidence:
+    source_ids:
+    - source-stephen-shore-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    to medium natural surface texture; placement: pavement, paint, glass, foliage, and infrastructure. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low to medium natural surface texture; placement: pavement, paint, glass, foliage, and infrastructure.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low to medium natural surface texture; placement: pavement, paint, glass, foliage, and infrastructure.'
+  evidence:
+    source_ids:
+    - source-stephen-shore-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-stephen-shore-primary-source
+  kind: primary
+  base_asset_id: stephen-shore-primary-source
+execution:
+  route: text_only
+  must:
+  - Start from the user's subject and find an ordinary, non-dramatic arrangement.
+  - Set a normal eye-level viewpoint and use architecture, cables, curbs, and empty space as compositional
+    lines.
+  - Preserve local color and broad focus; allow small irregularities to remain.
+  - Avoid adding a nostalgia preset, dramatic lighting, or a fixed roadside narrative.
+  - ordinary subject treated as a complete visual problem
+  - viewer distance stays observational, not promotional
+  - no fixed road trip, motel, vehicle, or American setting
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied location, composition, road trip, motel, car, or commercial strip
+  - copied composition
+  - named character or branded asset
+  - mandatory road trip, gas station, motel, or American small town
+  - This package transfers an observational photographic approach, not the content of a source photograph.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
