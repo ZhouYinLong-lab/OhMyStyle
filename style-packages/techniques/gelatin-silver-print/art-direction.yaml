@@ -16,10 +16,12 @@ scope:
   - copied reference composition or branded asset
 pillars:
 - 以中性黑白阶调、纸基明胶乳剂、细腻颗粒和暗房放大控制构成摄影表面，不规定拍摄主体、地点或叙事。
-- 'differentiation: neutral grayscale remains stable; material surface is photographic, not charcoal or ink;
-  local contrast follows the subject; subject and location remain independent'
+- 'differentiation: neutral grayscale remains stable; material surface is photographic, not charcoal or ink; local
+  contrast follows the subject; subject and location remain independent'
 - 'composition: 主体结构由阶调而非色相承担; 保留暗房放大的裁切与边缘控制感; 可用清晰几何或细腻灰阶适配不同主体'
 - 'palette: 中性黑白为主; 高光保留纸面质感而不纯白爆掉; 暗部有层次，不压成一整块黑'
+- 'lighting: controlled photographic light translated into a full neutral grayscale range; Preserve highlight
+  detail and layered shadow values; let local contrast follow the photographed form.'
 rules:
 - id: distinctiveness
   axis: differentiation
@@ -29,11 +31,11 @@ rules:
     remains stable; material surface is photographic, not charcoal or ink; local contrast follows the subject;
     subject and location remain independent. Do not collapse the direction into a neighboring style.'
   observable: 'The result expresses the stated distinction in visible form: neutral grayscale remains stable;
-    material surface is photographic, not charcoal or ink; local contrast follows the subject; subject and
-    location remain independent.'
+    material surface is photographic, not charcoal or ink; local contrast follows the subject; subject and location
+    remain independent.'
   reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: neutral
-    grayscale remains stable; material surface is photographic, not charcoal or ink; local contrast follows
-    the subject; subject and location remain independent.'
+    grayscale remains stable; material surface is photographic, not charcoal or ink; local contrast follows the
+    subject; subject and location remain independent.'
   evidence:
     source_ids:
     - source-gelatin-silver-print-primary-source
@@ -72,16 +74,14 @@ rules:
   axis: lighting
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Apply the package-specific light behavior: quality: controlled photographic light translated
-    into a full neutral value range; behavior: Keep the requested subject and location independent from the
-    package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene.. Keep light coherent
-    with the requested subject, medium, and scene.'
-  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: controlled photographic
-    light translated into a full neutral value range; behavior: Keep the requested subject and location independent
-    from the package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene..'
-  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: controlled photographic
-    light translated into a full neutral value range; behavior: Keep the requested subject and location independent
-    from the package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene..'
+  instruction: Use controlled photographic light translated into a full neutral grayscale range. Preserve highlight
+    detail and layered shadow values; let local contrast follow the photographed form. Keep the light coherent
+    with the requested subject and scene.
+  observable: 'The light quality and its effect on shadows, materials, or tonal separation are visible: controlled
+    photographic light translated into a full neutral grayscale range. Preserve highlight detail and layered shadow
+    values; let local contrast follow the photographed form.'
+  reject_when: 'Reject global tint, bloom, or lighting that erases the stated tonal or material distinctions:
+    controlled photographic light translated into a full neutral grayscale range.'
   evidence:
     source_ids:
     - source-gelatin-silver-print-primary-source
@@ -91,15 +91,15 @@ rules:
   axis: surface
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Render the requested materials using these package-specific surface decisions: finish: fine
-    grain, baryta-paper or fiber-paper impression, and restrained photographic sheen; edges: deliberate and
-    subject-dependent, without a copied layout. Preserve detail hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
-    fine grain, baryta-paper or fiber-paper impression, and restrained photographic sheen; edges: deliberate
-    and subject-dependent, without a copied layout.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    finish: fine grain, baryta-paper or fiber-paper impression, and restrained photographic sheen; edges: deliberate
-    and subject-dependent, without a copied layout.'
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: fine grain,
+    baryta-paper or fiber-paper impression, and restrained photographic sheen; edges: deliberate and subject-dependent,
+    without a copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish: fine
+    grain, baryta-paper or fiber-paper impression, and restrained photographic sheen; edges: deliberate and subject-dependent,
+    without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: finish:
+    fine grain, baryta-paper or fiber-paper impression, and restrained photographic sheen; edges: deliberate and
+    subject-dependent, without a copied layout.'
   evidence:
     source_ids:
     - source-gelatin-silver-print-primary-source
@@ -109,15 +109,15 @@ rules:
   axis: texture
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Render the requested materials using these package-specific surface decisions: density: fine
-    and even in midtones, with subtle paper and emulsion variation; placement: concentrated where the medium
-    or material needs explanation. Preserve detail hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
-    fine and even in midtones, with subtle paper and emulsion variation; placement: concentrated where the
-    medium or material needs explanation.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    density: fine and even in midtones, with subtle paper and emulsion variation; placement: concentrated where
-    the medium or material needs explanation.'
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: fine and
+    even in midtones, with subtle paper and emulsion variation; placement: concentrated where the medium or material
+    needs explanation. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density: fine
+    and even in midtones, with subtle paper and emulsion variation; placement: concentrated where the medium or
+    material needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: density:
+    fine and even in midtones, with subtle paper and emulsion variation; placement: concentrated where the medium
+    or material needs explanation.'
   evidence:
     source_ids:
     - source-gelatin-silver-print-primary-source
@@ -136,10 +136,9 @@ joint_checks:
   - distinctiveness
   - composition
   - palette
-  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
-    while preserving the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-gelatin-silver-print-primary-source
   kind: primary
@@ -163,6 +162,6 @@ execution:
   - copied reference composition or branded asset
   - copied composition
   - named character or branded asset
-  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
-    protected game asset.
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+    game asset.
   - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
