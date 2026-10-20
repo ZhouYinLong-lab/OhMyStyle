@@ -1,0 +1,172 @@
+schema_version: 2.1.0
+status: experimental
+id: suminagashi-direction
+name: 墨流
+base_package: techniques/suminagashi
+scope:
+  medium: water-and-ink marbling transferred to paper
+  representation: stylized
+  description: 以水面漂浮墨迹、缓慢扰动、偶然纹理与纸张吸收之间的关系，生成轻盈而不可完全重复的表面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory flowers, ocean waves, or calligraphy
+  - glossy digital fluid gradients without paper or process evidence
+pillars:
+- 以水面漂浮墨迹、缓慢扰动、偶然纹理与纸张吸收之间的关系，生成轻盈而不可完全重复的表面。
+- 'differentiation: water-driven rings and slow currents; translucent ink layers on absorbent paper; handmade
+  variation and drying evidence'
+- 'composition: Let fluid rings, currents, and pauses create an organic field without requiring a recognizable
+  motif.; Preserve asymmetry and breathing room; the most important event may sit off center.'
+- 'palette: Start with ink black, smoke gray, and paper white; add diluted mineral or indigo tones sparingly.;
+  Keep colors translucent and separated by water-driven boundaries rather than digital gradients.'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: water-driven
+    rings and slow currents; translucent ink layers on absorbent paper; handmade variation and drying evidence.
+    Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: water-driven rings and slow currents;
+    translucent ink layers on absorbent paper; handmade variation and drying evidence.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: water-driven
+    rings and slow currents; translucent ink layers on absorbent paper; handmade variation and drying evidence.'
+  evidence:
+    source_ids:
+    - source-suminagashi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Let fluid rings,
+    currents, and pauses create an organic field without requiring a recognizable motif.; Preserve asymmetry
+    and breathing room; the most important event may sit off center.. Preserve the user-provided content and
+    layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Let fluid rings,
+    currents, and pauses create an organic field without requiring a recognizable motif.; Preserve asymmetry
+    and breathing room; the most important event may sit off center..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Let fluid
+    rings, currents, and pauses create an organic field without requiring a recognizable motif.; Preserve asymmetry
+    and breathing room; the most important event may sit off center..'
+  evidence:
+    source_ids:
+    - source-suminagashi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Start with ink black, smoke gray,
+    and paper white; add diluted mineral or indigo tones sparingly.; Keep colors translucent and separated
+    by water-driven boundaries rather than digital gradients.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Start with ink black, smoke
+    gray, and paper white; add diluted mineral or indigo tones sparingly.; Keep colors translucent and separated
+    by water-driven boundaries rather than digital gradients..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Start with ink black, smoke gray, and paper white; add diluted mineral or indigo tones sparingly.; Keep
+    colors translucent and separated by water-driven boundaries rather than digital gradients..'
+  evidence:
+    source_ids:
+    - source-suminagashi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft overhead craft-table light; behavior:
+    Reveal paper fibers, shallow staining, and the difference between wet and dry marks.. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft overhead craft-table
+    light; behavior: Reveal paper fibers, shallow staining, and the difference between wet and dry marks..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft overhead
+    craft-table light; behavior: Reveal paper fibers, shallow staining, and the difference between wet and
+    dry marks..'
+  evidence:
+    source_ids:
+    - source-suminagashi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: absorbent
+    handmade paper with water-softened ink lines; edges: feathery, tide-like, and irregular; retain occasional
+    drying marks. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    absorbent handmade paper with water-softened ink lines; edges: feathery, tide-like, and irregular; retain
+    occasional drying marks.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: absorbent handmade paper with water-softened ink lines; edges: feathery, tide-like, and irregular;
+    retain occasional drying marks.'
+  evidence:
+    source_ids:
+    - source-suminagashi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: fine
+    to moderate; placement: concentrated in rings, sediment, paper grain, and edges of pooled pigment. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    fine to moderate; placement: concentrated in rings, sediment, paper grain, and edges of pooled pigment.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: fine to moderate; placement: concentrated in rings, sediment, paper grain, and edges of pooled
+    pigment.'
+  evidence:
+    source_ids:
+    - source-suminagashi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-suminagashi-primary-source
+  kind: primary
+  base_asset_id: suminagashi-primary-source
+execution:
+  route: text_only
+  must:
+  - establish a quiet paper field and a shallow water surface
+  - place floating ink rings and disturb them with restrained currents
+  - transfer the pattern to paper and preserve drying, pooling, and absorption marks
+  - preserve fluid uncertainty and the trace of a handmade process
+  - preserve translucent layers and paper as an active material
+  - preserve non-repeatable variation without turning it into chaotic noise
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - mandatory flowers, ocean waves, or calligraphy
+  - glossy digital fluid gradients without paper or process evidence
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
