@@ -1,0 +1,169 @@
+schema_version: 2.1.0
+status: experimental
+id: central-saint-martins-direction
+name: 中央圣马丁艺术与设计学院
+base_package: schools/central-saint-martins
+scope:
+  medium: interdisciplinary studio documentation and experimental design composition
+  representation: stylized
+  description: 以跨媒介实验、研究驱动的视觉沟通和材料工作坊把设计当作思考与制作共同推进的过程。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - school logo
+  - copied student work
+  - generic moodboard
+  - polished e-commerce layout
+  - school logo or readable institutional text
+  - 不强制生成工作室、服装、海报或学生展板
+pillars:
+- 以跨媒介实验、研究驱动的视觉沟通和材料工作坊把设计当作思考与制作共同推进的过程。
+- 'differentiation: 研究、制作和修订过程进入画面; 多种材料并置但由一个设计问题组织; 不追求统一表面，而追求有意图的实验性'
+- 'composition: 允许模块、碎片、留白和过程痕迹共存，层次看似松散但有任务重点。; 设计对象、材料样本和注释区域形成跨媒介关系，不要求统一风格表面。'
+- 'palette: 以工作室中性底色承载少量实验性色块，颜色来自材料与主题而非固定配色。'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: 研究、制作和修订过程进入画面;
+    多种材料并置但由一个设计问题组织; 不追求统一表面，而追求有意图的实验性. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: 研究、制作和修订过程进入画面; 多种材料并置但由一个设计问题组织;
+    不追求统一表面，而追求有意图的实验性.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: 研究、制作和修订过程进入画面;
+    多种材料并置但由一个设计问题组织; 不追求统一表面，而追求有意图的实验性.'
+  evidence:
+    source_ids:
+    - source-central-saint-martins-home
+    - source-central-saint-martins-gcd
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 允许模块、碎片、留白和过程痕迹共存，层次看似松散但有任务重点。;
+    设计对象、材料样本和注释区域形成跨媒介关系，不要求统一风格表面。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 允许模块、碎片、留白和过程痕迹共存，层次看似松散但有任务重点。;
+    设计对象、材料样本和注释区域形成跨媒介关系，不要求统一风格表面。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 允许模块、碎片、留白和过程痕迹共存，层次看似松散但有任务重点。;
+    设计对象、材料样本和注释区域形成跨媒介关系，不要求统一风格表面。.'
+  evidence:
+    source_ids:
+    - source-central-saint-martins-home
+    - source-central-saint-martins-gcd
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 以工作室中性底色承载少量实验性色块，颜色来自材料与主题而非固定配色。.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 以工作室中性底色承载少量实验性色块，颜色来自材料与主题而非固定配色。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    以工作室中性底色承载少量实验性色块，颜色来自材料与主题而非固定配色。.'
+  evidence:
+    source_ids:
+    - source-central-saint-martins-home
+    - source-central-saint-martins-gcd
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: clear studio or daylight documentation;
+    behavior: 光线服务于材料、模型和过程的可读性，不制造广告棚拍光效。. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: clear studio or daylight
+    documentation; behavior: 光线服务于材料、模型和过程的可读性，不制造广告棚拍光效。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: clear studio
+    or daylight documentation; behavior: 光线服务于材料、模型和过程的可读性，不制造广告棚拍光效。.'
+  evidence:
+    source_ids:
+    - source-central-saint-martins-home
+    - source-central-saint-martins-gcd
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: paper,
+    board, fabric, plastic, metal, and found-material contrasts; edges: cut, taped, pinned, folded, and unfinished
+    edges remain visible. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    paper, board, fabric, plastic, metal, and found-material contrasts; edges: cut, taped, pinned, folded,
+    and unfinished edges remain visible.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: paper, board, fabric, plastic, metal, and found-material contrasts; edges: cut, taped, pinned,
+    folded, and unfinished edges remain visible.'
+  evidence:
+    source_ids:
+    - source-central-saint-martins-home
+    - source-central-saint-martins-gcd
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: varied
+    and process-led; placement: concentrated around samples, joins, annotations, and prototypes. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    varied and process-led; placement: concentrated around samples, joins, annotations, and prototypes.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: varied and process-led; placement: concentrated around samples, joins, annotations, and prototypes.'
+  evidence:
+    source_ids:
+    - source-central-saint-martins-home
+    - source-central-saint-martins-gcd
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-central-saint-martins-home
+  kind: primary
+  base_asset_id: central-saint-martins-home
+- id: source-central-saint-martins-gcd
+  kind: secondary
+  base_asset_id: central-saint-martins-gcd
+execution:
+  route: text_only
+  must:
+  - Clarify the user's design problem and intended audience.
+  - Gather a small set of material, image, and structural studies.
+  - Arrange prototypes, fragments, and negative space around one visible question.
+  - Keep joins, revisions, overlays, and imperfect tests visible where useful.
+  - Edit the result so experimentation remains legible rather than becoming clutter.
+  - 画面呈现研究到制作的痕迹，但不生成可读校名、标志或真实学生作品。
+  - 复杂性来自媒介关系和编辑选择，不来自无意义堆叠。
+  - 用户主体和用途仍然决定内容。
+  avoid:
+  - fixed pin-up wall, fashion garment, typography poster, or workshop scene
+  - unreadable pseudo-text, logos, and exact student projects
+  - 不强制生成工作室、服装、海报或学生展板
+  - school logo
+  - copied student work
+  - generic moodboard
+  - polished e-commerce layout
+  - school logo or readable institutional text
+  - Do not imply official affiliation or reproduce a real school project.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
