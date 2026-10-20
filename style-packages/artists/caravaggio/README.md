@@ -83,3 +83,7 @@ python tools/compile-style.py style-packages/artists/caravaggio --direction pack
 ```
 
 编译会生成生图任务，不会自动调用模型。英国国家美术馆、大都会艺术博物馆和美国国家美术馆的馆藏/策展说明支持本方向对明暗、近景人物、手势和写实表面的观察。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。
