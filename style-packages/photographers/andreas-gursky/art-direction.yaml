@@ -1,0 +1,78 @@
+schema_version: 2.1.0
+status: experimental
+id: andreas-gursky-direction
+name: 安德烈亚斯·古尔斯基
+base_package: photographers/andreas-gursky
+scope:
+  medium: photography
+  representation: recognizable
+  description: 以高视点、大尺度、重复结构和受控色块组织当代环境，让个体与系统性的空间秩序同时可见。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - 固定仓库、办公室、停车场、工厂或人群
+  - 无人机旅游照式的空泛俯拍
+  - 复制具体摄影作品、建筑或品牌
+pillars:
+- 以高视点、大尺度、重复结构和受控色块组织当代环境，让个体与系统性的空间秩序同时可见。
+- 'palette: name: 大尺度秩序色彩; colors: name: 雾灰; colors: hex: #A9B0AE; colors: role: neutral base; colors: name:
+  工业蓝; colors: hex: #3D6D86; colors: role: cool structural band; colors: name: 警示红'
+- 'composition: 以高视点、大尺度、重复结构和受控色块组织当代环境，让个体与系统性的空间秩序同时可见。'
+rules:
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: name: 大尺度秩序色彩; colors: name: 雾灰;
+    colors: hex: #A9B0AE; colors: role: neutral base; colors: name: 工业蓝; colors: hex: #3D6D86; colors: role:
+    cool structural band; colors: name: 警示红. Adapt their balance to the requested subject; do not apply them
+    as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: name: 大尺度秩序色彩; colors: name:
+    雾灰; colors: hex: #A9B0AE; colors: role: neutral base; colors: name: 工业蓝; colors: hex: #3D6D86; colors:
+    role: cool structural band; colors: name: 警示红.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    name: 大尺度秩序色彩; colors: name: 雾灰; colors: hex: #A9B0AE; colors: role: neutral base; colors: name: 工业蓝; colors:
+    hex: #3D6D86; colors: role: cool structural band; colors: name: 警示红.'
+  evidence:
+    source_ids:
+    - source-andreas-gursky-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以高视点、大尺度、重复结构和受控色块组织当代环境，让个体与系统性的空间秩序同时可见。.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以高视点、大尺度、重复结构和受控色块组织当代环境，让个体与系统性的空间秩序同时可见。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以高视点、大尺度、重复结构和受控色块组织当代环境，让个体与系统性的空间秩序同时可见。.'
+  evidence:
+    source_ids:
+    - source-andreas-gursky-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- palette
+- composition
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - palette
+  - composition
+  instruction: Keep the package-specific relationship among palette, composition consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-andreas-gursky-primary-source
+  kind: primary
+  base_asset_id: andreas-gursky-primary-source
+execution:
+  route: text_only
+  must:
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 固定仓库、办公室、停车场、工厂或人群
+  - 无人机旅游照式的空泛俯拍
+  - 复制具体摄影作品、建筑或品牌
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
