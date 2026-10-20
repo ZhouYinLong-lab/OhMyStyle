@@ -1,0 +1,108 @@
+schema_version: 2.1.0
+status: experimental
+id: neue-sachlichkeit-direction
+name: 新即物主义
+base_package: movements/neue-sachlichkeit
+scope:
+  medium: hybrid
+  representation: stylized
+  description: A Weimar-era visual language of matter-of-fact realism, hard-edged observation, social typology,
+    and unsentimental attention to bodies, interiors, labor, and the consequences of modern life.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+pillars:
+- A Weimar-era visual language of matter-of-fact realism, hard-edged observation, social typology, and unsentimental
+  attention to bodies, interiors, labor, and the consequences of modern life.
+- 'composition: frontal_or_deliberately_static_view; typological_grouping; clear figure_ground_separation;
+  details that reveal social position'
+- 'form: edges: hard_and_descriptive; surfaces: smooth_or_precisely_observed; distortion: optional_verist_exaggeration_with_social_purpose'
+- 'palette: restrained_earth; gray_green; flesh_tone_as_evidence; controlled_accent'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: frontal_or_deliberately_static_view;
+    typological_grouping; clear figure_ground_separation; details that reveal social position. Preserve the
+    user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: frontal_or_deliberately_static_view;
+    typological_grouping; clear figure_ground_separation; details that reveal social position.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: frontal_or_deliberately_static_view;
+    typological_grouping; clear figure_ground_separation; details that reveal social position.'
+  evidence:
+    source_ids:
+    - source-met-glitter-and-doom
+    - source-met-renger-patzsch
+    basis: curatorial_inference
+    visual_review: pending
+- id: form
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: edges: hard_and_descriptive; surfaces: smooth_or_precisely_observed;
+    distortion: optional_verist_exaggeration_with_social_purpose. Keep it subordinate to the requested subject
+    and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: edges: hard_and_descriptive;
+    surfaces: smooth_or_precisely_observed; distortion: optional_verist_exaggeration_with_social_purpose.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: edges: hard_and_descriptive;
+    surfaces: smooth_or_precisely_observed; distortion: optional_verist_exaggeration_with_social_purpose.'
+  evidence:
+    source_ids:
+    - source-met-glitter-and-doom
+    - source-met-renger-patzsch
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: restrained_earth; gray_green; flesh_tone_as_evidence;
+    controlled_accent. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: restrained_earth; gray_green;
+    flesh_tone_as_evidence; controlled_accent.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    restrained_earth; gray_green; flesh_tone_as_evidence; controlled_accent.'
+  evidence:
+    source_ids:
+    - source-met-glitter-and-doom
+    - source-met-renger-patzsch
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- form
+- color
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - form
+  - color
+  instruction: Keep the package-specific relationship among composition, form, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-met-glitter-and-doom
+  kind: primary
+  base_asset_id: met-glitter-and-doom
+- id: source-met-renger-patzsch
+  kind: secondary
+  base_asset_id: met-renger-patzsch
+execution:
+  route: text_only
+  must:
+  - observation carries social meaning
+  - surface details are specific rather than decorative
+  - composition resists romantic atmosphere
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - romanticized_vintage_filter
+  - generic_expressionist_brushwork
+  - fantasy_surrealism_without_context
+  - retro_costume_pastiche
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+  - Do not reproduce a historical work or use a living person as a target for ridicule.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
