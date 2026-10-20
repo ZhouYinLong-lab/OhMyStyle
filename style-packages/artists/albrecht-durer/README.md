@@ -54,7 +54,7 @@ Apply a Northern Renaissance printmaking language: precise contour drawing, disc
 
 ## 新架构：刻线、明暗与材质（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 把明暗写成随形线条：先确立轮廓，再用顺着形体的平行排线表现中间调，最深处才少量交叉加密；亮部保留纸白，材质通过线组方向和疏密区分。它不会自动加入历史人物、动物、宗教叙事或丢勒签名。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，把明暗写成随形线条：先确立轮廓，再用顺着形体的平行排线表现中间调，最深处才少量交叉加密；亮部保留纸白。调用者可通过 `rounded-folded-or-recessed-surface` 和 `multiple-visible-materials` 只启用对应表面的排线与材质线组规则。它不会自动加入历史人物、动物、宗教叙事或丢勒签名。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/albrecht-durer --direction package --subject "An ordinary ceramic cup on a windowsill" --output runs/style-v2/durer-job.json

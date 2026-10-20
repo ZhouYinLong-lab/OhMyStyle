@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: durer-engraved-line-and-value-structure
 name: Dürer engraved line and value structure
@@ -18,6 +18,15 @@ scope:
     - Follow the requested subject, object count, and materials; do not add religious scenes, armor, animals, tools, or symbolic objects by default.
     - Vary line direction and density with the form; avoid filling every region with cross-hatching.
     - Do not add a signature, monogram, date, inscription, or copied print border.
+contexts:
+  - id: photorealistic-output
+    description: The user requires a photographic rather than engraved or hand-drawn result.
+  - id: painterly-color-field
+    description: The user requires a painted color-field treatment rather than a linear drawing.
+  - id: rounded-folded-or-recessed-surface
+    description: The requested subject has rounded, folded, recessed, or otherwise directional surfaces that need tonal hatching.
+  - id: multiple-visible-materials
+    description: The requested scene contains two or more visibly different materials.
 pillars:
   - Let a confident contour establish the main shape before applying internal marks.
   - Align parallel strokes with the surface direction; reserve cross-hatching for deeper value transitions.
@@ -41,6 +50,8 @@ rules:
   - id: directional-hatching-for-value
     axis: lighting_and_value
     importance: core
+    when_contexts:
+      - rounded-folded-or-recessed-surface
     applies_when: The subject has a rounded, folded, recessed, or otherwise directional surface.
     instruction: Use spaced parallel strokes for light and middle values, then add a limited crossing layer for the deepest shadows; curve or turn the strokes with the form and leave paper breaks for highlights.
     observable: Value shifts are readable from changes in spacing and crossing density, while lit areas retain visible paper.
@@ -55,6 +66,8 @@ rules:
   - id: material-specific-line-groups
     axis: texture_and_material
     importance: core
+    when_contexts:
+      - multiple-visible-materials
     applies_when: The requested scene contains more than one visible material.
     instruction: "Separate materials through stroke behavior: use longer directional marks for broad fabric or wood planes, shorter broken marks for rough surfaces, and controlled clean lines for hard edges; omit cues for materials absent from the prompt."
     observable: At least two requested materials can be distinguished by line grouping without adding photographic microtexture.

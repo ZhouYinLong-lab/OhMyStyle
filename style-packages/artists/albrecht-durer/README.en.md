@@ -51,7 +51,7 @@ The package extracts observable visual cues from public institutional or officia
 
 ## New architecture: engraved line, value, and material (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) treats value as form-following linework: establish the contour, use aligned parallel hatching for middle values, add limited cross-hatching only in the deepest shadows, and preserve paper for highlights. Distinguish requested materials through stroke direction and density. Do not add historical figures, animals, religious narratives, or a Dürer signature by default.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and treats value as form-following linework: establish the contour, use aligned parallel hatching for middle values, add limited cross-hatching only in the deepest shadows, and preserve paper for highlights. Callers can activate the surface-hatching and material-line rules with `rounded-folded-or-recessed-surface` and `multiple-visible-materials` as applicable. Do not add historical figures, animals, religious narratives, or a Dürer signature by default.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/albrecht-durer --direction package --subject "An ordinary ceramic cup on a windowsill" --output runs/style-v2/durer-job.json
