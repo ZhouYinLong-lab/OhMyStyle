@@ -1,0 +1,154 @@
+schema_version: 2.1.0
+status: experimental
+id: hiroshi-sugimoto-direction
+name: 杉本博司
+base_package: photographers/hiroshi-sugimoto
+scope:
+  medium: large-format black-and-white photographic language with long-exposure impression
+  representation: recognizable
+  description: 以大画幅黑白摄影、长时间曝光、近乎抽象的海天分界和极简信息密度建立时间感；本包关注观看与曝光的关系，不固定海、地平线或建筑题材。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以大画幅黑白摄影、长时间曝光、近乎抽象的海天分界和极简信息密度建立时间感；本包关注观看与曝光的关系，不固定海、地平线或建筑题材。
+- 'composition: Reduce the frame to a few measured planes or a single centered structural division.; Let emptiness,
+  horizon, symmetry, and repeated architectural rhythm carry the composition.'
+- 'palette: Prefer a narrow neutral scale from deep charcoal to luminous gray; color should be absent unless
+  the user asks for it.; Keep tonal transitions continuous and deliberate, without dramatic crushed blacks.'
+- 'lighting: quality: long-exposure natural light; behavior: Light is even and time-based; movement dissolves
+  into calm tonal fields rather than visible effects.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Reduce the frame
+    to a few measured planes or a single centered structural division.; Let emptiness, horizon, symmetry, and
+    repeated architectural rhythm carry the composition.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Reduce the frame
+    to a few measured planes or a single centered structural division.; Let emptiness, horizon, symmetry, and
+    repeated architectural rhythm carry the composition..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Reduce
+    the frame to a few measured planes or a single centered structural division.; Let emptiness, horizon, symmetry,
+    and repeated architectural rhythm carry the composition..'
+  evidence:
+    source_ids:
+    - source-hiroshi-sugimoto-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Prefer a narrow neutral scale from
+    deep charcoal to luminous gray; color should be absent unless the user asks for it.; Keep tonal transitions
+    continuous and deliberate, without dramatic crushed blacks.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Prefer a narrow neutral scale
+    from deep charcoal to luminous gray; color should be absent unless the user asks for it.; Keep tonal transitions
+    continuous and deliberate, without dramatic crushed blacks..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Prefer a narrow neutral scale from deep charcoal to luminous gray; color should be absent unless the user
+    asks for it.; Keep tonal transitions continuous and deliberate, without dramatic crushed blacks..'
+  evidence:
+    source_ids:
+    - source-hiroshi-sugimoto-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: long-exposure natural light; behavior:
+    Light is even and time-based; movement dissolves into calm tonal fields rather than visible effects.. Keep
+    light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: long-exposure natural
+    light; behavior: Light is even and time-based; movement dissolves into calm tonal fields rather than visible
+    effects..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: long-exposure
+    natural light; behavior: Light is even and time-based; movement dissolves into calm tonal fields rather
+    than visible effects..'
+  evidence:
+    source_ids:
+    - source-hiroshi-sugimoto-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: fine
+    silver-gelatin print with controlled paper presence; edges: precise but not digitally sharpened; preserve
+    subtle optical softness. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    fine silver-gelatin print with controlled paper presence; edges: precise but not digitally sharpened; preserve
+    subtle optical softness.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: fine silver-gelatin print with controlled paper presence; edges: precise but not digitally sharpened;
+    preserve subtle optical softness.'
+  evidence:
+    source_ids:
+    - source-hiroshi-sugimoto-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low;
+    detail appears only where it supports material or tonal structure; placement: texture is concentrated in
+    subtle grain, water, architecture, or print surface rather than everywhere. Preserve detail hierarchy and
+    material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low; detail appears only where it supports material or tonal structure; placement: texture is concentrated
+    in subtle grain, water, architecture, or print surface rather than everywhere.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low; detail appears only where it supports material or tonal structure; placement: texture is
+    concentrated in subtle grain, water, architecture, or print surface rather than everywhere.'
+  evidence:
+    source_ids:
+    - source-hiroshi-sugimoto-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-hiroshi-sugimoto-primary-source
+  kind: primary
+  base_asset_id: hiroshi-sugimoto-primary-source
+execution:
+  route: text_only
+  must:
+  - simplify the requested subject into a small set of structural planes
+  - choose a measured camera position and a stable horizon or axis when relevant
+  - use long-exposure softness and even light to remove incidental movement
+  - finish with fine tonal grain and restrained print contrast
+  - preserve measured framing and reduced information density
+  - preserve fine monochrome tonal transitions and long-exposure calm
+  - keep the subject independent; do not force sea, horizon, boats, or empty architecture
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
