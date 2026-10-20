@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "hiroshi-sugimoto",
+    "name": "杉本博司",
+    "version": "0.1.0",
+    "root": "style-packages/photographers/hiroshi-sugimoto"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One plain wooden chair standing in an empty room beside a tall window; diffuse daylight, neutral wall and floor; no people, other furniture, curtains, or text",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\n- The user-supplied One plain wooden chair standing in an empty room beside a tall window; diffuse daylight, neutral wall and floor; no people, other furniture, curtains, or text and the user-requested setting are authoritative.\n- This package controls visual treatment only: medium, composition, lighting,\n  palette, surface, texture, and edge behavior.\n- Do not add a recurring object, setting, character, landmark, or narrative\n  motif unless the user explicitly requests it.\n\nCreate a new image of One plain wooden chair standing in an empty room beside a tall window; diffuse daylight, neutral wall and floor; no people, other furniture, curtains, or text in the user-requested setting. Apply the package's observable\nmedium, composition, lighting, palette, surface, and texture decisions from the\nstyle files. Preserve the package invariants while inventing a new scene: do not\ncopy any reference work, named character, exact pose, recognizable layout, logo,\nor text. Keep the subject and narrative supplied by the user independent from\nthe package's visual identity. Use concrete visual instructions rather than the\npackage name alone.\n\nUse a conceptual large-format photographic vocabulary: measured framing, reduced\ninformation density, long-exposure calm, fine silver-gelatin tonal transitions,\nprecise horizon or axis when useful, and subtle optical softness. Apply it to the\nuser's subject only. Do not add a sea, horizon, boat, theater, or landmark unless\nthe user requests it.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not force seascapes, horizons, boats, theaters, wax figures, Buddhist statues,\nor famous architecture into the image. Avoid color grading, cinematic drama,\nlens flare, heavy vignette, excessive HDR, plastic CGI, painterly texture, readable\ntext, logos, signatures, and watermarks.",
+  "template_variables": {
+    "SUBJECT": "One plain wooden chair standing in an empty room beside a tall window; diffuse daylight, neutral wall and floor; no people, other furniture, curtains, or text",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "requested person remains the subject and is not turned into a wax portrait"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "still life remains sparse, measured, and materially photographic"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "prompt_sha256": "d22cce0d421b51d305cb35b155100031c64465c35b51c899aa32bd936c5e6d0a",
+    "negative_prompt_sha256": "68326267893dec2acdb5400c64d8e37cc32e7eb6c95a2256c1748a9ccd9847bd",
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

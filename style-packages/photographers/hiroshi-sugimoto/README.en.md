@@ -16,6 +16,8 @@ Sugimoto's work often reduces photography to exposure, time, and viewing itself:
 
 The representative image uses an empty sea to test horizon placement, gray-scale control, and long-exposure stillness. When the subject changes to architecture, objects, or figures, the same measured restraint should remain instead of becoming a generic black-and-white filter.
 
+The [same-subject chair comparison](comparisons/window-chair/README.md) shows clearer monochrome and reduced-detail behavior from the new direction in this run. It is one unseeded output pair, so repeatability remains unverified.
+
 ## Subject independence
 
 This package controls *how* an image is generated, not *what* it depicts.

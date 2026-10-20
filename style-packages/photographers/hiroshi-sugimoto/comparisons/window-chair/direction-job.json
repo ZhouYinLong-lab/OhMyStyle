@@ -1,0 +1,213 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "hiroshi-sugimoto",
+    "name": "杉本博司",
+    "version": "0.1.0",
+    "root": "style-packages/photographers/hiroshi-sugimoto"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "One plain wooden chair standing in an empty room beside a tall window; diffuse daylight, neutral wall and floor; no people, other furniture, curtains, or text",
+  "prompt": "USER SUBJECT: One plain wooden chair standing in an empty room beside a tall window; diffuse daylight, neutral wall and floor; no people, other furniture, curtains, or text\nSUBJECT REPRESENTATION: Depict the requested subject recognizably. Preserve its identity, requested count, setting, and layout; add no default motifs.\nVISUAL MEDIUM: large-format black-and-white photographic language with long-exposure impression\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [composition] Organize the requested subject using these package-specific spatial decisions: Reduce the frame to a few measured planes or a single centered structural division.; Let emptiness, horizon, symmetry, and repeated architectural rhythm carry the composition.. Preserve the user-provided content and layout.\n- [palette] Use these package-specific color roles and relationships: Prefer a narrow neutral scale from deep charcoal to luminous gray; color should be absent unless the user asks for it.; Keep tonal transitions continuous and deliberate, without dramatic crushed blacks.. Adapt their balance to the requested subject; do not apply them as a uniform tint.\n- [lighting] Apply the package-specific light behavior: quality: long-exposure natural light; behavior: Light is even and time-based; movement dissolves into calm tonal fields rather than visible effects.. Keep light coherent with the requested subject, medium, and scene.\n- [surface] Render the requested materials using these package-specific surface decisions: finish: fine silver-gelatin print with controlled paper presence; edges: precise but not digitally sharpened; preserve subtle optical softness. Preserve detail hierarchy and material identity.\n- [texture] Render the requested materials using these package-specific surface decisions: density: low; detail appears only where it supports material or tonal structure; placement: texture is concentrated in subtle grain, water, architecture, or print surface rather than everywhere. Preserve detail hierarchy and material identity.\n- [visual-relationship-coherence] Keep the package-specific relationship among composition, palette, lighting consistent while preserving the user-specified subject and layout.\nREQUIREMENT: simplify the requested subject into a small set of structural planes\nREQUIREMENT: choose a measured camera position and a stable horizon or axis when relevant\nREQUIREMENT: use long-exposure softness and even light to remove incidental movement\nREQUIREMENT: finish with fine tonal grain and restrained print contrast\nREQUIREMENT: preserve measured framing and reduced information density\nREQUIREMENT: preserve fine monochrome tonal transitions and long-exposure calm\nREQUIREMENT: keep the subject independent; do not force sea, horizon, boats, or empty architecture\nREQUIREMENT: Preserve the user-provided subject, object count, location, and requested details.",
+  "negative_prompt": "photorealistic surface detail when it conflicts with the package\ngeneric style-filter language without observable constraints\ncopying a specific reference composition\ncopied composition\nnamed character or branded asset\nDo not reproduce a specific reference work, recognizable character, logo, or branded layout.\nDo not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "hiroshi-sugimoto-direction",
+    "name": "杉本博司",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "style-packages/photographers/hiroshi-sugimoto/art-direction.yaml",
+    "sha256": "a5c83feed1335b0e3b6264fdb2f7fef5c8091194327afc9f9a9efce59c28e341",
+    "active_rule_ids": [
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "applicable_rule_ids": [
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "simplify the requested subject into a small set of structural planes",
+      "choose a measured camera position and a stable horizon or axis when relevant",
+      "use long-exposure softness and even light to remove incidental movement",
+      "finish with fine tonal grain and restrained print contrast",
+      "preserve measured framing and reduced information density",
+      "preserve fine monochrome tonal transitions and long-exposure calm",
+      "keep the subject independent; do not force sea, horizon, boats, or empty architecture",
+      "Preserve the user-provided subject, object count, location, and requested details."
+    ],
+    "avoid": [
+      "photorealistic surface detail when it conflicts with the package",
+      "generic style-filter language without observable constraints",
+      "copying a specific reference composition",
+      "copied composition",
+      "named character or branded asset",
+      "Do not reproduce a specific reference work, recognizable character, logo, or branded layout.",
+      "Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it."
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "large-format black-and-white photographic language with long-exposure impression",
+      "representation": "recognizable",
+      "description": "以大画幅黑白摄影、长时间曝光、近乎抽象的海天分界和极简信息密度建立时间感；本包关注观看与曝光的关系，不固定海、地平线或建筑题材。",
+      "required_contexts": [],
+      "incompatible_contexts": [],
+      "limitations": [
+        "copied composition",
+        "named character or branded asset"
+      ]
+    },
+    "pillars": [
+      "以大画幅黑白摄影、长时间曝光、近乎抽象的海天分界和极简信息密度建立时间感；本包关注观看与曝光的关系，不固定海、地平线或建筑题材。",
+      "composition: Reduce the frame to a few measured planes or a single centered structural division.; Let emptiness, horizon, symmetry, and repeated architectural rhythm carry the composition.",
+      "palette: Prefer a narrow neutral scale from deep charcoal to luminous gray; color should be absent unless the user asks for it.; Keep tonal transitions continuous and deliberate, without dramatic crushed blacks.",
+      "lighting: quality: long-exposure natural light; behavior: Light is even and time-based; movement dissolves into calm tonal fields rather than visible effects."
+    ],
+    "rules": [
+      {
+        "id": "composition",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Organize the requested subject using these package-specific spatial decisions: Reduce the frame to a few measured planes or a single centered structural division.; Let emptiness, horizon, symmetry, and repeated architectural rhythm carry the composition.. Preserve the user-provided content and layout.",
+        "observable": "The stated hierarchy, spacing, framing, or depth relationship is readable: Reduce the frame to a few measured planes or a single centered structural division.; Let emptiness, horizon, symmetry, and repeated architectural rhythm carry the composition..",
+        "reject_when": "The composition contradicts these spatial decisions or copies a source arrangement: Reduce the frame to a few measured planes or a single centered structural division.; Let emptiness, horizon, symmetry, and repeated architectural rhythm carry the composition..",
+        "evidence": {
+          "source_ids": [
+            "source-hiroshi-sugimoto-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "palette",
+        "axis": "palette",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use these package-specific color roles and relationships: Prefer a narrow neutral scale from deep charcoal to luminous gray; color should be absent unless the user asks for it.; Keep tonal transitions continuous and deliberate, without dramatic crushed blacks.. Adapt their balance to the requested subject; do not apply them as a uniform tint.",
+        "observable": "The stated colors and their roles are visible and distinguishable: Prefer a narrow neutral scale from deep charcoal to luminous gray; color should be absent unless the user asks for it.; Keep tonal transitions continuous and deliberate, without dramatic crushed blacks..",
+        "reject_when": "An all-over filter replaces the stated color relationships, or their roles cannot be distinguished: Prefer a narrow neutral scale from deep charcoal to luminous gray; color should be absent unless the user asks for it.; Keep tonal transitions continuous and deliberate, without dramatic crushed blacks..",
+        "evidence": {
+          "source_ids": [
+            "source-hiroshi-sugimoto-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "lighting",
+        "axis": "lighting",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Apply the package-specific light behavior: quality: long-exposure natural light; behavior: Light is even and time-based; movement dissolves into calm tonal fields rather than visible effects.. Keep light coherent with the requested subject, medium, and scene.",
+        "observable": "Light and shadow visibly support the stated forms or atmosphere: quality: long-exposure natural light; behavior: Light is even and time-based; movement dissolves into calm tonal fields rather than visible effects..",
+        "reject_when": "Global glow, tint, or incoherent light replaces the stated behavior: quality: long-exposure natural light; behavior: Light is even and time-based; movement dissolves into calm tonal fields rather than visible effects..",
+        "evidence": {
+          "source_ids": [
+            "source-hiroshi-sugimoto-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "surface",
+        "axis": "surface",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Render the requested materials using these package-specific surface decisions: finish: fine silver-gelatin print with controlled paper presence; edges: precise but not digitally sharpened; preserve subtle optical softness. Preserve detail hierarchy and material identity.",
+        "observable": "The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish: fine silver-gelatin print with controlled paper presence; edges: precise but not digitally sharpened; preserve subtle optical softness.",
+        "reject_when": "Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: finish: fine silver-gelatin print with controlled paper presence; edges: precise but not digitally sharpened; preserve subtle optical softness.",
+        "evidence": {
+          "source_ids": [
+            "source-hiroshi-sugimoto-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "texture",
+        "axis": "texture",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Render the requested materials using these package-specific surface decisions: density: low; detail appears only where it supports material or tonal structure; placement: texture is concentrated in subtle grain, water, architecture, or print surface rather than everywhere. Preserve detail hierarchy and material identity.",
+        "observable": "The stated edge, surface, or texture treatment can be seen at an appropriate scale: density: low; detail appears only where it supports material or tonal structure; placement: texture is concentrated in subtle grain, water, architecture, or print surface rather than everywhere.",
+        "reject_when": "Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: density: low; detail appears only where it supports material or tonal structure; placement: texture is concentrated in subtle grain, water, architecture, or print surface rather than everywhere.",
+        "evidence": {
+          "source_ids": [
+            "source-hiroshi-sugimoto-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "visual-relationship-coherence",
+        "rule_ids": [
+          "composition",
+          "palette",
+          "lighting"
+        ],
+        "instruction": "Keep the package-specific relationship among composition, palette, lighting consistent while preserving the user-specified subject and layout.",
+        "observable": "The linked visual decisions reinforce one another and remain subordinate to the user-provided subject."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-hiroshi-sugimoto-primary-source",
+        "kind": "primary",
+        "base_asset_id": "hiroshi-sugimoto-primary-source",
+        "package_reference": {
+          "asset_id": "hiroshi-sugimoto-primary-source",
+          "local_path": "",
+          "title": "杉本博司职业回顾展资料",
+          "creator": "史密森学会赫希洪博物馆",
+          "year": "",
+          "source_url": "https://hirshhorn.si.edu/exhibitions/hiroshi-sugimoto/",
+          "license": "link_only",
+          "attribution": "The museum source is linked for research; contemporary artworks are not bundled or reproduced.",
+          "role": "primary",
+          "notes": "Link-only source record; bundle a local asset only after redistribution rights are verified."
+        }
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "69c02848f6f39a5bc1b154c1b619f4cabfe9313374c5ff7a36a35be2cdf830f7",
+    "negative_prompt_sha256": "82f2169b4020c43232554bbbb1ee3d7532344f20915141f1a6c73e8324b34934",
+    "direction_sha256": "a5c83feed1335b0e3b6264fdb2f7fef5c8091194327afc9f9a9efce59c28e341",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
