@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: delaunay-seam-aware-garment-color-rhythm
 name: Delaunay seam-aware garment color rhythm
@@ -26,6 +26,21 @@ scope:
     - Keep all designed color shapes within the garment silhouette; do not turn the wearer, mannequin, background, or second garment into a textile pattern unless requested.
     - Align blocks and arcs to actual garment panels and seams; do not erase buttons, pockets, lapels, cuffs, or openings.
     - Do not default to a dress, a specific historical costume, a wearer, or a named design.
+contexts:
+  - id: user-requested-single-garment-design
+    description: The user requests a designed or patterned single garment.
+  - id: user-requested-unpatterned-garment
+    description: The user requests a garment without a pattern or color-block design.
+  - id: multiple-garments-as-equal-subjects
+    description: The user requests multiple garments as equally weighted subjects.
+  - id: exact-brand-or-logo-reproduction
+    description: The user requests exact reproduction of a brand or logo.
+  - id: text-or-logo-reproduction
+    description: The user requests text or logo reproduction.
+  - id: garment-includes-structural-details
+    description: The garment includes specified closures, lapels, pockets, cuffs, or other structural details.
+  - id: user-permits-multicolor-garment-design
+    description: The user permits a multicolor garment design.
 pillars:
   - Make color rhythm answer the garment's construction, with related shapes connecting adjacent panels.
   - Use simultaneous warm-cool contrasts in a controlled palette rather than a random rainbow fill.
@@ -34,6 +49,8 @@ rules:
   - id: rhythm-follows-garment-panels
     axis: pattern-to-construction-alignment
     importance: core
+    when_contexts:
+      - user-requested-single-garment-design
     applies_when: The user requests a patterned or color-blocked garment.
     instruction: Place major color blocks and arcs inside the actual body, sleeve, and collar panels; let related edges meet or continue across seams where the user has requested a coordinated design.
     observable: Color rhythm follows the garment's cut and panel boundaries rather than floating as an unrelated overlay.
@@ -47,6 +64,8 @@ rules:
   - id: construction-details-remain-readable
     axis: garment-function-and-feature-legibility
     importance: core
+    when_contexts:
+      - garment-includes-structural-details
     applies_when: The requested garment includes closures, lapels, pockets, cuffs, or other structural details.
     instruction: Preserve each specified feature and leave enough contrast around it to identify its function; pattern edges may meet a seam but must not disguise the opening or fastener.
     observable: The garment remains wearable and recognizable at thumbnail size, with all requested closures and features visible.
@@ -60,6 +79,8 @@ rules:
   - id: controlled-simultaneous-contrast
     axis: color-rhythm-and-local-contrast
     importance: supporting
+    when_contexts:
+      - user-permits-multicolor-garment-design
     applies_when: The user permits a multicolor garment design.
     instruction: Pair a small set of contrasting hues across neighboring garment panels, vary arc or block scale to create movement, and leave a few quiet intervals so the garment does not become an undifferentiated rainbow.
     observable: Adjacent panels create a pulsing color rhythm while each panel and the whole garment remain distinct.

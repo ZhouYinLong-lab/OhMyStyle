@@ -76,4 +76,4 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：沿衣片接缝组织色彩节奏
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 仅适用于用户指定的一件服装设计：把同时性对比的色块沿实际衣片、袖片和接缝分配，节奏跨相邻衣片呼应，同时保留衣服的版型、开口和结构细节。它不默认要求裙装或特定图案，也不把背景铺成第二块织物。见 [`comparisons/`](comparisons/README.md) 查看短外套设计对照；该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅适用于用户指定的一件服装设计：把同时性对比的色块沿实际衣片、袖片和接缝分配，节奏跨相邻衣片呼应。调用者可声明 `garment-includes-structural-details` 或 `user-permits-multicolor-garment-design`，按需启用结构细节或多色对比规则。它不默认要求裙装或特定图案，也不把背景铺成第二块织物。见 [`comparisons/`](comparisons/README.md) 查看短外套设计对照；该方向仍处于实验状态。
