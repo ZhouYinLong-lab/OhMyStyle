@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: hand-drawn-linework-game-art-direction
+name: 手绘线描游戏美术
+base_package: game-art/hand-drawn-linework-game-art
+scope:
+  medium: 线条具有手绘粗细和微小偏差; 轮廓允许局部断开但形体必须闭合可读; 排线沿结构而非随机填充
+  representation: stylized
+  description: 以具有手绘粗细和轻微不规则性的线条构建人物、物件与空间，允许黑白或少量填色，靠线密度和轮廓保持层级。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - perfect_vector_uniformity
+  - photographic_shading
+  - copied_illustration
+  - illegible_dense_hatching
+pillars:
+- 以具有手绘粗细和轻微不规则性的线条构建人物、物件与空间，允许黑白或少量填色，靠线密度和轮廓保持层级。
+- 'medium: 线条具有手绘粗细和微小偏差; 轮廓允许局部断开但形体必须闭合可读; 排线沿结构而非随机填充'
+- 'composition: 以清楚的外轮廓和疏密差组织读图顺序; 密集区域之间保留可供视线停留的空隙; 交互对象用轮廓或留白从线网中分离'
+- 'palette: 黑白或纸色为主并限制强调色数量; 线色与底色保持稳定对比; 色块只用于分区和交互提示'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 线条具有手绘粗细和微小偏差;
+    轮廓允许局部断开但形体必须闭合可读; 排线沿结构而非随机填充.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 线条具有手绘粗细和微小偏差;
+    轮廓允许局部断开但形体必须闭合可读; 排线沿结构而非随机填充.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    线条具有手绘粗细和微小偏差; 轮廓允许局部断开但形体必须闭合可读; 排线沿结构而非随机填充.'
+  evidence:
+    source_ids:
+    - source-hand-drawn-linework-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以清楚的外轮廓和疏密差组织读图顺序;
+    密集区域之间保留可供视线停留的空隙; 交互对象用轮廓或留白从线网中分离. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以清楚的外轮廓和疏密差组织读图顺序;
+    密集区域之间保留可供视线停留的空隙; 交互对象用轮廓或留白从线网中分离.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以清楚的外轮廓和疏密差组织读图顺序;
+    密集区域之间保留可供视线停留的空隙; 交互对象用轮廓或留白从线网中分离.'
+  evidence:
+    source_ids:
+    - source-hand-drawn-linework-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑白或纸色为主并限制强调色数量; 线色与底色保持稳定对比; 色块只用于分区和交互提示.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑白或纸色为主并限制强调色数量; 线色与底色保持稳定对比;
+    色块只用于分区和交互提示.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑白或纸色为主并限制强调色数量; 线色与底色保持稳定对比; 色块只用于分区和交互提示.'
+  evidence:
+    source_ids:
+    - source-hand-drawn-linework-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 明暗以线密度和少量实黑表达; 不模拟写实渐变; 重要轮廓避免与暗部合并. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 明暗以线密度和少量实黑表达; 不模拟写实渐变; 重要轮廓避免与暗部合并.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 明暗以线密度和少量实黑表达; 不模拟写实渐变;
+    重要轮廓避免与暗部合并.'
+  evidence:
+    source_ids:
+    - source-hand-drawn-linework-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纸面和扫描感轻微可见;
+    不规则线端保留人工痕迹; 表面纹理不能遮住线条交叉关系. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纸面和扫描感轻微可见;
+    不规则线端保留人工痕迹; 表面纹理不能遮住线条交叉关系.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纸面和扫描感轻微可见; 不规则线端保留人工痕迹; 表面纹理不能遮住线条交叉关系.'
+  evidence:
+    source_ids:
+    - source-hand-drawn-linework-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 排线方向呼应结构和材质;
+    细节密度随重要度分配; 缩小显示时合并为稳定明暗块. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 排线方向呼应结构和材质;
+    细节密度随重要度分配; 缩小显示时合并为稳定明暗块.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    排线方向呼应结构和材质; 细节密度随重要度分配; 缩小显示时合并为稳定明暗块.'
+  evidence:
+    source_ids:
+    - source-hand-drawn-linework-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-hand-drawn-linework-game-art-primary-source
+  kind: primary
+  base_asset_id: hand-drawn-linework-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先用大轮廓建立空间与焦点
+  - 再用线宽区分前后层级
+  - 以方向性排线说明形体
+  - 最后检查缩小后的可读性
+  - 线条始终是主要造型媒介
+  - 主题变化后仍保留手绘边缘
+  - 不复制来源插画或其物件布局
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - perfect_vector_uniformity
+  - photographic_shading
+  - copied_illustration
+  - illegible_dense_hatching
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
