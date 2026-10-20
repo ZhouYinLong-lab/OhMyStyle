@@ -1,0 +1,168 @@
+schema_version: 2.1.0
+status: experimental
+id: zx-spectrum-attribute-pixel-direction
+name: 属性受限像素美术
+base_package: game-art/zx-spectrum-attribute-pixel
+scope:
+  medium: 'Native resolution: 256x192; integer nearest-neighbor upscale only.'
+  representation: stylized
+  description: A constrained 8-bit game-art direction defined by chunky pixel silhouettes, hard two-color attribute
+    blocks, a saturated 15-color hardware palette, deliberate color clash management, and readable gameplay-first
+    composition.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - modern_smooth_pixel_art
+  - unlimited_palette_pixel_art
+  - anti_aliased_vector_art
+pillars:
+- A constrained 8-bit game-art direction defined by chunky pixel silhouettes, hard two-color attribute blocks,
+  a saturated 15-color hardware palette, deliberate color clash management, and readable gameplay-first composition.
+- 'medium: Native resolution: 256x192; integer nearest-neighbor upscale only.'
+- 'composition: gameplay_first_legibility; strong_horizontal_ground_or_platform; clustered_cells_for_objects;
+  deliberate_empty_border_or_ui_band'
+- 'palette: 15 visible colors; at most maximum_two_colors_per_8x8_cell.; Brightness mode: normal_or_bright_mode'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: Native
+    resolution: 256x192; integer nearest-neighbor upscale only..'
+  observable: 'The requested image retains the stated medium distinction or production constraint: Native resolution:
+    256x192; integer nearest-neighbor upscale only..'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    Native resolution: 256x192; integer nearest-neighbor upscale only..'
+  evidence:
+    source_ids:
+    - source-planet-sinclair-spec
+    - source-zx-spectrum-wiki
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: gameplay_first_legibility;
+    strong_horizontal_ground_or_platform; clustered_cells_for_objects; deliberate_empty_border_or_ui_band.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: gameplay_first_legibility;
+    strong_horizontal_ground_or_platform; clustered_cells_for_objects; deliberate_empty_border_or_ui_band.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: gameplay_first_legibility;
+    strong_horizontal_ground_or_platform; clustered_cells_for_objects; deliberate_empty_border_or_ui_band.'
+  evidence:
+    source_ids:
+    - source-planet-sinclair-spec
+    - source-zx-spectrum-wiki
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 15 visible colors; at most maximum_two_colors_per_8x8_cell.;
+    Brightness mode: normal_or_bright_mode. Adapt their balance to the requested subject; do not apply them
+    as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 15 visible colors; at most
+    maximum_two_colors_per_8x8_cell.; Brightness mode: normal_or_bright_mode.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    15 visible colors; at most maximum_two_colors_per_8x8_cell.; Brightness mode: normal_or_bright_mode.'
+  evidence:
+    source_ids:
+    - source-planet-sinclair-spec
+    - source-zx-spectrum-wiki
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: Represent tonal changes through attribute-cell color
+    and dithering.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: Represent tonal changes through
+    attribute-cell color and dithering..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: Represent tonal changes
+    through attribute-cell color and dithering..'
+  evidence:
+    source_ids:
+    - source-planet-sinclair-spec
+    - source-zx-spectrum-wiki
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Hard pixel edges
+    with no smooth antialiasing.. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Hard pixel
+    edges with no smooth antialiasing..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Hard pixel edges with no smooth antialiasing..'
+  evidence:
+    source_ids:
+    - source-planet-sinclair-spec
+    - source-zx-spectrum-wiki
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: hard_pixel_edges;
+    sparse_dither; controlled_attribute_clash. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: hard_pixel_edges;
+    sparse_dither; controlled_attribute_clash.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    hard_pixel_edges; sparse_dither; controlled_attribute_clash.'
+  evidence:
+    source_ids:
+    - source-planet-sinclair-spec
+    - source-zx-spectrum-wiki
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-planet-sinclair-spec
+  kind: primary
+  base_asset_id: planet-sinclair-spec
+- id: source-zx-spectrum-wiki
+  kind: secondary
+  base_asset_id: zx-spectrum-wiki
+execution:
+  route: text_only
+  must:
+  - block the background and player silhouette before small details
+  - reserve high-contrast cells for interactive objects
+  - align moving-object colors to nearby cell attributes when clarity matters
+  - allow small controlled clashes when they add era-specific character
+  - test the image at native resolution before upscaling
+  - no_smooth_antialiasing
+  - two_color_cell_logic_remains_visible
+  - silhouette_is_readable_at_native_size
+  avoid:
+  - anti_aliasing
+  - smooth_gradient
+  - modern_particle_effect
+  - photorealistic_texture
+  - unlimited_color_sprinkle
+  - modern_smooth_pixel_art
+  - unlimited_palette_pixel_art
+  - anti_aliased_vector_art
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
