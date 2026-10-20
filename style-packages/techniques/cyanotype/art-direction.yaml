@@ -4,7 +4,7 @@ id: cyanotype-direction
 name: 氰版印相
 base_package: techniques/cyanotype
 scope:
-  medium: 'name: technique; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
+  medium: cyanotype contact printing, with Prussian-blue photochemical exposure on a visible paper ground
   representation: stylized
   description: Describes cyanotype results through Prussian-blue values, contact-print silhouettes, paper irregularity,
     and photochemical traces, focusing on process rather than a single artist’s personal style.
@@ -14,24 +14,23 @@ scope:
   - copying_a_specific_work
   - copying_a_named_character_or_logo
 pillars:
-- Describes cyanotype results through Prussian-blue values, contact-print silhouettes, paper irregularity,
-  and photochemical traces, focusing on process rather than a single artist’s personal style.
-- 'medium: name: technique; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
-- 'composition: priorities: visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer'
-- 'palette: name: cyanotype; usage: controlled relationship among dominant, support, shadow, and accent colors;
-  colors: name: color_0; colors: hex: #123A63; colors: role: 深色影像; colors: name: color_1; colors: hex: #2B5B82;
-  colors: role: 中间调'
+- Describes cyanotype results through Prussian-blue values, contact-print silhouettes, paper irregularity, and
+  photochemical traces, focusing on process rather than a single artist’s personal style.
+- 'medium: cyanotype contact printing, with Prussian-blue photochemical exposure on a visible paper ground'
+- 'composition: Arrange the requested subject as a readable contact-print silhouette with deliberate negative
+  space; preserve paper margins and avoid a copied source arrangement.'
+- 'palette: Prussian-blue image values over warm paper: #123A63 deep image, #2B5B82 middle tone, #7FA6B9 diluted
+  layer, #F1EAD8 unexposed area, and #D3C5A5 paper base.'
 rules:
 - id: medium
   axis: medium
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: name:
-    technique; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  observable: 'The requested image retains the stated medium distinction or production constraint: name: technique;
-    visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
-    name: technique; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
+  instruction: Render in cyanotype contact printing, with Prussian-blue photochemical exposure on a visible paper
+    ground; make the production or rendering process visible in edge, surface, and tonal evidence.
+  observable: The image visibly reads as cyanotype contact printing, with Prussian-blue photochemical exposure
+    on a visible paper ground, rather than a generic color treatment.
+  reject_when: Reject when the material or rendering process cannot be distinguished from a generic filter.
   evidence:
     source_ids:
     - source-source-1
@@ -42,13 +41,12 @@ rules:
   axis: composition
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Organize the requested subject using these package-specific spatial decisions: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer. Preserve
-    the user-provided content and layout.'
-  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: priorities: visual_hierarchy;
-    priorities: negative_space; priorities: subject_independent_style_transfer.'
-  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer.'
+  instruction: Arrange the requested subject as a readable contact-print silhouette with deliberate negative space;
+    preserve paper margins and avoid a copied source arrangement. Preserve the user-provided subject and requested
+    layout.
+  observable: Arrange the requested subject as a readable contact-print silhouette with deliberate negative space;
+    preserve paper margins and avoid a copied source arrangement.
+  reject_when: Reject when the arrangement loses these structural decisions or copies a source composition.
   evidence:
     source_ids:
     - source-source-1
@@ -59,17 +57,11 @@ rules:
   axis: palette
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: name: cyanotype; usage: controlled
-    relationship among dominant, support, shadow, and accent colors; colors: name: color_0; colors: hex: #123A63;
-    colors: role: 深色影像; colors: name: color_1; colors: hex: #2B5B82; colors: role: 中间调. Adapt their balance
-    to the requested subject; do not apply them as a uniform tint.'
-  observable: 'The stated colors and their roles are visible and distinguishable: name: cyanotype; usage: controlled
-    relationship among dominant, support, shadow, and accent colors; colors: name: color_0; colors: hex: #123A63;
-    colors: role: 深色影像; colors: name: color_1; colors: hex: #2B5B82; colors: role: 中间调.'
-  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
-    name: cyanotype; usage: controlled relationship among dominant, support, shadow, and accent colors; colors:
-    name: color_0; colors: hex: #123A63; colors: role: 深色影像; colors: name: color_1; colors: hex: #2B5B82; colors:
-    role: 中间调.'
+  instruction: Use Prussian blue for the deepest image, middle and diluted blues for tonal separation, and warm
+    paper or unexposed regions as distinct grounds. Do not apply a single blue filter.
+  observable: 'Prussian-blue image values over warm paper: #123A63 deep image, #2B5B82 middle tone, #7FA6B9 diluted
+    layer, #F1EAD8 unexposed area, and #D3C5A5 paper base.'
+  reject_when: Reject when a global tint replaces the stated color roles or the roles cannot be distinguished.
   evidence:
     source_ids:
     - source-source-1
@@ -88,8 +80,7 @@ joint_checks:
   - palette
   instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
     the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-source-1
   kind: style_reference
