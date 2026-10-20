@@ -1,0 +1,170 @@
+schema_version: 2.1.0
+status: experimental
+id: ps1-survival-horror-low-poly-direction
+name: 早期三维生存恐怖游戏美术
+base_package: game-art/ps1-survival-horror-low-poly
+scope:
+  medium: early real-time 3D game rendering with low-poly geometry and low-resolution texture logic
+  representation: stylized
+  description: 以低多边形几何、低分辨率纹理、固定机位、近距离雾化和预计算阴影制造早期三维游戏的紧张空间。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory corridor, hotel, mansion, monster, blood, or horror plot
+pillars:
+- 以低多边形几何、低分辨率纹理、固定机位、近距离雾化和预计算阴影制造早期三维游戏的紧张空间。
+- 'composition: Use a deliberate fixed-camera or near-fixed viewpoint with readable planes and a clear playable-space
+  hierarchy.; Prefer strong silhouettes, large geometric masses, and a controlled amount of empty space over
+  dense micro-detail.; Let doorways, corners, stairs, windows, or other planes guide the eye only when supplied
+  by the user''s subject.'
+- 'palette: Keep a limited, slightly dirty palette: cool blue-green shadows, neutral stone or concrete mids,
+  and small warm practical-light accents.; Separate depth with value grouping and material color blocks rather
+  than a global cinematic grade.'
+- 'lighting: quality: hard-edged real-time approximation softened by distance and atmosphere; behavior: Use
+  sparse directional or point-like sources with readable pools of light and restrained falloff.; behavior:
+  Keep shadow shapes simple and slightly stepped; use localized haze to reduce distant contrast.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Use a deliberate
+    fixed-camera or near-fixed viewpoint with readable planes and a clear playable-space hierarchy.; Prefer
+    strong silhouettes, large geometric masses, and a controlled amount of empty space over dense micro-detail.;
+    Let doorways, corners, stairs, windows, or other planes guide the eye only when supplied by the user''s
+    subject.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Use a deliberate
+    fixed-camera or near-fixed viewpoint with readable planes and a clear playable-space hierarchy.; Prefer
+    strong silhouettes, large geometric masses, and a controlled amount of empty space over dense micro-detail.;
+    Let doorways, corners, stairs, windows, or other planes guide the eye only when supplied by the user''s
+    subject..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Use a deliberate
+    fixed-camera or near-fixed viewpoint with readable planes and a clear playable-space hierarchy.; Prefer
+    strong silhouettes, large geometric masses, and a controlled amount of empty space over dense micro-detail.;
+    Let doorways, corners, stairs, windows, or other planes guide the eye only when supplied by the user''s
+    subject..'
+  evidence:
+    source_ids:
+    - source-ps1-survival-horror-low-poly-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Keep a limited, slightly dirty palette:
+    cool blue-green shadows, neutral stone or concrete mids, and small warm practical-light accents.; Separate
+    depth with value grouping and material color blocks rather than a global cinematic grade.. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Keep a limited, slightly
+    dirty palette: cool blue-green shadows, neutral stone or concrete mids, and small warm practical-light
+    accents.; Separate depth with value grouping and material color blocks rather than a global cinematic grade..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Keep a limited, slightly dirty palette: cool blue-green shadows, neutral stone or concrete mids, and small
+    warm practical-light accents.; Separate depth with value grouping and material color blocks rather than
+    a global cinematic grade..'
+  evidence:
+    source_ids:
+    - source-ps1-survival-horror-low-poly-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: hard-edged real-time approximation softened
+    by distance and atmosphere; behavior: Use sparse directional or point-like sources with readable pools
+    of light and restrained falloff.; behavior: Keep shadow shapes simple and slightly stepped; use localized
+    haze to reduce distant contrast.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: hard-edged real-time
+    approximation softened by distance and atmosphere; behavior: Use sparse directional or point-like sources
+    with readable pools of light and restrained falloff.; behavior: Keep shadow shapes simple and slightly
+    stepped; use localized haze to reduce distant contrast..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: hard-edged real-time
+    approximation softened by distance and atmosphere; behavior: Use sparse directional or point-like sources
+    with readable pools of light and restrained falloff.; behavior: Keep shadow shapes simple and slightly
+    stepped; use localized haze to reduce distant contrast..'
+  evidence:
+    source_ids:
+    - source-ps1-survival-horror-low-poly-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: low-resolution
+    texture mapping with visible material grouping; edges: faceted silhouettes, hard polygon breaks, and modest
+    texture shimmer rather than smooth subdivision. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    low-resolution texture mapping with visible material grouping; edges: faceted silhouettes, hard polygon
+    breaks, and modest texture shimmer rather than smooth subdivision.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: low-resolution texture mapping with visible material grouping; edges: faceted silhouettes, hard
+    polygon breaks, and modest texture shimmer rather than smooth subdivision.'
+  evidence:
+    source_ids:
+    - source-ps1-survival-horror-low-poly-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    to medium; detail is concentrated on structural seams and gameplay-readable surfaces; placement: textures
+    support shape, depth, and navigation; they do not become decorative noise. Preserve detail hierarchy and
+    material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low to medium; detail is concentrated on structural seams and gameplay-readable surfaces; placement: textures
+    support shape, depth, and navigation; they do not become decorative noise.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low to medium; detail is concentrated on structural seams and gameplay-readable surfaces; placement:
+    textures support shape, depth, and navigation; they do not become decorative noise.'
+  evidence:
+    source_ids:
+    - source-ps1-survival-horror-low-poly-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-ps1-survival-horror-low-poly-primary-source
+  kind: primary
+  base_asset_id: ps1-survival-horror-low-poly-primary-source
+execution:
+  route: text_only
+  must:
+  - Block the user-supplied subject into a small number of readable polygonal masses.
+  - Choose a deliberate camera position and preserve strong planar perspective.
+  - Assign a restrained material palette and low-resolution texture cues.
+  - Add sparse practical or directional light, simple shadows, and localized distance haze.
+  - Finish with restrained texture breakup and edge stepping; do not add a default horror location or prop.
+  - early real-time 3D geometry remains visible in silhouettes and planes
+  - camera and lighting stay intentional, restrained, and spatially legible
+  - depth is carried by value groups, haze, and simplified material response
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - mandatory corridor, hotel, mansion, monster, blood, or horror plot
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
