@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "edgar-degas",
+    "name": "埃德加·德加",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edgar-degas"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A commuter kneeling to retrieve a dropped glove beside a station bench",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A commuter kneeling to retrieve a dropped glove beside a station bench\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new painting image with cropped viewpoint, high angle, asymmetrical spatial rhythm, pastel surface passages, quick dry marks, and observational distance. Use a new subject and arrangement; make the medium and surface behavior observable; keep the focal hierarchy readable; do not imitate a named artwork or exact composition.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "copied named artwork, recognizable reconstruction, generic global style filter, unrelated extra style, unreadable subject, logo, trademark, watermark, arbitrary text",
+  "template_variables": {
+    "SUBJECT": "A commuter kneeling to retrieve a dropped glove beside a station bench",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "observed-figure-scene": {
+        "required": [
+          "off-center or oblique framing is deliberate and keeps the requested figure readable",
+          "a visible spatial plane connects viewpoint, setting, and action where applicable",
+          "the selected transitional pose remains anatomically and narratively legible"
+        ],
+        "reject_if": [
+          "dancers, stage, studio, mirror, or period props appear without request",
+          "arbitrary crop or perspective distortion obscures the requested action",
+          "motion blur replaces a readable pose"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

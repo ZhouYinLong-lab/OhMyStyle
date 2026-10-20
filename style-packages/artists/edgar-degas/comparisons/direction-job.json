@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "edgar-degas",
+    "name": "埃德加·德加",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edgar-degas"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A commuter kneeling to retrieve a dropped glove beside a station bench",
+  "prompt": "USER SUBJECT: A commuter kneeling to retrieve a dropped glove beside a station bench\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting_or_pastel\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [oblique-viewpoint-and-asymmetric-frame] Choose an off-center, elevated, or oblique viewpoint only when it reveals useful spatial information; balance the main figure with unequal surrounding areas and let any crop feel like a deliberate edge of the observed scene.\n- [spatial-plane-as-compositional-path] Give the spatial plane enough area and directional geometry to connect foreground and figures; use its edges, seams, or perspective only when they belong to the requested setting, and keep the plane subordinate to the focal action.\n- [legible-transitional-gesture] Select one readable in-between posture from the requested action and clarify its balance through torso, limbs, and weight-bearing contact; keep anatomy and contact points distinct, with no blur standing in for movement.\n- [observed-space-and-action] Let the selected viewpoint, spatial plane, and transitional pose describe one observed moment; each should clarify the same requested action without adding a recurring subject or setting.\nREQUIREMENT: Declare the observed-figure-scene context before applying this direction.\nREQUIREMENT: Preserve the user-requested scene, action, setting, and figure count.\nREQUIREMENT: Use asymmetrical framing and a spatial plane only where they clarify the requested scene.\nREQUIREMENT: Keep the selected pose anatomically and narratively legible.",
+  "negative_prompt": "centered symmetry by default, arbitrary edge cuts, and fisheye distortion\ninvented floor patterns, stage marks, and dominant perspective grids\ngeneric motion blur, ballet poses by default, and unreadable anatomy\nadding dancers, stages, studios, mirrors, or period props without request\nforcing crops or a high viewpoint onto scenes they do not suit\nusing motion blur or perspective distortion to imply observation",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "degas-oblique-observation-and-spatial-crop",
+    "name": "Degas oblique observation and spatial crop",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edgar-degas\\art-direction.yaml",
+    "sha256": "abc259c65dbb625d8e46d91c8b01275f7a5c7b421b151ba45dfc9bc99ab25412",
+    "active_rule_ids": [
+      "oblique-viewpoint-and-asymmetric-frame",
+      "spatial-plane-as-compositional-path",
+      "legible-transitional-gesture"
+    ],
+    "contexts": [
+      "observed-figure-scene"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare the observed-figure-scene context before applying this direction.",
+      "Preserve the user-requested scene, action, setting, and figure count.",
+      "Use asymmetrical framing and a spatial plane only where they clarify the requested scene.",
+      "Keep the selected pose anatomically and narratively legible."
+    ],
+    "avoid": [
+      "adding dancers, stages, studios, mirrors, or period props without request",
+      "forcing crops or a high viewpoint onto scenes they do not suit",
+      "using motion blur or perspective distortion to imply observation"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting_or_pastel",
+      "representation": "recognizable",
+      "description": "An observational figure-scene direction built from an off-center viewpoint, asymmetric framing, and a spatial plane that carries the viewer into the scene. Cropping and tilted floor or ground geometry organize attention; they are deliberate framing choices rather than a preset dance motif.",
+      "required_contexts": [
+        "observed-figure-scene"
+      ],
+      "incompatible_contexts": [
+        "centered-iconic-portrait",
+        "nonfigurative-field",
+        "flat-orthographic-diagram"
+      ],
+      "limitations": [
+        "Preserve the requested subject, identities, action, count, setting, and point of view when specified; do not add dancers, a studio, a stage, mirrors, or period props unless requested.",
+        "Treat cropping as a compositional option: never cut through a face, hand, or action-critical contact when that would make the user-requested event unreadable.",
+        "Use an elevated or oblique viewpoint only when it clarifies spatial relations; do not force a tilted horizon or distorted anatomy."
+      ]
+    },
+    "rules": [
+      {
+        "id": "oblique-viewpoint-and-asymmetric-frame",
+        "axis": "viewpoint_and_framing",
+        "importance": "core",
+        "applies_when": "The requested scene contains a figure in a specific setting and an observational viewpoint is appropriate.",
+        "instruction": "Choose an off-center, elevated, or oblique viewpoint only when it reveals useful spatial information; balance the main figure with unequal surrounding areas and let any crop feel like a deliberate edge of the observed scene.",
+        "observable": "The viewpoint feels specific to the scene, the framing is asymmetrical without feeling accidental, and the requested figure remains identifiable.",
+        "reject_when": "The scene defaults to a centered stage view, arbitrary limbs are clipped, or perspective distortion replaces observation.",
+        "evidence": {
+          "source_ids": [
+            "degas-met-painting-and-drawing",
+            "degas-nga-picturing-france"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "centered symmetry by default, arbitrary edge cuts, and fisheye distortion"
+      },
+      {
+        "id": "spatial-plane-as-compositional-path",
+        "axis": "spatial_composition",
+        "importance": "core",
+        "applies_when": "The requested setting includes a readable floor, ground, or comparable plane.",
+        "instruction": "Give the spatial plane enough area and directional geometry to connect foreground and figures; use its edges, seams, or perspective only when they belong to the requested setting, and keep the plane subordinate to the focal action.",
+        "observable": "The plane makes the viewpoint and depth legible and guides attention through the requested scene without becoming a decorative pattern.",
+        "reject_when": "The ground disappears into a generic backdrop, or invented boards, rugs, stage markings, and diagonals dominate the image.",
+        "evidence": {
+          "source_ids": [
+            "degas-nga-picturing-france",
+            "degas-met-painting-and-drawing"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "invented floor patterns, stage marks, and dominant perspective grids"
+      },
+      {
+        "id": "legible-transitional-gesture",
+        "axis": "figure_action",
+        "importance": "core",
+        "applies_when": "The requested subject includes a person moving, pausing, or changing posture.",
+        "instruction": "Select one readable in-between posture from the requested action and clarify its balance through torso, limbs, and weight-bearing contact; keep anatomy and contact points distinct, with no blur standing in for movement.",
+        "observable": "The pose suggests a precise moment in an action while remaining anatomically readable and faithful to the request.",
+        "reject_when": "Motion blur obscures the pose, limbs merge, or an unrequested dance gesture or activity is introduced.",
+        "evidence": {
+          "source_ids": [
+            "degas-nga-dancers",
+            "degas-met-painting-and-drawing"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "generic motion blur, ballet poses by default, and unreadable anatomy"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "observed-space-and-action",
+        "rule_ids": [
+          "oblique-viewpoint-and-asymmetric-frame",
+          "spatial-plane-as-compositional-path",
+          "legible-transitional-gesture"
+        ],
+        "instruction": "Let the selected viewpoint, spatial plane, and transitional pose describe one observed moment; each should clarify the same requested action without adding a recurring subject or setting.",
+        "observable": "Framing, ground plane, and bodily balance work together to make the scene feel observed in progress while preserving the user-specified content."
+      }
+    ],
+    "sources": [
+      {
+        "id": "degas-met-painting-and-drawing",
+        "kind": "museum_essay",
+        "url": "https://www.metmuseum.org/essays/edgar-degas-1834-1917-painting-and-drawing"
+      },
+      {
+        "id": "degas-nga-picturing-france",
+        "kind": "museum_teaching_resource",
+        "url": "https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/education/learning-resources/teaching-packets/pdfs/picturing_france.pdf"
+      },
+      {
+        "id": "degas-nga-dancers",
+        "kind": "museum_catalogue",
+        "url": "https://www.nga.gov/research/publications/degass-dancers"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "abc259c65dbb625d8e46d91c8b01275f7a5c7b421b151ba45dfc9bc99ab25412",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
