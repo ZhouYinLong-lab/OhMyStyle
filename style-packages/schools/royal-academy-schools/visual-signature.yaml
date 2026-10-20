@@ -6,10 +6,9 @@ palette:
 - 工作室式材料意识和反复推敲
 - 受控构图、比例和明暗关系
 lighting:
-  quality: 受控构图、比例和明暗关系
+  quality: controlled studio daylight with clear form modeling and a full value range
   behavior:
-  - Keep the requested subject and location independent from the package.
-  - Apply lighting as a transferable visual decision, not a fixed scene.
+  - Model volume consistently while preserving observed proportions and the local color of materials.
 surface:
   finish: 保留个人笔触或材料选择，而不是套用统一滤镜
   edges: subject-dependent, without a copied layout

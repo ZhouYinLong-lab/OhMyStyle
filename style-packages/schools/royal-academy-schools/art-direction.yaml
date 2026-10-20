@@ -19,6 +19,8 @@ pillars:
 - 'differentiation: 观察先于装饰的形体判断; 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系'
 - 'composition: 观察先于装饰的形体判断; 工作室式材料意识和反复推敲'
 - 'palette: 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系'
+- 'lighting: controlled studio daylight with clear form modeling and a full value range; Model volume consistently
+  while preserving observed proportions and the local color of materials.'
 rules:
 - id: distinctiveness
   axis: differentiation
@@ -38,8 +40,8 @@ rules:
   axis: composition
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Organize the requested subject using these package-specific spatial decisions: 观察先于装饰的形体判断;
-    工作室式材料意识和反复推敲. Preserve the user-provided content and layout.'
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 观察先于装饰的形体判断; 工作室式材料意识和反复推敲.
+    Preserve the user-provided content and layout.'
   observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 观察先于装饰的形体判断; 工作室式材料意识和反复推敲.'
   reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 观察先于装饰的形体判断;
     工作室式材料意识和反复推敲.'
@@ -52,8 +54,8 @@ rules:
   axis: palette
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系. Adapt
-    their balance to the requested subject; do not apply them as a uniform tint.'
+  instruction: 'Use these package-specific color roles and relationships: 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
   observable: 'The stated colors and their roles are visible and distinguishable: 工作室式材料意识和反复推敲; 受控构图、比例和明暗关系.'
   reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
     工作室式材料意识和反复推敲; 受控构图、比例和明暗关系.'
@@ -66,15 +68,14 @@ rules:
   axis: lighting
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Apply the package-specific light behavior: quality: 受控构图、比例和明暗关系; behavior: Keep the requested
-    subject and location independent from the package.; behavior: Apply lighting as a transferable visual decision,
-    not a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
-  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 受控构图、比例和明暗关系; behavior:
-    Keep the requested subject and location independent from the package.; behavior: Apply lighting as a transferable
-    visual decision, not a fixed scene..'
-  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 受控构图、比例和明暗关系;
-    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
-    as a transferable visual decision, not a fixed scene..'
+  instruction: Use controlled studio daylight with clear form modeling and a full value range. Model volume consistently
+    while preserving observed proportions and the local color of materials. Keep the light coherent with the requested
+    subject and scene.
+  observable: 'The light quality and its effect on shadows, materials, or tonal separation are visible: controlled
+    studio daylight with clear form modeling and a full value range. Model volume consistently while preserving
+    observed proportions and the local color of materials.'
+  reject_when: 'Reject global tint, bloom, or lighting that erases the stated tonal or material distinctions:
+    controlled studio daylight with clear form modeling and a full value range.'
   evidence:
     source_ids:
     - source-primary-01
@@ -86,10 +87,10 @@ rules:
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
   instruction: 'Render the requested materials using these package-specific surface decisions: finish: 保留个人笔触或材料选择，而不是套用统一滤镜;
     edges: subject-dependent, without a copied layout. Preserve detail hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish: 保留个人笔触或材料选择，而不是套用统一滤镜;
+    edges: subject-dependent, without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: finish:
     保留个人笔触或材料选择，而不是套用统一滤镜; edges: subject-dependent, without a copied layout.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    finish: 保留个人笔触或材料选择，而不是套用统一滤镜; edges: subject-dependent, without a copied layout.'
   evidence:
     source_ids:
     - source-primary-01
@@ -102,10 +103,10 @@ rules:
   instruction: 'Render the requested materials using these package-specific surface decisions: density: controlled
     and medium-dependent; placement: only where the package visual language needs explanation. Preserve detail
     hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density: controlled
+    and medium-dependent; placement: only where the package visual language needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: density:
     controlled and medium-dependent; placement: only where the package visual language needs explanation.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    density: controlled and medium-dependent; placement: only where the package visual language needs explanation.'
   evidence:
     source_ids:
     - source-primary-01
@@ -124,10 +125,9 @@ joint_checks:
   - distinctiveness
   - composition
   - palette
-  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
-    while preserving the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-primary-01
   kind: primary_research_source
@@ -151,6 +151,6 @@ execution:
   - copied reference composition or branded asset
   - copied composition
   - named character or branded asset
-  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
-    protected game asset.
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+    game asset.
   - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
