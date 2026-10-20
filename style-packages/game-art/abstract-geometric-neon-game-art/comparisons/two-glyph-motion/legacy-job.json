@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "abstract-geometric-neon-game-art",
+    "name": "抽象几何霓虹游戏美术",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\abstract-geometric-neon-game-art"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，无文字。一个简洁的深色抽象空间里，一枚蓝色发光立方体与一个橙红色圆环沿左下到右上的对角线运动，只有这两个主体；几何边缘清晰，背景留有充足负空间。",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "Subject: 横版 16:9，无文字。一个简洁的深色抽象空间里，一枚蓝色发光立方体与一个橙红色圆环沿左下到右上的对角线运动，只有这两个主体；几何边缘清晰，背景留有充足负空间。\nLocation: the user-requested setting\n\nCreate a new subject and composition using these observable visual decisions:\n- 几何焦点沿明确的运动轴组织\n- 深色负空间隔开轮廓与光迹\n- 透视线和重复形状提供方向感\n- 暗底承托少量高亮色\n- 每个颜色承担稳定的对象或节奏角色\n- 高饱和色以面积和亮度共同分级\n- 线框、发光边缘与简化实体并置\n- 形体以几何轮廓而非生活化细节识别\n- 光迹沿运动路径出现并及时衰减\n- 发光核心与外溢光晕分层\n- 高光不吞并主体边界\n- 明暗变化跟随节奏或事件而非随机闪烁\n- 表面保持光滑、抽象且低材质噪声\n- 体积由边缘亮度和透明叠层建立\n- 不用照片纹理伪装复杂度\n- 重复图形构成节拍而非装饰铺满\n- 轨迹粗细映射速度或能量\n- 屏幕闪烁频率可控且保留舒适度\n- 抽象几何比写实地点更主导\n- 颜色和运动有一致映射\n- 不复刻来源作品的特定图形或镜头\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nSUBJECT INDEPENDENCE CONTRACT: render only the requested subject and location; do not add a default character, object, setting, or narrative.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- cyberpunk_city_default\n- photorealistic_materials\n- unreadable_flashing\n- copied_game_entities",
+  "template_variables": {
+    "SUBJECT": "横版 16:9，无文字。一个简洁的深色抽象空间里，一枚蓝色发光立方体与一个橙红色圆环沿左下到右上的对角线运动，只有这两个主体；几何边缘清晰，背景留有充足负空间。",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "prompt_sha256": "732b904e2b071195c33018f2f698779dd937bf2720030f912db6fc893183ad51",
+    "negative_prompt_sha256": "c43c432028e79bfcd39cb26979745b6128d62656ddc1af8424fa5dc06523d95e",
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

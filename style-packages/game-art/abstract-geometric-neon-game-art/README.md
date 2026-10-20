@@ -38,6 +38,10 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 视觉对照
+
+[`双几何体运动对照`](comparisons/two-glyph-motion/README.md)记录同题旧包与新版方向输出。该单次试验显示两种路径的风格接近，不能据此声称新版有质量优势。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

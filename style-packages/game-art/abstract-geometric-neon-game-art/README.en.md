@@ -50,6 +50,10 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## Visual comparison
+
+The [two-shape motion comparison](comparisons/two-glyph-motion/README.md) records legacy and structured-direction outputs for the same request. This single trial shows similar visual treatments and does not establish a quality advantage for the new direction.
+
 ## Use only this package
 
 Choose one of the following methods.

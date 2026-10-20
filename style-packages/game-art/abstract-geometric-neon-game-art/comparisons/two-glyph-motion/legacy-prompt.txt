@@ -1,0 +1,43 @@
+Subject: 横版 16:9，无文字。一个简洁的深色抽象空间里，一枚蓝色发光立方体与一个橙红色圆环沿左下到右上的对角线运动，只有这两个主体；几何边缘清晰，背景留有充足负空间。
+Location: the user-requested setting
+
+Create a new subject and composition using these observable visual decisions:
+- 几何焦点沿明确的运动轴组织
+- 深色负空间隔开轮廓与光迹
+- 透视线和重复形状提供方向感
+- 暗底承托少量高亮色
+- 每个颜色承担稳定的对象或节奏角色
+- 高饱和色以面积和亮度共同分级
+- 线框、发光边缘与简化实体并置
+- 形体以几何轮廓而非生活化细节识别
+- 光迹沿运动路径出现并及时衰减
+- 发光核心与外溢光晕分层
+- 高光不吞并主体边界
+- 明暗变化跟随节奏或事件而非随机闪烁
+- 表面保持光滑、抽象且低材质噪声
+- 体积由边缘亮度和透明叠层建立
+- 不用照片纹理伪装复杂度
+- 重复图形构成节拍而非装饰铺满
+- 轨迹粗细映射速度或能量
+- 屏幕闪烁频率可控且保留舒适度
+- 抽象几何比写实地点更主导
+- 颜色和运动有一致映射
+- 不复刻来源作品的特定图形或镜头
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.
+
+SUBJECT INDEPENDENCE CONTRACT: render only the requested subject and location; do not add a default character, object, setting, or narrative.
+
+Exact package assignment:
+Follow the package-defined visual signature, process, materials, and constraints exactly.
+Use any supplied reference images for palette relationship only, not for subject identity or copied composition.
+
+Negative prompt:
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- cyberpunk_city_default
+- photorealistic_materials
+- unreadable_flashing
+- copied_game_entities

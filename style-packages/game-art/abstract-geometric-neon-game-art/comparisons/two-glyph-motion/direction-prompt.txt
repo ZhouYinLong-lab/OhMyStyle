@@ -1,0 +1,28 @@
+USER SUBJECT: 横版 16:9，无文字。一个简洁的深色抽象空间里，一枚蓝色发光立方体与一个橙红色圆环沿左下到右上的对角线运动，只有这两个主体；几何边缘清晰，背景留有充足负空间。
+SUBJECT REPRESENTATION: Translate the requested subject into abstracted shapes, colors, and spatial relationships. Preserve explicit user constraints where they remain meaningful; add no unrequested recognizable subjects or motifs.
+VISUAL MEDIUM: 线框、发光边缘与简化实体并置; 形体以几何轮廓而非生活化细节识别; 光迹沿运动路径出现并及时衰减
+REPRESENTATION: abstract_interpretation
+APPLY THESE AUTHORED VISUAL RULES:
+- [medium] Use the declared medium and keep its package-specific representation constraints visible: 线框、发光边缘与简化实体并置; 形体以几何轮廓而非生活化细节识别; 光迹沿运动路径出现并及时衰减.
+- [composition] Organize the requested subject using these package-specific spatial decisions: 几何焦点沿明确的运动轴组织; 深色负空间隔开轮廓与光迹; 透视线和重复形状提供方向感. Preserve the user-provided content and layout.
+- [palette] Use these package-specific color roles and relationships: 暗底承托少量高亮色; 每个颜色承担稳定的对象或节奏角色; 高饱和色以面积和亮度共同分级. Adapt their balance to the requested subject; do not apply them as a uniform tint.
+- [lighting] Apply the package-specific light behavior: 发光核心与外溢光晕分层; 高光不吞并主体边界; 明暗变化跟随节奏或事件而非随机闪烁. Keep light coherent with the requested subject, medium, and scene.
+- [surface] Render the requested materials using these package-specific surface decisions: 表面保持光滑、抽象且低材质噪声; 体积由边缘亮度和透明叠层建立; 不用照片纹理伪装复杂度. Preserve detail hierarchy and material identity.
+- [texture] Render the requested materials using these package-specific surface decisions: 重复图形构成节拍而非装饰铺满; 轨迹粗细映射速度或能量; 屏幕闪烁频率可控且保留舒适度. Preserve detail hierarchy and material identity.
+- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.
+REQUIREMENT: 先定义运动轴与空间深度
+REQUIREMENT: 再构成几何焦点
+REQUIREMENT: 分配颜色和发光层级
+REQUIREMENT: 最后检查动态强度及形体辨识
+REQUIREMENT: 抽象几何比写实地点更主导
+REQUIREMENT: 颜色和运动有一致映射
+REQUIREMENT: 不复刻来源作品的特定图形或镜头
+REQUIREMENT: Preserve the user-provided subject, object count, location, and requested details.
+
+Negative prompt:
+cyberpunk_city_default
+photorealistic_materials
+unreadable_flashing
+copied_game_entities
+Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.
+Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.

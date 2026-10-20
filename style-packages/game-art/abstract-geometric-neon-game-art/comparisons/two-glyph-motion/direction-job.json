@@ -1,0 +1,232 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "abstract-geometric-neon-game-art",
+    "name": "抽象几何霓虹游戏美术",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\abstract-geometric-neon-game-art"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，无文字。一个简洁的深色抽象空间里，一枚蓝色发光立方体与一个橙红色圆环沿左下到右上的对角线运动，只有这两个主体；几何边缘清晰，背景留有充足负空间。",
+  "prompt": "USER SUBJECT: 横版 16:9，无文字。一个简洁的深色抽象空间里，一枚蓝色发光立方体与一个橙红色圆环沿左下到右上的对角线运动，只有这两个主体；几何边缘清晰，背景留有充足负空间。\nSUBJECT REPRESENTATION: Translate the requested subject into abstracted shapes, colors, and spatial relationships. Preserve explicit user constraints where they remain meaningful; add no unrequested recognizable subjects or motifs.\nVISUAL MEDIUM: 线框、发光边缘与简化实体并置; 形体以几何轮廓而非生活化细节识别; 光迹沿运动路径出现并及时衰减\nREPRESENTATION: abstract_interpretation\nAPPLY THESE AUTHORED VISUAL RULES:\n- [medium] Use the declared medium and keep its package-specific representation constraints visible: 线框、发光边缘与简化实体并置; 形体以几何轮廓而非生活化细节识别; 光迹沿运动路径出现并及时衰减.\n- [composition] Organize the requested subject using these package-specific spatial decisions: 几何焦点沿明确的运动轴组织; 深色负空间隔开轮廓与光迹; 透视线和重复形状提供方向感. Preserve the user-provided content and layout.\n- [palette] Use these package-specific color roles and relationships: 暗底承托少量高亮色; 每个颜色承担稳定的对象或节奏角色; 高饱和色以面积和亮度共同分级. Adapt their balance to the requested subject; do not apply them as a uniform tint.\n- [lighting] Apply the package-specific light behavior: 发光核心与外溢光晕分层; 高光不吞并主体边界; 明暗变化跟随节奏或事件而非随机闪烁. Keep light coherent with the requested subject, medium, and scene.\n- [surface] Render the requested materials using these package-specific surface decisions: 表面保持光滑、抽象且低材质噪声; 体积由边缘亮度和透明叠层建立; 不用照片纹理伪装复杂度. Preserve detail hierarchy and material identity.\n- [texture] Render the requested materials using these package-specific surface decisions: 重复图形构成节拍而非装饰铺满; 轨迹粗细映射速度或能量; 屏幕闪烁频率可控且保留舒适度. Preserve detail hierarchy and material identity.\n- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.\nREQUIREMENT: 先定义运动轴与空间深度\nREQUIREMENT: 再构成几何焦点\nREQUIREMENT: 分配颜色和发光层级\nREQUIREMENT: 最后检查动态强度及形体辨识\nREQUIREMENT: 抽象几何比写实地点更主导\nREQUIREMENT: 颜色和运动有一致映射\nREQUIREMENT: 不复刻来源作品的特定图形或镜头\nREQUIREMENT: Preserve the user-provided subject, object count, location, and requested details.",
+  "negative_prompt": "cyberpunk_city_default\nphotorealistic_materials\nunreadable_flashing\ncopied_game_entities\nUse observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.\nDo not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "abstract-geometric-neon-game-art-direction",
+    "name": "抽象几何霓虹游戏美术",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\abstract-geometric-neon-game-art\\art-direction.yaml",
+    "sha256": "ba18ec551df474770c413d7824e46a0fe3cf18cf12b385bca70b1dbdffa37377",
+    "active_rule_ids": [
+      "medium",
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "applicable_rule_ids": [
+      "medium",
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "先定义运动轴与空间深度",
+      "再构成几何焦点",
+      "分配颜色和发光层级",
+      "最后检查动态强度及形体辨识",
+      "抽象几何比写实地点更主导",
+      "颜色和运动有一致映射",
+      "不复刻来源作品的特定图形或镜头",
+      "Preserve the user-provided subject, object count, location, and requested details."
+    ],
+    "avoid": [
+      "cyberpunk_city_default",
+      "photorealistic_materials",
+      "unreadable_flashing",
+      "copied_game_entities",
+      "Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.",
+      "Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it."
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "线框、发光边缘与简化实体并置; 形体以几何轮廓而非生活化细节识别; 光迹沿运动路径出现并及时衰减",
+      "representation": "abstract_interpretation",
+      "description": "以线框、几何体、亮色轨迹和节奏性变化组织空间，让颜色与运动方向承担识别，而不依赖具体城市或写实材质。",
+      "required_contexts": [],
+      "incompatible_contexts": [],
+      "limitations": [
+        "cyberpunk_city_default",
+        "photorealistic_materials",
+        "unreadable_flashing",
+        "copied_game_entities"
+      ]
+    },
+    "pillars": [
+      "以线框、几何体、亮色轨迹和节奏性变化组织空间，让颜色与运动方向承担识别，而不依赖具体城市或写实材质。",
+      "medium: 线框、发光边缘与简化实体并置; 形体以几何轮廓而非生活化细节识别; 光迹沿运动路径出现并及时衰减",
+      "composition: 几何焦点沿明确的运动轴组织; 深色负空间隔开轮廓与光迹; 透视线和重复形状提供方向感",
+      "palette: 暗底承托少量高亮色; 每个颜色承担稳定的对象或节奏角色; 高饱和色以面积和亮度共同分级"
+    ],
+    "rules": [
+      {
+        "id": "medium",
+        "axis": "medium",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use the declared medium and keep its package-specific representation constraints visible: 线框、发光边缘与简化实体并置; 形体以几何轮廓而非生活化细节识别; 光迹沿运动路径出现并及时衰减.",
+        "observable": "The requested image retains the stated medium distinction or production constraint: 线框、发光边缘与简化实体并置; 形体以几何轮廓而非生活化细节识别; 光迹沿运动路径出现并及时衰减.",
+        "reject_when": "The medium is converted into an unrelated representation or the stated distinction disappears: 线框、发光边缘与简化实体并置; 形体以几何轮廓而非生活化细节识别; 光迹沿运动路径出现并及时衰减.",
+        "evidence": {
+          "source_ids": [
+            "source-abstract-geometric-neon-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "composition",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Organize the requested subject using these package-specific spatial decisions: 几何焦点沿明确的运动轴组织; 深色负空间隔开轮廓与光迹; 透视线和重复形状提供方向感. Preserve the user-provided content and layout.",
+        "observable": "The stated hierarchy, spacing, framing, or depth relationship is readable: 几何焦点沿明确的运动轴组织; 深色负空间隔开轮廓与光迹; 透视线和重复形状提供方向感.",
+        "reject_when": "The composition contradicts these spatial decisions or copies a source arrangement: 几何焦点沿明确的运动轴组织; 深色负空间隔开轮廓与光迹; 透视线和重复形状提供方向感.",
+        "evidence": {
+          "source_ids": [
+            "source-abstract-geometric-neon-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "palette",
+        "axis": "palette",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use these package-specific color roles and relationships: 暗底承托少量高亮色; 每个颜色承担稳定的对象或节奏角色; 高饱和色以面积和亮度共同分级. Adapt their balance to the requested subject; do not apply them as a uniform tint.",
+        "observable": "The stated colors and their roles are visible and distinguishable: 暗底承托少量高亮色; 每个颜色承担稳定的对象或节奏角色; 高饱和色以面积和亮度共同分级.",
+        "reject_when": "An all-over filter replaces the stated color relationships, or their roles cannot be distinguished: 暗底承托少量高亮色; 每个颜色承担稳定的对象或节奏角色; 高饱和色以面积和亮度共同分级.",
+        "evidence": {
+          "source_ids": [
+            "source-abstract-geometric-neon-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "lighting",
+        "axis": "lighting",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Apply the package-specific light behavior: 发光核心与外溢光晕分层; 高光不吞并主体边界; 明暗变化跟随节奏或事件而非随机闪烁. Keep light coherent with the requested subject, medium, and scene.",
+        "observable": "Light and shadow visibly support the stated forms or atmosphere: 发光核心与外溢光晕分层; 高光不吞并主体边界; 明暗变化跟随节奏或事件而非随机闪烁.",
+        "reject_when": "Global glow, tint, or incoherent light replaces the stated behavior: 发光核心与外溢光晕分层; 高光不吞并主体边界; 明暗变化跟随节奏或事件而非随机闪烁.",
+        "evidence": {
+          "source_ids": [
+            "source-abstract-geometric-neon-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "surface",
+        "axis": "surface",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Render the requested materials using these package-specific surface decisions: 表面保持光滑、抽象且低材质噪声; 体积由边缘亮度和透明叠层建立; 不用照片纹理伪装复杂度. Preserve detail hierarchy and material identity.",
+        "observable": "The stated edge, surface, or texture treatment can be seen at an appropriate scale: 表面保持光滑、抽象且低材质噪声; 体积由边缘亮度和透明叠层建立; 不用照片纹理伪装复杂度.",
+        "reject_when": "Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: 表面保持光滑、抽象且低材质噪声; 体积由边缘亮度和透明叠层建立; 不用照片纹理伪装复杂度.",
+        "evidence": {
+          "source_ids": [
+            "source-abstract-geometric-neon-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "texture",
+        "axis": "texture",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Render the requested materials using these package-specific surface decisions: 重复图形构成节拍而非装饰铺满; 轨迹粗细映射速度或能量; 屏幕闪烁频率可控且保留舒适度. Preserve detail hierarchy and material identity.",
+        "observable": "The stated edge, surface, or texture treatment can be seen at an appropriate scale: 重复图形构成节拍而非装饰铺满; 轨迹粗细映射速度或能量; 屏幕闪烁频率可控且保留舒适度.",
+        "reject_when": "Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: 重复图形构成节拍而非装饰铺满; 轨迹粗细映射速度或能量; 屏幕闪烁频率可控且保留舒适度.",
+        "evidence": {
+          "source_ids": [
+            "source-abstract-geometric-neon-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "visual-relationship-coherence",
+        "rule_ids": [
+          "medium",
+          "composition",
+          "palette"
+        ],
+        "instruction": "Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.",
+        "observable": "The linked visual decisions reinforce one another and remain subordinate to the user-provided subject."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-abstract-geometric-neon-game-art-primary-source",
+        "kind": "primary",
+        "base_asset_id": "abstract-geometric-neon-game-art-primary-source",
+        "package_reference": {
+          "asset_id": "abstract-geometric-neon-game-art-primary-source",
+          "local_path": "",
+          "title": "Rez Infinite official site",
+          "creator": "Enhance Experience",
+          "year": "",
+          "source_url": "https://www.rezinfinite.com/",
+          "license": "link_only",
+          "attribution": "Rez Infinite is a commercial work by Enhance Experience; this package studies broad visual principles and does not reproduce game assets.",
+          "role": "primary",
+          "notes": "Link-only source record. Do not bundle or redistribute external artwork without explicit permission."
+        }
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "ca34a10faef516d29e4ef37b2443c058e2e0593f2d7c68075350934f33b779d4",
+    "negative_prompt_sha256": "3e4142a9701b7b2a4996d41d81f62edfbcf916e49e5bc152c0c7d70b5222264d",
+    "direction_sha256": "ba18ec551df474770c413d7824e46a0fe3cf18cf12b385bca70b1dbdffa37377",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
