@@ -1,0 +1,153 @@
+schema_version: 2.1.0
+status: experimental
+id: fan-ho-direction
+name: 何藩
+base_package: photographers/fan-ho
+scope:
+  medium: black-and-white fine-art photography
+  representation: recognizable
+  description: 黑白街头摄影，以几何构图、强光影分层、人物剪影和暗房式灰阶控制组织日常场景。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 黑白街头摄影，以几何构图、强光影分层、人物剪影和暗房式灰阶控制组织日常场景。
+- 'medium: black-and-white fine-art photography'
+- 'composition: strong diagonals, rectangles, frames, and negative space; layered foreground, middle ground,
+  and background; human scale used only when the user requests people'
+- 'palette: neutral black, white, and a full range of silver-gray'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: black-and-white
+    fine-art photography.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: black-and-white
+    fine-art photography.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    black-and-white fine-art photography.'
+  evidence:
+    source_ids:
+    - source-fan-ho-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: strong diagonals,
+    rectangles, frames, and negative space; layered foreground, middle ground, and background; human scale
+    used only when the user requests people. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: strong diagonals,
+    rectangles, frames, and negative space; layered foreground, middle ground, and background; human scale
+    used only when the user requests people.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: strong
+    diagonals, rectangles, frames, and negative space; layered foreground, middle ground, and background; human
+    scale used only when the user requests people.'
+  evidence:
+    source_ids:
+    - source-fan-ho-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: neutral black, white, and a full
+    range of silver-gray. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: neutral black, white, and
+    a full range of silver-gray.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    neutral black, white, and a full range of silver-gray.'
+  evidence:
+    source_ids:
+    - source-fan-ho-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: directional natural light or a similarly coherent
+    hard source; bright planes and silhouettes separated by controlled haze. Keep light coherent with the requested
+    subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: directional natural light or
+    a similarly coherent hard source; bright planes and silhouettes separated by controlled haze.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: directional natural light
+    or a similarly coherent hard source; bright planes and silhouettes separated by controlled haze.'
+  evidence:
+    source_ids:
+    - source-fan-ho-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: restrained analog
+    grain and darkroom-like local contrast. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: restrained
+    analog grain and darkroom-like local contrast.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    restrained analog grain and darkroom-like local contrast.'
+  evidence:
+    source_ids:
+    - source-fan-ho-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: edge-behavior
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: crisp geometric
+    boundaries with selective softness in atmospheric depth. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: crisp geometric
+    boundaries with selective softness in atmospheric depth.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    crisp geometric boundaries with selective softness in atmospheric depth.'
+  evidence:
+    source_ids:
+    - source-fan-ho-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- edge-behavior
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-fan-ho-primary-source
+  kind: primary
+  base_asset_id: fan-ho-primary-source
+execution:
+  route: text_only
+  must:
+  - Translate the user's subject and location literally before applying style rules.
+  - Build a simple geometric frame from available architecture, objects, shadows, or empty space.
+  - Establish one coherent directional light source and use reflected light only as fill.
+  - Separate foreground, middle ground, and background through value, occlusion, and haze.
+  - Grade to neutral black, white, and silver gray; preserve information in highlights and shadows.
+  - Preserve the user's subject, location, object count, and narrative.
+  - Never add a recurring staircase, alley, tricycle, market, or Hong Kong landmark.
+  - Never copy a named photograph's pose, crop, lighting arrangement, or composition.
+  avoid:
+  - copied composition
+  - named character or branded asset
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
