@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: mondrian-syncopated-route-grid
 name: Mondrian syncopated route grid
@@ -24,6 +24,17 @@ scope:
     - Do not add, remove, merge, or disconnect routes, stations, or intersections to improve visual rhythm.
     - Use orthogonal turns only if the user permits abstraction; do not claim geographic or navigational accuracy.
     - Do not use the layout of Broadway Boogie Woogie, Victory Boogie Woogie, or a recognizable city transit map.
+contexts:
+  - id: user-requested-abstract-route-network
+    description: A user-supplied transit or route graph explicitly requested as an abstract painting.
+  - id: geographically-accurate-navigation-map
+    description: A map that must preserve real geographic or navigational accuracy.
+  - id: user-requested-organic-or-curved-route-geometry
+    description: A network whose user-specified paths include organic or curved geometry.
+  - id: text-or-logo-reproduction
+    description: A design requiring exact typography or logo reproduction.
+  - id: readable-without-black-dividers
+    description: The route network remains clear using spacing, color, and limited local contrast without continuous black lines.
 pillars:
   - Break selected route bars into short, evenly legible color segments separated by small pale intervals.
   - Make segment lengths and intersection emphasis syncopated rather than mechanically repeating one cadence.
@@ -58,6 +69,8 @@ rules:
   - id: color-hierarchy-without-black-lattice
     axis: palette_and_intersection_weight
     importance: supporting
+    when_contexts:
+      - readable-without-black-dividers
     applies_when: The route diagram can remain legible without continuous black dividers.
     instruction: Use red, yellow, blue, white, and restrained gray as route or interval roles; let spacing and limited local contrast distinguish crossings, and retain black only where the user explicitly needs it for legibility.
     observable: The paths remain distinct while pale ground and color intervals provide breathing space between junctions.
