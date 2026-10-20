@@ -1,0 +1,147 @@
+schema_version: 2.1.0
+status: experimental
+id: helen-levitt-direction
+name: 海伦·莱维特
+base_package: photographers/helen-levitt
+scope:
+  medium: candid documentary street photography
+  representation: recognizable
+  description: 以贴近街面的观察、儿童与日常动作的偶然节奏、清晰黑白层次和克制的幽默感记录普通城市生活，不绑定特定街区或人物。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以贴近街面的观察、儿童与日常动作的偶然节奏、清晰黑白层次和克制的幽默感记录普通城市生活，不绑定特定街区或人物。
+- 'composition: 贴近视线的街道高度; 人物动作与墙面、地面形成偶然几何; 边缘人物和局部遮挡保留现场感'
+- 'palette: 以清晰黑白阶调突出动作与空间; 彩色版本可保留少量旧胶片色，但不套统一复古滤镜; 明亮墙面和深色服装形成可读对照'
+- 'lighting: quality: available daylight with crisp but natural urban shadows; behavior: Keep the requested
+  subject and location independent from the package.; behavior: Apply lighting as a transferable visual decision,
+  not a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 贴近视线的街道高度; 人物动作与墙面、地面形成偶然几何;
+    边缘人物和局部遮挡保留现场感. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 贴近视线的街道高度; 人物动作与墙面、地面形成偶然几何;
+    边缘人物和局部遮挡保留现场感.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 贴近视线的街道高度;
+    人物动作与墙面、地面形成偶然几何; 边缘人物和局部遮挡保留现场感.'
+  evidence:
+    source_ids:
+    - source-helen-levitt-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 以清晰黑白阶调突出动作与空间; 彩色版本可保留少量旧胶片色，但不套统一复古滤镜;
+    明亮墙面和深色服装形成可读对照. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 以清晰黑白阶调突出动作与空间; 彩色版本可保留少量旧胶片色，但不套统一复古滤镜;
+    明亮墙面和深色服装形成可读对照.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    以清晰黑白阶调突出动作与空间; 彩色版本可保留少量旧胶片色，但不套统一复古滤镜; 明亮墙面和深色服装形成可读对照.'
+  evidence:
+    source_ids:
+    - source-helen-levitt-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: available daylight with crisp but natural
+    urban shadows; behavior: Keep the requested subject and location independent from the package.; behavior:
+    Apply lighting as a transferable visual decision, not a fixed scene.. Keep light coherent with the requested
+    subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: available daylight
+    with crisp but natural urban shadows; behavior: Keep the requested subject and location independent from
+    the package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: available daylight
+    with crisp but natural urban shadows; behavior: Keep the requested subject and location independent from
+    the package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene..'
+  evidence:
+    source_ids:
+    - source-helen-levitt-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: fine-grain
+    documentary film, direct detail, and restrained print contrast; edges: deliberate and subject-dependent,
+    without a copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    fine-grain documentary film, direct detail, and restrained print contrast; edges: deliberate and subject-dependent,
+    without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: fine-grain documentary film, direct detail, and restrained print contrast; edges: deliberate and
+    subject-dependent, without a copied layout.'
+  evidence:
+    source_ids:
+    - source-helen-levitt-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium
+    street texture with readable pavement, walls, chalk, and clothing; placement: concentrated where the medium
+    or material needs explanation. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium street texture with readable pavement, walls, chalk, and clothing; placement: concentrated where
+    the medium or material needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium street texture with readable pavement, walls, chalk, and clothing; placement: concentrated
+    where the medium or material needs explanation.'
+  evidence:
+    source_ids:
+    - source-helen-levitt-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-helen-levitt-primary-source
+  kind: primary
+  base_asset_id: helen-levitt-primary-source
+execution:
+  route: text_only
+  must:
+  - choose an unremarkable viewpoint
+  - let gestures and environmental marks create the composition
+  - keep timing imperfect and believable
+  - finish with restrained documentary print texture
+  - camera remains close to ordinary life
+  - gesture and spatial coincidence matter
+  - the scene stays candid rather than staged
+  - the requested subject remains open
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
+    protected game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
