@@ -76,10 +76,10 @@
 
 ## 新架构：贴近观看的明暗对照（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 将卡拉瓦乔方向拆成近景动作编排、单一强光源形成的明暗分界，以及皮肤、布料和器物的物质感。它强调人物/手势的物理临场感，与霍普以建筑平面、空间距离和日光投影组织的静默场景不同。方向仍处于实验状态；不会默认添加圣经故事、酒馆、果盘或名作姿势。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，将卡拉瓦乔方向拆成近景动作编排、单一强光源形成的明暗分界，以及皮肤、布料和器物的物质感。只有调用者声明 `human-action` 时，近景动作规则才启用；这让静物场景保留明暗与材质指导而不被强加人物动作。它与霍普以建筑平面、空间距离和日光投影组织的静默场景不同。方向仍处于实验状态；不会默认添加圣经故事、酒馆、果盘或名作姿势。
 
 ```powershell
-python tools/compile-style.py style-packages/artists/caravaggio --direction package --subject "A repairer lifting a broken pocket watch under one overhead work lamp" --output runs/style-v2/caravaggio-job.json
+python tools/compile-style.py style-packages/artists/caravaggio --direction package --context human-action --subject "A repairer lifting a broken pocket watch under one overhead work lamp" --output runs/style-v2/caravaggio-job.json
 ```
 
 编译会生成生图任务，不会自动调用模型。英国国家美术馆、大都会艺术博物馆和美国国家美术馆的馆藏/策展说明支持本方向对明暗、近景人物、手势和写实表面的观察。

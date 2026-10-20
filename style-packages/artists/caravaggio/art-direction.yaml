@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: caravaggio-embodied-chiaroscuro
 name: Caravaggio embodied chiaroscuro
@@ -14,6 +14,13 @@ scope:
   limitations:
     - Follow the user's subject; do not default to a biblical story, tavern, fruit basket, or famous Caravaggio arrangement.
     - Deep shadow must preserve enough form and color to make the illuminated subject and action legible.
+contexts:
+  - id: diffuse-even-lighting
+    description: A scene whose requested lighting is broad and even without a dominant direction.
+  - id: atmospheric-color-field
+    description: An image organized primarily as an atmospheric field rather than a staged scene.
+  - id: human-action
+    description: The requested scene includes a person performing an action or interacting with another subject.
 pillars:
   - Bring the key figure, gesture, or object close to the picture plane.
   - Use one decisive light source to select forms out of a dark, restrained setting.
@@ -22,6 +29,8 @@ rules:
   - id: close-staging-and-physical-gesture
     axis: composition
     importance: core
+    when_contexts:
+      - human-action
     applies_when: The requested scene contains people or an interaction.
     instruction: Stage the important people and their action close to the viewer; use a clear bodily gesture, hand, or object to carry the focal event without adding an unrequested narrative.
     observable: The interaction reads immediately, and a foreground gesture may press toward the picture plane while the setting stays compressed.
