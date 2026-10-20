@@ -30,6 +30,10 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 视觉对照
+
+[`红伞与溪桥`](comparisons/red-umbrella-bridge/README.md)保存了同题旧包和新版方向结果。新版的色块和轮廓更简化，但 cel shading 只部分成立，且单次对照不能证明稳定优势。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "cel-shaded-nature-game-art",
+    "name": "卡通渲染自然冒险游戏美术",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\cel-shaded-nature-game-art"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，无文字。一座小木桥横跨浅溪，桥面中央放着一把朱红色纸伞，背景只有两棵树和远处一面山坡；无人、无建筑、无其他道具。树、桥、溪流与山坡层次清楚，保持这个布局。",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: 横版 16:9，无文字。一座小木桥横跨浅溪，桥面中央放着一把朱红色纸伞，背景只有两棵树和远处一面山坡；无人、无建筑、无其他道具。树、桥、溪流与山坡层次清楚，保持这个布局。\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new subject and composition using these observable visual decisions:\n- 以清晰前中后景和大块轮廓组织空间\n- 让路径、树枝、山脊或建筑线条承担视线引导\n- 主体轮廓先于细节建立\n- 自然绿、土黄、朱红、群青和墨色形成有限色组\n- 高饱和色用于焦点和自然能量，不做全局滤镜\n- 明暗分区优先于细密渐变\n- 三维模型结合平面化着色\n- 局部保留手绘笔触或纸墨边缘\n- 轮廓与材质由图形语言统一\n- 使用分段明暗而非连续写实渐变\n- 日光、月光或神秘光源形成明确色温关系\n- 阴影保持形状清楚\n- 木、石、叶片和布料各自保留简化但可辨的表面逻辑\n- 高光面积受控\n- 纹理跟随材质方向，避免随机噪点\n- 边缘可有少量手绘破笔但不能覆盖轮廓\n- 三维空间仍然可信\n- 明暗块面和轮廓优先\n- 不得复制来源游戏的角色、标志或构图\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- photorealistic_pbr\n- generic_anime_screenshot\n- copied_named_character\n- uncontrolled_ink_noise",
+  "template_variables": {
+    "SUBJECT": "横版 16:9，无文字。一座小木桥横跨浅溪，桥面中央放着一把朱红色纸伞，背景只有两棵树和远处一面山坡；无人、无建筑、无其他道具。树、桥、溪流与山坡层次清楚，保持这个布局。",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "prompt_sha256": "d89d2e83fbab8c54bcda36730343ab28a9d6d03b4b0090f19cdbd6951ee3d5da",
+    "negative_prompt_sha256": "f59710aad41ef57dd198389646803a64a9253ee7f1ffd2b3307ce8f086ad0d00",
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

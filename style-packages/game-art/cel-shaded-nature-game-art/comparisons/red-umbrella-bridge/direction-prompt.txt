@@ -1,0 +1,28 @@
+USER SUBJECT: 横版 16:9，无文字。一座小木桥横跨浅溪，桥面中央放着一把朱红色纸伞，背景只有两棵树和远处一面山坡；无人、无建筑、无其他道具。树、桥、溪流与山坡层次清楚，保持这个布局。
+SUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.
+VISUAL MEDIUM: 三维模型结合平面化着色; 局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一
+REPRESENTATION: stylized
+APPLY THESE AUTHORED VISUAL RULES:
+- [medium] Use the declared medium and keep its package-specific representation constraints visible: 三维模型结合平面化着色; 局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一.
+- [composition] Organize the requested subject using these package-specific spatial decisions: 以清晰前中后景和大块轮廓组织空间; 让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立. Preserve the user-provided content and layout.
+- [palette] Use these package-specific color roles and relationships: 自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜; 明暗分区优先于细密渐变. Adapt their balance to the requested subject; do not apply them as a uniform tint.
+- [lighting] Apply the package-specific light behavior: 使用分段明暗而非连续写实渐变; 日光、月光或神秘光源形成明确色温关系; 阴影保持形状清楚. Keep light coherent with the requested subject, medium, and scene.
+- [surface] Render the requested materials using these package-specific surface decisions: 木、石、叶片和布料各自保留简化但可辨的表面逻辑; 高光面积受控. Preserve detail hierarchy and material identity.
+- [texture] Render the requested materials using these package-specific surface decisions: 纹理跟随材质方向，避免随机噪点; 边缘可有少量手绘破笔但不能覆盖轮廓. Preserve detail hierarchy and material identity.
+- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.
+REQUIREMENT: 先搭建可读空间和主体剪影
+REQUIREMENT: 再划分大块色面与光照带
+REQUIREMENT: 最后加入少量材质笔触和环境细节
+REQUIREMENT: 以轮廓、明暗和色组检查统一性
+REQUIREMENT: 三维空间仍然可信
+REQUIREMENT: 明暗块面和轮廓优先
+REQUIREMENT: 不得复制来源游戏的角色、标志或构图
+REQUIREMENT: Preserve the user-provided subject, object count, location, and requested details.
+
+Negative prompt:
+photorealistic_pbr
+generic_anime_screenshot
+copied_named_character
+uncontrolled_ink_noise
+Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.
+Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.

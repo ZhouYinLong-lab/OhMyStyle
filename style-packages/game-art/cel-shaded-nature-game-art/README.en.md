@@ -39,6 +39,10 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## Visual comparison
+
+The [red umbrella and stream bridge comparison](comparisons/red-umbrella-bridge/README.md) records legacy and structured-direction outputs for the same request. The new direction simplifies some color planes and contours, but cel shading is only partial and one trial cannot establish a stable advantage.
+
 ## Use only this package
 
 Choose one of the following methods.
