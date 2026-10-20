@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: etienne-jules-marey-direction
+name: 艾蒂安-朱尔·马雷
+base_package: photographers/etienne-jules-marey
+scope:
+  medium: chronophotography_and_collotype
+  representation: recognizable
+  description: A chronophotography profile built from analytical motion traces, dark technical grounds, repeated
+    body phases, and instrument-like evidence rather than contact-sheet narrative.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied famous composition
+  - generic style filter
+  - unmotivated decorative effects
+pillars:
+- A chronophotography profile built from analytical motion traces, dark technical grounds, repeated body phases,
+  and instrument-like evidence rather than contact-sheet narrative.
+- 'composition: isolate one movement on a dark or neutral technical ground; overlap phases or traces so the
+  body becomes a diagram of time; keep camera, scale, and lighting stable enough to compare positions'
+- 'palette: black, warm gray, paper white, and restrained sepia; bright body traces contrast against a dark
+  instrument-like field'
+- 'lighting: quality: controlled_scientific_exposure; behavior: light prioritizes silhouette, limbs, and trajectory;
+  behavior: the subject may appear as repeated exposure or line trace; behavior: background detail is minimized
+  to preserve measurement'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: isolate one
+    movement on a dark or neutral technical ground; overlap phases or traces so the body becomes a diagram
+    of time; keep camera, scale, and lighting stable enough to compare positions. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: isolate one movement
+    on a dark or neutral technical ground; overlap phases or traces so the body becomes a diagram of time;
+    keep camera, scale, and lighting stable enough to compare positions.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: isolate
+    one movement on a dark or neutral technical ground; overlap phases or traces so the body becomes a diagram
+    of time; keep camera, scale, and lighting stable enough to compare positions.'
+  evidence:
+    source_ids:
+    - source-marey-man-walking
+    - source-marey-pole-vaulting
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: black, warm gray, paper white, and
+    restrained sepia; bright body traces contrast against a dark instrument-like field. Adapt their balance
+    to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: black, warm gray, paper white,
+    and restrained sepia; bright body traces contrast against a dark instrument-like field.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    black, warm gray, paper white, and restrained sepia; bright body traces contrast against a dark instrument-like
+    field.'
+  evidence:
+    source_ids:
+    - source-marey-man-walking
+    - source-marey-pole-vaulting
+    basis: curatorial_inference
+    visual_review: pending
+- id: light
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: controlled_scientific_exposure; behavior:
+    light prioritizes silhouette, limbs, and trajectory; behavior: the subject may appear as repeated exposure
+    or line trace; behavior: background detail is minimized to preserve measurement. Keep light coherent with
+    the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: controlled_scientific_exposure;
+    behavior: light prioritizes silhouette, limbs, and trajectory; behavior: the subject may appear as repeated
+    exposure or line trace; behavior: background detail is minimized to preserve measurement.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: controlled_scientific_exposure;
+    behavior: light prioritizes silhouette, limbs, and trajectory; behavior: the subject may appear as repeated
+    exposure or line trace; behavior: background detail is minimized to preserve measurement.'
+  evidence:
+    source_ids:
+    - source-marey-man-walking
+    - source-marey-pole-vaulting
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: brushwork: none_chronophotographic_plate;
+    mark_logic: preserve analytical overlap and temporal sequence; mark_logic: use fine traces, not motion
+    blur or painterly smear; mark_logic: retain plate imperfections only as historical evidence; finish: scientific_historical_motion_record.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: brushwork:
+    none_chronophotographic_plate; mark_logic: preserve analytical overlap and temporal sequence; mark_logic:
+    use fine traces, not motion blur or painterly smear; mark_logic: retain plate imperfections only as historical
+    evidence; finish: scientific_historical_motion_record.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    brushwork: none_chronophotographic_plate; mark_logic: preserve analytical overlap and temporal sequence;
+    mark_logic: use fine traces, not motion blur or painterly smear; mark_logic: retain plate imperfections
+    only as historical evidence; finish: scientific_historical_motion_record.'
+  evidence:
+    source_ids:
+    - source-marey-man-walking
+    - source-marey-pole-vaulting
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- color
+- light
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - color
+  - light
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-marey-man-walking
+  kind: wikimedia_commons_tienne_jules_marey
+  base_asset_id: marey-man-walking
+- id: source-marey-pole-vaulting
+  kind: secondary
+  base_asset_id: marey-pole-vaulting
+execution:
+  route: text_only
+  must:
+  - choose one movement and a stable recording field
+  - set repeated exposure or sequential phase logic
+  - emphasize limb trajectory and body mechanics
+  - retain analytical clarity over dramatic composition
+  - movement is analyzed as a temporal trace
+  - the body and trajectory remain legible
+  - the field is technical and controlled
+  - the new sequence must not reproduce a known study
+  avoid:
+  - copied famous composition
+  - generic style filter
+  - unmotivated decorative effects
+  - Use observable traits only; do not recreate a named work, sitter, plate, object, or exact arrangement.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
