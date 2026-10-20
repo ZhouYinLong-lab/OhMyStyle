@@ -85,3 +85,7 @@ python tools/compile-style.py style-packages/artists/vincent-van-gogh --directio
 ```
 
 Compilation does not call an image-generation service. Museum collection records support the observations about blue-yellow relationships, gestural marks, and thick paint. Transfer to new subjects and differentiation from neighboring artist packages still need image review.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

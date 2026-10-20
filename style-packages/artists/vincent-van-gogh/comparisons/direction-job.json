@@ -1,0 +1,147 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "vincent-van-gogh",
+    "name": "文森特·梵高",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\vincent-van-gogh"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A wind-bent orchard after rain, with a figure walking along a path",
+  "prompt": "USER SUBJECT: A wind-bent orchard after rain, with a figure walking along a path\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [surface-following-mark-families] Assign distinct mark families to each surface: curved or interlocking strokes for moving atmospheres, short grouped marks for foliage, and longer directional strokes for ground or built forms.\n- [local-cool-warm-color-structure] Place warm yellow or ochre accents against selected blue-violet fields and use chromatic greens or earth colors where the subject supports them; keep each relationship attached to a form or light source.\n- [tactile-loaded-paint] Show loaded oil paint through raised, directional stroke edges and varied stroke length; keep highlights materially painted instead of airbrushed.\n- [mark-color-form-coherence] Make mark direction, local color contrast, and paint load reinforce the same forms; retain an original composition that follows the user's subject.\nREQUIREMENT: Follow the user-requested subject, count, setting, and layout.\nREQUIREMENT: Vary stroke direction and length according to each surface.\nREQUIREMENT: Keep paint marks visible without using a single texture filter.",
+  "negative_prompt": "one uniform spiral texture across the entire image\nglobal blue filter and unstructured yellow speckles\nairbrushed glow and uniform embossed texture\ncopying a named Van Gogh composition or placing its signature motifs by default\nrandom all-over swirls, smooth airbrushed shading, or a global blue-yellow overlay",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "van-gogh-directional-impasto",
+    "name": "Van Gogh directional impasto",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\vincent-van-gogh\\art-direction.yaml",
+    "sha256": "961881577718194e13dee300162a196a8251931979865923c1acc5de3a20dcf7",
+    "active_rule_ids": [
+      "surface-following-mark-families",
+      "local-cool-warm-color-structure",
+      "tactile-loaded-paint"
+    ],
+    "contexts": [],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Follow the user-requested subject, count, setting, and layout.",
+      "Vary stroke direction and length according to each surface.",
+      "Keep paint marks visible without using a single texture filter."
+    ],
+    "avoid": [
+      "copying a named Van Gogh composition or placing its signature motifs by default",
+      "random all-over swirls, smooth airbrushed shading, or a global blue-yellow overlay"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "Translate Van Gogh's observable directional mark-making, local blue-yellow color structure, and tactile paint into new subjects without copying a named composition or treating a famous motif as mandatory.",
+      "required_contexts": [],
+      "incompatible_contexts": [
+        "smooth-digital-painting",
+        "photographic-texture-overlay"
+      ],
+      "limitations": [
+        "Do not make a night sky, cypress, village, or sunflower a default subject; follow the user's requested subject.",
+        "Do not infer that every mark in Van Gogh's work follows one uniform curve or direction."
+      ]
+    },
+    "rules": [
+      {
+        "id": "surface-following-mark-families",
+        "axis": "texture",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Assign distinct mark families to each surface: curved or interlocking strokes for moving atmospheres, short grouped marks for foliage, and longer directional strokes for ground or built forms.",
+        "observable": "Mark direction changes with the surface or movement, and focal forms remain legible beneath the stroke rhythm.",
+        "reject_when": "One repeated swirl covers every object, or marks become random noise unrelated to form.",
+        "evidence": {
+          "source_ids": [
+            "vangogh-moma-starry-night",
+            "vangogh-moma-olive-trees"
+          ],
+          "basis": "direct_visual_observation",
+          "visual_review": "pending"
+        },
+        "avoid": "one uniform spiral texture across the entire image"
+      },
+      {
+        "id": "local-cool-warm-color-structure",
+        "axis": "palette",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Place warm yellow or ochre accents against selected blue-violet fields and use chromatic greens or earth colors where the subject supports them; keep each relationship attached to a form or light source.",
+        "observable": "Cool and warm passages shape focal hierarchy, with dark anchors and intervening color transitions still visible.",
+        "reject_when": "A blue overlay with scattered yellow dots substitutes for structured color relationships.",
+        "evidence": {
+          "source_ids": [
+            "vangogh-moma-starry-night",
+            "vangogh-moma-olive-trees"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "global blue filter and unstructured yellow speckles"
+      },
+      {
+        "id": "tactile-loaded-paint",
+        "axis": "surface",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Show loaded oil paint through raised, directional stroke edges and varied stroke length; keep highlights materially painted instead of airbrushed.",
+        "observable": "The painted surface remains tactile at close range while major masses stay readable at a distance.",
+        "reject_when": "Smooth digital shading or a uniform bump texture replaces visible, varied paint marks.",
+        "evidence": {
+          "source_ids": [
+            "vangogh-moma-starry-night"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "airbrushed glow and uniform embossed texture"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "mark-color-form-coherence",
+        "rule_ids": [
+          "surface-following-mark-families",
+          "local-cool-warm-color-structure",
+          "tactile-loaded-paint"
+        ],
+        "instruction": "Make mark direction, local color contrast, and paint load reinforce the same forms; retain an original composition that follows the user's subject.",
+        "observable": "Stroke families clarify the forms carrying the warm-cool contrasts, and paint remains materially visible without reproducing a recognized composition."
+      }
+    ],
+    "sources": [
+      {
+        "id": "vangogh-moma-starry-night",
+        "kind": "museum_object_description",
+        "url": "https://www.moma.org/collection/works/79802"
+      },
+      {
+        "id": "vangogh-moma-olive-trees",
+        "kind": "museum_object_description",
+        "url": "https://www.moma.org/collection/works/80013"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "961881577718194e13dee300162a196a8251931979865923c1acc5de3a20dcf7",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

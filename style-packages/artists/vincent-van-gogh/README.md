@@ -85,3 +85,7 @@ python tools/compile-style.py style-packages/artists/vincent-van-gogh --directio
 ```
 
 编译任务不会自动调用生图服务。官方馆藏说明支持本方向关于蓝黄关系、手势性笔触与厚涂的观察；新题材上的笔触迁移和与相近艺术家包的差异仍待图片评审。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。

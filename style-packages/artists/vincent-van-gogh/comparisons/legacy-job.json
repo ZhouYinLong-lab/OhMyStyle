@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "vincent-van-gogh",
+    "name": "文森特·梵高",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\vincent-van-gogh"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A wind-bent orchard after rain, with a figure walking along a path",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A wind-bent orchard after rain, with a figure walking along a path\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original oil painting of A wind-bent orchard after rain, with a figure walking along a path in the user-requested setting. Build the image\nfrom clearly observed color masses, then cover them with thick, visible,\ndirectional brush marks. Use saturated blue-violet and ultramarine passages\nagainst warm yellow and ochre accents, with olive greens and chromatic umber\nanchors. Let the marks describe motion: short curved strokes in the sky or\nfoliage, slanted strokes across the ground, and contour-following strokes around\norganic forms. Keep the subject readable, the space layered, and the focal area\nmore mark-dense than the quiet edges. Highlights must be loaded paint, not glow;\nshadows must remain colored rather than black. Preserve irregular human brush\ndecisions and tactile oil thickness. This is a new scene with a new arrangement,\nnot a reconstruction of any known artwork.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "photorealism, smooth digital painting, airbrushed gradients, random noise texture,\ngeneric swirl filter, neon glow, 3D render, plastic surface, black crushed shadows,\nflat vector art, copied famous composition, recognizable artwork recreation,\nartist signature, watermark, logo, text",
+  "template_variables": {
+    "SUBJECT": "A wind-bent orchard after rain, with a figure walking along a path",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "Original historical works are bundled only when the cited source marks them public domain; the generated example is an anonymous new scene.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
