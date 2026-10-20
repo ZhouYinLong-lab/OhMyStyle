@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: moreau-symbolic-line-and-color-enigma
 name: Moreau symbolic line and color enigma
@@ -23,6 +23,19 @@ scope:
     - Add no mythological, biblical, religious, or literary character, prop, or narrative unless requested.
     - Keep the requested subject, count, silhouette, setting, and action legible beneath decorative detail.
     - Avoid copying a named Moreau composition, iconography, or specific ornament pattern.
+contexts:
+  - id: symbolic-line-color-enigma
+    description: The user requests an imaginative painted treatment using symbolic line and color relationships.
+  - id: photorealistic-documentary
+    description: The user requires photorealistic documentary rendering.
+  - id: flat-minimal-icon
+    description: The user requires a flat minimal icon.
+  - id: generic-fantasy-ornament
+    description: The user requests generic fantasy ornament rather than a distinct painted treatment.
+  - id: imaginative-painting-with-distinct-color-regions
+    description: The user requests an imaginative painted treatment with distinct color regions.
+  - id: surrounding-space-can-carry-imaginative-treatment
+    description: Surrounding space can carry subtle imaginative treatment without changing the requested setting.
 pillars:
   - Use precise, sinuous contour lines and arabesque curves to organize the subject instead of relying on loose painterly edges.
   - Build a concentrated palette of jewel-like blues, reds, greens, and restrained gold accents, retaining clear value separation.
@@ -32,6 +45,8 @@ rules:
   - id: exact-contour-and-arabesque
     axis: line_and_form
     importance: core
+    when_contexts:
+      - symbolic-line-color-enigma
     applies_when: The requested image benefits from a drawn, decorative painting language.
     instruction: Define important silhouettes with precise, sinuous contour and let a few arabesque curves connect internal details to adjacent space; preserve the requested subject's distinctive outline and count.
     observable: The image has deliberate line rhythm and recognizable forms, with curves guiding attention rather than becoming a generic frame.
@@ -46,6 +61,8 @@ rules:
   - id: jewel-color-and-plane-dissonance
     axis: palette_and_surface
     importance: core
+    when_contexts:
+      - imaginative-painting-with-distinct-color-regions
     applies_when: The user requests an imaginative painted treatment with distinct color regions.
     instruction: Pair rich jewel-like color regions with intentional differences between contour and color boundaries; use restrained gold-like accents only when they clarify a plane, and preserve readable local colors in the requested subject.
     observable: Saturated color and fine line feel interdependent yet not mechanically aligned; the subject remains easy to identify.
@@ -60,6 +77,8 @@ rules:
   - id: selective-detail-and-mysterious-space
     axis: composition_and_detail
     importance: supporting
+    when_contexts:
+      - surrounding-space-can-carry-imaginative-treatment
     applies_when: The requested composition has surrounding space that can carry a subtle imaginative treatment.
     instruction: Concentrate fine ornamental detail around selected subject surfaces and allow adjacent planes or background intervals to remain quieter; use only a slight spatial ambiguity that does not alter the requested setting.
     observable: Detail density creates a focal hierarchy while the setting stays coherent enough to read and retains an understated sense of mystery.

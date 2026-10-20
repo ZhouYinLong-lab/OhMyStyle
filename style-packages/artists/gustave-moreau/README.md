@@ -36,7 +36,7 @@
 
 ## 新架构：象征线条、宝石色与神秘空间（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `symbolic-line-color-enigma` 时启用。它把莫罗方向落在精确的阿拉伯式曲线、宝石色平面与轮廓线之间有意形成的张力，以及选择性细节上；画面可以保留神秘感，但主体、数量和用户指定的场景必须清楚。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在显式声明 `symbolic-line-color-enigma` 时启用。曲线轮廓是基础规则；调用者可根据画面声明 `imaginative-painting-with-distinct-color-regions` 和 `surrounding-space-can-carry-imaginative-treatment`，再启用宝石色平面或环境细节规则。它把莫罗方向落在精确的阿拉伯式曲线、轮廓与色彩间的张力，以及选择性细节上；主体、数量和用户指定的场景必须清楚。
 
 它与克里姆特方向的差别在于：克里姆特的装饰重点是人物塑形与纹样区域的对照；莫罗方向则以线条、色彩平面和局部细节共同构造想象性的谜意，不要求加入人物或金箔。不会默认加入神话、圣经或宗教人物、器物、符号和情节。
 

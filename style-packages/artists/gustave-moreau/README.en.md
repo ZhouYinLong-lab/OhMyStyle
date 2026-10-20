@@ -36,7 +36,7 @@ See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/man
 
 ## New architecture: symbolic line, jewel-like color, and mystery (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) applies only when `symbolic-line-color-enigma` is explicitly declared. It translates Moreau's direction into precise arabesque curves, jewel-like color planes, deliberate tension between contour and color, and selective fine detail. The image may retain mystery while the requested subject, count, and setting remain clear.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and applies only when `symbolic-line-color-enigma` is explicitly declared. Contour is a base rule; callers can declare `imaginative-painting-with-distinct-color-regions` and `surrounding-space-can-carry-imaginative-treatment` to activate jewel-like color planes or subtle environmental detail as applicable. It translates Moreau's direction into precise arabesque curves, tension between contour and color, and selective fine detail while keeping the requested subject, count, and setting clear.
 
 Unlike Klimt's contrast between modeled figures and patterned regions, this direction builds an imaginative enigma through line, colored planes, and local detail; it does not require a figure or gold leaf. It adds no mythological, biblical, or religious figures, objects, symbols, or events by default.
 
