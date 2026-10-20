@@ -1,8 +1,8 @@
 design_version: 2.0.0-draft
-status: proposal_unexecuted
+status: pilot_executed_partial
 target_package: style-packages/game-art/ascii-character-game-art
 purpose: 展示硬媒介约束怎样与美术规则共同构成风格包。
-layout_note: 样稿规定的是拟议接口；现有渲染器仍是固定 100 列、36 行的代表图工具，尚未实现这里的通用任务入口。
+layout_note: 已用独立确定性网格渲染器完成三项有限试验；通用任务入口、无损导出与完整规则级审查仍未实现。
 
 identity:
   source_kind: game_art
@@ -48,7 +48,7 @@ visual_signature:
       evidence:
         source_ids: [ascii-package-source-grid, ascii-package-renderer, user-literal-character-requirement]
         basis: original_design_intent
-        visual_review: existing_source_and_renderer_inspected_new_tasks_pending
+        visual_review: three_task_pilot_basic_readability_reviewed_rule_level_pending
     - id: ascii-density-hierarchy
       axis: value
       importance: core
@@ -59,7 +59,7 @@ visual_signature:
       evidence:
         source_ids: [ascii-package-source-grid]
         basis: original_design_intent
-        visual_review: pending_new_task_review
+        visual_review: three_task_pilot_basic_readability_reviewed_rule_level_pending
     - id: ascii-grid-alignment
       axis: layout
       importance: core
@@ -70,7 +70,7 @@ visual_signature:
       evidence:
         source_ids: [user-literal-character-requirement]
         basis: original_design_intent
-        visual_review: pending_new_task_review
+        visual_review: three_task_pilot_basic_readability_reviewed_rule_level_pending
 
   joint_checks:
     - id: ascii-glyph-layout-readability
