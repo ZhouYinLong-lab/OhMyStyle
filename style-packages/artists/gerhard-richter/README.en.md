@@ -52,7 +52,7 @@ See [`provenance.yaml`](provenance.yaml),
 
 ## New architecture: paint veil, dragging, and selective reveal (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when `layered-image-veil` is explicitly declared. First establish the user's recognizable subject, then interrupt selected contours with directional paint dragging, covering, and scraping. Retain a few recognition anchors so the image shifts between representational remnants and abstract paint layers.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when `layered-image-veil` is explicitly declared. Recognition anchors are a base rule; callers can declare `user-requests-visible-painted-dragging-or-smearing` and `visible-history-of-paint-application-and-removal` when those paint processes are requested to activate their matching rules.
 
 This differs from Bacon's direction, which creates spatial pressure through an enclosing frame and local contour shifts. Richter's direction centers the process of applying and removing paint. Historical trauma, violence, documentary imagery, and global digital blur are not default content or effects.
 

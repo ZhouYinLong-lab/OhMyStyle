@@ -40,7 +40,7 @@
 
 ## 新架构：颜料覆盖、拖拽与局部显露（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `layered-image-veil` 时启用。它先建立用户指定的可辨认主体，再用方向明确的涂层拖拽、覆盖和擦除打断部分轮廓；保留少量识别锚点，让画面在具象残留与抽象颜料层之间摆动。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在显式声明 `layered-image-veil` 时启用。识别锚点是基础规则；调用者可在确实要求颜料拖拽、覆盖或擦除时声明 `user-requests-visible-painted-dragging-or-smearing` 和 `visible-history-of-paint-application-and-removal`，启用相应的过程规则。
 
 这与培根方向通过封闭框架和局部轮廓偏移建立空间压力不同；里希特方向的重心是颜料覆盖与移除的过程。规则不把历史创伤、暴力或纪录影像设成默认题材，也不把全局数字模糊当作绘画痕迹。
 

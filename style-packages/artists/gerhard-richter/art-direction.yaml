@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: richter-layered-veil-and-squeegee-erasure
 name: Richter layered veil and squeegee erasure
@@ -23,6 +23,19 @@ scope:
     - Use only the people, objects, setting, and narrative supplied by the user; do not add historical trauma, weapons, victims, or documentary content.
     - Preserve enough requested contours, proportions, and color anchors for the subject to remain identifiable.
     - Make blur or concealment follow visible paint movement; do not apply a global digital blur or obscure every focal feature.
+contexts:
+  - id: layered-image-veil
+    description: The user requests a recognizable image selectively veiled, dragged, or scraped through painted layers.
+  - id: crisp-flat-vector-art
+    description: The user requires crisp flat vector art.
+  - id: fully-photographic-output
+    description: The user requires a fully photographic result.
+  - id: unstructured-all-over-abstraction
+    description: The user requests unstructured abstraction across the entire image.
+  - id: user-requests-visible-painted-dragging-or-smearing
+    description: The user requests visible paint dragging or smearing as a material process.
+  - id: visible-history-of-paint-application-and-removal
+    description: The painting should show a visible history of application, wiping, or scraping.
 pillars:
   - Establish a readable base image from the user's requested subject before disrupting it.
   - Apply broad and narrow dragged passages that cross or follow selected forms, allowing some edges to dissolve while retaining other edges as anchors.
@@ -32,6 +45,8 @@ rules:
   - id: preserve-recognition-anchors
     axis: subject_and_legibility
     importance: core
+    when_contexts:
+      - layered-image-veil
     applies_when: The user requests a recognizable subject transformed by painterly blur or concealment.
     instruction: Establish the requested subject and retain a few defining contours, proportions, or color relationships while allowing selected areas to soften or disappear.
     observable: The subject remains identifiable from surviving visual anchors even though some boundaries are obscured.
@@ -46,6 +61,8 @@ rules:
   - id: directional-drag-and-selective-smear
     axis: mark_movement_and_edges
     importance: core
+    when_contexts:
+      - user-requests-visible-painted-dragging-or-smearing
     applies_when: The user requests a visible painted dragging or smearing process.
     instruction: Drag paint in a small number of deliberate horizontal, vertical, or form-following passes; vary width and opacity, interrupt some passes, and let movement cross selected boundaries rather than softening every edge equally.
     observable: Distortion has visible direction and varied stroke widths; some contours remain sharp while others dissolve into paint.
@@ -60,6 +77,8 @@ rules:
   - id: layered-cover-and-reveal
     axis: paint_layers_and_surface
     importance: supporting
+    when_contexts:
+      - visible-history-of-paint-application-and-removal
     applies_when: The painting should reveal a visible history of application and removal.
     instruction: Alternate opaque or translucent color deposits with selected wiping or scraping so earlier layers reappear in fragments; keep the revealed passages related to the image beneath them.
     observable: Overlapping coats, exposed underlayers, and scraped transitions remain visible without forming an evenly distributed grunge texture.
