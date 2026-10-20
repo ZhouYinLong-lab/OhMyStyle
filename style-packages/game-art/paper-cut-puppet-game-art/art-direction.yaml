@@ -1,0 +1,145 @@
+schema_version: 2.1.0
+status: experimental
+id: paper-cut-puppet-game-art-direction
+name: 纸片木偶式二维游戏美术
+base_package: game-art/paper-cut-puppet-game-art
+scope:
+  medium: flat cut-paper and 2D puppet game art with visible paper edges, articulated silhouettes, shallow
+    stage depth, and readable layered composition
+  representation: stylized
+  description: 以分层纸片、关节化轮廓、浅舞台深度和手工色块构成可拆分的二维游戏画面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - 固定木偶、剧院、儿童房、战争故事或特定角色
+  - 三维纸艺立体书或写实材质扫描
+  - 复制具体游戏资产、界面或关卡构图
+pillars:
+- 以分层纸片、关节化轮廓、浅舞台深度和手工色块构成可拆分的二维游戏画面。
+- 'medium: flat cut-paper and 2D puppet game art with visible paper edges, articulated silhouettes, shallow
+  stage depth, and readable layered composition'
+- 'composition: 前后纸片层; 可活动关节与清楚剪影; 浅舞台空间'
+- 'palette: 纸张中性色; 有限高辨识度色块; 手工印刷差异'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: flat
+    cut-paper and 2D puppet game art with visible paper edges, articulated silhouettes, shallow stage depth,
+    and readable layered composition.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: flat cut-paper
+    and 2D puppet game art with visible paper edges, articulated silhouettes, shallow stage depth, and readable
+    layered composition.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    flat cut-paper and 2D puppet game art with visible paper edges, articulated silhouettes, shallow stage
+    depth, and readable layered composition.'
+  evidence:
+    source_ids:
+    - source-paper-cut-puppet-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 前后纸片层; 可活动关节与清楚剪影;
+    浅舞台空间. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 前后纸片层; 可活动关节与清楚剪影;
+    浅舞台空间.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 前后纸片层;
+    可活动关节与清楚剪影; 浅舞台空间.'
+  evidence:
+    source_ids:
+    - source-paper-cut-puppet-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 纸张中性色; 有限高辨识度色块; 手工印刷差异. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 纸张中性色; 有限高辨识度色块; 手工印刷差异.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    纸张中性色; 有限高辨识度色块; 手工印刷差异.'
+  evidence:
+    source_ids:
+    - source-paper-cut-puppet-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 层间柔和投影; 轻微舞台光. Keep light coherent with the requested
+    subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 层间柔和投影; 轻微舞台光.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 层间柔和投影; 轻微舞台光.'
+  evidence:
+    source_ids:
+    - source-paper-cut-puppet-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纸纤维、剪切边和胶贴.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纸纤维、剪切边和胶贴.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纸纤维、剪切边和胶贴.'
+  evidence:
+    source_ids:
+    - source-paper-cut-puppet-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 墨线、印刷和纸面变化.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 墨线、印刷和纸面变化.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    墨线、印刷和纸面变化.'
+  evidence:
+    source_ids:
+    - source-paper-cut-puppet-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-paper-cut-puppet-primary-source
+  kind: primary
+  base_asset_id: paper-cut-puppet-primary-source
+execution:
+  route: text_only
+  must:
+  - Keep the user-provided subject; optional motifs do not restrict subject identity.
+  - 分层纸片
+  - 关节连接
+  - 可读剪影
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 固定木偶、剧院、儿童房、战争故事或特定角色
+  - 三维纸艺立体书或写实材质扫描
+  - 复制具体游戏资产、界面或关卡构图
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
