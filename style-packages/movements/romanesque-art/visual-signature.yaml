@@ -6,10 +6,9 @@ palette:
 - 正面秩序与简化比例
 - 赭红、矿物蓝、灰绿和旧金色
 lighting:
-  quality: 赭红、矿物蓝、灰绿和旧金色
+  quality: even frontal light with restrained shading and clearly separated mineral-color planes
   behavior:
-  - Keep the requested subject and location independent from the package.
-  - Apply lighting as a transferable visual decision, not a fixed scene.
+  - Make form readable through contour and flat color rather than deep naturalistic modeling.
 surface:
   finish: 清晰轮廓、平面色块与有限空间深度
   edges: subject-dependent, without a copied layout
