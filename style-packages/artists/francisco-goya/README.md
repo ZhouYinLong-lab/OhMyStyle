@@ -34,7 +34,7 @@
 
 ## 新架构：心理肖像与选择性笔触（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `psychological-portrait` 时启用。方向关注表情和姿态的心理存在感、背景与面部的笔触尺度差异，以及按需使用的克制亮部。它与卡罗方向的浅背景、个人象征关系不同；不自动加入直视观者、暴力或怪诞题材。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户指定 `psychological-portrait` 时启用。表情与姿态是基础规则；调用者可按场景声明 `painted-background-and-clear-focal-sitter` 或 `portrait-with-dark-or-subdued-background`，再启用背景笔触对比或克制亮部规则。它与卡罗方向的浅背景、个人象征关系不同；不自动加入直视观者、暴力或怪诞题材。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/francisco-goya --direction package --context psychological-portrait --subject "A retired lighthouse keeper in a worn wool jacket, looking down thoughtfully" --output runs/style-v2/francisco-goya-job.json

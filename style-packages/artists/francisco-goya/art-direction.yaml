@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: goya-psychological-portrait-and-brushwork
 name: Goya psychological portrait and brushwork
@@ -23,6 +23,19 @@ scope:
     - Preserve the requested identity, age, expression, pose, clothing, background, and count.
     - Keep psychological character grounded in requested facial expression and posture; do not invent trauma or narrative.
     - Use a dark ground only when it suits the requested portrait; do not default to violence, grotesque imagery, or self-portraiture.
+contexts:
+  - id: psychological-portrait
+    description: The user requests a portrait where expression or mood is important.
+  - id: glossy-fashion-editorial
+    description: The user requests glossy fashion-editorial photography or illustration.
+  - id: decorative-patterned-group-portrait
+    description: The user requests a group portrait organized around decorative pattern.
+  - id: mandatory-horror-imagery
+    description: The user explicitly requires horror imagery.
+  - id: painted-background-and-clear-focal-sitter
+    description: The portrait has a visible painted background and a clear focal sitter.
+  - id: portrait-with-dark-or-subdued-background
+    description: The user requests a portrait with a dark or subdued background.
 pillars:
   - Make the sitter's expression and gaze carry the portrait's psychological presence without forcing direct eye contact.
   - Contrast broad, active background marks with finer selected treatment on the face and requested focal details.
@@ -32,6 +45,8 @@ rules:
   - id: expression-led-psychological-presence
     axis: portrait_expression
     importance: core
+    when_contexts:
+      - psychological-portrait
     applies_when: The user requests a portrait whose expression or mood matters.
     instruction: Preserve the requested facial expression and pose; build presence through subtle gaze direction, facial tension, and a restrained gesture instead of adding symbolic props or forcing a stare at the viewer.
     observable: The sitter feels individually present, with expression and posture supporting the requested mood.
@@ -46,6 +61,8 @@ rules:
   - id: active-ground-and-selective-detail
     axis: brushwork_and_focus
     importance: core
+    when_contexts:
+      - painted-background-and-clear-focal-sitter
     applies_when: A portrait uses a visible painted background and a clear focal sitter.
     instruction: Use broader, more energetic marks in the ground and reserve finer, more controlled passages for the face and a few requested details; keep the brushwork contrast selective so the sitter remains readable.
     observable: Background and focal passages differ in mark scale and detail density, while both remain visibly painted.
@@ -60,6 +77,8 @@ rules:
   - id: restrained-light-against-ground
     axis: light_and_value
     importance: supporting
+    when_contexts:
+      - portrait-with-dark-or-subdued-background
     applies_when: The user requests a portrait with a dark or subdued background.
     instruction: Separate the sitter with a restrained value contrast, letting light clarify the requested facial planes and selected clothing materials while preserving detail in shadow.
     observable: The face is legible without a spotlight halo, and darker passages retain material and tonal variation.
