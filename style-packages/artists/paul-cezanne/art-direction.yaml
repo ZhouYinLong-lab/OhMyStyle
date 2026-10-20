@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: cezanne-tilted-tabletop-object-balance
 name: Cézanne tilted tabletop object balance
@@ -26,6 +26,17 @@ scope:
     - Keep contact points and object weight readable even when local axes differ.
     - Text-only generation may create unstable gravity or table edges; review support and object contact.
     - Do not copy a named still life, its exact object arrangement, or distinctive props.
+contexts:
+  - id: tilted-tabletop-still-life
+    description: A user-requested still life with a visible tabletop or counter.
+  - id: landscape-only-scene
+    description: A landscape without an object arrangement on a table or counter.
+  - id: strict-single-point-product-photography
+    description: A product render that requires consistent single-point perspective.
+  - id: floating-object-arrangement
+    description: An arrangement where objects are intentionally suspended without support.
+  - id: multiple-objects
+    description: Two or more user-requested objects share one tabletop or counter.
 pillars:
   - Show more of the supporting plane by lifting or tilting its visible surface toward the viewer.
   - Balance the user-specified object network across the support through overlap, spacing, and warm-cool color neighbors.
@@ -47,6 +58,8 @@ rules:
   - id: balanced-object-network
     axis: object_relations_and_mass
     importance: core
+    when_contexts:
+      - multiple-objects
     applies_when: The user requests multiple objects sharing one tabletop.
     instruction: Arrange the requested objects as a connected mass network using deliberate intervals and selective overlaps; give each object a stable base or contact relation on the tilted support and preserve its identity.
     observable: The objects feel related as a still life, remain individually countable, and appear supported rather than sliding or floating.

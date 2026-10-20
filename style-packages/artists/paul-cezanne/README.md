@@ -77,4 +77,4 @@
 
 ## 实验方向：倾斜桌面与静物平衡
 
-新版可选方向 [`art-direction.yaml`](art-direction.yaml) 适用于用户指定的桌面静物：只倾斜支撑平面，通过接触、遮挡与冷暖色面平衡用户给出的物件；局部视角可以略有分歧，但物件仍要稳稳落在桌面上。不自动加水果、瓶子、盘子或桌布。对照图见 [`comparisons/`](comparisons/README.md)。
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，适用于用户指定的桌面静物：只倾斜支撑平面，保持物件稳稳落在桌面上。只有调用者声明 `multiple-objects` 时，才应用多物件之间的接触与遮挡平衡规则；不自动加水果、瓶子、盘子或桌布。对照图见 [`comparisons/`](comparisons/README.md)。

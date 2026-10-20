@@ -77,4 +77,4 @@ Use references to understand observable characteristics. Do not copy a source wo
 
 ## Experimental direction: tilted tabletop object balance
 
-The optional direction in [`art-direction.yaml`](art-direction.yaml) is for a user-requested tabletop still life: tilt only the supporting plane, then balance the specified objects through contact, overlap, and warm/cool color planes. Local viewpoints may differ slightly while the objects remain grounded. Fruit, bottles, plates, and cloth are not defaults. See [`comparisons/`](comparisons/README.md) for paired images.
+The optional direction in [`art-direction.yaml`](art-direction.yaml) uses format 2.1.0 and is for a user-requested tabletop still life: tilt only the supporting plane and keep objects grounded. The contact-and-overlap rule for balancing objects activates only when the caller declares `multiple-objects`. Fruit, bottles, plates, and cloth are not defaults. See [`comparisons/`](comparisons/README.md) for paired images.
