@@ -1,0 +1,135 @@
+schema_version: 2.1.0
+status: experimental
+id: masahisa-fukase-direction
+name: 深濑昌久
+base_package: photographers/masahisa-fukase
+scope:
+  medium: analog_or_simulated_film_photography
+  representation: recognizable
+  description: A series-driven photographic profile built from intimate autobiography, recurring motifs, unstable
+    distance, dense black-and-white atmosphere, and the tension between private memory and staged observation.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - commercial_lifestyle_polish
+  - generic_dark_moody_filter
+pillars:
+- A series-driven photographic profile built from intimate autobiography, recurring motifs, unstable distance,
+  dense black-and-white atmosphere, and the tension between private memory and staged observation.
+- 'composition: partial visibility; unstable distance; ambiguous foreground and background; sequence matters
+  more than one iconic frame'
+- 'palette: primary: deep_black_and_white; alternate: restrained_color_or_monochrome_variation; behavior: dense
+  blacks; behavior: silvery_midtones; behavior: occasional_buoyant_color_as_contrast'
+- 'lighting: quality: available_light_or_low_key_ambient; behavior: selective_visibility; behavior: atmospheric_falloff;
+  behavior: darkness_as_narrative_space'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: partial visibility;
+    unstable distance; ambiguous foreground and background; sequence matters more than one iconic frame. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: partial visibility;
+    unstable distance; ambiguous foreground and background; sequence matters more than one iconic frame.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: partial
+    visibility; unstable distance; ambiguous foreground and background; sequence matters more than one iconic
+    frame.'
+  evidence:
+    source_ids:
+    - source-fukase-smithsonian
+    - source-fukase-moma
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: primary: deep_black_and_white; alternate:
+    restrained_color_or_monochrome_variation; behavior: dense blacks; behavior: silvery_midtones; behavior:
+    occasional_buoyant_color_as_contrast. Adapt their balance to the requested subject; do not apply them as
+    a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: primary: deep_black_and_white;
+    alternate: restrained_color_or_monochrome_variation; behavior: dense blacks; behavior: silvery_midtones;
+    behavior: occasional_buoyant_color_as_contrast.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    primary: deep_black_and_white; alternate: restrained_color_or_monochrome_variation; behavior: dense blacks;
+    behavior: silvery_midtones; behavior: occasional_buoyant_color_as_contrast.'
+  evidence:
+    source_ids:
+    - source-fukase-smithsonian
+    - source-fukase-moma
+    basis: curatorial_inference
+    visual_review: pending
+- id: light
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: available_light_or_low_key_ambient; behavior:
+    selective_visibility; behavior: atmospheric_falloff; behavior: darkness_as_narrative_space. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: available_light_or_low_key_ambient;
+    behavior: selective_visibility; behavior: atmospheric_falloff; behavior: darkness_as_narrative_space.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: available_light_or_low_key_ambient;
+    behavior: selective_visibility; behavior: atmospheric_falloff; behavior: darkness_as_narrative_space.'
+  evidence:
+    source_ids:
+    - source-fukase-smithsonian
+    - source-fukase-moma
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: grain: visible_film_grain;
+    sharpness: variable; finish: photographic_print_or_photobook_sequence. Preserve detail hierarchy and material
+    identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: grain: visible_film_grain;
+    sharpness: variable; finish: photographic_print_or_photobook_sequence.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    grain: visible_film_grain; sharpness: variable; finish: photographic_print_or_photobook_sequence.'
+  evidence:
+    source_ids:
+    - source-fukase-smithsonian
+    - source-fukase-moma
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- color
+- light
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - color
+  - light
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-fukase-smithsonian
+  kind: primary
+  base_asset_id: fukase-smithsonian
+- id: source-fukase-moma
+  kind: secondary
+  base_asset_id: fukase-moma
+execution:
+  route: text_only
+  must:
+  - choose a personal but non-identifying recurring motif
+  - vary distance or timing across a small sequence
+  - allow ambiguity and imperfect visibility
+  - keep the emotional reading open rather than explaining the scene
+  - the image belongs to a possible series
+  - intimacy is balanced by emotional distance
+  - recurring motifs carry meaning without becoming a logo
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - commercial_lifestyle_polish
+  - generic_dark_moody_filter
+  - Do not generate a real person's likeness or copy a named photograph.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
