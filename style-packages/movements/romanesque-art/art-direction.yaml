@@ -1,0 +1,138 @@
+schema_version: 2.1.0
+status: experimental
+id: romanesque-art-direction
+name: 罗马式艺术
+base_package: movements/romanesque-art
+scope:
+  medium: 十一至十二世纪西欧中世纪艺术 绘画与装饰艺术
+  representation: stylized
+  description: 以厚重结构、正面叙事秩序、简化比例和矿物色彩建立坚实而清晰的中世纪视觉语言。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以厚重结构、正面叙事秩序、简化比例和矿物色彩建立坚实而清晰的中世纪视觉语言。
+- 'composition: 厚重、稳定、近乎建筑性的形体; 正面秩序与简化比例'
+- 'palette: 正面秩序与简化比例; 赭红、矿物蓝、灰绿和旧金色'
+- 'lighting: quality: 赭红、矿物蓝、灰绿和旧金色; behavior: Keep the requested subject and location independent from the
+  package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 厚重、稳定、近乎建筑性的形体;
+    正面秩序与简化比例. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 厚重、稳定、近乎建筑性的形体; 正面秩序与简化比例.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 厚重、稳定、近乎建筑性的形体;
+    正面秩序与简化比例.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 正面秩序与简化比例; 赭红、矿物蓝、灰绿和旧金色. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 正面秩序与简化比例; 赭红、矿物蓝、灰绿和旧金色.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    正面秩序与简化比例; 赭红、矿物蓝、灰绿和旧金色.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 赭红、矿物蓝、灰绿和旧金色; behavior: Keep the requested
+    subject and location independent from the package.; behavior: Apply lighting as a transferable visual decision,
+    not a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 赭红、矿物蓝、灰绿和旧金色; behavior:
+    Keep the requested subject and location independent from the package.; behavior: Apply lighting as a transferable
+    visual decision, not a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 赭红、矿物蓝、灰绿和旧金色;
+    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
+    as a transferable visual decision, not a fixed scene..'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 清晰轮廓、平面色块与有限空间深度;
+    edges: subject-dependent, without a copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    清晰轮廓、平面色块与有限空间深度; edges: subject-dependent, without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 清晰轮廓、平面色块与有限空间深度; edges: subject-dependent, without a copied layout.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: controlled
+    and medium-dependent; placement: only where the package visual language needs explanation. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    controlled and medium-dependent; placement: only where the package visual language needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: controlled and medium-dependent; placement: only where the package visual language needs explanation.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-01
+  kind: primary_research_source
+  base_asset_id: primary-01
+execution:
+  route: text_only
+  must:
+  - 先建立正面构图和坚实轮廓
+  - 用有限矿物色组织大色块
+  - 压缩透视并强化形体重量
+  - 以少量纹理和边缘变化补充手工表面
+  - architectural weight
+  - frontal simplified form
+  - mineral-color surface
+  - the requested subject stays unchanged
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
+    protected game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
