@@ -82,4 +82,6 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 模型权重、API Key 和生成图片由使用者自行管理。参考图只用于理解可观察特征，不要复制原作的具体构图、人物、文字、商标或标志。
 
+## 新旧架构视觉对照
 
+查看[旧版与新方向的实际生图、编译提示和人工复核记录](comparisons/README.md)。

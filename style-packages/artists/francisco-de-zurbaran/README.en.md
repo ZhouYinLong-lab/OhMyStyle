@@ -101,4 +101,6 @@ Users manage model weights, API keys, and generated images themselves. Reference
 are for observable traits only; do not copy a source work's exact composition,
 figures, text, trademark, or logo.
 
+## Legacy and direction comparison
 
+See [the actual legacy and direction outputs, compiled prompts, and review notes](comparisons/README.md).
