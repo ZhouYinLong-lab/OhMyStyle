@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: breath-of-the-wild-open-world-direction
+name: 旷野自然开放世界游戏美术
+base_package: game-art/breath-of-the-wild-open-world
+scope:
+  medium: 三维环境结合手绘色面与柔和卡通明暗; 轮廓简洁但不使用粗黑描边; 形体先于微纹理
+  representation: stylized
+  description: 以手绘质感的三维自然场景、清晰前中后景、柔和卡通明暗和大尺度探索空间组织可游玩的开放世界画面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - photorealistic_landscape
+  - copied_landmark
+  - named_character
+  - global_anime_filter
+pillars:
+- 以手绘质感的三维自然场景、清晰前中后景、柔和卡通明暗和大尺度探索空间组织可游玩的开放世界画面。
+- 'medium: 三维环境结合手绘色面与柔和卡通明暗; 轮廓简洁但不使用粗黑描边; 形体先于微纹理'
+- 'composition: 以宽阔地平线、路径和前中后景建立可探索空间; 远景层次清楚而不过度细密; 小尺度主体与大自然尺度形成对照'
+- 'palette: 天空蓝、草木绿、岩石灰、暖土色和少量朱红形成自然色组; 焦点色只落在花、旗帜或光源等局部; 不使用统一高饱和滤镜'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 三维环境结合手绘色面与柔和卡通明暗;
+    轮廓简洁但不使用粗黑描边; 形体先于微纹理.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 三维环境结合手绘色面与柔和卡通明暗;
+    轮廓简洁但不使用粗黑描边; 形体先于微纹理.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    三维环境结合手绘色面与柔和卡通明暗; 轮廓简洁但不使用粗黑描边; 形体先于微纹理.'
+  evidence:
+    source_ids:
+    - source-breath-of-the-wild-open-world-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以宽阔地平线、路径和前中后景建立可探索空间;
+    远景层次清楚而不过度细密; 小尺度主体与大自然尺度形成对照. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以宽阔地平线、路径和前中后景建立可探索空间;
+    远景层次清楚而不过度细密; 小尺度主体与大自然尺度形成对照.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以宽阔地平线、路径和前中后景建立可探索空间;
+    远景层次清楚而不过度细密; 小尺度主体与大自然尺度形成对照.'
+  evidence:
+    source_ids:
+    - source-breath-of-the-wild-open-world-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 天空蓝、草木绿、岩石灰、暖土色和少量朱红形成自然色组; 焦点色只落在花、旗帜或光源等局部;
+    不使用统一高饱和滤镜. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 天空蓝、草木绿、岩石灰、暖土色和少量朱红形成自然色组;
+    焦点色只落在花、旗帜或光源等局部; 不使用统一高饱和滤镜.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    天空蓝、草木绿、岩石灰、暖土色和少量朱红形成自然色组; 焦点色只落在花、旗帜或光源等局部; 不使用统一高饱和滤镜.'
+  evidence:
+    source_ids:
+    - source-breath-of-the-wild-open-world-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 自然主光方向明确; 云影和空气透视帮助分层; 阴影柔和且保留地形结构. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 自然主光方向明确; 云影和空气透视帮助分层; 阴影柔和且保留地形结构.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 自然主光方向明确; 云影和空气透视帮助分层;
+    阴影柔和且保留地形结构.'
+  evidence:
+    source_ids:
+    - source-breath-of-the-wild-open-world-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 草、石、水、木和旧墙有不同粗糙度;
+    材质细节克制并服从远近尺度. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 草、石、水、木和旧墙有不同粗糙度;
+    材质细节克制并服从远近尺度.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    草、石、水、木和旧墙有不同粗糙度; 材质细节克制并服从远近尺度.'
+  evidence:
+    source_ids:
+    - source-breath-of-the-wild-open-world-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 笔触和色差沿地形、草叶和岩面方向分布;
+    远景纹理密度降低. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 笔触和色差沿地形、草叶和岩面方向分布;
+    远景纹理密度降低.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    笔触和色差沿地形、草叶和岩面方向分布; 远景纹理密度降低.'
+  evidence:
+    source_ids:
+    - source-breath-of-the-wild-open-world-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-breath-of-the-wild-open-world-primary-source
+  kind: primary
+  base_asset_id: breath-of-the-wild-open-world-primary-source
+execution:
+  route: text_only
+  must:
+  - 先建立地形和路径
+  - 再安排大色面与前中后景
+  - 补充少量可读道具
+  - 最后检查探索方向与尺度关系
+  - 探索空间保持可读
+  - 自然色组不被全局色调覆盖
+  - 不得复制具体游戏地图、角色或道具
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic_landscape
+  - copied_landmark
+  - named_character
+  - global_anime_filter
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
