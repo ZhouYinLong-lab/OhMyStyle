@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: friedrich-human-scale-and-vastness
 name: Friedrich human scale and vastness
@@ -20,6 +20,15 @@ scope:
     - Preserve the requested location, weather, time, and figure count; never add a wanderer, monk, ruin, cross, mountain, or fog by default.
     - A person viewed from behind is optional and only appears when the prompt requests a person or a human viewpoint.
     - Keep the scene contemplative through scale and spacing, not through invented religious or national symbolism.
+contexts:
+  - id: landscape-view
+    description: A scene organized around a natural landscape and its spatial scale.
+  - id: object-only-still-life
+    description: A composition whose subject is only arranged objects rather than a landscape.
+  - id: photorealistic-landscape
+    description: A requested photographic rendering without visible painterly interpretation.
+  - id: requested-figure
+    description: The user explicitly asks for a person or an observer within the landscape.
 pillars:
   - Establish a deliberate scale gap between a human presence, when requested, and the landscape around it.
   - Give broad, quiet areas of sky, water, or terrain enough space to carry the scene's emotional weight.
@@ -29,6 +38,8 @@ rules:
   - id: human-measure-without-default-figure
     axis: scale_and_viewpoint
     importance: core
+    when_contexts:
+      - requested-figure
     applies_when: The requested landscape includes a person or implies an observer's viewpoint.
     instruction: Use the requested person's scale and placement to measure the surrounding land or sky; a back-facing stance may invite looking into the view, but do not add or enlarge a figure beyond the prompt.
     observable: The relationship between person and landscape is immediately legible, while the person remains anonymous unless the prompt specifies identity or detail.

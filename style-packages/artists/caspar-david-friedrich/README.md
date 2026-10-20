@@ -82,7 +82,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 新架构：人的尺度与自然广度（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅用于 `landscape-view`：用开阔空间、地平线位置、远近尺度和选择性显现，建立人（仅在用户要求时出现）与自然环境的关系。它不默认添加背影旅人、雾、山峰、废墟或宗教象征。与广重包重视天气、路径和版画层叠不同，这个方向让大块静谧空间与有限的人类尺度承载情绪。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅用于 `landscape-view`：用开阔空间、地平线位置、远近尺度和选择性显现，建立人（仅在用户要求时出现）与自然环境的关系。只有调用者明确声明 `requested-figure`，才会启用人物尺度规则；它不默认添加背影旅人、雾、山峰、废墟或宗教象征。与广重包重视天气、路径和版画层叠不同，这个方向让大块静谧空间与有限的人类尺度承载情绪。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/caspar-david-friedrich --direction package --context landscape-view --subject "A small lighthouse on a broad rocky coast at dusk" --output runs/style-v2/friedrich-job.json
