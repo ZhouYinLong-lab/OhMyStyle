@@ -1,0 +1,142 @@
+schema_version: 2.1.0
+status: experimental
+id: alfred-stieglitz-direction
+name: 阿尔弗雷德·斯蒂格利茨
+base_package: photographers/alfred-stieglitz
+scope:
+  medium: pictorial_photography
+  representation: recognizable
+  description: A reference-backed modernist photography profile focused on deliberate formal structure, layered
+    planes, tonal weather, and the photograph as an authored composition rather than a neutral record or a
+    sepia preset.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - neutral_snapshot
+  - decorative_sepia_filter
+  - generic_street_photo
+pillars:
+- A reference-backed modernist photography profile focused on deliberate formal structure, layered planes,
+  tonal weather, and the photograph as an authored composition rather than a neutral record or a sepia preset.
+- 'composition: construct the frame from intersecting planes, rails, ropes, steps, trunks, or crowd bands;
+  use asymmetry and cropped structure to make the frame feel authored; create depth through overlapping flat
+  zones rather than cinematic bokeh'
+- 'palette: restrained monochrome or warm photogravure brown; tonal contrast and atmospheric value carry more
+  weight than color'
+- 'lighting: quality: weather_and_print_sensitive; behavior: fog_or_rain_as_plane; behavior: selective_highlight;
+  behavior: dense_foreground_structure'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: construct the
+    frame from intersecting planes, rails, ropes, steps, trunks, or crowd bands; use asymmetry and cropped
+    structure to make the frame feel authored; create depth through overlapping flat zones rather than cinematic
+    bokeh. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: construct the frame
+    from intersecting planes, rails, ropes, steps, trunks, or crowd bands; use asymmetry and cropped structure
+    to make the frame feel authored; create depth through overlapping flat zones rather than cinematic bokeh.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: construct
+    the frame from intersecting planes, rails, ropes, steps, trunks, or crowd bands; use asymmetry and cropped
+    structure to make the frame feel authored; create depth through overlapping flat zones rather than cinematic
+    bokeh.'
+  evidence:
+    source_ids:
+    - source-stieglitz-steerage
+    - source-stieglitz-spring-showers
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: restrained monochrome or warm photogravure
+    brown; tonal contrast and atmospheric value carry more weight than color. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: restrained monochrome or
+    warm photogravure brown; tonal contrast and atmospheric value carry more weight than color.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    restrained monochrome or warm photogravure brown; tonal contrast and atmospheric value carry more weight
+    than color.'
+  evidence:
+    source_ids:
+    - source-stieglitz-steerage
+    - source-stieglitz-spring-showers
+    basis: curatorial_inference
+    visual_review: pending
+- id: light
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: weather_and_print_sensitive; behavior:
+    fog_or_rain_as_plane; behavior: selective_highlight; behavior: dense_foreground_structure. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: weather_and_print_sensitive;
+    behavior: fog_or_rain_as_plane; behavior: selective_highlight; behavior: dense_foreground_structure.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: weather_and_print_sensitive;
+    behavior: fog_or_rain_as_plane; behavior: selective_highlight; behavior: dense_foreground_structure.'
+  evidence:
+    source_ids:
+    - source-stieglitz-steerage
+    - source-stieglitz-spring-showers
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: capture: pictorial_print_or_photogravure_impression;
+    rendering: soft_but_structured_detail; rendering: paper_or_ink_tonal_range; rendering: deliberate_crop.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: capture:
+    pictorial_print_or_photogravure_impression; rendering: soft_but_structured_detail; rendering: paper_or_ink_tonal_range;
+    rendering: deliberate_crop.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    capture: pictorial_print_or_photogravure_impression; rendering: soft_but_structured_detail; rendering:
+    paper_or_ink_tonal_range; rendering: deliberate_crop.'
+  evidence:
+    source_ids:
+    - source-stieglitz-steerage
+    - source-stieglitz-spring-showers
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- color
+- light
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - color
+  - light
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-stieglitz-steerage
+  kind: wikimedia_commons_alfred_stieglitz
+  base_asset_id: stieglitz-steerage
+- id: source-stieglitz-spring-showers
+  kind: new_york
+  base_asset_id: stieglitz-spring-showers
+execution:
+  route: text_only
+  must:
+  - design the frame from overlapping lines and masses
+  - let rain, fog, or social density create tonal layers
+  - use restrained photogravure-like response with open midtones
+  - preserve the decisive crop and formal tension
+  - geometry and tonal design are intentional
+  - the image feels authored rather than merely documented
+  - historical print character follows composition, not the reverse
+  - do not reproduce a known photograph's arrangement
+  avoid:
+  - neutral_snapshot
+  - decorative_sepia_filter
+  - generic_street_photo
+  - Use formal and print traits only; do not recreate a named photograph or identifiable private person.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
