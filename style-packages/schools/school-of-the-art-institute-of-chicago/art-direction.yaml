@@ -1,0 +1,169 @@
+schema_version: 2.1.0
+status: experimental
+id: school-of-the-art-institute-of-chicago-direction
+name: 芝加哥艺术学院
+base_package: schools/school-of-the-art-institute-of-chicago
+scope:
+  medium: interdisciplinary studio practice
+  representation: stylized
+  description: 以跨学科研究、过程公开和展览语境中的实验性，连接绘画、物件、影像、空间与批评性编辑。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - a mandatory studio classroom, student figure, or Chicago landmark
+pillars:
+- 以跨学科研究、过程公开和展览语境中的实验性，连接绘画、物件、影像、空间与批评性编辑。
+- 'differentiation: research-led cross-media thinking; process made legible when useful; exhibition-aware editing'
+- 'composition: Let research, process, and presentation shape the hierarchy; support a clear proposition without
+  prescribing one format.; Use contrasts between finished form and visible process when they clarify the idea.'
+- 'palette: Treat color as a material and conceptual choice, ranging from quiet neutrals to deliberately saturated
+  interventions.; Keep the palette accountable to the chosen medium rather than a universal school filter.'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: research-led
+    cross-media thinking; process made legible when useful; exhibition-aware editing. Do not collapse the direction
+    into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: research-led cross-media thinking;
+    process made legible when useful; exhibition-aware editing.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: research-led
+    cross-media thinking; process made legible when useful; exhibition-aware editing.'
+  evidence:
+    source_ids:
+    - source-school-of-the-art-institute-of-chicago-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Let research,
+    process, and presentation shape the hierarchy; support a clear proposition without prescribing one format.;
+    Use contrasts between finished form and visible process when they clarify the idea.. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Let research, process,
+    and presentation shape the hierarchy; support a clear proposition without prescribing one format.; Use
+    contrasts between finished form and visible process when they clarify the idea..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Let research,
+    process, and presentation shape the hierarchy; support a clear proposition without prescribing one format.;
+    Use contrasts between finished form and visible process when they clarify the idea..'
+  evidence:
+    source_ids:
+    - source-school-of-the-art-institute-of-chicago-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Treat color as a material and conceptual
+    choice, ranging from quiet neutrals to deliberately saturated interventions.; Keep the palette accountable
+    to the chosen medium rather than a universal school filter.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Treat color as a material
+    and conceptual choice, ranging from quiet neutrals to deliberately saturated interventions.; Keep the palette
+    accountable to the chosen medium rather than a universal school filter..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Treat color as a material and conceptual choice, ranging from quiet neutrals to deliberately saturated
+    interventions.; Keep the palette accountable to the chosen medium rather than a universal school filter..'
+  evidence:
+    source_ids:
+    - source-school-of-the-art-institute-of-chicago-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: neutral exhibition light or studio light
+    appropriate to the medium; behavior: Keep the work legible as a proposition before adding atmosphere or
+    spectacle.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: neutral exhibition
+    light or studio light appropriate to the medium; behavior: Keep the work legible as a proposition before
+    adding atmosphere or spectacle..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: neutral exhibition
+    light or studio light appropriate to the medium; behavior: Keep the work legible as a proposition before
+    adding atmosphere or spectacle..'
+  evidence:
+    source_ids:
+    - source-school-of-the-art-institute-of-chicago-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: presentation-ready
+    but allowed to show process; edges: medium-specific and intentionally edited. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    presentation-ready but allowed to show process; edges: medium-specific and intentionally edited.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: presentation-ready but allowed to show process; edges: medium-specific and intentionally edited.'
+  evidence:
+    source_ids:
+    - source-school-of-the-art-institute-of-chicago-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: layered
+    around the conceptual focus; placement: process evidence appears where it supports the proposition, not
+    as generic clutter. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    layered around the conceptual focus; placement: process evidence appears where it supports the proposition,
+    not as generic clutter.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: layered around the conceptual focus; placement: process evidence appears where it supports the
+    proposition, not as generic clutter.'
+  evidence:
+    source_ids:
+    - source-school-of-the-art-institute-of-chicago-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-school-of-the-art-institute-of-chicago-primary-source
+  kind: primary
+  base_asset_id: school-of-the-art-institute-of-chicago-primary-source
+execution:
+  route: text_only
+  must:
+  - identify the question or proposition implied by the user-supplied subject
+  - choose a medium and edit that make the proposition visible
+  - retain useful process evidence, then arrange the final presentation with deliberate hierarchy
+  - research-led visual proposition
+  - medium-aware material decisions
+  - clear exhibition hierarchy with room for experimentation
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - a mandatory studio classroom, student figure, or Chicago landmark
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
