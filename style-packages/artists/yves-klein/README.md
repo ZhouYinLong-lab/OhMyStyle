@@ -63,4 +63,4 @@
 
 ## 实验方向：留白中的悬置主体
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 只在用户明确指定腾空或漂浮主体时启用：让主体保持可辨但相对画面较小，以大片连续色场和最多一条克制的地面/地平线提示表现悬置感。它不默认添加人物或跳跃，也不复刻《跃入虚空》的姿势、街景或摄影合成。见 [`comparisons/`](comparisons/README.md) 查看同一舞者题材的包默认规则与新方向对照；该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，只在用户明确指定腾空或漂浮主体时启用：让主体保持可辨但相对画面较小，以大片连续色场表现悬置感。只有主体高度或距离难以判断时，才声明 `subject-scale-or-distance-would-be-unclear` 启用单一尺度提示规则。它不默认添加人物或跳跃，也不复刻《跃入虚空》的姿势、街景或摄影合成。见 [`comparisons/`](comparisons/README.md) 查看同一舞者题材的包默认规则与新方向对照；该方向仍处于实验状态。

@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: yves-klein-suspended-figure-in-open-field
 name: Klein suspended figure in open field
@@ -25,6 +25,19 @@ scope:
     - Use one low, quiet spatial cue only when needed to clarify scale; do not invent a street, rooftop, building, or audience.
     - Render as a materially painted image, not as a documentary photograph or photomontage.
     - Do not reproduce the composition, pose, setting, or visual arrangement of a named work.
+contexts:
+  - id: user-requested-airborne-or-floating-subject
+    description: The user explicitly requests an airborne or floating subject.
+  - id: user-requested-dense-environment
+    description: The user requests a dense environment around the subject.
+  - id: user-requested-multiple-equal-scale-subjects
+    description: The user requests multiple subjects at equal scale.
+  - id: text-or-logo-reproduction
+    description: The user requests text or logo reproduction.
+  - id: subject-scale-or-distance-would-be-unclear
+    description: The subject's height or distance would otherwise be unclear.
+  - id: user-requests-materially-painted-medium
+    description: The user requests a materially painted image rather than a photograph or photomontage.
 pillars:
   - Let a broad, nearly uninterrupted color field carry most of the image area.
   - Treat the user-requested airborne subject as a compact, legible event surrounded by unusually generous negative space.
@@ -33,6 +46,8 @@ rules:
   - id: subject-small-within-open-field
     axis: subject_scale_and_negative_space
     importance: core
+    when_contexts:
+      - user-requested-airborne-or-floating-subject
     applies_when: The user explicitly requests an airborne or floating subject and accepts a sparse composition.
     instruction: Keep the requested subject as a compact focal event within a broad uninterrupted field; reserve substantially more area for empty space than for the subject.
     observable: The subject remains recognizable while the surrounding field dominates the composition.
@@ -46,6 +61,8 @@ rules:
   - id: single-scale-anchor
     axis: spatial_cue_and_suspension
     importance: core
+    when_contexts:
+      - subject-scale-or-distance-would-be-unclear
     applies_when: The subject's height or distance would otherwise be unclear.
     instruction: Add at most one thin horizon, low ground strip, or small user-requested support cue; keep it secondary to the open field and subject.
     observable: A single quiet spatial cue makes the subject's separation from ground or surroundings readable without creating a detailed setting.
@@ -59,6 +76,8 @@ rules:
   - id: painted-not-documentary
     axis: medium_and_surface
     importance: supporting
+    when_contexts:
+      - user-requests-materially-painted-medium
     applies_when: The direction is active.
     instruction: Keep broad color areas materially painted with restrained pigment variation and a mostly matte finish; simplify incidental detail without changing the requested subject.
     observable: The image reads as a sparse painted composition rather than a realistic photograph or glossy 3D render.
