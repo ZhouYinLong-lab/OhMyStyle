@@ -1,0 +1,154 @@
+schema_version: 2.1.0
+status: experimental
+id: high-chroma-color-pairing-direction
+name: 高纯度撞色
+base_package: presets/high-chroma-color-pairing
+scope:
+  medium: hybrid
+  representation: stylized
+  description: A subject-neutral color-direction preset built from decisive high-chroma pairings, pale or deep
+    counter-grounds, controlled area ratios, and clear material separation rather than an artist-specific appearance.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+pillars:
+- A subject-neutral color-direction preset built from decisive high-chroma pairings, pale or deep counter-grounds,
+  controlled area ratios, and clear material separation rather than an artist-specific appearance.
+- 'composition: color_masses_establish_hierarchy_before_texture; dominant_mass_occupies_more_area_than_counter_mass;
+  counter_mass_is_intentional_and_easy_to_locate; keep_open_negative_space_around_the_main_color_event; avoid_equal_saturation_on_every_object'
+- 'palette: primary_rule: one_decisive_high_chroma_pair_plus_one_neutral_counter-ground; pair_families: blue_yellow;
+  pair_families: teal_pink; pair_families: orange_navy; pair_families: turquoise_cream; pair_families: red_pale_warm;
+  pair_families: brown_beige; pair_families: deep_blue_mist'
+- 'lighting: controlled_studio_or_even_daylight; matte_or_naturally_textured_surfaces_preferred; clean_edges_with_local_material_detail;
+  avoid_glossy_cgi_reflections_and_global_vintage_wash'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: color_masses_establish_hierarchy_before_texture;
+    dominant_mass_occupies_more_area_than_counter_mass; counter_mass_is_intentional_and_easy_to_locate; keep_open_negative_space_around_the_main_color_event;
+    avoid_equal_saturation_on_every_object. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: color_masses_establish_hierarchy_before_texture;
+    dominant_mass_occupies_more_area_than_counter_mass; counter_mass_is_intentional_and_easy_to_locate; keep_open_negative_space_around_the_main_color_event;
+    avoid_equal_saturation_on_every_object.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: color_masses_establish_hierarchy_before_texture;
+    dominant_mass_occupies_more_area_than_counter_mass; counter_mass_is_intentional_and_easy_to_locate; keep_open_negative_space_around_the_main_color_event;
+    avoid_equal_saturation_on_every_object.'
+  evidence:
+    source_ids:
+    - source-floral-reference-01
+    - source-floral-reference-02
+    - source-floral-reference-03
+    basis: curatorial_inference
+    visual_review: pending
+- id: color-system
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: primary_rule: one_decisive_high_chroma_pair_plus_one_neutral_counter-ground;
+    pair_families: blue_yellow; pair_families: teal_pink; pair_families: orange_navy; pair_families: turquoise_cream;
+    pair_families: red_pale_warm; pair_families: brown_beige; pair_families: deep_blue_mist. Adapt their balance
+    to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: primary_rule: one_decisive_high_chroma_pair_plus_one_neutral_counter-ground;
+    pair_families: blue_yellow; pair_families: teal_pink; pair_families: orange_navy; pair_families: turquoise_cream;
+    pair_families: red_pale_warm; pair_families: brown_beige; pair_families: deep_blue_mist.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    primary_rule: one_decisive_high_chroma_pair_plus_one_neutral_counter-ground; pair_families: blue_yellow;
+    pair_families: teal_pink; pair_families: orange_navy; pair_families: turquoise_cream; pair_families: red_pale_warm;
+    pair_families: brown_beige; pair_families: deep_blue_mist.'
+  evidence:
+    source_ids:
+    - source-floral-reference-01
+    - source-floral-reference-02
+    - source-floral-reference-03
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface-and-light
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: controlled_studio_or_even_daylight; matte_or_naturally_textured_surfaces_preferred;
+    clean_edges_with_local_material_detail; avoid_glossy_cgi_reflections_and_global_vintage_wash. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: controlled_studio_or_even_daylight;
+    matte_or_naturally_textured_surfaces_preferred; clean_edges_with_local_material_detail; avoid_glossy_cgi_reflections_and_global_vintage_wash.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: controlled_studio_or_even_daylight;
+    matte_or_naturally_textured_surfaces_preferred; clean_edges_with_local_material_detail; avoid_glossy_cgi_reflections_and_global_vintage_wash.'
+  evidence:
+    source_ids:
+    - source-floral-reference-01
+    - source-floral-reference-02
+    - source-floral-reference-03
+    basis: curatorial_inference
+    visual_review: pending
+- id: subject-behavior
+  axis: subject
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: subject_may_be_flower_still_life_object_portrait_landscape_or_abstract_form;
+    content_remains_secondary_to_the_color_relationship; silhouette_and_material_must_remain_readable. Keep
+    it subordinate to the requested subject and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: subject_may_be_flower_still_life_object_portrait_landscape_or_abstract_form;
+    content_remains_secondary_to_the_color_relationship; silhouette_and_material_must_remain_readable.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: subject_may_be_flower_still_life_object_portrait_landscape_or_abstract_form;
+    content_remains_secondary_to_the_color_relationship; silhouette_and_material_must_remain_readable.'
+  evidence:
+    source_ids:
+    - source-floral-reference-01
+    - source-floral-reference-02
+    - source-floral-reference-03
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- color-system
+- surface-and-light
+- subject-behavior
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - color-system
+  - surface-and-light
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-floral-reference-01
+  kind: primary
+  base_asset_id: floral-reference-01
+- id: source-floral-reference-02
+  kind: primary
+  base_asset_id: floral-reference-02
+- id: source-floral-reference-03
+  kind: primary
+  base_asset_id: floral-reference-03
+- id: source-floral-reference-04
+  kind: primary
+  base_asset_id: floral-reference-04
+- id: source-floral-reference-05
+  kind: primary
+  base_asset_id: floral-reference-05
+- id: source-floral-reference-06
+  kind: primary
+  base_asset_id: floral-reference-06
+- id: source-palette-reference-01
+  kind: details
+  base_asset_id: palette-reference-01
+- id: source-palette-reference-02
+  kind: details
+  base_asset_id: palette-reference-02
+execution:
+  route: text_only
+  must:
+  - the_selected_pair_survives_downsampling
+  - primary_and_counter_colors_are_not_muddy
+  - background_supports_rather_than_competes_with_the_pair
+  - the_image_is_not_forced_into_a_flower_only_template
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
