@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: matisse-cut-paper-color-construction
 name: Matisse cut-paper color construction
@@ -23,6 +23,17 @@ scope:
     - Keep the requested subject, count, action, and setting recognizable after shape simplification.
     - Do not add a recurring plant, sea creature, figure, or cutout motif unless the user requests it.
     - Treat paper edges as flat cut forms; do not imply a physically buildable paper sculpture.
+contexts:
+  - id: cut-paper-color-construction
+    description: A flat cut-paper-inspired illustration with opaque color shapes.
+  - id: photorealistic-render
+    description: A photographic or photorealistic rendering.
+  - id: volumetric-oil-impasto
+    description: A three-dimensional oil-painted treatment with thick impasto.
+  - id: metallic-ornamental-portrait
+    description: A portrait defined by metallic ornament or decorative filigree.
+  - id: strong-color-relationships-requested
+    description: The subject and brief allow vivid, high-contrast flat color areas.
 pillars:
   - Translate the requested silhouette into a small number of broad, decisive, flat color shapes with clean, hand-cut-like edges.
   - Use opaque, matte gouache-like color fields with minimal internal shading; let color and contour work together as one construction.
@@ -60,6 +71,8 @@ rules:
   - id: vivid-color-interval-and-rhythm
     axis: palette_and_rhythm
     importance: supporting
+    when_contexts:
+      - strong-color-relationships-requested
     applies_when: The requested image allows strong color relationships.
     instruction: Distribute a compact set of vivid, flat color areas with varied size and spacing; use contrast and interval to move the eye without imposing an unrelated palette on the requested subject.
     observable: Color areas feel lively but measured, with clear separation and no reliance on metallic sheen or gradient lighting.

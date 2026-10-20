@@ -36,12 +36,12 @@ See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references
 
 ## New architecture: cut-paper color and positive-negative rhythm (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) applies only when `cut-paper-color-construction` is explicitly declared. It abstracts Matisse's late cut-outs into a few opaque flat color shapes, crisp scissor-like edges, intentionally composed negative space, and varied color intervals. The generated image must still preserve the requested subject's silhouette and count.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and applies only when `cut-paper-color-construction` is explicitly declared. It abstracts Matisse's late cut-outs into a few opaque flat color shapes, crisp scissor-like edges, and intentionally composed negative space. The vivid-color rule activates only when the caller declares `strong-color-relationships-requested`. The generated image must still preserve the requested subject's silhouette and count.
 
 Unlike Klimt's modeled figures beside gold ornament and patterned fields, this direction builds the whole image from silhouette, flat color, and open space. It also differs from Moreau's fine arabesque line and mysterious detail: the focus here is simplified shape and color, with no default paper-cut plants, sea creatures, or figures.
 
 ```powershell
-python tools/compile-style.py style-packages/artists/henri-matisse --direction package --context cut-paper-color-construction --subject "One yellow pear on a plain pale-blue tabletop"
+python tools/compile-style.py style-packages/artists/henri-matisse --direction package --context cut-paper-color-construction --context strong-color-relationships-requested --subject "One yellow pear on a plain pale-blue tabletop"
 ```
 
 [`comparisons/`](comparisons/) holds the compiled legacy and new-direction jobs, generation prompts, and sample images. Visual review is pending, so this direction remains experimental.
