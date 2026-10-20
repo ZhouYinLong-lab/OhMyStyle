@@ -91,10 +91,10 @@ figures, text, trademark, or logo.
 
 ## New architecture: architectural light and spatial distance (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) separates Hopper's direction into large planes of ordinary architecture, cast-shadow geometry from a single light source, and restrained distance between people and place. Stillness comes from viewpoint, openings, blank walls, and shadows; diners, lighthouses, and solitary window figures are not defaults. Cross-subject visual review is pending; the legacy package and default prompt remain intact.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and separates Hopper's direction into large planes of ordinary architecture, cast-shadow geometry from a single light source, and restrained distance between people and place. The daylight-shadow rule applies only with `directional-daylight-or-window-light`; `visible-human-presence` controls the supporting rule about people and place. Stillness comes from viewpoint, openings, blank walls, and shadows; diners, lighthouses, and solitary window figures are not defaults. Cross-subject visual review is pending; the legacy package and default prompt remain intact.
 
 ```powershell
-python tools/compile-style.py style-packages/artists/edward-hopper --direction package --subject "A closed neighborhood bakery at noon, with a bicycle leaning outside" --output runs/style-v2/hopper-job.json
+python tools/compile-style.py style-packages/artists/edward-hopper --direction package --context directional-daylight-or-window-light --context visible-human-presence --subject "A closed neighborhood bakery at noon, with a bicycle leaning outside" --output runs/style-v2/hopper-job.json
 ```
 
 Compilation creates a task for an image tool and does not call a model. Whitney and Art Institute of Chicago sources support the observations about geometric architecture, directional sunlight, cast shadows, and restrained narrative.

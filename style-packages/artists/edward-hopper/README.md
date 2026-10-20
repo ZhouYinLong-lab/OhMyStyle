@@ -72,10 +72,10 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 新架构：建筑光影与空间距离（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 把霍普方向拆为日常建筑的大色面、单一光源形成的投影几何，以及人物和空间之间的克制距离。静默感由取景、门窗、空墙和影子共同产生，不默认添加餐馆、灯塔或窗边独坐者。该方向仍待跨题材视觉评审；旧包和默认 Prompt 保持原样。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，把霍普方向拆为日常建筑的大色面、单一光源形成的投影几何，以及人物和空间之间的克制距离。只有调用者声明 `directional-daylight-or-window-light` 时，才应用日光投影规则；`visible-human-presence` 控制人物和场所关系的辅助规则。静默感由取景、门窗、空墙和影子共同产生，不默认添加餐馆、灯塔或窗边独坐者。该方向仍待跨题材视觉评审；旧包和默认 Prompt 保持原样。
 
 ```powershell
-python tools/compile-style.py style-packages/artists/edward-hopper --direction package --subject "A closed neighborhood bakery at noon, with a bicycle leaning outside" --output runs/style-v2/hopper-job.json
+python tools/compile-style.py style-packages/artists/edward-hopper --direction package --context directional-daylight-or-window-light --context visible-human-presence --subject "A closed neighborhood bakery at noon, with a bicycle leaning outside" --output runs/style-v2/hopper-job.json
 ```
 
 编译只生成待提交给生图工具的任务，不会自动调用模型。惠特尼与芝加哥艺术博物馆的资料支持本方向对几何建筑、方向日光、投影及克制叙事的观察。

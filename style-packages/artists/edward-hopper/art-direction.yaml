@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: hopper-geometric-light-and-distance
 name: Hopper geometric light and distance
@@ -14,6 +14,15 @@ scope:
   limitations:
     - Follow the requested subject and setting; do not default to a diner, lighthouse, empty storefront, or solitary woman at a window.
     - Quiet tension should come from the arrangement of people, openings, and light rather than exaggerated facial emotion or a copied cinematic frame.
+contexts:
+  - id: diffuse-global-glow
+    description: A lighting treatment based on uniform glow without a clear direction.
+  - id: theatrical-expressionist-distortion
+    description: A deliberately distorted theatrical scene with expressionist forms.
+  - id: directional-daylight-or-window-light
+    description: Daylight or window light is the requested dominant light source.
+  - id: visible-human-presence
+    description: People, thresholds, or signs of recent human activity are visible in the requested scene.
 pillars:
   - Reduce architecture and ordinary spaces to clear, large planes and a deliberate viewpoint.
   - Let a single directional light source carve readable shapes across walls, floors, and objects.
@@ -36,6 +45,8 @@ rules:
   - id: directional-light-shadow-geometry
     axis: lighting
     importance: core
+    when_contexts:
+      - directional-daylight-or-window-light
     applies_when: always
     instruction: Choose one clear daylight or window-light direction and make its illuminated planes and cast shadows agree across the scene; keep warm and cool colors attached to lit and shaded surfaces.
     observable: Shadow edges reveal the light direction, and distinct color temperatures preserve form without a golden wash.
@@ -50,6 +61,8 @@ rules:
   - id: quiet-distance-and-selective-detail
     axis: narrative
     importance: supporting
+    when_contexts:
+      - visible-human-presence
     applies_when: The scene includes people, thresholds, or visible signs of recent human activity.
     instruction: Express stillness through spacing, orientation, barriers, and restrained detail; imply human presence without forcing a dramatic gesture.
     observable: The viewer can read the relationship or separation between figure and place even when faces and small objects remain understated.
