@@ -92,8 +92,8 @@ python tools/compile-style.py style-packages/game-art/ascii-character-game-art -
 python tools/render-ascii-grid.py runs/style-v2/ascii-job.json --source style-packages/game-art/ascii-character-game-art/examples/ascii-cave-grid.txt --font C:/Windows/Fonts/consola.ttf --output runs/style-v2/ascii-cave-render
 ```
 
-渲染器只从字符源画出字符，不会补画网格外的轮廓、阴影或纹理。需要新题材时，先创作并检查字符源，再运行栅格器。当前方向固定 100 列、36 行；主体可读性和新题材迁移效果仍待人工评审。
+渲染器只从字符源画出字符，不会补画网格外的轮廓、阴影或纹理。需要新题材时，先创作并检查字符源，再运行栅格器。当前方向固定 100 列、36 行；[三项预设题材的严格网格试验](evidence/literal-grid-pilot/README.md)通过了字符集、网格尺寸、任务可读性和同源重渲染一致性检查，但只覆盖每项一个手工编排源网格，不证明风格优势或跨题材稳定性。
 
 ## 新架构渲染样例
 
-[查看严格逐格栅格化的洞穴样图](examples/generated/README.md)。样图由字符源和等宽字体确定性渲染；这证明本例遵守字面字符构建约束，不代表其他题材或整体风格质量已验收。
+[查看严格逐格栅格化的洞穴样图](examples/generated/README.md)。样图由字符源和等宽字体确定性渲染；另有[三项预设题材的网格构建试验](evidence/literal-grid-pilot/README.md)，它们只验证样例的字面字符构建与基本可读性，不代表其他题材或整体风格质量已验收。

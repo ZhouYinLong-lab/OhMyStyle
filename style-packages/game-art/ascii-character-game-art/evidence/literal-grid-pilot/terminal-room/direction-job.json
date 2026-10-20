@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "ascii_grid_construction",
+  "package": {
+    "id": "ascii-character-game-art",
+    "name": "ASCII 字符游戏美术",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\ascii-character-game-art"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "一个房间内有两把椅子和一扇窗；对象由真实 ASCII 字符构建。",
+  "prompt": "USER SUBJECT: 一个房间内有两把椅子和一扇窗；对象由真实 ASCII 字符构建。\nSUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.\nVISUAL MEDIUM: ascii_glyph_grid\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [ascii-literal-construction] Create a row-by-row character source first, then rasterize it in a fixed grid with a monospaced font.\n- [ascii-density-hierarchy] Use glyph density, negative space, and permitted foreground brightness to distinguish the subject, paths, and distance.\n- [ascii-grid-alignment] Pad every row consistently to the fixed column count and align each glyph to one cell; do not vary font size locally to fake depth.\n- [ascii-glyph-layout-readability] Keep the new subject readable through glyph density and negative space while preserving literal characters and a uniform grid.\nREQUIREMENT: Build every scene shape from literal printable ASCII glyphs in fixed cells.\nREQUIREMENT: Keep requested object count and layout readable.\nREQUIREMENT: Return only the source grid for the deterministic rasterizer.\nReturn a literal printable-ASCII grid with 36 rows and at most 100 columns per row. Pad missing right-hand cells with spaces. Every scene shape must be a glyph; rasterize the grid without image-model repainting.",
+  "negative_prompt": "paintings decorated with character textures\nrandom character noise obscuring the subject\nproportional fonts or local character stretching\nimage-model repainting\nfake characters or text overlays on a painting\nindependent shadows, outlines, gradients, or figures outside the glyph grid",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "literal-ascii-grid",
+    "name": "Literal ASCII character grid",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\ascii-character-game-art\\art-direction.yaml",
+    "sha256": "30985c147ce2b8213d270c84e3eddd95f043e43332cddbdb16ea62cabf4e0947",
+    "active_rule_ids": [
+      "ascii-literal-construction",
+      "ascii-density-hierarchy",
+      "ascii-grid-alignment"
+    ],
+    "applicable_rule_ids": [
+      "ascii-literal-construction",
+      "ascii-density-hierarchy",
+      "ascii-grid-alignment"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [
+      "literal-ascii-grid-construction"
+    ],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "deterministic_grid",
+    "must": [
+      "Build every scene shape from literal printable ASCII glyphs in fixed cells.",
+      "Keep requested object count and layout readable.",
+      "Return only the source grid for the deterministic rasterizer."
+    ],
+    "avoid": [
+      "image-model repainting",
+      "fake characters or text overlays on a painting",
+      "independent shadows, outlines, gradients, or figures outside the glyph grid"
+    ],
+    "grid": {
+      "columns": 100,
+      "rows": 36,
+      "width": 1280,
+      "height": 720,
+      "margin": 12,
+      "font_size": 18,
+      "foreground": "#A9B9BF",
+      "background": "#0A0E13",
+      "glyph_colors": {
+        "#": "#74828B",
+        "@": "#C2D2DA",
+        "+": "#FFDB89",
+        "*": "#FFDB89",
+        ".": "#536570"
+      }
+    }
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "ascii_glyph_grid",
+      "representation": "stylized",
+      "description": "Construct the complete game scene from literal printable ASCII glyphs placed in a fixed grid, then rasterize each glyph cell deterministically.",
+      "required_contexts": [
+        "literal-ascii-grid-construction"
+      ],
+      "incompatible_contexts": [
+        "image-repainting",
+        "unicode-art"
+      ],
+      "limitations": [
+        "The selected character set does not include Chinese, block-drawing characters, or emoji.",
+        "Do not ask a standard image generator to repaint the grid or add pictorial detail."
+      ]
+    },
+    "pillars": [
+      "Every visible scene shape is made from literal characters.",
+      "Fixed cells and glyph density organize silhouettes, space, and depth.",
+      "Foreground, environment, and important interactions remain readable within the permitted glyph and color budget."
+    ],
+    "rules": [
+      {
+        "id": "ascii-literal-construction",
+        "axis": "process",
+        "importance": "core",
+        "when_contexts": [
+          "literal-ascii-grid-construction"
+        ],
+        "applies_when": "always",
+        "instruction": "Create a row-by-row character source first, then rasterize it in a fixed grid with a monospaced font.",
+        "observable": "Every scene mark can be traced to a specific row, column, and glyph.",
+        "reject_when": "The image is a conventional painting with a glyph texture, or contains independent graphics outside the grid.",
+        "evidence": {
+          "source_ids": [
+            "ascii-package-source-grid",
+            "ascii-package-renderer"
+          ],
+          "basis": "original_design_intent",
+          "visual_review": "pending"
+        },
+        "avoid": "paintings decorated with character textures"
+      },
+      {
+        "id": "ascii-density-hierarchy",
+        "axis": "value",
+        "importance": "core",
+        "when_contexts": [
+          "literal-ascii-grid-construction"
+        ],
+        "applies_when": "always",
+        "instruction": "Use glyph density, negative space, and permitted foreground brightness to distinguish the subject, paths, and distance.",
+        "observable": "The main subject reads at thumbnail size, and enlarged regions remain composed of separate character cells.",
+        "reject_when": "Random glyph noise obscures the subject, or color alone separates every important object.",
+        "evidence": {
+          "source_ids": [
+            "ascii-package-source-grid"
+          ],
+          "basis": "original_design_intent",
+          "visual_review": "pending"
+        },
+        "avoid": "random character noise obscuring the subject"
+      },
+      {
+        "id": "ascii-grid-alignment",
+        "axis": "layout",
+        "importance": "core",
+        "when_contexts": [
+          "literal-ascii-grid-construction"
+        ],
+        "applies_when": "always",
+        "instruction": "Pad every row consistently to the fixed column count and align each glyph to one cell; do not vary font size locally to fake depth.",
+        "observable": "Row and column coordinates remain stable, while spatial differences come from symbols and layout.",
+        "reject_when": "A proportional font breaks alignment, or local stretching distorts glyphs into shapes.",
+        "evidence": {
+          "source_ids": [
+            "ascii-package-renderer"
+          ],
+          "basis": "original_design_intent",
+          "visual_review": "pending"
+        },
+        "avoid": "proportional fonts or local character stretching"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "ascii-glyph-layout-readability",
+        "rule_ids": [
+          "ascii-literal-construction",
+          "ascii-density-hierarchy",
+          "ascii-grid-alignment"
+        ],
+        "instruction": "Keep the new subject readable through glyph density and negative space while preserving literal characters and a uniform grid.",
+        "observable": "The subject is recognizable, every mark belongs to a glyph cell, and the grid stays aligned."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ascii-package-source-grid",
+        "kind": "project_authored_source_artifact",
+        "local_path": "examples/ascii-cave-grid.txt",
+        "sha256": "a9357d43a1114f57b6524370798758022998f6cc2110dba9fe17071004063c49"
+      },
+      {
+        "id": "ascii-package-renderer",
+        "kind": "project_authored_renderer",
+        "local_path": "render_gallery.py",
+        "sha256": "14b5a026fa15e201ec840ac749d4c4cdb18379523a534a42c2f87426b51670aa"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "746c9a609dcd8b14e2c52dbc0fbff2f32d3587f2e0ac62f37b7d9be089d75b6f",
+    "negative_prompt_sha256": "9724676d82e72506717c3f3a63654fad65274bc0534a28cd5d4dd99b07b66bf6",
+    "direction_sha256": "30985c147ce2b8213d270c84e3eddd95f043e43332cddbdb16ea62cabf4e0947",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

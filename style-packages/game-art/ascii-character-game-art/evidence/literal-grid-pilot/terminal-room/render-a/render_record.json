@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "route": "deterministic_grid",
+  "created_at": "2026-10-20T12:37:52.614102+00:00",
+  "subject": "一个房间内有两把椅子和一扇窗；对象由真实 ASCII 字符构建。",
+  "art_direction": {
+    "id": "literal-ascii-grid",
+    "name": "Literal ASCII character grid",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\ascii-character-game-art\\art-direction.yaml",
+    "sha256": "30985c147ce2b8213d270c84e3eddd95f043e43332cddbdb16ea62cabf4e0947",
+    "active_rule_ids": [
+      "ascii-literal-construction",
+      "ascii-density-hierarchy",
+      "ascii-grid-alignment"
+    ],
+    "applicable_rule_ids": [
+      "ascii-literal-construction",
+      "ascii-density-hierarchy",
+      "ascii-grid-alignment"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [
+      "literal-ascii-grid-construction"
+    ],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "grid": {
+    "columns": 100,
+    "rows": 36,
+    "width": 1280,
+    "height": 720,
+    "margin": 12,
+    "font_size": 18,
+    "foreground": "#A9B9BF",
+    "background": "#0A0E13",
+    "glyph_colors": {
+      "#": "#74828B",
+      "@": "#C2D2DA",
+      "+": "#FFDB89",
+      "*": "#FFDB89",
+      ".": "#536570"
+    }
+  },
+  "occupied_cells": 255,
+  "source": {
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\ascii-character-game-art\\evidence\\literal-grid-pilot\\terminal-room\\source_grid.txt",
+    "sha256": "585e964fd19b9d456e2c80eca7b6dc7d9d64e4f9a1a99e3e662c517ba545f654",
+    "normalized_sha256": "bbc9dbf334147663a18fb93ff4abd8360bccc5adb7cc8c1d2ab2cc22928d4194"
+  },
+  "font": {
+    "path": "C:\\Windows\\Fonts\\consola.ttf",
+    "sha256": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+    "name": [
+      "Consolas",
+      "Regular"
+    ]
+  },
+  "renderer": {
+    "sha256": "07d906d4b32b477fb876436e393cf9f41d73cb4694eb48e8deba6b98c32390b4",
+    "pillow": "12.3.0",
+    "python": "3.13.12",
+    "cell_width": 12.56,
+    "cell_height": 19.333333333333332,
+    "anchor": "ls",
+    "glyph_offset": [
+      1,
+      14
+    ]
+  },
+  "output": {
+    "file": "master.png",
+    "sha256": "959f8614994cbf3feb2eb6da8b9feb3131325c79e84900b5daac91eec6fa250e",
+    "rgb_pixels_sha256": "1846af0b36f7dfdb70a53e7e43d69e74618e7b04a747cf5cf62908038f16e7ca"
+  },
+  "review": {
+    "status": "passed_basic_task_readability",
+    "reviewer_count": 1,
+    "review_method": "direct visual inspection of rendered master image",
+    "scope": "requested object count and layout, literal glyph-only construction",
+    "note": "Two separate chairs and one divided window are visible; no extra furniture appears. All geometry is rendered from grid glyphs.",
+    "limitations": "Does not establish aesthetic preference, cross-subject stability, or a legacy-versus-direction advantage."
+  }
+}

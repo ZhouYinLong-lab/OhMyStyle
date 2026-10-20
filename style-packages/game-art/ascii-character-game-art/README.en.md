@@ -118,8 +118,8 @@ python tools/compile-style.py style-packages/game-art/ascii-character-game-art -
 python tools/render-ascii-grid.py runs/style-v2/ascii-job.json --source style-packages/game-art/ascii-character-game-art/examples/ascii-cave-grid.txt --font C:/Windows/Fonts/consola.ttf --output runs/style-v2/ascii-cave-render
 ```
 
-The renderer draws only the characters in the source grid; it does not add contours, shadows, or texture outside the grid. For a new subject, author and inspect its character source before rasterizing. The current direction fixes the grid at 100 columns by 36 rows; subject readability and cross-subject transfer still need human review.
+The renderer draws only the characters in the source grid; it does not add contours, shadows, or texture outside the grid. For a new subject, author and inspect its character source before rasterizing. The direction fixes the grid at 100 columns by 36 rows. The [three-task literal-grid pilot](evidence/literal-grid-pilot/README.md) passed character-set, grid-size, basic task-readability, and same-source replay checks, but covers only one hand-authored grid per task and does not establish a style advantage or cross-subject stability.
 
 ## New architecture render sample
 
-[View the deterministic character-grid render](examples/generated/README.md). It is rasterized from the literal source grid with a monospaced font. This verifies the construction constraint for this sample, not generalization or overall style quality.
+[View the deterministic character-grid render](examples/generated/README.md). It is rasterized from the literal source grid with a monospaced font. The [three-task literal-grid pilot](evidence/literal-grid-pilot/README.md) adds limited construction checks; neither artifact establishes generalization or overall style quality.

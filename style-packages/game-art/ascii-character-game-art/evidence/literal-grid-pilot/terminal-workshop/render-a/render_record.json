@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "route": "deterministic_grid",
+  "created_at": "2026-10-20T12:37:49.290484+00:00",
+  "subject": "一个房间内有一张桌子、一个箱子和一个门口；对象由真实 ASCII 字符构建。",
+  "art_direction": {
+    "id": "literal-ascii-grid",
+    "name": "Literal ASCII character grid",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\ascii-character-game-art\\art-direction.yaml",
+    "sha256": "30985c147ce2b8213d270c84e3eddd95f043e43332cddbdb16ea62cabf4e0947",
+    "active_rule_ids": [
+      "ascii-literal-construction",
+      "ascii-density-hierarchy",
+      "ascii-grid-alignment"
+    ],
+    "applicable_rule_ids": [
+      "ascii-literal-construction",
+      "ascii-density-hierarchy",
+      "ascii-grid-alignment"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [
+      "literal-ascii-grid-construction"
+    ],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "grid": {
+    "columns": 100,
+    "rows": 36,
+    "width": 1280,
+    "height": 720,
+    "margin": 12,
+    "font_size": 18,
+    "foreground": "#A9B9BF",
+    "background": "#0A0E13",
+    "glyph_colors": {
+      "#": "#74828B",
+      "@": "#C2D2DA",
+      "+": "#FFDB89",
+      "*": "#FFDB89",
+      ".": "#536570"
+    }
+  },
+  "occupied_cells": 250,
+  "source": {
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\ascii-character-game-art\\evidence\\literal-grid-pilot\\terminal-workshop\\source_grid.txt",
+    "sha256": "78967f8110a3eb73a390eaa410a12d89bb1938141886b9ee861d6759ffee887f",
+    "normalized_sha256": "fadcdae3f612511570b8e44d06daecb13f16dade75d6d880d8c7f69ef301589a"
+  },
+  "font": {
+    "path": "C:\\Windows\\Fonts\\consola.ttf",
+    "sha256": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+    "name": [
+      "Consolas",
+      "Regular"
+    ]
+  },
+  "renderer": {
+    "sha256": "07d906d4b32b477fb876436e393cf9f41d73cb4694eb48e8deba6b98c32390b4",
+    "pillow": "12.3.0",
+    "python": "3.13.12",
+    "cell_width": 12.56,
+    "cell_height": 19.333333333333332,
+    "anchor": "ls",
+    "glyph_offset": [
+      1,
+      14
+    ]
+  },
+  "output": {
+    "file": "master.png",
+    "sha256": "8fe8f228b0fe0ed976fb0ae4da66fd1f68dec64de9bca1ebfed758e97be1d119",
+    "rgb_pixels_sha256": "71660f115cc032459a5cdb88a996e336dc822508fbf22e773d05217fcb67ce2e"
+  },
+  "review": {
+    "status": "passed_basic_task_readability",
+    "reviewer_count": 1,
+    "review_method": "direct visual inspection of rendered master image",
+    "scope": "requested object count and layout, literal glyph-only construction",
+    "note": "One readable tabletop, one closed box, and one framed doorway; no extra scene objects. All geometry is rendered from grid glyphs.",
+    "limitations": "Does not establish aesthetic preference, cross-subject stability, or a legacy-versus-direction advantage."
+  }
+}
