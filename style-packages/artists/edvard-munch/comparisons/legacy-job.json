@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "edvard-munch",
+    "name": "爱德华·蒙克",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edvard-munch"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A tired traveler sitting in a quiet room beside a closed window",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A tired traveler sitting in a quiet room beside a closed window\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original expressionist oil painting of A tired traveler sitting in a quiet room beside a closed window in the user-requested setting. Treat\nthe setting as a psychological landscape: compress or gently tilt the space, let\nshorelines, paths, rails, branches, or sky bands become long undulating rhythms,\nand allow the environment to share the figure's tension. Use rust red, acid\nochre, deep blue, green-black, and unstable dirty flesh tones; non-natural color\nmust express an inner condition rather than decorate the scene. Simplify detail\ninto symbolic masses and retain broad uneven loaded marks, enclosing contours,\nand visible support. The figure is anonymous and psychologically specific. Make\na new scene and pose, not an iconic scream, famous composition, or horror filter.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "decorative color harmony, cheerful poster, random distortion, horror movie filter,\nphotorealism, smooth digital painting, copied iconic pose, recognizable artwork\nrecreation, artist signature, watermark, logo, text",
+  "template_variables": {
+    "SUBJECT": "A tired traveler sitting in a quiet room beside a closed window",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "psychological-expressionist-scene": {
+        "required": [
+          "local color relationships reinforce the user's stated emotional tone",
+          "selected environmental rhythms connect the subject and setting",
+          "spatial emphasis remains readable and tied to the requested scene"
+        ],
+        "reject_if": [
+          "panic, isolation, shoreline, bridge, or sunset appears without request",
+          "a global color wash or uniform wavy contour replaces local form",
+          "The Scream or another named composition is reconstructed"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "Historical works are bundled from public-domain reproductions; the generated example is an anonymous new scene.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

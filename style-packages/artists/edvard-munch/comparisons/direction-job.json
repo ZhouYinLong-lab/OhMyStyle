@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "edvard-munch",
+    "name": "爱德华·蒙克",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edvard-munch"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A tired traveler sitting in a quiet room beside a closed window",
+  "prompt": "USER SUBJECT: A tired traveler sitting in a quiet room beside a closed window\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [subjective-color-relationships] Choose a limited set of color relationships that reinforce the requested mood and attach each color to a clear form or spatial role; preserve local distinctions among figures, objects, and setting.\n- [subject-environment-line-rhythm] Let selected contours or paint strokes echo a directional rhythm already present in the setting, linking subject and environment; vary the rhythm by form and leave calm passages where the scene needs rest.\n- [selective-spatial-compression] Simplify overlaps and compress selected distances around the focal relationship, but retain enough perspective, edges, or landmarks to make the requested setting identifiable.\n- [color-rhythm-space-coherence] Let local color, environmental rhythm, and selective spatial compression reinforce the requested emotional relationship without inventing a narrative or motif.\nREQUIREMENT: Declare the psychological-expressionist-scene context before applying this direction.\nREQUIREMENT: Preserve the user's stated emotional tone, subject, setting, and figure count.\nREQUIREMENT: Use color and directional rhythm locally to connect the requested subject and environment.\nREQUIREMENT: Compress spatial planes only where they clarify the focal relationship.",
+  "negative_prompt": "universal sunset palettes, global color washes, and unrequested distress\nuniform wave patterns, arbitrary contour distortion, and unrelated striping\narbitrary perspective warp, generic dream fog, and copied compositions\nadding a lone figure, bridge, shoreline, sunset, or panic expression without request\napplying the same color or undulating contour across every surface\nreproducing The Scream or another named arrangement",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "munch-subjective-color-and-environmental-rhythm",
+    "name": "Munch subjective color and environmental rhythm",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edvard-munch\\art-direction.yaml",
+    "sha256": "d8a608d416681112adb24dbf17d9779de3388e2c377b96bf2e9ac01ff35013ff",
+    "active_rule_ids": [
+      "subjective-color-relationships",
+      "subject-environment-line-rhythm",
+      "selective-spatial-compression"
+    ],
+    "contexts": [
+      "psychological-expressionist-scene"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare the psychological-expressionist-scene context before applying this direction.",
+      "Preserve the user's stated emotional tone, subject, setting, and figure count.",
+      "Use color and directional rhythm locally to connect the requested subject and environment.",
+      "Compress spatial planes only where they clarify the focal relationship."
+    ],
+    "avoid": [
+      "adding a lone figure, bridge, shoreline, sunset, or panic expression without request",
+      "applying the same color or undulating contour across every surface",
+      "reproducing The Scream or another named arrangement"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "A focused direction based on selected paintings and prints from Munch's 1890s Symbolist and Expressionist practice. Psychological emphasis comes from a small set of expressive color relationships and recurring curves that connect subject and environment. Space may compress around the emotional focus, while enough setting remains legible to ground the scene. The direction does not prescribe anxiety, a lone figure, a shoreline, a sunset, or any iconic image.",
+      "required_contexts": [
+        "psychological-expressionist-scene"
+      ],
+      "incompatible_contexts": [
+        "photorealistic-rendering",
+        "decorative-fauvist-color-only",
+        "copied-iconic-composition"
+      ],
+      "limitations": [
+        "Preserve the user's requested emotional tone, subject, identities, action, setting, and count; do not add distress, isolation, a shoreline, a bridge, or a sunset unless requested.",
+        "Use non-natural color only to clarify an intended emotional relationship; do not impose red, orange, or blue as a universal palette.",
+        "Keep environmental distortion selective and readable; do not bend faces, objects, or perspective arbitrarily."
+      ]
+    },
+    "rules": [
+      {
+        "id": "subjective-color-relationships",
+        "axis": "palette_and_emotional_focus",
+        "importance": "core",
+        "applies_when": "The user requests a psychological or emotionally expressive painted scene.",
+        "instruction": "Choose a limited set of color relationships that reinforce the requested mood and attach each color to a clear form or spatial role; preserve local distinctions among figures, objects, and setting.",
+        "observable": "Color changes the emotional temperature of the scene while the depicted forms remain distinct and the palette does not behave like a global filter.",
+        "reject_when": "Saturation is used as decoration, a single hue coats unrelated forms, or an invented emotional tone overrides the brief.",
+        "evidence": {
+          "source_ids": [
+            "munch-nationalmuseum-melancholy",
+            "munch-nga-symbols-images"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "universal sunset palettes, global color washes, and unrequested distress"
+      },
+      {
+        "id": "subject-environment-line-rhythm",
+        "axis": "line_and_environment",
+        "importance": "core",
+        "applies_when": "The scene contains a figure or object against an environment with repeated directional forms.",
+        "instruction": "Let selected contours or paint strokes echo a directional rhythm already present in the setting, linking subject and environment; vary the rhythm by form and leave calm passages where the scene needs rest.",
+        "observable": "At least one visual path connects subject and setting, while contours remain attached to forms and the whole image does not become a repeated wave pattern.",
+        "reject_when": "Every contour undulates equally, decorative bands ignore the setting, or environmental lines obscure the requested subject.",
+        "evidence": {
+          "source_ids": [
+            "munch-nationalmuseum-melancholy",
+            "munch-nga-two-women-shore"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform wave patterns, arbitrary contour distortion, and unrelated striping"
+      },
+      {
+        "id": "selective-spatial-compression",
+        "axis": "spatial_composition",
+        "importance": "core",
+        "applies_when": "The requested scene benefits from a psychologically heightened relationship between a subject and its surroundings.",
+        "instruction": "Simplify overlaps and compress selected distances around the focal relationship, but retain enough perspective, edges, or landmarks to make the requested setting identifiable.",
+        "observable": "Space feels deliberately heightened around the subject, yet the scene remains grounded in the user's actual setting.",
+        "reject_when": "Perspective collapses without a clear focal reason, the setting becomes an invented symbolic landscape, or an iconic arrangement is reproduced.",
+        "evidence": {
+          "source_ids": [
+            "munch-nga-symbols-images",
+            "munch-nationalmuseum-melancholy"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "arbitrary perspective warp, generic dream fog, and copied compositions"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "color-rhythm-space-coherence",
+        "rule_ids": [
+          "subjective-color-relationships",
+          "subject-environment-line-rhythm",
+          "selective-spatial-compression"
+        ],
+        "instruction": "Let local color, environmental rhythm, and selective spatial compression reinforce the requested emotional relationship without inventing a narrative or motif.",
+        "observable": "The scene remains recognizable, its emotional focus is visible in color and form, and line and space connect rather than overwhelm the subject."
+      }
+    ],
+    "sources": [
+      {
+        "id": "munch-nationalmuseum-melancholy",
+        "kind": "museum_artwork_analysis",
+        "url": "https://dks.nasjonalmuseet.no/kunstverk/melankoli?media=print"
+      },
+      {
+        "id": "munch-nga-symbols-images",
+        "kind": "museum_catalogue",
+        "url": "https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/research/publications/pdfs/edvard-munch-symbols-images.pdf"
+      },
+      {
+        "id": "munch-nga-two-women-shore",
+        "kind": "museum_artwork_description",
+        "url": "https://www.nga.gov/artworks/56601-two-women-shore"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "d8a608d416681112adb24dbf17d9779de3388e2c377b96bf2e9ac01ff35013ff",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
