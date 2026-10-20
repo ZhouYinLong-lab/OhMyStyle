@@ -56,7 +56,7 @@ See [`provenance.yaml`](provenance.yaml),
 
 ## New architecture: counterposed color-stroke groups (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) activates only for a user-requested abstract brushwork field when `counterposed-color-stroke-groups` is declared. Several groups answer one another through direction, length, and paint thickness; color weight creates movement, while broad ground passages create pauses. The direction does not add a horizon, trees, water, or flowers by default. The Joan Mitchell Foundation documents her varied thick, thin, and linear paint handling and color relationships; the National Gallery of Art describes horizontal brushwork counterposed with diagonal and vertical marks.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and activates only for a user-requested abstract brushwork field when `counterposed-color-stroke-groups` is declared. Brush-group direction and paint weight are base rules; add `open-field-or-visible-unpainted-ground` only when the user permits exposed ground to activate the negative-space rule. The direction does not add a horizon, trees, water, or flowers by default. The Joan Mitchell Foundation documents her varied thick, thin, and linear paint handling and color relationships; the National Gallery of Art describes horizontal brushwork counterposed with diagonal and vertical marks.
 
 This differs from Miró's suspended separate forms and curving sign-like line, and from Pollock's all-over drip web. The Mitchell direction builds rhythm from the color weight and spacing of distinct brush groups, with visible ground between them.
 

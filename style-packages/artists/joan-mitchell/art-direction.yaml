@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: mitchell-counterposed-color-stroke-groups
 name: Mitchell counterposed color-stroke groups
@@ -23,6 +23,17 @@ scope:
     - Preserve any requested subject, color roles, object count, and framing.
     - Do not introduce a horizon, trees, flowers, water, or landscape objects unless requested.
     - Avoid copying a named canvas, panel arrangement, or identifiable stroke pattern.
+contexts:
+  - id: counterposed-color-stroke-groups
+    description: The user requests an abstract painting built from counterposed visible brushstroke groups.
+  - id: all-over-drip-web
+    description: The user requests an all-over drip-web composition.
+  - id: flat-vector-poster
+    description: The user requires a flat vector poster.
+  - id: photorealistic-landscape
+    description: The user requires a photorealistic landscape.
+  - id: open-field-or-visible-unpainted-ground
+    description: The user requests an open abstract field or permits visible unpainted ground.
 pillars:
   - Build several distinct stroke groups with contrasting directions, lengths, and pressure; let one group answer another rather than spreading marks uniformly.
   - Use changes in stroke size, opacity, and paint thickness to give color groups different visual weight and depth.
@@ -32,6 +43,8 @@ rules:
   - id: counterposed-directional-groups
     axis: markmaking_and_composition
     importance: core
+    when_contexts:
+      - counterposed-color-stroke-groups
     applies_when: The user requests a painterly abstract field or a subject treated through visible brush groups.
     instruction: Organize marks into a few distinct families with different directions, such as horizontal sweeps answered by diagonal or vertical strokes; vary scale and pressure within each family and preserve readable intervals between groups.
     observable: The image has several directional brush clusters with a legible counter-rhythm rather than one repeated all-over texture.
@@ -46,6 +59,8 @@ rules:
   - id: paint-weight-and-layer-contrast
     axis: color_and_material
     importance: core
+    when_contexts:
+      - counterposed-color-stroke-groups
     applies_when: The requested treatment relies on color and visible oil-paint handling.
     instruction: Vary paint thickness and opacity across the color groups; reserve a few dense, opaque strokes as anchors, balance them with thinner veils or scumbled passages, and keep each hue attached to its own stroke form.
     observable: Color has different weights and surface depths while remaining tied to discrete marks rather than a global filter.
@@ -59,6 +74,8 @@ rules:
   - id: exposed-ground-pauses
     axis: negative_space_and_rhythm
     importance: supporting
+    when_contexts:
+      - open-field-or-visible-unpainted-ground
     applies_when: The user requests an open abstract field or permits visible unpainted ground.
     instruction: Preserve broad, intentional ground passages between stroke groups; let their shape and width create pauses and counterbalance the denser color areas.
     observable: Ground remains an active compositional element rather than a thin border or a fully covered background.
