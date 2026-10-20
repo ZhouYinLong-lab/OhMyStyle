@@ -4,10 +4,10 @@ id: hard-light-color-blocking-direction
 name: 硬光色块摄影
 base_package: presets/hard-light-color-blocking
 scope:
-  medium: 'name: preset; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
+  medium: a transferable photographic rendering treatment applied to the user-requested capture medium
   representation: stylized
-  description: Organizes images through hard directional light, clear shadows, separated color planes, and
-    material differences without pretending to be the style of a particular photographer or subject.
+  description: Organizes images through hard directional light, clear shadows, separated color planes, and material
+    differences without pretending to be the style of a particular photographer or subject.
   required_contexts: []
   incompatible_contexts: []
   limitations:
@@ -16,22 +16,21 @@ scope:
 pillars:
 - Organizes images through hard directional light, clear shadows, separated color planes, and material differences
   without pretending to be the style of a particular photographer or subject.
-- 'medium: name: preset; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
-- 'composition: priorities: visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer'
-- 'palette: name: hard-light-color-blocking; usage: controlled relationship among dominant, support, shadow,
-  and accent colors; colors: name: color_0; colors: hex: #202126; colors: role: 轮廓与阴影; colors: name: color_1;
-  colors: hex: #1554A6; colors: role: 主色块'
+- 'medium: a transferable photographic rendering treatment applied to the user-requested capture medium'
+- 'composition: Separate the subject, shadow, and background into readable planes; let a hard directional shadow
+  create a clear boundary without imposing a fixed layout.'
+- 'palette: Near-black shadow #202126, blue #1554A6, red #C84B3B, yellow #E8D24C, teal #4C8D87, and warm highlight
+  #E9E4D8 in distinct roles.'
 rules:
 - id: medium
   axis: medium
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: name:
-    preset; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  observable: 'The requested image retains the stated medium distinction or production constraint: name: preset;
-    visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
-    name: preset; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
+  instruction: Render in a transferable photographic rendering treatment applied to the user-requested capture
+    medium; make the production or rendering process visible in edge, surface, and tonal evidence.
+  observable: The image visibly reads as a transferable photographic rendering treatment applied to the user-requested
+    capture medium, rather than a generic color treatment.
+  reject_when: Reject when the material or rendering process cannot be distinguished from a generic filter.
   evidence:
     source_ids:
     - source-source-1
@@ -42,13 +41,12 @@ rules:
   axis: composition
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Organize the requested subject using these package-specific spatial decisions: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer. Preserve
-    the user-provided content and layout.'
-  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: priorities: visual_hierarchy;
-    priorities: negative_space; priorities: subject_independent_style_transfer.'
-  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer.'
+  instruction: Separate the subject, shadow, and background into readable planes; let a hard directional shadow
+    create a clear boundary without imposing a fixed layout. Preserve the user-provided subject and requested
+    layout.
+  observable: Separate the subject, shadow, and background into readable planes; let a hard directional shadow
+    create a clear boundary without imposing a fixed layout.
+  reject_when: Reject when the arrangement loses these structural decisions or copies a source composition.
   evidence:
     source_ids:
     - source-source-1
@@ -59,17 +57,11 @@ rules:
   axis: palette
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: name: hard-light-color-blocking;
-    usage: controlled relationship among dominant, support, shadow, and accent colors; colors: name: color_0;
-    colors: hex: #202126; colors: role: 轮廓与阴影; colors: name: color_1; colors: hex: #1554A6; colors: role: 主色块.
-    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
-  observable: 'The stated colors and their roles are visible and distinguishable: name: hard-light-color-blocking;
-    usage: controlled relationship among dominant, support, shadow, and accent colors; colors: name: color_0;
-    colors: hex: #202126; colors: role: 轮廓与阴影; colors: name: color_1; colors: hex: #1554A6; colors: role: 主色块.'
-  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
-    name: hard-light-color-blocking; usage: controlled relationship among dominant, support, shadow, and accent
-    colors; colors: name: color_0; colors: hex: #202126; colors: role: 轮廓与阴影; colors: name: color_1; colors:
-    hex: #1554A6; colors: role: 主色块.'
+  instruction: Keep dark structure and shadow distinct from saturated color planes, with small warm and neutral
+    accents. Preserve the material color of the requested subject.
+  observable: 'Near-black shadow #202126, blue #1554A6, red #C84B3B, yellow #E8D24C, teal #4C8D87, and warm highlight
+    #E9E4D8 in distinct roles.'
+  reject_when: Reject when a global tint replaces the stated color roles or the roles cannot be distinguished.
   evidence:
     source_ids:
     - source-source-1
@@ -88,8 +80,7 @@ joint_checks:
   - palette
   instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
     the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-source-1
   kind: style_reference
