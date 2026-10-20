@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: woodcut-print-game-art-direction
+name: 木刻版画游戏美术
+base_package: game-art/woodcut-print-game-art
+scope:
+  medium: 刻线模拟刀口、排线和版面转印; 不同区域使用不同线向
+  representation: stylized
+  description: 把明暗译成有方向的刀刻线和黑白色块，使人物、建筑与地表像由版面转印而来。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - sepia filter only
+  - random crosshatching
+  - copied named print
+pillars:
+- 把明暗译成有方向的刀刻线和黑白色块，使人物、建筑与地表像由版面转印而来。
+- 'medium: 刻线模拟刀口、排线和版面转印; 不同区域使用不同线向'
+- 'composition: 主体轮廓由大黑白块建立; 排线方向引导视线和空间'
+- 'palette: 黑、暖纸白和少量强调色; 棕色不是木刻的必要条件'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 刻线模拟刀口、排线和版面转印;
+    不同区域使用不同线向.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 刻线模拟刀口、排线和版面转印;
+    不同区域使用不同线向.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    刻线模拟刀口、排线和版面转印; 不同区域使用不同线向.'
+  evidence:
+    source_ids:
+    - source-woodcut-print-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 主体轮廓由大黑白块建立;
+    排线方向引导视线和空间. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 主体轮廓由大黑白块建立; 排线方向引导视线和空间.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 主体轮廓由大黑白块建立;
+    排线方向引导视线和空间.'
+  evidence:
+    source_ids:
+    - source-woodcut-print-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑、暖纸白和少量强调色; 棕色不是木刻的必要条件. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑、暖纸白和少量强调色; 棕色不是木刻的必要条件.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑、暖纸白和少量强调色; 棕色不是木刻的必要条件.'
+  evidence:
+    source_ids:
+    - source-woodcut-print-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 明暗由线密度和块面对比构成; 不用连续摄影渐变. Keep light coherent with
+    the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 明暗由线密度和块面对比构成; 不用连续摄影渐变.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 明暗由线密度和块面对比构成; 不用连续摄影渐变.'
+  evidence:
+    source_ids:
+    - source-woodcut-print-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 边缘有刻线与纸面压印感;
+    轮廓保持坚实. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 边缘有刻线与纸面压印感;
+    轮廓保持坚实.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    边缘有刻线与纸面压印感; 轮廓保持坚实.'
+  evidence:
+    source_ids:
+    - source-woodcut-print-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 细线沿形体结构组织; 细节密度随尺度递减.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 细线沿形体结构组织;
+    细节密度随尺度递减.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    细线沿形体结构组织; 细节密度随尺度递减.'
+  evidence:
+    source_ids:
+    - source-woodcut-print-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-woodcut-print-game-art-primary-source
+  kind: primary
+  base_asset_id: woodcut-print-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先定轮廓和黑白面积
+  - 沿结构添加排线
+  - 调整线密度表达明暗
+  - 留出纸白呼吸区域
+  - 检查缩小后线条是否粘连
+  - 版画式黑白组织清楚
+  - 排线塑造体积而非噪点
+  - 不复刻具体版画
+  avoid:
+  - sepia filter only
+  - random crosshatching
+  - copied named print
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
