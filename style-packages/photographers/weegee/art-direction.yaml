@@ -1,0 +1,143 @@
+schema_version: 2.1.0
+status: experimental
+id: weegee-direction
+name: 维吉
+base_package: photographers/weegee
+scope:
+  medium: 以夜间闪光、直接的新闻现场、强烈黑白反差和未经修饰的街头瞬间建立紧迫而具体的观察感。
+  representation: recognizable
+  description: 以夜间闪光、直接的新闻现场、强烈黑白反差和未经修饰的街头瞬间建立紧迫而具体的观察感。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以夜间闪光、直接的新闻现场、强烈黑白反差和未经修饰的街头瞬间建立紧迫而具体的观察感。
+- 'composition: 近距离、略带侵入性的现场取景; 人物动作和环境线索共同构成信息; 保留偶然遮挡、偏心和不完美的瞬间'
+- 'palette: 以黑白为主，黑位明确、亮部直接; 彩色变体只保留少量现场色，不使用统一电影调色; 反光路面和浅色服装承担视觉闪点'
+- 'lighting: quality: 相机轴线附近的直接闪光，前景清楚，背景快速退入暗部; behavior: Keep the requested subject and location independent
+  from the package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 近距离、略带侵入性的现场取景;
+    人物动作和环境线索共同构成信息; 保留偶然遮挡、偏心和不完美的瞬间. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 近距离、略带侵入性的现场取景; 人物动作和环境线索共同构成信息;
+    保留偶然遮挡、偏心和不完美的瞬间.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 近距离、略带侵入性的现场取景;
+    人物动作和环境线索共同构成信息; 保留偶然遮挡、偏心和不完美的瞬间.'
+  evidence:
+    source_ids:
+    - source-weegee-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 以黑白为主，黑位明确、亮部直接; 彩色变体只保留少量现场色，不使用统一电影调色;
+    反光路面和浅色服装承担视觉闪点. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 以黑白为主，黑位明确、亮部直接; 彩色变体只保留少量现场色，不使用统一电影调色;
+    反光路面和浅色服装承担视觉闪点.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    以黑白为主，黑位明确、亮部直接; 彩色变体只保留少量现场色，不使用统一电影调色; 反光路面和浅色服装承担视觉闪点.'
+  evidence:
+    source_ids:
+    - source-weegee-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 相机轴线附近的直接闪光，前景清楚，背景快速退入暗部; behavior: Keep
+    the requested subject and location independent from the package.; behavior: Apply lighting as a transferable
+    visual decision, not a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 相机轴线附近的直接闪光，前景清楚，背景快速退入暗部;
+    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
+    as a transferable visual decision, not a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 相机轴线附近的直接闪光，前景清楚，背景快速退入暗部;
+    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
+    as a transferable visual decision, not a fixed scene..'
+  evidence:
+    source_ids:
+    - source-weegee-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 新闻照片般的清晰颗粒、硬质高光和真实街面反射;
+    edges: deliberate and subject-dependent, without a copied layout. Preserve detail hierarchy and material
+    identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    新闻照片般的清晰颗粒、硬质高光和真实街面反射; edges: deliberate and subject-dependent, without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 新闻照片般的清晰颗粒、硬质高光和真实街面反射; edges: deliberate and subject-dependent, without a copied layout.'
+  evidence:
+    source_ids:
+    - source-weegee-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 颗粒随曝光和放大尺度变化，不能覆盖主体细节;
+    placement: concentrated where the medium or material needs explanation. Preserve detail hierarchy and material
+    identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    颗粒随曝光和放大尺度变化，不能覆盖主体细节; placement: concentrated where the medium or material needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 颗粒随曝光和放大尺度变化，不能覆盖主体细节; placement: concentrated where the medium or material needs explanation.'
+  evidence:
+    source_ids:
+    - source-weegee-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-weegee-primary-source
+  kind: primary
+  base_asset_id: weegee-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定一个普通而开放的街头时刻
+  - 用直接闪光建立前景信息
+  - 允许背景不完整或被遮挡
+  - 以真实动作和空间关系收束画面
+  - the requested subject stays unchanged
+  - the package signature remains visible after subject transfer
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 固定加入犯罪、警车、尸体或纽约地标
+  - 把街头摄影变成摆拍时尚大片
+  - 用霓虹蓝橙滤镜替代现场闪光
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
+    protected game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
