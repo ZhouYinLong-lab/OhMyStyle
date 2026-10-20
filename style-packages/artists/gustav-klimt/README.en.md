@@ -45,7 +45,7 @@ See [`provenance.yaml`](provenance.yaml),
 
 ## New architecture: modeled figure and ornamental field (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when `modeled-figure-ornamental-field` is explicitly declared. The person must come from the user; keep the face, hands, and identity legible. Clothing or background may flatten into pattern, with localized metallic accents that emphasize the picture surface rather than coating the whole image in gold.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when `modeled-figure-ornamental-field` is explicitly declared. The person must come from the user; keep the face, hands, and identity legible. Clothing or background may flatten into pattern. Localized metallic accents activate only when the caller declares `metallic-accent-requested`; the image is never coated in gold by default.
 
 This differs from Mucha's direction, which organizes ornament through poster borders, curves, and text zones. Klimt's direction focuses on the transition between a modeled figure and flatter pattern, with restrained metallic surface. It does not add a couple, embrace, jewelry, or symbol by default.
 

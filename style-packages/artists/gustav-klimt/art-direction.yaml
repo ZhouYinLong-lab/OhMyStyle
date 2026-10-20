@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: klimt-modeled-figure-and-ornamental-field
 name: Klimt modeled figure and ornamental field
@@ -23,6 +23,17 @@ scope:
     - Only include a person when the user requests one; preserve requested identity, count, pose, clothing, and expression.
     - Keep the face and hands readable; ornamental fields may merge with clothing or background but must not replace anatomy.
     - Confine gold-like reflective accents to selected patterned areas and preserve the user's palette and material requests.
+contexts:
+  - id: modeled-figure-ornamental-field
+    description: A user-requested figure-led decorative painting with modeled focal features.
+  - id: photorealistic-editorial-portrait
+    description: A photorealistic editorial portrait with natural surface rendering.
+  - id: plain-documentary-portrait
+    description: A documentary portrait without decorative ornament.
+  - id: all-over-metallic-surface
+    description: An image whose entire surface is requested to appear metallic.
+  - id: metallic-accent-requested
+    description: The user explicitly requests limited metallic accents in patterned regions.
 pillars:
   - Contrast a carefully modeled focal figure with flatter, denser ornamental clothing or background planes.
   - Let geometric and organic motifs follow separate surface regions instead of filling every space with repeated decoration.
@@ -60,6 +71,8 @@ rules:
   - id: selective-metallic-picture-plane
     axis: material_and_light
     importance: supporting
+    when_contexts:
+      - metallic-accent-requested
     applies_when: The user requests a decorative painting treatment with metallic surface accents.
     instruction: Reserve gold-like reflective material for selected garment or background passages; vary matte, grainy, and brighter metallic areas, and keep these accents distinct from the modeled skin and ordinary painted highlights.
     observable: Metallic areas catch light as part of the flat picture surface, while skin, fabric, and background retain distinguishable material behavior.

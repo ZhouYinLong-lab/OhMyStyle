@@ -36,7 +36,7 @@
 
 ## 新架构：塑形人物与装饰平面（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `modeled-figure-ornamental-field` 时启用。它要求人物由用户指定，保留脸部、手部和身份辨识；服饰或背景可以转为平面纹样，并以局部金属质感强调画面表面，不把整幅画涂成金色。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在显式声明 `modeled-figure-ornamental-field` 时启用。它要求人物由用户指定，保留脸部、手部和身份辨识；服饰或背景可以转为平面纹样。只有调用者声明 `metallic-accent-requested` 时，才加入受限的金属色表面效果，不把整幅画涂成金色。
 
 这不同于穆夏方向以海报边框、曲线与文字区域组织装饰层级；克里姆特方向关注写实塑形的人物与平面纹样之间的过渡，以及受限的金属表面。它不会默认加入情侣、拥抱姿势、珠宝或象征物。
 
