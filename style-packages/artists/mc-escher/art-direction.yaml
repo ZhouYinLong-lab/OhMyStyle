@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: escher-single-impossible-junction
 name: Escher single impossible junction
@@ -24,6 +24,17 @@ scope:
     - Keep all but one junction spatially consistent; do not spread the paradox into the background.
     - This text-only route cannot guarantee mathematically exact perspective; inspect the junction manually.
     - Do not copy a named print, famous composition, or recognizable arrangement.
+contexts:
+  - id: single-impossible-junction
+    description: The user requests one localized spatial contradiction in an otherwise readable object or structure.
+  - id: globally-impossible-architecture
+    description: The user requests architecture that is impossible throughout.
+  - id: continuous-metamorphosis
+    description: The user requests continuous transformation between forms.
+  - id: photorealistic-product-render
+    description: The user requires a photorealistic product rendering.
+  - id: user-requests-printmaking-treatment
+    description: The user requests a printmaking treatment for the object study.
 pillars:
   - Keep the user-specified object recognizable and grounded in a coherent ordinary space.
   - Concentrate the impossible reading at one clearly bounded join between planes or edges.
@@ -32,6 +43,8 @@ rules:
   - id: localized-spatial-contradiction
     axis: spatial_logic
     importance: core
+    when_contexts:
+      - single-impossible-junction
     applies_when: The user requests one localized impossible connection in an otherwise readable object or structure.
     instruction: Keep the requested object and its ordinary spatial construction recognizable, but let exactly one bounded junction connect planes or edges in mutually incompatible depth or order. Make the contradiction visible at that join and keep neighboring surfaces coherent.
     observable: The viewer can identify the object and point to one specific junction where its spatial construction contradicts itself; the rest remains legible.
@@ -45,6 +58,8 @@ rules:
   - id: coherent-surrounding-space
     axis: composition_and_space
     importance: core
+    when_contexts:
+      - single-impossible-junction
     applies_when: The brief asks for a localized paradox rather than a fully impossible environment.
     instruction: Keep the background, support surface, and all non-paradoxical connections in one stable perspective system; use the single junction as the only spatial exception.
     observable: Ordinary depth cues agree outside the selected join, making the local contradiction easier to notice.
@@ -58,6 +73,8 @@ rules:
   - id: inspectable-print-contour
     axis: linework_and_medium
     importance: supporting
+    when_contexts:
+      - user-requests-printmaking-treatment
     applies_when: The user requests printmaking treatment for the object study.
     instruction: Use crisp engraved contours and sparse directional hatching to distinguish adjoining planes; keep the line hierarchy clear around the chosen junction.
     observable: The join can be read from contour and value grouping without relying on color glow or photographic shading.

@@ -59,6 +59,6 @@ Connect the prompts to a local model or ComfyUI workflow. Use the reproduction n
 Users manage model weights, keys, and generated images. References are for understanding traits, not for copying source works.
 ## Experimental direction: one impossible junction
 
-The package now includes one explicitly selected experimental direction in [`art-direction.yaml`](art-direction.yaml): introduce one localized spatial paradox in a user-specified ordinary object or structure while keeping all other connections and the background in consistent perspective. It does not add stairs, towers, animals, or landscapes by default, and it does not copy a famous composition.
+The package now includes one explicitly selected experimental direction in [`art-direction.yaml`](art-direction.yaml), using direction format 2.1.0: introduce one localized spatial paradox in a user-specified ordinary object or structure while keeping all other connections and the background in consistent perspective. Declare `user-requests-printmaking-treatment` only when the user requests a printmaking treatment to activate the engraved-contour rule. It does not add stairs, towers, animals, or landscapes by default, and it does not copy a famous composition.
 
 See [`comparisons/`](comparisons/README.md) for the paired images and compiled prompts. This text-only image route cannot guarantee exact geometry; review edge continuity, depth order, and object readability in the generated sample.
