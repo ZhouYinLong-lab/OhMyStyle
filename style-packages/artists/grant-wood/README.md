@@ -34,7 +34,7 @@
 
 ## 新架构：乡土景观图案与垂直节奏（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在用户指定 `composed-regional-landscape` 时启用。它用滚动地形、竖向轮廓和一条有方向的路径组织景物，再以克制细节表现地域环境；不会默认添加爱荷华农田、玉米或农夫夫妇。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户指定 `composed-regional-landscape` 时启用。滚动地形与竖向轮廓是基础规则；调用者可按场景声明 `landscape-with-directional-element` 和 `landscape-with-seasonal-or-regional-detail`，再启用路径构图或地域细节规则。它不会默认添加爱荷华农田、玉米或农夫夫妇。
 
 这与戈雅的心理肖像方向不同：伍德方向依赖地景形状和道路、手势等线条串联场景，不以暗背景和面部笔触对比塑造主体。
 

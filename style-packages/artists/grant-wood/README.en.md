@@ -34,7 +34,7 @@ See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references
 
 ## New architecture: regional landscape pattern and vertical rhythm (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `composed-regional-landscape`. It organizes scenery through rolling land, upright silhouettes, and a directional path, with controlled detail for a distinct sense of place. It does not default to Iowa farmland, corn, or a farming couple.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when the user declares `composed-regional-landscape`. Rolling land and upright silhouettes are base rules; callers can declare `landscape-with-directional-element` and `landscape-with-seasonal-or-regional-detail` to activate path composition or regional detail as applicable. It does not default to Iowa farmland, corn, or a farming couple.
 
 This differs from Goya's psychological-portrait direction: Wood's direction uses landscape shapes and lines such as roads or gestures to connect the scene, rather than dark grounds and contrasting facial brushwork to shape the subject.
 
