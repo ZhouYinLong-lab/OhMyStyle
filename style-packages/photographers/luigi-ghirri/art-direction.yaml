@@ -1,0 +1,142 @@
+schema_version: 2.1.0
+status: experimental
+id: luigi-ghirri-direction
+name: 路易吉·吉里
+base_package: photographers/luigi-ghirri
+scope:
+  medium: restrained color documentary photography
+  representation: recognizable
+  description: 以克制的彩色摄影、柔和的光线和地图、模型、建筑之间的尺度错位，观察现实如何被图像重新组织。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied photograph
+  - named landmark as a default subject
+pillars:
+- 以克制的彩色摄影、柔和的光线和地图、模型、建筑之间的尺度错位，观察现实如何被图像重新组织。
+- 'composition: 使用克制的水平线、边缘裁切和留白，让主体像被安静地放置在观察框中。; 可以让真实物体与图像、模型或标识发生尺度关系，但不能把某一种替代物写成固定题材。'
+- 'palette: 低至中饱和的粉灰、沙色、浅蓝、褪绿和砖红，颜色之间保持细小而清楚的温差。; 避免戏剧化的黑白对比和统一复古滤镜，让色彩像自然光下的旧印刷或褪色照片。'
+- 'lighting: quality: diffuse natural daylight with restrained contrast; behavior: 光线平稳、方向不夸张，保留表面细节与轻微空气感。;
+  behavior: 阴影不压黑，亮部不制造商业棚拍高光。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 使用克制的水平线、边缘裁切和留白，让主体像被安静地放置在观察框中。;
+    可以让真实物体与图像、模型或标识发生尺度关系，但不能把某一种替代物写成固定题材。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 使用克制的水平线、边缘裁切和留白，让主体像被安静地放置在观察框中。;
+    可以让真实物体与图像、模型或标识发生尺度关系，但不能把某一种替代物写成固定题材。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 使用克制的水平线、边缘裁切和留白，让主体像被安静地放置在观察框中。;
+    可以让真实物体与图像、模型或标识发生尺度关系，但不能把某一种替代物写成固定题材。.'
+  evidence:
+    source_ids:
+    - source-luigi-ghirri-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 低至中饱和的粉灰、沙色、浅蓝、褪绿和砖红，颜色之间保持细小而清楚的温差。;
+    避免戏剧化的黑白对比和统一复古滤镜，让色彩像自然光下的旧印刷或褪色照片。. Adapt their balance to the requested subject; do not apply them as
+    a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 低至中饱和的粉灰、沙色、浅蓝、褪绿和砖红，颜色之间保持细小而清楚的温差。;
+    避免戏剧化的黑白对比和统一复古滤镜，让色彩像自然光下的旧印刷或褪色照片。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    低至中饱和的粉灰、沙色、浅蓝、褪绿和砖红，颜色之间保持细小而清楚的温差。; 避免戏剧化的黑白对比和统一复古滤镜，让色彩像自然光下的旧印刷或褪色照片。.'
+  evidence:
+    source_ids:
+    - source-luigi-ghirri-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: diffuse natural daylight with restrained
+    contrast; behavior: 光线平稳、方向不夸张，保留表面细节与轻微空气感。; behavior: 阴影不压黑，亮部不制造商业棚拍高光。. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: diffuse natural daylight
+    with restrained contrast; behavior: 光线平稳、方向不夸张，保留表面细节与轻微空气感。; behavior: 阴影不压黑，亮部不制造商业棚拍高光。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: diffuse natural
+    daylight with restrained contrast; behavior: 光线平稳、方向不夸张，保留表面细节与轻微空气感。; behavior: 阴影不压黑，亮部不制造商业棚拍高光。.'
+  evidence:
+    source_ids:
+    - source-luigi-ghirri-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: fine-grained
+    color photograph with quiet paper-like tonality; edges: clean but slightly softened photographic edges;
+    no artificial vignette. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    fine-grained color photograph with quiet paper-like tonality; edges: clean but slightly softened photographic
+    edges; no artificial vignette.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: fine-grained color photograph with quiet paper-like tonality; edges: clean but slightly softened
+    photographic edges; no artificial vignette.'
+  evidence:
+    source_ids:
+    - source-luigi-ghirri-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low_to_medium;
+    placement: subtle grain and material variation in walls, paper, asphalt, or painted surfaces. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low_to_medium; placement: subtle grain and material variation in walls, paper, asphalt, or painted surfaces.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low_to_medium; placement: subtle grain and material variation in walls, paper, asphalt, or painted
+    surfaces.'
+  evidence:
+    source_ids:
+    - source-luigi-ghirri-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-luigi-ghirri-primary-source
+  kind: primary
+  base_asset_id: luigi-ghirri-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定一个普通主体和清楚的观察距离，避免先设计戏剧化故事。
+  - 用水平线、边缘裁切或轻微尺度错位建立图像内部的秩序。
+  - 最后调整颜色，使自然光、表面材质和远近关系保持柔和而可辨。
+  - 观察距离、尺度关系和克制色彩在更换主体后仍然可见。
+  - 不要求地图、模型、海岸、意大利建筑或空旷广场。
+  - 图像感来自现实的轻微错位与颜色秩序，不来自强烈怀旧特效。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - postcard tourism composition
+  - forced nostalgia, heavy film burns, or dramatic sunset grading
+  - fixed maps, miniatures, landmarks, or Italian locations
+  - copying a specific reference photograph
+  - copied photograph
+  - named landmark as a default subject
+  - Do not reproduce a specific reference photograph, recognizable person, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
