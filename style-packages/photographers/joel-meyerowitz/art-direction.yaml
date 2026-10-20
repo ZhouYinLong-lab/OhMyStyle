@@ -1,0 +1,155 @@
+schema_version: 2.1.0
+status: experimental
+id: joel-meyerowitz-direction
+name: 乔尔·迈耶罗维茨
+base_package: photographers/joel-meyerowitz
+scope:
+  medium: color documentary photography
+  representation: recognizable
+  description: 以彩色街景中的开放空间、并置色块和偶然关系，保留观看距离与日常光线的复杂层次。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以彩色街景中的开放空间、并置色块和偶然关系，保留观看距离与日常光线的复杂层次。
+- 'composition: Use open framing with breathable edges, layered depth, and several independent points of visual
+  interest.; Let incidental alignment, color echoes, and distance between figures or objects carry the composition.'
+- 'palette: Favor natural daylight color with warm and cool regions held in the same frame.; Allow one or two
+  clear chromatic accents while preserving ordinary environmental colors.'
+- 'lighting: quality: available daylight with gentle directional variation; behavior: Preserve the changing
+  intensity of outdoor light instead of imposing a studio look.; behavior: Keep highlights readable and shadows
+  open enough to retain context.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Use open framing
+    with breathable edges, layered depth, and several independent points of visual interest.; Let incidental
+    alignment, color echoes, and distance between figures or objects carry the composition.. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Use open framing
+    with breathable edges, layered depth, and several independent points of visual interest.; Let incidental
+    alignment, color echoes, and distance between figures or objects carry the composition..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Use open
+    framing with breathable edges, layered depth, and several independent points of visual interest.; Let incidental
+    alignment, color echoes, and distance between figures or objects carry the composition..'
+  evidence:
+    source_ids:
+    - source-joel-meyerowitz-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Favor natural daylight color with
+    warm and cool regions held in the same frame.; Allow one or two clear chromatic accents while preserving
+    ordinary environmental colors.. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Favor natural daylight color
+    with warm and cool regions held in the same frame.; Allow one or two clear chromatic accents while preserving
+    ordinary environmental colors..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Favor natural daylight color with warm and cool regions held in the same frame.; Allow one or two clear
+    chromatic accents while preserving ordinary environmental colors..'
+  evidence:
+    source_ids:
+    - source-joel-meyerowitz-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: available daylight with gentle directional
+    variation; behavior: Preserve the changing intensity of outdoor light instead of imposing a studio look.;
+    behavior: Keep highlights readable and shadows open enough to retain context.. Keep light coherent with
+    the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: available daylight
+    with gentle directional variation; behavior: Preserve the changing intensity of outdoor light instead of
+    imposing a studio look.; behavior: Keep highlights readable and shadows open enough to retain context..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: available daylight
+    with gentle directional variation; behavior: Preserve the changing intensity of outdoor light instead of
+    imposing a studio look.; behavior: Keep highlights readable and shadows open enough to retain context..'
+  evidence:
+    source_ids:
+    - source-joel-meyerowitz-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: natural
+    color negative or fine-grained contemporary color print; edges: photographic clarity with selective depth
+    and no artificial outline. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    natural color negative or fine-grained contemporary color print; edges: photographic clarity with selective
+    depth and no artificial outline.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: natural color negative or fine-grained contemporary color print; edges: photographic clarity with
+    selective depth and no artificial outline.'
+  evidence:
+    source_ids:
+    - source-joel-meyerowitz-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: moderate
+    environmental detail; placement: visible in pavement, foliage, architecture, and ordinary surfaces without
+    decorative grain. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    moderate environmental detail; placement: visible in pavement, foliage, architecture, and ordinary surfaces
+    without decorative grain.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: moderate environmental detail; placement: visible in pavement, foliage, architecture, and ordinary
+    surfaces without decorative grain.'
+  evidence:
+    source_ids:
+    - source-joel-meyerowitz-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-joel-meyerowitz-primary-source
+  kind: primary
+  base_asset_id: joel-meyerowitz-primary-source
+execution:
+  route: text_only
+  must:
+  - begin with the user-supplied situation and wait for an unforced arrangement
+  - compose through depth layers, color echoes, and incidental alignments
+  - preserve ordinary light and local color before applying only restrained print finishing
+  - open observational framing
+  - layered everyday space with quiet color relationships
+  - natural daylight and unforced human or object presence
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
