@@ -1,0 +1,141 @@
+schema_version: 2.1.0
+status: experimental
+id: lillian-bassman-direction
+name: 莉莲·巴斯曼
+base_package: photographers/lillian-bassman
+scope:
+  medium: experimental editorial photography
+  representation: recognizable
+  description: 以时装摄影为入口，用柔焦、暗房擦拭、局部反差和溶解的轮廓把衣物转化为空气与姿态。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以时装摄影为入口，用柔焦、暗房擦拭、局部反差和溶解的轮廓把衣物转化为空气与姿态。
+- 'composition: quiet editorial framing, graceful diagonals, partial concealment, and usable negative space'
+- 'palette: charcoal, pearl, smoke, cream, and restrained flesh tones'
+- 'lighting: quality: soft directional light with selective brilliance and broad highlights; behavior: Use
+  light and value to preserve the user''s subject rather than add a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: quiet editorial
+    framing, graceful diagonals, partial concealment, and usable negative space. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: quiet editorial framing,
+    graceful diagonals, partial concealment, and usable negative space.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: quiet editorial
+    framing, graceful diagonals, partial concealment, and usable negative space.'
+  evidence:
+    source_ids:
+    - source-lillian-bassman-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: charcoal, pearl, smoke, cream, and
+    restrained flesh tones. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: charcoal, pearl, smoke, cream,
+    and restrained flesh tones.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    charcoal, pearl, smoke, cream, and restrained flesh tones.'
+  evidence:
+    source_ids:
+    - source-lillian-bassman-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft directional light with selective brilliance
+    and broad highlights; behavior: Use light and value to preserve the user''s subject rather than add a fixed
+    scene.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft directional light
+    with selective brilliance and broad highlights; behavior: Use light and value to preserve the user''s subject
+    rather than add a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft directional
+    light with selective brilliance and broad highlights; behavior: Use light and value to preserve the user''s
+    subject rather than add a fixed scene..'
+  evidence:
+    source_ids:
+    - source-lillian-bassman-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: tactile
+    photographic print with controlled darkroom softness; edges: precise enough to preserve the requested subject.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    tactile photographic print with controlled darkroom softness; edges: precise enough to preserve the requested
+    subject.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: tactile photographic print with controlled darkroom softness; edges: precise enough to preserve
+    the requested subject.'
+  evidence:
+    source_ids:
+    - source-lillian-bassman-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    density, concentrated in tonal transitions and paper-like areas; placement: follow material and process;
+    never become a uniform overlay. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low density, concentrated in tonal transitions and paper-like areas; placement: follow material and process;
+    never become a uniform overlay.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low density, concentrated in tonal transitions and paper-like areas; placement: follow material
+    and process; never become a uniform overlay.'
+  evidence:
+    source_ids:
+    - source-lillian-bassman-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-lillian-bassman-primary-source
+  kind: primary
+  base_asset_id: lillian-bassman-primary-source
+execution:
+  route: text_only
+  must:
+  - establish a natural subject; build a soft tonal base; choose a few sharp edges; add restrained diffusion
+    or local contrast
+  - subject remains identifiable; softness is selective; gesture and tonal rhythm survive a subject change
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - fixed subject, location, character, or story not requested by the user
+  - generic global color filter without process evidence
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
