@@ -1,0 +1,142 @@
+schema_version: 2.1.0
+status: experimental
+id: raghubir-singh-direction
+name: 拉古比尔·辛格
+base_package: photographers/raghubir-singh
+scope:
+  medium: color documentary photography with chromogenic-print character
+  representation: recognizable
+  description: 以饱和而自然的彩色街头观察组织多层空间，让人物、建筑、反光和日常色块共同形成复杂但清晰的画面节奏。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以饱和而自然的彩色街头观察组织多层空间，让人物、建筑、反光和日常色块共同形成复杂但清晰的画面节奏。
+- 'composition: 通过门框、车窗、墙体或反光面形成前景遮挡，让街景在多个距离层次中展开。; 让人物、建筑和色块相互嵌套，但保留街头瞬间的偶然性。'
+- 'palette: 采用自然光下的高饱和互补色，让暖色衣物、冷色墙面和湿地反光彼此呼应。; 饱和度来自真实表面与环境关系，不使用统一的旅游宣传滤镜。'
+- 'lighting: quality: humid natural daylight or soft overcast light; behavior: 光线保持现场感，允许反光和阴影同时存在，不制造棚拍轮廓光。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 通过门框、车窗、墙体或反光面形成前景遮挡，让街景在多个距离层次中展开。;
+    让人物、建筑和色块相互嵌套，但保留街头瞬间的偶然性。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 通过门框、车窗、墙体或反光面形成前景遮挡，让街景在多个距离层次中展开。;
+    让人物、建筑和色块相互嵌套，但保留街头瞬间的偶然性。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 通过门框、车窗、墙体或反光面形成前景遮挡，让街景在多个距离层次中展开。;
+    让人物、建筑和色块相互嵌套，但保留街头瞬间的偶然性。.'
+  evidence:
+    source_ids:
+    - source-raghubir-singh-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 采用自然光下的高饱和互补色，让暖色衣物、冷色墙面和湿地反光彼此呼应。;
+    饱和度来自真实表面与环境关系，不使用统一的旅游宣传滤镜。. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 采用自然光下的高饱和互补色，让暖色衣物、冷色墙面和湿地反光彼此呼应。;
+    饱和度来自真实表面与环境关系，不使用统一的旅游宣传滤镜。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    采用自然光下的高饱和互补色，让暖色衣物、冷色墙面和湿地反光彼此呼应。; 饱和度来自真实表面与环境关系，不使用统一的旅游宣传滤镜。.'
+  evidence:
+    source_ids:
+    - source-raghubir-singh-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: humid natural daylight or soft overcast
+    light; behavior: 光线保持现场感，允许反光和阴影同时存在，不制造棚拍轮廓光。. Keep light coherent with the requested subject, medium,
+    and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: humid natural daylight
+    or soft overcast light; behavior: 光线保持现场感，允许反光和阴影同时存在，不制造棚拍轮廓光。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: humid natural
+    daylight or soft overcast light; behavior: 光线保持现场感，允许反光和阴影同时存在，不制造棚拍轮廓光。.'
+  evidence:
+    source_ids:
+    - source-raghubir-singh-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: chromogenic-print-like
+    color with restrained grain; edges: clear in the decisive plane, softened by depth and moisture elsewhere.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    chromogenic-print-like color with restrained grain; edges: clear in the decisive plane, softened by depth
+    and moisture elsewhere.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: chromogenic-print-like color with restrained grain; edges: clear in the decisive plane, softened
+    by depth and moisture elsewhere.'
+  evidence:
+    source_ids:
+    - source-raghubir-singh-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: layered
+    and information-rich, never uniformly busy; placement: foreground frames, reflections, facades, fabric
+    and pavement. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    layered and information-rich, never uniformly busy; placement: foreground frames, reflections, facades,
+    fabric and pavement.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: layered and information-rich, never uniformly busy; placement: foreground frames, reflections,
+    facades, fabric and pavement.'
+  evidence:
+    source_ids:
+    - source-raghubir-singh-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-raghubir-singh-primary-source
+  kind: primary
+  base_asset_id: raghubir-singh-primary-source
+execution:
+  route: text_only
+  must:
+  - Establish the user's subject and location before choosing a viewpoint.
+  - Find a foreground frame or reflective plane that creates a second spatial layer.
+  - Build a decisive middle-ground action without directing the people into a pose.
+  - Balance two or three naturally occurring color families across the frame.
+  - Keep distant detail legible enough to reward looking, but let depth soften it.
+  - 多层空间、自然饱和色彩和偶然取景必须跨主体保留。
+  - 反射与遮挡应服务于空间深度，不得制造固定地标或叙事道具。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
