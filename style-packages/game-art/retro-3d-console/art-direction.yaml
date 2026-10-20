@@ -1,0 +1,177 @@
+schema_version: 2.1.0
+status: experimental
+id: retro-3d-console-direction
+name: 复古三维主机美术
+base_package: game-art/retro-3d-console
+scope:
+  medium: retro console 3D game rendering
+  representation: stylized
+  description: 以早期三维主机的低多边形几何、低分辨率纹理、顶点光照、贴图偏移和有限雾效构成可探索空间；本包只提取媒介限制，不固定某部游戏或场景。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - mandatory observatory, road, mountain, tree, character, or dusk setting
+  - named game, recognizable character, logo, HUD, or copied level layout
+  - modern physically based rendering or polished cinematic concept art
+pillars:
+- 以早期三维主机的低多边形几何、低分辨率纹理、顶点光照、贴图偏移和有限雾效构成可探索空间；本包只提取媒介限制，不固定某部游戏或场景。
+- 'medium: retro console 3D game rendering'
+- 'composition: navigable spatial layout with readable ground plane, horizon, and landmark silhouette; simple
+  geometric masses arranged for movement and discovery; camera feels like a game viewpoint rather than a gallery
+  illustration'
+- 'palette: limited, slightly compressed palette with strong dark midtones; local material colors survive low
+  resolution without modern cinematic grading; small warm or cool accents can guide navigation when supported
+  by the subject'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: retro
+    console 3D game rendering.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: retro console
+    3D game rendering.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    retro console 3D game rendering.'
+  evidence:
+    source_ids:
+    - source-retro-3d-console-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: navigable spatial
+    layout with readable ground plane, horizon, and landmark silhouette; simple geometric masses arranged for
+    movement and discovery; camera feels like a game viewpoint rather than a gallery illustration. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: navigable spatial
+    layout with readable ground plane, horizon, and landmark silhouette; simple geometric masses arranged for
+    movement and discovery; camera feels like a game viewpoint rather than a gallery illustration.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: navigable
+    spatial layout with readable ground plane, horizon, and landmark silhouette; simple geometric masses arranged
+    for movement and discovery; camera feels like a game viewpoint rather than a gallery illustration.'
+  evidence:
+    source_ids:
+    - source-retro-3d-console-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: limited, slightly compressed palette
+    with strong dark midtones; local material colors survive low resolution without modern cinematic grading;
+    small warm or cool accents can guide navigation when supported by the subject. Adapt their balance to the
+    requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: limited, slightly compressed
+    palette with strong dark midtones; local material colors survive low resolution without modern cinematic
+    grading; small warm or cool accents can guide navigation when supported by the subject.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    limited, slightly compressed palette with strong dark midtones; local material colors survive low resolution
+    without modern cinematic grading; small warm or cool accents can guide navigation when supported by the
+    subject.'
+  evidence:
+    source_ids:
+    - source-retro-3d-console-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: vertex-lit or simply baked-looking lighting
+    with broad transitions; behavior: distant forms soften through restrained fog rather than volumetric spectacle;
+    behavior: shadows remain simple and blocky, with no ray-traced reflections. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: vertex-lit or simply
+    baked-looking lighting with broad transitions; behavior: distant forms soften through restrained fog rather
+    than volumetric spectacle; behavior: shadows remain simple and blocky, with no ray-traced reflections.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: vertex-lit or
+    simply baked-looking lighting with broad transitions; behavior: distant forms soften through restrained
+    fog rather than volumetric spectacle; behavior: shadows remain simple and blocky, with no ray-traced reflections.'
+  evidence:
+    source_ids:
+    - source-retro-3d-console-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: low-resolution
+    hand-painted or sampled textures with visible pixel structure; edges: hard polygonal silhouette and occasional
+    texture swimming or affine skew. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    low-resolution hand-painted or sampled textures with visible pixel structure; edges: hard polygonal silhouette
+    and occasional texture swimming or affine skew.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: low-resolution hand-painted or sampled textures with visible pixel structure; edges: hard polygonal
+    silhouette and occasional texture swimming or affine skew.'
+  evidence:
+    source_ids:
+    - source-retro-3d-console-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    to medium, constrained by a small texture budget; placement: terrain, walls, props, and characters use
+    repeated or stretched textures when appropriate. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low to medium, constrained by a small texture budget; placement: terrain, walls, props, and characters
+    use repeated or stretched textures when appropriate.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low to medium, constrained by a small texture budget; placement: terrain, walls, props, and characters
+    use repeated or stretched textures when appropriate.'
+  evidence:
+    source_ids:
+    - source-retro-3d-console-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-retro-3d-console-primary-source
+  kind: primary
+  base_asset_id: retro-3d-console-primary-source
+execution:
+  route: text_only
+  must:
+  - Lock the user's subject, then choose a camera angle that makes the space feel navigable.
+  - Reduce geometry while preserving recognizable object classes and traversal paths.
+  - Use small textures, vertex colors, broad light, and simple shadows rather than modern surface simulation.
+  - Apply restrained distance fog to separate depth layers; keep the nearest ground readable.
+  - Check for title-specific characters, interface elements, logos, and accidental modern rendering.
+  - Begin with the user's requested game subject and determine a navigable camera view.
+  - Simplify forms into purposeful low-polygon masses; do not remove spatial logic.
+  - Apply small, slightly imperfect textures and vertex-colored lighting.
+  avoid:
+  - mandatory environment or story
+  - modern PBR, ray tracing, ultra-high polygon detail, and polished concept-art lighting
+  - fixed observatory, road, mountain, tree, or dusk scene
+  - modern PBR materials, ray tracing, volumetric light, or glossy cinematic polish
+  - voxel cubes, 2D pixel sprites, anime rendering, and copied game interfaces
+  - mandatory observatory, road, mountain, tree, character, or dusk setting
+  - named game, recognizable character, logo, HUD, or copied level layout
+  - modern physically based rendering or polished cinematic concept art
+  - The package describes a historical rendering language; users provide the scene and subject.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
