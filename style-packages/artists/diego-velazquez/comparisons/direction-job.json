@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "diego-velazquez",
+    "name": "迭戈·委拉斯开兹",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\diego-velazquez"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "Three musicians rehearsing in a dim room, one listening while another checks the sheet music",
+  "prompt": "USER SUBJECT: Three musicians rehearsing in a dim room, one listening while another checks the sheet music\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [gaze-posture-exchange] Use the requested gaze directions, head turns, and posture to create a path of attention among the figures, their task, or an explicitly requested viewer; keep each gesture natural and specific to the brief.\n- [layered-dark-room-depth] Separate foreground, figure plane, and background with overlap and restrained changes in value; use a coherent patch or opening of light only when the requested setting provides one, and keep shadowed architecture legible.\n- [focal-precision-with-broad-passages] Use precise, economical marks for eyes, hands, and focal materials; let less important garments and room surfaces resolve through broader, freer strokes, preserving enough edge information to identify the forms.\n- [gaze-depth-detail-coherence] Let gaze organize the requested relationships, layered value carry the room, and selective precision direct attention without adding a narrative motif.\nREQUIREMENT: Declare the observed-interior-portrait context before applying this direction.\nREQUIREMENT: Preserve the requested people, relationships, and room.\nREQUIREMENT: Use gaze and posture to organize attention without forcing direct eye contact.\nREQUIREMENT: Concentrate crisp detail at focal features and keep shadowed space readable.",
+  "negative_prompt": "forced direct gaze, copied group poses, and invented courtly interaction\nunrequested mirrors or doorways, blacked-out rooms, and theatrical beams\nuniform photorealistic detail, random brush texture, and global soft focus\nadding mirrors, doorways, court figures, or a painter at an easel without request\nturning selective light into a theatrical spotlight\napplying equal sharpness or blur across the whole image",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "velazquez-gaze-depth-and-selective-precision",
+    "name": "Velázquez gaze, depth, and selective precision",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\diego-velazquez\\art-direction.yaml",
+    "sha256": "45908f0735796d2cad8160eff8cf648ae07f4875e012c1a46a1d9bbc4f2278fb",
+    "active_rule_ids": [
+      "gaze-posture-exchange",
+      "layered-dark-room-depth",
+      "focal-precision-with-broad-passages"
+    ],
+    "contexts": [
+      "observed-interior-portrait"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare the observed-interior-portrait context before applying this direction.",
+      "Preserve the requested people, relationships, and room.",
+      "Use gaze and posture to organize attention without forcing direct eye contact.",
+      "Concentrate crisp detail at focal features and keep shadowed space readable."
+    ],
+    "avoid": [
+      "adding mirrors, doorways, court figures, or a painter at an easel without request",
+      "turning selective light into a theatrical spotlight",
+      "applying equal sharpness or blur across the whole image"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "recognizable",
+      "description": "An observed-interior-portrait direction that connects people through gaze and posture, creates depth through overlapping dark planes and selective illumination, and reserves crisp detail for a few focal features. Painterly looseness remains active around those anchors without dissolving the room.",
+      "required_contexts": [
+        "observed-interior-portrait"
+      ],
+      "incompatible_contexts": [
+        "open-air-landscape",
+        "isolated-product-still-life",
+        "high-key-abstract-field"
+      ],
+      "limitations": [
+        "Preserve the requested people, identities, count, relationships, and setting; do not add a mirror, doorway, court costume, attendant, or painter figure unless requested.",
+        "Use gaze and posture to connect requested people or a person and task; do not force anyone to look at the viewer.",
+        "Let selective light clarify the requested scene without turning it into a theatrical spotlight or copying a known portrait arrangement."
+      ]
+    },
+    "rules": [
+      {
+        "id": "gaze-posture-exchange",
+        "axis": "figure_relationships",
+        "importance": "core",
+        "applies_when": "The requested scene includes multiple people or a person engaged with another subject.",
+        "instruction": "Use the requested gaze directions, head turns, and posture to create a path of attention among the figures, their task, or an explicitly requested viewer; keep each gesture natural and specific to the brief.",
+        "observable": "A viewer can infer who attends to whom or what, and the relationships read without added narrative props.",
+        "reject_when": "All figures stare forward by default, their gazes have no relation to the scene, or unrequested social drama is introduced.",
+        "evidence": {
+          "source_ids": [
+            "velazquez-prado-meninas",
+            "velazquez-national-gallery-philip"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "forced direct gaze, copied group poses, and invented courtly interaction"
+      },
+      {
+        "id": "layered-dark-room-depth",
+        "axis": "space_and_lighting",
+        "importance": "core",
+        "applies_when": "The user requests an interior portrait or group scene with visible spatial depth.",
+        "instruction": "Separate foreground, figure plane, and background with overlap and restrained changes in value; use a coherent patch or opening of light only when the requested setting provides one, and keep shadowed architecture legible.",
+        "observable": "Space recedes behind the figures without relying on a black void, a universal spotlight, or an invented architectural feature.",
+        "reject_when": "Background and figures collapse into one flat dark mass, or dramatic light overwhelms the requested people.",
+        "evidence": {
+          "source_ids": [
+            "velazquez-prado-meninas"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "unrequested mirrors or doorways, blacked-out rooms, and theatrical beams"
+      },
+      {
+        "id": "focal-precision-with-broad-passages",
+        "axis": "mark_making_and_edges",
+        "importance": "core",
+        "applies_when": "A portrait or group scene has a few clear points of attention.",
+        "instruction": "Use precise, economical marks for eyes, hands, and focal materials; let less important garments and room surfaces resolve through broader, freer strokes, preserving enough edge information to identify the forms.",
+        "observable": "Detail density follows attention, and broad passages feel intentional rather than unfinished or uniformly blurred.",
+        "reject_when": "Every surface is rendered with equal sharpness, or loose marks erase the requested expression and action.",
+        "evidence": {
+          "source_ids": [
+            "velazquez-national-gallery-philip",
+            "velazquez-met-juan-pareja"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform photorealistic detail, random brush texture, and global soft focus"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "gaze-depth-detail-coherence",
+        "rule_ids": [
+          "gaze-posture-exchange",
+          "layered-dark-room-depth",
+          "focal-precision-with-broad-passages"
+        ],
+        "instruction": "Let gaze organize the requested relationships, layered value carry the room, and selective precision direct attention without adding a narrative motif.",
+        "observable": "People and space form a coherent observed scene; focal details are clear while secondary passages remain broad and painterly."
+      }
+    ],
+    "sources": [
+      {
+        "id": "velazquez-prado-meninas",
+        "kind": "museum_artwork_analysis",
+        "url": "https://www.museodelprado.es/en/whats-on/multimedia/las-meninas-diego-velazquez/c43f1c8d-e6c9-a8c2-44dc-0c9be2e10177"
+      },
+      {
+        "id": "velazquez-national-gallery-philip",
+        "kind": "museum_artwork_description",
+        "url": "https://www.nationalgallery.org.uk/paintings/diego-velazquez-philip-iv-of-spain"
+      },
+      {
+        "id": "velazquez-met-juan-pareja",
+        "kind": "museum_artwork_description",
+        "url": "https://www.metmuseum.org/art/collection/search/437869"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "45908f0735796d2cad8160eff8cf648ae07f4875e012c1a46a1d9bbc4f2278fb",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
