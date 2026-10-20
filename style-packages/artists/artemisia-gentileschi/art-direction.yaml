@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: artemisia-embodied-action-composition
 name: Artemisia embodied action composition
@@ -21,6 +21,17 @@ scope:
     - Preserve the user-requested people, identities, activity, force, and outcome; do not add conflict, injury, or a narrative role.
     - Do not default to women, biblical heroines, weapons, blood, historical costume, or a specific source composition.
     - Keep dark passages readable and use contrast to clarify the requested action, not to replace it with theatrical lighting.
+contexts:
+  - id: figure-action
+    description: A user-requested human action or interaction.
+  - id: nonfigurative-field
+    description: An image without human figures.
+  - id: static-architecture
+    description: A scene centered on architecture without a human action.
+  - id: quiet-single-figure-portrait
+    description: A still portrait without a consequential gesture or interaction.
+  - id: opposing-force-action
+    description: The requested action includes visible resistance, a catch, a pull, a push, or another counterforce.
 pillars:
   - Let a requested action read through the physical relation between bodies, hands, and any user-specified object.
   - Use intersecting or opposing diagonals to show effort, resistance, or changing balance without inventing drama.
@@ -30,6 +41,8 @@ rules:
   - id: action-through-counter-diagonals
     axis: composition
     importance: core
+    when_contexts:
+      - opposing-force-action
     applies_when: The requested scene contains a consequential human gesture or interaction.
     instruction: Arrange the requested bodies, arms, and relevant objects along readable diagonals that converge, cross, or oppose one another to carry the action; preserve the actual requested gesture rather than borrowing a famous pose.
     observable: The viewer can follow the action through the direction of the bodies and hands, and any opposing force is clear without explanatory props.

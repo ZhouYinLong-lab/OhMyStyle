@@ -36,10 +36,10 @@
 
 ## 新架构：身体动作与对角线构图（实验）
 
-`art-direction.yaml` 面向用户指定的人物动作：通过相互呼应或抵抗的身体、手臂和物件方向，让动作贴近观看者且一眼可读；暗部仍保留形体和局部色彩。它关注动作的身体能动性与近距离编排，不默认女性主角、暴力、宗教故事或某幅名作姿势。与卡拉瓦乔方向的单一强光和触觉质感区分，此方向优先处理动作的力线、反作用和裁切空间。
+`art-direction.yaml` 使用方向格式 2.1.0，面向用户指定的人物动作：通过身体、手臂和物件方向让动作贴近观看者且一眼可读；暗部仍保留形体和局部色彩。只有在调用者声明 `opposing-force-action` 时，才要求对角线明确表现抵抗、拉扯或接力等反作用力。它不默认女性主角、暴力、宗教故事或某幅名作姿势。与卡拉瓦乔方向的单一强光和触觉质感区分，此方向优先处理动作的力线和阅读动作所需的裁切空间。
 
 ```powershell
-python tools/compile-style.py style-packages/artists/artemisia-gentileschi --direction package --context figure-action --subject "A person catching a brass pot before it falls in a dim kitchen" --output runs/style-v2/artemisia-gentileschi-job.json
+python tools/compile-style.py style-packages/artists/artemisia-gentileschi --direction package --context figure-action --context opposing-force-action --subject "A person catching a brass pot before it falls in a dim kitchen" --output runs/style-v2/artemisia-gentileschi-job.json
 ```
 
 此规则仍处于实验状态，生图对照与跨主题稳定性待人工评审。

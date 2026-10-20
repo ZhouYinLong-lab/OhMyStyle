@@ -91,10 +91,10 @@ figures, text, trademark, or logo.
 
 ## New architecture: embodied action and diagonal composition (experimental)
 
-`art-direction.yaml` applies to user-requested figure actions. It uses interacting or countering body, arm, and object directions to make the action immediate and legible, while preserving local form and color in shadow. It focuses on physical agency and close staging; it does not default to a woman protagonist, violence, a religious story, or a famous pose. Unlike the Caravaggio direction's single strong light and tactile surface, this direction prioritizes action lines, counterforce, and the space needed to read the gesture.
+`art-direction.yaml` uses direction format 2.1.0 and applies to user-requested figure actions. It uses body, arm, and object directions to make the action immediate and legible, while preserving local form and color in shadow. The counter-diagonal rule activates only when the caller declares `opposing-force-action`, so ordinary gestures are not forced into a resistance pattern. It does not default to a woman protagonist, violence, a religious story, or a famous pose. Unlike the Caravaggio direction's single strong light and tactile surface, this direction prioritizes action lines and the space needed to read the gesture.
 
 ```powershell
-python tools/compile-style.py style-packages/artists/artemisia-gentileschi --direction package --context figure-action --subject "A person catching a brass pot before it falls in a dim kitchen" --output runs/style-v2/artemisia-gentileschi-job.json
+python tools/compile-style.py style-packages/artists/artemisia-gentileschi --direction package --context figure-action --context opposing-force-action --subject "A person catching a brass pot before it falls in a dim kitchen" --output runs/style-v2/artemisia-gentileschi-job.json
 ```
 
 This direction remains experimental; generated comparisons and stability across subjects still need human review.
