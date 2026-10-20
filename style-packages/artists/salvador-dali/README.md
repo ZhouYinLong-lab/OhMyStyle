@@ -44,4 +44,4 @@
 
 ## 实验方向：投影中的第二读法
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 只在用户明确要求某个主体的投影同时暗示另一种形态时启用：实体保持近写实、单一且完整，第二读法只出现在与主体接触并符合光线方向的影子里。它不默认加鸟、雕像、动物或时钟，也不复刻任何双重图像原作。见 [`comparisons/`](comparisons/README.md) 查看茶壶与鸟形影子的对照；规则仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，只在用户明确声明 `user-requested-shadow-double-reading` 时启用：实体保持近写实、单一且完整，第二读法只出现在与主体接触的影子里。只有场景明确采用单一主光源时，才声明 `scene-uses-single-dominant-light-source` 启用投影几何规则。它不默认加鸟、雕像、动物或时钟，也不复刻任何双重图像原作。见 [`comparisons/`](comparisons/README.md) 查看茶壶与鸟形影子的对照；规则仍处于实验状态。
