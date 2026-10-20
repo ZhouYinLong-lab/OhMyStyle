@@ -1,0 +1,141 @@
+schema_version: 2.1.0
+status: experimental
+id: mexican-muralism-direction
+name: 墨西哥壁画运动
+base_package: movements/mexican-muralism
+scope:
+  medium: public-scale matte mural painting language
+  representation: stylized
+  description: 以公共尺度的整体构图、坚实轮廓、分层色块和壁面叙事秩序组织视觉信息，强调画面结构的可读性与公共空间感。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以公共尺度的整体构图、坚实轮廓、分层色块和壁面叙事秩序组织视觉信息，强调画面结构的可读性与公共空间感。
+- 'composition: 让画面像一面可以被远距离阅读的整体墙面，主体群组与背景色块形成明确层次。; 使用相互咬合的斜线、弧线和块面组织视线，避免细碎的写实景深。'
+- 'palette: 以赭红、土黄、深蓝、墨绿和石灰白形成大块对比，颜色服务于结构与群体关系。; 允许局部高饱和，但整体保持矿物颜料般的厚重与统一。'
+- 'lighting: quality: broad matte light with wall-scale tonal stability; behavior: 明暗来自体块和颜料密度，不依赖商业摄影式轮廓光或强烈戏剧投影。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 让画面像一面可以被远距离阅读的整体墙面，主体群组与背景色块形成明确层次。;
+    使用相互咬合的斜线、弧线和块面组织视线，避免细碎的写实景深。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 让画面像一面可以被远距离阅读的整体墙面，主体群组与背景色块形成明确层次。;
+    使用相互咬合的斜线、弧线和块面组织视线，避免细碎的写实景深。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 让画面像一面可以被远距离阅读的整体墙面，主体群组与背景色块形成明确层次。;
+    使用相互咬合的斜线、弧线和块面组织视线，避免细碎的写实景深。.'
+  evidence:
+    source_ids:
+    - source-mexican-muralism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 以赭红、土黄、深蓝、墨绿和石灰白形成大块对比，颜色服务于结构与群体关系。;
+    允许局部高饱和，但整体保持矿物颜料般的厚重与统一。. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 以赭红、土黄、深蓝、墨绿和石灰白形成大块对比，颜色服务于结构与群体关系。;
+    允许局部高饱和，但整体保持矿物颜料般的厚重与统一。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    以赭红、土黄、深蓝、墨绿和石灰白形成大块对比，颜色服务于结构与群体关系。; 允许局部高饱和，但整体保持矿物颜料般的厚重与统一。.'
+  evidence:
+    source_ids:
+    - source-mexican-muralism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: broad matte light with wall-scale tonal
+    stability; behavior: 明暗来自体块和颜料密度，不依赖商业摄影式轮廓光或强烈戏剧投影。. Keep light coherent with the requested subject, medium,
+    and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: broad matte light
+    with wall-scale tonal stability; behavior: 明暗来自体块和颜料密度，不依赖商业摄影式轮廓光或强烈戏剧投影。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: broad matte light
+    with wall-scale tonal stability; behavior: 明暗来自体块和颜料密度，不依赖商业摄影式轮廓光或强烈戏剧投影。.'
+  evidence:
+    source_ids:
+    - source-mexican-muralism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: matte
+    fresco or casein-like painted wall surface; edges: firm contour masses with hand-painted irregularity.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    matte fresco or casein-like painted wall surface; edges: firm contour masses with hand-painted irregularity.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: matte fresco or casein-like painted wall surface; edges: firm contour masses with hand-painted
+    irregularity.'
+  evidence:
+    source_ids:
+    - source-mexican-muralism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium
+    to high in the main structural bands; placement: grouped around figures, architecture or user-specified
+    forms, with calm linking fields. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium to high in the main structural bands; placement: grouped around figures, architecture or user-specified
+    forms, with calm linking fields.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium to high in the main structural bands; placement: grouped around figures, architecture or
+    user-specified forms, with calm linking fields.'
+  evidence:
+    source_ids:
+    - source-mexican-muralism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-mexican-muralism-primary-source
+  kind: primary
+  base_asset_id: mexican-muralism-primary-source
+execution:
+  route: text_only
+  must:
+  - Clarify the user's subject and create a legible large-scale silhouette structure.
+  - Block the major mineral color fields before adding small internal marks.
+  - Use contour and overlap to connect figures, forms and background planes.
+  - Add restrained painted texture and local value shifts without breaking the wall-scale read.
+  - Remove accidental text, symbols, named figures and unrequested political content.
+  - 公共尺度的整体可读性、坚实轮廓和分层色块必须跨主体保留。
+  - 叙事关系可以随用户主题改变，不得由风格包自行添加历史事件或固定群像。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
