@@ -1,0 +1,174 @@
+schema_version: 2.1.0
+status: experimental
+id: royal-danish-academy-direction
+name: 丹麦皇家艺术学院
+base_package: schools/royal-danish-academy
+scope:
+  medium: architecture, product, spatial, and material research presentation
+  representation: stylized
+  description: 以建筑、设计和材料研究之间的协作方法，强调结构清晰、环境责任与可验证的制作过程。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory Scandinavian chair, timber house, or coastal landscape
+  - empty luxury minimalism without functional or material reasoning
+pillars:
+- 以建筑、设计和材料研究之间的协作方法，强调结构清晰、环境责任与可验证的制作过程。
+- 'differentiation: research-led structural clarity; honest material and fabrication evidence; calm Nordic
+  light with human-scale context'
+- 'composition: Use clear structural hierarchy, generous breathing room, and relationships that can be read
+  as both object and system.; Let construction details, joints, modules, or environmental context support the
+  main proposition without visual clutter.'
+- 'palette: Favor natural neutrals, mineral tones, and one deliberate accent tied to material or function.;
+  Keep the palette calm enough for structure and use to remain visible.'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: research-led
+    structural clarity; honest material and fabrication evidence; calm Nordic light with human-scale context.
+    Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: research-led structural clarity;
+    honest material and fabrication evidence; calm Nordic light with human-scale context.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: research-led
+    structural clarity; honest material and fabrication evidence; calm Nordic light with human-scale context.'
+  evidence:
+    source_ids:
+    - source-royal-danish-academy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Use clear structural
+    hierarchy, generous breathing room, and relationships that can be read as both object and system.; Let
+    construction details, joints, modules, or environmental context support the main proposition without visual
+    clutter.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Use clear structural
+    hierarchy, generous breathing room, and relationships that can be read as both object and system.; Let
+    construction details, joints, modules, or environmental context support the main proposition without visual
+    clutter..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Use clear
+    structural hierarchy, generous breathing room, and relationships that can be read as both object and system.;
+    Let construction details, joints, modules, or environmental context support the main proposition without
+    visual clutter..'
+  evidence:
+    source_ids:
+    - source-royal-danish-academy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Favor natural neutrals, mineral tones,
+    and one deliberate accent tied to material or function.; Keep the palette calm enough for structure and
+    use to remain visible.. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Favor natural neutrals, mineral
+    tones, and one deliberate accent tied to material or function.; Keep the palette calm enough for structure
+    and use to remain visible..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Favor natural neutrals, mineral tones, and one deliberate accent tied to material or function.; Keep the
+    palette calm enough for structure and use to remain visible..'
+  evidence:
+    source_ids:
+    - source-royal-danish-academy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: diffuse Nordic daylight or neutral exhibition
+    light; behavior: Reveal texture, assembly, and scale with soft shadows rather than theatrical effects..
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: diffuse Nordic daylight
+    or neutral exhibition light; behavior: Reveal texture, assembly, and scale with soft shadows rather than
+    theatrical effects..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: diffuse Nordic
+    daylight or neutral exhibition light; behavior: Reveal texture, assembly, and scale with soft shadows rather
+    than theatrical effects..'
+  evidence:
+    source_ids:
+    - source-royal-danish-academy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: honest
+    material presentation with restrained refinement; edges: precise where the construction is precise; tactile
+    where the material is raw. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    honest material presentation with restrained refinement; edges: precise where the construction is precise;
+    tactile where the material is raw.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: honest material presentation with restrained refinement; edges: precise where the construction
+    is precise; tactile where the material is raw.'
+  evidence:
+    source_ids:
+    - source-royal-danish-academy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    to moderate; placement: concentrated at joints, grain, seams, and fabrication evidence. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low to moderate; placement: concentrated at joints, grain, seams, and fabrication evidence.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low to moderate; placement: concentrated at joints, grain, seams, and fabrication evidence.'
+  evidence:
+    source_ids:
+    - source-royal-danish-academy-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-royal-danish-academy-primary-source
+  kind: primary
+  base_asset_id: royal-danish-academy-primary-source
+execution:
+  route: text_only
+  must:
+  - define the functional proposition and scale relationship
+  - assign materials according to behavior, durability, and tactile contrast
+  - compose the result with neutral light, readable joints, and environmental context
+  - preserve material honesty and functional legibility
+  - preserve research-like structure rather than decorative styling
+  - preserve balance between human scale, environment, and object system
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - mandatory Scandinavian chair, timber house, or coastal landscape
+  - empty luxury minimalism without functional or material reasoning
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
