@@ -24,10 +24,10 @@
 
 ## 新架构：偏置观察、空间裁切与过渡姿态（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在用户声明 `observed-figure-scene` 时启用。方向把观察视点、非对称取景、地面/空间平面和动作中的身体平衡连成可检查的规则；只有场景适合时才使用高机位或裁切，不默认加入舞者、舞台、镜子或排练室。它与莫里索的手势笔触和开放边缘、阿尔泰米西娅的近距离动作受力构图有明确分工。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户声明 `observed-figure-scene` 时启用。只有调用者同时声明 `readable-spatial-plane`，才会应用地面/空间平面规则；方向把观察视点、非对称取景与动作中的身体平衡连成可检查的规则。只有场景适合时才使用高机位或裁切，不默认加入舞者、舞台、镜子或排练室。它与莫里索的手势笔触和开放边缘、阿尔泰米西娅的近距离动作受力构图有明确分工。
 
 ```powershell
-python tools/compile-style.py style-packages/artists/edgar-degas --direction package --context observed-figure-scene --subject "A commuter kneeling to retrieve a dropped glove beside a station bench, seen from a slightly elevated oblique viewpoint" --output runs/style-v2/edgar-degas-job.json
+python tools/compile-style.py style-packages/artists/edgar-degas --direction package --context observed-figure-scene --context readable-spatial-plane --subject "A commuter kneeling to retrieve a dropped glove beside a station bench, seen from a slightly elevated oblique viewpoint" --output runs/style-v2/edgar-degas-job.json
 ```
 
 此方向仍为实验规则；同题对照和跨主体稳定性待人工评审。局部新旧视觉对照保存在工作区 `runs/edgar-degas-direction-comparison/`，不作为已通过评审的证据。

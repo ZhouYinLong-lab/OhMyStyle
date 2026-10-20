@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: degas-oblique-observation-and-spatial-crop
 name: Degas oblique observation and spatial crop
@@ -21,6 +21,17 @@ scope:
     - Preserve the requested subject, identities, action, count, setting, and point of view when specified; do not add dancers, a studio, a stage, mirrors, or period props unless requested.
     - "Treat cropping as a compositional option: never cut through a face, hand, or action-critical contact when that would make the user-requested event unreadable."
     - Use an elevated or oblique viewpoint only when it clarifies spatial relations; do not force a tilted horizon or distorted anatomy.
+contexts:
+  - id: observed-figure-scene
+    description: A requested human figure or interaction shown in a specific setting.
+  - id: centered-iconic-portrait
+    description: A centered portrait intended to read as an iconic frontal image.
+  - id: nonfigurative-field
+    description: An image without a human figure as a subject.
+  - id: flat-orthographic-diagram
+    description: A diagram or scene intentionally shown without perspective depth.
+  - id: readable-spatial-plane
+    description: The requested setting includes a visible floor, ground, or comparable plane.
 pillars:
   - Place the viewpoint off-center or obliquely when the scene benefits from an observed, mid-moment framing.
   - Let a visible floor, ground, or other spatial plane establish depth and direct attention through the scene.
@@ -44,6 +55,8 @@ rules:
   - id: spatial-plane-as-compositional-path
     axis: spatial_composition
     importance: core
+    when_contexts:
+      - readable-spatial-plane
     applies_when: The requested setting includes a readable floor, ground, or comparable plane.
     instruction: Give the spatial plane enough area and directional geometry to connect foreground and figures; use its edges, seams, or perspective only when they belong to the requested setting, and keep the plane subordinate to the focal action.
     observable: The plane makes the viewpoint and depth legible and guides attention through the requested scene without becoming a decorative pattern.

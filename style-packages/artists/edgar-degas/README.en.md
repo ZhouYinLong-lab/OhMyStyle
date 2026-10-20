@@ -24,10 +24,10 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 ## New architecture: oblique observation, spatial crop, and transitional pose (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `observed-figure-scene`. It links viewpoint, asymmetric framing, a floor or spatial plane, and bodily balance into reviewable rules. Elevated views and crops are used only when the scene benefits from them; dancers, stages, mirrors, and rehearsal rooms are not defaults. This separates the direction from Morisot's gesture-led brushwork and open edges, and Artemisia's close action staging and counter-diagonals.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when the user declares `observed-figure-scene`. The floor or spatial-plane rule activates only when the caller also declares `readable-spatial-plane`; viewpoint, asymmetric framing, and bodily balance remain reviewable rules. Elevated views and crops are used only when the scene benefits from them; dancers, stages, mirrors, and rehearsal rooms are not defaults. This separates the direction from Morisot's gesture-led brushwork and open edges, and Artemisia's close action staging and counter-diagonals.
 
 ```powershell
-python tools/compile-style.py style-packages/artists/edgar-degas --direction package --context observed-figure-scene --subject "A commuter kneeling to retrieve a dropped glove beside a station bench, seen from a slightly elevated oblique viewpoint" --output runs/style-v2/edgar-degas-job.json
+python tools/compile-style.py style-packages/artists/edgar-degas --direction package --context observed-figure-scene --context readable-spatial-plane --subject "A commuter kneeling to retrieve a dropped glove beside a station bench, seen from a slightly elevated oblique viewpoint" --output runs/style-v2/edgar-degas-job.json
 ```
 
 The direction remains experimental; same-subject comparisons and stability across subjects need human review. Local old/new visual comparisons are saved under `runs/edgar-degas-direction-comparison/` and are not approved evaluation evidence.
