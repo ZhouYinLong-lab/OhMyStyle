@@ -1,0 +1,149 @@
+schema_version: 2.1.0
+status: experimental
+id: qinglv-landscape-scroll-game-art-direction
+name: 青绿山水画卷游戏美术
+base_package: game-art/qinglv-landscape-scroll-game-art
+scope:
+  medium: 勾线、皴擦和概括色面共同表现山水; 画卷构图可转译成可探索空间
+  representation: stylized
+  description: 借石青、石绿、勾线和层叠峰峦构成可游历的画卷空间，同时保持路径、远近和交互层级清楚。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - simple teal filter
+  - photorealistic panorama
+  - copied painting
+  - unclear paths
+pillars:
+- 借石青、石绿、勾线和层叠峰峦构成可游历的画卷空间，同时保持路径、远近和交互层级清楚。
+- 'medium: 勾线、皴擦和概括色面共同表现山水; 画卷构图可转译成可探索空间'
+- 'composition: 群峰递进，长卷视线与可游路径并存; 远景轮廓逐层简化'
+- 'palette: 石青石绿为主，少量赭石点睛; 色彩是结构关系而非滤镜'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 勾线、皴擦和概括色面共同表现山水;
+    画卷构图可转译成可探索空间.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 勾线、皴擦和概括色面共同表现山水;
+    画卷构图可转译成可探索空间.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    勾线、皴擦和概括色面共同表现山水; 画卷构图可转译成可探索空间.'
+  evidence:
+    source_ids:
+    - source-qinglv-landscape-scroll-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 群峰递进，长卷视线与可游路径并存;
+    远景轮廓逐层简化. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 群峰递进，长卷视线与可游路径并存;
+    远景轮廓逐层简化.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 群峰递进，长卷视线与可游路径并存;
+    远景轮廓逐层简化.'
+  evidence:
+    source_ids:
+    - source-qinglv-landscape-scroll-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 石青石绿为主，少量赭石点睛; 色彩是结构关系而非滤镜. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 石青石绿为主，少量赭石点睛; 色彩是结构关系而非滤镜.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    石青石绿为主，少量赭石点睛; 色彩是结构关系而非滤镜.'
+  evidence:
+    source_ids:
+    - source-qinglv-landscape-scroll-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 柔光服务峰峦层次; 云雾不遮挡路径. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 柔光服务峰峦层次; 云雾不遮挡路径.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 柔光服务峰峦层次; 云雾不遮挡路径.'
+  evidence:
+    source_ids:
+    - source-qinglv-landscape-scroll-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 近景轮廓清楚，远景更简练;
+    水面留白. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 近景轮廓清楚，远景更简练;
+    水面留白.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    近景轮廓清楚，远景更简练; 水面留白.'
+  evidence:
+    source_ids:
+    - source-qinglv-landscape-scroll-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纹理沿山石和植被结构;
+    远景降低线条密度. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纹理沿山石和植被结构;
+    远景降低线条密度.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纹理沿山石和植被结构; 远景降低线条密度.'
+  evidence:
+    source_ids:
+    - source-qinglv-landscape-scroll-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-qinglv-landscape-scroll-game-art-primary-source
+  kind: primary
+  base_asset_id: qinglv-landscape-scroll-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 确定画卷视线和可走路径
+  - 勾线归纳山体和水岸
+  - 分层铺设青绿并控制远近饱和度
+  - 加入云雾和植被
+  - 检查路径明度差
+  - 青绿是结构性用色
+  - 路径与画卷层次均清楚
+  - 不复刻具体古画
+  avoid:
+  - simple teal filter
+  - photorealistic panorama
+  - copied painting
+  - unclear paths
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
