@@ -1,0 +1,185 @@
+schema_version: 2.1.0
+status: experimental
+id: california-institute-of-the-arts-direction
+name: 加州艺术学院
+base_package: schools/california-institute-of-the-arts
+scope:
+  medium: cross-media contemporary art direction and exhibition presentation
+  representation: stylized
+  description: 以跨媒介、批判思考、实验制作和展览语境之间的往返，形成开放而过程导向的当代艺术提案。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - a school logo, classroom, student identity, or institutional branding
+  - mandatory collage, projection, or process board when the user's subject does not call for it
+  - decorative art-school clutter without a clear conceptual anchor
+pillars:
+- 以跨媒介、批判思考、实验制作和展览语境之间的往返，形成开放而过程导向的当代艺术提案。
+- 'differentiation: concept-led cross-media hierarchy; process evidence integrated into a clean exhibition
+  view; tactile coexistence of physical and projected materials'
+- 'composition: Organize the image like a considered exhibition view: one clear conceptual anchor with supporting
+  material evidence.; Allow separate media to coexist—paper, projection, clay, metal, fabric, or diagram—without
+  collapsing into clutter.'
+- 'palette: Start from a neutral field and let one acid or primary accent mark the conceptual hinge.; Keep
+  color blocks and material differences legible rather than applying a school-wide visual filter.'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: concept-led
+    cross-media hierarchy; process evidence integrated into a clean exhibition view; tactile coexistence of
+    physical and projected materials. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: concept-led cross-media hierarchy;
+    process evidence integrated into a clean exhibition view; tactile coexistence of physical and projected
+    materials.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: concept-led
+    cross-media hierarchy; process evidence integrated into a clean exhibition view; tactile coexistence of
+    physical and projected materials.'
+  evidence:
+    source_ids:
+    - source-california-institute-of-the-arts-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Organize the
+    image like a considered exhibition view: one clear conceptual anchor with supporting material evidence.;
+    Allow separate media to coexist—paper, projection, clay, metal, fabric, or diagram—without collapsing into
+    clutter.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Organize the image
+    like a considered exhibition view: one clear conceptual anchor with supporting material evidence.; Allow
+    separate media to coexist—paper, projection, clay, metal, fabric, or diagram—without collapsing into clutter..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Organize
+    the image like a considered exhibition view: one clear conceptual anchor with supporting material evidence.;
+    Allow separate media to coexist—paper, projection, clay, metal, fabric, or diagram—without collapsing into
+    clutter..'
+  evidence:
+    source_ids:
+    - source-california-institute-of-the-arts-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Start from a neutral field and let
+    one acid or primary accent mark the conceptual hinge.; Keep color blocks and material differences legible
+    rather than applying a school-wide visual filter.. Adapt their balance to the requested subject; do not
+    apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Start from a neutral field
+    and let one acid or primary accent mark the conceptual hinge.; Keep color blocks and material differences
+    legible rather than applying a school-wide visual filter..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Start from a neutral field and let one acid or primary accent mark the conceptual hinge.; Keep color blocks
+    and material differences legible rather than applying a school-wide visual filter..'
+  evidence:
+    source_ids:
+    - source-california-institute-of-the-arts-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: clean gallery light with controlled screen
+    or projector emission; behavior: Give each material enough even light to read its texture; keep projected
+    light localized.; behavior: Separate process artifacts from decorative noise through clear spatial hierarchy..
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: clean gallery light
+    with controlled screen or projector emission; behavior: Give each material enough even light to read its
+    texture; keep projected light localized.; behavior: Separate process artifacts from decorative noise through
+    clear spatial hierarchy..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: clean gallery
+    light with controlled screen or projector emission; behavior: Give each material enough even light to read
+    its texture; keep projected light localized.; behavior: Separate process artifacts from decorative noise
+    through clear spatial hierarchy..'
+  evidence:
+    source_ids:
+    - source-california-institute-of-the-arts-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: tactile
+    contemporary installation documentation; edges: clean presentation edges interrupted by real folds, seams,
+    cuts, or hand-built irregularities. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    tactile contemporary installation documentation; edges: clean presentation edges interrupted by real folds,
+    seams, cuts, or hand-built irregularities.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: tactile contemporary installation documentation; edges: clean presentation edges interrupted by
+    real folds, seams, cuts, or hand-built irregularities.'
+  evidence:
+    source_ids:
+    - source-california-institute-of-the-arts-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium;
+    detail clusters around material joins and process evidence; placement: visible in paper fibers, clay marks,
+    tape, projection spill, and edited working notes without readable text. Preserve detail hierarchy and material
+    identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium; detail clusters around material joins and process evidence; placement: visible in paper fibers,
+    clay marks, tape, projection spill, and edited working notes without readable text.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium; detail clusters around material joins and process evidence; placement: visible in paper
+    fibers, clay marks, tape, projection spill, and edited working notes without readable text.'
+  evidence:
+    source_ids:
+    - source-california-institute-of-the-arts-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-california-institute-of-the-arts-primary-source
+  kind: primary
+  base_asset_id: california-institute-of-the-arts-primary-source
+execution:
+  route: text_only
+  must:
+  - Identify the user's central idea and select one dominant material or spatial anchor.
+  - Add one or two supporting media that clarify process or concept rather than decorate.
+  - Light the installation evenly, keeping projection or screen light local and controlled.
+  - Edit the frame so process evidence is present but no accidental text, logo, or classroom clutter remains.
+  - Conceptual hierarchy remains clear when the subject changes.
+  - Material and process differences remain visible without requiring a classroom or institutional logo.
+  - Mixed media serves the requested idea and does not become a mandatory collage recipe.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - a school logo, classroom, student identity, or institutional branding
+  - mandatory collage, projection, or process board when the user's subject does not call for it
+  - decorative art-school clutter without a clear conceptual anchor
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
