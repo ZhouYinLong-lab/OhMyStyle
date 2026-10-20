@@ -38,7 +38,7 @@ See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references
 
 ## New architecture: gaze, depth, and selective precision (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) applies to requested interior portraits and group portraits. It uses gaze and posture to organize relationships, overlap and value to establish room depth, then reserves precise marks for eyes, hands, and a few focal details. It does not default to mirrors, doorways, court dress, or a specific group arrangement; it also differs from Caravaggio's direction, which centers on single-source light and close action.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 for requested interior portraits and group portraits. Selective precision at focal features is a base rule; callers can declare `multiple-people-or-person-engaged-with-subject` or `interior-with-visible-spatial-depth` to activate the matching gaze or room-depth rule. It does not default to mirrors, doorways, court dress, or a specific group arrangement; it also differs from Caravaggio's direction, which centers on single-source light and close action.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/diego-velazquez --direction package --context observed-interior-portrait --subject "Three musicians rehearsing in a dim room, one listening while another checks the sheet music" --output runs/style-v2/diego-velazquez-job.json

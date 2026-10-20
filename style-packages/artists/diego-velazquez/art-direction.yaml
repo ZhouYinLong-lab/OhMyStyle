@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: velazquez-gaze-depth-and-selective-precision
 name: Velázquez gaze, depth, and selective precision
@@ -21,6 +21,19 @@ scope:
     - Preserve the requested people, identities, count, relationships, and setting; do not add a mirror, doorway, court costume, attendant, or painter figure unless requested.
     - Use gaze and posture to connect requested people or a person and task; do not force anyone to look at the viewer.
     - Let selective light clarify the requested scene without turning it into a theatrical spotlight or copying a known portrait arrangement.
+contexts:
+  - id: observed-interior-portrait
+    description: A portrait or group portrait requested in an observed interior setting.
+  - id: open-air-landscape
+    description: The user requests an outdoor landscape.
+  - id: isolated-product-still-life
+    description: The user requests an isolated product or still-life rendering.
+  - id: high-key-abstract-field
+    description: The user requests an abstract field dominated by high values.
+  - id: multiple-people-or-person-engaged-with-subject
+    description: The requested scene includes multiple people or one person engaged with another subject.
+  - id: interior-with-visible-spatial-depth
+    description: The requested interior portrait has visible foreground, figure plane, and background depth.
 pillars:
   - Distribute gaze and body orientation to create a readable social or observational exchange.
   - Build room depth through overlapping forms, controlled dark planes, and any light opening already established by the user.
@@ -30,6 +43,8 @@ rules:
   - id: gaze-posture-exchange
     axis: figure_relationships
     importance: core
+    when_contexts:
+      - multiple-people-or-person-engaged-with-subject
     applies_when: The requested scene includes multiple people or a person engaged with another subject.
     instruction: Use the requested gaze directions, head turns, and posture to create a path of attention among the figures, their task, or an explicitly requested viewer; keep each gesture natural and specific to the brief.
     observable: A viewer can infer who attends to whom or what, and the relationships read without added narrative props.
@@ -44,6 +59,8 @@ rules:
   - id: layered-dark-room-depth
     axis: space_and_lighting
     importance: core
+    when_contexts:
+      - interior-with-visible-spatial-depth
     applies_when: The user requests an interior portrait or group scene with visible spatial depth.
     instruction: Separate foreground, figure plane, and background with overlap and restrained changes in value; use a coherent patch or opening of light only when the requested setting provides one, and keep shadowed architecture legible.
     observable: Space recedes behind the figures without relying on a black void, a universal spotlight, or an invented architectural feature.
@@ -57,6 +74,8 @@ rules:
   - id: focal-precision-with-broad-passages
     axis: mark_making_and_edges
     importance: core
+    when_contexts:
+      - observed-interior-portrait
     applies_when: A portrait or group scene has a few clear points of attention.
     instruction: Use precise, economical marks for eyes, hands, and focal materials; let less important garments and room surfaces resolve through broader, freer strokes, preserving enough edge information to identify the forms.
     observable: Detail density follows attention, and broad passages feel intentional rather than unfinished or uniformly blurred.

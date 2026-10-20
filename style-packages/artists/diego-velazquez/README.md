@@ -38,7 +38,7 @@
 
 ## 新架构：目光、纵深与选择性精确（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在用户要求的室内肖像或群像中启用：用人物视线与姿态组织关系，以叠合和明暗建立房间纵深，再把精细笔触留给眼睛、手和少数焦点。它不默认镜子、门口、宫廷服饰或特定群像布局；也不同于卡拉瓦乔方向以单一强光和近景动作作为中心。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户要求的室内肖像或群像中启用：以精细焦点作基础规则；调用者可按画面是否包含互动人物或可见纵深，分别声明 `multiple-people-or-person-engaged-with-subject`、`interior-with-visible-spatial-depth`，再启用视线关系或房间纵深规则。它不默认镜子、门口、宫廷服饰或特定群像布局；也不同于卡拉瓦乔方向以单一强光和近景动作作为中心。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/diego-velazquez --direction package --context observed-interior-portrait --subject "Three musicians rehearsing in a dim room, one listening while another checks the sheet music" --output runs/style-v2/diego-velazquez-job.json
