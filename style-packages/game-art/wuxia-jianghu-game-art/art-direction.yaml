@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: wuxia-jianghu-game-art-direction
+name: 武侠江湖游戏美术
+base_package: game-art/wuxia-jianghu-game-art
+scope:
+  medium: 媒介开放，可为像素、水墨或三维; 动作重心、兵器方向和落点清楚
+  representation: stylized
+  description: 以侠客行动、兵器线条、门派空间和山水路径塑造武侠世界；题材规则与水墨、像素或写实媒介保持可组合关系。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - fixed hero or weapon
+  - unreadable effects
+  - assumed ink medium
+pillars:
+- 以侠客行动、兵器线条、门派空间和山水路径塑造武侠世界；题材规则与水墨、像素或写实媒介保持可组合关系。
+- 'medium: 媒介开放，可为像素、水墨或三维; 动作重心、兵器方向和落点清楚'
+- 'composition: 动作、兵器轨迹与路径形成方向; 庭院、山道和门派空间各有秩序'
+- 'palette: 地貌与服装色彩相互区分; 门派识别色作为局部信号'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 媒介开放，可为像素、水墨或三维;
+    动作重心、兵器方向和落点清楚.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 媒介开放，可为像素、水墨或三维;
+    动作重心、兵器方向和落点清楚.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    媒介开放，可为像素、水墨或三维; 动作重心、兵器方向和落点清楚.'
+  evidence:
+    source_ids:
+    - source-wuxia-jianghu-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 动作、兵器轨迹与路径形成方向;
+    庭院、山道和门派空间各有秩序. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 动作、兵器轨迹与路径形成方向; 庭院、山道和门派空间各有秩序.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 动作、兵器轨迹与路径形成方向;
+    庭院、山道和门派空间各有秩序.'
+  evidence:
+    source_ids:
+    - source-wuxia-jianghu-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 地貌与服装色彩相互区分; 门派识别色作为局部信号. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 地貌与服装色彩相互区分; 门派识别色作为局部信号.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    地貌与服装色彩相互区分; 门派识别色作为局部信号.'
+  evidence:
+    source_ids:
+    - source-wuxia-jianghu-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 环境光不遮住人物与路径; 招式亮色沿运动方向短暂出现. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 环境光不遮住人物与路径; 招式亮色沿运动方向短暂出现.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 环境光不遮住人物与路径; 招式亮色沿运动方向短暂出现.'
+  evidence:
+    source_ids:
+    - source-wuxia-jianghu-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 服饰、兵器、木构和山石各有材质;
+    装饰不遮挡轮廓. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 服饰、兵器、木构和山石各有材质;
+    装饰不遮挡轮廓.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    服饰、兵器、木构和山石各有材质; 装饰不遮挡轮廓.'
+  evidence:
+    source_ids:
+    - source-wuxia-jianghu-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 特效随动作方向扩散; 背景为战斗留出对比空间.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 特效随动作方向扩散;
+    背景为战斗留出对比空间.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    特效随动作方向扩散; 背景为战斗留出对比空间.'
+  evidence:
+    source_ids:
+    - source-wuxia-jianghu-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-wuxia-jianghu-game-art-primary-source
+  kind: primary
+  base_asset_id: wuxia-jianghu-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 确定媒介与镜头
+  - 规划路径和交手空间
+  - 明确人物重心与兵器方向
+  - 加入生活线索但不固定身份
+  - 检查特效是否压住轮廓
+  - 题材规则可读但媒介开放
+  - 动作、地形和社会空间成立
+  - 不固定门派或角色
+  avoid:
+  - fixed hero or weapon
+  - unreadable effects
+  - assumed ink medium
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
