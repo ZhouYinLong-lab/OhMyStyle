@@ -1,0 +1,149 @@
+schema_version: 2.1.0
+status: experimental
+id: greek-archaic-period-direction
+name: 古希腊古风时期
+base_package: movements/greek-archaic-period
+scope:
+  medium: 'support: painted clay vessel or shallow ceramic panel; mark: dark slip with incised details and
+    reserved clay highlights; finish: kiln-fired, matte-to-satin ceramic surface'
+  representation: stylized
+  description: A transitional Greek visual language where patterned figures become more naturalistic, narrative
+    pottery expands, and black-figure or red-figure contrast organizes bodies, animals, ornament, and mythic
+    action.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+pillars:
+- A transitional Greek visual language where patterned figures become more naturalistic, narrative pottery
+  expands, and black-figure or red-figure contrast organizes bodies, animals, ornament, and mythic action.
+- 'composition: build a stable field around a central action or procession; fill negative space with controlled
+  rosettes, lotuses, or small marks; use profile figures and overlapping limbs to clarify narrative'
+- 'form: edges: firm contour with incised or reserved internal detail; bodies: frontal or profile, increasingly
+  observed but still patterned; depth: shallow overlap, no atmospheric recession'
+- 'palette: black or deep brown; orange-red clay; cream and muted red accents'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: build a stable
+    field around a central action or procession; fill negative space with controlled rosettes, lotuses, or
+    small marks; use profile figures and overlapping limbs to clarify narrative. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: build a stable field
+    around a central action or procession; fill negative space with controlled rosettes, lotuses, or small
+    marks; use profile figures and overlapping limbs to clarify narrative.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: build a
+    stable field around a central action or procession; fill negative space with controlled rosettes, lotuses,
+    or small marks; use profile figures and overlapping limbs to clarify narrative.'
+  evidence:
+    source_ids:
+    - source-met-archaic
+    - source-met-240424
+    - source-met-256166
+    basis: curatorial_inference
+    visual_review: pending
+- id: form
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: edges: firm contour with incised or reserved internal
+    detail; bodies: frontal or profile, increasingly observed but still patterned; depth: shallow overlap,
+    no atmospheric recession. Keep it subordinate to the requested subject and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: edges: firm contour with
+    incised or reserved internal detail; bodies: frontal or profile, increasingly observed but still patterned;
+    depth: shallow overlap, no atmospheric recession.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: edges: firm contour
+    with incised or reserved internal detail; bodies: frontal or profile, increasingly observed but still patterned;
+    depth: shallow overlap, no atmospheric recession.'
+  evidence:
+    source_ids:
+    - source-met-archaic
+    - source-met-240424
+    - source-met-256166
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: black or deep brown; orange-red clay;
+    cream and muted red accents. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: black or deep brown; orange-red
+    clay; cream and muted red accents.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    black or deep brown; orange-red clay; cream and muted red accents.'
+  evidence:
+    source_ids:
+    - source-met-archaic
+    - source-met-240424
+    - source-met-256166
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: warm orange
+    clay; high-contrast dark figure field or reserved figure field; ornamental borders and repeated filler
+    marks. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: warm orange
+    clay; high-contrast dark figure field or reserved figure field; ornamental borders and repeated filler
+    marks.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    warm orange clay; high-contrast dark figure field or reserved figure field; ornamental borders and repeated
+    filler marks.'
+  evidence:
+    source_ids:
+    - source-met-archaic
+    - source-met-240424
+    - source-met-256166
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- form
+- color
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - form
+  - color
+  instruction: Keep the package-specific relationship among composition, form, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-met-archaic
+  kind: primary
+  base_asset_id: met-archaic
+- id: source-met-240424
+  kind: primary
+  base_asset_id: met-240424
+- id: source-met-256166
+  kind: primary
+  base_asset_id: met-256166
+- id: source-met-254709
+  kind: primary
+  base_asset_id: met-254709
+- id: source-met-246113
+  kind: primary
+  base_asset_id: met-246113
+execution:
+  route: text_only
+  must:
+  - ornament supports the story
+  - bodies remain contour-led
+  - material and vessel geometry stay visible
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - modern comic line art
+  - photorealistic myth cinema
+  - empty minimalist composition
+  - arbitrary fantasy armor
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
