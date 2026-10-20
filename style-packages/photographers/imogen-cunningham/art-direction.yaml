@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: imogen-cunningham-direction
+name: 伊莫金·坎宁安
+base_package: photographers/imogen-cunningham
+scope:
+  medium: modernist observational photography
+  representation: recognizable
+  description: 以细密的植物观察、身体线条和清晰的摄影结构，在自然形体与抽象形式之间保持精确而柔韧的观看。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以细密的植物观察、身体线条和清晰的摄影结构，在自然形体与抽象形式之间保持精确而柔韧的观看。
+- 'composition: Isolate a user-supplied form with close attention to contour, growth, gesture, or bodily structure.;
+  Use simple framing and a calm ground so small formal changes remain visible.'
+- 'palette: Prefer natural greens, creams, skin tones, and quiet neutrals, with monochrome options for form
+  studies.; Keep color subordinate to structure and surface rather than applying a signature tint.'
+- 'lighting: quality: soft daylight or controlled studio daylight; behavior: Model form with gentle directional
+  light and preserve clean shadow information.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Isolate a user-supplied
+    form with close attention to contour, growth, gesture, or bodily structure.; Use simple framing and a calm
+    ground so small formal changes remain visible.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Isolate a user-supplied
+    form with close attention to contour, growth, gesture, or bodily structure.; Use simple framing and a calm
+    ground so small formal changes remain visible..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Isolate
+    a user-supplied form with close attention to contour, growth, gesture, or bodily structure.; Use simple
+    framing and a calm ground so small formal changes remain visible..'
+  evidence:
+    source_ids:
+    - source-imogen-cunningham-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Prefer natural greens, creams, skin
+    tones, and quiet neutrals, with monochrome options for form studies.; Keep color subordinate to structure
+    and surface rather than applying a signature tint.. Adapt their balance to the requested subject; do not
+    apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Prefer natural greens, creams,
+    skin tones, and quiet neutrals, with monochrome options for form studies.; Keep color subordinate to structure
+    and surface rather than applying a signature tint..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Prefer natural greens, creams, skin tones, and quiet neutrals, with monochrome options for form studies.;
+    Keep color subordinate to structure and surface rather than applying a signature tint..'
+  evidence:
+    source_ids:
+    - source-imogen-cunningham-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft daylight or controlled studio daylight;
+    behavior: Model form with gentle directional light and preserve clean shadow information.. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft daylight or controlled
+    studio daylight; behavior: Model form with gentle directional light and preserve clean shadow information..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft daylight
+    or controlled studio daylight; behavior: Model form with gentle directional light and preserve clean shadow
+    information..'
+  evidence:
+    source_ids:
+    - source-imogen-cunningham-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: finely
+    resolved photographic print; edges: precise focus at the chosen structural point, with natural falloff
+    elsewhere. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    finely resolved photographic print; edges: precise focus at the chosen structural point, with natural falloff
+    elsewhere.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: finely resolved photographic print; edges: precise focus at the chosen structural point, with natural
+    falloff elsewhere.'
+  evidence:
+    source_ids:
+    - source-imogen-cunningham-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: moderate
+    and selective; placement: concentrated in surface, contour, veins, folds, or other structural evidence.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    moderate and selective; placement: concentrated in surface, contour, veins, folds, or other structural
+    evidence.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: moderate and selective; placement: concentrated in surface, contour, veins, folds, or other structural
+    evidence.'
+  evidence:
+    source_ids:
+    - source-imogen-cunningham-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-imogen-cunningham-primary-source
+  kind: primary
+  base_asset_id: imogen-cunningham-primary-source
+execution:
+  route: text_only
+  must:
+  - identify the user-supplied subject's most informative contour or structural rhythm
+  - choose a simple ground and camera distance that make that structure legible
+  - use gentle daylight and precise focus, then preserve natural print character
+  - close observation of structure
+  - simple framing and controlled focus
+  - natural light with precise tonal separation
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
