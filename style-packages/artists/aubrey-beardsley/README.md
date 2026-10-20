@@ -52,3 +52,7 @@ python tools/compile-style.py style-packages/artists/aubrey-beardsley --directio
 ```
 
 该规则仍为实验状态；同题生图对照及跨主体稳定性待人工评审。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。

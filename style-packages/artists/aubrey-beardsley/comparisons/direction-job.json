@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "aubrey-beardsley",
+    "name": "奥布里·比亚兹莱",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\aubrey-beardsley"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A small moth resting on a cracked teacup on a plain shelf",
+  "prompt": "USER SUBJECT: A small moth resting on a cracked teacup on a plain shelf\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: pen_and_ink_illustration\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [black-mass-paper-counterweight] Organize the subject with a small number of clear black masses balanced by broad untouched paper; use white gaps inside or around forms to keep their edges readable.\n- [calligraphic-contour-hierarchy] Draw contours as confident ink decisions, varying thickness, taper, and curvature to separate near and far edges; use solid brush shapes where a line should become a mass.\n- [selective-detail-open-paper] Place fine line work only where it clarifies a requested material, overlap, or focal feature; let secondary surfaces resolve as clean paper or a single ink shape.\n- [silhouette-line-space-coherence] Keep black mass, contour rhythm, and fine detail in service of one readable silhouette with deliberately open paper around it.\nREQUIREMENT: Declare the black-and-white-ink-illustration context before applying this direction.\nREQUIREMENT: Preserve the requested subject, count, and layout.\nREQUIREMENT: Establish black-white balance before fine detail.\nREQUIREMENT: Keep contour weight and detail density varied.",
+  "negative_prompt": "gray gradients, uniform midtone, and undifferentiated black fill\nuniform technical outlines and automatic contour tracing\nuniform hatching, unrequested flourishes, and decorative borders\nadding recurring literary, grotesque, or period motifs\nadding decorative frames or all-over ornament without request\nreplacing ink shape design with gradients or color-led treatment",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "beardsley-ink-mass-and-negative-space",
+    "name": "Beardsley ink mass and negative space",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\aubrey-beardsley\\art-direction.yaml",
+    "sha256": "fa088b2fd39e2ed70f1499f42301986eee0fedb92de621dfe9d4ceb441b80369",
+    "active_rule_ids": [
+      "black-mass-paper-counterweight",
+      "calligraphic-contour-hierarchy",
+      "selective-detail-open-paper"
+    ],
+    "contexts": [
+      "black-and-white-ink-illustration"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare the black-and-white-ink-illustration context before applying this direction.",
+      "Preserve the requested subject, count, and layout.",
+      "Establish black-white balance before fine detail.",
+      "Keep contour weight and detail density varied."
+    ],
+    "avoid": [
+      "adding recurring literary, grotesque, or period motifs",
+      "adding decorative frames or all-over ornament without request",
+      "replacing ink shape design with gradients or color-led treatment"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "pen_and_ink_illustration",
+      "representation": "stylized",
+      "description": "A black-and-white illustration direction built from decisive ink masses, fluid calligraphic contours, and open paper fields. Line density and black area are deliberately unequal: they guide the eye instead of describing every surface evenly.",
+      "required_contexts": [
+        "black-and-white-ink-illustration"
+      ],
+      "incompatible_contexts": [
+        "color-led-poster",
+        "painterly-gradient-rendering",
+        "photorealistic-rendering"
+      ],
+      "limitations": [
+        "Keep the user's subject and layout authoritative; do not add period costume, literary characters, grotesques, or decorative framing unless requested.",
+        "Use black ink and paper white as the default value system; do not add color or gray wash unless requested.",
+        "Preserve broad quiet paper areas so fine line work and solid blacks remain legible."
+      ]
+    },
+    "rules": [
+      {
+        "id": "black-mass-paper-counterweight",
+        "axis": "composition_and_value",
+        "importance": "core",
+        "applies_when": "The requested image uses black ink on a light ground.",
+        "instruction": "Organize the subject with a small number of clear black masses balanced by broad untouched paper; use white gaps inside or around forms to keep their edges readable.",
+        "observable": "The composition reads at thumbnail size through black-white balance before any fine detail is noticed.",
+        "reject_when": "Every area has similar gray density, black fill merges separate forms, or there is no calm open paper.",
+        "evidence": {
+          "source_ids": [
+            "beardsley-met-black-cat",
+            "beardsley-orsay-profile"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "gray gradients, uniform midtone, and undifferentiated black fill"
+      },
+      {
+        "id": "calligraphic-contour-hierarchy",
+        "axis": "line_and_edge",
+        "importance": "core",
+        "applies_when": "The subject has a readable outer silhouette or overlapping forms.",
+        "instruction": "Draw contours as confident ink decisions, varying thickness, taper, and curvature to separate near and far edges; use solid brush shapes where a line should become a mass.",
+        "observable": "The outline has a controlled rhythm and the silhouette remains clear without a mechanically uniform stroke.",
+        "reject_when": "Every edge uses the same vector-like width, or hatch and outline compete equally across the whole image.",
+        "evidence": {
+          "source_ids": [
+            "beardsley-orsay-profile",
+            "beardsley-met-black-cat"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform technical outlines and automatic contour tracing"
+      },
+      {
+        "id": "selective-detail-open-paper",
+        "axis": "detail_density",
+        "importance": "core",
+        "applies_when": "A focal object or passage can carry more detail than the surrounding image.",
+        "instruction": "Place fine line work only where it clarifies a requested material, overlap, or focal feature; let secondary surfaces resolve as clean paper or a single ink shape.",
+        "observable": "A clear focal passage contrasts with quieter regions, and the image does not depend on all-over ornament.",
+        "reject_when": "Hatching and decoration cover every surface or unrelated motifs fill the negative space.",
+        "evidence": {
+          "source_ids": [
+            "beardsley-met-black-cat",
+            "beardsley-vam-profile"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform hatching, unrequested flourishes, and decorative borders"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "silhouette-line-space-coherence",
+        "rule_ids": [
+          "black-mass-paper-counterweight",
+          "calligraphic-contour-hierarchy",
+          "selective-detail-open-paper"
+        ],
+        "instruction": "Keep black mass, contour rhythm, and fine detail in service of one readable silhouette with deliberately open paper around it.",
+        "observable": "The subject reads first as a black-white design, then as a controlled ink drawing with selective detail."
+      }
+    ],
+    "sources": [
+      {
+        "id": "beardsley-met-black-cat",
+        "kind": "museum_object_description",
+        "url": "https://www.metmuseum.org/art/collection/search/753519"
+      },
+      {
+        "id": "beardsley-orsay-profile",
+        "kind": "museum_artist_profile",
+        "url": "https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/aubrey-beardsley-1872-1898"
+      },
+      {
+        "id": "beardsley-vam-profile",
+        "kind": "museum_artist_profile",
+        "url": "https://www.vam.ac.uk/articles/aubrey-beardsley-decadence-desire"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "fa088b2fd39e2ed70f1499f42301986eee0fedb92de621dfe9d4ceb441b80369",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

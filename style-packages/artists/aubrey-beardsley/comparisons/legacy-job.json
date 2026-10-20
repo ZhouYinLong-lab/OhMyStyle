@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "aubrey-beardsley",
+    "name": "奥布里·比亚兹莱",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\aubrey-beardsley"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A small moth resting on a cracked teacup on a plain shelf",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nThe user-supplied subject and requested setting are authoritative. This style\npackage controls only observable visual treatment: medium, composition,\nlighting, palette, surface, texture, and edge behavior. Do not add a recurring\nobject, setting, character, landmark, or narrative motif unless the user asks\nfor it. Treat any concrete scene mentioned in package metadata or references as\nan optional example, never as a default subject.\n\nSUBJECT INDEPENDENCE CONTRACT\nSubject: A small moth resting on a cracked teacup on a plain shelf\nLocation: the user-requested setting\nAction: the user-requested subject action\nPreserve the supplied subject, count, setting, and requested details. Do not add period costumes, ornamental foliage, or recurring props unless requested.\n\nConstruct a black-ink illustration on a warm-white ground. Establish the positive-black and untouched-white balance first. Use a few confident, sinuous calligraphic contours and decisive flat ink masses to make the subject legible. Leave broad areas of open paper; vary detail density sharply and reserve sparse hatching or decorative line for selected focal areas. Keep the space graphic and flat, with crisp contours suited to line-block reproduction. Let line rhythm and negative space adapt to A small moth resting on a cracked teacup on a plain shelf in the user-requested setting; do not add color, lettering, a poster frame, or a fixed literary narrative.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied named illustration, literary character, or recognizable source arrangement\n- colored Art Nouveau halo or ornamental poster lettering\n- uniform hairline contour with no ink-black masses\n- dense hatching or decoration across every surface\n- gray gradients modeling the whole image\n- generic gothic props added without request\n- photorealism, painterly color, or glossy digital effects\n- text, title, signature, logo, or watermark",
+  "template_variables": {
+    "SUBJECT": "A small moth resting on a cracked teacup on a plain shelf",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "black_and_white_ink_illustration": {
+        "required": [
+          "black-white balance reads before fine detail",
+          "calligraphic contour has deliberate weight and rhythm",
+          "detail density varies and leaves broad paper areas open"
+        ],
+        "reject_if": [
+          "color or gray gradients replace ink-and-paper value design",
+          "decorative motifs or borders appear without request",
+          "uniform hatching makes the whole image equally dense"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "External artworks are link-only; no source artwork is redistributed in this package.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
