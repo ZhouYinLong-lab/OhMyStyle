@@ -1,0 +1,166 @@
+schema_version: 2.1.0
+status: experimental
+id: frottage-direction
+name: 擦拓画法
+base_package: techniques/frottage
+scope:
+  medium: 纸面擦拓、拼贴与混合媒介
+  representation: stylized
+  description: 把纸张覆盖在有纹理的表面上进行摩擦转印，让木纹、织物、叶片和网格成为不稳定的图像结构。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - 固定树叶、木板、石头或森林题材
+  - 把普通颗粒滤镜当作擦拓纹理
+  - 复制具体艺术作品、构图或文字
+pillars:
+- 把纸张覆盖在有纹理的表面上进行摩擦转印，让木纹、织物、叶片和网格成为不稳定的图像结构。
+- 'differentiation: 压力与方向造成的材料转印; 纹理层与未处理纸面并置; 物理粉末感而非数字噪声'
+- 'medium: 纸面擦拓、拼贴与混合媒介'
+- 'composition: 让纹理层沿主体结构分布，保留局部空白和纸张边缘。; 使用不同方向、压力和密度的纹理叠层，避免整张图同质化。'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: 压力与方向造成的材料转印;
+    纹理层与未处理纸面并置; 物理粉末感而非数字噪声. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: 压力与方向造成的材料转印; 纹理层与未处理纸面并置; 物理粉末感而非数字噪声.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: 压力与方向造成的材料转印;
+    纹理层与未处理纸面并置; 物理粉末感而非数字噪声.'
+  evidence:
+    source_ids:
+    - source-frottage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 纸面擦拓、拼贴与混合媒介.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 纸面擦拓、拼贴与混合媒介.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    纸面擦拓、拼贴与混合媒介.'
+  evidence:
+    source_ids:
+    - source-frottage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 让纹理层沿主体结构分布，保留局部空白和纸张边缘。;
+    使用不同方向、压力和密度的纹理叠层，避免整张图同质化。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 让纹理层沿主体结构分布，保留局部空白和纸张边缘。;
+    使用不同方向、压力和密度的纹理叠层，避免整张图同质化。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 让纹理层沿主体结构分布，保留局部空白和纸张边缘。;
+    使用不同方向、压力和密度的纹理叠层，避免整张图同质化。.'
+  evidence:
+    source_ids:
+    - source-frottage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: dominant: 石墨黑; dominant: 纸张白; dominant:
+    棕褐; dominant: 暗赭; dominant: 苔绿色; behavior: 颜色低至中饱和，色层之间保留纸张和颜料的分离。. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: dominant: 石墨黑; dominant:
+    纸张白; dominant: 棕褐; dominant: 暗赭; dominant: 苔绿色; behavior: 颜色低至中饱和，色层之间保留纸张和颜料的分离。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    dominant: 石墨黑; dominant: 纸张白; dominant: 棕褐; dominant: 暗赭; dominant: 苔绿色; behavior: 颜色低至中饱和，色层之间保留纸张和颜料的分离。.'
+  evidence:
+    source_ids:
+    - source-frottage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 平面工作室光，不强调摄影式高光; behavior: 纹理通过明暗、方向和压力显现，不依赖发光或阴影特效。.
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 平面工作室光，不强调摄影式高光; behavior:
+    纹理通过明暗、方向和压力显现，不依赖发光或阴影特效。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 平面工作室光，不强调摄影式高光;
+    behavior: 纹理通过明暗、方向和压力显现，不依赖发光或阴影特效。.'
+  evidence:
+    source_ids:
+    - source-frottage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 纸纤维、石墨粉、干颜料、边缘撕裂与局部压痕;
+    edges: 纹理边缘断续，主体轮廓保持可辨. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    纸纤维、石墨粉、干颜料、边缘撕裂与局部压痕; edges: 纹理边缘断续，主体轮廓保持可辨.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 纸纤维、石墨粉、干颜料、边缘撕裂与局部压痕; edges: 纹理边缘断续，主体轮廓保持可辨.'
+  evidence:
+    source_ids:
+    - source-frottage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 中等至高;
+    placement: 纹理与主体结构相关，背景可留出未处理纸面. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    中等至高; placement: 纹理与主体结构相关，背景可留出未处理纸面.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 中等至高; placement: 纹理与主体结构相关，背景可留出未处理纸面.'
+  evidence:
+    source_ids:
+    - source-frottage-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among differentiation, medium, composition consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-frottage-primary-source
+  kind: primary
+  base_asset_id: frottage-primary-source
+execution:
+  route: text_only
+  must:
+  - 先锁定用户主体和轮廓，再选择与主体结构相容的纹理来源。
+  - 用不同压力和方向转印局部区域，保留未擦拓的纸面。
+  - 通过少量拼贴或透明色层整合纹理，不让纹理吞没主体。
+  - 纹理来自材料转印和压力变化
+  - 保留纸张、粉末和叠层的物理感
+  - 纹理不自动替换用户主体
+  - 不固定人物、物体、地点或故事
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 默认树叶、木板、石头、森林或超现实景观
+  - 全局颗粒、数字噪声、无方向纹理和塑料表面
+  - 把纹理做成均匀图案、金属拉丝或摄影滤镜
+  - 固定树叶、木板、石头或森林题材
+  - 把普通颗粒滤镜当作擦拓纹理
+  - 复制具体艺术作品、构图或文字
+  - 不复现具体作品、文字、签名或固定叙事；代表图只展示材料方法。
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
