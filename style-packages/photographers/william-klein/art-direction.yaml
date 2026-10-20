@@ -1,0 +1,148 @@
+schema_version: 2.1.0
+status: experimental
+id: william-klein-direction
+name: 威廉·克莱因
+base_package: photographers/william-klein
+scope:
+  medium: 广角街头摄影、运动模糊和图形裁切; 媒介边缘、形体和细节密度保持一致。
+  representation: recognizable
+  description: 广角街头摄影、运动模糊和图形裁切；近距离广角、切边人物和运动中的街道形成冲撞式构图；高反差黑白、红黄蓝广告色和粗颗粒形成城市能量。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+pillars:
+- 广角街头摄影、运动模糊和图形裁切；近距离广角、切边人物和运动中的街道形成冲撞式构图；高反差黑白、红黄蓝广告色和粗颗粒形成城市能量。
+- 'medium: 广角街头摄影、运动模糊和图形裁切; 媒介边缘、形体和细节密度保持一致。'
+- 'composition: 近距离广角、切边人物和运动中的街道形成冲撞式构图; 主体与背景保持清楚的层级关系，并让新主题拥有独立构图。'
+- 'palette: 高反差黑白、红黄蓝广告色和粗颗粒形成城市能量; 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 广角街头摄影、运动模糊和图形裁切;
+    媒介边缘、形体和细节密度保持一致。.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 广角街头摄影、运动模糊和图形裁切;
+    媒介边缘、形体和细节密度保持一致。.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    广角街头摄影、运动模糊和图形裁切; 媒介边缘、形体和细节密度保持一致。.'
+  evidence:
+    source_ids:
+    - source-william-klein-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 近距离广角、切边人物和运动中的街道形成冲撞式构图;
+    主体与背景保持清楚的层级关系，并让新主题拥有独立构图。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 近距离广角、切边人物和运动中的街道形成冲撞式构图;
+    主体与背景保持清楚的层级关系，并让新主题拥有独立构图。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 近距离广角、切边人物和运动中的街道形成冲撞式构图;
+    主体与背景保持清楚的层级关系，并让新主题拥有独立构图。.'
+  evidence:
+    source_ids:
+    - source-william-klein-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 高反差黑白、红黄蓝广告色和粗颗粒形成城市能量; 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 高反差黑白、红黄蓝广告色和粗颗粒形成城市能量; 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    高反差黑白、红黄蓝广告色和粗颗粒形成城市能量; 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。.'
+  evidence:
+    source_ids:
+    - source-william-klein-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 硬质城市光与反射面制造强烈反差; 光源方向和明暗层次服务于空间与主体，而不是制造无来源效果。.
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 硬质城市光与反射面制造强烈反差; 光源方向和明暗层次服务于空间与主体，而不是制造无来源效果。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 硬质城市光与反射面制造强烈反差; 光源方向和明暗层次服务于空间与主体，而不是制造无来源效果。.'
+  evidence:
+    source_ids:
+    - source-william-klein-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 沥青、玻璃、雨衣和皮肤在运动中保留粗粝感;
+    不同材质保留可辨识的表面行为。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 沥青、玻璃、雨衣和皮肤在运动中保留粗粝感;
+    不同材质保留可辨识的表面行为。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    沥青、玻璃、雨衣和皮肤在运动中保留粗粝感; 不同材质保留可辨识的表面行为。.'
+  evidence:
+    source_ids:
+    - source-william-klein-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 颗粒、拖影和不完美对焦是表达的一部分;
+    纹理沿结构和媒介方向组织，远景与次要区域降低密度。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 颗粒、拖影和不完美对焦是表达的一部分;
+    纹理沿结构和媒介方向组织，远景与次要区域降低密度。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    颗粒、拖影和不完美对焦是表达的一部分; 纹理沿结构和媒介方向组织，远景与次要区域降低密度。.'
+  evidence:
+    source_ids:
+    - source-william-klein-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-william-klein-primary-source
+  kind: primary
+  base_asset_id: william-klein-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定主体和独立构图
+  - 再建立大形体与色彩角色
+  - 补充媒介特有的表面与纹理
+  - 最后检查来源特征是否保持而非复制原作
+  - 保持街头冲击与几何裁切，不复制具体街景、标语或人物
+  - 不得复制来源作品的具体人物、地标、文字、标志、道具或构图。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
