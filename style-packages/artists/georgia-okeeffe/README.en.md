@@ -91,10 +91,10 @@ figures, text, trademark, or logo.
 
 ## New architecture: close observation and form (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when `close-observation` is declared. It enlarges one user-selected form or detail and approaches abstraction through simplified color shapes, controlled transitions, and negative space that follows the contour, while retaining identifying cues. Flowers, bones, shells, and desert rocks are not defaults; do not force a crop when the user asks for a complete object or a distant view.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when `close-observation` is declared. It enlarges one user-selected form or detail and approaches abstraction through simplified color shapes and controlled transitions, while retaining identifying cues. Contour-following negative space activates only when the caller declares `distinctive-contour-or-opening`. Flowers, bones, shells, and desert rocks are not defaults; do not force a crop when the user asks for a complete object or a distant view.
 
 ```powershell
-python tools/compile-style.py style-packages/artists/georgia-okeeffe --direction package --context close-observation --subject "A single red pear, seen close enough to reveal its curved shoulder and stem" --output runs/style-v2/okeeffe-job.json
+python tools/compile-style.py style-packages/artists/georgia-okeeffe --direction package --context close-observation --context distinctive-contour-or-opening --subject "A single red pear, seen close enough to reveal its curved shoulder and stem" --output runs/style-v2/okeeffe-job.json
 ```
 
 This direction remains experimental. The Met and National Gallery of Art material on enlarged forms, progressive zoom, and simplified color and shape supports these observations; transfer beyond natural forms remains pending.

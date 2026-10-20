@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: okeeffe-close-observation-and-form
 name: O'Keeffe close observation and form
@@ -21,6 +21,17 @@ scope:
     - The user chooses the subject and which part to examine; do not default to flowers, bones, shells, or desert motifs.
     - Preserve enough identifying structure for the requested object, plant, rock, architecture, or portrait to remain legible.
     - Close cropping is an opt-in framing choice; do not force it onto a requested wide scene or complete-object view.
+contexts:
+  - id: close-observation
+    description: A user-requested close observation or enlarged detail of one selected form.
+  - id: distant-environment-view
+    description: A wide view organized around an environment rather than one close form.
+  - id: crowded-multi-subject-scene
+    description: A dense composition with several equally important subjects.
+  - id: photorealistic-output
+    description: A photographic rendering without visible painterly simplification.
+  - id: distinctive-contour-or-opening
+    description: The selected subject has a distinctive outer contour, opening, or overlapping structure.
 pillars:
   - Bring one selected form close enough that its contour and internal structure become the main subject.
   - Simplify supporting detail so a few large shapes and carefully chosen color transitions carry the image.
@@ -58,6 +69,8 @@ rules:
   - id: form-following-negative-space
     axis: space_and_edges
     importance: core
+    when_contexts:
+      - distinctive-contour-or-opening
     applies_when: The selected form has a distinctive outer contour or opening.
     instruction: Shape the surrounding quiet areas around the selected form's curves, openings, and overlaps; keep the background simple but related in color and edge behavior to the subject.
     observable: The negative space helps reveal the form's proportions and direction, while the outer edge remains distinct from the background.
