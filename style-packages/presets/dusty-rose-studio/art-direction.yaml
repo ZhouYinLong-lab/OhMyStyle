@@ -1,0 +1,174 @@
+schema_version: 2.1.0
+status: experimental
+id: dusty-rose-studio-direction
+name: 灰粉影棚静物
+base_package: presets/dusty-rose-studio
+scope:
+  medium: show the selected process or educational method through visible structure; keep subject content independent
+    from style decisions
+  representation: stylized
+  description: 以灰粉背景、纸张形体和哑光材质建立柔和而现代的静物影棚预设。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copying_a_specific_work
+  - copying_a_named_character_or_logo
+  - copying_school_emblem_or_layout
+  - copied source composition
+  - unrequested readable text
+  - logo, trademark, or emblem
+pillars:
+- 以灰粉背景、纸张形体和哑光材质建立柔和而现代的静物影棚预设。
+- 'form: dusty rose seamless background, paper forms, matte materials, soft frontal light'
+- 'medium: show the selected process or educational method through visible structure; keep subject content
+  independent from style decisions'
+- 'composition: establish hierarchy before detail; protect negative space where the brief needs it'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: dusty rose seamless
+    background, paper forms, matte materials, soft frontal light. Do not let generic polish or another package
+    direction replace it. If a cue names a concrete object or motif, do not add it unless the user requests
+    it; translate its formal qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: dusty
+    rose seamless background, paper forms, matte materials, soft frontal light.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: dusty rose seamless background, paper forms, matte materials, soft frontal
+    light.'
+  evidence:
+    source_ids:
+    - source-source-1
+    - source-source-2
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: show
+    the selected process or educational method through visible structure; keep subject content independent
+    from style decisions.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: show the
+    selected process or educational method through visible structure; keep subject content independent from
+    style decisions.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    show the selected process or educational method through visible structure; keep subject content independent
+    from style decisions.'
+  evidence:
+    source_ids:
+    - source-source-1
+    - source-source-2
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: establish hierarchy
+    before detail; protect negative space where the brief needs it. Preserve the user-provided content and
+    layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: establish hierarchy
+    before detail; protect negative space where the brief needs it.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: establish
+    hierarchy before detail; protect negative space where the brief needs it.'
+  evidence:
+    source_ids:
+    - source-source-1
+    - source-source-2
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: use the declared palette as a relationship;
+    allow natural variation without losing color roles. Adapt their balance to the requested subject; do not
+    apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: use the declared palette
+    as a relationship; allow natural variation without losing color roles.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    use the declared palette as a relationship; allow natural variation without losing color roles.'
+  evidence:
+    source_ids:
+    - source-source-1
+    - source-source-2
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: keep light direction and contrast coherent; do not
+    use a global filter to fake the signature. Keep light coherent with the requested subject, medium, and
+    scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: keep light direction and contrast
+    coherent; do not use a global filter to fake the signature.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: keep light direction and
+    contrast coherent; do not use a global filter to fake the signature.'
+  evidence:
+    source_ids:
+    - source-source-1
+    - source-source-2
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: show material
+    evidence at the scale of the scene; avoid generic AI gloss. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: show material
+    evidence at the scale of the scene; avoid generic AI gloss.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    show material evidence at the scale of the scene; avoid generic AI gloss.'
+  evidence:
+    source_ids:
+    - source-source-1
+    - source-source-2
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- medium
+- composition
+- palette
+- lighting
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among form, medium, composition consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-source-1
+  kind: style_reference
+  base_asset_id: source-1
+- id: source-source-2
+  kind: style_reference
+  base_asset_id: source-2
+execution:
+  route: text_only
+  must:
+  - compile the user subject into the package medium and structural rules
+  - establish composition and light before small detail
+  - inspect against the generic five-task suite
+  - keep narrative optional unless requested
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - generic_global_filter
+  - copied_source_composition
+  - readable_text_or_branding
+  - school_emblem_or_institutional_mark
+  - copying_a_specific_work
+  - copying_a_named_character_or_logo
+  - copying_school_emblem_or_layout
+  - copied source composition
+  - unrequested readable text
+  - logo, trademark, or emblem
