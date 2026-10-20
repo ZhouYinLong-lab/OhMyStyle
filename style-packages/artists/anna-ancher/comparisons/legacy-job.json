@@ -1,0 +1,46 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "anna-ancher",
+    "name": "安娜·安彻",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\anna-ancher"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A woman reading beside a window in a quiet room",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A woman reading beside a window in a quiet room\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a quiet oil painting of A woman reading beside a window in a quiet room in the user-requested setting. Show the user-requested subject action with\nordinary, unperformed body language. Use a side window as the main light source:\nbroad northern daylight, soft falloff, color carried through the shadows, and a\nvisible patch of light on a wall, floor, cloth, or table. Build the image from\nlarge simplified planes of chalk cream, dusty blue, muted ochre, deep umber, and\none restrained warm accent. Keep the camera-like viewpoint at ordinary eye\nlevel, leave calm negative space, and preserve selected visible brush decisions.\nThe scene should feel domestic, observed, and materially quiet.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "grand historical scene, theatrical spotlight, glossy digital painting,\nphotorealistic 3D render, hyper-saturated palette, black crushed shadows,\nornamental maximalism, centered advertising composition, copied famous painting,\nartist signature, watermark, logo",
+  "template_variables": {
+    "SUBJECT": "A woman reading beside a window in a quiet room",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "window_lit_interior": {
+        "required": [
+          "window light has one coherent direction and shapes multiple room planes",
+          "reflected colors follow the light path instead of tinting the whole image",
+          "domestic scale remains believable and quiet"
+        ],
+        "reject_if": [
+          "a person, plant, or prop appears without request",
+          "spotlight, global haze, or theatrical beams replace daylight"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "External images are link-only until their redistribution rights are verified.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "anna-ancher",
+    "name": "安娜·安彻",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\anna-ancher"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A woman reading beside a window in a quiet room",
+  "prompt": "USER SUBJECT: A woman reading beside a window in a quiet room\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [daylight-pattern-shapes-room] Establish one coherent window-light direction and let its broad patches or reflected bands fall across the requested room surfaces; keep transitions soft enough to feel like daylight, but distinct enough to organize the space.\n- [reflected-color-as-room-structure] Relate sunlit and shadowed planes through a restrained set of clear colors; allow reflected warm or cool hues to appear on walls and furnishings instead of turning all shadow into black or tinting the full image uniformly.\n- [ordinary-task-and-interior-scale] Keep any requested person absorbed in the specified task and use ordinary eye-level room proportions; simplify secondary objects so light and daily activity remain the focus.\n- [light-color-domestic-scale-coherence] Let incoming daylight, reflected surface color, and ordinary room scale describe the same quiet interior; keep the light connected to the space rather than treating it as a standalone effect.\nREQUIREMENT: Declare the window-lit-interior context before applying the direction.\nREQUIREMENT: Preserve the user-requested room, task, people, and objects.\nREQUIREMENT: Show a coherent incoming daylight path across room surfaces.\nREQUIREMENT: Use color shifts that follow lit and shadowed planes, not a global filter.",
+  "negative_prompt": "global haze, theatrical beams, and source-free highlights\nuniform blue-gray wash, black void shadows, and arbitrary saturated accents\nunsolicited figures, staged gestures, and monumental interiors\nadding figures, plants, props, or windows unless requested or established by context\nturning daylight into a spotlight, rays, or uniform haze\napplying exterior impressionist mark-making or theatrical interior lighting",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "ancher-window-light-in-domestic-space",
+    "name": "Ancher window light in domestic space",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\anna-ancher\\art-direction.yaml",
+    "sha256": "2e618ca409509f6b546dab0841c45856b474fc6b67693d188dda6f4b37441861",
+    "active_rule_ids": [
+      "daylight-pattern-shapes-room",
+      "reflected-color-as-room-structure",
+      "ordinary-task-and-interior-scale"
+    ],
+    "contexts": [
+      "window-lit-interior"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare the window-lit-interior context before applying the direction.",
+      "Preserve the user-requested room, task, people, and objects.",
+      "Show a coherent incoming daylight path across room surfaces.",
+      "Use color shifts that follow lit and shadowed planes, not a global filter."
+    ],
+    "avoid": [
+      "adding figures, plants, props, or windows unless requested or established by context",
+      "turning daylight into a spotlight, rays, or uniform haze",
+      "applying exterior impressionist mark-making or theatrical interior lighting"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "A domestic-interior direction in which light entering from a requested or contextually established window shapes the room's color planes and connects the lived interior to an unseen exterior. The light is a structural subject, not a decorative haze or a generic impressionist texture.",
+      "required_contexts": [
+        "window-lit-interior"
+      ],
+      "incompatible_contexts": [
+        "exterior-landscape",
+        "night-scene",
+        "theatrical-spotlight"
+      ],
+      "limitations": [
+        "Preserve the requested room, task, figure count, furniture, and window placement; do not add a person, plant, or domestic prop unless requested.",
+        "Do not invent a window if the prompt does not establish one; use the declared caller context to supply the light source.",
+        "Keep interior scale ordinary and inhabited; do not turn the scene into a stage set or a luminous fantasy."
+      ]
+    },
+    "rules": [
+      {
+        "id": "daylight-pattern-shapes-room",
+        "axis": "lighting_and_composition",
+        "importance": "core",
+        "applies_when": "The declared scene includes daylight entering a domestic interior.",
+        "instruction": "Establish one coherent window-light direction and let its broad patches or reflected bands fall across the requested room surfaces; keep transitions soft enough to feel like daylight, but distinct enough to organize the space.",
+        "observable": "The viewer can infer where light enters and follow its effect across at least two planes, while the room remains clearly readable.",
+        "reject_when": "Light is a uniform glow over the whole image, a hard spotlight without a window source, or decorative rays added only for drama.",
+        "evidence": {
+          "source_ids": [
+            "ancher-smk-red-room",
+            "ancher-skagens-artist-profile"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "global haze, theatrical beams, and source-free highlights"
+      },
+      {
+        "id": "reflected-color-as-room-structure",
+        "axis": "palette",
+        "importance": "core",
+        "applies_when": "Daylight creates visible color changes on adjacent interior surfaces.",
+        "instruction": "Relate sunlit and shadowed planes through a restrained set of clear colors; allow reflected warm or cool hues to appear on walls and furnishings instead of turning all shadow into black or tinting the full image uniformly.",
+        "observable": "Color variation follows the room's surfaces and light path, so wall, floor, and furniture remain distinct but belong to one atmosphere.",
+        "reject_when": "Color appears only as an all-over filter, or highly saturated accents break the quiet domestic setting.",
+        "evidence": {
+          "source_ids": [
+            "ancher-smk-red-room",
+            "ancher-skagens-artist-profile"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform blue-gray wash, black void shadows, and arbitrary saturated accents"
+      },
+      {
+        "id": "ordinary-task-and-interior-scale",
+        "axis": "subject_and_space",
+        "importance": "core",
+        "applies_when": "The user requests a person performing a domestic task or an ordinary interior.",
+        "instruction": "Keep any requested person absorbed in the specified task and use ordinary eye-level room proportions; simplify secondary objects so light and daily activity remain the focus.",
+        "observable": "The scene feels lived-in and unperformed, with a clear relation between the requested task, the room, and the incoming daylight.",
+        "reject_when": "A figure is added or posed without request, domestic activity becomes theatrical, or furnishings create a grand formal interior.",
+        "evidence": {
+          "source_ids": [
+            "ancher-skagens-artist-profile",
+            "ancher-smk-red-room"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "unsolicited figures, staged gestures, and monumental interiors"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "light-color-domestic-scale-coherence",
+        "rule_ids": [
+          "daylight-pattern-shapes-room",
+          "reflected-color-as-room-structure",
+          "ordinary-task-and-interior-scale"
+        ],
+        "instruction": "Let incoming daylight, reflected surface color, and ordinary room scale describe the same quiet interior; keep the light connected to the space rather than treating it as a standalone effect.",
+        "observable": "Light path is legible across room planes, colors vary with that path, and the requested task or object remains in believable domestic scale."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ancher-smk-red-room",
+        "kind": "museum_object_analysis",
+        "url": "https://connect.smk.dk/vaerker/67-kms-8654"
+      },
+      {
+        "id": "ancher-skagens-artist-profile",
+        "kind": "museum_artist_profile",
+        "url": "https://skagensmuseum.dk/kunstnere/anna-ancher/"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "2e618ca409509f6b546dab0841c45856b474fc6b67693d188dda6f4b37441861",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
