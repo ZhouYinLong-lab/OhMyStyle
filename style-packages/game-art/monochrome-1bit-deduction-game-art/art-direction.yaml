@@ -1,0 +1,153 @@
+schema_version: 2.1.0
+status: experimental
+id: monochrome-1bit-deduction-game-art-direction
+name: 单色一位推理游戏美术
+base_package: game-art/monochrome-1bit-deduction-game-art
+scope:
+  medium: monochrome one-bit game rendering with ordered dithering, crisp silhouettes, readable perspective,
+    and evidence-oriented spatial detail
+  representation: stylized
+  description: 以单色抖动、低位深明暗、清楚剪影和可读空间结构构成独立游戏中的推理视觉
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - 固定船只、海洋、海员、尸体或谋杀案
+  - 彩色像素画、灰度摄影或光滑三维渲染
+  - 复制具体游戏资产、界面或场景
+pillars:
+- 以单色抖动、低位深明暗、清楚剪影和可读空间结构构成独立游戏中的推理视觉
+- 'medium: monochrome one-bit game rendering with ordered dithering, crisp silhouettes, readable perspective,
+  and evidence-oriented spatial detail'
+- 'composition: 可探索空间; 透视线和剪影; 少量线索优先'
+- 'palette: 黑色与暖象牙白; 点阵密度模拟灰度'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: monochrome
+    one-bit game rendering with ordered dithering, crisp silhouettes, readable perspective, and evidence-oriented
+    spatial detail.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: monochrome
+    one-bit game rendering with ordered dithering, crisp silhouettes, readable perspective, and evidence-oriented
+    spatial detail.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    monochrome one-bit game rendering with ordered dithering, crisp silhouettes, readable perspective, and
+    evidence-oriented spatial detail.'
+  evidence:
+    source_ids:
+    - source-monochrome-1bit-primary-source
+    - source-monochrome-1bit-secondary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 可探索空间; 透视线和剪影;
+    少量线索优先. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 可探索空间; 透视线和剪影; 少量线索优先.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 可探索空间;
+    透视线和剪影; 少量线索优先.'
+  evidence:
+    source_ids:
+    - source-monochrome-1bit-primary-source
+    - source-monochrome-1bit-secondary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑色与暖象牙白; 点阵密度模拟灰度. Adapt their balance
+    to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑色与暖象牙白; 点阵密度模拟灰度.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑色与暖象牙白; 点阵密度模拟灰度.'
+  evidence:
+    source_ids:
+    - source-monochrome-1bit-primary-source
+    - source-monochrome-1bit-secondary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 硬质定向光; 由抖动密度表达. Keep light coherent with the requested
+    subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 硬质定向光; 由抖动密度表达.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 硬质定向光; 由抖动密度表达.'
+  evidence:
+    source_ids:
+    - source-monochrome-1bit-primary-source
+    - source-monochrome-1bit-secondary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 低位深光栅; 像素簇和有序点阵.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 低位深光栅; 像素簇和有序点阵.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    低位深光栅; 像素簇和有序点阵.'
+  evidence:
+    source_ids:
+    - source-monochrome-1bit-primary-source
+    - source-monochrome-1bit-secondary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 与材质和阴影相关的抖动.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 与材质和阴影相关的抖动.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    与材质和阴影相关的抖动.'
+  evidence:
+    source_ids:
+    - source-monochrome-1bit-primary-source
+    - source-monochrome-1bit-secondary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-monochrome-1bit-primary-source
+  kind: primary
+  base_asset_id: monochrome-1bit-primary-source
+- id: source-monochrome-1bit-secondary-source
+  kind: secondary
+  base_asset_id: monochrome-1bit-secondary-source
+execution:
+  route: text_only
+  must:
+  - Keep the user-provided subject; optional motifs do not restrict subject identity.
+  - 一位抖动
+  - 清晰剪影
+  - 可探索空间
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 固定船只、海洋、海员、尸体或谋杀案
+  - 彩色像素画、灰度摄影或光滑三维渲染
+  - 复制具体游戏资产、界面或场景
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
