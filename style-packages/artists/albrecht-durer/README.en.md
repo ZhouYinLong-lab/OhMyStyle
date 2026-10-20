@@ -58,3 +58,7 @@ python tools/compile-style.py style-packages/artists/albrecht-durer --direction 
 ```
 
 This direction remains experimental. National Gallery of Art and Met material on engraving lines and hatching supports these observations; cross-material and cross-subject stability remain pending.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

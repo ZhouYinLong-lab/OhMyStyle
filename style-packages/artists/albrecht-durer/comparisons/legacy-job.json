@@ -1,0 +1,46 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "albrecht-durer",
+    "name": "阿尔布雷希特·丢勒",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\albrecht-durer"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "An ordinary ceramic cup on a windowsill",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: An ordinary ceramic cup on a windowsill\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nApply a Northern Renaissance printmaking language: precise contour drawing, disciplined cross-hatching, measured value structure, tactile paper impression, and careful material description. Keep the requested subject, setting, count, and action unchanged; the style controls visual treatment only.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not add a fixed subject, named character, copied composition, logo, brand, text, or story event. Do not override the user's subject, count, location, action, or requested aspect ratio. Avoid generic AI gloss, plastic surfaces, random decorative objects, and style contamination from unrelated media.",
+  "template_variables": {
+    "SUBJECT": "An ordinary ceramic cup on a windowsill",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "contour establishes subject before fine detail",
+          "hatch direction follows form and line density explains value",
+          "paper highlights remain visible"
+        ],
+        "reject_if": [
+          "cross-hatching is uniform across the image",
+          "a signature, monogram, or historical motif appears without request"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

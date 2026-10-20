@@ -61,3 +61,7 @@ python tools/compile-style.py style-packages/artists/albrecht-durer --direction 
 ```
 
 方向仍处于实验状态。美国国家美术馆与大都会艺术博物馆关于版画线条和排线的资料支持这些观察；跨材质与跨题材表现仍待评审。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。

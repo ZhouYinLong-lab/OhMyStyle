@@ -1,0 +1,151 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "albrecht-durer",
+    "name": "阿尔布雷希特·丢勒",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\albrecht-durer"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "An ordinary ceramic cup on a windowsill",
+  "prompt": "USER SUBJECT: An ordinary ceramic cup on a windowsill\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: engraving_and_pen_drawing\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [contour-before-interior-lines] Establish each requested subject with a readable, carefully varied contour; place interior lines only where they clarify construction, overlap, or a meaningful surface change.\n- [directional-hatching-for-value] Use spaced parallel strokes for light and middle values, then add a limited crossing layer for the deepest shadows; curve or turn the strokes with the form and leave paper breaks for highlights.\n- [material-specific-line-groups] Separate materials through stroke behavior: use longer directional marks for broad fabric or wood planes, shorter broken marks for rough surfaces, and controlled clean lines for hard edges; omit cues for materials absent from the prompt.\n- [contour-value-material-coherence] Keep contour, hatch direction, and material marks consistent with the same form and light; let clean paper remain visible wherever the subject is lit.\nREQUIREMENT: Preserve the user-requested subject, count, materials, and scene.\nREQUIREMENT: Use contour and directionally aligned strokes to model requested forms.\nREQUIREMENT: Reserve paper highlights and use crossing lines only where darker value requires them.\nREQUIREMENT: Keep mark density selective and material-specific.",
+  "negative_prompt": "uniform outlines, detail-first rendering, and lost silhouettes\nuniform hatch carpets, gray-filled highlights, and form-blind line direction\nidentical texture on all materials and scattered micro-detail\nadding historical narratives, religious symbols, armor, animals, or tools unless requested\nfilling the whole image with uniform cross-hatching or paper grain\nadding a Dürer monogram, signature, date, inscription, or copied composition",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "durer-engraved-line-and-value-structure",
+    "name": "Dürer engraved line and value structure",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\albrecht-durer\\art-direction.yaml",
+    "sha256": "ba6fbf5f4116298205eba4017b827bc052406c412dd2e5b2e63958fe7bbc74dc",
+    "active_rule_ids": [
+      "contour-before-interior-lines",
+      "directional-hatching-for-value",
+      "material-specific-line-groups"
+    ],
+    "contexts": [],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Preserve the user-requested subject, count, materials, and scene.",
+      "Use contour and directionally aligned strokes to model requested forms.",
+      "Reserve paper highlights and use crossing lines only where darker value requires them.",
+      "Keep mark density selective and material-specific."
+    ],
+    "avoid": [
+      "adding historical narratives, religious symbols, armor, animals, or tools unless requested",
+      "filling the whole image with uniform cross-hatching or paper grain",
+      "adding a Dürer monogram, signature, date, inscription, or copied composition"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "engraving_and_pen_drawing",
+      "representation": "stylized",
+      "description": "An open-subject linear direction that models form with precise contour and directional parallel or crossing strokes. Line density carries value, volume, and material on a light paper ground rather than acting as uniform surface noise.",
+      "required_contexts": [],
+      "incompatible_contexts": [
+        "photorealistic-output",
+        "painterly-color-field"
+      ],
+      "limitations": [
+        "Follow the requested subject, object count, and materials; do not add religious scenes, armor, animals, tools, or symbolic objects by default.",
+        "Vary line direction and density with the form; avoid filling every region with cross-hatching.",
+        "Do not add a signature, monogram, date, inscription, or copied print border."
+      ]
+    },
+    "rules": [
+      {
+        "id": "contour-before-interior-lines",
+        "axis": "form_and_composition",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "Establish each requested subject with a readable, carefully varied contour; place interior lines only where they clarify construction, overlap, or a meaningful surface change.",
+        "observable": "The subject remains recognizable when reduced in size, and important edges are clearer than secondary texture.",
+        "reject_when": "Dense interior detail breaks the silhouette or every edge receives the same mechanical outline.",
+        "evidence": {
+          "source_ids": [
+            "durer-nga-knight-engraving",
+            "durer-met-printed-engraving"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform outlines, detail-first rendering, and lost silhouettes"
+      },
+      {
+        "id": "directional-hatching-for-value",
+        "axis": "lighting_and_value",
+        "importance": "core",
+        "applies_when": "The subject has a rounded, folded, recessed, or otherwise directional surface.",
+        "instruction": "Use spaced parallel strokes for light and middle values, then add a limited crossing layer for the deepest shadows; curve or turn the strokes with the form and leave paper breaks for highlights.",
+        "observable": "Value shifts are readable from changes in spacing and crossing density, while lit areas retain visible paper.",
+        "reject_when": "Cross-hatching covers the whole image uniformly, light areas turn gray, or hatch direction contradicts the form.",
+        "evidence": {
+          "source_ids": [
+            "durer-nga-knight-engraving",
+            "durer-met-printed-engraving"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform hatch carpets, gray-filled highlights, and form-blind line direction"
+      },
+      {
+        "id": "material-specific-line-groups",
+        "axis": "texture_and_material",
+        "importance": "core",
+        "applies_when": "The requested scene contains more than one visible material.",
+        "instruction": "Separate materials through stroke behavior: use longer directional marks for broad fabric or wood planes, shorter broken marks for rough surfaces, and controlled clean lines for hard edges; omit cues for materials absent from the prompt.",
+        "observable": "At least two requested materials can be distinguished by line grouping without adding photographic microtexture.",
+        "reject_when": "Every surface uses identical hatch marks or local marks become decorative noise.",
+        "evidence": {
+          "source_ids": [
+            "durer-nga-knight-engraving",
+            "durer-met-printed-engraving"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        },
+        "avoid": "identical texture on all materials and scattered micro-detail"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "contour-value-material-coherence",
+        "rule_ids": [
+          "contour-before-interior-lines",
+          "directional-hatching-for-value",
+          "material-specific-line-groups"
+        ],
+        "instruction": "Keep contour, hatch direction, and material marks consistent with the same form and light; let clean paper remain visible wherever the subject is lit.",
+        "observable": "The subject reads through contour first, line density then explains volume, and distinct materials use distinct but restrained mark groups."
+      }
+    ],
+    "sources": [
+      {
+        "id": "durer-nga-knight-engraving",
+        "kind": "museum_object_description",
+        "url": "https://www.nga.gov/artworks/6637-knight-death-and-devil"
+      },
+      {
+        "id": "durer-met-printed-engraving",
+        "kind": "museum_essay",
+        "url": "https://www.metmuseum.org/pt/essays/the-printed-image-in-the-west-engraving"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "ba6fbf5f4116298205eba4017b827bc052406c412dd2e5b2e63958fe7bbc74dc",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
