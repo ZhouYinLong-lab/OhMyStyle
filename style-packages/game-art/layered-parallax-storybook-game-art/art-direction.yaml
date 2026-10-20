@@ -1,0 +1,170 @@
+schema_version: 2.1.0
+status: experimental
+id: layered-parallax-storybook-game-art-direction
+name: 分层视差绘本游戏美术
+base_package: game-art/layered-parallax-storybook-game-art
+scope:
+  medium: Use hand-drawn or painted illustration as layered game scenery.; Layer separation is a compositional
+    device and does not imply a particular animation technology.
+  representation: stylized
+  description: 把手绘或绘本式场景拆成前中后景平面，并以不同位移制造有限纵深；画面仍保持插画轮廓与读图层级。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - pixel_tile_grid_as_required_medium
+  - single_flat_poster_composition
+  - unreadable_foreground_occlusion
+  - copied_named_scene
+pillars:
+- 把手绘或绘本式场景拆成前中后景平面，并以不同位移制造有限纵深；画面仍保持插画轮廓与读图层级。
+- 'medium: Use hand-drawn or painted illustration as layered game scenery.; Layer separation is a compositional
+  device and does not imply a particular animation technology.'
+- 'composition: Build depth from a few broad planes with clear overlap.; Keep the play lane and character silhouette
+  readable against the moving background.; Use large illustrated shapes before small decorative marks.'
+- 'palette: Separate depth planes with related but distinct color and value groups.; Reserve stronger contrast
+  for the play lane and landmarks.; Keep color transitions consistent across layer boundaries.'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: Use
+    hand-drawn or painted illustration as layered game scenery.; Layer separation is a compositional device
+    and does not imply a particular animation technology..'
+  observable: 'The requested image retains the stated medium distinction or production constraint: Use hand-drawn
+    or painted illustration as layered game scenery.; Layer separation is a compositional device and does not
+    imply a particular animation technology..'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    Use hand-drawn or painted illustration as layered game scenery.; Layer separation is a compositional device
+    and does not imply a particular animation technology..'
+  evidence:
+    source_ids:
+    - source-layered-parallax-storybook-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Build depth
+    from a few broad planes with clear overlap.; Keep the play lane and character silhouette readable against
+    the moving background.; Use large illustrated shapes before small decorative marks.. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Build depth from
+    a few broad planes with clear overlap.; Keep the play lane and character silhouette readable against the
+    moving background.; Use large illustrated shapes before small decorative marks..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Build depth
+    from a few broad planes with clear overlap.; Keep the play lane and character silhouette readable against
+    the moving background.; Use large illustrated shapes before small decorative marks..'
+  evidence:
+    source_ids:
+    - source-layered-parallax-storybook-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Separate depth planes with related
+    but distinct color and value groups.; Reserve stronger contrast for the play lane and landmarks.; Keep
+    color transitions consistent across layer boundaries.. Adapt their balance to the requested subject; do
+    not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Separate depth planes with
+    related but distinct color and value groups.; Reserve stronger contrast for the play lane and landmarks.;
+    Keep color transitions consistent across layer boundaries..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Separate depth planes with related but distinct color and value groups.; Reserve stronger contrast for
+    the play lane and landmarks.; Keep color transitions consistent across layer boundaries..'
+  evidence:
+    source_ids:
+    - source-layered-parallax-storybook-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: Keep a shared light direction across all planes.;
+    Use gentle atmospheric shifts in distant planes without erasing their contours.. Keep light coherent with
+    the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: Keep a shared light direction
+    across all planes.; Use gentle atmospheric shifts in distant planes without erasing their contours..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: Keep a shared light direction
+    across all planes.; Use gentle atmospheric shifts in distant planes without erasing their contours..'
+  evidence:
+    source_ids:
+    - source-layered-parallax-storybook-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Retain visible
+    drawing or paint character in each plane.. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Retain visible
+    drawing or paint character in each plane..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Retain visible drawing or paint character in each plane..'
+  evidence:
+    source_ids:
+    - source-layered-parallax-storybook-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Vary detail
+    density by distance and movement importance.; Avoid high-frequency patterns that shimmer during scrolling..
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Vary detail
+    density by distance and movement importance.; Avoid high-frequency patterns that shimmer during scrolling..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Vary detail density by distance and movement importance.; Avoid high-frequency patterns that shimmer during
+    scrolling..'
+  evidence:
+    source_ids:
+    - source-layered-parallax-storybook-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-layered-parallax-storybook-game-art-primary-source
+  kind: primary
+  base_asset_id: layered-parallax-storybook-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - Design the horizon and play lane.
+  - Split foreground, middle ground, and distant scenery along meaningful depth boundaries.
+  - Assign slower motion to distant planes and faster motion to near planes.
+  - Preview scrolling to catch edge gaps, visual jitter, and occlusion conflicts.
+  - Depth comes from separated illustrated planes and controlled parallax.
+  - The requested subject and setting remain user-controlled.
+  - Do not copy a source game’s character designs or exact landscape.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - pixel_tile_grid_as_required_medium
+  - single_flat_poster_composition
+  - unreadable_foreground_occlusion
+  - copied_named_scene
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
