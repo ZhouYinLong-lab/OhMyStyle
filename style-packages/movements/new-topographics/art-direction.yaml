@@ -1,0 +1,112 @@
+schema_version: 2.1.0
+status: experimental
+id: new-topographics-direction
+name: 新地形摄影
+base_package: movements/new-topographics
+scope:
+  medium: documentary_landscape_photography
+  representation: stylized
+  description: A landscape-photography movement profile built around clear-eyed views of human-altered terrain,
+    restrained composition, neutral description, and the tension between documentary evidence and aesthetic
+    order.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - untouched_wilderness_as_sublime spectacle
+  - tourism_postcard_beauty
+pillars:
+- A landscape-photography movement profile built around clear-eyed views of human-altered terrain, restrained
+  composition, neutral description, and the tension between documentary evidence and aesthetic order.
+- 'composition: frontal_or_elevated_fixed_view; horizontal_stability; modest_scale_of_human_artifacts; repeated_structural_motifs'
+- 'palette: concrete_gray; dry_vegetation; faded_asphalt; pale_sky; restrained_artificial_accent'
+- 'lighting: quality: even_or_unheroic_daylight; behavior: avoids_dramatic_sunset; behavior: avoids_heroic_rim_light;
+  behavior: preserves_surface_information'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: frontal_or_elevated_fixed_view;
+    horizontal_stability; modest_scale_of_human_artifacts; repeated_structural_motifs. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: frontal_or_elevated_fixed_view;
+    horizontal_stability; modest_scale_of_human_artifacts; repeated_structural_motifs.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: frontal_or_elevated_fixed_view;
+    horizontal_stability; modest_scale_of_human_artifacts; repeated_structural_motifs.'
+  evidence:
+    source_ids:
+    - source-eastman-new-topographics
+    - source-eastman-tour
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: concrete_gray; dry_vegetation; faded_asphalt;
+    pale_sky; restrained_artificial_accent. Adapt their balance to the requested subject; do not apply them
+    as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: concrete_gray; dry_vegetation;
+    faded_asphalt; pale_sky; restrained_artificial_accent.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    concrete_gray; dry_vegetation; faded_asphalt; pale_sky; restrained_artificial_accent.'
+  evidence:
+    source_ids:
+    - source-eastman-new-topographics
+    - source-eastman-tour
+    basis: curatorial_inference
+    visual_review: pending
+- id: light
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: even_or_unheroic_daylight; behavior: avoids_dramatic_sunset;
+    behavior: avoids_heroic_rim_light; behavior: preserves_surface_information. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: even_or_unheroic_daylight;
+    behavior: avoids_dramatic_sunset; behavior: avoids_heroic_rim_light; behavior: preserves_surface_information.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: even_or_unheroic_daylight;
+    behavior: avoids_dramatic_sunset; behavior: avoids_heroic_rim_light; behavior: preserves_surface_information.'
+  evidence:
+    source_ids:
+    - source-eastman-new-topographics
+    - source-eastman-tour
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- color
+- light
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - color
+  - light
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-eastman-new-topographics
+  kind: primary
+  base_asset_id: eastman-new-topographics
+- id: source-eastman-tour
+  kind: secondary
+  base_asset_id: eastman-tour
+execution:
+  route: text_only
+  must:
+  - the landscape shows human modification
+  - the camera does not romanticize the site
+  - geometry and evidence matter more than spectacle
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - sublime_wilderness
+  - disaster_movie_color_grade
+  - real_estate_advertising
+  - dystopian_cliche
+  - untouched_wilderness_as_sublime spectacle
+  - tourism_postcard_beauty
+  - Do not reveal private addresses or identifiable people in examples.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
