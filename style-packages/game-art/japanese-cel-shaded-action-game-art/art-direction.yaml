@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: japanese-cel-shaded-action-game-art-direction
+name: 日式赛璐珞动作游戏美术
+base_package: game-art/japanese-cel-shaded-action-game-art
+scope:
+  medium: 2D绘画语言与3D实时渲染结合的游戏美术
+  representation: stylized
+  description: 以硬边卡通明暗、手绘轮廓、二维动画节奏和三维体积结合，形成清晰而有动势的动作游戏画面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - 固定角色、武器、机甲、学校或城市
+  - 复制具体游戏的角色、场景、界面、标志或服装
+  - 把硬边明暗误做成平面贴纸或纯二维插画
+pillars:
+- 以硬边卡通明暗、手绘轮廓、二维动画节奏和三维体积结合，形成清晰而有动势的动作游戏画面。
+- 'medium: 2D绘画语言与3D实时渲染结合的游戏美术'
+- 'composition: 使用有方向的动态透视、前景遮挡和清楚的视觉焦点。; 让角色、物体和环境形成可读的层级，不依赖界面元素说明空间。'
+- 'palette: dominant: 深蓝; dominant: 朱红; dominant: 暖灰; dominant: 金黄; dominant: 青绿; behavior: 颜色服务于阵营、材质和光线，饱和色集中在焦点附近。'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 2D绘画语言与3D实时渲染结合的游戏美术.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 2D绘画语言与3D实时渲染结合的游戏美术.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    2D绘画语言与3D实时渲染结合的游戏美术.'
+  evidence:
+    source_ids:
+    - source-japanese-cel-action-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 使用有方向的动态透视、前景遮挡和清楚的视觉焦点。;
+    让角色、物体和环境形成可读的层级，不依赖界面元素说明空间。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 使用有方向的动态透视、前景遮挡和清楚的视觉焦点。;
+    让角色、物体和环境形成可读的层级，不依赖界面元素说明空间。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 使用有方向的动态透视、前景遮挡和清楚的视觉焦点。;
+    让角色、物体和环境形成可读的层级，不依赖界面元素说明空间。.'
+  evidence:
+    source_ids:
+    - source-japanese-cel-action-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: dominant: 深蓝; dominant: 朱红; dominant:
+    暖灰; dominant: 金黄; dominant: 青绿; behavior: 颜色服务于阵营、材质和光线，饱和色集中在焦点附近。. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: dominant: 深蓝; dominant: 朱红;
+    dominant: 暖灰; dominant: 金黄; dominant: 青绿; behavior: 颜色服务于阵营、材质和光线，饱和色集中在焦点附近。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    dominant: 深蓝; dominant: 朱红; dominant: 暖灰; dominant: 金黄; dominant: 青绿; behavior: 颜色服务于阵营、材质和光线，饱和色集中在焦点附近。.'
+  evidence:
+    source_ids:
+    - source-japanese-cel-action-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 明确的主光与分段式明暗; behavior: 使用清晰但不僵硬的明暗带，转折处保留绘画设计。;
+    behavior: 高光与轮廓线服从体积，不添加无来源的霓虹光环。. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 明确的主光与分段式明暗; behavior:
+    使用清晰但不僵硬的明暗带，转折处保留绘画设计。; behavior: 高光与轮廓线服从体积，不添加无来源的霓虹光环。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 明确的主光与分段式明暗;
+    behavior: 使用清晰但不僵硬的明暗带，转折处保留绘画设计。; behavior: 高光与轮廓线服从体积，不添加无来源的霓虹光环。.'
+  evidence:
+    source_ids:
+    - source-japanese-cel-action-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 细腻的赛璐珞色块、手绘轮廓修饰与有限纹理;
+    edges: 轮廓清楚，局部允许线宽变化和速度线式笔触. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    细腻的赛璐珞色块、手绘轮廓修饰与有限纹理; edges: 轮廓清楚，局部允许线宽变化和速度线式笔触.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 细腻的赛璐珞色块、手绘轮廓修饰与有限纹理; edges: 轮廓清楚，局部允许线宽变化和速度线式笔触.'
+  evidence:
+    source_ids:
+    - source-japanese-cel-action-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: motion
+  axis: motion
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: behavior: 通过姿态、透视、衣物方向和环境线索表达动作潜势。; behavior: 静态主体也必须有明确重心与可读的空间关系。.
+    Keep it subordinate to the requested subject and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: behavior: 通过姿态、透视、衣物方向和环境线索表达动作潜势。;
+    behavior: 静态主体也必须有明确重心与可读的空间关系。.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: behavior: 通过姿态、透视、衣物方向和环境线索表达动作潜势。;
+    behavior: 静态主体也必须有明确重心与可读的空间关系。.'
+  evidence:
+    source_ids:
+    - source-japanese-cel-action-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- motion
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-japanese-cel-action-primary-source
+  kind: primary
+  base_asset_id: japanese-cel-action-primary-source
+execution:
+  route: text_only
+  must:
+  - 先锁定用户主体、视角和空间，再建立可读的三维结构。
+  - 为主要形体安排主光方向和明暗带，避免每个表面同样亮。
+  - 最后加入克制的手绘边缘、速度感和色彩焦点。
+  - 保留三维体积、透视和遮挡关系
+  - 明暗分段服务于材质和体积
+  - 手绘感不能破坏结构可读性
+  - 不固定人物、物体、地点、游戏或故事
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 默认少年角色、长剑、机甲、校园、竞技场或日本城市
+  - 界面、血条、徽标、游戏标题和具体作品元素
+  - 纯平贴纸、塑料三维、过度写实摄影或全局霓虹
+  - 固定角色、武器、机甲、学校或城市
+  - 复制具体游戏的角色、场景、界面、标志或服装
+  - 把硬边明暗误做成平面贴纸或纯二维插画
+  - 不复现具体游戏、角色、界面、标志或固定叙事；代表图只展示渲染方法。
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
