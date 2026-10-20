@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: stop-motion-clay-game-art-direction
+name: 黏土定格游戏美术
+base_package: game-art/stop-motion-clay-game-art
+scope:
+  medium: 黏土、布料、木板、焊接金属和模型涂料; 真实景深但不极端微缩模糊
+  representation: stylized
+  description: 以真实手工搭建的黏土角色、焊接金属、布料和微缩木工为基础，保留指痕、接缝、模型尺度和定格动画般的逐帧生命感。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - smooth_cgi_only
+  - perfect_plastic_surface
+  - copied_puppet
+  - horror_body_detail
+pillars:
+- 以真实手工搭建的黏土角色、焊接金属、布料和微缩木工为基础，保留指痕、接缝、模型尺度和定格动画般的逐帧生命感。
+- 'medium: 黏土、布料、木板、焊接金属和模型涂料; 真实景深但不极端微缩模糊'
+- 'composition: 场景像真实模型台或小型布景; 角色与道具共享可见比例; 前景物体保留手工搭建的重量'
+- 'palette: 暖灰、锈红、旧蓝、乳白和土黄构成复古工业色组; 颜色有材料差异而非统一滤镜; 局部亮色作为功能焦点'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 黏土、布料、木板、焊接金属和模型涂料;
+    真实景深但不极端微缩模糊.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 黏土、布料、木板、焊接金属和模型涂料;
+    真实景深但不极端微缩模糊.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    黏土、布料、木板、焊接金属和模型涂料; 真实景深但不极端微缩模糊.'
+  evidence:
+    source_ids:
+    - source-stop-motion-clay-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 场景像真实模型台或小型布景;
+    角色与道具共享可见比例; 前景物体保留手工搭建的重量. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 场景像真实模型台或小型布景; 角色与道具共享可见比例;
+    前景物体保留手工搭建的重量.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 场景像真实模型台或小型布景;
+    角色与道具共享可见比例; 前景物体保留手工搭建的重量.'
+  evidence:
+    source_ids:
+    - source-stop-motion-clay-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 暖灰、锈红、旧蓝、乳白和土黄构成复古工业色组; 颜色有材料差异而非统一滤镜;
+    局部亮色作为功能焦点. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 暖灰、锈红、旧蓝、乳白和土黄构成复古工业色组; 颜色有材料差异而非统一滤镜;
+    局部亮色作为功能焦点.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    暖灰、锈红、旧蓝、乳白和土黄构成复古工业色组; 颜色有材料差异而非统一滤镜; 局部亮色作为功能焦点.'
+  evidence:
+    source_ids:
+    - source-stop-motion-clay-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 模型摄影棚的柔和主光; 接触阴影和缝隙阴影清楚; 光线不做塑料反射. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 模型摄影棚的柔和主光; 接触阴影和缝隙阴影清楚; 光线不做塑料反射.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 模型摄影棚的柔和主光; 接触阴影和缝隙阴影清楚;
+    光线不做塑料反射.'
+  evidence:
+    source_ids:
+    - source-stop-motion-clay-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 指痕、压痕、缝线、刮痕和不完全平整是结构信息;
+    不同材料可凭触感区分. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 指痕、压痕、缝线、刮痕和不完全平整是结构信息;
+    不同材料可凭触感区分.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    指痕、压痕、缝线、刮痕和不完全平整是结构信息; 不同材料可凭触感区分.'
+  evidence:
+    source_ids:
+    - source-stop-motion-clay-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 微小手工误差有节奏; 不覆盖成统一颗粒.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 微小手工误差有节奏;
+    不覆盖成统一颗粒.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    微小手工误差有节奏; 不覆盖成统一颗粒.'
+  evidence:
+    source_ids:
+    - source-stop-motion-clay-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-stop-motion-clay-game-art-primary-source
+  kind: primary
+  base_asset_id: stop-motion-clay-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先设计模型比例和布景
+  - 再塑造主体与材料接缝
+  - 用柔光拍摄或渲染
+  - 最后保留少量真实制作痕迹
+  - 手工来源从表面、比例和边缘同时体现
+  - 空间真实可站立
+  - 不复制游戏角色和道具
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - smooth_cgi_only
+  - perfect_plastic_surface
+  - copied_puppet
+  - horror_body_detail
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
