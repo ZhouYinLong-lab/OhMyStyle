@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: steampunk-industrial-game-art-direction
+name: 蒸汽朋克工业游戏美术
+base_package: game-art/steampunk-industrial-game-art
+scope:
+  medium: 锅炉、阀门和管道构成功能结构; 避免无因装饰齿轮
+  representation: stylized
+  description: 把锅炉、管线、压力系统和机械连接转译成架空世界中可见的动力系统；齿轮只在结构需要时出现。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - random gears
+  - unexplained pipe networks
+  - generic gold filter
+pillars:
+- 把锅炉、管线、压力系统和机械连接转译成架空世界中可见的动力系统；齿轮只在结构需要时出现。
+- 'medium: 锅炉、阀门和管道构成功能结构; 避免无因装饰齿轮'
+- 'composition: 动力核心组织建筑和工作路径; 管线、设备和操作空间层级清楚'
+- 'palette: 煤黑、铁灰、铜色与暖光; 冷环境与热源形成对比'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 锅炉、阀门和管道构成功能结构;
+    避免无因装饰齿轮.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 锅炉、阀门和管道构成功能结构;
+    避免无因装饰齿轮.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    锅炉、阀门和管道构成功能结构; 避免无因装饰齿轮.'
+  evidence:
+    source_ids:
+    - source-steampunk-industrial-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 动力核心组织建筑和工作路径;
+    管线、设备和操作空间层级清楚. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 动力核心组织建筑和工作路径; 管线、设备和操作空间层级清楚.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 动力核心组织建筑和工作路径;
+    管线、设备和操作空间层级清楚.'
+  evidence:
+    source_ids:
+    - source-steampunk-industrial-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 煤黑、铁灰、铜色与暖光; 冷环境与热源形成对比. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 煤黑、铁灰、铜色与暖光; 冷环境与热源形成对比.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    煤黑、铁灰、铜色与暖光; 冷环境与热源形成对比.'
+  evidence:
+    source_ids:
+    - source-steampunk-industrial-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 热源形成局部橙光; 冷环境保留空间边界. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 热源形成局部橙光; 冷环境保留空间边界.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 热源形成局部橙光; 冷环境保留空间边界.'
+  evidence:
+    source_ids:
+    - source-steampunk-industrial-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 金属、煤灰、玻璃与织物可区分;
+    磨损集中在接触和维护处. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 金属、煤灰、玻璃与织物可区分;
+    磨损集中在接触和维护处.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    金属、煤灰、玻璃与织物可区分; 磨损集中在接触和维护处.'
+  evidence:
+    source_ids:
+    - source-steampunk-industrial-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 管线按功能连接; 细节服从大型机械体块.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 管线按功能连接;
+    细节服从大型机械体块.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    管线按功能连接; 细节服从大型机械体块.'
+  evidence:
+    source_ids:
+    - source-steampunk-industrial-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-steampunk-industrial-game-art-primary-source
+  kind: primary
+  base_asset_id: steampunk-industrial-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 建立动力核心与空间尺度
+  - 连接可追踪的管线和阀门
+  - 区分金属、玻璃和织物
+  - 用热光解释能源流
+  - 检查功能和路径关系
+  - 动力关系看得出如何工作
+  - 路径清楚
+  - 避免随机齿轮装饰
+  avoid:
+  - random gears
+  - unexplained pipe networks
+  - generic gold filter
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
