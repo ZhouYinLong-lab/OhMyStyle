@@ -45,3 +45,7 @@ python tools/compile-style.py style-packages/artists/berthe-morisot --direction 
 ```
 
 此方向仍为实验规则；同题生图对照与跨主体稳定性待人工评审。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。

@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "berthe-morisot",
+    "name": "贝尔特·莫里索",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\berthe-morisot"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A person turning while holding a loose white scarf beside an open window",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A person turning while holding a loose white scarf beside an open window\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nRender a newly composed image using these observable decisions:\n- Open, slightly asymmetrical composition with breathable space and selective cropping.\n- Oil-paint-like, broken brushwork with varied stroke size and direction; broad marks establish light and shadow, smaller marks clarify only essential structure.\n- Luminous high-key values with role-based ivory, soft white, pale blue, blue-green, and gentle green; introduce restrained rose or ochre accents where useful.\n- Natural daylight with colored, soft-edged shadows and visible reflected light.\n- Let some contours dissolve into the setting and leave a few passages open or lightly unfinished, while keeping the requested subject recognizable.\n- Preserve canvas-like surface variation without adding a uniform digital texture or blur.\nUse palette values as anchors, not a global filter. Follow the user’s requested subject, setting, aspect ratio, count, and purpose. Create an original arrangement; do not copy a named artwork or sitter.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied named artwork, sitter, or recognizable source composition\n- added recurring subjects, period costumes, garden, interior, or narrative not requested by the user\n- global pastel tint, uniform blur, airbrush smoothness, or photographic realism\n- hard black contours, theatrical chiaroscuro, muddy shadows, or uniformly sharp edges\n- evenly distributed tiny strokes or a repeated digital canvas overlay\n- unreadable subject, malformed anatomy, broken geometry, or incoherent light direction\n- extra text, signature, logo, frame, watermark, or unrelated objects",
+  "template_variables": {
+    "SUBJECT": "A person turning while holding a loose white scarf beside an open window",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "open_brush_figure_painting": {
+        "required": [
+          "variable strokes follow pose, cloth, or nearby forms",
+          "facial and structural anchors remain readable among released contours",
+          "selected margins or secondary passages leave the light ground visible"
+        ],
+        "reject_if": [
+          "all contours dissolve into universal soft focus",
+          "every surface gets identical brush marks or finish density",
+          "pastel color is applied as a global overlay"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "External artworks are recorded as links for research and visual analysis only; no source artwork is bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

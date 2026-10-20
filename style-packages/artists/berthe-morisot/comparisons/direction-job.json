@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "berthe-morisot",
+    "name": "贝尔特·莫里索",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\berthe-morisot"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A person turning while holding a loose white scarf beside an open window",
+  "prompt": "USER SUBJECT: A person turning while holding a loose white scarf beside an open window\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [gesture-led-stroke-bundles] Group quick, varied strokes along the figure's turn, the fall of cloth, or the angle of nearby forms; change direction and scale with the subject instead of distributing uniform dabs over every surface.\n- [anchor-and-release-contours] Keep a few high-value anchors crisp enough to identify the requested subject, then release selected contours into adjacent colors or visible ground; make each softened edge a deliberate local choice.\n- [visible-ground-and-open-margin] Leave selected corners, margins, or secondary planes sparse enough for the light ground to show through; let the degree of finish vary across the image while keeping the main subject structurally sound.\n- [gesture-edge-ground-coherence] Let gesture-led marks, selectively resolved edges, and open ground work together to describe a freshly observed subject without relying on a weather effect or pastel filter.\nREQUIREMENT: Declare the open-brush-figure-painting context before applying this direction.\nREQUIREMENT: Preserve the requested subject, pose, setting, and count.\nREQUIREMENT: Use varied strokes that follow gesture or form.\nREQUIREMENT: Keep focal anchors readable while leaving selected edges and margins open.",
+  "negative_prompt": "uniform stippling, repeated short dabs, and unrelated texture\nuniversal blur, complete outline tracing, and lost focal features\nuniform edge-to-edge finish, arbitrary blank holes, and decorative frames\napplying a global pastel wash or uniform blur\nadding unrequested family, period, garden, or decorative motifs\nfinishing every region with the same detail density",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "morisot-gesture-and-open-edge-painting",
+    "name": "Morisot gesture and open-edge painting",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\berthe-morisot\\art-direction.yaml",
+    "sha256": "35b77400525446b1622ffbc013fbd230e0e124e9dbd2a9976d0930e1ed3d8c87",
+    "active_rule_ids": [
+      "gesture-led-stroke-bundles",
+      "anchor-and-release-contours",
+      "visible-ground-and-open-margin"
+    ],
+    "contexts": [
+      "open-brush-figure-painting"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare the open-brush-figure-painting context before applying this direction.",
+      "Preserve the requested subject, pose, setting, and count.",
+      "Use varied strokes that follow gesture or form.",
+      "Keep focal anchors readable while leaving selected edges and margins open."
+    ],
+    "avoid": [
+      "applying a global pastel wash or uniform blur",
+      "adding unrequested family, period, garden, or decorative motifs",
+      "finishing every region with the same detail density"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "A figure-centered painting direction in which quick grouped strokes carry gesture and cloth, selected contours remain unresolved, and light ground stays visible at margins. It treats incompletion as an intentional edge decision, not a soft-focus effect or generalized weather atmosphere.",
+      "required_contexts": [
+        "open-brush-figure-painting"
+      ],
+      "incompatible_contexts": [
+        "closed-academic-contour",
+        "photorealistic-rendering",
+        "all-over-soft-focus"
+      ],
+      "limitations": [
+        "Preserve requested identities, activity, setting, and figure count; do not add a period costume, family relation, garden, or domestic prop unless requested.",
+        "Keep the face, hands, and other user-designated focal details readable while loosening selected boundaries.",
+        "Use quick brush marks to describe the requested form and gesture; do not turn every surface into identical broken color or add weather effects without request."
+      ]
+    },
+    "rules": [
+      {
+        "id": "gesture-led-stroke-bundles",
+        "axis": "mark_making",
+        "importance": "core",
+        "applies_when": "The requested subject includes a figure, fabric, or a visible change of pose.",
+        "instruction": "Group quick, varied strokes along the figure's turn, the fall of cloth, or the angle of nearby forms; change direction and scale with the subject instead of distributing uniform dabs over every surface.",
+        "observable": "Brushwork conveys movement and material while the requested pose remains legible.",
+        "reject_when": "All surfaces use identical marks, or loose strokes erase the action and anatomy.",
+        "evidence": {
+          "source_ids": [
+            "morisot-national-gallery-divan",
+            "morisot-national-gallery-profile"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform stippling, repeated short dabs, and unrelated texture"
+      },
+      {
+        "id": "anchor-and-release-contours",
+        "axis": "edges_and_subject_legibility",
+        "importance": "core",
+        "applies_when": "A subject sits against a light or brushworked surrounding field.",
+        "instruction": "Keep a few high-value anchors crisp enough to identify the requested subject, then release selected contours into adjacent colors or visible ground; make each softened edge a deliberate local choice.",
+        "observable": "The image alternates readable anchors with open edges, so the subject feels present in its surroundings without becoming blurred.",
+        "reject_when": "Every contour is closed and equally sharp, or the entire image is uniformly out of focus.",
+        "evidence": {
+          "source_ids": [
+            "morisot-orsay-profile",
+            "morisot-national-gallery-divan"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "universal blur, complete outline tracing, and lost focal features"
+      },
+      {
+        "id": "visible-ground-and-open-margin",
+        "axis": "surface_and_composition",
+        "importance": "core",
+        "applies_when": "The composition allows a light ground or quiet margin around its main subject.",
+        "instruction": "Leave selected corners, margins, or secondary planes sparse enough for the light ground to show through; let the degree of finish vary across the image while keeping the main subject structurally sound.",
+        "observable": "Open passages feel intentionally related to the subject and brushwork, not like an unfinished crop or missing background.",
+        "reject_when": "Every region is filled to the edge with equal detail, or exposed ground interrupts a critical contour or requested object.",
+        "evidence": {
+          "source_ids": [
+            "morisot-orsay-profile",
+            "morisot-nga-artist-page"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform edge-to-edge finish, arbitrary blank holes, and decorative frames"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "gesture-edge-ground-coherence",
+        "rule_ids": [
+          "gesture-led-stroke-bundles",
+          "anchor-and-release-contours",
+          "visible-ground-and-open-margin"
+        ],
+        "instruction": "Let gesture-led marks, selectively resolved edges, and open ground work together to describe a freshly observed subject without relying on a weather effect or pastel filter.",
+        "observable": "The focal pose is legible, brushwork follows its movement, and selected passages remain open without making the whole image vague."
+      }
+    ],
+    "sources": [
+      {
+        "id": "morisot-national-gallery-divan",
+        "kind": "museum_object_description",
+        "url": "https://www.nationalgallery.org.uk/paintings/berthe-morisot-girl-on-a-divan"
+      },
+      {
+        "id": "morisot-national-gallery-profile",
+        "kind": "museum_artist_profile",
+        "url": "https://www.nationalgallery.org.uk/artists/berthe-morisot"
+      },
+      {
+        "id": "morisot-orsay-profile",
+        "kind": "museum_artist_profile",
+        "url": "https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/berthe-morisot-1841-1895"
+      },
+      {
+        "id": "morisot-nga-artist-page",
+        "kind": "museum_artist_profile",
+        "url": "https://www.nga.gov/artists/1733-berthe-morisot"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "35b77400525446b1622ffbc013fbd230e0e124e9dbd2a9976d0930e1ed3d8c87",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
