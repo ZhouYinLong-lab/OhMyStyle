@@ -1,0 +1,149 @@
+schema_version: 2.1.0
+status: experimental
+id: greek-classical-period-direction
+name: 古希腊古典时期
+base_package: movements/greek-classical-period
+scope:
+  medium: 'support: marble or bronze figure with traces of restrained pigment; mark: modeled volume, crisp
+    silhouette, gravity-following drapery; finish: softly weathered but structurally clear surface'
+  representation: stylized
+  description: A measured Greek visual language of balanced composition, clear naturalistic bodies, calm agency,
+    articulated drapery, and a disciplined relationship between movement, proportion, and civic ideals.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+pillars:
+- A measured Greek visual language of balanced composition, clear naturalistic bodies, calm agency, articulated
+  drapery, and a disciplined relationship between movement, proportion, and civic ideals.
+- 'composition: balance a dominant figure against stable architectural or ground cues; use a clear focal action
+  with controlled secondary gestures; preserve legible negative space around the body'
+- 'form: anatomy: naturalistic, proportioned, idealized without hypermuscular excess; stance: poised weight
+  shift or restrained contrapposto; drapery: follows gravity and body structure in large calm folds'
+- 'palette: warm marble or muted earth; mineral blue, red, and ochre accents when painted; deep shadow used
+  to model volume'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: balance a dominant
+    figure against stable architectural or ground cues; use a clear focal action with controlled secondary
+    gestures; preserve legible negative space around the body. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: balance a dominant
+    figure against stable architectural or ground cues; use a clear focal action with controlled secondary
+    gestures; preserve legible negative space around the body.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: balance
+    a dominant figure against stable architectural or ground cues; use a clear focal action with controlled
+    secondary gestures; preserve legible negative space around the body.'
+  evidence:
+    source_ids:
+    - source-met-classical
+    - source-met-255034
+    - source-met-255027
+    basis: curatorial_inference
+    visual_review: pending
+- id: form
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: anatomy: naturalistic, proportioned, idealized without
+    hypermuscular excess; stance: poised weight shift or restrained contrapposto; drapery: follows gravity
+    and body structure in large calm folds. Keep it subordinate to the requested subject and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: anatomy: naturalistic,
+    proportioned, idealized without hypermuscular excess; stance: poised weight shift or restrained contrapposto;
+    drapery: follows gravity and body structure in large calm folds.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: anatomy: naturalistic,
+    proportioned, idealized without hypermuscular excess; stance: poised weight shift or restrained contrapposto;
+    drapery: follows gravity and body structure in large calm folds.'
+  evidence:
+    source_ids:
+    - source-met-classical
+    - source-met-255034
+    - source-met-255027
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: warm marble or muted earth; mineral
+    blue, red, and ochre accents when painted; deep shadow used to model volume. Adapt their balance to the
+    requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: warm marble or muted earth;
+    mineral blue, red, and ochre accents when painted; deep shadow used to model volume.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    warm marble or muted earth; mineral blue, red, and ochre accents when painted; deep shadow used to model
+    volume.'
+  evidence:
+    source_ids:
+    - source-met-classical
+    - source-met-255034
+    - source-met-255027
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: stone or bronze
+    material remains legible; edges are clear but not diagrammatic; finish is controlled rather than distressed.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: stone or
+    bronze material remains legible; edges are clear but not diagrammatic; finish is controlled rather than
+    distressed.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    stone or bronze material remains legible; edges are clear but not diagrammatic; finish is controlled rather
+    than distressed.'
+  evidence:
+    source_ids:
+    - source-met-classical
+    - source-met-255034
+    - source-met-255027
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- form
+- color
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - form
+  - color
+  instruction: Keep the package-specific relationship among composition, form, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-met-classical
+  kind: primary
+  base_asset_id: met-classical
+- id: source-met-255034
+  kind: primary
+  base_asset_id: met-255034
+- id: source-met-255027
+  kind: primary
+  base_asset_id: met-255027
+- id: source-met-248309
+  kind: primary
+  base_asset_id: met-248309
+- id: source-met-248670
+  kind: primary
+  base_asset_id: met-248670
+execution:
+  route: text_only
+  must:
+  - harmony is created by proportion and balance
+  - action is intelligible without theatrical exaggeration
+  - material and anatomy cooperate
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - uniformly white modern marble cliché
+  - superhero anatomy
+  - baroque turbulence
+  - romantic mist
+  - Do not copy a specific reference composition, named character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
