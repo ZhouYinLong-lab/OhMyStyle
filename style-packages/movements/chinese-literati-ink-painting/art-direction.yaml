@@ -1,0 +1,164 @@
+schema_version: 2.1.0
+status: experimental
+id: chinese-literati-ink-painting-direction
+name: 中国文人水墨
+base_package: movements/chinese-literati-ink-painting
+scope:
+  medium: Chinese ink-and-wash painting language on absorbent paper
+  representation: stylized
+  description: 以墨色浓淡、笔触速度、留白空间和含蓄的观看节奏组织画面；强调笔墨本身的气韵与主体之间的距离，不固定竹子、山水、亭台或卷轴形式。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以墨色浓淡、笔触速度、留白空间和含蓄的观看节奏组织画面；强调笔墨本身的气韵与主体之间的距离，不固定竹子、山水、亭台或卷轴形式。
+- 'composition: Give the image a quiet imbalance with a large breathing area and a small number of purposeful
+  brush masses.; Use distance, omission, and scale to create attention rather than filling every area with
+  detail.'
+- 'palette: Let ink value carry most of the image; if color appears, keep it mineral, sparse, and subordinate
+  to the paper.; Preserve warm or cool paper variation without turning it into a tinted cinematic filter.'
+- 'lighting: quality: diffuse daylight filtered through atmosphere; behavior: Light is understated; depth comes
+  from ink dilution, dry brush, and omitted edges rather than dramatic cast shadow.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Give the image
+    a quiet imbalance with a large breathing area and a small number of purposeful brush masses.; Use distance,
+    omission, and scale to create attention rather than filling every area with detail.. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Give the image a
+    quiet imbalance with a large breathing area and a small number of purposeful brush masses.; Use distance,
+    omission, and scale to create attention rather than filling every area with detail..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Give the
+    image a quiet imbalance with a large breathing area and a small number of purposeful brush masses.; Use
+    distance, omission, and scale to create attention rather than filling every area with detail..'
+  evidence:
+    source_ids:
+    - source-chinese-literati-ink-painting-primary-source
+    - source-chinese-literati-ink-painting-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Let ink value carry most of the image;
+    if color appears, keep it mineral, sparse, and subordinate to the paper.; Preserve warm or cool paper variation
+    without turning it into a tinted cinematic filter.. Adapt their balance to the requested subject; do not
+    apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Let ink value carry most
+    of the image; if color appears, keep it mineral, sparse, and subordinate to the paper.; Preserve warm or
+    cool paper variation without turning it into a tinted cinematic filter..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Let ink value carry most of the image; if color appears, keep it mineral, sparse, and subordinate to the
+    paper.; Preserve warm or cool paper variation without turning it into a tinted cinematic filter..'
+  evidence:
+    source_ids:
+    - source-chinese-literati-ink-painting-primary-source
+    - source-chinese-literati-ink-painting-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: diffuse daylight filtered through atmosphere;
+    behavior: Light is understated; depth comes from ink dilution, dry brush, and omitted edges rather than
+    dramatic cast shadow.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: diffuse daylight filtered
+    through atmosphere; behavior: Light is understated; depth comes from ink dilution, dry brush, and omitted
+    edges rather than dramatic cast shadow..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: diffuse daylight
+    filtered through atmosphere; behavior: Light is understated; depth comes from ink dilution, dry brush,
+    and omitted edges rather than dramatic cast shadow..'
+  evidence:
+    source_ids:
+    - source-chinese-literati-ink-painting-primary-source
+    - source-chinese-literati-ink-painting-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: absorbent
+    paper with pooled and feathered ink; edges: alternation between wet soft edges and decisive dry-brush accents.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    absorbent paper with pooled and feathered ink; edges: alternation between wet soft edges and decisive dry-brush
+    accents.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: absorbent paper with pooled and feathered ink; edges: alternation between wet soft edges and decisive
+    dry-brush accents.'
+  evidence:
+    source_ids:
+    - source-chinese-literati-ink-painting-primary-source
+    - source-chinese-literati-ink-painting-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: sparse-to-medium,
+    with detail reserved for a few anchor strokes; placement: texture follows brush direction and material
+    observation; blank paper remains an active part of the composition. Preserve detail hierarchy and material
+    identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    sparse-to-medium, with detail reserved for a few anchor strokes; placement: texture follows brush direction
+    and material observation; blank paper remains an active part of the composition.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: sparse-to-medium, with detail reserved for a few anchor strokes; placement: texture follows brush
+    direction and material observation; blank paper remains an active part of the composition.'
+  evidence:
+    source_ids:
+    - source-chinese-literati-ink-painting-primary-source
+    - source-chinese-literati-ink-painting-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-chinese-literati-ink-painting-primary-source
+  kind: primary
+  base_asset_id: chinese-literati-ink-painting-primary-source
+- id: source-chinese-literati-ink-painting-primary-image
+  kind: primary
+  base_asset_id: chinese-literati-ink-painting-primary-image
+execution:
+  route: text_only
+  must:
+  - reserve the main blank field and place the user-supplied subject with a few structural strokes
+  - establish pale washes and distant value layers
+  - add dark wet-ink anchors and dry-brush edges selectively
+  - introduce restrained mineral color only when it clarifies the requested subject
+  - preserve value-based ink hierarchy and active blank space
+  - preserve visible brush behavior instead of generic watercolor blur
+  - preserve an open subject policy; do not force bamboo, mountains, pavilions, seals, or calligraphy
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
