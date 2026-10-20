@@ -13,11 +13,11 @@ not_equivalent_to:
 family: intimate-large-format-memory
 near_duplicates: []
 supersedes: []
-conflicts:
-  - glossy-commercial-retouching
+conflicts: []
 distinctives:
   - deep but open grayscale
   - patient large-format distance
   - atmospheric and paper surface evidence
 avoid_overlap:
   - forced children, family, rural south, nudity, or one named location
+  - 'Avoid blending this direction with the unregistered contrast reference: glossy-commercial-retouching.'
