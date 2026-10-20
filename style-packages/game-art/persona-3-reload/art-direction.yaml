@@ -1,0 +1,154 @@
+schema_version: 2.1.0
+status: experimental
+id: persona-3-reload-direction
+name: 女神异闻录3重制版游戏美术
+base_package: game-art/persona-3-reload
+scope:
+  medium: 游戏美术
+  representation: stylized
+  description: 以深蓝夜色、月光都市、清晰剪影和克制的冷暖对比组织现代日式角色扮演游戏画面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character
+  - branded interface
+  - fixed moon or school setting
+pillars:
+- 以深蓝夜色、月光都市、清晰剪影和克制的冷暖对比组织现代日式角色扮演游戏画面。
+- 'medium: 游戏美术'
+- 'composition: 宽幅画面由建筑、栏杆、电线或道路组织出清楚的水平与斜向骨架; 主体通常保留适度留白，不依赖中心对称或固定场景; 前景结构清楚，中景承担空间叙事，远景用蓝色空气透视后退'
+- 'palette: 深海军蓝、钴蓝和冷紫构成主要明度层; 青蓝高光用于月光、玻璃或湿润表面; 少量暖琥珀光只作为窗口、路灯或局部反射; 不使用全画面霓虹渐变或无来源的彩色光污染'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 游戏美术.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 游戏美术.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    游戏美术.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 宽幅画面由建筑、栏杆、电线或道路组织出清楚的水平与斜向骨架;
+    主体通常保留适度留白，不依赖中心对称或固定场景; 前景结构清楚，中景承担空间叙事，远景用蓝色空气透视后退. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 宽幅画面由建筑、栏杆、电线或道路组织出清楚的水平与斜向骨架;
+    主体通常保留适度留白，不依赖中心对称或固定场景; 前景结构清楚，中景承担空间叙事，远景用蓝色空气透视后退.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 宽幅画面由建筑、栏杆、电线或道路组织出清楚的水平与斜向骨架;
+    主体通常保留适度留白，不依赖中心对称或固定场景; 前景结构清楚，中景承担空间叙事，远景用蓝色空气透视后退.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 深海军蓝、钴蓝和冷紫构成主要明度层; 青蓝高光用于月光、玻璃或湿润表面;
+    少量暖琥珀光只作为窗口、路灯或局部反射; 不使用全画面霓虹渐变或无来源的彩色光污染. Adapt their balance to the requested subject; do not apply them
+    as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 深海军蓝、钴蓝和冷紫构成主要明度层; 青蓝高光用于月光、玻璃或湿润表面;
+    少量暖琥珀光只作为窗口、路灯或局部反射; 不使用全画面霓虹渐变或无来源的彩色光污染.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    深海军蓝、钴蓝和冷紫构成主要明度层; 青蓝高光用于月光、玻璃或湿润表面; 少量暖琥珀光只作为窗口、路灯或局部反射; 不使用全画面霓虹渐变或无来源的彩色光污染.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 冷色月光或大型环境光，方向明确但不过度戏剧化; behavior: 阴影保持深色而有细节;
+    behavior: 暖色点光必须服从场景中的光源或反射逻辑. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 冷色月光或大型环境光，方向明确但不过度戏剧化;
+    behavior: 阴影保持深色而有细节; behavior: 暖色点光必须服从场景中的光源或反射逻辑.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 冷色月光或大型环境光，方向明确但不过度戏剧化;
+    behavior: 阴影保持深色而有细节; behavior: 暖色点光必须服从场景中的光源或反射逻辑.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 干净数字绘画、清晰色面与克制纹理并置;
+    edges: clean graphic edges with subject-dependent softness. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    干净数字绘画、清晰色面与克制纹理并置; edges: clean graphic edges with subject-dependent softness.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 干净数字绘画、清晰色面与克制纹理并置; edges: clean graphic edges with subject-dependent softness.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 中等;
+    placement: 建筑、天空和地面允许少量颗粒与笔触，主体轮廓保持清楚. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    中等; placement: 建筑、天空和地面允许少量颗粒与笔触，主体轮廓保持清楚.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 中等; placement: 建筑、天空和地面允许少量颗粒与笔触，主体轮廓保持清楚.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-01
+  kind: primary_research_source
+  base_asset_id: primary-01
+execution:
+  route: text_only
+  must:
+  - 先写用户主体和构图，再注入冷蓝夜间视觉签名
+  - 将蓝色作为环境主色，将暖色限制为有来源的局部光
+  - 保持建筑、天空、人物或物体的轮廓可读
+  - 用少量颗粒、湿润反射或软雾连接前中后景
+  - 先安排宽幅空间骨架与主体留白
+  - 用冷色环境光统一不同材质
+  - 以轮廓、色面和有限纹理建立可读性
+  - 最后检查暖色光源是否过量、是否出现固定游戏元素
+  avoid:
+  - fixed subject matter
+  - copied composition
+  - logos, interface text, or branded symbols
+  - generic neon cyberpunk treatment
+  - fixed moon, school, train, character, weapon, or interface
+  - copied key-art composition
+  - photorealistic rendering when the user requests illustration
+  - named character
+  - branded interface
+  - fixed moon or school setting
