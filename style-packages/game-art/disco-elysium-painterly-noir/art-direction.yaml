@@ -1,0 +1,153 @@
+schema_version: 2.1.0
+status: experimental
+id: disco-elysium-painterly-noir-direction
+name: 厚涂侦探绘本游戏美术
+base_package: game-art/disco-elysium-painterly-noir
+scope:
+  medium: 厚涂数字绘画或油彩式绘本; 干笔、湿笔和擦除痕迹可见; 边缘有意在清晰和融化之间变化
+  representation: stylized
+  description: 以厚涂笔触、歪斜城市、潮湿天气、脏柔色组和图形化人物剪影组织带有文学感的绘本式角色扮演画面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - smooth_airbrush
+  - photorealism
+  - readable_dialogue_text
+  - copied_portrait
+  - generic_noir_filter
+pillars:
+- 以厚涂笔触、歪斜城市、潮湿天气、脏柔色组和图形化人物剪影组织带有文学感的绘本式角色扮演画面。
+- 'medium: 厚涂数字绘画或油彩式绘本; 干笔、湿笔和擦除痕迹可见; 边缘有意在清晰和融化之间变化'
+- 'composition: 建筑和人物可略有歪斜但仍保持空间关系; 画面像绘本跨页而不是截图; 主体常被大面积天空、墙面或路面包围'
+- 'palette: 脏青绿、烟灰、奶油、锈红和尼古丁黄形成低到中饱和色组; 暖色点缀带有叙事重量但不成为商业高光; 阴影保留颜色'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 厚涂数字绘画或油彩式绘本;
+    干笔、湿笔和擦除痕迹可见; 边缘有意在清晰和融化之间变化.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 厚涂数字绘画或油彩式绘本;
+    干笔、湿笔和擦除痕迹可见; 边缘有意在清晰和融化之间变化.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    厚涂数字绘画或油彩式绘本; 干笔、湿笔和擦除痕迹可见; 边缘有意在清晰和融化之间变化.'
+  evidence:
+    source_ids:
+    - source-disco-elysium-painterly-noir-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 建筑和人物可略有歪斜但仍保持空间关系;
+    画面像绘本跨页而不是截图; 主体常被大面积天空、墙面或路面包围. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 建筑和人物可略有歪斜但仍保持空间关系;
+    画面像绘本跨页而不是截图; 主体常被大面积天空、墙面或路面包围.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 建筑和人物可略有歪斜但仍保持空间关系;
+    画面像绘本跨页而不是截图; 主体常被大面积天空、墙面或路面包围.'
+  evidence:
+    source_ids:
+    - source-disco-elysium-painterly-noir-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 脏青绿、烟灰、奶油、锈红和尼古丁黄形成低到中饱和色组; 暖色点缀带有叙事重量但不成为商业高光;
+    阴影保留颜色. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 脏青绿、烟灰、奶油、锈红和尼古丁黄形成低到中饱和色组;
+    暖色点缀带有叙事重量但不成为商业高光; 阴影保留颜色.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    脏青绿、烟灰、奶油、锈红和尼古丁黄形成低到中饱和色组; 暖色点缀带有叙事重量但不成为商业高光; 阴影保留颜色.'
+  evidence:
+    source_ids:
+    - source-disco-elysium-painterly-noir-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 阴天、雨天和室内窗光为主; 光线软但有方向; 不使用电影化镜头光晕. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 阴天、雨天和室内窗光为主; 光线软但有方向; 不使用电影化镜头光晕.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 阴天、雨天和室内窗光为主; 光线软但有方向;
+    不使用电影化镜头光晕.'
+  evidence:
+    source_ids:
+    - source-disco-elysium-painterly-noir-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 墙面、路面、衣物、皮肤和金属有不同笔触;
+    绘画纹理不是统一噪声. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 墙面、路面、衣物、皮肤和金属有不同笔触;
+    绘画纹理不是统一噪声.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    墙面、路面、衣物、皮肤和金属有不同笔触; 绘画纹理不是统一噪声.'
+  evidence:
+    source_ids:
+    - source-disco-elysium-painterly-noir-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纹理沿笔触和结构分布;
+    背景可简化但不能全部模糊. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纹理沿笔触和结构分布;
+    背景可简化但不能全部模糊.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纹理沿笔触和结构分布; 背景可简化但不能全部模糊.'
+  evidence:
+    source_ids:
+    - source-disco-elysium-painterly-noir-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-disco-elysium-painterly-noir-primary-source
+  kind: primary
+  base_asset_id: disco-elysium-painterly-noir-primary-source
+execution:
+  route: text_only
+  must:
+  - 先用大笔触建立建筑与天空
+  - 再安排人物剪影和道路关系
+  - 补充局部材质笔触
+  - 最后削减解释性道具和文字
+  - 厚涂表面和构图距离共同制造气质
+  - 不靠可读文字讲故事
+  - 不得复制游戏中的人物、对白和地点
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - smooth_airbrush
+  - photorealism
+  - readable_dialogue_text
+  - copied_portrait
+  - generic_noir_filter
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
