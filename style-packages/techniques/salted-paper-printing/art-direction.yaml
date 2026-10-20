@@ -1,0 +1,159 @@
+schema_version: 2.1.0
+status: experimental
+id: salted-paper-printing-direction
+name: 盐纸印相
+base_package: techniques/salted-paper-printing
+scope:
+  medium: salted-paper photographic print
+  representation: stylized
+  description: 以无涂层纸纤维、哑光表面、暖棕色调和接触印相的连续灰阶构成早期摄影纸基质感。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - forcing Victorian subjects, costumes, scratches, borders, or decorative aging
+pillars:
+- 以无涂层纸纤维、哑光表面、暖棕色调和接触印相的连续灰阶构成早期摄影纸基质感。
+- 'differentiation: matte uncoated paper, visible fiber, continuous warm gray scale, restrained contact-print
+  irregularity'
+- 'composition: quiet documentary framing with a readable subject and gentle tonal falloff'
+- 'palette: warm gray, ivory, faded umber, and restrained yellow-brown'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: matte uncoated
+    paper, visible fiber, continuous warm gray scale, restrained contact-print irregularity. Do not collapse
+    the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: matte uncoated paper, visible fiber,
+    continuous warm gray scale, restrained contact-print irregularity.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: matte
+    uncoated paper, visible fiber, continuous warm gray scale, restrained contact-print irregularity.'
+  evidence:
+    source_ids:
+    - source-salted-paper-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: quiet documentary
+    framing with a readable subject and gentle tonal falloff. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: quiet documentary
+    framing with a readable subject and gentle tonal falloff.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: quiet documentary
+    framing with a readable subject and gentle tonal falloff.'
+  evidence:
+    source_ids:
+    - source-salted-paper-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: warm gray, ivory, faded umber, and
+    restrained yellow-brown. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: warm gray, ivory, faded umber,
+    and restrained yellow-brown.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    warm gray, ivory, faded umber, and restrained yellow-brown.'
+  evidence:
+    source_ids:
+    - source-salted-paper-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft continuous daylight-like scale with
+    preserved mid-tones; behavior: Use light and value to preserve the user''s subject rather than add a fixed
+    scene.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft continuous daylight-like
+    scale with preserved mid-tones; behavior: Use light and value to preserve the user''s subject rather than
+    add a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft continuous
+    daylight-like scale with preserved mid-tones; behavior: Use light and value to preserve the user''s subject
+    rather than add a fixed scene..'
+  evidence:
+    source_ids:
+    - source-salted-paper-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: matte
+    uncoated paper with visible fibers and contact-print irregularity; edges: precise enough to preserve the
+    requested subject. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    matte uncoated paper with visible fibers and contact-print irregularity; edges: precise enough to preserve
+    the requested subject.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: matte uncoated paper with visible fibers and contact-print irregularity; edges: precise enough
+    to preserve the requested subject.'
+  evidence:
+    source_ids:
+    - source-salted-paper-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: fine
+    and low density in paper support and tonal transitions, never scratches; placement: follow material and
+    process; never become a uniform overlay. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    fine and low density in paper support and tonal transitions, never scratches; placement: follow material
+    and process; never become a uniform overlay.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: fine and low density in paper support and tonal transitions, never scratches; placement: follow
+    material and process; never become a uniform overlay.'
+  evidence:
+    source_ids:
+    - source-salted-paper-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-salted-paper-printing-primary-source
+  kind: primary
+  base_asset_id: salted-paper-printing-primary-source
+execution:
+  route: text_only
+  must:
+  - compose the user subject; establish gentle gray scale; apply warm chemical tone; reveal subtle fibers and
+    edge variation; check against glossy albumen
+  - subject remains identifiable; matte fiber-rich support is visible; warmth is not a generic sepia filter
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - fixed subject, location, character, or story not requested by the user
+  - generic global color filter without process evidence
+  - copying a specific reference composition
+  - forcing Victorian subjects, costumes, scratches, borders, or decorative aging
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
