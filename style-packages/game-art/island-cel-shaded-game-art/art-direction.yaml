@@ -16,8 +16,8 @@ pillars:
 - 以清晰卡通渲染、夸张但可读的轮廓、明亮海天色彩和绘画般的三维表面建立轻快而完整的游戏空间。
 - 'composition: 清楚的前中后景和可读的游戏空间; 轮廓、路径和地标形体优先于细碎写实纹理; 画面保持轻快的视觉节奏和大色块平衡'
 - 'palette: 海蓝、天空青、暖沙色和明亮绿植形成清爽关系; 阴影偏彩色而非纯黑; 强调色用于可交互或视觉重点，但不强制指定对象'
-- 'lighting: quality: 明亮的自然日光，柔和但明确的卡通阴影，避免写实电影式压暗; behavior: Keep the requested subject and location independent
-  from the package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene.'
+- 'lighting: broad natural daylight with crisp, clearly bounded cel-shaded shadows; Keep shadow shapes graphic
+  and colorful; avoid realistic cinematic underexposure.'
 rules:
 - id: composition
   axis: composition
@@ -25,8 +25,8 @@ rules:
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
   instruction: 'Organize the requested subject using these package-specific spatial decisions: 清楚的前中后景和可读的游戏空间;
     轮廓、路径和地标形体优先于细碎写实纹理; 画面保持轻快的视觉节奏和大色块平衡. Preserve the user-provided content and layout.'
-  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 清楚的前中后景和可读的游戏空间;
-    轮廓、路径和地标形体优先于细碎写实纹理; 画面保持轻快的视觉节奏和大色块平衡.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 清楚的前中后景和可读的游戏空间; 轮廓、路径和地标形体优先于细碎写实纹理;
+    画面保持轻快的视觉节奏和大色块平衡.'
   reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 清楚的前中后景和可读的游戏空间;
     轮廓、路径和地标形体优先于细碎写实纹理; 画面保持轻快的视觉节奏和大色块平衡.'
   evidence:
@@ -38,8 +38,8 @@ rules:
   axis: palette
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: 海蓝、天空青、暖沙色和明亮绿植形成清爽关系; 阴影偏彩色而非纯黑;
-    强调色用于可交互或视觉重点，但不强制指定对象. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  instruction: 'Use these package-specific color roles and relationships: 海蓝、天空青、暖沙色和明亮绿植形成清爽关系; 阴影偏彩色而非纯黑; 强调色用于可交互或视觉重点，但不强制指定对象.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
   observable: 'The stated colors and their roles are visible and distinguishable: 海蓝、天空青、暖沙色和明亮绿植形成清爽关系; 阴影偏彩色而非纯黑;
     强调色用于可交互或视觉重点，但不强制指定对象.'
   reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
@@ -53,15 +53,14 @@ rules:
   axis: lighting
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Apply the package-specific light behavior: quality: 明亮的自然日光，柔和但明确的卡通阴影，避免写实电影式压暗; behavior:
-    Keep the requested subject and location independent from the package.; behavior: Apply lighting as a transferable
-    visual decision, not a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
-  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 明亮的自然日光，柔和但明确的卡通阴影，避免写实电影式压暗;
-    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
-    as a transferable visual decision, not a fixed scene..'
-  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 明亮的自然日光，柔和但明确的卡通阴影，避免写实电影式压暗;
-    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
-    as a transferable visual decision, not a fixed scene..'
+  instruction: Use broad natural daylight with crisp, clearly bounded cel-shaded shadows. Keep shadow shapes graphic
+    and colorful; avoid realistic cinematic underexposure. Keep the light coherent with the requested subject
+    and scene.
+  observable: 'The light quality and its effect on shadows, materials, or tonal separation are visible: broad
+    natural daylight with crisp, clearly bounded cel-shaded shadows. Keep shadow shapes graphic and colorful;
+    avoid realistic cinematic underexposure.'
+  reject_when: 'Reject global tint, bloom, or lighting that erases the stated tonal or material distinctions:
+    broad natural daylight with crisp, clearly bounded cel-shaded shadows.'
   evidence:
     source_ids:
     - source-island-cel-shaded-game-art-primary-source
@@ -72,12 +71,11 @@ rules:
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
   instruction: 'Render the requested materials using these package-specific surface decisions: finish: 简化而有绘画感的三维表面，边缘清楚，材质差异通过色块和形体表达;
-    edges: deliberate and subject-dependent, without a copied layout. Preserve detail hierarchy and material
-    identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    edges: deliberate and subject-dependent, without a copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish: 简化而有绘画感的三维表面，边缘清楚，材质差异通过色块和形体表达;
+    edges: deliberate and subject-dependent, without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: finish:
     简化而有绘画感的三维表面，边缘清楚，材质差异通过色块和形体表达; edges: deliberate and subject-dependent, without a copied layout.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    finish: 简化而有绘画感的三维表面，边缘清楚，材质差异通过色块和形体表达; edges: deliberate and subject-dependent, without a copied layout.'
   evidence:
     source_ids:
     - source-island-cel-shaded-game-art-primary-source
@@ -90,10 +88,10 @@ rules:
   instruction: 'Render the requested materials using these package-specific surface decisions: density: 低到中等纹理密度，近景可有手绘变化，远景保持干净可读;
     placement: concentrated where the medium or material needs explanation. Preserve detail hierarchy and material
     identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density: 低到中等纹理密度，近景可有手绘变化，远景保持干净可读;
+    placement: concentrated where the medium or material needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: density:
     低到中等纹理密度，近景可有手绘变化，远景保持干净可读; placement: concentrated where the medium or material needs explanation.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    density: 低到中等纹理密度，近景可有手绘变化，远景保持干净可读; placement: concentrated where the medium or material needs explanation.'
   evidence:
     source_ids:
     - source-island-cel-shaded-game-art-primary-source
@@ -111,10 +109,9 @@ joint_checks:
   - composition
   - palette
   - lighting
-  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
-    preserving the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-island-cel-shaded-game-art-primary-source
   kind: primary
@@ -138,6 +135,6 @@ execution:
   - copying a specific reference composition
   - copied composition
   - named character or branded asset
-  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
-    protected game asset.
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+    game asset.
   - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
