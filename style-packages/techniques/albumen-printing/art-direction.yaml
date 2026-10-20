@@ -1,0 +1,152 @@
+schema_version: 2.1.0
+status: experimental
+id: albumen-printing-direction
+name: 蛋白印相
+base_package: techniques/albumen-printing
+scope:
+  medium: 历史摄影印相与纸基照片表面
+  representation: stylized
+  description: 通过蛋白涂层、银盐接触印相和温暖的半光纸面，形成细节清晰、层次细腻且略带历史氧化感的照片表面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - 普通棕褐色复古滤镜
+  - 固定历史肖像、旧建筑、相册或19世纪服装
+  - 过重划痕、漏光、胶片边框和低清晰度
+pillars:
+- 通过蛋白涂层、银盐接触印相和温暖的半光纸面，形成细节清晰、层次细腻且略带历史氧化感的照片表面。
+- 'differentiation: 蛋白涂层带来的细腻半光表面; 温暖褐色与连续的银盐层次; 纸张和化学过程参与影像，而非单纯复古滤镜'
+- 'composition: 保持摄影构图本身清楚，让工艺主要作用于色调、表面和边缘；可保留接触印相的纸边或轻微不齐。; 中等细节密度与安静的留白比过度戏剧化的画面更稳定。'
+- 'palette: 暖褐、奶油白、烟灰和柔和黑构成主调；可以保留用户指定的局部颜色，但整体不应变成综合色滤镜。; 高光偏暖、暗部略带棕红，明度层次连续而不死黑。'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: 蛋白涂层带来的细腻半光表面;
+    温暖褐色与连续的银盐层次; 纸张和化学过程参与影像，而非单纯复古滤镜. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: 蛋白涂层带来的细腻半光表面; 温暖褐色与连续的银盐层次; 纸张和化学过程参与影像，而非单纯复古滤镜.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: 蛋白涂层带来的细腻半光表面;
+    温暖褐色与连续的银盐层次; 纸张和化学过程参与影像，而非单纯复古滤镜.'
+  evidence:
+    source_ids:
+    - source-albumen-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 保持摄影构图本身清楚，让工艺主要作用于色调、表面和边缘；可保留接触印相的纸边或轻微不齐。;
+    中等细节密度与安静的留白比过度戏剧化的画面更稳定。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 保持摄影构图本身清楚，让工艺主要作用于色调、表面和边缘；可保留接触印相的纸边或轻微不齐。;
+    中等细节密度与安静的留白比过度戏剧化的画面更稳定。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 保持摄影构图本身清楚，让工艺主要作用于色调、表面和边缘；可保留接触印相的纸边或轻微不齐。;
+    中等细节密度与安静的留白比过度戏剧化的画面更稳定。.'
+  evidence:
+    source_ids:
+    - source-albumen-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 暖褐、奶油白、烟灰和柔和黑构成主调；可以保留用户指定的局部颜色，但整体不应变成综合色滤镜。;
+    高光偏暖、暗部略带棕红，明度层次连续而不死黑。. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 暖褐、奶油白、烟灰和柔和黑构成主调；可以保留用户指定的局部颜色，但整体不应变成综合色滤镜。;
+    高光偏暖、暗部略带棕红，明度层次连续而不死黑。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    暖褐、奶油白、烟灰和柔和黑构成主调；可以保留用户指定的局部颜色，但整体不应变成综合色滤镜。; 高光偏暖、暗部略带棕红，明度层次连续而不死黑。.'
+  evidence:
+    source_ids:
+    - source-albumen-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 自然柔光或均匀窗光，强调纸面半光和细节，不使用现代商业摄影的锐利轮廓光。; behavior:
+    光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior: 保留用户指定的主体轮廓、位置和空间关系。. Keep light coherent with the requested
+    subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 自然柔光或均匀窗光，强调纸面半光和细节，不使用现代商业摄影的锐利轮廓光。;
+    behavior: 光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior: 保留用户指定的主体轮廓、位置和空间关系。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 自然柔光或均匀窗光，强调纸面半光和细节，不使用现代商业摄影的锐利轮廓光。;
+    behavior: 光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior: 保留用户指定的主体轮廓、位置和空间关系。.'
+  evidence:
+    source_ids:
+    - source-albumen-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 薄纸、蛋白涂层、银盐颗粒、轻微黄化高光和边缘磨损。;
+    edges: 保持主体边缘可辨；允许媒介造成的轻微不齐，但不使用发光描边或综合色隔离带。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    薄纸、蛋白涂层、银盐颗粒、轻微黄化高光和边缘磨损。; edges: 保持主体边缘可辨；允许媒介造成的轻微不齐，但不使用发光描边或综合色隔离带。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 薄纸、蛋白涂层、银盐颗粒、轻微黄化高光和边缘磨损。; edges: 保持主体边缘可辨；允许媒介造成的轻微不齐，但不使用发光描边或综合色隔离带。.'
+  evidence:
+    source_ids:
+    - source-albumen-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 低到中等；纸纤维、涂层反光和微小化学不均匀可见，但不能盖住主体。;
+    placement: 集中在材料边界、暗部或印刷交界处，不覆盖主体识别信息。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    低到中等；纸纤维、涂层反光和微小化学不均匀可见，但不能盖住主体。; placement: 集中在材料边界、暗部或印刷交界处，不覆盖主体识别信息。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 低到中等；纸纤维、涂层反光和微小化学不均匀可见，但不能盖住主体。; placement: 集中在材料边界、暗部或印刷交界处，不覆盖主体识别信息。.'
+  evidence:
+    source_ids:
+    - source-albumen-printing-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-albumen-printing-primary-source
+  kind: primary
+  base_asset_id: albumen-printing-primary-source
+execution:
+  route: text_only
+  must:
+  - 先完成用户主体的摄影构图与焦点，再用接触印相的色调和纸面特征统一表面。
+  - 让高光保留奶油色，暗部保留棕黑细节，避免直接套用棕色滤镜。
+  - 最后加入轻微半光、纸边或化学不均匀，并检查主体仍然清楚。
+  - 更换主体后仍然能观察到本包的媒介、构图、色彩和表面签名。
+  - 不要求特定人物、物件、地点、建筑、植物、车辆或故事作为默认内容。
+  - 示例主体只用于验证视觉迁移，不得泄漏到默认 Prompt。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 普通棕褐色复古滤镜
+  - 固定历史肖像、旧建筑、相册或19世纪服装
+  - 过重划痕、漏光、胶片边框和低清晰度
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
