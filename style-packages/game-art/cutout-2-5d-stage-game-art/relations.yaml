@@ -1,11 +1,18 @@
 related_packages:
-- 2d-character-3d-world-game-art
-- paper-cut-puppet-game-art
-- layered-parallax-storybook-game-art
-contrast_note: This package describes a layered stage with shallow depth and gameplay occlusion; related
-  packages foreground 2D character/3D world contrast, articulated paper puppets, or scrolling illustration
-  planes.
+  - 2d-character-3d-world-game-art
+  - paper-cut-puppet-game-art
+  - layered-parallax-storybook-game-art
+contrast_note: This package describes a layered stage with shallow depth and 
+  gameplay occlusion; related packages foreground 2D character/3D world 
+  contrast, articulated paper puppets, or scrolling illustration planes.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
+  note: Cross-style composition is handled by the repository-level workflow, not
+    by this package identity.
+family: game-art
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []
