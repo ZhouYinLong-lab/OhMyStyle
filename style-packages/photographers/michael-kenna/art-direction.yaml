@@ -1,0 +1,149 @@
+schema_version: 2.1.0
+status: experimental
+id: michael-kenna-direction
+name: 迈克尔·肯纳
+base_package: photographers/michael-kenna
+scope:
+  medium: black-and-white long-exposure photographic print
+  representation: recognizable
+  description: 以极简取景、黑白银盐质感、长曝光和克制的暗部层次观察普通景物。画面保留空旷、时间感与负空间，同时避免把某个地标变成固定主体。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以极简取景、黑白银盐质感、长曝光和克制的暗部层次观察普通景物。画面保留空旷、时间感与负空间，同时避免把某个地标变成固定主体。
+- 'composition: 大面积负空间; 小尺度视觉锚点; 水平线、垂直线与低密度形体的平衡'
+- 'palette: 银灰、煤黑与雾白构成连续阶调; 局部保留柔和中灰，不依赖纯黑纯白; 不使用彩色滤镜替代结构'
+- 'lighting: quality: quiet dawn, dusk, overcast, or nocturnal light with long-exposure calm; behavior: Keep
+  the requested subject and location independent from the package.; behavior: Use light as a structural and
+  material decision, not as a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 大面积负空间; 小尺度视觉锚点;
+    水平线、垂直线与低密度形体的平衡. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 大面积负空间; 小尺度视觉锚点;
+    水平线、垂直线与低密度形体的平衡.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 大面积负空间;
+    小尺度视觉锚点; 水平线、垂直线与低密度形体的平衡.'
+  evidence:
+    source_ids:
+    - source-michael-kenna-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 银灰、煤黑与雾白构成连续阶调; 局部保留柔和中灰，不依赖纯黑纯白;
+    不使用彩色滤镜替代结构. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 银灰、煤黑与雾白构成连续阶调; 局部保留柔和中灰，不依赖纯黑纯白;
+    不使用彩色滤镜替代结构.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    银灰、煤黑与雾白构成连续阶调; 局部保留柔和中灰，不依赖纯黑纯白; 不使用彩色滤镜替代结构.'
+  evidence:
+    source_ids:
+    - source-michael-kenna-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: quiet dawn, dusk, overcast, or nocturnal
+    light with long-exposure calm; behavior: Keep the requested subject and location independent from the package.;
+    behavior: Use light as a structural and material decision, not as a fixed scene.. Keep light coherent with
+    the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: quiet dawn, dusk,
+    overcast, or nocturnal light with long-exposure calm; behavior: Keep the requested subject and location
+    independent from the package.; behavior: Use light as a structural and material decision, not as a fixed
+    scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: quiet dawn, dusk,
+    overcast, or nocturnal light with long-exposure calm; behavior: Keep the requested subject and location
+    independent from the package.; behavior: Use light as a structural and material decision, not as a fixed
+    scene..'
+  evidence:
+    source_ids:
+    - source-michael-kenna-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: fine
+    silver-gelatin grain, restrained contrast, smooth tonal transitions, and soft atmospheric edges; edges:
+    varied, deliberate edges with no copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    fine silver-gelatin grain, restrained contrast, smooth tonal transitions, and soft atmospheric edges; edges:
+    varied, deliberate edges with no copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: fine silver-gelatin grain, restrained contrast, smooth tonal transitions, and soft atmospheric
+    edges; edges: varied, deliberate edges with no copied layout.'
+  evidence:
+    source_ids:
+    - source-michael-kenna-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    visual density with grain concentrated in midtone surfaces and water or sky; placement: concentrated where
+    the medium or material needs explanation. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low visual density with grain concentrated in midtone surfaces and water or sky; placement: concentrated
+    where the medium or material needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low visual density with grain concentrated in midtone surfaces and water or sky; placement: concentrated
+    where the medium or material needs explanation.'
+  evidence:
+    source_ids:
+    - source-michael-kenna-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-michael-kenna-primary-source
+  kind: primary
+  base_asset_id: michael-kenna-primary-source
+execution:
+  route: text_only
+  must:
+  - simplify the scene to essential planes and lines
+  - set a quiet tonal hierarchy
+  - simulate long exposure in moving sky, water, or foliage
+  - finish with restrained silver-grain texture
+  - negative space remains active
+  - the visual anchor stays small
+  - tonal range is controlled rather than dramatic
+  - the user-selected subject remains open
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, or protected
+    game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
