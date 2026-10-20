@@ -1,9 +1,17 @@
 related_packages:
-- stylized-low-poly-world
-- low-poly-adventure-game-art
-contrast_note: This package requires directional hand-painted surface marks on low-poly forms; related
-  packages focus on faceted geometry and simplified world shapes.
+  - stylized-low-poly-world
+  - low-poly-adventure-game-art
+contrast_note: This package requires directional hand-painted surface marks on 
+  low-poly forms; related packages focus on faceted geometry and simplified 
+  world shapes.
 crossing:
   supported: true
   default_mode: adaptive
-  note: Cross-style composition is handled by the repository-level workflow, not by this package identity.
+  note: Cross-style composition is handled by the repository-level workflow, not
+    by this package identity.
+family: game-art
+near_duplicates: []
+supersedes: []
+conflicts: []
+distinctives: []
+avoid_overlap: []
