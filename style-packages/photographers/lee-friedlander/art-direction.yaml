@@ -1,0 +1,120 @@
+schema_version: 2.1.0
+status: experimental
+id: lee-friedlander-direction
+name: 李·弗里德兰德
+base_package: photographers/lee-friedlander
+scope:
+  medium: photography
+  representation: recognizable
+  description: 以黑白街头观察、反射叠层、遮挡关系和画面自指性制造复杂但可读的城市观看结构。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - 固定城市、街牌或人物身份
+  - 复制具体摄影作品
+  - 可读文字、商标和新闻事件
+pillars:
+- 以黑白街头观察、反射叠层、遮挡关系和画面自指性制造复杂但可读的城市观看结构。
+- 'form: medium: 黑白街头观察摄影; composition: 反射、遮挡、框中框、局部裁切和自指性; palette: 黑白灰阶，依靠局部明度密度组织观看; lighting: 真实环境光与反射光并置;
+  surface: 直接、克制、保留街头表面; texture: 中等胶片与城市材料纹理; edges: 结构线清楚，部分主体被自然遮挡'
+- 'process: preserve: 多层观看关系; preserve: 黑白灰阶和复杂但可读的构图; preserve: 反射与裁切带来的不确定性; release: 代表图中的商店、线缆和行人; release:
+  固定城市或街头事件'
+- 'palette: roles: name: 银白高光; roles: hex: #E7E7E2; roles: role: glass and sky highlights; roles: name: 中性灰;
+  roles: hex: #8B8B86; roles: role: material and spatial middle values; roles: name: 深炭黑; roles: hex: #1E2020'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: medium: 黑白街头观察摄影;
+    composition: 反射、遮挡、框中框、局部裁切和自指性; palette: 黑白灰阶，依靠局部明度密度组织观看; lighting: 真实环境光与反射光并置; surface: 直接、克制、保留街头表面;
+    texture: 中等胶片与城市材料纹理; edges: 结构线清楚，部分主体被自然遮挡. Do not let generic polish or another package direction replace
+    it. If a cue names a concrete object or motif, do not add it unless the user requests it; translate its
+    formal qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: medium:
+    黑白街头观察摄影; composition: 反射、遮挡、框中框、局部裁切和自指性; palette: 黑白灰阶，依靠局部明度密度组织观看; lighting: 真实环境光与反射光并置; surface:
+    直接、克制、保留街头表面; texture: 中等胶片与城市材料纹理; edges: 结构线清楚，部分主体被自然遮挡.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: medium: 黑白街头观察摄影; composition: 反射、遮挡、框中框、局部裁切和自指性; palette: 黑白灰阶，依靠局部明度密度组织观看;
+    lighting: 真实环境光与反射光并置; surface: 直接、克制、保留街头表面; texture: 中等胶片与城市材料纹理; edges: 结构线清楚，部分主体被自然遮挡.'
+  evidence:
+    source_ids:
+    - source-lee-friedlander-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: transfer
+  axis: process
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply this package-specific visual rule: preserve: 多层观看关系; preserve: 黑白灰阶和复杂但可读的构图; preserve:
+    反射与裁切带来的不确定性; release: 代表图中的商店、线缆和行人; release: 固定城市或街头事件. Keep it subordinate to the requested subject
+    and medium.'
+  observable: 'The stated visual decision is plainly visible in the requested image: preserve: 多层观看关系; preserve:
+    黑白灰阶和复杂但可读的构图; preserve: 反射与裁切带来的不确定性; release: 代表图中的商店、线缆和行人; release: 固定城市或街头事件.'
+  reject_when: 'The stated decision is absent, contradicted, or replaced by a generic filter: preserve: 多层观看关系;
+    preserve: 黑白灰阶和复杂但可读的构图; preserve: 反射与裁切带来的不确定性; release: 代表图中的商店、线缆和行人; release: 固定城市或街头事件.'
+  evidence:
+    source_ids:
+    - source-lee-friedlander-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: roles: name: 银白高光; roles: hex: #E7E7E2;
+    roles: role: glass and sky highlights; roles: name: 中性灰; roles: hex: #8B8B86; roles: role: material and
+    spatial middle values; roles: name: 深炭黑; roles: hex: #1E2020. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: roles: name: 银白高光; roles:
+    hex: #E7E7E2; roles: role: glass and sky highlights; roles: name: 中性灰; roles: hex: #8B8B86; roles: role:
+    material and spatial middle values; roles: name: 深炭黑; roles: hex: #1E2020.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    roles: name: 银白高光; roles: hex: #E7E7E2; roles: role: glass and sky highlights; roles: name: 中性灰; roles:
+    hex: #8B8B86; roles: role: material and spatial middle values; roles: name: 深炭黑; roles: hex: #1E2020.'
+  evidence:
+    source_ids:
+    - source-lee-friedlander-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以黑白街头观察、反射叠层、遮挡关系和画面自指性制造复杂但可读的城市观看结构。.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以黑白街头观察、反射叠层、遮挡关系和画面自指性制造复杂但可读的城市观看结构。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以黑白街头观察、反射叠层、遮挡关系和画面自指性制造复杂但可读的城市观看结构。.'
+  evidence:
+    source_ids:
+    - source-lee-friedlander-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- transfer
+- palette
+- composition
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - transfer
+  - palette
+  instruction: Keep the package-specific relationship among form, process, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-lee-friedlander-primary-source
+  kind: primary
+  base_asset_id: lee-friedlander-primary-source
+execution:
+  route: text_only
+  must:
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 固定城市、街牌或人物身份
+  - 复制具体摄影作品
+  - 可读文字、商标和新闻事件
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
