@@ -82,4 +82,4 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：镜面中的第二视角
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户指定带镜面的室内或静物时启用：镜框裁切出同一主体的偏移反射视角，让反射和实景共同重组空间，同时保留物体数量与身份。它不默认添加镜子、人物或浴室，也不复刻某幅作品的镜子位置和人物布局。见 [`comparisons/`](comparisons/README.md) 查看花瓶静物对照；方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户指定带镜面的室内或静物时启用：镜框裁切出偏移反射视角，让反射和实景共同重组空间。只有调用者声明 `subject-visible-in-reflection` 时，才应用同一主体在实景与镜面中的身份校验规则；`intimate-color-planes-allowed` 控制柔化空间透视的辅助规则。它不默认添加镜子、人物或浴室，也不复刻某幅作品的镜子位置和人物布局。见 [`comparisons/`](comparisons/README.md) 查看花瓶静物对照；方向仍处于实验状态。

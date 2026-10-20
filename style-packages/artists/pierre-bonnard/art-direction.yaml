@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: bonnard-mirror-as-second-viewpoint
 name: Bonnard mirror as second viewpoint
@@ -26,6 +26,19 @@ scope:
     - Keep the mirror frame and reflected crop readable; do not invent a recursive mirror maze.
     - Allow mild spatial compression or viewpoint shift, but do not make the reflection physically impossible or contradict user-specified geometry.
     - Do not add a bathroom, bather, domestic figure, or source-work arrangement unless requested.
+contexts:
+  - id: user-requested-interior-with-mirror
+    description: A user-requested interior or still life containing a mirror.
+  - id: user-requested-no-reflection
+    description: The user explicitly asks for no mirror or reflection.
+  - id: multiple-reflective-surfaces-with-distinct-subjects
+    description: Several reflective surfaces show separate subjects.
+  - id: text-or-logo-reproduction
+    description: A composition requiring exact typography or logo reproduction.
+  - id: subject-visible-in-reflection
+    description: A requested person or object is visible both directly and in the mirror.
+  - id: intimate-color-planes-allowed
+    description: Nearby patterned color planes may soften strict room perspective.
 pillars:
   - Use the mirror as an active framing plane that reveals a partial second view, not as a decorative rectangle.
   - Make the reflected crop differ from the direct view in angle or truncation while preserving subject identity.
@@ -47,6 +60,8 @@ rules:
   - id: reflection-keeps-subject-identity
     axis: object_count_and_reflection_consistency
     importance: core
+    when_contexts:
+      - subject-visible-in-reflection
     applies_when: A person or object appears in both the direct view and a mirror.
     instruction: Keep the reflection attributable to the exact same user-requested person or object; preserve its count, identifying color, silhouette, and defining details across both views.
     observable: The reflection reads as the same vase, person, or scene seen from another angle, without an apparent duplicate subject.
@@ -60,6 +75,8 @@ rules:
   - id: intimate-planes-with-readable-mirror
     axis: room_space_and_color_planes
     importance: supporting
+    when_contexts:
+      - intimate-color-planes-allowed
     applies_when: The scene contains a mirror and the room's strict perspective can be softened.
     instruction: Compress room depth with nearby patterned color planes and gentle viewpoint shifts, while retaining a legible mirror edge and a coherent reflection boundary.
     observable: The room feels close and color-rich, yet the viewer can still tell which forms are reflected and which are directly present.
