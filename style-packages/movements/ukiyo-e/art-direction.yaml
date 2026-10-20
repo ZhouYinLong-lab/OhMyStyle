@@ -1,0 +1,162 @@
+schema_version: 2.1.0
+status: experimental
+id: ukiyo-e-direction
+name: 浮世绘
+base_package: movements/ukiyo-e
+scope:
+  medium: multicolor woodblock-print visual language
+  representation: stylized
+  description: 一种以多色木版套印、清晰轮廓、装饰性平面、截取式构图和日常城市题材闻名的视觉传统；本包提取版画组织方法，不固定桥梁、灯笼或日本街景。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 一种以多色木版套印、清晰轮廓、装饰性平面、截取式构图和日常城市题材闻名的视觉传统；本包提取版画组织方法，不固定桥梁、灯笼或日本街景。
+- 'composition: Use selective cropping, strong diagonals, layered silhouettes, and a clear graphic interval
+  between major forms.; Build depth through overlap, scale, and color planes more than lens-based realism.'
+- 'palette: Use a restrained multi-block palette: indigo, warm paper, vermilion, ochre, and charcoal.; Let
+  one saturated accent carry attention while neighboring planes remain deliberately quiet.'
+- 'lighting: quality: graphic daylight or stylized dusk; behavior: Keep lighting legible as broad printed value
+  areas, with only limited modeled shading.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Use selective
+    cropping, strong diagonals, layered silhouettes, and a clear graphic interval between major forms.; Build
+    depth through overlap, scale, and color planes more than lens-based realism.. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Use selective cropping,
+    strong diagonals, layered silhouettes, and a clear graphic interval between major forms.; Build depth through
+    overlap, scale, and color planes more than lens-based realism..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Use selective
+    cropping, strong diagonals, layered silhouettes, and a clear graphic interval between major forms.; Build
+    depth through overlap, scale, and color planes more than lens-based realism..'
+  evidence:
+    source_ids:
+    - source-ukiyo-e-primary-source
+    - source-ukiyo-e-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use a restrained multi-block palette:
+    indigo, warm paper, vermilion, ochre, and charcoal.; Let one saturated accent carry attention while neighboring
+    planes remain deliberately quiet.. Adapt their balance to the requested subject; do not apply them as a
+    uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use a restrained multi-block
+    palette: indigo, warm paper, vermilion, ochre, and charcoal.; Let one saturated accent carry attention
+    while neighboring planes remain deliberately quiet..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use a restrained multi-block palette: indigo, warm paper, vermilion, ochre, and charcoal.; Let one saturated
+    accent carry attention while neighboring planes remain deliberately quiet..'
+  evidence:
+    source_ids:
+    - source-ukiyo-e-primary-source
+    - source-ukiyo-e-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: graphic daylight or stylized dusk; behavior:
+    Keep lighting legible as broad printed value areas, with only limited modeled shading.. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: graphic daylight or
+    stylized dusk; behavior: Keep lighting legible as broad printed value areas, with only limited modeled
+    shading..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: graphic daylight
+    or stylized dusk; behavior: Keep lighting legible as broad printed value areas, with only limited modeled
+    shading..'
+  evidence:
+    source_ids:
+    - source-ukiyo-e-primary-source
+    - source-ukiyo-e-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: absorbent
+    paper and layered pigment; edges: crisp carved contours with occasional registration offsets. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    absorbent paper and layered pigment; edges: crisp carved contours with occasional registration offsets.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: absorbent paper and layered pigment; edges: crisp carved contours with occasional registration
+    offsets.'
+  evidence:
+    source_ids:
+    - source-ukiyo-e-primary-source
+    - source-ukiyo-e-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium;
+    decorative detail is concentrated where it supports rhythm or material; placement: patterns, foliage, fabric,
+    and architecture may carry marks, but the whole image stays readable at a glance. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium; decorative detail is concentrated where it supports rhythm or material; placement: patterns, foliage,
+    fabric, and architecture may carry marks, but the whole image stays readable at a glance.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium; decorative detail is concentrated where it supports rhythm or material; placement: patterns,
+    foliage, fabric, and architecture may carry marks, but the whole image stays readable at a glance.'
+  evidence:
+    source_ids:
+    - source-ukiyo-e-primary-source
+    - source-ukiyo-e-primary-image
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-ukiyo-e-primary-source
+  kind: primary
+  base_asset_id: ukiyo-e-primary-source
+- id: source-ukiyo-e-primary-image
+  kind: primary
+  base_asset_id: ukiyo-e-primary-image
+execution:
+  route: text_only
+  must:
+  - block the user-supplied subject into a small number of readable planes
+  - place contour lines and major silhouettes before decorative pattern
+  - add limited pigment layers with one clear accent color
+  - finish with restrained paper grain and registration variation
+  - preserve print-like plane separation and contour hierarchy
+  - preserve edited cropping and asymmetrical balance
+  - keep the subject open; do not force bridges, lanterns, kimono, or Japanese architecture
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
