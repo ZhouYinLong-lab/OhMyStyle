@@ -1,0 +1,156 @@
+schema_version: 2.1.0
+status: experimental
+id: josef-koudelka-direction
+name: 约瑟夫·库德尔卡
+base_package: photographers/josef-koudelka
+scope:
+  medium: black-and-white documentary photography
+  representation: recognizable
+  description: 以高反差黑白、开放边缘和全景空间记录流动中的人、地景与历史压力。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named event or documentary claim
+  - branded location
+  - glossy commercial fashion lighting
+  - cinematic teal-orange grade
+  - staged crowd scene
+  - decorative film border
+pillars:
+- 以高反差黑白、开放边缘和全景空间记录流动中的人、地景与历史压力。
+- 'composition: 使用宽阔横向视野和不完全封闭的边缘，让主体处在空间压力中。; 人、地貌或建筑保持清楚的尺度关系，避免广告式居中摆拍。'
+- 'palette: 纯黑、炭灰、银灰和纸白构成主要层次，不使用彩色滤镜。'
+- 'lighting: quality: hard or overcast natural light with strong tonal separation; behavior: 天空、地面和主体之间形成明确的黑白结构，保留高光空气感。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 使用宽阔横向视野和不完全封闭的边缘，让主体处在空间压力中。;
+    人、地貌或建筑保持清楚的尺度关系，避免广告式居中摆拍。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 使用宽阔横向视野和不完全封闭的边缘，让主体处在空间压力中。;
+    人、地貌或建筑保持清楚的尺度关系，避免广告式居中摆拍。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 使用宽阔横向视野和不完全封闭的边缘，让主体处在空间压力中。;
+    人、地貌或建筑保持清楚的尺度关系，避免广告式居中摆拍。.'
+  evidence:
+    source_ids:
+    - source-josef-koudelka-magnum
+    - source-josef-koudelka-foundation
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 纯黑、炭灰、银灰和纸白构成主要层次，不使用彩色滤镜。. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 纯黑、炭灰、银灰和纸白构成主要层次，不使用彩色滤镜。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    纯黑、炭灰、银灰和纸白构成主要层次，不使用彩色滤镜。.'
+  evidence:
+    source_ids:
+    - source-josef-koudelka-magnum
+    - source-josef-koudelka-foundation
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: hard or overcast natural light with strong
+    tonal separation; behavior: 天空、地面和主体之间形成明确的黑白结构，保留高光空气感。. Keep light coherent with the requested subject,
+    medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: hard or overcast natural
+    light with strong tonal separation; behavior: 天空、地面和主体之间形成明确的黑白结构，保留高光空气感。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: hard or overcast
+    natural light with strong tonal separation; behavior: 天空、地面和主体之间形成明确的黑白结构，保留高光空气感。.'
+  evidence:
+    source_ids:
+    - source-josef-koudelka-magnum
+    - source-josef-koudelka-foundation
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: documentary
+    gelatin-silver print impression; edges: slightly raw framing with decisive cropping and open negative space.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    documentary gelatin-silver print impression; edges: slightly raw framing with decisive cropping and open
+    negative space.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: documentary gelatin-silver print impression; edges: slightly raw framing with decisive cropping
+    and open negative space.'
+  evidence:
+    source_ids:
+    - source-josef-koudelka-magnum
+    - source-josef-koudelka-foundation
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: fine
+    to medium photographic grain; placement: even across the frame, with deeper grain in broad shadow fields.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    fine to medium photographic grain; placement: even across the frame, with deeper grain in broad shadow
+    fields.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: fine to medium photographic grain; placement: even across the frame, with deeper grain in broad
+    shadow fields.'
+  evidence:
+    source_ids:
+    - source-josef-koudelka-magnum
+    - source-josef-koudelka-foundation
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-josef-koudelka-magnum
+  kind: primary
+  base_asset_id: josef-koudelka-magnum
+- id: source-josef-koudelka-foundation
+  kind: secondary
+  base_asset_id: josef-koudelka-foundation
+execution:
+  route: text_only
+  must:
+  - Observe the user-supplied subject without adding a documentary event.
+  - Establish a wide, slightly tense spatial field and a clear horizon or ground plane.
+  - Use available light to divide sky, land, structure, and human scale.
+  - 'Keep timing observational: a passing figure, an empty interval, or an unsettled edge.'
+  - Print with deep blacks, luminous grays, and controlled paper highlights.
+  - 观察距离克制，人物不是摆拍模特或戏剧角色。
+  - 黑白层次承担情绪，不能只把彩色图去饱和。
+  - 不重建特定事件、地点、人物或摄影作品。
+  avoid:
+  - fixed walls, fields, war scenes, festivals, or exile narratives
+  - copied Magnum or documentary compositions
+  - artificial vignette, neon, or overprocessed HDR
+  - copied composition
+  - named event or documentary claim
+  - branded location
+  - glossy commercial fashion lighting
+  - cinematic teal-orange grade
+  - staged crowd scene
+  - decorative film border
