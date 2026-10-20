@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "claude-monet",
+    "name": "克劳德·莫奈",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\claude-monet"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A small stone footbridge beside a quiet pond under cool, overcast autumn daylight; no lilies or people",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A small stone footbridge beside a quiet pond under cool, overcast autumn daylight; no lilies or people\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original oil painting of A small stone footbridge beside a quiet pond under cool, overcast autumn daylight; no lilies or people in the user-requested setting, observed outdoors\nunder changing natural light. Build the image from broken adjacent touches of\nblue, lavender, pale cream, soft green, and small local warm accents. Let the\nappearance of each object shift with reflected sky light and air: snow, water,\nfoliage, and distant structures should share atmosphere without losing their\nmaterial identity. Use short visible marks and selectively dissolving edges,\nespecially in the distance. Keep an ordinary motif, open space, and calm eye-level\nobservation. The painting should feel like one instant of weather, not a dramatic\ngesture, thick impasto, pastel filter, or copied famous composition.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "thick directional impasto, dark contour drawing, dramatic chiaroscuro, generic\npastel wash, airbrush blur, neon, photorealistic render, copied famous painting,\nrecognizable artwork recreation, signature, watermark, logo, text",
+  "template_variables": {
+    "SUBJECT": "A small stone footbridge beside a quiet pond under cool, overcast autumn daylight; no lilies or people",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "Historical works are bundled only from public-domain reproductions; the generated example is an anonymous new scene.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
