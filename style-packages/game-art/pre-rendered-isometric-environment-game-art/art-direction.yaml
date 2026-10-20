@@ -1,0 +1,175 @@
+schema_version: 2.1.0
+status: experimental
+id: pre-rendered-isometric-environment-game-art-direction
+name: 预渲染等距环境游戏美术
+base_package: game-art/pre-rendered-isometric-environment-game-art
+scope:
+  medium: Present a high-detail environment as a fixed-view rendered image.; Allow painted, modeled, or hybrid
+    source methods; do not claim a specific production pipeline from appearance alone.
+  representation: stylized
+  description: 以固定等距投影、精细预渲染背景和分层遮挡构建可探索场景；核心是静态画面的空间阅读，不限定油画或像素媒介。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - forced_oil_paint_texture
+  - pixel_grid_as_primary_edge_language
+  - copied_named_game_scene
+  - arbitrary_camera_roll
+pillars:
+- 以固定等距投影、精细预渲染背景和分层遮挡构建可探索场景；核心是静态画面的空间阅读，不限定油画或像素媒介。
+- 'medium: Present a high-detail environment as a fixed-view rendered image.; Allow painted, modeled, or hybrid
+  source methods; do not claim a specific production pipeline from appearance alone.'
+- 'composition: Use a stable isometric camera and consistent verticals across the scene.; Layer foreground
+  occluders, traversable middle ground, and distant architecture.; Reserve uncluttered paths and focal landmarks
+  so small figures remain legible.'
+- 'palette: Group local colors by material and depth rather than global tint.; Use restrained warm highlights
+  against cooler distance where needed.; Keep interaction cues distinct from decorative set dressing.'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: Present
+    a high-detail environment as a fixed-view rendered image.; Allow painted, modeled, or hybrid source methods;
+    do not claim a specific production pipeline from appearance alone..'
+  observable: 'The requested image retains the stated medium distinction or production constraint: Present
+    a high-detail environment as a fixed-view rendered image.; Allow painted, modeled, or hybrid source methods;
+    do not claim a specific production pipeline from appearance alone..'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    Present a high-detail environment as a fixed-view rendered image.; Allow painted, modeled, or hybrid source
+    methods; do not claim a specific production pipeline from appearance alone..'
+  evidence:
+    source_ids:
+    - source-pre-rendered-isometric-environment-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Use a stable
+    isometric camera and consistent verticals across the scene.; Layer foreground occluders, traversable middle
+    ground, and distant architecture.; Reserve uncluttered paths and focal landmarks so small figures remain
+    legible.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Use a stable isometric
+    camera and consistent verticals across the scene.; Layer foreground occluders, traversable middle ground,
+    and distant architecture.; Reserve uncluttered paths and focal landmarks so small figures remain legible..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Use a stable
+    isometric camera and consistent verticals across the scene.; Layer foreground occluders, traversable middle
+    ground, and distant architecture.; Reserve uncluttered paths and focal landmarks so small figures remain
+    legible..'
+  evidence:
+    source_ids:
+    - source-pre-rendered-isometric-environment-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Group local colors by material and
+    depth rather than global tint.; Use restrained warm highlights against cooler distance where needed.; Keep
+    interaction cues distinct from decorative set dressing.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Group local colors by material
+    and depth rather than global tint.; Use restrained warm highlights against cooler distance where needed.;
+    Keep interaction cues distinct from decorative set dressing..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Group local colors by material and depth rather than global tint.; Use restrained warm highlights against
+    cooler distance where needed.; Keep interaction cues distinct from decorative set dressing..'
+  evidence:
+    source_ids:
+    - source-pre-rendered-isometric-environment-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: Use coherent baked-looking illumination with readable
+    contact shadows.; Keep key paths and doorways legible beneath environmental shade.. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: Use coherent baked-looking
+    illumination with readable contact shadows.; Keep key paths and doorways legible beneath environmental
+    shade..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: Use coherent baked-looking
+    illumination with readable contact shadows.; Keep key paths and doorways legible beneath environmental
+    shade..'
+  evidence:
+    source_ids:
+    - source-pre-rendered-isometric-environment-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Differentiate
+    stone, plaster, foliage, and metal through restrained material cues.. Preserve detail hierarchy and material
+    identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Differentiate
+    stone, plaster, foliage, and metal through restrained material cues..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Differentiate stone, plaster, foliage, and metal through restrained material cues..'
+  evidence:
+    source_ids:
+    - source-pre-rendered-isometric-environment-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Concentrate
+    fine detail on landmarks and near-ground surfaces.; Reduce distant detail without atmospheric blur.. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Concentrate
+    fine detail on landmarks and near-ground surfaces.; Reduce distant detail without atmospheric blur..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Concentrate fine detail on landmarks and near-ground surfaces.; Reduce distant detail without atmospheric
+    blur..'
+  evidence:
+    source_ids:
+    - source-pre-rendered-isometric-environment-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-pre-rendered-isometric-environment-game-art-primary-source
+  kind: primary
+  base_asset_id: pre-rendered-isometric-environment-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - Block the traversable footprint and camera grid.
+  - Place landmarks and large masses before small props.
+  - Separate near, middle, and distant layers with value and overlap.
+  - Check object scale, foot contact, and path readability at gameplay size.
+  - Maintain a stable isometric projection and a clear playable route.
+  - Keep user-specified subjects and scene contents independent of the style.
+  - Do not copy source layouts, named places, characters, or UI.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - forced_oil_paint_texture
+  - pixel_grid_as_primary_edge_language
+  - copied_named_game_scene
+  - arbitrary_camera_roll
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
