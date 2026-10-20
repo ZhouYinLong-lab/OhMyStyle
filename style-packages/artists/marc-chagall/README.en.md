@@ -30,7 +30,7 @@ and must never be added as default content.
 
 ## Optional direction: floating pair with chromatic echo
 
-The art-direction.yaml file registers an experimental direction for two user-specified subjects and their relationship. The pair floats at unequal scales or angles along a loose diagonal, while a small accent color repeats locally between them so color carries a visual reply. It does not add people, animals, a moon, a village, or symbolic objects by default. Declare chromatic-echo-floating-pair when compiling; the legacy package's floating space and uneven color remain the default.
+The `art-direction.yaml` file uses direction format 2.1.0 and registers an experimental direction for two user-specified subjects and their relationship. The pair floats at unequal scales or angles along a loose diagonal; the accent echo activates only when the caller declares `shared-accent-color-approved`, and `dreamlike-ground-permitted` controls the supporting compressed-ground rule. It does not add people, animals, a moon, a village, or symbolic objects by default. Declare `chromatic-echo-floating-pair` when compiling; the legacy package's floating space and uneven color remain the default.
 
 ### Generated comparison using the same pair of objects
 

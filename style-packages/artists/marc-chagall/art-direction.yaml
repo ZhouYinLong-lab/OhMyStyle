@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: chagall-chromatic-echo-floating-pair
 name: Chagall chromatic-echo floating pair
@@ -25,6 +25,19 @@ scope:
     - Use color echo only between the specified pair; do not add connecting symbols or narrative motifs.
     - Keep the background compressed or gently tilted only when compatible with the request.
     - Do not copy a named painting, folk scene, village arrangement, or recognizable motif.
+contexts:
+  - id: chromatic-echo-floating-pair
+    description: Two user-requested figures or objects linked by placement or color.
+  - id: centered-mirrored-emblem
+    description: A centered, symmetrical emblem or logo-like arrangement.
+  - id: strict-grounded-product-display
+    description: A product display requiring stable grounded presentation.
+  - id: photorealistic-static-pair
+    description: A photorealistic static image of two subjects.
+  - id: shared-accent-color-approved
+    description: The user allows one repeated accent hue across both requested forms.
+  - id: dreamlike-ground-permitted
+    description: A compressed or gently tilted painted setting is compatible with the request.
 pillars:
   - Place the two requested forms at unequal scales and along a loose diagonal so they appear to answer one another across open space.
   - Repeat one user-approved accent hue in both forms as a small color echo; keep their main local colors distinct.
@@ -47,6 +60,8 @@ rules:
   - id: reciprocal-accent-echo
     axis: palette_and_relation
     importance: core
+    when_contexts:
+      - shared-accent-color-approved
     applies_when: The user allows a shared accent color across both requested forms.
     instruction: Repeat one limited accent hue in a small area of each form while preserving their main colors; make the echo visible enough to link them but too local to become a global wash.
     observable: The viewer notices a color response between the pair while each form retains its own silhouette and local color.
@@ -60,6 +75,8 @@ rules:
   - id: open-dream-space
     axis: spatial_ground_and_negative_space
     importance: supporting
+    when_contexts:
+      - dreamlike-ground-permitted
     applies_when: The user requests a dreamlike, compressed, or open painted setting.
     instruction: Keep a gentle tilt or compression in the supporting ground if the brief permits, and preserve generous quiet intervals around the floating pair.
     observable: The ground supports the pair without forcing a single horizon or turning open space into unrequested scenery.
