@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: rinko-kawauchi-direction
+name: 川内伦子
+base_package: photographers/rinko-kawauchi
+scope:
+  medium: 彩色胶片或柔和数字色彩响应; 浅景深或轻微运动模糊; 自然光近距离观察
+  representation: recognizable
+  description: 以柔和自然光、近距离日常细节、轻盈色彩和不确定的时间感构成诗性摄影，强调微小事物、空气感与画面之间的呼吸。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - commercial_product_styling
+  - heavy_film_preset
+  - staged_symbolism
+  - copied_image_sequence
+pillars:
+- 以柔和自然光、近距离日常细节、轻盈色彩和不确定的时间感构成诗性摄影，强调微小事物、空气感与画面之间的呼吸。
+- 'medium: 彩色胶片或柔和数字色彩响应; 浅景深或轻微运动模糊; 自然光近距离观察'
+- 'composition: 近距离小物与大面积空气留白并置; 视角可以略低或略偏; 单张画面像一组日常序列中的片段'
+- 'palette: 淡粉、乳白、浅蓝、嫩绿和柔黄组成轻盈色组; 高光柔和，颜色相互呼吸; 避免过度饱和和冷暖滤镜'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 彩色胶片或柔和数字色彩响应;
+    浅景深或轻微运动模糊; 自然光近距离观察.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 彩色胶片或柔和数字色彩响应;
+    浅景深或轻微运动模糊; 自然光近距离观察.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    彩色胶片或柔和数字色彩响应; 浅景深或轻微运动模糊; 自然光近距离观察.'
+  evidence:
+    source_ids:
+    - source-rinko-kawauchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 近距离小物与大面积空气留白并置;
+    视角可以略低或略偏; 单张画面像一组日常序列中的片段. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 近距离小物与大面积空气留白并置;
+    视角可以略低或略偏; 单张画面像一组日常序列中的片段.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 近距离小物与大面积空气留白并置;
+    视角可以略低或略偏; 单张画面像一组日常序列中的片段.'
+  evidence:
+    source_ids:
+    - source-rinko-kawauchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 淡粉、乳白、浅蓝、嫩绿和柔黄组成轻盈色组; 高光柔和，颜色相互呼吸;
+    避免过度饱和和冷暖滤镜. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 淡粉、乳白、浅蓝、嫩绿和柔黄组成轻盈色组; 高光柔和，颜色相互呼吸;
+    避免过度饱和和冷暖滤镜.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    淡粉、乳白、浅蓝、嫩绿和柔黄组成轻盈色组; 高光柔和，颜色相互呼吸; 避免过度饱和和冷暖滤镜.'
+  evidence:
+    source_ids:
+    - source-rinko-kawauchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 窗光、阴天和清晨光线; 光线柔和且有空气感; 不使用硬质商业光源. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 窗光、阴天和清晨光线; 光线柔和且有空气感; 不使用硬质商业光源.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 窗光、阴天和清晨光线; 光线柔和且有空气感;
+    不使用硬质商业光源.'
+  evidence:
+    source_ids:
+    - source-rinko-kawauchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 花瓣、皮肤、水、玻璃和纸张保留细腻差异;
+    不过度锐化. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 花瓣、皮肤、水、玻璃和纸张保留细腻差异;
+    不过度锐化.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    花瓣、皮肤、水、玻璃和纸张保留细腻差异; 不过度锐化.'
+  evidence:
+    source_ids:
+    - source-rinko-kawauchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 细颗粒或轻微柔化; 画面边缘不做复古脏污.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 细颗粒或轻微柔化;
+    画面边缘不做复古脏污.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    细颗粒或轻微柔化; 画面边缘不做复古脏污.'
+  evidence:
+    source_ids:
+    - source-rinko-kawauchi-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-rinko-kawauchi-primary-source
+  kind: primary
+  base_asset_id: rinko-kawauchi-primary-source
+execution:
+  route: text_only
+  must:
+  - 先选择平凡而有尺度感的主体
+  - 再等待自然光和偶然关系
+  - 保持曝光轻盈
+  - 最后检查画面是否过度商业化
+  - 诗意来自尺度、光线和偶然联系
+  - 不是甜美滤镜或装饰静物
+  - 不复制具体作品和序列
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - commercial_product_styling
+  - heavy_film_preset
+  - staged_symbolism
+  - copied_image_sequence
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
