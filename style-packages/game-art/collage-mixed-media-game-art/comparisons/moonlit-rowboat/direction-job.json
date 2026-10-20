@@ -1,0 +1,230 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "collage-mixed-media-game-art",
+    "name": "拼贴与混合媒材游戏美术",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\collage-mixed-media-game-art"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，无文字。静水旁有一艘小红色木船，系在灰色石码头边；船上无人，远处只有一轮淡色月亮，构图简洁，留出大片水面和夜空，不加入其他船只、建筑、人物或标志。",
+  "prompt": "USER SUBJECT: 横版 16:9，无文字。静水旁有一艘小红色木船，系在灰色石码头边；船上无人，远处只有一轮淡色月亮，构图简洁，留出大片水面和夜空，不加入其他船只、建筑、人物或标志。\nSUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.\nVISUAL MEDIUM: 纸片、绘画片段和剪裁边缘并置; 接缝可见且参与构图\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [medium] Use the declared medium and keep its package-specific representation constraints visible: 纸片、绘画片段和剪裁边缘并置; 接缝可见且参与构图.\n- [composition] Organize the requested subject using these package-specific spatial decisions: 素材片层形成清楚前后关系; 大小错置和边界拼接制造视觉节奏. Preserve the user-provided content and layout.\n- [palette] Use these package-specific color roles and relationships: 不同来源色片经有限调色协调; 留出明显材质或色域差异. Adapt their balance to the requested subject; do not apply them as a uniform tint.\n- [lighting] Apply the package-specific light behavior: 阴影说明片层遮挡; 光照可在材料间略有差异. Keep light coherent with the requested subject, medium, and scene.\n- [surface] Render the requested materials using these package-specific surface decisions: 保留剪切边缘、纸纤维或印刷颗粒; 不把全部元素统一成光滑平面. Preserve detail hierarchy and material identity.\n- [texture] Render the requested materials using these package-specific surface decisions: 纹理随材料来源变化; 接缝密度有主次. Preserve detail hierarchy and material identity.\n- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.\nREQUIREMENT: 明确主体层级和阅读方向\nREQUIREMENT: 规划主要片层轮廓\nREQUIREMENT: 控制尺度错置和遮挡\nREQUIREMENT: 用有限色彩协调而保留材料差异\nREQUIREMENT: 检查小尺寸层级\nREQUIREMENT: 拼贴关系可读\nREQUIREMENT: 主体和层次清楚\nREQUIREMENT: 不复制具体源图或画作",
+  "negative_prompt": "single flat illustration\nunmarked seamless composite\ncopied source artwork\nUse observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.\nDo not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "collage-mixed-media-game-art-direction",
+    "name": "拼贴与混合媒材游戏美术",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\collage-mixed-media-game-art\\art-direction.yaml",
+    "sha256": "9ffcfeca75f42516fe8b77f961b59cc53de7567c123df539a33169bb682a1d7b",
+    "active_rule_ids": [
+      "medium",
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "applicable_rule_ids": [
+      "medium",
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "明确主体层级和阅读方向",
+      "规划主要片层轮廓",
+      "控制尺度错置和遮挡",
+      "用有限色彩协调而保留材料差异",
+      "检查小尺寸层级",
+      "拼贴关系可读",
+      "主体和层次清楚",
+      "不复制具体源图或画作"
+    ],
+    "avoid": [
+      "single flat illustration",
+      "unmarked seamless composite",
+      "copied source artwork",
+      "Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.",
+      "Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it."
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "纸片、绘画片段和剪裁边缘并置; 接缝可见且参与构图",
+      "representation": "stylized",
+      "description": "通过剪切、叠放、遮挡和尺度错置组合图像材料，让接缝和来源差异成为构图的一部分。",
+      "required_contexts": [],
+      "incompatible_contexts": [],
+      "limitations": [
+        "single flat illustration",
+        "unmarked seamless composite",
+        "copied source artwork"
+      ]
+    },
+    "pillars": [
+      "通过剪切、叠放、遮挡和尺度错置组合图像材料，让接缝和来源差异成为构图的一部分。",
+      "medium: 纸片、绘画片段和剪裁边缘并置; 接缝可见且参与构图",
+      "composition: 素材片层形成清楚前后关系; 大小错置和边界拼接制造视觉节奏",
+      "palette: 不同来源色片经有限调色协调; 留出明显材质或色域差异"
+    ],
+    "rules": [
+      {
+        "id": "medium",
+        "axis": "medium",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use the declared medium and keep its package-specific representation constraints visible: 纸片、绘画片段和剪裁边缘并置; 接缝可见且参与构图.",
+        "observable": "The requested image retains the stated medium distinction or production constraint: 纸片、绘画片段和剪裁边缘并置; 接缝可见且参与构图.",
+        "reject_when": "The medium is converted into an unrelated representation or the stated distinction disappears: 纸片、绘画片段和剪裁边缘并置; 接缝可见且参与构图.",
+        "evidence": {
+          "source_ids": [
+            "source-collage-mixed-media-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "composition",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Organize the requested subject using these package-specific spatial decisions: 素材片层形成清楚前后关系; 大小错置和边界拼接制造视觉节奏. Preserve the user-provided content and layout.",
+        "observable": "The stated hierarchy, spacing, framing, or depth relationship is readable: 素材片层形成清楚前后关系; 大小错置和边界拼接制造视觉节奏.",
+        "reject_when": "The composition contradicts these spatial decisions or copies a source arrangement: 素材片层形成清楚前后关系; 大小错置和边界拼接制造视觉节奏.",
+        "evidence": {
+          "source_ids": [
+            "source-collage-mixed-media-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "palette",
+        "axis": "palette",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use these package-specific color roles and relationships: 不同来源色片经有限调色协调; 留出明显材质或色域差异. Adapt their balance to the requested subject; do not apply them as a uniform tint.",
+        "observable": "The stated colors and their roles are visible and distinguishable: 不同来源色片经有限调色协调; 留出明显材质或色域差异.",
+        "reject_when": "An all-over filter replaces the stated color relationships, or their roles cannot be distinguished: 不同来源色片经有限调色协调; 留出明显材质或色域差异.",
+        "evidence": {
+          "source_ids": [
+            "source-collage-mixed-media-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "lighting",
+        "axis": "lighting",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Apply the package-specific light behavior: 阴影说明片层遮挡; 光照可在材料间略有差异. Keep light coherent with the requested subject, medium, and scene.",
+        "observable": "Light and shadow visibly support the stated forms or atmosphere: 阴影说明片层遮挡; 光照可在材料间略有差异.",
+        "reject_when": "Global glow, tint, or incoherent light replaces the stated behavior: 阴影说明片层遮挡; 光照可在材料间略有差异.",
+        "evidence": {
+          "source_ids": [
+            "source-collage-mixed-media-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "surface",
+        "axis": "surface",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Render the requested materials using these package-specific surface decisions: 保留剪切边缘、纸纤维或印刷颗粒; 不把全部元素统一成光滑平面. Preserve detail hierarchy and material identity.",
+        "observable": "The stated edge, surface, or texture treatment can be seen at an appropriate scale: 保留剪切边缘、纸纤维或印刷颗粒; 不把全部元素统一成光滑平面.",
+        "reject_when": "Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: 保留剪切边缘、纸纤维或印刷颗粒; 不把全部元素统一成光滑平面.",
+        "evidence": {
+          "source_ids": [
+            "source-collage-mixed-media-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "texture",
+        "axis": "texture",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Render the requested materials using these package-specific surface decisions: 纹理随材料来源变化; 接缝密度有主次. Preserve detail hierarchy and material identity.",
+        "observable": "The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纹理随材料来源变化; 接缝密度有主次.",
+        "reject_when": "Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: 纹理随材料来源变化; 接缝密度有主次.",
+        "evidence": {
+          "source_ids": [
+            "source-collage-mixed-media-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "visual-relationship-coherence",
+        "rule_ids": [
+          "medium",
+          "composition",
+          "palette"
+        ],
+        "instruction": "Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.",
+        "observable": "The linked visual decisions reinforce one another and remain subordinate to the user-provided subject."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-collage-mixed-media-game-art-primary-source",
+        "kind": "primary",
+        "base_asset_id": "collage-mixed-media-game-art-primary-source",
+        "package_reference": {
+          "asset_id": "collage-mixed-media-game-art-primary-source",
+          "local_path": "",
+          "title": "The Procession to Calvary",
+          "creator": "Joe Richardson",
+          "year": "",
+          "source_url": "https://store.steampowered.com/app/1071130/The_Procession_to_Calvary/",
+          "license": "link_only",
+          "attribution": "The Procession to Calvary by Joe Richardson; link-only research record, no source assets included.",
+          "role": "primary",
+          "notes": "Link-only source record. Do not bundle or redistribute external artwork without explicit permission."
+        }
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "3c4b332995845441fe4015df25ee67fffff393fd38c5e44ac8aa569837cb72fc",
+    "negative_prompt_sha256": "a906baddbbdbf8f86da9b0ccb234bb7bf87b6857a5802dbfe8a0923284aa63a4",
+    "direction_sha256": "9ffcfeca75f42516fe8b77f961b59cc53de7567c123df539a33169bb682a1d7b",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

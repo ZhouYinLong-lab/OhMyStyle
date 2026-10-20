@@ -1,0 +1,27 @@
+USER SUBJECT: 横版 16:9，无文字。静水旁有一艘小红色木船，系在灰色石码头边；船上无人，远处只有一轮淡色月亮，构图简洁，留出大片水面和夜空，不加入其他船只、建筑、人物或标志。
+SUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.
+VISUAL MEDIUM: 纸片、绘画片段和剪裁边缘并置; 接缝可见且参与构图
+REPRESENTATION: stylized
+APPLY THESE AUTHORED VISUAL RULES:
+- [medium] Use the declared medium and keep its package-specific representation constraints visible: 纸片、绘画片段和剪裁边缘并置; 接缝可见且参与构图.
+- [composition] Organize the requested subject using these package-specific spatial decisions: 素材片层形成清楚前后关系; 大小错置和边界拼接制造视觉节奏. Preserve the user-provided content and layout.
+- [palette] Use these package-specific color roles and relationships: 不同来源色片经有限调色协调; 留出明显材质或色域差异. Adapt their balance to the requested subject; do not apply them as a uniform tint.
+- [lighting] Apply the package-specific light behavior: 阴影说明片层遮挡; 光照可在材料间略有差异. Keep light coherent with the requested subject, medium, and scene.
+- [surface] Render the requested materials using these package-specific surface decisions: 保留剪切边缘、纸纤维或印刷颗粒; 不把全部元素统一成光滑平面. Preserve detail hierarchy and material identity.
+- [texture] Render the requested materials using these package-specific surface decisions: 纹理随材料来源变化; 接缝密度有主次. Preserve detail hierarchy and material identity.
+- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.
+REQUIREMENT: 明确主体层级和阅读方向
+REQUIREMENT: 规划主要片层轮廓
+REQUIREMENT: 控制尺度错置和遮挡
+REQUIREMENT: 用有限色彩协调而保留材料差异
+REQUIREMENT: 检查小尺寸层级
+REQUIREMENT: 拼贴关系可读
+REQUIREMENT: 主体和层次清楚
+REQUIREMENT: 不复制具体源图或画作
+
+Negative prompt:
+single flat illustration
+unmarked seamless composite
+copied source artwork
+Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.
+Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.

@@ -38,6 +38,10 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 视觉对照
+
+[`月下红木船`](comparisons/moonlit-rowboat/README.md)保存了同题旧包与新版方向生成结果。两组都清楚呈现拼贴媒材；单次结果未显示新版有明确整体优势。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

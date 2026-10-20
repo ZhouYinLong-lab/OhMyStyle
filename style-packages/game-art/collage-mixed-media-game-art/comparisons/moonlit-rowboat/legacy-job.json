@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "collage-mixed-media-game-art",
+    "name": "拼贴与混合媒材游戏美术",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\collage-mixed-media-game-art"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，无文字。静水旁有一艘小红色木船，系在灰色石码头边；船上无人，远处只有一轮淡色月亮，构图简洁，留出大片水面和夜空，不加入其他船只、建筑、人物或标志。",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nThe user-supplied subject and requested setting are authoritative. This style\npackage controls only observable visual treatment: medium, composition,\nlighting, palette, surface, texture, and edge behavior. Do not add a recurring\nobject, setting, character, landmark, or narrative motif unless the user asks\nfor it. Treat any concrete scene mentioned in package metadata or references as\nan optional example, never as a default subject.\n\nSUBJECT INDEPENDENCE CONTRACT\nSubject: 横版 16:9，无文字。静水旁有一艘小红色木船，系在灰色石码头边；船上无人，远处只有一轮淡色月亮，构图简洁，留出大片水面和夜空，不加入其他船只、建筑、人物或标志。\nPreserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.\n\nCreate a new subject and composition using these observable visual decisions:\n- 素材片层形成清楚前后关系\n- 大小错置和边界拼接制造视觉节奏\n- 不同来源色片经有限调色协调\n- 留出明显材质或色域差异\n- 纸片、绘画片段和剪裁边缘并置\n- 接缝可见且参与构图\n- 阴影说明片层遮挡\n- 光照可在材料间略有差异\n- 保留剪切边缘、纸纤维或印刷颗粒\n- 不把全部元素统一成光滑平面\n- 纹理随材料来源变化\n- 接缝密度有主次\n- 拼贴关系可读\n- 主体和层次清楚\n- 不复制具体源图或画作\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- single flat illustration\n- unmarked seamless composite\n- copied source artwork",
+  "template_variables": {
+    "SUBJECT": "横版 16:9，无文字。静水旁有一艘小红色木船，系在灰色石码头边；船上无人，远处只有一轮淡色月亮，构图简洁，留出大片水面和夜空，不加入其他船只、建筑、人物或标志。",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "prompt_sha256": "bbde49c8f563755aa7293173cd0b65dcf370a70e92264e8daf0b88115a0215f3",
+    "negative_prompt_sha256": "c6622fa3e0ec7694c7e3a2ae61cbb0e315ec30127f7425a07d1d854cb28dc578",
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

@@ -1,0 +1,43 @@
+SUBJECT INDEPENDENCE CONTRACT:
+The user-supplied subject and requested setting are authoritative. This style
+package controls only observable visual treatment: medium, composition,
+lighting, palette, surface, texture, and edge behavior. Do not add a recurring
+object, setting, character, landmark, or narrative motif unless the user asks
+for it. Treat any concrete scene mentioned in package metadata or references as
+an optional example, never as a default subject.
+
+SUBJECT INDEPENDENCE CONTRACT
+Subject: 横版 16:9，无文字。静水旁有一艘小红色木船，系在灰色石码头边；船上无人，远处只有一轮淡色月亮，构图简洁，留出大片水面和夜空，不加入其他船只、建筑、人物或标志。
+Preserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.
+
+Create a new subject and composition using these observable visual decisions:
+- 素材片层形成清楚前后关系
+- 大小错置和边界拼接制造视觉节奏
+- 不同来源色片经有限调色协调
+- 留出明显材质或色域差异
+- 纸片、绘画片段和剪裁边缘并置
+- 接缝可见且参与构图
+- 阴影说明片层遮挡
+- 光照可在材料间略有差异
+- 保留剪切边缘、纸纤维或印刷颗粒
+- 不把全部元素统一成光滑平面
+- 纹理随材料来源变化
+- 接缝密度有主次
+- 拼贴关系可读
+- 主体和层次清楚
+- 不复制具体源图或画作
+Keep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.
+
+Exact package assignment:
+Follow the package-defined visual signature, process, materials, and constraints exactly.
+Use any supplied reference images for palette relationship only, not for subject identity or copied composition.
+
+Negative prompt:
+- copied composition or recognizable source scene
+- unmotivated style mixing
+- generic global color filter
+- unreadable subject or broken geometry
+- extra logos, readable text, or watermarks
+- single flat illustration
+- unmarked seamless composite
+- copied source artwork
