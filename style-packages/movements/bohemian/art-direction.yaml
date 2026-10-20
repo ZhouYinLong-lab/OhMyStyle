@@ -1,0 +1,144 @@
+schema_version: 2.1.0
+status: experimental
+id: bohemian-direction
+name: 波西米亚风格
+base_package: movements/bohemian
+scope:
+  medium: 生活方式与室内设计
+  representation: stylized
+  description: 以自由混搭、手工材质、旅行物件、自然色彩和不规则层次构成松弛而富有生活痕迹的视觉。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以自由混搭、手工材质、旅行物件、自然色彩和不规则层次构成松弛而富有生活痕迹的视觉。
+- 'form: 自由混搭、手工材质、旅行物件、自然色彩和不规则层次构成松弛而有生活痕迹的视觉'
+- 'medium: 生活方式与室内设计'
+- 'composition: 织物、木、陶、藤和手工纹理; 多层但不拥挤的陈设关系; 色彩来自材质而非全局滤镜'
+rules:
+- id: signature
+  axis: form
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Preserve this identifying visual signature across the requested subject: 自由混搭、手工材质、旅行物件、自然色彩和不规则层次构成松弛而有生活痕迹的视觉.
+    Do not let generic polish or another package direction replace it. If a cue names a concrete object or
+    motif, do not add it unless the user requests it; translate its formal qualities to the supplied subject.'
+  observable: 'The image is recognizable through the package-specific formal relationships expressed by: 自由混搭、手工材质、旅行物件、自然色彩和不规则层次构成松弛而有生活痕迹的视觉.'
+  reject_when: 'The result could not be distinguished from a generic treatment because these identifying cues
+    are absent or contradicted: 自由混搭、手工材质、旅行物件、自然色彩和不规则层次构成松弛而有生活痕迹的视觉.'
+  evidence:
+    source_ids:
+    - source-bohemian-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 生活方式与室内设计.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 生活方式与室内设计.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    生活方式与室内设计.'
+  evidence:
+    source_ids:
+    - source-bohemian-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 织物、木、陶、藤和手工纹理;
+    多层但不拥挤的陈设关系; 色彩来自材质而非全局滤镜. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 织物、木、陶、藤和手工纹理; 多层但不拥挤的陈设关系;
+    色彩来自材质而非全局滤镜.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 织物、木、陶、藤和手工纹理;
+    多层但不拥挤的陈设关系; 色彩来自材质而非全局滤镜.'
+  evidence:
+    source_ids:
+    - source-bohemian-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 赭红 #A45C43，角色：暖色主调; 沙色 #D7BB8A，角色：自然底色;
+    靛蓝 #3B526A，角色：冷色平衡. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 赭红 #A45C43，角色：暖色主调; 沙色 #D7BB8A，角色：自然底色;
+    靛蓝 #3B526A，角色：冷色平衡.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    赭红 #A45C43，角色：暖色主调; 沙色 #D7BB8A，角色：自然底色; 靛蓝 #3B526A，角色：冷色平衡.'
+  evidence:
+    source_ids:
+    - source-bohemian-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 材质细节服从用户主体，并保持可辨识.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 材质细节服从用户主体，并保持可辨识.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    材质细节服从用户主体，并保持可辨识.'
+  evidence:
+    source_ids:
+    - source-bohemian-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: edge-behavior
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 边缘行为由媒介与光线决定，不使用统一发光描边.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 边缘行为由媒介与光线决定，不使用统一发光描边.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    边缘行为由媒介与光线决定，不使用统一发光描边.'
+  evidence:
+    source_ids:
+    - source-bohemian-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- signature
+- medium
+- composition
+- palette
+- surface
+- edge-behavior
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - signature
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among form, medium, composition consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-bohemian-primary-source
+  kind: primary
+  base_asset_id: bohemian-primary-source
+execution:
+  route: text_only
+  must:
+  - Translate the user's subject, objects, location, and narrative literally.
+  - Apply the package signature only after the subject is established.
+  - Keep style decisions observable and reversible at the prompt level.
+  - Check that no recurring motif was introduced by the package.
+  - Preserve the user's subject, location, object count, and narrative.
+  - Do not add a recurring object, setting, character, landmark, or narrative motif.
+  - Do not copy a named reference work or recognizable layout.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied composition
+  - named character or branded asset
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
