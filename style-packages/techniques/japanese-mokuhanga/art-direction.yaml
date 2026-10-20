@@ -1,0 +1,183 @@
+schema_version: 2.1.0
+status: experimental
+id: japanese-mokuhanga-direction
+name: 日本水性木版画
+base_package: techniques/japanese-mokuhanga
+scope:
+  medium: Japanese water-based woodblock printmaking translated into a generated print treatment
+  representation: stylized
+  description: 以分色木版、手工套印、水性颜料和纸张吸收建立清晰轮廓与细腻色层，保留手工对位的微小变化。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory wave, actor, mountain, shrine, or Japanese decorative motif
+  - glossy poster gradients or watercolor-only softness without carved logic
+  - perfect vector registration or a fixed historical scene
+pillars:
+- 以分色木版、手工套印、水性颜料和纸张吸收建立清晰轮廓与细腻色层，保留手工对位的微小变化。
+- 'differentiation: color-specific block separation and carved keylines; water-based pigment absorbed into
+  paper with gentle variation; handmade registration and paper reserve as visible structure'
+- 'composition: Build the image from a clear keyline structure and separate color areas that can be imagined
+  as individual blocks.; Use broad flat passages with carefully chosen overlaps, leaving paper to participate
+  in the composition.'
+- 'palette: Use water-based pigments with a limited, transparent-to-opaque range and clear separation between
+  color blocks.; Let paper tone and slight color variation soften the geometry without losing the carved structure.'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: color-specific
+    block separation and carved keylines; water-based pigment absorbed into paper with gentle variation; handmade
+    registration and paper reserve as visible structure. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: color-specific block separation
+    and carved keylines; water-based pigment absorbed into paper with gentle variation; handmade registration
+    and paper reserve as visible structure.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: color-specific
+    block separation and carved keylines; water-based pigment absorbed into paper with gentle variation; handmade
+    registration and paper reserve as visible structure.'
+  evidence:
+    source_ids:
+    - source-japanese-mokuhanga-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Build the image
+    from a clear keyline structure and separate color areas that can be imagined as individual blocks.; Use
+    broad flat passages with carefully chosen overlaps, leaving paper to participate in the composition.. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Build the image from
+    a clear keyline structure and separate color areas that can be imagined as individual blocks.; Use broad
+    flat passages with carefully chosen overlaps, leaving paper to participate in the composition..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Build the
+    image from a clear keyline structure and separate color areas that can be imagined as individual blocks.;
+    Use broad flat passages with carefully chosen overlaps, leaving paper to participate in the composition..'
+  evidence:
+    source_ids:
+    - source-japanese-mokuhanga-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use water-based pigments with a limited,
+    transparent-to-opaque range and clear separation between color blocks.; Let paper tone and slight color
+    variation soften the geometry without losing the carved structure.. Adapt their balance to the requested
+    subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use water-based pigments
+    with a limited, transparent-to-opaque range and clear separation between color blocks.; Let paper tone
+    and slight color variation soften the geometry without losing the carved structure..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use water-based pigments with a limited, transparent-to-opaque range and clear separation between color
+    blocks.; Let paper tone and slight color variation soften the geometry without losing the carved structure..'
+  evidence:
+    source_ids:
+    - source-japanese-mokuhanga-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: diffuse print light with visible paper
+    absorption; behavior: Keep color matte and layered; avoid glossy highlights that make the print read as
+    a digital poster.; behavior: Use value structure from block separation and paper reserve rather than cinematic
+    shading.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: diffuse print light
+    with visible paper absorption; behavior: Keep color matte and layered; avoid glossy highlights that make
+    the print read as a digital poster.; behavior: Use value structure from block separation and paper reserve
+    rather than cinematic shading..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: diffuse print
+    light with visible paper absorption; behavior: Keep color matte and layered; avoid glossy highlights that
+    make the print read as a digital poster.; behavior: Use value structure from block separation and paper
+    reserve rather than cinematic shading..'
+  evidence:
+    source_ids:
+    - source-japanese-mokuhanga-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: water-based
+    pigment absorbed into handmade paper; edges: carved keylines, imperfect registration, soft pigment spread,
+    and occasional baren pressure variation. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    water-based pigment absorbed into handmade paper; edges: carved keylines, imperfect registration, soft
+    pigment spread, and occasional baren pressure variation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: water-based pigment absorbed into handmade paper; edges: carved keylines, imperfect registration,
+    soft pigment spread, and occasional baren pressure variation.'
+  evidence:
+    source_ids:
+    - source-japanese-mokuhanga-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium;
+    line and color block density follow the supplied subject; placement: concentrated at key contours, overlaps,
+    paper grain, and registration boundaries. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium; line and color block density follow the supplied subject; placement: concentrated at key contours,
+    overlaps, paper grain, and registration boundaries.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium; line and color block density follow the supplied subject; placement: concentrated at key
+    contours, overlaps, paper grain, and registration boundaries.'
+  evidence:
+    source_ids:
+    - source-japanese-mokuhanga-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-japanese-mokuhanga-primary-source
+  kind: primary
+  base_asset_id: japanese-mokuhanga-primary-source
+execution:
+  route: text_only
+  must:
+  - Draw a simple keyline study based on the user's subject and separate the image into color blocks.
+  - Assign each color to an imagined carved block and keep overlaps physically plausible.
+  - Apply water-based pigment in layers, allowing paper absorption and small registration shifts.
+  - Finish with restrained paper texture and baren-like pressure variation; preserve clean areas of paper.
+  - Separate block logic, paper reserve, and hand registration remain visible after the subject changes.
+  - The technique does not require waves, actors, landscapes, or a particular historical motif.
+  - Water-based softness supports the carved structure rather than replacing it with watercolor blur.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - mandatory wave, actor, mountain, shrine, or Japanese decorative motif
+  - glossy poster gradients or watercolor-only softness without carved logic
+  - perfect vector registration or a fixed historical scene
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
