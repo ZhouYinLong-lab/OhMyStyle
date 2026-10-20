@@ -1,0 +1,152 @@
+schema_version: 2.1.0
+status: experimental
+id: hades-mythic-illustration-direction
+name: 神话高对比插画游戏美术
+base_package: game-art/hades-mythic-illustration
+scope:
+  medium: 手绘二维插画; 可见笔触和硬软边交替; 角色、环境和装饰共享同一笔触语言
+  representation: stylized
+  description: 以手绘人物剪影、神话建筑、装饰性图案、深色底与鲜明暖冷色对照组织具有动作感的二维游戏插画。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - named_mythic_character
+  - photorealism
+  - generic_anime
+  - uncontrolled_particle_effects
+pillars:
+- 以手绘人物剪影、神话建筑、装饰性图案、深色底与鲜明暖冷色对照组织具有动作感的二维游戏插画。
+- 'medium: 手绘二维插画; 可见笔触和硬软边交替; 角色、环境和装饰共享同一笔触语言'
+- 'composition: 主体剪影和大色块先于细节; 建筑、树木和道具形成装饰性框架; 动作线条有明确方向和重心'
+- 'palette: 深靛蓝、炭黑、赭金、朱红和青绿形成强对比; 高饱和色集中在主体和光源; 暖冷冲突明确但不变成霓虹'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 手绘二维插画;
+    可见笔触和硬软边交替; 角色、环境和装饰共享同一笔触语言.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 手绘二维插画;
+    可见笔触和硬软边交替; 角色、环境和装饰共享同一笔触语言.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    手绘二维插画; 可见笔触和硬软边交替; 角色、环境和装饰共享同一笔触语言.'
+  evidence:
+    source_ids:
+    - source-hades-mythic-illustration-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 主体剪影和大色块先于细节;
+    建筑、树木和道具形成装饰性框架; 动作线条有明确方向和重心. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 主体剪影和大色块先于细节; 建筑、树木和道具形成装饰性框架;
+    动作线条有明确方向和重心.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 主体剪影和大色块先于细节;
+    建筑、树木和道具形成装饰性框架; 动作线条有明确方向和重心.'
+  evidence:
+    source_ids:
+    - source-hades-mythic-illustration-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 深靛蓝、炭黑、赭金、朱红和青绿形成强对比; 高饱和色集中在主体和光源;
+    暖冷冲突明确但不变成霓虹. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 深靛蓝、炭黑、赭金、朱红和青绿形成强对比; 高饱和色集中在主体和光源;
+    暖冷冲突明确但不变成霓虹.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    深靛蓝、炭黑、赭金、朱红和青绿形成强对比; 高饱和色集中在主体和光源; 暖冷冲突明确但不变成霓虹.'
+  evidence:
+    source_ids:
+    - source-hades-mythic-illustration-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 光线服务剪影和层次; 火焰、月光或神秘水面可提供局部色温; 不使用白色轮廓光. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 光线服务剪影和层次; 火焰、月光或神秘水面可提供局部色温;
+    不使用白色轮廓光.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 光线服务剪影和层次; 火焰、月光或神秘水面可提供局部色温;
+    不使用白色轮廓光.'
+  evidence:
+    source_ids:
+    - source-hades-mythic-illustration-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 石、金属、布、果实和水面用笔触区分;
+    高光是绘制形状而非摄影反射. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 石、金属、布、果实和水面用笔触区分;
+    高光是绘制形状而非摄影反射.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    石、金属、布、果实和水面用笔触区分; 高光是绘制形状而非摄影反射.'
+  evidence:
+    source_ids:
+    - source-hades-mythic-illustration-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 笔触有方向并集中在主体和前景;
+    背景纹理降低以保持轮廓可读. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 笔触有方向并集中在主体和前景;
+    背景纹理降低以保持轮廓可读.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    笔触有方向并集中在主体和前景; 背景纹理降低以保持轮廓可读.'
+  evidence:
+    source_ids:
+    - source-hades-mythic-illustration-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-hades-mythic-illustration-primary-source
+  kind: primary
+  base_asset_id: hades-mythic-illustration-primary-source
+execution:
+  route: text_only
+  must:
+  - 先建立剪影和动作弧线
+  - 再铺深色底与主色组
+  - 补充建筑与装饰框架
+  - 最后控制笔触密度和焦点
+  - 手绘图形语言稳定
+  - 动作或姿态不被装饰淹没
+  - 不得复制具体人物、武器、徽记或布局
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - named_mythic_character
+  - photorealism
+  - generic_anime
+  - uncontrolled_particle_effects
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
