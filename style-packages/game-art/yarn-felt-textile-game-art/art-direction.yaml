@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: yarn-felt-textile-game-art-direction
+name: 毛线与毡布游戏美术
+base_package: game-art/yarn-felt-textile-game-art
+scope:
+  medium: 针织、毡化和编织具有不同结构; 补丁和接缝参与造型
+  representation: stylized
+  description: 以可辨的纤维、编织环、接缝和柔软厚度塑造角色与环境，让织物结构参与轮廓和空间叙事。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - generic plastic surface
+  - flat color without fiber logic
+  - copied character
+pillars:
+- 以可辨的纤维、编织环、接缝和柔软厚度塑造角色与环境，让织物结构参与轮廓和空间叙事。
+- 'medium: 针织、毡化和编织具有不同结构; 补丁和接缝参与造型'
+- 'composition: 大形由布片和纱线体块建立; 接缝与针脚作为方向性细节'
+- 'palette: 纱线可作局部焦点，环境低饱和; 明暗显示织物体积而非塑料高光'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 针织、毡化和编织具有不同结构;
+    补丁和接缝参与造型.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 针织、毡化和编织具有不同结构;
+    补丁和接缝参与造型.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    针织、毡化和编织具有不同结构; 补丁和接缝参与造型.'
+  evidence:
+    source_ids:
+    - source-yarn-felt-textile-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 大形由布片和纱线体块建立;
+    接缝与针脚作为方向性细节. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 大形由布片和纱线体块建立; 接缝与针脚作为方向性细节.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 大形由布片和纱线体块建立;
+    接缝与针脚作为方向性细节.'
+  evidence:
+    source_ids:
+    - source-yarn-felt-textile-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 纱线可作局部焦点，环境低饱和; 明暗显示织物体积而非塑料高光. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 纱线可作局部焦点，环境低饱和; 明暗显示织物体积而非塑料高光.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    纱线可作局部焦点，环境低饱和; 明暗显示织物体积而非塑料高光.'
+  evidence:
+    source_ids:
+    - source-yarn-felt-textile-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 柔和侧光显示纤维起伏; 接触阴影展示厚度. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 柔和侧光显示纤维起伏; 接触阴影展示厚度.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 柔和侧光显示纤维起伏; 接触阴影展示厚度.'
+  evidence:
+    source_ids:
+    - source-yarn-felt-textile-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 边缘微毛但轮廓清楚; 褶皱符合重力和受力.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 边缘微毛但轮廓清楚;
+    褶皱符合重力和受力.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    边缘微毛但轮廓清楚; 褶皱符合重力和受力.'
+  evidence:
+    source_ids:
+    - source-yarn-felt-textile-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 针脚方向跟随结构; 颗粒尺度随材质变化.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 针脚方向跟随结构;
+    颗粒尺度随材质变化.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    针脚方向跟随结构; 颗粒尺度随材质变化.'
+  evidence:
+    source_ids:
+    - source-yarn-felt-textile-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-yarn-felt-textile-game-art-primary-source
+  kind: primary
+  base_asset_id: yarn-felt-textile-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 确定轮廓与受力关系
+  - 建立纱线或布片体块
+  - 选择针织、毡化或缝合细节
+  - 用柔光展示厚度
+  - 检查交互轮廓
+  - 织物结构可辨
+  - 角色轮廓稳定
+  - 不复制来源角色
+  avoid:
+  - generic plastic surface
+  - flat color without fiber logic
+  - copied character
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
