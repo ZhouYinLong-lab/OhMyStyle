@@ -1,0 +1,154 @@
+schema_version: 2.1.0
+status: experimental
+id: garry-winogrand-direction
+name: 加里·维诺格兰德
+base_package: photographers/garry-winogrand
+scope:
+  medium: 35mm documentary photography
+  representation: recognizable
+  description: 以三十五毫米街头观察、不稳定取景、密集动作关系、突然截取的瞬间和黑白胶片质感组织画面，不把城市或人群写死为默认主体。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - fixed city, crowd, landmark, subway, or street-sign motif
+pillars:
+- 以三十五毫米街头观察、不稳定取景、密集动作关系、突然截取的瞬间和黑白胶片质感组织画面，不把城市或人群写死为默认主体。
+- 'composition: off-center framing with active diagonals and figures entering or leaving the frame; overlapping
+  gestures and unresolved timing rather than a single heroic subject; close observational distance with a deliberately
+  imperfect horizon or crop'
+- 'palette: full black-and-white tonal range, with highlights protected from plastic smoothness; optional restrained
+  color only when the user''s request requires it; never use a global color filter'
+- 'lighting: quality: TODO; behavior: TODO: describe direction, softness, contrast, or atmospheric behavior.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: off-center framing
+    with active diagonals and figures entering or leaving the frame; overlapping gestures and unresolved timing
+    rather than a single heroic subject; close observational distance with a deliberately imperfect horizon
+    or crop. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: off-center framing
+    with active diagonals and figures entering or leaving the frame; overlapping gestures and unresolved timing
+    rather than a single heroic subject; close observational distance with a deliberately imperfect horizon
+    or crop.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: off-center
+    framing with active diagonals and figures entering or leaving the frame; overlapping gestures and unresolved
+    timing rather than a single heroic subject; close observational distance with a deliberately imperfect
+    horizon or crop.'
+  evidence:
+    source_ids:
+    - source-garry-winogrand-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: full black-and-white tonal range,
+    with highlights protected from plastic smoothness; optional restrained color only when the user''s request
+    requires it; never use a global color filter. Adapt their balance to the requested subject; do not apply
+    them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: full black-and-white tonal
+    range, with highlights protected from plastic smoothness; optional restrained color only when the user''s
+    request requires it; never use a global color filter.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    full black-and-white tonal range, with highlights protected from plastic smoothness; optional restrained
+    color only when the user''s request requires it; never use a global color filter.'
+  evidence:
+    source_ids:
+    - source-garry-winogrand-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: TODO; behavior: TODO: describe direction,
+    softness, contrast, or atmospheric behavior.. Keep light coherent with the requested subject, medium, and
+    scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: TODO; behavior: TODO:
+    describe direction, softness, contrast, or atmospheric behavior..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: TODO; behavior:
+    TODO: describe direction, softness, contrast, or atmospheric behavior..'
+  evidence:
+    source_ids:
+    - source-garry-winogrand-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: developed
+    35mm documentary print; edges: natural lens and crop boundaries, not graphic frames. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    developed 35mm documentary print; edges: natural lens and crop boundaries, not graphic frames.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: developed 35mm documentary print; edges: natural lens and crop boundaries, not graphic frames.'
+  evidence:
+    source_ids:
+    - source-garry-winogrand-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: moderate
+    film grain; placement: consistent across the frame, with motion and pavement detail retaining photographic
+    irregularity. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    moderate film grain; placement: consistent across the frame, with motion and pavement detail retaining
+    photographic irregularity.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: moderate film grain; placement: consistent across the frame, with motion and pavement detail retaining
+    photographic irregularity.'
+  evidence:
+    source_ids:
+    - source-garry-winogrand-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-garry-winogrand-primary-source
+  kind: primary
+  base_asset_id: garry-winogrand-primary-source
+execution:
+  route: text_only
+  must:
+  - begin with the user's subject and intended situation
+  - observe an unscripted relation or transition rather than staging a pose
+  - frame with active diagonals, overlap, and a slightly imperfect crop
+  - finish with natural exposure variation and consistent film grain
+  - found-moment energy rather than posed illustration
+  - active crop, layered gesture, and imperfect alignment
+  - photographic tonal structure and physical 35mm grain
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - fixed city, crowd, landmark, subway, or street-sign motif
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
