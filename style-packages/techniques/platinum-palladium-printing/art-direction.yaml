@@ -1,0 +1,203 @@
+schema_version: 2.1.0
+status: experimental
+id: platinum-palladium-printing-direction
+name: 铂钯印相
+base_package: techniques/platinum-palladium-printing
+scope:
+  medium: platinum and palladium photographic printing language
+  representation: stylized
+  description: 以哑光纸面、连续灰阶、柔和金属色调和纤维吸收感重建铂钯印相的物质观看经验。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named photographer or branded asset
+  - recurring portrait, landscape, darkroom, or antique object
+  - forced portrait, landscape, darkroom, or antique subject
+pillars:
+- 以哑光纸面、连续灰阶、柔和金属色调和纤维吸收感重建铂钯印相的物质观看经验。
+- 'differentiation: image appears absorbed into fibrous matte paper; long continuous grayscale with open shadows;
+  restrained neutral warmth from material process'
+- 'medium: platinum and palladium photographic printing language'
+- 'composition: Keep the user-supplied subject and a calm photographic frame primary.; Preserve tonal breathing
+  room; the process should not dictate a particular scene.'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: image appears
+    absorbed into fibrous matte paper; long continuous grayscale with open shadows; restrained neutral warmth
+    from material process. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: image appears absorbed into fibrous
+    matte paper; long continuous grayscale with open shadows; restrained neutral warmth from material process.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: image
+    appears absorbed into fibrous matte paper; long continuous grayscale with open shadows; restrained neutral
+    warmth from material process.'
+  evidence:
+    source_ids:
+    - source-platinum-process-nga
+    - source-platinum-getty
+    - source-platinum-nga-research
+    basis: curatorial_inference
+    visual_review: pending
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: platinum
+    and palladium photographic printing language.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: platinum
+    and palladium photographic printing language.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    platinum and palladium photographic printing language.'
+  evidence:
+    source_ids:
+    - source-platinum-process-nga
+    - source-platinum-getty
+    - source-platinum-nga-research
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Keep the user-supplied
+    subject and a calm photographic frame primary.; Preserve tonal breathing room; the process should not dictate
+    a particular scene.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Keep the user-supplied
+    subject and a calm photographic frame primary.; Preserve tonal breathing room; the process should not dictate
+    a particular scene..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Keep the
+    user-supplied subject and a calm photographic frame primary.; Preserve tonal breathing room; the process
+    should not dictate a particular scene..'
+  evidence:
+    source_ids:
+    - source-platinum-process-nga
+    - source-platinum-getty
+    - source-platinum-nga-research
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use continuous neutral gray with
+    optional warm platinum or palladium drift.. Adapt their balance to the requested subject; do not apply
+    them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use continuous neutral gray
+    with optional warm platinum or palladium drift..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use continuous neutral gray with optional warm platinum or palladium drift..'
+  evidence:
+    source_ids:
+    - source-platinum-process-nga
+    - source-platinum-getty
+    - source-platinum-nga-research
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: broad, controlled, and tonally descriptive;
+    behavior: Preserve highlight detail and soft but present shadow modeling.; behavior: Avoid glossy specular
+    clipping and cinematic color lighting.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: broad, controlled,
+    and tonally descriptive; behavior: Preserve highlight detail and soft but present shadow modeling.; behavior:
+    Avoid glossy specular clipping and cinematic color lighting..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: broad, controlled,
+    and tonally descriptive; behavior: Preserve highlight detail and soft but present shadow modeling.; behavior:
+    Avoid glossy specular clipping and cinematic color lighting..'
+  evidence:
+    source_ids:
+    - source-platinum-process-nga
+    - source-platinum-getty
+    - source-platinum-nga-research
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: matte,
+    fibrous, absorbed into paper; edges: clear but gently integrated into the paper surface. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    matte, fibrous, absorbed into paper; edges: clear but gently integrated into the paper surface.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: matte, fibrous, absorbed into paper; edges: clear but gently integrated into the paper surface.'
+  evidence:
+    source_ids:
+    - source-platinum-process-nga
+    - source-platinum-getty
+    - source-platinum-nga-research
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    and continuous; placement: paper grain, tonal transitions, and subject materials. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low and continuous; placement: paper grain, tonal transitions, and subject materials.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low and continuous; placement: paper grain, tonal transitions, and subject materials.'
+  evidence:
+    source_ids:
+    - source-platinum-process-nga
+    - source-platinum-getty
+    - source-platinum-nga-research
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - medium
+  - composition
+  instruction: Keep the package-specific relationship among differentiation, medium, composition consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-platinum-process-nga
+  kind: primary
+  base_asset_id: platinum-process-nga
+- id: source-platinum-getty
+  kind: secondary
+  base_asset_id: platinum-getty
+- id: source-platinum-nga-research
+  kind: secondary
+  base_asset_id: platinum-nga-research
+execution:
+  route: text_only
+  must:
+  - keep the supplied subject and composition authoritative
+  - establish a broad grayscale negative
+  - model the image as absorbed into paper rather than floating in glossy emulsion
+  - preserve highlight texture and open shadows
+  - apply only subtle paper and coating variation
+  - frame the user-supplied subject without changing its identity
+  - build a full grayscale negative with controlled highlights and shadows
+  - simulate paper absorption and soft metallic tonal depth
+  avoid:
+  - forced portrait, landscape, darkroom, antique object, or historical costume
+  - glossy silver-gelatin look
+  - sepia preset without material reasoning
+  - crushed shadows, clipped highlights, or fake paper border
+  - forced portrait, landscape, darkroom, or antique subject
+  - copied composition
+  - named photographer or branded asset
+  - recurring portrait, landscape, darkroom, or antique object
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
