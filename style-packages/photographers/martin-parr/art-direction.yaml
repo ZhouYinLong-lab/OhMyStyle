@@ -1,0 +1,83 @@
+schema_version: 2.1.0
+status: experimental
+id: martin-parr-direction
+name: 马丁·帕尔
+base_package: photographers/martin-parr
+scope:
+  medium: photography
+  representation: recognizable
+  description: 通过高饱和色彩、近距离取景、直接闪光和日常细节观察社会生活中的尴尬与幽默
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - 固定泳池、海滩、游客、食物或度假地
+  - 可识别人物、品牌、广告或新闻事件
+  - 把观察式幽默写成嘲讽特定群体
+pillars:
+- 通过高饱和色彩、近距离取景、直接闪光和日常细节观察社会生活中的尴尬与幽默
+- 'palette: name: 日常高饱和; colors: name: 泳池蓝; colors: hex: #2F9FC0; colors: role: environmental cool; colors:
+  name: 塑料红; colors: hex: #D9463E; colors: role: everyday accent; colors: name: 明黄'
+- 'composition: 通过高饱和色彩、近距离取景、直接闪光和日常细节观察社会生活中的尴尬与幽默'
+rules:
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: name: 日常高饱和; colors: name: 泳池蓝; colors:
+    hex: #2F9FC0; colors: role: environmental cool; colors: name: 塑料红; colors: hex: #D9463E; colors: role:
+    everyday accent; colors: name: 明黄. Adapt their balance to the requested subject; do not apply them as a
+    uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: name: 日常高饱和; colors: name:
+    泳池蓝; colors: hex: #2F9FC0; colors: role: environmental cool; colors: name: 塑料红; colors: hex: #D9463E; colors:
+    role: everyday accent; colors: name: 明黄.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    name: 日常高饱和; colors: name: 泳池蓝; colors: hex: #2F9FC0; colors: role: environmental cool; colors: name: 塑料红;
+    colors: hex: #D9463E; colors: role: everyday accent; colors: name: 明黄.'
+  evidence:
+    source_ids:
+    - source-martin-parr-primary-source
+    - source-martin-parr-secondary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 通过高饱和色彩、近距离取景、直接闪光和日常细节观察社会生活中的尴尬与幽默.
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 通过高饱和色彩、近距离取景、直接闪光和日常细节观察社会生活中的尴尬与幽默.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 通过高饱和色彩、近距离取景、直接闪光和日常细节观察社会生活中的尴尬与幽默.'
+  evidence:
+    source_ids:
+    - source-martin-parr-primary-source
+    - source-martin-parr-secondary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- palette
+- composition
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - palette
+  - composition
+  instruction: Keep the package-specific relationship among palette, composition consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-martin-parr-primary-source
+  kind: primary
+  base_asset_id: martin-parr-primary-source
+- id: source-martin-parr-secondary-source
+  kind: secondary
+  base_asset_id: martin-parr-secondary-source
+execution:
+  route: text_only
+  must:
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 固定泳池、海滩、游客、食物或度假地
+  - 可识别人物、品牌、广告或新闻事件
+  - 把观察式幽默写成嘲讽特定群体
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
