@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: kusama-object-bounded-dot-field
 name: Kusama dots contained by one object contour
@@ -25,6 +25,19 @@ scope:
     - Keep dots on the object surface; do not extend the pattern onto walls, floors, people, or unrequested objects.
     - Let dot size, spacing, and visible curvature respond to the object's form; do not obscure its defining structure.
     - Use slight hand-applied variation rather than mathematically perfect repetition, and do not imitate a named work or installation.
+contexts:
+  - id: single-object-patterned-surface
+    description: The user requests one identifiable object to carry a repeated dot pattern.
+  - id: user-requested-infinity-mirror-room
+    description: The user requests an Infinity Mirror Room.
+  - id: all-over-environment-obliteration
+    description: The user requests a repeated pattern across an entire environment.
+  - id: text-or-logo-reproduction
+    description: The user requests text or logo reproduction.
+  - id: patterned-object-has-rounded-or-turning-surface
+    description: The patterned object has a rounded or visibly turning surface.
+  - id: patterned-vessel-or-structured-object
+    description: The user requests a patterned vessel, container, or similarly structured object.
 pillars:
   - Treat the user-requested object's surface as one clear pattern field bounded by its existing silhouette.
   - Follow the object's curvature with a repeated dot rhythm; adjust dot size and spacing as the form turns away.
@@ -33,6 +46,8 @@ rules:
   - id: contour-bounded-dot-coverage
     axis: object_surface_and_pattern_boundary
     importance: core
+    when_contexts:
+      - single-object-patterned-surface
     applies_when: The user requests a single object to carry a repeated dot pattern.
     instruction: Confine the requested dot field to the object's visible surface and stop marks at its silhouette; leave all surrounding surfaces unpatterned unless separately requested.
     observable: The patterned object reads as a distinct bounded form against a quiet setting, with dots visibly stopping at its contour.
@@ -46,6 +61,8 @@ rules:
   - id: curvature-responsive-repeat
     axis: pattern_scale_and_surface_form
     importance: core
+    when_contexts:
+      - patterned-object-has-rounded-or-turning-surface
     applies_when: The patterned object has a rounded or visibly turning surface.
     instruction: Repeat dots across the object's form with small, consistent variations; let their apparent spacing compress and shapes narrow toward turning edges to maintain the object's volume.
     observable: The viewer reads the object as three-dimensional from dot spacing and contour, not as a flat sticker or pasted graphic.
@@ -59,6 +76,8 @@ rules:
   - id: identity-cues-through-pattern
     axis: object_recognition_and_detail
     importance: supporting
+    when_contexts:
+      - patterned-vessel-or-structured-object
     applies_when: The user requests a patterned vessel, container, or similarly structured object.
     instruction: Preserve the object's key openings, handle, spout, base, seams, and color breaks; vary pattern density around those parts without hiding or redesigning them.
     observable: The object remains identifiable at thumbnail size despite dense surface repetition.

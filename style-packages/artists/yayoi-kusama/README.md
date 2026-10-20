@@ -76,4 +76,4 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：物体轮廓内的点阵覆盖
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 适用于用户指定一个物体作为重复点阵载体的场景：点阵随物体曲面变化，但严格停在物体轮廓内，背景保持安静，手柄、开口等识别特征仍清楚。它用于测试把草间弥生常见的扩张性重复收束到单个物体，不默认扩张成房间或镜面装置。见 [`comparisons/`](comparisons/README.md) 查看水壶题材对照；方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，适用于用户指定一个物体作为重复点阵载体的场景：点阵严格停在物体轮廓内。只有物体有转折曲面或杯口、手柄等结构特征时，才声明 `patterned-object-has-rounded-or-turning-surface` 或 `patterned-vessel-or-structured-object` 启用相应规则。它用于测试把草间弥生常见的扩张性重复收束到单个物体，不默认扩张成房间或镜面装置。见 [`comparisons/`](comparisons/README.md) 查看水壶题材对照；方向仍处于实验状态。
