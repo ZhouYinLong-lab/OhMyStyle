@@ -1,0 +1,145 @@
+schema_version: 2.1.0
+status: experimental
+id: deconstructivist-architecture-direction
+name: 解构主义建筑
+base_package: movements/deconstructivist-architecture
+scope:
+  medium: TODO
+  representation: stylized
+  description: 以倾斜体块、断裂轴线、非中心构图、结构与表皮的紧张关系组织建筑空间；本包控制空间语言和材料表现，不固定博物馆、尖塔或任何具体建筑。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - fixed museum, tower, bridge, or landmark
+pillars:
+- 以倾斜体块、断裂轴线、非中心构图、结构与表皮的紧张关系组织建筑空间；本包控制空间语言和材料表现，不固定博物馆、尖塔或任何具体建筑。
+- 'composition: asymmetrical balance with one dominant oblique axis; fragmented planes and controlled offsets;
+  off-center framing with a readable hierarchy'
+- 'palette: cool concrete gray and graphite as structural neutrals; restrained oxidized metal or glass accent'
+- 'lighting: quality: directional overcast light; behavior: plane breaks and recesses remain legible; behavior:
+  shadows follow one coherent direction'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: asymmetrical
+    balance with one dominant oblique axis; fragmented planes and controlled offsets; off-center framing with
+    a readable hierarchy. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: asymmetrical balance
+    with one dominant oblique axis; fragmented planes and controlled offsets; off-center framing with a readable
+    hierarchy.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: asymmetrical
+    balance with one dominant oblique axis; fragmented planes and controlled offsets; off-center framing with
+    a readable hierarchy.'
+  evidence:
+    source_ids:
+    - source-deconstructivist-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: cool concrete gray and graphite as
+    structural neutrals; restrained oxidized metal or glass accent. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: cool concrete gray and graphite
+    as structural neutrals; restrained oxidized metal or glass accent.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    cool concrete gray and graphite as structural neutrals; restrained oxidized metal or glass accent.'
+  evidence:
+    source_ids:
+    - source-deconstructivist-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: directional overcast light; behavior: plane
+    breaks and recesses remain legible; behavior: shadows follow one coherent direction. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: directional overcast
+    light; behavior: plane breaks and recesses remain legible; behavior: shadows follow one coherent direction.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: directional overcast
+    light; behavior: plane breaks and recesses remain legible; behavior: shadows follow one coherent direction.'
+  evidence:
+    source_ids:
+    - source-deconstructivist-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: mineral,
+    metallic, glass, or painted planar surfaces; edges: sharp seams, stepped joints, and fractured silhouettes.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    mineral, metallic, glass, or painted planar surfaces; edges: sharp seams, stepped joints, and fractured
+    silhouettes.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: mineral, metallic, glass, or painted planar surfaces; edges: sharp seams, stepped joints, and fractured
+    silhouettes.'
+  evidence:
+    source_ids:
+    - source-deconstructivist-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: restrained;
+    placement: joints, contact zones, and believable weathering only. Preserve detail hierarchy and material
+    identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    restrained; placement: joints, contact zones, and believable weathering only.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: restrained; placement: joints, contact zones, and believable weathering only.'
+  evidence:
+    source_ids:
+    - source-deconstructivist-architecture-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-deconstructivist-architecture-primary-source
+  kind: primary
+  base_asset_id: deconstructivist-architecture-primary-source
+execution:
+  route: text_only
+  must:
+  - 'TODO: describe the order in which the image should be constructed.'
+  - competing axes must remain visible after subject substitution
+  - structural tension must be spatially legible, not an arbitrary distortion
+  - materials must remain distinguishable
+  - no fixed building, object, location, or narrative motif
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - fixed museum, tower, bridge, or landmark
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
