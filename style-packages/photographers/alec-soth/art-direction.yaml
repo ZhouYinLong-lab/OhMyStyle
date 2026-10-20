@@ -1,0 +1,162 @@
+schema_version: 2.1.0
+status: experimental
+id: alec-soth-direction
+name: 亚历克·索思
+base_package: photographers/alec-soth
+scope:
+  medium: large-format color documentary photography
+  representation: recognizable
+  description: 以大画幅彩色纪实摄影观察普通地点、边缘空间和人与环境的疏离关系，强调安静距离与开放叙事。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory road, motel, prairie, American flag, or named location
+pillars:
+- 以大画幅彩色纪实摄影观察普通地点、边缘空间和人与环境的疏离关系，强调安静距离与开放叙事。
+- 'composition: Hold a wide frame with generous sky or quiet negative space.; Place the subject slightly off-center
+  and let the surrounding place carry equal visual weight.; Keep horizon and perspective calm, with a small
+  irregularity that prevents advertising polish.'
+- 'palette: Use restrained natural color: dusty blue, faded green, pale beige, weathered red-brown, and neutral
+  skin or material colors.; Preserve small color facts in the environment instead of applying a unified cinematic
+  grade.'
+- 'lighting: quality: soft natural daylight; behavior: Prefer overcast or gently broken light with low drama
+  and readable local color.; behavior: Keep shadows soft enough for place and surface details to remain legible.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Hold a wide
+    frame with generous sky or quiet negative space.; Place the subject slightly off-center and let the surrounding
+    place carry equal visual weight.; Keep horizon and perspective calm, with a small irregularity that prevents
+    advertising polish.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Hold a wide frame
+    with generous sky or quiet negative space.; Place the subject slightly off-center and let the surrounding
+    place carry equal visual weight.; Keep horizon and perspective calm, with a small irregularity that prevents
+    advertising polish..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Hold a
+    wide frame with generous sky or quiet negative space.; Place the subject slightly off-center and let the
+    surrounding place carry equal visual weight.; Keep horizon and perspective calm, with a small irregularity
+    that prevents advertising polish..'
+  evidence:
+    source_ids:
+    - source-alec-soth-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use restrained natural color: dusty
+    blue, faded green, pale beige, weathered red-brown, and neutral skin or material colors.; Preserve small
+    color facts in the environment instead of applying a unified cinematic grade.. Adapt their balance to the
+    requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use restrained natural color:
+    dusty blue, faded green, pale beige, weathered red-brown, and neutral skin or material colors.; Preserve
+    small color facts in the environment instead of applying a unified cinematic grade..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use restrained natural color: dusty blue, faded green, pale beige, weathered red-brown, and neutral skin
+    or material colors.; Preserve small color facts in the environment instead of applying a unified cinematic
+    grade..'
+  evidence:
+    source_ids:
+    - source-alec-soth-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft natural daylight; behavior: Prefer
+    overcast or gently broken light with low drama and readable local color.; behavior: Keep shadows soft enough
+    for place and surface details to remain legible.. Keep light coherent with the requested subject, medium,
+    and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft natural daylight;
+    behavior: Prefer overcast or gently broken light with low drama and readable local color.; behavior: Keep
+    shadows soft enough for place and surface details to remain legible..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft natural
+    daylight; behavior: Prefer overcast or gently broken light with low drama and readable local color.; behavior:
+    Keep shadows soft enough for place and surface details to remain legible..'
+  evidence:
+    source_ids:
+    - source-alec-soth-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: optically
+    realistic large-format color photograph; edges: natural lens rendering with moderate, non-stylized falloff.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    optically realistic large-format color photograph; edges: natural lens rendering with moderate, non-stylized
+    falloff.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: optically realistic large-format color photograph; edges: natural lens rendering with moderate,
+    non-stylized falloff.'
+  evidence:
+    source_ids:
+    - source-alec-soth-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    to medium, with real wear and quiet film grain; placement: distributed through road, paint, grass, sky,
+    and ordinary surfaces. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low to medium, with real wear and quiet film grain; placement: distributed through road, paint, grass,
+    sky, and ordinary surfaces.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low to medium, with real wear and quiet film grain; placement: distributed through road, paint,
+    grass, sky, and ordinary surfaces.'
+  evidence:
+    source_ids:
+    - source-alec-soth-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-alec-soth-primary-source
+  kind: primary
+  base_asset_id: alec-soth-primary-source
+execution:
+  route: text_only
+  must:
+  - Start from the user-supplied subject and find an ordinary surrounding place.
+  - Compose a patient wide frame with meaningful negative space and an off-center anchor.
+  - Use soft daylight and preserve local color, weathering, and small visual inconsistencies.
+  - Apply restrained grain and optical softness only after the spatial relationships are stable.
+  - Preserve observational distance and the balance between subject and surrounding place.
+  - Preserve open-ended mood without turning the scene into a dramatic narrative.
+  - Keep natural color and optical imperfection ahead of commercial retouching.
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - mandatory road, motel, prairie, American flag, or named location
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
