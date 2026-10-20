@@ -16,6 +16,7 @@ files:
   references: references/manifest.csv
   provenance: provenance.yaml
 
+  art_direction: art-direction.yaml
 classification:
   source_type: photographer
   medium: photography
