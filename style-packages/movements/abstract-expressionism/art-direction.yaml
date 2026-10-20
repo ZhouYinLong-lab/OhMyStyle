@@ -1,0 +1,149 @@
+schema_version: 2.1.0
+status: experimental
+id: abstract-expressionism-direction
+name: 抽象表现主义
+base_package: movements/abstract-expressionism
+scope:
+  medium: 动作绘画、厚薄笔触和开放画布; 媒介边缘、形体和细节密度保持一致。
+  representation: abstract_interpretation
+  description: 动作绘画、厚薄笔触和开放画布；大尺度画面由手势笔触和局部空白建立非中心构图；黑、赭红、钴蓝、乳白和橙黄形成高能量色层。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+pillars:
+- 动作绘画、厚薄笔触和开放画布；大尺度画面由手势笔触和局部空白建立非中心构图；黑、赭红、钴蓝、乳白和橙黄形成高能量色层。
+- 'medium: 动作绘画、厚薄笔触和开放画布; 媒介边缘、形体和细节密度保持一致。'
+- 'composition: 大尺度画面由手势笔触和局部空白建立非中心构图; 主体与背景保持清楚的层级关系，并让新主题拥有独立构图。'
+- 'palette: 黑、赭红、钴蓝、乳白和橙黄形成高能量色层; 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 动作绘画、厚薄笔触和开放画布;
+    媒介边缘、形体和细节密度保持一致。.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 动作绘画、厚薄笔触和开放画布;
+    媒介边缘、形体和细节密度保持一致。.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    动作绘画、厚薄笔触和开放画布; 媒介边缘、形体和细节密度保持一致。.'
+  evidence:
+    source_ids:
+    - source-abstract-expressionism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 大尺度画面由手势笔触和局部空白建立非中心构图;
+    主体与背景保持清楚的层级关系，并让新主题拥有独立构图。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 大尺度画面由手势笔触和局部空白建立非中心构图;
+    主体与背景保持清楚的层级关系，并让新主题拥有独立构图。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 大尺度画面由手势笔触和局部空白建立非中心构图;
+    主体与背景保持清楚的层级关系，并让新主题拥有独立构图。.'
+  evidence:
+    source_ids:
+    - source-abstract-expressionism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑、赭红、钴蓝、乳白和橙黄形成高能量色层; 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑、赭红、钴蓝、乳白和橙黄形成高能量色层; 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑、赭红、钴蓝、乳白和橙黄形成高能量色层; 颜色按角色分配，不把调色板当作覆盖全画面的滤镜。.'
+  evidence:
+    source_ids:
+    - source-abstract-expressionism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 光线不描述物体，而通过颜料厚薄和反光制造层次; 光源方向和明暗层次服务于空间与主体，而不是制造无来源效果。.
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 光线不描述物体，而通过颜料厚薄和反光制造层次; 光源方向和明暗层次服务于空间与主体，而不是制造无来源效果。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 光线不描述物体，而通过颜料厚薄和反光制造层次;
+    光源方向和明暗层次服务于空间与主体，而不是制造无来源效果。.'
+  evidence:
+    source_ids:
+    - source-abstract-expressionism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 颜料堆积、刮擦、滴落和画布纤维可见;
+    不同材质保留可辨识的表面行为。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 颜料堆积、刮擦、滴落和画布纤维可见;
+    不同材质保留可辨识的表面行为。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    颜料堆积、刮擦、滴落和画布纤维可见; 不同材质保留可辨识的表面行为。.'
+  evidence:
+    source_ids:
+    - source-abstract-expressionism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 笔触方向与速度保持个体化，不生成均匀纹理;
+    纹理沿结构和媒介方向组织，远景与次要区域降低密度。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 笔触方向与速度保持个体化，不生成均匀纹理;
+    纹理沿结构和媒介方向组织，远景与次要区域降低密度。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    笔触方向与速度保持个体化，不生成均匀纹理; 纹理沿结构和媒介方向组织，远景与次要区域降低密度。.'
+  evidence:
+    source_ids:
+    - source-abstract-expressionism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-abstract-expressionism-primary-source
+  kind: primary
+  base_asset_id: abstract-expressionism-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定主体和独立构图
+  - 再建立大形体与色彩角色
+  - 补充媒介特有的表面与纹理
+  - 最后检查来源特征是否保持而非复制原作
+  - 保持手势和材料性，不把结果变成普通渐变或具象场景
+  - 不得复制来源作品的具体人物、地标、文字、标志、道具或构图。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - copied_named_work
+  - recognizable_source_arrangement
+  - readable_logo_or_text
+  - generic_global_filter
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
