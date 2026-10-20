@@ -32,7 +32,7 @@
 
 ## 视觉对照
 
-[`红伞与溪桥`](comparisons/red-umbrella-bridge/README.md)保存了同题旧包和新版方向结果。新版的色块和轮廓更简化，但 cel shading 只部分成立，且单次对照不能证明稳定优势。
+[`红伞与溪桥`](comparisons/red-umbrella-bridge/README.md)记录了首轮对照和规则修订后的复测。新版的色块和轮廓更清楚，但 cel shading 仍只部分成立，且单题单人检查不能证明稳定优势。
 
 ## 只使用此包
 

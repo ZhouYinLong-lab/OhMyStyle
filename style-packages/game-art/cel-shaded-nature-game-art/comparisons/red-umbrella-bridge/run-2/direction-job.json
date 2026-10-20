@@ -1,0 +1,232 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "cel-shaded-nature-game-art",
+    "name": "卡通渲染自然冒险游戏美术",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\cel-shaded-nature-game-art"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，无文字。一座小木桥横跨浅溪，桥面中央放着一把朱红色纸伞，背景只有两棵树和远处一面山坡；无人、无建筑、无其他道具。树、桥、溪流与山坡层次清楚，保持这个布局。",
+  "prompt": "USER SUBJECT: 横版 16:9，无文字。一座小木桥横跨浅溪，桥面中央放着一把朱红色纸伞，背景只有两棵树和远处一面山坡；无人、无建筑、无其他道具。树、桥、溪流与山坡层次清楚，保持这个布局。\nSUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.\nVISUAL MEDIUM: 三维模型结合平面化着色; 局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [medium] Build credible three-dimensional forms from flat color planes and clear silhouettes. Give each major surface 2–4 distinct value regions with firm boundaries; reserve hand-painted marks for sparse edge accents. Keep contour and material treatment graphically unified.\n- [composition] Organize the requested subject using these package-specific spatial decisions: 以清晰前中后景和大块轮廓组织空间; 让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立. Preserve the user-provided content and layout.\n- [palette] Use these package-specific color roles and relationships: 自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜; 明暗分区优先于细密渐变. Adapt their balance to the requested subject; do not apply them as a uniform tint.\n- [lighting] Use a consistent declared light source and separate lit, middle, and shadow regions into 2–4 tonal bands per major form. Keep cast-shadow shapes legible; avoid soft realistic gradients across the main silhouette.\n- [surface] Distinguish materials with simplified graphic cues: angular planes for wood and rock, grouped shapes for foliage, and controlled highlights. Preserve material identity without photorealistic microtexture.\n- [texture] Keep texture sparse and directional. Use occasional hand-painted edge marks only where they reinforce a silhouette or material transition; leave the main color planes quiet.\n- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.\nREQUIREMENT: 先搭建可读空间和主体剪影\nREQUIREMENT: 再划分大块色面与光照带\nREQUIREMENT: 最后加入少量材质笔触和环境细节\nREQUIREMENT: 以轮廓、明暗和色组检查统一性\nREQUIREMENT: 三维空间仍然可信\nREQUIREMENT: 明暗块面和轮廓优先\nREQUIREMENT: 不得复制来源游戏的角色、标志或构图\nREQUIREMENT: Preserve the user-provided subject, object count, location, and requested details.",
+  "negative_prompt": "photorealistic_pbr\ngeneric_anime_screenshot\ncopied_named_character\nuncontrolled_ink_noise\nUse observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.\nDo not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "cel-shaded-nature-game-art-direction",
+    "name": "卡通渲染自然冒险游戏美术",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\cel-shaded-nature-game-art\\art-direction.yaml",
+    "sha256": "e4b8e2024ee051bb85ee0b5090eaf5d06f8dda4f5e90e363d518c477cd7a7573",
+    "active_rule_ids": [
+      "medium",
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "applicable_rule_ids": [
+      "medium",
+      "composition",
+      "palette",
+      "lighting",
+      "surface",
+      "texture"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "先搭建可读空间和主体剪影",
+      "再划分大块色面与光照带",
+      "最后加入少量材质笔触和环境细节",
+      "以轮廓、明暗和色组检查统一性",
+      "三维空间仍然可信",
+      "明暗块面和轮廓优先",
+      "不得复制来源游戏的角色、标志或构图",
+      "Preserve the user-provided subject, object count, location, and requested details."
+    ],
+    "avoid": [
+      "photorealistic_pbr",
+      "generic_anime_screenshot",
+      "copied_named_character",
+      "uncontrolled_ink_noise",
+      "Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.",
+      "Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it."
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "三维模型结合平面化着色; 局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一",
+      "representation": "stylized",
+      "description": "以平面化明暗、清晰轮廓和书法式形体组织三维自然冒险场景，强调图形设计与手绘质感的协同。",
+      "required_contexts": [],
+      "incompatible_contexts": [],
+      "limitations": [
+        "photorealistic_pbr",
+        "generic_anime_screenshot",
+        "copied_named_character",
+        "uncontrolled_ink_noise"
+      ]
+    },
+    "pillars": [
+      "以平面化明暗、清晰轮廓和书法式形体组织三维自然冒险场景，强调图形设计与手绘质感的协同。",
+      "medium: 三维模型结合平面化着色; 局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一",
+      "composition: 以清晰前中后景和大块轮廓组织空间; 让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立",
+      "palette: 自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜; 明暗分区优先于细密渐变"
+    ],
+    "rules": [
+      {
+        "id": "medium",
+        "axis": "medium",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Build credible three-dimensional forms from flat color planes and clear silhouettes. Give each major surface 2–4 distinct value regions with firm boundaries; reserve hand-painted marks for sparse edge accents. Keep contour and material treatment graphically unified.",
+        "observable": "Major forms read as three-dimensional, but their light and shadow divide into a few clear, mostly hard-edged planes rather than continuous realistic gradients.",
+        "reject_when": "Smooth gradients or dense painterly texture cover most major surfaces, or the graphic silhouette and flat value grouping disappear.",
+        "evidence": {
+          "source_ids": [
+            "source-cel-shaded-nature-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "reviewed"
+        }
+      },
+      {
+        "id": "composition",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Organize the requested subject using these package-specific spatial decisions: 以清晰前中后景和大块轮廓组织空间; 让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立. Preserve the user-provided content and layout.",
+        "observable": "The stated hierarchy, spacing, framing, or depth relationship is readable: 以清晰前中后景和大块轮廓组织空间; 让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立.",
+        "reject_when": "The composition contradicts these spatial decisions or copies a source arrangement: 以清晰前中后景和大块轮廓组织空间; 让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立.",
+        "evidence": {
+          "source_ids": [
+            "source-cel-shaded-nature-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "reviewed"
+        }
+      },
+      {
+        "id": "palette",
+        "axis": "palette",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use these package-specific color roles and relationships: 自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜; 明暗分区优先于细密渐变. Adapt their balance to the requested subject; do not apply them as a uniform tint.",
+        "observable": "The stated colors and their roles are visible and distinguishable: 自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜; 明暗分区优先于细密渐变.",
+        "reject_when": "An all-over filter replaces the stated color relationships, or their roles cannot be distinguished: 自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜; 明暗分区优先于细密渐变.",
+        "evidence": {
+          "source_ids": [
+            "source-cel-shaded-nature-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "reviewed"
+        }
+      },
+      {
+        "id": "lighting",
+        "axis": "lighting",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use a consistent declared light source and separate lit, middle, and shadow regions into 2–4 tonal bands per major form. Keep cast-shadow shapes legible; avoid soft realistic gradients across the main silhouette.",
+        "observable": "The light direction is clear and the major shadow boundaries remain visible at presentation size.",
+        "reject_when": "Soft gradients erase the value bands, shadows contradict the light source, or glow obscures silhouettes.",
+        "evidence": {
+          "source_ids": [
+            "source-cel-shaded-nature-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "reviewed"
+        }
+      },
+      {
+        "id": "surface",
+        "axis": "surface",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Distinguish materials with simplified graphic cues: angular planes for wood and rock, grouped shapes for foliage, and controlled highlights. Preserve material identity without photorealistic microtexture.",
+        "observable": "Wood, rock, and foliage remain distinguishable through shape and a few material-specific marks, not dense texture.",
+        "reject_when": "All materials share the same smooth or noisy surface, or microtexture dominates the large color planes.",
+        "evidence": {
+          "source_ids": [
+            "source-cel-shaded-nature-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "reviewed"
+        }
+      },
+      {
+        "id": "texture",
+        "axis": "texture",
+        "importance": "supporting",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Keep texture sparse and directional. Use occasional hand-painted edge marks only where they reinforce a silhouette or material transition; leave the main color planes quiet.",
+        "observable": "Texture accents are subordinate to the silhouette and value grouping, with no broad field of random brush noise.",
+        "reject_when": "Dense brushwork fills the image, breaks major contours, or hides the flat-shaded value regions.",
+        "evidence": {
+          "source_ids": [
+            "source-cel-shaded-nature-game-art-primary-source"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "reviewed"
+        }
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "visual-relationship-coherence",
+        "rule_ids": [
+          "medium",
+          "composition",
+          "palette"
+        ],
+        "instruction": "Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.",
+        "observable": "The linked visual decisions reinforce one another and remain subordinate to the user-provided subject."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-cel-shaded-nature-game-art-primary-source",
+        "kind": "primary",
+        "base_asset_id": "cel-shaded-nature-game-art-primary-source",
+        "package_reference": {
+          "asset_id": "cel-shaded-nature-game-art-primary-source",
+          "local_path": "",
+          "title": "Ōkami official company material",
+          "creator": "Capcom",
+          "year": "",
+          "source_url": "https://www.capcom.co.jp/ir/english/news/pdf/e090903.pdf",
+          "license": "link_only",
+          "attribution": "Ōkami is a commercial work by Capcom; this package is an independent analysis of observable production traits.",
+          "role": "primary",
+          "notes": "Link-only source record. Do not bundle or redistribute external artwork without explicit permission."
+        }
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "8ce734451e080db04f25411bfd32e34273aa28af89032d2e5ff5c26680c8ec0f",
+    "negative_prompt_sha256": "95aa735edb35211485bd9f95538a678125079ebff7c9f5a5e191b12d69fe7819",
+    "direction_sha256": "e4b8e2024ee051bb85ee0b5090eaf5d06f8dda4f5e90e363d518c477cd7a7573",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

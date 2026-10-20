@@ -1,30 +1,38 @@
 # 卡通渲染自然冒险：红伞与溪桥
 
-> 单次同题对照；检验新方向能否强化平面化造型，不代表效果稳定或新版全面更优。
+> 两轮同题复核。第一轮发现 cel shading 只部分成立；第二轮收紧色阶、轮廓和纹理规则后复测。仍是单题、单人评审，不代表跨题材稳定性。
 
-## 图像
+## 第二轮：修订方向复测
 
-| 旧包编译 | 新版结构化方向 |
+| 旧包编译 | 修订后的新版方向 |
 | --- | --- |
-| ![旧包：红伞置于溪桥](legacy.png) | ![新版方向：红伞置于溪桥](direction.png) |
+| ![旧包第二轮：红伞置于溪桥](run-2/legacy.png) | ![修订方向第二轮：红伞置于溪桥](run-2/direction-refined.png) |
 
-共同请求：横版 16:9，无文字。一座小木桥横跨浅溪，桥面中央放着一把朱红色纸伞，背景只有两棵树和远处一面山坡；无人、无建筑、无其他道具。树、桥、溪流与山坡层次清楚，保持这个布局。
+两图都保留一把朱红色纸伞、一座木桥、浅溪、两棵树和远山；无人、无建筑，主体布局与首轮请求一致。新版的主要明暗面分界更清楚，桥面和山石形体更概括，纹理笔触减少，平面化着色比旧包更明显。山体和水面仍含连续渐变与较多细节，因此 cel shading 改善但只部分成立。
+
+## 第一轮：原方向基线
+
+| 旧包编译 | 原版结构化方向 |
+| --- | --- |
+| ![旧包第一轮：红伞置于溪桥](legacy.png) | ![原方向第一轮：红伞置于溪桥](direction.png) |
+
+第一轮的新版图与旧包结果接近，色阶仍偏连续，未能清楚体现平面化明暗。基于这个观察，我们把方向规则改为每个主要表面使用 2–4 个边界清楚的明暗区域，减少大面积连续渐变和密集笔触，并在相同请求下进行了第二轮复测。
 
 ## 逐项复核
 
-- **主体和构图：通过。** 两图都呈现一把红伞、一座横跨溪流的桥、两棵树和远山；未见人物或建筑。前景石块和水流属于溪岸环境细节。
-- **媒介与明暗：新版部分通过。** 新版有更清楚的色块与轮廓分区，石块、树冠和桥面仍保留较多笔触与渐变，未达到强烈、统一的 cel shading。
-- **色彩与光线：两图均通过。** 绿色植被、蓝色水山和朱红伞可区分；日光方向和阴影形状可读。新旧图的色彩角色相近。
-- **表面和纹理：部分通过。** 木、石、水和叶片可辨；新版减少部分连续渐变，但水面和树叶仍较细碎。手绘纹理没有盖住主要轮廓。
-- **差异结论：有限改善。** 新版的色面更简化，轮廓更明确；与旧版仍相似，单次结果不足以证明风格优势或跨题材稳定性。方向保持 `experimental`。
+- **主体和构图：通过。** 两轮中两组都保留请求的伞、桥、浅溪、两棵树和山坡；无人物或建筑。前景石块属于溪岸环境。
+- **媒介与明暗：部分通过。** 第二轮新版的明暗面边界更清楚，较符合 cel shading；主要山体和水流仍使用连续渐变，未完全达到规则要求。
+- **色彩与光线：通过。** 绿植、蓝色水山、朱红伞保持分工，日光方向和主要投影清晰。
+- **表面与纹理：部分通过。** 木、石、叶片可区分；新版减少部分纹理，但局部仍偏细碎。
+- **结论：规则修订有局部可见效果，尚未完全解决风格遵循问题。** 当前方向保持 `experimental`；需要其他题材及重复样本继续验证。
 
 ## 生成记录
 
-- 两组使用完全相同的中文主体请求，不输入参考图，各自独立调用同一图像生成工具。
-- 两份编译任务和实际提交文本分别保存在 `legacy-job.json`、`direction-job.json`、`legacy-prompt.txt`、`direction-prompt.txt`。编译任务均登记 `references: none`。
-- 输出均为 1672 × 941 像素。工具没有提供可核实的具体模型版本或随机种子，随机状态无法匹配。
-- 单人目视复核两张原图；上面的逐项结果只适用于这两张输出。
+- 四次生成都使用同一中文主体请求、不输入参考图，并调用同一图像生成工具。第一轮按旧包后新版的顺序生成；第二轮按修订新版后旧包的顺序生成。
+- 两轮每个输出对应的编译任务和实际提交提示均存档在本目录。第二轮新版任务的方向哈希对应收紧后的 `art-direction.yaml`。
+- 输出均为 1672 × 941 像素。工具未提供可核实的具体模型版本或随机种子，随机状态无法匹配；轮次间比较只作定性复核。
+- 单人逐图目视复核。第一轮和第二轮不是盲评，也不提供统计性结论。
 
 ## English note
 
-This single same-subject comparison checks whether the structured direction strengthens flat shapes. Both outputs preserve one red umbrella on a wooden bridge over a stream, two trees, and a distant hillside, with no people or buildings. The structured-direction image uses somewhat simpler color planes and clearer contours, but retains substantial brush texture and gradients, so the cel-shaded treatment is only partial. Palette roles and directional daylight remain similar in both images. One reviewer checked the original images; one output per arm cannot establish a general advantage or stability. The direction remains `experimental`.
+Two same-subject review rounds are recorded. Round 1 showed that cel shading remained weak, so the direction was revised to require 2–4 clearly bounded value regions on major surfaces, with fewer broad gradients and dense brush marks. In round 2, the revised output has clearer value boundaries, more simplified bridge and rock forms, and less texture than the legacy output. The mountain and water still contain continuous gradients, so the style is only partially achieved. All outputs preserve the requested umbrella, bridge, stream, two trees, and hillside. One reviewer inspected the images; the generator did not expose a verifiable model version or seed, and the rounds were not blind or randomized. The direction remains `experimental`.

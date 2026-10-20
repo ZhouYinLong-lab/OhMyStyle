@@ -41,7 +41,7 @@ See [`provenance.yaml`](provenance.yaml),
 
 ## Visual comparison
 
-The [red umbrella and stream bridge comparison](comparisons/red-umbrella-bridge/README.md) records legacy and structured-direction outputs for the same request. The new direction simplifies some color planes and contours, but cel shading is only partial and one trial cannot establish a stable advantage.
+The [red umbrella and stream bridge comparison](comparisons/red-umbrella-bridge/README.md) records the first comparison and a retest after revising the rules. Color planes and contours are clearer in the revised output, but cel shading remains partial and a single-subject review cannot establish a stable advantage.
 
 ## Use only this package
 

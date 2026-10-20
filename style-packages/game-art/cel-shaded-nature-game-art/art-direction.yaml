@@ -24,17 +24,18 @@ rules:
   axis: medium
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 三维模型结合平面化着色;
-    局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一.'
-  observable: 'The requested image retains the stated medium distinction or production constraint: 三维模型结合平面化着色;
-    局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一.'
-  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
-    三维模型结合平面化着色; 局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一.'
+  instruction: Build credible three-dimensional forms from flat color planes and clear silhouettes. Give each major
+    surface 2–4 distinct value regions with firm boundaries; reserve hand-painted marks for sparse edge accents.
+    Keep contour and material treatment graphically unified.
+  observable: Major forms read as three-dimensional, but their light and shadow divide into a few clear, mostly
+    hard-edged planes rather than continuous realistic gradients.
+  reject_when: Smooth gradients or dense painterly texture cover most major surfaces, or the graphic silhouette
+    and flat value grouping disappear.
   evidence:
     source_ids:
     - source-cel-shaded-nature-game-art-primary-source
     basis: curatorial_inference
-    visual_review: pending
+    visual_review: reviewed
 - id: composition
   axis: composition
   importance: core
@@ -49,7 +50,7 @@ rules:
     source_ids:
     - source-cel-shaded-nature-game-art-primary-source
     basis: curatorial_inference
-    visual_review: pending
+    visual_review: reviewed
 - id: palette
   axis: palette
   importance: core
@@ -64,52 +65,49 @@ rules:
     source_ids:
     - source-cel-shaded-nature-game-art-primary-source
     basis: curatorial_inference
-    visual_review: pending
+    visual_review: reviewed
 - id: lighting
   axis: lighting
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Apply the package-specific light behavior: 使用分段明暗而非连续写实渐变; 日光、月光或神秘光源形成明确色温关系; 阴影保持形状清楚. Keep
-    light coherent with the requested subject, medium, and scene.'
-  observable: 'Light and shadow visibly support the stated forms or atmosphere: 使用分段明暗而非连续写实渐变; 日光、月光或神秘光源形成明确色温关系;
-    阴影保持形状清楚.'
-  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 使用分段明暗而非连续写实渐变; 日光、月光或神秘光源形成明确色温关系;
-    阴影保持形状清楚.'
+  instruction: Use a consistent declared light source and separate lit, middle, and shadow regions into 2–4 tonal
+    bands per major form. Keep cast-shadow shapes legible; avoid soft realistic gradients across the main silhouette.
+  observable: The light direction is clear and the major shadow boundaries remain visible at presentation size.
+  reject_when: Soft gradients erase the value bands, shadows contradict the light source, or glow obscures silhouettes.
   evidence:
     source_ids:
     - source-cel-shaded-nature-game-art-primary-source
     basis: curatorial_inference
-    visual_review: pending
+    visual_review: reviewed
 - id: surface
   axis: surface
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Render the requested materials using these package-specific surface decisions: 木、石、叶片和布料各自保留简化但可辨的表面逻辑;
-    高光面积受控. Preserve detail hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 木、石、叶片和布料各自保留简化但可辨的表面逻辑;
-    高光面积受控.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    木、石、叶片和布料各自保留简化但可辨的表面逻辑; 高光面积受控.'
+  instruction: >-
+    Distinguish materials with simplified graphic cues: angular planes for wood and rock, grouped shapes for
+    foliage, and controlled highlights. Preserve material identity without photorealistic microtexture.
+  observable: Wood, rock, and foliage remain distinguishable through shape and a few material-specific marks, not
+    dense texture.
+  reject_when: All materials share the same smooth or noisy surface, or microtexture dominates the large color planes.
   evidence:
     source_ids:
     - source-cel-shaded-nature-game-art-primary-source
     basis: curatorial_inference
-    visual_review: pending
+    visual_review: reviewed
 - id: texture
   axis: texture
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Render the requested materials using these package-specific surface decisions: 纹理跟随材质方向，避免随机噪点;
-    边缘可有少量手绘破笔但不能覆盖轮廓. Preserve detail hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纹理跟随材质方向，避免随机噪点;
-    边缘可有少量手绘破笔但不能覆盖轮廓.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    纹理跟随材质方向，避免随机噪点; 边缘可有少量手绘破笔但不能覆盖轮廓.'
+  instruction: Keep texture sparse and directional. Use occasional hand-painted edge marks only where they reinforce
+    a silhouette or material transition; leave the main color planes quiet.
+  observable: Texture accents are subordinate to the silhouette and value grouping, with no broad field of random
+    brush noise.
+  reject_when: Dense brushwork fills the image, breaks major contours, or hides the flat-shaded value regions.
   evidence:
     source_ids:
     - source-cel-shaded-nature-game-art-primary-source
     basis: curatorial_inference
-    visual_review: pending
+    visual_review: reviewed
 active_rule_ids:
 - medium
 - composition
