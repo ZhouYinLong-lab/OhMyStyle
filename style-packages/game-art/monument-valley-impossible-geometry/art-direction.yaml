@@ -1,0 +1,142 @@
+schema_version: 2.1.0
+status: experimental
+id: monument-valley-impossible-geometry-direction
+name: 纪念碑谷不可能几何游戏美术
+base_package: game-art/monument-valley-impossible-geometry
+scope:
+  medium: stylized geometric game environment art
+  representation: stylized
+  description: 以简洁色块、建筑错视、可旋转的几何路径和宁静留白组织游戏空间，强调视觉谜题而非固定故事。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以简洁色块、建筑错视、可旋转的几何路径和宁静留白组织游戏空间，强调视觉谜题而非固定故事。
+- 'composition: orthographic or near-isometric framing, generous negative space, readable paths and occlusions'
+- 'palette: warm stone, muted blue, coral, cream, and deep shadow with strong role separation'
+- 'lighting: quality: soft graphic lighting with quiet plane shadows; behavior: Use light and value to preserve
+  the user''s subject rather than add a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: orthographic
+    or near-isometric framing, generous negative space, readable paths and occlusions. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: orthographic or near-isometric
+    framing, generous negative space, readable paths and occlusions.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: orthographic
+    or near-isometric framing, generous negative space, readable paths and occlusions.'
+  evidence:
+    source_ids:
+    - source-monument-valley-impossible-geometry-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: warm stone, muted blue, coral, cream,
+    and deep shadow with strong role separation. Adapt their balance to the requested subject; do not apply
+    them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: warm stone, muted blue, coral,
+    cream, and deep shadow with strong role separation.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    warm stone, muted blue, coral, cream, and deep shadow with strong role separation.'
+  evidence:
+    source_ids:
+    - source-monument-valley-impossible-geometry-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft graphic lighting with quiet plane
+    shadows; behavior: Use light and value to preserve the user''s subject rather than add a fixed scene..
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft graphic lighting
+    with quiet plane shadows; behavior: Use light and value to preserve the user''s subject rather than add
+    a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft graphic
+    lighting with quiet plane shadows; behavior: Use light and value to preserve the user''s subject rather
+    than add a fixed scene..'
+  evidence:
+    source_ids:
+    - source-monument-valley-impossible-geometry-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: clean
+    stylized game-art surfaces with minimal material noise; edges: precise enough to preserve the requested
+    subject. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    clean stylized game-art surfaces with minimal material noise; edges: precise enough to preserve the requested
+    subject.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: clean stylized game-art surfaces with minimal material noise; edges: precise enough to preserve
+    the requested subject.'
+  evidence:
+    source_ids:
+    - source-monument-valley-impossible-geometry-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    density, used only to distinguish material or depth; placement: follow material and process; never become
+    a uniform overlay. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low density, used only to distinguish material or depth; placement: follow material and process; never
+    become a uniform overlay.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low density, used only to distinguish material or depth; placement: follow material and process;
+    never become a uniform overlay.'
+  evidence:
+    source_ids:
+    - source-monument-valley-impossible-geometry-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-monument-valley-impossible-geometry-primary-source
+  kind: primary
+  base_asset_id: monument-valley-impossible-geometry-primary-source
+execution:
+  route: text_only
+  must:
+  - block the user subject; simplify it into readable planes; construct one impossible connection; apply calm
+    color roles; check for copied level geometry
+  - user subject remains focus; spatial contradiction is intentional; no fixed character, landmark, or level
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - fixed subject, location, character, or story not requested by the user
+  - generic global color filter without process evidence
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
