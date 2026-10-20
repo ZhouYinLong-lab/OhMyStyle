@@ -135,10 +135,10 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 ### 包豪斯：明确是纸材方法
 
 ~~~powershell
-python tools/compile-style.py style-packages/schools/bauhaus --direction package --context paper-study --subject "A small paper pavilion made from one sheet using cuts and folds, with an opening and visible supports" --output runs/style-v2/paper-job.json
+python tools/compile-style.py style-packages/schools/bauhaus --direction experiments/style-v2/bauhaus-paper-study --context paper-study --subject "A small paper stool made from one sheet of uncolored card; show the complete form and visible cut, tear, and fold connections; no glue, hidden support, people, or text" --references none --output runs/style-v2/paper-job.json
 ~~~
 
-生成图只用于研究结构的视觉表达，不能据此确认真实折叠或承重可行。该方向不是对整个包豪斯学院的统一画风定义。原实验稿保留作迁移记录，正式包中的 `art-direction.yaml` 是当前编译入口。
+新旧提示的同题实际生成对照与评审记录见[包豪斯纸凳视觉研究](../../style-packages/schools/bauhaus/comparisons/paper-stool/README.md)。一组最终输出通过单视图检查；首次新方向输出因多格重复主体被拒收，也保留了失败图。方向只用于研究一种纸材方法，不能据此确认真实折叠或承重可行，也不是对整个包豪斯学院的统一画风定义。
 
 ### ASCII：字符源 → 等宽字形 → 无损图片
 

@@ -15,6 +15,8 @@ This independent package turns public research and observable decisions about me
 
 Emphasizes geometric order, basic forms, primary-color relationships, functional structure, and negative space across graphic, spatial, product, and abstract compositions without copying a specific design.
 
+The package also contains an experimental paper-teaching-method direction. See the [same-subject paper-stool comparison](comparisons/paper-stool/README.md) for both images, the rejected first attempt, and review limits. This direction does not define one unified style for the entire Bauhaus school.
+
 ## Sources
 
 - [Bauhaus Dessau: official history](https://www.bauhaus.de/en/das-bauhaus/)

@@ -5893,7 +5893,7 @@ packages:
   - texture
   reference_count: 4
   accepted_example_count: 1
-  rejected_example_count: 0
+  rejected_example_count: 1
   benchmark: true
 - resource_id: black-mountain-college
   name: 黑山学院

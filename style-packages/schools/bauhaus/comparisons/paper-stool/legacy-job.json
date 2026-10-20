@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "bauhaus",
+    "name": "包豪斯",
+    "version": "0.2.0",
+    "root": "style-packages/schools/bauhaus"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A small paper stool made from one sheet of uncolored card; show the complete form and visible cut, tear, and fold connections; no glue, hidden support, people, or text",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A small paper stool made from one sheet of uncolored card; show the complete form and visible cut, tear, and fold connections; no glue, hidden support, people, or text\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\n一幅原创的现代主义平面构成：白色留白中安排黑色直线、红色圆形、蓝色矩形和黄色方块，形成非对称但稳定的功能性秩序。所有形状边缘清楚、颜色平涂、无文字、无标志、无具体作品复制。\n\n将用户的主题替换为新的主体；保持上述媒介、构图、色彩、光线和材质逻辑，不复制任何参考作品。\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "不要装饰主义、渐变、3D渲染、金属光泽、赛博朋克、复杂纹理、可读文字、复制已知海报。",
+  "template_variables": {
+    "SUBJECT": "A small paper stool made from one sheet of uncolored card; show the complete form and visible cut, tear, and fold connections; no glue, hidden support, people, or text",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "medium_evidence_is_visible",
+          "composition_is_intentional",
+          "palette_and_lighting_are_coherent",
+          "new_subject_is_not_a_copy_of_a_reference_work",
+          "no_unrequested_text_or_branding"
+        ],
+        "reject_if": [
+          "a_generic_filter_replaces_the_style_signature",
+          "the_image_is_a_direct_copy_of_a_named_work",
+          "medium_or_material_cues_are_missing"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "subject_structure_remains_readable"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "material_or_process_difference_is_visible"
+        ]
+      },
+      "architecture_environment": {
+        "required": [
+          "spatial_layers_or_surface_structure_are_readable"
+        ]
+      },
+      "minimal_composition": {
+        "required": [
+          "reduction_does_not_remove_the_style_signature"
+        ]
+      },
+      "fuzzy_brief": {
+        "required": [
+          "ambiguous_request_is_compiled_into_coherent_visual_decisions"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "prompt_sha256": "4cbf686e43c25079b37bd262ec9a3d4ac2b876532c7c7e62b03b7edc2cbb7988",
+    "negative_prompt_sha256": "2c2897fc1adf1de8c20dd2c84de05574614e6ad8d80eb3408567a4686d93eeb9",
+    "source_policy": "Public pages are used to research observable traits. No source artwork or commercial screenshot is bundled. The included representative image and accepted example are newly generated anonymous scenes.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

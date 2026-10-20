@@ -1,6 +1,21 @@
-asset: anonymous-v1.png
-status: pending_human_review
+asset: paper-stool-direction-v1.png
+status: visual_study_reviewed
 generator: OpenAI built-in image generation
-prompt_mode: anonymous_visual_signature
-subject: suburban drainage corridor with utility poles and maintenance vehicles
-generated_at: 2026-08-06
+generated_at: 2026-10-20
+package: style-packages/schools/bauhaus
+direction: experiments/style-v2/bauhaus-paper-study/direction.yaml
+subject: One paper stool made from one sheet of uncolored card, shown whole with cut, tear, and fold connections.
+compiled_job: ../../comparisons/paper-stool/direction-job.json
+compiled_prompt_sha256: 50d1651c3cab3e161cff812d961aeaefc5e3f6ff8d3ea34af6ea7f0ba72f000f
+direction_sha256: a27c05729ca55b405e4edea7bf657cdaabf1fcd1262c1c6875d963fab1e188c1
+review:
+  reviewer_count: 1
+  status: visual_rules_provisionally_observed
+  observed:
+    - exactly one complete stool in a single view
+    - plain card material with visible folds, slots, contacts, and open space beneath the seat
+    - neutral material and lighting keep attention on construction
+  limitations:
+    - generated image does not establish physical foldability, stability, or load-bearing safety
+    - this direction studies one Bauhaus teaching method; it is not a complete style for the school
+    - result is one unseeded output and does not establish repeatability
