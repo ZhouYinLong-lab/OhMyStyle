@@ -4,9 +4,11 @@ same_family:
   - photographers/lisa-arima
 complements:
   - presets/high-chroma-contrast
-conflicts:
-  - presets/clean-product-studio
+conflicts: []
 distinctives:
   - 彩色胶片中的运动时间感
   - 稳定形体与拖影并置
   - 反射参与空间叙事
+avoid_overlap:
+  - 'Avoid blending this direction with the unregistered contrast reference: presets/clean-product-studio.'
+supersedes: []
