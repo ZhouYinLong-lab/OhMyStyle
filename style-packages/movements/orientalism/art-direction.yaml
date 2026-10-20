@@ -1,0 +1,149 @@
+schema_version: 2.1.0
+status: experimental
+id: orientalism-direction
+name: 东方主义
+base_package: movements/orientalism
+scope:
+  medium: decorative historical painting language with material-focused surface
+  representation: stylized
+  description: 研究十九世纪欧洲艺术中的东方想象及其事实与幻想的交错，提取装饰性空间、暖土色、冷色阴影和材质细节，同时明确反对把族群、地点或异国情节写成默认主体。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 研究十九世纪欧洲艺术中的东方想象及其事实与幻想的交错，提取装饰性空间、暖土色、冷色阴影和材质细节，同时明确反对把族群、地点或异国情节写成默认主体。
+- 'composition: 装饰性边框或建筑平面作为空间秩序; 前景细节与远处光线形成层次; 局部遮挡和框景带来观看距离'
+- 'palette: 赭土、烟褐、沙金与深靛蓝形成温冷对照; 青绿色和砖红可作为局部材质色; 避免把颜色简化成廉价的异国情调滤镜'
+- 'lighting: quality: filtered directional light, dusty atmosphere, and cool shadow planes with controlled
+  highlights; behavior: Keep the requested subject and location independent from the package.; behavior: Use
+  light as a structural and material decision, not as a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 装饰性边框或建筑平面作为空间秩序;
+    前景细节与远处光线形成层次; 局部遮挡和框景带来观看距离. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 装饰性边框或建筑平面作为空间秩序;
+    前景细节与远处光线形成层次; 局部遮挡和框景带来观看距离.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 装饰性边框或建筑平面作为空间秩序;
+    前景细节与远处光线形成层次; 局部遮挡和框景带来观看距离.'
+  evidence:
+    source_ids:
+    - source-orientalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 赭土、烟褐、沙金与深靛蓝形成温冷对照; 青绿色和砖红可作为局部材质色;
+    避免把颜色简化成廉价的异国情调滤镜. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 赭土、烟褐、沙金与深靛蓝形成温冷对照; 青绿色和砖红可作为局部材质色;
+    避免把颜色简化成廉价的异国情调滤镜.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    赭土、烟褐、沙金与深靛蓝形成温冷对照; 青绿色和砖红可作为局部材质色; 避免把颜色简化成廉价的异国情调滤镜.'
+  evidence:
+    source_ids:
+    - source-orientalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: filtered directional light, dusty atmosphere,
+    and cool shadow planes with controlled highlights; behavior: Keep the requested subject and location independent
+    from the package.; behavior: Use light as a structural and material decision, not as a fixed scene.. Keep
+    light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: filtered directional
+    light, dusty atmosphere, and cool shadow planes with controlled highlights; behavior: Keep the requested
+    subject and location independent from the package.; behavior: Use light as a structural and material decision,
+    not as a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: filtered directional
+    light, dusty atmosphere, and cool shadow planes with controlled highlights; behavior: Keep the requested
+    subject and location independent from the package.; behavior: Use light as a structural and material decision,
+    not as a fixed scene..'
+  evidence:
+    source_ids:
+    - source-orientalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: aged
+    paint, textile-like patterning, mineral walls, glazed ceramics, and carefully observed material accents;
+    edges: varied, deliberate edges with no copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    aged paint, textile-like patterning, mineral walls, glazed ceramics, and carefully observed material accents;
+    edges: varied, deliberate edges with no copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: aged paint, textile-like patterning, mineral walls, glazed ceramics, and carefully observed material
+    accents; edges: varied, deliberate edges with no copied layout.'
+  evidence:
+    source_ids:
+    - source-orientalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: moderate
+    to high in architectural and material passages, quieter in atmospheric distance; placement: concentrated
+    where the medium or material needs explanation. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    moderate to high in architectural and material passages, quieter in atmospheric distance; placement: concentrated
+    where the medium or material needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: moderate to high in architectural and material passages, quieter in atmospheric distance; placement:
+    concentrated where the medium or material needs explanation.'
+  evidence:
+    source_ids:
+    - source-orientalism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-orientalism-primary-source
+  kind: primary
+  base_asset_id: orientalism-primary-source
+execution:
+  route: text_only
+  must:
+  - define the user-supplied subject and location first
+  - organize architectural or decorative planes
+  - lay in warm earth and cool shadow masses
+  - add selective material detail without exoticizing the scene
+  - historical tension is acknowledged rather than romanticized
+  - decorative material detail supports the user's subject
+  - no ethnicity, costume, landmark, or colonial event is forced
+  - light and palette remain transferable
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, or protected
+    game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
