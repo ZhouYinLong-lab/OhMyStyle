@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: stained-glass-panel-game-art-direction
+name: 彩玻拼片游戏美术
+base_package: game-art/stained-glass-panel-game-art
+scope:
+  medium: 透光玻璃和深色接缝共同造型; 片内颜色有变化但层次有限
+  representation: stylized
+  description: 把完整图像拆成透光色片，让接缝、铅线和玻璃透光共同塑造轮廓与构图。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - opaque flat mosaic
+  - washed-out glow
+  - copied puzzle art
+pillars:
+- 把完整图像拆成透光色片，让接缝、铅线和玻璃透光共同塑造轮廓与构图。
+- 'medium: 透光玻璃和深色接缝共同造型; 片内颜色有变化但层次有限'
+- 'composition: 色片先组成大轮廓，再细分内部; 接缝构成结构线而非随机网格'
+- 'palette: 宝石色片与深色边界相邻; 明度层级维持图形完整'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 透光玻璃和深色接缝共同造型;
+    片内颜色有变化但层次有限.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 透光玻璃和深色接缝共同造型;
+    片内颜色有变化但层次有限.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    透光玻璃和深色接缝共同造型; 片内颜色有变化但层次有限.'
+  evidence:
+    source_ids:
+    - source-stained-glass-panel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 色片先组成大轮廓，再细分内部;
+    接缝构成结构线而非随机网格. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 色片先组成大轮廓，再细分内部; 接缝构成结构线而非随机网格.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 色片先组成大轮廓，再细分内部;
+    接缝构成结构线而非随机网格.'
+  evidence:
+    source_ids:
+    - source-stained-glass-panel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 宝石色片与深色边界相邻; 明度层级维持图形完整. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 宝石色片与深色边界相邻; 明度层级维持图形完整.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    宝石色片与深色边界相邻; 明度层级维持图形完整.'
+  evidence:
+    source_ids:
+    - source-stained-glass-panel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 背光穿透色片; 边界仍可读且泛光受控. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 背光穿透色片; 边界仍可读且泛光受控.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 背光穿透色片; 边界仍可读且泛光受控.'
+  evidence:
+    source_ids:
+    - source-stained-glass-panel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 切片边缘清楚; 玻璃面带细微不均匀感.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 切片边缘清楚;
+    玻璃面带细微不均匀感.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    切片边缘清楚; 玻璃面带细微不均匀感.'
+  evidence:
+    source_ids:
+    - source-stained-glass-panel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 片内纹理低于轮廓信息;
+    反光方向一致. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 片内纹理低于轮廓信息;
+    反光方向一致.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    片内纹理低于轮廓信息; 反光方向一致.'
+  evidence:
+    source_ids:
+    - source-stained-glass-panel-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-stained-glass-panel-game-art-primary-source
+  kind: primary
+  base_asset_id: stained-glass-panel-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先设计大轮廓和主色片
+  - 用接缝划分结构
+  - 加入有限透光与片内明暗
+  - 用背光强化色片但保留边界
+  - 缩小检查辨识度
+  - 色片边界组成完整形体
+  - 透光关系明确
+  - 不复制具体拼图
+  avoid:
+  - opaque flat mosaic
+  - washed-out glow
+  - copied puzzle art
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
