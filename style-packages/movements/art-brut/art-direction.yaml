@@ -1,0 +1,152 @@
+schema_version: 2.1.0
+status: experimental
+id: art-brut-direction
+name: 原生艺术
+base_package: movements/art-brut
+scope:
+  medium: mixed drawing, painting, assemblage, or found-surface mark-making
+  representation: stylized
+  description: 以未经学院规范驯化的线条、重复、密集痕迹和非标准材料感，保留直接、私人且不完美的视觉生成过程。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以未经学院规范驯化的线条、重复、密集痕迹和非标准材料感，保留直接、私人且不完美的视觉生成过程。
+- 'composition: Let the user-supplied subject emerge through direct marks, repetition, accumulation, and irregular
+  scale.; Preserve awkward gaps, crowded passages, and personal ordering instead of normalizing the image into
+  polished design.'
+- 'palette: Use available-looking pigments, dirty neutrals, dark ink, chalk white, and occasional abrupt color.;
+  Keep color relationships personal and material, not harmonized by a commercial grade.'
+- 'lighting: quality: raw direct mark-making with uneven local contrast; behavior: Keep illumination secondary
+  to the marks; allow uneven pressure and density to create value.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Let the user-supplied
+    subject emerge through direct marks, repetition, accumulation, and irregular scale.; Preserve awkward gaps,
+    crowded passages, and personal ordering instead of normalizing the image into polished design.. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Let the user-supplied
+    subject emerge through direct marks, repetition, accumulation, and irregular scale.; Preserve awkward gaps,
+    crowded passages, and personal ordering instead of normalizing the image into polished design..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Let the
+    user-supplied subject emerge through direct marks, repetition, accumulation, and irregular scale.; Preserve
+    awkward gaps, crowded passages, and personal ordering instead of normalizing the image into polished design..'
+  evidence:
+    source_ids:
+    - source-art-brut-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Use available-looking pigments, dirty
+    neutrals, dark ink, chalk white, and occasional abrupt color.; Keep color relationships personal and material,
+    not harmonized by a commercial grade.. Adapt their balance to the requested subject; do not apply them
+    as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Use available-looking pigments,
+    dirty neutrals, dark ink, chalk white, and occasional abrupt color.; Keep color relationships personal
+    and material, not harmonized by a commercial grade..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Use available-looking pigments, dirty neutrals, dark ink, chalk white, and occasional abrupt color.; Keep
+    color relationships personal and material, not harmonized by a commercial grade..'
+  evidence:
+    source_ids:
+    - source-art-brut-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: raw direct mark-making with uneven local
+    contrast; behavior: Keep illumination secondary to the marks; allow uneven pressure and density to create
+    value.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: raw direct mark-making
+    with uneven local contrast; behavior: Keep illumination secondary to the marks; allow uneven pressure and
+    density to create value..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: raw direct mark-making
+    with uneven local contrast; behavior: Keep illumination secondary to the marks; allow uneven pressure and
+    density to create value..'
+  evidence:
+    source_ids:
+    - source-art-brut-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: handmade,
+    layered, and visibly process-led; edges: irregular, overdrawn, or abruptly cut off. Preserve detail hierarchy
+    and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    handmade, layered, and visibly process-led; edges: irregular, overdrawn, or abruptly cut off.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: handmade, layered, and visibly process-led; edges: irregular, overdrawn, or abruptly cut off.'
+  evidence:
+    source_ids:
+    - source-art-brut-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: variable
+    from sparse blank fields to dense accumulations; placement: follow the subject''s internal associations
+    and mark rhythm, not a decorative pattern library. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    variable from sparse blank fields to dense accumulations; placement: follow the subject''s internal associations
+    and mark rhythm, not a decorative pattern library.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: variable from sparse blank fields to dense accumulations; placement: follow the subject''s internal
+    associations and mark rhythm, not a decorative pattern library.'
+  evidence:
+    source_ids:
+    - source-art-brut-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-art-brut-primary-source
+  kind: primary
+  base_asset_id: art-brut-primary-source
+execution:
+  route: text_only
+  must:
+  - begin with the user-supplied subject without imposing an academic sketch plan
+  - add repeated, overdrawn, or accumulated marks with uneven pressure
+  - retain gaps, corrections, collisions, and material irregularities as part of the final image
+  - direct and non-standard mark language
+  - retained process accidents
+  - personal ordering without polished academic finish
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
