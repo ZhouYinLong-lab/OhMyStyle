@@ -16,16 +16,15 @@ pillars:
 - 以摄影的柔焦、纹理纸面、手工印相和朦胧的光线表达摄影的绘画性，同时保留摄影构图与暗房过程的可观察线索。
 - 'composition: 柔化边缘保留清晰的主结构; 层层空气和负空间形成抒情距离; 画面可以像一幅印相作品但不复制绘画构图'
 - 'palette: 黑白、棕褐或低饱和色调均可; 纸张与乳剂的色调统一但不覆盖主体; 局部高光像被雾包住而不是发光'
-- 'lighting: quality: diffused backlight, mist, or overcast light with a gentle luminous veil; behavior: Keep
-  the requested subject and location independent from the package.; behavior: Apply lighting as a transferable
-  visual decision, not a fixed scene.'
+- 'lighting: diffused backlight, mist, or overcast light with a gentle luminous veil; Keep the veil local; retain
+  readable photographic structure and textured print values.'
 rules:
 - id: composition
   axis: composition
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Organize the requested subject using these package-specific spatial decisions: 柔化边缘保留清晰的主结构;
-    层层空气和负空间形成抒情距离; 画面可以像一幅印相作品但不复制绘画构图. Preserve the user-provided content and layout.'
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 柔化边缘保留清晰的主结构; 层层空气和负空间形成抒情距离;
+    画面可以像一幅印相作品但不复制绘画构图. Preserve the user-provided content and layout.'
   observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 柔化边缘保留清晰的主结构; 层层空气和负空间形成抒情距离;
     画面可以像一幅印相作品但不复制绘画构图.'
   reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 柔化边缘保留清晰的主结构;
@@ -39,8 +38,8 @@ rules:
   axis: palette
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: 黑白、棕褐或低饱和色调均可; 纸张与乳剂的色调统一但不覆盖主体;
-    局部高光像被雾包住而不是发光. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  instruction: 'Use these package-specific color roles and relationships: 黑白、棕褐或低饱和色调均可; 纸张与乳剂的色调统一但不覆盖主体; 局部高光像被雾包住而不是发光.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
   observable: 'The stated colors and their roles are visible and distinguishable: 黑白、棕褐或低饱和色调均可; 纸张与乳剂的色调统一但不覆盖主体;
     局部高光像被雾包住而不是发光.'
   reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
@@ -54,18 +53,14 @@ rules:
   axis: lighting
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Apply the package-specific light behavior: quality: diffused backlight, mist, or overcast light
-    with a gentle luminous veil; behavior: Keep the requested subject and location independent from the package.;
-    behavior: Apply lighting as a transferable visual decision, not a fixed scene.. Keep light coherent with
-    the requested subject, medium, and scene.'
-  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: diffused backlight,
-    mist, or overcast light with a gentle luminous veil; behavior: Keep the requested subject and location
-    independent from the package.; behavior: Apply lighting as a transferable visual decision, not a fixed
-    scene..'
-  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: diffused backlight,
-    mist, or overcast light with a gentle luminous veil; behavior: Keep the requested subject and location
-    independent from the package.; behavior: Apply lighting as a transferable visual decision, not a fixed
-    scene..'
+  instruction: Use diffused backlight, mist, or overcast light with a gentle luminous veil. Keep the veil local;
+    retain readable photographic structure and textured print values. Keep the light coherent with the requested
+    subject and scene.
+  observable: 'The light quality and its effect on shadows, materials, or tonal separation are visible: diffused
+    backlight, mist, or overcast light with a gentle luminous veil. Keep the veil local; retain readable photographic
+    structure and textured print values.'
+  reject_when: 'Reject global tint, bloom, or lighting that erases the stated tonal or material distinctions:
+    diffused backlight, mist, or overcast light with a gentle luminous veil.'
   evidence:
     source_ids:
     - source-pictorialism-primary-source
@@ -78,12 +73,12 @@ rules:
   instruction: 'Render the requested materials using these package-specific surface decisions: finish: textured
     paper, soft-focus optical rendering, and subtle handmade print irregularity; edges: deliberate and subject-dependent,
     without a copied layout. Preserve detail hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
-    textured paper, soft-focus optical rendering, and subtle handmade print irregularity; edges: deliberate
-    and subject-dependent, without a copied layout.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    finish: textured paper, soft-focus optical rendering, and subtle handmade print irregularity; edges: deliberate
-    and subject-dependent, without a copied layout.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish: textured
+    paper, soft-focus optical rendering, and subtle handmade print irregularity; edges: deliberate and subject-dependent,
+    without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: finish:
+    textured paper, soft-focus optical rendering, and subtle handmade print irregularity; edges: deliberate and
+    subject-dependent, without a copied layout.'
   evidence:
     source_ids:
     - source-pictorialism-primary-source
@@ -94,14 +89,14 @@ rules:
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
   instruction: 'Render the requested materials using these package-specific surface decisions: density: visible
-    at the paper and tonal transitions, never a heavy digital grain overlay; placement: concentrated where
-    the medium or material needs explanation. Preserve detail hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
-    visible at the paper and tonal transitions, never a heavy digital grain overlay; placement: concentrated
-    where the medium or material needs explanation.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    density: visible at the paper and tonal transitions, never a heavy digital grain overlay; placement: concentrated
-    where the medium or material needs explanation.'
+    at the paper and tonal transitions, never a heavy digital grain overlay; placement: concentrated where the
+    medium or material needs explanation. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density: visible
+    at the paper and tonal transitions, never a heavy digital grain overlay; placement: concentrated where the
+    medium or material needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: density:
+    visible at the paper and tonal transitions, never a heavy digital grain overlay; placement: concentrated where
+    the medium or material needs explanation.'
   evidence:
     source_ids:
     - source-pictorialism-primary-source
@@ -119,10 +114,9 @@ joint_checks:
   - composition
   - palette
   - lighting
-  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
-    preserving the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-pictorialism-primary-source
   kind: primary
@@ -144,6 +138,6 @@ execution:
   - copying a specific reference composition
   - copied composition
   - named character or branded asset
-  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
-    protected game asset.
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or protected
+    game asset.
   - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
