@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: vivian-maier-direction
+name: 维维安·迈尔
+base_package: photographers/vivian-maier
+scope:
+  medium: 中画幅双反或等效中画幅取景; 自然街头距离; 方形或近方形画面倾向
+  representation: recognizable
+  description: 以中画幅街头观察、人物与城市细节的偶然关系、方形或接近方形构图和自然光影记录日常，不把被摄者包装成广告人物。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - fashion_pose
+  - staged_advertising
+  - exact_archive_reconstruction
+  - privacy_intrusion
+pillars:
+- 以中画幅街头观察、人物与城市细节的偶然关系、方形或接近方形构图和自然光影记录日常，不把被摄者包装成广告人物。
+- 'medium: 中画幅双反或等效中画幅取景; 自然街头距离; 方形或近方形画面倾向'
+- 'composition: 画面重视偶然瞬间和边缘关系; 人物与建筑、橱窗或路面共同构成场景; 保留自然裁切和适度空白'
+- 'palette: 黑白银盐或克制彩色胶片; 肤色与环境保持真实; 颜色不被复古滤镜统一染色'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 中画幅双反或等效中画幅取景;
+    自然街头距离; 方形或近方形画面倾向.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 中画幅双反或等效中画幅取景;
+    自然街头距离; 方形或近方形画面倾向.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    中画幅双反或等效中画幅取景; 自然街头距离; 方形或近方形画面倾向.'
+  evidence:
+    source_ids:
+    - source-vivian-maier-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 画面重视偶然瞬间和边缘关系;
+    人物与建筑、橱窗或路面共同构成场景; 保留自然裁切和适度空白. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 画面重视偶然瞬间和边缘关系; 人物与建筑、橱窗或路面共同构成场景;
+    保留自然裁切和适度空白.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 画面重视偶然瞬间和边缘关系;
+    人物与建筑、橱窗或路面共同构成场景; 保留自然裁切和适度空白.'
+  evidence:
+    source_ids:
+    - source-vivian-maier-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑白银盐或克制彩色胶片; 肤色与环境保持真实; 颜色不被复古滤镜统一染色.
+    Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑白银盐或克制彩色胶片; 肤色与环境保持真实; 颜色不被复古滤镜统一染色.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑白银盐或克制彩色胶片; 肤色与环境保持真实; 颜色不被复古滤镜统一染色.'
+  evidence:
+    source_ids:
+    - source-vivian-maier-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 自然日光、阴影和室内窗光; 高光不过曝，暗部保留信息; 不使用棚拍轮廓光. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 自然日光、阴影和室内窗光; 高光不过曝，暗部保留信息;
+    不使用棚拍轮廓光.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 自然日光、阴影和室内窗光; 高光不过曝，暗部保留信息;
+    不使用棚拍轮廓光.'
+  evidence:
+    source_ids:
+    - source-vivian-maier-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 银盐颗粒或彩色胶片层次;
+    衣物、墙面和路面保持纪录性细节. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 银盐颗粒或彩色胶片层次;
+    衣物、墙面和路面保持纪录性细节.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    银盐颗粒或彩色胶片层次; 衣物、墙面和路面保持纪录性细节.'
+  evidence:
+    source_ids:
+    - source-vivian-maier-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 颗粒和扫描变化轻微可见;
+    不添加数字噪声或磨皮. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 颗粒和扫描变化轻微可见;
+    不添加数字噪声或磨皮.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    颗粒和扫描变化轻微可见; 不添加数字噪声或磨皮.'
+  evidence:
+    source_ids:
+    - source-vivian-maier-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-vivian-maier-primary-source
+  kind: primary
+  base_asset_id: vivian-maier-primary-source
+execution:
+  route: text_only
+  must:
+  - 先观察人物与环境的瞬间关系
+  - 保留真实距离和偶然遮挡
+  - 控制曝光而不美化肤色
+  - 最后检查是否过度摆拍或侵犯隐私
+  - 观察感来自时机和构图，不来自戏剧化摆拍
+  - 人物尊重和匿名化
+  - 不复制档案中的人物和地点
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - fashion_pose
+  - staged_advertising
+  - exact_archive_reconstruction
+  - privacy_intrusion
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
