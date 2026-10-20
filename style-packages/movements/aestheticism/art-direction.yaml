@@ -1,0 +1,177 @@
+schema_version: 2.1.0
+status: experimental
+id: aestheticism-direction
+name: 唯美主义
+base_package: movements/aestheticism
+scope:
+  medium: integrated painting, interior, furniture, textile, ceramic, and graphic sensibility
+  representation: stylized
+  description: 以艺术整体性、感官表面、装饰性统一和克制的不对称关系组织图像、物件与空间。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named artist or branded asset
+  - recurring peacock, Japanese object, Victorian room, or floral motif
+pillars:
+- 以艺术整体性、感官表面、装饰性统一和克制的不对称关系组织图像、物件与空间。
+- 'medium: integrated painting, interior, furniture, textile, ceramic, and graphic sensibility'
+- 'composition: Treat subject, support, ornament, and surrounding space as one integrated visual environment.;
+  Use controlled asymmetry, clear framing, and a deliberate relation between flat pattern and depth.'
+- 'palette: Pair muted mineral or botanical tones with one rich accent; keep the whole system harmonized.'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: integrated
+    painting, interior, furniture, textile, ceramic, and graphic sensibility.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: integrated
+    painting, interior, furniture, textile, ceramic, and graphic sensibility.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    integrated painting, interior, furniture, textile, ceramic, and graphic sensibility.'
+  evidence:
+    source_ids:
+    - source-aestheticism-vam
+    - source-aestheticism-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Treat subject,
+    support, ornament, and surrounding space as one integrated visual environment.; Use controlled asymmetry,
+    clear framing, and a deliberate relation between flat pattern and depth.. Preserve the user-provided content
+    and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Treat subject, support,
+    ornament, and surrounding space as one integrated visual environment.; Use controlled asymmetry, clear
+    framing, and a deliberate relation between flat pattern and depth..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Treat subject,
+    support, ornament, and surrounding space as one integrated visual environment.; Use controlled asymmetry,
+    clear framing, and a deliberate relation between flat pattern and depth..'
+  evidence:
+    source_ids:
+    - source-aestheticism-vam
+    - source-aestheticism-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Pair muted mineral or botanical tones
+    with one rich accent; keep the whole system harmonized.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Pair muted mineral or botanical
+    tones with one rich accent; keep the whole system harmonized..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Pair muted mineral or botanical tones with one rich accent; keep the whole system harmonized..'
+  evidence:
+    source_ids:
+    - source-aestheticism-vam
+    - source-aestheticism-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: soft, even, and sensuous; behavior: Reveal
+    surface and color relationships without theatrical spotlighting.; behavior: Let background and object share
+    a designed tonal family while retaining depth.. Keep light coherent with the requested subject, medium,
+    and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: soft, even, and sensuous;
+    behavior: Reveal surface and color relationships without theatrical spotlighting.; behavior: Let background
+    and object share a designed tonal family while retaining depth..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: soft, even, and
+    sensuous; behavior: Reveal surface and color relationships without theatrical spotlighting.; behavior:
+    Let background and object share a designed tonal family while retaining depth..'
+  evidence:
+    source_ids:
+    - source-aestheticism-vam
+    - source-aestheticism-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: refined,
+    tactile, decorative, and materially specific; edges: elegant contours, selective pattern boundaries, no
+    random ornament. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    refined, tactile, decorative, and materially specific; edges: elegant contours, selective pattern boundaries,
+    no random ornament.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: refined, tactile, decorative, and materially specific; edges: elegant contours, selective pattern
+    boundaries, no random ornament.'
+  evidence:
+    source_ids:
+    - source-aestheticism-vam
+    - source-aestheticism-met
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium
+    and rhythmically distributed; placement: textiles, ceramic, wood, metal, paper, or wall surface according
+    to the supplied subject. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium and rhythmically distributed; placement: textiles, ceramic, wood, metal, paper, or wall surface
+    according to the supplied subject.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium and rhythmically distributed; placement: textiles, ceramic, wood, metal, paper, or wall
+    surface according to the supplied subject.'
+  evidence:
+    source_ids:
+    - source-aestheticism-vam
+    - source-aestheticism-met
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-aestheticism-vam
+  kind: primary
+  base_asset_id: aestheticism-vam
+- id: source-aestheticism-met
+  kind: secondary
+  base_asset_id: aestheticism-met
+execution:
+  route: text_only
+  must:
+  - keep the supplied subject authoritative
+  - define a tonal and material family for subject and surroundings
+  - coordinate pattern scale, silhouette, negative space, and surface response
+  - use selective ornament rather than filling every empty area
+  - resolve the image as one environment with clear object hierarchy
+  - establish the supplied subject and its surrounding field
+  - choose a restrained palette with one accent
+  - coordinate silhouette, pattern scale, material gloss, and negative space
+  avoid:
+  - fixed peacocks, Japanese objects, Victorian rooms, or floral wallpaper
+  - random luxury decoration
+  - glossy generic fashion-advertising finish
+  - flat color filter without material and proportional reasoning
+  - copied composition
+  - named artist or branded asset
+  - recurring peacock, Japanese object, Victorian room, or floral motif
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
