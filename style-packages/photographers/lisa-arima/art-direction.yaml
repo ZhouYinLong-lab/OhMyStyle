@@ -1,0 +1,159 @@
+schema_version: 2.1.0
+status: experimental
+id: lisa-arima-direction
+name: 丽莎·有马
+base_package: photographers/lisa-arima
+scope:
+  medium: contemporary natural-light photography
+  representation: recognizable
+  description: 以清透自然光、克制的胶片色彩和日常瞬间的轻微距离感组织新的摄影主题，强调光线而非固定场景。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - fixed seaside or summer setting
+  - named character or branded asset
+pillars:
+- 以清透自然光、克制的胶片色彩和日常瞬间的轻微距离感组织新的摄影主题，强调光线而非固定场景。
+- 'medium: contemporary natural-light photography'
+- 'composition: open negative space and an unforced off-center subject; ordinary details remain visible without
+  becoming a catalog display; candid or gently observed posture when people are requested'
+- 'palette: clean whites, washed blues, natural greens, quiet neutrals, and believable skin; restrained warm/cool
+  separation rather than a fixed two-color scheme'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: contemporary
+    natural-light photography.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: contemporary
+    natural-light photography.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    contemporary natural-light photography.'
+  evidence:
+    source_ids:
+    - source-lisa-arima-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: open negative
+    space and an unforced off-center subject; ordinary details remain visible without becoming a catalog display;
+    candid or gently observed posture when people are requested. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: open negative space
+    and an unforced off-center subject; ordinary details remain visible without becoming a catalog display;
+    candid or gently observed posture when people are requested.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: open negative
+    space and an unforced off-center subject; ordinary details remain visible without becoming a catalog display;
+    candid or gently observed posture when people are requested.'
+  evidence:
+    source_ids:
+    - source-lisa-arima-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: clean whites, washed blues, natural
+    greens, quiet neutrals, and believable skin; restrained warm/cool separation rather than a fixed two-color
+    scheme. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: clean whites, washed blues,
+    natural greens, quiet neutrals, and believable skin; restrained warm/cool separation rather than a fixed
+    two-color scheme.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    clean whites, washed blues, natural greens, quiet neutrals, and believable skin; restrained warm/cool separation
+    rather than a fixed two-color scheme.'
+  evidence:
+    source_ids:
+    - source-lisa-arima-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: soft ambient daylight, window light, or overcast
+    diffusion; controlled highlights with gentle transitions into cool shadow. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: soft ambient daylight, window
+    light, or overcast diffusion; controlled highlights with gentle transitions into cool shadow.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: soft ambient daylight,
+    window light, or overcast diffusion; controlled highlights with gentle transitions into cool shadow.'
+  evidence:
+    source_ids:
+    - source-lisa-arima-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: real material
+    response with light film-like color compression. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: real material
+    response with light film-like color compression.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    real material response with light film-like color compression.'
+  evidence:
+    source_ids:
+    - source-lisa-arima-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: edge-behavior
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: natural edges,
+    no glow outline, no synthetic bloom halo. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: natural
+    edges, no glow outline, no synthetic bloom halo.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    natural edges, no glow outline, no synthetic bloom halo.'
+  evidence:
+    source_ids:
+    - source-lisa-arima-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- edge-behavior
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-lisa-arima-primary-source
+  kind: primary
+  base_asset_id: lisa-arima-primary-source
+execution:
+  route: text_only
+  must:
+  - Translate the user's subject, location, objects, and narrative literally.
+  - Find a gentle environmental light source rather than inventing a studio effect.
+  - Keep a little visual breathing room and let ordinary details remain ordinary.
+  - Use low-to-medium contrast, clean color separation, and gentle highlight roll-off.
+  - Check that skin, fabric, glass, paper, wood, plants, or architecture retain their own material identity.
+  - Preserve the user's subject, location, object count, and narrative.
+  - Never add a recurring seaside, summer, school-uniform, or young-woman motif.
+  - Never copy a named photograph, pose, crop, or recognizable layout.
+  avoid:
+  - copied composition
+  - fixed seaside or summer setting
+  - named character or branded asset
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
