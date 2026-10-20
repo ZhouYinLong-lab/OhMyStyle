@@ -1,0 +1,152 @@
+schema_version: 2.1.0
+status: experimental
+id: cel-shaded-nature-game-art-direction
+name: 卡通渲染自然冒险游戏美术
+base_package: game-art/cel-shaded-nature-game-art
+scope:
+  medium: 三维模型结合平面化着色; 局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一
+  representation: stylized
+  description: 以平面化明暗、清晰轮廓和书法式形体组织三维自然冒险场景，强调图形设计与手绘质感的协同。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - photorealistic_pbr
+  - generic_anime_screenshot
+  - copied_named_character
+  - uncontrolled_ink_noise
+pillars:
+- 以平面化明暗、清晰轮廓和书法式形体组织三维自然冒险场景，强调图形设计与手绘质感的协同。
+- 'medium: 三维模型结合平面化着色; 局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一'
+- 'composition: 以清晰前中后景和大块轮廓组织空间; 让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立'
+- 'palette: 自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜; 明暗分区优先于细密渐变'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 三维模型结合平面化着色;
+    局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 三维模型结合平面化着色;
+    局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    三维模型结合平面化着色; 局部保留手绘笔触或纸墨边缘; 轮廓与材质由图形语言统一.'
+  evidence:
+    source_ids:
+    - source-cel-shaded-nature-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 以清晰前中后景和大块轮廓组织空间;
+    让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 以清晰前中后景和大块轮廓组织空间;
+    让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 以清晰前中后景和大块轮廓组织空间;
+    让路径、树枝、山脊或建筑线条承担视线引导; 主体轮廓先于细节建立.'
+  evidence:
+    source_ids:
+    - source-cel-shaded-nature-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜;
+    明暗分区优先于细密渐变. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜;
+    明暗分区优先于细密渐变.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    自然绿、土黄、朱红、群青和墨色形成有限色组; 高饱和色用于焦点和自然能量，不做全局滤镜; 明暗分区优先于细密渐变.'
+  evidence:
+    source_ids:
+    - source-cel-shaded-nature-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 使用分段明暗而非连续写实渐变; 日光、月光或神秘光源形成明确色温关系; 阴影保持形状清楚. Keep
+    light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 使用分段明暗而非连续写实渐变; 日光、月光或神秘光源形成明确色温关系;
+    阴影保持形状清楚.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 使用分段明暗而非连续写实渐变; 日光、月光或神秘光源形成明确色温关系;
+    阴影保持形状清楚.'
+  evidence:
+    source_ids:
+    - source-cel-shaded-nature-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 木、石、叶片和布料各自保留简化但可辨的表面逻辑;
+    高光面积受控. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 木、石、叶片和布料各自保留简化但可辨的表面逻辑;
+    高光面积受控.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    木、石、叶片和布料各自保留简化但可辨的表面逻辑; 高光面积受控.'
+  evidence:
+    source_ids:
+    - source-cel-shaded-nature-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纹理跟随材质方向，避免随机噪点;
+    边缘可有少量手绘破笔但不能覆盖轮廓. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纹理跟随材质方向，避免随机噪点;
+    边缘可有少量手绘破笔但不能覆盖轮廓.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纹理跟随材质方向，避免随机噪点; 边缘可有少量手绘破笔但不能覆盖轮廓.'
+  evidence:
+    source_ids:
+    - source-cel-shaded-nature-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-cel-shaded-nature-game-art-primary-source
+  kind: primary
+  base_asset_id: cel-shaded-nature-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先搭建可读空间和主体剪影
+  - 再划分大块色面与光照带
+  - 最后加入少量材质笔触和环境细节
+  - 以轮廓、明暗和色组检查统一性
+  - 三维空间仍然可信
+  - 明暗块面和轮廓优先
+  - 不得复制来源游戏的角色、标志或构图
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic_pbr
+  - generic_anime_screenshot
+  - copied_named_character
+  - uncontrolled_ink_noise
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
