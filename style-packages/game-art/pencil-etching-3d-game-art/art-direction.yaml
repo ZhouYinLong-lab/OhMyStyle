@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: pencil-etching-3d-game-art-direction
+name: 铅笔排线与蚀刻感三维游戏美术
+base_package: game-art/pencil-etching-3d-game-art
+scope:
+  medium: 三维形体叠加手绘铅笔与排线; 边缘与体积由线条共同确定
+  representation: stylized
+  description: 在三维场景表面以铅笔、炭笔或刻线般的方向性线条建立灰度、形体和纸面触感，而非依赖光滑渐变。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - smooth gradient-only shading
+  - random crosshatching
+  - unreadable fine lines
+pillars:
+- 在三维场景表面以铅笔、炭笔或刻线般的方向性线条建立灰度、形体和纸面触感，而非依赖光滑渐变。
+- 'medium: 三维形体叠加手绘铅笔与排线; 边缘与体积由线条共同确定'
+- 'composition: 三维体块仍有明确透视和遮挡; 线条方向解释表面朝向'
+- 'palette: 以灰阶为主并可保留少量手工色; 明度由线密度与少量色块建立'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 三维形体叠加手绘铅笔与排线;
+    边缘与体积由线条共同确定.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 三维形体叠加手绘铅笔与排线;
+    边缘与体积由线条共同确定.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    三维形体叠加手绘铅笔与排线; 边缘与体积由线条共同确定.'
+  evidence:
+    source_ids:
+    - source-pencil-etching-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 三维体块仍有明确透视和遮挡;
+    线条方向解释表面朝向. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 三维体块仍有明确透视和遮挡; 线条方向解释表面朝向.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 三维体块仍有明确透视和遮挡;
+    线条方向解释表面朝向.'
+  evidence:
+    source_ids:
+    - source-pencil-etching-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 以灰阶为主并可保留少量手工色; 明度由线密度与少量色块建立. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 以灰阶为主并可保留少量手工色; 明度由线密度与少量色块建立.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    以灰阶为主并可保留少量手工色; 明度由线密度与少量色块建立.'
+  evidence:
+    source_ids:
+    - source-pencil-etching-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 侧光帮助线条塑造体积; 避免连续高光抹掉线性结构. Keep light coherent with
+    the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 侧光帮助线条塑造体积; 避免连续高光抹掉线性结构.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 侧光帮助线条塑造体积; 避免连续高光抹掉线性结构.'
+  evidence:
+    source_ids:
+    - source-pencil-etching-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纸面颗粒、铅笔断线和轻微擦痕;
+    轮廓保持稳定. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纸面颗粒、铅笔断线和轻微擦痕;
+    轮廓保持稳定.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纸面颗粒、铅笔断线和轻微擦痕; 轮廓保持稳定.'
+  evidence:
+    source_ids:
+    - source-pencil-etching-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 交叉排线沿面向变化; 细线随镜头距离减少.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 交叉排线沿面向变化;
+    细线随镜头距离减少.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    交叉排线沿面向变化; 细线随镜头距离减少.'
+  evidence:
+    source_ids:
+    - source-pencil-etching-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-pencil-etching-3d-game-art-primary-source
+  kind: primary
+  base_asset_id: pencil-etching-3d-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 搭建清楚三维空间
+  - 按平面朝向安排排线
+  - 用交叉线密度构成明暗
+  - 保留少量纸面擦痕
+  - 移动与缩放检查线条闪烁
+  - 三维空间仍可读
+  - 线密度服务形体与阴影
+  - 不复刻具体游戏场景
+  avoid:
+  - smooth gradient-only shading
+  - random crosshatching
+  - unreadable fine lines
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
