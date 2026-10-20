@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "root": "style-packages",
   "counts": {
-    "PASS": 220,
+    "PASS": 406,
     "WARN": 0,
     "FAIL": 0
   },
@@ -10,6 +10,28 @@
     {
       "package": "style-packages/artists/agnes-martin",
       "image": "style-packages/artists/agnes-martin/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/albrecht-durer",
+      "image": "style-packages/artists/albrecht-durer/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/alphonse-mucha",
+      "image": "style-packages/artists/alphonse-mucha/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,
@@ -41,6 +63,39 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/aubrey-beardsley",
+      "image": "style-packages/artists/aubrey-beardsley/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/berthe-morisot",
+      "image": "style-packages/artists/berthe-morisot/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/bridget-riley",
+      "image": "style-packages/artists/bridget-riley/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/caravaggio",
       "image": "style-packages/artists/caravaggio/gallery-16x9.jpg",
       "status": "PASS",
@@ -52,12 +107,34 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/caspar-david-friedrich",
+      "image": "style-packages/artists/caspar-david-friedrich/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/claude-monet",
       "image": "style-packages/artists/claude-monet/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 640,
       "height": 360,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/diego-rivera",
+      "image": "style-packages/artists/diego-rivera/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -80,6 +157,17 @@
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/edouard-manet",
+      "image": "style-packages/artists/edouard-manet/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -129,6 +217,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/el-lissitzky",
+      "image": "style-packages/artists/el-lissitzky/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/eugene-delacroix",
       "image": "style-packages/artists/eugene-delacroix/gallery-16x9.jpg",
       "status": "PASS",
@@ -137,6 +236,17 @@
       "height": 720,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/francis-bacon",
+      "image": "style-packages/artists/francis-bacon/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
       "readme_reference": true
     },
     {
@@ -162,6 +272,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/frida-kahlo",
+      "image": "style-packages/artists/frida-kahlo/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/georges-seurat",
       "image": "style-packages/artists/georges-seurat/gallery-16x9.jpg",
       "status": "PASS",
@@ -184,6 +305,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/gerhard-richter",
+      "image": "style-packages/artists/gerhard-richter/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/giorgio-de-chirico",
       "image": "style-packages/artists/giorgio-de-chirico/gallery-16x9.jpg",
       "status": "PASS",
@@ -192,6 +324,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/giorgio-morandi",
+      "image": "style-packages/artists/giorgio-morandi/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -228,6 +371,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/gustave-moreau",
+      "image": "style-packages/artists/gustave-moreau/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/henri-matisse",
       "image": "style-packages/artists/henri-matisse/gallery-16x9.jpg",
       "status": "PASS",
@@ -236,6 +390,17 @@
       "height": 720,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/henri-rousseau",
+      "image": "style-packages/artists/henri-rousseau/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
       "readme_reference": true
     },
     {
@@ -272,6 +437,28 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/jean-auguste-dominique-ingres",
+      "image": "style-packages/artists/jean-auguste-dominique-ingres/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/jean-michel-basquiat",
+      "image": "style-packages/artists/jean-michel-basquiat/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/jmw-turner",
       "image": "style-packages/artists/jmw-turner/gallery-16x9.jpg",
       "status": "PASS",
@@ -294,12 +481,67 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/joan-mitchell",
+      "image": "style-packages/artists/joan-mitchell/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/joaquin-sorolla",
+      "image": "style-packages/artists/joaquin-sorolla/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/johannes-vermeer",
       "image": "style-packages/artists/johannes-vermeer/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 640,
       "height": 360,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/kathe-kollwitz",
+      "image": "style-packages/artists/kathe-kollwitz/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/katsushika-hokusai",
+      "image": "style-packages/artists/katsushika-hokusai/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/kazimir-malevich",
+      "image": "style-packages/artists/kazimir-malevich/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -327,8 +569,41 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/louise-bourgeois",
+      "image": "style-packages/artists/louise-bourgeois/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/marc-chagall",
+      "image": "style-packages/artists/marc-chagall/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/mary-cassatt",
       "image": "style-packages/artists/mary-cassatt/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/mc-escher",
+      "image": "style-packages/artists/mc-escher/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,
@@ -344,6 +619,28 @@
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/moholy-nagy",
+      "image": "style-packages/artists/moholy-nagy/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/nicolas-de-stael",
+      "image": "style-packages/artists/nicolas-de-stael/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -393,6 +690,28 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/paul-klee",
+      "image": "style-packages/artists/paul-klee/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/peter-paul-rubens",
+      "image": "style-packages/artists/peter-paul-rubens/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/pierre-auguste-renoir",
       "image": "style-packages/artists/pierre-auguste-renoir/gallery-16x9.jpg",
       "status": "PASS",
@@ -401,6 +720,28 @@
       "height": 720,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/pierre-bonnard",
+      "image": "style-packages/artists/pierre-bonnard/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/piet-mondrian",
+      "image": "style-packages/artists/piet-mondrian/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
       "readme_reference": true
     },
     {
@@ -437,8 +778,30 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/rene-magritte",
+      "image": "style-packages/artists/rene-magritte/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/romare-bearden",
       "image": "style-packages/artists/romare-bearden/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/salvador-dali",
+      "image": "style-packages/artists/salvador-dali/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,
@@ -459,6 +822,28 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/artists/sofonisba-anguissola",
+      "image": "style-packages/artists/sofonisba-anguissola/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/sonia-delaunay",
+      "image": "style-packages/artists/sonia-delaunay/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/artists/tamara-de-lempicka",
       "image": "style-packages/artists/tamara-de-lempicka/gallery-16x9.jpg",
       "status": "PASS",
@@ -467,6 +852,28 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/titian",
+      "image": "style-packages/artists/titian/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/utagawa-hiroshige",
+      "image": "style-packages/artists/utagawa-hiroshige/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -487,6 +894,72 @@
       "messages": [],
       "width": 640,
       "height": 360,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/yayoi-kusama",
+      "image": "style-packages/artists/yayoi-kusama/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/artists/yves-klein",
+      "image": "style-packages/artists/yves-klein/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/2d-character-3d-world-game-art",
+      "image": "style-packages/game-art/2d-character-3d-world-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/abstract-geometric-neon-game-art",
+      "image": "style-packages/game-art/abstract-geometric-neon-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/ascii-character-game-art",
+      "image": "style-packages/game-art/ascii-character-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/braid-hand-painted-puzzle",
+      "image": "style-packages/game-art/braid-hand-painted-puzzle/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -514,8 +987,30 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/chibi-superdeformed-3d-game-art",
+      "image": "style-packages/game-art/chibi-superdeformed-3d-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/cinematic-pixel-adventure",
       "image": "style-packages/game-art/cinematic-pixel-adventure/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/collage-mixed-media-game-art",
+      "image": "style-packages/game-art/collage-mixed-media-game-art/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1280,
@@ -547,6 +1042,39 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/cosmic-horror-biomechanical-game-art",
+      "image": "style-packages/game-art/cosmic-horror-biomechanical-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/cuphead-rubber-hose-animation",
+      "image": "style-packages/game-art/cuphead-rubber-hose-animation/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/cutout-2-5d-stage-game-art",
+      "image": "style-packages/game-art/cutout-2-5d-stage-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/cyberpunk-night-city",
       "image": "style-packages/game-art/cyberpunk-night-city/gallery-16x9.jpg",
       "status": "PASS",
@@ -555,6 +1083,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/dark-fairytale-grotesque-game-art",
+      "image": "style-packages/game-art/dark-fairytale-grotesque-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -569,6 +1108,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/dieselpunk-industrial-game-art",
+      "image": "style-packages/game-art/dieselpunk-industrial-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/disco-elysium-painterly-noir",
       "image": "style-packages/game-art/disco-elysium-painterly-noir/gallery-16x9.jpg",
       "status": "PASS",
@@ -580,6 +1130,28 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/dry-media-pastel-game-art",
+      "image": "style-packages/game-art/dry-media-pastel-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/early-2000s-glossy-3d-game-art",
+      "image": "style-packages/game-art/early-2000s-glossy-3d-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/elden-ring-dark-fantasy",
       "image": "style-packages/game-art/elden-ring-dark-fantasy/gallery-16x9.jpg",
       "status": "PASS",
@@ -588,6 +1160,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/exaggerated-cartoon-3d-game-art",
+      "image": "style-packages/game-art/exaggerated-cartoon-3d-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -613,6 +1196,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/gris-watercolor-game-art",
+      "image": "style-packages/game-art/gris-watercolor-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/hades-mythic-illustration",
       "image": "style-packages/game-art/hades-mythic-illustration/gallery-16x9.jpg",
       "status": "PASS",
@@ -621,6 +1215,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/hand-drawn-linework-game-art",
+      "image": "style-packages/game-art/hand-drawn-linework-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -635,6 +1240,50 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/hand-painted-isometric-strategy",
+      "image": "style-packages/game-art/hand-painted-isometric-strategy/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/hand-painted-low-poly-game-art",
+      "image": "style-packages/game-art/hand-painted-low-poly-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/hand-painted-point-and-click",
+      "image": "style-packages/game-art/hand-painted-point-and-click/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/hd-2d-pixel-cg-game-art",
+      "image": "style-packages/game-art/hd-2d-pixel-cg-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/hi-fi-rush-rhythm-comic",
       "image": "style-packages/game-art/hi-fi-rush-rhythm-comic/gallery-16x9.jpg",
       "status": "PASS",
@@ -643,6 +1292,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/high-density-modern-pixel-game-art",
+      "image": "style-packages/game-art/high-density-modern-pixel-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -668,6 +1328,39 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/ink-wash-adventure",
+      "image": "style-packages/game-art/ink-wash-adventure/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/inside-minimalist-silhouette",
+      "image": "style-packages/game-art/inside-minimalist-silhouette/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/island-cel-shaded-game-art",
+      "image": "style-packages/game-art/island-cel-shaded-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/isometric-pixel-tactics",
       "image": "style-packages/game-art/isometric-pixel-tactics/gallery-16x9.jpg",
       "status": "PASS",
@@ -679,6 +1372,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/japanese-cel-shaded-action-game-art",
+      "image": "style-packages/game-art/japanese-cel-shaded-action-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/journey-minimalist-desert",
       "image": "style-packages/game-art/journey-minimalist-desert/gallery-16x9.jpg",
       "status": "PASS",
@@ -687,6 +1391,39 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/kentucky-route-zero-scenographic-game-art",
+      "image": "style-packages/game-art/kentucky-route-zero-scenographic-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/last-of-us-cinematic-survival",
+      "image": "style-packages/game-art/last-of-us-cinematic-survival/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/layered-parallax-storybook-game-art",
+      "image": "style-packages/game-art/layered-parallax-storybook-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -712,6 +1449,50 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/monochrome-1bit-deduction-game-art",
+      "image": "style-packages/game-art/monochrome-1bit-deduction-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/monochrome-3d-value-game-art",
+      "image": "style-packages/game-art/monochrome-3d-value-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/monument-valley-impossible-geometry",
+      "image": "style-packages/game-art/monument-valley-impossible-geometry/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/naturalistic-realism-game-art",
+      "image": "style-packages/game-art/naturalistic-realism-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/neon-noir-3d-game-art",
       "image": "style-packages/game-art/neon-noir-3d-game-art/gallery-16x9.jpg",
       "status": "PASS",
@@ -720,6 +1501,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/okami-sumi-e-game-art",
+      "image": "style-packages/game-art/okami-sumi-e-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -734,8 +1526,41 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/origami-folded-paper-game-art",
+      "image": "style-packages/game-art/origami-folded-paper-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/painterly-3d-fantasy-game-art",
       "image": "style-packages/game-art/painterly-3d-fantasy-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/painterly-frame-animation-game-art",
+      "image": "style-packages/game-art/painterly-frame-animation-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/paper-cut-puppet-game-art",
+      "image": "style-packages/game-art/paper-cut-puppet-game-art/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,
@@ -756,12 +1581,155 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/pencil-etching-3d-game-art",
+      "image": "style-packages/game-art/pencil-etching-3d-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/pentiment-medieval-manuscript-game-art",
+      "image": "style-packages/game-art/pentiment-medieval-manuscript-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/persona-3-reload",
+      "image": "style-packages/game-art/persona-3-reload/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/persona-4-golden",
+      "image": "style-packages/game-art/persona-4-golden/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/persona-5-royal",
+      "image": "style-packages/game-art/persona-5-royal/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/pre-rendered-isometric-environment-game-art",
+      "image": "style-packages/game-art/pre-rendered-isometric-environment-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/ps1-survival-horror-low-poly",
+      "image": "style-packages/game-art/ps1-survival-horror-low-poly/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/qinglv-landscape-scroll-game-art",
+      "image": "style-packages/game-art/qinglv-landscape-scroll-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/real-time-brushstroke-3d-game-art",
+      "image": "style-packages/game-art/real-time-brushstroke-3d-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/retro-3d-console",
+      "image": "style-packages/game-art/retro-3d-console/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/retrofuturist-atomic-age-game-art",
+      "image": "style-packages/game-art/retrofuturist-atomic-age-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/rotoscoped-action-game-art",
+      "image": "style-packages/game-art/rotoscoped-action-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/rpg-maker-pixel-art",
       "image": "style-packages/game-art/rpg-maker-pixel-art/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 640,
       "height": 360,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/shadow-of-the-colossus-atmospheric-3d",
+      "image": "style-packages/game-art/shadow-of-the-colossus-atmospheric-3d/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -786,6 +1754,50 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/solarpunk-ecological-game-art",
+      "image": "style-packages/game-art/solarpunk-ecological-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/spiritfarer-hand-drawn-game-art",
+      "image": "style-packages/game-art/spiritfarer-hand-drawn-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/stained-glass-panel-game-art",
+      "image": "style-packages/game-art/stained-glass-panel-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/steampunk-industrial-game-art",
+      "image": "style-packages/game-art/steampunk-industrial-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -866,6 +1878,39 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/game-art/woodcut-print-game-art",
+      "image": "style-packages/game-art/woodcut-print-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/wuxia-jianghu-game-art",
+      "image": "style-packages/game-art/wuxia-jianghu-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/game-art/yarn-felt-textile-game-art",
+      "image": "style-packages/game-art/yarn-felt-textile-game-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/game-art/zx-spectrum-attribute-pixel",
       "image": "style-packages/game-art/zx-spectrum-attribute-pixel/gallery-16x9.jpg",
       "status": "PASS",
@@ -888,12 +1933,56 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/aestheticism",
+      "image": "style-packages/movements/aestheticism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/american-luminism",
+      "image": "style-packages/movements/american-luminism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/art-brut",
+      "image": "style-packages/movements/art-brut/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/movements/art-deco",
       "image": "style-packages/movements/art-deco/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/art-informel",
+      "image": "style-packages/movements/art-informel/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -907,6 +1996,17 @@
       "height": 720,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/arte-povera",
+      "image": "style-packages/movements/arte-povera/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
       "readme_reference": true
     },
     {
@@ -945,6 +2045,39 @@
     {
       "package": "style-packages/movements/brutalism",
       "image": "style-packages/movements/brutalism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/byzantine-art",
+      "image": "style-packages/movements/byzantine-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/chinese-literati-ink-painting",
+      "image": "style-packages/movements/chinese-literati-ink-painting/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/color-field-painting",
+      "image": "style-packages/movements/color-field-painting/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,
@@ -1020,6 +2153,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/deconstructivist-architecture",
+      "image": "style-packages/movements/deconstructivist-architecture/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/movements/expressionism",
       "image": "style-packages/movements/expressionism/gallery-16x9.jpg",
       "status": "PASS",
@@ -1033,6 +2177,28 @@
     {
       "package": "style-packages/movements/farmhouse-cottagecore",
       "image": "style-packages/movements/farmhouse-cottagecore/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/fauvism",
+      "image": "style-packages/movements/fauvism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/fluxus",
+      "image": "style-packages/movements/fluxus/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,
@@ -1196,6 +2362,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/lyrical-abstraction",
+      "image": "style-packages/movements/lyrical-abstraction/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/movements/magic-realism",
       "image": "style-packages/movements/magic-realism/gallery-16x9.jpg",
       "status": "PASS",
@@ -1229,6 +2406,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/mexican-muralism",
+      "image": "style-packages/movements/mexican-muralism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/movements/mid-century-modern",
       "image": "style-packages/movements/mid-century-modern/gallery-16x9.jpg",
       "status": "PASS",
@@ -1242,6 +2430,39 @@
     {
       "package": "style-packages/movements/minimalism",
       "image": "style-packages/movements/minimalism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/mughal-miniature-painting",
+      "image": "style-packages/movements/mughal-miniature-painting/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/neo-dada",
+      "image": "style-packages/movements/neo-dada/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/neo-expressionism",
+      "image": "style-packages/movements/neo-expressionism/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,
@@ -1284,6 +2505,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/nihonga",
+      "image": "style-packages/movements/nihonga/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/movements/northern-renaissance",
       "image": "style-packages/movements/northern-renaissance/gallery-16x9.jpg",
       "status": "PASS",
@@ -1306,6 +2538,28 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/orientalism",
+      "image": "style-packages/movements/orientalism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/orphism",
+      "image": "style-packages/movements/orphism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/movements/photorealism",
       "image": "style-packages/movements/photorealism/gallery-16x9.jpg",
       "status": "PASS",
@@ -1314,6 +2568,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/pictorialism",
+      "image": "style-packages/movements/pictorialism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -1372,6 +2637,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/rayonism",
+      "image": "style-packages/movements/rayonism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/movements/realism",
       "image": "style-packages/movements/realism/gallery-16x9.jpg",
       "status": "PASS",
@@ -1405,6 +2681,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/romanesque-art",
+      "image": "style-packages/movements/romanesque-art/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/movements/romanticism",
       "image": "style-packages/movements/romanticism/gallery-16x9.jpg",
       "status": "PASS",
@@ -1424,6 +2711,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/situationist-international",
+      "image": "style-packages/movements/situationist-international/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -1504,6 +2802,28 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/tonalism",
+      "image": "style-packages/movements/tonalism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/ukiyo-e",
+      "image": "style-packages/movements/ukiyo-e/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/movements/utilitarian",
       "image": "style-packages/movements/utilitarian/gallery-16x9.jpg",
       "status": "PASS",
@@ -1537,6 +2857,50 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/movements/vienna-secession",
+      "image": "style-packages/movements/vienna-secession/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/movements/vorticism",
+      "image": "style-packages/movements/vorticism/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/alec-soth",
+      "image": "style-packages/photographers/alec-soth/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/alex-webb",
+      "image": "style-packages/photographers/alex-webb/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/alfred-stieglitz",
       "image": "style-packages/photographers/alfred-stieglitz/gallery-16x9.jpg",
       "status": "PASS",
@@ -1545,6 +2909,17 @@
       "height": 360,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/andreas-gursky",
+      "image": "style-packages/photographers/andreas-gursky/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
       "readme_reference": true
     },
     {
@@ -1559,6 +2934,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/august-sander",
+      "image": "style-packages/photographers/august-sander/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/berenice-abbott",
       "image": "style-packages/photographers/berenice-abbott/gallery-16x9.jpg",
       "status": "PASS",
@@ -1567,6 +2953,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/bruce-davidson",
+      "image": "style-packages/photographers/bruce-davidson/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -1625,6 +3022,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/elliott-erwitt",
+      "image": "style-packages/photographers/elliott-erwitt/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/emilie-hofferber",
       "image": "style-packages/photographers/emilie-hofferber/gallery-16x9.jpg",
       "status": "PASS",
@@ -1633,6 +3041,28 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/ernst-haas",
+      "image": "style-packages/photographers/ernst-haas/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/erwin-blumenfeld",
+      "image": "style-packages/photographers/erwin-blumenfeld/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -1669,6 +3099,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/garry-winogrand",
+      "image": "style-packages/photographers/garry-winogrand/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/gordon-parks",
       "image": "style-packages/photographers/gordon-parks/gallery-16x9.jpg",
       "status": "PASS",
@@ -1691,12 +3132,89 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/helen-levitt",
+      "image": "style-packages/photographers/helen-levitt/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/henri-cartier-bresson",
       "image": "style-packages/photographers/henri-cartier-bresson/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/hiroshi-sugimoto",
+      "image": "style-packages/photographers/hiroshi-sugimoto/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/imogen-cunningham",
+      "image": "style-packages/photographers/imogen-cunningham/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/irving-penn",
+      "image": "style-packages/photographers/irving-penn/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/joel-meyerowitz",
+      "image": "style-packages/photographers/joel-meyerowitz/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/josef-koudelka",
+      "image": "style-packages/photographers/josef-koudelka/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/josef-sudek",
+      "image": "style-packages/photographers/josef-sudek/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -1713,12 +3231,45 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/kikuji-kawada",
+      "image": "style-packages/photographers/kikuji-kawada/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/lee-friedlander",
+      "image": "style-packages/photographers/lee-friedlander/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/lewis-hine",
       "image": "style-packages/photographers/lewis-hine/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 640,
       "height": 360,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/lillian-bassman",
+      "image": "style-packages/photographers/lillian-bassman/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -1735,8 +3286,30 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/luigi-ghirri",
+      "image": "style-packages/photographers/luigi-ghirri/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/man-ray",
       "image": "style-packages/photographers/man-ray/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/martin-parr",
+      "image": "style-packages/photographers/martin-parr/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,
@@ -1768,6 +3341,28 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/michael-kenna",
+      "image": "style-packages/photographers/michael-kenna/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/miyako-ishiuchi",
+      "image": "style-packages/photographers/miyako-ishiuchi/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/nadar",
       "image": "style-packages/photographers/nadar/gallery-16x9.jpg",
       "status": "PASS",
@@ -1776,6 +3371,17 @@
       "height": 360,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/nan-goldin",
+      "image": "style-packages/photographers/nan-goldin/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
       "readme_reference": true
     },
     {
@@ -1801,6 +3407,17 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/raghubir-singh",
+      "image": "style-packages/photographers/raghubir-singh/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/rinko-kawauchi",
       "image": "style-packages/photographers/rinko-kawauchi/gallery-16x9.jpg",
       "status": "PASS",
@@ -1823,12 +3440,45 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/robert-frank",
+      "image": "style-packages/photographers/robert-frank/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/roger-fenton",
       "image": "style-packages/photographers/roger-fenton/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 640,
       "height": 360,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/ruth-bernhard",
+      "image": "style-packages/photographers/ruth-bernhard/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/sally-mann",
+      "image": "style-packages/photographers/sally-mann/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -1856,6 +3506,50 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/photographers/shomei-tomatsu",
+      "image": "style-packages/photographers/shomei-tomatsu/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/stephen-shore",
+      "image": "style-packages/photographers/stephen-shore/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/susan-meiselas",
+      "image": "style-packages/photographers/susan-meiselas/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/todd-hido",
+      "image": "style-packages/photographers/todd-hido/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/photographers/vivian-maier",
       "image": "style-packages/photographers/vivian-maier/gallery-16x9.jpg",
       "status": "PASS",
@@ -1873,6 +3567,17 @@
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/photographers/weegee",
+      "image": "style-packages/photographers/weegee/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -2087,6 +3792,39 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/schools/academie-julian",
+      "image": "style-packages/schools/academie-julian/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/schools/academy-of-fine-arts-vienna",
+      "image": "style-packages/schools/academy-of-fine-arts-vienna/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/schools/artcenter",
+      "image": "style-packages/schools/artcenter/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/schools/bauhaus",
       "image": "style-packages/schools/bauhaus/gallery-16x9.jpg",
       "status": "PASS",
@@ -2120,12 +3858,56 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/schools/california-institute-of-the-arts",
+      "image": "style-packages/schools/california-institute-of-the-arts/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/schools/central-saint-martins",
+      "image": "style-packages/schools/central-saint-martins/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/schools/cranbrook-academy",
       "image": "style-packages/schools/cranbrook-academy/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/schools/design-academy-eindhoven",
+      "image": "style-packages/schools/design-academy-eindhoven/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/schools/ecal",
+      "image": "style-packages/schools/ecal/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -2186,12 +3968,56 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/schools/royal-academy-schools",
+      "image": "style-packages/schools/royal-academy-schools/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/schools/royal-college-of-art",
       "image": "style-packages/schools/royal-college-of-art/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/schools/royal-danish-academy",
+      "image": "style-packages/schools/royal-danish-academy/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/schools/school-of-the-art-institute-of-chicago",
+      "image": "style-packages/schools/school-of-the-art-institute-of-chicago/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/schools/school-of-visual-arts",
+      "image": "style-packages/schools/school-of-visual-arts/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -2241,6 +4067,28 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/techniques/albumen-printing",
+      "image": "style-packages/techniques/albumen-printing/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/batik-wax-resist",
+      "image": "style-packages/techniques/batik-wax-resist/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/techniques/bento-grid",
       "image": "style-packages/techniques/bento-grid/gallery-16x9.jpg",
       "status": "PASS",
@@ -2260,6 +4108,17 @@
       "height": 941,
       "format": "JPEG",
       "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/collagraph-printmaking",
+      "image": "style-packages/techniques/collagraph-printmaking/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
       "readme_reference": true
     },
     {
@@ -2291,6 +4150,17 @@
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/ebru-paper-marbling",
+      "image": "style-packages/techniques/ebru-paper-marbling/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -2329,6 +4199,28 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/techniques/frottage",
+      "image": "style-packages/techniques/frottage/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/gelatin-silver-print",
+      "image": "style-packages/techniques/gelatin-silver-print/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/techniques/grid-3x3",
       "image": "style-packages/techniques/grid-3x3/gallery-16x9.jpg",
       "status": "PASS",
@@ -2351,8 +4243,41 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/techniques/impasto-painting",
+      "image": "style-packages/techniques/impasto-painting/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/japanese-mokuhanga",
+      "image": "style-packages/techniques/japanese-mokuhanga/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/techniques/linocut-printmaking",
       "image": "style-packages/techniques/linocut-printmaking/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/lithography",
+      "image": "style-packages/techniques/lithography/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,
@@ -2384,12 +4309,89 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/techniques/monotype-printmaking",
+      "image": "style-packages/techniques/monotype-printmaking/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/techniques/oil-painting",
       "image": "style-packages/techniques/oil-painting/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/photogravure",
+      "image": "style-packages/techniques/photogravure/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/photomontage",
+      "image": "style-packages/techniques/photomontage/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/photopolymer-intaglio",
+      "image": "style-packages/techniques/photopolymer-intaglio/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/platinum-palladium-printing",
+      "image": "style-packages/techniques/platinum-palladium-printing/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/risograph-printing",
+      "image": "style-packages/techniques/risograph-printing/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1672,
+      "height": 941,
+      "format": "JPEG",
+      "aspect_ratio": 1.776833,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/salted-paper-printing",
+      "image": "style-packages/techniques/salted-paper-printing/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
@@ -2406,12 +4408,56 @@
       "readme_reference": true
     },
     {
+      "package": "style-packages/techniques/stained-glass",
+      "image": "style-packages/techniques/stained-glass/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/stereoscopic-photography",
+      "image": "style-packages/techniques/stereoscopic-photography/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/suminagashi",
+      "image": "style-packages/techniques/suminagashi/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
       "package": "style-packages/techniques/watercolor",
       "image": "style-packages/techniques/watercolor/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1280,
       "height": 720,
+      "format": "JPEG",
+      "aspect_ratio": 1.777778,
+      "readme_reference": true
+    },
+    {
+      "package": "style-packages/techniques/wet-plate-collodion",
+      "image": "style-packages/techniques/wet-plate-collodion/gallery-16x9.jpg",
+      "status": "PASS",
+      "messages": [],
+      "width": 1600,
+      "height": 900,
       "format": "JPEG",
       "aspect_ratio": 1.777778,
       "readme_reference": true
