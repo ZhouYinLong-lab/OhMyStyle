@@ -4,113 +4,107 @@ id: isometric-pixel-tactics-direction
 name: 等距像素策略美术
 base_package: game-art/isometric-pixel-tactics
 scope:
-  medium: 'name: game_art; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
+  medium: 'pixel sprites and tile sets aligned to a consistent isometric grid'
   representation: stylized
-  description: Organizes scenes through isometric grids, compact units, layered tiles, and clear tactical light-dark
-    grouping, with readable paths and height changes rather than copied game interfaces.
+  description: Organizes scenes through isometric grids, compact units, layered tiles, and
+    clear tactical light-dark grouping, with readable paths and height changes rather than
+    copied game interfaces.
   required_contexts: []
   incompatible_contexts: []
   limitations:
-  - copying_a_specific_work
-  - copying_a_named_character_or_logo
+    - copying_a_specific_work
+    - copying_a_named_character_or_logo
 pillars:
-- Organizes scenes through isometric grids, compact units, layered tiles, and clear tactical light-dark grouping,
-  with readable paths and height changes rather than copied game interfaces.
-- 'medium: name: game_art; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
-- 'composition: priorities: visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer'
-- 'palette: name: isometric-pixel-tactics; usage: controlled relationship among dominant, support, shadow,
-  and accent colors; colors: name: color_0; colors: hex: #182235; colors: role: 轮廓与深阴影; colors: name: color_1;
-  colors: hex: #52657A; colors: role: 地块与远景'
+  - Tile edges, units, and architecture share one consistent isometric projection.
+  - Stacked terrain and value changes show elevation while paths and tactical spaces 
+    remain readable.
+  - Compact units contrast with broader terrain masses without becoming interface icons.
+  - Pixel clusters and limited color roles preserve crisp tactical silhouettes.
 rules:
-- id: medium
-  axis: medium
-  importance: core
-  applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: name:
-    game_art; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  observable: 'The requested image retains the stated medium distinction or production constraint: name: game_art;
-    visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
-    name: game_art; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  evidence:
-    source_ids:
-    - source-source-1
-    - source-source-2
-    basis: curatorial_inference
-    visual_review: pending
-- id: composition
-  axis: composition
-  importance: core
-  applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Organize the requested subject using these package-specific spatial decisions: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer. Preserve
-    the user-provided content and layout.'
-  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: priorities: visual_hierarchy;
-    priorities: negative_space; priorities: subject_independent_style_transfer.'
-  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer.'
-  evidence:
-    source_ids:
-    - source-source-1
-    - source-source-2
-    basis: curatorial_inference
-    visual_review: pending
-- id: palette
-  axis: palette
-  importance: core
-  applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: name: isometric-pixel-tactics; usage:
-    controlled relationship among dominant, support, shadow, and accent colors; colors: name: color_0; colors:
-    hex: #182235; colors: role: 轮廓与深阴影; colors: name: color_1; colors: hex: #52657A; colors: role: 地块与远景. Adapt
-    their balance to the requested subject; do not apply them as a uniform tint.'
-  observable: 'The stated colors and their roles are visible and distinguishable: name: isometric-pixel-tactics;
-    usage: controlled relationship among dominant, support, shadow, and accent colors; colors: name: color_0;
-    colors: hex: #182235; colors: role: 轮廓与深阴影; colors: name: color_1; colors: hex: #52657A; colors: role:
-    地块与远景.'
-  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
-    name: isometric-pixel-tactics; usage: controlled relationship among dominant, support, shadow, and accent
-    colors; colors: name: color_0; colors: hex: #182235; colors: role: 轮廓与深阴影; colors: name: color_1; colors:
-    hex: #52657A; colors: role: 地块与远景.'
-  evidence:
-    source_ids:
-    - source-source-1
-    - source-source-2
-    basis: curatorial_inference
-    visual_review: pending
+  - id: medium
+    axis: medium
+    importance: core
+    applies_when: For requested tactical scenes built from isometric pixel art.
+    instruction: 'Render tiles, units, and structures with consistent isometric axes and deliberate
+      pixel clusters. Keep top, side, and height-facing planes consistent across the scene.'
+    observable: 'Parallel tile edges follow stable isometric directions, and objects sit on
+      the same projection without perspective drift.'
+    reject_when: 'The scene mixes top-down and isometric views, uses smooth non-pixel edges,
+      or stacks shapes without coherent projection.'
+    evidence:
+      source_ids:
+        - source-source-1
+        - source-source-2
+      basis: curatorial_inference
+      visual_review: pending
+  - id: composition
+    axis: composition
+    importance: core
+    applies_when: When the requested scene contains traversable terrain, units, or 
+      tactical positions.
+    instruction: 'Organize the requested terrain into readable tile groups. Show elevation with
+      stacked contours and clear value breaks; preserve visible routes and space around important
+      units.'
+    observable: 'The viewer can distinguish terrain height, traversable paths, and focal units
+      from the tile arrangement alone.'
+    reject_when: 'Decorative terrain obscures routes or unit placement, or elevation depends
+      only on vague shadows.'
+    evidence:
+      source_ids:
+        - source-source-1
+        - source-source-2
+      basis: curatorial_inference
+      visual_review: pending
+  - id: palette
+    axis: palette
+    importance: supporting
+    applies_when: When color is used to separate terrain, units, and elevation.
+    instruction: 'Use dark values for structural outlines and shadow, with distinct but restrained
+      groups for tiles, units, and distant terrain. Preserve the user-requested colors where
+      specified.'
+    observable: 'Units and tile layers remain separable through value and color grouping without
+      relying on interface labels.'
+    reject_when: 'One color wash merges units into terrain or color alone carries all tactical
+      information.'
+    evidence:
+      source_ids:
+        - source-source-1
+        - source-source-2
+      basis: curatorial_inference
+      visual_review: pending
 active_rule_ids:
-- medium
-- composition
-- palette
-joint_checks:
-- id: visual-relationship-coherence
-  rule_ids:
   - medium
   - composition
   - palette
-  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
-    the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+joint_checks:
+  - id: visual-relationship-coherence
+    rule_ids:
+      - medium
+      - composition
+      - palette
+    instruction: Keep the package-specific relationship among medium, composition, palette
+      consistent while preserving the user-specified subject and layout.
+    observable: The linked visual decisions reinforce one another and remain subordinate 
+      to the user-provided subject.
 sources:
-- id: source-source-1
-  kind: style_reference
-  base_asset_id: source-1
-- id: source-source-2
-  kind: style_reference
-  base_asset_id: source-2
+  - id: source-source-1
+    kind: style_reference
+    base_asset_id: source-1
+  - id: source-source-2
+    kind: style_reference
+    base_asset_id: source-2
 execution:
   route: text_only
   must:
-  - translate the user subject into the style medium and structural rules
-  - establish composition before small detail
-  - inspect against the generic five-task suite
-  - the result is an original new scene, not a copy of a source work
-  - no unrequested text, logo, trademark, or named character
-  - Preserve the user-provided subject, object count, location, and requested details.
+    - Preserve the requested subject and tactical scene content; do not add unrequested 
+      units or interface text.
+    - Set a consistent isometric grid before constructing tile groups, units, and 
+      structures.
+    - Make height changes through stacked tile contours and stable value breaks.
+    - Keep routes, unit positions, and focal terrain readable at thumbnail size.
+    - Use pixel clusters and controlled color roles rather than a global game-art filter.
   avoid:
-  - generic_global_filter
-  - copied_source_composition
-  - readable_text_or_branding
-  - copying_a_specific_work
-  - copying_a_named_character_or_logo
-  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
+    - mixed projection axes or perspective drift
+    - smooth vector edges or blurred pixel clusters
+    - unreadable terrain density
+    - copied game interfaces, maps, unit designs, or source compositions
