@@ -30,7 +30,7 @@ and must never be added as default content.
 
 ## Optional direction: diagonal drift and counterweight
 
-`art-direction.yaml` registers an experimental direction for user-requested non-objective geometric compositions. It connects unequal forms along an off-center diagonal movement, then uses irregular open intervals and smaller planes as counterweights. This narrows the legacy package's general floating-geometry rules without prescribing a fixed color-and-shape recipe. Explicitly declare `diagonal-drift-counterweight` when compiling. The new direction is optional; the legacy default is unchanged.
+`art-direction.yaml` uses direction format 2.1.0 and registers an experimental direction for user-requested non-objective geometric compositions. It connects unequal forms along an off-center diagonal movement. Declare `multiple-geometric-forms-with-distinct-color-or-scale` and `light-or-neutral-ground-around-floating-forms` only when those elements are present to activate counterweight and open-ground rules. This narrows the legacy package's general floating-geometry rules without prescribing a fixed color-and-shape recipe. Explicitly declare `diagonal-drift-counterweight` when compiling. The new direction is optional; the legacy default is unchanged.
 
 ### Generated comparison using the same four forms
 

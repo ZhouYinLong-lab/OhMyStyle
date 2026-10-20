@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: malevich-diagonal-drift-counterweight
 name: Malevich diagonal drift and counterweight
@@ -24,6 +24,19 @@ scope:
     - Preserve the user's shape inventory, count, palette roles, and aspect ratio.
     - Let diagonal movement emerge through unequal scale, interval, and rotation; do not force every form onto one straight line.
     - Do not reproduce a named work, black-square-on-white composition, or fixed museum layout.
+contexts:
+  - id: diagonal-drift-counterweight
+    description: The user requests a non-objective composition with diagonal drift and unequal visual weights.
+  - id: strict-horizontal-vertical-grid
+    description: The user requires a strict horizontal or vertical grid.
+  - id: centered-symmetrical-logo
+    description: The user requests a centered symmetrical logo.
+  - id: representational-object-illustration
+    description: The user requests an illustration of a recognizable object.
+  - id: multiple-geometric-forms-with-distinct-color-or-scale
+    description: The user supplies multiple geometric forms with distinct color roles or scales.
+  - id: light-or-neutral-ground-around-floating-forms
+    description: The composition includes a light or neutral ground around floating forms.
 pillars:
   - Establish one off-center diagonal direction through unequal form size, placement, and rotation.
   - Give the largest plane visual weight and answer it with smaller forms at varied intervals rather than a balanced logo-like symmetry.
@@ -33,6 +46,8 @@ rules:
   - id: off-center-diagonal-drift
     axis: composition_and_movement
     importance: core
+    when_contexts:
+      - diagonal-drift-counterweight
     applies_when: The user requests an open non-objective composition made from geometric forms.
     instruction: Organize the requested forms around an off-center diagonal drift, using differences in scale, rotation, and interval to create a directional route; allow pauses and small deviations so the route does not become a rigid line.
     observable: The eye follows a clear directional movement across the field, while the arrangement remains asymmetric and non-grid-like.
@@ -47,6 +62,8 @@ rules:
   - id: dominant-plane-counterweight
     axis: scale_and_color_weight
     importance: core
+    when_contexts:
+      - multiple-geometric-forms-with-distinct-color-or-scale
     applies_when: The user supplies multiple geometric forms with distinct color roles or scales.
     instruction: Let one requested form carry the main visual weight and use smaller forms as unequal counterweights; preserve the user's specified shape count and color assignments without inventing a dominant black square.
     observable: A hierarchy between dominant and supporting planes is visible, but balance depends on their spatial relationship rather than matching sizes or mirror positions.
@@ -61,6 +78,8 @@ rules:
   - id: variable-open-intervals
     axis: negative_space
     importance: supporting
+    when_contexts:
+      - light-or-neutral-ground-around-floating-forms
     applies_when: The composition includes a light or neutral ground around floating forms.
     instruction: Preserve open ground around and between the forms, varying the interval width to reinforce the drift and prevent accidental tangencies.
     observable: Ground separates the forms and participates in the movement rather than reading as a uniform border or empty leftover area.

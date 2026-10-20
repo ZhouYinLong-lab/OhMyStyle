@@ -24,7 +24,7 @@
 
 ## 可选新方向：斜向漂移与反向配重
 
-`art-direction.yaml` 登记一个实验方向，用于用户指定的非具象几何构成。它以偏离中心的斜向运动串联大小不同、角度不同的色面，再用不等距留白和小形体形成反向配重；这比旧包“悬浮几何形”的一般规则更明确，但不指定固定色形组合。编译时显式声明 `diagonal-drift-counterweight`。新版是可选方向，旧版默认不变。
+`art-direction.yaml` 使用方向格式 2.1.0，登记一个实验方向，用于用户指定的非具象几何构成。它以偏离中心的斜向运动串联大小不同、角度不同的色面。只有构图确实包含多种几何形与浅色底地时，才声明 `multiple-geometric-forms-with-distinct-color-or-scale` 和 `light-or-neutral-ground-around-floating-forms`，启用配重与留白规则；不指定固定色形组合。编译时显式声明 `diagonal-drift-counterweight`。新版是可选方向，旧版默认不变。
 
 ### 同一组色形的生成对照
 
