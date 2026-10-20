@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: renoir-localized-canopy-sun-flecks
 name: Renoir localized canopy sun flecks
@@ -26,6 +26,19 @@ scope:
     - Concentrate light touches on selected clothing planes and ground; do not cover every surface evenly.
     - Do not add a swing, dance, picnic, crowd, or named scene unless requested.
     - Do not reproduce the composition or figure arrangement of La Balançoire or another named work.
+contexts:
+  - id: user-requested-outdoor-group-under-tree-canopy
+    description: A user-requested outdoor group scene beneath a leafy canopy in daylight.
+  - id: single-subject-close-up
+    description: A close-up centered on one subject rather than a group scene.
+  - id: night-or-indoor-scene
+    description: A nighttime scene or an interior without daylight through a canopy.
+  - id: user-requested-even-unfiltered-light
+    description: The user specifies even light or explicitly asks to avoid dappled light.
+  - id: text-or-logo-reproduction
+    description: The image is intended to reproduce exact text, branding, or a logo.
+  - id: faces-visible
+    description: One or more faces are visible and recognizable in the requested scene.
 pillars:
   - Break filtered daylight into small, irregular light-color notes rather than a smooth global glow.
   - Place the strongest flecks on selected clothing folds, shoulders, hats, and patches of ground, leaving faces comparatively quiet.
@@ -47,6 +60,8 @@ rules:
   - id: faces-remain-readable
     axis: facial_legibility_and_light_contrast
     importance: core
+    when_contexts:
+      - faces-visible
     applies_when: One or more faces are visible in the requested group scene.
     instruction: Keep eyes, nose, mouth, and expression areas comparatively free of the brightest flecks; carry dappled highlights around faces onto hair, hats, shoulders, and nearby fabric instead.
     observable: Faces remain identifiable and expressions readable against the broken light pattern.

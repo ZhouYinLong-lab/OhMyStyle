@@ -76,4 +76,4 @@
 
 ## 实验方向：树荫下的局部光斑
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 只在用户明确要求树冠下的户外多人场景时启用：把碎裂的亮色光斑集中到衣物局部和地面，保持脸部识别区清楚，并用少量光斑连接人物与场地。它不添加摇椅、特定舞会或新人物，也不复刻《La Balançoire》的构图。见 [`comparisons/`](comparisons/README.md) 查看同一散步场景对照；该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，只在用户明确要求树冠下的户外多人场景时启用：把碎裂的亮色光斑集中到衣物局部和地面，并用少量光斑连接人物与场地。只有声明 `faces-visible` 时，才应用专门保护脸部识别区的规则。它不添加摇椅、特定舞会或新人物，也不复刻《La Balançoire》的构图。见 [`comparisons/`](comparisons/README.md) 查看同一散步场景对照；该方向仍处于实验状态。
