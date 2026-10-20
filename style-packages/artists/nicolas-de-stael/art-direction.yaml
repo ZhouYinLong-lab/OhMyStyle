@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: nicolas-de-stael-performance-gesture-blocks
 name: Nicolas de Staël performance gesture blocks
@@ -25,6 +25,19 @@ scope:
     - Make figures recognizable through pose and color-plane relationship, not anatomical detail.
     - Do not add a café, stage, audience, sports field, or instrument unless it appears in the user's request.
     - Do not reproduce a named painting or its figure arrangement.
+contexts:
+  - id: dance-or-music-performance
+    description: A user-requested dance or music performance scene.
+  - id: photorealistic-concert-documentation
+    description: A photorealistic concert or performance record.
+  - id: quiet-unoccupied-landscape
+    description: An empty landscape without performance or figures.
+  - id: detailed-solo-portrait
+    description: A detailed portrait of one person rather than a performance scene.
+  - id: visible-movement-phrase
+    description: The requested scene has multiple performers or a clear movement phrase.
+  - id: instruments-or-held-props-present
+    description: The requested performance includes instruments or held props.
 pillars:
   - Compress each requested performer into a few opaque planes with a distinct tilt or height.
   - Let alternating vertical and diagonal color masses carry the movement rhythm across the frame.
@@ -46,6 +59,8 @@ rules:
   - id: alternating-performance-rhythm
     axis: composition_and_motion
     importance: core
+    when_contexts:
+      - visible-movement-phrase
     applies_when: The user requests multiple performers or a visible movement phrase.
     instruction: Alternate upright and oblique blocks across the requested action; vary their scale and intervals so the scene has a readable pulse without imposing a fixed left-to-right order.
     observable: The eye can follow the movement across distinct masses while open gaps prevent a crowded, continuous silhouette.
@@ -60,6 +75,8 @@ rules:
   - id: selective-action-cues
     axis: contour_and_detail_hierarchy
     importance: supporting
+    when_contexts:
+      - instruments-or-held-props-present
     applies_when: The scene includes instruments, held props, or identifiable dance gestures.
     instruction: Use only a few narrow contrasting marks to indicate instrument direction and the main arm gesture; leave faces, hands, and clothing largely unmodeled so the larger color masses stay dominant.
     observable: Requested instruments and the main action remain identifiable, while each performer still reads first as a handful of weighted paint planes rather than a detailed illustration.

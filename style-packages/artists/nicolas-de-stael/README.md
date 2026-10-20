@@ -76,4 +76,4 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：演出场景色块节奏
 
-新版可选方向 [`art-direction.yaml`](art-direction.yaml) 只在用户指定舞蹈或音乐演出时启用：保留人物数量与动作，把人物和乐器压成倾角不同的厚重色块，仅用少量边线提示动作。演出类型、乐器、咖啡馆或观众都由用户决定。对照图和生成限制见 [`comparisons/`](comparisons/README.md)。
+新版可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，只在用户指定舞蹈或音乐演出时启用：保留人物数量与动作，把人物压成倾角不同的厚重色块。只有调用者声明 `visible-movement-phrase` 时，才强调连续动作节奏；`instruments-or-held-props-present` 控制乐器和道具的边线提示规则。演出类型、乐器、咖啡馆或观众都由用户决定。对照图和生成限制见 [`comparisons/`](comparisons/README.md)。

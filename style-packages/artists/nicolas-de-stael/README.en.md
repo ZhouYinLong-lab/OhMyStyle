@@ -98,4 +98,4 @@ figures, text, trademark, or logo.
 
 ## Experimental direction: performance gesture blocks
 
-The optional direction in [`art-direction.yaml`](art-direction.yaml) applies only to a user-requested dance or music scene. It preserves performer count and action, compresses bodies and instruments into weighted color blocks, and uses only a few edges to clarify gesture. The user chooses the performance, instruments, setting, and audience. See [`comparisons/`](comparisons/README.md) for generated examples and limitations.
+The optional direction in [`art-direction.yaml`](art-direction.yaml) uses format 2.1.0 and applies only to a user-requested dance or music scene. It preserves performer count and action and compresses bodies into weighted color blocks. The movement-rhythm rule activates only with `visible-movement-phrase`; `instruments-or-held-props-present` controls the detail cues for instruments and props. The user chooses the performance, instruments, setting, and audience. See [`comparisons/`](comparisons/README.md) for generated examples and limitations.
