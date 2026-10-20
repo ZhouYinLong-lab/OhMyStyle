@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: botticelli-shared-wind-contour
 name: Botticelli shared wind contour
@@ -22,6 +22,17 @@ scope:
     - Preserve the exact garment, plant species, pose, location, and wind strength requested.
     - Echo the direction through related curves without merging fabric and foliage into one shape.
     - Do not add flowers, figures, sea, ribbons, or a mythological story unless requested.
+contexts:
+  - id: user-requested-wind-moving-fabric-and-plants
+    description: The user specifies wind moving both fabric and plants.
+  - id: no-wind-or-still-scene-requested
+    description: The user requests a still scene or no wind.
+  - id: user-requested-rigid-fabric-or-vertical-plants
+    description: The user specifies rigid fabric or vertical plants that are not windblown.
+  - id: exact-reconstruction-of-named-botticelli-work
+    description: The user requests an exact reconstruction of a named Botticelli work.
+  - id: motion-lines-cross-colored-fabric-or-plants
+    description: Motion lines cross colored fabric or plant forms.
 pillars:
   - Connect user-specified moving materials through a shared graceful directional curve.
   - Keep textile folds and plant stems individually legible.
@@ -30,6 +41,8 @@ rules:
   - id: wind-path-echoes-across-materials
     axis: shared-directional-contour
     importance: core
+    when_contexts:
+      - user-requested-wind-moving-fabric-and-plants
     applies_when: Wind moves both fabric and plants in the requested scene.
     instruction: Let the main wind direction recur as related but non-identical curves in the requested fabric and plant contours.
     observable: The two materials appear to respond to one wind path, while their shapes and surface behavior remain distinct.
@@ -43,6 +56,8 @@ rules:
   - id: preserve-material-specific-line
     axis: textile-and-foliage-legibility
     importance: core
+    when_contexts:
+      - user-requested-wind-moving-fabric-and-plants
     applies_when: Fabric and plants both carry the requested movement.
     instruction: Use longer continuous curves for fabric folds and finer branching contours for stems and leaves; keep each outline readable against nearby shapes.
     observable: A viewer can distinguish cloth motion from plant motion even where the curves echo each other.
@@ -56,6 +71,8 @@ rules:
   - id: keep-flat-tempera-color-order
     axis: linear-detail-and-color-field
     importance: supporting
+    when_contexts:
+      - motion-lines-cross-colored-fabric-or-plants
     applies_when: Motion lines cross colored fabric or plants.
     instruction: Retain calm flat color regions beneath the fine contours, reserving detailed linework for the moving edges and selected material folds.
     observable: Directional movement reads through line and silhouette without thick impasto or photographic texture.

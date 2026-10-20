@@ -74,4 +74,4 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：共享风向的线性轮廓
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户指定风同时吹动布料与植物时启用：让两种材料的轮廓呼应同一流向，但用连续布褶线和分枝叶茎线保留材质区别。不会自动添加人物、花朵、海景或神话故事。见 [`comparisons/`](comparisons/README.md) 的生成对照；该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在声明 `user-requested-wind-moving-fabric-and-plants` 时启用：让两种材料的轮廓呼应同一流向，但用连续布褶线和分枝叶茎线保留材质区别。只有运动线穿过彩色布料或植物时，才声明 `motion-lines-cross-colored-fabric-or-plants` 启用平坦色层规则。不会自动添加人物、花朵、海景或神话故事。见 [`comparisons/`](comparisons/README.md) 的生成对照；该方向仍处于实验状态。

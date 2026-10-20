@@ -93,4 +93,4 @@ figures, text, trademark, or logo.
 
 ## Experimental direction: shared wind contours
 
-The optional [`art-direction.yaml`](art-direction.yaml) applies only when the user specifies wind moving both fabric and plants. Let their contours echo one wind path while keeping continuous cloth folds and branching stems materially distinct. It does not add figures, flowers, seascapes, or mythological stories by default. See [`comparisons/`](comparisons/README.md) for a generated comparison. This direction remains experimental.
+The optional [`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and applies only when `user-requested-wind-moving-fabric-and-plants` is declared. Let their contours echo one wind path while keeping continuous cloth folds and branching stems materially distinct. Add `motion-lines-cross-colored-fabric-or-plants` only when applicable to activate the flat-color-field rule. It does not add figures, flowers, seascapes, or mythological stories by default. See [`comparisons/`](comparisons/README.md) for a generated comparison. This direction remains experimental.
