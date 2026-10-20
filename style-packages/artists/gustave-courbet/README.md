@@ -34,7 +34,7 @@
 
 ## 新架构：物质笔触与地面重量（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在显式声明 `tactile-material-realism` 时启用。它把库尔贝方向落在直接、不理想化的主体塑形，材料对应的厚涂或调色刀笔触，以及让物体显得有重量的地面关系上；笔触不再只是通用粗糙滤镜。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在显式声明 `tactile-material-realism` 时启用。直接、不理想化的主体塑形是基础规则；只有材质适合可见厚涂、且对象位于实体环境中时，才声明 `tactile-surfaces-benefit-from-visible-paint-relief` 和 `subjects-rest-in-physical-environment`，启用厚涂或地面重量规则。
 
 这不同于梵高方向以方向性笔触表现运动和情绪；库尔贝方向的厚重笔触用于呈现材料的物理质地。它不会默认加入劳动者、贫困叙事或乡村道具。
 

@@ -34,7 +34,7 @@ See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references
 
 ## New architecture: tactile paint and grounded weight (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when `tactile-material-realism` is explicitly declared. It operationalizes Courbet's direction through direct, unidealized form, material-specific impasto or palette-knife marks, and a ground relationship that makes objects feel weight-bearing. The mark-making is not a generic roughness filter.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when `tactile-material-realism` is explicitly declared. Direct, unidealized form is a base rule; declare `tactile-surfaces-benefit-from-visible-paint-relief` and `subjects-rest-in-physical-environment` only when applicable to activate impasto or grounded-weight rules.
 
 This differs from Van Gogh's directional strokes, which express movement and emotion; Courbet's heavy marks describe the physical material. It does not add workers, poverty narratives, or rustic props by default.
 

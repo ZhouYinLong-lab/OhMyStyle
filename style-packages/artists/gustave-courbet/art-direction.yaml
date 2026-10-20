@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: courbet-tactile-matter-and-grounded-scale
 name: Courbet tactile matter and grounded scale
@@ -23,6 +23,19 @@ scope:
     - Only depict the subjects, setting, and narrative requested by the user; do not add workers, rural poverty, or social documentary content by default.
     - Keep the requested identities, count, proportions, and material distinctions legible beneath the thick paint.
     - Restrict the heaviest impasto or palette-knife marks to selected surfaces; do not cover every region with equal texture.
+contexts:
+  - id: tactile-material-realism
+    description: The user requests a realist painting with tactile material handling.
+  - id: photorealistic-product-render
+    description: The user requests a photorealistic product render.
+  - id: polished-academic-idealization
+    description: The user requests polished academic idealization.
+  - id: uniform-impasto-filter
+    description: The user requests uniform impasto across all surfaces.
+  - id: tactile-surfaces-benefit-from-visible-paint-relief
+    description: The requested subject has tactile surfaces that benefit from visible paint relief.
+  - id: subjects-rest-in-physical-environment
+    description: The requested figures or objects rest in a physical environment.
 pillars:
   - Treat the requested subject with direct, unidealized form and physical presence rather than smoothing away wear or irregularity.
   - Use thick brush or palette-knife marks on selected surfaces, with stroke shape and paint load responding to the represented material.
@@ -32,6 +45,8 @@ rules:
   - id: direct-unidealized-subject-presence
     axis: subject_and_form
     importance: core
+    when_contexts:
+      - tactile-material-realism
     applies_when: The user requests a realist painting of an ordinary person, object, or place.
     instruction: Keep the requested subject's proportions, particular features, and visible wear direct and specific; give ordinary subject matter full pictorial weight without beautifying it or adding a social narrative.
     observable: The subject reads clearly and concretely, with its individual form and condition intact rather than idealized or generalized.
@@ -46,6 +61,8 @@ rules:
   - id: material-congruent-impasto-and-knife-work
     axis: paint_surface_and_material
     importance: core
+    when_contexts:
+      - tactile-surfaces-benefit-from-visible-paint-relief
     applies_when: The requested subject contains tactile surfaces that benefit from visible paint relief.
     instruction: Apply selected thick deposits with brush or palette knife; vary edge, direction, and paint load so the mark echoes the surface being represented, such as granular stone, compact soil, rough fabric, or wet ground.
     observable: Thick paint has visible physical relief and a clear relationship to the represented material, while other surfaces remain comparatively quieter.
@@ -61,6 +78,8 @@ rules:
   - id: weight-bearing-ground-and-value-masses
     axis: composition_and_light
     importance: supporting
+    when_contexts:
+      - subjects-rest-in-physical-environment
     applies_when: The requested scene includes objects or figures resting in a physical environment.
     instruction: Anchor the subject to a readable ground plane using broad, stable value masses; let shadows and horizontal paint passages describe contact and weight without flattening the entire scene into darkness.
     observable: Contact points, cast shadows, and large masses make the subject feel physically present and supported by its setting.
