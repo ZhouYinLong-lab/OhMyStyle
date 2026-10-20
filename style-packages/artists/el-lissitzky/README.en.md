@@ -65,3 +65,7 @@ Configure an API key in your own image service or prompt compiler, then submit t
 Connect the base prompt and negative constraints to a local model or ComfyUI workflow. Use the palette and reproduction notes to set color, composition, material, and light. Review the output with [evaluation.yaml](evaluation.yaml).
 
 Model weights, API keys, and generated images remain the user's responsibility. References explain observable features; do not copy a source work's exact composition, person, text, trademark, or logo.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

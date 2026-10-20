@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "el-lissitzky",
+    "name": "埃尔·利西茨基",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\el-lissitzky"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A simple reading lamp on a side table in an otherwise empty room",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A simple reading lamp on a side table in an otherwise empty room\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original image using this package as a visual language, not as a fixed subject or copied composition.\n\nPackage signature:\n- 几何块面与斜向向量建立视觉力场\n- 强色作为结构节点而非综合色滤镜\n- 模块化版式不绑定文字或固定题材\n- 平面与投影同时保持清晰边缘\n\nSubject rule:\nKeep the user-supplied subject, object count, location, action, and narrative unchanged. Do not add a recurring motif, landmark, named character, or story event from the representative image.\n\nReproduction direction:\n- 先抽取主体轮廓和空间关系\n- 将复杂形体归纳为几何块面与方向线\n- 安排一到两组强色作为结构节点\n- 检查模块关系是否仍然服务于用户主体\n\nUser request:\nA simple reading lamp on a side table in an otherwise empty room\nthe user-requested composition\nthe user-requested aspect ratio\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not add a fixed subject, landmark, named character, branded asset, readable text, logo, watermark, copied composition, or story event from the reference context.\nKeep the user-supplied subject, object count, location, action, and narrative unchanged.\nDo not turn the package into a global color filter, generic cinematic grading, or automatic subject generator.",
+  "template_variables": {
+    "SUBJECT": "A simple reading lamp on a side table in an otherwise empty room",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material",
+          "no fixed subject leaks into the output"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "preserve the user-supplied person or object without adding a recurring figure"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "preserve the user-supplied objects and their count"
+        ]
+      },
+      "pictorial-architectonic-space": {
+        "required": [
+          "flat planes and geometric volumes occupy a coherent imagined space",
+          "oblique directions make overlap and orientation legible",
+          "color clarifies spatial roles instead of acting as a global filter"
+        ],
+        "reject_if": [
+          "slogans, political symbols, stars, or red-square motifs appear without request",
+          "all forms collapse into flat layout or realistic 3D rendering",
+          "mixed projection axes make spatial relations incoherent"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

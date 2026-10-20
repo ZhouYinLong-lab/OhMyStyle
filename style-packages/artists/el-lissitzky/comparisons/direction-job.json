@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "el-lissitzky",
+    "name": "埃尔·利西茨基",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\el-lissitzky"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A simple reading lamp on a side table in an otherwise empty room",
+  "prompt": "USER SUBJECT: A simple reading lamp on a side table in an otherwise empty room\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: geometric_painting_or_spatial_graphic\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [plane-volume-interchange] Combine clearly flat color planes with a few geometric volumes that share the same imagined space; let overlap, partial occlusion, or edge continuity imply depth without turning the image into either a flat poster or a literal realistic room.\n- [coherent-axonometric-relations] Establish a small consistent set of oblique or axonometric directions and use them to organize overlaps, visible faces, and apparent movement; allow forms to float, but keep their orientation legible.\n- [color-as-spatial-operator] Assign contrasting colors to selected planes or volumes so they clarify overlap, orientation, or visual force; maintain a restrained neutral field where needed and follow the user's palette if specified.\n- [plane-volume-projection-coherence] Let planar forms, volumes, projection directions, and color contrast describe the same imagined space while preserving the user's requested content.\nREQUIREMENT: Declare the pictorial-architectonic-space context before applying this direction.\nREQUIREMENT: Preserve the user-supplied objects, their relationships, and requested abstraction level.\nREQUIREMENT: Keep plane-volume transitions and projection cues internally coherent.\nREQUIREMENT: Use color to clarify spatial roles while honoring any requested palette.",
+  "negative_prompt": "flat poster-only treatment, photorealistic rooms, and random floating geometry\nincompatible vanishing points, random rotation, and shadow-only depth\nfixed red-square motifs, global color filters, and text-led composition\nadding slogans, political symbols, stars, or a red-square motif without request\ntreating the composition as a buildable paper model or construction plan\nreducing every form to a flat layout or converting every form to realistic 3D",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "lissitzky-proun-architectonic-space",
+    "name": "Lissitzky Proun architectonic space",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\el-lissitzky\\art-direction.yaml",
+    "sha256": "745ee3641a387d1153cb5a1cf124a13da2459a40bb37a7a7c6918ea789275441",
+    "active_rule_ids": [
+      "plane-volume-interchange",
+      "coherent-axonometric-relations",
+      "color-as-spatial-operator"
+    ],
+    "contexts": [
+      "pictorial-architectonic-space"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare the pictorial-architectonic-space context before applying this direction.",
+      "Preserve the user-supplied objects, their relationships, and requested abstraction level.",
+      "Keep plane-volume transitions and projection cues internally coherent.",
+      "Use color to clarify spatial roles while honoring any requested palette."
+    ],
+    "avoid": [
+      "adding slogans, political symbols, stars, or a red-square motif without request",
+      "treating the composition as a buildable paper model or construction plan",
+      "reducing every form to a flat layout or converting every form to realistic 3D"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "geometric_painting_or_spatial_graphic",
+      "representation": "stylized",
+      "description": "A focused direction based on El Lissitzky's Proun works from 1919–1927, where flat color planes and geometric volumes share an imagined, quasi- architectural space. Consistent axonometric cues and controlled color contrast create the sense that forms can float above, below, and through one another. This direction describes a specific artist-led transition between painting and architecture, not all Constructivism or a literal building method.",
+      "required_contexts": [
+        "pictorial-architectonic-space"
+      ],
+      "incompatible_contexts": [
+        "paper-model-construction",
+        "flat-editorial-layout",
+        "naturalistic-perspective-rendering"
+      ],
+      "limitations": [
+        "Preserve the user-supplied subject, objects, relationships, and requested level of abstraction; do not default to red squares, slogans, stars, or political symbols.",
+        "Use axonometric or oblique depth only when it clarifies the requested composition; keep a coherent spatial reference instead of mixing arbitrary projections.",
+        "Suggest a transition between flat and volumetric form through image relationships; do not imply that the generated image is a physically buildable model."
+      ]
+    },
+    "rules": [
+      {
+        "id": "plane-volume-interchange",
+        "axis": "geometric_form_and_depth",
+        "importance": "core",
+        "applies_when": "The requested image uses abstraction or stylized geometry to suggest space.",
+        "instruction": "Combine clearly flat color planes with a few geometric volumes that share the same imagined space; let overlap, partial occlusion, or edge continuity imply depth without turning the image into either a flat poster or a literal realistic room.",
+        "observable": "The viewer can distinguish planes from volumes and understand how they relate spatially, while the overall image remains an intentional constructed field.",
+        "reject_when": "All forms lie on one graphic layer, every shape becomes a fully shaded 3D object, or unrelated forms appear to occupy incompatible spaces.",
+        "evidence": {
+          "source_ids": [
+            "lissitzky-moma-proun-19d",
+            "lissitzky-moma-contrasts-of-form"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "flat poster-only treatment, photorealistic rooms, and random floating geometry"
+      },
+      {
+        "id": "coherent-axonometric-relations",
+        "axis": "spatial_projection",
+        "importance": "core",
+        "applies_when": "The composition includes geometric blocks or volumes arranged in imagined space.",
+        "instruction": "Establish a small consistent set of oblique or axonometric directions and use them to organize overlaps, visible faces, and apparent movement; allow forms to float, but keep their orientation legible.",
+        "observable": "Directional edges agree enough to imply one constructed spatial field, and overlapping forms remain distinguishable.",
+        "reject_when": "Projection axes contradict one another without an intentional focal shift, or depth relies only on drop shadows.",
+        "evidence": {
+          "source_ids": [
+            "lissitzky-moma-new-man",
+            "lissitzky-moma-proun-19d"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "incompatible vanishing points, random rotation, and shadow-only depth"
+      },
+      {
+        "id": "color-as-spatial-operator",
+        "axis": "color_and_material",
+        "importance": "core",
+        "applies_when": "The requested direction uses color planes to distinguish parts of a constructed space.",
+        "instruction": "Assign contrasting colors to selected planes or volumes so they clarify overlap, orientation, or visual force; maintain a restrained neutral field where needed and follow the user's palette if specified.",
+        "observable": "Color helps identify spatial roles and directional movement without becoming a universal red-black-white formula.",
+        "reject_when": "Saturation is decorative, colors ignore the form boundaries, or an unrequested political or typographic symbol is introduced.",
+        "evidence": {
+          "source_ids": [
+            "lissitzky-moma-contrasts-of-form",
+            "lissitzky-moma-proun-19d"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "fixed red-square motifs, global color filters, and text-led composition"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "plane-volume-projection-coherence",
+        "rule_ids": [
+          "plane-volume-interchange",
+          "coherent-axonometric-relations",
+          "color-as-spatial-operator"
+        ],
+        "instruction": "Let planar forms, volumes, projection directions, and color contrast describe the same imagined space while preserving the user's requested content.",
+        "observable": "The image reads as a deliberate passage between flat composition and architectonic space, with each color and edge helping to orient the forms."
+      }
+    ],
+    "sources": [
+      {
+        "id": "lissitzky-moma-proun-19d",
+        "kind": "museum_artwork_description",
+        "url": "https://www.moma.org/collection/works/79040"
+      },
+      {
+        "id": "lissitzky-moma-new-man",
+        "kind": "museum_artwork_description",
+        "url": "https://www.moma.org/collection/works/88312"
+      },
+      {
+        "id": "lissitzky-moma-contrasts-of-form",
+        "kind": "museum_catalogue",
+        "url": "https://assets.moma.org/documents/moma_catalogue_1733_300062754.pdf"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "745ee3641a387d1153cb5a1cf124a13da2459a40bb37a7a7c6918ea789275441",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}
