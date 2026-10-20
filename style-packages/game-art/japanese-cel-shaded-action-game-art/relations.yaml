@@ -4,9 +4,11 @@ same_family:
   - game-art/rpg-maker-pixel-art
 complements:
   - artists/hayao-miyazaki
-conflicts:
-  - techniques/photorealistic-rendering
+conflicts: []
 distinctives:
   - 赛璐珞明暗带与三维体积并置
   - 手绘轮廓服务于动态透视
   - 角色与环境共享渲染规则
+avoid_overlap:
+  - 'Avoid blending this direction with the unregistered contrast reference: techniques/photorealistic-rendering.'
+supersedes: []
