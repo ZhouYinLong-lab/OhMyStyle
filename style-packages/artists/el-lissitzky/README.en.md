@@ -36,7 +36,7 @@ See [provenance.yaml](provenance.yaml), [references/manifest.csv](references/man
 
 ## New architecture: Proun axonometric space (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) adopts one focused direction from Lissitzky's Proun works of 1919–1927: flat color planes and geometric volumes share one imagined space, with axonometric edges, occlusion, and color relations suggesting a passage between painting and architecture. This is neither all of Constructivism nor the Bauhaus paper-cutting method. Red squares, slogans, stars, and political symbols are not defaults.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and adopts one focused direction from Lissitzky's Proun works of 1919–1927: flat color planes and geometric volumes share one imagined space. Callers can declare `geometric-blocks-or-volumes-in-imagined-space` and `color-planes-distinguish-constructed-space` as applicable to activate axonometric or color-space rules. This is neither all of Constructivism nor the Bauhaus paper-cutting method. Red squares, slogans, stars, and political symbols are not defaults.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/el-lissitzky --direction package --context pictorial-architectonic-space --subject "A small reading lamp represented as a planar shade and a few interlocking geometric volumes" --output runs/style-v2/el-lissitzky-job.json

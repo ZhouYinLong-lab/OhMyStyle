@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: lissitzky-proun-architectonic-space
 name: Lissitzky Proun architectonic space
@@ -24,6 +24,19 @@ scope:
     - Preserve the user-supplied subject, objects, relationships, and requested level of abstraction; do not default to red squares, slogans, stars, or political symbols.
     - Use axonometric or oblique depth only when it clarifies the requested composition; keep a coherent spatial reference instead of mixing arbitrary projections.
     - Suggest a transition between flat and volumetric form through image relationships; do not imply that the generated image is a physically buildable model.
+contexts:
+  - id: pictorial-architectonic-space
+    description: The user requests a geometric composition where flat planes and volumes share an imagined space.
+  - id: paper-model-construction
+    description: The user requests a physically constructible paper model.
+  - id: flat-editorial-layout
+    description: The user requests a flat editorial layout.
+  - id: naturalistic-perspective-rendering
+    description: The user requires naturalistic perspective rendering.
+  - id: geometric-blocks-or-volumes-in-imagined-space
+    description: Geometric blocks or volumes are arranged in imagined space.
+  - id: color-planes-distinguish-constructed-space
+    description: Color planes distinguish parts of the requested constructed space.
 pillars:
   - Balance flat geometric planes against a small number of volumetric forms so the image stays between graphic plane and imagined space.
   - Use consistent axonometric or oblique cues to let forms overlap and appear to pass above, below, or through one another.
@@ -33,6 +46,8 @@ rules:
   - id: plane-volume-interchange
     axis: geometric_form_and_depth
     importance: core
+    when_contexts:
+      - pictorial-architectonic-space
     applies_when: The requested image uses abstraction or stylized geometry to suggest space.
     instruction: Combine clearly flat color planes with a few geometric volumes that share the same imagined space; let overlap, partial occlusion, or edge continuity imply depth without turning the image into either a flat poster or a literal realistic room.
     observable: The viewer can distinguish planes from volumes and understand how they relate spatially, while the overall image remains an intentional constructed field.
@@ -47,6 +62,8 @@ rules:
   - id: coherent-axonometric-relations
     axis: spatial_projection
     importance: core
+    when_contexts:
+      - geometric-blocks-or-volumes-in-imagined-space
     applies_when: The composition includes geometric blocks or volumes arranged in imagined space.
     instruction: Establish a small consistent set of oblique or axonometric directions and use them to organize overlaps, visible faces, and apparent movement; allow forms to float, but keep their orientation legible.
     observable: Directional edges agree enough to imply one constructed spatial field, and overlapping forms remain distinguishable.
@@ -61,6 +78,8 @@ rules:
   - id: color-as-spatial-operator
     axis: color_and_material
     importance: core
+    when_contexts:
+      - color-planes-distinguish-constructed-space
     applies_when: The requested direction uses color planes to distinguish parts of a constructed space.
     instruction: Assign contrasting colors to selected planes or volumes so they clarify overlap, orientation, or visual force; maintain a restrained neutral field where needed and follow the user's palette if specified.
     observable: Color helps identify spatial roles and directional movement without becoming a universal red-black-white formula.

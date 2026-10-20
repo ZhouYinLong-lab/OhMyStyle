@@ -36,7 +36,7 @@
 
 ## 新架构：Proun 轴测空间（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 只采用利西茨基 1919–1927 年 Proun 作品中的一个方向：让平面色块与几何体共享一致的想象空间，通过轴测边、遮挡和色彩关系表现“介于绘画与建筑之间”的空间构造。它不等同于整个构成主义运动，也不是包豪斯的纸材切折方法；不默认红色方块、口号、星形或政治符号。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，只采用利西茨基 1919–1927 年 Proun 作品中的一个方向：让平面色块与几何体共享一致的想象空间。调用者可按画面声明 `geometric-blocks-or-volumes-in-imagined-space` 和 `color-planes-distinguish-constructed-space`，分别启用轴测关系与色彩空间规则。它不等同于整个构成主义运动，也不是包豪斯的纸材切折方法；不默认红色方块、口号、星形或政治符号。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/el-lissitzky --direction package --context pictorial-architectonic-space --subject "A small reading lamp represented as a planar shade and a few interlocking geometric volumes" --output runs/style-v2/el-lissitzky-job.json
