@@ -1,0 +1,143 @@
+schema_version: 2.1.0
+status: experimental
+id: fauvism-direction
+name: 野兽主义
+base_package: movements/fauvism
+scope:
+  medium: expressive early-modern painting simulation
+  representation: stylized
+  description: 以任意色彩、强烈色块、自由笔触、简化形体和深色轮廓组织画面；本包提取野兽主义的色彩与笔触逻辑，不固定海港、桥梁、人物或南法风景。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory harbor, bridge, Mediterranean village, or portrait
+pillars:
+- 以任意色彩、强烈色块、自由笔触、简化形体和深色轮廓组织画面；本包提取野兽主义的色彩与笔触逻辑，不固定海港、桥梁、人物或南法风景。
+- 'composition: simplified forms organized by broad color masses; directional brush passages and selective
+  dark contours'
+- 'palette: saturated, sometimes arbitrary complementary hues; local color remains role-based and readable'
+- 'lighting: quality: expressive painted color rather than literal illumination; behavior: shadows may shift
+  hue while preserving value and form'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: simplified forms
+    organized by broad color masses; directional brush passages and selective dark contours. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: simplified forms
+    organized by broad color masses; directional brush passages and selective dark contours.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: simplified
+    forms organized by broad color masses; directional brush passages and selective dark contours.'
+  evidence:
+    source_ids:
+    - source-fauvism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: saturated, sometimes arbitrary complementary
+    hues; local color remains role-based and readable. Adapt their balance to the requested subject; do not
+    apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: saturated, sometimes arbitrary
+    complementary hues; local color remains role-based and readable.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    saturated, sometimes arbitrary complementary hues; local color remains role-based and readable.'
+  evidence:
+    source_ids:
+    - source-fauvism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: expressive painted color rather than literal
+    illumination; behavior: shadows may shift hue while preserving value and form. Keep light coherent with
+    the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: expressive painted
+    color rather than literal illumination; behavior: shadows may shift hue while preserving value and form.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: expressive painted
+    color rather than literal illumination; behavior: shadows may shift hue while preserving value and form.'
+  evidence:
+    source_ids:
+    - source-fauvism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: visible
+    oil-like brushwork and pigment texture; edges: simplified contours with energetic but controlled transitions.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    visible oil-like brushwork and pigment texture; edges: simplified contours with energetic but controlled
+    transitions.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: visible oil-like brushwork and pigment texture; edges: simplified contours with energetic but controlled
+    transitions.'
+  evidence:
+    source_ids:
+    - source-fauvism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: medium-high
+    and directional; placement: marks follow the subject''s planes and forms. Preserve detail hierarchy and
+    material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    medium-high and directional; placement: marks follow the subject''s planes and forms.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: medium-high and directional; placement: marks follow the subject''s planes and forms.'
+  evidence:
+    source_ids:
+    - source-fauvism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-fauvism-primary-source
+  kind: primary
+  base_asset_id: fauvism-primary-source
+execution:
+  route: text_only
+  must:
+  - Preserve the user's subject as simplified readable masses.
+  - Choose a limited set of intense, non-natural color relationships for light, shadow, and local surfaces.
+  - Apply broad directional marks and selected dark contours.
+  - Keep value structure clear enough that the subject remains identifiable.
+  - color is freed from literal description but not from structure
+  - brushwork and simplified shape survive subject substitution
+  - no fixed harbor, bridge, portrait, or village
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - fixed harbor, bridge, Mediterranean village, or copied painting
+  - copied composition
+  - named character or branded asset
+  - mandatory harbor, bridge, Mediterranean village, or portrait
+  - This package transfers expressive color and brushwork, not the content of a source artwork.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
