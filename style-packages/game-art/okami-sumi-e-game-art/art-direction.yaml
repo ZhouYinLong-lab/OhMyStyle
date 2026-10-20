@@ -16,9 +16,8 @@ pillars:
 - 以书写性墨线、水墨晕染、纸张肌理和有限平涂色面建立游戏场景风格。它强调可读的环境层次和笔触方向，不绑定具体角色、关卡、神话人物或游戏界面。
 - 'composition: 清楚的前中后景层次; 大块留白与书写性路径; 轮廓线引导可读的探索空间'
 - 'palette: 墨黑、灰青和纸白构成骨架; 朱红、靛蓝或草绿作为少量平涂色面; 颜色保持平面而不变成赛博霓虹'
-- 'lighting: quality: graphic ink value separation with soft wash transitions and selective flat color accents;
-  behavior: Keep the requested subject and location independent from the package.; behavior: Use light as a
-  structural and material decision, not as a fixed scene.'
+- 'lighting: ink-value separation with soft wash transitions and selective flat-color accents; Express value through
+  ink wash and paper reserve; avoid conventional volumetric highlights.'
 rules:
 - id: composition
   axis: composition
@@ -54,18 +53,14 @@ rules:
   axis: lighting
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Apply the package-specific light behavior: quality: graphic ink value separation with soft
-    wash transitions and selective flat color accents; behavior: Keep the requested subject and location independent
-    from the package.; behavior: Use light as a structural and material decision, not as a fixed scene.. Keep
-    light coherent with the requested subject, medium, and scene.'
-  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: graphic ink value
-    separation with soft wash transitions and selective flat color accents; behavior: Keep the requested subject
-    and location independent from the package.; behavior: Use light as a structural and material decision,
-    not as a fixed scene..'
-  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: graphic ink value
-    separation with soft wash transitions and selective flat color accents; behavior: Keep the requested subject
-    and location independent from the package.; behavior: Use light as a structural and material decision,
-    not as a fixed scene..'
+  instruction: Use ink-value separation with soft wash transitions and selective flat-color accents. Express value
+    through ink wash and paper reserve; avoid conventional volumetric highlights. Keep the light coherent with
+    the requested subject and scene.
+  observable: 'The light quality and its effect on shadows, materials, or tonal separation are visible: ink-value
+    separation with soft wash transitions and selective flat-color accents. Express value through ink wash and
+    paper reserve; avoid conventional volumetric highlights.'
+  reject_when: 'Reject global tint, bloom, or lighting that erases the stated tonal or material distinctions:
+    ink-value separation with soft wash transitions and selective flat-color accents.'
   evidence:
     source_ids:
     - source-okami-sumi-e-game-art-primary-source
@@ -76,14 +71,14 @@ rules:
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
   instruction: 'Render the requested materials using these package-specific surface decisions: finish: fibrous
-    paper grain, dry-brush edges, pooled ink, and visible brush direction; edges: varied, deliberate edges
-    with no copied layout. Preserve detail hierarchy and material identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
-    fibrous paper grain, dry-brush edges, pooled ink, and visible brush direction; edges: varied, deliberate
-    edges with no copied layout.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    finish: fibrous paper grain, dry-brush edges, pooled ink, and visible brush direction; edges: varied, deliberate
-    edges with no copied layout.'
+    paper grain, dry-brush edges, pooled ink, and visible brush direction; edges: varied, deliberate edges with
+    no copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish: fibrous
+    paper grain, dry-brush edges, pooled ink, and visible brush direction; edges: varied, deliberate edges with
+    no copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: finish:
+    fibrous paper grain, dry-brush edges, pooled ink, and visible brush direction; edges: varied, deliberate edges
+    with no copied layout.'
   evidence:
     source_ids:
     - source-okami-sumi-e-game-art-primary-source
@@ -94,15 +89,14 @@ rules:
   importance: supporting
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
   instruction: 'Render the requested materials using these package-specific surface decisions: density: medium
-    texture in ink strokes and environmental planes, clean readability around paths and interactable forms;
-    placement: concentrated where the medium or material needs explanation. Preserve detail hierarchy and material
-    identity.'
-  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
-    medium texture in ink strokes and environmental planes, clean readability around paths and interactable
-    forms; placement: concentrated where the medium or material needs explanation.'
-  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
-    density: medium texture in ink strokes and environmental planes, clean readability around paths and interactable
-    forms; placement: concentrated where the medium or material needs explanation.'
+    texture in ink strokes and environmental planes, clean readability around paths and interactable forms; placement:
+    concentrated where the medium or material needs explanation. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density: medium
+    texture in ink strokes and environmental planes, clean readability around paths and interactable forms; placement:
+    concentrated where the medium or material needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment: density:
+    medium texture in ink strokes and environmental planes, clean readability around paths and interactable forms;
+    placement: concentrated where the medium or material needs explanation.'
   evidence:
     source_ids:
     - source-okami-sumi-e-game-art-primary-source
@@ -120,10 +114,9 @@ joint_checks:
   - composition
   - palette
   - lighting
-  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
-    preserving the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-okami-sumi-e-game-art-primary-source
   kind: primary
@@ -145,6 +138,6 @@ execution:
   - copying a specific reference composition
   - copied composition
   - named character or branded asset
-  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, or protected
-    game asset.
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, or protected game
+    asset.
   - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
