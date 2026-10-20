@@ -48,7 +48,7 @@ Evidence records distinguish institutional descriptions, direct visual observati
 | `style-packages/<category>/<id>/` | Current independent executable packages |
 | `style-packages/composites/` | Recipes assigning different packages to different roles |
 | `styles/` | The 110 inherited lightweight presets in their existing format |
-| `experiments/style-v2/` | Three manually authored directions outside the formal catalog |
+| `experiments/style-v2/` | Three focused examples and compatibility notes; all 406 formal directions live in their package folders |
 | `tasks/` | A particular subject, composition, aspect ratio, and task constraints |
 | `workflows/` | Observation, distillation, and composition of input material |
 | `skill/` and root `SKILL.md` | Agent and session interface protocols |
@@ -64,6 +64,7 @@ Composite recipes assign medium, lighting, color, foreground, or background role
 style-packages/<category>/<id>/
 ├── README.md / README.en.md
 ├── package.yaml
+├── art-direction.yaml
 ├── resource.yaml
 ├── identity.yaml
 ├── visual-signature.yaml
@@ -81,6 +82,7 @@ style-packages/<category>/<id>/
 | Artifact | Content |
 | --- | --- |
 | `package.yaml` | Package ID, version, classification, artifact entry points |
+| `art-direction.yaml` | Explicitly compiled direction, scope, visual rules, evidence, and execution constraints |
 | `resource.yaml` | Resource type, maturity, dimensions, evidence declarations |
 | `identity.yaml` | Interpretation, scope, open subject policy, exclusions |
 | `visual-signature.yaml` | Composition, lighting, color, marks, material behavior |
@@ -91,12 +93,14 @@ style-packages/<category>/<id>/
 | Reference manifest and provenance | Sources, analytical roles, rights boundaries |
 | Evaluation and examples | Criteria, candidates, accepted or rejected examples |
 
-`package.yaml` may optionally declare `files.art_direction` to register new
-rules as a package artifact. Registration alone does not change legacy
-compilation; callers must explicitly pass `--direction package`. Packages
-without this field require no conversion and retain their current path. This
-allows gradual adoption while preserving old files for compatibility and
-retrieval.
+All 406 formal packages in this repository now register
+`files.art_direction: art-direction.yaml` in `package.yaml` and contain a
+direction file using format `2.1.0`. Registration preserves the old files and
+does not change legacy compilation; callers still select the new rules
+explicitly with `--direction package`. The general package contract continues
+to allow this field to be absent for external or legacy packages. The full
+package count, registrations, and schemas pass validation, but the directions
+remain `experimental`: structural migration does not prove image quality.
 
 See the [package specification](STYLE-PACKAGE-SPEC.md) and [resource architecture](RESOURCE-ARCHITECTURE.md) for the detailed contracts.
 
@@ -106,9 +110,13 @@ The legacy compiler loads the package artifacts, but its final prompts primarily
 
 Retrieval flattens visual signature content into search terms. An Agent reading files directly may use additional rules. Retrieval, direct Agent reading, and compiled model input therefore need separate inspection. Save the actual prompts and input assets submitted to the model; editing a YAML file alone does not establish an execution change.
 
-## 5. v2 pilots: explicitly selected directions
+## 5. v2 directions: explicitly selected rules
 
-v2 keeps the formal package and registers an optional `art_direction` artifact. A direction may live in an experiment folder until it is ready to register. Sorolla, Bauhaus, ASCII, and Van Gogh now register optional experimental directions in their formal packages. The library is not automatically converted.
+v2 retains the formal package's old artifacts and adds an explicitly compiled
+`art-direction.yaml`. All 406 formal packages now register this file. It does
+not replace the old files or run through the legacy compiler automatically;
+callers select the new path explicitly. Directions remain experimental until
+image reviews are complete.
 
 | Field | Responsibility |
 | --- | --- |
@@ -261,6 +269,6 @@ The initial three pilots remain `experimental` with review `pending`; directions
 
 ## 8. Versions and migration
 
-The preserved baseline is branch `codex/style-v1-preserved` and tag `style-v1-snapshot-2026-10-18` at commit `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`. The implementation started on `codex/style-pack-v2` and is now included in `main`. Continue development on `main`; retain the old baseline for comparison. The formal library has not been bulk migrated.
+The preserved baseline is branch `codex/style-v1-preserved` and tag `style-v1-snapshot-2026-10-18` at commit `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`. The implementation started on `codex/style-pack-v2` and is now included in `main`. Continue development on `main`; retain the old baseline for comparison. All 406 formal packages now register the new direction while retaining their old package content and compilation path.
 
-Proceed through manual direction authoring, saved compiled inputs, comparison runs, rule reviews, and a decision on wider adoption. Scripts handle structure, references, and records; artistic interpretation and differences require research and review. See the [migration assessment (Chinese)](ART-STYLE-MIGRATION-ASSESSMENT.md) and [baseline worktree instructions (Chinese)](../experiments/style-v2/README.md#版本保留与回退).
+Structural migration is complete. Next, save compiled inputs, run cross-subject image comparisons, review each rule, and decide which directions can move beyond `experimental`. Directory and schema checks cannot establish image quality or stylistic differentiation. See the [migration assessment (Chinese)](ART-STYLE-MIGRATION-ASSESSMENT.md) and [baseline worktree instructions (Chinese)](../experiments/style-v2/README.md#版本保留与回退).

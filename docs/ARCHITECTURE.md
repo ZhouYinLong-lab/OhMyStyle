@@ -66,7 +66,7 @@ evidence:
 | `style-packages/<category>/<id>/` | 当前正式、独立的美术风格包 |
 | `style-packages/composites/` | 多个包按职责组合的配方 |
 | `styles/` | 继承的 110 个轻量预设，保留原有格式 |
-| `experiments/style-v2/` | 三个人工整理的新架构方向，独立于正式包目录 |
+| `experiments/style-v2/` | 三个专门示例方向与兼容说明；正式包中的 406 个方向文件位于各自包目录 |
 | `tasks/` | 一次生成的主体、构图、画幅与任务约束 |
 | `workflows/` | 输入素材的观察、提炼和编排过程 |
 | `skill/`、根目录 `SKILL.md` | Agent、多轮会话与接口使用协议 |
@@ -82,6 +82,7 @@ evidence:
 style-packages/<category>/<id>/
 ├── README.md / README.en.md
 ├── package.yaml
+├── art-direction.yaml
 ├── resource.yaml
 ├── identity.yaml
 ├── visual-signature.yaml
@@ -99,6 +100,7 @@ style-packages/<category>/<id>/
 | 文件 | 保存什么 |
 | --- | --- |
 | `package.yaml` | 包 ID、版本、分类，以及各文件入口 |
+| `art-direction.yaml` | 显式编译的新方向、适用范围、视觉规则、证据及制作约束 |
 | `resource.yaml` | 资源类型、成熟度、能力维度和证据声明 |
 | `identity.yaml` | 来源解释、范围、主体开放策略与排除项 |
 | `visual-signature.yaml` | 构图、光色、笔触、材质等视觉特征 |
@@ -109,7 +111,7 @@ style-packages/<category>/<id>/
 | `references/manifest.csv`、`provenance.yaml` | 来源、用途与权利边界 |
 | `evaluation.yaml`、`examples/` | 检查标准、候选与已接受或拒绝的样例 |
 
-`package.yaml` 可选声明 `files.art_direction`，将新版规则文件登记为包的一部分。登记本身不改变旧版编译行为；调用者需要显式传入 `--direction package`。没有这个字段的旧包无需转换，仍沿用旧路径。这样可逐包保留旧文件供兼容和检索，同时明确决定何时使用新版规则。
+本仓库的 406 个正式包现已全部在 `package.yaml` 中登记 `files.art_direction: art-direction.yaml`，并各自包含一个方向格式 `2.1.0` 的规则文件。登记不改写或删除旧版文件，也不改变旧版编译行为；调用者仍需显式传入 `--direction package` 选择新版规则。通用包规范仍允许该字段缺省，以兼容外部或旧版包。全库目录数、登记字段和 schema 通过校验，但方向仍是 `experimental`，格式迁移不等于生图效果评审通过。
 
 详细格式见 [正式包规范](STYLE-PACKAGE-SPEC.md)，资源与成熟度契约见 [资源架构](RESOURCE-ARCHITECTURE.md)。
 
@@ -121,9 +123,9 @@ style-packages/<category>/<id>/
 
 <a id="v2-direction"></a>
 
-## 5. v2 试点：显式选择的方向文件
+## 5. v2 方向：显式选择的规则文件
 
-v2 暂时保留正式包，用单独的 `direction.yaml` 描述选定方向。不会自动转换整个旧库，也不自动进入正式包检索或画廊。
+v2 在保留正式包旧文件的同时，用 `art-direction.yaml` 描述可显式编译的选定方向。当前 406 个正式包均已登记该文件；它不会取代旧版文件，也不会被旧版编译器自动加载。调用者需要显式选择新路径，视觉评审未完成前方向仍标记为实验。
 
 | 字段 | 职责 |
 | --- | --- |
@@ -277,6 +279,6 @@ ASCII 路线要求先有字面字符源，再用指定等宽字体逐格绘制�
 
 ## 8. 版本与后续推进
 
-旧版固定在 `codex/style-v1-preserved` 分支和 `style-v1-snapshot-2026-10-18` 标签，提交为 `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`。新实现最初在 `codex/style-pack-v2` 开发，现已进入 `main`；后续开发以 `main` 为准。旧版基线继续保留，正式包没有全库批量迁移。
+旧版固定在 `codex/style-v1-preserved` 分支和 `style-v1-snapshot-2026-10-18` 标签，提交为 `59d9aa10ee9eeaedf3b815688d00f3e553ef31ea`。新实现最初在 `codex/style-pack-v2` 开发，现已进入 `main`；后续开发以 `main` 为准。406 个正式包均已登记新版方向，同时保留旧包内容和旧编译路径。
 
-建议按“人工整理方向 → 保存实际编译结果 → 对照生成 → 逐规则评审 → 决定是否扩大”推进。脚本负责结构、引用和记录；视觉规则的补写、来源解释及风格差异由研究和评审决定。成本与风险见 [迁移评估](ART-STYLE-MIGRATION-ASSESSMENT.md)，独立旧版工作区命令见 [回退说明](../experiments/style-v2/README.md#版本保留与回退)。
+结构迁移已完成。后续工作是保存实际编译结果、开展跨题材生图对照并逐规则评审，再决定哪些方向可以从 `experimental` 升级。目录与 schema 校验不能代替图像质量和风格差异评审。成本与风险见 [迁移评估](ART-STYLE-MIGRATION-ASSESSMENT.md)，独立旧版工作区命令见 [回退说明](../experiments/style-v2/README.md#版本保留与回退)。

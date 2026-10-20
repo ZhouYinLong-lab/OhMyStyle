@@ -14,9 +14,7 @@ An art style package connects **scope and intent → visual rules → references
 
 See the **[art style package architecture guide](docs/ARCHITECTURE.en.md)** for artifact responsibilities, rule examples, compilation paths, literal ASCII constraints, and review.
 
-The new architecture continues on `main`. Direction format `2.0.0` keeps selected rules static; `2.1.0` adds caller-declared context filtering. Compiled jobs are schema-validated and record direction/compiler versions, and the ASCII renderer validates jobs again before rasterization.
-
-Direction format `2.0.0` keeps selected rules static; `2.1.0` adds caller-declared context filtering. Compiled jobs are schema-validated and record direction/compiler versions, and the ASCII renderer validates jobs again before rasterization. Existing formal packages opt in one at a time; packages without a registered direction keep the legacy path. Sorolla daylight, Monet, Impressionism, Pointillism, the Bauhaus paper method, the literal ASCII grid, Van Gogh's directional strokes, Morandi's quiet tonality, Hopper's architectural light, Agnes Martin's hand-drawn grid, Caravaggio's chiaroscuro, Hiroshige's atmospheric landscape print, Hokusai's graphic contour and planes, Friedrich's human scale in vast landscapes, O'Keeffe's close observation, Riley's optical rhythm, Dürer's engraved line and value structure, Mucha's ornamental poster hierarchy, Anna Ancher's domestic window light, Artemisia Gentileschi's embodied action composition, Aubrey Beardsley's ink mass and negative space, Berthe Morisot's gesture-led brushwork and open edges, Diego Rivera's public narrative registers, Diego Velázquez's gaze and depth, Degas's oblique observation and spatial crop, Schiele's contour tension and exposed ground, Munch's subjective color and environmental rhythm, Lissitzky's Proun axonometric space, El Greco's vertical lift and flickering form, Kahlo's frontal presence and personal symbolic relations, Cassatt's figure and decorative plane, Turner's weather, light, and motion, Goya's psychological portrait and selective brushwork, Wood's regional landscape pattern and vertical rhythm, Manet's direct color and compressed scene, Delacroix's chromatic motion and brushwork, Bacon's enclosed space and localized distortion, Zurbarán's ordered still life and focused side light, Seurat's measured composition and divided-color marks, Richter's layered veil and squeegee erasure, de Chirico's spatial dislocation and long-shadow geometry, and Klimt's modeled figure and ornamental field are registered as optional experimental directions in their formal packages. See the [v2 pilot guide (Chinese)](experiments/style-v2/README.md). Image comparison reviews remain pending. The old version is preserved on branch `codex/style-v1-preserved` and tag `style-v1-snapshot-2026-10-18`.
+The new architecture continues on `main`. All 406 formal packages now register an `art-direction.yaml` using direction format `2.1.0`; legacy files and compilation remain available, and callers select the new direction explicitly with `--direction package`. The full package tree passes structural validation, while all directions remain experimental pending cross-subject image comparison. See the [architecture guide](docs/ARCHITECTURE.en.md) and [v2 guide (Chinese)](experiments/style-v2/README.md) for the format, compilation path, and compatibility boundary. The old baseline is preserved on branch `codex/style-v1-preserved` and tag `style-v1-snapshot-2026-10-18`.
 
 <a id="style-package-gallery"></a>
 
@@ -556,11 +554,11 @@ If you already have a photo and want to turn it into an editorial layout, abstra
 
 Two external creative projects are registered for compatibility: [Photo Abstract Editorial](integrations/README.en.md#photo-abstract-editorial) and [Gathered Scenes Zine](integrations/README.en.md#gathered-scenes-zine). They are listed only through links and license information; their upstream skills, prompts, examples, and brand assets are not included in OhMyStyle.
 
-### Use a v2 pilot
+### Use a v2 direction
 
-Select an experimental direction explicitly with `tools/compile-style.py --direction`. Sorolla requires the `daylight` context; the paper method requires `paper-study`. ASCII requires an authored character source followed by monospace grid rendering.
+Select a package's new direction explicitly with `tools/compile-style.py --direction package`. Sorolla requires the `daylight` context; the paper method requires `paper-study`. ASCII requires an authored character source followed by monospace grid rendering.
 
-See the [v2 pilot guide (Chinese)](experiments/style-v2/README.md) for commands, input limits, and a separate baseline worktree. HTTP/MCP sessions and composite compilation still use the legacy path.
+All 406 formal packages register a v2 direction. Select it explicitly with `tools/compile-style.py --direction package`. See the [v2 guide (Chinese)](experiments/style-v2/README.md) for commands, input limits, and a separate baseline worktree. HTTP/MCP sessions and composite compilation still use the legacy path.
 
 ### Contributing and expansion
 

@@ -1,6 +1,6 @@
 # 美术风格包 v2：独立试点
 
-状态：可运行的渐进迁移架构，已逐包登记若干方向，但跨题材效果评审仍未完成。已登记的方向仍标记为实验。
+状态：可运行的显式方向编译架构。406 个正式风格包均已登记 `art-direction.yaml`（schema 2.1.0）；目录和 schema 全库校验通过。跨题材生图效果与规则差异评审仍未完成，因此方向继续标记为实验。
 
 ## 版本保留与回退
 
@@ -40,7 +40,7 @@ experiments/style-v2/<direction>/direction.yaml
 - `applies_when` 是编辑说明，不会被程序理解为条件表达式。当前用人工整理的规则集合和调用者声明的上下文控制适用范围；不会自动识别主体语句里的夜景等冲突。
 - 研究来源不自动作为图片输入。第一阶段仅支持 `references=none`、`profile=generic`，不使用旧版调色对；不支持的组合会明确拒绝。
 - 新入口必须显式传入 `--direction`。省略时沿用旧版编译路径及默认参考选择。实验目录不参与正式包检索，也不自动进入画廊。
-- 逐包迁移时，可在该包 `package.yaml` 中设置 `files.art_direction`，再用 `--direction package` 选择。原有 `visual-signature.yaml`、Prompt 和检索索引不自动改写；需要明确处理其与新规则的同步，完成评审前继续以旧路径为兼容基线。
+- 406 个正式包都已在 `package.yaml` 中设置 `files.art_direction`，通过 `--direction package` 显式选择。原有 `visual-signature.yaml`、Prompt 和检索索引均保留；新增或外部包可沿用同一登记方式。方向仍为实验状态，旧编译路径继续作为兼容入口。
 - 本阶段接入命令行与 Python 编译接口，HTTP、MCP 会话和组合包仍使用旧版路径。任务文件不是自动调用生图服务的承诺。
 
 相对于 [总体设计草案](../../docs/ART-STYLE-PACK-ARCHITECTURE.md)，这份文件是最小实施契约。设计样稿与运行文件分开，避免把尚未支持的字段当作已执行能力。
