@@ -4,7 +4,8 @@ id: de-stijl-direction
 name: 荷兰风格派
 base_package: movements/de-stijl
 scope:
-  medium: 'name: school; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
+  medium: painting and graphic composition built from orthogonal relations, flat color planes, and structural
+    lines
   representation: stylized
   description: Builds clarity through horizontal-vertical relations, rectangular color fields, black structural
     lines, and asymmetrical balance, treating composition as a system rather than a few colored shapes.
@@ -16,22 +17,21 @@ scope:
 pillars:
 - Builds clarity through horizontal-vertical relations, rectangular color fields, black structural lines, and
   asymmetrical balance, treating composition as a system rather than a few colored shapes.
-- 'medium: name: school; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
-- 'composition: priorities: visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer'
-- 'palette: name: de-stijl; usage: controlled relationship among dominant, support, shadow, and accent colors;
-  colors: name: color_0; colors: hex: #F4F2EA; colors: role: 主要留白; colors: name: color_1; colors: hex: #1D2021;
-  colors: role: 结构线'
+- 'medium: painting and graphic composition built from orthogonal relations, flat color planes, and structural
+  lines'
+- 'composition: Build an asymmetrical balance from horizontal and vertical axes, open space, and a few unequal
+  rectangles; do not copy a canonical grid.'
+- 'palette: Warm white ground, near-black structure, red, blue, and yellow focal planes, with rare gray transitions.'
 rules:
 - id: medium
   axis: medium
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: name:
-    school; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  observable: 'The requested image retains the stated medium distinction or production constraint: name: school;
-    visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
-  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
-    name: school; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
+  instruction: Render in painting and graphic composition built from orthogonal relations, flat color planes,
+    and structural lines; make the production or rendering process visible in edge, surface, and tonal evidence.
+  observable: The image visibly reads as painting and graphic composition built from orthogonal relations, flat
+    color planes, and structural lines, rather than a generic color treatment.
+  reject_when: Reject when the material or rendering process cannot be distinguished from a generic filter.
   evidence:
     source_ids:
     - source-source-1
@@ -42,13 +42,11 @@ rules:
   axis: composition
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Organize the requested subject using these package-specific spatial decisions: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer. Preserve
-    the user-provided content and layout.'
-  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: priorities: visual_hierarchy;
-    priorities: negative_space; priorities: subject_independent_style_transfer.'
-  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: priorities:
-    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer.'
+  instruction: Build an asymmetrical balance from horizontal and vertical axes, open space, and a few unequal
+    rectangles; do not copy a canonical grid. Preserve the user-provided subject and requested layout.
+  observable: Build an asymmetrical balance from horizontal and vertical axes, open space, and a few unequal rectangles;
+    do not copy a canonical grid.
+  reject_when: Reject when the arrangement loses these structural decisions or copies a source composition.
   evidence:
     source_ids:
     - source-source-1
@@ -59,17 +57,10 @@ rules:
   axis: palette
   importance: core
   applies_when: Always when this visual direction is selected and compatible with the requested medium.
-  instruction: 'Use these package-specific color roles and relationships: name: de-stijl; usage: controlled
-    relationship among dominant, support, shadow, and accent colors; colors: name: color_0; colors: hex: #F4F2EA;
-    colors: role: 主要留白; colors: name: color_1; colors: hex: #1D2021; colors: role: 结构线. Adapt their balance
-    to the requested subject; do not apply them as a uniform tint.'
-  observable: 'The stated colors and their roles are visible and distinguishable: name: de-stijl; usage: controlled
-    relationship among dominant, support, shadow, and accent colors; colors: name: color_0; colors: hex: #F4F2EA;
-    colors: role: 主要留白; colors: name: color_1; colors: hex: #1D2021; colors: role: 结构线.'
-  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
-    name: de-stijl; usage: controlled relationship among dominant, support, shadow, and accent colors; colors:
-    name: color_0; colors: hex: #F4F2EA; colors: role: 主要留白; colors: name: color_1; colors: hex: #1D2021; colors:
-    role: 结构线.'
+  instruction: Use warm white as the open ground, near-black for structural lines, and restrained red, blue, or
+    yellow as separated color planes. Keep gray transitional areas rare.
+  observable: Warm white ground, near-black structure, red, blue, and yellow focal planes, with rare gray transitions.
+  reject_when: Reject when a global tint replaces the stated color roles or the roles cannot be distinguished.
   evidence:
     source_ids:
     - source-source-1
@@ -88,8 +79,7 @@ joint_checks:
   - palette
   instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
     the user-specified subject and layout.
-  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
-    subject.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided subject.
 sources:
 - id: source-source-1
   kind: style_reference
