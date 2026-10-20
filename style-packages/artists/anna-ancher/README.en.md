@@ -24,10 +24,10 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 ## New architecture: window light and domestic planes (experimental)
 
-`art-direction.yaml` scopes this direction to window-lit interiors. Daylight enters from one legible direction and creates readable color relationships across at least two room planes, such as a wall, floor, or furnishing. People and domestic activity appear only when requested; the direction does not invent figures, plants, windows, or props. It describes how interior daylight organizes a room, rather than outdoor impressionist mark-making or theatrical spotlighting.
+`art-direction.yaml` uses direction format 2.1.0 and scopes this direction to window-lit interiors. Daylight enters from one legible direction and creates readable color relationships across at least two room planes, such as a wall, floor, or furnishing. The domestic-activity rule applies only when the caller declares `requested-domestic-activity`; the direction does not invent figures, plants, windows, or props. It describes how interior daylight organizes a room, rather than outdoor impressionist mark-making or theatrical spotlighting.
 
 ```powershell
-python tools/compile-style.py style-packages/artists/anna-ancher --direction package --context window-lit-interior --subject "A woman reading beside a window in a quiet room" --output runs/style-v2/anna-ancher-job.json
+python tools/compile-style.py style-packages/artists/anna-ancher --direction package --context window-lit-interior --context requested-domestic-activity --subject "A woman reading beside a window in a quiet room" --output runs/style-v2/anna-ancher-job.json
 ```
 
 This direction remains experimental. Generated examples and stability across subjects still need human review. See `art-direction.yaml` and `provenance.yaml` for the rule and source basis.
