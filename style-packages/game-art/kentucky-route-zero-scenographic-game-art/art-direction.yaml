@@ -1,0 +1,154 @@
+schema_version: 2.1.0
+status: experimental
+id: kentucky-route-zero-scenographic-game-art-direction
+name: 肯塔基零号公路舞台化游戏美术
+base_package: game-art/kentucky-route-zero-scenographic-game-art
+scope:
+  medium: stylized low-poly 3D environment with theatrical staging
+  representation: stylized
+  description: 以舞台布景式三维空间、低多边形形体、慢电影镜头和克制灯光，构成可迁移的游戏环境视觉语言。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以舞台布景式三维空间、低多边形形体、慢电影镜头和克制灯光，构成可迁移的游戏环境视觉语言。
+- 'composition: Compose environments like theatrical sets: strong stage planes, deliberate entrances, and readable
+  silhouettes.; Use slow, patient framing with a small number of carefully placed forms and generous negative
+  space.'
+- 'palette: Combine muted asphalt, wood, and paper colors with one atmospheric accent such as sodium amber
+  or nocturnal blue.; Keep colors matte and spatially motivated rather than glossy or hyper-saturated.'
+- 'lighting: quality: low-key stage light with calm pools of illumination; behavior: Use visible light zones
+  and quiet shadow planes; avoid cinematic spectacle and constant rim light.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Compose environments
+    like theatrical sets: strong stage planes, deliberate entrances, and readable silhouettes.; Use slow, patient
+    framing with a small number of carefully placed forms and generous negative space.. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Compose environments
+    like theatrical sets: strong stage planes, deliberate entrances, and readable silhouettes.; Use slow, patient
+    framing with a small number of carefully placed forms and generous negative space..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Compose
+    environments like theatrical sets: strong stage planes, deliberate entrances, and readable silhouettes.;
+    Use slow, patient framing with a small number of carefully placed forms and generous negative space..'
+  evidence:
+    source_ids:
+    - source-kentucky-route-zero-scenographic-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Combine muted asphalt, wood, and
+    paper colors with one atmospheric accent such as sodium amber or nocturnal blue.; Keep colors matte and
+    spatially motivated rather than glossy or hyper-saturated.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Combine muted asphalt, wood,
+    and paper colors with one atmospheric accent such as sodium amber or nocturnal blue.; Keep colors matte
+    and spatially motivated rather than glossy or hyper-saturated..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Combine muted asphalt, wood, and paper colors with one atmospheric accent such as sodium amber or nocturnal
+    blue.; Keep colors matte and spatially motivated rather than glossy or hyper-saturated..'
+  evidence:
+    source_ids:
+    - source-kentucky-route-zero-scenographic-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: low-key stage light with calm pools of
+    illumination; behavior: Use visible light zones and quiet shadow planes; avoid cinematic spectacle and
+    constant rim light.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: low-key stage light
+    with calm pools of illumination; behavior: Use visible light zones and quiet shadow planes; avoid cinematic
+    spectacle and constant rim light..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: low-key stage
+    light with calm pools of illumination; behavior: Use visible light zones and quiet shadow planes; avoid
+    cinematic spectacle and constant rim light..'
+  evidence:
+    source_ids:
+    - source-kentucky-route-zero-scenographic-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: simplified
+    low-poly or painted 3D surface; edges: faceted, clean, and slightly uncanny rather than smooth photorealistic
+    edges. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    simplified low-poly or painted 3D surface; edges: faceted, clean, and slightly uncanny rather than smooth
+    photorealistic edges.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: simplified low-poly or painted 3D surface; edges: faceted, clean, and slightly uncanny rather than
+    smooth photorealistic edges.'
+  evidence:
+    source_ids:
+    - source-kentucky-route-zero-scenographic-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    to moderate; placement: concentrated on a few props and architectural surfaces; keep distant forms economical.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low to moderate; placement: concentrated on a few props and architectural surfaces; keep distant forms
+    economical.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low to moderate; placement: concentrated on a few props and architectural surfaces; keep distant
+    forms economical.'
+  evidence:
+    source_ids:
+    - source-kentucky-route-zero-scenographic-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-kentucky-route-zero-scenographic-game-art-primary-source
+  kind: primary
+  base_asset_id: kentucky-route-zero-scenographic-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - block the scene as a stage set with a clear foreground, middle plane, and backdrop
+  - simplify objects into readable faceted masses and assign matte materials
+  - add a slow, localized light cue and leave space for the user's subject or action
+  - preserve scenographic staging and slow-camera readability
+  - preserve simplified forms, matte surfaces, and quiet atmospheric color
+  - preserve ambiguity without forcing a roadside, cave, or rural American setting
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
