@@ -1,0 +1,155 @@
+schema_version: 2.1.0
+status: experimental
+id: fluxus-direction
+name: 激浪派
+base_package: movements/fluxus
+scope:
+  medium: cross-media event documentation and conceptual image-making
+  representation: stylized
+  description: 以事件分数、日常材料、开放行动、反精致处理和跨媒介关系组织视觉任务，让普通动作成为可观察的构成规则，而不是固定故事或道具清单。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - mandatory score card, performance costume, stage, or fixed everyday object
+pillars:
+- 以事件分数、日常材料、开放行动、反精致处理和跨媒介关系组织视觉任务，让普通动作成为可观察的构成规则，而不是固定故事或道具清单。
+- 'composition: one simple action or rule creates tension inside an otherwise ordinary arrangement; generous
+  negative space and matter-of-fact framing keep the result open-ended; visible traces of before, during, or
+  after allow the image to read as an event record'
+- 'palette: modest paper, wood, graphite, and daylight neutrals with one or two blunt accent colors; color
+  is material evidence, not a decorative gradient or polished brand system'
+- 'lighting: quality: TODO; behavior: TODO: describe direction, softness, contrast, or atmospheric behavior.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: one simple action
+    or rule creates tension inside an otherwise ordinary arrangement; generous negative space and matter-of-fact
+    framing keep the result open-ended; visible traces of before, during, or after allow the image to read
+    as an event record. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: one simple action
+    or rule creates tension inside an otherwise ordinary arrangement; generous negative space and matter-of-fact
+    framing keep the result open-ended; visible traces of before, during, or after allow the image to read
+    as an event record.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: one simple
+    action or rule creates tension inside an otherwise ordinary arrangement; generous negative space and matter-of-fact
+    framing keep the result open-ended; visible traces of before, during, or after allow the image to read
+    as an event record.'
+  evidence:
+    source_ids:
+    - source-fluxus-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: modest paper, wood, graphite, and
+    daylight neutrals with one or two blunt accent colors; color is material evidence, not a decorative gradient
+    or polished brand system. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: modest paper, wood, graphite,
+    and daylight neutrals with one or two blunt accent colors; color is material evidence, not a decorative
+    gradient or polished brand system.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    modest paper, wood, graphite, and daylight neutrals with one or two blunt accent colors; color is material
+    evidence, not a decorative gradient or polished brand system.'
+  evidence:
+    source_ids:
+    - source-fluxus-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: TODO; behavior: TODO: describe direction,
+    softness, contrast, or atmospheric behavior.. Keep light coherent with the requested subject, medium, and
+    scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: TODO; behavior: TODO:
+    describe direction, softness, contrast, or atmospheric behavior..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: TODO; behavior:
+    TODO: describe direction, softness, contrast, or atmospheric behavior..'
+  evidence:
+    source_ids:
+    - source-fluxus-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: handled,
+    provisional, and lightly imperfect; edges: ordinary object edges and direct photographic boundaries. Preserve
+    detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    handled, provisional, and lightly imperfect; edges: ordinary object edges and direct photographic boundaries.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: handled, provisional, and lightly imperfect; edges: ordinary object edges and direct photographic
+    boundaries.'
+  evidence:
+    source_ids:
+    - source-fluxus-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: low
+    to moderate, with local evidence of use; placement: concentrated on cheap materials, joints, marks, and
+    small changes of position. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    low to moderate, with local evidence of use; placement: concentrated on cheap materials, joints, marks,
+    and small changes of position.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: low to moderate, with local evidence of use; placement: concentrated on cheap materials, joints,
+    marks, and small changes of position.'
+  evidence:
+    source_ids:
+    - source-fluxus-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-fluxus-primary-source
+  kind: primary
+  base_asset_id: fluxus-primary-source
+execution:
+  route: text_only
+  must:
+  - begin with the user's subject and desired visual situation
+  - identify one small action, rule, interruption, or relation that changes the situation
+  - stage only what is needed and leave evidence of the action in the frame
+  - finish with direct light, modest material texture, and unresolved space
+  - a clear but not over-explained action or visual rule
+  - ordinary material presence and anti-polished handling
+  - room for multiple interpretations rather than a closed narrative
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - mandatory score card, performance costume, stage, or fixed everyday object
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
