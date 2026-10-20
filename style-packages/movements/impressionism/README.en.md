@@ -20,14 +20,14 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 ## New direction (experimental)
 
-`art-direction.yaml` defines Impressionism at the **movement level**: visible rapid painting actions, local colors shaped by light, color-bearing shadows, and immediate yet composed framing. It does not claim that every painter used the same mark or that pointillism is the movement's default technique.
+`art-direction.yaml` uses direction format 2.1.0 and defines Impressionism at the **movement level**: visible rapid painting actions, local colors shaped by light, and immediate yet composed framing. The color-bearing-shadow rule activates only when the caller declares `visible-reflective-surface`, grounding reflected color in a scene source. It does not claim that every painter used the same mark or that pointillism is the movement's default technique.
 
 This differs from the Monet artist package, which focuses on one painter's weather observation, serial motifs, and atmospheric distance. This package keeps only shared tendencies across multiple participants and allows subjects and composition to vary. It also differs from Sorolla's strong directional sunlight and sourced bounce light, and from Neo-Impressionism's systematic dot arrangement. Choose an artist package when a specific painter is intended.
 
 The new rules remain experimental and must be selected explicitly. Without `--direction`, the existing prompt path is used:
 
 ```powershell
-python tools/compile-style.py style-packages/movements/impressionism --direction package --context daylight --subject "A neighborhood street market after rain, vendors arranging crates, muted spring daylight" --output runs/impressionism-v2-job.json
+python tools/compile-style.py style-packages/movements/impressionism --direction package --context daylight --context visible-reflective-surface --subject "A neighborhood street market after rain, vendors arranging crates, muted spring daylight" --output runs/impressionism-v2-job.json
 ```
 
 For review, compare at least three different subjects under changing light. Check that rapid marks and local light-color remain visible without automatically adding artist-specific motifs such as water lilies, dancers, or cafés.

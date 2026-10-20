@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: impressionism-shared-practice
 name: 印象主义：共享的瞬时观察方法
@@ -18,6 +18,13 @@ scope:
     - 印象主义内部存在不同画家、题材和技法；本方向只给出共享方法，不声称适用于每件历史作品。
     - 需要可以观察到的光线、局部色彩或表面变化；若用户要求夜景，应另行选择适合夜景的具体方向。
     - 破碎笔触不等同于规则点描；不得自动套用修拉式点彩的机械排列。
+contexts:
+  - id: daylight
+    description: A scene organized by natural daylight.
+  - id: photographic-output
+    description: A requested output with no visible painterly marks.
+  - id: visible-reflective-surface
+    description: The scene contains a visible water, wet, or other reflective surface that can provide local reflected color.
 pillars:
   - 通过可见、快速的笔触保留现场观察的即时感，同时维持经过安排的整体构图。
   - 让高光、阴影和环境反射带有局部色彩，不依赖黑灰明暗或全画同色滤镜。
@@ -67,6 +74,8 @@ rules:
   - id: impressionism-color-bearing-shadow
     axis: palette
     importance: core
+    when_contexts:
+      - visible-reflective-surface
     applies_when: 画面包含受光面、阴影面或环境色反射。
     instruction: >-
       让阴影和亮部保留局部色彩，把附近天空、地面、衣物或建筑的颜色带入相邻
