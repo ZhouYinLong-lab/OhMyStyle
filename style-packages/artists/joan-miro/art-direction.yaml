@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: miro-suspended-biomorphic-sign-field
 name: Miró suspended biomorphic sign field
@@ -25,6 +25,19 @@ scope:
     - Do not turn a recognizable requested object into an unrelated biomorphic symbol.
     - Add no stars, eyes, birds, people, letters, moons, or cosmic motifs unless explicitly requested.
     - Do not copy a named print, painting, or recognizable motif arrangement.
+contexts:
+  - id: suspended-biomorphic-sign-field
+    description: The user requests an abstract or stylized field of organic and geometric forms.
+  - id: photorealistic-scene
+    description: The user requests a photorealistic scene.
+  - id: strict-orthogonal-grid
+    description: The user requires a strict orthogonal grid.
+  - id: axial-symbolic-diagram
+    description: The user requests an axial symbolic diagram.
+  - id: user-requested-drawn-line-with-separate-abstract-forms
+    description: The user requests a drawn line alongside separate abstract forms.
+  - id: user-requested-limited-color-abstract-composition
+    description: The user requests a limited-color abstract composition.
 pillars:
   - Give the requested curving line and filled forms separate but related roles; allow the line to pass near, touch, or visually lead between forms without outlining every shape.
   - Balance asymmetry through spacing and counterweight across the open ground rather than through a central axis, radial symmetry, or rigid grid.
@@ -34,6 +47,8 @@ rules:
   - id: line-as-loose-connector
     axis: line_and_shape_relation
     importance: core
+    when_contexts:
+      - user-requested-drawn-line-with-separate-abstract-forms
     applies_when: The user requests a drawn line together with separate abstract forms.
     instruction: Use the requested line as a loose visual path that can approach or connect selected forms; keep it independent from the contours of other forms so line and shape remain distinct.
     observable: The line guides attention across the field without becoming a uniform outline or an unrequested literal object.
@@ -48,6 +63,8 @@ rules:
   - id: asymmetrical-open-ground
     axis: composition_and_spacing
     importance: core
+    when_contexts:
+      - suspended-biomorphic-sign-field
     applies_when: The user requests a nonfigurative or stylized arrangement with available negative space.
     instruction: Distribute the requested forms asymmetrically, using their scale and distance as counterweights; leave broad quiet ground and avoid a central axis, repeated row, or all-over pattern.
     observable: The composition feels balanced without mirror symmetry or a grid, and each requested form can be read separately.
@@ -61,6 +78,8 @@ rules:
   - id: local-color-islands
     axis: palette_and_surface
     importance: supporting
+    when_contexts:
+      - user-requested-limited-color-abstract-composition
     applies_when: The user requests a limited-color abstract composition.
     instruction: Keep saturated color in a few bounded planes and preserve the underlying ground; use matte, direct color with minimal shading unless the user requests volume.
     observable: Color accents remain localized and the open ground contributes to the composition.

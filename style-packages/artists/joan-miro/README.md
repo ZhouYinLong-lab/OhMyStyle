@@ -29,7 +29,7 @@
 
 ## 新架构：悬置的有机形与开放色场（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 只在用户要求抽象或风格化形体组合并声明 `suspended-biomorphic-sign-field` 时启用。方向把用户指定的曲线、色面与形体分开处理：线条可以靠近或引导视线经过色形，但不必包围每个形体；构图用不对称间距和留白取得平衡，避免轴线、网格或满版符号。不会自动加入星星、眼睛、鸟、人物、文字、月亮等固定图像。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，只在用户要求抽象或风格化形体组合并声明 `suspended-biomorphic-sign-field` 时启用。不对称间距和留白是基础规则；调用者可按需声明 `user-requested-drawn-line-with-separate-abstract-forms` 和 `user-requested-limited-color-abstract-composition`，启用线条连接或局部色块规则。不会自动加入星星、眼睛、鸟、人物、文字、月亮等固定图像。
 
 这与克林特依靠轴线、螺旋和几何—有机对照建立结构的方法不同，也不同于蒙德里安的正交网格；米罗方向让曲线、分离色形和开放底色形成较松动的视觉关系。MoMA 对米罗符号语言、曲线和生物形态的说明可作形式依据，但不复用任何具体符号或构图。
 

@@ -29,7 +29,7 @@ See `visual-signature.yaml`, `reproduction.yaml`, `palette/palette.json`, and `e
 
 ## New architecture: suspended biomorphic forms and open color field (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) activates only for a user-requested abstract or stylized arrangement when `suspended-biomorphic-sign-field` is declared. It treats the user's curves, color planes, and shapes separately: a line may approach or guide the eye between color forms without outlining every shape; asymmetrical spacing and negative space balance the field without an axis, grid, or an all-over symbol pattern. No stars, eyes, birds, people, letters, or moons are added by default.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and activates only for a user-requested abstract or stylized arrangement when `suspended-biomorphic-sign-field` is declared. Asymmetrical spacing and negative space are base rules; callers can add `user-requested-drawn-line-with-separate-abstract-forms` or `user-requested-limited-color-abstract-composition` to activate line-connection or local-color guidance as applicable. No stars, eyes, birds, people, letters, or moons are added by default.
 
 This differs from af Klint's axis, spiral, and geometric-biomorphic structure, and from Mondrian's orthogonal grid. The Miró direction keeps a looser relationship among curved line, separate color forms, and open ground. MoMA's notes on Miró's sign language, curvilinear lines, and biomorphic forms provide formal context without copying any specific symbol or arrangement.
 
