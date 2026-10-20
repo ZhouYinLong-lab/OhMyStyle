@@ -94,6 +94,8 @@ def _profile_data(runtime: dict[str, Any], profile: str) -> dict[str, Any]:
     if not isinstance(profiles, dict):
         raise ValueError("evaluation.profiles must be an object")
     if profiles:
+        if profile == "default" and profile not in profiles and len(profiles) == 1:
+            profile = next(iter(profiles))
         if profile not in profiles:
             available = ", ".join(sorted(str(name) for name in profiles))
             raise ValueError(f"Unknown evaluation profile {profile!r}; available: {available}")
