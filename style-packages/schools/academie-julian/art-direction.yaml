@@ -1,0 +1,197 @@
+schema_version: 2.1.0
+status: experimental
+id: academie-julian-direction
+name: 朱利安学院
+base_package: schools/academie-julian
+scope:
+  medium: Combine charcoal or graphite study logic with controlled oil-paint finish when the requested medium
+    is painting.; Keep line, value, and proportion decisions readable rather than burying them under texture.
+  representation: stylized
+  description: 以巴黎私人工作室式教学、持续写生、炭笔人体习作和师生围绕画架交流为核心，呈现开放的职业化艺术训练氛围。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - grand_state_academy_hall
+  - abstract_workshop_installation
+  - copied_historical_classroom
+pillars:
+- 以巴黎私人工作室式教学、持续写生、炭笔人体习作和师生围绕画架交流为核心，呈现开放的职业化艺术训练氛围。
+- 'medium: Combine charcoal or graphite study logic with controlled oil-paint finish when the requested medium
+  is painting.; Keep line, value, and proportion decisions readable rather than burying them under texture.'
+- 'composition: When creating a requested artwork, establish pose, proportion, and large value groups before
+  local finish.; Keep the main figure or object clearly grounded in space; use simple background planes rather
+  than ornamental institutional architecture.; Let preparatory marks or alternate contour traces remain selectively
+  visible where they explain the construction.'
+- 'palette: Favor charcoal gray, warm paper, earth pigments, and restrained color accents.; Let color remain
+  subordinate to drawing and tonal structure; do not impose a fixed palette on unrelated subject matter.'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: Combine
+    charcoal or graphite study logic with controlled oil-paint finish when the requested medium is painting.;
+    Keep line, value, and proportion decisions readable rather than burying them under texture..'
+  observable: 'The requested image retains the stated medium distinction or production constraint: Combine
+    charcoal or graphite study logic with controlled oil-paint finish when the requested medium is painting.;
+    Keep line, value, and proportion decisions readable rather than burying them under texture..'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    Combine charcoal or graphite study logic with controlled oil-paint finish when the requested medium is
+    painting.; Keep line, value, and proportion decisions readable rather than burying them under texture..'
+  evidence:
+    source_ids:
+    - source-julian-orsay-un-meeting
+    - source-julian-orsay-history
+    - source-julian-met-women-artists
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: When creating
+    a requested artwork, establish pose, proportion, and large value groups before local finish.; Keep the
+    main figure or object clearly grounded in space; use simple background planes rather than ornamental institutional
+    architecture.; Let preparatory marks or alternate contour traces remain selectively visible where they
+    explain the construction.. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: When creating a requested
+    artwork, establish pose, proportion, and large value groups before local finish.; Keep the main figure
+    or object clearly grounded in space; use simple background planes rather than ornamental institutional
+    architecture.; Let preparatory marks or alternate contour traces remain selectively visible where they
+    explain the construction..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: When creating
+    a requested artwork, establish pose, proportion, and large value groups before local finish.; Keep the
+    main figure or object clearly grounded in space; use simple background planes rather than ornamental institutional
+    architecture.; Let preparatory marks or alternate contour traces remain selectively visible where they
+    explain the construction..'
+  evidence:
+    source_ids:
+    - source-julian-orsay-un-meeting
+    - source-julian-orsay-history
+    - source-julian-met-women-artists
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Favor charcoal gray, warm paper,
+    earth pigments, and restrained color accents.; Let color remain subordinate to drawing and tonal structure;
+    do not impose a fixed palette on unrelated subject matter.. Adapt their balance to the requested subject;
+    do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Favor charcoal gray, warm
+    paper, earth pigments, and restrained color accents.; Let color remain subordinate to drawing and tonal
+    structure; do not impose a fixed palette on unrelated subject matter..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Favor charcoal gray, warm paper, earth pigments, and restrained color accents.; Let color remain subordinate
+    to drawing and tonal structure; do not impose a fixed palette on unrelated subject matter..'
+  evidence:
+    source_ids:
+    - source-julian-orsay-un-meeting
+    - source-julian-orsay-history
+    - source-julian-met-women-artists
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: Use clear studio-like light to reveal form and planes
+    without theatrical chiaroscuro.; Model volume with grouped values and observed cast shadows.. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: Use clear studio-like light
+    to reveal form and planes without theatrical chiaroscuro.; Model volume with grouped values and observed
+    cast shadows..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: Use clear studio-like
+    light to reveal form and planes without theatrical chiaroscuro.; Model volume with grouped values and observed
+    cast shadows..'
+  evidence:
+    source_ids:
+    - source-julian-orsay-un-meeting
+    - source-julian-orsay-history
+    - source-julian-met-women-artists
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Preserve paper
+    grain, sketch traces, or measured brush layers only where appropriate to the requested medium.; Make revision
+    and construction purposeful, not distressed decoration.. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Preserve
+    paper grain, sketch traces, or measured brush layers only where appropriate to the requested medium.; Make
+    revision and construction purposeful, not distressed decoration..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Preserve paper grain, sketch traces, or measured brush layers only where appropriate to the requested medium.;
+    Make revision and construction purposeful, not distressed decoration..'
+  evidence:
+    source_ids:
+    - source-julian-orsay-un-meeting
+    - source-julian-orsay-history
+    - source-julian-met-women-artists
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: Prefer observational
+    marks and value studies over a signature surface effect.. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: Prefer observational
+    marks and value studies over a signature surface effect..'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    Prefer observational marks and value studies over a signature surface effect..'
+  evidence:
+    source_ids:
+    - source-julian-orsay-un-meeting
+    - source-julian-orsay-history
+    - source-julian-met-women-artists
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-julian-orsay-un-meeting
+  kind: primary
+  base_asset_id: julian-orsay-un-meeting
+- id: source-julian-orsay-history
+  kind: primary
+  base_asset_id: julian-orsay-history
+- id: source-julian-met-women-artists
+  kind: secondary
+  base_asset_id: julian-met-women-artists
+execution:
+  route: text_only
+  must:
+  - Translate the user brief into a clear pose, object structure, or spatial arrangement.
+  - Observe proportions and large value masses before adding detail.
+  - Use construction lines or a tonal study to check balance and anatomy where relevant.
+  - Revise contours in response to observed form; avoid ornamental or automatic strokes.
+  - Resolve the requested medium with selective finish while allowing a few study marks to remain.
+  - 'The distinctive identity is a method of study: observe, block in, test proportions, revise, then resolve.'
+  - Keep the process visible enough to distinguish an atelier study from a polished court portrait or a finished
+    gallery installation.
+  - Do not force a classroom, easel, student, model, or 19th-century setting into the user's subject.
+  avoid:
+  - grand_state_academy_hall
+  - abstract_workshop_installation
+  - copied_historical_classroom
+  - The package abstracts documented pedagogical context; do not reproduce a named student, historical class
+    scene, work, logo, or exact composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
