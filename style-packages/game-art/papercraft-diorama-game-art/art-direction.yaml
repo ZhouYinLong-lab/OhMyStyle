@@ -1,0 +1,152 @@
+schema_version: 2.1.0
+status: experimental
+id: papercraft-diorama-game-art-direction
+name: 纸艺立体书游戏美术
+base_package: game-art/papercraft-diorama-game-art
+scope:
+  medium: 彩纸、卡纸、瓦楞纸与胶水的视觉暗示; 边缘略有纤维和切割痕; 层间距离真实可读
+  representation: stylized
+  description: 将场景拆成纸张、折痕、剪影和层叠立体结构，使用真实纸艺的边缘、阴影与轻微手作误差构成可游玩的微型世界。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - photorealistic_material_scan
+  - seamless_cgi_surface
+  - random_collage
+  - copied_game_asset
+pillars:
+- 将场景拆成纸张、折痕、剪影和层叠立体结构，使用真实纸艺的边缘、阴影与轻微手作误差构成可游玩的微型世界。
+- 'medium: 彩纸、卡纸、瓦楞纸与胶水的视觉暗示; 边缘略有纤维和切割痕; 层间距离真实可读'
+- 'composition: 用前中后层纸片形成明确景深; 折叠、开窗、切口和悬挂结构可成为构图骨架; 画面像被放在桌上的小型剧场'
+- 'palette: 纸白、天蓝、珊瑚、草绿和暖黄组成明快色组; 同一物体保持单一主色和少量阴影; 避免全局灰褐滤镜'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 彩纸、卡纸、瓦楞纸与胶水的视觉暗示;
+    边缘略有纤维和切割痕; 层间距离真实可读.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 彩纸、卡纸、瓦楞纸与胶水的视觉暗示;
+    边缘略有纤维和切割痕; 层间距离真实可读.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    彩纸、卡纸、瓦楞纸与胶水的视觉暗示; 边缘略有纤维和切割痕; 层间距离真实可读.'
+  evidence:
+    source_ids:
+    - source-papercraft-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 用前中后层纸片形成明确景深;
+    折叠、开窗、切口和悬挂结构可成为构图骨架; 画面像被放在桌上的小型剧场. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 用前中后层纸片形成明确景深; 折叠、开窗、切口和悬挂结构可成为构图骨架;
+    画面像被放在桌上的小型剧场.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 用前中后层纸片形成明确景深;
+    折叠、开窗、切口和悬挂结构可成为构图骨架; 画面像被放在桌上的小型剧场.'
+  evidence:
+    source_ids:
+    - source-papercraft-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 纸白、天蓝、珊瑚、草绿和暖黄组成明快色组; 同一物体保持单一主色和少量阴影;
+    避免全局灰褐滤镜. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 纸白、天蓝、珊瑚、草绿和暖黄组成明快色组; 同一物体保持单一主色和少量阴影;
+    避免全局灰褐滤镜.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    纸白、天蓝、珊瑚、草绿和暖黄组成明快色组; 同一物体保持单一主色和少量阴影; 避免全局灰褐滤镜.'
+  evidence:
+    source_ids:
+    - source-papercraft-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 柔和顶侧光投下纸片阴影; 折痕和层边用真实遮挡表现; 不使用发光轮廓. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 柔和顶侧光投下纸片阴影; 折痕和层边用真实遮挡表现;
+    不使用发光轮廓.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 柔和顶侧光投下纸片阴影; 折痕和层边用真实遮挡表现;
+    不使用发光轮廓.'
+  evidence:
+    source_ids:
+    - source-papercraft-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纸张粗糙度和折痕是主要材质信号;
+    胶带或钉合只在需要时出现. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纸张粗糙度和折痕是主要材质信号;
+    胶带或钉合只在需要时出现.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纸张粗糙度和折痕是主要材质信号; 胶带或钉合只在需要时出现.'
+  evidence:
+    source_ids:
+    - source-papercraft-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纤维、剪切边和轻微手工不齐;
+    纹理不可变成噪点滤镜. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纤维、剪切边和轻微手工不齐;
+    纹理不可变成噪点滤镜.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纤维、剪切边和轻微手工不齐; 纹理不可变成噪点滤镜.'
+  evidence:
+    source_ids:
+    - source-papercraft-diorama-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-papercraft-diorama-game-art-primary-source
+  kind: primary
+  base_asset_id: papercraft-diorama-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先分层并确定遮挡关系
+  - 再设计可见折痕和切口
+  - 最后加入纸面色块与投影
+  - 检查所有物体是否保持同一缩尺
+  - 所有层都像同一套纸艺模型
+  - 空间不是平面贴图拼贴
+  - 不得复刻游戏角色或截图
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic_material_scan
+  - seamless_cgi_surface
+  - random_collage
+  - copied_game_asset
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
