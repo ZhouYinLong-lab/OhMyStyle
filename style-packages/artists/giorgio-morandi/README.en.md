@@ -105,3 +105,7 @@ python tools/compile-style.py style-packages/artists/giorgio-morandi --direction
 ```
 
 Compilation does not call an image-generation service. Casa Museo Morandi, the Vatican Museums, and MoMA collection descriptions support the observations about subtle color and spatial variation, grouped objects, and modulated tonality.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

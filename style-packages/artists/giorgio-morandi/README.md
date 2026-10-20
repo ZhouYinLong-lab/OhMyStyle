@@ -83,3 +83,7 @@ python tools/compile-style.py style-packages/artists/giorgio-morandi --direction
 ```
 
 编译任务不会自动调用生图服务。Casa Museo Morandi、梵蒂冈博物馆和 MoMA 的馆藏说明支持本方向对微妙色彩/空间变化、器物分组和调性构成的观察。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。
