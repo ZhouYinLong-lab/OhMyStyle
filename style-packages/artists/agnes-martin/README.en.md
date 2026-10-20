@@ -98,3 +98,7 @@ python tools/compile-style.py style-packages/artists/agnes-martin --direction pa
 ```
 
 The direction remains experimental. Guggenheim and MoMA sources support the observations about hand-drawn grids, subdued fields, and line variation; its subject limitation is part of the scope contract.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.

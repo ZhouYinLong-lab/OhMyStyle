@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "agnes-martin",
+    "name": "艾格尼丝·马丁",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\agnes-martin"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A quiet nonfigurative square field of pale blue and warm gray",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A quiet nonfigurative square field of pale blue and warm gray\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls\nvisual treatment only: medium, composition, lighting, palette, surface,\ntexture, and edge behavior. Do not add a recurring object, setting, character,\nlandmark, or narrative motif unless the user explicitly requests it. Any\nconcrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate a new subject and composition using these observable visual decisions:\n- 画面大多由单一网格或平行线系统控制\n- 留白和边缘比例十分重要\n- 局部偏移产生手工呼吸感\n- 灰白、淡粉、浅蓝、米黄和柔灰组成低对比色组\n- 颜色变化细微且不脏\n- 不加入强烈焦点色\n- 铅笔或细线与薄层丙烯/油彩\n- 手工绘制的重复结构\n- 平静哑光表面\n- 均匀漫射光\n- 不使用戏剧阴影或镜面高光\n- 表面微差由细线和颜料层表达\n- 纸、画布和薄颜料的轻微吸收感\n- 不做玻璃质感\n- 纹理极少但不完全无纹理\n- 线条粗细有微小变化\n- 克制、重复和非机械的精度同时存在\n- 安静来自比例而非空白模板\n- 不复制原作网格\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- perfect_digital_grid\n- loud_gradient\n- decorative_pattern\n- copied_grid_spacing",
+  "template_variables": {
+    "SUBJECT": "A quiet nonfigurative square field of pale blue and warm gray",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

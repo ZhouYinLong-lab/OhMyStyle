@@ -79,3 +79,7 @@ python tools/compile-style.py style-packages/artists/agnes-martin --direction pa
 ```
 
 方向仍处于实验状态。古根海姆和 MoMA 的资料支持其手绘网格、柔和色域与线条微差的观察；它对题材的限制也已写入范围契约。
+
+## 新旧架构视觉对照
+
+查看[同题样图、编译任务和复核限制](comparisons/README.md)。该对照是单题材初步检查，方向仍处于实验状态。
