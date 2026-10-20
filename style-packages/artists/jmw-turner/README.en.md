@@ -36,12 +36,12 @@ See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references
 
 ## New architecture: weather, light, and motion (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only when the user declares `atmospheric-weather-motion`. It makes gradual loss of edge and contrast through vapor, layered warm light and cool air, and one legible movement vector reviewable rules. It does not add trains, ships, bridges, or storms by default, and does not use uniform fog as a substitute for atmospheric depth.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only when the user declares `atmospheric-weather-motion`. The edge-and-contrast rule activates only with `visible-atmospheric-veil`, and the single movement-vector rule only with `directional-motion`; warm light and cool air remain the base lighting guidance. It does not add trains, ships, bridges, or storms by default, and does not use uniform fog as a substitute for atmospheric depth.
 
 This differs from Monet's direction, which organizes a scene around transient color and reflections on water: Turner's direction requires a traceable spatial movement vector and lets weather, light, and motion jointly shape the focal event.
 
 ```powershell
-python tools/compile-style.py style-packages/artists/jmw-turner --direction package --context atmospheric-weather-motion --subject "A rescue helicopter crossing a rain-dark valley at sunrise" --output runs/style-v2/jmw-turner-job.json
+python tools/compile-style.py style-packages/artists/jmw-turner --direction package --context atmospheric-weather-motion --context visible-atmospheric-veil --context directional-motion --subject "A rescue helicopter crossing a rain-dark valley at sunrise" --output runs/style-v2/jmw-turner-job.json
 ```
 
 This direction remains experimental; same-subject and cross-subject visual review is pending.

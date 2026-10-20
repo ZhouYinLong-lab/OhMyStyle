@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: turner-weather-light-and-motion
 name: Turner weather, light, and motion
@@ -22,6 +22,19 @@ scope:
     - Preserve the user-requested subject, setting, weather, time, and motion; do not add a ship, train, bridge, or storm by default.
     - Keep a readable focal event and spatial direction even when surrounding forms dissolve.
     - Do not reconstruct a named Turner composition or use a generic fog overlay as a substitute for painted atmosphere.
+contexts:
+  - id: atmospheric-weather-motion
+    description: A requested scene where weather, moving light, or vapor shapes an event.
+  - id: crisp-studio-still-life
+    description: A sharply lit studio still life without atmospheric depth or movement.
+  - id: evenly-lit-flat-graphic
+    description: A flat graphic with even lighting and crisp edges.
+  - id: static-fog-background
+    description: A static fog backdrop without a focal event or spatial movement.
+  - id: visible-atmospheric-veil
+    description: Rain, mist, spray, smoke, haze, or layered distance is visibly present.
+  - id: directional-motion
+    description: The requested scene contains a moving subject or clear directional flow.
 pillars:
   - Build atmospheric depth through a gradual loss of contrast and edge certainty, not uniform blur.
   - Make light visible through warm-cool color relationships in layered paint, without lens flare or neon bloom.
@@ -31,6 +44,8 @@ rules:
   - id: graduated-atmospheric-legibility
     axis: atmospheric_depth
     importance: core
+    when_contexts:
+      - visible-atmospheric-veil
     applies_when: The requested scene includes rain, mist, spray, smoke, haze, or layered distance.
     instruction: Preserve a readable focal subject, then reduce edge certainty and contrast gradually with distance or passing vapor; vary the atmospheric veils so the scene retains depth and does not become evenly blurred.
     observable: Nearby and focal forms remain more distinct than distant forms, with atmospheric layers visibly shaping the space.
@@ -59,6 +74,8 @@ rules:
   - id: directional-motion-through-atmosphere
     axis: spatial_motion
     importance: core
+    when_contexts:
+      - directional-motion
     applies_when: The requested subject contains travel, weather movement, flowing water, or another moving event.
     instruction: Establish one clear diagonal or receding vector through the subject's path, wake, rain, cloud, or light; let broken marks and changing contrast reinforce that movement while preserving the user's intended direction.
     observable: The eye can follow a coherent path through the scene, and atmospheric marks support rather than obscure it.
