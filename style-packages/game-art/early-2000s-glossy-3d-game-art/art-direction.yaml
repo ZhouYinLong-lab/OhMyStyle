@@ -1,0 +1,146 @@
+schema_version: 2.1.0
+status: experimental
+id: early-2000s-glossy-3d-game-art-direction
+name: 2000年代初亮面三维游戏美术
+base_package: game-art/early-2000s-glossy-3d-game-art
+scope:
+  medium: 简洁模型配较清晰贴图; 高光直接但不过度写实
+  representation: stylized
+  description: 借第六世代主机时期常见的光滑模型、清晰贴图色块和直接高光建立年代观感，同时保留可读几何和有限材质层次。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - modern PBR microdetail
+  - bloom-only filter
+  - copied character
+pillars:
+- 借第六世代主机时期常见的光滑模型、清晰贴图色块和直接高光建立年代观感，同时保留可读几何和有限材质层次。
+- 'medium: 简洁模型配较清晰贴图; 高光直接但不过度写实'
+- 'composition: 中低密度几何和清晰场景层级; 大形与速度方向优先'
+- 'palette: 鲜明材质色块和明确高光色; 避免单靠泛光建立年代感'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 简洁模型配较清晰贴图;
+    高光直接但不过度写实.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 简洁模型配较清晰贴图;
+    高光直接但不过度写实.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    简洁模型配较清晰贴图; 高光直接但不过度写实.'
+  evidence:
+    source_ids:
+    - source-early-2000s-glossy-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 中低密度几何和清晰场景层级;
+    大形与速度方向优先. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 中低密度几何和清晰场景层级; 大形与速度方向优先.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 中低密度几何和清晰场景层级;
+    大形与速度方向优先.'
+  evidence:
+    source_ids:
+    - source-early-2000s-glossy-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 鲜明材质色块和明确高光色; 避免单靠泛光建立年代感. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 鲜明材质色块和明确高光色; 避免单靠泛光建立年代感.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    鲜明材质色块和明确高光色; 避免单靠泛光建立年代感.'
+  evidence:
+    source_ids:
+    - source-early-2000s-glossy-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 高光硬朗并能读出体积; 运动环境保留轮廓. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 高光硬朗并能读出体积; 运动环境保留轮廓.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 高光硬朗并能读出体积; 运动环境保留轮廓.'
+  evidence:
+    source_ids:
+    - source-early-2000s-glossy-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 光滑塑料、金属和贴图材质分开;
+    边缘可有早期实时渲染感. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 光滑塑料、金属和贴图材质分开;
+    边缘可有早期实时渲染感.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    光滑塑料、金属和贴图材质分开; 边缘可有早期实时渲染感.'
+  evidence:
+    source_ids:
+    - source-early-2000s-glossy-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 细节密度有限，贴图色块可读;
+    不模拟低分辨率损坏. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 细节密度有限，贴图色块可读;
+    不模拟低分辨率损坏.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    细节密度有限，贴图色块可读; 不模拟低分辨率损坏.'
+  evidence:
+    source_ids:
+    - source-early-2000s-glossy-3d-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-early-2000s-glossy-3d-game-art-primary-source
+  kind: primary
+  base_asset_id: early-2000s-glossy-3d-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先锁定模型密度和轮廓
+  - 建立清晰贴图色区
+  - 添加直接高光和硬质阴影
+  - 控制后处理和景深
+  - 检查年代感来自整体资产语言
+  - 几何简化与清晰高光同时存在
+  - 不把泛光当作唯一特征
+  - 不复制具体游戏场景
+  avoid:
+  - modern PBR microdetail
+  - bloom-only filter
+  - copied character
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
