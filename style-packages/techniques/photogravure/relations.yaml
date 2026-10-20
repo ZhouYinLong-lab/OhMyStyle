@@ -8,3 +8,5 @@ distinctives:
   - 'ink density in shadow'
   - 'matte paper absorption'
   - 'fine plate grain'
+family: source-technique
+avoid_overlap: []
