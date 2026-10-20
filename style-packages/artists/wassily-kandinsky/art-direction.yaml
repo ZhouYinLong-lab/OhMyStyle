@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: kandinsky-open-center-orbital-tension
 name: Kandinsky open-center orbital tension
@@ -24,6 +24,19 @@ scope:
     - Preserve requested colors, shapes, aspect ratio, and mark density.
     - Keep the center open; do not turn it into a planet, eye, clock, or target unless the user asks.
     - Do not copy a named work or reuse the geometry of a supplied reference composition.
+contexts:
+  - id: user-requested-open-center-abstract-composition
+    description: The user requests an abstract composition organized around a quiet center or incomplete ring.
+  - id: user-requested-filled-center
+    description: The user requests a dominant form filling the center.
+  - id: literal-astronomical-diagram
+    description: The user requests a literal astronomical diagram.
+  - id: user-requested-unstructured-mark-field
+    description: The user requests an unstructured field of marks.
+  - id: exact-reconstruction-of-named-composition
+    description: The user requests an exact reconstruction of a named composition.
+  - id: geometric-arcs-and-marks-define-abstract-structure
+    description: Geometric marks and arcs define the requested abstract structure.
 pillars:
   - Keep a visible quiet center while allowing an incomplete circle or arc to imply orbital movement.
   - Place uneven clusters of lines and smaller forms around the ring to create asymmetrical counterpressure.
@@ -32,6 +45,8 @@ rules:
   - id: incomplete-ring-preserves-open-center
     axis: center-to-orbit-relationship
     importance: core
+    when_contexts:
+      - user-requested-open-center-abstract-composition
     applies_when: The user requests an abstract composition with an open center or incomplete circular structure.
     instruction: Use one incomplete ring or broad arc to frame a quiet center; keep the opening visibly broken and avoid filling the center with a dominant form.
     observable: A legible open interior contrasts with an off-center arc and surrounding marks.
@@ -45,6 +60,8 @@ rules:
   - id: uneven-perimeter-counterweights
     axis: asymmetrical-compositional-pressure
     importance: core
+    when_contexts:
+      - user-requested-open-center-abstract-composition
     applies_when: An open-center orbit is requested.
     instruction: Distribute a few geometric masses, thin lines, and small color marks unevenly around the arc so one side carries greater weight and another stays sparse.
     observable: The ring feels active but not mechanically tiled, with the quiet center remaining distinct.
@@ -58,6 +75,8 @@ rules:
   - id: keep-orbit-painterly-not-diagrammatic
     axis: geometric-mark-surface
     importance: supporting
+    when_contexts:
+      - geometric-arcs-and-marks-define-abstract-structure
     applies_when: Geometric marks and arcs define the abstract structure.
     instruction: Vary edge precision, line weight, and pigment density slightly; retain a tactile painted ground beneath the shapes.
     observable: The arrangement reads as a resolved painting rather than a vector infographic.

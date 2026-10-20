@@ -77,4 +77,4 @@
 
 ## 实验方向：留空中心与环形张力
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 仅在用户指定“围绕留空中心组织抽象构图”时启用：用不闭合的圆弧保持中心安静，再以不对称的线条和色块在弧线周围形成张力。避免把圆弧变成行星轨道、靶心或机械图表。查看 [`comparisons/`](comparisons/README.md) 中的生成对照；该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在用户指定 `user-requested-open-center-abstract-composition` 时启用：用不闭合的圆弧保持中心安静，再以不对称的线条和色块在弧线周围形成张力。调用者只有在几何弧线和标记确实定义抽象结构时，才声明 `geometric-arcs-and-marks-define-abstract-structure`，启用额外的绘画性表面规则。避免把圆弧变成行星轨道、靶心或机械图表。查看 [`comparisons/`](comparisons/README.md) 中的生成对照；该方向仍处于实验状态。
