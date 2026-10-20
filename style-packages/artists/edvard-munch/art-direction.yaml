@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: munch-subjective-color-and-environmental-rhythm
 name: Munch subjective color and environmental rhythm
@@ -24,6 +24,17 @@ scope:
     - Preserve the user's requested emotional tone, subject, identities, action, setting, and count; do not add distress, isolation, a shoreline, a bridge, or a sunset unless requested.
     - Use non-natural color only to clarify an intended emotional relationship; do not impose red, orange, or blue as a universal palette.
     - Keep environmental distortion selective and readable; do not bend faces, objects, or perspective arbitrarily.
+contexts:
+  - id: psychological-expressionist-scene
+    description: A user-requested painted scene with an intended psychological or emotional focus.
+  - id: photorealistic-rendering
+    description: A photorealistic image without visible painterly interpretation.
+  - id: decorative-fauvist-color-only
+    description: A decorative scene focused on color without psychological expression.
+  - id: copied-iconic-composition
+    description: A request to reproduce a named composition or recognizable source layout.
+  - id: compressed-space-supports-emotion
+    description: Compressing selected spatial distances supports the requested emotional focus.
 pillars:
   - Let a small number of local color relationships carry the requested emotional temperature.
   - Connect the subject and setting through repeated, directional curves rather than uniform decorative waves.
@@ -61,6 +72,8 @@ rules:
   - id: selective-spatial-compression
     axis: spatial_composition
     importance: core
+    when_contexts:
+      - compressed-space-supports-emotion
     applies_when: The requested scene benefits from a psychologically heightened relationship between a subject and its surroundings.
     instruction: Simplify overlaps and compress selected distances around the focal relationship, but retain enough perspective, edges, or landmarks to make the requested setting identifiable.
     observable: Space feels deliberately heightened around the subject, yet the scene remains grounded in the user's actual setting.

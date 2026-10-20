@@ -35,7 +35,7 @@ See [`provenance.yaml`](provenance.yaml), [`references/manifest.csv`](references
 
 ## New architecture: subjective color and environmental rhythm (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) focuses on selected Symbolist and Expressionist works from Munch's 1890s practice and is enabled only when the user declares `psychological-expressionist-scene`. It separates the emotional role of color, rhythmic curves between subject and environment, and selective spatial compression into reviewable rules. It does not default to a distressed expression, isolated figure, shore, bridge, or sunset, and does not reproduce the composition of *The Scream*.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0, focuses on selected Symbolist and Expressionist works from Munch's 1890s practice, and is enabled only when the user declares `psychological-expressionist-scene`. It separates the emotional role of color and rhythmic curves between subject and environment into reviewable rules. Spatial compression activates only when the caller declares `compressed-space-supports-emotion`. It does not default to a distressed expression, isolated figure, shore, bridge, or sunset, and does not reproduce the composition of *The Scream*.
 
 Unlike Van Gogh's direction, which centers on surface-following strokes, paint thickness, and local cool-warm brushwork, Munch's direction centers on color relationships that establish emotional tone and contours that connect subject and environment.
 
