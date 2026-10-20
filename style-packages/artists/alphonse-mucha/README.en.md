@@ -98,7 +98,7 @@ figures, text, trademark, or logo.
 
 ## New architecture: ornamental poster hierarchy (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) is enabled only with the `ornamental-poster` context. First keep the requested subject clear, then let framing curves and ornament follow its contour. Botanical motifs and lettering are not defaults; only exact user-provided copy may appear. Unlike Dürer's direction, which models value through hatching, Mucha's direction centers on flat color areas, flowing curves, and subject-to-frame layout.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and is enabled only with the `ornamental-poster` context. First keep the requested subject clear, then let framing curves and ornament follow its contour. Callers can add `poster-benefits-from-decorative-movement` to activate ornamental curves and `user-supplied-exact-wording-or-blank-title-area` to enable the typography rule only when exact copy or a blank title area is requested. Botanical motifs and lettering are not defaults. Unlike Dürer's direction, which models value through hatching, Mucha's direction centers on flat color areas, flowing curves, and subject-to-frame layout.
 
 ```powershell
 python tools/compile-style.py style-packages/artists/alphonse-mucha --direction package --context ornamental-poster --subject "A blue glass perfume bottle in a decorative poster, no lettering" --output runs/style-v2/mucha-job.json

@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: mucha-ornamental-poster-hierarchy
 name: Mucha ornamental poster hierarchy
@@ -21,6 +21,19 @@ scope:
     - Use an ornamental border only when the caller requests a poster or decorative panel; do not force it onto an ordinary scene.
     - Include lettering only when exact wording is supplied; never invent pseudo-text, brand names, signatures, or dates.
     - Build new framing and ornament; do not copy the layout or figure pose of a named Mucha work.
+contexts:
+  - id: ornamental-poster
+    description: The user requests a decorative poster or panel using an ornamental lithographic style.
+  - id: photorealistic-output
+    description: The user requires a photorealistic result.
+  - id: text-dominant-document
+    description: The user requests a text-dominant document rather than an illustrated poster.
+  - id: undecorated-product-photography
+    description: The user requests undecorated product photography.
+  - id: poster-benefits-from-decorative-movement
+    description: Decorative movement around the requested poster subject is appropriate to the brief.
+  - id: user-supplied-exact-wording-or-blank-title-area
+    description: The user supplies exact poster wording or explicitly requests a blank title area.
 pillars:
   - Establish one clear subject hierarchy before adding border or arabesque detail.
   - Make decorative curves respond to the subject's silhouette and direction rather than forming an unrelated floral halo.
@@ -44,6 +57,8 @@ rules:
   - id: subject-linked-curvilinear-ornament
     axis: line_and_pattern
     importance: core
+    when_contexts:
+      - poster-benefits-from-decorative-movement
     applies_when: The requested poster benefits from decorative movement around its subject.
     instruction: Build a small family of flowing curves that echo the subject's contours and guide the eye through the composition; use botanical forms only when requested, otherwise keep the ornament abstract and shape-linked.
     observable: Ornament feels continuous with the subject's movement and varies in scale, with open gaps that prevent a dense wallpaper effect.
@@ -72,6 +87,8 @@ rules:
   - id: user-controlled-lettering
     axis: typography
     importance: optional
+    when_contexts:
+      - user-supplied-exact-wording-or-blank-title-area
     applies_when: The user supplies exact poster wording or explicitly requests a blank title area.
     instruction: Reserve the requested text zone within the frame; reproduce only the exact supplied wording, or leave the zone blank when requested, with legible spacing that does not obscure the subject.
     observable: Lettering appears only when requested and its content is exact; otherwise the poster contains no text, logo, signature, or pseudo-lettering.

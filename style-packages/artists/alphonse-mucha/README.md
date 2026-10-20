@@ -76,7 +76,7 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 新架构：装饰海报层级（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 仅在声明 `ornamental-poster` 时启用：先保证用户指定主体清楚，再让边框曲线和装饰纹样沿主体轮廓展开。植物纹样和文字都不是默认项；只有用户给出准确文案时才排入文字。与丢勒以排线塑造明暗的方向不同，穆夏方向以平面色块、流动曲线和主体—边框版式为核心。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅在声明 `ornamental-poster` 时启用：先保证用户指定主体清楚，再让边框曲线和装饰纹样沿主体轮廓展开。调用者可用 `poster-benefits-from-decorative-movement` 启用装饰曲线；`user-supplied-exact-wording-or-blank-title-area` 只在用户提供准确文案或要求留白标题区时启用排字规则。植物纹样和文字都不是默认项。与丢勒以排线塑造明暗的方向不同，穆夏方向以平面色块、流动曲线和主体—边框版式为核心。
 
 ```powershell
 python tools/compile-style.py style-packages/artists/alphonse-mucha --direction package --context ornamental-poster --subject "A blue glass perfume bottle in a decorative poster, no lettering" --output runs/style-v2/mucha-job.json
