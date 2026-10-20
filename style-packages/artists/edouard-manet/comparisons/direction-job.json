@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "edouard-manet",
+    "name": "爱德华·马奈",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edouard-manet"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A florist arranging a small display at a neighborhood shop counter",
+  "prompt": "USER SUBJECT: A florist arranging a small display at a neighborhood shop counter\nPreserve the user's requested identities, counts, setting, and layout. Add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: recognizable\nAPPLY THESE AUTHORED VISUAL RULES:\n- [adjacent-direct-color-patches] Establish major color areas with adjacent, relatively direct patches; blend only where needed to describe form or light, and keep darks, lights, and one or two accent colors distinct.\n- [deliberate-compressed-space] Organize the main figures and objects in a deliberate relation to the picture plane; simplify depth cues and preserve a clear focal hierarchy without copying photographic crop accidents or a named layout.\n- [selective-contour-and-open-finish] Keep contours clearest at the focal features and selected object boundaries; allow secondary passages to remain open or broadly brushed, but resolve the requested subject and action.\n- [color-block-and-composition-coherence] Let direct color patches, deliberate spatial compression, and selective open edges support the same user-requested focal action.\nREQUIREMENT: Declare modern-life-color-plane before applying this direction.\nREQUIREMENT: Preserve the user's subject, setting, activity, and count.\nREQUIREMENT: Build large local color areas and a deliberate composition before adding selective brush detail.\nREQUIREMENT: Keep edge looseness subordinate to the requested subject's readability.",
+  "negative_prompt": "airbrushed gradients, global color wash, and uniform flickering marks\narbitrary snapshot crop, impossible overlaps, and copied arrangement\nuniform outline, all-over unfinished sketch, and generic painterly filter\nmaking Paris, a café, a bar, or any named Manet subject mandatory\ncopying a named painting's crop, pose, lighting, or figure arrangement\nusing global blur or uniform flickering marks in place of direct color patches",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "manet-direct-color-and-compressed-scene",
+    "name": "Manet direct color and compressed scene",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edouard-manet\\art-direction.yaml",
+    "sha256": "97cf930d003e9e0bad47c39075f727b383e426d657a1f830e85c790a1e0dd684",
+    "active_rule_ids": [
+      "adjacent-direct-color-patches",
+      "deliberate-compressed-space",
+      "selective-contour-and-open-finish"
+    ],
+    "contexts": [
+      "modern-life-color-plane"
+    ],
+    "applicability": "authored selection plus caller-declared contexts; natural-language conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Declare modern-life-color-plane before applying this direction.",
+      "Preserve the user's subject, setting, activity, and count.",
+      "Build large local color areas and a deliberate composition before adding selective brush detail.",
+      "Keep edge looseness subordinate to the requested subject's readability."
+    ],
+    "avoid": [
+      "making Paris, a café, a bar, or any named Manet subject mandatory",
+      "copying a named painting's crop, pose, lighting, or figure arrangement",
+      "using global blur or uniform flickering marks in place of direct color patches"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "recognizable",
+      "description": "A modern-scene direction built from adjacent, relatively direct patches of color, clear value groups, and selective contour. Space is compressed where useful so figures and objects meet the picture plane without losing their material identity. The arrangement remains deliberate even when brushwork appears open or unresolved. The user's subject and setting remain primary.",
+      "required_contexts": [
+        "modern-life-color-plane"
+      ],
+      "incompatible_contexts": [
+        "seamless-photorealistic-render",
+        "uniform-impressionist-flicker",
+        "mandatory-paris-cafe-scene"
+      ],
+      "limitations": [
+        "Preserve requested people, objects, place, activity, and count; do not add a café, bar, nude figure, or Paris landmark by default.",
+        "Use compressed space and strong value groups only where they support the user's composition.",
+        "Keep loose passages selective and intentional; do not turn the entire image into an unfinished sketch."
+      ]
+    },
+    "rules": [
+      {
+        "id": "adjacent-direct-color-patches",
+        "axis": "color_and_paint_application",
+        "importance": "core",
+        "applies_when": "A painted scene uses a limited set of distinct local color areas.",
+        "instruction": "Establish major color areas with adjacent, relatively direct patches; blend only where needed to describe form or light, and keep darks, lights, and one or two accent colors distinct.",
+        "observable": "Color relationships remain readable as neighboring paint areas rather than a continuous airbrushed gradient or a global palette filter.",
+        "reject_when": "All boundaries are softened, accents lose their local role, or the palette alone carries the style.",
+        "evidence": {
+          "source_ids": [
+            "manet-nga-artist-analysis",
+            "manet-met-artist-essay"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "airbrushed gradients, global color wash, and uniform flickering marks"
+      },
+      {
+        "id": "deliberate-compressed-space",
+        "axis": "composition_and_space",
+        "importance": "core",
+        "applies_when": "The requested modern scene benefits from a close or compressed arrangement.",
+        "instruction": "Organize the main figures and objects in a deliberate relation to the picture plane; simplify depth cues and preserve a clear focal hierarchy without copying photographic crop accidents or a named layout.",
+        "observable": "The scene feels intentionally structured and close to the viewer while its people and objects remain distinct.",
+        "reject_when": "Depth becomes incoherent, edges cut important forms arbitrarily, or the scene reconstructs a recognizable source composition.",
+        "evidence": {
+          "source_ids": [
+            "manet-nga-artist-analysis",
+            "manet-met-artist-essay"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "arbitrary snapshot crop, impossible overlaps, and copied arrangement"
+      },
+      {
+        "id": "selective-contour-and-open-finish",
+        "axis": "edge_and_surface",
+        "importance": "supporting",
+        "applies_when": "A painting needs both clear focal forms and visible painterly handling.",
+        "instruction": "Keep contours clearest at the focal features and selected object boundaries; allow secondary passages to remain open or broadly brushed, but resolve the requested subject and action.",
+        "observable": "The focal forms read clearly while some secondary marks retain a direct, unpolished paint quality.",
+        "reject_when": "Every edge is equally hard or equally vague, or open brushwork makes the requested content unreadable.",
+        "evidence": {
+          "source_ids": [
+            "manet-nga-artist-analysis",
+            "manet-met-artist-essay"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        },
+        "avoid": "uniform outline, all-over unfinished sketch, and generic painterly filter"
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "color-block-and-composition-coherence",
+        "rule_ids": [
+          "adjacent-direct-color-patches",
+          "deliberate-compressed-space",
+          "selective-contour-and-open-finish"
+        ],
+        "instruction": "Let direct color patches, deliberate spatial compression, and selective open edges support the same user-requested focal action.",
+        "observable": "The composition feels arranged, local color stays distinct, and the requested subject remains readable."
+      }
+    ],
+    "sources": [
+      {
+        "id": "manet-nga-artist-analysis",
+        "kind": "museum_artist_analysis",
+        "url": "https://www.nga.gov/artists/1506-edouard-manet"
+      },
+      {
+        "id": "manet-met-artist-essay",
+        "kind": "museum_artist_essay",
+        "url": "https://www.metmuseum.org/fr/essays/edouard-manet-1832-1883"
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "direction_sha256": "97cf930d003e9e0bad47c39075f727b383e426d657a1f830e85c790a1e0dd684",
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

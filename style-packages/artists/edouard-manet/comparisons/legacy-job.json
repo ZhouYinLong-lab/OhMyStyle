@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "edouard-manet",
+    "name": "爱德华·马奈",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\edouard-manet"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A florist arranging a small display at a neighborhood shop counter",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nUser subject: A florist arranging a small display at a neighborhood shop counter\nUser setting: the user-requested setting\nThe user-supplied subject and setting are authoritative. This package controls visual treatment only: medium, composition, lighting, palette, surface, texture, and edge behavior. Do not add a recurring object, setting, character, landmark, or narrative motif unless the user explicitly requests it. Any concrete noun used below is optional visual vocabulary, not a default subject.\n\nCreate an original image of A florist arranging a small display at a neighborhood shop counter in the visual language of Édouard Manet.\n\nTransfer these observable decisions: 以平直而有张力的色面、现代生活的截取感、清晰轮廓和不完全抛光的笔触打破传统画面秩序。\nComposition: 像被偶然截取的现代生活片段; 主体与背景之间保持清楚的平面关系; 避免过度解释空间，让视觉重心停留在形体和色面.\nPalette: 黑、白、灰与一两个明确色块并置; 肤色和材料色保持直接，不做过度综合色; 暗部偏平而不全部压成黑色.\nLighting: 自然或室内光线直接落在形体上，明暗关系清楚但不过度塑造. Surface: 可见而克制的笔触，边缘在清楚和松动之间变化. Texture: 局部保留画笔方向，大片色面保持干净，避免全画面厚重纹理.\n\nKeep the user's subject, location, quantity, identity, action, aspect ratio, and purpose unchanged. Treat the package as a visual treatment, not as a subject or story generator.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "Do not add a fixed landmark, recurring character, named location, branded asset, text, logo, watermark, copied composition, or source artwork. Do not replace the requested subject. Avoid a generic all-over color filter, decorative effects unrelated to the package, and unintended narrative events.",
+  "template_variables": {
+    "SUBJECT": "A florist arranging a small display at a neighborhood shop counter",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {
+      "modern-life-color-plane": {
+        "required": [
+          "local colors remain distinct in adjacent patches",
+          "composition is deliberate even when some paint passages remain open",
+          "compressed space preserves the requested focal action and object identity"
+        ],
+        "reject_if": [
+          "a café, bar, nude figure, Paris landmark, or named composition is added without request",
+          "all edges become uniformly vague or uniformly outlined",
+          "palette alone substitutes for the visual rules"
+        ]
+      },
+      "generic": {
+        "required": [
+          "package-specific visual signature is observable",
+          "composition remains coherent for a new subject",
+          "no copied reference composition or branded material",
+          "no fixed subject leaks into the output"
+        ],
+        "reject_if": [
+          "style is represented only by a global color filter",
+          "text, logo, watermark, or unintended signature is present"
+        ]
+      },
+      "portrait": {
+        "required": [
+          "preserve the user-supplied person or object without adding a recurring figure"
+        ]
+      },
+      "still_life": {
+        "required": [
+          "preserve the user-supplied objects and their count"
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "source_policy": "A primary source is recorded below; verify redistribution rights before bundling any image.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}

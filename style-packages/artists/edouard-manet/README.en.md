@@ -75,3 +75,7 @@ Configure your provider or compiler with your own API key, then send the base pr
 Connect the prompts to your local model or ComfyUI workflow. Translate the palette, reproduction notes, and visual signature into nodes or conditioning, then review the result with [evaluation.yaml](evaluation.yaml).
 
 Model weights, API keys, and generated images are managed by the user. References are for observable analysis; do not copy a source work’s exact composition, people, text, trademarks, or logos.
+
+## Legacy and direction comparison
+
+See [the same-subject samples, compiled jobs, and review limitations](comparisons/README.md). This is a preliminary single-subject check; the direction remains experimental.
