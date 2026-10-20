@@ -1,0 +1,116 @@
+schema_version: 2.1.0
+status: experimental
+id: isometric-pixel-tactics-direction
+name: 等距像素策略美术
+base_package: game-art/isometric-pixel-tactics
+scope:
+  medium: 'name: game_art; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
+  representation: stylized
+  description: Organizes scenes through isometric grids, compact units, layered tiles, and clear tactical light-dark
+    grouping, with readable paths and height changes rather than copied game interfaces.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copying_a_specific_work
+  - copying_a_named_character_or_logo
+pillars:
+- Organizes scenes through isometric grids, compact units, layered tiles, and clear tactical light-dark grouping,
+  with readable paths and height changes rather than copied game interfaces.
+- 'medium: name: game_art; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium'
+- 'composition: priorities: visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer'
+- 'palette: name: isometric-pixel-tactics; usage: controlled relationship among dominant, support, shadow,
+  and accent colors; colors: name: color_0; colors: hex: #182235; colors: role: 轮廓与深阴影; colors: name: color_1;
+  colors: hex: #52657A; colors: role: 地块与远景'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: name:
+    game_art; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: name: game_art;
+    visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    name: game_art; visible_evidence: medium_or_process_marks_are_consistent; visible_evidence: edges_and_surfaces_follow_the_selected_medium.'
+  evidence:
+    source_ids:
+    - source-source-1
+    - source-source-2
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: priorities:
+    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer. Preserve
+    the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: priorities: visual_hierarchy;
+    priorities: negative_space; priorities: subject_independent_style_transfer.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: priorities:
+    visual_hierarchy; priorities: negative_space; priorities: subject_independent_style_transfer.'
+  evidence:
+    source_ids:
+    - source-source-1
+    - source-source-2
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: name: isometric-pixel-tactics; usage:
+    controlled relationship among dominant, support, shadow, and accent colors; colors: name: color_0; colors:
+    hex: #182235; colors: role: 轮廓与深阴影; colors: name: color_1; colors: hex: #52657A; colors: role: 地块与远景. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: name: isometric-pixel-tactics;
+    usage: controlled relationship among dominant, support, shadow, and accent colors; colors: name: color_0;
+    colors: hex: #182235; colors: role: 轮廓与深阴影; colors: name: color_1; colors: hex: #52657A; colors: role:
+    地块与远景.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    name: isometric-pixel-tactics; usage: controlled relationship among dominant, support, shadow, and accent
+    colors; colors: name: color_0; colors: hex: #182235; colors: role: 轮廓与深阴影; colors: name: color_1; colors:
+    hex: #52657A; colors: role: 地块与远景.'
+  evidence:
+    source_ids:
+    - source-source-1
+    - source-source-2
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-source-1
+  kind: style_reference
+  base_asset_id: source-1
+- id: source-source-2
+  kind: style_reference
+  base_asset_id: source-2
+execution:
+  route: text_only
+  must:
+  - translate the user subject into the style medium and structural rules
+  - establish composition before small detail
+  - inspect against the generic five-task suite
+  - the result is an original new scene, not a copy of a source work
+  - no unrequested text, logo, trademark, or named character
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - generic_global_filter
+  - copied_source_composition
+  - readable_text_or_branding
+  - copying_a_specific_work
+  - copying_a_named_character_or_logo
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
