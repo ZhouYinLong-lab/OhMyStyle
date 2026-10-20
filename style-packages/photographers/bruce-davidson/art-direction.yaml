@@ -1,0 +1,138 @@
+schema_version: 2.1.0
+status: experimental
+id: bruce-davidson-direction
+name: 布鲁斯·戴维森
+base_package: photographers/bruce-davidson
+scope:
+  medium: 二十世纪美国纪实与人文摄影 摄影
+  representation: recognizable
+  description: 以长期观察、贴近主体的人文距离、深沉影调和系列化现场感记录普通生活中的尊严与张力。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以长期观察、贴近主体的人文距离、深沉影调和系列化现场感记录普通生活中的尊严与张力。
+- 'composition: 贴近主体但不侵入的观察距离; 深沉黑白或低彩度影调'
+- 'palette: 深沉黑白或低彩度影调; 系列化现场感和环境中的人物关系'
+- 'lighting: quality: 系列化现场感和环境中的人物关系; behavior: Keep the requested subject and location independent from the
+  package.; behavior: Apply lighting as a transferable visual decision, not a fixed scene.'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 贴近主体但不侵入的观察距离;
+    深沉黑白或低彩度影调. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 贴近主体但不侵入的观察距离; 深沉黑白或低彩度影调.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 贴近主体但不侵入的观察距离;
+    深沉黑白或低彩度影调.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 深沉黑白或低彩度影调; 系列化现场感和环境中的人物关系. Adapt
+    their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 深沉黑白或低彩度影调; 系列化现场感和环境中的人物关系.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    深沉黑白或低彩度影调; 系列化现场感和环境中的人物关系.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 系列化现场感和环境中的人物关系; behavior: Keep the requested
+    subject and location independent from the package.; behavior: Apply lighting as a transferable visual decision,
+    not a fixed scene.. Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 系列化现场感和环境中的人物关系; behavior:
+    Keep the requested subject and location independent from the package.; behavior: Apply lighting as a transferable
+    visual decision, not a fixed scene..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 系列化现场感和环境中的人物关系;
+    behavior: Keep the requested subject and location independent from the package.; behavior: Apply lighting
+    as a transferable visual decision, not a fixed scene..'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 普通生活里的尊严、疲惫和微妙张力;
+    edges: subject-dependent, without a copied layout. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    普通生活里的尊严、疲惫和微妙张力; edges: subject-dependent, without a copied layout.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 普通生活里的尊严、疲惫和微妙张力; edges: subject-dependent, without a copied layout.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: controlled
+    and medium-dependent; placement: only where the package visual language needs explanation. Preserve detail
+    hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    controlled and medium-dependent; placement: only where the package visual language needs explanation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: controlled and medium-dependent; placement: only where the package visual language needs explanation.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-01
+  kind: primary_research_source
+  base_asset_id: primary-01
+execution:
+  route: text_only
+  must:
+  - 先保留用户指定场景与人物关系
+  - 用环境细节说明人物所处的社会空间
+  - 保持深影和有限高光，不用商业化补光
+  - 把瞬间当作长期观察的一帧，而非摆拍高潮
+  - 贴近主体但不侵入的观察距离
+  - 深沉黑白或低彩度影调
+  - 系列化现场感和环境中的人物关系
+  - 普通生活里的尊严、疲惫和微妙张力
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
+    protected game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
