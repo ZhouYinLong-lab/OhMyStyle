@@ -1,0 +1,136 @@
+schema_version: 2.1.0
+status: experimental
+id: vorticism-direction
+name: 旋涡主义
+base_package: movements/vorticism
+scope:
+  medium: 硬边现代主义绘画、版式和综合平面构成
+  representation: stylized
+  description: 以硬边折线、机械时代的动势、强烈色面和向中心压缩的结构，制造短促而有能量的现代主义画面。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以硬边折线、机械时代的动势、强烈色面和向中心压缩的结构，制造短促而有能量的现代主义画面。
+- 'composition: 用对角线、折线、楔形和向内汇聚的结构组织视觉力量；让画面有明确的运动方向。; 主体可以保持具象，也可以被几何化，但不得被随机切碎到失去身份。'
+- 'palette: 黑、灰、米白作为结构底色，配以有限的红、黄、蓝或锈色硬边色块。; 颜色之间要形成清楚的冲突和分区，不加入柔和渐变或糖果色氛围。'
+- 'lighting: quality: 硬质方向光或平面化的高反差明暗，用于强调切面和方向，不制造真实机械反光。; behavior: 光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior:
+  保留用户指定的主体轮廓、位置和空间关系。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 用对角线、折线、楔形和向内汇聚的结构组织视觉力量；让画面有明确的运动方向。;
+    主体可以保持具象，也可以被几何化，但不得被随机切碎到失去身份。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 用对角线、折线、楔形和向内汇聚的结构组织视觉力量；让画面有明确的运动方向。;
+    主体可以保持具象，也可以被几何化，但不得被随机切碎到失去身份。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 用对角线、折线、楔形和向内汇聚的结构组织视觉力量；让画面有明确的运动方向。;
+    主体可以保持具象，也可以被几何化，但不得被随机切碎到失去身份。.'
+  evidence:
+    source_ids:
+    - source-vorticism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑、灰、米白作为结构底色，配以有限的红、黄、蓝或锈色硬边色块。;
+    颜色之间要形成清楚的冲突和分区，不加入柔和渐变或糖果色氛围。. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑、灰、米白作为结构底色，配以有限的红、黄、蓝或锈色硬边色块。;
+    颜色之间要形成清楚的冲突和分区，不加入柔和渐变或糖果色氛围。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑、灰、米白作为结构底色，配以有限的红、黄、蓝或锈色硬边色块。; 颜色之间要形成清楚的冲突和分区，不加入柔和渐变或糖果色氛围。.'
+  evidence:
+    source_ids:
+    - source-vorticism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 硬质方向光或平面化的高反差明暗，用于强调切面和方向，不制造真实机械反光。; behavior:
+    光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior: 保留用户指定的主体轮廓、位置和空间关系。. Keep light coherent with the requested
+    subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 硬质方向光或平面化的高反差明暗，用于强调切面和方向，不制造真实机械反光。;
+    behavior: 光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior: 保留用户指定的主体轮廓、位置和空间关系。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 硬质方向光或平面化的高反差明暗，用于强调切面和方向，不制造真实机械反光。;
+    behavior: 光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior: 保留用户指定的主体轮廓、位置和空间关系。.'
+  evidence:
+    source_ids:
+    - source-vorticism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 平涂颜料、粗糙印刷、铅笔线、木刻感和略带磨损的纸面。;
+    edges: 保持主体边缘可辨；允许媒介造成的轻微不齐，但不使用发光描边或综合色隔离带。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    平涂颜料、粗糙印刷、铅笔线、木刻感和略带磨损的纸面。; edges: 保持主体边缘可辨；允许媒介造成的轻微不齐，但不使用发光描边或综合色隔离带。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 平涂颜料、粗糙印刷、铅笔线、木刻感和略带磨损的纸面。; edges: 保持主体边缘可辨；允许媒介造成的轻微不齐，但不使用发光描边或综合色隔离带。.'
+  evidence:
+    source_ids:
+    - source-vorticism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 低到中等；纹理服务于印刷边缘和色块交界，不变成油画厚重笔触。;
+    placement: 集中在材料边界、暗部或印刷交界处，不覆盖主体识别信息。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    低到中等；纹理服务于印刷边缘和色块交界，不变成油画厚重笔触。; placement: 集中在材料边界、暗部或印刷交界处，不覆盖主体识别信息。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 低到中等；纹理服务于印刷边缘和色块交界，不变成油画厚重笔触。; placement: 集中在材料边界、暗部或印刷交界处，不覆盖主体识别信息。.'
+  evidence:
+    source_ids:
+    - source-vorticism-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-vorticism-primary-source
+  kind: primary
+  base_asset_id: vorticism-primary-source
+execution:
+  route: text_only
+  must:
+  - 先提取主体的主要方向和轮廓，再安排折线、楔形面和向中心的动势。
+  - 使用少量高对比色块强化结构，不用复杂背景补足画面。
+  - 最后检查主体仍然可辨，避免把几何化误做成随机故障。
+  - 更换主体后仍然能观察到本包的媒介、构图、色彩和表面签名。
+  - 不要求特定人物、物件、地点、建筑、植物、车辆或故事作为默认内容。
+  - 示例主体只用于验证视觉迁移，不得泄漏到默认 Prompt。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 普通构成主义海报或包豪斯色块
+  - 赛博朋克、机械零件和工业场景的固定化叙事
+  - 无方向的随机几何噪声
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
