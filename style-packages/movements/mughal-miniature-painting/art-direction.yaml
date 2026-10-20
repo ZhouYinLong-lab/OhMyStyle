@@ -1,0 +1,142 @@
+schema_version: 2.1.0
+status: experimental
+id: mughal-miniature-painting-direction
+name: 莫卧儿细密画
+base_package: movements/mughal-miniature-painting
+scope:
+  medium: opaque watercolor and ink on burnished paper
+  representation: stylized
+  description: 以细密笔触、清晰轮廓、层叠空间、平面化色块与精确自然观察组织画面，保留纸本、矿物色和金色装饰的手工感。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied folio composition
+  - named historical figure as default subject
+pillars:
+- 以细密笔触、清晰轮廓、层叠空间、平面化色块与精确自然观察组织画面，保留纸本、矿物色和金色装饰的手工感。
+- 'composition: 用分层平面、窄边框、局部剖面和清晰轮廓组织空间，允许多个尺度同时存在。; 细节密集但层级明确，远近关系通过重叠、色值和边框而非强烈透视表达。'
+- 'palette: 矿物感红、青绿、靛蓝、米色、棕色和少量金色形成清晰而克制的色块。; 颜色可以明亮，但保持纸面吸收和手工调色的微小差异。'
+- 'lighting: quality: even manuscript illumination with selective modeled volume; behavior: 光线均匀，局部以细小明暗塑造体积，不使用电影式强光束。;
+  behavior: 金色或亮色只强调边框、细节和层次，不把整幅画变成金属反光。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 用分层平面、窄边框、局部剖面和清晰轮廓组织空间，允许多个尺度同时存在。;
+    细节密集但层级明确，远近关系通过重叠、色值和边框而非强烈透视表达。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 用分层平面、窄边框、局部剖面和清晰轮廓组织空间，允许多个尺度同时存在。;
+    细节密集但层级明确，远近关系通过重叠、色值和边框而非强烈透视表达。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 用分层平面、窄边框、局部剖面和清晰轮廓组织空间，允许多个尺度同时存在。;
+    细节密集但层级明确，远近关系通过重叠、色值和边框而非强烈透视表达。.'
+  evidence:
+    source_ids:
+    - source-mughal-miniature-painting-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 矿物感红、青绿、靛蓝、米色、棕色和少量金色形成清晰而克制的色块。;
+    颜色可以明亮，但保持纸面吸收和手工调色的微小差异。. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 矿物感红、青绿、靛蓝、米色、棕色和少量金色形成清晰而克制的色块。;
+    颜色可以明亮，但保持纸面吸收和手工调色的微小差异。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    矿物感红、青绿、靛蓝、米色、棕色和少量金色形成清晰而克制的色块。; 颜色可以明亮，但保持纸面吸收和手工调色的微小差异。.'
+  evidence:
+    source_ids:
+    - source-mughal-miniature-painting-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: even manuscript illumination with selective
+    modeled volume; behavior: 光线均匀，局部以细小明暗塑造体积，不使用电影式强光束。; behavior: 金色或亮色只强调边框、细节和层次，不把整幅画变成金属反光。. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: even manuscript illumination
+    with selective modeled volume; behavior: 光线均匀，局部以细小明暗塑造体积，不使用电影式强光束。; behavior: 金色或亮色只强调边框、细节和层次，不把整幅画变成金属反光。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: even manuscript
+    illumination with selective modeled volume; behavior: 光线均匀，局部以细小明暗塑造体积，不使用电影式强光束。; behavior: 金色或亮色只强调边框、细节和层次，不把整幅画变成金属反光。.'
+  evidence:
+    source_ids:
+    - source-mughal-miniature-painting-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: burnished
+    paper, opaque watercolor, ink, and restrained gold-like accents; edges: precise hand-drawn contours with
+    controlled brush variation. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    burnished paper, opaque watercolor, ink, and restrained gold-like accents; edges: precise hand-drawn contours
+    with controlled brush variation.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: burnished paper, opaque watercolor, ink, and restrained gold-like accents; edges: precise hand-drawn
+    contours with controlled brush variation.'
+  evidence:
+    source_ids:
+    - source-mughal-miniature-painting-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: high
+    in selected details, low in open ground; placement: concentrated in foliage, textiles, architecture, and
+    small material marks. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    high in selected details, low in open ground; placement: concentrated in foliage, textiles, architecture,
+    and small material marks.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: high in selected details, low in open ground; placement: concentrated in foliage, textiles, architecture,
+    and small material marks.'
+  evidence:
+    source_ids:
+    - source-mughal-miniature-painting-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-mughal-miniature-painting-primary-source
+  kind: primary
+  base_asset_id: mughal-miniature-painting-primary-source
+execution:
+  route: text_only
+  must:
+  - 先建立边框、分层平面和主体轮廓，保持空间层级清楚。
+  - 再用不透明色块和细线逐层添加材质、服饰、植物或建筑细节。
+  - 最后以少量亮色或金色样细节强调节奏，并控制空白区域的呼吸感。
+  - 细密观察、轮廓秩序和多层平面在更换主体后仍然成立。
+  - 不要求宫殿、皇帝、花园、狩猎、动物或波斯文字。
+  - 复杂度来自局部精度与层级关系，不来自过度写实或随机装饰。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - mandatory palace, royal hunt, garden, animal, or calligraphic text
+  - glossy digital illustration, photorealistic lens blur, or 3D rendering
+  - copying a specific manuscript folio or historical figure
+  - copied folio composition
+  - named historical figure as default subject
+  - Do not reproduce a specific folio, recognizable historical figure, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
