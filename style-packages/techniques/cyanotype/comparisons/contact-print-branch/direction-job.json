@@ -1,0 +1,194 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "cyanotype",
+    "name": "氰版印相",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\techniques\\cyanotype"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，一枝有三片叶和一朵白色花的植物枝条，以接触印相方式呈现于浅色纸面，背景简洁，无文字。",
+  "prompt": "USER SUBJECT: 横版 16:9，一枝有三片叶和一朵白色花的植物枝条，以接触印相方式呈现于浅色纸面，背景简洁，无文字。\nSUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.\nVISUAL MEDIUM: cyanotype contact printing, with Prussian-blue photochemical exposure on a visible paper ground\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [medium] Render in cyanotype contact printing, with Prussian-blue photochemical exposure on a visible paper ground; make the production or rendering process visible in edge, surface, and tonal evidence.\n- [composition] Arrange the requested subject as a readable contact-print silhouette with deliberate negative space; preserve paper margins and avoid a copied source arrangement. Preserve the user-provided subject and requested layout.\n- [palette] Use Prussian blue for the deepest image, middle and diluted blues for tonal separation, and warm paper or unexposed regions as distinct grounds. Do not apply a single blue filter.\n- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.\nREQUIREMENT: translate the user subject into the style medium and structural rules\nREQUIREMENT: establish composition before small detail\nREQUIREMENT: inspect against the generic five-task suite\nREQUIREMENT: the result is an original new scene, not a copy of a source work\nREQUIREMENT: no unrequested text, logo, trademark, or named character\nREQUIREMENT: Preserve the user-provided subject, object count, location, and requested details.",
+  "negative_prompt": "generic_global_filter\ncopied_source_composition\nreadable_text_or_branding\ncopying_a_specific_work\ncopying_a_named_character_or_logo\nDo not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "cyanotype-direction",
+    "name": "氰版印相",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\techniques\\cyanotype\\art-direction.yaml",
+    "sha256": "5722eeb987ec43ec639e23ca05dec455f721ebf340fc662305b6e1fefb3a601a",
+    "active_rule_ids": [
+      "medium",
+      "composition",
+      "palette"
+    ],
+    "applicable_rule_ids": [
+      "medium",
+      "composition",
+      "palette"
+    ],
+    "omitted_context_rule_ids": [],
+    "contexts": [],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "translate the user subject into the style medium and structural rules",
+      "establish composition before small detail",
+      "inspect against the generic five-task suite",
+      "the result is an original new scene, not a copy of a source work",
+      "no unrequested text, logo, trademark, or named character",
+      "Preserve the user-provided subject, object count, location, and requested details."
+    ],
+    "avoid": [
+      "generic_global_filter",
+      "copied_source_composition",
+      "readable_text_or_branding",
+      "copying_a_specific_work",
+      "copying_a_named_character_or_logo",
+      "Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it."
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "cyanotype contact printing, with Prussian-blue photochemical exposure on a visible paper ground",
+      "representation": "stylized",
+      "description": "Describes cyanotype results through Prussian-blue values, contact-print silhouettes, paper irregularity, and photochemical traces, focusing on process rather than a single artist’s personal style.",
+      "required_contexts": [],
+      "incompatible_contexts": [],
+      "limitations": [
+        "copying_a_specific_work",
+        "copying_a_named_character_or_logo"
+      ]
+    },
+    "pillars": [
+      "Describes cyanotype results through Prussian-blue values, contact-print silhouettes, paper irregularity, and photochemical traces, focusing on process rather than a single artist’s personal style.",
+      "medium: cyanotype contact printing, with Prussian-blue photochemical exposure on a visible paper ground",
+      "composition: Arrange the requested subject as a readable contact-print silhouette with deliberate negative space; preserve paper margins and avoid a copied source arrangement.",
+      "palette: Prussian-blue image values over warm paper: #123A63 deep image, #2B5B82 middle tone, #7FA6B9 diluted layer, #F1EAD8 unexposed area, and #D3C5A5 paper base."
+    ],
+    "rules": [
+      {
+        "id": "medium",
+        "axis": "medium",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Render in cyanotype contact printing, with Prussian-blue photochemical exposure on a visible paper ground; make the production or rendering process visible in edge, surface, and tonal evidence.",
+        "observable": "The image visibly reads as cyanotype contact printing, with Prussian-blue photochemical exposure on a visible paper ground, rather than a generic color treatment.",
+        "reject_when": "Reject when the material or rendering process cannot be distinguished from a generic filter.",
+        "evidence": {
+          "source_ids": [
+            "source-source-1",
+            "source-source-2"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "composition",
+        "axis": "composition",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Arrange the requested subject as a readable contact-print silhouette with deliberate negative space; preserve paper margins and avoid a copied source arrangement. Preserve the user-provided subject and requested layout.",
+        "observable": "Arrange the requested subject as a readable contact-print silhouette with deliberate negative space; preserve paper margins and avoid a copied source arrangement.",
+        "reject_when": "Reject when the arrangement loses these structural decisions or copies a source composition.",
+        "evidence": {
+          "source_ids": [
+            "source-source-1",
+            "source-source-2"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "palette",
+        "axis": "palette",
+        "importance": "core",
+        "applies_when": "Always when this visual direction is selected and compatible with the requested medium.",
+        "instruction": "Use Prussian blue for the deepest image, middle and diluted blues for tonal separation, and warm paper or unexposed regions as distinct grounds. Do not apply a single blue filter.",
+        "observable": "Prussian-blue image values over warm paper: #123A63 deep image, #2B5B82 middle tone, #7FA6B9 diluted layer, #F1EAD8 unexposed area, and #D3C5A5 paper base.",
+        "reject_when": "Reject when a global tint replaces the stated color roles or the roles cannot be distinguished.",
+        "evidence": {
+          "source_ids": [
+            "source-source-1",
+            "source-source-2"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "visual-relationship-coherence",
+        "rule_ids": [
+          "medium",
+          "composition",
+          "palette"
+        ],
+        "instruction": "Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.",
+        "observable": "The linked visual decisions reinforce one another and remain subordinate to the user-provided subject."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-source-1",
+        "kind": "style_reference",
+        "base_asset_id": "source-1",
+        "package_reference": {
+          "asset_id": "source-1",
+          "local_path": "",
+          "title": "维多利亚与阿尔伯特博物馆氰版印相介绍",
+          "creator": "Public source page",
+          "year": "2026",
+          "source_url": "https://www.vam.ac.uk/articles/cyanotype",
+          "license": "reference-only-not-redistributed",
+          "attribution": "维多利亚与阿尔伯特博物馆氰版印相介绍",
+          "role": "style_reference",
+          "notes": "用于确认氰版印相的材料与历史背景。"
+        }
+      },
+      {
+        "id": "source-source-2",
+        "kind": "style_reference",
+        "base_asset_id": "source-2",
+        "package_reference": {
+          "asset_id": "source-2",
+          "local_path": "",
+          "title": "盖蒂保护研究所资料",
+          "creator": "Public source page",
+          "year": "2026",
+          "source_url": "https://www.getty.edu/conservation/",
+          "license": "reference-only-not-redistributed",
+          "attribution": "盖蒂保护研究所资料",
+          "role": "style_reference",
+          "notes": "用于参考蓝色铁盐影像的保存与材料特征。"
+        }
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "374a867c8e94fb384e2a3e3f158dc4363ae5c3bec6aaa68e1866783d515001b3",
+    "negative_prompt_sha256": "bd7f1872c637938ff3523dd092e743c706de67c1a9af167255eaa3cdab9f8991",
+    "direction_sha256": "5722eeb987ec43ec639e23ca05dec455f721ebf340fc662305b6e1fefb3a601a",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

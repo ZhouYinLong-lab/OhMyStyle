@@ -15,6 +15,10 @@ This independent package turns public research and observable decisions about me
 
 Describes cyanotype results through Prussian-blue values, contact-print silhouettes, paper irregularity, and photochemical traces, focusing on process rather than a single artist’s personal style.
 
+## Old and new direction comparison
+
+See the [same-subject plant contact-print images, actual generation prompts, and review notes](comparisons/contact-print-branch/README.md). This is a one-pair preliminary check, not evidence that the new direction is consistently better than the legacy package.
+
 ## Sources
 
 - [维多利亚与阿尔伯特博物馆氰版印相介绍](https://www.vam.ac.uk/articles/cyanotype)
