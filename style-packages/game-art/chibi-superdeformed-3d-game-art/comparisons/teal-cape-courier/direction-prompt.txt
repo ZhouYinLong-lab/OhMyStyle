@@ -1,0 +1,27 @@
+USER SUBJECT: 横版 16:9，无文字。浅色纯净背景前只有一名原创Q版奇幻邮差：头部明显大于身体，短四肢，穿青绿色短斗篷，橘色短发，手提一盏小金色灯；全身完整入镜，无其他人物、动物、建筑、标志或道具。姿势自然，面部表情清楚。
+SUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.
+VISUAL MEDIUM: 三维角色保持柔和简化体积; 服装层次适配短肢体比例
+REPRESENTATION: stylized
+APPLY THESE AUTHORED VISUAL RULES:
+- [medium] Use the declared medium and keep its package-specific representation constraints visible: 三维角色保持柔和简化体积; 服装层次适配短肢体比例.
+- [composition] Organize the requested subject using these package-specific spatial decisions: 头身比和大轮廓清晰; 服装和装备以大块形状概括. Preserve the user-provided content and layout.
+- [palette] Use these package-specific color roles and relationships: 高明度和清楚角色色组; 小面积对比用于表情或道具. Adapt their balance to the requested subject; do not apply them as a uniform tint.
+- [lighting] Apply the package-specific light behavior: 面部受光均匀，表情区域清楚; 阴影避免切碎五官. Keep light coherent with the requested subject, medium, and scene.
+- [surface] Render the requested materials using these package-specific surface decisions: 材质简化，轮廓圆润; 装饰减少但保留身份线索. Preserve detail hierarchy and material identity.
+- [texture] Render the requested materials using these package-specific surface decisions: 小尺度下保持五官清楚; 避免密集细线. Preserve detail hierarchy and material identity.
+- [visual-relationship-coherence] Keep the package-specific relationship among medium, composition, palette consistent while preserving the user-specified subject and layout.
+REQUIREMENT: 先定头身比和剪影
+REQUIREMENT: 概括服装及装备大形
+REQUIREMENT: 突出眼睛、眉口和姿态
+REQUIREMENT: 以软边明暗建立体积
+REQUIREMENT: 检查小尺寸辨识度
+REQUIREMENT: 超变形比例显著
+REQUIREMENT: 姿态和表情仍有层次
+REQUIREMENT: 不复制已知角色
+
+Negative prompt:
+adult realistic proportions
+over-detailed costume
+copied named character
+Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact composition.
+Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.

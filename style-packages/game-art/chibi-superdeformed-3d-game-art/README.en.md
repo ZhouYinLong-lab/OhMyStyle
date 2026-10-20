@@ -50,6 +50,10 @@ See [`provenance.yaml`](provenance.yaml),
 [`references/manifest.csv`](references/manifest.csv), and the repository
 [`NOTICE`](../../../NOTICE) for source and redistribution boundaries.
 
+## Visual comparison
+
+The [teal-cape courier comparison](comparisons/teal-cape-courier/README.md) records legacy and structured-direction outputs for the same request. This trial shows no clear incremental style effect.
+
 ## Use only this package
 
 Choose one of the following methods.

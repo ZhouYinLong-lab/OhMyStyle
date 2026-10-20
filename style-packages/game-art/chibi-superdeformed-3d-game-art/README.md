@@ -38,6 +38,10 @@
 
 详细来源和再分发边界见 [`provenance.yaml`](provenance.yaml)、[`references/manifest.csv`](references/manifest.csv) 以及仓库根目录的 [`NOTICE`](../../../NOTICE)。
 
+## 视觉对照
+
+[`青绿斗篷邮差`](comparisons/teal-cape-courier/README.md)保存了同题旧包和新版方向结果。本次未观察到明确的增量风格效果。
+
 ## 只使用此包
 
 四种方式可以按手边工具任选其一，不需要同时使用。

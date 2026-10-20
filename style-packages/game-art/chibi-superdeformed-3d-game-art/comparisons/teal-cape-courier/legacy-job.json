@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "chibi-superdeformed-3d-game-art",
+    "name": "Q版超变形三维游戏美术",
+    "version": "0.1.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\game-art\\chibi-superdeformed-3d-game-art"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "横版 16:9，无文字。浅色纯净背景前只有一名原创Q版奇幻邮差：头部明显大于身体，短四肢，穿青绿色短斗篷，橘色短发，手提一盏小金色灯；全身完整入镜，无其他人物、动物、建筑、标志或道具。姿势自然，面部表情清楚。",
+  "palette_pair": null,
+  "reference_set": "none",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nThe user-supplied subject and requested setting are authoritative. This style\npackage controls only observable visual treatment: medium, composition,\nlighting, palette, surface, texture, and edge behavior. Do not add a recurring\nobject, setting, character, landmark, or narrative motif unless the user asks\nfor it. Treat any concrete scene mentioned in package metadata or references as\nan optional example, never as a default subject.\n\nSUBJECT INDEPENDENCE CONTRACT\nSubject: 横版 16:9，无文字。浅色纯净背景前只有一名原创Q版奇幻邮差：头部明显大于身体，短四肢，穿青绿色短斗篷，橘色短发，手提一盏小金色灯；全身完整入镜，无其他人物、动物、建筑、标志或道具。姿势自然，面部表情清楚。\nPreserve the user-provided subject, count, setting, and requested details. The package controls visual treatment only.\n\nCreate a new subject and composition using these observable visual decisions:\n- 头身比和大轮廓清晰\n- 服装和装备以大块形状概括\n- 高明度和清楚角色色组\n- 小面积对比用于表情或道具\n- 三维角色保持柔和简化体积\n- 服装层次适配短肢体比例\n- 面部受光均匀，表情区域清楚\n- 阴影避免切碎五官\n- 材质简化，轮廓圆润\n- 装饰减少但保留身份线索\n- 小尺度下保持五官清楚\n- 避免密集细线\n- 超变形比例显著\n- 姿态和表情仍有层次\n- 不复制已知角色\nKeep the medium, lighting, palette roles, surface behavior, and edge language coherent. Do not copy any reference work, named character, location, logo, text, or exact arrangement.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied composition or recognizable source scene\n- unmotivated style mixing\n- generic global color filter\n- unreadable subject or broken geometry\n- extra logos, readable text, or watermarks\n- adult realistic proportions\n- over-detailed costume\n- copied named character",
+  "template_variables": {
+    "SUBJECT": "横版 16:9，无文字。浅色纯净背景前只有一名原创Q版奇幻邮差：头部明显大于身体，短四肢，穿青绿色短斗篷，橘色短发，手提一盏小金色灯；全身完整入镜，无其他人物、动物、建筑、标志或道具。姿势自然，面部表情清楚。",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "prompt_sha256": "e5eac64d94685f6379efa730d81c2a3cc6ceb037365534dc0a50b319aac8322a",
+    "negative_prompt_sha256": "1d481bc4077a46f11ebbc2cb895bd66146b06d4ddd363f5a00bd400153af23dd",
+    "source_policy": "External works and game materials are recorded as links for research and visual analysis only. They are not bundled or redistributed.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
