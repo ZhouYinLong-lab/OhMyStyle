@@ -1,0 +1,143 @@
+schema_version: 2.1.0
+status: experimental
+id: lewis-hine-direction
+name: 刘易斯·海因
+base_package: photographers/lewis-hine
+scope:
+  medium: social_documentary_photography
+  representation: recognizable
+  description: A reference-backed social documentary photography profile focused on human dignity, evidentiary
+    framing, industrial scale, direct tonal description, and the relationship between worker, object, and institution.
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - fashion_pose
+  - anonymous_vintage_aesthetic
+  - poverty_porn
+pillars:
+- A reference-backed social documentary photography profile focused on human dignity, evidentiary framing,
+  industrial scale, direct tonal description, and the relationship between worker, object, and institution.
+- 'composition: place a person in a legible work or institutional environment; use machinery, walls, luggage,
+  tools, or architecture to establish scale and social context; allow direct frontal or three-quarter observation
+  without fashion posing; use clear geometry and enough detail for evidence, not atmospheric mystery'
+- 'palette: neutral black-and-white or restrained archival monochrome; skin, metal, cloth, and concrete differentiated
+  through value and texture'
+- 'lighting: quality: direct_documentary_or_available_institutional_light; behavior: clear_form_modeling; behavior:
+  readable_midtones; behavior: controlled_highlights'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: place a person
+    in a legible work or institutional environment; use machinery, walls, luggage, tools, or architecture to
+    establish scale and social context; allow direct frontal or three-quarter observation without fashion posing;
+    use clear geometry and enough detail for evidence, not atmospheric mystery. Preserve the user-provided
+    content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: place a person in
+    a legible work or institutional environment; use machinery, walls, luggage, tools, or architecture to establish
+    scale and social context; allow direct frontal or three-quarter observation without fashion posing; use
+    clear geometry and enough detail for evidence, not atmospheric mystery.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: place a
+    person in a legible work or institutional environment; use machinery, walls, luggage, tools, or architecture
+    to establish scale and social context; allow direct frontal or three-quarter observation without fashion
+    posing; use clear geometry and enough detail for evidence, not atmospheric mystery.'
+  evidence:
+    source_ids:
+    - source-hine-powerhouse
+    - source-hine-ellis-island
+    basis: curatorial_inference
+    visual_review: pending
+- id: color
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: neutral black-and-white or restrained
+    archival monochrome; skin, metal, cloth, and concrete differentiated through value and texture. Adapt their
+    balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: neutral black-and-white or
+    restrained archival monochrome; skin, metal, cloth, and concrete differentiated through value and texture.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    neutral black-and-white or restrained archival monochrome; skin, metal, cloth, and concrete differentiated
+    through value and texture.'
+  evidence:
+    source_ids:
+    - source-hine-powerhouse
+    - source-hine-ellis-island
+    basis: curatorial_inference
+    visual_review: pending
+- id: light
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: direct_documentary_or_available_institutional_light;
+    behavior: clear_form_modeling; behavior: readable_midtones; behavior: controlled_highlights. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: direct_documentary_or_available_institutional_light;
+    behavior: clear_form_modeling; behavior: readable_midtones; behavior: controlled_highlights.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: direct_documentary_or_available_institutional_light;
+    behavior: clear_form_modeling; behavior: readable_midtones; behavior: controlled_highlights.'
+  evidence:
+    source_ids:
+    - source-hine-powerhouse
+    - source-hine-ellis-island
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: capture: early_documentary_plate_or_film_record;
+    rendering: sharp_structural_detail; rendering: modest_print_irregularity; rendering: honest_tonal_response.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: capture:
+    early_documentary_plate_or_film_record; rendering: sharp_structural_detail; rendering: modest_print_irregularity;
+    rendering: honest_tonal_response.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    capture: early_documentary_plate_or_film_record; rendering: sharp_structural_detail; rendering: modest_print_irregularity;
+    rendering: honest_tonal_response.'
+  evidence:
+    source_ids:
+    - source-hine-powerhouse
+    - source-hine-ellis-island
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- color
+- light
+- surface
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - color
+  - light
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-hine-powerhouse
+  kind: primary
+  base_asset_id: hine-powerhouse
+- id: source-hine-ellis-island
+  kind: wikimedia_commons_lewis_hine
+  base_asset_id: hine-ellis-island
+execution:
+  route: text_only
+  must:
+  - identify the social fact before styling the frame
+  - place tools, machinery, luggage, or architecture in relation to the body
+  - keep tonal response descriptive and midtones open
+  - avoid sentimental blur, heroic overstatement, and modern editorial polish
+  - the person has agency and dignity
+  - the environment provides evidence rather than decoration
+  - scale relationships between body, work, and institution are legible
+  - no invented melodrama or copied historical scene
+  avoid:
+  - fashion_pose
+  - anonymous_vintage_aesthetic
+  - poverty_porn
+  - Use documentary structure only; do not recreate a named photograph or exploit a vulnerable person.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
