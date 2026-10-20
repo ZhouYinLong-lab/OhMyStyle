@@ -1,0 +1,150 @@
+schema_version: 2.1.0
+status: experimental
+id: impossible-architecture-game-art-direction
+name: 等距幻觉建筑游戏美术
+base_package: game-art/impossible-architecture-game-art
+scope:
+  medium: 简化三维几何; 等距或弱透视投影; 平整材质和清晰边界
+  representation: stylized
+  description: 以等距视角、非欧几何连接、干净色面和可操作建筑机关组织谜题场景，画面优先呈现结构关系与视觉错觉。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - random_perspective_break
+  - photorealistic_architecture
+  - unreadable_mechanism
+  - copied_level_layout
+pillars:
+- 以等距视角、非欧几何连接、干净色面和可操作建筑机关组织谜题场景，画面优先呈现结构关系与视觉错觉。
+- 'medium: 简化三维几何; 等距或弱透视投影; 平整材质和清晰边界'
+- 'composition: 等距轴线清楚; 平台、楼梯、桥和门形成可追踪路径; 错觉只发生在结构连接处并可被理解'
+- 'palette: 大块粉彩与深色阴影形成清晰分区; 一到两个高亮色提示可操作结构; 色彩服务于空间而非装饰堆叠'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 简化三维几何;
+    等距或弱透视投影; 平整材质和清晰边界.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 简化三维几何;
+    等距或弱透视投影; 平整材质和清晰边界.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    简化三维几何; 等距或弱透视投影; 平整材质和清晰边界.'
+  evidence:
+    source_ids:
+    - source-impossible-architecture-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 等距轴线清楚; 平台、楼梯、桥和门形成可追踪路径;
+    错觉只发生在结构连接处并可被理解. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 等距轴线清楚; 平台、楼梯、桥和门形成可追踪路径;
+    错觉只发生在结构连接处并可被理解.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 等距轴线清楚;
+    平台、楼梯、桥和门形成可追踪路径; 错觉只发生在结构连接处并可被理解.'
+  evidence:
+    source_ids:
+    - source-impossible-architecture-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 大块粉彩与深色阴影形成清晰分区; 一到两个高亮色提示可操作结构;
+    色彩服务于空间而非装饰堆叠. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 大块粉彩与深色阴影形成清晰分区; 一到两个高亮色提示可操作结构;
+    色彩服务于空间而非装饰堆叠.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    大块粉彩与深色阴影形成清晰分区; 一到两个高亮色提示可操作结构; 色彩服务于空间而非装饰堆叠.'
+  evidence:
+    source_ids:
+    - source-impossible-architecture-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 方向明确的软光; 结构阴影帮助读取高度; 避免强反射干扰几何. Keep light coherent
+    with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 方向明确的软光; 结构阴影帮助读取高度; 避免强反射干扰几何.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 方向明确的软光; 结构阴影帮助读取高度; 避免强反射干扰几何.'
+  evidence:
+    source_ids:
+    - source-impossible-architecture-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 建筑表面简洁，少量台阶或砖缝提供尺度;
+    材质差异通过色块表达. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 建筑表面简洁，少量台阶或砖缝提供尺度;
+    材质差异通过色块表达.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    建筑表面简洁，少量台阶或砖缝提供尺度; 材质差异通过色块表达.'
+  evidence:
+    source_ids:
+    - source-impossible-architecture-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 纹理稀疏且不打断几何线;
+    保持图标化可读性. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 纹理稀疏且不打断几何线;
+    保持图标化可读性.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    纹理稀疏且不打断几何线; 保持图标化可读性.'
+  evidence:
+    source_ids:
+    - source-impossible-architecture-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-impossible-architecture-game-art-primary-source
+  kind: primary
+  base_asset_id: impossible-architecture-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先绘制等距网格和主路径
+  - 再设计一处局部结构错觉
+  - 分配色彩与交互提示
+  - 用俯视检查空间是否仍可解释
+  - 每个视觉机关有清楚的几何语法
+  - 错误透视必须是有意且局部的
+  - 不复刻来源游戏的地标
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - random_perspective_break
+  - photorealistic_architecture
+  - unreadable_mechanism
+  - copied_level_layout
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
