@@ -1,0 +1,151 @@
+schema_version: 2.1.0
+status: experimental
+id: stylized-pbr-sci-fi-game-art-direction
+name: 风格化物理渲染科幻游戏美术
+base_package: game-art/stylized-pbr-sci-fi-game-art
+scope:
+  medium: 风格化PBR材质; 真实粗糙度和金属度差异; 图形化灯牌或发光面
+  representation: stylized
+  description: 在真实材质响应与高度风格化的科幻环境之间建立平衡，使用可读的金属、玻璃、湿地和霓虹反射，但避免把画面退化成无层次的赛博滤镜。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - generic_cyberpunk_gradient
+  - unreadable_neon
+  - copied_cityscape
+  - plastic_everything
+pillars:
+- 在真实材质响应与高度风格化的科幻环境之间建立平衡，使用可读的金属、玻璃、湿地和霓虹反射，但避免把画面退化成无层次的赛博滤镜。
+- 'medium: 风格化PBR材质; 真实粗糙度和金属度差异; 图形化灯牌或发光面'
+- 'composition: 用建筑层叠、垂直管线和狭窄通道形成深度; 焦点物体有明确轮廓和交互尺度; 远景灯光不抢近景材质'
+- 'palette: 深蓝黑、青绿、橙黄和少量紫红形成冷暖对照; 霓虹色是局部光源而不是全局色罩; 湿地反射保持原色层次'
+rules:
+- id: medium
+  axis: medium
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use the declared medium and keep its package-specific representation constraints visible: 风格化PBR材质;
+    真实粗糙度和金属度差异; 图形化灯牌或发光面.'
+  observable: 'The requested image retains the stated medium distinction or production constraint: 风格化PBR材质;
+    真实粗糙度和金属度差异; 图形化灯牌或发光面.'
+  reject_when: 'The medium is converted into an unrelated representation or the stated distinction disappears:
+    风格化PBR材质; 真实粗糙度和金属度差异; 图形化灯牌或发光面.'
+  evidence:
+    source_ids:
+    - source-stylized-pbr-sci-fi-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 用建筑层叠、垂直管线和狭窄通道形成深度;
+    焦点物体有明确轮廓和交互尺度; 远景灯光不抢近景材质. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 用建筑层叠、垂直管线和狭窄通道形成深度;
+    焦点物体有明确轮廓和交互尺度; 远景灯光不抢近景材质.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 用建筑层叠、垂直管线和狭窄通道形成深度;
+    焦点物体有明确轮廓和交互尺度; 远景灯光不抢近景材质.'
+  evidence:
+    source_ids:
+    - source-stylized-pbr-sci-fi-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 深蓝黑、青绿、橙黄和少量紫红形成冷暖对照; 霓虹色是局部光源而不是全局色罩;
+    湿地反射保持原色层次. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 深蓝黑、青绿、橙黄和少量紫红形成冷暖对照; 霓虹色是局部光源而不是全局色罩;
+    湿地反射保持原色层次.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    深蓝黑、青绿、橙黄和少量紫红形成冷暖对照; 霓虹色是局部光源而不是全局色罩; 湿地反射保持原色层次.'
+  evidence:
+    source_ids:
+    - source-stylized-pbr-sci-fi-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: 多源环境光仍有主次; 雨后湿地反射可辨但不过曝; 光源方向和颜色可追踪. Keep light
+    coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: 多源环境光仍有主次; 雨后湿地反射可辨但不过曝; 光源方向和颜色可追踪.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: 多源环境光仍有主次; 雨后湿地反射可辨但不过曝;
+    光源方向和颜色可追踪.'
+  evidence:
+    source_ids:
+    - source-stylized-pbr-sci-fi-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 锈蚀、玻璃、混凝土、塑料和金属必须区分;
+    粗糙度比高光数量更重要. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 锈蚀、玻璃、混凝土、塑料和金属必须区分;
+    粗糙度比高光数量更重要.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    锈蚀、玻璃、混凝土、塑料和金属必须区分; 粗糙度比高光数量更重要.'
+  evidence:
+    source_ids:
+    - source-stylized-pbr-sci-fi-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: 细节集中在近景和功能构件;
+    污渍、划痕与水迹有空间逻辑. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: 细节集中在近景和功能构件;
+    污渍、划痕与水迹有空间逻辑.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    细节集中在近景和功能构件; 污渍、划痕与水迹有空间逻辑.'
+  evidence:
+    source_ids:
+    - source-stylized-pbr-sci-fi-game-art-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- medium
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - medium
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among medium, composition, palette consistent while preserving
+    the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-stylized-pbr-sci-fi-game-art-primary-source
+  kind: primary
+  base_asset_id: stylized-pbr-sci-fi-game-art-primary-source
+execution:
+  route: text_only
+  must:
+  - 先分配空间层次和主光源
+  - 再建立材质粗糙度分区
+  - 加入少量功能色光
+  - 最后检查反射、透明和颜色污染
+  - PBR材质真实响应与图形色彩同时成立
+  - 不依赖统一青橙滤镜
+  - 不复制具体游戏场景
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - generic_cyberpunk_gradient
+  - unreadable_neon
+  - copied_cityscape
+  - plastic_everything
+  - Use observable traits only. Do not reconstruct a named work, character, location, logo, text, or exact
+    composition.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
