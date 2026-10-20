@@ -72,4 +72,4 @@ prompts/base.txt、prompts/negative.txt、palette/palette.json 和 evaluation.ya
 
 ## 实验方向：抛光物件的几何切面
 
-可选方向 [`art-direction.yaml`](art-direction.yaml) 仅适用于用户指定的抛光金属或石材物件：让明暗切面顺着物件真实体积变化，并使背景几何形与物件轮廓保持分离。避免把画面变成产品级照片、塑料 3D 或通体镀铬效果。查看 [`comparisons/`](comparisons/README.md) 中的生成对照；该方向仍处于实验状态。
+可选方向 [`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，仅适用于用户指定的抛光金属或石材物件：让明暗切面顺着物件真实体积变化。只有场景确有几何背景或材质需要反光识别时，才声明 `geometric-background-shapes-surround-object`、`highlights-and-reflections-needed-for-material` 启用对应规则。避免把画面变成产品级照片、塑料 3D 或通体镀铬效果。查看 [`comparisons/`](comparisons/README.md) 中的生成对照；该方向仍处于实验状态。

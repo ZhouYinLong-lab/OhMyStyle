@@ -91,4 +91,4 @@ figures, text, trademark, or logo.
 
 ## Experimental direction: facets on polished objects
 
-The optional [`art-direction.yaml`](art-direction.yaml) applies only to a user-requested polished metal or stone object. Align light and shadow facets to the object's form and separate its silhouette from background geometry. Avoid turning the painting into a product photograph, plastic 3D render, or uniform chrome effect. See [`comparisons/`](comparisons/README.md) for a generated comparison. This direction remains experimental.
+The optional [`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0 and applies only to a user-requested polished metal or stone object. Align light and shadow facets to the object's form. Declare `geometric-background-shapes-surround-object` or `highlights-and-reflections-needed-for-material` only when applicable to activate the related rules. Avoid turning the painting into a product photograph, plastic 3D render, or uniform chrome effect. See [`comparisons/`](comparisons/README.md) for a generated comparison. This direction remains experimental.

@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: lempicka-polished-object-facets
 name: Lempicka polished-object facets
@@ -23,6 +23,19 @@ scope:
     - Preserve the object's requested design, material, color, scale, and placement.
     - Keep background planes distinct from the object's silhouette.
     - Do not add a person, fashion object, jewelry, label, or brand unless requested.
+contexts:
+  - id: user-requested-polished-metal-or-stone-object
+    description: The user requests a polished metal or stone object in a painted Art Deco treatment.
+  - id: user-requested-matte-object
+    description: The user requires a matte object surface.
+  - id: exact-reconstruction-of-named-lempicka-work
+    description: The user requests an exact reconstruction of a named Lempicka work.
+  - id: photorealistic-product-render-requested
+    description: The user requires a photorealistic product rendering.
+  - id: geometric-background-shapes-surround-object
+    description: Geometric background shapes surround the requested object.
+  - id: highlights-and-reflections-needed-for-material
+    description: Highlights and reflections are needed to identify the requested material.
 pillars:
   - Align major highlight and shadow planes with the object's actual turning surfaces.
   - Let one crisp highlight edge explain the polished material without covering the object's shape.
@@ -31,6 +44,8 @@ rules:
   - id: facets-follow-object-turning-form
     axis: material-volume-structure
     importance: core
+    when_contexts:
+      - user-requested-polished-metal-or-stone-object
     applies_when: The user requests a polished metal or stone object.
     instruction: Place broad light and shadow facets along the object's real planes and curves; keep the brightest narrow highlight on a turning edge or bevel that clarifies its volume.
     observable: The object's shape remains readable through angular value changes, with no uniform metallic gloss.
@@ -44,6 +59,8 @@ rules:
   - id: background-facets-respect-silhouette
     axis: object-background-plane-hierarchy
     importance: core
+    when_contexts:
+      - geometric-background-shapes-surround-object
     applies_when: Geometric background shapes surround the requested object.
     instruction: Stop architectural or decorative planes at the object's silhouette; use value and hue contrast to separate overlapping edges without adding a halo.
     observable: The object reads as a coherent volume against a crisp but subordinate Art Deco setting.
@@ -57,6 +74,8 @@ rules:
   - id: painted-surface-controls-reflection
     axis: painterly-material-translation
     importance: supporting
+    when_contexts:
+      - highlights-and-reflections-needed-for-material
     applies_when: Highlights and reflections are needed to identify the requested material.
     instruction: Translate reflections into a few smooth painted planes with restrained surface variation; preserve visible paint character and the specified material color.
     observable: The polished surface feels painted and sculptural rather than photo-composited or rendered in 3D.
