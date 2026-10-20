@@ -15,6 +15,7 @@ files:
   evaluation: evaluation.yaml
   references: references/manifest.csv
   provenance: provenance.yaml
+  art_direction: art-direction.yaml
 classification:
   source_type: game_art
   medium: 游戏美术
