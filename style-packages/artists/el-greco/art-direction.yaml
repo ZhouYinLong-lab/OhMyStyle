@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: el-greco-vertical-lift-and-flickering-form
 name: El Greco vertical lift and flickering form
@@ -23,6 +23,17 @@ scope:
     - Preserve the user's requested subject, identity, count, action, and setting; do not add saints, angels, worshippers, clouds, or a religious story unless requested.
     - Elongate or twist forms only enough to support the rising composition; keep faces, hands, and action-critical landmarks identifiable.
     - Use luminous contrast as a local relationship between forms; do not add a halo, divine source, or supernatural glow without request.
+contexts:
+  - id: vertical-lift-composition
+    description: A user-requested tall composition organized around upward visual movement.
+  - id: photorealistic-rendering
+    description: A photorealistic rendering without painterly distortion.
+  - id: grounded-horizontal-group-scene
+    description: A horizontal scene whose figures or forms must remain grounded and level.
+  - id: flat-geometric-layout
+    description: A flat geometric layout without modeled or flickering forms.
+  - id: flickering-painterly-edges-allowed
+    description: The requested treatment allows a few broken or flickering brush edges.
 pillars:
   - Arrange the requested focal form and supporting elements along a readable rising axis without changing the subject count.
   - Stretch selected proportions and contours to reinforce upward movement while retaining identifiable anatomy or object structure.
@@ -60,6 +71,8 @@ rules:
   - id: localized-flicker-and-cool-warm-contrast
     axis: mark_making_and_color
     importance: core
+    when_contexts:
+      - flickering-painterly-edges-allowed
     applies_when: The image uses painterly edges and color to reinforce a rising focal form.
     instruction: Let a few broken or flickering brush passages follow the upward rhythm and place cool-warm contrasts on selected planes; keep other contours calm and colors attached to the depicted forms.
     observable: Brush rhythm and color make the focal forms feel active or weightless without dissolving their structure or turning light into a special effect.
