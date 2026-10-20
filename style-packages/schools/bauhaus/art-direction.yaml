@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: bauhaus-paper-study
 name: Bauhaus preliminary-course paper study
@@ -15,6 +15,15 @@ scope:
   limitations:
     - Do not use this direction when the requested medium must remain pure painting or photography.
     - A generated image cannot certify that a paper construction is physically buildable, foldable, or load-bearing.
+contexts:
+  - id: paper-study
+    description: A visual study explicitly focused on paper construction operations.
+  - id: oil-painting
+    description: A requested result that must use oil painting as its medium.
+  - id: physical-certification
+    description: A request to prove that a structure is physically buildable or load-bearing.
+  - id: explainable-cast-shadows
+    description: Lighting makes openings, folds, and cast shadows visible and consistent.
 pillars:
   - Form and space emerge from the processing and structural relationships of paper.
   - Explore material with a small number of clear operations; do not use a school name as a substitute for a design method.
@@ -50,6 +59,8 @@ rules:
   - id: paper-space-and-shadow
     axis: space
     importance: supporting
+    when_contexts:
+      - explainable-cast-shadows
     applies_when: The subject has spatial volumes and lighting allows openings and folds to be read.
     instruction: Use openings, negative space, and explainable cast shadows to reveal spatial relationships in the paper.
     observable: Solid surfaces, openings, and shadows are distinguishable; shadow direction agrees with the folds.
