@@ -45,7 +45,7 @@ See [`provenance.yaml`](provenance.yaml),
 
 ## New architecture: contour tension and exposed ground (experimental)
 
-[`art-direction.yaml`](art-direction.yaml) focuses on selected works on paper from around 1910–1914 and is enabled only when the user declares `expressive-contour-study`. It uses directional, weighted contour; open ground that presses against the subject; and sparse, localized dry color. It does not default to nudity, self-portraiture, a particular pose, or erotic framing.
+[`art-direction.yaml`](art-direction.yaml) uses direction format 2.1.0, focuses on selected works on paper from around 1910–1914, and is enabled only when the user declares `expressive-contour-study`. Contour is a base rule; callers can declare `distinct-subject-against-visible-paper` or `user-requested-paper-based-painted-study` as applicable to activate open-ground composition or localized dry color. It does not default to nudity, self-portraiture, a particular pose, or erotic framing.
 
 This differs from Beardsley's black-and-white ink masses and decorative calligraphic contour, and from Morisot's quick gesture-led strokes and open edges. The Schiele direction centers on structural pressure in the contour and the compositional role of exposed paper.
 

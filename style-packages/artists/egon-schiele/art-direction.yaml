@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 status: experimental
 id: schiele-contour-tension-and-exposed-ground
 name: Schiele contour tension and exposed ground
@@ -23,6 +23,19 @@ scope:
     - Preserve the requested subject, identity, pose, clothing, and body type; do not default to nudity, self-portraiture, erotic framing, or a contorted pose.
     - Apply angular stylization only as far as the subject remains recognizable and the requested action stays legible.
     - Keep paper ground and sparse color subordinate to the requested medium and color constraints; do not impose a fixed palette on every image.
+contexts:
+  - id: expressive-contour-study
+    description: The user requests a drawing or watercolor study centered on expressive contour.
+  - id: photorealistic-rendering
+    description: The user requires a photorealistic rendering.
+  - id: decorative-monochrome-ink
+    description: The user requires decorative monochrome ink work.
+  - id: smooth-academic-modeling
+    description: The user requires smooth academic modeling.
+  - id: distinct-subject-against-visible-paper
+    description: A distinct subject is placed against visible paper or a quiet ground.
+  - id: user-requested-paper-based-painted-study
+    description: The user requests watercolor, gouache, or another paper-based painted study.
 pillars:
   - Let a directional, emphatic contour describe structure and expressive tension instead of tracing every edge evenly.
   - Balance the silhouette with deliberate open ground and unevenly worked regions.
@@ -32,6 +45,8 @@ rules:
   - id: emphatic-angular-contour
     axis: line_and_form
     importance: core
+    when_contexts:
+      - expressive-contour-study
     applies_when: The requested image is a drawing or watercolor study with a clearly defined subject.
     instruction: Vary the contour's pressure, direction, and continuity to stress the requested subject's structure; allow purposeful angular breaks, but retain enough anatomical or object landmarks to preserve identity and action.
     observable: The line feels deliberate and structurally expressive, with a few stronger turns or interruptions carrying more weight than secondary edges.
@@ -46,6 +61,8 @@ rules:
   - id: silhouette-and-open-ground-tension
     axis: figure_ground_and_composition
     importance: core
+    when_contexts:
+      - distinct-subject-against-visible-paper
     applies_when: The composition includes a distinct subject against visible paper or a quiet field.
     instruction: Place the subject asymmetrically and let open ground press against or interrupt selected parts of its silhouette; keep the negative shapes intentional and protect the requested focal landmarks.
     observable: The occupied and unoccupied areas create a taut, readable balance rather than a centered cutout or evenly filled page.
@@ -60,6 +77,8 @@ rules:
   - id: localized-dry-color-and-paper
     axis: color_and_surface
     importance: core
+    when_contexts:
+      - user-requested-paper-based-painted-study
     applies_when: The user requests watercolor, gouache, or another paper-based painted study.
     instruction: Use a few restrained, dry color passages on selected forms and leave paper visible between them; assign colors locally to the requested subject and avoid spreading one hue as an all-over wash.
     observable: Color supports the form in separate, economical accents while the paper remains an active part of the surface.

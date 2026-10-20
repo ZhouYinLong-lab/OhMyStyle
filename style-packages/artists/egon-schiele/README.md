@@ -36,7 +36,7 @@
 
 ## 新架构：轮廓张力与纸白负形（实验）
 
-[`art-direction.yaml`](art-direction.yaml) 聚焦席勒约 1910–1914 年的部分纸上作品，并仅在用户声明 `expressive-contour-study` 时启用。核心是有方向和轻重变化的轮廓、与主体互相施压的留白、少量局部干涩色彩。不会自动加入裸体、自画像、特定姿势或情色表达。
+[`art-direction.yaml`](art-direction.yaml) 使用方向格式 2.1.0，聚焦席勒约 1910–1914 年的部分纸上作品，并仅在用户声明 `expressive-contour-study` 时启用。轮廓作为基础规则；调用者还可根据场景声明 `distinct-subject-against-visible-paper` 或 `user-requested-paper-based-painted-study`，再启用负形构图或纸上干性色彩规则。不会自动加入裸体、自画像、特定姿势或情色表达。
 
 这与比亚兹莱以黑白墨块和装饰性书写轮廓组织画面的方向不同，也与莫里索以快速笔触承载手势、开放边缘不同：席勒方向关注轮廓的结构压力和纸白的构图作用。
 
