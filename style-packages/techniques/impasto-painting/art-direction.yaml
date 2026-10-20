@@ -1,0 +1,157 @@
+schema_version: 2.1.0
+status: experimental
+id: impasto-painting-direction
+name: 厚涂绘画
+base_package: techniques/impasto-painting
+scope:
+  medium: 绘画技法
+  representation: stylized
+  description: 以明显堆叠的颜料厚度、可见笔触与调色刀痕塑造光线和表面，让画面纹理成为构图与体积的一部分。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - generic painterly filter
+  - uniform canvas noise
+  - automatic artist palette or subject
+pillars:
+- 以明显堆叠的颜料厚度、可见笔触与调色刀痕塑造光线和表面，让画面纹理成为构图与体积的一部分。
+- 'differentiation: 真实可见的颜料厚度; 笔触方向与体积、光线绑定; 高光通过颜料堆叠而不是发光滤镜产生; 纹理密度随主体和构图变化'
+- 'composition: 笔触方向跟随主体体积和光线走向; 厚薄变化形成局部节奏与视觉焦点; 形体仍然可辨，不让纹理吞没主体'
+- 'palette: 色彩由相邻厚涂色块和混合痕迹建立; 高光可用更厚的浅色颜料强调; 整体色相服从用户需求，不自动变成特定艺术家配色'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: 真实可见的颜料厚度;
+    笔触方向与体积、光线绑定; 高光通过颜料堆叠而不是发光滤镜产生; 纹理密度随主体和构图变化. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: 真实可见的颜料厚度; 笔触方向与体积、光线绑定; 高光通过颜料堆叠而不是发光滤镜产生;
+    纹理密度随主体和构图变化.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: 真实可见的颜料厚度;
+    笔触方向与体积、光线绑定; 高光通过颜料堆叠而不是发光滤镜产生; 纹理密度随主体和构图变化.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 笔触方向跟随主体体积和光线走向;
+    厚薄变化形成局部节奏与视觉焦点; 形体仍然可辨，不让纹理吞没主体. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 笔触方向跟随主体体积和光线走向;
+    厚薄变化形成局部节奏与视觉焦点; 形体仍然可辨，不让纹理吞没主体.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 笔触方向跟随主体体积和光线走向;
+    厚薄变化形成局部节奏与视觉焦点; 形体仍然可辨，不让纹理吞没主体.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 色彩由相邻厚涂色块和混合痕迹建立; 高光可用更厚的浅色颜料强调;
+    整体色相服从用户需求，不自动变成特定艺术家配色. Adapt their balance to the requested subject; do not apply them as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 色彩由相邻厚涂色块和混合痕迹建立; 高光可用更厚的浅色颜料强调;
+    整体色相服从用户需求，不自动变成特定艺术家配色.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    色彩由相邻厚涂色块和混合痕迹建立; 高光可用更厚的浅色颜料强调; 整体色相服从用户需求，不自动变成特定艺术家配色.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 侧光掠过颜料脊线，产生真实微型阴影; behavior: 光线要能解释厚度，不使用发光特效.
+    Keep light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 侧光掠过颜料脊线，产生真实微型阴影;
+    behavior: 光线要能解释厚度，不使用发光特效.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 侧光掠过颜料脊线，产生真实微型阴影;
+    behavior: 光线要能解释厚度，不使用发光特效.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 颜料明显高出画面表面;
+    edges: subject-dependent and medium-aware. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    颜料明显高出画面表面; edges: subject-dependent and medium-aware.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 颜料明显高出画面表面; edges: subject-dependent and medium-aware.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 中到高纹理密度，按形体局部布置;
+    placement: 背景可减弱厚度，避免全画面同质化. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    中到高纹理密度，按形体局部布置; placement: 背景可减弱厚度，避免全画面同质化.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 中到高纹理密度，按形体局部布置; placement: 背景可减弱厚度，避免全画面同质化.'
+  evidence:
+    source_ids:
+    - source-primary-01
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-primary-01
+  kind: impasto
+  base_asset_id: primary-01
+execution:
+  route: text_only
+  must:
+  - 先确定主体的体积和光源方向
+  - 用厚薄不同的颜料建立主要色块
+  - 让笔触方向回应曲面、边缘和光线
+  - 检查纹理是否仍然服务于主体而非成为固定题材
+  - 真实可见的颜料厚度
+  - 笔触方向与体积、光线绑定
+  - 高光通过颜料堆叠而不是发光滤镜产生
+  - 纹理密度随主体和构图变化
+  avoid:
+  - generic global style-filter language without observable constraints
+  - fixed subject matter, landmark, character, or narrative motif
+  - copying a specific reference composition
+  - generic painterly filter
+  - uniform canvas noise
+  - automatic artist palette or subject
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, branded layout, screenshot, or
+    protected game asset.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
