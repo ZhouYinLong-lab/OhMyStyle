@@ -1,0 +1,136 @@
+schema_version: 2.1.0
+status: experimental
+id: shomei-tomatsu-direction
+name: 东松照明
+base_package: photographers/shomei-tomatsu
+scope:
+  medium: 战后纪实摄影与主观化街头观察
+  representation: recognizable
+  description: 以战后日本的残痕、日常物件与社会现场为线索，在黑白与高饱和色彩之间建立诗性、尖锐而不稳定的摄影观察。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+pillars:
+- 以战后日本的残痕、日常物件与社会现场为线索，在黑白与高饱和色彩之间建立诗性、尖锐而不稳定的摄影观察。
+- 'composition: 使用近距离观察、偏置主体、裁切边缘和偶然遮挡；避免把画面整理成平稳的旅游或商业构图。; 允许背景信息以碎片形式出现，但主体仍需保持可识别和可复核。'
+- 'palette: 黑白高反差与局部高饱和色可以并存；色彩来自现场物件、灯光或表面，而不是统一滤镜。; 保留暗部细节和局部过曝痕迹，让颜色带有现实中的不稳定感。'
+- 'lighting: quality: 自然光、街灯或混合现场光；方向可以不完全均匀，但不能用电影化轮廓光替代观察。; behavior: 光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior:
+  保留用户指定的主体轮廓、位置和空间关系。'
+rules:
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: 使用近距离观察、偏置主体、裁切边缘和偶然遮挡；避免把画面整理成平稳的旅游或商业构图。;
+    允许背景信息以碎片形式出现，但主体仍需保持可识别和可复核。. Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: 使用近距离观察、偏置主体、裁切边缘和偶然遮挡；避免把画面整理成平稳的旅游或商业构图。;
+    允许背景信息以碎片形式出现，但主体仍需保持可识别和可复核。.'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: 使用近距离观察、偏置主体、裁切边缘和偶然遮挡；避免把画面整理成平稳的旅游或商业构图。;
+    允许背景信息以碎片形式出现，但主体仍需保持可识别和可复核。.'
+  evidence:
+    source_ids:
+    - source-shomei-tomatsu-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: 黑白高反差与局部高饱和色可以并存；色彩来自现场物件、灯光或表面，而不是统一滤镜。;
+    保留暗部细节和局部过曝痕迹，让颜色带有现实中的不稳定感。. Adapt their balance to the requested subject; do not apply them as a uniform
+    tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: 黑白高反差与局部高饱和色可以并存；色彩来自现场物件、灯光或表面，而不是统一滤镜。;
+    保留暗部细节和局部过曝痕迹，让颜色带有现实中的不稳定感。.'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    黑白高反差与局部高饱和色可以并存；色彩来自现场物件、灯光或表面，而不是统一滤镜。; 保留暗部细节和局部过曝痕迹，让颜色带有现实中的不稳定感。.'
+  evidence:
+    source_ids:
+    - source-shomei-tomatsu-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: 自然光、街灯或混合现场光；方向可以不完全均匀，但不能用电影化轮廓光替代观察。;
+    behavior: 光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior: 保留用户指定的主体轮廓、位置和空间关系。. Keep light coherent with the
+    requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: 自然光、街灯或混合现场光；方向可以不完全均匀，但不能用电影化轮廓光替代观察。;
+    behavior: 光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior: 保留用户指定的主体轮廓、位置和空间关系。.'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: 自然光、街灯或混合现场光；方向可以不完全均匀，但不能用电影化轮廓光替代观察。;
+    behavior: 光线服务于主体结构和媒介表面，不制造与本包无关的戏剧化特效。; behavior: 保留用户指定的主体轮廓、位置和空间关系。.'
+  evidence:
+    source_ids:
+    - source-shomei-tomatsu-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: 粗粒胶片、湿润路面、旧墙、金属反光、玻璃反射和轻微色彩漂移。;
+    edges: 保持主体边缘可辨；允许媒介造成的轻微不齐，但不使用发光描边或综合色隔离带。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    粗粒胶片、湿润路面、旧墙、金属反光、玻璃反射和轻微色彩漂移。; edges: 保持主体边缘可辨；允许媒介造成的轻微不齐，但不使用发光描边或综合色隔离带。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: 粗粒胶片、湿润路面、旧墙、金属反光、玻璃反射和轻微色彩漂移。; edges: 保持主体边缘可辨；允许媒介造成的轻微不齐，但不使用发光描边或综合色隔离带。.'
+  evidence:
+    source_ids:
+    - source-shomei-tomatsu-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: 中等到偏高；颗粒和磨损集中于阴影、边缘和高反差区域。;
+    placement: 集中在材料边界、暗部或印刷交界处，不覆盖主体识别信息。. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    中等到偏高；颗粒和磨损集中于阴影、边缘和高反差区域。; placement: 集中在材料边界、暗部或印刷交界处，不覆盖主体识别信息。.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: 中等到偏高；颗粒和磨损集中于阴影、边缘和高反差区域。; placement: 集中在材料边界、暗部或印刷交界处，不覆盖主体识别信息。.'
+  evidence:
+    source_ids:
+    - source-shomei-tomatsu-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - composition
+  - palette
+  - lighting
+  instruction: Keep the package-specific relationship among composition, palette, lighting consistent while
+    preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-shomei-tomatsu-primary-source
+  kind: primary
+  base_asset_id: shomei-tomatsu-primary-source
+execution:
+  route: text_only
+  must:
+  - 先确定用户主体与拍摄距离，再选择近距离、偏置或碎片化取景。
+  - 让现场光和表面反射参与叙述，不用额外的戏剧化灯光。
+  - 以有限的颗粒、反差和色彩漂移收尾，保留现实的不整齐。
+  - 更换主体后仍然能观察到本包的媒介、构图、色彩和表面签名。
+  - 不要求特定人物、物件、地点、建筑、植物、车辆或故事作为默认内容。
+  - 示例主体只用于验证视觉迁移，不得泄漏到默认 Prompt。
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - 普通黑白街拍预设
+  - 统一电影青橙滤镜或怀旧滤镜
+  - 默认生成战争、废墟、军人或日本街道
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
