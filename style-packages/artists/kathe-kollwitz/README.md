@@ -22,7 +22,7 @@
 
 ## 可选新方向：压缩人物群像
 
-`art-direction.yaml` 登记一个实验构图方向，仅用于用户已指定人物互动或共同动作的多人物场景。它把人物重心围绕动作接触点组织，以黑色形体和少量纸白线口提高动作可读性，同时压低背景细节。它不会替用户推断亲属关系、悲伤、冲突或政治叙事。编译新版方向时显式声明 `compressed-figure-group-print`。
+`art-direction.yaml` 使用方向格式 2.1.0，登记一个实验构图方向，仅用于用户已指定人物互动或共同动作的多人物场景。它把人物重心围绕动作接触点组织。需要黑白版画块面或材料刻线时，可分别声明 `black-print-masses-on-light-paper` 和 `shadows-or-materials-need-printed-texture` 启用相应规则。它不会替用户推断亲属关系、悲伤、冲突或政治叙事。编译新版方向时显式声明 `compressed-figure-group-print`。
 
 ### 同一场景的生成对照
 

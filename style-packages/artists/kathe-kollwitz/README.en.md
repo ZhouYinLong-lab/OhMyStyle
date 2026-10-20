@@ -22,7 +22,7 @@ The package controls printmaking medium, value structure, line behavior, and pap
 
 ## Optional direction: compressed figure group
 
-`art-direction.yaml` registers an experimental compositional direction for multi-figure scenes with a user-specified interaction or shared action. It gathers figure weight around that point of contact, uses black masses and selective paper-white cuts to clarify the action, and subordinates background detail. It does not infer kinship, grief, conflict, or political narrative. Explicitly declare `compressed-figure-group-print` when compiling this direction.
+`art-direction.yaml` uses direction format 2.1.0 and registers an experimental compositional direction for multi-figure scenes with a user-specified interaction or shared action. It gathers figure weight around that point of contact. Declare `black-print-masses-on-light-paper` or `shadows-or-materials-need-printed-texture` as applicable to activate print-value or markmaking rules. It does not infer kinship, grief, conflict, or political narrative. Explicitly declare `compressed-figure-group-print` when compiling this direction.
 
 ### Generated comparison using the same scene
 
