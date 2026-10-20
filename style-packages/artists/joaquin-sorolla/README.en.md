@@ -58,3 +58,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 This direction has not completed image comparison review. Ordinary compilation continues to use the legacy path. The new rules do not replace `visual-signature.yaml`, the base prompts, or the palette, so the experiment does not silently change existing output.
 
 After generation, use `evaluation.yaml` to check the requested subject, the role of direct and reflected light in form, and whether brush marks follow material and movement. Do not judge the result only by how bright its colors are.
+
+## Legacy and direction comparison
+
+See [the same-subject legacy and direction outputs, compiled jobs, and review limits](comparisons/README.md). One subject has been reviewed; the direction remains experimental.

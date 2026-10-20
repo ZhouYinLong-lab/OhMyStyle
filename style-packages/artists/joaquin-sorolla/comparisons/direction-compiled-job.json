@@ -1,0 +1,268 @@
+{
+  "schema_version": "0.2.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "joaquin-sorolla",
+    "name": "华金·索罗亚",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\joaquin-sorolla"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A wooden chair by a sunlit courtyard wall, no people or water",
+  "prompt": "USER SUBJECT: A wooden chair by a sunlit courtyard wall, no people or water\nSUBJECT REPRESENTATION: Keep the requested subject and count recognizable while simplifying or reshaping forms within the chosen style. Preserve the requested setting and layout; add no default motifs.\nVISUAL MEDIUM: oil_painting\nREPRESENTATION: stylized\nAPPLY THESE AUTHORED VISUAL RULES:\n- [sorolla-directional-daylight] 选定一个主要日光方向，用受光面、投影和转折面说明主体体积； 让亮部保持局部形状，不把整幅画统一提亮或染成橙黄色。\n- [sorolla-broad-value-design] 先归并少量清楚的大明暗组，再用高明度白色、局部高饱和色和少量暗部 强调焦点；保留足够的中间调连接亮面与阴影。\n- [sorolla-form-following-brushwork] 用长短、宽窄和不透明度有变化的油画笔触概括表面：顺水流排布水面笔触， 顺布褶和风向处理衣物与叶片，顺体面转折塑造人物、器物和建筑；只在焦点 使用少量短促亮笔，不要给所有区域铺同一种笔触。\n- [sorolla-observed-crop] 可采用直接观察般的视点、斜向角度或大胆裁切，让场景显得即时；裁切必须 保留主体识别所需的关键关系，不把偶发构图变成固定模板。\n- [sorolla-selective-edge-hierarchy] 在能帮助读出受光形体和主体关系的位置保留明确边缘；让次要轮廓在颜色、 笔触或相邻色块中局部融开，避免整圈描边或整面雾化。\n- [sorolla-mark-composition-coherence] 让构图视点确定观看动势，笔触沿主体与材料的方向工作，并用边缘层级控制 视线；不要把三项规则变成互不相关的装饰效果。\nREQUIREMENT: Preserve the requested subject, object count, setting, and essential composition.\nREQUIREMENT: Use a declared daylight context with a readable key-light direction.\nREQUIREMENT: Make reflected color conditional on visible environmental sources.\nREQUIREMENT: Describe forms and motion with varied directional oil marks and grouped values.",
+  "negative_prompt": "global warm wash, all-over glow, uniformly lifted shadows\nscattered highlights, equal-brightness color patches, crushed shadow structure\nuniform stippling, directionless brush noise, airbrushed surfaces\nmandatory tilted horizon, repeated beach viewpoint, arbitrary subject cropping\nuniform outlines, uniform sharpness, all-over haze\nunrequested beach, boat, shoreline, sail, or recurring reference pose\ncopied reference composition or recognizable source painting\nadding a dramatic crop or tilted view when it harms subject readability",
+  "reference_set": "none",
+  "reference_images": [],
+  "art_direction": {
+    "id": "sorolla-sunlit-oil",
+    "name": "索罗亚：户外日光油画",
+    "schema_version": "2.1.0",
+    "status": "experimental",
+    "path": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\joaquin-sorolla\\art-direction.yaml",
+    "sha256": "8ac8b6fb44715a3ba988b46cf95ccacc6ab692333a777c147556226c7fa0e7b5",
+    "active_rule_ids": [
+      "sorolla-directional-daylight",
+      "sorolla-causal-reflected-color",
+      "sorolla-broad-value-design",
+      "sorolla-form-following-brushwork",
+      "sorolla-observed-crop",
+      "sorolla-selective-edge-hierarchy"
+    ],
+    "applicable_rule_ids": [
+      "sorolla-directional-daylight",
+      "sorolla-broad-value-design",
+      "sorolla-form-following-brushwork",
+      "sorolla-observed-crop",
+      "sorolla-selective-edge-hierarchy"
+    ],
+    "omitted_context_rule_ids": [
+      "sorolla-causal-reflected-color"
+    ],
+    "contexts": [
+      "daylight"
+    ],
+    "variables": {},
+    "applicability": "structured context selectors are enforced; natural-language applies_when conditions are not inferred"
+  },
+  "execution": {
+    "route": "text_only",
+    "must": [
+      "Preserve the requested subject, object count, setting, and essential composition.",
+      "Use a declared daylight context with a readable key-light direction.",
+      "Make reflected color conditional on visible environmental sources.",
+      "Describe forms and motion with varied directional oil marks and grouped values."
+    ],
+    "avoid": [
+      "unrequested beach, boat, shoreline, sail, or recurring reference pose",
+      "copied reference composition or recognizable source painting",
+      "adding a dramatic crop or tilted view when it harms subject readability"
+    ]
+  },
+  "review": {
+    "status": "pending",
+    "scope": {
+      "medium": "oil_painting",
+      "representation": "stylized",
+      "description": "以明确方向的日光（户外直射光或从窗户进入的日光）、有来源的彩色阴影和 有方向的油画笔触塑造可读形体；构图可以采用鲜明裁切，但不固定海岸题材 或特定叙事。",
+      "required_contexts": [
+        "daylight"
+      ],
+      "incompatible_contexts": [
+        "night",
+        "photographic-output"
+      ],
+      "limitations": [
+        "需要能辨认的主光方向和至少一个可见受光面；完全黑暗的场景不适用。",
+        "反射色应由场景中的水、浅色地面、衣物或其他表面提供依据，不能凭空铺色。",
+        "照片级、无可见绘画痕迹的输出不符合本方向的油画媒介要求。"
+      ]
+    },
+    "pillars": [
+      "直射日光以明确的明暗关系建立体积，而不是作为全画面的暖色滤镜。",
+      "阴影中的环境色能追溯到邻近受光表面，并服从主体的体积关系。",
+      "笔触沿水流、布褶、叶片或体面转折组织；大笔触先于零碎高光。",
+      "大色块保持整体明度秩序，亮色和强裁切都只在支持主体时使用。"
+    ],
+    "rules": [
+      {
+        "id": "sorolla-directional-daylight",
+        "axis": "lighting",
+        "importance": "core",
+        "applies_when": "画面中存在可辨认的直射日光和受光面，包括从户外进入室内的日光。",
+        "instruction": "选定一个主要日光方向，用受光面、投影和转折面说明主体体积； 让亮部保持局部形状，不把整幅画统一提亮或染成橙黄色。",
+        "observable": "缩小画面后仍能判断主要受光方向；主体的亮面与阴影面共同说明体积， 高光没有抹掉关键轮廓和结构。",
+        "reject_when": "光线只表现为全画面泛白、泛黄或均匀发光，无法从明暗关系读出形体。",
+        "avoid": "global warm wash, all-over glow, uniformly lifted shadows",
+        "evidence": {
+          "source_ids": [
+            "sorolla-national-gallery-technique",
+            "sorolla-museum-plein-air"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "sorolla-broad-value-design",
+        "axis": "value",
+        "importance": "core",
+        "applies_when": "always",
+        "instruction": "先归并少量清楚的大明暗组，再用高明度白色、局部高饱和色和少量暗部 强调焦点；保留足够的中间调连接亮面与阴影。",
+        "observable": "灰阶缩略图仍能辨认主体和前后层次；鲜艳局部色没有把大形切碎，阴影中 仍保留可读的色彩变化。",
+        "reject_when": "画面只有亮色堆叠、主体与背景明度相近，或为了显得明亮而删除全部中间调。",
+        "avoid": "scattered highlights, equal-brightness color patches, crushed shadow structure",
+        "evidence": {
+          "source_ids": [
+            "sorolla-national-gallery-technique",
+            "sorolla-prado-boys-on-the-beach"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "sorolla-form-following-brushwork",
+        "axis": "mark_making",
+        "importance": "core",
+        "applies_when": "画面需要表现可辨认的表面、运动或体面转折。",
+        "instruction": "用长短、宽窄和不透明度有变化的油画笔触概括表面：顺水流排布水面笔触， 顺布褶和风向处理衣物与叶片，顺体面转折塑造人物、器物和建筑；只在焦点 使用少量短促亮笔，不要给所有区域铺同一种笔触。",
+        "observable": "主要笔触方向能帮助读出材料或运动；焦点细节比次要区域更集中，局部颜料 纹理仍参与形体而非覆盖形体。",
+        "reject_when": "全画面被同密度短点、均匀碎笔或无方向的纹理覆盖，或笔触被平滑渲染完全抹除。",
+        "avoid": "uniform stippling, directionless brush noise, airbrushed surfaces",
+        "evidence": {
+          "source_ids": [
+            "sorolla-national-gallery-technique",
+            "sorolla-museum-plein-air"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "sorolla-observed-crop",
+        "axis": "composition",
+        "importance": "supporting",
+        "applies_when": "主体和场景允许使用近距离视点、斜向视线或非对称裁切。",
+        "instruction": "可采用直接观察般的视点、斜向角度或大胆裁切，让场景显得即时；裁切必须 保留主体识别所需的关键关系，不把偶发构图变成固定模板。",
+        "observable": "构图重心明确，裁切边缘带来观看方向或空间张力，主体仍可辨认；若题材不 适合强裁切，使用自然视点也符合规则。",
+        "reject_when": "每张图都强制使用倾斜地平线、贴边人物或海岸俯视角，或裁切切断主体关键 结构而没有形成有意图的构图关系。",
+        "avoid": "mandatory tilted horizon, repeated beach viewpoint, arbitrary subject cropping",
+        "evidence": {
+          "source_ids": [
+            "sorolla-national-gallery-technique"
+          ],
+          "basis": "institutional_description",
+          "visual_review": "pending"
+        }
+      },
+      {
+        "id": "sorolla-selective-edge-hierarchy",
+        "axis": "edges",
+        "importance": "supporting",
+        "applies_when": "画面存在可区分的焦点和次要区域。",
+        "instruction": "在能帮助读出受光形体和主体关系的位置保留明确边缘；让次要轮廓在颜色、 笔触或相邻色块中局部融开，避免整圈描边或整面雾化。",
+        "observable": "清晰、松动和消失的边缘共同形成焦点层级；不依赖黑色轮廓线，主体仍能从 活跃背景中分离出来。",
+        "reject_when": "所有边缘同样锐利，或全画面都被同程度柔焦和薄雾覆盖。",
+        "avoid": "uniform outlines, uniform sharpness, all-over haze",
+        "evidence": {
+          "source_ids": [
+            "sorolla-national-gallery-technique"
+          ],
+          "basis": "curatorial_inference",
+          "visual_review": "pending"
+        }
+      }
+    ],
+    "joint_checks": [
+      {
+        "id": "sorolla-mark-composition-coherence",
+        "rule_ids": [
+          "sorolla-form-following-brushwork",
+          "sorolla-observed-crop",
+          "sorolla-selective-edge-hierarchy"
+        ],
+        "instruction": "让构图视点确定观看动势，笔触沿主体与材料的方向工作，并用边缘层级控制 视线；不要把三项规则变成互不相关的装饰效果。",
+        "observable": "主要笔触带领视线经过主体，裁切强化而非遮蔽主体，焦点边缘比次要区域 更集中。"
+      }
+    ],
+    "sources": [
+      {
+        "id": "sorolla-national-gallery-technique",
+        "kind": "institutional_analysis",
+        "base_asset_id": "sorolla-national-gallery-technique",
+        "package_reference": {
+          "asset_id": "sorolla-national-gallery-technique",
+          "local_path": "",
+          "title": "Bright colours, bold brushstrokes and unexpected angles",
+          "creator": "National Gallery London",
+          "year": "",
+          "source_url": "https://www.nationalgallery.org.uk/exhibitions/past/sorolla/bright-colours-bold-brushstrokes-and-unexpected-angles",
+          "license": "link_only",
+          "attribution": "National Gallery London",
+          "role": "primary",
+          "notes": "Institutional discussion of plein-air method",
+          "null": [
+            " transient light",
+            " rapid brushwork",
+            " and compositional cropping; no image bundled."
+          ]
+        }
+      },
+      {
+        "id": "sorolla-prado-boys-on-the-beach",
+        "kind": "collection_object_record",
+        "base_asset_id": "sorolla-prado-boys-on-the-beach",
+        "package_reference": {
+          "asset_id": "sorolla-prado-boys-on-the-beach",
+          "local_path": "",
+          "title": "Boys on the Beach",
+          "creator": "Joaquín Sorolla",
+          "year": "1909",
+          "source_url": "https://www.museodelprado.es/en/the-collection/art-work/boys-on-the-beach/edd7a202-c069-49f1-a3f4-eacf9b4022c2",
+          "license": "link_only",
+          "attribution": "Museo Nacional del Prado",
+          "role": "primary",
+          "notes": "Collection record used to study reflected light",
+          "null": [
+            " water movement",
+            " wet sand",
+            " and colored shadows; artwork remains link-only."
+          ]
+        }
+      },
+      {
+        "id": "sorolla-museum-plein-air",
+        "kind": "institutional_analysis",
+        "base_asset_id": "sorolla-museum-plein-air",
+        "package_reference": {
+          "asset_id": "sorolla-museum-plein-air",
+          "local_path": "",
+          "title": "Sorolla: Travelling to Paint",
+          "creator": " Museo Sorolla",
+          "year": "",
+          "source_url": "https://museosorolladigital.es/exposiciones-temporales/sorolla-viajar-para-pintar/",
+          "license": "link_only",
+          "attribution": "Museo Sorolla",
+          "role": "primary",
+          "notes": "Museum discussion of outdoor painting practice and changing coastal light; no image bundled."
+        }
+      }
+    ],
+    "note": "Successful compilation is not image-quality validation or a maturity upgrade."
+  },
+  "provenance": {
+    "prompt_sha256": "a129f53543ddc39b0bf6daf9a0b5d89258f623725b220c718a4b1ff2d0d2cd15",
+    "negative_prompt_sha256": "922af17d47e8b815e4ceb23867de0c47399e9ac3a2c5e0ca73f7a09a4cf77d87",
+    "direction_sha256": "8ac8b6fb44715a3ba988b46cf95ccacc6ab692333a777c147556226c7fa0e7b5",
+    "direction_schema_sha256": "1139f9bc7fa38a2ad1f8bca718e12397262025850982730d0028471fe8456df2",
+    "compiler_sha256": {
+      "tools/style_runtime.py": "3a856b8ed57f3e6388005c87b14fe06b961d44a30748ae9e5be7c1cd82e22e15",
+      "tools/art_direction_runtime.py": "7862a301afadb642db25f06953a658162368c53e926bd08ba5daaeb4fdf8d209"
+    },
+    "reference_usage": "Research records are not generation inputs."
+  }
+}

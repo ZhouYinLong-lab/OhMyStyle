@@ -58,3 +58,7 @@ python tools/compile-style.py style-packages/artists/joaquin-sorolla --direction
 该方向还未完成生图对照评审，普通编译仍使用旧版路径。新版规则不替换 `visual-signature.yaml`、基础提示词或调色板，避免实验改动悄悄改变原有输出。
 
 每次生成后，按 `evaluation.yaml` 检查主体是否按要求呈现、日光和反射色是否参与形体塑造，以及笔触是否沿着材料和运动方向组织。不要只看颜色是否明亮。
+
+## 新旧架构视觉对照
+
+查看[旧版与新方向的同题生图、编译任务和复核限制](comparisons/README.md)。目前只有一组题材，方向仍处于实验状态。

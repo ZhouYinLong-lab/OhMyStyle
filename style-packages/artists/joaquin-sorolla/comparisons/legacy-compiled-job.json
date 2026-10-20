@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "job_type": "style_render",
+  "package": {
+    "id": "joaquin-sorolla",
+    "name": "华金·索罗亚",
+    "version": "0.2.0",
+    "root": "D:\\Projects\\Dog\\OhMyStyle\\style-packages\\artists\\joaquin-sorolla"
+  },
+  "model": {
+    "name": "provider-neutral",
+    "profile": "generic",
+    "adapter": "provider-neutral"
+  },
+  "subject": "A wooden chair by a sunlit courtyard wall, no people or water",
+  "palette_pair": null,
+  "reference_set": "palette",
+  "reference_images": [],
+  "prompt": "SUBJECT INDEPENDENCE CONTRACT:\nThe user-supplied subject and requested setting are authoritative. This style\npackage controls only observable visual treatment: medium, composition,\nlighting, palette, surface, texture, and edge behavior. Do not add a recurring\nobject, setting, character, landmark, or narrative motif unless the user asks\nfor it. Treat any concrete scene mentioned in package metadata or references as\nan optional example, never as a default subject.\n\nSUBJECT INDEPENDENCE CONTRACT\nSubject: A wooden chair by a sunlit courtyard wall, no people or water\nLocation: the user-requested setting\nAction: the user-requested subject action\nPreserve the supplied subject, count, setting, and requested details. Do not add a beach, boat, sail, worker, or other recurring motif unless requested.\n\nRender the scene as direct, lively outdoor oil painting. Establish broad, legible value and color masses before detail. Use bright warm ivory lights and clear local color, with turquoise or ultramarine reflected into cool blue-violet and green shadows where the setting supports it. Let directional, quick brush marks describe the actual form: water movement, fabric folds, foliage, architecture, or the subject's turning planes. Keep tonal unity beneath the vivid palette. Use an immediate observed viewpoint and a decisive crop, but keep the user's subject readable. Reserve sharp accents for selected sunlit edges and reflections; let secondary passages remain loose without dissolving into haze. Adapt these decisions to A wooden chair by a sunlit courtyard wall, no people or water in the user-requested setting; do not force a coastal setting or a fixed narrative.\n\nExact package assignment:\nFollow the package-defined visual signature, process, materials, and constraints exactly.\nUse any supplied reference images for palette relationship only, not for subject identity or copied composition.",
+  "negative_prompt": "- copied painting, named sitter, or recognizable source composition\n- mandatory beach, boat, sail, or harbor when not requested\n- global orange or yellow filter\n- uniform stippling or evenly distributed tiny brush marks\n- soft haze over the whole image\n- black shadows that remove reflected color\n- glossy digital rendering or airbrush gradients\n- expressive contour rhythm unrelated to the subject\n- text, signature, logo, or watermark",
+  "template_variables": {
+    "SUBJECT": "A wooden chair by a sunlit courtyard wall, no people or water",
+    "LOCATION": "the user-requested setting"
+  },
+  "unresolved_placeholders": [],
+  "constraints": {
+    "area_ratio": {},
+    "profiles": {}
+  },
+  "provenance": {
+    "prompt_sha256": "bc1cd5cce4fe852372ff8fb48035f0099678f2d4fd360e46955a271a16ac86be",
+    "negative_prompt_sha256": "2e148438894b5306a82e087c4c12d799796cc1cde0b733e2996d24665bb066de",
+    "source_policy": "External artworks are link-only; no source artwork is redistributed in this package.",
+    "reference_usage": "Reference images are inputs to the render job; they are not silently inferred."
+  }
+}
