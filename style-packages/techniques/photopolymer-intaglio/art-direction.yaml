@@ -1,0 +1,173 @@
+schema_version: 2.1.0
+status: experimental
+id: photopolymer-intaglio-direction
+name: 光聚合物凹版印刷
+base_package: techniques/photopolymer-intaglio
+scope:
+  medium: photopolymer intaglio printmaking
+  representation: stylized
+  description: 以感光聚合物版承接影像或连续调信息，再通过凹版上墨和压印获得细密网点、柔和灰阶与纸张压痕。
+  required_contexts: []
+  incompatible_contexts: []
+  limitations:
+  - copied composition
+  - named character or branded asset
+  - a mandatory landscape, portrait, camera, or darkroom scene
+pillars:
+- 以感光聚合物版承接影像或连续调信息，再通过凹版上墨和压印获得细密网点、柔和灰阶与纸张压痕。
+- 'differentiation: photographic continuous tone translated into intaglio grain; wiped ink and paper pressure;
+  restrained tactile print surface'
+- 'composition: Preserve the user-supplied image structure while allowing continuous tones to break into granular
+  plate information.; Keep broad tonal masses readable and let the fine detail gather in edges, shadows, and
+  selected transitions.'
+- 'palette: Favor graphite, sepia, blue-black, or restrained process colors on a warm paper ground.; Let ink
+  density and paper absorbency carry the tonal range rather than a digital gradient.'
+rules:
+- id: distinctiveness
+  axis: differentiation
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Distinguish this direction from nearby packages using these authored differences: photographic
+    continuous tone translated into intaglio grain; wiped ink and paper pressure; restrained tactile print
+    surface. Do not collapse the direction into a neighboring style.'
+  observable: 'The result expresses the stated distinction in visible form: photographic continuous tone translated
+    into intaglio grain; wiped ink and paper pressure; restrained tactile print surface.'
+  reject_when: 'The result adopts the neighboring package defined treatment or ignores this distinction: photographic
+    continuous tone translated into intaglio grain; wiped ink and paper pressure; restrained tactile print
+    surface.'
+  evidence:
+    source_ids:
+    - source-photopolymer-intaglio-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: composition
+  axis: composition
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Organize the requested subject using these package-specific spatial decisions: Preserve the
+    user-supplied image structure while allowing continuous tones to break into granular plate information.;
+    Keep broad tonal masses readable and let the fine detail gather in edges, shadows, and selected transitions..
+    Preserve the user-provided content and layout.'
+  observable: 'The stated hierarchy, spacing, framing, or depth relationship is readable: Preserve the user-supplied
+    image structure while allowing continuous tones to break into granular plate information.; Keep broad tonal
+    masses readable and let the fine detail gather in edges, shadows, and selected transitions..'
+  reject_when: 'The composition contradicts these spatial decisions or copies a source arrangement: Preserve
+    the user-supplied image structure while allowing continuous tones to break into granular plate information.;
+    Keep broad tonal masses readable and let the fine detail gather in edges, shadows, and selected transitions..'
+  evidence:
+    source_ids:
+    - source-photopolymer-intaglio-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: palette
+  axis: palette
+  importance: core
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Use these package-specific color roles and relationships: Favor graphite, sepia, blue-black,
+    or restrained process colors on a warm paper ground.; Let ink density and paper absorbency carry the tonal
+    range rather than a digital gradient.. Adapt their balance to the requested subject; do not apply them
+    as a uniform tint.'
+  observable: 'The stated colors and their roles are visible and distinguishable: Favor graphite, sepia, blue-black,
+    or restrained process colors on a warm paper ground.; Let ink density and paper absorbency carry the tonal
+    range rather than a digital gradient..'
+  reject_when: 'An all-over filter replaces the stated color relationships, or their roles cannot be distinguished:
+    Favor graphite, sepia, blue-black, or restrained process colors on a warm paper ground.; Let ink density
+    and paper absorbency carry the tonal range rather than a digital gradient..'
+  evidence:
+    source_ids:
+    - source-photopolymer-intaglio-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: lighting
+  axis: lighting
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Apply the package-specific light behavior: quality: direct print light with visible paper relief;
+    behavior: Keep the paper and ink film readable; do not light the print like a glossy photograph.. Keep
+    light coherent with the requested subject, medium, and scene.'
+  observable: 'Light and shadow visibly support the stated forms or atmosphere: quality: direct print light
+    with visible paper relief; behavior: Keep the paper and ink film readable; do not light the print like
+    a glossy photograph..'
+  reject_when: 'Global glow, tint, or incoherent light replaces the stated behavior: quality: direct print
+    light with visible paper relief; behavior: Keep the paper and ink film readable; do not light the print
+    like a glossy photograph..'
+  evidence:
+    source_ids:
+    - source-photopolymer-intaglio-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: surface
+  axis: surface
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: finish: pressed
+    intaglio paper with fine halftone and wiped plate character; edges: crisp in important tonal transitions
+    with slight plate and paper irregularity. Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: finish:
+    pressed intaglio paper with fine halftone and wiped plate character; edges: crisp in important tonal transitions
+    with slight plate and paper irregularity.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    finish: pressed intaglio paper with fine halftone and wiped plate character; edges: crisp in important
+    tonal transitions with slight plate and paper irregularity.'
+  evidence:
+    source_ids:
+    - source-photopolymer-intaglio-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+- id: texture
+  axis: texture
+  importance: supporting
+  applies_when: Always when this visual direction is selected and compatible with the requested medium.
+  instruction: 'Render the requested materials using these package-specific surface decisions: density: fine
+    and continuous in tonal areas; placement: concentrated in shadows, gradients, and photographic detail.
+    Preserve detail hierarchy and material identity.'
+  observable: 'The stated edge, surface, or texture treatment can be seen at an appropriate scale: density:
+    fine and continuous in tonal areas; placement: concentrated in shadows, gradients, and photographic detail.'
+  reject_when: 'Generic gloss, uniform texture, or unrelated effects replace the stated surface treatment:
+    density: fine and continuous in tonal areas; placement: concentrated in shadows, gradients, and photographic
+    detail.'
+  evidence:
+    source_ids:
+    - source-photopolymer-intaglio-primary-source
+    basis: curatorial_inference
+    visual_review: pending
+active_rule_ids:
+- distinctiveness
+- composition
+- palette
+- lighting
+- surface
+- texture
+joint_checks:
+- id: visual-relationship-coherence
+  rule_ids:
+  - distinctiveness
+  - composition
+  - palette
+  instruction: Keep the package-specific relationship among differentiation, composition, palette consistent
+    while preserving the user-specified subject and layout.
+  observable: The linked visual decisions reinforce one another and remain subordinate to the user-provided
+    subject.
+sources:
+- id: source-photopolymer-intaglio-primary-source
+  kind: primary
+  base_asset_id: photopolymer-intaglio-primary-source
+execution:
+  route: text_only
+  must:
+  - prepare a high-quality tonal source from the user-supplied subject
+  - expose and develop the polymer plate so tonal information becomes recessed plate structure
+  - ink, wipe, and press the plate into damp paper, retaining grain and pressure variation
+  - continuous-tone information translated into plate grain
+  - wiped intaglio ink and paper pressure
+  - restrained process color over a tactile ground
+  - Preserve the user-provided subject, object count, location, and requested details.
+  avoid:
+  - photorealistic surface detail when it conflicts with the package
+  - generic style-filter language without observable constraints
+  - copying a specific reference composition
+  - a mandatory landscape, portrait, camera, or darkroom scene
+  - copied composition
+  - named character or branded asset
+  - Do not reproduce a specific reference work, recognizable character, logo, or branded layout.
+  - Do not add a recurring subject, landmark, story event, logo, or layout unless the user requests it.
