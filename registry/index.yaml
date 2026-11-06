@@ -2186,23 +2186,6 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
-- resource_id: low-poly-adventure-game-art
-  name: 低多边形冒险游戏美术
-  kind: game_art
-  domain: game_art
-  package_path: style-packages/game-art/low-poly-adventure-game-art
-  maturity: L3
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - texture
-  - layout
-  reference_count: 1
-  accepted_example_count: 1
-  rejected_example_count: 0
-  benchmark: true
 - resource_id: miniature-diorama-game-art
   name: 微缩模型场景游戏美术
   kind: game_art

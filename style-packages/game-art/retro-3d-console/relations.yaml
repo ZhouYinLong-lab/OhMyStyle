@@ -1,6 +1,5 @@
 family: retro-console-3d
 near_duplicates:
-  - game-art/low-poly-adventure-game-art
   - game-art/stylized-low-poly-world
 supersedes: []
 conflicts:

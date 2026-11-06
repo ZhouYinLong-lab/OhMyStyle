@@ -154,7 +154,6 @@
 ## 低多边形与体素
 
 - [手绘低多边形游戏美术](../style-packages/game-art/hand-painted-low-poly-game-art/README.md)
-- [低多边形冒险游戏美术](../style-packages/game-art/low-poly-adventure-game-art/README.md)
 - [微缩模型场景游戏美术](../style-packages/game-art/miniature-diorama-game-art/README.md)
 - [纸艺立体书游戏美术](../style-packages/game-art/papercraft-diorama-game-art/README.md)
 - [早期三维生存恐怖游戏美术](../style-packages/game-art/ps1-survival-horror-low-poly/README.md)
@@ -169,6 +168,7 @@
 - [罗梅尔·比尔登](../style-packages/artists/romare-bearden/README.md)
 - [拼贴与混合媒材游戏美术](../style-packages/game-art/collage-mixed-media-game-art/README.md)
 - [女神异闻录5皇家版游戏美术](../style-packages/game-art/persona-5-royal/README.md)
+- [激浪派](../style-packages/movements/fluxus/README.md)
 - [拼贴综合材料](../style-packages/techniques/collage-mixed-media/README.md)
 - [拼贴蒙太奇](../style-packages/techniques/photomontage/README.md)
 
