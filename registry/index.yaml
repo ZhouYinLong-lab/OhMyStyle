@@ -2764,23 +2764,6 @@ packages:
   accepted_example_count: 0
   rejected_example_count: 0
   benchmark: true
-- resource_id: stray-neon-cybercity
-  name: 霓虹废墟城市游戏美术
-  kind: game_art
-  domain: game_art
-  package_path: style-packages/game-art/stray-neon-cybercity
-  maturity: L3
-  focus_dimensions:
-  - medium
-  - composition
-  - lighting
-  - palette
-  - texture
-  - layout
-  reference_count: 1
-  accepted_example_count: 1
-  rejected_example_count: 0
-  benchmark: true
 - resource_id: stylized-low-poly-world
   name: 风格化低多边形世界游戏美术
   kind: game_art

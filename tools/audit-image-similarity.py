@@ -38,7 +38,6 @@ REVIEW_GROUPS: dict[str, set[str]] = {
     "neon urban game art": {
         "game-art/cyberpunk-night-city",
         "game-art/neon-noir-3d-game-art",
-        "game-art/stray-neon-cybercity",
     },
     "modernist geometry": {
         "schools/bauhaus",

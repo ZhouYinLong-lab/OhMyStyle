@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "root": "style-packages",
   "counts": {
-    "PASS": 406,
+    "PASS": 404,
     "WARN": 0,
     "FAIL": 0
   },
@@ -1427,17 +1427,6 @@
       "readme_reference": true
     },
     {
-      "package": "style-packages/game-art/low-poly-adventure-game-art",
-      "image": "style-packages/game-art/low-poly-adventure-game-art/gallery-16x9.jpg",
-      "status": "PASS",
-      "messages": [],
-      "width": 1280,
-      "height": 720,
-      "format": "JPEG",
-      "aspect_ratio": 1.777778,
-      "readme_reference": true
-    },
-    {
       "package": "style-packages/game-art/miniature-diorama-game-art",
       "image": "style-packages/game-art/miniature-diorama-game-art/gallery-16x9.jpg",
       "status": "PASS",
@@ -1803,17 +1792,6 @@
     {
       "package": "style-packages/game-art/stop-motion-clay-game-art",
       "image": "style-packages/game-art/stop-motion-clay-game-art/gallery-16x9.jpg",
-      "status": "PASS",
-      "messages": [],
-      "width": 1672,
-      "height": 941,
-      "format": "JPEG",
-      "aspect_ratio": 1.776833,
-      "readme_reference": true
-    },
-    {
-      "package": "style-packages/game-art/stray-neon-cybercity",
-      "image": "style-packages/game-art/stray-neon-cybercity/gallery-16x9.jpg",
       "status": "PASS",
       "messages": [],
       "width": 1672,

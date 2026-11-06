@@ -10,12 +10,13 @@ crossing:
 family: neon-urban-game-art
 near_duplicates:
   - game-art/cyberpunk-night-city
-  - game-art/stray-neon-cybercity
 supersedes: []
 conflicts: []
 distinctives:
-  - tight alley framing
+  - tight alley framing when requested
+  - practical lights embedded in worn, low-rise architecture
+  - layered eaves, cables, stairs, and restrained signs of repair or habitation
   - noir-scale solitary figure
   - localized blue-magenta-orange light
 avoid_overlap:
-  - do not require an alley, vending machine, dumpster, or rain
+  - do not require an alley, vending machine, dumpster, plants, or rain

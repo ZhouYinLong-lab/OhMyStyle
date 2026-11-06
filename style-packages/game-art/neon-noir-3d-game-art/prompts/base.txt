@@ -5,10 +5,10 @@ The user-supplied subject and setting are authoritative. This package controls
 visual treatment only: medium, composition, lighting, palette, surface,
 texture, and edge behavior. Do not add a recurring object, setting, character,
 landmark, or narrative motif unless the user explicitly requests it. Any
-concrete noun used below is optional visual vocabulary, not a default subject.
+concrete noun used below is optional visual vocabulary, not a default subject. Avoid turning the scene into a fixed alley, inhabited ruin, or specific game reference.
 
 Create a new subject and composition using these observable visual decisions:
-- 狭窄通道、窗框和雨幕形成层层遮挡
+- 建筑边缘、窗框、屋檐、线缆、楼梯或雨幕可形成分层遮挡，按用户场景选择，不强制巷道
 - 主体通常由一处实际光源勾勒
 - 背景信息分级而非全部清晰
 - 深蓝黑、青绿、紫红和钨丝橙形成局部对照
@@ -22,7 +22,7 @@ Create a new subject and composition using these observable visual decisions:
 - 禁止无来源轮廓光
 - 锈、混凝土、玻璃、塑料和水面区分明确
 - 高光不吞没颜色
-- 污渍、雨痕和城市维护痕迹有方向
+- 污渍、维修、雨痕、植物等使用痕迹有方向且有节制
 - 颗粒克制
 - 霓虹是空间中的对象和光源
 - 黑色电影的节奏大于赛博装饰

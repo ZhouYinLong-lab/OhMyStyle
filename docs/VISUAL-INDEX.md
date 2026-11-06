@@ -146,7 +146,6 @@
 - [霓虹未来都市游戏美术](../style-packages/game-art/cyberpunk-night-city/README.md)
 - [霓虹黑色三维游戏美术](../style-packages/game-art/neon-noir-3d-game-art/README.md)
 - [女神异闻录3重制版游戏美术](../style-packages/game-art/persona-3-reload/README.md)
-- [霓虹废墟城市游戏美术](../style-packages/game-art/stray-neon-cybercity/README.md)
 - [野兽主义](../style-packages/movements/fauvism/README.md)
 - [合成器浪潮](../style-packages/movements/synthwave/README.md)
 - [蒸汽波](../style-packages/movements/vaporwave/README.md)

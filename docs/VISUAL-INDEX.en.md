@@ -146,7 +146,6 @@ This index is generated from each package's classification and relations metadat
 - [霓虹未来都市游戏美术](../style-packages/game-art/cyberpunk-night-city/README.en.md)
 - [霓虹黑色三维游戏美术](../style-packages/game-art/neon-noir-3d-game-art/README.en.md)
 - [女神异闻录3重制版游戏美术](../style-packages/game-art/persona-3-reload/README.en.md)
-- [霓虹废墟城市游戏美术](../style-packages/game-art/stray-neon-cybercity/README.en.md)
 - [野兽主义](../style-packages/movements/fauvism/README.en.md)
 - [合成器浪潮](../style-packages/movements/synthwave/README.en.md)
 - [蒸汽波](../style-packages/movements/vaporwave/README.en.md)
